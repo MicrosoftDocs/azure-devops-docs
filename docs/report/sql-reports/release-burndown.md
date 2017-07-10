@@ -47,4 +47,4 @@ By reviewing the release burndown report, you can understand how quickly your te
   
 ## Related notes 
  [Scrum process](../../work/guidance/scrum-process.md)   
- [Create and Modify Area or Iteration Paths](../../work/customize/modify-areas-iterations.md)
+[Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) 

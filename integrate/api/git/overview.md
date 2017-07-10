@@ -6,7 +6,7 @@ description: Work with Git programmatically using the REST APIs for Visual Studi
 ms.assetid: 19DFAB3F-274F-41DF-ACD5-93DCEE626121
 ms.manager: douge
 ms.author: elbatk
-ms.date: 06/22/2017
+ms.date: 08/04/2016
 ---
 
 # Git API
@@ -108,7 +108,6 @@ There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/m
 ## All Git API areas
 In case you're looking for something not found in the **Common tasks** section above, below is a list of all areas of the Git API.
 
-* [Annotated tags](./annotatedTags.md)
 * [Blobs](./blobs.md)
 * [Commits](./commits.md)
 * [Diffs](./diffs.md)

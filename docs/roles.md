@@ -48,7 +48,7 @@ The role of project manager typically encompasses planning the feature set to de
 - Use queries to list and update work items, create status and trend charts, and post charts to dashboards 
 - Use dashboards to share information, status, and trends with your team or organization
   
-To get started, see [Get started with Agile tools to plan and track work](work/agile-project-management.md).  
+To get started, see [Get started with Agile tools to plan and track work](work/overview.md).  
 
 If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with Team Services and TFS. See [Bulk modify using Excel](work/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](work/office/create-your-backlog-tasks-using-project.md). 
 
@@ -71,7 +71,7 @@ To get started, see the overviews provided here: [Build &amp; Release](build/ove
 ### Stakeholders 
 With stakeholder access, anyone within your organization can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to plans by adding and modifying work items. They can't, however, contribute to the code base or exercise test tools. 
 
-Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a Stakeholder](work/connect/work-as-a-stakeholder.md). 
+Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a Stakeholder](quickstart/get-started-stakeholder.md). 
 
 <a id="admin-roles">  </a>
 ## Administrator roles  
@@ -92,7 +92,7 @@ To get started, see [Manage team assets](work/scale/manage-team-assets.md).
 
 ###Project administrators
 Responsible for project level settings, including: 
-- [Area and iteration paths](work/customize/modify-areas-iterations.md)
+- [Area paths](work/customize/set-area-paths.md) and [Iteration paths](work/customize/set-iteration-paths-sprints.md)
 - [Project permissions and repository security](setup-admin/permissions.md)
 - [Customize work tracking objects (TFS only)](work/customize/customize-work.md) 
 - [Build agents, pools, and service endpoints](build/overview.md) 
@@ -107,7 +107,7 @@ Responsible for account or collection-level settings. These include:
 - Customize work tracking processes (Team Services only) 
 - Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
 
-To get started, see [Set up Team Services or Team Foundation Server](setup-admin/get-started.md). 
+To get started, see [Set up Team Services or Team Foundation Server](setup-admin/account-administration.md). 
 
  
 ###TFS administrators
@@ -119,7 +119,7 @@ Responsible for installing, upgrading, and maintaining an on-premises TFS deploy
 - Build retention policies
 - Add and manage team project collections     
   
-To get started, see [Set up Team Services or Team Foundation Server](setup-admin/get-started.md). 
+To get started, see [Set up Team Services or Team Foundation Server](setup-admin/account-administration.md). 
 
 
 

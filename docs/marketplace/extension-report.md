@@ -21,7 +21,7 @@ You can view acquisition related data in this tab for the selected period.
 * Daily trend of extension page views with acquisition for Team Services and TFS connected server
 * Conversion percentage from page views to acquisition
 
-For paid extension, all transactional details for buy and trials is available with date, account name, trial end date, and quantity. You can use the **Contact** action to reach out to your users for transactional communication. Refer [here](https://www.visualstudio.com/en-us/docs/integrate/extensions/extension-report#contact) for more details. 
+For paid extension, all transactional details for buy and trials is available with date, account name, trial end date, and quantity. You can use the **Contact** action to reach out to your users for transactional communication. Refer [here](https://www.visualstudio.com/en-us/docs/extend/extension-report#contact) for more details. 
 
 ![acqusition](_img/acq.png)
 
@@ -29,7 +29,7 @@ For paid extension, all transactional details for buy and trials is available wi
 You can view how many Team Services accounts have uninstalled your extension, daily trend of uninstall, detailed feedback shared during uninstall, and top uninstall reasons.
 You can use search for text and dates to analyze and draw more insights from the detailed feedback. 
 
-For paid extensions, you can use the **Contact** action to reach out to your users for transactional communication. Refer [here](https://www.visualstudio.com/en-us/docs/integrate/extensions/extension-report#contact) for more details. 
+For paid extensions, you can use the **Contact** action to reach out to your users for transactional communication. Refer [here](https://www.visualstudio.com/en-us/docs/extend/extension-report#contact) for more details. 
 
 ![uninstall](_img/uninstall.png)
 

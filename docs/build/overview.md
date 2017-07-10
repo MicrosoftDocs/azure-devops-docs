@@ -102,7 +102,7 @@ for your entire team. Organize shared assets such as [service endpoints](concept
 <ul style="padding-left:30px">
  <!-- This needs to be changed to create-your-first-build-and-release.md after the merger of the other branch
  <li>[Tutorial on basic concepts](get-started/create-your-first-release.md)</li>-->
- <li>[CI/CD Hello world](get-started/ci-cd-part-1.md)</li>
+ <li>[CI/CD for newbies](get-started/ci-cd-part-1.md)</li>
  <li>[ASP.NET from the Azure portal](get-started/aspnet-4-ci-cd-azure-automatic.md)</li>
  <li>[ASP.NET from Visual Studio](get-started/aspnet-4-ci-cd-vs-automatic.md)</li>
  <li>[ASP.NET do it yourself](apps/aspnet/aspnet4-to-azure.md)</li>

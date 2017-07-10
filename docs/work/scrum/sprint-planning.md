@@ -7,11 +7,11 @@ ms.assetid: AD107B7C-D0AA-44B1-8288-2AB046194439
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 06/12/2017
+ms.date: 06/22/2017
 ---
 
 
-#Sprint planning
+# Sprint planning
  
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
@@ -28,7 +28,7 @@ some or all of the items based on these estimates.
 >[!NOTE]
 >Your sprint backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs-boards-plans.md). 
 >
->For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../agile-project-management.md).  
+>For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../overview.md).  
 
 Here's an example of a sprint plan that consists of backlog items and the tasks required to complete each item. 
 By setting team capacity and estimating tasks, the team can see when the team or a team member is at, under, or over capacity.
@@ -65,7 +65,7 @@ To plan sprints, you should be a member of the team and belong to the Contributo
 	
 	<img src="_img/sp-check-total-effort-level.png" alt="Sprint backlog page, determine total level of effort" style="border: 1px solid #CCCCCC;" />   
 	
-	If you don't see the Effort, Story Points, or Size fields, you can add them by clicking [Column Options](../backlogs-boards-plans.md#column-options). For a description of how these fields are used, see [Create your backlog, Add details and estimates](../backlogs/create-your-backlog.md#estimates). 
+	If you don't see the Effort, Story Points, or Size fields, you can add them by clicking [Column Options](../how-to/set-column-options.md). For a description of how these fields are used, see [Create your backlog, Add details and estimates](../backlogs/create-your-backlog.md#estimates). 
 
 	Your initial plan should identify the subset of requirements that's within your team's capacity based on estimated effort and team velocity. Velocity corresponds to the total Effort or Story Points a team can complete within the sprint time period.  
 
@@ -107,7 +107,7 @@ For example, Christie Church's capacity is 6 hours/day for design work.
 </div>
 
 <div class="tab-pane fade" id="tfs-2015-capacity" >
- <p> If you don't see a team member listed, either [add them to the team](../scale/manage-team-assets.md#add-team-admin) then press the button to add all missing team members to this sprint's capacity planning, or add the user individually.
+ <p> If you don't see a team member listed, either [add them to the team](../scale/add-team-administrator.md) then press the button to add all missing team members to this sprint's capacity planning, or add the user individually.
 </p> 
 <img src="../scale/_img/set-sprint1-capacity.png" title="TFS 2015, Set Capacity" alt="Capacity page" style="border: 1px solid #CCCCCC;" />  
 </div>
@@ -175,7 +175,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 	>[!TIP]  
 	>Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.
 	>
-	>Also, don't divide tasks into subtasks as the [task board will only show leaf node tasks](../backlogs-boards-plans.md#bugs-as-tasks). If you do divide a task into subtasks, specify Remaining Work only for the subtasks, as the system rolls up summary values to the parent task. 
+	>Also, don't divide tasks into subtasks as the [task board will only show leaf node tasks](../troubleshoot/resolve-backlog-reorder-issues.md#bugs-as-tasks). If you do divide a task into subtasks, specify Remaining Work only for the subtasks, as the system rolls up summary values to the parent task. 
 
 
 <a id="adjust-work">  </a>
@@ -246,7 +246,7 @@ Then, open the query and click the email icon.
 
 In the form that appears, enter the name(s) of valid users (ones who have access to the team project). 
 
-Or, you can select all the items in the list, choose **Copy as HTML**, and paste the formatted list into an email form or Word document. See [Share plans](../track/share-plans.md) for more ways to share work with your team. 
+Or, you can select all the items in the list, choose **Copy as HTML**, and paste the formatted list into an email form or Word document. See [Email or print work items](../how-to/email-work-items.md) for more ways to share work with your team. 
 
 
 <a id="order"> </a>
@@ -257,87 +257,9 @@ When you need to change the order of an item, simply drag the item to its new lo
 
 Ordering and re-parenting backlog items requires that you don't nest items of the same type within each other. That is, you don't create product backlog items that are children of other product backlog items, or tasks that are children of tasks. You can only re-parent tasks under backlog items, backlog items under features, and features under epics. 
 
-If you receive the following message, [you can fix it by removing nested child items](../backlogs-boards-plans.md#display-hierarchy).
+If you receive the following message, [you can fix it by removing nested child items](../troubleshoot/resolve-backlog-reorder-issues.md).
 
 ![Can't reorder with nested backlog items message](_img/nested_info.png)  
 
-<a id="groom">  </a>
-###Refine your backlog
-  
-Backlog refinement supports your sprint planning efforts and helps minimize these often seen challenges:
 
-* Long, unfocused, and ineffective sprint planning meetings  
-* Insufficient thought given to design requirements  
-* Poor sprint planning and execution  
-* Defocus on the business value team wants to achieve  
-* Inability to forecast  
-
-A meeting to refine the backlog should occur separate from the sprint planning meeting. Use this meeting to perform these activities:  
-
-* Right-size backlog items by splitting larger items into smaller items. No backlog item should be larger than it will take to complete in a single sprint.  
-
-* Identify and fill in gaps in the product backlog. Capture new ideas and stories, architecture and design requirements, and other spikes.  
-
-* Reorder the backlog to represent today's priorities and business value focus.  
-
-* Ensure well defined acceptance criteria has been added to each item.  
-
-* Revisit estimates made to backlog items and adjust upwards or downwards based on recent understanding about scope and acceptance criteria.  
-
-* Review all potential backlog items to consider for the upcoming sprint to make sure they are well understood and that any additional work required to support their development is well understood by both product owner and the team.  
-
-You'll know that you've done a good job refining your backlog when your sprint planning meetings run smoothly and efficiently. Such meetings shouldn't contain a lot of surprises, and your team should feel they can contribute fullly.    
-
-[Refining your Agile backlogs for success](http://www.batimes.com/robert-galen/grooming-your-agile-backlogs-for-success.html) provides a nice quality checklist to guide your backlog refinement efforts
-
-
-
-<a id="sprint-planning-meeting">  </a>
-### Sprint planning meetings 
-
-Much of sprint planning involves a negotiation between the product owner and the team to determine the focus and work to tackle in the upcoming sprint. It's useful to time-box the planning meeting, restricting it to 4 hours or less. 
-
-In the first part of the meeting, your product owner meets with your team to discuss the user stories that might be included in the sprint. Your product owner will share information and answer any questions that your team has about those stories. This conversation might reveal details such as data sources, user interface layout, response time expectations, and considerations for security and usability. Your team should capture these details within the backlog items form. During this part of the meeting, your team learns what it must build.
-
-As you plan your sprints, you may discover additional requirements that you should capture and add to your backlog. Before your sprint planning meeting, you'll want to [refine your backlog](sprint-planning.md#groom) to make sure that it is well defined and in priority order. 
-
-Also, setting a sprint goal as part of your planning efforts can help the team stay focused on what's most important for each sprint. 
-
-After you've planned your sprint, you may want to [share the plan](sprint-planning.md#share) with key stakeholders. 
-
-You can learn more about conducting your sprint planning meeting from these resources: 
-*	[What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)
-*	[Sprint planning](https://msdn.microsoft.com/library/hh765982.aspx) white paper
-*	[The Scrum Guide](http://www.scrumguides.org/scrum-guide.html)
-*	[Build and manage the product backlog](https://msdn.microsoft.com/library/hh765982.aspx) white paper
-
-
-
-
-<a id="set-sprint-goals">  </a>
-###Set sprint goals
- 
-Scrum teams use sprint goals to focus their sprint activities. They often set this goal during their sprint planning meeting. The goal summarizes what the team wants to accomplish by the end of the sprint. By explicitly stating the goal, you create shared understanding within the team of the core objective. The sprint goal can also help guide the team when conflicts arise around priorities. 
-<a id="tips-from-trenches" />
-
->###Tips from the trenches: Define sprint goals 
->The sprint goal defines what the product owner and the team consider as the ultimate target to accomplish that sprint. 
->It's not a random selection of backlog items that don't really have a relationship, but a short piece of text that captures 
->what the team should try to accomplish. Normally the product owner comes up with the sprint goal before selecting a 
->number of items for the next sprint. The items for that sprint should all fit that common goal.
->
->Sprint goals can be feature oriented, but might also have a large process component such as deployment automation or test automation. 
->For example:
-> - This sprint we will focus on a very simple user story and we will use it to prove that the proposed solution will work.  
-> - This sprint will revolve around implementing the security features that will properly secure the administration section of the website.  
-> - This sprint will be about integrating the most important payment gateways so that we can start collecting money.  
-> 
-> Setting the sprint goals helps the team to stay focused. 
-> It will make it easier to define priority of tasks within a sprint and it will probably 
-help limit the number of stakeholders and end-users that are involved. 
-> 
-> During the sprint review the most important question you should ask yourself is whether you managed to achieve the sprint goal. 
-> How many stories you actually completed comes second. If the goal is accomplished, the sprint succeeds, even if not all stories were finished.
-> 
-> Contributed by [Jesse Houwing](http://blog.jessehouwing.nl/), Visual Studio devops Ranger and a senior consultant working for Avanade Netherlands.
 

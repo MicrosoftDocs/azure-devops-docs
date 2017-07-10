@@ -124,8 +124,6 @@ The help provides information on authentication alternatives and unattended conf
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [include](_shared/v2/qa-firewall.md)]
-
 ### How do I configure the agent to work through a web proxy and connect to Team Services?
 
 In the agent root directory, create a .proxy file with your proxy server URL.

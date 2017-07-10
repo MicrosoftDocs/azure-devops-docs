@@ -65,7 +65,7 @@ As changes occur to work items, code reviews, source control files, and builds, 
 <a id="team-alerts"></a>
 
 ## Set alerts for your team
-1.	If you're not a team administrator, [get added as one](../scale/manage-team-assets.md#add-team-admin). You need to be a team, project, or project collection administrator to create team alerts. 
+1.	If you're not a team administrator, [get added as one](../scale/add-team-administrator.md). You need to be a team, project, or project collection administrator to create team alerts. 
 
 2.	Open team alerts from Manage TFS Alerts.
 

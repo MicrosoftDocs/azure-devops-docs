@@ -75,14 +75,10 @@ Continuous deployment (CD) means starting an automated release process whenever 
 1. Select the **Continuous deployment** check box, and then choose **Create**.
 
 1. Select the **Azure Cloud Service Deployment** task and configure it as follows:
-   
-   ![icon](../../../steps/deploy/_img/azure-cloud-service-deployment-icon.png) [Deploy: Azure Cloud Service Deployment](../../../steps/deploy/azure-cloud-service-deployment.md) - Deploy the app to an Azure cloud service.
-   
-   - **Azure Subscription (Classic)**: Select an Azure Classic service endpoint. If you have not created one already, create one now by choosing **Add**. Then return to your release definition, refresh the **Azure Subscription** list, and select the connection you just created.
-   
-   - **Storage account**: Select the storage account you created earlier.
-   
-   - **Service name**: Select the name of an existing cloud service, or enter the name of a new cloud service.<p />
+
+   | Task step | Parameters |
+   | --------- | ---------- |
+   | ![icon](../../../steps/deploy/_img/azure-cloud-service-deployment-icon.png)<br/>[Deploy: Azure Cloud Service Deployment](../../../steps/deploy/azure-cloud-service-deployment.md)<br/>Deploy the app to an Azure cloud service. | **Azure Subscription (Classic)**: Select an Azure Classic service endpoint. If you have not created one already, create one now by choosing **Add**. Then return to your release definition, refresh the **Azure Subscription** list, and select the connection you just created.<br/>**Storage account**: Select the storage account you created earlier.<br/>**Service name**: Select the name of an existing cloud service, or enter the name of a new cloud service. |
 
    > If your Azure subscription is defined in an Azure Government Cloud, ensure your deployment process meets the relevant compliance requirements. For more details, see [Azure Government Cloud deployments](../../../concepts/library/government-cloud.md).
    

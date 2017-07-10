@@ -46,8 +46,8 @@ Values in parenthesis indicate the following:
 - [Application Launch Instructions](guidance-code-review-feedback-field-reference.md)  
 - [Application Start Information](guidance-code-review-feedback-field-reference.md)   
 - [Application Type](guidance-code-review-feedback-field-reference.md)  
-- [Area ID](../customize/modify-areas-iterations.md#field-reference) (System)   
-- [Area Path](../customize/modify-areas-iterations.md#field-reference) (System)  
+- [Area ID](../track/query-by-area-iteration-path.md) (System)   
+- [Area Path](../track/query-by-area-iteration-path.md) (System)  
 - [Assigned To](../track/query-by-workflow-changes.md)  
 - [Associated Context](guidance-code-review-feedback-field-reference.md)   
 - [Associated Context Code](guidance-code-review-feedback-field-reference.md)   
@@ -120,8 +120,8 @@ Values in parenthesis indicate the following:
 - [Impact on User Experience](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)  
 - [Integrated in Build](../track/build-test-integration.md) (TCM)  
 - [Issue](../track/build-test-integration.md) (TCM)  
-- [Iteration Id](../customize/modify-areas-iterations.md#field-reference)  (System)  
-- [Iteration Path](../customize/modify-areas-iterations.md#field-reference) (System)  
+- [Iteration Id](../track/query-by-area-iteration-path.md)  (System)  
+- [Iteration Path](../track/query-by-area-iteration-path.md) (System)  
 <h3 style="margin-bottom:0px">J</h3>  
 - [Justification](cmmi/guidance-change-request-field-reference-cmmi.md) (CMMI)  
 <h3 style="margin-bottom:0px">L</h3>  
@@ -134,7 +134,7 @@ Values in parenthesis indicate the following:
 - [Mitigation Plan](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)  
 - [Mitigation Triggers](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) (CMMI)  
 <h3 style="margin-bottom:0px">N</h3>  
-- [Node Name](../customize/modify-areas-iterations.md#field-reference) (System) 
+- [Node Name](../track/query-by-area-iteration-path.md) (System) 
 <h3 style="margin-bottom:0px">O - P -Q</h3>  
 - [Optional Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md) (CMMI)  
 - [Original Estimate](../track/query-numeric.md)   
@@ -218,7 +218,7 @@ The following topics describe fields that are used in common by several WITs, or
 <ul style="padding-left:10px">
 <li style="margin-bottom:2px">[Titles, IDs, and descriptive fields](../track/titles-ids-descriptions.md)</li> 
 <li style="margin-bottom:2px">[History and revision changes](../track/history-and-auditing.md)</li>
-<li style="margin-bottom:2px">[Areas and iterations](../customize/modify-areas-iterations.md)</li> 
+<li style="margin-bottom:2px">[Areas and iterations](../customize/set-area-paths.md)</li> 
 <li style="margin-bottom:2px">[Assignments and account-specific fields](../track/query-by-workflow-changes.md)</li>
 <li style="margin-bottom:2px">[Planning, ranking, and priorities](../track/planning-ranking-priorities.md)</li>
 <li style="margin-bottom:2px">[Work estimates, activity, and other numeric fields](../track/query-numeric.md) </li>

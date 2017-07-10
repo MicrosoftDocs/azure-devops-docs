@@ -97,7 +97,7 @@ Use the following guidance and that provided for [fields used in common across w
 
 
 >[!TIP]    
->Use the [Discussion section](../backlogs/add-work-items.md#discussion) to add and review comments made about the work being performed. This feature is only available from Team Services.   
+>Use the [Discussion section](../concepts/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from Team Services.   
 
 ## Track progress
 
@@ -236,7 +236,7 @@ Issues are used to track events that may block progress or shipping a user story
 
 ![Add work item from a New work item widget](../../_img/alm-feature-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team context](#team-context).  
+Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../how-to/switch-team-context-work.md).  
  
 ### Track business value  
 You can use the Priority field to differentiate the value of various stories. Or, you can add a custom field to the User Story WIT that tracks the relative value of stories. To learn how, see [Customize a field for a process](../process/customize-process-field.md).
@@ -247,7 +247,7 @@ You can use the Priority field to differentiate the value of various stories. Or
 The [Stack Rank](../track/planning-ranking-priorities.md) field is used to track the relative ranking of user stories, however by default it doesn't appear on the work item form. The sequence of items on the backlog page is determined according to where you have [added the items or moved the items on the page](../backlogs/create-your-backlog.md#move-items-priority-order). As you drag items, a background process updates this field.
 
 
-[!INCLUDE [temp](../_shared/switch-team-context-work.md)]  
+[!INCLUDE [temp](../how-to/switch-team-context-work.md)]  
 
 ### Links control, client work item form 
 

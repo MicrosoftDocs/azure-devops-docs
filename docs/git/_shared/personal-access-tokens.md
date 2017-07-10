@@ -37,7 +37,7 @@ or your Team Foundation Server web portal (```https://{server}:8080/tfs/```).
 
    <img alt="Name your token, select a lifespan. If using Team Services, select an account for your token" src="./_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
-0.  Select the [scopes](../../../integrate/get-started/Authentication/oauth.md#scopes)
+0.  Select the [scopes](../../../integrate/get-started/authentication/oauth.md#scopes)
 that this token will authorize for **your specific tasks**.
 
 	For example, to create a token to enable a [build and release agent](../../build/concepts/agents/agents.md) to authenticate to Team Services or TFS, 

@@ -483,4 +483,4 @@ We've just shown how to add another WIT to your backlogs or boards. However, if 
 
 See [Customize your work tracking experience](customize-work.md) for an overview of all the options available for customizing work tracking objects. 
 
-To learn how hierarchical or nested elements are displayed on a backlog or board, see [Backlogs, boards, and plans](../backlogs-boards-plans.md#nested).
+To learn how hierarchical or nested elements are displayed on a backlog or board, see [How backlogs and boards display hierarchical (nested) items](../troubleshoot/resolve-backlog-reorder-issues.md).

@@ -36,7 +36,7 @@ For an overview of process models, see [Customize your work tracking experience]
 >[!NOTE]  
 ><b>Feature availability: </b>You can manage all your team settings from a common configuration dialog from Team Services or the web portal for TFS 2015 Update 1 or later version.  
 
-Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../scale/manage-team-assets.md#add-team-admin).
+Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../scale/add-team-administrator.md).
  	
 <div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
 <ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
@@ -92,7 +92,7 @@ Because this setting affects all team members' view of the team backlogs and boa
 
 ##Related notes
 
-- [Get started with Agile tools to plan and track work](../agile-project-management.md)
+- [Get started with Agile tools to plan and track work](../overview.md)
 - [Backlogs, boards, and plans](../backlogs-boards-plans.md)
 - [Create your backlog](../backlogs/create-your-backlog.md)  
 - [Define features and epics](../backlogs/define-features-epics.md)

@@ -1,5 +1,5 @@
 ---
-title: Change access levels | TFS
+title: Change access levels | TFS 
 description: Provide access to web portal users based on their license for stakeholder, basic, advanced, or VS Enterprise via Team Foundation Server
 ms.technology: vs-devops-agile-wit
 ms.topic: get-started-article
@@ -39,7 +39,7 @@ Find out more about licensing from the [Team Foundation Server pricing page](htt
 <img src="_img/access-levels-2017-stakeholder.png" alt="Stakeholder access features" style="border: 1px solid #CCCCCC;" />  		
 </div>
 Stakeholder access is free. Stakeholders can also view releases and manage release approvals.
-See [Stakeholder access](work-as-a-stakeholder.md) for details of features available to stakeholders.
+See [Stakeholder access](../../quickstart/get-started-stakeholder.md) for details of features available to stakeholders.
 </li>
 
 <li>For <u>TFS 2013 and TFS 2015 versions</u>, Assign <a data-toggle="collapse" href="#advanced-access">**Advanced** &#x25BC;</a> access to those users for whom you've purchased the full Test feature set. Here are the purchasing options:  
@@ -231,8 +231,8 @@ You can learn more about each of the features you have access to from the follow
 1.	With Stakeholder access, users can create and modify all work items, and can create and save queries on all work items under their My Queries folder. (This is a change from Limited access in which users could create and modify only those work items that they created and query and view work items they created.)
 Also, stakeholders can create and modify work items using Team Foundation clients such as Visual Studio Community, Microsoft Excel, Microsoft Project, and Microsoft Feedback Client.
 2.	Standard features include access to the Home and Work hubs.
-3. 	Includes all backlogs and boards, including product, portfolio, and sprint backlogs and Kanban and sprint task boards. Can add work items to backlogs, which appear at the bottom of the list. Can't reorder items on the page or use some other features. See [Stakeholder access](work-as-a-stakeholder.md) for details.
-4. 	Server-client version of Release Management that shipped with TFS 2013 and TFS 2015 required users to have an Advanced access level to author release definitions. Integrated web-based version of Release Management shipped with TFS 2015 as [preview](../../build/concepts/licensing/concurrent-pipelines-tfs.md#tfs_before_2017), and only required Basic access level for all tasks. Integrated web-based version of Release Management that ships with TFS 2017 is available to all users with Basic access level.
+3. 	Includes all backlogs and boards, including product, portfolio, and sprint backlogs and Kanban and sprint task boards. Can add work items to backlogs, which appear at the bottom of the list. Can't reorder items on the page or use some other features. See [Stakeholder access](../../quickstart/get-started-stakeholder.md) for details.
+4. 	Release Management is in preview and available when you [upgrade your application server to TFS 2015 Update 2 or later version](https://www.visualstudio.com/downloads/download-visual-studio-vs).   
 5.	Basic access allows you to access the Code, Build, and Test hubs in addition to the Home and Work hubs.
 6.	Request and manage feedback is now available within the Basic access level when you [upgrade your application server to TFS 2015 Update 1 or later version](https://www.visualstudio.com/downloads/download-visual-studio-vs).
 7.	You can open the Admin context and view and modify settings provided you are a team, project, or project collection administrator. See [Administer account features](#administer-account).
@@ -285,8 +285,8 @@ To get started, manage permissions, or learn more about features made available 
 <div style="float:left;width:180px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;font-size:90%">Get started</p>
 - [Work in the web portal](../../connect/work-web-portal.md)   
-- [Team Services](../../setup-admin/get-started.md#account-setup)   
-- [TFS](../../setup-admin/get-started.md#team-foundation-server)   
+- [Team Services](../../setup-admin/account-administration.md#account-setup)   
+- [TFS](../../setup-admin/account-administration.md#team-foundation-server)   
 - [Git](../../git/overview.md)  
 - [TFVC](../../tfvc/overview.md)   
 </div>
@@ -302,7 +302,7 @@ To get started, manage permissions, or learn more about features made available 
 
 <div style="float:left;width:180px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;font-size:90%">Plan and track work</p>
-- [Agile project management](../agile-project-management.md)  
+- [Agile project management](../overview.md)  
 - [Agile tools overview](../overview.md)  
 - [Backlogs, boards, and plans](../backlogs-boards-plans.md)  
 - [Dashboards and reports](../../report/overview.md)   
@@ -338,7 +338,7 @@ Within the admin context, there are several hubs which support administrating fe
 <div style="float:left;width:180px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;font-size:90%">Team project and team level</p>
 - [Overview, teams](../scale/multiple-teams.md)   
-- [Areas, Iterations](../customize/modify-areas-iterations.md)   
+- [Areas, Iterations](../customize/set-area-paths.md)   
 - [Security, permissions](../../setup-admin/permissions.md#project_test)   
 - [Alerts](../track/alerts-and-notifications.md)    
 - [Service Hooks](../../service-hooks/get-started.md)   

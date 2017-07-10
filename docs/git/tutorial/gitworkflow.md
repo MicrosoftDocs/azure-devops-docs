@@ -51,5 +51,5 @@ Use this workflow if you're new to Git. As your team gets more experienced and c
 
 ## What's next
 
-- [Create a new Git repository](creatingrepo.md)
-- [Clone an existing Git repository](clone.md)
+[Create a new Git repository](creatingrepo.md)
+[Clone an existing Git repository](clone.md)

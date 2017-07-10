@@ -39,7 +39,7 @@ The Bugs by Assignment report shows the distribution of active Bugs, grouped by 
 -   Define Bugs, and specify their **Iteration** and **Area** paths.  
   
     > [!NOTE]
-    >  For information about how to define area and iteration paths, see [Customize area and iteration paths](../../work/customize/modify-areas-iterations.md).  
+    >  For information about how to define area and iteration paths, see [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .  
   
 -   Assign each Bug to the team member who is working to resolve or close it.  
   

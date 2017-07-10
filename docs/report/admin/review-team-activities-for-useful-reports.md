@@ -158,7 +158,7 @@ Test planning reports support monitoring the test progress and coverage of backl
  **A:**  While some reports do display similar information, such as sprint burndown and velocity or status on all iterations, these reports are formatted differently and support additional filters. 
 
 ###Q: Do you want to create additional product areas or release milestones?
-**A:**  See [Modify areas or iterations](../../work/customize/modify-areas-iterations.md).
+**A:**  See [Modify areas or iterations](../../work/customize/set-area-paths.md).
 
 ###Q: Do you want to bulk edit work items to assign them to an area, iteration, team member, or priority?
 **A:**  See [Bulk modify work items](../../work/backlogs/bulk-modify-work-items.md).

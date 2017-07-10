@@ -10,7 +10,7 @@ ms.author: kaelli
 ms.date: 05/15/2017 
 ---
 
-# Work in the web portal
+# Navigating in the web portal
 
 **Team Services | TFS 2017 | TFS 2015 | TFS 2013**  
 
@@ -164,13 +164,11 @@ In addition, they have access to special queries&mdash;Assigned to me query, Fol
 <a id="team-scoped-features">  </a>
 ### Team-scoped features
 
-Teams access their set of team-scoped features by [choosing their team context](#switch-team-context). Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise.
+Teams access their set of team-scoped features by choosing their team context. Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise.
 
 ![Agile tool team assets](../work/scale/_img/agile-tools-team-assets.png)  
 
 Also, teams can set their query and build favorites within **Team favorites** folders. For more information, see [Manage team assets](../work/scale/manage-team-assets.md).  
-
-[!INCLUDE [temp](../_shared/switch-team-context.md)]
 
 
 <a id="user-context">  </a>
@@ -192,7 +190,7 @@ The **Home** hub supports a configurable Welcome page and dashboards. From the *
 >**Feature availability**: The [Account hub or New Account Landing Page feature](account-home-pages.md) is in preview mode for Team Services and turned on for all users of the web portal for TFS 2017.1 and later versions. To enable or disable the feature, see [Enable preview features](../collaborate/preview-features.md). 
 
 <div style="float:left;width:300px;margin:3px;font-size:95%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Home](../report/monitor-progress-trends.md)</p>
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Home](../report/overview.md)</p>
 <ul style="padding-left:20px">
  <li style="margin-bottom:2px">[Account hub](account-home-pages.md)</li>
  <li style="margin-bottom:2px">[Project vision and status page](../collaborate/project-vision-status.md)</li>
@@ -375,9 +373,9 @@ Below we show the admin context for the team project level.
 
 <div style="float:left;width:375px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Team settings</p>
-<p style="padding-bottom:0px;text-align:left;">Required membership: [Team administrator role](../work/scale/manage-team-assets.md#add-team-admin)</p>
+<p style="padding-bottom:0px;text-align:left;">Required membership: [Team administrator role](../work/scale/add-team-administrator.md)</p>
 <ul style="padding-left:20px">
- <li style="margin-bottom:2px">[Overview: Add team members](../work/scale/multiple-teams.md)  &#124; [Add team admins](../work/scale/manage-team-assets.md#add-team-admin)  </li>
+ <li style="margin-bottom:2px">[Overview: Add team members](../work/scale/multiple-teams.md)  &#124; [Add team admins](../work/scale/add-team-administrator.md)  </li>
  <li style="margin-bottom:2px">[Select backlog levels](../work/customize/select-backlog-navigation-levels.md) &#124; [Set working days](../work/scale/capacity-planning.md)  &#124; [Working with bugs](../work/customize/show-bugs-on-backlog.md)</li>
  <li style="margin-bottom:2px">[Work/Iterations & Areas (team defaults)](../work/scale/set-team-defaults.md)</li>
 <li style="margin-bottom:2px">[Work/Templates](../work/productivity/work-item-template.md)  (Team Services) </li>
@@ -396,7 +394,7 @@ Below we show the admin context for the team project level.
 <p style="padding-bottom:0px;text-align:left;">Required membership:  [Project Administrators](../setup-admin/add-administrator-tfs.md#team-project)</p>
 <ul style="padding-left:40px">
  <li style="margin-bottom:2px">[Overview: Add teams](../work/scale/multiple-teams.md)</li>
- <li style="margin-bottom:2px">[Work/Iterations & Areas (project-wide)](../work/customize/modify-areas-iterations.md)</li>
+ <li style="margin-bottom:2px">[Work/Iterations & Areas (project-wide)](../work/customize/set-area-paths.md)</li>
 <li style="margin-bottom:2px">[Security (manage project-level permissions)](../setup-admin/permissions.md#team-project-level-permissions)</li>
 <li style="margin-bottom:2px">[Notifications](../collaborate/manage-team-notifications.md) or [Alerts](../work/track/alerts-and-notifications.md)</li>
 <li style="margin-bottom:2px">[Version Control (manage repository permissions)](../setup-admin/permissions.md#git-repository)</li>
@@ -470,7 +468,7 @@ Now that you have an understanding of how the user interface is structure, it's 
 
 If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../git/get-started.md) and [Manage bugs](../work/backlogs/manage-bugs.md).  
 
-To start planning and tracking work, see [Get started with Agile tools to plan and track work](../work/agile-project-management.md).
+To start planning and tracking work, see [Get started with Agile tools to plan and track work](../work/overview.md).
 
 Additional resources you may find of interest:
 
@@ -518,7 +516,7 @@ To connect to the web portal, you need your user account added to the team proje
 
 For Team Services, five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users (Team Services)](../setup-admin/team-services/buy-basic-access-add-team-services-users.md).
 
-For TFS, limited access is available to an unlimited number of stakeholders for free; most regular contributors must have a TFS client access license (CAL). For details, see [Work as a Stakeholder](../work/connect/work-as-a-stakeholder.md).
+For TFS, limited access is available to an unlimited number of stakeholders for free; most regular contributors must have a TFS client access license (CAL). For details, see [Work as a Stakeholder](../quickstart/get-started-stakeholder.md).
 
 All Visual Studio subscriptions and paid Team Services users include a TFS CAL. Find out more about licensing from the following pricing pages: 
 - [Visual Studio Team Services pricing](https://www.visualstudio.com/team-services/pricing/)

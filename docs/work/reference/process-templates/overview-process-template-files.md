@@ -107,11 +107,11 @@ All plug-ins are supported (![supported](../../_img/icons/checkmark.png)) when y
 &nbsp;&nbsp;&nbsp;[Lab.xml](define-initial-configuration-lab-management.md)</td>
 <td>![supported](../../_img/icons/checkmark.png)</td>
 <td>![not supported](../../_img/icons/delete_icon.png)</td>
-<td>Defines the initial security permissions that are assigned to identities for Visual Studio Lab Management. <!---[Learn more about Lab Management](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).-->
+<td>Defines the initial security permissions that are assigned to identities for Visual Studio Lab Management. <!---[Learn more about Lab Management](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md).-->
 
 <blockquote>
 ![](../../_img/icons/note-icon.png)<br/>
-Going forward, native build and release management tools replace the previous lab management tools. To learn more, see [Use Build and Release Management instead of Lab Management for automated testing](https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
+Going forward, native build and release management tools replace the previous lab management tools. To learn more, see [Use Build and Release Management instead of Lab Management for automated testing](/docs/test/lab-management/use-build-or-rm-instead-of-lab-management).
 </blockquote>
 
 </td>

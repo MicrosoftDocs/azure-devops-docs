@@ -37,7 +37,7 @@ A subscription lets you control what your team should be notified about and how 
 	
 	![Notifications under settings menu](_img/team-notifications-settings-menu.png)
 
-2. Click **New**. If you're not a team administrator, [get added as one](../work/scale/manage-team-assets.md#add-team-admin). You need to be a team, project, or project collection administrator to create team alerts.
+2. Click **New**. If you're not a team administrator, [get added as one](../work/scale/add-team-administrator.md). You need to be a team, project, or project collection administrator to create team alerts.
 	
 3. Select the type of activity you want your team to be notified about.
 	

@@ -6,10 +6,10 @@ ms.prod: vs-devops-alm
 ms.assetid: 3FAB9216-1D9A-442A-BEE7-5D1889B634B5
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/16/2017
+ms.date: 06/22/2017
 ---
 
-#Productivity tips
+# Productivity tips
 
 [!INCLUDE [temp](../_shared/dev15-version-header.md)]  
 
@@ -72,8 +72,6 @@ Here are some of the types of productivity tools and tasks that you can access:
 
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Bulk add or update work items</p>
 <ul style="padding-left:30px;font-size:90%">
-<li style="margin-bottom:1px">[Bulk modify (backlog)](../backlogs/create-your-backlog.md#bulk-modify) (TFS 2015.1)</li>
-<li style="margin-bottom:1px">[Bulk modify (sprint backlog)](../scrum/sprint-planning.md#bulk-modify) (TFS 2015.1)</li>
 <li style="margin-bottom:1px">[Bulk modify (web portal)](../backlogs/bulk-modify-work-items.md)</li>
 <li style="margin-bottom:1px">[Bulk add or remove tags](../track/add-tags-to-work-items.md#bulk-modify) (TFS 2015.2)</li>
 <li style="margin-bottom:1px">[Bulk add or modify with Excel](../office/bulk-add-modify-work-items-excel.md) &#160;<sup> 3</sup></li>
@@ -88,7 +86,7 @@ Here are some of the types of productivity tools and tasks that you can access:
 
 <ul style="padding-left:30px;font-size:90%">
 <li style="margin-bottom:1px">[@mention to notify a team member](#mention-person-id)  (TFS 2015.2)</li>
-<li style="margin-bottom:1px">[Work item discussions](../backlogs/add-work-items.md#discussion) (TFS 2017)</li>
+<li style="margin-bottom:1px">[Work item discussions](../concepts/work-item-form-controls.md#discussion) (TFS 2017)</li>
 <li style="margin-bottom:1px">[Manage personal notifications](../../collaborate/manage-personal-notifications.md) (TFS 2017.1)</li>
 <li style="margin-bottom:1px">[Manage team notifications](../../collaborate/manage-team-notifications.md) (TFS 2017.1)</li>
 <li style="margin-bottom:1px">[Set personal or team alerts, get notified of changes](../track/alerts-and-notifications.md) (TFS)</li>
@@ -225,7 +223,7 @@ When viewing their own mentioned names in conversations, users will notice that 
 
 <img src="_img/at-mention-link-view-of-own-name.png" alt="Web portal, At mention of ones own name appears in orange text]" style="border: 1px solid #CCCCCC;" /> 
 
-You can use the **@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments. You can also use the **@mention** control in the [Discussion section of work item forms](../backlogs/add-work-items.md#discussion). 
+You can use the **@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments. You can also use the **@mention** control in the [Discussion section of work item forms](../concepts/work-item-form-controls.md#discussion). 
 
 
 <a id="mention-wit-id">  </a>

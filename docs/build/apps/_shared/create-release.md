@@ -19,20 +19,10 @@ Your CD release process picks up the artifacts published by your CI build and th
 1. Select the **Continuous deployment** check box, and then choose **Create**.
 
 1. Select the **Deploy Azure App Service** task and configure it as follows:
- 
-   ![Deploy: Azure App Service Deploy](../../steps/deploy/_img/azure-web-app-deployment-icon.png) [Deploy: Azure App Service Deploy](../../steps/deploy/azure-app-service-deploy.md) - Deploy the app to Azure App Services.
-   
-   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm). **Note**: If your Azure subscription is defined in an Azure Government Cloud, ensure your deployment process meets the relevant compliance requirements. For more details, see [Azure Government Cloud deployments](../../concepts/library/government-cloud.md).
-   
-   - **App Service Name**: the name of the web app (the part of the URL *without* **.azurewebsites.net**).
-   
-   - **Deploy to Slot**: make sure this is cleared (the default)
-   
-   - **Virtual Application:** leave blank
-   
-   - **Web Deploy Package:** `$(System.DefaultWorkingDirectory)\**\*.zip` (the default)
-   
-   - **Advanced: Take App Offline:** If you run into locked .DLL problems when you test the release, as explained below, try selecting this check box.<p />
+
+   | Task step | Parameters |
+   | --------- | ---------- |
+   | ![Deploy: Azure App Service Deploy](../../steps/deploy/_img/azure-web-app-deployment-icon.png)<br/>[Deploy: Azure App Service Deploy](../../steps/deploy/azure-app-service-deploy.md)<br/>Deploy the app to Azure App Services | **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections**. If no connections appear, choose **Manage**, select **New Service Endpoint** then **Azure Resource Manager**, and follow the prompts. Then return to your release definition, refresh the **AzureRM Subscription** list, and select the connection you just created. **Note**: If your Azure subscription is defined in an Azure Government Cloud, ensure your deployment process meets the relevant compliance requirements. For more details, see [Azure Government Cloud deployments](../../concepts/library/government-cloud.md).<br/>**App Service Name**: the name of the web app (the part of the URL *without* **.azurewebsites.net**).<br/>**Deploy to Slot**: make sure this is cleared (the default)<br/>**Virtual Application:** leave blank<br/>**Web Deploy Package:** `$(System.DefaultWorkingDirectory)\**\*.zip` (the default)<br/>**Advanced: Take App Offline:** If you run into locked .DLL problems when you test the release, as explained below, try selecting this check box. |
 
    > [!Note]
    >

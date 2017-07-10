@@ -183,17 +183,15 @@ a maximum of four agents at any one time:
 ## Server phase
 
 Use a server phase in a release definition to run tasks that do
-not require an agent, and execute entirely on the Team Services or Team Foundation Server.
-Only a few tasks, such as the [Manual Intervention](#maninterv) and [Invoke REST API](#invokeapi) tasks,
-are supported in a server phase at present. Of these, only one can be included in each server phase.
+not require an agent, and execute entirely on the Team Services or Team Foundation Server. Only one task, **Manual Intervention**, is supported in a server phase at present.
 
 > Server phases and manual intervention tasks only work in release definitions in Team Services and TFS 2017.
 
-<a name="maninterv"></a>
 ### The Manual Intervention task
 
-The **Manual Intervention** task does not perform deployment actions directly.
-Instead, it allows you to pause an active deployment within an environment, typically to perform some
+The **Manual Intervention** task does not perform
+deployment actions directly. Instead, it allows you to
+pause an active deployment within an environment, typically to perform some
 manual steps or actions, and then continue the automated deployment steps.
 
 The **Manual Intervention** task configuration includes an **Instructions** parameter that
@@ -213,16 +211,6 @@ a message bar containing  a link that opens the
 Manual Intervention dialog containing the instructions.
 After carrying out the manual steps, the administrator
 or user can choose to resume the deployment, or reject it. Users with **Manage deployment** permission on the environment can resume or reject the manual intervention.
-
-<a name="invokeapi"></a>
-### The Invoke REST API task
-
-The **Invoke REST API task** task does not perform deployment actions directly.
-Instead, it allows you to invoke any generic HTTP REST API as part of the automated
-pipeline and, optionally, wait for it to be completed. For example,
-it can be used to invoke specific processing with an Azure function.
-
-![Configuring an Invoke REST API task](_img/invoke-rest-api-task.png)
 
 ## Deployment group phase
 

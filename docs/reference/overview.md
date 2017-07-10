@@ -22,8 +22,8 @@ ms.date: 03/02/2017
 <div style="float:left;width:200px;margin:3px">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Get started</p>
 <ul style="padding-left:20px;font-size:90%">
-<li style="margin-bottom:2px">[Team Services](../setup-admin/get-started.md#team-services)</li>
-<li style="margin-bottom:2px">[TFS](../setup-admin/get-started.md#team-foundation-server)</li>
+<li style="margin-bottom:2px">[Team Services](../setup-admin/account-administration.md#team-services)</li>
+<li style="margin-bottom:2px">[TFS](../setup-admin/account-administration.md#team-foundation-server)</li>
 <li style="margin-bottom:2px">[Git](../git/overview.md)</li>
 <li style="margin-bottom:2px">[TFVC](../tfvc/overview.md)</li>
 <li style="margin-bottom:2px">[Code search](../search/overview.md)</li>

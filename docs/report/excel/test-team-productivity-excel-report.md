@@ -77,7 +77,7 @@ Teams who are responsible for testing software can use the Test Team Productivit
 -   (Optional) To filter the reports by product area and iteration, specify the **Area** and **Iteration** paths of each test case.  
   
     > [!NOTE]
-    >  The project administrator for each team project [defines area and iteration paths](../../work/customize/modify-areas-iterations.md) for that project so that the team can track progress by those designations.  
+    >  The project administrator for each team project [defines area and iteration paths](../../work/customize/set-area-paths.md) for that project so that the team can track progress by those designations.  
   
  For the bug activity reports to be useful and accurate, the team must perform the following activities:  
   

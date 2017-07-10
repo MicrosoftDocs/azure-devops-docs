@@ -1,1 +1,1 @@
-> Are you new to Team Build, Release Management, or CI/CD? If so, we recommend that you first read [CI/CD Hello world](../get-started/ci-cd-part-1.md) and then come back here after that.
+> Are you new to Team Build, Release Management, or CI/CD? If so, we recommend that you first read [CI/CD for newbies](../get-started/ci-cd-part-1.md) and then come back here after that.

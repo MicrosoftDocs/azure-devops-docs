@@ -326,7 +326,7 @@ public void DeleteTeam()
 
 ```
 
-Contracts: [Wiql](../../extensions/reference/client/api/TFS/WorkItemTracking/Contracts/Wiql.md), [WorkItemQueryResult](../../extensions/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItemQueryResult.md), [WorkItem](../../extensions/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md)
+Contracts: [Wiql](../../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/Wiql.md), [WorkItemQueryResult](../../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItemQueryResult.md), [WorkItem](../../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md)
 
 ## .NET Client Libraries Samples
 
@@ -387,7 +387,7 @@ public GetTeam()
 
 ```
 
-Contracts: [WebApiTeam](../../extensions/reference/client/api/tfs/core/contracts/webapiteam.md)
+Contracts: [WebApiTeam](../../../extend/reference/client/api/tfs/core/contracts/webapiteam.md)
 
 ### Get Team Members
 
@@ -418,7 +418,7 @@ public GetTeamMembers()
 
 ```
 
-Contracts: [IdentityRef](../../extensions/reference/client/api/vss/webapi/contracts/identityref.md)
+Contracts: [IdentityRef](../../../extend/reference/client/api/vss/webapi/contracts/identityref.md)
 
 ### Create New Team
 
@@ -453,7 +453,7 @@ public CreateTeam()
 
 ```
 
-Contracts: [WebApiTeam](../../extensions/reference/client/api/tfs/core/contracts/webapiteam.md)
+Contracts: [WebApiTeam](../../../extend/reference/client/api/tfs/core/contracts/webapiteam.md)
 
 ### Update Existing Team
 
@@ -490,7 +490,7 @@ public UpdateTeam()
 
 ```
 
-Contracts: [WebApiTeam](../../extensions/reference/client/api/tfs/core/contracts/webapiteam.md)
+Contracts: [WebApiTeam](../../../extend/reference/client/api/tfs/core/contracts/webapiteam.md)
 
 ### Delete Team
 
@@ -521,7 +521,7 @@ public DeleteTeam()
 
 ```
 
-Contracts: [WebApiTeam](../../extensions/reference/client/api/tfs/core/contracts/webapiteam.md)
+Contracts: [WebApiTeam](../../../extend/reference/client/api/tfs/core/contracts/webapiteam.md)
 
 > Are there scenarios or samples that you would like us to provide? If so make a new suggestion on our [github project](https://github.com/Microsoft/vsts-restapi-samplecode/issues/new).
 

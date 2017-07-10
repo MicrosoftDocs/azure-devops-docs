@@ -20,7 +20,7 @@ With bulk modify, you can edit fields, add or remove tags, reassign work, or mov
 >[!NOTE]  
 >**Feature availability:**&#160;&#160;The following features are available from Team Services (cloud service) or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Provide product and content feedback](../../provide-feedback.md#platform-version).  
 
-All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../connect/work-as-a-stakeholder.md). 
+All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../quickstart/get-started-stakeholder.md). 
 
 <div style="float:left;width:210px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Multi-select work items</p>
@@ -371,7 +371,7 @@ The sequence of items on the backlog page is determined according to where you h
 
 You should refrain from using the bulk modify function to change the backlog priority of work items. While you can assign a value to the [Backlog Priority (Scrum)](../track/planning-ranking-priorities.md) or [Stack Rank (Agile and CMMI)](../track/planning-ranking-priorities.md) fields, you'll be assigning the same value to all items you've selected for bulk edit. These fields are used by the system to track the relative ranking of items on the product, feature, or epic backlogs.  
 
-The preferred method for bulk edit is to [use multi-select to move items to the top, bottom, or specific position within the page](create-your-backlog.md#bulk-modify). If you must perform a bulk edit of one of the backlog order fields to get a large number of work items in the priority order you want, use [Excel](../office/bulk-add-modify-work-items-excel.md). You can export a query containing the backlog items, update either the Backlog Priority or Stack Rank fields, and then publish your changes. 
+The preferred method for bulk edit is to use multi-select to move items to the top, bottom, or specific position within the page. If you must perform a bulk edit of one of the backlog order fields to get a large number of work items in the priority order you want, use [Excel](../office/bulk-add-modify-work-items-excel.md). You can export a query containing the backlog items, update either the Backlog Priority or Stack Rank fields, and then publish your changes. 
 
 By default, the backlog order fields don't appear on the work item form.   
 

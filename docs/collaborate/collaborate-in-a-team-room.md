@@ -59,7 +59,7 @@ By using the team room instead of email threads, you automatically receive an au
 ## Add members
 You can invite others who have access to the account or team project to participate in your team room. 
 
-1. If you're not a team administrator, [get added as one](../work/scale/manage-team-assets.md#add-team-admin). 
+1. If you're not a team administrator, [get added as one](../work/scale/add-team-administrator.md). 
 
 2. Open **Manage Members**.
 	
@@ -79,7 +79,7 @@ Adding events lets your team know when builds finish, source code is checked in,
 	
 	![Manage events link on the team room page](_img/ALM_CT_ConfigureEvents.png) 
 	
-	If you don't see the **Manage events** link, [get added as a team administrator](../work/scale/manage-team-assets.md#add-team-admin).
+	If you don't see the **Manage events** link, [get added as a team administrator](../work/scale/add-team-administrator.md).
 
 2. Add events. 
 	
@@ -103,7 +103,7 @@ Adding events lets your team know when builds finish, source code is checked in,
 ## Add another room
 Adding other rooms provides areas for ad hoc discussions, cross-team interactions, virtual teams, or social discussions. 
 
-1. Add a room. If the **New** link is not active, [get added as a team administrator](../work/scale/manage-team-assets.md#add-team-admin).
+1. Add a room. If the **New** link is not active, [get added as a team administrator](../work/scale/add-team-administrator.md).
 	
 	![New link on the Rooms page, New Room dialog box](_img/ALM_CT_NewRoom.png)
 

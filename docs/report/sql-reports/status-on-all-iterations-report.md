@@ -46,7 +46,7 @@ After work has progressed on several iterations, also known as sprints, you can 
 -   Define user stories, tasks, and bugs, and specify the **Iteration** and **Area** paths for each.  
   
     > [!NOTE]
-    >  For information about how to define iteration and area paths, see [Customize area and iteration paths](../../work/customize/modify-areas-iterations.md).  
+    >  For information about how to define iteration and area paths, see [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .  
   
 -   Specify the **Original Estimate**, **Completed**, and **Remaining** fields for each task or subtask, and update the **Completed** and **Remaining** fields during the iteration.  
   

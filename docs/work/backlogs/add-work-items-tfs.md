@@ -42,7 +42,7 @@ Here we show how to add work items from the web portal. For additional clients t
 
 	![Home page -  create work items](_img/work-items-tfs-team-home-page.png)  
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/multiple-teams.md). To change the team context, see [switch team project or team focus](#team-context).
+	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/multiple-teams.md). To change the team context, see [Switch team project or team focus](../how-to/switch-team-context-work.md)
 
 3. Enter a title and then save the work item. Before you change the default State, you must save it.  
 
@@ -141,22 +141,6 @@ Once you've added several work items, you can use additional features to get not
 
 <div style="clear:left;font-size:100%">
 </div>
-
-<a id="new-work-items-defaults">  </a>
-
-<a id="team-context"></a>
-<a id="switch-team-context">  </a>
-
-### Switch team project or team focus   
-Several features depend on the team project or team that you have selected. For example, dashboards, backlogs, and board views will change depending on the context selected. 
-
-When you add a work item, the system references the default area and iteration paths defined for the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board, are assigned the team default backlog iteration. To change team defaults, see [Set team defaults](../scale/set-team-defaults.md).  
-
-You navigate to your team context from the top navigation bar. The method changes slightly depending on the platform you work from.    
-    
-Click the name of the team project/team and select a team or team project that you've recently visited. If you don't see the team or team project you want, click Browse all to browse all team projects and teams. 
-
-<img src="../_shared/_img/switch-team-project-2.png" alt="Choose another team from the team project menu" style="border: 1px solid #CCCCCC;" /> 
 
 <a id="clients"></a>  
 ###Clients that support tracking work items  

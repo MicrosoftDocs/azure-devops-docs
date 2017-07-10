@@ -27,6 +27,39 @@ Before you begin, you need a CI build that creates your Azure RM template. To se
 
 * [Build an Azure virtual machine using an Azure RM template](build-azure-vm-template.md)
 
+## Create an Azure RM connection
+
+Follow these steps to establish a connection from Team
+Foundation Server or Visual Studio Team Services to
+Azure. You need an Azure subscription.
+
+1. Open your Team Services or TFS team project in 
+   a web browser. Choose the **Settings** icon in the menu bar and select **Services**.
+
+1. In the **Services** tab, choose **New Service Endpoint** 
+   and select **Azure Resource Manager**.
+
+1. Enter a user-friendly name for the connection and select your Azure subscription.
+ 
+   >If the subscription you require is not shown in the service endpoint dialog, see
+   [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm-conditions)
+   for more information and 
+   [Troubleshoot Azure Resource Manager service endpoints](../../../actions/azure-rm-endpoint.md).
+
+   Or, if you prefer to use an existing service principal,
+   use the link near the bottom to open the full version of
+   the dialog and follow these steps:
+
+   - Download and run **[this PowerShell script](https://github.com/Microsoft/vsts-rm-documentation/blob/master/Azure/SPNCreation.ps1)** in an Azure PowerShell window. 
+   - Enter a user-friendly name for the connection.
+   - Copy these fields from the output of the PowerShell script into the Azure subscription dialog textboxes:
+     * Subscription ID
+     * Subscription Name
+     * Service Principal ID
+     * Service Principal Key
+     * Tenant ID<p/>
+ 
+1. Choose **OK** to save the Azure service endpoint.
 
 ## Create the release definition
 
@@ -46,24 +79,9 @@ Carry out the following steps to deploy the Azure Resource Group.
 
 1. Configure the **Azure Resource Group Deployment** task as follows:
 
-   ![Azure Resource Group Deployment](../../../steps/deploy/_img/azure-resource-group-deployment-icon.png) [Deploy: Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment) - Deploy files to an Azure Resource Group.
-   
-   - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm).
-   
-   - **Action**: `Create or Update Resource Group`.
-   
-   - **Resource Group**: Enter a name for a new resource group, or specify an existing resource group.
-   
-   - **Template location**: The path of the Resource Manager template; for example: `$(System.DefaultWorkingDirectory)\ASPNet4.CI\drop\HelloWorldARM\Templates\WindowsVirtualMachine.json`.
-   
-   - **Template Parameters**: The path of the Resource Manager template parameters file; for example `$(System.DefaultWorkingDirectory)\ASPNet4.CI\drop\HelloWorldARM\Templates\WindowsVirtualMachine.parameters.json`.
-   
-   - **Override Template Parameters**: A list of values for the parameters in the template; for example: `-adminUsername $(vmuser) -adminPassword (ConvertTo-SecureString -String $(vmpassword) -AsPlainText -Force) -dnsNameForPublicIP $(dns)'`. Use the **...** button to open the parameters editor dialog.
-   
-   - **Enable Deployment Prerequisites**: Checked.
-   
-   - **Output - Resource Group**: The name of the Resource Group output from the task as a value that can be used as an input to further deployment tasks.<p />
+   | Task step | Parameters |
+   | --------- | ---------- |
+   | ![Azure Resource Group Deployment](../../../steps/deploy/_img/azure-resource-group-deployment-icon.png)<br/>[Deploy: Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment)<br/>Deploy files to an Azure Resource Group. | **Azure Subscription**: Select the name of the Azure Resource Manager endpoint you defined earlier.<br/>**Action**: `Create or Update Resource Group`.<br/>**Resource Group**: Enter a name for a new resource group, or specify an existing resource group.<br/>**Template location**: The path of the Resource Manager template; for example: `$(System.DefaultWorkingDirectory)\ASPNet4.CI\drop\HelloWorldARM\Templates\WindowsVirtualMachine.json`.<br/>**Template Parameters**: The path of the Resource Manager template parameters file; for example `$(System.DefaultWorkingDirectory)\ASPNet4.CI\drop\HelloWorldARM\Templates\WindowsVirtualMachine.parameters.json`.<br/>**Override Template Parameters**: A list of values for the parameters in the template; for example: `-adminUsername $(vmuser) -adminPassword (ConvertTo-SecureString -String $(vmpassword) -AsPlainText -Force) -dnsNameForPublicIP $(dns)'`.<br/>**Enable Deployment Prerequisites**: Checked.<br/>**Output - Resource Group**: The name of the Resource Group output from the task as a value that can be used as an input to further deployment tasks. |
    
    >Checking the **Enable Deployment Prerequisites** checkbox
    configures WinRM on the virtual machine and enables

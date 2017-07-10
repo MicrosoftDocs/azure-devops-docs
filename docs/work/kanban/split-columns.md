@@ -56,7 +56,7 @@ Now that you understand how your team can use split columns, here's how to turn 
 
 	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />
 	
-	Go to [Kanban basics](kanban-basics.md) to learn how to access your Kanban board. And, if you aren't a team admin, [get added as one](../scale/manage-team-assets.md#add-team-admin). Only team and project admins can customize columns.  
+	Go to [Kanban basics](kanban-basics.md) to learn how to access your Kanban board. And, if you aren't a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.  
 
 	You'll see different column titles and choices based on the following:
 	

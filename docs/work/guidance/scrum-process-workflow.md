@@ -70,7 +70,7 @@ Use the following guidance and that provided for [fields used in common across w
 </table>
 
 
-<blockquote style="font-size: 13px"><b>Tip: </b>Use the [Discussion section](../backlogs/add-work-items.md#discussion) to add and review comments made about the work being performed. This feature is only available from Team Services.   </blockquote>   
+<blockquote style="font-size: 13px"><b>Tip: </b>Use the [Discussion section](../concepts/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from Team Services.   </blockquote>   
 
 ## Track progress
 
@@ -193,7 +193,7 @@ You can add an impediment from the [New work item widget](../../Report/widget-ca
 
 ![Add work item from a New work item widget](_img/scrum-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team context](#team-context).  
+Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../how-to/switch-team-context-work.md).  
 
 
 ### Backlog list order
@@ -201,7 +201,7 @@ Work items you add from the widget are automatically scoped to your [team's defa
 The [Backlog Priority](../track/planning-ranking-priorities.md) field is used to track the relative ranking of PBIs, bugs, features, or epics. However, by default it doesn't appear on the work item form. The sequence of items on the backlog page is determined according to where you have [added the items or moved the items on the page](../backlogs/create-your-backlog.md#move-items-priority-order). As you drag items, a background process updates this field.  
 
 
-[!INCLUDE [temp](../_shared/switch-team-context-work.md)]  
+[!INCLUDE [temp](../how-to/switch-team-context-work.md)]  
 
 
 ### Links control, client work item form 

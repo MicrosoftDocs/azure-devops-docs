@@ -70,14 +70,14 @@ Sometimes additional ideas occur after reviewers submit their feedback. By provi
 
 ![Add reviewers to the Limited group](_img/ALM_GP_ModifyFeedback.png)
  
-Your reviewers will be able to view and modify only those work items that they create, which includes feedback responses. The [Stakeholder group provides limited access](work-as-a-stakeholder.md) to features and data for those members of your organization who do not have a TFS client access license (CAL). 
+Your reviewers will be able to view and modify only those work items that they create, which includes feedback responses. The [Stakeholder group provides limited access](../../quickstart/get-started-stakeholder.md) to features and data for those members of your organization who do not have a TFS client access license (CAL). 
 
 
 ## Related feedback notes  
 
 - [Initiate a feedback request](get-feedback.md)  
 - [Respond to a feedback request](give-feedback.md)  
-- [Work as a stakeholder](work-as-a-stakeholder.md) 
+- [Work as a stakeholder](../../quickstart/get-started-stakeholder.md) 
 
 
 

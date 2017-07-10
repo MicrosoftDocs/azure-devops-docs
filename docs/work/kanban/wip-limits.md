@@ -112,7 +112,7 @@ With an understanding of how you'll use WIT limits, here's how you set them.
 
 	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />
 	
-	If you're not a team admin, [get added as one](../scale/manage-team-assets.md#add-team-admin). Only team and project admins can customize columns.
+	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.
 
 	You'll see different column titles and choices based on the following:
 	
@@ -125,7 +125,7 @@ With an understanding of how you'll use WIT limits, here's how you set them.
 
 	<img src="_img/wip-columns-settings.png" alt="Kanban board, Customize columns, default columns, Agile process, set WIP limits" style="border: 1px solid #CCCCCC;" /> 
 
-	Go to [Kanban basics](kanban-basics.md) for information about accessing your Kanban board. And, if you're not a team admin, [get added as one](../scale/manage-team-assets.md#add-team-admin). Only team and project admins can customize columns.  
+	Go to [Kanban basics](kanban-basics.md) for information about accessing your Kanban board. And, if you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.  
 
 	**TFS 2015**   
 	Set the WIP limits for each intermediate column.  

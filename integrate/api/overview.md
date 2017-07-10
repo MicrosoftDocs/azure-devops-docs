@@ -14,8 +14,136 @@ ms.date: 08/04/2016
 The Visual Studio Team Services and Team Foundation Server APIs are based on REST, OAuth, Json and service hooks -
 all standard web technologies broadly supported in the industry.
 
-If you're new to REST APIs, take a look at the information on [getting started](../get-started/rest/basics.md) with these APIs,
-if you haven't already seen it. 
+<a name="usage"></a>
+
+## API usage pattern
+
+These APIs follow a common pattern: 
+
+```no-highlight
+VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}
+```
+
+>The examples below use personal access tokens,
+>which requires that you [create a personal access token](../get-started/authentication/authentication_guidance.md).
+
+<a name="vs-team-services"></a>
+
+### Visual Studio Team Services
+
+For Team Services, `instance` is `{account}.visualstudio.com` and `collection` is `DefaultCollection`,
+so the pattern looks like this:
+
+```no-highlight
+VERB https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?api-version={version}
+```
+<br />
+For example, here's how to get a list of team projects in a Visual Studio Team Services account.
+
+```dos
+curl -u {username}[:{personalaccesstoken}] https://{account}.VisualStudio.com/DefaultCollection/_apis/projects?api-version=2.0
+```
+
+<a name="tfs"></a>
+
+### TFS
+
+For TFS, `instance` is `{server:port}` and by default the port is 8080. The default collection is `DefaultCollection`, but can be any collection.
+
+Here's how to get a list of team projects from TFS using the default port and collection.
+
+```dos
+curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
+```
+
+>The brackets (`[]`) in the above examples indicate that the `personalaccesstoken` is an optional value. When using this command, remove the brackets >shown above. 
+
+<br />
+If you wish to provide the personal access token through an HTTP header, you must first convert it to a Base64 string (the following example shows how to convert to Base64 using C#).  The resulting string can then be provided as an HTTP header in the format:
+
+```
+Authorization: Basic BASE64PATSTRING
+``` 
+<br />
+Here it is in C# using the [HttpClient class](http://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx).
+
+```cs
+public static async void GetProjects()
+{
+	try
+	{
+		var personalaccesstoken = "PAT_FROM_WEBSITE";
+
+		using (HttpClient client = new HttpClient())
+		{
+			client.DefaultRequestHeaders.Accept.Add(
+				new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+			client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",
+				Convert.ToBase64String(
+					System.Text.ASCIIEncoding.ASCII.GetBytes(
+						string.Format("{0}:{1}", "", personalaccesstoken))));
+
+			using (HttpResponseMessage response = client.GetAsync(
+						"https://{account}.visualstudio.com/DefaultCollection/_apis/projects").Result)
+			{
+				response.EnsureSuccessStatusCode();
+				string responseBody = await response.Content.ReadAsStringAsync();
+				Console.WriteLine(responseBody);
+			}
+		}
+	}
+	catch (Exception ex)
+	{
+		Console.WriteLine(ex.ToString());
+	}
+}
+```
+<br />
+
+<a name="versions"></a>
+
+## Versioning
+
+Visual Studio Team Services and Team Foundation Server REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
+
+### Guidelines
+
+* API version **must** be specified with every request.
+* API versions are in the format {major}.{minor}[-{stage}[.{resource-version}]] - For example, ```1.0```, ```1.1```, ```1.2-preview```, ```2.0```.
+* While an API is in preview, you can specify a precise version of a particular revision of the API when needed (for example, ```1.0-preview.1```, ```1.0-preview.2```)
+* Once an API is released (1.0, for example), its preview version (1.0-preview) is deprecated and can be deactivated after 12 weeks.
+* During this time you should upgrade to the released version of the API. Once a preview API is deactivated, requests that specify a ```-preview``` version will be rejected.
+
+### Usage
+
+API version can be specified either in the header of the HTTP request or as a URL query parameter:
+
+#### HTTP request header:
+```http
+Accept: application/json;api-version=1.0
+```
+
+#### Query parameter:
+```no-highlight
+GET https://{account}.visualstudio.com/defaultcollection/_apis/{area}/{resource}?api-version=1.0
+```
+
+### Supported versions
+
+| Product                     | 1.0    | 2.0    | 3.0    |
+|:----------------------------|:------:|:------:|:------:|
+| Visual Studio Team Services | X      | X      | X      | 
+| Team Foundation Server 2017 | X      | X      | X      |
+| Team Foundation Server 2015 | X      | X      | -      |
+
+Major API version releases align with Team Foundation Server RTM releases. For example, the `3.0` API set was introduced with Team Foundation Server 2017.
+
+A small number of undocumented version 1.0 APIs existed in Team Foundation Server 2013, but are not supported.
+
+<!-- ENDSECTION --> 
+
+<a name="common-uses"></a>
 
 ## Common REST APIs and Usage
 
@@ -267,37 +395,10 @@ items that your team uses every day.</td>
 </tbody>
 </table>
 
-> Note: If you're looking for API contracts, take a look at the [REST API Contracts Index](./contracts-page.md)
+<a name="samples"></a>
 
+## Samples
+Check out the [REST API Samples](../get-started/rest/samples.md) page for some usage samples.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Help and feedback
+Get your technical questions answered, request a feature, or report a bug by visiting the [Developer Community site](https://aka.ms/vsts-integration-help).

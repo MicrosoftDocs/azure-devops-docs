@@ -399,7 +399,7 @@ Monitor your web and device apps to gain actionable insight to improve performan
 <ul style="padding-left:30px">
 <li style="margin-bottom:2px">[Install and setup](setup-admin/tfs/install/get-started.md)</li>
 <li style="margin-bottom:2px">[Upgrade](setup-admin/tfs/upgrade/get-started.md)</li>
-<li style="margin-bottom:2px">[Administer](setup-admin/get-started.md)</li>
+<li style="margin-bottom:2px">[Administer](setup-admin/account-administration.md)</li>
 </ul>
 <p><i>Team project</i></p>
 <ul style="padding-left:30px">
@@ -430,7 +430,7 @@ Monitor your web and device apps to gain actionable insight to improve performan
 <ul style="padding-left:30px">
 <li style="margin-bottom:2px">[Microsoft Test Manager](https://msdn.microsoft.com/library/dd380763.aspx)</li>
 <li style="margin-bottom:2px">[Microsoft Feedback Client](work/connect/give-feedback.md) </li>
-<li style="margin-bottom:2px">[Stakeholder access](work/connect/work-as-a-stakeholder.md)</li>  
+<li style="margin-bottom:2px">[Stakeholder access](quickstart/get-started-stakeholder.md)</li>  
 </ul>
 </div>
 

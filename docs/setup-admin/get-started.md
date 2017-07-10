@@ -112,7 +112,7 @@ For a simplified view of the default permissions granted to built-in groups and 
 <div style="float:left;width:230px;margin:3px">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Work tracking permissions</p>
 <ul style="padding-left:20px;font-size:90%">
-<li style="margin-bottom:2px">[Area and iteration paths](../work/customize/modify-areas-iterations.md#set-permissions)</li>
+<li style="margin-bottom:2px">[Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md#set-permissions-area-path)</li>
 <li style="margin-bottom:2px">[Work item query and folder](../work/track/set-query-permissions.md)</li>
 <li style="margin-bottom:2px">[Dashboard permissions](../report//dashboards.md#set-permissions) (Team Services)</li>
 <li style="margin-bottom:2px">[Restrict access to resources](restrict-access-tfs.md)</li>
@@ -149,7 +149,7 @@ Team administrators can manage settings for their team, including team alerts an
 <li style="margin-bottom:0px">[WIP limits](../work/kanban/wip-limits.md)   </li>
 <li style="margin-bottom:0px">[Split columns](../work/kanban/split-columns.md)  </li>
 <li style="margin-bottom:0px">[Swimlanes](../work/kanban/expedite-work.md)</li>
-<li style="margin-bottom:0px">[Card reordering](../work/kanban/kanban-basics.md#card-reorder-setting)</li> 
+<li style="margin-bottom:0px">[Card reordering](../work/customize/reorder-cards.md)</li> 
 <li style="margin-bottom:0px">[Definition of Done](../work/kanban/definition-of-done.md)</li>
 <li style="margin-bottom:0px">[Cumulative flow chart](../report//guidance/cumulative-flow.md#configure) </li>
 </ul>
@@ -213,7 +213,7 @@ Members of the Project Administrators and Project Collection Administrator group
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="padding-bottom:0px;text-align:center;"><b>Work tracking </b></p>
 <ul style="padding-left:20px">
-<li style="margin-bottom:0px">[Area and iteration paths](../work/customize/modify-areas-iterations.md) </li>
+<li style="margin-bottom:0px">[Area and iteration paths](../work/customize/set-area-paths.md) </li>
 <li style="margin-bottom:2px">[Work item query and folder](../work/track/set-query-permissions.md)</li>
 <li style="margin-bottom:0px">[Project-level permissions](permissions.md#project_test) </li>
 <li style="margin-bottom:0px">[Customize work tracking objects (TFS only)](../work/customize/customize-work.md) </li> 

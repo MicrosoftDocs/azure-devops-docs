@@ -67,7 +67,7 @@ The Stories Progress report lists all user stories, filtered by product area and
 -   Specify the **Iteration** and **Area** paths for each story and task.  
   
     > [!NOTE]
-    >  For information about how to define iteration and area paths, see [Customize area and iteration paths](../../work/customize/modify-areas-iterations.md).  
+    >  For information about how to define iteration and area paths, see [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .  
   
 ##  <a name="Interpreting"></a> Interpreting the Report  
  Depending on your area of focus, you can filter the report in the following ways:  
@@ -147,7 +147,7 @@ The Stories Progress report lists all user stories, filtered by product area and
 1.  In the **Iteration** or **Area** list, select the check box of each iteration or product area to include.  
   
     > [!NOTE]
-    >  For information about how to define iteration and area paths, see [Customize area and iteration paths](../../work/customize/modify-areas-iterations.md).  
+    >  For information about how to define iteration and area paths, see [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .  
   
 2.  Click **View Report** to refresh the display based on the new filter criteria.  
   

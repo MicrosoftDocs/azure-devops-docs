@@ -77,8 +77,8 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
  
 1. Select **Configure Continuous Delivery** and choose the web application framework
    you used to develop your app. This choice influences the way that Azure Continuous Delivery builds
-   and packages the app for deployment. At present, ASP.NET, ASP.NET Core, PHP, Python, and Node.js
-   are supported. When you're done, choose **OK**.
+   and packages the app for deployment. At present, ASP.NET, ASP.NET Core, and Node.js
+   are supported (more coming soon). When you're done, choose **OK**.
 
    ![Specifying the app framework type](_img/continuous-app-service/04.png)
  

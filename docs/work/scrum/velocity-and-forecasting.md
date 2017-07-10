@@ -120,7 +120,7 @@ You can then assess the delta between the current team's velocity and the requir
 Here's what needs to happen for you and your team to gain the greatest utility from the velocity chart and forecast tool.  
 
 **Required:** 
-*	[Define sprints for the team project](../customize/modify-areas-iterations.md) - Sprints should be of the same duration. 
+*	[Define sprints for the team project](../customize/set-area-paths.md) - Sprints should be of the same duration. 
 *	[Select sprints for each team](../scale/set-team-defaults.md#activate)
 *	[Define and estimate backlog items](../backlogs/create-your-backlog.md#estimates). If you work from your team's backlog, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
 *	Update the status of backlog items once work starts and when completed. Only backlog items whose State maps to a metastate of In Progress or Done show up on the velocity chart. 
@@ -128,7 +128,7 @@ Here's what needs to happen for you and your team to gain the greatest utility f
 **Recommended:**  
 *	Define and size backlog items to [minimize variability](#minimize-variability).  
 *	Determine how your team wants to [treat bugs](../customize/show-bugs-on-backlog.md). If your team chooses to treat bugs like requirements, bugs will show up on the backlog and be counted within the Velocity chart and forecasting. 
-*	[Set your team's area path](../customize/modify-areas-iterations.md). The forecast tool will forecast those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.     
+*	[Set your team's area path](../customize/set-area-paths.md). The forecast tool will forecast those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.     
 *	Don't  create a hierarchy of backlog items and bugs. The Kanban board, sprint backlog, and task board only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. <br/>Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list─only creating parent-child links one level deep between items. Use [Features to group requirements or user stories](../backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.  
 *	At the end of the sprint, update the status of those backlog items that the team has fully completed. Incomplete items should be moved back to the product backlog and considered in a future sprint planning meeting.   
 
@@ -145,14 +145,14 @@ Now that you understand how to work with velocity and forecasting, you can use t
 
 ##Related notes
 
-*	[Define sprints for the team project](../customize/modify-areas-iterations.md)  
+*	[Define sprints for the team project](../customize/set-area-paths.md)  
 *	[Select sprints for a team](../scale/set-team-defaults.md)  
-*	[Understand sprint-specific Agile tools](define-sprints.md#sprint-tools)
+*	[Sprint Agile tools](../concepts/sprint-planning-tools.md)
 *	Use the [task board](task-board.md) to track work during your sprint
 *	Monitor the [sprint burndown chart](task-board.md) to determine if your team is on track to complete the sprint plan
 
 ### Add other teams
-If you work with several teams, and each team wants to work with their own backlog view, velocity chart, and forecast tool, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those whose assigned area paths and iteration paths meet those [set for the team](../customize/modify-areas-iterations.md). 
+If you work with several teams, and each team wants to work with their own backlog view, velocity chart, and forecast tool, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those whose assigned area paths and iteration paths meet those [set for the team](../customize/set-area-paths.md). 
 
 
 <a id="minimize-variability" >    </a>

@@ -29,7 +29,7 @@ The  **LinksControlOptions** element is a child element of the **Control** eleme
 - **WorkItemTypeFilters**: Use to restrict the types of work items you can link to from the links control 
 - **Column**: Use to specify the work item fields and link type attributes listed within the links control
  
-<blockquote style="font-size: 13px"><b>Note: </b>The standard ![Links page icon](../_img/icons/icon-links-tab-wi.png) [Links page](../backlogs/add-work-items.md#link-wi) provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects.  
+<blockquote style="font-size: 13px"><b>Note: </b>The standard ![Links page icon](../_img/icons/icon-links-tab-wi.png) [Links page](../concepts/work-item-form-controls.md#link-wi) provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects.  
 </blockquote>  
 
 ## Summary of what's changed

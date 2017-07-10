@@ -56,7 +56,7 @@ Toward the end of an iteration, you can use the Unplanned Work report to determi
 -   (Optional) To support filtering, assign the **Area** that represents the product area to which the work item belongs.  
   
     > [!NOTE]
-    >  For information about how to define iteration and area paths, see [Create and Modify Areas or Iterations](../../work/customize/modify-areas-iterations.md).  
+    >  For information about how to define iteration and area paths, see [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .  
   
 ##  <a name="Duration"></a> Setting the Duration of the Iteration  
  To review the amount of unplanned work for a current iteration, you must set the planned end date and the start dates for the report to match those of your current iteration cycle.  

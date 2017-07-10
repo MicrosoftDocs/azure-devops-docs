@@ -510,7 +510,7 @@ The Classification folder path is misspelled.
 <a id="TF402513"></a>
 ### TF402513: Name *[pathName]* in the Classification plug-in doesn't conform to TreePath naming restrictions.
 Review the ```Node``` elements you've specified and change the names to conform to supporting naming conventions.
-Reference: [Add and modify area and iteration paths](../customize/modify-areas-iterations.md).
+Reference: [Add and modify area and iteration paths](../customize/set-area-paths.md).
 
 #### Error example
 The Path names include the # character which is not allowed. 

@@ -16,7 +16,7 @@ ms.date: 04/11/2017
 
 Depending on the size of your team and the number of stories in progress, your Kanban board can get a bit crowded. With filtering, you can selectively choose what cards display to focus on what's of interest in the moment. With parent work item filters, you can focus on one or more select features or epics.  
 
-For other filter options, see [Create your backlog, Filter backlogs, boards, and queries ](../backlogs/create-your-backlog.md#filter). 
+For other filter options, see [Filter backlogs, boards, and queries ](../how-to/filter-backlog-or-board.md). 
 
 [!INCLUDE [temp](../_shared/feature-availability-simple.md)]
 

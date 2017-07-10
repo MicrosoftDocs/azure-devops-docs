@@ -139,4 +139,4 @@ You can use the Progress dashboard to track team progress toward completing an i
   
 ## Related notes
 
-- [Create and Modify Areas or Iterations](../../work/customize/modify-areas-iterations.md)
+- [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) 

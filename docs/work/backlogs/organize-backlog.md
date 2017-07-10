@@ -7,7 +7,7 @@ ms.assetid: C294ACBD-00A3-4FCF-8777-B354BC0CC1EF
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 05/18/2017
+ms.date: 06/19/2017
 --- 
 
 # Organize your backlog  
@@ -75,5 +75,4 @@ From the product backlog you can multi-select several work items and choose **Ch
 - [Define features and epics](define-features-epics.md)
 - [Work with multi-team ownership of backlog items](work-multi-team-ownership-backlogs.md)
 - [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md)
-
-[!INCLUDE [temp](../_shared/filter-backlog-or-board.md)]
+- [Filter backlogs and boards](../how-to/filter-backlog-or-board.md)  

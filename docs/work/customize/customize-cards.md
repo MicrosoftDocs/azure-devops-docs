@@ -6,10 +6,10 @@ ms.prod: vs-devops-alm
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/04/2017   
+ms.date: 06/22/2017   
 ---
 
-#Customize cards  
+# Customize cards  
 
 [!INCLUDE [temp](../_shared/dev15-version-header.md)]  
 
@@ -158,7 +158,7 @@ As a first step, you'll see that you can change the card display for each work i
 
 	<img src="_img/kanban-card-customize-open-settings.png" alt="Kanban board, open card customizationd" style="border: 1px solid #CCCCCC;" />  
 
-	If you're not a team admin, [get added as one](../scale/manage-team-assets.md#add-team-admin). Only team and project admins can customize cards. Learn more about accessing and using your Kanban board from [Kanban basics](../kanban/kanban-basics.md).  
+	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize cards. Learn more about accessing and using your Kanban board from [Kanban basics](../kanban/kanban-basics.md).  
 
 2. Select the WIT you want to customize. Different WITs may present different options for customization.   
 
@@ -221,7 +221,7 @@ You change the way cards display on the task board the same way you change the K
 
 	<img src="_img/task-board-customize-open-settings.png" alt="Task board, open card customization dialog" style="border: 1px solid #CCCCCC;" />  
 
-	Remember, only [team or project administrators](../scale/manage-team-assets.md#add-team-admin) can customize the task board.  
+	Remember, only [team or project administrators](../scale/add-team-administrator.md) can customize the task board.  
 
 2.	Just as before, choose the WIT you want to customize, and then checkmark or select the options you want.  
 
@@ -312,7 +312,7 @@ To learn more about using these features, see [Add task checklists](../kanban/ad
 
 	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" /> 
 
-	If you're not a team admin, [get added as one](../scale/manage-team-assets.md#add-team-admin). Only team and project admins can set team settings.  
+	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can set team settings.  
 
 2. From the Annotations tab, check those annotations that you want enabled. For example, to enable tasks but disable tests, check the following boxes.     
 
@@ -331,7 +331,7 @@ You can control the test plan under which inline tests you add through the Kanba
 
 1. To open, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) gear icon from your team's Kanban board.  
 
-	If you're not a team admin, [get added as one](../scale/manage-team-assets.md#add-team-admin). Only team and project admins can set team settings.  
+	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can set team settings.  
 
 2. From the Tests tab, choose the option you want. You must enable the Test annotation feature in order to configure tests. To select a test plan, click the ![Actions icon](../_img/icons/actions-icon.png) actions icon and select one test plan from the query provided.      
 
@@ -346,14 +346,13 @@ From a card on the Kanban board, you can easily navigate to the underlying test 
 <img src="_img/c-cards-navigate-to-test-suite.png" alt="Kanban board, Card, Go to test plan" style="border: 1px solid #CCCCCC;" />  
 
 
-##Related notes
+## Related notes
 That's all there is to card customization. See these choices for further options to customize the Kanban and task board:
 
 *	[Add, rename, move, and delete columns](../kanban/add-columns.md)  
-*	[Card reordering](../kanban/kanban-basics.md#card-reorder-setting)  
+*	[Card reordering](reorder-cards.md)  
 *	[Split columns](../kanban/split-columns.md)  
 *	[Expedite work](../kanban/expedite-work.md)  
-*	[Add or modify area paths or iterations](modify-areas-iterations.md)  
 *	[Show bugs on backlogs and boards](show-bugs-on-backlog.md)  
 
 For even more customization options for work tracking, start with [Customize your work tracking experience](customize-work.md). 

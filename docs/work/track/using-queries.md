@@ -191,7 +191,7 @@ You can only add shared queries to dashboards or as team favorites, and only if 
 
 ### Task board versus query list items
 
-You may notice and wonder why the contents of the task board differ from those listed with its created query? To learn more, see [Backlogs, boards, and plans - Task board items versus query list items](../backlogs-boards-plans.md#task-board-items).
+You may notice and wonder why the contents of the task board differ from those listed with its created query? To learn more, see [Task board items versus query list items](../backlogs-boards-plans.md#task-board-items).
  
 ### Export a query  
 From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a team project, the shared queries are created based on [.wiq files defined in a process](../reference/process-templates/define-work-item-query-process-template.md). 

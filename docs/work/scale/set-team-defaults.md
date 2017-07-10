@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 3CEBA118-34EB-4277-B810-418FEC56C860  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/16/2017
+ms.date: 06/28/2017
 --- 
 
 
@@ -14,21 +14,14 @@ ms.date: 05/16/2017
 
 [!INCLUDE [temp](../_shared/dev15-version-header.md)]
  
-Each team has access to a number of Agile tools. Each tool references the team's default area path(s). Several tools reference the team's default and active iteration paths or sprints. Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
+Each team has access to a number of Agile tools as described in [About teams and Agile tools](../about-teams-and-settings.md). Each tool references the team's default area path(s). Several tools reference the team's default and active iteration paths or sprints. Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
 
-Prior to setting team defaults, [add the teams](multiple-teams.md) you want and [schedule your shared sprint schedule](../scrum/define-sprints.md). Optionally, [add area paths](../customize/modify-areas-iterations.md) you want to use to group work items. 
-
-[!INCLUDE [temp](../_shared/agile-tools-areas-iterations-summary.md)]
-
-####Team defaults referenced by backlogs and boards
-
-[!INCLUDE [temp](../_shared/team-defaults-referenced-by-team-tools.md)]
-
+Prior to setting team defaults, [add the teams](multiple-teams.md) you want and [schedule your shared sprint schedule](../scrum/define-sprints.md). Optionally, [add area paths](../customize/set-area-paths.md) you want to use to group work items. 
 
 <a id="default_path">  </a>
-###Backlog iteration versus default iteration 
+## Backlog iteration versus default iteration 
 
-For TFS platforms, the default iteration is the same as the backlog iteration. The one value selected both filters items that appear on the team's backlogs and boards, and is assigned to work items created from the team context.  
+For TFS 2015 and earlier versions, the default iteration is the same as the backlog iteration. The one value selected both filters items that appear on the team's backlogs and boards, and is assigned to work items created from the team context.  
 
 For Team Services, teams can now set a default iteration different from the backlog iteration. The backlog iteration determines which items appear on the team's backlogs and boards. And, the default iteration determines what value is assigned to work items created from the team context. 
 
@@ -38,7 +31,7 @@ You navigate to your team context from the top navigation bar.
 
 <img src="../_shared/_img/switch-team-project-2.png" alt="Choose another team from the team project menu" style="border: 1px solid #CCCCCC;" />  
 
-##Open the admin context for your team  
+## Open the admin context for your team  
 
 You set team defaults from the team admin context. 
 
@@ -48,7 +41,7 @@ From a web browser, open the web portal administrative context for your team.
 
 <img src="_img/wit-templates-open-team-admin-context.png" alt="Open team admin context" style="border: 1px solid #CCCCCC;" />  
 
-If you're not a team administrator, [get added as one](../scale/manage-team-assets.md#add-team-admin). Only team or project administrators can change team settings. 
+If you're not a team administrator, [get added as one](../scale/add-team-administrator.md). Only team or project administrators can change team settings. 
 
 <a id="team-area-paths">  </a>
 ## Set team default area path(s) 
@@ -172,7 +165,7 @@ You activate sprints for each team from the admin pages for each team context. T
 ##Related notes  
 
 - [Schedule sprints](../scrum/define-sprints.md)  
-- [Customize area and iteration paths](../customize/modify-areas-iterations.md)  
+- [Customize area and iteration paths](../customize/set-area-paths.md)  
 - [Query by date or current iteration](../track/query-by-date-or-current-iteration.md)
 - [Multiple teams](multiple-teams.md)  
 - [Configure team settings](manage-team-assets.md)  

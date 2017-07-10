@@ -233,7 +233,7 @@ includes unlimited minutes per month, within reason.
 although a private XAML controller can host more than one agent.
 
 *  For Cloud-based Load Testing, you're charged for each
-   [virtual user minute](../../test/performance-testing/reference-qa.md#VUM).
+   [virtual user minute](../../test/performance-testing/getting-started/get-started-simple-cloud-load-test.md#VUM).
 
 *   Graduated discounts Cloud-based Load Testing
 are calculated based on your Azure subscription billing cycle.

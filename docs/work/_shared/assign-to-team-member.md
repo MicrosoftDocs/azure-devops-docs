@@ -3,7 +3,7 @@
 <a id="assign-work-items"></a>
 
 ### Assign work items to a team member
-Anyone who has read-write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../connect/work-as-a-stakeholder.md).  
+Anyone who has read-write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../../quickstart/get-started-stakeholder.md).  
 
 Within the work item form, such as the web form shown, click the Assigned To field to select a team member to assign the work item to. Or, you can begin typing the name of a team member to quickly focus your search to a select few. 
 

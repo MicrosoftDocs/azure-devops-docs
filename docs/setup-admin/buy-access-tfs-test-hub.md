@@ -19,7 +19,7 @@ For [TFS](https://www.visualstudio.com/tfs/)
 and [Visual Studio Team Services](https://www.visualstudio.com/team-services/), 
 you usually pay per user so they can access your TFS or your Team Services account. 
 Some users are free, like [Visual Studio subscribers](https://www.visualstudio.com/vs/pricing/), 
-[stakeholders who can access limited features](../work/connect/work-as-a-stakeholder.md), 
+[stakeholders who can access limited features](../quickstart/get-started-stakeholder.md), 
 and 5 users in each Team Services account. 
 If you need to add more than these users, 
 you can just pay monthly for these users in your Team Services account. 

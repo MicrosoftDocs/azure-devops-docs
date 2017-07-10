@@ -18,7 +18,7 @@ ms.date: 03/16/2017
 
 Classifications facilitate tracking, grouping, and reporting on work based on useful categories, such as related product features and project milestones. You define areas to organize work items into logical, physical, or functional categories. You define iterations to group work items into milestones or time cycle categories. For example, a team could organize the product work into a client area, a server area, and an extensibility area. Iterations that you define determine how many times the team will repeat a particular set of major activities, such as plan, develop, and test.  
   
-The classifications that you define appear on the **Areas** and **Iterations** pages, as the following illustration shows and described in [Customize areas and iterations](../../customize/modify-areas-iterations.md). You access this page from the administration web portal.  
+The classifications that you define appear on the **Areas** and **Iterations** pages, as the following illustration shows and described in [Customize areas and iterations](../../customize/set-area-paths.md). You access this page from the administration web portal.  
   
 [!INCLUDE [temp](../../_shared/image-differences.md)]
 
@@ -26,7 +26,7 @@ The classifications that you define appear on the **Areas** and **Iterations** p
 
 For an overview of using the web portal, see [Work in the web portal](../../../connect/work-web-portal.md).  
   
- After a team project has been created, you [modify the areas and iterations](../../customize/modify-areas-iterations.md) from the web portal. You can also define permissions to control access to a project area or iteration.  
+ After a team project has been created, you [modify the areas and iterations](../../customize/set-area-paths.md) from the web portal. You can also define permissions to control access to a project area or iteration.  
   
  In addition to areas and iterations, you specify the mapping file for Microsoft Project to upload within the Classification plug-in and the process template property.  
   
@@ -143,7 +143,7 @@ The following example shows how to specify four iterations: Milestone 1, Milesto
 ##  <a name="elements"></a> Classification plug-in element reference  
  You specify the following  elements within a `taskXml` container element in the Classification plug-in file. , See [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md) for information about `taskXml`.  
   
- Define areas and iterations by specifying a tree path of nested nodes and children nodes. For more information, see [Customize your area and iteration paths](../../customize/modify-areas-iterations.md).  
+ Define areas and iterations by specifying a tree path of nested nodes and children nodes. For more information, see [Customize your area and iteration paths](../../customize/set-area-paths.md).  
   
 |Element|Description|  
 |-------------|-----------------|  
@@ -157,5 +157,5 @@ The following example shows how to specify four iterations: Milestone 1, Milesto
   
   
 ## Related notes 
-For guidelines and naming restrictions that apply to classifications, see [Customize areas and iterations](../../customize/modify-areas-iterations.md).  
+For guidelines and naming restrictions that apply to classifications, see [Customize areas and iterations](../../customize/set-area-paths.md).  
  

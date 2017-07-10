@@ -152,9 +152,9 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
  ![Task mode scheduling ribbon menu options](_img/tfs_oiproj_taskmode_menu.png "TFS_OIProj_TaskMode_Menu")  
   
- By using manually scheduled tasks, which are indicated by the ![Pinned task icon](_img/tfs_oiproj_pintask_icon.gif "TFS_OIProj_PinTask_Icon") icon, you can manually schedule the duration and the start and finish dates for a task. Team members can place a manually scheduled task anywhere in their schedules, and Project will not move it.  
+ By using manually scheduled tasks, which are indicated by the ![Pinned task icon](_img/tfs_oiproj_pintask_icon.png "TFS_OIProj_PinTask_Icon") icon, you can manually schedule the duration and the start and finish dates for a task. Team members can place a manually scheduled task anywhere in their schedules, and Project will not move it.  
   
- Start and finish dates for auto scheduled tasks (![Auto Update Task Mode icon](_img/tfs_oiproj_autoupdate_icon.gif "TFS_OIProj_AutoUpdate_Icon")) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project. Project managers who are accustomed to automatic scheduling with past versions of Project can turn the new manual scheduling feature off for specific tasks or the entire project.  
+ Start and finish dates for auto scheduled tasks (![Auto Update Task Mode icon](_img/tfs_oiproj_autoupdate_icon.png "TFS_OIProj_AutoUpdate_Icon")) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project. Project managers who are accustomed to automatic scheduling with past versions of Project can turn the new manual scheduling feature off for specific tasks or the entire project.  
   
 ### Q: Can I get a rollup of team capacity?  
  **A:** No. The data entered for team capacity isn't stored in the regular data stores.

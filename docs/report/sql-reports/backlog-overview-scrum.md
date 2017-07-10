@@ -68,4 +68,4 @@ The Backlog Overview report lists all product backlog items (PBIs), both active 
   
 -   Specify the **Iteration** and **Area** paths for each PBI, task, and test case.  
   
-     For information about how to define iteration and area paths, see [Customize area and iteration paths](../../work/customize/modify-areas-iterations.md).
+     For information about how to define iteration and area paths, see [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .

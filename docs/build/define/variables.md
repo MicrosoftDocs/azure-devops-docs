@@ -804,54 +804,6 @@ You can pass environment variables of the build machine into build steps. For ex
         <tr>
             <td>
                 <p style="font-size:80%">
-                    System.PullRequest.PullRequestId
-                </p>
-                <p style="font-size:80%">
-                    SYSTEM_PULLREQUEST_PULLREQUESTID
-                </p>
-            </td>
-            <td style="font-size:80%">All</td>
-            <td>
-                <p style="font-size:80%">
-                    The ID of the pull request that caused this build. For example: `17`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../git/branch-policies.md#require-the-pull-request-to-build).)
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    System.PullRequest.SourceBranch
-                </p>
-                <p style="font-size:80%">
-                    SYSTEM_PULLREQUEST_SOURCEBRANCH
-                </p>
-            </td>
-            <td style="font-size:80%">All</td>
-            <td>
-                <p style="font-size:80%">
-                    The branch that is being revewiewed in a pull request. For example: `refs/heads/users/raisa/new-feature`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../git/branch-policies.md#require-the-pull-request-to-build).)
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    System.PullRequest.TargetBranch
-                </p>
-                <p style="font-size:80%">
-                    SYSTEM_PULLREQUEST_TARGETBRANCH
-                </p>
-            </td>
-            <td style="font-size:80%">All</td>
-            <td>
-                <p style="font-size:80%">
-                    The branch that is the target of a pull request. For example: `refs/heads/master`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../git/branch-policies.md#require-the-pull-request-to-build).)
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
                     System.TeamFoundationCollectionUri
                 </p>
                 <p style="font-size:80%">

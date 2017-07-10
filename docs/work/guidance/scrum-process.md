@@ -36,9 +36,9 @@ In addition to WITs, reports, and dashboards, teams have access to a set of shar
 
 You build your project plan by creating a backlog of work items that represent the features, requirements, user stories, or other work to perform. You track bugs, tasks, and blocking issues using the bug, task, and impediment WITs. To support portfolio management, teams create features and epics to view a roll up of their product backlog items within or across teams. For details about using Scrum WITs, see [Scrum process work item types and workflow](scrum-process-workflow.md).  
 
-The essential flow for getting started is as shown. To get started using Scrum or Kanban tools, see [Get started with Agile tools to plan and track work](../agile-project-management.md).  
+The essential flow for getting started is as shown. To get started using Scrum or Kanban tools, see [Get started with Agile tools to plan and track work](../overview.md).  
 
-[![Define stories](../_img/gs-planning-define-stories.png)](../backlogs/create-your-backlog.md)[![Organize backlog](../_img/gs-planning-organize-backlog.png)](../backlogs/organize-backlog.md)[![Manage bugs](../_img/gs-planning-manage-bugs.png)](../backlogs/manage-bugs.md)[![Manage issues](../_img/gs-planning-manage-issues.png)](../backlogs/create-your-backlog.md#manage-impediments)
+[![Define stories](../_img/gs-planning-define-stories.png)](../backlogs/create-your-backlog.md)[![Organize backlog](../_img/gs-planning-organize-backlog.png)](../backlogs/organize-backlog.md)[![Manage bugs](../_img/gs-planning-manage-bugs.png)](../backlogs/manage-bugs.md)[![Manage issues](../_img/gs-planning-manage-issues.png)](../backlogs/manage-issues-impediments.md)
 
 <blockquote style="font-size: 13px"><b>Note: </b>A work item is a database record that contains the definition, assignment, priority, and state of work. Work item types define the template of fields, workflow, and form for each type. Work items can be linked to each other to support tracking dependencies, roll up of work, and reports.  
 </blockquote>  
@@ -126,7 +126,7 @@ To access this dashboard, your team project must have a [project portal configur
 
 Your product owner can plan and track product backlog items and bugs in the product backlog by using the **Product Backlog** query. You can find work items that are assigned to the current sprint by using the shared queries that are listed under the **Current Sprint** folder. These queries find work items that are assigned to a specified iteration or sprint. As you plan additional sprints, you can modify these queries to specify the latest sprint and save them to additional folders that you create, such as **Sprint 2** or **Sprint 3**.
 
-The project administrator for each team project [defines area and iteration paths](../customize/modify-areas-iterations.md) for that project so that the team can track progress by those designations.  
+The project administrator for each team project [defines area and iteration paths](../customize/set-area-paths.md) for that project so that the team can track progress by those designations.  
 
 |Shared queries|Description| 
 |---|---|  

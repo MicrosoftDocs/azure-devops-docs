@@ -516,7 +516,7 @@ These represent the basic widgets. Look forward to more widgets becoming availab
 
 See also these additional resources for tracking and monitoring progress: 
 
-- [Get started with Agile tools to monitor progress and trends](monitor-progress-trends.md)
+- [Charts, dashboards, and widgets](overview.md)
 - [Dashboards](dashboards.md)
 - [Charts](charts.md)
 - [Add widgets and charts to a dashboard](add-widget-to-dashboard.md)
@@ -533,7 +533,7 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 
 ### Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](../../integrate/extensions/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](../../integrate/api/dashboard/overview.md).
+Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](../../integrate/api/dashboard/overview.md).
 
 
 [!INCLUDE [temp](_shared/help-support-shared.md)]  

@@ -132,7 +132,7 @@ You'll need to be a [project administrator](../../setup-admin/add-administrator-
 
 ### Define a single sprint cadence for all teams 
 
-If your feature teams use Scrum and work in sprints, you'll want to set up a series of sprints that all teams can use. By default, you'll see a set of predefined sprints. Add more sprints and set their sprint dates as described in [Add iterations and set iteration dates](../customize/modify-areas-iterations.md#iterations). 
+If your feature teams use Scrum and work in sprints, you'll want to set up a series of sprints that all teams can use. By default, you'll see a set of predefined sprints. Add more sprints and set their sprint dates as described in [Add iterations and set iteration dates](../customize/set-iteration-paths-sprints.md). 
 
 You do this from the team project admin context. 
 

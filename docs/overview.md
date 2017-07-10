@@ -175,7 +175,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-4 col-md-3 item">
       <div class="title">
-        <a href="/docs/integrate/extensions/overview">Extensions</a>
+        <a href="/docs/extend/overview">Extensions</a>
         <div class="desc">
           Develop, package, and publish extensions and integrations.
         </div>

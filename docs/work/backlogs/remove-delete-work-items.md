@@ -108,7 +108,7 @@ When you connect to TFS, you can't change the work item type for an existing wor
 
 	![Change work item type dialog](_img/change-work-item-type-dialog.png)  
 
-	Comments are automatically added to the [Discussion control](add-work-items.md#discussion). 
+	Comments are automatically added to the [Discussion control](../concepts/work-item-form-controls.md#discussion). 
 
 3. Save the work item to complete the change.  
  
@@ -142,7 +142,7 @@ When you discover that a work item belongs to a different team project within yo
 
 	![Work item form, Change team project menu option](_img/move-work-item-dialog.png)  
 
-	Comments are automatically added to the [Discussion control](add-work-items.md#discussion) and an entry is made to the History control. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
+	Comments are automatically added to the [Discussion control](../concepts/work-item-form-controls.md#discussion) and an entry is made to the History control. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
  
 
 <a id="remove"> </a>  
@@ -269,7 +269,7 @@ To add fields or customize a work item form, see [Customize your work tracking e
 To learn more about tracking work, see: 
 
 - [Add and update work items](add-work-items.md)  
-- [Customize area and iteration paths](../customize/modify-areas-iterations.md)
+- [Customize area and iteration paths](../customize/set-area-paths.md)
 - [Add a link to work items](add-link.md)
 - [Bulk modify work items](bulk-modify-work-items.md) 
 - [Copy or clone a work item, copy to clipboard](copy-clone-work-items.md)

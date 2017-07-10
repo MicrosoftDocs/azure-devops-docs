@@ -98,7 +98,7 @@ If you've already defined your [flat list query](../work/track/using-queries.md)
 
 2. Click ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify a dashboard, and then click ![add a widget icon](_img/add-widget-icon.png) to access the widget catalog.  
 
-	If you don't see these icons, then you need to be added as a [team administrator](../work/scale/manage-team-assets.md#add-team-admin) or a member of the Project Administrators group. 
+	If you don't see these icons, then you need to be added as a [team administrator](../work/scale/add-team-administrator.md) or a member of the Project Administrators group. 
 
 3. Choose the Chart for work items widget and then click Add. 
 
@@ -146,7 +146,7 @@ Also, from the web portal, you can view the following charts:
 
 
 ### Requirements to view and create charts  
-If you have [Stakeholder access or license](../work/connect/work-as-a-stakeholder.md), you can only view charts. If you need to create charts, ask your project admin or account owner to grant you elevated access.   
+If you have [Stakeholder access or license](../quickstart/get-started-stakeholder.md), you can only view charts. If you need to create charts, ask your project admin or account owner to grant you elevated access.   
 
 ### Fields that show up in the chart editor
 For fields to appear in the chart editor, you must add the field to either the query filter criteria or a displayed column. 

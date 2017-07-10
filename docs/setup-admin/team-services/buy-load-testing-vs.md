@@ -16,8 +16,7 @@ ms.date: 04/28/2017
 
 You can purchase additional minutes to support [load testing your apps](../../test/performance-testing/index.md). You can create load tests using Visual Studio Ultimate 2013, Visual Studio Enterprise 2015, or later versions. You can then run these tests in Team Services.
 
-Load tests are measured and billed in virtual user minutes (VUM) as described in  this Q&A:
-[What are virtual user minutes (VUMs)? How many minutes will my load test use?](../../test/performance-testing/reference-qa.md#VUM). 
+Load tests are measured and billed in virtual user minutes (VUM) as described in  this Q&A: [What are virtual user minutes (VUMs)? How many minutes will my load test use?](../../test/performance-testing/getting-started/get-started-simple-cloud-load-test.md#VUM). 
 
 Your Visual Studio Team Services account includes **free**
 20,000 virtual user minutes per month for cloud-based load testing.
@@ -142,7 +141,7 @@ you can come back to the Azure classic portal.
 A: Yes, there's a limit on the duration for each test run.
 
 For Cloud-based Load Testing, the limit depends on where you're running your test.
-For details, see [this Q&A](../../test/performance-testing/reference-qa.md#test-limits).
+For details, see [this Q&A](../../test/performance-testing/getting-started/get-started-simple-cloud-load-test.md#test-limits).
 
 
 ### Q:  When do I get billed?
@@ -154,7 +153,7 @@ you're billed automatically on the 1st day of the calendar month.
 *  Free minutes reset on the 1st of the month.
 
 *  For Cloud-based Load Testing, you're charged for each 
-   [virtual user minute](../../test/performance-testing/reference-qa.md#VUM).
+   [virtual user minute](../../test/performance-testing/getting-started/get-started-simple-cloud-load-test.md#VUM).
 
 *   Graduated discounts Cloud-based Load Testing
 are calculated based on your Azure subscription billing cycle.

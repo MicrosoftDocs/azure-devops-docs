@@ -297,9 +297,9 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 <li>[Work item classification nodes](../../integrate/api/wit/classification-nodes.md)</li>
 <li>[Work item fields](../../integrate/api/wit/fields.md)</li>
 <li>[Work items](../../integrate/api/wit/work-items.md)</li>
-<li>[Work item form service](../../integrate/extensions/reference/client/api/TFS/WorkItemTracking/Services/WorkItemFormService.md)</li>
-<li>[Work item form navigation service](../..//integrate/extensions/reference/client/api/TFS/WorkItemTracking/Services/WorkItemFormNavigationService.md)</li>
-<li>[Write your first extension for Visual Studio Team Services](../../integrate/extensions/get-started/node.md)</li>
+<li>[Work item form service](../../extend/reference/client/api/TFS/WorkItemTracking/Services/WorkItemFormService.md)</li>
+<li>[Work item form navigation service](../..//extend/reference/client/api/TFS/WorkItemTracking/Services/WorkItemFormNavigationService.md)</li>
+<li>[Write your first extension for Visual Studio Team Services](../../extend/get-started/node.md)</li>
 
 </ul>
 
@@ -548,7 +548,7 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 <ul>
 <li>[Add teams and team members](../work/scale/multiple-teams.md)</li>
 <li>[View and update work items via the mobile work item form](../collaborate/mobile-work.md)</li>
-<li>[Work as a stakeholder](../work/connect/work-as-a-stakeholder.md)</li>
+<li>[Work as a stakeholder](../quickstart/get-started-stakeholder.md)</li>
 </ul>
  
 </td>
@@ -589,7 +589,7 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 <p><b><i>REST APIs/Extensions </i></b></p>
 <ul>
 <li>[.NET client libraries for VSTS & TFS)](../../integrate/get-started/client-libraries/dotnet.md)</li>
-<li>[Extension manifest reference](../../integrate/extensions/develop/manifest.md)</li>
+<li>[Extension manifest reference](../../extend/develop/manifest.md)</li>
 <li>[Git branch statistics](../../integrate/api/git/stats.md)</li>
 <li>[Git commits](../../integrate/api/git/commits.md)</li>
 <li>[Processes](../../integrate/api/tfs/processes.md)</li>
@@ -732,7 +732,7 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 <p><b><i>Agile tools</i></b></p>
 <ul>
 <li>[Review team delivery plans](../work/scale/review-team-plans.md)</li>
-<li>[Work as a stakeholder](../work/connect/work-as-a-stakeholder.md)</li>
+<li>[Work as a stakeholder](../quickstart/get-started-stakeholder.md)</li>
 <li>[Customize work](../work/customize/customize-work.md)</li> 
 <li>[ProcessConfiguration XML elements](../work/reference/process-configuration-xml-element.md)</li>
 <li>*Inheritance process model:* [Manage processes](../work/process/manage-process.md), [Customize a process](../work/process/customize-process.md),  [Customize a field for a process](../work/process/customize-process-field.md), [Add or modify a work item type for a process](../work/process/customize-process-wit.md), &hellip;</li>
@@ -1026,7 +1026,7 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 <li>[Create managed queries to list, update, or chart work items](../work/track/example-queries.md)</li>
 <li>[Use the query editor to create managed queries](../work/track/using-queries.md)</li>  
 <li>[Define-sprints](../work/scrum/define-sprints.md)</li>
-<li>[Customize area and iteration paths](../work/customize/modify-areas-iterations.md)</li>
+<li>[Define area paths](../work/customize/set-area-paths.md) or [Define iteration paths](../work/customize/set-iteration-paths-sprints.md) </li>
 <li>[Upload and download process templates](../work/guidance/manage-process-templates.md)</li>
 <li>[Process template and plug-in files](../work/reference/process-templates/overview-process-template-files.md)</li>
 <li>[Velocity and forecasting](../work/scrum/velocity-and-forecasting.md)</li>
@@ -1393,7 +1393,7 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 <p><b><i>REST APIs/Extensions </i></b></p>
 <ul>
 
-<li>[Add extensions in work item form via work item type definition xml](../../integrate/extensions/develop/configure-workitemform-extensions.md)</li>
+<li>[Add extensions in work item form via work item type definition xml](../../extend/develop/configure-workitemform-extensions.md)</li>
 <li>[Delivery timeline](../../integrate/api/work/delivery-timeline.md)</li>
 <li>[Plans](../../integrate/api/work/plans.md)</li>
 <li>[Notification overview](../../integrate/api/notification/overview.md)</li>
@@ -1415,12 +1415,12 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 
 <p><b><i>REST APIs/Extensions </i></b></p>
 <ul>
-<li>[Overview of integrating with Visual Studio Team Services](../../integrate/extensions/overview.md)</li>
+<li>[Overview of integrating with Visual Studio Team Services](../../extend/overview.md)</li>
 <li>[Git repositories](../../integrate/api/git/repositories.md)</li>
-<li>[Extension manifest reference](../../integrate/extensions/develop/manifest.md)</li>
-<li>[Package and publish an integration to the Marketplace](../../integrate/extensions/publish/integration.md)</li>
+<li>[Extension manifest reference](../../extend/develop/manifest.md)</li>
+<li>[Package and publish an integration to the Marketplace](../../extend/publish/integration.md)</li>
 <li>[npm](../../integrate/api/packaging/npm.md)</li>
-<li>[Visual update to dashboard widget tutorial](../../integrate/extensions/develop/add-dashboard-widget.md)</li>
+<li>[Visual update to dashboard widget tutorial](../../extend/develop/add-dashboard-widget.md)</li>
 </ul>
 </td>
 </tr>
@@ -1566,7 +1566,7 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 <li>[Manage bugs](../work/backlogs/manage-bugs.md)</li>
 <li>[Changes made to process templates](../work/guidance/changes-to-process-templates.md)</li>
 <li>[New features added through feature enablement](../work/customize/new-features-added.md)</li> 
-<li>[Work as a stakeholder](../work/connect/work-as-a-stakeholder.md)</li> 
+<li>[Work as a stakeholder](../quickstart/get-started-stakeholder.md)</li> 
 </ul>
 
 <p><i>Topics addressing customization of the Microsoft Project Mapping file and process templates have been migrated and updated. Find them under the following TOC entries:</i></p>
@@ -1709,21 +1709,21 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 <p><b><i>Marketplace and Service hooks</i></b></p>
 <ul>
 <li>[Get extensions for Visual Studio Team Services](../marketplace/get-vsts-extensions.md)</li>
-<li>[Reference for creating custom build tasks within extensions](../../integrate/extensions/develop/build-task-schema.md)</li>
+<li>[Reference for creating custom build tasks within extensions](../../extend/develop/build-task-schema.md)</li>
 
 </ul>
 
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Add a dashboard widget](../../integrate/extensions/develop/add-dashboard-widget.md)</li>
-<li>[Add a hub](../../integrate/extensions/develop/add-hub.md)</li>
-<li>[Add a menu action](../../integrate/extensions/develop/add-action.md)</li>
-<li>[Create your first extension for Visual Studio Team Services](../../integrate/extensions/get-started/node.md)</li>
-<li>[Extension manifest reference](../../integrate/extensions/develop/manifest.md)</li>
+<li>[Add a dashboard widget](../../extend/develop/add-dashboard-widget.md)</li>
+<li>[Add a hub](../../extend/develop/add-hub.md)</li>
+<li>[Add a menu action](../../extend/develop/add-action.md)</li>
+<li>[Create your first extension for Visual Studio Team Services](../../extend/get-started/node.md)</li>
+<li>[Extension manifest reference](../../extend/develop/manifest.md)</li>
 <li>[Git](../../integrate/api/git/overview.md)</li>
 <li>[Git pushes](../../integrate/api/git/pushes.md)</li>
 <li>[Recycle bin](../../integrate/api/wit/recycle-bin.md)</li>
-<li>[Service endpoint authentication schemes](../../integrate/extensions/develop/auth-schemes.md)</li>
+<li>[Service endpoint authentication schemes](../../extend/develop/auth-schemes.md)</li>
 </ul>
 </td>
 </tr>
@@ -1991,7 +1991,7 @@ TFS 2017 Update 1 RC2 has been released. To download, click [Team Foundation Ser
 <p><b><i>Marketplace </i></b></p>
 <ul>
 <li>[Zendesk with Visual Studio Team Services](../marketplace/integrate/service-hooks/services/zendesk.md)
-<li>[Reference for creating custom build tasks within extensions](../../integrate/extensions/develop/build-task-schema.md)</li>
+<li>[Reference for creating custom build tasks within extensions](../../extend/develop/build-task-schema.md)</li>
 
 </ul>
 
@@ -2306,7 +2306,7 @@ TFS 2017 Update 1 RC1 has been released. To download the latest version, see [Te
 <b><i>Team Services & TFS</i></b>
 
 <ul>
-<li>[Administration guide](../setup-admin/get-started.md)</li>
+<li>[Administration guide](../setup-admin/account-administration.md)</li>
 </ul>
 
 <!---

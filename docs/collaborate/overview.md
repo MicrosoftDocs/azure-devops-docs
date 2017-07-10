@@ -12,7 +12,7 @@ ms.date: 04/17/2017
 #Collaborate overview   
 <b>Team Services | TFS 2017 | TFS 2015  </b> 
 
-Here you'll find links to topics that will support your ability to collaborate with others in developing software working either in Team Services of an on-premises TFS. If you work as an administrator, you'll want to review the [admin guide](../setup-admin/get-started.md) as well. 
+Here you'll find links to topics that will support your ability to collaborate with others in developing software working either in Team Services of an on-premises TFS. If you work as an administrator, you'll want to review the [admin guide](../setup-admin/account-administration.md) as well. 
 
 
 > [!NOTE]  
@@ -123,7 +123,7 @@ Follow a specific object, such as a work item or pull request, to get notified w
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">&#64;mention</p>
 <ul style="padding-left:30px;font-size:90%">
 <li style="margin-bottom:1px">[@mention to notify a team member](../work/productivity/productivity-tips.md#mention-person-id) </li>
-<li style="margin-bottom:1px">[Work item discussions](../work/backlogs/add-work-items.md#discussion) </li>
+<li style="margin-bottom:1px">[Work item discussions](../work/concepts/work-item-form-controls.md#discussion) </li>
 </ul>
 
 </div>
@@ -231,8 +231,6 @@ Use the quick add panel from the backlog pages to add user stories, requirements
 
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Bulk add or update work items</p>
 <ul style="padding-left:30px;font-size:90%">
-<li style="margin-bottom:1px">[Bulk modify (backlog)](../work/backlogs/create-your-backlog.md#bulk-modify) </li>
-<li style="margin-bottom:1px">[Bulk modify (sprint backlog)](../work/scrum/sprint-planning.md#bulk-modify) </li>
 <li style="margin-bottom:1px">[Bulk modify (web portal)](../work/backlogs/bulk-modify-work-items.md)</li>
 <li style="margin-bottom:1px">[Bulk add or remove tags](../work/track/add-tags-to-work-items.md#bulk-modify) </li>
 <li style="margin-bottom:1px">[Bulk add or modify with Excel](../work/office/bulk-add-modify-work-items-excel.md)</li>

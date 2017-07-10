@@ -206,7 +206,7 @@ And, available today only in Team Services:
 
 
 ## Related notes 
-- [Devops overview for Team Services and TFS](devops-alm-overview.md)
+- [Devops overview for Team Services and TFS](index.md)
 - [Key concepts](concepts.md)  
 - [Essential services](services.md)
 - [Client-server tools](tools.md)

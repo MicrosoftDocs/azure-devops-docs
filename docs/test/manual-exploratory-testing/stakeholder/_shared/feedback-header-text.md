@@ -1,4 +1,4 @@
-[Stakeholders](../../../../work/connect/work-as-a-stakeholder.md)
+[Stakeholders](../../../../quickstart/get-started-stakeholder.md)
 can respond to feedback requests for user stories and 
 features generated in Team Services or Team Foundation Server using
 a lightweight end-to-end flow based on the 

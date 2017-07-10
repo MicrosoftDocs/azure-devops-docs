@@ -16,7 +16,7 @@ ms.date: 03/29/2017
 
 [!INCLUDE [temp](../_shared/process-feature-availability.md)]
 
-In Team Services, you customize your team project through a process. (You configure your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../customize/customize-work.md#teams).) A process defines the building blocks of the work tracking system. Whenever you create a team project, you select the process you want your team project to use. 
+In Team Services, you customize your team project through a process. (You configure your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../scale/manage-team-assets.md).) A process defines the building blocks of the work tracking system. Whenever you create a team project, you select the process you want your team project to use. 
 
 Team Services supports two types of processes. 
 

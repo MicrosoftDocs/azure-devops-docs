@@ -21,7 +21,7 @@ ms.date: 04/04/2017
 
 You can customize your team project to support specific processes and practices that your team uses, and to design your workflow, work item forms, and data fields. Customization requires modifying one or more XML definition files. Each file corresponds to a work item tracking object. You can look up the syntax structure of each XML element from the topics provided in this section.  
   
- This illustration shows that you can create or customize eight types of objects. For team projects, you can customize categories, work item types, and process configuration. For team project collections, you can customize global lists, link types, and work item fields. You can customize global workflow for a team project or for a team project collection. For a description of these objects and other customization options, see [Customize your work tracking experience, Definitions](../customize/customize-work.md#object-definitions).  
+ This illustration shows that you can create or customize eight types of objects. For team projects, you can customize categories, work item types, and process configuration. For team project collections, you can customize global lists, link types, and work item fields. You can customize global workflow for a team project or for a team project collection. For a description of these objects and other customization options, see [Agile glossary](../concepts/agile-glossary.md)and [Customize your work tracking experience](../customize/customize-work.md).  
   
  ![Work Item Tracking Objects](_img/pnt_wit_objects.png "PNT_WIT_Objects")  
   

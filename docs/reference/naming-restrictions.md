@@ -827,7 +827,7 @@ Microsoft.VSTS.TCM.TestSuiteType</p>
 
 ###Field help text
 
-You can specify help text for a WIT field by using the ```HELPTEXT``` element. The system displays this text at run time to help users know what to enter into the field. Help text is scoped to a specific WIT in a specific team project. [Apply a rule to a work item field](../work/customize/modify-areas-iterations.md) provides information on adding help text.
+You can specify help text for a WIT field by using the ```HELPTEXT``` element. The system displays this text at run time to help users know what to enter into the field. Help text is scoped to a specific WIT in a specific team project. [Apply a rule to a work item field](../work/customize/set-area-paths.md) provides information on adding help text.
 
 Help text that you add must conform to the following restrictions.  
 

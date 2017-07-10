@@ -35,38 +35,6 @@ Here's a list of the most common ways in which teams share information and plans
 
 
 <tr>
-<td align="left">[Email summary list with links to work item(s)](#email-summary-lists)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">[Print work item(s)](#print-items)</td>
-<td>  </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>  </td>
-
-</tr>
-<tr>
-<td align="left">[Email link to a work item query](#copy-url) </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>  </td>
-
-</tr>
-
-
-
-<tr>
-<td align="left">[Email query results list](#email-summary-lists) </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>  </td>
-
-</tr>
-
-<tr>
 <td align="left">[Rich text fields](#rich-text) </td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
@@ -92,213 +60,12 @@ Here's a list of the most common ways in which teams share information and plans
 </tr>
 
 
-<tr>
-<td align="left">[Release summary (Team Services)](#release-summary) </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>  </td>
-<td>  </td>
-
-</tr>
-
 </tbody>
 </table>
 
-In addition, if you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../connect/work-as-a-stakeholder.md) so that they can view work items and dashboards.  
+In addition, if you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../quickstart/get-started-stakeholder.md) so that they can view work items and dashboards.  
 
-<a id="email-print-send-links"></a>
-## Email, print, or send links to work item(s)  
 
-Some of the most common ways information is shared within a team or across teams is by emailing lists or links to work items.  
-
-<a id="email-item"></a>
-### Email a single item  
-
-You can quickly email a summary of one or more work items. Summaries include the values assigned to these fields: work item ID, title, work item type, assigned to, state, and tags.  
-
->[!NOTE]  
->You can only send the email to addresses that are recognized by the system, that is accounts of team members or stakeholders. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't  permissions to read the mailed work items.  
-
-
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#attach-files">Email a single item  </li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#tee-email">Eclipse, TEE</a></li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-explorer-email">Visual Studio</a></li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#tfs-portal-email">TFS 2015, TFS 2013</a></li>
-
-
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-services-email">Team Services, TFS 2017</a></li>
-</ul>
- 
-<div id="email" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-
-<div id="team-services-email" class="tab-pane fade in active">  
-<p>**From the web portal**, open the ![Actions icon](../_img/icons/actions-icon.png) Actions menu and choose the email option.  </p>   
-![Email work item from Team Services](_img/share-plans-email-work-item-ts.png)    
-
-</div>
-
-<div id="tfs-portal-email" class="tab-pane fade">
-<p>**From the web portal**, open the work item and click the ![mail icon](../_img/icons/mail_icon.png) mail icon. </p>  
-
-![Email work item from on-prem TFS](_img/share-plans-email-work-item-tfs.png)  
-
-<blockquote style="font-size: 13px"><b>Note:</b> If you connect to an on-premises TFS, your TFS admin must have [configured an SMTP server](../../setup-admin/tfs/admin/setup-customize-alerts.md) for the email feature to work.</blockquote>   
-
-</div>
-
-
-<div id="team-explorer-email" class="tab-pane fade">
-<p>**From Visual Studio or Team Explorer**, choose ![Send work item to Microsoft Outlook](_img/IC764665.png). This option requires that you configure Office Outlook on your client computer.  </p> 
-![Email work item from on-prem TFS](_img/share-plans-email-work-item-te.png)  
-  
-</div>
-
-<div id="tee-email" class="tab-pane fade">
-<p>**From Eclipse**, open the work item and click the ![mail icon](../_img/icons/mail_icon.png) mail icon.  </p>  
-
-![Email work item from TEE](_img/share-plans-email-work-item-tfs.png)  
-
-
-</div>
-
-</div>
-</div>  
-
-<a id="email-summary-lists"></a>
-### Email summary lists with links to items  
-
-Another way to share items is by emailing summary lists, such as a sprint summary plan or active bugs list. You can do this from a backlog or query results list.  
-
-Depending on the option and client you choose, summary lists may or may not include a hyperlink to the work item ID.  
-
-
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#attach-files">Email a list of items  </li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#tee-email-list">Eclipse, TEE</a></li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-explorer-email-list">Visual Studio</a></li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#tfs-portal-email-list">TFS 2015, TFS 2013</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-services-email-list">Team Services, TFS 2017</a></li>
-</ul>
- 
-<div id="email-list" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-
-<div id="team-services-email-list" class="tab-pane fade in active"> 
-<a id="email-list-web-portal" >  </a> 
-<p>**To email items from the web portal**: Open a backlog or query and highlight the items from the list. Open the context menu for one of the selected items and select to email them.</p>   
-   
-![Email selected items from a list](_img/share-plans-email-selected-work-items-tfs-15.png) 
-
-<p>If you want to mail a list of all items in the backlog or query, simply click the ![mail icon](../_img/icons/mail_icon.png) mail icon. </p>  
-
-![Email full backlog or query results list](_img/share-plans-email-summary-list-web-portal.png)  
-
-</div>
-
-<div id="tfs-portal-email-list" class="tab-pane fade">
-<blockquote style="font-size: 13px"><b>Note:</b> Your TFS admin must have [configured an SMTP server](../../setup-admin/tfs/admin/setup-customize-alerts.md) for the email feature to work.</blockquote>   
-
-<p>**To email items from the web portal for TFS 2015**: Open a backlog or query and highlight the items from the list. Open the context menu for one of the selected items and select to email them.</p>     
-![Email selected items from a list](_img/share-plans-email-summary-list-ts.png) 
-
-<p>If you want to mail a list of all items in the backlog or query, simply click the ![mail icon](../_img/icons/mail_icon.png) mail icon. </p>  
-
-![Email full backlog or query results list](_img/share-plans-email-summary-list-web-portal.png)  
- 
-
-</div>
-
-
-<div id="team-explorer-email-list" class="tab-pane fade">
-<p>**To email items from Visual Studio**: Open a query, highlight the items from the list, and then choose the Send selection to Microsoft Outlook from the context menu. This option requires that you configure Office Outlook on your client computer.  </p> 
-![Email selected items from Visual Studio query result list ](_img/share-plans-email-work-item-list.png)   
- 
-</div>
-
-<div id="tee-email-list" class="tab-pane fade">
-<p>**From Eclipse**: Open a query, highlight the items from the list, and then choose the Copy selected items to the clipboard from the context menu. Paste the clipboard contents to your email application.   </p>  
- 
-![Email selected items from Eclipse query result list](_img/share-plans-email-work-item-list-eclipse.png)  
- 
-
-</div>
-
-</div>
-</div> 
-<a id="copy-formatted-list"></a>
-### Copy formatted list of work items  
-
-With this option, you can copy an HTML formatted table of selected items. You can then email this list using your choice of email client.  
-
-1.  From the web portal, open a backlog or a list of query results.  
-
-2.  Select the work items you want to copy.   
-
-    ![Copy as HTML selected work items](_img/IC777601.png)  
-
-    The formatted table contains a link to each work item included in your selected results list.  
-
-3.  Paste the contents of the clipboard into your email client or other application. To open a linked work item, requires users to have read access to the team project or area node for those work items.   
-
-<a id="print-items"></a>
-### Print items  
-
-To print the details of a work item, open a query in Visual Studio that contains the work item(s) you want to print, and select or highlight those items that you want to print. Then, choose the print option from the context menu.   
-
-![Print work items from Team Explorer](_img/share-plans-print-work-item-details.png)   
-
-
-<a id="copy-url">  </a>
-## Copy the URL to a single work item  
-
-<blockquote style="font-size: 13px"><b>Note:</b> All URLs you copy, regardless of the client you use to copy them, opens the work item in the web portal. </blockquote>  
-
-
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#attach-files">Copy the URL of a work item </li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#tee-copy-url">Eclipse, TEE</a></li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-explorer-copy-url">Visual Studio</a></li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#tfs-portal-copy-url">TFS 2015, TFS 2013</a></li>
-
-
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-services-copy-url">Team Services, TFS 2017</a></li>
-</ul>
- 
-<div id="rich-text" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-
-<div id="team-services-copy-url" class="tab-pane fade in active">
-<p>**From the web portal**, simply copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](../backlogs/_img/icon-copy-to-clipboard.png) copy-to-clipboard icon.</p>
-<img src="../backlogs/_img/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #CCCCCC;" />  
-
-</div>
-
-<div id="tfs-portal-copy-url" class="tab-pane fade">
-<p> **From the web portal for an on-premises TFS**, open the work item and then from the context menu for the browser, choose the copy link option. </p> 
-![Copy hyperlink for a work item from web portal for TFS item](_img/share-plans-copy-URL-wi-tfs.png) 
-</div>
-
-
-<div id="team-explorer-copy-url" class="tab-pane fade">
-<p>**From Visual Studio**, right-click the work item tab to copy the URL. The URL opens the work item in the web portal. </p> 
-![Copy full path hyperlink for a work item from Visual Studio](../backlogs/_img/add-work-items-copy-url-for-a-work-item.png)   
-</div>
-
-<div id="tee-copy-url" class="tab-pane fade">
-<p>**From Eclipse**, open a query that contains the work item, and then open the context menu to Copy the URL for the selected work item. </p>
-![Copy full path hyperlink for a work item from Eclipse](_img/share-plans-copy-URL-wi-eclipse.png)   
-
-</div>
-
-</div>
-</div>
-
-
- 
 
 
 <a id="rich-text"></a>
@@ -496,24 +263,6 @@ To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoi
 
 
 
-<a id="release-summary"></a>
-## Email release summary
-
-From the Release hub, [choose a specific release](../../build/actions/view-manage-releases.md) and click the ![email](../_img/icons/email-icon.png) Send Email icon to share the results of that release.  
-
-
->[!NOTE]  
-><b>Feature availability: </b>This feature is currently available only from Team Services.
- 
-
-![Release summary, send email](_img/share-plans-email-release-definition.png)
-
-In the To box, start typing the name of the team member you want to send the summary mail to. 
-
-![Email of a release summary](_img/share-plans-email-release-definition-send.png)
-
-Optionally, enter a note about the release or un-check any section you don't want included. The default is to include all details, environmental summary, issues, and work items associated with the release.   
-
 
 ##Related notes  
 
@@ -554,43 +303,6 @@ As you can see, there are many ways to share information using work items alone.
 
 <div style="clear:left;font-size:100%">
 </div>
-
- 
-### Work item hyperlink format  
-How do you define a hyperlink that opens a work item? Specify a URL that conforms to the following syntax:
-
-**Team Services**:
-
-   <b>https://</b>*AccountName.visualstudio.com/ProjectName/*<b>_workitems?id=</b>*WorkItemNumber*<b>&_a=edit</b>
-
-   Example: `https://fabrikam/DefaultCollection/Phone%20Saver/_workitems?id=133&_a=edit`
-
-**For TFS 2017, TFS 2015**:
-
-   <b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems?id=</b>*WorkItemNumber*<b>&_a=edit</b>
-
-   Example: `http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems/133&_a=edit`
-
-**For TFS 2013.2**:
-
-   <b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems/edit/</b>*WorkItemNumber*
-
-   Example: `http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems/edit/133`
-
-**For on-premises TFS 2013.1 and earlier versions**:
-   <b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems#_a=edit&id=</b>*WorkItemNumber*  
-
-   Example: `http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems#_a=edit&id=133`
-
-
-**where**:
-
--   *AccountName* specifies the name of the Team Services account  
--   *ServerName* specifies the name of the TFS application tier server   
--   *Port* specifies the port, default=8080
--   *CollectionName* specifies the name of the team project collection.
--   *TeamProjectName* specifies the team project name
--   *WorkItemNumber* specifies the ID of the bug, task, or other work item.
 
 ### SharePoint project portal (on-premises TFS)  
 

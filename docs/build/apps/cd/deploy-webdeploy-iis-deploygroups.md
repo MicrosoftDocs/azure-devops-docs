@@ -91,24 +91,12 @@ Your CD release process picks up the artifacts published by your CI build and th
 
 1. Configure the phases and tasks in the environment as follows:
 
-   **[Run on deployment group phase](../../concepts/process/phases.md)** for configuration of web servers.
-   
-   - **Deployment Group**: Select the deployment group you created earlier.
-   
-   - **Machine tags**: `web`<p />
-   
-   ![IIS Web App Manage](../../steps/deploy/_img/iis-manage-icon.png) [Deploy: IIS Web App Manage](../../steps/deploy/iis-manage.md) - Create or update the websites.
-   
-   - **Website Name**: `Default Web Site`. If you created a different website on the IIS servers, use that name instead.
-   
-   - **Port**: `80`
-   
-   - **IIS Application pool**: `DefaultAppPool`<p />
-   
-   ![IIS Web App Deploy](../../steps/deploy/_img/iis-deploy-icon.png) [Deploy: IIS Web App Deploy](../../steps/deploy/iis-deploy.md) - Deploy the app to IIS.
-   
-   - **Website Name**: `Default Web Site`. If you created a different website on the IIS servers, use that name instead.<p />
-   
+   | Phase or task | Parameters |
+   | --------- | ---------- |
+   | [Run on deployment group phase](../../concepts/process/phases.md) for configuration of web servers. | **Deployment Group**: Select the deployment group you created earlier.<br />**Machine tags**: `web` |
+   | ![IIS Web App Manage](../../steps/deploy/_img/iis-manage-icon.png)<br/>[Deploy: IIS Web App Manage](../../steps/deploy/iis-manage.md)<br />Create or update the websites. | **Website Name**: `Default Web Site`. If you created a different website on the IIS servers, use that name instead.<br />**Port**: `80`<br />**IIS Application pool**: `DefaultAppPool` |
+   | ![IIS Web App Deploy](../../steps/deploy/_img/iis-deploy-icon.png)<br/>[Deploy: IIS Web App Deploy](../../steps/deploy/iis-deploy.md)<br />Deploy the app to IIS. | **Website Name**: `Default Web Site`. If you created a different website on the IIS servers, use that name instead. |
+
 1. Edit the name of the release definition, choose **Save**, and choose **OK**. Note that the default environment is named "Environment1", which you can edit by selecting the name.
 
 You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build. This will result in deploying the build to the IIS servers:
@@ -161,21 +149,10 @@ To deploy a database with your app:
 
 1. Add two machine group phases to environments in the release definition, and a task in each phase as follows:
 
-   **First [Run on deployment group phase](../../concepts/process/phases.md)** for configuration of web servers.
-   
-   - **Deployment group**: Select the deployment group you created earlier.
-   
-   - **Machine tags**: `web`<p />
-   
-   Then add an **IIS Web App Deploy** task to this phase.
-   
-   **Second [Run on deployment group phase](../../concepts/process/phases.md)** for configuration of database servers.
-   
-   - **Deployment group**: Select the deployment group you created earlier.
-   
-   - **Machine tags**: `database`<p />
-   
-   Then add a **SQL Server Database Deploy** task to this phase.
+   | Phase | Parameters |
+   | --------- | ---------- |
+   | First [Run on deployment group phase](../../concepts/process/phases.md) for configuration of web servers. | **Deployment group**: Select the deployment group you created earlier.<br/>**Machine tags**: `web`<br/>Then add an **IIS Web App Deploy** task to this phase. |
+   | Second [Run on deployment group phase](../../concepts/process/phases.md) for configuration of database servers. | **Deployment group**: Select the deployment group you created earlier.<br/>**Machine tags**: `database`<br/>Then add a **SQL Server Database Deploy** task to this phase. |
 
 ## Q&A
 

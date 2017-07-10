@@ -7,7 +7,7 @@ ms.topic: reference
 ms.assetid: 7853f6db-98c9-4012-b6a5-51618c41d58c
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/03/2017
+ms.date: 06/23/2017
 ---
 
 
@@ -79,7 +79,7 @@ All **witadmin** commands can be run against an on-premises TFS. You can run lis
 </div>
 
 <div style="float:left;width:275px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Link types](witadmin-import-export-process-configuration.md)</p>
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Link types](manage-link-types.md)</p>
 <ul style="padding-left:30px">
 <li style="margin-bottom:2px">**deletelinktype**:  Delete a link type</li>
 <li style="margin-bottom:2px">**exportlinktype**:  Export a link type file </li>

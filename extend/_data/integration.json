@@ -1,0 +1,55 @@
+﻿{
+    "manifestVersion": 1,
+    "id": "myservice",
+    "version": "1.0.0",
+    "name": "My Service",
+    "publisher": "mycompany",
+    "description": "Awesome tools to help you and your team do great things everyday.",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services.Integration"
+        }
+    ],    
+    "icons": {
+        "default": "images/service-logo.png"
+    },
+    "categories": [
+        "Plan and track"
+    ],
+    "tags": [
+        "working",
+        "people person",
+        "search"
+    ],
+    "screenshots": [
+        {
+            "path": "images/screen1.png"
+        },
+        {
+            "path": "images/screen2.png"
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        },
+        "license": {
+            "path": "fabrikam-license-terms.md"
+        }
+    },
+    "links": {
+        "getstarted": {
+            "uri": "https://www.mycompany.com/help/getstarted"
+        },
+        "learn": {
+            "uri": "https://www.mycompany.com/features"
+        },
+        "support": {
+            "uri": "https://www.mycompany.com/support"
+        }
+    },
+    "branding": {
+        "color": "rgb(34, 34, 34)",
+        "theme": "dark"
+    }
+}

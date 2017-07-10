@@ -122,7 +122,7 @@ The value you specify for a field must conform to the data type for that field. 
 	<td><p>Short text string that can contain up to 255 Unicode characters. String text fields are often used to support pick lists or drop-down menus.  </p></td></tr>
 <tr>
 	<td><p> <strong>TreePath</strong> </p></td>
-	<td><p>A branching tree structure, such as an Area Path or Iteration path. You must choose an item in a list of valid values. You can find work items that equal or are under a tree structure. For more information, see [Add and modify area and iteration paths](../customize/modify-areas-iterations.md).</p></td></tr></tbody>
+	<td><p>A branching tree structure, such as an Area Path or Iteration path. You must choose an item in a list of valid values. You can find work items that equal or are under a tree structure. For more information, see [Add and modify area and iteration paths](../customize/set-area-paths.md).</p></td></tr></tbody>
 </table>
 
 <a id="operators" /> 

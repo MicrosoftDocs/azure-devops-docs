@@ -3,7 +3,7 @@ Before you start tracking work, you must have a team project. To create one host
 
 If you have a team project, start tracking work:  
 
--   [Get started planning and tracking work](../agile-project-management.md) - for an overview of planning activities and tools  
+-   [Get started planning and tracking work](../overview.md) - for an overview of planning activities and tools  
 -   [Add work items to manage a project](../backlogs/add-work-items.md) - to gain more familiarity with the work item form features  
 -   [Create a backlog](../backlogs/create-your-backlog.md) - to develop your product backlog   
 -   [Plan a sprint](../scrum/sprint-planning.md)  - to start working in Scrum    

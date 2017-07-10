@@ -321,7 +321,7 @@ Additional resources you may find of interest:
 
 If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../git/get-started.md) and [Manage bugs](../work/backlogs/manage-bugs.md).  
 
-To start planning and tracking work, see [Get started with Agile tools to plan and track work](../work/agile-project-management.md). 
+To start planning and tracking work, see [Get started with Agile tools to plan and track work](../work/overview.md). 
 
 ### User accounts and licensing  
 
@@ -329,7 +329,7 @@ To connect to a team project, you need your user account added to the team proje
 
 Team Services provides access to the first 5 account users free. After that, you need to [pay for more users (Team Services)](../setup-admin/team-services/buy-basic-access-add-team-services-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid Team Services users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
 
-In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../work/connect/work-as-a-stakeholder.md).
+In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../quickstart/get-started-stakeholder.md).
 
 <a name="proxy"></a>
 ## Configure Visual Studio to connect to TFS Proxy

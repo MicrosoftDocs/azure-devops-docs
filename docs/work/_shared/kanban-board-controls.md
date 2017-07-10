@@ -13,7 +13,7 @@
 | ![full screen icon](../_img/icons/fullscreen_icon.png) / ![exit full screen icon](../_img/icons/exitfullscreen_icon.png)   | Enter or exit full screen mode      |   
 <br/>
 
-Enter **?** to open the Kanban board keyboard shortcuts. See also [Keyboard shortcuts](../../reference/keyboard-shortcuts.md).  
+Enter **?** to open the Kanban board keyboard shortcuts.  
 
 >[!NOTE]  
 ><b>Feature availability: </b>Global keyboard shortcuts are available from Team Services and the web portal for TFS 2015.2 or later version.  

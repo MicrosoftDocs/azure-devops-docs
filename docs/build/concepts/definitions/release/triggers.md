@@ -30,8 +30,7 @@ However, if you specify [certain types](artifacts.md#sources) of
 artifacts in a release definition, you can enable **Continuous deployment**.
 This setting instructs Release Management to create
 new releases automatically when it detects new artifacts
-are available. At present this option is available only for Team Foundation Build artifacts
-and Git-based sources such as Team Foundation Git, GitHub, and other Git repositories.
+are available. At present this option is available only for Team Foundation Build artifacts.
 
 If you have linked multiple Team Foundation Build artifacts to a release definition,
 you can configure continuous deployment for each of them.

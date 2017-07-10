@@ -20,7 +20,7 @@ Once you have your [sprint plan](sprint-planning.md) in place, you'll execute th
 >[!NOTE]
 >Your task board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs-boards-plans.md). To customize the task board to include more or different columns, you need to customize the workflow. For details, see [Customize your work tracking experience](../customize/customize-work.md). 
 >
->In addition, if you're wondering why the task board items don't match your query list of items for a sprint, see [Task board items versus query list items](../backlogs-boards-plans.md#task-board-items).
+>In addition, if you're wondering why the task board items don't match your query list of items for a sprint, see [Task board items versus query list items](../backlogs-boards-plans.md#task-board-items). 
 
 Your task board provides a visualization of flow and status of each sprint task. With it, you can focus on the status of backlog items as well as work assigned to each team member. It also summarizes the total amount of remaining work to complete for a task or within a column.  
 
@@ -102,12 +102,17 @@ At the end of the sprint, you'll want to perform these final tasks:
 
 Dragging an incomplete item to the product backlog or to a future sprint updates the Iteration Path of all uncompleted child tasks to correspond to the product backlog iteration path or future sprint.   
 
+
+>[!TIP]
+>If you work from Team Services or TFS 2015.1 and later versions, you can 
+>[drag-and-drop work items onto a sprint from any backlog or board](define-sprints.md#drag-drop-to-sprint). 
+
 ##Try this next
 
 Work with [sprint burndown](sprint-burndown.md) charts to monitor progress, manage scope creep, and mitigate risks. 
 
 
-##Related notes
+## Related notes
 As you can see, the task board provides a lot of support for your Scrum activities. For related topics, see:  
 
 *	[Sprint planning](sprint-planning.md)   
@@ -131,10 +136,6 @@ As you can see, the task board provides a lot of support for your Scrum activiti
 
 See also [Keyboard shortcuts](../../reference/keyboard-shortcuts.md).     
 
-
-[!INCLUDE [temp](../_shared/switch-team-context-work.md)]  
-
-[!INCLUDE [temp](../_shared/assign-to-sprint.md)]  
 
 [!INCLUDE [temp](../_shared/assign-to-team-member.md)]  
 

@@ -48,11 +48,6 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/queries[/{folderPat
 
 [!code-REST [GET__wit_queries__depth-1_json](./_data/queries/GET__wit_queries__depth-1.json)]
 
-#### Sample code
-
-* [C# (GetListOfQueries method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L187)
-* [C# (GetListOfQueriesAndFoldersWithOptions method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L223)
-
 ### By folder path
 
 [!code-REST [GET__wit_queries_Shared Queries_Current Sprint__depth-1_json](./_data/queries/GET__wit_queries_Shared Queries_Current Sprint__depth-1.json)]
@@ -65,10 +60,6 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/queries[/{folderPat
 
 ### Including deleted queries
 [!code-REST [GET__wit_queries__depth-2__includeDeleted-true_json](./_data/queries/GET__wit_queries__depth-2__includeDeleted-true.json)]
-
-#### Sample code
-
-* [C# (GetListOfQueriesAndFoldersIncludeDeleted method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L187)
 
 ## Get a query or folder
 
@@ -91,40 +82,20 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/queries/{folderPath
 
 [!code-REST [GET__wit_queries__queryId__json](./_data/queries/GET__wit_queries__queryId_.json)]
 
-#### Sample code
-
-* [C# (GetQueryOrFolderById method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L160)
-
 ### Query by Name
 
 [!code-REST [GET__wit_queries_Shared Queries__folderName___queryName__json](./_data/queries/GET__wit_queries_Shared Queries__folderName___queryName_.json)]
-
-#### Sample code
-
-* [C# (GetQueryByName method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L130)
 
 ### Folder by ID
 
 [!code-REST [GET__wit_queries__folderId__json](./_data/queries/GET__wit_queries__folderId_.json)]
 
-#### Sample code
-
-* [C# (GetQueryOrFolderById method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L160)
-
 ### Folder by Name
 
 [!code-REST [GET__wit_queries_Shared Queries__folderName__json](./_data/queries/GET__wit_queries_Shared Queries__folderName_.json)]
 
-#### Sample code
-
-* [C# (GetFolderByName method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L100)
-
 ### Deleted query by ID
 [!code-REST [GET__wit_queries__queryId___includeDeleted-true_json](./_data/queries/GET__wit_queries__queryId___includeDeleted-true.json)]
-
-#### Sample code
-
-* [C# (GetDeletedQueryById method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L440)
 
 ### Flat query with expanded clauses
 [!code-REST [GET__wit_queries__queryId___expand-clauses_json](./_data/queries/GET__wit_queries__queryId___expand-clauses.json)]
@@ -161,10 +132,6 @@ Content-type: Application/json
 
 [!code-REST [POST__wit_queries_Shared Queries__folderName__json](./_data/queries/POST__wit_queries_Shared Queries__folderName_.json)]
 
-#### Sample code
-
-* [C# (CreateQuery method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L59)
-
 ## Create a folder
 
 ```no-highlight
@@ -194,10 +161,6 @@ Content-type: Application/json
 
 [!code-REST [POST__wit_queries_Shared Queries_json](./_data/queries/POST__wit_queries_Shared Queries.json)]
 
-#### Sample code
-
-* [C# (CreateFolder method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L18)
-
 ## Update a query
 
 ```no-highlight
@@ -226,10 +189,6 @@ Content-type: Application/json
 
 [!code-REST [PATCH__wit_queries_Shared Queries__folderName___queryNameNew__json](./_data/queries/PATCH__wit_queries_Shared Queries__folderName___queryNameNew_.json)]
 
-#### Sample code
-
-* [C# (UpdateQuery method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L259)
-
 ## Rename a query
 
 ```no-highlight
@@ -257,10 +216,6 @@ Content-type: Application/json
 
 [!code-REST [PATCH__wit_queries__queryId__json](./_data/queries/PATCH__wit_queries__queryId_.json)]
 
-#### Sample code
-
-* [C# (RenameQueryOrFolder method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L291)
-
 ## Rename a folder
 
 ```no-highlight
@@ -287,10 +242,6 @@ Content-type: Application/json
 | name      | string  | New name of the query.
 
 [!code-REST [PATCH__wit_queries_Shared Queries__folderName__json](./_data/queries/PATCH__wit_queries_Shared Queries__folderName_.json)]
-
-#### Sample code
-
-* [C# (RenameQueryOrFolder method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L291)
 
 ## Move a query or folder
 
@@ -338,17 +289,9 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/wit/queries/{queryPa
 
 [!code-REST [DELETE__wit_queries__queryId__json](./_data/queries/DELETE__wit_queries__queryId_.json)]
 
-#### Sample code
-
-* [C# (DeleteQueryById method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L363)
-
 ### By folder path
 
 [!code-REST [DELETE__wit_queries_My Queries__folderNameNew__json](./_data/queries/DELETE__wit_queries_My Queries__folderNameNew_.json)]
-
-#### Sample code
-
-* [C# (DeleteQueryByPath method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L383)
 
 ## Undelete a query or folder
 
@@ -377,8 +320,3 @@ Content-type: Application/json
 | isDeleted      | boolean | Archival state of the folder or query.
 
 [!code-REST [PATCH__wit_queries__folderId___undeleteDescendants-true_json](./_data/queries/PATCH__wit_queries__folderId___undeleteDescendants-true.json)]
-
-#### Sample code
-
-* [C# (UnDeleteFolder method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L467)
-* [C# (UnDeleteQuery method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/Microsoft.TeamServices.Samples.Client/WorkItemTracking/QueriesSample.cs#L486)

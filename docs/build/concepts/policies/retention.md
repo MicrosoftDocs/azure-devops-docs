@@ -78,16 +78,6 @@ meets the above requirements:
 
 When specifying custom policies for each definition, you cannot exceed the maximum limits set by administrator.
 
-<h4 id="branch-policy-pr-builds">Clean up pull request builds</h4>
-
-If you [protect your Git branches with pull request builds](../../../git/branch-policies.md#require-the-pull-request-to-build), then you can use retention policies to automatically delete the completed builds. To do it, add a policy that keeps a minimum of `0` builds with the following branch filter:
-
-```
-refs/pull/*
-```
-
-![retention-policy-for-pull-request-builds](_img/retention-policy-for-pull-request-builds.png)
-
 ### TFVC and Subversion repositories
 
 For TFVC and Subversion [repository types](../../define/repository.md) you can modify a single policy with the same options shown above.
@@ -100,7 +90,7 @@ The "All" branches policy is automatically added as the last policy in the evalu
 
 ![define git retention policy max shown in definition](_img/define-git-retention-policy-max-shown-in-definition.png)
 
-### What parts of the build get deleted
+### What gets deleted
 
 When the retention policies mark a build for deletion, you can control which information related to the build is deleted:
 
@@ -113,16 +103,6 @@ The following information is deleted when a build is deleted:
 * Logs
 * [Published artifacts](../../steps/utility/publish-build-artifacts.md)
 * [Published symbols](../../steps/build/index-sources-publish-symbols.md)
-
-### When are builds deleted
-
-#### Team Services
-
-Your retention policies are processed once per day. The timing of this process varies because we spread the work throughout the day for load balancing purposes. There is no option to change this process.
-
-#### TFS
-
-Your retention policies run every day at 3:00 A.M. UTC. There is no option to change this process.
 
 <h2 id="release">Release retention</h2>
 

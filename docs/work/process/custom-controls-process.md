@@ -19,7 +19,7 @@ With custom controls, you can add rich functionality to your work item forms. A 
 - Page-level contribution
 - Action-level contribution (appears in the context menu of the web form) 
 
-You add all custom controls by installing its extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). Or, you can [create your own custom control](../../../integrate/extensions/get-started/node.md). 
+You add all custom controls by installing its extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). Or, you can [create your own custom control](../../../extend/get-started/node.md). 
 
 For example, you can add the [**Who recently viewed a work item?** extension](https://marketplace.visualstudio.com/items?itemName=mmanela.vsts-workitem-recentlyviewed). This group-level control appears in your work item form as shown. 
 
@@ -124,8 +124,8 @@ To add extensions or edit a process, you must be a member of the Project Collect
 <a id="process-rest-api">  </a>
 ### Programmatically add custom controls 
 You can use these REST APIs to work with custom controls:   
-- [Extend the work item form](../../../integrate/extensions/develop/add-workitem-extension.md)  
-- [Add a custom control to the work item form](../../../integrate/extensions/develop/custom-control.md)  
+- [Extend the work item form](../../../extend/develop/add-workitem-extension.md)  
+- [Add a custom control to the work item form](../../../extend/develop/custom-control.md)  
 
 <!--- NOTES
 For on-premises TFS, you can also click Browse local extensions to install a custom extensions you've created but not published to the Marketplace. 

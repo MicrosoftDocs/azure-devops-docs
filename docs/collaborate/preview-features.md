@@ -33,12 +33,11 @@ Some features provide a new user interface and functionality, which can be manag
 <li style="margin-bottom:1px">[Streamlined User Management](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) (Team Services)</li>
 </ul>
 
-<!---
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Preview features per team project](#team-project-level)</p>
 <ul style="padding-left:30px">
 <li style="margin-bottom:1px">[Enable Wiki](#team-project-level) (Team Services) </li>
 </ul>
--->
+
 </div>
 
 
@@ -49,11 +48,8 @@ Some features provide a new user interface and functionality, which can be manag
 <li style="margin-bottom:1px">[New Account Landing page](../connect/account-home-pages.md) </li>
 <li style="margin-bottom:1px">[New Release Definition Editor](../build/preview/release-definition-editor.md) (Team Services)</li>
 <li style="margin-bottom:1px">[Streamlined User Management](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) (Team Services)</li>
-<!---
 <li style="margin-bottom:1px">[Task tool installers](#task-tool-installers)</li> 
--->
 <li style="margin-bottom:1px">[Team expansion for notifications](#team-expansion-notifications) (TFS 2017.1)</li>
-<li style="margin-bottom:1px">[Wiki](#wiki) (Team Services) </li>
 </ul>
 
 </div>
@@ -85,19 +81,20 @@ If you have administrative privileges, you'll see a menu from which to choose wh
 
 <img src="_img/preview-features-user-level.png" alt="Preview features options, for me, logged-in user" style="border: 1px solid #CCCCCC;" />  
 
-
-<!---
 <a id="team-project-level">  </a>
-## Enable features for a team project    
+##Enable features for a team project    
 
 
+>[!NOTE]  
+><b>Feature availability: </b>The built-in wiki is in Preview and available for Team Services at this time. If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md).  
+
+You can enable a built-in Wiki for your team project. This feature is in preview and when enabled adds a **Wiki*** hub from which you can [view and edit wiki pages](add-edit-wiki.md).  
 
 <img align="top" src="_img/preview-features-wiki.png" alt="Preview features options for a team project" style="border: 1px solid #CCCCCC;" /> 
 
--->
 
 <a id="account-level">  </a>
-## Enable features at the account level (for all users)  
+##Enable features at the account level (for all users)  
 
 When you enable a feature at the account level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose.
 
@@ -121,13 +118,13 @@ With out-of-the-box notifications, users automatically receive notifications for
 * The user has a build that completes  
 
 These subscriptions appear in the new user notifications experience, and users can easily choose to opt out of any of them. To learn more, see [Manage personal notifications](manage-personal-notifications.md). 
+-->
+
 
 <a id="task-tool-installers">  </a>
 ### Task tool installers
 
 We're adding some tool installer tasks to enable your build or release process to lazily install tool sets. So now you can install dependencies on hosted agents and test and validate your app on multiple versions of a tool set. See [Tool installers](../build/concepts/process/tasks.md#tool-installers).
-
--->
 
 <a id="team-expansion-notifications">  </a>
 ### Team expansion for notifications 
@@ -137,18 +134,11 @@ We're adding some tool installer tasks to enable your build or release process t
 
 Enable this feature for your account when you want notifications to be sent by default for all team-associated events. Such events include when pull requests are created or updated. Team admins can choose to opt-out of these notifications. See [Manage team notifications](manage-team-notifications.md).  
 
-<a id="wiki">  </a>
-### Wiki 
-
->[!NOTE]  
-><b>Feature availability: </b>The built-in wiki is in Preview and available for Team Services at this time. If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md). 
->
-You can enable a built-in Wiki for your team project or for an account. This feature is in preview and when enabled adds a **Wiki*** hub from which you can [view and edit wiki pages](add-edit-wiki.md).  
-
-
 ##Related notes  
 
 - [Collaborate overview](overview.md)  
 - [Streamlined user management](../setup-admin/team-services/manage-users-and-access-user-hub-team-services.md)  
+- [Manage personal notifications](manage-personal-notifications.md) 
+- [New Work Item Search](../search/workitem/get-started.md) 
 - [New Account Landing page](../connect/account-home-pages.md)  
 - [New Build Editor](../build/preview/2017-user-experience.md)  

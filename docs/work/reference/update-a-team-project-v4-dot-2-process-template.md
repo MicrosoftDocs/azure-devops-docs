@@ -257,7 +257,7 @@ Open a web portal and [determine if all features are available to you](../custom
   
  You can grant permissions by following the procedures that are indicated for the specific scope area:  
   
--   You can set project-level permissions or area node permissions from the administration page of web portal. See [Permissions reference](../../setup-admin/permissions.md) and [Customize your area or iteration paths](../customize/modify-areas-iterations.md).  update-a-team-project-manually-to-support-test-management.md
+-   You can set project-level permissions or area node permissions from the administration page of web portal. See [Permissions reference](../../setup-admin/permissions.md) and [Customize your area or iteration paths](../customize/set-area-paths.md).  update-a-team-project-manually-to-support-test-management.md
   
 -   You can set project collection permissions from Team Explorer by choosing **Team, Team Project Collection Settings, Security**, by opening and using the administration console for Team Foundation, or by using the **TFSSecurity** and **tf** command-line tools. For more information, see [Add an administrator](../../setup-admin/add-administrator-tfs.md).  
   

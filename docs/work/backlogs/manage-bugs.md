@@ -189,7 +189,7 @@ Add and review comments made about the work being performed by going to the disc
 
 
 >[!TIP]
->Use the [Discussion section](add-work-items.md#discussion) to add and review comments made about the work being performed to resolve the bug. This feature is only available from the new web form.   
+>Use the [Discussion section](../concepts/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug. This feature is only available from the new web form.   
 
 
 ### Capture bugs using test tools
@@ -268,7 +268,7 @@ Based on how your team answers these questions, they can choose how they want to
 </tbody>
 </table>  
 
-###Assign bugs to a sprint  
+### Assign bugs to a sprint  
 Once bugs have been triaged, it's time to assign them to a sprint to get fixed. By addressing a set of bugs to get fixed every sprint, your team can keep the total number of bugs to a reasonable size.  
 
 When bugs appear on the product backlog, you can [assign bugs to sprints in the same way you do PBIs and user stories](../scrum/sprint-planning.md) during your sprint planning sessions. 
@@ -277,7 +277,9 @@ When bugs are treated as tasks, they're often automatically linked to a PBI or u
  
 Your team should consider fixing all bugs found during a sprint when testing a feature in development.  
 
-[!INCLUDE [temp](../_shared/assign-to-sprint.md)]
+>[!TIP]
+>If you work from Team Services or TFS 2015.1 and later versions, you can 
+>[drag-and-drop work items onto a sprint from any backlog or board](../scrum/define-sprints.md#drag-drop-to-sprint).   
 
 ###Tips for successful triage meetings:  
 Fixing bugs represents a trade-off with regards to other work. Use your triage meeting to determine how important fixing each bug is against other priorities related to meeting the project scope, budget, and schedule.  

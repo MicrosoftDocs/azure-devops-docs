@@ -84,7 +84,7 @@ Most teams specify capacity in terms of hours, however, you can also specify it 
 
 If you haven't set up sprints yet for your team, go [here to do that now](../scrum/define-sprints.md).
 
-If you don't see a team member listed, you need to [add them to the team](../scale/manage-team-assets.md#add-team-admin). Also, you only have to indicate planned days off for the team. You [set weekend days or other recurring days off](#team_settings) under team settings.  
+If you don't see a team member listed, you need to [add them to the team](../scale/add-team-administrator.md). Also, you only have to indicate planned days off for the team. You [set weekend days or other recurring days off](#team_settings) under team settings.  
 
 <a id="copy-capacity">  </a>
 ##Copy capacity planning from the previous sprint 

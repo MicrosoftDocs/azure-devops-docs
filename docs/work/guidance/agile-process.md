@@ -35,9 +35,9 @@ In addition to the WITs, teams have access to a set of shared work item queries 
  
 You build your project plan by creating a backlog of user stories that represent the work you want to develop and ship. You track bugs, tasks, and blocking issues using the bug, task, and issue WITs. To support portfolio management, teams create features and epics to view a roll up of user stories within or across teams. For details about using Agile WITs, see [Agile process work item types and workflow](agile-process-workflow.md).  
 
-The essential flow for getting started is as shown. To get started using Scrum or Kanban tools, see [Get started with Agile tools to plan and track work](../agile-project-management.md).  
+The essential flow for getting started is as shown. To get started using Scrum or Kanban tools, see [Get started with Agile tools to plan and track work](../overview.md).  
 
-[![Define stories](../_img/gs-planning-define-stories.png)](../backlogs/create-your-backlog.md)[![Organize backlog](../_img/gs-planning-organize-backlog.png)](../backlogs/organize-backlog.md)[![Manage bugs](../_img/gs-planning-manage-bugs.png)](../backlogs/manage-bugs.md)[![Manage issues](../_img/gs-planning-manage-issues.png)](../backlogs/create-your-backlog.md#manage-impediments)
+[![Define stories](../_img/gs-planning-define-stories.png)](../backlogs/create-your-backlog.md)[![Organize backlog](../_img/gs-planning-organize-backlog.png)](../backlogs/organize-backlog.md)[![Manage bugs](../_img/gs-planning-manage-bugs.png)](../backlogs/manage-bugs.md)[![Manage issues](../_img/gs-planning-manage-issues.png)](../backlogs/manage-issues-impediments.md)
 
 >[!NOTE]  
 >A work item is a database record that contains the definition, assignment, priority, and state of work. Work item types define the template of fields, workflow, and form for each type. Work items can be linked to each other to support tracking dependencies, roll up of work, and reports.  
@@ -186,7 +186,7 @@ Product owners can use the shared queries that are defined in the following tabl
 
 The following table describes the shared queries that are listed under the **Current Iteration** folder. These queries find work items that are assigned to a specified iteration. As you plan additional iterations, you can modify these queries to specify a different iteration and then save them to additional folders that you create, such as **Iteration 2** or **Iteration 3**.
 
-The project administrator for each team project [defines area and iteration paths](../customize/modify-areas-iterations.md) for that project so that the team can track progress by those designations.
+The project administrator for each team project [defines area and iteration paths](../customize/set-area-paths.md) for that project so that the team can track progress by those designations.
 
 <table>
 <thead>

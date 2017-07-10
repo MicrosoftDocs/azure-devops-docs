@@ -214,8 +214,8 @@ Most of the links open to a web portal administration page. Not all settings are
 <li style="margin-bottom:2px">[Security (manage project-level permissions)](../setup-admin/permissions.md#team-project-level-permissions)</li>
  <li style="margin-bottom:2px">[Group membership: manage group permissions](../setup-admin/permissions.md)</li> 
  <li style="margin-bottom:2px">Source Control: Configure the [check-in and check-out policies](../tfvc/add-check-policies.md) (TFVC only)  </li> 
- <li style="margin-bottom:2px">[Work Item Areas (project-wide)](../work/customize/modify-areas-iterations.md)</li>
- <li style="margin-bottom:2px">[Work Item Iterations (project-wide)](../work/customize/modify-areas-iterations.md)</li>
+ <li style="margin-bottom:2px">[Work Item Areas (project-wide)](../work/customize/set-area-paths.md)</li>
+ <li style="margin-bottom:2px">[Work Item Areas (project-wide)](../work/customize/set-iteration-paths-sprints.md)</li>
 <li style="margin-bottom:2px">[Portal Settings (Enable portal or process guidance)](../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)</li>
 <li style="margin-bottom:2px">[Project Alerts](../work/track/alerts-and-notifications.md)</li>
 
@@ -304,7 +304,7 @@ To connect to a team project from Team Explorer, you need your user account adde
 
 Team Services provides access to the first 5 account users free. After that, you need to [pay for more users (Team Services)](../setup-admin/team-services/buy-basic-access-add-team-services-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid Team Services users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
 
-In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../work/connect/work-as-a-stakeholder.md).  
+In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../quickstart/get-started-stakeholder.md).  
 
 ### Troubleshoot connection problems  
 

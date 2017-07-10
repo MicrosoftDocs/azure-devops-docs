@@ -149,10 +149,6 @@ Examples:
 #### Q: Are the required code reviewer paths case-sensitive?
 No, branch policies are not case-sensitive at this time.
 
-#### Q: TFS is getting filled up with builds. How do I clean them up?
-
-You can use a retention policy to clean up builds run by your branch policy. See [Branch policy build retention policies](../build/concepts/policies/retention.md#branch-policy-pr-builds).
-
 #### Q: Can I use XAML build definitions in branch policies?
 You cannot use [XAML build definitions](https://msdn.microsoft.com/library/ms181715%28v=vs.120%29.aspx) in branch policies.
 

@@ -265,7 +265,7 @@ If you already have the query id, you can skip step 1. The code sample below sho
 >
 >```
 
-Contracts: [QueryHierarchyItem](../../extensions/reference/client/api/TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md), [WorkItemQueryResult](../../extensions/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItemQueryResult.md), [WorkItem](../../extensions/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md)
+Contracts: [QueryHierarchyItem](../../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md), [WorkItemQueryResult](../../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItemQueryResult.md), [WorkItem](../../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md)
 
 ## Query Work Items with WIQL
 <a name="queryworkitemswithwiql" />
@@ -395,7 +395,7 @@ If you don't know the query you want to execute, you can use the [work item quer
 >
 >```
 
-Contracts: [Wiql](../../extensions/reference/client/api/TFS/WorkItemTracking/Contracts/Wiql.md), [WorkItemQueryResult](../../extensions/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItemQueryResult.md), [WorkItem](../../extensions/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md)
+Contracts: [Wiql](../../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/Wiql.md), [WorkItemQueryResult](../../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItemQueryResult.md), [WorkItem](../../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md)
 
 ## Get List of Work Item fields
 <a name="getlistfoworkitemfields" />
@@ -483,7 +483,7 @@ To be able to set the values on any fields through the REST APIs, you are going 
 >
 >```
 
-Contracts: [WorkItemField](../../extensions/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItemField.md)
+Contracts: [WorkItemField](../../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItemField.md)
 
 ## Create Bug
 <a name="samples-createabug" />
@@ -606,7 +606,7 @@ There are a few things happening in the code sample below:
 >
 >```
 
-Contracts: [WorkItem](../../extensions/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md), [JSONPatchDocument](../../extensions/reference/client/api/vss/webapi/Contracts/jsonpatchdocument.md), [JSONPatchOperation](../../extensions/reference/client/api/vss/webapi/Contracts/jsonpatchoperation.md)
+Contracts: [WorkItem](../../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md), [JSONPatchDocument](../../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchdocument.md), [JSONPatchOperation](../../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchoperation.md)
 
 ## Migrating work items
 <a name="samples-migratingworkitems" />
@@ -745,7 +745,7 @@ The code is the same as Create Bug. However, we pass the bypassRules=true parame
 >
 >```
 
-Contracts: [WorkItem](../../extensions/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md), [JSONPatchDocument](../../extensions/reference/client/api/vss/webapi/Contracts/jsonpatchdocument.md), [JSONPatchOperation](../../extensions/reference/client/api/vss/webapi/Contracts/jsonpatchoperation.md)
+Contracts: [WorkItem](../../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md), [JSONPatchDocument](../../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchdocument.md), [JSONPatchOperation](../../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchoperation.md)
 
 ## Update Bug
 <a name="samples-updateabug" />
@@ -854,7 +854,7 @@ Later on we will learn how to query for work items and then update them in bulk.
 >
 >```
 
-Contracts: [WorkItem](../../extensions/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md), [JSONPatchDocument](../../extensions/reference/client/api/vss/webapi/Contracts/jsonpatchdocument.md), [JSONPatchOperation](../../extensions/reference/client/api/vss/webapi/Contracts/jsonpatchoperation.md)
+Contracts: [WorkItem](../../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md), [JSONPatchDocument](../../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchdocument.md), [JSONPatchOperation](../../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchoperation.md)
 
 ## Add Comment to Bug
 <a name="samples-addcommenttobug" />
@@ -939,7 +939,7 @@ This sample is very similar to [Update a Bug](#samples-updateabug) example. The 
 >
 >```
 
-Contracts: [WorkItem](../../extensions/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md), [JSONPatchDocument](../../extensions/reference/client/api/vss/webapi/Contracts/jsonpatchdocument.md), [JSONPatchOperation](../../extensions/reference/client/api/vss/webapi/Contracts/jsonpatchoperation.md)
+Contracts: [WorkItem](../../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md), [JSONPatchDocument](../../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchdocument.md), [JSONPatchOperation](../../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchoperation.md)
 
 ## Change Bug to a User Story
 <a name="samples-changebugtouserstory" />
@@ -1027,7 +1027,7 @@ The below example is very similar to the [Update a Bug](#samples-updateabug) exa
 >
 >```
 
-Contracts: [WorkItem](../../extensions/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md), [JSONPatchDocument](../../extensions/reference/client/api/vss/webapi/Contracts/jsonpatchdocument.md), [JSONPatchOperation](../../extensions/reference/client/api/vss/webapi/Contracts/jsonpatchoperation.md)
+Contracts: [WorkItem](../../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md), [JSONPatchDocument](../../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchdocument.md), [JSONPatchOperation](../../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchoperation.md)
 
 ## FAQ
 <a name="faq" />

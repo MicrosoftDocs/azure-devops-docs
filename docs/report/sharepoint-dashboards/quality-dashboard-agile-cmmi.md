@@ -69,7 +69,7 @@ You can use the Quality dashboard to obtain an overview of progress occurring in
 -   (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.  
   
     > [!NOTE]
-    >  For information about how to define area and iteration paths, see [Customize area and iteration paths](../../work/customize/modify-areas-iterations.md).  
+    >  For information about how to define area and iteration paths, see [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .  
   
 ### Required activities for tracking bug progress and bug reactivations  
  For the Bug Progress and Bug Reactivations reports to be useful and accurate, the team must perform the following activities:  

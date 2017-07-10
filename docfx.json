@@ -12,6 +12,18 @@
           "exclude": ["**/obj/**", "**/_shared/**.md","_shared/**.md","**/_shared-all/**.md","_shared-all/**.md","**/_data/**.md","_data/**.md","**/_readme/**","_readme/**","**/**/**/_img/*.htm"],
           "src": "docs"
         },
+{
+          "files": ["**/**.md","**/**.yml"],
+          "exclude": ["**/obj/**", "**/_shared/**.md","_shared/**.md","**/_shared-all/**.md","_shared-all/**.md","**/_data/**.md","_data/**.md","**/_readme/**","_readme/**"],
+          "src": "extend/redirection",
+          "dest": "extend"    
+        },
+        {
+          "files": ["**/**.md","**/**.yml"],
+          "exclude": ["**/obj/**", "**/_shared/**.md","_shared/**.md","**/_shared-all/**.md","_shared-all/**.md","**/_data/**.md","_data/**.md","**/_readme/**","_readme/**","**/**/**/_img/*.htm"],
+          "src": "extend",
+          "dest": "extend"
+        },
         {
           "files": ["**/**.md","**/**.yml"],
           "exclude": ["**/obj/**", "**/_shared/**.md","_shared/**.md","**/_shared-all/**.md","_shared-all/**.md","**/_data/**.md","_data/**.md","**/_readme/**","_readme/**"],
@@ -37,6 +49,12 @@
           "exclude": ["**/obj/**"],
           "src": "integrate",
           "dest": "integrate"
+        },
+		{
+          "files": ["**/_img/**", "**/**/_img/**", "**/**/_shared/**", "**/_img-shared-all/**", "**/**/_img-shared-all/**", "**/*.json","**/_shared/**.md"],
+          "exclude": ["**/obj/**"],
+          "src": "extend",
+	      "dest": "extend"
         }
     ],
     "globalMetadata": {

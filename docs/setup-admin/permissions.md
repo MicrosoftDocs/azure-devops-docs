@@ -45,7 +45,7 @@ This topic provides descriptions for each built-in group and permission. To lear
 <div style="float:left;width:230px;margin:3px">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Work tracking permissions</p>
 <ul style="padding-left:30px;font-size:90%">
-<li style="margin-bottom:2px">[Area and iteration paths](../work/customize/modify-areas-iterations.md#set-permissions)</li>
+<li style="margin-bottom:2px">[Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)</li>
 <li style="margin-bottom:2px">[Work item query and folder](../work/track/set-query-permissions.md)</li>
 <li style="margin-bottom:2px">[Dashboard permissions](../report/dashboards.md#set-permissions)</li>
 <li style="margin-bottom:2px">[Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (Team Services)</li>
@@ -1353,7 +1353,7 @@ To learn more, see [Restrict access](restrict-access-tfs.md).
 
 ### Area path permissions (object-level)   
 
-You manage the security of each area path from the [web portal](../work/customize/modify-areas-iterations.md#set-permissions) or using the [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#area-permissions). Area permissions grant or restrict access to create and manage area paths as well as create and modify work items defined under area paths.
+You manage the security of each area path from the [web portal](../work/how-to/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#area-permissions). Area permissions grant or restrict access to create and manage area paths as well as create and modify work items defined under area paths.
 
 Members of the Project Administrators group are automatically granted permissions to manage area paths for a team project. Consider granting team administrators or team leads permissions to create, edit, or delete area nodes.
 
@@ -1454,9 +1454,9 @@ When that's the case, you can set up teams that are associated with an area.
 Permissions for the team's work items are assigned by assigning permissions to the area. 
 There are other [team settings](../work/scale/manage-team-assets.md) 
 that configure the team's agile planning tools.</blockquote>
-<p>To learn more, see [Set permissions to restrict access to work items](../work/customize/modify-areas-iterations.md#set-permissions-to-restrict-access-to-work-items).</p>
+<p>To learn more, see [Set permissions to restrict access to work items](../work/how-to/set-permissions-access-work-tracking.md-to-restrict-access-to-work-items).</p>
 
-You manage the security of each iteration path from the [web portal](../work/customize/modify-areas-iterations.md#set-permissions) or using the [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#iteration-permissions). 
+You manage the security of each iteration path from the [web portal](../work/how-to/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#iteration-permissions). 
 Members of the Project Administrators group are automatically granted these permissions for each iteration defined for a team project. Consider granting team administrators, scrum masters, or team leads permissions to create, edit, or delete iteration nodes.
 
 <ul style="padding-left:20px;font-size:90%">
@@ -2028,7 +2028,7 @@ When you add accounts of users directly to a built-in group or through a Windows
 The default permissions assigned to these groups are primarily limited to read access, such as **View build resources**, **View project-level information**, and **View collection-level information**.
 
 This means that all users that you add to one team project can view the objects in other team projects within a collection.
-If you need to restrict view access, then you can [set restrictions through the area path node](../work/customize/modify-areas-iterations.md).
+If you need to restrict view access, then you can [set restrictions through the area path node](../work/how-to/set-permissions-access-work-tracking.md).
 For additional methods, see [Restrict access in TFS](restrict-access-tfs.md).
 
 If you remove or deny the **View instance-level information** permission for one of the Valid Users groups,
