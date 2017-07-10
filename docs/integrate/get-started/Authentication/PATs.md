@@ -17,7 +17,7 @@ These APIs support [OAuth](./oauth.md) for authorization and you should plan to 
 don't have to provide their Visual Studio Team Services credentials to use when the APIs are called.
 To get started on your app, though, you can authenticate using personal access tokens.
 
-[!INCLUDE [personal-access-tokens-procedure](../../../docs/git/_shared/personal-access-tokens.md)]
+[!INCLUDE [personal-access-tokens-procedure](../../../git/_shared/personal-access-tokens.md)]
 
 Here's a sample that gets a list of builds using curl.
 <br/>
