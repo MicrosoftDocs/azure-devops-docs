@@ -1694,7 +1694,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Dashboard widget SDK  </b></p>
-<p>[Create a dashboard widget](../integrate/extensions/develop/add-dashboard-widget.md) using the REST API service. </p>
+<p>[Create a dashboard widget](integrate/extensions/develop/add-dashboard-widget.md) using the REST API service. </p>
 
 </td>
 </tr>
@@ -1766,20 +1766,20 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Get started with REST APIs</b></p>
-<p>Learn the basic patterns for [using the REST APIs](../integrate/get-started/rest/basics.md) for Team Services and TFS.</p>
+<p>Learn the basic patterns for [using the REST APIs](integrate/get-started/rest/basics.md) for Team Services and TFS.</p>
 
 <p><b>Authorization</b></p>
-<p>Get authorization from your customers to access Team Services resources using [OAuth 2.0](../integrate/get-started/Authentication/oauth.md).</p>
+<p>Get authorization from your customers to access Team Services resources using [OAuth 2.0](integrate/get-started/Authentication/oauth.md).</p>
 
 <p><b>REST API reference</b></p>
-<p>Use the [REST APIs](../integrate/api/overview.md) to work with Team Services and TFS resources.</p>
+<p>Use the [REST APIs](integrate/api/overview.md) to work with Team Services and TFS resources.</p>
 
 </td>
 <td width="33%">
 
 <p><b>.NET client libraries</b></p>
 <p>For .NET developers building Windows apps and services that integrate with Visual Studio Online,
-[client libraries](../integrate/get-started/client-libraries/dotnet.md) are available
+[client libraries](integrate/get-started/client-libraries/dotnet.md) are available
 for integrating with work item tracking, version control, build, and other services are now available.
 These packages replace the traditional TFS Client OM installer and make it easy to acquire and redistribute
 the libraries needed by your app or service.</p>
@@ -1791,7 +1791,7 @@ the libraries needed by your app or service.</p>
 <p>Here are a number of [samples](https://github.com/Microsoft/vso-extension-samples) that work with the REST APIs directly.</p>
 
 <p><b>C# client library samples</b></p>
-<p>Here are a few quick [samples](../integrate/get-started/client-libraries/samples.md) to help you get started wiht the client libraries.</p>
+<p>Here are a few quick [samples](integrate/get-started/client-libraries/samples.md) to help you get started wiht the client libraries.</p>
 
 
 </td>
@@ -1813,9 +1813,9 @@ the libraries needed by your app or service.</p>
 when events happen in your Visual Studio Online projects</p>
 
 <p><b>Create integrations</b></p>
-<p>Integrate other services like [HipChat](../integrate/get-started/service-hooks/services/hipchat.md),
-[Slack](../integrate/get-started/service-hooks/services/slack.md),
-and [UserVoice](../integrate/get-started/service-hooks/services/uservoice.md) with Team Services
+<p>Integrate other services like [HipChat](integrate/get-started/service-hooks/services/hipchat.md),
+[Slack](integrate/get-started/service-hooks/services/slack.md),
+and [UserVoice](integrate/get-started/service-hooks/services/uservoice.md) with Team Services
 using [service hooks](service-hooks/get-started.md).</p>
 
 
@@ -2150,7 +2150,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Project collection admin context</b></p>
-<p>From the collection admin context, you can [manage collection-level permissions](setup-admin/permissions.md), and set build policies, and [manage extensions](../integrate/extensions/overview.md). Click the ![gear icon](work/_img/icons/gear_icon.png) gear icon to open the admin context and then click DefaultCollection. </p>
+<p>From the collection admin context, you can [manage collection-level permissions](setup-admin/permissions.md), and set build policies, and [manage extensions](integrate/extensions/overview.md). Click the ![gear icon](work/_img/icons/gear_icon.png) gear icon to open the admin context and then click DefaultCollection. </p>
 
 
 </td>
