@@ -103,6 +103,16 @@ You can find the following samples and more in C# and .NET at the [work item tra
 - [Add a comment to a bug](../../api/wit/samples.md#add-comment-to-bug)
 - [Change a bug to a user story](../../api/wit/samples.md#change-bug-to-a-user-story)
 
+## Projects and teams
+
+## Git
+
+## Build
+
+## Slack
+
+## Jenkins
+
 ## Q&A
 
 <!-- BEGINSECTION class="md-qanda" -->

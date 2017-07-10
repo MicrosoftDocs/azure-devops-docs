@@ -40,5 +40,4 @@ Once your extension is ready to share, you can publish the extension to the [Vis
 # See also
 
 * [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
-* [Walkthrough: Publishing a Visual Studio Extension](https://msdn.microsoft.com/en-us/library/ff728613.aspx)
 * [Help - FAQ](../help/help.md)
