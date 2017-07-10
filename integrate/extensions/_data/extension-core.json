@@ -1,0 +1,12 @@
+﻿{
+    "manifestVersion": 1,
+    "id": "tools",
+    "version": "0.1.0",
+    "name": "Fabrikam Tools",
+    "publisher": "fabrikam",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ]
+}

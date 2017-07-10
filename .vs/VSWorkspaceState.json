@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\docs",
+    "\\docs\\build",
+    "\\docs\\build\\apps",
+    "\\docs\\build\\apps\\aspnet",
+    "\\docs\\build\\apps\\windows",
+    "\\docs\\package",
+    "\\docs\\package\\build",
+    "\\docs\\report",
+    "\\docs\\work"
+  ],
+  "SelectedNode": "\\docs\\report\\add-widget-to-dashboard.md",
+  "PreviewInSolutionExplorer": false
+}

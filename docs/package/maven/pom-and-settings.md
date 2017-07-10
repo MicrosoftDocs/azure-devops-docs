@@ -1,0 +1,15 @@
+---
+title: Configure Maven client with Visual Studio Team Services or Team Foundation Server
+description: Successfully configure your Maven client for use with Visual Studio Team Services or Team Foundation Server
+ms.prod: vs-devops-alm
+ms.technology: vs-devops-package
+ms.topic: get-started-article
+ms.assetid: 944f45ee-baa3-45ba-8467-5e7ab2bc47cf
+ms.manager: jenp
+ms.author: rossav
+ms.date: 04/05/2017
+---
+
+# Set up Maven client in Visual Studio Team Services and TFS
+
+[!INCLUDE [](../_shared/maven/pom-and-settings.md)]

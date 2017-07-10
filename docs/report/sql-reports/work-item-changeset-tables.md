@@ -1,0 +1,31 @@
+---
+title: Work Item Changeset tables | TFS
+description: Query for data about work items that are linked to changesets 
+ms.prod: visual-studio-tfs-dev14
+ms.technology: vs-devops-reporting 
+ms.topic: sql-reports
+ms.assetid: 0c017c1e-b19b-40b6-9927-b88b48700976
+ms.manager: douge
+ms.author: kaelli
+ms.date: 03/09/2017
+---
+# Work Item Changeset tables  
+
+[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+
+You can query for data about work items that are linked to changesets by using FactWorkItemChangeset and the associated dimensions. For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Test cases and work items](perspective-test-analyze-report-work.md).  
+  
+ ![Fact Table for Work Items Linked to Changesets](_img/teamproj_factworkchangeset.png "TeamProj_FactWorkChangeset")  
+  
+ FactWorkItemChangeset is associated with the following dimension tables:  
+  
+-   DimChangeset  
+  
+-   DimPerson  
+  
+-   DimWorkItem  
+  
+## Related notes 
+-  [Test cases and work items](perspective-test-analyze-report-work.md)   
+-  [Find and view changesets](../../tfvc/find-view-changesets.md)   
+-  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

@@ -1,0 +1,39 @@
+---
+title: Current Work Item tables | TFS
+description: Query for data about the current state of bugs, task, and other type of work items 
+ms.prod: visual-studio-tfs-dev14
+ms.technology: vs-devops-reporting 
+ms.topic: sql-reports
+ms.assetid: 8f70c31b-1c6f-4d5b-8413-3948a298d879
+ms.manager: douge
+ms.author: kaelli
+ms.date: 03/09/2017
+---
+
+# Current Work Item tables
+
+[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+
+
+You can query for data about the current state of bugs, tasks, and other types of work items by using the FactCurrentWorkItem table and the associated dimension tables.  
+  
+ For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Test cases and work items](perspective-test-analyze-report-work.md).  
+  
+ ![Fact Table for Current Work Items](_img/teamproj_currentworkitem.png "TeamProj_CurrentWorkItem")  
+  
+ FactCurrentWorkItem is associated with the following dimension tables:  
+  
+-   DimArea  
+  
+-   DimIteration  
+  
+-   DimPerson  
+  
+-   DimTeamProject  
+  
+-   DimWorkItem  
+  
+## Related notes 
+-  [Test cases and work items](perspective-test-analyze-report-work.md)   
+-  [Work Item History tables](work-item-history-tables.md)   
+-  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

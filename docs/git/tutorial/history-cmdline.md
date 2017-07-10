@@ -1,0 +1,251 @@
+---
+title: Review your repo history (command line) | Team Services & TFS
+description: Git history tools with Visual Studio and git command line tools to help you determine the changes in your files.
+ms.assetid: 57a7196a-afce-4508-9846-4bea09d7c794
+ms.prod: vs-devops-alm
+ms.technology: vs-devops-git
+ms.topic: get-started-article
+ms.manager: douge
+ms.author: sdanie
+ms.date: 02/24/2017
+ROBOTS: NOINDEX, NOFOLLOW
+layout: HubPage
+---
+
+# Review history (command line)
+
+###### Git command line
+
+## Review history
+
+Git uses the parent reference information stored in each [commit](commits-cmdline.md) to manage a full history of your development. 
+Review this commit history to find out when file changes were made and determine differences between versions of your code.
+
+Git's use of feature [branches](branches-cmdline.md) and merges through [pull requests](pullrequest-cmdline.md) mean that the commit history of your development doesn't form a straight, chronological line.
+When you use history to compare versions, think in terms of file changes between two commits instead of file changes between two points in time. 
+A recent change to a file in the `master` branch may have come from a commit created two weeks ago in a feature branch but was only merged yesterday.
+
+<li><p><a data-toggle="collapse" href="#expando-git-cmdline-tutorial">This article is part of the command line Git tutorial. Expand to view more Git tutorial steps &#x25BC;</a></p>
+<div class="collapse" id="expando-git-cmdline-tutorial">
+<ul>
+<li><a href="gitworkflow-cmdline.md">Learn about Git</a></li>
+<li><a href="creatingrepo-cmdline.md">Create a new repo</a></li>
+<li><a href="clone-cmdline.md">Clone an existing repo</a></li>
+<li><a href="commits-cmdline.md">Save work with commits</a></li>
+<li><a href="branches-cmdline.md">Create work in branches</a></li>
+<li><a href="pushing-cmdline.md">Share code with push</a></li>
+<li><a href="pulling-cmdline.md">Update code with fetch and pull</a></li>
+<li><a href="pullrequest-cmdline.md">Review code with pull requests</a></li>
+<li><a href="rebase-cmdline.md">Apply changes with rebase</a></li>
+<li><a href="cherry-pick-cmdline.md">Copy changes with cherry-pick</a></li>
+<li><a href="merging-cmdline.md">Resolve merge conflicts</a></li>
+<li><a href="undo-cmdline.md">Undo changes</a></li>
+<li><a href="ignore-files-cmdline.md">Ignore files</a></li>
+<li><a href="history-cmdline.md">Review history (this article)</a></li>
+<li><a href="howto-cmdline.md">Frequently asked questions</a></li>
+</ul>
+</div>
+</li> 
+
+## Compare files
+
+Compare the changes between two versions of a file in your Git repo. 
+
+<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
+<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
+<li style="float:left;" data-toggle="collapse" data-target="#changeexample">How to compare files</li>
+<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#cmdline0">Command Line</a></li>
+</ul>
+
+<div id="changeexample" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
+<div id="vs0" class="tab-pane fade">
+<h6 style="padding-left:25px;">Team Services | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017</h6>
+<ol>
+<li>Right-click the file in Solution Explorer and choose **View History...**. The history window will appear showing the commit ID, author, date, and description of all changes to the file in your local repo across all branches.   
+
+<p>![View history in your repo for a file](_img/vs_history_view.png)     
+
+<li>Find the latest commit for a branch by looking for its name on an arrow to the right of a commit.
+<li>View changes from the previous version of the file by right-clicking and choosing **Compare with previous...**. View the changes between any two versions by selecting both commits, then right-clicking and select **Compare...**
+<li>The diff view shows lines removed from the older commit and added in the new one.
+
+<p>![View diff changes in Visual Studio](_img/vs_diff_changes.png)
+
+</div>
+
+<div class="tab-pane fade in active" id="cmdline0" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
+
+<p>Use the `git log` command to view the commits that changed a file in your repo for your current branch.
+
+<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
+&gt; git log index.html   
+
+<font color="#b5bd68">commit bbc3b679197b659544a6f8070c79fb535b496613
+Author: Francis Totten &lt;ftottendev@outlook.com&gt;
+Date:   Thu Jun 30 13:42:50 2016 -0400
+
+    update landing page
+
+commit e5402fe710c25eca1b96a4e238eee9c01ed41c6a
+Author: Francis Totten &lt;ftottendev@outlook.com&gt;
+Date:   Thu Jun 30 13:42:23 2016 -0400
+
+    initial commit
+</font>
+</pre>
+<p>Filter the `git log` output based on author, description or date information by using the corresponding options. 
+Leave out the filename if you want to see the commits matching all files in your repo.
+
+<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
+&gt; git log <font color="#b5bd68">--author=frank@fabrikam.com index.html</font>
+&gt; git log <font color="#b5bd68">--since="2016-1-1"</font>
+&gt; git log <font color="#b5bd68">--before="2 weeks ago"</font>
+&gt; git log <font color="#b5bd68">--grep="css change"</font>
+</pre>
+
+<p>View changes between two commits using `git diff`:
+
+<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
+&gt; git diff bbc3b67 e5402fe71 index.html
+
+<font color="#c66">-    &lt;link rel="stylesheet" href="app.cs"/&gt;</font>   
+<font color="#b5bd68">+    &lt;link rel="stylesheet" href="fabrikam.cs"/&gt;</font>
+</pre>
+</div></div></div>
+
+## Retrieve files
+
+Retrieve a specific version of a file from your history, even if the file was deleted or renamed in the latest version of your code.
+Retrieving a older version of the file doesn't make any changes to your current branch. Create a new commit to bring the older version of the file into
+your branch.
+
+<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
+<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
+<li style="float:left;" data-toggle="collapse" data-target="#changeexample2">How to retrieve files</li>
+<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#cmdline2">Command Line</a></li>
+</ul>
+
+<div id="changeexample2" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
+<div id="vs2" class="tab-pane fade">
+<h6>Team Services | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017</h6>
+<p>Right-click the file in Solution Explorer and select **View History**. The Visual Studio **History** view will appear, showing the commits in your repo that updated the file.
+You can filter the commits to find the exact commit with the file version you want to restore. Double click on the version to open it in Visual Studio.
+   
+<p>![View file versions in Visual Studio](_img/vs_view_file_commit_details.png)    
+<p>Retrieve deleted files in your repo by opening the **Changes** view in Team Explorer. Select **View History** from the **Actions** drop-down. Right-click the commit
+containing the version of the file you want to restore and select **View Commit Details**. 
+<p>![View deleted files in your Git repo with Visual Studio](_img/vs_view_commit_details.png)
+<p>Right click the file to restore in the **Commit Details** in Team Explorer and select **Open**.
+<p>Save the version to your project by selecting **Save As...** from the **File** menu. If you save the file in your current project, either as a new file or overwriting
+an existing one, you'll need to commit your changes to add the previous version to your local branch.
+
+</div>
+
+<div class="tab-pane fade in active" id="cmdline2" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
+Use `git log` to find the version to restore and `git checkout` or `git show` to restore the file from your history.
+
+<p>Find the commit with the version of the file you need to restore using `git log` using the steps from [comparing versions](history-cmdline.md#compare-files) above.
+Restore the version in its current location using `git checkout`:
+   
+<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
+&gt; git checkout <font color="#b5bd68">85435fac src/app.ts</font>
+</pre>
+
+<blockquote> Using `git checkout` this way will rewrite the current verison of the file at that path location.</blockquote>
+
+Restore a file to any location by using `git show`. This command prints the file contents to the terminal-you'll want to redirect the output to your desired location.
+
+<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
+&gt; git show <font color="#b5bd68">85435fac:src/app.ts &gt; /home/frank/oldapp.ts</font>
+</pre>
+
+</div></div></div>
+
+## Compare branches
+
+Review potential changes from a [merge](merging-cmdline.md) or [rebase](rebase-cmdline.md) by comparing branches directly. 
+You can compare both local and remote branches, which is useful when checking for potential merge conflicts or to see how the 
+changes others have made will affect your work.
+
+<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
+<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
+<li style="float:left;" data-toggle="collapse" data-target="#changeexample1">How to compare branches</li>
+<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#cmdline1">Command Line</a></li>
+</ul>
+
+<div id="changeexample1" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
+<div id="vs1" class="tab-pane fade">
+
+<h6>Team Services | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017</h6>
+
+<p>Browse to your repo in Team Services or TFS. Select **Branches** from the menu under **Code**:   
+
+<p>![Open the branches view in Team Services/TFS](_img/branches_view_team_services.png)   
+
+<p>Locate your branch and select the **...** icon to  view the branch options. Select **Compare branches**.   
+
+<p>![Select the ellipses icon to open branch options, then select team services](_img/team_services_branch_options.png)
+   
+<p>Select the branch to compare to from the drop-downs at the top. The view will display all changes between the branches.
+
+</div>
+
+<div class="tab-pane fade in active" id="cmdline1" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
+
+Use `git diff` to compare the contents of two branches. You can compare any combination of local and remote branches. 
+The output shows the deletions and additions between the two versions of the code.
+
+<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
+&gt; git diff <font color="#b5bd68">users/frank/feature origin/master</font>
+</pre>
+
+<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
+index 36843b8..03afc4b 100644
+--- a/tsapp/index.html
++++ b/tsapp/index.html
+@@ -4,7 +4,7 @@
+ &lt;head&gt;
+     &lt;meta charset="utf-8" /&gt;
+     &lt;title>TypeScript HTML App&lt;/title&gt;
+<font color="#c66">-    &lt;link rel="stylesheet" href="fabrikam-test.css" type="text/css" /&gt;</font><br/><font color="#b5bd68">+    &lt;link rel="stylesheet" href="fabrikam.css" type="text/css" /&gt;</font>
+     &lt;script src="app.js">&lt;/script&gt;
+ &lt;/head>
+ ...
+--- a/tsapp/app.ts
++++ b/tsapp/app.ts
+     constructor(element: HTMLElement) {
+         this.element = element;
+<font color="#c66">-        this.element.innerHTML += "The time is: ";</font><br/><font color="#b5bd68">+        this.element.innerHTML += "The time is now: ";</font>
+         this.span = document.createElement('span');
+         this.element.appendChild(this.span);
+         this.span.innerText = new Date().toUTCString();
+ </pre>
+
+This will output the diff for every change between the branches. 
+You can narrow down specific file changes by specifying a file after the branch names:
+
+<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
+&gt; git diff <font color="#b5bd68">users/frank/feature origin/master index.html</font>
+</pre>
+
+</div></div>
+
+## What's next
+
+Check the other tutorial topics and learn more about Git.
+
+- [Learn about Git](gitworkflow-cmdline.md)
+- [Create a new repo](creatingrepo-cmdline.md)
+- [Clone an existing repo](clone-cmdline.md)
+- [Save work with commits](commits-cmdline.md)
+- [Create work in branches](branches-cmdline.md)
+- [Share code with push](pushing-cmdline.md)
+- [Update code with fetch and pull](pulling-cmdline.md)
+- [Review code with pull requests](pullrequest-cmdline.md)
+- [Apply changes with rebase](rebase-cmdline.md)
+- [Copy changes with cherry-pick](cherry-pick-cmdline.md)
+- [Resolve merge conflicts](merging-cmdline.md)
+- [Undo changes](undo-cmdline.md)
+- [Ignore files](ignore-files-cmdline.md)
+- [Review history](history-cmdline.md)
+- [Frequently asked questions](howto-cmdline.md)

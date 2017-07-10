@@ -1,0 +1,21 @@
+---
+title: TFS/Core/Contracts WebApiCreateTagRequestData API | Extensions for Visual Studio Team Services
+description: The representation of data needed to create a tag definition which is sent across the wire.
+ms.assetid: cce0f29e-f8fd-c682-8aae-0547d7922dca
+ms.prod: vs-devops-alm
+ms.technology: vs-devops-extensions-api
+generated: true
+ms.manager: douge
+ms.author: elbatk
+ms.date: 08/04/2016
+---
+
+# WebApiCreateTagRequestData
+
+Module path: `TFS/Core/Contracts`
+
+
+### Members
+
+* `name`: string. 
+

@@ -1,0 +1,1278 @@
+{
+	"count": 2,
+	"value": [{
+		"id": "rm",
+		"url": "https://mseng.vsrm.visualstudio.com/_apis/hooks/publishers/rm",
+		"name": "Release Management",
+		"description": "Publishes Release Management events",
+		"supportedEvents": [{
+			"publisherId": "rm",
+			"scope": "project",
+			"id": "ms.vss-release.deployment-approval-completed-event",
+			"url": "https://mseng.vsrm.visualstudio.com/_apis/hooks/publishers/rm/eventTypes/ms.vss-release.deployment-approval-completed-event",
+			"name": "Release deployment approval completed",
+			"description": "A deployment approval has been completed",
+			"supportedResourceVersions": [
+				"3.0-preview.1"
+			],
+			"inputDescriptors": [{
+				"id": "releaseDefinitionId",
+				"name": "Release Definition Name",
+				"description": "Filter events to include only completed deployments for the specified definition",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "releaseEnvironmentId",
+				"name": "Environment Name",
+				"description": "Filter events to include only completed deployments for the specified environment",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"dependencyInputIds": [
+					"releaseDefinitionId"
+				],
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "releaseApprovalType",
+				"name": "Approval Type",
+				"description": "Filter events to include only deployments requesting an approval of the specified type",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}, {
+						"value": "1",
+						"displayValue": "Pre-deployment"
+					}, {
+						"value": "2",
+						"displayValue": "Post-deployment"
+					}],
+					"isLimitedToPossibleValues": true
+				}
+			}, {
+				"id": "releaseApprovalStatus",
+				"name": "Approval Status",
+				"description": "Filter events to include only deployments with an approval of the specified status",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}, {
+						"value": "2",
+						"displayValue": "Approved"
+					}, {
+						"value": "4",
+						"displayValue": "Rejected"
+					}],
+					"isLimitedToPossibleValues": true
+				}
+			}]
+		}, {
+			"publisherId": "rm",
+			"scope": "project",
+			"id": "ms.vss-release.deployment-approval-pending-event",
+			"url": "https://mseng.vsrm.visualstudio.com/_apis/hooks/publishers/rm/eventTypes/ms.vss-release.deployment-approval-pending-event",
+			"name": "Release deployment approval pending",
+			"description": "A deployment approval has been requested",
+			"supportedResourceVersions": [
+				"3.0-preview.1"
+			],
+			"inputDescriptors": [{
+				"id": "releaseDefinitionId",
+				"name": "Release Definition Name",
+				"description": "Filter events to include only completed deployments for the specified definition",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "releaseEnvironmentId",
+				"name": "Environment Name",
+				"description": "Filter events to include only completed deployments for the specified environment",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"dependencyInputIds": [
+					"releaseDefinitionId"
+				],
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "releaseApprovalType",
+				"name": "Approval Type",
+				"description": "Filter events to include only deployments requesting an approval of the specified type",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}, {
+						"value": "1",
+						"displayValue": "Pre-deployment"
+					}, {
+						"value": "2",
+						"displayValue": "Post-deployment"
+					}],
+					"isLimitedToPossibleValues": true
+				}
+			}]
+		}, {
+			"publisherId": "rm",
+			"scope": "project",
+			"id": "ms.vss-release.deployment-completed-event",
+			"url": "https://mseng.vsrm.visualstudio.com/_apis/hooks/publishers/rm/eventTypes/ms.vss-release.deployment-completed-event",
+			"name": "Release deployment completed",
+			"description": "A deployment completed",
+			"supportedResourceVersions": [
+				"3.0-preview.1"
+			],
+			"inputDescriptors": [{
+				"id": "releaseDefinitionId",
+				"name": "Release Definition Name",
+				"description": "Filter events to include only completed deployments for the specified definition",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "releaseEnvironmentId",
+				"name": "Environment Name",
+				"description": "Filter events to include only completed deployments for the specified environment",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"dependencyInputIds": [
+					"releaseDefinitionId"
+				],
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "releaseEnvironmentStatus",
+				"name": "Status",
+				"description": "Filter events to include only completed deployments with the specified status",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}, {
+						"value": "8",
+						"displayValue": "Canceled"
+					}, {
+						"value": "16",
+						"displayValue": "Rejected"
+					}, {
+						"value": "4",
+						"displayValue": "Succeeded"
+					}, {
+						"value": "128",
+						"displayValue": "Partially Succeeded"
+					}],
+					"isLimitedToPossibleValues": true
+				}
+			}]
+		}, {
+			"publisherId": "rm",
+			"scope": "project",
+			"id": "ms.vss-release.deployment-started-event",
+			"url": "https://mseng.vsrm.visualstudio.com/_apis/hooks/publishers/rm/eventTypes/ms.vss-release.deployment-started-event",
+			"name": "Release deployment started",
+			"description": "A deployment was started",
+			"supportedResourceVersions": [
+				"3.0-preview.1"
+			],
+			"inputDescriptors": [{
+				"id": "releaseDefinitionId",
+				"name": "Release Definition Name",
+				"description": "Filter events to include only completed deployments for the specified definition",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "releaseEnvironmentId",
+				"name": "Environment Name",
+				"description": "Filter events to include only completed deployments for the specified environment",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"dependencyInputIds": [
+					"releaseDefinitionId"
+				],
+				"hasDynamicValueInformation": true
+			}]
+		}, {
+			"publisherId": "rm",
+			"scope": "project",
+			"id": "ms.vss-release.release-abandoned-event",
+			"url": "https://mseng.vsrm.visualstudio.com/_apis/hooks/publishers/rm/eventTypes/ms.vss-release.release-abandoned-event",
+			"name": "Release abandoned",
+			"description": "A release was abandoned",
+			"supportedResourceVersions": [
+				"3.0-preview.1"
+			],
+			"inputDescriptors": [{
+				"id": "releaseDefinitionId",
+				"name": "Release Definition Name",
+				"description": "Filter events to include only completed deployments for the specified definition",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"hasDynamicValueInformation": true
+			}]
+		}, {
+			"publisherId": "rm",
+			"scope": "project",
+			"id": "ms.vss-release.release-created-event",
+			"url": "https://mseng.vsrm.visualstudio.com/_apis/hooks/publishers/rm/eventTypes/ms.vss-release.release-created-event",
+			"name": "Release created",
+			"description": "A release was created",
+			"supportedResourceVersions": [
+				"3.0-preview.1"
+			],
+			"inputDescriptors": [{
+				"id": "releaseDefinitionId",
+				"name": "Release Definition Name",
+				"description": "Filter events to include only completed deployments for the specified definition",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"hasDynamicValueInformation": true
+			}]
+		}],
+		"inputDescriptors": [{
+			"id": "projectId",
+			"name": "Project",
+			"description": "Team Project to restrict events to",
+			"type": null,
+			"inputMode": "none",
+			"isConfidential": false,
+			"useInDefaultDescription": false,
+			"groupName": null,
+			"valueHint": null,
+			"validation": {
+				"dataType": "guid"
+			}
+		}],
+		"_links": {
+			"self": {
+				"href": "https://mseng.vsrm.visualstudio.com/_apis/hooks/publishers/rm"
+			},
+			"eventTypes": {
+				"href": "https://mseng.vsrm.visualstudio.com/_apis/hooks/publishers/rm/eventTypes"
+			}
+		}
+	}, {
+		"id": "tfs",
+		"url": "https://mseng.visualstudio.com/_apis/hooks/publishers/tfs",
+		"name": "Team Foundation Server",
+		"description": "Publishes Team Foundation Server service hooks events",
+		"supportedEvents": [{
+			"publisherId": "tfs",
+			"scope": "project",
+			"id": "tfvc.checkin",
+			"url": "https://mseng.visualstudio.com/_apis/hooks/publishers/tfs/eventTypes/tfvc.checkin",
+			"name": "Code checked in",
+			"description": "A changeset is checked into version control.",
+			"supportedResourceVersions": [
+				"1.0",
+				"1.0-preview.1"
+			],
+			"inputDescriptors": [{
+				"id": "path",
+				"name": "Under path",
+				"description": "Filter to checkins that change one or more files under the specified path",
+				"type": null,
+				"inputMode": "textBox",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string",
+					"isRequired": true,
+					"pattern": "^\\$\\/[^&<>'\"]*$"
+				},
+				"values": {
+					"defaultValue": "$/"
+				}
+			}]
+		}, {
+			"publisherId": "tfs",
+			"scope": "project",
+			"id": "workitem.created",
+			"url": "https://mseng.visualstudio.com/_apis/hooks/publishers/tfs/eventTypes/workitem.created",
+			"name": "Work item created",
+			"description": "Filter events to include only newly created work items.",
+			"supportedResourceVersions": [
+				"1.0",
+				"1.0-preview.2"
+			],
+			"inputDescriptors": [{
+				"id": "areaPath",
+				"name": "Area path",
+				"description": "Filter events to include only work items under the specified area path.",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true,
+					"isReadOnly": true
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "workItemType",
+				"name": "Work item type",
+				"description": "Filter events to include only work items of the specified type.",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true,
+					"isReadOnly": true
+				},
+				"hasDynamicValueInformation": true
+			}]
+		}, {
+			"publisherId": "tfs",
+			"scope": "project",
+			"id": "workitem.commented",
+			"url": "https://mseng.visualstudio.com/_apis/hooks/publishers/tfs/eventTypes/workitem.commented",
+			"name": "Work item commented on",
+			"description": "Filter events to include only work items commented on.",
+			"supportedResourceVersions": [
+				"1.0",
+				"1.0-preview.2"
+			],
+			"inputDescriptors": [{
+				"id": "areaPath",
+				"name": "Area path",
+				"description": "Filter events to include only work items under the specified area path.",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true,
+					"isReadOnly": true
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "workItemType",
+				"name": "Work item type",
+				"description": "Filter events to include only work items of the specified type.",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true,
+					"isReadOnly": true
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "commentPattern",
+				"name": "Contains string",
+				"description": "The string that must be found in the comment.",
+				"type": null,
+				"inputMode": "textBox",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string",
+					"pattern": "^\\s*[^\\s&<>'\"][^&<>'\"]*$",
+					"patternMismatchErrorMessage": "Value should contain at least one non whitespace character and cannot contain any of characters: &, <, >, ' (apostrophe), or \" (quote).",
+					"minLength": 1,
+					"maxLength": 1024
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": []
+				}
+			}]
+		}, {
+			"publisherId": "tfs",
+			"scope": "project",
+			"id": "workitem.updated",
+			"url": "https://mseng.visualstudio.com/_apis/hooks/publishers/tfs/eventTypes/workitem.updated",
+			"name": "Work item updated",
+			"description": "Filter events to include only changed work items.",
+			"supportedResourceVersions": [
+				"1.0",
+				"1.0-preview.2"
+			],
+			"inputDescriptors": [{
+				"id": "areaPath",
+				"name": "Area path",
+				"description": "Filter events to include only work items under the specified area path.",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true,
+					"isReadOnly": true
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "workItemType",
+				"name": "Work item type",
+				"description": "Filter events to include only work items of the specified type.",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true,
+					"isReadOnly": true
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "changedFields",
+				"name": "Field",
+				"description": "Filter events to include only work items with the specified field(s) changed.",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true,
+					"isReadOnly": true
+				},
+				"dependencyInputIds": [
+					"workItemType"
+				],
+				"hasDynamicValueInformation": true
+			}]
+		}, {
+			"publisherId": "tfs",
+			"scope": "project",
+			"id": "workitem.deleted",
+			"url": "https://mseng.visualstudio.com/_apis/hooks/publishers/tfs/eventTypes/workitem.deleted",
+			"name": "Work item deleted",
+			"description": "Filter events to include only newly deleted work items.",
+			"supportedResourceVersions": [
+				"1.0",
+				"1.0-preview.2"
+			],
+			"inputDescriptors": [{
+				"id": "areaPath",
+				"name": "Area path",
+				"description": "Filter events to include only work items under the specified area path.",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true,
+					"isReadOnly": true
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "workItemType",
+				"name": "Work item type",
+				"description": "Filter events to include only work items of the specified type.",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true,
+					"isReadOnly": true
+				},
+				"hasDynamicValueInformation": true
+			}]
+		}, {
+			"publisherId": "tfs",
+			"scope": "project",
+			"id": "workitem.restored",
+			"url": "https://mseng.visualstudio.com/_apis/hooks/publishers/tfs/eventTypes/workitem.restored",
+			"name": "Work item restored",
+			"description": "Filter events to include only newly restored work items.",
+			"supportedResourceVersions": [
+				"1.0",
+				"1.0-preview.2"
+			],
+			"inputDescriptors": [{
+				"id": "areaPath",
+				"name": "Area path",
+				"description": "Filter events to include only work items under the specified area path.",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true,
+					"isReadOnly": true
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "workItemType",
+				"name": "Work item type",
+				"description": "Filter events to include only work items of the specified type.",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true,
+					"isReadOnly": true
+				},
+				"hasDynamicValueInformation": true
+			}]
+		}, {
+			"publisherId": "tfs",
+			"scope": "project",
+			"id": "git.pullrequest.merged",
+			"url": "https://mseng.visualstudio.com/_apis/hooks/publishers/tfs/eventTypes/git.pullrequest.merged",
+			"name": "Pull request merge commit created",
+			"description": "Pull request - Created merge commit",
+			"supportedResourceVersions": [
+				"1.0-preview.1"
+			],
+			"inputDescriptors": [{
+				"id": "repository",
+				"name": "Repository",
+				"description": "The repository that code was pushed to",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "guid"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "branch",
+				"name": "Target branch",
+				"description": "The target branch of the pull request",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true
+				},
+				"dependencyInputIds": [
+					"repository"
+				],
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "pullrequestCreatedBy",
+				"name": "Requested by a member of group:",
+				"description": "A group which has the requester as a member",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "pullrequestReviewersContains",
+				"name": "Reviewer includes group:",
+				"description": "A group included in the reviewers list",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true
+				},
+				"hasDynamicValueInformation": true
+			}]
+		}, {
+			"publisherId": "tfs",
+			"scope": "project",
+			"id": "git.pullrequest.created",
+			"url": "https://mseng.visualstudio.com/_apis/hooks/publishers/tfs/eventTypes/git.pullrequest.created",
+			"name": "Pull request created",
+			"description": "Pull request is created in a Git repository",
+			"supportedResourceVersions": [
+				"1.0-preview.1"
+			],
+			"inputDescriptors": [{
+				"id": "repository",
+				"name": "Repository",
+				"description": "The repository that code was pushed to",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "guid"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "branch",
+				"name": "Target branch",
+				"description": "The target branch of the pull request",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true
+				},
+				"dependencyInputIds": [
+					"repository"
+				],
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "pullrequestCreatedBy",
+				"name": "Requested by a member of group:",
+				"description": "A group which has the requester as a member",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "pullrequestReviewersContains",
+				"name": "Reviewer includes group:",
+				"description": "A group included in the reviewers list",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true
+				},
+				"hasDynamicValueInformation": true
+			}]
+		}, {
+			"publisherId": "tfs",
+			"scope": "project",
+			"id": "git.pullrequest.updated",
+			"url": "https://mseng.visualstudio.com/_apis/hooks/publishers/tfs/eventTypes/git.pullrequest.updated",
+			"name": "Pull request updated",
+			"description": "Pull request is updated – status, review list, reviewer vote changed or the source branch is updated with a push",
+			"supportedResourceVersions": [
+				"1.0-preview.1"
+			],
+			"inputDescriptors": [{
+				"id": "repository",
+				"name": "Repository",
+				"description": "The repository that code was pushed to",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "guid"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "branch",
+				"name": "Target branch",
+				"description": "The target branch of the pull request",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true
+				},
+				"dependencyInputIds": [
+					"repository"
+				],
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "notificationType",
+				"name": "Change",
+				"description": "The type of pull request change",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}, {
+						"value": "PushNotification",
+						"displayValue": "Source branch updated"
+					}, {
+						"value": "ReviewersUpdateNotification",
+						"displayValue": "Reviewers changed"
+					}, {
+						"value": "StatusUpdateNotification",
+						"displayValue": "Status changed"
+					}, {
+						"value": "ReviewerVoteNotification",
+						"displayValue": "Votes score changed"
+					}],
+					"isLimitedToPossibleValues": true,
+					"isReadOnly": true
+				}
+			}, {
+				"id": "pullrequestCreatedBy",
+				"name": "Requested by a member of group:",
+				"description": "A group which has the requester as a member",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "pullrequestReviewersContains",
+				"name": "Reviewer includes group:",
+				"description": "A group included in the reviewers list",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true
+				},
+				"hasDynamicValueInformation": true
+			}]
+		}, {
+			"publisherId": "tfs",
+			"scope": "project",
+			"id": "git.push",
+			"url": "https://mseng.visualstudio.com/_apis/hooks/publishers/tfs/eventTypes/git.push",
+			"name": "Code pushed",
+			"description": "Code is pushed to a Git repository",
+			"supportedResourceVersions": [
+				"1.0",
+				"1.0-preview.1"
+			],
+			"inputDescriptors": [{
+				"id": "repository",
+				"name": "Repository",
+				"description": "The repository that code was pushed to",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "guid"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "branch",
+				"name": "Branch",
+				"description": "The branch that code was pushed into",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true
+				},
+				"dependencyInputIds": [
+					"repository"
+				],
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "pushedBy",
+				"name": "Pushed by a member of group:",
+				"description": "A group which has the pusher as its member",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true
+				},
+				"hasDynamicValueInformation": true
+			}]
+		}, {
+			"publisherId": "tfs",
+			"scope": "project",
+			"id": "build.complete",
+			"url": "https://mseng.visualstudio.com/_apis/hooks/publishers/tfs/eventTypes/build.complete",
+			"name": "Build completed",
+			"description": "A build completes",
+			"supportedResourceVersions": [
+				"1.0",
+				"2.0-preview.2",
+				"1.0-preview.1"
+			],
+			"inputDescriptors": [{
+				"id": "definitionName",
+				"name": "Build Definition",
+				"description": "Filter events to include only completed builds for the specified definition",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string"
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}],
+					"isLimitedToPossibleValues": true
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "buildStatus",
+				"name": "Build Status",
+				"description": "Filter events to include only completed builds for the specified completion status",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"values": {
+					"defaultValue": "",
+					"possibleValues": [{
+						"value": "",
+						"displayValue": "[Any]"
+					}, {
+						"value": "Succeeded",
+						"displayValue": "Succeeded"
+					}, {
+						"value": "PartiallySucceeded",
+						"displayValue": "Partially Succeeded"
+					}, {
+						"value": "Failed",
+						"displayValue": "Failed"
+					}, {
+						"value": "Stopped",
+						"displayValue": "Stopped"
+					}],
+					"isLimitedToPossibleValues": true
+				}
+			}]
+		}, {
+			"publisherId": "tfs",
+			"scope": "project",
+			"id": "message.posted",
+			"url": "https://mseng.visualstudio.com/_apis/hooks/publishers/tfs/eventTypes/message.posted",
+			"name": "Team room message posted",
+			"description": "Triggers when a message is posted to a team room",
+			"supportedResourceVersions": [
+				"1.0",
+				"1.0-preview.1"
+			],
+			"inputDescriptors": [{
+				"id": "roomId",
+				"name": "Team room",
+				"description": "Filter events to include only messages sent to the specified Team room",
+				"type": null,
+				"inputMode": "combo",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "number",
+					"isRequired": true
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": []
+				},
+				"hasDynamicValueInformation": true
+			}, {
+				"id": "messagePattern",
+				"name": "Message contains string",
+				"description": "The string that must be found in the message",
+				"type": null,
+				"inputMode": "textBox",
+				"isConfidential": false,
+				"useInDefaultDescription": false,
+				"groupName": null,
+				"valueHint": null,
+				"validation": {
+					"dataType": "string",
+					"pattern": "^[^&<>'\"]*$",
+					"patternMismatchErrorMessage": "Value cannot contain any of characters: &, <, >, ' (apostrophe), or \\\" (quote).",
+					"maxLength": 1024
+				},
+				"values": {
+					"defaultValue": "",
+					"possibleValues": []
+				}
+			}]
+		}],
+		"inputDescriptors": [{
+			"id": "projectId",
+			"name": "Project",
+			"description": "Team Project to restrict events to",
+			"type": null,
+			"inputMode": "none",
+			"isConfidential": false,
+			"useInDefaultDescription": false,
+			"groupName": null,
+			"valueHint": null,
+			"validation": {
+				"dataType": "guid"
+			}
+		}, {
+			"id": "teamId",
+			"name": "Team",
+			"description": "Team that the subscription is associated with",
+			"type": null,
+			"inputMode": "none",
+			"isConfidential": false,
+			"useInDefaultDescription": false,
+			"groupName": null,
+			"valueHint": null,
+			"validation": {
+				"dataType": "guid"
+			}
+		}],
+		"_links": {
+			"self": {
+				"href": "https://mseng.visualstudio.com/_apis/hooks/publishers/tfs"
+			},
+			"eventTypes": {
+				"href": "https://mseng.visualstudio.com/_apis/hooks/publishers/tfs/eventTypes"
+			}
+		}
+	}]
+}

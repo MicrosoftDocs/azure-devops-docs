@@ -1,0 +1,28 @@
+---
+title: Work with version control locks
+description: Work with version control locks
+ms.assetid: 097adb8d-9509-48bb-804e-37456ff80ee8
+ms.prod: vs-devops-alm
+ms.technology: vs-devops-tfvc
+ms.manager: douge
+ms.author: routlaw
+ms.date: 08/10/2016
+---
+
+# Work with version control locks
+
+**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+
+This section describes how to lock a file or folder to prevent it from being checked out and altered. You lock a file or folder using Team Foundation version control locks.
+
+## In This Section
+
+[Understand lock types](understand-lock-types.md)     
+Explains the various types of locks that can be applied against the source control server and how to use them.
+
+[Lock and unlock folders or files](lock-unlock-folders-files.md)     
+Explains the steps used to lock and unlock source control items.
+
+## Reference
+
+ [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md) 

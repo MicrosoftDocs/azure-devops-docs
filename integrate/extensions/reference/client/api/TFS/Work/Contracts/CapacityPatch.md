@@ -1,0 +1,23 @@
+---
+title: TFS/Work/Contracts CapacityPatch API | Extensions for Visual Studio Team Services
+description: Expected data from PATCH
+ms.assetid: 6cf4f6ba-30da-3d65-53e4-1682aca67b2c
+ms.prod: vs-devops-alm
+ms.technology: vs-devops-extensions-api
+generated: true
+ms.manager: douge
+ms.author: elbatk
+ms.date: 08/04/2016
+---
+
+# CapacityPatch
+
+Module path: `TFS/Work/Contracts`
+
+
+### Members
+
+* `activities`: [Activity](../../../TFS/Work/Contracts/Activity.md)[]. 
+
+* `daysOff`: [DateRange](../../../TFS/Work/Contracts/DateRange.md)[]. 
+
