@@ -1,0 +1,23 @@
+---
+title: TFS/DistributedTask/Contracts JobCompletedEvent API | Extensions for Visual Studio Team Services
+ms.assetid: b482b923-0d97-3ad6-a8e0-2d4707fd3e7d
+ms.prod: vs-devops-alm
+ms.technology: vs-devops-extensions-api
+generated: true
+ms.manager: douge
+ms.author: elbatk
+ms.date: 08/04/2016
+---
+
+# JobCompletedEvent
+
+Module path: `TFS/DistributedTask/Contracts`
+
+Extends: [JobEvent](../../../TFS/DistributedTask/Contracts/JobEvent.md)
+
+### Members
+
+* `requestId`: number. 
+
+* `result`: [TaskResult](../../../TFS/DistributedTask/Contracts/TaskResult.md). 
+

@@ -1,0 +1,25 @@
+---
+title: TFS/VersionControl/Contracts GitPush API | Extensions for Visual Studio Team Services
+ms.assetid: 33cb1ac3-4754-5a4a-cfed-9cf9c352ebd6
+ms.prod: vs-devops-alm
+ms.technology: vs-devops-extensions-api
+generated: true
+ms.manager: douge
+ms.author: elbatk
+ms.date: 08/04/2016
+---
+
+# GitPush
+
+Module path: `TFS/VersionControl/Contracts`
+
+Extends: [GitPushRef](../../../TFS/VersionControl/Contracts/GitPushRef.md)
+
+### Members
+
+* `commits`: [GitCommitRef](../../../TFS/VersionControl/Contracts/GitCommitRef.md)[]. 
+
+* `refUpdates`: [GitRefUpdate](../../../TFS/VersionControl/Contracts/GitRefUpdate.md)[]. 
+
+* `repository`: [GitRepository](../../../TFS/VersionControl/Contracts/GitRepository.md). 
+
