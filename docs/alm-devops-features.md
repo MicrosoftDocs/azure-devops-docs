@@ -1772,7 +1772,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Get authorization from your customers to access Team Services resources using [OAuth 2.0](integrate/get-started/Authentication/oauth.md).</p>
 
 <p><b>REST API reference</b></p>
-<p>Use the [REST APIs](integrate/api/overview.md) to work with Team Services and TFS resources.</p>
+<p>Use the [REST APIs](/integrate/api/overview.md) to work with Team Services and TFS resources.</p>
 
 </td>
 <td width="33%">
