@@ -1,0 +1,70 @@
+﻿{
+    "description": "Awesome tools to help you and your team do great things everyday.",
+    "icons": {
+        "default": "images/fabrikam-logo.png"
+    },
+    "categories": [
+        "Plan and track"
+    ],
+    "tags": [
+        "working",
+        "people person",
+        "search"
+    ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        },
+        "license": {
+            "path": "license-terms.md"
+        }
+    },
+    "links": {
+        "home": {
+            "uri": "https://www.fabrikam-fiber-inc.com"
+        },
+        "getstarted": {
+            "uri": "https://www.fabrikam-fiber-inc.com/help/getstarted"
+        },
+        "learn": {
+            "uri": "https://www.fabrikam-fiber-inc.com/features"
+        },
+        "support": {
+            "uri": "https://www.fabrikam-fiber-inc.com/support"
+        },
+        "repository": {
+            "uri": "https://github.com/fabrikam-fiber-inc/tools"
+        },
+        "issues": {
+            "uri": "https://github.com/fabrikam-fiber-inc/tools/issues"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/fabrikam-fiber-inc/tools"
+    },
+    "badges": [
+        {
+            "href": "https://travis.ci/fabrikam-fiber-inc/myextension",
+            "uri": "https://travis.ci/fabrikam-fiber-inc/myextension.svg?branch=master",
+            "description": "TravisCI build for the project"
+        },
+        {
+            "href": "https://ci.appveyor.com/projects/fabrikam-fiber-inc/myextension",
+            "uri": "https://ci.appveyor.com/api/projects/status/vlg2sgs2y7tsdxpj4c?svg=true",
+            "description": "AppVeyor build for the project"
+        }
+    ],
+    "branding": {
+        "color": "rgb(34, 34, 34)",
+        "theme": "dark"
+    },
+    "screenshots": [
+        {
+            "path": "screenshots/screen1.png"
+        },
+        {
+            "path": "screenshots/screen2.png"
+        }
+    ]
+}
