@@ -354,7 +354,7 @@ Choose your widget and click the 'Add' button to add it to your dashboard.
 <a name="part-2"/>
 
 ## Part 2: Hello World with VSTS REST API
-Widgets can call any of the [REST APIs](../../api/overview.md) in VSTS to interact with Visual Studio Team Services resources.
+Widgets can call any of the [REST APIs](https://visualstudio.com/api/overview.md) in VSTS to interact with Visual Studio Team Services resources.
 In this example, we use the REST API for WorkItemTracking to fetch information about an existing query and display some query info in the widget right 
 below the "Hello World" text. 
 

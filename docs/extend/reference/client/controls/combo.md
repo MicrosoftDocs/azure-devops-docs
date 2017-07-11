@@ -34,8 +34,8 @@ See [Use combo](../../../develop/ui-controls/comboo.md) for basic usage and adva
 
 ## Options
 
-[!INCLUDE [x](../api/VSS/Controls/_shared/Combos/IComboOptions.md)]
+[!INCLUDE [x](https://visualstudio.com/api/VSS/Controls/_shared/Combos/IComboOptions.md)]
 
 ## Methods
 
-[!INCLUDE [x](../api/VSS/Controls/_shared/Combos/ComboO.md)]
+[!INCLUDE [x](https://visualstudio.com/api/VSS/Controls/_shared/Combos/ComboO.md)]

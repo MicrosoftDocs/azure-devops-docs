@@ -1454,7 +1454,7 @@ When that's the case, you can set up teams that are associated with an area.
 Permissions for the team's work items are assigned by assigning permissions to the area. 
 There are other [team settings](../work/scale/manage-team-assets.md) 
 that configure the team's agile planning tools.</blockquote>
-<p>To learn more, see [Set permissions to restrict access to work items](../work/how-to/set-permissions-access-work-tracking.md-to-restrict-access-to-work-items).</p>
+<p>To learn more, see [Set permissions to restrict access to work items](../work/how-to/set-permissions-access-work-tracking.md).</p>
 
 You manage the security of each iteration path from the [web portal](../work/how-to/set-permissions-access-work-tracking.md) or using the [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#iteration-permissions). 
 Members of the Project Administrators group are automatically granted these permissions for each iteration defined for a team project. Consider granting team administrators, scrum masters, or team leads permissions to create, edit, or delete iteration nodes.

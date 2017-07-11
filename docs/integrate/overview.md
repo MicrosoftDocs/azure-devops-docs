@@ -20,7 +20,7 @@ Along with implementing Team Services' functionality in your application, you ca
 ## REST APIs
 You can leverage our REST APIs directly to interact with all areas of Team Services or TFS.
 
-You can check out the [REST API overview page](../api/overview.md) to see all of the APIs, how to use them, and samples.
+You can check out the [REST API overview page](https://visualstudio.com/api/overview.md) to see all of the APIs, how to use them, and samples.
 
 ## .NET client libraries
 For .NET developers building Windows apps and services that integrate with Visual Studio Team Services, client libraries are available for integrating with work item tracking, version control, build, and other services.These packages make it easy to acquire and redistribute the libraries needed by your app or service.

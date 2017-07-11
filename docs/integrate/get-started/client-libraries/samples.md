@@ -28,7 +28,7 @@ SOAP examples on this page require the following NuGet packages:
 * [Microsoft.VisualStudio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)
 * [Microsoft.VisualStudio.Services.InteractiveClient](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.InteractiveClient/)
 
-Review the [contracts index](../../api/contracts-page.md) to learn about the specific .Net client library contracts.
+Review the [contracts index](https://visualstudio.com/api/contracts-page.md) to learn about the specific .Net client library contracts.
 
 #### Example 1: Using a REST-based HTTP client
 

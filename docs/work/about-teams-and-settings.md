@@ -47,7 +47,7 @@ These tools reference the team's default area path, iteration path, and selected
 <div style="float:left;width:130px;margin:3px">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;font-size:90%">Scrum</p>
 - [Sprint backlogs](scrum/sprint-planning.md)    
-- [Sprint capacity](scrum/capacity-planning.md)    
+- [Sprint capacity](scale/capacity-planning.md)    
 - [Task boards](scrum/task-board.md)    
 - [Sprint burndown](scrum/sprint-burndown.md)    
 
@@ -240,6 +240,6 @@ You can use this group to filter queries. The name of team groups follows the pa
 
 Can a user account belong to more than one team?  
 
-Yes. When you add user accounts to a team project, you can add them as members of the team project, or you can add them to one or more teams added to the team project. If you work on two or more Scrum teams, you'll want to make sure you, [specify your sprint capacity for each team you work on](capacity-planning.md). 
+Yes. When you add user accounts to a team project, you can add them as members of the team project, or you can add them to one or more teams added to the team project. If you work on two or more Scrum teams, you'll want to make sure you, [specify your sprint capacity for each team you work on](scale/capacity-planning.md). 
 
 

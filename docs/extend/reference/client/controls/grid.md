@@ -34,11 +34,11 @@ require(["VSS/Controls", "VSS/Controls/Grids"], function(Controls, Grids) {
 
 ## Options
 
-[!INCLUDE [x](../api/VSS/Controls/_shared/Grids/IGridOptions.md)]
+[!INCLUDE [x](https://visualstudio.com/api/VSS/Controls/_shared/Grids/IGridOptions.md)]
 
 ## Methods
 
-[!INCLUDE [x](../api/VSS/Controls/_shared/Grids/GridO.md)]
+[!INCLUDE [x](https://visualstudio.com/api/VSS/Controls/_shared/Grids/GridO.md)]
 
 ## Q & A
 

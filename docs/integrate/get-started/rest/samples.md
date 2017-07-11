@@ -95,13 +95,13 @@ using (ProjectHttpClient projectHttpClient = new ProjectHttpClient(uri, credenti
 
 ## Work item tracking
 
-You can find the following samples and more in C# and .NET at the [work item tracking samples page](../../api/wit/samples.md).
+You can find the following samples and more in C# and .NET at the [work item tracking samples page](https://visualstudio.com/api/wit/samples.md).
 
-- [Create a bug](../../api/wit/samples.md#create-bug)
-- [Migrating work items](../../api/wit/samples.md#migrating-work-items)
-- [Update a bug](../../api/wit/samples.md#update-bug)
-- [Add a comment to a bug](../../api/wit/samples.md#add-comment-to-bug)
-- [Change a bug to a user story](../../api/wit/samples.md#change-bug-to-a-user-story)
+- [Create a bug](https://visualstudio.com/api/wit/samples.md#create-bug)
+- [Migrating work items](https://visualstudio.com/api/wit/samples.md#migrating-work-items)
+- [Update a bug](https://visualstudio.com/api/wit/samples.md#update-bug)
+- [Add a comment to a bug](https://visualstudio.com/api/wit/samples.md#add-comment-to-bug)
+- [Change a bug to a user story](https://visualstudio.com/api/wit/samples.md#change-bug-to-a-user-story)
 
 ## Projects and teams
 
@@ -127,7 +127,7 @@ A: Yes, see the [overview of client libraries](../client-libraries/dotnet.md)
 
 #### Q: Where can I learn about the specific .Net client libraries contracts?
 
-A: Review the [contracts index](../../api/contracts-page.md) to learn about the specific .Net client library contracts.
+A: Review the [contracts index](https://visualstudio.com/api/contracts-page.md) to learn about the specific .Net client library contracts.
 
 <!-- ENDSECTION --> 
 

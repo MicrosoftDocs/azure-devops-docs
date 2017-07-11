@@ -34,7 +34,7 @@ require(["VSS/Controls", "VSS/Controls/TreeView"], function(Controls, TreeView) 
 
 ## Options
 
-[!INCLUDE [x](../api/VSS/Controls/_shared/TreeView/ITreeOptions.md)]
+[!INCLUDE [x](https://visualstudio.com/api/VSS/Controls/_shared/TreeView/ITreeOptions.md)]
 
 ## Methods
-[!INCLUDE [x](../api/VSS/Controls/_shared/TreeView/TreeViewO.md)]
+[!INCLUDE [x](https://visualstudio.com/api/VSS/Controls/_shared/TreeView/TreeViewO.md)]

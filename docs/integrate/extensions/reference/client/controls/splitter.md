@@ -34,8 +34,8 @@ See [Use splitter](../../../develop/ui-controls/splittero.md) for basic usage an
 
 ## Options
 
-[!INCLUDE [x](../api/VSS/Controls/_shared/Splitter/ISplitterOptions.md)]
+[!INCLUDE [x](https://visualstudio.com/api/VSS/Controls/_shared/Splitter/ISplitterOptions.md)]
 
 ## Methods
 
-[!INCLUDE [x](../api/VSS/Controls/_shared/Splitter/SplitterO.md)]
+[!INCLUDE [x](https://visualstudio.com/api/VSS/Controls/_shared/Splitter/SplitterO.md)]
