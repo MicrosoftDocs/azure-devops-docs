@@ -108,41 +108,41 @@ The following services are available as the target of service hooks. To learn ab
 <div style="float:left;width:140px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Build & release</p>
 <ul style="padding-left:20px">
-<li style="margin-bottom:2px">[AppVeyor](../integrate/get-started/service-hooks/services/appveyor.md)</li>
-<li style="margin-bottom:2px">[Bamboo](../integrate/get-started/service-hooks/services/bamboo.md)</li>
-<li style="margin-bottom:2px">[Jenkins](../integrate/get-started/service-hooks/services/jenkins.md)s</li> 
-<li style="margin-bottom:2px">[MyGet](../integrate/get-started/service-hooks/services/myget.md)</li>
+<li style="margin-bottom:2px">[AppVeyor](integrate/get-started/service-hooks/services/appveyor.md)</li>
+<li style="margin-bottom:2px">[Bamboo](integrate/get-started/service-hooks/services/bamboo.md)</li>
+<li style="margin-bottom:2px">[Jenkins](integrate/get-started/service-hooks/services/jenkins.md)s</li> 
+<li style="margin-bottom:2px">[MyGet](integrate/get-started/service-hooks/services/myget.md)</li>
 </ul>
 </div>
 <div style="float:left;width:140px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Collaborate</p>
 <ul style="padding-left:20px">
-<li style="margin-bottom:2px">[Campfire](../integrate/get-started/service-hooks/services/campfire.md)</li>
-<li style="margin-bottom:2px">[Flowdock](../integrate/get-started/service-hooks/services/flowdock.md)</li>
-<li style="margin-bottom:2px">[HipChat](../integrate/get-started/service-hooks/services/hipchat.md)</li> 
-<li style="margin-bottom:2px">[Hubot](../integrate/get-started/service-hooks/services/hubot.md)</li> 
-<li style="margin-bottom:2px">[Slack](../integrate/get-started/service-hooks/services/slack.md)</li> 
+<li style="margin-bottom:2px">[Campfire](integrate/get-started/service-hooks/services/campfire.md)</li>
+<li style="margin-bottom:2px">[Flowdock](integrate/get-started/service-hooks/services/flowdock.md)</li>
+<li style="margin-bottom:2px">[HipChat](integrate/get-started/service-hooks/services/hipchat.md)</li> 
+<li style="margin-bottom:2px">[Hubot](integrate/get-started/service-hooks/services/hubot.md)</li> 
+<li style="margin-bottom:2px">[Slack](integrate/get-started/service-hooks/services/slack.md)</li> 
 </ul>
 </div>
 
 <div style="float:left;width:140px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Customer support</p>
 <ul style="padding-left:20px">
-<li style="margin-bottom:2px">[UserVoice](../integrate/get-started/service-hooks/services/uservoice.md)</li>
-<li style="margin-bottom:2px">[Zendesk](../integrate/get-started/service-hooks/services/zendesk.md)</li>
+<li style="margin-bottom:2px">[UserVoice](integrate/get-started/service-hooks/services/uservoice.md)</li>
+<li style="margin-bottom:2px">[Zendesk](integrate/get-started/service-hooks/services/zendesk.md)</li>
 </ul>
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Plan and track</p>
 <ul style="padding-left:20px">
-<li style="margin-bottom:2px">[Trello](../integrate/get-started/service-hooks/services/trello.md)</li> 
+<li style="margin-bottom:2px">[Trello](integrate/get-started/service-hooks/services/trello.md)</li> 
 </ul>
 </div>
 <div style="float:left;width:140px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Integrate</p>
 <ul style="padding-left:20px">
-<li style="margin-bottom:2px">[Azure Service Bus](../integrate/get-started/service-hooks/services/azure-service-bus.md)</li>
-<li style="margin-bottom:2px">[Azure Storage](../integrate/get-started/service-hooks/services/azure-storage.md)</li>
-<li style="margin-bottom:2px">[Web Hooks](../integrate/get-started/service-hooks/services/webhooks.md)</li> 
-<li style="margin-bottom:2px">[Zapier](../integrate/get-started/service-hooks/services/zapier.md)</li> 
+<li style="margin-bottom:2px">[Azure Service Bus](integrate/get-started/service-hooks/services/azure-service-bus.md)</li>
+<li style="margin-bottom:2px">[Azure Storage](integrate/get-started/service-hooks/services/azure-storage.md)</li>
+<li style="margin-bottom:2px">[Web Hooks](integrate/get-started/service-hooks/services/webhooks.md)</li> 
+<li style="margin-bottom:2px">[Zapier](integrate/get-started/service-hooks/services/zapier.md)</li> 
 </ul>
 </div>
 
@@ -150,7 +150,7 @@ The following services are available as the target of service hooks. To learn ab
 </div>
 
 
-For the lastest set of supported services, see [Integrate with service hooks](../integrate/get-started/service-hooks/get-started.md)
+For the lastest set of supported services, see [Integrate with service hooks](integrate/get-started/service-hooks/get-started.md)
 
 
 ### Cloud-hosted services based on usage   

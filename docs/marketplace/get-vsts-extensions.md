@@ -31,7 +31,7 @@ Team Services [project collection administrators or account owners](#find-owner)
 you can [request extensions](#request) instead. 
 
 Private extensions must be shared with your Team Services account to be installed. Check out the
-[publishing documentation](../../extend/publish/overview.md#upload) for information on how to share private extensions.
+[publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
 
 For paid extensions, you'll need an [Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) 
 to bill your purchase. If you don't have an Azure subscription, you can create a new subscription when you make your first purchase. 

@@ -28,7 +28,7 @@ For example, don't attempt to store telemetry data in Team Sevices.
 Don't add work items into Team Services for the sake of having them all in one place. Team Services is not designed as a data storage service. You should maintain your own data store.
 
 ##Batch your changes
-Doing single operations is slow and expensive. This the leading cause for performance issues and rate limiting. Batch your changes into a single call. See our [batch documentation](../../integrate/api/wit/batch.md) and [sample code](../../integrate/api/wit/samples.md#create-a-user-story-and-a-child-task) for guidance.
+Doing single operations is slow and expensive. This the leading cause for performance issues and rate limiting. Batch your changes into a single call. See our [batch documentation](https://visualstudio.com/integrate/api/wit/batch.md) and [sample code](https://visualstudio.com/integrate/api/wit/samples.md#create-a-user-story-and-a-child-task) for guidance.
 
 ##Limit your revisions
 Many revisions on a single work items creates bloat and causes performance problems. We recommend the following:
@@ -73,6 +73,6 @@ Limit the number of links per work item as much as possible. We recommend that y
 > We will be enforcing work item revision and link limits in the near future. These limits will be determined by performance monitoring and customer feedback.
 
 ##Queries for Reporting
-Using queries and individual get work item calls is the number one way to get rate limits enforced on your account. Don't execute queries to return large lists of work items. Use the reporting [work item links](../../integrate/api/wit/reporting-work-item-links.md) and [work item revisions](../../integrate/api/wit/reporting-work-item-revisions.md) REST API's instead.
+Using queries and individual get work item calls is the number one way to get rate limits enforced on your account. Don't execute queries to return large lists of work items. Use the reporting [work item links](https://visualstudio.com/integrate/api/wit/reporting-work-item-links.md) and [work item revisions](https://visualstudio.com/integrate/api/wit/reporting-work-item-revisions.md) REST API's instead.
 
 You can see our [C# Sample on Github](https://github.com/sferg-msft/vsts-wit-reporting-example)

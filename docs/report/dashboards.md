@@ -253,9 +253,9 @@ You add an item to the team dashboard from the code, work, and build pages.
 
 ### Extensibility 
 
-Using the REST API service, you can [add a dashboard](../../integrate/api/dashboard/dashboards.md). 
+Using the REST API service, you can [add a dashboard](https://visualstudio.com/integrate/api/dashboard/dashboards.md). 
 
-To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](../../integrate/api/dashboard/overview.md).  
+To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://visualstudio.com/integrate/api/dashboard/overview.md).  
 
 
 [!INCLUDE [temp](_shared/help-support-shared.md)]  

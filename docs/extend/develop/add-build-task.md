@@ -16,7 +16,7 @@ Custom build tasks can be contributed by extensions that can be discovered and i
 These tasks will appear next to Microsoft-provided tasks in the Add Step wizard:
 <img alt="Integrations link on the account home page" src="_img/build-task-ext-choose-task.png" style="width:80%; display:block;margin-right:auto;margin-left:auto;margin-top:10px">
 
-To learn more about the new cross-platform build system, see [Team Foundation Build](../../../docs/build/overview.md). 
+To learn more about the new cross-platform build system, see [Team Foundation Build](../..//build/overview.md). 
 
 ## Preparation and required setup for this tutorial
 In order to create extensions for Team Services, there are some prerequisite software and tools you'll need:

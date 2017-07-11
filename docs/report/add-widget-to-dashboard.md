@@ -308,7 +308,7 @@ For example, the Chart for work items widget allows you to select an area size r
 
 ### Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](../../integrate/api/dashboard/overview.md).
+Using the REST API service, you can [create a dashboard widget](../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://visualstudio.com/integrate/api/dashboard/overview.md).
 
 
 [!INCLUDE [temp](_shared/help-support-shared.md)]  

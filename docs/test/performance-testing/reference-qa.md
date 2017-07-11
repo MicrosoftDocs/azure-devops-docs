@@ -586,7 +586,7 @@ information to your REST API calls. If your call fails with a
 **VssVersionNotSpecifiedException** exception, 
 you must include **?api-version=1.0-preview.1** 
 in your REST API calls. To do this, see
-[Get started with the REST APIs](../../../integrate/get-started/rest/basics.md).
+[Get started with the REST APIs](../../integrate/get-started/rest/basics.md).
 
 ### Q: I noticed that user code fails to execute if it depends on the test names. Are test names changed when run against the service?
 

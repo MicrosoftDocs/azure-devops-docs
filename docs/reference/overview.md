@@ -152,7 +152,7 @@ ms.date: 03/02/2017
 <ul style="padding-left:20px;font-size:90%">
 <li style="margin-bottom:2px">[Marketplace](../marketplace/overview.md)</li>
 <li style="margin-bottom:2px">[Service hooks](../service-hooks/get-started.md)</li>
-<li style="margin-bottom:2px">[REST API Reference](../../integrate/api/overview.md)</li>
+<li style="margin-bottom:2px">[REST API Reference](https://visualstudio.com/integrate/api/overview.md)</li>
 <li style="margin-bottom:2px">[Extending Visual Studio TFS](https://msdn.microsoft.com/library/dd470570.aspx)</li>
 <li style="margin-bottom:2px">[API Reference for Testing Tools](https://msdn.microsoft.com/library/dd465178.aspx)</li>
 </ul>

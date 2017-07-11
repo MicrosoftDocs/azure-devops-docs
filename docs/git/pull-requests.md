@@ -148,18 +148,18 @@ A new version is added to the list in the drop-down and on the **Updates** tab e
 The diff view updates as you select different changes, showing the differences between the files in the currently selected and previous version in the pull request. 
 Catch up with a pull request after being away from it for awhile by stepping through changes made since your last review.
 
-![Show different iterations of changes in a pull request](_img/pull-requests/pull_request_view_changes.gif)
+![Show different iterations of changes in a pull request](./_img/pull-requests/pull_request_view_changes.gif)
 
 Browse a list of changes by push from the author using the **Updates** tab. You can select and view changes made in commits on the branch in the **Commits** tab.
 
 ### Leave comments
 
 Add comments to the pull request to make suggestions, reply to previous comments, and point out problems with the proposed changes. 
-Comment inline in the **Files** tab in your pull request by selecting the comment icon (![Comment icon in a pull request](_img/pull-requests/pr_comment_icon.png)).
+Comment inline in the **Files** tab in your pull request by selecting the comment icon (![Comment icon in a pull request](./_img/pull-requests/pr_comment_icon.png)).
 Leave feedback not tied to a specific code change by commenting in the **Overview** tab. 
 Reply directly to the author or other reviewers by using @_username_ and reference work items using #_workitem_ in your comments.
 
-![Reviewing comments in Team Services pull requests](_img/pull-requests/pr_comments_summary.png)
+![Reviewing comments in Team Services pull requests](./_img/pull-requests/pr_comments_summary.png)
 
 Update comment status to let reviewers know what you are doing to address the concerns brought up in their review. New comments start in **Active** status and can be updated using the 
 drop-down in the comment to:
@@ -189,7 +189,7 @@ Vote on the changes in a pull request by choosing an option from the button on t
 The number of required approvals in a pull request is set from the [branch policy](branch-policies.md) for the branch. Pull requests can be completed if the number of required approvals is met, even if other reviewers have rejected the changes.
 Votes in a pull request do not reset when new code is pushed to the branch-make sure you have [notifications](#notifications) enabled if you want to review your vote as the code changes.
 
-![List of Pull Request voters in Team Services ](_img/pull-requests/Approval.png)
+![List of Pull Request voters in Team Services ](./_img/pull-requests/Approval.png)
 
 > Best practice: At least two reviewers should review and approve the changes in a significant pull request.  
 
@@ -198,21 +198,21 @@ Votes in a pull request do not reset when new code is pushed to the branch-make 
 Update your code in response to comments by creating a new [commit](tutorial/commits.md) with the changes and [pushing](tutorial/pushing.md) the updates to the branch in your Team Services repo. 
 You can make quick updates to your branch from the **Files** tab in the **Code** view on the web.
 
-![Updating code directly during a pull request in Team Services](_img/pull-requests/pr_editing_changes.png)
+![Updating code directly during a pull request in Team Services](./_img/pull-requests/pr_editing_changes.png)
 
 ## Complete the pull request
 
 Complete your pull request after the reviewers approve of the changes by selecting **Complete** in the upper right of the pull request view, then choose **Complete** from the drop-down. 
 If you have branch policies, choose **Complete now** instead of **Auto-complete** to close the pull request if all branch policies are met. 
 
-![Complete button on the pull request view with its drop-down options](_img/pull-requests/complete_pr_options.png)
+![Complete button on the pull request view with its drop-down options](./_img/pull-requests/complete_pr_options.png)
 
 Enter the message used for the [merge commit](tutorial/merging.md) and update the pull request description as needed in the dialog that follows. 
 You can choose to [squash merge](merging-with-squash.md) your pull request and delete the source branch once the merge is complete.
 
 Linked work items will also updated showing the pull request completion.
 
-![Linked Work Items showing completed pull requests](_img/pull-requests/pr_workitem_complete.png)
+![Linked Work Items showing completed pull requests](./_img/pull-requests/pr_workitem_complete.png)
 
 ### Complete automatically
 
@@ -223,7 +223,7 @@ If there's a problem completing the pull request, you'll get an email notifying 
 Once auto-complete has been set, the pull request will display a banner confirming that the changes will be merged as soon as the policies are satisfied.
 Select **Cancel auto-complete** to turn off auto-complete and return the pull request to an active state.
 
-![A banner displays when your pull request is in auto-complete state](_img/pull-requests/pr_banner_autocomplete.png)
+![A banner displays when your pull request is in auto-complete state](./_img/pull-requests/pr_banner_autocomplete.png)
 
 ### Abandon your changes
 

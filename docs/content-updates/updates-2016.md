@@ -324,8 +324,8 @@ Go here to [download](https://www.visualstudio.com/downloads/) the latest versio
 
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Custom build task JSON schema](../../extend/develop/build-task-schema.md)</li>
-<li>[Packaging: Release views](../../integrate/api/packaging/views.md)</li>
+<li>[Custom build task JSON schema](../extend/develop/build-task-schema.md)</li>
+<li>[Packaging: Release views](https://visualstudio.com/integrate/api/packaging/views.md)</li>
 </ul>
 </td>
 <td>
@@ -334,22 +334,22 @@ Go here to [download](https://www.visualstudio.com/downloads/) the latest versio
 <ul>
 <li>[Get extensions for Team Services](../marketplace/get-vsts-extensions.md)</li>
 <li>[Buy Visual Studio subscriptions](../marketplace/vs-subscriptions/buy-vs-subscriptions.md)</li>
-<li>[Slack with Visual Studio Team Services](../../integrate/get-started/service-hooks/services/slack.md)</li>
+<li>[Slack with Visual Studio Team Services](../integrate/get-started/service-hooks/services/slack.md)</li>
 </ul>
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Catalog of tutorials for developing Team Services Extensions](../../extend/get-started/tutorials.md)</li>
-<li>[Get started with the REST APIs](../../integrate/get-started/rest/basics.md)</li>
-<li>[Get a list of classification nodes](../../integrate/api/wit/classification-nodes.md)</li>
-<li>[Get a list of test configurations](../../integrate/api/test/configurations.md)</li>
-<li>[Get started sample](../../integrate/get-started/rest/samples.md)</li>
-<li>[Processes](../../integrate/api/tfs/processes.md)</li>
-<li>[Team projects](../../integrate/api/tfs/projects.md)</li>
-<li>[Teams](../../integrate/api/tfs/teams.md)</li>
-<li>[Work items](../../integrate/api/wit/work-items.md)</li>
-<li>[Work item tracking samples](../../integrate/api/wit/samples.md)</li>
-<li>[Work item query language](../../integrate/api/wit/wiql.md)</li>
-<li>[Work item form service](../../extend/reference/client/api/TFS/WorkItemTracking/Services/WorkItemFormService.md)</li>
+<li>[Catalog of tutorials for developing Team Services Extensions](../extend/get-started/tutorials.md)</li>
+<li>[Get started with the REST APIs](../integrate/get-started/rest/basics.md)</li>
+<li>[Get a list of classification nodes](https://visualstudio.com/integrate/api/wit/classification-nodes.md)</li>
+<li>[Get a list of test configurations](https://visualstudio.com/integrate/api/test/configurations.md)</li>
+<li>[Get started sample](../integrate/get-started/rest/samples.md)</li>
+<li>[Processes](https://visualstudio.com/integrate/api/tfs/processes.md)</li>
+<li>[Team projects](https://visualstudio.com/integrate/api/tfs/projects.md)</li>
+<li>[Teams](https://visualstudio.com/integrate/api/tfs/teams.md)</li>
+<li>[Work items](https://visualstudio.com/integrate/api/wit/work-items.md)</li>
+<li>[Work item tracking samples](https://visualstudio.com/integrate/api/wit/samples.md)</li>
+<li>[Work item query language](https://visualstudio.com/integrate/api/wit/wiql.md)</li>
+<li>[Work item form service](../extend/reference/client/api/TFS/WorkItemTracking/Services/WorkItemFormService.md)</li>
 </ul>
 </td>
 </tr>
@@ -499,8 +499,8 @@ Go here to [download](https://www.visualstudio.com/downloads/) the latest versio
 
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Work item tracking samples](../../integrate/api/tfs/samples.md)</li>
-<li>[npm](../../integrate/api/packaging/npm.md)</li>
+<li>[Work item tracking samples](https://visualstudio.com/integrate/api/tfs/samples.md)</li>
+<li>[npm](https://visualstudio.com/integrate/api/packaging/npm.md)</li>
 <li>[How to use Test Step using REST Client Helper?](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/02/how-to-use-test-step-using-rest-client-helper/) <i>(blog post)</i></li>
 </ul>
 </td>
@@ -700,8 +700,8 @@ Go here to [download](https://www.visualstudio.com/downloads/) the latest versio
 </ul>
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Work item tracking samples](../../integrate/api/wit/samples.md)</li>
-<li>[Work item templates](../../integrate/api/wit/templates.md)</li>
+<li>[Work item tracking samples](https://visualstudio.com/integrate/api/wit/samples.md)</li>
+<li>[Work item templates](https://visualstudio.com/integrate/api/wit/templates.md)</li>
 </ul>
 </td>
 </tr>
@@ -893,8 +893,8 @@ Go here to [download](https://www.visualstudio.com/downloads/) the latest versio
 
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Add extensions in work item form via work item type definition xml](../../extend/develop/configure-workitemform-extensions.md)</li>
-<li>[Add a custom control to the work item form](../../extend/develop/custom-control.md)</li>
+<li>[Add extensions in work item form via work item type definition xml](../extend/develop/configure-workitemform-extensions.md)</li>
+<li>[Add a custom control to the work item form](../extend/develop/custom-control.md)</li>
 
 </ul>
 
@@ -903,10 +903,10 @@ Go here to [download](https://www.visualstudio.com/downloads/) the latest versio
 <td>
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Extension manifest reference](../../extend/develop/manifest.md)</li>
-<li>[Work item tracking samples](../../integrate/api/wit/samples.md)</li>
-<li>[Extend the work item form](../../extend/develop/add-workitem-extension.md)</li>
-<li>[Team Services service hooks events](../../integrate/get-started/service-hooks/events.md)</li>
+<li>[Extension manifest reference](../extend/develop/manifest.md)</li>
+<li>[Work item tracking samples](https://visualstudio.com/integrate/api/wit/samples.md)</li>
+<li>[Extend the work item form](../extend/develop/add-workitem-extension.md)</li>
+<li>[Team Services service hooks events](../integrate/get-started/service-hooks/events.md)</li>
 
 </ul>
 </td>
@@ -1127,8 +1127,8 @@ Go here to [download](https://www.visualstudio.com/downloads/) the latest versio
 
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Work item templates](../../integrate/api/wit/templates.md)</li>
-<li>[Add panels on backlog pages](../../extend/develop/add-backlog-panel.md)</li>  
+<li>[Work item templates](https://visualstudio.com/integrate/api/wit/templates.md)</li>
+<li>[Add panels on backlog pages](../extend/develop/add-backlog-panel.md)</li>  
 </ul>
 </td>
 <td>
@@ -1137,14 +1137,14 @@ Go here to [download](https://www.visualstudio.com/downloads/) the latest versio
 <ul>
 <li>[Get extensions for Team Services](../marketplace/get-vsts-extensions.md)</li>
 <li>[Get extensions for TFS](../marketplace/get-tfs-extensions.md)</li>
-<li>[Auth and security](../../extend/develop/auth.md)</li>
-<li>[Extend the work item form](../../extend/develop/add-workitem-extension.md)</li>
-<li>[Extension points](../../extend/reference/targets/overview.md)</li>
+<li>[Auth and security](../extend/develop/auth.md)</li>
+<li>[Extend the work item form](../extend/develop/add-workitem-extension.md)</li>
+<li>[Extension points](../extend/reference/targets/overview.md)</li>
 </ul>
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Work item tracking samples](../../integrate/api/wit/samples.md)</li>
-<li>[Git commits](../../integrate/api/git/commits.md)</li></ul>
+<li>[Work item tracking samples](https://visualstudio.com/integrate/api/wit/samples.md)</li>
+<li>[Git commits](https://visualstudio.com/integrate/api/git/commits.md)</li></ul>
 </td>
 </tr>
 </table>
@@ -1329,10 +1329,10 @@ Go here to [download](https://www.visualstudio.com/downloads/) the latest versio
 
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Get started sample](../../integrate/get-started/rest/samples.md)</li>
-<li>[Work item tracking](../../integrate/api/wit/samples.md)</li>
-<li>[Result retention settings](../../integrate/api/test/resultretentionsettings.md)</li>
-<li>[Results (1.0)](../../integrate/api/test/results_1_0.md)</li>
+<li>[Get started sample](../integrate/get-started/rest/samples.md)</li>
+<li>[Work item tracking](https://visualstudio.com/integrate/api/wit/samples.md)</li>
+<li>[Result retention settings](https://visualstudio.com/integrate/api/test/resultretentionsettings.md)</li>
+<li>[Results (1.0)](https://visualstudio.com/integrate/api/test/results_1_0.md)</li>
 </ul>
 </td>
 <td>
@@ -1340,15 +1340,15 @@ Go here to [download](https://www.visualstudio.com/downloads/) the latest versio
 <p><b><i>Marketplace </i></b></p>
 <ul>
 <li>[Get extensions for Team Foundation Server](../marketplace/get-tfs-extensions.md)</li>
-<li>[Extensions overview](../../extend/overview.md)</li>
-<li>[Build your first extension](../../extend/get-started/node.md)</li>
-<li>[Add a new service endpoint](../../extend/develop/service-endpoints.md)</li>
+<li>[Extensions overview](../extend/overview.md)</li>
+<li>[Build your first extension](../extend/get-started/node.md)</li>
+<li>[Add a new service endpoint](../extend/develop/service-endpoints.md)</li>
 </ul>
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Test attachments](../../integrate/api/test/attachments.md)</li>
-<li>[Test results](../../integrate/api/test/results.md)</li>
-<li>[Test runs](../../integrate/api/test/runs.md)</li>
+<li>[Test attachments](https://visualstudio.com/integrate/api/test/attachments.md)</li>
+<li>[Test results](https://visualstudio.com/integrate/api/test/results.md)</li>
+<li>[Test runs](https://visualstudio.com/integrate/api/test/runs.md)</li>
 </ul>
 </td>
 </tr>
@@ -1547,7 +1547,7 @@ Go here to [download](https://www.visualstudio.com/downloads/) the latest versio
 
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Test suite entries](../../integrate/api/test/suite-entries.md)</li>
+<li>[Test suite entries](https://visualstudio.com/integrate/api/test/suite-entries.md)</li>
 </ul>
 </td>
 <td>
@@ -1561,12 +1561,12 @@ Go here to [download](https://www.visualstudio.com/downloads/) the latest versio
 </ul>
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Create your first extension for Visual Studio Team Services](../../extend/get-started/node.md)</li>
-<li>[Overview of extensions for Visual Studio Team Services](../../extend/overview.md)</li>
-<li>[Service endpoints in Team Services](../../extend/develop/service-endpoints.md)</li>
-<li>[Use the splitter control](../../extend/develop/ui-controls/splittero.md)</li>
-<li>[Packaging permissions](../../integrate/api/packaging/permissions.md)</li>
-<li>[Process Configuration](../../integrate/api/work/process-configuration.md)</li>
+<li>[Create your first extension for Visual Studio Team Services](../extend/get-started/node.md)</li>
+<li>[Overview of extensions for Visual Studio Team Services](../extend/overview.md)</li>
+<li>[Service endpoints in Team Services](../extend/develop/service-endpoints.md)</li>
+<li>[Use the splitter control](../extend/develop/ui-controls/splittero.md)</li>
+<li>[Packaging permissions](https://visualstudio.com/integrate/api/packaging/permissions.md)</li>
+<li>[Process Configuration](https://visualstudio.com/integrate/api/work/process-configuration.md)</li>
 </ul>
 </td>
 </tr>
@@ -1720,8 +1720,8 @@ Visual Studio 2015 Update 3 and TFS 2015 Update 3 have been released. Go to the 
 </ul>
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Test sessions](../../integrate/api/test/sessions.md)</li>
-<li>[Feed polling](../../integrate/api/packaging/polling.md)</li>
+<li>[Test sessions](https://visualstudio.com/integrate/api/test/sessions.md)</li>
+<li>[Feed polling](https://visualstudio.com/integrate/api/packaging/polling.md)</li>
 </ul>
 <p><b><i>Marketplace&#160;(blog posts)</i></b></p>
 <ul>
@@ -1876,7 +1876,7 @@ Visual Studio 2015 Update 3 and TFS 2015 Update 3 have been released. Go to the 
 <td>
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Process configuration](../../integrate/api/work/process-configuration.md)</li>
+<li>[Process configuration](https://visualstudio.com/integrate/api/work/process-configuration.md)</li>
 </ul>
 <p><b><i>Marketplace (blog posts)</i></b></p>
 <ul>
@@ -1890,10 +1890,10 @@ Visual Studio 2015 Update 3 and TFS 2015 Update 3 have been released. Go to the 
 <td>
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Team Services service hooks events](../../integrate/get-started/service-hooks/events.md)</li>
-<li>[Dashboards and widgets](../../integrate/api/dashboard/overview.md)</li>
-<li>[Dashboards](../../integrate/api/dashboard/dashboards.md)</li>
-<li>[Widgets](../../integrate/api/dashboard/widgets.md)</li>
+<li>[Team Services service hooks events](../integrate/get-started/service-hooks/events.md)</li>
+<li>[Dashboards and widgets](https://visualstudio.com/integrate/api/dashboard/overview.md)</li>
+<li>[Dashboards](https://visualstudio.com/integrate/api/dashboard/dashboards.md)</li>
+<li>[Widgets](https://visualstudio.com/integrate/api/dashboard/widgets.md)</li>
 </ul>
 </td>
 </tr>
@@ -2017,9 +2017,9 @@ Visual Studio 2015 Update 3 and TFS 2015 Update 3 have been released. Go to the 
 </ul>
 <p><b><i>REST API </i></b></p>
 <ul>
-<li>[Dashboards and widgets](../../integrate/api/dashboard/overview.md)</li>
-<li>[Dashboards](../../integrate/api/dashboard/dashboards.md)</li>
-<li>[Widgets](../../integrate/api/dashboard/widgets.md)</li>
+<li>[Dashboards and widgets](https://visualstudio.com/integrate/api/dashboard/overview.md)</li>
+<li>[Dashboards](https://visualstudio.com/integrate/api/dashboard/dashboards.md)</li>
+<li>[Widgets](https://visualstudio.com/integrate/api/dashboard/widgets.md)</li>
 </ul>
 </td>
 <td>
@@ -2462,7 +2462,7 @@ Visual Studio 2015 Update 2 and TFS 2015 Update 2 have been released. Go to the 
 <td>
 
 <ul>
-<li>[Extension samples](../../extend/develop/samples-overview.md)<br/></li>
+<li>[Extension samples](../extend/develop/samples-overview.md)<br/></li>
 <li>[Get extensions for TFS](https://www.visualstudio.com/get-started/marketplace/get-tfs-extensions)<br/></li>
 </ul>
 <br/>

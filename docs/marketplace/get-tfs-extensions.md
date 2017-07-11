@@ -548,7 +548,7 @@ where you want to install the extension.
 A: Some extensions work only with Visual Studio Team Services, not TFS, for one of these reasons:
 
 - The extension uses Team Services features that aren't released yet for TFS.
-- The [extension manifest](../../extend/develop/manifest.md) indicates that the extension 
+- The [extension manifest](../extend/develop/manifest.md) indicates that the extension 
 is available only for Team Services (targets = Microsoft.Visualstudio.Services.Cloud).
 - The extension manifest indicates that the extension is an integration (targets = Microsoft.Visualstudio.Services.Integration).
 

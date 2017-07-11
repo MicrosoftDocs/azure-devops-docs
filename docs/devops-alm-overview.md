@@ -296,22 +296,22 @@ With Marketplace extensions (currently in private preview), you can create first
 <div style="float:left;width:170px;margin:6px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Service hooks</p>
 <ul style="padding-left:20px">
-<li style="margin-bottom:2px">[Using service hooks](../integrate/get-started/service-hooks/get-started.md)</li>
-<li style="margin-bottom:2px">[Authorize](../integrate/get-started/service-hooks/authorize.md)</li>
-<li style="margin-bottom:2px">[Create subscriptions](../integrate/get-started/service-hooks/create-subscription.md)</li>
-<li style="margin-bottom:2px">[Service hook consumers](../integrate/get-started/service-hooks/consumers.md)</li>
-<li style="margin-bottom:2px">[Service hook events](../integrate/get-started/service-hooks/events.md)</li>
+<li style="margin-bottom:2px">[Using service hooks](integrate/get-started/service-hooks/get-started.md)</li>
+<li style="margin-bottom:2px">[Authorize](integrate/get-started/service-hooks/authorize.md)</li>
+<li style="margin-bottom:2px">[Create subscriptions](integrate/get-started/service-hooks/create-subscription.md)</li>
+<li style="margin-bottom:2px">[Service hook consumers](integrate/get-started/service-hooks/consumers.md)</li>
+<li style="margin-bottom:2px">[Service hook events](integrate/get-started/service-hooks/events.md)</li>
 </ul>
 </div>
 
 <div style="float:left;width:170px;margin:6px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">REST APIs</p>
 <ul style="padding-left:20px">
-<li style="margin-bottom:2px">[Get started with REST APIs](../integrate/get-started/rest/basics.md)</li>
-<li style="margin-bottom:2px">[Choosing the right authentication mechanism](../integrate/get-started/authentication/authentication_guidance.md)</li>
-<li style="margin-bottom:2px">[.NET client libraries](../integrate/get-started/client-libraries/dotnet.md)</li>
-<li style="margin-bottom:2px">[C# client library samples](../integrate/get-started/client-libraries/samples.md)</li>
-<li style="margin-bottom:2px">[REST API Reference](../integrate/api/overview.md)</li>
+<li style="margin-bottom:2px">[Get started with REST APIs](integrate/get-started/rest/basics.md)</li>
+<li style="margin-bottom:2px">[Choosing the right authentication mechanism](integrate/get-started/authentication/authentication_guidance.md)</li>
+<li style="margin-bottom:2px">[.NET client libraries](integrate/get-started/client-libraries/dotnet.md)</li>
+<li style="margin-bottom:2px">[C# client library samples](integrate/get-started/client-libraries/samples.md)</li>
+<li style="margin-bottom:2px">[REST API Reference](integrate/api/overview.md)</li>
 </ul>
 </div>
 

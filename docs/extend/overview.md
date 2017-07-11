@@ -13,7 +13,7 @@ ms.date: 08/23/2016
 
 >[!NOTE]
 > This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, 
-> visit the [Marketplace documentation](../docs/marketplace/extend-overview.md).
+> visit the [Marketplace documentation](../marketplace/extend-overview.md).
 
 
 ## Ways to integrate with Team Services
@@ -122,7 +122,7 @@ You can leverage our REST APIs to interact with all areas of Team Services or TF
 
 <div style="clear:both"></div>
 
-You can check out the [REST API overview page](../integrate/api/overview.md) to see all of the APIs, how to use them, and samples.
+You can check out the [REST API overview page](integrate/api/overview.md) to see all of the APIs, how to use them, and samples.
 
 ### .NET client libraries
 
@@ -139,7 +139,7 @@ Explore the [.NET client library overview](../get-started/client-libraries/dotne
 
 Extensions are simple add-ons that can be used to customize and extend your DevOps experience with Team Services. 
 They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.
-They utilize our [RESTful API Library](../integrate/api/overview.md) in order to easily interact with Team Services and applications/services.
+They utilize our [RESTful API Library](integrate/api/overview.md) in order to easily interact with Team Services and applications/services.
 The [Visual Studio Marketplace](https://marketplace.visualstudio.com/VSTS) is where extensions are published, 
 where they can be kept privately for you and your team or shared with the millions of developers currently using Team Services. 
 
@@ -213,36 +213,36 @@ Integrating with many third party services such as Slack, Trello, and Jenkins is
 </thead>
 <tbody>
     <tr>
-        <td>[AppVeyor](../docs/marketplace/integrate/service-hooks/services/appveyor.md)</td>
-        <td>[Campfire](../docs/marketplace/integrate/service-hooks/services/campfire.md)</td>
-		<td>[UserVoice](../docs/marketplace/integrate/service-hooks/services/uservoice.md)</td>
-		<td>[Trello](../docs/marketplace/integrate/service-hooks/services/trello.md)</td>
-		<td>[Azure Service Bus](../docs/marketplace/integrate/service-hooks/services/azure-service-bus.md)</td>
+        <td>[AppVeyor](../marketplace/integrate/service-hooks/services/appveyor.md)</td>
+        <td>[Campfire](../marketplace/integrate/service-hooks/services/campfire.md)</td>
+		<td>[UserVoice](../marketplace/integrate/service-hooks/services/uservoice.md)</td>
+		<td>[Trello](../marketplace/integrate/service-hooks/services/trello.md)</td>
+		<td>[Azure Service Bus](../marketplace/integrate/service-hooks/services/azure-service-bus.md)</td>
     </tr>
 	<tr>
-		<td>[Bamboo](../docs/marketplace/integrate/service-hooks/services/bamboo.md)</td>
-		<td>[Flowdock](../docs/marketplace/integrate/service-hooks/services/flowdock.md)</td>
-		<td>[Zendesk](../docs/marketplace/integrate/service-hooks/services/zendesk.md) </td>
+		<td>[Bamboo](../marketplace/integrate/service-hooks/services/bamboo.md)</td>
+		<td>[Flowdock](../marketplace/integrate/service-hooks/services/flowdock.md)</td>
+		<td>[Zendesk](../marketplace/integrate/service-hooks/services/zendesk.md) </td>
 		<td></td>
-		<td>[Azure Storage](../docs/marketplace/integrate/service-hooks/services/azure-storage.md)</td>
+		<td>[Azure Storage](../marketplace/integrate/service-hooks/services/azure-storage.md)</td>
 	</tr>
 	<tr>
-		<td>[Jenkins](../docs/marketplace/integrate/service-hooks/services/jenkins.md)</td>
-		<td>[HipChat](../docs/marketplace/integrate/service-hooks/services/hipchat.md)</td>
+		<td>[Jenkins](../marketplace/integrate/service-hooks/services/jenkins.md)</td>
+		<td>[HipChat](../marketplace/integrate/service-hooks/services/hipchat.md)</td>
 		<td></td>
 		<td></td>
-		<td>[Web Hooks](../docs/marketplace/integrate/service-hooks/services/webhooks.md)</td>
+		<td>[Web Hooks](../marketplace/integrate/service-hooks/services/webhooks.md)</td>
 	</tr>
 	<tr>
-		<td>[MyGet](../docs/marketplace/integrate/service-hooks/services/myget.md)</td>
-		<td>[Hubot](../docs/marketplace/integrate/service-hooks/services/hubot.md)</td>
+		<td>[MyGet](../marketplace/integrate/service-hooks/services/myget.md)</td>
+		<td>[Hubot](../marketplace/integrate/service-hooks/services/hubot.md)</td>
 		<td></td>
 		<td></td>
-		<td>[Zapier](../docs/marketplace/integrate/service-hooks/services/zapier.md)</td>
+		<td>[Zapier](../marketplace/integrate/service-hooks/services/zapier.md)</td>
 	</tr>
 	<tr>
 		<td></td>
-		<td>[Slack](../docs/marketplace/integrate/service-hooks/services/slack.md)</td>
+		<td>[Slack](../marketplace/integrate/service-hooks/services/slack.md)</td>
 		<td></td>
 		<td></td>
 		<td></td>
@@ -256,5 +256,5 @@ Integrating with many third party services such as Slack, Trello, and Jenkins is
 
 <div style="clear:both"></div>
 
-Find out more about integrating with third party services on our [service hooks documentation page](../docs/marketplace/integrate/service-hooks/get-started.md).
+Find out more about integrating with third party services on our [service hooks documentation page](../marketplace/integrate/service-hooks/get-started.md).
 

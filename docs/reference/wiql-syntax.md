@@ -15,7 +15,7 @@ ms.date: 05/10/2017
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
-You can use the WIQL syntax to [construct a query that you submit from a web browser](../work/track/using-queries.md#define-query-hyperlink) or using the [Work Item Query Language (REST API)](../../integrate/api/wit/wiql.md).  
+You can use the WIQL syntax to [construct a query that you submit from a web browser](../work/track/using-queries.md#define-query-hyperlink) or using the [Work Item Query Language (REST API)](https://visualstudio.com/integrate/api/wit/wiql.md).  
 
 A query defined using the Work Item Query Language (WIQL) consists of a `SELECT` statement that lists the fields to be returned as columns in the result set. You can further qualify the result set by using a logical expression. You can specify a sort order. Use an `ASOF` clause to state that a query is evaluated as of a previous time.
 
@@ -444,7 +444,7 @@ https://msdn.microsoft.com/library/bb130306.aspx
 
 - [Query fields, operators, values, and variables](../work/track/query-operators-variables.md)  
 - [Field data types and attributes](../work/reference/define-modify-work-item-fields.md) 
-- [Work item query language (REST API)](../../integrate/api/wit/wiql.md)  
+- [Work item query language (REST API)](https://visualstudio.com/integrate/api/wit/wiql.md)  
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
 
 ### Limits on WIQL length  

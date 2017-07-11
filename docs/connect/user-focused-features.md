@@ -84,7 +84,7 @@ With user-focused features, you gain quick access to the work you're most intere
 <ul style="padding-left:30px">
 <li style="margin-bottom:2px">[Personal access tokens](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) (TFS 2017)</li>
 <li style="margin-bottom:2px">[Alternate authentication credentials](../git/auth-overview.md#alternate-credentials)</li>
-<li style="margin-bottom:2px">[OAuth authorizations](../../integrate/get-started/Authentication/oauth.md)</li>
+<li style="margin-bottom:2px">[OAuth authorizations](../integrate/get-started/Authentication/oauth.md)</li>
 <li style="margin-bottom:2px">[SSH public keys](../git/use-ssh-keys-to-authenticate.md) (TFS 2017)</li>
 </ul>
 </div>

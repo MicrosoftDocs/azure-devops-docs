@@ -178,7 +178,7 @@ and [Provide stakeholder feedback](stakeholder/provide-stakeholder-feedback.md).
 
 * **End to End Traceability**. Team Services and Team Foundation Server provide [end-to-end traceability of your requirements, builds, tests and bugs](../../work/track/link-work-items-support-traceability.md). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
 
-* **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend Team Services and Team Foundation Server](../../../integrate/get-started/overview.md). Use the [REST APIs](../../../integrate/get-started/rest/basics.md) and [contribution model](../../../extend/develop/contributions-overview.md) available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
+* **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend Team Services and Team Foundation Server](../../integrate/get-started/overview.md). Use the [REST APIs](../../integrate/get-started/rest/basics.md) and [contribution model](../../../extend/develop/contributions-overview.md) available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
 
 ## Additional resources
 

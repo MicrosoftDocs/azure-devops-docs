@@ -13,7 +13,7 @@ ms.date: 08/23/2016
 
 >[!NOTE]
 > This area covers installing extensions from the Marketplace and integrating Team Services with other services such as Slack and Jenkins. 
-> To find information about developing your own custom extensions, check out the [Extension Development Documentation](../../extend/overview.md).
+> To find information about developing your own custom extensions, check out the [Extension Development Documentation](../extend/overview.md).
 
 Extending Visual Studio Team Services is the easiest way for users to get the most out of their 
 devops environment. The [Visual Studio Marketplace](https://marketplace.visualstudio.com) is home to hundreds of extensions

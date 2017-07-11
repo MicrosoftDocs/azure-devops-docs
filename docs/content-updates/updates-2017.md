@@ -269,7 +269,7 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 <p><b><i>REST APIs/Extensions </i></b></p>
 <ul>
 <li>[Extension Statistics Power BI Content pack](../marketplace/extension-statistics-powerbi-contentpack.md)</li>
-<li>[Release API Contracts](../../integrate/api/rm/contracts.md)</li>
+<li>[Release API Contracts](https://visualstudio.com/integrate/api/rm/contracts.md)</li>
 </ul>
 
 </td>
@@ -285,21 +285,21 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 
 <p><b><i>REST APIs/Extensions </i></b></p>
 <ul>
-<li>[Attachments](../../integrate/api/wit/attachments.md)</li>
-<li>[Authorize access to REST APIs with OAuth 2.0](../../integrate/get-started/authentication/oauth.md)</li>
-<li>[Categories of work item types](../../integrate/api/wit/categories.md)</li>
+<li>[Attachments](https://visualstudio.com/integrate/api/wit/attachments.md)</li>
+<li>[Authorize access to REST APIs with OAuth 2.0](../integrate/get-started/authentication/oauth.md)</li>
+<li>[Categories of work item types](https://visualstudio.com/integrate/api/wit/categories.md)</li>
 <li>[Extension reporting hub](../marketplace/extension-report.md)</li>
-<li>[Project collections](../../integrate/api/tfs/project-collections.md)</li>
-<li>[Recycle bin](../../integrate/api/wit/recycle-bin.md)</li>
-<li>[Release approvals](../../integrate/api/rm/approvals.md)</li>
-<li>[Team settings](../../integrate/api/work/team-settings.md)</li>
-<li>[Test points](../../integrate/api/test/points.md)</li>
-<li>[Work item classification nodes](../../integrate/api/wit/classification-nodes.md)</li>
-<li>[Work item fields](../../integrate/api/wit/fields.md)</li>
-<li>[Work items](../../integrate/api/wit/work-items.md)</li>
-<li>[Work item form service](../../extend/reference/client/api/TFS/WorkItemTracking/Services/WorkItemFormService.md)</li>
-<li>[Work item form navigation service](../..//extend/reference/client/api/TFS/WorkItemTracking/Services/WorkItemFormNavigationService.md)</li>
-<li>[Write your first extension for Visual Studio Team Services](../../extend/get-started/node.md)</li>
+<li>[Project collections](https://visualstudio.com/integrate/api/tfs/project-collections.md)</li>
+<li>[Recycle bin](https://visualstudio.com/integrate/api/wit/recycle-bin.md)</li>
+<li>[Release approvals](https://visualstudio.com/integrate/api/rm/approvals.md)</li>
+<li>[Team settings](https://visualstudio.com/integrate/api/work/team-settings.md)</li>
+<li>[Test points](https://visualstudio.com/integrate/api/test/points.md)</li>
+<li>[Work item classification nodes](https://visualstudio.com/integrate/api/wit/classification-nodes.md)</li>
+<li>[Work item fields](https://visualstudio.com/integrate/api/wit/fields.md)</li>
+<li>[Work items](https://visualstudio.com/integrate/api/wit/work-items.md)</li>
+<li>[Work item form service](../extend/reference/client/api/TFS/WorkItemTracking/Services/WorkItemFormService.md)</li>
+<li>[Work item form navigation service](../extendreference/client/api/TFS/WorkItemTracking/Services/WorkItemFormNavigationService.md)</li>
+<li>[Write your first extension for Visual Studio Team Services](../extend/get-started/node.md)</li>
 
 </ul>
 
@@ -588,17 +588,17 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 
 <p><b><i>REST APIs/Extensions </i></b></p>
 <ul>
-<li>[.NET client libraries for VSTS & TFS)](../../integrate/get-started/client-libraries/dotnet.md)</li>
-<li>[Extension manifest reference](../../extend/develop/manifest.md)</li>
-<li>[Git branch statistics](../../integrate/api/git/stats.md)</li>
-<li>[Git commits](../../integrate/api/git/commits.md)</li>
-<li>[Processes](../../integrate/api/tfs/processes.md)</li>
-<li>[Projects](../../integrate/api/tfs/projects.md)</li>
-<li>[Teams](../../integrate/api/tfs/teams.md)</li>
-<li>[Test cases](../../integrate/api/test/cases.md)</li>
-<li>[Test plans](../../integrate/api/test/plans.md)</li>
-<li>[Work item tracking artifact uri query](../../integrate/api/wit/artifacturiquery.md)</li>
-<li>[Work item tracking artifact link types](../../integrate/api/wit/artifactlinktypes.md)</li>
+<li>[.NET client libraries for VSTS & TFS)](../integrate/get-started/client-libraries/dotnet.md)</li>
+<li>[Extension manifest reference](../extend/develop/manifest.md)</li>
+<li>[Git branch statistics](https://visualstudio.com/integrate/api/git/stats.md)</li>
+<li>[Git commits](https://visualstudio.com/integrate/api/git/commits.md)</li>
+<li>[Processes](https://visualstudio.com/integrate/api/tfs/processes.md)</li>
+<li>[Projects](https://visualstudio.com/integrate/api/tfs/projects.md)</li>
+<li>[Teams](https://visualstudio.com/integrate/api/tfs/teams.md)</li>
+<li>[Test cases](https://visualstudio.com/integrate/api/test/cases.md)</li>
+<li>[Test plans](https://visualstudio.com/integrate/api/test/plans.md)</li>
+<li>[Work item tracking artifact uri query](https://visualstudio.com/integrate/api/wit/artifacturiquery.md)</li>
+<li>[Work item tracking artifact link types](https://visualstudio.com/integrate/api/wit/artifactlinktypes.md)</li>
 </ul>
 
 
@@ -868,8 +868,8 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 
 <p><b><i>REST APIs/Extensions </i></b></p>
 <ul>
-<li>[Notification contracts](../../integrate/api/notification/contracts.md)</li>
-<li>[Notification subscriptions](../../integrate/api/notification/subscriptions.md)</li> 
+<li>[Notification contracts](https://visualstudio.com/integrate/api/notification/contracts.md)</li>
+<li>[Notification subscriptions](https://visualstudio.com/integrate/api/notification/subscriptions.md)</li> 
 </ul>
 
 
@@ -1138,7 +1138,7 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 
 <p><b><i>REST APIs/Extensions </i></b></p>
 <ul>
-<li>[Maven](../../integrate/api/packaging/maven.md)</li>
+<li>[Maven](https://visualstudio.com/integrate/api/packaging/maven.md)</li>
 </ul>
 </td>
 
@@ -1154,7 +1154,7 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 
 <p><b><i>REST APIs/Extensions </i></b></p>
 <ul>
-<li>[Notification API Contracts](../../integrate/api/notification/contracts.md)</li>
+<li>[Notification API Contracts](https://visualstudio.com/integrate/api/notification/contracts.md)</li>
 </ul>
 
 
@@ -1393,15 +1393,15 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 <p><b><i>REST APIs/Extensions </i></b></p>
 <ul>
 
-<li>[Add extensions in work item form via work item type definition xml](../../extend/develop/configure-workitemform-extensions.md)</li>
-<li>[Delivery timeline](../../integrate/api/work/delivery-timeline.md)</li>
-<li>[Plans](../../integrate/api/work/plans.md)</li>
-<li>[Notification overview](../../integrate/api/notification/overview.md)</li>
-<li>[Notification contracts](../../integrate/api/notification/contracts.md)</li>
-<li>[Notification event types](../../integrate/api/notification/eventtypes.md)</li>
-<li>[Notification subscriptions](../../integrate/api/notification/subscriptions.md)</li>
-<li>[Tokens (security)](../../integrate/api/security/tokens.md)</li>
-<li>[Use the TFS Cross Platform Command Line with TFS using basic authentication](../../integrate/get-started/auth/tfs-basic-auth.md)</li>
+<li>[Add extensions in work item form via work item type definition xml](../extend/develop/configure-workitemform-extensions.md)</li>
+<li>[Delivery timeline](https://visualstudio.com/integrate/api/work/delivery-timeline.md)</li>
+<li>[Plans](https://visualstudio.com/integrate/api/work/plans.md)</li>
+<li>[Notification overview](https://visualstudio.com/integrate/api/notification/overview.md)</li>
+<li>[Notification contracts](https://visualstudio.com/integrate/api/notification/contracts.md)</li>
+<li>[Notification event types](https://visualstudio.com/integrate/api/notification/eventtypes.md)</li>
+<li>[Notification subscriptions](https://visualstudio.com/integrate/api/notification/subscriptions.md)</li>
+<li>[Tokens (security)](https://visualstudio.com/integrate/api/security/tokens.md)</li>
+<li>[Use the TFS Cross Platform Command Line with TFS using basic authentication](../integrate/get-started/auth/tfs-basic-auth.md)</li>
 </ul>
 </td>
 
@@ -1415,12 +1415,12 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 
 <p><b><i>REST APIs/Extensions </i></b></p>
 <ul>
-<li>[Overview of integrating with Visual Studio Team Services](../../extend/overview.md)</li>
-<li>[Git repositories](../../integrate/api/git/repositories.md)</li>
-<li>[Extension manifest reference](../../extend/develop/manifest.md)</li>
-<li>[Package and publish an integration to the Marketplace](../../extend/publish/integration.md)</li>
-<li>[npm](../../integrate/api/packaging/npm.md)</li>
-<li>[Visual update to dashboard widget tutorial](../../extend/develop/add-dashboard-widget.md)</li>
+<li>[Overview of integrating with Visual Studio Team Services](../extend/overview.md)</li>
+<li>[Git repositories](https://visualstudio.com/integrate/api/git/repositories.md)</li>
+<li>[Extension manifest reference](../extend/develop/manifest.md)</li>
+<li>[Package and publish an integration to the Marketplace](../extend/publish/integration.md)</li>
+<li>[npm](https://visualstudio.com/integrate/api/packaging/npm.md)</li>
+<li>[Visual update to dashboard widget tutorial](../extend/develop/add-dashboard-widget.md)</li>
 </ul>
 </td>
 </tr>
@@ -1696,11 +1696,11 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Security overview](../../integrate/api/security/overview.md)
-<li>[Security namespaces](../../integrate/api/security/securitynamespaces.md)
-<li>[Access Control Lists (ACLs)](../../integrate/api/security/acls.md)
-<li>[Access Control Entries (ACEs)](../../integrate/api/security/aces.md)
-<li>[(Security) permissions](../../integrate/api/security/permissions.md)
+<li>[Security overview](https://visualstudio.com/integrate/api/security/overview.md)
+<li>[Security namespaces](https://visualstudio.com/integrate/api/security/securitynamespaces.md)
+<li>[Access Control Lists (ACLs)](https://visualstudio.com/integrate/api/security/acls.md)
+<li>[Access Control Entries (ACEs)](https://visualstudio.com/integrate/api/security/aces.md)
+<li>[(Security) permissions](https://visualstudio.com/integrate/api/security/permissions.md)
 </ul>
 </td>
 
@@ -1709,21 +1709,21 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 <p><b><i>Marketplace and Service hooks</i></b></p>
 <ul>
 <li>[Get extensions for Visual Studio Team Services](../marketplace/get-vsts-extensions.md)</li>
-<li>[Reference for creating custom build tasks within extensions](../../extend/develop/build-task-schema.md)</li>
+<li>[Reference for creating custom build tasks within extensions](../extend/develop/build-task-schema.md)</li>
 
 </ul>
 
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Add a dashboard widget](../../extend/develop/add-dashboard-widget.md)</li>
-<li>[Add a hub](../../extend/develop/add-hub.md)</li>
-<li>[Add a menu action](../../extend/develop/add-action.md)</li>
-<li>[Create your first extension for Visual Studio Team Services](../../extend/get-started/node.md)</li>
-<li>[Extension manifest reference](../../extend/develop/manifest.md)</li>
-<li>[Git](../../integrate/api/git/overview.md)</li>
-<li>[Git pushes](../../integrate/api/git/pushes.md)</li>
-<li>[Recycle bin](../../integrate/api/wit/recycle-bin.md)</li>
-<li>[Service endpoint authentication schemes](../../extend/develop/auth-schemes.md)</li>
+<li>[Add a dashboard widget](../extend/develop/add-dashboard-widget.md)</li>
+<li>[Add a hub](../extend/develop/add-hub.md)</li>
+<li>[Add a menu action](../extend/develop/add-action.md)</li>
+<li>[Create your first extension for Visual Studio Team Services](../extend/get-started/node.md)</li>
+<li>[Extension manifest reference](../extend/develop/manifest.md)</li>
+<li>[Git](https://visualstudio.com/integrate/api/git/overview.md)</li>
+<li>[Git pushes](https://visualstudio.com/integrate/api/git/pushes.md)</li>
+<li>[Recycle bin](https://visualstudio.com/integrate/api/wit/recycle-bin.md)</li>
+<li>[Service endpoint authentication schemes](../extend/develop/auth-schemes.md)</li>
 </ul>
 </td>
 </tr>
@@ -1991,16 +1991,16 @@ TFS 2017 Update 1 RC2 has been released. To download, click [Team Foundation Ser
 <p><b><i>Marketplace </i></b></p>
 <ul>
 <li>[Zendesk with Visual Studio Team Services](../marketplace/integrate/service-hooks/services/zendesk.md)
-<li>[Reference for creating custom build tasks within extensions](../../extend/develop/build-task-schema.md)</li>
+<li>[Reference for creating custom build tasks within extensions](../extend/develop/build-task-schema.md)</li>
 
 </ul>
 
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Test overview](../../integrate/api/test/overview.md)</li>
-<li>[Team settings](../../integrate/api/work/team-settings.md)</li>
-<li>[(Test) Clone operation](../../integrate/api/test/cloneOperations.md)</li>
-<li>[Changesets](../../integrate/api/tfvc/changesets.md)</li>
+<li>[Test overview](https://visualstudio.com/integrate/api/test/overview.md)</li>
+<li>[Team settings](https://visualstudio.com/integrate/api/work/team-settings.md)</li>
+<li>[(Test) Clone operation](https://visualstudio.com/integrate/api/test/cloneOperations.md)</li>
+<li>[Changesets](https://visualstudio.com/integrate/api/tfvc/changesets.md)</li>
 </ul>
 </td>
 </tr>
@@ -2257,7 +2257,7 @@ TFS 2017 Update 1 RC1 has been released. To download the latest version, see [Te
 <!---
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[TBR](../../integrate/api/wit/templates.md)</li>
+<li>[TBR](https://visualstudio.com/integrate/api/wit/templates.md)</li>
 </ul>
 -->
 </td>
@@ -2271,11 +2271,11 @@ TFS 2017 Update 1 RC1 has been released. To download the latest version, see [Te
 
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Get started with the REST APIs](../../integrate/get-started/rest/basics.md)</li>
-<li>[Git items](../../integrate/api/git/items.md)</li>
-<li>[Git refs](../../integrate/api/git/refs.md)</li>
-<li>[Recycle bin](../../integrate/api/wit/recycle-bin.md)</li>
-<li>[Work item classification nodes](../../integrate/api/wit/classification-nodes.md)</li>
+<li>[Get started with the REST APIs](../integrate/get-started/rest/basics.md)</li>
+<li>[Git items](https://visualstudio.com/integrate/api/git/items.md)</li>
+<li>[Git refs](https://visualstudio.com/integrate/api/git/refs.md)</li>
+<li>[Recycle bin](https://visualstudio.com/integrate/api/wit/recycle-bin.md)</li>
+<li>[Work item classification nodes](https://visualstudio.com/integrate/api/wit/classification-nodes.md)</li>
 </ul>
 </td>
 </tr>
@@ -2516,7 +2516,7 @@ TFS 2017 Update 1 RC1 has been released. To download the latest version, see [Te
 <!---
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[TBR](../../integrate/api/wit/templates.md)</li>
+<li>[TBR](https://visualstudio.com/integrate/api/wit/templates.md)</li>
 </ul>
 -->
 </td>
@@ -2530,7 +2530,7 @@ TFS 2017 Update 1 RC1 has been released. To download the latest version, see [Te
 
 <p><b><i>REST APIs </i></b></p>
 <ul>
-<li>[Policy type settings](../../integrate/api/policy/settings.md)</li>
+<li>[Policy type settings](https://visualstudio.com/integrate/api/policy/settings.md)</li>
 </ul>
 </td>
 </tr>

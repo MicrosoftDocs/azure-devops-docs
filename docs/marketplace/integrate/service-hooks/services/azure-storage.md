@@ -128,6 +128,6 @@ A: Yes, go [here](http://azure.microsoft.com/en-us/documentation/articles/storag
 
 #### Q: Can I programmatically create subscriptions?
 
-A: Yes, see details [here](../../../integrate/get-started/service-hooks/create-subscription.
+A: Yes, see details [here](../../integrate/get-started/service-hooks/create-subscription.
 
 <!-- ENDSECTION -->

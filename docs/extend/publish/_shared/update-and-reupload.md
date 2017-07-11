@@ -13,4 +13,4 @@ Once your publisher has been verified by Microsoft, you can make an integration 
 4. Re-package and update (re-upload) your item (see [package steps](#package)).
 5. The Availability column will reflect that your item is now public. All users can now see your item on the Marketplace:
 
-   ![avail](./_img/public-availability.png)
+   ![avail](../_img/public-availability.png)
