@@ -33,7 +33,7 @@ Personal access tokens let you create a password for use with the command line o
 An expiration date is set on these tokens when they are created and you can restrict the scope of the data they can access in Team Services.
 Use personal access tokens to authenticate if you don't already have SSH keys set up on your system or if you need to restrict the permissions granted by the credential. 
 
-![Animated GIF showing creation of PAT in Team Services](./_img/pat_creation.gif)
+![Animated GIF showing creation of PAT in Team Services](_img/pat_creation.gif)
 
 [Learn more about personal access tokens](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md)
 
@@ -53,7 +53,7 @@ Key authentication with SSH works through a public and private key pair that you
 You associate the public key with your username from the web. Team Services will encrypt the data sent to you with that key when you work with Git.
 You decrypt the data on your computer with the private key, which is never shared or sent over the network.
 
-![Animated GIF showing adding of a SSH public key to Team Services](./_img/ssh_add_public_key.gif)
+![Animated GIF showing adding of a SSH public key to Team Services](_img/ssh_add_public_key.gif)
 
 SSH is a great option if you've already got it set up on your system&mdash;just add a public key to Team Services and clone your repos using SSH. 
 If you don't have SSH set up on your computer, you should use personal access tokens and HTTPS instead-it's secure and easier to set up.

@@ -121,7 +121,7 @@ If no scopes are specified, extensions are only provided access to user profile 
 
 ### Supported scopes
 
-[!INCLUDE [](../integrate/_shared/scopes.md)] 
+[!INCLUDE [](../../integrate/_shared/scopes.md)] 
 
 ### Changing a published extension's scopes
 

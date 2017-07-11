@@ -77,7 +77,7 @@ The Scrum method uses sprints to plan work to perform by a team within a specifi
 
 You can quickly assign work items to a sprint by dragging and dropping them from the product backlog to the sprint. 
 
-![Assign work items to a sprint](scrum/_img/assign-to-sprint-from-kanban-animated.gif)
+![Assign work items to a sprint](./scrum/_img/assign-to-sprint-from-kanban-animated.gif)
 
 ## Kanban method and tools
 Kanban uses a visual interactive board to plan and show progress using cards. Your Kanban board is fully customizable to support the workflow used by your team.  

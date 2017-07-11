@@ -62,7 +62,7 @@ If you don't see any links listed under **Current** or **Future**, your team adm
 
 You can drag any work item from any backlog or board to a sprint. Even when working from the Kanban or task board, you can drag a work item onto a sprint to change it's iteration path. 
 
-![Assign work to a sprint from the Kanban board](_img/assign-to-sprint-from-kanban-animated.gif)
+![Assign work to a sprint from the Kanban board](./_img/assign-to-sprint-from-kanban-animated.gif)
 
 
 

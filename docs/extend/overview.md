@@ -122,7 +122,7 @@ You can leverage our REST APIs to interact with all areas of Team Services or TF
 
 <div style="clear:both"></div>
 
-You can check out the [REST API overview page](integrate/api/overview.md) to see all of the APIs, how to use them, and samples.
+You can check out the [REST API overview page](https://visualstudio.com/integrate/api/overview.md) to see all of the APIs, how to use them, and samples.
 
 ### .NET client libraries
 
@@ -139,7 +139,7 @@ Explore the [.NET client library overview](../get-started/client-libraries/dotne
 
 Extensions are simple add-ons that can be used to customize and extend your DevOps experience with Team Services. 
 They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.
-They utilize our [RESTful API Library](integrate/api/overview.md) in order to easily interact with Team Services and applications/services.
+They utilize our [RESTful API Library](https://visualstudio.com/integrate/api/overview.md) in order to easily interact with Team Services and applications/services.
 The [Visual Studio Marketplace](https://marketplace.visualstudio.com/VSTS) is where extensions are published, 
 where they can be kept privately for you and your team or shared with the millions of developers currently using Team Services. 
 

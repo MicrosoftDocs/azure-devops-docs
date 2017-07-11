@@ -298,7 +298,7 @@ TFS 2017 Update 2 RC1 has been released. To download, click [Team Foundation Ser
 <li>[Work item fields](https://visualstudio.com/integrate/api/wit/fields.md)</li>
 <li>[Work items](https://visualstudio.com/integrate/api/wit/work-items.md)</li>
 <li>[Work item form service](../extend/reference/client/api/TFS/WorkItemTracking/Services/WorkItemFormService.md)</li>
-<li>[Work item form navigation service](../extendreference/client/api/TFS/WorkItemTracking/Services/WorkItemFormNavigationService.md)</li>
+<li>[Work item form navigation service](../extend/reference/client/api/TFS/WorkItemTracking/Services/WorkItemFormNavigationService.md)</li>
 <li>[Write your first extension for Visual Studio Team Services](../extend/get-started/node.md)</li>
 
 </ul>

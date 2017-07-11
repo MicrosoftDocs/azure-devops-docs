@@ -304,7 +304,7 @@ For all these tasks we offer a set of built-in variables, and if necessary, you 
 
 ### Write a custom task
 
-If necessary, you can write your own [custom extensions](../extend/overview.md) to [custom tasks](../extend/develop/add-build-task.md) for your builds and releases.
+If necessary, you can write your own [custom extensions](../../extend/overview.md) to [custom tasks](../../extend/develop/add-build-task.md) for your builds and releases.
 
 ## Reuse patterns 
 

@@ -311,7 +311,7 @@ With Marketplace extensions (currently in private preview), you can create first
 <li style="margin-bottom:2px">[Choosing the right authentication mechanism](integrate/get-started/authentication/authentication_guidance.md)</li>
 <li style="margin-bottom:2px">[.NET client libraries](integrate/get-started/client-libraries/dotnet.md)</li>
 <li style="margin-bottom:2px">[C# client library samples](integrate/get-started/client-libraries/samples.md)</li>
-<li style="margin-bottom:2px">[REST API Reference](integrate/api/overview.md)</li>
+<li style="margin-bottom:2px">[REST API Reference](https://visualstudio.com/integrate/api/overview.md)</li>
 </ul>
 </div>
 
