@@ -116,7 +116,7 @@ For guidance in using the new form, see:
 
 For news of upcoming features, or extending the work tracking experience, see these resources:  
 - [Visual Studio Team Services Features Timeline](https://www.visualstudio.com/articles/news/features-timeline)  
-- [Visual Studio Team Services REST API Reference](../../../integrate/api/overview.md)  
+- [Visual Studio Team Services REST API Reference](https://visualstudio.com/integrate/api/overview.md)  
 
 
 ###Will the new work item experience become permanent?  

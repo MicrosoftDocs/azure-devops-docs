@@ -360,7 +360,7 @@ To learn more, see [Hidden Types Category](../reference/use-categories-to-group-
  
 ### Migrate or change a large number of work items 
 
-For large scale, organizational moves, use the REST API calls for [Work item batch operations](../../../integrate/api/wit/batch.md). 
+For large scale, organizational moves, use the REST API calls for [Work item batch operations](https://visualstudio.com/integrate/api/wit/batch.md). 
 
 >[!NOTE]  
 >At this time, you can't move work items to a different Team Services account or TFS collection. You can only migrate work item information by exporting and then importing them using [Excel](../office/bulk-add-modify-work-items-excel.md). 

@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Call a REST API
 
-To call a [REST API](../../../integrate/api/overview.md) from your extension, get the client service first, and then use that to call the API.
+To call a [REST API](https://visualstudio.com/integrate/api/overview.md) from your extension, get the client service first, and then use that to call the API.
 
 [!INCLUDE [REST](../_shared/procedures/call-rest-api-js.md)]
 

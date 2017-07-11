@@ -82,7 +82,7 @@ You can obtain rollup of additional data fields in VSTS or TFS data by using one
  Like Project, Project Server natively supports rollup of summary tasks. If you have TFS-Project Server integration deployed, then you have rollup. To learn about how fields are synchronized, see [Understand how updates to specific fields are managed](../tfs-ps-sync/understand-how-updates-to-specific-fields-managed.md). If you need to add fields or change how fields are mapped, see [Customize the field mapping](../tfs-ps-sync/customize-field-mapping-tfs-project-server.md).  
   
 ### Custom control or plug-in  
- You can write an extension using the [REST API for work tracking](../../../integrate/api/wit/overview.md) to get rollup. A code sample available on github that can get you started is [TFS Aggregrator](https://tfsaggregator.github.io/).  
+ You can write an extension using the [REST API for work tracking](https://visualstudio.com/integrate/api/wit/overview.md) to get rollup. A code sample available on github that can get you started is [TFS Aggregrator](https://tfsaggregator.github.io/).  
 
 <a name="requirements"></a>   
 ##  Rollup requirements  

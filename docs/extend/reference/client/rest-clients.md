@@ -13,7 +13,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [disclaimer](./api/_data/disclaimer.md)]
 
-A REST client simplifies calling [Visual Studio Team Services REST APIs](../../../../integrate/api/overview.md) from your client-side (JavaScript/TypeScript) extension code.
+A REST client simplifies calling [Visual Studio Team Services REST APIs](https://visualstudio.com/integrate/api/overview.md) from your client-side (JavaScript/TypeScript) extension code.
 
 ### Get started
 

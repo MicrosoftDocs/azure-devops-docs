@@ -428,7 +428,7 @@ To learn more about build definition settings, see:
 
 ### How do I programatically create a build definition?
 
-[REST API Reference: Create a build definition](../../../integrate/api/build/definitions.md#createabuilddefinition)
+[REST API Reference: Create a build definition](https://visualstudio.com/integrate/api/build/definitions.md#createabuilddefinition)
 
 
 <!-- ENDSECTION -->

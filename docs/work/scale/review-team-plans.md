@@ -209,4 +209,4 @@ The Delivery Plans extension is free to install from the [Visual Studio Marketpl
 
 <a id="plans-rest-api">  </a>
 ### Programmatically manage Delivery Plans  
-You can manage plans programmatically using the [Plans REST API](../../../integrate/api/work/plans.md).
+You can manage plans programmatically using the [Plans REST API](https://visualstudio.com/integrate/api/work/plans.md).

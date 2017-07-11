@@ -39,7 +39,7 @@ See our new [Create and deploy a release](../../build/actions/create-deploy-rele
 <a name="restapi"></a>
 ## Create a release by using the REST API
 
-See [Release Management REST API](../../../integrate/api/rm/overview.md).
+See [Release Management REST API](https://visualstudio.com/integrate/api/rm/overview.md).
 
 <a name="draftrelease"></a>
 ## Create a draft release

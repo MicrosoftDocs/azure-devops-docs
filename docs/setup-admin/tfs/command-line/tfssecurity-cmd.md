@@ -1102,7 +1102,7 @@ Sample output:
 |[Trigger events](../../permissions.md#trigger-events-permission)|Server|TRIGGER_EVENT|
 |[Use full Web Access features](../../permissions.md#use-full-web-access-features-permission)|Server|FullAccess|
 |[View instance-level information](../../permissions.md#view-instance-level-information-permission)|Server|GENERIC_READ|
-|[Publish extensions](../../../../extend/publish/overview.md)| Publisher| **For TFS 2017 or earlier**:<br />Create<br/>Publish<br />Write<br /><br />**For TFS 2017**:<br />CreatePublisher<br />PublishExtension<br />UpdateExtension<br />DeleteExtensions<br />|
+|[Publish extensions](../../../extend/publish/overview.md)| Publisher| **For TFS 2017 or earlier**:<br />Create<br/>Publish<br />Write<br /><br />**For TFS 2017**:<br />CreatePublisher<br />PublishExtension<br />UpdateExtension<br />DeleteExtensions<br />|
 
 <a id="collection-level-permissions"></a>
 ### Collection level

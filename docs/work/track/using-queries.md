@@ -276,7 +276,7 @@ SELECT [System.ID], [System.Title], [System.State]
 ### Programmatically query for work items 
 You can create dynamic queries using one of the following resources:  
 
-- **REST APIs:**&#160;&#160;[Work item queries and query folders](../../../integrate/api/wit/queries.md) and [Work item query language](../../../integrate/api/wit/wiql.md)
+- **REST APIs:**&#160;&#160;[Work item queries and query folders](https://visualstudio.com/integrate/api/wit/queries.md) and [Work item query language](https://visualstudio.com/integrate/api/wit/wiql.md)
 - **SDK:**&#160;&#160;[Query for Bugs, Tasks, and Other Work Items](https://msdn.microsoft.com/library/bb130306.aspx).
 
 

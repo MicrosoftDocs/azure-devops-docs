@@ -85,7 +85,7 @@ and
 tfssecurity /a+ /collection:https://fabrikam.visualstudio.com/DefaultCollection ServiceHooks PublisherSecurity/abcdef00-abcd-0000-0000-abcdef000000 EditSubscriptions n:fabrikamfiber4@hotmail.com ALLOW
 ```
 
-The GUID is the ID of the team project. You can get it using the [Projects](../../../../integrate/api/overview.md) REST API.
+The GUID is the ID of the team project. You can get it using the [Projects](https://visualstudio.com/integrate/api/overview.md) REST API.
 
 ####Q: What are the security implications of granting *Edit subscriptions* and *View subscriptions* permissions?
 
