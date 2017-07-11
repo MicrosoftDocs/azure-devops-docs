@@ -33,8 +33,8 @@ See [Use modal dialog](../../../develop/ui-controls/modaldialogo.md) for basic u
 
 ## Options
 
-[!INCLUDE [x](https://visualstudio.com/api/VSS/Controls/_shared/Dialogs/IModalDialogOptions.md)]
+[!INCLUDE [x](../api/VSS/Controls/_shared/Dialogs/IModalDialogOptions.md)]
 
 ## Methods
 
-[!INCLUDE [x](https://visualstudio.com/api/VSS/Controls/_shared/Dialogs/DialogO.md)]
+[!INCLUDE [x](../api/VSS/Controls/_shared/Dialogs/DialogO.md)]

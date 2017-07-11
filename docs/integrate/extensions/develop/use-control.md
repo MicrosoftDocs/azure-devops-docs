@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Use a control
 
-[!INCLUDE [disclaimer](https://visualstudio.com/api/_data/disclaimer.md)]
+[!INCLUDE [disclaimer](../../api/_data/disclaimer.md)]
 
 * [Configure](./ui-controls/configure.md)
 * [Use grid](./ui-controls/grido.md)
