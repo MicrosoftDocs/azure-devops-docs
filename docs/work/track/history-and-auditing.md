@@ -1,6 +1,6 @@
 ---
 title: History and auditing | Team Services & TFS
-description: Track changes and use tools to support audit requirements when working in Visual Studio devops and Team Foundation Server (TFS) 
+description: Track changes and use tools to support audit requirements when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9

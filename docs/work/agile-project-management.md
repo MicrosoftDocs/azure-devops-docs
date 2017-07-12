@@ -84,7 +84,8 @@ To delve deeper into the features available to you to track work and other tools
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Customize</p>   
 - [Customize your work tracking experience](./customize/customize-work.md)  
 - [Add Agile teams](./scale/multiple-teams.md)  
-- [Modify area and iteration paths](./customize/modify-areas-iterations.md)  
+- [Set area paths](./customize/set-area-paths.md)  
+- [Set iteration paths/sprints](./customize/set-iteration-paths-sprints.md)  
 - [Set team defaults](./scale/set-team-defaults.md)      
 </div>
 

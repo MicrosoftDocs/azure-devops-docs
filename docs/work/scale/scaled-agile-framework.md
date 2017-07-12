@@ -6,11 +6,11 @@ ms.prod: vs-devops-alm
 ms.assetid: C8E9CFD2-F08A-4FB8-AC53-B9B6B49A22A3
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/16/2017
+ms.date: 07/22/2017
 ---
 
 
-#Implement Scaled Agile Framework® to support epics, release trains, and multiple backlogs  
+# Implement Scaled Agile Framework® to support epics, release trains, and multiple backlogs  
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
@@ -343,11 +343,11 @@ Resources mentioned earlier in this article and a few more are provided here for
 ###About the authors
 This article has been updated from the previous white paper developed in collaboration with the following authors:  
 - Gordon Beeming is a Software Developer at Derivco in the sunny city of Durban, South Africa. He spends most his time hacking away at the keyboard in Visual Studio or with his family relaxing. His blog is at [31og.com](http://31og.com) and you can follow him on Twitter at [twitter.com/gordonbeeming](http://twitter.com/gordonbeeming).  
-- Brian Blackman is a principal consultant with Microsoft Premier Developer, focusing on affecting ISV partners and Enterprises success in engineering and the marketplace. He has an MBA, and is a CSM, CSP, MCSD (C++), and MCTS and is a Visual Studio devops Ranger. When he is not Ruck Mastering and contributing to Visual Studio devops Ranger projects, he spends his time writing code, creating and delivering workshops, and consulting in various concentrations, especially helping organizations in their quest for business agility.  
+- Brian Blackman is a principal consultant with Microsoft Premier Developer, focusing on affecting ISV partners and Enterprises success in engineering and the marketplace. He has an MBA, and is a CSM, CSP, MCSD (C++), and MCTS and is a Visual Studio ALM Ranger. When he is not Ruck Mastering and contributing to Visual Studio ALM Ranger projects, he spends his time writing code, creating and delivering workshops, and consulting in various concentrations, especially helping organizations in their quest for business agility.  
 - Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by Visual Studio Team Services and on-premises TFS.
 - Kathryn Elliott is a senior technical writer at Microsoft.  
-- Susan Ferrell is a senior technical writer and a Visual Studio devops Ranger.  
-- Willy-Peter Schaub is a program manager with the Visual Studio devops Rangers at the Microsoft Canada Development Center. Since the mid-'80s, he has been striving for simplicity and maintainability in software engineering. His blog is at [blogs.msdn.com/b/willy-peter_schaub](http://blogs.msdn.com/b/willy-peter_schaub) and you can follow him on Twitter at [twitter.com/wpschaub](http://twitter.com/wpschaub).  
-- Special thanks to the following technical experts for reviewing this article: Mike Douglas (independent consultant, devops Ranger), Richard Hundhausen (independent consultant, devops Ranger) and Bill Heys (independent consultant, devops Ranger), Hosam Kamel (technology solution professional for Microsoft and devops Ranger).  
+- Susan Ferrell is a senior technical writer and a Visual Studio ALM Ranger.  
+- Willy-Peter Schaub is a program manager with the Visual Studio ALM Rangers at the Microsoft Canada Development Center. Since the mid-'80s, he has been striving for simplicity and maintainability in software engineering. His blog is at [blogs.msdn.com/b/willy-peter_schaub](http://blogs.msdn.com/b/willy-peter_schaub) and you can follow him on Twitter at [twitter.com/wpschaub](http://twitter.com/wpschaub).  
+- Special thanks to the following technical experts for reviewing this article: Mike Douglas (independent consultant, ALM Ranger), Richard Hundhausen (independent consultant, ALM Ranger) and Bill Heys (independent consultant, ALM Ranger), Hosam Kamel (technology solution professional for Microsoft and ALM Ranger).  
 
 

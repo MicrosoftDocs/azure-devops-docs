@@ -12,7 +12,9 @@ ms.date: 06/19/2017
 
 <a id="filter"></a>
 
-# Filter backlogs, boards, and queries 
+# Filter backlogs, boards, and queries
+
+<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
  
 If you have many items listed in your product or portfolio backlog, Kanban board, or query results&mdash;and you want to focus on a subset of them&mdash;you can filter the set.  
 

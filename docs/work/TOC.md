@@ -49,10 +49,9 @@
 
 ## Track work
 ### [Add tags to work items](track/add-tags-to-work-items.md)
-### [Follow work](/docs/collaborate/follow-work-items.md) 
-### [Link work items](track/link-work-items-support-traceability.md)
+### [Follow work](../collaborate/follow-work-items.md) 
 ### [Adhoc work item search](../search/workitem/get-started.md)  
-### [Set personal or team favorites](/docs/collaborate/set-favorites.md)  
+### [Set personal or team favorites](../collaborate/set-favorites.md)  
 ### [Set personal notifications](../collaborate/manage-personal-notifications.md)
 ### [Schedule projects using Project](office/create-your-backlog-tasks-using-project.md)
 ### [Share work plans](track/share-plans.md)
@@ -62,8 +61,8 @@
 ### Manage queries (NEW TOPIC) 
 ### Browse & organize queries (NEW TOPIC) 
 ### Triage work items (NEW TOPIC)   
-### [Add a query chart](/docs/report/charts)  
-### [Copy as HTML](/docs/work/backlogs/copy-clone-work-items#html) 
+### [Add a query chart](../report/charts.md)  
+### [Copy as HTML](../work/backlogs/copy-clone-work-items.md#html) 
 
 
 ## Scale 
@@ -82,10 +81,12 @@
 ## [Work item form controls](concepts/work-item-form-controls.md)
 ## [Workflow states & state categories](concepts/workflow-and-state-categories.md)
 ## [Link types & link relationships](track/link-work-items-support-traceability.md) 
+
 ## Best practices 
 ### [Product backlog](concepts/best-practices-product-backlog.md)  
-### [Sprint/Scrum](concepts/best-practices-product-backlog.md)  
+### [Sprint/Scrum](concepts/best-practices-scrum.md)  
 ### [Kanban](concepts/best-practices-kanban.md)  
+
 ## [Backlog items & multi-team ownership](backlogs/work-multi-team-ownership-backlogs.md)
 ## [Office integration](office/track-work-vsts-tfs.md)
 ## [New work item experience](process/new-work-item-experience.md)
@@ -158,6 +159,9 @@
 ### [Get feedback](connect/get-feedback.md)
 ### [Provide feedback](connect/give-feedback.md)
 ### [Set feedback permissions](connect/give-permissions-feedback.md) 
+### [Enable remote audio capture](reference/enable-remote-audio-capture.md)
+### [Change the audio device or annotation tool](reference/change-audio-device-annotation-tool.md) 
+
 
 ## Add teams 
 ### [Add teams & team members](scale/multiple-teams.md)
@@ -174,14 +178,14 @@
 ### [Customize cards](customize/customize-cards.md)   
 
 ## Manage project settings (Project administrator) 
-### [Define area paths](/docs/work/customize/set-area-paths) 
-### [Define iteration paths](/docs/work/customize/set-iteration-paths-sprints) 
+### [Define area paths](customize/set-area-paths.md) 
+### [Define iteration paths](customize/set-iteration-paths-sprints.md) 
 ### [Manage permissions & access](how-to/set-permissions-access-work-tracking.md) 
 ### [Set query permissions](track/set-query-permissions.md) 
-### [Change access levels](/docs/work/connect/change-access-levels)
+### [Change access levels](work/connect/change-access-levels.md)
 ### [Manage new form rollout](customize/manage-new-form-rollout.md)
-### [Customize work tracking](/docs/work/customize/customize-work) 
-### [TFS-Project Server integration](/docs/work/office/sync-ps-tfs) 
+### [Customize work tracking](work/customize/customize-work.md) 
+### [TFS-Project Server integration](work/office/sync-ps-tfs.md) 
 
 # Reference
 ## [Permissions & access for work tracking](permissions-access-work-tracking.md)  
@@ -210,13 +214,12 @@
 ### [Resolve invalid links in an Excel tree list](office/resolve-excel-invalid-links-tree-list.md)
 
 # Resources
-## [Clients that support work tracking](/docs/tools)
-## [Productivity tips](/docs/work/productivity/productivity-tips)
+## [Clients that support work tracking](/team-services/tools)
+## [Productivity tips](productivity/productivity-tips.md)
 ## [What is Agile?](https://www.visualstudio.com/learn/what-is-agile/)
 ## [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)
 ## [What is Agile development?](https://www.visualstudio.com/learn/what-is-agile-development/)
 ## [Agile culture](https://www.visualstudio.com/learn/agile-culture/)
 ## [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)
 ## [Creating productive teams](https://www.visualstudio.com/learn/productive-teams/) 
-## [Enable remote audio capture](reference/enable-remote-audio-capture.md)
-## [Change the audio device or annotation tool](reference/change-audio-device-annotation-tool.md) 
+

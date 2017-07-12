@@ -1,15 +1,14 @@
-# [Account management](account-administration.md)
+# [Account management documentation](index.md)
 # Overview
-## [Account administration](account-administration.md)
+## [Account management](account-administration.md)
 ## [Access with Azure AD](team-services/access-with-azure-ad.md)
 
 # Quickstarts
 ## [Sign up for your account](team-services/sign-up-for-visual-studio-team-services.md)
-## [Connect to your account from tools](team-services/connect-to-visual-studio-team-services.md)
 ## [Add users to your account](team-services/add-account-users-assign-access-levels-team-services.md)  
 ## [User hub: add users to your account](team-services/add-account-users-from-user-hub.md)
 ## [User hub: add users to your account](team-services/add-basic-or-vs-subscription-users.md)
-## [Try extensions for free](team-services/try-additional-features-vs.md)
+
 ## Get more features (extensions) 
 ### [Install an extension](../marketplace/install-vsts-extension.md) 
 ### [Request permission for an extension](../marketplace/request-vsts-extension.md)
@@ -17,38 +16,46 @@
 
 # Tutorials
 ## [Change Azure AD tenant](team-services/change-azure-active-directory-team-services-account.md)
+<!---
 ## [Get HockeyApp - Bring DevOps to mobile app development](../marketplace/get-hockeyapp.md) 
+-->
 
-# Samples
+<!--- # Samples - this section not needed  -->
 
-# How-to
-## Manage account
+# How-to guides
+
+## Manage your account
+
 ### [Change account owner](team-services/change-account-ownership-vs.md) 
 ### [Rename account](team-services/rename-visual-studio-team-services-account.md)
 ### [Delete account](team-services/delete-your-vsts-account.md)
 ### [Recover account](team-services/recover-your-vsts-account.md) 
 ### [Sign in with different credentials](../connect/connect-team-projects.md#logindifferentcred)  
-## Team projects
+
+
+## Manage team projects
 ### [Create team project](create-team-project.md)
 ### [Rename team project](rename-team-project.md)
 ### [Delete team project](delete-team-project.md)  
 ### [Save team project data](save-team-project-data.md)  
-### [Connect to team projects (various ways)](../connect/connect-team-projects.md)  
-## Account access
+
+## Manage account access
 ### [User hub: manage users from table view](team-services/manage-users-table-view.md)  
 ### [Manage conditional access](team-services/manage-conditional-access.md)
+<!-- Please look at having a single topic that addresses the different UI differences, use versioning tags --> 
 ### [User hub: delete users from your account](team-services/delete-account-users-users-hub.md)  
 ### [Delete users from your account](team-services/delete-account-users.md)  
-### [Add members to team projects](team-services/add-team-members-vs.md)
 ### [Link work accounts to Visual Studio with MSDN subscriptions](team-services/link-msdn-subscription-to-organizational-account-vs.md)
 ### [Authenticate with personal access tokens](team-services/use-personal-access-tokens-to-authenticate.md)
 ### [Change app access policies](team-services/change-application-access-policies-vs.md)
+
 ### Access with Azure AD
 #### [Add Team Services users to your Azure AD](team-services/add-ts-users-to-aad.md)  
 #### [Connect Team Services account to Azure AD](team-services/connect-account-to-aad.md) 
 #### [Disconnect Team Services account from Azure AD](team-services/disconnect-account-from-aad.md) 
 #### [Delete users from Team Services connected to Azure AD](team-services/delete-users-from-services-aad.md) 
 #### [Add Azure AD group to Team Services group](team-services/manage-azure-active-directory-groups-visual-studio-team-services.md)
+
 ## Billing and purchases
 ### [Set up billing: link Azure subscription to Team Services Accout](team-services/set-up-billing-for-your-account-vs.md)  
 ### [Set up billing: add backup billing managers](team-services/add-backup-billing-managers.md) 
@@ -61,6 +68,7 @@
 ### [Buy Visual Studio subscriptions](../marketplace/vs-subscriptions/buy-vs-subscriptions.md)   
 ### [Manage Visual Studio subscriptions](../marketplace/vs-subscriptions/manage-vs-subscriptions.md)   
 ### [View Visual Studio subscriptions](../marketplace/vs-subscriptions/view-vs-subscriptions.md)    
+
 ## Permissions and access
 ### [Permissions and access](permissions-access.md)   
 ### [Add users to projects](add-users.md)  
@@ -73,14 +81,14 @@
 ### [Permissions and groups reference](permissions.md)   
 
 # Concepts
-## <<might be a few intros I peel out into concepts>>
+## [Permissions and access](permissions-access.md)  
+## TBD (might be a few intros I peel out into concepts)
 ## [Buying build pipelines](team-services/buy-more-build-vs.md)  
 
 # Reference
-## [Reference tour](/docs/reference/overview)
-## [Permissions and access](permissions-access.md)   
+## [Reference tour](/docs/reference/overview) 
 ## [Permissions and groups reference](permissions.md)    
-## [Extensibility overview](/docs/integrate/overview)
+## [Extensibility overview](../extend/overview)
 
 
 

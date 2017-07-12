@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 6BF2B72D-9160-4140-B8DE-B2C7C42AC338  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/22/2017
+ms.date: 07/12/2017
 ---
 
 # Configure team settings   
@@ -40,7 +40,7 @@ The following table summarizes a subset of the default permissions assigned to t
 <tbody valign="top" align="center">
 <tr>
 
-<td align="left">[Add a team administrator](#add-team-admin) </p>
+<td align="left">[Add a team administrator](add-team-administrator.md) </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>

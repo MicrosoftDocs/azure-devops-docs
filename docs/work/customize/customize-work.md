@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/23/2017
+ms.date: 07/12/2017
 ---
 
 # Customize your work tracking experience 
@@ -675,7 +675,7 @@ When adding custom fields, note the following limits:
 -->
 
 [add-team-members]: ../scale/multiple-teams.md#add-team-members
-[add-team-admin]: ../scale/team-assets.md#add-team-admin
+[add-team-admin]: ../scale/add-team-administrator.md
 
  
   

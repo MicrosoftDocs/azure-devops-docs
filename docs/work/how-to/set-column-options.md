@@ -13,6 +13,9 @@ ms.date: 06/01/2017
 
 <a id="column-options">  </a>
 # Change column options 
+
+<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+
 From each backlog page or query, you can add or remove columns. Or, you can drag a column to a new position. 
 
 Start by opening the Column Options.  Unlike a query result, you can't sort a backlog by column. However, you can use the Create Query option on each backlog to create a query that you can sort on any field column you choose.

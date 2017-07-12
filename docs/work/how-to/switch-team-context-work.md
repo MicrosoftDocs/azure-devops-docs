@@ -12,6 +12,9 @@ ms.date: 06/01/2017
 <a id="switch-team-context">  </a>
 
 # Switch team project or team focus   
+
+<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+
 Several features depend on the team project or team that you have selected. For example, dashboards, backlogs, and board views will change depending on the context selected. 
 
 For example, when you add a work item, the system references the default area and iteration paths defined for the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board, are assigned the team default backlog iteration. To change team defaults, see [Set team defaults](/docs/work/scale/set-team-defaults).  
