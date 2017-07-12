@@ -18,8 +18,8 @@
 # How-to
 ## Install TFS
 ### [Get started](./install/get-started.md)
-### [Requirements](requirements.md)
-### [Requirement changes](requirement-changes-tfs15.md)
+### [Requirements](../requirements.md)
+### [Requirement changes](../requirement-changes-tfs15.md)
 ### TFS 2013
 #### [Get started](./install/install-2013/install-tfs.md)
 #### [Basic configuration](./install/install-2013/config-tfs-basic.md)

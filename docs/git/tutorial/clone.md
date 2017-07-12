@@ -38,7 +38,7 @@ Before you can clone an existing repo, you'll need a URL that points to the exis
 If you're using Team Services or Team Foundation Server 2017, you can find this clone URL in the web interface. 
 When viewing your repo from the **Code** tab in the interface, select **Clone** in the upper right.
 
-![Get a clone a URL from Team Services](_img/get_clone_url.gif)
+![Get a clone a URL from Team Services](./_img/get_clone_url.gif)
 
 If you need to clone a GitHub repo, you'll need to get the clone URL from the **Clone or download** button while viewing the repo on the web in GitHub. 
 
