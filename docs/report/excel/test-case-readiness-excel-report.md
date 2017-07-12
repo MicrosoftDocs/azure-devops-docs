@@ -16,7 +16,7 @@ You can use the Test Case Readiness report to help monitor the progress that the
  For information about how to access this report, see [Excel reports](excel-reports.md).  
   
 > [!NOTE]
->  You can view the Test Case Readiness from the Test dashboard. You can access this dashboard only if your team project portal has been enabled and is configured to use SharePoint Server Enterprise Edition. For more information, see [Share information using the project portal](~/docs/report/sharepoint-dashboards/share-information-using-the-project-portal.md).  
+>  You can view the Test Case Readiness from the Test dashboard. You can access this dashboard only if your team project portal has been enabled and is configured to use SharePoint Server Enterprise Edition. For more information, see [Share information using the project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md).  
   
  **Required permissions**  
   

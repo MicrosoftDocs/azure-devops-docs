@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 07/12/2017
 ---
 
-# Configure team settings   
+# Configure team settings and add team administrators 
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
@@ -40,7 +40,7 @@ The following table summarizes a subset of the default permissions assigned to t
 <tbody valign="top" align="center">
 <tr>
 
-<td align="left">[Add a team administrator](add-team-administrator.md) </p>
+<td align="left">[Add a team administrator](#add-team-admin) </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
@@ -93,11 +93,9 @@ Contributors have access to all features available to Readers. Team admins have 
 <div style="float:left;width:170px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Readers</p>
 <ul style="padding-left:10px">
-<li style="margin-bottom:0px">View team [Velocity](../scrum/velocity-and-forecasting.md)</li>
-<li style="margin-bottom:0px">[Forecast](../scrum/velocity-and-forecasting.md) </li>
+<li style="margin-bottom:0px">View team [Velocity](../../report/guidance/team-velocity.md) )</li>
 <li style="margin-bottom:0px">[View backlogs and boards](../backlogs-boards-plans.md)</li>
 <li style="margin-bottom:0px">[View dashboards](../../report/dashboards.md) </li>
-<li style="margin-bottom:0px">View team [Velocity](../scrum/velocity-and-forecasting.md)</li>
 <li style="margin-bottom:0px">[Set personal alerts](../track/alerts-and-notifications.md)</li>
 </ul>
 </div>
@@ -113,6 +111,7 @@ Contributors have access to all features available to Readers. Team admins have 
 <li style="margin-bottom:0px">[Manage sprint backlogs](../scrum/sprint-planning.md) </li>
 <li style="margin-bottom:0px">[Manage task boards](../scrum/task-board.md)</li>
 <li style="margin-bottom:0px">[Capacity planning](capacity-planning.md) </li>
+<li style="margin-bottom:0px">[[Forecasting](../scrum/forecast.md)  </li>
 <li style="margin-bottom:0px">[Collaborate in a team room](../../collaborate/collaborate-in-a-team-room.md) </li>
 
 </ul>
@@ -147,7 +146,7 @@ Contributors have access to all features available to Readers. Team admins have 
 <li style="margin-bottom:0px">[Board: WIP limits](../kanban/wip-limits.md)   </li>
 <li style="margin-bottom:0px">[Board: Split columns](../kanban/split-columns.md)  </li>
 <li style="margin-bottom:0px">[Board: Swimlanes](../kanban/expedite-work.md)</li>
-<li style="margin-bottom:0px">[Board: Card reordering](../customize/reorder-cards.md) </li> 
+<li style="margin-bottom:0px">[Board: Card reordering](../kanban/kanban-basics.md#card-reorder-setting)</li> 
 <li style="margin-bottom:0px">[Board: Definition of Done](../kanban/definition-of-done.md)</li>
 <li style="margin-bottom:0px">[Charts: Cumulative flow](../../Report/guidance/cumulative-flow.md#configure) </li>
 </ul>
@@ -190,7 +189,7 @@ Contributors have access to all features available to Readers. Team admins have 
 
 
 <tr>
-<td align="left">Area node: [Edit work items under the node](../customize/set-area-paths.md) 
+<td align="left">Area node: [Edit work items under the node](../customize/modify-areas-iterations.md) 
 </td>
 <td align="left"><p>&nbsp;&nbsp;</p></td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
@@ -198,7 +197,7 @@ Contributors have access to all features available to Readers. Team admins have 
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 </tr>
 <tr>
-<td align="left">[Area nodes and Iteration nodes: Create, delete, edit child nodes](../customize/set-area-paths.md)  
+<td align="left">[Area nodes and Iteration nodes: Create, delete, edit child nodes](../customize/modify-areas-iterations.md)  
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
@@ -230,6 +229,24 @@ Contributors have access to all features available to Readers. Team admins have 
 
 For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../setup-admin/permissions-access.md). For a comprehensive list of all permissions and default groups, see the [Permissions reference for TFS](../../setup-admin/permissions.md). 
 
+
+<a id="add-team-admin">  </a>  
+
+##Add a team member as a team administrator
+
+It's always a good idea to have more than one person with administration permissions for an area. 
+
+1. If you're not a team administrator, get added as one using this procedure. Ask an administrator for your team project or project collection to add you as an administrator.  
+
+2. Add an administrator from the web portal team admin context.  
+
+	![Open team administration context](_img/add-account-as-team-admin.png)  
+
+	To access this page, choose the ![gear icon](../_img/icons/gear_icon.png) gear icon from your team home page.  
+
+3. Add the account identity.  
+
+	![Add account as a team administrator](_img/add-team-admin-dialog.png) 
 
 <a id="team-settings">  </a>
         
@@ -271,7 +288,7 @@ You can configure all your team settings from the common configuration dialog.
 <ul style="padding-left:30px">
 <li style="margin-bottom:0px">[Columns](../kanban/add-columns.md)</li> 
 <li style="margin-bottom:0px">[Swimlanes](../kanban/expedite-work.md)</li> 
-<li style="margin-bottom:0px">[Card reordering](../customize/reorder-cards.md) </li> 
+<li style="margin-bottom:0px">[Card reordering](../kanban/kanban-basics.md#card-reorder-setting)</li> 
 </ul>
 </div>
 
@@ -308,6 +325,24 @@ A team room is created for each team that gets created. Team administrators can 
 
 Members of the Project Administrators groups can create and administer team rooms that they have created. And, members of the Project Collection Administrators groups can create and administer all team rooms.  
 
+<a id="team-room-permissions"> </a>
+### Administer team room permissions
+
+You can grant permissions to users to administer a team room.  
+
+1. From the context menu, open permissions for the team room.  
+
+	![Open team room permissions](_img/open-security-team-room.png)  
+
+2. Add an account, set the permissions for Administer to **Allow**, and save the changes.   
+
+	![Add menu on Permissions page for a team room](_img/add-team-admin-dialog.png) 
+
+
+<a id="team-room-event-permissions">  </a>
+### Permissions to open team room events
+               
+Permissions on team room events are managed by their associated operational area. It is possible for a team member to have permissions to collaborate within a team room, yet not be allowed to view work items, build definitions, or source code that have alerts enabled in the team room. 
 
 
 
@@ -322,6 +357,18 @@ If team members don't have access to all the features they want, check that they
 You can also [restrict access to select features and functions](../../setup-admin/restrict-access-tfs.md).
 
 
+<a id="team-favorites"> </a>
+### Set team favorites 
+Team favorites are a quick way for members of your team to quickly access shared resources of interest. You can define team favorites for the following:
+
+- **Code hub/Explorer**: Add repos or folders to team favories  
+- **Work hub/Queries**: A  [Shared work item queries](../track/using-queries.md) to team favorites    
+- **Build hub/Explorer**: Add build definitions to team favorites   
+
+
+From your team context, drag shared queries, builds, and folders to Team favorites to provide quick access to those items. Or, choose the Add to team favorites option from the context menu for the item. You must be [added as a team admin](../scale/manage-team-assets.md#add-team-admin) to manage team favorites.  
+
+![Drag items to team favorites](../../_img/alm-index-team-favorites.png)  
  
 
 

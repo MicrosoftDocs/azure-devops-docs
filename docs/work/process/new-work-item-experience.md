@@ -1,22 +1,20 @@
 ---
-title: New work item web form | Team Services & TFS  
-description: The new web form and work item tracking experience supports customizatio, more integrated  and collaborative features-VSTS & Team Foundation Server
+title: New work item web form | TFS  
+description: The new web form and work item tracking experience supports  more integrated and collaborative experiences
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/29/2017
+ms.date: 06/11/2017
 ---
 
-#New work item tracking experience
+# New work item tracking experience
 
-**Team Services | TFS 2017**  
+**TFS 2017**  
 
 >[!IMPORTANT]  
 >**Feature availability:**&#160;&#160;The new form and its corresponding features are available from Team Services and the web portal for TFS 2017.<br/> 
-> - For users of Team Services working with [inherited customization](manage-process.md), the switch to the new form is automatic for all user accounts.<br/>
-> - For users of Team Services working with [hosted XML customization](../import-process/import-process.md), an admin is required to [enable the new form](../customize/manage-new-form-rollout.md).<br/>
 > - For TFS 2017 users, the new form is automatically available when you add team projects to a new collection. For existing team projects, an admin is required to [enable the new form](../customize/manage-new-form-rollout.md).<br/>
 > - For TFS 2015 users, the new form isn't available. You must [upgrade to TFS 2017](https://www.visualstudio.com/downloads/#team-foundation-server-2017) to access the new form.  
 
@@ -107,8 +105,7 @@ The new form also supports customization through the user interface with the Inh
 
 To manage the rollout of the new form or customize it, see:  
 - [Manage new form rollout](../customize/manage-new-form-rollout.md)  
-- [Customize a web form for a process](../process/customize-process-form.md) (Inheritance process model)
-- [Customize the new form](../customize/customize-wit-form.md) (Hosted XML and On-premises XML process models)
+- [Customize the new form](../customize/customize-wit-form.md) (On-premises XML process model)
 
 For guidance in using the new form, see:
 - [Add work items to plan and track your project](../backlogs/add-work-items.md) 
@@ -116,17 +113,16 @@ For guidance in using the new form, see:
 
 For news of upcoming features, or extending the work tracking experience, see these resources:  
 - [Visual Studio Team Services Features Timeline](https://www.visualstudio.com/articles/news/features-timeline)  
-- [Visual Studio Team Services REST API Reference](https://visualstudio.com/integrate/api/overview.md)  
+- [Visual Studio Team Services REST API Reference](../../integrate/api/overview.md)  
 
 
-###Will the new work item experience become permanent?  
+### Will the new work item experience become permanent?  
 
 Yes, however, we're always interested in how to improve the experience. What do you like or don't like about the new form layout and experience?  
 
 Send your suggestions via **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**
 
-To learn more about our plans to increased your ability to customize your work tracking experience, see [VS Team Services Process Customization futures (January 2016)](https://blogs.msdn.microsoft.com/visualstudioalm/2016/01/11/vsts-process-customization-futures-january-2016/).   
 
 ### Will this impact Visual Studio work item forms?  
 
-Not at this time. The only way Visual Studio forms will change is through [updates to an inherited process](../import-process/import-process.md).  
+Not at this time.   

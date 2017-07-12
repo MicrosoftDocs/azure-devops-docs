@@ -7,7 +7,7 @@ ms.assetid: F9DC4D34-36D6-42D6-AA8F-E7FE1CC60676
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 12/02/2016
+ms.date: 07/12/2017
 ---
 
 # Capacity planning  
@@ -84,7 +84,7 @@ Most teams specify capacity in terms of hours, however, you can also specify it 
 
 If you haven't set up sprints yet for your team, go [here to do that now](../scrum/define-sprints.md).
 
-If you don't see a team member listed, you need to [add them to the team](../scale/add-team-administrator.md). Also, you only have to indicate planned days off for the team. You [set weekend days or other recurring days off](#team_settings) under team settings.  
+If you don't see a team member listed, you need to [add them to the team](../scale/manage-team-assets.md#add-team-admin). Also, you only have to indicate planned days off for the team. You [set weekend days or other recurring days off](#team_settings) under team settings.  
 
 <a id="copy-capacity">  </a>
 ##Copy capacity planning from the previous sprint 
@@ -156,7 +156,8 @@ Setting capacity and [estimating remaining work for each task](../scrum/sprint-p
 - [Set working days](../customize/set-working-days.md)
 - [Task board](../scrum/task-board.md)
 - [Sprint burndown](../scrum/sprint-burndown.md)
-- [Velocity & forecasting](../scrum/velocity-and-forecasting.md)
+- [Velocity](../../report/guidance/team-velocity.md)    
+- [Forecasting](../scrum/forecast.md)    
 - [Configure team settings](../scale/manage-team-assets.md)
 
 <a id="customize-activity-list">  </a>

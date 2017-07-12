@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/12/2017
+ms.date: 07/12/2017
 ---
 
 # Process configuration XML element reference
@@ -775,11 +775,15 @@ Here we show how it appears in the work item form:
 ### Specify WIT icons
 
 > [!NOTE]  
-> <b>Feature availability: </b> You can customize the icons used for work item types if you use Hosted XML or, for On-premises XML,you have upgraded to TFS 2017.2 or later version.  
+> <b>Feature availability: </b> You can customize the icons used for work item types if you use Hosted XML or, for On-premises XML, you have upgraded to TFS 2017.2 or later version.  
 
 The supported set of icons you can specify for a work item type are shown below. 
 
 ![icon_airplane, icon_asterisk, icon_book, icon_car, icon_chart, icon_chat_bubble, icon_check_box, icon_clipboard, icon_code_response, icon_code_review](_img/processconfig-wit-icons-one.png) ![icon_color_palette, icon_crown, icon_database_storage, icon_diamond, icon_flame, icon_gavel, icon_gear, icon_gift, icon_government, icon_headphone](_img/processconfig-wit-icons-two.png) ![icon_insect, icon_key, icon_list, icon_megaphone, icon_paint_brush, icon_parachute, icon_response, icon_review, icon_ribbon, icon_sticky_note](_img/processconfig-wit-icons-three.png) ![icon_star, icon_test_beaker, icon_test_parameter, icon_test_plan, icon_test_step, icon_test_suite, icon_traffic_cone, icon_trophy](_img/processconfig-wit-icons-four.png)
+
+>[!NOTE]  
+>Icons noted with an asterisk are supported on Team Services and TFS 2017.3 and later versions.
+
 
 The system applies the color defined for the work item type to the icon. Colors and icons appear in the web portal where ever work items are displayed. This includes under **Related work** in PRs, list of links, the account work item pages as well as the work hub backlogs, boards, queries, and plans.  
 

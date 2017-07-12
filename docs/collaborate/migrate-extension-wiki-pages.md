@@ -16,10 +16,10 @@ ms.date: 07/05/2017
 >[!NOTE]  
 ><b>Feature availability: </b>Use this topic to migrate pages made using the [Wiki Marketplace  extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) to the Team Services Wiki. The **Wiki*** hub is in Preview and only available for Team Services at this time. To learn more, see [Add and edit your team project Wiki](add-edit-wiki.md).  
 
-With the release of the Team Services wiki, any wiki pages that you created using the Wiki Marketplace extension have been saved to a git repo in your team project. ****
+With the release of the Team Services wiki, any wiki pages that you created using the Wiki Marketplace extension have been saved to a git repo in your team project.  
 
 You can migrate the markdown pages and other artifacts that were added to that repo to your team project wiki with these steps:  
-1.	Clone [vsts-wikiTools](https://github.com/Microsoft/vsts-wikiTools) repository from GitHub and compile the **MigrateToVSTSWiki** tool
+1.	Clone [vsts-wikiTools](https://github.com/Microsoft/vsts-wikiTools) repository and compile the **MigrateToVSTSWiki** tool
 2.	Create and then clone your Team Services wiki    
 3.	Move and commit all markdown pages to your Team Services wiki 
 4.	Run the wiki migration tool, **MigrateToVSTSWiki.exe** 
@@ -30,7 +30,7 @@ To perform these changes, you must be a member of the Contributors group of your
 ## Detailed steps
 Here are the detailed steps for Wiki migration:
 
-1.	Clone [vsts-wikiTools](https://github.com/Microsoft/vsts-wikiTools) repository from GitHub and compile the **MigrateToVSTSWiki** tool
+1.	Clone [vsts-wikiTools](https://github.com/Microsoft/vsts-wikiTools) repository and compile the **MigrateToVSTSWiki** tool
 
 2.  Compile the project under the path **Tools/MigrateToVSTSWiki** to generate the migration tool EXE.
   
@@ -81,20 +81,12 @@ Here are the detailed steps for Wiki migration:
 >Once you have migrated your Wiki extension files to the Team Services Wiki, you are ready to uninstall the Wiki extension.
 
 ## Related notes 
-
-
   
 - [Wiki page title naming conventions](add-edit-wiki.md#page-title-names)  
 - [Edit wiki pages offline](add-edit-wiki.md#edit-wiki-offline)  
 - [Source code for the wiki tools](https://github.com/Microsoft/vsts-wikiTools)  
 - [Git quickstart](../git/gitquickstart.md)
  
-### Feedback
-For bugs, questions and discussions, use the [GitHub Issues](https://github.com/Microsoft/vsts-wikiTools/issues).
-
-<!---
-Want to learn more about the new and exciting features of VSTS Wiki. Visit blog post - coming soon for more details.
--->
 
 ### Contributions 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.

@@ -98,7 +98,7 @@ The Configuration dialog for the Cycle Time and Lead Time widgets is the same. Y
 ### Pre-requisites
 In order to configure the Cycle Time and Lead Time widgets, you must have the following in place:  
 - Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../setup-admin/add-administrator-tfs.md) to add extensions.  
-- [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../work/scale/add-team-administrator.md) or have [permissions to add and edit dashboards](../dashboards.md#set-permissions). 
+- [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../work/scale/manage-team-assets.md#add-team-admin) or have [permissions to add and edit dashboards](../dashboards.md#set-permissions). 
 
 > [!NOTE]   
 > While the Cycle Time and Lead Time widgets use the Analytics data store, access to the data store for other report purposes is not supported at this time. 
@@ -110,7 +110,7 @@ In order to configure the Cycle Time and Lead Time widgets, you must have the fo
 
 3. If you haven't yet [added the widgets to your dashboard](../add-widget-to-dashboard.md), do that now.  
 
-4. Click the ![Configure widget icon](../_img/icons/configure-icon.png) configure icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
+4. Click the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
 
 	<img src="_img/cycle-lead-time-configure-dialog.png" alt="Configure dialog, Lead Time widget" style="border: 1px solid #CCCCCC;" />    
 

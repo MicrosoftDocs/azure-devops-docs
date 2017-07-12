@@ -6,17 +6,17 @@ ms.prod: vs-devops-alm
 ms.assetid: 6EB45080-22E2-43AD-92F9-77D03D5C136F  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/29/2017
+ms.date: 07/12/2017
 ---
 
 <!-- supports the FWLink: http://go.microsoft.com/fwlink/?LinkID=616878 --> 
 
 
-#Manage processes 
+# Manage processes 
 
 [!INCLUDE [temp](../_shared/process-feature-availability.md)]
 
-In Team Services, you customize your team project through a process. (You configure your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../scale/manage-team-assets.md).) A process defines the building blocks of the work tracking system. Whenever you create a team project, you select the process you want your team project to use. 
+In Team Services, you customize your team project through a process. (You configure your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../customize/customize-work.md#teams).) A process defines the building blocks of the work tracking system. Whenever you create a team project, you select the process you want your team project to use. 
 
 Team Services supports two types of processes. 
 
@@ -77,12 +77,12 @@ Once you've defined the inherited process, you can perform these actions:
 > - If you make a field required, work items with that field undefined will show an error message. You'll need to resolve the errors to make additional changes and save the work item. 
 > - If you add or remove/hide workflow states of a WIT that appears on the Kanban board, you'll need to update the Kanban board column configurations for all teams defined in the team project.  
 
-You can change the process a team project uses from a system process to an inherited process. You can only change team projects to use another process that inherits from the same system process. That is, you can change an Agile-based team project to any process you created from the Agile system process as well as to the Agile process. Whereas, you can't change a Scrum-based team project to an Agile-derived inherited process.  
+You can change the process a team project uses from a system process or inherited process to an inherited process.  You can only change team projects to use another process that inherits from the same system process. That is, you can change an Agile-based team project to any process you created from the Agile system process as well as to the Agile process. Whereas, you can't change a Scrum-based team project to an Agile-derived inherited process.  
 
 >[!NOTE]  
->To change a team project from one inherited process to another, you must first change them to use the system process from which they inherited. 
+>You can change the process of a team project as long as you don't have any undeleted work items of a custom work item type that isn't also defined in the target process. 
 >
->If you change a team project to a system process or other inherited process that doesn't contain the same custom fields, data is still maintained. However, the custom fields that aren't represented in the current process won't appear on the work item form. You can still access the field data through a query or REST APIs. These fields are essentially locked from changes and appear as read-only values.  
+>Also, iIf you change a team project to a system process or other inherited process that doesn't contain the same custom fields, data is still maintained. However, the custom fields that aren't represented in the current process won't appear on the work item form. You can still access the field data through a query or REST APIs. These fields are essentially locked from changes and appear as read-only values.  
 
 0. Open the &hellip; context menu for the process and choose the **Change team projects**&hellip; option. 
 
@@ -100,7 +100,7 @@ You can change the process a team project uses from a system process to an inher
 
 0. After  you've confirmed that the projects you want to change are correct, click Ok. 
 
-  
+
 
 <a id="create-team-project">  </a>
 ## Create a team project from a process 
@@ -168,27 +168,10 @@ To rename a process, open the &hellip; context menu for the process and choose *
 
 <a id="process-rest-api">  </a>
 ### Programmatically query for processes 
-You can determine the processes defined for an account using the REST API:   
-[Processes](https://visualstudio.com/integrate/api/tfs/processes.md).
+You can determine the processes defined for an account using the REST API: [Processes](../../integrate/api/tfs/processes.md).
 
 
 [!INCLUDE [temp](../_shared/help-support-shared.md)]
 
 [!INCLUDE [temp](../_shared/custom-help.md)]
 
-
-<!---
-
-
-1. Open the &hellip; context menu for the system process and choose the Change team projects&hellip; option. Here we choose to change the process used by two team projects to use the Agile process.  Only those projects created from the Agile process or one that inherits from Agile will appear in the 
-
-	<img src="_img/manage-process-migrate-team-project-to-inherited-process.png" alt="Open Change team projects dialog" style="border: 1px solid #CCCCCC;" />  
-
-2. Next, move the team project(s) to the migrate column.   
-
-	<img src="_img/manage-process-migrate-a-team-project.png" alt="Migrate team projects to an inherited process" style="border: 1px solid #CCCCCC;" />
-
-	
-
--->
- 

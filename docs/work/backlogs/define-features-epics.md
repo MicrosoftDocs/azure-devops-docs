@@ -7,7 +7,7 @@ ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 06/19/2017
+ms.date: 05/18/2017
 --- 
 
 # Define features and epics  
@@ -82,10 +82,15 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 </tr>
 <tr>
 <td>
-[Effort](../track/query-numeric.md)
+[Effort](../track/query-numeric.md)<br/>
+[Story Points](../track/query-numeric.md)<br/>
+[Size](../track/query-numeric.md)
 </td>
 <td>
-Provide a relative estimate of the amount of work required to complete a Feature or Epic. Use any numeric unit of measurement your team prefers. Some options are [story points, time, or other relative unit](create-your-backlog.md#estimates).<br />For user stories and requirements, you capture estimates in the Story Points and Size fields. These fields support usage of the [velocity and forecast](../scrum/velocity-and-forecasting.md) tools. 
+Provide a relative estimate of the amount of work required to complete a Feature or Epic. Use any numeric unit of measurement your team prefers. Some options are [story points, time, or other relative unit](create-your-backlog.md#estimates). 
+
+
+
 </td>
 </tr>
 
@@ -145,10 +150,6 @@ If you want bugs to show up on your backlog and you're not seeing them, [enable 
 
 Once you've defined features and epics, you can now [organize your backlog](organize-backlog.md) by mapping or drag-and-drop operations.  
 
->[!TIP]
->If you work from Team Services or TFS 2015.1 and later versions, you can 
->[drag-and-drop work items onto a sprint from any backlog or board](../scrum/define-sprints.md#drag-drop-to-sprint). 
- 
 ## Related notes  
 
 Portfolio backlogs are not only a great way to organize your project plan, but also a great way to provide visibility of project plans across enterprise teams. With portfolio backlogs, management teams can gain insight into project status across all their development teams. 
@@ -159,7 +160,7 @@ Portfolio backlogs are not only a great way to organize your project plan, but a
 - [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md)   
 - [Customize your backlogs or boards for a process](../process/customize-process-backlogs-boards.md)  
 - [Add portfolio backlogs](../customize/add-portfolio-backlogs.md)  
-- [Filter backlogs and boards](../how-to/filter-backlog-or-board.md)  
+
 
 > [!NOTE]
 > To understand the features supported on each backlog and board, and how each display hierarchical items, see [Backlogs, boards, and plans](../backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../scale/visibility-across-teams.md).    
@@ -180,7 +181,6 @@ A few things to keep in mind...
 |------------------|-------------|
 | Backlog          | Switch to backlog view   |
 | Board          | [Switch to Kanban board view](../kanban/kanban-basics.md)  |
-| Forecast: On/Off     | [Turn forecast tool on/off](http://msdn.microsoft.com/Library/Work/scrum/velocity-and-forecasting.md) (appears only when Parents is set to Hide, and only available for the product backlog) |
 | Mapping: On/Off     | [Turn mapping Off/On](#mapping)    |
 | Parents: Show/Hide         | Turn tree hierarchy on/off     |
 | In progress items: Show/Hide    |Show or hide list of backlog items whose State is active or in progress       |
@@ -190,9 +190,10 @@ A few things to keep in mind...
 | ![mail icon](../_img/icons/mail_icon.png)  | Email a copy of your backlog |
 | ![Filter](../_img/icons/tag_filter_icon.png)    | [Turn tag filtering On/Off ](../track/add-tags-to-work-items.md)  |
 
-
 Note that even if you have show parents turned on, the **Create query** and mail ![mail icon](../_img/icons/mail_icon.png) controls will only list items at the currently selected level. 
 
-See also [Keyboard shortcuts](../../reference/keyboard-shortcuts.md). 
+See also [Keyboard shortcuts](../../reference/keyboard-shortcuts.md).  
 
- 
+[!INCLUDE [temp](../_shared/filter-backlog-or-board.md)]
+
+[!INCLUDE [temp](../_shared/assign-to-sprint.md)]

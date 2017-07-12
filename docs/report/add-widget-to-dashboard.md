@@ -141,7 +141,7 @@ Each time a build is run, it logs information about the build, including the run
 
 	![Add a build summary chart to a dashboard](_img/add-chart-build-summary.png)  
 
-	If you aren't a team administrator, [get added as one](../work/scale/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
+	If you aren't a team administrator, [get added as one](../work/scale/manage-team-assets.md#add-team-admin). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
 
 2. Build summary charts look like this:  
 
@@ -162,7 +162,7 @@ Each time a [release is deployed](../build/actions/view-manage-releases.md#add-w
 
 	![Add a Release definition chart to a dashboard](_img/add-cd-release-definition.png)  
 
-	If you aren't a team administrator, [get added as one](../Work/scale/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
+	If you aren't a team administrator, [get added as one](../Work/scale/manage-team-assets.md#add-team-admin). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
 
 2. Release definition charts show the success (green), in progress (blue), cancellation (red), or non-deployment (grey) to an environment for the current and last four releases:  
 
@@ -178,7 +178,7 @@ Each time a [release is deployed](../build/actions/view-manage-releases.md#add-w
 
 As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../test/manual-exploratory-testing/getting-started/track-test-status.md).  
 
-1. Select your [team context](#switch-team-context), make sure you're a [team admin](../Work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](#switch-team-context), make sure you're a [team admin](../Work/scale/manage-team-assets.md#add-team-admin), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open the Test hub charts page and select the dashboard to add the test chart to.  
 
@@ -193,7 +193,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 
 You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../test/continuous-testing/getting-started/getting-started-with-continuous-testing.md).  
 
-1. Select your [team context](#switch-team-context), make sure you're a [team admin](../Work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](#switch-team-context), make sure you're a [team admin](../Work/scale/manage-team-assets.md#add-team-admin), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open a build summary for a build definition to which you've added tests, open the Tests page, and click the bar chart for either Test failures or Test duration.    
 
@@ -218,7 +218,7 @@ You add work item queries and charts to a dashboard from the Queries page. Queri
 
 1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](#switch-team-context) as needed.  
 
-2. If you aren't a team administrator, [get added as one](../Work/scale/add-team-administrator.md). Only team and project admins can add and customize team dashboards.  
+2. If you aren't a team administrator, [get added as one](../Work/scale/manage-team-assets.md#add-team-admin). Only team and project admins can add and customize team dashboards.  
 
 3. If you haven't yet created the dashboard, [do that now](dashboards.md).  
 
@@ -259,14 +259,14 @@ Here's an example:
 >
 >For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](../reference/markdown-guidance.md#relative-links). 
 
-To edit a markdown widget, you must be a team admin or a member of the Project Administrators group. To be added as a team admin, go [here](../work/scale/add-team-administrator.md). 
+To edit a markdown widget, you must be a team admin or a member of the Project Administrators group. To be added as a team admin, go [here](../work/scale/manage-team-assets.md#add-team-admin). 
 
 <a id="related-notes"></a>  
 ## Related notes
 
 To learn more about charts and dashboards, see the following topics:   
 
-- [Charts, dashboards, and widgets](overview.md) 
+- [Get started with Agile tools to monitor progress and trends](monitor-progress-trends.md) 
 - [Create a status or trend chart from a work item query](charts.md)  
 - [Create and customize team dashboards](dashboards.md)  
 - [Widget catalog](widget-catalog.md)  
@@ -276,7 +276,7 @@ To learn more about charts and dashboards, see the following topics:
 
 There are a number of system-generated charts that you can access from the web portal, but can't add to a dashboard. However, you may find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data which you can add to the dashboard. These include: 
 
-- [Velocity chart](../work/scrum/velocity-and-forecasting.md)
+- [Team velocity](./guidance/team-velocity.md)
 - [Sprint burndown chart](../work/scrum/sprint-burndown.md) (see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget))
 - [Cumulative flow](guidance/cumulative-flow.md) (see [CFD widget](widget-catalog.md#cfd-widget))
 
@@ -308,7 +308,7 @@ For example, the Chart for work items widget allows you to select an area size r
 
 ### Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://visualstudio.com/integrate/api/dashboard/overview.md).
+Using the REST API service, you can [create a dashboard widget](../../integrate/extensions/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](../../integrate/api/dashboard/overview.md).
 
 
 [!INCLUDE [temp](_shared/help-support-shared.md)]  

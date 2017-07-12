@@ -15,7 +15,7 @@ ms.date: 07/05/2017
 **Team Services**
 
 >[!NOTE]  
-><b>Feature availability: </b>The built-in wiki is in Preview and available for Team Services at this time. You enable this feature for a team project from the [Preview features option from your profile menu](preview-features.md#team-project-level).   
+><b>Feature availability: </b>The built-in wiki is in Preview and available for Team Services at this time. You enable this feature for a team project from the [Preview features option from your profile menu](preview-features.md#account-level).   
 >
 >If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md).  
 
@@ -157,7 +157,7 @@ For definitions of each repository permission, see [Git repository permissions](
 <img src="_img/wiki/security-dialog.png" alt="Wiki security dialog" style="border: 1px solid #CCCCCC;" />  
 
 >[!NOTE]  
->Users with [Stakeholder access](../quickstart/get-started-stakeholder.md) have read-only permissions to wiki pages. These permissions can't be changed. 
+>Users with [Stakeholder access](../work/connect/work-as-a-stakeholder.md) have read-only permissions to wiki pages. These permissions can't be changed. 
 
 ## Related notes
 

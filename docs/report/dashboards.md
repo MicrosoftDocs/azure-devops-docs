@@ -25,7 +25,7 @@ The Overview page provides access to a default team dashboard which you can cust
 
 <img src="_img/dashboard-view-with-widgets.png" alt="Example dashboard" style="border: 1px solid #CCCCCC;" />   
 
-Anyone with access to the team project, including [stakeholders](../quickstart/get-started-stakeholder.md), can view dashboards. However, only team admins can add or modify dashboards. 
+Anyone with access to the team project, including [stakeholders](../work/connect/work-as-a-stakeholder.md), can view dashboards. However, only team admins can add or modify dashboards. 
 
 If you need to add a team first, see [Multiple agile teams](../work/scale/multiple-teams.md). 
 
@@ -36,7 +36,7 @@ From the dashboards tab, click the ![plus icon](../Work/_img/icons/green_plus_ic
 
 ![Add and name a dashboard](_img/dashboards-new-ts.png) 
 
-If you don't see the ![plus icon](../work/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team. Either [switch the context to your team](#switch-team-context), or request you be added as a [team admin](../work/scale/add-team-administrator.md). 
+If you don't see the ![plus icon](../work/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team. Either [switch the context to your team](#switch-team-context), or request you be added as a [team admin](../work/scale/manage-team-assets.md#add-team-admin). 
 
 With the dashboard selected, you can add [widgets and charts to the dashboard](add-widget-to-dashboard.md). Or, you can [add charts to a team dashboard from the Work, Build, or Test hubs](add-widget-to-dashboard.md#add-charts).
 
@@ -63,7 +63,7 @@ The [widget catalog](widget-catalog.md) describes all the available widgets, man
 
 
 ### Configure a widget  
-After you add the widget, you may need to configure it. For example, to configure the Query tile widget, click the ![Configure widget icon](_img//icons/configure-icon.png) to open the configuration dialog.
+After you add the widget, you may need to configure it. For example, to configure the Query tile widget, click the ![Configure widget icon](_img/icons/configure-icon.png) or the ![Actions icon](_img/icons/actions-icon.png) to open the configuration dialog.
 
 ![Query tile unconfigured widget](_img/widget-query-tile-unconfigured.png)
 
@@ -198,14 +198,14 @@ As you can see, you can use team dashboards to provide guidance and keep your te
 - [Widget catalog](widget-catalog.md)
 
 
-Also, you can [create a dashboard widget ](https://www.visualstudio.com/en-us/extend/develop/add-dashboard-widget) using the REST API service. 
+Also, you can [create a dashboard widget ](https://www.visualstudio.com/en-us/integrate/extensions/develop/add-dashboard-widget) using the REST API service. 
 
 
 <a id="permissions">  </a>
 
 ### Required permissions
  
-If you don't see the ![plus icon](../work/_img/icons/green_plus_icon.png), then you don't have permission to edit your team dashboards. In general, you need to be a team admin for the currently selected team to edit dashboards. Request your current team or project admin to add you as a [team admin](../work/scale/add-team-administrator.md). 
+If you don't see the ![plus icon](../work/_img/icons/green_plus_icon.png), then you don't have permission to edit your team dashboards. In general, you need to be a team admin for the currently selected team to edit dashboards. Request your current team or project admin to add you as a [team admin](../work/scale/manage-team-assets.md#add-team-admin). 
 
 If you work in Team Services, you can ask your team admin to change dashboard permissions to allow you and other team members to edit dashboards as described in [Set permissions](#set-permissions) earlier in this topic. 
 
@@ -253,9 +253,9 @@ You add an item to the team dashboard from the code, work, and build pages.
 
 ### Extensibility 
 
-Using the REST API service, you can [add a dashboard](https://visualstudio.com/integrate/api/dashboard/dashboards.md). 
+Using the REST API service, you can [add a dashboard](../../integrate/api/dashboard/dashboards.md). 
 
-To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://visualstudio.com/integrate/api/dashboard/overview.md).  
+To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](../../integrate/api/dashboard/overview.md).  
 
 
 [!INCLUDE [temp](_shared/help-support-shared.md)]  

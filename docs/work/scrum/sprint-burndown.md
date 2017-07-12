@@ -7,7 +7,7 @@ ms.assetid: 706331A0-3758-4575-9B51-AC828F57161B
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 05/22/2017
+ms.date: 07/12/2017
 ---
 
 
@@ -130,7 +130,7 @@ Teams may find it useful to review this record periodically during their sprint 
 ##Try this next
 In addition to the sprint burndown chart, teams can review the velocity at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint.  
 
-You can use your team [velocity as input into the forecasting tool](velocity-and-forecasting.md) to help plan your sprints.   
+You can use your team [velocity](../../report/guidance/team-velocity.md) as input into the [forecast](forecast.md) tool to help plan your sprints.   
 
 
 ##Related notes

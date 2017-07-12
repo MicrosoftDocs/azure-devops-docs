@@ -1,12 +1,12 @@
 ---
 title: Add a team, add team members | Team Services & TFS 
-description: Add another team or a hierarchy of teams to scale your Agile tools-product and sprint backlogs, Kanban and task boards     
+description: Add another team or a hierarchy of teams to scale your Agile tools--product and sprint backlogs, Kanban and task boards     
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/23/2017
+ms.date: 07/12/2017
 ---
 
 
@@ -22,6 +22,53 @@ As your organization grows, you'll want to make sure that you configure your Agi
 >
 >For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](https://www.visualstudio.com/learn/scale-agile-large-teams/) article.
 
+Adding a team is the #1 way in which Agile tools supports a growing organization. Once your team grows beyond its optimum size&mdash;typically anywhere from 6 to 9 members&mdash;you might consider moving from a one team structure to a two team structure. For enterprises adopting Agile tools, setting up a hierarchical team structure provides several advantages to portfolio and program managers to track progress across several teams.  
+
+Each team you create gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. 
+
+![Agile tool team assets](_img/agile-tools-team-assets.png)
+
+To learn more about each tool, see the following topics: 
+
+<div style="float:left;width:200px;margin:3px;font-size:90%">
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Plan and track</p>
+<ul style="padding-left:30px">
+ <li style="margin-bottom:2px">[Product backlog](../backlogs/create-your-backlog.md)</li>
+ <li style="margin-bottom:2px">[Kanban board](../kanban/kanban-basics.md)</li>
+ <li style="margin-bottom:2px">[Portfolio backlogs](../backlogs/define-features-epics.md)</li>
+ <li style="margin-bottom:2px">[Sprint backlogs](../scrum/sprint-planning.md)</li>
+ <li style="margin-bottom:2px">[Sprint task boards](../scrum/task-board.md)</li>
+ <li style="margin-bottom:2px">[Capacity planning](capacity-planning.md)</li>
+ <li style="margin-bottom:2px">[Forecasting](../scrum/forecast.md)</li>
+</ul>
+</div>
+
+
+<div style="float:left;width:200px;margin:3px;font-size:90%">
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Collaborate</p>
+<ul style="padding-left:30px">
+ <li style="margin-bottom:2px">[Team alerts](../track/alerts-and-notifications.md)</li>
+ <li style="margin-bottom:2px">[Team favorites](manage-team-assets.md#team-favorites)</li>
+ <li style="margin-bottom:2px">[Team group](manage-team-assets.md#team-group)</li>
+ <li style="margin-bottom:2px">[Team rooms](../../collaborate/collaborate-in-a-team-room.md)</li>
+
+</ul>
+</div>
+
+<div style="float:left;width:200px;margin:3px;font-size:90%">
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Monitor and learn</p>
+<ul style="padding-left:30px">
+<li style="margin-bottom:2px">[Velocity chart](../../report/guidance/team-velocity.md) </li>
+ <li style="margin-bottom:2px">[Cumulative flow chart](../../report/guidance/cumulative-flow.md)</li>
+ <li style="margin-bottom:2px">[Capacity bars per sprint](capacity-planning.md)</li>
+ <li style="margin-bottom:2px">[Sprint burndown charts](../scrum/sprint-burndown.md)</li>
+ <li style="margin-bottom:2px">[Team dashboards](../../report/dashboards.md) </li> 
+</ul>
+</div>
+
+
+<div style="clear:left;font-size:100%">
+</div>
 
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 
@@ -214,8 +261,8 @@ One last step in moving from one team to two teams requires configuring the defa
 
 For teams to work autonomously, you may want to provide them with permissions that they don't have by default. Suggested tasks include providing team administrators or team leads permissions to:  
 
-- [Create and edit child nodes under their default area path](../customize/set-area-paths.md)  
-- [Create and edit child nodes under an existing iteration node](../customize/set-area-paths.md)  
+- [Create and edit child nodes under their default area path](../customize/modify-areas-iterations.md)  
+- [Create and edit child nodes under an existing iteration node](../customize/modify-areas-iterations.md)  
 - [Create shared queries and folders under the Shared Queries folder](../track/set-query-permissions.md).  
  
 By default, team members inherit the permissions afforded to members of the team project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can collaborate with other team members and [check in work to the team's code base](https://msdn.microsoft.com/library/ms181407.aspx) or [collaborate on a Git team project](../../git/get-started.md).  
@@ -231,11 +278,26 @@ You can use this group to filter queries. The name of team groups follows the pa
 
 <img src="_img/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 1px solid #CCCCCC;" /> 
 
- 
+
+<a id="add-team"> </a>  
+## View teams or switch to a different team  
+
+To view a list of teams defined for a team project, open the admin context for the team project, and choose **Overview**.  
+
+<img src="_img/add-teams-overview-vsts.png" alt="Web portal, admin context, team project, Overview page" style="border: 1px solid #CCCCCC;" /> 
+
+>[!NOTE]  
+>**Feature availability**: The **Process** link is only supported for team projects that use the [Inheritance process model](../customize/customize-work.md#inheritance).  
+
+[!INCLUDE [temp](../_shared/switch-team-context-work.md)]  
+
+
+### Switch to a team project or team from the account hub 
+If you work in Team Services or TFS 2017.1, you can use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](../../connect/account-home-pages.md).  
 
 
 
-## Try this next 
+##Try this next 
 
 Once you've created a team, you'll want to configure your Agile tools to support how your team works. Also, consider adding one or more accounts as team administrators. Team admins have the necessary permissions to add team members, add a team picture, and [configure and manage all team assets](manage-team-assets.md).  
 
@@ -247,7 +309,6 @@ If team members don't have access to all the features they want, check that they
 
 From a specific team admin page, you can rename a team or change the team description. Here are a few other topics related to working with teams: 
  
-- [Switch team project or team focus](../how-to/switch-team-context-work.md)  
 - [Configure team settings, add team administrators](manage-team-assets.md)  
 - [Visibility across teams](visibility-across-teams.md)  
 - [Review team plans](review-team-plans.md)    
@@ -256,7 +317,8 @@ From a specific team admin page, you can rename a team or change the team descri
 - [Practices that scale](practices-that-scale.md) 
 - [Restrict access to select features and functions](../../setup-admin/restrict-access-tfs.md)   
 
-
+### Stakeholder access  
+By granting users a Stakeholder license or adding them to the [Stakeholder access level](../connect/work-as-a-stakeholder.md), you enable them to create and modify work items that they create. Stakeholders can report code defects, suggest a product feature, or further annotate their feedback responses.
 
 ### Work on more than one team
 
@@ -281,5 +343,8 @@ Yes. When you add user accounts to a team project, you can add them as members o
 
 	<img src="_img/multiple-teams-delete-team-confirmation-dialog.png" alt="Delete team confirmation dialog" style="border: 1px solid #CCCCCC;" />  
 
- 
+### Replace team area path with a team field (On-premises TFS)  
+The default configuration for team projects associates each team with an area path. If your organization has several teams that work from a common backlog and across many product areas, this configuration might not fit how you want to organize your work. By adding a custom field to represent teams in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths.
+
+[Use team fields instead of area paths to support teams](../customize/use-team-fields-instead-area-paths.md) describes how to change the default configuration. 
  

@@ -8,14 +8,14 @@
 ## [Add and manage dashboards](dashboards.md) 
 ## [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)
 ## [Configure work item query-based charts](charts.md)
-## [Configure test status, progress, and result charts](/docs/test/manual-exploratory-testing/getting-started/track-test-status) 
+## [Configure test status, progress, and result charts](../test/manual-exploratory-testing/getting-started/track-test-status.md) 
 
 
 # Tutorials
 ## [Work with cumulative flow](guidance/cumulative-flow.md)
 ## [Work with lead/cycle time](guidance/cycle-time-and-lead-time.md) 
-## [Work with burndowns and burnups](../work/scrum/sprint-burndown.md) 
-## [Work with team velocity](../work/scrum/velocity-and-forecasting.md)
+## [Work with sprint burndown](../work/scrum/sprint-burndown.md) 
+## [Work with Velocity](guidance/team-velocity.md) 
 
  
 ## Power BI - Content Pack (Team Services)

@@ -159,7 +159,7 @@ Use the following guidance and that provided for [fields used in common across w
 
  
 
-      <p>Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. </p><p> By defining the **Size** for requirements, teams can use the Agile [velocity charts and forecast tools](../scrum/velocity-and-forecasting.md) to estimate future iterations or work efforts. The Kanban [Cumulative Flow Diagram](../kanban/kanban-basics.md) references the values in this field. For additional guidance, see the [Estimating](https://msdn.microsoft.com/library/hh765979) white paper.</p>
+      <p>Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. </p><p> By defining the **Size** for requirements, teams can use the Agile [velocity charts](../../report/guidance/team-velocity.md) and [forecast](../scrum/forecast.md) tools to estimate future iterations or work efforts. The Kanban [Cumulative Flow Diagram](../kanban/kanban-basics.md) references the values in this field. For additional guidance, see the [Estimating](https://msdn.microsoft.com/library/hh765979) white paper.</p>
     </td>
   </tr>
 <tr>
@@ -299,7 +299,7 @@ Use the following guidance and that provided for [fields used in common across w
 
 
 >[!TIP]    
->Use the [Discussion section](../concepts/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from Team Services.   
+>Use the [Discussion section](../backlogs/add-work-items.md#discussion) to add and review comments made about the work being performed. This feature is only available from Team Services.   
 
 
 ## Track progress
@@ -448,7 +448,7 @@ You can add an issue from the  [New work item widget](../../Report/widget-catalo
 
 ![Add work item from a New work item widget](_img/cmmi-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../how-to/switch-team-context-work.md).  
+Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team context](#team-context).  
 
 
 [!INCLUDE [temp](../_shared/common-work-item-fields.md)]   
@@ -467,7 +467,7 @@ The [Stack Rank](../track/planning-ranking-priorities.md) field is used to track
 
 This field doesn't appear on the work item form. 
 
-[!INCLUDE [temp](../how-to/switch-team-context-work.md)]  
+[!INCLUDE [temp](../_shared/switch-team-context-work.md)]  
   
 
 ### Links control, client work item form 

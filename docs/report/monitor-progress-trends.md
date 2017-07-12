@@ -83,7 +83,7 @@ Take these tools for a test run by [creating an account on Team Services for fre
 
 ##Related notes
 
-Prior to monitoring progress and trends, you'll need to have [planned your project and made progress on work you're tracking](../work/agile-project-management.md). 
+Prior to monitoring progress and trends, you'll need to have [planned your project and made progress on work you're tracking](../work/overview.md). 
 
 In addition to the lightweight charts, you also have access to these reports, subject to platform and resource requirements being met.   
 

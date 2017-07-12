@@ -74,27 +74,27 @@
 
 # Concepts
 
+## About processes & Agile methods (NEW)  
+## [Agile tools and sprint planning](concepts/sprint-planning-tools.md)
 ## [Backlogs, boards, & plans](backlogs-boards-plans.md)
-## [Sprint Agile tools](concepts/sprint-planning-tools.md)
-## About processes & Agile methods (TBW)  
+## [Backlog items & multi-team ownership](backlogs/work-multi-team-ownership-backlogs.md)
 ## [Adhoc vs managed queries](track/adhoc-vs-managed-queries.md) 
+## [Link types & link relationships](track/link-work-items-support-traceability.md) 
 ## [Work item form controls](concepts/work-item-form-controls.md)
 ## [Workflow states & state categories](concepts/workflow-and-state-categories.md)
-## [Link types & link relationships](track/link-work-items-support-traceability.md) 
 
 ## Best practices 
 ### [Product backlog](concepts/best-practices-product-backlog.md)  
 ### [Sprint/Scrum](concepts/best-practices-scrum.md)  
 ### [Kanban](concepts/best-practices-kanban.md)  
 
-## [Backlog items & multi-team ownership](backlogs/work-multi-team-ownership-backlogs.md)
 ## [Office integration](office/track-work-vsts-tfs.md)
 ## [New work item experience](process/new-work-item-experience.md)
 
 
 
 ## Scaling Agile
-### [Agile culture & scale](scale/agile-culture.md)
+### [Agile culture](scale/agile-culture.md)
 ### [Practices that scale](scale/practices-that-scale.md)
 
 ## Process guidance
@@ -182,10 +182,10 @@
 ### [Define iteration paths](customize/set-iteration-paths-sprints.md) 
 ### [Manage permissions & access](how-to/set-permissions-access-work-tracking.md) 
 ### [Set query permissions](track/set-query-permissions.md) 
-### [Change access levels](work/connect/change-access-levels.md)
+### [Change access levels](connect/change-access-levels.md)
 ### [Manage new form rollout](customize/manage-new-form-rollout.md)
-### [Customize work tracking](work/customize/customize-work.md) 
-### [TFS-Project Server integration](work/office/sync-ps-tfs.md) 
+### [Customize work tracking](customize/customize-work.md) 
+### [TFS-Project Server integration]office/sync-ps-tfs.md) 
 
 # Reference
 ## [Permissions & access for work tracking](permissions-access-work-tracking.md)  

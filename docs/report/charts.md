@@ -98,13 +98,13 @@ If you've already defined your [flat list query](../work/track/using-queries.md)
 
 2. Click ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify a dashboard, and then click ![add a widget icon](_img/add-widget-icon.png) to access the widget catalog.  
 
-	If you don't see these icons, then you need to be added as a [team administrator](../work/scale/add-team-administrator.md) or a member of the Project Administrators group. 
+	If you don't see these icons, then you need to be added as a [team administrator](../work/scale/manage-team-assets.md#add-team-admin) or a member of the Project Administrators group. 
 
 3. Choose the Chart for work items widget and then click Add. 
 
 	<img src="_img/widget-chart-work-query.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget" style="border: 1px solid #CCCCCC;" /> 
 
-4. Click the widget's ![Configure widget icon](_img//icons/configure-icon.png) configure icon to open the configuration dialog. 
+4. Click the widget's ![Configure widget icon](_img/icons/configure-icon.png) or the ![Actions icon](_img/icons/actions-icon.png) configure icon to open the configuration dialog. 
 
 	<img src="_img/charts-chart-wit-widget-configure-dialog.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget, Configuration dialog" style="border: 1px solid #CCCCCC;" /> 
 
@@ -138,7 +138,7 @@ Now you know how to create status and trend charts for work items. A few things 
 Also, from the web portal, you can view the following charts:  
 
 - [Cumulative flow diagram](./guidance/cumulative-flow.md)  
-- [Team velocity](../Work/scrum/velocity-and-forecasting.md)  
+- [Team velocity](./guidance/team-velocity.md)  
 - [Sprint burndown charts](../work/scrum/sprint-burndown.md)  
 - [Test progress and test results](../test/manual-exploratory-testing/getting-started/track-test-status.md)  
 - [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
@@ -146,7 +146,7 @@ Also, from the web portal, you can view the following charts:
 
 
 ### Requirements to view and create charts  
-If you have [Stakeholder access or license](../quickstart/get-started-stakeholder.md), you can only view charts. If you need to create charts, ask your project admin or account owner to grant you elevated access.   
+If you have [Stakeholder access or license](../work/connect/work-as-a-stakeholder.md), you can only view charts. If you need to create charts, ask your project admin or account owner to grant you elevated access.   
 
 ### Fields that show up in the chart editor
 For fields to appear in the chart editor, you must add the field to either the query filter criteria or a displayed column. 

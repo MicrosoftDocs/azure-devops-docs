@@ -293,6 +293,26 @@ Adds a configurable tile to display the summary of a shared query results.</p>
 </div> 
  
 ---- 
+<a id="sprint-velocity-widget"></a> 
+### Velocity (team-scoped) 
+<div style="float:left;width:390px;margin:3px;padding-right:15px;">
+![Sprint velocity widget](_img/widget-velocity.png)
+
+<blockquote style="font-size: 13px"><b>Feature availability:</b> This widget is available for Team Services. To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../setup-admin/add-administrator-tfs.md) to add extensions.
+</blockquote>
+</div>
+
+<div style="float:left;width:300px;margin:3px;">
+<p>The velocity widget tracks a team's capacity to deliver work sprint after sprint. You configure the widget by selecting a team, a work item type, an aggregation field, and the number of sprints. The widget takes advantage of the Analytics service. You can track the velocity for a single team, not multiple teams.   </p> 
+<p>For additional guidance, see [Team velocity](guidance/team-velocity.md). </p>
+</div>
+
+<div style="clear:left;font-size:100%">
+</div> 
+
+
+
+---- 
 <a id="work-links-widget"></a> 
 ### Work links (team-scoped) 
 <div style="float:left;width:390px;margin:3px;padding-right:15px;">
@@ -516,7 +536,7 @@ These represent the basic widgets. Look forward to more widgets becoming availab
 
 See also these additional resources for tracking and monitoring progress: 
 
-- [Charts, dashboards, and widgets](overview.md)
+- [Get started with Agile tools to monitor progress and trends](monitor-progress-trends.md)
 - [Dashboards](dashboards.md)
 - [Charts](charts.md)
 - [Add widgets and charts to a dashboard](add-widget-to-dashboard.md)
@@ -533,7 +553,7 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 
 ### Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://visualstudio.com/integrate/api/dashboard/overview.md).
+Using the REST API service, you can [create a dashboard widget](../../integrate/extensions/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](../../integrate/api/dashboard/overview.md).
 
 
 [!INCLUDE [temp](_shared/help-support-shared.md)]  
