@@ -57,6 +57,8 @@ pointers to help you achieve the desired behavior:
 
 * When you queue a build or a deployment, the encapsulated tasks
   are extracted and the values you entered for the task group parameters are applied to the tasks.
+  
+* Changes you make to a task group are reflected in every instance of the task group.
 
 All the task groups you create in the current project are listed in
 the **Task groups** tab of the **Build & Release** hub.
@@ -73,7 +75,15 @@ the **Task groups** tab of the **Build & Release** hub.
 
 * In the **History** tab you can see the history of changes to the group.
 
->The changes you make are reflected in every instance of the task group.
+* In the **References** tab you can expand lists of all the release definitions,
+  build definitions, and other task groups that use (reference) this task group.
+  This is useful to ensure changes do not have unexpected effects on other processes.
+
+  ![References to a task group](_img/task-group-references.png)
+
+You can import and export a task group as a JSON file.
+
+![Import or export a task group](_img/import-export-task-group.png)
 
 ## Related topics
 

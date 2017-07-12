@@ -58,7 +58,6 @@ continuous integration (CI) and continuous deployment (CD) process.
  <li style="margin-bottom:5px">[Azure Container Service (Kubernetes)](cd/azure/deploy-container-kubernetes.md)</li>
  <li style="margin-bottom:5px">[IIS using deployment groups](cd/deploy-webdeploy-iis-deploygroups.md)</li>
  <li style="margin-bottom:5px">[IIS using Win RM](cd/deploy-webdeploy-iis-winrm.md)</li>
- <li style="margin-bottom:5px">[Deploy from Jenkins](jenkins/build-deploy-jenkins.md)</li>
 </ul>
 </div>
 

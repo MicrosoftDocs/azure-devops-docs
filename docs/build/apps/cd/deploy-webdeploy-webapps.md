@@ -82,10 +82,29 @@ If you want to deploy to a staging slot in an Azure App Services website, and th
 
 1. Configure the tasks in the environment of the release definition as follows:
 
-   | Task step | Parameters |
-   | --------- | ---------- |
-   | ![Azure App Service Deploy](../../steps/deploy/_img/azure-web-app-deployment-icon.png)<br/>[Deploy: Azure App Service Deploy](../../steps/deploy/azure-app-service-deploy.md)<br />Deploy the app to Azure App Services. | **Azure Subscription**: Select your Azure subscription<br />**App Service name**: Select your App Service.<br />**Deploy to slot**: `Checked`.<br />**Slot**: `Staging` |
-   | ![Azure App Service Manage](../../steps/deploy/_img/azure-app-service-manage.png)<br/>[Deploy: Azure App Service Manage](../../steps/deploy/azure-app-service-manage.md)<br />Swap slots. | **Azure Subscription**: Select your Azure subscription<br />**Action**: `Swap slots`<br />**App Service name**: Select your App Service.<br />**Resource group**: Select the resource group to which your App Service belongs.<br />**Source slot**: `Staging` |
+   ![Azure App Service Deploy](../../steps/deploy/_img/azure-web-app-deployment-icon.png) [Deploy: Azure App Service Deploy](../../steps/deploy/azure-app-service-deploy.md) - Deploy the app to Azure App Services.
+   
+   - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm).
+   
+   - **App Service name**: Select your App Service.
+   
+   - **Deploy to slot**: `Checked`.
+   
+   - **Slot**: `Staging`<p />
+   
+   ![Azure App Service Manage](../../steps/deploy/_img/azure-app-service-manage.png) [Deploy: Azure App Service Manage](../../steps/deploy/azure-app-service-manage.md) - Swap slots.
+   
+   - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm).
+   
+   - **Action**: `Swap slots`
+   
+   - **App Service name**: Select your App Service.
+   
+   - **Resource group**: Select the resource group to which your App Service belongs.
+   
+   - **Source slot**: `Staging` <p />
    
 You might also consider [Configuring Auto Swap](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-staged-publishing#Auto-Swap)
 for your Azure App Services web app to automatically swap the app into production after successful deployment.

@@ -281,6 +281,8 @@ You can use the template described above as to facilitate generating other kinds
 
 [launchd.plist manpage](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man5/launchd.plist.5.html)
 
+[!INCLUDE [include](_shared/v2/qa-firewall.md)]
+
 [!INCLUDE [include](_shared/v2/qa-proxy-unix.md)]
 
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]

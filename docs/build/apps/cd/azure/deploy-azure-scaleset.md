@@ -61,10 +61,33 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 
 1. Configure the **Build Machine Image** task as follows:
 
-   | Task step | Parameters |
-   | --------- | ---------- |
-   | ![Build Machine Image](../../../steps/deploy/_img/build-machine-image.png)<br/>[Deploy: Build Machine Image](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/15/deploying-applications-to-azure-vm-scale-sets/)<br/>Build machine image using Packer. | **Packer template**: You can use your own packer configuration JSON file or use the auto-generate feature where the task generates a packer template for you. This example uses the auto-generated packer configuration.<br />**Azure subscription**: Select the Azure service connection you want to use, or create a new service connection.<br />**Storage location**: The location of storage account where the VHD will be stored. This should be the same location where the virtual machine scale set is located, or where it will be created.<br />**Base Image Source**: You can choose from either a curated gallery of OS images, or provide the URL of your custom image. For example, `Ubuntu 16.04 LTS`<br />**Deployment Package**: Specify the path of the deployment package directory relative to **$(System.DefaultWorkingDirectory)**. For example, `$(System.DefaultWorkingDirectory)/Packer-NodeJs/drop`<br />**Deployment Script**: Specify the relative path to the PowerShell script (for Windows) or shell script (for Linux) that deploys the package. This script should be within the deployment package path selected above. For example, `Deploy/ubuntu/deployNodejsApp.sh`. The script may need to install Curl, Node.js, NGINX, and PM2; copy the application; and then configure NGINX and PM2 to run the application.<br />**Output – Image URL**: Provide a name for the output variable that will hold the URL of the generated machine image. For example, `bakedImageUrl` |
-   | ![Azure PowerShell](../../../steps/deploy/_img/azure-powershell-icon.png)<br/>[Deploy: Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell)<br/>Run a PowerShell script to update the Virtual Machine Scale Set with the new VHD. | **Azure Connection Type**: Select `Azure Resource Manager`<br/>**Azure RM Subscription**: Select the Azure service connection you want to use, or create a new service connection.<br/>**Script type**: Select `Inline Script`<br/>**Inline Script**: Enter the script shown below to update the virtual machine scale set |
+   ![Build Machine Image](../../../steps/deploy/_img/build-machine-image.png) [Deploy: Build Machine Image](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/15/deploying-applications-to-azure-vm-scale-sets/) - Build machine image using Packer.
+   
+   - **Packer template**: You can use your own packer configuration JSON file or use the auto-generate feature where the task generates a packer template for you. This example uses the auto-generated packer configuration.
+   
+   - **Azure subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm).
+   
+   - **Storage location**: The location of storage account where the VHD will be stored. This should be the same location where the virtual machine scale set is located, or where it will be created.
+   
+   - **Base Image Source**: You can choose from either a curated gallery of OS images, or provide the URL of your custom image. For example, `Ubuntu 16.04 LTS`
+   
+   - **Deployment Package**: Specify the path of the deployment package directory relative to **$(System.DefaultWorkingDirectory)**. For example, `$(System.DefaultWorkingDirectory)/Packer-NodeJs/drop`
+   
+   - **Deployment Script**: Specify the relative path to the PowerShell script (for Windows) or shell script (for Linux) that deploys the package. This script should be within the deployment package path selected above. For example, `Deploy/ubuntu/deployNodejsApp.sh`. The script may need to install Curl, Node.js, NGINX, and PM2; copy the application; and then configure NGINX and PM2 to run the application.
+   
+   - **Output - Image URL**: Provide a name for the output variable that will hold the URL of the generated machine image. For example, `bakedImageUrl`<p />
+   
+   ![Azure PowerShell](../../../steps/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell) - Run a PowerShell script to update the Virtual Machine Scale Set with the new VHD.
+   
+   - **Azure Connection Type**: Select `Azure Resource Manager`
+   
+   - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm).
+   
+   - **Script type**: Select `Inline Script`
+   
+   - **Inline Script**: Enter the script shown below to update the virtual machine scale set.<p />
    
    Use the following script for the **Inline Script** parameter of the **Azure PowerShell** task: 
    

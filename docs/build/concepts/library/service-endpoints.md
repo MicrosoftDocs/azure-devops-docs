@@ -106,6 +106,17 @@ You must use this version of the dialog when connecting to an [Azure Government 
 | Tenant ID | Required only if you want to use an existing service principal. The ID of the client tenant in Azure Active Directory. [More information](#sep-azure-rm-existingsp). |
 <p />
 
+**Restricting access rights**
+
+By default, the service endpoint will give users read/write permissions as a **Contributor**
+to all the resources within the specified subscription. If you prefer to restrict the access
+rights of users of the service endpoint, you must use the manual approach to creating the 
+endpoint with a service principal. You can give a service principal permissions at the
+subscription level, resource group level, or resource level. For details of how to restrict
+a service principal's access rights by using Role-Based Access Control
+([RBAC](https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-built-in-roles)) roles, see
+[Use portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal).
+
 >If your subscription is defined in an [Azure Government Cloud](government-cloud.md), ensure your application meets the relevant compliance requirements before you configure a service endpoint.
 
 <a name="sep-azure-rm-conditions"></a>
@@ -386,7 +397,7 @@ available through extensions are:
   start, stop, or snapshot VMware virtual machines.
 
 For information about creating your own custom extensions, see
-[Overview of extensions for Visual Studio Team Services](../../../extend/overview.md).
+[Overview of extensions for Visual Studio Team Services](../../../../integrate/extensions/overview.md).
 
 <h2 id="security">Endpoint security</h2>
 

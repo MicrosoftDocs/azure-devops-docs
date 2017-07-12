@@ -223,11 +223,11 @@ when creating a release. When you link a **TFVC branch**,
 you can specify the changeset to be deployed
 when creating a release.
 
-The following features are available when using TFVC or Git sources:
+The following features are available when using TFVC, Git, and GitHub sources:
 
-| Feature | Behavior with TFVC and Git sources |
+| Feature | Behavior with TFVC, Git, and GitHub sources |
 |---------|----------------------------------------|
-| Auto-trigger releases | You cannot configure a continuous deployment trigger for version control sources in a release definition. There is currently no easy way to automatically trigger a release when a new commit is made to a repository. |
+| Auto-trigger releases | You can configure a continuous deployment trigger for pushes into the repository in a release definition. This can automatically trigger a release when a new commit is made to a repository. See [Triggers](triggers.md). |
 | Artifact variables | A number of [artifact variables](variables.md) are supported for version control sources. |
 | Work items and commits | Release Management cannot show work items or commits associated with releases when using version control artifacts.|
 | Artifact download | By default, version control artifacts are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |

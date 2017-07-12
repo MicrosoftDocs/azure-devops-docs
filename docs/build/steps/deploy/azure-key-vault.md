@@ -1,5 +1,5 @@
 ---
-title: Team Services and Team Foundation Server Build and Deploy - Azure Key Vault
+title: Team Services and Team Foundation Server Build and Deploy - Azure Key Vault task
 description: Team Services and Team Foundation Server build task step to download secrets such as authentication keys, storage account keys, data encryption keys, .PFX files, and passwords from an Azure key vault
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
@@ -42,6 +42,19 @@ Add secrets to a key vault:
 * By using the Azure CLI. To add a secret to a key vault, for example a secret named **SQLPassword** with the value **Pa$$w0rd**, type:
 
   `az keyvault secret set --vault-name 'ContosoKeyVault' --name 'SQLPassword' --value 'Pa$$w0rd'`
+
+When you want to access secrets:
+
+* Ensure the Azure endpoint has at least **Get** and **List** permissions
+  on the vault. You can set these permissions in the [Azure portal](https://portal.azure.com):
+
+  - Open the **Settings** blade for the vault, choose **Access policies**, then **Add new**.
+
+  - In the **Add access policy** blade, choose **Select principal** and select the service principal for your client account.
+
+  - In the **Add access policy** blade, choose **Secret permissions** and ensure that **Get** and **List** are checked (ticked).
+
+  - Choose **OK** to save the changes.<p />
 
 ### Parameters of the task:
 

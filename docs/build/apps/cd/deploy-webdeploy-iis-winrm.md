@@ -143,11 +143,32 @@ Continuous deployment (CD) means starting an automated release process whenever 
 1. On the **Variables** tab of the environment in release definition, configure a variable named **WebServers** with the list of IIS servers as its value; for example `machine1,machine2,machine3`.
 
 1. Configure the following tasks in the environment:
-
-   | Task step | Parameters |
-   | --------- | ---------- |
-   | ![Windows Machine File Copy](../../steps/deploy/_img/windows-machine-file-copy-icon.png)<br/>[Deploy: Windows Machine File Copy](../../steps/deploy/windows-machine-file-copy.md)<br/>Copy the Web Deploy package to the IIS servers. | **Source**: Select the Web deploy package (zip file) from the artifact source.<br/>**Machines**: `$(WebServers)`<br/>**Admin Login**: Enter the administrator credentials for the target servers.<br/>- For workgroup-joined computers, use the format `.\username`.<br/>- For domain-joined computers, use the format `domain\username`.<br/>**Password**: Enter the administrator password for the target servers.<br/>**Destination Folder**: Specify a folder on the target server where the files should be copied to. |
-   | ![WinRM - IIS Web App Deployment](../../steps/deploy/_img/iis-web-application-deployment-icon.png)<br/>[Deploy: WinRM - IIS Web App Deployment](https://github.com/Microsoft/vsts-rm-extensions/blob/master/Extensions/IISWebAppDeploy/Src/Tasks/IISWebAppDeploy/README_IISAppDeploy.md)<br/>Deploy the package. | **Machines**: `$(WebServers)`<br/>**Admin Login**: Enter the administrator credentials for target servers.<br/>- For workgroup-joined computers, use the format `.\username`.<br/>- For domain-joined computers, use the format `domain\username`.<br/>**Password**: Enter the administrator password for target servers.<br/>**Protocol**: Select `HTTP` or `HTTPS` (depending on how you configured the target machine earlier). Note that if the target machine is workgroup-joined, you must choose `HTTPS`. You can use HTTP only if the target machine is domain-joined and configured to use a FDQN.<br/>**Web Deploy Package**: Fully qualified path of the zip file you copied to the target server in the previous task step.<br/>**Website Name**: `Default Web Site` (or the name of the website if you configured a different one earlier). |
+  
+   ![Windows Machine File Copy](../../steps/deploy/_img/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../../steps/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
+   
+   - **Source**: Select the Web deploy package (zip file) from the artifact source.
+   
+   - **Machines**: `$(WebServers)`
+   
+   - **Admin Login**: Enter the administrator credentials for the target servers. For workgroup-joined computers, use the format `.\username`. For domain-joined computers, use the format `domain\username`.
+   
+   - **Password**: Enter the administrator password for the target servers.
+   
+   - **Destination Folder**: Specify a folder on the target server where the files should be copied to.<p />
+   
+   ![WinRM - IIS Web App Deployment](../../steps/deploy/_img/iis-web-application-deployment-icon.png) [Deploy: WinRM - IIS Web App Deployment](https://github.com/Microsoft/vsts-rm-extensions/blob/master/Extensions/IISWebAppDeploy/Src/Tasks/IISWebAppDeploy/README_IISAppDeploy.md) - Deploy the package.
+   
+   - **Machines**: `$(WebServers)`
+   
+   - **Admin Login**: Enter the administrator credentials for target servers. For workgroup-joined computers, use the format `.\username`. For domain-joined computers, use the format `domain\username`.
+   
+   - **Password**: Enter the administrator password for target servers.
+   
+   - **Protocol**: Select `HTTP` or `HTTPS` (depending on how you configured the target machine earlier). Note that if the target machine is workgroup-joined, you must choose `HTTPS`. You can use HTTP only if the target machine is domain-joined and configured to use a FDQN.
+   
+   - **Web Deploy Package**: Fully qualified path of the zip file you copied to the target server in the previous task step.
+   
+   - **Website Name**: `Default Web Site` (or the name of the website if you configured a different one earlier).<p />
 
 1. Edit the name of the release definition, click **Save**, and click **OK**. Note that the default environment is named Environment1, which you can edit by clicking directly on the name.
 

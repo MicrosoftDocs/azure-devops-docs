@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Define a continuous integration build for your Node.js app
 
-[!INCLUDE [temp](../../_shared/version.md)]
+**[Team Services](../../nodejs/quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../release/previous-version/release-management-overview.md)**
 
 [!INCLUDE [temp](../../_shared/ci-cd-newbies.md)]
 

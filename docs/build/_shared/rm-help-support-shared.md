@@ -6,6 +6,4 @@
 
 * Follow us on [Twitter](https://twitter.com/vsreleasemgmt) @vsreleasemgmt
 
-* Send a smile from the ![Send-a-Smile](../_img/sendsmile.png) link on the menu bar.
-
 

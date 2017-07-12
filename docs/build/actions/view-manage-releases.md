@@ -319,7 +319,7 @@ For details of how to set up approvals and specify the approval policy,
 see [Approvals](../concepts/definitions/release/environments.md#approvals).
 
 >You can also approve and reject pending releases by accessing the
-[Release Management REST API](https://visualstudio.com/integrate/api/rm/overview.md).
+[Release Management REST API](../../../integrate/api/rm/overview.md).
 
 <h2 id="redeploy-release">Redeploy a release</h2>
 
@@ -476,7 +476,7 @@ removal of Christie Church as an approver.
 
 ### How do I programmatically create a release definition?
 
-[Release Management REST API](https://visualstudio.com/integrate/api/rm/overview.md)
+[Release Management REST API](../../../integrate/api/rm/overview.md)
 
 [!INCLUDE [qa-agents](../_shared/qa-agents.md)]
 

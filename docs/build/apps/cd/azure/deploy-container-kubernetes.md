@@ -44,11 +44,45 @@ for deployment using ACS.
 
 1. Configure the tasks as follows:
 
-   | Task step | Parameters |
-   | --------- | ---------- |
-   | ![Build: Docker](../../../steps/deploy/_img/docker-icon.png)<br/>[Build: Docker](../../../steps/deploy/deploy-to-kubernetes.md)<br/>Build the container image from the Docker file | **Container Registry type**: `Azure Container Registry`<br />**Azure Subscription:** Select a connection from the list under **Available Azure Service Connections**. If no connections appear, choose **Manage**, select **New Service Endpoint** then **Azure Resource Manager**, and follow the prompts. Then return to your release definition, refresh the **AzureRM Subscription** list, and select the connection you just created.<br/>**Azure Container Registry**: Select the target Azure container registry.<br />**Action**: `Build an image`<br />**Image name**: Enter the name for your Docker image.<br />**Qualify Image Name**: Checked<br />**Additional Image Tags**: `$(Build.BuildId)` |
-   | ![Build: Docker](../../../steps/deploy/_img/docker-icon.png)<br/>[Build: Docker](../../../steps/deploy/deploy-to-kubernetes.md)<br/>Push the container image to a container registry | **Container Registry type**: `Azure Container Registry`<br />**Azure Subscription:** Select a connection from the list under **Available Azure Service Connections**. If no connections appear, choose **Manage**, select **New Service Endpoint** then **Azure Resource Manager**, and follow the prompts. Then return to your release definition, refresh the **AzureRM Subscription** list, and select the connection you just created.<br/>**Azure Container Registry**: Select the target Azure container registry.<br />**Action**: `Push an image`<br />**Image name**: Enter the name of your Docker image.<br />**Qualify Image Name**: Checked<br />**Additional Image Tags**: `$(Build.BuildId)` |
-   | ![Build: Publish Build Artifacts](../../../steps/build/_img/publish-build-artifacts.png)<br/>[Build: Publish Build Artifacts](../../../steps/deploy/deploy-to-kubernetes.md)<br/>Publish the Kubernetes configuration files used for creating the [deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) and [service](https://kubernetes.io/docs/concepts/services-networking/service/) in the cluster. These files are added to the [repository](https://github.com/azooinmyluggage/k8s-docker-core/tree/master/k8config). | **Path to Publish**: `k8config`<br />**Artifact name:** `yaml`<br/>**Artifact Type**: `Server` |
+   ![Build: Docker](../../../steps/deploy/_img/docker-icon.png)<br/>[Build: Docker](../../../steps/deploy/deploy-to-kubernetes.md) Build the container image from the Docker file.
+   
+   - **Container Registry type**: `Azure Container Registry`
+   
+   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm).
+   
+   - **Azure Container Registry**: Select the target Azure container registry.
+   
+   - **Action**: `Build an image`
+   
+   - **Image name**: Enter the name for your Docker image.
+   
+   - **Qualify Image Name**: Checked
+   
+   - **Additional Image Tags**: `$(Build.BuildId)`<p />
+   
+   ![Build: Docker](../../../steps/deploy/_img/docker-icon.png)<br/>[Build: Docker](../../../steps/deploy/deploy-to-kubernetes.md) Push the container image to a container registry.
+   
+   - **Container Registry type**: `Azure Container Registry`
+   
+   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm).
+   
+   - **Azure Container Registry**: Select the target Azure container registry.
+   
+   - **Action**: `Push an image`
+   
+   - **Image name**: Enter the name of your Docker image.
+   
+   - **Qualify Image Name**: Checked
+   
+   - **Additional Image Tags**: `$(Build.BuildId)`<p />
+   
+   ![Build: Publish Build Artifacts](../../../steps/build/_img/publish-build-artifacts.png) [Build: Publish Build Artifacts](../../../steps/deploy/deploy-to-kubernetes.md) - Publish the Kubernetes configuration files used for creating the [deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) and [service](https://kubernetes.io/docs/concepts/services-networking/service/) in the cluster. These files are added to the [repository](https://github.com/azooinmyluggage/k8s-docker-core/tree/master/k8config).
+   
+   - **Path to Publish**: `k8config`
+   
+   - **Artifact name:** `yaml`
+   
+   - **Artifact Type**: `Server` <p />
 
 1. Save your build definition.
 
@@ -71,11 +105,51 @@ Your CD release process picks up the artifacts published by your CI build and th
 
 1. Configure the tasks as follows:
 
-   | Task step | Parameters |
-   | --------- | ---------- |
-   | ![Deploy: Deploy to Kubernetes](../../../steps/deploy/_img/kubernetes-icon.png)<br/>[Deploy: Deploy to Kubernetes](../../../steps/deploy/deploy-to-kubernetes.md)<br/>Create the deployment and secret  | **Container Registry type**: `Azure Container registry`<br />**Azure Subscription:** Select a connection from the list under **Available Azure Service Connections**. If no connections appear, choose **Manage**, select **New Service Endpoint** then **Azure Resource Manager**, and follow the prompts. Then return to your release definition, refresh the **AzureRM Subscription** list, and select the connection you just created.<br/>**Azure Container registry**: Select the Azure container registry to which you pushed your container images.<br />**Secret name**: Name of the Docker registry secret. You can use this secret name in the Kubernetes YAML configuration file.<br />**Command**: `apply` (you can run any kubectl command)<br />**Use Configuration file**: Checked<br />**Configuration file**: Select the **deployment.yaml** file that was published as an artifact from the build. Example: `$(System.DefaultWorkingDirectory)/Kubernetes-ACS-CI/yaml/deployment.yaml` |
-   | ![Deploy: Deploy to Kubernetes](../../../steps/deploy/_img/kubernetes-icon.png)<br/>[Deploy: Deploy to Kubernetes](../../../steps/deploy/deploy-to-kubernetes.md)<br/>Create the service using the yaml file  | **Container Registry type**: `Azure Container registry`<br />**Azure Subscription:** Select a connection from the list under **Available Azure Service Connections**. If no connections appear, choose **Manage**, select **New Service Endpoint** then **Azure Resource Manager**, and follow the prompts. Then return to your release definition, refresh the **AzureRM Subscription** list, and select the connection you just created.<br/>**Azure Container registry**: Select the Azure container registry to which you pushed your container images.<br />**Secret name**: Name of the Docker registry secret. You can use this secret name in the Kubernetes YAML configuration file.<br />**Command**: `apply`<br />**Use Configuration file**: Checked<br />**Configuration file**: Select the **service.yaml** file that was published as an artifact from the build. Example: `$(System.DefaultWorkingDirectory)/Kubernetes-ACS-CI/yaml/service.yaml` |
-   | ![Deploy: Deploy to Kubernetes](../../../steps/deploy/_img/kubernetes-icon.png)<br/>[Deploy: Deploy to Kubernetes](../../../steps/deploy/deploy-to-kubernetes.md)<br/>Update with the latest image  | **Container Registry type**: `Azure Container registry`<br />**Azure Subscription:** Select a connection from the list under **Available Azure Service Connections**. If no connections appear, choose **Manage**, select **New Service Endpoint** then **Azure Resource Manager**, and follow the prompts. Then return to your release definition, refresh the **AzureRM Subscription** list, and select the connection you just created.<br/>**Azure Container registry**: Select the Azure container registry to which you pushed your container images.<br />**Secret name**: Name of the Docker registry secret. You can use this secret name in the Kubernetes YAML configuration file.<br />**Command**: `set` <br />**Arguments**: Arguments to pass to teh command. For example, `image deployment/coreserverdeployment core-server=image:tag` where you are using a private registry (so the image name must be prefixed with the container registry name). We also use the Build Id to tag our images here, so the `image:tag` value will be `{your-acr-name}.azurecr.io/docker-dotnetcore:$(Build.BuildId)`. `docker-dotnetcore` is the image name used in the build. |
+   ![Deploy: Deploy to Kubernetes](../../../steps/deploy/_img/kubernetes-icon.png) [Deploy: Deploy to Kubernetes](../../../steps/deploy/deploy-to-kubernetes.md) - Create the deployment and secret.
+   
+   - **Container Registry type**: `Azure Container registry`
+   
+   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm).
+   
+   - **Azure Container registry**: Select the Azure container registry to which you pushed your container images.
+   
+   - **Secret name**: Name of the Docker registry secret. You can use this secret name in the Kubernetes YAML configuration file.
+   
+   - **Command**: `apply` (you can run any kubectl command)
+   
+   - **Use Configuration file**: Checked
+   
+   - **Configuration file**: Select the **deployment.yaml** file that was published as an artifact from the build. Example: `$(System.DefaultWorkingDirectory)/Kubernetes-ACS-CI/yaml/deployment.yaml`<p />
+   
+   ![Deploy: Deploy to Kubernetes](../../../steps/deploy/_img/kubernetes-icon.png) [Deploy: Deploy to Kubernetes](../../../steps/deploy/deploy-to-kubernetes.md) - Create the service using the yaml file.
+   
+   - **Container Registry type**: `Azure Container registry`
+   
+   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm).
+   
+   - **Azure Container registry**: Select the Azure container registry to which you pushed your container images.
+   
+   - **Secret name**: Name of the Docker registry secret. You can use this secret name in the Kubernetes YAML configuration file.
+   
+   - **Command**: `apply`
+   
+   - **Use Configuration file**: Checked
+   
+   - **Configuration file**: Select the **service.yaml** file that was published as an artifact from the build. Example: `$(System.DefaultWorkingDirectory)/Kubernetes-ACS-CI/yaml/service.yaml`<p />
+   
+   ![Deploy: Deploy to Kubernetes](../../../steps/deploy/_img/kubernetes-icon.png) [Deploy: Deploy to Kubernetes](../../../steps/deploy/deploy-to-kubernetes.md)<br/>Update with the latest image.
+   
+   - **Container Registry type**: `Azure Container registry`
+   
+   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm).
+   
+   - **Azure Container registry**: Select the Azure container registry to which you pushed your container images.
+   
+   - **Secret name**: Name of the Docker registry secret. You can use this secret name in the Kubernetes YAML configuration file.
+   
+   - **Command**: `set`
+   
+   - **Arguments**: Arguments to pass to teh command. For example, `image deployment/coreserverdeployment core-server=image:tag` where you are using a private registry (so the image name must be prefixed with the container registry name). We also use the Build Id to tag our images here, so the `image:tag` value will be `{your-acr-name}.azurecr.io/docker-dotnetcore:$(Build.BuildId)`. `docker-dotnetcore` is the image name used in the build.<p />
 
 1. Edit the name of the release definition, choose **Save**, and choose **OK**.
    Note that the default environment is named Environment1, which you can edit by clicking directly on the name.

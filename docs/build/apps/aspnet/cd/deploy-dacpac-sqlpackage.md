@@ -73,9 +73,21 @@ Continuous deployment (CD) means starting an automated release process whenever 
 
 1. Add a **SQL Database** task to the default environment and configure it as follows:
 
-   | Task step | Parameters |
-   | --------- | ---------- |
-   | ![icon](../../../steps/deploy/_img/azure-sql-database-deployment-icon.png)<br/>[Deploy: Azure SQL Database Deployment](../../../steps/deploy/azure-sql-database-deployment.md)<br/>Deploy the database to Azure SQL Database. | **Azure Connection Type**: `Azure Resource Manager`.<br/>**Azure Subscription**: Select an Azure subscription.<br/>**Azure SQL Server Name**: Enter the name of the SQL Database server you created earlier.<br/>**Database Name**: Enter the name of database.<br/>**Server Admin Login**: Enter the admin user name for your SQL Database.<br/>**Password**: Enter the admin password for your SQL Database. To hide the password, create a variable for it in the environment.<br/>**Firewall - Specify Firewall Rules Using**: `AutoDetect` |
+   ![icon](../../../steps/deploy/_img/azure-sql-database-deployment-icon.png) [Deploy: Azure SQL Database Deployment](../../../steps/deploy/azure-sql-database-deployment.md) - Deploy the database to Azure SQL Database.
+   
+   - **Azure Connection Type**: `Azure Resource Manager`.
+   
+   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm).
+   
+   - **Azure SQL Server Name**: Enter the name of the SQL Database server you created earlier.
+   
+   - **Database Name**: Enter the name of database.
+   
+   - **Server Admin Login**: Enter the admin user name for your SQL Database.
+   
+   - **Password**: Enter the admin password for your SQL Database. To hide the password, create a variable for it in the environment.
+   
+   - **Firewall - Specify Firewall Rules Using**: `AutoDetect`<p />
 
 1. Edit the name of the release definition, choose **Save**, and choose **OK**.
    Note that the default environment is named Environment1, which you can edit by clicking directly on the name.

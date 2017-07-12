@@ -120,9 +120,25 @@ the agent machine:
    to take snapshot of virtual machines, or to revert
    or delete them, use these settings:
 
-   | Task step | Parameters |
-   | --------- | ---------- |
-   | ![VMWare Resource Deployment](_img/vmware/vmware-icon.png)<br/>[VMWare Resource Deployment](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp)<br />Connect to a VMware vCenter Server, easily provision VMs, and perform actions on them. | **VMware Service Connection**: Select the VMware vCenter Server connection you created earlier.<br />**Action**: Select one of the actions:<br />- **Take Snapshot of Virtual Machines**<br />- **Revert Snapshot of Virtual Machines**<br />- **Delete Snapshot of Virtual Machines**<br />**Virtual Machine Names**: Enter the names of one or more virtual machines. Separate multiple names with a comma; for example, `VM1,VM2,VM3`<br />**Datacenter**: Enter the name of the datacenter where the virtual machines will be created.<br />**Snapshot Name**: Enter the name of the snapshot. This snapshot must exist if you use the revert or delete action.<br />**Host Name**: Depending on the option you selected for the compute resource type, enter the name of the host, cluster, or resource pool.<br />**Datastore**: Enter the name of the datastore that will hold the virtual machines' configuration and disk files.<br />**Description**: Optional. Enter a description for the **Take Snapshot of Virtual Machines** action, such as `$(Build.DefinitionName).$(Build.BuildNumber)`. This can be used to track the execution of the build or release that created the snapshot.<br />**Skip Certificate Authority Check**: If the vCenter Server's certificate is self-signed, select this option to skip the validation of the certificate by a trusted certificate authority. |
+   ![VMWare Resource Deployment](_img/vmware/vmware-icon.png) [VMWare Resource Deployment](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp) - Connect to a VMware vCenter Server, easily provision VMs, and perform actions on them.
+   
+   - **VMware Service Connection**: Select the VMware vCenter Server connection you created earlier.
+   
+   - **Action**: Select one of the actions: **Take Snapshot of Virtual Machines**, **Revert Snapshot of Virtual Machines**, or **Delete Snapshot of Virtual Machines**. 
+   
+   - **Virtual Machine Names**: Enter the names of one or more virtual machines. Separate multiple names with a comma; for example, `VM1,VM2,VM3`
+   
+   - **Datacenter**: Enter the name of the datacenter where the virtual machines will be created.
+   
+   - **Snapshot Name**: Enter the name of the snapshot. This snapshot must exist if you use the revert or delete action.
+   
+   - **Host Name**: Depending on the option you selected for the compute resource type, enter the name of the host, cluster, or resource pool.
+   
+   - **Datastore**: Enter the name of the datastore that will hold the virtual machines' configuration and disk files.
+   
+   - **Description**: Optional. Enter a description for the **Take Snapshot of Virtual Machines** action, such as `$(Build.DefinitionName).$(Build.BuildNumber)`. This can be used to track the execution of the build or release that created the snapshot.
+   
+   - **Skip Certificate Authority Check**: If the vCenter Server's certificate is self-signed, select this option to skip the validation of the certificate by a trusted certificate authority.<p />
 
    >To verify if a self-signed certificate is installed 
    on the vCenter Server, open the VMware vSphere Web 
@@ -136,9 +152,27 @@ the agent machine:
 1. To configure the **VMware Resource Deployment** task
    to provision a new virtual machine from a template, use these settings:
 
-   | Task step | Parameters |
-   | --------- | ---------- |
-   | ![VMWare Resource Deployment](_img/vmware/vmware-icon.png)<br/>[VMWare Resource Deployment](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp)<br />Connect to a VMware vCenter Server, easily provision VMs, and perform actions on them. | **VMware Service Connection**: Select the VMware vCenter Server connection you created earlier.<br />**Action**: `Deploy Virtual Machines using Template`<br />**Template**: The name of the template that will be used to create the virtual machines. The template must exist in the location you enter for the **Datacenter** parameter.<br />**Virtual Machine Names**: Enter the names of one or more virtual machines. Separate multiple names with a comma; for example, `VM1,VM2,VM3`<br />**Datacenter**: Enter the name of the datacenter where the virtual machines will be created.<br />**Compute Resource Type**: Select the type of hosting for the virtual machines: `VMware ESXi Host`, `Cluster`, or `Resource Pool`<br />**Host Name**: Depending on the option you selected for the compute resource type, enter the name of the host, cluster, or resource pool.<br />**Datastore**: Enter the name of the datastore that will hold the virtual machines' configuration and disk files.<br />**Description**: Optional. Enter a description to identify the deployment.<br />**Skip Certificate Authority Check**: If the vCenter Server's certificate is self-signed, select this option to skip the validation of the certificate by a trusted certificate authority. See the note for the previous step to check for the presence of a self-signed certificate. |
+   ![VMWare Resource Deployment](_img/vmware/vmware-icon.png) [VMWare Resource Deployment](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp) - Connect to a VMware vCenter Server, easily provision VMs, and perform actions on them.
+   
+   - **VMware Service Connection**: Select the VMware vCenter Server connection you created earlier.
+   
+   - **Action**: `Deploy Virtual Machines using Template`
+   
+   - **Template**: The name of the template that will be used to create the virtual machines. The template must exist in the location you enter for the **Datacenter** parameter.
+   
+   - **Virtual Machine Names**: Enter the names of one or more virtual machines. Separate multiple names with a comma; for example, `VM1,VM2,VM3`
+   
+   - **Datacenter**: Enter the name of the datacenter where the virtual machines will be created.
+   
+   - **Compute Resource Type**: Select the type of hosting for the virtual machines: `VMware ESXi Host`, `Cluster`, or `Resource Pool`
+   
+   - **Host Name**: Depending on the option you selected for the compute resource type, enter the name of the host, cluster, or resource pool.
+   
+   - **Datastore**: Enter the name of the datastore that will hold the virtual machines' configuration and disk files.
+   
+   - **Description**: Optional. Enter a description to identify the deployment.
+   
+   - **Skip Certificate Authority Check**: If the vCenter Server's certificate is self-signed, select this option to skip the validation of the certificate by a trusted certificate authority. See the note for the previous step to check for the presence of a self-signed certificate.<p />
 
 1. You can now add other tasks to the environment, 
    such as **PowerShell on Target Machines**, and then 

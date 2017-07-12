@@ -1,6 +1,6 @@
 ---
-title: Create your first build and release | Team Services & TFS 
-description: Are you a CI/CD novice? In just a minutes you can create an automated build and release pipeline in Visual Studio Team Services and Microsoft Team Foundation Server.
+title: Create your first build and release | Team Services
+description: Are you a CI/CD novice? In just minutes you can create an automated build and release pipeline in Visual Studio Team Services and Microsoft Team Foundation Server.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.topic: get-started-article
@@ -10,11 +10,11 @@ ms.author: alewis
 ms.date: 04/03/2017
 ---
 
-# CI/CD for newbies
+# CI/CD Hello world
 
 **Team Services**
 
-What is continuous integration (CI)? What is continuous deployment (CD)? Why should I care? How do I get started using Team Build and Release Management? 
+What is continuous integration (CI)? What is continuous deployment (CD)? Why should I care? How do I get started using Team Build and Release Management?
 
 Are any of these questions on your mind? If so, then you've come to the right place. We'll show you how to create a CI build that prints "Hello world" and then automatically creates a CD release that does the same. By the time you finish here, you'll see an end-to-end process run every time you push new code into your team project.
 
@@ -22,9 +22,9 @@ Are any of these questions on your mind? If so, then you've come to the right pl
 
 ![A typical release pipeline for web applications](./_img/ci-cd/part-1/ReleasePipeline.png)
 
-CI means starting an automated build (and possibly running tests) whenever new code is committed to or checked into the team project's source control repository. This gives you immediate feedback that the code builds and can potentially be deployed. 
+CI means starting an automated build (and possibly running tests) whenever new code is committed to or checked into the team project's source control repository. This gives you immediate feedback that the code builds and can potentially be deployed.
 
-CD means starting an automated deployment process whenever a new successful build is available. 
+CD means starting an automated deployment process whenever a new successful build is available.
 
 Together, CI and CD mean that any code changes you commit to your repository are quickly validated and deployed to a test server, a live web site, or wherever you need it.
 
@@ -70,8 +70,8 @@ Write-Host "Hello world"
 
 1. **Commit** (save) the file.
 
-> In this tutorial our focus is on CI/CD, so we're keeping the code part simple. We're working in a Team Services Git repository directly in your web browser. 
-> 
+> In this tutorial our focus is on CI/CD, so we're keeping the code part simple. We're working in a Team Services Git repository directly in your web browser.
+>
 > When you're ready to begin building and deploying a real app, you can use a wide range of version control clients and services with Team Services CI builds. [Learn more](#version-control).
 
 ## Create a build definition
@@ -88,10 +88,7 @@ Create a build definition that prints "Hello world."
 
 1. Start with an **empty process**.
 
-1. Click **Process** and specify whatever **Name** you want to use. For example:
- ```
-Hello world
-```
+1. Click **Process** and specify whatever **Name** you want to use. For the **Default agent queue**, select **Hosted VS2017**.
 
 1. Make sure that **Get sources** is set with the **Repository** and **Branch** in which you created the script.
 
@@ -205,7 +202,7 @@ Write-Host Trigger: $trigger
 1. Notice that the person who changed the code has their name printed in the greeting message. You also see printed that this was a CI build.
 
  ![build summary powershell script log](_img/ci-cd/part-1/build-summary-powershell-script-log.png)
- 
+
 > We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](../define/variables.md).
 
 ## Create a release definition
@@ -262,7 +259,7 @@ Run the script in each environment.
 
  ![create release](_img/ci-cd/part-1/create-release.png)
 
-1. Open the release that you just created. 
+1. Open the release that you just created.
 
  ![release created](_img/ci-cd/part-1/release-created.png)
 
@@ -313,7 +310,7 @@ We hope this tutorial gave you an understanding of the basic concepts of Team Bu
 
 * [Build and deploy your app](../apps/index.md)
 
-## Q&A 
+## Q&A
 
 ### Where can I read articles about DevOps and CI/CD?
 <!-- BEGINSECTION class="md-qanda" -->
@@ -326,7 +323,7 @@ We hope this tutorial gave you an understanding of the basic concepts of Team Bu
 
 <h3 id="version-control">What kinds of version control can I use</h3>
 
-We've used a Git repository in Team Services in order to keep things focused on CI/CD for this tutorial. 
+We've used a Git repository in Team Services in order to keep things focused on CI/CD for this tutorial.
 
 When you're ready to get going with CI/CD for your app, you can use the version control system of your choice:
 
@@ -343,24 +340,26 @@ When you're ready to get going with CI/CD for your app, you can use the version 
  * [Xcode](../../git/share-your-code-in-git-xcode.md)
 
  * [IntelliJ](http://java.visualstudio.com/docs/tools/intellij)
- 
+
  * [Command line](../../git/share-your-code-in-git-cmdline.md)
 
 * Services
 
  * [Team Services](https://www.visualstudio.com/team-services/)
 
- * Git service providers such as GitHub and Bitbucket 
+ * Git service providers such as GitHub and Bitbucket
 
  * Subversion
 
 ### How do I replicate a definition?
 
-If your definition has a pattern that you want to replicate in other definitions, clone it or save it as a template.
+If your definition has a pattern that you want to replicate in other definitions, clone it, export it, or save it as a template.
 
 ![all-definitions-build-action-menu-replicate-actions](_img/ci-cd/part-1/all-definitions-build-action-menu-replicate-actions.png)
 
 After you clone a definition, you can make changes and then save it.
+
+After you export a definition, you can import it from the **All Definitions** tab.
 
 After you create a template, your team members can use it to follow the pattern in new definitions.
 
@@ -428,7 +427,7 @@ To learn more about build definition settings, see:
 
 ### How do I programatically create a build definition?
 
-[REST API Reference: Create a build definition](https://visualstudio.com/integrate/api/build/definitions.md#createabuilddefinition)
+[REST API Reference: Create a build definition](../../../integrate/api/build/definitions.md#createabuilddefinition)
 
 
 <!-- ENDSECTION -->

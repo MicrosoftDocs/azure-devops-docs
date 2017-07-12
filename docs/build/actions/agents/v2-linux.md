@@ -220,6 +220,8 @@ You can use the template described above as to facilitate generating other kinds
 
 Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/vsts-agent/blob/master/src/Misc/layoutbin/systemd.svc.sh.template)
 
+[!INCLUDE [include](_shared/v2/qa-firewall.md)]
+
 [!INCLUDE [include](_shared/v2/qa-proxy-unix.md)]
 
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]

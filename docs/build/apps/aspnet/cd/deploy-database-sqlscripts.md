@@ -126,11 +126,35 @@ In addition, you will need Azure Powershell scripts to create and remove firewal
 
 1. Add the following tasks to the definition:
 
-   | Task step | Parameters |
-   | --------- | ---------- |
-   | ![Azure Powershell](../../../steps/deploy/_img/azure-powershell-icon.png)<br/>[Deploy: Azure Powershell](../../../steps/deploy/azure-powershell.md)<br/>Add a firewall rule in Azure to allow it to connect to Azure SQL Database. | **Azure Connection Type**: `Azure Classic`. The scripts provided as samples here work with only an Azure Classic connection.<br/>**Azure Subscription**: Select an Azure subscription. If you have not created an Azure classic endpoint, create one now by choosing **Add**.<br/>**Script Type**: `Script File Path`.<br/>**Script Path**: Select the location of `SetAzureFirewallRule.ps1`.<br/>**Script Arguments**: Name of the SQL server you created earlier. |
-   | ![Command Line](../../../steps/utility/_img/command-line.png)<br/>[Utility: Command Line](../../../steps/utility/command-line.md)<br/>Run the SQL script. | **Tool**: `SQLCMD`.<br/>**Arguments**: `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}`. For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`. |
-   | ![Azure Powershell](../../../steps/deploy/_img/azure-powershell-icon.png)<br/>[Deploy: Azure Powershell](../../../steps/deploy/azure-powershell.md)<br/>Remove the firewall rule in Azure. | **Azure Connection Type**: `Azure Classic`. The scripts provided as samples here work with only an Azure Classic connection.<br/>**Azure Subscription**: Select an Azure subscription. If you have not created an Azure classic endpoint, create one now by choosing **Add**.<br/>**Script Type**: `Script File Path`.<br/>**Script Path**: Select the location of `RemoveAzureFirewallRule.ps1`.<br/>**Script Arguments**: Name of the SQL server you created earlier. |
+   ![Azure Powershell](../../../steps/deploy/_img/azure-powershell-icon.png) [Deploy: Azure Powershell](../../../steps/deploy/azure-powershell.md) - Add a firewall rule in Azure to allow it to connect to Azure SQL Database.
+   
+   - **Azure Connection Type**: `Azure Classic`. The scripts provided as samples here work with only an Azure Classic connection.
+   
+   - **Azure Subscription**: Select an Azure subscription. If you have not created an Azure classic endpoint, create one now by choosing **Add**.
+   
+   - **Script Type**: `Script File Path`.
+   
+   - **Script Path**: Select the location of `SetAzureFirewallRule.ps1`.
+   
+   - **Script Arguments**: Name of the SQL server you created earlier.<p />
+   
+   ![Command Line](../../../steps/utility/_img/command-line.png) [Utility: Command Line](../../../steps/utility/command-line.md) - Run the SQL script.
+   
+   - **Tool**: `SQLCMD`.
+   
+   - **Arguments**: `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}`. For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.<p />
+   
+   ![Azure Powershell](../../../steps/deploy/_img/azure-powershell-icon.png) [Deploy: Azure Powershell](../../../steps/deploy/azure-powershell.md) - Remove the firewall rule in Azure.
+   
+   - **Azure Connection Type**: `Azure Classic`. The scripts provided as samples here work with only an Azure Classic connection.
+   
+   - **Azure Subscription**: Select an Azure subscription. If you have not created an Azure classic endpoint, create one now by choosing **Add**.
+   
+   - **Script Type**: `Script File Path`.
+   
+   - **Script Path**: Select the location of `RemoveAzureFirewallRule.ps1`.
+   
+   - **Script Arguments**: Name of the SQL server you created earlier.<p />
 
 1. Edit the name of the release definition, choose **Save**, and choose **OK**.
    Note that the default environment is named Environment1, which you can edit by clicking directly on the name.

@@ -103,7 +103,7 @@ In TFS 2015:
 
 * An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for OSX and Linux) are used to initiate communication with TFS. The agent uses these credentials to listening to the job queue.
 
-* The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS can  to secure the communication](../../../setup-admin/websitesettings.md) between the agent and TFS.
+* The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](../../../setup-admin/websitesettings.md) between the agent and TFS.
 
 ### Communication to deploy to target servers
 

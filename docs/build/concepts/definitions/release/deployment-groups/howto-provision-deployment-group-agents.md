@@ -19,15 +19,11 @@ and install and provision the agent on each virtual or physical machine in your 
 
 You can install the agent in any one of these ways:
 
-* By [running the script](#runscript) that is generated automatically
-when you create a deployment group.
+* [Run the script](#runscript) that is generated automatically when you create a deployment group.
 
-* If the target machines are Azure VMs, you can quickly and easily prepare them by
-[installing the **Team Services Agent** Azure VM extension](#azureext)
-on each of the VMs.
+* [Install the **Team Services Agent** Azure VM extension](#azureext) on each of the VMs.
 
-* If the target machines are Azure VMs, you can install and configure the agent by [using the **Azure Resource Group Deployment** task](#deploytask)
-in your release definition.
+* [Use the **Azure Resource Group Deployment** task](#deploytask) in your release definition.
 
 <a name="runscript"></a>  
 ## Run the installation script on the target servers
@@ -88,8 +84,56 @@ in your release definition.
 ## Use the Azure Resource Group Deployment task
 
 You can use the [Azure Resource Group Deployment task](https://aka.ms/argtaskreadme)
-to install the agent on the machines in a deployment group using ARM templates.
-The target deployment group must already exist, but can be empty.
+to deploy an Azure Resource Manager (ARM) template that installs the Team Services Agent
+Azure VM extension as you create a virtual machine, or to update the resource group
+to apply the extension after the virtual machine has been created.
+Alternatively, you can use the advanced deployment options of the
+Azure Resource Group Deployment task to deploy the agent to deployment groups. 
+
+### Install the "Team Services Agent" Azure VM extension using an ARM template
+
+An ARM template is a JSON file that declaratively defines a set of Azure resources.
+The template can be automatically read and the resources provisioned by Azure.
+In a single template, you can deploy multiple services along with their dependencies.
+
+For a Windows VM, create an ARM template and add a resources element under the
+`Microsoft.Compute/virtualMachine` resource as shown here:
+
+```
+{
+   "publisher": "Microsoft.VisualStudio.Services",
+   "type": "TeamServicesAgent",
+   "typeHandlerVersion": "1.0",
+   "autoUpgradeMinorVersion": true,
+   "settings": {
+      "VSTSAccountName": "[Required. The Team Services account to use. Example: If your account URL is `https://contoso.visualstudio.com`, just specify "contoso"]",
+      "TeamProject": "[Required. The Team Project that has the deployment group defined within it]",
+      "DeploymentGroup": "[Required. The deployment group against which deployment agent will be registered]",
+      "AgentName": "[Optional. If not specified, the VM name with -DG appended will be used]",
+      "Tags": "[Optional. A comma-separated list of tags that will be set on the agent. Tags are not case sensitive and each must be no more than 256 characters]"
+    },
+   "protectedSettings": {
+     "PATToken": "[Required. The Personal Access Token that will be used to authenticate against the Team Services account to download and configure the agent]"
+   }
+}
+```
+
+>**Note**: If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `TeamServicesAgentLinux`.
+
+To use the template:
+
+1. In the **Deployment groups** tab of the **Build &amp; Release** hub, choose **+New** to create a new group.
+
+1. Enter a name for the group, and optionally a description, then choose **Create**.
+
+1. In the **Releases** tab of the **Build &amp; Release** hub, create a release definition with an environment that contains the **Azure Resource Group Deployment** task.
+
+1. Provide the parameters required for the task such as the Azure subscription, resource group name,
+   location, and template information, then save the release definition.
+
+1. Create a release from the release definition to install the agents.
+
+### Install agents using the advanced deployment options
 
 1. In the **Deployment groups** tab of the **Build &amp; Release** hub, choose **+New** to create a new group.
 
@@ -119,7 +163,8 @@ The target deployment group must already exist, but can be empty.
 
    ![Configuring the Azure Resource Group Deployment task](_img/howto-provision-azure-vm-agents/deploy-arg-task.png)
 
-1. Provide any other parameters you require for the task, then save the release definition.
+1. Provide the other parameters required for the task such as the Azure subscription, resource group name,
+   and location, then save the release definition.
 
 1. Create a release from the release definition to install the agents.
 

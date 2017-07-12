@@ -23,7 +23,7 @@ to enable fundamental build and deployment scenarios.
 In addition, [Visual Studio Marketplace](https://marketplace.visualstudio.com/VSTS)
 offers a number of extensions; each of which, when installed to your
 account or collection, extends the task catalog with one or more tasks.
-Furthermore, you can write your own [custom extensions](../../../extend/overview.md)
+Furthermore, you can write your own [custom extensions](../../../../integrate/extensions/overview.md)
 to add tasks to your account in Team Services or your collection in TFS.
 
 When you add a task to your build or release definition, it may also add a set of **demands** to the definition. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.

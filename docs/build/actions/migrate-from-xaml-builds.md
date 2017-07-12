@@ -257,7 +257,7 @@ Here are a few examples of the kinds of apps you can build:
 
 The new Team Build is tightly integrated with Release Management. So it's easier then ever to automatically kick off a deployment after a successful build. Learn more:
 
-* [CI/CD for newbies](../get-started/ci-cd-part-1.md)
+* [CI/CD Hello world](../get-started/ci-cd-part-1.md)
 
 * [Release definitions](../concepts/definitions/release/index.md)
 
@@ -304,7 +304,7 @@ For all these tasks we offer a set of built-in variables, and if necessary, you 
 
 ### Write a custom task
 
-If necessary, you can write your own [custom extensions](../../extend/overview.md) to [custom tasks](../../extend/develop/add-build-task.md) for your builds and releases.
+If necessary, you can write your own [custom extensions](../../../integrate/extensions/overview.md) to [custom tasks](../../../integrate/extensions/develop/add-build-task.md) for your builds and releases.
 
 ## Reuse patterns 
 
@@ -312,7 +312,7 @@ In XAML builds you created custom XAML templates. In the new builds, it's easier
 
 ### Create a template
 
-If you don't see a template for the kind of app you can start from an empty definition and [add the tasks you need](../define/build.md). After you've got a pattern that you like, you can clone it or save it as a template directly in your web browser. See [CI/CD for newbies](../get-started/ci-cd-part-1.md).
+If you don't see a template for the kind of app you can start from an empty definition and [add the tasks you need](../define/build.md). After you've got a pattern that you like, you can clone it or save it as a template directly in your web browser. See [CI/CD Hello world](../get-started/ci-cd-part-1.md).
 
 ### Task groups (TFS 2017 or newer)
 

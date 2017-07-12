@@ -46,7 +46,7 @@ Releases (and, in some cases, draft releases) can be created from a release defi
 * By using the **Release** command in the UI to create a release manually from the
   the [**Releases**](../../actions/create-deploy-releases.md#create-from-release) tab or the [**Builds**](../../actions/create-deploy-releases.md#create-from-build) tab.
 
-* By sending a command over the network to the [REST interface](https://visualstudio.com/integrate/api/rm/overview.md).
+* By sending a command over the network to the [REST interface](../../../../integrate/api/rm/overview.md).
 
 **However**, the action of creating a release **_does not_** mean it will automatically
 or immediately start a deployment. For example:
@@ -57,7 +57,7 @@ or immediately start a deployment. For example:
   and time, or for successful deployment to another environment.
 
 * A deployment started manually from the **[Deploy](../../actions/create-deploy-releases.md#deploy-command)** command in the UI,
-  or from a network command sent to the [REST interface](https://visualstudio.com/integrate/api/rm/overview.md), may
+  or from a network command sent to the [REST interface](../../../../integrate/api/rm/overview.md), may
   specify a final target environment other than the last environment in a release pipeline.
   For example, it may specify that the release is deployed only as far as the QA environment
   and not to the production environment.   
