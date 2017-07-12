@@ -40,18 +40,18 @@
       ],
     "resource": [
         {
-          "files": ["**/_img/**", "**/**/_img/**", "**/**/_shared/**", "**/_img-shared-all/**", "**/**/_img-shared-all/**", "**/*.json","**/_shared/**.md"],
+          "files": [ "**/_img/**", "**/**/_img/**", "**/**/_shared/**", "**/_img-shared-all/**", "**/**/_img-shared-all/**", "**/*.json", "**/_shared/**.md", "**/*.gif" ],
           "exclude": ["**/obj/**"],
           "src": "docs"
         },
         {
-          "files": ["**/_img/**", "**/**/_img/**", "**/**/_shared/**", "**/*.json","**/_shared/**.md"],
+          "files": [ "**/_img/**", "**/**/_img/**", "**/**/_shared/**", "**/*.json", "**/_shared/**.md", "**/*.gif" ],
           "exclude": ["**/obj/**"],
           "src": "integrate",
           "dest": "integrate"
         },
 		{
-          "files": ["**/_img/**", "**/**/_img/**", "**/**/_shared/**", "**/_img-shared-all/**", "**/**/_img-shared-all/**", "**/*.json","**/_shared/**.md"],
+      "files": [ "**/_img/**", "**/**/_img/**", "**/**/_shared/**", "**/_img-shared-all/**", "**/**/_img-shared-all/**", "**/*.json", "**/_shared/**.md", "**/*.gif" ],
           "exclude": ["**/obj/**"],
           "src": "extend",
 	      "dest": "extend"
