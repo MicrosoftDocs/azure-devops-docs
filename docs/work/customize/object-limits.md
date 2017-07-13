@@ -34,8 +34,6 @@ Below you find maximum number of object in the Inheritance and Hosted XML proces
 | Categories defined for a process | - | 32 | 
 | Global lists defined for a process | - | 64  |
 | List items defined within a global list | - | 512 | 
-| Custom link types defined for a process | - | 8  |
-| Identity or person-name fields (`/syncnamechanges:true`) per work item type | - | 64 |
 
 For additional restrictions and conformance requirements of the Hosted XML process model, see [Customize a process when using Hosted XML](../import-process/customize-process.md).
 
