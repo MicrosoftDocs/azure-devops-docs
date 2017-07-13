@@ -22,8 +22,8 @@ Below you find maximum number of object in the Inheritance and Hosted XML proces
 |Object | Inheritance |Hosted XML | 
 |-------|------------:|----------:|
 | Work item types defined for a process | 64  | 64 |
-| Fields defined for an account | 512  | 512 |
-| Fields defined for a process | 512  | 512 |
+| Fields defined for an account | 4096  | 4096 |
+| Fields defined for a process | 2048  | 2048 |
 | Fields defined for a work item type | 64  | 256 |
 | Pick lists defined for an account or collection | 512  | - |
 | Pick list items defined for a list | 128  | - |
