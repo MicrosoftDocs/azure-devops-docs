@@ -60,6 +60,9 @@ You may want to automatically transition work items from one state to another st
   
 ```  
 <TRANSITION from="Working" to="Ready To Build">  
+   <REASONS>
+      ...
+   </REASONS>
    <ACTIONS>  
       <ACTION value="microsoft.vsts.actions.checkin"/>  
    </ACTIONS>  
@@ -83,6 +86,9 @@ You may want to automatically transition work items from one state to another st
   
     ```  
     <TRANSITION from="Working" to="Ready To Build">  
+       <REASONS>
+          <DEFAULTREASON value="Fixed" />
+       </REASONS>
        <ACTIONS>  
           <ACTION value="Microsoft.VSTS.Actions.Checkin"/>  
           <ACTION value="ADatum.Actions.Complete"/>  
