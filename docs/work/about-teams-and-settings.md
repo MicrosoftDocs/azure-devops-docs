@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/23/2017
+ms.date: 07/13/2017
 ---
 
 # About teams and Agile tools
@@ -15,17 +15,15 @@ ms.date: 06/23/2017
 
 <a id="teams"></a>
 
-What work items appear on team backlogs and boards? When you add work items to a backlog or board, how are team defaults used to assign field values? 
+Adding a team is the #1 way in which Agile tools supports a growing organization. Once your team grows beyond its optimum size&mdash;typically anywhere from 6 to 9 members&mdash;you might consider moving from a one team structure to a two team structure. For enterprises adopting Agile tools, setting up a hierarchical team structure provides several advantages to portfolio and program managers to track progress across several teams.  
 
 Depending on the size of your organization and your tracking needs, you can set up a team structure similar to the one shown. You do this by defining teams and their associated area path(s). 
 
-Adding a team is the #1 way in which Agile tools supports a growing organization. Once your team grows beyond its optimum size&mdash;typically anywhere from 6 to 9 members&mdash;you might consider moving from a one team structure to a two team structure. For enterprises adopting Agile tools, setting up a hierarchical team structure provides several advantages to portfolio and program managers to track progress across several teams.  
-
 ![Each team has its own view of the work](scale/_img/pm-team-structure.png) 
-
 
 For example, each feature team can be associated with a single feature area path&mdash;such as *Customer Profile*, *Shopping Cart*, *Email*&mdash;or several area paths. Each management team, which focuses on a set of features, can choose several area paths to monitor. This allows each feature team to have their distinct backlog to plan, prioritize, and track their work. And, portfolio or product owners can create their vision, road map, and goals for each release, monitor progress across their portfolio of projects, and manage risks and dependencies. To learn more, see [Portfolio management](scale/portfolio-management.md). 
 
+## Each team gets their own set of tools 
 
 Each team you create gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to meet the way they want to work.
 
@@ -91,10 +89,11 @@ Many of these tools are built from system queries that reference the team area p
 You can view these queries by choosing the **Create query** link that appears on these tools' pages. (Note that you can't change the underlying query.)  Lastly, you can set  security permissions to control who has access to create, modify, or manage test plans and test suites under an area.
 
 
-  
-
-
 ## Team defaults referenced by backlogs and boards
+
+What work items appear on team backlogs and boards? When you add work items to a backlog or board, how are team defaults used to assign field values? 
+
+Teams are associated with one or more area paths and a backlog iteration path which determine what items will appear on their backlogs and boards. 
 
 When you define a team, you define the team's: 
 - Selected area path(s) 
@@ -168,7 +167,6 @@ In addition, several tools reference the team's default iteration and selected i
 <div style="clear:left;font-size:100%">
 </div>
 
-
 ## Structure hierarchical teams or scale agility within an enterprise 
 
 Although there is no concept of sub-teams, you can create teams whose area paths are under another team, which effectively creates a hierarchy of teams. To learn more, see [Add another team](scale/multiple-teams.md).
@@ -177,57 +175,22 @@ Also, these topics can walk you through the steps for configuring teams, area pa
 - [Portfolio management](scale/portfolio-management.md)
 - [Implement Scaled Agile Framework to support epics, release trains, and multiple backlogs](scale/scaled-agile-framework.md)
 
-<!--
-Teams are associated with one or more area paths and a backlog iteration path which determine what items will appear on their backlogs and boards. For details on adding and configuring teams, see the following topics.  
- 
-<div style="float:left;width:180px;margin:6px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Teams </p>
-* [Add teams](scale/multiple-teams.md)  
-* [Team admins](scale/add-team-administrator.md)  
-* [Team members](scale/multiple-teams.md#add-team-members)  
-<br/>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Basic team settings </p>
-* [Area paths](scale/set-team-defaults.md)   
-* [Iteration paths](scale/set-team-defaults.md)  
-* [Backlog levels](customize/select-backlog-navigation-levels.md)  
-* [Working with bugs](customize/show-bugs-on-backlog.md)  
-* [Working days](customize/set-working-days.md)  
-</div>
 
-<div style="float:left;width:180px;margin:6px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Kanban boards</p>
-* [Add columns](kanban/add-columns.md)  
-* [WIP limits](kanban/wip-limits.md)   
-* [Split columns](kanban/split-columns.md)   
-* [Expedite work](kanban/expedite-work.md)  
-* [Definition of done](kanban/definition-of-done.md)  
-* [Customize cards](customize/customize-cards.md)  
-* [Card reordering](customize/reorder-cards.md)   
-* [Annotations](customize/customize-cards.md#annotations)  
-* [Cumulative flow chart](../report/guidance/cumulative-flow.md)
-</div>
-
-<div style="float:left;width:200px;margin:6px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Scrum tools</p>
-* [Add/remove sprint backlogs](scale/set-team-defaults.md)   
-* [Set sprint dates](customize/set-area-paths.md)    
-* [Customize cards on task board](customize/customize-cards.md#task-board)   
-* [Capacity planning](scale/capacity-planning.md)  
-* [Velocity and forecasting](scrum/velocity-and-forecasting.md)  
-</div>
-
-
-
-<div style="clear:left;font-size:100%">
-</div>
--->
+## Summary 
+- Every team owns their own backlog, to create a new backlog you [create a new team](../scale/multiple-teams.md) 
+- Every backlog has a corresponding [Kanban board](../kanban/kanban-basics.md) you can use to track progress and update status  
+- The [team's specified area and iteration paths](../scale/set-team-defaults.md) determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
+-  Each team can control how [bugs show up on their backlogs and boards](../customize/show-bugs-on-backlog.md)   
+- For an overview of all team assets and how to configure them, see [Configure team settings](../scale/manage-team-assets.md)   
+- To have work performed by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../scale/portfolio-management.md) 
+- To add fields or work item types, see [Customize your work tracking experience](../customize/customize-work.md).
 
 ## Related notes 
 
-*	[Add another team](scale/multiple-teams.md)  
-*	[Set team defaults](scale/set-team-defaults.md)  
-*	[Configure team settings ](scale/manage-team-assets.md)      
-
+-	[Add another team](scale/multiple-teams.md)  
+-	[Set team defaults](scale/set-team-defaults.md)  
+-	[Configure team settings ](scale/manage-team-assets.md)      
+-	[Work effectively from your account hub ](../connect/account-home-pages.md)  
 
 <a id="team-group"> </a>
 ### Team groups 

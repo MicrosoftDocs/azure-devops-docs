@@ -7,7 +7,7 @@ ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 06/23/2016
+ms.date: 07/13/2017
 ---
 
 
@@ -208,7 +208,10 @@ If your on-premises TFS deployment includes reporting or SharePoint Products, ad
 
 For a complete reference of all built-in groups and permissions, see [Permissions and groups](../setup-admin/permissions.md). 
 
-For information about assigning access levels and supporting stakeholder access, see [Manage users and access](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) for Team Services, and [Change access levels](connect/change-access-levels.md) for TFS. 
+For information about assigning access levels and supporting stakeholder access, see: 
+- **Team Services**: [Add users and assign licenses in Visual Studio Team Services](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md)
+- **TFS**: [Change access levels](./connect/change-access-levels.md)  
+
 
 ### Test management permissions  
 

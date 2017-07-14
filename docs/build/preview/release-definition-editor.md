@@ -166,7 +166,7 @@ not yet available in the new editor. Simply select **Releases** in the
 * Navigation from the Pipeline tab to the Tasks tab.
 * The visual representation of the deployment workflow.
 
-Please send your feedback to [vsin_secore@microsoft.com](mailto:vsin_secore@microsoft.com)
+Please send your feedback to [RM_Customer_Queries@microsoft.com](mailto:RM_Customer_Queries@microsoft.com)
 
 ## Related topics
 

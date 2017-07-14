@@ -7,11 +7,10 @@ ms.assetid: 28C02AE8-CF8D-4B6E-8301-F46A5622E6C4
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 04/05/2017
+ms.date: 07/13/2017
 ---
 
 # About Agile tools and Agile project management 
-
 
 You plan and track your project using the suite of Agile tools you access from the web portal. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board.  
 
@@ -141,9 +140,7 @@ Once you've started tracking work, you'll want to monitor and track progress, id
 
 ## Related notes
 
-You access tools provided by Team Services and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access.  
-- **Team Services**: [Add users and assign licenses in Visual Studio Team Services](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md)
-- **TFS**: [Change access levels](./connect/change-access-levels.md)  
+You access tools provided by Team Services and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access.  To learn more, see [Permissions and access for work tracking](permissions-access-work-tracking.md). 
 
 See the [Feature index](../alm-devops-features.md) for an end-to-end overview of all Team Services and TFS features.  
 

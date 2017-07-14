@@ -82,7 +82,7 @@ You can change the process a team project uses from a system process or inherite
 >[!NOTE]  
 >You can change the process of a team project as long as you don't have any undeleted work items of a custom work item type that isn't also defined in the target process. 
 >
->Also, iIf you change a team project to a system process or other inherited process that doesn't contain the same custom fields, data is still maintained. However, the custom fields that aren't represented in the current process won't appear on the work item form. You can still access the field data through a query or REST APIs. These fields are essentially locked from changes and appear as read-only values.  
+>Also, if you change a team project to a system process or other inherited process that doesn't contain the same custom fields, data is still maintained. However, the custom fields that aren't represented in the current process won't appear on the work item form. You can still access the field data through a query or REST APIs. These fields are essentially locked from changes and appear as read-only values.  
 
 0. Open the &hellip; context menu for the process and choose the **Change team projects**&hellip; option. 
 

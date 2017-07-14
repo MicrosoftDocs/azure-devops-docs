@@ -8,7 +8,7 @@
 # Quickstarts  
 ## [Add work items](backlogs/add-work-items.md)
 ## [Create your backlog](backlogs/create-your-backlog.md)  
-## Kanban (NEW)
+## [Kanban](kanban/kanban-quickstart.md) (NEW)
 ## [Schedule sprints](scrum/define-sprints.md)
 ## [Drive Git development](backlogs/connect-work-items-to-git-dev-ops.md)  
 ## [Storyboard your ideas](office/storyboard-your-ideas-using-powerpoint.md)
