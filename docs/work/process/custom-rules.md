@@ -54,7 +54,6 @@ As an example, you can make a field required based on value assignments made to 
 
 - Clear the value of a field  
 - Copy the value of a field to another field   
-- Make a field read-only  
 - Make a field required   
 - Set the value of a field  
 - Set the value of a field to the current date-time  
@@ -66,7 +65,7 @@ As an example, you can make a field required based on value assignments made to 
 </div>
 
 >[!NOTE]   
->You make a field required and specify a field default through the [**Options** tab for the field](customize-process-field.md#options). These rules are condition-less rules, they apply to the field without first setting a condition. 
+>You make a field required and specify a field default through the [**Options** tab for the field](customize-process-field.md#options).  
  
 ## Add a custom rule 
 
@@ -103,6 +102,7 @@ You delete or disable the rule from the actions menu of the rule.
 
 <img src="_img/custom-rule-delete-disable-rule.png" alt="Delete or disable a rule" style="border: 1px solid #CCCCCC;" />  
 
+<!---
 <a id="system-rules">  </a>
 ## System rules
 
@@ -116,6 +116,7 @@ For example, several rules exist to copy the current user identity under the fol
 >[!IMPORTANT]  
 >Predefined system rules will take precedent over any custom rule that you define which would overwrite it.  
 
+-->
 
 ## Related notes  
 
@@ -131,7 +132,7 @@ Additional topics of interest:
 >You can't calculate or set formulas using a rule. However, you may find a solution that fits your needs via the [TFS Aggregrator  (Web Service) Marketplace extension](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-web-service). 
 
 
-
+<!---
 ### Unsupported XML element rules 
 If you're familiar with the [XML elements for applying rules to fields](../reference/apply-rule-work-item-field.md), then note that the following rules and rule attributes aren't supported: 
 
@@ -141,5 +142,6 @@ If you're familiar with the [XML elements for applying rules to fields](../refer
 	- **FROZEN**  
 	- **MATCH**  
 	- **NOTSAMEAS**  
+	- **EMPTY**
 
- 
+-->

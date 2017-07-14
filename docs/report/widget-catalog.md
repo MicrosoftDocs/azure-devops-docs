@@ -293,7 +293,7 @@ Adds a configurable tile to display the summary of a shared query results.</p>
 </div> 
  
 ---- 
-<a id="sprint-velocity-widget"></a> 
+<a id="velocity-widget"></a> 
 ### Velocity (team-scoped) 
 <div style="float:left;width:390px;margin:3px;padding-right:15px;">
 ![Sprint velocity widget](_img/widget-velocity.png)
@@ -304,7 +304,7 @@ Adds a configurable tile to display the summary of a shared query results.</p>
 
 <div style="float:left;width:300px;margin:3px;">
 <p>The velocity widget tracks a team's capacity to deliver work sprint after sprint. You configure the widget by selecting a team, a work item type, an aggregation field, and the number of sprints. The widget takes advantage of the Analytics service. You can track the velocity for a single team, not multiple teams.   </p> 
-<p>For additional guidance, see [Team velocity](guidance/team-velocity.md). </p>
+<p>For additional guidance, see [Velocity](guidance/team-velocity.md). </p>
 </div>
 
 <div style="clear:left;font-size:100%">

@@ -171,7 +171,7 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 <a name="estimates"></a>
 <p>Provide a relative estimate of the amount of work required to complete a PBI. For user stories and requirements, you capture estimates in the Story Points and Size fields.</p> 
 <p>Most Agile methods recommend setting estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, etc.). Use any numeric unit of measurement your team prefers. </p>
-<p>The estimates you set for Effort, Size, or Story Points are used in [calculating team velocity and in forecasting sprints](../scrum/velocity-and-forecasting.md).</p>
+<p>The estimates you set for Effort, Size, or Story Points are used in calculating [velocity](../../report/guidance/team-velocity.md) and [forecasting sprints](../scrum/forecast.md).</p>
 </td> 
 </tr>
 
@@ -222,10 +222,10 @@ Once you've defined your backlog, you can use the following controls to change o
 |--------------------------|-------------------------------|
 | Backlog               | Switch to backlog view           |
 | Board    | [Switch to Kanban board view](../kanban/kanban-basics.md)  |
-| Forecast | [Turn forecasting Off/On](../scrum/velocity-and-forecasting.md) |
+| Forecast | [Turn forecasting Off/On](../scrum/forecast.md) |
 | Mapping | [Turn mapping Off/On](organize-backlog.md)   |
 | Parents | [Show/Hide parents](organize-backlog.md) |
-| In progress items | [Show/Hide in progress items](../scrum/velocity-and-forecasting.md)   |
+| In progress items | [Show/Hide in progress items](../scrum/forecast.md)   |
 | ![Settings icon](../_img/icons/team-settings-gear-icon.png)    | [Configure team settings](../scale/manage-team-assets.md#team-settings)  |
 | ![full screen icon](../_img/icons/fullscreen_icon.png) / ![exit full screen icon](../_img/icons/exitfullscreen_icon.png)     | Enter or exit full screen mode      |
 | ![expand icon](../_img/icons/expand_icon.png) / ![collapse icon](../_img/icons/collapse_icon.png)   | Expand or collapse one level of the tree hierarchy    |

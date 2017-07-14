@@ -39,7 +39,7 @@ These tools reference the team's default area path, iteration path, and selected
 - [Product backlog](backlogs/create-your-backlog.md)     
 - [Features backlog](backlogs/define-features-epics.md)    
 - [Epics backlog](backlogs/define-features-epics.md)  
-- [Forecast](scrum/velocity-and-forecasting.md)    
+- [Forecast](scrum/forecast.md)    
 
 </div>
 <div style="float:left;width:130px;margin:3px">
@@ -74,7 +74,7 @@ These tools reference the team's default area path, iteration path, and selected
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;font-size:90%">Other</p>
 - [Delivery plans](scale/review-team-plans.md)   
 - [Queries](track/using-queries.md)    
-- [Velocity](scrum/velocity-and-forecasting.md)    
+- [Velocity](../report/guidance/team-velocity.md)    
 - [Dashboards](../report/dashboards.md)    
 - [Alerts](../collaborate/manage-team-notifications.md)    
 

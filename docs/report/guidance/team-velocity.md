@@ -24,9 +24,9 @@ Use this topic to learn:
 
 <!--- [!div class="checklist"] -->
 
-![checkmark](../../work/_img/icons/checkmark.png) Differences between the Velocity chart and Velocity widget   
-![checkmark](../../work/_img/icons/checkmark.png) How to work with the Velocity chart (work tracking datastore)   
-![checkmark](../../work/_img/icons/checkmark.png) Install and configure the Velocity widget (Analytics service)       
+![checkmark](../../work/_img/icons/checkmark.png) How velocity metrics should be used     
+![checkmark](../../work/_img/icons/checkmark.png) Install and configure the Velocity widget (Analytics service)  
+![checkmark](../../work/_img/icons/checkmark.png) How to work with the Velocity chart (work tracking datastore)     
 ![checkmark](../../work/_img/icons/checkmark.png) Required and recommended team activities to support velocity tracking      
 
 There are two velocity charts, the one viewed from the backlog of a team and the one you access by adding the Velocity widget of a dashboard. The Velocity widget enables you to view more sprints and additional information than that provided by the velocity chart.   
@@ -46,6 +46,85 @@ There are two velocity charts, the one viewed from the backlog of a team and the
 </td>
 </tr>
 </table>
+
+## Velocity metrics and usage guidance 
+ 
+Velocity provides a useful metric for these activities:  
+- Support sprint planning  
+- Forecast future sprints and the backlog items that can be completed   
+- A guide for determining how well the team estimates and meets their planned commitments 
+
+And, with the velocity widget, you can quickly determine the following:  
+- Planned velocity 
+- Actual (completed) velocity 
+- Work completed later than planned
+- Amount of work not completed   
+
+The velocity chart requires that teams estimate their backlog items with a number using the [Effort, Story Points, or Size fields](../../work/track/query-numeric.md).   
+
+The velocity widget allows teams to track velocity based on the count of backlog items or with  estimates for the the Effort, Story Points, or Size fields.
+
+<a id="minimize-variability" >    </a>
+
+#### Minimize variability in your estimates 
+Estimates, by their nature, don't reflect reality. They represent a best guess by the team as to the effort required to complete an item, relative to the effort of other items on the backlog.  
+
+By minimizing the size variability of your backlog items, you help strengthen the team's ability to  create more accurate estimates.  Variability increases uncertainty. By minimizing the variability of your estimates, you increase the likelihood of more reliable velocity metrics and forecast results.  
+
+
+#### Velocity is not a KPI 
+
+While velocity provides a measure of a team's ability to deliver work over time, you shouldn't confuse it as a key performance indicator of the team. 
+
+Velocity simply provides an aid to determine team capacity. Nothing more, nothing less. Asking a team to increase their velocity, basically asks them to accomplish more with the same resources. This request will mostly likely lead to "Story points inflation" and lead to less desirable outcomes. 
+
+
+<a id="configure-widget"></a>
+## Configure the Velocity widget    
+
+You configure your velocity widget for a team. To learn more about teams, see [Add teams and team members](../../work/scale/multiple-teams.md).  
+
+### Pre-requisites
+In order to add a Velocity widget to a dashboard, you must have the following in place:  
+- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../setup-admin/add-administrator-tfs.md) to add extensions.  
+- [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../work/scale/manage-team-assets.md#add-team-admin) or have [permissions to add and edit dashboards](../dashboards.md#set-permissions). 
+
+> [!NOTE]   
+> While the Velocity widget uses the Analytics data store, access to the data store for other report purposes is not supported at this time. 
+
+### Configuration dialog 
+1. If you haven't yet added the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), do that now. 
+
+2. If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
+
+3. Click the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option to open the configuration dialog. 
+	
+	Modify the title, select the team, and then choose either the backlog level or work item type to track. Select whether you want to track a count of work items or a sum of a numeric field. The most common summed field is that of Effort, Story Points, or Size.     
+
+	<img src="_img/team-velocity-config-dialog.png" alt="Configure dialog, Velocity widget" style="border: 1px solid #CCCCCC;" />    
+
+4. Specify the number of sprints you want to view. The default is 6 and the maximum is 15.    
+
+5. (Optional) Select the check boxes to show additional information for work completed later than planned for each sprint. 
+
+	**Displayed planned work for iterations:** Check this box to
+	display the amount of work planned for an iteration at the start of the iteration. 
+	This is useful for comparing your planned work to actual deliverables.
+	By default, the count of planned work begins as of the start date of the iteration.  
+
+	<b><i>Days past start date of iteration when planned work is final:</i></b>  Specify a number of days past the start date to count planned work. 
+	For example, if the first 2 days of an iteration are for planning, then you can enter "3", and planned work will be counted on the 3rd day. 
+
+	**Highlight work completed late**
+	Work items marked complete after the iteration end date are considered to be completed late and will show as light green. 
+	This is useful for spotting a trend where work items are marked complete after the iteration is complete.
+	
+	<b><i>Days past end date of iteration after which work is late:</i></b>  Specify a number of days past which a work item is considered late if it's status is still new or in progress. 
+	For example, entering 3 days will give the team 3 days after the end of an iteration to mark work items complete or done, before they are considered late.
+
+6. Click Save when done. The following image shows Velocity based on Story Points and 8 sprints of data. 
+   
+	<img src="_img/commerce-team-velocity-eight-iterations.png" alt="Example Velocity widget, 8 iterations" style="border: 1px solid #CCCCCC;" />  
 
 
 
@@ -73,41 +152,8 @@ Velocity will vary depending on team capacity, sprint over sprint. However, over
 	<img src="_img/team-velocity-chart-web-7-iterations.png" alt="Web portal, Velocity chart showing seven sprints of in progress and completed work" style="border: 1px solid #CCCCCC;" />
 
 	>[!NOTE]  
-	>Work items based on the [Scrum process](../../work/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../work/guidance/agile-process.md) and [CMMI](../../work/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/concepts/workflow-and-state-categories.md). 
-
-<a id="configure-widget"></a>
-## Configure the Veocity widget    
-
-You configure your velocity widget for a team. To learn more about teams, see [Add teams and team members](../../work/scale/multiple-teams.md).  
-
-### Pre-requisites
-In order to add a Velocity widget to a dashboard, you must have the following in place:  
-- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../setup-admin/add-administrator-tfs.md) to add extensions.  
-- [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../work/scale/manage-team-assets.md#add-team-admin) or have [permissions to add and edit dashboards](../dashboards.md#set-permissions). 
-
-> [!NOTE]   
-> While the Velocity widget uses the Analytics data store, access to the data store for other report purposes is not supported at this time. 
-
-### Configuration dialog 
-1. If you haven't yet added the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), do that now. 
-
-2. If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
-
-3. Click the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option to open the configuration dialog. 
-	
-	Modify the title, select the team, and then choose either the backlog level or work item type to track. Select whether you want to track a count of work items or a sum of a numeric field. The most common summed field is that of Effort, Story Points, or Size.     
-
-	<img src="_img/team-velocity-config-dialog.png" alt="Configure dialog, Velocity widget" style="border: 1px solid #CCCCCC;" />    
-
-4. Specify the number of sprints you want to view. The default is 6 and the maximum is 20.    
-
-5. (Optional) Select the check boxes to show additional information for work completed later than planned for each sprint. 
-
-6. Click Save when done. The following image shows an example Velocity chart showing 6 sprints of data. 
-   
-	<img src="_img/team-velocity-six-iterations.png" alt="Example Velocity widget, 6 iterations" style="border: 1px solid #CCCCCC;" />  
-
-
+	>Work items based on the [Scrum process](../../work/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../work/guidance/agile-process.md) and [CMMI](../../work/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/concepts/workflow-and-state-categories.md).
+	>
 ## Required and recommended activities   
 
 For your team to gain the greatest utility from the velocity chart or velocity widget, follow these required and recommended tasks.  
@@ -144,25 +190,13 @@ Now that you understand how to work with velocity, you can use it to [forecast y
 If you work with several teams, and each team wants to work with their own backlog view, velocity chart, and forecast tool, you can [add teams](../../work/scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those whose assigned area paths and iteration paths meet those [set for the team](../../work/scale/set-team-defaults.md). 
 
 
-<a id="minimize-variability" >    </a>
-
-### Minimize variability in your estimates 
-Variability increases uncertainty. By minimizing the variability of your estimates, you increase the likelihood of more reliable velocity metrics and forecast results.  
-
-Estimates, by their nature, don't reflect reality. They represent a best guess by the team as to the effort required to complete an item, relative to the effort of other items on the backlog. 
-
-
-### Velocity is not a KPI 
-
-While the Velocity chart provides a measure of the team's ability to deliver work over time, you shouldn't confuse it as a key performance indicator of the team. 
-
-Velocity simply provides an aid to determine team capacity. Nothing more, nothing less. Asking a team to increase their velocity, basically asks them to accomplish more with the same resources. This request will mostly likely lead to "Story points inflation" and lead to less desirable outcomes. 
-
-
+<!---
 ### Other types of velocity charts
 
 While the velocity chart provides a measure of Effort, Story Points, or Size that gets completed sprint-over-sprint, there may be other types of velocity that you may want to track. You can create similar charts by creating a work item query and [chart the count of or sum of items](../charts.md).  
 
 For example, you can create a chart of the number of Product backlog items and bugs completed for the last several sprints. For examples on creating this type of chart, see [Query by numeric fields](../../work/track/query-numeric.md).
 
-![Velocity count of backlog items and bugs](_img/ALM_VF_VelocityCountItems.png) 
+![Velocity count of backlog items and bugs](_img/ALM_VF_VelocityCountItems.png)  
+
+-->

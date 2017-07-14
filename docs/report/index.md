@@ -31,7 +31,7 @@ If you're new to working in Team Services or TFS, see [Get started with Agile to
 
 <li style="margin-bottom:2px">[Work tracking status and progress charts](charts.md)</li>
 <li style="margin-bottom:2px">[Cumulative flow chart](./guidance/cumulative-flow.md)</li>
-<li style="margin-bottom:2px">[Velocity chart](../work/scrum/velocity-and-forecasting.md) </li>
+<li style="margin-bottom:2px">[Velocity](./guidance/team-velocity.md) </li>
 <li style="margin-bottom:2px">[Sprint burndown chart](../work/scrum/sprint-burndown.md)</li>
 <li style="margin-bottom:2px">[Team capacity chart](../work/scale/capacity-planning.md) </li>
 </ul>

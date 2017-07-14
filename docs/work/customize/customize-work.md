@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/12/2017
+ms.date: 06/23/2017
 ---
 
 # Customize your work tracking experience 
@@ -17,107 +17,11 @@ As you plan and track your project, you'll find you may want to configure a feat
 
 Customizations you make occur at one of three levels:   
 
-- **Team level**: Add teams and configure Scrum and Kanban tools that are team specific, such as what appears on each team's backlogs and boards, adding work item templates, and more 
 - **Team project level**: Add or modify work item types, data fields, backlog levels, and other objects shared across teams  
 - **Object level**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the team project and assigning users or groups to specific access levels.  
 
 >[!NOTE]  
->If you're new to tracking work in Team Services or TFS, see [Get started with Agile tools to plan and track work](../agile-project-management.md). 
-
-
-<a id="teams"></a>
-## Add teams and configure their Scrum and Kanban tools 
-
-Each team can configure the backlogs and boards they use to support their Scrum or Kanban methodology.
-You plan and track your project using the set of Agile tools you access from the web portal. 
-
-![Agile tools, team assets](../scale/_img/agile-tools-team-assets.png)
-
-The following tools are team specific, that is, when you [add another team](../scale/multiple-teams.md), you create another variant of the tool that is configurable and customizable by the team through the web portal. 
-
-
-<div style="float:left;width:120px;margin:6px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlogs</p>
-- [Product backlog](../backlogs/create-your-backlog.md)   
-- [Portfolio backlogs](../backlogs/define-features-epics.md)   
-- [Sprint backlogs](../scrum/sprint-planning.md)     
-</div>
-
-<div style="float:left;width:120px;margin:6px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Task boards</p>
-- [Task boards](../scrum/task-board.md)   
-- [Sprint burndown](../scrum/sprint-burndown.md)   
-- [Capacity planning](../scale/capacity-planning.md)    
-</div>
-
-<div style="float:left;width:160px;margin:6px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Kanban boards</p> 
-- [Kanban board](../kanban/kanban-basics.md)   
-- [Task checklists](../kanban/add-task-checklists.md)   
-- [Epics & Features boards](../kanban/kanban-epics-features-stories.md)   
-- [Filter the Kanban board](../kanban/filter-kanban-board.md)   
- 
-</div>
-
-
-<div style="float:left;width:280px;margin:6px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Other tools</p>
-- [Velocity](../../report/guidance/team-velocity.md)   
-- [Forecasting](../scrum/forecast.md)    
-- [Team dashboards](../../Report/dashboards.md)   
-- [Team notifications](../../collaborate/manage-team-notifications.md) (Team Services, TFS 2017.1)   
-- [Team alerts](../track/alerts-and-notifications.md) (TFS 2013-TFS 2017)   
-- [Team rooms](../../collaborate/collaborate-in-a-team-room.md)   
-   
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
-Teams are associated with one or more area paths and a backlog iteration path which determine what items will appear on their backlogs and boards. For details on adding and configuring teams, see the following topics.  
- 
-<div style="float:left;width:180px;margin:6px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Teams </p>
-- [Add teams](../scale/multiple-teams.md)  
-- [Team admins](../scale/manage-team-assets.md#add-team-admin)  
-- [Team members](../scale/multiple-teams.md#add-team-members)  
-<br/>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Basic team settings </p>
-- [Area paths](../scale/set-team-defaults.md)   
-- [Iteration paths](../scale/set-team-defaults.md)  
-- [Backlog levels](../customize/select-backlog-navigation-levels.md)  
-- [Working with bugs](show-bugs-on-backlog.md)  
-- [Working days](../customize/set-working-days.md)  
-</div>
-
-<div style="float:left;width:180px;margin:6px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Kanban boards</p>
-- [Add columns](../kanban/add-columns.md)  
-- [WIP limits](../kanban/wip-limits.md)   
-- [Split columns](../kanban/split-columns.md)   
-- [Expedite work](../kanban/expedite-work.md)  
-- [Definition of done](../kanban/definition-of-done.md)  
-- [Customize cards](../customize/customize-cards.md)  
-- [Card reordering](../kanban/kanban-basics.md#card-reorder-setting)  
-- [Annotations](../customize/customize-cards.md#annotations)  
-- [Cumulative flow chart](../../report/guidance/cumulative-flow.md)
-</div>
-
-<div style="float:left;width:200px;margin:6px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Scrum tools</p>
-- [Add/remove sprint backlogs](../scale/set-team-defaults.md)   
-- [Set sprint dates](../customize/modify-areas-iterations.md)    
-- [Customize cards on task board](../customize/customize-cards.md#task-board)   
-- [Capacity planning](../scale/capacity-planning.md)  
-- [Velocity](../../report/guidance/team-velocity.md)    
-- [Forecasting](../scrum/forecast.md)   
-</div>
-
-
-
-<div style="clear:left;font-size:100%">
-</div>
-
+>If you're new to tracking work in Team Services or TFS, see [Get started with Agile tools to plan and track work](../overview.md). 
 
 
 
@@ -129,7 +33,7 @@ Each team project provides a number of shared resources that support all teams a
 <div style="float:left;width:300px;margin:8px;font-size:90%">
 
 <p><b>Area path pick lists</b></p>
-<p>Change the [pick list of area paths](modify-areas-iterations.md) to support grouping work items by team, product, or feature area. </p>
+<p>Change the [pick list of area paths](set-area-paths.md) to support grouping work items by team, product, or feature area. </p>
 ![Hierarchical area paths](../../_img/alm-feature-area-paths.png)   
 
 
@@ -177,7 +81,7 @@ Your team project determines the objects available to tracking work and the conf
 >- **Hosted XML**: Supports customization through import/export of process templates, available for Team Services only    
 >- **On-premises XML**: Supports customization through import/export of XML definition files for work tracking objects      
  
-The following table summarizes the differences between the three supported process models. For definitions of the main work tracking objects, see [Definitions](#object-definitions).  
+The following table summarizes the differences between the three supported process models. For definitions of the main work tracking objects, see [Agile glossary](../concepts/agile-glossary.md).  
 
 <table width="90%">
 <tr valign="bottom">
@@ -466,8 +370,8 @@ You can perform the following tasks when you work with the On-prem XML process m
 <div style="float:left;width:245px;margin:8px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Pick lists</p>
 <ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Area paths & iteration paths](#shared-resources)</li>
-<li style="margin-bottom:2px">[Iteration paths](modify-areas-iterations.md)</li>
+<li style="margin-bottom:2px">[Area paths](set-area-paths.md)</li>
+<li style="margin-bottom:2px">[Iteration paths](set-iteration-paths-sprints.md)</li>
 <li style="margin-bottom:2px">[Add a custom pick list](add-modify-field.md#picklist)</li>
 <li style="margin-bottom:2px">[Modify a pre-defined pick list](add-modify-field.md#picklist)</li>
 <li style="margin-bottom:2px">[State or Reason fields (customize workflow)](../reference/change-workflow-wit.md)</li>
@@ -565,8 +469,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 
 <div style="float:left;width:280px;margin:8px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Permissions </p>
-- [Area path permissions](modify-areas-iterations.md#set-permissions)   
-- [Iteration path permissions](modify-areas-iterations.md#set-permissions)   
+- [Area path permissions](../how-to/set-permissions-access-work-tracking.md#set-permissions-area-path)     
 - [Process permissions](../process/manage-process.md#process-permissions)   
 - [Work item query and folder permissions](../track/set-query-permissions.md)   
 - [Dashboard permissions](../../report/dashboards.md#set-permissions)   
@@ -581,8 +484,8 @@ Otherwise, to grant or restrict access to select features or functions, review o
 <div style="float:left;width:120px;margin:8px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Shared resources</p>
 - [Alerts](../track/alerts-and-notifications.md)    
-- [Area paths](modify-areas-iterations.md)   
-- [Iteration paths](modify-areas-iterations.md)   
+- [Area paths](set-area-paths.md)   
+- [Iteration paths](set-iteration-paths-sprints.md)   
 - [Queries](../track/using-queries.md)   
 - [Tags](../track/add-tags-to-work-items.md)   
    
@@ -601,7 +504,7 @@ Learn more about how to use work tracking to plan, manage, and monitor your proj
 - [Configure team settings](../scale/manage-team-assets.md)  
 - [**witadmin** command-line tools](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 - [Agile tools](../overview.md)  
-- [Agile project management, get started](../agile-project-management.md)   
+- [Agile project management, get started](../overview.md)   
 - [Scrum](../guidance/scrum-process.md) | [Agile](../guidance/agile-process.md) | [CMMI](../guidance/cmmi-process.md) processes and process templates  
 - [Configure features after an upgrade](configure-features-after-upgrade.md) (TFS only)    
 
@@ -774,26 +677,14 @@ When adding custom fields, note the following limits:
 [add-team-members]: ../scale/multiple-teams.md#add-team-members
 [add-team-admin]: ../scale/team-assets.md#add-team-admin
 
-
-
-<a id="object-definitions"></a>
-### Definitions of key work tracking objects 
-
-Your work tracking experience is managed and customized primarily through the objects defined in the following table. 
-
-| Object | Definition | 
-|--------|------------|
-|Category| Defines groups that associate a type of work item with a category. Categories support the process configuration used by the web portal backlog and task board pages. For example, you can add custom work item types to the Requirements category and manage them using the product backlog and Kanban boards. To learn more, see [Use categories to group work item types](../reference/use-categories-to-group-work-item-types.md). | 
-|Field |Supports tracking a piece of information about the work to perform. Values you assign to a field are stored in the work tracking data store which you can query and generate charts to view status and trends. Your team project contains 100 or more data fields. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. For a definition of each predefined field, see [Work item field index](../guidance/work-item-field.md).  | 
-|Global list | Defines a list of menu items or pick list items that are shared across WITs and team projects within a team project collection. Global lists help to minimize the work that is required to update lists. You can define global lists within WITs that you upload with your process template. To learn more, see [Manage global lists for work item types](../reference/witadmin/manage-global-lists-for-work-item-types.md). (Only supported for Hosted XML and On-premises XML process models)| 
-|Global workflow |  Specifies both work item fields and global lists that multiple team projects and types of work items can share. To learn more, see [Manage global workflow](../reference/witadmin/witadmin-import-export-global-workflow.md) (Only supported for On-premises XML process model). | 
-|Link type |  Specifies an object used to form link relationships between different WITs. To learn more about link relationships and link types, see [Link work items to support traceability and manage dependencies  ](../track/link-work-items-support-traceability.md) and [LinkTypes elements reference](../reference/link-type-element-reference.md). |
-|Pick list |  Specify an enumerated set of values that appear within a drop-down menu in a work item form and the **Value** column within the query editor. The method you use to customize a pick list varies depending on the field and the process model.  |
-|Process | Defines the building blocks of the work tracking system. To customize a process, you first create an inherited process from one of the default system processes&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md). Changes you make to a process are seen by all team projects that use it. (Only supported for Inheritance process model) |
-|Process configuration | Specifies the default configuration and functional capabilities that your teams can access using the Agile tools. These web portal tools include the product backlog, sprint backlogs, Kanban board, and task board. (Only supported for Hosted XML and On-premises XML process models) |  
-|Process template | Specifies an inter-related set of files that contain the XML definitions for tracking work and defining the initial configuration of other functional areas. The system provides three default process templates&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md). You can create a team project and then customize it, or customize a process template that you then use to create a team project. (Only supported for Hosted XML and On-premises XML process models) |
-|Work item type (WIT) | Specifies the fields, workflow, and form used to track an item of work. Each WIT is associated with 30+ system fields and several more type-specific fields. You use work items to plan and track the work required to develop your project. For an overview of predefined WITs provided with the default processes, see [Choose a process](../guidance/choose-process.md).  | 
+ 
   
 
 [!INCLUDE [temp](../_shared/help-support-shared.md)]
+
+<!--- ADDRESS THESE VERBATIMS: 
+Configure bug reporting
+Add a column to a board 
+
+--> 
 

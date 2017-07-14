@@ -12,6 +12,8 @@
 ## [Schedule sprints](scrum/define-sprints.md)
 ## [Drive Git development](backlogs/connect-work-items-to-git-dev-ops.md)  
 ## [Storyboard your ideas](office/storyboard-your-ideas-using-powerpoint.md)
+## [Work item search](../search/workitem/get-started.md)  
+
 
 # Tutorials 
 ## [Manage bugs](backlogs/manage-bugs.md)
@@ -37,21 +39,20 @@
 ### [Add & update tasks (Task board)](scrum/task-board.md)
 ### [Plan capacity](scale/capacity-planning.md)
 ### [Sprint burndown](scrum/sprint-burndown.md)
-### [Velocity & forecasting](scrum/velocity-and-forecasting.md) 
+### [Forecast](scrum/forecast.md) 
+### [Velocity](../report/guidance/team-velocity.md) 
 
 ## Kanban
 ### [Kanban basics](kanban/kanban-basics.md)
 ### [Add task checklists](kanban/add-task-checklists.md)  
 ### [Add, run, & update inline tests](kanban/add-run-update-tests.md)  
 ### [Define features & epics](kanban/kanban-epics-features-stories.md)
-### [Filter a Kanban board](kanban/filter-kanban-board.md)
-### [Customize your Kanban board](kanban/add-columns.md)
+### [Customize your Kanban board](/team-services/work/kanban/add-columns)
 
 ## Track work
 ### [Add tags to work items](track/add-tags-to-work-items.md)
 ### [Follow work](../collaborate/follow-work-items.md) 
-### [Adhoc work item search](../search/workitem/get-started.md)  
-### [Set personal or team favorites](../collaborate/set-favorites.md)  
+### [Adhoc work item search](../search/workitem/get-started.md)   
 ### [Set personal notifications](../collaborate/manage-personal-notifications.md)
 ### [Schedule projects using Project](office/create-your-backlog-tasks-using-project.md)
 ### [Share work plans](track/share-plans.md)
@@ -73,7 +74,8 @@
 ### [Scaled Agile Framework](./scale/scaled-agile-framework.md)   
 
 # Concepts
-
+## [Agile glossary](concepts/agile-glossary.md)
+## [About permissions and access](permissions-access-work-tracking.md)  
 ## About processes & Agile methods (NEW)  
 ## [Agile tools and sprint planning](concepts/sprint-planning-tools.md)
 ## [Backlogs, boards, & plans](backlogs-boards-plans.md)
@@ -90,7 +92,6 @@
 
 ## [Office integration](office/track-work-vsts-tfs.md)
 ## [New work item experience](process/new-work-item-experience.md)
-
 
 
 ## Scaling Agile

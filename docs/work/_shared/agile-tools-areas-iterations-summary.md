@@ -8,7 +8,7 @@ Several Agile tools reference the team's default area path, iteration path, and 
 - [Product backlog](../backlogs/create-your-backlog.md)     
 - [Features backlog](../backlogs/define-features-epics.md)    
 - [Epics backlog](../backlogs/define-features-epics.md)  
-- [Forecast](../scrum/velocity-and-forecasting.md)    
+- [Forecast](../scrum/forecast.md)     
 
 </div>
 <div style="float:left;width:130px;margin:3px">
@@ -41,7 +41,7 @@ Several Agile tools reference the team's default area path, iteration path, and 
 <div style="float:left;width:100px;margin:3px">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;font-size:90%">Other</p>
 - [Queries](../track/using-queries.md)    
-- [Velocity](../scrum/velocity-and-forecasting.md)    
+- [Velocity](../../report/guidance/team-velocity.md)     
 - [Dashboards](../../report/dashboards.md)    
 - [Alerts](../track/alerts-and-notifications.md)    
 

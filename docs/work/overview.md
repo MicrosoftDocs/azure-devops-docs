@@ -49,8 +49,8 @@ Most Agile tools are [scoped to a team](about-teams-and-settings.md). This suppo
 - [Delivery plans](scale/review-team-plans.md)   
 - [Managed queries](track/using-queries.md)  
 - [Adhoc queries](../search/workitem/get-started.md)  
-- [Velocity](scrum/velocity-and-forecasting.md)   
-- [Forecasting](scrum/velocity-and-forecasting.md)      
+- [Velocity](../report/guidance/team-velocity.md)   
+- [Forecasting](scrum/forecast.md)      
    
 </div>
 
@@ -72,7 +72,7 @@ You build your project plan by creating a backlog of work items that represent t
 ## Scrum method and tools 
 The Scrum method uses sprints to plan work to perform by a team within a specific time period and cadence. To get started, several sprints are predefined for your team.  If you're new to Scrum, get an overview from [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/). 
 
-[![Schedule sprints](_img/gs-planning-define-sprints.png)](./scrum/define-sprints.md)[![Plan a sprint](_img/gs-planning-plan-sprint.png)](./scrum/sprint-planning.md)[![Monitor sprint progress](_img/gs-planning-monitor-sprint.png)](./scrum/task-board.md)[![Forecast](_img/gs-planning-forecast.png)](./scrum/velocity-and-forecasting.md)
+[![Schedule sprints](_img/gs-planning-define-sprints.png)](./scrum/define-sprints.md)[![Plan a sprint](_img/gs-planning-plan-sprint.png)](./scrum/sprint-planning.md)[![Monitor sprint progress](_img/gs-planning-monitor-sprint.png)](./scrum/task-board.md)[![Forecast](_img/gs-planning-forecast.png)](./scrum/forecast.md)
 
 You can quickly assign work items to a sprint by dragging and dropping them from the product backlog to the sprint. 
 

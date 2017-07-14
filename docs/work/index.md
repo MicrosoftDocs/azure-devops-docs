@@ -7,7 +7,7 @@ ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 06/22/2017
+ms.date: 07/14/2017
 ---
 
 # Agile tools documentation 
@@ -62,7 +62,8 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Plan capacity](./scale/capacity-planning.md)  
 - [Add and update tasks](./scrum/task-board.md)  
 - [Sprint burndown](./scrum/sprint-burndown.md)  
-- [Velocity & forecast](./scrum/velocity-and-forecasting.md)  
+- [Forecast](./scrum/forecast.md)   
+- [Velocity](../report/guidance/team-velocity.md) 
 <br/>
 <i><u>Configure</u></i>   
 - [Set team defaults](./scale/set-team-defaults.md)  

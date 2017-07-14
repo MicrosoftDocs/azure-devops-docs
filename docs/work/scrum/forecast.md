@@ -92,7 +92,7 @@ You can then assess the delta between the current team's velocity and the requir
 Here's what needs to happen for you and your team to gain the greatest utility from the velocity chart and forecast tool.  
 
 **Required:** 
-*	[Define sprints for the team project](../customize/modify-areas-iterations.md) - Sprints should be of the same duration. 
+*	[Define sprints for the team project](../customize/set-iteration-paths-sprints.md) - Sprints should be of the same duration. 
 *	[Select sprints for each team](../scale/set-team-defaults.md#activate)
 *	[Define and estimate backlog items](../backlogs/create-your-backlog.md#estimates). If you work from your team's backlog, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
 *	Update the status of backlog items once work starts and when completed. Only backlog items whose State maps to a metastate of In Progress or Done show up on the velocity chart. 
@@ -100,7 +100,7 @@ Here's what needs to happen for you and your team to gain the greatest utility f
 **Recommended:**  
 *	Define and size backlog items to [minimize variability](#minimize-variability).  
 *	Determine how your team wants to [treat bugs](../customize/show-bugs-on-backlog.md). If your team chooses to treat bugs like requirements, bugs will show up on the backlog and be counted within the Velocity chart and forecasting. 
-*	[Set your team's area path](../customize/modify-areas-iterations.md). The forecast tool will forecast those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.     
+*	[Set your team's area path](../scale/set-team-defaults.md). The forecast tool will forecast those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.     
 *	Don't  create a hierarchy of backlog items and bugs. The Kanban board, sprint backlog, and task board only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. <br/>Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list─only creating parent-child links one level deep between items. Use [Features to group requirements or user stories](../backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.  
 *	At the end of the sprint, update the status of those backlog items that the team has fully completed. Incomplete items should be moved back to the product backlog and considered in a future sprint planning meeting.   
  
@@ -110,7 +110,7 @@ Now that you understand how to work with forecasting, you can use this tool to s
 ## Related notes
 
 *	[Team velocity](../../report/guidance/team-velocity.md)  
-*	[Define sprints for the team project](../customize/modify-areas-iterations.md)  
+*	[Define sprints for the team project](../customize/set-iteration-paths-sprints.md)  
 *	[Select sprints for a team](../scale/set-team-defaults.md)  
 *	Use the [task board](task-board.md) to track work during your sprint
 *	Monitor the [sprint burndown chart](task-board.md) to determine if your team is on track to complete the sprint plan

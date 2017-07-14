@@ -7,7 +7,7 @@ ms.prod: vs-devops-alm
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/22/2017
+ms.date: 07/14/2017
 --- 
 
 
@@ -25,7 +25,7 @@ You can drag any work item to any column or swimlane on the Kanban board. You ca
 
 >[!TIP]
 >If you work from Team Services or TFS 2015.1 and later versions, you can 
->[drag-and-drop work items onto a sprint from any backlog or board](../scrum/define-sprints.md#drag-drop-to-sprint). 
+>[drag-and-drop work items onto a sprint from any backlog or board](../scrum/define-sprints.md). 
 
 <a id="card-reorder-setting"></a>
 ## Set card reordering team preference  

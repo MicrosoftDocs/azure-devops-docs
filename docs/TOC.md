@@ -57,6 +57,7 @@
 
 
 # Concepts
+## [Team projects, teams, and repos](get-started/team-projects-teams-repos.md)  
 ## [Key concepts](concepts.md)
 ## [Essential services](services.md)
 ## [Clients & tools](tools.md)  
