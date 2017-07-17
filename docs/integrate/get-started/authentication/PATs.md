@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Authenticating with personal access tokens
 
-If you are working on a larger application or project we recommend you check out our [authentication guidence](./authentication_guidance.md) page to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, personal access tokens are a simple alternative. Please be aware that unless your users are using a credential manager (hyper link to below), they will have to enter their credentials each time.
+If you are working on a larger application or project we recommend you check out our [authentication guidance](./authentication-guidance.md) page to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, personal access tokens are a simple alternative. Please be aware that unless your users are using a credential manager (hyper link to below), they will have to enter their credentials each time.
 
 These APIs support [OAuth](./oauth.md) for authorization and you should plan to use that. With Oauth your users 
 don't have to provide their Visual Studio Team Services credentials to use when the APIs are called.

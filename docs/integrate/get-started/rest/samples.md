@@ -13,9 +13,9 @@ ms.date: 08/25/2016
 
 ## Personal Access Tokens
 
-When using the REST APIs or .Net Libraries, you need to authenticate with Team Services. Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../Authentication/authentication_guidance.md) section for guidance on which one is best suited for your scenario.
+When using the REST APIs or .Net Libraries, you need to authenticate with Team Services. Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
 
-To get started with these samples [create a personal access token](../Authentication/PATs.md).
+To get started with these samples [create a personal access token](../authentication/PATs.md).
 
 <div class="alert alert-info">
 Tip: Personal access tokens are like passwords. Keep them secret. Make sure you save them in a secure location once your personal access token is created.
