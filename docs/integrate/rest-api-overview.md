@@ -9,7 +9,20 @@ ms.author: elbatk
 ms.date: 08/04/2016
 ---
 
-# Get started with the REST APIs
+# Visual Studio Team Services REST API Reference
+
+Welcome to the Visual Studio Team Services REST API Reference. 
+
+Representational State Transfer (REST) APIs are service endpoints that support sets of HTTP operations (methods), which provide create, retrieve, update, or delete access to the service's resources. This article walks you through:
+
+- The basic components of a REST API request/response pair.
+- How to register your client application with Azure Active Directory (Azure AD) to secure your REST requests.
+- Overviews of creating and sending a REST request, and handling the response.
+
+
+
+--here--
+
 
 Integrate your app with VS Team Services and TFS using these REST APIs.
 
