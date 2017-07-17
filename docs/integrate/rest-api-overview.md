@@ -69,62 +69,7 @@ There are many ways to authenticate your application or service with Team Servic
 
 ### Assemble the request
 
-## Process the response
-
-You should get a response like this.
-
-```json
-{
-    "value": [
-        {
-            "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
-            "name": "Fabrikam-Fiber-TFVC",
-            "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
-            "description": "TeamFoundationVersionControlprojects",
-            "collection": {
-                "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "name": "DefaultCollection",
-                "url": "https: //fabrikam-fiber-inc.visualstudio.com/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "collectionUrl": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection"
-            },
-            "defaultTeam": {
-                "id": "66df9be7-3586-467b-9c5f-425b29afedfd",
-                "name": "Fabrikam-Fiber-TFVCTeam",
-                "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/66df9be7-3586-467b-9c5f-425b29afedfd"
-            }
-        },
-        {
-            "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
-            "name": "Fabrikam-Fiber-Git",
-            "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
-            "description": "Gitprojects",
-            "collection": {
-                "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "name": "DefaultCollection",
-                "url": "https: //fabrikam-fiber-inc.visualstudio.com/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "collectionUrl": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection"
-            },
-            "defaultTeam": {
-                "id": "8bd35c5e-30bb-4834-a0c4-d576ce1b8df7",
-                "name": "Fabrikam-Fiber-GitTeam",
-                "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/teams/8bd35c5e-30bb-4834-a0c4-d576ce1b8df7"
-            }
-        }
-    ],
-    "count": 2
-}
-```
-
-The response is [JSON](http://json.org/). That's generally what you'll get back from the REST APIs although there are a few exceptions,
-like [Git blobs](https://visualstudio.com/api/git/blobs.md).
-
-Now you should be able to look around the specific
-[API areas](https://visualstudio.com/api/overview.md) like [work item tracking](https://visualstudio.com/api/wit/overview.md)
-or [Git](https://visualstudio.com/api/git/overview.md) and get to the resources that you need.
-Keep reading to learn more about the general patterns that are used in these APIs.
-
-## VS Team Services
-
+**Team Services**
 For VS Team Services, `instance` is `{account}.visualstudio.com` and `collection` is `DefaultCollection`,
 so the pattern looks like this:
 
@@ -179,12 +124,10 @@ public static async void GetProjects()
 }
 ```
 <br />
-If you don't have a Visual Studio Team Services account,
-you can [set one up for free](https://www.visualstudio.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services). 
 
 Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../Authentication/authentication_guidance.md) section for guidance on which one is best suited for your scenario.
 
-## TFS
+**TFS**
 
 For TFS, `instance` is `{server:port}` and by default the port is 8080.
 The default collection is `DefaultCollection`, but can be any collection.
@@ -196,6 +139,60 @@ curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollecti
 ```
 
 The examples above use personal access tokens, which requires that you [create a personal access token](../Authentication/PATs.md).
+
+## Process the response
+
+You should get a response like this.
+
+```json
+{
+    "value": [
+        {
+            "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
+            "name": "Fabrikam-Fiber-TFVC",
+            "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
+            "description": "TeamFoundationVersionControlprojects",
+            "collection": {
+                "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+                "name": "DefaultCollection",
+                "url": "https: //fabrikam-fiber-inc.visualstudio.com/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+                "collectionUrl": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection"
+            },
+            "defaultTeam": {
+                "id": "66df9be7-3586-467b-9c5f-425b29afedfd",
+                "name": "Fabrikam-Fiber-TFVCTeam",
+                "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/66df9be7-3586-467b-9c5f-425b29afedfd"
+            }
+        },
+        {
+            "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+            "name": "Fabrikam-Fiber-Git",
+            "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+            "description": "Gitprojects",
+            "collection": {
+                "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+                "name": "DefaultCollection",
+                "url": "https: //fabrikam-fiber-inc.visualstudio.com/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+                "collectionUrl": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection"
+            },
+            "defaultTeam": {
+                "id": "8bd35c5e-30bb-4834-a0c4-d576ce1b8df7",
+                "name": "Fabrikam-Fiber-GitTeam",
+                "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/teams/8bd35c5e-30bb-4834-a0c4-d576ce1b8df7"
+            }
+        }
+    ],
+    "count": 2
+}
+```
+
+The response is [JSON](http://json.org/). That's generally what you'll get back from the REST APIs although there are a few exceptions,
+like [Git blobs](https://visualstudio.com/api/git/blobs.md).
+
+Now you should be able to look around the specific
+[API areas](https://visualstudio.com/api/overview.md) like [work item tracking](https://visualstudio.com/api/wit/overview.md)
+or [Git](https://visualstudio.com/api/git/overview.md) and get to the resources that you need.
+Keep reading to learn more about the general patterns that are used in these APIs.
 
 
 ## Related Content
