@@ -17,9 +17,9 @@
 
 # Concepts
 ## [REST APIs](https://visualstudio.com/integrate/api/overview.md)
-## [.NET Client Libraries TODO](link)
+## [.NET Client Libraries](./concepts/dotnet-client-libraries.md)
 ## [Authentication](./get-started/authentication/authentication-guidance.md)
-## Service Hooks (TODO)
+## [Service Hooks](./concepts/service-hooks.md)
 
 # How to
 ## [Call a REST API](how-to/call-rest-api.md)
