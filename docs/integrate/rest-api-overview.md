@@ -198,26 +198,5 @@ curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollecti
 The examples above use personal access tokens, which requires that you [create a personal access token](../Authentication/PATs.md).
 
 
-## Cross-origin resource sharing (CORS)
-
-Visual Studio Team Services supports CORS. This enables JavaScript code served from a domain other than *.visualstudio.com to make Ajax requests to Visual Studio Team Services REST APIs. For this to work, each request must provide credentials (personal access tokens and OAuth access tokens are both supported options). Example:
-
-```js
-    $( document ).ready(function() {
-        $.ajax({
-            url: 'https://fabrikam.visualstudio.com/defaultcollection/_apis/projects?api-version=1.0',
-            dataType: 'json',
-            headers: {
-                'Authorization': 'Basic ' + btoa("" + ":" + myPatToken)
-            }
-        }).done(function( results ) {
-            console.log( results.value[0].id + " " + results.value[0].name );
-        });
-    });
-```
-
-(replace `myPatToken` with a personal access token) 
-
-
 ## Related Content
 
