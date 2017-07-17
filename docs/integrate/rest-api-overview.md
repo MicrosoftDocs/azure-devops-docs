@@ -197,3 +197,10 @@ Keep reading to learn more about the general patterns that are used in these API
 
 ## Related Content
 
+* Check out the [Integrate documentation](./overview.md) for REST API samples and use cases
+    * [Authentication guidance](./get-started/authentication/authentication-guidance.md)
+    * [Samples](./get-started/rest/samples.md)
+* Discover the [.NET Client Libraries](./concepts/dotnet-client-libraries.md) for these REST APIs.
+    * [Samples](./get-started/client-libraries/samples.md)
+
+
