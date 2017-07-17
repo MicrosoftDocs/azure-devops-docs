@@ -1,80 +1,80 @@
 - name: Team Services & TFS 
-  href: /docs/
-  homepage: /docs/index
+  href: /
+  homepage: index
   items: 
   - name: Get started
-    href: /docs/
-    homepage: /docs/index
+    href: /
+    homepage: index
   - name: Agile tools/Work
-    href: /docs/work/
-    homepage: /docs/work/index
+    href: work/
+    homepage: work/index
   - name: Build & Release
-    href: /docs/build/
-    homepage: /docs/build/overview
+    href: build/
+    homepage: build/overview
   - name: Charts, Dashboards & Widgets
-    href: /docs/report/
-    homepage: /docs/report/index
+    href: report/
+    homepage: report/index
   - name: SQL, Excel, & SharePoint (TFS)
-    href: /docs/report/sql-reports
-    homepage: /docs/report/sql-reports/reporting-services-reports
+    href: report/sql-reports
+    homepage: report/sql-reports/reporting-services-reports
   - name: Git
-    href: /docs/git/
-    homepage: /docs/git/overview
+    href: git/
+    homepage: git/overview
   - name: Package Management
-    href: /docs/package/
-    homepage: /docs/package/overview
+    href: package/
+    homepage: package/overview
   - name: Test
-    href: /docs/test/
-    homepage: /docs/test/index
+    href: test/
+    homepage: test/index
   - name: TFVC
-    href: /docs/tfvc/
-    homepage: /docs/tfvc/overview
+    href: tfvc/
+    homepage: tfvc/overview
   - name: Team Services Account Management 
-    href: /docs/setup-admin/team-services/
-    homepage: /docs/setup-admin/team-services/overview
+    href: setup-admin/team-services/
+    homepage: setup-admin/team-services/overview
   - name: TFS Administration
-    href: /docs/setup-admin/tfs/
-    homepage: /docs/setup-admin/get-started
+    href: setup-admin/tfs/
+    homepage: setup-admin/get-started
   - name: Customize work tracking
-    href: /docs/work/customize
-    homepage: /docs/work/customize/customize-work
+    href: work/customize
+    homepage: work/customize/customize-work
   - name: TFS-Project Server integration
-    href: /docs/work/tfs-ps-sync 
-    homepage: /docs/work/tfs-ps-sync/synchronize-tfs-project-server 
+    href: work/tfs-ps-sync 
+    homepage: work/tfs-ps-sync/synchronize-tfs-project-server 
 - name: Marketplace & Billing
-  href: /docs/marketplace/
-  homepage: /docs/marketplace/overview
+  href: marketplace/
+  homepage: marketplace/overview
   items: 
   - name: Marketplace & Billing
-    href: /docs/marketplace/
-    homepage: /docs/marketplace/overview
+    href: marketplace/
+    homepage: marketplace/overview
   - name: Service hooks
-    href: /docs/marketplace/integrate/service-hooks/
-    homepage: /docs/marketplace/integrate/service-hooks/get-started
+    href: marketplace/integrate/service-hooks/
+    homepage: marketplace/integrate/service-hooks/get-started
 - name: Integrate
-  href: /docs/integrate/
-  homepage: /docs/integrate/overview
+  href: integrate/
+  homepage: integrate/overview
   items: 
   - name: Integrate overview
-    href: /docs/integrate/
-    homepage: /docs/integrate/overview
+    href: integrate/
+    homepage: integrate/overview
   - name: Service hook integration
-    href: /docs/marketplace/integrate/service-hooks/
-    homepage: /docs/marketplace/integrate/service-hooks/get-started
+    href: marketplace/integrate/service-hooks/
+    homepage: marketplace/integrate/service-hooks/get-started
   - name: Visual Studio Extensions
-    href: /docs/integrate/ide/extensions/
-    homepage: /docs/integrate/ide/extensions/overview
+    href: integrate/ide/extensions/
+    homepage: integrate/ide/extensions/overview
 - name: Visual Studio subscriptions
-  href: /docs/marketplace/vs-subscriptions/
-  homepage: /docs/marketplace/vs-subscriptions/buy-vs-subscriptions
+  href: marketplace/vs-subscriptions/
+  homepage: marketplace/vs-subscriptions/buy-vs-subscriptions
   items: 
   - name: Visual Studio Subscriptions
-    href: /docs/marketplace/vs-subscriptions/
-    homepage: /docs/marketplace/vs-subscriptions/buy-vs-subscriptions
+    href: marketplace/vs-subscriptions/
+    homepage: marketplace/vs-subscriptions/buy-vs-subscriptions
 - name: Extend
-  href: /docs/extend/
-  homepage: /docs/extend/overview
+  href: extend/
+  homepage: extend/overview
   items: 
   - name: Extend overview
-    href: /docs/extend/
-    homepage: /docs/extend/overview
+    href: extend/
+    homepage: extend/overview
