@@ -6,7 +6,7 @@
 ## [Manage users and access](add-account-users-assign-access-levels-team-services.md)
 ## [Add members to team projects](add-team-members-vs.md)
 ## [Try extensions for free](try-additional-features-vs.md)
-## [Get more features](/docs/marketplace/get-vsts-extensions)
+## [Get more features](../../marketplace/get-vsts-extensions)
 
 
 
@@ -23,12 +23,12 @@
  
 
 ## Billing and purchases
-### [Set up billing](/docs/setup-admin/team-services/set-up-billing-for-your-account-vs)
-### [Pay for Team Services users](/docs/setup-admin/team-services/buy-basic-access-add-team-services-users)
-### [How to buy build pipelines](/docs/setup-admin/team-services/buy-more-build-vs)
-### [How to buy load testing services](/docs/setup-admin/team-services/buy-load-testing-vs)
-### [Buy Visual Studio subscriptions](/docs/setup-admin/team-services/buy-vs-subscriptions)
-### [Get HockeyApp](/docs/marketplace/get-hockeyapp)
+### [Set up billing](set-up-billing-for-your-account-vs)
+### [Pay for Team Services users](buy-basic-access-add-team-services-users)
+### [How to buy build pipelines](buy-more-build-vs)
+### [How to buy load testing services](buy-load-testing-vs)
+### [Buy Visual Studio subscriptions](buy-vs-subscriptions)
+### [Get HockeyApp](../../marketplace/get-hockeyapp)
 
 ## Manage account
 ### [Change account owner](change-account-ownership-vs.md)
@@ -36,26 +36,26 @@
 ### [Delete or recover account](delete-or-recover-your-account-vs.md)
 
 # Concepts
-## [Permissions and access](/docs/setup-admin/permissions-access) 
+## [Permissions and access](../permissions-access) 
 
 # How to  
 ## [Connect to your account](connect-to-visual-studio-team-services.md)
-## [Work as a Stakeholder](/docs/work/connect/work-as-a-stakeholder)
+## [Work as a Stakeholder](../../work/connect/work-as-a-stakeholder)
 ## [Create a team project](../create-team-project.md)
 ## [Rename a team project](../rename-team-project.md)
 ## [Delete a team project](../delete-team-project.md)
 ## [Clean up data](../clean-up-data.md)
-## [Connect to team projects](/docs/connect/connect-team-projects) 
+## [Connect to team projects](../../connect/connect-team-projects) 
 
-## [Add administrators](/docs/add-administrator-tfs.md)
-## [Change permission levels](/docs/tfs/admin/change-permission-levels)
-## [Restrict access to resources](/docs/restrict-access-tfs)
+## [Add administrators](../../add-administrator-tfs.md)
+## [Change permission levels](../../tfs/admin/change-permission-levels)
+## [Restrict access to resources](../../restrict-access-tfs)
 
 # Reference 
 
-## [Permissions and groups reference](/docs/setup-admin/permissions)
-## [Markdown guidance](/docs/reference/markdown-guidance)
-## [Naming restrictions](/docs/reference/naming-restrictions)
+## [Permissions and groups reference](../permissions)
+## [Markdown guidance](../../reference/markdown-guidance)
+## [Naming restrictions](../../reference/naming-restrictions)
 ## [Rate limits](../../reference/rate-limits.md)
 
 
