@@ -30,7 +30,7 @@ Explore the [.NET client library overview](../get-started/client-libraries/dotne
 ## Authentication
 Authentication is a vital part of integrating with Team Services. Based on the type of application you're building, and what products you're building it for, you'll want to choose a different method of authentication. 
 
-Check out the [authentication guidance](./get-started/authentication/authentication_guidance.md) page to find out exactly which method you should use, along with samples for how to implement it.
+Check out the [authentication guidance](./get-started/authentication/authentication-guidance.md) page to find out exactly which method you should use, along with samples for how to implement it.
 
 
 ## Quickstarts
