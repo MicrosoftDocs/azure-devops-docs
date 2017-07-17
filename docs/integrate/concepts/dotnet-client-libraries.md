@@ -17,9 +17,11 @@ For .NET developers building Windows apps and services that integrate with Visua
 ### Features
 * Downloadable from nuget.org and easily importable into your Visual Studio projects
 * Libraries are licensed for redistribution in your apps and services ([view the license](http://go.microsoft.com/fwlink/?LinkId=329770))
-* Access both traditional client object model APIs and [new REST APIs](../../api/overview.md)
- * Note: REST-based clients only work with Visual Studio Team Services and TFS 2015 (not previous versions of TFS) 
-To learn more about extending and integrating with  Visual Studio Team Services and Team Foundation Server using the client libraries, see [Extending Team Foundation](https://msdn.microsoft.com/en-us/library/bb130146.aspx)
+* Access both traditional client object model APIs and [new REST APIs](../rest-api-overview.md)
+
+>Note: REST-based clients only work with Visual Studio Team Services and TFS 2015 (not previous versions of TFS) 
+>To learn more about extending and integrating with  Visual Studio Team Services and Team Foundation Server using the client libraries, 
+>see [Extending Team Foundation](https://msdn.microsoft.com/en-us/library/bb130146.aspx)
 
 ### Packages
 | Package | Description | Primary usage |
@@ -31,7 +33,6 @@ To learn more about extending and integrating with  Visual Studio Team Services 
 | [Microsoft.VisualStudio.Services.DistributedTask.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.DistributedTask.Client/) | Integrate with Team Foundation Server 2015 and Visual Studio Team Services from desktop-based, ASP.NET, and other Windows applications. Provides access to the Distributed Task Service via public REST APIs. | Window desktop apps and services that need to integrate with TFS 2015 and later and Visual Studio Team Services.
 | [Microsoft.VisualStudio.Services.Release.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Release.Client/) | Integrate with Team Foundation Server 2015 and Visual Studio Team Services from desktop-based, ASP.NET, and other Windows applications. Provides access to the Release Service via public REST APIs. | Window desktop apps and services that need to integrate with TFS 2015 and later and Visual Studio Team Services.
 
-Review the [contracts index](../../api/contracts-page.md) to learn more about the .Net client libraries contracts.
 
 <div class="alert alert-info">
 **Tip**: If you have an existing Windows app or service that uses the TFS Client Object Model, use Microsoft.TeamFoundationServer.ExtendedClient
