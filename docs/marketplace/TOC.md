@@ -50,14 +50,14 @@
 ## [Troubleshoot service hooks issues](integrate/service-hooks/troubleshoot.md)
 
 # Resources
-## [Extensions for Visual Studio](../integrate/ide/extensions/overview)
+## [Extensions for Visual Studio](../integrate/ide/extensions/overview.md)
 ## [Extensions for VS Code](https://code.visualstudio.com/docs/editor/extension-gallery)
 
 ## Recommended Team Services & TFS extensions
-### [Code search extension](../search/overview)
-### [Package Management extension](../package/overview)
-### [Work item search extension](../search/workitem/get-started)
-## [How to build Marketplace extensions](../extend/overview#extensions)
+### [Code search extension](../search/overview.md)
+### [Package Management extension](../package/overview.md)
+### [Work item search extension](../search/workitem/get-started.md)
+## [How to build Marketplace extensions](../extend/overview.md#extensions)
 
 
 

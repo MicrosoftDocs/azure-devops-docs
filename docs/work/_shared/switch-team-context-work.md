@@ -4,13 +4,13 @@
 ### Switch team project or team focus   
 Several features depend on the team project or team that you have selected. For example, dashboards, backlogs, and board views will change depending on the context selected. 
 
-For example, when you add a work item, the system references the default area and iteration paths defined for the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board, are assigned the team default backlog iteration. To change team defaults, see [Set team defaults](/docs/work/scale/set-team-defaults).  
+For example, when you add a work item, the system references the default area and iteration paths defined for the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board, are assigned the team default backlog iteration. To change team defaults, see [Set team defaults](../scale/set-team-defaults).  
 
 You navigate to your team context from the top navigation bar. The method changes slightly depending on the platform/version you work from.     
 
 
 >[!NOTE]  
->**Feature availability**: The Account Landing Page feature is in preview mode for Team Services, and enabled for all users from web portal for TFS 2017.1 and later versions. To learn more about this feature, see [Work effectively from your account hub](/docs/connect/account-home-pages). To enable or disable the feature, see [Enable preview features](/docs/collaborate/preview-features).   
+>**Feature availability**: The Account Landing Page feature is in preview mode for Team Services, and enabled for all users from web portal for TFS 2017.1 and later versions. To learn more about this feature, see [Work effectively from your account hub](../../connect/account-home-pages). To enable or disable the feature, see [Enable preview features](../../collaborate/preview-features).   
 
 
 <div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">

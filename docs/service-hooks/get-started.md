@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/integrate/get-started/service-hooks/get-started
+redirect_url: ../integrate/get-started/service-hooks/get-started
 ---

@@ -2150,7 +2150,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Project collection admin context</b></p>
-<p>From the collection admin context, you can [manage collection-level permissions](setup-admin/permissions.md), and set build policies, and [manage extensions](../integrate/extensions/overview.md). Click the ![gear icon](work/_img/icons/gear_icon.png) gear icon to open the admin context and then click DefaultCollection. </p>
+<p>From the collection admin context, you can [manage collection-level permissions](setup-admin/permissions.md), and set build policies, and [manage extensions](integrate/extensions/overview.md). Click the ![gear icon](work/_img/icons/gear_icon.png) gear icon to open the admin context and then click DefaultCollection. </p>
 
 
 </td>
