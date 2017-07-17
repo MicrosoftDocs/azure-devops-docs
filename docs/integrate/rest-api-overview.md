@@ -219,21 +219,5 @@ Visual Studio Team Services supports CORS. This enables JavaScript code served f
 (replace `myPatToken` with a personal access token) 
 
 
-## Help and feedback
-
-Get your technical questions answered, request a feature, or report a bug by sending an e-mail to: **[vsointegration@microsoft.com](http://go.microsoft.com/fwlink/?LinkId=615292)**
-
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-#### Q: Is there a .NET library that I can use to access the web APIs?
-
-A: Yes, see the [overview of client libraries](../client-libraries/dotnet.md).
-
-#### Q: Where can I learn about the specific .Net client libraries contracts?
-
-A: Review the [contracts index](https://visualstudio.com/api/contracts-page.md) to learn about the specific .Net client library contracts.
-
-<!-- ENDSECTION --> 
+## Related Content
 
