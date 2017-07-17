@@ -70,25 +70,25 @@ There are many ways to authenticate your application or service with Team Servic
 ### Assemble the request
 
 **Team Services**
-For VS Team Services, `instance` is `{account}.visualstudio.com` and `collection` is `DefaultCollection`,
-so the pattern looks like this:
+
+For Team Services, *instance* is `{account}.visualstudio.com` and *collection* is `DefaultCollection`, so the pattern looks like this:
 
 ```
 VERB https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?api-version={version}
 ```
-<br />
+
 For example, here's how to get a list of team projects in a Visual Studio Team Services account.
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://{account}.VisualStudio.com/DefaultCollection/_apis/projects?api-version=2.0
 ```
-<br />
+
 If you wish to provide the personal access token through an HTTP header, you must first convert it to a Base64 string (the following example shows how to convert to Base64 using C#).  The resulting string can then be provided as an HTTP header in the format:
 
 ```
 Authorization: Basic BASE64PATSTRING
 ``` 
-<br />
+
 Here it is in C# using the [HttpClient class](http://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx).
 
 ```cs
@@ -123,7 +123,7 @@ public static async void GetProjects()
 	}
 }
 ```
-<br />
+
 
 Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../Authentication/authentication_guidance.md) section for guidance on which one is best suited for your scenario.
 
