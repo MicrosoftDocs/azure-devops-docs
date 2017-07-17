@@ -19,6 +19,8 @@
 ## [.NET Client Libraries](./concepts/dotnet-client-libraries.md)
 ## [Authentication](./get-started/authentication/authentication-guidance.md)
 ## [Service Hooks](./concepts/service-hooks.md)
+## [REST API versioning](./concepts/rest-api-versioning.md)
+## [Cross-origin resource sharing](./concepts/cross-origin-resource-sharing.md)
 
 # How to
 ## [Call a REST API](how-to/call-rest-api.md)
