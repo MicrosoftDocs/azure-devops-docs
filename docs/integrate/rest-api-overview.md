@@ -65,7 +65,7 @@ There are many ways to authenticate your application or service with Team Servic
 | TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](./../client-libraries/dotnet.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | [VSTS Extension](https://www.visualstudio.com/en-us/docs/integrate/extensions/get-started/node#files) | Visual Studio Team Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](https://www.visualstudio.com/en-us/docs/integrate/extensions/develop/add-dashboard-widget) |
 
-> **Note:** You can find more information on authentication on our [authentication guidance page](./get-started/Authentication/authentication_guidance.md)
+> **Note:** You can find more information on authentication on our [authentication guidance page](./get-started/authentication/authentication-guidance.md)
 
 ### Assemble the request
 
@@ -125,7 +125,7 @@ public static async void GetProjects()
 ```
 
 
-Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../Authentication/authentication_guidance.md) section for guidance on which one is best suited for your scenario.
+Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
 
 **TFS**
 

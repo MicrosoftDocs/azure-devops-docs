@@ -80,7 +80,7 @@ public static async void GetProjects()
 If you don't have a Visual Studio Team Services account,
 you can [set one up for free](https://www.visualstudio.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services). 
 
-Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../Authentication/authentication_guidance.md) section for guidance on which one is best suited for your scenario.
+Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
 
 ## TFS
 
