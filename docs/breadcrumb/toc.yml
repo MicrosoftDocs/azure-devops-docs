@@ -1,6 +1,6 @@
 - name: Team Services & TFS 
-  href: /
-  homepage: index
+  href: docs/
+  homepage: docs/index
   items: 
   - name: Get started
     href: /
