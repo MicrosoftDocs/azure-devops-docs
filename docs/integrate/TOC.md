@@ -16,10 +16,9 @@
 
 
 # Concepts
-## [REST APIs](https://visualstudio.com/integrate/api/overview.md)
-## [.NET Client Libraries TODO](link)
+## [.NET Client Libraries](./concepts/dotnet-client-libraries.md)
 ## [Authentication](./get-started/authentication/authentication-guidance.md)
-## Service Hooks (TODO)
+## [Service Hooks](./concepts/service-hooks.md)
 
 # How to
 ## [Call a REST API](how-to/call-rest-api.md)
@@ -35,7 +34,7 @@
 ## Service hooks
 ### [Consumer and action reference (COMBINE?)](get-started/service-hooks/consumers.md)
 ### [Events reference (COMBINE?)](get-started/service-hooks/events.md)
-## REST APIs
+## [REST APIs](./rest-api-overview.md)
 <!-- generation begin -->
 ### Accounts and profiles
 #### [Overview](https://visualstudio.com/integrate/api/shared/overview.md)
