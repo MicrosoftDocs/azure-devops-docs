@@ -16,23 +16,36 @@ Welcome to the Visual Studio Team Services REST API Reference.
 Representational State Transfer (REST) APIs are service endpoints that support sets of HTTP operations (methods), which provide create, retrieve, update, or delete access to the service's resources. This article walks you through:
 
 - The basic components of a REST API request/response pair.
-- How to register your client application with Azure Active Directory (Azure AD) to secure your REST requests.
+- How to authenticate your client application with Visual Studio Team Services.
 - Overviews of creating and sending a REST request, and handling the response.
 
+>[!NOTE]
+>Most REST APIs have a corresponding .NET Client Library that can be used to greatly simplify your client code. Find out more about them at the 
+>[.NET Client Libraries documentation](./concepts/dotnet-client-libraries.md)
 
 
---here--
+## Components of a REST API request/response pair
 
-
-Integrate your app with VS Team Services and TFS using these REST APIs.
-
-These APIs follow a common pattern: 
+The Visual Studio Team Services REST APIs follow a simple pattern:
 
 ```no-highlight
 VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}
 ```
 
-> Tip: To avoid having your app or service broken as APIs evolve, specify an [API version](#versions) on every request.
+> **Note:** **area** and **team-project** are optional, depending on the API request. 
+
+* **instance**: The Team Services account or TFS server you're sending the request to. They are structured as follows,
+    * Team Services: `{account}.visualstudio.com`
+    * TFS: `server:port` (the default port is 8080)
+* **collection**: The value for collection should be `DefaultCollection` for both TFS and Team Services.
+* **resource path**: The collection should be followed by `_apis/{area}/{resource}`, for example,
+    * `_apis/wit/workitems`
+    * `_apis/projects`
+* **api-version**: Every API request should include an api-version to avoid having your app or service break as APIs evolve, for example,
+    * `api-version=2.0`
+
+
+
 
 ## VS Team Services
 
