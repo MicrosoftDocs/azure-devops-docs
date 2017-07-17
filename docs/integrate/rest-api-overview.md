@@ -16,7 +16,6 @@ Welcome to the Visual Studio Team Services REST API Reference.
 Representational State Transfer (REST) APIs are service endpoints that support sets of HTTP operations (methods), which provide create, retrieve, update, or delete access to the service's resources. This article walks you through:
 
 - The basic components of a REST API request/response pair.
-- How to authenticate your client application with Visual Studio Team Services.
 - Overviews of creating and sending a REST request, and handling the response.
 
 >[!NOTE]
@@ -41,10 +40,29 @@ VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}
 * **resource path**: The collection should be followed by `_apis/{area}/{resource}`, for example,
     * `_apis/wit/workitems`
     * `_apis/projects`
-* **api-version**: Every API request should include an api-version to avoid having your app or service break as APIs evolve, for example,
-    * `api-version=2.0`
+* **api-version**: Every API request should include an api-version to avoid having your app or service break as APIs evolve. api-versions are in the following format: `{major}.{minor}[-{stage}[.{resource-version}]], for example:
+    * `api-version=1.0`
+    * `api-version=1.2-preview`
+    * `api-version=2.0-preview.1`
 
+## Create the request
 
+### Authenticate 
+
+There are many ways to authenticate your application or service with Team Services or TFS. The following table is an excellent way to decide which method is the best for you:
+
+| Type of application | Description | example |Authentication mechanism | Code samples |
+|---------------------|-------------|---------|-------------------------|--------|
+| Interactive client-side  | GUI based client side application | Windows app enumerating bugs for a user | [Active Directory authentication library (ADAL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
+| Interactive Javascript | GUI based Javascript application | AngularJS single page app displaying work items for a user | [ADAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) | sample (coming soon) |
+| Non-interactive client-side | Headless text only client side application | Console app displaying all bugs assigned to a user | [Device Profile](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-deviceprofile/?v=17.23h) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
+| Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](./oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
+| TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](./../client-libraries/dotnet.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
+| [VSTS Extension](https://www.visualstudio.com/en-us/docs/integrate/extensions/get-started/node#files) | Visual Studio Team Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](https://www.visualstudio.com/en-us/docs/integrate/extensions/develop/add-dashboard-widget) |
+
+> **Note:** You can find more information on authentication in our [authentication guidance page](./get-started/Authentication/authentication_guidance.md)
+
+### Assemble the request
 
 
 ## VS Team Services
