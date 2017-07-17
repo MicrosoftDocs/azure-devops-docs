@@ -27,26 +27,27 @@ Representational State Transfer (REST) APIs are service endpoints that support s
 
 A REST API request/response pair can be separated into five components:
 
-1. The request URI, in the following form: `VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}`
-    * **instance**: The Team Services account or TFS server you're sending the request to. They are structured as follows,
+1. The **request URI**, in the following form: `VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}`
+    * *instance*: The Team Services account or TFS server you're sending the request to. They are structured as follows,
         * Team Services: `{account}.visualstudio.com`
         * TFS: `server:port` (the default port is 8080)
-    * **collection**: The value for collection should be `DefaultCollection` for both TFS and Team Services.
-    * **resource path**: The collection should be followed by `_apis/{area}/{resource}`. For example `_apis/wit/workitems`.
-    * **api-version**: Every API request should include an api-version to avoid having your app or service break as APIs evolve. api-versions are in the following format: `{major}.{minor}[-{stage}[.{resource-version}]], for example:
+    * *collection*: The value for collection should be `DefaultCollection` for both TFS and Team Services.
+    * *resource path*: The collection should be followed by `_apis/{area}/{resource}`. For example `_apis/wit/workitems`.
+    * *api-version*: Every API request should include an api-version to avoid having your app or service break as APIs evolve. api-versions are in the following format: `{major}.{minor}[-{stage}[.{resource-version}]], for example:
         * `api-version=1.0`
         * `api-version=1.2-preview`
         * `api-version=2.0-preview.1`
-> Note: **area** and **team-project** are optional, depending on the API request. 
-2. HTTP request message header fields:
-    * A required HTTP method (also known as an operation or verb), which tells the service what type of operation you are requesting. Azure REST APIs support GET, HEAD, PUT, POST, and PATCH methods.
+> Note: *area** and *team-project* are optional, depending on the API request. 
+2. HTTP **request message header** fields:
+    * A required [HTTP method](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) (also known as an operation or verb), which tells the service what type of operation you are requesting. Azure REST APIs support GET, HEAD, PUT, POST, and PATCH methods.
     * Optional additional header fields, as required by the specified URI and HTTP method. For example, an Authorization header that provides a bearer token containing client authorization information for the request.
-3. Optional HTTP request message body fields, to support the URI and HTTP operation. For example, POST operations contain MIME-encoded objects that are passed as complex parameters. For POST or PUT operations, the MIME-encoding type for the body should be specified in the Content-type request header as well. Some services require you to use a specific MIME type, such as application/json.
-4. HTTP response message header fields:
-    * An HTTP status code, ranging from 2xx success codes to 4xx or 5xx error codes. Alternatively, a service-defined status code may be returned, as indicated in the API documentation.
-    * Optional additional header fields, as required to support the request's response, such as a Content-type response header.
-5. Optional HTTP response message body fields:
-    * MIME-encoded response objects may be returned in the HTTP response body, such as a response from a GET method that is returning data. Typically, these objects are returned in a structured format such as JSON or XML, as indicated by the Content-type response header. For example, when you request an access token from Azure AD, it will be returned in the response body as the access_token element, one of several name/value paired objects in a data collection. In this example, a response header of Content-Type: application/json is also included.
+3. Optional HTTP **request message body** fields, to support the URI and HTTP operation. For example, POST operations contain MIME-encoded objects that are passed as complex parameters. 
+    * For POST or PUT operations, the MIME-encoding type for the body should be specified in the Content-type request header as well. Some services require you to use a specific MIME type, such as `application/json`.
+4. HTTP **response message header** fields:
+    * An [HTTP status code](https://www.w3.org/Protocols/HTTP/HTRESP.html), ranging from 2xx success codes to 4xx or 5xx error codes. Alternatively, a service-defined status code may be returned, as indicated in the API documentation.
+    * Optional additional header fields, as required to support the request's response, such as a `Content-type` response header.
+5. Optional HTTP **response message body** fields:
+    * MIME-encoded response objects may be returned in the HTTP response body, such as a response from a GET method that is returning data. Typically, these objects are returned in a structured format such as JSON or XML, as indicated by the `Content-type` response header. For example, when you request an access token from Azure AD, it will be returned in the response body as the `access_token` element, one of several name/value paired objects in a data collection. In this example, a response header of `Content-Type: application/json` is also included.
 
 
 ## Create the request
@@ -197,39 +198,6 @@ curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollecti
 The examples above use personal access tokens, which requires that you [create a personal access token](../Authentication/PATs.md).
 
 
-### HTTP method override
-
-Some web proxies may only support the HTTP verbs GET and POST, but not more modern HTTP verbs like PATCH and DELETE.
-If your calls may pass through one of these proxies, you can send the actual verb using a POST method, with a header to override the method.
-For example, you may want to [update a work item](https://visualstudio.com/api/wit/work-items.md#updateworkitems) (`PATCH _apis/wit/workitems/3`), but you may have to go through a proxy that only allows GET or POST.
-You can pass the proper verb (PATCH in this case) as an HTTP request header parameter and use POST as the actual HTTP method.
-
-
-```no-highlight
-POST https://fabrikam-fiber-inc.VisualStudio.com/DefaultCollection/_apis/wit/workitems/3
-```
-```http
-X-HTTP-Method-Override: PATCH
-```
-```json
-{
-   (PATCH request body)
-}
-```
-
-## Response codes
-
-Response | Notes
-:--------|:----------------------------------------
-200      | Success, and there is a response body.
-201      | Success, when creating resources. Some APIs return 200 when successfully creating a resource. Look at the docs for the API you're using to be sure.
-204      | Success, and there is no response body. For example, you'll get this when you delete a resource.
-400      | The parameters in the URL or in the request body aren't valid.
-401      | Authentication has failed.  Often this is due to a missing or malformed Authorization header.
-403      | The authenticated user doesn't have permission to perform the operation.
-404      | The resource doesn't exist, or the authenticated user doesn't have permission to see that it exists.
-409      | There's a conflict between the request and the state of the data on the server. For example, if you attempt to submit a pull request and there is already a pull request for the commits, the response code is 409.
-
 ## Cross-origin resource sharing (CORS)
 
 Visual Studio Team Services supports CORS. This enables JavaScript code served from a domain other than *.visualstudio.com to make Ajax requests to Visual Studio Team Services REST APIs. For this to work, each request must provide credentials (personal access tokens and OAuth access tokens are both supported options). Example:
@@ -250,44 +218,6 @@ Visual Studio Team Services supports CORS. This enables JavaScript code served f
 
 (replace `myPatToken` with a personal access token) 
 
-<a name="versions"></a>
-## Versioning
-
-Visual Studio Team Services and Team Foundation Server REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
-
-### Guidelines
-
-* API version **must** be specified with every request.
-* API versions are in the format {major}.{minor}[-{stage}[.{resource-version}]] - For example, ```1.0```, ```1.1```, ```1.2-preview```, ```2.0```.
-* While an API is in preview, you can specify a precise version of a particular revision of the API when needed (for example, ```1.0-preview.1```, ```1.0-preview.2```)
-* Once an API is released (1.0, for example), its preview version (1.0-preview) is deprecated and can be deactivated after 12 weeks.
-* During this time you should upgrade to the released version of the API. Once a preview API is deactivated, requests that specify a ```-preview``` version will be rejected.
-
-### Usage
-
-API version can be specified either in the header of the HTTP request or as a URL query parameter:
-
-HTTP request header:
-```http
-Accept: application/json;api-version=1.0
-```
-
-Query parameter:
-```no-highlight
-GET https://{account}.visualstudio.com/defaultcollection/_apis/{area}/{resource}?api-version=1.0
-```
-
-### Supported versions
-
-| Product                     | 1.0    | 2.0    | 3.0    |
-|:----------------------------|:------:|:------:|:------:|
-| Team Services               | X      | X      | X      | 
-| Team Foundation Server 2017 | X      | X      | X      |
-| Team Foundation Server 2015 | X      | X      | -      |
-
-Major API version releases align with Team Foundation Server RTM releases. For example, the `3.0` API set was introduced with Team Foundation Server 2017.
-
-A small number of undocumented version 1.0 APIs existed in Team Foundation Server 2013, but are not supported.
 
 ## Help and feedback
 
