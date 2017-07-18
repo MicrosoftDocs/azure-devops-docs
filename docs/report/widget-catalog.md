@@ -553,7 +553,7 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 
 ### Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](../../integrate/extensions/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](../../integrate/api/dashboard/overview.md).
+Using the REST API service, you can [create a dashboard widget](../../integrate/extensions/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://www.visualstudio.com/en-us/docs/integrate/api/dashboard/overview).
 
 
 [!INCLUDE [temp](_shared/help-support-shared.md)]  

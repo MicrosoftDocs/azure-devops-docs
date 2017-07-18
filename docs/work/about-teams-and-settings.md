@@ -177,13 +177,13 @@ Also, these topics can walk you through the steps for configuring teams, area pa
 
 
 ## Summary 
-- Every team owns their own backlog, to create a new backlog you [create a new team](../scale/multiple-teams.md) 
-- Every backlog has a corresponding [Kanban board](../kanban/kanban-basics.md) you can use to track progress and update status  
-- The [team's specified area and iteration paths](../scale/set-team-defaults.md) determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
--  Each team can control how [bugs show up on their backlogs and boards](../customize/show-bugs-on-backlog.md)   
-- For an overview of all team assets and how to configure them, see [Configure team settings](../scale/manage-team-assets.md)   
-- To have work performed by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../scale/portfolio-management.md) 
-- To add fields or work item types, see [Customize your work tracking experience](../customize/customize-work.md).
+- Every team owns their own backlog, to create a new backlog you [create a new team](scale/multiple-teams.md) 
+- Every backlog has a corresponding [Kanban board](kanban/kanban-basics.md) you can use to track progress and update status  
+- The [team's specified area and iteration paths](scale/set-team-defaults.md) determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
+-  Each team can control how [bugs show up on their backlogs and boards](customize/show-bugs-on-backlog.md)   
+- For an overview of all team assets and how to configure them, see [Configure team settings](scale/manage-team-assets.md)   
+- To have work performed by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](scale/portfolio-management.md) 
+- To add fields or work item types, see [Customize your work tracking experience](customize/customize-work.md).
 
 ## Related notes 
 

@@ -33,7 +33,7 @@ Here we show how to add work items from the web portal.
 	- Visual Studio Team Services: ```https://{account}.visualstudio.com/{project name}/_backlogs```  
 	- Team Foundation Server (on-premises): ```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```  
 
-	If you don't see the team or team project you want, click the ![Team Services icon](../_img/icons/project-icon.png) Team Services icon to [browse all team projects and teams](/docs/connect/account-home-pages).  
+	If you don't see the team or team project you want, click the ![Team Services icon](../_img/icons/project-icon.png) Team Services icon to [browse all team projects and teams](/team-services/connect/account-home-pages).  
 
 2.	From the Work hub, choose the work item type from the New Work Item list of options. Here, we choose to create an Impediment. <!---Change this to User Story --->   
 

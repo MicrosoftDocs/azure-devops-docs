@@ -111,7 +111,7 @@ All plug-ins are supported (![supported](../../_img/icons/checkmark.png)) when y
 
 <blockquote>
 ![](../../_img/icons/note-icon.png)<br/>
-Going forward, native build and release management tools replace the previous lab management tools. To learn more, see [Use Build and Release Management instead of Lab Management for automated testing](/docs/test/lab-management/use-build-or-rm-instead-of-lab-management).
+Going forward, native build and release management tools replace the previous lab management tools. To learn more, see [Use Build and Release Management instead of Lab Management for automated testing](/team-services/test/lab-management/use-build-or-rm-instead-of-lab-management).
 </blockquote>
 
 </td>
@@ -234,4 +234,4 @@ The schema definition for process templates uses a mix of camel-case and all cap
 -  [Choose a process or process template](../../guidance/choose-process.md)   
 -  [Customize a process template](customize-process.md)  
 -  [Customize your work tracking experience](../../customize/customize-work.md)
--  [Test apps early and often](/docs/test/index)
+-  [Test apps early and often](/team-services/test/index)

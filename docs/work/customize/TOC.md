@@ -31,7 +31,7 @@
 
 
 # Concepts
-## [Default processes](/docs/work/guidance/choose-process)   
+## [Default processes](/team-services/work/guidance/choose-process)   
 
 
 # How-to guides
@@ -73,7 +73,7 @@
 ### [Customize a process template](../reference/process-templates/customize-process.md)
 ### [Use team fields instead of area paths](use-team-fields-instead-area-paths.md)
 
-## [Configure features after an upgrade](/docs/work/customize/configure-features-after-upgrade) 
+## [Configure features after an upgrade](/team-services/work/customize/configure-features-after-upgrade) 
 
 
 # Reference
@@ -178,7 +178,7 @@
 
 
 # Resources
-## [Marketplace extensions](/docs/marketplace/get-vsts-extensions)  
-## [Extensibility and REST APIs](/docs/extend/overview)
+## [Marketplace extensions](/team-services/marketplace/get-vsts-extensions)  
+## [Extensibility and REST APIs](/team-services/extend/overview)
 
  

@@ -17,7 +17,7 @@ ms.date: 06/01/2017
 
 Several features depend on the team project or team that you have selected. For example, dashboards, backlogs, and board views will change depending on the context selected. 
 
-For example, when you add a work item, the system references the default area and iteration paths defined for the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board, are assigned the team default backlog iteration. To change team defaults, see [Set team defaults](/docs/work/scale/set-team-defaults).  
+For example, when you add a work item, the system references the default area and iteration paths defined for the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board, are assigned the team default backlog iteration. To change team defaults, see [Set team defaults](/team-services/work/scale/set-team-defaults).  
 
 You navigate to your team context from the top navigation bar. The method changes slightly depending on the platform/version you work from.     
 
@@ -33,7 +33,7 @@ To view a list of teams defined for a team project, open the admin context for t
 ## Switch to a different team 
 
 >[!NOTE]  
->**Feature availability**: The Account Landing Page feature is in preview mode for Team Services and enabled for all users from web portal for TFS 2017.1 and later versions. To learn more about this feature, see [Work effectively from your account hub](/docs/connect/account-home-pages). To enable or disable the feature, see [Enable preview features](/docs/collaborate/preview-features).   
+>**Feature availability**: The Account Landing Page feature is in preview mode for Team Services and enabled for all users from web portal for TFS 2017.1 and later versions. To learn more about this feature, see [Work effectively from your account hub](/team-services/connect/account-home-pages). To enable or disable the feature, see [Enable preview features](/team-services/collaborate/preview-features).   
 
 
 <div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
@@ -57,9 +57,9 @@ To view a list of teams defined for a team project, open the admin context for t
 
 
 <div id="switch-context-team-services" class="tab-pane fade in active"> 
-<p>You can switch your team focus to a team project or team you've recently viewed from the team project/team drop-down menu. If you don't see the team or team project you want, click **Browse&hellip;** to [browse all team projects and teams](/docs/connect/account-home-pages). To access your [account hub](/docs/connect/account-home-pages), click the ![Team Services icon](../../_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page.  </p>
+<p>You can switch your team focus to a team project or team you've recently viewed from the team project/team drop-down menu. If you don't see the team or team project you want, click **Browse&hellip;** to [browse all team projects and teams](/team-services/connect/account-home-pages). To access your [account hub](/team-services/connect/account-home-pages), click the ![Team Services icon](../../_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page.  </p>
 
-<p>To go directly to the [project vision and status page](/docs/collaborate/project-vision-status), choose the project home icon from the drop-down menu, for example, ![project home icon](../../_shared/_img/work-web-portal-home-page-icon.png).</p> 
+<p>To go directly to the [project vision and status page](/team-services/collaborate/project-vision-status), choose the project home icon from the drop-down menu, for example, ![project home icon](../../_shared/_img/work-web-portal-home-page-icon.png).</p> 
 
 <img src="../../_shared/_img/work-web-portal-ts-switch-team-focus.png" alt="Choose another team from the team project menu" style="border: 1px solid #CCCCCC;" /> 
 
@@ -67,11 +67,11 @@ To view a list of teams defined for a team project, open the admin context for t
 
 <div id="switch-context-tfs-2017-1" class="tab-pane fade"> 
 
-<p>To switch your team focus to a team project or team you've recently viewed, hover over the ![Team Services icon](/docs/_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon and choose from the drop-down menu of options. If you don't see the team or team project you want, choose **Browse&hellip;** to [browse all team projects and teams](/docs/connect/account-home-pages). Your selection will open the [project vision and status page](/docs/collaborate/project-vision-status) for the team project.</p> 
+<p>To switch your team focus to a team project or team you've recently viewed, hover over the ![Team Services icon](/team-services/_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon and choose from the drop-down menu of options. If you don't see the team or team project you want, choose **Browse&hellip;** to [browse all team projects and teams](/team-services/connect/account-home-pages). Your selection will open the [project vision and status page](/team-services/collaborate/project-vision-status) for the team project.</p> 
 
-<p>To access your [account hub](/docs/connect/account-home-pages), click the ![Team Services icon](../../_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page.  </p>
+<p>To access your [account hub](/team-services/connect/account-home-pages), click the ![Team Services icon](../../_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page.  </p>
 
-<p>To go directly to the [project vision and status page](/docs/collaborate/project-vision-status), choose the project home icon from the drop-down menu, for example, ![project home icon](../../_shared/_img/work-web-portal-home-page-icon.png).</p> 
+<p>To go directly to the [project vision and status page](/team-services/collaborate/project-vision-status), choose the project home icon from the drop-down menu, for example, ![project home icon](../../_shared/_img/work-web-portal-home-page-icon.png).</p> 
 
 <img src="../../_shared/_img/work-web-portal-tfs-2017-1-switch-team-focus.png" alt="Choose another team from the team project menu" style="border: 1px solid #CCCCCC;" /> 
 </div>

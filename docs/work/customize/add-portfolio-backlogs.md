@@ -30,7 +30,7 @@ Here, we add a third portfolio backlog, Initiative. With it, the management team
 <a id="image-diff"></a>  
 
 >[!NOTE]  
->The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to your on-premises TFS, and the process template chosen when creating your team project&mdash;[Agile](/docs/work/guidance/agile-process), [Scrum](/docs/work/guidance/scrum-process), or [CMMI](/docs/work/guidance/cmmi-process). However, the basic functionality available to you remains the same unless explicitly mentioned. 
+>The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to your on-premises TFS, and the process template chosen when creating your team project&mdash;[Agile](/team-services/work/guidance/agile-process), [Scrum](/team-services/work/guidance/scrum-process), or [CMMI](/team-services/work/guidance/cmmi-process). However, the basic functionality available to you remains the same unless explicitly mentioned. 
 
 
 ![A view of three portfolio backlogs enabled](_img/three-level-portfolio-backlog.png)

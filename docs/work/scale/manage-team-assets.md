@@ -146,7 +146,7 @@ Contributors have access to all features available to Readers. Team admins have 
 <li style="margin-bottom:0px">[Board: WIP limits](../kanban/wip-limits.md)   </li>
 <li style="margin-bottom:0px">[Board: Split columns](../kanban/split-columns.md)  </li>
 <li style="margin-bottom:0px">[Board: Swimlanes](../kanban/expedite-work.md)</li>
-<li style="margin-bottom:0px">[Board: Card reordering](../kanban/kanban-basics.md#card-reorder-setting)</li> 
+<li style="margin-bottom:0px">[Board: Card reordering](../customize/reorder-cards.md)</li> 
 <li style="margin-bottom:0px">[Board: Definition of Done](../kanban/definition-of-done.md)</li>
 <li style="margin-bottom:0px">[Charts: Cumulative flow](../../Report/guidance/cumulative-flow.md#configure) </li>
 </ul>
@@ -189,7 +189,7 @@ Contributors have access to all features available to Readers. Team admins have 
 
 
 <tr>
-<td align="left">Area node: [Edit work items under the node](../customize/modify-areas-iterations.md) 
+<td align="left">Area node: [Edit work items under the node](../customize/set-area-paths.md) 
 </td>
 <td align="left"><p>&nbsp;&nbsp;</p></td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
@@ -197,7 +197,7 @@ Contributors have access to all features available to Readers. Team admins have 
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 </tr>
 <tr>
-<td align="left">[Area nodes and Iteration nodes: Create, delete, edit child nodes](../customize/modify-areas-iterations.md)  
+<td align="left">[Area nodes and Iteration nodes: Create, delete, edit child nodes](../customize/set-iteration-paths-sprints.md)  
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
@@ -288,7 +288,7 @@ You can configure all your team settings from the common configuration dialog.
 <ul style="padding-left:30px">
 <li style="margin-bottom:0px">[Columns](../kanban/add-columns.md)</li> 
 <li style="margin-bottom:0px">[Swimlanes](../kanban/expedite-work.md)</li> 
-<li style="margin-bottom:0px">[Card reordering](../kanban/kanban-basics.md#card-reorder-setting)</li> 
+<li style="margin-bottom:0px">[Card reordering](../customize/reorder-cards.md)</li> 
 </ul>
 </div>
 
@@ -389,4 +389,3 @@ To add a team picture. Open the team administration page and choose the picture 
 
 
 
-[!INCLUDE [temp](../_shared/switch-team-context-work.md)]

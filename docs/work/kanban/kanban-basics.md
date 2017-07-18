@@ -61,7 +61,7 @@ To contribute to the Kanban board, you must be a member of the team and belong t
 <li>Team Foundation Server (on-premises): ```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```</li>
 </ul>
 
-<p>If you don't see the team or team project you want, click the ![Team Services icon](../_img/icons/project-icon.png) Team Services icon to [browse all team projects and teams](/docs/connect/account-home-pages). </p> 
+<p>If you don't see the team or team project you want, click the ![Team Services icon](../_img/icons/project-icon.png) Team Services icon to [browse all team projects and teams](/team-services/connect/account-home-pages). </p> 
  
 
 </div>

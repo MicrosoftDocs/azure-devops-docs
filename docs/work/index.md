@@ -177,15 +177,15 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 
 <div style="float:left;width:145px;margin:3px;font-size:90%">
 <p style="font-weight:bold;margin-bottom:2px;text-align:center;">Configure your project</p> 
-- [Define area paths](/docs/work/customize/set-area-paths)  
-- [Define iteration paths](/docs/work/customize/set-iteration-paths-sprints)  
+- [Define area paths](/team-services/work/customize/set-area-paths)  
+- [Define iteration paths](/team-services/work/customize/set-iteration-paths-sprints)  
 <br/>
 <p style="font-weight:bold;margin-bottom:2px;text-align:center;">Administrate</p>
 - [Manage permissions & access](how-to/set-permissions-access-work-tracking.md)  
 - [Change access levels](connect/change-access-levels.md)  
 - [Manage new form rollout](customize/manage-new-form-rollout.md)  
-- [Customize work tracking](/docs/work/customize/customize-work)  
-- [TFS-Project Server integration](/docs/work/office/sync-ps-tfs)    
+- [Customize work tracking](/team-services/work/customize/customize-work)  
+- [TFS-Project Server integration](/team-services/work/office/sync-ps-tfs)    
 </div>
 
 
