@@ -26,65 +26,38 @@ You can now include multiple versions of a build task in your extension. This ca
 future versions of your extension without interrupting service of users running older versions. The table below shows the layout for having
 multiple versions in one extension.
 
-<table style="margin-left:auto;margin-right:auto;width=100%">
-<thead>
-<tr>
-    <th class="col-md-6">Traditional Extension Layout</th>
-    <th class="col-md-6">Multiple Version Layout</th>
-</tr></thead>
-<tbody>
-<tr>
-    <td><ul>
-        <li>extensionManifest.json</li>
-        <li>extensionIcon.png</li>
-        <li>Task1</li>
-            <ul>
-                <li>task.json</li>
-                <li>taskIcon.png</li>
-                <li>taskScript.ps1</li>
-            </ul>
-    </ul></td>
-    <td><ul>
-        <li>extensionManifest.json</li>
-        <li>extensionIcon.png</li>
-        <li>Task1</li>
-            <ul>
-                <li>Task1V1</li>
-                    <ul>
-                        <li>task.json</li>
-                        <li>taskIcon.png</li>
-                        <li>taskScript.ps1</li>
-                    </ul>
-            </ul>
-            <ul>
-                <li>Task1V2</li>
-                    <ul>
-                        <li>task.json</li>
-                        <li>taskIcon.png</li>
-                        <li>taskScript.ps1</li>
-                    </ul>
-            </ul>
-        <li>Task2</li>
-            <ul>
-                <li>Task2V1</li>
-                    <ul>
-                        <li>task.json</li>
-                        <li>taskIcon.png</li>
-                        <li>taskScript.ps1</li>
-                    </ul>
-            </ul>
-            <ul>
-                <li>Task2V2</li>
-                    <ul>
-                        <li>task.json</li>
-                        <li>taskIcon.png</li>
-                        <li>taskScript.ps1</li>
-                    </ul>
-            </ul>
-    </ul></td>
-</tr>
-</tbody>
-</table>
+### Traditional extension layout
+
+* extensionManifest.json
+* extensionIcon.png
+* Task1
+    * task.json
+    * taskIcon.png
+    * taskScript.ps1
+
+### Multiple version layout
+
+* extensionManifest.json
+* extensionIcon.png
+* Task1
+    * Task1V1
+        * task.json
+        * taskIcon.png
+        * taskScript.ps1
+    * Task1V2
+        * task.json
+        * taskIcon.png
+        * taskScript.ps1    
+* Task2
+    * Task2V1
+        * task.json
+        * taskIcon.png
+        * taskScript.ps1
+    * Task2V2
+        * task.json
+        * taskIcon.png
+        * taskScript.ps1
+                    
 
 >[!NOTE]
 >The code will look for the `task.json` file inside the task folder. If one is not found, it will look just *one* level deeper.
