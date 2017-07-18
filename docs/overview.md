@@ -57,7 +57,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-4 col-md-3 item">
       <div class="title">
-        <a href="test/overview">Test</a>
+        <a href="test/index">Test</a>
         <div class="desc">
           Test continuously while you code, build, and deploy before releasing to production.
         </div>
@@ -183,7 +183,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-4 col-md-3 item">
       <div class="title">
-        <a href="integrate/api/overview">REST APIs</a>
+        <a href="integrate/overview">REST APIs</a>
         <div class="desc">
           Develop your own tools and integrations using REST APIs.
         </div>
