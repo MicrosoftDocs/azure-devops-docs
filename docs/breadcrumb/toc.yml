@@ -1,80 +1,80 @@
-- name: Team Services & TFS 
-  href: docs/
-  homepage: docs/index
+- name: Team Services and TFS 
+  tocHref:/team-services/
+  topicHref: /team-services/index
   items: 
   - name: Get started
-    href: /
-    homepage: index
+    tocHref:/team-services/
+    topicHref: /team-services/index
   - name: Agile tools/Work
-    href: work/
-    homepage: work/index
-  - name: Build & Release
-    href: build/
-    homepage: build/overview
-  - name: Charts, Dashboards & Widgets
-    href: report/
-    homepage: report/index
-  - name: SQL, Excel, & SharePoint (TFS)
-    href: report/sql-reports
-    homepage: report/sql-reports/reporting-services-reports
+    tocHref:/team-services/work/
+    topicHref: /team-services/work/index
+  - name: Build and Release
+    tocHref:/team-services/build/
+    topicHref: /team-services/build/overview
+  - name: Charts, Dashboards and Widgets
+    tocHref:/team-services/report/
+    topicHref: /team-services/report/index
+  - name: SQL, Excel, and SharePoint (TFS)
+    tocHref:/team-services/report/sql-reports
+    topicHref: /team-services/report/sql-reports/reporting-services-reports
   - name: Git
-    href: git/
-    homepage: git/overview
+    tocHref:/team-services/git/
+    topicHref: /team-services/git/overview
   - name: Package Management
-    href: package/
-    homepage: package/overview
+    tocHref:/team-services/package/
+    topicHref: /team-services/package/overview
   - name: Test
-    href: test/
-    homepage: test/index
+    tocHref:/team-services/test/
+    topicHref: /team-services/test/index
   - name: TFVC
-    href: tfvc/
-    homepage: tfvc/overview
+    tocHref:/team-services/tfvc/
+    topicHref: /team-services/tfvc/overview
   - name: Team Services Account Management 
-    href: setup-admin/team-services/
-    homepage: setup-admin/team-services/overview
+    tocHref:/team-services/setup-admin/team-services/
+    topicHref: /team-services/setup-admin/team-services/overview
   - name: TFS Administration
-    href: setup-admin/tfs/
-    homepage: setup-admin/get-started
+    tocHref:/team-services/setup-admin/tfs/
+    topicHref: /team-services/setup-admin/get-started
   - name: Customize work tracking
-    href: work/customize
-    homepage: work/customize/customize-work
+    tocHref:/team-services/work/customize
+    topicHref: /team-services/work/customize/customize-work
   - name: TFS-Project Server integration
-    href: work/tfs-ps-sync 
-    homepage: work/tfs-ps-sync/synchronize-tfs-project-server 
-- name: Marketplace & Billing
-  href: marketplace/
-  homepage: marketplace/overview
+    tocHref:/team-services/work/tfs-ps-sync 
+    topicHref: /team-services/work/tfs-ps-sync/synchronize-tfs-project-server 
+- name: Marketplace and Billing
+  tocHref:/team-services/marketplace/
+  topicHref: /team-services/marketplace/overview
   items: 
-  - name: Marketplace & Billing
-    href: marketplace/
-    homepage: marketplace/overview
+  - name: Marketplace and Billing
+    tocHref:/team-services/marketplace/
+    topicHref: /team-services/marketplace/overview
   - name: Service hooks
-    href: marketplace/integrate/service-hooks/
-    homepage: marketplace/integrate/service-hooks/get-started
+    tocHref:/team-services/marketplace/integrate/service-hooks/
+    topicHref: /team-services/marketplace/integrate/service-hooks/get-started
 - name: Integrate
-  href: integrate/
-  homepage: integrate/overview
+  tocHref:/team-services/integrate/
+  topicHref: /team-services/integrate/overview
   items: 
   - name: Integrate overview
-    href: integrate/
-    homepage: integrate/overview
+    tocHref:/team-services/integrate/
+    topicHref: /team-services/integrate/overview
   - name: Service hook integration
-    href: marketplace/integrate/service-hooks/
-    homepage: marketplace/integrate/service-hooks/get-started
+    tocHref:/team-services/marketplace/integrate/service-hooks/
+    topicHref: /team-services/marketplace/integrate/service-hooks/get-started
   - name: Visual Studio Extensions
-    href: integrate/ide/extensions/
-    homepage: integrate/ide/extensions/overview
+    tocHref:/team-services/integrate/ide/extensions/
+    topicHref: /team-services/integrate/ide/extensions/overview
 - name: Visual Studio subscriptions
-  href: marketplace/vs-subscriptions/
-  homepage: marketplace/vs-subscriptions/buy-vs-subscriptions
+  tocHref:/team-services/marketplace/vs-subscriptions/
+  topicHref: /team-services/marketplace/vs-subscriptions/buy-vs-subscriptions
   items: 
   - name: Visual Studio Subscriptions
-    href: marketplace/vs-subscriptions/
-    homepage: marketplace/vs-subscriptions/buy-vs-subscriptions
+    tocHref:/team-services/marketplace/vs-subscriptions/
+    topicHref: /team-services/marketplace/vs-subscriptions/buy-vs-subscriptions
 - name: Extend
-  href: extend/
-  homepage: extend/overview
+  tocHref:/team-services/extend/
+  topicHref: /team-services/extend/overview
   items: 
   - name: Extend overview
-    href: extend/
-    homepage: extend/overview
+    tocHref:/team-services/extend/
+    topicHref: /team-services/extend/overview
