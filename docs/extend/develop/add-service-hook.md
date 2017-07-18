@@ -144,39 +144,14 @@ For each contribution in your extension, the manifest defines
 - the contribution target - consumer services (ms.vss-servicehooks.consumers) in this case,
 - and the properties that are specific to each type of contribution. For a consumer service we have:
 
-<table style="padding-top:10px;padding-bottom:10px">
-	<thead>
-	<tr>
-		<th>Property</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-        <tr>
-            <td>id</td>
-            <td>unique id for your consumer service</td>
-		<tr>
-			<td>name</td>
-			<td>name of the consumer service</td>
-		</tr>
-		<tr>
-			<td>description</td>
-			<td>describes your consumer service</td>
-		</tr>
-		<tr>
-			<td>informationUrl</td>
-			<td>where more info can be found about your extension</td>
-		</tr>
-		<tr>
-			<td>inputDescriptors</td>
-			<td>inputs to be used by users that are creating subscriptions with the consumer service</td>
-		</tr>
-		<tr>
-			<td>actions</td>
-			<td>describes the actions to take and which events trigger them</td>
-		</tr>
-	</tbody>
-</table>
+| Property           | Description                                                                                                                         
+|--------------------|------------------------------------------------------------------------------------------|
+| id                 | Unique id for your consumer service.                                                     |                  
+| name               | Name of the consumer service.                                                            |                   
+| description        | Describes your consumer service.                                                         |                   
+| informationUrl     | Where more info can be found about your extension.                                       |
+| inputDescriptors   | Inputs to be used by users that are creating subscriptions with the consumer service.    |                   
+| actions            | Describes the actions to take and which events trigger them.                             |    
 
 ## Package, Publish, and Install
 

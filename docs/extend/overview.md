@@ -254,7 +254,14 @@ Integrating with many third party services such as Slack, Trello, and Jenkins is
 </div>
 </div>
 
-<div style="clear:both"></div>
+| Build and release | Collaborate | Customer support | Plan and track | Integrate |
+|----------------------------------------------------------------------------|-------------|------------------|----------------|-----------|
+| [AppVeyor](../marketplace/integrate/service-hooks/services/appveyor.md)    | [Bamboo](../marketplace/integrate/service-hooks/services/bamboo.md)            | [Jenkins](../marketplace/integrate/service-hooks/services/jenkins.md) | [MyGet](../marketplace/integrate/service-hooks/services/myget.md) |   |
+| [Campfire](../marketplace/integrate/service-hooks/services/campfire.md) | [Flowdock](../marketplace/integrate/service-hooks/services/flowdock.md) |       [HipChat](../marketplace/integrate/service-hooks/services/hipchat.md) | [Hubot](../marketplace/integrate/service-hooks/services/hubot.md)         | [Slack](../marketplace/integrate/service-hooks/services/slack.md) |
+| [UserVoice](../marketplace/integrate/service-hooks/services/uservoice.md) | [Zendesk](../marketplace/integrate/service-hooks/services/zendesk.md) |               |            |           | 
+| [Trello](../marketplace/integrate/service-hooks/services/trello.md)                        |             |         |          |           |
+| [Azure Service Bus](../marketplace/integrate/service-hooks/services/azure-service-bus.md)  | [Azure Storage](../marketplace/integrate/service-hooks/services/azure-storage.md) | [Web Hooks](../marketplace/integrate/service-hooks/services/webhooks.md) | [Zapier](../marketplace/integrate/service-hooks/services/zapier.md) |           |
+
 
 Find out more about integrating with third party services on our [service hooks documentation page](../marketplace/integrate/service-hooks/get-started.md).
 

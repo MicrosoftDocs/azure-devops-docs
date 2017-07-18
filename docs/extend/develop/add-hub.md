@@ -137,29 +137,11 @@ For each contribution in your extension, the manifest defines
 - the contribution target, the work hub group, (check out all of the [targetable hub groups](../reference/targets/overview.md#targetable-hub-groups))
 - and the properties that are specific to each type of contribution. For a hub, we have
 
-<table style="padding-top:6px;">
-	<thead>
-	<tr>
-		<th>Property</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>```name```</td>
-			<td>name of the hub</td>
-		</tr>
-		<tr>
-			<td>```order```</td>
-			<td>placement of the hub in the hub group</td>
-		</tr>
-		<tr>
-			<td>```uri```</td>
-			<td>path (relative to the extension&apos;s baseUri) of the page to surface as the hub</td>
-		</tr>
-	</tbody>
-</table>
-
+| Property           | Description                                                                                                                         
+|--------------------|----------------------------------------------------------------------------------------|                                
+| name               | Name of the hub.					                                                      |                   
+| order              | Placement of the hub in the hub group.       										  |                   
+| uri 				 | Path (relative to the extension's baseUri) of the page to surface as the hub.          | 
 
 ### Scopes
 Include the [scopes](../develop/manifest.md#scopes) that your extension requires.
