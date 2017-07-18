@@ -63,6 +63,35 @@ When you want to access secrets:
 | **Azure Subscription** | Required. Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../concepts/library/service-endpoints.md#sep-azure-rm) |
 | **Key Vault** | Required. Select the name of the Azure Key Vault from which the secrets will be downloaded. |
 | **Secrets filter** | Required. A comma-separated list of secret names to be downloaded. Use the default value `*` to download all the secrets from the vault. |
+
+**Note:**
+
+Values are retrieved as strings. For example, if there is a secret named **connectionString**,
+a task variable `connectionString` is created with the latest value of the respective secret
+fetched from Azure key vault. This variable is then available in subsequent tasks.
+
+If the value fetched from the vault is a certificate (for example, a PFX file), the task variable
+will contain the contents of the PFX in string format. You can use the following PowerShell code
+to retrieve the PFX file from the task variable:
+ 
+```
+$kvSecretBytes = [System.Convert]::FromBase64String($(PfxSecret))
+$certCollection = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2Collection
+$certCollection.Import($kvSecretBytes,$null,[System.Security.Cryptography.X509Certificates.X509KeyStorageFlags]::Exportable)
+```
+
+If the certificate file will be stored locally on the machine, it is good practice
+to encrypt it with a password: 
+
+```
+ #Get the file created
+$password = 'your password'
+$protectedCertificateBytes = $certCollection.Export([System.Security.Cryptography.X509Certificates.X509ContentType]::Pkcs12, $password)
+$pfxPath = [Environment]::GetFolderPath("Desktop") + "\MyCert.pfx"
+[System.IO.File]::WriteAllBytes($pfxPath, $protectedCertificateBytes)
+```
+
+For more details, see [Get started with Azure Key Vault certificates](https://blogs.technet.microsoft.com/kv/2016/09/26/get-started-with-azure-key-vault-certificates).
  
 ## Contact Information
 
