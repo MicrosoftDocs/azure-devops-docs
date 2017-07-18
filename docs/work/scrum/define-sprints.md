@@ -7,7 +7,7 @@ ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 06/22/2017
+ms.date: 07/14/2017
 --- 
 
 
@@ -42,7 +42,13 @@ Of course, if you have several teams or more complex release and sprint cadences
 >[!NOTE]  
 >**Terminology note:** Your set of Agile tools uses the Iteration Path field to track sprints and releases. When you define sprints, you define the pick list of values available for the [Iteration Path](../customize/set-area-paths.md) field. You use iterations to group work into sprints, milestones, or releases in which they'll be worked on or shipped. 
 
+<a id="drag-drop-to-sprint">   </a>
+## Assign work to a sprint using drag-and-drop
 
+<!--- NOTE FEATURE AVAILABILITY --> 
+You can quickly assign work items to a sprint by dragging and dropping them from the product backlog to the sprint. 
+
+![Assign work items to a sprint](_img/assign-to-sprint-from-kanban-animated.gif)
 
 <a id="schedule">   </a>
 ## Define and schedule sprints for several teams and release cadences 

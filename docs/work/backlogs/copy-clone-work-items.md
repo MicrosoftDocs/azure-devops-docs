@@ -17,6 +17,13 @@ There are two types of copy functions you can use. The first is to duplicate a s
 
 The second copy function is to copy a multi-selected list of work items to the clipboard, referred to as copy as HTML or copy to clipboard. 
 
+Use this topic to learn how to:  
+
+> [!div class="checklist"]   
+> * Copy or clone a work item, essentially making a duplicate of a work item     
+> * Change the work item typ, for example from a bug to a user story 
+> * Copy a list of work items to email or share with others  
+> * Copy the URL of a work item 
 
 [!INCLUDE [temp](../_shared/image-differences.md)] 
 
@@ -220,14 +227,9 @@ With this option, you can copy an HTML formatted table of selected items from ei
 
 	![Copy full path hyperlink for a work item from Visual Studio](_img/add-work-items-copy-url-for-a-work-item.png) 
 
-##Related notes
+## Related topics
 
-To add fields or customize a work item form, see [Customize your work tracking experience](../customize/customize-work.md). The method you use depends on the process model that supports your team project.  
-
-- [Create your backlog](create-your-backlog.md)
-- [Add and update work items](add-work-items.md)
-- [Manage bugs](manage-bugs.md)
-- [Use Excel to edit multiple fields](../office/bulk-add-modify-work-items-excel.md)
+- [Bulk modify work items](bulk-modify-work-items.md)   
+- [Move, change, or delete work items](remove-delete-work-items.md)  
 - [Pre-populate fields using work item templates](../productivity/work-item-template.md)
-- [Change the backlog priority](create-your-backlog.md#move-items-priority-order)
-- [Organize your backlog](organize-backlog.md)
+

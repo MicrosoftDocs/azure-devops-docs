@@ -6,63 +6,41 @@ ms.prod: vs-devops-alm
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/10/2017
+ms.date: 07/14/2017
 --- 
 
 # Bulk modify work items  
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**    
+**Team Services | TFS 2017 | TFS 2015 | TFS 2013**  
+<!--- UPDATES REQUIRED FOR MULTI-VERSION  TAGGING -->  
 
 Use bulk modify when you need to quickly make the same change to a number of work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that will contain the same value. Use [Excel](../office/bulk-add-modify-work-items-excel.md) to update multiple fields with different values. 
 
 With bulk modify, you can edit fields, add or remove tags, reassign work, or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other team projects. The options available to you depend on the platform you work from and the permissions you've been granted.
 
+In this topic you'll learn:  
+
+> [!div class="checklist"] 
+> * How to multi-select work items from a list and open the context menu  
+> * Edit one or more fields of several work items    
+> * Add or remove tags from several work items  
+> * Assign work from a backlog to a sprint using drag-and-drop (TO BE ADDED)  
+ 
+
 >[!NOTE]  
 >**Feature availability:**&#160;&#160;The following features are available from Team Services (cloud service) or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Provide product and content feedback](../../provide-feedback.md#platform-version).  
 
-All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../quickstart/get-started-stakeholder.md). 
-
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Multi-select work items</p>
-- [Multi-select-query results](#multi-select)  
-- [Multi-select-backlog](#multi-select) (TFS 2015.1)  
-<br/>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Link work items</p>
-- [Link to a new item](add-link.md#link)  
-- [Link to an existing item](add-link.md#link)  
-- [New branch](connect-work-items-to-git-dev-ops.md) (TFS 2017) <sup>1</sup> 
-
-</div>
-
-<div style="float:left;width:235px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Bulk edit/update/delete</p>
-- [Edit field(s)](#edit)  
-- [Assign to](#assign-to)  
-- [Move to iteration](#move-iteration)  
-- [Change position](#change-position)  
-- [Change parent](organize-backlog.md#reparent)  
-- [Add/remove tags](#tags) (TFS 2017)    
-- [Update from template](../productivity/work-item-template.md) (Team Services) <sup>1</sup>   
-- [Delete](remove-delete-work-items.md#delete) <sup>1</sup>   
-</div>
-
-<div style="float:left;width:255px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Copy, clone, change type,<br/>move, or share work items</p>
-- [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup>  
-- [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)    
-- [Email selected item(s)](../track/share-plans.md) <sup>3</sup>  
-- [Change work item type](remove-delete-work-items.md#change-type) (Team Services) <sup>1</sup>    
-- [Move items to another team project](remove-delete-work-items.md#move) (Team Services)&#160;<sup>1, 4</sup>   
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>  
+All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../quickstart/get-started-stakeholder.md).  
 
 
-<br/>
+> [!div class="mx-tdBreakAll"]  
+> |Multi-select work items|Bulk edit/update/delete|Copy, clone, change type,<br/>move, or email work items|  
+> |-------------|----------|---------|  
+> |- [Multi-select-query results](#multi-select)<br/>- [Multi-select-backlog](#multi-select) (TFS 2015.1)<br/>**Link work items**<br/><br/>- [Link to a new item](add-link.md#link)<br/>- [Link to an existing item](add-link.md#link)<br/>- [New branch](connect-work-items-to-git-dev-ops.md) (TFS 2017) <sup>1</sup>|- [Edit field(s)](#edit)<br/>- [Assign to](#assign-to)<br/>- [Move to iteration](#move-iteration)<br/>- [Change position](create-your-backlog.md#move-items-priority-order)<br/>- [Change parent](organize-backlog.md#reparent)<br/>- [Add/remove tags](#tags) (TFS 2017)<br/>- [Update from template](../productivity/work-item-template.md) (Team Services) <sup>1</sup><br/>- [Delete](remove-delete-work-items.md#delete) <sup>1</sup>|- [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup><br/>- [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)<br/>- [Email selected item(s)](../track/share-plans.md) <sup>3</sup><br/>- [Change work item type](remove-delete-work-items.md#change-type) (Team Services) <sup>1</sup><br/>- [Move items to another team project](remove-delete-work-items.md#move) (Team Services)&#160;<sup>1, 4</sup>|                
+
 
 **Notes:**  
-1. You can't perform certain functions on work items whose WITs belong to the [Hidden Types Category](#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
+1. You can't perform certain functions on work items whose WITs belong to the [Hidden Types Category](../concepts/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
 2. You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Choose Copy work item when you want to create a copy of a work item and change its work item type. Choose Clone when you want to create another instance of the work item without changes to its work item type. 
 3. For on-premises TFS, you must have an [SMTP server configured for your deployment](../../setup-admin/tfs/admin/setup-customize-alerts.md). 
 4. You must be a member of the Project Administrators group or be [granted explicit permissions to move work items](remove-delete-work-items.md#move-delete-permissions).  
@@ -301,62 +279,10 @@ Here we choose to add the Beta tag to the selected work items.
 ![Edit work items - Add tags](../track/_img/tags-bulk-add.png)  
 
 
-
-
-##Related notes
+## Related notes
 
 To add fields or customize a work item form, see [Customize your work tracking experience](../customize/customize-work.md). The method you use depends on the process model that supports your team project.  
 
-To learn more about about planning and tracking work, see:  
-
-<div style="float:left;width:235px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Add items </p>
-<ul style="padding-left:10px">
-<li>[Create your backlog](create-your-backlog.md) </li>
-<li>[Add and update work items](add-work-items.md) </li>
-<li>[Manage bugs](manage-bugs.md)</li>
-<li>[Use Excel to edit multiple fields](../office/bulk-add-modify-work-items-excel.md)</li>
-<li>[Pre-populate fields using work item templates](../productivity/work-item-template.md)</li>
-<li>[Change the backlog priority](create-your-backlog.md#move-items-priority-order)</li>
-<li>[Organize your backlog](organize-backlog.md)</li>
-</ul>
-</div>
-
-<div style="float:left;width:235px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Link items</p>
-<ul style="padding-left:20px">
-<li>[Add link to work items](../track/link-work-items-support-traceability.md)</li>
-<li>[Map backlog items to portfolio backlog items](organize-backlog.md)</li>
-<li>[Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)</li>
-<li>[Use Excel to edit parent-child links](../office/bulk-add-modify-work-items-excel.md) </li>
-<li>[Use Project to edit parent-child and predecessor-successor links](../office/create-your-backlog-tasks-using-project.md)</li>
-</ul>
-</div>
-
-
-<div style="float:left;width:235px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Track</p>
-<ul style="padding-left:20px">
-<li>[Use queries to list work items](../track/using-queries.md)</li>
-<li>[Query fields, operators, and macros](../track/query-operators-variables.md)</li>
-<li>[Example work item queries](../track/example-queries.md) </li>
-<li>[Query based on tags](../track/add-tags-to-work-items.md#query) </li>
-<li>[Query based on history](../track/history-and-auditing.md) </li>
-<li>[Email work items and share work plans](../track/share-plans.md) </li>
-</ul>
-</div>
-
-
-
-<div style="clear:left;font-size:100%">
-</div>
-
-
-<a id="hidden-types"> </a> 
-### Hidden types category  
-You can use [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from github to quickly determine which WITs belong to the Hidden Types Category. 
-
-To learn more, see [Hidden Types Category](../reference/use-categories-to-group-work-item-types.md#hiddentypes).
  
 ### Migrate or change a large number of work items 
 
@@ -365,18 +291,7 @@ For large scale, organizational moves, use the REST API calls for [Work item bat
 >[!NOTE]  
 >At this time, you can't move work items to a different Team Services account or TFS collection. You can only migrate work item information by exporting and then importing them using [Excel](../office/bulk-add-modify-work-items-excel.md). 
 
-<a id="change-position"> </a>  
-### Backlog position or stack rank order 
-The sequence of items on the backlog page is determined according to where you have [added the items or moved the items on the page](create-your-backlog.md#move-items-priority-order). As you drag and drop items within the backlog list, a background process updates this field.
-
-You should refrain from using the bulk modify function to change the backlog priority of work items. While you can assign a value to the [Backlog Priority (Scrum)](../track/planning-ranking-priorities.md) or [Stack Rank (Agile and CMMI)](../track/planning-ranking-priorities.md) fields, you'll be assigning the same value to all items you've selected for bulk edit. These fields are used by the system to track the relative ranking of items on the product, feature, or epic backlogs.  
-
-The preferred method for bulk edit is to use multi-select to move items to the top, bottom, or specific position within the page. If you must perform a bulk edit of one of the backlog order fields to get a large number of work items in the priority order you want, use [Excel](../office/bulk-add-modify-work-items-excel.md). You can export a query containing the backlog items, update either the Backlog Priority or Stack Rank fields, and then publish your changes. 
-
-By default, the backlog order fields don't appear on the work item form.   
-
-
-###Add multiple values to a field (TFS)   
+### Add multiple values to a field (TFS)   
 If you have implemented a [custom control that supports multiple values](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control), you can use Excel to bulk edit the field, but you can't modify it using the web portal. In the web portal, you can only select a single value for the field.   
 
 [!INCLUDE [temp](../_shared/help-support-shared.md)]  

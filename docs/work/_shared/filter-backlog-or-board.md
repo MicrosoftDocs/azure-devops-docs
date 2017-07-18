@@ -18,7 +18,7 @@ The filter criteria ignores the following characters when the field value starts
 #### Filter based on tags  
 If you've [added tags to your work items](../track/add-tags-to-work-items.md), you can filter your backlogs, Kanban boards, and query results using the ![tag filter icon](../_img/icons/tag_filter_icon.png) tag filter. For backlogs and query results, add Tags as a column option prior to filtering on tags.  
 
-To filter the Kanban board using tags, make sure that you first [customize cards to Show tags](../customize/customize-cards.md). See also, [Filter the Kanban board](../kanban/filter-kanban-board.md) for additional options. 
+To filter the Kanban board using tags, make sure that you first [customize cards to Show tags](../customize/customize-cards.md). See also, [Filter the Kanban board](../how-to/filter-backlog-or-board.md) for additional options. 
 
 To learn more about filtering using Tags, see [Add tags to work items to categorize and filter lists and boards, Filter lists using tags](../track/add-tags-to-work-items.md#filter)
 

@@ -20,47 +20,15 @@ You access all Agile tools from the **Work** hub. If you're new to Agile, see [W
 
 Most Agile tools are [scoped to a team](about-teams-and-settings.md). This supports team autonomy as well as scaling the system.  
 
-
-<div style="float:left;width:220px;margin:6px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlogs</p>
-- [Product backlog](backlogs/create-your-backlog.md)   
-- [Portfolio (Epics, Features) backlogs](backlogs/define-features-epics.md)   
-- [Sprint backlogs](scrum/sprint-planning.md)     
-</div>
-
-<div style="float:left;width:140px;margin:6px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Task boards</p>
-- [Task boards](scrum/task-board.md)   
-- [Sprint burndown](scrum/sprint-burndown.md)   
-- [Capacity planning](scale/capacity-planning.md)    
-</div>
-
-<div style="float:left;width:150px;margin:6px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Kanban boards</p> 
-- [Kanban board](kanban/kanban-basics.md)   
-- [Task checklists](kanban/add-task-checklists.md)   
-- [Epics & Features boards](kanban/kanban-epics-features-stories.md)   
- 
-</div>
-
-
-<div style="float:left;width:140px;margin:6px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Other</p>
-- [Delivery plans](scale/review-team-plans.md)   
-- [Managed queries](track/using-queries.md)  
-- [Adhoc queries](../search/workitem/get-started.md)  
-- [Velocity](../report/guidance/team-velocity.md)   
-- [Forecasting](scrum/forecast.md)      
-   
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |Backlogs  |Task boards  |Kanban boards  |  Other  | 
+> |-------------|----------|---------|---------|   
+> |- [Product backlog](backlogs/create-your-backlog.md)<br/>- [Portfolio (Epics, Features) backlogs](backlogs/define-features-epics.md)<br/>- [Sprint backlogs](scrum/sprint-planning.md)|- [Task boards](scrum/task-board.md)<br/>- [Sprint burndown](scrum/sprint-burndown.md) <br/>- [Capacity planning](scale/capacity-planning.md) |- [Kanban board](kanban/kanban-basics.md)<br/>- [Task checklists](kanban/add-task-checklists.md)<br/>- [Epics & Features boards](kanban/kanban-epics-features-stories.md) |- [Delivery plans](scale/review-team-plans.md)<br/>- [Managed queries](track/using-queries.md)  
+- [Adhoc queries](../search/workitem/get-started.md)<br/>- [Velocity](../report/guidance/team-velocity.md)<br/>- [Forecast](scrum/forecast.md)    
 
 >[!NOTE]
 >To understand the differences between several backlogs and boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md). 
  
-
 
 ## Define work items and create your backlog  
 
@@ -153,9 +121,7 @@ If you work in Team Services or TFS 2017.1 or later version, you can use your ac
 
 ### Feedback and support  
 
-We welcome your feedback. 
-
-Send suggestions on **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**, and follow us on **[Twitter](https://twitter.com/VSTeam) @VSTeam**. 
+We welcome your feedback. Send suggestions on **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**, and follow us on **[Twitter](https://twitter.com/VSTeam) @VSTeam**. 
 
 See also our [comprehensive feedback and support page](../provide-feedback.md).  
 

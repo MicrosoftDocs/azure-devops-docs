@@ -8,7 +8,7 @@
 # Quickstarts  
 ## [Add work items](backlogs/add-work-items.md)
 ## [Create your backlog](backlogs/create-your-backlog.md)  
-## [Kanban](kanban/kanban-quickstart.md) (NEW)
+## [Kanban (NEW)](kanban/kanban-quickstart.md) 
 ## [Schedule sprints](scrum/define-sprints.md)
 ## [Drive Git development](backlogs/connect-work-items-to-git-dev-ops.md)  
 ## [Storyboard your ideas](office/storyboard-your-ideas-using-powerpoint.md)
@@ -30,7 +30,7 @@
 
 ## Backlogs & boards
 ### [Define features & epics](backlogs/define-features-epics.md)
-### [Organize your backlog (map items)](backlogs/organize-backlog.md)
+### [Organize your backlog (map or reparent)](backlogs/organize-backlog.md)
 ### [Assign items to a sprint](scrum/define-sprints.md#assign-to-sprint)    
 ### [Create backlog items & tasks (Project)](office/create-your-backlog-tasks-using-project.md)
 

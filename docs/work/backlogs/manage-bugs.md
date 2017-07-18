@@ -19,11 +19,14 @@ How do you track and manage defects in your code? How do you make sure software 
 At a minimum, you need a way to capture your software issues, prioritize them, assign them, and track progress. Moreover, you'll want to manage your bugs in ways that align with your Agile practices. 
 
 In a nutshell, you manage bugs through the following tasks: 
-- Capture information using the bug work item type  
-- Triage bugs by assigning a priority 
-- Update bug status throughout the bug lifecycle  
-- Monitor bug assignments and trends.   
 
+> [!div class="checklist"]   
+> * Capture information using the bug work item type  
+> * Triage bugs by assigning a priority 
+> * Update bug status throughout the bug lifecycle  
+> * Monitor bug assignments and trends    
+
+<!--- TBD  --> 
 In addition, you can: 
 - Capture bugs using test tools
 - Configure how your team manages bugs&mdash;along with requirements or with tasks 
@@ -35,12 +38,12 @@ In addition, you can:
 - Interface with UserVoice or Zendesk. 
 
 
-##Capture bugs  
+## Capture bugs  
 You can track bugs in much the same way that you track product backlog items (PBIs) or user stories. Using the bug work item form, you capture the code defect in the Title, Steps to Reproduce, and other fields.  
 
 You can create bugs from the [web portal](add-work-items.md), Visual Studio/Team Explorer, a [work item template](../productivity/work-item-template.md), or through one of the testing tools.  
 
-###Bug work item form 
+### Bug work item form 
 
 The bug work item form tracks similar information to the one shown for the Scrum process.  
 
@@ -82,7 +85,7 @@ The bug work item form tracks similar information to the one shown for the Scrum
 
 You can add fields, change the bug workflow, or customize the bug form. The method you use depends on the process model used by your team project. For details, see [Customize the work tracking experience](../customize/customize-work.md).  
 
-###Fields specific to bugs
+### Fields specific to bugs
 
 When defining a bug, use these fields to capture both the initial issue and ongoing discoveries made when triaging, investigating, fixing, and closing the bug.  
 
@@ -200,13 +203,13 @@ You can create bugs during test sessions using one of the following tools:
 
 
 <a id="triage"> </a>
-##Triage bugs  
+## Triage bugs  
  
 Once you've started coding and testing, you'll want to hold periodic triage meetings to review and prioritize your bugs. How frequently you meet and for how long depends on your situation. Typically, the project owner runs the bug triage meetings, and team leads, business analysts and other stakeholders who can speak about specific project risks attend them.  
 
 The project owner can create or open a shared query for new and reopened bugs to generate a list of bugs to be triaged.  
 
-###Bug queries
+### Bug queries
 Open a shared query or [use the query editor](../track/using-queries.md) to create useful bug queries, such as the following:
 - Active bugs by priority (```State <> Done``` or ```State <> Closed```)
 - In Progress bugs (```State = Committed``` or ```State = Active```)
@@ -215,7 +218,7 @@ Open a shared query or [use the query editor](../track/using-queries.md) to crea
 
 Once you have the queries of interest to your team, you can [create status or trend charts](../../Report/charts.md) that you can also pin to a [team dashboard](../../Report/dashboards.md).  
 
-###Triage mode in query results
+### Triage mode in query results
 
 From the query results page, you can quickly move up and down within the list of bug work items using the up and down arrows. As you review each bug, you can assign it, add details, or set priority. 
 
@@ -223,7 +226,7 @@ From the query results page, you can quickly move up and down within the list of
 
 
 <a id="track"> </a>
-###Track bugs as requirements or tasks 
+### Track bugs as requirements or tasks 
 
 Many Scrum teams treat bugs the same as any backlog item or user story. Others see bugs as work that belongs to implementing a story, and therefore treat them as a task.  
 
@@ -281,21 +284,15 @@ Your team should consider fixing all bugs found during a sprint when testing a f
 >If you work from Team Services or TFS 2015.1 and later versions, you can 
 >[drag-and-drop work items onto a sprint from any backlog or board](../scrum/define-sprints.md#drag-drop-to-sprint).   
 
-###Tips for successful triage meetings:  
-Fixing bugs represents a trade-off with regards to other work. Use your triage meeting to determine how important fixing each bug is against other priorities related to meeting the project scope, budget, and schedule.  
 
-- Establish the team's criteria for evaluating which bugs to fix and how to assign priority and severity. Bugs associated with features of significant value (or significant opportunity cost of delay), or other project risks, should be assigned higher priority and severity. Store your triage criteria with other team documents and update as needed.
-- Use your triage criteria to determine which bugs to fix and how to set their State, Priority, Severity, and other fields. 
-- Adjust your triage criteria based on where you are in your development cycle. Early on, you may decide to fix most of the bugs that you triage. However, later in the cycle, you may raise the triage criteria (or bug bar) to reduce the number of bugs that you need to fix.  
-- Once you've triaged and prioritized a bug, assign it to a developer for further investigation and to determine how to implement a fix. 
 
 <a id="fix-resolve-close">  </a>
-##Fix, resolve and close bugs (update status) 
+## Fix, resolve and close bugs (update status) 
 
 Bug fixes that involve more than a single section of code may require significant regression testing and may involve other team members. Record any conversations that relate to assessing the risk of bug fixes in the bug work item history.
 
 
-###Bug workflow lifecycle  
+### Bug workflow lifecycle  
 
 Once you fix a bug, you should update its workflow State. State choices vary depending on the process you use&mdash;[Scrum](../guidance/scrum-process.md), 
 [Agile](../guidance/agile-process.md), or [CMMI](../guidance/cmmi-process.md). The following images illustrate the workflow lifecycle defined for the default bug workflow for the Agile, Scrum, and CMMI processes. 
@@ -307,7 +304,7 @@ Once you fix a bug, you should update its workflow State. State choices vary dep
 For Scrum bugs, you simply change the State from Committed (similar to Active) to Done. For Agile and CMMI, you first resolve the bug, indicating that the bug has been fixed. Typically, the person who created the bug then verifies the fix and updates the State from Resolved to Closed. If more work has been found after a bug has been resolved or closed, it can be reactivated by setting the State to Committed or Active. 
 
 
-###Verify a fix 
+### Verify a fix 
 To verify a fix, a developer or tester should attempt to reproduce the bug and look for additional unexpected behavior. If necessary, they should reactivate the bug.
 
 When verifying a bug resolution, you may find that the bug was not completely fixed or you may disagree with the resolution. In this case, discuss the bug with the person who resolved it, come to an agreement, and possibly reactivate the bug. If you reactivate a bug, include the reasons for reactivating the bug in the bug description.
@@ -315,7 +312,7 @@ When verifying a bug resolution, you may find that the bug was not completely fi
 [!INCLUDE [temp](../_shared/verify-bug-test-runner.md)]
 
 <a id="close">  </a>
-###Close a bug  
+### Close a bug  
 You close a bug once it's verified as fixed. However, you may also close a bug for one of these reasons:
 
 - Deferred - deferring a fix until the next product release
@@ -335,9 +332,9 @@ For example, here are two examples showing active bugs by priority trend and a s
 
 ![Bug trend chart from query](_img/manage-bugs-trend-chart.png)   ![Bug snapshot by priority](_img/manage-bugs-priority-chart.png)   
 
-To learn more about queries, charts, and dashboards; see [Create managed queries](../track/example-queries.md), [Charts](../../report/charts.md), and [Dashboards](../../report/dashboards.md).   
+To learn more about queries, charts, and dashboards; see [Create managed queries](../track/example-queries.md) and [Charts](../../report/charts.md), and [Dashboards](../../report/dashboards.md).    
 
-###Pre-defined SQL Server bug reports (on-premises TFS only)
+### Pre-defined SQL Server bug reports (on-premises TFS only)
 
 <!---
 If you work from Team Services, you can use Power BI to access [bug reports and dashboards](../../report/powerbi/report-on-vso-with-power-bi-vs.md).
@@ -351,80 +348,23 @@ If you work from an on-premises TFS and you have SQL Server Analysis Services an
 
 To learn how to add SQL Server reports for a team project, see [Add reports to a team project](../../report/admin/add-reports-to-a-team-project.md).  
 
-##Related notes
+## Related topics 
 
 To track your bugs and integrate with other resources available to you, see these topics: 
 
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Manage</p>
-<ul style="padding-left:10px">
- <li style="margin-bottom:2px">[Add work items](../backlogs/add-work-items.md)</li>
- <li style="margin-bottom:2px">[Copy or clone a work item](copy-clone-work-items.md#copy-clone)</li>
- <li style="margin-bottom:2px">[Move, change type, or delete work items](remove-delete-work-items.md)</li>
- <li style="margin-bottom:2px">[Pre-populate fields using a template](../productivity/work-item-template.md)</li>
- <li style="margin-bottom:2px">[Integrate with Git](../backlogs/connect-work-items-to-git-dev-ops.md)</li>
- <li style="margin-bottom:2px">[Productivity tips](../productivity/productivity-tips.md)</li>
- <li style="margin-bottom:2px">[Work item field index](../guidance/work-item-field.md)</li>
-</ul>
-</div>
+- [Scrum and working with sprints best practices](../concepts/best-practices-scrum.md)  
+- [Follow a work item or pull request](../../collaborate/follow-work-items.md)
+- [Move, change type, or delete work items](remove-delete-work-items.md)
+- [Pre-populate fields using a template](../productivity/work-item-template.md)
+- [Copy or clone a work item](copy-clone-work-items.md#copy-clone)
 
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Track</p>
-<ul style="padding-left:20px">
-<li style="margin-bottom:2px">[Queries (work items)](../track/using-queries.md)</li>
- <li style="margin-bottom:2px">[Charts](../../Report/charts.md)</li>
- <li style="margin-bottom:2px">[Dashboards](../../Report/dashboards.md)</li>
- <li style="margin-bottom:2px">[Share work plans](../track/share-plans.md)</li>
- <li style="margin-bottom:2px">[Follow a work item or pull request](../../collaborate/follow-work-items.md)</li>
- <li style="margin-bottom:2px">[Alerts](../track/alerts-and-notifications.md) </li> 
- <li style="margin-bottom:2px">[Tag work items](../track/add-tags-to-work-items.md)</li>
- <li style="margin-bottom:2px">[History & audit](../track/history-and-auditing.md)</li>
-</ul>
-</div>
+### Integrate & Test resources
+- [UserVoice](../../marketplace/integrate/service-hooks/services/uservoice.md)  
+- [Zendesk](../../marketplace/integrate/service-hooks/services/zendesk.md)  
+- [Developer testing tools scenarios and capabilities](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)  
+- [Run tests for desktop apps](../../test/manual-exploratory-testing/getting-started/run-manual-tests.md#run-desktop)  
+  
 
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Integrate & Test</p>
-<ul style="padding-left:20px">
-<li style="margin-bottom:2px">[UserVoice](../../marketplace/integrate/service-hooks/services/uservoice.md)</li>
-<li style="margin-bottom:2px">[Zendesk](../../marketplace/integrate/service-hooks/services/zendesk.md)</li>
-<li style="margin-bottom:2px">[Developer testing tools scenarios and capabilities](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)</li>
-<li style="margin-bottom:2px">[Run tests for desktop apps](../../test/manual-exploratory-testing/getting-started/run-manual-tests.md#run-desktop)</li> 
-</ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
-
-###Manage your technical debt 
-
-Consider managing your bug bar and technical debt as part of your team's overall set of continuous improvement activities. You may find these additional resources of interest: 
-
-- [Good and Bad Technical Debt (and how TDD helps)](http://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt) by Henrik Kniberg  
-- [Managing Technical Debt](http://www.infoq.com/articles/managing-technical-debt) posted by Sven Johann & Eberhard Wolff  
-
-
-
->###Tips from the trenches: [Agile Bug Management: Not an Oxymoron](https://visualstudiomagazine.com/articles/2012/10/12/agile-bug-management.aspx)  
->*by Gregg Boer, Principal Program Manager, Visual Studio Cloud Services at Microsoft*  
->#### Every Sprint, Address any Known Bug Debt 
->Every sprint, the team looks at any bugs remaining in the bug backlog and allocates capacity to get that known set of bugs down to zero, or near-zero. Whether this is one day, one week or the entire sprint, they fix the bugs first. Bugs found later, within the sprint, are not considered part of that initial commitment. Unless they're very high priority, they're put on the bug backlog for the next sprint.
->
->Many teams work in a commitment-based organization, where management places a high value on a team's ability to meet their commitments. Doing capacity planning against a known set of bugs makes sprint planning more deterministic, increasing their chance to meet commitments. Any new bugs discovered during the sprint are not a part of the initial commitment, and will be tackled next sprint.>
- >
->#### Managing Bug Debt across an Enterprise 
->An organization transitioning to a culture where debt is continually eliminated likely is dealing with the following question: How do you get teams to reduce their bug count without telling them exactly what to do? Leadership wants the team to change, yet gives the team autonomy to determine how they change. One option is to use a bug cap.
->
->For example, consider a bug cap of three bugs per engineer. This means a team of 10 people should not have more than 30 bugs in its bug backlog. If the team is over its cap, it's expected to stop work on new features and get under the bug cap. A team is expected to be under its cap at all times, but the team decides how it wants to do that. The bug cap ensures that bug debt is never carried for too long, and the team can learn from the mistakes that causes the bugs to be injected in the first place. 
->
->Remember that the bug cap represents the bugs in the bug backlog. It does not include bugs found and fixed within the sprint in which a feature is developed. Those bugs are considered undone work, not debt. 
-
-
-While bugs contribute to technical debt, they may not represent all debt. 
-
-Poor software design, poorly written code, or short-term fixes in place of best, well-designed solutions can all contribute to technical debt. Technical debt reflects extra development work that arises from all these problems. 
-
-You need to track work to address technical debt as PBIs, user stories, or bugs. To track a team's progress in incurring and addressing technical debt, you'll want to consider how to categorize the work item and the details you want to track. You can [add tags to any work item to group it into a category of your choosing](../track/add-tags-to-work-items.md). 
 
 <!---
 ###Use SonarQube to help manage technical debt

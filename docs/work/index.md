@@ -37,87 +37,21 @@ Start tracking work by adding work items, creating your backlog, or scheduling s
 
 Whether you use scrum, Kanban, or a combination of Agile methods, you can get started tracking bugs, driving your Git development, and more using the Agile tools available to you. 
 
-<div style="float:left;width:145px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Backlogs</p> 
-- [Define features & epics](./backlogs/define-features-epics.md)    
-- [Organize backlogs](./backlogs/organize-backlog.md) 
- 
-<br/>
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Work items</p>
-- [Manage bugs](./backlogs/manage-bugs.md)   
-- [Manage issues](./backlogs/manage-issues-impediments.md)  
-- [Use templates](productivity/work-item-template.md)    
-- [Move/change type](backlogs/remove-delete-work-items.md)  
-- [Delete items](backlogs/remove-delete-work-items.md)  
-- [Copy/clone work items](backlogs/copy-clone-work-items.md)   
-- [Link work items](backlogs/add-link.md)   
-- [Bulk modify (Web)](./backlogs/bulk-modify-work-items.md)    
-- [Bulk add/modify (Excel)](office/bulk-add-modify-work-items-excel.md)   
+
+> [!div class="mx-tdBreakAll"]  
+> |Manage work items and backlogs  |Scrum   |   Kanban   |  
+> |-------------|----------|---------|  
+> |- [Define features & epics](./backlogs/define-features-epics.md)<br/>- [Organize backlogs](./backlogs/organize-backlog.md)<br/>- [Manage bugs](./backlogs/manage-bugs.md)<br/>- [Manage issues](./backlogs/manage-issues-impediments.md)<br/>- [Use templates](productivity/work-item-template.md) <br/>- [Move/change type](backlogs/remove-delete-work-items.md)<br/>- [Delete items](backlogs/remove-delete-work-items.md) <br/>- [Copy/clone work items](backlogs/copy-clone-work-items.md)<br/>- [Link work items](backlogs/add-link.md)<br/>- [Bulk modify (Web)](./backlogs/bulk-modify-work-items.md)<br/>- [Bulk add/modify (Excel)](office/bulk-add-modify-work-items-excel.md) >   |- [Plan sprints](./scrum/sprint-planning.md)<br/>- [Plan capacity](./scale/capacity-planning.md)<br/>- [Add and update tasks](./scrum/task-board.md)<br/>- [Sprint burndown](./scrum/sprint-burndown.md)<br/>- [Forecast](./scrum/forecast.md)<br/>- [Velocity](../report/guidance/team-velocity.md)  | - [Kanban basics](kanban-basics.md)<br/>- [Task checklists](./kanban/add-task-checklists.md)<br/>- [Epics & features](./kanban/kanban-epics-features-stories.md)<br/>- [Add inline tests](./kanban/add-run-update-tests.md)<br/>- [Cumulative flow](../report/guidance/cumulative-flow.md)  |
+
+<hr/> 
 
 
-</div>
-<div style="float:left;width:145px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Scrum</p>
-- [Plan sprints](./scrum/sprint-planning.md)   
-- [Plan capacity](./scale/capacity-planning.md)  
-- [Add and update tasks](./scrum/task-board.md)  
-- [Sprint burndown](./scrum/sprint-burndown.md)  
-- [Forecast](./scrum/forecast.md)   
-- [Velocity](../report/guidance/team-velocity.md) 
-<br/>
-<i><u>Configure</u></i>   
-- [Set team defaults](./scale/set-team-defaults.md)  
-- [Customize cards](./customize/customize-cards.md)  
+> [!div class="mx-tdBreakAll"]  
+> |Track  | Queries   |   Scale    |  
+> |-------------|----------|---------|  
+> |- [Tag work items](./track/add-tags-to-work-items.md)<br/>- [Follow work](../collaborate/follow-work-items.md)<br/>   - [Email work items](how-to/email-work-items.md)<br/>- [Share work plans](track/share-plans.md) <br/>- [Adhoc work item search](../search/workitem/get-started.md)  |- Add & run queries<br/>- Triage work items<br/>- [Edit a query](./track/using-queries.md)<br/>- [Add a query chart](../report/charts.md) <br/>- [Copy a query](backlogs/copy-clone-work-items.md#html)<br/>- [History & audit](./track/history-and-auditing.md)<br/>- [Set query permissions](track/set-query-permissions.md)  |- [Add teams](scale/multiple-teams.md)<br/>- [Manage portfolios](./scale/portfolio-management.md)<br/>- [Review team delivery plans](scale/review-team-plans.md)<br/>- [Visibility across teams](scale/visibility-across-teams.md)<br/>- [Scaled Agile Framework](./scale/scaled-agile-framework.md)  |
+  
 
-</div>
-<div style="float:left;width:145px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Kanban</p>
-- [Task checklists](./kanban/add-task-checklists.md)  
-- [Epics & features](./kanban/kanban-epics-features-stories.md)  
-- [Add inline tests](./kanban/add-run-update-tests.md)  
-- [Cumulative flow](../report/guidance/cumulative-flow.md)  
-<br/>
-<i><u>Configure</u></i>   
-- [Add columns](./kanban/add-columns.md)  
-- [WIP limits](./kanban/wip-limits.md)  
-- [Split columns](./kanban/split-columns.md)  
-- [Expedite work (swimlanes)](./kanban/expedite-work.md)  
-- [Definition of done](./kanban/definition-of-done.md)  
-- [Customize cards](./customize/customize-cards.md)  
-- [Card reordering](./customize/reorder-cards.md)  
-
-</div>
-<div style="float:left;width:145px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Track</p>
-- [Tag work items](./track/add-tags-to-work-items.md)   
-- [Follow work](../collaborate/follow-work-items.md)   
-- [Email work items](how-to/email-work-items.md)  
-- [Share work plans](track/share-plans.md)  
-- [Adhoc work item search](../search/workitem/get-started.md)  
-<br/>
-<i><u>Queries</u></i>  
-- Add & run queries    
-- Triage work items   
-- [Edit a query](./track/using-queries.md)     
-- [Add a query chart](../report/charts.md)  
-- [Copy a query](backlogs/copy-clone-work-items.md#html)      
-- [History & audit](./track/history-and-auditing.md)    
-- [Set query permissions](track/set-query-permissions.md)  
-
-</div>
-<div style="float:left;width:150px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Scale</p>
-- [Add teams](scale/multiple-teams.md)  
-- [Manage portfolios](./scale/portfolio-management.md)  
-- [Review team delivery plans](scale/review-team-plans.md)   
-- [Visibility across teams](scale/visibility-across-teams.md)  
-- [Scaled Agile Framework](./scale/scaled-agile-framework.md)   
- 
- 
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
 
 ## Videos 
 <!---
@@ -130,19 +64,7 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 </div>
 -->
 
-## Samples
 
-- [Example search box queries](track/search-box-queries.md)
-- [Example adhoc queries](../search/workitem/get-started.md)  
-- [Query by title, ID, or description](track/titles-ids-descriptions.md)
-- [Query by assignment or workflow changes](track/query-by-workflow-changes.md)  
-- [Query by area or iteration path](track/query-by-area-iteration-path.md)   
-- [Query by date or current iteration](track/query-by-date-or-current-iteration.md)   
-- [Query history](track/history-and-auditing.md)  
-- [Query a numeric field](track/query-numeric.md)  
-- [Query by pick list value](track/planning-ranking-priorities.md)  
-- [Query by build and test integration fields](track/build-test-integration.md)  
-- [Query by links or attachments](track/linking-attachments.md) 
 
 
 ## Concepts 
@@ -195,7 +117,19 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 <div style="clear:left;font-size:100%">
 </div>
 
+## Example queries
 
+- [Example search box queries](track/search-box-queries.md)
+- [Example adhoc queries](../search/workitem/get-started.md)  
+- [Query by title, ID, or description](track/titles-ids-descriptions.md)
+- [Query by assignment or workflow changes](track/query-by-workflow-changes.md)  
+- [Query by area or iteration path](track/query-by-area-iteration-path.md)   
+- [Query by date or current iteration](track/query-by-date-or-current-iteration.md)   
+- [Query history](track/history-and-auditing.md)  
+- [Query a numeric field](track/query-numeric.md)  
+- [Query by pick list value](track/planning-ranking-priorities.md)  
+- [Query by build and test integration fields](track/build-test-integration.md)  
+- [Query by links or attachments](track/linking-attachments.md) 
 
 ## How-to guides
 
@@ -205,7 +139,6 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 <p style="font-weight:bold;margin-bottom:2px;text-align:center;">Agile tools</p>
 - [Switch project or team focus](how-to/switch-team-context-work.md)  
 - [Filter backlogs, boards, & queries](how-to/filter-backlog-or-board.md)  
-- [Filter Kanban board](kanban/filter-kanban-board.md)  
 - [Change column options](how-to/set-column-options.md)   
 - [Email/print work items](how-to/email-work-items.md)   
 - [Refine Work item search results](../search/workitem/search-results.md)   
@@ -332,3 +265,17 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
   
 
 
+## TBD
+- [Set team defaults](./scale/set-team-defaults.md)  
+- [Customize cards](./customize/customize-cards.md)  
+
+<i><u>Configure</u></i>   
+- [Add columns](./kanban/add-columns.md)  
+- [WIP limits](./kanban/wip-limits.md)  
+- [Split columns](./kanban/split-columns.md)  
+- [Expedite work (swimlanes)](./kanban/expedite-work.md)  
+- [Definition of done](./kanban/definition-of-done.md)  
+- [Customize cards](./customize/customize-cards.md)  
+- [Card reordering](./customize/reorder-cards.md)  
+
+- 

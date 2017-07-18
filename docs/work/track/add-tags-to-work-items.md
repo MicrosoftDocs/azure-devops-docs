@@ -142,7 +142,7 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 
 
 <tr>
-<td>[Filter the Kanban board](../kanban/filter-kanban-board.md)   
+<td>[Filter the Kanban board](../how-to/filter-backlog-or-board.md)   
 </td>
 <td>![checkmark](../_img/icons/checkmark.png)   
 </td>
