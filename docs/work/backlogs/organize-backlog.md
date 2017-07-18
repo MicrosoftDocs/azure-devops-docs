@@ -10,14 +10,24 @@ ms.topic: get-started-article
 ms.date: 06/19/2017
 --- 
 
-# Organize your backlog  
+# Organize your backlog, map child work items to parents 
 
 **Team Services | TFS 2017 | TFS 2015 | TFS 2013**  
 
-After you've added features to your portfolio backlog, you can quickly organize your backlog by mapping backlog items to them. With features and epics, you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.      
+After you've added [features or epics](define-features-epics.md) to your portfolio backlog, you can quickly organize your backlog by mapping backlog items to them. With features and epics, you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.   
+ 
+
+In this topic you'll learn:  
+
+> [!div class="checklist"] 
+> * How to change the backlog view to show the tree hierarchy  
+> * How to group backlog items under a feature or epic using the Mapping pane  
+> * How to reparent items using drag-and-drop or the **Change parent** option       
+
 
 [!INCLUDE [temp](../_shared/image-differences.md)]
 
+## Show parents and expand the tree hierarchy  
 From the product backlog page, set Parents to Show when you want to drill up or down within the hierarchy, set Parents to Show. You can also drag and drop items to reparent items from this view. 
 
 <img src="_img/org-backlog-intro-show-parents-ts-new-nav.png" alt="Hierarchical view of backlogs" style="border: 1px solid #CCCCCC;" />  
@@ -70,8 +80,9 @@ From the product backlog you can multi-select several work items and choose **Ch
 <img src="_img/org-backlog-change-parent.png" alt="Change parent of several backlog items" style="border: 1px solid #CCCCCC;" /> 
 
 
-## Related notes  
+## Related topics  
 
+- [Backlogs, boards, and plans](../backlogs-boards-plans.md)  
 - [Define features and epics](define-features-epics.md)
 - [Work with multi-team ownership of backlog items](work-multi-team-ownership-backlogs.md)
 - [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md)

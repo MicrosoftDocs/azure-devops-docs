@@ -39,9 +39,9 @@
 ## Share information
 ### [Share your project vision](collaborate/project-vision-status.md)   
 ### [Add and edit a wiki](collaborate/add-edit-wiki.md)
-### [Create a readme for your repo](/team-services/git/create-a-readme.md)
-### [Share work plans](/team-services/work/track/share-plans.md)
-### [Team dashboards](/team-services/report/dashboards.md)
+### [Create a readme for your repo](/team-services/git/create-a-readme)
+### [Share work plans](/team-services/work/track/share-plans)
+### [Team dashboards](/team-services/report/dashboards)
 
 ## Manage notifications (alerts) 
 ### [Follow work & pull requests](collaborate/follow-work-items.md)
@@ -71,27 +71,27 @@
 
 # How-to guides
 ## [Go mobile](collaborate/mobile-work.md)
-## [Switch project or team focus](/team-services/work/how-to/switch-team-context-work.md)  
+## [Switch project or team focus](/team-services/work/how-to/switch-team-context-work)  
 ## [Connect to a team project](connect/connect-team-projects.md)  
-## [Add & manage teams](/team-services/work/scale/multiple-teams.md) 
+## [Add & manage teams](/team-services/work/scale/multiple-teams) 
 
 ## Get familiar with the web portal 
 ### [Work in the web portal](connect/work-web-portal.md)
 ### [Work from your account hub](connect/account-home-pages.md)
 
 ## Manage users & access (Account admin)
-### [Add users (Team Services)](/team-services//setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) 
-### [Add users to team projects](/team-services/setup-admin/add-users.md)
-### [Add administrators](/team-services/setup-admin/add-administrator-tfs.md)
-### [Change permission levels](/team-services/setup-admin/tfs/admin/change-permission-levels.md)
-## [Change access levels (TFS)](/team-services/work/connect/change-access-levels.md)
+### [Add users (Team Services)](/team-services//setup-admin/team-services/add-account-users-assign-access-levels-team-services) 
+### [Add users to team projects](/team-services/setup-admin/add-users)
+### [Add administrators](/team-services/setup-admin/add-administrator-tfs)
+### [Change permission levels](/team-services/setup-admin/tfs/admin/change-permission-levels)
+## [Change access levels (TFS)](/team-services/work/connect/change-access-levels)
  
 
 ## Install TFS (Single Server)
-### [Get started](/team-services/setup-admin/tfs/install/get-started.md)
-### [Single server](/team-services/setup-admin/tfs/install/single-server.md)
-### [Dual server](/team-services/setup-admin/tfs/install/dual-server.md)  
-### [Multiple servers](/team-services/setup-admin/tfs/install/multiple-server.md) 
+### [Get started](/team-services/setup-admin/tfs/install/get-started)
+### [Single server](/team-services/setup-admin/tfs/install/single-server)
+### [Dual server](/team-services/setup-admin/tfs/install/dual-server)  
+### [Multiple servers](/team-services/setup-admin/tfs/install/multiple-server) 
 
 
 # Reference
@@ -109,12 +109,12 @@
  
 
 # Resources
-## [Team Services, Account Management](/team-services/setup-admin/team-services/overview.md)
-## [TFS, Administration](/team-services/setup-admin/get-started.md)
-## [Marketplace & Billing](/docs/marketplace/overview.md)
-### [Visual Studio Subscriptions](/docs/marketplace/vs-subscriptions/buy-vs-subscriptions.md)
-### [Try extensions for free](/docs/setup-admin/team-services/try-additional-features-vs.md)
-### [Get more features for Team Services](/docs/marketplace/get-vsts-extensions.md)
+## [Team Services, Account Management](/team-services/setup-admin/team-services/overview)
+## [TFS, Administration](/team-services/setup-admin/get-started)
+## [Marketplace & Billing](/docs/marketplace/overview)
+### [Visual Studio Subscriptions](/docs/marketplace/vs-subscriptions/buy-vs-subscriptions)
+### [Try extensions for free](/docs/setup-admin/team-services/try-additional-features-vs)
+### [Get more features for Team Services](/docs/marketplace/get-vsts-extensions)
 ### [Pricing: Team Services](https://www.visualstudio.com/team-services/pricing/)
 ### [Pricing: TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
 

@@ -154,42 +154,16 @@ The widget will also get a custom visual cue on focus to help users who use the 
 ### Styles for common form elements in widget configuration
 
 To use basic styles from the widget sdk for common form elements in widget configuration, follow these guidelines:
-<table>
-	<thead>
-		<tr>
-			<th width="15%">Form element</th>
-			<th>Wrapping element</th>
-			<th>Guidelines</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Simple text box</td>
-			<td>`div` with class "single-line-text-input"</td>
-			<td>Use a `label` element to add text next to the text box. Use the `input` element to create a text box. Use the `placeholder` attribute to provide placeholder text.</td>
-		</tr>
-		<tr>
-			<td>Checkbox</td>
-			<td>`fieldset` with class "checkbox"</td>
-			<td>Use a `label` element to add text next to each checkbox. Use a `legend` element to caption the group of checkboxes. Use the `for` attribute on each `label` element to help screen readers understand the form element</td>
-		</tr>
-		<tr>
-			<td>Radio button</td>
-			<td>`fieldset` with class "radio"</td>
-			<td>Use a `label` element to add text next to each radio button. Use a `legend` element to caption the group of radio buttons. Use the `for` attribute on each `label` element to help screen readers understand the form element</td>
-		</tr>			
-		<tr>
-			<td>Dropdown</td>
-			<td>`div` with class "dropdown"</td>
-			<td>Use a `label` element to add text next to the dropdown. If you want a dropdown occupying half the width, add class "half" to the wrapping `div` element. If you want to use the standard arrow icon from the sdk instead of the one provided by the browser, wrap the `select` element with another `div` with class "wrapper"</td>
-		</tr>
-		<tr>
-			<td>Multi-line text box</td>
-			<td>`div` with class "multi-line-text-input"</td>
-			<td>Use `label` element to label the `textarea` element used as multi-line text box.</td>
-		</tr>		
-	</tbody>
-</table>
+
+| Form element        | Wrapping element | Guidelines |
+|---------------------|------------------|------------|
+| Simple text box     | `div` with class "single-line-text-input". | Use a `label` element to add text next to the text box. Use the `input` element to create a text box. Use the `placeholder` attribute to provide placeholder text. |
+| Checkbox            | `fieldset` with class "checkbox"           | Use a `label` element to add text next to each checkbox. Use a `legend` element to caption the group of checkboxes. Use the `for` attribute on each `label` element to help screen readers understand the form element. |
+| Radio button        | `fieldset` with class "radio"              | Use a `label` element to add text next to each radio button. Use a `legend` element to caption the group of radio buttons. Use the `for` attribute on each `label` element to help screen readers understand the form element. |
+| Dropdown            | `div` with class "dropdown"                | Use a `label` element to add text next to the dropdown. If you want a dropdown occupying half the width, add class "half" to the wrapping `div` element. If you want to use the standard arrow icon from the sdk instead of the one provided by the browser, wrap the `select` element with another `div` with class "wrapper". |
+| Multi-line text box | `div` with class "multi-line-text-input".  | Use `label` element to label the `textarea` element used as multi-line text box. |
+
+
 
 The example below uses each of the form elements listed in the table.  
 

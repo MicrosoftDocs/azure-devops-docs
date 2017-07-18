@@ -22,14 +22,13 @@ Once your team has completed a few sprints, they can use their velocity to [fore
 
 Use this topic to learn: 
 
-<!--- [!div class="checklist"] -->
+> [!div class="checklist"]
+> * How velocity metrics should be used     
+> * Install and configure the Velocity widget (Analytics service)  
+> * How to work with the Velocity chart (work tracking datastore)     
+> * Required and recommended team activities to support velocity tracking      
 
-![checkmark](../../work/_img/icons/checkmark.png) How velocity metrics should be used     
-![checkmark](../../work/_img/icons/checkmark.png) Install and configure the Velocity widget (Analytics service)  
-![checkmark](../../work/_img/icons/checkmark.png) How to work with the Velocity chart (work tracking datastore)     
-![checkmark](../../work/_img/icons/checkmark.png) Required and recommended team activities to support velocity tracking      
-
-There are two velocity charts, the one viewed from the backlog of a team and the one you access by adding the Velocity widget of a dashboard. The Velocity widget enables you to view more sprints and additional information than that provided by the velocity chart.   
+There are two velocity charts, the one viewed from the backlog of a team and the one you access by adding the Velocity widget to a dashboard. The Velocity widget enables you to view more sprints and additional information than that provided by the velocity chart.   
 
 >[!NOTE]   
 ><b>Feature availability:</b> The Velocity widget is available only for Team Services at this time. 

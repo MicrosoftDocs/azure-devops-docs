@@ -7,7 +7,7 @@ ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 02/22/2017  
+ms.date: 07/14/2017
 ---
 
 # Bulk add or modify work items with Excel 
@@ -17,6 +17,17 @@ ms.date: 02/22/2017
 When you have a lot of work items to add or modify, using Excel can save you time. [Use a flat list](../track/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../track/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
 
 You can also bulk add and modify work items using [Microsoft Project](create-your-backlog-tasks-using-project.md).
+
+In this topic you'll learn:  
+
+> [!div class="checklist"] 
+> * Connect to a team project from Excel 
+> * Add or edit work items and publish your changes to TFS or Team Services
+> * Refresh your Excel worksheet with the latest changes made to the work tracking data store   
+> * Select user accounts  
+> * Add hierachically linked backlog items and tasks   
+> * Work with different list types    
+  
 
 >[!NOTE]  
 >You can't use Office Project 365 to connect to Team Services or TFS.
@@ -85,7 +96,7 @@ You can make changes to work items in Excel, Project, the web portal, or Visual 
 
 
 <a id="select-user"></a>
-##Select user accounts 
+## Select user accounts 
 
 >[!NOTE]  
 ><b>Feature availability: </b>  To access the [Select User](#select-user) feature, you need to install [Visual Studio 2015 Update 1](http://go.microsoft.com/fwlink/?LinkId=626599) or [Team Foundation Server Office Integration 2015 Update 2](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1). Get this feature to avoid data validation errors by mispelling user names and when you must assign user names from a large group of user accounts.  
@@ -114,7 +125,7 @@ You can use the Select User feature to find user accounts and assign values to p
 >Without the Select User feature active, you must enter user names exactly as they are in the database, or you'll receive data validation errors upon trying to publish.  
 
 <a id="tree-list"></a>
-##Add linked backlog items and tasks 
+## Add linked backlog items and tasks 
 
 You can bulk add a nested list of work items, such as a work break down structure or a hierarchical set of user stories and customer experiences. For example, you can add a nested list of tasks, subtasks, and bugs, as shown in the following illustration, or linked tasks to product backlog items, as described in the following steps.
 
@@ -162,7 +173,7 @@ Here's how a three-level nested tree of items appears in Excel:
 
 </blockquote>  
 
-##Work with different list types 
+## Work with different list types 
 
 Select your list structure based on these guidelines.  
 
@@ -208,15 +219,15 @@ Select your list structure based on these guidelines.
 </tbody>
 </table>
 
-###Enable the Tree commands
+### Enable the Tree commands
 
 If the Tree group commands are not available, your worksheet is configured as a flat list. You can convert the flat list to a tree list as described in step 2 in [Add backlog items and tasks and their parent-child links using a tree list](#tree-list).
 
-###Convert a tree to a flat list
+### Convert a tree to a flat list
 
 First, publish whatever changes you have made. Then, on the **Team** ribbon, choose **Configure**, **List**, and then choose **Refresh work items only**. This will flatten the tree structure and change the query list to an input list.
 
-###Remove a tree level
+### Remove a tree level
 
 Remove any content entered under the tree-level **Title** *number* column you want to remove&mdash;the highest numbered column&mdash;and, then **Refresh** your worksheet.
 
@@ -224,24 +235,22 @@ Remove any content entered under the tree-level **Title** *number* column you wa
 >Always publish changes that you have made to work items before you remove a tree level. Removing a tree level requires a refresh, which overwrites data in the work item list. You will lose any data you have not published. 
  
 
-###Convert from an input list to a query
+### Convert from an input list to a query
 
 On the **Team** ribbon, choose **Configure**, **List**, and then select the query you want to use. The worksheet will refresh with only those work items returned by the query. Also, if you select a tree query, then the list becomes a tree list.
 
-###Add existing work items to a list
+### Add existing work items to a list
 
 If you're working with a non-query input list, you can add work items by choosing ![Get work items icon](_img/bulk-modify-excel-get-work-items-inline.png) from the Team ribbon. If you're working from a query, then you need to [modify your query](../track/using-queries.md) to contain the work items you want. Then refresh your list.
 
 
-##Related notes
+## Related notes
 
 While the examples shown here represent connecting to an on-premises TFS, you can connect to Visual Studio Team Services and bulk add and modify work items. Once you've connected to the cloud server, you use the same procedures to work in Excel. 
 
 If you're just getting started, review these topics for more information about work item tracking and using Excel: 
 
-- [Add work items](../backlogs/add-work-items.md)  
-- [Create your backlog](../backlogs/create-your-backlog.md)  
-- [Manage bugs](../backlogs/manage-bugs.md)  
+- [Bulk modify work items (web portal)](../backlogs/bulk-modify-work-items.md)  
 - [Basic Excel tasks](https://support.office.com/Article/Basic-tasks-in-Excel-2013-363600c5-55be-4d6e-82cf-b0a41e294054) 
 
 To bulk edit links, you can use these clients:  
@@ -258,10 +267,10 @@ To resolve publishing errors, see one of these topics:
 - [Data validation errors](resolve-excel-data-validation-errors.md)  
 - [Invalid links](resolve-excel-invalid-links-tree-list.md)  
 
-###Delete work items
+### Delete work items
 You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command line tool. For details, see [Move, change, or delete work items ](../backlogs/remove-delete-work-items.md).
 
-###Direct link query converts to flat list
+### Direct link query converts to flat list
 
 When you open a direct links query in Excel, the Team Foundation add-in converts the list to a flat list. While you can modify values for the fields and add work items, you can't view nor modify link relationships. 
 
@@ -278,7 +287,8 @@ You can use many Excel features, such as cut, paste, automatic fill, format, sor
 
 To drag a work item, select the work item or contiguous set of work items that you want to move, open the context menu and choose **Select**, **Table Row**, point to the border of the selection, and&mdash;when the pointer becomes a move pointer ![Move Pointer](_img/bulk-modify-excel-pointer-icon.png)&mdash;drag the row to another location.
 
-<blockquote style="font-size: 13px"><b>Tip: </b>When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Any changes you make to a date format field will be overwritten with the date format used by the server.</blockquote>   
+> [!TIP]  
+> When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Any changes you make to a date format field will be overwritten with the date format used by the server.     
 
 
 ### Web portal and Excel access
@@ -294,7 +304,6 @@ If you want to disable the add-in, see [Add or remove an add-in](https://support
 ### Enable the Developer tab 
 
 See [Show the Developer Tab on the Ribbon](https://msdn.microsoft.com/library/bb608625.aspx).
-
 
 ### Excel for Mac 
 

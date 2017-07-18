@@ -46,40 +46,14 @@ Below is the code snippet that adds your action to the contributions section of 
 ```
 
 ### Properties
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>```text```</td>
-<td>Text that will appear on the menu item.</td>
-</tr>
-<tr>
-<td>```title```</td>
-<td>Tooltip text that will appear on the menu item.</td>
-</tr>
-<tr>
-<td>```icon```</td>
-<td>URL to an icon that will appear on the menu item. Relative URLs are resolved using baseUri.</td>
-</tr>
-<tr>
-<td>```groupId```</td>
-<td>Determines where this menu item will appear in relation to the others. [How to discover menu group identifiers](../test/discover-menu-group-ids.md)</td>
-</tr>
-<tr>
-<td>```uri```</td>
-<td>URI to a page that registers the menu action handler (see below).</td>
-</tr>
-<tr>
-<td>```registeredObjectId```</td>
-<td>(Optional) Name of the registered menu action handler. Defaults to the contribution id.</td>
-</tr>
-</tbody>
-</table>
+| Property           | Description                                                                                                                         
+|--------------------|-----------------------------------------------------------------------------------------------------------------|
+| text               | Text that will appear on the menu item.                                                                         |                  
+| title              | Tooltip text that will appear on the menu item.                                                                 |                   
+| icon               | URL to an icon that will appear on the menu item. Relative URLs are resolved using baseUri.                     |                   
+| groupId            | Determines where this menu item will appear in relation to the others. [How to discover menu group identifiers] (../test/discover-menu-group-ids.md). |
+| uri                | URI to a page that registers the menu action handler (see below).                                               |                   
+| registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contributor id.                          |                   
 
 Learn about all of the places where you can add actions in the [contributions reference](../reference/targets/overview.md).
 

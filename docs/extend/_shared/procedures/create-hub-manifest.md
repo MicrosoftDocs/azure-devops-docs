@@ -33,28 +33,11 @@
 	- the contribution target (the work hub group),
 	- and the properties that are specific to each type of contribution. For a hub, we have
 
-	<table>
-		<thead>
-			<tr>
-				<th>Property</th>
-				<th>Description</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>name</td>
-				<td>name of the hub</td>
-			</tr>
-			<tr>
-				<td>order</td>
-				<td>placement of the hub in the hub group</td>
-			</tr>
-			<tr>
-				<td>uri</td>
-				<td>path (relative to the extension&apos;s baseUri) of the page to surface as the hub</td>
-			</tr>
-		</tbody>
-	</table>
+| Property | Description |
+| --- | --- |
+| name | Name of the hub. |
+| order | Placement of the hub in the hub group. |
+| uri | Path (relative to the extension's baseUri) of the page to surface as the hub. |
 
 0. Add the files that you want to include in your package - your HTML page, your scripts, the SDK script and your logo.
 

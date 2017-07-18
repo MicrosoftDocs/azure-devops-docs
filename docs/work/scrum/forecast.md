@@ -18,11 +18,10 @@ Teams use the forecast tool to help in their sprint planning efforts. By pluggin
 
 Use this topic to learn: 
 
-<!--- [!div class="checklist"] -->
-
-![checkmark](../_img/icons/checkmark.png) How to forecast upcoming sprints  
-![checkmark](../_img/icons/checkmark.png) Tips for using the forecast tool        
-![checkmark](../_img/icons/checkmark.png) Required and recommended team activities to support forecasting       
+> [!div class="checklist"] 
+> * How to forecast upcoming sprints  
+> * Tips for using the forecast tool        
+> * Required and recommended team activities to support forecasting       
 
 
 ![Forecast tool](_img/ALM_DS_Forecast_Chrt_S.png)

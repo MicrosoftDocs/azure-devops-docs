@@ -143,29 +143,11 @@ For each contribution in your extension, the manifest defines
 - the contribution target - **the work hub group** (check out all of the [targetable hub groups](../reference/targets/overview.md#targetable-hub-groups))
 - and the properties that are specific to each type of contribution. For a hub, we have
 
-<table style="padding-top:6px;">
-	<thead>
-	<tr>
-		<th>Property</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>```name```</td>
-			<td>name of the hub</td>
-		</tr>
-		<tr>
-			<td>```order```</td>
-			<td>placement of the hub in the hub group</td>
-		</tr>
-		<tr>
-			<td>```uri```</td>
-			<td>path (relative to the extension&apos;s baseUri) of the page to surface as the hub</td>
-		</tr>
-	</tbody>
-</table>
-
+| Property   | Description                                                                                                                         
+|------------|--------------------------------------------------------------------------------|                                 
+| name       | Name of the hub.					                  							  |         
+| order      | Placement of the hub in the hub group.    									  |
+| uri		 | Path (relative to the extension's baseUri) of the page to surface as the hub.  | 
 
 ### Scopes
 The [scopes](../develop/manifest.md#scopes) stanza is where you'll add **scopes** that your extension requires. Scopes control what resources can be accessed by your extension and what operations your extension is allowed to perform on those resources. The scopes you specify in your extension manifest are the scopes set on access tokens issued to your extension.

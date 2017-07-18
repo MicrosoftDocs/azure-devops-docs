@@ -74,29 +74,12 @@ For each contribution in your extension, the manifest defines
 * the type of contribution (tab in this case),
 * the contribution target (the product or iteration backlog tabs in this case),
 * and the properties that are specific to each type of contribution. For a tab, we have
-	<table>
-		<thead>
-			<tr>
-				<th>Property</th>
-				<th>Description</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>```name```</td>
-				<td>name of the hub</td>
-			</tr>
-			<tr>
-				<td>```uri```</td>
-				<td>path (relative to the extension&apos;s baseUri) of the page to surface as the tab</td>
-			</tr>
-			<tr>
-				<td>```registeredObjectId```</td>
-				<td>Id of the object registered for the tab. Include code like the example below in the html file indicated in the "uri" property of the contribution shown above.				
-				</td>
-			</tr>
-		</tbody>
-	</table>
+
+| Property           | Description                                                                                                                         
+|--------------------|----------------------------------------------------------------------------------------|                                
+| name               | Name of the hub.					                                                      |                   
+| uri                | Path (relative to the extenion's base URI) of the page to the surface as the tab       |                   
+| registeredObjectId | Id of the object registered for the tab. Include code like the example below in the html file indicated in the "uri" property of the contribution shown above. | 
 
 ### Scopes
 It includes the [scopes](./manifest.md#scopes) that your extension requires.

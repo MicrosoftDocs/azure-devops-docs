@@ -16,44 +16,33 @@ ms.date: 03/29/2017
 
 Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect team project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or task board that aren't relevant anymore.  
 
-Depending on whether you work in the cloud in Visual Studio Team Services or an on-premises Team Foundation Server (TFS), you have these options for removing or deleting work items.  
+In this topic you'll learn:  
 
+> [!div class="checklist"] 
+> * How to change the work item type of one or more work items (Team Services)  
+> * How to move one or more work items to another team project  (Team Services)     
+> * How to remove work items from the backlog by changing the State to Removed     
+> * How to delete work items and test artifacts  
+> * How to restore or permanently delete work items (web portal)
+> * How to permanently delete work items (command-line tool)  
+> * What permissions are required to delete work items and test artifacts    
 
 >[!NOTE]  
 >**Feature availability:** The following features are available from Team Services (cloud service) or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Provide product and content feedback](../../provide-feedback.md#platform-version) 
 
 You only have access to those actions that are supported on your platform and for which you have permissions. If you are a member of the Contributors group (anyone who has been added as a team member) or Project Administrators groups, you have access to the following features. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../setup-admin/permissions-access.md). 
 
-<div style="float:left;width:325px;margin:3px">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Contributors</p>
-<ul style="padding-left:20px">
 
- <li style="margin-bottom:2px">[Change work item type](#change-type)&#160;<sup>1, 2</sup> (Team Services)</li>
- <li style="margin-bottom:2px">[Remove work items (change State)](#remove)&#160;<sup>2, 3</sup> </li> 
- <li style="margin-bottom:2px">[Delete work items](#delete)&#160;<sup>1, 2</sup>  (Team Services, TFS 2015.2) </li> 
-<li style="margin-bottom:2px">[Restore work items](#restore)&#160;<sup>1, 2, 5</sup> (Team Services, TFS 2015.2)</li>
-</ul>
-</div>
-<div style="float:left;width:375px;margin:3px">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Project Administrators</p>
-<ul style="padding-left:30px">
+> [!div class="mx-tdBreakAll"]  
+> |Contributors|Project Administrators|  
+> |-------------|----------|---------|  
+> |- [Change work item type](#change-type)&#160;<sup>1, 2</sup> (Team Services)<br/>- [Remove work items (change State)](#remove)&#160;<sup>2, 3</sup><br/>- [Delete work items](#delete)&#160;<sup>1, 2</sup>  (Team Services, TFS 2015.2)<br/>- [Restore work items](#restore)&#160;<sup>1, 2, 5</sup> (Team Services, TFS 2015.2)|- [Move a work item to another team project](#move)&#160;<sup>1,&#160;2,&#160;4</sup><br/>- [Permanently delete work items (web portal)](#restore)&#160;<sup>1, 2, 5</sup> (Team Services, TFS 2015.2)<br/>- [Permanently delete work items (command-line tool)](#perm-delete)&#160;<sup>5</sup><br/>- [Permanently delete test artifacts](#delete-test)&#160;<sup>6</sup> (TFS 2017.1)|  
 
-<li style="margin-bottom:2px">[Move a work item to another team project](#move)&#160;<sup>1,&#160;2,&#160;4</sup> (Team Services) </li>
-<li style="margin-bottom:2px">[Permanently delete work items (web portal)](#restore)&#160;<sup>1, 2, 5</sup> (Team Services, TFS 2015.2)</li>
-<li style="margin-bottom:2px">[Permanently delete work items (command-line tool)](#perm-delete)&#160;<sup>5</sup></li> 
-<li style="margin-bottom:2px">[Permanently delete test artifacts](#delete-test)&#160;<sup>6</sup> (TFS 2017.1) </li> 
-
-
-</ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
 
 **Notes:**  
 
 <ol>
-<li>You can't change type, move work items, or delete/restore work items whose WITs support test management or that belong to the [Hidden Types Category](#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.   
+<li>You can't change type, move work items, or delete/restore work items whose WITs support test management or that belong to the [Hidden Types Category](../concepts/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.   
 </li>
 <li>From the web portal, you can[ multi-select several work items](bulk-modify-work-items.md) from a backlog or query results page and perform a bulk update using the associated feature. </li>
 <li>Changing the State to Remove causes work items to be removed from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and task boards).</li>
@@ -280,12 +269,6 @@ To learn more about managing test artifacts, see:
 - [Create a test plan](../../test/manual-exploratory-testing/getting-started/create-a-test-plan.md)
 - [Control how long to keep test results](../../test/manual-exploratory-testing/getting-started/how-long-to-keep-test-results.md) 
 
-
-<a id="hidden-types"> </a> 
-### Hidden types category   
-You can use [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from github to quickly determine which WITs belong to the Hidden Types Category. 
-
-To learn more, see [Hidden Types Category](../reference/use-categories-to-group-work-item-types.md#hiddentypes).
 
 <a id="move-delete-permissions"></a>
 ###Set permissions to delete work items   

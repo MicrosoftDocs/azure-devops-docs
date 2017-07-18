@@ -7,8 +7,8 @@ ms.prod: vs-devops-alm
 ms.assetid: 92395eeb-6372-49b3-935d-dab5feef1d54
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/22/2017
---- 
+ms.date: 07/14/2017
+---
 
 # Kanban basics
 
@@ -18,6 +18,17 @@ To maximize a team's ability to consistently deliver high quality software, Kanb
 
 Your Kanban board turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a user story (blue cards) or a bug (red cards) at that stage of work.  
 
+
+Review this topic to gain an understanding of how to configure and start working with your Kanban boards:   
+
+> [!div class="checklist"] 
+> * View your Kanban board    
+> * Customize the columns shown on your Kanban board to support how your team works  
+> * Set WIP limits to constrain work in progress   
+> * Update the status of work via drag-and-drop  
+> * View the Cumulative flow chart     
+> * How to turn live updates on or off  
+ 
 
 ### Open your Kanban board from the web portal
 
@@ -335,7 +346,7 @@ For more opportunities to adopt Kanban practices and customize your team's Kanba
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Kanban</p>
 <ul style="padding-left:10px">
 <li style="margin-bottom:2px">[Task checklists](add-task-checklists.md)</li>
-<li style="margin-bottom:2px">[Filter the Kanban board](filter-kanban-board.md)</li>
+<li style="margin-bottom:2px">[Filter the Kanban board](../how-to/filter-backlog-or-board.md)</li>
 <li style="margin-bottom:2px">[Features and epics](kanban-epics-features-stories.md)</li>
 <li style="margin-bottom:2px">[Split columns](split-columns.md)</li>
 <li style="margin-bottom:2px">[Swimlanes](expedite-work.md)</li>

@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/22/2016
+ms.date: 07/14/2017
 ---
 
 #Add, run, and update inline tests
@@ -16,13 +16,21 @@ ms.date: 08/22/2016
 >[!NOTE]  
 ><b>Feature availability: </b>The Kanban board inline tests feature is supported from Team Services and TFS 2017.   
 
-Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status.    
+Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md). 
+
+
+In this topic, you'll learn: 
+> [!div class="checklist"] 
+> * How to add inline tests to a backlog item from your Kanban board  
+> * How to run tests and update the status of tests  
+> * How to expand or collapse inline tests   
+> * How to reorder or reparent inline tests  
 
 ![Kanban board with several inline tests defined](_img/i-test-board-intro.png)
 
 Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
  
-##Add tests  
+## Add tests   
 
 1. To start adding tests, open the menu for the work item.  
 
@@ -49,7 +57,7 @@ See [Create manual tests](../../test/manual-exploratory-testing/getting-started/
 
 Prior to running the test, you must add details. 
 
-##Run test 
+## Run test 
 
 Run the test by selecting ![Run icon](../_img/icons/run_query.png) Run test from the ![Actions icon](../_img/icons/actions-icon.png) actions menu for the inline test.  
 
@@ -58,7 +66,7 @@ Run the test by selecting ![Run icon](../_img/icons/run_query.png) Run test from
 Microsoft Test Runner starts in a new browser instance. For details on running a test, see [Run manual tests](../../test/manual-exploratory-testing/getting-started/run-manual-tests.md).
 
 
-##Update the status of a test  
+## Update the status of a test  
 
 You can update the status of the test from the ![Actions icon](../_img/icons/actions-icon.png) actions menu . 
 
@@ -68,7 +76,7 @@ Updating the status of tests enable you to [track test results](../../test/manua
 
 [Why doesn't the Kanban board show the status for test suites and plans already created in the Test hub?](#test-status-kanban)
 
-##Expand or collapse inline tests  
+## Expand or collapse inline tests  
 
 Upon first opening the Kanban board, you'll see an unexpanded view of checklists.
 
@@ -91,7 +99,7 @@ To create a copy of a test to add to a different user story, select the test, pr
 
 
 
-##Related notes
+## Related notes
 Use inline tests for lightweight traceability and to manage manual tests for user stories or other backlog items that they support. To learn more about test case management, see [Create manual tests](../../test/manual-exploratory-testing/getting-started/create-test-cases.md).  
 
 If you find that you don't use this feature, you can disable it from the [common configurations dialog](../customize/customize-cards.md#annotations). 
@@ -102,25 +110,13 @@ Additional ways you can quickly add linked items and objects to user stories fro
 
 To initate web-based exploratory testing for a user story, you need to install the Exploratory testing , see [Exploratory test your web app directly in your browser](../../test/manual-exploratory-testing/getting-started/perform-exploratory-tests.md).
 
-If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md)
-
 <a name="test-status-kanban"></a>
 ### Test status in the Kanban board
 
 Test integration with the Kanban board makes it easy for teams to get started with manual testing and then take advantage of the full testing capabilities in Test Manager later, when required. When test cases are created from the Kanban board and updated afterwards in Test Manager, the Kanban board shows the correct status. However, integration is not optimized to work in the other direction; for example, when users create requirement-based suites with Test Manager instead of in the Kanban board. We intend to make some major performance improvements to this integration in future releases.
 
-### Card controls and keyboard shortcuts
 
-| Control                  | Function                      |
-|--------------------------|-------------------------------|
-| TAB key | Select the next field or next card |
-| Enter key | Open card work item  |
-| Shift + F10 | Open card context menu  |
-| ARROW + ENTER/SPACE | Select option from the action menu |
-| CTRL + drag & drop | Copy selected inline item to another backlog item | 
-
-
-###Customize the Kanban board 
+### Customize the Kanban board 
 To customize or change the layout of the board, see one of these topics. 
 
 * [Add columns](add-columns.md)  
@@ -131,10 +127,7 @@ To customize or change the layout of the board, see one of these topics.
 * [Definition of Done](definition-of-done.md)  
 * [Add tags to categorize and filter lists](../track/add-tags-to-work-items.md)  
 
-###REST API resources
+### REST API resources
 To programmatically create test cases, see the [Test management (REST API reference)](https://www.visualstudio.com/integrate/api/test/overview).
 
-<!---
-TBD: https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web 
--->
 

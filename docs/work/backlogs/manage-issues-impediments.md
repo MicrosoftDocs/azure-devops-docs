@@ -16,9 +16,14 @@ ms.date: 06/19/2017
 
 <a name="manage-impediments"></a>
 
-If you have known issues you want to track, you can do so by defining an impediment (Scrum) or issue (Agile or CMMI). Impediments and issues represent unplanned activities. Resolving them requires more work beyond what's tracked for actual requirements. Using the impediment work item type helps you track and manage these issues until you can resolve and close them.  
+If you have known issues you want to track, you can do so by defining an impediment (Scrum) or issue (Agile or CMMI). Impediments and issues represent unplanned activities. Resolving them requires more work beyond what's tracked for actual requirements. Using the impediment work item type helps you track and manage these issues until you can resolve and close them. 
 
 Don't confuse impediments with bugs. You track impediments that may cause problems with delivering one or more requirements. For example, you may have to address feature ambiguity, personnel or resource issues, problems with environments, or other risks that impact scope, quality, or schedule. Other issues that deserve tracking are decisions that require several stakeholders or product teams to weigh in on.
+
+In this topic you'll learn: 
+
+> [!div class="checklist"]   
+> * How to capture issues or impediments as a work item   
 
 
 <div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">

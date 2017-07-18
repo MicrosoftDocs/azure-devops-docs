@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/10/2017
+ms.date: 07/14/2017
 ---
 
 
@@ -19,36 +19,31 @@ If you use Kanban to track progress on your backlog, you can also use Kanban boa
 
 And, just as with [child task checklists for backlog items](add-task-checklists.md), you can quickly define and track the progress of child items for your features or epics. Here we see several stories defined for features, both in progress and those completed.    
 
+In this topic, you'll learn: 
+> [!div class="checklist"] 
+> * How to add epics and features using your portfolio backlogs    
+> * Keyboard shortcuts for working with the Kanban board  
+
+
+
 <img src="_img/features-with-stories.png" alt="Web portal, Features Kanban board with several user stories defined" style="border: 1px solid #CCCCCC;" />
 
 >[!NOTE]  
 ><b>Feature availability: </b>Child checklists for feature and epic Kanban boards are supported from Team Services and TFS 2017.  
 
-## Add items    
+## Add epics or features    
 
 Add new items to a feature or epic through the item's ![actions icon](../_img/icons/actions-icon.png) Action menu. For descriptions of fields used to support features and epics, see [Define features and epics](../backlogs/define-features-epics.md). 
 
 <img src="_img/features-add-story.png" alt="Web portal, Feature Kanban board, Open the context menu of a feature to add a story" style="border: 1px solid #CCCCCC;" /> 
 
 
-#### Checklist controls and keyboard shortcuts
-
-| Keys                  | Function     | 
-|--------------------------|-----------------| 
-| Home  | Select the first card  | 
-| Arrow | Select the next card  | 
-| TAB | Select the context menu  | 
-| ARROW + ENTER/SPACE | Select action  |  
-| Enter | Open card work item  |  
-
-
-
-If you have a number of items to add, simply keep typing your task titles and click Enter. 
-
-If you have details you want to add about to a work item, hover over the item and press Enter.  
+If you have a number of items to add, simply keep typing your task titles and click Enter. If you have details you want to add about to a work item, hover over the item and press Enter.  
  
+[!INCLUDE [temp](../_shared/kanban-board-controls.md)]  
 
-##Related notes
+
+## Related notes
 
 If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md)
 
@@ -67,9 +62,6 @@ To customize the columns, swimlanes, or cards for each Kanban board, make sure y
 * [Definition of Done](definition-of-done.md)  
 * [Customize cards](../customize/customize-cards.md)  
 
-[!INCLUDE [temp](../_shared/kanban-board-controls.md)]  
 
-[!INCLUDE [temp](../_shared/live-updates.md)]  
-
-###REST API resources
-To programmatically create work items, see the [Work API reference](https://www.visualstudio.com/en-us/integrate/api/wit/batch).
+### REST API resources
+To programmatically create work items, see the [Work API reference](https://www.visualstudio.com/en-us/integrate/api/wit/batch).  

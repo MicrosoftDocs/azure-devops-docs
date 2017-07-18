@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/24/2017
+ms.date: 07/14/2017
 ---
 
 #Add task checklists
@@ -16,17 +16,25 @@ ms.date: 02/24/2017
 >[!NOTE]  
 ><b>Feature availability: </b>Task checklists on the Kanban board are supported from Team Services or the web portal for TFS 2015.1 or later version.  
 
-Many teams find Kanban ideal for tracking work as it supports visualizing the flow of work in progress. And, you can quickly add new items and update status.  
+Many teams find Kanban ideal for tracking work as it supports visualizing the flow of work in progress. And, you can quickly add new items and update status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md).  
 
-With task checklists, you continue to enjoy lightweight tracking, while gaining visibility into which tasks are still to be completed and those that are done. Task checklists provide a quick and easy way to track elements of work which are important to support completing a backlog item. Here we see several tasks for work in progress, both yet to do and those completed.    
+With task checklists, you continue to enjoy lightweight tracking, while gaining visibility into which tasks are still to be completed and those that are done. Task checklists provide a quick and easy way to track elements of work which are important to support completing a backlog item. Here we see several tasks for work in progress, both yet to do and those completed.  
 
+In this topic, you'll learn: 
+> [!div class="checklist"] 
+> * How to add a task or set of tasks to a backlog item from your Kanban board  
+> * How to mark a task as done 
+> * How to expand or collapse the task checklist  
+> * How to reorder and reparent tasks or reassign them to a sprint
+> * Keyboard shortcuts for working with the Kanban board 
+  
 ![Kanban board with several task checklists defined](_img/kanban-task-checklists.png)
 
 
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 
 
-##Add a task or set of tasks 
+## Add a task or set of tasks 
 
 1. To start adding tasks, open the menu for the work item.  
 
@@ -50,7 +58,7 @@ With task checklists, you continue to enjoy lightweight tracking, while gaining 
 
 	Tasks that you create from the Kanban board will show up on your sprint task board. Also, tasks that you create from the [sprint backlog](../scrum/sprint-planning.md) or [taskboard](../scrum/task-board.md) will show up within tasks checklists on the Kanban board.  
 
-##Mark a task as done 
+## Mark a task as done 
 
 When you complete a task, simply click the checkbox to change its status to Done or Closed. 
 
@@ -58,7 +66,7 @@ When you complete a task, simply click the checkbox to change its status to Done
  
 The State of the work item is updated from To Do to Done for Scrum projects, and from Active to Closed for Agile and CMMI projects.  
 
-##Expand or collapse the task checklist  
+## Expand or collapse the task checklist  
 
 Upon first opening the Kanban board, you'll see an unexpanded view of checklists.
 
@@ -67,7 +75,7 @@ Upon first opening the Kanban board, you'll see an unexpanded view of checklists
 Simply click the task checklist summary to expand a collapsed task checklist. Click the same summary to collapse an expanded checklist. 
 
 
-##Reorder and reparent tasks or reassign them to a sprint
+## Reorder and reparent tasks or reassign them to a sprint
 
 Tasks that you create from the Kanban board are automatically assigned to the sprint/iteration path of the parent work item under which you define them. 
 
@@ -78,33 +86,21 @@ You can drag a task within a work item to reorder it. Or, you can drag the task 
 
 To reassign a task to a different sprint, you must open the sprint backlog where it's currently defined and then drag it to the new sprint.  
 
+[!INCLUDE [temp](../_shared/kanban-board-controls.md)]   
 
-##Related notes
-Use your task checklist for lightweight tracking of to-do lists. You can also add tags and show tags and fields on cards to support other tracking needs.   
 
-If you connect to Team Services, you can also:
+## Related notes  
+Use your task checklist for lightweight tracking of to-do lists. If you find that you don't use this feature, you can disable it from the [common configurations dialog](../customize/customize-cards.md#annotations). 
+
+You can also [add tags and show tags and fields on cards](../customize/customize-cards.md) to support other tracking needs.  
+
+In addition, you can:  
+
 - [Add, run, update manual tests](add-run-update-tests.md)
 - [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md)
 
-If you find that you don't use this feature, you can disable it from the [common configurations dialog](../customize/customize-cards.md#annotations). 
 
-If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md)
-
-### Card controls and keyboard shortcuts
-
-| Control                  | Function                      |
-|--------------------------|-------------------------------|
-| TAB key | Select the next field or next card |
-| Enter key | Open card work item  |
-| Shift + F10 | Open card context menu  |
-| ARROW + ENTER/SPACE | Select option from the action menu |
-| CTRL + drag & drop | Copy selected inline item to another backlog item |  
-
-
-[!INCLUDE [temp](../_shared/kanban-board-controls.md)]  
-
-
-###Customize the Kanban board 
+### Customize the Kanban board 
 To customize or change the layout of the board, see one of these topics. 
 
 * [Add columns](add-columns.md)  
@@ -114,7 +110,6 @@ To customize or change the layout of the board, see one of these topics.
 * [Split columns](split-columns.md)   
 * [Definition of Done](definition-of-done.md)  
 
-[!INCLUDE [temp](../_shared/live-updates.md)]  
 
-###REST API resources
+### REST API resources
 To programmatically create tasks, see the [Work API reference](https://www.visualstudio.com/en-us/integrate/api/wit/batch).
