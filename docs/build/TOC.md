@@ -170,6 +170,7 @@
 ## Tool
 ### [Node Tool Installer](steps/tool/node-js.md)
 ## [File matching patterns](steps/file-matching-patterns.md)
+## [File and variable transform](steps/transforms-variable-substitution.md)
 # Troubleshooting
 ## [Troubleshooting build](troubleshooting.md)
 ## [Troubleshoot Azure connections](actions/azure-rm-endpoint.md)
