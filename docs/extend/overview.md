@@ -197,63 +197,6 @@ Integrating with many third party services such as Slack, Trello, and Jenkins is
 
 ### Available services
 
-<div name="row">
-<div class ="col-sm-2 col-md-2 col-lg-2">
-</div>
-<div class ="col-sm-8 col-md-8 col-lg-8">
-<table class="table table-striped" style="margin-left:auto;margin-right:auto">
-<thead class="thead-inverse">
-    <tr>
-        <th>Build and release</th>
-        <th>Collaborate</th>
-		<th>Customer support</th>
-		<th>Plan and track</th>
-		<th>Integrate</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>[AppVeyor](../marketplace/integrate/service-hooks/services/appveyor.md)</td>
-        <td>[Campfire](../marketplace/integrate/service-hooks/services/campfire.md)</td>
-		<td>[UserVoice](../marketplace/integrate/service-hooks/services/uservoice.md)</td>
-		<td>[Trello](../marketplace/integrate/service-hooks/services/trello.md)</td>
-		<td>[Azure Service Bus](../marketplace/integrate/service-hooks/services/azure-service-bus.md)</td>
-    </tr>
-	<tr>
-		<td>[Bamboo](../marketplace/integrate/service-hooks/services/bamboo.md)</td>
-		<td>[Flowdock](../marketplace/integrate/service-hooks/services/flowdock.md)</td>
-		<td>[Zendesk](../marketplace/integrate/service-hooks/services/zendesk.md) </td>
-		<td></td>
-		<td>[Azure Storage](../marketplace/integrate/service-hooks/services/azure-storage.md)</td>
-	</tr>
-	<tr>
-		<td>[Jenkins](../marketplace/integrate/service-hooks/services/jenkins.md)</td>
-		<td>[HipChat](../marketplace/integrate/service-hooks/services/hipchat.md)</td>
-		<td></td>
-		<td></td>
-		<td>[Web Hooks](../marketplace/integrate/service-hooks/services/webhooks.md)</td>
-	</tr>
-	<tr>
-		<td>[MyGet](../marketplace/integrate/service-hooks/services/myget.md)</td>
-		<td>[Hubot](../marketplace/integrate/service-hooks/services/hubot.md)</td>
-		<td></td>
-		<td></td>
-		<td>[Zapier](../marketplace/integrate/service-hooks/services/zapier.md)</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>[Slack](../marketplace/integrate/service-hooks/services/slack.md)</td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-</tbody>
-</table>
-</div>
-<div class ="col-sm-2 col-md-2 col-lg-2">
-</div>
-</div>
-
 | Build and release | Collaborate | Customer support | Plan and track | Integrate |
 |-------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | [AppVeyor](../marketplace/integrate/service-hooks/services/appveyor.md) | [Campfire](../marketplace/integrate/service-hooks/services/campfire.md) | [UserVoice](../marketplace/integrate/service-hooks/services/uservoice.md) | [Trello](../marketplace/integrate/service-hooks/services/trello.md) | [AzureService Bus](../marketplace/integrate/service-hooks/services/azure-service-bus.md) |
