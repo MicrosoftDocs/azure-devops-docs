@@ -19,7 +19,7 @@ Building an extension that calls the Analytics Service is identical to building 
 in this early stage, a few things have to be done manually at this point - and then there's working
 with the returned data. This documentation will show you how to do both.
 
-To build an extension, see [Write your first extension for Team Services](../../../integrate/extensions/get-started/node.md).
+To build an extension, see [Write your first extension for Team Services](../../integrate/extensions/get-started/node.md).
 We won't be building a grid control to hold the results though - we'll be building a chart. For the purposes of this
 example we'll use the open source C3 library which sits on top of D3.
 
@@ -266,16 +266,16 @@ For the purposes of this sample, use the following manifest and copy it into a f
 do exist but they have no content. They must exist otherwise the extension cannot be compiled into a VSIX pacakage.**
 
 There are a few key things to note here:
-* This extension adds a work-hub-group (extension points are described in [Extension points](../../../integrate/extensions/reference/targets/overview.md))
+* This extension adds a work-hub-group (extension points are described in [Extension points](../../integrate/extensions/reference/targets/overview.md))
 * The name of the hub is "Analytics Sample" and it will load the page "Analytics.html"
 * The scope is **vso.analytics** which is the OAuth scope required to access the analytics service
 
 At this point the extension can be compiled, deployed, installed and executed following the steps described 
-in the [Create your first extension for Team Services](../../../integrate/extensions/get-started/node.md) documentation, starting from the Create your publisher section.
+in the [Create your first extension for Team Services](../../integrate/extensions/get-started/node.md) documentation, starting from the Create your publisher section.
 
 Once the solution is deployed you should see something similar to the following:
 
 ## Build a widget extension  
 
 Widgets allow you to place items on a [dashboard](../dashboards.md) and to compose those items as required. Detailed information
-on creating widget extensions can be found in  [Building a dashboard widget that calls the Analytics Service](../../../integrate/extensions/develop/add-dashboard-widget.md). This topic covers how to call out to the analytics service specifically.
+on creating widget extensions can be found in  [Building a dashboard widget that calls the Analytics Service](../../integrate/extensions/develop/add-dashboard-widget.md). This topic covers how to call out to the analytics service specifically.

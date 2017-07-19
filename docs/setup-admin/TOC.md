@@ -34,7 +34,7 @@
 ### [Rename account](team-services/rename-visual-studio-team-services-account.md)
 ### [Delete account](team-services/delete-your-vsts-account.md)
 ### [Recover account](team-services/recover-your-vsts-account.md) 
-### [Sign in with different credentials](../connect/connect-team-projects.md#logindifferentcred)  
+### [Sign in with different credentials](../connect/connect-team-projects.md#logindifferentcred.md)  
 
 
 ## Manage team projects
@@ -86,7 +86,7 @@
 
 # Concepts
 ## [Permissions and access](permissions-access.md)  
-## TBD (might be a few intros I peel out into concepts)
+## TBD (might be a few intros I peel out into concepts.md)
 ## [Buying build pipelines](buy-more-build-vs.md)  
 
 # Reference

@@ -10,9 +10,9 @@ A: You'll find it in the code hub in your team project.
 
 2. Open the code hub from your you team project's home page.
 
- ![Team project home page, code explorer](../_img/code-explorer.png)
+ ![Team project home page, code explorer](_img/code-explorer.png)
 
 3. Select the the repository and click on the **clone** action to get the URL.
 
- ![Team project home page, code explorer, clone selected to show the URL](../_img/clone-url.png)
+ ![Team project home page, code explorer, clone selected to show the URL](_img/clone-url.png)
 
