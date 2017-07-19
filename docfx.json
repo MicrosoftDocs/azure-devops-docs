@@ -63,7 +63,7 @@
         "MSHAttr.msprod":"ms.prod:ALM",
         "ms.prodfamily": "ALM", 
         "layout": "Conceptual",
-        "breadcrumb_path": "~/breadcrumb/toc.json",
+        "breadcrumb_path": "~/breadcrumb/toc.yml",
         "uhfHeaderId": "MSDocsTeamServicesheader",
         "author": "douge",
         "ms.author": "douge",
