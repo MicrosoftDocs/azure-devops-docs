@@ -51,7 +51,7 @@ For more details, see [Install an extension](../../marketplace/get-vsts-extensio
 1. In the search textbox at the top right of the window, check that the text says
    _Search code_. The search text box may say _Search work items_. In this case, use the drop-down selector to change it.
 
-   ![Switching between searching for code and work items](../_img/_shared/title-bar-search-box-select-type.png)
+   ![Switching between searching for code and work items](_img/get-started/title-bar-search-box-empty-outlined.png)
 
    If you don't see the ![select search type](../_img/_shared/search-select-type-icon.png)
    selector in the Search box, open the **Manage extensions** page 
