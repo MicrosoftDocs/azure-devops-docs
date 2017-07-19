@@ -108,5 +108,5 @@ down to a list of work items. By using Work Item Search you can:
 
 ## Next steps
 
-* See more details of how to use the powerful features of the [rich search results page](search-results.md).
-* Learn more about the [advanced search syntax](advanced-search-syntax.md).
+* [Use the rich search results page](search-results.md)
+* [Learn about the advanced search syntax](advanced-search-syntax.md)

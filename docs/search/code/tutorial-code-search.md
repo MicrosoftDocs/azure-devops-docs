@@ -60,12 +60,18 @@ For more details, see [Install an extension](../../marketplace/get-vsts-extensio
    ![Checking that the extension is installed](../_img/_shared/goto-marketplace.png)
 
 1. Enter a search string in the textbox, and press _Enter_ (or choose the 
-   ![start search icon](../_img/_shared/start-search-icon.png) icon) 0to start your search.
+   ![start search icon](../_img/_shared/start-search-icon.png) icon) to start your search.
 
+1. The search page shows a list of the matching code files. The selected file has all
+   instances of the search string highlighted. 
+
+   ![Search results](_img/get-started/search-results-01.png)
+
+   If you see a list of work items, ensure that **Code** is selected in the top left.
 
 1. Try assembling more complex search strings using the operators and functions listed in the handy 
    drop-down list. Select the filter function or code type you want to include in your search string from the
-   list, and type the criteria value. 
+   list, and type the criteria value.
 
    ![Search from Visual Studio Team Services title bar](_img/get-started/title-bar-search-functionlist.png)    
 
@@ -86,60 +92,29 @@ For more details, see [Install an extension](../../marketplace/get-vsts-extensio
 
    * See also [full details of the search syntax](advanced-search.md#syntaxdetails). 
 
-4. xxx
+4. Widen your search to all projects, or narrow it to specific areas and types of code,
+   by selecting from the drop-down lists at the top of the page.
 
+   ![Use drop-down lists to widen or narrow your search](_img/get-started/select-projects.png)
 
+5. Use the tabs in the results page to view the history of the file and to compare versions of the file.
 
-After this, you can use the textbox in the search results page to enter simple search strings,
-or to select functions and enter the filter criteria. 
+   ![Use tabs to view history and compare files](_img/get-started/compare-tab.png)
 
-![Type a search string or select functions to include](_img/get-started/type-search-string-or-select-functions.png)
+   >Open the search results in a new browser tab from either search box by
+   pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
+   ![start search icon](../_img/_shared/start-search-icon.png) icon.
+   In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
+   to the new browser tab.
 
-Open the search results in a new browser tab from either search box by
-pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-![start search icon](../_img/_shared/start-search-icon.png) icon.
-In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
-to the new browser tab. 
- 
-<a name="start-results"></a>
-## Use the rich search results page
-
-One of the major advantages of Code Search is the fact that it displays the full contents of
-the files for each result. This makes it easier for you to scan each match within a result file 
-in the context of the containing file and the code that surrounds it. 
-
-The results page shows, in the left column, the number of hits in each project and 
-repository. The selected projects and any selected Git repositories are always at 
-the top of these lists. Notice how the hit counts are provided for projects and repositories that were
-not selected.
-
-![The left and center columns of the results page](_img/get-started/results-page-left-and-center-columns.png)
-
-The second column in the previous screenshot shows the list of matching documents; by default it shows the 
-first 50 but there is a **Show more** link at the end of the list to display more. 
-In the center column, you see:
-
-* The project, repository, and file name delimited with "\>" characters
-* The total number of matches in this file
-* The full path and name of this file  
-
-The right column of the results page shows the matching file with all the 
-hits highlighted. Scroll through the highlighted matches in all the matching files using the up and
-down arrow icons located near the top right of the page, or **F8** and **Shift+F8** on your keyboard. 
-
-![The rich search results page](_img/get-started/results-page-right-column.png)
-
-Choose the filename link at the top of this column to open the file in
-a new Code Explorer window.
+6. Choose the filename link at the top of this column to open the file in a new Code Explorer window.
 
 ![Open the file in Code Explorer](_img/get-started/open-in-code-explorer.png)
-
+ 
 ## Next steps
 
-See more details of how you can
-**[filter and scope your search](repos-and-projects.md)** to the projects, repositories, and paths 
-you're interested in, and how to use the powerful features of the 
-**[rich search results page](search-results.md)**. 
+* [Filter and scope your search](repos-and-projects.md)
+* [Use the rich search results page](search-results.md)
 
 ## See also
 
@@ -148,6 +123,3 @@ you're interested in, and how to use the powerful features of the
 * [Rich Code Search results](search-results.md)
 * [Set up and administration](administration.md)
 
-[!INCLUDE [shared-back-to-overview](../_shared/shared-back-to-overview.md)]
-
-[!INCLUDE [shared-got-feedback](../_shared/shared-got-feedback.md)]
