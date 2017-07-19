@@ -618,7 +618,7 @@ To learn more about tool installer tasks, see [Tool installers](../concepts/proc
 
 ### Can I add my own build tasks?
 
-Yes: [Add a build task](../../../integrate/extensions/develop/add-build-task.md)
+Yes: [Add a build task](../../integrate/extensions/develop/add-build-task.md)
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
