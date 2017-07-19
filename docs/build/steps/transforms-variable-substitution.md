@@ -177,7 +177,7 @@ As an example, consider the task of changing the following values in `Web.config
     </configSection>
     <connectionStrings>
         <!-- Change connectionString in this line: --> 
-        <add name="DefaultConnection" connectionString="Data Source=(LocalDB)\\LocalDB;FileName=Local.mdf" />
+        <add name="DefaultConnection" connectionString="Data Source=(LocalDB)\LocalDB;FileName=Local.mdf" />
     </connectionStrings>
     <appSettings>
         <add key="ClientValidationEnabled" value="true" />
@@ -206,9 +206,14 @@ As an example, consider the task of changing the following values in `Web.config
 
    ![Release definition for XML variable substitution](_img/release-definition2.png)
 
-1. Define the required values in release definition variables
+1. Define the required values in release definition variables:
  
-   ![Release definition variables XML variable substitution](_img/variables.png)
+   | Name | Value | Secure | Scope |
+   | ---- | ----- | ------ | ----- |
+   | DefaultConnection | Data Source=(ProdDB)\\MSSQLProdDB;AttachFileName=Local.mdf | No | Release |
+   | AdminUserName | ProdAdminName | No | Release |
+   | AdminPassword | [your-password] | Yes | Release |
+   | invariantName | System.Data.SqlClientExtension | No | Release |
  
 1. Save the release definition and start a new release.
 
@@ -221,7 +226,7 @@ As an example, consider the task of changing the following values in `Web.config
            <section name="entityFramework" />
        </configSection>
        <connectionStrings>
-           <add name="DefaultConnection" connectionString="Data Source=(ProdDB)\\MSSQLProdDB;AttachFileName=Local.mdf" />
+           <add name="DefaultConnection" connectionString="Data Source=(ProdDB)\MSSQLProdDB;AttachFileName=Local.mdf" />
        </connectionStrings>
        <appSettings>
            <add key="ClientValidationEnabled" value="true" />
@@ -286,7 +291,7 @@ As an example, consider the task of overriding values in this JSON file:
 {
   "Data": {
     "DefaultConnection": {
-      "ConnectionString": "Data Source=(LocalDb)\\MSDB;AttachDbFilename=aspcore-local.mdf;"
+      "ConnectionString": "Data Source=(LocalDb)\MSDB;AttachDbFilename=aspcore-local.mdf;"
     },
     "DebugMode": "enabled",
     "DBAccess": {
@@ -294,7 +299,7 @@ As an example, consider the task of overriding values in this JSON file:
       "Users": ["Vendor-1", "vendor-3"]
     },
     "FeatureFlags": {
-      "Preivew": [
+      "Preview": [
         {
           "newUI": "AllAccounts"
         },
@@ -324,8 +329,13 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
 
 1. Define the required substitution values in release definition or environment variables.
  
-   ![Release definition variables JSON variable substitution](_img/json-variables.png)
- 
+   | Name | Value | Secure | Scope |
+   | ---- | ----- | ------ | ----- |
+   | DebugMode | disabled | No | Release |
+   | Data.DefaultConnection.ConnectionString | Data Source=(prodDB)\\MSDB;AttachDbFilename=prod.mdf; | No | Release |
+   | DBAccess.Users.0 | Admin-3 | Yes | Release |
+   | FeatureFlags.Preview.1.NewWelcomeMessage | AllAccounts | No | Release |
+   
 1. Save the release definition and start a new release.
 
 1. After the transformation, the JSON will contain the following:
@@ -334,7 +344,7 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
    {
      "Data": {
        "DefaultConnection": {
-         "ConnectionString": "Data Source=(prodDB)\\MSDB;AttachDbFilename=prod.mdf;"
+         "ConnectionString": "Data Source=(prodDB)\MSDB;AttachDbFilename=prod.mdf;"
        },
        "DebugMode": "disabled",
        "DBAccess": {
@@ -342,12 +352,12 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
          "Users": ["Admin-3", "vendor-3"]
        },
        "FeatureFlags": {
-         "Preivew": [
+         "Preview": [
            {
              "newUI": "AllAccounts"
            },
            {
-             "CoolDialog": "AllAccounts"
+             "NewWelcomeMessage": "AllAccounts"
            }
          ]
        }
