@@ -41,11 +41,7 @@ To learn more about filtering using Tags, see [Add tags to work items to categor
 
 ## Filter your Kanban board 
 
-<b>Team Services | TFS 2017 | TFS 2015 </b>
-
 Depending on the size of your team and the number of stories in progress, your Kanban board can get a bit crowded. With filtering, you can selectively choose what cards display to focus on what's of interest in the moment. With parent work item filters, you can focus on one or more select features or epics.  
-
-For other filter options, see [Filter backlogs, boards, and queries ](../how-to/filter-backlog-or-board.md). 
 
 [!INCLUDE [temp](../_shared/feature-availability-simple.md)]
 
@@ -99,13 +95,13 @@ To filter the Kanban board, first customize the board settings so that the cards
 
 For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;you add those fields to show on the cards. For details, see [Customize cards](../customize/customize-cards.md).  
 
-![Kanban board, customize card fields](_img/filter-kb-card-field-settings.png)
+![Kanban board, customize card fields](../kanban/_img/filter-kb-card-field-settings.png)
 
 The filter function displays work items based on any visible/displayed column or field, including tags, based on the keyword that you enter. 
 
 For example, here we filter the backlog to only show items that include 'Web' in any one of the displayed column fields. 
 
-![Kanban board, Filter using keyword search](_img/filter-kb-filter-text-web.png)
+![Kanban board, Filter using keyword search](../kanban/_img/filter-kb-filter-text-web.png)
 
 >[!TIP]  
 >Type <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">f</span> to move your cursor to the filter box. To move the focus up or down within a column, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows.    
@@ -126,7 +122,7 @@ You can filter by select field values using the Kanban board for your product ba
 
 To start filtering, click the ![Kanban filter icon](../_img/icons/kanban-filter-icon.png) Kanban board filter icon. 
 
-<img src="_img/filter-kb-choose-filter.png" alt="Enable kanban field-based filtering" style="border: 1px solid #CCCCCC;" />  
+<img src="../kanban/_img/filter-kb-choose-filter.png" alt="Enable kanban field-based filtering" style="border: 1px solid #CCCCCC;" />  
 
 Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated  as follows: 
 - **Assigned To**: All users who are currently assigned to work items on the board plus Unassigned  
@@ -137,7 +133,7 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 
 For example, here we filter for all items assigned to Jamal and Raisa. 
 
-<img src="_img/filter-kb-filters-chosen.png" alt="Kanban board, Filter on assignment field" style="border: 1px solid #CCCCCC;" />  
+<img src="../kanban/_img/filter-kb-filters-chosen.png" alt="Kanban board, Filter on assignment field" style="border: 1px solid #CCCCCC;" />  
 
 Filters remain in place until you explicitly clear them by clicking <span style="color:blue">Clear filters</span>.   When you refresh your Kanban board or log in from another browser, filters remain set to your previous values. 
 
@@ -156,22 +152,22 @@ You can use this feature only when you've created features or epics and linked t
 >[!NOTE]  
 >The **Filter by parent**  feature doesn't support filtering of parent work items of the same work item type. For example, you can't filter the Stories backlog by specifying user stories that are parents of nested user stories.     
 
-To start filtering, click the ![Kanban filter icon](../_img/icons/kanban-filter-icon.png) Kanban board filter icon. Choose one or more values from the multi-select drop-down menu for the Parent Work Item. These values are derived from the [Features](kanban-epics-features-stories.md) you've defined.  
+To start filtering, click the ![Kanban filter icon](../_img/icons/kanban-filter-icon.png) Kanban board filter icon. Choose one or more values from the multi-select drop-down menu for the Parent Work Item. These values are derived from the [Features](../kanban/kanban-epics-features-stories.md) you've defined.  
 
 Here, we choose two features on which to filter the board.  
 
-<img src="_img/filter-kb-choose-parent-work-items.png" alt="Kanban board, Filter on parent work items" style="border: 1px solid #CCCCCC;" />  
+<img src="../kanban/_img/filter-kb-choose-parent-work-items.png" alt="Kanban board, Filter on parent work items" style="border: 1px solid #CCCCCC;" />  
 
 The final board displays just those stories linked as child work items to the selected features.
 
 ## Related notes  
 - [Tags](../track/add-tags-to-work-items.md) 
 - [Managed queries](../track/using-queries.md)  
-- [Set column options](../how-to/set-column-options.md)  
+- [Set column options](set-column-options.md)  
 - [Customize cards](../customize/customize-cards.md)
 
 <a id="filter-logic"></a>
-## Filter logic    
+### Filter logic    
 Work item cards are filtered based on the assignments made in the following order and logic: 
  
 1. **Assigned to**:  Show all cards that are assigned to user 1 ```OR``` user 2  
