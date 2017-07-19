@@ -20,8 +20,8 @@ in this early stage, a few things have to be done manually at this point - and t
 with the returned data. This documentation will show you how to do both.
 
 The following topics describe how to build an extension and a widet extension:  
-- [Overview of extensions for Visual Studio Team Services](../../../integrate/extensions/get-started/node.md)  
-- [Add a dashboard widget](../../../integrate/extensions/develop/add-dashboard-widget.md)  
+- [Overview of extensions for Visual Studio Team Services](../../integrate/extensions/get-started/node.md)  
+- [Add a dashboard widget](../../integrate/extensions/develop/add-dashboard-widget.md)  
  
 For the purposes of this example we'll use the open source C3 charting library which sits on top of the D3 graphics library.
 
@@ -242,7 +242,7 @@ put the finishing touches on the widget and see what it looks like.
 
 **Add an extension manifest**
 
-For detailed information on extension manifests for widgets, see  can be found [Add a dashboard widget](../../../integrate/extensions/develop/add-dashboard-widget.md).
+For detailed information on extension manifests for widgets, see  can be found [Add a dashboard widget](../../integrate/extensions/develop/add-dashboard-widget.md).
 
 Add a file called **vss-extension.json** to the root of the project. Add the following to this file:
 
@@ -328,7 +328,7 @@ Add a file called **vss-extension.json** to the root of the project. Add the fol
 ```
 
 Remember to replace the author value denoted by [your publisher name here] with your publisher name. 
-For details on extension manifests, see [Extension manifest reference](../../../integrate/extensions/develop/manifest.md).
+For details on extension manifests, see [Extension manifest reference](../../integrate/extensions/develop/manifest.md).
 
 There are a few key things to note here:
 
@@ -337,7 +337,7 @@ There are a few key things to note here:
 * The supported size is 330x330 which is a 2x2 sized tile (160+160+10 pixels for spacing)
 
 At this point the extension can be compiled, deployed, installed and executed following the steps described in 
-[Write your first extension for Team Services](../../../integrate/extensions/get-started/node.md) starting from the Create your publisher section. 
+[Write your first extension for Team Services](../../integrate/extensions/get-started/node.md) starting from the Create your publisher section. 
 
 You should end up with a widget that looks like this:
 

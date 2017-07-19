@@ -104,5 +104,5 @@
 
 # [How to get help](support/help.md)
 
-# [Visual Studio extensions](ide/overview.md)
+# [Visual Studio extensions](https://visualstudio/extend/ide/overview.md)
 
