@@ -16,7 +16,7 @@ ms.date: 07/12/2017
 
 [!INCLUDE [temp](../_shared/process-feature-availability.md)]
 
-In Team Services, you customize your team project through a process. (You configure your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../customize/customize-work.md#teams).) A process defines the building blocks of the work tracking system. Whenever you create a team project, you select the process you want your team project to use. 
+In Team Services, you customize your team project through a process. (You configure your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../about-teams-and-settings.md).) A process defines the building blocks of the work tracking system. Whenever you create a team project, you select the process you want your team project to use. 
 
 Team Services supports two types of processes. 
 
@@ -168,7 +168,7 @@ To rename a process, open the &hellip; context menu for the process and choose *
 
 <a id="process-rest-api">  </a>
 ### Programmatically query for processes 
-You can determine the processes defined for an account using the REST API: [Processes](../../integrate/api/tfs/processes.md).
+You can determine the processes defined for an account using the REST API: [Processes](https://www.visualstudio.com/docs/integrate/api/tfs/processes).
 
 
 [!INCLUDE [temp](../_shared/help-support-shared.md)]

@@ -356,4 +356,4 @@ You use the **witadmin indexfield** command to enable or disable indexing for a 
 <div style="clear:left;font-size:100%">
 </div>
 
-[!INCLUDE [temp](../_shared/switch-team-context-work.md)]
+

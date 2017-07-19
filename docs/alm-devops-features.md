@@ -171,7 +171,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Filter your backlog</b></p>
 <p>Use **Show/Hide in progress** to only show or hide items which have moved from the new or proposed state to active or in progress state.     </p>
-<p>Additionally, you can list a subset of items based on keywords [keywords](work/backlogs/define-features-epics.md#filter) or [tags](work/track/add-tags-to-work-items.md). </p>
+<p>Additionally, you can list a subset of items based on keywords [keywords](work/how-to/filter-backlog-or-board.md) or [tags](work/track/add-tags-to-work-items.md). </p>
 ![Filter based on keywords or tags](_img/alm-feature-filter-backlog.png)  
  <br/>
 
@@ -485,7 +485,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Drag-n-drop</b></p>
-<p>[Drag and drop items](work/kanban/kanban-basics.md#reorder-cards) on the Kanban board to update status and to reorder and reparent items.  </p>
+<p>[Drag and drop items](work/kanban/kanban-quickstart.md#reorder-cards) on the Kanban board to update status and to reorder and reparent items.  </p>
 
 <p><b>Add task checklists</b></p>
 <p>Add and mark tasks as done with [lightweight tasks checklists](work/kanban/add-task-checklists.md). </p>
@@ -493,7 +493,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Filter</b></p>
-<p>[Use key words to filter and find items](work/kanban/filter-kanban-board.md#text-filter) on the Kanban board.</p>
+<p>[Use key words to filter and find items](work/how-to/filter-backlog-or-board.md#text-filter) on the Kanban board.</p>
 
 ![Kanban board filter](_img/alm-feature-kanban-filter.png)  
 <br/>
@@ -524,7 +524,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Support your team to be in sync by [specifying requirements to fulfill prior to handoff of items to a downstream work stage](work/kanban/definition-of-done.md).</p>  
 
 <p><b>Filter by field values or parent work items</b></p>
-<p>Click the ![Kanban field filter icon](work/_img/icons/kanban-filter-icon.png) field filter icon to [filter the board based on assignment, iteration, work item type, or tags](work/kanban/filter-kanban-board.md#field-filter). </p>
+<p>Click the ![Kanban field filter icon](work/_img/icons/kanban-filter-icon.png) field filter icon to [filter the board based on assignment, iteration, work item type, or tags](work/how-to/filter-backlog-or-board.md#field-filter). </p>
 ![Kanban board filter](_img/alm-feature-kanban-filter-fields.png)  
 <br/>
 
@@ -553,7 +553,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Add and mark user stories and other work items as done from your [Kanban features or epics boards](work/kanban/kanban-epics-features-stories.md). </p>
 
 <p><b>Set team's card reorder preference </b></p>
-<p>You can preserve the backlog priority when you move a card to a new column by setting your team's [Kanban board card reordering setting](work/kanban/kanban-basics.md#card-reorder-setting).  </p>
+<p>You can preserve the backlog priority when you move a card to a new column by setting your team's [Kanban board card reordering setting](work/customize/reorder-cards.md).  </p>
 
 <p><b>Enable/disable card annotations</b></p>
 <p>Turn on or off [task checklists or inline tests](./work/customize/customize-cards.md#annotations) for your Kanban board. </p>
@@ -2144,7 +2144,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team project admin context</b></p>
-<p>Open the admin context to [add teams](work/scale/multiple-teams.md), [configure areas and iterations](work/customize/modify-areas-iterations.md), and [manage permissions](setup-admin/tfs/admin/change-permission-levels.md). From any team project hub, click the ![gear icon](work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
+<p>Open the admin context to [add teams](work/scale/multiple-teams.md), [configure areas](work/customize/set-area-paths.md) and [iterations](work/customize/set-iteration-paths-sprints.md), and [manage permissions](setup-admin/tfs/admin/change-permission-levels.md). From any team project hub, click the ![gear icon](work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
 ![Admin context](_img/alm-feature-admin-context.png)  
 <br/>
 
@@ -2294,7 +2294,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
 <ul>
-<li>[Area and iteration paths](work/customize/modify-areas-iterations.md#set-permissions)</li>
+<li>[Area and iteration paths](work/how-to/set-permissions-access-work-tracking)</li>
 <li>[Query permissions](work/track/set-query-permissions.md)</li>
 <li>[Work item tags](setup-admin/permissions.md#tags)</li>
 <li>[Move work items to another team project](work/backlogs/remove-delete-work-items.md#move-delete-permissions)</li>

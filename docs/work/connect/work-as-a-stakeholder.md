@@ -114,7 +114,7 @@ Only account owners or members of the [Team Foundation Server Administration gro
 2.  Enter your credentials. If you aren't able to sign in, you need to be added as a member to a team project and added to Stakeholder access. 
 
 
-[!INCLUDE [temp](../_shared/switch-team-context-work.md)]  
+
 
 
 <a id="create-work-item">  </a> 

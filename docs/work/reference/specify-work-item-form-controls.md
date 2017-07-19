@@ -221,7 +221,7 @@ For more information, see [Add the Attachments control](add-the-attachments-cont
 ## Related notes
 
 <a name="custom"></a> 
-In addition to the built-in controls provided, you may find additional controls you can use from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads). Or, you can create your own control. See [Extend the work item form](/docs/extend/develop/add-workitem-extension). 
+In addition to the built-in controls provided, you may find additional controls you can use from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads). Or, you can create your own control. See [Extend the work item form](/team-services/extend/develop/add-workitem-extension). 
 
 
 -  [Control XML element reference](control-xml-element-reference.md)    

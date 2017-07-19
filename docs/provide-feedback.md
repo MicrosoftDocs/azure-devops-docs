@@ -43,7 +43,6 @@ Here are the quick-access links to use:
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">What's new</p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:2px">[Features timeline pages](https://www.visualstudio.com/en-us/news/release-archive-vso)</li> 
- <li style="margin-bottom:2px">[Content updates](./content-updates/updates-2017.md)</li>
  <li style="margin-bottom:2px">[FAQs](https://www.visualstudio.com/support/visual-studio-faq-vs)</li>
  <li style="margin-bottom:2px">[Feature matrix](https://www.visualstudio.com/team-services/compare-features/)</li>
  <li style="margin-bottom:2px">[Enable preview features](collaborate/preview-features.md)</li>
@@ -143,8 +142,6 @@ To learn more about reporting a problem, see [Report a problem with Visual Studi
 
 Every three weeks or so we update Team Services and provide a summary of new and updated features through our [Product features timeline](https://www.visualstudio.com/news/release-archive-vso). 
 
-We also publish links to those topics we've recently published or significantly updated through our [Content updates](./content-updates/updates-2016.md) page. 
-  
 <a id="platform-version">  </a>
 ## Platforms and version support 
 

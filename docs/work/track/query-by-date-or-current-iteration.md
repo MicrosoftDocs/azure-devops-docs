@@ -265,7 +265,7 @@ To query for items based on text entered in the History field, see
 
 <a id="team_view">  </a>
 
-[!INCLUDE [temp](../_shared/switch-team-context-work.md)]  
+  
  
 <a id="current_sprint_restrict"> </a> 
 
@@ -283,6 +283,6 @@ You can use the **@CurrentIteration** macro in a query from the following client
   </li>
 </ul>
 
-An error occurs if you open a query that contains the **@CurrentIteration** macro in earlier versions of Visual Studio, or from Excel or Project. Also, the macro cannot be used when [copying or cloning test suites and test cases](https://msdn.microsoft.com/library/hh543843.aspx), [defining alerts](alerts-and-notifications.md), or with [REST APIs](/docs/integrate/get-started/rest/basics).
+An error occurs if you open a query that contains the **@CurrentIteration** macro in earlier versions of Visual Studio, or from Excel or Project. Also, the macro cannot be used when [copying or cloning test suites and test cases](https://msdn.microsoft.com/library/hh543843.aspx), [defining alerts](alerts-and-notifications.md), or with [REST APIs](/team-services/integrate/get-started/rest/basics).
 
  

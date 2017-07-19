@@ -34,9 +34,9 @@ You navigate to your team context from the top navigation bar. The method change
 
 
 <div id="switch-context-team-services" class="tab-pane fade in active"> 
-<p>You can switch your team focus to a team project or team you've recently viewed from the team project/team drop-down menu. If you don't see the team or team project you want, click **Browse&hellip;** to [browse all team projects and teams](/docs/connect/account-home-pages). To access your [account hub](/docs/connect/account-home-pages), click the ![Team Services icon](../../_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page.  </p>
+<p>You can switch your team focus to a team project or team you've recently viewed from the team project/team drop-down menu. If you don't see the team or team project you want, click **Browse&hellip;** to [browse all team projects and teams](/team-services/connect/account-home-pages). To access your [account hub](/team-services/connect/account-home-pages), click the ![Team Services icon](../../_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page.  </p>
 
-<p>To go directly to the [project vision and status page](/docs/collaborate/project-vision-status), choose the project home icon from the drop-down menu, for example, ![project home icon](../../_shared/_img/work-web-portal-home-page-icon.png).</p> 
+<p>To go directly to the [project vision and status page](/team-services/collaborate/project-vision-status), choose the project home icon from the drop-down menu, for example, ![project home icon](../../_shared/_img/work-web-portal-home-page-icon.png).</p> 
 
 <img src="../../_shared/_img/work-web-portal-ts-switch-team-focus.png" alt="Choose another team from the team project menu" style="border: 1px solid #CCCCCC;" /> 
 
@@ -44,11 +44,11 @@ You navigate to your team context from the top navigation bar. The method change
 
 <div id="switch-context-tfs-2017-1" class="tab-pane fade"> 
 
-<p>To switch your team focus to a team project or team you've recently viewed, hover over the ![Team Services icon](/docs/_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon and choose from the drop-down menu of options. If you don't see the team or team project you want, choose **Browse&hellip;** to [browse all team projects and teams](/docs/connect/account-home-pages). Your selection will open the [project vision and status page](/docs/collaborate/project-vision-status) for the team project.</p> 
+<p>To switch your team focus to a team project or team you've recently viewed, hover over the ![Team Services icon](/team-services/_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon and choose from the drop-down menu of options. If you don't see the team or team project you want, choose **Browse&hellip;** to [browse all team projects and teams](/team-services/connect/account-home-pages). Your selection will open the [project vision and status page](/team-services/collaborate/project-vision-status) for the team project.</p> 
 
-<p>To access your [account hub](/docs/connect/account-home-pages), click the ![Team Services icon](../../_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page.  </p>
+<p>To access your [account hub](/team-services/connect/account-home-pages), click the ![Team Services icon](../../_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page.  </p>
 
-<p>To go directly to the [project vision and status page](/docs/collaborate/project-vision-status), choose the project home icon from the drop-down menu, for example, ![project home icon](../../_shared/_img/work-web-portal-home-page-icon.png).</p> 
+<p>To go directly to the [project vision and status page](/team-services/collaborate/project-vision-status), choose the project home icon from the drop-down menu, for example, ![project home icon](../../_shared/_img/work-web-portal-home-page-icon.png).</p> 
 
 <img src="../../_shared/_img/work-web-portal-tfs-2017-1-switch-team-focus.png" alt="Choose another team from the team project menu" style="border: 1px solid #CCCCCC;" /> 
 </div>

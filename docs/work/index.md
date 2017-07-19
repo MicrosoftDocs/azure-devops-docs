@@ -29,7 +29,7 @@ Start tracking work by adding work items, creating your backlog, or scheduling s
 - [Add work items](backlogs/add-work-items.md)
 - [Create your backlog](backlogs/create-your-backlog.md)  
 - [Schedule sprints](scrum/define-sprints.md)
-- [Kanban](./kanban/kanban-basics.md)  
+- [Kanban](kanban/kanban-quickstart.md)  
 - [Drive Git development](backlogs/connect-work-items-to-git-dev-ops.md)   
 - [Storyboard your ideas](office/storyboard-your-ideas-using-powerpoint.md)   
 
@@ -41,7 +41,7 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 > [!div class="mx-tdBreakAll"]  
 > |Manage work items and backlogs  |Scrum   |   Kanban   |  
 > |-------------|----------|---------|  
-> |- [Define features & epics](./backlogs/define-features-epics.md)<br/>- [Organize backlogs](./backlogs/organize-backlog.md)<br/>- [Manage bugs](./backlogs/manage-bugs.md)<br/>- [Manage issues](./backlogs/manage-issues-impediments.md)<br/>- [Use templates](productivity/work-item-template.md) <br/>- [Move/change type](backlogs/remove-delete-work-items.md)<br/>- [Delete items](backlogs/remove-delete-work-items.md) <br/>- [Copy/clone work items](backlogs/copy-clone-work-items.md)<br/>- [Link work items](backlogs/add-link.md)<br/>- [Bulk modify (Web)](./backlogs/bulk-modify-work-items.md)<br/>- [Bulk add/modify (Excel)](office/bulk-add-modify-work-items-excel.md) >   |- [Plan sprints](./scrum/sprint-planning.md)<br/>- [Plan capacity](./scale/capacity-planning.md)<br/>- [Add and update tasks](./scrum/task-board.md)<br/>- [Sprint burndown](./scrum/sprint-burndown.md)<br/>- [Forecast](./scrum/forecast.md)<br/>- [Velocity](../report/guidance/team-velocity.md)  | - [Kanban basics](kanban-basics.md)<br/>- [Task checklists](./kanban/add-task-checklists.md)<br/>- [Epics & features](./kanban/kanban-epics-features-stories.md)<br/>- [Add inline tests](./kanban/add-run-update-tests.md)<br/>- [Cumulative flow](../report/guidance/cumulative-flow.md)  |
+> |- [Define features & epics](./backlogs/define-features-epics.md)<br/>- [Organize backlogs](./backlogs/organize-backlog.md)<br/>- [Manage bugs](./backlogs/manage-bugs.md)<br/>- [Manage issues](./backlogs/manage-issues-impediments.md)<br/>- [Use templates](productivity/work-item-template.md) <br/>- [Move/change type](backlogs/remove-delete-work-items.md)<br/>- [Delete items](backlogs/remove-delete-work-items.md) <br/>- [Copy/clone work items](backlogs/copy-clone-work-items.md)<br/>- [Link work items](backlogs/add-link.md)<br/>- [Bulk modify (Web)](./backlogs/bulk-modify-work-items.md)<br/>- [Bulk add/modify (Excel)](office/bulk-add-modify-work-items-excel.md) >   |- [Plan sprints](./scrum/sprint-planning.md)<br/>- [Plan capacity](./scale/capacity-planning.md)<br/>- [Add and update tasks](./scrum/task-board.md)<br/>- [Sprint burndown](./scrum/sprint-burndown.md)<br/>- [Forecast](./scrum/forecast.md)<br/>- [Velocity](../report/guidance/team-velocity.md)  | - [Kanban basics](./kanban/kanban-basics.md)<br/>- [Task checklists](./kanban/add-task-checklists.md)<br/>- [Epics & features](./kanban/kanban-epics-features-stories.md)<br/>- [Add inline tests](./kanban/add-run-update-tests.md)<br/>- [Cumulative flow](../report/guidance/cumulative-flow.md)  |
 
 <hr/> 
 
@@ -177,15 +177,15 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 
 <div style="float:left;width:145px;margin:3px;font-size:90%">
 <p style="font-weight:bold;margin-bottom:2px;text-align:center;">Configure your project</p> 
-- [Define area paths](/docs/work/customize/set-area-paths)  
-- [Define iteration paths](/docs/work/customize/set-iteration-paths-sprints)  
+- [Define area paths](/team-services/work/customize/set-area-paths)  
+- [Define iteration paths](/team-services/work/customize/set-iteration-paths-sprints)  
 <br/>
 <p style="font-weight:bold;margin-bottom:2px;text-align:center;">Administrate</p>
 - [Manage permissions & access](how-to/set-permissions-access-work-tracking.md)  
 - [Change access levels](connect/change-access-levels.md)  
 - [Manage new form rollout](customize/manage-new-form-rollout.md)  
-- [Customize work tracking](/docs/work/customize/customize-work)  
-- [TFS-Project Server integration](/docs/work/office/sync-ps-tfs)    
+- [Customize work tracking](/team-services/work/customize/customize-work)  
+- [TFS-Project Server integration](/team-services/work/office/sync-ps-tfs)    
 </div>
 
 
