@@ -135,7 +135,7 @@ For more details, see [Task phases](../concepts/process/phases.md).
 
 ### How do I programmatically create a release definition?
 
-[Release Management REST API](../../../integrate/api/rm/overview.md)
+[Release Management REST API](../../integrate/api/rm/overview.md)
 
 [!INCLUDE [qa-versions](../_shared/qa-versions.md)]
 
