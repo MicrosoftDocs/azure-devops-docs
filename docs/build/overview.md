@@ -140,7 +140,7 @@ for your entire team. Organize shared assets such as [service endpoints](concept
  <li>Extensions</li-->
  <li>[Agent repo](https://github.com/Microsoft/vsts-agent)</li>
  <li>[Tasks repo](https://github.com/Microsoft/vsts-tasks)</li>
- <li>[REST APIs](../../integrate/api/rm/overview.md)</li>
+ <li>[REST APIs](../../integrate/overview.md)</li>
 </ul>
 </div>
 

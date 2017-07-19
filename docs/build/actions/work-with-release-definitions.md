@@ -90,7 +90,7 @@ For more details, see [Environment templates in Release Management](../concepts/
 
 ### Use the REST API
 
-Create release definitions using the [Release Management REST API](../../integrate/api/rm/overview.md).
+Create release definitions using the [Release Management REST API](../../integrate/overview.md).
 
 <a name="add-envir"></a>
 ### Add more environments
@@ -117,7 +117,7 @@ target server(s) or locations where you will deploy your app.
 After you have created and configured your environments,
 [add tasks to them](#add-tasks).
 
->You can add environments using the [Release Management REST API](../../integrate/api/rm/overview.md).
+>You can add environments using the [Release Management REST API](../../integrate/overview.md).
 
 <h3 id="clone-environment">Clone an environment</h3>
 
@@ -171,7 +171,7 @@ For more details, see [Environments](../concepts/definitions/release/environment
 and [Phases in Build and Release Management](../concepts/process/phases.md).
 
 >You can add tasks to an environment using the
-[Release Management REST API](../../integrate/api/rm/overview.md).
+[Release Management REST API](../../integrate/overview.md).
 
 <h3 id="task-groups">Use task groups</h3>
 
@@ -230,7 +230,7 @@ definition settings, see:
 
 ### How do I programmatically create a release definition?
 
-[Release Management REST API](../../integrate/api/rm/overview.md)
+[Release Management REST API](../../integrate/overview.md)
 
 [!INCLUDE [qa-agents](../_shared/qa-agents.md)]
 
