@@ -1,43 +1,53 @@
 {
   "build": {
-    "content":
-      [
-        {
-          "files": ["**/**.md","**/**.yml"],
-          "exclude": ["**/obj/**", "**/_shared/**.md","_shared/**.md","**/_shared-all/**.md","_shared-all/**.md","**/_data/**.md","_data/**.md","**/_readme/**","_readme/**"],
-          "src": "docs/redirection"
-        },
-        {
-          "files": ["**/**.md","**/**.yml"],
-          "exclude": ["**/obj/**", "**/_shared/**.md","_shared/**.md","**/_shared-all/**.md","_shared-all/**.md","**/_data/**.md","_data/**.md","**/_readme/**","_readme/**","**/**/**/_img/*.htm"],
-          "src": "docs"
-        },
-{
-          "files": ["**/**.md","**/**.yml"],
-          "exclude": ["**/obj/**", "**/_shared/**.md","_shared/**.md","**/_shared-all/**.md","_shared-all/**.md","**/_data/**.md","_data/**.md","**/_readme/**","_readme/**"],
-          "src": "extend/redirection",
-          "dest": "extend"    
-        },
-        {
-          "files": ["**/**.md","**/**.yml"],
-          "exclude": ["**/obj/**", "**/_shared/**.md","_shared/**.md","**/_shared-all/**.md","_shared-all/**.md","**/_data/**.md","_data/**.md","**/_readme/**","_readme/**","**/**/**/_img/*.htm"],
-          "src": "extend",
-          "dest": "extend"
-        },
-        {
-          "files": ["**/**.md","**/**.yml"],
-          "exclude": ["**/obj/**", "**/_shared/**.md","_shared/**.md","**/_shared-all/**.md","_shared-all/**.md","**/_data/**.md","_data/**.md","**/_readme/**","_readme/**"],
-          "src": "integrate/redirection",
-          "dest": "integrate"          
-        },
-        {
-          "files": ["**/**.md","**/**.yml"],
-          "exclude": ["**/obj/**", "**/_shared/**.md","_shared/**.md","**/_shared-all/**.md","_shared-all/**.md","**/_data/**.md","_data/**.md","**/_readme/**","_readme/**"],
-          "src": "integrate",
-          "dest": "integrate"
-        }
-        
-      ],
+    "content": [
+      {
+        "files": [ "**/**.md", "**/**.yml" ],
+        "exclude": [ "**/obj/**", "**/_shared/**.md", "_shared/**.md", "**/_shared-all/**.md", "_shared-all/**.md", "**/_data/**.md", "_data/**.md", "**/_readme/**", "_readme/**" ],
+        "src": "docs/redirection"
+      },
+      {
+        "files": [ "**/**.md", "**/**.yml" ],
+        "exclude": [ "**/obj/**", "**/_shared/**.md", "_shared/**.md", "**/_shared-all/**.md", "_shared-all/**.md", "**/_data/**.md", "_data/**.md", "**/_readme/**", "_readme/**", "**/**/**/_img/*.htm" ],
+        "src": "docs"
+      },
+      {
+        "files": [ "**/**.md", "**/**.yml" ],
+        "exclude": [ "**/obj/**", "**/_shared/**.md", "_shared/**.md", "**/_shared-all/**.md", "_shared-all/**.md", "**/_data/**.md", "_data/**.md", "**/_readme/**", "_readme/**" ],
+        "src": "extend/redirection",
+        "dest": "extend"
+      },
+      {
+        "files": [ "**/**.md", "**/**.yml" ],
+        "exclude": [ "**/obj/**", "**/_shared/**.md", "_shared/**.md", "**/_shared-all/**.md", "_shared-all/**.md", "**/_data/**.md", "_data/**.md", "**/_readme/**", "_readme/**", "**/**/**/_img/*.htm" ],
+        "src": "extend",
+        "dest": "extend"
+      },
+      {
+        "files": [ "**/**.md", "**/**.yml" ],
+        "exclude": [ "**/obj/**", "**/_shared/**.md", "_shared/**.md", "**/_shared-all/**.md", "_shared-all/**.md", "**/_data/**.md", "_data/**.md", "**/_readme/**", "_readme/**" ],
+        "src": "integrate/redirection",
+        "dest": "integrate"
+      },
+      {
+        "files": [ "**/**.md", "**/**.yml" ],
+        "exclude": [ "**/obj/**", "**/_shared/**.md", "_shared/**.md", "**/_shared-all/**.md", "_shared-all/**.md", "**/_data/**.md", "_data/**.md", "**/_readme/**", "_readme/**" ],
+        "src": "integrate",
+        "dest": "integrate"
+      },
+      {
+        "files": [
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "**/_themes/**"
+        ],
+        "src": "breadcrumb",
+        "dest": "breadcrumb"
+      }
+    ],
     "resource": [
         {
           "files": [ "**/_img/**", "**/**/_img/**", "**/**/_shared/**", "**/_img-shared-all/**", "**/**/_img-shared-all/**", "**/*.json", "**/_shared/**.md", "**/*.gif" ],
