@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Search your code
 
-**Team Services | TFS 2015 | TFS 2017**
+**| Team Services |**
 
 By using Code Search you can:
 
@@ -92,12 +92,12 @@ For more details, see [Install an extension](../../marketplace/get-vsts-extensio
 
    * See also [full details of the search syntax](advanced-search.md#syntaxdetails). 
 
-4. Widen your search to all projects, or narrow it to specific areas and types of code,
+1. Widen your search to all projects, or narrow it to specific areas and types of code,
    by selecting from the drop-down lists at the top of the page.
 
    ![Use drop-down lists to widen or narrow your search](_img/get-started/select-projects.png)
 
-5. Use the tabs in the results page to view the history of the file and to compare versions of the file.
+1. Use the tabs in the results page to view the history of the file and to compare versions of the file.
 
    ![Use tabs to view history and compare files](_img/get-started/compare-tab.png)
 
@@ -107,9 +107,9 @@ For more details, see [Install an extension](../../marketplace/get-vsts-extensio
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab.
 
-6. Choose the filename link at the top of this column to open the file in a new Code Explorer window.
+1. Choose the filename link at the top of this column to open the file in a new Code Explorer window.
 
-![Open the file in Code Explorer](_img/get-started/open-in-code-explorer.png)
+   ![Open the file in Code Explorer](_img/get-started/open-in-code-explorer.png)
  
 ## Next steps
 
