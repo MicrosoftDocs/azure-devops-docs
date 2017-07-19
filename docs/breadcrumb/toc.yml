@@ -1,80 +1,80 @@
 - name: Team Services and TFS 
-  tocHref:/team-services/
+  tocHref: /team-services/
   topicHref: /team-services/index
   items: 
   - name: Get started
-    tocHref:/team-services/
+    tocHref: /team-services/
     topicHref: /team-services/index
   - name: Agile tools/Work
-    tocHref:/team-services/work/
+    tocHref: /team-services/work/
     topicHref: /team-services/work/index
   - name: Build and Release
-    tocHref:/team-services/build/
+    tocHref: /team-services/build/
     topicHref: /team-services/build/overview
   - name: Charts, Dashboards and Widgets
-    tocHref:/team-services/report/
+    tocHref: /team-services/report/
     topicHref: /team-services/report/index
   - name: SQL, Excel, and SharePoint (TFS)
-    tocHref:/team-services/report/sql-reports
+    tocHref: /team-services/report/sql-reports
     topicHref: /team-services/report/sql-reports/reporting-services-reports
   - name: Git
-    tocHref:/team-services/git/
+    tocHref: /team-services/git/
     topicHref: /team-services/git/overview
   - name: Package Management
-    tocHref:/team-services/package/
+    tocHref: /team-services/package/
     topicHref: /team-services/package/overview
   - name: Test
-    tocHref:/team-services/test/
+    tocHref: /team-services/test/
     topicHref: /team-services/test/index
   - name: TFVC
-    tocHref:/team-services/tfvc/
+    tocHref: /team-services/tfvc/
     topicHref: /team-services/tfvc/overview
   - name: Team Services Account Management 
-    tocHref:/team-services/setup-admin/team-services/
+    tocHref: /team-services/setup-admin/team-services/
     topicHref: /team-services/setup-admin/team-services/overview
   - name: TFS Administration
-    tocHref:/team-services/setup-admin/tfs/
+    tocHref: /team-services/setup-admin/tfs/
     topicHref: /team-services/setup-admin/get-started
   - name: Customize work tracking
-    tocHref:/team-services/work/customize
+    tocHref: /team-services/work/customize
     topicHref: /team-services/work/customize/customize-work
   - name: TFS-Project Server integration
-    tocHref:/team-services/work/tfs-ps-sync 
+    tocHref: /team-services/work/tfs-ps-sync 
     topicHref: /team-services/work/tfs-ps-sync/synchronize-tfs-project-server 
 - name: Marketplace and Billing
-  tocHref:/team-services/marketplace/
+  tocHref: /team-services/marketplace/
   topicHref: /team-services/marketplace/overview
   items: 
   - name: Marketplace and Billing
-    tocHref:/team-services/marketplace/
+    tocHref: /team-services/marketplace/
     topicHref: /team-services/marketplace/overview
   - name: Service hooks
-    tocHref:/team-services/marketplace/integrate/service-hooks/
+    tocHref: /team-services/marketplace/integrate/service-hooks/
     topicHref: /team-services/marketplace/integrate/service-hooks/get-started
 - name: Integrate
-  tocHref:/team-services/integrate/
+  tocHref: /team-services/integrate/
   topicHref: /team-services/integrate/overview
   items: 
   - name: Integrate overview
-    tocHref:/team-services/integrate/
+    tocHref: /team-services/integrate/
     topicHref: /team-services/integrate/overview
   - name: Service hook integration
-    tocHref:/team-services/marketplace/integrate/service-hooks/
+    tocHref: /team-services/marketplace/integrate/service-hooks/
     topicHref: /team-services/marketplace/integrate/service-hooks/get-started
   - name: Visual Studio Extensions
-    tocHref:/team-services/integrate/ide/extensions/
+    tocHref: /team-services/integrate/ide/extensions/
     topicHref: /team-services/integrate/ide/extensions/overview
 - name: Visual Studio subscriptions
-  tocHref:/team-services/marketplace/vs-subscriptions/
+  tocHref: /team-services/marketplace/vs-subscriptions/
   topicHref: /team-services/marketplace/vs-subscriptions/buy-vs-subscriptions
   items: 
   - name: Visual Studio Subscriptions
-    tocHref:/team-services/marketplace/vs-subscriptions/
+    tocHref: /team-services/marketplace/vs-subscriptions/
     topicHref: /team-services/marketplace/vs-subscriptions/buy-vs-subscriptions
 - name: Extend
-  tocHref:/team-services/extend/
+  tocHref: /team-services/extend/
   topicHref: /team-services/extend/overview
   items: 
   - name: Extend overview
-    tocHref:/team-services/extend/
+    tocHref: /team-services/extend/
     topicHref: /team-services/extend/overview
