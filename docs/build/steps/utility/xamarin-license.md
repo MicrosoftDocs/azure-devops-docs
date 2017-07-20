@@ -23,57 +23,16 @@ ms.date: 08/10/2016
 
 None
 
-
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Action</td>
-<td>
-Select
-<ul>
-<li>**Activate** for the first instance of this build step, which should come before any instances of the Xamarin.Android step or the Xamarin.iOS steps.</li>
-<li>**Deactivate** for the second instance of this build step, which should come after all instances of the Xamarin.Android and Xamarin.iOS steps. You should also select **Always run** under **Control options** for the last instance of the Xamarin license step.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Email</td>
-<td>
-Xamarin account email address.</td>
-</tr>
-<tr>
-<td>Password</td>
-<td>
-<p>Xamarin account password.</p>
-<blockquote><strong>Important: </strong> Use a [secret variable](../../define/variables.md) to avoid exposing this value.</blockquote>
-</td>
-</tr>
-<tr>
-<td>Xamarin Product</td>
-<td>
-Select the build step that you're running in this build definition, such as **Xamarin.Android** or **Xamarin.iOS**.
-</td>
-</tr>
-<tr>
-<th style="text-align: center" colspan="2">Advanced</th>
-</tr>
-<tr>
-<td>Timeout in Seconds</td>
-<td>
-Specify how long you want to allow the build step to wait for the activation or deactivation. 
-</td>
-</tr>
-
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
-</table>
-
+| Argument | Description |
+| -------- | ----------- |
+| Action | Select:<br /><br />**Activate** for the first instance of this build step, which should come before any instances of the Xamarin.Android step or the Xamarin.iOS steps.<br /><br />**Deactivate** for the second instance of this build step, which should come after all instances of the Xamarin.Android and Xamarin.iOS steps. You should also select **Always run** under **Control options** for the last instance of the Xamarin license step. |
+| Email | Xamarin account email address. |
+| Password | Xamarin account password.<br /><br />Use a [secret variable](../../define/variables.md) to avoid exposing this value. |
+| Xamarin Product | Select the build step that you're running in this build definition, such as **Xamarin.Android** or **Xamarin.iOS**. |
+| Advanced - Timeout in Seconds | Specify how long you want to allow the build step to wait for the activation or deactivation. |
+| [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] |
 
 ## Example 
 

@@ -21,34 +21,12 @@ DotNetFramework
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Script filename</td>
-<td>Specify the path to the script to you want to run. The path must be a fully qualified path or a valid path relative to the default working directory. In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../define/variables.md).
-</td>
-</tr>
-<tr>
-<td>Arguments</td>
-<td>Specify arguments to pass to the script. You can use ordinal or named parameters.
-</td>
-</tr>
-<tr>
-<th style="text-align: center" colspan="2">Advanced</th>
-</tr>
-<tr>
-<td>Working folder</td>
-<td>Specify the working directory in which you want to run the script. If you leave it empty, the working directory is the folder where the script is located.
-</td>
-</tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
-</table>
-
+| Argument | Description |
+| -------- | ----------- |
+| Script filename | Specify the path to the script to you want to run. The path must be a fully qualified path or a valid path relative to the default working directory. In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../define/variables.md). |
+| Arguments | Specify arguments to pass to the script. You can use ordinal or named parameters. |
+| Advanced - Working folder | Specify the working directory in which you want to run the script. If you leave it empty, the working directory is the folder where the script is located. |
+| [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] |
 
 ## Examples
 
@@ -70,18 +48,9 @@ Write-Host "Over and out."
 
 On the Build tab of a build definition, add this step:
 
-<table>
-   <tr>
-      <td>![](_img/powershell.png)<br/>**Utility: PowerShell**</td>
-      
-<td>
-<p>Run test.ps1.</p>
-<ul>
-<li>Script filename: ```test.ps1```</li>
-</ul>
-      </td>
-</tr>
-</table>
+| Task | Arguments |
+| ---- | --------- |
+| ![](_img/powershell.png)<br/>**Utility: PowerShell** | Run test.ps1.<br /><br />**Script filename**: `test.ps1` |
 
 ### Write a warning
 
