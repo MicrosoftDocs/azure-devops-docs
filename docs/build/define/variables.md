@@ -155,46 +155,13 @@ You can pass environment variables of the build machine into build steps. For ex
 
 The value depends on what caused the build.
 
-<table>
-    <thead>
-    <tr>
-        <th>If the build is triggered...</th>
-        <th>Then the Build.QueuedBy and Build.QueuedById values are based on...</th>
-        <th>Then the Build.RequestedFor and Build.RequestedForId values are based on...</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>In Git or TFVC by the [Continuous integration (CI) triggers](triggers.md)</td>
-        <td>The system identity (for example, `[DefaultCollection]\Project Collection Service Accounts`).</td>
-        <td>The person who pushed or checked in the changes.</td>
-    </tr>
-    <tr>
-        <td>
-            In Git or by a [branch policy build](../../git/branch-policies.md#require-the-pull-request-to-build).
-        </td>
-        <td>The system identity (for example, `[DefaultCollection]\Project Collection Service Accounts`).</td>
-        <td>The person who checked in the changes.</td>
-    </tr>
-    <tr>
-        <td>In TFVC by a [gated check-in trigger](triggers.md)</td>
-        <td>The person who checked in the changes.</td>
-        <td>The person who checked in the changes.</td>
-    </tr>
-    <tr>
-        <td>In Git or TFVC by the [Scheduled triggers](triggers.md)</td>
-        <td>The system identity (for example, `[DefaultCollection]\Project Collection Service Accounts`).</td>
-        <td>The system identity (for example, `[DefaultCollection]\Project Collection Service Accounts`).</td>
-    </tr>
-    <tr>
-        <td>Because you clicked the **Queue build** button</td>
-        <td>You</td>
-        <td>You</td>
-    </tr>
-</tbody>
-</table>
-
-
+| If the build is triggered... | Then the Build.QueuedBy and Build.QueuedById values are based on... | Then the Build.RequestedFor and Build.RequestedForId values are based on... |
+| --- | --- | ---|
+| In Git or TFVC by the [Continuous integration (CI) triggers](triggers.md) | The system identity (for example, `[DefaultCollection]\Project Collection Service Accounts`). | The person who pushed or checked in the changes. |
+| In Git or by a [branch policy build](../../git/branch-policies.md#require-the-pull-request-to-build). | The system identity (for example, `[DefaultCollection]\Project Collection Service Accounts`). | The person who checked in the changes. |
+| In TFVC by a [gated check-in trigger](triggers.md) | The person who checked in the changes. | The person who checked in the changes. |
+| In Git or TFVC by the [Scheduled triggers](triggers.md) | The system identity (for example, `[DefaultCollection]\Project Collection Service Accounts`). | The system identity (for example, `[DefaultCollection]\Project Collection Service Accounts`). |
+| Because you clicked the **Queue build** button | You | You |
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
