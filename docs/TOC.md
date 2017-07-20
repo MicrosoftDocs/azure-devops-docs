@@ -3,7 +3,7 @@
 
 # Overview  
 ## [Devops for Team Services & TFS](devops-alm-overview.md)
-## [Features index](alm-devops-features.md)
+
 
 
 # Quickstarts
@@ -14,9 +14,6 @@
 ## [Get started with CI/CD](build/get-started/ci-cd-part-1.md)
 ## [Get started testing](test/index.md)  
 ## [Get started as a Stakeholder](quickstart/get-started-stakeholder.md)
-
-
-
 
 
 # Tutorials
@@ -57,7 +54,12 @@
 
 
 # Concepts
-## [Team projects, teams, and repos](get-started/team-projects-teams-repos.md)  
+## [Team projects, teams, and repos (NEW)](get-started/team-projects-teams-repos.md)  
+## [Access levels (NEW)](concepts/access-level.md)
+## [Source control (NEW)](concepts/source-control.md)
+## [Kanban & Agile (NEW)](concepts/kanban-agile.md)
+## [Continuous integration (NEW)](concepts/continuous-integration-deployment.md)
+## [Permissions & access](setup-admin/permissions-access.md)
 ## [Key concepts](concepts.md)
 ## [Essential services](services.md)
 ## [Clients & tools](tools.md)  
@@ -65,8 +67,6 @@
 ## [Navigate in the web portal](connect/work-web-portal.md)   
 ## [Navigate in Team Explorer](connect/work-team-explorer.md)  
 ## [How Team Services & TFS differ](about-vsts-tfs.md)
-## [Migrate from TFS to Team Services](migrate-to-vsts-from-tfs.md)
-
 
 
 # How-to guides
@@ -79,15 +79,18 @@
 ### [Work in the web portal](connect/work-web-portal.md)
 ### [Work from your account hub](connect/account-home-pages.md)
 
-## Manage users & access (Account admin)
-### [Add users (Team Services)](/team-services//setup-admin/team-services/add-account-users-assign-access-levels-team-services) 
-### [Add users to team projects](/team-services/setup-admin/add-users)
+## Manage users & access (Team Services)
+### [Add and manage users](/team-services/setup-admin/team-services/add-account-users-assign-access-levels-team-services) 
 ### [Add administrators](/team-services/setup-admin/add-administrator-tfs)
-### [Change permission levels](/team-services/setup-admin/tfs/admin/change-permission-levels)
-## [Change access levels (TFS)](/team-services/work/connect/change-access-levels)
+### [Manage permissions](/team-services/setup-admin/tfs/admin/change-permission-levels)
+
+## Manage users & access (TFS)
+### [Add users to team projects](/team-services/setup-admin/add-users)
+### [Manage permissions](/team-services/setup-admin/tfs/admin/change-permission-levels)
+### [Change access levels (TFS)](/team-services/work/connect/change-access-levels)
  
 
-## Install TFS (Single Server)
+## Install TFS  
 ### [Get started](/team-services/setup-admin/tfs/install/get-started)
 ### [Single server](/team-services/setup-admin/tfs/install/single-server)
 ### [Dual server](/team-services/setup-admin/tfs/install/dual-server)  
@@ -95,13 +98,14 @@
 
 
 # Reference
-## [User focused features](connect/user-focused-features.md)
-## [Permissions & access](setup-admin/permissions-access.md)
+
+## Permissions guide (NEW) 
 ## [Productivity tips](work/productivity/productivity-tips.md)
 ## [Keyboard shortcuts](reference/keyboard-shortcuts.md)
 ## [Markdown guidance](reference/markdown-guidance.md)
+## [Features index](alm-devops-features.md)
 ## [FAQs](faqs.md)
-
+## [Migrate from TFS to Team Services](migrate-to-vsts-from-tfs.md)
  
 # Troubleshooting
 ## Resolve connection issues (NEW TOPIC)

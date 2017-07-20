@@ -67,7 +67,6 @@ When you share your storyboards to a shared network location, you can link the s
 
     <img src="_img/IC654069.png" alt="Open Storyboard Links to link to a work item" style="border: 1px solid #CCCCCC;" />
 
-
 	>[!NOTE]  
 	>The **Storyboards** tab is no longer supported in the web form from Team Services  or TFS 2017 with the new web form enabled. However, you can link to a storyboard from the **Links** tab using the Storyboard link.  
 

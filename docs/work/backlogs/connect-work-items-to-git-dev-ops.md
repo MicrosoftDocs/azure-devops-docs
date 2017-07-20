@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/22/2017
+ms.date: 07/19/2017
 ---
 
 #Drive Git development from a work item   
@@ -18,6 +18,7 @@ ms.date: 06/22/2017
 
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
+<!---
 Review this topic to learn:  
 
 > [!div class="checklist"] 
@@ -26,6 +27,7 @@ Review this topic to learn:
 > * Perform a squash merge  
 > * Create a branch for several work items  
 > * Link a work item to existing development and build objects    
+-->
 
 The Development section records all Git development processes that support completion of the work item. This section can show your team information needed to take the next development step and minimize navigational steps to accomplish common development tasks. It also supports traceability, providing visibility into all the branches, commits, pull requests, and builds related to the work item.    
 

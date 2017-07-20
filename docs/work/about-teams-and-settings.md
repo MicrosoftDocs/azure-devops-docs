@@ -34,59 +34,30 @@ These tools reference the team's default area path, iteration path, and selected
 >[!NOTE]  
 >Some features are available only from Team Services or TFS 2017 and later versions.  
 
-<div style="float:left;width:130px;margin:3px">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;font-size:90%">Backlogs</p>
-- [Product backlog](backlogs/create-your-backlog.md)     
-- [Features backlog](backlogs/define-features-epics.md)    
-- [Epics backlog](backlogs/define-features-epics.md)  
-- [Forecast](scrum/forecast.md)    
 
-</div>
-<div style="float:left;width:130px;margin:3px">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;font-size:90%">Scrum</p>
-- [Sprint backlogs](scrum/sprint-planning.md)    
-- [Sprint capacity](scale/capacity-planning.md)    
-- [Task boards](scrum/task-board.md)    
-- [Sprint burndown](scrum/sprint-burndown.md)    
+> [!div class="mx-tdBreakAll"]  
+> |Backlogs  |Scrum |Kanban |  Widgets | 
+> |-------------|----------|---------|---------|   
+> |- [Product backlog](backlogs/create-your-backlog.md)<br/>- [Features backlog](backlogs/define-features-epics.md)<br/>- [Epics backlog](backlogs/define-features-epics.md)<br/>- [Forecast](scrum/forecast.md) |- [Sprint backlogs](scrum/sprint-planning.md)<br/>- [Sprint capacity](scale/capacity-planning.md)<br/>- [Task board](scrum/task-board.md)<br/>- [Sprint burndown](scrum/sprint-burndown.md)|- [Kanban board](kanban/kanban-basics.md)<br/>- [Features board](kanban/kanban-epics-features-stories.md)<br/>- [Epics board](kanban/kanban-epics-features-stories.md)<br/>- [Cumulative flow](../report/guidance/cumulative-flow.md)|- [New work item](../report/widget-catalog.md#new-work-item-widget)<br/>- [Sprint burndown](../report/widget-catalog.md#sprint-burndown-widget)<br/>- [Sprint capacity](../report/widget-catalog.md#sprint-capacity-widget)<br/>- [Sprint overview](../report/widget-catalog.md#sprint-overview-widget)<br/>- [Team members](../report/widget-catalog.md#team-members-widget)    |    
 
 
-</div>
-<div style="float:left;width:130px;margin:6px">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;font-size:90%">Kanban</p>
-- [Kanban board](kanban/kanban-basics.md)    
-- [Features board](kanban/kanban-epics-features-stories.md)   
-- [Epics board](kanban/kanban-epics-features-stories.md)    
-- [Cumulative flow](../report/guidance/cumulative-flow.md)    
-
-
-</div>
-<div style="float:left;width:130px;margin:6px">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;font-size:90%">Widgets</p>
-- [New work item](../report/widget-catalog.md#new-work-item-widget)    
-- [Sprint burndown](../report/widget-catalog.md#sprint-burndown-widget)    
-- [Sprint capacity](../report/widget-catalog.md#sprint-capacity-widget)    
-- [Sprint overview](../report/widget-catalog.md#sprint-overview-widget)    
-- [Team members](../report/widget-catalog.md#team-members-widget)    
-
-</div>
-
-<div style="float:left;width:100px;margin:3px">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;font-size:90%">Other</p>
+### Other tools  
+- [Favorites](../collaborate/set-favorites.md)
+- [Work item templates](../productivity/work-item-template.md)
 - [Delivery plans](scale/review-team-plans.md)   
 - [Queries](track/using-queries.md)    
 - [Velocity](../report/guidance/team-velocity.md)    
 - [Dashboards](../report/dashboards.md)    
-- [Alerts](../collaborate/manage-team-notifications.md)    
-
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
+- [Alerts](../collaborate/manage-team-notifications.md) 
+    
+ 
+<!--- IN ADDITION: Favorites (query, build); assigned to <team> PRs, Default reviewers for PRs, @CurrentIteration, @Mention a group, team is a group  -->   
 
 Many of these tools are built from system queries that reference the team area path. For example, a team's default area path filters the work items that appear on a team's backlog. Also, work items that you create using an Agile tool auto-assign the areas and iterations based on team defaults.  
 
+<!---
 You can view these queries by choosing the **Create query** link that appears on these tools' pages. (Note that you can't change the underlying query.)  Lastly, you can set  security permissions to control who has access to create, modify, or manage test plans and test suites under an area.
+-->
 
 
 ## Team defaults referenced by backlogs and boards
@@ -106,7 +77,6 @@ All Agile tools reference the area path(s) defined for a team. For example, one 
 
 In addition, several tools reference the team's default iteration and selected iteration paths or sprints. For example, when you add new work items from a backlog or board view, or from a team dashboard, the system assigns the team's default area path and default iteration path to these work items. 
 
-<div style="font-size:90%">
 
 <table valign="top" width="100%" > 
 <tr valign="bottom" > 
@@ -162,10 +132,7 @@ In addition, several tools reference the team's default iteration and selected i
 <li>Kanban boards, sprint backlogs, and task boards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see [parent-child links between items](./troubleshoot/resolve-backlog-reorder-issues.md#leaf-nodes).</li>
 <li>Work items whose State equals Removed don't appear on boards.</li> 
 </ol>
-</div>
 
-<div style="clear:left;font-size:100%">
-</div>
 
 ## Structure hierarchical teams or scale agility within an enterprise 
 

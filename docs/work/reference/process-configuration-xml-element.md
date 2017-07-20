@@ -31,36 +31,11 @@ For a summary of what you can configure through the user interface, see [Customi
 Areas that you can customize through ProcessConfiguration:
 
 
-<div style="float:left;width:260px;margin:3px;font-size:100%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Backlogs</p>
-- [Configure the quick add panel](#add)  
-- [Define default columns](#columns)  
-- [Map state categories for a WIT category](#map)  
-- [Set number of task board items](#number_items)  
-- [Set weekend days (Scrum)](#weekend_days) <sup>1</sup>  
-- [Set default Show bugs on backlogs](#behaviors)  <sup>1</sup>    
-- [Set default hidden backlogs](#behaviors) <sup>1</sup>    
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |Backlogs  |Work item types (WITs)  |Other tools  |  
+> |-------------|----------|---------| 
+> |- [Configure the quick add panel](#add) <br/>- [Define default columns](#columns) <br/>- [Map state categories for a WIT category](#map)<br/>- [Set number of task board items](#number_items)<br/>- [Set weekend days (Scrum)](#weekend_days) <sup>1</sup><br/>- [Set default Show bugs on backlogs](#behaviors)  <sup>1</sup><br/>- [Set default hidden backlogs](#behaviors) <sup>1</sup>  |- [Specify the WIT color](#wit-colors)<br/>- [Specify the workflow state color](#state-colors)  <sup>2</sup><br/>- [Specify the WIT icon](#wit-icons)  <sup>3</sup> |- [Assign Agile tool fields](#fields)<br/>- [Map tool-specific state categories](#tool_wits) <br/>- [Specify properties](#behaviors) |
 
-<div style="float:left;width:225px;margin:3px;font-size:100%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Work item types (WITs)</p>
-- [Specify the WIT color](#wit-colors)   
-- [Specify the workflow state color](#state-colors)  <sup>2</sup>  
-- [Specify the WIT icon](#wit-icons)  <sup>3</sup>   
-</div>
-
-<div style="float:left;width:225px;margin:3px;font-size:100%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Other tools</p>
-- [Assign Agile tool fields](#fields)  
-- [Map tool-specific state categories](#tool_wits)     
-- [Specify properties](#behaviors)   
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
- 
-<br/>
 **Notes:**
 1. Items noted with an asterisk set a default for the team project. These items can be changed for each team through [team settings](../scale/manage-team-assets.md).
 2. Supported for Hosted XML, and for On-premises XML for TFS 2015.2 or later version.  
@@ -117,6 +92,25 @@ You configure backlogs within the XML sections that appear in the following samp
 >Depending on the process associated with your ProcessConfiguration file&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md)&mdash;the `pluralName` for the `RequirementCategory` will correspond to `Stories` (Agile), `Backlog Items` (Scrum), or `Requirements` (CMMI). All three are similar: they describe the customer value to delivered and the work to be performed.  
 
 #### Syntax for PortfolioBacklogs elements
+
+``` XML 
+&lt;PortfolioBacklog category=&quot;PortfolioCategory&quot; parent=&quot;ParentCategory&quot; pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot; workItemCountLimit=&quot;MaximumLimit&gt;
+   &lt;States&gt; . . . &lt;/States&gt;
+   &lt;Columns&gt; . . . &lt;/Columns&gt;
+   &lt;AddPanel&gt; . . . &lt;/ AddPanel&gt;
+&lt;/PortfolioBacklog &gt;
+```
+
+
+``` XML
+&lt;RequirementBacklog category=&quot;RequirementCategory&quot; pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot; workItemCountLimit=&quot;MaximumLimit&quot; &gt;
+   &lt;States&gt; . . . &lt;/States&gt;
+   &lt;Columns&gt; . . . &lt;/Columns&gt;
+   &lt;AddPanel&gt; . . . &lt;/ AddPanel&gt;
+&lt;/RequirementBacklog &gt;
+```
+
+
 <table>
 <thead>
 <tr>
@@ -133,13 +127,20 @@ You configure backlogs within the XML sections that appear in the following samp
 <td><p><strong>PortfolioBacklog</strong></p></td>
 <td><p>Optional. Up to five instances.</p>
 <p>Container element that defines the state category mappings, default columns, and quick add panel for a portfolio backlog.</p>
-<div style="color:Black;">
-<pre><code>&lt;PortfolioBacklog category=&quot;PortfolioCategory&quot; parent=&quot;ParentCategory&quot; pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot; workItemCountLimit=&quot;MaximumLimit&gt;
-   &lt;States&gt; . . . &lt;/States&gt;
-   &lt;Columns&gt; . . . &lt;/Columns&gt;
-   &lt;AddPanel&gt; . . . &lt;/ AddPanel&gt;
-&lt;/PortfolioBacklog &gt;</code></pre>
-</div>
+<pre><code>&lt;PortfolioBacklog category=&quot;PortfolioCategory&quot; parent=&quot;ParentCategory&quot; pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot; workItemCountLimit=&quot;MaximumLimit&gt;  
+   &lt;States&gt; . . . &lt;/States&gt;  
+   &lt;Columns&gt; . . . &lt;/Columns&gt;  
+   &lt;AddPanel&gt; . . . &lt;/ AddPanel&gt;  
+&lt;/PortfolioBacklog &gt;  
+</code></pre>
+
+<pre><code>&lt;PortfolioBacklog category=&quot;PortfolioCategory&quot; parent=&quot;ParentCategory&quot; pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot; workItemCountLimit=&quot;MaximumLimit&gt;  
+   &lt;States&gt; . . . &lt;/States&gt;  
+   &lt;Columns&gt; . . . &lt;/Columns&gt;  
+   &lt;AddPanel&gt; . . . &lt;/ AddPanel&gt;  
+&lt;/PortfolioBacklog &gt;  
+</code></pre>
+
 <p>Assign values to the attributes as described:</p>
 <ul>
 <li><p><strong>category</strong>: Specify the name of a category that you have defined in the categories definition file for the team project that contains the WITs to be associated with this backlog type.</p></li>
@@ -153,23 +154,23 @@ You configure backlogs within the XML sections that appear in the following samp
 <td><p><strong>RequirementBacklog</strong></p></td>
 <td><p>Required. One instance only.</p>
 <p>Container element that defines the state category mappings, default columns, and quick add panel for the product backlog. The product backlog displays all active items in the team's backlog.</p>
-<div style="color:Black;">
 <pre><code>&lt;RequirementBacklog category=&quot;RequirementCategory&quot; pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot; workItemCountLimit=&quot;MaximumLimit&quot; &gt;
    &lt;States&gt; . . . &lt;/States&gt;
    &lt;Columns&gt; . . . &lt;/Columns&gt;
    &lt;AddPanel&gt; . . . &lt;/ AddPanel&gt;
-&lt;/RequirementBacklog &gt;</code></pre>
-</div></td>
+&lt;/RequirementBacklog &gt;
+</code></pre>
+</td>
 </tr>
 <tr>
 <td><p><strong>TaskBacklog</strong></p></td>
 <td><p>Required. One instance only.</p>
 <p>Container element used to customize the layout of sprint backlogs.</p>
-<div style="color:Black;">
 <pre><code>&lt;TaskBacklog category=&quot;Microsoft.TaskCategory&quot; pluralName=&quot;Tasks&quot; singularName=&quot;Task workItemCountLimit=&quot;MaximumLimit&quot;&gt;
 . . . 
-&lt;/TaskBacklog &gt; </code></pre>
-</div></td>
+&lt;/TaskBacklog &gt; 
+</code></pre>
+</td>
 </tr>
 </tbody>
 </table>

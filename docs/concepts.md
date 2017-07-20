@@ -47,7 +47,6 @@ With TFVC, devs have only one version of each file on their dev machines. Histor
 
 
 ### Work tracking and Agile tools  
-
 Software development projects require ways to easily share information and track the status of work, tasks, issues, or code defects. In the past, you might have planned and track work using one or more tools such as Microsoft Excel, Microsoft Project, a bug tracking system, or a combination of tools. Now, many teams have adopted Agile methods and practices to support planning and development. 
 
 Our systems provide several types of work items which you use to track features, requirements, user stories, tasks, bugs, and issues. Each work item is associated with a work item type and a set of fields that team members update as information becomes available and progress is made. 
@@ -60,6 +59,7 @@ For planning purposes, you have access to several types of backlogs and boards t
 - Task board, used during daily Scrum meetings to review work completed, remaining, or blocked 
  
 Project managers and developers share information by tracking work items  on the backlogs and boards. Useful charts and dashboards round out the picture helping teams monitor progress and trends. 
+
 
 ### DevOps and continuous integration  
 

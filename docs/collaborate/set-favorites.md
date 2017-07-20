@@ -13,7 +13,7 @@ ms.date: 07/22/2017
 
 [!INCLUDE [temp](../work/_shared/dev15-and-ts-version-header.md)]  
 
-<!--- Multiple version topic --> 
+<!--- Multiple version topic -->  
 
 <a id="team-favorites"> </a>
 ### Set team favorites 

@@ -8,7 +8,7 @@
 # Quickstarts  
 ## [Add work items](backlogs/add-work-items.md)
 ## [Create your backlog](backlogs/create-your-backlog.md)  
-## [Kanban (NEW)](kanban/kanban-quickstart.md) 
+## [Kanban](kanban/kanban-quickstart.md) 
 ## [Schedule sprints](scrum/define-sprints.md)
 ## [Drive Git development](backlogs/connect-work-items-to-git-dev-ops.md)  
 ## [Storyboard your ideas](office/storyboard-your-ideas-using-powerpoint.md)
@@ -30,8 +30,7 @@
 
 ## Backlogs & boards
 ### [Define features & epics](backlogs/define-features-epics.md)
-### [Organize your backlog (map or reparent)](backlogs/organize-backlog.md)
-### [Assign items to a sprint](scrum/define-sprints.md#assign-to-sprint)    
+### [Organize your backlog (map or reparent)](backlogs/organize-backlog.md)   
 ### [Create backlog items & tasks (Project)](office/create-your-backlog-tasks-using-project.md)
 
 ## Scrum
@@ -47,7 +46,6 @@
 ### [Add task checklists](kanban/add-task-checklists.md)  
 ### [Add, run, & update inline tests](kanban/add-run-update-tests.md)  
 ### [Define features & epics](kanban/kanban-epics-features-stories.md)
-### [Customize your Kanban board](/team-services/work/kanban/add-columns)
 
 ## Track work
 ### [Add tags to work items](track/add-tags-to-work-items.md)
@@ -164,7 +162,7 @@
 ### [Change the audio device or annotation tool](reference/change-audio-device-annotation-tool.md) 
 
 
-## Add teams 
+## Add and manage teams 
 ### [Add teams & team members](scale/multiple-teams.md)
 ### [Add a team administrator](scale/add-team-administrator.md) 
 ### [Set team defaults](scale/set-team-defaults.md)
@@ -175,7 +173,7 @@
 ### [Select backlog levels](customize/select-backlog-navigation-levels.md)
 ### [Show bugs on backlogs & boards](customize/show-bugs-on-backlog.md)
 ### [Set working days](customize/set-working-days.md) 
-### Set team favorites  (NEW TOPIC)  
+### [Set team favorites (NEW TOPIC)](../collaborate/set-favorites.md)    
 ### [Customize cards](customize/customize-cards.md)   
 
 ## Manage project settings (Project administrator) 
