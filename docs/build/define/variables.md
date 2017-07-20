@@ -75,57 +75,19 @@ Select this check box if you want to enable your team to modify the value when t
 [!INCLUDE [include](../concepts/definitions/_shared/set-variables-in-scripts.md)]
 
 ## Control variables
-<table>
-    <thead>
-        <tr>
-            <th>Variable Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <p>
-                    Build.Clean
-                </p>
-            </td>
-            <td>
-                <p>
-                    Modifies how the build agent cleans things up. See [Repository tab](repository.md).
-                 </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>
-                    System.Debug
-                </p>
-            </td>
-            <td>
-                <p>
-                    If you need more detailed logs to debug build problems, define and set it to `true`.
-                 </p>
-            </td>
-        </tr>
-    </tbody>
-</table>
 
+| Variable Name | Description |
+| ------------- | ----------- |
+| Build.Clean | Modifies how the build agent cleans things up. See [Repository tab](repository.md). |
+| System.Debug | If you need more detailed logs to debug build problems, define and set it to `true`. |
 
 ## Environment variables
 
 You can pass environment variables of the build machine into build steps. For example, on the [Build tab](build.md) of a build definition, add this step:
 
-<table>
-<tr>
-    <td>![](../steps/utility/_img/command-line.png) **Utility: Command Line**</td>
-    <td>
-        <ul>
-            <li>Tool: `echo`</li>
-            <li>Arguments: `$(PATH)`</li>
-        </ul>
-    </td>
-</tr>
-</table>
+| Task | Arguments |
+| ---- | --------- |
+| ![](../steps/utility/_img/command-line.png) **Utility: Command Line** | Tool: `echo`<br />Arguments: `$(PATH)` |
 
 > **Note:** If you have defined the a variable of the same name (for example `PATH`) on the [variables tab](variables.md), then your value overrides the environment variable when you use it as shown above.
 
