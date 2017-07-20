@@ -47,6 +47,16 @@
 ## Use Build
 ### [Run Cordova commands in CI](apps/mobile/cordova-command.md)
 ### [Sign a mobile app in CI](apps/mobile/secure-certs.md)
+## Use Package Management
+### Set up Team Build with NuGet
+#### [Restore private packages](package/nuget/)
+#### [Pack and push packages](package/nuget/)
+### Set up Team Build with npm
+#### [Install private packages](package/npm/) 
+#### [Publish NuGet packages](package/npm/)
+### Set up Team Build with Maven
+#### [Install private packages](package/maven/)
+#### [Publish packages](package/maven/)
 ## Use Release Management
 ### [Work with release definitions](actions/work-with-release-definitions.md)
 ### [Create and deploy releases](actions/create-deploy-releases.md)
@@ -167,7 +177,7 @@
 ### [Service Fabric Compose Deploy](steps/deploy/service-fabric-compose-deploy.md)
 ### [SSH](steps/deploy/ssh.md)
 ### [Windows Machine File Copy](steps/deploy/windows-machine-file-copy.md)
-## Tool
+## Tool 
 ### [Node Tool Installer](steps/tool/node-js.md)
 ## [File matching patterns](steps/file-matching-patterns.md)
 ## [File and variable transform](steps/transforms-variable-substitution.md)
