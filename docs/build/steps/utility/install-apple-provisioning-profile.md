@@ -27,23 +27,7 @@ xcode
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Provisioning Profile</td>
-<td>
-Select the provisioning profile that was uploaded to `Secure Files` to install on the macOS agent.
-</td>
-</tr>
-<tr>
-<td>Remove Profile After Build</td>
-<td>
-Select to specify that the provisioning profile should be removed from the agent after the build or release is complete.
-</td>
-</tr>
-</table>
+| Argument | Description |
+| -------- | ----------- |
+| Provisioning Profile | Select the provisioning profile that was uploaded to **Secure Files** to install on the macOS agent. |
+| Remove Profile After Build | Select to specify that the provisioning profile should be removed from the agent after the build or release is complete. |

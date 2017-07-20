@@ -24,22 +24,12 @@ None
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Path to Publish</td>
-<td>
-<p>Path to the folder or file you want to publish. The path must be a fully qualified path or a valid path relative to the root directory of your repo. Typically you'll specify `$(Build.ArtifactStagingDirectory)`. See [Artifacts in Team Build](../../concepts/definitions/build/artifacts.md).</p>
-</td>
-</tr>
-[!INCLUDE [temp](_shared/artifact-arguments.md)]
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
-</table>
+| Argument | Description |
+| -------- | ----------- |
+| Path to Publish | Path to the folder or file you want to publish. The path must be a fully qualified path or a valid path relative to the root directory of your repo. Typically you'll specify `$(Build.ArtifactStagingDirectory)`. See [Artifacts in Team Build](../../concepts/definitions/build/artifacts.md). |
+| Advanced - Artifact Name | [!INCLUDE [artifact-name-argument-md](_shared/artifact-name-argument-md.md)] |
+| Advanced - Artifact Type | [!INCLUDE [artifact-type-argument-md](_shared/artifact-type-argument-md.md)] |
+| [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
 
 ## Q & A
 
