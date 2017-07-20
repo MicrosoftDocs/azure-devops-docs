@@ -24,7 +24,7 @@ In the CI process, you build the Java app and run JUnit tests using Maven. In th
 
 [!INCLUDE [temp](../get-started/_shared/vsts-and-azure-setup.md)]
 
-[!INCLUDE [temp](../get-started/_shared/create-azure-web-app.md)]
+[!INCLUDE [temp](../apps/_shared/create-azure-web-app.md)]
 
 Set up the Java runtime configuration that your app needs with the `az appservice web config update` command. The following command configures the web app to run on a recent Java 8 JDK and Apache Tomcat 8.0
 

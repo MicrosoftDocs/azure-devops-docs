@@ -24,7 +24,7 @@ In the CI process, you use Gulp to run Mocha tests.
 
 [!INCLUDE [temp](../get-started/_shared/vsts-and-azure-setup.md)]
 
-[!INCLUDE [temp](../get-started/_shared/create-azure-web-app.md)]
+[!INCLUDE [temp](../apps/_shared/create-azure-web-app.md)]
 
 [!INCLUDE [temp](../get-started/_shared/import-code-1.md)]
 

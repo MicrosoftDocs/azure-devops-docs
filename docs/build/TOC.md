@@ -1,73 +1,12 @@
-# [Home](overview.md)
-# [What's new](news/2017.md)
-## [2017](news/2017.md)
-## [2016](news/2016.md)
-## [2015](news/2015.md)
+# [Build and Release](index.md)
 # Quickstarts
-## [CI/CD for ASP.NET Core](aspnet/core/quick-to-azure.md)
-## [CI/CD for ASP.NET](aspnet/aspnet4/quick-to-azure.md)
-## [CI/CD for Node.js](nodejs/quick-to-azure.md)
-## [CI/CD for Java](java/quick-to-azure.md)
+## CI/CD to Azure web app
+### [ASP.NET Core](apps/aspnet-core-to-webapp.md)
+## CI/CD to Windows VMs
+### ASP.NET Core
 # Tutorials
-## [CI/CD Hello world](get-started/ci-cd-part-1.md)
-## [Build your app](apps/index.md)
-### [ASP.NET Core](apps/aspnet/ci/build-aspnet-core.md)
-### [ASP.NET 4](apps/aspnet/ci/build-aspnet-4.md)
-### [.NET for Windows](get-started/dot-net.md)
-### [C++](apps/windows/cpp.md)
-### [Node.js](apps/node/nodejs-to-azure.md)
-### [Java](apps/java/maven-to-azure.md)
-### [Xamarin](apps/mobile/xamarin.md)
-### [Xcode](apps/mobile/xcode-ios.md)
-### [Cordova](apps/mobile/cordova-build.md)
-### [Universal Windows Platform](apps/windows/universal.md)
-### [Azure Cloud Service](apps/aspnet/ci/build-aspnet-cloudservice.md)
-### [SQL Server Database](apps/aspnet/ci/build-aspnet-dacpac.md)
-## [Deploy your app](apps/index.md)
-### [Azure web site](apps/cd/deploy-webdeploy-webapps.md)
-### [Azure cloud service](apps/aspnet/cd/deploy-cloudservice-cloudservice.md)
-### [Azure Government Cloud](concepts/library/government-cloud.md)
-### [Azure Container Service (Kubernetes)](apps/cd/azure/deploy-container-kubernetes.md)
-### [IIS servers](apps/cd/deploy-webdeploy-iis-deploygroups.md)
-### [IIS servers (WinRM)](apps/cd/deploy-webdeploy-iis-winrm.md)
-### [Azure SQL database (DACPAC)](apps/aspnet/cd/deploy-dacpac-sqlpackage.md)
-### [Azure SQL database (SQL scripts)](apps/aspnet/cd/deploy-database-sqlscripts.md)
-### [SCVMM](apps/cd/scvmm/configure-scvmm.md)
-### [VMware](apps/cd/provision-vm-in-vmware.md)
-# How to
-## Deploy an agent
-### [Windows](actions/agents/v2-windows.md)
-### [Windows (TFS 2015)](actions/agents/v1-windows.md)
-### [OSX](actions/agents/v2-osx.md)
-### [Linux](actions/agents/v2-linux.md)
-### [Configure TFS authentication](actions/agents/configure-tfs-authentication.md)
-## Run scripts
-### [Run a PowerShell script](scripts/index.md)
-### [Run Git commands](scripts/git-commands.md)
-## Use Build
-### [Run Cordova commands in CI](apps/mobile/cordova-command.md)
-### [Sign a mobile app in CI](apps/mobile/secure-certs.md)
-## Use Package Management
-### Set up Team Build with NuGet
-#### [Restore private packages](package/nuget/)
-#### [Pack and push packages](package/nuget/)
-### Set up Team Build with npm
-#### [Install private packages](package/npm/) 
-#### [Publish NuGet packages](package/npm/)
-### Set up Team Build with Maven
-#### [Install private packages](package/maven/)
-#### [Publish packages](package/maven/)
-## Use Release Management
-### [Work with release definitions](actions/work-with-release-definitions.md)
-### [Create and deploy releases](actions/create-deploy-releases.md)
-### [View and manage releases](actions/view-manage-releases.md)
-### [Debug deployment issues](actions/debug-deployment-issues.md)
-### [Run SCVMM scripts for managing VMs](apps/cd/scvmm/manage-vms-using-scvmm.md)
-## Automatically generate CI/CD
-### [ASP.NET from Azure](get-started/aspnet-4-ci-cd-azure-automatic.md)
-### [ASP.NET from Visual Studio](get-started/aspnet-4-ci-cd-vs-automatic.md)
-### [ASP.NET Core with Docker from Visual Studio](apps/aspnet/aspnetcore-docker-to-azure.md)
-## [Migrate from XAML builds](actions/migrate-from-xaml-builds.md)
+## Create a build definition
+## Create a release definition
 # Concepts
 ## Agents
 ### [Build and release agents](concepts/agents/agents.md)
@@ -104,8 +43,38 @@
 ## Policies
 ### [Retention policies](concepts/policies/retention.md)
 ### [Permissions](concepts/policies/permissions.md)
-# [Task reference](define/build.md)
-## Build
+# How to
+## Deploy an agent
+### [Windows](actions/agents/v2-windows.md)
+### [Windows (TFS 2015)](actions/agents/v1-windows.md)
+### [OSX](actions/agents/v2-osx.md)
+### [Linux](actions/agents/v2-linux.md)
+### [Configure TFS authentication](actions/agents/configure-tfs-authentication.md)
+## Configure/manage CI
+### [Run a PowerShell script](scripts/index.md)
+### [Run Git commands](scripts/git-commands.md)
+### [Troubleshooting build](troubleshooting.md)
+## Configure/manage CD
+### [Debug deployment issues](actions/debug-deployment-issues.md)
+### [Run SCVMM scripts for managing VMs](apps/cd/scvmm/manage-vms-using-scvmm.md)
+### [Troubleshoot Azure connections](actions/azure-rm-endpoint.md)
+## Automatically generate CI/CD
+### [ASP.NET from Visual Studio](get-started/aspnet-4-ci-cd-vs-automatic.md)
+### [ASP.NET Core with Docker from Visual Studio](apps/aspnet/aspnetcore-docker-to-azure.md)
+## Use Package Management
+### Set up Team Build with NuGet
+#### [Restore private packages](package/nuget/)
+#### [Pack and push packages](package/nuget/)
+### Set up Team Build with npm
+#### [Install private packages](package/npm/) 
+#### [Publish NuGet packages](package/npm/)
+### Set up Team Build with Maven
+#### [Install private packages](package/maven/)
+#### [Publish packages](package/maven/)
+## Migrate
+### [Migrate from XAML builds](actions/migrate-from-xaml-builds.md)
+# [Reference](define/build.md)
+## Build tasks
 ### [Android build](steps/build/android-build.md)
 ### [Android signing](steps/build/android-signing.md)
 ### [Ant](steps/build/ant.md)
@@ -122,7 +91,7 @@
 ### [Xamarin.iOS](steps/build/xamarin-ios.md)
 ### [Xcode Build](steps/build/xcode-build.md)
 ### [Xcode Package iOS](steps/build/xcode-package-ios.md)
-## Utility
+## Utility tasks
 ### [Archive files](steps/utility/archive-files.md)
 ### [Batch script](steps/utility/batch-script.md)
 ### [Command line](steps/utility/command-line.md)
@@ -140,7 +109,7 @@
 ### [Shell script](steps/utility/shell-script.md)
 ### [Update Service Fabric App Versions](steps/utility/service-fabric-versioning.md)
 ### [Xamarin license](steps/utility/xamarin-license.md)
-## Test
+## Test tasks
 ### [Cloud-based Apache JMeter Load Test](steps/test/cloud-based-apache-jmeter-load-test.md)
 ### [Cloud-based Load Test](steps/test/cloud-based-load-test.md)
 ### [Cloud-based Web Performance Test](steps/test/cloud-based-web-performance-test.md)
@@ -151,14 +120,14 @@
 ### [Visual Studio Test](steps/test/visual-studio-test.md)
 ### [Visual Studio Test Agent Deployment](steps/test/visual-studio-test-agent-deployment.md)
 ### [Xamarin Test Cloud](steps/test/xamarin-test-cloud.md)
-## Package
+## Package tasks
 ### [CocoaPods](steps/package/cocoapods.md)
 ### [npm](steps/package/npm-install.md)
 ### [NuGet Installer](steps/package/nuget-installer.md)
 ### [NuGet Packager](steps/package/nuget-packager.md)
 ### [NuGet Publisher](steps/package/nuget-publisher.md)
 ### [Xamarin Component Restore](steps/package/xamarin-component-restore.md)
-## Deploy
+## Deploy tasks
 ### [Azure App Service Deploy](steps/deploy/azure-app-service-deploy.md)
 ### [Azure App Service Manage](steps/deploy/azure-app-service-manage.md)
 ### [Azure CLI](steps/deploy/azure-cli.md)
@@ -177,10 +146,7 @@
 ### [Service Fabric Compose Deploy](steps/deploy/service-fabric-compose-deploy.md)
 ### [SSH](steps/deploy/ssh.md)
 ### [Windows Machine File Copy](steps/deploy/windows-machine-file-copy.md)
-## Tool 
+## Tool tasks
 ### [Node Tool Installer](steps/tool/node-js.md)
 ## [File matching patterns](steps/file-matching-patterns.md)
 ## [File and variable transform](steps/transforms-variable-substitution.md)
-# Troubleshooting
-## [Troubleshooting build](troubleshooting.md)
-## [Troubleshoot Azure connections](actions/azure-rm-endpoint.md)
