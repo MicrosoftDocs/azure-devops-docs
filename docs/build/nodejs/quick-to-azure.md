@@ -17,7 +17,7 @@ Node.js apps.
 This quickstart shows how to set up CI and CD to deploy
 a Node.js app
 to an Azure web app. 
-You create the web app using Azure CLI, then set up CI/CD in Team Services.
+You create the web app using the Azure CLI, then set up CI/CD in Team Services.
 In the CI process, you use Gulp to run Mocha tests.
 
 ![node.js web app](_img/nodejs-web-app.png)
@@ -38,7 +38,7 @@ https://github.com/adventworks/nodejs-sample
 
 In the right panel, search for `node`, select **NodeJS with Gulp**, and then click **Apply**.
 
-![apply node.js gulp template](_img/apply-nodejs-gulp-template.png)
+ ![apply node.js gulp template](_img/apply-nodejs-gulp-template.png)
 
 [!INCLUDE [temp](../get-started/_shared/set-up-ci-2.md)]
 

@@ -17,7 +17,7 @@ Java apps.
 This quickstart shows how to set up CI and CD to deploy
 a Java app. 
 to an Azure web app. 
-You create the web app using Azure CLI, then set up CI/CD in Team Services.
+You create the web app using the Azure CLI, then set up CI/CD in Team Services.
 In the CI process, you build the Java app and run JUnit tests using Maven. In the CD process, you deploy the build to an Azure web app.
 
 ![java web app](_img/java-web-app.png)
