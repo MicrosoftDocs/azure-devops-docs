@@ -92,299 +92,39 @@ You can pass environment variables of the build machine into build steps. For ex
 > **Note:** If you have defined the a variable of the same name (for example `PATH`) on the [variables tab](variables.md), then your value overrides the environment variable when you use it as shown above.
 
 ## Predefined variables
-<table>
-    <thead>
-        <tr>
-            <th style="font-size:80%">Variable Name<br/>
-            Environment Variable Name</th>
-            <th style="font-size:80%">Scope</th>
-            <th style="font-size:80%">Notes</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Agent.BuildDirectory
+
+| Variable Name<br />Environment variable name | Scope | Notes |
+| -------------------------------------------- | ----- | ----- |
+| Agent.BuildDirectory<br />AGENT_BUILDDIRECTORY | Agent | The local path on the agent where all folders for a given build definition are created. For example: `c:\agent\_work\1` |
+| Agent.HomeDirectory<br />AGENT_HOMEDIRECTORY | Agent | The directory the agent is installed into. This contains the agent software. For example: `c:\agent\`.<br /><br />If you are using an on-premises agent, this directory is specified by you. See [Agents](../concepts/agents/agents.md). |
+| Agent.Id<br />AGENT_ID | Agent | The ID of the agent. |
+| Agent.JobStatus<br />AGENT_JOBSTATUS | Agent | The status of the build:<br /><br />`Canceled`<br /><br />`Failed`<br /><br />`Succeeded`<br /><br />`SucceededWithIssues` (partially successful) |
+| Agent.MachineName<br />AGENT_MACHINENAME | Agent | The name of the machine on which the agent is installed.|
+|  Agent.Name<br />AGENT_NAME | Agent | The name of the agent that is registered with the pool.
                 </p>
-                <p style="font-size:80%">
-                    AGENT_BUILDDIRECTORY
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">The local path on the agent where all folders for a given build definition are created. For example: `c:\agent\_work\1`
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Agent.HomeDirectory
-                </p>
-                <p style="font-size:80%">
-                    AGENT_HOMEDIRECTORY
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">
-                    The directory the agent is installed into. This contains the agent software. For example: `c:\agent\`.
-                </p>
-                <p style="font-size:80%">If you are using an on-premises agent, this directory is specified by you. See [Agents](../concepts/agents/agents.md).</p>
-            </td>
-        </tr>
-         <tr>
-            <td>
-                <p style="font-size:80%">
-                    Agent.Id
-                </p>
-                <p style="font-size:80%">
-                    AGENT_ID
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">
-                    The ID of the agent.  
-                </p>
-            </td>
-        </tr>
-         <tr>
-            <td>
-                <p style="font-size:80%">
-                    Agent.JobStatus
-                </p>
-                <p style="font-size:80%">
-                    AGENT_JOBSTATUS
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">
-                    The status of the build.
-                </p>
-                <ul>
-                  <li style="font-size:80%">`Canceled`</li>
-                  <li style="font-size:80%">`Failed`</li>
-                  <li style="font-size:80%">`Succeeded`</li>
-                  <li style="font-size:80%">`SucceededWithIssues` (partially successful)</li>
-                </ul>
-            </td>
-        </tr>        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Agent.MachineName
-                </p>
-                <p style="font-size:80%">
-                    AGENT_MACHINENAME
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">
-                    The name of the machine on which the agent is installed.
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Agent.Name
-                </p>
-                <p style="font-size:80%">
-                    AGENT_NAME
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">
-                    The name of the agent that is registered with the pool.
-                </p>
-                <p style="font-size:80%">If you are using an on-premises agent, this directory is specified by you. See agents(../concepts/agents/agents.md).</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Agent.WorkFolder
-                </p>
-                <p style="font-size:80%">
-                    AGENT_WORKFOLDER
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">
-                    The working directory for this agent. For example: `c:\agent\_work`.
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.ArtifactStagingDirectory
-                </p>
-                <p style="font-size:80%">
-                    BUILD_ARTIFACTSTAGINGDIRECTORY
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                [!INCLUDE [include](_shared/variables-build-artifacts-directory.md)]
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.BuildId
-                </p>
-                <p style="font-size:80%">
-                    BUILD_BUILDID
-                </p>
-            </td>
-            <td style="font-size:80%">All</td>
-            <td>
-                <p style="font-size:80%">
-                    The ID of the record for the completed build.
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.BuildNumber
-                </p>
-                <p style="font-size:80%">
-                    BUILD_BUILDNUMBER
-                </p>
-            </td>
-            <td style="font-size:80%">Agent,<br/>label<br/>format<br/>(see<br/>Notes)</td>
-            <td>
-                <p style="font-size:80%">
-                    The name of the completed build. You can specify the build number format that generates this value in the [definition options](options.md).
+                <p style="font-size:80%">If you are using an on-premises agent, this directory is specified by you. See agents(../concepts/agents/agents.md).|
+| Agent.WorkFolder<br />AGENT_WORKFOLDER | Agent | The working directory for this agent. For example: `c:\agent\_work`.|
+| Build.ArtifactStagingDirectory<br />BUILD_ARTIFACTSTAGINGDIRECTORY | Agent | [!INCLUDE [include](_shared/variables-build-artifacts-directory.md)]|
+| Build.BuildId<br />BUILD_BUILDID | All | The ID of the record for the completed build.|
+| Build.BuildNumber<br />BUILD_BUILDNUMBER | Agent,<br/>label<br/>format<br/>(see<br/>Notes) | The name of the completed build. You can specify the build number format that generates this value in the [definition options](options.md).
                 </p>
                 <p style="font-size:80%">A typical use of this variable is to make it part of the label format, which you specify on the [repository tab](repository.md).</p>
                 <p style="font-size:80%">
-                    [!INCLUDE [include](_shared/variables-invalid-label-characters.md)]
+                    [!INCLUDE [include](_shared/variables-invalid-label-characters.md)]|
+| Build.BuildUri<br />BUILD_BUILDURI | Agent | The URI for the build. For example: `vstfs:///Build/Build/1430`.|
+| Build.BinariesDirectory<br />BUILD_BINARIESDIRECTORY | Agent | The local path on the agent you can use as an output folder for compiled binaries. For example: `c:\agent\_work\1\b`.
                 </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.BuildUri
+                <p style="font-size:80%">By default, new build definitions are not set up to clean this directory. You can define your build to clean it up on the [Repository tab](repository.md).|
+| Build.DefinitionName<br />BUILD_DEFINITIONNAME | All (see Notes) | The name of the build definition.
                 </p>
                 <p style="font-size:80%">
-                    BUILD_BUILDURI
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
+                    [!INCLUDE [include](_shared/variables-invalid-label-characters.md)]|
+| Build.DefinitionVersion<br />BUILD_DEFINITIONVERSION | All | The version of the build definition.|
+| Build.QueuedBy<br />BUILD_QUEUEDBY | All (see Notes) | [How are the identity variables set?](#identity_values)</p>
                 <p style="font-size:80%">
-                    The URI for the build. For example: `vstfs:///Build/Build/1430`.
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.BinariesDirectory
-                </p>
-                <p style="font-size:80%">
-                    BUILD_BINARIESDIRECTORY
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">The local path on the agent you can use as an output folder for compiled binaries. For example: `c:\agent\_work\1\b`.
-                </p>
-                <p style="font-size:80%">By default, new build definitions are not set up to clean this directory. You can define your build to clean it up on the [Repository tab](repository.md).
-                 </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.DefinitionName
-                </p>
-                <p style="font-size:80%">
-                    BUILD_DEFINITIONNAME
-                </p>
-            </td>
-            <td style="font-size:80%">All (see Notes)</td>
-            <td>
-                <p style="font-size:80%">
-                    The name of the build definition.
-                </p>
-                <p style="font-size:80%">
-                    [!INCLUDE [include](_shared/variables-invalid-label-characters.md)]
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.DefinitionVersion
-                </p>
-                <p style="font-size:80%">
-                    BUILD_DEFINITIONVERSION
-                </p>
-            </td>
-            <td style="font-size:80%">All</td>
-            <td>
-                <p style="font-size:80%">
-                    The version of the build definition.
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td style="font-size:80%">
-                <p style="font-size:80%">
-                    Build.QueuedBy
-                </p>
-                <p style="font-size:80%">
-                    BUILD_QUEUEDBY
-                </p>
-            </td>
-            <td style="font-size:80%">All (see Notes)</td>
-            <td>
-                <p style="font-size:80%">
-                    [How are the identity variables set?](#identity_values)</p>
-                <p style="font-size:80%">
-                    [!INCLUDE [include](_shared/variables-invalid-label-characters.md)]
-                </p>
-            </td>
-        </tr>
-        <tr>
-        <td>
-                <p style="font-size:80%">
-                    Build.QueuedById
-                </p>
-                <p style="font-size:80%">
-                    BUILD_QUEUEDBYID
-                </p>
-            </td>
-            <td style="font-size:80%">All</td>
-            <td>
-                <p style="font-size:80%">
-                    [How are the identity variables set?](#identity_values)
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.Reason
-                </p>
-                <p style="font-size:80%">
-                    BUILD_REASON
-                </p>
-            </td>
-            <td style="font-size:80%">All</td>
-            <td>
-                <blockquote style="font-size:80%">
-                    **Team Services Only**
+                    [!INCLUDE [include](_shared/variables-invalid-label-characters.md)]|
+| Build.QueuedById<br />BUILD_QUEUEDBYID | All | [How are the identity variables set?](#identity_values)|
+| Build.Reason<br />BUILD_REASON | All | **Team Services Only**
                 </blockquote>
                 <p style="font-size:80%">The event that caused the build to run.
                 </p>
@@ -397,179 +137,37 @@ You can pass environment variables of the build machine into build steps. For ex
                     <li style="font-size:80%">`CheckInShelveset`: A user manually queued the build of a specific TFVC shelveset.</li>
                     <li style="font-size:80%">`PullRequest`: The build was triggered by a Git branch policy that requires a build.</li>
                 </ul>
-                <p style="font-size:80%">See [Build definition triggers](../define/triggers.md), [Improve code quality with branch policies](../../git/branch-policies.md).</p>
-            </td>
-        </tr>        
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.Repository.Clean
-                </p>
-                <p style="font-size:80%">
-                    BUILD_REPOSITORY_CLEAN
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">The value you've selected for **Clean** on the [repository tab](repository.md).</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.Repository.LocalPath
-                </p>
-                <p style="font-size:80%">
-                    BUILD_REPOSITORY_LOCALPATH
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                [!INCLUDE [include](_shared/variables-build-sources-directory.md)]
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.Repository.Name
-                </p>
-                <p style="font-size:80%">
-                    BUILD_REPOSITORY_NAME
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">
-                    The name of the [repository](repository.md).
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.Repository.Provider
-                </p>
-                <p style="font-size:80%">
-                    BUILD_REPOSITORY_PROVIDER
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">
-                    The type of [repository you selected](repository.md).
+                <p style="font-size:80%">See [Build definition triggers](../define/triggers.md), [Improve code quality with branch policies](../../git/branch-policies.md).|
+| Build.Repository.Clean<br />BUILD_REPOSITORY_CLEAN | Agent | The value you've selected for **Clean** on the [repository tab](repository.md).|
+| Build.Repository.LocalPath<br />BUILD_REPOSITORY_LOCALPATH | Agent | [!INCLUDE [include](_shared/variables-build-sources-directory.md)]|
+| Build.Repository.Name<br />BUILD_REPOSITORY_NAME | Agent | The name of the [repository](repository.md).|
+| Build.Repository.Provider<br />BUILD_REPOSITORY_PROVIDER | Agent | The type of [repository you selected](repository.md).
                 </p>
                 <ul>
                     <li style="font-size:80%">`TfsGit`: [TFS Git repository](../../git/overview.md)</li>
                     <li style="font-size:80%">`TfsVersionControl`: [Team Foundation Version Control](../../tfvc/overview.md)</li>
                     <li style="font-size:80%">`Git`: Git repository hosted on an external server</li>
                     <li style="font-size:80%">`GitHub`</li>
-                    <li style="font-size:80%">`Svn`: Subversion</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.Repository.Tfvc.Workspace
+                    <li style="font-size:80%">`Svn`: Subversion</li>|
+| Build.Repository.Tfvc.Workspace<br />BUILD_REPOSITORY_TFVC_WORKSPACE | Agent | Defined if your [repository](repository.md) is Team Foundation Version Control. The name of the [TFVC workspace](../../tfvc/create-work-workspaces.md) used by the build agent.
                 </p>
                 <p style="font-size:80%">
-                    BUILD_REPOSITORY_TFVC_WORKSPACE
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">
-                    Defined if your [repository](repository.md) is Team Foundation Version Control. The name of the [TFVC workspace](../../tfvc/create-work-workspaces.md) used by the build agent.
-                </p>
-                <p style="font-size:80%">
-                For example, if the Agent.BuildDirectory is `c:\agent\_work\12` and the Agent.Id is `8`, the workspace name could be: `ws_12_8`
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.Repository.Uri
-                </p>
-                <p style="font-size:80%">
-                    BUILD_REPOSITORY_URI
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">
-                    The URL for the repository. For example:
+                For example, if the Agent.BuildDirectory is `c:\agent\_work\12` and the Agent.Id is `8`, the workspace name could be: `ws_12_8`|
+| Build.Repository.Uri<br />BUILD_REPOSITORY_URI | Agent | The URL for the repository. For example:
                 </p>
                 <ul>
                     <li style="font-size:80%">Git: `https://fabrikamfiber.visualstudio.com/_git/Scripts`</li>
-                    <li style="font-size:80%">TFVC: `https://fabrikamfiber.visualstudio.com/`</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
+                    <li style="font-size:80%">TFVC: `https://fabrikamfiber.visualstudio.com/`|
+| Build.RequestedFor<br />BUILD_REQUESTEDFOR | All (see Notes) | [How are the identity variables set?](#identity_values)
+                </p>
+                <p style="font-size:80%">
+                    [!INCLUDE [include](_shared/variables-invalid-label-characters.md)]|
+| Build.RequestedForEmail<br />BUILD_REQUESTEDFOREMAIL | All | [How are the identity variables set?](#identity_values)|
+| Build.RequestedForId<br />BUILD_REQUESTEDFORID | All</td>
             <td>
                 <p style="font-size:80%">
-                    Build.RequestedFor
-                </p>
-                <p style="font-size:80%">
-                    BUILD_REQUESTEDFOR
-                </p>
-            </td>
-            <td style="font-size:80%">All (see Notes)</td>
-            <td>
-                <p style="font-size:80%">
-                    [How are the identity variables set?](#identity_values)
-                </p>
-                <p style="font-size:80%">
-                    [!INCLUDE [include](_shared/variables-invalid-label-characters.md)]
-                </p>
-            </td>
-        </tr>
-		<tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.RequestedForEmail
-                </p>
-                <p style="font-size:80%">
-                    BUILD_REQUESTEDFOREMAIL
-                </p>
-            </td>
-            <td style="font-size:80%">All</td>
-            <td>
-                <p style="font-size:80%">
-                    [How are the identity variables set?](#identity_values)
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.RequestedForId
-                </p>
-                <p style="font-size:80%">
-                    BUILD_REQUESTEDFORID
-                </p>
-            </td>
-            <td style="font-size:80%">All</td>
-            <td>
-                <p style="font-size:80%">
-                    [How are the identity variables set?](#identity_values)
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.SourceBranch
-                </p>
-                <p style="font-size:80%">
-                    BUILD_SOURCEBRANCH
-                </p>
-            </td>
-            <td style="font-size:80%">All (see Notes)</td>
-            <td>
-                <p style="font-size:80%">
-                    The branch the build was queued for. Some examples:
+                    [How are the identity variables set?](#identity_values)|
+| Build.SourceBranch<br />BUILD_SOURCEBRANCH | All (see Notes) | The branch the build was queued for. Some examples:
                 </p>
                 <ul>
                     <li style="font-size:80%">Git repo branch: `refs/heads/master`</li>
@@ -579,103 +177,24 @@ You can pass environment variables of the build machine into build steps. For ex
                     <li style="font-size:80%">TFVC repo shelveset build: `myshelveset;username@live.com`</li>
                 </ul>
                 <p style="font-size:80%">When you use this variable in your build number format, the forward slash characters (`/`) are replaced with underscore characters <code>&#095;</code>).</p>
-                <p style="font-size:80%">Note: In TFVC, if you are running a gated check-in build or manually building a shelveset, you cannot use this variable in your build number format.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.SourceBranchName
-                </p>
-                <p style="font-size:80%">
-                    BUILD_SOURCEBRANCHNAME
-                </p>
-            </td>
-            <td style="font-size:80%">All (see Notes)</td>
-            <td>
-                <p style="font-size:80%">
-                    The name of the branch the build was queued for.
+                <p style="font-size:80%">Note: In TFVC, if you are running a gated check-in build or manually building a shelveset, you cannot use this variable in your build number format.|
+| Build.SourceBranchName<br />BUILD_SOURCEBRANCHNAME | All (see Notes) | The name of the branch the build was queued for.
                 </p>
                 <ul>
                     <li style="font-size:80%">Git repo branch or pull request: The last path segment in the ref. For example, in `refs/heads/master` this value is `master`.</li>
                     <li style="font-size:80%">TFVC repo branch: The last path segment in the root server path for the workspace. For example in `$/teamproject/main` this value is `main`.</li>
                     <li style="font-size:80%">TFVC repo gated check-in or shelveset build is the name of the shelveset. For example, `Gated_2016-06-06_05.20.51.4369;username@live.com` or `myshelveset;username@live.com`.</li>
                 </ul>
-                <p style="font-size:80%">Note: In TFVC, if you are running a gated check-in build or manually building a shelveset, you cannot use this variable in your build number format.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.SourcesDirectory
-                </p>
-                <p style="font-size:80%">
-                    BUILD_SOURCESDIRECTORY
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                [!INCLUDE [include](_shared/variables-build-sources-directory.md)]
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.SourceVersion
-                </p>
-                <p style="font-size:80%">
-                    BUILD_SOURCEVERSION
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">
-                    The latest version control change that is included in this build.
+                <p style="font-size:80%">Note: In TFVC, if you are running a gated check-in build or manually building a shelveset, you cannot use this variable in your build number format.|
+| Build.SourcesDirectory<br />BUILD_SOURCESDIRECTORY | Agent | [!INCLUDE [include](_shared/variables-build-sources-directory.md)]|
+| Build.SourceVersion<br />BUILD_SOURCEVERSION | Agent | The latest version control change that is included in this build.
                 </p>
                     <ul>
                         <li style="font-size:80%">Git: The [commit](../../git/tutorial/commits.md) ID.</li>
-                        <li style="font-size:80%">TFVC: the [changeset](../../tfvc/find-view-changesets.md).</li>
-                    </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.StagingDirectory
-                </p>
-                <p style="font-size:80%">
-                    BUILD_STAGINGDIRECTORY
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                [!INCLUDE [include](_shared/variables-build-artifacts-directory.md)]
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.Repository.Git.SubmoduleCheckout
-                </p>
-                <p style="font-size:80%">
-                    BUILD_REPOSITORY_GIT_SUBMODULECHECKOUT
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">The value you've selected for **Checkout submodules** on the [repository tab](repository.md).</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    Build.SourceTfvcShelveset
-                </p>
-                <p style="font-size:80%">
-                    BUILD_SOURCETFVCSHELVESET
-                </p>
-            </td>
-            <td style="font-size:80%">All (see Notes)</td>
+                        <li style="font-size:80%">TFVC: the [changeset](../../tfvc/find-view-changesets.md).|
+| Build.StagingDirectory<br />BUILD_STAGINGDIRECTORY | Agent | [!INCLUDE [include](_shared/variables-build-artifacts-directory.md)]|
+| Build.Repository.Git.SubmoduleCheckout<br />BUILD_REPOSITORY_GIT_SUBMODULECHECKOUT | Agent | The value you've selected for **Checkout submodules** on the [repository tab](repository.md).|
+| Build.SourceTfvcShelveset<br />BUILD_SOURCETFVCSHELVESET | All (see Notes)</td>
             <td>
                 <p style="font-size:80%">
                 Defined if your [repository](repository.md) is Team Foundation Version Control.
@@ -683,198 +202,22 @@ You can pass environment variables of the build machine into build steps. For ex
                 <p style="font-size:80%">
                     If you are running a [gated build](triggers.md#gated) or a [shelveset build](../get-started/ci-cd-part-1.md#queueabuild), this is set to the name of the [shelveset](../../tfvc/suspend-your-work-manage-your-shelvesets.md) you are building.
                 </p>
-                <p style="font-size:80%">Note: This variable yields a value that is invalid for build use in a build number format</p>
-            </td>
-        </tr>
-        <tr>
+                <p style="font-size:80%">Note: This variable yields a value that is invalid for build use in a build number format.|
+| Common.TestResultsDirectory<br />COMMON_TESTRESULTSDIRECTORY | Agent | The local path on the agent where the test results are created. For example: `c:\agent\_work\1\TestResults`|
+| System.AccessToken<br />SYSTEM_ACCESSTOKEN | Agent</td>
             <td>
                 <p style="font-size:80%">
-                    Common.TestResultsDirectory
-                </p>
-                <p style="font-size:80%">
-                    COMMON_TESTRESULTSDIRECTORY
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">The local path on the agent where the test results are created. For example: `c:\agent\_work\1\TestResults`
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    System.AccessToken
-                </p>
-                <p style="font-size:80%">
-                    SYSTEM_ACCESSTOKEN
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">
-                    [Use the OAuth token to access the REST API](../scripts/index.md#oauth).
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    System.CollectionId
-                </p>
-                <p style="font-size:80%">
-                    SYSTEM_COLLECTIONID
-                </p>
-            </td>
-            <td style="font-size:80%">All</td>
-            <td>
-                <p style="font-size:80%">
-                    The GUID of the team foundation collection.
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    System.DefaultWorkingDirectory
-                </p>
-                <p style="font-size:80%">
-                    SYSTEM_DEFAULTWORKINGDIRECTORY
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                [!INCLUDE [include](_shared/variables-build-sources-directory.md)]
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    System.DefinitionId
-                </p>
-                <p style="font-size:80%">
-                    SYSTEM_DEFINITIONID
-                </p>
-            </td>
-            <td style="font-size:80%">All</td>
-            <td>
-                <p style="font-size:80%">
-                    The ID of the build definition.
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    System.PullRequest.PullRequestId
-                </p>
-                <p style="font-size:80%">
-                    SYSTEM_PULLREQUEST_PULLREQUESTID
-                </p>
-            </td>
-            <td style="font-size:80%">All</td>
-            <td>
-                <p style="font-size:80%">
-                    The ID of the pull request that caused this build. For example: `17`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../git/branch-policies.md#require-the-pull-request-to-build).)
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    System.PullRequest.SourceBranch
-                </p>
-                <p style="font-size:80%">
-                    SYSTEM_PULLREQUEST_SOURCEBRANCH
-                </p>
-            </td>
-            <td style="font-size:80%">All</td>
-            <td>
-                <p style="font-size:80%">
-                    The branch that is being revewiewed in a pull request. For example: `refs/heads/users/raisa/new-feature`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../git/branch-policies.md#require-the-pull-request-to-build).)
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    System.PullRequest.TargetBranch
-                </p>
-                <p style="font-size:80%">
-                    SYSTEM_PULLREQUEST_TARGETBRANCH
-                </p>
-            </td>
-            <td style="font-size:80%">All</td>
-            <td>
-                <p style="font-size:80%">
-                    The branch that is the target of a pull request. For example: `refs/heads/master`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../git/branch-policies.md#require-the-pull-request-to-build).)
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    System.TeamFoundationCollectionUri
-                </p>
-                <p style="font-size:80%">
-                    SYSTEM_TEAMFOUNDATIONCOLLECTIONURI
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">
-                    The URI of the team foundation collection. For example: `https://fabrikamfiber.visualstudio.com/`.
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    System.TeamProject
-                </p>
-                <p style="font-size:80%">
-                    SYSTEM_TEAMPROJECT
-                </p>
-            </td>
-            <td style="font-size:80%">All</td>
-            <td>
-                <p style="font-size:80%">
-                    The name of the team project that contains this build.
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    System.TeamProjectId
-                </p>
-                <p style="font-size:80%">
-                    SYSTEM_TEAMPROJECTID
-                </p>
-            </td>
-            <td style="font-size:80%">All</td>
-            <td>
-                <p style="font-size:80%">
-                    The ID of the team project that this build belongs to.
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p style="font-size:80%">
-                    TF_BUILD
-                </p>
-            </td>
-            <td style="font-size:80%">Agent</td>
-            <td>
-                <p style="font-size:80%">
-                    Set to `True` if the script is being run by a build step.
-                </p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
+                    [Use the OAuth token to access the REST API](../scripts/index.md#oauth).|
+| System.CollectionId<br />SYSTEM_COLLECTIONID | All | The GUID of the team foundation collection.|
+| System.DefaultWorkingDirectory<br />SYSTEM_DEFAULTWORKINGDIRECTORY | Agent | [!INCLUDE [include](_shared/variables-build-sources-directory.md)]|
+| System.DefinitionId<br />SYSTEM_DEFINITIONID | All | The ID of the build definition.|
+| System.PullRequest.PullRequestId<br />SYSTEM_PULLREQUEST_PULLREQUESTID | All | The ID of the pull request that caused this build. For example: `17`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../git/branch-policies.md#require-the-pull-request-to-build).)|
+| System.PullRequest.SourceBranch<br />SYSTEM_PULLREQUEST_SOURCEBRANCH | All | The branch that is being revewiewed in a pull request. For example: `refs/heads/users/raisa/new-feature`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../git/branch-policies.md#require-the-pull-request-to-build).)|
+| System.PullRequest.TargetBranch<br />SYSTEM_PULLREQUEST_TARGETBRANCH | All | The branch that is the target of a pull request. For example: `refs/heads/master`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../git/branch-policies.md#require-the-pull-request-to-build).)|
+| System.TeamFoundationCollectionUri<br />SYSTEM_TEAMFOUNDATIONCOLLECTIONURI | Agent | The URI of the team foundation collection. For example: `https://fabrikamfiber.visualstudio.com/`.|
+| System.TeamProject<br />SYSTEM_TEAMPROJECT | All | The name of the team project that contains this build.|
+| System.TeamProjectId<br />SYSTEM_TEAMPROJECTID | All | The ID of the team project that this build belongs to.|
+| TF_BUILD | Agent | Set to `True` if the script is being run by a build step. |
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
