@@ -33,33 +33,30 @@ Add steps to specify what you want to build, the tests to run, and all the other
 
 | Task | Versions |
 | ---- | -------- |
-| ![icon](../steps/build/_img/android-build.png)<br />Android Build - deprecated<br/>Use [Gradle](../steps/build/gradle.md) | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build/_img/android-signing.png)<br />[Android Signing](../steps/build/android-signing.md)<br/>Sign and align Android APK files | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build/_img/ant.png)<br />[Ant](../steps/build/ant.md)<br/>Build with Apache Ant | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build/_img/cmake.png)<br />[CMake](../steps/build/cmake.md)<br/>Build with the CMake cross-platform build system | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build/_img/gradle.png)<br />[Gradle](../steps/build/gradle.md)<br/>Build using a Gradle wrapper script | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build/_img/grunt.png)<br />[Grunt](../steps/build/grunt.md)<br/>The JavaScript Task Runner | Team Services, TFS 2015 Update 3 and newer |
-| ![icon](../steps/build/_img/gulp.png)<br />[Gulp](../steps/build/gulp.md)<br/>Node.js streaming task based build system | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build/_img/index-sources-publish-symbols.png)<br />[Index Sources & Publish Symbols](../steps/build/index-sources-publish-symbols.md)<br/>Index your source code and publish symbols to a file share | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build/_img/jenkins-queue-job.png)<br />[Jenkins Queue Job](../steps/build/jenkins-queue-job.md)<br/>Queue a job on a Jenkins server | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build/_img/maven.png)<br />[Maven](../steps/build/maven.md)<br/>Build with Apache Maven | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build/_img/msbuild.png)<br />[MSBuild](../steps/build/msbuild.md)<br/>Build with MSBuild | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/utility/_img/publish-build-artifacts.png)<br />[Publish Build Artifacts](../steps/utility/copy-and-publish-build-artifacts.md)<br/>Publish Build artifacts to the server or a file share | TFS 2015 RTM. Deprecated on Team Services and newer versions of TFS. |
-| ![icon](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png?raw=true"/>[SonarQube for MSBuild - Begin Analysis](http://go.microsoft.com/fwlink/?LinkId=620063)<br/>Fetch the Quality Profile from SonarQube to configure the analysis | Team Services, TFS 2015 Update 3 and newer |
-| ![icon](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePostTest/icon.png?raw=true"/>[SonarQube for MSBuild - End Analysis](http://go.microsoft.com/fwlink/?LinkId=620063)<br/>Finish the analysis and upload the results to SonarQube | Team Services, TFS 2015 Update 3 and newer |
-| ![icon](../steps/build/_img/visual-studio-build.png)<br />[Visual Studio Build](../steps/build/visual-studio-build.md)<br/>Build with MSBuild and set the Visual Studio version property | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build/_img/xamarin-android.png)<br />[Xamarin.Android](../steps/build/xamarin-android.md)<br/>Build an Android app with Xamarin | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build/_img/xamarin-ios.png)<br />[Xamarin.iOS](../steps/build/xamarin-ios.md)<br/>Build an iOS app with Xamarin on Mac OS | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build/_img/xcode-build.png)<br />[Xcode Build](../steps/build/xcode-build.md)<br/>Build an Xcode workspace on Mac OS | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build/_img/xcode-package-ios.png)<br />[Xcode Package iOS](../steps/build/xcode-package-ios.md)<br/>Generate an .ipa file from Xcode build output | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/android-build.png)<br />Android Build - deprecated. Use [Gradle](../steps/build/gradle.md) | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/android-signing.png)<br />[Android Signing](../steps/build/android-signing.md). Sign and align Android APK files | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/ant.png)<br />[Ant](../steps/build/ant.md). Build with Apache Ant | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/cmake.png)<br />[CMake](../steps/build/cmake.md). Build with the CMake cross-platform build system | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/gradle.png)<br />[Gradle](../steps/build/gradle.md). Build using a Gradle wrapper script | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/grunt.png)<br />[Grunt](../steps/build/grunt.md). The JavaScript Task Runner | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](../steps/build/_img/gulp.png)<br />[Gulp](../steps/build/gulp.md). Node.js streaming task based build system | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/index-sources-publish-symbols.png)<br />[Index Sources & Publish Symbols](../steps/build/index-sources-publish-symbols.md). Index your source code and publish symbols to a file share | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/jenkins-queue-job.png)<br />[Jenkins Queue Job](../steps/build/jenkins-queue-job.md). Queue a job on a Jenkins server | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/maven.png)<br />[Maven](../steps/build/maven.md). Build with Apache Maven | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/msbuild.png)<br />[MSBuild](../steps/build/msbuild.md). Build with MSBuild | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/utility/_img/publish-build-artifacts.png)<br />[Publish Build Artifacts](../steps/utility/copy-and-publish-build-artifacts.md). Publish Build artifacts to the server or a file share | TFS 2015 RTM. Deprecated on Team Services and newer versions of TFS. |
+| ![icon](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png)[SonarQube for MSBuild - Begin Analysis](http://go.microsoft.com/fwlink/?LinkId=620063). Fetch the Quality Profile from SonarQube to configure the analysis | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePostTest/icon.png)[SonarQube for MSBuild - End Analysis](http://go.microsoft.com/fwlink/?LinkId=620063). Finish the analysis and upload the results to SonarQube | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](../steps/build/_img/visual-studio-build.png)<br />[Visual Studio Build](../steps/build/visual-studio-build.md). Build with MSBuild and set the Visual Studio version property | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/xamarin-android.png)<br />[Xamarin.Android](../steps/build/xamarin-android.md). Build an Android app with Xamarin | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/xamarin-ios.png)<br />[Xamarin.iOS](../steps/build/xamarin-ios.md). Build an iOS app with Xamarin on Mac OS | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/xcode-build.png)<br />[Xcode Build](../steps/build/xcode-build.md). Build an Xcode workspace on Mac OS | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/xcode-package-ios.png)<br />[Xcode Package iOS](../steps/build/xcode-package-ios.md). Generate an .ipa file from Xcode build output | Team Services, TFS 2015 RTM and newer |
 
 ## Utility
 
-<table>
-        <tr>
-            <th>Task</th>
-      <th>Versions</th>
-        </tr>
+| Task | Versions |
+| ---- | -------- |
 
         <tr>
             | ![icon](../steps/utility/_img/archive-files.png)<br />
@@ -72,14 +69,14 @@ Add steps to specify what you want to build, the tests to run, and all the other
             | ![icon](../steps/utility/_img/batch-script.png)<br />
             [Batch Script](../steps/utility/batch-script.md)<br/>
       Run a windows cmd or bat script and optionally allow it to change the environment</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
+      | Team Services, TFS 2015 RTM and newer |
         </tr>
 
         <tr>
             | ![icon](../steps/utility/_img/command-line.png)<br />
             [Command Line](../steps/utility/command-line.md)<br/>
       Run a command line with arguments</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
+      | Team Services, TFS 2015 RTM and newer |
         </tr>
 
     <tr>
@@ -94,14 +91,14 @@ Add steps to specify what you want to build, the tests to run, and all the other
       [Copy Files](../steps/utility/copy-files.md)<br/>
       Copy files from source folder to target folder using minimatch patterns (The minimatch patterns will only match file paths, not folder paths)
       </td>
-      <td>Team Services, TFS 2015 Update 3 and newer</td>
+      | Team Services, TFS 2015 Update 3 and newer |
     </tr>
 
         <tr>
             | ![icon](../steps/utility/_img/curl-upload-files.png)<br />
             [cURL Upload Files](../steps/utility/curl-upload-files.md)<br/>
       Use cURL to upload files with supported protocols. (FTP, FTPS, SFTP, HTTP, and more)</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
+      | Team Services, TFS 2015 RTM and newer |
         </tr>
 
         <tr>
@@ -109,7 +106,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
       [Delete Files](../steps/utility/delete-files.md)<br/>
       Delete files or folders.
       </td>
-      <td>Team Services, TFS 2015 Update 3 and newer</td>
+      | Team Services, TFS 2015 Update 3 and newer |
     </tr>
 
     <tr>
@@ -145,7 +142,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
             | ![icon](../steps/utility/_img/powershell.png)<br />
             [PowerShell](../steps/utility/powershell.md)<br/>
       Run a PowerShell script</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
+      | Team Services, TFS 2015 RTM and newer |
         </tr>
 
   <tr>
@@ -166,7 +163,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
             | ![icon](../steps/utility/_img/shell-script.png)<br />
             [Shell Script](../steps/utility/shell-script.md)<br/>
       Run a shell script using bash</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
+      | Team Services, TFS 2015 RTM and newer |
         </tr>
 
         <tr>
@@ -180,112 +177,35 @@ Add steps to specify what you want to build, the tests to run, and all the other
       | ![icon](../steps/utility/_img/xamarin-license.png)<br />
       [Xamarin License](../steps/utility/xamarin-license.md)<br/>
       Activate or deactivate Xamarin licenses</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
+      | Team Services, TFS 2015 RTM and newer |
         </tr>
 </table>
 
 ## Test
 
-<table>
-        <tr>
-            <th>Task</th>
-      <th>Versions</th>
-        </tr>
-
-        <tr>
-      | ![icon](../steps/test/_img/apache-jmeter-load-test.png)<br />
-            [Cloud-based Apache JMeter Load Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/RunJMeterLoadTest)<br/>
-      Runs the Apache JMeter load test in cloud
-      </td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-      | ![icon](../steps/test/_img/cloud-based-load-test-icon.png)<br />
-            [Cloud-based Load Test](../steps/test/cloud-based-load-test.md)<br/> 
-      Runs the load test in cloud, with Visual Studio Team Services
-      </td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-      | ![icon](../steps/test/_img/web-based-perf-icon.png)<br />
-            [Cloud-based Web Performance Test](../steps/test/cloud-based-web-performance-test.md)<br/>
-      Runs the quick web performance test in cloud, with Visual Studio Team Services
-      </td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-       | ![icon](../steps/test/_img/mobile-center-test-icon.png)<br />
-       [Mobile Center Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VSMobileCenterTest)<br/>
-      Test mobile app packages with Visual Studio Mobile Center
-       </td>
-      <td>Team Services, TFS 2015 Update 3 and newer</td>
-        </tr>
-
-        <tr>
-       | ![icon](../steps/test/_img/publish-code-coverage-results-icon.png)<br />
-       [Publish Code Coverage Results](../steps/test/publish-code-coverage-results.md)<br/>
-      Publish code coverage results to VSTS/TFS
-       </td>
-      <td>Team Services, TFS 2015 Update 3 and newer</td>
-        </tr>
-
-        <tr>
-       | ![icon](../steps/test/_img/publish-test-results-icon.png)<br />
-       [Publish Test Results](../steps/test/publish-test-results.md)<br/>
-       Publish Test Results to Visual Studio Team Services/TFS
-       </td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-    <tr>
-      | ![icon](../steps/test/_img/run-functional-tests-icon.png)<br />
-      [Run Functional Tests](../steps/test/run-functional-tests.md)<br/>
-      Run Coded UI/Selenium/Functional tests on a set of machines (using Test Agent)
-      </td>
-      <td>Team Services, TFS 2015 Update 3 and newer</td>
-    </tr>
-
-        <tr>
-      | ![icon](../steps/test/_img/visual-studio-test-icon.png)<br />
-            [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)<br/>
-            [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)<br/>
-      Run tests with Visual Studio test runner
-      </td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-            | ![icon](../steps/test/_img/visual-studio-test-agent-deployment-icon.png)<br />
-            [Visual Studio Test Agent Deployment](../steps/test/visual-studio-test-agent-deployment.md)<br/>
-      Deploy and configure Test Agent to run tests on a lab machine group
-      </td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-            | ![icon](../steps/test/_img/xamarin-test-cloud-icon.png)<br />
-            [Xamarin Test Cloud](../steps/test/xamarin-test-cloud.md)<br/>
-      Test mobile apps with Xamarin Test Cloud using Xamarin.UITest</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-</table>
+| Task | Versions |
+| ---- | -------- |
+| ![icon](../steps/test/_img/apache-jmeter-load-test.png)<br />[Cloud-based Apache JMeter Load Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/RunJMeterLoadTest). Runs the Apache JMeter load test in cloud | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/test/_img/cloud-based-load-test-icon.png)<br />[Cloud-based Load Test](../steps/test/cloud-based-load-test.md). Runs the load test in cloud, with Visual Studio Team Services | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/test/_img/web-based-perf-icon.png)<br />[Cloud-based Web Performance Test](../steps/test/cloud-based-web-performance-test.md). Runs the quick web performance test in cloud, with Visual Studio Team Services | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/test/_img/mobile-center-test-icon.png)<br />[Mobile Center Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VSMobileCenterTest). Test mobile app packages with Visual Studio Mobile Center | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](../steps/test/_img/publish-code-coverage-results-icon.png)<br />[Publish Code Coverage Results](../steps/test/publish-code-coverage-results.md). Publish code coverage results to VSTS/TFS | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](../steps/test/_img/publish-test-results-icon.png)<br />[Publish Test Results](../steps/test/publish-test-results.md). Publish Test Results to Visual Studio Team Services/TFS | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/test/_img/run-functional-tests-icon.png)<br />[Run Functional Tests](../steps/test/run-functional-tests.md). Run Coded UI/Selenium/Functional tests on a set of machines (using Test Agent) | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](../steps/test/_img/visual-studio-test-icon.png)<br />[Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md). [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)<br/>Run tests with Visual Studio test runner | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/test/_img/visual-studio-test-agent-deployment-icon.png)<br />[Visual Studio Test Agent Deployment](../steps/test/visual-studio-test-agent-deployment.md). Deploy and configure Test Agent to run tests on a lab machine group | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/test/_img/xamarin-test-cloud-icon.png)<br />[Xamarin Test Cloud](../steps/test/xamarin-test-cloud.md). Test mobile apps with Xamarin Test Cloud using Xamarin.UITest | Team Services, TFS 2015 RTM and newer |
 
 ## Package
 
-<table>
-        <tr>
-            <th>Task</th>
-      <th>Versions</th>
-        </tr>
+| Task | Versions |
+| ---- | -------- |
         <tr>
             | ![icon](../steps/package/_img/cocoapods.png)<br />
             [CocoaPods](../steps/package/cocoapods.md)<br/>
       CocoaPods is the dependency manager for Swift and Objective-C Cocoa projects. Runs pod install
       </td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
+      | Team Services, TFS 2015 RTM and newer |
         </tr>
 
         <tr>
@@ -293,7 +213,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
             [npm](../steps/package/npm-install.md)<br/>
       Install npm packages
       </td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
+      | Team Services, TFS 2015 RTM and newer |
         </tr>
 
         <tr>
@@ -301,7 +221,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
             [NuGet Installer](../steps/package/nuget-installer.md)<br/>
       Installs and updates missing NuGet packages
       </td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
+      | Team Services, TFS 2015 RTM and newer |
         </tr>
 
     <tr>
@@ -309,7 +229,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
             [NuGet Packager](../steps/package/nuget-packager.md)<br/>
       Creates nupkg outputs from csproj or nuspec files
       </td>
-      <td>Team Services, TFS 2015 Update 3 and newer</td>
+      | Team Services, TFS 2015 Update 3 and newer |
         </tr>
 
     <tr>
@@ -317,7 +237,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
             [NuGet Publisher](../steps/package/nuget-publisher.md)<br/>
       Uploads nupkg files to a nuget server
       </td>
-      <td>Team Services, TFS 2015 Update 3 and newer</td>
+      | Team Services, TFS 2015 Update 3 and newer |
         </tr>
 
     <tr>
@@ -329,11 +249,8 @@ Add steps to specify what you want to build, the tests to run, and all the other
 
 ## Deploy
 
-<table>
-  <tr>
-    <th>Task</th>
-      <th>Versions</th>
-  </tr>
+| Task | Versions |
+| ---- | -------- |
 
   <tr>
        | ![icon](../steps/deploy/_img/azure-web-app-deployment-icon.png)<br />
@@ -364,7 +281,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
        [Azure Cloud Service Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureCloudPowerShellDeployment)<br/>
       Deploy an Azure Cloud Service
       </td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
+      | Team Services, TFS 2015 RTM and newer |
         </tr>
 
         <tr>
@@ -372,7 +289,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
        [Azure File Copy](../steps/deploy/azure-file-copy.md)<br/> 
       Copy files to Azure blob or VM(s)
        </td>
-      <td>Team Services, TFS 2015 Update 3 and newer</td>
+      | Team Services, TFS 2015 Update 3 and newer |
     </tr>
 
   <tr>
@@ -388,7 +305,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
        [Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell)<br/>
       Run a PowerShell script within an Azure environment
       </td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
+      | Team Services, TFS 2015 RTM and newer |
         </tr>
 
         <tr>
@@ -396,7 +313,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
        [Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment)<br/> 
       Deploy, start, stop, delete Azure Resource Groups
        </td>
-      <td>Team Services, TFS 2015 Update 3 and newer</td>
+      | Team Services, TFS 2015 Update 3 and newer |
     </tr>
 
     <tr>
@@ -404,7 +321,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
        [Azure SQL Database Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment)<br/> 
       Deploy Azure SQL DB using DACPAC
        </td>
-      <td>Team Services, TFS 2015 Update 3 and newer</td>
+      | Team Services, TFS 2015 Update 3 and newer |
     </tr>
 
     <tr>
@@ -440,7 +357,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
       [Mobile Center Upload](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VSMobileCenterUpload)<br/>
       Upload mobile app packages to Visual Studio Mobile Center
       </td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
+      | Team Services, TFS 2015 RTM and newer |
     </tr>
 
     <tr>
@@ -448,7 +365,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
       [PowerShell on Target Machines](../steps/deploy/powershell-on-target-machines.md)<br/>
       Execute PowerShell scripts on remote machine(s)
       </td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
+      | Team Services, TFS 2015 RTM and newer |
     </tr>
 
     <tr>
@@ -479,7 +396,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
       | ![icon](../steps/deploy/_img/windows-machine-file-copy-icon.png)<br />
       [Windows Machine File Copy](../steps/deploy/windows-machine-file-copy.md)<br/>
       Copy files to remote machine(s)</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
+      | Team Services, TFS 2015 RTM and newer |
     </tr>
 </table>
 
