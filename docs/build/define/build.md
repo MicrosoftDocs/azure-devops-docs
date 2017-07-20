@@ -31,13 +31,9 @@ Add steps to specify what you want to build, the tests to run, and all the other
 
 ## Build
 
-<table>
-        <tr>
-            <th>Task</th>
-      <th>Versions</th>
-        </tr>
-        <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/android-build.png"/>
+| Task | Versions |
+| ---- | -------- |
+| ![icon](../steps/build/_img/android-build.png)<br />
             Android Build - deprecated<br/>
       Use [Gradle](../steps/build/gradle.md)</td>
       <td>Team Services, TFS 2015 RTM and newer</td>

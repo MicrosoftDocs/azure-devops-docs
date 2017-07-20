@@ -26,7 +26,7 @@ DotNetFramework
 | Script filename | Specify the path to the script to you want to run. The path must be a fully qualified path or a valid path relative to the default working directory. In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../define/variables.md). |
 | Arguments | Specify arguments to pass to the script. You can use ordinal or named parameters. |
 | Advanced - Working folder | Specify the working directory in which you want to run the script. If you leave it empty, the working directory is the folder where the script is located. |
-| [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] |
+| [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
 
 ## Examples
 
