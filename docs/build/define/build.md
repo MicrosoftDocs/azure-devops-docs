@@ -45,8 +45,8 @@ Add steps to specify what you want to build, the tests to run, and all the other
 | ![icon](../steps/build/_img/maven.png)<br />[Maven](../steps/build/maven.md). Build with Apache Maven | Team Services, TFS 2015 RTM and newer |
 | ![icon](../steps/build/_img/msbuild.png)<br />[MSBuild](../steps/build/msbuild.md). Build with MSBuild | Team Services, TFS 2015 RTM and newer |
 | ![icon](../steps/utility/_img/publish-build-artifacts.png)<br />[Publish Build Artifacts](../steps/utility/copy-and-publish-build-artifacts.md). Publish Build artifacts to the server or a file share | TFS 2015 RTM. Deprecated on Team Services and newer versions of TFS. |
-| ![icon](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png)[SonarQube for MSBuild - Begin Analysis](http://go.microsoft.com/fwlink/?LinkId=620063). Fetch the Quality Profile from SonarQube to configure the analysis | Team Services, TFS 2015 Update 3 and newer |
-| ![icon](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePostTest/icon.png)[SonarQube for MSBuild - End Analysis](http://go.microsoft.com/fwlink/?LinkId=620063). Finish the analysis and upload the results to SonarQube | Team Services, TFS 2015 Update 3 and newer |
+| [SonarQube for MSBuild - Begin Analysis](http://go.microsoft.com/fwlink/?LinkId=620063). Fetch the Quality Profile from SonarQube to configure the analysis | Team Services, TFS 2015 Update 3 and newer |
+| [SonarQube for MSBuild - End Analysis](http://go.microsoft.com/fwlink/?LinkId=620063). Finish the analysis and upload the results to SonarQube | Team Services, TFS 2015 Update 3 and newer |
 | ![icon](../steps/build/_img/visual-studio-build.png)<br />[Visual Studio Build](../steps/build/visual-studio-build.md). Build with MSBuild and set the Visual Studio version property | Team Services, TFS 2015 RTM and newer |
 | ![icon](../steps/build/_img/xamarin-android.png)<br />[Xamarin.Android](../steps/build/xamarin-android.md). Build an Android app with Xamarin | Team Services, TFS 2015 RTM and newer |
 | ![icon](../steps/build/_img/xamarin-ios.png)<br />[Xamarin.iOS](../steps/build/xamarin-ios.md). Build an iOS app with Xamarin on Mac OS | Team Services, TFS 2015 RTM and newer |
@@ -57,129 +57,23 @@ Add steps to specify what you want to build, the tests to run, and all the other
 
 | Task | Versions |
 | ---- | -------- |
-
-        <tr>
-            | ![icon](../steps/utility/_img/archive-files.png)<br />
-            [Archive Files](../steps/utility/archive-files.md)<br/>
-      Archive files using a variety of compression formats such as .7z, .rar, .tar.gz, and .zip.</td>
-      <td>Team Services, TFS 2017</td>
-        </tr>
-
-        <tr>
-            | ![icon](../steps/utility/_img/batch-script.png)<br />
-            [Batch Script](../steps/utility/batch-script.md)<br/>
-      Run a windows cmd or bat script and optionally allow it to change the environment</td>
-      | Team Services, TFS 2015 RTM and newer |
-        </tr>
-
-        <tr>
-            | ![icon](../steps/utility/_img/command-line.png)<br />
-            [Command Line](../steps/utility/command-line.md)<br/>
-      Run a command line with arguments</td>
-      | Team Services, TFS 2015 RTM and newer |
-        </tr>
-
-    <tr>
-      | ![icon](../steps/utility/_img/copy-and-publish-build-artifacts.png)<br />
-      [Copy and Publish Build Artifacts](../steps/utility/copy-and-publish-build-artifacts.md)<br/>
-      Copy Build artifacts to staging folder then publish Build artifacts to the server or a file share</td>
-      <td>TFS 2015 RTM. Deprecated on Team Services and newer versions of TFS.</td>
-    </tr>
-
-    <tr>
-      | ![icon](../steps/utility/_img/copy-files.png)<br />
-      [Copy Files](../steps/utility/copy-files.md)<br/>
-      Copy files from source folder to target folder using minimatch patterns (The minimatch patterns will only match file paths, not folder paths)
-      </td>
-      | Team Services, TFS 2015 Update 3 and newer |
-    </tr>
-
-        <tr>
-            | ![icon](../steps/utility/_img/curl-upload-files.png)<br />
-            [cURL Upload Files](../steps/utility/curl-upload-files.md)<br/>
-      Use cURL to upload files with supported protocols. (FTP, FTPS, SFTP, HTTP, and more)</td>
-      | Team Services, TFS 2015 RTM and newer |
-        </tr>
-
-        <tr>
-      | ![icon](../steps/utility/_img/delete-files.png)<br />
-      [Delete Files](../steps/utility/delete-files.md)<br/>
-      Delete files or folders.
-      </td>
-      | Team Services, TFS 2015 Update 3 and newer |
-    </tr>
-
-    <tr>
-        | ![icon](../steps/utility/_img/extract-files.png)<br />
-        [Extract Files](../steps/utility/extract-files.md)<br />
-    Extract files from archives (.zip, .jar, .war, .ear, .tar, .7z., and others) to a target folder.
-        </td>
-    <td>Team Services, TFS 2017</td>
-    </tr>
-
-    <tr>
-      | ![icon](../steps/utility/_img/ftp-upload.png)<br />
-      [FTP Upload](../steps/utility/ftp-upload.md)<br/>
-      Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS.</td>
-      <td>Team Services, TFS 2017</td>
-    </tr>
-
-    <tr>
-      | ![icon](../steps/build/_img/xcode-build.png)<br />
-      [Install Apple Certificate](../steps/utility/install-apple-certificate.md)<br/>
-      Install an Apple certificate required to build on a macOS agent.</td>
-      <td>Team Services</td>
-    </tr>
-
-    <tr>
-      | ![icon](../steps/build/_img/xcode-build.png)<br />
-      [Install Apple Provisioning Profile](../steps/utility/install-apple-provisioning-profile.md)<br/>
-      Install an Apple provisioning profile required to build on a macOS agent.</td>
-      <td>Team Services</td>
-    </tr>
-
-        <tr>
-            | ![icon](../steps/utility/_img/powershell.png)<br />
-            [PowerShell](../steps/utility/powershell.md)<br/>
-      Run a PowerShell script</td>
-      | Team Services, TFS 2015 RTM and newer |
-        </tr>
-
-  <tr>
-            | ![icon](../steps/utility/_img/publish-build-artifacts.png)<br />
-            [Publish Build Artifacts](../steps/utility/publish-build-artifacts.md)<br/>
-      Publish Build artifacts to the server or a file share</td>
-      <td>Team Services, TFS Update 3 and newer</td>
-    </tr>
-
-        <tr>
-      | ![icon](../steps/utility/_img/azure-service-fabric.png)<br />
-      [Service Fabric PowerShell](../steps/utility/service-fabric-powershell.md)<br/>
-      Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized.</td>
-      <td>Team Services</td>
-        </tr>
-
-        <tr>
-            | ![icon](../steps/utility/_img/shell-script.png)<br />
-            [Shell Script](../steps/utility/shell-script.md)<br/>
-      Run a shell script using bash</td>
-      | Team Services, TFS 2015 RTM and newer |
-        </tr>
-
-        <tr>
-      | ![icon](../steps/utility/_img/azure-service-fabric.png)<br />
-      [Update Service Fabric App Versions](../steps/utility/service-fabric-versioning.md)<br/>
-      Automatically updates the versions of a packaged Service Fabric application</td>
-      <td>Team Services, TFS 2017</td>
-        </tr>
-
-        <tr>
-      | ![icon](../steps/utility/_img/xamarin-license.png)<br />
-      [Xamarin License](../steps/utility/xamarin-license.md)<br/>
-      Activate or deactivate Xamarin licenses</td>
-      | Team Services, TFS 2015 RTM and newer |
-        </tr>
-</table>
+| ![icon](../steps/utility/_img/archive-files.png)<br />[Archive Files](../steps/utility/archive-files.md). Archive files using a variety of compression formats such as .7z, .rar, .tar.gz, and .zip. | Team Services, TFS 2017 |
+| ![icon](../steps/utility/_img/batch-script.png)<br />[Batch Script](../steps/utility/batch-script.md). Run a windows cmd or bat script and optionally allow it to change the environment | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/utility/_img/command-line.png)<br />[Command Line](../steps/utility/command-line.md). Run a command line with arguments | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/utility/_img/copy-and-publish-build-artifacts.png)<br />[Copy and Publish Build Artifacts](../steps/utility/copy-and-publish-build-artifacts.md). Copy Build artifacts to staging folder then publish Build artifacts to the server or a file share | TFS 2015 RTM. Deprecated on Team Services and newer versions of TFS. |
+| ![icon](../steps/utility/_img/copy-files.png)<br />[Copy Files](../steps/utility/copy-files.md). Copy files from source folder to target folder using minimatch patterns (The minimatch patterns will only match file paths, not folder paths). | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](../steps/utility/_img/curl-upload-files.png)<br />[cURL Upload Files](../steps/utility/curl-upload-files.md). Use cURL to upload files with supported protocols. (FTP, FTPS, SFTP, HTTP, and more) | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/utility/_img/delete-files.png)<br />[Delete Files](../steps/utility/delete-files.md). Delete files or folders. | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](../steps/utility/_img/extract-files.png)<br />[Extract Files](../steps/utility/extract-files.md). Extract files from archives (.zip, .jar, .war, .ear, .tar, .7z., and others) to a target folder. | Team Services, TFS 2017 |
+| ![icon](../steps/utility/_img/ftp-upload.png)<br />[FTP Upload](../steps/utility/ftp-upload.md). Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS. | Team Services, TFS 2017 |
+| ![icon](../steps/build/_img/xcode-build.png)<br />[Install Apple Certificate](../steps/utility/install-apple-certificate.md). Install an Apple certificate required to build on a macOS agent. | Team Services |
+| ![icon](../steps/build/_img/xcode-build.png)<br />[Install Apple Provisioning Profile](../steps/utility/install-apple-provisioning-profile.md). Install an Apple provisioning profile required to build on a macOS agent. | Team Services |
+| ![icon](../steps/utility/_img/powershell.png)<br />[PowerShell](../steps/utility/powershell.md). Run a PowerShell script | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/utility/_img/publish-build-artifacts.png)<br />[Publish Build Artifacts](../steps/utility/publish-build-artifacts.md). Publish Build artifacts to the server or a file share | Team Services, TFS Update 3 and newer |
+| ![icon](../steps/utility/_img/azure-service-fabric.png)<br />[Service Fabric PowerShell](../steps/utility/service-fabric-powershell.md). Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized. | Team Services |
+| ![icon](../steps/utility/_img/shell-script.png)<br />[Shell Script](../steps/utility/shell-script.md). Run a shell script using bash | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/utility/_img/azure-service-fabric.png)<br />[Update Service Fabric App Versions](../steps/utility/service-fabric-versioning.md). Automatically updates the versions of a packaged Service Fabric application | Team Services, TFS 2017 |
+| ![icon](../steps/utility/_img/xamarin-license.png)<br />[Xamarin License](../steps/utility/xamarin-license.md). Activate or deactivate Xamarin licenses | Team Services, TFS 2015 RTM and newer |
 
 ## Test
 
@@ -243,7 +137,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
     <tr>
       | ![icon](../steps/package/_img/xamarin-component-restore.png)<br />
       [Xamarin component restore](../steps/package/xamarin-component-restore.md)<br/>Restores Xamarin components for the specified solution</td>
-      <td>Team Services, TFS 2017</td>
+      | Team Services, TFS 2017 |
     </tr>
 </table>
 
@@ -257,7 +151,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
        [Azure App Service Deploy](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment)<br/>
       Update Azure App Service using Web Deploy / Kudu REST APIs
       </td>
-      <td>Team Services, TFS 2017</td>
+      | Team Services, TFS 2017 |
   </tr>
 
   <tr>
@@ -265,7 +159,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
        [Azure App Service Manage](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureAppServiceManage)<br/>
       Start, Stop, Restart or Slot swap for an Azure App Service
       </td>
-      <td>Team Services, TFS 2017</td>
+      | Team Services, TFS 2017 |
   </tr>
 
   <tr>
@@ -273,7 +167,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
        [Azure CLI](../steps/deploy/azure-cli.md)<br/>
       Run a shell or batch script containing Azure CLI commands against an Azure subscription
       </td>
-      <td>Team Services, TFS 2017</td>
+      | Team Services, TFS 2017 |
   </tr>
 
   <tr>
@@ -328,7 +222,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
       | ![icon](../steps/deploy/_img/ssh.png)<br />
       [Copy Files Over SSH](../steps/deploy/copy-files-over-ssh.md)<br/>
       Copy files from source folder to target folder on a remote machine over SSH</td>
-      <td>Team Services, TFS 2017</td>
+      | Team Services, TFS 2017 |
     </tr>
 
     <tr>
@@ -349,7 +243,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
       | ![icon](../steps/deploy/_img/manual-intervention-icon.png)<br />
       [Manual Intervention](../concepts/process/phases.md#the-manual-intervention-task)<br/>
       Pause deployment and wait for intervention</td>
-      <td>Team Services, TFS 2017</td>
+      | Team Services, TFS 2017 |
     </tr>
 
     <tr>
@@ -373,7 +267,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
       [Service Fabric Application Deployment](../steps/deploy/service-fabric-deploy.md)<br/>
       Deploy a Service Fabric application to a cluster
       </td>
-      <td>Team Services, TFS 2017</td>
+      | Team Services, TFS 2017 |
     </tr>
 
     <tr>
@@ -389,7 +283,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
       [SSH](../steps/deploy/ssh.md)<br/>
       Run shell commands or a script on a remote machine using SSH
       </td>
-      <td>Team Services, TFS 2017</td>
+      | Team Services, TFS 2017 |
     </tr>
 
     <tr>
