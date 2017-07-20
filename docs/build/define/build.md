@@ -33,138 +33,25 @@ Add steps to specify what you want to build, the tests to run, and all the other
 
 | Task | Versions |
 | ---- | -------- |
-| ![icon](../steps/build/_img/android-build.png)<br />
-            Android Build - deprecated<br/>
-      Use [Gradle](../steps/build/gradle.md)</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/android-signing.png"/>
-            [Android Signing](../steps/build/android-signing.md)<br/>
-      Sign and align Android APK files</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-        <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/ant.png"/>
-            [Ant](../steps/build/ant.md)<br/>
-      Build with Apache Ant</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/cmake.png"/>
-            [CMake](../steps/build/cmake.md)<br/>
-      Build with the CMake cross-platform build system</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/gradle.png"/>
-            [Gradle](../steps/build/gradle.md)<br/>
-      Build using a Gradle wrapper script</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/grunt.png"/>
-            [Grunt](../steps/build/grunt.md)<br/>
-      The JavaScript Task Runner</td>
-      <td>Team Services, TFS 2015 Update 3 and newer</td>
-        </tr>
-
-        <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/gulp.png"/>
-            [Gulp](../steps/build/gulp.md) <br/>
-      Node.js streaming task based build system</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/index-sources-publish-symbols.png"/>
-            [Index Sources & Publish Symbols](../steps/build/index-sources-publish-symbols.md)<br/>
-      Index your source code and publish symbols to a file share</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/jenkins-queue-job.png"/>
-            [Jenkins Queue Job](../steps/build/jenkins-queue-job.md)<br/>
-      Queue a job on a Jenkins server</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/maven.png"/>
-            [Maven](../steps/build/maven.md)<br/>
-      Build with Apache Maven</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/msbuild.png"/>
-            [MSBuild](../steps/build/msbuild.md)<br/>
-      Build with MSBuild</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-    <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/utility/_img/publish-build-artifacts.png"/>
-      [Publish Build Artifacts](../steps/utility/copy-and-publish-build-artifacts.md)<br/>
-      Publish Build artifacts to the server or a file share</td>
-      <td>TFS 2015 RTM. Deprecated on Team Services and newer versions of TFS.</td>
-    </tr>
-
-        <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png?raw=true"/>
-            [SonarQube for MSBuild - Begin Analysis](http://go.microsoft.com/fwlink/?LinkId=620063)<br/>
-      Fetch the Quality Profile from SonarQube to configure the analysis</td>
-      <td>Team Services, TFS 2015 Update 3 and newer</td>
-        </tr>
-
-        <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePostTest/icon.png?raw=true"/>
-            [SonarQube for MSBuild - End Analysis](http://go.microsoft.com/fwlink/?LinkId=620063)<br/>
-      Finish the analysis and upload the results to SonarQube</td>
-      <td>Team Services, TFS 2015 Update 3 and newer</td>
-        </tr>
-
-        <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/visual-studio-build.png"/>
-            [Visual Studio Build](../steps/build/visual-studio-build.md)<br/>
-      Build with MSBuild and set the Visual Studio version property</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/xamarin-android.png"/>
-      [Xamarin.Android](../steps/build/xamarin-android.md)<br/>
-      Build an Android app with Xamarin</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/xamarin-ios.png"/>
-      [Xamarin.iOS](../steps/build/xamarin-ios.md)<br/>
-      Build an iOS app with Xamarin on Mac OS</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/xcode-build.png"/>
-            [Xcode Build](../steps/build/xcode-build.md)<br/>
-      Build an Xcode workspace on Mac OS</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-
-        <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/xcode-package-ios.png"/>
-            [Xcode Package iOS](../steps/build/xcode-package-ios.md)<br/>
-      Generate an .ipa file from Xcode build output</td>
-      <td>Team Services, TFS 2015 RTM and newer</td>
-        </tr>
-</table>
-
+| ![icon](../steps/build/_img/android-build.png)<br />Android Build - deprecated<br/>Use [Gradle](../steps/build/gradle.md) | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/android-signing.png)<br />[Android Signing](../steps/build/android-signing.md)<br/>Sign and align Android APK files | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/ant.png)<br />[Ant](../steps/build/ant.md)<br/>Build with Apache Ant | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/cmake.png)<br />[CMake](../steps/build/cmake.md)<br/>Build with the CMake cross-platform build system | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/gradle.png)<br />[Gradle](../steps/build/gradle.md)<br/>Build using a Gradle wrapper script | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/grunt.png)<br />[Grunt](../steps/build/grunt.md)<br/>The JavaScript Task Runner | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](../steps/build/_img/gulp.png)<br />[Gulp](../steps/build/gulp.md)<br/>Node.js streaming task based build system | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/index-sources-publish-symbols.png)<br />[Index Sources & Publish Symbols](../steps/build/index-sources-publish-symbols.md)<br/>Index your source code and publish symbols to a file share | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/jenkins-queue-job.png)<br />[Jenkins Queue Job](../steps/build/jenkins-queue-job.md)<br/>Queue a job on a Jenkins server | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/maven.png)<br />[Maven](../steps/build/maven.md)<br/>Build with Apache Maven | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/msbuild.png)<br />[MSBuild](../steps/build/msbuild.md)<br/>Build with MSBuild | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/utility/_img/publish-build-artifacts.png)<br />[Publish Build Artifacts](../steps/utility/copy-and-publish-build-artifacts.md)<br/>Publish Build artifacts to the server or a file share | TFS 2015 RTM. Deprecated on Team Services and newer versions of TFS. |
+| ![icon](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png?raw=true"/>[SonarQube for MSBuild - Begin Analysis](http://go.microsoft.com/fwlink/?LinkId=620063)<br/>Fetch the Quality Profile from SonarQube to configure the analysis | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePostTest/icon.png?raw=true"/>[SonarQube for MSBuild - End Analysis](http://go.microsoft.com/fwlink/?LinkId=620063)<br/>Finish the analysis and upload the results to SonarQube | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](../steps/build/_img/visual-studio-build.png)<br />[Visual Studio Build](../steps/build/visual-studio-build.md)<br/>Build with MSBuild and set the Visual Studio version property | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/xamarin-android.png)<br />[Xamarin.Android](../steps/build/xamarin-android.md)<br/>Build an Android app with Xamarin | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/xamarin-ios.png)<br />[Xamarin.iOS](../steps/build/xamarin-ios.md)<br/>Build an iOS app with Xamarin on Mac OS | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/xcode-build.png)<br />[Xcode Build](../steps/build/xcode-build.md)<br/>Build an Xcode workspace on Mac OS | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/xcode-package-ios.png)<br />[Xcode Package iOS](../steps/build/xcode-package-ios.md)<br/>Generate an .ipa file from Xcode build output | Team Services, TFS 2015 RTM and newer |
 
 ## Utility
 
@@ -175,35 +62,35 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
         <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/utility/_img/archive-files.png"/>
+            | ![icon](../steps/utility/_img/archive-files.png)<br />
             [Archive Files](../steps/utility/archive-files.md)<br/>
       Archive files using a variety of compression formats such as .7z, .rar, .tar.gz, and .zip.</td>
       <td>Team Services, TFS 2017</td>
         </tr>
 
         <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/utility/_img/batch-script.png"/>
+            | ![icon](../steps/utility/_img/batch-script.png)<br />
             [Batch Script](../steps/utility/batch-script.md)<br/>
       Run a windows cmd or bat script and optionally allow it to change the environment</td>
       <td>Team Services, TFS 2015 RTM and newer</td>
         </tr>
 
         <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/utility/_img/command-line.png"/>
+            | ![icon](../steps/utility/_img/command-line.png)<br />
             [Command Line](../steps/utility/command-line.md)<br/>
       Run a command line with arguments</td>
       <td>Team Services, TFS 2015 RTM and newer</td>
         </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/utility/_img/copy-and-publish-build-artifacts.png"/>
+      | ![icon](../steps/utility/_img/copy-and-publish-build-artifacts.png)<br />
       [Copy and Publish Build Artifacts](../steps/utility/copy-and-publish-build-artifacts.md)<br/>
       Copy Build artifacts to staging folder then publish Build artifacts to the server or a file share</td>
       <td>TFS 2015 RTM. Deprecated on Team Services and newer versions of TFS.</td>
     </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/utility/_img/copy-files.png"/>
+      | ![icon](../steps/utility/_img/copy-files.png)<br />
       [Copy Files](../steps/utility/copy-files.md)<br/>
       Copy files from source folder to target folder using minimatch patterns (The minimatch patterns will only match file paths, not folder paths)
       </td>
@@ -211,14 +98,14 @@ Add steps to specify what you want to build, the tests to run, and all the other
     </tr>
 
         <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/utility/_img/curl-upload-files.png"/>
+            | ![icon](../steps/utility/_img/curl-upload-files.png)<br />
             [cURL Upload Files](../steps/utility/curl-upload-files.md)<br/>
       Use cURL to upload files with supported protocols. (FTP, FTPS, SFTP, HTTP, and more)</td>
       <td>Team Services, TFS 2015 RTM and newer</td>
         </tr>
 
         <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/utility/_img/delete-files.png"/>
+      | ![icon](../steps/utility/_img/delete-files.png)<br />
       [Delete Files](../steps/utility/delete-files.md)<br/>
       Delete files or folders.
       </td>
@@ -226,7 +113,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
     </tr>
 
     <tr>
-        <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/utility/_img/extract-files.png"/>
+        | ![icon](../steps/utility/_img/extract-files.png)<br />
         [Extract Files](../steps/utility/extract-files.md)<br />
     Extract files from archives (.zip, .jar, .war, .ear, .tar, .7z., and others) to a target folder.
         </td>
@@ -234,63 +121,63 @@ Add steps to specify what you want to build, the tests to run, and all the other
     </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/utility/_img/ftp-upload.png"/>
+      | ![icon](../steps/utility/_img/ftp-upload.png)<br />
       [FTP Upload](../steps/utility/ftp-upload.md)<br/>
       Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS.</td>
       <td>Team Services, TFS 2017</td>
     </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/xcode-build.png"/>
+      | ![icon](../steps/build/_img/xcode-build.png)<br />
       [Install Apple Certificate](../steps/utility/install-apple-certificate.md)<br/>
       Install an Apple certificate required to build on a macOS agent.</td>
       <td>Team Services</td>
     </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/build/_img/xcode-build.png"/>
+      | ![icon](../steps/build/_img/xcode-build.png)<br />
       [Install Apple Provisioning Profile](../steps/utility/install-apple-provisioning-profile.md)<br/>
       Install an Apple provisioning profile required to build on a macOS agent.</td>
       <td>Team Services</td>
     </tr>
 
         <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/utility/_img/powershell.png"/>
+            | ![icon](../steps/utility/_img/powershell.png)<br />
             [PowerShell](../steps/utility/powershell.md)<br/>
       Run a PowerShell script</td>
       <td>Team Services, TFS 2015 RTM and newer</td>
         </tr>
 
   <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/utility/_img/publish-build-artifacts.png"/>
+            | ![icon](../steps/utility/_img/publish-build-artifacts.png)<br />
             [Publish Build Artifacts](../steps/utility/publish-build-artifacts.md)<br/>
       Publish Build artifacts to the server or a file share</td>
       <td>Team Services, TFS Update 3 and newer</td>
     </tr>
 
         <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/utility/_img/azure-service-fabric.png"/>
+      | ![icon](../steps/utility/_img/azure-service-fabric.png)<br />
       [Service Fabric PowerShell](../steps/utility/service-fabric-powershell.md)<br/>
       Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized.</td>
       <td>Team Services</td>
         </tr>
 
         <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/utility/_img/shell-script.png"/>
+            | ![icon](../steps/utility/_img/shell-script.png)<br />
             [Shell Script](../steps/utility/shell-script.md)<br/>
       Run a shell script using bash</td>
       <td>Team Services, TFS 2015 RTM and newer</td>
         </tr>
 
         <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/utility/_img/azure-service-fabric.png"/>
+      | ![icon](../steps/utility/_img/azure-service-fabric.png)<br />
       [Update Service Fabric App Versions](../steps/utility/service-fabric-versioning.md)<br/>
       Automatically updates the versions of a packaged Service Fabric application</td>
       <td>Team Services, TFS 2017</td>
         </tr>
 
         <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/utility/_img/xamarin-license.png"/>
+      | ![icon](../steps/utility/_img/xamarin-license.png)<br />
       [Xamarin License](../steps/utility/xamarin-license.md)<br/>
       Activate or deactivate Xamarin licenses</td>
       <td>Team Services, TFS 2015 RTM and newer</td>
@@ -306,7 +193,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
         <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/test/_img/apache-jmeter-load-test.png"/>
+      | ![icon](../steps/test/_img/apache-jmeter-load-test.png)<br />
             [Cloud-based Apache JMeter Load Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/RunJMeterLoadTest)<br/>
       Runs the Apache JMeter load test in cloud
       </td>
@@ -314,7 +201,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
         <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/test/_img/cloud-based-load-test-icon.png"/>
+      | ![icon](../steps/test/_img/cloud-based-load-test-icon.png)<br />
             [Cloud-based Load Test](../steps/test/cloud-based-load-test.md)<br/> 
       Runs the load test in cloud, with Visual Studio Team Services
       </td>
@@ -322,7 +209,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
         <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/test/_img/web-based-perf-icon.png"/>
+      | ![icon](../steps/test/_img/web-based-perf-icon.png)<br />
             [Cloud-based Web Performance Test](../steps/test/cloud-based-web-performance-test.md)<br/>
       Runs the quick web performance test in cloud, with Visual Studio Team Services
       </td>
@@ -330,7 +217,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
         <tr>
-       <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/test/_img/mobile-center-test-icon.png"/>
+       | ![icon](../steps/test/_img/mobile-center-test-icon.png)<br />
        [Mobile Center Test](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VSMobileCenterTest)<br/>
       Test mobile app packages with Visual Studio Mobile Center
        </td>
@@ -338,7 +225,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
         <tr>
-       <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/test/_img/publish-code-coverage-results-icon.png"/>
+       | ![icon](../steps/test/_img/publish-code-coverage-results-icon.png)<br />
        [Publish Code Coverage Results](../steps/test/publish-code-coverage-results.md)<br/>
       Publish code coverage results to VSTS/TFS
        </td>
@@ -346,7 +233,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
         <tr>
-       <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/test/_img/publish-test-results-icon.png"/>
+       | ![icon](../steps/test/_img/publish-test-results-icon.png)<br />
        [Publish Test Results](../steps/test/publish-test-results.md)<br/>
        Publish Test Results to Visual Studio Team Services/TFS
        </td>
@@ -354,7 +241,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/test/_img/run-functional-tests-icon.png"/>
+      | ![icon](../steps/test/_img/run-functional-tests-icon.png)<br />
       [Run Functional Tests](../steps/test/run-functional-tests.md)<br/>
       Run Coded UI/Selenium/Functional tests on a set of machines (using Test Agent)
       </td>
@@ -362,7 +249,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
     </tr>
 
         <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/test/_img/visual-studio-test-icon.png"/>
+      | ![icon](../steps/test/_img/visual-studio-test-icon.png)<br />
             [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)<br/>
             [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)<br/>
       Run tests with Visual Studio test runner
@@ -371,7 +258,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
         <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/test/_img/visual-studio-test-agent-deployment-icon.png"/>
+            | ![icon](../steps/test/_img/visual-studio-test-agent-deployment-icon.png)<br />
             [Visual Studio Test Agent Deployment](../steps/test/visual-studio-test-agent-deployment.md)<br/>
       Deploy and configure Test Agent to run tests on a lab machine group
       </td>
@@ -379,7 +266,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
         <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/test/_img/xamarin-test-cloud-icon.png"/>
+            | ![icon](../steps/test/_img/xamarin-test-cloud-icon.png)<br />
             [Xamarin Test Cloud](../steps/test/xamarin-test-cloud.md)<br/>
       Test mobile apps with Xamarin Test Cloud using Xamarin.UITest</td>
       <td>Team Services, TFS 2015 RTM and newer</td>
@@ -394,7 +281,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
       <th>Versions</th>
         </tr>
         <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/package/_img/cocoapods.png"/>
+            | ![icon](../steps/package/_img/cocoapods.png)<br />
             [CocoaPods](../steps/package/cocoapods.md)<br/>
       CocoaPods is the dependency manager for Swift and Objective-C Cocoa projects. Runs pod install
       </td>
@@ -402,7 +289,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
         <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/package/_img/npm.png"/>
+            | ![icon](../steps/package/_img/npm.png)<br />
             [npm](../steps/package/npm-install.md)<br/>
       Install npm packages
       </td>
@@ -410,7 +297,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
         <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/package/_img/nuget-installer.png"/>
+            | ![icon](../steps/package/_img/nuget-installer.png)<br />
             [NuGet Installer](../steps/package/nuget-installer.md)<br/>
       Installs and updates missing NuGet packages
       </td>
@@ -418,7 +305,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
     <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/package/_img/nuget-packager.png"/>
+            | ![icon](../steps/package/_img/nuget-packager.png)<br />
             [NuGet Packager](../steps/package/nuget-packager.md)<br/>
       Creates nupkg outputs from csproj or nuspec files
       </td>
@@ -426,7 +313,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
     <tr>
-            <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/package/_img/nuget-publisher.png"/>
+            | ![icon](../steps/package/_img/nuget-publisher.png)<br />
             [NuGet Publisher](../steps/package/nuget-publisher.md)<br/>
       Uploads nupkg files to a nuget server
       </td>
@@ -434,7 +321,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/package/_img/xamarin-component-restore.png"/>
+      | ![icon](../steps/package/_img/xamarin-component-restore.png)<br />
       [Xamarin component restore](../steps/package/xamarin-component-restore.md)<br/>Restores Xamarin components for the specified solution</td>
       <td>Team Services, TFS 2017</td>
     </tr>
@@ -449,7 +336,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
   </tr>
 
   <tr>
-       <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/azure-web-app-deployment-icon.png"/>
+       | ![icon](../steps/deploy/_img/azure-web-app-deployment-icon.png)<br />
        [Azure App Service Deploy](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment)<br/>
       Update Azure App Service using Web Deploy / Kudu REST APIs
       </td>
@@ -457,7 +344,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
   </tr>
 
   <tr>
-       <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/azure-app-service-manage.png"/>
+       | ![icon](../steps/deploy/_img/azure-app-service-manage.png)<br />
        [Azure App Service Manage](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureAppServiceManage)<br/>
       Start, Stop, Restart or Slot swap for an Azure App Service
       </td>
@@ -465,7 +352,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
   </tr>
 
   <tr>
-       <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/azure-cli-icon.png"/>
+       | ![icon](../steps/deploy/_img/azure-cli-icon.png)<br />
        [Azure CLI](../steps/deploy/azure-cli.md)<br/>
       Run a shell or batch script containing Azure CLI commands against an Azure subscription
       </td>
@@ -473,7 +360,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
   </tr>
 
   <tr>
-       <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/azure-cloud-service-deployment-icon.png"/>
+       | ![icon](../steps/deploy/_img/azure-cloud-service-deployment-icon.png)<br />
        [Azure Cloud Service Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureCloudPowerShellDeployment)<br/>
       Deploy an Azure Cloud Service
       </td>
@@ -481,7 +368,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
         <tr>
-       <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/azure-file-copy-icon.png"/>
+       | ![icon](../steps/deploy/_img/azure-file-copy-icon.png)<br />
        [Azure File Copy](../steps/deploy/azure-file-copy.md)<br/> 
       Copy files to Azure blob or VM(s)
        </td>
@@ -489,7 +376,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
     </tr>
 
   <tr>
-       <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/azure-key-vault-icon.png"/>
+       | ![icon](../steps/deploy/_img/azure-key-vault-icon.png)<br />
        [Azure Key Vault](../steps/deploy/azure-key-vault.md)<br/>
       Incorporate secrets from an Azure Key Vault into a release definition
       </td>
@@ -497,7 +384,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
   </tr>
 
     <tr>
-       <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/azure-powershell-icon.png"/>
+       | ![icon](../steps/deploy/_img/azure-powershell-icon.png)<br />
        [Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell)<br/>
       Run a PowerShell script within an Azure environment
       </td>
@@ -505,7 +392,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
         </tr>
 
         <tr>
-       <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/azure-resource-group-deployment-icon.png"/>
+       | ![icon](../steps/deploy/_img/azure-resource-group-deployment-icon.png)<br />
        [Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment)<br/> 
       Deploy, start, stop, delete Azure Resource Groups
        </td>
@@ -513,7 +400,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
     </tr>
 
     <tr>
-       <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/azure-sql-database-deployment-icon.png"/>
+       | ![icon](../steps/deploy/_img/azure-sql-database-deployment-icon.png)<br />
        [Azure SQL Database Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment)<br/> 
       Deploy Azure SQL DB using DACPAC
        </td>
@@ -521,35 +408,35 @@ Add steps to specify what you want to build, the tests to run, and all the other
     </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/ssh.png"/>
+      | ![icon](../steps/deploy/_img/ssh.png)<br />
       [Copy Files Over SSH](../steps/deploy/copy-files-over-ssh.md)<br/>
       Copy files from source folder to target folder on a remote machine over SSH</td>
       <td>Team Services, TFS 2017</td>
     </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/iis-deploy-icon.png"/>
+      | ![icon](../steps/deploy/_img/iis-deploy-icon.png)<br />
       [IIS Web App Deploy](../steps/deploy/iis-deploy.md)<br/>
       Deploy IIS Websites and Virtual Applications using WebDeploy</td>
       <td>Team Services</td>
     </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/iis-manage-icon.png"/>
+      | ![icon](../steps/deploy/_img/iis-manage-icon.png)<br />
       [IIS Web App Manage](../steps/deploy/iis-manage.md)<br/>
       Create or update, start or stop, and recycle IIS Websites, IIS Web Applications, Virtual Directories, and IIS Application Pools</td>
       <td>Team Services</td>
     </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/manual-intervention-icon.png"/>
+      | ![icon](../steps/deploy/_img/manual-intervention-icon.png)<br />
       [Manual Intervention](../concepts/process/phases.md#the-manual-intervention-task)<br/>
       Pause deployment and wait for intervention</td>
       <td>Team Services, TFS 2017</td>
     </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/mobile-center-upload-icon.png"/>
+      | ![icon](../steps/deploy/_img/mobile-center-upload-icon.png)<br />
       [Mobile Center Upload](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VSMobileCenterUpload)<br/>
       Upload mobile app packages to Visual Studio Mobile Center
       </td>
@@ -557,7 +444,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
     </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/powershell-on-target-machines-icon.png"/>
+      | ![icon](../steps/deploy/_img/powershell-on-target-machines-icon.png)<br />
       [PowerShell on Target Machines](../steps/deploy/powershell-on-target-machines.md)<br/>
       Execute PowerShell scripts on remote machine(s)
       </td>
@@ -565,7 +452,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
     </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/azure-service-fabric.png"/>
+      | ![icon](../steps/deploy/_img/azure-service-fabric.png)<br />
       [Service Fabric Application Deployment](../steps/deploy/service-fabric-deploy.md)<br/>
       Deploy a Service Fabric application to a cluster
       </td>
@@ -573,7 +460,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
     </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/azure-service-fabric.png"/>
+      | ![icon](../steps/deploy/_img/azure-service-fabric.png)<br />
       [Service Fabric Compose Deploy](../steps/deploy/service-fabric-compose-deploy.md)<br/>
       Deploy a Service Fabric application to a cluster using a compose file
       </td>
@@ -581,7 +468,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
     </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/ssh.png"/>
+      | ![icon](../steps/deploy/_img/ssh.png)<br />
       [SSH](../steps/deploy/ssh.md)<br/>
       Run shell commands or a script on a remote machine using SSH
       </td>
@@ -589,7 +476,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
     </tr>
 
     <tr>
-      <td><img style="float:left;padding-right:5px" alt="icon" src="../steps/deploy/_img/windows-machine-file-copy-icon.png"/>
+      | ![icon](../steps/deploy/_img/windows-machine-file-copy-icon.png)<br />
       [Windows Machine File Copy](../steps/deploy/windows-machine-file-copy.md)<br/>
       Copy files to remote machine(s)</td>
       <td>Team Services, TFS 2015 RTM and newer</td>
@@ -600,7 +487,7 @@ Add steps to specify what you want to build, the tests to run, and all the other
 
 | Task | Versions |
 |------|----------|
-| <img style="float:left;padding-right:5px" alt="icon" src="../steps/tool/_img/node.png"/> [Node Tool Installer](../steps/tool/node-js.md)<br/> Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH | Team Services |
+| <img style="float:left;padding-right:5px" alt="icon" src="../steps/tool/_img/node.png)<br /> [Node Tool Installer](../steps/tool/node-js.md)<br/> Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH | Team Services |
 
 To learn more about tool installer tasks, see [Tool installers](../concepts/process/tasks.md#tool-installers).
 
