@@ -94,211 +94,42 @@ Add steps to specify what you want to build, the tests to run, and all the other
 
 | Task | Versions |
 | ---- | -------- |
-        <tr>
-            | ![icon](../steps/package/_img/cocoapods.png)<br />
-            [CocoaPods](../steps/package/cocoapods.md)<br/>
-      CocoaPods is the dependency manager for Swift and Objective-C Cocoa projects. Runs pod install
-      </td>
-      | Team Services, TFS 2015 RTM and newer |
-        </tr>
-
-        <tr>
-            | ![icon](../steps/package/_img/npm.png)<br />
-            [npm](../steps/package/npm-install.md)<br/>
-      Install npm packages
-      </td>
-      | Team Services, TFS 2015 RTM and newer |
-        </tr>
-
-        <tr>
-            | ![icon](../steps/package/_img/nuget-installer.png)<br />
-            [NuGet Installer](../steps/package/nuget-installer.md)<br/>
-      Installs and updates missing NuGet packages
-      </td>
-      | Team Services, TFS 2015 RTM and newer |
-        </tr>
-
-    <tr>
-            | ![icon](../steps/package/_img/nuget-packager.png)<br />
-            [NuGet Packager](../steps/package/nuget-packager.md)<br/>
-      Creates nupkg outputs from csproj or nuspec files
-      </td>
-      | Team Services, TFS 2015 Update 3 and newer |
-        </tr>
-
-    <tr>
-            | ![icon](../steps/package/_img/nuget-publisher.png)<br />
-            [NuGet Publisher](../steps/package/nuget-publisher.md)<br/>
-      Uploads nupkg files to a nuget server
-      </td>
-      | Team Services, TFS 2015 Update 3 and newer |
-        </tr>
-
-    <tr>
-      | ![icon](../steps/package/_img/xamarin-component-restore.png)<br />
-      [Xamarin component restore](../steps/package/xamarin-component-restore.md)<br/>Restores Xamarin components for the specified solution</td>
-      | Team Services, TFS 2017 |
-    </tr>
-</table>
+| ![icon](../steps/package/_img/cocoapods.png)<br />[CocoaPods](../steps/package/cocoapods.md). CocoaPods is the dependency manager for Swift and Objective-C Cocoa projects. Runs pod install | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/package/_img/npm.png)<br />[npm](../steps/package/npm-install.md). Install npm packages | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/package/_img/nuget-installer.png)<br />[NuGet Installer](../steps/package/nuget-installer.md). Installs and updates missing NuGet packages | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/package/_img/nuget-packager.png)<br />[NuGet Packager](../steps/package/nuget-packager.md)Creates nupkg outputs from csproj or nuspec files | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](../steps/package/_img/nuget-publisher.png)<br />[NuGet Publisher](../steps/package/nuget-publisher.md). Uploads nupkg files to a nuget server | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](../steps/package/_img/xamarin-component-restore.png)<br />[Xamarin component restore](../steps/package/xamarin-component-restore.md). Restores Xamarin components for the specified solution | Team Services, TFS 2017 |
 
 ## Deploy
 
 | Task | Versions |
 | ---- | -------- |
-
-  <tr>
-       | ![icon](../steps/deploy/_img/azure-web-app-deployment-icon.png)<br />
-       [Azure App Service Deploy](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment)<br/>
-      Update Azure App Service using Web Deploy / Kudu REST APIs
-      </td>
-      | Team Services, TFS 2017 |
-  </tr>
-
-  <tr>
-       | ![icon](../steps/deploy/_img/azure-app-service-manage.png)<br />
-       [Azure App Service Manage](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureAppServiceManage)<br/>
-      Start, Stop, Restart or Slot swap for an Azure App Service
-      </td>
-      | Team Services, TFS 2017 |
-  </tr>
-
-  <tr>
-       | ![icon](../steps/deploy/_img/azure-cli-icon.png)<br />
-       [Azure CLI](../steps/deploy/azure-cli.md)<br/>
-      Run a shell or batch script containing Azure CLI commands against an Azure subscription
-      </td>
-      | Team Services, TFS 2017 |
-  </tr>
-
-  <tr>
-       | ![icon](../steps/deploy/_img/azure-cloud-service-deployment-icon.png)<br />
-       [Azure Cloud Service Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureCloudPowerShellDeployment)<br/>
-      Deploy an Azure Cloud Service
-      </td>
-      | Team Services, TFS 2015 RTM and newer |
-        </tr>
-
-        <tr>
-       | ![icon](../steps/deploy/_img/azure-file-copy-icon.png)<br />
-       [Azure File Copy](../steps/deploy/azure-file-copy.md)<br/> 
-      Copy files to Azure blob or VM(s)
-       </td>
-      | Team Services, TFS 2015 Update 3 and newer |
-    </tr>
-
-  <tr>
-       | ![icon](../steps/deploy/_img/azure-key-vault-icon.png)<br />
-       [Azure Key Vault](../steps/deploy/azure-key-vault.md)<br/>
-      Incorporate secrets from an Azure Key Vault into a release definition
-      </td>
-      <td>Team Services</td>
-  </tr>
-
-    <tr>
-       | ![icon](../steps/deploy/_img/azure-powershell-icon.png)<br />
-       [Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell)<br/>
-      Run a PowerShell script within an Azure environment
-      </td>
-      | Team Services, TFS 2015 RTM and newer |
-        </tr>
-
-        <tr>
-       | ![icon](../steps/deploy/_img/azure-resource-group-deployment-icon.png)<br />
-       [Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment)<br/> 
-      Deploy, start, stop, delete Azure Resource Groups
-       </td>
-      | Team Services, TFS 2015 Update 3 and newer |
-    </tr>
-
-    <tr>
-       | ![icon](../steps/deploy/_img/azure-sql-database-deployment-icon.png)<br />
-       [Azure SQL Database Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment)<br/> 
-      Deploy Azure SQL DB using DACPAC
-       </td>
-      | Team Services, TFS 2015 Update 3 and newer |
-    </tr>
-
-    <tr>
-      | ![icon](../steps/deploy/_img/ssh.png)<br />
-      [Copy Files Over SSH](../steps/deploy/copy-files-over-ssh.md)<br/>
-      Copy files from source folder to target folder on a remote machine over SSH</td>
-      | Team Services, TFS 2017 |
-    </tr>
-
-    <tr>
-      | ![icon](../steps/deploy/_img/iis-deploy-icon.png)<br />
-      [IIS Web App Deploy](../steps/deploy/iis-deploy.md)<br/>
-      Deploy IIS Websites and Virtual Applications using WebDeploy</td>
-      <td>Team Services</td>
-    </tr>
-
-    <tr>
-      | ![icon](../steps/deploy/_img/iis-manage-icon.png)<br />
-      [IIS Web App Manage](../steps/deploy/iis-manage.md)<br/>
-      Create or update, start or stop, and recycle IIS Websites, IIS Web Applications, Virtual Directories, and IIS Application Pools</td>
-      <td>Team Services</td>
-    </tr>
-
-    <tr>
-      | ![icon](../steps/deploy/_img/manual-intervention-icon.png)<br />
-      [Manual Intervention](../concepts/process/phases.md#the-manual-intervention-task)<br/>
-      Pause deployment and wait for intervention</td>
-      | Team Services, TFS 2017 |
-    </tr>
-
-    <tr>
-      | ![icon](../steps/deploy/_img/mobile-center-upload-icon.png)<br />
-      [Mobile Center Upload](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VSMobileCenterUpload)<br/>
-      Upload mobile app packages to Visual Studio Mobile Center
-      </td>
-      | Team Services, TFS 2015 RTM and newer |
-    </tr>
-
-    <tr>
-      | ![icon](../steps/deploy/_img/powershell-on-target-machines-icon.png)<br />
-      [PowerShell on Target Machines](../steps/deploy/powershell-on-target-machines.md)<br/>
-      Execute PowerShell scripts on remote machine(s)
-      </td>
-      | Team Services, TFS 2015 RTM and newer |
-    </tr>
-
-    <tr>
-      | ![icon](../steps/deploy/_img/azure-service-fabric.png)<br />
-      [Service Fabric Application Deployment](../steps/deploy/service-fabric-deploy.md)<br/>
-      Deploy a Service Fabric application to a cluster
-      </td>
-      | Team Services, TFS 2017 |
-    </tr>
-
-    <tr>
-      | ![icon](../steps/deploy/_img/azure-service-fabric.png)<br />
-      [Service Fabric Compose Deploy](../steps/deploy/service-fabric-compose-deploy.md)<br/>
-      Deploy a Service Fabric application to a cluster using a compose file
-      </td>
-      <td>Team Services</td>
-    </tr>
-
-    <tr>
-      | ![icon](../steps/deploy/_img/ssh.png)<br />
-      [SSH](../steps/deploy/ssh.md)<br/>
-      Run shell commands or a script on a remote machine using SSH
-      </td>
-      | Team Services, TFS 2017 |
-    </tr>
-
-    <tr>
-      | ![icon](../steps/deploy/_img/windows-machine-file-copy-icon.png)<br />
-      [Windows Machine File Copy](../steps/deploy/windows-machine-file-copy.md)<br/>
-      Copy files to remote machine(s)</td>
-      | Team Services, TFS 2015 RTM and newer |
-    </tr>
-</table>
+| ![icon](../steps/deploy/_img/azure-web-app-deployment-icon.png)<br />[Azure App Service Deploy](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment). Update Azure App Service using Web Deploy / Kudu REST APIs | Team Services, TFS 2017 |
+| ![icon](../steps/deploy/_img/azure-app-service-manage.png)<br />[Azure App Service Manage](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureAppServiceManage). Start, Stop, Restart or Slot swap for an Azure App Service | Team Services, TFS 2017 |
+| ![icon](../steps/deploy/_img/azure-cli-icon.png)<br />[Azure CLI](../steps/deploy/azure-cli.md). Run a shell or batch script containing Azure CLI commands against an Azure subscription | Team Services, TFS 2017 |
+| ![icon](../steps/deploy/_img/azure-cloud-service-deployment-icon.png)<br />[Azure Cloud Service Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureCloudPowerShellDeployment). Deploy an Azure Cloud Service | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/deploy/_img/azure-file-copy-icon.png)<br />[Azure File Copy](../steps/deploy/azure-file-copy.md). Copy files to Azure blob or VM(s) | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](../steps/deploy/_img/azure-key-vault-icon.png)<br />[Azure Key Vault](../steps/deploy/azure-key-vault.md). Incorporate secrets from an Azure Key Vault into a release definition | Team Services |
+| ![icon](../steps/deploy/_img/azure-powershell-icon.png)<br />[Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell). Run a PowerShell script within an Azure environment | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/deploy/_img/azure-resource-group-deployment-icon.png)<br />[Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeployment). Deploy, start, stop, delete Azure Resource Groups | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](../steps/deploy/_img/azure-sql-database-deployment-icon.png)<br />[Azure SQL Database Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeployment). Deploy Azure SQL DB using DACPAC | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](../steps/deploy/_img/ssh.png)<br />[Copy Files Over SSH](../steps/deploy/copy-files-over-ssh.md). Copy files from source folder to target folder on a remote machine over SSH | Team Services, TFS 2017 |
+| ![icon](../steps/deploy/_img/iis-deploy-icon.png)<br />[IIS Web App Deploy](../steps/deploy/iis-deploy.md). Deploy IIS Websites and Virtual Applications using WebDeploy | Team Services |
+| ![icon](../steps/deploy/_img/iis-manage-icon.png)<br />[IIS Web App Manage](../steps/deploy/iis-manage.md). Create or update, start or stop, and recycle IIS Websites, IIS Web Applications, Virtual Directories, and IIS Application Pools | Team Services |
+| ![icon](../steps/deploy/_img/manual-intervention-icon.png)<br />[Manual Intervention](../concepts/process/phases.md#the-manual-intervention-task). Pause deployment and wait for intervention | Team Services, TFS 2017 |
+| ![icon](../steps/deploy/_img/mobile-center-upload-icon.png)<br />[Mobile Center Upload](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/VSMobileCenterUpload). Upload mobile app packages to Visual Studio Mobile Center | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/deploy/_img/powershell-on-target-machines-icon.png)<br />[PowerShell on Target Machines](../steps/deploy/powershell-on-target-machines.md). Execute PowerShell scripts on remote machine(s) | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/deploy/_img/azure-service-fabric.png)<br />[Service Fabric Application Deployment](../steps/deploy/service-fabric-deploy.md). Deploy a Service Fabric application to a cluster | Team Services, TFS 2017 |
+| ![icon](../steps/deploy/_img/azure-service-fabric.png)<br />[Service Fabric Compose Deploy](../steps/deploy/service-fabric-compose-deploy.md). Deploy a Service Fabric application to a cluster using a compose file | Team Services |
+| ![icon](../steps/deploy/_img/ssh.png)<br />[SSH](../steps/deploy/ssh.md). Run shell commands or a script on a remote machine using SSH | Team Services, TFS 2017 |
+| ![icon](../steps/deploy/_img/windows-machine-file-copy-icon.png)<br />[Windows Machine File Copy](../steps/deploy/windows-machine-file-copy.md). Copy files to remote machine(s) | Team Services, TFS 2015 RTM and newer |
 
 <h2 id="tool">Tool</h2>
 
 | Task | Versions |
 |------|----------|
-| <img style="float:left;padding-right:5px" alt="icon" src="../steps/tool/_img/node.png)<br /> [Node Tool Installer](../steps/tool/node-js.md)<br/> Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH | Team Services |
+| ![icon](../steps/tool/_img/node.png)<br />[Node Tool Installer](../steps/tool/node-js.md). Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH | Team Services |
 
 To learn more about tool installer tasks, see [Tool installers](../concepts/process/tasks.md#tool-installers).
 
