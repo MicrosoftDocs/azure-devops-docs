@@ -64,82 +64,22 @@ Then the second completed build on this day would be named: **Fabrikam\_CIBuild_
 
 The following table shows how each token is resolved based on the previous example.
 
-<table>
-<thead>
-<tr>
-<th><p>Token</p></th>
-<th><p>Example replacement value</p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>$(BuildDefinitionName)</code></td>
-<td><p>CIBuild</p>
-<p>Note: The build definition name must not contain invalid characters, including whitespace.</p>
-</td>
-</tr>
-<tr>
-<td><p><code>$(BuildID)</code></p></td>
-<td><p>752</p>
-<p>$(BuildID) is an internal immutable ID.</p>
-</td>
-</tr>
-<tr>
-<td><code>$(DayOfMonth)</code></td>
-<td><p>5</p></td>
-</tr>
-<tr>
-<td><code>$(DayOfYear)</code></td>
-<td><p>217</p></td>
-</tr>
-<tr>
-<td><code>$(Hours)</code></td>
-<td><p>21</p></td>
-</tr>
-<tr>
-<td><code>$(Minutes)</code></td>
-<td><p>7</p></td>
-</tr>
-<tr>
-<td><code>$(Month)</code></td>
-<td><p>8</p></td>
-</tr>
-<tr>
-<td><code>$(Rev:.r)</code></td>
-<td><p>2 (The third build on this day will be 3, and so on.)</p>
-<p>Use <code>$(Rev:.rr)</code> to ensure that every completed build has a unique name. When a build is completed, if nothing else in the build number has changed, the Rev integer value is incremented by one.</p>
-<p>If you want to show prefix zeros in the number, you can add additional <code>r</code> characters. For example, specify <code>$(rev:.rr)</code> if you want the Rev number to begin with 01, 02, and so on.</p>
-</td>
-</tr>
-<tr>
-<td><code>(Date:yyyyMMdd)</code></td>
-<td><p>20090824</p>
-<p>You can specify other date formats such as <code>$(Date:MMddyy)</code></p>
-</td>
-</tr>
-<tr>
-<td><code>$(Seconds)</code></td>
-<td><p>3</p></td>
-</tr>
-<tr>
-<td><code>$(SourceBranchName)</code></td>
-<td><p>master</p>
-</td>
-</tr>
-<tr>
-<td><code>$(TeamProject)</code></td>
-<td><p>Fabrikam</p></td>
-</tr>
-<tr>
-<td><code>$(Year:yy)</code></td>
-<td><p>09</p></td>
-</tr>
-<tr>
-<td><code>$(Year:yyyy)</code></td>
-<td><p>2009</p></td>
-</tr>
-</tbody>
-</table>
+| Token | Example replacement value |
+| ----- | ------------------------- |
+| `$(BuildDefinitionName)` | CIBuild<br /><br />Note: The build definition name must not contain invalid or whitespace characters.|
+| `$(BuildID)` | 752<br /><br />$(BuildID) is an internal immutable ID.|
+| `$(DayOfMonth)` | 5 |
+| `$(DayOfYear)` | 217 |
+| `$(Hours)` | 21 |
+| `$(Minutes)` | 7 |
+| `$(Month)` | 8 |
+| `$(Rev:.r)` | 2 (The third build on this day will be 3, and so on.)<br /><br />Use **$(Rev:.rr)** to ensure that every completed build has a unique name. When a build is completed, if nothing else in the build number has changed, the Rev integer value is incremented by one.<br /><br />If you want to show prefix zeros in the number, you can add additional **'r'** characters. For example, specify **$(rev:.rr)** if you want the Rev number to begin with 01, 02, and so on. |
+| `(Date:yyyyMMdd)` | 20090824<br /><br />You can specify other date formats such as **$(Date:MMddyy)** |
+| `$(Seconds)` | 3 |
+| `$(SourceBranchName)` | master |
+| `$(TeamProject)` | Fabrikam |
+| `$(Year:yy)` | 09 |
+| `$(Year:yyyy)` | 2009 |
 
 ### Variables
 

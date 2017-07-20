@@ -12,7 +12,7 @@ ms.date: 12/04/2016
 
 # Search for work items
 
-**| Team Services |**
+**| Team Services | TFS 2017.2 |**
 
 Work Item Search provides fast and flexible search across all your work items over all projects in an account. 
 You can use the Work Item Search full text search engine to easily search for terms across all work item fields 
