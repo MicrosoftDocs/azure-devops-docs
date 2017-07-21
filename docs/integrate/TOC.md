@@ -33,10 +33,12 @@
 
 # Reference
 ## [.NET client libraries](get-started/client-libraries/dotnet.md)
+### [Reference repo](https://review.docs.microsoft.com/en-us/vsts-dotnet/api/microsoft.teamfoundation.framework.common?branch=master)
 ## Service hooks
 ### [Consumer and action reference (COMBINE?)](get-started/service-hooks/consumers.md)
 ### [Events reference (COMBINE?)](get-started/service-hooks/events.md)
 ## [REST APIs](./rest-api-overview.md)
+### [Reference repo](https://review.docs.microsoft.com/en-us/rest/vsts/api/build/addbuildtag?branch=master)
 <!-- generation begin -->
 ### Accounts and profiles
 #### [Overview](https://visualstudio.com/integrate/api/shared/overview.md)
