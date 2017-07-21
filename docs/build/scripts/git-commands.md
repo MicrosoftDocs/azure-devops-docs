@@ -89,20 +89,9 @@ Make sure to follow the above steps to [enable Git.exe](#enable).
 
 On the [build tab](../define/build.md) add this step:
 
-<table>
-   <tr>
-      <td>![](../steps/utility/_img/command-line.png)<br/>[Utility: Command Line](../steps/utility/command-line.md)
-      </td>
-<td>
-<p>List the files in the Git repo.</p>
-<ul>
-<li>Tool: ```git```</li>
- <li>Arguments: ```ls-files```</li>
-</ul>
-      </td>
-</tr>
-</table>
-
+| Task | Arguments |
+| ---- | --------- |
+| ![](../steps/utility/_img/command-line.png)<br/>[Utility: Command Line](../steps/utility/command-line.md) | List the files in the Git repo.<br /><br />**Tool**: `git`<br /><br />**Arguments**: `ls-files` |
 
 ### Merge a feature branch to master
 
@@ -138,19 +127,9 @@ git status
 
 On the [build tab](../define/build.md) add this as the last step:
 
-<table>
-   <tr>
-      <td>![](../steps/utility/_img/batch-script.png)<br/>[Utility: Batch Script](../steps/utility/batch-script.md)</td>
-
-<td>
-<p>Run merge.bat.</p>
-<ul>
-<li>Path: ```merge.bat```</li>
-</ul>
-      </td>
-</tr>
-</table>
-
+| Task | Arguments |
+| ---- | --------- |
+| ![](../steps/utility/_img/batch-script.png)<br/>[Utility: Batch Script](../steps/utility/batch-script.md) | Run merge.bat.<br /><br />**Path**: `merge.bat` |
 
 ## Q&A
 
