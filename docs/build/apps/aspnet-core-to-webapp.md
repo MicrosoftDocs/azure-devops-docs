@@ -155,9 +155,10 @@ You can use Visual Studio to connect and push commits up to to your VSTS Git rep
    ![Committing the new code in the VSTS editor](_img/aspnet-core-to-webapp/commit-code.png)
 
 1. Wait a few minutes and then, in the **Overview** blade of your web app in the Azure portal, choose **Start**.
+   You can refresh the list of releases in the release definition to see when deployment is complete.
 
    ![Starting the app](_img/aspnet-core-to-webapp/start-app.png)
 
-1. navigate to the web app URL in a browser to see the change deployed.
+1. Navigate to the web app URL in a browser to see the change deployed.
 
    ![Viewing the updated app](_img/aspnet-core-to-webapp/updated-app.png)
