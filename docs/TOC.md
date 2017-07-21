@@ -9,7 +9,7 @@
 # Quickstarts
 ## [Set up/sign up with Team Services](setup-admin/team-services/sign-up-for-visual-studio-team-services.md)
 ## [Get started coding with Git](git/gitquickstart.md)
-## [Get started coding with TFVC]tfvc/share-your-code-in-tfvc-vs.md)
+## [Get started coding with TFVC](tfvc/share-your-code-in-tfvc-vs.md)
 ## [Get started tracking work](work/overview.md)
 ## [Get started with CI/CD](build/get-started/ci-cd-part-1.md)
 ## [Get started testing](test/index.md)  
@@ -63,7 +63,7 @@
 ## [Connect to a team project](connect/connect-team-projects.md)  
 ## [Add & manage teams](/team-services/work/scale/multiple-teams) 
 
-## Get familiar with the web portal 
+## Navigation
 ### [Work in the web portal](connect/work-web-portal.md)
 ### [Work from your account hub](connect/account-home-pages.md)
 
