@@ -21,7 +21,6 @@ With Agile tools, project managers and teams can quickly plan and track the work
 - [About teams and Agile tools](about-teams-and-settings.md)  
  
 
-
 ## 5-minute quickstarts  
 
 Start tracking work by adding work items, creating your backlog, or scheduling sprints.  
@@ -41,229 +40,51 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 > [!div class="mx-tdBreakAll"]  
 > |Manage work items and backlogs  |Scrum   |   Kanban   |  
 > |-------------|----------|---------|  
-> |- [Define features & epics](./backlogs/define-features-epics.md)<br/>- [Organize backlogs](./backlogs/organize-backlog.md)<br/>- [Manage bugs](./backlogs/manage-bugs.md)<br/>- [Manage issues](./backlogs/manage-issues-impediments.md)<br/>- [Use templates](productivity/work-item-template.md) <br/>- [Move/change type](backlogs/remove-delete-work-items.md)<br/>- [Delete items](backlogs/remove-delete-work-items.md) <br/>- [Copy/clone work items](backlogs/copy-clone-work-items.md)<br/>- [Link work items](backlogs/add-link.md)<br/>- [Bulk modify (Web)](./backlogs/bulk-modify-work-items.md)<br/>- [Bulk add/modify (Excel)](office/bulk-add-modify-work-items-excel.md) >   |- [Plan sprints](./scrum/sprint-planning.md)<br/>- [Plan capacity](./scale/capacity-planning.md)<br/>- [Add and update tasks](./scrum/task-board.md)<br/>- [Sprint burndown](./scrum/sprint-burndown.md)<br/>- [Forecast](./scrum/forecast.md)<br/>- [Velocity](../report/guidance/team-velocity.md)  | - [Kanban basics](./kanban/kanban-basics.md)<br/>- [Task checklists](./kanban/add-task-checklists.md)<br/>- [Epics & features](./kanban/kanban-epics-features-stories.md)<br/>- [Add inline tests](./kanban/add-run-update-tests.md)<br/>- [Cumulative flow](../report/guidance/cumulative-flow.md)  |
-
-<hr/> 
+> |- [Define features & epics](./backlogs/define-features-epics.md)<br/>- [Organize backlogs](./backlogs/organize-backlog.md)<br/>- [Manage bugs](./backlogs/manage-bugs.md)<br/>- [Manage issues](./backlogs/manage-issues-impediments.md)<br/>- [Use templates](productivity/work-item-template.md) |- [Plan sprints](./scrum/sprint-planning.md)<br/>- [Add and update tasks](./scrum/task-board.md)<br/>- [Sprint burndown](./scrum/sprint-burndown.md)<br/>- [Forecast](./scrum/forecast.md)<br/>- [Velocity](../report/guidance/team-velocity.md)| - [Kanban basics](./kanban/kanban-basics.md)<br/>- [Task checklists](./kanban/add-task-checklists.md)<br/>- [Epics & features](./kanban/kanban-epics-features-stories.md)<br/>- [Add inline tests](./kanban/add-run-update-tests.md)<br/>- [Cumulative flow](../report/guidance/cumulative-flow.md)  |
 
 
 > [!div class="mx-tdBreakAll"]  
 > |Track  | Queries   |   Scale    |  
 > |-------------|----------|---------|  
-> |- [Tag work items](./track/add-tags-to-work-items.md)<br/>- [Follow work](../collaborate/follow-work-items.md)<br/>   - [Email work items](how-to/email-work-items.md)<br/>- [Share work plans](track/share-plans.md) <br/>- [Adhoc work item search](../search/workitem/get-started.md)  |- Add & run queries<br/>- Triage work items<br/>- [Edit a query](./track/using-queries.md)<br/>- [Add a query chart](../report/charts.md) <br/>- [Copy a query](backlogs/copy-clone-work-items.md#html)<br/>- [History & audit](./track/history-and-auditing.md)<br/>- [Set query permissions](track/set-query-permissions.md)  |- [Add teams](scale/multiple-teams.md)<br/>- [Manage portfolios](./scale/portfolio-management.md)<br/>- [Review team delivery plans](scale/review-team-plans.md)<br/>- [Visibility across teams](scale/visibility-across-teams.md)<br/>- [Scaled Agile Framework](./scale/scaled-agile-framework.md)  |
+> |- [Tag work items](./track/add-tags-to-work-items.md)<br/>- [Follow work](../collaborate/follow-work-items.md)<br/>   - [Email work items](how-to/email-work-items.md)<br/>- [Share work plans](track/share-plans.md) <br/>- [Adhoc work item search](../search/workitem/get-started.md)  |- Add & run queries<br/>- Triage work items<br/>- [Edit a query](./track/using-queries.md)<br/>- [Add a query chart](../report/charts.md) <br/>- [Copy a query](backlogs/copy-clone-work-items.md#html)<br/>- [History & audit](./track/history-and-auditing.md) |- [Add teams](scale/multiple-teams.md)<br/>- [Manage portfolios](./scale/portfolio-management.md)<br/>- [Review team delivery plans](scale/review-team-plans.md)<br/>- [Visibility across teams](scale/visibility-across-teams.md)<br/>- [Scaled Agile Framework](./scale/scaled-agile-framework.md)  |
   
 
 
 ## Videos 
-<!---
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe src="https://channel9.msdn.com/Events/UKDX/March-Uk-Hack-Fest/Agile-Planning-with-VSTS/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
-</div>
 
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe src="https://channel9.msdn.com/Events/Build/2017/T6005/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
-</div>
--->
-
+[![Agile planning video](_img/index-agile-planning-video.png)](https://channel9.msdn.com/Events/Build/2017/T6005/player)   
 
 
 
 ## Concepts 
 
-
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Agile tools</p>
 - [Backlogs, boards, & plans](backlogs-boards-plans.md)    
-- About processes and Agile methods (NEW)   
-- [Sprint tools](concepts/sprint-planning-tools.md)   
-- [Work item form controls](concepts/work-item-form-controls.md)  
-- [Workflow & state categories](concepts/workflow-and-state-categories.md)  
-- [Link types & relationships](track/link-work-items-support-traceability.md)   
-- [New work item experience](process/new-work-item-experience.md)  
-- [Backlogs & multi-team ownership](backlogs/work-multi-team-ownership-backlogs.md)  
-</div>
-
-<div style="float:left;width:185px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Queries</p>
 - [Adhoc vs managed queries](track/adhoc-vs-managed-queries.md)  
-- [Queries overview](./track/example-queries.md)  
-<br/>
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Office</p>
-- [Office integration](office/track-work-vsts-tfs.md)
-</div>
-
-
-<div style="float:left;width:185px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Best practices</p>
-- [Product backlog](concepts/best-practices-product-backlog.md)     
-- [Sprint/Scrum](concepts/best-practices-product-backlog.md)    
-- [Kanban](concepts/best-practices-kanban.md)    
+- [Best practices - Product backlog](concepts/best-practices-product-backlog.md)         
+- [Best practices- Kanban](concepts/best-practices-kanban.md)    
 - [Agile culture and scale](scale/agile-culture.md)   
 - [Practices that scale](scale/practices-that-scale.md)  
 
-</div>
 
-
-<div style="float:left;width:145px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Process guidance</p>
-- [Agile process](guidance/agile-process.md)  
-- [Agile workflow](guidance/agile-process-workflow.md)  
-- [Scrum process](guidance/scrum-process.md)  
-- [Scrum workflow](guidance/scrum-process-workflow.md)  
-- [CMMI process](guidance/cmmi-process.md)  
-- [CMMI workflow](guidance/cmmi-process-workflow.md)  
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
-
-## Example queries
-
-- [Example search box queries](track/search-box-queries.md)
-- [Example adhoc queries](../search/workitem/get-started.md)  
-- [Query by title, ID, or description](track/titles-ids-descriptions.md)
-- [Query by assignment or workflow changes](track/query-by-workflow-changes.md)  
-- [Query by area or iteration path](track/query-by-area-iteration-path.md)   
-- [Query by date or current iteration](track/query-by-date-or-current-iteration.md)   
-- [Query history](track/history-and-auditing.md)  
-- [Query a numeric field](track/query-numeric.md)  
-- [Query by pick list value](track/planning-ranking-priorities.md)  
-- [Query by build and test integration fields](track/build-test-integration.md)  
-- [Query by links or attachments](track/linking-attachments.md) 
-
-## How-to guides
-
-
-
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Agile tools</p>
-- [Switch project or team focus](how-to/switch-team-context-work.md)  
-- [Filter backlogs, boards, & queries](how-to/filter-backlog-or-board.md)  
-- [Change column options](how-to/set-column-options.md)   
-- [Email/print work items](how-to/email-work-items.md)   
-- [Refine Work item search results](../search/workitem/search-results.md)   
-</div>
-
-
-<div style="float:left;width:185px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Request feedback</p>
-- [Get feedback](connect/get-feedback.md)     
-- [Provide feedback](connect/give-feedback.md)   
-- [Set feedback permissions](connect/give-permissions-feedback.md)   
-- [Enable remote audio capture](reference/enable-remote-audio-capture.md)  
-- [Change the audio device or annotation tool](reference/change-audio-device-annotation-tool.md)   
-
-</div>
-
-<div style="float:left;width:185px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Add & configure teams</p>
-- [Add teams & team members](scale/multiple-teams.md)   
-- [Add team administrators](scale/add-team-administrator.md)   
-- [Set team defaults](scale/set-team-defaults.md)   
-- [Configure team settings](scale/manage-team-assets.md)   
-- [Define work item templates](productivity/work-item-template.md)   
-- Set team favorites  (NEW)    
-- [Set team notifications](../collaborate/manage-team-notifications.md)   
-- [Team rooms](../collaborate/collaborate-in-a-team-room.md)   
-- [Select backlog levels](customize/select-backlog-navigation-levels.md)   
-- [Show bugs](customize/show-bugs-on-backlog.md)   
-- [Set working days](customize/set-working-days.md)    
-- [Customize cards](customize/customize-cards.md)      
-
-</div>
- 
-
-
-
-<div style="float:left;width:145px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Configure your project</p> 
-- [Define area paths](/team-services/work/customize/set-area-paths)  
-- [Define iteration paths](/team-services/work/customize/set-iteration-paths-sprints)  
-<br/>
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Administrate</p>
-- [Manage permissions & access](how-to/set-permissions-access-work-tracking.md)  
-- [Change access levels](connect/change-access-levels.md)  
-- [Manage new form rollout](customize/manage-new-form-rollout.md)  
-- [Customize work tracking](/team-services/work/customize/customize-work)  
-- [TFS-Project Server integration](/team-services/work/office/sync-ps-tfs)    
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
 
 ## Reference   
-
-
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Work item fields</p>
-- [Work item field index](guidance/work-item-field.md)    
-- [Code review and feedback fields](guidance/guidance-code-review-feedback-field-reference.md)  
-- [Bugs, issues, & risks fields](guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)  
-- [Change request fields](guidance/cmmi/guidance-change-request-field-reference-cmmi.md)  
-- [Requirements fields](guidance/cmmi/guidance-requirements-field-reference-cmmi.md)  
-- [Review meeting fields](guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md)  
-- [Reportable fields (TFS)](reference/reportable-fields-reference.md)   
-</div>
-
-<div style="float:left;width:185px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Query & search</p> 
-- [Query fields, operators & macros](track/query-operators-variables.md)  
-- [Work item search options](../search/workitem/advanced-search-syntax.md)    
-- [WIQL syntax](https://www.visualstudio.com/docs/reference/wiql-syntax)   
- 
-</div>
-
-<div style="float:left;width:185px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Misc</p>
 - [Permissions and access for work tracking](permissions-access-work-tracking.md) 
-- [Object limits](customize/object-limits.md)  
-- [Add & share storyboard shapes](office/add-share-storyboard-shapes.md)  
-
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
-
-
+- [Work item field index](guidance/work-item-field.md)    
+- [Query fields, operators & macros](track/query-operators-variables.md)  
+ 
   
-## Additional resources 
-
-
-
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Agile journey</p>
+## Resources 
 - [What is Agile?](https://www.visualstudio.com/learn/what-is-agile/)  
 - [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)  
 - [What is Agile development?](https://www.visualstudio.com/learn/what-is-agile-development/)  
 - [Agile culture](https://www.visualstudio.com/learn/agile-culture/)  
 - [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)  
 - [Creating productive teams](https://www.visualstudio.com/learn/productive-teams/)    
-</div>
 
 
-<div style="float:left;width:255px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Team projects</p>
-- [Get started with Team Services](../index.md)   
-- [Create a team project](../setup-admin/create-team-project.md)   
-- [Connect to team projects](../connect/connect-team-projects.md)   
-</div>
-
-<div style="float:left;width:185px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Misc</p>
-- [Web portal](../connect/work-web-portal.md)     
-- [Client tools](../tools.md)  
-- [Productivity tips](productivity/productivity-tips.md)   
-- [Code search](../search/overview.md)    
-- [Dashboards](../report/dashboards.md)    
-- [Set alerts](./track/alerts-and-notifications.md)  
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
   
 
+<!---
 
 ## TBD
 - [Set team defaults](./scale/set-team-defaults.md)  
@@ -278,4 +99,51 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Customize cards](./customize/customize-cards.md)  
 - [Card reordering](./customize/reorder-cards.md)  
 
-- 
+
+## How-to guides
+
+
+### Agile tools 
+* [Switch project or team focus](how-to/switch-team-context-work.md)  
+* [Filter backlogs, boards, & queries](how-to/filter-backlog-or-board.md)  
+* [Change column options](how-to/set-column-options.md)   
+* [Email/print work items](how-to/email-work-items.md)   
+* [Refine Work item search results](../search/workitem/search-results.md)   
+ 
+
+
+### Request feedback 
+* [Get feedback](connect/get-feedback.md)     
+* [Provide feedback](connect/give-feedback.md)   
+* [Set feedback permissions](connect/give-permissions-feedback.md)   
+* [Enable remote audio capture](reference/enable-remote-audio-capture.md)  
+* [Change the audio device or annotation tool](reference/change-audio-device-annotation-tool.md)   
+
+### Add & configure teams
+* [Add teams & team members](scale/multiple-teams.md)   
+* [Add team administrators](scale/add-team-administrator.md)   
+* [Set team defaults](scale/set-team-defaults.md)   
+* [Configure team settings](scale/manage-team-assets.md)   
+* [Define work item templates](productivity/work-item-template.md)   
+* Set team favorites  (NEW)    
+* [Set team notifications](../collaborate/manage-team-notifications.md)   
+* [Team rooms](../collaborate/collaborate-in-a-team-room.md)   
+* [Select backlog levels](customize/select-backlog-navigation-levels.md)   
+* [Show bugs](customize/show-bugs-on-backlog.md)   
+* [Set working days](customize/set-working-days.md)    
+* [Customize cards](customize/customize-cards.md)      
+
+
+### Configure your project 
+* [Define area paths](/team-services/work/customize/set-area-paths)  
+* [Define iteration paths](/team-services/work/customize/set-iteration-paths-sprints)  
+
+### Administrate 
+* [Manage permissions & access](how-to/set-permissions-access-work-tracking.md)  
+* [Change access levels](connect/change-access-levels.md)  
+* [Manage new form rollout](customize/manage-new-form-rollout.md)  
+* [Customize work tracking](/team-services/work/customize/customize-work)  
+* [TFS-Project Server integration](/team-services/work/office/sync-ps-tfs)    
+
+
+-->

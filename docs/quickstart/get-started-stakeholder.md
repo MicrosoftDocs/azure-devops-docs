@@ -7,7 +7,7 @@ ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 06/23/2017
+ms.date: 07/20/2017
 ---
 
 # Get started with Stakeholder access
@@ -41,49 +41,28 @@ You might see different work item types in your view based on the process select
 >[!NOTE]  
 >A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.    
     
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
+#### Team Services, TFS 2017
 
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
+From the Work hub, choose a work item, for example User Story, from the New Work Item list of options. Click the ![pin icon](../work/_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu.   
 
-<li style="float:left;" data-toggle="collapse" data-target="#add-work-item">Add a work item </li> 
+<img src="_img/stakholder-add-work-item-ts.png" alt="Team Services, TFS 2017, Work hub, Add a work item" style="border: 1px solid #CCCCCC;" />   
 
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:50px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#add-work-item-tfs-2015-13">TFS 2015, TFS 2013</a></li>
-
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#add-work-item-team-services">Team Services, TFS 2017</a></li>
-
-</ul>
- 
-<div id="add-work-item" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-
-<div id="add-work-item-team-services" class="tab-pane fade in active"> 
-
-<p>From the Work hub, choose a work item, for example User Story, from the New Work Item list of options. Click the ![pin icon](../work/_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu. </p>
-
-<img src="_img/stakholder-add-work-item-ts.png" alt="Team Services, TFS 2017, Work hub, Add a work item" style="border: 1px solid #CCCCCC;" /> <br/>  
-
-<p>Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.</p>  
+Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
 <img src="../work/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #CCCCCC;" />
 
-</div>
+#### TFS 2015
 
-<div id="add-work-item-tfs-2015-13" class="tab-pane fade"> 
-
-<p>From the Queries page, choose a work item from the New drop down menu.</p>
+From the Queries page, choose a work item from the New drop down menu.
 
 <img src="_img/stakholder-add-work-item-tfs-queries-page.png" alt="TFS 2015, TFS 2013-Queries page, Add a work item" style="border: 1px solid #CCCCCC;" />  
 
-<p>Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.</p>  
-
-</div>
+Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. 
 
 
+You can [add existing tags to any work item to support filter backlogs and queries](../work/track/add-tags-to-work-items.md).
 
-</div>
-</div> 
-<p>You can [add existing tags to any work item to support filter backlogs and queries](../work/track/add-tags-to-work-items.md).</p>
-
-<p>Work items you add are automatically scoped to your [team's area and iteration paths](../work/scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../work//how-to/switch-team-context-work.md).</p>
+Work items you add are automatically scoped to your [team's area and iteration paths](../work/scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../work//how-to/switch-team-context-work.md).
 	
 >[!NOTE]  
 >Depending on the process chosen when the team project was created&mdash;[Scrum](../work/guidance/scrum-process.md), 
@@ -134,10 +113,8 @@ For a comparison chart of Stakeholder vs Basic access, see this [feature matrix]
 
 - [Add work items](../work/backlogs/add-work-items.md)  
 - [Create your backlog](../work/backlogs/create-your-backlog.md)
-- [Kanban basics](../work/kanban/kanban-basics.md)
+- [Kanban quickstart](../work/kanban/kanban-quickstart.md)
  
->[!NOTE]  
->If you work from Team Services or TFS 2017.1 or later versions, you'll have access to select preview features. To learn more, see [Enable preview features](../collaborate/preview-features.md). 
 
 <a id="feature-access">  </a> 
 ### Stakeholder feature access
@@ -145,51 +122,10 @@ For a comparison chart of Stakeholder vs Basic access, see this [feature matrix]
 >[!NOTE]  
 >**Feature availability**: The following features are available from Team Services or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. To determine your platform or TFS version, see [Platform and version support](../provide-feedback.md#platform-version).   
 
-
-<div style="float:left;width:350px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Work</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[View, create, and modify work items](#create-work-item) <sup>4</sup></li>
-<li style="margin-bottom:2px">[View, add, and modify items on backlogs](#check-backlog) <sup>5</sup></li>
-<li style="margin-bottom:2px">[View, and modify items on sprint backlogs](../work/scrum/sprint-planning.md) <sup>5</sup></li>
-<li style="margin-bottom:2px">[View, and modify items on the task board](../work/scrum/task-board.md) <sup>5, 6</sup></li>
-<li style="margin-bottom:2px">[View, and modify items (Kanban)](../work/kanban/kanban-basics.md)  <sup>5, 6</sup></li> 
-<li style="margin-bottom:2px">[Add tasks to the checklist (Kanban)](../work/kanban/add-task-checklists.md) <sup>5, 6</sup> (TFS 2015.1)</li>
-<li style="margin-bottom:2px">[Follow changes made to work items](../collaborate/follow-work-items.md) (TFS 2017)</li>
-<li style="margin-bottom:2px">[View the cumulative flow diagram](../report/guidance/cumulative-flow.md)</li>
-<li style="margin-bottom:2px">[View, create, and save queries](#query) <sup>7</sup> </li>
-<li style="margin-bottom:2px">[Submit, view, and change feedback responses](../work/connect/give-feedback.md)</li>
-<li style="margin-bottom:2px">[Change work item type](../work/backlogs/remove-delete-work-items.md) (Team Services)</li>
-
-
-</ul>
-</div>
-
-<div style="float:left;width:350px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Build & Release</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[View releases](../build/actions/view-manage-releases.md) <sup>3</sup> (TFS 2015.2)</li>
-<li style="margin-bottom:2px">[Approve a release](../build/concepts/definitions/release/environments.md#approvals) (TFS 2015.2)</li>
-</ul>
-
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Account, Dashboards, and Notifications</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Navigate to teams, team projects, and more](../connect/account-home-pages.md) (Team Services)</li>
-<li style="margin-bottom:2px">[View project welcome pages](../collaborate/project-vision-status.md) (Team Services)</li>
-<li style="margin-bottom:2px">[View team dashboards](../report/dashboards.md) <sup>1</sup></li>
-<li style="margin-bottom:2px">[Manage personal notifications](../collaborate/manage-personal-notifications.md) (Team Services, TFS 2017) </li>
-<li style="margin-bottom:2px">[Set personal alerts for changes to work items](../work/track/alerts-and-notifications.md) (TFS) </li>
-<li style="margin-bottom:2px">[Invite users and assign licenses](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) <sup>2</sup>  (Team Services)  </li>
-</ul>
-
-
-</div>
-
-
-
-<div style="clear:left;font-size:100%">
-</div>
-
+> [!div class="mx-tdBreakAll"]  
+> |Work  |Account, Dashboards, and Notifications|
+> |-------------|----------|  
+> |- [View, create, and modify work items](#create-work-item) <sup>4</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>5</sup><br/>- [View, and modify items on sprint backlogs](../work/scrum/sprint-planning.md) <sup>5</sup><br/>- [View, and modify items on the task board](../work/scrum/task-board.md) <sup>5, 6</sup><br/>- [View, and modify items (Kanban)](../work/kanban/kanban-basics.md)  <sup>5, 6</sup><br/>- [Add tasks to the checklist (Kanban)](../work/kanban/add-task-checklists.md) <sup>5, 6</sup> (TFS 2015.1)<br/>- >[Follow changes made to work items](../collaborate/follow-work-items.md) (TFS 2017)<br/>- [View the cumulative flow diagram](../report/guidance/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>7</sup> <br/>- [Submit, view, and change feedback responses](../work/connect/give-feedback.md)<br/>- [Change work item type](../work/backlogs/remove-delete-work-items.md) (Team Services<br/>**Build & Release**<br/>- [View releases](../build/actions/view-manage-releases.md) <sup>3</sup> (TFS 2015.2)<br/>- [Approve a release](../build/concepts/definitions/release/environments.md#approvals) (TFS 2015.2) | [Navigate to teams, team projects, and more](../connect/account-home-pages.md) (Team Services)<br/>- [View project welcome pages](../collaborate/project-vision-status.md) (Team Services)<br/>- [View team dashboards](../report/dashboards.md) <sup>1</sup><br/>- [Manage personal notifications](../collaborate/manage-personal-notifications.md) (Team Services, TFS 2017) <br/>- [Set personal alerts for changes to work items](../work/track/alerts-and-notifications.md) (TFS) <br/>- [Invite users and assign licenses](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) <sup>2</sup>  (Team Services)  |
 
 **Notes:**   
 1. Stakeholders cannot view markdown README files defined for repositories.  
@@ -201,10 +137,10 @@ For a comparison chart of Stakeholder vs Basic access, see this [feature matrix]
 7. Stakeholders can save queries under My Queries but cannot save under Shared Queries. 
 
 
-
 Also, Stakeholders cannot add or view [Delivery Plans](../work/scale/review-team-plans.md).   
 
 If you choose a feature that's not available to you as a stakeholder, you'll receive an error message indicating that you have insufficient permissions when you try to complete the task. 
+
 #### Features stakeholders can't access 
 
 If you need access to the following features&mdash;which support the daily work of product owners, team leads, developers, testers, and project administrators&mdash;you need to be have Basic access:  

@@ -6,8 +6,8 @@ ms.prod: vs-devops-alm
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/14/2017
----
+ms.date: 07/20/2017
+--- 
 
 #Add task checklists
 

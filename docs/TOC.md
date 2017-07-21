@@ -1,9 +1,9 @@
-# [DevOps documentation](index.md)
+# [User guide to getting started](index.md)
 
 
 # Overview  
 ## [Devops for Team Services & TFS](devops-alm-overview.md)
-
+## [Essential services](services.md)  
 
 
 # Quickstarts
@@ -32,14 +32,6 @@
 ### [Share work plans](work/track/share-plans.md)
 ### [Team dashboards](report/dashboards.md)
 
-
-## Share information
-### [Share your project vision](collaborate/project-vision-status.md)   
-### [Add and edit a wiki](collaborate/add-edit-wiki.md)
-### [Create a readme for your repo](/team-services/git/create-a-readme)
-### [Share work plans](/team-services/work/track/share-plans)
-### [Team dashboards](/team-services/report/dashboards)
-
 ## Manage notifications (alerts) 
 ### [Follow work & pull requests](collaborate/follow-work-items.md)
 ### [Personal notifications](collaborate/manage-personal-notifications.md)
@@ -52,22 +44,18 @@
 ### [Collaborate in a team room](collaborate/collaborate-in-a-team-room.md)  
 
 
-
 # Concepts
 ## [Team projects, teams, and repos (NEW)](get-started/team-projects-teams-repos.md)  
 ## [Access levels (NEW)](concepts/access-level.md)
 ## [Source control (NEW)](concepts/source-control.md)
 ## [Kanban & Agile (NEW)](concepts/kanban-agile.md)
 ## [Continuous integration (NEW)](concepts/continuous-integration-deployment.md)
-## [Permissions & access](setup-admin/permissions-access.md)
+
 ## [Key concepts](concepts.md)
 ## [Essential services](services.md)
 ## [Clients & tools](tools.md)  
-## [Software development roles](roles.md)  
-## [Navigate in the web portal](connect/work-web-portal.md)   
-## [Navigate in Team Explorer](connect/work-team-explorer.md)  
+## [Software development roles](roles.md)   
 ## [How Team Services & TFS differ](about-vsts-tfs.md)
-
 
 # How-to guides
 ## [Go mobile](collaborate/mobile-work.md)
@@ -99,6 +87,7 @@
 
 # Reference
 
+## [Permissions & access](setup-admin/permissions-access.md)
 ## Permissions guide (NEW) 
 ## [Productivity tips](work/productivity/productivity-tips.md)
 ## [Keyboard shortcuts](reference/keyboard-shortcuts.md)
@@ -106,7 +95,10 @@
 ## [Features index](alm-devops-features.md)
 ## [FAQs](faqs.md)
 ## [Migrate from TFS to Team Services](migrate-to-vsts-from-tfs.md)
- 
+## [Navigate in the web portal](connect/work-web-portal.md)   
+## [Navigate in Team Explorer](connect/work-team-explorer.md) 
+
+
 # Troubleshooting
 ## Resolve connection issues (NEW TOPIC)
 ## [Get support, provide feedback](provide-feedback.md)

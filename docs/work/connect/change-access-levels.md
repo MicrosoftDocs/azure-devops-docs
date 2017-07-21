@@ -7,15 +7,16 @@ ms.prod: vs-devops-alm
 ms.assetid: 84B0D454-09A7-414B-A9E0-FE9A9ACD7E99
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/03/2017
+ms.date: 07/20/2017
 ---
 
 # Change access levels
 
 **TFS 2017 | TFS 2015 | TFS 2013**  
 
+**UPDATE - To Be Completed - Make into a Tutorial **
 
-IN REVISION - 
+
 See [Access levels](../../concepts/access-levels.md).
 
 

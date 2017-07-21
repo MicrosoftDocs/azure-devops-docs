@@ -7,14 +7,14 @@ ms.prod: vs-devops-alm
 ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/03/2017
+ms.date: 07/20/2017
 ---
 
 # Change access levels
 
 **Team Services | TFS 2017 | TFS 2015 | TFS 2013**  
 
-**NEW - To Be Completed**
+**UPDATE - To Be Completed - Make into an Overview **
 
 
 >[!IMPORTANT]  

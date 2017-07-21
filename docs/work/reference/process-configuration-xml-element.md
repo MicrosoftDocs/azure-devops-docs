@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/12/2017
+ms.date: 07/20/2017
 ---
 
 # Process configuration XML element reference
@@ -93,24 +93,6 @@ You configure backlogs within the XML sections that appear in the following samp
 
 #### Syntax for PortfolioBacklogs elements
 
-``` XML 
-&lt;PortfolioBacklog category=&quot;PortfolioCategory&quot; parent=&quot;ParentCategory&quot; pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot; workItemCountLimit=&quot;MaximumLimit&gt;
-   &lt;States&gt; . . . &lt;/States&gt;
-   &lt;Columns&gt; . . . &lt;/Columns&gt;
-   &lt;AddPanel&gt; . . . &lt;/ AddPanel&gt;
-&lt;/PortfolioBacklog &gt;
-```
-
-
-``` XML
-&lt;RequirementBacklog category=&quot;RequirementCategory&quot; pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot; workItemCountLimit=&quot;MaximumLimit&quot; &gt;
-   &lt;States&gt; . . . &lt;/States&gt;
-   &lt;Columns&gt; . . . &lt;/Columns&gt;
-   &lt;AddPanel&gt; . . . &lt;/ AddPanel&gt;
-&lt;/RequirementBacklog &gt;
-```
-
-
 <table>
 <thead>
 <tr>
@@ -127,14 +109,8 @@ You configure backlogs within the XML sections that appear in the following samp
 <td><p><strong>PortfolioBacklog</strong></p></td>
 <td><p>Optional. Up to five instances.</p>
 <p>Container element that defines the state category mappings, default columns, and quick add panel for a portfolio backlog.</p>
-<pre><code>&lt;PortfolioBacklog category=&quot;PortfolioCategory&quot; parent=&quot;ParentCategory&quot; pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot; workItemCountLimit=&quot;MaximumLimit&gt;  
-   &lt;States&gt; . . . &lt;/States&gt;  
-   &lt;Columns&gt; . . . &lt;/Columns&gt;  
-   &lt;AddPanel&gt; . . . &lt;/ AddPanel&gt;  
-&lt;/PortfolioBacklog &gt;  
-</code></pre>
-
-<pre><code>&lt;PortfolioBacklog category=&quot;PortfolioCategory&quot; parent=&quot;ParentCategory&quot; pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot; workItemCountLimit=&quot;MaximumLimit&gt;  
+<pre><code>&lt;PortfolioBacklog category=&quot;PortfolioCategory&quot; parent=&quot;ParentCategory&quot;  
+      pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot; workItemCountLimit=&quot;MaximumLimit&gt;  
    &lt;States&gt; . . . &lt;/States&gt;  
    &lt;Columns&gt; . . . &lt;/Columns&gt;  
    &lt;AddPanel&gt; . . . &lt;/ AddPanel&gt;  
@@ -154,7 +130,9 @@ You configure backlogs within the XML sections that appear in the following samp
 <td><p><strong>RequirementBacklog</strong></p></td>
 <td><p>Required. One instance only.</p>
 <p>Container element that defines the state category mappings, default columns, and quick add panel for the product backlog. The product backlog displays all active items in the team's backlog.</p>
-<pre><code>&lt;RequirementBacklog category=&quot;RequirementCategory&quot; pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot; workItemCountLimit=&quot;MaximumLimit&quot; &gt;
+<pre><code>&lt;RequirementBacklog category=&quot;RequirementCategory&quot;  
+      pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;   
+      workItemCountLimit=&quot;MaximumLimit&quot; &gt;  
    &lt;States&gt; . . . &lt;/States&gt;
    &lt;Columns&gt; . . . &lt;/Columns&gt;
    &lt;AddPanel&gt; . . . &lt;/ AddPanel&gt;
@@ -215,9 +193,9 @@ There are three groups of state categories: Agile, Bug, and Feedback. The follow
 <tr>
 <td><p><strong>State</strong></p></td>
 <td><p>Required. Assigns a workflow state to a state category.</p>
-<div style="color:Black;">
+
 <pre><code>&lt;State value=&quot;ValueName&quot; type=&quot;TypeName&quot; /&gt;</code></pre>
-</div>
+
 <p>Valid values for <i>ValueName</i> correspond to a value assigned to a <strong>STATE</strong> within the <strong>WORKFLOW</strong> section of those WITs assigned to the category group.</p>
 <p>Valid values for <i>TypeName</i> correspond to one of the following enumerated values:</p>
 <ul>
@@ -230,8 +208,7 @@ There are three groups of state categories: Agile, Bug, and Feedback. The follow
 </ul>
 <p>Work items in a workflow state that aren't mapped to one of the state categories don't appear on the backlog or board.</p></li>
 <li><p>Bug: Use only for work item types grouped within the Bug Category. In addition to the Agile state categories, includes the <strong>Resolved</strong> state category which indicates bugs that have been resolved.</p>
-<blockquote>
-![note icon](../_img/icons/note-icon.png)<br/>
+<blockquote>**NOTE:**<br/>
 You can only assign the <strong>Resolved</strong> state category to a workflow state specified under the <strong>BugWorkItems</strong> element.</blockquote>
 
 </li>
@@ -289,9 +266,9 @@ Here's the default configuration defined by the Scrum process template for the p
 <tr>
 <td><p><strong>Column</strong></p></td>
 <td><p>Specifies a field to appear as a column on a backlog.</p>
-<div style="color:Black;">
+
 <pre><code>&lt;Column refname=&quot;FieldReferenceName&quot;  width=&quot;FieldWidth&quot; /&gt;</code></pre>
-</div></td>
+</td>
 </tr>
 </tbody>
 </table>
@@ -337,9 +314,9 @@ The following code corresponds to the default assignments defined in the Visual 
 <tr>
 <td><p><strong>Field</strong></p></td>
 <td><p>Specifies a work item field to appear within the panel for the product backlog.</p>
-<div style="color:Black;">
+
 <pre><code>&lt;Field refname=&quot;FieldReferenceName&quot;/&gt;</code></pre>
-</div>
+
 <p>The same field should appear on the work item form of each WIT included in the category for the backlog.</p></td>
 </tr>
 </tbody>
@@ -390,63 +367,69 @@ The following table describes the additional elements used to define the state c
 <tr>
 <td><p><strong>BugWorkItems</strong></p></td>
 <td><p>Optional. Container element that defines the state category mappings for work item types assigned to the Bug Category. In addition to how these mappings are used in the display of Agile tools, they also control how the <strong>My Work</strong> feature in Team Explorer updates the bug state as developers move bugs using <strong>My Work</strong>. To learn more, see [Get your code reviewed (TFVC)](../../tfvc/get-code-reviewed-vs.md).</p>
-<div style="color:Black;">
-<pre><code>&lt;BugWorkItems category=&quot;CategoryName&quot; pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;&gt;
+
+<pre><code>&lt;BugWorkItems category=&quot;CategoryName&quot;  
+      pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;&gt;
    &lt;States&gt;
 . . .
    &lt;/States&gt;
 &lt;/BugWorkItems&gt;</code></pre>
-</div></td>
+</td>
 </tr>
 <tr>
 <td><p><strong>FeedbackRequestWorkItems</strong></p></td>
 <td><p>Required. Do not customize. Container element that defines the state category mappings for work item types assigned to the feedback request category.</p>
-<div style="color:Black;">
-<pre><code>&lt;FeedbackResponseWorkItems category=&quot;CategoryName&quot; pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;&gt;
+
+<pre><code>&lt;FeedbackResponseWorkItems category=&quot;CategoryName&quot;  
+      pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;&gt;
    &lt;States&gt;
 . . .
    &lt;/States&gt;
 &lt;/FeedbackRequestWorkItems&gt;</code></pre>
-</div></td>
+</td>
 </tr>
 <tr>
 <td><p><strong>FeedbackResponseWorkItems</strong></p></td>
 <td><p>Required. Do not customize. Container element that defines the state category mappings for work item types assigned to the feedback response category.</p>
-<div style="color:Black;">
-<pre><code>&lt;FeedbackResponseWorkItems category=&quot;CategoryName&quot; pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;&gt;
+
+<pre><code>&lt;FeedbackResponseWorkItems category=&quot;CategoryName&quot;  
+      pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;&gt;
    &lt;States&gt;
 . . .
    &lt;/States&gt;
 &lt;/FeedbackResponseWorkItems&gt;</code></pre>
-</div></td>
+</td>
 </tr>
 <tr>
 <td><p><strong>TestPlanWorkItems</strong></p></td>
 <td><p>Only required when you customize the workflow state for Test Plan and you support connections to the team project from versions of Test Manager installed with Visual Studio 2013.2 or earlier versions.</p>
 <p>Container element that defines the state category mappings for work item types assigned to the Test Plan Category. For example:</p>
-<div style="color:Black;">
-<pre><code>&lt;TestPlanWorkItems category=&quot;Microsoft.TestPlanCategory&quot; pluralName=&quot;Test Plans&quot; singularName=&quot;Test Plan&quot;&gt;
+
+<pre><code>&lt;TestPlanWorkItems category=&quot;Microsoft.TestPlanCategory&quot;  
+      pluralName=&quot;Test Plans&quot; singularName=&quot;Test Plan&quot;&gt;
     &lt;States&gt;
       &lt;State type=&quot;InProgress&quot; value=&quot;Design&quot; /&gt;
       &lt;State type=&quot;InProgress&quot; value=&quot;Testing&quot; /&gt;
       &lt;State type=&quot;Complete&quot; value=&quot;Signed Off&quot; /&gt;
     &lt;/States&gt;
   &lt;/TestPlanWorkItems&gt;</code></pre>
-</div></td>
+</td>
 </tr>
 <tr>
 <td><p><strong>TestSuiteWorkItems</strong></p></td>
 <td><p>Only required when you customize the workflow state for Test Suite and you support connections to the team project from versions of Test Manager installed with Visual Studio 2013.2 or earlier versions.</p>
 <p>Container element that defines the state category mappings for work item types assigned to the Test Suite Category. For example:</p>
-<div style="color:Black;">
-<pre><code>&lt;TestSuiteWorkItems category=&quot;Microsoft.TestSuiteCategory&quot; pluralName=&quot;Test Suites&quot; singularName=&quot;Test Suite&quot;&gt;
+
+<pre><code>&lt;TestSuiteWorkItems  
+      category=&quot;Microsoft.TestSuiteCategory&quot;  
+      pluralName=&quot;Test Suites&quot; singularName=&quot;Test Suite&quot;&gt;
     &lt;States&gt;
       &lt;State type=&quot;Proposed&quot; value=&quot;Authoring&quot; /&gt;
       &lt;State type=&quot;InProgress&quot; value=&quot;Testing&quot; /&gt;
       &lt;State type=&quot;Complete&quot; value=&quot;Completed&quot; /&gt;
     &lt;/States&gt;
   &lt;/TestSuiteWorkItems&gt;</code></pre>
-</div>
+
 <p></p></td>
 </tr>
 </tbody>
@@ -497,9 +480,10 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
 <tr>
 <td><p><strong>TypeField</strong></p></td>
 <td><p>Required. Specifies the reference name of a field whose value supports a type of activity for a feature area. The fields you specify should correspond to the fields that you use within the WITs used to capture the feature information.</p>
-<div style="color:Black;">
-<pre><code>&lt;TypeField refname="FieldReferenceName" type="NameOfType" [format="{0} TimeUnitString"] / &gt;</code></pre>
-</div>
+
+<pre><code>&lt;TypeField refname="FieldReferenceName"  
+      type="NameOfType" [format="{0} TimeUnitString"] / &gt;</code></pre>
+
 <p>Specify the format only when `type="RemainingWork"`. You can specify any text string for the <i>TimeUnitString</i> that you want to have appear on the capacity bars on the current sprint backlog and on the task board.</p>
 <p><strong>For Agile tools:</strong></p>
 <ul>
@@ -508,8 +492,7 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
 <li><p><strong>Effort</strong>: Used to calculate the team velocity. Specify the same field used in the WIT assigned to the Requirement Category that you use to capture the estimated level of effort, story points, or size for the amount of work that a backlog item requires to implement.</p></li>
 <li><p><strong>Order</strong>: Used to define the sort order for items on the backlogs and boards. The system lists work items according to their ascending order as defined by the field for this type.</p>
 
-<blockquote>
-![note icon](../_img/icons/note-icon.png)<br/>
+<blockquote>**NOTE:**<br/>
 You can move items by dragging them up or down the list on a backlog or board. As you move items, a background process updates the field assigned to the `type="Order"`.</blockquote>
 
 </li>
@@ -525,8 +508,7 @@ You can move items by dragging them up or down the list on a backlog or board. A
 </ul>
 <p><strong>For the feedback request form:</strong></p>
 
-<blockquote>
-![note icon](../_img/icons/note-icon.png)<br/>
+<blockquote>**NOTE:**<br/>
 You should not have to change the default assignments made for the following <strong>TypeField</strong> elements. These assignments correspond to the fields used to capture the corresponding information in the WIT assigned to the Feedback Request Category.</blockquote>
 
 <ul>
@@ -544,17 +526,14 @@ You should not have to change the default assignments made for the following <st
 <td><p><strong>TypeFieldValue</strong></p></td>
 <td><p>Required. Do not customize.</p>
 <p>Specifies the name of an application type to appear on the feedback request form.</p>
-<div style="color:Black;">
 <pre><code>&lt;TypeFieldValue value=&quot;ApplicationTypeName&quot; type=&quot;TypeApp&quot;/&gt;</code></pre>
-</div>
 <p>The default assignments correspond to the allowed values specified in the type definition for the feedback request form.</p>
-<div style="color:Black;">
 <pre><code>&lt;TypeFieldValues&gt;
    &lt;TypeFieldValue value=&quot;Web application&quot; type=&quot;WebApp&quot; /&gt;
    &lt;TypeFieldValue value=&quot;Remote machine&quot; type=&quot;RemoteMachine&quot; /&gt;
    &lt;TypeFieldValue value=&quot;Client application&quot; type=&quot;ClientApp&quot; /&gt;
 &lt;/TypeFieldValues&gt;</code></pre>
-</div></td>
+</td>
 </tr>
 </tbody>
 </table>
@@ -588,13 +567,10 @@ Non-working days are removed from calculations made by the [capacity planning to
 <td><p><strong>DayOfWeek</strong></p></td>
 <td><p>Required child of the <strong>Weekends</strong> element.</p>
 <p>Specifies a day of the week that corresponds to a non-working day.</p>
-<div style="color:Black;">
 <pre><code>&lt;DayOfWeek&gt;NameOfADay&lt;/DayOfWeek&gt;</code></pre>
-</div>
 <p>Valid names correspond to the English days of the week: <strong>Sunday</strong>, <strong>Monday</strong>, <strong>Tuesday</strong>, <strong>Wednesday</strong>, <strong>Thursday</strong>, <strong>Friday</strong>, and <strong>Saturday</strong>.</p>
 
-<blockquote>
-![note icon](../_img/icons/note-icon.png)<br/>
+<blockquote>**NOTE:**<br/>
 You must specify the day of a week in English, regardless of the installed language of your on-premises TFS.</blockquote>
 </td>
 </tr>
@@ -651,9 +627,9 @@ The Scrum process template defines the following color assignments. Similar ones
 <td><p>Specifies the colors used to display a WIT within the web portal. The primary color is used in list displays. The secondary color is no longer referenced, however you must specify it for the syntax to validate.</p>
 
 <p>When specifying the color, always prefix the six-digit Hex color code with **FF** which denotes that the color should be fully visible. </p> 
-<div style="color:Black;">
-<pre><code>&lt;WorkItemColor primary=&quot;HexColorCode&quot; secondary=&quot;HexColorCode&quot; name=&quot;witName&quot; /&gt;</code></pre>
-</div>
+
+<pre><code>&lt;WorkItemColor primary=&quot;HexColorCode&quot; secondary=&quot;HexColorCode&quot;  
+   name=&quot;witName&quot; /&gt;</code></pre>
 
 </td>
 </tr>
@@ -714,9 +690,10 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
 <li><p><strong>StateColors</strong> sets the color values for workflow states. (Requires TFS 2017 or later version) </p>
 <a id="state-colors">  </a>
 <p>The value for the property is a comma-separated list of state names and hex colors. Prefix the six-digit Hex color code with FF which denotes that the color should be fully visible.</p>
-```<Property name="StateColors" value="stateName1=color1,stateName2=color2,..." />```
-<blockquote>
-![note icon](../_img/icons/note-icon.png)<br/>
+<pre><code><Property name="StateColors" value="stateName1=color1,  
+stateName2=color2,..." />
+</code></pre>
+<blockquote>**NOTE:**<br/>
 <b>Feature availability: </b>You can specify workflow state colors if you use Hosted XML or, for On-premises XML, you have upgraded to TFS 2015.2 or later version.   
 </blockquote> 
 <p>For additional details, see the next section, [Specify workflow state colors](#workflow-colors).</p></li>
@@ -725,12 +702,11 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
 <li>
 <p><strong>WorkItemTypeIcons</strong> defines the icon to display for each work item type. The icon displays in lists of work items and in work item forms. The default entry for the Agile process is as shown. You can only specify an icon from the [supported list of icons](#supported-icons). </p>
 <pre><code>&lt;Property name="WorkItemTypeIcons" 
-   value="Epic=Icon_Crown,Feature=Icon_Trophy,User Story=icon_book,
-   Task=icon_clipboard,Bug=icon_insect,Issue=icon_traffic_cone,
-   Test Plan=icon_test_plan,Test Suite=icon_test_suite,Test Case=icon_test_beaker, 
-   Shared Steps=icon_test_step,Shared Parameter=icon_test_parameter" /&gt;</code></pre>
-<blockquote>
-![note icon](../_img/icons/note-icon.png)<br/>
+   value="Epic=Icon_Crown,Feature=Icon_Trophy,  
+   User Story=icon_book,Task=icon_clipboard,Bug=icon_insect,  
+   Issue=icon_traffic_cone,Test Plan=icon_test_plan,Test Suite=icon_test_suite,  
+   Test Case=icon_test_beaker,Shared Steps=icon_test_step,Shared Parameter=icon_test_parameter" /&gt;</code></pre>
+<blockquote>**NOTE:**<br/>
 <b>Feature availability: </b> You can customize the icons used for work item types if you use Hosted XML or, for On-premises XML, you have upgraded to TFS 2017.2 or later version.     
 </blockquote> 
 </li>

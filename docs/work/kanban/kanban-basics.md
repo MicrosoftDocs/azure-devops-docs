@@ -18,8 +18,6 @@ To maximize a team's ability to consistently deliver high quality software, Kanb
 
 Your Kanban board turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a user story (blue cards) or a bug (red cards) at that stage of work.
 
-
-
 Review this topic to gain an understanding of how to configure and start working with your Kanban boards:   
 
 > [!div class="checklist"] 
@@ -44,11 +42,10 @@ User stories and bugs correspond to types of work items. You use  [work items](.
 
 You open your Kanban board using one of these URLs that connects you to your team project:   
 
-**Team Services**:  ```http://AccountName/DefaultCollection/TeamProjectName/_backlogs/board/ ```
+**Team Services**:  ```http://AccountName/DefaultCollection/TeamProjectName/_backlogs/board/ ```  
+**On-premises TFS**:  ```http://ServerName:8080/tfs/DefaultCollection/TeamProjectName/_backlogs/board/```  
 
-**On-premises Team Foundation Server (TFS)**:  ```http://ServerName:8080/tfs/DefaultCollection/TeamProjectName/_backlogs/board/```
-
-If you don't have a team project yet, create one in [Visual Studio Team Services](../../setup-admin/team-services/set-up-vs.md) or set one up in an [on-premises TFS](../../setup-admin/create-team-project.md). If you don't have access to the team project, get [invited to the team](../scale/multiple-teams.md#add-team-members).
+If you don't have a team project yet, create one in [Visual Studio Team Services](../../setup-admin/team-services/set-up-vs.md) or set one up in an [on-premises TFS](../../setup-admin/create-team-project.md). If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) or [TFS](../../add-users.md).
 
 ## 1. Map the flow of how your team works
 <meta name="description" content="Kanban workflow" />
@@ -125,8 +122,7 @@ The CFD shows the count of items in each Kanban column for the past 30 weeks or 
 By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For additional guidance, see [Cumulative Flow](../../report/guidance/cumulative-flow.md) 
  
 >[!NOTE]  
-><b>Feature availability: </b>From Team Services, you can also add the [Cumulative Flow Diagram (CFD)](../../report/guidance/cumulative-flow.md) and [Lead Time and Cycle Time](../../report/guidance/cycle-time-and-lead-time.md)  widgets to a team dashboard.  
-
+><b>Feature availability: </b>From Team Services, you can also add the [Cumulative Flow Diagram (CFD)](../../report/guidance/cumulative-flow.md), [Lead Time and Cycle Time](../../report/guidance/cycle-time-and-lead-time.md), and [Velocity](../../report/guidance/team-velocity.md) widgets to a team dashboard.  
 
 
 ## Related notes
