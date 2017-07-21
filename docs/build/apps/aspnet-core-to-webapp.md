@@ -30,13 +30,13 @@ _TODO: Architecture diagram_
 
 Before you begin, make sure that you:
 
-* Have an Azure subscription with a web app. If you don't have an Azure subscription, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F). If you are new to Azure or need to create a web app, see _TODO: link_.
+* Have an Azure subscription with a web app. If you don't have an Azure subscription, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F). If you are new to Azure or need to create a web app, see [Web Apps Documentation](https://docs.microsoft.com/azure/app-service-web/).
 
-* Are an administrator of the VSTS account. If you don't have a VSTS account, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If you are new to VSTS or Git, see _TODO: link_ to create your first team project and learn about Git.
+* Are an administrator of the VSTS account. If you don't have a VSTS account, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If you are new to VSTS or Git, see [Create a team project](https://www.visualstudio.com/docs/setup-admin/create-team-project) to create your first team project and learn about Git.
 
 _TODO: in following shared section: Indicate that you can skip this section if you've already got a web app. Replace screenshots light theme._
 
-[!INCLUDE [temp](_shared/create-azure-web-app.md)]
+[!INCLUDE [create-azure-web-app](_shared/create-azure-web-app.md)]
 
 ## Import sample code into VSTS
 
@@ -56,42 +56,42 @@ If you need a simple app to try this quickstart, you can import our sample app i
   https://github.com/adventworks/dotnetcore-sample
   ```
 
-1. Click **Import** to copy the sample app code into your Team Services Git repository.
+1. Choose **Import** to copy the sample app code into your Team Services Git repository.
 
 ## Configure continuous delivery
 
-1. Login to the Azure portal, and open the web app's blade. Choose **Continuous Delivery** and then choose **Configure**.
+1. Log into the Azure portal and open the web app's blade. Choose **Continuous Delivery** and then choose **Configure**.
 
-   _TODO: screenshot at your discretion_
+   ![Starting Continuous Delivery configuration](_img/aspnet-core-to-webapp/continuous-delivery-intro.png)
 
-1. Select **Choose repository** and select **Visual Studio Team Services** for the code repository. Select the project, repository, and branch of the repository in which your imported the sample code. When you're done, choose **OK**.
-
-  _TODO: screenshot at your discretion_
+1. Select **Choose repository** and select **Visual Studio Team Services** for the code repository. Select the project, repository, and branch into which your imported the sample code. When you're done, choose **OK**.
+ 
+   ![Configuring the source code repository](_img/aspnet-core-to-webapp/continuous-delivery-repository.png)
 
 1. Select **Configure Continuous Delivery** and choose **ASP.NET Core**. When you're done, choose **OK**.
 
-  _TODO: screenshot at your discretion_
+   ![Configuring the app type](_img/aspnet-core-to-webapp/continuous-delivery-apptype.png)
 
-1. Skip the other two steps - **Test** and **Deploy** - and select **OK** to complete the configuration of continuous delivery.
+1. Skip the other two steps - **Test** and **Deploy** - and choose **OK** to complete the configuration of continuous delivery.
 
-  _TODO: screenshot at your discretion_
+   ![Completing the configuration](_img/aspnet-core-to-webapp/continuous-delivery-complete.png)
 
-1. When you click **OK**, Azure Continuous Delivery configures and kicks off a build and deployment in VSTS.
-   You can first view the build in progress.
+1. When you choose **OK**, Azure Continuous Delivery configures and kicks off a build and deployment in VSTS.
+   When the build completes, the deployment is automatically initiated. You can see this happening in the logs blade.  
 
-   _TODO: screenshot at your discretion_
+   ![Viewing the log while build is in progress](_img/aspnet-core-to-webapp/continuous-delivery-log.png)
 
-   When the build completes, the deployment is automatically initiated.
+1. After a while, the deployment is completed. Choose **Refresh Logs** to see this in the **Activity Log**.
 
-  _TODO: screenshot at your discretion_
+   ![Viewing the log when deployment is complete](_img/aspnet-core-to-webapp/continuous-delivery-log2.png)
 
-1. After a few moments, the deployment is completed, and you see that in the **Activity Log**.
+1. Open the **Overview** blade and choose the URL link for the web app.
 
-  _TODO: screenshot at your discretion_
+   ![Opening the web app from the Overview tab](_img/aspnet-core-to-webapp/overview-openapp.png)
 
-1. Click on the URL for the web app in the blade, and browse the web app. You should see your application deployed.
+1. Browse your new web app.
 
-  _TODO: screenshot at your discretion_
+   ![The web app deployed](_img/aspnet-core-to-webapp/app-deployed.png)
 
 ## Review the pipeline in VSTS
 
