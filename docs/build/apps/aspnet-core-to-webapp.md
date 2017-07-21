@@ -134,6 +134,10 @@ Now that you have a completely automated CI/CD pipeline, any changes you make to
 
 You can use Visual Studio to connect and push commits up to to your VSTS Git repo. (See [Share code with push](https://www.visualstudio.com/docs/git/tutorial/pushing).) However, VSTS also features a web-based editor to so that you can quickly commit small changes to source code directly in your browser.
 
+1. In the **Overview** blade of your web app in the Azure portal, choose **Stop** to allow the files to be released for updating the app.
+
+   ![Stopping the app](_img/aspnet-core-to-webapp/stop-app.png)
+
 1. Navigate to the **Code** hub in the VSTS portal. Change the code in **Views/Home/Index.cshtml** file by selecting the **Edit** action.
 
    ![Editing the code in the VSTS editor](_img/aspnet-core-to-webapp/edit-in-vsts.png)
@@ -148,6 +152,12 @@ You can use Visual Studio to connect and push commits up to to your VSTS Git rep
 
 1. Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure web app.
 
-1. Wait a few minutes and then navigate to the web app URL in a browser to see the change deployed.
+   ![Committing the new code in the VSTS editor](_img/aspnet-core-to-webapp/commit-code.png)
 
-  _TODO: screenshot_
+1. Wait a few minutes and then, in the **Overview** blade of your web app in the Azure portal, choose **Start**.
+
+   ![Starting the app](_img/aspnet-core-to-webapp/start-app.png)
+
+1. navigate to the web app URL in a browser to see the change deployed.
+
+   ![Viewing the updated app](_img/aspnet-core-to-webapp/updated-app.png)
