@@ -26,37 +26,13 @@ You will use the Azure portal to configure a basic CI/CD pipeline. You will then
 
 _TODO: Architecture diagram_
 
-## Prerequisites
-
-Before you begin, make sure that you:
-
-* Have an Azure subscription with a web app. If you don't have an Azure subscription, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F). If you are new to Azure or need to create a web app, see [Web Apps Documentation](https://docs.microsoft.com/azure/app-service-web/).
-
-* Are an administrator of the VSTS account. If you don't have a VSTS account, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If you are new to VSTS or Git, see [Create a team project](https://www.visualstudio.com/docs/setup-admin/create-team-project) to create your first team project and learn about Git.
+[!INCLUDE [include](_shared/prerequisites.md)]
 
 _TODO: in following shared section: Indicate that you can skip this section if you've already got a web app. Replace screenshots light theme._
 
 [!INCLUDE [create-azure-web-app](_shared/create-azure-web-app.md)]
 
-## Import sample code into VSTS
-
-VSTS is a full-featured Git server for hosting your source code.
-
-If you already have an ASP.NET Core application checked into your VSTS Git repository, you can use that for this quickstart, so long as your app does not depend on a database. To learn how to deploy your app with a database, see _TODO: link_.
-
-If you need a simple app to try this quickstart, you can import our sample app into your VSTS repo:
-
-1. Sign in to VSTS and navigate to the **Code** hub for your VSTS project. Select the option to **Import repository**.
-
- ![import repository menu item](_shared/_img/import-repository-menu-item.png)
-
-1. In the **Import a Git repository** dialog, paste the following for **Clone URL**.
-
-  ```
-  https://github.com/adventworks/dotnetcore-sample
-  ```
-
-1. Choose **Import** to copy the sample app code into your Team Services Git repository.
+[!INCLUDE [temp](_shared/import-code-aspnet-core.md)]
 
 ## Configure continuous delivery
 

@@ -51,7 +51,7 @@ Learn how to build and deploy your choice of ASP.NET Core, ASP.NET, Java, or PHP
 
 ## Videos 
 
-[![Build pipeline via Visual Studio](_img/index/build-ci-cd-pipeline-vs-video.png)](https://channel9.msdn.com/Events/Build/2017/P4105/player)   [![Azure Stack CI/CD](_img/index/azure-stack-video.png)](./backlogs/create-your-backlog.md)   [![Azure Container Service video](_img/index/ci-cd-azure-container-service-video.png)](https://channel9.msdn.com/Events/Connect/2016/204/player)
+[![Build pipeline via Visual Studio](_img/index/build-ci-cd-pipeline-vs-video.png)](https://channel9.msdn.com/Events/Build/2017/P4105/player)   [![Azure Stack CI/CD](_img/index/azure-stack-video.png)](#)   [![Azure Container Service video](_img/index/ci-cd-azure-container-service-video.png)](https://channel9.msdn.com/Events/Connect/2016/204/player)
 
 
 ## Concepts  
