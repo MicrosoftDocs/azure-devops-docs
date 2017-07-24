@@ -70,7 +70,7 @@
       href: ../reference/design-work-item-form.md
     - name: Add the Attachments control
       href: ../reference/add-the-attachments-control.md
-    - name: Provide help text, hyperlinks, or web content
+    - name: "Provide help text, hyperlinks, or web content"
       href: ../reference/provide-help-text-hyperlinks-web-content-form.md
     - name: Add web content to a form
       href: ../reference/edit-wit-definition-add-web-content-form.md
@@ -115,7 +115,7 @@
       items:
       - name: FIELD (Definition)
         href: ../reference/field-definition-element-reference.md
-      - name: COPY, DEFAULT, and SERVERDEFAULT
+      - name: "COPY, DEFAULT, and SERVERDEFAULT"
         href: ../reference/define-default-copy-value-field.md
       - name: GLOBALLIST XML element reference
         href: ../reference/define-global-lists.md
@@ -187,7 +187,7 @@
       href: ../reference/process-templates/define-project-portal-plug-in.md
     - name: Define the Reporting plug-in
       href: ../reference/process-templates/add-reports-to-the-process-template.md
-    - name: Configure initial groups, teams, members, and permissions
+    - name: "Configure initial groups, teams, members, and permissions"
       href: ../reference/process-templates/configure-initial-groups-teams-members-permissions.md
       items:
       - name: Define the Groups and Permissions plug-in
@@ -227,7 +227,7 @@
       href: ../reference/witadmin/witadmin-import-export-global-workflow.md
     - name: Import and export process configuration
       href: ../reference/witadmin/witadmin-import-export-process-configuration.md
-    - name: Import, export, and manage work item types
+    - name: "Import, export, and manage work item types"
       href: ../reference/witadmin/witadmin-import-export-manage-wits.md
     - name: Manage global lists for work item types
       href: ../reference/witadmin/manage-global-lists-for-work-item-types.md
@@ -253,7 +253,8 @@
         href: ../reference/add-or-change-how-project-fields-map-to-tfs-fields.md
       - name: Customize the Project field mapping
         href: ../reference/customize-project-field-mapping-file.md
-      - name: [Map Project fields](../reference/map-microsoft-project-fields-to-tf-fields.md) - duplicate info, with info on plug-in
+      - name: Map Project fields
+        href: ../reference/map-microsoft-project-fields-to-tf-fields.md
       - name: Project field mappings
         href: ../reference/field-mappings-in-microsoft-project.md
       - name: Upload/download the Project mapping file
