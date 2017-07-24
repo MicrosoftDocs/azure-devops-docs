@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/apps/java/maven-to-azure
+redirect_url: /docs/build-release/apps/java/maven-to-azure
 ---

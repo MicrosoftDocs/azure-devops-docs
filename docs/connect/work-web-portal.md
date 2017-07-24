@@ -253,28 +253,28 @@ The **Code** hub supports management of your source control repositories. You ca
 The **Build & Release** hub supports defining and managing builds and releases to deploy your software to different staging and production environments. From the **Test** hub, you can create test plans, test cases, and run tests. 
 
 <div style="float:left;width:300px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Build](../build/overview.md)</p>
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Build](../build-release/overview.md)</p>
 <ul style="padding-left:20px">
-<li style="margin-bottom:2px">[Definitions: Define a build](../build/define/build.md)</li>
-<li style="margin-bottom:2px">[Options: Define multiple configurations](../build/define/options.md)</li>
-<li style="margin-bottom:2px">[Repository: Specify repository for build](../build/define/repository.md)</li>
-<li style="margin-bottom:2px">[Variables: Use build variables](../build/define/variables.md)</li>
-<li style="margin-bottom:2px">[Triggers: Set build triggers](../build/define/triggers.md)</li>
-<li style="margin-bottom:2px">[Retention: Set  retention policies](../build/concepts/policies/retention.md)</li>
-<li style="margin-bottom:2px">[History: View change history](../build/define/history.md)</li>
+<li style="margin-bottom:2px">[Definitions: Define a build](../build-release/define/build.md)</li>
+<li style="margin-bottom:2px">[Options: Define multiple configurations](../build-release/define/options.md)</li>
+<li style="margin-bottom:2px">[Repository: Specify repository for build](../build-release/define/repository.md)</li>
+<li style="margin-bottom:2px">[Variables: Use build variables](../build-release/define/variables.md)</li>
+<li style="margin-bottom:2px">[Triggers: Set build triggers](../build-release/define/triggers.md)</li>
+<li style="margin-bottom:2px">[Retention: Set  retention policies](../build-release/concepts/policies/retention.md)</li>
+<li style="margin-bottom:2px">[History: View change history](../build-release/define/history.md)</li>
 </ul>
 
 </div>
 
 <div style="float:left;width:235px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Release](../build/concepts/definitions/release/index.md)</p>
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Release](../build-release/concepts/definitions/release/index.md)</p>
 <ul style="padding-left:40px">
-<li style="margin-bottom:2px">[Release definition](../build/concepts/definitions/release/index.md)</li>
-<li style="margin-bottom:2px">[Triggers: continuous integration](../build/concepts/definitions/release/triggers.md#release-triggers)</li>
-<li style="margin-bottom:2px">[Deploy release](../build/actions/create-deploy-releases.md#deploy-command)</li>
-<li style="margin-bottom:2px">[Approve a release](../build/concepts/definitions/release/environments.md#approvals)</li>
-<li style="margin-bottom:2px">[Tests: view test results ](../build/actions/view-manage-releases.md#test-results)</li>
-<li style="margin-bottom:2px">[Logs: view release logs](../build/actions/debug-deployment-issues.md)</li>
+<li style="margin-bottom:2px">[Release definition](../build-release/concepts/definitions/release/index.md)</li>
+<li style="margin-bottom:2px">[Triggers: continuous integration](../build-release/concepts/definitions/release/triggers.md#release-triggers)</li>
+<li style="margin-bottom:2px">[Deploy release](../build-release/actions/create-deploy-releases.md#deploy-command)</li>
+<li style="margin-bottom:2px">[Approve a release](../build-release/concepts/definitions/release/environments.md#approvals)</li>
+<li style="margin-bottom:2px">[Tests: view test results ](../build-release/actions/view-manage-releases.md#test-results)</li>
+<li style="margin-bottom:2px">[Logs: view release logs](../build-release/actions/debug-deployment-issues.md)</li>
 <li style="margin-bottom:2px">[Run unit tests with a build](../test/continuous-testing/getting-started/getting-started-with-continuous-testing.md)</li>
 </ul>
 
@@ -398,9 +398,9 @@ Below we show the admin context for the team project level.
 <li style="margin-bottom:2px">[Security (manage project-level permissions)](../setup-admin/permissions.md#team-project-level-permissions)</li>
 <li style="margin-bottom:2px">[Notifications](../collaborate/manage-team-notifications.md) or [Alerts](../work/track/alerts-and-notifications.md)</li>
 <li style="margin-bottom:2px">[Version Control (manage repository permissions)](../setup-admin/permissions.md#git-repository)</li>
-<li style="margin-bottom:2px">[Agent queues](../build/concepts/agents/pools-queues.md)</li>
+<li style="margin-bottom:2px">[Agent queues](../build-release/concepts/agents/pools-queues.md)</li>
 <li style="margin-bottom:2px">[Service hooks](../integrate/get-started/service-hooks/services/webhooks.md)</li>
-<li style="margin-bottom:2px">[Services](../build/concepts/library/service-endpoints.md)</li>
+<li style="margin-bottom:2px">[Services](../build-release/concepts/library/service-endpoints.md)</li>
 <li style="margin-bottom:2px">[Test (manage test retention policies](../test/manual-exploratory-testing/getting-started/how-long-to-keep-test-results.md)</li>
 </ul>
 </div>
@@ -418,8 +418,8 @@ Below we show the admin context for the team project level.
  <li style="margin-bottom:2px">[Settings: Set  account preferences](../setup-admin/account-preferences.md) &#124; [Change application access policies](../setup-admin/team-services/change-application-access-policies-vs.md) &#124; [Change account owner](../setup-admin/team-services/change-account-ownership-vs.md) &#124; [Delete or recover account](../setup-admin/team-services/delete-or-recover-your-account-vs.md) </li>
 <li style="margin-bottom:2px">[Security (manage collection-level permissions)](../setup-admin/permissions.md#collection-level)</li>
 <li style="margin-bottom:2px">[Process (customize work tracking)](../work/process/manage-process.md) </li>
-<li style="margin-bottom:2px">[Build (manage build policies)](../build/concepts/policies/retention.md)</li>
-<li style="margin-bottom:2px">[Agent pools (manage build agents)](../build/concepts/agents/pools-queues.md) (Team Services) </li>
+<li style="margin-bottom:2px">[Build (manage build policies)](../build-release/concepts/policies/retention.md)</li>
+<li style="margin-bottom:2px">[Agent pools (manage build agents)](../build-release/concepts/agents/pools-queues.md) (Team Services) </li>
 <li style="margin-bottom:2px">[Extensions (install/manage extensions)](../marketplace/get-vsts-extensions.md)</li>
 </ul>
 </div>  
@@ -432,8 +432,8 @@ Below we show the admin context for the team project level.
 <ul style="padding-left:40px">
  <li style="margin-bottom:2px">[Overview: Create team projects](../setup-admin/create-team-project.md)  &#124; [Rename team project](../setup-admin/rename-team-project.md) &#124; [Delete team project](../setup-admin/delete-team-project.md)</li>
 <li style="margin-bottom:2px">[Security (manage collection-level permissions)](../setup-admin/permissions.md#collection-level)</li>
-<li style="margin-bottom:2px">[Build (manage build policies)](../build/concepts/policies/retention.md)</li>
-<li style="margin-bottom:2px">[Agent queues](../build/concepts/agents/pools-queues.md) </li>
+<li style="margin-bottom:2px">[Build (manage build policies)](../build-release/concepts/policies/retention.md)</li>
+<li style="margin-bottom:2px">[Agent queues](../build-release/concepts/agents/pools-queues.md) </li>
 <li style="margin-bottom:2px">[Extensions (install/manage extensions)](../marketplace/get-vsts-extensions.md)</li>
 </ul>
 </div>  
@@ -449,7 +449,7 @@ Below we show the admin context for the team project level.
  <li style="margin-bottom:2px">Control panel: Choose team project/team</li>
  <li style="margin-bottom:2px">[Access levels (Stakeholder, Basic, Advanced)](../work/connect/change-access-levels.md)</li>
  <li style="margin-bottom:2px">[Legacy Extensions (manage)](../marketplace/get-vsts-extensions.md)</li>
-<li style="margin-bottom:2px">[Agent pools (manage build agents)](../build/concepts/agents/pools-queues.md)</li>
+<li style="margin-bottom:2px">[Agent pools (manage build agents)](../build-release/concepts/agents/pools-queues.md)</li>
 
 </ul>
 </div>

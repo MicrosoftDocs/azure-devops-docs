@@ -149,7 +149,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 <li>[Create](create-new-repo.md), [delete](delete-existing-repo.md), and [rename](repo-rename.md) repos.</li>
 <li>Set [repo permissions](../setup-admin/permissions.md) and [branch permissions](branch-permissions.md)</li>
 <li>[Set up branch policies](branch-policies.md) to protect key branches</li>
-<li>[Set up continuous integration](../build/define/triggers.md#continuous-integration-ci) to catch bugs sooner.</li>
+<li>[Set up continuous integration](../build-release/define/triggers.md#continuous-integration-ci) to catch bugs sooner.</li>
 </ul>
 
 </div>

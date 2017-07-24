@@ -62,7 +62,7 @@ Learn the basics of working in Git with these tutorials which show tasks perform
  jeremy to update walkthrough videos      
 
 
-[![Git at scale video](_img/index/git-at-scale-video-img.png)](https://channel9.msdn.com/Events/Build/2017/P4101/player)   
+[![Git at scale video](_img/index/git-at-scale-video-img.png)](https://channel9.msdn.com/Events/build-release/2017/P4101/player)   
 
 
 ## Resources 

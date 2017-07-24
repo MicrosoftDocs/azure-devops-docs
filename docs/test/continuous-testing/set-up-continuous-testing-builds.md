@@ -17,7 +17,7 @@ Find problems early after changes are checked in and built by running continuous
 
 Before you start:
 
-* [Create a build definition](../../build/overview.md) that builds your solution after each check-in, using continuous integration.
+* [Create a build definition](../../build-release/overview.md) that builds your solution after each check-in, using continuous integration.
 
 * [Set up environments](set-up-continuous-test-environments-builds.md) to run your app and tests remotely in a distributed environment after each build.
 
@@ -47,9 +47,9 @@ Before you start:
 
    > If you use the list of machines in more than one task, consider defining
    a variable that contains the list of machines. For example, a
-   [build or release definition variable](../../build/concepts/definitions/release/variables.md)
+   [build or release definition variable](../../build-release/concepts/definitions/release/variables.md)
    or a variable defined within a project-wide 
-   [variable group](../../build/concepts/library/variable-groups.md).
+   [variable group](../../build-release/concepts/library/variable-groups.md).
    Using a variable means that you can change the list of machines in one place
    and have the change apply to all the tasks that use the variable.
 

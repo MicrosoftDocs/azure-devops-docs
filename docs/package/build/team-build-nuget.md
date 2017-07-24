@@ -19,7 +19,7 @@ This guide covers the basics of using Team Build to work with NuGet packages in 
 This walkthrough assumes that you've already:
 
 - [Set up your solution](../nuget/consume.md) to consume packages from a Package Management feed
-- [Created a build](https://msdn.microsoft.com/Library/vs/alm/Build/vs/define-build)
+- [Created a build](https://msdn.microsoft.com/Library/vs/alm/build-release/vs/define-build)
 for that solution
 - [Added the correct build service identity](../feeds/common-identities.md) to your feed
 

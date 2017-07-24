@@ -102,7 +102,7 @@ From the **Connect** page, you can select the team projects you want to connect 
 
 <div style="float:left;width:400px;margin:3px;font-size:100%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">**TFVC**: Map workspace</p>
-<p style="padding-left:30px;padding-bottom:0px;text-align:left;">If you connect to a TFVC repo, you'll be prompted to [Configure your workspace (TFVC)](../build/define/options.md) on first connect. </p>
+<p style="padding-left:30px;padding-bottom:0px;text-align:left;">If you connect to a TFVC repo, you'll be prompted to [Configure your workspace (TFVC)](../build-release/define/options.md) on first connect. </p>
 <p style="text-align:Center;">![Team Explorer, Connect, configure TFVC workspace](_img/te-tfvc-configure-workspace.png)</p>
 
 
@@ -152,9 +152,9 @@ From the **Connect** page, you can select the team projects you want to connect 
 <div style="float:left;width:170px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">**Build**</p>
 <ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Create build definitions](../build/define/build.md)</li>
-<li style="margin-bottom:2px">[View and manage builds](../build/overview.md)</li>
-<li style="margin-bottom:2px">[Manage the build queue](../build/concepts/agents/pools-queues.md)</li>
+<li style="margin-bottom:2px">[Create build definitions](../build-release/define/build.md)</li>
+<li style="margin-bottom:2px">[View and manage builds](../build-release/overview.md)</li>
+<li style="margin-bottom:2px">[Manage the build queue](../build-release/concepts/agents/pools-queues.md)</li>
 </ul>
 
 </div>

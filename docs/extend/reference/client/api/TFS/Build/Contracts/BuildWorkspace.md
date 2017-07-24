@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildWorkspace API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts BuildWorkspace API | Extensions for Visual Studio Team Services
 ms.assetid: 14357eb1-1db3-0926-09ae-ef7bdd4d77f2
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # BuildWorkspace
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildController API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts BuildController API | Extensions for Visual Studio Team Services
 ms.assetid: c5f8000a-00fd-8ae0-bf26-1e1ef0aa5ecf
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # BuildController
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 Extends: [ShallowReference](./ShallowReference.md)
 

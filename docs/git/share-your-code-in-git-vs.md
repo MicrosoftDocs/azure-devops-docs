@@ -93,7 +93,7 @@ Double-click a commit to view its file changes.
  
 ## Try this next
 
-[Set up a build](../build/overview.md) for your code and learn more about using Git in the [Team Services Git tutorial](tutorial/gitworkflow.md).
+[Set up a build](../build-release/overview.md) for your code and learn more about using Git in the [Team Services Git tutorial](tutorial/gitworkflow.md).
 
 ## Troubleshooting
 

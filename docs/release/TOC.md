@@ -1,20 +1,20 @@
-# [Overview](../build/overview.md)
-# [Release notes](../build/news/rm-archived.md)
+# [Overview](../build-release/overview.md)
+# [Release notes](../build-release/news/rm-archived.md)
 # Setup and configuration
-## [Configure agents](../build/concepts/agents/agents.md)
-## [Concurrent pipelines in TFS](../build/concepts/licensing/concurrent-pipelines-tfs.md)
-## [Pipelines in Team Services](../build/concepts/licensing/concurrent-pipelines-ts.md)
-## [Azure RM endpoints](../build/actions/azure-rm-endpoint.md)
+## [Configure agents](../build-release/concepts/agents/agents.md)
+## [Concurrent pipelines in TFS](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
+## [Pipelines in Team Services](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
+## [Azure RM endpoints](../build-release/actions/azure-rm-endpoint.md)
 # Author definitions
-## [Release definitions](../build/concepts/definitions/release/index.md)
-## [What to deploy? Artifacts](../build/concepts/definitions/release/artifacts.md)
-## [Where to deploy? Environments](../build/concepts/definitions/release/environments.md)
-## [How to deploy? Tasks](../build/concepts/process/tasks.md)
+## [Release definitions](../build-release/concepts/definitions/release/index.md)
+## [What to deploy? Artifacts](../build-release/concepts/definitions/release/artifacts.md)
+## [Where to deploy? Environments](../build-release/concepts/definitions/release/environments.md)
+## [How to deploy? Tasks](../build-release/concepts/process/tasks.md)
 # Manage releases
-## [Create a release](../build/actions/create-deploy-releases.md)
-## [Track a release](../build/actions/view-manage-releases.md)
+## [Create a release](../build-release/actions/create-deploy-releases.md)
+## [Track a release](../build-release/actions/view-manage-releases.md)
 # Deploy apps
-## [Examples index](../build/apps/index.md)
+## [Examples index](../build-release/apps/index.md)
 # Previous versions
 ## Visual Studio 2015
 ### [Overview](previous-version/release-management-overview.md)

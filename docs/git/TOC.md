@@ -64,7 +64,7 @@
 ### [Lock a branch](lock-branches.md)
 ### [Branch policies](branch-policies.md)
 ### [Branch permissions](branch-permissions.md)
-## [Set up continuous integration](../build/define/triggers.md)
+## [Set up continuous integration](../build-release/define/triggers.md)
 
 # Reference
 ## [Command reference](command-prompt.md)

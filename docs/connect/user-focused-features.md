@@ -227,7 +227,7 @@ The second widget is the Pull Requests widget which can be configured to show ju
 
 <blockquote style="font-size: 13px"><b>Feature availability: </b>The following feature is currently supported only from Team Services.   </blockquote>
 
-From the **Build>Definitions>Mine** page, you can quickly view all builds you've selected as a favorite, have been set as a team favorite, or builds of code that you've checked in. To learn more, see  [2016 Team Foundation Build release notes](../build/news/2016.md#august-19).
+From the **Build>Definitions>Mine** page, you can quickly view all builds you've selected as a favorite, have been set as a team favorite, or builds of code that you've checked in. To learn more, see  [2016 Team Foundation Build release notes](../build-release/news/2016.md#august-19).
 
 <img src="_img/user-cf-build-mine.png" alt="Team Services, Code, Pull Requests, Mine page" style="border: 1px solid #CCCCCC;" />
 

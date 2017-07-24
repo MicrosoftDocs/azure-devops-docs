@@ -1,4 +1,4 @@
 ---
-redirect_url: /docs/build/apps/aspnet/cd/deploy-database-sqlscripts
+redirect_url: /docs/build-release/apps/aspnet/cd/deploy-database-sqlscripts
 ---
 

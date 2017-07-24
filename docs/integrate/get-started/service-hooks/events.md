@@ -77,10 +77,10 @@ A build completes
     "markdown": "Build [ConsumerAddressModule_20150407.2](https://fabrikam-fiber-inc.visualstudio.com/web/build.aspx?pcguid=5023c10b-bef3-41c3-bf53-686c4e34ee9e&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f3) succeeded"
   },
   "resource": {
-    "uri": "vstfs:///Build/Build/2",
+    "uri": "vstfs:///build-release/Build/2",
     "id": 2,
     "buildNumber": "ConsumerAddressModule_20150407.1",
-    "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build/Builds/2",
+    "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Builds/2",
     "startTime": "2015-04-07T18:04:06.83Z",
     "finishTime": "2015-04-07T18:06:10.69Z",
     "reason": "manual",
@@ -113,18 +113,18 @@ A build completes
       "definitionType": "xaml",
       "id": 2,
       "name": "ConsumerAddressModule",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build/Definitions/2"
+      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Definitions/2"
     },
     "queue": {
       "queueType": "buildController",
       "id": 4,
       "name": "Hosted Build Controller",
-      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/build/Queues/4"
+      "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/build-release/Queues/4"
     },
     "requests": [
       {
         "id": 1,
-        "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build/Requests/1",
+        "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Requests/1",
         "requestedFor": {
           "id": "d6245f20-2af8-44f4-9451-8107cb2767db",
           "displayName": "Normal Paulk",

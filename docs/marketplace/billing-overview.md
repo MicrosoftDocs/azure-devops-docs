@@ -187,8 +187,8 @@ or our [Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calc
 Learn about: 
 
 
-*   [Concurrent build and release pipelines in Team Services](../build/concepts/licensing/concurrent-pipelines-ts.md)
-*   [Concurrent build and release pipelines in TFS](../build/concepts/licensing/concurrent-pipelines-tfs.md)
+*   [Concurrent build and release pipelines in Team Services](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
+*   [Concurrent build and release pipelines in TFS](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
 *   [How to buy more pipeline capacity for builds or releases in Team Services](../setup-admin/team-services/buy-more-build-vs.md)
 *   [Buy more cloud-based testing services](../setup-admin/team-services/buy-load-testing-vs.md) 
 

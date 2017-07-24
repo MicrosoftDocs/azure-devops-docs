@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildReason API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts BuildReason API | Extensions for Visual Studio Team Services
 ms.assetid: 0cd661f7-a32b-db9b-6039-81d41828635b
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # BuildReason
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 ### Values
 

@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts AuditAction API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts AuditAction API | Extensions for Visual Studio Team Services
 ms.assetid: 7bf387fb-45aa-b154-9040-99b17b492083
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # AuditAction
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 ### Values
 

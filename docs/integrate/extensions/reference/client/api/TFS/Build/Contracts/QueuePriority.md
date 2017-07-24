@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts QueuePriority API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts QueuePriority API | Extensions for Visual Studio Team Services
 ms.assetid: 04ef4239-e7f9-06cf-3e1d-95e3d154c69e
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # QueuePriority
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 ### Values
 

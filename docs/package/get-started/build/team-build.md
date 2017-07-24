@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/package/build/team-build
+redirect_url: /docs/package/build-release/team-build
 ---

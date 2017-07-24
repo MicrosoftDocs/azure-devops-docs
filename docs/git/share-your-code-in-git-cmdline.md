@@ -87,4 +87,4 @@ Create a local Git repo for your code.
 
 ## Try this next
 
-Learn more about using Git in the [Git tutorial](tutorial/gitworkflow.md) and [create a build](../build/overview.md) for your project code.
+Learn more about using Git in the [Git tutorial](tutorial/gitworkflow.md) and [create a build](../build-release/overview.md) for your project code.

@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildLog API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts BuildLog API | Extensions for Visual Studio Team Services
 description: Represents a build log.
 ms.assetid: f489a7a5-8cb3-2391-d82c-2696751c2e5e
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # BuildLog
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 Extends: [BuildLogReference](./BuildLogReference.md)
 

@@ -40,7 +40,7 @@ For example, type **g c** to open the Code hub, and then type **c p** to create 
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">&nbsp;&nbsp;s&nbsp;&nbsp;&nbsp;</span>[Search](../work/track/using-queries.md)  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">f,n&nbsp;&nbsp;&nbsp;</span>Focus next section   
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">f,p&nbsp;&nbsp;&nbsp;</span>Focus previous section  
-<span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,b&nbsp;&nbsp;&nbsp;</span>Go to [build](../build/overview.md)  
+<span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,b&nbsp;&nbsp;&nbsp;</span>Go to [build](../build-release/overview.md)  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,c&nbsp;&nbsp;&nbsp;</span>Go to [code](../git/overview.md)  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,h&nbsp;&nbsp;&nbsp;</span>Go to [home](../report/dashboards.md)  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,k&nbsp;&nbsp;&nbsp;</span>Go to wiki  
@@ -273,7 +273,7 @@ Use these shortcuts when working in Team Explorer. You can use query results sho
 <td width="56%">
 <p>**Navigate**</p> 
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+0,a&nbsp;&nbsp;&nbsp;</span>Open web portal  
-<span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+0,b&nbsp;&nbsp;&nbsp;</span>Open [Build](../build/overview.md)  
+<span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+0,b&nbsp;&nbsp;&nbsp;</span>Open [Build](../build-release/overview.md)  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+0,c&nbsp;&nbsp;&nbsp;</span>Open [Connect](https://msdn.microsoft.com/library/ms181475.aspx)  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+0,d&nbsp;&nbsp;&nbsp;</span>Open [Documents](https://msdn.microsoft.com/library/ms242883.aspx)  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+0,e&nbsp;&nbsp;&nbsp;</span>Open [Branches (Git)](../git/get-started.md)   

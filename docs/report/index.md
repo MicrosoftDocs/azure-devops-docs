@@ -42,7 +42,7 @@ If you're new to working in Team Services or TFS, see [Get started with Agile to
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">DevOps charts and widgets</p>
 <ul style="padding-left:30px">
 <li style="margin-bottom:2px">[Build history](add-widget-to-dashboard.md#build-history) (TFS 2015.1)</li>
-<li style="margin-bottom:2px">[Release summary](../build/actions/view-manage-releases.md#add-widget) (TFS 2017.1)</li>
+<li style="margin-bottom:2px">[Release summary](../build-release/actions/view-manage-releases.md#add-widget) (TFS 2017.1)</li>
 <li style="margin-bottom:2px">[Requirements quality](widget-catalog.md#requirements-quality-widget) (TFS 2017)</li>
 <li style="margin-bottom:2px">[Test status, progress, and result charts](../test/manual-exploratory-testing/getting-started/track-test-status.md)</li>
 <li style="margin-bottom:2px">[Test quality trend chart](add-widget-to-dashboard.md#test-quality) (TFS 2015)</li>

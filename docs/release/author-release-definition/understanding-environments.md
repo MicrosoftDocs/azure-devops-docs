@@ -17,46 +17,46 @@ ms.date: 10/20/2016
 <a name="addenvironment"></a>
 ## Add environments
 
-See the new [release definitions](../../build/actions/work-with-release-definitions.md#add-more-environments) documentation.
+See the new [release definitions](../../build-release/actions/work-with-release-definitions.md#add-more-environments) documentation.
 
 <a name="cloneenvironment"></a>
 ## Clone environments
 
-See the new [release definitions](../../build/actions/work-with-release-definitions.md#clone-environment) documentation.
+See the new [release definitions](../../build-release/actions/work-with-release-definitions.md#clone-environment) documentation.
 
 <a name="templates"></a>
 ## Environment templates
 
-See the new [templates](../../build/concepts/definitions/release/env-templates.md) documentation.
+See the new [templates](../../build-release/concepts/definitions/release/env-templates.md) documentation.
 
 <a name="approvers"></a>
 ## Approvals and approvers
 
-See the new [approvals](../../build/concepts/definitions/release/environments.md#approvals) documentation.
+See the new [approvals](../../build-release/concepts/definitions/release/environments.md#approvals) documentation.
 
 <a name="deploymenttriggers"></a>
 ## Environment deployment triggers
 
-See the new [deployment triggers](../..//build/concepts/definitions/release/triggers.md#env-triggers) documentation.
+See the new [deployment triggers](../..//build-release/concepts/definitions/release/triggers.md#env-triggers) documentation.
 
 <a name="queuingpolicies"></a>
 ## Queuing policies
 
-See the new [queuing policies](../../build/concepts/definitions/release/environments.md#queuing-policies) documentation.
+See the new [queuing policies](../../build-release/concepts/definitions/release/environments.md#queuing-policies) documentation.
 
 <a name="variables"></a>
 ## Environment variables
 
-See the new [variables](../../build/concepts/definitions/release/variables.md) documentation.
+See the new [variables](../../build-release/concepts/definitions/release/variables.md) documentation.
 
 <a name="options"></a>
 ## Environment general options
 
-See the new [general options](../../build/concepts/definitions/release/environments.md#options) documentation.
+See the new [general options](../../build-release/concepts/definitions/release/environments.md#options) documentation.
 
 <a name="enviromentsecurity"></a>
 ## Environment security
 
-See the new [permissions](../../build/concepts/policies/permissions.md#release-permissions) documentation.
+See the new [permissions](../../build-release/concepts/policies/permissions.md#release-permissions) documentation.
 
 [!INCLUDE [help-support-shared](../_shared/help-support-shared.md)]

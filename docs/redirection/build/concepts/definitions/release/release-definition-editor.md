@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/preview/release-definition-editor
+redirect_url: /docs/build-release/preview/release-definition-editor
 ---

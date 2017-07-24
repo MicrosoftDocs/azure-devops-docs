@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/apps/cd/restore-vm-in-scvmm
+redirect_url: /docs/build-release/apps/cd/restore-vm-in-scvmm
 ---

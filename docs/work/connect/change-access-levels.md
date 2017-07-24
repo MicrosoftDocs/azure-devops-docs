@@ -125,7 +125,7 @@ You can learn more about each of the features you have access to from the follow
  <li style="margin-bottom:2px">View My [Work items](../backlogs/add-work-items.md)</li>
  <li style="margin-bottom:2px">Standard features: [Dashboards](../../report/dashboards.md) & [Queries](../track/using-queries.md)<sup> 2</sup></li>
  <li style="margin-bottom:2px">Agile boards: [Backlogs](../backlogs/create-your-backlog.md), [Kanban](../kanban/kanban-basics.md) & [Task](../scrum/task-board.md) <sup> 3</sup></li>
- <li style="margin-bottom:2px">[View releases and manage approvals](../../build/actions/view-manage-releases.md)<sup> 4</sup></li>
+ <li style="margin-bottom:2px">[View releases and manage approvals](../../build-release/actions/view-manage-releases.md)<sup> 4</sup></li>
 </ul>
  
 
@@ -135,12 +135,12 @@ You can learn more about each of the features you have access to from the follow
  <li style="margin-bottom:2px">[Request and manage feedback](get-feedback.md)<sup> 6</sup></li>
  <li style="margin-bottom:2px">[Chart viewing & Chart authoring](../../report/charts.md)</li>
  <li style="margin-bottom:2px">Code: [Git](../../git/overview.md) and [TFVC](../../tfvc/overview.md)</li>
- <li style="margin-bottom:2px">[Build](../../build/overview.md)</li>
+ <li style="margin-bottom:2px">[Build](../../build-release/overview.md)</li>
  <li style="margin-bottom:2px">[Administer account](#administer-account)<sup> 7</sup></li>
  <li style="margin-bottom:2px">[Advanced home page](../../reference/markdown-guidance.md)<sup> 8</sup></li>
  <li style="margin-bottom:2px">[Web-based test execution](../../test/manual-exploratory-testing/getting-started/run-manual-tests.md)
- <li style="margin-bottom:2px">[Create and manage releases](../../build/actions/create-deploy-releases.md)<sup> 4</sup></li>
- <li style="margin-bottom:2px">[Author release definitions](../../build/concepts/definitions/release/index.md)<sup> 4</sup></li>
+ <li style="margin-bottom:2px">[Create and manage releases](../../build-release/actions/create-deploy-releases.md)<sup> 4</sup></li>
+ <li style="margin-bottom:2px">[Author release definitions](../../build-release/concepts/definitions/release/index.md)<sup> 4</sup></li>
  <li style="margin-bottom:2px">[Advanced portfolio management](../backlogs/define-features-epics.md)</li>
  <li style="margin-bottom:2px">[Team rooms](../../collaborate/collaborate-in-a-team-room.md)</li>
  <li style="margin-bottom:2px">[Analyze test results and manage machine groups](https://msdn.microsoft.com/library/dd286743.aspx)</li>

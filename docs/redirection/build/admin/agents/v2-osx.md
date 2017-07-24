@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/actions/agents/v2-osx
+redirect_url: /docs/build-release/actions/agents/v2-osx
 ---

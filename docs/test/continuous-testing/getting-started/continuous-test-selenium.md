@@ -138,10 +138,10 @@ the source code must be in version control.
 1. In the new build definition, select the **Default** agent queue in which you have installed an agent.
    If you have not installed an agent in the **Default** queue, choose the
    **manage queues** link and do that now. For information, see
-   [Deploy a Windows build agent](../../../build/actions/agents/v2-windows.md).
+   [Deploy a Windows build agent](../../../build-release/actions/agents/v2-windows.md).
    You might decide to [create an Azure VM](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal)
-   to install your agent, or use a [deployment group](../../../build/concepts/definitions/release/deployment-groups/index.md)
-   and [install an agent there](../../../build/concepts/definitions/release/deployment-groups/howto-provision-deployment-group-agents.md). 
+   to install your agent, or use a [deployment group](../../../build-release/concepts/definitions/release/deployment-groups/index.md)
+   and [install an agent there](../../../build-release/concepts/definitions/release/deployment-groups/howto-provision-deployment-group-agents.md). 
 
    >Selenium tests will generally be run interactively, 
    which would fail on the **Hosted** build controller.
@@ -161,13 +161,13 @@ the source code must be in version control.
 
 1. Configure the tasks as shown here:
 
-   ![Nuget Installer](../../../build/steps/package/_img/nuget-installer.png) [Package: Nuget Installer](../../../build/steps/package/nuget-installer.md) - Install and update NuGet package dependencies.
+   ![Nuget Installer](../../../build-release/steps/package/_img/nuget-installer.png) [Package: Nuget Installer](../../../build-release/steps/package/nuget-installer.md) - Install and update NuGet package dependencies.
    
    - **Path to solution or packages.config**: Select your app solution (.sln) file.
    
    - **Installation type**: `Restore`<p />
    
-   ![Visual Studio Build](../../../build/steps/build/_img/visual-studio-build.png) [Build: Visual Studio Build](../../../build/steps/build/visual-studio-build.md) - Build with MSBuild and set the Visual Studio version property.
+   ![Visual Studio Build](../../../build-release/steps/build-release/_img/visual-studio-build.png) [Build: Visual Studio Build](../../../build-release/steps/build-release/visual-studio-build.md) - Build with MSBuild and set the Visual Studio version property.
    
    - **Solution**:  Select your app solution (.sln) file.
    
@@ -177,11 +177,11 @@ the source code must be in version control.
    
    - **Visual Studio Version**: Select the version used to create your app.<p />
    
-   ![Index Sources &amp; Publish Symbols](../../../build/steps/build/_img/index-sources-publish-symbols.png) [Test: Index Sources &amp; Publish Symbols](../../../build/steps/build/index-sources-publish-symbols.md) - Index the source code and optionally publish symbols to a SymStore file share.
+   ![Index Sources &amp; Publish Symbols](../../../build-release/steps/build-release/_img/index-sources-publish-symbols.png) [Test: Index Sources &amp; Publish Symbols](../../../build-release/steps/build-release/index-sources-publish-symbols.md) - Index the source code and optionally publish symbols to a SymStore file share.
    
    - **Search pattern**: `**\bin\**\*.pdb`<p />
    
-   ![Visual Studio Test Agent Deployment](../../../build/steps/test/_img/visual-studio-test-agent-deployment-icon.png) [Test: Visual Studio Test Agent Deployment](../../../build/steps/test/visual-studio-test-agent-deployment.md) - Deploy and configure the test agent to run tests on a set of machines.
+   ![Visual Studio Test Agent Deployment](../../../build-release/steps/test/_img/visual-studio-test-agent-deployment-icon.png) [Test: Visual Studio Test Agent Deployment](../../../build-release/steps/test/visual-studio-test-agent-deployment.md) - Deploy and configure the test agent to run tests on a set of machines.
    
    - **Machines**: Comma-delimited list of machine names, or a variable containing the list.
    
@@ -199,7 +199,7 @@ the source code must be in version control.
    
    - **Agent Configuration - Interactive Process**: Checked<p />
    
-   ![Windows Machine File Copy](../../../build/steps/deploy/_img/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../../../build/steps/deploy/windows-machine-file-copy.md) - Copy files to remote machines.
+   ![Windows Machine File Copy](../../../build-release/steps/deploy/_img/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../../../build-release/steps/deploy/windows-machine-file-copy.md) - Copy files to remote machines.
    
    - **Source**: `$(Build.Repository.LocalPath)`
    
@@ -211,7 +211,7 @@ the source code must be in version control.
    
    - **Destination Folder**: `C:\Deploy` or another folder on the target server.<p />
    
-   ![Run Functional Tests](../../../build/steps/test/_img/run-functional-tests-icon.png) [Test: Run Functional Tests](../../../build/steps/test/run-functional-tests.md) - Run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
+   ![Run Functional Tests](../../../build-release/steps/test/_img/run-functional-tests-icon.png) [Test: Run Functional Tests](../../../build-release/steps/test/run-functional-tests.md) - Run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
    
    - **Machines**: Comma-delimited list of machine names, or a variable containing the list.
    
@@ -221,7 +221,7 @@ the source code must be in version control.
    
    - **Execution Options - Test Assembly**: `**\*Test*.dll`<p />
    
-   ![Copy Files](../../../build/steps/utility/_img/copy-files.png) [Test: Copy Files](../../../build/steps/utility/copy-files.md) - Copy files from a source folder to a target folder using match patterns.
+   ![Copy Files](../../../build-release/steps/utility/_img/copy-files.png) [Test: Copy Files](../../../build-release/steps/utility/copy-files.md) - Copy files from a source folder to a target folder using match patterns.
    
    - **Source Folder**: `$(build.sourcesdirectory)`
    
@@ -229,7 +229,7 @@ the source code must be in version control.
    
    - **Target Folder**: `$(build.artifactstagingdirectory)`<p />
    
-   ![Publish Build Artifacts](../../../build/steps/utility/_img/publish-build-artifacts.png) [Test: Publish Build Artifacts](../../../build/steps/utility/publish-build-artifacts.md) - Publish Build artifacts to the server or a file share.
+   ![Publish Build Artifacts](../../../build-release/steps/utility/_img/publish-build-artifacts.png) [Test: Publish Build Artifacts](../../../build-release/steps/utility/publish-build-artifacts.md) - Publish Build artifacts to the server or a file share.
    
    - **Path to Publish**: Select your Azure subscription.
    
@@ -239,7 +239,7 @@ the source code must be in version control.
 
    >It's generally advisable to use custom variables for parameter values, especially
    where the same value is used in the parameters of more than one task. You can also 
-   secure and hide values by using custom variables. See [Build Variables](../../../build/define/variables.md). 
+   secure and hide values by using custom variables. See [Build Variables](../../../build-release/define/variables.md). 
 
 1. Save the build definition and queue a new build.
 

@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/apps/mobile/secure-certs
+redirect_url: /docs/build-release/apps/mobile/secure-certs
 ---

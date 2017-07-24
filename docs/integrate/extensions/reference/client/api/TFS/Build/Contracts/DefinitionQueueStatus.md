@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts DefinitionQueueStatus API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts DefinitionQueueStatus API | Extensions for Visual Studio Team Services
 ms.assetid: 7586dd3e-2742-6bb2-3764-d6ebab7c99e8
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # DefinitionQueueStatus
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 ### Values
 

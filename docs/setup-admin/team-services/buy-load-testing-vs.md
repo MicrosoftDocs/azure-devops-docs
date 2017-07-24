@@ -128,7 +128,7 @@ you can come back to the Azure classic portal.
 
 ## Related notes  
 
-- [Build your app](../../build/apps/index.md)
+- [Build your app](../../build-release/apps/index.md)
 - [Load test your app](../../test/performance-testing/getting-started/get-started-simple-cloud-load-test.md)  
 - [How to buy more pipeline capacity for builds and releases in Team Services](buy-more-build-vs.md)  
 - [Visual Studio Marketplace and billing Q&A](../../marketplace/marketplace-billing-qa.md)  

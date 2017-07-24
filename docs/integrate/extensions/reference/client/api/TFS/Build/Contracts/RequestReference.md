@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts RequestReference API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts RequestReference API | Extensions for Visual Studio Team Services
 ms.assetid: 70e9715c-9757-9892-7784-0f8e68219fd7
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # RequestReference
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/apps/mobile/xcode-ios
+redirect_url: /docs/build-release/apps/mobile/xcode-ios
 ---

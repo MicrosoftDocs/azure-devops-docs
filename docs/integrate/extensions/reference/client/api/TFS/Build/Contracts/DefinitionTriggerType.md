@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts DefinitionTriggerType API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts DefinitionTriggerType API | Extensions for Visual Studio Team Services
 ms.assetid: d20502f9-69e8-79bc-61c3-41d4d896bd30
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # DefinitionTriggerType
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 ### Values
 

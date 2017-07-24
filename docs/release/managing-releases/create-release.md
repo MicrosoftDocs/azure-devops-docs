@@ -16,25 +16,25 @@ ms.date: 10/20/2016
 <a name="releasedeploy"></a>
 ## Understand releases and deployments
 
-See our new [Release concepts](../../build/concepts/releases/index.md) documentation.
+See our new [Release concepts](../../build-release/concepts/releases/index.md) documentation.
 
 <a name="manualrelease"></a>
 <a name="edittriggers"></a>
 ## Create a release from the Releases tab
 
-See our new [Create and deploy a release](../../build/actions/create-deploy-releases.md#create-from-release) documentation.
+See our new [Create and deploy a release](../../build-release/actions/create-deploy-releases.md#create-from-release) documentation.
 
 <a name="manualbuild"></a>
 ## Create a release from the Builds tab
 
-See our new [Create and deploy a release](../../build/actions/create-deploy-releases.md#create-from-build) documentation.
+See our new [Create and deploy a release](../../build-release/actions/create-deploy-releases.md#create-from-build) documentation.
 
 <a name="automaticbuild"></a>
 ### Start a continuous integration build to create a release
 
 ### Create a release from a build result
 
-See our new [Create and deploy a release](../../build/actions/create-deploy-releases.md#create-from-build) documentation.
+See our new [Create and deploy a release](../../build-release/actions/create-deploy-releases.md#create-from-build) documentation.
 
 <a name="restapi"></a>
 ## Create a release by using the REST API
@@ -44,16 +44,16 @@ See [Release Management REST API](https://visualstudio.com/integrate/api/rm/over
 <a name="draftrelease"></a>
 ## Create a draft release
 
-See our new [Create a draft release](../../build/actions/create-deploy-releases.md#create-draft) documentation.
+See our new [Create a draft release](../../build-release/actions/create-deploy-releases.md#create-draft) documentation.
 
 <a name="deployrelease"></a>
 ## Deploy a release
 
-See our new [Deploy a release](../../build/actions/create-deploy-releases.md#deploy-command) documentation.
+See our new [Deploy a release](../../build-release/actions/create-deploy-releases.md#deploy-command) documentation.
 
 <a name="pauseterminate"></a>
 ## Pause or terminate a release
 
-See our new [View and manage releases](../../build/actions/view-manage-releases.md#release-summary) documentation.
+See our new [View and manage releases](../../build-release/actions/view-manage-releases.md#release-summary) documentation.
 
 [!INCLUDE [help-support-shared](../_shared/help-support-shared.md)]

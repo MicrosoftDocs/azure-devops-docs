@@ -17,7 +17,7 @@ ms.date: 04/28/2017
 Visual Studio Team Services offers these
 [additional team services](https://www.visualstudio.com/team-services/pricing):
 
-Create, queue, and monitor cross-platform builds and releases with these [Build & Release task-based services](../../build/concepts/licensing/concurrent-pipelines-ts.md).
+Create, queue, and monitor cross-platform builds and releases with these [Build & Release task-based services](../../build-release/concepts/licensing/concurrent-pipelines-ts.md).
 Use Hosted Pipelines to run builds and deploy releases concurrently on Microsoft-managed
 agents. Use Private Pipelines to run builds and deploy releases on machines that you manage,
 running agent software from Microsoft.
@@ -52,8 +52,8 @@ running agent software from Microsoft.
 
     Learn about:
 
-    * [Team Services: Build & Release pipelines](../../build/concepts/licensing/concurrent-pipelines-ts.md)
-    * [TFS: Build & Release pipelines](../../build/concepts/licensing/concurrent-pipelines-tfs.md)
+    * [Team Services: Build & Release pipelines](../../build-release/concepts/licensing/concurrent-pipelines-ts.md)
+    * [TFS: Build & Release pipelines](../../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
     * [Pricing for Build & Release pipelines](https://www.visualstudio.com/team-services/pricing)
 
 
@@ -192,9 +192,9 @@ then update your number of paid pipelines.
 
 ## Related notes  
 
-- [Build your app](../../build/apps/index.md)
-- [Concurrent build and release pipelines in Visual Studio Team Services](../../build/concepts/licensing/concurrent-pipelines-ts.md)
-- [Concurrent release pipelines in Team Foundation Server](../../build/concepts/licensing/concurrent-pipelines-tfs.md)
+- [Build your app](../../build-release/apps/index.md)
+- [Concurrent build and release pipelines in Visual Studio Team Services](../../build-release/concepts/licensing/concurrent-pipelines-ts.md)
+- [Concurrent release pipelines in Team Foundation Server](../../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
 - [How to buy cloud-based load testing in Team Services](buy-load-testing-vs.md)  
 - [Visual Studio Marketplace and billing Q&A](../../marketplace/marketplace-billing-qa.md)  
 
@@ -207,7 +207,7 @@ then update your number of paid pipelines.
 A:  When you pay for pipelines, you can run more than one build or release at the same time
 in your Team Services account. Learn
 [about pipeline pricing](https://www.visualstudio.com/team-services/pricing)
-or [how pipelines work](../../build/concepts/licensing/concurrent-pipelines-ts.md).
+or [how pipelines work](../../build-release/concepts/licensing/concurrent-pipelines-ts.md).
 
 ### Q: Are there any limits on builds and releases?
 

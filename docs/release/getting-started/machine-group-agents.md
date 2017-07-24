@@ -14,7 +14,7 @@ ms.date: 11/09/2016
 # Configure Deployment Group agents
 
 _Deployment Groups_ are logical groups of deployment target machines with agents installed on each of them. They also specify the security context and runtime targets for the agents. When authoring a Team Services Release definition, you can specify the deployments targets for a 
-[phase](../../build/concepts/process/phases.md) using the deployment group.
+[phase](../../build-release/concepts/process/phases.md) using the deployment group.
 
 Deployment group agents are pull based agents and are different from the currently available build and deployment automation agents. You can install the Deployment Group agent on each of your target servers directly, and then drive rolling deployments to those servers. Unlike the agents which are installed on a set of proxy servers in an agent pool and drive deployments to remote target servers. 
 
@@ -66,8 +66,8 @@ Create a PAT token with "all scopes" by following the steps outlined [here](http
    - Deployment Group Name
    - Agent Name
 1. You're asked if you want to run the agent as a service. 
-   - If this is the first time you're running this agent, press Enter `N` to test the agent in [interactive mode](https://www.visualstudio.com/en-us/docs/build/admin/agents/v2-windows#interactive).
-   - Otherwise, enter `Y` to [run the agent as a service](https://www.visualstudio.com/en-us/docs/build/admin/agents/v2-windows#service).
+   - If this is the first time you're running this agent, press Enter `N` to test the agent in [interactive mode](https://www.visualstudio.com/en-us/docs/build-release/admin/agents/v2-windows#interactive).
+   - Otherwise, enter `Y` to [run the agent as a service](https://www.visualstudio.com/en-us/docs/build-release/admin/agents/v2-windows#service).
 
 ### Run interactively
 After you've configured the agent, we recommend that you first try it in interactive mode to make sure it works. Also, in some cases you might need to run the agent interactively for production use. For example, if you need to run an elevated process or run UI tests.
@@ -89,7 +89,7 @@ When you configure an agent using the same name as an agent that already exists,
 To remove the agent: `.\config remove`
 
 After you've removed the agent, you can 
-[configure it again](https://www.visualstudio.com/en-us/docs/build/admin/agents/v2-windows#download_configure).
+[configure it again](https://www.visualstudio.com/en-us/docs/build-release/admin/agents/v2-windows#download_configure).
 
 ### Help on other options
 
@@ -158,8 +158,8 @@ Create a PAT token with "all scopes" by following the steps outlined [here](http
    - Deployment Group Name
    - Agent Name
 1. You're asked if you want to run the agent as a service. 
-   - If this is the first time you're running this agent, press Enter `N` to test the agent in [interactive mode](https://www.visualstudio.com/en-us/docs/build/admin/agents/v2-windows#interactive).
-   - Otherwise, enter `Y` to [run the agent as a service](https://www.visualstudio.com/en-us/docs/build/admin/agents/v2-windows#service).
+   - If this is the first time you're running this agent, press Enter `N` to test the agent in [interactive mode](https://www.visualstudio.com/en-us/docs/build-release/admin/agents/v2-windows#interactive).
+   - Otherwise, enter `Y` to [run the agent as a service](https://www.visualstudio.com/en-us/docs/build-release/admin/agents/v2-windows#service).
 
 ### Run interactively
 
@@ -167,7 +167,7 @@ After you've configured the agent, we recommend that you first try it in interac
 
 To run the agent interactively:
 
-1. If you have been running the agent as a service, [uninstall the service](https://www.visualstudio.com/en-us/docs/build/admin/agents/v2-osx#service_uninstall).
+1. If you have been running the agent as a service, [uninstall the service](https://www.visualstudio.com/en-us/docs/build-release/admin/agents/v2-osx#service_uninstall).
 1. Run: `~/myagent$ ./run.sh`
  
 ### Run as a launchd service
@@ -176,7 +176,7 @@ After you've verified that the agent is working, for production use, we recommen
 
 We provide the `./svc.sh` script for you to run and manage your agent as a launchd LaunchAgent service. The service has access to the UI to run your UI tests.
 
->Note: If you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files. ](https://www.visualstudio.com/en-us/docs/build/admin/agents/v2-osx#service_files)
+>Note: If you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files. ](https://www.visualstudio.com/en-us/docs/build-release/admin/agents/v2-osx#service_files)
 
 ### Tokens
 In the section below, these tokens are replaced:
@@ -304,7 +304,7 @@ To remove the agent:
 1. `./config.sh remove`
 1. Enter your credentials.
 
-After you've removed the agent, you can [configure it again](https://www.visualstudio.com/en-us/docs/build/admin/agents/v2-osx#download_configure).
+After you've removed the agent, you can [configure it again](https://www.visualstudio.com/en-us/docs/build-release/admin/agents/v2-osx#download_configure).
 
 #### Help on other options
 
@@ -346,7 +346,7 @@ Now you're ready to configure and run the agent as explained above.
    - `VSTS_HTTP_PROXY_USERNAME=proxyuser`  
    - `VSTS_HTTP_PROXY_PASSWORD=proxypassword`
 
-1. [Update the environment variables](https://www.visualstudio.com/en-us/docs/build/admin/agents/v2-osx#service_update_environment_variables)
+1. [Update the environment variables](https://www.visualstudio.com/en-us/docs/build-release/admin/agents/v2-osx#service_update_environment_variables)
 
 #### Limitations
 
@@ -393,8 +393,8 @@ Create a PAT token with "all scopes" by following the steps outlined [here](http
    - Deployment Group Name
    - Agent Name
 1. You're asked if you want to run the agent as a service. 
-   - If this is the first time you're running this agent, press Enter `N` to test the agent in [interactive mode](https://www.visualstudio.com/en-us/docs/build/admin/agents/v2-windows#interactive).
-   - Otherwise, enter `Y` to [run the agent as a service](https://www.visualstudio.com/en-us/docs/build/admin/agents/v2-windows#service).
+   - If this is the first time you're running this agent, press Enter `N` to test the agent in [interactive mode](https://www.visualstudio.com/en-us/docs/build-release/admin/agents/v2-windows#interactive).
+   - Otherwise, enter `Y` to [run the agent as a service](https://www.visualstudio.com/en-us/docs/build-release/admin/agents/v2-windows#service).
 
 ### Run interactively
 
@@ -402,7 +402,7 @@ After you've configured the agent, we recommend that you first try it in interac
 
 To run the agent interactively:
 
-1. If you have been running the agent as a service, [uninstall the service](https://www.visualstudio.com/en-us/docs/build/admin/agents/v2-osx#service_uninstall).
+1. If you have been running the agent as a service, [uninstall the service](https://www.visualstudio.com/en-us/docs/build-release/admin/agents/v2-osx#service_uninstall).
 2. Run: `~/myagent$ ./run.sh`
  
 ### Run as a launchd service
@@ -419,7 +419,7 @@ If your build agent is running on these operating systems, you can run the agent
 We provide the `./svc.sh` script for you to run and manage your agent as a systemd service. 
 
 >Note: If you have a different distribution, or if you prefer other approaches, you can use whatever kind of service mechanism you prefer. See 
-[Service files](https://www.visualstudio.com/en-us/docs/build/admin/agents/v2-linux#service_files). 
+[Service files](https://www.visualstudio.com/en-us/docs/build-release/admin/agents/v2-linux#service_files). 
 
 ### Commands
 
@@ -509,7 +509,7 @@ To remove the agent:
 1. Run `3.	./config.sh remove`
 1. Enter your credentials.
 
-After you've removed the agent, you can [configure it again](https://www.visualstudio.com/en-us/docs/build/admin/agents/v2-osx#download_configure).
+After you've removed the agent, you can [configure it again](https://www.visualstudio.com/en-us/docs/build-release/admin/agents/v2-osx#download_configure).
 
 ### Help on other options
 
@@ -550,7 +550,7 @@ Now you're ready to configure and run the agent as explained above.
 1. Add the following section to .env file under the agent root directory:   
    - `VSTS_HTTP_PROXY_USERNAME=proxyuser`  
    - `VSTS_HTTP_PROXY_PASSWORD=proxypassword`
-1. [Update the environment variables](https://www.visualstudio.com/en-us/docs/build/admin/agents/v2-linux#service_update_environment_variables).
+1. [Update the environment variables](https://www.visualstudio.com/en-us/docs/build-release/admin/agents/v2-linux#service_update_environment_variables).
 
 #### Limitations
 

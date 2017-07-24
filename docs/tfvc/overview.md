@@ -85,7 +85,7 @@ TFVC lets you apply [granular permissions](../setup-admin/permissions.md) and re
 
 ## Related Sections
 
-- [Build and test the app in your automated build system](../build/overview.md)    
+- [Build and test the app in your automated build system](../build-release/overview.md)    
 
   Install a bit of software to create a build server, and then fill in a few fields to create a Continuous integration (CI) or nightly build process that enables you to leverage the power, convenience, scalability, and reliability of an automated build system to build your app.
 

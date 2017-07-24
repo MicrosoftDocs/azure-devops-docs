@@ -40,4 +40,4 @@ You can query for data about how thoroughly source code was covered by the tests
 -  [Code Churn](../excel/code-coverage-excel-report.md)   
 -  [Run Coverage tables](run-coverage-tables.md)    
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md) 
-- [Continuous integration on any platform](../../build/overview.md) 
+- [Continuous integration on any platform](../../build-release/overview.md) 

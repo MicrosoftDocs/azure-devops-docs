@@ -459,7 +459,7 @@ To verify that a specific test reaches into specific branches of the code, you c
 Peter continues to update the code in small steps until he is satisfied that:  
 -   All the available unit tests pass.
 
-    In a project with a very large set of unit tests, it can be impractical for a developer to wait for them all to run. Instead, the project operates a gated check-in service, in which all the automated tests are run for each checked-in shelveset before it is merged into the source tree. The check-in is rejected if the run fails. This allows the developer to run a minimal set of unit tests on his own machine, and then proceed with other work, without running the risk of breaking the build. For more information, see [Use a gated check-in build process to validate changes](../build/define/repository.md).  
+    In a project with a very large set of unit tests, it can be impractical for a developer to wait for them all to run. Instead, the project operates a gated check-in service, in which all the automated tests are run for each checked-in shelveset before it is merged into the source tree. The check-in is rejected if the run fails. This allows the developer to run a minimal set of unit tests on his own machine, and then proceed with other work, without running the risk of breaking the build. For more information, see [Use a gated check-in build process to validate changes](../build-release/define/repository.md).  
 -   Code coverage meets the team’s standard. 75% is a typical project requirement.  
 -   His unit tests simulate every aspect of the behavior that is required, including both typical and exceptional inputs.  
 -   His code is easy to understand and extend.
@@ -505,12 +505,12 @@ Peter is notified when the build is completed. In the build results window, he s
 
 ### To continuously integrate the code
 
-For more information about how to define a continuous integration build process, see [Set up a CI build](../build/define/triggers.md). After you have set up this build process, you can choose to be notified about the results of team builds.
+For more information about how to define a continuous integration build process, see [Set up a CI build](../build-release/define/triggers.md). After you have set up this build process, you can choose to be notified about the results of team builds.
 
 ![Peter is notified that CI Build succeeded](_img/day-life-alm-developer-write-new-code-user-story/IC558300.png)
 
 ![CI Build results](_img/day-life-alm-developer-write-new-code-user-story/IC591277.png)  
 
-For more information, see [Run, monitor, and manage builds](../build/overview.md).
+For more information, see [Run, monitor, and manage builds](../build-release/overview.md).
  
 [Next (Suspend work, fix a bug, and conduct a code review)](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)

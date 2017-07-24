@@ -84,7 +84,7 @@ Set a policy requiring changes in a pull request to build successfully with the 
 Even if you're using [continuous integration](https://www.visualstudio.com/learn/what-is-continuous-integration) (CI) on your development branches to catch problems early, build policies reduce 
 build breaks and keep your tests results passing.
 
- 0. [Create a build definition](../build/apps/index.md). Check **When team members create or update a pull request...** and select the build definition from the drop-down. 
+ 0. [Create a build definition](../build-release/apps/index.md). Check **When team members create or update a pull request...** and select the build definition from the drop-down. 
 When a new pull request is created or when changes are pushed to an existing pull request targeting this branch, a new build is queued.  Select **Block pull request completion unless there is a valid build** to require this build to complete successfully. 
 
     ![Select the build definition](_img/branch-policies/RequireBuildSelectDrop.png)   

@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildAuthorizationScope API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts BuildAuthorizationScope API | Extensions for Visual Studio Team Services
 ms.assetid: 5432e038-94b1-ac95-e0ea-4ec8907ec7b5
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # BuildAuthorizationScope
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 ### Values
 

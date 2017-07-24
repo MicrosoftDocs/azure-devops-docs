@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts AgentPoolQueue API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts AgentPoolQueue API | Extensions for Visual Studio Team Services
 ms.assetid: f28d1c93-dc54-cfcb-4659-90a9c2a6f33b
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # AgentPoolQueue
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 Extends: [ShallowReference](./ShallowReference.md)
 

@@ -17,47 +17,47 @@ ms.date: 10/20/2016
 <a name="createdef"></a>
 ## Create a release definition
 
-See our new [release definitions](../../build/actions/work-with-release-definitions.md) documentation.
+See our new [release definitions](../../build-release/actions/work-with-release-definitions.md) documentation.
 
 <a name="clonedef"></a>
 ## Clone, export, and import a release definition
 
-See our new [release definitions](../../build/actions/work-with-release-definitions.md#replicate-a-definition) documentation.
+See our new [release definitions](../../build-release/actions/work-with-release-definitions.md#replicate-a-definition) documentation.
 
 <a name="triggers"></a>
 ## Continuous deployment/integration and scheduled triggers
 
-See our new [release triggers](../../build/concepts/definitions/release/triggers.md#release-triggers) documentation.
+See our new [release triggers](../../build-release/concepts/definitions/release/triggers.md#release-triggers) documentation.
 
 <a name="variables"></a>
 ## Release definition variables and variable groups
 
-See our new [variables](../../build/concepts/definitions/release/variables.md) 
-and [variable groups](../../build/concepts/library/variable-groups.md) documentation.
+See our new [variables](../../build-release/concepts/definitions/release/variables.md) 
+and [variable groups](../../build-release/concepts/library/variable-groups.md) documentation.
 
 <a name="debugmode"></a>
 ## Run a release in debug mode
 
-See our new [debug mode](../../build/actions/debug-deployment-issues.md#debug-mode) documentation.
+See our new [debug mode](../../build-release/actions/debug-deployment-issues.md#debug-mode) documentation.
 
 <a name="numbering"></a>
 ## Release names
 
-See our new [release names](../../build/concepts/definitions/release/index.md#numbering) documentation.
+See our new [release names](../../build-release/concepts/definitions/release/index.md#numbering) documentation.
 
 <a name="retention"></a>
 ## Release and build retention
 
-See our new [retention policies](../../build/concepts/policies/retention.md) documentation.
+See our new [retention policies](../../build-release/concepts/policies/retention.md) documentation.
 
 <a name="history"></a>
 ## Release definition history
 
-See our new [release history](../../build/concepts/definitions/release/index.md#release-history) documentation.
+See our new [release history](../../build-release/concepts/definitions/release/index.md#release-history) documentation.
 
 <a name="security"></a>
 ## Release definition security
 
-See our new [release permissions](../../build/concepts/policies/permissions.md#release-permissions) documentation.
+See our new [release permissions](../../build-release/concepts/policies/permissions.md#release-permissions) documentation.
 
 [!INCLUDE [help-support-shared](../_shared/help-support-shared.md)]

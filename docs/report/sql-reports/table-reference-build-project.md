@@ -40,4 +40,4 @@ You can query for data about the files and projects that were built and informat
 -  [Build Summary](build-summary-report.md)   
 -  [Build Details tables](table-reference-build-details.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md) 
-- [Continuous integration on any platform](../../build/overview.md)   
+- [Continuous integration on any platform](../../build-release/overview.md)   

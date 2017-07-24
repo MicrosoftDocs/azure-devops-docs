@@ -166,7 +166,7 @@ DELETE | Delete a resource
 When you provide request body (usually with the POST, PUT and PATCH verbs), include request headers that describe the body. For example,
 
 ```no-highlight
-POST https://fabrikam-fiber-inc.VisualStudio.com/DefaultCollection/_apis/build/requests
+POST https://fabrikam-fiber-inc.VisualStudio.com/DefaultCollection/_apis/build-release/requests
 ```
 ```http
 Content-Type: application/json

@@ -78,7 +78,7 @@ Your project code is now your Team Services Git repo.
 
 ## Try this next
 
-Learn more about using Git in the [Git tutorial](tutorial/gitworkflow.md) and [create a build](../build/get-started/java-maven.md) for your project code.
+Learn more about using Git in the [Git tutorial](tutorial/gitworkflow.md) and [create a build](../build-release/get-started/java-maven.md) for your project code.
 
 
 ## Q&A

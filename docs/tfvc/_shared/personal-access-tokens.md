@@ -20,7 +20,7 @@
 that this token will authorize for **your specific tasks**.
 
 	For example, to build and release apps with a Windows, OSX, or Linux agent, 
-	[limit your token's scope to **Agent Pools (read, manage)**](https://www.visualstudio.com/docs/build/admin/index).
+	[limit your token's scope to **Agent Pools (read, manage)**](https://www.visualstudio.com/docs/build-release/admin/index).
    
 0. When you're done, make sure to *copy the token*. You'll use this token as your password.
 

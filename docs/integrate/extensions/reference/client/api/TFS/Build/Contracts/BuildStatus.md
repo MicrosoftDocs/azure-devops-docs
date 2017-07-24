@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildStatus API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts BuildStatus API | Extensions for Visual Studio Team Services
 ms.assetid: 45aacfd8-bc44-6bb7-c5d5-26bd4fc62ed3
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # BuildStatus
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 ### Values
 

@@ -16,60 +16,60 @@ ms.date: 10/20/2016
 <a name="overview"></a>
 ## Understand the list and overview of releases
 
-See our new [View and manage releases](../../build/actions/view-manage-releases.md#release-list) documentation.
+See our new [View and manage releases](../../build-release/actions/view-manage-releases.md#release-list) documentation.
 
 <a name="find-release"></a>
 ### Finding release definitions and releases
 
-See our new [Find definitions and releases](../../build/actions/view-manage-releases.md#find-release) documentation.
+See our new [Find definitions and releases](../../build-release/actions/view-manage-releases.md#find-release) documentation.
 
 ### Overview of releases
 
-See our new [Overview of releases](../../build/actions/view-manage-releases.md#release-overview) documentation.
+See our new [Overview of releases](../../build-release/actions/view-manage-releases.md#release-overview) documentation.
 
 <a name="restore-deleted"></a>
 ### Restore deleted releases
 
-See our new [Restore deleted releases](../../build/actions/view-manage-releases.md#restore-release) documentation.
+See our new [Restore deleted releases](../../build-release/actions/view-manage-releases.md#restore-release) documentation.
 
 <a name="add-dashboard"></a>
 ### Add release information to the dashboard
 
-See our new [Add release information to the dashboard](../../build/actions/view-manage-releases.md#add-widget) documentation.
+See our new [Add release information to the dashboard](../../build-release/actions/view-manage-releases.md#add-widget) documentation.
 
 <a name="detailsview"></a> 
 ## Understand the summary view of a release
 
-See our new [Summary view](../../build/actions/view-manage-releases.md#release-summary) documentation.
+See our new [Summary view](../../build-release/actions/view-manage-releases.md#release-summary) documentation.
 
 <a name="approve"></a>
 ## Approve a release
 
-See our new [Approve a release](../../build/actions/view-manage-releases.md#approve-release) documentation.
+See our new [Approve a release](../../build-release/actions/view-manage-releases.md#approve-release) documentation.
 
 <a name="viewtests"></a>
 ## View test results
 
-See our new [Test results](../../build/actions/view-manage-releases.md#test-results) documentation.
+See our new [Test results](../../build-release/actions/view-manage-releases.md#test-results) documentation.
 
 <a name="viewlogs"></a>
 ## View release logs
 
-See our new [Monitor releases](../../build/actions/debug-deployment-issues.md) documentation.
+See our new [Monitor releases](../../build-release/actions/debug-deployment-issues.md) documentation.
 
 <a name="notifications"></a>
 ## Notifications
 
-See our new [Send email notifications](../../build/actions/view-manage-releases.md#send-email) documentation.
+See our new [Send email notifications](../../build-release/actions/view-manage-releases.md#send-email) documentation.
 
 <a name="redeploy"></a>
 ## Redeploy after failure
 
-See our new [Redeploy a release](../../build/actions/view-manage-releases.md#redeploy-release) documentation.
+See our new [Redeploy a release](../../build-release/actions/view-manage-releases.md#redeploy-release) documentation.
 
 <a name="viewhistory"></a>
 ## View release history
 
-See our new [Release history](../../build/actions/view-manage-releases.md#release-history) documentation.
+See our new [Release history](../../build-release/actions/view-manage-releases.md#release-history) documentation.
 
 [!INCLUDE [help-support-shared](../_shared/help-support-shared.md)]

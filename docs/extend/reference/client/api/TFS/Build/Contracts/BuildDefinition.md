@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildDefinition API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts BuildDefinition API | Extensions for Visual Studio Team Services
 ms.assetid: 9889e558-78df-e571-6884-75fdfd014546
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # BuildDefinition
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 Extends: [BuildDefinitionReference](./BuildDefinitionReference.md)
 

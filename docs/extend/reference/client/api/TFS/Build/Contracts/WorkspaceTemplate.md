@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts WorkspaceTemplate API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts WorkspaceTemplate API | Extensions for Visual Studio Team Services
 ms.assetid: 2994e66e-dd45-3a64-1996-5c1e40800a2f
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # WorkspaceTemplate
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

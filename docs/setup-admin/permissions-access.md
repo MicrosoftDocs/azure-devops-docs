@@ -338,7 +338,7 @@ To manage notifications, see [Manage personal notifications](../collaborate/mana
 ## Build and release
 
 
-You can define and manage your builds and releases from the web portal, Build & Release hub. For an overview of build and release management features and functions, see [Continuous integration on any platform](../build/overview.md).
+You can define and manage your builds and releases from the web portal, Build & Release hub. For an overview of build and release management features and functions, see [Continuous integration on any platform](../build-release/overview.md).
 
 From the **Build & Release>Builds** and **Releases** pages, you can set permissions for all or each build definition or release definition, respectively. 
 

@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/overview
+redirect_url: /docs/build-release/overview
 ---

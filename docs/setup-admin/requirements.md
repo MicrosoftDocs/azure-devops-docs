@@ -535,7 +535,7 @@ TFS 2010    | Office 2010<br/>Office 2007
 
 ## TFS Build Compatibility
 
-We've built a brand new [scriptable build system](../build/overview.md) that's web based and cross-platform.
+We've built a brand new [scriptable build system](../build-release/overview.md) that's web based and cross-platform.
 
 You may want to use an older version of Build if you plan to continue using the Xaml build system, 
 if you are using Build servers against multiple versions of TFS, or if you need to leverage servers 

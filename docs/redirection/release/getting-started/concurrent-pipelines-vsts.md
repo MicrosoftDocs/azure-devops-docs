@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/concepts/licensing/concurrent-pipelines-ts
+redirect_url: /docs/build-release/concepts/licensing/concurrent-pipelines-ts
 ---

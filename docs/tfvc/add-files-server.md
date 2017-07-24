@@ -142,7 +142,7 @@ Many teams develop code that depends on binaries that are not built by the solut
 Sometimes these binaries come from another team in the same company. For example, Team A depends on binaries produced by Team B, and each team must for some reason work in different team project collections. As a result, Team B delivers binaries to Team A, which then checks them into version control.
 
 > **Tip:**  
->If your dev machines and [build agents](../build/concepts/agents/agents.md) can access the Internet, then [NuGet](http://go.microsoft.com/fwlink/?LinkId=246165) may make it easier for your team to manage your dependencies and keep your binaries up to date. Even if you decide to use NuGet, you should probably still add the binaries to version control so that you can reproduce and build historical versions of your code.
+>If your dev machines and [build agents](../build-release/concepts/agents/agents.md) can access the Internet, then [NuGet](http://go.microsoft.com/fwlink/?LinkId=246165) may make it easier for your team to manage your dependencies and keep your binaries up to date. Even if you decide to use NuGet, you should probably still add the binaries to version control so that you can reproduce and build historical versions of your code.
 
 The folder and workspace structure you should use to store your third-party binaries depends on the way your solutions depend on these libraries.
 

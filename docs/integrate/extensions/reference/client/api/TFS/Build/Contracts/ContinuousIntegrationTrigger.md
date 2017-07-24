@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts ContinuousIntegrationTrigger API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts ContinuousIntegrationTrigger API | Extensions for Visual Studio Team Services
 ms.assetid: 89b6ae91-8256-6d42-d859-c72fbe21690a
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # ContinuousIntegrationTrigger
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 Extends: [BuildTrigger](./BuildTrigger.md)
 

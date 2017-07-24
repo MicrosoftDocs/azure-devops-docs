@@ -35,9 +35,9 @@ This topic provides descriptions for each built-in group and permission. To lear
 <ul style="padding-left:30px;font-size:90%">
 <li style="margin-bottom:2px">[Git branch](../git/branch-permissions.md)</li>
 <li style="margin-bottom:2px">[TFVC](restrict-access-tfs.md)</li>
-<li style="margin-bottom:2px">[Builds](../build/concepts/policies/permissions.md#build-permissions)</li>
-<li style="margin-bottom:2px">[Release definition security](../build/concepts/policies/permissions.md#release-permissions)</li>
-<li style="margin-bottom:2px">[Approvals and approvers](../build/concepts/definitions/release/environments.md#approvals)</li>
+<li style="margin-bottom:2px">[Builds](../build-release/concepts/policies/permissions.md#build-permissions)</li>
+<li style="margin-bottom:2px">[Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)</li>
+<li style="margin-bottom:2px">[Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals)</li>
 
 </ul>
 </div>
@@ -973,7 +973,7 @@ You manage project-level permissions from the [web portal admin context](../conn
 
 ### Build permissions (object-level)  
 
-You manage build permissions [for each build defined in the web portal](../build/concepts/policies/permissions.md#build-permissions) or using the [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for each build definition.
+You manage build permissions [for each build defined in the web portal](../build-release/concepts/policies/permissions.md#build-permissions) or using the [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for each build definition.
 
 <ul style="padding-left:20px;font-size:90%">
 <li style="margin-bottom:2px"><a data-toggle="collapse" href="#administer-build-permissions-permission">Administer build permissions  &#x25BC;</a>
@@ -1091,7 +1091,7 @@ You manage build permissions [for each build defined in the web portal](../build
 </li>
 </ul>
 
-To manage build security, see [build permissions](../build/concepts/policies/permissions.md#build-permissions).
+To manage build security, see [build permissions](../build-release/concepts/policies/permissions.md#build-permissions).
 
 
 
@@ -1764,9 +1764,9 @@ In addition, you can assign approvers to specific steps within a release definit
 </ul>
 
 
-To learn more, see [Release definition security](../build/concepts/policies/permissions.md#release-permissions),
-[Environment security](../build/concepts/policies/permissions.md#release-permissions) and
-[Approvals and approvers](../build/concepts/definitions/release/environments.md#approvals).
+To learn more, see [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions),
+[Environment security](../build-release/concepts/policies/permissions.md#release-permissions) and
+[Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals).
 
 
 

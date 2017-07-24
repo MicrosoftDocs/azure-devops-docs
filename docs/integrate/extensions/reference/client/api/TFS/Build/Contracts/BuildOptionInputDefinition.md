@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildOptionInputDefinition API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts BuildOptionInputDefinition API | Extensions for Visual Studio Team Services
 ms.assetid: da6762df-8c64-0975-2f7a-d5dd60f908fa
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # BuildOptionInputDefinition
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

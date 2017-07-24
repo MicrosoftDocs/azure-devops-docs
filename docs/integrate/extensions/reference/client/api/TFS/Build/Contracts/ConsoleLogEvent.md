@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts ConsoleLogEvent API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts ConsoleLogEvent API | Extensions for Visual Studio Team Services
 ms.assetid: 7a90a46f-393b-3a34-89a9-1843ecc56068
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # ConsoleLogEvent
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 Extends: [RealtimeBuildEvent](./RealtimeBuildEvent.md)
 

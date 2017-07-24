@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts DefinitionReference API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts DefinitionReference API | Extensions for Visual Studio Team Services
 description: A reference to a definition.
 ms.assetid: d8b850a1-706e-3229-7fe2-309e61862b54
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # DefinitionReference
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 Extends: [ShallowReference](./ShallowReference.md)
 

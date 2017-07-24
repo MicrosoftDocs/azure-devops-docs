@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/actions/azure-rm-endpoint
+redirect_url: /docs/build-release/actions/azure-rm-endpoint
 ---

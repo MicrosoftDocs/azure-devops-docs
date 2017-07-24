@@ -179,7 +179,7 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 - [Markdown guidance](../reference/markdown-guidance.md) 
 - [Agile tools overview](../work/overview.md)  
 - [Git overview](../git/overview.md)
-- [Continuous integration on any platform](../build/overview.md)
+- [Continuous integration on any platform](../build-release/overview.md)
 - [Work within the web portal](../connect/work-web-portal.md)
 
 

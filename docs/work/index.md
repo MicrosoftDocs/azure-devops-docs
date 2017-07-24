@@ -52,7 +52,7 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 
 ## Videos 
 
-[![Agile planning video](_img/index-agile-planning-video.png)](https://channel9.msdn.com/Events/Build/2017/T6005/player)   
+[![Agile planning video](_img/index-agile-planning-video.png)](https://channel9.msdn.com/Events/build-release/2017/T6005/player)   
 
 
 

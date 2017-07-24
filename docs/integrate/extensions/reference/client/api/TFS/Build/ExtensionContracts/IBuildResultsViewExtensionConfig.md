@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/ExtensionContracts IBuildResultsViewExtensionConfig API | Extensions for Visual Studio Team Services
+title: TFS/build-release/ExtensionContracts IBuildResultsViewExtensionConfig API | Extensions for Visual Studio Team Services
 description: Interface defining the configuration that is shared between extension targeted at &quot;ms.vss-build-web.build-results-view&quot; and the host
 ms.assetid: 70f8aa50-d7cf-5deb-ff37-0f06a26f593f
 ms.prod: vs-devops-alm
@@ -12,12 +12,12 @@ ms.date: 08/04/2016
 
 # IBuildResultsViewExtensionConfig
 
-Module path: `TFS/Build/ExtensionContracts`
+Module path: `TFS/build-release/ExtensionContracts`
 
 
 ### Members
 
-* `onBuildChanged`: (handler: (build: [Build_Contracts.Build](../../../TFS/Build/Contracts/Build.md)): void): void. Required if reacting to the current build.
+* `onBuildChanged`: (handler: (build: [Build_Contracts.Build](../../../TFS/build-release/Contracts/Build.md)): void): void. Required if reacting to the current build.
 More than one callbacks can be added, and all will be called.
 It is important to have atleast one call back, since that&#x27;s how an extension can get information about the current build.
 

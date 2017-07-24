@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildAgent API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts BuildAgent API | Extensions for Visual Studio Team Services
 ms.assetid: ccaf202f-73e1-583a-a449-9742cbd013fc
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # BuildAgent
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

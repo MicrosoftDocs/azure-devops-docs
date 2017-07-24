@@ -39,4 +39,4 @@ You can query for data about builds, such as the status and quality, by using Fa
 -  [Build Success Over Time](build-success-over-time-report.md)   
 -  [Build Summary](build-summary-report.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md) 
-- [Continuous integration on any platform](../../build/overview.md) 
+- [Continuous integration on any platform](../../build-release/overview.md) 

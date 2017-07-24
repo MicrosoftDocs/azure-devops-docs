@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts WorkspaceMapping API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts WorkspaceMapping API | Extensions for Visual Studio Team Services
 description: Mapping for a workspace
 ms.assetid: 5c253e06-43f7-52e2-2895-ca9103417b1c
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # WorkspaceMapping
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

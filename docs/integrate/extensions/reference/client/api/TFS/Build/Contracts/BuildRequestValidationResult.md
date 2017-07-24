@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildRequestValidationResult API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts BuildRequestValidationResult API | Extensions for Visual Studio Team Services
 ms.assetid: 0a87872a-dfd9-25e8-f352-faa3709aa63c
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # BuildRequestValidationResult
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

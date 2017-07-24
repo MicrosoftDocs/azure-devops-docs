@@ -363,7 +363,7 @@ Adds a configurable tile to display the summary of a shared query results.</p>
  
 <p>Configurable widget that shows a consolidated view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build definition, branch, and linked release definitions. </p>
 
-<p>To learn more, see [View and manage releases](../build/actions/view-manage-releases.md#release-overview).</p>
+<p>To learn more, see [View and manage releases](../build-release/actions/view-manage-releases.md#release-overview).</p>
 
 </div>
 
@@ -381,7 +381,7 @@ Adds a configurable tile to display the summary of a shared query results.</p>
 
 <div style="float:left;width:300px;margin:3px;">
 <p>Configurable widget that you can use to view and track the status of a release definition. The widget shows the release as a series of environments, with the name of the release and the date or time it was started. The color of the heading and the icon in each environment indicate the current status of the release, which are the same as are used on the **Releases** page. Select a release definition in the left column to filter the list to just releases for that definition.</p>
-<p>To learn more, see [Add release information to the dashboard](../build/actions/view-manage-releases.md#add-widget). </p>
+<p>To learn more, see [Add release information to the dashboard](../build-release/actions/view-manage-releases.md#add-widget). </p>
 </div>
 
 <div style="clear:left;font-size:100%">

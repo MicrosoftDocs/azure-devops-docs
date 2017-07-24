@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts TaskResult API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts TaskResult API | Extensions for Visual Studio Team Services
 ms.assetid: 661e0d6a-97a3-ad80-67c7-b3c76c5618b6
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -9,9 +9,9 @@ ms.author: elbatk
 ms.date: 08/25/2016
 ---
 
-# TFS/Build/Contracts TaskResult
+# TFS/build-release/Contracts TaskResult
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 ### Values
 

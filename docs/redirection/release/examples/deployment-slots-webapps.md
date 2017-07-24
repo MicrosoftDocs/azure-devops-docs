@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/apps/cd/deploy-webdeploy-webapps#swap-deployment-slots
+redirect_url: /docs/build-release/apps/cd/deploy-webdeploy-webapps#swap-deployment-slots
 ---

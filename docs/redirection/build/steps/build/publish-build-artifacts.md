@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/steps/utility/copy-and-publish-build-artifacts
+redirect_url: /docs/build-release/steps/utility/copy-and-publish-build-artifacts
 ---

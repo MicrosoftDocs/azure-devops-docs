@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/apps/mobile/cordova-command
+redirect_url: /docs/build-release/apps/mobile/cordova-command
 ---

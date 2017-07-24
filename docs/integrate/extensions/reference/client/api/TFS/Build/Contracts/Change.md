@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts Change API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts Change API | Extensions for Visual Studio Team Services
 description: Represents a change associated with a build.
 ms.assetid: ce66a017-4343-3e06-3d07-21f20bb6f36d
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Change
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/admin/agents/hosted-pool
+redirect_url: /docs/build-release/admin/agents/hosted-pool
 ---

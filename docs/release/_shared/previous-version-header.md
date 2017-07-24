@@ -7,7 +7,7 @@
 
 Release Management features have been integrated into the **Build &amp; Release** hub in
 Team Foundation Server (TFS) and Visual Studio Team Services.
-For more information, see [Continuous integration on any platform](../../build/overview.md). 
+For more information, see [Continuous integration on any platform](../../build-release/overview.md). 
 
 The newer web-based version is the recommended alternative 
 to the server and client version described in this topic.

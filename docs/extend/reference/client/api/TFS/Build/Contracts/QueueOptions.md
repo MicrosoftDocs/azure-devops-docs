@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts QueueOptions API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts QueueOptions API | Extensions for Visual Studio Team Services
 ms.assetid: 4f11cd63-5d8e-0e12-6ce8-9fd479b15fa1
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # QueueOptions
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 ### Values
 

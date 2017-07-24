@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/get-started/java-maven
+redirect_url: /docs/build-release/get-started/java-maven
 ---

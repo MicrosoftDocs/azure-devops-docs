@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts SvnWorkspace API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts SvnWorkspace API | Extensions for Visual Studio Team Services
 ms.assetid: d6c10dff-4280-b667-c091-60cc76fd5bda
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # SvnWorkspace
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

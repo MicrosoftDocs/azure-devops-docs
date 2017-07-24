@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/news/rm-archived
+redirect_url: /docs/build-release/news/rm-archived
 ---

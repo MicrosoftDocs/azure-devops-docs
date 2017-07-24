@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts ScheduleDays API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts ScheduleDays API | Extensions for Visual Studio Team Services
 ms.assetid: 2da9488b-1666-dae0-151e-8f655e28ed23
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # ScheduleDays
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 ### Values
 

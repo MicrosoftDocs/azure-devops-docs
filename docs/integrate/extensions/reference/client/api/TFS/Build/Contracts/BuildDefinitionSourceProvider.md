@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildDefinitionSourceProvider API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts BuildDefinitionSourceProvider API | Extensions for Visual Studio Team Services
 ms.assetid: b27a8546-1b49-bad2-0f2d-6f241cdfe87c
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # BuildDefinitionSourceProvider
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

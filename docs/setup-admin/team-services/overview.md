@@ -134,10 +134,10 @@ For a simplified view of the default permissions granted to built-in groups and 
 <ul style="padding-left:20px;font-size:90%">
 <li style="margin-bottom:2px">[Git branch](../../git/branch-permissions.md)</li>
 <li style="margin-bottom:2px">[TFVC](../restrict-access-tfs.md)</li>
-<li style="margin-bottom:2px">[Builds](../../build/concepts/policies/permissions.md)</li>
-<li style="margin-bottom:2px">[Release definition security](../../build/concepts/policies/permissions.md#release-permissions)</li>
-<li style="margin-bottom:2px">[Environment security](../../build/concepts/policies/permissions.md#release-permissions)</li>
-<li style="margin-bottom:2px">[Approvals and approvers](../../build/concepts/definitions/release/environments.md#approvals)</li>
+<li style="margin-bottom:2px">[Builds](../../build-release/concepts/policies/permissions.md)</li>
+<li style="margin-bottom:2px">[Release definition security](../../build-release/concepts/policies/permissions.md#release-permissions)</li>
+<li style="margin-bottom:2px">[Environment security](../../build-release/concepts/policies/permissions.md#release-permissions)</li>
+<li style="margin-bottom:2px">[Approvals and approvers](../../build-release/concepts/definitions/release/environments.md#approvals)</li>
 
 </ul>
 </div>
@@ -234,9 +234,9 @@ Members of the Project Administrators and Project Collection Administrator group
 <p style="padding-bottom:0px;text-align:center;"><b>DevOps</b></p>
 <ul style="padding-left:20px">
 <li style="margin-bottom:0px">[Manage Git branch policies](../../git/branch-policies.md)</li>
-<li style="margin-bottom:0px">[Build agents, pools, and service endpoints](../../build/overview.md)</li> 
+<li style="margin-bottom:0px">[Build agents, pools, and service endpoints](../../build-release/overview.md)</li> 
 <li style="margin-bottom:0px">[Test retention policies](../../test/manual-exploratory-testing/getting-started/how-long-to-keep-test-results.md)</li> 
-<li style="margin-bottom:0px">[Build and release retention policies](../../build/concepts/policies/retention.md) </li>
+<li style="margin-bottom:0px">[Build and release retention policies](../../build-release/concepts/policies/retention.md) </li>
 <li style="margin-bottom:0px">[Test permissions](../permissions.md#project_test)</li>
 <li style="margin-bottom:0px">[Build permissions](../permissions.md#build)</li>
 <li style="margin-bottom:0px">[Git repository security](../permissions.md#git-repo)</li>
@@ -274,7 +274,7 @@ The method used to customize a team project depends on the process model you use
 <div style="float:left;width:330px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">DevOps resources and Extensions</p>
 <ul style="padding-left:20px">
-<li style="margin-bottom:2px">[Manage build agents](../../build/concepts/agents/pools-queues.md) (Team Services) </li>
+<li style="margin-bottom:2px">[Manage build agents](../../build-release/concepts/agents/pools-queues.md) (Team Services) </li>
 <li style="margin-bottom:2px">[Extensions (install/manage extensions)](../../marketplace/get-vsts-extensions.md)</li>
 <li style="margin-bottom:2px">[Security (manage collection-level permissions)](../permissions.md#collection)</li>
 </ul>

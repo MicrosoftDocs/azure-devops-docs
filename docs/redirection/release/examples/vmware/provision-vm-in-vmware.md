@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/apps/cd/provision-vm-in-vmware
+redirect_url: /docs/build-release/apps/cd/provision-vm-in-vmware
 ---

@@ -58,7 +58,7 @@ Either choose the context menu for the item that you want to remove and select U
 ##Related notes
 
 - [Define queries](../work/track/using-queries.md) 
-- [Define builds](../Build/overview.md) 
+- [Define builds](../build-release/overview.md) 
 - [Test charts](../test/manual-exploratory-testing/getting-started/track-test-status.md) 
 
 

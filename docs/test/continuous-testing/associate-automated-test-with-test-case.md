@@ -45,9 +45,9 @@ The process to associate an automated test with a test case is:
 If you are using Team Foundation Build and Release Management in
 Team Services or TFS (not a [XAML build](reference-qa.md#xaml-build)), you can run associated tests in the 
 Build & Release pipeline by using the
-[Visual Studio Test Agent Deployment](../../build/steps/test/visual-studio-test-agent-deployment.md) and
-[Run Functional Tests](../../build/steps/test/run-functional-tests.md) tasks.
-You must configure the [Run Functional Tests](../../build/steps/test/run-functional-tests.md) task to use the
+[Visual Studio Test Agent Deployment](../../build-release/steps/test/visual-studio-test-agent-deployment.md) and
+[Run Functional Tests](../../build-release/steps/test/run-functional-tests.md) tasks.
+You must configure the [Run Functional Tests](../../build-release/steps/test/run-functional-tests.md) task to use the
 **Test Plan** option. You _cannot_ run tests on-demand using
 Microsoft Test Manager (MTM) unless you are using a [XAML build](reference-qa.md#xaml-build). 
 
@@ -60,7 +60,7 @@ parameters are for manual tests only.
 
 >For more information about checking in your test project and team build, see
 [Add files to the server](../../tfvc/add-files-server.md)
-and [Continuous integration on any platform](../../build/overview.md).
+and [Continuous integration on any platform](../../build-release/overview.md).
 For more information about action recordings and coded UI tests, see 
 [Recording and Playing Back Manual Tests](../manual-exploratory-testing/getting-started/record-play-back-manual-tests.md)
 and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code).
@@ -154,7 +154,7 @@ To set up your test plan to use your team build:
    To select the quality of the builds you want to be able to view, choose **Build quality**.
 
    >For more information about build definitions and build quality, see
-   [Continuous integration on any platform](../../build/overview.md).
+   [Continuous integration on any platform](../../build-release/overview.md).
  
 1. To save your changes, choose **Set build filter**.
 

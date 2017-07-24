@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/concepts/definitions/release/what-is-release-management
+redirect_url: /docs/build-release/concepts/definitions/release/what-is-release-management
 ---

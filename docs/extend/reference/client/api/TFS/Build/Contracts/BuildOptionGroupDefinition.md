@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildOptionGroupDefinition API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts BuildOptionGroupDefinition API | Extensions for Visual Studio Team Services
 ms.assetid: b593b172-0cd2-4b0c-c71f-20ab05503c6c
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # BuildOptionGroupDefinition
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

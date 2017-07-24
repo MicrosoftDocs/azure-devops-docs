@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/package/build/jenkins
+redirect_url: /docs/package/build-release/jenkins
 ---

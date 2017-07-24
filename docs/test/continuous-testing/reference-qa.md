@@ -26,7 +26,7 @@ ms.date: 08/12/2016
 
 1. Create a folder that has the custom binaries for your plug-in. (The plug-in package for your framework is a .vsix file. Change the extension to .zip so that you can unzip it.)
 
-1. Add these assemblies to version control and [let the build controller know where to get them](../../build/overview.md).
+1. Add these assemblies to version control and [let the build controller know where to get them](../../build-release/overview.md).
 
 1. In your build definition, provide the path to the test framework in the *Path to Custom Test Adapters** parameter:
 
@@ -54,7 +54,7 @@ ms.date: 08/12/2016
 1. Run **load tests** after the app is deployed to staging and production, after it passes all functional tests.
    The example shown above is just a simple test that accesses a single page in the web app to validate that 
    deployment succeeded and the app is running successfully. You can perform must more comprehensive load testing
-   to validate the entire app by running [cloud-based load tests](../../build/steps/test/cloud-based-load-test.md)
+   to validate the entire app by running [cloud-based load tests](../../build-release/steps/test/cloud-based-load-test.md)
    and [Apache JMeter load tests](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/RunJMeterLoadTest).
 
 ### Q: Can I find a specific test run?
@@ -76,10 +76,10 @@ A: Yes, you can create additional deployment slots in Azure Web Apps,
 and specify which slot to deploy your app to. If you do not specify a slot,
 the default **Production** slot is used. After you deploy, you can swap an
 app to a different slot using the **Azure App Service Manage** task. See
-[Swap deployment slots](../../build/apps/cd/deploy-webdeploy-webapps.md#swap-deployment-slots).
+[Swap deployment slots](../../build-release/apps/cd/deploy-webdeploy-webapps.md#swap-deployment-slots).
 
-You can use [task phases](../../build/concepts/process/phases.md)
-and the [**Manual Intervention**](../../build/concepts/process/phases.md#the-manual-intervention-task) task
+You can use [task phases](../../build-release/concepts/process/phases.md)
+and the [**Manual Intervention**](../../build-release/concepts/process/phases.md#the-manual-intervention-task) task
 in your release definition to pause a deployment; for example, to examine test results
 after the load tests have run and before the app is swapped from staging to production. 
 
@@ -194,9 +194,9 @@ the agent on the test machines must be running in interactive mode,
 not as a service, to allow the agent to launch a web browser. 
 If you are using a headless browser such as [PhantomJS](http://phantomjs.org/),
 the agent can be run as a service or in interactive mode. See 
-[Build and Release Agents](../../build/concepts/agents/agents.md),
-[Deploy an agent on Windows](../../build/actions/agents/v2-windows.md),
-and [Agent pools and queues](../../build/concepts/agents/pools-queues.md). 
+[Build and Release Agents](../../build-release/concepts/agents/agents.md),
+[Deploy an agent on Windows](../../build-release/actions/agents/v2-windows.md),
+and [Agent pools and queues](../../build-release/concepts/agents/pools-queues.md). 
 
 #### Q: Where can I find detailed documentation on how to run Selenium tests?
 
@@ -251,15 +251,15 @@ runs can still be triggered but releases will be queued for processing
 until agents are available.
 
 * You have sufficient concurrent pipelines to enable concurrent releases.
-See [Concurrent pipelines in Team Services](../../build/concepts/licensing/concurrent-pipelines-ts.md) 
-or [Concurrent pipelines in TFS](../../build/concepts/licensing/concurrent-pipelines-tfs.md) for more information. 
+See [Concurrent pipelines in Team Services](../../build-release/concepts/licensing/concurrent-pipelines-ts.md) 
+or [Concurrent pipelines in TFS](../../build-release/concepts/licensing/concurrent-pipelines-tfs.md) for more information. 
 
 * Testers do not run the same tests in parallel. Doing so may cause
 results to be overwritten depending on the order of execution.
 
 To enable multiple different test runs to execute in parallel, set the Release Management
 environment trigger option for
-[behavior when multiple releases are waiting to be deployed](../../build/concepts/definitions/release/triggers.md#env-triggers)
+[behavior when multiple releases are waiting to be deployed](../../build-release/concepts/definitions/release/triggers.md#env-triggers)
 as follows:
 
 * If your application supports tests running in parallel from different
@@ -283,7 +283,7 @@ from different sources, set this option to
 * I get an error that I don't have sufficient permission to trigger a release.
    - Configure **Create releases** and **Manage deployments** permissions for
      the user in the **Security** menu of the release definition. 
-     See [Release permissions](../../build/concepts/policies/permissions.md#release-permissions).<p />
+     See [Release permissions](../../build-release/concepts/policies/permissions.md#release-permissions).<p />
    
 * I get an error that no automated tests were found. 
    - Check the automation status of the selected tests. Do this in the work item

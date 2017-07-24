@@ -16,11 +16,11 @@ ms.date: 08/12/2016
 Version 2 of the **Visual Studio Test** task uses the unified Build and Release
 agent, instead of a different custom agent as was the case with version 1.
 The new version of the task also integrates intelligently with
-[task phases](../../build/concepts/process/phases.md).
+[task phases](../../build-release/concepts/process/phases.md).
 This topic explores how you can use this task, and explains how
 it works in a range of scenarios.  
 
-You select the [specific version](../../build/concepts/process/tasks.md#task-versions)
+You select the [specific version](../../build-release/concepts/process/tasks.md#task-versions)
 of a task you want to use in the **Version** list at the top
 of the task properties pane. Use the **i** icon to show more information about the task or
 a selected property setting. 
@@ -45,7 +45,7 @@ a selected property setting.
 
 ## How test tasks run in phases
 
-You can add [different types of phases](../../build/concepts/process/phases.md)
+You can add [different types of phases](../../build-release/concepts/process/phases.md)
 to a release definition. The properties of these phases include settings for
 **Run on multiple agents in parallel**.
 
@@ -54,7 +54,7 @@ to a release definition. The properties of these phases include settings for
 The following sections describe how this setting affects the operation
 of the **Visual Studio Test** and **Run Functional Tests** tasks.
 For a full description of the operation for all tasks, see
-[Parallel execution using agent phases](../../build/concepts/process/phases.md#parallel-execution-using-agent-phases).
+[Parallel execution using agent phases](../../build-release/concepts/process/phases.md#parallel-execution-using-agent-phases).
 
 ### No parallelism
 
@@ -150,7 +150,7 @@ multi-configuration and multi-agent modes, it is replicated on the agents, in th
 <a name="run-ui-tests"></a>
 ### Q: What is required to run UI tests?
 
-**A**: To run UI tests, you must run the agent in [interactive mode](../../build/concepts/agents/agents.md#account).
+**A**: To run UI tests, you must run the agent in [interactive mode](../../build-release/concepts/agents/agents.md#account).
 Agents set to run as a service cannot run UI tests.
 However, at present, interactive agents will be stopped if the machine reboots for any reason.
 Enhancements to the agent to survive reboots in interactive mode will be implemented in the future.
@@ -161,7 +161,7 @@ Automatic configuration of agents to do this will be implemented in the future.
 <a name="hosted-ui-tests"></a>
 ### Q: Can I run UI tests on the hosted agents?
 
-**A**: No, running UI tests on the [hosted agents](../../build/concepts/agents/agents.md#hosted-agents) is not possible at present.
+**A**: No, running UI tests on the [hosted agents](../../build-release/concepts/agents/agents.md#hosted-agents) is not possible at present.
 
 <a name="contains-ui-tests"></a>
 ### Q: What does the 'Test mix contains UI tests' checkbox do?
@@ -171,7 +171,7 @@ if you are running UI tests. If you are using an agent pool with a mix of
 interactive and 'running as service' agents, you may also want to add an
 'Interactive' capability to your agents demand that in your test phase
 to ensure the appropriate set of agents that can run UI tests are used.
-See [Build and Release agent capabilities](../../build/concepts/agents/agents.md#capabilities).
+See [Build and Release agent capabilities](../../build-release/concepts/agents/agents.md#capabilities).
 
 <a name="multi-config-mode"></a>
 ### Q: In multi-configuration mode, do I get distribution of tests as well?
@@ -187,7 +187,7 @@ See [Build and Release agent capabilities](../../build/concepts/agents/agents.md
 ### Q: How else can I use multi-configuration mode?
 
 **A**: This mode can be used whenever you need multiple agents to execute jobs in parallel.
-For more examples, see [Parallel execution using agent phases](../../build/concepts/process/phases.md#parallel-execution-using-agent-phases).
+For more examples, see [Parallel execution using agent phases](../../build-release/concepts/process/phases.md#parallel-execution-using-agent-phases).
 
 <a name="rft-task-changes"></a>
 ### Q: Has the Run Functional Tests task also changed?
@@ -216,7 +216,7 @@ agents in parallel by referring to your test assemblies using `**\$(Platform)\*t
 <a name="deployment-groups"></a>
 ### Q: How does the Visual Studio Test version 2 task run on deployment groups?
 
-**A**: Yes, the task can be used to run on [deployment groups](../../build/concepts/definitions/release/deployment-groups/index.md).
+**A**: Yes, the task can be used to run on [deployment groups](../../build-release/concepts/definitions/release/deployment-groups/index.md).
 
 If you have scenarios that necessitate running tests on machines in the deployment group
 where the app is deployed, you can use the Visual Studio Test version 2 task.

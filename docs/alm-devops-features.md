@@ -1092,19 +1092,19 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Add steps to specify what you [want to build](build/define/build.md#build), the [tests to run](build/define/build.md#test), and [all the other steps](build/define/build.md) needed to complete the process.</p>
 
 
-<p>![](build/steps/build/_img/android-build.png)&#160;&#160;[Build an Android app using Gradle](build/steps/build/gradle.md)</p>
-<p>![](build/steps/build/_img/android-signing.png)&#160;&#160;[Sign and align Android APK files](build/steps/build/android-signing.md)</p>
-<p>![](build/steps/build/_img/ant.png)&#160;&#160;[Build with Apache Ant](build/steps/build/ant.md) </p>
-<p>![](build/steps/build/_img/gradle.png)&#160;&#160;[Build using a Gradle wrapper script](build/steps/build/gradle.md)  </p>
-<p>![](build/steps/build/_img/grunt.png)&#160;&#160;[Grunt: The JavaScript Task Runner](build/steps/build/grunt.md) </p>
-<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Gulp/icon.png?raw=true)&#160;&#160;[Gulp: Node.js task-based build system](build/steps/build/gulp.md)</p>
-<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishSymbols/icon.png?raw=true)&#160;&#160;[Index source code and publish symbols](build/steps/build/index-sources-publish-symbols.md)</p>
-<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Maven/icon.png?raw=true)&#160;&#160;[Build with Apache Maven](build/steps/build/maven.md)</p>
-<p>![](build/steps/build/_img/msbuild.png)&#160;&#160;[Build with MSbuild](build/steps/build/msbuild.md)</p>
+<p>![](build/steps/build-release/_img/android-build.png)&#160;&#160;[Build an Android app using Gradle](build/steps/build-release/gradle.md)</p>
+<p>![](build/steps/build-release/_img/android-signing.png)&#160;&#160;[Sign and align Android APK files](build/steps/build-release/android-signing.md)</p>
+<p>![](build/steps/build-release/_img/ant.png)&#160;&#160;[Build with Apache Ant](build/steps/build-release/ant.md) </p>
+<p>![](build/steps/build-release/_img/gradle.png)&#160;&#160;[Build using a Gradle wrapper script](build/steps/build-release/gradle.md)  </p>
+<p>![](build/steps/build-release/_img/grunt.png)&#160;&#160;[Grunt: The JavaScript Task Runner](build/steps/build-release/grunt.md) </p>
+<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Gulp/icon.png?raw=true)&#160;&#160;[Gulp: Node.js task-based build system](build/steps/build-release/gulp.md)</p>
+<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishSymbols/icon.png?raw=true)&#160;&#160;[Index source code and publish symbols](build/steps/build-release/index-sources-publish-symbols.md)</p>
+<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Maven/icon.png?raw=true)&#160;&#160;[Build with Apache Maven](build/steps/build-release/maven.md)</p>
+<p>![](build/steps/build-release/_img/msbuild.png)&#160;&#160;[Build with MSbuild](build/steps/build-release/msbuild.md)</p>
 <p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png?raw=true)&#160;&#160;[SonarQube for MSbuild](http://go.microsoft.com/fwlink/?LinkId=620063)</p>
-<p>![](build/steps/build/_img/visual-studio-build.png)&#160;&#160;[Visual Studio and MSbuild](build/steps/build/visual-studio-build.md)</p>
-<p>![](build/steps/build/_img/xamarin-android.png)&#160;&#160;[Build an Android app with Xamarin](build/steps/build/xamarin-android.md) </p>
-<p>![](build/steps/build/_img/xamarin-ios.png)&#160;&#160;[Build an iOS app with Xamarin on Mac OS](build/steps/build/xamarin-ios.md) </p>
+<p>![](build/steps/build-release/_img/visual-studio-build.png)&#160;&#160;[Visual Studio and MSbuild](build/steps/build-release/visual-studio-build.md)</p>
+<p>![](build/steps/build-release/_img/xamarin-android.png)&#160;&#160;[Build an Android app with Xamarin](build/steps/build-release/xamarin-android.md) </p>
+<p>![](build/steps/build-release/_img/xamarin-ios.png)&#160;&#160;[Build an iOS app with Xamarin on Mac OS](build/steps/build-release/xamarin-ios.md) </p>
 
 
 <p><b>Build variables</b></p>

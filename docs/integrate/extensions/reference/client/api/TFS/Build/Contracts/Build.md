@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts Build API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts Build API | Extensions for Visual Studio Team Services
 description: Data representation of a build
 ms.assetid: c9030833-785f-f748-cbd7-2269619f1fd7
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Build
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

@@ -34,7 +34,7 @@ If you want to use a PowerShell script to deploy your app, make sure to:
 * Enable PowerShell Remote on all your machines.
 
 You'll need to install the agent that runs your tests on the machines. For more details, see
-[Deploy a Windows build agent](../../build/actions/agents/v2-windows.md).
+[Deploy a Windows build agent](../../build-release/actions/agents/v2-windows.md).
 You might decide to [create Azure VMs](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal)
 to install your agents.
 
@@ -53,9 +53,9 @@ As an alternative, you can use:
   `dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.12.34:5986`
  
 * A variable that contains the list of machines. For example, a
-  [build or release definition variable](../../build/concepts/definitions/release/variables.md)
+  [build or release definition variable](../../build-release/concepts/definitions/release/variables.md)
   or a variable defined within a project-wide 
-  [variable group](../../build/concepts/library/variable-groups.md). For example, you could define the variable
+  [variable group](../../build-release/concepts/library/variable-groups.md). For example, you could define the variable
   named **MyMachines** with the value shown above, then include it in
   your tasks using:
 
@@ -71,9 +71,9 @@ Certificate** option in some build, test, and deploy tasks to omit certificate c
 
 You will typically use a list of machine names in the following tasks:
 
-* [Run Functional Tests task](../../build/steps/test/run-functional-tests.md)
-* [Visual Studio Test Agent Deployment task](../../build/steps/test/visual-studio-test-agent-deployment.md) 
-* [PowerShell on Target Machines task](../../build/steps/deploy/powershell-on-target-machines.md)
+* [Run Functional Tests task](../../build-release/steps/test/run-functional-tests.md)
+* [Visual Studio Test Agent Deployment task](../../build-release/steps/test/visual-studio-test-agent-deployment.md) 
+* [PowerShell on Target Machines task](../../build-release/steps/deploy/powershell-on-target-machines.md)
 
 ## Next 
 

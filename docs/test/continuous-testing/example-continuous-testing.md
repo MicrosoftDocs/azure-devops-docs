@@ -31,7 +31,7 @@ The walkthrough is divided into the following sections:
 It will take around 45 minutes to complete all of the steps.
 
 > For information about deploying to targets other than Azure App Service, see
-[Build and deploy your app](../../build/apps/index.md).
+[Build and deploy your app](../../build-release/apps/index.md).
 
 <a name="create-service"></a>
 ## Create the Azure app service 
@@ -150,7 +150,7 @@ will automatically execute the unit tests it contains.
    ![Viewing the test results](_img/example-continuous-testing/example-continuous-testing-31.png)
 
 >For more details about build definitions in Team Services, see
-[Continuous integration on any platform](../../build/overview.md). For more details about unit tests and the results, see 
+[Continuous integration on any platform](../../build-release/overview.md). For more details about unit tests and the results, see 
 [Get started with unit testing](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing).
 
 <a name="configure-cd"></a>
@@ -192,7 +192,7 @@ a simple load test to validate the deployment.
    If you don't see any subscriptions listed, choose the **Manage** link and, in the 
    **Services** page, create a new **Azure Resource Manager** service endpoint. If you
    have problems creating the connection, see 
-   [Troubleshoot Azure Resource Manager service endpoints](../../build/actions/azure-rm-endpoint.md).
+   [Troubleshoot Azure Resource Manager service endpoints](../../build-release/actions/azure-rm-endpoint.md).
 
    ![Creating an Azure service connection ](_img/example-continuous-testing/example-continuous-testing-44a.png)
 
@@ -249,7 +249,7 @@ a simple load test to validate the deployment.
    ![Viewing details of the load test run](_img/example-continuous-testing/example-continuous-testing-54.png)
 
    >For more details about release definitions, see
-   [Release Management in Team Services](../../build/concepts/definitions/release/index.md). For more details about load tests and the results, see 
+   [Release Management in Team Services](../../build-release/concepts/definitions/release/index.md). For more details about load tests and the results, see 
    [Run URL-based load tests with Visual Studio Team Services](../performance-testing/getting-started/get-started-simple-cloud-load-test.md).
 
 <a name="test-failure"></a>
@@ -352,9 +352,9 @@ post-deployment load test.
 
 ## See also
 
-* [Continuous integration on any platform](../../build/overview.md)
+* [Continuous integration on any platform](../../build-release/overview.md)
 * [Get started with continuous testing](getting-started/getting-started-with-continuous-testing.md)
 * [Git and Team Services](../../git/overview.md)
-* [More examples](../../build/apps/index.md)
+* [More examples](../../build-release/apps/index.md)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

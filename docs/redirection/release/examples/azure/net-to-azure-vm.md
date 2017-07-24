@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/apps/
+redirect_url: /docs/build-release/apps/
 ---

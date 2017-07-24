@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildDefinitionChangedEvent API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts BuildDefinitionChangedEvent API | Extensions for Visual Studio Team Services
 ms.assetid: f011c0c1-d310-9ece-88e7-1cce323a2602
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # BuildDefinitionChangedEvent
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

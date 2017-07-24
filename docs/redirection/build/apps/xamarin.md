@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/apps/mobile/xamarin
+redirect_url: /docs/build-release/apps/mobile/xamarin
 ---

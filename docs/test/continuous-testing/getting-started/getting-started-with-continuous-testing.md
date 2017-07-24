@@ -37,7 +37,7 @@ unit tests with your build.
 1. [Check in your solution](../../../tfvc/overview.md) 
    to Visual Studio Team Services. Include your test projects.
 
-1. [Create a build definition](../../../build/overview.md) 
+1. [Create a build definition](../../../build-release/overview.md) 
    that builds your solution after each check-in, 
    using continuous integration.
 

@@ -36,8 +36,8 @@ Stakeholders contribute to team projects through the web portal using any suppor
 
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Build & Release</p>
 <ul style="padding-left:30px">
-<li style="margin-bottom:2px">[View releases](../../build/actions/view-manage-releases.md) <sup>3</sup> (TFS 2015.2)</li>
-<li style="margin-bottom:2px">[Approve a release](../../build/concepts/definitions/release/environments.md#approvals) (TFS 2015.2)</li>
+<li style="margin-bottom:2px">[View releases](../../build-release/actions/view-manage-releases.md) <sup>3</sup> (TFS 2015.2)</li>
+<li style="margin-bottom:2px">[Approve a release](../../build-release/concepts/definitions/release/environments.md#approvals) (TFS 2015.2)</li>
 </ul>
 </div>
 

@@ -29,7 +29,7 @@ Some features provide a new user interface and functionality, which can be manag
 <ul style="padding-left:30px">
 
 <li style="margin-bottom:1px">[New Account Landing page](../connect/account-home-pages.md)  </li>
-<li style="margin-bottom:1px">[New Release Definition Editor](../build/preview/release-definition-editor.md) (Team Services)</li>
+<li style="margin-bottom:1px">[New Release Definition Editor](../build-release/preview/release-definition-editor.md) (Team Services)</li>
 <li style="margin-bottom:1px">[Streamlined User Management](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) (Team Services)</li>
 </ul>
 
@@ -47,7 +47,7 @@ Some features provide a new user interface and functionality, which can be manag
 <ul style="padding-left:30px">
 <li style="margin-bottom:1px">[Combine email recipients](manage-team-notifications.md) (TFS 2017.1)</li> 
 <li style="margin-bottom:1px">[New Account Landing page](../connect/account-home-pages.md) </li>
-<li style="margin-bottom:1px">[New Release Definition Editor](../build/preview/release-definition-editor.md) (Team Services)</li>
+<li style="margin-bottom:1px">[New Release Definition Editor](../build-release/preview/release-definition-editor.md) (Team Services)</li>
 <li style="margin-bottom:1px">[Streamlined User Management](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) (Team Services)</li>
 <!---
 <li style="margin-bottom:1px">[Task tool installers](#task-tool-installers)</li> 
@@ -125,7 +125,7 @@ These subscriptions appear in the new user notifications experience, and users c
 <a id="task-tool-installers">  </a>
 ### Task tool installers
 
-We're adding some tool installer tasks to enable your build or release process to lazily install tool sets. So now you can install dependencies on hosted agents and test and validate your app on multiple versions of a tool set. See [Tool installers](../build/concepts/process/tasks.md#tool-installers).
+We're adding some tool installer tasks to enable your build or release process to lazily install tool sets. So now you can install dependencies on hosted agents and test and validate your app on multiple versions of a tool set. See [Tool installers](../build-release/concepts/process/tasks.md#tool-installers).
 
 -->
 
@@ -151,4 +151,4 @@ You can enable a built-in Wiki for your team project or for an account. This fea
 - [Collaborate overview](overview.md)  
 - [Streamlined user management](../setup-admin/team-services/manage-users-and-access-user-hub-team-services.md)  
 - [New Account Landing page](../connect/account-home-pages.md)  
-- [New Build Editor](../build/preview/2017-user-experience.md)  
+- [New Build Editor](../build-release/preview/2017-user-experience.md)  

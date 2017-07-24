@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/package/build/team-build-nuget
+redirect_url: /docs/package/build-release/team-build-nuget
 ---

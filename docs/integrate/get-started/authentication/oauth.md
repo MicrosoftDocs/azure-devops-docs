@@ -165,10 +165,10 @@ To use an access token, include it as a bearer token in the Authorization header
 Authorization: Bearer {access_token}
 ```
 
-For example, the HTTP request to [get recent builds](https://visualstudio.com/api/build/builds.md#getalistofbuilds) for a project:
+For example, the HTTP request to [get recent builds](https://visualstudio.com/api/build-release/builds.md#getalistofbuilds) for a project:
 
 ```no-highlight
-GET https://myaccount.visualstudio.com/myproject/_apis/build/builds?api-version=3.0
+GET https://myaccount.visualstudio.com/myproject/_apis/build-release/builds?api-version=3.0
 Authorization: Bearer {access_token}
 ```
 

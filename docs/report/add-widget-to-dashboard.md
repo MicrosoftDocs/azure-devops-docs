@@ -156,7 +156,7 @@ Each time a build is run, it logs information about the build, including the run
 >[!NOTE]  
 ><b>Feature availability: </b> This chart is supported from Team Services and TFS 2017.1 and later versions. You can also add it to a team dashboard from the [widget catalog](widget-catalog.md#release-definition-widget).  
 
-Each time a [release is deployed](../build/actions/view-manage-releases.md#add-widget), it logs information about the release to each of its environments. You can add a release tile to your team dashboard to monitor release progress and gain quick access to each release. 
+Each time a [release is deployed](../build-release/actions/view-manage-releases.md#add-widget), it logs information about the release to each of its environments. You can add a release tile to your team dashboard to monitor release progress and gain quick access to each release. 
 
 1. Select your [team context](#switch-team-context) and then open the Release hub to add a release definition chart to a team dashboard.   
 

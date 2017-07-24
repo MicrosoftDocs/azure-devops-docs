@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildArtifactAddedEvent API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts BuildArtifactAddedEvent API | Extensions for Visual Studio Team Services
 ms.assetid: 8be18185-1d65-4a62-6554-c5912f31afa7
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # BuildArtifactAddedEvent
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 Extends: [BuildUpdatedEvent](./BuildUpdatedEvent.md)
 

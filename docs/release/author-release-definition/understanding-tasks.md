@@ -18,32 +18,32 @@ ms.date: 10/20/2016
 <a name="agent-properties"></a>
 ## Task phases and manual intervention
 
-See our new [phases](../../build/concepts/process/phases.md) documentation.
+See our new [phases](../../build-release/concepts/process/phases.md) documentation.
 
 <a name="outofboxtasks"></a>
 ## Out-of-the-box tasks
 
-See our new [tasks](../../build/define/build.md#deploy) documentation.
+See our new [tasks](../../build-release/define/build.md#deploy) documentation.
 
 <a name="taskversions"></a>
 ### Task versions
 
-See our new [task versions](../../build/concepts/process/tasks.md#task-versions) documentation.
+See our new [task versions](../../build-release/concepts/process/tasks.md#task-versions) documentation.
 
 <a name="controloptions"></a>
 ### Task control options
 
-See our new [task control options](../../build/concepts/process/tasks.md#task-control-options) documentation.
+See our new [task control options](../../build-release/concepts/process/tasks.md#task-control-options) documentation.
 
 <a name="manualinterventiontask"></a>
 ### The Manual Intervention task
 
-See our new [Manual Intervention task](../../build/concepts/process/phases.md#the-manual-intervention-task) documentation.
+See our new [Manual Intervention task](../../build-release/concepts/process/phases.md#the-manual-intervention-task) documentation.
 
 <a name="metatasks"></a>
 ## Task groups
 
-See our new [task groups](../../build/concepts/library/task-groups.md) documentation.
+See our new [task groups](../../build-release/concepts/library/task-groups.md) documentation.
 
 <a name="sep-azure-classic"></a>
 <a name="sep-azure-rm"></a>
@@ -60,16 +60,16 @@ See our new [task groups](../../build/concepts/library/task-groups.md) documenta
 <a name="serviceconnections"></a>
 ## Service endpoints
 
-See our new  [service endpoints](../../build/concepts/library/service-endpoints.md) documentation.
+See our new  [service endpoints](../../build-release/concepts/library/service-endpoints.md) documentation.
 
 <a name="addins"></a>
 ## Extension tasks and utilities
 
-See our new [extension tasks and utilities](../../build/concepts/library/service-endpoints.md#extensions-for-other-endpoints) documentation.
+See our new [extension tasks and utilities](../../build-release/concepts/library/service-endpoints.md#extensions-for-other-endpoints) documentation.
 
 <a name="predefvariables"></a>
 ## Pre-defined variables
 
-See our new [default variables](../../build/concepts/definitions/release/variables.md#default-variables) documentation.
+See our new [default variables](../../build-release/concepts/definitions/release/variables.md#default-variables) documentation.
 
 [!INCLUDE [help-support-shared](../_shared/help-support-shared.md)]

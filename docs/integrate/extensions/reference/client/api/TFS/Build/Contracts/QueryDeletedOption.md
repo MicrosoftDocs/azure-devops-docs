@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts QueryDeletedOption API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts QueryDeletedOption API | Extensions for Visual Studio Team Services
 ms.assetid: 243c80c5-77bf-7c46-a1e9-1aefaab4a1b6
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # QueryDeletedOption
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 ### Values
 

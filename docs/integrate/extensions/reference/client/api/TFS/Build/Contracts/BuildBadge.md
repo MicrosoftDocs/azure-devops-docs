@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildBadge API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts BuildBadge API | Extensions for Visual Studio Team Services
 description: Data representation of a build badge
 ms.assetid: ddd4dcfd-24b6-a094-ee50-a91526674d2c
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # BuildBadge
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

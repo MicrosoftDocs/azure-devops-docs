@@ -16,32 +16,32 @@ ms.date: 10/20/2016
 <a name="concepts"></a>
 ## Artifact concepts
 
-See our new [artifacts](../../build/concepts/definitions/release/artifacts.md) documentation.
+See our new [artifacts](../../build-release/concepts/definitions/release/artifacts.md) documentation.
 
 <a name="link-artifacts"></a>
 <a name="multisource"></a>
 ## Link artifacts to a release definition
 
-See our new [artifact sources](../../build/concepts/definitions/release/artifacts.md#sources) documentation.
+See our new [artifact sources](../../build-release/concepts/definitions/release/artifacts.md#sources) documentation.
 
 <a name="sources"></a>
 ## Artifact sources
 
-See our new [artifact sources](../../build/concepts/definitions/release/artifacts.md#sources) documentation.
+See our new [artifact sources](../../build-release/concepts/definitions/release/artifacts.md#sources) documentation.
 
 <a name="source-alias"></a>
 ## Artifact source alias
 
-See our new [artifact source alias](../../build/concepts/definitions/release/artifacts.md#source-alias) documentation.
+See our new [artifact source alias](../../build-release/concepts/definitions/release/artifacts.md#source-alias) documentation.
 
 <a name="download"></a>
 ## Artifact download
 
-See our new [artifact download](../../build/concepts/definitions/release/artifacts.md#download) documentation.
+See our new [artifact download](../../build-release/concepts/definitions/release/artifacts.md#download) documentation.
 
 <a name="variables"></a>
 ## Artifact variables
 
-See our new [artifact variables](../../build/concepts/definitions/release/artifacts.md#artifact-variables) documentation.
+See our new [artifact variables](../../build-release/concepts/definitions/release/artifacts.md#artifact-variables) documentation.
 
 [!INCLUDE [help-support-shared](../_shared/help-support-shared.md)]

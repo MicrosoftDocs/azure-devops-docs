@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/concepts/policies/retention
+redirect_url: /docs/build-release/concepts/policies/retention
 ---

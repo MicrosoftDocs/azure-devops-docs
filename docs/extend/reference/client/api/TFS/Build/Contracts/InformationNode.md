@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts InformationNode API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts InformationNode API | Extensions for Visual Studio Team Services
 description: Data representation of an information node associated with a build
 ms.assetid: d0822b03-5b46-0b84-1277-034da053c55e
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # InformationNode
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildPollingSummaryEvent API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts BuildPollingSummaryEvent API | Extensions for Visual Studio Team Services
 ms.assetid: ec6f9008-0cf4-bc9d-0619-73100ac348f8
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # BuildPollingSummaryEvent
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

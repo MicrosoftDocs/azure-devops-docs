@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/define/repository
+redirect_url: /docs/build-release/define/repository
 ---

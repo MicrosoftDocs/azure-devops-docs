@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts PropertyValue API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts PropertyValue API | Extensions for Visual Studio Team Services
 ms.assetid: 7566ca43-591e-4ec3-05bc-6632988b7629
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # PropertyValue
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 
 ### Members

@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build/apps/aspnet/cd/deploy-webdeploy-webapps
+redirect_url: /docs/build-release/apps/aspnet/cd/deploy-webdeploy-webapps
 ---

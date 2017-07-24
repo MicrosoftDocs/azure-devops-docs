@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts XamlBuildDefinition API | Extensions for Visual Studio Team Services
+title: TFS/build-release/Contracts XamlBuildDefinition API | Extensions for Visual Studio Team Services
 ms.assetid: f6cbd2c1-a6f0-0bb3-425f-8242bb8385f4
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # XamlBuildDefinition
 
-Module path: `TFS/Build/Contracts`
+Module path: `TFS/build-release/Contracts`
 
 Extends: [DefinitionReference](./DefinitionReference.md)
 

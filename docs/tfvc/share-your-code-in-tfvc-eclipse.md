@@ -44,7 +44,7 @@ Your code is in TFVC, so now your teammates can contribute.
 
 ## Try this next
 
-* [Build your Eclipse projects](../build/get-started/java-maven.md)
+* [Build your Eclipse projects](../build-release/get-started/java-maven.md)
 
 ## Q&A
 
