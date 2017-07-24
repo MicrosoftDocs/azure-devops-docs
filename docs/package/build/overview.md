@@ -22,7 +22,7 @@ Package Management can integrate with most build systems using REST APIs and pac
 To integrate with other build systems, use the [packaging REST APIs](../../../integrate/api/packaging/overview.md).
 
 For details on build tasks related to Package Management, see the following:
-* [NuGet Installer](../../build-release/steps/package/nuget-installer.md)
-* [NuGet Packager](../../build-release/steps/package/nuget-packager.md)
-* [NuGet Publisher](../../build-release/steps/package/nuget-publisher.md)
+* [NuGet Installer](../../build/steps/package/nuget-installer.md)
+* [NuGet Packager](../../build/steps/package/nuget-packager.md)
+* [NuGet Publisher](../../build/steps/package/nuget-publisher.md)
 

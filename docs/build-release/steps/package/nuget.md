@@ -114,7 +114,7 @@ You're building a Visual Studio solution that depends on a NuGet feed.
         </td>
     </tr>
     <tr>
-        <td>![Build: Visual Studio Build](../build-release/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
+        <td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
         <td>
             Build your solution.
             <ul>
@@ -330,7 +330,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
         </td>
     </tr>
     <tr>
-        <td>![Build: Visual Studio Build](../build-release/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
+        <td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
         <td>
             <p>Build your solution.</p>
             <ul>

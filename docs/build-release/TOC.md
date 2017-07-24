@@ -63,14 +63,14 @@
 ### [ASP.NET Core with Docker from Visual Studio](apps/aspnet/aspnetcore-docker-to-azure.md)
 ## Use Package Management
 ### Set up Team Build with NuGet
-#### [Restore private packages](package/nuget/)
-#### [Pack and push packages](package/nuget/)
+#### [Restore private packages](package/nuget/restore-private-package-build.md)
+#### [Pack and push packages](package/nuget/pack-push-packages-build.md)
 ### Set up Team Build with npm
-#### [Install private packages](package/npm/) 
-#### [Publish NuGet packages](package/npm/)
+#### [Install private packages](package/npm/install-private-packages-build.md) 
+#### [Publish NuGet packages](package/npm/publish-packages-build.md)
 ### Set up Team Build with Maven
-#### [Install private packages](package/maven/)
-#### [Publish packages](package/maven/)
+#### [Install private packages](package/maven/install-private-packages-build.md)
+#### [Publish packages](package/maven/publish-packages-build.md)
 ## Migrate
 ### [Migrate from XAML builds](actions/migrate-from-xaml-builds.md)
 # [Reference](define/build.md)
