@@ -134,13 +134,13 @@ We don't yet support the **Build even if nothing has changed since the previous 
 | XAML process parameter | TFS 2017 RTM equivalent| Team Services equivalent |
 |-|-|-|
 | Build controller | On the **General** tab, select the default agent queue. | On the **Options** tab, select the default agent queue. |
-| Staging location | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../concepts/definitions/build-release/artifacts.md). | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../concepts/definitions/build-release/artifacts.md). |
+| Staging location | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../concepts/definitions/build/artifacts.md). | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../concepts/definitions/build/artifacts.md). |
 
 The new build definition offers you some new options. For example:
 
 * You don't need a controller, and the new agents are easier to set up and maintain. See [Build and release agents](../concepts/agents/agents.md).
 
-* You can exactly specify which sets of files you want to publish as build artifacts. See [Build artifacts](../concepts/definitions/build-release/artifacts.md).
+* You can exactly specify which sets of files you want to publish as build artifacts. See [Build artifacts](../concepts/definitions/build/artifacts.md).
 
 ### Process tab
 
@@ -178,7 +178,7 @@ On the **Build** tab (TFS 2017) or the **Tasks** tab (Team Services), after you 
 | Projects | Solution |
 | Configurations | Platform, Configuration. See [Visual Studio Build: How do I build multiple configurations for multiple platforms?](../steps/build/visual-studio-build.md#how-do-i-build-multiple-configurations-for-multiple-platforms) | 
 | Clean build | Clean | 
-| Output location | The Visual Studio Build task builds and outputs files in the same way you do it on your dev machine, in the local workspace. We give you full control of publishing artifacts out of the local workspace on the agent. See [Artifacts in Team Build](../concepts/definitions/build-release/artifacts.md). |
+| Output location | The Visual Studio Build task builds and outputs files in the same way you do it on your dev machine, in the local workspace. We give you full control of publishing artifacts out of the local workspace on the agent. See [Artifacts in Team Build](../concepts/definitions/build/artifacts.md). |
 | Advanced, MSBuild arguments | MSBuild Arguments | 
 | Advanced, MSBuild platform | Advanced, MSBuild Architecture |
 | Advanced, Perform code analysis | Use an MSBuild argument such as`/p:RunCodeAnalysis=true` |

@@ -126,7 +126,7 @@ drop
 
 > Artifacts are the files that you want your build to produce. Artifacts can be nearly anything your team needs to test or deploy your app. For example, you've got a .DLL and .EXE executable files and .PDB symbols file of a C# or C++ .NET Windows app.
 >
-> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and also a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Team Build](../concepts/definitions/build-release/artifacts.md).
+> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and also a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Team Build](../concepts/definitions/build/artifacts.md).
 
 ## Enable continuous integration (CI)
 

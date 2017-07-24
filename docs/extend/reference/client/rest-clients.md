@@ -26,7 +26,7 @@ To get started with calling client methods from your extension, see [how to call
 
 ### Available clients
 
-* [Build](./api/TFS/build-release/RestClient/BuildHttpClient2_2.md)
+* [Build](./api/TFS/build/RestClient/BuildHttpClient2_2.md)
 * [Git](./api/TFS/VersionControl/GitRestClient/GitHttpClient2_2.md)
 * [Project and team](./api/TFS/Core/RestClient/CoreHttpClient2_2.md)
 * [Test management](./api/TFS/TestManagement/RestClient/TestHttpClient2_2.md)

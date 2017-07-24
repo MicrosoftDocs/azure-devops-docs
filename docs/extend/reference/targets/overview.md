@@ -68,7 +68,7 @@ Name     | ID                                         | Level                   
 ---------|--------------------------------------------|---------------------------------|-----------------------------          
 Code     | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![sourcesshub](./vss/code/web/_img/hubs-source.png)
 Work     | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![workhub](./vss/work/web/_img/hubs-workitems.png)
-Build    | `ms.vss-build-web.build-hub-group`         | Project/team                    | ![build](./vss/build-release/web/_img/hubs-build.png)
+Build    | `ms.vss-build-web.build-hub-group`         | Project/team                    | ![build](./vss/build/web/_img/hubs-build.png)
 Release  | `ms.vss-releaseManagement-web.hub-group-rm` | Project/team                   | ![releasehub](./vss/release/web/_img/hubs-release.png)
 Test     | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![build](./vss/test/web/_img/hubs-testmanagement.png)
 Admin    | `ms.vss-web.collection-admin-hub-group`    | Project Collection (admin)      | ![projectadmin](./vss/web/_img/hubs-admin-collection.png) 
@@ -94,8 +94,8 @@ Project overview teams grid       | `ms.vss-admin-web.teams-grid-menu`          
 
 Name                      | Target ID                                   | Preview 
 --------------------------|---------------------------------------------|-------------------
-Completed build menu      | `ms.vss-build-web.completed-build-menu`     | ![completedBuildActions](./vss/build-release/web/_img/completedBuildActions.png)
-Build definitions menu    | `ms.vss-build-web.build-definition-menu`    | ![buildDefinitionActions](./vss/build-release/web/_img/buildDefinitionActions.png)
+Completed build menu      | `ms.vss-build-web.completed-build-menu`     | ![completedBuildActions](./vss/build/web/_img/completedBuildActions.png)
+Build definitions menu    | `ms.vss-build-web.build-definition-menu`    | ![buildDefinitionActions](./vss/build/web/_img/buildDefinitionActions.png)
 
 <a name="menu_release"></a>
 ### Release

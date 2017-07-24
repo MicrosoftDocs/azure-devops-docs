@@ -54,7 +54,7 @@ See [Create a feed](../../../package/feeds/create-feed.md).
 
 <table>
 <tr>
-<td>![Build: Visual Studio Build](../build-release/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
+<td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
 <td>
 <p>Build your solution.</p>
 <ul>
@@ -104,7 +104,7 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 
 <table>
 <tr>
-<td>![Build: Visual Studio Build](../build-release/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
+<td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
 <td>
 <p>Build your solution.</p>
 <ul>

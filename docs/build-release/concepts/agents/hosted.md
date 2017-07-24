@@ -47,7 +47,7 @@ Hosted agents do not offer:
 
 * The ability to log on.
 
-* The ability to [drop artifacts to a UNC file share](../../concepts/definitions/build-release/artifacts.md#unc-file-share).
+* The ability to [drop artifacts to a UNC file share](../../concepts/definitions/build/artifacts.md#unc-file-share).
 
 * The ability to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx).
 

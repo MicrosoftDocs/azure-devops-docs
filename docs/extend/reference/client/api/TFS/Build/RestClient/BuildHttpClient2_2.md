@@ -132,13 +132,13 @@ Module path: `TFS/build-release/RestClient`
 
 ### Parameters
 
-* `artifact`: [Contracts.BuildArtifact](../../../TFS/build-release/Contracts/BuildArtifact.md). 
+* `artifact`: [Contracts.BuildArtifact](../../../TFS/build/Contracts/BuildArtifact.md). 
 * `buildId`: number. 
 * `project`: string. Optional. 
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildArtifact](../../../TFS/build-release/Contracts/BuildArtifact.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildArtifact](../../../TFS/build/Contracts/BuildArtifact.md)&gt;
 
 <a name="method_createDefinition"></a>
 <h2 class='method'>createDefinition()</h2>
@@ -152,14 +152,14 @@ Module path: `TFS/build-release/RestClient`
 
 ### Parameters
 
-* `definition`: [Contracts.BuildDefinition](../../../TFS/build-release/Contracts/BuildDefinition.md). 
+* `definition`: [Contracts.BuildDefinition](../../../TFS/build/Contracts/BuildDefinition.md). 
 * `project`: string. Optional. 
 * `definitionToCloneId`: number. Optional. 
 * `definitionToCloneRevision`: number. Optional. 
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinition](../../../TFS/build-release/Contracts/BuildDefinition.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinition](../../../TFS/build/Contracts/BuildDefinition.md)&gt;
 
 <a name="method_createQueue"></a>
 <h2 class='method'>createQueue()</h2>
@@ -173,11 +173,11 @@ Module path: `TFS/build-release/RestClient`
 
 ### Parameters
 
-* `queue`: [Contracts.AgentPoolQueue](../../../TFS/build-release/Contracts/AgentPoolQueue.md). 
+* `queue`: [Contracts.AgentPoolQueue](../../../TFS/build/Contracts/AgentPoolQueue.md). 
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.AgentPoolQueue](../../../TFS/build-release/Contracts/AgentPoolQueue.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.AgentPoolQueue](../../../TFS/build/Contracts/AgentPoolQueue.md)&gt;
 
 <a name="method_deleteBuild"></a>
 <h2 class='method'>deleteBuild()</h2>
@@ -290,7 +290,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.AgentPoolQueue](../../../TFS/build-release/Contracts/AgentPoolQueue.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.AgentPoolQueue](../../../TFS/build/Contracts/AgentPoolQueue.md)&gt;
 
 <a name="method_getArtifact"></a>
 <h2 class='method'>getArtifact()</h2>
@@ -310,7 +310,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildArtifact](../../../TFS/build-release/Contracts/BuildArtifact.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildArtifact](../../../TFS/build/Contracts/BuildArtifact.md)&gt;
 
 <a name="method_getArtifactContentZip"></a>
 <h2 class='method'>getArtifactContentZip()</h2>
@@ -349,7 +349,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildArtifact](../../../TFS/build-release/Contracts/BuildArtifact.md)[]&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildArtifact](../../../TFS/build/Contracts/BuildArtifact.md)[]&gt;
 
 <a name="method_getBadge"></a>
 <h2 class='method'>getBadge()</h2>
@@ -389,7 +389,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Build](../../../TFS/build-release/Contracts/Build.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Build](../../../TFS/build/Contracts/Build.md)&gt;
 
 <a name="method_getBuildBadge"></a>
 <h2 class='method'>getBuildBadge()</h2>
@@ -410,7 +410,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildBadge](../../../TFS/build-release/Contracts/BuildBadge.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildBadge](../../../TFS/build/Contracts/BuildBadge.md)&gt;
 
 <a name="method_getBuildBadgeData"></a>
 <h2 class='method'>getBuildBadgeData()</h2>
@@ -452,7 +452,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Change](../../../TFS/build-release/Contracts/Change.md)[]&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Change](../../../TFS/build/Contracts/Change.md)[]&gt;
 
 <a name="method_getBuildController"></a>
 <h2 class='method'>getBuildController()</h2>
@@ -470,7 +470,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildController](../../../TFS/build-release/Contracts/BuildController.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildController](../../../TFS/build/Contracts/BuildController.md)&gt;
 
 <a name="method_getBuildControllers"></a>
 <h2 class='method'>getBuildControllers()</h2>
@@ -488,7 +488,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildController](../../../TFS/build-release/Contracts/BuildController.md)[]&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildController](../../../TFS/build/Contracts/BuildController.md)[]&gt;
 
 <a name="method_getBuildDeployments"></a>
 <h2 class='method'>getBuildDeployments()</h2>
@@ -507,7 +507,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Deployment](../../../TFS/build-release/Contracts/Deployment.md)[]&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Deployment](../../../TFS/build/Contracts/Deployment.md)[]&gt;
 
 <a name="method_getBuildLog"></a>
 <h2 class='method'>getBuildLog()</h2>
@@ -548,7 +548,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildLog](../../../TFS/build-release/Contracts/BuildLog.md)[]&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildLog](../../../TFS/build/Contracts/BuildLog.md)[]&gt;
 
 <a name="method_getBuildLogsZip"></a>
 <h2 class='method'>getBuildLogsZip()</h2>
@@ -585,7 +585,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildOptionDefinition](../../../TFS/build-release/Contracts/BuildOptionDefinition.md)[]&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildOptionDefinition](../../../TFS/build/Contracts/BuildOptionDefinition.md)[]&gt;
 
 <a name="method_getBuilds"></a>
 <h2 class='method'>getBuilds()</h2>
@@ -606,22 +606,22 @@ Module path: `TFS/build-release/RestClient`
 * `minFinishTime`: Date. Optional. 
 * `maxFinishTime`: Date. Optional. 
 * `requestedFor`: string. Optional. 
-* `reasonFilter`: [Contracts.BuildReason](../../../TFS/build-release/Contracts/BuildReason.md). Optional. 
-* `statusFilter`: [Contracts.BuildStatus](../../../TFS/build-release/Contracts/BuildStatus.md). Optional. 
-* `resultFilter`: [Contracts.BuildResult](../../../TFS/build-release/Contracts/BuildResult.md). Optional. 
+* `reasonFilter`: [Contracts.BuildReason](../../../TFS/build/Contracts/BuildReason.md). Optional. 
+* `statusFilter`: [Contracts.BuildStatus](../../../TFS/build/Contracts/BuildStatus.md). Optional. 
+* `resultFilter`: [Contracts.BuildResult](../../../TFS/build/Contracts/BuildResult.md). Optional. 
 * `tagFilters`: string[]. Optional. 
 * `properties`: string[]. Optional. 
-* `type`: [Contracts.DefinitionType](../../../TFS/build-release/Contracts/DefinitionType.md). Optional. 
+* `type`: [Contracts.DefinitionType](../../../TFS/build/Contracts/DefinitionType.md). Optional. 
 * `top`: number. Optional. 
 * `continuationToken`: string. Optional. 
 * `maxBuildsPerDefinition`: number. Optional. 
-* `deletedFilter`: [Contracts.QueryDeletedOption](../../../TFS/build-release/Contracts/QueryDeletedOption.md). Optional. 
-* `queryOrder`: [Contracts.BuildQueryOrder](../../../TFS/build-release/Contracts/BuildQueryOrder.md). Optional. 
+* `deletedFilter`: [Contracts.QueryDeletedOption](../../../TFS/build/Contracts/QueryDeletedOption.md). Optional. 
+* `queryOrder`: [Contracts.BuildQueryOrder](../../../TFS/build/Contracts/BuildQueryOrder.md). Optional. 
 * `branchName`: string. Optional. 
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Build](../../../TFS/build-release/Contracts/Build.md)[]&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Build](../../../TFS/build/Contracts/Build.md)[]&gt;
 
 <a name="method_getBuildSettings"></a>
 <h2 class='method'>getBuildSettings()</h2>
@@ -638,7 +638,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildSettings](../../../TFS/build-release/Contracts/BuildSettings.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildSettings](../../../TFS/build/Contracts/BuildSettings.md)&gt;
 
 <a name="method_getBuildTags"></a>
 <h2 class='method'>getBuildTags()</h2>
@@ -678,7 +678,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Timeline](../../../TFS/build-release/Contracts/Timeline.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Timeline](../../../TFS/build/Contracts/Timeline.md)&gt;
 
 <a name="method_getBuildWorkItemsRefs"></a>
 <h2 class='method'>getBuildWorkItemsRefs()</h2>
@@ -740,7 +740,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Change](../../../TFS/build-release/Contracts/Change.md)[]&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Change](../../../TFS/build/Contracts/Change.md)[]&gt;
 
 <a name="method_getDefinition"></a>
 <h2 class='method'>getDefinition()</h2>
@@ -761,7 +761,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.DefinitionReference](../../../TFS/build-release/Contracts/DefinitionReference.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.DefinitionReference](../../../TFS/build/Contracts/DefinitionReference.md)&gt;
 
 <a name="method_getDefinitionRevisions"></a>
 <h2 class='method'>getDefinitionRevisions()</h2>
@@ -780,7 +780,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinitionRevision](../../../TFS/build-release/Contracts/BuildDefinitionRevision.md)[]&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinitionRevision](../../../TFS/build/Contracts/BuildDefinitionRevision.md)[]&gt;
 
 <a name="method_getDefinitions"></a>
 <h2 class='method'>getDefinitions()</h2>
@@ -796,15 +796,15 @@ Module path: `TFS/build-release/RestClient`
 
 * `project`: string. Optional. Project ID or project name
 * `name`: string. Optional. 
-* `type`: [Contracts.DefinitionType](../../../TFS/build-release/Contracts/DefinitionType.md). Optional. 
+* `type`: [Contracts.DefinitionType](../../../TFS/build/Contracts/DefinitionType.md). Optional. 
 * `repositoryId`: string. Optional. 
 * `repositoryType`: string. Optional. 
-* `queryOrder`: [Contracts.DefinitionQueryOrder](../../../TFS/build-release/Contracts/DefinitionQueryOrder.md). Optional. 
+* `queryOrder`: [Contracts.DefinitionQueryOrder](../../../TFS/build/Contracts/DefinitionQueryOrder.md). Optional. 
 * `top`: number. Optional. 
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.DefinitionReference](../../../TFS/build-release/Contracts/DefinitionReference.md)[]&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.DefinitionReference](../../../TFS/build/Contracts/DefinitionReference.md)[]&gt;
 
 <a name="method_getQueues"></a>
 <h2 class='method'>getQueues()</h2>
@@ -822,7 +822,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.AgentPoolQueue](../../../TFS/build-release/Contracts/AgentPoolQueue.md)[]&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.AgentPoolQueue](../../../TFS/build/Contracts/AgentPoolQueue.md)[]&gt;
 
 <a name="method_getResourceUsage"></a>
 <h2 class='method'>getResourceUsage()</h2>
@@ -839,7 +839,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildResourceUsage](../../../TFS/build-release/Contracts/BuildResourceUsage.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildResourceUsage](../../../TFS/build/Contracts/BuildResourceUsage.md)&gt;
 
 <a name="method_getTags"></a>
 <h2 class='method'>getTags()</h2>
@@ -876,7 +876,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinitionTemplate](../../../TFS/build-release/Contracts/BuildDefinitionTemplate.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinitionTemplate](../../../TFS/build/Contracts/BuildDefinitionTemplate.md)&gt;
 
 <a name="method_getTemplates"></a>
 <h2 class='method'>getTemplates()</h2>
@@ -894,7 +894,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinitionTemplate](../../../TFS/build-release/Contracts/BuildDefinitionTemplate.md)[]&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinitionTemplate](../../../TFS/build/Contracts/BuildDefinitionTemplate.md)[]&gt;
 
 <a name="method_getWorkItemsBetweenBuilds"></a>
 <h2 class='method'>getWorkItemsBetweenBuilds()</h2>
@@ -929,13 +929,13 @@ Module path: `TFS/build-release/RestClient`
 
 ### Parameters
 
-* `build`: [Contracts.Build](../../../TFS/build-release/Contracts/Build.md). 
+* `build`: [Contracts.Build](../../../TFS/build/Contracts/Build.md). 
 * `project`: string. Optional. 
 * `ignoreWarnings`: boolean. Optional. 
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Build](../../../TFS/build-release/Contracts/Build.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Build](../../../TFS/build/Contracts/Build.md)&gt;
 
 <a name="method_saveTemplate"></a>
 <h2 class='method'>saveTemplate()</h2>
@@ -949,13 +949,13 @@ Module path: `TFS/build-release/RestClient`
 
 ### Parameters
 
-* `template`: [Contracts.BuildDefinitionTemplate](../../../TFS/build-release/Contracts/BuildDefinitionTemplate.md). 
+* `template`: [Contracts.BuildDefinitionTemplate](../../../TFS/build/Contracts/BuildDefinitionTemplate.md). 
 * `project`: string. 
 * `templateId`: string. 
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinitionTemplate](../../../TFS/build-release/Contracts/BuildDefinitionTemplate.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinitionTemplate](../../../TFS/build/Contracts/BuildDefinitionTemplate.md)&gt;
 
 <a name="method_updateBuild"></a>
 <h2 class='method'>updateBuild()</h2>
@@ -969,13 +969,13 @@ Module path: `TFS/build-release/RestClient`
 
 ### Parameters
 
-* `build`: [Contracts.Build](../../../TFS/build-release/Contracts/Build.md). 
+* `build`: [Contracts.Build](../../../TFS/build/Contracts/Build.md). 
 * `buildId`: number. 
 * `project`: string. Optional. 
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Build](../../../TFS/build-release/Contracts/Build.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Build](../../../TFS/build/Contracts/Build.md)&gt;
 
 <a name="method_updateBuildSettings"></a>
 <h2 class='method'>updateBuildSettings()</h2>
@@ -989,11 +989,11 @@ Module path: `TFS/build-release/RestClient`
 
 ### Parameters
 
-* `settings`: [Contracts.BuildSettings](../../../TFS/build-release/Contracts/BuildSettings.md). 
+* `settings`: [Contracts.BuildSettings](../../../TFS/build/Contracts/BuildSettings.md). 
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildSettings](../../../TFS/build-release/Contracts/BuildSettings.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildSettings](../../../TFS/build/Contracts/BuildSettings.md)&gt;
 
 <a name="method_updateDefinition"></a>
 <h2 class='method'>updateDefinition()</h2>
@@ -1007,7 +1007,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Parameters
 
-* `definition`: [Contracts.BuildDefinition](../../../TFS/build-release/Contracts/BuildDefinition.md). 
+* `definition`: [Contracts.BuildDefinition](../../../TFS/build/Contracts/BuildDefinition.md). 
 * `definitionId`: number. 
 * `project`: string. Optional. 
 * `secretsSourceDefinitionId`: number. Optional. 
@@ -1015,5 +1015,5 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinition](../../../TFS/build-release/Contracts/BuildDefinition.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.BuildDefinition](../../../TFS/build/Contracts/BuildDefinition.md)&gt;
 

@@ -17,7 +17,7 @@ Module path: `TFS/build-release/ExtensionContracts`
 
 ### Members
 
-* `onBuildChanged`: (handler: (build: [Build_Contracts.Build](../../../TFS/build-release/Contracts/Build.md)): void): void. Required if reacting to the current build.
+* `onBuildChanged`: (handler: (build: [Build_Contracts.Build](../../../TFS/build/Contracts/Build.md)): void): void. Required if reacting to the current build.
 More than one callbacks can be added, and all will be called.
 It is important to have atleast one call back, since that&#x27;s how an extension can get information about the current build.
 

@@ -15,7 +15,7 @@
 ### [Deployment groups](concepts/definitions/release/deployment-groups/index.md)
 ## Definitions
 ### Build
-#### [Artifacts](concepts/definitions/build-release/artifacts.md)
+#### [Artifacts](concepts/definitions/build/artifacts.md)
 #### [History](define/history.md)
 #### [Options](define/options.md)
 #### [Repository](define/repository.md)
