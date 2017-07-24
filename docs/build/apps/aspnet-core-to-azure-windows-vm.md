@@ -27,90 +27,92 @@ _TODO: work with artist to adapt diagram to this scenario_
 
 With your CI/CD processes in place, you'll push a change into your team's git repo and the results will automatically show up on your site.
 
-![Screenshot showing ASP.NET Core web app](../aspnet/core/_img/media/cicd-get-started-dotnetcore-sample.png)
+![Screenshot showing ASP.NET Core web app](_img/aspnet-core-to-azure-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
 [!INCLUDE [include](_shared/prerequisites.md)]
+* On your dev machine, you need Azure PowerShell module version 4.0 or newer. See [Install and configure Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-4.2.0).
 
-## Create the VM
-
-_TODO harvest intro info from https://docs.microsoft.com/en-us/azure/virtual-machines/scripts/virtual-machines-windows-powershell-sample-create-vm_
-
-
-```ps
-# Variables for common values
-$resourceGroup = "MyWindowsVMResourceGroup"
-$location = "East US"
-$vmName = "WindowsVMForSampleApp"
-
-# Create user object
-$cred = Get-Credential -Message "Enter a username and password for the virtual machine."
-
-# Create a resource group
-New-AzureRmResourceGroup -Name $resourceGroup -Location $location
-
-# Create a subnet configuration
-$subnetConfig = New-AzureRmVirtualNetworkSubnetConfig -Name mySubnet -AddressPrefix 192.168.1.0/24
-
-# Create a virtual network
-$vnet = New-AzureRmVirtualNetwork -ResourceGroupName $resourceGroup -Location $location `
-  -Name MYvNET -AddressPrefix 192.168.0.0/16 -Subnet $subnetConfig
-
-# Create a public IP address and specify a DNS name
-$pip = New-AzureRmPublicIpAddress -ResourceGroupName $resourceGroup -Location $location `
-  -Name "mypublicdns$(Get-Random)" -AllocationMethod Static -IdleTimeoutInMinutes 4
-
-# Create an inbound network security group rule for port 3389
-$nsgRuleRDP = New-AzureRmNetworkSecurityRuleConfig -Name myNetworkSecurityGroupRuleRDP  -Protocol Tcp `
-  -Direction Inbound -Priority 1000 -SourceAddressPrefix * -SourcePortRange * -DestinationAddressPrefix * `
-  -DestinationPortRange 3389 -Access Allow
-
-# Create a network security group
-$nsg = New-AzureRmNetworkSecurityGroup -ResourceGroupName $resourceGroup -Location $location `
-  -Name myNetworkSecurityGroup -SecurityRules $nsgRuleRDP
-
-# Create a virtual network card and associate with public IP address and NSG
-$nic = New-AzureRmNetworkInterface -Name myNic -ResourceGroupName $resourceGroup -Location $location `
-  -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -NetworkSecurityGroupId $nsg.Id
-
-# Create a virtual machine configuration
-$vmConfig = New-AzureRmVMConfig -VMName $vmName -VMSize Standard_D1 | `
-Set-AzureRmVMOperatingSystem -Windows -ComputerName $vmName -Credential $cred | `
-Set-AzureRmVMSourceImage -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version latest | `
-Add-AzureRmVMNetworkInterface -Id $nic.Id
-
-# Create a virtual machine
-New-AzureRmVM -ResourceGroupName $resourceGroup -Location $location -VM $vmConfig
-```
-
-
-
-```ps
-Get-AzureRmNetworkSecurityGroup `
-  -ResourceGroupName $resourceGroup `
-  -Name "myNetworkSecurityGroup" | `
-Add-AzureRmNetworkSecurityRuleConfig `
-  -Name "myNetworkSecurityGroupRuleWeb" `
-  -Protocol "Tcp" `
-  -Direction "Inbound" `
-  -Priority "1001" `
-  -SourceAddressPrefix "*" `
-  -SourcePortRange "*" `
-  -DestinationAddressPrefix "*" `
-  -DestinationPortRange "80" `
-  -Access "Allow" | `
-Set-AzureRmNetworkSecurityGroup
-```
+[!INCLUDE [temp](_shared/create-azure-windows-vm.md)]
 
 ## Install the .NET Core Windows Server Hosting bundle
 
-https://docs.microsoft.com/en-us/aspnet/core/publishing/iis#install-the-net-core-windows-server-hosting-bundle
+Running an ASP.NET Core app on Windows requires some dependencies.
+
+On your Windows VM, install the [.NET Core Windows Server Hosting](https://go.microsoft.com/fwlink/?linkid=848766) bundle. The bundle will install the .NET Core Runtime, .NET Core Library, and the [ASP.NET Core Module](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps). The module creates the reverse-proxy between IIS and the Kestrel server.
+
+To effect a change to the system PATH, run the following commands.
+
+```cmd
+net stop was /y
+```
+
+```
+net start w3svc
+```
+
+[!INCLUDE [temp](_shared/create-deployment-group.md)]
 
 [!INCLUDE [temp](_shared/import-code-aspnet-core.md)]
 
-## Clean up deployment 
+[!INCLUDE [temp](_shared/set-up-ci-1.md)]
 
-Run the following command to remove the resource group, VM, and all related resources.
+In the right panel, select **ASP.NET Core**, and then click **Apply**.
 
-```powershell
-Remove-AzureRmResourceGroup -Name MyWindowsVMResourceGroup
+![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
+
+[!INCLUDE [temp](_shared/set-up-ci-2.md)]
+
+[!INCLUDE [temp](_shared/set-up-ci-3.md)]
+
+[!INCLUDE [temp](_shared/set-up-cd-1.md)]
+
+![Screenshot showing release action on build summary](_shared/_img/cicd-get-started-dotnetcore-release.png)
+
+In the dialog that prompts to **Create release definition**, select **Yes**.
+
+In the **Create release definition** wizard, select the **IIS Website and SQL Database deployment** template, and click **Apply**.
+
+![Screenshot showing IIS template](_img/aspnet-core-to-azure-windows-vm/cicd-get-started-iis-template.png)
+
+Click **Tasks**, and then select the **SQL Deployment** phase. Click 'X' to delete this phase. We won't be deploying a database in this quickstart.
+
+Select **IIS Deployment** phase. For the **Deployment Group**, select the deployment group you created earlier, such as *myIIS*. In the **Machine tags** box, select **Add** and choose the *Web* tag.
+
+Select the **IIS Web App Manage** task; click 'X' to delete this task. We will not create a new website for this quickstart. Instead, we will deploy to the **default web site**.
+
+Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Leave all the other default settings.
+
+![Screenshot showing release definition](_img/aspnet-core-to-azure-windows-vm/cicd-get-started-release-definition.png)
+
+[!INCLUDE [temp](_shared/set-up-cd-3.md)]
+
+## Update to redeploy the code
+
+Navigate to the **Code** hub in the VSTS portal. Navigate to **Views/Home/Index.cshtml** file. Make the following simple change to that file by selecting the edit action.
+
+![Screenshot showing update to code](_img/aspnet-core-to-azure-windows-vm/cicd-get-started-dotnetcore-update-code.png)
+
+Add the following line of text above the carousel display in the page:
+```
+<h1>Demo of ASP.NET Core CI/CD!!</h1>
+```
+
+Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure web app.
+
+## Browse to the app
+
+Once deployment has completed, open the browser and test your web app.
+
+```bash
+http://<publicIpAddress>
+```
+
+**Congratulations!** You've deployed changes to your application using CI/CD.
+
+## Clean up resources
+
+After you're done with the VM, run the following command to remove the resource group, the VM, and all other related resources.
+
+```ps
+Remove-AzureRmResourceGroup -Name myResourceGroup
 ```

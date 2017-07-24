@@ -34,25 +34,25 @@ https://github.com/adventworks/nodejs-sample
 
 [!INCLUDE [temp](../get-started/_shared/import-code-2.md)]
 
-[!INCLUDE [temp](../get-started/_shared/set-up-ci-1.md)]
+[!INCLUDE [temp](../apps/_shared/set-up-ci-1.md)]
 
 In the right panel, search for `node`, select **NodeJS with Gulp**, and then click **Apply**.
 
  ![apply node.js gulp template](_img/apply-nodejs-gulp-template.png)
 
-[!INCLUDE [temp](../get-started/_shared/set-up-ci-2.md)]
+[!INCLUDE [temp](../apps/_shared/set-up-ci-2.md)]
 
 Select the **Run gulp task** from the tasks. On the right side, you see the parameters for the task. Under the section **JUnit Test Results**, select the option to **Publish to TFS/Team Services**.
 
-[!INCLUDE [temp](../get-started/_shared/set-up-ci-3.md)]
+[!INCLUDE [temp](../apps/_shared/set-up-ci-3.md)]
 
-[!INCLUDE [temp](../get-started/_shared/set-up-cd-1.md)]
+[!INCLUDE [temp](../apps/_shared/set-up-cd-1.md)]
 
 ![Screenshot showing update to code](./_img/cicd-get-started-nodejs-build-summary.png)
 
-[!INCLUDE [temp](../get-started/_shared/set-up-cd-2.md)]
+[!INCLUDE [temp](../apps/_shared/set-up-cd-2.md)]
 
-[!INCLUDE [temp](../get-started/_shared/set-up-cd-3.md)]
+[!INCLUDE [temp](../apps/_shared/set-up-cd-3.md)]
 
 ## Update to redeploy the code
 

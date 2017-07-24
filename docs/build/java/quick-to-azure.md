@@ -40,17 +40,17 @@ https://github.com/Adventworks/java-sample
 
 [!INCLUDE [temp](../get-started/_shared/import-code-2.md)]
 
-[!INCLUDE [temp](../get-started/_shared/set-up-ci-1.md)]
+[!INCLUDE [temp](../apps/_shared/set-up-ci-1.md)]
 
 In the right panel, search for `node`, select **Maven**, and then click **Apply**.
 
-[!INCLUDE [temp](../get-started/_shared/set-up-ci-2.md)]
+[!INCLUDE [temp](../apps/_shared/set-up-ci-2.md)]
 
-[!INCLUDE [temp](../get-started/_shared/set-up-cd-1.md)]
+[!INCLUDE [temp](../apps/_shared/set-up-cd-1.md)]
 
-[!INCLUDE [temp](../get-started/_shared/set-up-cd-2.md)]
+[!INCLUDE [temp](../apps/_shared/set-up-cd-2.md)]
 
-[!INCLUDE [temp](../get-started/_shared/set-up-cd-3.md)]
+[!INCLUDE [temp](../apps/_shared/set-up-cd-3.md)]
 
 ## Update to redeploy the code
 

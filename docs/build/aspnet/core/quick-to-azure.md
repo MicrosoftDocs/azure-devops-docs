@@ -26,7 +26,7 @@ an ASP.NET Core app
 to an Azure web app. 
 You create the web app using the Azure CLI, then set up CI/CD in Team Services.
 
-![Screenshot showing ASP.NET Core web app](./_img/media/cicd-get-started-dotnetcore-sample.png)
+![Screenshot showing ASP.NET Core web app](../../apps/_img/aspnet-core-to-azure-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
 [!INCLUDE [temp](../../get-started/_shared/vsts-and-azure-setup.md)]
 
@@ -40,29 +40,29 @@ https://github.com/adventworks/dotnetcore-sample
 
 [!INCLUDE [temp](../../get-started/_shared/import-code-2.md)]
 
-[!INCLUDE [temp](../../get-started/_shared/set-up-ci-1.md)]
+[!INCLUDE [temp](../../apps/_shared/set-up-ci-1.md)]
 
 In the right panel, select **ASP.NET Core**, and then click **Apply**.
 
-![Screenshot showing dotnet core template](./_img/media/apply-aspnet-core-build-template.png)
+![Screenshot showing dotnet core template](../../apps/_shared/_img/apply-aspnet-core-build-template.png)
 
-[!INCLUDE [temp](../../get-started/_shared/set-up-ci-2.md)]
+[!INCLUDE [temp](../../apps/_shared/set-up-ci-2.md)]
 
-[!INCLUDE [temp](../../get-started/_shared/set-up-ci-3.md)]
+[!INCLUDE [temp](../../apps/_shared/set-up-ci-3.md)]
 
-[!INCLUDE [temp](../../get-started/_shared/set-up-cd-1.md)]
+[!INCLUDE [temp](../../apps/_shared/set-up-cd-1.md)]
 
-![Screenshot showing release action on build summary](./_img/media/cicd-get-started-dotnetcore-release.png)
+![Screenshot showing release action on build summary](../../apps/_shared/_img/cicd-get-started-dotnetcore-release.png)
 
-[!INCLUDE [temp](../../get-started/_shared/set-up-cd-2.md)]
+[!INCLUDE [temp](../../apps/_shared/set-up-cd-2.md)]
 
-[!INCLUDE [temp](../../get-started/_shared/set-up-cd-3.md)]
+[!INCLUDE [temp](../../apps/_shared/set-up-cd-3.md)]
 
 ## Update to redeploy the code
 
 Navigate to the **Code** hub in the VSTS portal. Navigate to **Views/Home/Index.cshtml** file. Make the following simple change to that file by selecting the edit action.
 
-![Screenshot showing update to code](./_img/media/cicd-get-started-dotnetcore-update-code.png)
+![Screenshot showing update to code](../../apps/_img/aspnet-core-to-azure-windows-vm/cicd-get-started-dotnetcore-update-code.png)
 
 Add the following line of text above the carousel display in the page:
 ```

@@ -31,9 +31,11 @@ You create the virtual machine using Azure Powershell, and then you set up CI/CD
 
 [!INCLUDE [temp](../../get-started/_shared/vsts-and-azure-setup.md)]
 
-[!INCLUDE [temp](../../get-started/_shared/create-azure-windows-vm.md)]
+On your dev machine, you need Azure PowerShell module version 4.0 or newer. See [Install and configure Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-4.2.0). 
 
-[!INCLUDE [temp](../../get-started/_shared/create-deployment-group.md)]
+[!INCLUDE [temp](../../apps/_shared/create-azure-windows-vm.md)]
+
+[!INCLUDE [temp](../../apps/_shared/create-deployment-group.md)]
 
 [!INCLUDE [temp](../../get-started/_shared/import-code-1.md)]
 
@@ -43,25 +45,25 @@ https://github.com/adventworks/aspnet4-sample
 
 [!INCLUDE [temp](../../get-started/_shared/import-code-2.md)]
 
-[!INCLUDE [temp](../../get-started/_shared/set-up-ci-1.md)]
+[!INCLUDE [temp](../../apps/_shared/set-up-ci-1.md)]
 
 In the right panel, select **ASP.NET**, and then click **Apply**.
 
 ![Screenshot showing ASP.NET template](./_img/media/cicd-get-started-apply-template.png)
 
-[!INCLUDE [temp](../../get-started/_shared/set-up-ci-2.md)]
+[!INCLUDE [temp](../../apps/_shared/set-up-ci-2.md)]
 
-[!INCLUDE [temp](../../get-started/_shared/set-up-ci-3.md)]
+[!INCLUDE [temp](../../apps/_shared/set-up-ci-3.md)]
 
-[!INCLUDE [temp](../../get-started/_shared/set-up-cd-1.md)]
+[!INCLUDE [temp](../../apps/_shared/set-up-cd-1.md)]
 
-![Screenshot showing build summary](./_img/media/cicd-get-started-aspnet-build-summary.png)
+![Screenshot showing build summary](_img/media/cicd-get-started-aspnet-build-summary.png)
 
 In the dialog that prompts to **Create release definition**, select **Yes**.
 
 In the **Create release definition** wizard, select the **IIS Website and SQL Database deployment** template, and click **Apply**.
 
-![Screenshot showing IIS template](./_img/media/cicd-get-started-iis-template.png)
+![Screenshot showing IIS template](../../apps/_img/aspnet-core-to-azure-windows-vm/cicd-get-started-iis-template.png)
 
 Click **Tasks**, and then select the **SQL Deployment** phase. Click 'X' to delete this phase. We won't be deploying a database in this quickstart.
 
@@ -71,9 +73,9 @@ Select the **IIS Web App Manage** task; click 'X' to delete this task. We will n
 
 Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Leave all the other default settings.
 
-![Screenshot showing release definition](./_img/media/cicd-get-started-release-definition.png)
+![Screenshot showing release definition](../../apps/_img/aspnet-core-to-azure-windows-vm/cicd-get-started-release-definition.png)
 
-[!INCLUDE [temp](../../get-started/_shared/set-up-cd-3.md)]
+[!INCLUDE [temp](../../apps/_shared/set-up-cd-3.md)]
 
 ## Update to redeploy the code
 
