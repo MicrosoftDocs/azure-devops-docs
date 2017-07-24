@@ -162,7 +162,7 @@ If you haven't used packages before, see the [conceptual introduction](what-is-p
 </thead>
 <tbody>
 <tr>
-<td>[Package CI overview](build-release/overview.md)</td>
+<td>[Package CI overview](build/overview.md)</td>
 <td>Discover the landing page for learning how to integrate your packages into your Team Services and TFS builds.</td>
 </tr>
 <tr>

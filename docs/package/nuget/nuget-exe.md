@@ -17,7 +17,7 @@ NuGet Package Management is available with **Visual Studio Team Services** and [
 
 [!INCLUDE [nuget-3x](../_shared/nuget-3x.md)]
   
-Note: this page covers interactive scenarios. For help using NuGet.exe in builds, see the [builds section](../build-release/overview.md). 
+Note: this page covers interactive scenarios. For help using NuGet.exe in builds, see the [builds section](../build/overview.md). 
 
 ## Add a feed to NuGet 3
 NuGet 3 supports the Credential Provider, which automatically acquires feed credentials when needed.

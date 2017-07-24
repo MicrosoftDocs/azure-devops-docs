@@ -180,7 +180,7 @@ ms.date: 07/05/2017
 
 ## Examples
 
-[Build: Gulp](../build-release/gulp.md)
+[Build: Gulp](../build/gulp.md)
 
 [Build your Node.js app with Gulp](../../apps/node/nodejs-to-azure.md)
 
