@@ -1,0 +1,274 @@
+- name: Work tracking customization
+  href: index.md
+- name: Overview
+  items:
+  - name: About work tracking customization
+    href: customize-work.md
+  - name: About team projects and process models (REFACTOR)
+- name: Quickstarts
+  items:
+  - name: Add a custom field
+    href: add-custom-field.md
+  - name: Add a custom work item types
+    href: add-custom-wit.md
+- name: Tutorials
+  items:
+  - name: Inheritance process model
+    items:
+    - name: Manage processes
+      href: ../process/manage-process.md
+    - name: Customize a process
+      href: ../process/customize-process.md
+    - name: Add a custom field
+      href: ../process/customize-process-field.md
+    - name: Customize a web form
+      href: ../process/customize-process-form.md
+    - name: Customize a workflow
+      href: ../process/customize-process-workflow.md
+    - name: Customize a work item type
+      href: ../process/customize-process-wit.md
+    - name: Add a custom control
+      href: ../process/custom-controls-process.md
+    - name: Customize backlogs and boards
+      href: ../process/customize-process-backlogs-boards.md
+  - name: Customize a Hosted XML process
+    href: ../import-process/customize-process.md
+  - name: Customize an On-premises XML process (NEW)
+- name: Concepts
+  items:
+  - name: Default processes
+    href: /team-services/work/guidance/choose-process
+- name: How-to guides
+  items:
+  - name: Hosted XML
+    items:
+    - name: Import a process
+      href: ../import-process/import-process.md
+    - name: Differences between cloud and on-premises process customizations
+      href: ../import-process/differences.md
+    - name: Resolve validation errors
+      href: ../import-process/resolve-errors.md
+    - name: Customize form layout
+      href: customize-wit-form.md
+  - name: Fields
+    items:
+    - name: Apply a field rule
+      href: ../reference/apply-rule-work-item-field.md
+    - name: Define pick lists
+      href: ../reference/define-pick-lists.md
+    - name: Expand list and exclude groups
+      href: ../reference/expand-list-items-and-exclude-groups-from-lists.md
+    - name: Combine list types
+      href: ../reference/combine-list-types.md
+    - name: Change reporting attributes (TFS)
+      href: ../reference/add-or-modify-work-item-fields-to-support-reporting.md
+  - name: Change the workflow
+    href: ../reference/change-workflow-wit.md
+  - name: Work item form
+    items:
+    - name: Design the work item form
+      href: ../reference/design-work-item-form.md
+    - name: Add the Attachments control
+      href: ../reference/add-the-attachments-control.md
+    - name: Provide help text, hyperlinks, or web content
+      href: ../reference/provide-help-text-hyperlinks-web-content-form.md
+    - name: Add web content to a form
+      href: ../reference/edit-wit-definition-add-web-content-form.md
+    - name: Change the work item form layout
+      href: ../reference/change-work-item-form-layout.md
+    - name: Specify work item form controls
+      href: ../reference/specify-work-item-form-controls.md
+    - name: Define link controls
+      href: ../reference/define-link-controls.md
+  - name: Backlogs and boards
+    items:
+    - name: Add work item types
+      href: add-wits-to-backlogs-and-boards.md
+    - name: Add portfolio backlogs
+      href: add-portfolio-backlogs.md
+    - name: Use categories to group work item types
+      href: ../reference/use-categories-to-group-work-item-types.md
+    - name: Define a custom link type
+      href: ../reference/define-custom-link-type.md
+    - name: Change the maximum attachment size for work items
+      href: ../reference/change-maximum-attachment-size-work-items.md
+    - name: Customize a process template
+      href: ../reference/process-templates/customize-process.md
+    - name: Use team fields instead of area paths
+      href: use-team-fields-instead-area-paths.md
+  - name: Configure features after an upgrade
+    href: /team-services/work/customize/configure-features-after-upgrade
+- name: Reference
+  items:
+  - name: Changes made to process templates
+    href: ../guidance/changes-to-process-templates.md
+  - name: WITD XML reference
+    items:
+    - name: XML element reference
+      href: ../reference/xml-element-reference.md
+    - name: All WITD elements
+      href: ../reference/all-witd-xml-elements-reference.md
+    - name: Localization and globalization XML elements
+      href: ../reference/localization-and-globalization-of-witd-child-elements.md
+    - name: All FIELD (Definition) elements
+      href: ../reference/all-field-xml-elements-reference.md
+      items:
+      - name: FIELD (Definition)
+        href: ../reference/field-definition-element-reference.md
+      - name: COPY, DEFAULT, and SERVERDEFAULT
+        href: ../reference/define-default-copy-value-field.md
+      - name: GLOBALLIST XML element reference
+        href: ../reference/define-global-lists.md
+      - name: Global workflow XML element reference
+        href: ../reference/global-workflow-xml-element-reference.md
+      - name: Apply pattern matching
+        href: ../reference/apply-pattern-matching-to-string-field.md
+      - name: Conditional rules
+        href: ../reference/assign-conditional-based-values-and-rules.md
+    - name: WORKFLOW elements
+      href: ../reference/all-workflow-xml-elements-reference.md
+      items:
+      - name: FIELD (Workflow)
+        href: ../reference/field-workflow-element-reference.md
+      - name: ACTION
+        href: ../reference/automate-field-assignments-state-transition-reason.md
+      - name: TRANSITION
+        href: ../reference/transition-xml-element.md
+    - name: All FORM elements
+      href: ../reference/all-form-xml-elements-reference.md
+      items:
+      - name: New web form layout
+        items:
+        - name: WebLayout and Control elements
+          href: ../reference/weblayout-xml-elements.md
+        - name: LinksControlOptions (web)
+          href: ../reference/linkscontroloptions-xml-elements.md
+      - name: Old (web and client) form layout
+        items:
+        - name: Layout
+          href: ../reference/layout-xml-element-reference.md
+        - name: Control
+          href: ../reference/control-xml-element-reference.md
+        - name: Tab
+          href: ../reference/tab-xml-element-reference.md
+        - name: LinksControlOptions (web/client)
+          href: ../reference/linkscontroloptions-elements.md
+      - name: LabelText and Text
+        href: ../reference/labeltext-and-text-xml-elements-reference.md
+      - name: Link and Param
+        href: ../reference/link-param-xml-elements-reference.md
+      - name: WebpageControlOptions
+        href: ../reference/webpagecontroloptions-xml-elements-reference.md
+    - name: LinkTypes elements reference 
+      href: ../reference/link-type-element-reference.md
+    - name: CATEGORIES XML reference
+      href: ../reference/categories-xml-element-reference.md
+    - name: ProcessConfiguration XML reference
+      href: ../reference/process-configuration-xml-element.md
+  - name: Process template
+    items:
+    - name: Upload/download process templates
+      href: ../guidance/manage-process-templates.md
+    - name: XML element index
+      href: ../reference/process-templates/process-template-plug-ins-xml-elements-index.md
+    - name: Process template files
+      href: ../reference/process-templates/overview-process-template-files.md
+    - name: Define root tasks
+      href: ../reference/process-templates/define-root-tasks-process-template-plug-in.md
+    - name: Process template XML elements
+      href: ../reference/process-templates/process-template-xml-elements-reference.md
+    - name: Define tasks and task group dependencies
+      href: ../reference/process-templates/define-dependencies-plug-ins-groups-tasks.md
+    - name: Define tasks to process
+      href: ../reference/process-templates/define-tasks-to-process-a-plug-in.md
+    - name: Define the Classification plug-in
+      href: ../reference/process-templates/define-classification-plug-in.md
+    - name: Define the Portal plug-in
+      href: ../reference/process-templates/define-project-portal-plug-in.md
+    - name: Define the Reporting plug-in
+      href: ../reference/process-templates/add-reports-to-the-process-template.md
+    - name: Configure initial groups, teams, members, and permissions
+      href: ../reference/process-templates/configure-initial-groups-teams-members-permissions.md
+      items:
+      - name: Define the Groups and Permissions plug-in
+        href: ../reference/process-templates/define-groups-teams-permissions-plug-in.md
+    - name: Define the work item tracking plug-in
+      href: ../reference/process-templates/define-objects-track-work-items-plug-in.md
+      items:
+      - name: Add work item types
+        href: ../reference/process-templates/add-wit-definitions-process-template.md
+      - name: Add link types
+        href: ../reference/process-templates/add-link-type-definitions-to-a-process-template.md
+      - name: Add categories
+        href: ../reference/process-templates/add-type-wit-category-definitions-process-template.md
+      - name: Add work item queries
+        href: ../reference/process-templates/add-work-item-queries-process-template.md
+      - name: Define a work item query
+        href: ../reference/process-templates/define-work-item-query-process-template.md
+      - name: Add a work item instance
+        href: ../reference/process-templates/add-work-item-instance-process-template.md
+    - name: Control access to functional areas
+      href: ../reference/process-templates/control-access-to-functional-areas.md
+      items:
+      - name: Define the TFVC plug-in
+        href: ../reference/process-templates/define-initial-configuration-version-control.md
+      - name: Define the Test Management plug-in
+        href: ../reference/process-templates/define-initial-configuration-test-manager.md
+      - name: Define the Build plug-in
+        href: ../reference/process-templates/define-initial-configuration-build.md
+      - name: Define the Lab Management plug-in
+        href: ../reference/process-templates/define-initial-configuration-lab-management.md
+  - name: witAdmin command line reference
+    href: ../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md
+    items:
+    - name: Import and export categories
+      href: ../reference/witadmin/witadmin-import-export-categories.md
+    - name: Import and export global workflow
+      href: ../reference/witadmin/witadmin-import-export-global-workflow.md
+    - name: Import and export process configuration
+      href: ../reference/witadmin/witadmin-import-export-process-configuration.md
+    - name: Import, export, and manage work item types
+      href: ../reference/witadmin/witadmin-import-export-manage-wits.md
+    - name: Manage global lists for work item types
+      href: ../reference/witadmin/manage-global-lists-for-work-item-types.md
+    - name: Manage link types
+      href: ../reference/witadmin/manage-link-types.md
+    - name: Manage work item fields
+      href: ../reference/witadmin/manage-work-item-fields.md
+    - name: Rebuild the client cache
+      href: ../reference/witadmin/rebuild-client-cache.md
+    - name: Remove work items permanently
+      href: ../reference/witadmin/remove-work-items-permanently.md
+  - name: On-premises TFS Only
+    items:
+    - name: Support rollup (TFS)
+      href: ../reference/support-rollup-of-work-and-other-fields.md
+    - name: Field data type and reportable attributes
+      href: ../reference/define-modify-work-item-fields.md
+    - name: Customize and manage the test experience
+      href: ../reference/witadmin/tcm-customize-manage-test-experience.md
+    - name: Project-to-TFS field mapping
+      items:
+      - name: Change how fields map
+        href: ../reference/add-or-change-how-project-fields-map-to-tfs-fields.md
+      - name: Customize the Project field mapping
+        href: ../reference/customize-project-field-mapping-file.md
+      - name: [Map Project fields](../reference/map-microsoft-project-fields-to-tf-fields.md) - duplicate info, with info on plug-in
+      - name: Project field mappings
+        href: ../reference/field-mappings-in-microsoft-project.md
+      - name: Upload/download the Project mapping file
+        href: ../reference/upload-or-download-the-microsoft-project-mapping-file.md
+  - name: API SDK reference
+    items:
+    - name: IProcessTemplates.AddUpdateTemplate
+      href: ../reference/api-ref/iprocess-templates-add-update-template.md
+    - name: WorkItem.Open method
+      href: ../reference/api-ref/open.md
+    - name: WorkItem.PartialOpen method
+      href: ../reference/api-ref/partialopen.md
+- name: Resources
+  items:
+  - name: Marketplace extensions
+    href: /team-services/marketplace/get-vsts-extensions
+  - name: Extensibility and REST APIs
+    href: /team-services/extend/overview

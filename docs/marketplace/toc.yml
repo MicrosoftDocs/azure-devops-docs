@@ -1,0 +1,98 @@
+- name: Overview
+  items:
+  - name: Marketplace overview
+    href: overview.md
+  - name: Marketplace billing overview
+    href: marketplace-billing-qa.md
+  - name: Get and use Marketplace extensions
+    href: extend-overview.md
+  - name: Integrate with other services
+    href: integrate/service-hooks/get-started.md
+- name: Quick start
+  items:
+  - name: How to set up billing
+    href: ../setup-admin/team-services/set-up-billing-for-your-account-vs.md
+  - name: How to buy Team Services users
+    href: ../setup-admin/team-services/buy-basic-access-add-team-services-users.md
+  - name: How to buy Team Services extensions
+    href: get-vsts-extensions.md
+  - name: How to buy build pipelines
+    href: ../setup-admin/team-services/buy-more-build-vs.md
+  - name: How to buy load testing services
+    href: ../setup-admin/team-services/buy-load-testing-vs.md
+- name: Tutorials
+  items:
+  - name: Get extensions for Team Services
+    href: get-vsts-extensions.md
+  - name: Get extensions for TFS
+    href: get-tfs-extensions.md
+  - name: How to buy TFS CALs
+    href: https://www.visualstudio.com/team-services/tfs-pricing/
+  - name: How to buy TFS extensions
+    href: get-tfs-extensions.md
+  - name: How to buy HockeyApp
+    href: get-hockeyapp.md
+  - name: How to buy Visual Studio subscriptions
+    href: vs-subscriptions/buy-vs-subscriptions.md
+  - name: How to buy Xamarin University
+    href: xamarin-univ.md
+  - name: Services
+    items:
+    - name: AppVeyor
+      href: integrate/service-hooks/services/appveyor.md
+    - name: Azure Service Bus
+      href: integrate/service-hooks/services/azure-service-bus.md
+    - name: Azure Storage
+      href: integrate/service-hooks//services/azure-storage.md
+    - name: Bamboo
+      href: integrate/service-hooks/services/bamboo.md
+    - name: Campfire
+      href: integrate/service-hooks/services/campfire.md
+    - name: Flowdock
+      href: integrate/service-hooks/services/flowdock.md
+    - name: HipChat
+      href: integrate/service-hooks/services/hipchat.md
+    - name: Hubot
+      href: integrate/service-hooks/services/hubot.md
+    - name: Jenkins
+      href: integrate/service-hooks/services/jenkins.md
+    - name: MyGet
+      href: integrate/service-hooks/services/myget.md
+    - name: Slack
+      href: integrate/service-hooks/services/slack.md
+    - name: Trello
+      href: integrate/service-hooks/services/trello.md
+    - name: UserVoice
+      href: integrate/service-hooks/services/uservoice.md
+    - name: WebHooks
+      href: integrate/service-hooks/services/webhooks.md
+    - name: Zapier
+      href: integrate/service-hooks/services/zapier.md
+    - name: Zendesk
+      href: integrate/service-hooks/services/zendesk.md
+- name: How to guides
+  items:
+  - name: Authorize a service
+    href: integrate/service-hooks/authorize.md
+  - name: Rate and review extensions
+    href: rating-and-review.md
+- name: Troubleshooting
+  items:
+  - name: Troubleshoot service hooks issues
+    href: integrate/service-hooks/troubleshoot.md
+- name: Resources
+  items:
+  - name: Extensions for Visual Studio
+    href: ../integrate/ide/extensions/overview.md
+  - name: Extensions for VS Code
+    href: https://code.visualstudio.com/docs/editor/extension-gallery
+  - name: Recommended Team Services & TFS extensions
+    items:
+    - name: Code search extension
+      href: ../search/overview.md
+    - name: Package Management extension
+      href: ../package/overview.md
+    - name: Work item search extension
+      href: ../search/workitem/get-started.md
+  - name: How to build Marketplace extensions
+    href: ../extend/overview.md#extensions

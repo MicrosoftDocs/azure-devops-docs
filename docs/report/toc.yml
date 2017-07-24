@@ -1,0 +1,112 @@
+- name: "Dashboards & Reports Documentation"
+  href: index.md
+- name: Overview
+  items:
+  - name: "Charts, dashboards, and widgets"
+    href: overview.md
+  - name: Power BI integration overview
+    href: powerbi/overview.md
+- name: Quickstarts
+  items:
+  - name: Add and manage dashboards
+    href: dashboards.md
+  - name: Add charts and widgets to a dashboard
+    href: add-widget-to-dashboard.md
+  - name: Configure work item query-based charts
+    href: charts.md
+  - name: "Configure test status, progress, and result charts"
+    href: ../test/manual-exploratory-testing/getting-started/track-test-status.md
+- name: Tutorials
+  items:
+  - name: Work with cumulative flow
+    href: guidance/cumulative-flow.md
+  - name: Work with lead/cycle time
+    href: guidance/cycle-time-and-lead-time.md
+  - name: Work with sprint burndown
+    href: ../work/scrum/sprint-burndown.md
+  - name: Work with Velocity
+    href: guidance/team-velocity.md
+  - name: Power BI - Content Pack (Team Services)
+    items:
+    - name: Assign permissions (Security)
+      href: analytics/analytics-security.md
+    - name: Connect
+      href: powerbi/connect-vso-pbi-vs.md
+    - name: Create dashboards
+      href: powerbi/report-on-vso-with-power-bi-vs.md
+    - name: Create trend charts
+      href: powerbi/create-trend-charts.md
+    - name: Create rollup charts
+      href: powerbi/create-rollup-charts.md
+  - name: Power BI - Data Connector (Team Services)
+    items:
+    - name: Connect
+      href: powerbi/data-connector-connect.md
+    - name: Functions
+      href: powerbi/data-connector-functions.md
+- name: Samples
+  items:
+  - name: Power BI example reports
+    href: powerbi/data-connector-examples.md
+- name: Reference
+  items:
+  - name: Widget catalog
+    href: widget-catalog.md
+  - name: Power BI available data
+    href: powerbi/vso-pbi-whats-available-vs.md
+- name: Resources
+  items:
+  - name: Marketplace widgets
+    href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance
+- name: Troubleshooting
+  items:
+  - name: TBD
+- name: Power BI
+  href: analytics/access-analytics-power-bi.md
+  items:
+  - name: Power BI desktop and OData aggregations
+    href: analytics/using-odata-aggregations-with-power-bi-desktop.md
+  - name: Power BI templates (TBD)
+  - name: Add custom measures (TBD)
+  - name: Merge data from multiple sources (TBD)
+  - name: "Share reports, publish to PowerBI.com"
+    href: analytics/publishing-power-bi-desktop-to-power-bi.md
+- name: Retrieve data through OData (Team Services)
+  href: analytics/overview-analytics-service.md
+  items:
+  - name: An OData primer (TBD)
+    items:
+    - name: Data model
+      href: analytics/data-model-analytics-service.md
+  - name: Query access
+    items:
+    - name: WIT analytics
+      href: analytics/wit-analytics.md
+    - name: Analytic recipes
+      href: analytics/analytics-recipes.md
+    - name: Aggregated data
+      href: analytics/aggregated-data-analytics.md
+    - name: Aggregated data
+      href: analytics/querying-for-trend-data.md
+    - name: Work item links
+      href: analytics/work-item-links.md
+  - name: Odata examples (TBD)
+    items:
+    - name: TBD 1 (TBD)
+    - name: TBD 2 (TBD)
+  - name: Client access
+    items:
+    - name: Client authentication options
+      href: analytics/client-authentication-options.md
+    - name: Excel
+      href: analytics/access-analytics-excel.md
+    - name: Create custom calculation
+      href: analytics/custom-calculations.md
+  - name: Extensions
+    items:
+    - name: Hub extension
+      href: analytics/building-extension-against-analytics-service.md
+    - name: Dashboard widget
+      href: analytics/widget-extensions-against-analytics-service.md
+    - name: Add configuration
+      href: analytics/widget-extension-against-analytics-service-configuration.md

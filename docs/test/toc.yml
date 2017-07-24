@@ -1,0 +1,214 @@
+- name: Testing scenarios
+  href: index.md
+- name: Manual and exploratory testing
+  items:
+  - name: Overview
+    items:
+    - name: Manual and exploratory testing
+      href: manual-exploratory-testing/index.md
+  - name: Quickstarts
+    items:
+    - name: Team Services and TFS
+      items:
+      - name: Test from the Kanban board
+        href: ../work/kanban/add-run-update-tests.md
+      - name: Create a test plan
+        href: manual-exploratory-testing/getting-started/create-a-test-plan.md
+      - name: Create test cases
+        href: manual-exploratory-testing/getting-started/create-test-cases.md
+      - name: Run manual tests
+        href: manual-exploratory-testing/getting-started/run-manual-tests.md
+    - name: Microsoft Test Manager
+      items:
+      - name: Guidance for MTM usage
+        href: manual-exploratory-testing/mtm/guidance-mtm-usage.md
+      - name: Connect to a team project
+        href: manual-exploratory-testing/mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md
+      - name: Plan tests with MTM
+        href: manual-exploratory-testing/mtm/plan-manual-tests-with-microsoft-test-manager.md
+      - name: Run tests with MTM
+        href: manual-exploratory-testing/mtm/run-manual-tests-with-microsoft-test-manager.md
+    - name: "Test & Feedback extension"
+      items:
+      - name: Install the extension
+        href: manual-exploratory-testing/getting-started/perform-exploratory-tests.md
+      - name: Test in Connected mode
+        href: manual-exploratory-testing/connected-mode-exploratory-testing.md
+      - name: Test in Standalone mode
+        href: manual-exploratory-testing/standalone-mode-exploratory-testing.md
+  - name: How-to Guides
+    items:
+    - name: Team Services and TFS
+      items:
+      - name: Track test status
+        href: manual-exploratory-testing/getting-started/track-test-status.md
+      - name: Delete test artifacts
+        href: https://www.visualstudio.com/docs/work/backlogs/remove-delete-work-items#delete-test
+      - name: Perform user acceptance testing
+        href: manual-exploratory-testing/getting-started/user-acceptance-testing.md
+      - name: Test different configurations
+        href: manual-exploratory-testing/test-different-configurations.md
+      - name: Share steps between test cases
+        href: manual-exploratory-testing/mtm/share-steps-between-test-cases.md
+      - name: Repeat a test with different data
+        href: manual-exploratory-testing/repeat-test-with-different-data.md
+      - name: Collect diagnostic data
+        href: manual-exploratory-testing/collect-diagnostic-data.md
+      - name: Manage test results
+        href: manual-exploratory-testing/getting-started/how-long-to-keep-test-results.md
+    - name: Microsoft Test Manager
+      items:
+      - name: Record and play back tests
+        href: manual-exploratory-testing/getting-started/record-play-back-manual-tests.md
+      - name: Explore your app
+        href: manual-exploratory-testing/mtm/exploratory-testing-using-microsoft-test-manager.md
+      - name: Copy test suites and cases
+        href: manual-exploratory-testing/mtm/copying-and-cloning-test-suites-and-test-cases.md
+      - name: Test different configurations
+        href: manual-exploratory-testing/mtm/test-configurations-specifying-test-platforms.md
+      - name: Test Windows Store apps
+        href: manual-exploratory-testing/mtm/testing-windows-store-apps.md
+    - name: "Test & Feedback extension"
+      items:
+      - name: Explore work items
+        href: manual-exploratory-testing/explore-workitems-exploratory-testing.md
+      - name: Add to existing bugs
+        href: manual-exploratory-testing/add-to-bugs-exploratory-testing.md
+      - name: Get insights from tests
+        href: manual-exploratory-testing/insights-exploratory-testing.md
+      - name: Get stakeholder feedback
+        items:
+        - name: Request feedback
+          href: manual-exploratory-testing/stakeholder/request-stakeholder-feedback.md
+        - name: Provide feedback
+          href: manual-exploratory-testing/stakeholder/provide-stakeholder-feedback.md
+        - name: Get voluntary feedback
+          href: manual-exploratory-testing/stakeholder/voluntary-stakeholder-feedback.md
+        - name: Track requests
+          href: manual-exploratory-testing/stakeholder/track-stakeholder-feedback.md
+  - name: Reference
+    items:
+    - name: Team Services and TFS
+      items:
+      - name: REST API for test management
+        href: https://www.visualstudio.com/docs/integrate/api/test/overview
+    - name: "Test & Feedback extension"
+      items:
+      - name: Unable to connect
+        href: https://www.visualstudio.com/en-us/docs/work/reference/error/tf31002-unable-connect-tfs
+  - name: Resources
+    items:
+    - name: Team Services and TFS
+      items:
+      - name: Blog posts for testing
+        href: https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/
+      - name: Blog posts for test management
+        href: https://blogs.msdn.microsoft.com/visualstudioalm/tag/test-management/
+    - name: Microsoft Test Manager
+      items:
+      - name: Using Microsoft Test Manager
+        href: https://msdn.microsoft.com/en-us/library/jj635157.aspx
+    - name: "Test & Feedback extension"
+      items:
+      - name: Posts on the ALM blog
+        href: https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
+- name: Load testing
+  items:
+  - name: Overview
+    items:
+    - name: Load testing
+      href: performance-testing/index.md
+  - name: Quickstarts
+    items:
+    - name: Load test with Visual Studio
+      href: performance-testing/getting-started/getting-started-with-performance-testing.md
+    - name: Load test with Team Services
+      href: performance-testing/getting-started/get-started-simple-cloud-load-test.md
+    - name: Load test with Azure portal
+      href: performance-testing/app-service-web-app-performance-test.md
+    - name: View and compare results
+      href: performance-testing/getting-started/performance-reports.md
+  - name: Tutorials
+    items:
+    - name: 1 - Run load tests before release
+      href: performance-testing/run-performance-tests-app-before-release.md
+  - name: How-to Guides
+    items:
+    - name: Add app performance data
+      href: performance-testing/getting-started/get-performance-data-for-load-tests.md
+    - name: Run Apache JMeter load tests
+      href: performance-testing/getting-started/get-started-jmeter-test.md
+    - name: Record and replay tests
+      href: performance-testing/getting-started/record-and-replay-cloud-load-tests.md
+  - name: Reference
+    items:
+    - name: "Q & A"
+      href: performance-testing/reference-qa.md
+    - name: Visual Studio connectivity
+      href: performance-testing/reference-qa.md#troubleshooting
+    - name: Connecting to Team Services
+      href: performance-testing/reference-qa.md#qaconnectts
+    - name: Edit load tests
+      href: https://msdn.microsoft.com/library/ff406975%28v=vs.140%29.aspx
+    - name: Distribute load tests
+      href: https://msdn.microsoft.com/library/dd728093%28v=vs.140%29.aspx
+    - name: Analyze load test results
+      href: https://msdn.microsoft.com/library/ee923686%28v=vs.140%29.aspx
+    - name: Fix undetectable parameters
+      href: https://msdn.microsoft.com/library/ff460245%28v=vs.140%29.aspx
+    - name: "Create custom code & plug-ins"
+      href: https://msdn.microsoft.com/library/ee923683%28v=vs.140%29.aspx
+  - name: Resources
+    items:
+    - name: Posts on the ALM blog
+      href: https://social.msdn.microsoft.com/Search/en-US?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
+- name: Continuous testing
+  items:
+  - name: Overview
+    items:
+    - name: Continuous testing
+      href: continuous-testing/index.md
+  - name: Quickstarts
+    items:
+    - name: Run unit tests
+      href: continuous-testing/getting-started/getting-started-with-continuous-testing.md
+    - name: Run Selenium tests
+      href: continuous-testing/getting-started/continuous-test-selenium.md
+    - name: Review results after a build
+      href: continuous-testing/getting-started/review-continuous-test-results-after-build.md
+  - name: Tutorials
+    items:
+    - name: 1 - Continuous testing
+      href: continuous-testing/example-continuous-testing.md
+  - name: How-to Guides
+    items:
+    - name: Associate tests with test cases
+      href: continuous-testing/associate-automated-test-with-test-case.md
+    - name: Run automated tests in the Test hub
+      href: continuous-testing/run-automated-tests-from-test-hub.md
+    - name: Associate results with requirements
+      href: continuous-testing/associate-automated-results-with-requirements.md
+  - name: Concepts
+    items:
+    - name: Testing Java apps
+      href: continuous-testing/getting-started/continuous-test-java.md
+    - name: Using unified agents and phases
+      href: continuous-testing/test-with-unified-agent-and-phases.md
+  - name: Reference
+    items:
+    - name: Set up environments
+      href: continuous-testing/set-up-continuous-test-environments-builds.md
+    - name: Set up for builds
+      href: continuous-testing/set-up-continuous-testing-builds.md
+    - name: "Q & A"
+      href: continuous-testing/reference-qa.md
+  - name: Resources
+    items:
+    - name: Configuring CI and Testing
+      href: http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/17/video-configuring-continuous-integration-and-continuous-testing-with-visual-studio-2015.aspx
+    - name: Testing in CI and CD Workflows
+      href: http://blogs.msdn.com/b/visualstudioalm/archive/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows.aspx
+    - name: Integrating Testing Efforts into the DevOps Process
+      href: https://channel9.msdn.com/Series/ConnectOn-Demand/234
+    - name: More posts on the ALM blog
+      href: https://social.msdn.microsoft.com/Search/en-US?query=automated%20continuous%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5

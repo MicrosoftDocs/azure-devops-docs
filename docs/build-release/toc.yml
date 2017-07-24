@@ -1,0 +1,302 @@
+- name: Build and Release
+  href: index.md
+- name: Quickstarts
+  items:
+  - name: CI/CD to Azure web app
+    items:
+    - name: ASP.NET Core
+      href: apps/aspnet-core-to-webapp.md
+  - name: CI/CD to Windows VMs
+    items:
+    - name: ASP.NET Core
+- name: Tutorials
+  items:
+  - name: Create a build definition
+  - name: Create a release definition
+- name: Concepts
+  items:
+  - name: Agents
+    items:
+    - name: Build and release agents
+      href: concepts/agents/agents.md
+    - name: Agent pools and queues
+      href: concepts/agents/pools-queues.md
+    - name: Hosted agents
+      href: concepts/agents/hosted.md
+    - name: Deployment groups
+      href: concepts/definitions/release/deployment-groups/index.md
+  - name: Definitions
+    items:
+    - name: Build
+      items:
+      - name: Artifacts
+        href: concepts/definitions/build/artifacts.md
+      - name: History
+        href: define/history.md
+      - name: Options
+        href: define/options.md
+      - name: Repository
+        href: define/repository.md
+      - name: Triggers
+        href: define/triggers.md
+      - name: Variables
+        href: define/variables.md
+    - name: Release
+      items:
+      - name: Release definitions
+        href: concepts/definitions/release/index.md
+      - name: Environments
+        href: concepts/definitions/release/environments.md
+      - name: Artifacts
+        href: concepts/definitions/release/artifacts.md
+      - name: Triggers
+        href: concepts/definitions/release/triggers.md
+      - name: Variables
+        href: concepts/definitions/release/variables.md
+      - name: Templates
+        href: concepts/definitions/release/env-templates.md
+  - name: Process
+    items:
+    - name: Tasks
+      href: concepts/process/tasks.md
+    - name: Phases
+      href: concepts/process/phases.md
+    - name: Conditions
+      href: concepts/process/conditions.md
+  - name: Licensing
+    items:
+    - name: Pipelines in TFS
+      href: concepts/licensing/concurrent-pipelines-tfs.md
+    - name: Pipelines in Team Services
+      href: concepts/licensing/concurrent-pipelines-ts.md
+  - name: Library
+    items:
+    - name: Variable groups
+      href: concepts/library/variable-groups.md
+    - name: Task groups
+      href: concepts/library/task-groups.md
+    - name: Service endpoints
+      href: concepts/library/service-endpoints.md
+    - name: Secure files
+      href: concepts/library/secure-files.md
+  - name: Policies
+    items:
+    - name: Retention policies
+      href: concepts/policies/retention.md
+    - name: Permissions
+      href: concepts/policies/permissions.md
+- name: How to
+  items:
+  - name: Deploy an agent
+    items:
+    - name: Windows
+      href: actions/agents/v2-windows.md
+    - name: Windows (TFS 2015)
+      href: actions/agents/v1-windows.md
+    - name: OSX
+      href: actions/agents/v2-osx.md
+    - name: Linux
+      href: actions/agents/v2-linux.md
+    - name: Configure TFS authentication
+      href: actions/agents/configure-tfs-authentication.md
+  - name: Configure/manage CI
+    items:
+    - name: Run a PowerShell script
+      href: scripts/index.md
+    - name: Run Git commands
+      href: scripts/git-commands.md
+    - name: Troubleshooting build
+      href: troubleshooting.md
+  - name: Configure/manage CD
+    items:
+    - name: Debug deployment issues
+      href: actions/debug-deployment-issues.md
+    - name: Run SCVMM scripts for managing VMs
+      href: apps/cd/scvmm/manage-vms-using-scvmm.md
+    - name: Troubleshoot Azure connections
+      href: actions/azure-rm-endpoint.md
+  - name: Automatically generate CI/CD
+    items:
+    - name: ASP.NET from Visual Studio
+      href: get-started/aspnet-4-ci-cd-vs-automatic.md
+    - name: ASP.NET Core with Docker from Visual Studio
+      href: apps/aspnet/aspnetcore-docker-to-azure.md
+  - name: Use Package Management
+    items:
+    - name: Set up Team Build with NuGet
+      items:
+      - name: Restore private packages
+        href: package/nuget/restore-private-package-build.md
+      - name: Pack and push packages
+        href: package/nuget/pack-push-packages-build.md
+    - name: Set up Team Build with npm
+      items:
+      - name: Install private packages
+        href: package/npm/install-private-packages-build.md
+      - name: Publish NuGet packages
+        href: package/npm/publish-packages-build.md
+    - name: Set up Team Build with Maven
+      items:
+      - name: Install private packages
+        href: package/maven/install-private-packages-build.md
+      - name: Publish packages
+        href: package/maven/publish-packages-build.md
+  - name: Migrate
+    items:
+    - name: Migrate from XAML builds
+      href: actions/migrate-from-xaml-builds.md
+- name: Reference
+  href: define/build.md
+  items:
+  - name: Build tasks
+    items:
+    - name: Android build
+      href: steps/build/android-build.md
+    - name: Android signing
+      href: steps/build/android-signing.md
+    - name: Ant
+      href: steps/build/ant.md
+    - name: CMake
+      href: steps/build/cmake.md
+    - name: Gradle
+      href: steps/build/gradle.md
+    - name: Grunt
+      href: steps/build/grunt.md
+    - name: Gulp
+      href: steps/build/gulp.md
+    - name: Index Sources & Publish Symbols
+      href: steps/build/index-sources-publish-symbols.md
+    - name: Jenkins Queue Job
+      href: steps/build/jenkins-queue-job.md
+    - name: Maven
+      href: steps/build/maven.md
+    - name: MSBuild
+      href: steps/build/msbuild.md
+    - name: Visual Studio Build
+      href: steps/build/visual-studio-build.md
+    - name: Xamarin.Android
+      href: steps/build/xamarin-android.md
+    - name: Xamarin.iOS
+      href: steps/build/xamarin-ios.md
+    - name: Xcode Build
+      href: steps/build/xcode-build.md
+    - name: Xcode Package iOS
+      href: steps/build/xcode-package-ios.md
+  - name: Utility tasks
+    items:
+    - name: Archive files
+      href: steps/utility/archive-files.md
+    - name: Batch script
+      href: steps/utility/batch-script.md
+    - name: Command line
+      href: steps/utility/command-line.md
+    - name: Copy and Publish Build Artifacts
+      href: steps/utility/copy-and-publish-build-artifacts.md
+    - name: Copy Files
+      href: steps/utility/copy-files.md
+    - name: cURL Upload Files
+      href: steps/utility/curl-upload-files.md
+    - name: Delete Files
+      href: steps/utility/delete-files.md
+    - name: Extract Files
+      href: steps/utility/extract-files.md
+    - name: FTP Upload
+      href: steps/utility/ftp-upload.md
+    - name: Install Apple Certificate
+      href: steps/utility/install-apple-certificate.md
+    - name: Install Apple Provisioning Profile
+      href: steps/utility/install-apple-provisioning-profile.md
+    - name: PowerShell
+      href: steps/utility/powershell.md
+    - name: Publish Build Artifacts
+      href: steps/utility/publish-build-artifacts.md
+    - name: Service Fabric PowerShell
+      href: steps/utility/service-fabric-powershell.md
+    - name: Shell script
+      href: steps/utility/shell-script.md
+    - name: Update Service Fabric App Versions
+      href: steps/utility/service-fabric-versioning.md
+    - name: Xamarin license
+      href: steps/utility/xamarin-license.md
+  - name: Test tasks
+    items:
+    - name: Cloud-based Apache JMeter Load Test
+      href: steps/test/cloud-based-apache-jmeter-load-test.md
+    - name: Cloud-based Load Test
+      href: steps/test/cloud-based-load-test.md
+    - name: Cloud-based Web Performance Test
+      href: steps/test/cloud-based-web-performance-test.md
+    - name: Mobile Center Test
+      href: steps/test/mobile-center-test.md
+    - name: Publish Code Coverage Results
+      href: steps/test/publish-code-coverage-results.md
+    - name: Publish Test Results
+      href: steps/test/publish-test-results.md
+    - name: Run Functional Tests
+      href: steps/test/run-functional-tests.md
+    - name: Visual Studio Test
+      href: steps/test/visual-studio-test.md
+    - name: Visual Studio Test Agent Deployment
+      href: steps/test/visual-studio-test-agent-deployment.md
+    - name: Xamarin Test Cloud
+      href: steps/test/xamarin-test-cloud.md
+  - name: Package tasks
+    items:
+    - name: CocoaPods
+      href: steps/package/cocoapods.md
+    - name: npm
+      href: steps/package/npm-install.md
+    - name: NuGet Installer
+      href: steps/package/nuget-installer.md
+    - name: NuGet Packager
+      href: steps/package/nuget-packager.md
+    - name: NuGet Publisher
+      href: steps/package/nuget-publisher.md
+    - name: Xamarin Component Restore
+      href: steps/package/xamarin-component-restore.md
+  - name: Deploy tasks
+    items:
+    - name: Azure App Service Deploy
+      href: steps/deploy/azure-app-service-deploy.md
+    - name: Azure App Service Manage
+      href: steps/deploy/azure-app-service-manage.md
+    - name: Azure CLI
+      href: steps/deploy/azure-cli.md
+    - name: Azure Cloud Service Deployment
+      href: steps/deploy/azure-cloud-service-deployment.md
+    - name: Azure File Copy
+      href: steps/deploy/azure-file-copy.md
+    - name: Azure Key Vault
+      href: steps/deploy/azure-key-vault.md
+    - name: Azure PowerShell
+      href: steps/deploy/azure-powershell.md
+    - name: Azure Resource Group Deployment
+      href: steps/deploy/azure-resource-group-deployment.md
+    - name: Azure SQL Database Deployment
+      href: steps/deploy/azure-sql-database-deployment.md
+    - name: Copy Files Over SSH
+      href: steps/deploy/copy-files-over-ssh.md
+    - name: IIS Web App Deploy
+      href: steps/deploy/iis-deploy.md
+    - name: IIS Web App Manage
+      href: steps/deploy/iis-manage.md
+    - name: Mobile Center Upload
+      href: steps/deploy/mobile-center-upload.md
+    - name: PowerShell on Target Machines
+      href: steps/deploy/powershell-on-target-machines.md
+    - name: Service Fabric App Deployment
+      href: steps/deploy/service-fabric-deploy.md
+    - name: Service Fabric Compose Deploy
+      href: steps/deploy/service-fabric-compose-deploy.md
+    - name: SSH
+      href: steps/deploy/ssh.md
+    - name: Windows Machine File Copy
+      href: steps/deploy/windows-machine-file-copy.md
+  - name: Tool tasks
+    items:
+    - name: Node Tool Installer
+      href: steps/tool/node-js.md
+  - name: File matching patterns
+    href: steps/file-matching-patterns.md
+  - name: File and variable transform
+    href: steps/transforms-variable-substitution.md
