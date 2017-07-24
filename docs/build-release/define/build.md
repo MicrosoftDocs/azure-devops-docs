@@ -33,25 +33,25 @@ Add steps to specify what you want to build, the tests to run, and all the other
 
 | Task | Versions |
 | ---- | -------- |
-| ![icon](../steps/build-release/_img/android-build.png)<br />Android Build - deprecated. Use [Gradle](../steps/build-release/gradle.md) | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build-release/_img/android-signing.png)<br />[Android Signing](../steps/build-release/android-signing.md). Sign and align Android APK files | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build-release/_img/ant.png)<br />[Ant](../steps/build-release/ant.md). Build with Apache Ant | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build-release/_img/cmake.png)<br />[CMake](../steps/build-release/cmake.md). Build with the CMake cross-platform build system | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build-release/_img/gradle.png)<br />[Gradle](../steps/build-release/gradle.md). Build using a Gradle wrapper script | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build-release/_img/grunt.png)<br />[Grunt](../steps/build-release/grunt.md). The JavaScript Task Runner | Team Services, TFS 2015 Update 3 and newer |
-| ![icon](../steps/build-release/_img/gulp.png)<br />[Gulp](../steps/build-release/gulp.md). Node.js streaming task based build system | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build-release/_img/index-sources-publish-symbols.png)<br />[Index Sources & Publish Symbols](../steps/build-release/index-sources-publish-symbols.md). Index your source code and publish symbols to a file share | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build-release/_img/jenkins-queue-job.png)<br />[Jenkins Queue Job](../steps/build-release/jenkins-queue-job.md). Queue a job on a Jenkins server | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build-release/_img/maven.png)<br />[Maven](../steps/build-release/maven.md). Build with Apache Maven | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build-release/_img/msbuild.png)<br />[MSBuild](../steps/build-release/msbuild.md). Build with MSBuild | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/android-build.png)<br />Android Build - deprecated. Use [Gradle](../steps/build/gradle.md) | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/android-signing.png)<br />[Android Signing](../steps/build/android-signing.md). Sign and align Android APK files | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/ant.png)<br />[Ant](../steps/build/ant.md). Build with Apache Ant | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/cmake.png)<br />[CMake](../steps/build/cmake.md). Build with the CMake cross-platform build system | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/gradle.png)<br />[Gradle](../steps/build/gradle.md). Build using a Gradle wrapper script | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/grunt.png)<br />[Grunt](../steps/build/grunt.md). The JavaScript Task Runner | Team Services, TFS 2015 Update 3 and newer |
+| ![icon](../steps/build/_img/gulp.png)<br />[Gulp](../steps/build/gulp.md). Node.js streaming task based build system | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/index-sources-publish-symbols.png)<br />[Index Sources & Publish Symbols](../steps/build/index-sources-publish-symbols.md). Index your source code and publish symbols to a file share | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/jenkins-queue-job.png)<br />[Jenkins Queue Job](../steps/build/jenkins-queue-job.md). Queue a job on a Jenkins server | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/maven.png)<br />[Maven](../steps/build/maven.md). Build with Apache Maven | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/msbuild.png)<br />[MSBuild](../steps/build/msbuild.md). Build with MSBuild | Team Services, TFS 2015 RTM and newer |
 | ![icon](../steps/utility/_img/publish-build-artifacts.png)<br />[Publish Build Artifacts](../steps/utility/copy-and-publish-build-artifacts.md). Publish Build artifacts to the server or a file share | TFS 2015 RTM. Deprecated on Team Services and newer versions of TFS. |
 | [SonarQube for MSBuild - Begin Analysis](http://go.microsoft.com/fwlink/?LinkId=620063). Fetch the Quality Profile from SonarQube to configure the analysis | Team Services, TFS 2015 Update 3 and newer |
 | [SonarQube for MSBuild - End Analysis](http://go.microsoft.com/fwlink/?LinkId=620063). Finish the analysis and upload the results to SonarQube | Team Services, TFS 2015 Update 3 and newer |
-| ![icon](../steps/build-release/_img/visual-studio-build.png)<br />[Visual Studio Build](../steps/build-release/visual-studio-build.md). Build with MSBuild and set the Visual Studio version property | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build-release/_img/xamarin-android.png)<br />[Xamarin.Android](../steps/build-release/xamarin-android.md). Build an Android app with Xamarin | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build-release/_img/xamarin-ios.png)<br />[Xamarin.iOS](../steps/build-release/xamarin-ios.md). Build an iOS app with Xamarin on Mac OS | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build-release/_img/xcode-build.png)<br />[Xcode Build](../steps/build-release/xcode-build.md). Build an Xcode workspace on Mac OS | Team Services, TFS 2015 RTM and newer |
-| ![icon](../steps/build-release/_img/xcode-package-ios.png)<br />[Xcode Package iOS](../steps/build-release/xcode-package-ios.md). Generate an .ipa file from Xcode build output | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/visual-studio-build.png)<br />[Visual Studio Build](../steps/build/visual-studio-build.md). Build with MSBuild and set the Visual Studio version property | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/xamarin-android.png)<br />[Xamarin.Android](../steps/build/xamarin-android.md). Build an Android app with Xamarin | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/xamarin-ios.png)<br />[Xamarin.iOS](../steps/build/xamarin-ios.md). Build an iOS app with Xamarin on Mac OS | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/xcode-build.png)<br />[Xcode Build](../steps/build/xcode-build.md). Build an Xcode workspace on Mac OS | Team Services, TFS 2015 RTM and newer |
+| ![icon](../steps/build/_img/xcode-package-ios.png)<br />[Xcode Package iOS](../steps/build/xcode-package-ios.md). Generate an .ipa file from Xcode build output | Team Services, TFS 2015 RTM and newer |
 
 ## Utility
 
@@ -66,8 +66,8 @@ Add steps to specify what you want to build, the tests to run, and all the other
 | ![icon](../steps/utility/_img/delete-files.png)<br />[Delete Files](../steps/utility/delete-files.md). Delete files or folders. | Team Services, TFS 2015 Update 3 and newer |
 | ![icon](../steps/utility/_img/extract-files.png)<br />[Extract Files](../steps/utility/extract-files.md). Extract files from archives (.zip, .jar, .war, .ear, .tar, .7z., and others) to a target folder. | Team Services, TFS 2017 |
 | ![icon](../steps/utility/_img/ftp-upload.png)<br />[FTP Upload](../steps/utility/ftp-upload.md). Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS. | Team Services, TFS 2017 |
-| ![icon](../steps/build-release/_img/xcode-build.png)<br />[Install Apple Certificate](../steps/utility/install-apple-certificate.md). Install an Apple certificate required to build on a macOS agent. | Team Services |
-| ![icon](../steps/build-release/_img/xcode-build.png)<br />[Install Apple Provisioning Profile](../steps/utility/install-apple-provisioning-profile.md). Install an Apple provisioning profile required to build on a macOS agent. | Team Services |
+| ![icon](../steps/build/_img/xcode-build.png)<br />[Install Apple Certificate](../steps/utility/install-apple-certificate.md). Install an Apple certificate required to build on a macOS agent. | Team Services |
+| ![icon](../steps/build/_img/xcode-build.png)<br />[Install Apple Provisioning Profile](../steps/utility/install-apple-provisioning-profile.md). Install an Apple provisioning profile required to build on a macOS agent. | Team Services |
 | ![icon](../steps/utility/_img/powershell.png)<br />[PowerShell](../steps/utility/powershell.md). Run a PowerShell script | Team Services, TFS 2015 RTM and newer |
 | ![icon](../steps/utility/_img/publish-build-artifacts.png)<br />[Publish Build Artifacts](../steps/utility/publish-build-artifacts.md). Publish Build artifacts to the server or a file share | Team Services, TFS Update 3 and newer |
 | ![icon](../steps/utility/_img/azure-service-fabric.png)<br />[Service Fabric PowerShell](../steps/utility/service-fabric-powershell.md). Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized. | Team Services |

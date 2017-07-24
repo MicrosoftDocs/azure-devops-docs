@@ -51,7 +51,7 @@ On the [build tab](../../define/build.md) you'll see build steps.
 </td>
 </tr>
 <tr>
-    <td>![icon](../../steps/build-release/_img/visual-studio-build.png)<br>[Build: Visual Studio Build](../../steps/build-release/visual-studio-build.md)</td>
+    <td>![icon](../../steps/build/_img/visual-studio-build.png)<br>[Build: Visual Studio Build](../../steps/build/visual-studio-build.md)</td>
     <td>
         <p>Build the solution.</p>
         <ul>
@@ -68,8 +68,8 @@ On the [build tab](../../define/build.md) you'll see build steps.
 </td>
 </tr>
 <tr>
-   <td>![icon](../../steps/build-release/_img/index-sources-publish-symbols.png)<br>
-            [Build: Index Sources & Publish Symbols](../../steps/build-release/index-sources-publish-symbols.md)<br/>
+   <td>![icon](../../steps/build/_img/index-sources-publish-symbols.png)<br>
+            [Build: Index Sources & Publish Symbols](../../steps/build/index-sources-publish-symbols.md)<br/>
       </td>
    <td>
    <p>(Optional) Index your source code and publish symbols to a file share.</p>

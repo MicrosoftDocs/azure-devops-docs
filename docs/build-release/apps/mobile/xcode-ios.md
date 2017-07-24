@@ -61,7 +61,7 @@ On the Build tab, add some steps.
 
 <table>
    <tr>
-      <td>![Build: Xcode Build](../../steps/build-release/_img/xcode-build.png) <strong>Build: Xcode</strong></td>
+      <td>![Build: Xcode Build](../../steps/build/_img/xcode-build.png) <strong>Build: Xcode</strong></td>
       <td>
 	  	<p>Settings:</p>
 	  	<ul>
@@ -107,7 +107,7 @@ On the Build tab, add some steps.
 
 <table>
    <tr>
-      <td>![Build: Xcode Build](../../steps/build-release/_img/xcode-build.png)  <strong>Build: Xcode</strong></td>
+      <td>![Build: Xcode Build](../../steps/build/_img/xcode-build.png)  <strong>Build: Xcode</strong></td>
 	  <td>
 		<p>Move this to the top of your build definition (before build) and use the following settings:</p>
 		<ul>

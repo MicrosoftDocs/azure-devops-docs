@@ -64,7 +64,7 @@ Add the following tasks.
     </td>
   </tr>
   <tr>
-    <td>![icon](../../../steps/build-release/_img/visual-studio-build.png)<br>[Build: Visual Studio Build](../../../steps/build-release/visual-studio-build.md)</td>
+    <td>![icon](../../../steps/build/_img/visual-studio-build.png)<br>[Build: Visual Studio Build](../../../steps/build/visual-studio-build.md)</td>
     <td>
       <p>(Optional) Build any additional projects that are checked in.<p>
       <ul>

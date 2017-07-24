@@ -159,7 +159,7 @@ Prioritization of investments should be based on real-world usage patterns. Use 
 
 Help your team continuously deliver software at a faster pace and with lower risk, while improving efficiency and collaboration between all teams that participate in release processes. Set up continuous integration builds for your app that run with every check in. Multi-platform build agents support Android, iOS, Java, .NET, and other applications. Easily load test your apps and provision test environments. Track when the quality is sufficient to release to the customer.  
 
-[![Build your software](_img/overview/ov-devops-build.png)](build/define/build.md)[![Set up continuous testing](_img/overview/ov-devops-test.png)](test/continuous-testing/set-up-continuous-testing-builds.md)[![Create a release](_img/overview/ov-devops-release.png)](build/actions/create-deploy-releases.md)   
+[![Build your software](_img/overview/ov-devops-build.png)](build-release/define/build.md)[![Set up continuous testing](_img/overview/ov-devops-test.png)](test/continuous-testing/set-up-continuous-testing-builds.md)[![Create a release](_img/overview/ov-devops-release.png)](build/actions/create-deploy-releases.md)   
 
 <!---
 
@@ -221,7 +221,7 @@ Release Management helps you automate the deployment and testing of your softwar
 <ul style="padding-left:30px">
 <ul style="padding-left:30px">
 <li style="margin-bottom:2px">[Get started](build/overview.md)</li>
-<li style="margin-bottom:2px">[Release definitions](build/concepts/definitions/release/index.md)</li>
+<li style="margin-bottom:2px">[Release definitions](build-release/concepts/definitions/release/index.md)</li>
 <li style="margin-bottom:2px">[Manage releases](build/actions/view-manage-releases.md)</li>
 <li style="margin-bottom:2px">[Deploy your apps](build/apps/index.md)</li>
 </ul>

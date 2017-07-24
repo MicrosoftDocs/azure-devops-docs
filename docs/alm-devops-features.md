@@ -95,7 +95,7 @@ Use features supported by these familiar clients to manage your project and illu
 - [Code - TFVC](setup-admin/permissions.md#tfvc)  
 - [Dashboards](report/dashboards.md#manage)   
 - [Queries](work/track/set-query-permissions.md)   
-- [Release Management](build/concepts/policies/permissions.md#release-permissions)  
+- [Release Management](build-release/concepts/policies/permissions.md#release-permissions)  
 - [Team admin role](work/scale/manage-team-assets.md)  
 - [Test](setup-admin/permissions.md#project_test)  
 - [Work item tags](setup-admin/permissions.md#tags)  
@@ -1075,11 +1075,11 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Build agents and agent pools </b></p>
-<p>At least one [agent](build/concepts/agents/agents.md) is require to build your code. As you scale your system with more code, people, and builds, you'll need more build agents organized within [agent pools](build/concepts/agents/pools-queues.md). You can use both on-premises or hosted agent pools.</p>
+<p>At least one [agent](build-release/concepts/agents/agents.md) is require to build your code. As you scale your system with more code, people, and builds, you'll need more build agents organized within [agent pools](build-release/concepts/agents/pools-queues.md). You can use both on-premises or hosted agent pools.</p>
 
 
 <p><b>Gated check-in (TFVC, Team Services) </b></p>
-<p>Use [gated check-in](build/define/triggers.md#gated) to protect against breaking changes when checking code into TFVC.  </p>
+<p>Use [gated check-in](build-release/define/triggers.md#gated) to protect against breaking changes when checking code into TFVC.  </p>
 
 
 <p><b>Branch policies (Git)</b></p>
@@ -1089,26 +1089,26 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="38%">
 <p><b>Specify your build steps</b></p>
-<p>Add steps to specify what you [want to build](build/define/build.md#build), the [tests to run](build/define/build.md#test), and [all the other steps](build/define/build.md) needed to complete the process.</p>
+<p>Add steps to specify what you [want to build](build-release/define/build.md#build), the [tests to run](build-release/define/build.md#test), and [all the other steps](build-release/define/build.md) needed to complete the process.</p>
 
 
-<p>![](build/steps/build-release/_img/android-build.png)&#160;&#160;[Build an Android app using Gradle](build/steps/build-release/gradle.md)</p>
-<p>![](build/steps/build-release/_img/android-signing.png)&#160;&#160;[Sign and align Android APK files](build/steps/build-release/android-signing.md)</p>
-<p>![](build/steps/build-release/_img/ant.png)&#160;&#160;[Build with Apache Ant](build/steps/build-release/ant.md) </p>
-<p>![](build/steps/build-release/_img/gradle.png)&#160;&#160;[Build using a Gradle wrapper script](build/steps/build-release/gradle.md)  </p>
-<p>![](build/steps/build-release/_img/grunt.png)&#160;&#160;[Grunt: The JavaScript Task Runner](build/steps/build-release/grunt.md) </p>
-<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Gulp/icon.png?raw=true)&#160;&#160;[Gulp: Node.js task-based build system](build/steps/build-release/gulp.md)</p>
-<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishSymbols/icon.png?raw=true)&#160;&#160;[Index source code and publish symbols](build/steps/build-release/index-sources-publish-symbols.md)</p>
-<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Maven/icon.png?raw=true)&#160;&#160;[Build with Apache Maven](build/steps/build-release/maven.md)</p>
-<p>![](build/steps/build-release/_img/msbuild.png)&#160;&#160;[Build with MSbuild](build/steps/build-release/msbuild.md)</p>
+<p>![](build-release/steps/build/_img/android-build.png)&#160;&#160;[Build an Android app using Gradle](build-release/steps/build/gradle.md)</p>
+<p>![](build-release/steps/build/_img/android-signing.png)&#160;&#160;[Sign and align Android APK files](build-release/steps/build/android-signing.md)</p>
+<p>![](build-release/steps/build/_img/ant.png)&#160;&#160;[Build with Apache Ant](build-release/steps/build/ant.md) </p>
+<p>![](build-release/steps/build/_img/gradle.png)&#160;&#160;[Build using a Gradle wrapper script](build-release/steps/build/gradle.md)  </p>
+<p>![](build-release/steps/build/_img/grunt.png)&#160;&#160;[Grunt: The JavaScript Task Runner](build-release/steps/build/grunt.md) </p>
+<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Gulp/icon.png?raw=true)&#160;&#160;[Gulp: Node.js task-based build system](build-release/steps/build/gulp.md)</p>
+<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishSymbols/icon.png?raw=true)&#160;&#160;[Index source code and publish symbols](build-release/steps/build/index-sources-publish-symbols.md)</p>
+<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Maven/icon.png?raw=true)&#160;&#160;[Build with Apache Maven](build-release/steps/build/maven.md)</p>
+<p>![](build-release/steps/build/_img/msbuild.png)&#160;&#160;[Build with MSbuild](build-release/steps/build/msbuild.md)</p>
 <p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png?raw=true)&#160;&#160;[SonarQube for MSbuild](http://go.microsoft.com/fwlink/?LinkId=620063)</p>
-<p>![](build/steps/build-release/_img/visual-studio-build.png)&#160;&#160;[Visual Studio and MSbuild](build/steps/build-release/visual-studio-build.md)</p>
-<p>![](build/steps/build-release/_img/xamarin-android.png)&#160;&#160;[Build an Android app with Xamarin](build/steps/build-release/xamarin-android.md) </p>
-<p>![](build/steps/build-release/_img/xamarin-ios.png)&#160;&#160;[Build an iOS app with Xamarin on Mac OS](build/steps/build-release/xamarin-ios.md) </p>
+<p>![](build-release/steps/build/_img/visual-studio-build.png)&#160;&#160;[Visual Studio and MSbuild](build-release/steps/build/visual-studio-build.md)</p>
+<p>![](build-release/steps/build/_img/xamarin-android.png)&#160;&#160;[Build an Android app with Xamarin](build-release/steps/build/xamarin-android.md) </p>
+<p>![](build-release/steps/build/_img/xamarin-ios.png)&#160;&#160;[Build an iOS app with Xamarin on Mac OS](build-release/steps/build/xamarin-ios.md) </p>
 
 
 <p><b>Build variables</b></p>
-<p>Use [predefined variables](build/define/variables.md) or add your custom variables when configuring your build definition or your build scripts.</p>
+<p>Use [predefined variables](build-release/define/variables.md) or add your custom variables when configuring your build definition or your build scripts.</p>
 
 
 </td>
@@ -1116,7 +1116,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Continuous integration builds</b></p>
-<p>[Define a CI build](build/define/triggers.md#ci) that compiles and tests your solutions whenever your team checks in code.</p>
+<p>[Define a CI build](build-release/define/triggers.md#ci) that compiles and tests your solutions whenever your team checks in code.</p>
 
 
 <p><b>Build summary charts</b></p>
@@ -1130,11 +1130,11 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Audit changes </b></p>
-<p>Determine who [changed what in the build definition and when they did it](build/define/history.md). </p>
+<p>Determine who [changed what in the build definition and when they did it](build-release/define/history.md). </p>
 
 
 <p><b>Build retention policies</b></p>
-<p>[Define policies to automatically delete old completed builds ](build/concepts/policies/retention.md) to minimize clutter.</p>
+<p>[Define policies to automatically delete old completed builds ](build-release/concepts/policies/retention.md) to minimize clutter.</p>
 
 <p><b>Build permissions</b></p>
 <p>Determine who can [define, delete, and manage builds](setup-admin/permissions.md#build).</p>
@@ -1168,18 +1168,18 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Release environments</b></p>
-<p>[Define and clone release environments](build/concepts/definitions/release/environments.md), logical entities that represent where you want to deploy a release, such as a collection of servers, a cloud, multiple clouds, or an app store.</p>
+<p>[Define and clone release environments](build-release/concepts/definitions/release/environments.md), logical entities that represent where you want to deploy a release, such as a collection of servers, a cloud, multiple clouds, or an app store.</p>
 
 
 <p><b>Artifacts</b></p>
-<p>A release is fundamentally defined by [versioned artifacts that make up the release](build/concepts/definitions/release/artifacts.md). As you deploy the release to various environments, you deploy and validate the same artifacts on all environments. </p>
+<p>A release is fundamentally defined by [versioned artifacts that make up the release](build-release/concepts/definitions/release/artifacts.md). As you deploy the release to various environments, you deploy and validate the same artifacts on all environments. </p>
 
 
 <p><b>Tasks</b></p>
-<p>Automate release deployment by [defining the events that will trigger a release](build/concepts/definitions/release/triggers.md#release-triggers).</p>
+<p>Automate release deployment by [defining the events that will trigger a release](build-release/concepts/definitions/release/triggers.md#release-triggers).</p>
 
 <p><b>Agents and agent pools</b></p>
-<p>Agent pools are the execution containers that specify the security context and runtime environment for the [agents that run when you deploy a release](build/concepts/agents/agents.md).</p>
+<p>Agent pools are the execution containers that specify the security context and runtime environment for the [agents that run when you deploy a release](build-release/concepts/agents/agents.md).</p>
 
 </td>
 <td width="33%">
@@ -1187,7 +1187,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Deploy [any type of application across multiple platforms](build/overview.md) including Windows and Linux, whether on-premises or in the cloud.</p>
 
 <p><b>Approval workflows</b></p>
-<p>Streamline your application release workflow by [routing pre- and post-deployment approvals](build/concepts/definitions/release/environments.md#approvals) to multiple approvers or teams.</p>
+<p>Streamline your application release workflow by [routing pre- and post-deployment approvals](build-release/concepts/definitions/release/environments.md#approvals) to multiple approvers or teams.</p>
 
 <p><b>Release notifications</b></p>
 <p>Receive email messages as releases occur. [Approvers receive notifications automatically when a release is waiting for approval](build/actions/view-manage-releases.md#send-email). </p>
@@ -1199,19 +1199,19 @@ Use features supported by these familiar clients to manage your project and illu
 <p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](build/actions/debug-deployment-issues.md). </p>
 
 <p><b>Triggers</b></p>
-<p>Automate release deployment by [defining the events that will trigger a release](build/concepts/definitions/release/triggers.md#release-triggers).</p>
+<p>Automate release deployment by [defining the events that will trigger a release](build-release/concepts/definitions/release/triggers.md#release-triggers).</p>
 
 <p><b>Variables</b></p>
-<p>Lookup the description for all [release system, global, and agent variables](build/concepts/process/tasks.md).</p>
+<p>Lookup the description for all [release system, global, and agent variables](build-release/concepts/process/tasks.md).</p>
 
 </td>
 <td width="33%">
 
 <p><b>Release names </b></p>
-<p>Specify the [naming and numbering scheme you want used when adding releases](build/concepts/definitions/release/index.md#numbering).</p>
+<p>Specify the [naming and numbering scheme you want used when adding releases](build-release/concepts/definitions/release/index.md#numbering).</p>
 
 <p><b>Global configuration properties</b></p>
-<p>Simplify management of custom values that you use to configure multiple releases by [specifying custom values for any of the tasks in any of the environments of a release definition](build/concepts/definitions/release/variables.md).</p>
+<p>Simplify management of custom values that you use to configure multiple releases by [specifying custom values for any of the tasks in any of the environments of a release definition](build-release/concepts/definitions/release/variables.md).</p>
 
 <p><b>View test results</b></p>
 <p>[Open the **Tests** tab](build/actions/view-manage-releases.md#test-results) to view a summary of the test results, including pass/fail percentages and run duration. Sort the test results into groups or filter the results to show just passed, failed, or other results.</p>
@@ -1222,12 +1222,12 @@ Use features supported by these familiar clients to manage your project and illu
 <p>[Add a release summary chart](report/widget-catalog.md#release-definition-widget) to a team dashboard. </p>
 
 <p><b>Extend and customize</b></p>
-<p>[Create workflows tailored to your process](build/concepts/definitions/release/index.md) by customizing our tasks, or extend with your own custom tasks.</p>
+<p>[Create workflows tailored to your process](build-release/concepts/definitions/release/index.md) by customizing our tasks, or extend with your own custom tasks.</p>
 ![Customize release definition process](_img/alm-feature-release-3.png)  
 <br />
 
 <p><b>Manage permissions</b></p>
-<p>Grant or deny permissions to [manage release definitions, environments approvers, or release permissions](build/concepts/policies/permissions.md#release-permissions). Set permissions for users, groups, or per release definition. </p>
+<p>Grant or deny permissions to [manage release definitions, environments approvers, or release permissions](build-release/concepts/policies/permissions.md#release-permissions). Set permissions for users, groups, or per release definition. </p>
 
 </td>
 </tr>
@@ -2735,7 +2735,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>[Get detailed information about what changes have been made to your files](https://msdn.microsoft.com/library/ms245475.aspx), compare files and folders, view where and when changesets have been merged, and view file changes using annotate.</p>
 
 <p><b>Build changes</b></p>
-<p>Determine who [changed what in the build definition and when they did it](build/define/history.md).</p>
+<p>Determine who [changed what in the build definition and when they did it](build-release/define/history.md).</p>
 
 <p><b>Release audit history</b></p>
 <p>[Retain full audit history](build/actions/view-manage-releases.md#release-history) of all activities performed on a release with detailed release logs and approval tracking.</p>

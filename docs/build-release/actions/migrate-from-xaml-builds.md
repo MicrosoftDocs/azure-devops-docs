@@ -176,7 +176,7 @@ On the **Build** tab (TFS 2017) or the **Tasks** tab (Team Services), after you 
 | XAML process parameter | TFS 2017 RTM, Team Services equivalent argument |
 |-|-|
 | Projects | Solution |
-| Configurations | Platform, Configuration. See [Visual Studio Build: How do I build multiple configurations for multiple platforms?](../steps/build-release/visual-studio-build.md#how-do-i-build-multiple-configurations-for-multiple-platforms) | 
+| Configurations | Platform, Configuration. See [Visual Studio Build: How do I build multiple configurations for multiple platforms?](../steps/build/visual-studio-build.md#how-do-i-build-multiple-configurations-for-multiple-platforms) | 
 | Clean build | Clean | 
 | Output location | The Visual Studio Build task builds and outputs files in the same way you do it on your dev machine, in the local workspace. We give you full control of publishing artifacts out of the local workspace on the agent. See [Artifacts in Team Build](../concepts/definitions/build-release/artifacts.md). |
 | Advanced, MSBuild arguments | MSBuild Arguments | 
@@ -188,9 +188,9 @@ On the **Build** tab (TFS 2017) or the **Tasks** tab (Team Services), after you 
 > 
 > In the Visual Studio Build arguments, on the **Visual Studio Version** menu, make sure to select version of Visual Studio that you're using.
 
-The new build definition offers you some new options. See [Visual Studio Build](../steps/build-release/visual-studio-build.md).
+The new build definition offers you some new options. See [Visual Studio Build](../steps/build/visual-studio-build.md).
 
-Learn more: [Visual Studio Build task](../steps/build-release/visual-studio-build.md) (for building solutions), [MSBuild task](../steps/build-release/msbuild.md) (for building individual projects).
+Learn more: [Visual Studio Build task](../steps/build/visual-studio-build.md) (for building solutions), [MSBuild task](../steps/build/msbuild.md) (for building individual projects).
 
 #### Test
 

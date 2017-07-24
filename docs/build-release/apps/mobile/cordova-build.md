@@ -153,7 +153,7 @@ To add TypeScript compilation into your build definition using Gulp, follow thes
       </td>
    </tr>
    <tr>
-    <td>![Build: Gulp](../../steps/build-release/_img/gulp.png)<br />**Build: Gulp**</td>
+    <td>![Build: Gulp](../../steps/build/_img/gulp.png)<br />**Build: Gulp**</td>
 	  <td>
 	  	<p>Settings:</p>
 	  	<ul>  	   
@@ -173,7 +173,7 @@ Next, we will configure the definition to publish your test results to VS Team S
 
 <table>
    <tr>
-    <td>![Build: Gulp](../../steps/build-release/_img/gulp.png)<br />**Build: Gulp**</td>
+    <td>![Build: Gulp](../../steps/build/_img/gulp.png)<br />**Build: Gulp**</td>
 	  <td>
       <p>Update the **Gulp Task(s)** option in the Gulp step above to reference your "test" task. A value of "scripts test" will first compile TypeScript (or anything else you have configured) and then run tests.</p>
  	  </td>

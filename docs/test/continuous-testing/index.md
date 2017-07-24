@@ -55,7 +55,7 @@ prefer to use.
 
 * [Get started with Java testing](getting-started/continuous-test-java.md).
 * [Get started with Selenium testing](getting-started/continuous-test-selenium.md).
-* [Use Maven to build your Java app](../../build-release/steps/build-release/maven.md)
+* [Use Maven to build your Java app](../../build-release/steps/build/maven.md)
 * [Unit testing framework plug-ins for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246630) 
 
 <a name="analytics-reporting"></a>

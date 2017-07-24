@@ -113,7 +113,7 @@ On the [build tab](../../define/build.md):
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/build-release/_img/xamarin-android.png)<br/>[Build: Xamarin.Android](../../steps/build-release/xamarin-android.md)</td>
+<td>![icon](../../steps/build/_img/xamarin-android.png)<br/>[Build: Xamarin.Android](../../steps/build/xamarin-android.md)</td>
 <td>
 <p>Build your Android project.</p>
 <ul>
@@ -128,7 +128,7 @@ On the [build tab](../../define/build.md):
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/build-release/_img/msbuild.png)<br/>[Build: MSBuild](../../steps/build-release/msbuild.md)</td>
+<td>![icon](../../steps/build/_img/msbuild.png)<br/>[Build: MSBuild](../../steps/build/msbuild.md)</td>
 <td>
 <p>Build your tests.</p>
 <blockquote><strong>Note: </strong>If you don't have tests yet, then clear the **Enabled** check box.</blockquote>
@@ -152,7 +152,7 @@ On the [build tab](../../define/build.md):
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/build-release/_img/android-signing.png)<br/>[Android Signing](../../steps/build-release/android-signing.md)</td>
+<td>![icon](../../steps/build/_img/android-signing.png)<br/>[Android Signing](../../steps/build/android-signing.md)</td>
 <td>
 <p>Sign and align your APK files.</p>
 <ul>
@@ -293,7 +293,7 @@ On the [build tab](../../define/build.md):
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/build-release/_img/xamarin-ios.png)<br/>[Build: Xamarin.iOS](../../steps/build-release/xamarin-ios.md)</td>
+<td>![icon](../../steps/build/_img/xamarin-ios.png)<br/>[Build: Xamarin.iOS](../../steps/build/xamarin-ios.md)</td>
 <td>
 <p>Build your Xamarin.iOS project.</p>
 <ul>
@@ -303,7 +303,7 @@ Solution: Click the <strong>...</strong> button and select your solution.
 <li>Configuration: `$(BuildConfiguration)`</li>
 <li>Select either **Create app package** or **Build for iOS simulator**.</li>
 </ul>
-<p>If you want to sign and provision, specify the arguments. See [Build: Xamarin.iOS](../../steps/build-release/xamarin-ios.md).</p>
+<p>If you want to sign and provision, specify the arguments. See [Build: Xamarin.iOS](../../steps/build/xamarin-ios.md).</p>
 </td>
 </tr>
 <tr>
@@ -384,8 +384,8 @@ On the [build tab](../../define/build.md):
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/build-release/_img/visual-studio-build.png)<br/>
-[Visual Studio Build](../../steps/build-release/visual-studio-build.md)</td>
+<td>![icon](../../steps/build/_img/visual-studio-build.png)<br/>
+[Visual Studio Build](../../steps/build/visual-studio-build.md)</td>
       <td>
 <p>Build your app.</p>
 <ul>
@@ -397,7 +397,7 @@ On the [build tab](../../define/build.md):
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/build-release/_img/msbuild.png)<br/>[Build: MSBuild](../../steps/build-release/msbuild.md)</td>
+<td>![icon](../../steps/build/_img/msbuild.png)<br/>[Build: MSBuild](../../steps/build/msbuild.md)</td>
 <td>
 <p>(Optional) Build your tests.</p>
 </td>
@@ -491,8 +491,8 @@ On the [build tab](../../define/build.md):
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/build-release/_img/visual-studio-build.png)<br/>
-[Visual Studio Build](../../steps/build-release/visual-studio-build.md)</td>
+<td>![icon](../../steps/build/_img/visual-studio-build.png)<br/>
+[Visual Studio Build](../../steps/build/visual-studio-build.md)</td>
       <td>
 <p>Build your app.</p>
 <ul>

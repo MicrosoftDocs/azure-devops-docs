@@ -15,7 +15,7 @@ ms.date: 07/05/2017
 
 ![](_img/nuget.png) Install and update NuGet package dependencies, or package and publish NuGet packages. 
 
-If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../../steps/build-release/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
+If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../../steps/build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
 
 > [!TIP]
 > Looking for help to get started? See [Use Team Build to restore and publish NuGet packages](../../../package/build-release/team-build-nuget.md).
@@ -38,7 +38,7 @@ None
     <tr>
         <td>Path to solution, packages.config, or project.json</td>
         <td>
-            Copy the **Solution** argument in your [Visual Studio Build step](../../steps/build-release/visual-studio-build.md) and paste it
+            Copy the **Solution** argument in your [Visual Studio Build step](../../steps/build/visual-studio-build.md) and paste it
             here, or create a link using the Link button in the information panel.
         </td>
     </tr>

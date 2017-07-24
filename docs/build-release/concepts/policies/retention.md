@@ -112,7 +112,7 @@ The following information is deleted when a build is deleted:
 
 * Logs
 * [Published artifacts](../../steps/utility/publish-build-artifacts.md)
-* [Published symbols](../../steps/build-release/index-sources-publish-symbols.md)
+* [Published symbols](../../steps/build/index-sources-publish-symbols.md)
 
 ### When are builds deleted
 

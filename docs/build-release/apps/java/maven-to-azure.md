@@ -57,7 +57,7 @@ On the Build tab, add these steps:
 <table>
    <tr>
         
-      <td>![Build: Maven](../../steps/build-release/_img/maven.png) **Build: Maven**</td>
+      <td>![Build: Maven](../../steps/build/_img/maven.png) **Build: Maven**</td>
       <td>
 <p>Build the app.</p>
 <ul>

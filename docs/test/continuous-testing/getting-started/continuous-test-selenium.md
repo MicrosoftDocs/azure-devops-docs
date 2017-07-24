@@ -167,7 +167,7 @@ the source code must be in version control.
    
    - **Installation type**: `Restore`<p />
    
-   ![Visual Studio Build](../../../build-release/steps/build-release/_img/visual-studio-build.png) [Build: Visual Studio Build](../../../build-release/steps/build-release/visual-studio-build.md) - Build with MSBuild and set the Visual Studio version property.
+   ![Visual Studio Build](../../../build-release/steps/build/_img/visual-studio-build.png) [Build: Visual Studio Build](../../../build-release/steps/build/visual-studio-build.md) - Build with MSBuild and set the Visual Studio version property.
    
    - **Solution**:  Select your app solution (.sln) file.
    
@@ -177,7 +177,7 @@ the source code must be in version control.
    
    - **Visual Studio Version**: Select the version used to create your app.<p />
    
-   ![Index Sources &amp; Publish Symbols](../../../build-release/steps/build-release/_img/index-sources-publish-symbols.png) [Test: Index Sources &amp; Publish Symbols](../../../build-release/steps/build-release/index-sources-publish-symbols.md) - Index the source code and optionally publish symbols to a SymStore file share.
+   ![Index Sources &amp; Publish Symbols](../../../build-release/steps/build/_img/index-sources-publish-symbols.png) [Test: Index Sources &amp; Publish Symbols](../../../build-release/steps/build/index-sources-publish-symbols.md) - Index the source code and optionally publish symbols to a SymStore file share.
    
    - **Search pattern**: `**\bin\**\*.pdb`<p />
    

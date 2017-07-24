@@ -58,7 +58,7 @@ On the **Tasks** or **Build** tab, add these steps.
 </tr>
    
         <tr>
-            <td>![Build: Gulp](../../steps/build-release/_img/gulp.png)<br/>**Build: Gulp**</td>
+            <td>![Build: Gulp](../../steps/build/_img/gulp.png)<br/>**Build: Gulp**</td>
             <td>
 <p>Pack your files into a .zip file.</p>
 <ul>
@@ -85,7 +85,7 @@ On the **Tasks** or **Build** tab, add these steps.
 </td>
         </tr>
 <tr>
-            <td>![Build: Publish Build Artifacts](../../steps/build-release/_img/publish-build-artifacts.png)<br/>**Build: Publish Build Artifacts**</td>
+            <td>![Build: Publish Build Artifacts](../../steps/build/_img/publish-build-artifacts.png)<br/>**Build: Publish Build Artifacts**</td>
             <td>
 <p>(Optional) Drop some of the build outputs, such as the .zip file as we do in the example below.</p>
 <ul>

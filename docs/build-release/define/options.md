@@ -188,7 +188,7 @@ Use demands to make sure that the capabilities your build needs are present on t
 
 ### Build step demands
 
-Some build steps won't run unless one or more demands are met by the build agent. For example, the [Visual Studio Build](../steps/build-release/visual-studio-build.md) step demands that ```msbuild``` and ```visualstudio``` are installed on the build agent. If your build [includes steps](build.md) that have demands, they are listed first.
+Some build steps won't run unless one or more demands are met by the build agent. For example, the [Visual Studio Build](../steps/build/visual-studio-build.md) step demands that ```msbuild``` and ```visualstudio``` are installed on the build agent. If your build [includes steps](build.md) that have demands, they are listed first.
 
 ### Manually entered demands
 
@@ -217,7 +217,7 @@ Register each build agent that has the capability.
 
 ## Multi-configuration
 
-Select this option to build multiple configurations. For example, you could build a C++ app for both debug and release configurations on both x86 and x64 platforms. For details about this example, see [Visual Studio Build](../steps/build-release/visual-studio-build.md).
+Select this option to build multiple configurations. For example, you could build a C++ app for both debug and release configurations on both x86 and x64 platforms. For details about this example, see [Visual Studio Build](../steps/build/visual-studio-build.md).
 
 ## Q&A
 
