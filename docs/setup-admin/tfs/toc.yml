@@ -15,13 +15,13 @@
   - name: Restore a TFS deployment to new hardware
     href: ./admin/backup/tut-single-svr-home.md
     items:
-    - name: Tutorial restore to new server: (1) prepare new hardware
+    - name: "Tutorial restore to new server: (1) prepare new hardware"
       href: ./admin/backup/tut-single-svr-prep-new-hw.md
-    - name: Tutorial restore to new server: (2) restore databases
+    - name: "Tutorial restore to new server: (2) restore databases"
       href: ./admin/backup/tut-single-svr-restore-dbs.md
-    - name: Tutorial restore to new server: (3) install and configure TFS
+    - name: "Tutorial restore to new server: (3) install and configure TFS"
       href: ./admin/backup/tut-single-svr-install-config-tfs.md
-    - name: Tutorial restore to new server: (4) reconnect services and users
+    - name: "Tutorial restore to new server: (4) reconnect services and users"
       href: ./admin/backup/tut-single-svr-reconn-svcs-users.md
 - name: Samples
 - name: How-to

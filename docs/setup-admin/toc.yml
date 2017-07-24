@@ -12,7 +12,7 @@
     href: team-services/sign-up-for-visual-studio-team-services.md
   - name: Add users to your account
     href: team-services/add-account-users-assign-access-levels-team-services.md
-  - name: User hub: add users to your account
+  - name: "User hub: add users to your account"
     href: add-basic-or-vs-subscription-users.md
   - name: Get more features (extensions)
     items:
@@ -54,11 +54,11 @@
       href: save-team-project-data.md
   - name: Manage account access
     items:
-    - name: User hub: manage users from table view
+    - name: "User hub: manage users from table view"
       href: team-services/manage-users-table-view.md
     - name: Manage conditional access
       href: team-services/manage-conditional-access.md
-    - name: User hub: delete users from your account
+    - name: "User hub: delete users from your account"
       href: team-services/delete-account-users-users-hub.md
     - name: Delete users from your account
       href: team-services/delete-account-users.md
@@ -82,11 +82,11 @@
         href: team-services/manage-azure-active-directory-groups-visual-studio-team-services.md
   - name: Billing and purchases
     items:
-    - name: Set up billing: link Azure subscription to Team Services Accout
+    - name: "Set up billing: link Azure subscription to Team Services Account"
       href: team-services/set-up-billing-for-your-account-vs.md
-    - name: Set up billing: add backup billing managers
+    - name: "Set up billing: add backup billing managers"
       href: team-services/add-backup-billing-managers.md
-    - name: Set up billing: change Azure subscription for billing
+    - name: "Set up billing: change Azure subscription for billing"
       href: team-services/change-azure-subscription.md
     - name: Pay for Team Services users
       href: team-services/buy-basic-access-add-team-services-users.md

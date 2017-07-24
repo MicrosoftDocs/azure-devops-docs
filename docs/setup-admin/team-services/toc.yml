@@ -14,7 +14,7 @@
     href: ../../marketplace/get-vsts-extensions.md
 - name: Tutorials
   items:
-  - name: User hub: manage users and access
+  - name: "User hub: manage users and access"
     href: manage-users-and-access-user-hub-team-services.md
   - name: Manage conditional access
     href: manage-conditional-access.md
