@@ -46,7 +46,7 @@ npm Package Management is available with **Visual Studio Team Services** and **T
 ## Automate the process with continuous integration
 
 You can use continuous integration systems like Team Build to automate the packing and publishing of your packages. 
-To get started with continuous integration, see the [Continuous delivery overview](build/overview.md) 
+To get started with continuous integration, see the [Continuous delivery overview](build-release/overview.md) 
 
 ## What's next?
 

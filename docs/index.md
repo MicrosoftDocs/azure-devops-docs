@@ -35,7 +35,7 @@ Once you have a team project defined or have been added as a team member, you ca
 - [Get started coding with Git](git/gitquickstart.md)
 - [Get started coding with TFVC](tfvc/share-your-code-in-tfvc-vs.md)
 - [Get started tracking work](work/overview.md)
-- [Get started with CI/CD](build/get-started/ci-cd-part-1.md)
+- [Get started with CI/CD](build-release/get-started/ci-cd-part-1.md)
 - [Get started testing](test/index.md)  
 - [Get started as a Stakeholder](quickstart/get-started-stakeholder.md)
 

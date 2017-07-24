@@ -30,7 +30,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-4 col-md-3 item">
       <div class="title">
-        <a href="build/apps/index.md#deploy-to-azure">Deploy to Azure</a>
+        <a href="build-release/apps/index.md#deploy-to-azure">Deploy to Azure</a>
         <div class="desc">
           Release apps to Azure services and Azure virtual machines.
         </div>

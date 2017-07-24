@@ -63,7 +63,7 @@ One of the main advantages to working with Team Services or TFS is the suite of 
 - Define, manage, track, and approve releases 
 - Deploy applications to Azure, a virtual machine, Docker containers, and more  
 
-To get started, see the overviews provided here: [Build &amp; Release](build/overview.md) and [Test](test/index.md). 
+To get started, see the overviews provided here: [Build &amp; Release](build-release/overview.md) and [Test](test/index.md). 
 
 - *Case study*: [Build and Deployment Automation Case Study for World Wide Time Keeping: Higher Quality and Faster Delivery in an Increasingly Agile World](https://www.visualstudio.com/en-us/articles/build-deployment-best-practices)  
 - *Video resource*: [A DevOps walkthrough using Visual Studio 2015 (Channel 9 video)](https://channel9.msdn.com/Blogs/MVPANZ/A-DevOps-walkthrough-using-Visual-Studio-2015).
@@ -95,7 +95,7 @@ Responsible for project level settings, including:
 - [Area paths](work/customize/set-area-paths.md) and [Iteration paths](work/customize/set-iteration-paths-sprints.md)
 - [Project permissions and repository security](setup-admin/permissions.md)
 - [Customize work tracking objects (TFS only)](work/customize/customize-work.md) 
-- [Build agents, pools, and service endpoints](build/overview.md) 
+- [Build agents, pools, and service endpoints](build-release/overview.md) 
 - [Test](test/manual-exploratory-testing/getting-started/how-long-to-keep-test-results.md) and [release](build-release/concepts/policies/retention.md) retention policies 
  
 

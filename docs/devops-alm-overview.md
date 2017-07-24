@@ -159,7 +159,7 @@ Prioritization of investments should be based on real-world usage patterns. Use 
 
 Help your team continuously deliver software at a faster pace and with lower risk, while improving efficiency and collaboration between all teams that participate in release processes. Set up continuous integration builds for your app that run with every check in. Multi-platform build agents support Android, iOS, Java, .NET, and other applications. Easily load test your apps and provision test environments. Track when the quality is sufficient to release to the customer.  
 
-[![Build your software](_img/overview/ov-devops-build.png)](build-release/define/build.md)[![Set up continuous testing](_img/overview/ov-devops-test.png)](test/continuous-testing/set-up-continuous-testing-builds.md)[![Create a release](_img/overview/ov-devops-release.png)](build/actions/create-deploy-releases.md)   
+[![Build your software](_img/overview/ov-devops-build.png)](build-release/define/build.md)[![Set up continuous testing](_img/overview/ov-devops-test.png)](test/continuous-testing/set-up-continuous-testing-builds.md)[![Create a release](_img/overview/ov-devops-release.png)](build-release/actions/create-deploy-releases.md)   
 
 <!---
 
@@ -195,12 +195,12 @@ Release Management helps you automate the deployment and testing of your softwar
 <div style="float:left;width:160px;margin:6px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Build</p>
 <ul style="padding-left:30px">
-<li style="margin-bottom:2px"><a href="build/overview.md">Overview</a></h4>
-<li style="margin-bottom:2px"><a href="build/get-started/dot-net.md">.NET get started</a></li>
-<li style="margin-bottom:2px"><a href="build/get-started/java-maven.md">Java get started</a></li>
-<li style="margin-bottom:2px"><a href="build/apps/aspnet/aspnet4-to-azure.md">Azure</a></li>
-<li style="margin-bottom:2px"><a href="build/apps/windows/universal.md">Windows</a></li>
-<li style="margin-bottom:2px"><a href="build/apps/mobile/xamarin.md">Mobile</a></li>
+<li style="margin-bottom:2px"><a href="build-release/overview.md">Overview</a></h4>
+<li style="margin-bottom:2px"><a href="build-release/get-started/dot-net.md">.NET get started</a></li>
+<li style="margin-bottom:2px"><a href="build-release/get-started/java-maven.md">Java get started</a></li>
+<li style="margin-bottom:2px"><a href="build-release/apps/aspnet/aspnet4-to-azure.md">Azure</a></li>
+<li style="margin-bottom:2px"><a href="build-release/apps/windows/universal.md">Windows</a></li>
+<li style="margin-bottom:2px"><a href="build-release/apps/mobile/xamarin.md">Mobile</a></li>
 </ul>
 </div>
 
@@ -220,10 +220,10 @@ Release Management helps you automate the deployment and testing of your softwar
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Release</p>
 <ul style="padding-left:30px">
 <ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Get started](build/overview.md)</li>
+<li style="margin-bottom:2px">[Get started](build-release/overview.md)</li>
 <li style="margin-bottom:2px">[Release definitions](build-release/concepts/definitions/release/index.md)</li>
-<li style="margin-bottom:2px">[Manage releases](build/actions/view-manage-releases.md)</li>
-<li style="margin-bottom:2px">[Deploy your apps](build/apps/index.md)</li>
+<li style="margin-bottom:2px">[Manage releases](build-release/actions/view-manage-releases.md)</li>
+<li style="margin-bottom:2px">[Deploy your apps](build-release/apps/index.md)</li>
 </ul>
 </div>
 

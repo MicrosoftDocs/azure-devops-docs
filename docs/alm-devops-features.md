@@ -1068,10 +1068,10 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Define builds</b></p>
-<p>Start from a build template and customize your build from there. Build for [Windows](build/get-started/dot-net.md), [iOS](build/apps/mobile/xcode-ios.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](build/apps/mobile/xamarin.md) for both iOS and Android and run tests on Xamarin's Test Cloud as part of the build.</p>
+<p>Start from a build template and customize your build from there. Build for [Windows](build-release/get-started/dot-net.md), [iOS](build-release/apps/mobile/xcode-ios.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](build-release/apps/mobile/xamarin.md) for both iOS and Android and run tests on Xamarin's Test Cloud as part of the build.</p>
 
 <p><b>Customize build process using scripts</b></p>
-<p>[Use a script](build/scripts/index.md) to add your team's business logic to your build process.</p>
+<p>[Use a script](build-release/scripts/index.md) to add your team's business logic to your build process.</p>
 
 
 <p><b>Build agents and agent pools </b></p>
@@ -1154,17 +1154,17 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Automate deployments</b></p>
-<p>Reduce time-to-market and respond to customer feedback with greater agility by [automating your release process](build/overview.md). Deploy applications across platforms to all environments of the pipeline with just one click.</p>
+<p>Reduce time-to-market and respond to customer feedback with greater agility by [automating your release process](build-release/overview.md). Deploy applications across platforms to all environments of the pipeline with just one click.</p>
 ![Release Manager](_img/alm-feature-release-1.png)  
 <br />
 
 
 <p><b>When to use Release Management?</b></p>
-<p>Evaluate how Release Management can help you in [your development and deployment efforts](build/overview.md).</p>
+<p>Evaluate how Release Management can help you in [your development and deployment efforts](build-release/overview.md).</p>
 
 
 <p><b>Release definitions</b></p>
-<p>Add a release definition by [choosing the build version, target release environments, and tasks](build/actions/create-deploy-releases.md).</p>
+<p>Add a release definition by [choosing the build version, target release environments, and tasks](build-release/actions/create-deploy-releases.md).</p>
 
 
 <p><b>Release environments</b></p>
@@ -1184,19 +1184,19 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="33%">
 <p><b>Works for any app</b></p>
-<p>Deploy [any type of application across multiple platforms](build/overview.md) including Windows and Linux, whether on-premises or in the cloud.</p>
+<p>Deploy [any type of application across multiple platforms](build-release/overview.md) including Windows and Linux, whether on-premises or in the cloud.</p>
 
 <p><b>Approval workflows</b></p>
 <p>Streamline your application release workflow by [routing pre- and post-deployment approvals](build-release/concepts/definitions/release/environments.md#approvals) to multiple approvers or teams.</p>
 
 <p><b>Release notifications</b></p>
-<p>Receive email messages as releases occur. [Approvers receive notifications automatically when a release is waiting for approval](build/actions/view-manage-releases.md#send-email). </p>
+<p>Receive email messages as releases occur. [Approvers receive notifications automatically when a release is waiting for approval](build-release/actions/view-manage-releases.md#send-email). </p>
 
 <p><b>Full traceability</b></p>
-<p>[Monitor the status of your release pipelines and track every deployment in each of the environments](build/actions/view-manage-releases.md#release-history). Retain full audit history of all activities performed on a release with detailed release logs and approval tracking.</p>
+<p>[Monitor the status of your release pipelines and track every deployment in each of the environments](build-release/actions/view-manage-releases.md#release-history). Retain full audit history of all activities performed on a release with detailed release logs and approval tracking.</p>
 
 <p><b>Release logs</b></p>
-<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](build/actions/debug-deployment-issues.md). </p>
+<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](build-release/actions/debug-deployment-issues.md). </p>
 
 <p><b>Triggers</b></p>
 <p>Automate release deployment by [defining the events that will trigger a release](build-release/concepts/definitions/release/triggers.md#release-triggers).</p>
@@ -1214,7 +1214,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Simplify management of custom values that you use to configure multiple releases by [specifying custom values for any of the tasks in any of the environments of a release definition](build-release/concepts/definitions/release/variables.md).</p>
 
 <p><b>View test results</b></p>
-<p>[Open the **Tests** tab](build/actions/view-manage-releases.md#test-results) to view a summary of the test results, including pass/fail percentages and run duration. Sort the test results into groups or filter the results to show just passed, failed, or other results.</p>
+<p>[Open the **Tests** tab](build-release/actions/view-manage-releases.md#test-results) to view a summary of the test results, including pass/fail percentages and run duration. Sort the test results into groups or filter the results to show just passed, failed, or other results.</p>
 ![View test results for a release](_img/devops-feature-release-view-tests.png)
 <br />
 
@@ -2099,7 +2099,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Plan and track work by [creating a product backlog](work/backlogs/create-your-backlog.md), and managing work using [Kanban](work/kanban/kanban-basics.md) or [Scrum](work/scrum/sprint-planning.md) processes. Find work items you want to review or update by [creating queries](work/track/using-queries.md), or visualize progress by [creating query-based charts](report/charts.md)  </p>
 
 <p><b>Build</b></p>
-<p>[Define and monitor builds](build/overview.md) and set up continuous builds to improve the quality of your app. </p>
+<p>[Define and monitor builds](build-release/overview.md) and set up continuous builds to improve the quality of your app. </p>
 
 
 <p><b>Test</b></p>
@@ -2109,7 +2109,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Share code as binary assets and control dependencies by [subscribing to and working with package management feeds](package/what-is-packaging.md).</p>
 
 <p><b>Release (Team Services, Preview)</b></p>
-<p>Manage the release of your app by [deploying it to a specific environment for each separate release step](build/overview.md), and by controlling the process through approvals for each step.</p>
+<p>Manage the release of your app by [deploying it to a specific environment for each separate release step](build-release/overview.md), and by controlling the process through approvals for each step.</p>
 
 
 <p><b>Code search</b></p>
@@ -2738,10 +2738,10 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Determine who [changed what in the build definition and when they did it](build-release/define/history.md).</p>
 
 <p><b>Release audit history</b></p>
-<p>[Retain full audit history](build/actions/view-manage-releases.md#release-history) of all activities performed on a release with detailed release logs and approval tracking.</p>
+<p>[Retain full audit history](build-release/actions/view-manage-releases.md#release-history) of all activities performed on a release with detailed release logs and approval tracking.</p>
 
 <p><b>Release logs</b></p>
-<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](build/actions/debug-deployment-issues.md). </p>
+<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](build-release/actions/debug-deployment-issues.md). </p>
 
 </td>
 </tr>

@@ -69,7 +69,7 @@ The **Build & Release** hub provides an integrated set of features to support bu
 - **System Center integration**: Enables a release definition to connect to a System Center Virtual Machine Manager (SCVMM) server to easily provision virtual machines and perform actions on them such as managing checkpoints, starting and stopping VMs, and running PowerShell scripts
 - **VMware Resource Deployment**: Connect to a VMware vCenter Server from Team Services or TFS to provision, start, stop, or snapshot VMware virtual machines.  
 
-To learn more, see [Continuous integration on any platform](build/overview.md). 
+To learn more, see [Continuous integration on any platform](build-release/overview.md). 
 
 
 ### Test 
