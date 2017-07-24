@@ -53,7 +53,7 @@ Working directory where npm command is run.  If you leave it blank it is the roo
 
 ## Examples
 
-[Build: Gulp](../build-release/gulp.md)
+[Build: Gulp](../build/gulp.md)
 
 [Build your Node.js app with Gulp](../../apps/node/nodejs-to-azure.md)
 

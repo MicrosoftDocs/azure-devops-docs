@@ -16,7 +16,7 @@ ms.date: 08/10/2016
 ![](_img/nuget-packager.png) Create a NuGet package from either a .csproj or .nuspec file.
 
 > [!TIP]
-> Looking for help to get started? See [Use Team Build to restore and publish NuGet packages](../../../package/build-release/team-build-nuget.md).
+> Looking for help to get started? See [Use Team Build to restore and publish NuGet packages](../../../package/build/team-build-nuget.md).
 
 ## Demands
 

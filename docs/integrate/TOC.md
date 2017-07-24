@@ -45,7 +45,7 @@
 #### [Accounts](https://visualstudio.com/integrate/api/shared/accounts.md)
 #### [Profiles](https://visualstudio.com/integrate/api/shared/profiles.md)
 ### Build
-#### [Overview](https://visualstudio.com/integrate/api/xamlbuild/overview.md)
+#### [Overview](https://visualstudio.com/integrate/api/xamlbuild-release/overview.md)
 #### [Builds](https://visualstudio.com/integrate/api/xamlbuild/builds.md)
 #### [Definitions](https://visualstudio.com/integrate/api/xamlbuild/definitions.md)
 #### [Qualities](https://visualstudio.com/integrate/api/xamlbuild/qualities.md)

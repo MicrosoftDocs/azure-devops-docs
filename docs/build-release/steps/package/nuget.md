@@ -18,7 +18,7 @@ ms.date: 07/05/2017
 If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../../steps/build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
 
 > [!TIP]
-> Looking for help to get started? See [Use Team Build to restore and publish NuGet packages](../../../package/build-release/team-build-nuget.md).
+> Looking for help to get started? See [Use Team Build to restore and publish NuGet packages](../../../package/build/team-build-nuget.md).
 
 ## Restore NuGet packages
 

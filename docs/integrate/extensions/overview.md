@@ -83,7 +83,7 @@ You can leverage our REST APIs to interact with all areas of Team Services or TF
     <div class ="col-sm-3 col-md-2 col-lg-2" style="padding:10px;">
         <div style="background-color: #f6f6f6; border: solid 1px #E6E6E6; padding:10px;min-height:85px;">
             <div class="index-button" style="padding-top:15px; text-align:center">
-                <a href="../api/build-release/overview.md">
+                <a href="../api/build/overview.md">
                     <h5>Builds</h5>
                 </a>
             </div>
