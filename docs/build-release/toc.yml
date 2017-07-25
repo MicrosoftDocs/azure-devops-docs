@@ -5,10 +5,11 @@
   - name: CI/CD to Azure web app
     items:
     - name: ASP.NET Core
-      href: apps/aspnet-core-to-azure-windows-vm.md
+      href: apps/aspnet-core-to-azure-webapp.md
   - name: CI/CD to Windows VMs
     items:
     - name: ASP.NET Core
+      href: apps/aspnet-core-to-azure-windows-vm.md
 - name: Tutorials
   items:
   - name: Create a build definition
