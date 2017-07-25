@@ -18,6 +18,23 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "version": 0
+    },
+    {
+      "docset_name": "release-notes",
+      "build_source_folder": "release-notes",
+      "build_output_subfolder": "release-notes",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_groups": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
     }
   ],
   "notification_subscribers": [
