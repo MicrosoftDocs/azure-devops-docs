@@ -1,149 +1,125 @@
 ---
-title: Agile tools documentation | Team Services & TFS
-description: Index to topics for planning and tracking work in VSTS and and Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+title: User guide to getting started with DevOps and Agile tools | VSTS & TFS    
+description: Guide to getting started using DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
+ms.technology: vs-devops-overview  
+ms.topic: get-started-article  
+ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: landing-page 
-ms.date: 07/14/2017
+ms.date: 07/20/2017
 ---
 
-# Agile tools documentation 
+# User guide to getting started 
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
-With Agile tools, project managers and teams can quickly plan and track the work required to bring applications from idea to completion. Agile tools provide you with the power, flexibility, and responsiveness you need to stay on top of changing priorities, deadlines, and requirements. 
+**!!! PLACEHOLDER CONTENT - TO BE REDONE AS YML  !!!** 
 
-## Overview  
-- [About Agile tools](overview.md) 
-- [About teams and Agile tools](about-teams-and-settings.md)  
+New to Team Services or TFS? Want to get up and running quickly? Feeling a bit overwhelmed? 
+
+Start here to get a basic-level understanding of how to sign-up, create a repo to support source control, start planning and tracking your work, and more.   
+
+If you're new to Team Services or TFS, you can get familiar with our cloud and on-premises client-server offerings from these overview topics. 
  
+- [DevOps overview](devops-alm-overview.md)
+- [Essential services](services.md) 
 
 ## 5-minute quickstarts  
 
-Start tracking work by adding work items, creating your backlog, or scheduling sprints.  
+Start by signing up for a Team Services account or logging into an existing account. To get started with an on-premises TFS, see [Install TFS](setup-admin/tfs/install/single-server.md). 
 
-- [Add work items](backlogs/add-work-items.md)
-- [Create your backlog](backlogs/create-your-backlog.md)  
-- [Schedule sprints](scrum/define-sprints.md)
-- [Kanban](kanban/kanban-quickstart.md)  
-- [Drive Git development](backlogs/connect-work-items-to-git-dev-ops.md)   
-- [Storyboard your ideas](office/storyboard-your-ideas-using-powerpoint.md)   
+Once you have a team project defined or have been added as a team member, you can start coding or tracking work collaboratively. 
 
-## Step-by-step tutorials
-
-Whether you use scrum, Kanban, or a combination of Agile methods, you can get started tracking bugs, driving your Git development, and more using the Agile tools available to you. 
-
-
-> [!div class="mx-tdBreakAll"]  
-> |Manage work items and backlogs  |Scrum   |   Kanban   |  
-> |-------------|----------|---------|  
-> |- [Define features & epics](./backlogs/define-features-epics.md)<br/>- [Organize backlogs](./backlogs/organize-backlog.md)<br/>- [Manage bugs](./backlogs/manage-bugs.md)<br/>- [Manage issues](./backlogs/manage-issues-impediments.md)<br/>- [Use templates](productivity/work-item-template.md) |- [Plan sprints](./scrum/sprint-planning.md)<br/>- [Add and update tasks](./scrum/task-board.md)<br/>- [Sprint burndown](./scrum/sprint-burndown.md)<br/>- [Forecast](./scrum/forecast.md)<br/>- [Velocity](../report/guidance/team-velocity.md)| - [Kanban basics](./kanban/kanban-basics.md)<br/>- [Task checklists](./kanban/add-task-checklists.md)<br/>- [Epics & features](./kanban/kanban-epics-features-stories.md)<br/>- [Add inline tests](./kanban/add-run-update-tests.md)<br/>- [Cumulative flow](../report/guidance/cumulative-flow.md)  |
-
-
-> [!div class="mx-tdBreakAll"]  
-> |Track  | Queries   |   Scale    |  
-> |-------------|----------|---------|  
-> |- [Tag work items](./track/add-tags-to-work-items.md)<br/>- [Follow work](../collaborate/follow-work-items.md)<br/>   - [Email work items](how-to/email-work-items.md)<br/>- [Share work plans](track/share-plans.md) <br/>- [Adhoc work item search](../search/workitem/get-started.md)  |- Add & run queries<br/>- Triage work items<br/>- [Edit a query](./track/using-queries.md)<br/>- [Add a query chart](../report/charts.md) <br/>- [Copy a query](backlogs/copy-clone-work-items.md#html)<br/>- [History & audit](./track/history-and-auditing.md) |- [Add teams](scale/multiple-teams.md)<br/>- [Manage portfolios](./scale/portfolio-management.md)<br/>- [Review team delivery plans](scale/review-team-plans.md)<br/>- [Visibility across teams](scale/visibility-across-teams.md)<br/>- [Scaled Agile Framework](./scale/scaled-agile-framework.md)  |
-  
-
+- [Set up/sign up with Team Services](setup-admin/team-services/sign-up-for-visual-studio-team-services.md)
+- [Get started coding with Git](git/gitquickstart.md)
+- [Get started coding with TFVC](tfvc/share-your-code-in-tfvc-vs.md)
+- [Get started tracking work](work/overview.md)
+- [Get started with CI/CD](build-release/get-started/ci-cd-part-1.md)
+- [Get started testing](test/index.md)  
+- [Get started as a Stakeholder](quickstart/get-started-stakeholder.md)
 
 ## Videos 
 
-[![Agile planning video](_img/index-agile-planning-video.png)](https://channel9.msdn.com/Events/Build/2017/T6005/player)   
+[![Zero to Devops Video](_img/index/zero-to-devops-video-image.png)](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-Live-Redmond-2016/VSLive2016Keynote02)   [![Agile Planning Video](_img/index/agile-planning-video-image.png)](https://channel9.msdn.com/events/UKDX/March-Uk-Hack-Fest/Agile-Planning-with-VSTS)
 
 
+## Step-by-step tutorials
 
-## Concepts 
+Get familiar with the tools available to you in the web portal and learn how to set preferences, share information, and get notified when updates are made to code, builds, or work items.  
 
-- [Backlogs, boards, & plans](backlogs-boards-plans.md)    
-- [Adhoc vs managed queries](track/adhoc-vs-managed-queries.md)  
-- [Best practices - Product backlog](concepts/best-practices-product-backlog.md)         
-- [Best practices- Kanban](concepts/best-practices-kanban.md)    
-- [Agile culture and scale](scale/agile-culture.md)   
-- [Practices that scale](scale/practices-that-scale.md)  
+- [Set account preferences](setup-admin/account-preferences.md)  
+- [Set favorites](collaborate/set-favorites.md)   
+- [Follow work and pull requests](collaborate/follow-work-items.md)   
+- [Add and edit a wiki](collaborate/add-edit-wiki.md) 
+- [Dashboards](/docs/report/dashboards)  
+- [Set personal notifications](collaborate/manage-personal-notifications.md) 
 
+## Concepts
 
+- [Team projects, teams, and repos](get-started/team-projects-teams-repos.md)  
+- [Source control](concepts/source-control.md)
+- [Access levels](concepts/access-level.md)
+- [Kanban & Agile](concepts/kanban-agile.md)
+- [Continuous integration](concepts/continuous-integration-deployment.md)
 
-## Reference   
-- [Permissions and access for work tracking](permissions-access-work-tracking.md) 
-- [Work item field index](guidance/work-item-field.md)    
-- [Query fields, operators & macros](track/query-operators-variables.md)  
+## Reference
+- [Permissions and access](setup-admin/permissions-access.md)      
+- [How do Team Services & TFS differ?](about-vsts-tfs.md)  
+- [Migrate from TFS to Team Services](migrate-to-vsts-from-tfs.md) 
+
+## Resources
+- [Marketplace & Billing](marketplace/overview.md)  
+- [Visual Studio Subscriptions](marketplace/vs-subscriptions/buy-vs-subscriptions.md)  
+- [Try extensions for free](setup-admin/team-services/try-additional-features-vs.md)  
+- [Team Services pricing](https://www.visualstudio.com/team-services/pricing/)  
+- [TFS pricing](https://www.visualstudio.com/team-services/tfs-pricing/)   
  
-  
-## Resources 
-- [What is Agile?](https://www.visualstudio.com/learn/what-is-agile/)  
-- [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)  
-- [What is Agile development?](https://www.visualstudio.com/learn/what-is-agile-development/)  
-- [Agile culture](https://www.visualstudio.com/learn/agile-culture/)  
-- [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)  
-- [Creating productive teams](https://www.visualstudio.com/learn/productive-teams/)    
-
-
-  
-
+ 
 <!---
-
-## TBD
-- [Set team defaults](./scale/set-team-defaults.md)  
-- [Customize cards](./customize/customize-cards.md)  
-
-<i><u>Configure</u></i>   
-- [Add columns](./kanban/add-columns.md)  
-- [WIP limits](./kanban/wip-limits.md)  
-- [Split columns](./kanban/split-columns.md)  
-- [Expedite work (swimlanes)](./kanban/expedite-work.md)  
-- [Definition of done](./kanban/definition-of-done.md)  
-- [Customize cards](./customize/customize-cards.md)  
-- [Card reordering](./customize/reorder-cards.md)  
-
 
 ## How-to guides
 
+Users
+* [Go mobile](collaborate/mobile-work.md)  
+* [Switch project or team focus](/docs/work/how-to/switch-team-context-work)    
+* [Connect to a team project](connect/connect-team-projects.md)  
 
-### Agile tools 
-* [Switch project or team focus](how-to/switch-team-context-work.md)  
-* [Filter backlogs, boards, & queries](how-to/filter-backlog-or-board.md)  
-* [Change column options](how-to/set-column-options.md)   
-* [Email/print work items](how-to/email-work-items.md)   
-* [Refine Work item search results](../search/workitem/search-results.md)   
+Account management
+* [Add users (Team Services)](/docs/setup-admin/team-services/add-account-users-assign-access-levels-team-services) 
+* [Add users to team projects](/docs/setup-admin/add-users)
+* [Add administrators](/docs/setup-admin/add-administrator-tfs)
+* [Change permission levels](/docs/setup-admin/tfs/admin/change-permission-levels)
+* [Change access levels (TFS)](/docs/work/connect/change-access-levels) 
+
+Integrate with third-party notification services
+* [Campfire](collaborate/campfire.md)  
+* [Flowdock](collaborate/flowdock.md)  
+* [Hipchat](collaborate/hipchat.md)  
+* [Slack](collaborate/slack.md)  
+
+Install TFS
+* [Single server](/docs/setup-admin/tfs/install/single-server)     
+* [Dual server](/docs/setup-admin/tfs/install/dual-server)  
+* [Multiple servers](/docs/setup-admin/tfs/install/multiple-server)  
+
+ [Key concepts](concepts.md)   
+ [Essential services](services.md)    
+ [Clients and tools](tools.md)     
+ [Software development roles](roles.md)   
  
+* [Team Services, Account Management](setup-admin/team-services/overview.md)  
+* [TFS, Administration](setup-admin/get-started.md)  
+* [Add and manage teams](work/scale/multiple-teams.md)  
 
 
-### Request feedback 
-* [Get feedback](connect/get-feedback.md)     
-* [Provide feedback](connect/give-feedback.md)   
-* [Set feedback permissions](connect/give-permissions-feedback.md)   
-* [Enable remote audio capture](reference/enable-remote-audio-capture.md)  
-* [Change the audio device or annotation tool](reference/change-audio-device-annotation-tool.md)   
-
-### Add & configure teams
-* [Add teams & team members](scale/multiple-teams.md)   
-* [Add team administrators](scale/add-team-administrator.md)   
-* [Set team defaults](scale/set-team-defaults.md)   
-* [Configure team settings](scale/manage-team-assets.md)   
-* [Define work item templates](productivity/work-item-template.md)   
-* Set team favorites  (NEW)    
-* [Set team notifications](../collaborate/manage-team-notifications.md)   
-* [Team rooms](../collaborate/collaborate-in-a-team-room.md)   
-* [Select backlog levels](customize/select-backlog-navigation-levels.md)   
-* [Show bugs](customize/show-bugs-on-backlog.md)   
-* [Set working days](customize/set-working-days.md)    
-* [Customize cards](customize/customize-cards.md)      
+* [Work from your account hub](connect/account-home-pages.md)  
+* [Share your project vision](collaborate/project-vision-status.md)    
+* [Create a readme for your repo](/docs/git/create-a-readme)  
+* [Share work plans](/docs/work/track/share-plans)  
 
 
-### Configure your project 
-* [Define area paths](/team-services/work/customize/set-area-paths)  
-* [Define iteration paths](/team-services/work/customize/set-iteration-paths-sprints)  
-
-### Administrate 
-* [Manage permissions & access](how-to/set-permissions-access-work-tracking.md)  
-* [Change access levels](connect/change-access-levels.md)  
-* [Manage new form rollout](customize/manage-new-form-rollout.md)  
-* [Customize work tracking](/team-services/work/customize/customize-work)  
-* [TFS-Project Server integration](/team-services/work/office/sync-ps-tfs)    
-
-
+ [Navigate in the web portal](connect/work-web-portal.md)   
+ [Navigate in Team Explorer](connect/work-team-explorer.md)  
+ 
 -->

@@ -7,7 +7,7 @@ ms.assetid: 07115349-C78A-4BF4-9037-38EB54A38036
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 07/14/2017
+ms.date: 07/24/2017
 ---
   
 <a id="filter"></a>
@@ -34,7 +34,7 @@ The filter criteria ignores the following characters when the field value starts
 ## Filter based on tags  
 If you've [added tags to your work items](../track/add-tags-to-work-items.md), you can filter your backlogs, Kanban boards, and query results using the ![tag filter icon](../_img/icons/tag_filter_icon.png) tag filter. For backlogs and query results, add Tags as a column option prior to filtering on tags.  
 
-To filter the Kanban board using tags, make sure that you first [customize cards to Show tags](../customize/customize-cards.md). See also, [Filter the Kanban board](../how-to/filter-backlog-or-board.md) for additional options. 
+To filter the Kanban board using tags, make sure that you first [customize cards to Show tags](../customize/customize-cards.md). 
 
 To learn more about filtering using Tags, see [Add tags to work items to categorize and filter lists and boards, Filter lists using tags](../track/add-tags-to-work-items.md#filter)
 
@@ -42,8 +42,6 @@ To learn more about filtering using Tags, see [Add tags to work items to categor
 ## Filter your Kanban board 
 
 Depending on the size of your team and the number of stories in progress, your Kanban board can get a bit crowded. With filtering, you can selectively choose what cards display to focus on what's of interest in the moment. With parent work item filters, you can focus on one or more select features or epics.  
-
-[!INCLUDE [temp](../_shared/feature-availability-simple.md)]
 
 <table width="70%">
 <tr>
