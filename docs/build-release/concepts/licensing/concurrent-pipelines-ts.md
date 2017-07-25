@@ -66,15 +66,21 @@ In the following scenarios you might need multiple concurrent pipelines:
 
 * If you develop multiple applications using one account or server, then you'll likely need additional concurrent pipelines: one to deploy each application at the same time.
 
-## Sharing of pipelines across projects in a collection
+## View available pipelines
 
-Pipelines are purchased at the account level, and they are shared amongst all projects in an account. We don't yet offer a way to partition or dedicate certain pipelines to a specific project or agent pool. For example:
+0. Browse to **Account settings**, **Build and Release**, **Resource limits**.
 
-0. You purchase two pipelines in your account.
+ ![control-panel-account-build-and-release-resource-limits](_img/concurrent-pipelines-vsts/control-panel-account-build-and-release-resource-limits.png)
 
-0. You queue two builds in the first project, and both the pipelines are consumed.
+ URL example: `https://{your_account}/_admin/_buildQueue?_a=resourceLimits`
 
-0. You queue a build in the second project. That build will not start until one of the builds in your first project is completed.
+0. View the maximum number of concurrent pipelines that are available in your account.
+
+0. Select **Pipelines queue...** to display all the builds and releases that are actively consuming an available pipeline or that are queued waiting for a pipeline to be available.
+
+<h2 id="pipeline-issues">Known issues and planned improvements</h2>
+
+### Blocked pipelines under certain conditions
 
 Builds and releases from all projects are queued and allocated to pipelines in the order they are created. Because of this, it may so happen that a build or a release may wait for a pipeline because of earlier builds waiting for agents. For example:
 
@@ -86,7 +92,7 @@ Builds and releases from all projects are queued and allocated to pipelines in t
 
 We're working to improve this model. For now, the workaround is to add more agents to your pool. For example, you could add an agent to pool A mentioned above.
 
-## Sharing of concurrent pipelines among private and hosted agents
+### Sharing of concurrent pipelines among private and hosted agents
 
 If you have sufficient private agents, you can use the concurrent pipelines - both private and hosted - to run builds and releases on private agents. For example:
 
@@ -106,17 +112,19 @@ The same is not true with hosted pipelines and hosted agents. For example:
 
 0. You can only run one build or release at a time across all of the hosted pools.
 
-## View available pipelines
+We're working on using only private pipelines for jobs that run on private agents.
 
-0. Browse to **Account settings**, **Build and Release**, **Resource limits**.
+### Sharing of pipelines across projects in a collection
 
- ![control-panel-account-build-and-release-resource-limits](_img/concurrent-pipelines-vsts/control-panel-account-build-and-release-resource-limits.png)
+Pipelines are purchased at the account level, and they are shared amongst all projects in an account. We don't yet offer a way to partition or dedicate certain pipelines to a specific project or agent pool. For example:
 
- URL example: `https://{your_account}/_admin/_buildQueue?_a=resourceLimits`
+0. You purchase two pipelines in your account.
 
-0. View the maximum number of concurrent pipelines that are available in your account.
+0. You queue two builds in the first project, and both the pipelines are consumed.
 
-0. Select **Pipelines queue...** to display all the builds and releases that are actively consuming an available pipeline or that are queued waiting for a pipeline to be available.
+0. You queue a build in the second project. That build will not start until one of the builds in your first project is completed.
+
+In the future, we plan to support finer control on allocation of pipelines.
 
 ## Q&A
 
@@ -133,8 +141,6 @@ No. You can create hundreds or even thousands of definitions for no charge. You 
 ### I use XAML build controllers with my account. How am I charged for those?
 
 You can register one XAML build controller for each private pipeline in your account. Your account gets at least one free private pipeline, so you can register one XAML build controller for no additional charge. For each additional XAML build controller, you'll need an additional private pipeline.
-
-If you have an account where you run XAML builds using a hosted XAML controller, you should [set up an on-premises build server](https://msdn.microsoft.com/en-us/library/ms181712%28v=vs.120%29.aspx) and switch to an [on-premises build controller](https://msdn.microsoft.com/en-us/library/ee330987%28v=vs.120%29.aspx) now. If you used the hosted XAML build controller, you might have been paying for build minutes, which is a model we no longer support. We will soon block the hosted pool from using the per-minute billing model.
 
 ### As a Visual Studio Enterprise subscriber, do I get additional pipelines for TFS and Team Services?
 
