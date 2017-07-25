@@ -161,7 +161,7 @@ the source code must be in version control.
 
 1. Configure the tasks as shown here:
 
-   ![Nuget Installer](../../../build/steps/package/_img/nuget-installer.png) [Package: Nuget Installer](../../../build/steps/package/nuget-installer.md) - Install and update NuGet package dependencies.
+   ![Nuget Installer](../../../build-release/steps/package/_img/nuget-installer.png) [Package: Nuget Installer](../../../build-release/steps/package/nuget-installer.md) - Install and update NuGet package dependencies.
    
    - **Path to solution or packages.config**: Select your app solution (.sln) file.
    
