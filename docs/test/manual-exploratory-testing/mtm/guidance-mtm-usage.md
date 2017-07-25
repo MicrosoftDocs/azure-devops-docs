@@ -60,7 +60,7 @@ and [test planning with MTM](plan-manual-tests-with-microsoft-test-manager.md)**
 | [View test case references across test suites](../getting-started/create-test-cases.md#qa) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../../_img/table-no.png) |
 | [Assign multiple testers to test plans and test suites for user acceptance testing](../getting-started/user-acceptance-testing.md#assign-and-invite-testers) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../../_img/table-no.png) |
 
-\* These capabilities will be included as part of the upcoming version of the [Test Case Explorer](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer)
+\* These capabilities are included as part of the upcoming version of the [Test Case Explorer](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer)
 extension available from [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 ### Test authoring
