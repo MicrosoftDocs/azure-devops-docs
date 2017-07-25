@@ -46,8 +46,8 @@ You only have access to those actions that are supported on your platform and fo
 </li>
 <li>From the web portal, you can[ multi-select several work items](bulk-modify-work-items.md) from a backlog or query results page and perform a bulk update using the associated feature. </li>
 <li>Changing the State to Remove causes work items to be removed from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and task boards).</li>
-<li>To move work items to another team project, you must be a member of the Project Administrators group or be [granted explicit permissions to move work items](#move-delete-permissions).</li>
-<li>To permanently delete work items from the web portal, you must be a member of the Project Administrators group or be [granted explicit permissions to delete or restore work items](#move-delete-permissions).</li>
+<li>To move work items to another team project, you must be a member of the Project Administrators group or be [granted explicit permissions to move work items](../how-to/set-permissions-access-work-tracking.md#move-delete-permissions).</li>
+<li>To permanently delete work items from the web portal, you must be a member of the Project Administrators group or be [granted explicit permissions to delete or restore work items](../how-to/set-permissions-access-work-tracking.md#move-delete-permissions).</li>
 <li>To delete test artifacts, the following restrictions and operations apply:  
 <ul>
 <li>You must be a member of the Project Administrators group or have the [**Delete test artifacts** permission set to **Allow**](#delete-test-permissions). You must also have permissions set to [manage test plans and test suites](#delete-test-permissions), and your [access level set to Advanced](../connect/change-access-levels.md), which provides access to the full Test feature set.</li> 
@@ -121,7 +121,7 @@ When you discover that a work item belongs to a different team project within yo
 
 	![Work item form, Change team project menu option](_img/move-work-item.png)  
 
-	If you don't see the option, then you haven't been granted [permissions to Move work items out of the project](#move-delete-permissions).  
+	If you don't see the option, then you haven't been granted [permissions to move work items out of the project](../how-to/set-permissions-access-work-tracking.md#move-delete-permissions).  
 
 	Or, from the backlog or query results page, multi-select several work items whose type you want to change. You can select several work items of the same type or different type so long as you want to change them all to the same work item type. 
 
@@ -187,7 +187,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 	<img src="_img/remove-delete-restore.png" alt="Restore selected items" style="border: 1px solid #CCCCCC;" /> 
 
 	>[!NOTE] 
-	>You'll only see the Permanently delete option if your [Permanently delete work items permission](#move-delete-permissions) is set to Allow.  
+	>You'll only see the Permanently delete option if your [Permanently delete work items permission](../how-to/set-permissions-access-work-tracking.md#move-delete-permissions) is set to Allow.  
 
 3.	Confirm your selection. 
 
@@ -219,7 +219,7 @@ You can run ```witadmin destroywi``` against an on-premises TFS server or Team S
 	```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```  
 
 	>[!NOTE] 
-	>**Required permissions:** For Team Services and TFS 2015.2 or later versions, you must have [Permanently delete work items permission set to Allow](#move-delete-permissions). For TFS 2015.1 or earlier versions, you must be a member of the Project Administrators group of have Edit project-level information permissions set to Allow.    
+	>**Required permissions:** For Team Services and TFS 2015.2 or later versions, you must have [Permanently delete work items permission set to Allow](../how-to/set-permissions-access-work-tracking.md#move-delete-permissions). For TFS 2015.1 or earlier versions, you must be a member of the Project Administrators group of have Edit project-level information permissions set to Allow.    
 
 
 <a id="delete-test"> </a> 
@@ -232,7 +232,7 @@ You can run ```witadmin destroywi``` against an on-premises TFS server or Team S
 
 1. To delete a test case, open it from the web portal and choose the Permanently delete option from the actions menu. (Bulk deletion is not supported from a query results page.)     
 
-	!<img src="_img/delete-test-artifacts-form.png" alt="Delete a test case and associated test artifacts from the web form" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/delete-test-artifacts-form.png" alt="Delete a test case and associated test artifacts from the web form" style="border: 1px solid #CCCCCC;" />  
 
 	>[!NOTE] 
 	>You'll only see the Permanently delete option if you have the necessary permissions and access. You must be a member of the Project Administrators group or have the [**Delete test artifacts** permission set to **Allow**](#delete-test-permissions). You must also have your [access level set to Advanced](../connect/change-access-levels.md), which provides access to the full Test feature set. Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from the work hub that aren't linked to any test plans or test suites. 
@@ -270,35 +270,6 @@ To learn more about managing test artifacts, see:
 - [Control how long to keep test results](../../test/manual-exploratory-testing/getting-started/how-long-to-keep-test-results.md) 
 
 
-<a id="move-delete-permissions"></a>
-###Set permissions to delete work items   
-
-By default, Project Administrators and Contributors can change the work item type and delete work items by moving them to the Recycle bin. Only Project Administrators can permanently delete work items and test artifacts. Project admins can grant permissions to other team members as needed. 
-
-For example, as a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the team project and choose the user or group you want to grant permissions. (To learn how to access the admin pages, see [Work in the web portal](../../connect/work-web-portal.md).)
-
-In this example, we grant the Team Admins group permissions to move work items to another team project and to permanently delete work items.     
-
-<img src="_img/delete-test-project-permissions.png" alt="Set Team Admin permissions" style="border: 1px solid #CCCCCC;" />
-
-<a id="restrict-delete-permissions"></a>
-###Restrict users from deleting work items 
-You can restrict users from deleting work items by changing their permissions to Dlete work items in this project. For more information about restricting permissions, see [Restrict access to resources, Work items](../../setup-admin/restrict-access-tfs.md#work-items). 
-
-<a id="delete-test-permissions"></a>
-###Additional permissions and access level required to delete test artifacts
-  
-In addition to the project-level permissions set in the previous section, team members need permissions to manage test artifacts which are set for an area path. 
-
-Open the Security page for the area path and choose the user or group you want to grant permissions.
-
-<img src="_img/delete-test-artifacts-open-area-permissions.png" alt="Open Area path permissions for the team project" style="border: 1px solid #CCCCCC;" />
-
-Set the permissions for **Manage test plans** and **Manage test suites** to **Allow**.  
-
-<img src="_img/delete-test-artifacts-area-path-permissions.png" alt="Set Area path permissions for the team project" style="border: 1px solid #CCCCCC;" />
-
-To have full access to the Test feature set, your [access level must be set to Advanced](../connect/change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
 
 ###Delete and restore actions performed under the hood  
 

@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/29/2017  
+ms.date: 07/21/2017  
 ---
 
 
@@ -24,69 +24,35 @@ For a list of all link types and supported link relationships, see [Link work it
 <a id="link"> </a>  
 ## Link several items to an existing or new work item 
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
+#### Team Services 
 
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#link">Link multiple work items</li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#link-tfs-2015">TFS 2015</a></li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#link-tfs-2017">TFS 2017</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#link-team-services">Team Services</a></li>
-</ul>
+1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
 
-<div id="link" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
+2. Open the &hellip; context menu of one of the selected work items, choose **Add link**, and then choose **Existing item**&hellip; or **New item**&hellip;. 
 
-<div id="link-tfs-2015" class="tab-pane fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
+	Here we multi-select from the product backlog and choose **Existing item**&hellip;.
 
+	<img src="_img/add-link-existing-backlog-ts.png" alt="Team Services, Query results page, multi-select items, open context menu, Add link, click Link to new item item" style="border: 1px solid #CCCCCC;" /> 
 
-<ol>
-<li><p>From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.</p>
-</li>
+#### TFS 2017  
 
-<li><p>Open the context menu of one of the selected work items, and then choose <b>Link selected item(s) to a new work item&hellip;</b> or <b>Link to an existing item&hellip;</b>.</p> 
-<p>Here we multi-select from the Queries page and choose <b>Link selected item(s) to a new work item&hellip;</b>.</p>
-<img src="_img/add-link-query-new-work-item-2015.png" alt="TFS 2015, Query results page, multi-select items, open context menu, click Link to a new work item" style="border: 1px solid #CCCCCC;" /> 
-</li>
-</ol>
- 
-</div>
+1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to. 
 
+2. Open the &hellip; context menu of one of the selected work items, and then choose **Link to a new item**&hellip; or **Link to an existing item**&hellip;. 
 
-<div id="link-tfs-2017" class="tab-pane fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
+	Here we multi-select from the Queries page and choose <b>Link to a new item&hellip;</b>.</p>
 
-<ol>
-<li><p>From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.</p>
-</li>
+	<img src="_img/add-link-query-new-work-item-2016.png" alt="TFS 2017, Query results page, multi-select items, open context menu, click Link to a new work item" style="border: 1px solid #CCCCCC;" /> 
 
-<li><p>Open the &hellip; context menu of one of the selected work items, and then choose <b>Link to a new item&hellip;</b> or <b>Link to an existing item&hellip;</b>.</p> 
-<p>Here we multi-select from the Queries page and choose <b>Link to a new item&hellip;</b>.</p>
-<img src="_img/add-link-query-new-work-item-2016.png" alt="TFS 2017, Query results page, multi-select items, open context menu, click Link to a new work item" style="border: 1px solid #CCCCCC;" /> 
-</li>
-</ol>
+#### TFS 2015  
 
- 
+1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
 
-</div>
+2. Open the context menu of one of the selected work items, and then choose **Link selected item(s) to a new work item**&hellip; or **Link to an existing item**&hellip;.
 
-<div id="link-team-services" class="tab-pane fade in active">  
+	Here we multi-select from the Queries page and choose **Link selected item(s) to a new work item**&hellip;. 
 
-
-<ol>
-<li><p>From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.</p>
-</li>
-
-<li><p>Open the &hellip; context menu of one of the selected work items, choose **Add link**, and then choose <b>Existing item&hellip;</b> or <b>New item&hellip;</b>.</p> 
-<p>Here we multi-select from the product backlog and choose <b>Existing item&hellip;</b>.</p>
-<img src="_img/add-link-existing-backlog-ts.png" alt="Team Services, Query results page, multi-select items, open context menu, Add link, click Link to new item item" style="border: 1px solid #CCCCCC;" /> 
-</li>
-</ol>
-
-</div>
-
-
-</div>
-</div>
-
-
+	<img src="_img/add-link-query-new-work-item-2015.png" alt="TFS 2015, Query results page, multi-select items, open context menu, click Link to a new work item" style="border: 1px solid #CCCCCC;" /> 
 
 <a id="link-existing"> </a>  
 ### Link to an existing work item    
@@ -196,17 +162,18 @@ Additional features you can use to quickly link or change links that use the par
 - To add or delete work items or change the link structure, you can use Excel or Project. See [Bulk add or modify work items with Excel](../office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../office/create-your-backlog-tasks-using-project.md).
 
 
-##Related notes
+## Related notes
 To add fields or customize a work item form, see [Customize your work tracking experience](../customize/customize-work.md). The method you use depends on the process model that supports your team project.  
 
 For additional information, see: 
 
-- [Link work items to support traceability](../track/link-work-items-support-traceability.md)
 - [Map backlog items to portfolio backlog items](organize-backlog.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Use Excel to edit parent-child links](../office/bulk-add-modify-work-items-excel.md)
 - [Use Project to edit parent-child and predecessor-successor links](../office/create-your-backlog-tasks-using-project.md)
- 
+- [Link work items to support traceability](../track/link-work-items-support-traceability.md)
+
+
 ### Required permissions  
   
 To add, modify, or remove a link between work items, you must have permission to view both of the work items and to modify at least one of them. You must be a member of the **Contributors** group or have your **View work items in this node**, and your **Edit work items in this node** permissions set to **Allow**.  

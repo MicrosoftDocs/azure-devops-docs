@@ -7,7 +7,7 @@ ms.assetid: F9DC4D34-36D6-42D6-AA8F-E7FE1CC60676
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 07/12/2017
+ms.date: 07/21/2017
 ---
 
 # Capacity planning  
@@ -18,10 +18,12 @@ How much work can your team accomplish in a sprint? Using the capacity planning 
 
 [Sprint planning](../scrum/sprint-planning.md#set-capacity) introduced the basics of setting your team capacity. Here, we go into more detail to address how to:  
 
-- Copy capacity from the previous sprint to the current sprint  
-- Track capacity when performing multiple activities  
-- Add or remove user accounts from capacity planning for a sprint  
-- Track capacity when working on more than one team  
+> [!div class="checklist"]   
+> * Copy capacity from the previous sprint to the current sprint  
+> * Track capacity when performing multiple activities  
+> * Add or remove user accounts from capacity planning for a sprint  
+> * Track capacity when working on more than one team  
+
 
 <a id="set-capacity">  </a>
 
@@ -38,41 +40,16 @@ From the Capacity page, enter the capacity and days off for each member of your 
 
 For example, Christie Church's capacity is 6 hours/day for design work. 
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;"> 
-
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-
-<li style="float:left;" data-toggle="collapse" data-target="#capacity">Capacity </li>
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs-2015-capacity">TFS 2015</a></li>
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs-2015-1-capacity">TFS 2015.1</a></li>
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs-15-capacity">TFS 2017</a></li>
-
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#team-services-capacity">Team Services</a></li>
-</ul>
- 
-<div id="capacity" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-
-<div id="team-services-capacity" class="tab-pane fade in active">
+#### Team Services and TFS 2017
 <img src="_img/capacity-planning-set-capacity-tfs-15.png" alt="Team Services, Set Capacity" style="border: 1px solid #CCCCCC;" /> 
-</div>
+ 
 
-<div class="tab-pane fade" id="tfs-2015-capacity" >
-<img src="_img/set-sprint1-capacity.png" title="TFS 2015, Set Capacity" alt="Capacity page" style="border: 1px solid #CCCCCC;" />  
-</div>
-
-<div class="tab-pane fade" id="tfs-2015-1-capacity" >
+#### TFS 2015.1
 <img src="_img/capacity-planning-set-capacity-tfs-2015.1.png" alt="TFS 2015.1, Set Capacity" style="border: 1px solid #CCCCCC;" /> 
-</div>
 
-<div class="tab-pane fade" id="tfs-15-capacity" >
-<img src="_img/capacity-planning-set-capacity-tfs-15.png" alt="TFS '15', Set Capacity" style="border: 1px solid #CCCCCC;" /> 
-</div>
 
-</div>
-</div>
+#### TFS 2015  
+<img src="_img/set-sprint1-capacity.png" alt="TFS '15', Set Capacity" style="border: 1px solid #CCCCCC;" /> 
 
 
 Most teams specify capacity in terms of hours, however, you can also specify it in days. For example, .5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit you will use to estimate the time a task will take to complete.
@@ -84,7 +61,7 @@ Most teams specify capacity in terms of hours, however, you can also specify it 
 
 If you haven't set up sprints yet for your team, go [here to do that now](../scrum/define-sprints.md).
 
-If you don't see a team member listed, you need to [add them to the team](../scale/manage-team-assets.md#add-team-admin). Also, you only have to indicate planned days off for the team. You [set weekend days or other recurring days off](#team_settings) under team settings.  
+If you don't see a team member listed, you need to [add them to the team](../scale/multiple-teams.md#add-team-members). Also, you only have to indicate planned days off for the team. You [set weekend days or other recurring days off](#team_settings) under team settings.  
 
 <a id="copy-capacity">  </a>
 ##Copy capacity planning from the previous sprint 

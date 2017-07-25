@@ -16,8 +16,6 @@ ms.date: 06/22/2017
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
 
-
-
 <a id="sprint-planning-meeting">  </a>
 ## Sprint planning meetings 
 
@@ -106,3 +104,61 @@ While bugs contribute to technical debt, they may not represent all debt.
 Poor software design, poorly written code, or short-term fixes in place of best, well-designed solutions can all contribute to technical debt. Technical debt reflects extra development work that arises from all these problems. 
 
 You need to track work to address technical debt as PBIs, user stories, or bugs. To track a team's progress in incurring and addressing technical debt, you'll want to consider how to categorize the work item and the details you want to track. You can [add tags to any work item to group it into a category of your choosing](../track/add-tags-to-work-items.md). 
+
+
+<a id="scrum-master-role">  </a>
+### Role of the Scrum Master  
+
+Scrum Masters help build and maintain healthy teams by employing Scrum processes. They guide, coach, teach, and assist Scrum teams in the proper employment of Scrum methods. Scrum Masters also act as change agents to help teams overcome impediments and to drive the team toward significant productivity increases.   
+
+Core responsibilities of Scrum Masters include: 
+*	Support the team to adopt and follow Scrum processes. 
+	For example, you should not let the daily Scrum meeting become an open discussion that lasts 45 minutes. 
+*	Guard against the product owner or team members from adding work after the sprint begins.  
+
+*	Clear blocking issues that prevent the team from making forward progress. 
+	This might require you to perform small tasks, such as approving a purchase order for a new build computer or resolving a conflict within your team.   
+*	Help the team work to resolve conflicts and issues that arise and learn from the process.  
+*	Ask questions that reveal hidden issues and confirm that what people are communicating is well understood by the entire team.  
+*	Identify and safeguard the team from potential issues becoming major issues. Just as it's cheaper to fix a bug soon after it's discovered, it's also easier and less disruptive to fix a team issue when it's small and manageable.  
+*	Prevent the team from presenting incomplete user stories during a [sprint review meeting](sprint-burndown.md#sprint-review-meeting).
+*	Gather, analyze, and present data to business stakeholders in a way that 
+	demonstrates how the team is improving and growing. For example, if your team has significantly increased the amount of value that it has delivered while generating fewer bugs, make the value visible through regular communications to business stakeholders.   
+
+Good Scrum Masters possess or develop excellent communication, negotiation, and conflict resolution skills. They actively listen to not only the words that people say and write but also how they deliver their messages (their body language, facial expressions, vocal pace, and other nonverbal communication). 
+
+Just as it's cheaper to fix a bug soon after it's discovered, it's also easier and less disruptive to fix a team issue when it's small and manageable before it grows into a major issue.  
+
+<a id="daily-scrum-meetings">  </a>
+### Daily Scrum meetings
+Daily Scrum meetings help keep a team focused on what it needs to do the next day to maximize the team's ability to meet its sprint commitments. Your Scrum Master should enforce the structure of the meeting and ensure that it starts on time and finishes in 15 minutes or less.  
+
+Three aspects of successful Scrum meetings are:
+
+
+*	Everyone stands up (this helps to keep the meetings focused and short) 
+*	They start and end on time and occur at the same time in the same location each day 
+*	Everyone participates, each team member answers the three Scrum questions:
+	*	*What have I accomplished since the most recent Scrum?*  
+	*	*What will I accomplish before the next Scrum?*  
+	*	*What blocking issues or impediments might affect my work?*  
+
+Team members should strive to answer their questions quickly and concisely. For example: 
+
+>*"Yesterday, I updated the class to reflect the new data element that we pull from the database, and I got it to appear in the interface. This task is complete. Today, I will ensure that the new data element is correctly calculating with the stored procedure and the other data elements in the table. I believe I will accomplish this task today. I will need someone to review my calculations. I have no impediments or blocking issues."*  
+
+This response conveys what was accomplished, what will be accomplished, and that the team member would like some help looking at the code.
+
+Contrast with this next example:  
+
+>*"Yesterday, I worked on the class, and it works. Today, I will work on the interface. No blocking issues."*  
+
+
+Here, the team member doesn't provide enough detail about what class they worked on nor which interface components they'll complete. In fact, the word accomplished never came up.
+
+It's important that no one interrupts during report outs. Each person must have sufficient time to answer the three questions. 
+
+More in-depth and follow-up discussions should take place after the meeting, as people return to their desks or, if a significant amount of conversation is necessary, in a follow-up meeting.
+
+Many teams delay discussions by using the "virtual parking lot" method. As topics come up that a team member believes warrants further discussion, they can quietly walk to a whiteboard or flipchart and list the topic in the parking lot. At the end of the meeting, the team determines how they'll handle the listed items. 
+ 

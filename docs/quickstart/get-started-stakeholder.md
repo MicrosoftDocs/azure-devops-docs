@@ -10,7 +10,7 @@ ms.topic: get-started-article
 ms.date: 07/20/2017
 ---
 
-# Get started with Stakeholder access
+# Get started as a Stakeholder  
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
@@ -29,13 +29,13 @@ With Stakeholder access, you can add and modify work items, approve releases, an
 
   For example, to connect to the server named *FabrikamPrime* and project named *Contoso*, type ```http://FabrikamPrime:8080/tfs/DefaultCollection/Contoso```.
 
-2.  Enter your credentials. If you aren't able to sign in, you need to be added as a member to a team project and added to Stakeholder access. 
+2.  Enter your credentials. If you aren't able to sign in, ask the account owner or project administrator to add you as a member of the team project with Stakeholder access. 
 
 
 <a id="create-work-item">  </a> 
 ## Add a work item
 
-You might see different work item types in your view based on the process selected for your team project: [Scrum](../work/guidance/scrum-process.md), [Agile](../work/guidance/agile-process.md),  or [CMMI](../work/guidance/cmmi-process.md). 
+You might see different work item types in your view based on the process selected for your team project: [Scrum](../work/guidance/scrum-process.md), [Agile](../work/guidance/agile-process.md), or [CMMI](../work/guidance/cmmi-process.md). 
 
 
 >[!NOTE]  
@@ -45,7 +45,7 @@ You might see different work item types in your view based on the process select
 
 From the Work hub, choose a work item, for example User Story, from the New Work Item list of options. Click the ![pin icon](../work/_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu.   
 
-<img src="_img/stakholder-add-work-item-ts.png" alt="Team Services, TFS 2017, Work hub, Add a work item" style="border: 1px solid #CCCCCC;" />   
+<img src="../work/backlogs/_img/add-work-items-choose-user-story.png" alt="Web portal, project page, Work hub, Add a work item" style="border: 1px solid #CCCCCC;" />  
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
@@ -125,7 +125,7 @@ For a comparison chart of Stakeholder vs Basic access, see this [feature matrix]
 > [!div class="mx-tdBreakAll"]  
 > |Work  |Account, Dashboards, and Notifications|
 > |-------------|----------|  
-> |- [View, create, and modify work items](#create-work-item) <sup>4</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>5</sup><br/>- [View, and modify items on sprint backlogs](../work/scrum/sprint-planning.md) <sup>5</sup><br/>- [View, and modify items on the task board](../work/scrum/task-board.md) <sup>5, 6</sup><br/>- [View, and modify items (Kanban)](../work/kanban/kanban-basics.md)  <sup>5, 6</sup><br/>- [Add tasks to the checklist (Kanban)](../work/kanban/add-task-checklists.md) <sup>5, 6</sup> (TFS 2015.1)<br/>- >[Follow changes made to work items](../collaborate/follow-work-items.md) (TFS 2017)<br/>- [View the cumulative flow diagram](../report/guidance/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>7</sup> <br/>- [Submit, view, and change feedback responses](../work/connect/give-feedback.md)<br/>- [Change work item type](../work/backlogs/remove-delete-work-items.md) (Team Services<br/>**Build & Release**<br/>- [View releases](../build-release/actions/view-manage-releases.md) <sup>3</sup> (TFS 2015.2)<br/>- [Approve a release](../build-release/concepts/definitions/release/environments.md#approvals) (TFS 2015.2) | [Navigate to teams, team projects, and more](../connect/account-home-pages.md) (Team Services)<br/>- [View project welcome pages](../collaborate/project-vision-status.md) (Team Services)<br/>- [View team dashboards](../report/dashboards.md) <sup>1</sup><br/>- [Manage personal notifications](../collaborate/manage-personal-notifications.md) (Team Services, TFS 2017) <br/>- [Set personal alerts for changes to work items](../work/track/alerts-and-notifications.md) (TFS) <br/>- [Invite users and assign licenses](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) <sup>2</sup>  (Team Services)  |
+> |- [View, create, and modify work items](#create-work-item) <sup>4</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>5</sup><br/>- [View, and modify items on sprint backlogs](../work/scrum/sprint-planning.md) <sup>5</sup><br/>- [View, and modify items on the task board](../work/scrum/task-board.md) <sup>5, 6</sup><br/>- [View, and modify items (Kanban)](../work/kanban/kanban-basics.md)  <sup>5, 6</sup><br/>- [Add tasks to the checklist (Kanban)](../work/kanban/add-task-checklists.md) <sup>5, 6</sup> (TFS 2015.1)<br/>- >[Follow changes made to work items](../collaborate/follow-work-items.md) (TFS 2017)<br/>- [View the cumulative flow diagram](../report/guidance/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>7</sup> <br/>- [Submit, view, and change feedback responses](../work/connect/give-feedback.md)<br/>- [Change work item type](../work/backlogs/remove-delete-work-items.md) (Team Services<br/>**Build & Release**<br/>- [View releases](../build/actions/view-manage-releases.md) <sup>3</sup> (TFS 2015.2)<br/>- [Approve a release](../build/concepts/definitions/release/environments.md#approvals) (TFS 2015.2) | [Navigate to teams, team projects, and more](../connect/account-home-pages.md) (Team Services)<br/>- [View project welcome pages](../collaborate/project-vision-status.md) (Team Services)<br/>- [View team dashboards](../report/dashboards.md) <sup>1</sup><br/>- [Manage personal notifications](../collaborate/manage-personal-notifications.md) (Team Services, TFS 2017) <br/>- [Set personal alerts for changes to work items](../work/track/alerts-and-notifications.md) (TFS) <br/>- [Invite users and assign licenses](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) <sup>2</sup>  (Team Services)  |
 
 **Notes:**   
 1. Stakeholders cannot view markdown README files defined for repositories.  

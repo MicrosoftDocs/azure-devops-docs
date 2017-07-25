@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 5f3d7c83-15bd-4176-b594-3e2ddc1afd6b 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/05/2017
+ms.date: 07/21/2017
 ---
 
 # Collaborate in a team room  
@@ -25,6 +25,9 @@ Team rooms, like chat rooms, provide teams with a space to discuss work in progr
 
 By using the team room instead of email threads, you automatically receive an audit trail of conversations and decisions. By reviewing the archive, you can quickly catch up with the team when you've been away or in a different time zone.
 
+A team room is created for [each team that gets created](../work/scale/multiple-teams.md). Team administrators can create additional rooms and manage their team rooms.  
+
+Members of the Project Administrators groups can create and administer team rooms that they have created. And, members of the Project Collection Administrators groups can create and administer all team rooms.  
 
 ## Join the conversation
 1. From your team's home page, open the room.  
@@ -117,7 +120,28 @@ A team room is automatically created when you [add a team](../work/scale/multipl
 - For other uses of the `#mention` control plus more ways to increase your productivity, see [Productivity tips](../work/productivity/productivity-tips.md)   
 - To change your profile image, see [Account preferences](../setup-admin/account-preferences.md).  
 
-###Ways other teams use team rooms 
+
+<a id="team-room-permissions"> </a>
+### Administer team room permissions
+
+You can grant permissions to users to administer a team room.  
+
+1. From the context menu, open permissions for the team room.  
+
+	![Open team room permissions](../work/scale/_img/open-security-team-room.png)  
+
+2. Add an account, set the permissions for Administer to **Allow**, and save the changes.   
+
+	![Add menu on Permissions page for a team room](../work/scale/_img/add-team-admin-dialog.png) 
+
+
+<a id="team-room-event-permissions">  </a>
+### Permissions to open team room events
+               
+Permissions on team room events are managed by their associated operational area. It is possible for a team member to have permissions to collaborate within a team room, yet not be allowed to view work items, build definitions, or source code that have alerts enabled in the team room. 
+
+
+### Ways other teams use team rooms 
 Many teams use team rooms to support these scenarios:  
 
 * *Daily standup*: Capture the review of what happened the previous day and discuss any issues or blocking items based on real history. 
@@ -126,6 +150,6 @@ Many teams use team rooms to support these scenarios:
 
 * *Memory stream*: Configuring all events gives you an archive where you can review changesets, work item updates, and build progress all in one place. 
 
-###Additional collaboration tools  
+### Additional collaboration tools  
 
 Check out the [Marketplace extensions tagged for collaboration](https://marketplace.visualstudio.com/vsts/Collaborate?sortBy=Downloads).  

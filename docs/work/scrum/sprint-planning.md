@@ -7,7 +7,7 @@ ms.assetid: AD107B7C-D0AA-44B1-8288-2AB046194439
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 06/22/2017
+ms.date: 07/21/2017
 ---
 
 
@@ -24,6 +24,15 @@ backlog items that the team feels it can commit to completing in the sprint, bas
 These items get added to the sprint backlog. In the second part, your team determines how it will develop and test each item. 
 They then define and estimate the tasks required to complete each item. Finally, your team commits to implementing 
 some or all of the items based on these estimates. 
+
+In this topic you'll learn how to:  
+
+> [!div class="checklist"]   
+> * Assign backlog items to a sprint   
+> * Set your team's capacity        
+> * Add tasks to backlog items  
+> * Adjust work to fit team capacity  
+> * Share your sprint plan      
 
 >[!NOTE]
 >Your sprint backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs-boards-plans.md). 
@@ -81,6 +90,7 @@ From the Capacity page, enter the capacity and days off for each member of your 
 
 Most teams specify capacity in terms of hours, however, you can also specify it in days. For example, .5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit you will use to estimate the time a task will take to complete. You only have to indicate planned days off. You [manage weekend days or other recurring days off](../customize/set-working-days.md) under team settings.
 
+<!---
 >[!NOTE]  
 >The user interface is slightly different depending on the platform and version you work from. 
 
@@ -120,7 +130,7 @@ For example, Christie Church's capacity is 6 hours/day for design work.
 </div>
 </div>
 
-
+-->
 
 
 <a id="define-tasks">  </a>

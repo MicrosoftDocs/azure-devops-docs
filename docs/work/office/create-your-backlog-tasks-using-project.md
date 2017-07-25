@@ -7,7 +7,7 @@ ms.prod: vs-devops-alm
 ms.assetid: be5cef4f-755f-4ffe-8dd7-876d1e02c330
 ms.manager: douge  
 ms.author: kaelli  
-ms.date: 03/16/2016  
+ms.date: 07/21/2017  
 ---
 
 # Create your backlog and tasks using Project 
@@ -17,6 +17,16 @@ ms.date: 03/16/2016
 If Office Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in Team Services or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
 
 Working in Project is similar to publishing and refreshing work items using [Office Excel](bulk-add-modify-work-items-excel.md), with a few differences as described [later in this topic](#differences).
+
+Use this topic to learn how to:  
+
+> [!div class="checklist"]   
+> * Connect a Project plan to a team project  
+> * Add tasks to Project and publish them as work items to VSTS or TFS       
+> * Indent tasks to create parent-child links 
+> * Link tasks to create predecessor-successor links  
+> * View how Project columns map to work item fields    
+
 
 >[!NOTE] 
 >You can also manage projects using Project Professional and [Project Server synchronized with TFS](../tfs-ps-sync/synchronize-tfs-project-server.md) , but you can't use Project Professional to both publish and refresh to TFS and synchronize with TFS.
@@ -175,4 +185,3 @@ You can change how Team Foundation fields map to fields in Microsoft Project, an
 
 Support for a Mac OS is not supported. You need to use Project on the same computer where you have installed Visual Studio or the  Team Foundation Server Standalone Office Integration 2015 in order to get the Team Foundation add-in. These applications require a Windows OS.
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)]  

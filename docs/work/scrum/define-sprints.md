@@ -7,8 +7,8 @@ ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 07/14/2017
---- 
+ms.date: 07/21/2017
+---
 
 
 # Schedule sprints  
@@ -62,10 +62,11 @@ Defining additional sprints is a two-step process. You first define the sprints 
 
 [![Define team project sprints](_img/define-sprints-project-level.png)](../customize/set-area-paths.md)[![Select team sprints](_img/define-sprints-team-level.png)](../scale/set-team-defaults.md)
 
+Each sprint that you select for your team provides access to a [sprint backlog, task board, and other sprint planning tools](../concepts/sprint-planning-tools.md) for planning and tracking work. 
 
+For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint. 
 
-
-
+![Team Services, sprints](_img/define-sprints-selected-team-iterations-vsts.png)
 
 
 ## Related notes 
@@ -76,35 +77,4 @@ If you work with several teams, and each team wants their own backlog view, you 
 - [Configure team settings](../scale/manage-team-assets.md)  
  
 
-### How selected sprints show up on the backlog 
-Each sprint that you select for your team provides access to a sprint backlog, task board, and other Agile tools for planning and tracking work. 
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#sprints">Selected sprints</li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs2015-sprints">TFS 2015</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#ts-sprints">Team Services & TFS 2017</a></li>
-
-</ul>
- 
-<div id="sprints" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-
-<div id="ts-sprints" class="tab-pane fade in active"> 
-<p>For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint.  </p>
-![Team Services, sprints](_img/define-sprints-selected-team-iterations-vsts.png)
-</div>
-
-
-<div id="tfs2015-sprints" class="tab-pane fade">
-
-<p>For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access to four sprint backlogs. They also get access to capacity planning tools and a task board for each sprint.  </p>
-
-![Selected iterations generate sprint backlogs](_img/selected-iterations-generate-sprint-backlogs.png) 
-</div>
-</div>
-</div> 
-
-
-<div style="clear:left;font-size:100%">
-</div>

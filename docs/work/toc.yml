@@ -287,7 +287,7 @@
       href: customize/show-bugs-on-backlog.md
     - name: Set working days
       href: customize/set-working-days.md
-    - name: Set team favorites (NEW TOPIC)
+    - name: Set team favorites
       href: ../collaborate/set-favorites.md
     - name: Customize cards
       href: customize/customize-cards.md
@@ -308,7 +308,7 @@
     - name: Customize work tracking
       href: customize/customize-work.md
     - name: TFS-Project Server integration
-      href: office/sync-ps-tfs.md)
+      href: office/sync-ps-tfs.md
 - name: Reference
   items:
   - name: "Permissions & access for work tracking"

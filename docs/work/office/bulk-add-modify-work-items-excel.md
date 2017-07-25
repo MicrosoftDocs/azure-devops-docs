@@ -309,4 +309,4 @@ See [Show the Developer Tab on the Ribbon](https://msdn.microsoft.com/library/bb
 
 Support for a Mac OS is not supported. You need to use Excel on the same computer where you have installed Visual Studio or Team Explorer in order to get the Team Foundation add-in. These applications require a Windows OS.
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)]  
+

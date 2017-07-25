@@ -675,7 +675,7 @@ When adding custom fields, note the following limits:
 -->
 
 [add-team-members]: ../scale/multiple-teams.md#add-team-members
-[add-team-admin]: ../scale/team-assets.md#add-team-admin
+[add-team-admin]: ../scale/add-team-administrator.md
 
  
   

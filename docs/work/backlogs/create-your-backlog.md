@@ -7,7 +7,7 @@ ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 07/13/2017
+ms.date: 07/21/2017
 ---
 
 # Create your backlog
@@ -33,41 +33,20 @@ Building your backlog starts by quickly capturing the requirements you want for 
 
 ### Open your backlog from the web portal
 
-You access your product backlog from the Work hub, Backlogs page. To define or manage the product backlog, you should be a member of the team and belong to the Contributors group. If you don't have access to the team project, [get invited to the team](../scale/multiple-teams.md#add-team-members).  
-
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-
-<li style="float:left;" data-toggle="collapse" data-target="#open-backlog">Open product backlog</li> 
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:50px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#open-backlog-tfs-2015-13">TFS 2015, TFS 2013</a></li>
-
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#open-backlog-team-services">Team Services, TFS 2017</a></li>
-
-</ul>
+You access your product backlog from the **Work** hub, **Backlogs** page. If you don't have a team project yet, create one in [Visual Studio Team Services](../../setup-admin/team-services/set-up-vs.md) or set one up in an [on-premises TFS](../../setup-admin/create-team-project.md).   
  
-<div id="open-backlog" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
+<img src="../backlogs/_img/cyb-open-backlog-tfs-2017.png" alt="Web portal, choose Work hub, Backlogs" style="border: 1px solid #CCCCCC;" /> 
 
+The URL follows this pattern:  
+- **Team Services**: ```https://<account name>.visualstudio.com/DefaultCollection/<project name>/_backlogs```  
+- **On-premises TFS**: ```http://serverName:8080/tfs/DefaultCollection/projectName/_backlogs```  
+  
+To contribute to the backlog, you must be a member of the Contributors group. If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) or [TFS](../../setup-admin/add-users.md).
 
-<div id="open-backlog-team-services" class="tab-pane fade in active"> 
-
-<img src="_img/cyb-open-backlog-tfs-2017.png" alt="Web portal, choose Work hub, Backlogs" style="border: 1px solid #CCCCCC;" /> 
-
-<p>The URL follows this pattern:</p>
-<ul>
-<li>Visual Studio Team Services: ```https://{account}.visualstudio.com/{project name}/_backlogs```</li>
-<li>Team Foundation Server (on-premises): ```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```</li>
-</ul>
-
-<p>If you don't see the team or team project you want, click the ![Team Services icon](../_img/icons/project-icon.png) Team Services icon to [browse all team projects and teams](/team-services/connect/account-home-pages). </p> 
+If you don't see the team or team project you want, click the ![Team Services icon](../_img/icons/project-icon.png) Team Services icon to [browse all team projects and teams](../../connect/account-home-pages.md). 
  
-
-</div>
-
-<div id="open-backlog-tfs-2015-13" class="tab-pane fade"> 
-
-
+ 
+<!---
 <img src="_img/cyb-open-backlog-tfs-2015.png" alt="Open the backlog" style="border: 1px solid #CCCCCC;" />  
 
 <p>The URL follows this pattern:</p>
@@ -79,22 +58,14 @@ You access your product backlog from the Work hub, Backlogs page. To define or m
 
 <p>If you don't have a team project yet, create one in [Visual Studio Team Services](../../setup-admin/team-services/set-up-vs.md) or set one up in an [on-premises TFS](../../setup-admin/create-team-project.md). </p>  
 
-</div>
+-->
 
-
-
-</div>
-</div> 
-
- 
-
-### Build your backlog
+## Build your backlog
 Begin building your backlog by entering a title and click Add. Repeat this step until you've captured all your main ideas. 
 
 > [!TIP]  
 > Your backlog shows work that you are planning to do or have started working on. As soon as the State of a work item is set to Done or Completed, the work item no longer shows up on your backlog. You can use the [backlog controls](#backlog-controls) to filter or change your view.     
   
-
 <img src="_img/create-backlog-add-new-items-ts.png" alt="Add work items to the backlog" style="border: 1px solid #CCCCCC;" />  
 
 >[!NOTE]  
@@ -103,10 +74,8 @@ the items in your backlog may be called product backlog items (PBIs), user stori
 >
 >By default, PBIs and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can [choose how they want to treat bugs: either as requirements or tasks](../customize/show-bugs-on-backlog.md). 
 
-If you've already defined a long list of items, you don't have to reenter them one at a time. Instead, use [Microsoft Excel](../office/bulk-add-modify-work-items-excel.md) to quickly import them to your backlog.
-
 <a id="move-items-priority-order">  </a>
-##Move items into priority order
+## Move items into priority order
 After you've got some items on your backlog, you can order them and create a prioritized list of work. Frequently reviewing and prioritizing your backlog can help your team know what's most important to deliver next.
 
 Reorder your backlog by simply dragging work items. Or, if you prefer the keyboard, hold the Alt key  and use the up and down arrows.
@@ -124,7 +93,6 @@ Getting your backlog built and prioritized provides the high level roadmap.
 However, before your team can actually start work on any item, they'll need 
 more details. You capture these details within the work item form.
 
-
 >[!TIP]  
 >To plan a sprint, at a minimum you should estimate the effort involved to implement each backlog item. You capture effort in the following fields within the work item form: Effort (Scrum), Story Points (Agile), or Size (CMMI) fields. 
 
@@ -133,29 +101,15 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 >[!NOTE]  
 ><b>Feature availability: </b>From the web portal for Team Services and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and earlier versions, the old form is supported.   
 	
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-	<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-	<li style="float:left;" data-toggle="collapse" data-target="#pbi-form">Product backlog item form</li> 
-	<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:50px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#pbi-form-tfs-2015-13">Old form</a></li>
-	<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#pbi-form-team-services">New form</a></li>
-	</ul> 
-<div id="pbi-form" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-<div id="pbi-form-team-services" class="tab-pane fade in active"> 
+<!---
 <p>For details on adding work items using the new form, see [add work items](add-work-items.md).</p>  
 
 <img src="_img/cyb-product-backlog-form-ts.png" alt="Product backlog item - Team Services - Add details to a work item" style="border: 1px solid #CCCCCC;" />  
  
-</div>
-	
-<div id="pbi-form-tfs-2015-13" class="tab-pane fade"> 
 <p>For details on adding work items using the old form, see [add work items (TFS)](add-work-items.md).</p>  
 
 <img src="_img/ALM_CB_CreateWorkItem.png" alt="Product backlog item - TFS - Add details to a work item" style="border: 1px solid #CCCCCC;" />   
-	</div>
-	</div>
-	</div> 
-
- 
+-->
 
 <table valign="top" width="100%">
 <tbody valign="top" >
@@ -206,7 +160,7 @@ With [Sprint planning](../scrum/sprint-planning.md), teams define a sprint sched
 
 ## Related notes
 
-
+If you've already defined a long list of items, you don't have to reenter them one at a time. Instead, use [Microsoft Excel](../office/bulk-add-modify-work-items-excel.md) to quickly import them to your backlog.
 
 <a id="backlog-controls">  </a>
 ### Backlog controls  
@@ -220,7 +174,7 @@ Once you've defined your backlog, you can use the following controls to change o
 
 | Control                  | Function                      |
 |--------------------------|-------------------------------|
-| Backlog               | Switch to backlog view           |
+| Backlog  | Switch to backlog view    |
 | Board    | [Switch to Kanban board view](../kanban/kanban-basics.md)  |
 | Forecast | [Turn forecasting Off/On](../scrum/forecast.md) |
 | Mapping | [Turn mapping Off/On](organize-backlog.md)   |

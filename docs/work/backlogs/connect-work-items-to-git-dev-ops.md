@@ -165,7 +165,7 @@ With Git commits, any work items that have been linked to a commit will be liste
 
 <!--- Add info about option to set build linking; link to release notes if needed --> 
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)]  
+
 
 
 ### Link types showing in the Development section

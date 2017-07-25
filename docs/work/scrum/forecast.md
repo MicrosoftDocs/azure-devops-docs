@@ -23,10 +23,6 @@ Use this topic to learn:
 > * Tips for using the forecast tool        
 > * Required and recommended team activities to support forecasting       
 
-
-![Forecast tool](_img/ALM_DS_Forecast_Chrt_S.png)
-
-
 [!INCLUDE [temp](../_shared/image-differences.md)]
  
 

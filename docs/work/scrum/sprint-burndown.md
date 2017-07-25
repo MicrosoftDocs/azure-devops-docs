@@ -7,7 +7,7 @@ ms.assetid: 706331A0-3758-4575-9B51-AC828F57161B
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 07/12/2017
+ms.date: 07/21/2017
 ---
 
 
@@ -16,11 +16,11 @@ ms.date: 07/12/2017
 [!INCLUDE [temp](../_shared/dev15-version-header.md)]
 
 Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](sprint-planning.md). Review your sprint burndown chart throughout your sprint cycle to check for these indicators:  
-<ul>
-<li>Is remaining work getting updated regularly? Flat spaces within the blue area indicate that a lack of updates.</li>
-<li>Is remaining work increasing instead of decreasing? Increases can indicate unestimated or unplanned work.  Both signal a need for the team to discuss how they'll complete the sprint tasks on time.   </li>
-<li>Based on the actual burn rate, does the team feel confident that they'll complete the work by the end of the sprint?</li>
-</ul>
+
+> [!div class="checklist"]   
+> * Is remaining work getting updated regularly? Flat spaces within the blue area indicate a lack of updates.  
+> * Is remaining work increasing instead of decreasing? Increases can indicate unestimated or unplanned work.  Both signal a need for the team to discuss how they'll complete the sprint tasks on time.   
+> * Based on the actual burn rate, does the team feel confident that they'll complete the work by the end of the sprint?    
 
 >[!NOTE]  
 >The system automatically builds a sprint burndown chart based on the tasks and Remaining Work estimates you define and update throughout the sprint cycle. For details, see [Sprint planning](sprint-planning.md) and [Task board](task-board.md).  To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   

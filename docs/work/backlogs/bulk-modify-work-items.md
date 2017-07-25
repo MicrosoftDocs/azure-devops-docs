@@ -43,7 +43,7 @@ All of the following actions can be performed by team members that belong to the
 1. You can't perform certain functions on work items whose WITs belong to the [Hidden Types Category](../concepts/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
 2. You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Choose Copy work item when you want to create a copy of a work item and change its work item type. Choose Clone when you want to create another instance of the work item without changes to its work item type. 
 3. For on-premises TFS, you must have an [SMTP server configured for your deployment](../../setup-admin/tfs/admin/setup-customize-alerts.md). 
-4. You must be a member of the Project Administrators group or be [granted explicit permissions to move work items](remove-delete-work-items.md#move-delete-permissions).  
+4. You must be a member of the Project Administrators group or be [granted explicit permissions to move work items](../how-to/set-permissions-access-work-tracking.md#move-delete-permissions).  
 
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 
@@ -59,59 +59,7 @@ You can use bulk modify by selecting work items from the backlog page or query r
 
 The menu options available to you change depending on the platform you work from and whether you work from a backlog page or query results list.  
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#bulk-edit-options">Bulk edit menu options </li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs-2015">TFS 2015</a></li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs-2016">TFS 2017</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#team-services">Team Services</a></li>
-</ul>
-
-<div id="bulk-edit-options" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-
-<div id="tfs-2015" class="tab-pane fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-
-<table valign="top">
-<tr valign="top">
-<td>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlog multi-select menu</p>
-<img src="_img/bulk-m-backlog-r-tfs-menu-options.png" alt="Backlog multi-select menu, TFS 2015" style="border: 1px solid #CCCCCC;" /> 
-</td>
-
-<td>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query results multi-select menu</p>
-<img src="_img/bulk-m-query-r-tfs-menu-options.png" alt="Query results multi-select menu, TFS 2015" style="border: 1px solid #CCCCCC;" />  
-</td>
-</tr>
-</table>
-
-
-</div>
-
-<div id="tfs-2016" class="tab-pane fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-
-
-<table valign="top">
-<tr valign="top">
-<td>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlog multi-select menu </p>
-<img src="_img/bulk-m-backlog-r-tfs-2016-menu-options.png" alt="Query results multi-select menu" style="border: 1px solid #CCCCCC;" />  
-</td>
-
-<td>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query results multi-select menu </p>
-<img src="_img/bulk-m-query-r-tfs-2016-menu-options.png" alt="Query results multi-select menu, TFS-2015 " style="border: 1px solid #CCCCCC;" />  
-</td>
-</tr>
-</table>
-
-
-</div>
-
-<div id="team-services" class="tab-pane fade in active">  
-
- 
+#### Team Services  
 
 <table valign="top">
 <tr valign="top">
@@ -127,17 +75,38 @@ The menu options available to you change depending on the platform you work from
 </tr>
 </table>
 
+#### TFS 2017  
 
-</div>
+<table valign="top">
+<tr valign="top">
+<td>
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlog multi-select menu </p>
+<img src="_img/bulk-m-backlog-r-tfs-2016-menu-options.png" alt="Query results multi-select menu" style="border: 1px solid #CCCCCC;" />  
+</td>
 
+<td>
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query results multi-select menu </p>
+<img src="_img/bulk-m-query-r-tfs-2016-menu-options.png" alt="Query results multi-select menu, TFS-2015 " style="border: 1px solid #CCCCCC;" />  
+</td>
+</tr>
+</table>
 
-</div>
-</div>
+#### TFS 2015  
 
+<table valign="top">
+<tr valign="top">
+<td>
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlog multi-select menu</p>
+<img src="_img/bulk-m-backlog-r-tfs-menu-options.png" alt="Backlog multi-select menu, TFS 2015" style="border: 1px solid #CCCCCC;" /> 
+</td>
 
-<div style="clear:left;font-size:100%">
-</div>
-
+<td>
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query results multi-select menu</p>
+<img src="_img/bulk-m-query-r-tfs-menu-options.png" alt="Query results multi-select menu, TFS 2015" style="border: 1px solid #CCCCCC;" />  
+</td>
+</tr>
+</table>
+ 
 
 
 ### To multi-select and open the context menu 
@@ -148,37 +117,13 @@ To open the context menu, click (![actions icon](../_img/icons/actions-icon.png)
 
 Here, we use the context menu to move several non-sequential items to the current sprint.
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#multi-select">Multi-select context </li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#multi-select-tfs-2015">TFS 2015</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#multi-select-team-services">Team Services, TFS 2017</a></li>
-</ul>
-
-<div id="multi-select" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-
-<div id="multi-select-tfs-2015" class="tab-pane fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-
-<img src="_img/backlog-multi-select-non-sequential-items.png" alt="TFS 2015, web portal, Backlog page, multi-select items, Open context menu, Move to iteration,  " style="border: 1px solid #CCCCCC;" />
-
-</div>
-
- 
-
-<div id="multi-select-team-services" class="tab-pane fade in active">  
+#### Team Services and TFS 2017 
 
 <img src="_img/bulk-modify-multi-select-ts.png" alt="Team Services, Backlog page, multi-select items, Open context menu, Move to iteration,  " style="border: 1px solid #CCCCCC;" />
 
-</div>
+#### TFS 2015 and TFS 2013
 
-
-</div>
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
+<img src="_img/backlog-multi-select-non-sequential-items.png" alt="TFS 2015, web portal, Backlog page, multi-select items, Open context menu, Move to iteration,  " style="border: 1px solid #CCCCCC;" />
 
 
 >[!TIP]  
@@ -211,59 +156,25 @@ To learn more about the Assign To and Iteration Path fields, see [Query by assig
 To assign or modify several fields, choose Edit from the context menu of one of the selected work items. Enter a value for each field that you want to update.  
 
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
+#### Team Services and TFS 2017 
 
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#multi-save">Edit and save bulk modified items </li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#multi-save-tfs-2015">TFS 2015</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#multi-save-team-services">Team Services, TFS 2017</a></li>
-</ul>
+1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../guidance/work-item-field.md). 
 
-<div id="multi-save" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
+	<img src="_img/bulk-modify-edit-fields-ts.png" alt="Team Services or TFS 2017, Query results page, bulk edit fields" style="border: 1px solid #CCCCCC;" />
 
-<div id="multi-save-tfs-2015" class="tab-pane fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
+2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
 
-<ol>
-<li>For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../guidance/work-item-field.md).</li> 
+	<img src="_img/bulk-modify-save-ts.png" alt="Team Services or TFS 2017, Query results page, save bulk modified items" style="border: 1px solid #CCCCCC;" />
 
-<img src="_img/IC666563.png" alt="TFS 2015, web portal, Query results page, Edit work items dialog, bulk modify fields" style="border: 1px solid #CCCCCC;" />
+#### TFS 2015 and TFS 2013
 
+1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../guidance/work-item-field.md). 
 
-<li>Save all work items that you bulk-modified. Work items shown in bold text indicate that local changes have not yet been saved to the data store.</li> 
+	<img src="_img/IC666563.png" alt="TFS 2015, web portal, Query results page, Edit work items dialog, bulk modify fields" style="border: 1px solid #CCCCCC;" />
 
-![TFS 2015, web portal, query results page, Bulk modify save results](_img/IC677240.png)  
-</ol>
+2. Save all work items that you bulk-modified. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
 
-</div>
-
-
-
-<div id="multi-save-team-services" class="tab-pane fade in active">  
-
-<ol>
-<li>For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../guidance/work-item-field.md).</li> 
-
-<img src="_img/bulk-modify-edit-fields-ts.png" alt="Team Services or TFS 2017, Query results page, bulk edit fields" style="border: 1px solid #CCCCCC;" />
-
-
-<li>From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store. </li> 
-
-<img src="_img/bulk-modify-save-ts.png" alt="Team Services or TFS 2017, Query results page, save bulk modified items" style="border: 1px solid #CCCCCC;" />
-</ol>
-
-
-
-</div>
-
-
-</div>
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
-
-
+	![TFS 2015, web portal, query results page, Bulk modify save results](_img/IC677240.png)  
 
 
 <a id="tags"></a>
@@ -294,7 +205,6 @@ For large scale, organizational moves, use the REST API calls for [Work item bat
 ### Add multiple values to a field (TFS)   
 If you have implemented a [custom control that supports multiple values](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control), you can use Excel to bulk edit the field, but you can't modify it using the web portal. In the web portal, you can only select a single value for the field.   
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)]  
 
 
  

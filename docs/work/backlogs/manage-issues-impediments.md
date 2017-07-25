@@ -24,53 +24,26 @@ In this topic you'll learn:
 
 > [!div class="checklist"]   
 > * How to capture issues or impediments as a work item   
-
-
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-
-<li style="float:left;" data-toggle="collapse" data-target="#add-impediment">Add an impediment </li> 
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:50px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#add-impediment-tfs-2015-13">TFS 2015, TFS 2013</a></li>
-
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#add-impediment-team-services">Team Services, TFS 2017</a></li>
-
-</ul>
  
-<div id="add-impediment" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
+## Add an issue or impediment 
 
-<div id="add-impediment-team-services" class="tab-pane fade in active"> 
 
-<p>From the Work hub, choose Impediment from the New Work Item list of options. Click the ![pin icon](../_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu. </p>
+#### Team Services | TFS 2017 (new form enabled)
+
+From the **Work** hub, choose Impediment from the New Work Item list of options. Click the ![pin icon](../_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu. 
 
 <img src="_img/cyb-new-work-item-impediment.png" alt="Team Services, TFS 2017 - Add an impediment" style="border: 1px solid #CCCCCC;" />  
 
-<p>Or, from the Queries page, you can add a new work item. </p>
+Or, from the Queries page, you can add a new work item.  
 
 <img src="_img/cyb-new-work-item-impediment-form.png" alt="Create a new impediment" style="border: 1px solid #CCCCCC;" />  
 
 
-</div>
+#### TFS 2015 | TFS 2013 (old web form) 
 
-<div id="add-impediment-tfs-2015-13" class="tab-pane fade"> 
-
-<p>From the Queries page, choose Impediment from the **New** drop down menu.</p>
+From the Queries page, choose Impediment from the **New** drop down menu.
 
 <img src="_img/ALM_CB_CreateImpediments.png" alt="TFS 2015, TFS 2013 - Add an impediment" style="border: 1px solid #CCCCCC;" />  
-
- 
-</div>
-
-
-
-</div>
-</div> 
-
-
-
-
-
 
 
 ## Related notes 

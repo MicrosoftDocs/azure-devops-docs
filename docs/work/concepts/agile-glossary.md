@@ -48,7 +48,7 @@ team
 
 <a id="change-position"> </a>  
 ### Backlog position or stack rank order 
-The sequence of items on the backlog page is determined according to where you have [added the items or moved the items on the page](create-your-backlog.md#move-items-priority-order). As you drag and drop items within the backlog list, a background process updates this field.
+The sequence of items on the backlog page is determined according to where you have [added the items or moved the items on the page](../backlogs/create-your-backlog.md#move-items-priority-order). As you drag and drop items within the backlog list, a background process updates this field.
 
 You should refrain from using the bulk modify function to change the backlog priority of work items. While you can assign a value to the [Backlog Priority (Scrum)](../track/planning-ranking-priorities.md) or [Stack Rank (Agile and CMMI)](../track/planning-ranking-priorities.md) fields, you'll be assigning the same value to all items you've selected for bulk edit. These fields are used by the system to track the relative ranking of items on the product, feature, or epic backlogs.  
 

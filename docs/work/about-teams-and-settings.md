@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/13/2017
+ms.date: 07/21/2017
 ---
 
 # About teams and Agile tools
@@ -36,20 +36,10 @@ These tools reference the team's default area path, iteration path, and selected
 
 
 > [!div class="mx-tdBreakAll"]  
-> |Backlogs  |Scrum |Kanban |  Widgets | 
-> |-------------|----------|---------|---------|   
-> |- [Product backlog](backlogs/create-your-backlog.md)<br/>- [Features backlog](backlogs/define-features-epics.md)<br/>- [Epics backlog](backlogs/define-features-epics.md)<br/>- [Forecast](scrum/forecast.md) |- [Sprint backlogs](scrum/sprint-planning.md)<br/>- [Sprint capacity](scale/capacity-planning.md)<br/>- [Task board](scrum/task-board.md)<br/>- [Sprint burndown](scrum/sprint-burndown.md)|- [Kanban board](kanban/kanban-basics.md)<br/>- [Features board](kanban/kanban-epics-features-stories.md)<br/>- [Epics board](kanban/kanban-epics-features-stories.md)<br/>- [Cumulative flow](../report/guidance/cumulative-flow.md)|- [New work item](../report/widget-catalog.md#new-work-item-widget)<br/>- [Sprint burndown](../report/widget-catalog.md#sprint-burndown-widget)<br/>- [Sprint capacity](../report/widget-catalog.md#sprint-capacity-widget)<br/>- [Sprint overview](../report/widget-catalog.md#sprint-overview-widget)<br/>- [Team members](../report/widget-catalog.md#team-members-widget)    |    
+> |Backlogs  |Scrum |Kanban |  Widgets | Other tools |
+> |-------------|----------|---------|---------|---------|    
+> |- [Product backlog](backlogs/create-your-backlog.md)<br/>- [Features backlog](backlogs/define-features-epics.md)<br/>- [Epics backlog](backlogs/define-features-epics.md)<br/>- [Forecast](scrum/forecast.md) |- [Sprint backlogs](scrum/sprint-planning.md)<br/>- [Sprint capacity](scale/capacity-planning.md)<br/>- [Task board](scrum/task-board.md)<br/>- [Sprint burndown](scrum/sprint-burndown.md)|- [Kanban board](kanban/kanban-basics.md)<br/>- [Features board](kanban/kanban-epics-features-stories.md)<br/>- [Epics board](kanban/kanban-epics-features-stories.md)<br/>- [Cumulative flow](../report/guidance/cumulative-flow.md)|- [New work item](../report/widget-catalog.md#new-work-item-widget)<br/>- [Sprint burndown](../report/widget-catalog.md#sprint-burndown-widget)<br/>- [Sprint capacity](../report/widget-catalog.md#sprint-capacity-widget)<br/>- [Sprint overview](../report/widget-catalog.md#sprint-overview-widget)<br/>- [Team members](../report/widget-catalog.md#team-members-widget) | - [Favorites](../collaborate/set-favorites.md)<br/>-  [Work item templates](productivity/work-item-template.md)<br/>- [Delivery plans](scale/review-team-plans.md)<br/>-  [Queries](track/using-queries.md)<br/>- [Velocity](../report/guidance/team-velocity.md)<br/>- [Dashboards](../report/dashboards.md)<br/>- [Alerts](../collaborate/manage-team-notifications.md) |   
 
-
-### Other tools  
-- [Favorites](../collaborate/set-favorites.md)
-- [Work item templates](../productivity/work-item-template.md)
-- [Delivery plans](scale/review-team-plans.md)   
-- [Queries](track/using-queries.md)    
-- [Velocity](../report/guidance/team-velocity.md)    
-- [Dashboards](../report/dashboards.md)    
-- [Alerts](../collaborate/manage-team-notifications.md) 
-    
  
 <!--- IN ADDITION: Favorites (query, build); assigned to <team> PRs, Default reviewers for PRs, @CurrentIteration, @Mention a group, team is a group  -->   
 
@@ -73,7 +63,7 @@ When you define a team, you define the team's:
 - Backlog iteration path 
 - Default iteration path 
 
-All Agile tools reference the area path(s) defined for a team. For example, one team might handle all work assigned to *Customer Profile* and *Shopping Cart*, while another team only manages work assigned to the *Email* area path.  Also, the set of work items that appear on a backlog or board depend on the current State of a work item or it's parent-child status.   
+All Agile tools reference the area path(s) defined for a team. The set of work items that appear on a backlog or board depend on the current State of a work item or it's parent-child status.   
 
 In addition, several tools reference the team's default iteration and selected iteration paths or sprints. For example, when you add new work items from a backlog or board view, or from a team dashboard, the system assigns the team's default area path and default iteration path to these work items. 
 

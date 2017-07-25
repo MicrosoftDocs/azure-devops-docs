@@ -20,19 +20,20 @@ User stories and bugs correspond to types of work items. You use  [work items](.
 
 ## Open your Kanban board from the web portal
 
-You access your Kanban board from the **Work>Backlogs>Board** page. If you don't have a team project yet, create one in [Visual Studio Team Services](../../setup-admin/team-services/set-up-vs.md) or set one up in an [on-premises TFS](../../setup-admin/create-team-project.md).   
+You access your Kanban board from the from the **Work** hub, **Backlogs** page. You then click **Board**. If you don't have a team project yet, create one in [Visual Studio Team Services](../../setup-admin/team-services/set-up-vs.md) or set one up in an [on-premises TFS](../../setup-admin/create-team-project.md).  
 
-To contribute to the Kanban board, you must be a member of the Contributors group. To configure the Kanban board, you must be [added as a team administrator](../scale/add-team-administrator.md) or be a member of the Project Administrators group. If you're the account owner or creator of the team project, then you'll have these permissions.  
-
-If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) or [TFS](../../add-users.md).  
-
-<img src="../backlogs/_img/cyb-open-backlog-tfs-2017.png" alt="Web portal, choose Work hub, Backlogs" style="border: 1px solid #CCCCCC;" /> 
+<img src="../backlogs/_img/cyb-open-backlog-tfs-2017.png" alt="Web portal, choose Work hub, Backlogs" style="border: 1px solid #CCCCCC;" />   
 
 The URL follows this pattern:  
 - **Team Services**: ```https://<account-name>.visualstudio.com/DefaultCollection/<project name>/_backlogs```  
 - **On-premises TFS**: ```http://serverName:8080/tfs/DefaultCollection/projectName/_backlogs```  
   
 If you don't see the team or team project you want, click the ![Team Services icon](../_img/icons/project-icon.png) Team Services icon to [browse all team projects and teams](../../connect/account-home-pages.md). 
+
+To contribute to the Kanban board, you must be a member of the Contributors group. To configure the Kanban board, you must be [added as a team administrator](../scale/add-team-administrator.md) or be a member of the Project Administrators group. If you're the account owner or creator of the team project, then you'll have these permissions.  
+
+If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) or [TFS](../../setup-admin/add-users.md).  
+
  
 <!---
 ### TFS 2015, TFS 2013

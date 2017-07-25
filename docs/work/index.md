@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article 
+ms.topic: landing-page 
 ms.date: 07/14/2017
 ---
 
@@ -52,7 +52,7 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 
 ## Videos 
 
-[![Agile planning video](_img/index-agile-planning-video.png)](https://channel9.msdn.com/Events/build-release/2017/T6005/player)   
+[![Agile planning video](_img/index-agile-planning-video.png)](https://channel9.msdn.com/Events/Build/2017/T6005/player)   
 
 
 

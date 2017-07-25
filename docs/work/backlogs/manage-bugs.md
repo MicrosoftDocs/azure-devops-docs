@@ -51,39 +51,20 @@ The bug work item form tracks similar information to the one shown for the Scrum
 >The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to Team Services or your on-premises TFS, options that you or your admin have enabled, and which process was chosen when creating your team project&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md). 
 
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
+#### Team Services | TFS 2017 (new form enabled)
 
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#bug-form">Bug form</li> 
-
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#old-web-form">TFS 2015 | TFS 2013 (old web form)</a></li>
-
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#new-web-form">Team Services | TFS 2017 (new form enabled)</a></li>
-
-</ul>
  
-<div id="bug-form" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-
-<div id="new-web-form" class="tab-pane fade in active"> 
-<p>The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../process/new-work-item-experience.md). </p>
+The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../process/new-work-item-experience.md). 
 
 <img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, Team Services" style="border: 1px solid #CCCCCC;" />
 </div>
 
-<div id="old-web-form" class="tab-pane fade"> 
-<p>To learn more about working in the web form for TFS 2015 or earlier versions, see [Add work items to plan and track your project](add-work-items-tfs.md). </p> 
+#### TFS 2015 | TFS 2013 (old web form) 
+
+To learn more about working in the web form for TFS 2015 or earlier versions, see [Add work items to plan and track your project](add-work-items-tfs.md). 
 
 <img src="_img/scrum-bug-wi-form.png" alt="Scrum bug work item form, TFS 2015 or earlier versions" style="border: 1px solid #CCCCCC;" />
-</div>
 
-</div>
-</div> 
-
- 
-### Customize the bug form
-
-You can add fields, change the bug workflow, or customize the bug form. The method you use depends on the process model used by your team project. For details, see [Customize the work tracking experience](../customize/customize-work.md).  
 
 ### Fields specific to bugs
 
@@ -133,7 +114,7 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 <p>When Test Manager creates bugs, it automatically populates **System Info** and **Found in Build** with information about the software environment and build where the bug occurred. To learn more about defining the software environments, see [Test different configurations](../../test/manual-exploratory-testing/test-different-configurations.md).</p>
 <p>When you resolve the bug, use **Integrated in Build** to indicate the name of the build that incorporates the code that fixes the bug. </p>
 <p>**On-premises TFS only:** To access a drop-down menu of all builds that have been run, you can update the ```FIELD``` definitions for Found in Build and Integrated in Build to reference a global list. The global list is automatically updated with each build that is run. To learn more, see [Query based on build and test integration fields](../track/build-test-integration.md)<. </p>
-<p>For information about how to define build names, see [build number format options](../../build-release/define/options.md). </p>
+<p>For information about how to define build names, see [build number format options](../../build/define/options.md). </p>
 </td>
 </tr>
 
@@ -195,7 +176,7 @@ Add and review comments made about the work being performed by going to the disc
 >Use the [Discussion section](../concepts/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug. This feature is only available from the new web form.   
 
 
-### Capture bugs using test tools
+## Capture bugs using test tools
 
 You can create bugs during test sessions using one of the following tools: 
 - **Test & Feedback extension**: see [Exploratory testing with the Test & Feedback extension](../../test/manual-exploratory-testing/connected-mode-exploratory-testing.md)   
@@ -364,7 +345,9 @@ To track your bugs and integrate with other resources available to you, see thes
 - [Developer testing tools scenarios and capabilities](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)  
 - [Run tests for desktop apps](../../test/manual-exploratory-testing/getting-started/run-manual-tests.md#run-desktop)  
   
+### Customize the bug form
 
+You can add fields, change the bug workflow, or customize the bug form. The method you use depends on the process model used by your team project. For details, see [Customize the work tracking experience](../customize/customize-work.md).  
 
 <!---
 ###Use SonarQube to help manage technical debt

@@ -7,7 +7,7 @@ ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 06/01/2017
+ms.date: 07/21/2017
 ---
 
 
@@ -21,6 +21,17 @@ Once you have your [sprint plan](sprint-planning.md) in place, you'll execute th
 >Your task board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs-boards-plans.md). To customize the task board to include more or different columns, you need to customize the workflow. For details, see [Customize your work tracking experience](../customize/customize-work.md). 
 >
 >In addition, if you're wondering why the task board items don't match your query list of items for a sprint, see [Task board items versus query list items](../backlogs-boards-plans.md#task-board-items). 
+
+In this topic you'll learn how to:  
+
+> [!div class="checklist"]   
+> * Use your task board to review progress during daily scrum meetings   
+> * Filter and group work items on your task board         
+> * Update the status of tasks through drag-and-drop   
+> * Update remaining work   
+> * Close out a sprint    
+> * Customize your task board
+
 
 Your task board provides a visualization of flow and status of each sprint task. With it, you can focus on the status of backlog items as well as work assigned to each team member. It also summarizes the total amount of remaining work to complete for a task or within a column.  
 
@@ -102,7 +113,6 @@ At the end of the sprint, you'll want to perform these final tasks:
 
 Dragging an incomplete item to the product backlog or to a future sprint updates the Iteration Path of all uncompleted child tasks to correspond to the product backlog iteration path or future sprint.   
 
-
 >[!TIP]
 >If you work from Team Services or TFS 2015.1 and later versions, you can 
 >[drag-and-drop work items onto a sprint from any backlog or board](define-sprints.md#drag-drop-to-sprint). 
@@ -115,6 +125,7 @@ Work with [sprint burndown](sprint-burndown.md) charts to monitor progress, mana
 ## Related notes
 As you can see, the task board provides a lot of support for your Scrum activities. For related topics, see:  
 
+*	[Scrum best practices](../concepts/best-practices-scrum.md)  
 *	[Sprint planning](sprint-planning.md)   
 *	[Schedule sprints](define-sprints.md)  
 *	[Customize cards on the task board](../customize/customize-cards.md#task-board)   
@@ -174,61 +185,5 @@ You can reduce the number of items on the task board by moving them to the backl
 - If you need to move several items, you can create a query from the sprint backlog and then use the query to [bulk modify the iteration path](../backlogs/bulk-modify-work-items.md).  
 
 
-<a id="scrum-master-role">  </a>
-### Role of the Scrum Master  
-
-Scrum Masters help build and maintain healthy teams by employing Scrum processes. They guide, coach, teach, and assist Scrum teams in the proper employment of Scrum methods. Scrum Masters also act as change agents to help teams overcome impediments and to drive the team toward significant productivity increases.   
-
-Core responsibilities of Scrum Masters include: 
-*	Support the team to adopt and follow Scrum processes. 
-	For example, you should not let the daily Scrum meeting become an open discussion that lasts 45 minutes. 
-*	Guard against the product owner or team members from adding work after the sprint begins.  
-
-*	Clear blocking issues that prevent the team from making forward progress. 
-	This might require you to perform small tasks, such as approving a purchase order for a new build computer or resolving a conflict within your team.   
-*	Help the team work to resolve conflicts and issues that arise and learn from the process.  
-*	Ask questions that reveal hidden issues and confirm that what people are communicating is well understood by the entire team.  
-*	Identify and safeguard the team from potential issues becoming major issues. Just as it's cheaper to fix a bug soon after it's discovered, it's also easier and less disruptive to fix a team issue when it's small and manageable.  
-*	Prevent the team from presenting incomplete user stories during a [sprint review meeting](sprint-burndown.md#sprint-review-meeting).
-*	Gather, analyze, and present data to business stakeholders in a way that 
-	demonstrates how the team is improving and growing. For example, if your team has significantly increased the amount of value that it has delivered while generating fewer bugs, make the value visible through regular communications to business stakeholders.   
-
-Good Scrum Masters possess or develop excellent communication, negotiation, and conflict resolution skills. They actively listen to not only the words that people say and write but also how they deliver their messages (their body language, facial expressions, vocal pace, and other nonverbal communication). 
-
-Just as it's cheaper to fix a bug soon after it's discovered, it's also easier and less disruptive to fix a team issue when it's small and manageable before it grows into a major issue.  
-
-<a id="daily-scrum-meetings">  </a>
-### Daily Scrum meetings
-Daily Scrum meetings help keep a team focused on what it needs to do the next day to maximize the team's ability to meet its sprint commitments. Your Scrum Master should enforce the structure of the meeting and ensure that it starts on time and finishes in 15 minutes or less.  
-
-Three aspects of successful Scrum meetings are:
-
-
-*	Everyone stands up (this helps to keep the meetings focused and short) 
-*	They start and end on time and occur at the same time in the same location each day 
-*	Everyone participates, each team member answers the three Scrum questions:
-	*	*What have I accomplished since the most recent Scrum?*  
-	*	*What will I accomplish before the next Scrum?*  
-	*	*What blocking issues or impediments might affect my work?*  
-
-Team members should strive to answer their questions quickly and concisely. For example: 
-
->*"Yesterday, I updated the class to reflect the new data element that we pull from the database, and I got it to appear in the interface. This task is complete. Today, I will ensure that the new data element is correctly calculating with the stored procedure and the other data elements in the table. I believe I will accomplish this task today. I will need someone to review my calculations. I have no impediments or blocking issues."*  
-
-This response conveys what was accomplished, what will be accomplished, and that the team member would like some help looking at the code.
-
-Contrast with this next example:  
-
->*"Yesterday, I worked on the class, and it works. Today, I will work on the interface. No blocking issues."*  
-
-
-Here, the team member doesn't provide enough detail about what class they worked on nor which interface components they'll complete. In fact, the word accomplished never came up.
-
-It's important that no one interrupts during report outs. Each person must have sufficient time to answer the three questions. 
-
-More in-depth and follow-up discussions should take place after the meeting, as people return to their desks or, if a significant amount of conversation is necessary, in a follow-up meeting.
-
-Many teams delay discussions by using the "virtual parking lot" method. As topics come up that a team member believes warrants further discussion, they can quietly walk to a whiteboard or flipchart and list the topic in the parking lot. At the end of the meeting, the team determines how they'll handle the listed items. 
- 
 
 
