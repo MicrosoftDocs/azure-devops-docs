@@ -26,13 +26,11 @@ You will use the Azure portal to configure a basic CI/CD pipeline. You will then
 
 _TODO: Architecture diagram_
 
-[!INCLUDE [include](_shared/prerequisites.md)]
-
-_TODO: in following shared section: Indicate that you can skip this section if you've already got a web app. Replace screenshots light theme._
+[!INCLUDE [prerequisites](_shared/prerequisites.md)]
 
 [!INCLUDE [create-azure-web-app](_shared/create-azure-web-app.md)]
 
-[!INCLUDE [temp](_shared/import-code-aspnet-core.md)]
+[!INCLUDE [import-code-aspnet-core](_shared/import-code-aspnet-core.md)]
 
 ## Configure continuous delivery
 
@@ -61,9 +59,7 @@ _TODO: in following shared section: Indicate that you can skip this section if y
 
    ![Viewing the log when deployment is complete](_img/aspnet-core-to-webapp/continuous-delivery-log2.png)
 
-1. Open the **Overview** blade and choose the URL link for the web app.
-
-   ![Opening the web app from the Overview tab](_img/aspnet-core-to-webapp/overview-openapp.png)
+1. Open a new browser window and navigate to your web at at _app-name_**.azurewebsites.net**.
 
 1. Browse your new web app.
 
@@ -71,8 +67,7 @@ _TODO: in following shared section: Indicate that you can skip this section if y
 
 ## Review the pipeline in VSTS
 
-1. In the "Successfully set up Continuous Delivery..." blade, choose the **Build Definition**
-  link.
+1. In the "Successfully set up Continuous Delivery..." blade, choose the **Build Definition** link.
 
    ![Opening the generated build definition](_img/aspnet-core-to-webapp/review-links-build.png)
 
@@ -110,10 +105,6 @@ Now that you have a completely automated CI/CD pipeline, any changes you make to
 
 You can use Visual Studio to connect and push commits into your VSTS Git repo. (See [Share code with push](https://www.visualstudio.com/docs/git/tutorial/pushing).) However, VSTS also features a web-based editor to so that you can quickly commit small changes to source code directly in your browser.
 
-1. In the **Overview** blade of your web app in the Azure portal, choose **Stop** to allow the files to be released for updating the app.
-
-   ![Stopping the app](_img/aspnet-core-to-webapp/stop-app.png)
-
 1. Navigate to the **Code** hub in the VSTS portal. Change the code in **Views/Home/Index.cshtml** file by selecting the **Edit** action.
 
    ![Editing the code in the VSTS editor](_img/aspnet-core-to-webapp/edit-in-vsts.png)
@@ -130,11 +121,6 @@ You can use Visual Studio to connect and push commits into your VSTS Git repo. (
 
    ![Committing the new code in the VSTS editor](_img/aspnet-core-to-webapp/commit-code.png)
 
-1. Wait a few minutes and then, in the **Overview** blade of your web app in the Azure portal, choose **Start**.
-   You can refresh the list of releases in the release definition to see when deployment is complete.
-
-   ![Starting the app](_img/aspnet-core-to-webapp/start-app.png)
-
-1. Navigate to the web app URL in a browser to see the change deployed.
+1.  Wait a few minutes and then navigate to the web app URL in a new browser window to see the app with the new page title deployed.
 
    ![Viewing the updated app](_img/aspnet-core-to-webapp/updated-app.png)
