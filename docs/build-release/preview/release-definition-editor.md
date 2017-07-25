@@ -20,8 +20,8 @@ for more details.
 
 ![Turning the new editor on and off](_img/release-definition-editor/open-editor.png)
 
-The editor currently contains four tabs: **[Pipeline](#pipeline)**, **[Tasks](#tasks)**,
-**[Variables](#variables)**, and **[History](#history)**.
+The editor contains four tabs: **[Pipeline](#pipeline)**, **[Tasks](#tasks)**,
+**[Variables](#variables)**, **[Retention](#retention)**, **[Options](#options)**, and **[History](#history)**.
 
 <a name="pipeline"></a>
 ## Pipeline tab 
@@ -71,6 +71,8 @@ The features of the pipeline editor include:
 1. Icons to add a new environment to the definition, and to clone the selected environment.
    These icons are visible only when the mouse pointer is over the environment.
 
+1. A link to the page that displays a list and status of releases for just this definition.
+
 As you change the triggers for each environment in the **Pre-deployment conditions** editor panel,
 the layout and links to the environments is updated to show the new deployment pipeline. Notice
 that you can change the type of trigger for the environment here; it can be when a release is created,
@@ -84,8 +86,7 @@ This tab makes it easy to edit the tasks defined for each environment.
 
 ![Tasks editor annotated screenshot](_img/release-definition-editor/tasks.png)
 
-The environments you have defined are shown as tabs (in this example, "Dev", "Test", "Staging", and "Production").
-For each environment, the features of the tasks editor include:
+The environments you have defined are shown in the drop-down selector, and the features of the tasks editor include:
 
 1. The environment selector bar showing the environment name. Select this bar to edit the name.
    Use the **...** to open a shortcut menu where you add [phases](../concepts/process/phases.md) to the environment.
@@ -114,6 +115,8 @@ open the **Add tasks** panel.
 
 1. Get additional tasks from the Marketplace.
 
+1. A link to open the page containing a list of variable groups you can link to, as well as a link to manage variable groups.  
+
 <a name="variables"></a>
 ## Variables tab 
 
@@ -134,22 +137,25 @@ The features of the variables editor include:
 
 For more information, see [Variables in Release Management](../concepts/definitions/release/variables.md).
 
+<a name="retention"></a>
+## Retention tab 
+
+Use this tab to specify how long yuo want to retain information about releases. 
+You can specify the details for each environment individually, or manage the default
+retention policy. See [Release retention](../concepts/policies/retention.md#release) for more details.
+
+<a name="options"></a>
+## Options tab 
+
+Use this tab to define the settings for the general options such as the description of the release definition
+and the format for release numbering. See [Environment general options](../concepts/definitions/release/environments.md#options) for more details.
+
 <a name="history"></a>
 ## History tab
 
 For information about using the **History** tab, see [Release history](../actions/view-manage-releases.md#release-history).
 
 ## FAQs
-
-#### Q: Is the new editor fully functioning and complete?
-
-**A**: No, there are several features not yet implemented. However, we are looking forward to your early feedback.
-We believe that editing the environment configuration and the deployment tasks is the primary activity when
-editing release definitions. Work in progress includes:
-
-* The ability to link to artifacts.
-* Seamless navigation between environments in the **Tasks** tab.
-* Configuration of variable groups, release retention, and other options. 
 
 #### Q: Can I edit release definitions with both the existing and the new editors interchangeably?
 

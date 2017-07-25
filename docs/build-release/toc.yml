@@ -5,7 +5,7 @@
   - name: CI/CD to Azure web app
     items:
     - name: ASP.NET Core
-      href: apps/aspnet-core-to-webapp.md
+      href: apps/aspnet-core-to-azure-windows-vm.md
   - name: CI/CD to Windows VMs
     items:
     - name: ASP.NET Core
