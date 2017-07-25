@@ -125,6 +125,10 @@ Visual Studio 2013, or Visual Studio 2012 Update 3, you can open a test plan in 
 
 ![Open test plan using Microsoft Test Manager](_img/create-a-test-plan/OpenTestPlanMTM.png) 
 
+#### Q: Can I copy, clone, and move test plans and test suites?
+
+Yes, install the [Test Case Explorer extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer) from Marketplace.
+
 #### Q: Can I export the test plan to share or review offline?
 
 A:  Yes, you can export test plans, test suites, and test cases. Select the details 

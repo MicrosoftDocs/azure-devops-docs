@@ -131,6 +131,10 @@ just the ones that you want to bulk edit using the grid.
 To return to the test suite view, switch the view 
 from Grid back to List.
 
+#### Q: Can I copy, clone, and move test plans and test suites?
+
+Yes, install the [Test Case Explorer extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer) from Marketplace.
+
 #### Q: Can I copy test cases and test steps from an existing Excel worksheet?
 
 A:  Yes, copy the columns from Excel that you want to use for 
