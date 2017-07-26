@@ -7,7 +7,7 @@ ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/21/2017
+ms.date: 07/25/2017
 ---
 
 
@@ -27,7 +27,7 @@ This topic provides descriptions for each built-in group and permission. To lear
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](add-administrator-tfs.md)<br/>- [Add users to a team project](./team-services/add-team-members-vs.md) (Team Services)<br/>- [Add users to a team project](./add-users.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)  |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](restrict-access-tfs.md)<br/>- [Builds](../build/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build/concepts/definitions/release/environments.md#approvals) ) | [Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Dashboard permissions](../report/dashboards.md#set-permissions)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (Team Services)|    
+> |- [Add users to an administrator role](add-administrator-tfs.md)<br/>- [Add users to a team project](./team-services/add-team-members-vs.md) (Team Services)<br/>- [Add users to a team project](./add-users.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)  |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (Team Services)<br/> - [Dashboard permissions](../report/dashboards.md#set-permissions)|    
 
  
 <table valign="top">
@@ -46,14 +46,14 @@ This topic provides descriptions for each built-in group and permission. To lear
 <li>**Not set**</li>
 </ul>
 
-To learn more about inheritance, go [here](#inheritance).
+To learn more about inheritance, see [About permissions.md](../concepts/about-permissions.md#inheritance).
 </td>
 </tr>
 </table>
 
 >[!NOTE]  
 >Certain features are only available to users who have the appropriate licensing level for those features. Access to those features is not controlled by permissions
-but by membership in an access level. To learn more, see [Manage users and access (Team Services)](./team-services/add-account-users-assign-access-levels-team-services.md) or [Change access levels (TFS)](../work/connect/change-access-levels.md).  
+but by membership in an access level. To learn more, see [Access levels](../access-levels.md). <!--- Manage users and access (Team Services)](./team-services/add-account-users-assign-access-levels-team-services.md) or [Change access levels (TFS)](../work/connect/change-access-levels.md). --> 
 
 
 ## Groups  
@@ -80,9 +80,8 @@ SharePoint Web Application Services
 ## Server-level groups (TFS)
 Server groups apply to TFS only. When you install TFS, the system creates default groups that have [deployment-wide, server-level permissions](#server-permissions). You can neither remove nor delete the built-in server-level groups.
 
-<!---
 ![ADMIN_GROUPS_PERMISSIONS](_img/permissions/server-groups-and-permissions.png)
--->
+
 
 You can't remove or delete the default server level groups.
 
@@ -874,7 +873,7 @@ You manage project-level permissions from the [web portal admin context](../conn
 
 ### Build permissions (object-level)  
 
-You manage build permissions [for each build defined in the web portal](../build/concepts/policies/permissions.md#build-permissions) or using the [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for each build definition.
+You manage build permissions [for each build defined in the web portal](../build-release/concepts/policies/permissions.md#build-permissions) or using the [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for each build definition.
 
 <img src="_img/permissions/build-permissions.png" style="border: 1px solid #CCCCCC" />
 
@@ -897,7 +896,7 @@ The following permissions are defined in Build. All of these can be set at both 
 | **Destroy builds** | Can delete builds from the **Deleted** tab. |
 | **Edit build definition** | Can save any changes to a build definition, including configuration variables, triggers, repositories, and retention policy. |
 | **Edit build quality** | Can add tags to a build. |
-| **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../../../build/define/triggers.md#gated). This does not apply to PR builds. |
+| **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../../../build-release/define/triggers.md#gated). This does not apply to PR builds. |
 | **Retain indefinitely** | Can toggle the retain indefinitely flag on a build. |
 | **Stop builds** | Can stop builds queued by other team members or by the system.  |
 | **View build definition** | Can view build definition(s). |
@@ -1117,19 +1116,18 @@ By default, the team project level and collection level Readers groups have only
 		Can edit policies for the repository and its branches.
 		</td>
 	</tr>
+	<tr>
 		<td id="git-exempt-from-policy-permission">Exempt From Policy Enforcement</td>
 		<td>
 		Can bypass branch policies.
 		</td>
 	</tr>
+	<tr>
 		<td id="git-force-push-permission">Force Push (Rewrite History and Delete Branches)</td>
 		<td>
 		Can force an update to a branch, delete a branch, and modify the commit history of a branch. Can delete tags and notes.
 		</td>
 	</tr>
-
-
-
 	<tr>
 		<td id="git-note-management-permission">Manage Notes</td>
 		<td>

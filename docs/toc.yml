@@ -71,7 +71,7 @@
   - name: "Team projects, teams, and repos (NEW)"
     href: get-started/team-projects-teams-repos.md
   - name: Access levels (NEW)
-    href: concepts/access-level.md
+    href: concepts/access-levels.md
   - name: Source control (NEW)
     href: concepts/source-control.md
   - name: "Kanban & Agile (NEW)"
@@ -141,8 +141,6 @@
     href: reference/keyboard-shortcuts.md
   - name: Markdown guidance
     href: reference/markdown-guidance.md
-  - name: Features index
-    href: alm-devops-features.md
   - name: FAQs
     href: faqs.md
   - name: Migrate from TFS to Team Services

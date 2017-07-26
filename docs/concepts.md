@@ -135,7 +135,7 @@ In addition to all the pre-built functionality available to you, you can add to 
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Features](alm-devops-features.md)
+
 - [Pricing](https://www.visualstudio.com/team-services/pricing/)
 
  

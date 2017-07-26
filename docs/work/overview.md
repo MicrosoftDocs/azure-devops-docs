@@ -7,7 +7,7 @@ ms.assetid: 28C02AE8-CF8D-4B6E-8301-F46A5622E6C4
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 07/13/2017
+ms.date: 07/26/2017
 ---
 
 # About Agile tools and Agile project management 
@@ -42,8 +42,6 @@ The Scrum method uses sprints to plan work to perform by a team within a specifi
 [![Schedule sprints](_img/gs-planning-define-sprints.png)](./scrum/define-sprints.md)[![Plan a sprint](_img/gs-planning-plan-sprint.png)](./scrum/sprint-planning.md)[![Monitor sprint progress](_img/gs-planning-monitor-sprint.png)](./scrum/task-board.md)[![Forecast](_img/gs-planning-forecast.png)](./scrum/forecast.md)
 
 You can quickly assign work items to a sprint by dragging and dropping them from the product backlog to the sprint. 
-
-![Assign work items to a sprint](./scrum/_img/assign-to-sprint-from-kanban-animated.gif)
 
 ## Kanban method and tools
 Kanban uses a visual interactive board to plan and show progress using cards. Your Kanban board is fully customizable to support the workflow used by your team.  
@@ -108,8 +106,6 @@ Once you've started tracking work, you'll want to monitor and track progress, id
 ## Related notes
 
 You access tools provided by Team Services and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access.  To learn more, see [Permissions and access for work tracking](permissions-access-work-tracking.md). 
-
-See the [Feature index](../alm-devops-features.md) for an end-to-end overview of all Team Services and TFS features.  
 
 For an overview of all your customization options, see [Customize your work tracking experience](./customize/customize-work.md). 
 

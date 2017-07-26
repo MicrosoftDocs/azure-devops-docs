@@ -36,7 +36,7 @@ From the dashboards tab, click the ![plus icon](../Work/_img/icons/green_plus_ic
 
 ![Add and name a dashboard](_img/dashboards-new-ts.png) 
 
-If you don't see the ![plus icon](../work/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team. Either [switch the context to your team](#switch-team-context), or request you be added as a [team admin](../work/scale/manage-team-assets.md#add-team-admin). 
+If you don't see the ![plus icon](../work/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team. Either [switch the context to your team](#switch-team-context), or request you be added as a [team admin](../work/scale/add-team-administrator.md). 
 
 With the dashboard selected, you can add [widgets and charts to the dashboard](add-widget-to-dashboard.md). Or, you can [add charts to a team dashboard from the Work, Build, or Test hubs](add-widget-to-dashboard.md#add-charts).
 
@@ -205,7 +205,7 @@ Also, you can [create a dashboard widget ](https://www.visualstudio.com/en-us/in
 
 ### Required permissions
  
-If you don't see the ![plus icon](../work/_img/icons/green_plus_icon.png), then you don't have permission to edit your team dashboards. In general, you need to be a team admin for the currently selected team to edit dashboards. Request your current team or project admin to add you as a [team admin](../work/scale/manage-team-assets.md#add-team-admin). 
+If you don't see the ![plus icon](../work/_img/icons/green_plus_icon.png), then you don't have permission to edit your team dashboards. In general, you need to be a team admin for the currently selected team to edit dashboards. Request your current team or project admin to add you as a [team admin](../work/scale/add-team-administrator.md). 
 
 If you work in Team Services, you can ask your team admin to change dashboard permissions to allow you and other team members to edit dashboards as described in [Set permissions](#set-permissions) earlier in this topic. 
 

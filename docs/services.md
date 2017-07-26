@@ -150,7 +150,7 @@ There are a number of features and tasks associated with administrating a collab
 - [Key concepts](concepts.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Features](alm-devops-features.md)
+
 - [Pricing](https://www.visualstudio.com/team-services/pricing/)
 
 ### Case studies 

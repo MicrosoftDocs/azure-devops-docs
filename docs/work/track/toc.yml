@@ -1,0 +1,62 @@
+- name: Query Guidance
+  href: index.md
+- name: Overview
+  items:
+  - name: Adhoc vs managed queries
+    href: adhoc-vs-managed-queries.md
+- name: Quickstarts
+  items:
+  - name: Search box query
+    href: search-box-queries.md
+- name: Tutorials
+  items:
+  - name: Add & run queries
+    href: queries-preview.md
+  - name: Triage work items
+    href: queries-preview.md
+  - name: Edit a query
+    href: using-queries.md
+  - name: Copy as HTML 
+    href: ../backlogs/copy-clone-work-items.md#html
+- name: Samples
+  items:
+  - name: Query by title, ID, or description
+    href: titles-ids-descriptions.md 
+  - name: Query by assignment or workflow changes
+    href: query-by-workflow-changes.md 
+  - name: Query by area or iteration path
+    href: query-by-area-iteration-path.md   
+  - name: Query by date or current iteration
+    href: query-by-date-or-current-iteration.md  
+  - name: Query history
+    href: history-and-auditing.md  
+  - name: Query a numeric field
+    href: query-numeric.md  
+  - name: Query by pick list value
+    href: planning-ranking-priorities.md  
+  - name: Query by build & test integration fields
+    href: build-test-integration.md  
+  - name: Query by links or attachments
+    href: linking-attachments.md 
+- name: Concepts
+  items:
+  - name: Share work plans
+    href: share-plans.md
+- name: How-to guides
+  items:
+  - name: Switch project or team focus
+    href: ../how-to/switch-team-context-work.md
+  - name: Change column options
+    href: ../how-to/set-column-options.md
+  - name: Email/print work items
+    href: ../how-to/email-work-items.md
+  - name: "Filter, backlogs, boards, & queries"
+    href: ../how-to/filter-backlog-or-board.md 
+- name: Reference
+  items:
+  - name: "Query fields, operators & macros"
+    href: query-operators-variables.md
+  - name: WIQL syntax
+    href: ../../reference/wiql-syntax.md
+  - name: Work item field index
+    href: ../guidance/work-item-field.md

@@ -211,7 +211,7 @@ Learn [how to get paid extensions for your Team Services account](get-vsts-exten
 - [Essential services](../services.md)
 - [Client-server tools](../tools.md)
 - [Software development roles](../roles.md)
-- [Features](../alm-devops-features.md)
+
 - [Get extensions for Team Services](get-vsts-extensions.md)
 - [Get extensions for TFS](get-tfs-extensions.md)
 

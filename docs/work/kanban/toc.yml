@@ -1,0 +1,66 @@
+- name: Kanban Guidance
+  href: index.md
+- name: Overview
+  items:
+  - name: About Kanban and Agile 
+    href: kanban-overview.md
+  - name: "About teams & Agile tools"
+    href: ../about-teams-and-settings.md
+- name: Quickstarts
+  items:
+  - name: Kanban
+    href: kanban-quickstart.md
+- name: Tutorials
+  items:
+  - name: Kanban basics
+    href: kanban-basics.md
+  - name: Add task checklists
+    href: add-task-checklists.md
+  - name: "Add, run, & update inline tests"
+    href: add-run-update-tests.md
+  - name: "Define features & epics"
+    href: kanban-epics-features-stories.md
+- name: Concepts
+  items:
+  - name: Kanban best practices
+    href: ../concepts/best-practices-kanban.md
+  - name: About permissions and access
+    href: ../permissions-access-work-tracking.md
+  - name: "Backlogs, boards, & plans"
+    href: ../backlogs-boards-plans.md
+  - name: Work item form controls
+    href: ../concepts/work-item-form-controls.md
+  - name: "Workflow states & state categories"
+    href: ../concepts/workflow-and-state-categories.md
+  - name: Agile glossary
+    href: ../concepts/agile-glossary.md
+- name: How-to guides
+  items:
+  - name: Add or edit columns
+    href: add-columns.md
+  - name: Customize cards
+    href: ../customize/customize-cards.md
+  - name: WIP limits
+    href: wip-limits.md
+  - name: Expedite work
+    href: expedite-work.md
+  - name: Split columns
+    href: split-columns.md
+  - name: Definition of done
+    href: definition-of-done.md
+  - name: "Filter, backlogs, boards, & queries"
+    href: ../how-to/filter-backlog-or-board.md
+  - name: Switch project or team focus
+    href: ../how-to/switch-team-context-work.md
+- name: Reference
+  items:
+  - name: "Permissions & access for work tracking"
+    href: ../permissions-access-work-tracking.md
+  - name: Work item field index
+    href: ../guidance/work-item-field.md
+- name: Resources
+  items:
+  - name: "What is Agile?"
+    href: https://www.visualstudio.com/learn/what-is-agile/
+  - name: "What is Agile development?"
+    href: https://www.visualstudio.com/learn/what-is-agile-development/

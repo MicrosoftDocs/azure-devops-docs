@@ -141,7 +141,7 @@ Each time a build is run, it logs information about the build, including the run
 
 	![Add a build summary chart to a dashboard](_img/add-chart-build-summary.png)  
 
-	If you aren't a team administrator, [get added as one](../work/scale/manage-team-assets.md#add-team-admin). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
+	If you aren't a team administrator, [get added as one](../work/scale/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
 
 2. Build summary charts look like this:  
 
@@ -162,7 +162,7 @@ Each time a [release is deployed](../build-release/actions/view-manage-releases.
 
 	![Add a Release definition chart to a dashboard](_img/add-cd-release-definition.png)  
 
-	If you aren't a team administrator, [get added as one](../Work/scale/manage-team-assets.md#add-team-admin). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
+	If you aren't a team administrator, [get added as one](../work/scale/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
 
 2. Release definition charts show the success (green), in progress (blue), cancellation (red), or non-deployment (grey) to an environment for the current and last four releases:  
 
@@ -178,7 +178,7 @@ Each time a [release is deployed](../build-release/actions/view-manage-releases.
 
 As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../test/manual-exploratory-testing/getting-started/track-test-status.md).  
 
-1. Select your [team context](#switch-team-context), make sure you're a [team admin](../Work/scale/manage-team-assets.md#add-team-admin), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](#switch-team-context), make sure you're a [team admin](../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open the Test hub charts page and select the dashboard to add the test chart to.  
 
@@ -193,7 +193,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 
 You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../test/continuous-testing/getting-started/getting-started-with-continuous-testing.md).  
 
-1. Select your [team context](#switch-team-context), make sure you're a [team admin](../Work/scale/manage-team-assets.md#add-team-admin), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](#switch-team-context), make sure you're a [team admin](../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open a build summary for a build definition to which you've added tests, open the Tests page, and click the bar chart for either Test failures or Test duration.    
 
@@ -218,7 +218,7 @@ You add work item queries and charts to a dashboard from the Queries page. Queri
 
 1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](#switch-team-context) as needed.  
 
-2. If you aren't a team administrator, [get added as one](../Work/scale/manage-team-assets.md#add-team-admin). Only team and project admins can add and customize team dashboards.  
+2. If you aren't a team administrator, [get added as one](../work/scale/add-team-administrator.md). Only team and project admins can add and customize team dashboards.  
 
 3. If you haven't yet created the dashboard, [do that now](dashboards.md).  
 
@@ -259,7 +259,7 @@ Here's an example:
 >
 >For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](../reference/markdown-guidance.md#relative-links). 
 
-To edit a markdown widget, you must be a team admin or a member of the Project Administrators group. To be added as a team admin, go [here](../work/scale/manage-team-assets.md#add-team-admin). 
+To edit a markdown widget, you must be a team admin or a member of the Project Administrators group. To be added as a team admin, go [here](../work/scale/add-team-administrator.md). 
 
 <a id="related-notes"></a>  
 ## Related notes

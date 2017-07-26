@@ -1,0 +1,61 @@
+- name: Scrum Guidance
+  href: index.md
+- name: Overview
+  items:
+  - name: About Scrum
+    href: scrum-overview.md
+  - name: "About teams & Agile tools"
+    href: ../about-teams-and-settings.md
+- name: Quickstarts
+  items:
+  - name: Schedule sprints
+    href: define-sprints.md
+- name: Tutorials
+  items:
+  - name: Plan a sprint
+    href: sprint-planning.md
+  - name: "Add & update tasks (Task board)"
+    href: /task-board.md
+  - name: Plan capacity
+    href: ../scale/capacity-planning.md
+  - name: Sprint burndown
+    href: sprint-burndown.md
+  - name: Forecast
+    href: forecast.md
+  - name: Velocity
+    href: ../../report/guidance/team-velocity.md
+- name: Concepts
+  items:
+  - name: Agile glossary
+    href: ../concepts/agile-glossary.md
+  - name: About permissions and access
+    href: ../permissions-access-work-tracking.md
+  - name: "Backlogs, boards, & plans"
+    href: ../backlogs-boards-plans.md
+  - name: Scrum best practices
+    href: ../concepts/best-practices-scrum.md
+- name: How-to guides
+  items:
+  - name: Switch project or team focus
+    href: ../how-to/switch-team-context-work.md
+  - name: Change column options
+    href: ../how-to/set-column-options.md
+  - name: Email/print work items
+    href: ../how-to/email-work-items.md
+  - name: "Filter, backlogs, boards, & queries"
+    href: ../how-to/filter-backlog-or-board.md
+- name: Reference
+  items:
+  - name: "Permissions & access for work tracking"
+    href: ../permissions-access-work-tracking.md
+  - name: Work item field index
+    href: ../guidance/work-item-field.md
+- name: Resources
+  items:
+  - name: What is Scrum?
+    href: https://www.visualstudio.com/learn/what-is-scrum/
+  - name: What is Agile development?
+    href: https://www.visualstudio.com/learn/what-is-agile-development/
+  - name: Agile culture
+    href: https://www.visualstudio.com/learn/agile-culture/
+

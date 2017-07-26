@@ -303,6 +303,6 @@ If you're new to Team Services or TFS, these overview topics will help get you o
 - [Essential services](../services.md)
 - [Client-server tools](../tools.md)
 - [Software development roles](../roles.md)
-- [Features](../alm-devops-features.md) 
+
 
  

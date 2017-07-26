@@ -126,6 +126,6 @@ To get started, see [Set up Team Services or Team Foundation Server](setup-admin
 ## Related notes 
 - [Key concepts](concepts.md)
 - [Essential services](services.md)
-- [Features](alm-devops-features.md)
+
 - [Technical articles](http://visualstudio.com/articles/overview)
  

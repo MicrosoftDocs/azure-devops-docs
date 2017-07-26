@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/21/2017  
+ms.date: 07/25/2017  
 ---
 
 
@@ -15,6 +15,16 @@ ms.date: 07/21/2017
 **Team Services | TFS 2017 | TFS 2015**    
 
 You can add a link to a work item from within the work item form or from a backlog or query results list. From a backlog or query results list, you can [select multiple work items](bulk-modify-work-items.md#multi-select) and then link them to a new or existing work item. In general, use the bulk edit to update several work items to link to the same work item, either new or existing. 
+
+
+Use this topic to learn how to:  
+
+> [!div class="checklist"]   
+> * Link one or more work items to an existing work item   
+> * Link one or more work items to a new work item that you add when linking
+> * Link several work items to a new git branch
+> * Find work items that you want to link to  
+> * Other options for bulk modifying link relationships   
 
 For a list of all link types and supported link relationships, see [Link work items to support traceability](../track/link-work-items-support-traceability.md). 
 

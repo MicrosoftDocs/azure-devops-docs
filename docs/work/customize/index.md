@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: F6973385-2CEF-403A-B3AA-45DB7C436AF1
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/23/2017
+ms.date: 07/26/2017
 ---
 
 # Customize your work tracking experience 
@@ -14,7 +14,7 @@ ms.date: 06/23/2017
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013 </b>
 
 
-How to make this simple? 
+<! --- How to make this simple? -->  
 
 ## Quickstarts 
 

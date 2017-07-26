@@ -74,7 +74,7 @@ See [Stakeholder access](../quickstart/get-started-stakeholder.md) for details o
 <a id="grant-permissions"  >  </a>  
 ## Permissions versus access levels  
 
-As previously mentioned, setting the access level for  users or groups doesn't provide them access to a team project or the web portal. Only users or groups added to a team or TFS group can connect to a team project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the team project](../setup-admin/add-users.md) or as a [team member](../scale/multiple-teams.md#add-team-members).
+As previously mentioned, setting the access level for  users or groups doesn't provide them access to a team project or the web portal. Only users or groups added to a team or TFS group can connect to a team project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the team project](../setup-admin/add-users.md) or as a [team member](../work/scale/multiple-teams.md#add-team-members).
 
 TFS controls access through these three inter-connected functional areas:
 

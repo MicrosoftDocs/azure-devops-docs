@@ -73,6 +73,6 @@ Also, you can find several open-source clients that have been added to [Marketpl
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Features](alm-devops-features.md)
+
 
 Have more questions? Search for an answer or pose a question in one of the community forums listed in [Provide product and content feedback, Platforms and version support](provide-feedback.md).

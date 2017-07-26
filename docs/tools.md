@@ -195,6 +195,6 @@ REST APIs are provided to support building extensions to Team Services and TFS. 
 - [Key concepts](concepts.md)  
 - [Essential services](services.md)  
 - [Software development roles](roles.md)  
-- [Features](alm-devops-features.md)  
+
 - [Pricing](https://www.visualstudio.com/team-services/pricing/)  
  

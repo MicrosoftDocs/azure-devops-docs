@@ -211,7 +211,7 @@ And, available today only in Team Services:
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Features](alm-devops-features.md)
+
 - [Pricing - Team Services](https://www.visualstudio.com/team-services/pricing/)
 - [Pricing - TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
 

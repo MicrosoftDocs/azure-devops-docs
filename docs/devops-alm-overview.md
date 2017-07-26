@@ -264,7 +264,7 @@ Other topics of interest:
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)   
-- [Feature index](alm-devops-features.md)  
+
 - [What's new for Team Foundation Server](whats-new.md)   
 
 ### TFS updates
@@ -308,7 +308,7 @@ With Marketplace extensions (currently in private preview), you can create first
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">REST APIs</p>
 <ul style="padding-left:20px">
 <li style="margin-bottom:2px">[Get started with REST APIs](integrate/get-started/rest/basics.md)</li>
-<li style="margin-bottom:2px">[Choosing the right authentication mechanism](integrate/get-started/authentication/authentication_guidance.md)</li>
+<li style="margin-bottom:2px">[Choosing the right authentication mechanism](integrate/get-started/authentication/authentication-guidance.md)</li>
 <li style="margin-bottom:2px">[.NET client libraries](integrate/get-started/client-libraries/dotnet.md)</li>
 <li style="margin-bottom:2px">[C# client library samples](integrate/get-started/client-libraries/samples.md)</li>
 <li style="margin-bottom:2px">[REST API Reference](https://visualstudio.com/integrate/api/overview.md)</li>

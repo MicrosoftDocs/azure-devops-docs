@@ -383,7 +383,7 @@ Below we show the admin context for the team project level.
 <li style="margin-bottom:2px">[Notifications](../collaborate/manage-team-notifications.md) or [Alerts](../work/track/alerts-and-notifications.md)</li>
 </ul>
 
-<p style="padding-bottom:0px;text-align:left;">For a complete overview of all team assets that you can configure, see  [Manage team assets](../work/scale/manage-team-assets.md#configure-and-work-with-team-assets)</p>
+<p style="padding-bottom:0px;text-align:left;">For a complete overview of all team assets that you can configure, see  [Manage team assets](../work/scale/manage-team-assets.md)</p>
 
 </div>
 

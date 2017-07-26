@@ -134,6 +134,6 @@ In addition to the widgets described in the Widget catalog, you may also add wid
 [add-a-team]: ../Work/scale/multiple-teams.md
 [team-assets]: ../Work/scale/manage-team-assets.md
 [add-team-members]: ../Work/scale/multiple-teams.md#add-team-members
-[add-team-admin]: ../Work/scale/manage-team-assets.md#add-team-admin
+[add-team-admin]: ../work/scale/add-team-administrator.md
    
 

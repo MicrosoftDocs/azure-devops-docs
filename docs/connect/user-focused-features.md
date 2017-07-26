@@ -193,7 +193,7 @@ In addition, you can save queries to your **My Queries** folder which only you'l
 
 
 <a id="kanban-board">  </a>
-From a Kanban board, you can [filter based on your name](../work/kanban/filter-kanban-board.md#field-filter) to focus on those items assigned to you. 
+From a Kanban board, you can [filter based on your name](../work/how-to/filter-backlog-or-board.md#field-filter) to focus on those items assigned to you. 
 
 <img src="_img/user-cf-filter-by-name-kanban-board.png" alt="Kanban board, Filter on logged in user" style="border: 1px solid #CCCCCC;" />  
 

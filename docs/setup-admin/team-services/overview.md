@@ -314,7 +314,7 @@ The method used to customize a team project depends on the process model you use
 <ul style="padding-left:30px">
  <li style="margin-bottom:2px">[Key concepts](../../concepts.md)</li>
  <li style="margin-bottom:2px">[Software development roles](../../roles.md)</li>
- <li style="margin-bottom:2px">[Features](../../alm-devops-features.md)</li>
+
  <li style="margin-bottom:2px">[Pricing](https://www.visualstudio.com/team-services/pricing/)</li>
 </ul>
 </div>
