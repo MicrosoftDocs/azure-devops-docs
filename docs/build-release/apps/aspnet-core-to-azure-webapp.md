@@ -100,6 +100,11 @@ Now that you have a completely automated CI/CD pipeline, any changes you make to
 
 You can use Visual Studio to connect and push commits into your VSTS Git repo. (See [Share code with push](https://www.visualstudio.com/docs/git/tutorial/pushing).) However, VSTS also features a web-based editor to so that you can quickly commit small changes to source code directly in your browser.
 
+1. In the Azure portal, open the **Overview** blade for your web app and choose **Stop**.
+   You must stop an ASP.NET Core app before you can update it.  
+
+   ![Stopping the app in the Azure portal](_img/aspnet-core-to-azure-webapp/stop-app.png)
+
 1. Navigate to the **Code** hub in the VSTS portal. Change the code in **Views/Home/Index.cshtml** file by selecting the **Edit** action.
 
    ![Editing the code in the VSTS editor](_img/aspnet-core-to-azure-webapp/edit-in-vsts.png)
@@ -116,6 +121,14 @@ You can use Visual Studio to connect and push commits into your VSTS Git repo. (
 
    ![Committing the new code in the VSTS editor](_img/aspnet-core-to-azure-webapp/commit-code.png)
 
-1.  Wait a few minutes and then navigate to the web app URL in a new browser window to see the app with the new page title deployed.
+1. Go to the **Build &amp; Release** hub and open the **Releases** tab. Wait until the new release is complete.
+
+   ![Waiting for the deployment to complete](_img/aspnet-core-to-azure-webapp/wait-for-release.png)
+
+1. In the Azure portal, in the **Overview** blade for your web app and choose **Start**.
+
+   ![Stopping the app in the Azure portal](_img/aspnet-core-to-azure-webapp/stop-app.png)
+
+1.  Navigate to the web app URL in a new browser window to see the app with the new page title deployed.
 
    ![Viewing the updated app](_img/aspnet-core-to-azure-webapp/updated-app.png)
