@@ -291,11 +291,11 @@ phased execution:
 
 ## Conditional phase execution
 
-Agent and Deploymenmt Group phases include an option to run the tasks
+Agent and Deployment Group phases include an option to run the tasks
 in the phase only when specific conditions are met. Select a predefined
 condition, or select "custom" and enter an expression that evaluates
-to **true** or **false**. Nested expressions can be used and the
-expressions can access the variables available in the release definition.
+to **true** or **false**. Nested expressions can be used, and the
+expressions can access variables available in the release definition.
 
 ![Conditional phase execution option](_img/conditional-phase.png)
 
