@@ -3,7 +3,7 @@
 Next you'll import some sample code into VSTS, which is a full-featured Git server for hosting your team's source code.
 
 > [!NOTE]
-> If you already have an ASP.NET Core application checked into your VSTS Git repository, you can use that for this quickstart, so long as your app does not depend on a database. To learn how to deploy your app with a database, see _TODO: link_.
+> If you already have an ASP.NET Core application checked into your VSTS Git repository, you can use that for this quickstart, so long as your app does not depend on a database.
 
 Import our sample code:
 

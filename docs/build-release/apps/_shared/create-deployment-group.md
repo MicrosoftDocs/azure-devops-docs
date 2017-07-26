@@ -1,6 +1,6 @@
 ## Create a deployment group
 
-Deployment groups enable you to specify which servers are the target of changes you make to your app.
+Deployment groups make it easier to enable and organize the servers that you want to use to host your app. A deployment group is a collection of machines with a VSTS agent on each of them. Each machine interacts with VSTS to coordinate deployment of your app
 
 1. In VSTS, on the **Build & Release** hub, click **Deployment groups**. 
 
@@ -12,7 +12,7 @@ Deployment groups enable you to specify which servers are the target of changes 
 
  ![Screenshot showing update to code](./_img/windows-deployment-group-setup.png)
 
-The script that you've copied to your clipboard will download and configures an agent on the VM so that it can receipve new web deployment packages andd apply them to IIS.
+The script that you've copied to your clipboard will download and configure an agent on the VM so that it can receive new web deployment packages andd apply them to IIS.
 
 1. On your VM, in an **Administrator PowerShell** console, paste and run the script. 
 
