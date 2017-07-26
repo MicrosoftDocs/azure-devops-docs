@@ -2,9 +2,6 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Get started
-    tocHref: /vsts/
-    topicHref: /vsts/index
   - name: Agile tools
     tocHref: /vsts/work/
     topicHref: /vsts/work/index
