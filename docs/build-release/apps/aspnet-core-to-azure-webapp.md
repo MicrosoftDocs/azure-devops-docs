@@ -34,68 +34,63 @@ _TODO: Architecture diagram_
 
 ## Configure continuous delivery
 
-1. Log into the Azure portal and open the web app's blade. Choose **Continuous Delivery** and then choose **Configure**.
+1. Log into the Azure portal and open the eb app's blade. Choose **Continuous Delivery** and then choose **Configure**.
 
-   ![Starting Continuous Delivery configuration](_img/aspnet-core-to-webapp/continuous-delivery-intro.png)
+   ![Starting Continuous Delivery configuration](_img/aspnet-core-to-azure-webapp/continuous-delivery-intro.png)
 
 1. Select **Choose repository** and select **Visual Studio Team Services** for the code repository. Select the project, repository, and branch into which your imported the sample code. When you're done, choose **OK**.
  
-   ![Configuring the source code repository](_img/aspnet-core-to-webapp/continuous-delivery-repository.png)
+   ![Configuring the source code repository](_img/aspnet-core-to-azure-webapp/continuous-delivery-repository.png)
 
 1. Select **Configure Continuous Delivery** and choose **ASP.NET Core**. When you're done, choose **OK**.
 
-   ![Configuring the app type](_img/aspnet-core-to-webapp/continuous-delivery-apptype.png)
+   ![Configuring the app type](_img/aspnet-core-to-azure-webapp/continuous-delivery-apptype.png)
 
 1. Skip the other two steps - **Test** and **Deploy** - and choose **OK** to complete the configuration of continuous delivery.
 
-   ![Completing the configuration](_img/aspnet-core-to-webapp/continuous-delivery-complete.png)
+   ![Completing the configuration](_img/aspnet-core-to-azure-webapp/continuous-delivery-complete.png)
 
 1. When you choose **OK**, Azure Continuous Delivery configures and kicks off a build and deployment in VSTS.
-   When the build completes, the deployment is automatically initiated. You can see this happening in the logs blade.  
+   When the build completes, the deployment is automatically initiated.
+   After a while, the deployment is completed. Choose **Refresh Logs** to see this in the **Activity Log**.
 
-   ![Viewing the log while build is in progress](_img/aspnet-core-to-webapp/continuous-delivery-log.png)
+   ![Viewing the log when deployment is complete](_img/aspnet-core-to-azure-webapp/continuous-delivery-log2.png)
 
-1. After a while, the deployment is completed. Choose **Refresh Logs** to see this in the **Activity Log**.
+1. Open a new browser window and navigate to your web at _your-app-name_**.azurewebsites.net**.
 
-   ![Viewing the log when deployment is complete](_img/aspnet-core-to-webapp/continuous-delivery-log2.png)
-
-1. Open a new browser window and navigate to your web at at _app-name_**.azurewebsites.net**.
-
-1. Browse your new web app.
-
-   ![The web app deployed](_img/aspnet-core-to-webapp/app-deployed.png)
+   ![The web app deployed](_img/aspnet-core-to-azure-webapp/app-deployed.png)
 
 ## Review the pipeline in VSTS
 
-1. In the "Successfully set up Continuous Delivery..." blade, choose the **Build Definition** link.
+1. In the "Successfully set up Continuous Delivery..." log entry in the **Continuous Delivery** blade, choose the **Build Definition** link.
 
-   ![Opening the generated build definition](_img/aspnet-core-to-webapp/review-links-build.png)
+   ![Opening the generated build definition](_img/aspnet-core-to-azure-webapp/review-links-build.png)
 
 1. This opens the VSTS portal and takes you to the build definition summary. A **build definition** is a concept in VSTS that defines the CI process. The build definition summary shows recent builds that have been completed or that are in progress. Choose **Edit** to see how the CI process is defined.
 
-   ![The build definition status](_img/aspnet-core-to-webapp/build-status.png)
+   ![The build definition status](_img/aspnet-core-to-azure-webapp/build-status.png)
 
 1. A build definition consists of tasks that should be run as part of a build. When you configured the CI/CD from Azure Continuous Delivery, a number of tasks have been added to the build definition. These tasks automate the compilation and testing of your ASP.NET Core application. You will also notice that the parameters for each of these tasks have been populated for you.
 
-   ![The generated build definition](_img/aspnet-core-to-webapp/build-definition.png)
+   ![The generated build definition](_img/aspnet-core-to-azure-webapp/build-definition.png)
 
-1. Back in the Azure portal, in the "Successfully set up Continuous Delivery..." blade, choose the **Release Definition** link.
+1. Back in the Azure portal, in the "Successfully set up Continuous Delivery..." log entry, choose the **Release Definition** link.
 
-  ![Opening the generated release definition](_img/aspnet-core-to-webapp/review-links-release.png)
+  ![Opening the generated release definition](_img/aspnet-core-to-azure-webapp/review-links-release.png)
 
 1. This opens the VSTS portal again and takes you to the summary of releases. A **release definition** is a concept in VSTS that defines the CD process. The release definition summary shows recent releases that have been completed or that are in progress. Choose **Edit** to see how the CD process is defined.
 
-   ![The release definition status](_img/aspnet-core-to-webapp/release-status.png)
+   ![The release definition status](_img/aspnet-core-to-azure-webapp/release-status.png)
 
 1. A release definition consists of a pipeline of one or more environments, and each environment defines a set of tasks that automate deployment.
    When you configured the CI/CD from Azure Continuous Delivery, a simple release definition with a single environment named **Production** has been set up for you automatically.
    Choose this environment from the **Tasks** drop-down list.
 
-   ![The release definition pipeline](_img/aspnet-core-to-webapp/release-pipeline.png)
+   ![The release definition pipeline](_img/aspnet-core-to-azure-webapp/release-pipeline.png)
 
 1.  This environment consists of a single task for deploying the Azure web app.
 
-   ![The generated release definition](_img/aspnet-core-to-webapp/release-definition.png)
+   ![The generated release definition](_img/aspnet-core-to-azure-webapp/release-definition.png)
 
 1. You can modify the parameters or add additional tasks to both the build and release definition to meet the CI/CD needs of your application. You can also extend the release definition to include multiple stages. For more information about how to extend the CI/CD pipeline, see the tutorials on **Create a build definition** and **Create a release definition**.
 
@@ -107,7 +102,7 @@ You can use Visual Studio to connect and push commits into your VSTS Git repo. (
 
 1. Navigate to the **Code** hub in the VSTS portal. Change the code in **Views/Home/Index.cshtml** file by selecting the **Edit** action.
 
-   ![Editing the code in the VSTS editor](_img/aspnet-core-to-webapp/edit-in-vsts.png)
+   ![Editing the code in the VSTS editor](_img/aspnet-core-to-azure-webapp/edit-in-vsts.png)
 
 1. Add the following line of text above the carousel display in the page:
 
@@ -115,12 +110,12 @@ You can use Visual Studio to connect and push commits into your VSTS Git repo. (
    <h1>Demo of ASP.NET Core CI/CD!!</h1>
    ```
 
-   ![Adding the new code in the VSTS editor](_img/aspnet-core-to-webapp/add-code.png)
+   ![Adding the new code in the VSTS editor](_img/aspnet-core-to-azure-webapp/add-code.png)
 
 1. Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure web app.
 
-   ![Committing the new code in the VSTS editor](_img/aspnet-core-to-webapp/commit-code.png)
+   ![Committing the new code in the VSTS editor](_img/aspnet-core-to-azure-webapp/commit-code.png)
 
 1.  Wait a few minutes and then navigate to the web app URL in a new browser window to see the app with the new page title deployed.
 
-   ![Viewing the updated app](_img/aspnet-core-to-webapp/updated-app.png)
+   ![Viewing the updated app](_img/aspnet-core-to-azure-webapp/updated-app.png)
