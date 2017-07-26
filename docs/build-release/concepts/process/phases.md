@@ -289,6 +289,16 @@ phased execution:
   **Always run** on a task at the end of the first phase will
   not guarantee that tasks in subsequent phases will run.
 
+## Conditional phase execution
+
+Agent and Deployment Group phases include an option to run the tasks
+in the phase only when specific conditions are met. Select a predefined
+condition, or select "custom" and enter an expression that evaluates
+to **true** or **false**. Nested expressions can be used, and the
+expressions can access variables available in the release definition.
+
+![Conditional phase execution option](_img/conditional-phase.png)
+
 ## Related topics
 
 * [Tasks](tasks.md)
