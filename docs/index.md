@@ -32,11 +32,11 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Get started as a user</h3>
-                        <p><a href="/team-services/git/gitquickstart">Add your code with Git</a></p>
-                        <p><a href="/team-services/tfvc/share-your-code-in-tfvc-vs">Add your code with TFVC</a></p>
-                        <p><a href="/team-services/build/get-started/ci-cd-part-1">Set up CI/CD to Azure web app</a></p>
-                        <p><a href="/team-services/test/index">Test your app</a></p>
-                        <p><a href="/team-services/connect/account-home-pages">Track your work</a></p>
+                        <p><a href="/vsts/git/gitquickstart">Add your code with Git</a></p>
+                        <p><a href="/vsts/tfvc/share-your-code-in-tfvc-vs">Add your code with TFVC</a></p>
+                        <p><a href="/vsts/build/get-started/ci-cd-part-1">Set up CI/CD to Azure web app</a></p>
+                        <p><a href="/vsts/test/index">Test your app</a></p>
+                        <p><a href="/vsts/connect/account-home-pages">Track your work</a></p>
                       </div>
                     </div>
                   </div>
@@ -53,8 +53,8 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Get started as an account owner</h3>
-                        <p><a href="/team-services/setup-admin/get-started">Sign up for Visual Studio Team Services</a></p>
-                        <p><a href="/team-services/setup-admin/team-services/add-account-users-assign-access-levels-team-services">Add users and manage access</a></p>
+                        <p><a href="/vsts/setup-admin/get-started">Sign up for Visual Studio Team Services</a></p>
+                        <p><a href="/vsts/setup-admin/team-services/add-account-users-assign-access-levels-team-services">Add users and manage access</a></p>
                         <p><a href="https://www.visualstudio.com/team-services/pricing/">Team Services pricing</a></p>
                       </div>
                     </div>
@@ -72,8 +72,8 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Get Started on-premises with TFS</h3>
-                        <p><a href="/team-services/setup-admin/tfs/install/get-started">Install TFS</a></p>
-                        <p><a href="/team-services/setup-admin/tfs/upgrade/get-started">Upgrade TFS</a></p>
+                        <p><a href="/vsts/setup-admin/tfs/install/get-started">Install TFS</a></p>
+                        <p><a href="/vsts/setup-admin/tfs/upgrade/get-started">Upgrade TFS</a></p>
                         <p><a href="https://www.visualstudio.com/team-services/pricing/">TFS pricing</a></p>
                       </div>
                     </div>
@@ -92,8 +92,8 @@ ms.date: 07/26/2017
                       <div class="cardText">
                         <h3>Marketplace &amp; Billing</h3>
                         <p><a href="">Marketplace extensions</a></p>
-                        <p><a href="/team-services/marketplace/marketplace-billing-qa">Billing overview</a></p>
-                        <p><a href="/team-services/marketplace/get-vsts-extensions">Try extensions for free</a></p>
+                        <p><a href="/vsts/marketplace/marketplace-billing-qa">Billing overview</a></p>
+                        <p><a href="/vsts/marketplace/get-vsts-extensions">Try extensions for free</a></p>
                         <p><a href="https://aka.ms/vsoextensions">Develop extensions</a></p>
                       </div>
                     </div>
@@ -113,11 +113,11 @@ ms.date: 07/26/2017
                         <h3>Downloads</h3>
                         <p><a href="https://www.visualstudio.com/vs/community/">Visual Studio Community</a></p>
                         <p><a href="https://www.visualstudio.com/vs/professional/">Visual Studio Professional</a></p>
-                        <p><a href="https://www.visualstudio.com/vs/enterprise/">Visual Studio Enterprise</a></p> 
-                        <p><a href="https://www.visualstudio.com/vs/test-professional/">Visual Studio Test Professional</a></p> 
-                        <p><a href="http://java.visualstudio.com/docs/tools/eclipse">Eclipse/Team Explorer Everywhere</a></p> 
-                        <p><a href="https://java.visualstudio.com/Docs/tools/androidstudio">Visual Studio Team Services Plugin for Android Studio</a></p> 
-                        <p><a href="http://java.visualstudio.com/docs/tools/intelliJ">Visual Studio Team Services Plugin for IntelliJ</a></p>
+                        <p><a href="https://www.visualstudio.com/vs/enterprise/">Visual Studio Enterprise</a></p>
+                        <p><a href="https://www.visualstudio.com/vs/test-professional/">Visual Studio Test Professional</a></p>
+                        <p><a href="https://java.visualstudio.com/docs/tools/eclipse">Eclipse/Team Explorer Everywhere</a></p>
+                        <p><a href="https://java.visualstudio.com/Docs/tools/androidstudio">Visual Studio Team Services Plugin for Android Studio</a></p>
+                        <p><a href="https://java.visualstudio.com/docs/tools/intelliJ">Visual Studio Team Services Plugin for IntelliJ</a></p>
                         <p><a href="https://code.visualstudio.com/">Visual Studio Code</a></p>
                       </div>
                     </div>
@@ -145,8 +145,8 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Continuous Integration / Continuous Deployment</h3>
-                        <p><a href="/team-services/build/overview">About CI/CD</a></p>
-                        <p><a href="/team-services/build/get-started/ci-cd-part-1">CI/CD for newbies</a></p>
+                        <p><a href="/vsts/build/overview">About CI/CD</a></p>
+                        <p><a href="/vsts/build/get-started/ci-cd-part-1">CI/CD for newbies</a></p>
                       </div>
                     </div>
                   </div>
@@ -163,9 +163,9 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Git (distributed version control)</h3>
-                        <p><a href="/team-services/git/gitquickstart">Create a repo in the Web</a></p> 
-                        <p><a href="/team-services/git/share-your-code-in-git-vs">Create a repo with Visual Studio</a></p> 
-                        <p><a href="/team-services/git/tutorial/gitworkflow">Git workflow</a></p>
+                        <p><a href="/vsts/git/gitquickstart">Create a repo in the Web</a></p>
+                        <p><a href="/vsts/git/share-your-code-in-git-vs">Create a repo with Visual Studio</a></p>
+                        <p><a href="/vsts/git/tutorial/gitworkflow">Git workflow</a></p>
                       </div>
                     </div>
                   </div>
@@ -182,8 +182,8 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>TFVC (centralized version control)</h3>
-                        <p><a href="/team-services/tfvc/share-your-code-in-tfvc-vs">Develop code using Visual Studio</a></p>
-                        <p><a href="/team-services/tfvc/comparison-git-tfvc">Compare TFVC and Git</a></p>
+                        <p><a href="/vsts/tfvc/share-your-code-in-tfvc-vs">Develop code using Visual Studio</a></p>
+                        <p><a href="/vsts/tfvc/comparison-git-tfvc">Compare TFVC and Git</a></p>
                       </div>
                     </div>
                   </div>
@@ -219,9 +219,9 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Test</h3>
-                        <p><a href="/team-services/test/index">Manual and Exploratory testing</a></p> 
-                        <p><a href="/team-services/test/performance-testing/index">Performance testing</a></p>
-                        <p><a href="/team-services/test/continuous-testing/index">Continuous testing</a></p>
+                        <p><a href="/vsts/test/index">Manual and Exploratory testing</a></p>
+                        <p><a href="/vsts/test/performance-testing/index">Performance testing</a></p>
+                        <p><a href="/vsts/test/continuous-testing/index">Continuous testing</a></p>
                         <p><a href="https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios">Unit and developer testing</a></p>
                       </div>
                     </div>
@@ -239,10 +239,10 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Package Management</h3>
-                        <p><a href="/team-services/package/overview">About Package Management</p> 
-                        <p><a href="/team-services/package/get-started-nuget">Get started with NuGet</a></p> 
-                        <p><a href="/team-services/package/get-started-npm">Get started with npm</a></p>
-                        <p><a href="/team-services/package/get-started-maven">Get started with Maven</a></p>
+                        <p><a href="/vsts/package/overview">About Package Management</p>
+                        <p><a href="/vsts/package/get-started-nuget">Get started with NuGet</a></p>
+                        <p><a href="/vsts/package/get-started-npm">Get started with npm</a></p>
+                        <p><a href="/vsts/package/get-started-maven">Get started with Maven</a></p>
                       </div>
                     </div>
                   </div>
@@ -269,9 +269,9 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Get started</h3>
-                        <p><a href="/team-services/work/index">About Agile tools and work tracking</a></p>
-                        <p><a href="/team-services/work/backlogs/add-work-items">Add work items</a></p>
-                        <p><a href="/team-services/work/backlogs/create-your-backlog">Create your backlog</a></p>
+                        <p><a href="/vsts/work/index">About Agile tools and work tracking</a></p>
+                        <p><a href="/vsts/work/backlogs/add-work-items">Add work items</a></p>
+                        <p><a href="/vsts/work/backlogs/create-your-backlog">Create your backlog</a></p>
                       </div>
                     </div>
                   </div>
@@ -288,9 +288,9 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Scrum</h3>
-                        <p><a href="/team-services/work/scale/capacity-planning">Schedule sprints</a></p> 
-                        <p><a href="/team-services/work/scrum/sprint-planning">Plan a sprint</a></p>
-                        <p><a href="/team-services/work/scrum/task-board">Update task board</a></p>
+                        <p><a href="/vsts/work/scale/capacity-planning">Schedule sprints</a></p>
+                        <p><a href="/vsts/work/scrum/sprint-planning">Plan a sprint</a></p>
+                        <p><a href="/vsts/work/scrum/task-board">Update task board</a></p>
                       </div>
                     </div>
                   </div>
@@ -307,9 +307,9 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Kanban</h3>
-                        <p><a href="/team-services/work/kanban/kanban-basics">Kanban basics</a></p> 
-                        <p><a href="/team-services/work/customize/customize-cards">Add columns</a></p> 
-                        <p><a href="/team-services/work/kanban/wip-limits">WIP Limits</a></p>
+                        <p><a href="/vsts/work/kanban/kanban-basics">Kanban basics</a></p>
+                        <p><a href="/vsts/work/customize/customize-cards">Add columns</a></p>
+                        <p><a href="/vsts/work/kanban/wip-limits">WIP Limits</a></p>
                       </div>
                     </div>
                   </div>
@@ -326,10 +326,10 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Track</h3>
-                        <p><a href="/team-services/search/workitem/get-started">Queries</a></p> 
-                        <p><a href="/team-services/work/track/add-tags-to-work-items">Tags</a></p>
-                        <p><a href="/team-services/collaborate/follow-work-items">Follow work</a></p> 
-                        <p><a href="/team-services/collaborate/manage-personal-notifications">Notifications</a></p>
+                        <p><a href="/vsts/search/workitem/get-started">Queries</a></p>
+                        <p><a href="/vsts/work/track/add-tags-to-work-items">Tags</a></p>
+                        <p><a href="/vsts/collaborate/follow-work-items">Follow work</a></p>
+                        <p><a href="/vsts/collaborate/manage-personal-notifications">Notifications</a></p>
                       </div>
                     </div>
                   </div>
@@ -346,9 +346,9 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Scale</h3>
-                        <p><a href="/team-services/work/scale/portfolio-management">Portfolio management</a></p>
-                        <p><a href="/team-services/work/scale/review-team-plans">Review team deliverables</a></p>
-                        <p><a href="/team-services/work/scale/visibility-across-teams">Visibility across teams</a></p>
+                        <p><a href="/vsts/work/scale/portfolio-management">Portfolio management</a></p>
+                        <p><a href="/vsts/work/scale/review-team-plans">Review team deliverables</a></p>
+                        <p><a href="/vsts/work/scale/visibility-across-teams">Visibility across teams</a></p>
                       </div>
                     </div>
                   </div>
@@ -365,7 +365,7 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Customize</h3>
-                        <p><a href="/team-services/work/customize/customize-work">What you can customize</a></p> 
+                        <p><a href="/vsts/work/customize/customize-work">What you can customize</a></p>
                         <p><a href="">About teams and Agile tools</a></p>
                         <p><a href="">About process models</a></p>
                       </div>
@@ -384,9 +384,9 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Dashboards</h3>
-                        <p><a href="/team-services/report/overview">Charts</a></p>
-                        <p><a href="/team-services/report/dashboards">Add and manage dashboards</a></p>
-                        <p><a href="/team-services/report/widget-catalog">Widget catalog</a></p>
+                        <p><a href="/vsts/report/overview">Charts</a></p>
+                        <p><a href="/vsts/report/dashboards">Add and manage dashboards</a></p>
+                        <p><a href="/vsts/report/widget-catalog">Widget catalog</a></p>
                       </div>
                     </div>
                   </div>
@@ -403,8 +403,8 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Power BI</h3>
-                        <p><a href="/team-services/report/powerbi/overview">Power BI integration</a></p>
-                        <p><a href="/team-services/report/powerbi/connect-vso-pbi-vs">Connect to Team Services</a></p>
+                        <p><a href="/vsts/report/powerbi/overview">Power BI integration</a></p>
+                        <p><a href="/vsts/report/powerbi/connect-vso-pbi-vs">Connect to Team Services</a></p>
                       </div>
                     </div>
                   </div>
@@ -451,10 +451,10 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Get started</h3>
-                        <p><a href="/team-services/integrate/overview">Integration overview</a></p>
-                        <p><a href="/team-services/integrate/extensions/get-started/node">Build your first extension</a></p>
-                        <p><a href="/team-services/integrate/extensions/publish/overview">Package &amp; publish</a></p>
-                        <p><a href="/team-services/integrate/extensions/get-started/tutorials">Tutorial catalog</a></p>
+                        <p><a href="/vsts/integrate/overview">Integration overview</a></p>
+                        <p><a href="/vsts/integrate/extensions/get-started/node">Build your first extension</a></p>
+                        <p><a href="/vsts/integrate/extensions/publish/overview">Package &amp; publish</a></p>
+                        <p><a href="/vsts/integrate/extensions/get-started/tutorials">Tutorial catalog</a></p>
                       </div>
                     </div>
                   </div>
@@ -471,8 +471,8 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Service Hooks</a></h3>
-                        <p><a href="/team-services/marketplace/integrate/service-hooks/get-started">Integrate with service hooks</a></p>
-                        <p><a href="/team-services/marketplace/integrate/service-hooks/authorize">Authorize a service</a></p>
+                        <p><a href="/vsts/marketplace/integrate/service-hooks/get-started">Integrate with service hooks</a></p>
+                        <p><a href="/vsts/marketplace/integrate/service-hooks/authorize">Authorize a service</a></p>
                         <p><a href="">Create a subscription programmatically</a></p>
                       </div>
                     </div>
@@ -490,9 +490,9 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>REST APIs</h3>
-                        <p><a href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">Overview and usage</a></p> 
-                        <p><a href="/team-services/integrate/get-started/rest/basics">Get started with the REST APIs</a></p> 
-                        <p><a href="/team-services/integrate/get-started/authentication/authentication_guidance">Basic authentication</a></p> 
+                        <p><a href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">Overview and usage</a></p>
+                        <p><a href="/vsts/integrate/get-started/rest/basics">Get started with the REST APIs</a></p>
+                        <p><a href="/vsts/integrate/get-started/authentication/authentication_guidance">Basic authentication</a></p>
                         <p><a href="">Azure REST API Reference</a></p>
                       </div>
                     </div>
@@ -510,7 +510,7 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>.NET</h3>
-                        <p><a href="/team-services/integrate/get-started/client-libraries">Get started with the .NET SDK for Team Services</a></p> 
+                        <p><a href="/vsts/integrate/get-started/client-libraries">Get started with the .NET SDK for Team Services</a></p>
                         <p><a href="">Reference</a></p>
                       </div>
                     </div>
@@ -528,7 +528,7 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Java</h3>
-                        <p><a href="">Get started with the Java SDK for Team Services</a></p> 
+                        <p><a href="">Get started with the Java SDK for Team Services</a></p>
                         <p><a href="">Reference</a></p>
                       </div>
                     </div>
@@ -546,7 +546,7 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Node.js</h3>
-                        <p><a href="">Get started with the Node SDK for Team Services</a></p> 
+                        <p><a href="">Get started with the Node SDK for Team Services</a></p>
                         <p><a href="">Reference</a></p>
                       </div>
                     </div>
@@ -583,7 +583,7 @@ ms.date: 07/26/2017
                       <div class="cardText">
                         <h3>Tools for Developers</h3>
                         <p><a href="">.NET Azure tools and plug-ins</a></p>
-                        <p><a href="">Azure tools for Java developers</a></p> 
+                        <p><a href="">Azure tools for Java developers</a></p>
                         <p><a href="">Node</a></p>
                       </div>
                     </div>
@@ -601,8 +601,8 @@ ms.date: 07/26/2017
                       </div>
                       <div class="cardText">
                         <h3>Get the Azure SDKs</h3>
-                        <p><a href="/dotnet/azure/dotnet-sdk-azure-install">Get the Azure libraries for .NET</a></p> 
-                        <p><a href="/java/azure/java-sdk-azure-install">Get the Azure libraries for Java</a></p> 
+                        <p><a href="/dotnet/azure/dotnet-sdk-azure-install">Get the Azure libraries for .NET</a></p>
+                        <p><a href="/java/azure/java-sdk-azure-install">Get the Azure libraries for Java</a></p>
                         <p><a href="/nodejs/azure/node-sdk-azure-install">Get the Azure libraries for Node.js</a></p>
                       </div>
                     </div>
