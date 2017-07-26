@@ -40,7 +40,7 @@ Running an ASP.NET Core app on Windows requires some dependencies.
 
 On your Windows VM, install the [.NET Core Windows Server Hosting](https://go.microsoft.com/fwlink/?linkid=848766) bundle. The bundle will install the .NET Core Runtime, .NET Core Library, and the [ASP.NET Core Module](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps). The module creates the reverse-proxy between IIS and the Kestrel server.
 
-To effect a change to the system PATH, run the following commands.
+After the installation is done, to effect a change to the system PATH, run the following commands.
 
 ```cmd
 net stop was /y
@@ -54,39 +54,111 @@ net start w3svc
 
 [!INCLUDE [temp](_shared/import-code-aspnet-core.md)]
 
-[!INCLUDE [temp](_shared/set-up-ci-1.md)]
+[//]: # (TODO)
 
-In the right panel, select **ASP.NET Core**, and then click **Apply**.
+[//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
+[//]: # (TODO: [!INCLUDE [temp](_shared/set-up-ci-1.md])
 
-[!INCLUDE [temp](_shared/set-up-ci-2.md)]
+[//]: # (TODO: In the right panel, select **ASP.NET Core**, and then click **Apply**.)
 
-[!INCLUDE [temp](_shared/set-up-ci-3.md)]
+[//]: # (TODO: ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
 
-[!INCLUDE [temp](_shared/set-up-cd-1.md)]
+[//]: # (TODO: [!INCLUDE [temp](_shared/set-up-ci-2.md])
 
-![Screenshot showing release action on build summary](_shared/_img/cicd-get-started-dotnetcore-release.png)
+[//]: # (TODO: [!INCLUDE [temp](_shared/set-up-ci-3.md])
 
-In the dialog that prompts to **Create release definition**, select **Yes**.
+[//]: # (TODO)
 
-In the **Create release definition** wizard, select the **IIS Website and SQL Database deployment** template, and click **Apply**.
+## Set up continuous integration
 
-![Screenshot showing IIS template](_img/aspnet-core-to-azure-windows-vm/cicd-get-started-iis-template.png)
+1. On the **Files** tab of the **Code** hub, click **Set up build**.
 
-Click **Tasks**, and then select the **SQL Deployment** phase. Click 'X' to delete this phase. We won't be deploying a database in this quickstart.
+ ![Screenshot showing button to set up build for a repository](_shared/_img/set-up-first-build-from-code-hub.png)
 
-Select **IIS Deployment** phase. For the **Deployment Group**, select the deployment group you created earlier, such as *myIIS*. In the **Machine tags** box, select **Add** and choose the *Web* tag.
+ You are taken to the **Build & Release** hub in VSTS and asked to **Choose a template**. 
 
-Select the **IIS Web App Manage** task; click 'X' to delete this task. We will not create a new website for this quickstart. Instead, we will deploy to the **default web site**.
+1. In the right panel, click **ASP.NET Core**, and then click **Apply**.
 
-Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Leave all the other default settings.
+ ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
 
-![Screenshot showing release definition](_img/aspnet-core-to-azure-windows-vm/cicd-get-started-release-definition.png)
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time check in code.
 
-[!INCLUDE [temp](_shared/set-up-cd-3.md)]
+1. For the **Default agent queue**, select _Hosted VS2017_.
 
-## Update to redeploy the code
+1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+
+1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog, click **Queue**.
+
+1. A new build is started. You will see a link to the new build on the top of the page. Click the link to watch the new build as it happens. Wait for the build to complete and succeed before proceeding to the next section.
+
+[//]: # (TODO)
+
+[//]: # (TODO: Restore use of includes when we get support for using them in a list.)
+
+[//]: # (TODO: [!INCLUDE [temp](_shared/set-up-cd-1.md])
+
+[//]: # (TODO: ![Screenshot showing release action on build summary](_shared/_img/cicd-get-started-dotnetcore-release.png)
+
+[//]: # (TODO: In the dialog that prompts to **Create release definition**, select **Yes**.)
+
+[//]: # (TODO: In the **Create release definition** wizard, select the **IIS Website and SQL Database deployment** template, and click **Apply**.)
+
+[//]: # (TODO: ![Screenshot showing IIS template](_img/aspnet-core-to-azure-windows-vm/cicd-get-started-iis-template.png)
+
+[//]: # (TODO: Click **Tasks**, and then select the **SQL Deployment** phase. Click 'X' to delete this phase. We won't be deploying a database in this quickstart.)
+
+[//]: # (TODO: Select **IIS Deployment** phase. For the **Deployment Group**, select the deployment group you created earlier, such as *myIIS*. In the **Machine tags** box, select **Add** and choose the *Web* tag.)
+
+[//]: # (TODO: Select the **IIS Web App Manage** task; click 'X' to delete this task. We will not create a new website for this quickstart. Instead, we will deploy to the **default web site**.)
+
+[//]: # (TODO: Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Leave all the other default settings.)
+
+[//]: # (TODO: ![Screenshot showing release definition](_img/aspnet-core-to-azure-windows-vm/cicd-get-started-release-definition.png)
+
+[//]: # (TODO: [!INCLUDE [temp](_shared/set-up-cd-3.md])
+
+## Set up continuous deployment
+
+1. Once the build succeeds, click the **Release** action on the build summary page.
+
+ ![Screenshot showing release action on build summary](_shared/_img/cicd-get-started-dotnetcore-release.png)
+
+1. On the dialog box that prompts you to **Create release definition**, click **Yes**.
+
+1. In the **Create release definition** wizard, select **IIS Website and SQL Database deployment** template, and then click **Apply**.
+
+ ![Screenshot showing IIS template](_img/aspnet-core-to-azure-windows-vm/cicd-get-started-iis-template.png)
+
+1. Click **Tasks**, and select the **SQL Deployment** phase. Click **X** to delete this phase. (We won't be deploying a database in this quickstart.)
+
+1. Click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*. In the **Machine tags** box, select **Add** and choose the *Web* tag.
+
+1. Select the **IIS Web App Manage** task and then click **X** to delete this task. (We won't create a new website in this quickstart. Instead, we'll deploy to the **default web site**.)
+
+1. Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Leave all the other default settings.
+
+ ![Screenshot showing release definition](_img/aspnet-core-to-azure-windows-vm/cicd-get-started-release-definition.png)
+
+1. Select the artifact trigger, and then on the right side make sure the **Continuous deployment trigger** is enabled. 
+
+ ![build artifact trigger in release definition](_shared/_img/build-artifact-trigger-in-release-definition.png)
+
+1. Click **Save**. On the Save dialog box, click **OK**. 
+
+1. To test the release definition, click **Release** and then **Create Release**.
+
+ ![create release](_shared/_img/create-release.png)
+
+1. On the Create new release dialog box, click **Queue**.
+
+ Notice that a new release was created. Click the link to navigate to the release.
+
+ ![new release created message](_shared/_img/new-release-created-message.png)
+
+You can watch the live logs for the deployment as it happens. Wait for the release to be deployed to the Azure web app.
+
+[!INCLUDE [import-code-aspnet-core](_shared/change-code-section.md)]
 
 Navigate to the **Code** hub in the VSTS portal. Navigate to **Views/Home/Index.cshtml** file. Make the following simple change to that file by selecting the edit action.
 

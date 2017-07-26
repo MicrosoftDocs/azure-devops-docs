@@ -94,11 +94,7 @@ _TODO: Architecture diagram_
 
 1. You can modify the parameters or add additional tasks to both the build and release definition to meet the CI/CD needs of your application. You can also extend the release definition to include multiple stages. For more information about how to extend the CI/CD pipeline, see the tutorials on **Create a build definition** and **Create a release definition**.
 
-## Update to redeploy the code
-
-Now that you have a completely automated CI/CD pipeline, any changes you make to the application are automatically built and deployed by VSTS. To try this, make a change to the app and commit that change to the Git repository.
-
-You can use Visual Studio to connect and push commits into your VSTS Git repo. (See [Share code with push](https://www.visualstudio.com/docs/git/tutorial/pushing).) However, VSTS also features a web-based editor to so that you can quickly commit small changes to source code directly in your browser.
+[!INCLUDE [import-code-aspnet-core](_shared/change-code-section.md)]
 
 1. In the Azure portal, open the **Overview** blade for your web app and choose **Stop**.
    You must stop an ASP.NET Core app before you can update it.  
