@@ -93,11 +93,11 @@
   - name: Go mobile
     href: collaborate/mobile-work.md
   - name: Switch project or team focus
-    href: /team-services/work/how-to/switch-team-context-work
+    href: /vsts/work/how-to/switch-team-context-work
   - name: Connect to a team project
     href: connect/connect-team-projects.md
   - name: "Add & manage teams"
-    href: /team-services/work/scale/multiple-teams
+    href: /vsts/work/scale/multiple-teams
   - name: Navigation
     items:
     - name: Work in the web portal
@@ -107,29 +107,29 @@
   - name: "Manage users & access (Team Services)"
     items:
     - name: Add and manage users
-      href: /team-services/setup-admin/team-services/add-account-users-assign-access-levels-team-services
+      href: /vsts/setup-admin/team-services/add-account-users-assign-access-levels-team-services
     - name: Add administrators
-      href: /team-services/setup-admin/add-administrator-tfs
+      href: /vsts/setup-admin/add-administrator-tfs
     - name: Manage permissions
-      href: /team-services/setup-admin/tfs/admin/change-permission-levels
+      href: /vsts/setup-admin/tfs/admin/change-permission-levels
   - name: "Manage users & access (TFS)"
     items:
     - name: Add users to team projects
-      href: /team-services/setup-admin/add-users
+      href: /vsts/setup-admin/add-users
     - name: Manage permissions
-      href: /team-services/setup-admin/tfs/admin/change-permission-levels
+      href: /vsts/setup-admin/tfs/admin/change-permission-levels
     - name: Change access levels (TFS)
-      href: /team-services/work/connect/change-access-levels
+      href: /vsts/work/connect/change-access-levels
   - name: Install TFS
     items:
     - name: Get started
-      href: /team-services/setup-admin/tfs/install/get-started
+      href: /vsts/setup-admin/tfs/install/get-started
     - name: Single server
-      href: /team-services/setup-admin/tfs/install/single-server
+      href: /vsts/setup-admin/tfs/install/single-server
     - name: Dual server
-      href: /team-services/setup-admin/tfs/install/dual-server
+      href: /vsts/setup-admin/tfs/install/dual-server
     - name: Multiple servers
-      href: /team-services/setup-admin/tfs/install/multiple-server
+      href: /vsts/setup-admin/tfs/install/multiple-server
 - name: Reference
   items:
   - name: "Permissions & access"
@@ -157,9 +157,9 @@
 - name: Resources
   items:
   - name: "Team Services, Account Management"
-    href: /team-services/setup-admin/team-services/overview
+    href: /vsts/setup-admin/team-services/overview
   - name: "TFS, Administration"
-    href: /team-services/setup-admin/get-started
+    href: /vsts/setup-admin/get-started
   - name: "Marketplace & Billing"
     href: /docs/marketplace/overview
     items:

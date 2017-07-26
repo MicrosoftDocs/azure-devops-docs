@@ -356,7 +356,7 @@
 - name: Resources
   items:
   - name: Clients that support work tracking
-    href: /team-services/tools
+    href: /vsts/tools
   - name: Productivity tips
     href: productivity/productivity-tips.md
   - name: What is Agile?

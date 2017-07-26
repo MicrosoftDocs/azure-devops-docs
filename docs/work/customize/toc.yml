@@ -37,7 +37,7 @@
 - name: Concepts
   items:
   - name: Default processes
-    href: /team-services/work/guidance/choose-process
+    href: /vsts/work/guidance/choose-process
 - name: How-to guides
   items:
   - name: Hosted XML
@@ -97,7 +97,7 @@
     - name: Use team fields instead of area paths
       href: use-team-fields-instead-area-paths.md
   - name: Configure features after an upgrade
-    href: /team-services/work/customize/configure-features-after-upgrade
+    href: /vsts/work/customize/configure-features-after-upgrade
 - name: Reference
   items:
   - name: Changes made to process templates
@@ -270,6 +270,6 @@
 - name: Resources
   items:
   - name: Marketplace extensions
-    href: /team-services/marketplace/get-vsts-extensions
+    href: /vsts/marketplace/get-vsts-extensions
   - name: Extensibility and REST APIs
-    href: /team-services/extend/overview
+    href: /vsts/extend/overview
