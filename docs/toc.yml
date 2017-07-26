@@ -161,14 +161,14 @@
   - name: "TFS, Administration"
     href: /vsts/setup-admin/get-started
   - name: "Marketplace & Billing"
-    href: /docs/marketplace/overview
+    href: /vsts/marketplace/overview
     items:
     - name: Visual Studio Subscriptions
-      href: /docs/marketplace/vs-subscriptions/buy-vs-subscriptions
+      href: /vsts/marketplace/vs-subscriptions/buy-vs-subscriptions
     - name: Try extensions for free
-      href: /docs/setup-admin/team-services/try-additional-features-vs
+      href: /vsts/setup-admin/team-services/try-additional-features-vs
     - name: Get more features for Team Services
-      href: /docs/marketplace/get-vsts-extensions
+      href: /vsts/marketplace/get-vsts-extensions
     - name: "Pricing: Team Services"
       href: https://www.visualstudio.com/team-services/pricing/
     - name: "Pricing: TFS"
