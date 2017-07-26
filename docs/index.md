@@ -13,30 +13,86 @@ ms.date: 07/26/2017
 
 <div id="main" class="v2">
   <div class="container">
-    <h1>Visual Studio Team Services Documentation</h1>
+    <ul class="cardsY panelContent featuredContent">
+      <li>
+        <a href="/vsts">
+          <div class="cardSize">
+            <div class="cardPadding">
+              <div class="card">
+                <div class="cardImageOuter">
+                  <div class="cardImage">
+                    <img src="/media/common/placeholder.svg" alt="" />
+                  </div>
+                </div>
+                <div class="cardText">
+                  <span class="likeAnH3">Get Started Guide for VSTS and TFS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.visualstudio.com/en-us/articles/devopsmsft/overview">
+          <div class="cardSize">
+            <div class="cardPadding">
+              <div class="card">
+                <div class="cardImageOuter">
+                  <div class="cardImage">
+                    <img src="/media/common/placeholder.svg" alt="" />
+                  </div>
+                </div>
+                <div class="cardText">
+                  <span class="likeAnH3">DevOps@Microsoft</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="cardSize">
+            <div class="cardPadding">
+              <div class="card">
+                <div class="cardImageOuter">
+                  <div class="cardImage">
+                    <img src="/media/common/placeholder.svg" alt="" />
+                  </div>
+                </div>
+                <div class="cardText">
+                  <span class="likeAnH3">Lorem ipsum</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
     <ul class="pivots">
       <li>
         <a href="#start">Get Started</a>
         <ul id="start">
           <li>
             <a href="#start-all"></a>
-            <ul id="start-all" class="cardsW">
+            <ul id="start-all" class="cardsL">
+              <li>
+                <div class="container intro">
+                  <h2 class="likeAnH1">Get Started with VSTS and TFS</h2>
+                  <p>Explore our most popular services with quickstarts, samples, and tutorials.</p>
+                </div>
+              </li>
               <li>
                 <div class="cardSize">
                   <div class="cardPadding">
                     <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-get-started-user.svg" alt="" />
-                        </div>
-                      </div>
                       <div class="cardText">
-                        <h3>Get started as a user</h3>
-                        <p><a href="/vsts/git/gitquickstart">Add your code with Git</a></p>
-                        <p><a href="/vsts/tfvc/share-your-code-in-tfvc-vs">Add your code with TFVC</a></p>
-                        <p><a href="/vsts/build/get-started/ci-cd-part-1">Set up CI/CD to Azure web app</a></p>
-                        <p><a href="/vsts/test/index">Test your app</a></p>
-                        <p><a href="/vsts/connect/account-home-pages">Track your work</a></p>
+                        <h3>Add your code</h3>
+                        <ul class="noBullet">
+                          <li><a class="barLink" href="">Create a Git repo</a></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -46,16 +102,13 @@ ms.date: 07/26/2017
                 <div class="cardSize">
                   <div class="cardPadding">
                     <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-get-started-account-manager.svg" alt="" />
-                        </div>
-                      </div>
                       <div class="cardText">
-                        <h3>Get started as an account owner</h3>
-                        <p><a href="/vsts/setup-admin/get-started">Sign up for Visual Studio Team Services</a></p>
-                        <p><a href="/vsts/setup-admin/team-services/add-account-users-assign-access-levels-team-services">Add users and manage access</a></p>
-                        <p><a href="https://www.visualstudio.com/team-services/pricing/">Team Services pricing</a></p>
+                        <h3>Continuous integration &amp; delivery</h3>
+                        <ul class="noBullet">
+                          <li><a class="barLink" href="">Build and release</a></li>
+                          <li><a class="barLink" href="">Deploy to Azure</a></li>
+                          <li><a class="barLink" href="">Package management</a></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -65,16 +118,14 @@ ms.date: 07/26/2017
                 <div class="cardSize">
                   <div class="cardPadding">
                     <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-get-started-tfs.svg" alt="" />
-                        </div>
-                      </div>
                       <div class="cardText">
-                        <h3>Get Started on-premises with TFS</h3>
-                        <p><a href="/vsts/setup-admin/tfs/install/get-started">Install TFS</a></p>
-                        <p><a href="/vsts/setup-admin/tfs/upgrade/get-started">Upgrade TFS</a></p>
-                        <p><a href="https://www.visualstudio.com/team-services/pricing/">TFS pricing</a></p>
+                        <h3>Agile</h3>
+                        <ul class="noBullet">
+                          <li><a class="barLink" href="">Create your backlog</a></li>
+                          <li><a class="barLink" href="">Scrum</a></li>
+                          <li><a class="barLink" href="">Kanban</a></li>
+                          <li><a class="barLink" href="">Dashboards</a></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -84,17 +135,13 @@ ms.date: 07/26/2017
                 <div class="cardSize">
                   <div class="cardPadding">
                     <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-get-started-marketplace.svg" alt="" />
-                        </div>
-                      </div>
                       <div class="cardText">
-                        <h3>Marketplace &amp; Billing</h3>
-                        <p><a href="">Marketplace extensions</a></p>
-                        <p><a href="/vsts/marketplace/marketplace-billing-qa">Billing overview</a></p>
-                        <p><a href="/vsts/marketplace/get-vsts-extensions">Try extensions for free</a></p>
-                        <p><a href="https://aka.ms/vsoextensions">Develop extensions</a></p>
+                        <h3>Extend and integrate</h3>
+                        <ul class="noBullet">
+                          <li><a class="barLink" href="">Marketplace</a></li>
+                          <li><a class="barLink" href="">Service Hooks</a></li>
+                          <li><a class="barLink" href="">REST APIs</a></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -104,21 +151,82 @@ ms.date: 07/26/2017
                 <div class="cardSize">
                   <div class="cardPadding">
                     <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/sql/sql-azure-3.svg" alt="" />
-                        </div>
-                      </div>
                       <div class="cardText">
-                        <h3>Downloads</h3>
-                        <p><a href="https://www.visualstudio.com/vs/community/">Visual Studio Community</a></p>
-                        <p><a href="https://www.visualstudio.com/vs/professional/">Visual Studio Professional</a></p>
-                        <p><a href="https://www.visualstudio.com/vs/enterprise/">Visual Studio Enterprise</a></p>
-                        <p><a href="https://www.visualstudio.com/vs/test-professional/">Visual Studio Test Professional</a></p>
-                        <p><a href="https://java.visualstudio.com/docs/tools/eclipse">Eclipse/Team Explorer Everywhere</a></p>
-                        <p><a href="https://java.visualstudio.com/Docs/tools/androidstudio">Visual Studio Team Services Plugin for Android Studio</a></p>
-                        <p><a href="https://java.visualstudio.com/docs/tools/intelliJ">Visual Studio Team Services Plugin for IntelliJ</a></p>
-                        <p><a href="https://code.visualstudio.com/">Visual Studio Code</a></p>
+                        <h3>Resources</h3>
+                        <ul class="cardsFTitle">
+                          <li>
+                            <a href="">
+                              <div class="cardSize">
+                                <div class="cardPadding">
+                                  <div class="card">
+                                    <div class="cardImageOuter">
+                                      <div class="cardImage">
+                                        <img src="/media/common/placeholder.svg" alt="" />
+                                      </div>
+                                    </div>
+                                    <div class="cardText">
+                                      <h3>Marketplace</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <div class="cardSize">
+                                <div class="cardPadding">
+                                  <div class="card">
+                                    <div class="cardImageOuter">
+                                      <div class="cardImage">
+                                        <img src="/media/common/placeholder.svg" alt="" />
+                                      </div>
+                                    </div>
+                                    <div class="cardText">
+                                      <h3>Learn about Git</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <div class="cardSize">
+                                <div class="cardPadding">
+                                  <div class="card">
+                                    <div class="cardImageOuter">
+                                      <div class="cardImage">
+                                        <img src="/media/common/placeholder.svg" alt="" />
+                                      </div>
+                                    </div>
+                                    <div class="cardText">
+                                      <h3>Learn about DevOps</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <div class="cardSize">
+                                <div class="cardPadding">
+                                  <div class="card">
+                                    <div class="cardImageOuter">
+                                      <div class="cardImage">
+                                        <img src="/media/common/placeholder.svg" alt="" />
+                                      </div>
+                                    </div>
+                                    <div class="cardText">
+                                      <h3>Learn about Agile</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -129,485 +237,693 @@ ms.date: 07/26/2017
         </ul>
       </li>
       <li>
-        <a href="#devops">Dev Ops</a>
-        <ul id="devops">
+        <a href="#services">Services</a>
+        <ul id="services">
           <li>
-            <a href="#devops-all"></a>
-            <ul id="devops-all" class="cardsW">
+            <a href="#all">All</a>
+            <ul id="all" class="directory">
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-dev-ops-continuous-integration.svg" alt="" />
-                        </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Continuous Integration / Continuous Deployment</h3>
-                        <p><a href="/vsts/build/overview">About CI/CD</a></p>
-                        <p><a href="/vsts/build/get-started/ci-cd-part-1">CI/CD for newbies</a></p>
-                      </div>
-                    </div>
-                  </div>
+                <div class="group">
+                  <h3>Code</h3>
+                  <ul>
+                    <li><a class="barLink" href="">Git</a></li>
+                    <li><a class="barLink" href="">TFVC</a>
+                    </li>
+                  </ul>
+                  <h3>Continuous Integration &amp; Delivery</h3>
+                  <ul>
+                    <li><a class="barLink" href="">Build and Release</a>
+                    </li>
+                    <li><a class="barLink" href="">Deploy to Azure</a>
+                    </li>
+                    <li><a class="barLink" href="">Package Management</a>
+                    </li>
+                    <li><a class="barLink" href="">Continuous Testing</a>
+                    </li>
+                  </ul>
+                  <h3>Testing</h3>
+                  <ul>
+                    <li><a class="barLink" href="">Test Management</a>
+                    </li>
+                    <li><a class="barLink" href="">Unit Testing</a>
+                    </li>
+                    <li><a class="barLink" href="">Exploratory &amp; Manual Testing</a>
+                    </li>
+                    <li><a class="barLink" href="">Load Testing</a>
+                    </li>
+                  </ul>
+                  <h3>Collaboration</h3>
+                  <ul>
+                    <li><a class="barLink" href="">Notifications</a>
+                    </li>
+                    <li><a class="barLink" href="">READMEs &amp; Wikis</a>
+                    </li>
+                    <li><a class="barLink" href="">Social</a>
+                    </li>
+                    <li><a class="barLink" href="">Pull Requests?</a>
+                    </li>
+                    <li><a class="barLink" href="">Code Reviews?</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="group">
+                  <h3>Agile</h3>
+                  <ul>
+                    <li><a class="barLink" href="">Work Items</a></li>
+                    <li><a class="barLink" href="">Backlogs</a></li>
+                    <li><a class="barLink" href="">Kanban</a></li>
+                    <li><a class="barLink" href="">Scrum</a></li>
+                    <li><a class="barLink" href="">Queries</a></li>
+                    <li><a class="barLink" href="">Delivery Plans</a></li>
+                  </ul>
+                  <h3>Analytics</h3>
+                  <ul>
+                    <li><a class="barLink" href="">Dashboards</a></li>
+                    <li><a class="barLink" href="">PowerBI</a></li>
+                    <li><a class="barLink" href="">OData</a></li>
+                  </ul>
                 </div>
               </li>
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-dev-ops-git.svg" alt="" />
-                        </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Git (distributed version control)</h3>
-                        <p><a href="/vsts/git/gitquickstart">Create a repo in the Web</a></p>
-                        <p><a href="/vsts/git/share-your-code-in-git-vs">Create a repo with Visual Studio</a></p>
-                        <p><a href="/vsts/git/tutorial/gitworkflow">Git workflow</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-dev-ops-tfvc.svg" alt="" />
-                        </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>TFVC (centralized version control)</h3>
-                        <p><a href="/vsts/tfvc/share-your-code-in-tfvc-vs">Develop code using Visual Studio</a></p>
-                        <p><a href="/vsts/tfvc/comparison-git-tfvc">Compare TFVC and Git</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-dev-ops-deploy-azure.svg" alt="" />
-                        </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Deploy to Azure</h3>
-                        <p><a href="">CI/CD ASP.NET to Azure</a></p>
-                        <p><a href="">CI/CD ASP.NET Core to Azure</a></p>
-                        <p><a href="">CI/CD Java to Azure</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-dev-ops-test.svg" alt="" />
-                        </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Test</h3>
-                        <p><a href="/vsts/test/index">Manual and Exploratory testing</a></p>
-                        <p><a href="/vsts/test/performance-testing/index">Performance testing</a></p>
-                        <p><a href="/vsts/test/continuous-testing/index">Continuous testing</a></p>
-                        <p><a href="https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios">Unit and developer testing</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-              </li>
-              <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-dev-ops-package-management.svg" alt="" />
-                        </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Package Management</h3>
-                        <p><a href="/vsts/package/overview">About Package Management</p>
-                        <p><a href="/vsts/package/get-started-nuget">Get started with NuGet</a></p>
-                        <p><a href="/vsts/package/get-started-npm">Get started with npm</a></p>
-                        <p><a href="/vsts/package/get-started-maven">Get started with Maven</a></p>
-                      </div>
-                    </div>
-                  </div>
+                <div class="group">
+                  <h3>Admin</h3>
+                  <ul>
+                    <li><a class="barLink" href="">Account Management</a></li>
+                    <li><a class="barLink" href="">Server Administration (TFS)</a></li>
+                    <li><a class="barLink" href="">Billing</a></li>
+                    <li><a class="barLink" href="">Scale and configure teams</a></li>
+                    <li><a class="barLink" href="">Marketplace</a></li>
+                    <li><a class="barLink" href="">Security and Identity</a></li>
+                    <li><a class="barLink" href="">Branch Policies</a></li>
+                    <li><a class="barLink" href="">Work Item Customization</a></li>
+                  </ul>
+                  <h3>Integration</h3>
+                  <ul>
+                    <li><a class="barLink" href="">Service Hooks</a></li>
+                    <li><a class="barLink" href="">Custom Extensions</a></li>
+                    <li><a class="barLink" href="">REST APIs</a></li>
+                    <li><a class="barLink" href="">.NET APIs</a></li>
+                  </ul>
                 </div>
               </li>
             </ul>
           </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#agile">Agile</a>
-        <ul id="agile">
           <li>
-            <a href="#agile-all"></a>
-            <ul id="agile-all" class="cardsW">
+            <a data-default="true" href="#code">Code</a>
+            <ul id="code" class="cardsA">
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-agile-get-started.svg" alt="" />
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Get started</h3>
-                        <p><a href="/vsts/work/index">About Agile tools and work tracking</a></p>
-                        <p><a href="/vsts/work/backlogs/add-work-items">Add work items</a></p>
-                        <p><a href="/vsts/work/backlogs/create-your-backlog">Create your backlog</a></p>
+                        <div class="cardText">
+                          <h3>Title</h3>
+                          <p>Description</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#delivery">Continuous Delivery</a>
+            <ul id="delivery" class="cardsA">
+              <li>
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Build and Release</h3>
+                          <p>Implement continuous integration and continuous deployment.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
               </li>
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-agile-scrum.svg" alt="" />
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Scrum</h3>
-                        <p><a href="/vsts/work/scale/capacity-planning">Schedule sprints</a></p>
-                        <p><a href="/vsts/work/scrum/sprint-planning">Plan a sprint</a></p>
-                        <p><a href="/vsts/work/scrum/task-board">Update task board</a></p>
+                        <div class="cardText">
+                          <h3>Deploy to Azure</h3>
+                          <p>Release apps to Azure services and Azure virtual machines.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </li>
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-agile-kanban.svg" alt="" />
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Kanban</h3>
-                        <p><a href="/vsts/work/kanban/kanban-basics">Kanban basics</a></p>
-                        <p><a href="/vsts/work/customize/customize-cards">Add columns</a></p>
-                        <p><a href="/vsts/work/kanban/wip-limits">WIP Limits</a></p>
+                        <div class="cardText">
+                          <h3>Package Management</h3>
+                          <p>Test continuously while you code, build, and deploy before releasing to production.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#testing">Testing</a>
+            <ul id="testing" class="cardsA">
+              <li>
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Title</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#collaboration">Collaboration</a>
+            <ul id="collaboration" class="cardsA">
+              <li>
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Title</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#agile">Agile</a>
+            <ul id="agile" class="cardsA">
+              <li>
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Work Items</h3>
+                          <p>Create and organize your backlog, track bugs and issues. </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
               </li>
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-agile-track.svg" alt="" />
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Track</h3>
-                        <p><a href="/vsts/search/workitem/get-started">Queries</a></p>
-                        <p><a href="/vsts/work/track/add-tags-to-work-items">Tags</a></p>
-                        <p><a href="/vsts/collaborate/follow-work-items">Follow work</a></p>
-                        <p><a href="/vsts/collaborate/manage-personal-notifications">Notifications</a></p>
+                        <div class="cardText">
+                          <h3>Backlogs</h3>
+                          <p>Plan a sprint, use a task board in daily scrums, monitor sprint burndown. </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </li>
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-agile-scale.svg" alt="" />
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Scale</h3>
-                        <p><a href="/vsts/work/scale/portfolio-management">Portfolio management</a></p>
-                        <p><a href="/vsts/work/scale/review-team-plans">Review team deliverables</a></p>
-                        <p><a href="/vsts/work/scale/visibility-across-teams">Visibility across teams</a></p>
+                        <div class="cardText">
+                          <h3>Scrum</h3>
+                          <p>Manage the continuous flow of work from concept to completion.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </li>
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-agile-customize.svg" alt="" />
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Customize</h3>
-                        <p><a href="/vsts/work/customize/customize-work">What you can customize</a></p>
-                        <p><a href="">About teams and Agile tools</a></p>
-                        <p><a href="">About process models</a></p>
+                        <div class="cardText">
+                          <h3>Kanban</h3>
+                          <p>Find work items to bulk update and to chart progress and trends.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </li>
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-agile-dashboards.svg" alt="" />
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Dashboards</h3>
-                        <p><a href="/vsts/report/overview">Charts</a></p>
-                        <p><a href="/vsts/report/dashboards">Add and manage dashboards</a></p>
-                        <p><a href="/vsts/report/widget-catalog">Widget catalog</a></p>
+                        <div class="cardText">
+                          <h3>Queries</h3>
+                          <p>Configure Agile tools and processes to meet your team's needs. </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </li>
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-agile-power-bi.svg" alt="" />
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Power BI</h3>
-                        <p><a href="/vsts/report/powerbi/overview">Power BI integration</a></p>
-                        <p><a href="/vsts/report/powerbi/connect-vso-pbi-vs">Connect to Team Services</a></p>
+                        <div class="cardText">
+                          <h3>Delivery Plans</h3>
+                          <p>Configure Agile tools and processes to meet your team's needs.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#report">Report</a>
+            <ul id="report" class="cardsA">
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/sql/sql-azure-3.svg" alt="" />
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Agile Journeys</h3>
-                        <p><a href="">What is Agile?</a></p>
-                        <p><a href="">What is Scrum?</a></p>
-                        <p><a href="">Building an Agile culture</a></p>
-                        <p><a href="">Scale Agile to Large Teams</a></p>
+                        <div class="cardText">
+                          <h3>Title</h3>
+                          <p>Description</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#admin">Admin</a>
+            <ul id="admin" class="cardsA">
+              <li>
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Title</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#integration">Integration</a>
+            <ul id="integration" class="cardsA">
+              <li>
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Title</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
               </li>
             </ul>
           </li>
         </ul>
       </li>
       <li>
-        <a href="#integrate">Integrate/Extensibility</a>
+        <a href="#integrate">Integrate</a>
         <ul id="integrate">
           <li>
             <a href="#integrate-all"></a>
-            <ul id="integrate-all" class="cardsW">
+            <ul id="integrate-all" class="cardsF">
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-integrate-get-started.svg" alt="" />
-                        </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Get started</h3>
-                        <p><a href="/vsts/integrate/overview">Integration overview</a></p>
-                        <p><a href="/vsts/integrate/extensions/get-started/node">Build your first extension</a></p>
-                        <p><a href="/vsts/integrate/extensions/publish/overview">Package &amp; publish</a></p>
-                        <p><a href="/vsts/integrate/extensions/get-started/tutorials">Tutorial catalog</a></p>
-                      </div>
-                    </div>
-                  </div>
+                <div class="container">
+                  <p>Introduction text lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore magna aliqua</p>
                 </div>
               </li>
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-integrate-service-hooks.svg" alt="" />
-                        </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Service Hooks</a></h3>
-                        <p><a href="/vsts/marketplace/integrate/service-hooks/get-started">Integrate with service hooks</a></p>
-                        <p><a href="/vsts/marketplace/integrate/service-hooks/authorize">Authorize a service</a></p>
-                        <p><a href="">Create a subscription programmatically</a></p>
-                      </div>
-                    </div>
-                  </div>
+                <div class="container">
+                  <h2>Integrate with custom apps</h2>
                 </div>
               </li>
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-integrate-rest.svg" alt="" />
-                        </div>
+                  <div class="cardSize">
+                      <div class="cardPadding">
+                          <div class="card">
+                              <div class="cardText">
+                                  <p>Use our REST APIs to interact with VSTS directly in a custom app or service.</p>
+                              </div>
+                          </div>
                       </div>
-                      <div class="cardText">
-                        <h3>REST APIs</h3>
-                        <p><a href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">Overview and usage</a></p>
-                        <p><a href="/vsts/integrate/get-started/rest/basics">Get started with the REST APIs</a></p>
-                        <p><a href="/vsts/integrate/get-started/authentication/authentication_guidance">Basic authentication</a></p>
-                        <p><a href="">Azure REST API Reference</a></p>
-                      </div>
-                    </div>
                   </div>
+              </li>
+              <li>
+                  <div class="cardSize">
+                      <div class="cardPadding">
+                          <div class="card">
+                              <div class="cardImageOuter">
+                                  <div class="cardImage">
+                                      <img src="/media/common/placeholder.svg" alt="" />
+                                  </div>
+                              </div>
+                              <div class="cardText">
+                                  <h3>
+                                      .NET Client Libraries
+                                  </h3>
+                                  <p>
+                                      <a href="">Get started</a>
+                                  </p>
+                                  <p>
+                                      <a href="">API reference</a>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="cardSize">
+                      <div class="cardPadding">
+                          <div class="card">
+                              <div class="cardImageOuter">
+                                  <div class="cardImage">
+                                      <img src="/media/common/placeholder.svg" alt="" />
+                                  </div>
+                              </div>
+                              <div class="cardText">
+                                  <h3>
+                                      REST APIs
+                                  </h3>
+                                  <p>
+                                      <a href="">Get started</a>
+                                  </p>
+                                  <p>
+                                      <a href="">API reference</a>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                <div class="container">
+                  <h2>Extend VSTS</h2>
                 </div>
               </li>
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-integrate-dotnet.svg" alt="" />
-                        </div>
+                  <div class="cardSize">
+                      <div class="cardPadding">
+                          <div class="card">
+                              <div class="cardText">
+                                  <p>Create custom extensions to transform your VSTS look and experience.</p>
+                              </div>
+                          </div>
                       </div>
-                      <div class="cardText">
-                        <h3>.NET</h3>
-                        <p><a href="/vsts/integrate/get-started/client-libraries">Get started with the .NET SDK for Team Services</a></p>
-                        <p><a href="">Reference</a></p>
-                      </div>
-                    </div>
                   </div>
+              </li>
+              <li>
+                  <div class="cardSize">
+                      <div class="cardPadding">
+                          <div class="card">
+                              <div class="cardImageOuter">
+                                  <div class="cardImage">
+                                      <img src="/media/common/placeholder.svg" alt="" />
+                                  </div>
+                              </div>
+                              <div class="cardText">
+                                  <h3>
+                                      Custom extensions
+                                  </h3>
+                                  <p>
+                                      <a href="">Get started</a>
+                                  </p>
+                                  <p>
+                                      <a href="">API reference</a>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                <div class="container">
+                  <h2>Integrate with other services</h2>
                 </div>
               </li>
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-integrate-java.svg" alt="" />
-                        </div>
+                  <div class="cardSize">
+                      <div class="cardPadding">
+                          <div class="card">
+                              <div class="cardText">
+                                  <p>Integrate VSTS with popular services like Slack or Jenkins.</p>
+                              </div>
+                          </div>
                       </div>
-                      <div class="cardText">
-                        <h3>Java</h3>
-                        <p><a href="">Get started with the Java SDK for Team Services</a></p>
-                        <p><a href="">Reference</a></p>
-                      </div>
-                    </div>
                   </div>
-                </div>
               </li>
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-integrate-node-js.svg" alt="" />
-                        </div>
+                <ul class="cardsFTitle">
+                  <li class="intro">
+                    <h3>
+                        Service Hooks
+                    </h3>
+                  </li>
+                  <li>
+                      <a href="">
+                      <div class="cardSize">
+                          <div class="cardPadding">
+                              <div class="card">
+                                  <div class="cardImageOuter">
+                                      <div class="cardImage">
+                                          <img src="/media/common/placeholder.svg" alt="" />
+                                      </div>
+                                  </div>
+                                  <div class="cardText">
+                                      <h3>Title</h3>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                      <div class="cardText">
-                        <h3>Node.js</h3>
-                        <p><a href="">Get started with the Node SDK for Team Services</a></p>
-                        <p><a href="">Reference</a></p>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="">
+                      <div class="cardSize">
+                          <div class="cardPadding">
+                              <div class="card">
+                                  <div class="cardImageOuter">
+                                      <div class="cardImage">
+                                          <img src="/media/common/placeholder.svg" alt="" />
+                                      </div>
+                                  </div>
+                                  <div class="cardText">
+                                      <h3>Title</h3>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="">
+                      <div class="cardSize">
+                          <div class="cardPadding">
+                              <div class="card">
+                                  <div class="cardImageOuter">
+                                      <div class="cardImage">
+                                          <img src="/media/common/placeholder.svg" alt="" />
+                                      </div>
+                                  </div>
+                                  <div class="cardText">
+                                      <h3>Title</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      </a>
+                  </li>
+                </ul>
               </li>
               <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-integrate-ts.svg" alt="" />
+                  <ul class="cardsFTitle">
+                    <li>
+                        <a href="">
+                        <div class="cardSize">
+                            <div class="cardPadding">
+                                <div class="card">
+                                    <div class="cardImageOuter">
+                                        <div class="cardImage">
+                                            <img src="/media/common/placeholder.svg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="cardText">
+                                        <h3>Title</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>TypeScript</h3>
-                        <p><a href="">Get started with the TypeScript SDK for Team Services</a></p>
-                        <p><a href="">Reference</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/team-services/team-services-integrate-tools.svg" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <div class="cardSize">
+                            <div class="cardPadding">
+                                <div class="card">
+                                    <div class="cardImageOuter">
+                                        <div class="cardImage">
+                                            <img src="/media/common/placeholder.svg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="cardText">
+                                        <h3>Title</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Tools for Developers</h3>
-                        <p><a href="">.NET Azure tools and plug-ins</a></p>
-                        <p><a href="">Azure tools for Java developers</a></p>
-                        <p><a href="">Node</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="cardSize">
-                  <div class="cardPadding">
-                    <div class="card">
-                      <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                          <img src="/media/hubs/sql/sql-azure-3.svg" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <div class="cardSize">
+                            <div class="cardPadding">
+                                <div class="card">
+                                    <div class="cardImageOuter">
+                                        <div class="cardImage">
+                                            <img src="/media/common/placeholder.svg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="cardText">
+                                        <h3>Title</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="cardText">
-                        <h3>Get the Azure SDKs</h3>
-                        <p><a href="/dotnet/azure/dotnet-sdk-azure-install">Get the Azure libraries for .NET</a></p>
-                        <p><a href="/java/azure/java-sdk-azure-install">Get the Azure libraries for Java</a></p>
-                        <p><a href="/nodejs/azure/node-sdk-azure-install">Get the Azure libraries for Node.js</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <div class="cardSize">
+                            <div class="cardPadding">
+                                <div class="card">
+                                    <div class="cardImageOuter">
+                                        <div class="cardImage">
+                                            <img src="/media/common/placeholder.svg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="cardText">
+                                        <h3>Title</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </li>
+                  </ul>
               </li>
             </ul>
           </li>
