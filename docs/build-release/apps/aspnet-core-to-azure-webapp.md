@@ -125,7 +125,7 @@ You can use Visual Studio to connect and push commits into your VSTS Git repo. (
 
    ![Waiting for the deployment to complete](_img/aspnet-core-to-azure-webapp/wait-for-release.png)
 
-1. In the Azure portal, in the **Overview** blade for your web app and choose **Start**.
+1. In the Azure portal, in the **Overview** blade for your web app, choose **Start**.
 
    ![Stopping the app in the Azure portal](_img/aspnet-core-to-azure-webapp/stop-app.png)
 
