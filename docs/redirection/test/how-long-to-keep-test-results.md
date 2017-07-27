@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/test/manual-exploratory-testing/getting-started/how-long-to-keep-test-results
+redirect_url: /docs/manual-test/getting-started/how-long-to-keep-test-results
 ---
