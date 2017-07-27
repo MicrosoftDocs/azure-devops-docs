@@ -28,9 +28,9 @@ _TODO: Architecture diagram_
 
 [!INCLUDE [prerequisites](_shared/prerequisites.md)]
 
-[!INCLUDE [create-azure-web-app](_shared/create-azure-web-app.md)]
-
 [!INCLUDE [import-code-aspnet-core](_shared/import-code-aspnet-core.md)]
+
+[!INCLUDE [create-azure-web-app](_shared/create-azure-web-app.md)]
 
 ## Configure continuous delivery
 
@@ -46,7 +46,7 @@ _TODO: Architecture diagram_
 
    ![Configuring the app type](_img/aspnet-core-to-azure-webapp/continuous-delivery-apptype.png)
 
-1. Skip the other two steps - **Test** and **Deploy** - and choose **OK** to complete the configuration of continuous delivery.
+1. Skip the other two steps - **Test** and **Deploy** - and choose **OK** to complete the configuration of continuous delivery. You'll see how to use the test and deployment options in other tutorials.
 
    ![Completing the configuration](_img/aspnet-core-to-azure-webapp/continuous-delivery-complete.png)
 
@@ -74,11 +74,7 @@ _TODO: Architecture diagram_
 
    ![The generated build definition](_img/aspnet-core-to-azure-webapp/build-definition.png)
 
-1. Back in the Azure portal, in the "Successfully set up Continuous Delivery..." log entry, choose the **Release Definition** link.
-
-  ![Opening the generated release definition](_img/aspnet-core-to-azure-webapp/review-links-release.png)
-
-1. This opens the VSTS portal again and takes you to the summary of releases. A **release definition** is a concept in VSTS that defines the CD process. The release definition summary shows recent releases that have been completed or that are in progress. Choose **Edit** to see how the CD process is defined.
+1. Open the **Build &amp; Release** drop-down and choose **Releases**. Select the release definition having the name of your app and choose **Edit** to see how the CD process is defined.
 
    ![The release definition status](_img/aspnet-core-to-azure-webapp/release-status.png)
 
@@ -94,7 +90,7 @@ _TODO: Architecture diagram_
 
 1. You can modify the parameters or add additional tasks to both the build and release definition to meet the CI/CD needs of your application. You can also extend the release definition to include multiple stages. For more information about how to extend the CI/CD pipeline, see the tutorials on **Create a build definition** and **Create a release definition**.
 
-[!INCLUDE [import-code-aspnet-core](_shared/change-code-section.md)]
+## Edit the app code and see it deployed
 
 1. In the Azure portal, open the **Overview** blade for your web app and choose **Stop**.
    You must stop an ASP.NET Core app before you can update it.  
@@ -128,3 +124,6 @@ _TODO: Architecture diagram_
 1.  Navigate to the web app URL in a new browser window to see the app with the new page title deployed.
 
    ![Viewing the updated app](_img/aspnet-core-to-azure-webapp/updated-app.png)
+
+You have now seen how easy it is to create a continuous integration and continuous delivery pipeline by using Azure Continuous Delivery.
+In later quickstarts and tutorials you'll see how you can tailor the process to create more complex CI/CD pipelines, and integrate with other types of apps and deployment environments. 
