@@ -92,6 +92,7 @@ ms.date: 07/26/2017
                         <h3>Add your code</h3>
                         <ul class="noBullet">
                           <li><a class="barLink" href="">Create a Git repo</a></li>
+						  <li><a class="barLink" href="">Import your code</a></li>
                         </ul>
                       </div>
                     </div>
@@ -121,7 +122,6 @@ ms.date: 07/26/2017
                       <div class="cardText">
                         <h3>Agile</h3>
                         <ul class="noBullet">
-                          <li><a class="barLink" href="">Create your backlog</a></li>
                           <li><a class="barLink" href="">Scrum</a></li>
                           <li><a class="barLink" href="">Kanban</a></li>
                           <li><a class="barLink" href="">Dashboards</a></li>
@@ -136,11 +136,11 @@ ms.date: 07/26/2017
                   <div class="cardPadding">
                     <div class="card">
                       <div class="cardText">
-                        <h3>Extend and integrate</h3>
+                        <h3>Test your code</h3>
                         <ul class="noBullet">
-                          <li><a class="barLink" href="">Marketplace</a></li>
-                          <li><a class="barLink" href="">Service Hooks</a></li>
-                          <li><a class="barLink" href="">REST APIs</a></li>
+                          <li><a class="barLink" href="">Continuous testing</a></li>
+                          <li><a class="barLink" href="">Exploratory testing</a></li>
+                          <li><a class="barLink" href="">Load testing</a></li>
                         </ul>
                       </div>
                     </div>
@@ -164,8 +164,8 @@ ms.date: 07/26/2017
                                         <img src="/media/common/placeholder.svg" alt="" />
                                       </div>
                                     </div>
-                                    <div class="cardText">
-                                      <h3>Marketplace</h3>
+                                    <div class="cardText" style="padding-left: 32px;padding-top:14px">
+                                      <h3 style="border-bottom:none;">Marketplace</h3>
                                     </div>
                                   </div>
                                 </div>
@@ -182,8 +182,8 @@ ms.date: 07/26/2017
                                         <img src="/media/common/placeholder.svg" alt="" />
                                       </div>
                                     </div>
-                                    <div class="cardText">
-                                      <h3>Learn about Git</h3>
+                                    <div class="cardText" style="padding-left: 32px;padding-top:14px">
+                                      <h3 style="border-bottom:none;">Learn about Git</h3>
                                     </div>
                                   </div>
                                 </div>
@@ -200,8 +200,8 @@ ms.date: 07/26/2017
                                         <img src="/media/common/placeholder.svg" alt="" />
                                       </div>
                                     </div>
-                                    <div class="cardText">
-                                      <h3>Learn about DevOps</h3>
+                                    <div class="cardText" style="padding-left: 32px;padding-top:14px">
+                                      <h3 style="border-bottom:none;">Learn about DevOps</h3>
                                     </div>
                                   </div>
                                 </div>
@@ -218,8 +218,8 @@ ms.date: 07/26/2017
                                         <img src="/media/common/placeholder.svg" alt="" />
                                       </div>
                                     </div>
-                                    <div class="cardText">
-                                      <h3>Learn about Agile</h3>
+                                    <div class="cardText" style="padding-left: 32px;padding-top:14px">
+                                      <h3 style="border-bottom:none;">Learn about Agile</h3>
                                     </div>
                                   </div>
                                 </div>
@@ -240,7 +240,7 @@ ms.date: 07/26/2017
         <a href="#services">Services</a>
         <ul id="services">
           <li>
-            <a href="#all">All</a>
+            <a data-default="true" href="#all">All</a>
             <ul id="all" class="directory">
               <li>
                 <div class="group">
@@ -329,7 +329,7 @@ ms.date: 07/26/2017
             </ul>
           </li>
           <li>
-            <a data-default="true" href="#code">Code</a>
+            <a href="#code">Code</a>
             <ul id="code" class="cardsA">
               <li>
                 <a href="">
@@ -353,7 +353,7 @@ ms.date: 07/26/2017
             </ul>
           </li>
           <li>
-            <a href="#delivery">Continuous Delivery</a>
+            <a href="#delivery">Continuous Integration &amp; Delivery</a>
             <ul id="delivery" class="cardsA">
               <li>
                 <a href="">
@@ -582,8 +582,8 @@ ms.date: 07/26/2017
             </ul>
           </li>
           <li>
-            <a href="#report">Report</a>
-            <ul id="report" class="cardsA">
+            <a href="#analytics">Analytics</a>
+            <ul id="analytics" class="cardsA">
               <li>
                 <a href="">
                   <div class="cardSize">
@@ -661,7 +661,7 @@ ms.date: 07/26/2017
           <li>
             <a href="#integrate-all"></a>
             <ul id="integrate-all" class="cardsF">
-              <li>
+              <li class="fullSpan intro">
                 <div class="container">
                   <p>Introduction text lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore magna aliqua</p>
                 </div>
@@ -779,7 +779,7 @@ ms.date: 07/26/2017
                   <div class="cardSize">
                       <div class="cardPadding">
                           <div class="card">
-                              <div class="cardText">
+                              <div class="cardText" style="padding-left: 32px;padding-top:14px">
                                   <p>Integrate VSTS with popular services like Slack or Jenkins.</p>
                               </div>
                           </div>
@@ -788,11 +788,6 @@ ms.date: 07/26/2017
               </li>
               <li>
                 <ul class="cardsFTitle">
-                  <li class="intro">
-                    <h3>
-                        Service Hooks
-                    </h3>
-                  </li>
                   <li>
                       <a href="">
                       <div class="cardSize">
@@ -803,7 +798,7 @@ ms.date: 07/26/2017
                                           <img src="/media/common/placeholder.svg" alt="" />
                                       </div>
                                   </div>
-                                  <div class="cardText">
+                                  <div class="cardText" style="padding-left: 32px;padding-top:14px">
                                       <h3>Title</h3>
                                   </div>
                               </div>
@@ -821,7 +816,7 @@ ms.date: 07/26/2017
                                           <img src="/media/common/placeholder.svg" alt="" />
                                       </div>
                                   </div>
-                                  <div class="cardText">
+                                  <div class="cardText" style="padding-left: 32px;padding-top:14px">
                                       <h3>Title</h3>
                                   </div>
                               </div>
@@ -839,7 +834,7 @@ ms.date: 07/26/2017
                                           <img src="/media/common/placeholder.svg" alt="" />
                                       </div>
                                   </div>
-                                  <div class="cardText">
+                                  <div class="cardText" style="padding-left: 32px;padding-top:14px">
                                       <h3>Title</h3>
                                   </div>
                               </div>
@@ -861,7 +856,7 @@ ms.date: 07/26/2017
                                             <img src="/media/common/placeholder.svg" alt="" />
                                         </div>
                                     </div>
-                                    <div class="cardText">
+                                    <div class="cardText" style="padding-left: 32px;padding-top:14px">
                                         <h3>Title</h3>
                                     </div>
                                 </div>
@@ -879,7 +874,7 @@ ms.date: 07/26/2017
                                             <img src="/media/common/placeholder.svg" alt="" />
                                         </div>
                                     </div>
-                                    <div class="cardText">
+                                    <div class="cardText" style="padding-left: 32px;padding-top:14px">
                                         <h3>Title</h3>
                                     </div>
                                 </div>
@@ -897,7 +892,7 @@ ms.date: 07/26/2017
                                             <img src="/media/common/placeholder.svg" alt="" />
                                         </div>
                                     </div>
-                                    <div class="cardText">
+                                    <div class="cardText" style="padding-left: 32px;padding-top:14px">
                                         <h3>Title</h3>
                                     </div>
                                 </div>
@@ -915,7 +910,7 @@ ms.date: 07/26/2017
                                             <img src="/media/common/placeholder.svg" alt="" />
                                         </div>
                                     </div>
-                                    <div class="cardText">
+                                    <div class="cardText" style="padding-left: 32px;padding-top:14px">
                                         <h3>Title</h3>
                                     </div>
                                 </div>
