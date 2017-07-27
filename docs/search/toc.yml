@@ -16,8 +16,6 @@
       href: code/repos-and-projects.md
     - name: Use search results
       href: code/search-results.md
-    - name: Administer search
-      href: code/administration.md
   - name: Work Item Search
     items:
     - name: Use search results
@@ -28,14 +26,14 @@
     items:
     - name: Advanced search syntax
       href: code/advanced-search.md
-    - name: Administer search
-      href: code/administration.md
   - name: Work Item Search
     items:
     - name: Adhoc vs built-in search
       href: ../work/track/adhoc-vs-managed-queries.md
     - name: Advanced search syntax
       href: workitem/advanced-search-syntax.md
+  - name: Administer search
+    href: code/administration.md
 - name: Resources
   items:
   - name: Code Search
