@@ -399,7 +399,7 @@ Adds a configurable tile to display the summary of a shared query results.</p>
 <div style="float:left;width:300px;margin:3px;">
 
 <p>Configurable widget that you can use to track quality continuously from a build or release definition.</p> 
-<p>To learn more, see [Associate automated test results with requirements](../test/continuous-testing/associate-automated-results-with-requirements.md). </p>
+<p>To learn more, see [Associate automated test results with requirements](../build-release/test/associate-automated-results-with-requirements.md). </p>
 </div>
 
 <div style="clear:left;font-size:100%">

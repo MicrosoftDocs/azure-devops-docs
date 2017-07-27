@@ -54,7 +54,7 @@ Teams who are responsible for testing software can use the Build Quality report 
   
 -   **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.  
   
-     For more information, see [Run tests in your build process](../../test/continuous-testing/test-build.md).  
+     For more information, see [Run tests in your build process](../../build-release/test/test-build.md).  
   
 -   **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.  
   

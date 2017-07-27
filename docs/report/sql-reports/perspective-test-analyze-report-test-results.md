@@ -162,7 +162,7 @@ You can link test cases to other work items such as user stories, requirements, 
 ##  <a name="tracking"></a> Required activities  
 To create reports that contain useful data about test efforts and test results, team members should review the information in the following topics:  
   
--   [Get started with continuous testing](../../test/continuous-testing/getting-started/getting-started-with-continuous-testing.md)    
+-   [Get started with continuous testing](../../build-release/test/getting-started-with-continuous-testing.md)    
 -   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)    
   
 ## Related notes

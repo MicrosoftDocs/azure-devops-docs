@@ -102,7 +102,7 @@ By using PivotChart reports in Excel, you can display the build status over time
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
-|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [Get started with continuous testing](../../test/continuous-testing/getting-started/getting-started-with-continuous-testing.md).|  
+|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [Get started with continuous testing](../../build-release/test/getting-started-with-continuous-testing.md).|  
 |Build|Build Definition Name|Name that is assigned to the build definition for which a build was executed.|  
 ||Build ID|The number that is assigned to the build. Each time that a particular build definition is run, the **Build ID** is incremented by 1.|  
 ||Build Name|The name or expression that uniquely identifies a build. For more information, see [build definition options](../../build-release/define/options.md).|  
@@ -123,7 +123,7 @@ By using PivotChart reports in Excel, you can display the build status over time
 ##  <a name="tracking"></a> Required activities  
  To create reports that contain useful data about builds, team members should review the information in the following topics:  
   
--   [Run tests in your build process](../../test/continuous-testing/test-build.md)   
+-   [Run tests in your build process](../../build-release/test/test-build.md)   
 -   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)  
   
 ## Related notes

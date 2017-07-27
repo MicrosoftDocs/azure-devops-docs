@@ -44,7 +44,7 @@ With the Code Coverage report, you can monitor how much code the team is testing
   
 -   **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.  
   
-     For more information, see [Set up continuous testing for your builds](../../test/continuous-testing/set-up-continuous-testing-builds.md).
+     For more information, see [Set up continuous testing for your builds](../../build-release/test/set-up-continuous-testing-builds.md).
   
 -   **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.  
   

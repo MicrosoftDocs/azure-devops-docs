@@ -275,7 +275,7 @@ The **Build & Release** hub supports defining and managing builds and releases t
 <li style="margin-bottom:2px">[Approve a release](../build-release/concepts/definitions/release/environments.md#approvals)</li>
 <li style="margin-bottom:2px">[Tests: view test results ](../build-release/actions/view-manage-releases.md#test-results)</li>
 <li style="margin-bottom:2px">[Logs: view release logs](../build-release/actions/debug-deployment-issues.md)</li>
-<li style="margin-bottom:2px">[Run unit tests with a build](../test/continuous-testing/getting-started/getting-started-with-continuous-testing.md)</li>
+<li style="margin-bottom:2px">[Run unit tests with a build](../build-release/test/getting-started-with-continuous-testing.md)</li>
 </ul>
 
 </div>
@@ -287,7 +287,7 @@ The **Build & Release** hub supports defining and managing builds and releases t
 <li style="margin-bottom:2px">[Parameters](../test/manual-exploratory-testing/repeat-test-with-different-data.md)</li>
 <li style="margin-bottom:2px">[Configurations](../test/manual-exploratory-testing/test-different-configurations.md)</li>
 <li style="margin-bottom:2px">[Runs](../test/manual-exploratory-testing/getting-started/run-manual-tests.md)</li>
-<li style="margin-bottom:2px">[Machines](../test/continuous-testing/set-up-continuous-test-environments-builds.md)</li>
+<li style="margin-bottom:2px">[Machines](../build-release/test/set-up-continuous-test-environments-builds.md)</li>
 <li style="margin-bottom:2px">[Load test](../test/performance-testing/getting-started/getting-started-with-performance-testing.md)</li>
 </ul>
 <br/>
