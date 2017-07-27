@@ -238,7 +238,7 @@ See [How does selecting "Test run (for on-demand runs)" in the Visual Studio Tes
 builds. It only works in the web-based interface for Team Services and TFS.
 All new manual and automated testing product development investments will be
 in the web-based interface. No further development is planned for MTM. See
-[Guidance on Microsoft Test Manager usage](../../test/manual-exploratory-testing/mtm/guidance-mtm-usage.md).
+[Guidance on Microsoft Test Manager usage](../../manual-test/mtm/guidance-mtm-usage.md).
 
 #### Q: I have multiple testers in my team. Can they run tests from different test suites or test plans in parallel using the same release definition?
 
