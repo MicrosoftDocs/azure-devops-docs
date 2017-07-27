@@ -91,8 +91,8 @@ Add the following tasks.
     <td>
     <p>(Optional) Run your tests. See</p>
    <ul>
-   <li>[Getting started with continuous testing](../../../ct/getting-started-with-continuous-testing.md)</li>
-    <li>[Continuous testing scenarios and capabilities](../../../ct/index.md).</li>
+   <li>[Getting started with continuous testing](../../../test/getting-started-with-continuous-testing.md)</li>
+    <li>[Continuous testing scenarios and capabilities](../../../test/index.md).</li>
     </ul>
     </td>
   </tr>
