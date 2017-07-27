@@ -1,0 +1,117 @@
+---
+title: View and compare your Visual Studio load test runs 
+description: Get started with web performance tests - view and compare your Visual Studio Team Services load test runs
+ms.prod: vs-devops-alm
+ms.technology: vs-devops-test-performance
+ms.assetid: 1A1A725F-4A6A-4652-AFD1-FC7C9A248A7B
+ms.manager: douge
+ms.author: ahomer
+ms.date: 08/12/2016
+---
+
+# View and compare your load test runs
+
+[!INCLUDE [version-header-vs-ts](_shared/version-header-vs-ts.md)]
+
+You can review past load test runs or current runs started by 
+anyone on your team, at any time. You can also compare two
+test runs to see the gain or loss in performance, and other
+information.
+
+In this example, you'll learn how to:
+
+* [Open a load test in Visual Studio](#openvs)
+* [Open a load test in Team Services](#opents)
+* [Filter and select a load test](#filterselect)
+* [Compare two test runs](#comparetests)
+
+<a name="openvs"></a>
+## Open a load test in Visual Studio
+
+1. Open your load test project, open the **Load test** menu, and choose
+   **Load Test Manager**. 
+
+   ![Open Load Test Manager](_img/performance-reports/LoadTestManager.png)
+
+1. The **Load Test Manager** page shows all of the load test runs started by you 
+   and all of your team members.
+
+   ![View all the past and current load test runs](_img/performance-reports/LoadTestManagerView.png)
+
+<a name="opents"></a>
+## Open a load test in Team Services
+
+* If you are running URL-based or Apache JMeter load tests, you
+  can see the list of all the test runs in Visual Studio Team
+  Services **Load test** list. 
+
+  ![List of load test runs in Visual Studio Team Services](_img/performance-reports/LoadTestViewListTS.png)
+
+<a name="filterselect"></a>
+## Filter and select a load test
+
+1. Filter the list of  load tests by state, date, or user who created the test run.
+
+   ![Filter load test runs by state, date, or user](_img/performance-reports/LoadTestFilterView.png)
+
+1. Select a test run and open the shortcut menu (in Team Services you can
+   use the ![down arrow](_img/performance-reports/LoadTestListMenu-icon.png) 
+   icon) to see details of the test run, or stop a running test. 
+
+   ![Shortcut menu commands for a test run](_img/performance-reports/LoadTestListShortcutMenu.png)
+
+   >You can also open a test run by double-clicking it with your mouse.
+
+<a name="comparetests"></a>
+## Compare two test runs
+
+1. To compare two test runs, select them in the list by
+   holding _CTRL_ while clicking with the mouse. Then choose
+   the **Compare two runs** icon on the toolbar, or open the shortcut
+   menu for one of the test runs and choose **Compare**.
+
+   ![Comparing two test runs](_img/performance-reports/LoadTestSelectTwoCompare.png)
+
+1. In the comparison page you see the names of the two tests
+   and, at the top of the page, a **Summary** section that lists
+   the prime performance factors for each test, then the difference
+   from the baseline as a percentage (the color of this text 
+   indicates a gain or loss in performance).  
+
+   ![The Summary section of the test run comparison page](_img/performance-reports/LoadTestCompareSummaryView.png)
+
+   Use the links in the first row, the names and IDs of the test
+   runs, to open the detailed view of that test run.
+
+1. The **Charts** section of the page shows a graphical comparison
+   of performance for the two test runs. The default is a chart for
+   the response time and user load. Choose a different pair of factors
+   from the dropdown menu to see more performance comparisons.
+
+   ![The Charts section of the test run comparison page](_img/performance-reports/LoadTestCompareChartsView.png)
+
+1. The **Test settings** section lists the primary settings 
+   specified for the two test runs. Again, the names and IDs
+   of the tests are hyperlinks that open the details of that test.
+
+   ![The Test Settings section of the test run comparison page](_img/performance-reports/LoadTestCompareTestSettings.png)
+
+## Next steps
+
+* [View and compare load test runs](performance-reports.md)
+* [Add app performance data](get-performance-data-for-load-tests.md)
+* [Run Apache JMeter load tests](get-started-jmeter-test.md) 
+* [Record and replay tests](record-and-replay-cloud-load-tests.md)
+* [Profile live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler)
+
+## See also
+
+* [Q &amp; A for load testing](reference-qa.md)
+* [Load test with Visual Studio](getting-started-with-performance-testing.md) 
+* [Load test with Team Services](get-started-simple-cloud-load-test.md) 
+* [Load test with Azure portal](app-service-web-app-performance-test.md) 
+* [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
+* [Run Apache JMeter load tests with Visual Studio Team Services](get-started-jmeter-test.md)
+* [Analyze load test results using the Load Test Analyzer](https://msdn.microsoft.com/library/ee923686.aspx)
+
+[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

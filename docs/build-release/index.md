@@ -12,22 +12,16 @@ ms.date: 07/20/2017
 
 # Build and Release documentation for Team Services and TFS
 
-<b>Team Services | TFS 2017</b> 
-
-**!!! PLACEHOLDER CONTENT - TO BE REDONE AS YML  !!!** 
-
 Visual Studio Team Services and Team Foundation Server provide a highly customizable continuous integration (CI) and deployment (CD) automation system for your .NET, Java, Node, PHP, or Python apps. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
 
-<img style="width:250px;" alt="CI and CD development and release cycle" src="_img/ci-01.png"/>  
 
+## 5-Minute Quickstarts 
 
-## 10-Minute Quickstarts 
+Learn how to build and deploy to your choice of Azure service.
 
-Learn how to build and deploy your choice of ASP.NET Core, ASP.NET, Java, or PHP app to an Azure web app.
-
-* Using Team Services Portal
-* Using Azure Portal
-* Using Visual Studio
+* [Azure web app](apps/aspnet-core-to-azure-webapp.md)
+* [Azure Windows VM](apps/aspnet-core-to-azure-windows-vm.md)
+* Azure Container Service
 
 <!--- 
 ![Azure web app](_img/index/azure-web-app-card.png)   ![Azure VM](_img/index/azure-vm-card.png)   ![Azure container](_img/index/azure-containers-card.png)   
@@ -37,16 +31,12 @@ Learn how to build and deploy your choice of ASP.NET Core, ASP.NET, Java, or PHP
 
 <!--- These were taken from the CI/CD MVC deck --> 
 
-1. Continuous integration for your app   
-2. Continuous deployment to Azure for your Web app    
-3. CI/CD to Windows VMs  
-4. CI/CD to Linux VMs   
-5. CI/CD for container apps   
-6. Multi-stage continuous deployment
-7. CI with Git workflows  
-8. Safety and governance  
-6. Integrate with GitHub and Jenkins
-7. Extend CI/CD 
+* Continuous integration for your app   
+* Continuous deployment for your app    
+* Multi-stage continuous deployment
+* CI with Git workflows  
+* Integrate with GitHub and Jenkins
+* Extend CI/CD 
 
 
 ## Videos 
