@@ -11,7 +11,7 @@ ms.date: 12/30/2016
 # User Story Test Status Excel Report (Agile)
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 
-You can use the User Story Test Status report to help determine gaps in test coverage and monitor test progress for each user story. This report indicates how many test cases are passing or failing for each user story. This report is available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../test/manual-exploratory-testing/getting-started/create-test-cases.md).  
+You can use the User Story Test Status report to help determine gaps in test coverage and monitor test progress for each user story. This report indicates how many test cases are passing or failing for each user story. This report is available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../manual-test/getting-started/create-test-cases.md).  
   
  For information about how to access this report, see [Excel reports](excel-reports.md).  
   

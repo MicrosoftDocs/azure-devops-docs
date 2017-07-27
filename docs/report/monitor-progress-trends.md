@@ -56,7 +56,7 @@ Each sprint provides access to two charts. The first [tracks capacity](../work/s
 
 The steps to creating charts that track test progress and results are similar to those for tracking work. The starting point, however, begins with the test plan rather than a query. For example, you can find out how many test cases are ready to run, or how many tests are passing and failing in each test suite. 
 
-[![Edit query](_img/gs-chart-test-type.png)](../test/manual-exploratory-testing/getting-started/track-test-status.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-widget-to-dashboard.md#add-charts)
+[![Edit query](_img/gs-chart-test-type.png)](../manual-test/getting-started/track-test-status.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-widget-to-dashboard.md#add-charts)
 
 
 And, just like work item query-based charts, you can add these charts to a dashboard.  

@@ -283,10 +283,10 @@ The **Build & Release** hub supports defining and managing builds and releases t
 <div style="float:left;width:150px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Test](../test/index.md)</p>
 <ul style="padding-left:40px">
-<li style="margin-bottom:2px">[Test plans](../test/manual-exploratory-testing/getting-started/create-a-test-plan.md)</li>
-<li style="margin-bottom:2px">[Parameters](../test/manual-exploratory-testing/repeat-test-with-different-data.md)</li>
-<li style="margin-bottom:2px">[Configurations](../test/manual-exploratory-testing/test-different-configurations.md)</li>
-<li style="margin-bottom:2px">[Runs](../test/manual-exploratory-testing/getting-started/run-manual-tests.md)</li>
+<li style="margin-bottom:2px">[Test plans](../manual-test/getting-started/create-a-test-plan.md)</li>
+<li style="margin-bottom:2px">[Parameters](../manual-test/repeat-test-with-different-data.md)</li>
+<li style="margin-bottom:2px">[Configurations](../manual-test/test-different-configurations.md)</li>
+<li style="margin-bottom:2px">[Runs](../manual-test/getting-started/run-manual-tests.md)</li>
 <li style="margin-bottom:2px">[Machines](../build-release/test/set-up-continuous-test-environments-builds.md)</li>
 <li style="margin-bottom:2px">[Load test](../test/performance-testing/getting-started/getting-started-with-performance-testing.md)</li>
 </ul>
@@ -401,7 +401,7 @@ Below we show the admin context for the team project level.
 <li style="margin-bottom:2px">[Agent queues](../build-release/concepts/agents/pools-queues.md)</li>
 <li style="margin-bottom:2px">[Service hooks](../integrate/get-started/service-hooks/services/webhooks.md)</li>
 <li style="margin-bottom:2px">[Services](../build-release/concepts/library/service-endpoints.md)</li>
-<li style="margin-bottom:2px">[Test (manage test retention policies](../test/manual-exploratory-testing/getting-started/how-long-to-keep-test-results.md)</li>
+<li style="margin-bottom:2px">[Test (manage test retention policies](../manual-test/getting-started/how-long-to-keep-test-results.md)</li>
 </ul>
 </div>
 

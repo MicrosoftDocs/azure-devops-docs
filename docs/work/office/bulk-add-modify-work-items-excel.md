@@ -259,7 +259,7 @@ To bulk edit links, you can use these clients:
 -   Use the web portal, to [map backlog items to portfolio backlog items](../backlogs/organize-backlog.md) which creates parent-child links.  
 -   Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../backlogs/organize-backlog.md#reparent) or within a tree query.
 
-To bulk modify test cases with shared steps, use the [web portal Test grid view](../../test/manual-exploratory-testing/getting-started/create-test-cases.md).  
+To bulk modify test cases with shared steps, use the [web portal Test grid view](../../manual-test/getting-started/create-test-cases.md).  
 
 To resolve publishing errors, see one of these topics:   
 

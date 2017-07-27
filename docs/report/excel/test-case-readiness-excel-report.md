@@ -34,7 +34,7 @@ You can use the Test Case Readiness report to help monitor the progress that the
 ### Required activities for monitoring test case readiness  
  For the Test Case Readiness report to be useful and accurate, the team must perform the following activities:  
   
--   Define [test cases](../../test/manual-exploratory-testing/getting-started/create-test-cases.md), and update their **State** from **Design** to **Ready**.  
+-   Define [test cases](../../manual-test/getting-started/create-test-cases.md), and update their **State** from **Design** to **Ready**.  
   
 -   (Optional) To support filtering, assign **Iteration** and **Area** paths to Test Cases.  
   

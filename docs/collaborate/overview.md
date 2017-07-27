@@ -196,9 +196,9 @@ There are two ways to request and receive feedback on your working apps. The fir
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Test & Feedback extension</p>
 <ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Request stakeholder feedback](../test/manual-exploratory-testing/stakeholder/request-stakeholder-feedback.md)</li>
-<li style="margin-bottom:2px">[Provide stakeholder feedback](../test/manual-exploratory-testing/stakeholder/provide-stakeholder-feedback.md)</li>
-<li style="margin-bottom:2px">[Track feedback responses](../test/manual-exploratory-testing/stakeholder/track-stakeholder-feedback.md)</li>
+<li style="margin-bottom:2px">[Request stakeholder feedback](../manual-test/stakeholder/request-stakeholder-feedback.md)</li>
+<li style="margin-bottom:2px">[Provide stakeholder feedback](../manual-test/stakeholder/provide-stakeholder-feedback.md)</li>
+<li style="margin-bottom:2px">[Track feedback responses](../manual-test/stakeholder/track-stakeholder-feedback.md)</li>
 </ul>
 </div>
 

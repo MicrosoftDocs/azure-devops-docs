@@ -9,4 +9,4 @@ Choose the **Verify** option to re-run tests which identified the bug. You can i
 
 <img src="../_shared/_img/verify-bug-menu-option.png" alt="Team Services, Bug work item form, Actions menu, Verify option" style="border: 1px solid #CCCCCC;" />  
  
-To learn more about running test from the web portal, see [Run tests for web apps](../../test/manual-exploratory-testing/getting-started/run-manual-tests.md).
+To learn more about running test from the web portal, see [Run tests for web apps](../../manual-test/getting-started/run-manual-tests.md).

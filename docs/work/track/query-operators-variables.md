@@ -348,7 +348,7 @@ You use the **witadmin indexfield** command to enable or disable indexing for a 
 <ul style="padding-left:30px">
 <li>[Work item charts](../../report/charts.md)</li>
 <li>[Charts based on numeric counts or sums](query-numeric.md)</li>
-<li>[Test charts](../../test/manual-exploratory-testing/getting-started/track-test-status.md)</li>
+<li>[Test charts](../../manual-test/getting-started/track-test-status.md)</li>
 </ul>
 </div>
 

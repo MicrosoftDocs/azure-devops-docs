@@ -176,7 +176,7 @@ Each time a [release is deployed](../build-release/actions/view-manage-releases.
 >[!NOTE]  
 ><b>Feature availability: </b> This feature is supported from Team Services and TFS 2015.  
 
-As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../test/manual-exploratory-testing/getting-started/track-test-status.md).  
+As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../manual-test/getting-started/track-test-status.md).  
 
 1. Select your [team context](#switch-team-context), make sure you're a [team admin](../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 

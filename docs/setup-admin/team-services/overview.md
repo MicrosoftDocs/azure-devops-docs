@@ -235,7 +235,7 @@ Members of the Project Administrators and Project Collection Administrator group
 <ul style="padding-left:20px">
 <li style="margin-bottom:0px">[Manage Git branch policies](../../git/branch-policies.md)</li>
 <li style="margin-bottom:0px">[Build agents, pools, and service endpoints](../../build-release/overview.md)</li> 
-<li style="margin-bottom:0px">[Test retention policies](../../test/manual-exploratory-testing/getting-started/how-long-to-keep-test-results.md)</li> 
+<li style="margin-bottom:0px">[Test retention policies](../../manual-test/getting-started/how-long-to-keep-test-results.md)</li> 
 <li style="margin-bottom:0px">[Build and release retention policies](../../build-release/concepts/policies/retention.md) </li>
 <li style="margin-bottom:0px">[Test permissions](../permissions.md#project_test)</li>
 <li style="margin-bottom:0px">[Build permissions](../permissions.md#build)</li>
