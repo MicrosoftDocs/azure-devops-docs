@@ -13,7 +13,6 @@ ms.date: 05/12/2017
 
 **| Team Services |**
 
->**Team Services:** Deployment groups are not yet available to all Team Services accounts.  
 >**TFS:** At present, deployment groups are not available in Team Foundation Server.
 
 A deployment group is a logical set of deployment target machines 
