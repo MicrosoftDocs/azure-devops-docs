@@ -1,6 +1,6 @@
 ---
-title: Set up and administration for Microsoft Code Search in Visual Studio Team Services and Team Foundation Server
-description: Setup notes and administration links for Microsoft Code Search in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Set up and administration for Microsoft Code Search & Work Item Search in Visual Studio Team Services and Team Foundation Server
+description: Setup notes and administration links for Microsoft Code Search & Work Item Search in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-search
@@ -9,7 +9,7 @@ ms.author: douge
 ms.date: 08/04/2016
 ---
 
-# Set up and administer Microsoft Code Search
+# Set up and administer Microsoft Code Search/Work Item Search
 
 [!INCLUDE [version-header-shared](../_shared/version-header-shared.md)]
 
@@ -23,16 +23,17 @@ In this topic:
   - [Configure Search](#config-tfs)
   - [Secure Search](#secure-search)
   - [Upgrade Search](#upgrading-search) (new!)
-  - [Manage Code Search](#manage-tfs)
-  - [Uninstall Code Search](#uninstall-tfs)
-  - [Limitations of Code Search](#limit-tfs)
-  - [Troubleshoot Code Search](#trouble-tfs)
+  - [Manage Search](#manage-tfs)
+  - [Uninstall Search](#uninstall-tfs)
+  - [Limitations of Search](#limit-tfs)
+  - [Troubleshoot Search](#trouble-tfs)
 
 Also see [Install and configure TFS](../../setup-admin/tfs/install/get-started.md)
 and [TFS requirements and compatibility](../../setup-admin/requirements.md).
 
 >Users with at least a **Basic** access can use Code Search. 
 Stakeholders do not have access to code, and therefore no access to Code Search. 
+All users have access to Work Item Search.
 
 <a name="config-ts"></a>
 ## Install Code Search in Team Services
@@ -49,56 +50,61 @@ For more details, see [Install an extension](../../marketplace/get-vsts-extensio
 See [Uninstall or disable an extension](../../marketplace/get-vsts-extensions.md#uninstall-disable-extension) in the Marketplace documentation. 
 
 <a name="config-tfs"></a>
-## Configure Code Search in Team Foundation Server
+## Configure Code Search/Work Item Search in Team Foundation Server
 
 Code Search is available in Microsoft Team Foundation Server 2017 and later.
-Configure Code Search using the dedicated pages in the TFS Configuration Wizard
-as you install TFS. You can also [configure and unconfigure Code Search](#uninstall-tfs)
+Work Item Search is available in Microsoft Team Foundation Server 2017 Update 2 and later.
+Configure the Search service using the dedicated pages in the TFS Configuration Wizard
+as you install TFS. You can also [configure and unconfigure Search](#uninstall-tfs)
 afterwards by running the TFS Configuration Wizard again or lauching the Search Configuration Wizard.
 
 <a name="hardware-recommendations"></a>
 ### Hardware recommendations
 
-Code Search can be used on any size physical server or virtual machine that runs 
+Search can be used on any size physical server or virtual machine that runs 
 TFS 2017 or above. It can be configured on the same server as TFS,
 or on a separate server dedicated to Search.
-When configuring Code Search on the same server as TFS,
-you must take into account in the existing CPU utlization
-factor due to TFS itself. In most cases you should
-consider configuring Code Search on a separate server.
+When configuring Search on the same server as TFS,
+you must take into account the existing CPU utlization
+factor due to TFS itself. 
+In most cases you should
+consider configuring Search on a separate server.
 
 For acceptable performance in multi-user scenarios, consider the 
 following recommendations:
 
-* Less than 250 users with Code Search co-located on the TFS server:
+* Less than 250 users with Search co-located on the TFS server:
   - Quad core processor, 8 GB (minimum) RAM
   - CPU Utilization factor less than 50%
   - Fast hard drive backed by Solid State Drive (SSD) storage<p />
 
-* Less than 500 users with Code Search located on a [separate server](#separate-server): 
+* Less than 500 users with Search located on a [separate server](#separate-server): 
   - Dual core processor, 8 GB (minimum) RAM
   - Fast hard drive backed by Solid State Drive (SSD) storage<p />
 
-* Less than 1,000 users with Code Search located on a [separate server](#separate-server):
+* Less than 1,000 users with Search located on a [separate server](#separate-server):
   - Quad core processor, 16 GB (minimum) RAM
   - Fast hard drive backed by Solid State Drive (SSD) storage<p />
 
-* More than 1,000 users with Code Search located on a [separate server](#separate-server):
+* More than 1,000 users with Search located on a [separate server](#separate-server):
   - Quad core processor, 16 GB (minimum) RAM
   - Fast hard drive backed by Solid State Drive (SSD) or Storage Area Network (SAN) storage<p />
 
+* TFS server with Multiple ATs: 
+  - Install Search on a [separate server](#separate-server)<p />
+
 * TFS server CPU utilization greater than 50% before installing Code Search:
-  - Install Code Search on a [separate server](#separate-server)<p />
+  - Install Search on a [separate server](#separate-server)<p />
 
 **Disk space requirement**:
 
 The amount of disk space taken up by Search depends mainly on the type of
 code files in version control that will be indexed. As a general guideline,
-allocate upto 30% of the size of all the collections that will be indexed.
+allocate upto 35% of the size of all the collections that will be indexed.
 
 ### Software Dependencies
 
-Code Search has the following dependencies, which are installed automatically
+Search has the following dependencies, which are installed automatically
 as part of the configuration:
 
 * [Elasticsearch](https://www.elastic.co/products/elasticsearch) by Elasticsearch BV (see Note 1)
@@ -111,7 +117,7 @@ as part of the configuration:
 **NOTES**:
  
 * A modified version of Elasticsearch ships with TFS. 
-  Code Search will work only with this version of Elasticsearch.
+  Search will work only with this version of Elasticsearch.
 
 * The system or TFS administrator must ensure that Server JRE is
   maintained and updated in line with the software provider's recommendations. 
@@ -124,35 +130,35 @@ If the Search configuration wizard does not detect a working installation of
 Java Server JRE, it provides an option to download and install the latest version. 
 Internet connectivity is required to download this from the Java website.
 If the target server does not have Internet connectivity, you must download 
-and install Server JRE manually before attempting to install Code Search.
+and install Server JRE manually before attempting to install Search.
 
 During installation, the wizard sets the **JAVA\_HOME** environment variable 
 to point to the Server JRE installation folder. The configuration wizard may fail 
 to detect an existing Server JRE installation if it is not correctly configured, 
 or if the **JAVA\_HOME** setting points to an earlier version than that required 
-by Code Search. 
+by Search. 
 
-If there is a version of Server JRE **earlier** than the minimum required by Code 
+If there is a version of Server JRE **earlier** than the minimum required by  
 Search, and the **JAVA\_HOME** variable is set to that version, we recommend 
 you install Search on a separate server because changing the value 
 of the **JAVA\_HOME** variable may cause other installed software to fail.
 
 If there is a version of Server JRE **equal to or later** than the minimum required 
-by Code Search, and it is not recognized by the configuration wizard, you
+by Search, and it is not recognized by the configuration wizard, you
 must set the value of the **JAVA\_HOME** variable to that version as described in
 the **[Java troubleshooting guide](http://docs.oracle.com/javase/7/docs/webnotes/tsg/)**,
 and then rerun the configuration wizard. 
 
-If you cannot install the version of Java required by Code Search due to other dependencies, you can:
+If you cannot install the version of Java required by Search due to other dependencies, you can:
 
 * Install TFS and Search together on a different server that does
-  not have Java installed (not recommended for more than 250 users or CPU utilization greater than 50%).
+  not have Java installed (not recommended for more than 250 users or CPU utilization greater than 50% or multiple ATs).
 
 * Install Search and Java on a [separate server](#separate-server) from TFS.
 
->Code Search does not use or support any of the commercial features
-of Server JRE 7 or 8 as outlined [here](http://www.oracle.com/technetwork/java/javase/terms/products/index.html).
-Therefore, during Code Search configuration on Team Foundation Server 2017,
+>Search does not use or support any of the commercial features
+of Server JRE 8 as outlined [here](http://www.oracle.com/technetwork/java/javase/terms/products/index.html).
+Therefore, during Search configuration on Team Foundation Server 2017,
 the commercial features of the Server JRE are not activated or unlocked.
 See the Oracle documentation for examples of unlocking the commercial features of
 [Java 7](http://docs.oracle.com/javase/7/docs/technotes/tools/windows/java.html)
@@ -160,10 +166,10 @@ or [Java 8](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/
 
 ### Installation considerations
 
-Consider the following when configuring Code Search:
+Consider the following when configuring Search:
 
 * The Code Search extension must be installed for each TFS collection where you want to use it. 
-  When initially configuring Code Search, you can set a checkbox to **Automatically install Code Search extension 
+  When initially configuring Search, you can set a checkbox to **Automatically install Code Search extension 
   for existing and new Tem Project Collections** to automate this process.
 
 * If you do not set the checkbox to install the Code Search extension for all your Team Project Collection, while 
@@ -172,8 +178,8 @@ Consider the following when configuring Code Search:
 
 * The search index folder should be located on a separate fast hard drive backed by fast storage such
   as Solid State Drive (SSD) or Storage Area Network (SAN) to maximize search performance.
-  As a general guide, the Code Search index for a collection can be a maximum of 30% the size of the collection itself. 
-  That is the worst case scenario; the actual space consumed is dictated by the amount and type of code files in that collection.
+  As a general guide, the Search index for a collection can be a maximum of 35% the size of the collection itself. 
+  That is the worst case scenario; the actual space consumed is dictated by the amount and type of code files & amount of work items in that collection.
 
 * The indexing service and Elasticsearch engine use the account you specify during 
   installation to create and access the index files. This account must have **Log on as a service**
@@ -183,6 +189,9 @@ Consider the following when configuring Code Search:
   from accidental or malicious modification or deletion, and configure appropriate 
   [security settings](#secure-search) for the service.
 
+* When configuring Search for a TFS server with **multiple ATs**, make sure Search is installed on a [separate server](#separate-server). Once Search is installed 
+  on the remote server, use the Configuration wizard on any one of the ATs, to link the search instance with your TFS instance. 
+
 * If you are performing a **pre-production upgrade** on a TFS server where Search is already configured, you must fully
   reconfigure Search again to avoid corrupting your production instance of Search. For this reason there is no option to configure 
   Search as part of a pre-production upgrade. Instead, configure it after the pre-production upgrade is complete. 
@@ -191,7 +200,7 @@ Consider the following when configuring Code Search:
 
 * If you are performing a **production upgrade** on a TFS server where Search is already configured, and want to retain the Search feature, 
   you must set the checkbox to **Install and Configure Search**. At this point the wizard will detect your existing Search instance and 
-  automatically select the **Use existing Search instance** option, and pre-populate the option with your current Search service URL.
+  automatically select the **Use existing Search instance** option, and pre-populate your current Search service URL.
   Use the **Install a new Search instance** option only if you want to set up a new instance of Search on the same TFS server.
   Setting up a new instance causes all your code to be indexed again, which - depending on the size of the collections - can take some time.
   During indexing, users may see partial search results. 
@@ -216,9 +225,9 @@ Consider the following when configuring Code Search:
   - After you attach the collection to the target TFS instance, you install the Code Search extension for that collection from the Marketplace by browsing to it from that TFS instance.<p />
 
 <a name="separate-server"></a>
-### Installing or Updating Code Search on a separate server
+### Installing or Updating Search on a separate server
 
-To install or update Code Search on a separate (remote) server, typically when you have more than 250 users,
+To install or update  Search on a separate (remote) server, typically when you have more than 250 users,
 follow these steps:
 
 1. As you install TFS on the primary server, set the **Install and configure Search** checkbox 
@@ -226,7 +235,7 @@ follow these steps:
 
 1. Select the option to **Use an existing Search Service**. 
 
-1. Use the **Search Service package** link to access a set of Search installer files 
+1. Use the **Search Service package** link provided in the wizard to access a set of Search installer files 
    on the local machine, and then copy these files to the remote server.
 
    ![Separate server installation](_img/administration/separate-server.png)
@@ -242,7 +251,7 @@ follow these steps:
    [security settings](#secure-search) for both servers.
 
 <a name="secure-search"></a>
-## Secure Code Search 
+## Secure Search 
 
 The Search service uses a modified version of 
 [Elasticsearch](https://www.elastic.co/products/elasticsearch) 
@@ -302,10 +311,17 @@ service was configured on the TFS server that is being upgraded.
 If Search was configured on a remote server, follow
 [these instructions](#separate-server) to update it.
 
-<a name="manage-tfs"></a>
-## Manage Code Search in Team Foundation Server
+TFS 2017 Update 2 includes Work items Search. It uses the same Search service as Code Search.
+If the Search service was configured in TFS 2017 RTM/Update1 then, during an upgrade, the
+Search service components will be updated automatically if the Search
+service was configured on the TFS server that is being upgraded.
+If Search was configured on a remote server, follow
+[these instructions](#separate-server) to update it.
 
-Code Search is managed by running PowerShell and SQL scripts. All of
+<a name="manage-tfs"></a>
+## Manage Search in Team Foundation Server
+
+Search is managed by running PowerShell and SQL scripts. All of
 these scripts are available to download from 
 **[this GitHub repository](https://github.com/Microsoft/Code-Search)**.
 You may wish to download all of the scripts into a local folder on your TFS
@@ -318,6 +334,7 @@ the **SqlScripts** folder and its contents is present, along with the PowerShell
 
 * [TFS 2017 RTM](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017RTW)
 * [TFS 2017 Update 1](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update1)
+* [TFS 2017 Update 2](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update2)
 
 <a name="check-index"></a>
 ### Check indexing status for TFS 2017 RTM
@@ -448,7 +465,7 @@ to a few hours, depending on the size of the collection.
 Also see **[Troubleshoot Code Search](#trouble-tfs)**.
 
 <a name="uninstall-tfs"></a>
-## Unconfigure Code Search in Team Foundation Server
+## Unconfigure Search in Team Foundation Server
 
 In cases such as a pre-production upgrade, production upgrade, new hardware migration, cloning,
 or other maintenance operation, the TFS wizard will unconfigure Code Search in a way that makes it easy to re-configure it after the TFS 
@@ -459,7 +476,7 @@ install. This requires multiple steps, depending on whether Code Search is confi
 [on the same server as TFS ](#unconfig-same-server) or on a [separate server](#unconfig-separate-server).
 
 <a name="unconfig-same-server"></a>
-### Unconfigure Code Search on the machine configured as your TFS server
+### Unconfigure Search on the machine configured as your TFS server
 
 1. Uninstall the Code Search extension for each collection where it is installed.
    Do this by navigating to the **Manage Extensions** page of each collection in
@@ -490,7 +507,7 @@ install. This requires multiple steps, depending on whether Code Search is confi
    1. Delete the environment variable `"ES_HEAP_SIZE"`<p />
     
 <a name="unconfig-separate-server"></a>
-### Unconfigure Code Search when its configured on a separate server
+### Unconfigure Search when its configured on a separate server
 
 1. Uninstall the Code Search extension for each collection where it is installed. Do this by navigating to the **Manage Extensions** page of each collection in
 your Team Foundation Server.
@@ -511,16 +528,15 @@ your Team Foundation Server.
    1. Run the script again with the remove option: `"ConfigureTFSSearch.ps1 -RemoveTFSSearch"`<p />
   
 <a name="limit-tfs"></a>
-## Limitations of Code Search in Team Foundation Server
+## Limitations of Search in Team Foundation Server
 
 Code Search for Team Foundation Server 2017 has the following limitations: 
 
-* If you perform a disaster recovery operation and move your server back 
-  to an earlier snapshot of your SQL database, Code Search will not reflect the
-  changes unless you [re-index the collections](#re-index).  
+* If you perform a disaster recovery (DR) operation and move your TFS server back 
+  to an earlier snapshot of your SQL database, you will need to re-index all your collections [re-index the collections](#re-index).  
 
 <a name="trouble-tfs"></a>
-## Troubleshoot Code Search in Team Foundation Server
+## Troubleshoot Search in Team Foundation Server
 
 * [Search is configured but the Search box is not displayed](#no-search-box)
 * [No search results are shown after installing or configuring Search](#no-results-install)
