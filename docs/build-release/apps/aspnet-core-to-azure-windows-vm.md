@@ -21,8 +21,6 @@ ms.custom: mvc
 
 Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your ASP.NET Core apps. This quickstart shows how to set up CI and CD to deploy an ASP.NET Core application to a Windows virtual machine (VM) in Azure. You'll create a VM using Azure Powershell, and then you'll set up CI/CD in VSTS. In the CI process, you'll build the app using MSBuild and run tests using VSTest.
 
-_TODO: work with artist to adapt diagram to this scenario_
-
 ![A typical release pipeline for web applications](../get-started/_img/ci-cd/part-1/ReleasePipeline.png)
 
 With your CI/CD processes in place, you'll push a change into your team's git repo and the results will automatically show up on your site.
@@ -30,7 +28,6 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 ![Screenshot showing ASP.NET Core web app](_img/aspnet-core-to-azure-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
 [!INCLUDE [include](_shared/prerequisites.md)]
-* On your dev machine, you need Azure PowerShell module version 4.0 or newer. See [Install and configure Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-4.2.0).
 
 [!INCLUDE [temp](_shared/create-azure-windows-vm.md)]
 
@@ -158,33 +155,23 @@ net start w3svc
 
 You can watch the live logs for the deployment as it happens. Wait for the release to be deployed to the Azure web app.
 
-[!INCLUDE [import-code-aspnet-core](_shared/change-code-section.md)]
+## Browse to the app
 
-Navigate to the **Code** hub in the VSTS portal. Navigate to **Views/Home/Index.cshtml** file. Make the following simple change to that file by selecting the edit action.
+Once deployment has completed, open your web browser and test your web app: `http://<publicIpAddress>`
+
+[!INCLUDE [include](_shared/change-code-section.md)]
+
+In the VSTS **Code** hub, edit the **Views/Home/Index.cshtml** file and make a simple change above the slide carousel `div` tag:
+
+```html
+<h2>Demo of ASP.NET Core CI/CD!!</h2>
+```
 
 ![Screenshot showing update to code](_img/aspnet-core-to-azure-windows-vm/cicd-get-started-dotnetcore-update-code.png)
 
-Add the following line of text above the carousel display in the page:
-```
-<h1>Demo of ASP.NET Core CI/CD!!</h1>
-```
+Commit your changes to trigger a CI build. When the build completes, it triggers an automatic deployment of the Azure web app.
 
-Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure web app.
+When the deployment is done, verify that your changes are live in your web browser: `
+http://<publicIpAddress>`
 
-## Browse to the app
-
-Once deployment has completed, open the browser and test your web app.
-
-```bash
-http://<publicIpAddress>
-```
-
-**Congratulations!** You've deployed changes to your application using CI/CD.
-
-## Clean up resources
-
-After you're done with the VM, run the following command to remove the resource group, the VM, and all other related resources.
-
-```ps
-Remove-AzureRmResourceGroup -Name myResourceGroup
-```
+**Congratulations!** Your ready to collaborate with a team on an ASP.NET Core app with a CI/CD process that automatically deploys your latest work to your web site.

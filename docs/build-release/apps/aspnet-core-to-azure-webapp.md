@@ -27,6 +27,7 @@ You will use the Azure portal to configure a basic CI/CD pipeline. You will then
 _TODO: Architecture diagram_
 
 [!INCLUDE [prerequisites](_shared/prerequisites.md)]
+* Have an Azure subscription. If you don't have an Azure subscription, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
 [!INCLUDE [import-code-aspnet-core](_shared/import-code-aspnet-core.md)]
 
@@ -34,7 +35,7 @@ _TODO: Architecture diagram_
 
 ## Configure continuous delivery
 
-1. Log into the Azure portal and open the eb app's blade. Choose **Continuous Delivery** and then choose **Configure**.
+1. Log into the Azure portal and open the web app's blade. Choose **Continuous Delivery** and then choose **Configure**.
 
    ![Starting Continuous Delivery configuration](_img/aspnet-core-to-azure-webapp/continuous-delivery-intro.png)
 
