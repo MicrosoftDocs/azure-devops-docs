@@ -165,7 +165,7 @@ ms.date: 07/26/2017
                                       </div>
                                     </div>
                                     <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                      <h3 style="border-bottom:none;">Marketplace</h3>
+                                      <span class="likeAnH3">Marketplace</span>
                                     </div>
                                   </div>
                                 </div>
@@ -183,7 +183,7 @@ ms.date: 07/26/2017
                                       </div>
                                     </div>
                                     <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                      <h3 style="border-bottom:none;">Learn about Git</h3>
+                                      <span class="likeAnH3">Learn about Git</span>
                                     </div>
                                   </div>
                                 </div>
@@ -201,7 +201,7 @@ ms.date: 07/26/2017
                                       </div>
                                     </div>
                                     <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                      <h3 style="border-bottom:none;">Learn about DevOps</h3>
+                                      <span class="likeAnH3">Learn about DevOps</span>
                                     </div>
                                   </div>
                                 </div>
@@ -219,7 +219,7 @@ ms.date: 07/26/2017
                                       </div>
                                     </div>
                                     <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                      <h3 style="border-bottom:none;">Learn about Agile</h3>
+                                      <span class="likeAnH3">Learn about Agile</span>
                                     </div>
                                   </div>
                                 </div>
@@ -842,6 +842,24 @@ ms.date: 07/26/2017
                       </div>
                       </a>
                   </li>
+                    <li>
+                        <a href="">
+                        <div class="cardSize">
+                            <div class="cardPadding">
+                                <div class="card">
+                                    <div class="cardImageOuter">
+                                        <div class="cardImage">
+                                            <img src="/media/common/placeholder.svg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="cardText" style="padding-left: 32px;padding-top:14px">
+                                        <h3>Title</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </li>
                 </ul>
               </li>
               <li>
