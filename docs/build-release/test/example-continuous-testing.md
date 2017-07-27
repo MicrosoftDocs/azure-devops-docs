@@ -251,7 +251,7 @@ a simple load test to validate the deployment.
    >For more details about release definitions, see
    [Release Management in Team Services](../../build-release/concepts/definitions/release/index.md).
    For more details about load tests and the results, see 
-   [Run URL-based load tests with Visual Studio Team Services](../../test/performance-testing/getting-started/get-started-simple-cloud-load-test.md).
+   [Run URL-based load tests with Visual Studio Team Services](../../load-test/get-started-simple-cloud-load-test.md).
 
 <a name="test-failure"></a>
 ## Explore behavior when a test fails

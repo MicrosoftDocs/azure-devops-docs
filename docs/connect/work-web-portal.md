@@ -288,7 +288,7 @@ The **Build & Release** hub supports defining and managing builds and releases t
 <li style="margin-bottom:2px">[Configurations](../manual-test/test-different-configurations.md)</li>
 <li style="margin-bottom:2px">[Runs](../manual-test/getting-started/run-manual-tests.md)</li>
 <li style="margin-bottom:2px">[Machines](../build-release/test/set-up-continuous-test-environments-builds.md)</li>
-<li style="margin-bottom:2px">[Load test](../test/performance-testing/getting-started/getting-started-with-performance-testing.md)</li>
+<li style="margin-bottom:2px">[Load test](../load-test/getting-started-with-performance-testing.md)</li>
 </ul>
 <br/>
 
