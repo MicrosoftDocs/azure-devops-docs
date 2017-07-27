@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/test/continuous-testing/index
+redirect_url: /docs/build-release/test/index
 ---
