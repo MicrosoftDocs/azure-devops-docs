@@ -1,5 +1,9 @@
 - name: Build and Release
   href: index.md
+- name: Overview
+  items:
+  - name: Build
+  - name: Release
 - name: Quickstarts
   items:
   - name: CI/CD to Azure web app
