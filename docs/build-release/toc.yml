@@ -16,8 +16,12 @@
       href: apps/aspnet-core-to-azure-windows-vm.md
 - name: Tutorials
   items:
-  - name: Create a build definition
-  - name: Create a release definition
+  - name: CI for your app   
+  - name: CD for your app    
+  - name: Multi-stage CD
+  - name: CI with Git workflows  
+  - name: Integrate GitHub & Jenkins
+  - name: Extend CI/CD 
 - name: Concepts
   items:
   - name: Agents
