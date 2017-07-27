@@ -13,7 +13,7 @@ ms.date: 08/26/2016
  
 [!INCLUDE [version-header-ts-tfs15](../_shared/version-header-ts-tfs15.md)] 
 
-[!INCLUDE [feedback-header-text](_shared/feedback-header-text.md)] 
+[!INCLUDE [feedback-header-text](../_shared/feedback-header-text.md)] 
 
 <a name="request"></a>
 ## Request feedback from stakeholders
