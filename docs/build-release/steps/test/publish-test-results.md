@@ -52,7 +52,7 @@ The build agent must have the following capabilities:
 ## More Information
 
 * [Test apps early and often](../../../test/index.md)
-* [Continuous testing scenarios and capabilities](../../../test/continuous-testing/index.md)
+* [Continuous testing scenarios and capabilities](../../ct/index.md)
 
 ## Related tasks
 

@@ -94,7 +94,7 @@ continuous integration (CI) and continuous deployment (CD) process.
 <div style="float:left;width:370px;margin:3px">
 <p style="font-weight:bold;padding-top:10px">More examples</p>
 <ul style="padding-left:30px">
- <li style="margin-bottom:5px">[Continuous integration, test, and deployment](../../test/continuous-testing/example-continuous-testing.md)</li>
+ <li style="margin-bottom:5px">[Continuous integration, test, and deployment](../ct/example-continuous-testing.md)</li>
  <li style="margin-bottom:5px">[Continuous integration for a Service Fabric app using Team Services](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-set-up-continuous-integration/)</li>
 </ul>
 </div>

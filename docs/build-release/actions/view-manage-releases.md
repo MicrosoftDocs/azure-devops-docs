@@ -276,7 +276,7 @@ ran as part of the build and release process.
 ![Viewing test results from a build and release](_img/view-manage-releases/view-test-results-01.png)
 
 For more details about the **Tests** page, see
-[Review continuous test results after a build](../../test/continuous-testing/getting-started/review-continuous-test-results-after-build.md)
+[Review continuous test results after a build](../ct/review-continuous-test-results-after-build.md)
 
 <h2 id="approve-release">Approve a release</h2>
 
