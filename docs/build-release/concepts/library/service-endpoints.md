@@ -41,6 +41,7 @@ Team Services and TFS support a variety of endpoint types by default. Some of th
 * [Azure Resource Manager service endpoint](#sep-azure-rm)
 * [Azure Service Bus service endpoint](#sep-servbus)
 * [Azure Service Fabric service endpoint](#sep-servfabric)
+* [Bitbucket service endpoint](#sep-bbucket)
 * [Chef service endpoint](#sep-chef)
 * [Docker Host service endpoint](#sep-dochost)
 * [Docker Registry service endpoint](#sep-docreg)
@@ -49,6 +50,9 @@ Team Services and TFS support a variety of endpoint types by default. Some of th
 * [GitHub service endpoint](#sep-github)
 * [Jenkins service endpoint](#sep-jenkins)
 * [Kubernetes service endpoint](#sep-kuber)
+* [npm service endpoint](#sep-npm)
+* [NuGet service endpoint](#sep-nuget)
+* [Service Fabric service endpoint](#sep-fabric)
 * [SSH service endpoint](#sep-ssh)
 * [Subversion service endpoint](#sep-subversion)
 * [Team Foundation Server / Team Services service endpoint](#sep-tfsts)
@@ -193,6 +197,16 @@ You can use the following PowerShell script to obtain a Base64-encoded represent
 [System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes("path-to-certificate-file\certificate.pfx"))
 ```
 
+<h3 id="sep-bbucket">Bitbucket service endpoint</h3>
+
+Defines a connection to a Bitbucket server.
+
+| Parameter | Description |
+| --------- | ----------- |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| User name | Required. The username to connect to the service. |
+| Password | Required. The password for the specified username. |
+
 <h3 id="sep-chef">Chef service endpoint</h3>
 
 Defines and secures a connection to a [Chef](https://docs.chef.io/chef_overview.html) automation server.
@@ -307,6 +321,47 @@ Defines and secures a connection to a [Kubernetes](https://kubernetes.io/docs/ho
 | Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
 | Server URL | Required. The URL of the Kubernetes automation service. |
 | Kubeconfig | The contents of the kubectl configuration file. |
+
+<h3 id="sep-npm">npm service endpoint</h3>
+
+Defines and secures a connection to an npm server.
+
+| Parameter | Description |
+| --------- | ----------- |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Registry URL | Required. The URL of the npm server. |
+| Username | Required when connection type is **Basic authentication**. The username for authentication. |
+| Password | Required when connection type is **Basic authentication**. The password for the username. |
+| Personal Access Token | Required when connection type is **External VSTS**. The token to use to authenticate with the service. [Learn more](../../../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md). |
+
+<h3 id="sep-nuget">NuGet service endpoint</h3>
+
+Defines and secures a connection to a NuGet server.
+
+| Parameter | Description |
+| --------- | ----------- |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Feed URL | Required. The URL of the NuGet server. |
+| ApiKey | Required when connection type is **ApiKey**. The authentication key. |
+| Personal Access Token | Required when connection type is **External VSTS**. The token to use to authenticate with the service. [Learn more](../../../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md). |
+| Username | Required when connection type is **Basic authentication**. The username for authentication. |
+| Password | Required when connection type is **Basic authentication**. The password for the username. |
+
+<h3 id="sep-fabric">Service Fabric service endpoint</h3>
+
+Defines and secures a connection to a Service Fabric cluster.
+
+| Parameter | Description |
+| --------- | ----------- |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Cluster Endpoint  | Required. The TCP endpoint of the cluster. |
+| Server Certificate Thumbprint | Required when connection type is **Certificate based** or **Azure Active Directory**. |
+| Client Certificate | Required when connection type is **Certificate based**. |
+| Password | Required when connection type is **Certificate based**. The certificate password. |
+| Username | Required when connection type is **Azure Active Directory**. The username for authentication. |
+| Password | Required when connection type is **Azure Active Directory**. The password for the username. |
+| Use Windows security | Required when connection type is **Others**. |
+| Cluster SPN | Required when connection type is **Others** and usiong Windows security. |
 
 <h3 id="sep-ssh">SSH service endpoint</h3>
 
