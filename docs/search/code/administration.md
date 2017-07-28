@@ -189,8 +189,9 @@ Consider the following when configuring Search:
   from accidental or malicious modification or deletion, and configure appropriate 
   [security settings](#secure-search) for the service.
 
-* When configuring Search for a TFS server with **multiple ATs**, make sure Search is installed on a [separate server](#separate-server). Once Search is installed 
-  on the remote server, use the Configuration wizard on any one of the ATs, to link the search instance with your TFS instance. 
+* When configuring Search for a TFS server with **multiple ATs**, make sure Search is installed on a [separate server](#separate-server). After Search is installed 
+  on the remote server, use the Configuration wizard on any one of the ATs to link the search instance with your TFS instance. When unconfiguring Search in future 
+  you must use the Configuration wizard on the same AT where configuration was done.
 
 * If you are performing a **pre-production upgrade** on a TFS server where Search is already configured, you must fully
   reconfigure Search again to avoid corrupting your production instance of Search. For this reason there is no option to configure 
@@ -383,6 +384,8 @@ To check the indexing status after Search is configured, or after the extension 
 <a name="index-update1"></a>
 ### Check indexing status for TFS 2017 Update 1
 
+(For TFS 2017 Update 2, see the [next section](#index-update2))
+
 To check the indexing status after Search is configured, or after the extension is installed for a collection:
 
 1. Execute the **ExtensionInstallIndexingStatus.ps1** script with administrative privileges. 
@@ -413,6 +416,44 @@ To check the indexing status after Search is configured, or after the extension 
    - **Repositories completed continuous indexing**: The number of commits processed in the specified time interval. The number may not exactly match the total number of pushes to the repository because merges are committed as they are indexed.
 
    - **Count of repositories with continuous indexing in progress**: The number of repositories for which the commits are still being processed. These repositories will show incomplete results until indexing is completed.<p />
+   
+   - **Count of indexing job failures**: The number of indexing jobs that failed. Repositories associated with these indexing jobs could potentially show incomplete results until subsequent indexing jobs for the same repositories have patched the failed indexing.<p />
+
+<a name="index-update2"></a>
+### Check indexing status for TFS 2017 Update 2
+
+To check the indexing status after Search is configured, or after the extension is installed for a collection:
+
+1. Execute the **ExtensionInstallIndexingStatus.ps1** script with administrative privileges. 
+   You will be prompted to enter:
+
+   - The SQL server instance name where the TFS configuration database resides.
+   - The name of the TFS collection database.
+   - The name of the TFS configuration database.
+   - The name of the collection.
+   - The number of previous days to check indexing status.<p />
+ 
+1. Check the following outputs:
+
+   - **Collection indexing was triggered successfully**: Indicates that 
+     indexing is in progress. If it is displayed, check the following outputs.
+     If it is not displayed, go to step 3 below. 
+
+   - **Repositories completed indexing**: The number of repositories for which indexing has completed and are searchable.
+    
+   - **Status of repositories currently indexing**: A list of the names of all the repositories that are still being indexed and are partially searchable.<p />
+ 
+1. It takes some time for indexing to complete. Execute the **RecentIndexingActivity.ps1** script at intervals to check indexing progress. This script takes the same parameters as the **ExtensionInstallIndexingStatus.ps1** script along with an additional EntityType parameter.
+
+   - **Repositories completed fresh indexing**: The number of repositories for which indexing has completed within the specified time interval.
+
+   - **Count of repositories with fresh indexing in progress**: The number of repositories for which indexing has not yet completed. These repositories are still being indexed and are partially searchable.
+
+   - **Repositories completed continuous indexing**: The number of commits processed in the specified time interval. The number may not exactly match the total number of pushes to the repository because merges are committed as they are indexed.
+
+   - **Count of repositories with continuous indexing in progress**: The number of repositories for which the commits are still being processed. These repositories will show incomplete results until indexing is completed.<p />
+
+   - **Count of indexing job failures**: The number of indexing jobs which failed. Repositories associated with these indexing jobs could potentially show incomplete results until subsequent indexing jobs for the same repositories have patched the failed indexing.<p />
 
 <a name="pause-index"></a>
 ### Pause indexing
@@ -447,7 +488,7 @@ with administrative privileges. You will be prompted to enter:
 * The name of the TFS configuration database.
 * The type of re-indexing to execute. This can be one of the values:
   - **Git\_Repository**
-  - **Tfs\_Repository**
+  - **TFVC\_Repository**
 * The name of the collection.
 * The name of the repository to re-index.
 
@@ -494,7 +535,12 @@ install. This requires multiple steps, depending on whether Code Search is confi
 1. Remove the Elasticsearch service:
 
    1. Open **Command Prompt** as an administrator
-   1. Change directory: `cd "C:\Program Files\Microsoft Team Foundation Server 15.0\Search\ES\elasticsearch-1.7.1-SNAPSHOT\bin"`
+   1. Change directory: 
+
+      For TFS 2017 RTM, `cd "C:\Program Files\Microsoft Team Foundation Server 15.0\Search\ES\elasticsearch-1.7.1-SNAPSHOT\bin"`
+
+      For TFS 2017 Update1 and above, `cd "C:\Program Files\Microsoft Team Foundation Server 15.0\Search\ES\elasticsearch-2.4.1\bin"`
+      
    1. Remove the service: `"service.bat remove"`<p />
     
 1. Remove Search data:
@@ -525,7 +571,11 @@ your Team Foundation Server.
 
    1. Open **Powershell** as an administrator
    1. Go to the folder where **ConfigureTFSSearch.ps1** is installed along with the rest of the files required for a remote install of Search.
-   1. Run the script again with the remove option: `"ConfigureTFSSearch.ps1 -RemoveTFSSearch"`<p />
+   1. Run the script again with the remove option: 
+   
+      For TFS 2017 RTM, `"ConfigureTFSSearch.ps1 -RemoveTFSSearch"`<p />
+
+      For TFS 2017 Update1 and above, `"ConfigureTFSSearch.ps1 -remove"`<p />
   
 <a name="limit-tfs"></a>
 ## Limitations of Search in Team Foundation Server
