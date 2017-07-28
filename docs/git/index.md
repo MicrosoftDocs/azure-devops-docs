@@ -12,10 +12,6 @@ ms.date: 07/20/2017
 
 # Git documentation for Team Services and TFS
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
-
-**!!! PLACEHOLDER CONTENT - TO BE REDONE AS YML  !!!** 
-
 Use Git repos to host and collaborate on your code using Team Services or Team Foundation Server.  
 
 ## 5-Minute Quickstarts 
