@@ -21,13 +21,6 @@ efficient manner.
 
 ![Test with Visual Studio Team Services and Team Foundation Server](_img/continuous-testing/test-types.png)
 
-**Scenarios and capabilities:**
-
-* [Maintain app quality](#maintain-quality)
-* [Test types and frameworks](#test-frameworks)
-* [Analytics and reporting](#analytics-reporting)
-* [Advanced DevOps practices](#devops-practice)
-
 <a name="maintain-quality"></a>
 ## Maintain quality and find problems as you develop
 

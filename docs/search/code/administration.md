@@ -189,7 +189,7 @@ Consider the following when configuring Search:
   from accidental or malicious modification or deletion, and configure appropriate 
   [security settings](#secure-search) for the service.
 
-* When configuring Search for a TFS server with **multiple ATs**, make sure Search is installed on a [separate server](#separate-server). After Search is installed 
+* When configuring Search for a TFS server with **multiple application tiers (ATs)**, make sure Search is installed on a [separate server](#separate-server). After Search is installed 
   on the remote server, use the Configuration wizard on any one of the ATs to link the search instance with your TFS instance. When unconfiguring Search in future 
   you must use the Configuration wizard on the same AT where configuration was done.
 
