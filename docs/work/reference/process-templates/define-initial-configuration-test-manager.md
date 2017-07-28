@@ -83,7 +83,7 @@ The names of the file, the folder, and the plug-in for the default process templ
   
     -   Firefox 3.0  
   
- After the project is created, you can modify these variables and create other variables. For more information, see [Test configurations: specifying test platforms](../../../test/manual-exploratory-testing/test-different-configurations.md).  
+ After the project is created, you can modify these variables and create other variables. For more information, see [Test configurations: specifying test platforms](../../../manual-test/test-different-configurations.md).  
   
  The **TestVariable** element must be encapsulated within its corresponding container element: **TestVariables**. You use the following syntax structure for these elements:  
   
@@ -120,7 +120,7 @@ The names of the file, the folder, and the plug-in for the default process templ
   
 <a name="TestConfigurations"></a> 
 ##  Define test configurations  
- You use the **TestConfiguration** and **TestVariable** elements to define test configurations that combine one or more test configuration variables. One default configuration is defined in the testconfiguration.xml file: Windows Vista and Internet Explorer 7.0. After the project is created, you can delete these configurations and create other configurations. For more information, see [Test configurations: specifying test platforms](../../../test/manual-exploratory-testing/test-different-configurations.md).  
+ You use the **TestConfiguration** and **TestVariable** elements to define test configurations that combine one or more test configuration variables. One default configuration is defined in the testconfiguration.xml file: Windows Vista and Internet Explorer 7.0. After the project is created, you can delete these configurations and create other configurations. For more information, see [Test configurations: specifying test platforms](../../../manual-test/test-different-configurations.md).  
   
  You must enscapsulate the **TestConfiguration** element within its corresponding container element: **TestConfigurations**. You use the following syntax structure for these elements:  
   

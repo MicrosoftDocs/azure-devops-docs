@@ -130,7 +130,7 @@ The following table describes the measures in the Run Coverage measure group. By
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
-|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [Get started with continuous testing](../../test/continuous-testing/getting-started/getting-started-with-continuous-testing.md).|  
+|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [Get started with continuous testing](../../build-release/test/getting-started-with-continuous-testing.md).|  
 |Build|Build Definition Name|The name that is assigned to the build definition for which a build was run.|  
 ||Build ID|The number that is assigned to the build. Each time that a particular build definition is run, the **Build ID** is incremented by 1.|  
 ||Build Name|The name or expression that uniquely identifies a build. For more information, see [build definition options](../../build-release/define/options.md).|  
@@ -144,7 +144,7 @@ The following table describes the measures in the Run Coverage measure group. By
 ##  <a name="tracking"></a> Required activities  
  To create reports that contain code churn and code coverage data, team members should review the information in the following topics:  
   
--   [Get started with continuous testing](../../test/continuous-testing/getting-started/getting-started-with-continuous-testing.md)  
+-   [Get started with continuous testing](../../build-release/test/getting-started-with-continuous-testing.md)  
 -   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)  
   
 -   [Configure unit tests by using a .runsettings file](https://msdn.microsoft.com/library/jj635153.aspx)  

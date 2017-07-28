@@ -62,6 +62,6 @@ To record audio as part of a feedback or testing session on a remote machine tha
      You must restart you client in order for it to register the audio settings.  
   
 ## Related notes
- [Exploratory testing](../../test/manual-exploratory-testing/getting-started/perform-exploratory-tests.md)   
- [Run your tests](../../test/manual-exploratory-testing/getting-started/run-manual-tests.md)   
+ [Exploratory testing](../../manual-test/getting-started/perform-exploratory-tests.md)   
+ [Run your tests](../../manual-test/getting-started/run-manual-tests.md)   
  [Provide feedback using the Microsoft Feedback Manager](../connect/give-feedback.md)

@@ -1,4 +1,4 @@
 ---
-redirect_url: /docs/test/manual-exploratory-testing/index
+redirect_url: /docs/manual-test/index
 ---
 

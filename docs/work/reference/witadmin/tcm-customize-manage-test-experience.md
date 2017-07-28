@@ -36,7 +36,7 @@ cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE
 On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles%**.  
 
 
-Also, you can use `tcm` command options to [copy and clone test suites and test cases](../../../test/manual-exploratory-testing/mtm/copying-and-cloning-test-suites-and-test-cases.md).  
+Also, you can use `tcm` command options to [copy and clone test suites and test cases](../../../manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md).  
   
  **Requirements**  
   

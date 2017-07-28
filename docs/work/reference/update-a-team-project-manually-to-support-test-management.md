@@ -153,7 +153,7 @@ The following steps provide support for the test experience available with TFS 2
   
  After a successful data migration, all test management data should be available for use. For more information about this utility, see [TFSConfig command, TCM](../../setup-admin/tfs/command-line/tfsconfig-cmd.md#tcm).  
   
- For information about how to access the new WIT-based test plans and test suites in the web portal, see [Create a test plan](../../test/manual-exploratory-testing/getting-started/create-a-test-plan.md).
+ For information about how to access the new WIT-based test plans and test suites in the web portal, see [Create a test plan](../../manual-test/getting-started/create-a-test-plan.md).
 
 ## Related notes
 - [Manage TFS server configuration with TFSConfig](../../setup-admin/tfs/command-line/tfsconfig-cmd.md)

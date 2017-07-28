@@ -399,7 +399,7 @@ Adds a configurable tile to display the summary of a shared query results.</p>
 <div style="float:left;width:300px;margin:3px;">
 
 <p>Configurable widget that you can use to track quality continuously from a build or release definition.</p> 
-<p>To learn more, see [Associate automated test results with requirements](../test/continuous-testing/associate-automated-results-with-requirements.md). </p>
+<p>To learn more, see [Associate automated test results with requirements](../build-release/test/associate-automated-results-with-requirements.md). </p>
 </div>
 
 <div style="clear:left;font-size:100%">
@@ -420,7 +420,7 @@ Adds a configurable tile to display the summary of a shared query results.</p>
 
 <p>From the configuration dialog, select the build whose test results you'd like to monitor. Then, choose the type of chart you want displayed. You can track the trend of test duration by adding an optional line chart. </p>
 
-<p>To learn more about creating charts for tracking test results, see [Track your test results](../test/manual-exploratory-testing/getting-started/track-test-status.md).</p> 
+<p>To learn more about creating charts for tracking test results, see [Track your test results](../manual-test/getting-started/track-test-status.md).</p> 
 </div>
 
 <div style="clear:left;font-size:100%">

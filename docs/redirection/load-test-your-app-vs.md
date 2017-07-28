@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/test/performance-testing/performance-testing
+redirect_url: /docs/load-test/performance-testing
 ---

@@ -266,8 +266,8 @@ To learn more about tracking work, see:
 - [Pre-populate work items using work item templates](../productivity/work-item-template.md)
 
 To learn more about managing test artifacts, see: 
-- [Create a test plan](../../test/manual-exploratory-testing/getting-started/create-a-test-plan.md)
-- [Control how long to keep test results](../../test/manual-exploratory-testing/getting-started/how-long-to-keep-test-results.md) 
+- [Create a test plan](../../manual-test/getting-started/create-a-test-plan.md)
+- [Control how long to keep test results](../../manual-test/getting-started/how-long-to-keep-test-results.md) 
 
 
 

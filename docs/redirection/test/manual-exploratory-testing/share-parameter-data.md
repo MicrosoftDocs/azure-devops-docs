@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/test/manual-exploratory-testing/getting-started/perform-exploratory-tests
+redirect_url: /docs/manual-test/getting-started/perform-exploratory-tests
 ---

@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/test/manual-exploratory-testing/getting-started/create-test-cases
+redirect_url: /docs/manual-test/getting-started/create-test-cases
 ---

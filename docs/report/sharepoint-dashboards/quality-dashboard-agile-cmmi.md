@@ -30,7 +30,7 @@ You can use the Quality dashboard to obtain an overview of progress occurring in
  ![Product Quality Dashboard](_img/procguid_dashboard_productquality.png "ProcGuid_Dashboard_ProductQuality")  
   
 > [!NOTE]
->  The **Test Plan Progress** report is available only when the team [creates test plans](../../test/manual-exploratory-testing/getting-started/create-test-cases.md) and runs tests.  
+>  The **Test Plan Progress** report is available only when the team [creates test plans](../../manual-test/getting-started/create-test-cases.md) and runs tests.  
 >   
 >  Progress, build, and code charts, reports ![Step 1](_img/procguid_1.png "ProcGuid_1") through ![Step 6](_img/procguid_6a.png "ProcGuid_6a"), do not appear when the data warehouse for the team project is not available.  
   
@@ -57,7 +57,7 @@ You can use the Quality dashboard to obtain an overview of progress occurring in
   
 -   Define test cases and user stories, and create **Tested By** links between test cases and user stories.  
   
--   [Define test plans](../../test/manual-exploratory-testing/getting-started/create-test-cases.md), and assign test cases to test plans.  
+-   [Define test plans](../../manual-test/getting-started/create-test-cases.md), and assign test cases to test plans.  
   
 -   For manual tests, mark the results of each validation step in the test case as passed or failed.  
   
@@ -93,11 +93,11 @@ You can use the Quality dashboard to obtain an overview of progress occurring in
   
 -   **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.  
   
-     For more information, see [Set up continuous testing for your builds](../../test/continuous-testing/set-up-continuous-testing-builds.md).
+     For more information, see [Set up continuous testing for your builds](../../build-release/test/set-up-continuous-testing-builds.md).
   
 -   **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.  
   
-     For more information, see [Run tests in your build process](../../test/continuous-testing/test-build.md).  
+     For more information, see [Run tests in your build process](../../build-release/test/test-build.md).  
   
 -   **Run builds regularly**. You can run builds at regular intervals or after every check-in. You can create regular builds when you use the schedule trigger.  
   

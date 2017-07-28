@@ -138,7 +138,7 @@ You can learn more about each of the features you have access to from the follow
  <li style="margin-bottom:2px">[Build](../../build-release/overview.md)</li>
  <li style="margin-bottom:2px">[Administer account](#administer-account)<sup> 7</sup></li>
  <li style="margin-bottom:2px">[Advanced home page](../../reference/markdown-guidance.md)<sup> 8</sup></li>
- <li style="margin-bottom:2px">[Web-based test execution](../../test/manual-exploratory-testing/getting-started/run-manual-tests.md)
+ <li style="margin-bottom:2px">[Web-based test execution](../../manual-test/getting-started/run-manual-tests.md)
  <li style="margin-bottom:2px">[Create and manage releases](../../build-release/actions/create-deploy-releases.md)<sup> 4</sup></li>
  <li style="margin-bottom:2px">[Author release definitions](../../build-release/concepts/definitions/release/index.md)<sup> 4</sup></li>
  <li style="margin-bottom:2px">[Advanced portfolio management](../backlogs/define-features-epics.md)</li>
@@ -150,7 +150,7 @@ You can learn more about each of the features you have access to from the follow
 
 ### Advanced access (TFS 2017, TFS 2015, TFS 2013) 
 <ul style="padding-left:30px;font-size:90%">
- <li style="margin-bottom:2px">[Web-based test case management](../../test/manual-exploratory-testing/getting-started/create-a-test-plan.md)<sup> 9</sup></li>
+ <li style="margin-bottom:2px">[Web-based test case management](../../manual-test/getting-started/create-a-test-plan.md)<sup> 9</sup></li>
 </ul>
 <blockquote>Advanced access will be deprecated in future versions of TFS.</blockquote>
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">VS Enterprise (TFS 2017)</p>

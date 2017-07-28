@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/test/performance-testing/getting-started/get-performance-data-for-load-tests
+redirect_url: /docs/load-test/get-performance-data-for-load-tests
 ---

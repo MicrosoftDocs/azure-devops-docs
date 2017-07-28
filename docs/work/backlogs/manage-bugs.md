@@ -111,7 +111,7 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 <p>[Integrated in Build](../track/build-test-integration.md)</p>
 </td>
 <td>
-<p>When Test Manager creates bugs, it automatically populates **System Info** and **Found in Build** with information about the software environment and build where the bug occurred. To learn more about defining the software environments, see [Test different configurations](../../test/manual-exploratory-testing/test-different-configurations.md).</p>
+<p>When Test Manager creates bugs, it automatically populates **System Info** and **Found in Build** with information about the software environment and build where the bug occurred. To learn more about defining the software environments, see [Test different configurations](../../manual-test/test-different-configurations.md).</p>
 <p>When you resolve the bug, use **Integrated in Build** to indicate the name of the build that incorporates the code that fixes the bug. </p>
 <p>**On-premises TFS only:** To access a drop-down menu of all builds that have been run, you can update the ```FIELD``` definitions for Found in Build and Integrated in Build to reference a global list. The global list is automatically updated with each build that is run. To learn more, see [Query based on build and test integration fields](../track/build-test-integration.md)<. </p>
 <p>For information about how to define build names, see [build number format options](../../build-release/define/options.md). </p>
@@ -179,7 +179,7 @@ Add and review comments made about the work being performed by going to the disc
 ## Capture bugs using test tools
 
 You can create bugs during test sessions using one of the following tools: 
-- **Test & Feedback extension**: see [Exploratory testing with the Test & Feedback extension](../../test/manual-exploratory-testing/connected-mode-exploratory-testing.md)   
+- **Test & Feedback extension**: see [Exploratory testing with the Test & Feedback extension](../../manual-test/connected-mode-exploratory-testing.md)   
 - **Test Runner**: see [Update an existing bug while using Test Runner](https://msdn.microsoft.com/library/dd286731.aspx).  
 
 
@@ -343,7 +343,7 @@ To track your bugs and integrate with other resources available to you, see thes
 - [UserVoice](../../marketplace/integrate/service-hooks/services/uservoice.md)  
 - [Zendesk](../../marketplace/integrate/service-hooks/services/zendesk.md)  
 - [Developer testing tools scenarios and capabilities](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)  
-- [Run tests for desktop apps](../../test/manual-exploratory-testing/getting-started/run-manual-tests.md#run-desktop)  
+- [Run tests for desktop apps](../../manual-test/getting-started/run-manual-tests.md#run-desktop)  
   
 ### Customize the bug form
 

@@ -38,7 +38,7 @@ like internal or pre-release apps, staging or preproduction deployments. To lear
 [Testing private and intranet applications using cloud-based load testing](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/23/testing-privateintranet-applications-using-cloud-based-load-testing/).
 
 Or, you can 
-[run a load test locally using Visual Studio](../test/performance-testing/run-performance-tests-app-before-release.md).
+[run a load test locally using Visual Studio](../load-test/run-performance-tests-app-before-release.md).
 
 ### Q: What are virtual users?
 
