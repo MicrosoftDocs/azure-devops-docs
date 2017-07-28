@@ -63,7 +63,7 @@ In the dialog that prompts to **Create release definition**, select **Yes**.
 
 In the **Create release definition** wizard, select the **IIS Website and SQL Database deployment** template, and click **Apply**.
 
-![Screenshot showing IIS template](../../apps/_img/aspnet-core-to-azure-windows-vm/cicd-get-started-iis-template.png)
+![Screenshot showing IIS template](../../apps/_img/aspnet-core-to-windows-vm/cicd-get-started-iis-template.png)
 
 Click **Tasks**, and then select the **SQL Deployment** phase. Click 'X' to delete this phase. We won't be deploying a database in this quickstart.
 
@@ -73,7 +73,7 @@ Select the **IIS Web App Manage** task; click 'X' to delete this task. We will n
 
 Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Leave all the other default settings.
 
-![Screenshot showing release definition](../../apps/_img/aspnet-core-to-azure-windows-vm/cicd-get-started-release-definition.png)
+![Screenshot showing release definition](../../apps/_img/aspnet-core-to-windows-vm/cicd-get-started-release-definition.png)
 
 [!INCLUDE [temp](../../apps/_shared/set-up-cd-3.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: CI/CD of ASP.NET Core application to Azure web app
+title: Build and Deploy an ASP.NET Core app to an Azure web app | VSTS Quickstart
 description: Set up a continuous integration (CI) build for your ASP.NET Core application, and then a continuous deployment (CD) release to Azure web app using Visual Studio Team Services
 services: vsts
 documentationcenter: ''
@@ -18,13 +18,17 @@ ms.author: alewis
 ms.custom: mvc
 ---
 
-# CI/CD of ASP.NET Core app to Azure web app
+# CI/CD of an ASP.NET Core app to an Azure web app
 
 Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your
 ASP.NET Core apps. This quickstart shows how to set up CI and CD to deploy an ASP.NET Core application to an Azure web app.
 You will use the Azure portal to configure a basic CI/CD pipeline. You will then use the VSTS portal to view and extend the CI/CD pipeline.
 
-_TODO: Architecture diagram_
+![A typical release pipeline for web applications](../get-started/_img/ci-cd/part-1/ReleasePipeline.png)
+
+With your CI/CD processes in place, you'll push a change into your team's git repo and the results will automatically show up on your site.
+
+![Screenshot showing ASP.NET Core web app](_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
 [!INCLUDE [prerequisites](_shared/prerequisites.md)]
 * Have an Azure subscription. If you don't have an Azure subscription, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
@@ -40,7 +44,7 @@ _TODO: Architecture diagram_
    ![Starting Continuous Delivery configuration](_img/aspnet-core-to-azure-webapp/continuous-delivery-intro.png)
 
 1. Select **Choose repository** and select **Visual Studio Team Services** for the code repository. Select the project, repository, and branch into which your imported the sample code. When you're done, choose **OK**.
- 
+
    ![Configuring the source code repository](_img/aspnet-core-to-azure-webapp/continuous-delivery-repository.png)
 
 1. Select **Configure Continuous Delivery** and choose **ASP.NET Core**. When you're done, choose **OK**.
@@ -127,4 +131,4 @@ _TODO: Architecture diagram_
    ![Viewing the updated app](_img/aspnet-core-to-azure-webapp/updated-app.png)
 
 You have now seen how easy it is to create a continuous integration and continuous delivery pipeline by using Azure Continuous Delivery.
-In later quickstarts and tutorials you'll see how you can tailor the process to create more complex CI/CD pipelines, and integrate with other types of apps and deployment environments. 
+In later quickstarts and tutorials you'll see how you can tailor the process to create more complex CI/CD pipelines, and integrate with other types of apps and deployment environments.

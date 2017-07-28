@@ -26,7 +26,7 @@ an ASP.NET Core app
 to an Azure web app. 
 You create the web app using the Azure CLI, then set up CI/CD in Team Services.
 
-![Screenshot showing ASP.NET Core web app](../../apps/_img/aspnet-core-to-azure-windows-vm/cicd-get-started-dotnetcore-sample.png)
+![Screenshot showing ASP.NET Core web app](../../apps/_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
 [!INCLUDE [temp](../../get-started/_shared/vsts-and-azure-setup.md)]
 
@@ -62,7 +62,7 @@ In the right panel, select **ASP.NET Core**, and then click **Apply**.
 
 Navigate to the **Code** hub in the VSTS portal. Navigate to **Views/Home/Index.cshtml** file. Make the following simple change to that file by selecting the edit action.
 
-![Screenshot showing update to code](../../apps/_img/aspnet-core-to-azure-windows-vm/cicd-get-started-dotnetcore-update-code.png)
+![Screenshot showing update to code](../../apps/_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-update-code.png)
 
 Add the following line of text above the carousel display in the page:
 ```
