@@ -11,17 +11,6 @@ ms.date: 07/04/2017
 
 # Q &amp; A for load testing
 
-* [General](#qageneral)
-* [Visual Studio](#qavisualstudio)
-* [Azure portal](#qaazure)
-* [Setting up tests](#set-up-tests)
-* [Apache JMeter tests](#jmeter-tests)
-* [Running and monitoring tests](#run-monitor-tests)
-* [Recording and replaying tests](#recordreplay)
-* [Application Insights](#qaappinsights)
-* [Troubleshooting](#troubleshooting)
-* [Errors](#errors)
-
 <a name="qageneral"></a>
 ## General Q &amp; A
 
