@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/test/lab-management/test-machines/install-configure-test-agents
+redirect_url: https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents
 ---

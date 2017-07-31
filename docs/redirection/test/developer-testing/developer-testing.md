@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/test/developer-testing/index
+redirect_url: https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios
 ---
