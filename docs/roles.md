@@ -96,7 +96,7 @@ Responsible for project level settings, including:
 - [Project permissions and repository security](setup-admin/permissions.md)
 - [Customize work tracking objects (TFS only)](work/customize/customize-work.md) 
 - [Build agents, pools, and service endpoints](build-release/overview.md) 
-- [Test](test/manual-exploratory-testing/getting-started/how-long-to-keep-test-results.md) and [release](build-release/concepts/policies/retention.md) retention policies 
+- [Test](manual-test/getting-started/how-long-to-keep-test-results.md) and [release](build-release/concepts/policies/retention.md) retention policies 
  
 
 ### Project collection administrators
