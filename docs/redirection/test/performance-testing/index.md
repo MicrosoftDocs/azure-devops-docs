@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/load-test/
+redirect_url: /vsts/load-test/
 ---

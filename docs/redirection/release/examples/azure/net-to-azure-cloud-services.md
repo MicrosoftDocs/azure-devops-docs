@@ -1,4 +1,4 @@
 ---
-redirect_url: /docs/build-release/apps/aspnet/cd/deploy-cloudservice-cloudservice
+redirect_url: /vsts/build-release/apps/aspnet/cd/deploy-cloudservice-cloudservice
 ---
 

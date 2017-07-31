@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/manual-test/collect-diagnostic-data
+redirect_url: /vsts/manual-test/collect-diagnostic-data
 ---

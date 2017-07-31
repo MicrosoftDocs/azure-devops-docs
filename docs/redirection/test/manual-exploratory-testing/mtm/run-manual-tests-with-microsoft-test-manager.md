@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/manual-test/mtm/run-manual-tests-with-microsoft-test-manager
+redirect_url: /vsts/manual-test/mtm/run-manual-tests-with-microsoft-test-manager
 ---

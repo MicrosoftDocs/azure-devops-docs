@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/manual-test/getting-started/user-acceptance-testing
+redirect_url: /vsts/manual-test/getting-started/user-acceptance-testing
 ---

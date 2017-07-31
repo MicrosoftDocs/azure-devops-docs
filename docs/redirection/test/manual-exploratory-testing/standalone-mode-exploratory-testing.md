@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/manual-test/standalone-mode-exploratory-testing
+redirect_url: /vsts/manual-test/standalone-mode-exploratory-testing
 ---

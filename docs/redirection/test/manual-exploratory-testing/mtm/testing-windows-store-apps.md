@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/manual-test/mtm/testing-windows-store-apps
+redirect_url: /vsts/manual-test/mtm/testing-windows-store-apps
 ---

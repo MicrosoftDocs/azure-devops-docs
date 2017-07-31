@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/test/review-automated-test-results-after-build
+redirect_url: /vsts/build-release/test/review-automated-test-results-after-build
 ---

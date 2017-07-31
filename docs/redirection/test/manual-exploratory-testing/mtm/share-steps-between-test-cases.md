@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/manual-test/mtm/share-steps-between-test-cases
+redirect_url: /vsts/manual-test/mtm/share-steps-between-test-cases
 ---

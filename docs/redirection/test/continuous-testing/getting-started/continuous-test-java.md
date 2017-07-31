@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/test/continuous-test-java
+redirect_url: /vsts/build-release/test/continuous-test-java
 ---

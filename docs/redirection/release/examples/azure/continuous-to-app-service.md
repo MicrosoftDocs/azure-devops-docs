@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/get-started/aspnet-4-ci-cd-azure-automatic
+redirect_url: /vsts/build-release/get-started/aspnet-4-ci-cd-azure-automatic
 ---

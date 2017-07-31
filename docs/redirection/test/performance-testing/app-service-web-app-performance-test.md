@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/load-test/app-service-web-app-performance-test
+redirect_url: /vsts/load-test/app-service-web-app-performance-test
 ---

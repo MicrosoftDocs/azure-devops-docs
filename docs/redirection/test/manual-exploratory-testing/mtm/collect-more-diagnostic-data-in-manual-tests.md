@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests
+redirect_url: /vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests
 ---

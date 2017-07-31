@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/load-test/getting-started-with-performance-testing
+redirect_url: /vsts/load-test/getting-started-with-performance-testing
 ---

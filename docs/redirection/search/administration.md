@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/search/code/administration
+redirect_url: /vsts/search/code/administration
 ---

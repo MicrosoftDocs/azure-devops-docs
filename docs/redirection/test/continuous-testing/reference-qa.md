@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/test/reference-qa
+redirect_url: /vsts/build-release/test/reference-qa
 ---

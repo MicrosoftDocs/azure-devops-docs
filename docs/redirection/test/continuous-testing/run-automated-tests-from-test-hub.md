@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/test/run-automated-tests-from-test-hub
+redirect_url: /vsts/build-release/test/run-automated-tests-from-test-hub
 ---
