@@ -10,7 +10,7 @@ ms.date: 08/04/2016
 ---
 
 # Service hooks in Team Services
-Using the [Subscriptions](../api/hooks/subscriptions.md) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event 
+Using the [Subscriptions](https://review.docs.microsoft.com/en-us/rest/api/vsts/servicehooks/?branch=master) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event 
 occurs in a team project. For example, you can create a subscription to notify your service when a build fails.
 
 Supported events:

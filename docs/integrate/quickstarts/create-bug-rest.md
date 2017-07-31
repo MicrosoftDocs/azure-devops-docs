@@ -74,4 +74,4 @@ public void CreateBug()
 }
 ```
 
-Contracts used: [WorkItem](../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md), [JSONPatchDocument](../extend/reference/client/api/vss/webapi/Contracts/jsonpatchdocument.md), [JSONPatchOperation](../extend/reference/client/api/vss/webapi/Contracts/jsonpatchoperation.md)
+Contracts used: [WorkItem](../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md), [JSONPatchDocument](../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchdocument.md), [JSONPatchOperation](../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchoperation.md)

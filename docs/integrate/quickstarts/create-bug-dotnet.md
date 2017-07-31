@@ -14,7 +14,7 @@ ms.custom: get-started-article
 
 Creating a new bug (or any work item) is pretty straight forward. You just need to set the field values and send a JSON-Patch object to the REST endpoint.
 
-You can view the sample REST endpoint [here](./api/wit/work-items.md#create-work-item).
+You can view the sample REST endpoint [here](https://review.docs.microsoft.com/en-us/rest/api/vsts/workitemtracking/createworkitem?branch=master).
 
 There are a few things happening in the code sample below:
 0. Create an array of objects to set the field values
@@ -82,4 +82,4 @@ public void CreateBug()
 }
 ```
 
-Contracts used: [WorkItem](../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md), [JSONPatchDocument](../extend/reference/client/api/vss/webapi/Contracts/jsonpatchdocument.md), [JSONPatchOperation](../extend/reference/client/api/vss/webapi/Contracts/jsonpatchoperation.md)
+Contracts used: [WorkItem](../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md), [JSONPatchDocument](../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchdocument.md), [JSONPatchOperation](../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchoperation.md)

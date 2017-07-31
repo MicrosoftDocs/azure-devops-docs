@@ -16,7 +16,7 @@ ms.date: 08/04/2016
 Extensions allow you to add new features to or integrate existing tools into Visual Studio. An extension can be as simple as adding grid lines to show indentation levels in the editor or as complex as a suite of tools specific to how your team works. There are thousands of extensions already out there and available through the Marketplace; however, this Beginner’s Guide to Extensions will show you how to create your own.
 
 >**Note:**
->You can also [Create Extensions for Team Services](../../extend/overview.md).
+>You can also [Create Extensions for Team Services](../../../extend/overview.md).
 
 ## How do I start?
 
