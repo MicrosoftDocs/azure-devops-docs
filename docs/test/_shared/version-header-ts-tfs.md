@@ -1,1 +1,0 @@
-**Team Services | TFS 2017 | TFS 2015**  
