@@ -178,3 +178,4 @@ http://<publicIpAddress>`
 ## Next steps
 
 _TODO: A screenshot of the build tasks and maybe also a screenshot of the release definition. Links to topics that cover possible next steps. Could be app-type specific next steps or general ci/cd changes supported by other tutorials and how-to topics._
+
