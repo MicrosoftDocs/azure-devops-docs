@@ -128,7 +128,7 @@ You can check out the [REST API overview page](https://visualstudio.com/integrat
 
 There are .NET client libraries available for .NET developers building Windows apps and services that integrate with Team Services. 
 
-Explore the [.NET client library overview](get-started/client-libraries/dotnet.md) for the different packages and samples.
+Explore the [.NET client library overview](../integrate/get-started/client-libraries/dotnet.md) for the different packages and samples.
 
 <a name ="extensions"/>
 

@@ -65,7 +65,7 @@
     href: ./rest-api-overview.md
     items:
     - name: Reference repo
-      href: https://review.docs.microsoft.com/en-us/rest/vsts/api/build-release/addbuildtag?branch=master
+      href: https://review.docs.microsoft.com/en-us/rest/api/vsts/?branch=master
     - name: Accounts and profiles
       items:
       - name: Overview
