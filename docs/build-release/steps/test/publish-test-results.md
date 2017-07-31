@@ -51,7 +51,7 @@ The build agent must have the following capabilities:
 
 ## More Information
 
-* [Test apps early and often](../../../manual-test/index.md)
+* [Testing overview](../../../manual-test/index.md)
 * [Continuous testing scenarios and capabilities](../../manual-test/index.md)
 
 ## Related tasks

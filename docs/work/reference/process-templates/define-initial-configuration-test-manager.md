@@ -16,7 +16,7 @@ ms.date: 02/24/2017
 
 By using the plug-in for Microsoft Test Manager, you can define a team project's initial test management setup. You can define settings such as test variables and test configurations that combine test variables. For example, you can define the hardware platform, the operating system, the browser version, or another type of hardware or software to be used for testing, and then you can define test configurations that combine these variables. In addition, you can customize the default test settings and the list of valid test resolution states. After you create a team project, you can modify each test configuration through Microsoft Test Manager except for test resolution states.  
   
- The test management plug-in file is provided with the default process templates. Microsoft Test Manager is available with Visual Studio Ultimate (2015), Visual Studio Enterprise, and Visual Studio Test Professional. For more information, see [Test apps early and often](../../../manual-test/index.md).  
+ The test management plug-in file is provided with the default process templates. Microsoft Test Manager is available with Visual Studio Ultimate (2015), Visual Studio Enterprise, and Visual Studio Test Professional. For more information, see [Testing overview](../../../manual-test/index.md).  
   
 > [!NOTE]  
 >  You can customize the initial security configuration for test activities by assigning them in the GroupsandPermissions.xml plug-in file. For more information, see [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md).  
@@ -206,5 +206,5 @@ You must encapsulate the **TestSetting** element within its corresponding contai
 ```  
   
 ## Related notes  
-- [Test apps early and often](../../../manual-test/index.md)  
+- [Testing overview](../../../manual-test/index.md)  
 - [Customize and manage the test experience](../witadmin/tcm-customize-manage-test-experience.md)
