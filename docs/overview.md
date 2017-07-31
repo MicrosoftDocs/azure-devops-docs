@@ -21,7 +21,7 @@ ms.date: 08/04/2016
   <div class="row">
     <div class="col-sm-4 col-md-3 col-md-offset-2 item">
       <div class="title">
-        <a href="build/overview">Build &amp; Release</a>
+        <a href="build-release/overview.md">Build &amp; Release</a>
         <div class="desc">
           Implement continuous integration and continuous deployment 
 	  to reliably deliver quality apps to your customers.
