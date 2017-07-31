@@ -11,12 +11,10 @@ ms.date: 08/04/2016
 ---
 
 # Get started with Git from the command line
-#### Team Services | TFS 2015 & 2017
 
 Share your code in a Team Services Git repo using the command line.
 
-> The instructions below use the default bash shell used on Linux and Mac OS X, but the Git commands will
-work in any shell.
+> The instructions below use the default bash shell used on Linux and Mac OS X, but the Git commands will work in any shell, including Git Bash from Git for Windows.
 
 ## Download and install Git
 

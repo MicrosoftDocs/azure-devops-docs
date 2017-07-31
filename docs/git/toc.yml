@@ -1,7 +1,6 @@
 - name: Git Documentation
   href: index.md
 - name: Overview
-  href: overview.md
   items:
   - name: Learn about Git
     href: tutorial/gitworkflow.md
@@ -21,7 +20,7 @@
     href: share-your-code-in-git-eclipse.md
   - name: Import repo - Web
     href: import-git-repository.md
-- name: Tutorial
+- name: Tutorials
   href: gitquickstart.md
   items:
   - name: 1 - Create a new repo
