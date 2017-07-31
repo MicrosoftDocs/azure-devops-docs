@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/manual-test/connected-mode-exploratory-testing
+redirect_url: /vsts/manual-test/connected-mode-exploratory-testing
 ---

@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/test/getting-started-with-continuous-testing
+redirect_url: /vsts/build-release/test/getting-started-with-continuous-testing
 ---

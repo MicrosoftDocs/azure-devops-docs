@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/manual-test/mtm/guidance-mtm-usage
+redirect_url: /vsts/manual-test/mtm/guidance-mtm-usage
 ---

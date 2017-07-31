@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/test/associate-automated-results-with-requirements
+redirect_url: /vsts/build-release/test/associate-automated-results-with-requirements
 ---

@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/search/code/get-started
+redirect_url: /vsts/search/code/get-started
 ---

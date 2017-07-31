@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/test/
+redirect_url: /vsts/build-release/test/
 ---

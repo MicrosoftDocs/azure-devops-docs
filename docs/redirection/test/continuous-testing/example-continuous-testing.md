@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/test/example-continuous-testing
+redirect_url: /vsts/build-release/test/example-continuous-testing
 ---

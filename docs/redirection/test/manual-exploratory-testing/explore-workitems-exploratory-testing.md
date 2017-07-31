@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/manual-test/explore-workitems-exploratory-testing
+redirect_url: /vsts/manual-test/explore-workitems-exploratory-testing
 ---

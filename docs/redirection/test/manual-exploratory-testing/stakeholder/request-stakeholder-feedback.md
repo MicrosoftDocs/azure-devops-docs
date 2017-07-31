@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/manual-test/stakeholder/request-stakeholder-feedback
+redirect_url: /vsts/manual-test/stakeholder/request-stakeholder-feedback
 ---

@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/load-test/record-and-replay-cloud-load-tests
+redirect_url: /vsts/load-test/record-and-replay-cloud-load-tests
 ---

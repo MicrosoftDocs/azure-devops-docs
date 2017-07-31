@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/load-test/index
+redirect_url: /vsts/load-test/index
 ---

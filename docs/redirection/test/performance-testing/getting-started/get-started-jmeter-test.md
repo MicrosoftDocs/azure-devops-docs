@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/load-test/get-started-jmeter-test
+redirect_url: /vsts/load-test/get-started-jmeter-test
 ---

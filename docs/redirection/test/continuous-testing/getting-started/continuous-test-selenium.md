@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/test/continuous-test-selenium
+redirect_url: /vsts/build-release/test/continuous-test-selenium
 ---

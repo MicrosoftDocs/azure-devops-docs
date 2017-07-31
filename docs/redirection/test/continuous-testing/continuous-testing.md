@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/test/index
+redirect_url: /vsts/build-release/test/index
 ---

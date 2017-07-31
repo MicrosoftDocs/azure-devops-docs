@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/manual-test/insights-exploratory-testing
+redirect_url: /vsts/manual-test/insights-exploratory-testing
 ---

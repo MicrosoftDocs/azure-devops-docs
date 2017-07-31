@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/load-test/reference-qa
+redirect_url: /vsts/load-test/reference-qa
 ---

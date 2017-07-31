@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/manual-test/getting-started/track-test-status
+redirect_url: /vsts/manual-test/getting-started/track-test-status
 ---
