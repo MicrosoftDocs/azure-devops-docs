@@ -474,7 +474,7 @@ From the **Build & Release>Builds** and **Releases** pages, you can set permissi
 
 ## Test
 
-You can define and manage your builds and releases from the web portal, Test hub.  For an overview of test features and functions, see [Test apps early and often](../test/index.md).  
+You can define and manage your builds and releases from the web portal, Test hub.  For an overview of test features and functions, see [Testing overview](../manual-test/index.md).  
 
 You set test permissions at the team project level from the admin context Security page.  
 

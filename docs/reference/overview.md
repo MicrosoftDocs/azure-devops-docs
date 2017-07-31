@@ -31,7 +31,7 @@ ms.date: 03/02/2017
 <li style="margin-bottom:2px">[Agile tools](../work/overview.md)</li>
 <li style="margin-bottom:2px">[Dashboards and reports](../report/overview.md)</li>
 <li style="margin-bottom:2px">[Build](../build-release/overview.md)</li>
-<li style="margin-bottom:2px">[Test](../test/index.md)</li>
+<li style="margin-bottom:2px">[Test](../manual-test/index.md)</li>
 <li style="margin-bottom:2px">[Release management](../build-release/overview.md)</li>
 </ul>
 </div>

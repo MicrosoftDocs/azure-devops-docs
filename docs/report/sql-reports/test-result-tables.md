@@ -47,6 +47,6 @@ You can query for data about test results by using the FactTestResult table and 
 ## Related notes 
 -  [Test results](perspective-test-analyze-report-test-results.md)   
 -  [Test Management Reports](../excel/test-management-reports.md)   
--  [Test apps early and often](../../test/index.md)   
+-  [Testing overview](../../manual-test/index.md)   
 -  [Work Item Test Result tables](work-item-test-result-tables.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

@@ -281,7 +281,7 @@ The **Build & Release** hub supports defining and managing builds and releases t
 </div>
 
 <div style="float:left;width:150px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Test](../test/index.md)</p>
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Test](../manual-test/index.md)</p>
 <ul style="padding-left:40px">
 <li style="margin-bottom:2px">[Test plans](../manual-test/getting-started/create-a-test-plan.md)</li>
 <li style="margin-bottom:2px">[Parameters](../manual-test/repeat-test-with-different-data.md)</li>

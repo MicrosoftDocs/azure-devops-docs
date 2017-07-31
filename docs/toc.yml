@@ -19,7 +19,7 @@
   - name: Get started with CI/CD
     href: build-release/get-started/ci-cd-part-1.md
   - name: Get started testing
-    href: test/index.md
+    href: manual-test/index.md
   - name: Get started as a Stakeholder
     href: quickstart/get-started-stakeholder.md
 - name: Tutorials

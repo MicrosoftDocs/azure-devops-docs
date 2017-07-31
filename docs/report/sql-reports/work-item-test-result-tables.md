@@ -29,5 +29,5 @@ You can query for data about work items that are linked to test results by using
  [Test Result tables](test-result-tables.md)   
  [Current Work Item tables](table-reference-current-work-items.md)   
  [Test Management Reports](../excel/test-management-reports.md)   
- [Test apps early and often](../overview.md)   
+ [Testing overview](../overview.md)   
  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

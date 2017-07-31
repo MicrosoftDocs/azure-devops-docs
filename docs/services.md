@@ -84,7 +84,7 @@ The **Test** hub supports manual testing and product owners and business analyst
 - Browser-based test execution on any platform  
 - Real-time charts for tracking test activity.  
 
-To learn more, see [Test apps early and often](test/index.md). 			
+To learn more, see [Testing overview](manual-test/index.md). 			
 
 ## Additional collaboration services 
 
