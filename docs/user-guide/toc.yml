@@ -1,0 +1,26 @@
+- name: Get started
+  href: index.md
+- name: Overview
+- name: Quickstarts
+- name: Tutorials
+- name: How-to guides 
+- name: Concepts
+- name: Resources
+  items:
+  - name: "Marketplace, billing, and extensions"
+    href: ../marketplace/overview.md
+    items:
+    - name: Install an extension for Team Services
+      href: ../marketplace/get-vsts-extensions.md
+    - name: Request permissions for Team Services extensions
+      href: ../marketplace/request-vsts-extension.md
+    - name: Approve requests for Team Services extensions
+      href: ../marketplace/approve-vsts-extensions.md
+  - name: Account preferences
+    href: account-preferences.md
+  - name: Migrate from TFS to Team Services Tutorial
+    href: https://www.visualstudio.com/articles/migration-overview
+  - name: Integrate with other services
+    href: ../marketplace/integrate/service-hooks/get-started.md
+  - name: Technical articles
+    href: http://visualstudio.com/articles/overview
