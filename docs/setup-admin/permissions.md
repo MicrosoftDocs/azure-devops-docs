@@ -896,7 +896,7 @@ The following permissions are defined in Build. All of these can be set at both 
 | **Destroy builds** | Can delete builds from the **Deleted** tab. |
 | **Edit build definition** | Can save any changes to a build definition, including configuration variables, triggers, repositories, and retention policy. |
 | **Edit build quality** | Can add tags to a build. |
-| **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../../../build-release/define/triggers.md#gated). This does not apply to PR builds. |
+| **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../build-release/define/triggers.md#gated). This does not apply to PR builds. |
 | **Retain indefinitely** | Can toggle the retain indefinitely flag on a build. |
 | **Stop builds** | Can stop builds queued by other team members or by the system.  |
 | **View build definition** | Can view build definition(s). |
