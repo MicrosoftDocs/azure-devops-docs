@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/manual-test/index
+redirect_url: /vsts/manual-test/index
 ---
