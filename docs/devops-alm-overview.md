@@ -159,7 +159,7 @@ Prioritization of investments should be based on real-world usage patterns. Use 
 
 Help your team continuously deliver software at a faster pace and with lower risk, while improving efficiency and collaboration between all teams that participate in release processes. Set up continuous integration builds for your app that run with every check in. Multi-platform build agents support Android, iOS, Java, .NET, and other applications. Easily load test your apps and provision test environments. Track when the quality is sufficient to release to the customer.  
 
-[![Build your software](_img/overview/ov-devops-build.png)](build-release/define/build.md)[![Set up continuous testing](_img/overview/ov-devops-test.png)](test/continuous-testing/set-up-continuous-testing-builds.md)[![Create a release](_img/overview/ov-devops-release.png)](build-release/actions/create-deploy-releases.md)   
+[![Build your software](_img/overview/ov-devops-build.png)](build-release/define/build.md)[![Set up continuous testing](_img/overview/ov-devops-test.png)](build-release/test/set-up-continuous-testing-builds.md)[![Create a release](_img/overview/ov-devops-release.png)](build-release/actions/create-deploy-releases.md)   
 
 <!---
 
@@ -168,7 +168,7 @@ Agile methodologies speed up the development and test cycle and make sure that y
 No matter what platform you target or language you use, you can simplify the continuous integration of your apps that build on Linux, Mac, or Windows. And, you can seamless integrate information about your builds with work, code, test, and release.  
 -->
 
-In addition to continuous integration testing, you can create [test plans](test/manual-exploratory-testing/getting-started/create-a-test-plan.md), [perform manual testing](test/manual-exploratory-testing/index.md), and [run unit tests](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios). 
+In addition to continuous integration testing, you can create [test plans](manual-test/getting-started/create-a-test-plan.md), [perform manual testing](manual-test/index.md), and [run unit tests](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios). 
 
 Release Management helps you automate the deployment and testing of your software in multiple environments. With it, you can either fully automate the delivery of your software all the way to production, or set up semi-automated processes with approvals and on-demand deployments.  
 
@@ -208,10 +208,10 @@ Release Management helps you automate the deployment and testing of your softwar
 <div style="float:left;width:120px;margin:6px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Test</p>
 <ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Test plans](test/manual-exploratory-testing/getting-started/create-a-test-plan.md)</li>
-<li style="margin-bottom:2px">[Manual testing](test/manual-exploratory-testing/index.md)</li>
+<li style="margin-bottom:2px">[Test plans](manual-test/getting-started/create-a-test-plan.md)</li>
+<li style="margin-bottom:2px">[Manual testing](manual-test/index.md)</li>
 <li style="margin-bottom:2px">[Unit tests](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)</li>
-<li style="margin-bottom:2px">[Continuous testing](test/continuous-testing/index.md)</li>
+<li style="margin-bottom:2px">[Continuous testing](build-release/test/index.md)</li>
 </ul>
 </div>
 
@@ -235,8 +235,8 @@ Release Management helps you automate the deployment and testing of your softwar
 <ul style="padding-left:30px">
 <li style="margin-bottom:2px">[Cross-platform command-line tool](https://msdn.microsoft.com/library/hh873092.aspx)</li>
 <li style="margin-bottom:2px">[Improve code quality](https://msdn.microsoft.com/library/dd264943.aspx)</li>
-<li style="margin-bottom:2px">[Load test in the cloud](test/performance-testing/getting-started/get-started-simple-cloud-load-test.md)</li>
-<li style="margin-bottom:2px">[Track test status](test/manual-exploratory-testing/getting-started/track-test-status.md)</li>
+<li style="margin-bottom:2px">[Load test in the cloud](load-test/get-started-simple-cloud-load-test.md)</li>
+<li style="margin-bottom:2px">[Track test status](manual-test/getting-started/track-test-status.md)</li>
 </ul>
 </div>
 

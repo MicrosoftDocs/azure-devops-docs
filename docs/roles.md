@@ -63,7 +63,7 @@ One of the main advantages to working with Team Services or TFS is the suite of 
 - Define, manage, track, and approve releases 
 - Deploy applications to Azure, a virtual machine, Docker containers, and more  
 
-To get started, see the overviews provided here: [Build &amp; Release](build-release/overview.md) and [Test](test/index.md). 
+To get started, see the overviews provided here: [Build &amp; Release](build-release/overview.md) and [Test](manual-test/index.md). 
 
 - *Case study*: [Build and Deployment Automation Case Study for World Wide Time Keeping: Higher Quality and Faster Delivery in an Increasingly Agile World](https://www.visualstudio.com/en-us/articles/build-deployment-best-practices)  
 - *Video resource*: [A DevOps walkthrough using Visual Studio 2015 (Channel 9 video)](https://channel9.msdn.com/Blogs/MVPANZ/A-DevOps-walkthrough-using-Visual-Studio-2015).

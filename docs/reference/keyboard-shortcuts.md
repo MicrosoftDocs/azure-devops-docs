@@ -45,7 +45,7 @@ For example, type **g c** to open the Code hub, and then type **c p** to create 
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,h&nbsp;&nbsp;&nbsp;</span>Go to [home](../report/dashboards.md)  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,k&nbsp;&nbsp;&nbsp;</span>Go to wiki  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,s&nbsp;&nbsp;&nbsp;</span>Go to [settings](../work/scale/manage-team-assets.md)   
-<span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,t&nbsp;&nbsp;&nbsp;</span>Go to [test](../Test/index.md)  
+<span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,t&nbsp;&nbsp;&nbsp;</span>Go to [test](../manual-test/index.md)  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">g,w&nbsp;&nbsp;&nbsp;</span>Go to [work](../work/overview.md)  
 </td>
 

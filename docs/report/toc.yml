@@ -15,7 +15,7 @@
   - name: Configure work item query-based charts
     href: charts.md
   - name: "Configure test status, progress, and result charts"
-    href: ../test/manual-exploratory-testing/getting-started/track-test-status.md
+    href: ../manual-test/getting-started/track-test-status.md
 - name: Tutorials
   items:
   - name: Work with cumulative flow

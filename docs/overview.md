@@ -57,7 +57,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-4 col-md-3 item">
       <div class="title">
-        <a href="test/index.md">Test</a>
+        <a href="build-release/test/index.md">Test</a>
         <div class="desc">
           Test continuously while you code, build, and deploy before releasing to production.
         </div>

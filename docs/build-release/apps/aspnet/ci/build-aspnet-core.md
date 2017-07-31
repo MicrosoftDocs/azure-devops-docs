@@ -92,7 +92,7 @@ Add the following tasks.
     <p>(Optional) Run your tests. See</p>
    <ul>
    <li>[Getting started with continuous testing](../../../test/getting-started-with-continuous-testing.md)</li>
-    <li>[Continuous testing scenarios and capabilities](../../../test/index.md).</li>
+    <li>[Continuous testing scenarios and capabilities](../../../manual-test/index.md).</li>
     </ul>
     </td>
   </tr>
