@@ -14,6 +14,8 @@ ms.date: 08/09/2016
  
 [!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
 
+> See also [Load and performance testing](../load-test/index.md), [Continuous testing](../build-release/test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
+
 Quality is a vital aspect of software systems, and manual testing 
 and exploratory testing continue to be an important techniques for maximizing this.
 In today's software development processes,

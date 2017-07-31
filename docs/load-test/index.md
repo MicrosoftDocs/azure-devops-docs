@@ -13,6 +13,8 @@ ms.date: 08/12/2016
 
 **Visual Studio 2017 | Visual Studio 2015 | Team Services | [Previous version](https://msdn.microsoft.com/library/dn250793%28v=vs.120%29.aspx)**  
 
+> See also [Manual and exploratory testing](../manual-test/index.md), [Continuous testing](../build-release/test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
+
 ![Cloud-based Load Testing](_img/performance-testing/IC838830.png)
 
 Load test your code with hundreds of thousands of users using 
