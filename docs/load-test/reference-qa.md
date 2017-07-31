@@ -11,6 +11,17 @@ ms.date: 07/04/2017
 
 # Q &amp; A for load testing
 
+* [General](#qageneral)
+* [Visual Studio](#qavisualstudio)
+* [Azure portal](#qaazure)
+* [Setting up tests](#set-up-tests)
+* [Apache JMeter tests](#jmeter-tests)
+* [Running and monitoring tests](#run-monitor-tests)
+* [Recording and replaying tests](#recordreplay)
+* [Application Insights](#qaappinsights)
+* [Troubleshooting](#troubleshooting)
+* [Errors](#errors)
+
 <a name="qageneral"></a>
 ## General Q &amp; A
 
@@ -38,7 +49,7 @@ like internal or pre-release apps, staging or preproduction deployments. To lear
 [Testing private and intranet applications using cloud-based load testing](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/23/testing-privateintranet-applications-using-cloud-based-load-testing/).
 
 Or, you can 
-[run a load test locally using Visual Studio](../load-test/run-performance-tests-app-before-release.md).
+[run a load test locally using Visual Studio](../test/performance-testing/run-performance-tests-app-before-release.md).
 
 ### Q: What are virtual users?
 
@@ -217,7 +228,7 @@ For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualst
 
 ### Q: Why should I use Cloud-based Load Testing?
 
-**A**: If you don't want to set up machines for load testing, or you don’t have available resources, you can use the [Cloud-based Load Testing service](https://go.microsoft.com/fwlink/?LinkID=317257). It sets up virtual machines in the cloud that will run your load test. Note that your web site must be publicly available on the internet for load testing using Visual Studio Team Services to access it.
+**A**: If you don't want to set up machines for load testing, or you don't have available resources, you can use the [Cloud-based Load Testing service](https://go.microsoft.com/fwlink/?LinkID=317257). It sets up virtual machines in the cloud that will run your load test. Note that your web site must be publicly available on the internet for load testing using Visual Studio Team Services to access it.
 
 ----------
 
