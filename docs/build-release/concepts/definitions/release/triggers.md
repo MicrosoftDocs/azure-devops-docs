@@ -16,37 +16,52 @@ ms.date: 10/20/2016
 
 You can configure when releases should be created, and when those releases should be deployed to environments. The former is configured through **release triggers**, and the latter through **environment triggers** - both in a release definition.
 
-<h2 id="release-triggers">Release triggers</h2>
+<h2 id="release-triggers">Release (continuous deployment) triggers</h2>
 
-Release triggers are configured in the **Triggers** tab of the release definition.
-
-![Selecting a trigger for a release](_img/trigger-01.png)
-
-You can choose to create releases for a release definition
-manually. With this choice, you use the **Release** icon in a release
-definition or from a build summary to create a new release.
-
-However, if you specify [certain types](artifacts.md#sources) of
-artifacts in a release definition, you can enable **Continuous deployment**.
-This setting instructs Release Management to create
+If you specify [certain types](artifacts.md#sources) of
+artifacts in a release definition, you can enable continuous deployment.
+This instructs Release Management to create
 new releases automatically when it detects new artifacts
 are available. At present this option is available only for Team Foundation Build artifacts
 and Git-based sources such as Team Foundation Git, GitHub, and other Git repositories.
+
+![Selecting a trigger for a release](_img/trigger-01.png)
 
 If you have linked multiple Team Foundation Build artifacts to a release definition,
 you can configure continuous deployment for each of them.
 In other words, you can choose to have a release created automatically when a new build
 of any of those artifacts is produced. You can further choose to create the release only
-when the build is produced by compiling code from certain **branches**
+when the build is produced by compiling code from certain branches
 (only applicable when the code is in a Team Services or a TFS Git repository)
-or when the build has certain **tags**.
+or when the build has certain tags.
 
-You can also choose to have a release created automatically based on a **schedule**. When you select this option,
-you can select the days of the week and the time of day that
-Release Management will automatically create a new release. You can configure multiple schedules as required.
+Note that, even though a release is automatically created, it
+might not be deployed automatically to any environments. The
+[environment triggers](#env-triggers) govern when and if a release should be deployed to an environment.
 
-> With scheduled triggers, a new release is created even if a newer version of artifact is not available since the last release.
+<h2 id="env-triggers">Environment triggers</h2>
 
+You can choose to have the deployment to each environment triggered automatically
+when a release is created by a continuous deployment trigger, based on:
+
+* **A predefined schedule**. When you select this option,
+  you can select the days of the week and the time of day that
+  Release Management will automatically create a new release. You can configure multiple schedules as required.
+  Note that, with scheduled triggers, a new release is created even if a newer version of artifact is not available since the last release.
+
+  ![The trigger conditions settings](_img/trigger-02.png)
+
+
+* **The result of deploying to a previous environment in the pipeline**
+
+
+
+
+*******************
+
+![Opening the deployment conditions dialog](_img/trigger-02a.png)
+
+. 
 You can also combine the two automated settings and have releases created automatically either when a new build is available or according to a schedule.
 
 > **TFS 2015**: The following features are _not_ available in TFS 2015 -
@@ -55,16 +70,13 @@ multiple scheduled triggers,
 combining scheduled and continuous deployment triggers in the same definition,
 continuous deployment based on the branch or tag of a build.
 
-Even though a release is automatically created, it
-**might not be deployed automatically** to an environment. The
-[environment triggers](#env-triggers) govern when and if a release should be deployed to an environment.
 
-<h2 id="env-triggers">Environment triggers</h2>
+********************You can choose to create releases for a release definition
+manually. With this choice, you use the **Release** icon in a release
+definition or from a build summary to create a new release.***********************
 
-You configure the triggers for an environment on the
-**Deployment conditions** tab of an environment.
 
-![Opening the deployment conditions dialog](_img/trigger-02.png)
+
 
 Triggers are configured for each environment,
 but the combination of these allows you to orchestrate
@@ -143,7 +155,9 @@ In the **Trigger** section of the environment **Deployment conditions**
 dialog, select the artifact conditions such as the source branch and
 tags for builds that will trigger a new deployment to that environment.
 
-![Configuring an artifact condition for a trigger](_img/artifact-filter-trigger.png)
+* **Manually by a user**
+
+
 
 ### Parallel forked and joined deployments
 

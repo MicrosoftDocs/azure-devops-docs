@@ -81,7 +81,9 @@ re-assigns the approval to another user).
 
 You can define pre-deployment approvers, post-deployment approvers, or both for an environment.
 
-![Default automated approvals settings](_img/environments-01.png)
+![Pre-deployment approvals settings](_img/environments-01.png)
+
+![Post-deployment approvals settings](_img/environments-01a.png)
 
 The **Automatic** option allows you to approve a deployment automatically.
 When you select the **Specific Users** option, you can select
@@ -122,18 +124,6 @@ to move forward.
   you can use local groups managed in TFS or Active
   Directory (AD) groups if they have been added into TFS.
 
-You can also configure **approval options** to:
-
-* Specify whether the approvers will receive an email
-  when an approval is awaiting their attention.
-
-* Prevent the user who created a release or started the deployment from approving
-  his or her own release. This is often useful to ensure
-  compliance with corporate audit requirements.
-  
-* Force the identity of the user to be re-evaluated
-  before the approval is processed and accepted.
-  
 The creator of a deployment is considered to be a separate user
 role for deployments. Either the release creator or the deployment
 creator can be restricted from approving deployments. For more details,
@@ -153,9 +143,6 @@ they can be deployed. Alternatively, you may configure multiple
 for deployment of different artifacts. In such cases, it's useful to
 be able to control how multiple releases are queued into an
 environment. **Queuing policies** give you that control.
-
-Queuing policies are defined in the **Options** section of the
-**Deployment conditions** tab.
 
 ![Defining queuing policies](_img/environments-02.png)
 
@@ -219,8 +206,10 @@ defined.
 <h2 id="options">Environment general options</h2>
 
 While the most important part of defining an environment is the
-automation tasks, you can also configure several options on the
-**General** tab of an environment in a release definition.
+automation tasks, you can also configure several properties and options
+for an environment in a release definition.
+
+* **Environment name:** You can edit the name of the environment here if required.
 
 * **Environment owner:** You can designate a single user or a single
   group to be the environment owner. Environment owners are
@@ -231,6 +220,21 @@ automation tasks, you can also configure several options on the
 * **Send email notifications:** The environment owner and the creator of a release can
   receive email notifications when deployments occur to this environment.
   This can be for every deployment, or just for failed deployments.
+
+* Prevent the user who created a release or started the deployment from approving
+  his or her own release. This is often useful to ensure
+  compliance with corporate audit requirements.
+  
+* Force the identity of the user to be re-evaluated
+  before the approval is processed and accepted.
+
+* Delete the environment from the pipeline.
+
+* Save a copy of the environment as a template.
+
+* Manage the security settings for the environment.
+
+![Defining options and policies](_img/environments-03.png)
 
 ## Q&A
 

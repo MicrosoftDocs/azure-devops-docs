@@ -104,16 +104,17 @@ artifacts from all these sources.
 <!-- **Note:** Integration with Package Management and NuGet
 repositories is not yet available. -->
 
-Artifact sources in a release definition can be managed from the **Artifacts** tab of the definition.
-
 By default, a release created from the release definition will use the
 latest version of the artifacts. At the time of linking an artifact source to a release definition,
-you can change this behavior by selecting one of the options: **Latest**, **Specific version**, or **Specify at the time of release creation**.
+you can change this behavior by selecting one of the options to use the latest build from a specific
+branch by specifying the tags, a specific version, or allow the user to specify the version when the
+release is created from the definition.
+If you link more than one set of artifacts, you can specify which is the primary
+(default).
 
 ![Selecting a default version option](_img/artifacts-02.png)
 
-The default version you select is shown in the **Artifacts** tab of the release definition.
-
+ 
 The following sections describe how to work with the different types of artifact
 sources.
 
