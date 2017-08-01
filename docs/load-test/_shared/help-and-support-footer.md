@@ -1,5 +1,6 @@
 ## Help and support
 
-Submit bugs through [Connect](https://connect.microsoft.com/visualstudio), 
-and make suggestions on [Uservoice](http://visualstudio.uservoice.com/forums/121579-visual-studio).
-We look forward to your feedback.
+Report any problems on [Developer Community](https://developercommunity.visualstudio.com/),
+make suggestions on [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services),
+get advice on [Stack Overflow](https://stackoverflow.com/questions/tagged/vs-team-services),
+and get support via our [Support](https://www.visualstudio.com/team-services/support/) page.
