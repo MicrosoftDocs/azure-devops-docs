@@ -234,7 +234,7 @@ This may be characterized by a message in the build log "All files up to date" f
 
 [Get subscription, billing, and technical support](https://www.visualstudio.com/support-overview-vs)
 
-Please submit bugs through [Connect](https://connect.microsoft.com/visualstudio).
+Report any problems on [Developer Community](https://developercommunity.visualstudio.com/).
 
 We welcome your suggestions:
 

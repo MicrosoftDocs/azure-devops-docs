@@ -131,7 +131,7 @@ You can print most topics using your browser's print function. Most of the lates
  
 ##Product feedback, report an issue  
 
-You can provide feedback for any Visual Studio product from the [Visual Studio Feedback Center](https://connect.microsoft.com/VisualStudio/feedback/LoadSubmitFeedbackForm). Or, from within Visual Studio, you can report a problem and review other trending issues. 
+You can provide feedback for any Visual Studio product at the [Developer Community](https://developercommunity.visualstudio.com/). Or, from within Visual Studio, you can report a problem and review other trending issues. 
 
 ![Visual Studio, Report a problem](_img/provide-feedback-report-problem.png)
 
