@@ -54,7 +54,7 @@ to a release definition. The properties of these phases include settings for
 The following sections describe how this setting affects the operation
 of the **Visual Studio Test** and **Run Functional Tests** tasks.
 For a full description of the operation for all tasks, see
-[Parallel execution using agent phases](../../build-release/concepts/process/phases.md#parallel-execution-using-agent-phases).
+[Parallel execution using agent phases](../../build-release/concepts/process/phases.md#parallelexec).
 
 ### No parallelism
 
@@ -187,7 +187,7 @@ See [Build and Release agent capabilities](../../build-release/concepts/agents/a
 ### Q: How else can I use multi-configuration mode?
 
 **A**: This mode can be used whenever you need multiple agents to execute jobs in parallel.
-For more examples, see [Parallel execution using agent phases](../../build-release/concepts/process/phases.md#parallel-execution-using-agent-phases).
+For more examples, see [Parallel execution using agent phases](../../build-release/concepts/process/phases.md#parallelexec).
 
 <a name="rft-task-changes"></a>
 ### Q: Has the Run Functional Tests task also changed?

@@ -19,13 +19,6 @@ Assets defined in a library can be used in multiple build and release definition
 The **Library** tab can be accessed directly in the **Build &amp; Release** hub in Team Services and Team Foundation Server.
 
 At present, the library contains two types of assets: [variable groups](variable-groups.md) and [secure files](secure-files.md).
-The following types of assets are not yet present in the **Library** tab, but soon will be:
-
-* [Task groups](task-groups.md)
-* [Service endpoints](service-endpoints.md)
-
-Although these assets are not present in the **Library** tab,
-they are still shared across build and release definitions in a team project.
 
 > Variable groups are available to only release definitions in Team Services and TFS 2017 at present.
 Task groups and service endpoints are available to build and release definitions in TFS 2015, TFS 2017, and Team Services.

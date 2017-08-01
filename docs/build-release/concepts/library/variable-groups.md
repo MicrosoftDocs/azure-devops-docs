@@ -18,14 +18,12 @@ Use a variable group to store values that you want to make available across
 multiple release definitions. Variable groups are defined and managed in the **Library** tab of the
 **Build &amp; Release** hub.
 
-![Variable group example screen](_img/variable-group.png)
-
 > Variable groups can only be used in release definitions in TFS 2017 and Team Services at present. They cannot yet be used in build definitions.
 
 ## Use a variable group
 
 To use a variable group in a release definition, open the definition, select the **Variables**
-tab, and then choose **Link variable group(s)**. When a variable group is linked to a release definition,
+tab, select **Variable groups**, and then choose **Link variable group**. When a variable group is linked to a release definition,
 all the variables in the group are available for use in all environments of that definition.
 
 ![Linking a variable group](_img/link-variable-group.png)
