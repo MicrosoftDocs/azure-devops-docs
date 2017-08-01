@@ -115,7 +115,7 @@ drop-down list in the toolbar.
 
 >By selecting an environment that is not the final one, you can test the initial steps
 and tasks in a release safe in the knowledge that it will stop before, for example,
-deployment to a live production environment. You can also insert a _server phase_
+deployment to a live production environment. You can also insert an _agentless phase_
 into a release definition, and use it to enable manual intervention in a release pipeline.
 For more details, see [Task phases](../concepts/process/phases.md).
 

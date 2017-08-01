@@ -41,20 +41,23 @@ The task phases you can use are:
 
 * **[Agent phase](#agent-phase)**. In this phase, tasks are executed on the computer(s) that host the build and release agent.
 
-* **[Server phase](#server-phase)**. In this phase, tasks are orchestrated by and executed on the Team Services
-  or Team Foundation Server. A server phase does not require an agent
+* **[Agentless phase](#server-phase)**. In this phase, tasks are orchestrated by and executed on the Team Services
+  or Team Foundation Server. An agentless phase does not require an agent
   or any target computers.
 
 * **[Deployment group phase](#deployment-group-phase)**. In this phase, tasks are executed on the computer(s) defined in a
   [deployment group](../definitions/release/deployment-groups/index.md),
   each of which hosts the build and release agent.
 
+![Add a phase to a release definition](_img/add-phase.png)
+
 By default, tasks you add to a build definition or release definition run in a single default agent phase.
 To add tasks to a specific phase when you have more than one phase in the definition, select the target phase
-and then choose **+ Add tasks**.
+and then choose **+**.
 
 > **TFS 2015**: Features explained in this article are not available in TFS 2015.
 
+<a name="agent-props"></a>
 ## Agent phase
 
 An **agent phase** is a way of defining a sequence of tasks that will run on one or more agents.
@@ -64,25 +67,14 @@ At run time, one or more jobs are created to be run on agents that match the dem
 
 You can configure the following properties for an agent phase:
 
-* **Deployment queue:** Use this option to specify the agent queue
+* **Display name:** The name displayed in the agent phase item in the task list.
+
+* **Queue:** Use this option to specify the agent queue
   in which the jobs will run. In the case where multiple jobs are created, all the jobs run on agents within the same agent queue.
 
 * **Demands:** Use these settings to specify how an agent for
   executing the tasks will be selected. In the case where multiple jobs are created, all the agents must have capabilities that satisfy the demands.
   For more details, see [Capabilities](../agents/agents.md#capabilities).
-
-* **Run on multiple agents in parallel:** If you have installed
-  multiple agents, you can specify how the tasks will run in parallel
-  on these agents. Select **Multi-agent** and specify the number
-  of agents to use, or select **Multi-configuration** and specify
-  details of the multipliers to use. See [parallel execution using agent phases](#parallelexec).
-
-* **Timeout:** Use this option if you
-  want to specify the timeout in minutes for jobs in this phase. A zero
-  value for this option means that the timeout is effectively
-  infinite and so, by default, jobs run until they complete or fail.
-  You can also set the timeout for each task individually -
-  see [task control options](tasks.md#controloptions).
 
 * **Skip artifacts download:** When used in a release definition, you may choose to skip the
   [download of artifacts](../definitions/release/artifacts.md#download)
@@ -97,11 +89,13 @@ You can configure the following properties for an agent phase:
   on Team Services - perhaps to create a work item or query a build for information.
 
 <a name="parallelexec"></a>
-### Parallel execution using agent phases
+### Parallel and multiple execution using agent phases
 
-You can use multiple agents to run parallel jobs if you configure an agent phase to be **Multi-configuration** or **Multi-agent**. Here are some examples where **Multi-configuration** execution is appropriate:
+You can use multiple agents to run parallel jobs if you configure an agent phase
+to be **Multiple executions** or **Execute on multiple agents**.
+Here are some examples where multiple execution is appropriate:
 
-* **Multi-configuration builds:** An agent phase can be used in a 
+* **Multiple execution builds:** An agent phase can be used in a 
   build definition to build multiple configurations in parallel. For 
   example, you could build a C++ app for both debug and release 
   configurations on both x86 and x64 platforms. To run multiple jobs,
@@ -116,7 +110,7 @@ You can use multiple agents to run parallel jobs if you configure an agent phase
   variables. For more details and an example of multi-configuration
   build, see [Visual Studio Build](../../steps/build/visual-studio-build.md).
 
-* **Multi-configuration deployments:** An agent phase can be used
+* **Multiple execution deployments:** An agent phase can be used
   in an environment of a release definition to run multiple deployment
   jobs in parallel. For example, to configure your application to be
   load balanced across a site in US and a site in Europe, you can
@@ -132,9 +126,9 @@ You can use multiple agents to run parallel jobs if you configure an agent phase
   sites being deployed in parallel by specifying **5** for the
   maximum number of agents.
 
-  > Multi-configuration deployments are not possible with Release Management in TFS 2015.
+  > Multiple execution deployments are not possible with Release Management in TFS 2015.
 
-* **Multi-configuration testing:** An agent phase can be used in an
+* **Multiple execution testing:** An agent phase can be used in an
   environment of a release definition to run a set of tests in
   parallel - once for each test configuration. For example, to run a
   suite of web tests, once for each browser, you can define a variable
@@ -147,11 +141,28 @@ You can use multiple agents to run parallel jobs if you configure an agent phase
 
   > Multi-configuration testing is only possible with Release definitions in TFS 2017 and Team Services. It is not possible with Build definitions.
 
-To use the **Multi-configuration** option for deployment, you must:
+To use multi-configuration or parallel deployment, set the options in the agent phase properties panel:
+
+* **Parallelism:** If you have installed
+  multiple agents, you can specify how the tasks will run in parallel
+  on these agents. Select **Multiple executions** or **Execute on multiple agents**
+  and specify the number of agents to use. If you select **Multiple executions**, specify
+  details of the [multipliers](#multipliers) to use.
+
+* **Timeout:** Use this option if you
+  want to specify the timeout in minutes for jobs in this phase. A zero
+  value for this option means that the timeout is effectively
+  infinite and so, by default, jobs run until they complete or fail.
+  You can also set the timeout for each task individually -
+  see [task control options](tasks.md#controloptions).
+
+![Configuring multi-configuration execution](_img/phases-04.png)
+
+<a name="multipliers"></a>
+To use **Multipliers** for deployment, you must:
 
 * Define one or more [variables](../definitions/release/variables.md)
-  on the **Variables** tab of the definition (or in a 
-  [variable group](../library/variable-groups.md)).
+  on the **Variables** tab of the definition or in a [variable group](../library/variable-groups.md).
   Each variable, known in this context as a _multiplier_ variable,
   must be defined as a comma-delimited list of the values you want
   to pass individualy to the agents. 
@@ -178,16 +189,17 @@ a maximum of four agents at any one time:
 * **Multipliers** = `Location,Browser`
 * **Maximum number of agents** = `4`
 
-![Configuring multi-configuration execution](_img/phases-04.png)
+## Agentless phase
 
-## Server phase
-
-Use a server phase in a release definition to run tasks that do
+Use an agentless phase in a release definition to run tasks that do
 not require an agent, and execute entirely on the Team Services or Team Foundation Server.
 Only a few tasks, such as the [Manual Intervention](#maninterv) and [Invoke REST API](#invokeapi) tasks,
-are supported in a server phase at present. Of these, only one can be included in each server phase.
+are supported in an agentless phase at present. The properties of
+an agentless phase are similar to those of the [agent phase](#agent-props).
 
-> Server phases and manual intervention tasks only work in release definitions in Team Services and TFS 2017.
+![Agentless phase properties](_img/phases-05.png)
+
+> Agentless phases and manual intervention tasks only work in release definitions in Team Services and TFS 2017.
 
 <a name="maninterv"></a>
 ### The Manual Intervention task
@@ -198,7 +210,7 @@ manual steps or actions, and then continue the automated deployment steps.
 
 The **Manual Intervention** task configuration includes an **Instructions** parameter that
 can be used to provide related information, or to specify the manual steps
-the user should execute during the server phase. You can configure the task to
+the user should execute during the Agentless phase. You can configure the task to
 send email notifications to users and user groups when it is awaiting intervention,
 and specify the automatic response (reject or resume the deployment) after a configurable
 timeout occurs.
@@ -231,18 +243,16 @@ and install the required agent on each one. Tasks that you define in a
 deployment group phase run on some or all of the target servers, depending on
 the arguments you specify for the tasks and the phase itself.
 
-![Dependency group properties](_img/depgroup-properties.png)
-
 You can select specific sets of servers from a deployment group to receive
 the deployment by specifying the machine tags that you have defined for each
 server in the deployment group. For more details, see [Deployment groups](../definitions/release/deployment-groups/index.md).
-
-You can also specify the proportion of the target servers that the process should
-deploy to at the same time - such as half the servers, all the servers, or
-a custom setting. This ensures that the app running on these servers is 
+You can also use the slider control to specify the proportion of the target servers that the process should
+deploy to at the same time. This ensures that the app running on these servers is 
 capable of handling requests while the deployment is taking place. 
 
-![Dependency group properties](_img/depgroup-deployto.png)
+![Dependency group properties](_img/depgroup-properties.png)
+
+The timeout and additional options of a deployment group phase are the same as those of the [agent phase](#agent-props).
 
 ## Multiple phases
 
@@ -253,7 +263,7 @@ tasks to each one by selecting the target phase for the new tasks.
 
 For example, the definition shown below divides the overall release
 execution into separate execution phases by using two agent phases
-and a server phase.
+and an agentless phase.
 
 ![Configuring a manual intervention step](_img/phases-02.png)
 
@@ -262,13 +272,13 @@ In the example above:
 1. The tasks in the first phase of the release run on an agent
    and, after this phase is complete, the agent is released.
 
-1. The server phase contains a Manual Intervention task
+1. The agentless phase contains a Manual Intervention task
    that runs on the Team Services or Team Foundation Server.
    It does not execute on, or require, an agent or any target servers.
    The Manual Intervention task displays its message and waits for a
    "resume" or "reject" response from the user. In this example, if
-   the configured timeout of 360 minutes is reached, the task will
-   automatically reject the deployment (set the timeout to zero if
+   the configured timeout is reached, the task will
+   automatically reject the deployment (set the timeout in the control options section to zero if
    you do not want an automated response to be generated).   
 
 1. If the release is resumed, tasks in the third phase run -
