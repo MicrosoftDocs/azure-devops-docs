@@ -98,11 +98,11 @@ subscription will not get triggered.
 For example: if I don't have access to work items in area path XYZ, and I set up a 
 subscription to the work item update events, I won't get notifications for updates 
 to work items in area path XYZ. However, if another user who does have access to the work 
-items in area path XYZ is recieving those "work item update" events, then I could see the 
+items in area path XYZ is receiving those "work item update" events, then I could see the 
 notification history of that other user's events, which includes work item data that I 
 don't otherwise have access to.
 
-####Q: Can I create service hook subscriptions for a project programatically?
+####Q: Can I create service hook subscriptions for a project programmatically?
 
 A: Yes. Go [here](./create-subscription.md) for more details.
 

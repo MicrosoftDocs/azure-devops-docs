@@ -70,7 +70,7 @@ Write-Host "Hello world"
 
 1. **Commit** (save) the file.
 
-> In this tutorial our focus is on CI/CD, so we're keeping the code part simple. We're working in a Team Services Git repository directly in your web browser.
+> In this tutorial, our focus is on CI/CD, so we're keeping the code part simple. We're working in a Team Services Git repository directly in your web browser.
 >
 > When you're ready to begin building and deploying a real app, you can use a wide range of version control clients and services with Team Services CI builds. [Learn more](#version-control).
 
@@ -92,7 +92,7 @@ Create a build definition that prints "Hello world."
 
 1. Make sure that **Get sources** is set with the **Repository** and **Branch** in which you created the script.
 
-1. On the left side click **Add Task**, and then on the right side click the **Utility** category, click the select the **Powershell** task, and then click **Add**.
+1. On the left side click **Add Task**, and then on the right side click the **Utility** category, click the select the **PowerShell** task, and then click **Add**.
 
 1. On the left side click your new **PowerShell** script task.
 
@@ -102,7 +102,7 @@ Create a build definition that prints "Hello world."
 
 1. Click **Save & queue**, and then click **Save**.
 
-> A build definition is the entity through which you define your automated build process. In the build definition, you compose a set of tasks, each of which perform a step in your build. The task catalog provides a rich set of tasks for you to get started. You can also add Powershell or shell scripts to your build definition.
+> A build definition is the entity through which you define your automated build process. In the build definition, you compose a set of tasks, each of which perform a step in your build. The task catalog provides a rich set of tasks for you to get started. You can also add PowerShell or shell scripts to your build definition.
 
 ## Publish an artifact from your build
 
@@ -126,7 +126,7 @@ drop
 
 > Artifacts are the files that you want your build to produce. Artifacts can be nearly anything your team needs to test or deploy your app. For example, you've got a .DLL and .EXE executable files and .PDB symbols file of a C# or C++ .NET Windows app.
 >
-> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and also a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Team Build](../concepts/definitions/build/artifacts.md).
+> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Team Build](../concepts/definitions/build/artifacts.md).
 
 ## Enable continuous integration (CI)
 
@@ -323,7 +323,7 @@ We hope this tutorial gave you an understanding of the basic concepts of Team Bu
 
 <h3 id="version-control">What kinds of version control can I use</h3>
 
-We've used a Git repository in Team Services in order to keep things focused on CI/CD for this tutorial.
+We've used a Git repository in Team Services to keep things focused on CI/CD for this tutorial.
 
 When you're ready to get going with CI/CD for your app, you can use the version control system of your choice:
 
@@ -425,7 +425,7 @@ To learn more about build definition settings, see:
 
 * [History](../define/history.md)
 
-### How do I programatically create a build definition?
+### How do I programmatically create a build definition?
 
 [REST API Reference: Create a build definition](../../integrate/overview.md)
 

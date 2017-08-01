@@ -56,7 +56,7 @@ when you create a Service Hook subscription.
 
    <img alt="Azure Service Bus Queue" src="./_img/azure-service-bus/queues.png" style="border: 1px solid #CCCCCC" />
 
-2. Create or modify your app's code to recieve Visual Studio Team Services
+2. Create or modify your app's code to receive Visual Studio Team Services
 messages using a Azure Service Bus queue. For details, go [here](http://azure.microsoft.com/en-us/documentation/articles/service-bus-dotnet-how-to-use-queues/).
 
 3. Open the admin page for the team project in Visual Studio Team Services.
