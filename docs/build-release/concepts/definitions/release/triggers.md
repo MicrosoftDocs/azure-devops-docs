@@ -49,115 +49,38 @@ when a release is created by a continuous deployment trigger, based on:
   Release Management will automatically create a new release. You can configure multiple schedules as required.
   Note that, with scheduled triggers, a new release is created even if a newer version of artifact is not available since the last release.
 
-  ![The trigger conditions settings](_img/trigger-02.png)
+  ![The scheduled trigger conditions settings](_img/trigger-02.png)
 
 
-* **The result of deploying to a previous environment in the pipeline**
-
-
-
-
-*******************
-
-![Opening the deployment conditions dialog](_img/trigger-02a.png)
-
-. 
-You can also combine the two automated settings and have releases created automatically either when a new build is available or according to a schedule.
-
-> **TFS 2015**: The following features are _not_ available in TFS 2015 -
-continuous deployment triggers for multiple artifact sources,
-multiple scheduled triggers,
-combining scheduled and continuous deployment triggers in the same definition,
-continuous deployment based on the branch or tag of a build.
-
-
-********************You can choose to create releases for a release definition
-manually. With this choice, you use the **Release** icon in a release
-definition or from a build summary to create a new release.***********************
-
-
-
-
-Triggers are configured for each environment,
-but the combination of these allows you to orchestrate
-the overall deployment - such as the sequence in which automated
-deployments occur across all the environments in a release
-definition. For example, you can set up a linear pipeline where
-a release is deployed first to the **Dev** environment,
-then to the **QA** environment and finally, if the
-deployment to **QA** succeeds, to the **Prod** environment.
-
-Alternatively, you can set up a release process where a build is
-deployed to a number of **QA** environments in parallel as
-soon as it completes, but the release to the **Prod**
-environment must always be deployed manually by
-selecting a successful release and promoting it.
-
-The **Trigger** settings are:
-
-* **No automated deployment**: Releases are
-  not automatically deployed to this environment. To
-  deploy a release to this environment, you must manually
-  select the **Deploy** action when a new release is created.
-  This is the default setting.
-
-* **After release creation**: The release will be deployed
-  to this environment as soon as it is created, due either
-  to a user action (such as manually starting a new release from the UI)
-  or because a [continuous deployment trigger](#release-triggers)
-  is configured for this release definition. For example,
-  if you have checked the continuous deployment trigger option
-  for a release definition and selected a specific build artifact,
-  the deployment to this environment will start automatically
-  when the output from a new build is available. If you want the
-  release to be deployed only at a specific time on specific days,
-  set the **Scheduled** option and select the appropriate
-  values in the controls that appear. For example, you can specify
-  that, after creation, a release will be deployed only on a weekday
-  at 3:00 AM in a specific time zone.
-
-* **After successful deployment**: Use this setting if you
-  want the release to be first deployed and validated in
+* **The result of deploying to a previous environment in the pipeline**.
+  Use this setting if you want the release to be first deployed and validated in
   another environment(s) before it is deployed to this environment.
-  For example, you can set up a linear pipeline of
-  deployment through **Dev**, **QA**, and **Prod**
-  environments by setting the trigger on the **Dev**
-  environment to **After release creation**, the trigger
-  on the **QA** environment to **After successful
-  deployment** to the **Dev** environment, and the trigger
-  on the **Prod** environment to **After
-  successful deployment** to the **QA** environment.
-  You must have at least two environments configured in
-  the release definition to enable this option, and - when
-  you select it - a list of the other environments is shown
-  where you can select the **Triggering environment**.
+  Triggers are configured for each environment,
+  but the combination of these allows you to orchestrate
+  the overall deployment - such as the sequence in which automated
+  deployments occur across all the environments in a release
+  definition. For example, you can set up a linear pipeline where
+  a release is deployed first to the **Test** and **QA** environments.
+  Then, if these two deployments succeed, it will be deployed to a **Staging**
+  environment. In addition, you can configure the trigger to fire
+  for partially succeeded (but not failed) deployments.
 
-  As with the **After release creation** option,
-  you can set the **Scheduled** checkbox and specify a specific
-  time on specific days when the release will be deployed.
+  ![The environment trigger conditions settings](_img/trigger-02a.png)
 
-In addition, when you define a trigger, you can specify whether
-the deployment to this environment should occur
-even if the deployment to the previous environment(s) is partially
-successful. A set of tasks running in the environment may
-not all succeed, resulting in a "Partially succeeded" deployment
-and - by default - the subsequent deployment will not be triggered.
-Set the **Also trigger for partially succeeded deployment(s)**
-checkbox if you want deployment to be triggered for this
-environment. Note that a "Failed" deployment to the previous environment
-will not trigger a deployment, even if this option is set.   
+* **Manually by a user**. Releases are
+  not automatically deployed to the environment. To
+  deploy a release to this environment, you must manually
+  start a release and deployment from the release definition
+  or from a build summary.
 
-Release Management also supports the use of artifact filters for
-each environment. This means you can specify the releases that will
-be deployed to each environment when the deployment trigger conditions
-(such as a build succeeding and creating a new release) are met.
-In the **Trigger** section of the environment **Deployment conditions**
-dialog, select the artifact conditions such as the source branch and
-tags for builds that will trigger a new deployment to that environment.
+You can combine the automated settings to have releases created
+automatically either when a new build is available or according to
+a schedule.
 
-* **Manually by a user**
-
-
+> **TFS 2015**: The following features are not available in TFS 2015 -
+continuous deployment triggers for multiple artifact sources,
+multiple scheduled triggers, combining scheduled and continuous deployment triggers in the same definition,
+continuous deployment based on the branch or tag of a build.
 
 ### Parallel forked and joined deployments
 
@@ -183,7 +106,7 @@ this capability enables the configuration of complex
 and fully managed deployment pipelines to suit
 almost any release scenario.  
 
->Note that you can always deploy a release directly to any of the
+Note that you can always deploy a release directly to any of the
 environments in your release definition by selecting the
 **Deploy** action when you create a new release. In this case, the
 environment triggers you configure, such as a trigger
@@ -194,11 +117,6 @@ process. Performing such direct deployments requires
 the **Manage deployments** permission, which should
 only be given to selected and approved users.
 
-Users with permission to edit release definitions can also
-configure environment deployment triggers in the
-**Triggers** tab of a release definition.
-
-> **TFS 2015**: The following environment trigger features are _not_ available in TFS 2015 - parallel fork and joined deployments,
-and scheduling options within environment triggers.
+> **TFS 2015**: Parallel fork and joined deployments are not available in TFS 2015
 
 [!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]

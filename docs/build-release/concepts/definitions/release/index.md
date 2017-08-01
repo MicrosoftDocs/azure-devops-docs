@@ -45,7 +45,7 @@ Besides the release process, release definitions have a few options that can be 
 The names of releases for a release definition are, by default, sequentially numbered.
 The first release is named **Release-1**, the next release is
 **Release-2**, and so on. You can change this naming scheme by editing the
-release name format mask. In the **General** tab of a release definition,
+release name format mask. In the **Options** tab of a release definition,
 edit the **Release name format** property.
 
 When specifying the format mask, you can use the following pre-defined variables.
