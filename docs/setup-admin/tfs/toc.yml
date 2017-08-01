@@ -6,10 +6,14 @@
   items:
   - name: Single server install
     href: ./install/single-server.md
-  - name: Dual server install
-    href: ./install/dual-server.md
-  - name: Multiple server install
-    href: ./install/multiple-server.md
+  - name: Create a team project
+    href: ../create-team-project.md
+  - name: Add users to projects
+    href: ../add-users.md
+  - name: Restrict access to resources
+    href: ../restrict-access-tfs.md
+  - name: Configure an SMTP server
+    href: ./admin/setup-customize-alerts.md
 - name: Tutorials
   items:
   - name: Restore a TFS deployment to new hardware
@@ -34,6 +38,10 @@
       href: ../requirements.md
     - name: Requirement changes
       href: ../requirement-changes-tfs15.md
+    - name: Dual server install
+      href: ./install/dual-server.md
+    - name: Multiple server install
+      href: ./install/multiple-server.md
     - name: TFS 2013
       items:
       - name: Get started
@@ -124,7 +132,7 @@
     href: ./upgrade/get-started.md
     items:
     - name: Requirements
-      href: requirements.md
+      href: ../requirements.md
     - name: Pre-upgrade
       href: ./upgrade/pre-upgrade.md
     - name: Pre-production
