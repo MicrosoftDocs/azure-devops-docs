@@ -19,21 +19,20 @@ Visual Studio Team Services and Team Foundation Server help you implement a high
 
 Learn how to build your app and deploy it to your choice of Azure service.
 
-* Azure web apps
+* Web apps
   * [ASP.NET Core](apps/aspnet-core-to-azure-webapp.md)
   * ASP.NET
-  * Node
+  * Node.js
   * Java
 * Windows virtual machines
   * [ASP.NET Core](apps/aspnet-core-to-windows-vm.md)
   * ASP.NET
 * Linux virtual machines
-  * ASP.NET Core
-  * Node
+  * Node.js
   * Java
 * Containers
   * ASP.NET Core
-  * Node
+  * Node.js
 <!---
 ![Azure web app](_img/index/azure-web-app-card.png)   ![Azure VM](_img/index/azure-vm-card.png)   ![Azure container](_img/index/azure-containers-card.png)   
 -->
@@ -42,10 +41,10 @@ Learn how to build your app and deploy it to your choice of Azure service.
 
 <!--- These were taken from the CI/CD MVC deck -->
 
-* Set up build
-* Set up release
-* Set up multi-stage release
-* Use CI with Git workflows  
+* Set up a build 
+* Set up a release
+* Set up a multi-stage release
+* Use CI with Git workflows
 * Integrate Build with GitHub
 * Integrate Release with Jenkins
 * Extend CI/CD

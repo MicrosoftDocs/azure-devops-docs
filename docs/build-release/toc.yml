@@ -11,7 +11,7 @@
     - name: ASP.NET Core
       href: apps/aspnet-core-to-azure-webapp.md
     - name: ASP.NET
-    - name: Node
+    - name: Node.js
     - name: Java
   - name: CI/CD to Windows VMs
     items:
@@ -20,18 +20,17 @@
     - name: ASP.NET
   - name: CI/CD to Linux VMs
     items:
-    - name: ASP.NET Core
-    - name: Node
+    - name: Node.js
     - name: Java
   - name: CI/CD to Containers
     items:
     - name: ASP.NET Core
-    - name: Node
+    - name: Node.js
 - name: Tutorials
   items:
-  - name: Set up build
-  - name: Set up release
-  - name: Set up multi-stage release
+  - name: Set up a build
+  - name: Set up a release
+  - name: Set up a multi-stage release
   - name: Use CI with Git workflows
   - name: Integrate Build with GitHub
   - name: Integrate Release with Jenkins
