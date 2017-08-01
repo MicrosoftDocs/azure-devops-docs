@@ -132,7 +132,7 @@
     href: ./upgrade/get-started.md
     items:
     - name: Requirements
-      href: requirements.md
+      href: ../requirements.md
     - name: Pre-upgrade
       href: ./upgrade/pre-upgrade.md
     - name: Pre-production
