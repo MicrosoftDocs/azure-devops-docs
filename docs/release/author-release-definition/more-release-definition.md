@@ -22,7 +22,7 @@ See our new [release definitions](../../build-release/actions/work-with-release-
 <a name="clonedef"></a>
 ## Clone, export, and import a release definition
 
-See our new [release definitions](../../build-release/actions/work-with-release-definitions.md#replicate-a-definition) documentation.
+See our new [release definitions](../../build-release/actions/work-with-release-definitions.md#replicate-def) documentation.
 
 <a name="triggers"></a>
 ## Continuous deployment/integration and scheduled triggers

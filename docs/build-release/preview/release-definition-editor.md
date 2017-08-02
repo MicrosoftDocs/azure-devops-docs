@@ -54,7 +54,7 @@ The features of the pipeline editor include:
    for just that environment.
    
 1. A drop-down list where you can add a new environment to the definition, or
-   [clone an existing environment](../actions/work-with-release-definitions.md#replicate-a-definition).
+   [clone an existing environment](../actions/work-with-release-definitions.md#replicate-def).
    
 1. A link that makes it easy to switch back to the non-preview definition editor.
 
