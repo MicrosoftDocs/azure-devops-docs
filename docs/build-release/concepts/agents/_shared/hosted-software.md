@@ -105,11 +105,16 @@
 * Android SDK, including support for repositories
 * ANT 1.9.7 w/ Cobertura
 * Azure CLI 2.02 (Python)
+* Azure PowerShell 2.1.0
+* AzureRM PowerShell 2.1.0
 * Azure PowerShell 3.6.0
 * AzureRM PowerShell 3.6.0
+* Azure PowerShell 4.1.0
+* AzureRM PowerShell 4.1.0
 * Bower
 * CMake 3.8
-* Docker Compose
+* Docker 17.03.2-ee-5
+* Docker Compose 1.14.0
 * Git for Windows 2.12
 * GIT LFS 2.0.2
 * Grunt
@@ -129,7 +134,8 @@
 * Service Fabric 5.4.164.9494
 * Service Fabric SDK 2.4.164
 * SQL Lite for UWP apps
-* SQL Server Data Tools "Extras"
+* SQL Server Data Tools "Extras" 17.1 with Analysis Services and Reporting Services
+* SQL Server Data-Tier Application Framework (DacFx) 17.1
 * WIX Toolset 3.10
 
 ### Hosted Linux Preview
