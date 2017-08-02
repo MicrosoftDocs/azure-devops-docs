@@ -154,17 +154,7 @@ net start w3svc
 
 1. Once deployment has completed, open your web browser and test your web app: `http://<publicIpAddress>`
 
-[!INCLUDE [include](_shared/change-code-section.md)]
-
-In the VSTS **Code** hub, edit the **Views/Home/Index.cshtml** file and make a simple change above the slide carousel `div` tag:
-
-```html
-<h1>Demo of ASP.NET Core CI/CD!!</h1>
-```
-
-![Screenshot showing update to code](_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-update-code.png)
-
-**Commit** your changes to trigger a CI build. When the build completes, it triggers an automatic deployment of the Azure web app.
+[!INCLUDE [include](_shared/change-aspnet-core-code.md)]
 
 When the deployment is done, verify that your changes are live in your web browser: `
 http://<publicIpAddress>`
