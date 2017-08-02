@@ -1,141 +1,21 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Developing extensions for Visual Studio Team Services and Team Foundation Server
-description: Overview of creating extensions for Visual Studio Team Services
+title: Developing extensions for Visual Studio Team Services (VSTS) and Team Foundation Server
+description: Overview of creating extensions for Visual Studio Team Services (VSTS)
 ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/23/2016
 ---
 
-# Overview of integrating with Visual Studio Team Services
+# Creating custom extensions for Visual Studio Team Services (VSTS)
 
 >[!NOTE]
-> This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, 
-> visit the [Marketplace documentation](../marketplace/extend-overview.md).
+> This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, visit the [Marketplace documentation](../marketplace/extend-overview.md). For information on 
 
 
-## Ways to integrate with Team Services
-
-<div name="row">
-    <div class ="col-sm-6 col-md-4 col-lg-4" style="padding:10px;">
-        <div style="background-color: #f6f6f6; border: solid 1px #E6E6E6; padding:10px; min-height:220px;">
-            <h4>Integrate with custom apps</h4>
-            <div style="padding-top: 10px; padding-left:6px">
-                <div style="padding:5px">
-                    Use our REST APIs to interact with Team Services directly in their custom app or service.
-                </div>
-                <div class="row" style="padding-top:10px; text-align:center">
-                    <a role="button" style="text-align: center; background-color: #e6e6e6; min-height: 40px; padding: 9px 20px 9px 20px; display: inline-block; margin-top: 3px; color: black;" href="#customApps">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class ="col-sm-6 col-md-4 col-lg-4" style="padding:10px;">
-        <div style="background-color: #f6f6f6; border: solid 1px #E6E6E6; padding:10px; min-height:220px;">
-            <h4>Create custom extensions</h4>
-            <div style="padding-top: 10px; padding-left:6px">
-                <div style="padding:5px">
-                    Create custom extensions to transform your Team Services look and experience.
-                </div>
-                <div class="row" style="padding-top:10px; text-align:center">
-                    <a role="button" style="text-align: center; background-color: #e6e6e6; min-height: 40px; padding: 9px 20px 9px 20px; display: inline-block; margin-top: 3px; color: black;" href="#extensions">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class ="col-sm-6 col-md-4 col-lg-4" style="padding:10px;">
-        <div style="background-color: #f6f6f6; border: solid 1px #E6E6E6; padding:10px; min-height:220px;">
-            <h4>Integrate with other services</h4>
-                        <div style="padding-top: 10px; padding-left:6px">
-                <div style="padding:5px">
-                    Integrate your Team Services with popular services like Slack or Jenkins.
-                </div>
-                <div class="row" style="padding-top:10px; text-align:center">
-                    <a role="button" style="text-align: center; background-color: #e6e6e6; min-height: 40px; padding: 9px 20px 9px 20px; display: inline-block; margin-top: 3px; color: black;" href="#thirdParty">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<a name ="customApps"/>
-
-## Integrating with custom apps
-
-### REST APIs
-
-You can leverage our REST APIs to interact with all areas of Team Services or TFS, including: 
-
-<div name="row">
-    <div class ="col-sm-1 col-md-1 col-lg-1" style="padding:10px;">
-    </div>
-    <div class ="col-sm-3 col-md-2 col-lg-2" style="padding:10px;">
-        <div style="background-color: #f6f6f6; border: solid 1px #E6E6E6; padding:10px; min-height:85px;">
-            <div class="index-button" style="padding:5px; text-align:center">
-                <a href="https://visualstudio.com/integrate/api/shared/overview.md">
-                    <h5>Accounts and Profiles</h5>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class ="col-sm-3 col-md-2 col-lg-2" style="padding:10px;">
-        <div style="background-color: #f6f6f6; border: solid 1px #E6E6E6; padding:10px;min-height:85px;">
-            <div class="index-button" style="padding-top:15px; text-align:center">
-                <a href="https://visualstudio.com/integrate/api/build-release/overview.md">
-                    <h5>Builds</h5>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class ="col-sm-3 col-md-2 col-lg-2" style="padding:10px;">
-        <div style="background-color: #f6f6f6; border: solid 1px #E6E6E6; padding:10px;min-height:85px;">
-            <div class="index-button" style="padding-top:15px; text-align:center">
-                <a href="https://visualstudio.com/integrate/api/git/overview.md">
-                    <h5>Git</h5>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class ="col-sm-3 col-md-2 col-lg-2" style="padding:10px;">
-        <div style="background-color: #f6f6f6; border: solid 1px #E6E6E6; padding:10px;min-height:85px;">
-            <div class="index-button" style="padding:5px; text-align:center">
-                <a href="https://visualstudio.com/integrate/api/tfs/overview.md">
-                    <h5>Projects and Teams</h5>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class ="col-sm-3 col-md-2 col-lg-2" style="padding:10px;">
-        <div style="background-color: #f6f6f6; border: solid 1px #E6E6E6; padding:10px;min-height:85px;">
-            <div class="index-button" style="padding-top:15px; text-align:center">
-                <a href="https://visualstudio.com/integrate/api/wit/overview.md">
-                    <h5>Work Items</h5>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class ="col-sm-3 col-md-1 col-lg-1" style="padding:10px;">
-    </div>
-</div>
-
-<div style="clear:both"></div>
-
-You can check out the [REST API overview page](https://visualstudio.com/integrate/api/overview.md) to see all of the APIs, how to use them, and samples.
-
-### .NET client libraries
-
-There are .NET client libraries available for .NET developers building Windows apps and services that integrate with Team Services. 
-
-Explore the [.NET client library overview](../integrate/get-started/client-libraries/dotnet.md) for the different packages and samples.
-
-<a name ="extensions"/>
-
-## Create custom extensions
-
-
-### What are extensions?
+## What are extensions?
 
 Extensions are simple add-ons that can be used to customize and extend your DevOps experience with Team Services. 
 They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.
@@ -143,7 +23,7 @@ They utilize our [RESTful API Library](https://visualstudio.com/integrate/api/ov
 The [Visual Studio Marketplace](https://marketplace.visualstudio.com/VSTS) is where extensions are published, 
 where they can be kept privately for you and your team or shared with the millions of developers currently using Team Services. 
 
-### What makes up an extension?
+## What makes up an extension?
 <div align="center" style="padding-top:15px">
 <img src="./_img/extension-components.png" style="padding-bottom:20px">
 </div>
@@ -156,7 +36,7 @@ All of these are bundled up to make a Team Extensions Service Package (.vsix fil
 extensions can be installed directly by Team Services users.
 
 
-### What can you do with extensions?
+## What can you do with extensions?
 
 There are dozens of places where you can add to the Team Services user interface, and we're adding more every sprint. Learn about all of the places where you can add a hub in the [contributions reference](./reference/targets/overview.md).
 
@@ -166,45 +46,14 @@ There are dozens of places where you can add to the Team Services user interface
 - Create [your own hub](./develop/add-hub.md) to embed new capabilities within our Agile, code, build, and test experiences. 
 - Develop [actions](./develop/add-action.md) that can be run on hubs, whether they're ours or ones you've created. 
 
-<div name="row" style="padding-top:15px">
-    <div style="vertical-align:top;display:inline-block;float:left;width:33%">
-        <div class="index-button" align="center" style="padding-right:2px">
-        <a href="./get-started/node.md"><button style="background-color:#f6f6f6;border:solid 2px #E6E6E6;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Build your first extension</button></a>
-        </div>
-    </div>
-    <div style="vertical-align:top;display:inline-block;float:left;width:33%">
-        <div class="index-button" align="center" style="padding-left:2px;padding-right:2px">
-        <a href="./get-started/tutorials.md"><button style="background-color:#f6f6f6;border:solid 2px #E6E6E6;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Find extension tutorials</button></a>
-        </div>
-    </div>
-    <div style="vertical-align:top;display:inline-block;float:left;width:33%">
-        <div class="index-button" align="center" style="padding-left:2px">
-        <a href="./develop/samples-overview.md"><button style="background-color:#f6f6f6;border:solid 2px #E6E6E6;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Browse sample extensions</button></a>
-        </div>
-    </div>
-</div>
 
-<div style="clear:both"></div>
+## Next Steps
 
-<a name ="thirdParty"/>
+### Quickstarts
 
-## Integrate with third party services
+* [Write your first extension (Add a hub)](./get-started/node.md)
 
-Integrating with many third party services such as Slack, Trello, and Jenkins is done with **service hooks** and is configured in two easy steps:
+### Reference
 
-1. Create a subscription in Team Services
-2. Set up the integration with your external service of choice
-
-### Available services
-
-| Build and release | Collaborate | Customer support | Plan and track | Integrate |
-|-------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [AppVeyor](../marketplace/integrate/service-hooks/services/appveyor.md) | [Campfire](../marketplace/integrate/service-hooks/services/campfire.md) | [UserVoice](../marketplace/integrate/service-hooks/services/uservoice.md) | [Trello](../marketplace/integrate/service-hooks/services/trello.md) | [AzureService Bus](../marketplace/integrate/service-hooks/services/azure-service-bus.md) |
-| [Bamboo](../marketplace/integrate/service-hooks/services/bamboo.md) | [Flowdock](../marketplace/integrate/service-hooks/services/flowdock.md) | [Zendesk](../marketplace/integrate/service-hooks/services/zendesk.md) |  | [Azure Storage](../marketplace/integrate/service-hooks/services/azure-storage.md) |
-| [Jenkins](../marketplace/integrate/service-hooks/services/jenkins.md) | [HipChat](../marketplace/integrate/service-hooks/services/hipchat.md) |  |  | [Web Hooks](../marketplace/integrate/service-hooks/services/webhooks.md) |
-| [MyGet](../marketplace/integrate/service-hooks/services/myget.md) | [Hubot](../marketplace/integrate/service-hooks/services/hubot.md) |  |  | [Zapier](../marketplace/integrate/service-hooks/services/zapier.md) |
-|  | [Slack](../marketplace/integrate/service-hooks/services/slack.md) |  |  |  |
-
-
-Find out more about integrating with third party services on our [service hooks documentation page](../marketplace/integrate/service-hooks/get-started.md).
+* [Extension manifest reference](./develop/manifest.md)
 
