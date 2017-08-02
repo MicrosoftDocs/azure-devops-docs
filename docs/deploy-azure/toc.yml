@@ -8,20 +8,19 @@
     href: /vsts/build-release/
 - name: Quickstarts
 - items:
-  - name: "Azure-specific QS from build-release 1, contextual link"
+  - name: "QS from build-release 1, contextual link"
     href: /vsts/build-release/
-  - name: "Azure-specific QS from build-release 2, contextual link"
+  - name: "QS from build-release 2, contextual link"
     href: /vsts/build-release/
-  - name: "Azure-specific QS from build-release 3, contextual link"
+  - name: "QS from build-release 3, contextual link"
     href: /vsts/build-release/
 - name: Tutorials
 - items:
-  - name: "Azure-specific QS from build-release or Azure service content 1, contextual link"
+  - name: "Tutorial from build-release or Azure service 1, contextual link"
     href: /vsts/build-release/
-  - name: "Azure-specific QS from build-release or Azure service content 2, contextual link"
+  - name: "Tutorial from build-release or Azure service 2, contextual link"
     href: /vsts/build-release/
-  - name: "Azure-specific QS from build-release or Azure service content 3, contextual link"
+  - name: "Tutorial from build-release or Azure service 3, contextual link"
     href: /azure/virtual-machines/linux/
 - name: Concepts
 - name: Resources
-  
