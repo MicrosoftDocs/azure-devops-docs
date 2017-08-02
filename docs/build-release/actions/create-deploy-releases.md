@@ -19,6 +19,8 @@ You can create a [release](../concepts/releases/index.md) from the
 You can also create a [draft](#create-draft) release. After you create a release,
 you may need to [deploy](#deploy-command) (and redeploy) it manually.
 
+[What's the difference between a release definition and a release?](../concepts/releases/index.md)
+
 <h2 id="create-from-release">Create a release from the Releases tab</h2>
 
 1. In the list of releases for a definition, choose **Create Release**
