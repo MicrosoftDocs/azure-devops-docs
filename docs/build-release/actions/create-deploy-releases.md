@@ -28,12 +28,11 @@ you may need to [deploy](#deploy-command) (and redeploy) it manually.
    ![Creating a new release manually](_img/create-deploy-releases/create-release-manually-01.png)
 
    Alternatively, open the definition for editing. Then choose **Create Release**
-   from the **Release** drop-down list, or open the shortcut menu for a release
-   definition in the left column and choose **Release**.   
+   from the **Release** drop-down list.   
 
    ![Creating a new release manually](_img/create-deploy-releases/create-release-manually-02.png)
 
-1. In the **Create new release for...** dialog, optionally enter a description
+1. In the **Create new release** dialog, optionally enter a description
    for this release. Then select the version of the linked build artifacts
    you want to include in this release. If the version you want to use is not
    shown in the list, type the version number.
@@ -42,12 +41,6 @@ you may need to [deploy](#deploy-command) (and redeploy) it manually.
 
    For artifact sources of type Build, you must enter the **BuildId** value,
    not the **BuildNumber**. See [Artifact variables](../concepts/definitions/release/variables.md#artifact-variables).  
-
-1. Specify the **Automated deployment** setting for each environment.
-   The **Manual deployments** section lists the environments for which users
-   will need to manually initiate deployment.
-
-   ![Specifying the automated deployment for a release](_img/create-deploy-releases/create-release-manually-04.png)
 
 >Specifying manual deployment for an environment is one way to prevent a deployment
 happening until you are sure it is ready to go. However, you can also use
@@ -75,10 +68,6 @@ for some environments.
    choose the **Create release** link in the **Deployments** section.
 
    ![Creating a release from the Builds tab build status view](_img/create-deploy-releases/build-release-03.png)
-
-1. In the **Create new release** dialog select the release definition to use
-   be used with this build (one that is linked to this build definition),
-   and the version of the build artifacts to deploy. Then specify the **Automated deployment** setting for each environment.
 
 <h2 id="create-draft">Create a draft release</h2>
 
