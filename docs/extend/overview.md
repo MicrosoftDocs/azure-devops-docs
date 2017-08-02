@@ -71,3 +71,11 @@ There are dozens of places where you can add to the Team Services user interface
 
 ## Next Steps
 
+### Quickstarts
+
+* [Write your first extension (Add a hub)](./get-started/node.md)
+
+### Reference
+
+* [Extension manifest reference](./develop/manifest.md)
+
