@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 6BF2B72D-9160-4140-B8DE-B2C7C42AC338  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/21/2017
+ms.date: 08/02/2017
 ---
 
 # Configure team settings 
@@ -14,6 +14,8 @@ ms.date: 07/21/2017
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 <!--- Still needs work, versioning, and other team settings from the admin context, add something about something, team-specific widgets--> 
+
+<a id="team-settings"></a>
 
 Within a team project, you [add teams](multiple-teams.md) to support the needs of several feature teams, or an enterprise organized to deliver different products. Each team is then able to configure the Agile tools the way that works for their team, supporting each team to collaborate most effectively in planning and managing their work.  
 

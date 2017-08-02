@@ -10,7 +10,7 @@ ms.topic: landing-page
 ms.date: 07/25/2017
 ---
 
-# Kanban guidance 
+# Kanban
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
@@ -21,13 +21,13 @@ Your Kanban board turns your backlog into an interactive signboard, providing a 
 - [About teams and Agile tools](../about-teams-and-settings.md)  
  
 
-## 5-minute quickstart  
+## 5-minute Quickstarts  
 
 Start tracking work by adding work items, updating status, and inviting others to use your Kanban board.  
 
 - [Kanban](kanban-quickstart.md)  
 
-## Step-by-step tutorials
+## Step-by-Step Tutorials
 
 Whether you use scrum, Kanban, or a combination of Agile methods, you can get started tracking bugs, driving your Git development, and more using the Agile tools available to you. 
 
@@ -43,7 +43,7 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Backlogs, boards, & plans](../backlogs-boards-plans.md)   
 
 
-## How-to guides
+## How-to Guides
 
 - [Add columns](add-columns.md)  
 - [WIP limits](wip-limits.md)  

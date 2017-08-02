@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/14/2017  
+ms.date: 08/02/2017
 ---
 
 
@@ -46,7 +46,7 @@ You set permissions from the web portal. By default, only members of the Project
 
     **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
 
-5.  (Optional) Turn inheritance off. Default is On. By turning inheritance off for a folder, you disallow inheritance of permissions that exist up the chain of query folders. To learn more, see [Permissions, Inheritance](../../setup-admin/permissions.md#inheritance).  
+5.  (Optional) Turn inheritance off. Default is On. By turning inheritance off for a folder, you disallow inheritance of permissions that exist up the chain of query folders. To learn more, see [Permissions, Inheritance](../../concepts/about-permissions.md#inheritance).  
 
 ## Set permissions on shared query 
 

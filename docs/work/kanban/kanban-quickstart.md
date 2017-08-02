@@ -7,8 +7,8 @@ ms.prod: vs-devops-alm
 ms.assetid: 4942A638-9888-461E-969D-0BB9B1FE1736
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/20/2017
---- 
+ms.date: 08/02/2017
+---
 
 # Get started using your Kanban board
 
@@ -83,7 +83,7 @@ All members of a team project will be able to view and contribute to your Kanban
 
 To add users to your team project, see these topics:   
 -  **Team Services**: [Add and manage users](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md)   
--  **On-premises TFS**: [Add users to a team project](../../add-users.md)   
+-  **On-premises TFS**: [Add users to a team project](../../setup-admin/add-users.md)   
 
 
 ## Try this next 

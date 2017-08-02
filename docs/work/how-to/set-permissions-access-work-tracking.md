@@ -7,7 +7,7 @@ ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 06/01/2016
+ms.date: 08/02/2017
 ---
 
 
@@ -58,7 +58,7 @@ You can specify two explicit authorization states for permissions: **Deny** and 
 | Permission 		| Authorization |
 | ----------------- | ------------- |
 | Allow 			| Explicitly grants users to perform the task associated with the specific permission. For users to access a task, the associated permission must be set to **Allow** or **Inherited allow**. |
-| Deny 				| Explicitly prevents users from performing the task associated with the specific permission. **Deny** takes precedence over **Allow**. <br/>For exceptions to these rules, see [Permissions reference](../../setup-admin/permissions.md#inheritance)|
+| Deny 				| Explicitly prevents users from performing the task associated with the specific permission. **Deny** takes precedence over **Allow**. <br/>For exceptions to these rules, see [Permissions reference](../../concepts/about-permissions.md#inheritance)|
 | Inherited allow/Inherited deny 	| Allows or denies a user to perform the task associated with the permission based on the permission set for a group to which the user belongs. |
 | Not set         	| Implicitly prevents users from performing the action associated with the permission. <br/>Because the permission is neither explicitly set to **Deny** nor explicitly set to **Allow**, authorization for that permission can be inherited from other groups of which the user or group is a member. <br/>By default, most permissions are not set to either **Deny** or **Allow**, the permissions are left **Not set**.  |
 
@@ -76,7 +76,7 @@ For example, as a project admin you can grant a user, team group, or other group
 
 In this example, we grant the Team Admins group permissions to move work items to another team project and to permanently delete work items.     
 
-<img src="_img/delete-test-project-permissions.png" alt="Set Team Admin permissions" style="border: 1px solid #CCCCCC;" />
+<img src="../backlogs/_img/delete-test-project-permissions.png" alt="Set Team Admin permissions" style="border: 1px solid #CCCCCC;" />
 
 <a id="restrict-delete-permissions"></a>
 ###Restrict users from deleting work items 
@@ -89,11 +89,11 @@ In addition to the project-level permissions set in the previous section, team m
 
 Open the Security page for the area path and choose the user or group you want to grant permissions.
 
-<img src="_img/delete-test-artifacts-open-area-permissions.png" alt="Open Area path permissions for the team project" style="border: 1px solid #CCCCCC;" />
+<img src="../backlogs/_img/delete-test-artifacts-open-area-permissions.png" alt="Open Area path permissions for the team project" style="border: 1px solid #CCCCCC;" />
 
 Set the permissions for **Manage test plans** and **Manage test suites** to **Allow**.  
 
-<img src="_img/delete-test-artifacts-area-path-permissions.png" alt="Set Area path permissions for the team project" style="border: 1px solid #CCCCCC;" />
+<img src="../backlogs/_img/delete-test-artifacts-area-path-permissions.png" alt="Set Area path permissions for the team project" style="border: 1px solid #CCCCCC;" />
 
 To have full access to the Test feature set, your [access level must be set to Advanced](../connect/change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
 

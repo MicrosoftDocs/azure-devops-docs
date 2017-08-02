@@ -129,7 +129,7 @@ The team administrator role supports configuration of team settings. To be added
 </tr>
 
 <tr>
-<td align="left">[Create and add tags](../track/add-tags-to-work-items.md)</td>
+<td align="left">[Create and add tags](./track/add-tags-to-work-items.md)</td>
 <td>Can assign existing tags</td>
 <td> </td>
 <td>![check mark](_img/checkmark.png)</td>
@@ -341,7 +341,7 @@ If your on-premises TFS deployment includes reporting or SharePoint Products, ad
 
 ## Related notes 
 
-For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../setup-admin/permissions-access.md). For a comprehensive list of all permissions and default groups, see the [Permissions reference for TFS](../../setup-admin/permissions.md). 
+For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../setup-admin/permissions-access.md). For a comprehensive list of all permissions and default groups, see the [Permissions reference for TFS](../setup-admin/permissions.md). 
 
 *	[Set permissions and access for work tracking](how-to/set-permissions-access-work-tracking.md) 
 *	[Get started as a Stakeholder](../quickstart/get-started-stakeholder.md)  

@@ -17,7 +17,7 @@ ms.date: 07/26/2017
 With queries you can ...  
 
 ## Overview  
-- [Adhoc vs managed queries](track/adhoc-vs-managed-queries.md) 
+- [Adhoc vs managed queries](adhoc-vs-managed-queries.md) 
  
 ## 5-minute quickstarts  
 

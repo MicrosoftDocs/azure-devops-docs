@@ -7,7 +7,7 @@ ms.assetid: 1E2F0BDC-C267-4724-86E8-E4BBD75B50B2
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 06/22/2017
+ms.date: 08/02/2017
 ---
 
 
@@ -36,10 +36,8 @@ You can learn more about conducting your sprint planning meeting from these reso
 *	[Build and manage the product backlog](https://msdn.microsoft.com/library/hh765982.aspx) white paper
 
 
-
-
 <a id="set-sprint-goals">  </a>
-##Set sprint goals
+## Set sprint goals
  
 Scrum teams use sprint goals to focus their sprint activities. They often set this goal during their sprint planning meeting. The goal summarizes what the team wants to accomplish by the end of the sprint. By explicitly stating the goal, you create shared understanding within the team of the core objective. The sprint goal can also help guide the team when conflicts arise around priorities. 
 <a id="tips-from-trenches" />
@@ -121,7 +119,7 @@ Core responsibilities of Scrum Masters include:
 *	Help the team work to resolve conflicts and issues that arise and learn from the process.  
 *	Ask questions that reveal hidden issues and confirm that what people are communicating is well understood by the entire team.  
 *	Identify and safeguard the team from potential issues becoming major issues. Just as it's cheaper to fix a bug soon after it's discovered, it's also easier and less disruptive to fix a team issue when it's small and manageable.  
-*	Prevent the team from presenting incomplete user stories during a [sprint review meeting](sprint-burndown.md#sprint-review-meeting).
+*	Prevent the team from presenting incomplete user stories during a [sprint review meeting](#sprint-review-meeting).
 *	Gather, analyze, and present data to business stakeholders in a way that 
 	demonstrates how the team is improving and growing. For example, if your team has significantly increased the amount of value that it has delivered while generating fewer bugs, make the value visible through regular communications to business stakeholders.   
 
@@ -162,3 +160,39 @@ More in-depth and follow-up discussions should take place after the meeting, as 
 
 Many teams delay discussions by using the "virtual parking lot" method. As topics come up that a team member believes warrants further discussion, they can quietly walk to a whiteboard or flipchart and list the topic in the parking lot. At the end of the meeting, the team determines how they'll handle the listed items. 
  
+
+<a id="sprint-review-meeting">  </a>
+## Sprint review meetings
+Conduct your sprint review meetings on the last day of the sprint. Your team demonstrates each product backlog item that it completed in the sprint. The product owner, customers, and stakeholders accept the user stories that meet their expectations and identify any new requirements. Customers often understand their additional needs more fully after seeing the demonstrations and may identify  changes that they want to see.
+
+Based on this meeting, some user stories will be accepted as complete. Incomplete user stories will remain in the product backlog, and new user stories will be added to the  backlog. Both sets of stories will be ranked and either estimated or re-estimated in the next sprint planning meeting.  
+
+After this meeting and the retrospective meeting, your team will plan the next sprint. Because business needs change quickly, you can take advantage of this meeting with your product owner, customers, and stakeholders to review the priorities of the product backlog again.
+
+<a id="sprint-retrospective-meeting">  </a>
+## Sprint retrospective meetings
+Retrospectives, when conducted well and at regular intervals, support continuous improvement. 
+
+The sprint retrospective meeting typically occurs on the last day of the sprint, after the sprint review meeting. In this meeting, your team explores its execution of Scrum and what might need tweaking. 
+
+Based on discussions, your team might decide to change one or more processes to improve its own effectiveness, productivity, quality, and satisfaction. This meeting and the resulting improvements are critical to the agile principle of self-organization. 
+
+Look to address these areas during your team sprint retrospectives:  
+
+*	Issues that affected your team's general effectiveness, productivity, and quality.
+*	Elements that impacted your team's overall satisfaction and project flow.
+*	What happened to cause incomplete backlog items? What actions will the team take to prevent these issues in the future?  
+	
+	For example, consider a team that had several tasks that only one individual on the team could perform. The isolated expertise created a critical path that threatened the sprint's success. The individual team member put in extra hours while other team members were frustrated that they could not do more to help. Going forward, the team decided to practice [eXtreme Programming](http://www.extremeprogramming.org) to help correct this problem over time.
+
+As a team, work to determine whether to adapt one or more processes to minimize the occurrence of problems during the sprint. 
+
+In some cases, your team may need to do some work to implement an improvement. For example, a team that found themselves negatively impacted by too many failed builds decided to implement continuous integration. Because they didn't want to disrupt process, they allocated a few hours to set up a trial build before turning it on in their production build. To represent this work, they created a spike and prioritized that work against the rest of the product backlog.
+
+## Related notes
+
+For additional guidance, see:
+*	[What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)
+*   [Agile Principles and Values by Jeff Sutherland](https://msdn.microsoft.com/library/dd997578.aspx)
+*	[Putting the Fun Back In Your Retrospectives](http://www.agilealliance.org/files/session_pdfs/Putting%20the%20Fun%20Back%20In%20Your%20Retrospectives.pdf)  
+*	[Agile Retrospectives: Making Good Teams Great](http://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649/)	

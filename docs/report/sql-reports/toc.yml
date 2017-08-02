@@ -1,11 +1,7 @@
 - name: Overview
   items:
-  - name: Excel reports
-    href: ../excel/excel-reports.md
   - name: Reporting Services Reports
     href: reporting-services-reports.md
-  - name: Project portal dashboards (TFS)
-    href: ../sharepoint-dashboards/project-portal-dashboards.md
 - name: Quickstarts
   items:
   - name: Create Excel reports from a work item query
@@ -48,16 +44,6 @@
       href: ../admin/view-organize-configure-reports-using-report-manager.md
     - name: "View, upload, and organize Reporting Services reports"
       href: ../admin/view-upload-organize-reporting-services-reports.md
-  - name: Work with the project portal (SharePoint)
-    items:
-    - name: Configure or add a project portal
-      href: ../sharepoint-dashboards/configure-or-add-a-project-portal.md
-    - name: Manage documents and document libraries
-      href: ../sharepoint-dashboards/manage-documents-and-document-libraries.md
-    - name: Configure or redirect process guidance
-      href: ../sharepoint-dashboards/configure-or-redirect-process-guidance.md
-    - name: Upload and refresh Excel reports
-      href: ../sharepoint-dashboards/upload-refresh-excel-reports.md
 - name: Concepts
   items:
   - name: Choose data source and authoring tool
@@ -207,24 +193,6 @@
       href: perspective-test-analyze-report-test-results.md
     - name: Work items and test case data
       href: perspective-test-analyze-report-work.md
-  - name: Project portal dashboards (TFS)
-    items:
-    - name: My Dashboard (Agile and CMMI)
-      href: ../sharepoint-dashboards/my-dashboard-agile-cmmi.md
-    - name: Project dashboard (Agile and CMMI)
-      href: ../sharepoint-dashboards/project-dashboard-agile-cmmi.md
-    - name: Bugs dashboard (Agile and CMMI)
-      href: ../sharepoint-dashboards/bugs-dashboard-agile-cmmi.md
-    - name: Build dashboard  (Agile and CMMI)
-      href: ../sharepoint-dashboards/build-dashboard-agile-cmmi.md
-    - name: Progress dashboard (Agile and CMMI)
-      href: ../sharepoint-dashboards/progress-dashboard-agile-cmmi.md
-    - name: Quality dashboard (Agile and CMMI)
-      href: ../sharepoint-dashboards/quality-dashboard-agile-cmmi.md
-    - name: Test dashboard (Agile and CMMI)
-      href: ../sharepoint-dashboards/test-dashboard-agile-cmmi.md
-    - name: Release (Scrum)
-      href: ../sharepoint-dashboards/release-scrum.md
 - name: Troubleshooting
   items:
   - name: Address inaccuracies published for summary values
