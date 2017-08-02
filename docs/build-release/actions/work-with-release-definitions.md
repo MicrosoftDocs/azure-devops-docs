@@ -122,20 +122,10 @@ target server(s) or locations where you will deploy your app.
 
    ![Adding a new environment to a release definition](_img/work-with-release-definitions/new-environment.png)
 
-****************************
-1. In the **Add new environment** dialog select a template for the new environment to automatically add
-   appropriate tasks, or create an empty environment with no default tasks.  
+1. The template selector panel opens. Follow [these steps](#create-template)
+   to configure the new environment.
 
-1. Select the [pre-deployment approval](../concepts/definitions/release/environments.md#approvals),
-   [trigger](../concepts/definitions/release/triggers.md#env-triggers), and
-   [queue](../concepts/agents/pools-queues.md) settings for the new environment.
-   You can quickly select users or groups as pre-deployment approvers
-   by typing part of the name.
-
-1. Choose **Create** and then edit the new environment name as required.
-
-After you have created and configured your environments,
-[add tasks to them](#add-tasks).
+1. After you have created and configured your environments, [add tasks to them](#add-tasks).
 
 >You can add environments using the [Release Management REST API](../../integrate/overview.md).
 
@@ -172,12 +162,19 @@ Select the cloned environment to open the properties panel, and update the
 <h2 id="define-processes">Define processes in an environment</h2>
 
 The deployment steps in an [environment](../concepts/definitions/release/environments.md)
-are described using [tasks](../concepts/process/tasks.md).
-
-************************************************
+are described using [task phases](../concepts/process/phases.md) and [tasks](../concepts/process/tasks.md).
 
 <h3 id="add-tasks">Add tasks</h3>
 
+The **Tasks** tab of the release definition editor shows a list of the task phases and
+tasks defined for each environment. Open the tasks list for an environment by
+choosing the "phases and tasks" link in the environment, or by selecting the environment
+name in the **Tasks** drop-down list.
+
+![Opening the tasks tab](_img/work-with-release-definitions/goto-tasks.png) 
+
+
+************************************************
 Select an environment in the definition and choose **+ Add tasks**. By default,
 the task selector shows tasks generally used in a release definition.
 More tasks are available in the other tabs of the **Task catalog** dialog.
