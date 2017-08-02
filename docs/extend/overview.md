@@ -1,24 +1,21 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Developing extensions for Visual Studio Team Services and Team Foundation Server
-description: Overview of creating extensions for Visual Studio Team Services
+title: Developing extensions for Visual Studio Team Services (VSTS) and Team Foundation Server
+description: Overview of creating extensions for Visual Studio Team Services (VSTS)
 ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/23/2016
 ---
 
-# Overview of integrating with Visual Studio Team Services
+# Creating custom extensions for Visual Studio Team Services (VSTS)
 
 >[!NOTE]
-> This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, 
-> visit the [Marketplace documentation](../marketplace/extend-overview.md).
+> This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, visit the [Marketplace documentation](../marketplace/extend-overview.md). For information on 
 
 
-## Create custom extensions
-
-### What are extensions?
+## What are extensions?
 
 Extensions are simple add-ons that can be used to customize and extend your DevOps experience with Team Services. 
 They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.
@@ -26,7 +23,7 @@ They utilize our [RESTful API Library](https://visualstudio.com/integrate/api/ov
 The [Visual Studio Marketplace](https://marketplace.visualstudio.com/VSTS) is where extensions are published, 
 where they can be kept privately for you and your team or shared with the millions of developers currently using Team Services. 
 
-### What makes up an extension?
+## What makes up an extension?
 <div align="center" style="padding-top:15px">
 <img src="./_img/extension-components.png" style="padding-bottom:20px">
 </div>
@@ -39,7 +36,7 @@ All of these are bundled up to make a Team Extensions Service Package (.vsix fil
 extensions can be installed directly by Team Services users.
 
 
-### What can you do with extensions?
+## What can you do with extensions?
 
 There are dozens of places where you can add to the Team Services user interface, and we're adding more every sprint. Learn about all of the places where you can add a hub in the [contributions reference](./reference/targets/overview.md).
 
