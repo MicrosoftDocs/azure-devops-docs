@@ -6,7 +6,7 @@
   - name: Release
 - name: Quickstarts
   items:
-  - name: CI/CD to Azure web app
+  - name: CI/CD to web app
     items:
     - name: ASP.NET Core
       href: apps/aspnet-core-to-azure-webapp.md
