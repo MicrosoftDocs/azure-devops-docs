@@ -15,7 +15,7 @@ ms.date: 07/26/2017
   <div class="container">
     <ul class="cardsY panelContent featuredContent">
       <li>
-        <a href="/user-guide">
+        <a href="/vsts/user-guide">
           <div class="cardSize">
             <div class="cardPadding">
               <div class="card">
