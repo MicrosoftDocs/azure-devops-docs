@@ -76,7 +76,7 @@ This topic shows you how to:
    ![Setting the deployment queue](_img/work-with-release-definitions/check-queue.png)
 
 1. If required, or if you selected the empty process template, you can now
-   [add more tasks](#add-tasks) and [additional environments](add-envir).
+   [add more tasks](#add-tasks) and [additional environments](#add-envir).
 
 <a name="replicate-def"></a>
 ### Replicate a definition or environment
