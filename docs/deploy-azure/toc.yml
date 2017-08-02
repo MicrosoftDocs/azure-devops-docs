@@ -1,0 +1,27 @@
+- name: CI/CD to Azure
+  href: index.md
+- name: Overview
+- items:
+  - name: "Deploy to Azure with VSTS"
+    href: overview-deploy-azure.md
+  - name: "Build and Release"
+    href: /vsts/build-release/
+- name: Quickstarts
+- items:
+  - name: "Azure-specific QS from build-release 1, contextual link"
+    href: /vsts/build-release/
+  - name: "Azure-specific QS from build-release 2, contextual link"
+    href: /vsts/build-release/
+  - name: "Azure-specific QS from build-release 3, contextual link"
+    href: /vsts/build-release/
+- name: Tutorials
+- items:
+  - name: "Azure-specific QS from build-release or Azure service content 1, contextual link"
+    href: /vsts/build-release/
+  - name: "Azure-specific QS from build-release or Azure service content 2, contextual link"
+    href: /vsts/build-release/
+  - name: "Azure-specific QS from build-release or Azure service content 3, contextual link"
+    href: /azure/virtual-machines/linux/
+- name: Concepts
+- name: Resources
+  
