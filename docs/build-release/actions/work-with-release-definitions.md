@@ -118,10 +118,11 @@ A release definition, by default, contains a single [environment](../concepts/de
 Configure additional environments in a release definition to represent the
 target server(s) or locations where you will deploy your app.
 
-1. Open the **+ Add environment** list and choose **Create new environment**.
+1. Open the **+ Add** list and choose **New environment**.
 
-   ![Adding a new environment to a release definition](_img/work-with-release-definitions/add-environment.png)
+   ![Adding a new environment to a release definition](_img/work-with-release-definitions/new-environment.png)
 
+****************************
 1. In the **Add new environment** dialog select a template for the new environment to automatically add
    appropriate tasks, or create an empty environment with no default tasks.  
 
@@ -138,7 +139,7 @@ After you have created and configured your environments,
 
 >You can add environments using the [Release Management REST API](../../integrate/overview.md).
 
-<h3 id="clone-environment">Clone an environment</h3>
+<h3 id="clone-environment">Clone an existing environment</h3>
 
 A release definition often contains several environments such as
 development, testing, QA, and production. Typically, all of these
@@ -151,29 +152,29 @@ After you have added an environment to a release definition and configured
 it by adding tasks and setting the properties for each one, clone
 it to create another environment within the same definition.
 
-You can clone individual environments within a definition in the **Pipeline** tab.
+You can clone individual environments directly within a definition in the **Pipeline** tab.
 
-![CLoning an existing environment](_img/work-with-release-definitions/clone-environment-03.png)
- 
+![Cloning an existing environment directly](_img/work-with-release-definitions/clone-environment-03.png)
 
-Alternatively, select the environment you want to clone in
-the environments column, open the **+ Add environment** list,
-and choose **Clone selected environment**.
+Alternatively, select the environment you want to clone, open the **+ Add** list,
+and choose **Clone environment**.
 
-![Cloning an environment in a release definition](_img/work-with-release-definitions/clone-environment-02.png)
+![Cloning a selected environment](_img/work-with-release-definitions/clone-environment-04.png)
 
 The cloned environment has the same tasks, task properties, and
 configuration settings as the original.
 
-The **Add new environment** dialog that opens lets you change the
+Select the cloned environment to open the properties panel, and update the
 [pre-deployment approval](../concepts/definitions/release/environments.md#approvals),
 [trigger](../concepts/definitions/release/triggers.md#env-triggers), and
-[queue](../concepts/agents/pools-queues.md) settings for the cloned environment.
+[queue](../concepts/agents/pools-queues.md) settings for the cloned environment as required.
 
 <h2 id="define-processes">Define processes in an environment</h2>
 
 The deployment steps in an [environment](../concepts/definitions/release/environments.md)
 are described using [tasks](../concepts/process/tasks.md).
+
+************************************************
 
 <h3 id="add-tasks">Add tasks</h3>
 
@@ -187,7 +188,7 @@ where you can download and install additional tasks.
 You can add tasks specifically for execution on the release agent,
 on the server, or on a deployment group.
 
-![Adding a new task phase](_img/work-with-release-definitions/task-phases.png)
+![Adding a new task phase](_img/work-with-release-definitions/add-phase.png)
 
 For more details, see [Environments](../concepts/definitions/release/environments.md)
 and [Phases in Build and Release Management](../concepts/process/phases.md).
