@@ -1,6 +1,6 @@
 ---
-title: User guide to getting started with DevOps and Agile tools | VSTS & TFS    
-description: Guide to getting started using DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Visual Studio Team Services and TFS Documentation | VSTS & TFS    
+description: Docs for DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 layout: HubPage
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview  
@@ -15,7 +15,7 @@ ms.date: 07/26/2017
   <div class="container">
     <ul class="cardsY panelContent featuredContent">
       <li>
-        <a href="/vsts">
+        <a href="/user-guide">
           <div class="cardSize">
             <div class="cardPadding">
               <div class="card">
@@ -25,7 +25,7 @@ ms.date: 07/26/2017
                   </div>
                 </div>
                 <div class="cardText">
-                  <span class="likeAnH3">Get Started Guide for VSTS and TFS</span>
+                  <span class="likeAnH3">New User Guide for VSTS and TFS</span>
                 </div>
               </div>
             </div>
@@ -656,11 +656,11 @@ ms.date: 07/26/2017
         </ul>
       </li>
       <li>
-        <a href="#integrate">Integrate</a>
-        <ul id="integrate">
+        <a href="#ecosystem">Ecosystem</a>
+        <ul id="ecosystem">
           <li>
-            <a href="#integrate-all"></a>
-            <ul id="integrate-all" class="cardsF">
+            <a href="#ecosystem-all"></a>
+            <ul id="ecosystem-all" class="cardsF">
               <li class="fullSpan intro">
                 <div class="container">
                   <p>Introduction text lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore magna aliqua</p>
