@@ -159,7 +159,7 @@ net start w3svc
 When the deployment is done, verify that your changes are live in your web browser: `
 http://<publicIpAddress>`
 
-**Congratulations!** Your ready to collaborate with a team on an ASP.NET Core app with a CI/CD process that automatically deploys your latest work to your web site.
+You're ready to collaborate with a team on an ASP.NET Core app with a CI/CD process that automatically deploys your latest work to your web site.
 
 ## Next steps
 
