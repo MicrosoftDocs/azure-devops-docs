@@ -63,7 +63,7 @@ In the dialog that prompts to **Create release definition**, select **Yes**.
 
 In the **Create release definition** wizard, select the **IIS Website and SQL Database deployment** template, and click **Apply**.
 
-![Screenshot showing IIS template](../../apps/_img/aspnet-core-to-windows-vm/cicd-get-started-iis-template.png)
+![Screenshot showing IIS template](../../apps/_img/aspnet-core-to-windows-vm/select-iis-website-and-sql-database-deployment-release-template.png)
 
 Click **Tasks**, and then select the **SQL Deployment** phase. Click 'X' to delete this phase. We won't be deploying a database in this quickstart.
 

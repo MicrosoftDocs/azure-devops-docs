@@ -98,11 +98,9 @@ net start w3svc
 
 [//]: # (TODO: ![Screenshot showing release action on build summary](_shared/_img/cicd-get-started-dotnetcore-release.png)
 
-[//]: # (TODO: In the dialog that prompts to **Create release definition**, select **Yes**.)
-
 [//]: # (TODO: In the **Create release definition** wizard, select the **IIS Website and SQL Database deployment** template, and click **Apply**.)
 
-[//]: # (TODO: ![Screenshot showing IIS template](_img/aspnet-core-to-windows-vm/cicd-get-started-iis-template.png)
+[//]: # (TODO: ![Screenshot showing IIS template](_img/aspnet-core-to-windows-vm/select-iis-website-and-sql-database-deployment-release-template.png)
 
 [//]: # (TODO: Click **Tasks**, and then select the **SQL Deployment** phase. Click 'X' to delete this phase. We won't be deploying a database in this quickstart.)
 
@@ -122,23 +120,21 @@ net start w3svc
 
  ![Screenshot showing release action on build summary](_shared/_img/cicd-get-started-dotnetcore-release.png)
 
-1. On the dialog box that prompts you to **Create release definition**, click **Yes**.
-
 1. In the **Create release definition** wizard, select **IIS Website and SQL Database deployment** template, and then click **Apply**.
 
- ![Screenshot showing IIS template](_img/aspnet-core-to-windows-vm/cicd-get-started-iis-template.png)
+ ![Screenshot showing IIS template](_img/aspnet-core-to-windows-vm/select-iis-website-and-sql-database-deployment-release-template.png)
 
-1. Click **Tasks**, and select the **SQL Deployment** phase. Click **X** to delete this phase. (We won't be deploying a database in this quickstart.)
+1. Select the **Tasks** tab, and then select the **SQL Deployment** phase. In the upper-right corner, click **X Remove** to delete this phase. (We won't be deploying a database in this quickstart.)
 
-1. Click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*. In the **Machine tags** box, select **Add** and choose the *Web* tag.
-
-1. Select the **IIS Web App Manage** task and then click **X** to delete this task. (We won't create a new website in this quickstart. Instead, we'll deploy to the **default web site**.)
-
-1. Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Leave all the other default settings.
+1. Click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*. In the **Machine tags** box, enter `web`.
 
  ![Screenshot showing release definition](_img/aspnet-core-to-windows-vm/cicd-get-started-release-definition.png)
 
-1. Select the artifact trigger, and then on the right side make sure the **Continuous deployment trigger** is enabled.
+1. Select the **IIS Web App Manage** task, and then in the upper-right corner, click **X Remove** to delete this task. (We won't create a new website in this quickstart. Instead, we'll deploy to the **default web site**.)
+
+1. Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Expand **Advanced Deployment Options** and then select **Take App Offline**. Leave all the other default settings.
+
+1. Select the **Pipeline** tab, select the artifact trigger, and then on the right side make sure the **Continuous deployment trigger** is enabled.
 
  ![build artifact trigger in release definition](_shared/_img/build-artifact-trigger-in-release-definition.png)
 
@@ -154,7 +150,7 @@ net start w3svc
 
  ![new release created message](_shared/_img/new-release-created-message.png)
 
-  You can watch the live logs for the deployment as it happens. Wait for the release to be deployed to the Azure web app.
+1. Select the **Logs** tab to watch the live logs from the deployment as it happens. Wait for the release to be deployed to the Azure web app.
 
 1. Once deployment has completed, open your web browser and test your web app: `http://<publicIpAddress>`
 
@@ -163,12 +159,12 @@ net start w3svc
 In the VSTS **Code** hub, edit the **Views/Home/Index.cshtml** file and make a simple change above the slide carousel `div` tag:
 
 ```html
-<h2>Demo of ASP.NET Core CI/CD!!</h2>
+<h1>Demo of ASP.NET Core CI/CD!!</h1>
 ```
 
 ![Screenshot showing update to code](_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-update-code.png)
 
-Commit your changes to trigger a CI build. When the build completes, it triggers an automatic deployment of the Azure web app.
+**Commit** your changes to trigger a CI build. When the build completes, it triggers an automatic deployment of the Azure web app.
 
 When the deployment is done, verify that your changes are live in your web browser: `
 http://<publicIpAddress>`
