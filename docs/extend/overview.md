@@ -46,25 +46,6 @@ There are dozens of places where you can add to the Team Services user interface
 - Create [your own hub](./develop/add-hub.md) to embed new capabilities within our Agile, code, build, and test experiences. 
 - Develop [actions](./develop/add-action.md) that can be run on hubs, whether they're ours or ones you've created. 
 
-<div name="row" style="padding-top:15px">
-    <div style="vertical-align:top;display:inline-block;float:left;width:33%">
-        <div class="index-button" align="center" style="padding-right:2px">
-        <a href="./get-started/node.md"><button style="background-color:#f6f6f6;border:solid 2px #E6E6E6;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Build your first extension</button></a>
-        </div>
-    </div>
-    <div style="vertical-align:top;display:inline-block;float:left;width:33%">
-        <div class="index-button" align="center" style="padding-left:2px;padding-right:2px">
-        <a href="./get-started/tutorials.md"><button style="background-color:#f6f6f6;border:solid 2px #E6E6E6;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Find extension tutorials</button></a>
-        </div>
-    </div>
-    <div style="vertical-align:top;display:inline-block;float:left;width:33%">
-        <div class="index-button" align="center" style="padding-left:2px">
-        <a href="./develop/samples-overview.md"><button style="background-color:#f6f6f6;border:solid 2px #E6E6E6;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Browse sample extensions</button></a>
-        </div>
-    </div>
-</div>
-
-<div style="clear:both"></div>
 
 ## Next Steps
 
