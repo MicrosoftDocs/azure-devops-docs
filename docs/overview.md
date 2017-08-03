@@ -123,7 +123,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-4 col-md-3 item">
       <div class="title">
-        <a href="work/track/using-queries">Queries</a>
+        <a href="work/track/using-queries.md">Queries</a>
         <div class="desc">
           Find work items to bulk update and to chart progress and trends.
         </div>
