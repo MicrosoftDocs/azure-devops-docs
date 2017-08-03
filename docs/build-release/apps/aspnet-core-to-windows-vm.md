@@ -70,6 +70,8 @@ net start w3svc
 
 ## Set up continuous integration
 
+Continuous Integration (CI) is the process of automating the build and testing of code every time a team member commits changes to version control. Here you'll create a CI build definition that helps team keep the master branch clean.
+
 1. On the **Files** tab of the **Code** hub, click **Set up build**.
 
  ![Screenshot showing button to set up build for a repository](_shared/_img/set-up-first-build-from-code-hub.png)
@@ -115,6 +117,8 @@ net start w3svc
 [//]: # (TODO: [!INCLUDE [temp](_shared/set-up-cd-3.md])
 
 ## Set up continuous deployment
+
+Continuous deployment (CD) is a lean practice that your team can use to keep production fresh. Here you'll set up a short automatic path from the availability of new code in version control to deployment. Specifically, you'll define a CD release management process that picks up the artifacts from your CI build and deploys you app to the IIS web server hosted in your Windows VM.
 
 1. Once the build succeeds, click the **Release** action on the build summary page.
 
