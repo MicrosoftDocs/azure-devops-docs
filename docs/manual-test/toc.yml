@@ -41,7 +41,7 @@
       - name: Track test status
         href: getting-started/track-test-status.md
       - name: Delete test artifacts
-        href: ../work/backlogs/remove-delete-work-items.md#delete-test?toc=/vsts/manual-test/toc.json
+        href: ../work/backlogs/remove-delete-work-items.md?toc=/vsts/manual-test/toc.json
       - name: Perform user acceptance testing
         href: getting-started/user-acceptance-testing.md
       - name: Test different configurations
