@@ -244,4 +244,4 @@ We welcome your suggestions:
 
  - [Visual Studio IDE Send-a-Smile](http://go.microsoft.com/fwlink/?LinkId=517102)
 
-* Propose and vote on ideas on [UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio).
+* ropose and vote on ideas on [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services).

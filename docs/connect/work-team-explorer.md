@@ -373,10 +373,4 @@ Additional requirements may apply.
 >For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](/docs/work/process/new-work-item-experience).  
 
 
- 
-<a id="provide-feedback"></a>
-### Feedback and support  
-
-We welcome your feedback. 
-
-Send suggestions via **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**, and follow us on **[Twitter](https://twitter.com/VSTeam) @VSTeam**. 
+[!INCLUDE [temp](../_shared/help-support-shared.md)]

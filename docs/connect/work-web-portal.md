@@ -603,12 +603,7 @@ Here's a list of the most frequently encountered connection problems and what to
 
 For more troubleshooting tips, [TF31002: Unable to connect to this Team Foundation Server](../work/reference/error/tf31002-unable-connect-tfs.md).
 
-<a id="provide-feedback"></a>
-### Feedback and support  
-
-We welcome your feedback.
-
-Send suggestions via **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**, and follow us on **[Twitter](https://twitter.com/VSTeam) @VSTeam**.  
+[!INCLUDE [temp](../_shared/help-support-shared.md)] 
 
 <!---
 Overview

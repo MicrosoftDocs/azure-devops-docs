@@ -132,6 +132,7 @@ you can request it now.
 
 	[Need help?](#get-support)
 
+<a name="approve-extension-requests"></a>
 ## Approve extension requests for your Team Services account
 
 If you're the Team Services project collection administrator or account owner, 

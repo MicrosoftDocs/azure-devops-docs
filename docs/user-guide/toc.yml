@@ -72,11 +72,11 @@
     - name: Install an extension for Team Services
       href: ../marketplace/get-vsts-extensions.md
     - name: Request permissions for Team Services extensions
-      href: ../marketplace/request-vsts-extension.md
+      href: ../marketplace/get-vsts-extension.md#request
     - name: Approve requests for Team Services extensions
-      href: ../marketplace/approve-vsts-extensions.md
+      href: ../marketplace/get-vsts-extensions.md#approve-extension-requests
   - name: Account preferences
-    href: account-preferences.md
+    href: ../setup-admin/account-preferences.md
   - name: Migrate from TFS to Team Services Tutorial
     href: https://www.visualstudio.com/articles/migration-overview
   - name: Integrate with other services
