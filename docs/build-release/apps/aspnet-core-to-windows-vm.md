@@ -19,12 +19,13 @@ ms.custom: mvc
 
 # CI/CD of an ASP.NET Core app to a Windows virtual machine
 
-Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your ASP.NET Core apps. This quickstart shows how to set up CI and CD to deploy an ASP.NET Core application to a Windows virtual machine (VM) in Azure.
-You will use the VSTS portal to set up CI/CD. In the CI process, you'll build the app using MSBuild and run tests using VSTest.
+Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your ASP.NET Core apps. This quickstart shows how to set up CI and CD processes to deploy an ASP.NET Core application to a Windows virtual machine (VM) in Azure.
+
+You'll use the VSTS portal to set up CI/CD. Your CI process runs the .NET Core commands to restore packages, build and test the app, and finally publish artifacts. Your CD process automatically picks up these artifacts and deploys them to your environment. Finally, you'll test it all out by pushing a small code change into your team's git repo. Your CI/CD processes will automatically deploy the change.
 
 ![A typical release pipeline for web applications](../get-started/_img/ci-cd/part-1/ReleasePipeline.png)
 
-With your CI/CD processes in place, you'll push a change into your team's git repo and the results will automatically show up on your site.
+Your code changes automatically appear on your site:
 
 ![Screenshot showing ASP.NET Core web app](_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
@@ -38,13 +39,13 @@ Running an ASP.NET Core app on Windows requires some dependencies.
 
 On your Windows VM, install the [.NET Core Windows Server Hosting](https://go.microsoft.com/fwlink/?linkid=848766) bundle. The bundle will install the .NET Core Runtime, .NET Core Library, and the [ASP.NET Core Module](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps). The module creates the reverse-proxy between IIS and the Kestrel server.
 
-After the installation is done, to effect a change to the system PATH, run the following commands.
+After the installation is done, to effect a change to the system PATH, run the following commands from a PowerShell prompt on your VM:
 
-```cmd
+```ps
 net stop was /y
 ```
 
-```
+```ps
 net start w3svc
 ```
 
