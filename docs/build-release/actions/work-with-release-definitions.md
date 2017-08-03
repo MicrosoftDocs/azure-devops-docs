@@ -173,17 +173,21 @@ name in the **Tasks** drop-down list.
 
 ![Opening the tasks tab](_img/work-with-release-definitions/goto-tasks.png) 
 
+By default, unless you chose the **Empty process** template when you created your release definition,
+the definition will contain a **Run on agent** phase. Add tasks to a phase by choosing the **+**
+icon in the phase item to open the **Add tasks** panel. Select the type of task you need (or choose
+**All**), or search for a task by name. When you find the task, choose the **Add** button
+that appears when you select the task.
 
-************************************************
-Select an environment in the definition and choose **+ Add tasks**. By default,
-the task selector shows tasks generally used in a release definition.
-More tasks are available in the other tabs of the **Task catalog** dialog.
-A link at the bottom of the list takes you to
+![Adding tasks to a phase](_img/work-with-release-definitions/add-tasks.png) 
+
+> A link at the top of the list takes you to
 [Visual Studio Marketplace](https://marketplace.visualstudio.com/VSTS)
 where you can download and install additional tasks.
 
-You can add tasks specifically for execution on the release agent,
-on the server, or on a deployment group.
+You can add tasks specifically for execution on the deployment agent,
+on a deployment group, or on the server without using an agent by 
+adding the appropriate type of [task phase](../concepts/process/phases.md).
 
 ![Adding a new task phase](_img/work-with-release-definitions/add-phase.png)
 
