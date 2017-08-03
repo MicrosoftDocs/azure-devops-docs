@@ -1,10 +1,69 @@
 - name: Get started
   href: index.md
 - name: Overview
+  items:
+  - name: "What is Visual Studio Team Services?"
+    href: what-is-vsts.md
+  - name: "What is Team Foundation Server?"
+    href: what-is-tfs.md
+  - name: Overview of services
+    href: ../services.md
 - name: Quickstarts
+  items:
+  - name: Set up/sign up with Team Services
+    href: ../setup-admin/team-services/sign-up-for-visual-studio-team-services.md
+  - name: Code with Git
+    href: ../git/gitquickstart.md
+  - name: Track work via Kanban 
+    href: ../work/kanban/kanban-quickstart.md
+  - name: Stakeholder access
+    href: ../quickstart/get-started-stakeholder.md
 - name: Tutorials
-- name: How-to guides 
+  items:
+  - name: Set your preferences
+    href: ../setup-admin/account-preferences.md
+  - name: Set favorites
+    href: ../collaborate/set-favorites.md
+  - name: "Follow work & pull requests"
+    href: ../collaborate/follow-work-items.md
+  - name: Authenticate with personal access tokens
+    href: ../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md
 - name: Concepts
+  items:
+  - name: "Team projects, teams, and repos (NEW)"
+    href: team-projects-teams-repos.md
+  - name: Access levels (NEW)
+    href: ../concepts/access-levels.md
+  - name: Source control (NEW)
+    href: ../concepts/source-control.md
+  - name: "Kanban & Agile (NEW)"
+    href: ../concepts/kanban-agile.md
+  - name: "Clients & tools"
+    href: ../tools.md
+  - name: Software development roles
+    href: ../roles.md
+  - name: "How Team Services & TFS differ"
+    href: ../about-vsts-tfs.md
+- name: How-to guides
+  items:
+  - name: Connect to a team project
+    href: ../connect/connect-team-projects.md
+  - name: Go mobile
+    href: ../collaborate/mobile-work.md
+  - name: Switch project or team focus
+    href: ../work/how-to/switch-team-context-work.md
+- name: Reference
+  items:
+  - name: "Permissions & access"
+    href: ../setup-admin/permissions-access.md
+  - name: Keyboard shortcuts
+    href: ../reference/keyboard-shortcuts.md
+  - name: Markdown guidance
+    href: ../reference/markdown-guidance.md
+  - name: FAQs
+    href: ../faqs.md
+  - name: Navigate in the web portal
+    href: ../connect/work-web-portal.md
 - name: Resources
   items:
   - name: "Marketplace, billing, and extensions"

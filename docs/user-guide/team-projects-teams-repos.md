@@ -11,9 +11,17 @@ ms.date: 07/14/2017
 ---
 
 # Team projects, teams, and repositories 
-<b>Team Services | TFS 2017 | TFS 2015  </b> 
+<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 NEW - BEING WRITTEN 
+
+## What is a team project? 
+
+## What are teams and how are they used? 
+
+
+## What is a repository? 
+
 
 <a id="collection-project-team-structure">  </a>
 ### Collection-project-team structure
