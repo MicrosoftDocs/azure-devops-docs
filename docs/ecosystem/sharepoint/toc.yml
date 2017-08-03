@@ -9,7 +9,7 @@
 - name: Quickstarts
   items:
   - name: Share information using the project portal
-    href: ../../report/sharepoint-dashboards/share-information-using-the-project-portal.md
+    href: ../../report/sharepoint-dashboards/share-information-using-the-project-portal
 - name: Tutorials
   items:
   - name: Work with the SharePoint portal 
