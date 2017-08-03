@@ -1,13 +1,13 @@
 - name: CI/CD to Azure
   href: index.md
 - name: Overview
-- items:
+  items:
   - name: "Deploy to Azure with VSTS"
     href: overview-deploy-azure.md
   - name: "Build and Release"
     href: /vsts/build-release/
 - name: Quickstarts
-- items:
+  items:
   - name: "QS from build-release 1, contextual link"
     href: /vsts/build-release/
   - name: "QS from build-release 2, contextual link"
@@ -15,7 +15,7 @@
   - name: "QS from build-release 3, contextual link"
     href: /vsts/build-release/
 - name: Tutorials
-- items:
+  items:
   - name: "Tutorial from build-release or Azure service 1, contextual link"
     href: /vsts/build-release/
   - name: "Tutorial from build-release or Azure service 2, contextual link"
