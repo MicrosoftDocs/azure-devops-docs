@@ -107,8 +107,4 @@ To see what Azure Continuous Delivery did, you can examine the artifacs and defi
 
    ![The generated release definition](_img/aspnet-core-to-azure-webapp/release-definition.png)
 
-## Next steps
-
-You can modify the parameters or add additional tasks to both the build and release definition to meet the CI/CD needs of your application. You can also extend the release definition to include multiple stages. For more information about how to extend the CI/CD pipeline, see the tutorials on **Create a build definition** and **Create a release definition**.
-
-[links to other quickstarts and tutorials]
+[!INCLUDE [include](_shared/quickstart-next-steps.md)]

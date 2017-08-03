@@ -165,7 +165,4 @@ http://<publicIpAddress>`
 
 You're ready to collaborate with a team on an ASP.NET Core app with a CI/CD process that automatically deploys your latest work to your web site.
 
-## Next steps
-
-_TODO: A screenshot of the build tasks and maybe also a screenshot of the release definition. Links to topics that cover possible next steps. Could be app-type specific next steps or general ci/cd changes supported by other tutorials and how-to topics._
-
+[!INCLUDE [include](_shared/quickstart-next-steps.md)]
