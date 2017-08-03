@@ -9,7 +9,7 @@
     - name: Team Services and TFS
       items:
       - name: Test from the Kanban board
-        href: ../work/kanban/add-run-update-tests.md?toc=vsts/manual-test/toc.json
+        href: ../work/kanban/add-run-update-tests.md?toc=/vsts/manual-test/toc.json
       - name: Create a test plan
         href: getting-started/create-a-test-plan.md
       - name: Create test cases
@@ -41,7 +41,7 @@
       - name: Track test status
         href: getting-started/track-test-status.md
       - name: Delete test artifacts
-        href: ../work/backlogs/remove-delete-work-items.md#delete-test?toc=vsts/manual-test/toc.json
+        href: ../work/backlogs/remove-delete-work-items.md#delete-test?toc=/vsts/manual-test/toc.json
       - name: Perform user acceptance testing
         href: getting-started/user-acceptance-testing.md
       - name: Test different configurations
@@ -89,11 +89,11 @@
     - name: Team Services and TFS
       items:
       - name: REST API for test management
-        href: ../integrate/api/test/overview
+        href: ../integrate/overview.md
     - name: "Test & Feedback extension"
       items:
       - name: Unable to connect
-        href: ../work/reference/error/tf31002-unable-connect-tfs.md?toc=vsts/manual-test/toc.json
+        href: ../work/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/manual-test/toc.json
   - name: Resources
     items:
     - name: Team Services and TFS
