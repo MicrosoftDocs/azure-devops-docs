@@ -154,34 +154,24 @@ occurs. After successful deployment, the release will automatically execute
 a simple load test to validate the deployment.
 
 1. Close the **Test** hub browser window and, in the build summary page in
-   the **Builds** hub, choose the **Release** icon and then choose **Yes** to
-   confirm.
+   the **Builds** hub, choose the **Release** icon.
 
    ![Starting a new release definition ](_img/example-continuous-testing/example-continuous-testing-40.png)
 
 1. Select the **Azure App Service Deployment with Performance Test** template.
-
-   ![Selecting the release definition template](_img/example-continuous-testing/example-continuous-testing-41.png)
-
-1. In the next page of the wizard, check that the correct **Source (Build definition)**
-   is selected and make sure your set (tick) the **Continuous deployment** checkbox. 
-   Then choose **Create**.
- 
-   ![Specifying continuous deployment ](_img/example-continuous-testing/example-continuous-testing-42.png)
 
 1. In the new release definition, choose the "pencil" edit icon next to the default
    name and enter some meaningful name. Press _RETURN_ to save it.
 
    ![Editing the definition name](_img/example-continuous-testing/example-continuous-testing-43.png)
 
-1. In the new release definition, select the **Deploy Azure App Service** task.
-   In the parameters pane, select your Azure subscription from the drop-down list and
-   choose **Authorize** to validate it. Then select your App Service name 
-   from the drop-down list. 
+1. In the new release definition, open the **Tasks** tab and select the **Deploy Azure App Service** task.
+   In the parameters pane, select your Azure subscription from the drop-down list.
+   Then select your App Service name from the drop-down list. 
 
    ![Configuring the Deploy Azure App Service task](_img/example-continuous-testing/example-continuous-testing-44.png)
 
-   If you don't see any subscriptions listed, choose the **Manage** link and, in the 
+   If you don't see any subscriptions listed, choose the ![Settings](_img/example-continuous-testing/settings-icon.png) icon and, in the 
    **Services** page, create a new **Azure Resource Manager** service endpoint. If you
    have problems creating the connection, see 
    [Troubleshoot Azure Resource Manager service endpoints](../../build-release/actions/azure-rm-endpoint.md).
