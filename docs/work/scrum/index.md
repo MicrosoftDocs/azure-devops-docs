@@ -1,5 +1,5 @@
 ---
-title: Scrum guidance | Team Services & TFS
+title: Scrum  | Team Services & TFS
 description: Index to topics for working in Scrum using VSTS or Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -10,7 +10,7 @@ ms.topic: landing-page
 ms.date: 07/14/2017
 ---
 
-# Scrum guidance
+# Scrum
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
@@ -21,13 +21,13 @@ With Agile tools, project managers and teams can quickly plan and track the work
 - [About teams and Agile tools](../about-teams-and-settings.md)  
  
 
-## 5-minute quickstarts  
+## 5-minute Quickstarts  
 
 Start tracking work by adding work items, creating your backlog, or scheduling sprints.  
   
 - [Schedule sprints](define-sprints.md)   
 
-## Step-by-step tutorials
+## Step-by-Step Tutorials
 
 Whether you use scrum, Kanban, or a combination of Agile methods, you can get started tracking bugs, driving your Git development, and more using the Agile tools available to you. 
 
@@ -41,9 +41,9 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Scrum best practices](../concepts/best-practices-scrum.md)    
 - [Backlogs, boards, & plans](../backlogs-boards-plans.md)   
 
-## How-to guides
+## How-to Guides
 * [Switch project or team focus](../how-to/switch-team-context-work.md)  
-* [Filter backlogs, boards, & queries]../(how-to/filter-backlog-or-board.md)  
+* [Filter backlogs, boards, & queries](../how-to/filter-backlog-or-board.md)  
 * [Change column options](../how-to/set-column-options.md)   
 * [Email/print work items](../how-to/email-work-items.md)  
 
@@ -54,7 +54,6 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
  
   
 ## Resources 
-- [What is Agile?](https://www.visualstudio.com/learn/what-is-agile/)  
 - [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)  
 - [What is Agile development?](https://www.visualstudio.com/learn/what-is-agile-development/)  
 

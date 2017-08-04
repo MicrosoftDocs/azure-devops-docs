@@ -17,7 +17,6 @@ ms.date: 08/03/2017
 With Agile tools, project managers and teams can quickly plan and track the work required to bring applications from idea to completion. Agile tools provide you with the power, flexibility, and responsiveness you need to stay on top of changing priorities, deadlines, and requirements. 
 
 ## Overview  
-- [About Agile tools](backlogs-overview.md) 
 - [About teams and Agile tools](../about-teams-and-settings.md)  
  
 

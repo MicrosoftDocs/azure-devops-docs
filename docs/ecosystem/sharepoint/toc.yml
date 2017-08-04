@@ -37,6 +37,10 @@
       href: ../../setup-admin/tfs/install/sharepoint/verify-sharepoint.md
     - name: Move SharePoint to new hardware
       href: ../../setup-admin/tfs//install/sharepoint/move-sharepoint-new-hardware.md
+- name: Troubleshooting
+  items:
+  - name: "Resolve conflicts & errors"
+    href: ../../work/office/resolve-problems-excel-workbooks-sharepoint.md
 - name: Reference
   items:
   - name: SharePoint dashboards 

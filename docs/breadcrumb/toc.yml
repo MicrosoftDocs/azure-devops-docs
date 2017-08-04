@@ -4,7 +4,23 @@
   items: 
   - name: Agile tools
     tocHref: /vsts/work/
-    topicHref: /vsts/work/index
+    topicHref: /vsts/work/overview
+    items: 
+    - name: Work items
+      tocHref: /vsts/work/work-items/
+      topicHref: /vsts/work/work-items/index
+    - name: Backlogs
+      tocHref: /vsts/work/backlogs/
+      topicHref: /vsts/work/backlogs/index
+    - name: Kanban
+      tocHref: /vsts/work/kanban/
+      topicHref: /vsts/work/kanban/index
+    - name: Scrum
+      tocHref: /vsts/work/scrum/
+      topicHref: /vsts/work/scrum/index
+    - name: Queries
+      tocHref: /vsts/work/track/
+      topicHref: /vsts/work/track/index
   - name: Build and Release
     tocHref: /vsts/build-release/
     topicHref: /vsts/build-release/overview

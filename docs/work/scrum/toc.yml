@@ -1,4 +1,4 @@
-- name: Scrum Guidance
+- name: Scrum
   href: index.md
 - name: Overview
   items:
@@ -34,7 +34,7 @@
     href: ../backlogs-boards-plans.md
   - name: Scrum best practices
     href: ../concepts/best-practices-scrum.md
-- name: How-to guides
+- name: How-to Guides
   items:
   - name: Switch project or team focus
     href: ../how-to/switch-team-context-work.md

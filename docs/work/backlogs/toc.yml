@@ -2,8 +2,6 @@
   href: index.md
 - name: Overview
   items:
-  - name: About Agile tools
-    href: ../overview.md
   - name: "Backlogs, boards, & plans"
     href: ../backlogs-boards-plans.md
 - name: Quickstarts
@@ -30,7 +28,7 @@
     href: ../track/share-plans.md
   - name: "Workflow states & state categories"
     href: ../concepts/workflow-and-state-categories.md
-- name: How-to guides
+- name: How-to Guides
   items:
   - name: Switch project or team focus
     href: ../how-to/switch-team-context-work.md
@@ -50,15 +48,12 @@
     href: ../office/schedule-projects-using-microsoft-project.md
   - name: "Rollup estimated & actual work using Project"
     href: ../office/rollup-estimated-and-actual-work-using-project.md
-  - name: "Resolve conflicts & errors"
-    href: ../office/resolve-problems-excel-workbooks-sharepoint.md
-    items:
-    - name: Resolve data conflicts
-      href: ../office/resolve-excel-data-conflicts-publish-refresh.md
-    - name: Resolve data validation errors
-      href: ../office/resolve-excel-data-validation-errors.md
-    - name: Resolve invalid links in an Excel tree list
-      href: ../office/resolve-excel-invalid-links-tree-list.md
+  - name: Resolve Excel data conflicts
+    href: ../office/resolve-excel-data-conflicts-publish-refresh.md
+  - name: Resolve Excel data validation errors
+    href: ../office/resolve-excel-data-validation-errors.md
+  - name: Resolve invalid links in an Excel tree list
+    href: ../office/resolve-excel-invalid-links-tree-list.md
 - name: Reference
   items:
   - name: "Permissions & access for work tracking"
