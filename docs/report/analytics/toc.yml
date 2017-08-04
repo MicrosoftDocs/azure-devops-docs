@@ -1,0 +1,57 @@
+- name: "OData & the Analytics Service"
+  href: index.md
+- name: Overview
+  items:
+  - name: "OData & the Analytics Service"
+    href: overview-analytics-service.md
+  - name: An OData primer (TBD)
+- name: Quickstart
+  items:
+  - name: Client authentication 
+    href: client-authentication-options.md
+  - name: Access data through Excel
+    href: access-analytics-excel.md
+  - name: Access data through Power BI desktop
+    href: access-analytics-power-bi.md
+- name: Tutorials
+  items:
+  - name: WIT analytics
+    href: wit-analytics.md
+  - name: Analytic recipes
+    href: analytics-recipes.md
+  - name: Aggregated data
+    href: aggregated-data-analytics.md
+  - name: Aggregated data
+    href: querying-for-trend-data.md
+  - name: Work item links
+    href: work-item-links.md
+  - name: Create custom calculations with Power Query
+    href: custom-calculations.md
+  - name: Build a hub extension
+    href: building-extension-against-analytics-service.md
+  - name: Build a dashboard widget extension 
+    href: widget-extensions-against-analytics-service.md
+  - name: Add configuration to an extension
+    href: widget-extension-against-analytics-service-configuration.md
+- name: Samples
+  items:
+  - name: OData example 1 (TBD)
+  - name: OData example 2 (TBD)
+- name: Concepts
+  items:
+  - name: Data model
+    href: data-model-analytics-service.md
+  - name: Power BI desktop and OData aggregations
+    href: using-odata-aggregations-with-power-bi-desktop.md 
+- name: Reference
+  items:
+  - name: Power BI templates (TBD)
+  - name: Add custom measures (TBD)
+  - name: Merge data from multiple sources (TBD)
+  - name: "Share reports, publish to PowerBI.com"
+    href: publishing-power-bi-desktop-to-power-bi.md
+- name: Troubleshooting
+- name: Resources
+  items:
+  - name: Power BI integration overview
+    href: ../powerbi/overview.md

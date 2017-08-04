@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 08/11/2016
 ---
 
-#Build a dashboard widget extension that calls the analytics service
+# Build a dashboard widget extension that calls the Analytics Service
 
 **Team Services**  
 

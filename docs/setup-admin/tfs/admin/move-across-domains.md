@@ -111,7 +111,7 @@ Stopping the services helps ensure that users cannot make changes to work items 
 
 If you are changing the environment to one where there is no trust with your previous environment, you might need to configure SharePoint Products before it will operate correctly. Information about users imported from directory services is available on SharePoint sites from the People Picker Web control. Site administrators and other users use the People Picker to select people and groups when assigning permissions. When information about users is located on multiple forests or on a forest without a trust relationship for all users, additional steps might be necessary to ensure that all people and groups are available from this Web control.
 
-Skip this procedure if you are not using SharePoint Products in your deployment, if your new environment has a two-way trust to the old environment, or if no errors for your SharePoint Web application appear in the administration console for Team Foundation.
+Skip this procedure if you are not using SharePoint Products in your deployment, if you're new environment has a two-way trust to the old environment, or if no errors for your SharePoint Web application appear in the administration console for Team Foundation.
 
 1.  On every server that is part of the SharePoint farm that supports your deployment of Team Foundation Server, open a Command Prompt window with administrative permissions, and change directories to %programfiles%\\Common Files\\Microsoft Shared\\Web Server Extensions\\15\\BIN.
 
@@ -152,7 +152,7 @@ If account names are the same in both domains, and the only difference is the do
 
     This will batch process the accounts.
 
-3.  If your new domain contains one or more identities where the name changes between environments, you'll need to manually update the SIDs for each of those identities. For example, if Christie Church's user account was Fabrikam\\CChurch in the previous environment, but is NewFabrikam\\ChristieC in the new environment, you would have to manually update her SID. For every account that has this requirement, type the following command:
+3.  if you're new domain contains one or more identities where the name changes between environments, you'll need to manually update the SIDs for each of those identities. For example, if Christie Church's user account was Fabrikam\\CChurch in the previous environment, but is NewFabrikam\\ChristieC in the new environment, you would have to manually update her SID. For every account that has this requirement, type the following command:
 
         TFSConfig Identities /change /fromdomain:OldDomainName /todomain:NewDomainName /account:OldAccountName /toaccount:NewAccountName
 

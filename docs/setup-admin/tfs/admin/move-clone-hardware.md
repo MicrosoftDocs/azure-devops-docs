@@ -255,7 +255,7 @@ If your deployment uses SharePoint Products and you moved SharePoint Foundation 
 
 If you're not using SharePoint Products as part of your deployment, or if your deployment will continue to use the old SharePoint server, you can skip this procedure.
 
--   Open the administration console and navigate to SharePoint Web Applications. If the web application still refers to the old site, or if your new deployment uses a different web application than the one listed, choose Change and update the settings.
+-   Open the administration console and navigate to SharePoint Web Applications. If the web application still refers to the old site, or if you're new deployment uses a different web application than the one listed, choose Change and update the settings.
 
     ![TFS still redirects to the old application](_img/ic688122.png)
 

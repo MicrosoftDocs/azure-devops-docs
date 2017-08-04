@@ -1,6 +1,6 @@
 ---
-title: Add configuration to an analytics extension | Team Services
-description: How to add configuration options to an analytics service extension
+title: Add configuration to an extension | Team Services
+description: How to add configuration options to an extension that calls the Analytics Service
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 5B665450-00DB-4F59-9948-BDA0BDF8EEC7
@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 08/11/2016
 ---
 
-#Add configuration to an analytics extension
+# Add configuration to an extension that calls the Analytics Service
 
 **Team Services**  
 

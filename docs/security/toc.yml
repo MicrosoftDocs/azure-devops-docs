@@ -1,0 +1,56 @@
+- name: "Security & Identity"
+  href: index.md
+- name: Overview
+  items:
+  - name: Authentication, permissions, and access   
+    href: about-permissions.md
+  - name: Default permission and access assignments
+    href: ../setup-admin/permissions-access.md?toc=/vsts/security/toc.json
+- name: Quickstart
+  items:
+    - name: View permissions 
+      href: view-permissions.md
+    - name: Add users to a team project  
+      href: ../setup-admin/add-users.md?toc=/vsts/security/toc.json
+    - name: Add administrators to a team project  
+      href: ../setup-admin/add-administrator-team-project.md?toc=/vsts/security/toc.json
+    - name: Restrict access to resources
+      href: ../setup-admin/restrict-access-tfs.md?toc=/vsts/security/toc.json
+- name: Tutorials
+  items:
+  - name: Authenticate access with personal access tokens
+    href: ../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md?toc=/vsts/security/toc.json
+  - name: Add administrators to project collection
+    href: ../setup-admin/add-administrator-project-collection.md?toc=/vsts/security/toc.json
+  - name: "Change access levels (TFS)" 
+    href: ../work/connect/change-access-levels.md?toc=/vsts/security/toc.json 
+- name: Concepts
+  items:
+  - name: Access with Azure Active Directory (Team Services) 
+    href: ../setup-admin/tfs/admin/setup-ad-groups.md?toc=/vsts/security/toc.json
+  - name: Set up Active Directory groups (TFS) 
+    href: ../setup-admin/tfs/admin/setup-ad-groups.md?toc=/vsts/security/toc.json
+  - name: About access levels 
+    href: ../setup-admin/permissions-access.md?toc=/vsts/security/toc.json
+- name: Reference
+  items:
+  - name: Permission lookup guide (TBD)
+  - name: Permissions and groups reference
+    href: ../setup-admin/permissions.md?toc=/vsts/security/toc.json
+  - name: Authentication guidance
+    href: ../integrate/get-started/authentication/authentication-guidance.md?toc=/vsts/security/toc.json
+  - name: Authorize access to REST APIs with OAuth
+    href: ../integrate/get-started/authentication/oauth.md?toc=/vsts/security/toc.json
+  - name: Authenticate with personal access tokens
+    href: ../integrate/get-started/authentication/pats.md?toc=/vsts/security/toc.json
+  - name: Git permissions prior to TFS 2017 Update 1
+    href: ../setup-admin/git-permissions-before-2017.md?toc=/vsts/security/toc.json
+  - name: Open the admin console
+    href: ../setup-admin/tfs/command-line/open-admin-console.md?toc=/vsts/security/toc.json
+  - name: TFSSecurity
+    href: ../setup-admin/tfs/command-line/tfssecurity-cmd.md?toc=/vsts/security/toc.json
+- name: Troubleshooting
+- name: Resources
+  items:
+  - name: Visual Studio Team Services Data Protection Overview
+    href: https://www.visualstudio.com/articles/team-services-security-whitepaper

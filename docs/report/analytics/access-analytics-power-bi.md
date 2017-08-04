@@ -6,10 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: b26f1d04-95ca-43d5-8333-176780f3980a  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 08/04/2017
 ---
 
-#Access data through Power BI desktop 
+# Access data through Power BI desktop 
 
 **Team Services**  
 
@@ -39,12 +39,14 @@ You can access the Analytics Service data through the Power BI Desktop and then 
 
 	If the *AccountName* is "foo" then the URL is ```https://foo.analytics.visualstudio.com/DefaultCollection/_odata```.
 
-	<blockquote style="font-size: 13px">**Note:  ** Alternatively, you can enter the URL ```https://[account].analytics.visualstudio.com/DefaultCollection/[project]/_odata``` which will trim the results by the specified team project across all entities related to that project. </blockquote>
+	>[!NOTE]  
+	>Alternatively, you can enter the URL ```https://[account].analytics.visualstudio.com/DefaultCollection/[project]/_odata``` which will trim the results by the specified team project across all entities related to that project.  
 
 5. At this point you will be prompted to authenticate against the service. If you have not done so previously, see this topic: [Client Authentication Options](client-authentication-options.md).  
 6. Next, select the entities you want to retrieve data for by checking those entities.
 
-	<blockquote style="font-size: 13px">**Important:** Do *not* select any entity with the name **Snapshot** in it. These entities contain the state of every work item on every day since each work item was created. For repositories of any size this will lead to tens or hundreds of millions of work items which will not load correctly. In order to perform trend analysis, narrow the scope of data being retrieved to the specific items and time frame and pull this information in with a separate OData query.</blockquote>  
+	>[!IMPORTANT]  
+	>Do *not* select any entity with the name **Snapshot** in it. These entities contain the state of every work item on every day since each work item was created. For repositories of any size this will lead to tens or hundreds of millions of work items which will not load correctly. In order to perform trend analysis, narrow the scope of data being retrieved to the specific items and time frame and pull this information in with a separate OData query.  
 
 	![Select the entities of data to retrieve](_img/pbi4.png)  
 
@@ -84,9 +86,9 @@ not allowed. To handle this, you could expand the Project column in the Areas ta
 
 Now you can list Areas by Project and get a count of Areas in each project.
 
-##Use a Power BI template
+## Use a Power BI template
 
-In April of 2016, Power BI Desktop added a new capability - the ability to create a templated Power BI file and prompt
+With Power BI Desktop, you can create a templated Power BI file and prompt
 the user for various parameters. We have created such a file with several basic capabilities for reporting on the current
 state of work items to get you started. As we include additional data types, we will improve this file.
 

@@ -187,7 +187,7 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 
 To edit information on the team project page or manage team membership, you must be a member of the [Project Administrators group](../setup-admin/add-administrator-tfs.md) or have your Edit project-level information permission set to allow. 
 
-To view the team project page, you must be a valid member of the team project. For more information, see [Permissions and groups, Valid user groups](../concepts/about-permissions.md#validusers). 
+To view the team project page, you must be a valid member of the team project. For more information, see [Permissions and groups, Valid user groups](../security/about-permissions.md#validusers). 
 
  
 

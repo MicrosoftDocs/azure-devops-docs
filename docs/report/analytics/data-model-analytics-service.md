@@ -6,10 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 08/04/2017
 ---
 
-#Data model for the Analytics service  
+# Data model for the Analytics service  
 
 **Team Services**  
 
@@ -20,7 +20,8 @@ The Analytics service data model consists of data sets, counts, and measures, as
 
 ##Entities  
 
-<blockquote style="font-size: 13px">**Note:** Information listed may differ from the entities shown as```https://[collection].analytics.visualstudio.com/DefaultCollection/_odata/$metadata```.</blockquote>  
+>[!NOTE]  
+>Information listed may differ from the entities shown as```https://[collection].analytics.visualstudio.com/DefaultCollection/_odata/$metadata```.  
 
 The entities support by the data model are as follows:  
 

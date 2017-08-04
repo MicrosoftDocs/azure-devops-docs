@@ -34,7 +34,7 @@ The following image shows the basic steps to create a trend chart. In step ![ste
 
 After you have your initial chart, you can change the chart type and apply additional filters as shown in the examples below. 
 
-If your new to Power BI, go [here to Connect to Power BI](connect-vso-pbi-vs.md).  
+if you're new to Power BI, go [here to Connect to Power BI](connect-vso-pbi-vs.md).  
 
 You can create Power BI trend charts for data stored in Team Services. To access similar charts for on-premises TFS, see [Create status and trend charts in Excel](../excel/create-status-and-trend-excel-reports.md). 
 

@@ -33,7 +33,7 @@
   - name: "Team projects, teams, and repos (NEW)"
     href: team-projects-teams-repos.md
   - name: Access levels (NEW)
-    href: ../concepts/access-levels.md
+    href: ../security/access-levels.md
   - name: Source control (NEW)
     href: ../concepts/source-control.md
   - name: "Kanban & Agile (NEW)"

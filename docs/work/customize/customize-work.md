@@ -454,7 +454,7 @@ In addition, you can use the **witadmin** tool to list objects, rename WITs, per
 
 You can grant or restrict access to select features and functions through the web portal. When you add user accounts to your team, they're automatically added to the Contributor group. They then have access to most of the features they'll need to contribute to code, work tracking, builds, and test. However, the Contributor group doesn't allow users to create shared queries or to add area or iteration paths. You have to grant these permissions separately.  
 
-For a simplified view of the most common, default permissions and access assignments, see [Permissions and access](../../setup-admin/permissions-access.md). If you're new to managing permissions, see [Permissions and groups reference, Inheritance](../../concepts/about-permissions.md#inheritance).
+For a simplified view of the most common, default permissions and access assignments, see [Permissions and access](../../setup-admin/permissions-access.md). If you're new to managing permissions, see [Permissions and groups reference, Inheritance](../../security/about-permissions.md#inheritance).
 
 Otherwise, to grant or restrict access to select features or functions, review one of these topics: 
  

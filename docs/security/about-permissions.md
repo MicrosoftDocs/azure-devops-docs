@@ -7,13 +7,35 @@ ms.assetid:
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/21/2017
+ms.date: 08/04/2017
 ---
 
 
 
+# Authentication, permissions, and access 
 
-## Large numbers of users
+**Team Services | TFS 2017 | TFS 2015** 
+
+<!--- TO BE COMPLETED   --> 
+
+Answers these questions:  
+- How does authentication work? 
+- How are permissions managed? Permission levels - collection, project, group, server   
+- What are access levels? How are they managed? 
+- Built-in/default groups 
+- Other - ssh  
+- Active Directory usage  
+
+ > [!NOTE] 
+ > Permissions are different than access levels.
+ > Access levels control what features are visible to users in the web portal,
+ > and are dependent on user licenses; permissions control a user's ability to use features across TFS.
+ > If you're just trying to give someone access to a team room or to Agile portfolio management
+ > and test case management features,
+ > you'll want to [change access levels](../work/connect/change-access-levels.md), not permissions.
+
+
+## Manage large numbers of users using Active Directory, Azure Active Directory, or Windows groups
 
 If you need to set permissions for large numbers of users,
 create a group in Windows, Active Directory, or Azure Active Directory,
@@ -97,7 +119,7 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 
 
 <a name="validusers"></a>
-###Valid user groups
+## Valid user groups
 
 When you add accounts of users directly to a built-in group or through a Windows group, they are automatically added to one of the valid user groups.
 
@@ -120,12 +142,66 @@ no users in the group will be able to access the team project, collection, or de
 
 In addition, the `VALIDUSER` element can be used [to allow or restrict access for work item tracking](../setup-admin/restrict-access-tfs.md#work-items).
 
-### SQL Server reports and the project portal (TFS 2015)  
+## SQL Server reports (TFS) 
 
-For information about how to set permissions in Reporting Services and SharePoint Products for users in TFS,
-see [Add administrators to TFS](../setup-admin/add-administrator-tfs.md).  
+For information about how to set permissions in Reporting Services,
+see [Add administrators to TFS](../setup-admin/add-administrator-tfs.md).
 
 
- 
+## SharePoint integration (TFS)  
+
+For information about how to set permissions for SharePoint Products integrated with TFS,
+see [Add administrators to TFS](../setup-admin/add-administrator-tfs.md).
+
+For more information, see [Determine permission levels and groups in SharePoint 2013](https://technet.microsoft.com/en-us/library/cc262690.aspx).
+
+
+## Authentication methods, integrating with other services and apps 
+
+With VSTS and TFS, other applications and services can integrate with VSTS and TFS services and resources. To access your account without asking for user credentials multiple times, apps can use these authentication methods:
+
+*	[OAuth](../../integrate/get-started/Authentication/oauth.md) 
+to generate tokens for accessing [REST APIs for Team Services and Team Foundation Server](../../integrate/get-started/rest/basics.md). 
+The [Accounts](https://visualstudio.com/integrate/api/shared/accounts.md) 
+and [Profiles](https://visualstudio.com/integrate/api/shared/profiles.md) 
+APIs support only OAuth.
+
+*	[Alternate credentials](../git/auth-overview.md#alternate-credentials) 
+as a single set of credentials across all tools that don't have 
+plug-in, extension, or native support. For example, 
+you can use basic authentication to access 
+[REST APIs for Team Services and TFS](../integrate/get-started/rest/basics.md), 
+but you must turn on alternate credentials.
+
+*	[SSH authentication](../git/use-ssh-keys-to-authenticate.md) 
+to generate encryption keys when you use Linux, Mac, 
+or Windows running [Git for Windows](http://www.git-scm.com/download/win) 
+and can't use 
+[Git credential managers](../git/set-up-credential-managers.md) 
+or [personal access tokens](use-personal-access-tokens-to-authenticate.md) 
+for HTTPS authentication.
+
+*	[Personal access tokens](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) 
+to generate tokens for: 
+
+	*	Accessing specific resources or activities, like builds or work items
+	*	Clients like Xcode and Nuget that require usernames and passwords 
+		as basic credentials and don't support Microsoft account 
+		and Azure Active Directory features like multi-factor authentication 
+	*	Accessing [REST APIs for Team Services and TFS](../../integrate/get-started/rest/basics.md)
+
+By default, your account or collection allows access for all authentication methods. 
+You can limit access, but you must specifically restrict access for each method. 
+When you deny access to an authentication method, 
+no app can use that method to access your account. 
+Any app that previously had access will get an 
+authentication error and can't access your account.
+
+> To remove access for personal access tokens, 
+> you must [revoke them](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md).
+
+
+
+
 
 <!-- TODO: Cover how to set permissions for Reporting Services and SharePoint as mainline sections. -->  

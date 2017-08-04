@@ -6,12 +6,14 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/06/2016
+ms.date: 08/04/2017
 ---
 
-#Create rollup charts
+# Create rollup charts
 
-<b>Team Services</b>
+**Team Services**
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 Rollup provides summed values of select fields for all child work items of a parent. You can create rollups based on counts of work items or selected measures, such as Story Points, Effort, Size for backlog items and Original Estimate, Remaining Work, Completed Work for tasks. 
 
@@ -45,7 +47,7 @@ After you have your initial chart, you can change the chart type from Table to M
 If you use the [Scrum](../../work/guidance/scrum-process.md) or 
 [CMMI](../../work/guidance/cmmi-process.md) processes, you can create similar charts by first choosing the Parent Product Backlog Items/Product Backlog or Parent Requirements/Requirement fields for the first column of the matrix in ![step 4](../_img/icons/step4.png). 
 
-If your new to Power BI, go [here to Connect to Power BI](connect-vso-pbi-vs.md).  
+if you're new to Power BI, go [here to Connect to Power BI](connect-vso-pbi-vs.md).  
 
 You can create Power BI rollup charts for data stored in Team Services. To access similar charts for on-premises TFS, see [Rollup of work and other fields](https://msdn.microsoft.com/library/dn217871.aspx). 
 
@@ -67,7 +69,8 @@ Rollups within any one of these chains will work as well. For example, child Tas
 
 Rollup doesn't support those parent-child relationships that don't follow this structure. For example, rollup isn't supported for parent Risks and child tasks (CMMI process). Also, the rollup data model doesn't support custom parent-child links and hierarchies.
 
-<blockquote style="font-size: 13px"><b>Tip: </b>Use the **Parent...** dimensions only for hierarchical charts. Use the **Work Items** dimension for all other standard charts. </blockquote>  
+> [!TIP]    
+> Use the **Parent...** dimensions only for hierarchical charts. Use the **Work Items** dimension for all other standard charts.   
 
  
 ##Apply State filter 
@@ -77,12 +80,12 @@ To focus the rollup chart to count only active or in progress tasks from, add th
 ![State filter for active or in progress work items in power bi](_img/powerbi-add-state-filter.png) 
 
 
-##Related notes
+## Related notes
 
 The sprint burndown chart based on Story Points provides you with a daily update of your sprint progress when you don't break your stories down into tasks. You can update the chart further by adding Work Item Type as an additional filter to differentiate the story point count for bugs versus user stories.  
 
 
-###Get started using Power BI and the Visual Studio Team Services connector 
+### Get started using Power BI and the Visual Studio Team Services connector 
 - [Create dashboards and reports](report-on-vso-with-power-bi-vs.md)
 - [What's available in the Power BI Visual Studio Team Services connector](vso-pbi-whats-available-vs.md)
 - [Add a page to a Power BI report](https://support.powerbi.com/knowledgebase/articles/474804-add-a-page-to-a-power-bi-report)  
@@ -90,16 +93,14 @@ The sprint burndown chart based on Story Points provides you with a daily update
 - [Save a report in Power BI](https://support.powerbi.com/knowledgebase/articles/444112-save-a-report-in-power-bi)  
 
 
-###Rollup requirements
+### Rollup requirements
 To support rollup of different measures such as Story Points, Effort, Size, Completed Work, or Remaining Work, structure your work items according to the following recommendations:  
 - Use parent-child links to link work items that contain values that you want to rollup.  
 - Add required fields to the WITs that will capture the rollup values. Default fields used to schedule work are only present on the task work item. These fields are:  
-<ul>
-<li>Original Estimate (Microsoft.VSTS.Scheduling.OriginalEstimate): The amount of work required to complete a task. (Agile and CMMI)</li>
-<li>Completed Work (Microsoft.VSTS.Scheduling.CompletedWork): The amount of work that has been spent implementing a task. (Agile and CMMI)</li>  
-<li>Remaining Work (Microsoft.VSTS.Scheduling.RemainingWork): This field is used to support burndown charts.  <br/>
-	If your team project was created using the Visual Studio Scrum process template, only Remaining Work is defined in the task.
-	To learn more about adding fields, see Modify or add a field to support queries, reports, and workflow.   <br/></li>
-</ul>
+	- Original Estimate (Microsoft.VSTS.Scheduling.OriginalEstimate): The amount of work required to complete a task. (Agile and CMMI)  
+	- Completed Work (Microsoft.VSTS.Scheduling.CompletedWork): The amount of work that has been spent implementing a task. (Agile and CMMI)   
+	- Remaining Work (Microsoft.VSTS.Scheduling.RemainingWork): This field is used to support burndown charts.  
+	If your team project was created using the Visual Studio Scrum process template, only Remaining Work is defined in the task.  
+	To learn more about adding fields, see Modify or add a field to support queries, reports, and workflow. 
 - Determine the unit of time used to track work and make sure it is used consistently across your team or organization. For example, you can track tasks using hours or days.  
 - Determine if you want to make rollup values read-only on the work item form. By making them read-only you prevent users from entering inaccurate data. You make fields read-only using the Control field Readonly attribute.  

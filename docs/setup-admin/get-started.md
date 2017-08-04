@@ -12,8 +12,9 @@ ms.date: 04/04/2017
 ---
 
 
-#Administrative guide to working in Team Services and TFS  
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013 </b> 
+# Administrative guide to working in Team Services and TFS  
+
+**Team Services | TFS 2017 | TFS 2015 | TFS 2013** 
 
 Work on apps anytime, anywhere. Use 
 integrated, powerful, cross-platform, 

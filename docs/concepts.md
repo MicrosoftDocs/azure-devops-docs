@@ -7,11 +7,12 @@ ms.topic: get-started-article
 ms.assetid: 76ED7BD4-BD95-450F-BA33-649B80C23BE5
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/07/2016
+ms.date: 08/04/2017
 ---
 
-#Key concepts for working with Team Services and TFS 
-<b>Team Services | TFS 2017 | TFS 2015  </b> 
+# Key concepts for working with Team Services and TFS 
+
+**Team Services | TFS 2017 | TFS 2015** 
 
 The set of platforms, services, and tools you have access to through Visual Studio Team Services can be overwhelming. Before you start using our products, you'll want to become familiar with how they fit together. You'll gain that understanding here as well as pointers to additional topics and tutorials to gain confidence in using our products to develop your software.   
 

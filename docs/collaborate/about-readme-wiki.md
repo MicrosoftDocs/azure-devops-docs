@@ -15,13 +15,11 @@ ms.date: 07/05/2017
 **Team Services | TFS 2017**
 
 
-
 ## READMEs
 
-READMes are files written in Markdown format that provide ... 
+To share information with your team, you can create README files for a repository, or create and add pages to a team project Wiki. Wiki files are managed in a wiki repository. You can edit these files using Markdown format.  
 
 You can define a README file, or multiple files, for each repo or team project. 
-
 
 Write your readme in [Markdown](../reference/markdown-guidance.md) instead of plain text. Markdown makes it easy to format text, include images, and link as needed to additional documentation from your readme.
 
@@ -30,7 +28,6 @@ Here are some great readmes that use this format and speak to all three audience
 - [ASP.NET Core](https://github.com/aspnet/Home)
 - [Visual Studio Code](https://github.com/Microsoft/vscode)
 - [Chakra Core](https://github.com/Microsoft/ChakraCore)
-
 
 
 ## Wiki

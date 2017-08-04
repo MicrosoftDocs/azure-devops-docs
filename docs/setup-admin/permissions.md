@@ -46,7 +46,7 @@ This topic provides descriptions for each built-in group and permission. To lear
 <li>**Not set**</li>
 </ul>
 
-To learn more about inheritance, see [About permissions.md](../concepts/about-permissions.md#inheritance).
+To learn more about inheritance, see [About permissions.md](../security/about-permissions.md#inheritance).
 </td>
 </tr>
 </table>
@@ -1901,7 +1901,7 @@ You can manage alert permissions using [TFSSecurity](tfs/command-line/tfssecurit
 
 ##Related notes
 
-- [About permissions](../concepts/about-permissions.md)  
+- [About permissions](../security/about-permissions.md)  
 - [Add users to a team project](./team-services/add-team-members-vs.md) (Team Services)   
 - [Add users to a team project](./add-users.md) (TFS)   
 - [Add users to an administrator role](add-administrator-tfs.md)   

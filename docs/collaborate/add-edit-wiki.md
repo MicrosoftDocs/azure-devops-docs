@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: BD03B9EE-D4DC-4EDC-B0BF-5C11B34E14C9
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/05/2017
+ms.date: 08/04/2017
 ---    
 
 
@@ -31,7 +31,6 @@ Learn how to:
 ![checkmark](../work/_img/icons/checkmark.png) Change the page referenced as the wiki home page  
 ![checkmark](../work/_img/icons/checkmark.png) Review a wiki page revision history     
 ![checkmark](../work/_img/icons/checkmark.png) Filter wiki pages   
-![checkmark](../work/_img/icons/checkmark.png) Manage wiki permissions    
 ![checkmark](../work/_img/icons/checkmark.png) Edit wiki pages offline   
 
 <a id="create-wiki"></a>
@@ -142,22 +141,6 @@ To find a page, enter a title or keyword into the **Filter pages** box.
  
 <img src="_img/wiki/filter-box.png" alt="Make a page the home page" style="border: 1px solid #CCCCCC;" /> 
 
-
-
-<a id="manage-wiki-permissions"></a>
-## Manage wiki permissions   
-By default, all project contributors have read and edit access of the wiki repository. You can grant or restrict access to who can read and edit wiki pages by managing the wiki repository permissions.  
-
-To open the Security dialog, click **More>Security** on the wiki home page. 
- 
-<img src="_img/wiki/wiki-open-security.png" alt="Wiki, open security" style="border: 1px solid #CCCCCC;" />  
-
-For definitions of each repository permission, see [Git repository permissions](../setup-admin/permissions.md#git-repository).
-
-<img src="_img/wiki/security-dialog.png" alt="Wiki security dialog" style="border: 1px solid #CCCCCC;" />  
-
->[!NOTE]  
->Users with [Stakeholder access](../quickstart/get-started-stakeholder.md) have read-only permissions to wiki pages. These permissions can't be changed. 
 
 ## Related notes
 
