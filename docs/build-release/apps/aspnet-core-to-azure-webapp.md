@@ -26,7 +26,7 @@ You will use the Azure portal to configure a basic CI/CD pipeline. You will then
 
 ![A typical release pipeline for web applications](../get-started/_img/ci-cd/part-1/ReleasePipeline.png)
 
-With your CI/CD processes in place, you'll push a change into your team's git repo and the results will automatically show up on your site.
+With your CI/CD processes in place, you'll push a change into your team's Git repo and the results will automatically show up on your site.
 
 ![Screenshot showing ASP.NET Core web app](_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
