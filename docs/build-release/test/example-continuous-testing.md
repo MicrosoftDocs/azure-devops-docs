@@ -108,30 +108,22 @@ will automatically execute the unit tests it contains.
 
    ![Choosing the build type](_img/example-continuous-testing/example-continuous-testing-21.png)
 
-1. In the next page of the wizard, make sure you set (tick) the **Continuous integration...** checkbox, 
-   then choose **Create**.
+1. In the new build definition, select the **Process** item and then select the **Hosted** agent queue. 
+
+   ![Choosing the default agent queue](_img/example-continuous-testing/example-continuous-testing-21a.png)
+
+1. Open the **Triggers** tab and turn on the **Continuous integration** trigger. Make sure the repository containing your app is selected. 
 
    ![Specifying continuous integration](_img/example-continuous-testing/example-continuous-testing-22.png)
 
-1. For the **NuGet restore** task in the new definition, use the file selector to select the
-   solution file for your sample web app.
-
-   ![Specifying the source solution for the Nuget task](_img/example-continuous-testing/example-continuous-testing-25.png)
-
-1. For the **Build solution** task, use the file selector to select the
-   solution file for your sample web app and choose the version of
-   Visual Studio you used to create the app. 
-
-   ![Specifying the source solution for the Visual Studio Build task](_img/example-continuous-testing/example-continuous-testing-26.png)
-
-1. Save the new build definition.
-
-   ![Saving the definition](_img/example-continuous-testing/example-continuous-testing-27.png)
-
-1. Queue a new build of the definition.
+1. Save the new build definition and queue a new build.
 
    ![Starting a test build](_img/example-continuous-testing/example-continuous-testing-28.png)
 
+1. Choose the link to the build in the message bar that appears.
+
+   ![Choosing the build link](_img/example-continuous-testing/example-continuous-testing-28a.png)
+ 
 1. After the build has finished, you see the summary for each task and the results in the live log file.
    Choose the **Tests** link.
 
