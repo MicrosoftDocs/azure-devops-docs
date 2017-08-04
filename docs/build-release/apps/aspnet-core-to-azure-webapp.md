@@ -39,7 +39,7 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 
 ## Configure continuous delivery
 
-1. Log into the Azure portal and open the web app's blade. Choose **Continuous Delivery** and then choose **Configure**.
+1. In the Azure portal, open your web app's blade. Choose **Continuous Delivery** and then choose **Configure**.
 
    ![Starting Continuous Delivery configuration](_img/aspnet-core-to-azure-webapp/continuous-delivery-intro.png)
 
@@ -63,16 +63,12 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 
 1. Open a new browser window and navigate to your new web at **http://**_your-app-name_**.azurewebsites.net**.
 
-
 [!INCLUDE [change-aspnet-core-code](_shared/change-aspnet-core-code.md)]
 
-> [!NOTE]
-> At present you need to stop the web app using the links in the **Overview** blade in the Azure portal 
-> before you update the code, and then restart the app after the deployment has completed. 
+It takes several minutes for the build and deployment to execute.
+Wait until the deployment is done, then verify that your changes are live in your web browser: **http://**_your-app-name_**.azurewebsites.net**.
 
-When the deployment is done, verify that your changes are live in your web browser: **http://**_your-app-name_**.azurewebsites.net**.
-
-You're ready to collaborate with a team on an ASP.NET Core app with a CI/CD process that automatically deploys your latest work to your web site.
+You're now ready to collaborate with a team on an ASP.NET Core app with a CI/CD process that automatically deploys your latest work to your web site.
 
 ## Review the CI/CD pipeline in VSTS
 
@@ -93,7 +89,7 @@ To see what Azure Continuous Delivery did, you can examine the artifacs and defi
 
    ![The generated build definition](_img/aspnet-core-to-azure-webapp/build-definition.png)
 
-1. Open the **Build &amp; Release** drop-down and choose **Releases**. Select the release definition having the name of your app and choose **Edit** to see how the CD process is defined.
+1. Open the **Build &amp; Release** hub and choose **Releases**. Select the release definition having the name of your app and choose **Edit** to see how the CD process is defined.
 
    ![The release definition status](_img/aspnet-core-to-azure-webapp/release-status.png)
 
@@ -107,4 +103,6 @@ To see what Azure Continuous Delivery did, you can examine the artifacs and defi
 
    ![The generated release definition](_img/aspnet-core-to-azure-webapp/release-definition.png)
 
-[!INCLUDE [include](_shared/quickstart-next-steps.md)]
+## Next steps
+
+[Learn more about how to customize your CI/CD pipeline]()
