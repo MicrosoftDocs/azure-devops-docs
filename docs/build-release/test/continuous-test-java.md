@@ -39,8 +39,8 @@ Visual Studio Team Services build tasks make it
 easy to build to build Java applications. These 
 same tasks also make it easy to test your Java 
 applications. The example below uses Maven to build
-a Java application, and then uses both Maven and 
-Perfecto Mobile to test the application.
+a Java application, runs JUnit tests, and uses Maven and 
+to test the application.
 
 ![Visual Studio Team Services build and test integration](_img/continuous-test-java/continuous-test-java-01.png)
 
