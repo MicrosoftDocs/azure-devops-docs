@@ -33,11 +33,17 @@ Your code changes automatically appear on your site:
 
 * Have a Windows virtual machine that has a default web site running in IIS. See [Create a Windows virtual machine with the Azure CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-cli) for instructions to create a virtual machine in Azure, to install IIS, and to obtain its `publicIpAddress`.
 
-## Prepare the Windows VM with ASP.NET Core
+## Prepare the Windows VM
 
 Running an ASP.NET Core app on Windows requires some dependencies.
 
-On your Windows VM, install the [.NET Core Windows Server Hosting](https://go.microsoft.com/fwlink/?linkid=848766) bundle. The bundle will install the .NET Core Runtime, .NET Core Library, and the [ASP.NET Core Module](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps). The module creates the reverse-proxy between IIS and the Kestrel server.
+On your VM, open an **Administrator: Windows PowerShell** console. Install IIS and the required .NET features:
+
+```ps
+Install-WindowsFeature Web-Server,Web-Asp-Net45,NET-Framework-Features
+```
+
+On your VM, install the [.NET Core Windows Server Hosting](https://go.microsoft.com/fwlink/?linkid=848766) bundle. The bundle will install the .NET Core Runtime, .NET Core Library, and the [ASP.NET Core Module](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps). The module creates the reverse-proxy between IIS and the Kestrel server.
 
 After the installation is done, to effect a change to the system PATH, run the following commands from a PowerShell prompt on your VM:
 
@@ -138,10 +144,6 @@ Continuous deployment (CD) is a lean practice that your team can use to keep pro
 1. Select the **IIS Web App Manage** task, and then in the upper-right corner, click **X Remove** to delete this task. (We won't create a new website in this quickstart. Instead, we'll deploy to the **default web site**.)
 
 1. Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Expand **Advanced Deployment Options** and then select **Take App Offline**. Leave all the other default settings.
-
-1. Select the **Pipeline** tab, select the artifact trigger, and then on the right side make sure the **Continuous deployment trigger** is enabled.
-
- ![build artifact trigger in release definition](_shared/_img/build-artifact-trigger-in-release-definition.png)
 
 1. Click **Save**. On the Save dialog box, click **OK**.
 
