@@ -1,0 +1,50 @@
+- name: "VSTS & PowerBI"
+  href: index.md
+- name: Overview
+  items:
+  - name: Power BI integration overview
+    href: overview.md
+- name: Quickstarts
+- name: Tutorials
+  items:
+  - name: Power BI - Content Pack
+    items:
+    - name: Assign permissions (Security)
+      href: ../analytics/analytics-security.md
+    - name: Connect
+      href: connect-vso-pbi-vs.md
+    - name: Create dashboards
+      href: report-on-vso-with-power-bi-vs.md
+    - name: Create trend charts
+      href: create-trend-charts.md
+    - name: Create rollup charts
+      href: create-rollup-charts.md
+  - name: Power BI - Data Connector
+    items:
+    - name: Connect
+      href: data-connector-connect.md
+    - name: Functions
+      href: data-connector-functions.md
+- name: Samples
+  items:
+  - name: Power BI example reports
+    href: data-connector-examples.md
+- name: Concepts  
+- name: Reference
+  items:
+  - name: Power BI available data
+    href: vso-pbi-whats-available-vs.md
+  - name: Power BI
+    href: ../analytics/access-analytics-power-bi.md
+  - name: Power BI desktop and OData aggregations
+    href: ../analytics/using-odata-aggregations-with-power-bi-desktop.md
+  - name: Power BI templates (TBD)
+  - name: Add custom measures (TBD)
+  - name: Merge data from multiple sources (TBD)
+  - name: "Share reports, publish to PowerBI.com"
+    href: ../analytics/publishing-power-bi-desktop-to-power-bi.md
+- name: Troubleshooting
+- name: Resources
+  items:
+  - name: Retrieve data through OData (Team Services)
+    href: ../analytics/overview-analytics-service.md

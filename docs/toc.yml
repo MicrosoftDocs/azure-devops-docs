@@ -69,7 +69,7 @@
 - name: Concepts
   items:
   - name: "Team projects, teams, and repos (NEW)"
-    href: get-started/team-projects-teams-repos.md
+    href: user-guide/team-projects-teams-repos.md
   - name: Access levels (NEW)
     href: concepts/access-levels.md
   - name: Source control (NEW)

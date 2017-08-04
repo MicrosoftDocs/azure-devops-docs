@@ -1,4 +1,4 @@
-- name: Query Guidance
+- name: Queries
   href: index.md
 - name: Overview
   items:
@@ -10,10 +10,10 @@
     href: search-box-queries.md
 - name: Tutorials
   items:
-  - name: Add & run queries
-    href: queries-preview.md
+  - name: Organize and run managed queries
+    href: organize-view-run-queries.md
   - name: Triage work items
-    href: queries-preview.md
+    href: triage-work-items.md
   - name: Edit a query
     href: using-queries.md
   - name: Copy as HTML 
@@ -56,7 +56,7 @@
   items:
   - name: "Query fields, operators & macros"
     href: query-operators-variables.md
-  - name: WIQL syntax
-    href: ../../reference/wiql-syntax.md
   - name: Work item field index
     href: ../guidance/work-item-field.md
+  - name: WIQL syntax
+    href: ../../reference/wiql-syntax.md

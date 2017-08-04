@@ -1,0 +1,81 @@
+- name: "Scale & Configure Teams" 
+  href: index.md
+- name: Overview
+  items:
+  - name: "About teams & Agile tools"
+    href: ../about-teams-and-settings.md
+- name: Quickstarts
+  items:
+  - name: "Add a team & team members"
+    href: multiple-teams.md
+  - name: Add a team administrator
+    href: add-team-administrator.md
+- name: Tutorials
+  items:
+  - name: Manage portfolios
+    href: portfolio-management.md
+  - name: Review team delivery plans
+    href: review-team-plans.md
+  - name: Scaled Agile Framework
+    href: scaled-agile-framework.md
+  - name: Define a work item template 
+    href: ../productivity/work-item-template.md
+- name: Concepts
+  items:
+  - name: Visibility across teams
+    href: visibility-across-teams.md
+  - name: Agile culture
+    href: agile-culture.md
+  - name: Practices that scale
+    href: practices-that-scale.md
+- name: How-to Guides
+  items:
+  - name: Set team defaults
+    href: set-team-defaults.md
+  - name: Configure team settings
+    href: manage-team-assets.md
+    items:
+    - name: Select backlog levels
+      href: ../customize/select-backlog-navigation-levels.md
+    - name: "Show bugs on backlogs & boards"
+      href: ../customize/show-bugs-on-backlog.md
+    - name: Set working days
+      href: ../customize/set-working-days.md
+    - name: Set team favorites
+      href: ../../collaborate/set-favorites.md
+  - name: Customize a Kanban board
+    items:
+    - name: Add or edit columns
+      href: ../kanban/add-columns.md
+    - name: Customize cards
+      href: ../customize/customize-cards.md
+    - name: WIP limits
+      href: ../kanban/wip-limits.md
+    - name: Expedite work
+      href: ../kanban/expedite-work.md
+    - name: Split columns
+      href: ../kanban/split-columns.md
+    - name: Definition of done
+      href: ../kanban/definition-of-done.md
+    - name: Reorder cards
+      href: ../customize/reorder-cards.md
+  - name: Customize Task board cards
+    href: ../customize/customize-cards.md
+  - name: Set team notifications
+    href: ../../collaborate/manage-team-notifications.md
+  - name: Switch project or team focus
+    href: ../how-to/switch-team-context-work.md
+  - name: Team rooms
+    href: ../../collaborate/collaborate-in-a-team-room.md
+- name: Reference
+  items:
+  - name: "Permissions & access for work tracking"
+    href: ../permissions-access-work-tracking.md
+- name: Resources
+  items:
+  - name: Agile culture
+    href: https://www.visualstudio.com/learn/agile-culture/
+  - name: Scale Agile to large teams
+    href: https://www.visualstudio.com/learn/scale-agile-large-teams/
+  - name: Creating productive teams
+    href: https://www.visualstudio.com/learn/productive-teams/

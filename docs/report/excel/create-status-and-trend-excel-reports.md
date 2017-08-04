@@ -6,12 +6,12 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/22/2017
+ms.date: 08/03/2017
 ---
 
 # Create Excel reports from a work item query  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+<b>TFS 2017 | TFS 2015 | TFS 2013</b>  
 
 >[!NOTE]  
 ><b>Feature availability: </b>You can use this feature only when you connect to a team project hosted an on-premises Team Foundation Server (TFS) and with SQL Server Analysis Services configured. 

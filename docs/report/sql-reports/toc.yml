@@ -1,3 +1,5 @@
+- name: "Data Warehouse (SQL Server Reports)"
+  href: index.md
 - name: Overview
   items:
   - name: Reporting Services Reports
@@ -6,8 +8,6 @@
   items:
   - name: Create Excel reports from a work item query
     href: ../excel/create-status-and-trend-excel-reports.md
-  - name: Share information using the project portal
-    href: ../sharepoint-dashboards/share-information-using-the-project-portal.md
 - name: Tutorials
   items:
   - name: Add reports to a team project
@@ -52,61 +52,6 @@
     href: components-data-warehouse.md
 - name: Reference
   items:
-  - name: Excel reports (TFS)
-    items:
-    - name: Bug Progress
-      href: ../excel/bug-progress-excel-report.md
-    - name: Bugs by Assignment
-      href: ../excel/bugs-by-assignment-excel-report.md
-    - name: Bugs by Priority
-      href: ../excel/bugs-by-priority-excel-report.md
-    - name: Bug Reactivations
-      href: ../excel/bug-reactivations-excel-report.md
-    - name: Bug Trends
-      href: ../excel/bug-trends-excel-report.md
-    - name: Build Quality
-      href: ../excel/build-quality-excel-report.md
-    - name: Build Status
-      href: ../excel/build-status-excel-report.md
-    - name: Burndown
-      href: ../excel/burndown-excel-report.md
-    - name: Code Churn
-      href: ../excel/code-churn-excel-report.md
-    - name: Code Coverage
-      href: ../excel/code-coverage-excel-report.md
-    - name: Failure Analysis
-      href: ../excel/failure-analysis-excel-report.md
-    - name: Issue Trends
-      href: ../excel/issue-trends-excel-report.md
-    - name: Task Progress
-      href: ../excel/task-progress-excel-report.md
-    - name: Test Activity
-      href: ../excel/test-activity-excel-report.md
-    - name: Test Case Readiness
-      href: ../excel/test-case-readiness-excel-report.md
-    - name: Test Plan Progress
-      href: ../excel/test-plan-progress-excel-report.md
-    - name: Test management reports
-      href: ../excel/test-management-reports.md
-      items:
-      - name: Testing Gaps (Agile)
-        href: ../excel/testing-gaps-excel-report-agile.md
-      - name: Test Team Progress
-        href: ../excel/test-team-progress-excel-report.md
-      - name: Test Team Productivity
-        href: ../excel/test-team-productivity-excel-report.md
-    - name: User Story Progress (Agile)
-      href: ../excel/user-story-progress-excel-report-agile.md
-    - name: User Story Test Status (Agile)
-      href: ../excel/user-story-test-status-excel-report-agile.md
-    - name: Requirement Test Status (CMMI)
-      href: ../excel/requirement-test-status-excel-report-cmmi.md
-    - name: Requirements Progress (CMMI)
-      href: ../excel/requirements-progress-excel-report-cmmi.md
-    - name: Testing Gaps (CMMI)
-      href: ../excel/testing-gaps-excel-report-cmmi.md
-    - name: Excel reports (CMMI)
-      href: ../excel/excel-reports-cmmi.md
   - name: Reporting Services reports (TFS)
     items:
     - name: Backlog Overview (Scrum)

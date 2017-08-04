@@ -9,19 +9,22 @@ ms.author: kaelli
 ms.date: 07/26/2017
 ---
 
-# Customize your work tracking experience 
+# Work tracking customization  
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013 </b>
 
 
 <! --- How to make this simple? -->  
 
-## Quickstarts 
+## Overview  
+
+
+## 5-minute Quickstarts  
 
 - [Add a custom field](add-custom-field.md)
 - [Add a custom work item type](add-custom-wit.md)  
 
-## Tutorials  
+## Step-by-step Tutorials
 
 Tutorials are provided for customizing work tracking based on each of the three supported process models. Customization at this level is made for specific team projects. 
 

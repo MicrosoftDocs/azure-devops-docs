@@ -1,0 +1,146 @@
+- name: Work Items
+  href: index.md
+- name: Overview
+  items:
+  - name: About work items
+    href: wit-overview.md
+- name: Quickstarts
+  items:
+  - name: Add a work item
+    href: ../backlogs/add-work-items.md
+- name: Tutorials
+  items:
+  - name: Manage bugs
+    href: ../backlogs/manage-bugs.md
+  - name: Manage issues or impediments
+    href: ../backlogs/manage-issues-impediments.md
+  - name: Use work item templates
+    href: ../productivity/work-item-template.md
+  - name: "Move, change, or delete items"
+    href: ../backlogs/remove-delete-work-items.md
+  - name: Copy/clone work items
+    href: ../backlogs/copy-clone-work-items.md
+  - name: Link work items
+    href: ../backlogs/add-link.md
+  - name: Bulk modify (web)
+    href: ../backlogs/bulk-modify-work-items.md
+  - name: Bulk add or modify (Excel)
+    href: ../office/bulk-add-modify-work-items-excel.md
+  - name: Add tags to work items
+    href: ../track/add-tags-to-work-items.md
+  - name: Follow work
+    href: ../../collaborate/follow-work-items.md
+- name: Concepts
+  items:
+  - name: About permissions and access
+    href: ../permissions-access-work-tracking.md
+  - name: "Link types & link relationships"
+    href: ../track/link-work-items-support-traceability.md
+  - name: Work item form controls
+    href: ../concepts/work-item-form-controls.md
+  - name: Work item form controls
+    href: ../concepts/work-item-form-controls.md
+  - name: Share work plans
+    href: ../track/share-plans.md
+  - name: New work item experience
+    href: ../process/new-work-item-experience.md
+  - name: Process guidance
+    items:
+    - name: Agile process
+      href: ../guidance/agile-process.md
+    - name: "Agile work item types & workflow"
+      href: ../guidance/agile-process-workflow.md
+    - name: Scrum process
+      href: ../guidance/scrum-process.md
+    - name: "Scrum work item types & workflow"
+      href: ../guidance/scrum-process-workflow.md
+    - name: CMMI process guidance
+      items:
+      - name: CMMI process
+        href: ../guidance/cmmi-process.md
+      - name: "CMMI work item types & workflow"
+        href: ../guidance/cmmi-process-workflow.md
+      - name: CMMI background
+        href: ../guidance/cmmi/guidance-background-to-cmmi.md
+      - name: Project management
+        href: ../guidance/cmmi/guidance-project-management.md
+        items:
+        - name: Project activities
+          href: ../guidance/cmmi/guidance-project-activities.md
+        - name: Project inception
+          href: ../guidance/cmmi/guidance-project-inception.md
+        - name: Plan a project
+          href: ../guidance/cmmi/guidance-plan-a-project-cmmi.md
+        - name: Manage change
+          href: ../guidance/cmmi/guidance-manage-change.md
+        - name: Manage risk
+          href: ../guidance/cmmi/guidance-manage-risks.md
+        - name: Iteration activities
+          href: ../guidance/cmmi/guidance-iteration-activities.md
+        - name: Plan an iteration
+          href: ../guidance/cmmi/guidance-plan-an-iteration-cmmi.md
+        - name: Manage issues
+          href: ../guidance/cmmi/guidance-manage-issues-cmmi.md
+      - name: Engineering
+        href: ../guidance/cmmi/guidance-engineering.md
+        items:
+        - name: Develop requirements
+          href: ../guidance/cmmi/guidance-develop-requirements.md
+        - name: Arrange requirements into a product plan
+          href: ../guidance/cmmi/arrange-requirements-into-a-product-plan.md
+        - name: Create a solution architecture
+          href: ../guidance/cmmi/guidance-create-solution-architecture.md
+        - name: Implement development tasks
+          href: ../guidance/cmmi/guidance-implement-development-tasks.md
+        - name: Build a product
+          href: ../guidance/cmmi/guidance-build-product.md
+      - name: Track bugs
+        href: ../guidance/cmmi/track-bugs.md
+- name: How-to guides
+  items:
+  - name: Switch project or team focus
+    href: ../how-to/switch-team-context-work.md
+  - name: Email/print work items
+    href: ../how-to/email-work-items.md
+  - name: Get feedback
+    href: ../connect/get-feedback.md
+  - name: Provide feedback
+    href: ../connect/give-feedback.md
+  - name: Set feedback permissions
+    href: ../connect/give-permissions-feedback.md
+  - name: Enable remote audio capture
+    href: ../reference/enable-remote-audio-capture.md
+  - name: Change the audio device or annotation tool
+    href: ../reference/change-audio-device-annotation-tool.md
+  - name: Define area paths
+    href: ../customize/set-area-paths.md
+  - name: Define iteration paths
+    href: ../customize/set-iteration-paths-sprints.md
+  - name: "Manage permissions & access"
+    href: ../how-to/set-permissions-access-work-tracking.md
+  - name: "Add & share storyboard shapes"
+    href: ../office/add-share-storyboard-shapes.md
+- name: Reference
+  items:
+  - name: Work item field index
+    href: ../guidance/work-item-field.md
+  - name: "Code review & feedback field reference"
+    href: ../guidance/guidance-code-review-feedback-field-reference.md
+  - name: "Bugs, issues, & risks  field reference"
+    href: ../guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md
+  - name: Change request  field reference
+    href: ../guidance/cmmi/guidance-change-request-field-reference-cmmi.md
+  - name: Requirements field reference
+    href: ../guidance/cmmi/guidance-requirements-field-reference-cmmi.md
+  - name: Review meeting field reference
+    href: ../guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md
+- name: Resources
+  items:
+  - name: Adhoc work item search
+    href: ../../search/workitem/get-started.md
+  - name: Work item queries
+    href: ../track/using-queries.md
+  - name: Clients that support work tracking
+    href: ../../tools.md
+  - name: Productivity tips
+    href: ../productivity/productivity-tips.md

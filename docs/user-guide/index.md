@@ -23,12 +23,15 @@ New to Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)? We'l
 
 Get oriented to the basics of VSTS and TFS.
 
-![Learn the UI](_img/index/azure-web-app-card.png)   ![Create a repo](_img/index/azure-vm-card.png)   ![Create a Kanban](_img/index/azure-containers-card.png)   
+![Learn the UI](_img/placeholder-web-app.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Create a repo](_img/placeholder-git-repo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Create a Kanban](_img/placeholder-kanban.png)   
+
+- [Set up/sign up with Team Services](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md)  
+- [Code with Git](../git/gitquickstart.md)
+- [Track work via Kanban](../work/kanban/kanban-quickstart.md)
+- [Stakeholder access](../quickstart/get-started-stakeholder.md)
 
 
 ## Tutorials  
-
-* LIST_TUTORIALS_HERE
 
 - [Set account preferences](../setup-admin/account-preferences.md)  
 - [Set favorites](../collaborate/set-favorites.md)   
@@ -38,7 +41,7 @@ Get oriented to the basics of VSTS and TFS.
 
 ## Videos
 
-[![Guided tour of the VSTS user interface](_img/index/build-ci-cd-pipeline-vs-video.png)](https://channel9.msdn.com/Events/build-release/2017/P4105/player)   [![Build a backlog and track your work](_img/index/azure-stack-video.png)](#)   [![Create a Git repo for code sharing](_img/index/ci-cd-azure-container-service-video.png)](https://channel9.msdn.com/Events/Connect/2016/204/player)
+[![Guided tour of the VSTS user interface](_img/index/agile-planning-video-image.png)](https://channel9.msdn.com/Events/build-release/2017/P4105/player)   [![Build a backlog and track your work](_img/index/zero-to-devops-video-image.png)](#)   [![Create a Git repo for code sharing](_img/index/agile-planning-video-image.png)](https://channel9.msdn.com/Events/Connect/2016/204/player)
 
 ## Concepts  
 
@@ -46,9 +49,9 @@ Get oriented to the basics of VSTS and TFS.
 - [Clients and tools](../tools.md)     
 - [Software development roles](../roles.md)   
 - [FAQs](../faqs.md)- 
-- [What's the difference between VSTS and TFS?](../concepts/process/tasks.md)  
-- Accounts and tenants
-- [Licensing](../concepts/licensing/concurrent-pipelines-ts.md)
+- [What's the difference between VSTS and TFS?](../about-vsts-tfs.md)  
+- Accounts and tenants (TBW)  
+- Licensing (TBW) 
 
 ## Reference
 - [Permissions and access](../setup-admin/permissions-access.md)      

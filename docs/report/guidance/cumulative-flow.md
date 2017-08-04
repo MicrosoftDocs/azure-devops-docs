@@ -314,7 +314,7 @@ Remember that the CFD chart is based on data collected for a specific team.
 
 You navigate to your team context from the top navigation bar. The method changes slightly depending on the platform/version you work from and the features you have enabled.     
 
-To switch your team focus, see [Work in the web portal, Switch team project or team focus](../../work/switch-team-context-work.md). 
+To switch your team focus, see [Work in the web portal, Switch team project or team focus](../../work/how-to/switch-team-context-work.md). 
 
 Need more information about teams? See [Multiple teams](../../work/scale/multiple-teams.md) and [Manage team assets](../../work/scale/manage-team-assets.md). 
 

@@ -72,7 +72,7 @@
     - name: Install an extension for Team Services
       href: ../marketplace/get-vsts-extensions.md
     - name: Request permissions for Team Services extensions
-      href: ../marketplace/get-vsts-extension.md#request
+      href: ../marketplace/get-vsts-extensions.md#request
     - name: Approve requests for Team Services extensions
       href: ../marketplace/get-vsts-extensions.md#approve-extension-requests
   - name: Account preferences

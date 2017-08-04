@@ -1,0 +1,83 @@
+- name: Backlogs
+  href: index.md
+- name: Overview
+  items:
+  - name: About Agile tools
+    href: ../overview.md
+  - name: "Backlogs, boards, & plans"
+    href: ../backlogs-boards-plans.md
+- name: Quickstarts
+  items:
+  - name: Create your backlog
+    href: create-your-backlog.md
+- name: Tutorials
+  items:
+  - name: "Define features & epics"
+    href: define-features-epics.md
+  - name: Organize your backlog (map or reparent)
+    href: organize-backlog.md
+  - name: "Create backlog items & tasks (Project)"
+    href: ../office/create-your-backlog-tasks-using-project.md
+- name: Concepts
+  items:
+  - name: Agile glossary
+    href: ../concepts/agile-glossary.md
+  - name: About permissions and access
+    href: ../permissions-access-work-tracking.md
+  - name: "Backlog items & multi-team ownership"
+    href: work-multi-team-ownership-backlogs.md
+  - name: Share work plans
+    href: ../track/share-plans.md
+  - name: "Workflow states & state categories"
+    href: ../concepts/workflow-and-state-categories.md
+- name: How-to guides
+  items:
+  - name: Switch project or team focus
+    href: ../how-to/switch-team-context-work.md
+  - name: Change column options
+    href: ../how-to/set-column-options.md
+  - name: Email/print work items
+    href: ../how-to/email-work-items.md
+  - name: "Filter, backlogs, boards, & queries"
+    href: ../how-to/filter-backlog-or-board.md 
+  - name: Copy as HTML 
+    href: copy-clone-work-items.md#html
+- name: Troubleshooting
+  items:
+  - name: Fix "Ordering backlog items is disabled"
+    href: ../troubleshoot/resolve-backlog-reorder-issues.md
+  - name: Schedule projects using Project
+    href: ../office/schedule-projects-using-microsoft-project.md
+  - name: "Rollup estimated & actual work using Project"
+    href: ../office/rollup-estimated-and-actual-work-using-project.md
+  - name: "Resolve conflicts & errors"
+    href: ../office/resolve-problems-excel-workbooks-sharepoint.md
+    items:
+    - name: Resolve data conflicts
+      href: ../office/resolve-excel-data-conflicts-publish-refresh.md
+    - name: Resolve data validation errors
+      href: ../office/resolve-excel-data-validation-errors.md
+    - name: Resolve invalid links in an Excel tree list
+      href: ../office/resolve-excel-invalid-links-tree-list.md
+- name: Reference
+  items:
+  - name: "Permissions & access for work tracking"
+    href: ../permissions-access-work-tracking.md
+  - name: Work item field index
+    href: ../guidance/work-item-field.md
+- name: Resources
+  items:
+  - name: What is Agile?
+    href: https://www.visualstudio.com/learn/what-is-agile/
+  - name: What is Scrum?
+    href: https://www.visualstudio.com/learn/what-is-scrum/
+  - name: What is Agile development?
+    href: https://www.visualstudio.com/learn/what-is-agile-development/
+  - name: Agile culture
+    href: https://www.visualstudio.com/learn/agile-culture/
+  - name: Scale Agile to large teams
+    href: https://www.visualstudio.com/learn/scale-agile-large-teams/
+  - name: Creating productive teams
+    href: https://www.visualstudio.com/learn/productive-teams/
+  - name: Work item field index
+    href: ../guidance/work-item-field.md

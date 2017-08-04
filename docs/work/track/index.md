@@ -1,5 +1,5 @@
 ---
-title: Queries guidance | Team Services & TFS
+title: Queries index | Team Services & TFS
 description: Use queries to find and list work items, create flat-based query charts in VSTS and and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -10,21 +10,21 @@ ms.topic: landing-page
 ms.date: 07/26/2017
 ---
 
-# Queries Guidance 
+# Queries
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 With queries you can ...  
 
 ## Overview  
-- [Adhoc vs managed queries](adhoc-vs-managed-queries.md) 
+
  
-## 5-minute quickstarts  
+## 5-minute Quickstarts  
 
 - [Begin your query with the search box](search-box-queries.md)
    
 
-## Step-by-step tutorials
+## Step-by-step Tutorials
 
 - Add & run queries
 - Triage work items
@@ -48,17 +48,20 @@ With queries you can ...
 
 
 ## Concepts 
-- [Share work plans](share-plans.md)
+- [Adhoc vs managed queries](adhoc-vs-managed-queries.md) 
 
 ## How-to guides
 - [Change column options](../how-to/set-column-options.md)  
 - [Email/print work items](../how-to/email-work-items.md) 
-* [Filter backlogs, boards, & queries](../how-to/filter-backlog-or-board.md)  
+- [Filter backlogs, boards, & queries](../how-to/filter-backlog-or-board.md)  
 
 
 ## Reference 
 - [Query fields, operators & macros](query-operators-variables.md)      
-- [Work item field index](../guidance/work-item-field.md)    
+- [Work item field index](../guidance/work-item-field.md) 
+- [WIQL syntax](../../reference/wiql-syntax.md)
  
- 
+## Resources
+- [Wiql Editor (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)   
+- [Enhanced Export (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export)
   
