@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 74f0e0bc-6528-4757-b906-b53aa869507b
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/28/17
+ms.date: 08/04/17
 ---
 
 # Share information using the project portal
@@ -46,28 +46,6 @@ Teams use project portals to share information and support how their team works.
   
      If you can't open the portal, you need to be added to a [permissions group in SharePoint](../../setup-admin/add-users.md).  
   
-## Ways your team can share information using the project portal  
- Your team can use the SharePoint portal to share information in the following ways:  
-  
--   **Share data contained in reports or dashboards**.  
-  
-     The reports and dashboards that you'll have access to depend on the process template created with your team project.   
-  
--   **Share team progress using predefined or customized dashboards**.  
-  
-     Dashboards provide information necessary to quickly understand the status of a team project. Because the project portal is composed of Web parts, you can create a customized version of it. Besides the standard information displayed on the project portal, you can add Web parts that connect to other data sources inside and outside the project. For more information about customizing the page layout or adding Web parts, choose  **Help** on the project portal menu bar.  
-  
--   **Share documents, files, images**.  
-  
-     Teams can [upload and organize documents into folders and subfolders](manage-documents-and-document-libraries.md).  
-  
--   **Share team knowledge and processes using the SharePoint wiki**.  
-  
-     See [Manage a wiki](http://office.microsoft.com/en-us/sharepoint-server-help/manage-a-wiki-HA101631713.aspx?CTT=1).  
-  
--   **Reference process guidance for select team project artifacts**.  
-  
-     Process guidance provides information about how to coordinate work on a team project and how to use a type of work item in the overall project life cycle.  
   
 ## Related notes
 

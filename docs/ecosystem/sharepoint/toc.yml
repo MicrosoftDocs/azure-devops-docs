@@ -2,13 +2,12 @@
   href: index.md
 - name: Overview
   items:
-  - name: Excel reports
-    href: ../../report/excel/excel-reports.md
-  - name: Project portal dashboards (TFS)
-    href: ../../report/sharepoint-dashboards/project-portal-dashboards.md
+  - name: About SharePoint integration
+    href: about-sharepoint-integration.md
+  - name: Deprecation overview for SharePoint integration (InProgress) 
 - name: Quickstarts
   items:
-  - name: Share information using the project portal
+  - name: Share information using the SharePoint portal
     href: ../../report/sharepoint-dashboards/share-information-using-the-project-portal.md
 - name: Tutorials
   items:
@@ -23,9 +22,16 @@
     - name: Upload and refresh Excel reports
       href: ../../report/sharepoint-dashboards/upload-refresh-excel-reports.md
 - name: Concepts
+  items:
+  - name: Excel reports
+    href: ../../report/excel/excel-reports.md
+  - name: Project portal dashboards (TFS)
+    href: ../../report/sharepoint-dashboards/project-portal-dashboards.md
+  - name: Features removed from Team Explorer (disabled TFS/SharePoint integration) (InProgress) 
+  - name: Features removed from SharePoint portal (disabled TFS/SharePoint integration) (InProgress) 
 - name: How-to guides
   items:
-  - name: Install SharePoint
+  - name: Configure SharePoint integration
     items:
     - name: Configure enterprise app definition
       href: ../../setup-admin/tfs/install/sharepoint/config-enterprise-app-def.md
@@ -37,6 +43,13 @@
       href: ../../setup-admin/tfs/install/sharepoint/verify-sharepoint.md
     - name: Move SharePoint to new hardware
       href: ../../setup-admin/tfs//install/sharepoint/move-sharepoint-new-hardware.md
+  - name: Migrate from SharePoint 2013 with TFS integration to SharePoint 2016 (InProgress) 
+  - name: Disable SharePoint integration
+    items:
+    - name: Disable SharePoint integration after TFS 2018 upgrade (InProgress)  
+    - name: Install and run the TFS Disconnector for SharePoint (InProgress)  
+    - name: Upgrade TFS/SharePoint Integration for SharePoint 2013 to SharePoint 2016 (InProgress)  
+    - name: Update an Excel worksheet (InProgress)  
 - name: Troubleshooting
   items:
   - name: "Resolve conflicts & errors"
