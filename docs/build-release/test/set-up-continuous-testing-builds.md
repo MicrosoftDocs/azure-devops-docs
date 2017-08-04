@@ -105,11 +105,7 @@ Before you start:
 
    ![Build definition: Run tests with test agent](_img/set-up-continuous-testing-builds/run-tests-with-test-agent.png)
 
-1. Save your build definition.
-
-   ![Build definition: save](_img/set-up-continuous-testing-builds/save-build-definition.png)
-
-1. To check your test run, queue your build.
+1. Save your build definition and queue a build to check your test run.
 
    ![Build definition: queue build](_img/queue-build.png)
 
