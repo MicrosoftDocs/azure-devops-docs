@@ -238,10 +238,4 @@ Report any problems on [Developer Community](https://developercommunity.visualst
 
 We welcome your suggestions:
 
-* Share quick thoughts via Send-a-Smile:
-
- - In your web browser on the title bar ![Send-a-Smile](_img/send-a-smile.png)
-
- - [Visual Studio IDE Send-a-Smile](http://go.microsoft.com/fwlink/?LinkId=517102)
-
-* ropose and vote on ideas on [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services).
+* Propose and vote on ideas on [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services).
