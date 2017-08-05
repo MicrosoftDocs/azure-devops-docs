@@ -20,6 +20,7 @@
     - name: ASP.NET
   - name: CI/CD to Linux VMs
     items:
+    - name: ASP.NET Core
     - name: Node.js
     - name: Java
   - name: CI/CD to Containers

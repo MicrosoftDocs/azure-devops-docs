@@ -28,6 +28,7 @@ Learn how to build your app and deploy it to your choice of Azure service.
   * [ASP.NET Core](apps/aspnet-core-to-windows-vm.md)
   * ASP.NET
 * Linux virtual machines
+  * ASP.NET Core
   * Node.js
   * Java
 * Containers
