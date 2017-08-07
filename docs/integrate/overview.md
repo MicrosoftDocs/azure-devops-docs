@@ -23,12 +23,12 @@ You can leverage our REST APIs directly to interact with all areas of Team Servi
 You can check out the [REST API reference documentation](https://review.docs.microsoft.com/en-us/rest/api/vsts/?branch=master) to be introduced to the REST APIs and see how to use them.
 
 ## .NET client libraries
-For .NET developers building Windows apps and services that integrate with Visual Studio Team Services, client libraries are available for integrating with work item tracking, version control, build, and other services.These packages make it easy to acquire and redistribute the libraries needed by your app or service.
+For .NET developers building Windows apps and services that integrate with VSTS, client libraries are available for integrating with work item tracking, version control, build, and other services.These packages make it easy to acquire and redistribute the libraries needed by your app or service.
 
 Explore the [.NET client library overview](./get-started/client-libraries/dotnet.md) for the different packages and samples.
 
 ## Authentication
-Authentication is a vital part of integrating with Team Services. Based on the type of application you're building, and what products you're building it for, you'll want to choose a different method of authentication. 
+Authentication is a vital part of integrating with VSTS. Based on the type of application you're building, and what products you're building it for, you'll want to choose a different method of authentication. 
 
 Check out the [authentication guidance](./get-started/authentication/authentication-guidance.md) page to find out exactly which method you should use, along with samples for how to implement it.
 
