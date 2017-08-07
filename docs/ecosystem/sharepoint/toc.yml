@@ -11,21 +11,19 @@
     href: ../../report/sharepoint-dashboards/share-information-using-the-project-portal.md
 - name: Tutorials
   items:
-  - name: Work with the SharePoint portal 
-    items:
-    - name: Configure or add a project portal
-      href: ../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md
-    - name: Manage documents and document libraries
-      href: ../../report/sharepoint-dashboards/manage-documents-and-document-libraries.md
-    - name: Configure or redirect process guidance
-      href: ../../report/sharepoint-dashboards/configure-or-redirect-process-guidance.md
-    - name: Upload and refresh Excel reports
-      href: ../../report/sharepoint-dashboards/upload-refresh-excel-reports.md
+  - name: Configure or add a project portal
+    href: ../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md
+  - name: Manage documents and document libraries
+    href: ../../report/sharepoint-dashboards/manage-documents-and-document-libraries.md
+  - name: Configure or redirect process guidance
+    href: ../../report/sharepoint-dashboards/configure-or-redirect-process-guidance.md
 - name: Concepts
   items:
   - name: Excel reports
     href: ../../report/excel/excel-reports.md
   - name: Project portal dashboards (TFS)
+  - name: Upload and refresh Excel reports
+    href: ../../report/sharepoint-dashboards/upload-refresh-excel-reports.md
     href: ../../report/sharepoint-dashboards/project-portal-dashboards.md
   - name: Features removed from Team Explorer (disabled TFS/SharePoint integration) (InProgress) 
   - name: Features removed from SharePoint portal (disabled TFS/SharePoint integration) (InProgress) 
