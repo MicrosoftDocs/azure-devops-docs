@@ -172,7 +172,7 @@ and after running tests. Examples include preparing and cleaning test data,
 creating and cleaning configuration files, and more.
 
 <a name="faq-ondemandruns"></a>
-#### Q: How does selecting "Test run (for on-demand runs)" in the Visual Studio Test task work?
+#### Q: How does selecting "Test run" in the Visual Studio Test task version 2 work?
 
 **A:** The Test management sub-system uses the test run object to
 pass the list of tests selected for execution. The test task looks
