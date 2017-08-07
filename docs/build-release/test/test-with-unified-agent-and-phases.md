@@ -107,7 +107,7 @@ The execution results might look like this:
 Multiple agents will be allocated to the phase. You specify the number of agents to be allocated
 from the pool, and the set of tasks in that phase will be distributed across all these agents.
 
-![Configuring the number of agents for multi-agent parallelism](_img/test-with-unified-agent-and-phases/multi-agent.png)
+![Configuring the number of agents for multiple agents parallelism](_img/test-with-unified-agent-and-phases/multi-agent.png)
 
 In this mode, the Visual Studio Test task runs in a special way. It recognizes that its a multiple agents
 phase, and runs tests in a distributed manner across all the allocated agents. Because other tasks run
