@@ -108,7 +108,7 @@ You will need:
    ![Specifying the properties for the Agent phase](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-04.png)
 
    You may be able to minimize test times by distributing tests across multiple
-   agents by setting **Type of parallelism** to **Multi-agent** and specifying the number of agents.
+   agents by setting **Parallelism** to **Multiple executions** and specifying the number of agents.
    [More details](test-with-unified-agent-and-phases.md).
 
    > **Note**: If you are running UI tests such as CodeUI or Selenium
