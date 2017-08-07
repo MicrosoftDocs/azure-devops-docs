@@ -29,12 +29,12 @@
     - name: Node.js
 - name: Tutorials
   items:
-  - name: Set up a build
-  - name: Set up a release
-  - name: Set up a multi-stage release
-  - name: Use CI with Git workflows
-  - name: Integrate Build with GitHub
-  - name: Integrate Release with Jenkins
+  - name: Define CI build process
+    href: tutorials/define-ci-build-process.md
+  - name: Define CD release process
+  - name: Set up multi-stage release
+  - name: CI builds for Git workflows
+  - name: CI builds for GitHub
   - name: Extend CI/CD
 - name: Concepts
   items:
