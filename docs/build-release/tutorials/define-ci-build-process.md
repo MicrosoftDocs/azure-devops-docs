@@ -19,14 +19,16 @@ ms.custom: mvc
 
 # Define your continuous integration (CI) build process
 
-Visual Studio Team Services and Team Foundation Server provide a highly customizable continuous integration service for building your applications. 
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration service for building your applications. Your build definition is where you specify what gets built and when, the additional tasks you want to run, and what artifacts and other outcomes will result from the build.
 
-In this tutorial, you learn how to:
+In this tutorial, you learn about:
 
 > [!div class="checklist"]
-> * Create a build definition using templates
-> * View tasks in your build definition
-> * Queue a build manually
-> * View logs, artifacts, and other results of a build
-> * Track changes and work items in a build
-> * Configure a build to be triggered automatically
+> * Creating a build definition using templates
+> * Tasks in your build definition
+> * Queuing a build manually
+> * Build triggers
+> * Logs, artifacts, and other results of a build
+> * Changes and work items in a build
+
+[!INCLUDE [include](_shared/build-prerequisites.md)]

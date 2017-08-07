@@ -34,7 +34,9 @@
   - name: Define CD release process
   - name: Set up multi-stage release
   - name: CI builds for Git workflows
+    href: tutorials/ci-build-git.md
   - name: CI builds for GitHub
+    href: tutorials/ci-build-github.md
   - name: Extend CI/CD
 - name: Concepts
   items:
