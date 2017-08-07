@@ -51,7 +51,7 @@ ms.date: 07/26/2017
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="/vsts/release-notes/index">
           <div class="cardSize">
             <div class="cardPadding">
               <div class="card">
@@ -61,7 +61,7 @@ ms.date: 07/26/2017
                   </div>
                 </div>
                 <div class="cardText">
-                  <span class="likeAnH3">Lorem ipsum</span>
+                  <span class="likeAnH3">VSTS Feature Times</span>
                 </div>
               </div>
             </div>
@@ -91,8 +91,8 @@ ms.date: 07/26/2017
                       <div class="cardText">
                         <h3>Add your code</h3>
                         <ul class="noBullet">
-                          <li><a class="barLink" href="">Create a Git repo</a></li>
-						  <li><a class="barLink" href="">Import your code</a></li>
+                          <li><a class="barLink" href="/vsts/git/share-your-code-in-git-vs">Create a Git repo</a></li>
+						  <li><a class="barLink" href="/vsts/git/import-git-repository">Import your code</a></li>
                         </ul>
                       </div>
                     </div>
@@ -106,9 +106,9 @@ ms.date: 07/26/2017
                       <div class="cardText">
                         <h3>Continuous integration &amp; delivery</h3>
                         <ul class="noBullet">
-                          <li><a class="barLink" href="">Build and release</a></li>
-                          <li><a class="barLink" href="">Deploy to Azure</a></li>
-                          <li><a class="barLink" href="">Package management</a></li>
+                          <li><a class="barLink" href="/vsts/build-release/">Build and release</a></li>
+                          <li><a class="barLink" href="/vsts/deploy-azure/">Deploy to Azure</a></li>
+                          <li><a class="barLink" href="/vsts/package/">Package management</a></li>
                         </ul>
                       </div>
                     </div>
@@ -138,9 +138,9 @@ ms.date: 07/26/2017
                       <div class="cardText">
                         <h3>Test your code</h3>
                         <ul class="noBullet">
-                          <li><a class="barLink" href="">Continuous testing</a></li>
-                          <li><a class="barLink" href="">Exploratory testing</a></li>
-                          <li><a class="barLink" href="">Load testing</a></li>
+                          <li><a class="barLink" href="/vsts/build-release/test/index">Continuous testing</a></li>
+                          <li><a class="barLink" href="/vsts/manual-test/index">Exploratory testing</a></li>
+                          <li><a class="barLink" href="/vsts/load-test/index">Load testing</a></li>
                         </ul>
                       </div>
                     </div>
@@ -246,43 +246,43 @@ ms.date: 07/26/2017
                 <div class="group">
                   <h3>Code</h3>
                   <ul>
-                    <li><a class="barLink" href="">Git</a></li>
-                    <li><a class="barLink" href="">TFVC</a>
+                    <li><a class="barLink" href="/vsts/git/overview">Git</a></li>
+                    <li><a class="barLink" href="/vsts/tfvc/overview">TFVC</a>
                     </li>
                   </ul>
                   <h3>Continuous Integration &amp; Delivery</h3>
                   <ul>
-                    <li><a class="barLink" href="">Build and Release</a>
+                    <li><a class="barLink" href="/vsts/build-release/index">Build and Release</a>
                     </li>
-                    <li><a class="barLink" href="">Deploy to Azure</a>
+                    <li><a class="barLink" href="/vsts/deploy-azure/index">Deploy to Azure</a>
                     </li>
-                    <li><a class="barLink" href="">Package Management</a>
+                    <li><a class="barLink" href="/vsts/package/index">Package Management</a>
                     </li>
-                    <li><a class="barLink" href="">Continuous Testing</a>
+                    <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a>
                     </li>
                   </ul>
                   <h3>Testing</h3>
                   <ul>
                     <li><a class="barLink" href="">Test Management</a>
                     </li>
-                    <li><a class="barLink" href="">Unit Testing</a>
+                    <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit Testing</a>
                     </li>
-                    <li><a class="barLink" href="">Exploratory &amp; Manual Testing</a>
+                    <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a>
                     </li>
-                    <li><a class="barLink" href="">Load Testing</a>
+                    <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a>
                     </li>
                   </ul>
                   <h3>Collaboration</h3>
                   <ul>
-                    <li><a class="barLink" href="">Notifications</a>
+                    <li><a class="barLink" href="/vsts/notifications/index">Notifications</a>
                     </li>
-                    <li><a class="barLink" href="">READMEs &amp; Wikis</a>
+                    <li><a class="barLink" href="/vsts/collaborate/index">READMEs &amp; Wikis</a>
                     </li>
                     <li><a class="barLink" href="">Social</a>
                     </li>
-                    <li><a class="barLink" href="">Pull Requests?</a>
+                    <li><a class="barLink" href="/vsts/git/tutorial/pullrequest">Pull Requests</a>
                     </li>
-                    <li><a class="barLink" href="">Code Reviews?</a>
+                    <li><a class="barLink" href="/vsts/git/concepts/pull-requests#get-your-code-reviewed">Code Reviews</a>
                     </li>
                   </ul>
                 </div>
@@ -290,17 +290,18 @@ ms.date: 07/26/2017
                   <h3>Agile</h3>
                   <ul>
                     <li><a class="barLink" href="">Work Items</a></li>
-                    <li><a class="barLink" href="">Backlogs</a></li>
-                    <li><a class="barLink" href="">Kanban</a></li>
-                    <li><a class="barLink" href="">Scrum</a></li>
-                    <li><a class="barLink" href="">Queries</a></li>
-                    <li><a class="barLink" href="">Delivery Plans</a></li>
+                    <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
+                    <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
+                    <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
+                    <li><a class="barLink" href="/vsts/work/track/index">Queries</a></li>
+                    <li><a class="barLink" href="/vsts/work/scale/review-team-plans">Delivery Plans</a></li>
                   </ul>
                   <h3>Analytics</h3>
                   <ul>
-                    <li><a class="barLink" href="">Dashboards</a></li>
-                    <li><a class="barLink" href="">PowerBI</a></li>
-                    <li><a class="barLink" href="">OData</a></li>
+                    <li><a class="barLink" href="/vsts/report/index">Dashboards</a></li>
+                    <li><a class="barLink" href="/vsts/report/analytics/index">PowerBI</a></li>
+                    <li><a class="barLink" href="/vsts/report/powerbi/index">OData</a></li>
+					<li><a class="barLink" href="/vsts/report/sql-reports/">Data Warehouse (SQL Reports)</a></li>
                   </ul>
                 </div>
               </li>
@@ -309,20 +310,22 @@ ms.date: 07/26/2017
                   <h3>Admin</h3>
                   <ul>
                     <li><a class="barLink" href="">Account Management</a></li>
-                    <li><a class="barLink" href="">Server Administration (TFS)</a></li>
+                    <li><a class="barLink" href="/vsts/setup-admin/tfs/index">Server Administration (TFS)</a></li>
                     <li><a class="barLink" href="">Billing</a></li>
-                    <li><a class="barLink" href="">Scale and configure teams</a></li>
-                    <li><a class="barLink" href="">Marketplace</a></li>
+                    <li><a class="barLink" href="/vsts/work/scale/index">Scale and configure teams</a></li>
+                    <li><a class="barLink" href="/vsts/marketplace/overview">Marketplace</a></li>
                     <li><a class="barLink" href="">Security and Identity</a></li>
-                    <li><a class="barLink" href="">Branch Policies</a></li>
-                    <li><a class="barLink" href="">Work Item Customization</a></li>
+                    <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
+                    <li><a class="barLink" href="/vsts/work/customize/index">Work Item Customization</a></li>
                   </ul>
                   <h3>Integration</h3>
                   <ul>
-                    <li><a class="barLink" href="">Service Hooks</a></li>
-                    <li><a class="barLink" href="">Custom Extensions</a></li>
-                    <li><a class="barLink" href="">REST APIs</a></li>
-                    <li><a class="barLink" href="">.NET APIs</a></li>
+                    <li><a class="barLink" href="/vsts/marketplace/integrate/service-hooks/get-started">Service Hooks</a></li>
+                    <li><a class="barLink" href="/vsts/extend/overview">Custom Extensions</a></li>
+                    <li><a class="barLink" href="/rest/api/vsts/">REST APIs</a></li>
+                    <li><a class="barLink" href="/vsts-dotnet/api/microsoft.teamfoundation.framework.common">.NET APIs</a></li>
+					<li><a class="barLink" href="/vsts/ecosystem/sharepoint/index">SharePoint</a></li>
+					<li><a class="barLink" href="/vsts/work/tfs-ps-sync/index">Project Server integration</a></li>
                   </ul>
                 </div>
               </li>
@@ -332,7 +335,7 @@ ms.date: 07/26/2017
             <a href="#code">Code</a>
             <ul id="code" class="cardsA">
               <li>
-                <a href="">
+                <a href="/vsts/git/overview">
                   <div class="cardSize">
                     <div class="cardPadding">
                       <div class="card">
@@ -342,7 +345,26 @@ ms.date: 07/26/2017
                           </div>
                         </div>
                         <div class="cardText">
-                          <h3>Title</h3>
+                          <h3>Git</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/tfvc/overview">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>TFVC</h3>
                           <p>Description</p>
                         </div>
                       </div>
@@ -356,7 +378,7 @@ ms.date: 07/26/2017
             <a href="#delivery">Continuous Integration &amp; Delivery</a>
             <ul id="delivery" class="cardsA">
               <li>
-                <a href="">
+                <a href="/vsts/build-release/index">
                   <div class="cardSize">
                     <div class="cardPadding">
                       <div class="card">
@@ -375,7 +397,7 @@ ms.date: 07/26/2017
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="/vsts/deploy-azure/index">
                   <div class="cardSize">
                     <div class="cardPadding">
                       <div class="card">
@@ -394,7 +416,7 @@ ms.date: 07/26/2017
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="/vsts/package/index">
                   <div class="cardSize">
                     <div class="cardPadding">
                       <div class="card">
@@ -412,13 +434,8 @@ ms.date: 07/26/2017
                   </div>
                 </a>
               </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#testing">Testing</a>
-            <ul id="testing" class="cardsA">
               <li>
-                <a href="">
+                <a href="/vsts/build-release/test/index">
                   <div class="cardSize">
                     <div class="cardPadding">
                       <div class="card">
@@ -428,7 +445,69 @@ ms.date: 07/26/2017
                           </div>
                         </div>
                         <div class="cardText">
-                          <h3>Title</h3>
+                          <h3>Continuous Testing</h3>
+                          <p>Test continuously while you code, build, and deploy before releasing to production.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#testing">Testing</a>
+            <ul id="testing" class="cardsA">
+              <li>
+                <a href="/visualstudio/test/unit-test-your-code">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Unit Testing</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/manual-test/index">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Exploratory &amp; Manual Testing</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/load-test/index">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Load Testing</h3>
                           <p>Description</p>
                         </div>
                       </div>
@@ -442,6 +521,44 @@ ms.date: 07/26/2017
             <a href="#collaboration">Collaboration</a>
             <ul id="collaboration" class="cardsA">
               <li>
+                <a href="/vsts/notifications/index">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Notifications</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/collaborate/index">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>READMEs &amp; Wikis</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
                 <a href="">
                   <div class="cardSize">
                     <div class="cardPadding">
@@ -452,7 +569,45 @@ ms.date: 07/26/2017
                           </div>
                         </div>
                         <div class="cardText">
-                          <h3>Title</h3>
+                          <h3>Social</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/git/tutorial/pullrequest">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Pull Requests</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/git/concepts/pull-requests#get-your-code-reviewed">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Code Reviews</h3>
                           <p>Description</p>
                         </div>
                       </div>
@@ -485,7 +640,7 @@ ms.date: 07/26/2017
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="/vsts/work/backlogs/index">
                   <div class="cardSize">
                     <div class="cardPadding">
                       <div class="card">
@@ -504,7 +659,7 @@ ms.date: 07/26/2017
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="/vsts/work/scrum/index">
                   <div class="cardSize">
                     <div class="cardPadding">
                       <div class="card">
@@ -523,7 +678,7 @@ ms.date: 07/26/2017
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="/vsts/work/kanban/index">
                   <div class="cardSize">
                     <div class="cardPadding">
                       <div class="card">
@@ -542,7 +697,7 @@ ms.date: 07/26/2017
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="/vsts/work/track/index">
                   <div class="cardSize">
                     <div class="cardPadding">
                       <div class="card">
@@ -561,7 +716,7 @@ ms.date: 07/26/2017
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="/vsts/work/scale/review-team-plans">
                   <div class="cardSize">
                     <div class="cardPadding">
                       <div class="card">
@@ -585,7 +740,7 @@ ms.date: 07/26/2017
             <a href="#analytics">Analytics</a>
             <ul id="analytics" class="cardsA">
               <li>
-                <a href="">
+                <a href="/vsts/report/index">
                   <div class="cardSize">
                     <div class="cardPadding">
                       <div class="card">
@@ -595,7 +750,64 @@ ms.date: 07/26/2017
                           </div>
                         </div>
                         <div class="cardText">
-                          <h3>Title</h3>
+                          <h3>Dashboards</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/report/analytics/index">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>PowerBI</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/report/powerbi/index">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>OData &amp; the Analytics Service</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/report/sql-reports/">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Data Warehouse (SQL Reports)</h3>
                           <p>Description</p>
                         </div>
                       </div>
@@ -619,7 +831,140 @@ ms.date: 07/26/2017
                           </div>
                         </div>
                         <div class="cardText">
-                          <h3>Title</h3>
+                          <h3>Account Management</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/setup-admin/tfs/index">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Server Administration (TFS)</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Billing</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/work/scale/index">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Scale and configure teams</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/marketplace/overview">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Marketplace</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Security and Identity</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/git/branch-policies">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Branch Policies</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/work/customize/index">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Work Item Customization</h3>
                           <p>Description</p>
                         </div>
                       </div>
@@ -633,7 +978,7 @@ ms.date: 07/26/2017
             <a href="#integration">Integration</a>
             <ul id="integration" class="cardsA">
               <li>
-                <a href="">
+                <a href="/vsts/marketplace/integrate/service-hooks/get-started">
                   <div class="cardSize">
                     <div class="cardPadding">
                       <div class="card">
@@ -643,7 +988,102 @@ ms.date: 07/26/2017
                           </div>
                         </div>
                         <div class="cardText">
-                          <h3>Title</h3>
+                          <h3>Service Hooks</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/extend/overview">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Custom Extensions</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/rest/api/vsts/">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>REST APIs</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts-dotnet/api/microsoft.teamfoundation.framework.common">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>.NET APIs</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/ecosystem/sharepoint/index">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>SharePoint</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+			  <li>
+                <a href="/vsts/work/tfs-ps-sync/index">
+                  <div class="cardSize">
+                    <div class="cardPadding">
+                      <div class="card">
+                        <div class="cardImageOuter">
+                          <div class="cardImage">
+                            <img src="/media/common/placeholder.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="cardText">
+                          <h3>Project Server integration</h3>
                           <p>Description</p>
                         </div>
                       </div>
@@ -688,7 +1128,7 @@ ms.date: 07/26/2017
                           <div class="card">
                               <div class="cardImageOuter">
                                   <div class="cardImage">
-                                      <img src="/media/common/placeholder.svg" alt="" />
+                                      <img src="/media/logos/logo_net.svg" alt="" />
                                   </div>
                               </div>
                               <div class="cardText">
@@ -696,7 +1136,7 @@ ms.date: 07/26/2017
                                       .NET Client Libraries
                                   </h3>
                                   <p>
-                                      <a href="">Get started</a>
+                                      <a href="/vsts/integrate/overview">Get started</a>
                                   </p>
                                   <p>
                                       <a href="">API reference</a>
@@ -712,7 +1152,7 @@ ms.date: 07/26/2017
                           <div class="card">
                               <div class="cardImageOuter">
                                   <div class="cardImage">
-                                      <img src="/media/common/placeholder.svg" alt="" />
+                                      <img src="/media/logos/logo_rest.svg" alt="" />
                                   </div>
                               </div>
                               <div class="cardText">
@@ -720,7 +1160,7 @@ ms.date: 07/26/2017
                                       REST APIs
                                   </h3>
                                   <p>
-                                      <a href="">Get started</a>
+                                      <a href="/vsts/integrate/overview">Get started</a>
                                   </p>
                                   <p>
                                       <a href="">API reference</a>
@@ -752,7 +1192,7 @@ ms.date: 07/26/2017
                           <div class="card">
                               <div class="cardImageOuter">
                                   <div class="cardImage">
-                                      <img src="/media/common/placeholder.svg" alt="" />
+                                      <img src="/media/logos/logo_vs-team-services.svg" alt="" />
                                   </div>
                               </div>
                               <div class="cardText">
@@ -760,7 +1200,7 @@ ms.date: 07/26/2017
                                       Custom extensions
                                   </h3>
                                   <p>
-                                      <a href="">Get started</a>
+                                      <a href="/vsts/extend/overview">Get started</a>
                                   </p>
                                   <p>
                                       <a href="">API reference</a>
