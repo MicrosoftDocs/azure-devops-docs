@@ -11,16 +11,16 @@ ms.date: 08/23/2016
 
 # Overview of integrating with Visual Studio Team Services
 
-You can build custom applications that integrate with your Team Services account by using the [REST APIs](#rest-apis) to make direct HTTP calls, or utilize our [.NET Client Libraries](#.net-client-libraries).
+You can build custom applications or services that integrate with your Visual Studio Team Services (VSTS) account by using the [REST APIs](#rest-apis) to make direct HTTP calls, or utilize our [.NET Client Libraries](#.net-client-libraries).
 
-Along with implementing Team Services' functionality in your application, you can also integrate with popular third-party services such as Slack or Jenkins.
+Along with interacting with VSTS in your application, you can also integrate with popular third-party services such as Slack or Jenkins.
 
 <a name ="customApps"/>
 
 ## REST APIs
 You can leverage our REST APIs directly to interact with all areas of Team Services or TFS.
 
-You can check out the [REST API overview page](https://visualstudio.com/api/overview.md) to see all of the APIs, how to use them, and samples.
+You can check out the [REST API reference documentation](https://review.docs.microsoft.com/en-us/rest/api/vsts/?branch=master) to be introduced to the REST APIs and see how to use them.
 
 ## .NET client libraries
 For .NET developers building Windows apps and services that integrate with Visual Studio Team Services, client libraries are available for integrating with work item tracking, version control, build, and other services.These packages make it easy to acquire and redistribute the libraries needed by your app or service.
@@ -39,15 +39,11 @@ Check out the quick starts to get you started:
     * [Get work items using queries](./quickstarts/work-item-quickstart.md)
     * [Integrate with Jenkins](./quickstarts/jenkins-integrate-quickstart.md)
 
-## Tutorials
-For a more in-depth look, find the tutorials:
-    * Tutorial 1
-    * Tutorial 2
 
 ## Samples
 If you're looking for samples, find your languages below:
-    * REST API samples
-    * .NET client library samples
+    * [REST API samples](./get-started/rest/samples.md)
+    * [.NET client library samples](./get-started/client-libraries/samples.md)
 
 
 
