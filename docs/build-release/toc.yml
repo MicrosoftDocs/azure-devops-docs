@@ -33,7 +33,7 @@
     href: tutorials/define-ci-build-process.md
   - name: Define CD release process
   - name: Set up multi-stage release
-  - name: CI builds for Git workflows
+  - name: CI builds for Git in VSTS
     href: tutorials/ci-build-git.md
   - name: CI builds for GitHub
     href: tutorials/ci-build-github.md
