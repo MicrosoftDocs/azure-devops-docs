@@ -1,10 +1,6 @@
 ## Next steps
 
-Now that you've got your own CI/CD process in place, you can modify the build or release defintion to meet the needs of your team.
-
-![build summary with links to edit build and to release](_img/build-summary-with-links-to-edit-build-and-to-release.png)
-
-To learn more see one of these tutorials:
+Now that you've got your own CI/CD process in place, you can modify the build or release defintion to meet the needs of your team. To learn more see one of these tutorials:
 
 * Set up a build
 * Set up a release
