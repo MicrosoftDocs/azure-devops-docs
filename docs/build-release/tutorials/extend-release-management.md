@@ -43,9 +43,11 @@ from the build definition. You also need an Azure App Services website where you
 
 [!INCLUDE [create-azure-web-app-portal](../apps/_shared/create-azure-web-app-portal.md)]
 
+## Select and install an extension
 
+## Use the extension
 
-
+[TBD - Awaiting decision on which extension to use]
 
 ## Update your code to create a new release
 

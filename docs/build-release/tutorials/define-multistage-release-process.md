@@ -31,9 +31,9 @@ In this tutorial, you learn about:
 > [!div class="checklist"]
 > * Extending a release definition by adding environments
 > * Configuring the environments as a multi-stage release pipeline
-> * Modifying the pipeline to suit your testing scenario
+> * Configuring triggers within the release pipeline
 > * Adding approvals to your release pipeline
-> * Creating and monitoring the deployment to each environment
+> * Creating a release and monitoring the deployment to each environment
 
 [What's the difference between a release definition and a release?](../concepts/releases/index.md)
 

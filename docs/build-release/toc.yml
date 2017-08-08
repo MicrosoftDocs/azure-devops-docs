@@ -32,12 +32,15 @@
   - name: Define CI build process
     href: tutorials/define-ci-build-process.md
   - name: Define CD release process
+    href: tutorials/define-cd-release-process.md
   - name: Set up multi-stage release
+    href: tutorials/define-multistage-release-process.md
   - name: CI builds for Git in VSTS
     href: tutorials/ci-build-git.md
   - name: CI builds for GitHub
     href: tutorials/ci-build-github.md
   - name: Extend CI/CD
+    href: tutorials/extend-release-management.md
 - name: Concepts
   items:
   - name: Agents
