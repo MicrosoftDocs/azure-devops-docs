@@ -31,7 +31,7 @@ ms.date: 08/04/2017
 - [WIT analytics](wit-analytics.md)
 - [Analytic recipes](analytics-recipes.md)  
 - [Aggregate data](aggregated-data-analytics.md)  
-- [Query for trend data](querying-for-trend-data.m)  
+- [Query for trend data](querying-for-trend-data.md)  
 - [Work item links](work-item-links.md)  
 - [Create custom calculations with Power Query](custom-calculations.md)  
 - [Build a hub extension](building-extension-against-analytics-service.md)  

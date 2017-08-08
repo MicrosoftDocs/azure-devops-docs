@@ -25,7 +25,7 @@ Get oriented to the basics of VSTS and TFS.
 
 ![Learn the UI](_img/placeholder-web-app.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Create a repo](_img/placeholder-git-repo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Create a Kanban](_img/placeholder-kanban.png)   
 
-- [Set up/sign up with Team Services](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md)  
+- [Set up/sign up with Team Services](/vsts/setup-admin/team-services/sign-up-for-visual-studio-team-services?toc=/vsts/user-guide/toc.json)  
 - [Code with Git](../git/gitquickstart.md)
 - [Track work via Kanban](../work/kanban/kanban-quickstart.md)
 - [Stakeholder access](../quickstart/get-started-stakeholder.md)
@@ -33,11 +33,11 @@ Get oriented to the basics of VSTS and TFS.
 
 ## Tutorials  
 
-- [Set account preferences](../setup-admin/account-preferences.md)  
-- [Set favorites](../collaborate/set-favorites.md)   
-- [Follow work and pull requests](../collaborate/follow-work-items.md)  
-- [Enable preview features](../collaborate/preview-features.md)  
-- [Authenticate with personal access tokens](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md)    
+- [Set account preferences](/vsts/setup-admin/account-preferences?toc=/vsts/user-guide/toc.json)  
+- [Set favorites](/vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json)   
+- [Follow work and pull requests](/vsts/collaborate/follow-work-items?toc=/vsts/user-guide/toc.json)  
+- [Enable preview features](/vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json)  
+- [Authenticate with personal access tokens](/vsts/setup-admin/team-services/use-personal-access-tokens-to-authenticate?toc=/vsts/user-guide/toc.json)    
 
 ## Videos
 
@@ -54,9 +54,9 @@ Get oriented to the basics of VSTS and TFS.
 - Licensing (TBW) 
 
 ## Reference
-- [Permissions and access](../setup-admin/permissions-access.md)      
-- [Keyboard shortcuts](../reference/keyboard-shortcuts.md)
-- [Markdown guidance](../reference/markdown-guidance.md)
+- [Permissions and access](/vsts/setup-admin/permissions-access?toc=/vsts/user-guide/toc.json)      
+- [Keyboard shortcuts](/vsts/reference/keyboard-shortcuts?toc=/vsts/user-guide/toc.json)
+- [Markdown guidance](/vsts/reference/markdown-guidance?toc=/vsts/user-guide/toc.json)
 
 
 ## Resources

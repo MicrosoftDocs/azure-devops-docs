@@ -50,11 +50,11 @@ Installing the TFS Extension for SharePoint on a SharePoint 2010 or 2013 server 
   
 -   **Share documents, files, images**.  
   
-     Teams can [upload and organize documents into folders and subfolders](manage-documents-and-document-libraries.md).  
+     Teams can [upload and organize documents into folders and subfolders](../../report/sharepoint-dashboards/manage-documents-and-document-libraries.md).  
   
 -   **Share team knowledge and processes using the SharePoint wiki**.  
   
-     See [Manage a wiki](http://office.microsoft.com/en-us/sharepoint-server-help/manage-a-wiki-HA101631713.aspx?CTT=1).  
+     See [Manage a wiki](https://support.office.com/en-US/article/Manage-a-wiki-D200A755-3AD5-4EF6-8CDC-B149770E237F).  
   
 -   **Reference process guidance for select team project artifacts**.  
   

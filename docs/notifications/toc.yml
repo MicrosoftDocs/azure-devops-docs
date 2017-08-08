@@ -14,8 +14,6 @@
   items:
   - name: Set team notifications
     href: ../collaborate/manage-team-notifications.md
-  - name: Set personal or team alerts (TFS)
-    href: ../work/track/alerts-and-notifications.md
   - name: Campfire
     href: ../collaborate/campfire.md
   - name: Flowdock
@@ -24,8 +22,6 @@
     href: ../collaborate/hipchat.md
   - name: Slack
     href: ../collaborate/slack.md
-  - name: Collaborate in a team room
-    href: ../collaborate/collaborate-in-a-team-room.md
 - name: Concepts
   items:
   - name: Events, subscribers, notification types, roles
@@ -33,9 +29,14 @@
 - name: How-to guides
   items:
   - name: Go mobile
-    href: ../collaborate/mobile-work.md
-- name: Reference
+    href: /vsts/collaborate/mobile-work?toc=/vsts/notifications/toc.json
+  - name: Set team project or collection-level alerts 
+    href: ../collaborate/collaborate-in-a-team-room.md
+  - name: Collaborate in a team room
+    href: ../collaborate/collaborate-in-a-team-room.md
 - name: Resources    
   items:
   - name: Microsoft Teams Integration
     href: https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams
+  - name: Integrate with service hooks
+    href: ../marketplace/integrate/service-hooks/get-started.md

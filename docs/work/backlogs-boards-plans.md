@@ -255,7 +255,7 @@ Additional topics of interest:
 
 <div style="float:left;width:170px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Navigate</p>
-- [About teams and Agile tools](../about-teams-and-settings.md)   
+- [About teams and Agile tools](about-teams-and-settings.md)   
 - [Add work items](/vsts/work/backlogs/add-work-items?toc=/vsts/work/work-items/toc.json)   
 - [Adhoc vs managed work item queries](./track/adhoc-vs-managed-queries.md)   
 - [Dashboards](../report/dashboards.md)   

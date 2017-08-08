@@ -13,11 +13,9 @@ ms.date: 08/03/2017
 # READMEs and Wiki 
 
 <b>Team Services | TFS 2017 | TFS 2015</b> 
- 
 
 ## Overview  
 - [About READMes and Wikis?](about-readme-wiki.md)
-
 
 ## 5-minute Quickstarts  
 - [Share your project vision](project-vision-status.md)
@@ -28,14 +26,10 @@ ms.date: 08/03/2017
 
 - [Add & edit a wiki](add-edit-wiki.md)  
  
-
 ## Concepts 
 
-
-## How-to guides  
-
- 
+- [Share work plans](/vsts/work/track/share-plans?toc=/vsts/collaborate/toc.json)  
   
 ## Resources 
 
-   
+  - [Dashboards](../report/dashboards.md)

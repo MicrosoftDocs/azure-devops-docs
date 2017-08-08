@@ -9,7 +9,7 @@
   - name: Share your project vision
     href: project-vision-status.md
   - name: Create a readme for your repo
-    href: ../git/create-a-readme.md?toc=/vsts/collaborate/toc.json
+    href: /vsts/git/create-a-readme?toc=/vsts/collaborate/toc.json
 - name: Tutorials
   items:
   - name: "Add & edit a wiki"
@@ -17,7 +17,7 @@
 - name: Concepts
   items:
   - name: Share work plans
-    href: ../work/track/share-plans.md?toc=/vsts/collaborate/toc.json
+    href: /vsts/work/track/share-plans?toc=/vsts/collaborate/toc.json
 - name: How-to guides
   items:
   - name: "Manage README & Wiki permissions"
@@ -25,10 +25,10 @@
 - name: Reference
   items:
   - name: Markdown guidance
-    href: ../reference/markdown-guidance.md?toc=/vsts/collaborate/toc.json
+    href: /vsts/reference/markdown-guidance?toc=/vsts/collaborate/toc.json
   - name: Navigate in the web portal
-    href: ../connect/work-web-portal.md?toc=/vsts/collaborate/toc.json
+    href: /vsts/connect/work-web-portal?toc=/vsts/collaborate/toc.json
 - name: Resources 
   items:
-  - name: Team dashboards
+  - name: Dashboards
     href: ../report/dashboards.md

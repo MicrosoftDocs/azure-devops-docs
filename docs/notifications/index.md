@@ -16,7 +16,8 @@ ms.date: 08/03/2017
 
  
 
-## Overview  
+## Overview
+  
 - [What are notifications?](about-notifications.md)
 
 
@@ -29,13 +30,10 @@ ms.date: 08/03/2017
 ## Step-by-Step Tutorials
 
 - [Set team notifications](../collaborate/manage-team-notifications.md)
-- [Set personal or team alerts (TFS)](../work/track/alerts-and-notifications.md)
 - [Post messages to Campfire](../collaborate/campfire.md)
 - [Post messages to Flowdock](../collaborate/flowdock.md)
 - [Post messages to Hipchat](../collaborate/hipchat.md)
 - [Post messages to Slack](../collaborate/slack.md)
-- [Collaborate in a team room](../collaborate/collaborate-in-a-team-room.md)
-
 
 
 ## Concepts 
@@ -43,10 +41,10 @@ ms.date: 08/03/2017
 -[Events, subscriptions, notification types, and roles](events-subscribers-notification-types.md)
 
 
-
 ## How-to guides  
 - [Go mobile](../collaborate/mobile-work.md)  
- 
+- Set team project or collection-level alerts (NEW TOPIC)  
+- [Collaborate in a team room](../collaborate/collaborate-in-a-team-room.md)
   
 ## Resources 
 

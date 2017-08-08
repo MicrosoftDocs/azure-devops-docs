@@ -7,13 +7,17 @@
 - name: Quickstarts
   items:
   - name: Request feedback (Test & Feedback extension) 
-    href: /vsts/test/manual-exploratory-testing/stakeholder/request-stakeholder-feedback?toc=/vsts/collaborate/feedback/toc.json
+    href: /vsts/manual-test/stakeholder/request-stakeholder-feedback?toc=/vsts/collaborate/feedback/toc.json
   - name: Get feedback (Work tracking)
     href: /vsts/work/connect/get-feedback?toc=/vsts/collaborate/feedback/toc.json
 - name: How-to Guides
   items:
   - name: Provide feedback (Test & Feedback extension)
-    href: /vsts/test/manual-exploratory-testing/stakeholder/provide-stakeholder-feedback?toc=/vsts/collaborate/feedback/toc.json
+    href: /vsts/manual-test/stakeholder/provide-stakeholder-feedback?toc=/vsts/collaborate/feedback/toc.json
+  - name: Track feedback (Test & Feedback extension)
+    href: /vsts/manual-test/stakeholder/track-stakeholder-feedback?toc=/vsts/collaborate/feedback/toc.json
+  - name: Voluntarily provide stakeholder feedback (Test & Feedback extension)
+    href: /vsts/manual-test/stakeholder/voluntary-stakeholder-feedback?toc=/vsts/collaborate/feedback/toc.json
   - name: Provide feedback (Feedback client)
     href: /vsts/work/connect/give-feedback?toc=/vsts/collaborate/feedback/toc.json
   - name: Set feedback permissions
@@ -25,7 +29,7 @@
 - name: Reference
   items:
   - name: Give us feedback, get support
-    href: ../provide-feedback?toc=/vsts/collaborate/feedback/toc.json
+    href: /vsts/provide-feedback?toc=/vsts/collaborate/feedback/toc.json
 - name: Resources 
   items:
   - name: Uservoice Integration (Marketplace extension)

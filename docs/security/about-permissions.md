@@ -178,7 +178,7 @@ to generate encryption keys when you use Linux, Mac,
 or Windows running [Git for Windows](http://www.git-scm.com/download/win) 
 and can't use 
 [Git credential managers](../git/set-up-credential-managers.md) 
-or [personal access tokens](use-personal-access-tokens-to-authenticate.md) 
+or [personal access tokens](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) 
 for HTTPS authentication.
 
 *	[Personal access tokens](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) 
@@ -188,7 +188,7 @@ to generate tokens for:
 	*	Clients like Xcode and Nuget that require usernames and passwords 
 		as basic credentials and don't support Microsoft account 
 		and Azure Active Directory features like multi-factor authentication 
-	*	Accessing [REST APIs for Team Services and TFS](../../integrate/get-started/rest/basics.md)
+	*	Accessing [REST APIs for Team Services and TFS](../integrate/get-started/rest/basics.md)
 
 By default, your account or collection allows access for all authentication methods. 
 You can limit access, but you must specifically restrict access for each method. 
