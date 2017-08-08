@@ -40,14 +40,16 @@ In this tutorial, you learn about:
 [!INCLUDE [include](_shared/build-prerequisites.md)]
 
 This tutorial requires you to have completed the tutorial 
-[]() first. This tutorial extends that one by using the same set of build artifacts
+[Define your continuous integration (CI) build process](define-ci-build-process.md)
+first. This tutorial extends that one by using the same set of build artifacts
 from the build definition. You also need four separate Azure App Services websites
 where you will deploy each stage of the app pipeline.
 
 Start by configuring three more Azure App Services web apps so that you have four in all.
 Give the new ones names such as **SampleApp-Test**, **SampleApp-QA**, and **SampleApp-Prod**.
 You will need to adapt the names so that they are unique in App Services - perhaps
-by adding your initials and a number to each one. Use the following steps to create each one.
+by adding your initials and a number to each one.
+Use the following steps to create each one.
 
 [!INCLUDE [create-azure-web-app-portal](../apps/_shared/create-azure-web-app-portal.md)]
 
@@ -75,7 +77,7 @@ by adding your initials and a number to each one. Use the following steps to cre
 
 ## Monitor the deployment
 
-Open the **Releases** page from the **Build &amp; Release ** hub.
+Open the **Releases** page from the **Build &amp; Release** hub.
 
 Wait a few minutes for the build to complete and the release to start.
 

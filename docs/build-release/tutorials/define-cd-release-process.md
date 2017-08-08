@@ -37,8 +37,8 @@ In this tutorial, you learn about:
 
 [!INCLUDE [include](_shared/build-prerequisites.md)]
 
-This tutorial requires you to have already created a set of build artifacts
-from a build definition. You also need an Azure App Services website where you will
+This tutorial requires you to have already created a set of build artifacts from
+a build definition. You also need an Azure App Services website where you will
 deploy the app.
 
 If you don't already have a build definition that creates a set of artifacts for your app,
@@ -77,6 +77,8 @@ Choose the **Release** icon and choose **Create release**
 Enter description and choose **Queue**
 
 Choose release definition name in information bar to see summary "in progress"
+
+[What other ways can I create a release?](../actions/create-deploy-releases.md)
 
 ## Monitor the deployment
 
