@@ -50,17 +50,23 @@ work through the tutorial [Define your continuous integration (CI) build process
 
 Open build summary and choose **Release**
 
+[What other ways can I create a release definition?](../actions/work-with-release-definitions.md)
+
 Select the **Azure App Service Deployment** template and choose **Apply**
 
 In **Pipeline** tab, choose XXX to open the Continuous Delivery panel, ensure Continuous delivery is turned on (creates release when artifacts updated, for example from build)
 
 Choose XXX icon in environment to open Triggers panel, explore trigger settings (deploy starts when release created)
 
+[Where can I learn more about release triggers?](../concepts/definitions/release/triggers.md)
+
 ## Configure the tasks in the release definition
 
 Open the **Tasks** tab and select the **Deploy Azure App Service** task. 
 
 Select your Azure subscription and App Services website.
+
+[Where can I learn more about adding tasks?](../actions/work-with-release-definitions.md#define-processes)
 
 Save the release definition
 
