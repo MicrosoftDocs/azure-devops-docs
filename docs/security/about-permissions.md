@@ -160,10 +160,10 @@ For more information, see [Determine permission levels and groups in SharePoint 
 
 With VSTS and TFS, other applications and services can integrate with VSTS and TFS services and resources. To access your account without asking for user credentials multiple times, apps can use these authentication methods:
 
-*	[OAuth](../../integrate/get-started/Authentication/oauth.md) 
-to generate tokens for accessing [REST APIs for Team Services and Team Foundation Server](../../integrate/get-started/rest/basics.md). 
-The [Accounts](https://visualstudio.com/integrate/api/shared/accounts.md) 
-and [Profiles](https://visualstudio.com/integrate/api/shared/profiles.md) 
+*	[OAuth](/vsts/integrate/get-started/Authentication/oauth) 
+to generate tokens for accessing [REST APIs for Team Services and Team Foundation Server](/vsts/integrate/get-started/rest/basics). 
+The [Accounts](/vsts/integrate/api/shared/accounts) 
+and [Profiles](/vsts/integrate/api/shared/profiles) 
 APIs support only OAuth.
 
 *	[Alternate credentials](../git/auth-overview.md#alternate-credentials) 

@@ -3,11 +3,17 @@
 - name: Overview
   items:
   - name: "Backlogs, boards, & plans"
-    href: ../backlogs-boards-plans.md
+    href: /vsts/work/backlogs-boards-plans?toc=/vsts/work/backlogs/toc.json 
+  - name: About teams and Agile tools
+    href: /vsts/work/scale/about-teams-and-settings?toc=/vsts/work/backlogs/toc.json 
 - name: Quickstarts
   items:
   - name: Create your backlog
     href: create-your-backlog.md
+  - name: Drive Git development
+    href: connect-work-items-to-git-dev-ops.md
+  - name: Storyboard your ideas
+    href: ../office/storyboard-your-ideas-using-powerpoint.md
 - name: Tutorials
   items:
   - name: "Define features & epics"
@@ -18,28 +24,30 @@
     href: ../office/create-your-backlog-tasks-using-project.md
 - name: Concepts
   items:
-  - name: Agile glossary
-    href: ../concepts/agile-glossary.md
+  - name: Grooming your backlog
+    href: ../concepts/best-practices-product-backlog.md
   - name: About permissions and access
-    href: ../permissions-access-work-tracking.md
+    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/backlogs/toc.json
   - name: "Backlog items & multi-team ownership"
     href: work-multi-team-ownership-backlogs.md
   - name: Share work plans
-    href: ../track/share-plans.md
+    href: /vsts/work/track/share-plans?toc=/vsts/work/backlogs/toc.json
   - name: "Workflow states & state categories"
-    href: ../concepts/workflow-and-state-categories.md
+    href: /vsts/work/concepts/workflow-and-state-categories?toc=/vsts/work/backlogs/toc.json
+  - name: Agile glossary
+    href: /vsts/work/concepts/agile-glossary?toc=/vsts/work/backlogs/toc.json
 - name: How-to Guides
   items:
   - name: Switch project or team focus
-    href: ../how-to/switch-team-context-work.md
+    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/backlogs/toc.json
   - name: Change column options
-    href: ../how-to/set-column-options.md
+    href: /vsts/work/how-to/set-column-options?toc=/vsts/work/backlogs/toc.json
   - name: Email/print work items
-    href: ../how-to/email-work-items.md
+    href: /vsts/work/how-to/email-work-items?toc=/vsts/work/backlogs/toc.json
   - name: "Filter, backlogs, boards, & queries"
-    href: ../how-to/filter-backlog-or-board.md 
+    href: /vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/backlogs/toc.json
   - name: Copy as HTML 
-    href: copy-clone-work-items.md#html
+    href: /vsts/work/backlogs/copy-clone-work-items#html?toc=/vsts/work/backlogs/toc.json
 - name: Troubleshooting
   items:
   - name: Fix "Ordering backlog items is disabled"
@@ -57,22 +65,16 @@
 - name: Reference
   items:
   - name: "Permissions & access for work tracking"
-    href: ../permissions-access-work-tracking.md
+    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/backlogs/toc.json
   - name: Work item field index
-    href: ../guidance/work-item-field.md
+    href: /vsts/work/guidance/work-item-field?toc=/vsts/work/backlogs/toc.json
 - name: Resources
   items:
   - name: What is Agile?
     href: https://www.visualstudio.com/learn/what-is-agile/
-  - name: What is Scrum?
-    href: https://www.visualstudio.com/learn/what-is-scrum/
   - name: What is Agile development?
     href: https://www.visualstudio.com/learn/what-is-agile-development/
   - name: Agile culture
     href: https://www.visualstudio.com/learn/agile-culture/
-  - name: Scale Agile to large teams
-    href: https://www.visualstudio.com/learn/scale-agile-large-teams/
   - name: Creating productive teams
     href: https://www.visualstudio.com/learn/productive-teams/
-  - name: Work item field index
-    href: ../guidance/work-item-field.md

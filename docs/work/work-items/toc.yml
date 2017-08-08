@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-  - name: About work items
+  - name: About work items (NEW TOPIC) 
     href: wit-overview.md
 - name: Quickstarts
   items:
@@ -15,7 +15,7 @@
   - name: Manage issues or impediments
     href: ../backlogs/manage-issues-impediments.md
   - name: Use work item templates
-    href: ../productivity/work-item-template.md
+    href: /vsts/work/productivity/work-item-template?toc=/vsts/work/work-items/toc.json
   - name: "Move, change, or delete items"
     href: ../backlogs/remove-delete-work-items.md
   - name: Copy/clone work items
@@ -29,21 +29,19 @@
   - name: Add tags to work items
     href: ../track/add-tags-to-work-items.md
   - name: Follow work
-    href: ../../collaborate/follow-work-items.md
+    href: /vsts/collaborate/follow-work-items?toc=/vsts/work/work-items/toc.json
 - name: Concepts
   items:
   - name: About permissions and access
-    href: ../permissions-access-work-tracking.md
+    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/work-items/toc.json
   - name: "Link types & link relationships"
     href: ../track/link-work-items-support-traceability.md
   - name: Work item form controls
     href: ../concepts/work-item-form-controls.md
-  - name: Work item form controls
-    href: ../concepts/work-item-form-controls.md
   - name: Share work plans
-    href: ../track/share-plans.md
+    href: /vsts/work/track/share-plans?toc=/vsts/work/work-items/toc.json
   - name: New work item experience
-    href: ../process/new-work-item-experience.md
+    href: /vsts/work/process/new-work-item-experience?toc=/vsts/work/work-items/toc.json
   - name: Process guidance
     items:
     - name: Agile process
@@ -99,25 +97,15 @@
 - name: How-to guides
   items:
   - name: Switch project or team focus
-    href: ../how-to/switch-team-context-work.md
+    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/work-items/toc.json
   - name: Email/print work items
-    href: ../how-to/email-work-items.md
-  - name: Get feedback
-    href: ../connect/get-feedback.md
-  - name: Provide feedback
-    href: ../connect/give-feedback.md
-  - name: Set feedback permissions
-    href: ../connect/give-permissions-feedback.md
-  - name: Enable remote audio capture
-    href: ../reference/enable-remote-audio-capture.md
-  - name: Change the audio device or annotation tool
-    href: ../reference/change-audio-device-annotation-tool.md
+    href: /vsts/work/how-to/email-work-items?toc=/vsts/work/work-items/toc.json
   - name: Define area paths
-    href: ../customize/set-area-paths.md
+    href: /vsts/work/customize/set-area-paths?toc=/vsts/work/work-items/toc.json
   - name: Define iteration paths
-    href: ../customize/set-iteration-paths-sprints.md
+    href: /vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/work-items/toc.json
   - name: "Manage permissions & access"
-    href: ../how-to/set-permissions-access-work-tracking.md
+    href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/work/work-items/toc.json
   - name: "Add & share storyboard shapes"
     href: ../office/add-share-storyboard-shapes.md
 - name: Reference

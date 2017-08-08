@@ -7,10 +7,10 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 07/25/2017
+ms.date: 08/07/2017
 ---
 
-# About Kanban and project management 
+# About Kanban and Agile project management 
  
 Kanban uses a visual interactive board to plan and show progress using cards. Your Kanban board is fully customizable to support the workflow used by your team.  
 

@@ -4,6 +4,7 @@
   items:
   - name: "About teams & Agile tools"
     href: ../about-teams-and-settings.md
+  - name: Manage teams (To be written)
 - name: Quickstarts
   items:
   - name: "Add a team & team members"
@@ -33,7 +34,7 @@
   - name: Set team defaults
     href: set-team-defaults.md
   - name: Configure team settings
-    href: manage-team-assets.md
+    href: manage-team-assets.md 
     items:
     - name: Select backlog levels
       href: ../customize/select-backlog-navigation-levels.md
@@ -41,8 +42,8 @@
       href: ../customize/show-bugs-on-backlog.md
     - name: Set working days
       href: ../customize/set-working-days.md
-    - name: Set team favorites
-      href: ../../collaborate/set-favorites.md
+    - name: Set team favorites (New Topic)  
+      href: /vsts/collaborate/set-favorites?toc=/vsts/work/scale/toc.json
   - name: Customize a Kanban board
     items:
     - name: Add or edit columns
@@ -61,16 +62,16 @@
       href: ../customize/reorder-cards.md
   - name: Customize Task board cards
     href: ../customize/customize-cards.md
-  - name: Set team notifications
-    href: ../../collaborate/manage-team-notifications.md
+  - name: Manage team notifications
+    href: /vsts/collaborate/manage-team-notifications?toc=/vsts/work/scale/toc.json
   - name: Switch project or team focus
-    href: ../how-to/switch-team-context-work.md
-  - name: Team rooms
-    href: ../../collaborate/collaborate-in-a-team-room.md
+    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/scale/toc.json
+  - name: Collaborate in a team room
+    href: /vsts/collaborate/collaborate-in-a-team-room?toc=/vsts/work/scale/toc.json
 - name: Reference
   items:
   - name: "Permissions & access for work tracking"
-    href: ../permissions-access-work-tracking.md
+    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/scale/toc.json
 - name: Resources
   items:
   - name: Agile culture

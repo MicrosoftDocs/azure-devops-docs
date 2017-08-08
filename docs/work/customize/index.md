@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 07/26/2017
 ---
 
-# Work tracking customization  
+# Work item customization  
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013 </b>
 
@@ -32,71 +32,10 @@ Tutorials are provided for customizing work tracking based on each of the three 
 ### Inheritance process model  
 You can perform the following tasks with the Inheritance process model. 
 
-<div style="float:left;width:235px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Fields</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Add a custom field](../process/customize-process-field.md)</li>
-<li style="margin-bottom:2px">[Add a person-name or Identity field](../process/customize-process-field.md#identity)</li>
-<li style="margin-bottom:2px">[Add a rich-text field](../process/customize-process-field.md#html)</li>
-<li style="margin-bottom:2px">[Add a checkbox (Boolean) field](../process/customize-process-field.md#boolean-field)</li>
-<!--- <li style="margin-bottom:2px">Add rules to a field (currently not supported)</li> -->
-<li style="margin-bottom:2px">[Change a field label](../process/customize-process-field.md)</li>
-<li style="margin-bottom:2px">[Remove a field from a form](../process/customize-process-field.md)</li>
-<li style="margin-bottom:2px">[Add a custom control field](../process/custom-controls-process.md)</li>
-<li style="margin-bottom:2px">[Delete a field](../process/customize-process-field.md#delete-field)</li>
-<li style="margin-bottom:2px">[Review fields](../process/customize-process-field.md#review-fields)</li>
-</ul>
-</div>
-<div style="float:left;width:235px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Pick lists</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Area paths & iteration paths](#shared-resources)</li>
-<li style="margin-bottom:2px">[Person-name field (add team members)](../../setup-admin/team-services/add-team-members-vs.md)</li>
-<li style="margin-bottom:2px">[State or Reason fields](../process/customize-process-workflow.md)</li>
-<li style="margin-bottom:2px">[Add a custom pick list](../process/customize-process-form.md)</li>
-<!--- <li style="margin-bottom:2px">Predefined field (not supported) <sup>3</sup></li> -->
-
-</ul>
-</div>
-
-<div style="float:left;width:235px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Work item types</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Add or modify a custom field](../process/customize-process-field.md)</li>
-<li style="margin-bottom:2px">[Add a custom work item type](../process/customize-process-wit.md)</li>
-<li style="margin-bottom:1px">[Specify the WIT color](../process/customize-process-wit.md)</li> 
-<li style="margin-bottom:2px">[Customize the workflow (States)](../process/customize-process-workflow.md)</li>
-<li style="margin-bottom:2px">[Customize a work item form](../process/customize-process-form.md)</li>
-<li style="margin-bottom:2px">[Add a custom control](../process/custom-controls-process.md)</li>
-
-</ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
-<div style="float:left;width:235px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlogs</p>
-
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Add custom backlog levels](add-portfolio-backlogs.md)</li>
-<li style="margin-bottom:2px">[Add a custom WIT to a backlog](../process/customize-process-backlogs-boards.md)</li>
-<li style="margin-bottom:2px">[Show bugs on backlogs/boards](show-bugs-on-backlog.md)</li>
-</ul>
-
-</div>
-
-<div style="float:left;width:235px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Process</p>
-
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Create & manage an inherited process](../process/manage-process.md)</li>
-<li style="margin-bottom:2px">[Customize a process](../process/customize-process.md)</li>
-</ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |Fields  |Pick lists   |   Work item types   | Backlogs | Process |  
+> |-------------|----------|---------|----------|---------|   
+> |- [Add a custom field](../process/customize-process-field.md)<br/>- [Add a person-name or Identity field](../process/customize-process-field.md#identity)<br/>- [Add a rich-text field](../process/customize-process-field.md#html)<br/>- [Add a checkbox (Boolean) field](../process/customize-process-field.md#boolean-field)<br/>- [Add rules to a field](../process/custom-rules.md)<br/>- [Change a field label](../process/customize-process-field.md)<br/>- [Remove a field from a form](../process/customize-process-field.md)<br/>- [Add a custom control field](../process/custom-controls-process.md)<br/>- [Delete a field](../process/customize-process-field.md#delete-field)<br/>- [Review fields](../process/customize-process-field.md#review-fields)|- [Area paths & iteration paths](#shared-resources)<br/>- [Person-name field (add team members)](../../setup-admin/team-services/add-team-members-vs.md)<br/>- [State or Reason fields](../process/customize-process-workflow.md)<br/>- [Add a custom pick list](../process/customize-process-form.md)|- [Add a custom field](../process/customize-process-field.md)<br/>- [Add a custom WIT](../process/customize-process-wit.md)<br/>- [Specify the WIT color](../process/customize-process-wit.md)<br/>- [Customize the workflow (States)](../process/customize-process-workflow.md)<br/>- [Customize the WIT form](../process/customize-process-form.md)<br/>- [Add a custom control](../process/custom-controls-process.md)|- [Add custom backlog levels](add-portfolio-backlogs.md)<br/>- [Add a custom WIT to a backlog](../process/customize-process-backlogs-boards.md)<br/>- [Show bugs on backlogs/boards](show-bugs-on-backlog.md)|- [Create & manage an inherited process](../process/manage-process.md)<br/>- [Customize a process](../process/customize-process.md) |
 
 
 <a id="hosted-xml-process-model">  </a>

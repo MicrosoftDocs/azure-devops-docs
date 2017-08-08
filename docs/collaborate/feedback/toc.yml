@@ -1,0 +1,34 @@
+- name: Feedback 
+  href: index.md
+- name: Overview  
+  items:
+  - name: About feedback
+    href: about-feedback.md  
+- name: Quickstarts
+  items:
+  - name: Request feedback (Test & Feedback extension) 
+    href: /vsts/test/manual-exploratory-testing/stakeholder/request-stakeholder-feedback?toc=/vsts/collaborate/feedback/toc.json
+  - name: Get feedback (Work tracking)
+    href: /vsts/work/connect/get-feedback?toc=/vsts/collaborate/feedback/toc.json
+- name: How-to Guides
+  items:
+  - name: Provide feedback (Test & Feedback extension)
+    href: /vsts/test/manual-exploratory-testing/stakeholder/provide-stakeholder-feedback?toc=/vsts/collaborate/feedback/toc.json
+  - name: Provide feedback (Feedback client)
+    href: /vsts/work/connect/give-feedback?toc=/vsts/collaborate/feedback/toc.json
+  - name: Set feedback permissions
+    href: /vsts/work/connect/give-permissions-feedback?toc=/vsts/collaborate/feedback/toc.json
+  - name: Enable remote audio capture
+    href: /vsts/work/reference/enable-remote-audio-capture?toc=/vsts/collaborate/feedback/toc.json
+  - name: Change the audio device or annotation tool
+    href: /vsts/work/reference/change-audio-device-annotation-tool?toc=/vsts/collaborate/feedback/toc.json
+- name: Reference
+  items:
+  - name: Give us feedback, get support
+    href: ../provide-feedback?toc=/vsts/collaborate/feedback/toc.json
+- name: Resources 
+  items:
+  - name: Uservoice Integration (Marketplace extension)
+    href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice
+  - name: UserVoice UI (Marketplace extension)
+    href: https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-uservoice-ui

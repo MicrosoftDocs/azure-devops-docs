@@ -18,7 +18,8 @@ With queries you can ...
 
 ## Overview  
 
- 
+- [Adhoc vs managed queries](adhoc-vs-managed-queries.md)  
+- 
 ## 5-minute Quickstarts  
 
 - [Begin your query with the search box](search-box-queries.md)
@@ -29,10 +30,8 @@ With queries you can ...
 - Add & run queries
 - Triage work items
 - [Edit a query](using-queries.md)
-- [Add a query chart](../../report/charts.md)
-- [Copy a query](../backlogs/copy-clone-work-items.md#html)
-- [History & audit](history-and-auditing.md)
- 
+- [Add a query chart](/vsts/report/charts?toc=/vsts/work/track/toc.json)
+- [Copy a query](/vsts/work/backlogs/copy-clone-work-items#html?toc=/vsts/work/track/toc.json) 
 
 ## Samples
 - [Example search box queries](search-box-queries.md)
@@ -51,15 +50,15 @@ With queries you can ...
 - [Adhoc vs managed queries](adhoc-vs-managed-queries.md) 
 
 ## How-to guides
-- [Change column options](../how-to/set-column-options.md)  
-- [Email/print work items](../how-to/email-work-items.md) 
-- [Filter backlogs, boards, & queries](../how-to/filter-backlog-or-board.md)  
+- [Change column options](/vsts/work/how-to/set-column-options?toc=/vsts/work/track/toc.json)  
+- [Email/print work items](/vsts/work/how-to/email-work-items?toc=/vsts/work/track/toc.json) 
+- [Filter backlogs, boards, & queries](/vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/track/toc.json)  
 
 
 ## Reference 
 - [Query fields, operators & macros](query-operators-variables.md)      
-- [Work item field index](../guidance/work-item-field.md) 
-- [WIQL syntax](../../reference/wiql-syntax.md)
+- [Work item field index](/vsts/work/guidance/work-item-field?toc=/vsts/work/track/toc.json) 
+- [WIQL syntax](/vsts/reference/wiql-syntax?toc=/vsts/work/track/toc.json)
  
 ## Resources
 - [Wiql Editor (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)   

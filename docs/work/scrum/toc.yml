@@ -4,18 +4,20 @@
   items:
   - name: About Scrum
     href: scrum-overview.md
-  - name: "About teams & Agile tools"
-    href: ../about-teams-and-settings.md
+  - name: "Backlogs, boards, & plans"
+    href: /vsts/work/backlogs-boards-plans?toc=/vsts/work/backlogs/toc.json 
+  - name: About teams and Agile tools
+    href: /vsts/work/scale/about-teams-and-settings?toc=/vsts/work/backlogs/toc.json 
 - name: Quickstarts
   items:
   - name: Schedule sprints
-    href: define-sprints.md
+    href: define-sprints.md   
 - name: Tutorials
   items:
   - name: Plan a sprint
     href: sprint-planning.md
   - name: "Add & update tasks (Task board)"
-    href: /task-board.md
+    href: task-board.md
   - name: Plan capacity
     href: ../scale/capacity-planning.md
   - name: Sprint burndown
@@ -23,39 +25,44 @@
   - name: Forecast
     href: forecast.md
   - name: Velocity
-    href: ../../report/guidance/team-velocity.md
+    href: /vsts/report/guidance/team-velocitytoc=/vsts/work/scrum/toc.json
 - name: Concepts
   items:
-  - name: Agile glossary
-    href: ../concepts/agile-glossary.md
-  - name: About permissions and access
-    href: ../permissions-access-work-tracking.md
-  - name: "Backlogs, boards, & plans"
-    href: ../backlogs-boards-plans.md
   - name: Scrum best practices
     href: ../concepts/best-practices-scrum.md
+  - name: About permissions and access
+    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/scrum/toc.json
+  - name: "Backlogs, boards, & plans"
+    href: /vsts/work/backlogs-boards-plans?toc=/vsts/work/scrum/toc.json
+  - name: Work item form controls
+    href: /vsts/work/concepts/work-item-form-controls?toc=/vsts/work/scrum/toc.json
+  - name: "Workflow states & state categories"
+    href: /vsts/work/concepts/workflow-and-state-categories?toc=/vsts/work/scrum/toc.json
+  - name: Agile glossary
+    href: /vsts/work/concepts/agile-glossary?toc=/vsts/work/scrum/toc.json
 - name: How-to Guides
   items:
   - name: Switch project or team focus
-    href: ../how-to/switch-team-context-work.md
+    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/scrum/toc.json
   - name: Change column options
-    href: ../how-to/set-column-options.md
+    href: /vsts/work/how-to/set-column-options?toc=/vsts/work/scrum/toc.json
   - name: Email/print work items
-    href: ../how-to/email-work-items.md
+    href: /vsts/work/how-to/email-work-items.md
   - name: "Filter, backlogs, boards, & queries"
-    href: ../how-to/filter-backlog-or-board.md
+    href: /vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/scrum/toc.json
+  - name: Copy as HTML 
+    href: /vsts/work/backlogs/copy-clone-work-items#html?toc=/vsts/work/scrum/toc.json
 - name: Reference
   items:
   - name: "Permissions & access for work tracking"
-    href: ../permissions-access-work-tracking.md
+    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/scrum/toc.json
   - name: Work item field index
-    href: ../guidance/work-item-field.md
+    href: /vsts/work/guidance/work-item-field?toc=/vsts/work/scrum/toc.json
 - name: Resources
   items:
   - name: What is Scrum?
     href: https://www.visualstudio.com/learn/what-is-scrum/
   - name: What is Agile development?
     href: https://www.visualstudio.com/learn/what-is-agile-development/
-  - name: Agile culture
-    href: https://www.visualstudio.com/learn/agile-culture/
+
 

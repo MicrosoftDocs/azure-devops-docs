@@ -7,7 +7,7 @@
   - name: About team projects and process models (REFACTOR)
 - name: Quickstarts
   items:
-  - name: Add a custom field
+  - name: Add a custom field (To be written)
     href: add-custom-field.md
   - name: Add a custom work item types
     href: add-custom-wit.md
@@ -37,7 +37,7 @@
 - name: Concepts
   items:
   - name: Default processes
-    href: /vsts/work/guidance/choose-process
+    href: /vsts/work/guidance/choose-process?toc=/vsts/work/customize/toc.json
 - name: How-to guides
   items:
   - name: Hosted XML

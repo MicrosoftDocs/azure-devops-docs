@@ -12,9 +12,22 @@ ms.date: 08/03/2017
 
 # About work items 
 
+(NEW TOPIC UNDER CONSTRUCTION)
+
 You track work using work items. 
   
- 
+Address the following: 
+- Work item types  
+- Process/process templates  
+- Ability to customize   
+- Assign to a single person/team member  
+- Usage, benefit   
+- Guide to usage, when to use (table)  
+- Finding, listing - adhoc search versus query  
+- Triage  
+- Charts 
+- Work item templates 
+
 
 ## Define work items  
 

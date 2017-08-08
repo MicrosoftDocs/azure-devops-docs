@@ -19,7 +19,7 @@ The #1 way you scale your team project is by adding teams.  A team is ....
 ## Overview  
 
 - [About teams and Agile tools](../about-teams-and-settings.md)  
- 
+- Manage teams (To be written) 
 
 ## 5-minute Quickstarts  
 

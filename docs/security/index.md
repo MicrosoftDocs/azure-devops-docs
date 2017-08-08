@@ -16,31 +16,29 @@ ms.date: 08/04/2017
 
 ## Overview  
 - [Authentication, permissions, and access](about-permissions.md)
-- [Default permission and access assignments](../setup-admin/permissions-access.md)
+- [Default permission and access assignments](/vsts/setup-admin/permissions-access?toc=/vsts/security/toc.json)
 
 ## 5-minute Quickstarts  
   
 - [View permissions](view-permissions.md)
-- [Add users to a team project](../setup-admin/add-users.md)  
-- [Add administrators to a team project](../setup-admin/add-administrator-team-project.md)  
-- [Restrict access to resources](../setup-admin/restrict-access-tfs.md)   
+- [Add users to a team project](/vsts/setup-admin/add-users?toc=/vsts/security/toc.json)  
+- [Add administrators to a team project](/vsts/setup-admin/add-administrator-team-project?toc=/vsts/security/toc.json)  
+- [Restrict access to resources](/vsts/setup-admin/restrict-access-tfs?toc=/vsts/security/toc.json)   
 
 ## Step-by-Step Tutorials
 
-- [Authenticate access with personal access tokens](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md)  
-- [Add administrators to project collection](../setup-admin/add-administrator-project-collection.md)  
-- [Change access levels (TFS)](../work/connect/change-access-levels.md)   
+- [Authenticate access with personal access tokens](/vsts/setup-admin/team-services/use-personal-access-tokens-to-authenticate?toc=/vsts/security/toc.json)  
+- [Add administrators to project collection](/vsts/setup-admin/add-administrator-project-collection?toc=/vsts/security/toc.json)  
+- [Change access levels (TFS)](/vsts/work/connect/change-access-levels?toc=/vsts/security/toc.json)   
  
 
 ## Concepts 
 - [About access levels](access-levels.md)  
-- [Access with Azure Active Directory (Team Services)](../setup-admin/tfs/admin/setup-ad-groups.md)  
-- [Set up Active Directory groups (TFS)](../setup-admin/tfs/admin/setup-ad-groups.md)
+- [Access with Azure Active Directory (Team Services)](/vsts/etup-admin/tfs/admin/setup-ad-groups?toc=/vsts/security/toc.json)  
+- [Set up Active Directory groups (TFS)](/vsts/setup-admin/tfs/admin/setup-ad-groups?toc=/vsts/security/toc.json)
 
  
 ## Resources 
-
-TBD 
  
 - [Visual Studio Team Services Data Protection Overview](https://www.visualstudio.com/articles/team-services-security-whitepaper)
 

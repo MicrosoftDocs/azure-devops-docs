@@ -237,92 +237,6 @@ When you configure a plan, you select the team or teams and backlog levels of in
 <img src="_img/backlogs-boards-plans-delivery-plans.png" alt="Example plans view" style="border: 1px solid #CCCCCC;" /> 
 
 
- 
-<a id="team-assignments">  </a>
-## Work item tracking, Agile tools, and team default assignments
-
-
-
-For example, each feature team can be associated with a single feature area path&mdash;such as *Customer Profile*, *Shopping Cart*, *Email*&mdash;or several area paths. Each management team, which focuses on a set of features, can choose several area paths to monitor. This allows each feature team to have their distinct backlog to plan, prioritize, and track their work. And, portfolio or product owners can create their vision, road map, and goals for each release, monitor progress across their portfolio of projects, and manage risks and dependencies. To learn more, see [Portfolio management](scale/portfolio-management.md). 
-
->[!NOTE]  
->Some features are available only from Team Services or TFS 2017 and later versions. For details, see [Set team defaults](scale/set-team-defaults.md).
-
-When you define a team, you define the team's: 
-- Selected area path(s) 
-- Default area path
-- Selected iteration path(s)
-- Backlog iteration path 
-- Default iteration path 
-
-All Agile tools reference the area path(s) defined for a team. For example, one team might handle all work assigned to *Customer Profile* and *Shopping Cart*, while another team only manages work assigned to the *Email* area path.  Also, the set of work items that appear on a backlog or board depend on the current State of a work item or it's parent-child status.   
-
-In addition, several tools reference the team's default iteration and associated iteration paths or sprints. For example, when you add new work items from a backlog or board view, or from a team dashboard, the system assigns the team's default area path and default iteration path to these work items. 
-
-<div style="font-size:90%">
-
-<table valign="top" width="100%" > 
-<tr valign="top" > 
-<th width="20%">Agile tool</th>
-<th width="18%">Area path (see note 1)</p></th>
-<th width="32%">Iteration path</p></th>
-<th width="30%">State</p></th>
-</tr>
-<tr valign="top" > 
-<td>Portfolio or product backlogs</td>
-<td>Selected area path(s)</td>
-<td>Equal to or under team's [backlog iteration path](scale/set-team-defaults.md#set-backlog-iteration)</td>
-<td>Active (corresponds to a Proposed or InProgress state category, see notes 2, 3)</td>
-</tr>
-
-
-<tr valign="top" > 
-<td>Kanban boards (see note 4)</td>
-<td>Selected area path(s)</td>
-<td>Equal to or under team's [backlog iteration path](scale/set-team-defaults.md#set-backlog-iteration)</td>
-<td>Any state (see notes 3, 5)</td>
-</tr>
-
-<tr valign="top" > 
-<td>Sprint backlogs (see note 4)</td>
-<td>Selected area path(s)</td>
-<td>Team's selected iteration paths</td>
-<td>Any state (see notes 3, 5)</td>
-</tr>
-
-
-<tr valign="top" > 
-<td>Task boards (see note 4)</td>
-<td>Selected area path(s)</td>
-<td>Team's selected iteration paths</td>
-<td>Any state (see notes 3, 5)</td>
-</tr>
-
-<tr valign="top" > 
-<td>New work item widget</td>
-<td>Default area path</td>
-<td>Default iteration path</td>
-<td>n/a</td>
-</tr>
-
-</table>
-
-<p><b>Notes:</b><p>
-<ol>
-<li>Agile tools filter items based on the team's selected area path(s). Teams can choose [whether to include or exclude items assigned to subarea paths](scale/set-team-defaults.md#team-area-paths).</li>
-<li>Work items whose State equals Closed, Done, or Removed (corresponding to a Completed category state) don't appear on portfolio and product backlogs.</li>
-<li>You can add custom workflow states and assign them to one of three state categories. The [state categories](concepts/workflow-and-state-categories.md) determine which work items appear on backlog and board views. </li>
-<li>Kanban boards, sprint backlogs, and task boards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see [parent-child links between items](troubleshoot/resolve-backlog-reorder-issues.md#leaf-nodes).</li>
-<li>Work items whose State equals Removed don't appear on boards.</li> 
-</ol>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
-<a id="display-hierarchy">  </a>
-
-
 ## Related notes   
 Now that you understand how backlogs, boards, and plans work, [get started using them to plan and track your work](overview.md).
 
@@ -341,49 +255,15 @@ Additional topics of interest:
 
 <div style="float:left;width:170px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Navigate</p>
-- [Connect to a team project](../connect/connect-team-projects.md)   
-- [Work from the account hub](../connect/account-home-pages.md)  
-- [Work in the web portal](../connect/work-web-portal.md)   
-- [Work in Team Explorer](../connect/work-team-explorer.md)   
-- [User focused features](../connect/user-focused-features.md)     
-</div>
-
-<div style="float:left;width:250px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Manage</p>
-- [Add work items](backlogs/add-work-items.md)   
-- [Use a template to pre-populate fields](productivity/work-item-template.md)   
-- [Change, move, or delete a work item](backlogs/remove-delete-work-items.md)      
-</div>
-
-<div style="float:left;width:160px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Track</p>
-- [Queries (work items)](track/using-queries.md)   
-- [Charts](../report/charts.md)   
+- [About teams and Agile tools](../about-teams-and-settings.md)   
+- [Add work items](/vsts/work/backlogs/add-work-items?toc=/vsts/work/work-items/toc.json)   
+- [Adhoc vs managed work item queries](./track/adhoc-vs-managed-queries.md)   
 - [Dashboards](../report/dashboards.md)   
-- [Follow work items](../collaborate/follow-work-items.md)   
-- [Alerts](track/alerts-and-notifications.md)     
-- [Tag work items](track/add-tags-to-work-items.md)   
-- [History & audit](track/history-and-auditing.md)      
-</div>
-
-
-<div style="float:left;width:200px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Customize</p>
 - [Customize work tracking](./customize/customize-work.md)   
-- [Modify area and iteration paths](./customize/set-area-paths.md)   
-- [Add Agile teams](./scale/multiple-teams.md)  
-- [Set team defaults](./scale/set-team-defaults.md)      
-</div>    
-
-
-<div style="clear:left;font-size:100%">
-</div>
 
 ### Additional tools from the Marketplace 
 
 You may find additional tools to help plan and track your work from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads).
-
-
 
 
 <a id="task-board-items"/> 
@@ -408,7 +288,6 @@ These reasons can cause work items that belong to the Task Category to not appea
 	>[!NOTE]  
 	>In Team Services and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.
 
- 
 
 ### In Progress items filter
  
