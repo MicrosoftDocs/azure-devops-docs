@@ -70,39 +70,12 @@ Wait until the deployment is done, then verify that your changes are live in you
 
 You're now ready to collaborate with a team on an ASP.NET Core app with a CI/CD process that automatically deploys your latest work to your web site.
 
-## Review the CI/CD pipeline in VSTS
-
-You have seen how easy it is to create a continuous integration and continuous delivery pipeline by using Azure Continuous Delivery.
-In later quickstarts and tutorials you'll see how you can tailor the process to create more complex CI/CD pipelines, and integrate with other types of apps and deployment environments.
-
-To see what Azure Continuous Delivery did, you can examine the artifacts and definitions it created in your VSTS project.
-
-1. In the Azure portal, in the "Successfully set up Continuous Delivery..." log entry in the **Continuous Delivery** blade, choose the **Build Definition** link.
-
-   ![Opening the generated build definition](_img/aspnet-core-to-azure-webapp/review-links-build.png)
-
-1. This opens the VSTS portal and takes you to the build definition summary. A **build definition** is a concept in VSTS that defines the CI process. The build definition summary shows recent builds that have been completed or that are in progress. Choose **Edit** to see how the CI process is defined.
-
-   ![The build definition status](_img/aspnet-core-to-azure-webapp/build-status.png)
-
-1. A build definition consists of tasks that should be run as part of a build. When you configured the CI/CD from Azure Continuous Delivery, a number of tasks have been added to the build definition. These tasks automate the compilation and testing of your ASP.NET Core application. You will also notice that the parameters for each of these tasks have been populated for you.
-
-   ![The generated build definition](_img/aspnet-core-to-azure-webapp/build-definition.png)
-
-1. Open the **Build &amp; Release** hub and choose **Releases**. Select the release definition having the name of your app and choose **Edit** to see how the CD process is defined.
-
-   ![The release definition status](_img/aspnet-core-to-azure-webapp/release-status.png)
-
-1. A release definition consists of a pipeline of one or more environments, and each environment defines a set of tasks that automate deployment.
-   When you configured the CI/CD from Azure Continuous Delivery, a simple release definition with a single environment named **Production** has been set up for you automatically.
-   Choose this environment from the **Tasks** drop-down list.
-
-   ![The release definition pipeline](_img/aspnet-core-to-azure-webapp/release-pipeline.png)
-
-1.  This environment consists of a single task for deploying the Azure web app.
-
-   ![The generated release definition](_img/aspnet-core-to-azure-webapp/release-definition.png)
-
 ## Next steps
 
-[Learn more about how to customize your CI/CD pipeline]()
+When you configured your CI/CD process in this quickstart, a build and release definition were automatically created in your VSTS project. You can modify these build and release definitions to meet the needs of your team. To learn more see one of these tutorials:
+
+* [Define your continuous integration (CI) build process](../../tutorials/define-ci-build-process.md)
+* [Define your continuous deployment (CD) process](../../tutorials/define-cd-release-process.md)
+* [Define your multi-stage continuous deployment (CD) process](../../tutorials/define-multistage-release-process.md)
+
+[//]: # (TODO [!INCLUDE [include](_shared/quickstart-next-steps.md)

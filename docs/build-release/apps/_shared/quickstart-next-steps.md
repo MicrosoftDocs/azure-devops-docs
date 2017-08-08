@@ -1,9 +1,5 @@
-## Next steps
+You can modify these build and release definitions to meet the needs of your team. To learn more see one of these tutorials:
 
-Now that you've got your own CI/CD process in place, you can modify the build or release defintion to meet the needs of your team. To learn more see one of these tutorials:
-
-* Set up a build
-* Set up a release
-* Set up a multi-stage release
-* Use CI with Git workflows
-* Extend CI/CD
+* [Define your continuous integration (CI) build process](../../tutorials/define-ci-build-process.md)
+* [Define your continuous deployment (CD) process](../../tutorials/define-cd-release-process.md)
+* [Define your multi-stage continuous deployment (CD) process](../../tutorials/define-multistage-release-process.md)
