@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Get started with the REST APIs
 
-Integrate your app with VS Team Services and TFS using these REST APIs.
+Integrate your app with Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) using these REST APIs.
 
 These APIs follow a common pattern: 
 
@@ -21,9 +21,9 @@ VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}
 
 > Tip: To avoid having your app or service broken as APIs evolve, specify an [API version](#versions) on every request.
 
-## VS Team Services
+## Visual Studio Team Services
 
-For VS Team Services, `instance` is `{account}.visualstudio.com` and `collection` is `DefaultCollection`,
+For VSTS, `instance` is `{account}.visualstudio.com` and `collection` is `DefaultCollection`,
 so the pattern looks like this:
 
 ```no-highlight
@@ -265,7 +265,7 @@ GET https://{account}.visualstudio.com/defaultcollection/_apis/{area}/{resource}
 
 | Product                     | 1.0    | 2.0    | 3.0    |
 |:----------------------------|:------:|:------:|:------:|
-| Team Services               | X      | X      | X      | 
+| Visual Studio Team Services | X      | X      | X      | 
 | Team Foundation Server 2017 | X      | X      | X      |
 | Team Foundation Server 2015 | X      | X      | -      |
 

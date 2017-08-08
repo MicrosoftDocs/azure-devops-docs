@@ -18,7 +18,7 @@ Along with interacting with VSTS in your application, you can also integrate wit
 <a name ="customApps"/>
 
 ## REST APIs
-You can leverage our REST APIs directly to interact with all areas of Team Services or TFS.
+You can leverage our REST APIs directly to interact with all areas of VSTS or TFS.
 
 You can check out the [REST API reference documentation](https://review.docs.microsoft.com/en-us/rest/api/vsts/?branch=master) to be introduced to the REST APIs and see how to use them.
 

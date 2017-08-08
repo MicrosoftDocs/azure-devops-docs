@@ -39,7 +39,7 @@ GET https://{account}.visualstudio.com/defaultcollection/_apis/{area}/{resource}
 
 | Product                     | 1.0    | 2.0    | 3.0    |
 |:----------------------------|:------:|:------:|:------:|
-| Team Services               | X      | X      | X      | 
+| Visual Studio Team Services | X      | X      | X      | 
 | Team Foundation Server 2017 | X      | X      | X      |
 | Team Foundation Server 2015 | X      | X      | -      |
 
