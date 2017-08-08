@@ -75,7 +75,7 @@ You're now ready to collaborate with a team on an ASP.NET Core app with a CI/CD 
 You have seen how easy it is to create a continuous integration and continuous delivery pipeline by using Azure Continuous Delivery.
 In later quickstarts and tutorials you'll see how you can tailor the process to create more complex CI/CD pipelines, and integrate with other types of apps and deployment environments.
 
-To see what Azure Continuous Delivery did, you can examine the artifacs and definitions it created in your VSTS project.
+To see what Azure Continuous Delivery did, you can examine the artifacts and definitions it created in your VSTS project.
 
 1. In the Azure portal, in the "Successfully set up Continuous Delivery..." log entry in the **Continuous Delivery** blade, choose the **Build Definition** link.
 
