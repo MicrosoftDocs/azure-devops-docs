@@ -61,7 +61,7 @@ ms.date: 07/26/2017
                   </div>
                 </div>
                 <div class="cardText">
-                  <span class="likeAnH3">VSTS Feature Times</span>
+                  <span class="likeAnH3">VSTS Release Notes</span>
                 </div>
               </div>
             </div>
