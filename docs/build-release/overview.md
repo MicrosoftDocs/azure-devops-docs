@@ -9,17 +9,16 @@ ms.author: alewis
 ms.date: 08/04/2016
 ---
 
-# Continuous integration and deployment
+# Continuous integration and Continuous Delivery
 
 **Team Services | TFS 2017 | TFS 2015 | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../release/previous-version/release-management-overview.md)**
 
-<img style="float:left;margin-right:10px;width:250px;" alt="CI and CD development and release cycle" src="_img/ci-01.png"/>
+<img style="float:left;margin-right:10px;width:250px;" alt="CI and CD development and release cycle" src="_img/ci-01.png"/>    
+    
 
-Continuous integration (CI) and continuous deployment (CD) 
-help you reliably deliver quality apps to your customers at a faster
-pace. From code through build, test, and deployment you can
-define efficient and fully managed pipelines that automate and
-control the entire process.
+Continuous Integration (CI) is the practice used by development teams to automate the merging and testing of code.  Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix.  Automated tests execute as part of the CI process to ensure quality.  Artifacts are produced from CI systems and fed to release pipelines to drive frequent deployments.    
+
+Continuous Delivery (CD) is a process by which code is built, tested, and eventually deployed to a production environment.  Multiple testing or so-called staging environments drive quality.  CI systems produce the deployable artifacts including infrastructure and apps.  Automated release pipelines consume these artifacts to release new versions and fixes to existing systems.  Monitoring and alerting systems run continually to drive visibility into the entire CD process. 
 
 [What's new?](news/2017.md)
 

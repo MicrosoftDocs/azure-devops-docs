@@ -34,7 +34,7 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 You use [Azure Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/) to manage the Docker image that is deployed to Azure App Service.  Follow the steps below to create and configure the registry.
 
 1.  Sign into your Azure Account at [https://portal.azure.com](https://portal.azure.com)
-2.  In the Azure Portal, click **New -> Containers -> Azure Container Registry**.
+2.  In the Azure Portal, **click** **New, Containers, then click Azure Container Registry**.
 3.  Choose a **Registry name**, **Resource Group**, and **Location**.  
 4.  Choose **Enable** for **Admin user**, and Click **Create**.
 5.  Wait for the deployment to complete in the Azure Portal before proceeding. 
@@ -44,10 +44,10 @@ Use Visual Studio 2017 to quickly create a Docker-enabled ASP.NET Core applicati
 
 1. Ensure [Docker for Windows](https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows) is installed on your development machine.
 2. After installing Docker for Windows, reboot your machine.  After rebooting, launch **Docker for Windows**.
-2. In Visual Studio 2017 create a new **ASP.NET Core Web Application (.NET Core)** by navigating to **file -> New Project -> Templates -> Visual C# -> Web**. 
+2. In Visual Studio 2017 create a new **ASP.NET Core Web Application (.NET Core)** by navigating to **file, New Project, Templates, Visual C#, then click Web**. 
 3. In the ASP.NET Core templates dialogue, Choose **Web Application** and ensure the **Enable Docker Support** checkbox is selected.
 4. Click **Ok** to create the project.
-5. Once the project is created, click **Build -> Rebuild Solution** and ensure there are no errors. 
+5. Once the project is created, click **Build then click Rebuild Solution** and ensure there are no errors. 
 
 ## Add the solution to source control in VSTS    
 To create a CI/CD pipeline, you need to add your source code to VSTS.  If you already have your ASP.NET Core Web Application solution in a VSTS Team Project, you may skip this section.
@@ -66,7 +66,7 @@ To create a CI/CD pipeline, you need to add your source code to VSTS.  If you al
 ## Install Continuous Delivery (CD) Tools for Visual Studio 2017    
 Continuous Delivery (CD) Tools for Visual Studio 2017 helps automate the creation of VSTS to Azure release pipelines.  Optionally, you can extend the generated pipeline to further enhance your CI/CD workflows.
 
-1.  In Visual Studio click **Tools -> Extensions and Updates**.
+1.  In Visual Studio click **Tools then click Extensions and Updates**.
 2.  In the dialogue, click **Online** and search for **Continuous Delivery Tools for Visual Studio**.
 3.  Click **Download**, and once it finishes **close** Visual Studio to finish the install process.
 4.  **Restart** Visual Studio and **open** your solution.
@@ -102,5 +102,9 @@ The CD tooling for Visual Studio 2017 automated the creation of the CI/CD pipeli
 3. **Edit** the build and release definitions to view the various tasks that were automatically created.
 4. An **Azure Resource Manager** service endpoint was also created in your VSTS project, which connects to a newly created Azure Service Principal.
 
+## Next Steps    
+You've just put your own CI/CD processes in place. You can modify these build and release definitions to meet the needs of your team. To learn more see one of these tutorials:
 
-[!INCLUDE [include](_shared/quickstart-next-steps.md)]
+* [Define your continuous integration (CI) build process](../tutorials/define-ci-build-process.md)
+* [Define your continuous deployment (CD) process](../tutorials/define-cd-release-process.md)
+* [Define your multi-stage continuous deployment (CD) process](../tutorials/define-multistage-release-process.md)
