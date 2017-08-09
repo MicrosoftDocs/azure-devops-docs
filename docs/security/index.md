@@ -14,9 +14,11 @@ ms.date: 08/04/2017
 
 **Team Services | TFS 2017 | TFS 2015 | TFS 2013**
 
+<!---
 ## Overview  
-- [Authentication, permissions, and access](about-permissions.md)
-- [Default permission and access assignments](/vsts/setup-admin/permissions-access?toc=/vsts/security/toc.json)
+[Authentication, permissions, and access](about-permissions.md)
+[Default permission and access assignments](/vsts/setup-admin/permissions-access?toc=/vsts/security/toc.json)
+-->
 
 ## 5-minute Quickstarts  
   

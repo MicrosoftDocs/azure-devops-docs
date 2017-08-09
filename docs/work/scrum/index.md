@@ -14,12 +14,14 @@ ms.date: 07/14/2017
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
-With Agile tools, project managers and teams can quickly plan and track the work required to bring applications from idea to completion. Agile tools provide you with the power, flexibility, and responsiveness you need to stay on top of changing priorities, deadlines, and requirements. 
+With Scrum, you can schedule and plan sprints, update your task board, and monitor your sprint burndown. 
 
+<!---
 ## Overview  
-- [About Scrum](scrum-overview.md) 
-- [About teams and Agile tools](/vsts/work/about-teams-and-settings?toc=/vsts/work/scrum/toc.json)  
- 
+[About Scrum](scrum-overview.md) 
+[About teams and Agile tools](/vsts/work/about-teams-and-settings?toc=/vsts/work/scrum/toc.json)  
+-->
+
 
 ## 5-minute Quickstarts  
 

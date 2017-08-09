@@ -14,12 +14,8 @@ ms.date: 08/03/2017
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
-The #1 way you scale your team project is by adding teams.  A team is .... 
+The #1 way you scale your team project is by adding teams.   
 
-## Overview  
-
-- [About teams and Agile tools](../about-teams-and-settings.md)  
-- Manage teams (To be written) 
 
 ## 5-minute Quickstarts  
 
@@ -31,7 +27,7 @@ Start tracking work by adding work items, creating your backlog, or scheduling s
 
 ## Step-by-Step Tutorials
 
-- [[Manage portfolios](portfolio-management.md)
+- [Manage portfolios](portfolio-management.md)
 - [Review team delivery plans](review-team-plans.md)
 - [Scaled Agile Framework](scaled-agile-framework.md) 
 

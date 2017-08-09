@@ -15,11 +15,10 @@ ms.date: 08/03/2017
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
  
-
+<!---
 ## Overview
-  
-- [What are notifications?](about-notifications.md)
-
+  [What are notifications?](about-notifications.md)
+-->
 
 ## 5-minute Quickstarts  
 
@@ -38,15 +37,15 @@ ms.date: 08/03/2017
 
 ## Concepts 
 
--[Events, subscriptions, notification types, and roles](events-subscribers-notification-types.md)
+- [Events, subscriptions, notification types, and roles](events-subscribers-notification-types.md)
 
 
 ## How-to guides  
-- [Go mobile](../collaborate/mobile-work.md)  
+- [Go mobile](/vsts/collaborate/mobile-work?toc=/vsts/notifications/toc.json)  
 - Set team project or collection-level alerts (NEW TOPIC)  
 - [Collaborate in a team room](../collaborate/collaborate-in-a-team-room.md)
   
 ## Resources 
 
--[Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams) 
-   
+- [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams) 
+- [Integrate with service hooks](vsts/marketplace/integrate/service-hooks/get-started)  

@@ -5,7 +5,7 @@
   - name: "Backlogs, boards, & plans"
     href: /vsts/work/backlogs-boards-plans?toc=/vsts/work/backlogs/toc.json 
   - name: About teams and Agile tools
-    href: /vsts/work/scale/about-teams-and-settings?toc=/vsts/work/backlogs/toc.json 
+    href: /vsts/work/about-teams-and-settings?toc=/vsts/work/backlogs/toc.json 
 - name: Quickstarts
   items:
   - name: Create your backlog
@@ -38,6 +38,8 @@
     href: /vsts/work/concepts/agile-glossary?toc=/vsts/work/backlogs/toc.json
 - name: How-to Guides
   items:
+  - name: Bulk add or modify (Excel)
+    href: /vsts/work/office/bulk-add-modify-work-items-excel?toc=/vsts/work/backlogs/toc.json
   - name: Switch project or team focus
     href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/backlogs/toc.json
   - name: Change column options

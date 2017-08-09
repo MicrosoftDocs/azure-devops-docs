@@ -14,11 +14,11 @@ ms.date: 08/03/2017
 
 **Team Services**
 
-
+<!---
 
 ## Overview  
-- [Power BI integration overview](overview.md)
-
+[Power BI integration overview](overview.md)
+-->
 
 ## 5-minute Quickstarts  
 TBD 

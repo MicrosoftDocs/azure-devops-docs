@@ -8,14 +8,14 @@
   items:
   - name: Share your project vision
     href: project-vision-status.md
-  - name: Create a readme for your repo
-    href: /vsts/git/create-a-readme?toc=/vsts/collaborate/toc.json
 - name: Tutorials
   items:
   - name: "Add & edit a wiki"
     href: add-edit-wiki.md
 - name: Concepts
   items:
+  - name: Create a readme for your repo
+    href: /vsts/git/create-a-readme?toc=/vsts/collaborate/toc.json
   - name: Share work plans
     href: /vsts/work/track/share-plans?toc=/vsts/collaborate/toc.json
 - name: How-to guides
@@ -31,4 +31,4 @@
 - name: Resources 
   items:
   - name: Dashboards
-    href: ../report/dashboards.md
+    href: /vsts/report/dashboards?toc=/vsts/report/toc.json

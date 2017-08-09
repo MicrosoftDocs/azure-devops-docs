@@ -14,10 +14,10 @@ ms.date: 06/22/2017
 
 [!INCLUDE [temp](_shared/vsts-tfs-header-17-15.md)]
 
-
+<!---
 ## Overview  
-- [Charts, dashboards, and widgets](overview.md)
-
+[Charts, dashboards, and widgets](overview.md)
+-->
 
 ## 5-minute Quickstarts  
 - [Add and manage dashboards](dashboards.md)  

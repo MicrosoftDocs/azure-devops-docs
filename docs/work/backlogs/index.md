@@ -16,10 +16,13 @@ ms.date: 08/03/2017
 
 With Agile tools, project managers and teams can quickly plan and track the work required to bring applications from idea to completion. Agile tools provide you with the power, flexibility, and responsiveness you need to stay on top of changing priorities, deadlines, and requirements. 
 
+<!---
 ## Overview  
 
-- [Backlogs, boards, and plans](/vsts/work/backlogs-boards-plans?toc=/vsts/work/backlogs/toc.json)  
- 
+[Backlogs, boards, and plans](/vsts/work/backlogs-boards-plans?toc=/vsts/work/backlogs/toc.json)  
+[About teams and Agile tools](/vsts/work/about-teams-and-settings?toc=/vsts/work/backlogs/toc.json)
+-->
+
 
 ## 5-minute Quickstarts  
 

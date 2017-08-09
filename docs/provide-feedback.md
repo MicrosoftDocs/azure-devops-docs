@@ -18,89 +18,19 @@ If you have product feedback&mdash;such as a feature request, complaint, or bug&
 
 Here are the quick-access links to use:
 
-<div style="float:left;width:150px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Content feedback</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Rate a topic](#content-feedback)</li>
-<li style="margin-bottom:2px">[Provide feedback](#content-feedback)</li>
-</ul>
-<br/>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Product feedback</p>
-<ul style="padding-left:30px">
- <li style="margin-bottom:2px">[Team Services](http://visualstudio.uservoice.com/forums/330519-team-services)</li>
- <li style="margin-bottom:2px">[TFS](http://visualstudio.uservoice.com/forums/330519-team-services)</li>
- <li style="margin-bottom:2px">[Visual Studio](https://visualstudio.uservoice.com/forums/121579-visual-studio)</li> 
- <li style="margin-bottom:2px">[Visual Studio Code](http://visualstudio.uservoice.com/forums/293070-visual-studio-code)</li> 
-</ul>
-<br/>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Submit a bug</p>
-<ul style="padding-left:30px">
- <li style="margin-bottom:2px">[Visual Studio Feedback Center](http://developercommunity.visualstudio.com/)</li> 
-</ul>
-</div>
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">What's new</p>
-<ul style="padding-left:30px">
- <li style="margin-bottom:2px">[Features timeline pages](https://www.visualstudio.com/en-us/news/release-archive-vso)</li> 
- <li style="margin-bottom:2px">[FAQs](https://www.visualstudio.com/support/visual-studio-faq-vs)</li>
- <li style="margin-bottom:2px">[Feature matrix](https://www.visualstudio.com/team-services/compare-features/)</li>
- <li style="margin-bottom:2px">[Enable preview features](collaborate/preview-features.md)</li>
-</ul>
-
-<br/>
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Blogs & videos</p>
-<ul style="padding-left:30px">
- <li style="margin-bottom:2px">[Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)</li> 
- <li style="margin-bottom:2px">[devops](https://blogs.msdn.microsoft.com/visualstudioalm/)</li> 
- <li style="margin-bottom:2px">[Brian Harry's](https://blogs.msdn.microsoft.com/bharry/)</li>
- <li style="margin-bottom:2px">[TFS support](https://blogs.msdn.microsoft.com/tfssetup/)</li>
-  <li style="margin-bottom:2px">[DevOps videos](https://channel9.msdn.com/DevOps)</li>
-</ul>
-</div>
-
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Service & support</p>
-<ul style="padding-left:30px">
-
- <li style="margin-bottom:2px">[Service issue](https://support.microsoft.com/en-us/getsupport?tenant=ClassicCommercial&locale=en-us&supportregion=en-us&pesid=15339&oaspworkflow=start_1.0.0.0&ccsid=636036154608504739)</li> 
-<li style="margin-bottom:2px">[Subscriber support](https://www.visualstudio.com/en-us/support/subscription-support-vs)</li>
-<li style="margin-bottom:2px">[Billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)</li>
-<li style="margin-bottom:2px">[Product downloads](https://www.visualstudio.com/downloads/download-visual-studio-vs)</li>
-
-<li style="margin-bottom:2px">[Team Services status](https://blogs.msdn.microsoft.com/vsoservice/)</li>
-<li style="margin-bottom:2px">[Azure status](https://azure.microsoft.com/en-us/status/)</li>
-<br/>
-<li style="margin-bottom:2px">[Licensing white paper](https://www.microsoft.com/EN-US/privacystatement/OnlineServices/Default.aspx)</li>
-<li style="margin-bottom:2px">[Privacy policy](https://www.microsoft.com/EN-US/privacystatement/OnlineServices/Default.aspx)</li>
-</ul>
-</div>
-
-<div style="float:left;width:240px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Community forums</p>
-<ul style="padding-left:10px">
-<li style="margin-bottom:2px">[Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home)</li>
-<li style="margin-bottom:2px">[Team Services & TFS](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=TFService) 
-<ul style="padding-left:20px">
-<li style="margin-bottom:2px">[General](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsgeneral)</li>
-<li style="margin-bottom:2px">[Source code & version control](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsversioncontrol)</li>
-<li style="margin-bottom:2px">[Project management & work items](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)</li>
-<li style="margin-bottom:2px">[Process templates](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsprocess)</li>
-<li style="margin-bottom:2px">[Reporting](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsreporting)</li>
-<li style="margin-bottom:2px">[Build & release management](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsbuild)</li>
-<li style="margin-bottom:2px">[Eclipse & cross platform](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tee)</li>
-<li style="margin-bottom:2px">[Setup & administration](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsadmin)</li>
-</ul>
-</li>
-
-<li style="margin-bottom:2px">[Stack Overflow, Team Services](http://stackoverflow.com/questions/tagged/vs-team-services)</li>
-<li style="margin-bottom:2px">[Stack Overflow, TFS](http://stackoverflow.com/questions/tagged/tfs)</li>
-</ul>
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |Content feedback  |Product feedback  |Service & support |  Community forums  | 
+> |-------------|----------|---------|---------|  
+> |- [Rate a topic](#content-feedback)<br/>-[Provide feedback](#content-feedback) |- [Team Services](http://visualstudio.uservoice.com/forums/330519-team-services)<br/>-[TFS](http://visualstudio.uservoice.com/forums/330519-team-services)<br/>-[Visual Studio](https://visualstudio.uservoice.com/forums/121579-visual-studio)<br/>-[Visual Studio Code](http://visualstudio.uservoice.com/forums/293070-visual-studio-code)<br/>-[Visual Studio Feedback Center](http://developercommunity.visualstudio.com/) |- [Service issue](https://support.microsoft.com/en-us/getsupport?tenant=ClassicCommercial&locale=en-us&supportregion=en-us&pesid=15339&oaspworkflow=start_1.0.0.0&ccsid=636036154608504739)<br/>-[Subscriber support](https://www.visualstudio.com/en-us/support/subscription-support-vs)<br/>-[Billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)<br/>-[Product downloads](https://www.visualstudio.com/downloads/download-visual-studio-vs)<br/>-[Team Services status](https://blogs.msdn.microsoft.com/vsoservice/)<br/>-[Azure status](https://azure.microsoft.com/en-us/status/)<br/>-[Licensing white paper](https://www.microsoft.com/EN-US/privacystatement/OnlineServices/Default.aspx)<br/>-[Privacy policy](https://www.microsoft.com/EN-US/privacystatement/OnlineServices/Default.aspx) | - [Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home)<br/>-[Team Services & TFS](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=TFService)<br/>-[General](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsgeneral)<br/>-[Source code & version control](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsversioncontrol)<br/>-[Project management & work items](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)<br/>-[Process templates](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsprocess)<br/>-[Reporting](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsreporting)<br/>-[Build & release management](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsbuild)<br/>-[Eclipse & cross platform](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tee)<br/>-[Setup & administration](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsadmin)<br/>-[Stack Overflow, Team Services](http://stackoverflow.com/questions/tagged/vs-team-services)<br/>-[Stack Overflow, TFS](http://stackoverflow.com/questions/tagged/tfs) | 
 
 
-<div style="clear:left;font-size:100%">
-</div>
- 
+**Blogs & videos**
+- [Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)  
+- [devops](https://blogs.msdn.microsoft.com/visualstudioalm/)  
+- [Brian Harry's](https://blogs.msdn.microsoft.com/bharry/)  
+- [TFS support](https://blogs.msdn.microsoft.com/tfssetup/)  
+- [DevOps videos](https://channel9.msdn.com/DevOps) 
+
 
 
 <!---
@@ -110,7 +40,7 @@ Here are the quick-access links to use:
  
 
 
-##Content feedback  
+## Content feedback  
 
 Help us improve our content by rating it and giving us feedback. 
 
@@ -128,7 +58,7 @@ About half of the feedback we get is product related. Customers want to know if 
 
 You can print most topics using your browser's print function. Most of the latest browser versions for Edge  and Chrome provide various options to simplify the contents prior to printing. These browsers also support saving the topic as a pdf file.   
  
-##Product feedback, report an issue  
+## Product feedback, report an issue  
 
 You can provide feedback for any Visual Studio product at the [Developer Community](https://developercommunity.visualstudio.com/). Or, from within Visual Studio, you can report a problem and review other trending issues. 
 
@@ -235,7 +165,7 @@ Version 15.102.25507.0
 -->
 
 
-##Developer community - get involved 
+## Developer community - get involved 
 You can view code from other developers and share your own examples using these websites:  
 
 - [Github, Microsoft repo](https://github.com/Microsoft): Open source git hub repository from Microsoft
@@ -244,6 +174,6 @@ You can view code from other developers and share your own examples using these 
 - [CodePlex](http://www.codeplex.com/): Microsoft's free open source project hosting site. You can create projects to share with the world, collaborate with others on their projects, and download open source software.
 
  
-##Related notes 
+## Related notes 
 - [Visual studio - talk to us](https://msdn.microsoft.com/en-us/library/b8akas30.aspx) 
 - [Report a problem with Visual Studio](https://msdn.microsoft.com/en-us/library/mt632287.aspx)  

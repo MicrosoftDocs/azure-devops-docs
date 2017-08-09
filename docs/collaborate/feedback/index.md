@@ -14,10 +14,12 @@ ms.date: 08/07/2017
 
 <b>Team Services | TFS 2017 | TFS 2015</b> 
  
+You can request feedback using one of two tools, through the Test & Feedback extension or through the Request feedback link you access from a dashboard. 
 
+<!---
 ## Overview  
-- [About feedback](about-feedback.md)
-
+[About feedback](about-feedback.md)
+-->
 
 ## 5-minute Quickstarts  
 - [Request feedback (Test & Feedback extension)](/vsts/manual-test/stakeholder/request-stakeholder-feedback?toc=/vsts/collaborate/feedback/toc.json)

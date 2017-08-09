@@ -3,7 +3,7 @@
 - name: Overview
   items:
   - name: "About teams & Agile tools"
-    href: ../about-teams-and-settings.md
+    href: /vsts/work/about-teams-and-settings?toc=/vsts/work/scale/toc.json 
   - name: Manage teams (To be written)
 - name: Quickstarts
   items:
@@ -20,7 +20,7 @@
   - name: Scaled Agile Framework
     href: scaled-agile-framework.md
   - name: Define a work item template 
-    href: ../productivity/work-item-template.md
+    href: /vsts/work/productivity/work-item-template?toc=/vsts/work/scale/toc.json
 - name: Concepts
   items:
   - name: Visibility across teams
@@ -37,41 +37,42 @@
     href: manage-team-assets.md 
     items:
     - name: Select backlog levels
-      href: ../customize/select-backlog-navigation-levels.md
+      href: /vsts/work/customize/select-backlog-navigation-levels?toc=/vsts/work/scale/toc.json
     - name: "Show bugs on backlogs & boards"
-      href: ../customize/show-bugs-on-backlog.md
+      href: /vsts/work/customize/show-bugs-on-backlog?toc=/vsts/work/scale/toc.json
     - name: Set working days
-      href: ../customize/set-working-days.md
+      href: /vsts/work/customize/set-working-days?toc=/vsts/work/scale/toc.json
     - name: Set team favorites (New Topic)  
       href: /vsts/collaborate/set-favorites?toc=/vsts/work/scale/toc.json
   - name: Customize a Kanban board
     items:
     - name: Add or edit columns
-      href: ../kanban/add-columns.md
+      href: /vsts/work/kanban/add-columns?toc=/vsts/work/scale/toc.json
     - name: Customize cards
-      href: ../customize/customize-cards.md
+      href: /vsts/work/customize/customize-cards?toc=/vsts/work/scale/toc.json
     - name: WIP limits
-      href: ../kanban/wip-limits.md
+      href: /vsts/work//kanban/wip-limits?toc=/vsts/work/scale/toc.json
     - name: Expedite work
-      href: ../kanban/expedite-work.md
+      href: /vsts/work/kanban/expedite-work?toc=/vsts/work/scale/toc.json
     - name: Split columns
-      href: ../kanban/split-columns.md
+      href: /vsts/work/kanban/split-columns?toc=/vsts/work/scale/toc.json
     - name: Definition of done
-      href: ../kanban/definition-of-done.md
+      href: /vsts/work/kanban/definition-of-done?toc=/vsts/work/scale/toc.json
     - name: Reorder cards
-      href: ../customize/reorder-cards.md
+      href: /vsts/work/customize/reorder-cards?toc=/vsts/work/scale/toc.json
   - name: Customize Task board cards
-    href: ../customize/customize-cards.md
+    href: /vsts/work/customize/customize-cards?toc=/vsts/work/scale/toc.json
   - name: Manage team notifications
     href: /vsts/collaborate/manage-team-notifications?toc=/vsts/work/scale/toc.json
   - name: Switch project or team focus
     href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/scale/toc.json
-  - name: Collaborate in a team room
-    href: /vsts/collaborate/collaborate-in-a-team-room?toc=/vsts/work/scale/toc.json
+
 - name: Reference
   items:
   - name: "Permissions & access for work tracking"
     href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/scale/toc.json
+  - name: Collaborate in a team room
+    href: /vsts/collaborate/collaborate-in-a-team-room?toc=/vsts/notifications/toc.json
 - name: Resources
   items:
   - name: Agile culture

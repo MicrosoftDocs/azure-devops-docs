@@ -41,7 +41,7 @@
   - name: Add or edit columns
     href: add-columns.md
   - name: Customize cards
-    href: ../customize/customize-cards.md
+    href: /vsts/work/customize/customize-cards?toc=/vsts/work/kanban/toc.json
   - name: WIP limits
     href: wip-limits.md
   - name: Expedite work
@@ -50,6 +50,8 @@
     href: split-columns.md
   - name: Definition of done
     href: definition-of-done.md
+  - name: Reorder cards
+    href: /vsts/work/customize/reorder-cards?toc=/vsts/work/kanban/toc.json
   - name: "Filter, backlogs, boards, & queries"
     href: /vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/kanban/toc.json
   - name: Switch project or team focus

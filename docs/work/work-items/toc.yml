@@ -24,8 +24,6 @@
     href: ../backlogs/add-link.md
   - name: Bulk modify (web)
     href: ../backlogs/bulk-modify-work-items.md
-  - name: Bulk add or modify (Excel)
-    href: ../office/bulk-add-modify-work-items-excel.md
   - name: Add tags to work items
     href: ../track/add-tags-to-work-items.md
   - name: Follow work
@@ -96,6 +94,8 @@
         href: ../guidance/cmmi/track-bugs.md
 - name: How-to guides
   items:
+  - name: Bulk add or modify (Excel)
+    href: /vsts/work/office/bulk-add-modify-work-items-excel?toc=/vsts/work/work-items/toc.json
   - name: Switch project or team focus
     href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/work-items/toc.json
   - name: Email/print work items

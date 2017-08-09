@@ -14,16 +14,17 @@ ms.date: 08/03/2017
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
+<!---
 ## Overview  
-- [About work items](wit-overview.md) 
+[About work items](wit-overview.md) 
+-->
+
 
 ## 5-minute Quickstarts  
 
 Start tracking work by adding work items, creating your backlog, or scheduling sprints.  
 
 - [Add work items](../backlogs/add-work-items.md)
-- [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md)   
-- [Storyboard your ideas](../office/storyboard-your-ideas-using-powerpoint.md)   
 
 ## Step-by-Step Tutorials
 
@@ -32,6 +33,13 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Manage bugs](../backlogs/manage-bugs.md)
 - [Manage issues](../backlogs/manage-issues-impediments.md)
 - [Use templates](../productivity/work-item-template.md)
+- [Move, change, or delete items](../backlogs/remove-delete-work-items.md)
+- [Copy/clone work items](../backlogs/copy-clone-work-items.md)
+- [Link work items](../backlogs/add-link.md)
+- [Bulk modify (web)](../backlogs/bulk-modify-work-items.md)
+- [Add tags to work items](../track/add-tags-to-work-items.md)
+- [Follow work](/vsts/collaborate/follow-work-items?toc=/vsts/work/work-items/toc.json)
+
 
 ## Concepts 
 
@@ -40,11 +48,11 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Scrum process guidance](../guidance/scrum-process.md)         
 
 ## How-to guides
-
-* [Switch project or team focus](../how-to/switch-team-context-work.md)  
-* [Email/print work items](../how-to/email-work-items.md)    
-* [Define area paths](../customize/set-area-paths.md)  
-* [Define iteration paths](../customize/set-iteration-paths-sprints.md)  
+- [Bulk add or modify (Excel)](/vsts/work/office/bulk-add-modify-work-items-excel?toc=/vsts/work/work-items/toc.json)
+- [Switch project or team focus](../how-to/switch-team-context-work.md)  
+- [Email/print work items](../how-to/email-work-items.md)    
+- [Define area paths](../customize/set-area-paths.md)  
+- [Define iteration paths](../customize/set-iteration-paths-sprints.md)  
 
 
 ## Reference   
