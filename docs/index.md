@@ -289,7 +289,7 @@ ms.date: 07/26/2017
                 <div class="group">
                   <h3>Agile</h3>
                   <ul>
-                    <li><a class="barLink" href="">Work Items</a></li>
+                    <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
                     <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
                     <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
                     <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
@@ -621,7 +621,7 @@ ms.date: 07/26/2017
             <a href="#agile">Agile</a>
             <ul id="agile" class="cardsA">
               <li>
-                <a href="">
+                <a href="/vsts/work/work-items/index">
                   <div class="cardSize">
                     <div class="cardPadding">
                       <div class="card">
