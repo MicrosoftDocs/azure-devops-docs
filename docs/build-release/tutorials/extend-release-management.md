@@ -21,7 +21,7 @@ ms.custom: mvc
 
 Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide
 a highly customizable continuous deployment service for managing the release
-of your applications. However, yuo can extend the capabilities of VSTS and
+of your applications. However, you can extend the capabilities of VSTS and
 TFS by installing extensions that provide additional tasks and other artifacts
 for more specialist types of deployment scenarios.
 

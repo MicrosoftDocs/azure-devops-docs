@@ -172,8 +172,8 @@ You're ready to collaborate with a team on an ASP.NET Core app with a CI/CD proc
 
 You've just put your own CI/CD processes in place. You can modify these build and release definitions to meet the needs of your team. To learn more see one of these tutorials:
 
-* [Define your continuous integration (CI) build process](../../tutorials/define-ci-build-process.md)
-* [Define your continuous deployment (CD) process](../../tutorials/define-cd-release-process.md)
-* [Define your multi-stage continuous deployment (CD) process](../../tutorials/define-multistage-release-process.md)
+* [Define your continuous integration (CI) build process](../tutorials/define-ci-build-process.md)
+* [Define your continuous deployment (CD) process](../tutorials/define-cd-release-process.md)
+* [Define your multi-stage continuous deployment (CD) process](../tutorials/define-multistage-release-process.md)
 
 [//]: # (TODO [!INCLUDE [include](_shared/quickstart-next-steps.md)
