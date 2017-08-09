@@ -11,7 +11,7 @@ ms.date: 07/20/2017
 layout: LandingPage
 ---
 
-# Build and Release documentation
+# Build and Release
 
 Visual Studio Team Services and Team Foundation Server help you implement a highly customizable continuous integration (CI) and deployment (CD) pipeline for your .NET, Java, Node, PHP, or Python apps. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
 
@@ -33,7 +33,7 @@ Learn how to build your app and deploy it to your choice of Azure service.
   * Node.js
   * Java
 * Containers
-  * ASP.NET Core
+  * [ASP.NET Core](apps/aspnet-core-to-acs.md)
   * Node.js
 <!---
 ![Azure web app](_img/index/azure-web-app-card.png)   ![Azure VM](_img/index/azure-vm-card.png)   ![Azure container](_img/index/azure-containers-card.png)   
@@ -43,12 +43,12 @@ Learn how to build your app and deploy it to your choice of Azure service.
 
 <!--- These were taken from the CI/CD MVC deck -->
 
-* [Define your continuous integration (CI) build process](tutorials/define-ci-build-process.md)
-* [Define your continuous deployment (CD) process](tutorials/define-cd-release-process.md)
-* [Define your multi-stage continuous deployment (CD) process](tutorials/define-multistage-release-process.md)
-* [Define a continuous integration (CI) build process for your Git repo](tutorials/ci-build-git.md)
-* [Define a continuous integration (CI) build process for your GitHub repo](tutorials/ci-build-github.md)
-* [Extend your continuous deployment (CD) process](tutorials/extend-release-management.md)
+* [Define CI build process](tutorials/define-ci-build-process.md)
+* [Define CD release process](tutorials/define-cd-release-process.md)
+* [Set up multi-stage release](tutorials/define-multistage-release-process.md)
+* [CI builds for Git in VSTS](tutorials/ci-build-git.md)
+* [CI builds for GitHub](tutorials/ci-build-github.md)
+* [Extend CI/CD](tutorials/extend-release-management.md)
 
 ## Videos
 
