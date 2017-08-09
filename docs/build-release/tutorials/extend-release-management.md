@@ -34,6 +34,8 @@ In this tutorial, you learn about:
 > * Deploying an app using extension tasks
 > * A summary and examples of some of the most useful extensions
 
+<!--
+
 [!INCLUDE [include](_shared/build-prerequisites.md)]
 
 This tutorial requires you to have completed the tutorial 
@@ -68,3 +70,5 @@ Open **Logs** tab and watch deployment of the release.
 Open **Summary** tab, view results
 
 Choose environment name, drill down each environment.
+
+-->

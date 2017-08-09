@@ -34,6 +34,8 @@ In this tutorial, you learn about:
 > * Creating a release from your release definition
 > * Monitoring and reviewing the deployment of your release
 
+<!--
+
 [What's the difference between a release definition and a release?](../concepts/releases/index.md)
 
 [!INCLUDE [build-prerequisites](_shared/build-prerequisites.md)]
@@ -152,3 +154,5 @@ work through the tutorial [Define your continuous integration (CI) build process
    [How to: View and manage releases](../actions/view-manage-releases.md).
 
    ![Viewing the summary linked pages](_img/define-cd-release-process/summary-links.png)
+
+-->

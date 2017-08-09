@@ -35,6 +35,8 @@ In this tutorial, you learn about:
 > * Adding approvals to your release pipeline
 > * Creating a release and monitoring the deployment to each environment
 
+<!--
+
 [What's the difference between a release definition and a release?](../concepts/releases/index.md)
 
 [!INCLUDE [include](_shared/build-prerequisites.md)]
@@ -94,3 +96,5 @@ Notice that the deployment to "prod" has not yet occurred. Approve the release a
 Open **Summary** tab, view results
 
 Choose environment name, drill down each environment.
+
+-->
