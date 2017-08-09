@@ -26,6 +26,7 @@
   - name: CI/CD to Containers
     items:
     - name: ASP.NET Core
+      href: apps/aspnet-core-to-acs.md
     - name: Node.js
 - name: Tutorials
   items:

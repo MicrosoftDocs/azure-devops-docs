@@ -42,13 +42,12 @@ Learn how to build your app and deploy it to your choice of Azure service.
 
 <!--- These were taken from the CI/CD MVC deck -->
 
-* Set up a build 
-* Set up a release
-* Set up a multi-stage release
-* Use CI with Git workflows
-* Integrate Build with GitHub
-* Integrate Release with Jenkins
-* Extend CI/CD
+* [Define your continuous integration (CI) build process](tutorials/define-ci-build-process.md)
+* [Define your continuous deployment (CD) process](tutorials/define-cd-release-process.md)
+* [Define your multi-stage continuous deployment (CD) process](tutorials/define-multistage-release-process.md)
+* [Define a continuous integration (CI) build process for your Git repo](tutorials/ci-build-git.md)
+* [Define a continuous integration (CI) build process for your GitHub repo](tutorials/ci-build-github.md)
+* [Extend your continuous deployment (CD) process](tutorials/extend-release-management.md)
 
 ## Videos
 
