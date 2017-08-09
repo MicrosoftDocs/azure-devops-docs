@@ -1,89 +1,98 @@
 - name: Team Services and TFS 
   tocHref: /vsts/
   topicHref: /vsts/index
-  items: 
-  - name: Agile tools
-    tocHref: /vsts/work/
-    topicHref: /vsts/work/overview
-    items: 
-    - name: Work items
-      tocHref: /vsts/work/work-items/
-      topicHref: /vsts/work/work-items/index
-    - name: Backlogs
-      tocHref: /vsts/work/backlogs/
-      topicHref: /vsts/work/backlogs/index
-    - name: Kanban
-      tocHref: /vsts/work/kanban/
-      topicHref: /vsts/work/kanban/index
-    - name: Scrum
-      tocHref: /vsts/work/scrum/
-      topicHref: /vsts/work/scrum/index
-    - name: Queries
-      tocHref: /vsts/work/track/
-      topicHref: /vsts/work/track/index
-  - name: Build and Release
-    tocHref: /vsts/build-release/
-    topicHref: /vsts/build-release/overview
-  - name: "Charts, Dashboards and Widgets"
-    tocHref: /vsts/report/
-    topicHref: /vsts/report/index
-  - name: SQL, Excel, and SharePoint (TFS)
-    tocHref: /vsts/report/sql-reports
-    topicHref: /vsts/report/sql-reports/reporting-services-reports
+  items:
   - name: Git
     tocHref: /vsts/git/
-    topicHref: /vsts/git/overview
-  - name: Package Management
-    tocHref: /vsts/package/
-    topicHref: /vsts/package/overview
-  - name: Test
-    tocHref: /vsts/test/
-    topicHref: /vsts/test/index
+    topicHref: /vsts/git/index
   - name: TFVC
     tocHref: /vsts/tfvc/
     topicHref: /vsts/tfvc/overview
+  - name: Build and Release
+    tocHref: /vsts/build-release/
+    topicHref: /vsts/build-release/overview
+  - name: Package Management
+    tocHref: /vsts/package/
+    topicHref: /vsts/package/overview
+  - name: Manual Test
+    tocHref: /vsts/manual-test/
+    topicHref: /vsts/manual-test/index
+  - name: Load Test
+    tocHref: /vsts/load-test/
+    topicHref: /vsts/load-test/index
+  - name: Notifications
+    tocHref: /vsts/notifications/
+    topicHref: /vsts/notifications/index
+  - name: "READMEs & Wikis"
+    tocHref: /vsts/collaborate/
+    topicHref: /vsts/collaborate/index
+  - name: Feedback
+    tocHref: /vsts/collaborate/feedback/
+    topicHref: /vsts/collaborate/feedback/index
+  - name: Work items
+    tocHref: /vsts/work/work-items/
+    topicHref: /vsts/work/work-items/index
+  - name: Backlogs
+    tocHref: /vsts/work/backlogs/
+    topicHref: /vsts/work/backlogs/index
+  - name: Kanban
+    tocHref: /vsts/work/kanban/
+    topicHref: /vsts/work/kanban/index
+  - name: Scrum
+    tocHref: /vsts/work/scrum/
+    topicHref: /vsts/work/scrum/index
+  - name: Queries
+    tocHref: /vsts/work/track/
+    topicHref: /vsts/work/track/index
+  - name: "Charts, Dashboards & Widgets"
+    tocHref: /vsts/report/
+    topicHref: /vsts/report/index
+  - name: PowerBI
+    tocHref: /vsts/report/powerbi/
+    topicHref: /vsts/report//powerbi/index
+  - name: "OData & the Analytics Service"
+    tocHref: /vsts/report/analytics/
+    topicHref: /vsts/report//analytics/index
+  - name: "Data Warehouse & SQL Reports" 
+    tocHref: /vsts/report/sql-reports
+    topicHref: /vsts/report/sql-reports/index
   - name: Team Services Account Management 
     tocHref: /vsts/setup-admin/team-services/
     topicHref: /vsts/setup-admin/team-services/overview
-  - name: TFS Administration
+  - name: TFS Server Administration
     tocHref: /vsts/setup-admin/tfs/
     topicHref: /vsts/setup-admin/get-started
-  - name: Customize work tracking
-    tocHref: /vsts/work/customize
-    topicHref: /vsts/work/customize/customize-work
+  - name: "Security & Identity"
+    tocHref: /vsts/security/
+    topicHref: /vsts/security/index
+  - name: "Scale & Configure Teams"
+    tocHref: /vsts/work/scale/
+    topicHref: /vsts/work/scale/index
+  - name: Work Item Customization
+    tocHref: /vsts/work/customize/
+    topicHref: /vsts/work/customize/index
+  - name: Service Hooks
+    tocHref: /vsts/marketplace/integrate/service-hooks/
+    topicHref: /vsts/marketplace/integrate/service-hooks/get-started 
+  - name: Extend overview
+    tocHref: /vsts/extend/
+    topicHref: /vsts/extend/overview
+  - name: Visual Studio Extensions
+    tocHref: /vsts/integrate/ide/extensions/
+    topicHref: /vsts/integrate/ide/extensions/overview
+  - name: TFS SharePoint integration 
+    tocHref: /vsts/ecosystem/sharepoint/
+    topicHref: /vsts/ecosystem/sharepoint/index
   - name: TFS-Project Server integration
     tocHref: /vsts/work/tfs-ps-sync 
     topicHref: /vsts/work/tfs-ps-sync/synchronize-tfs-project-server 
   - name: Marketplace and Billing
     tocHref: /vsts/marketplace/
     topicHref: /vsts/marketplace/overview
-  - name: Service hooks
-    tocHref: /vsts/marketplace/integrate/service-hooks/
-    topicHref: /vsts/marketplace/integrate/service-hooks/get-started
   - name: Integrate
     tocHref: /vsts/integrate/
     topicHref: /vsts/integrate/overview
-    items: 
-    - name: Integrate overview
-      tocHref: /vsts/integrate/
-      topicHref: /vsts/integrate/overview
-    - name: Service hook integration
-      tocHref: /vsts/marketplace/integrate/service-hooks/
-      topicHref: /vsts/marketplace/integrate/service-hooks/get-started
-    - name: Visual Studio Extensions
-      tocHref: /vsts/integrate/ide/extensions/
-      topicHref: /vsts/integrate/ide/extensions/overview
   - name: Visual Studio subscriptions
     tocHref: /vsts/marketplace/vs-subscriptions/
-    topicHref: /vsts/marketplace/vs-subscriptions/buy-vs-subscriptions
-    items: 
-    - name: Visual Studio Subscriptions
-      tocHref: /vsts/marketplace/vs-subscriptions/
-      topicHref: /vsts/marketplace/vs-subscriptions/buy-vs-subscriptions
-  - name: Extend
-    tocHref: /vsts/extend/
-    topicHref: /vsts/extend/overview
-    items: 
-    - name: Extend overview
-      tocHref: /vsts/extend/
-      topicHref: /vsts/extend/overview
+    topicHref: /vsts/marketplace/vs-subscriptions/buy-vs-subscriptions 
+

@@ -67,7 +67,7 @@ You only have access to those actions that are supported on your platform and fo
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 
 <a id="change-type"> </a>  
-##Change the work item type 
+## Change the work item type 
 
 >[!NOTE]  
 ><b>Feature availability: </b> The **Change type&hellip;** menu option is supported only from Team Services. You can't change the work item type of work items associated with test management. Both Contributors and users assigned Stakeholder access can change the work item type.       
@@ -173,10 +173,11 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 
 <a id="restore"> </a> 
-##Restore or permanently delete work items  (web portal)
+## Restore or permanently delete work items   
 
+# [Browser](#tab/browser)
 >[!NOTE]  
-><b>Feature availability: </b>The Delete and Recycle bin features are available from Team Services and from the web portal for TFS 2015.2 or later versions. 
+><b>Feature availability: </b>The Delete and Recycle bin features are available from Team Services and from the web portal for TFS 2015.2 or later versions.  
 
 1. To restore deleted items, open the Recycle bin from the web portal.  
 
@@ -191,8 +192,9 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 3.	Confirm your selection. 
 
-<a id="perm-delete"> </a> 
-##Permanently delete work items (command-line tool)    
+# [Command Line](#tab/command-line)
+
+<a id="perm-delete"> </a>    
 
 Use the ```witadmin destroywi``` command to permanently remove work items from the data store. A permanent delete means all information in the WIT data store is deleted and cannot be restored nor reactivated.
 
@@ -221,6 +223,7 @@ You can run ```witadmin destroywi``` against an on-premises TFS server or Team S
 	>[!NOTE] 
 	>**Required permissions:** For Team Services and TFS 2015.2 or later versions, you must have [Permanently delete work items permission set to Allow](../how-to/set-permissions-access-work-tracking.md#move-delete-permissions). For TFS 2015.1 or earlier versions, you must be a member of the Project Administrators group of have Edit project-level information permissions set to Allow.    
 
+---
 
 <a id="delete-test"> </a> 
 ## Delete test artifacts  
@@ -249,21 +252,9 @@ You can run ```witadmin destroywi``` against an on-premises TFS server or Team S
 	
 	<img src="_img/delete-test-shared-steps-remove-link.png" alt="Delete shared steps from form" style="border: 1px solid #CCCCCC;" />
  
-##Related notes  
-
-Each work item represents an object stored in the work item data store. Each work item is  assigned a unique identifier, an ID, which is unique within an account or project collection. 
+## Related notes   
 
 To add fields or customize a work item form, see [Customize your work tracking experience](../customize/customize-work.md). The method you use depends on the process model that supports your team project.  
-
-To learn more about tracking work, see: 
-
-- [Add and update work items](add-work-items.md)  
-- [Customize area and iteration paths](../customize/set-area-paths.md)
-- [Add a link to work items](add-link.md)
-- [Bulk modify work items](bulk-modify-work-items.md) 
-- [Copy or clone a work item, copy to clipboard](copy-clone-work-items.md)
-- [Use queries to list work items](../track/using-queries.md)
-- [Pre-populate work items using work item templates](../productivity/work-item-template.md)
 
 To learn more about managing test artifacts, see: 
 - [Create a test plan](../../manual-test/getting-started/create-a-test-plan.md)
@@ -271,9 +262,9 @@ To learn more about managing test artifacts, see:
 
 
 
-###Delete and restore actions performed under the hood  
+### Delete and restore actions performed under the hood  
 
-####Delete work items 
+#### Delete work items 
 When you delete a work item, the following actions occur:  
 
 - Generates a new revision of the work item  
@@ -285,7 +276,7 @@ When you delete a work item, the following actions occur:
 - Preserves trend data except for the latest value 
 - Removes the work item from the data warehouse/cube similar to as if it was permanently removed.  
 
-####Restore work items
+#### Restore work items
 When you restore a work item, the following actions occur:   
 
 - Causes a new revision of the work item to be made  
@@ -299,7 +290,7 @@ When you restore a work item, the following actions occur:
 - Adds the work item back to the data warehouse/cube similar  
 - Sets the area or iteration path fields to the root node if the previous area path or iteration paths were deleted.   
 
-####Delete test artifacts
+#### Delete test artifacts
 1.	Removes the deleted test artifact from the test case management (TCM) data store and deletes the underlying work item
 2.	Runs a job to delete all the child items both from the TCM side and the underlying work items. This action may take time (up to a few minutes) depending on the number of artifacts to be deleted. 
 3.	Causes all information in the WIT data store and TCM data store to be deleted and cannot be reactivated nor restored. 
