@@ -17,13 +17,9 @@ ms.date: 07/31/2017
 ms.custom: mvc
 ---
 
-# Extend your continuous deployment (CD) process
+# Extend your CI/CD system
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide
-a highly customizable continuous deployment service for managing the release
-of your applications. However, you can extend the capabilities of VSTS and
-TFS by installing extensions that provide additional tasks and other artifacts
-for more specialist types of deployment scenarios.
+VSTS Marketplace provides a number of extensions that you can use to extend CI/CD. Using these extensions, you can integrate with third party version control, testing, build, deployment, and monitoring services. These extensions add new tasks and features to your CI/CD system.
 
 In this tutorial, you learn about:
 

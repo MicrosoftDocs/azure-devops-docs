@@ -19,7 +19,7 @@ ms.custom: mvc
 
 # Define a continuous integration (CI) build process for your GitHub repo
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration service for building your applications in GitHub.
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) are open systems that you can use to set up CI/CD for your code, even if you manage it outside our system, for example in GitHub.
 
 In this tutorial, you learn how to:
 

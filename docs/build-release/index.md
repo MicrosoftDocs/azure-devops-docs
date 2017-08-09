@@ -10,7 +10,7 @@ ms.author: kaelli
 ms.date: 07/20/2017
 ---
 
-# Build and Release documentation for Team Services and TFS
+# Build and Release documentation
 
 Visual Studio Team Services and Team Foundation Server help you implement a highly customizable continuous integration (CI) and deployment (CD) pipeline for your .NET, Java, Node, PHP, or Python apps. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
 
@@ -38,7 +38,7 @@ Learn how to build your app and deploy it to your choice of Azure service.
 ![Azure web app](_img/index/azure-web-app-card.png)   ![Azure VM](_img/index/azure-vm-card.png)   ![Azure container](_img/index/azure-containers-card.png)   
 -->
 
-## Tutorials  
+## Step-by-Step Tutorials  
 
 <!--- These were taken from the CI/CD MVC deck -->
 

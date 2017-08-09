@@ -19,9 +19,7 @@ ms.custom: mvc
 
 # Define your multi-stage continuous deployment (CD) process
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide
-a highly customizable continuous deployment service for managing the release
-of your applications. A release definition can be used to create a highly
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly
 configurable and manageable pipeline for releases to multiple environments
 such as development, staging, QA, and production environments; including
 requiring approvals at specific stages.
