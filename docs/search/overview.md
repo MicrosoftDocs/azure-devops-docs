@@ -28,6 +28,6 @@ The Search extensions make it easy to search for information across all
 your projects, from anywhere and any computer or mobile device, using just a web browser.
 You can narrow down your results and focus in on what you need by using filters.
 
-![Code Search](_img/_shared/codesearch-icon.png) &nbsp; **[Code Search](code/tutorial-code-search.md)**
+![Code Search](_img/_shared/codesearch-icon.png) &nbsp; **[Code Search](code/code-search.md)**
 
-![Work Item Search](_img/_shared/wisearch-icon.png) &nbsp; **[Work Item Search](wokitem/tutorial-work-item-search.md)**
+![Work Item Search](_img/_shared/wisearch-icon.png) &nbsp; **[Work Item Search](workitem/work-item-search.md)**

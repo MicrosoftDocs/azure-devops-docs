@@ -13,7 +13,10 @@ ms.date: 12/04/2016
 
 [!INCLUDE [version-header-shared-tsonly](../_shared/version-header-shared-tsonly.md)]
 
-Work Item Search is available as a built-in extension in Visual Studio Team Services. Users can **[get searching](#start-search)** by default without any installation. By using Work Item Search you can:
+Work Item Search is available as a built-in extension in Visual Studio Team Services.
+Users can use Work Item Search by default without any installation.
+
+By using Work Item Search you can:
 
 * **Search over all your projects**:
   Search in your own and your partner teams' backlog. Use cross-project 

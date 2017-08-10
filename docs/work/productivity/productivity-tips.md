@@ -319,15 +319,15 @@ Using the work items search box, you can quickly [find work items based on ID, a
 <a id="adhoc-search">  </a>
 ###Adhoc work item search 
 
-With the [Work item search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search). installed, the work item search box changes to support an adhoc search query. It opens to a set of search results similar to that shown below. To learn more, see [Adhoc vs managed work item queries](../track/adhoc-vs-managed-queries.md) and [Rich work item search results](../../search/workitem/search-results.md).
+With the [Work item search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search). installed, the work item search box changes to support an adhoc search query. It opens to a set of search results similar to that shown below. To learn more, see [Adhoc vs managed work item queries](../track/adhoc-vs-managed-queries.md) and [Rich work item search results](../../search/workitem/advanced-search-syntax.md).
 
-<img src="../../search/workitem/_img/search-results/search-results-03.png" alt="work item adhoc search results" style="border: 1px solid #CCCCCC;" />  
+<img src="../../search/workitem/_img/get-started/results-matching.png" alt="work item adhoc search results" style="border: 1px solid #CCCCCC;" />  
 
 
 <a id="quick-find-code">  </a>
 ###Find code in Git repositories  
 
-You can perform similar [searches on your code based on keywords and semantic search filters across your Git repositories](../../search/overview.md).  
+You can perform similar [searches on your code based on keywords and semantic search filters across your Git repositories](../../search/code/code-search.md).  
 
 <img src="_img/ALM_PRD_CodeSearch.png" alt="Work item search box, find work items using macros" style="border: 1px solid #CCCCCC;" />   
 

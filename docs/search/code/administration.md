@@ -22,7 +22,7 @@ In this topic:
 * **Configure Search in Team Foundation Server**
   - [Configure Search](#config-tfs)
   - [Secure Search](#secure-search)
-  - [Upgrade Search](#upgrading-search) (new!)
+  - [Upgrade Search](#upgrading-search)
   - [Manage Search](#manage-tfs)
   - [Uninstall Search](#uninstall-tfs)
   - [Limitations of Search](#limit-tfs)
