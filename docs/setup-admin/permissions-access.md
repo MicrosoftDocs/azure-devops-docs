@@ -135,7 +135,7 @@ You can connect to work items from the Work hub of the web portal and using Ecli
 
 In addition to the permissions set at the project level via the built-in groups, you can set permissions for the following objects: [area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md), [queries and query folders](../work/track/set-query-permissions.md), and [delivery plans](../work/scale/review-team-plans.md#plan-permissions).  
 
-The team administrator role supports configuration of team settings. To be added as a team administrator, see [Configure team settings and add team administrators](../work/scale/manage-team-assets.md#add-team-admin). 
+The team administrator role supports configuration of team settings. To be added as a team administrator, see [Configure team settings and add team administrators](../work/scale/add-team-administrator.md). 
 
 >[!NOTE]  
 >There are no UI permissions associated with [managing tags](../work/track/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](tfs/command-line/tfssecurity-cmd.md#collection-level-permissions).   
@@ -644,7 +644,7 @@ You set [dashboard permissions at the team level](../report/dashboards.md#set-pe
 - [Permissions and groups reference](permissions.md)  
 - [Manage users and access](team-services/add-account-users-assign-access-levels-team-services.md) (Team Services) 
 - [Change access levels](../work/connect/change-access-levels.md) (TFS)
-- [Administration guide](get-started.md)  
+- [Administration guide](account-administration.md)  
 
 
 

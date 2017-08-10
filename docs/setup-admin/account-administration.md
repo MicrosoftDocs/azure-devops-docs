@@ -142,30 +142,6 @@ Team administrators can manage settings for their team, including team alerts an
 </ul>
 </div>
 
-<div style="float:left;width:160px;margin:3px;font-size:90%">
-<p style="padding-bottom:0px;text-align:center;"><b>Kanban board </b></p>
-<ul style="padding-left:20px">
-<li style="margin-bottom:0px">[Columns](../work/kanban/add-columns.md) </li>
-<li style="margin-bottom:0px">[WIP limits](../work/kanban/wip-limits.md)   </li>
-<li style="margin-bottom:0px">[Split columns](../work/kanban/split-columns.md)  </li>
-<li style="margin-bottom:0px">[Swimlanes](../work/kanban/expedite-work.md)</li>
-<li style="margin-bottom:0px">[Card reordering](../work/kanban/kanban-basics.md#card-reorder-setting)</li> 
-<li style="margin-bottom:0px">[Definition of Done](../work/kanban/definition-of-done.md)</li>
-<li style="margin-bottom:0px">[Cumulative flow chart](../report//guidance/cumulative-flow.md#configure) </li>
-</ul>
-
-</div>
-
-<div style="float:left;width:120px;margin:3px;font-size:90%">
-<p style="padding-bottom:0px;text-align:center;"><b>Card styles </b></p>
-<ul style="padding-left:20px">
-<li style="margin-bottom:0px">[Fields](../work/customize/customize-cards.md#kanban-board) </li>
-<li style="margin-bottom:0px">[Styles](../work/customize/customize-cards.md#style-rule) </li>
-<li style="margin-bottom:0px">[Tag colors](../work/customize/customize-cards.md#color-tags) </li>
-<li style="margin-bottom:0px">[Annotations](../work/customize/customize-cards.md#annotations) </li>
-<li style="margin-bottom:0px">[Inline tests](../work/customize/customize-cards.md#tests) </li>
-</ul>
-</div>
 
 <div style="float:left;width:190px;margin:3px;font-size:90%">
 <p style="padding-bottom:0px;text-align:center;"><b>Other team assets  </b></p>
@@ -173,7 +149,7 @@ Team administrators can manage settings for their team, including team alerts an
 <li style="margin-bottom:0px">[Manage team dashboard(s)](../report//dashboards.md) </li>
 <li style="margin-bottom:0px">[Manage notifications for a team](../work/track/alerts-and-notifications.md) (Team Services) </li>
 <li style="margin-bottom:0px">[Create and manage team alerts](../work/track/alerts-and-notifications.md) (TFS) </li>
-<li style="margin-bottom:0px">[Create and manage team rooms](../work/scale/manage-team-assets.md#teamroom)  </li>
+<li style="margin-bottom:0px">[Create and manage team rooms](../collaborate/collaborate-in-a-team-room.md)  </li>
 </ul>
 
 </div>
@@ -293,101 +269,12 @@ The method used to customize a team project depends on the process model you use
 <div style="clear:left;font-size:100%">
 </div>
 
-## Manage resources for an on-premises TFS 
-
-Members of the Team Foundation Administrator group are responsible for installing, upgrading, and maintaining an on-premises TFS deployment. 
- 
-<a id="team-foundation-server">  </a>
-### General setup, install, and upgrade
-
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">General</p>
-<ul style="padding-left:30px">
- <li style="margin-bottom:2px">[Add administration console users](add-administrator-tfs.md)</li>
- <li style="margin-bottom:2px">[Configure an SMTP server to support alerts and feedback requests](tfs/admin/setup-customize-alerts.md)</li> 
- <li style="margin-bottom:2px">[Stop and start services, application pools, and websites](tfs/admin/stop-start-stuff.md)</li> 
- <li style="margin-bottom:2px">[Service accounts and dependencies](tfs/admin/service-accounts-dependencies-tfs.md)</li>
- <li style="margin-bottom:2px">[Change the service account or password for TFS](tfs/admin/change-service-account-password.md) </li> 
-<li style="margin-bottom:2px">[Set up HTTPS with Secure Sockets Layer (SSL)](tfs/admin/setup-secure-sockets-layer.md)</li>
-</ul>
-</div>
-
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Install TFS</p>
-<ul style="padding-left:20px">
- <li style="margin-bottom:2px">[Install overview](tfs/install/get-started.md)</li>
- <li style="margin-bottom:2px">[Requirements and compatibility](requirements.md)</li>
- <li style="margin-bottom:2px">[Single server](tfs/install/single-server.md)</li>
- <li style="margin-bottom:2px">[Dual server](tfs/install/dual-server.md)</li>
- <li style="margin-bottom:2px">[Multiple server](tfs/install/multiple-server.md)</li>
- <li style="margin-bottom:2px">[Web site settings](websitesettings.md)</li>
-</ul>
-</div>
-
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Upgrade TFS</p>
-<ul style="padding-left:20px">
- <li style="margin-bottom:2px">[Upgrade overview](tfs/upgrade/get-started.md)</li>
- <li style="margin-bottom:2px">[TfsPreUpgrade tool](tfs/upgrade/pre-upgrade.md)</li>
- <li style="margin-bottom:2px">[Pre-production upgrades](tfs/upgrade/pre-production.md)</li>
- <li style="margin-bottom:2px">[Upgrade TFS](tfs/upgrade/walkthrough.md)</li>
- <li style="margin-bottom:2px">[Upgrade TFS Express](tfs/upgrade/express.md)</li>
- <li style="margin-bottom:2px">[Web site settings](websitesettings.md)</li>
-  <li style="margin-bottom:2px">[Configure features after an upgrade](../work/customize/configure-features-after-upgrade.md)</li>
-</ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
-
-### Manage data stores, deployment moves, and DevOps policies 
-
-
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backup and restore data</p>
-<ul style="padding-left:20px">
- <li style="margin-bottom:2px">[Back up and restore](tfs/admin/backup/back-up-restore-tfs.md)</li>
- <li style="margin-bottom:2px">[Manual back up](tfs/admin/backup/manually-backup-tfs.md)</li>
- <li style="margin-bottom:2px">[Configure a backup schedule and plan](tfs/admin/backup/config-backup-sched-plan.md)</li>
- <li style="margin-bottom:2px">[Restore data to the same location](tfs/admin/backup/restore-data-same-location.md)</li>
- <li style="margin-bottom:2px">[Restore data to a different server than the current one](tfs/admin/backup/restore-data-different-instance.md)</li>
-<li style="margin-bottom:2px">[Understand backing up](tfs/admin/backup/backup-db-architecture.md)</li>
-<li style="margin-bottom:2px">[Refresh the data caches on client computers](tfs/admin/backup/refresh-data-caches.md)</li>
-</ul>
-</div>
-
-
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Manage deployment moves</p>
-<ul style="padding-left:20px">
- <li style="margin-bottom:2px">[Restore a deployment to new hardware](tfs/admin/backup/tut-single-svr-home.md)</li>
- <li style="margin-bottom:2px">[Refresh the data caches on client computers](tfs/admin/backup/refresh-data-caches.md)</li>
- <li style="margin-bottom:2px">[Restore an application-tier server](tfs/admin/backup/restore-application-tier-server.md)</li>
-</ul>
-</div>
-
-
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">DevOps policies</p>
-<ul style="padding-left:20px">
- <li style="margin-bottom:2px">[Create team project](create-team-project.md)</li>
- <li style="margin-bottom:2px">[Rename team project](rename-team-project.md)</li>
- <li style="margin-bottom:2px">[Delete team project](delete-team-project.md)</li>
- <li style="margin-bottom:2px">[Clean up data](clean-up-data.md)</li>
-</ul>
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
 
 ##Related notes 
 
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Get started concepts </p>
 <ul style="padding-left:30px">
-<!--- <li style="margin-bottom:2px">[User guide](../user-guide.md)</li> -->
  <li style="margin-bottom:2px">[Key concepts](../concepts.md)</li>
  <li style="margin-bottom:2px">[Software development roles](../roles.md)</li>
 
@@ -422,125 +309,6 @@ Members of the Team Foundation Administrator group are responsible for installin
 <div style="clear:left;font-size:100%">
 </div>
 
-
-<!---
-## Team Services
-
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Set up Team Services</p>
-<ul>
- <li style="margin-bottom:2px">[Create your account](./team-services/sign-up-for-visual-studio-team-services.md)</li>
- <li style="margin-bottom:2px">[Connect to your account](./team-services/connect-to-visual-studio-team-services.md)</li>
- <li style="margin-bottom:2px">[Try extensions for free](./team-services/try-additional-features-vs.md)</li>
-</ul>
-</div>
-
-<div style="float:left;width:220px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">User access</p>
-<ul style="padding-left:10px">
- <li style="margin-bottom:2px">[Manage users and access](./team-services/add-account-users-assign-access-levels-team-services.md)</li>
- <li style="margin-bottom:2px">[Add users to team projects](./team-services/add-team-members-vs.md)</li>
- <li style="margin-bottom:2px">[Authenticate app access](./team-services/use-personal-access-tokens-to-authenticate.md)</li>
- <li style="margin-bottom:2px">[Change app access policies](./team-services/change-application-access-policies-vs.md)</li>
-</br>
-
-*Permissions*
- <li style="margin-bottom:2px">[Overview](./permissions.md)</li>
- <li style="margin-bottom:2px">[Add administrator permissions](add-administrator-tfs.md)</li>
- <li style="margin-bottom:2px">[Add user permissions](./add-users.md)</li>
- <li style="margin-bottom:2px">[Restrict access to resources](restrict-access-tfs.md)</li>
-
-</br>
-*Azure Active Directory*
- <li style="margin-bottom:2px">[Access with Azure AD](./team-services/manage-organization-access-for-your-account-vs.md)</li>
- <li style="margin-bottom:2px">[Access with Azure AD groups](./team-services/manage-azure-active-directory-groups-visual-studio-team-services.md)</li>
- <li style="margin-bottom:2px">[Change Azure AD](./team-services/change-azure-active-directory-team-services-account.md)</li>
-</ul>
-</div>
-
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Billing and purchases</p>
-<ul style="padding-left:5px">
- <li style="margin-bottom:2px">[Set up billing](./team-services/set-up-billing-for-your-account-vs.md)</li> 
- <li style="margin-bottom:2px">[Pay for more users](./team-services/buy-basic-access-add-team-services-users.md)</li>
-</ul>
-</div>
-
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Manage account</p>
-<ul style="padding-left:5px">
- <li style="margin-bottom:2px">[Rename team project](./rename-team-project.md)</li>
- <li style="margin-bottom:2px">[Delete team project](./delete-team-project.md)</li>
- <li style="margin-bottom:2px">[Change account owner](./team-services/change-account-ownership-vs.md)</li>
- <li style="margin-bottom:2px">[Rename account](./team-services/rename-visual-studio-team-services-account.md)</li>
- <li style="margin-bottom:2px">[Delete or recover account](./team-services/delete-or-recover-your-account-vs.md)</li>
-</ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
-## Team Foundation Server
-
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Install TFS</p>
-<ul>
- <li style="margin-bottom:2px">[Overview](./tfs/install/get-started.md)</li>
- <li style="margin-bottom:2px">[Requirements and compatibility](./requirements.md)</li>
- <li style="margin-bottom:2px">[Single server](tfs/install/single-server.md)</li>
- <li style="margin-bottom:2px">[Dual server](tfs/install/dual-server.md)</li>
- <li style="margin-bottom:2px">[Multiple server](tfs/install/multiple-server.md)</li>
- <li style="margin-bottom:2px">[Web site settings](./websitesettings.md)</li>
-</br>
-
-**Upgrade TFS**
-</br>
- <li style="margin-bottom:2px">[Overview](./tfs/upgrade/get-started.md)</li>
- <li style="margin-bottom:2px">[Requirements and compatibility](./requirements.md)</li>
- <li style="margin-bottom:2px">[TfsPreUpgrade tool](tfs/upgrade/pre-upgrade.md)</li>
- <li style="margin-bottom:2px">[Pre-production upgrades](tfs/upgrade/pre-production.md)</li>
- <li style="margin-bottom:2px">[Upgrade TFS](tfs/upgrade/walkthrough.md)</li>
- <li style="margin-bottom:2px">[Upgrade TFS Express](tfs/upgrade/express.md)</li>
- <li style="margin-bottom:2px">[Web site settings](./websitesettings.md)</li>
-</ul>
-</div>
-
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Permissions</p>
-<ul style="padding-left:5px">
- <li style="margin-bottom:2px">[Overview](./permissions.md)</li>
- <li style="margin-bottom:2px">[Add administrator permissions](add-administrator-tfs.md)</li>
- <li style="margin-bottom:2px">[Add user permissions](./add-users.md)</li>
- <li style="margin-bottom:2px">[Restrict access to resources](restrict-access-tfs.md)</li>
- <li style="margin-bottom:2px">[Change user access](../work/connect/change-access-levels.md)</li>
- <li style="margin-bottom:2px">[Add Stakeholder users](../work/connect/change-access-levels.md)</li>
-</ul>
-</div>
-
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Team projects</p>
-<ul style="padding-left:5px">
- <li style="margin-bottom:2px">[Create team project](./create-team-project.md)</li>
- <li style="margin-bottom:2px">[Rename team project](./rename-team-project.md)</li>
- <li style="margin-bottom:2px">[Delete team project](./delete-team-project.md)</li>
- <li style="margin-bottom:2px">[Clean up data](./clean-up-data.md)</li>
-</ul>
-</div>
-
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Command-line tools</p>
-<ul style="padding-left:5px">
- <li style="margin-bottom:2px">[TFSConfig](tfs/command-line/tfsconfig-cmd.md)</li>
- <li style="margin-bottom:2px">[TFSDeleteProject](tfs/command-line/tfsdeleteproject-cmd.md)</li>
- <li style="margin-bottom:2px">[TFSSecurity](tfs/command-line/tfssecurity-cmd.md)</li>
- <li style="margin-bottom:2px">[TFSServiceControl](tfs/command-line/tfsservicecontrol-cmd.md)</li>
-</ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
--->
 ### Set up Team Services
 
 #### Create your account

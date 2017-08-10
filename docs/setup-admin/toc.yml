@@ -1,8 +1,8 @@
-- name: Account management documentation
+- name: VSTS account administration
   href: index.md
 - name: Overview
   items:
-  - name: Account management
+  - name: Account administration
     href: account-administration.md
   - name: Access with Azure AD
     href: team-services/access-with-azure-ad.md
@@ -10,10 +10,16 @@
   items:
   - name: Sign up for your account
     href: team-services/sign-up-for-visual-studio-team-services.md
+  - name: Connect to your account from tools
+    href: team-services/connect-to-visual-studio-team-services.md
   - name: Add users to your account
     href: team-services/add-account-users-assign-access-levels-team-services.md
   - name: "User hub: add users to your account"
-    href: add-basic-or-vs-subscription-users.md
+    href: team-services/add-account-users-from-user-hub.md
+  - name: "User hub: add basic or VS subscription users to your account"
+    href: team-services/add-basic-or-vs-subscription-users.md
+  - name: Try extensions for free
+    href: team-services/try-additional-features-vs.md
   - name: Get more features (extensions)
     items:
     - name: Install an extension
@@ -25,12 +31,12 @@
 - name: Tutorials
   items:
   - name: Change Azure AD tenant
-    href: change-azure-active-directory-team-services-account.md
+    href: team-services/change-azure-active-directory-team-services-account.md
   - name: Get HockeyApp - Bring DevOps to mobile app development
     href: ../marketplace/get-hockeyapp.md
-- name: How-to guides
+- name: How-to
   items:
-  - name: Manage your account
+  - name: Manage accounts
     items:
     - name: Change account owner
       href: team-services/change-account-ownership-vs.md
@@ -41,7 +47,7 @@
     - name: Recover account
       href: team-services/recover-your-vsts-account.md
     - name: Sign in with different credentials
-      href: ../connect/connect-team-projects.md#logindifferentcred.md
+      href: ../connect/connect-team-projects.md#logindifferentcred
   - name: Manage team projects
     items:
     - name: Create team project
@@ -52,6 +58,8 @@
       href: delete-team-project.md
     - name: Save team project data
       href: save-team-project-data.md
+    - name: Connect to team projects in various ways
+      href: /vsts/connect/connect-team-projects?toc=/vsts/setup-admin/toc.json
   - name: Manage account access
     items:
     - name: "User hub: manage users from table view"
@@ -60,6 +68,8 @@
       href: team-services/manage-conditional-access.md
     - name: "User hub: delete users from your account"
       href: team-services/delete-account-users-users-hub.md
+    - name: Add members to team projects
+      href: team-services/add-team-members-vs.md
     - name: Delete users from your account
       href: team-services/delete-account-users.md
     - name: Link work accounts to Visual Studio with MSDN subscriptions
@@ -91,7 +101,7 @@
     - name: Pay for Team Services users
       href: team-services/buy-basic-access-add-team-services-users.md
     - name: Change number of paid users
-      href: team-services/change-number-of-users.md
+      href: team-services/change-number-of-paid-users.md
     - name: How to buy build pipelines
       href: team-services/buy-more-build-vs.md
     - name: Change number of paid build pipelines
@@ -114,8 +124,6 @@
       href: add-administrator-project-collection.md
     - name: Add administrators to team project
       href: add-administrator-team-project.md
-    - name: Add administrators to a team
-      href: add-administrator-team.md
     - name: Restrict access to resources
       href: restrict-access-tfs.md
     - name: Change access levels
@@ -126,11 +134,9 @@
       href: permissions.md
 - name: Concepts
   items:
-  - name: Permissions and access
-    href: permissions-access.md
-  - name: TBD (might be a few intros I peel out into concepts.md)
+  - name: TBD FROM TOPIC INTROS
   - name: Buying build pipelines
-    href: buy-more-build-vs.md
+    href: team-services/buy-more-build-vs.md
 - name: Reference
   items:
   - name: Reference tour
@@ -154,6 +160,10 @@
       href: ../marketplace/request-vsts-extension.md
     - name: Approve requests for Team Services extensions
       href: ../marketplace/approve-vsts-extensions.md
+    - name: Assign paid extension access to users
+      href: ../marketplace/assign-paid-extensions.md
+    - name: Uninstall or disable extensions
+      href: ../marketplace/uninstall-disable-vsts-extensions.md
   - name: Account preferences
     href: account-preferences.md
   - name: Migrate from TFS to Team Services Tutorial

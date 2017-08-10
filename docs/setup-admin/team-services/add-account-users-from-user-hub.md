@@ -4,15 +4,21 @@ description: Add users and assign access levels in user hub Visual Studio Team S
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
-ms.assetid: 96f0fab1-2cb2-4b1b-acb3-06dd67f55b84
+ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: douge
 ms.author: estfan
 ms.date: 4/17/2017
 ---
 
-#	Manage users and access in user hub for Visual Studio Team Services
+#	Add account users from the user hub for Visual Studio Team Services
 
 **Team Services Streamlined User Management Preview**
+
+
+PLACEHOLDER TOPIC
+
+
+
 
 If you are a Project Collection Administrator, you can now navigate to the new Users page by turning on "Streamlined User Management" under "Preview features".
  
@@ -102,73 +108,6 @@ or [customize your process](../../work/process/customize-process.md)
 
 *	[Grow and scale your teams](../../work/scale/multiple-teams.md)
 
-
-##	Manage users in table view
-
-The Users view shows key information per user in a table. You can see and modify assigned service extensions and 
-access levels.  You can multi-select users and bulk edit their extensions and access.  You can filter by searching for 
-partial user names, access level, or extension names.  You can see the last access date for each user to help you choose 
-from whom you might remove access or lower access to stay within your license limits.
-
-Go to the User Hub:
-
-![go to the user hub](_img/_shared/users-hub-updated.png)
-
-Choose a user in the table and then choose the **...** in the name column to see the context menu.  The menu supports **Change access level**, **Manage project**, **Manage extension** (if there are extensions), and **Remove from account** (deletes user).
-
-![Account level table of users with key information per user](_img/user-hub/acct-level-users.jpg)
-
-
-##	Detailed view of individual users
-
-Using the detailed user view, you can change the access level, service extensions, and project group memberships that 
-a user has. The same operations from the table's context menu are available in this dialog.
-
-![User details view](_img/user-hub/user-details.jpg)
-
-<a name="delete-user"></a>
-##  Delete users from your Visual Studio Team Services account
-
-Before you start, you'll need 
-[Team Services project collection administrator or account owner permissions](#find-owner).
-
-0. Sign in to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).
-
- [Why am I asked to choose between my "work or school account" and my "personal account"?](#ChooseOrgAcctMSAcct)
-
-0. Go to the users hub. Select the user, choose **...** in the name column, then choose **Remove**.
-
- ![Account level table of users with key information per user](_img/user-hub/acct-level-users.jpg)
-
-0. To make sure that you've removed the user completely, make sure they are not in any of your [security groups](../add-users.md). 
-
- [Why don't users appear or disappear promptly in Team Services after I add or delete them in the Users hub?](#users-delay)
-
-0. If you deleted paid users who had Basic features, and you don't want to pay for these users, you must also 
-[reduce these users in the Visual Studio Marketplace](buy-basic-access-add-team-services-users.md), 
-so you're not charged in your next Azure billing cycle.
-
- > To reduce or cancel these users for the next month, you must make updates before the last day of the current month. 
- > Your bill won't show these change until the next month because paid users are monthly purchases. 
-
-
-<a name="add-more-basic-users"></a>
-## Add more users with Basic features or Visual Studio subscriptions
-
-When your account stays within the free limits, you don't have to pay for users to join your account.
-You only have to pay if you have more than 5 users who need Basic features, and they don't have Visual Studio subscriptions.
-You can [pay for additional users in the Visual Studio Marketplace](buy-basic-access-add-team-services-users.md), 
-return to your Team Services account, add these users, and assign them Basic access. 
-You pay monthly for their access and cancel the access anytime.
-
-Visual Studio subscriptions give you flexible ways to access Team Services 
-and to license the Visual Studio IDE and other Microsoft software for dev and test. 
-Learn [how to buy Visual Studio subscriptions](../../marketplace/vs-subscriptions/buy-vs-subscriptions.md) 
-from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions). 
-
-Learn [how to manage purchased Visual Studio subscriptions](../../marketplace/vs-subscriptions/buy-vs-subscriptions.md#manage-subscriptions) 
-in the [Visual Studio Subscriptions Administration portal](https://manage.visualstudio.com/_apis/Home/redirect?RedirectSource=Commerce). 
-Make sure to sign in with the ID that you used to purchase your subscriptions.
 
 
 ## Q & A
@@ -268,7 +207,7 @@ learn [how to add your "work or school account" to your subscription](link-msdn-
 
 Still having problems? Try these 
 [troubleshooting tips](http://blogs.msdn.com/b/visualstudioalm/archive/2014/03/19/visual-studio-online-best-practices-troubleshooting-issues-with-the-quot-eligible-msdn-subscriber-license-type.aspx). 
-If you need more help, contact [Support](https://www.visualstudio.com/support/).
+If you need more help, contact [Support](https://www.visualstudio.com/support/support-overview-vs).
 
 <a name="why-access-changed"></a>
 #### Q: Why do Visual Studio subscribers' access levels change after they sign in?

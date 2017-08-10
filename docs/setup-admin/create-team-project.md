@@ -63,7 +63,7 @@ You can create a team project from Team Explorer after you have connected to an 
 
     -   Has a SharePoint Web application been configured for your deployment? If you want to configure a SharePoint portal when you create your team project, ask the SharePoint administrator to give you Full Control permissions on the server that hosts SharePoint Products. Otherwise, you can skip this step and configure a portal at a later time.
 
-3.  Open the same Visual Studio of visual studio as the version of TFS that you're connecting to. If you don’t see the Team Explorer pane, open **View\>Team Explorer** from the menu.
+3.  Open the same version of Visual Studio as the version of TFS that you're connecting to. If you don’t see the Team Explorer pane, open **View\>Team Explorer** from the menu.
 
     As needed, [Download and install Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx) to get a free copy of the latest version.
 
@@ -90,8 +90,6 @@ You can create a team project from Team Explorer after you have connected to an 
 7.  Name the team project. Don’t specify more than 64 characters.
 
     ![ALM\_CTP\_NameProject](_img/IC671598.png)
-
-    And, note that after you’ve created a team project, you can’t change its name.
 
 8.  Choose a process template. For a comparison of the default process templates, see [Choose a process](../work/guidance/choose-process.md).
 

@@ -4,15 +4,19 @@ description: Add users and assign access levels in user hub Visual Studio Team S
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
-ms.assetid: 96f0fab1-2cb2-4b1b-acb3-06dd67f55b84
+ms.assetid: 9f142821-1772-413f-a0e0-9b47b11a410f
 ms.manager: douge
 ms.author: estfan
 ms.date: 4/17/2017
 ---
 
-#	Manage users and access in user hub for Visual Studio Team Services
+#	Manage users in user hub table view for Visual Studio Team Services
 
 **Team Services Streamlined User Management Preview**
+
+
+PLACEHOLDER TOPIC
+
 
 If you are a Project Collection Administrator, you can now navigate to the new Users page by turning on "Streamlined User Management" under "Preview features".
  
@@ -59,48 +63,6 @@ learn [how to change paid extension users](../../marketplace/get-vsts-extensions
 
 You'll need [Team Services project collection administrator or account owner permissions](#find-owner). 
 
-##	Add users to your Visual Studio Team Services account
-
-Administrators can now add users to an account, grant access to appropriate tooling extensions and service access level, 
-and add users to groups all in one view. You can add up to 50 users at once.  You can add more than 50 users by repeatedly 
-using this Users view.  When you add users, each receives a notification email with a 
-link to the account page.
-
- > [!NOTE]
- > If have an Azure Active Directory (Azure AD) backed Team Services account, and you need to add users who are 
- > external to your Azure AD, first 
- > [add those users as foreign principals](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-create-users#add-a-user) to 
- > your Azure AD.  Be sure on the **Tell us about this user page**, under **Type of user**, to choose **User with an 
- > existing Microsoft account**.  After completing those steps, follow the steps below to add the foreign Azure AD 
- > user to Team Services.
-
-![Click the Add Users button](_img/user-hub/add-users-button.png)
-
-![Add users by inviting them to the account](_img/user-hub/add-users.jpg)
-
-
-####	Next
-
-*	Add code to Git or Team Foundation version control
-
-	*	Git with [Eclipse](connect-to-visual-studio-team-services.md#eclipse), 
-	[Xcode](../../git/share-your-code-in-git-xcode.md), 
-	[Visual Studio](connect-to-visual-studio-team-services.md#vs), 
-	[Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio), 
-	[IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), 
-	or [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
-
-	*	TFVC using [Eclipse](connect-to-visual-studio-team-services.md#eclipse), 
-	[Xcode](../../tfvc/share-your-code-in-tfvc-xcode.md), 
-	[Visual Studio](connect-to-visual-studio-team-services.md#vs), or 
-	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
-
-*	[Create a backlog](../../work/backlogs/create-your-backlog.md) 
-to plan, organize, and track your work, 
-[manage your process](../../work/process/manage-process.md), 
-or [customize your process](../../work/process/customize-process.md)
-
-*	[Grow and scale your teams](../../work/scale/multiple-teams.md)
 
 
 ##	Manage users in table view
@@ -126,49 +88,6 @@ a user has. The same operations from the table's context menu are available in t
 
 ![User details view](_img/user-hub/user-details.jpg)
 
-<a name="delete-user"></a>
-##  Delete users from your Visual Studio Team Services account
-
-Before you start, you'll need 
-[Team Services project collection administrator or account owner permissions](#find-owner).
-
-0. Sign in to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).
-
- [Why am I asked to choose between my "work or school account" and my "personal account"?](#ChooseOrgAcctMSAcct)
-
-0. Go to the users hub. Select the user, choose **...** in the name column, then choose **Remove**.
-
- ![Account level table of users with key information per user](_img/user-hub/acct-level-users.jpg)
-
-0. To make sure that you've removed the user completely, make sure they are not in any of your [security groups](../add-users.md). 
-
- [Why don't users appear or disappear promptly in Team Services after I add or delete them in the Users hub?](#users-delay)
-
-0. If you deleted paid users who had Basic features, and you don't want to pay for these users, you must also 
-[reduce these users in the Visual Studio Marketplace](buy-basic-access-add-team-services-users.md), 
-so you're not charged in your next Azure billing cycle.
-
- > To reduce or cancel these users for the next month, you must make updates before the last day of the current month. 
- > Your bill won't show these change until the next month because paid users are monthly purchases. 
-
-
-<a name="add-more-basic-users"></a>
-## Add more users with Basic features or Visual Studio subscriptions
-
-When your account stays within the free limits, you don't have to pay for users to join your account.
-You only have to pay if you have more than 5 users who need Basic features, and they don't have Visual Studio subscriptions.
-You can [pay for additional users in the Visual Studio Marketplace](buy-basic-access-add-team-services-users.md), 
-return to your Team Services account, add these users, and assign them Basic access. 
-You pay monthly for their access and cancel the access anytime.
-
-Visual Studio subscriptions give you flexible ways to access Team Services 
-and to license the Visual Studio IDE and other Microsoft software for dev and test. 
-Learn [how to buy Visual Studio subscriptions](../../marketplace/vs-subscriptions/buy-vs-subscriptions.md) 
-from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions). 
-
-Learn [how to manage purchased Visual Studio subscriptions](../../marketplace/vs-subscriptions/buy-vs-subscriptions.md#manage-subscriptions) 
-in the [Visual Studio Subscriptions Administration portal](https://manage.visualstudio.com/_apis/Home/redirect?RedirectSource=Commerce). 
-Make sure to sign in with the ID that you used to purchase your subscriptions.
 
 
 ## Q & A
@@ -268,7 +187,7 @@ learn [how to add your "work or school account" to your subscription](link-msdn-
 
 Still having problems? Try these 
 [troubleshooting tips](http://blogs.msdn.com/b/visualstudioalm/archive/2014/03/19/visual-studio-online-best-practices-troubleshooting-issues-with-the-quot-eligible-msdn-subscriber-license-type.aspx). 
-If you need more help, contact [Support](https://www.visualstudio.com/support/).
+If you need more help, contact [Support](https://www.visualstudio.com/support/support-overview-vs).
 
 <a name="why-access-changed"></a>
 #### Q: Why do Visual Studio subscribers' access levels change after they sign in?

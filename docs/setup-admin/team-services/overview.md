@@ -207,7 +207,7 @@ Team administrators can manage settings for their team, including team alerts an
 <li style="margin-bottom:0px">[Manage team dashboard(s)](../../report//dashboards.md) </li>
 <li style="margin-bottom:0px">[Manage notifications for a team](../../work/track/alerts-and-notifications.md) (Team Services) </li>
 <li style="margin-bottom:0px">[Create and manage team alerts](../../work/track/alerts-and-notifications.md) (TFS) </li>
-<li style="margin-bottom:0px">[Create and manage team rooms](../../work/scale/manage-team-assets.md#teamroom)  </li>
+<li style="margin-bottom:0px">[Create and manage team rooms](../../collaborate/collaborate-in-a-team-room.md)  </li>
 </ul>
 
 </div>
