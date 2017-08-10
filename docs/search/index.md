@@ -18,8 +18,10 @@ ms.date: 12/04/2016
 
 ## 5-minute Quickstarts
 
-* [Search code](code/code-search.md)
-* [Search work items](workitem/work-item-search.md)
+| | |
+| --- | --- |
+| ![icon](_img/_shared/codesearch-icon.png)<br />[Search code](code/code-search.md) | ![icon](_img/_shared/wisearch-icon.png)<br />[Search work items](workitem/work-item-search.md) |
+| | |
 
 ## How-to Guides
 
@@ -29,7 +31,8 @@ ms.date: 12/04/2016
 
 ## Resources
 
-* [Code Search Video](https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4)
-* [Code Search on Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
-* [Code Search blog posts](https://social.msdn.microsoft.com/Search/en-US?query=code%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5)
-* [Work Item Search blog posts](https://social.msdn.microsoft.com/Search/en-US?query=work%20item%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5)
+| | |
+| --- | --- |
+| [Code Search Video](https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4) | [Code Search blog posts](https://social.msdn.microsoft.com/Search/en-US?query=code%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5) |
+| [Code Search on Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) | [Work Item Search blog posts](https://social.msdn.microsoft.com/Search/en-US?query=work%20item%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5) |
+| | |

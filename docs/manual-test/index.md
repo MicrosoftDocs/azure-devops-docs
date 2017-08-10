@@ -24,20 +24,20 @@ tools everyone in the team can use to drive quality and collaboration throughout
 Learn how to create tests plans and test cases, and run them
 using the VSTS or TFS web portal.
 
-* [Test from the Kanban board](../work/kanban/add-run-update-tests.md?toc=/vsts/manual-test/toc.json)
-* [Create a test plan](getting-started/create-a-test-plan.md)
-* [Create test cases](getting-started/create-test-cases.md)
-* [Run manual tests](getting-started/run-manual-tests.md)
+| | |
+| --- | --- |
+| ![icon]()<br />[Test from the Kanban board](../work/kanban/add-run-update-tests.md?toc=/vsts/manual-test/toc.json) | ![icon]()<br />[Create a test plan](getting-started/create-a-test-plan.md) |
+| ![icon]()<br />[Create test cases](getting-started/create-test-cases.md) | ![icon]()<br />[Run manual tests](getting-started/run-manual-tests.md) |
+| | |
 
-### Test &amp; Feedback extension
-
-Use the Test &amp; Feedback extension to associate work items
+Use the **Test &amp; Feedback extension** to associate work items
 with a new or an in-progress exploratory session, and create new bugs,
 tasks and test cases automatically linked to that work item.
 
-* [Install the extension](getting-started/perform-exploratory-tests.md)
-* [Test in Connected mode](connected-mode-exploratory-testing.md)
-* [Test in Standalone mode](standalone-mode-exploratory-testing.md)
+| | | |
+| --- | --- | --- |
+| ![icon]()<br />[Install the extension](getting-started/perform-exploratory-tests.md) | ![icon]()<br />[Test in Connected mode](connected-mode-exploratory-testing.md) | ![icon]()<br />[Test in Standalone mode](standalone-mode-exploratory-testing.md) |
+| | | |
 
 ## How-to Guides
 
@@ -79,10 +79,9 @@ tasks and test cases automatically linked to that work item.
 
 ## Resources
 
-| | |
-| --- | --- |
-| [Get Stakeholder feedback](../collaborate/feedback/index.md) | [Using Microsoft Test Manager](https://msdn.microsoft.com/en-us/library/jj635157.aspx) |
-| [Blog posts for testing](https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/) | [Blog posts for test management](https://blogs.msdn.microsoft.com/visualstudioalm/tag/test-management/) |
-| [Test & Feedback posts](https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4) | |
-| | |
+| | | |
+| --- | --- | --- |
+| [Get Stakeholder feedback](../collaborate/feedback/index.md) | [Blog posts for testing](https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/) | [Test & Feedback posts](https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4) |
+| [Using Microsoft Test Manager](https://msdn.microsoft.com/en-us/library/jj635157.aspx) | [Blog posts for test management](https://blogs.msdn.microsoft.com/visualstudioalm/tag/test-management/) | |
+| | | |
 

@@ -18,9 +18,10 @@ ms.date: 08/12/2016
 
 ## 5-minute Quickstarts
 
-* [Continuous testing](getting-started-with-continuous-testing.md)
-* [Selenium testing](continuous-test-selenium.md)
-* [Review test results](review-continuous-test-results-after-build.md)
+| | | |
+| --- | --- | --- |
+| ![icon]()<br />[Continuous testing](getting-started-with-continuous-testing.md) | ![icon]()<br />[Selenium testing](continuous-test-selenium.md) | ![icon]()<br />[Review test results](review-continuous-test-results-after-build.md) |
+| | | |
 
 ## How-to Guides
 
@@ -38,10 +39,11 @@ ms.date: 08/12/2016
 * [Unified agents and phases](test-with-unified-agent-and-phases.md)
 * [Test Java applications](continuous-test-java.md)
 * [Set up environments](set-up-continuous-test-environments-builds.md)
-* ["Q & A"](reference-qa.md)
+* [Q & A](reference-qa.md)
 
 ## Resources
 
-* [DevOps Rangers](https://vsartestreleaseguide.codeplex.com/)
-* [Plug-ins for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246630)
-
+| | |
+| --- | --- |
+| [DevOps Rangers](https://vsartestreleaseguide.codeplex.com/) | [Plug-ins for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246630) |
+| | |

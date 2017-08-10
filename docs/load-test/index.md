@@ -21,10 +21,11 @@ Load test your app with hundreds of thousands of users using Visual Studio Team 
 
 Load test from your preferred UI, and compare the results.
 
-* [Load test with Visual Studio](getting-started-with-performance-testing.md)
-* [Load test with Team Services](get-started-simple-cloud-load-test.md)
-* [Load test with Azure portal](app-service-web-app-performance-test.md)
-* [View and compare results](performance-reports.md)
+| | |
+| --- | --- |
+| ![icon]()<br />[Load test with Visual Studio](getting-started-with-performance-testing.md) | ![icon]()<br />[Load test with Team Services](get-started-simple-cloud-load-test.md) |
+| ![icon]()<br />[Load test with Azure portal](app-service-web-app-performance-test.md) | ![icon]()<br />[View and compare results](performance-reports.md) |
+| | |
 
 ## Step-by-Step Tutorials
 
@@ -49,9 +50,8 @@ Learn how to run performance and load tests against your app.
 
 ## Resources
 
-| | |
-| --- | --- |
-| [Edit load tests](https://msdn.microsoft.com/library/ff406975%28v=vs.140%29.aspx) | [Distribute load tests](https://msdn.microsoft.com/library/dd728093%28v=vs.140%29.aspx) |
-| [Analyze load test results](https://msdn.microsoft.com/library/ee923686%28v=vs.140%29.aspx) | [Fix undetectable parameters](https://msdn.microsoft.com/library/ff460245%28v=vs.140%29.aspx) |
-| [Create custom code & plug-ins](https://msdn.microsoft.com/library/ee923683%28v=vs.140%29.aspx) | [Posts on the ALM blog](https://social.msdn.microsoft.com/Search/en-US?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4) |
-| | |
+| | | |
+| --- | --- | --- |
+| [Fix undetectable parameters](https://msdn.microsoft.com/library/ff460245%28v=vs.140%29.aspx) | [Edit load tests](https://msdn.microsoft.com/library/ff406975%28v=vs.140%29.aspx) | [Distribute load tests](https://msdn.microsoft.com/library/dd728093%28v=vs.140%29.aspx) |
+| [Create custom code &amp; plug-ins](https://msdn.microsoft.com/library/ee923683%28v=vs.140%29.aspx) |  [Analyze load test results](https://msdn.microsoft.com/library/ee923686%28v=vs.140%29.aspx) | [Posts on the ALM blog](https://social.msdn.microsoft.com/Search/en-US?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4) |
+| | | |
