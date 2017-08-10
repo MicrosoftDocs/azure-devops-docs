@@ -64,7 +64,7 @@ In this step, we'll make a change to the files on your computer, commit them, pu
 
 0. Browse to the folder on your computer where you cloned the repo, open the `README.md` file in your editor of choice, make some changes, and save and close the file.
 
-0. In the Git command window, navigate to the folder of the cloned repo by entering a command similar to the following: 
+0. In the Git command window, navigate to the `contoso-demo` directory by entering the following command: 
 
   ```
   cd contoso-demo
