@@ -19,7 +19,7 @@ ms.custom: mvc
 
 # CI/CD of an ASP.NET Core app to a Windows virtual machine
 
-Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your ASP.NET Core apps. This quickstart shows how to set up CI and CD processes to deploy an ASP.NET Core application to a Windows virtual machine (VM) in Azure.
+Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline to automatically deploy your ASP.NET Core apps to a Windows virtual machine (VM) in Azure.
 
 You'll use the VSTS portal to set up CI/CD. Your CI process runs the .NET Core commands to restore packages, build and test the app, and finally publish artifacts. Your CD process automatically picks up these artifacts and deploys them to your environment. Finally, you'll test it all out by pushing a small code change into your team's git repo. Your CI/CD processes will automatically deploy the change.
 
@@ -43,7 +43,11 @@ On your VM, open an **Administrator: Windows PowerShell** console. Install IIS a
 Install-WindowsFeature Web-Server,Web-Asp-Net45,NET-Framework-Features
 ```
 
+[//]: # (TODO: Ask to have above install handled in prereq. [Conversation]:="Adding some software to Azure Windows VM")
+
 On your VM, install the [.NET Core Windows Server Hosting](https://go.microsoft.com/fwlink/?linkid=848766) bundle. The bundle will install the .NET Core Runtime, .NET Core Library, and the [ASP.NET Core Module](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps). The module creates the reverse-proxy between IIS and the Kestrel server.
+
+[//]: # (TODO: Ask .net core writers, Micheal)
 
 After the installation is done, to effect a change to the system PATH, run the following commands from a PowerShell prompt on your VM:
 
@@ -91,7 +95,7 @@ Continuous Integration (CI) is the process of automating the build and testing o
 
  You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time check in code.
 
-1. For the **Default agent queue**, select _Hosted VS2017_.
+1. For the **Default agent queue**, select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
 
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
