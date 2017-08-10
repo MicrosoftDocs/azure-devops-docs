@@ -139,8 +139,7 @@ There are several built-in search functions that support finding version control
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Code search</p>
 <ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Get started with Code search](../search/code/get-started.md)</li>
-<li style="margin-bottom:2px">[Scope your search](../search/code/repos-and-projects.md)</li>
+<li style="margin-bottom:2px">[Get started with Code search](../search/code/code-search.md)</li>
 <li style="margin-bottom:2px">[Advanced options](../search/code/advanced-search.md)</li>
 <li style="margin-bottom:2px">[Find a file or folder in your Git repo](../git/find-a-file.md)</li>
 <li style="margin-bottom:2px">[Filter or find a specific branch](../git/manage-your-branches.md)</li>
@@ -165,9 +164,8 @@ There are several built-in search functions that support finding version control
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Adhoc work item queries </p>
 <ul style="padding-left:30px">
 <li style="margin-bottom:2px">[Adhoc vs. Managed queries](../work/track/adhoc-vs-managed-queries.md)</li>
-<li style="margin-bottom:2px">[Get started with adhoc searches](../search/workitem/get-started.md)</li>
+<li style="margin-bottom:2px">[Get started with adhoc searches](../search/workitem/work-item-search.md)</li>
 <li style="margin-bottom:2px">[Advanced work item search options](../search/workitem/advanced-search-syntax.md)</li>
-<li style="margin-bottom:2px">[Rich work item search results](../search/workitem/search-results.md)</li>
 </ul>
 </div>
 

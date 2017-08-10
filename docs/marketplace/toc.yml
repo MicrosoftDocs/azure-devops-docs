@@ -91,6 +91,6 @@
     - name: Package Management extension
       href: ../package/overview.md
     - name: Work item search extension
-      href: ../search/workitem/get-started.md
+      href: ../search/workitem/work-item-search.md
   - name: How to build Marketplace extensions
     href: ../extend/index.md#extensions

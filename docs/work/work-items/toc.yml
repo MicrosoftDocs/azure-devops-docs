@@ -125,7 +125,7 @@
 - name: Resources
   items:
   - name: Adhoc work item search
-    href: ../../search/workitem/get-started.md
+    href: ../../search/workitem/work-item-search.md
   - name: Work item queries
     href: ../track/using-queries.md
   - name: Clients that support work tracking

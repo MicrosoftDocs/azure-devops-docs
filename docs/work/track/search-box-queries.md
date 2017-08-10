@@ -34,7 +34,7 @@ Search box queries automatically scope to the items defined to the team project 
 
 If you've added the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) to Team Services or TFS 2017, you'll notice that the search box moves to the top row, and you can quickly switch between work item and code searches. 
 
-The search box retains the last used search context for each hub. To learn more about code search, see [Get started with Code Search](../../search/code/get-started.md).
+The search box retains the last used search context for each hub. To learn more about code search, see [Get started with Code Search](../../search/code/code-search.md).
 
 [!INCLUDE [temp](../_shared/search-box.md)]
 

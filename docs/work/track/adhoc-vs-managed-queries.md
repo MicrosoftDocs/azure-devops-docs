@@ -50,8 +50,7 @@ To learn more about each search type, see these topics:
 
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="font-weight:bold;margin-bottom:0px;text-align:center;">Adhoc work item queries </p>
-- [Get started with Work Item Search](../../search/workitem/get-started.md)   
-- [Rich work item search results](../../search/workitem/search-results.md)   
+- [Get started with Work Item Search](../../search/workitem/work-item-search.md)   
 - [Advanced work item search options](../../search/workitem/advanced-search-syntax.md)       
 </div>
 
@@ -67,8 +66,7 @@ To learn more about each search type, see these topics:
 
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="font-weight:bold;margin-bottom:0px;text-align:center;">Code search</p>
-- [Install Code search extension](../../search/code/get-started.md)   
-- [Scope your search](../../search/code/repos-and-projects.md)   
+- [Install Code search extension](../../search/code/code-search.md)   
 - [Advanced options](../../search/code/advanced-search.md)      
 </div>
 
