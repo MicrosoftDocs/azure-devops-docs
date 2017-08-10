@@ -6,8 +6,6 @@
     href: marketplace-billing-qa.md
   - name: Get and use Marketplace extensions
     href: extend-overview.md
-  - name: Integrate with other services
-    href: integrate/service-hooks/get-started.md
 - name: Quick start
   items:
   - name: How to set up billing
@@ -39,47 +37,47 @@
   - name: Services
     items:
     - name: AppVeyor
-      href: integrate/service-hooks/services/appveyor.md
+      href: ../service-hooks/services/appveyor.md
     - name: Azure Service Bus
-      href: integrate/service-hooks/services/azure-service-bus.md
+      href: ../service-hooks/services/azure-service-bus.md
     - name: Azure Storage
-      href: integrate/service-hooks//services/azure-storage.md
+      href: ../service-hooks/services/azure-storage.md
     - name: Bamboo
-      href: integrate/service-hooks/services/bamboo.md
+      href: ../service-hooks/services/bamboo.md
     - name: Campfire
-      href: integrate/service-hooks/services/campfire.md
+      href: ../service-hooks/services/campfire.md
     - name: Flowdock
-      href: integrate/service-hooks/services/flowdock.md
+      href: ../service-hooks/services/flowdock.md
     - name: HipChat
-      href: integrate/service-hooks/services/hipchat.md
+      href: ../service-hooks/services/hipchat.md
     - name: Hubot
-      href: integrate/service-hooks/services/hubot.md
+      href: ../service-hooks/services/hubot.md
     - name: Jenkins
-      href: integrate/service-hooks/services/jenkins.md
+      href: ../service-hooks/services/jenkins.md
     - name: MyGet
-      href: integrate/service-hooks/services/myget.md
+      href: ../service-hooks/services/myget.md
     - name: Slack
-      href: integrate/service-hooks/services/slack.md
+      href: ../service-hooks/services/slack.md
     - name: Trello
-      href: integrate/service-hooks/services/trello.md
+      href: ../service-hooks/services/trello.md
     - name: UserVoice
-      href: integrate/service-hooks/services/uservoice.md
+      href: ../service-hooks/services/uservoice.md
     - name: WebHooks
-      href: integrate/service-hooks/services/webhooks.md
+      href: ../service-hooks/services/webhooks.md
     - name: Zapier
-      href: integrate/service-hooks/services/zapier.md
+      href: ../service-hooks/services/zapier.md
     - name: Zendesk
-      href: integrate/service-hooks/services/zendesk.md
+      href: ../service-hooks/services/zendesk.md
 - name: How to guides
   items:
   - name: Authorize a service
-    href: integrate/service-hooks/authorize.md
+    href: ../service-hooks/authorize.md
   - name: Rate and review extensions
     href: rating-and-review.md
 - name: Troubleshooting
   items:
   - name: Troubleshoot service hooks issues
-    href: integrate/service-hooks/troubleshoot.md
+    href: ../service-hooks/troubleshoot.md
 - name: Resources
   items:
   - name: Extensions for Visual Studio

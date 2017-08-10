@@ -105,7 +105,7 @@ Service hooks enable you to perform tasks on other services when events happen w
 
 The following services are available as the target of service hooks. To learn about others apps and services that integrate with our Team Services or TFS, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com)
 
-For the lastest set of supported services, see [Integrate with service hooks](integrate/get-started/service-hooks/get-started.md)
+For the lastest set of supported services, see [Integrate with service hooks](service-hooks/get-started.md)
 
 
 ### Cloud-hosted services based on usage   

@@ -296,11 +296,11 @@ With Marketplace extensions (currently in private preview), you can create first
 <div style="float:left;width:170px;margin:6px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Service hooks</p>
 <ul style="padding-left:20px">
-<li style="margin-bottom:2px">[Using service hooks](integrate/get-started/service-hooks/get-started.md)</li>
-<li style="margin-bottom:2px">[Authorize](integrate/get-started/service-hooks/authorize.md)</li>
-<li style="margin-bottom:2px">[Create subscriptions](integrate/get-started/service-hooks/create-subscription.md)</li>
-<li style="margin-bottom:2px">[Service hook consumers](integrate/get-started/service-hooks/consumers.md)</li>
-<li style="margin-bottom:2px">[Service hook events](integrate/get-started/service-hooks/events.md)</li>
+<li style="margin-bottom:2px">[Using service hooks](service-hooks/get-started.md)</li>
+<li style="margin-bottom:2px">[Authorize](service-hooks/authorize.md)</li>
+<li style="margin-bottom:2px">[Create subscriptions](service-hooks/create-subscription.md)</li>
+<li style="margin-bottom:2px">[Service hook consumers](service-hooks/consumers.md)</li>
+<li style="margin-bottom:2px">[Service hook events](service-hooks/events.md)</li>
 </ul>
 </div>
 

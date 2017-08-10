@@ -21,6 +21,6 @@ Supported events:
 - work item created, updated, deleted, restored or commented on
 - message posted to a team room
 
-You can configure filters on your subscriptions to control which events trigger an action. For example, you can filter the build completed event based on the build status. For a complete set of supported events and filter options, see the [event reference](../get-started/service-hooks/events.md).
+You can configure filters on your subscriptions to control which events trigger an action. For example, you can filter the build completed event based on the build status. For a complete set of supported events and filter options, see the [event reference](../../service-hooks/events.md).
 
-For a complete set of supported consumer services and actions, see the [consumer reference](../get-started/service-hooks/consumers.md).
+For a complete set of supported consumer services and actions, see the [consumer reference](../../service-hooks/consumers.md).

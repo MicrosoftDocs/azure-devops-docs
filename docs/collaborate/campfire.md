@@ -27,7 +27,7 @@ For example, you can post a message when a work item is created or changed, or a
 
 1. On the team project page in the service hooks tab, run the subscription wizard.
 
-   <img alt="Add service hook" src="../marketplace/integrate/service-hooks/services/_img/add-service-hook.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Add service hook" src="../service-hooks/services/_img/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 
 3. Configure the Visual Studio Team Services event that will post a message in a Campfire room.
 

@@ -340,8 +340,8 @@ To track your bugs and integrate with other resources available to you, see thes
 - [Copy or clone a work item](copy-clone-work-items.md#copy-clone)
 
 ### Integrate & Test resources
-- [UserVoice](../../marketplace/integrate/service-hooks/services/uservoice.md)  
-- [Zendesk](../../marketplace/integrate/service-hooks/services/zendesk.md)  
+- [UserVoice](../../service-hooks/services/uservoice.md)  
+- [Zendesk](../../service-hooks/services/zendesk.md)  
 - [Developer testing tools scenarios and capabilities](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)  
 - [Run tests for desktop apps](../../manual-test/getting-started/run-manual-tests.md#run-desktop)  
   

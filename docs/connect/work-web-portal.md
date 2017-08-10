@@ -399,7 +399,7 @@ Below we show the admin context for the team project level.
 <li style="margin-bottom:2px">[Notifications](../collaborate/manage-team-notifications.md) or [Alerts](../work/track/alerts-and-notifications.md)</li>
 <li style="margin-bottom:2px">[Version Control (manage repository permissions)](../setup-admin/permissions.md#git-repository)</li>
 <li style="margin-bottom:2px">[Agent queues](../build-release/concepts/agents/pools-queues.md)</li>
-<li style="margin-bottom:2px">[Service hooks](../integrate/get-started/service-hooks/services/webhooks.md)</li>
+<li style="margin-bottom:2px">[Service hooks](../service-hooks/services/webhooks.md)</li>
 <li style="margin-bottom:2px">[Services](../build-release/concepts/library/service-endpoints.md)</li>
 <li style="margin-bottom:2px">[Test (manage test retention policies](../manual-test/getting-started/how-long-to-keep-test-results.md)</li>
 </ul>
