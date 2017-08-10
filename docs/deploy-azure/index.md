@@ -1,37 +1,46 @@
 ---
-title: CI/CD to Azure | VSTS & TFS    
-description: Learn how to continuously integrate and deploy to Azure services from VSTS and TFS.  
+title: Deploy to Azure index to content | Microsoft Docs    
+description: Learn how to deploy to Azure using VSTS. Tutorials, references, and other documentation.  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.topic: get-started-article  
+ms.topic: get-started-article
+ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
 ms.manager: douge
-ms.author: douge
-ms.date: 08/02/2017
+ms.author: kaelli
+ms.date: 07/20/2017
+layout: LandingPage
 ---
 
-# CI/CD to Azure
+# Deploy to Azure
 
-Learn how to deploy to Azure services from VSTS and TFS
+Visual Studio Team Services (VSTS) is Microsoft's DevOps solution for Azure. Whether you are developing a .NET, Java, Node, PHP, or a Python app, or whether you are targeting app services, virtual machines, or containers in Azure, VSTS helps you set up a highly customizable continuous integration (CI) and continuous delivery (CD) pipeline. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app of your choice to Azure services.
 
 ## 5-Minute Quickstarts
 
+Learn how to build your app and deploy it to your choice of Azure service.
 
-![Curated QS 1](_img/index/azure-web-app-card.png)   ![Curated QS 2](_img/index/azure-vm-card.png)   ![Curated QS 2](_img/index/azure-containers-card.png)   
+<table>
+<tr valign="middle" align="center">
+<td>![Web apps](../build-release/_img/index/app-service-web.png)<br/>[Web App](../build-release/apps/aspnet-core-to-azure-webapp.md)</td>
+<td>![VM](../build-release/_img/index/virtualmachine.png)<br/>[Windows VMs](../build-release/apps/aspnet-core-to-windows-vm.md)</td>
+<td>![Container](../build-release/_img/index/appservice.png)<br/>[Containers](../build-release/apps/aspnet-core-to-acs.md.md)</td>
+</td>
+</tr>
+</table>    
 
+## Step-by-Step Tutorials  
 
-## Tutorials  
-
-* LIST CURATED TUTORIALS_HERE
-* SOME MAY BE AZURE SERVICE CONTEXTUAL LINKS AS WELL
+* [Customize CD process](../build-release/tutorials/customize-cd-process.md)
+* [Deploy to multiple VMs](../build-release/tutorials/deploy-to-vms.md)
+* [Manage infrastructure as code](../build-release/tutorials/infra-as-code.md)
 
 ## Videos
 
-[![CURATED Video 1](_img/index/build-ci-cd-pipeline-vs-video.png)](https://channel9.msdn.com/Events/build-release/2017/P4105/player)   [![CURATED Video 2](_img/index/azure-stack-video.png)](#)   [![CURATED Video 3](_img/index/ci-cd-azure-container-service-video.png)](https://channel9.msdn.com/Events/Connect/2016/204/player)
-
-## Concepts  
-
-- LIST_CURATED_AZURE_SERVICE_CONCEPTS HERE
+[![Build pipeline via Visual Studio](../build-release/_img/index/build-ci-cd-pipeline-vs-video.png)](https://channel9.msdn.com/Events/build-release/2017/P4105/player)
 
 ## Resources
 
-- VSCOM_RESOURCE_LINKS_HERE
+- [What is Continuous Integration?](https://www.visualstudio.com/learn/what-is-continuous-integration/)  
+- [What is Continuous Delivery?](https://www.visualstudio.com/learn/what-is-continuous-delivery/)  
+- [What is DevOps?](https://www.visualstudio.com/learn/what-is-devops/)
+- [Build and release in VSTS](../build-release/index.md)
