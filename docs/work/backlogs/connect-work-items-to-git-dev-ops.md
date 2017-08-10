@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 07/19/2017
 ---
 
-#Drive Git development from a work item   
+# Drive Git development from a work item   
 
 **Team Services | TFS 2017**   
 

@@ -7,18 +7,20 @@ ms.topic: get-started-article
 ms.assetid: 2915605A-E3F1-4FE0-ACA5-7A4D734DB679
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/21/2017
+ms.date: 08/04/2017
 ---
 
 # Connect to Team Services with Power BI Content Pack
 
-<b>Team Services</b>
+**Team Services**
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 You can gain insight and analyze the progress and quality of your project by connecting Power BI to the data collected and stored for Team Services. 
 
 For a list of currently available data, see [What's available in the Power BI Team Services Connector](vso-pbi-whats-available-vs.md). 
 
-##Authorize Power BI to access your account data
+## Authorize Power BI to access your account data
 Your first step requires you to authorize Power BI to access your Team Services account. Choose between one of these two connection scenarios when connecting to Power BI:
 
 - **Scenario #1:**  You use the same Azure Active Directory (AAD) account to log in to Team Services and Power BI.
@@ -27,7 +29,7 @@ Your first step requires you to authorize Power BI to access your Team Services 
 
 Prior to performing either Scenario #1 or #2, make sure you have [permissions required to access the Analytics service](../analytics/analytics-security.md).
 
-###Scenario #1: Log in using AAD
+## Scenario #1: Log in using AAD
 
 1. Open a web browser and go to [http://powerbi.com](http://powerbi.microsoft.com/).
 
@@ -35,7 +37,8 @@ Prior to performing either Scenario #1 or #2, make sure you have [permissions re
 
 3. In the lower left corner, click **Get Data**.
 
-	<blockquote style="font-size: 13px"><b>Note: </b>If you don't have a Power BI account you can create one by entering your email address and click **Use it free**.</blockquote>  
+	>[!NOTE]  
+	>If you don't have a Power BI account you can create one by entering your email address and click **Use it free**. 
 
 4. Click **Get** under **Services** on the Get Data page.
 
@@ -47,21 +50,24 @@ Prior to performing either Scenario #1 or #2, make sure you have [permissions re
 
 6. Enter the names of the account and team whose data you want to connect to and click **Next**.
 
-	![Enter the account and project(s)](_img/connect-to-vs-team-services.png)  
+	> [!IMPORTANT]  
+	> For the **Account**, do not include  **visualstudio.com** (if the account is "corpx.visualstudio.com" just enter "corpx").  
 	
-	<blockquote style="font-size: 13px"><b>Important: </b>For the **Account**, do not include  **visualstudio.com** (if the account is "corpx.visualstudio.com" just enter "corpx"). </blockquote>  
+	![Enter the account and project(s)](_img/connect-to-vs-team-services.png)  
 
-	<blockquote style="font-size: 13px"><b>Note: </b>Wildcards are supported for the **Project** name. You can enter "&#42;" for every project in the account or, if you had projects with these names <i>"Test1", "Test2", "Test3", "App1", "App2"</i> and enter "Test&#42;" Power BI will retrieve data for the projects Test1, Test2 and Test3. However, you cannot enter something like "T&#42;st".</blockquote>  
+	> [!NOTE]  
+	> Wildcards are supported for the **Project** name. You can enter "&#42;" for every project in the account or, if you had projects with these names <i>"Test1", "Test2", "Test3", "App1", "App2"</i> and enter "Test&#42;" Power BI will retrieve data for the projects Test1, Test2 and Test3. However, you cannot enter something like "T&#42;st". 
 
 7. The next step specifies the authentication method. Only oAuth2 is supported. Click **Sign In** to continue.
 
-  ![Login to VS Team Services with oAuth2](_img/connect-to-vs-team-services-auth.png)  
+	![Login to VS Team Services with oAuth2](_img/connect-to-vs-team-services-auth.png)  
 
-	<blockquote style="font-size: 13px"><b>Important: </b>You won't be able to connect if your account administrator disabled third party application access via OAuth. <br/>When enabled, it appears as follows on the Administration > Control panel > Settings page: <br/>  
+	> [!IMPORTANT]  
+	> You won't be able to connect if your account administrator disabled third party application access via OAuth. When enabled, it appears as follows on the **Administration&gt;Control panel&gt;Settings page**:  
+	>
+	> ![Third-party oAuth enabled](_img/Screen5.png)  <br/><br/>
 
-	![Third-party oAuth enabled](_img/Screen5.png)  <br/><br/>
-
-	Contact your account administrator to determine if it needs to be enabled.</blockquote>  
+	> Contact your account administrator to determine if it needs to be enabled.  
 
 8. Successful authorization displays the following authorization dialog which allows Power BI to retrieve data from your account. Scroll down to the bottom and click **Accept**.
 
@@ -71,7 +77,7 @@ Prior to performing either Scenario #1 or #2, make sure you have [permissions re
 
 	At this point you can close your browser and come back to Power BI later. Power BI data refreshes every 24 hours by default. If you have a paid Power BI account, you can refresh the data as frequently as every hour.
 
-###Scenario #2: Log in when you use different credentials for Team Services and Power BI  
+## Scenario #2: Log in when you use different credentials for Team Services and Power BI  
 
 If you are using a Microsoft Account or different AAD credentials than you use for Power BI, you will need to supply those credentials to Team Services to get access to the data. This can happen in one of two ways. Either, the connect experience will prompt you for the credentials or, if you access Team Services often, your browser may have your most recent credentials cached. If the cached credentials match the account you are connecting to, it will work seamlessly, however, this caching can be confusing if the last account/username you used isn't the one you need to enable Power BI to access the Team Services data. This can lead to Access Denied errors. If you are getting access denied errors without any prompt for credentials, then you should use In Private in IE or Incognito in Chrome to bypass the cache.
 

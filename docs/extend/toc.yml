@@ -1,27 +1,19 @@
 - name: Overview
-  href: ./overview.md
+  href: ./index.md
 - name: Quickstarts
   items:
   - name: Write your first extension
     href: get-started/node.md
-- name: Tutorials
-  items:
-  - name: VSTS extension that talks with 3rd party service
-  - name: Build extension inside VSTS that's self contained
 - name: Samples
   items:
-  - name: REST
-  - name: TypeScript
   - name: Sample extensions
     href: develop/samples-overview.md
 - name: Concepts
   items:
-  - name: Extensions
-    items:
-    - name: Extension points
-      href: reference/targets/overview.md
-    - name: Contribution model
-      href: develop/contributions-overview.md
+  - name: Extension points
+    href: reference/targets/overview.md
+  - name: Contribution model
+    href: develop/contributions-overview.md
 - name: How to
   items:
   - name: Add a build task

@@ -181,7 +181,7 @@ Extensions are simple add-ons that you can use to customize and extend your DevO
 
 You build extensions using our RESTful API Library. You publish them to the Visual Studio Marketplace, where you can privately maintain them or share with millions of developers that use  Visual Studio, Team Services, and TFS.
 
-To learn more, visit the [Marketplace](https://marketplace.visualstudio.com) and [Overview of extensions](extend/overview.md).
+To learn more, visit the [Marketplace](https://marketplace.visualstudio.com) and [Overview of extensions](extend/index.md).
 
 ##REST APIs  
  

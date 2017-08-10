@@ -1,0 +1,134 @@
+- name: Work Items
+  href: index.md
+- name: Overview
+  items:
+  - name: About work items (NEW TOPIC) 
+    href: wit-overview.md
+- name: Quickstarts
+  items:
+  - name: Add a work item
+    href: ../backlogs/add-work-items.md
+- name: Tutorials
+  items:
+  - name: Manage bugs
+    href: ../backlogs/manage-bugs.md
+  - name: Manage issues or impediments
+    href: ../backlogs/manage-issues-impediments.md
+  - name: Use work item templates
+    href: /vsts/work/productivity/work-item-template?toc=/vsts/work/work-items/toc.json
+  - name: "Move, change, or delete items"
+    href: ../backlogs/remove-delete-work-items.md
+  - name: Copy/clone work items
+    href: ../backlogs/copy-clone-work-items.md
+  - name: Link work items
+    href: ../backlogs/add-link.md
+  - name: Bulk modify (web)
+    href: ../backlogs/bulk-modify-work-items.md
+  - name: Add tags to work items
+    href: ../track/add-tags-to-work-items.md
+  - name: Follow work
+    href: /vsts/collaborate/follow-work-items?toc=/vsts/work/work-items/toc.json
+- name: Concepts
+  items:
+  - name: About permissions and access
+    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/work-items/toc.json
+  - name: "Link types & link relationships"
+    href: ../track/link-work-items-support-traceability.md
+  - name: Work item form controls
+    href: ../concepts/work-item-form-controls.md
+  - name: Share work plans
+    href: /vsts/work/track/share-plans?toc=/vsts/work/work-items/toc.json
+  - name: New work item experience
+    href: /vsts/work/process/new-work-item-experience?toc=/vsts/work/work-items/toc.json
+  - name: Process guidance
+    items:
+    - name: Agile process
+      href: ../guidance/agile-process.md
+    - name: "Agile work item types & workflow"
+      href: ../guidance/agile-process-workflow.md
+    - name: Scrum process
+      href: ../guidance/scrum-process.md
+    - name: "Scrum work item types & workflow"
+      href: ../guidance/scrum-process-workflow.md
+    - name: CMMI process guidance
+      items:
+      - name: CMMI process
+        href: ../guidance/cmmi-process.md
+      - name: "CMMI work item types & workflow"
+        href: ../guidance/cmmi-process-workflow.md
+      - name: CMMI background
+        href: ../guidance/cmmi/guidance-background-to-cmmi.md
+      - name: Project management
+        href: ../guidance/cmmi/guidance-project-management.md
+        items:
+        - name: Project activities
+          href: ../guidance/cmmi/guidance-project-activities.md
+        - name: Project inception
+          href: ../guidance/cmmi/guidance-project-inception.md
+        - name: Plan a project
+          href: ../guidance/cmmi/guidance-plan-a-project-cmmi.md
+        - name: Manage change
+          href: ../guidance/cmmi/guidance-manage-change.md
+        - name: Manage risk
+          href: ../guidance/cmmi/guidance-manage-risks.md
+        - name: Iteration activities
+          href: ../guidance/cmmi/guidance-iteration-activities.md
+        - name: Plan an iteration
+          href: ../guidance/cmmi/guidance-plan-an-iteration-cmmi.md
+        - name: Manage issues
+          href: ../guidance/cmmi/guidance-manage-issues-cmmi.md
+      - name: Engineering
+        href: ../guidance/cmmi/guidance-engineering.md
+        items:
+        - name: Develop requirements
+          href: ../guidance/cmmi/guidance-develop-requirements.md
+        - name: Arrange requirements into a product plan
+          href: ../guidance/cmmi/arrange-requirements-into-a-product-plan.md
+        - name: Create a solution architecture
+          href: ../guidance/cmmi/guidance-create-solution-architecture.md
+        - name: Implement development tasks
+          href: ../guidance/cmmi/guidance-implement-development-tasks.md
+        - name: Build a product
+          href: ../guidance/cmmi/guidance-build-product.md
+      - name: Track bugs
+        href: ../guidance/cmmi/track-bugs.md
+- name: How-to guides
+  items:
+  - name: Bulk add or modify (Excel)
+    href: /vsts/work/office/bulk-add-modify-work-items-excel?toc=/vsts/work/work-items/toc.json
+  - name: Switch project or team focus
+    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/work-items/toc.json
+  - name: Email/print work items
+    href: /vsts/work/how-to/email-work-items?toc=/vsts/work/work-items/toc.json
+  - name: Define area paths
+    href: /vsts/work/customize/set-area-paths?toc=/vsts/work/work-items/toc.json
+  - name: Define iteration paths
+    href: /vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/work-items/toc.json
+  - name: "Manage permissions & access"
+    href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/work/work-items/toc.json
+  - name: "Add & share storyboard shapes"
+    href: ../office/add-share-storyboard-shapes.md
+- name: Reference
+  items:
+  - name: Work item field index
+    href: ../guidance/work-item-field.md
+  - name: "Code review & feedback field reference"
+    href: ../guidance/guidance-code-review-feedback-field-reference.md
+  - name: "Bugs, issues, & risks  field reference"
+    href: ../guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md
+  - name: Change request  field reference
+    href: ../guidance/cmmi/guidance-change-request-field-reference-cmmi.md
+  - name: Requirements field reference
+    href: ../guidance/cmmi/guidance-requirements-field-reference-cmmi.md
+  - name: Review meeting field reference
+    href: ../guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md
+- name: Resources
+  items:
+  - name: Adhoc work item search
+    href: ../../search/workitem/get-started.md
+  - name: Work item queries
+    href: ../track/using-queries.md
+  - name: Clients that support work tracking
+    href: ../../tools.md
+  - name: Productivity tips
+    href: ../productivity/productivity-tips.md

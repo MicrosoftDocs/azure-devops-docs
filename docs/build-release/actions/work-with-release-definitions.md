@@ -35,34 +35,51 @@ This topic shows you how to:
 
    ![Creating a new release definition](_img/work-with-release-definitions/create-new.png)
 
-<a name="create-template"></a>
-### Select a template
+   <a name="create-template"></a><a name="create-empty"></a>
+1. Select a template or start with an empty definition:
 
-If a template is relevant to your scenario, select it to
-automatically add some tasks and apply typical settings.
-For example, if you select the **Azure App Service Deployment**
-template, you automatically get a task to deploy your app
-to Azure App Services.
+   * If a template is relevant to your scenario, select it to
+   automatically add some tasks and apply typical settings.
+   For example, if you select the **Azure App Service Deployment**
+   template, you automatically get a task to deploy your app
+   to Azure App Services.
 
-<a name="create-empty"></a>
-### Start with an empty definition
+   * If there's no template for your scenario, select **Empty process** and then [add the tasks you need](#add-tasks).
 
-If there's no template for your scenario, select **Empty** and
-then [add the tasks you need](#add-tasks).
+   ![Selecting a template or empty process](_img/work-with-release-definitions/choose-template.png)
 
-<a name="create-addartifacts"></a>
-### Specify the artifacts, deployment trigger, and queue
+   <a name="create-addartifacts"></a>
+1. Specify the [artifacts](../concepts/definitions/release/artifacts.md#sources)
+   you want to deploy. Choose the type of source and specify
+   the details such as the project and build definition.
 
-1. Choose the type of source for your [artifacts](../concepts/definitions/release/artifacts.md#sources),
-   if appropriate, and specify the details such as the project and build definition.
+   ![Selecting the artifacts to deploy](_img/work-with-release-definitions/add-artifacts.png)
 
-1. If you want the release to start when a new build of the artifacts
-   is available, set (tick) the **Continuous deployment...** checkbox.
+1. Open the **Continuous deployment trigger** panel and set the [trigger](../concepts/definitions/release/triggers.md)
+   if you want a new release to be created when a new version of the source artifacts are available.
 
-1. Choose an [agent queue](../concepts/agents/pools-queues.md) if you don't want to use the **Hosted** queue.
+   ![Setting the continuous deployment trigger](_img/work-with-release-definitions/cd-trigger.png)
+
+   [What's the difference between a release definition and a release?](../concepts/releases/index.md)
+
+1. Check that the [environment deployment trigger](../concepts/definitions/release/triggers.md#env-triggers)
+   is set to automatically start a deployment when the release is created.
+   You can also specify other pre-deployment conditions here if required.
+
+   ![Setting the pre-deployment options](_img/work-with-release-definitions/set-conditions.png)
+
+1. Open the **Tasks** tab and select the default **Run on agent** item. In the properties
+   panel, under **Agent selection**, check that **Hosted** is selected to use the default 
+   queue and agent available in VSTS. If you want to use a different agent that you have 
+   [previously installed](../concepts/agents/pools-queues.md), such as an on-premises agent in TFS, select the agents queue.
+
+   ![Setting the deployment queue](_img/work-with-release-definitions/check-queue.png)
+
+1. If required, or if you selected the empty process template, you can now
+   [add more tasks](#add-tasks) and [additional environments](#add-envir).
 
 <a name="replicate-def"></a>
-### Replicate a definition
+### Replicate a definition or environment
 
 If your definition has a pattern that you want to replicate in other
 definitions, clone it or export it.
@@ -79,7 +96,9 @@ When you export a definition, you can import it afterwards. Then, if required, m
 <a name="use-template"></a>
 ### Create and use a template
 
-Create a template for a definition from an environment within the definition.
+Create a template for a definition from an environment within the definition by using the old definition editor.
+
+![Switching to the previoius release definition editor](_img/work-with-release-definitions/old-editor.png)
 
 ![Creating a template from an existing release definition](_img/work-with-release-definitions/save-template.png)
 
@@ -90,7 +109,7 @@ For more details, see [Environment templates in Release Management](../concepts/
 
 ### Use the REST API
 
-Create release definitions using the [Release Management REST API](../../integrate/overview.md).
+Create release definitions using the [Release Management REST API](../../integrate/index.md).
 
 <a name="add-envir"></a>
 ### Add more environments
@@ -99,27 +118,18 @@ A release definition, by default, contains a single [environment](../concepts/de
 Configure additional environments in a release definition to represent the
 target server(s) or locations where you will deploy your app.
 
-1. Open the **+ Add environment** list and choose **Create new environment**.
+1. Open the **+ Add** list and choose **New environment**.
 
-   ![Adding a new environment to a release definition](_img/work-with-release-definitions/add-environment.png)
+   ![Adding a new environment to a release definition](_img/work-with-release-definitions/new-environment.png)
 
-1. In the **Add new environment** dialog select a template for the new environment to automatically add
-   appropriate tasks, or create an empty environment with no default tasks.  
+1. The template selector panel opens. Follow [these steps](#create-template)
+   to configure the new environment.
 
-1. Select the [pre-deployment approval](../concepts/definitions/release/environments.md#approvals),
-   [trigger](../concepts/definitions/release/triggers.md#env-triggers), and
-   [queue](../concepts/agents/pools-queues.md) settings for the new environment.
-   You can quickly select users or groups as pre-deployment approvers
-   by typing part of the name.
+1. After you have created and configured your environments, [add tasks to them](#add-tasks).
 
-1. Choose **Create** and then edit the new environment name as required.
+>You can add environments using the [Release Management REST API](../../integrate/index.md).
 
-After you have created and configured your environments,
-[add tasks to them](#add-tasks).
-
->You can add environments using the [Release Management REST API](../../integrate/overview.md).
-
-<h3 id="clone-environment">Clone an environment</h3>
+<h3 id="clone-environment">Clone an existing environment</h3>
 
 A release definition often contains several environments such as
 development, testing, QA, and production. Typically, all of these
@@ -132,46 +142,60 @@ After you have added an environment to a release definition and configured
 it by adding tasks and setting the properties for each one, clone
 it to create another environment within the same definition.
 
-![Cloning an environment in a release definition](_img/work-with-release-definitions/clone-environment-01.png)
+You can clone individual environments directly within a definition in the **Pipeline** tab.
 
-Alternatively, select the environment you want to clone in
-the environments column, open the **+ Add environment** list,
-and choose **Clone selected environment**.
+![Cloning an existing environment directly](_img/work-with-release-definitions/clone-environment-03.png)
 
-![Cloning an environment in a release definition](_img/work-with-release-definitions/clone-environment-02.png)
+Alternatively, select the environment you want to clone, open the **+ Add** list,
+and choose **Clone environment**.
+
+![Cloning a selected environment](_img/work-with-release-definitions/clone-environment-04.png)
 
 The cloned environment has the same tasks, task properties, and
 configuration settings as the original.
 
-The **Add new environment** dialog that opens lets you change the
+Select the cloned environment to open the properties panel, and update the
 [pre-deployment approval](../concepts/definitions/release/environments.md#approvals),
 [trigger](../concepts/definitions/release/triggers.md#env-triggers), and
-[queue](../concepts/agents/pools-queues.md) settings for the cloned environment.
+[queue](../concepts/agents/pools-queues.md) settings for the cloned environment as required.
 
 <h2 id="define-processes">Define processes in an environment</h2>
 
 The deployment steps in an [environment](../concepts/definitions/release/environments.md)
-are described using [tasks](../concepts/process/tasks.md).
+are described using [task phases](../concepts/process/phases.md) and [tasks](../concepts/process/tasks.md).
 
 <h3 id="add-tasks">Add tasks</h3>
 
-Select an environment in the definition and choose **+ Add tasks**. By default,
-the task selector shows tasks generally used in a release definition.
-More tasks are available in the other tabs of the **Task catalog** dialog.
-A link at the bottom of the list takes you to
+The **Tasks** tab of the release definition editor shows a list of the task phases and
+tasks defined for each environment. Open the tasks list for an environment by
+choosing the "phases and tasks" link in the environment, or by selecting the environment
+name in the **Tasks** drop-down list.
+
+![Opening the tasks tab](_img/work-with-release-definitions/goto-tasks.png) 
+
+By default, unless you chose the **Empty process** template when you created your release definition,
+the definition will contain a **Run on agent** phase. Add tasks to a phase by choosing the **+**
+icon in the phase item to open the **Add tasks** panel. Select the type of task you need (or choose
+**All**), or search for a task by name. When you find the task, choose the **Add** button
+that appears when you select the task.
+
+![Adding tasks to a phase](_img/work-with-release-definitions/add-tasks.png) 
+
+> A link at the top of the list takes you to
 [Visual Studio Marketplace](https://marketplace.visualstudio.com/VSTS)
 where you can download and install additional tasks.
 
-You can add tasks specifically for execution on the release agent,
-on the server, or on a deployment group.
+You can add tasks specifically for execution on the deployment agent,
+on a deployment group, or on the server without using an agent by 
+adding the appropriate type of [task phase](../concepts/process/phases.md).
 
-![Adding a new task phase](_img/work-with-release-definitions/task-phases.png)
+![Adding a new task phase](_img/work-with-release-definitions/add-phase.png)
 
 For more details, see [Environments](../concepts/definitions/release/environments.md)
 and [Phases in Build and Release Management](../concepts/process/phases.md).
 
 >You can add tasks to an environment using the
-[Release Management REST API](../../integrate/overview.md).
+[Release Management REST API](../../integrate/index.md).
 
 <h3 id="task-groups">Use task groups</h3>
 
@@ -230,7 +254,7 @@ definition settings, see:
 
 ### How do I programmatically create a release definition?
 
-[Release Management REST API](../../integrate/overview.md)
+[Release Management REST API](../../integrate/index.md)
 
 [!INCLUDE [qa-agents](../_shared/qa-agents.md)]
 

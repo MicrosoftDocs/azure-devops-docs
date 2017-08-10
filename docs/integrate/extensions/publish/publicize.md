@@ -15,7 +15,7 @@ The [Visual Studio Marketplace](https://marketplace.visualstudio.com) is a singl
 
 This page covers the required steps to make your integration or extension listing publicly available in the Marketplace. 
 
-* Learn more about developing an [extension for Visual Studio Team Services](../../../extend/overview.md)
+* Learn more about developing an [extension for Visual Studio Team Services](../../../extend/index.md)
 * Learn more about [packaging and publishing an extension to the Marketplace](./overview.md)
 * Learn more about [packaging and publishing an integration to the Marketplace](./integration.md)
 

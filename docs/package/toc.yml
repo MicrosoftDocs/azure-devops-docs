@@ -1,5 +1,13 @@
 - name: Package Management
-  href: overview.md
+  href: index.md
+- name: Overview
+  items:
+  - name: About Package Management
+    href: overview.md
+  - name: Collaborate with packages
+    href: collaborate-with-packages.md
+  - name: About release views
+    href: feeds/about-release-views.md
 - name: Quickstarts
   items:
   - name: Install and license Package Management
@@ -68,10 +76,12 @@
       href: ./maven/publish.md
     - name: Install a Maven project
       href: ./maven/install.md
-- name: Concepts
-  items:
-  - name: Collaborate more and build faster
-    href: collaborate-with-packages.md
-  - name: Learn about release views
-    href: feeds/about-release-views.md
-- name: Reference
+  - name: Gradle
+    items:
+    - name: Use Gradle with VSTS
+      href: ./gradle/use-package-gradle.md
+    - name: Publish a Gradle package
+      href: ./gradle/publish-package-gradle.md
+     
+
+

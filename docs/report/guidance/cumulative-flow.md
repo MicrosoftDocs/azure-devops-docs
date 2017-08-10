@@ -299,7 +299,7 @@ For additional information, see these resources:
 <li style="margin-bottom:2px">[Expedite work](../../work/kanban/expedite-work.md)</li>
 <li style="margin-bottom:2px">[Definition of done](../../work/kanban/definition-of-done.md)</li>
 <li style="margin-bottom:2px">[Customize cards](../../work/customize/customize-cards.md)</li>
-<li style="margin-bottom:2px">[Card reordering](../../work/kanban/kanban-basics.md#card-reorder-setting)</li>
+<li style="margin-bottom:2px">[Card reordering](../../work/customize/reorder-cards.md)</li>
 </ul>
 </div>
 
@@ -314,7 +314,7 @@ Remember that the CFD chart is based on data collected for a specific team.
 
 You navigate to your team context from the top navigation bar. The method changes slightly depending on the platform/version you work from and the features you have enabled.     
 
-To switch your team focus, see [Work in the web portal, Switch team project or team focus](../../connect/work-web-portal.md#switch-team-context). 
+To switch your team focus, see [Work in the web portal, Switch team project or team focus](../../work/how-to/switch-team-context-work.md). 
 
 Need more information about teams? See [Multiple teams](../../work/scale/multiple-teams.md) and [Manage team assets](../../work/scale/manage-team-assets.md). 
 

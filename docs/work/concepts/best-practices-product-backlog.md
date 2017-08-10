@@ -7,10 +7,10 @@ ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 06/22/2017
+ms.date: 08/07/2017
 ---
 
-# Best practices to manage your product backlog
+# Grooming your backlog  
 
 **Team Services | TFS 2017 | TFS 2015 | TFS 2013**
  

@@ -334,7 +334,7 @@ The method used to customize a team project depends on the process model you use
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Service hooks </p>
 <ul style="padding-left:20px">
- <li style="margin-bottom:2px">[Integrate with service hooks](../../integrate/get-started/service-hooks/get-started.md)</li>
+ <li style="margin-bottom:2px">[Integrate with service hooks](../../service-hooks/index.md)</li>
  <li style="margin-bottom:2px">[Campfire](../../collaborate/campfire.md) (Team Services)</li>
  <li style="margin-bottom:2px">[Flowdock](../../collaborate/flowdock.md) (Team Services)</li>
  <li style="margin-bottom:2px">[HipChat](../../collaborate/flowdock.md) (Team Services)</li>

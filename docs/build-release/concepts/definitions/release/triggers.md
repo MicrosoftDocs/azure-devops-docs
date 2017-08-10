@@ -14,7 +14,9 @@ ms.date: 10/20/2016
 
 [!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
 
-You can configure when releases should be created, and when those releases should be deployed to environments. The former is configured through **release triggers**, and the latter through **environment triggers** - both in a release definition.
+You can configure when releases should be created, and when those releases should be deployed to environments.
+The former is configured through [release triggers](#release-triggers),
+and the latter through [environment triggers](#env-triggers) - both in a release definition.
 
 <h2 id="release-triggers">Release (continuous deployment) triggers</h2>
 
@@ -50,7 +52,6 @@ when a release is created by a continuous deployment trigger, based on:
   Note that, with scheduled triggers, a new release is created even if a newer version of artifact is not available since the last release.
 
   ![The scheduled trigger conditions settings](_img/trigger-02.png)
-
 
 * **The result of deploying to a previous environment in the pipeline**.
   Use this setting if you want the release to be first deployed and validated in

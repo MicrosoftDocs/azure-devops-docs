@@ -17,7 +17,7 @@ ms.date: 07/20/2017
 **UPDATE - To Be Completed - Make into a Tutorial **
 
 
-See [Access levels](../../concepts/access-levels.md).
+See [Access levels](../../security/access-levels.md).
 
 
 >[!IMPORTANT]  

@@ -1,4 +1,4 @@
-- name: Query Guidance
+- name: Queries
   href: index.md
 - name: Overview
   items:
@@ -10,14 +10,12 @@
     href: search-box-queries.md
 - name: Tutorials
   items:
-  - name: Add & run queries
-    href: queries-preview.md
+  - name: Organize and run managed queries
+    href: organize-view-run-queries.md
   - name: Triage work items
-    href: queries-preview.md
+    href: triage-work-items.md
   - name: Edit a query
     href: using-queries.md
-  - name: Copy as HTML 
-    href: ../backlogs/copy-clone-work-items.md#html
 - name: Samples
   items:
   - name: Query by title, ID, or description
@@ -41,22 +39,24 @@
 - name: Concepts
   items:
   - name: Share work plans
-    href: share-plans.md
-- name: How-to guides
+    href: /vsts/work/share-plans?toc=/vsts/work/track/toc.json
+- name: How-to Guides
   items:
   - name: Switch project or team focus
-    href: ../how-to/switch-team-context-work.md
+    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/track/toc.json
   - name: Change column options
-    href: ../how-to/set-column-options.md
+    href: /vsts/work/how-to/set-column-options?toc=/vsts/work/track/toc.json
   - name: Email/print work items
-    href: ../how-to/email-work-items.md
+    href: /vsts/work/how-to/email-work-items?toc=/vsts/work/track/toc.json
   - name: "Filter, backlogs, boards, & queries"
-    href: ../how-to/filter-backlog-or-board.md 
+    href: /vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/track/toc.json
+  - name: Copy as HTML 
+    href: /vsts/work/backlogs/copy-clone-work-items#html?toc=/vsts/work/track/toc.json
 - name: Reference
   items:
   - name: "Query fields, operators & macros"
     href: query-operators-variables.md
+  - name: Work item field index
+    href: /vsts/work/guidance/work-item-field?toc=/vsts/work/track/toc.json
   - name: WIQL syntax
     href: ../../reference/wiql-syntax.md
-  - name: Work item field index
-    href: ../guidance/work-item-field.md

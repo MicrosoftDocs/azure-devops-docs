@@ -135,7 +135,7 @@ Select their access level, based on the features they need.
 	<li>**[Stakeholder](https://www.visualstudio.com/team-services/compare-features/)**: Unlimited users who get Stakeholder features 
 	<p>
 	<p>For users who just need features like working with your backlog, work items, and queries. 
-	Learn about [working as a stakeholder](../../quickstart/get-started-stakeholder.md). 
+	Learn about [working as a stakeholder](../../work/connect/work-as-a-stakeholder.md). 
 	<p>
 	<li>**[Visual Studio/MSDN Subscriber](https://www.visualstudio.com/team-services/compare-features/)**: 
 	Unlimited users whose [Visual Studio subscriptions include Team Services as a benefit](https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/). 
@@ -276,7 +276,7 @@ subscribers who have Team Services as a benefit.
 
 For example, if you select "Visual Studio/MSDN Subscriber", 
 but you don't have a valid and active Visual Studio subscription, you can only 
-[work as a stakeholder](../../quickstart/get-started-stakeholder.md).
+[work as a stakeholder](../../work/connect/work-as-a-stakeholder.md).
 
 <a name="EligibleMSDNSubscriptions"></a>
 
@@ -337,7 +337,7 @@ learn [how to add your "work or school account" to your subscription](link-msdn-
 
 Still having problems? Try these 
 [troubleshooting tips](http://blogs.msdn.com/b/visualstudioalm/archive/2014/03/19/visual-studio-online-best-practices-troubleshooting-issues-with-the-quot-eligible-msdn-subscriber-license-type.aspx). 
-If you need more help, contact [Support](https://www.visualstudio.com/support/support-overview-vs).
+If you need more help, contact [Support](https://www.visualstudio.com/support/).
 
 <a name="why-access-changed"></a>
 ####Q:  Why do Visual Studio subscribers' access levels change after they sign in?
@@ -351,7 +351,7 @@ no matter the current access level that's assigned to them.
 ####Q:  What happens if a user's subscription expires?
 
 A:  If no other access levels are available, they'll 
-[work as stakeholders](../../quickstart/get-started-stakeholder.md). 
+[work as stakeholders](../../work/connect/work-as-a-stakeholder.md). 
 To restore access, they must renew their subscription.
 
 <a name="extension-transition"></a>
@@ -406,10 +406,10 @@ Learn [how to buy Visual Studio subscriptions](../../marketplace/vs-subscription
 
 A:  This might happen for different reasons, 
 but meanwhile, you or your team member can continue 
-[working as a stakeholder](../../quickstart/get-started-stakeholder.md):
+[working as a stakeholder](../../work/connect/work-as-a-stakeholder.md):
 
 *	Your or your team member's Visual Studio subscription has expired. 
-Meanwhile, they'll [work as stakeholders](../../quickstart/get-started-stakeholder.md), 
+Meanwhile, they'll [work as stakeholders](../../work/connect/work-as-a-stakeholder.md), 
 or you can give them Basic access until they renew their subscriptions.
 After they sign in, Team Services will restore their access automatically.
 

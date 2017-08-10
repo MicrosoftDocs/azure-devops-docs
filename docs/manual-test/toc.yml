@@ -2,30 +2,18 @@
   items:
   - name: Overview
     items:
-    - name: Manual and exploratory testing
-      href: index.md
+    - name: About manual and exploratory testing
+      href: overview.md
   - name: Quickstarts
     items:
-    - name: Team Services and TFS
-      items:
-      - name: Test from the Kanban board
-        href: ../work/kanban/add-run-update-tests.md
-      - name: Create a test plan
-        href: getting-started/create-a-test-plan.md
-      - name: Create test cases
-        href: getting-started/create-test-cases.md
-      - name: Run manual tests
-        href: getting-started/run-manual-tests.md
-    - name: Microsoft Test Manager
-      items:
-      - name: Guidance for MTM usage
-        href: mtm/guidance-mtm-usage.md
-      - name: Connect to a team project
-        href: mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md
-      - name: Plan tests with MTM
-        href: mtm/plan-manual-tests-with-microsoft-test-manager.md
-      - name: Run tests with MTM
-        href: mtm/run-manual-tests-with-microsoft-test-manager.md
+    - name: Test from the Kanban board
+      href: ../work/kanban/add-run-update-tests.md?toc=/vsts/manual-test/toc.json
+    - name: Create a test plan
+      href: getting-started/create-a-test-plan.md
+    - name: Create test cases
+      href: getting-started/create-test-cases.md
+    - name: Run manual tests
+      href: getting-started/run-manual-tests.md
     - name: "Test & Feedback extension"
       items:
       - name: Install the extension
@@ -36,26 +24,48 @@
         href: standalone-mode-exploratory-testing.md
   - name: How-to Guides
     items:
-    - name: Team Services and TFS
+    - name: Track test status
+      href: getting-started/track-test-status.md
+    - name: Delete test artifacts
+      href: ../work/backlogs/remove-delete-work-items.md?toc=/vsts/manual-test/toc.json
+    - name: Perform user acceptance testing
+      href: getting-started/user-acceptance-testing.md
+    - name: Test different configurations
+      href: test-different-configurations.md
+    - name: Share steps between test cases
+      href: mtm/share-steps-between-test-cases.md
+    - name: Repeat a test with different data
+      href: repeat-test-with-different-data.md
+    - name: Collect diagnostic data
+      href: collect-diagnostic-data.md
+    - name: Manage test results
+      href: getting-started/how-long-to-keep-test-results.md
+    - name: "Test & Feedback extension"
       items:
-      - name: Track test status
-        href: getting-started/track-test-status.md
-      - name: Delete test artifacts
-        href: https://www.visualstudio.com/docs/work/backlogs/remove-delete-work-items#delete-test
-      - name: Perform user acceptance testing
-        href: getting-started/user-acceptance-testing.md
-      - name: Test different configurations
-        href: test-different-configurations.md
-      - name: Share steps between test cases
-        href: mtm/share-steps-between-test-cases.md
-      - name: Repeat a test with different data
-        href: repeat-test-with-different-data.md
-      - name: Collect diagnostic data
-        href: collect-diagnostic-data.md
-      - name: Manage test results
-        href: getting-started/how-long-to-keep-test-results.md
+      - name: Explore work items
+        href: explore-workitems-exploratory-testing.md
+      - name: Add to existing bugs
+        href: add-to-bugs-exploratory-testing.md
+      - name: Get insights from tests
+        href: insights-exploratory-testing.md
+      - name: Request stakeholder feedback
+        href: stakeholder/request-stakeholder-feedback.md
+      - name: Provide stakeholder feedback
+        href: stakeholder/provide-stakeholder-feedback.md
+      - name: Get voluntary stakeholder feedback
+        href: stakeholder/voluntary-stakeholder-feedback.md
+      - name: Track stakeholder feedback requests
+        href: stakeholder/track-stakeholder-feedback.md
     - name: Microsoft Test Manager
       items:
+      - name: Guidance for MTM usage
+        href: mtm/guidance-mtm-usage.md
+      - name: Connect to a team project
+        href: mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md
+      - name: Plan tests with MTM
+        href: mtm/plan-manual-tests-with-microsoft-test-manager.md
+      - name: Run tests with MTM
+        href: mtm/run-manual-tests-with-microsoft-test-manager.md
       - name: Record and play back tests
         href: getting-started/record-play-back-manual-tests.md
       - name: Explore your app
@@ -66,47 +76,21 @@
         href: mtm/test-configurations-specifying-test-platforms.md
       - name: Test Windows Store apps
         href: mtm/testing-windows-store-apps.md
-    - name: "Test & Feedback extension"
-      items:
-      - name: Explore work items
-        href: explore-workitems-exploratory-testing.md
-      - name: Add to existing bugs
-        href: add-to-bugs-exploratory-testing.md
-      - name: Get insights from tests
-        href: insights-exploratory-testing.md
-      - name: Get stakeholder feedback
-        items:
-        - name: Request feedback
-          href: stakeholder/request-stakeholder-feedback.md
-        - name: Provide feedback
-          href: stakeholder/provide-stakeholder-feedback.md
-        - name: Get voluntary feedback
-          href: stakeholder/voluntary-stakeholder-feedback.md
-        - name: Track requests
-          href: stakeholder/track-stakeholder-feedback.md
   - name: Reference
     items:
-    - name: Team Services and TFS
-      items:
-      - name: REST API for test management
-        href: https://www.visualstudio.com/docs/integrate/api/test/overview
-    - name: "Test & Feedback extension"
-      items:
-      - name: Unable to connect
-        href: https://www.visualstudio.com/en-us/docs/work/reference/error/tf31002-unable-connect-tfs
+    - name: REST API for test management
+      href: ../integrate/index.md
+    - name: Unable to connect
+      href: ../work/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/manual-test/toc.json
   - name: Resources
     items:
-    - name: Team Services and TFS
-      items:
-      - name: Blog posts for testing
-        href: https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/
-      - name: Blog posts for test management
-        href: https://blogs.msdn.microsoft.com/visualstudioalm/tag/test-management/
-    - name: Microsoft Test Manager
-      items:
-      - name: Using Microsoft Test Manager
-        href: https://msdn.microsoft.com/en-us/library/jj635157.aspx
-    - name: "Test & Feedback extension"
-      items:
-      - name: Posts on the ALM blog
-        href: https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
+    - name: Get Stakeholder feedback
+      href: ../collaborate/feedback/index.md 
+    - name: Using Microsoft Test Manager
+      href: https://msdn.microsoft.com/en-us/library/jj635157.aspx
+    - name: Blog posts for testing
+      href: https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/
+    - name: Blog posts for test management
+      href: https://blogs.msdn.microsoft.com/visualstudioalm/tag/test-management/
+    - name: "Test & Feedback posts"
+      href: https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4

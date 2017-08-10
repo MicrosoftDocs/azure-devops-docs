@@ -138,7 +138,7 @@ Here are some useful tips when working with the Kanban board:
 
 
 
-If your new to Team Services or TFS and want to understand what you can customize, see [Customize your work tracking experience](../customize/customize-work.md). 
+if you're new to Team Services or TFS and want to understand what you can customize, see [Customize your work tracking experience](../customize/customize-work.md). 
 
 
 

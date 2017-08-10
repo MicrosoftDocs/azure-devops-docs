@@ -366,7 +366,7 @@ You manage templates from the team admin context. All templates are defined for 
 
 <img src="_img/wit-templates-open-team-admin-context.png" alt="Open team admin context" style="border: 1px solid #CCCCCC;" />  
 
-<p>If you're not a team administrator, [get added as one](../scale/add-team-administrator.md). Only team or project administrators can change team templates. </p>
+<p>If you're not a team administrator, [get added as one](../scale/manage-team-assets.md#add-team-admin). Only team or project administrators can change team templates. </p>
 
 <li>
 <p>Click Templates under the Work hub.</p> 

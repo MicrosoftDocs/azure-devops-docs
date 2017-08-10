@@ -16,7 +16,8 @@ ms.date: 01/23/2017
 
 With user-focused features, you gain quick access to the work you're most interested in. The features show-cased below are available from Team Services and the web portal for TFS. They focus on features supported through the web portal. Most of these features operate based on your logged-in user account.
 
-<blockquote style="font-size: 13px"><b>Feature availability: </b>The following features are available from Team Services or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. Visit the [Visual Studio Downloads](https://www.visualstudio.com/downloads/download-visual-studio-vs) page to get the latest TFS update. </blockquote>
+> [!NOTE]  
+> <b>Feature availability: </b>The following features are available from Team Services or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. Visit the [Visual Studio Downloads](https://www.visualstudio.com/downloads/download-visual-studio-vs) page to get the latest TFS update. 
 
 
 <div style="float:left;width:240px;margin:3px;font-size:90%">
@@ -395,12 +396,7 @@ You [set your account preferences](../setup-admin/account-preferences.md) throug
 
 ![Team Services, My Profile link on Account menu](../setup-admin/_img/account-prefs/open-profile-team-services.png)   
 
+[!INCLUDE [temp](../_shared/help-support-shared.md)]
 
-<a id="provide-feedback"></a>
-### Feedback and support  
-
-We welcome your feedback. 
-
-Send suggestions via **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**, and follow us on **[Twitter](https://twitter.com/VSTeam) @VSTeam**.  
 
  

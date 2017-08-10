@@ -1,5 +1,5 @@
-- name: Overview (UPDATE)
-  href: ./overview.md
+- name: Overview
+  href: ./index.md
 - name: Quickstarts
   items:
   - name: .NET - Create a bug (TODO)
@@ -10,25 +10,19 @@
     href: quickstarts/work-item-quickstart.md
   - name: Integrate with Jenkins (TODO)
     href: quickstarts/jenkins-integrate-quickstart.md
-- name: Tutorials
-  items:
-  - name: "Tutorial #1 (TODO)"
-    href: ./tutorials/tutorial-one.md
-  - name: "Tutorial #2 (TODO)"
-    href: ./tutorials/tutorial-two.md
 - name: Samples
   items:
-  - name: REST (TODO/UPDATE)
+  - name: REST APIs
     href: get-started/rest/samples.md
-  - name: .NET (UPDATE)
+  - name: .NET client libraries
     href: get-started/client-libraries/samples.md
 - name: Concepts
   items:
-  - name: .NET Client Libraries
+  - name: .NET client libraries
     href: ./concepts/dotnet-client-libraries.md
   - name: Authentication
     href: ./get-started/authentication/authentication-guidance.md
-  - name: Service Hooks
+  - name: Service hooks
     href: ./concepts/service-hooks.md
   - name: REST API versioning
     href: ./concepts/rest-api-versioning.md
@@ -37,32 +31,24 @@
 - name: How to
   items:
   - name: Call a REST API
-    href: how-to/call-rest-api.md
+    href: https://review.docs.microsoft.com/en-us/rest/api/vsts/?branch=master
   - name: Authenticate with PATs
     href: get-started/authentication/pats.md
   - name: Authenticate with OAuth 2.0
     href: get-started/authentication/oauth.md
-  - name: Service hooks
-    items:
-    - name: Using service hooks
-      href: ../marketplace/integrate/service-hooks/get-started.md
-    - name: Create subscriptions programmatically
-      href: get-started/service-hooks/create-subscription.md
+  - name: Create service hooks subscriptions programmatically
+    href: ../service-hooks/create-subscription.md?toc=/vsts/integrate/toc.json
 - name: Reference
   items:
   - name: .NET client libraries
-    href: get-started/client-libraries/dotnet.md
-    items:
-    - name: Reference repo
-      href: https://review.docs.microsoft.com/en-us/vsts-dotnet/api/microsoft.teamfoundation.framework.common?branch=master
+    href: https://review.docs.microsoft.com/en-us/vsts-dotnet/api/microsoft.teamfoundation.framework.common?branch=master
   - name: Service hooks
     items:
-    - name: Consumer and action reference (COMBINE?)
-      href: get-started/service-hooks/consumers.md
-    - name: Events reference (COMBINE?)
-      href: get-started/service-hooks/events.md
+    - name: Service hooks consumers and actions
+      href: ../service-hooks/consumers.md?toc=/vsts/integrate/toc.json
+    - name: Service hooks events
+      href: ../service-hooks/events.md?toc=/vsts/integrate/toc.json
   - name: REST APIs
-    href: ./rest-api-overview.md
     items:
     - name: Reference repo
       href: https://review.docs.microsoft.com/en-us/rest/api/vsts/?branch=master

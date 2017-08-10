@@ -105,7 +105,7 @@ Service hooks enable you to perform tasks on other services when events happen w
 
 The following services are available as the target of service hooks. To learn about others apps and services that integrate with our Team Services or TFS, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com)
 
-For the lastest set of supported services, see [Integrate with service hooks](integrate/get-started/service-hooks/get-started.md)
+For the lastest set of supported services, see [Integrate with service hooks](service-hooks/index.md)
 
 
 ### Cloud-hosted services based on usage   
@@ -124,15 +124,6 @@ Azure provides a number of cloud-hosted services to support application developm
 To browse Azure's directory of integrated services, features, and bundled suites, see [Azure products](https://azure.microsoft.com/services/).  
 
 For continuous delivery to Azure from Team Services, see [Automatically build and deploy to Azure web apps or cloud services](https://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso/). 
-
-
-## On-premises TFS services  
-
-When you deploy TFS, you can also configure the following servers or integration points: 
-
-- **Build server**: supports on-premise builds, you can use a combination of on-premises builds and cloud-hosted builds   
-- **SQL Server and SQL Analysis Server**: supports SQL Server Reports and the ability to create Excel pivot charts based on the cube 
-- **SharePoint integration**: provides support for a team project portal which provides dashboards, a wiki, document repository, and other SharePoint features. 
 
 
 ## Administrative services  

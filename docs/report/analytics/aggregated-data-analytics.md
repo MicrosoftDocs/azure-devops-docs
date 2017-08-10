@@ -6,10 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: 8D81FEFD-F432-4E10-A415-9167B5FE9A57 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 08/04/2017
 ---
 
-#Aggregate data   
+# Aggregate data   
 
 **Team Services**  
 
@@ -21,7 +21,9 @@ There are two ways to aggregate data. The simple approach, which doesn't use agg
 
 In this topic, the basic root URL is constructed as:
 
-```https://[collection name].analytics.visualstudio.com/DefaultCollection/_odata``` 
+```
+https://[collection name].analytics.visualstudio.com/DefaultCollection/_odata
+``` 
 
 
 All additional URL parts are specified as an additional part of the query string as shown in the examples below.   
@@ -43,25 +45,27 @@ For comparison, using data aggregations you enter this query:
 For simple counts, the non-aggregation approach has a simpler syntax.  
  
 
-<blockquote style="font-size: 13px">**Note:  **There is one other difference in these approaches: using ```$count``` returns a scalar value, that is a single number. Using aggregation extensions returns a formatted JSON result.  
-</blockquote>   
+>[!NOTE]  
+>There is one other difference in these approaches: using ```$count``` returns a scalar value, that is a single number. Using aggregation extensions returns a formatted JSON result.  
+  
 
 You can also filter what you want to count. For example, if you want to know how many work items are in the "In Progress" state, specify this query:
 
     /WorkItems/$count?$filter=State eq 'In Progress'
 
-##Aggregate data using aggregation extensions
+## Aggregate data using aggregation extensions
 
 Now that you've seen how to do basic aggregations with ```count```, let's look at more complex examples that help solve real-world problems.  
 
-<blockquote style="font-size: 13px">**Note:  **At this time, aggregation extensions are not supported by any of our client tools although they are being looked at. We've come up with a simple workaround which is explained in the Power BI client documentation.  
-</blockquote>   
+>[!NOTE]  
+>At this time, aggregation extensions are not supported by any of our client tools although they are being looked at. We've come up with a simple workaround which is explained in the Power BI client documentation.  
+ 
 
 First, using OData, you trigger aggregations using the ```$apply``` token at the end of the URL. The basic format is:
 
     /[entity name]?$apply=aggregate([column to aggregate] with [aggregation type] as [new column name])
 
-###Additional examples 
+### Additional examples 
 
 The following are some concrete examples of this functionality:
 
@@ -73,9 +77,8 @@ Work items can also be counted by using the following:
 
     /WorkItems?$apply=aggregate(WorkItemId with countdistinct as CountOfWorkItems)
 
-
-<blockquote style="font-size: 13px">**Note:  **The column "Count" is provided by the model to make it easier to do counts and work with client tools because the underlying OData implementation does not currently support the ```$count``` virtual property within the aggregation extensions. Once we implement this functionality, we'll update this document.  
-</blockquote>   
+>[!NOTE]  
+>The column "Count" is provided by the model to make it easier to do counts and work with client tools because the underlying OData implementation does not currently support the ```$count``` virtual property within the aggregation extensions. Once we implement this functionality, we'll update this document.  
 
 
 **Return the count of areas**
@@ -141,7 +144,7 @@ For example, suppose you wanted to know how many areas are in each project. In O
 
     /Areas?$apply=groupby((Project/ProjectName), aggregate(AreaId with countdistinct as CountOfAreas))
 
-###Filter aggregated results
+### Filter aggregated results
 
 You can also filter aggregated results, however they are applied slightly differently than when you are not using aggregation. The analytics service evaluates filters along a pipe so it's always best to do the most discrete filtering first. 
 
@@ -150,8 +153,9 @@ Filters look like the following:
     /WorkItems?$apply=filter(Iteration/IterationName eq 'Sprint 89')/filter(WorkItemType eq 'User Story')/groupby((State), aggregate(Count with sum as Count))
 
 
-<blockquote style="font-size: 13px">**Note:  **You don't have to provide the ```groupby``` clause. You can simply use the ```aggregate``` clause to return a single value.  
-</blockquote>   
+>[!NOTE]  
+>You don't have to provide the ```groupby``` clause. You can simply use the ```aggregate``` clause to return a single value.  
+
 
 ###Multiple aggregations in a single call
 

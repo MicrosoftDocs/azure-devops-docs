@@ -16,9 +16,10 @@ ms.date: 3/22/2017
 **Team Services**   
 
 >[!NOTE]    
-><b>Feature availability: </b>The New queries experience is in preview for Team Services and available when you enable it from the web portal.     
+><b>Feature availability: </b>The New queries experience is in preview for Team Services and available when you enable it from the web portal. You enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.     
+   
+We have launched a preview version of a modernized query experience that you access from the **Work>Queries** page in your Team Services account. 
 
-We have launched a preview version of a modernized Queries Hub in your Team Services account. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.
 
 ## What's new in the Queries hub
 

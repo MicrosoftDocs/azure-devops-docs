@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 91C6424B-3C3D-4773-B252-C627A5CE7C6D 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 08/04/2017
 ---
 
 
@@ -19,8 +19,10 @@ ms.date: 08/11/2016
 In general, the order of authentication options should be the following (in order from most secure to least secure): Azure Active Directory (**AAD**) then Personal Access Tokens (**PAT**s) then Alternate Access Credentials (**AAC**s).
 
 <!---
-<blockquote style="font-size: 13px">**Note:**  If you are using Team Foundation Server, you should use Integrated Authentication wherever possible as that is the most secure authentication scheme. 
-</blockquote>
+
+> [!NOTE]  
+> If you are using Team Foundation Server, you should use Integrated Authentication wherever possible as that is the most secure authentication scheme.
+ 
 --> 
 
 ## Azure Active Directory (AAD) 

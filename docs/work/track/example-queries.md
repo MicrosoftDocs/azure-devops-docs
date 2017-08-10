@@ -33,9 +33,8 @@ For the mechanics of constructing and saving queries, see [Use the query editor 
 
 If you are looking for a specific work item, using the adhoc query or search box query may be your best bet. If you want to generate a list of work items to triage, update, chart, or share with others, then use a managed query. 
  
- 
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;margin-bottom:0px;text-align:center;">Get started with queries</p>
+### Get started with queries< 
+- [Organize and run managed queries](organize-view-run-queries.md)  
 - [Adhoc versus managed queries](adhoc-vs-managed-queries.md)    
 - [Search box queries](search-box-queries.md)  
 - [Query editor](using-queries.md)    
@@ -43,26 +42,19 @@ If you are looking for a specific work item, using the adhoc query or search box
 - [Work item field index](../guidance/work-item-field.md)   
 - [Query permissions](set-query-permissions.md)  
 
-</div>
-
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;margin-bottom:0px;text-align:center;">Track and share work items</p>
+### Track and share work items 
 - [Add tags to work items](add-tags-to-work-items.md)  
 - [Follow work](../../collaborate/follow-work-items.md)  
 - [Share work plans](share-plans.md)  
 - [Link work items](link-work-items-support-traceability.md)  
-</div>
+ 
 
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;margin-bottom:0px;text-align:center;">Query charts and widgets</p>
+### Query charts and widgets 
 - [Chart a flat-list query](../../report/charts.md)   
 - [Chart for work items widget](../../report/widget-catalog.md#chart-wit-widget)  
 - [Query results widget](../../report/widget-catalog.md#query-results-widget)   
 - [Query tile widget](../../report/widget-catalog.md#query-tile-widget) 
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
+ 
 
 
 <a id="examples"/>

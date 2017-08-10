@@ -1,0 +1,42 @@
+- name: Notifications
+  href: index.md
+- name: Overview
+  items:
+  - name: "What are notifications?"
+    href: about-notifications.md
+- name: Quickstarts
+  items:
+  - name: Set your personal notifications
+    href: ../collaborate/manage-personal-notifications.md
+  - name: "Follow work & pull requests"
+    href: ../collaborate/follow-work-items.md
+- name: Tutorials
+  items:
+  - name: Set team notifications
+    href: ../collaborate/manage-team-notifications.md
+  - name: Campfire
+    href: ../collaborate/campfire.md
+  - name: Flowdock
+    href: ../collaborate/flowdock.md
+  - name: Hipchat
+    href: ../collaborate/hipchat.md
+  - name: Slack
+    href: ../collaborate/slack.md
+- name: Concepts
+  items:
+  - name: Events, subscribers, notification types, roles
+    href: events-subscribers-notification-types.md 
+- name: How-to guides
+  items:
+  - name: Go mobile
+    href: /vsts/collaborate/mobile-work?toc=/vsts/notifications/toc.json
+  - name: Set team project or collection-level alerts 
+    href: ../collaborate/collaborate-in-a-team-room.md
+  - name: Collaborate in a team room
+    href: ../collaborate/collaborate-in-a-team-room.md
+- name: Resources    
+  items:
+  - name: Microsoft Teams Integration
+    href: https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams
+  - name: Integrate with service hooks
+    href: ../service-hooks/index.md

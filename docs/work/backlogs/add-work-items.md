@@ -7,7 +7,7 @@ ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 07/21/2017
+ms.date: 08/07/2017
 ---
 
 # Track work and issues, add and update a work item 
@@ -66,23 +66,20 @@ That's it!
 Create as many work items as you need of the type you need to track the work you want to manage.  
 
 
-## Try this next 
-
-The quickest way to plan your project and add user stories or PBIs is to [create your backlog](../backlogs/create-your-backlog.md) or use your [Kanban board](../kanban/kanban-basics.md).  In a similar manner, if you're adding several tasks to support a sprint, you can do that using the [task board](../scrum/task-board.md). 
-
-For descriptions of each field and work item form control, see [Work item field index](../guidance/work-item-field.md) and [Work item form controls](../concepts/work-item-form-controls.md).  
-
-> [!div class="nextstepaction"]
-> [Create and Manage VM disks](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-manage-disks)
-
-
 ## Try this next  
 
-From the Work hub you can add the most common types of work items. 
+From the **Work** hub you can add the most common types of work items.  
 
-To quickly add backlog items, such as user stories or requirements, see [Create your backlog](create-your-backlog.md) or [Kanban quickstart](../kanban/kanban-quickstart.md). 
+To quickly add backlog items, such as user stories or requirements, see these topics:  
+> [!div class="nextstepaction"]
+> [Create your backlog](create-your-backlog.md)
+> [Kanban quickstart](../kanban/kanban-quickstart.md) 
+
 
 For additional clients that you can use to add work items, see [Clients that support tracking work items](../../tools.md).
 
-Once you've added several work items, you can use additional features to get notified of changes, create queries, define status and trend charts, plus more. 
+Once you've added several work items, you can use additional features to get notified of changes, create queries, define status and trend charts, plus more.  
+
+For descriptions of each field and work item form control, see [Work item field index](../guidance/work-item-field.md) and [Work item form controls](../concepts/work-item-form-controls.md).  
+
 

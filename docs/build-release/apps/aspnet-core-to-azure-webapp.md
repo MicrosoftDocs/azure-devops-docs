@@ -20,26 +20,25 @@ ms.custom: mvc
 
 # CI/CD of an ASP.NET Core app to an Azure web app
 
-Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your
-ASP.NET Core apps. This quickstart shows how to set up CI and CD to deploy an ASP.NET Core application to an Azure web app.
-You will use the Azure portal to configure a basic CI/CD pipeline. You will then use the VSTS portal to view and extend the CI/CD pipeline.
+Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline to automatically deploy your ASP.NET Core web app to Azure App Services. 
+In this quickstart you will use the Azure portal to configure a basic CI/CD pipeline, and then see it build and deploy your app.
 
 ![A typical release pipeline for web applications](../get-started/_img/ci-cd/part-1/ReleasePipeline.png)
 
-With your CI/CD processes in place, you'll push a change into your team's git repo and the results will automatically show up on your site.
+With your CI/CD processes in place, you'll push a change into your team's Git repo and the results will automatically show up on your site.
 
 ![Screenshot showing ASP.NET Core web app](_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
 [!INCLUDE [prerequisites](_shared/prerequisites.md)]
-* Have an Azure subscription. If you don't have an Azure subscription, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+* An Azure subscription. If you don't have an Azure subscription, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
 [!INCLUDE [import-code-aspnet-core](_shared/import-code-aspnet-core.md)]
 
-[!INCLUDE [create-azure-web-app](_shared/create-azure-web-app.md)]
+[!INCLUDE [create-azure-web-app-portal](_shared/create-azure-web-app-portal.md)]
 
 ## Configure continuous delivery
 
-1. Log into the Azure portal and open the web app's blade. Choose **Continuous Delivery** and then choose **Configure**.
+1. In the Azure portal, open your web app's blade. Choose **Continuous Delivery** and then choose **Configure**.
 
    ![Starting Continuous Delivery configuration](_img/aspnet-core-to-azure-webapp/continuous-delivery-intro.png)
 
@@ -61,74 +60,17 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 
    ![Viewing the log when deployment is complete](_img/aspnet-core-to-azure-webapp/continuous-delivery-log2.png)
 
-1. Open a new browser window and navigate to your web at _your-app-name_**.azurewebsites.net**.
+1. Open a new browser window and navigate to your new web at **http://**_your-app-name_**.azurewebsites.net**.
 
-   ![The web app deployed](_img/aspnet-core-to-azure-webapp/app-deployed.png)
+[!INCLUDE [change-aspnet-core-code](_shared/change-aspnet-core-code.md)]
 
-## Review the pipeline in VSTS
+It takes several minutes for the build and deployment to execute.
+Wait until the deployment is done, then verify that your changes are live in your web browser: **http://**_your-app-name_**.azurewebsites.net**.
 
-1. In the "Successfully set up Continuous Delivery..." log entry in the **Continuous Delivery** blade, choose the **Build Definition** link.
+You're now ready to collaborate with a team on an ASP.NET Core app with a CI/CD process that automatically deploys your latest work to your web site.
 
-   ![Opening the generated build definition](_img/aspnet-core-to-azure-webapp/review-links-build.png)
+## Next steps
 
-1. This opens the VSTS portal and takes you to the build definition summary. A **build definition** is a concept in VSTS that defines the CI process. The build definition summary shows recent builds that have been completed or that are in progress. Choose **Edit** to see how the CI process is defined.
+When you configured your CI/CD process in this quickstart, a build and release definition were automatically created in your VSTS project. You can modify these build and release definitions to meet the needs of your team. To learn more see one of these tutorials:
 
-   ![The build definition status](_img/aspnet-core-to-azure-webapp/build-status.png)
-
-1. A build definition consists of tasks that should be run as part of a build. When you configured the CI/CD from Azure Continuous Delivery, a number of tasks have been added to the build definition. These tasks automate the compilation and testing of your ASP.NET Core application. You will also notice that the parameters for each of these tasks have been populated for you.
-
-   ![The generated build definition](_img/aspnet-core-to-azure-webapp/build-definition.png)
-
-1. Open the **Build &amp; Release** drop-down and choose **Releases**. Select the release definition having the name of your app and choose **Edit** to see how the CD process is defined.
-
-   ![The release definition status](_img/aspnet-core-to-azure-webapp/release-status.png)
-
-1. A release definition consists of a pipeline of one or more environments, and each environment defines a set of tasks that automate deployment.
-   When you configured the CI/CD from Azure Continuous Delivery, a simple release definition with a single environment named **Production** has been set up for you automatically.
-   Choose this environment from the **Tasks** drop-down list.
-
-   ![The release definition pipeline](_img/aspnet-core-to-azure-webapp/release-pipeline.png)
-
-1.  This environment consists of a single task for deploying the Azure web app.
-
-   ![The generated release definition](_img/aspnet-core-to-azure-webapp/release-definition.png)
-
-1. You can modify the parameters or add additional tasks to both the build and release definition to meet the CI/CD needs of your application. You can also extend the release definition to include multiple stages. For more information about how to extend the CI/CD pipeline, see the tutorials on **Create a build definition** and **Create a release definition**.
-
-## Edit the app code and see it deployed
-
-1. In the Azure portal, open the **Overview** blade for your web app and choose **Stop**.
-   You must stop an ASP.NET Core app before you can update it.  
-
-   ![Stopping the app in the Azure portal](_img/aspnet-core-to-azure-webapp/stop-app.png)
-
-1. Navigate to the **Code** hub in the VSTS portal. Change the code in **Views/Home/Index.cshtml** file by selecting the **Edit** action.
-
-   ![Editing the code in the VSTS editor](_img/aspnet-core-to-azure-webapp/edit-in-vsts.png)
-
-1. Add the following line of text above the carousel display in the page:
-
-   ```
-   <h1>Demo of ASP.NET Core CI/CD!!</h1>
-   ```
-
-   ![Adding the new code in the VSTS editor](_img/aspnet-core-to-azure-webapp/add-code.png)
-
-1. Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure web app.
-
-   ![Committing the new code in the VSTS editor](_img/aspnet-core-to-azure-webapp/commit-code.png)
-
-1. Go to the **Build &amp; Release** hub and open the **Releases** tab. Wait until the new release is complete.
-
-   ![Waiting for the deployment to complete](_img/aspnet-core-to-azure-webapp/wait-for-release.png)
-
-1. In the Azure portal, in the **Overview** blade for your web app, choose **Start**.
-
-   ![Stopping the app in the Azure portal](_img/aspnet-core-to-azure-webapp/stop-app.png)
-
-1.  Navigate to the web app URL in a new browser window to see the app with the new page title deployed.
-
-   ![Viewing the updated app](_img/aspnet-core-to-azure-webapp/updated-app.png)
-
-You have now seen how easy it is to create a continuous integration and continuous delivery pipeline by using Azure Continuous Delivery.
-In later quickstarts and tutorials you'll see how you can tailor the process to create more complex CI/CD pipelines, and integrate with other types of apps and deployment environments.
+[TBD]

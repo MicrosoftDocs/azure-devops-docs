@@ -12,8 +12,9 @@ ms.date: 04/04/2017
 ---
 
 
-#Administrative guide to working in Team Services and TFS  
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013 </b> 
+# Administrative guide to working in Team Services and TFS  
+
+**Team Services | TFS 2017 | TFS 2015 | TFS 2013** 
 
 Work on apps anytime, anywhere. Use 
 integrated, powerful, cross-platform, 
@@ -410,7 +411,7 @@ Members of the Team Foundation Administrator group are responsible for installin
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Service hooks </p>
 <ul style="padding-left:20px">
- <li style="margin-bottom:2px">[Integrate with service hooks](../integrate/get-started/service-hooks/get-started.md)</li>
+ <li style="margin-bottom:2px">[Integrate with service hooks](../service-hooks/index.md)</li>
  <li style="margin-bottom:2px">[Campfire](../collaborate/campfire.md) (Team Services)</li>
  <li style="margin-bottom:2px">[Flowdock](../collaborate/flowdock.md) (Team Services)</li>
  <li style="margin-bottom:2px">[HipChat](../collaborate/flowdock.md) (Team Services)</li>

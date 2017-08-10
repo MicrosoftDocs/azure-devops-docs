@@ -19,12 +19,13 @@ ms.custom: mvc
 
 # CI/CD of an ASP.NET Core app to a Windows virtual machine
 
-Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your ASP.NET Core apps. This quickstart shows how to set up CI and CD to deploy an ASP.NET Core application to a Windows virtual machine (VM) in Azure.
-You will use the VSTS portal to set up CI/CD. In the CI process, you'll build the app using MSBuild and run tests using VSTest.
+Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your ASP.NET Core apps. This quickstart shows how to set up CI and CD processes to deploy an ASP.NET Core application to a Windows virtual machine (VM) in Azure.
+
+You'll use the VSTS portal to set up CI/CD. Your CI process runs the .NET Core commands to restore packages, build and test the app, and finally publish artifacts. Your CD process automatically picks up these artifacts and deploys them to your environment. Finally, you'll test it all out by pushing a small code change into your team's git repo. Your CI/CD processes will automatically deploy the change.
 
 ![A typical release pipeline for web applications](../get-started/_img/ci-cd/part-1/ReleasePipeline.png)
 
-With your CI/CD processes in place, you'll push a change into your team's git repo and the results will automatically show up on your site.
+Your code changes automatically appear on your site:
 
 ![Screenshot showing ASP.NET Core web app](_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
@@ -32,19 +33,25 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 
 * Have a Windows virtual machine that has a default web site running in IIS. See [Create a Windows virtual machine with the Azure CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-cli) for instructions to create a virtual machine in Azure, to install IIS, and to obtain its `publicIpAddress`.
 
-## Prepare the Windows VM with ASP.NET Core
+## Prepare the Windows VM
 
 Running an ASP.NET Core app on Windows requires some dependencies.
 
-On your Windows VM, install the [.NET Core Windows Server Hosting](https://go.microsoft.com/fwlink/?linkid=848766) bundle. The bundle will install the .NET Core Runtime, .NET Core Library, and the [ASP.NET Core Module](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps). The module creates the reverse-proxy between IIS and the Kestrel server.
+On your VM, open an **Administrator: Windows PowerShell** console. Install IIS and the required .NET features:
 
-After the installation is done, to effect a change to the system PATH, run the following commands.
+```ps
+Install-WindowsFeature Web-Server,Web-Asp-Net45,NET-Framework-Features
+```
 
-```cmd
+On your VM, install the [.NET Core Windows Server Hosting](https://go.microsoft.com/fwlink/?linkid=848766) bundle. The bundle will install the .NET Core Runtime, .NET Core Library, and the [ASP.NET Core Module](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps). The module creates the reverse-proxy between IIS and the Kestrel server.
+
+After the installation is done, to effect a change to the system PATH, run the following commands from a PowerShell prompt on your VM:
+
+```ps
 net stop was /y
 ```
 
-```
+```ps
 net start w3svc
 ```
 
@@ -69,6 +76,8 @@ net start w3svc
 [//]: # (TODO)
 
 ## Set up continuous integration
+
+Continuous Integration (CI) is the process of automating the build and testing of code every time a team member commits changes to version control. Here you'll create a CI build definition that helps team keep the master branch clean.
 
 1. On the **Files** tab of the **Code** hub, click **Set up build**.
 
@@ -98,11 +107,9 @@ net start w3svc
 
 [//]: # (TODO: ![Screenshot showing release action on build summary](_shared/_img/cicd-get-started-dotnetcore-release.png)
 
-[//]: # (TODO: In the dialog that prompts to **Create release definition**, select **Yes**.)
-
 [//]: # (TODO: In the **Create release definition** wizard, select the **IIS Website and SQL Database deployment** template, and click **Apply**.)
 
-[//]: # (TODO: ![Screenshot showing IIS template](_img/aspnet-core-to-windows-vm/cicd-get-started-iis-template.png)
+[//]: # (TODO: ![Screenshot showing IIS template](_img/aspnet-core-to-windows-vm/select-iis-website-and-sql-database-deployment-release-template.png)
 
 [//]: # (TODO: Click **Tasks**, and then select the **SQL Deployment** phase. Click 'X' to delete this phase. We won't be deploying a database in this quickstart.)
 
@@ -118,29 +125,25 @@ net start w3svc
 
 ## Set up continuous deployment
 
+Continuous deployment (CD) is a lean practice that your team can use to keep production fresh. Here you'll set up a short automatic path from the availability of new code in version control to deployment. Specifically, you'll define a CD release management process that picks up the artifacts from your CI build and deploys you app to the IIS web server hosted in your Windows VM.
+
 1. Once the build succeeds, click the **Release** action on the build summary page.
 
  ![Screenshot showing release action on build summary](_shared/_img/cicd-get-started-dotnetcore-release.png)
 
-1. On the dialog box that prompts you to **Create release definition**, click **Yes**.
-
 1. In the **Create release definition** wizard, select **IIS Website and SQL Database deployment** template, and then click **Apply**.
 
- ![Screenshot showing IIS template](_img/aspnet-core-to-windows-vm/cicd-get-started-iis-template.png)
+ ![Screenshot showing IIS template](_img/aspnet-core-to-windows-vm/select-iis-website-and-sql-database-deployment-release-template.png)
 
-1. Click **Tasks**, and select the **SQL Deployment** phase. Click **X** to delete this phase. (We won't be deploying a database in this quickstart.)
+1. Select the **Tasks** tab, and then select the **SQL Deployment** phase. In the upper-right corner, click **X Remove** to delete this phase. (We won't be deploying a database in this quickstart.)
 
-1. Click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*. In the **Machine tags** box, select **Add** and choose the *Web* tag.
-
-1. Select the **IIS Web App Manage** task and then click **X** to delete this task. (We won't create a new website in this quickstart. Instead, we'll deploy to the **default web site**.)
-
-1. Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Leave all the other default settings.
+1. Click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*. In the **Machine tags** box, enter `web`.
 
  ![Screenshot showing release definition](_img/aspnet-core-to-windows-vm/cicd-get-started-release-definition.png)
 
-1. Select the artifact trigger, and then on the right side make sure the **Continuous deployment trigger** is enabled.
+1. Select the **IIS Web App Manage** task, and then in the upper-right corner, click **X Remove** to delete this task. (We won't create a new website in this quickstart. Instead, we'll deploy to the **default web site**.)
 
- ![build artifact trigger in release definition](_shared/_img/build-artifact-trigger-in-release-definition.png)
+1. Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Expand **Advanced Deployment Options** and then select **Take App Offline**. Leave all the other default settings.
 
 1. Click **Save**. On the Save dialog box, click **OK**.
 
@@ -154,28 +157,23 @@ net start w3svc
 
  ![new release created message](_shared/_img/new-release-created-message.png)
 
-  You can watch the live logs for the deployment as it happens. Wait for the release to be deployed to the Azure web app.
+1. Select the **Logs** tab to watch the live logs from the deployment as it happens. Wait for the release to be deployed to the Azure web app.
 
 1. Once deployment has completed, open your web browser and test your web app: `http://<publicIpAddress>`
 
-[!INCLUDE [include](_shared/change-code-section.md)]
-
-In the VSTS **Code** hub, edit the **Views/Home/Index.cshtml** file and make a simple change above the slide carousel `div` tag:
-
-```html
-<h2>Demo of ASP.NET Core CI/CD!!</h2>
-```
-
-![Screenshot showing update to code](_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-update-code.png)
-
-Commit your changes to trigger a CI build. When the build completes, it triggers an automatic deployment of the Azure web app.
+[!INCLUDE [include](_shared/change-aspnet-core-code.md)]
 
 When the deployment is done, verify that your changes are live in your web browser: `
 http://<publicIpAddress>`
 
-**Congratulations!** Your ready to collaborate with a team on an ASP.NET Core app with a CI/CD process that automatically deploys your latest work to your web site.
+You're ready to collaborate with a team on an ASP.NET Core app with a CI/CD process that automatically deploys your latest work to your web site.
 
 ## Next steps
 
-_TODO: A screenshot of the build tasks and maybe also a screenshot of the release definition. Links to topics that cover possible next steps. Could be app-type specific next steps or general ci/cd changes supported by other tutorials and how-to topics._
+You've just put your own CI/CD processes in place. You can modify these build and release definitions to meet the needs of your team. To learn more see one of these tutorials:
 
+* [Define your continuous integration (CI) build process](../tutorials/define-ci-build-process.md)
+* [Define your continuous deployment (CD) process](../tutorials/define-cd-release-process.md)
+* [Define your multi-stage continuous deployment (CD) process](../tutorials/define-multistage-release-process.md)
+
+[//]: # (TODO [!INCLUDE [include](_shared/quickstart-next-steps.md)

@@ -8,6 +8,7 @@ ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603
 ms.manager: douge
 ms.author: kaelli
 ms.date: 07/20/2017
+layout: LandingPage
 ---
 
 # Git documentation for Team Services and TFS

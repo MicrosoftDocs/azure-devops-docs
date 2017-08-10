@@ -138,7 +138,7 @@
   - name: Permissions and groups reference
     href: permissions.md
   - name: Extensibility overview
-    href: ../extend/overview.md
+    href: ../extend/index.md
 - name: Troubleshooting
   items:
   - name: "[Foo Q&A]"
@@ -159,6 +159,6 @@
   - name: Migrate from TFS to Team Services Tutorial
     href: https://www.visualstudio.com/articles/migration-overview
   - name: Integrate with other services
-    href: ../marketplace/integrate/service-hooks/get-started.md
+    href: ../service-hooks/index.md
   - name: Technical articles
     href: http://visualstudio.com/articles/overview

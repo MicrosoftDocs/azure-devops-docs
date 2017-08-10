@@ -45,12 +45,12 @@ Deployment groups:
 
 You define groups on the **Deployment Groups** tab of the **Build &amp; Release**
 hub, and install the agent on each server in the group. After you prepare your
-target servers, they appear in the **Machines** tab. The list indicates if a
+target servers, they appear in the **Deployment Groups** tab. The list indicates if a
 server is available, the tags you assigned to each server, and the latest
 deployment to each server.
 
 The tags you assign allow you to limit deployment to specific servers when 
-the deployment group is used in a [**Run on machine group** phase](../../../process/phases.md#deployment-group-phase).
+the deployment group is used in a [Deployment group phase](../../../process/phases.md#deployment-group-phase).
 You manage the security for a deployment group by
 [assigning security roles](../../../agents/pools-queues.md#security).
 

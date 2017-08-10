@@ -7,7 +7,7 @@ ms.prod: vs-devops-alm
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/27/2017
+ms.date: 08/02/2017
 ---
 
 # Share your project vision, view project activity   
@@ -187,7 +187,7 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 
 To edit information on the team project page or manage team membership, you must be a member of the [Project Administrators group](../setup-admin/add-administrator-tfs.md) or have your Edit project-level information permission set to allow. 
 
-To view the team project page, you must be a valid member of the team project. For more information, see [Permissions and groups, Valid user groups](../setup-admin/permissions.md#validusers). 
+To view the team project page, you must be a valid member of the team project. For more information, see [Permissions and groups, Valid user groups](../security/about-permissions.md#validusers). 
 
  
 

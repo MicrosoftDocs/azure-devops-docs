@@ -9,17 +9,32 @@ ms.author: douge
 ms.date: 08/04/2016
 ---
 
-# Advanced Code Search options
+# How To: Use Code Search
 
 [!INCLUDE [version-header-shared](../_shared/version-header-shared.md)]
 
-You can:
+By using Code Search you can:
 
-* [Use simple or compound search terms](#syntaxdetails)
-* [Use functions for specific types of code](#codefunctions)
-* [Use functions to specify projects, repositories, paths, and files](#locationfunctions)
+* **Search across all of your projects**:
+  Search in your own codebase and your partner teams' codebases. Use cross-project 
+  searches over all the code in your Team Services or TFS instance to search 
+  across your organization's entire codebase. Narrow your search by using project, repository, 
+  path, file name, and other filter operators. Use wildcards to widen your search and 
+  Boolean operators to fine-tune it. 
 
-[!INCLUDE [shared-back-to-overview](../_shared/shared-back-to-overview.md)]
+* **Find specific types of code**: Use code type filters 
+  to search for specific kinds of code such as definitions, references, functions, 
+  comments, strings, namespaces, and more. You can use Code Search to narrow 
+  down your results to exact code type matches. Navigate quickly to a method 
+  definition to understand its implementation simply by applying the definition 
+  filter, or scope the search to references in order to view calls and maximize 
+  code reuse.
+
+* **Easily drill down or widen your search**: When you find an item of interest, 
+  simply place the cursor on it and use the shortcut menu to quickly search for 
+  that text across all your projects and files. Easily trace how your code works 
+  by using the shortcut menu to search for related items such as definitions and 
+  references - directly from inside a file.<p />
 
 <a name="syntaxdetails"></a>
 ## Syntax for simple and compound searches
@@ -27,6 +42,24 @@ You can:
 Use simple search strings for words or phrases. The default is a whole word search; 
 for example, a search for "valid" will not find instances of the word 
 "validation". However, searches are _not_ case-sensitive.
+
+When you search from inside a project, the default is to search only within that 
+project. 
+
+In a TFVC project, you see a list of folder paths in that project for 
+which you have read access - you won't see any projects and folders 
+for which you don't have read permission. Select paths in the folder tree 
+to narrow your search if required.
+  
+In a Git project, you see a list of the repositories it contains (Code Search indexes 
+files in only the default branch of your Git repositories; usually this is the **master** branch). 
+Use the project and repository checkboxes to widen your search to more or all projects, or to 
+narrow your search to fewer projects and repositories. If there is more than a few 
+projects or repositories, use the **Show more** link to see them all.
+
+Code Search remembers your last settings, such as the project and repository or path you
+searched in. Clear all the checkboxes to search across all projects. Do this quickly and 
+easily with the **Clear all** links when you want to search in a different scope.
 
 ### Narrow your search with Boolean operators
  
@@ -48,8 +81,6 @@ For example:
 * `validate NOT revisit` finds files that contain the word **validate** but not the word **revisit**.
 * `(validate NOT revisit) OR "release delayed"` finds files that contain the word **validate**
   but not the word **revisit** or files that contain the phrase **release delayed**.
-
-![Use Boolean operators to refine your search](_img/advanced-search/use-boolean-operators-to-refine-search.png)
 
 To find an exact match to a set of words, enclose your search terms in double-quotes. 
 For example, `"Client not found"`
@@ -90,12 +121,8 @@ As you type in the search box, select functions and keywords from the drop-down
 list to quickly create your query. Use the **Show more** link to display all the 
 available functions and keywords. Mix and match the functions as required.
 
-![Select functions from the drop-down list](_img/advanced-search/select-functions-from-dropdown-list.png)
-
 You can also select one or a combination of filters from the list in the left column.
 Again, the **Show more** link displays all the available functions and keywords.
-
-![Select functions using the left column checkbox list](_img/advanced-search/checkboxes-select-code-type-functions.png) 
 
 Alternatively, you can type the functions and parameters directly into the search box. The following table shows 
 the full list of functions for selecting specific types or members in your
@@ -167,16 +194,40 @@ Narrow the search to specific files using the `file` or `ext` filters:
 * A plain text search string that does not include file type functions 
   will also find files where the string matches part of the filename.
 
-![Select projects, repositories, paths, and files using functions](_img/advanced-search/select-projects-repositories-paths-files-using-functions.png)
+<a name="findrelatedfiles"></a>
+## Find related items or other terms
+   
+One of the powerful features of Code Search is the capability to expand your
+search interactively, based on the results of previous searches. For example,
+you can easily broaden your search to related files when tracing or debugging code. 
 
+Place the insertion point on a term in the file and open the shortcut menu (mouse: right-click) to start a new search 
+for other files containing the selected term. You can search for it as text, for 
+the definition if you select an object name, or for references to a selected object. 
 
-## See also
+## More examples
 
-* [Get started with Code Search](get-started.md)
-* [Choose your search scope](repos-and-projects.md)
-* [Rich Code Search results](search-results.md)
-* [Set up and administration](administration.md)
+Some more examples of search strings are:
 
-[!INCLUDE [shared-back-to-overview](../_shared/shared-back-to-overview.md)]
+* You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`. 
+
+* You can search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`. 
+
+* You can search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string 
+  `error ext:resx` could be useful when you want to review all error strings in your code. 
+  But even if your plain text search string (without specific file type functions) 
+  matches part of a filename, the file appears in the list of found files.
+
+* You can combine two or more words by using Boolean operators; for example, `validate OR release`.
+
+* You can find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`. 
+
+* You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
+
+Open the search results in a new browser tab from either search box by
+pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
+![start search icon](../_img/_shared/start-search-icon.png) icon.
+In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
+to the new browser tab. 
 
 [!INCLUDE [shared-got-feedback](../_shared/shared-got-feedback.md)]

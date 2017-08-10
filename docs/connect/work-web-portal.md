@@ -399,7 +399,7 @@ Below we show the admin context for the team project level.
 <li style="margin-bottom:2px">[Notifications](../collaborate/manage-team-notifications.md) or [Alerts](../work/track/alerts-and-notifications.md)</li>
 <li style="margin-bottom:2px">[Version Control (manage repository permissions)](../setup-admin/permissions.md#git-repository)</li>
 <li style="margin-bottom:2px">[Agent queues](../build-release/concepts/agents/pools-queues.md)</li>
-<li style="margin-bottom:2px">[Service hooks](../integrate/get-started/service-hooks/services/webhooks.md)</li>
+<li style="margin-bottom:2px">[Service hooks](../service-hooks/services/webhooks.md)</li>
 <li style="margin-bottom:2px">[Services](../build-release/concepts/library/service-endpoints.md)</li>
 <li style="margin-bottom:2px">[Test (manage test retention policies](../manual-test/getting-started/how-long-to-keep-test-results.md)</li>
 </ul>
@@ -603,12 +603,7 @@ Here's a list of the most frequently encountered connection problems and what to
 
 For more troubleshooting tips, [TF31002: Unable to connect to this Team Foundation Server](../work/reference/error/tf31002-unable-connect-tfs.md).
 
-<a id="provide-feedback"></a>
-### Feedback and support  
-
-We welcome your feedback.
-
-Send suggestions via **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**, and follow us on **[Twitter](https://twitter.com/VSTeam) @VSTeam**.  
+[!INCLUDE [temp](../_shared/help-support-shared.md)] 
 
 <!---
 Overview

@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs
 ms.manager: douge
 ms.author: elbatk
-ms.date: 08/24/2016
+ms.date: 08/04/2017
 ---
 
 # Add users to a team project, sharepoint and reporting services, and groups
@@ -31,30 +31,7 @@ skip this topic and [simply add them to a team](../work/scale/multiple-teams.md)
  > and test case management features,
  > you'll want to [change access levels](../work/connect/change-access-levels.md), not permissions.
 
-## Verify your permissions
-
-Before you change permission levels for others, make sure that you have the right level of permissions.
-
-1.  Open the administrative context for your team project. ![Settings icon](_img/admin-gear-icon.png)
-
-2.  In the **Security** tab, under users, find your own name,
-and look at what groups you belong to and what permissions you have.
-
-3.  If you aren't a project administrator, you need to be. Find someone who is, and have them add you:
-
-    ![You can add more than one person at a time](_img/add-users-team-project/add-user.png)
-
-4.  If you need to make changes at the team level, change your context to the team overview.
-If you aren't a team administrator, you can add yourself if you're already a project administrator. Otherwise, have someone add you.
-
-    ![Team administrators do not have to be team members](_img/add-administrator-tfs/add-team-administrator.png)
-
-5.  Similarly, if you need to add users to SharePoint Products or SQL Server Reporting Services,
-make sure that you have the required permissions.
-For reporting, you must be either a member of the local Administrators group on the report server
-or [be a member of a group specifically created to add users](https://technet.microsoft.com/library/ms156034.aspx).
-The requirements for SharePoint Products are more complex.
-For more information about SharePoint 2013, [go here](https://technet.microsoft.com/library/jj219771.aspx).
+<!--- NOTE, I moved the VIew permissions section to a new topic under docs/security/view-permissions.md --> 
 
 <a name="add-users-team-project"></a>
 ## Add users to a team project

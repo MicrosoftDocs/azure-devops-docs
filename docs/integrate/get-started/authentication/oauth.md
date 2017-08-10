@@ -79,7 +79,7 @@ redirect_uri  | URL    | Callback URL for your appp. **This must exactly match t
 Visual Studio Team Services will ask your user to authorize your app.
 It will handle authentication and then call you back with an authorization code, if the user approves the authorization.
 
-Add a link or button to your site that navigates the user to the Team Services authorization endpoint:
+Add a link or button to your site that navigates the user to the Visual Studio Team Services authorization endpoint:
 
 ```no-highlight
 https://app.vssps.visualstudio.com/oauth2/authorize
@@ -92,7 +92,7 @@ https://app.vssps.visualstudio.com/oauth2/authorize
 <br>
 Visual Studio Team Services will ask the user to authorize your app.
 
-Assuming the user accepts, Team Services will redirect the user's browser to your callback URL, including a short-lived authorization code and the state value provided in the authorization URL:
+Assuming the user accepts, Visual Studio Team Services will redirect the user's browser to your callback URL, including a short-lived authorization code and the state value provided in the authorization URL:
 
 ```no-highlight
 https://fabrikam.azurewebsites.net/myapp/oauth-callback
@@ -102,7 +102,7 @@ https://fabrikam.azurewebsites.net/myapp/oauth-callback
 
 ## Get an access and refresh token for the user
 
-Now use the authorization code to request an access token (and refresh token) for the user. This requires your service making a service-to-service HTTP request to Team Services.
+Now use the authorization code to request an access token (and refresh token) for the user. This requires your service making a service-to-service HTTP request to Visual Studio Team Services.
 
 ### URL
 ```no-highlight

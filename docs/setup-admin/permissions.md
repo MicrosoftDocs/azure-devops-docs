@@ -46,7 +46,7 @@ This topic provides descriptions for each built-in group and permission. To lear
 <li>**Not set**</li>
 </ul>
 
-To learn more about inheritance, see [About permissions.md](../concepts/about-permissions.md#inheritance).
+To learn more about inheritance, see [About permissions.md](../security/about-permissions.md#inheritance).
 </td>
 </tr>
 </table>
@@ -358,7 +358,7 @@ For each team project that you create, the system creates the followings team pr
 		<td>Readers</td>
 		<td>Has permissions to view the team project but not modify it.</td>
 		<td>
-			Assign to [stakeholders](../work/connect/work-as-a-stakeholder.md)
+			Assign to [stakeholders](../quickstart/get-started-stakeholder.md)
 			who want to be able to view work in progress.
 		</td>
 	</tr>
@@ -392,7 +392,7 @@ For each team project that you create, the system creates the followings team pr
 			Any new teams you create will also have a group created for them and added to the Contributors group.
 			<blockquote>
 				You can grant permissions to administer team assets by
-				[adding members to the team administrator role](../work/scale/manage-team-assets.md#add-team-admin).
+				[adding members to the team administrator role](../work/scale/add-team-administrator.md).
 			</blockquote>
 		</td>
 		<td>Add members of the team to this group.</td>
@@ -444,7 +444,7 @@ For each team that you add, you can assign one or more team members as administr
 	* [Board: WIP limits](../work/kanban/wip-limits.md)    
 	* [Board: Split columns](../work/kanban/split-columns.md)   
 	* [Board: Swimlanes](../work/kanban/expedite-work.md)  
-	* [Board: Card reordering](../work/kanban/kanban-basics.md#card-reorder-setting)  
+	* [Board: Card reordering](../work/customize/reorder-cards.md)  
 	* [Board: Definition of Done](../work/kanban/definition-of-done.md)  
 	* [Charts: Cumulative flow](../report/guidance/cumulative-flow.md#configure) 
 - **Manage team dashboards**  
@@ -892,7 +892,7 @@ The following permissions are defined in Build. All of these can be set at both 
 | **Administer build permissions** | Can change any of the other permissions listed here. |
 | **Queue builds** | Can queue new builds. |
 | **Delete build definition** | Can delete build definition(s). |
-| **Delete builds** | Can delete builds for a definition. Builds that are deleted are [retained](retention.md) in the **Deleted** tab for a period of time before they are destroyed. |
+| **Delete builds** | Can delete builds for a definition. Builds that are deleted are [retained](../build-release/concepts/policies/retention.md) in the **Deleted** tab for a period of time before they are destroyed. |
 | **Destroy builds** | Can delete builds from the **Deleted** tab. |
 | **Edit build definition** | Can save any changes to a build definition, including configuration variables, triggers, repositories, and retention policy. |
 | **Edit build quality** | Can add tags to a build. |
@@ -1901,7 +1901,7 @@ You can manage alert permissions using [TFSSecurity](tfs/command-line/tfssecurit
 
 ##Related notes
 
-- [About permissions](../concepts/about-permissions.md)  
+- [About permissions](../security/about-permissions.md)  
 - [Add users to a team project](./team-services/add-team-members-vs.md) (Team Services)   
 - [Add users to a team project](./add-users.md) (TFS)   
 - [Add users to an administrator role](add-administrator-tfs.md)   

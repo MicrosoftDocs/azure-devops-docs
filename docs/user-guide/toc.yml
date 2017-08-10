@@ -1,26 +1,74 @@
 - name: Get started
   href: index.md
 - name: Overview
+  items:
+  - name: "What is Visual Studio Team Services?"
+    href: what-is-vsts.md
+  - name: "What is Team Foundation Server?"
+    href: what-is-tfs.md
+  - name: Overview of services
+    href: ../services.md
 - name: Quickstarts
+  items:
+  - name: Set up/sign up with Team Services
+    href: /vsts/setup-admin/team-services/sign-up-for-visual-studio-team-services?toc=/vsts/user-guide/toc.json 
+  - name: Code with Git
+    href: ../git/gitquickstart.md
+  - name: Track work via Kanban 
+    href: ../work/kanban/kanban-quickstart.md
+  - name: Stakeholder access
+    href: ../quickstart/get-started-stakeholder.md
 - name: Tutorials
-- name: How-to guides 
+  items:
+  - name: Set your preferences
+    href: /vsts/setup-admin/account-preferences?toc=/vsts/user-guide/toc.json
+  - name: Set favorites
+    href: /vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json
+  - name: "Follow work & pull requests"
+    href: /vsts/collaborate/follow-work-items?toc=/vsts/user-guide/toc.json
+  - name: Authenticate with personal access tokens
+    href: /vsts/setup-admin/team-services/use-personal-access-tokens-to-authenticate?toc=/vsts/user-guide/toc.json
 - name: Concepts
+  items:
+  - name: "Team projects, teams, and repos (NEW)"
+    href: team-projects-teams-repos.md
+  - name: Access levels (NEW)
+    href: /vsts/security/access-levels?toc=/vsts/user-guide/toc.json
+  - name: Source control (NEW)
+    href: ../concepts/source-control.md
+  - name: "Kanban & Agile (NEW)"
+    href: ../concepts/kanban-agile.md
+  - name: "Clients & tools"
+    href: ../tools.md
+  - name: Software development roles
+    href: ../roles.md
+  - name: "How Team Services & TFS differ"
+    href: ../about-vsts-tfs.md
+- name: How-to guides
+  items:
+  - name: Connect to a team project
+    href:  /vsts/connect/connect-team-projects?toc=/vsts/user-guide/toc.json
+  - name: Go mobile
+    href: /vsts/collaborate/mobile-work?toc=/vsts/user-guide/toc.json
+  - name: Switch project or team focus
+    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/user-guide/toc.json
+- name: Reference
+  items:
+  - name: "Permissions & access"
+    href: /vsts/setup-admin/permissions-access?toc=/vsts/user-guide/toc.json
+  - name: Keyboard shortcuts
+    href: /vsts/reference/keyboard-shortcuts?toc=/vsts/user-guide/toc.json
+  - name: Markdown guidance
+    href: /vsts/reference/markdown-guidance?toc=/vsts/user-guide/toc.json
+  - name: FAQs
+    href: ../faqs.md
+  - name: Navigate in the web portal
+    href: /vsts/connect/work-web-portal?toc=/vsts/user-guide/toc.json
 - name: Resources
   items:
-  - name: "Marketplace, billing, and extensions"
+  - name: "Marketplace, billing, & extensions"
     href: ../marketplace/overview.md
-    items:
-    - name: Install an extension for Team Services
-      href: ../marketplace/get-vsts-extensions.md
-    - name: Request permissions for Team Services extensions
-      href: ../marketplace/request-vsts-extension.md
-    - name: Approve requests for Team Services extensions
-      href: ../marketplace/approve-vsts-extensions.md
-  - name: Account preferences
-    href: account-preferences.md
   - name: Migrate from TFS to Team Services Tutorial
     href: https://www.visualstudio.com/articles/migration-overview
-  - name: Integrate with other services
-    href: ../marketplace/integrate/service-hooks/get-started.md
   - name: Technical articles
     href: http://visualstudio.com/articles/overview

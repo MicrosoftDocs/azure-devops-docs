@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs
 ms.manager: douge
 ms.author: douge
-ms.date: 08/04/2016
+ms.date: 08/04/2017
 ---
 
 # Restrict access in Team Services and TFS

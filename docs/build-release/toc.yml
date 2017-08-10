@@ -6,12 +6,12 @@
   - name: Release
 - name: Quickstarts
   items:
-  - name: CI/CD to Azure web app
+  - name: CI/CD to web app
     items:
     - name: ASP.NET Core
       href: apps/aspnet-core-to-azure-webapp.md
     - name: ASP.NET
-    - name: Node
+    - name: Node.js
     - name: Java
   - name: CI/CD to Windows VMs
     items:
@@ -21,21 +21,27 @@
   - name: CI/CD to Linux VMs
     items:
     - name: ASP.NET Core
-    - name: Node
+    - name: Node.js
     - name: Java
   - name: CI/CD to Containers
     items:
     - name: ASP.NET Core
-    - name: Node
+      href: apps/aspnet-core-to-acs.md
+    - name: Node.js
 - name: Tutorials
   items:
-  - name: Set up build
-  - name: Set up release
+  - name: Define CI build process
+    href: tutorials/define-ci-build-process.md
+  - name: Define CD release process
+    href: tutorials/define-cd-release-process.md
   - name: Set up multi-stage release
-  - name: Use CI with Git workflows
-  - name: Integrate Build with GitHub
-  - name: Integrate Release with Jenkins
+    href: tutorials/define-multistage-release-process.md
+  - name: CI builds for Git in VSTS
+    href: tutorials/ci-build-git.md
+  - name: CI builds for GitHub
+    href: tutorials/ci-build-github.md
   - name: Extend CI/CD
+    href: tutorials/extend-release-management.md
 - name: Concepts
   items:
   - name: Agents

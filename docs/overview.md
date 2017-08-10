@@ -175,7 +175,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-4 col-md-3 item">
       <div class="title">
-        <a href="extend/overview.md">Extensions</a>
+        <a href="extend/index.md">Extensions</a>
         <div class="desc">
           Develop, package, and publish extensions and integrations.
         </div>
@@ -183,7 +183,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-4 col-md-3 item">
       <div class="title">
-        <a href="integrate/overview.md">REST APIs</a>
+        <a href="integrate/index.md">REST APIs</a>
         <div class="desc">
           Develop your own tools and integrations using REST APIs.
         </div>

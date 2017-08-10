@@ -7,8 +7,8 @@ ms.prod: vs-devops-alm
 ms.assetid: 4942A638-9888-461E-969D-0BB9B1FE1736
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/20/2017
---- 
+ms.date: 08/02/2017
+---
 
 # Get started using your Kanban board
 
@@ -83,7 +83,7 @@ All members of a team project will be able to view and contribute to your Kanban
 
 To add users to your team project, see these topics:   
 -  **Team Services**: [Add and manage users](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md)   
--  **On-premises TFS**: [Add users to a team project](../../add-users.md)   
+-  **On-premises TFS**: [Add users to a team project](../../setup-admin/add-users.md)   
 
 
 ## Try this next 
@@ -93,7 +93,7 @@ To get the full power of the Kanban board working for you, you'll want to config
 > [!NOTE]  
 > Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs-boards-plans.md). To switch to the [product backlog](../backlogs/create-your-backlog.md), click **Backlog**. And, to switch to the [Task board](../scrum/task-board.md), click on the current iteration or other sprint of interest. If no sprints appear, see [Schedule sprints](../scrum/define-sprints.md). 
 
-If your new to Team Services or TFS and want to understand what you can customize, see [Customize your work tracking experience](../customize/customize-work.md). 
+if you're new to Team Services or TFS and want to understand what you can customize, see [Customize your work tracking experience](../customize/customize-work.md). 
 
 <!--- 
 Here are a few things you can do. See at a glance the estimated size of work for each item which displays at the bottom right of each card. Add items to your backlog in the first column. When priorities change, move items up and down within a column. And, as work completes in one stage, update the status of an item by dragging and dropping it to a downstream stage.

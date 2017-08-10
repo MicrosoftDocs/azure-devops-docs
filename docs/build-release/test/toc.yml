@@ -1,0 +1,45 @@
+- name: Overview
+  items:
+  - name: About continuous testing
+    href: overview.md
+  - name: About CI/CD
+    href: ../overview.md?toc=/vsts/build-release/toc.json
+- name: Quickstarts
+  items:
+  - name: Continuous testing
+    href: getting-started-with-continuous-testing.md
+  - name: Selenium testing
+    href: continuous-test-selenium.md
+  - name: Review test results
+    href: review-continuous-test-results-after-build.md
+- name: How-to Guides
+  items:
+  - name: Set up continuous testing
+    href: set-up-continuous-testing-builds.md
+  - name: Run tests from the Test hub
+    href: run-automated-tests-from-test-hub.md
+  - name: Associate tests with test cases
+    href: associate-automated-test-with-test-case.md
+  - name: Associate results with requirements
+    href: associate-automated-results-with-requirements.md
+- name: Tutorials
+  items:
+  - name: Test your app
+    href: example-continuous-testing.md
+- name: Reference
+  items:
+  - name: Unified agents and phases
+    href: test-with-unified-agent-and-phases.md
+  - name: Test Java applications
+    href: continuous-test-java.md
+  - name: Set up environments
+    href: set-up-continuous-test-environments-builds.md
+  - name: "Q & A"
+    href: reference-qa.md
+- name: Resources
+  items:
+  - name: DevOps Rangers
+    href: https://vsartestreleaseguide.codeplex.com/
+  - name: Plug-ins for Visual Studio
+    href: http://go.microsoft.com/fwlink/?LinkID=246630
+

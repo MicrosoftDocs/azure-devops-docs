@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: 0A9D0E48-64B4-4D90-933B-E0EBFC3FA3D4  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 08/04/2017
 ---
 
 # Analytics Service overview  
@@ -18,54 +18,15 @@ ms.date: 08/11/2016
 
 The Analytics service provides a concise OData model over the Team Services suite&mdash;Work Item Tracking, Test, Version Control, Release and Build. You can use it to answer quantitative questions regarding past or present state and velocity of your projects. It is built upon a near real-time reporting warehouse hosted in the cloud and optimized for fast read-access and support of server-based aggregations.  
 
-You can learn more from one of these topics: 
-
-<div style="float:left;width:150px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Basics</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Data model](data-model-analytics-service.md)</li>
-<li style="margin-bottom:2px">[Security](analytics-security.md)</li>
-</ul>
-</div>
-
-<div style="float:left;width:180px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Client access</p>
-<ul style="padding-left:10px">
-<li style="margin-bottom:2px">[Client authentication options](client-authentication-options.md)</li>
-<li style="margin-bottom:2px">[Excel](access-analytics-excel.md)</li>
-<li style="margin-bottom:2px">[Power BI desktop](access-analytics-power-bi.md)</li>
-<li style="margin-bottom:2px">[PowerBI.com](publishing-power-bi-desktop-to-power-bi.md)</li>
-<li style="margin-bottom:2px">[Power BI desktop and OData aggregations](using-odata-aggregations-with-power-bi-desktop.md)</li>
-<li style="margin-bottom:2px">[Create custom calculation](custom-calculations.md)</li>
-</ul>
-</div>
-<div style="float:left;width:150px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query access</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[WIT analytics](wit-analytics.md)</li>
-<li style="margin-bottom:2px">[Analytic recipes](analytics-recipes.md)</li>
-<li style="margin-bottom:2px">[Aggregated data](aggregated-data-analytics.md)</li>
-<li style="margin-bottom:2px">[Query for trend data](querying-for-trend-data.md)</li>
-<li style="margin-bottom:2px">[Work item links](work-item-links.md)</li>
-</ul>
-</div>
-
-<div style="float:left;width:150px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Extensions</p>
-<ul style="padding-left:30px">
-
-<li style="margin-bottom:2px">[Hub extension](building-extension-against-analytics-service.md)</li>
-<li style="margin-bottom:2px">[Dashboard widget](widget-extensions-against-analytics-service.md)</li>
-<li style="margin-bottom:2px">[Add configuration](widget-extension-against-analytics-service-configuration.md)</li>
-</ul>
-</div>
+You can learn more from one of these topics:
 
 
-<div style="clear:left;font-size:100%">
-</div>
-
-
-### Available data
+> [!div class="mx-tdBreakAll"]  
+> |Basics  |Client access |Query access|  Extensions | 
+> |-------------|----------|---------|---------|     
+> |- [Data model](data-model-analytics-service.md)<br/>- [Security](analytics-security.md) |- [Client authentication options](client-authentication-options.md)<br/>- [Excel](access-analytics-excel.md)<br/>- [Power BI desktop](access-analytics-power-bi.md)<br/>- [PowerBI.com](publishing-power-bi-desktop-to-power-bi.md)<br/>- [Power BI desktop and OData aggregations](using-odata-aggregations-with-power-bi-desktop.md)<br/>- [Create custom calculation](custom-calculations.md)  |- [WIT analytics](wit-analytics.md)<br/>- [Analytic recipes](analytics-recipes.md)<br/>- [Aggregated data](aggregated-data-analytics.md)<br/>- [Query for trend data](querying-for-trend-data.md)<br/>- [Work item links](work-item-links.md) |- [Hub extension](building-extension-against-analytics-service.md)<br/>- [Dashboard widget](widget-extensions-against-analytics-service.md)<br/>- [Add configuration](widget-extension-against-analytics-service-configuration.md) | 
+  
+## Available data
 
 For more information about the following entities, see [data model](data-model-analytics-service.md).  
 
@@ -87,7 +48,7 @@ For more information about the following entities, see [data model](data-model-a
 - Custom fields <font style="color: red">*New!* </font>  
 
 
-### Supported entites and metadata
+## Supported entities and metadata
 
 This information can also be found by going to the service root url endpoint. The endpoint is:  
 
@@ -99,7 +60,8 @@ So, for the *FabrikamFiber* account:
 fabrikamfiber.analytics.visualstudio.com/DefaultCollection/_odata   
 ``` 
 
-<blockquote style="font-size: 13px">**Note:** The OData analytics service URL is case sensitive.  </blockquote>
+>[!NOTE]  
+>The OData Analytics Service URL is case sensitive.  
 
 Accessing this URL returns a metadata document similar to the following:  
 
@@ -157,18 +119,19 @@ Currently, updates are pulled from the operational store every 15 minutes. Our g
 For details and examples on using OData with the Analytics Service, see [WIT analytics](wit-analytics.md).
 
 
-### Supported OData functions  
+## Supported OData functions  
 
 The following table summarizes the supported and unsupported OData functions.  
 
-<blockquote style="font-size: 13px">**Note:**  OData aggregation extensions are relatively new and either not supported by various client tools (yet) or full support for the extension is not supported by the Analytics Service.  
-</blockquote>   
+> [!NOTE]  
+> OData aggregation extensions are relatively new and either not supported by various client tools (yet) or full support for the extension is not supported by the Analytics Service.  
+  
 
 <table>
 <tbody valign="top">
 <tr>
 <th width="35%">Implemented </th>
-<th width="35%">Currently not implemented</th>
+<th width="35%">Not implemented</th>
 </tr>
 <tr>
 <td>
@@ -236,7 +199,9 @@ The following table summarizes the supported and unsupported OData functions.
 </table>  
 
 
-You use OData functions in a ```filter``` clause, but not in a ```$select``` clause the way that you would use them in a SQL statement.  For example, you can specify:  
+You use OData functions in a ```filter``` clause, but not in a ```$select``` clause the way that you would use them in a SQL statement.  
+
+For example, you can specify:  
 
 ```
 /WorkItems?$filter=toupper(Title) eq 'HELP' 
@@ -246,8 +211,9 @@ However, you can't enter the following:
 /WorkItems?$select=WorkItemId,State,toupper(Title)
 ```  
 
-##Related notes  
-<blockquote style="font-size: 14px">**Note:**  Currently, the Analytics service is on a 15 minute refresh schedule.  </blockquote>  
+## Related notes  
+>[!NOTE]  
+>The Analytics Service is on a 15 minute refresh schedule.  
 
 - [WIT analytics](wit-analytics.md)  
 - [Aggregate data](aggregated-data-analytics.md)  

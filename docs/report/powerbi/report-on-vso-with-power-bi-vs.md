@@ -7,12 +7,14 @@ ms.topic: get-started-article
 ms.assetid: BBCB1E19-F2D2-4C52-BE8C-7CEF8A7FDB0B  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 08/04/2017
 ---
 
-#Create Power BI dashboards and reports 
 
-<b>Team Services</b>
+# Create Power BI dashboards and reports 
+**Team Services**
+
+[!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 You can create dashboards, individual reports, or explore data collected for your Team Services account once you [connect to Power BI](connect-vso-pbi-vs.md). As the Power BI data model for Team Services grows to include more features you'll have access to more advanced reporting. As Power BI is upgraded, it will provide you with additional visualizations and capabilities over time without any upgrades.
 

@@ -28,28 +28,6 @@ The Search extensions make it easy to search for information across all
 your projects, from anywhere and any computer or mobile device, using just a web browser.
 You can narrow down your results and focus in on what you need by using filters.
 
-<div style="float:left;width:335px;margin:3px">
-<p style="padding-bottom:5px">![Code Search](_img/_shared/codesearch-icon.png)</p>
-<p style="font-weight:bold;padding-bottom:5px">Code Search</p>
-<ul style="padding-left:30px">
- <li style="margin-bottom:5px">[Get started](code/get-started.md)</li>
- <li style="margin-bottom:5px">[Filter projects, repos, and paths](code/repos-and-projects.md#filter-options)</li>
- <li style="margin-bottom:5px">[Rich search results](code/get-started.md#start-results)</li>
- <li style="margin-bottom:5px">[Trace code changes](code/search-results.md#tracechanges)</li>
- <li style="margin-bottom:5px">[Find related items](code/search-results.md#findrelatedfiles)</li>
-</ul>
-</div>
-<div style="float:left;width:335px;margin:3px">
-<p style="padding-bottom:5px">![Work Item Search](_img/_shared/wisearch-icon.png)</p>
-<p style="font-weight:bold;padding-bottom:5px">Work Item Search</p>
-<ul style="padding-left:30px">
- <li style="margin-bottom:5px">[Get started](workitem/get-started.md)</li>
- <li style="margin-bottom:5px">[Choose projects and area paths](workitem/get-started.md#choose-areas)</li>
- <li style="margin-bottom:5px">[Full text search across all fields](workitem/advanced-search-syntax.md#acrossfield)</li>
- <li style="margin-bottom:5px">[Search with quick filters](workitem/advanced-search-syntax.md#quickfilters)</li>
- <li style="margin-bottom:5px">[Rich search results](workitem/search-results.md)</li>
-</ul>
-</div>
-<div style="clear:left;font-size:100%"></div>
+![Code Search](_img/_shared/codesearch-icon.png) &nbsp; **[Code Search](code/code-search.md)**
 
-
+![Work Item Search](_img/_shared/wisearch-icon.png) &nbsp; **[Work Item Search](workitem/work-item-search.md)**

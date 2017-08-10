@@ -1,15 +1,14 @@
-- name: Work tracking customization
+- name: Work Item Customization
   href: index.md
 - name: Overview
   items:
   - name: About work tracking customization
     href: customize-work.md
-  - name: About team projects and process models (REFACTOR)
 - name: Quickstarts
   items:
-  - name: Add a custom field
+  - name: Add a custom field (To be written)
     href: add-custom-field.md
-  - name: Add a custom work item types
+  - name: Add a custom work item type
     href: add-custom-wit.md
 - name: Tutorials
   items:
@@ -36,8 +35,12 @@
   - name: Customize an On-premises XML process (NEW)
 - name: Concepts
   items:
-  - name: Default processes
-    href: /vsts/work/guidance/choose-process
+  - name: Inheritance process model
+    href: inheritance-process-model.md
+  - name: Hosted XML process model
+    href: hosted-xml-process-model.md
+  - name: On-premises XML process model
+    href: on-premises-xml-process-model.md
 - name: How-to guides
   items:
   - name: Hosted XML

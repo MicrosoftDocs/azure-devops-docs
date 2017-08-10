@@ -6,10 +6,10 @@ ms.technology: vs-devops-reporting
 ms.assetid: FEF88D72-32D7-4DE8-B11E-BCB1A491C3FC
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 08/04/2017
 ---
 
-#Query for trend data
+# Query for trend data
 
 **Team Services**  
 
@@ -55,9 +55,8 @@ https://[account].analytics.visualstudio.com/DefaultCollection/[project]/_odata/
 
 In this query, there are two key differences. We added a filter clause to filter the data to a specific iteration and the dates are now being compared to the iteration start and end dates versus a hard coded date.  
 
-<blockquote style="font-size: 13px">
-**Note:** Using Power Query you can craft the query such that it provides a rolling chart using a formal, such as, todays date minus 30 days for a rolling 30 day chart.
-</blockquote>
+>[!NOTE]  
+>Using Power Query you can craft the query such that it provides a rolling chart using a formal, such as, todays date minus 30 days for a rolling 30 day chart.
 
 Now that we have a basic query that we can use, it's time to jump into a client tool. For this walkthrough I will use Power BI, but the same applies to Excel.  
 

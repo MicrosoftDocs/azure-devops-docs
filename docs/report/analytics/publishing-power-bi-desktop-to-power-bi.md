@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 08/04/2017
 ---
 
 # Publish a Power BI Desktop file to PowerBI.com 
@@ -61,9 +61,9 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 At this point the data will update on your scheduled basis using the credentials entered.
 
-<blockquote style="font-size: 13px">
-    **Important:** If you are using a Personal Access Token, remember that the token expires on a set interval. When it expires you'll need to [update the credentials](client-authentication-options.md#update-credentials). Otherwise the report, while still displaying data, won't update with the latest data.
-</blockquote>
+>[!IMPORTANT]   
+>If you are using a Personal Access Token, remember that the token expires on a set interval. When it expires you'll need to [update the credentials](client-authentication-options.md#update-credentials). Otherwise the report, while still displaying data, won't update with the latest data.
+
 
 
 ## Related notes

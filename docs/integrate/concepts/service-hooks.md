@@ -9,7 +9,7 @@ ms.author: elbatk
 ms.date: 08/04/2016
 ---
 
-# Service hooks in Team Services
+# Service hooks in Visual Studio Team Services
 Using the [Subscriptions](https://review.docs.microsoft.com/en-us/rest/api/vsts/servicehooks/?branch=master) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event 
 occurs in a team project. For example, you can create a subscription to notify your service when a build fails.
 
@@ -21,6 +21,6 @@ Supported events:
 - work item created, updated, deleted, restored or commented on
 - message posted to a team room
 
-You can configure filters on your subscriptions to control which events trigger an action. For example, you can filter the build completed event based on the build status. For a complete set of supported events and filter options, see the [event reference](../get-started/service-hooks/events.md).
+You can configure filters on your subscriptions to control which events trigger an action. For example, you can filter the build completed event based on the build status. For a complete set of supported events and filter options, see the [event reference](../../service-hooks/events.md).
 
-For a complete set of supported consumer services and actions, see the [consumer reference](../get-started/service-hooks/consumers.md).
+For a complete set of supported consumer services and actions, see the [consumer reference](../../service-hooks/consumers.md).

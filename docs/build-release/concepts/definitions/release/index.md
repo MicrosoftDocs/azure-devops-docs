@@ -27,6 +27,8 @@ An example of a release process that can be modeled through a release definition
 
 ![Artifacts in a definition and release](_img/definition-01.png)
 
+[What's the difference between a release definition and a release?](../../releases/index.md)
+
 In this example, a release of a website is created by collecting specific versions of two builds (artifacts), each from a different build definition. The release is first deployed to a Dev environment and then forked in parallel to two QA environments in parallel. If the deployment succeeds in both the QA environments, the release is deployed to Prod ring 1 and then to Prod ring 2. Each production ring represents multiple instances of the same website deployed at various locations around the globe.
 
 An example of how deployment automation can be modeled within an environment is shown below:

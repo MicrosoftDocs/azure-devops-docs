@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/28/2017
+ms.date: 08/02/2017
 ---
 
 #Scaling Agile - Practices that scale  
@@ -42,7 +42,7 @@ By adopting a shared cadence and set of periodic communications, you create a co
 Engaging customers throughout your product lifecycle is a primary Agile principle. Empower each team to interact directly with customers on the feature sets they own. 
 
 - **Continuous feedback**: Build in customer feedback loops. These can take many forms: 
-	- **Customer voice**: Make it easy for customers to give feedback, add ideas, and vote on next generation features. This is often done through a dedicated website similar to [Visual studio User Voice](https://visualstudio.uservoice.com/forums/121579-visual-studio). 
+	- **Customer voice**: Make it easy for customers to give feedback, add ideas, and vote on next generation features. This is often done through a dedicated website similar to [Visual studio User Voice](https://visualstudio.uservoice.com/forums/330519-team-services). 
 	- **Product feedback**: In-product feedback buttons are another way to solicit feedback about the product experience or specific features. 
 	- **Customer demos**: Regularly scheduled demos that solicit feedback from your customers can help shape next generation products and keep you on track to build applications your customers want to consume.  
 - **Early adopter programs**: Such programs should be developed with the idea that all teams may want to participate as some point. Early adopters gain access to early versions of working software which they then can provide feedback. Oftentimes, these programs work by turning select [feature flags](#feature-flags) on for an early adopter list. 
@@ -64,7 +64,7 @@ The more insight you and your teams have into the goal, vision, and progress of 
 Some specific Agile practices that scale well and lead to happier, engaged, and productive employees include:  
 
 - **Embedded leadership**: Empower teams and leaders within the organization to self-organize and self-manage as much as possible. Team autonomy increases organizational agility team effectiveness. Ensure teams have the corporate sponsorship needed to succeed.  
-- **Daily stand-ups**: Or, [Scrum meetings](../scrum/task-board.md#daily-scrum-meetings) help keeps teams focused on what they need to do daily to maximize their ability to meet their sprint commitments. As organizations grow, they should consider staggering these meetings so that cross-team participation can occur as needed.  
+- **Daily stand-ups**: Or, [Scrum meetings](../concepts/best-practices-scrum.md#daily-scrum-meetings) help keeps teams focused on what they need to do daily to maximize their ability to meet their sprint commitments. As organizations grow, they should consider staggering these meetings so that cross-team participation can occur as needed.  
 - **[Scrum of scrums](http://guide.agilealliance.org/guide/scrumofscrums.html)**: Daily standups of members from different Agile teams meet daily to report work completed, next steps, and issues or blocks occurring within their representative teams. 
 - **Team communications**: Provide and encourage teams to share their practices and guidance, which they and other teams can access through the corporate network. Common tools used for this purpose include team wikis, OneNotes, or markdown sites.  
 - **Collaboration**: Encourage informal team-to-team communications as well as collaboration within the team. Institutionalizing practices such as code reviews, design reviews, spec reviews not only increase team collaboration but help develop individual as well as overall corporate competence.  
@@ -74,7 +74,7 @@ Some specific Agile practices that scale well and lead to happier, engaged, and 
 You improve organizational effectiveness by attending to the culture you want to build. Culture changes occur when individuals, teams, and organizations adopt one or more continuous improvement practices. Several scalable Agile practices include: 
 
 - **Retrospectives**: By asking questions such as: “What went well?”, “What should we do differently?”, and “What should we stop doing?” help teams reflect on how they can improve on their processes and practices. Retrospectives help teams surface what is working well and what needs improvement. Retrospectives can be conducted anytime and anywhere. However, institutionalizing certain retrospectives at a regular cadence help institutionalize continuous improvement practices. For example:  
-	- **[Sprint retrospectives](../scrum/sprint-burndown.md#sprint-retrospective-meeting)** can help teams identify areas to improve at a regular cadence.   
+	- **[Sprint retrospectives](../concepts/best-practices-scrum.md#sprint-retrospective-meeting)** can help teams identify areas to improve at a regular cadence.   
 	- **Release retrospectives** can help organizations identify areas to improve communications and internal practices and fuel improvement for the next release.
 	- **Operational reviews**: are typically held monthly and include representatives from a whole value stream. Spanning a portfolio of projects and other initiatives and using objective, quantitative data, design these retrospectives to provoke discussions about the dynamics affecting performance between teams. 
 

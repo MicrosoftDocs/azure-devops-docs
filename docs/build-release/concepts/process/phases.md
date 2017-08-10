@@ -135,7 +135,7 @@ Here are some examples where multiple execution is appropriate:
   named **Browser** with the value `IE,Chrome,Edge,Firefox` and
   specify that variable to be used as a multiplier.
   As the [agent demands](../agents/agents.md#capabilities) are specified only once for an agent phase, all agents
-  should be pre-installed with all the browsers. As with multi-configuration
+  should be pre-installed with all the browsers. As with multiple executions
   deployment, you can specify the maximum number of agents that can
   be used at the same time for multi-configuration testing.
 
@@ -156,7 +156,7 @@ To use multi-configuration or parallel deployment, set the options in the agent 
   You can also set the timeout for each task individually -
   see [task control options](tasks.md#controloptions).
 
-![Configuring multi-configuration execution](_img/phases-04.png)
+![Configuring multiple executions parallelism](_img/phases-04.png)
 
 <a name="multipliers"></a>
 To use **Multipliers** for deployment, you must:
