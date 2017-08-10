@@ -13,8 +13,8 @@ ms.date: 08/12/2016
 
 ## Overview
 
-* [About continuous testing
-](overview.md)
+* [About continuous testing](overview.md)
+* [About continuous integration and continuous delivery](../overview.md?toc=/vsts/build-release/toc.json)
 
 ## 5-minute Quickstarts
 

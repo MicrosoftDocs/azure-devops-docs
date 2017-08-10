@@ -24,7 +24,7 @@ tools everyone in the team can use to drive quality and collaboration throughout
 Learn how to create tests plans and test cases, and run them
 using the VSTS or TFS web portal.
 
-* [Test from the Kanban board](../work/kanban/add-run-update-tests.md)
+* [Test from the Kanban board](../work/kanban/add-run-update-tests.md?toc=/vsts/manual-test/toc.json)
 * [Create a test plan](getting-started/create-a-test-plan.md)
 * [Create test cases](getting-started/create-test-cases.md)
 * [Run manual tests](getting-started/run-manual-tests.md)
@@ -42,7 +42,7 @@ tasks and test cases automatically linked to that work item.
 ## How-to Guides
 
 * [Track test status](getting-started/track-test-status.md)
-* [Delete test artifacts](../work/backlogs/remove-delete-work-items.md)
+* [Delete test artifacts](../work/backlogs/remove-delete-work-items.md?toc=/vsts/manual-test/toc.json)
 * [Perform user acceptance testing](getting-started/user-acceptance-testing.md)
 * [Test different configurations](test-different-configurations.md)
 * [Share steps between test cases](mtm/share-steps-between-test-cases.md)
@@ -75,7 +75,7 @@ tasks and test cases automatically linked to that work item.
 ## Reference
 
 * [REST API for test management](../integrate/index.md)
-* [Unable to connect](../work/reference/error/tf31002-unable-connect-tfs.md)
+* [Unable to connect](../work/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/manual-test/toc.json)
 
 ## Resources
 

@@ -63,7 +63,7 @@ from the cards on the Kanban board, and then progressively monitor
 status directly from the card. Developers and testers can use these
 rich capabilities to simplify maximizing quality within their teams.
 In Team Services, you need just [Basic access](../setup-admin/team-services/buy-basic-access-add-team-services-users.md)
-to use these features. See more at [Add, run, and update inline tests](../work/kanban/add-run-update-tests.md).
+to use these features. See more at [Add, run, and update inline tests](../work/kanban/add-run-update-tests.md?toc=/vsts/manual-test/toc.json).
 
 ![Managing manual tests from the Kanban board](_img/manual-testing/kanban-board-01.png)
 
@@ -178,13 +178,13 @@ and [Provide stakeholder feedback](stakeholder/provide-stakeholder-feedback.md).
 
 * **Rich Diagnostic data collection**. Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
 
-* **End to End Traceability**. Team Services and Team Foundation Server provide [end-to-end traceability of your requirements, builds, tests and bugs](../work/track/link-work-items-support-traceability.md). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
+* **End to End Traceability**. Team Services and Team Foundation Server provide [end-to-end traceability of your requirements, builds, tests and bugs](../work/track/link-work-items-support-traceability.md?toc=/vsts/manual-test/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
 
 * **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend Team Services and Team Foundation Server](../integrate/get-started/overview.md). Use the [REST APIs](../integrate/get-started/rest/basics.md) and [contribution model](../extend/develop/contributions-overview.md) available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
 
 ## Additional resources
 
-* [Get started with manual testing](../work/kanban/add-run-update-tests.md)
+* [Get started with manual testing](../work/kanban/add-run-update-tests.md?toc=/vsts/manual-test/toc.json)
 * [Advanced manual testing techniques](getting-started/user-acceptance-testing.md)
 * [Get started with exploratory testing](getting-started/perform-exploratory-tests.md)
 * [Advanced exploratory testing techniques](explore-workitems-exploratory-testing.md)

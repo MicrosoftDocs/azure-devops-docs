@@ -21,7 +21,7 @@ ms.custom: mvc
 # CI/CD of an ASP.NET Core app to an Azure web app
 
 Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline to automatically deploy your ASP.NET Core web app to Azure App Services. 
-You will use the Azure portal to configure a basic CI/CD pipeline. You will then use the VSTS portal to view the CI/CD pipeline.
+In this quickstart you will use the Azure portal to configure a basic CI/CD pipeline, and then see it build and deploy your app.
 
 ![A typical release pipeline for web applications](../get-started/_img/ci-cd/part-1/ReleasePipeline.png)
 
