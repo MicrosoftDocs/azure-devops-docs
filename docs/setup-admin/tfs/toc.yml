@@ -7,11 +7,11 @@
   - name: Single server install
     href: ./install/single-server.md
   - name: Create a team project
-    href: ../create-team-project.md
+    href: ../create-team-project.md?toc=/vsts/setup-admin/tfs/toc.json
   - name: Add users to projects
-    href: ../add-users.md
+    href: ../add-users.md?toc=/vsts/setup-admin/tfs/toc.json
   - name: Restrict access to resources
-    href: ../restrict-access-tfs.md
+    href: ../restrict-access-tfs.md?toc=/vsts/setup-admin/tfs/toc.json
   - name: Configure an SMTP server
     href: ./admin/setup-customize-alerts.md
 - name: Tutorials
@@ -35,7 +35,7 @@
     - name: Get started
       href: ./install/get-started.md
     - name: Requirements
-      href: ../requirements.md
+      href: ../requirements.md?toc=/vsts/setup-admin/tfs/toc.json
     - name: Requirement changes
       href: ../requirement-changes-tfs15.md
     - name: Dual server install
