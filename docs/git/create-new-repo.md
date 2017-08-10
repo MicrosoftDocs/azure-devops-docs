@@ -1,44 +1,46 @@
 ---
-title: Create a new Git repo in your team project | Team Services & TFS
-description: Create a new Git repo in a Visual Studio Team Services or Team Foundation Server Team Project
+title: Create a new Git repo in your  project | Team Services & TFS
+description: Create a new Git repo in a Visual Studio Team Services or Team Foundation Server Project
 ms.assetid: 9c6fabfa-ae17-4e65-93a2-9e476f9f88ba
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: sdanie
-ms.date: 07/14/2017
+ms.date: 07/24/2017
 ---
 
-# Create a new Git repo in your team project
+# Create a new Git repo in your project
 
 #### Team Services | TFS 2015 & TFS 2017 
 
-Team projects provide a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. You can use Git repos in your team projects to manage your source code as your project grows. Every Git repo has its own set of permissions to isolate itself from other work in your project. This guide shows you how to create a Git repo using the web portal for either Visual Studio Team Services (VSTS - hosted on Azure) or Team Foundation Server (TFS - on-premises).
+VSTS and TFS projects contain Git repositories, work items, builds, and releases. You can use Git repos in your projects to manage your source code as your project grows. This guide shows you how to create a Git repo using the web portal for either Visual Studio Team Services (VSTS - hosted on Azure) or Team Foundation Server (TFS - on-premises).
 
 ## Create a repo using the web portal 
 
-0. Navigate to your team project by browsing to `https:\\<your project name>.visualstudio.com`.
+0. Navigate to your project by browsing to `https:\\<your account name>.visualstudio.com` and selecting the name of your project. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.
 
-  If you don't have a VSTS account, [sign up](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md) to upload and share code in free unlimited private Git repositories.
+  ![Select project](_img/repo-mgmt/select-vsts-project.png) 
+  
+  If you don’t have a VSTS account, you can [sign up](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md) for one for free. Each account includes free, unlimited private Git repositories.
 
-0. In the team project area in the web portal, select **Code**, then select the drop-down next to the current repo name and choose **New Repository**.
+0. In the **Project** area in the web portal, select **Code**, then select the drop-down next to the current repo name and choose **New Repository**.
 
   ![Choose new repository from the web interface](_img/repo-mgmt/create-vsts-repo.png)    
 
-0. In the **Create a new repository** dialog, verify that Git is the repo type and enter a name for your new repo. You can also choose to add a README and create a .gitignore for the type of code you plan to manage in the repo. A [README](create-a-readme.md) contains information about the code in your repo, and a [.gitignore](./tutorial/ignore-files.md) file tells Git which types of files to ignore, such as temporary build files  from your development environment.
+0. In the **Create a new repository** dialog, verify that Git is the repo type and enter a name for your new repo. You can also choose to add a README and create a .gitignore for the type of code you plan to manage in the repo. A [README](create-a-readme.md) contains information about the code in your repo, and a [.gitignore](./tutorial/ignore-files.md) file tells Git which types of files to ignore, such as temporary build files from your development environment.
 
   ![Set options for your new repo in the Create a Git repo dialog](_img/repo-mgmt/create-a-new-repository.png)
 
 0. When you're happy with the repo name and choices, select **Create**.
 
-  A new empty Git repo is now created in your team project. 
+  A new empty Git repo is now created in your project. 
 
     - If you created an empty repo (no README or .gitignore), you'll see instructions on how to [clone](tutorial/clone.md) the repo to your computer or [push](tutorial/pushing.md) code in an existing repo into the newly created one.
     - In this example you created a README and a .gitignore, so you'll see an overview of the files in your repo, and you can [clone](tutorial/clone.md) the repo using the **Clone** link on the upper right of the page to get working with a local copy of the repo immediately. 
 
 ## Clone the repo to your computer
 
-To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with. 
+To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](./tutorial/commits.md) and [branches](./tutorial/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
 0. In this example, you'll clone the repo is using Git command line tools:
 
@@ -54,13 +56,13 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
   ```
   git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
   ```
-  After running the previous command, Git downloads and creates a copy of the code from the repo in a new folder for you to work with.
+  After running the previous command, Git downloads a copy of the code, including all [commits](./tutorial/commits.md) and [branches](./tutorial/branches.md) from the repo, into a new folder for you to work with.
 
   Keep this command window open, as you'll use it in the following steps.
 
 ## Work with the code
 
-In this step, we'll make a change to the files on your computer, commit them, push them up to the repo that is stored on the server, and view the changes there.
+In this step, we'll make a change to the files on your computer, commit the changes locally, push the commit up to the repo that is stored on the server, and view the changes there.
 
 0. Browse to the folder on your computer where you cloned the repo, open the `README.md` file in your editor of choice, make some changes, and save and close the file.
 
@@ -94,15 +96,15 @@ In this step, we'll make a change to the files on your computer, commit them, pu
 
 ## Clean up resources
 
-You can remove unused Git repos from your team project when they are no longer needed. If you want to save the repo (and its [commit history](tutorial/history.md)) but no longer need to work with it, consider [renaming](repo-rename.md) the repo and [locking](lock-branches.md) its default branch instead of removing it.
+You can remove unused Git repos from your project when they are no longer needed. If you want to save the repo (and its [commit history](tutorial/history.md)) but no longer need to work with it, consider [renaming](repo-rename.md) the repo and [locking](lock-branches.md) its default branch instead of removing it.
 
-You cannot remove a repo if it is the only Git repo in the Team Project. If you need to delete the only Git repo in a Team Project, create a new Git repo first, then delete the repo.
+You cannot remove a repo if it is the only Git repo in the project. If you need to delete the only Git repo in a project, create a new Git repo first, then delete the repo.
 
-To delete a repo, see [Delete a Git repo from your team project](delete-existing-repo.md).
+To delete a repo, see [Delete a Git repo from your project](delete-existing-repo.md).
 
 ## Next steps
 
-- New to git repos? [Learn more](https://www.visualstudio.com/learn/set-up-a-git-repository/)
+- New to Git repos? [Learn more](https://www.visualstudio.com/learn/set-up-a-git-repository/)
 - [Invite others](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) to collaborate with you in the repo
 - Learn more about [cloning](./tutorial/clone.md) the repo to your computer
 - Learn about the general [Git workflow](./tutorial/gitworkflow.md) that most developers use when writing code and sharing it with the team
