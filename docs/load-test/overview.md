@@ -17,7 +17,7 @@ ms.date: 08/12/2016
 
 ![Cloud-based Load Testing](_img/performance-testing/IC838830.png)
 
-Load test your code with hundreds of thousands of users using 
+Load test your app with hundreds of thousands of users using 
 [Visual Studio Team Services](http://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409&wt.mc_id=o~msft~vscom~getstarted-hero~dn906133&campaign=o~msft~vscom~getstarted-hero~dn906133&scenario=test).
 
 ## Comprehensive testing capabilities

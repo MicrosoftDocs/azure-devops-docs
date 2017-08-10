@@ -12,11 +12,17 @@ ms.date: 08/09/2016
 
 # Manual and exploratory testing
 
+Visual Studio Team Services and Team Foundation Server provide rich and powerful
+tools everyone in the team can use to drive quality and collaboration throughout the development process.
+
 ## Overview
 
 * [About manual and exploratory testing](overview.md)
 
 ## 5-minute Quickstarts
+
+Learn how to create tests plans and test cases, and run them
+using the VSTS or TFS web portal.
 
 * [Test from the Kanban board](../work/kanban/add-run-update-tests.md)
 * [Create a test plan](getting-started/create-a-test-plan.md)
@@ -24,6 +30,10 @@ ms.date: 08/09/2016
 * [Run manual tests](getting-started/run-manual-tests.md)
 
 ### Test &amp; Feedback extension
+
+Use the Test &amp; Feedback extension to associate work items
+with a new or an in-progress exploratory session, and create new bugs,
+tasks and test cases automatically linked to that work item.
 
 * [Install the extension](getting-started/perform-exploratory-tests.md)
 * [Test in Connected mode](connected-mode-exploratory-testing.md)
@@ -69,9 +79,10 @@ ms.date: 08/09/2016
 
 ## Resources
 
-* [Get Stakeholder feedback](../collaborate/feedback/index.md)
-* [Using Microsoft Test Manager](https://msdn.microsoft.com/en-us/library/jj635157.aspx)
-* [Blog posts for testing](https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/)
-* [Blog posts for test management](https://blogs.msdn.microsoft.com/visualstudioalm/tag/test-management/)
-* [Test & Feedback posts](https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4)
+| | |
+| --- | --- |
+| [Get Stakeholder feedback](../collaborate/feedback/index.md) | [Using Microsoft Test Manager](https://msdn.microsoft.com/en-us/library/jj635157.aspx) |
+| [Blog posts for testing](https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/) | [Blog posts for test management](https://blogs.msdn.microsoft.com/visualstudioalm/tag/test-management/) |
+| [Test & Feedback posts](https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4) | |
+| | |
 

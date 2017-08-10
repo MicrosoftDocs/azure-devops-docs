@@ -20,8 +20,7 @@ ms.custom: mvc
 
 # CI/CD of an ASP.NET Core app to an Azure web app
 
-Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your
-ASP.NET Core apps. This quickstart shows how to set up CI and CD to deploy an ASP.NET Core application to an Azure web app.
+Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline to automatically deploy your ASP.NET Core web app to Azure App Services. 
 You will use the Azure portal to configure a basic CI/CD pipeline. You will then use the VSTS portal to view the CI/CD pipeline.
 
 ![A typical release pipeline for web applications](../get-started/_img/ci-cd/part-1/ReleasePipeline.png)
@@ -31,7 +30,7 @@ With your CI/CD processes in place, you'll push a change into your team's Git re
 ![Screenshot showing ASP.NET Core web app](_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
 [!INCLUDE [prerequisites](_shared/prerequisites.md)]
-* Have an Azure subscription. If you don't have an Azure subscription, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+* An Azure subscription. If you don't have an Azure subscription, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
 [!INCLUDE [import-code-aspnet-core](_shared/import-code-aspnet-core.md)]
 
@@ -74,8 +73,4 @@ You're now ready to collaborate with a team on an ASP.NET Core app with a CI/CD 
 
 When you configured your CI/CD process in this quickstart, a build and release definition were automatically created in your VSTS project. You can modify these build and release definitions to meet the needs of your team. To learn more see one of these tutorials:
 
-* [Define your continuous integration (CI) build process](../tutorials/define-ci-build-process.md)
-* [Define your continuous deployment (CD) process](../tutorials/define-cd-release-process.md)
-* [Define your multi-stage continuous deployment (CD) process](../tutorials/define-multistage-release-process.md)
-
-[//]: # (TODO [!INCLUDE [include](_shared/quickstart-next-steps.md)
+[TBD]
