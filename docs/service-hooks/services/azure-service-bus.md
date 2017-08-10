@@ -63,7 +63,7 @@ messages using a Azure Service Bus queue. For details, go [here](http://azure.mi
 
 4. On the **Service Hooks** tab, run the subscription wizard.
 
-   For details about the subscription wizard, go [here](../get-started.md).
+   For details about the subscription wizard, go [here](../index.md).
 
    <img alt="Add a service hook" src="./_img/azure-service-bus/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 
@@ -99,7 +99,7 @@ For details, go [here](http://azure.microsoft.com/en-us/documentation/articles/s
 
 4. On the **Service Hooks** tab, run the subscription wizard.
 
-   For details about the subscription wizard, go [here](../get-started.md). 
+   For details about the subscription wizard, go [here](../index.md). 
 
    <img alt="Add a service hook" src="./_img/azure-service-bus/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 
@@ -141,7 +141,7 @@ For details, go [here](http://azure.microsoft.com/en-us/documentation/services/n
 
 4. On the **Service Hooks** tab, run the subscription wizard.
  
-   For details about the subscription wizard, go [here](../get-started.md).
+   For details about the subscription wizard, go [here](../index.md).
 
    <img alt="Add a sevice hook" src="./_img/azure-service-bus/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 

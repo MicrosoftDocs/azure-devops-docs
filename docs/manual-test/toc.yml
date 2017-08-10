@@ -79,7 +79,7 @@
   - name: Reference
     items:
     - name: REST API for test management
-      href: ../integrate/overview.md
+      href: ../integrate/index.md
     - name: Unable to connect
       href: ../work/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/manual-test/toc.json
   - name: Resources

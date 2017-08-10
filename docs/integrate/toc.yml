@@ -1,5 +1,5 @@
-- name: Overview (UPDATE)
-  href: ./overview.md
+- name: Overview
+  href: ./index.md
 - name: Quickstarts
   items:
   - name: .NET - Create a bug (TODO)
@@ -37,7 +37,7 @@
   - name: Authenticate with OAuth 2.0
     href: get-started/authentication/oauth.md
   - name: Create service hooks subscriptions programmatically
-    href: get-started/service-hooks/create-subscription.md
+    href: ../service-hooks/create-subscription.md?toc=/vsts/integrate/toc.json
 - name: Reference
   items:
   - name: .NET client libraries
@@ -45,9 +45,9 @@
   - name: Service hooks
     items:
     - name: Service hooks consumers and actions
-      href: get-started/service-hooks/consumers.md
+      href: ../service-hooks/consumers.md?toc=/vsts/integrate/toc.json
     - name: Service hooks events
-      href: get-started/service-hooks/events.md
+      href: ../service-hooks/events.md?toc=/vsts/integrate/toc.json
   - name: REST APIs
     items:
     - name: Reference repo

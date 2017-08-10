@@ -113,7 +113,7 @@ Resource versioning is applicable when an API is in preview. For most scenarios,
 
 The event payload sent to certain consumers (like Web hooks, Azure Service Bus, Azure Storage) includes a JSON representation of subject resource (for example, a build or work item). The representation of this resource can have different forms (or versions). 
 You can specify the version of the resource that you want to have sent to the consumer service via the `resourceVersion` field on the subscription.
-The resource version is the same as the [API version](../../get-started/rest/basics.md). Not specifying a resource version means "latest released". You should always specify a resource version - this ensures a consistent event payload over time.
+The resource version is the same as the [API version](../integrate/get-started/rest/basics.md). Not specifying a resource version means "latest released". You should always specify a resource version - this ensures a consistent event payload over time.
 
 ## Q&A
 
@@ -121,7 +121,7 @@ The resource version is the same as the [API version](../../get-started/rest/bas
 
 #### Q: Are there services that I can subscribe to manually?
 
-A: Yes. [Here](./get-started.md) are the services that you can subscribe to from the administration page for a team project.
+A: Yes. [Here](./index.md) are the services that you can subscribe to from the administration page for a team project.
 
 #### Q: Are there C# libraries that I can use to create subscriptions?
 

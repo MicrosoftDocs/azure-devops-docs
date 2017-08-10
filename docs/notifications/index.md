@@ -48,4 +48,4 @@ ms.date: 08/03/2017
 ## Resources 
 
 - [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams) 
-- [Integrate with service hooks](vsts/marketplace/integrate/service-hooks/get-started)  
+- [Integrate with service hooks](../service-hooks/index.md)  

@@ -93,4 +93,4 @@
     - name: Work item search extension
       href: ../search/workitem/get-started.md
   - name: How to build Marketplace extensions
-    href: ../extend/overview.md#extensions
+    href: ../extend/index.md#extensions

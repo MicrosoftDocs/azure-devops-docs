@@ -1,5 +1,5 @@
 - name: Overview
-  href: ./overview.md
+  href: ./index.md
 - name: Quickstarts
   items:
   - name: Write your first extension

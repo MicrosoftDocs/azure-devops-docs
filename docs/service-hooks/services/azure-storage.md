@@ -64,7 +64,7 @@ This can be done when you create a service hook subscription.
 
 2. On the **Service Hooks** tab, run the subscription wizard.
 
-   For details about the subscription wizard, go [here](../get-started.md).
+   For details about the subscription wizard, go [here](../index.md).
 
    <img alt="Add a service hook" src="./_img/azure-storage/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 

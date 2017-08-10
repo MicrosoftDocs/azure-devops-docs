@@ -427,7 +427,7 @@ To learn more about build definition settings, see:
 
 ### How do I programmatically create a build definition?
 
-[REST API Reference: Create a build definition](../../integrate/overview.md)
+[REST API Reference: Create a build definition](../../integrate/index.md)
 
 
 <!-- ENDSECTION -->

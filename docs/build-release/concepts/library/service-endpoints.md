@@ -452,7 +452,7 @@ available through extensions are:
   start, stop, or snapshot VMware virtual machines.
 
 For information about creating your own custom extensions, see
-[Overview of extensions for Visual Studio Team Services](../../../integrate/overview.md).
+[Overview of extensions for Visual Studio Team Services](../../../integrate/index.md).
 
 <h2 id="security">Endpoint security</h2>
 

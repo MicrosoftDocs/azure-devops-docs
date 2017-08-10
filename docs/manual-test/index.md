@@ -64,7 +64,7 @@ ms.date: 08/09/2016
 
 ## Reference
 
-* [REST API for test management](../integrate/overview.md)
+* [REST API for test management](../integrate/index.md)
 * [Unable to connect](../work/reference/error/tf31002-unable-connect-tfs.md)
 
 ## Resources

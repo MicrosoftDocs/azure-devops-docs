@@ -1,7 +1,7 @@
 - name: Integrate with other services
   items:
   - name: Service hooks
-    href: get-started.md
+    href: index.md
   - name: Services
     items:
     - name: AppVeyor

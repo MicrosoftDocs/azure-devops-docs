@@ -23,7 +23,7 @@ For more information about the JSON payloads posted by this consumer, see [event
 
 2. On the Service Hooks tab, run the subscription wizard.
 
-   For details about the subscription wizard, go [here](../get-started.md). 
+   For details about the subscription wizard, go [here](../index.md). 
 
    <img alt="Team project administraton page, service hooks tab, add icon" src="./_img/webhooks/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 
