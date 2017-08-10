@@ -158,7 +158,7 @@ None
                     is to hardcode the values in the <a href="#nuspec">.nuspec file</a>.
                 </li>
             </ul>
-            To package a single file, click the <strong>...</strong> button and select the file. To package multiple files, use single-folder wildcards (```*```) and recursive wildcards (```**```). For example, specify ```**\*.csproj``` to package all .csproj files in all subdirectories in the repo. You can use multiple patterns separated by a semicolon to create more complex queries. You can negate a pattern by prefixing it with "-:". For example, specify ```**\*.csproj;-:**\*Tests.csproj``` to package all .csproj files except those ending in 'Tests' in all subdirectories in the repo.
+           To package a single file, click the <strong>...</strong> button and select the file. To package multiple files, use [file matching patterns](../file-matching-patterns.md). Note that these patterns were updated in version 2 of the NuGet task; if you have a pattern that contains `-:`, use `!` instead.
         </td>
     </tr>
     <tr>
