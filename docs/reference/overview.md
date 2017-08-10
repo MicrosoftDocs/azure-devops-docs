@@ -150,7 +150,7 @@ ms.date: 03/02/2017
 <div style="float:left;width:200px;margin:3px">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Extensibility</p>
 <ul style="padding-left:20px;font-size:90%">
-<li style="margin-bottom:2px">[Marketplace](../marketplace/overview.md)</li>
+<li style="margin-bottom:2px">[Marketplace](../marketplace/index.md)</li>
 <li style="margin-bottom:2px">[Service hooks](../service-hooks/index.md)</li>
 <li style="margin-bottom:2px">[REST API Reference](https://visualstudio.com/integrate/api/overview.md)</li>
 <li style="margin-bottom:2px">[Extending Visual Studio TFS](https://msdn.microsoft.com/library/dd470570.aspx)</li>

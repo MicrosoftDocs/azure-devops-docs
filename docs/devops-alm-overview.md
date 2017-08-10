@@ -287,7 +287,7 @@ With Marketplace extensions (currently in private preview), you can create first
 <div style="float:left;width:170px;margin:6px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Marketplace</p>
 <ul style="padding-left:10px">
-<li style="margin-bottom:2px">[Find marketplace extensions](marketplace/overview.md)</li>
+<li style="margin-bottom:2px">[Find marketplace extensions](marketplace/index.md)</li>
 <li style="margin-bottom:2px">[Buy subscriptions](marketplace/vs-subscriptions/buy-vs-subscriptions.md)</li>
 <li style="margin-bottom:2px">[Get extensions](marketplace/get-vsts-extensions.md)</li>
 </ul>

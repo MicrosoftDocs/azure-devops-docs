@@ -34,7 +34,7 @@ Adding extensions to your Team Services account is incredibly easy:
 1. Search and find extensions for your account in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 2. Install the extension from the Marketplace and start using it in Team Services.
 
-For more information on extensions and the Marketplace, [get started here](./overview.md).
+For more information on extensions and the Marketplace, [get started here](./index.md).
 
 ## Integrating Team Services with other services
 Integrating Team Services with other services is done by creating subscriptions with service hooks. There are two steps to integrating Team Services:

@@ -1,7 +1,7 @@
 - name: Overview
   items:
   - name: Marketplace overview
-    href: overview.md
+    href: index.md
   - name: Marketplace billing overview
     href: marketplace-billing-qa.md
   - name: Get and use Marketplace extensions

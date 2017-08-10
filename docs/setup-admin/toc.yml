@@ -146,7 +146,7 @@
 - name: Resources
   items:
   - name: "Marketplace, billing, and extensions"
-    href: ../marketplace/overview.md
+    href: ../marketplace/index.md
     items:
     - name: Install an extension for Team Services
       href: ../marketplace/get-vsts-extensions.md

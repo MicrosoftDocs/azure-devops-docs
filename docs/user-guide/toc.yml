@@ -67,7 +67,7 @@
 - name: Resources
   items:
   - name: "Marketplace, billing, & extensions"
-    href: ../marketplace/overview.md
+    href: ../marketplace/index.md
   - name: Migrate from TFS to Team Services Tutorial
     href: https://www.visualstudio.com/articles/migration-overview
   - name: Technical articles
