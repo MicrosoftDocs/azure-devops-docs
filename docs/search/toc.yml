@@ -1,50 +1,28 @@
 - name: Overview
   items:
-  - name: "Search your code & work items"
+  - name: About Search
     href: overview.md
 - name: Quickstarts
   items:
   - name: Search code
-    href: code/get-started.md
+    href: code/code-search.md
   - name: Search work items
-    href: workitem/get-started.md
+    href: workitem/work-item-search.md
 - name: How-to Guides
   items:
-  - name: Code Search
-    items:
-    - name: Scope your search
-      href: code/repos-and-projects.md
-    - name: Use search results
-      href: code/search-results.md
-  - name: Work Item Search
-    items:
-    - name: Use search results
-      href: workitem/search-results.md
-- name: Reference
-  items:
-  - name: Code Search
-    items:
-    - name: Advanced search syntax
-      href: code/advanced-search.md
-  - name: Work Item Search
-    items:
-    - name: Adhoc vs built-in search
-      href: ../work/track/adhoc-vs-managed-queries.md
-    - name: Advanced search syntax
-      href: workitem/advanced-search-syntax.md
-  - name: Administer search
+  - name: Use Code Search
+    href: code/advanced-search.md
+  - name: Use Work Item Search
+    href: workitem/advanced-search-syntax.md
+  - name: Administer Search
     href: code/administration.md
 - name: Resources
   items:
-  - name: Code Search
-    items:
-    - name: Video
-      href: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
-    - name: Visual Studio Marketplace
-      href: https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search
-    - name: Blog posts
-      href: https://social.msdn.microsoft.com/Search/en-US?query=code%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5
-  - name: Work Item Search
-    items:
-    - name: Blog posts
-      href: https://social.msdn.microsoft.com/Search/en-US?query=work%20item%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5
+  - name: Code Search Video
+    href: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
+  - name: Code Search on Marketplace
+    href: https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search
+  - name: Code Search blog posts
+    href: https://social.msdn.microsoft.com/Search/en-US?query=code%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5
+  - name: Work Item Search blog posts
+    href: https://social.msdn.microsoft.com/Search/en-US?query=work%20item%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5

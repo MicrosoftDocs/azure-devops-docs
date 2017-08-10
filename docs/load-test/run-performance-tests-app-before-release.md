@@ -17,15 +17,18 @@ ms.date: 08/12/2016
 Find performance issues before you release your app 
 by running load tests with with Visual Studio 
 Enterprise using [Cloud-based Load Testing](http://go.microsoft.com/fwlink/?LinkID=317257)
-to provide virtualÂ machines in the cloud that generate the load of 
-manyÂ users accessing your web site at the same time.
+to provide virtual machines in the cloud that generate the load of 
+many users accessing your web site at the same time.
 All you need is a [Visual Studio Team Services account](http://go.microsoft.com/fwlink/?LinkId=307137).
 
-* [Create a web performance and load test project](#createtests)
-* [Record a web performance test](#recordtests)
-* [Create a load test](#createload)
-* [Run and analyze your load test](#runanalyze)
-* [Improve your load tests](#improvetests)
+In this tutorial, you'll learn how to:
+
+> [!div class="checklist"]
+> * [Create a web performance and load test project](#createtests)
+> * [Record a web performance test](#recordtests)
+> * [Create a load test](#createload)
+> * [Run and analyze your load test](#runanalyze)
+> * [Improve your load tests](#improvetests)
 
 <a name="createtests"></a>
 ## Create a web performance and load test project
@@ -164,12 +167,8 @@ and [run settings properties](https://msdn.microsoft.com/library/ff406976%28v=vs
 
 ![Percentage of new users property](_img/run-performance-tests-app-before-release/percentage-new-users.png)
 
-## See also
+## Next Step
 
-* [Q &amp; A for load testing](reference-qa.md#qavisualstudio)
-* [Run Apache JMeter load tests](get-started-jmeter-test.md) 
-* [Add app performance data](get-performance-data-for-load-tests.md)
-* [Record and replay tests](record-and-replay-cloud-load-tests.md)
-* [Profile live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler)
+* [Run URL-based load tests with Visual Studio Team Services](get-started-simple-cloud-load-test.md)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

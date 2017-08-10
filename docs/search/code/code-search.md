@@ -1,5 +1,5 @@
 ---
-title: Tutorial - Search your code in Visual Studio Team Services and Team Foundation Server
+title: Search your code in Visual Studio Team Services and Team Foundation Server
 description: Get started with Code Search to search code across all of your Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) projects, from anywhere and any computer or mobile device, using your web browser. Find code, trace occurrences across files, discover related items, and explore your project contents.
 ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
 ms.prod: vs-devops-alm
@@ -14,28 +14,8 @@ ms.date: 08/04/2016
 
 **| Team Services |**
 
-By using Code Search you can:
-
-* **Search across all of your projects**:
-  Search in your own codebase and your partner teams' codebases. Use cross-project 
-  searches over all the code in your Team Services or TFS instance to search 
-  across your organization's entire codebase. Narrow your search by using project, repository, 
-  path, file name, and other filter operators. Use wildcards to widen your search and 
-  Boolean operators to fine-tune it. 
-
-* **Find specific types of code**: Use code type filters 
-  to search for specific kinds of code such as definitions, references, functions, 
-  comments, strings, namespaces, and more. You can use Code Search to narrow 
-  down your results to exact code type matches. Navigate quickly to a method 
-  definition to understand its implementation simply by applying the definition 
-  filter, or scope the search to references in order to view calls and maximize 
-  code reuse.
-
-* **Easily drill down or widen your search**: When you find an item of interest, 
-  simply place the cursor on it and use the shortcut menu to quickly search for 
-  that text across all your projects and files. Easily trace how your code works 
-  by using the shortcut menu to search for related items such as definitions and 
-  references - directly from inside a file.<p />
+Use Code Search to search across all of your projects, find specific types of code,
+and easily drill down or widen your search
 
 ## Prepare
 
@@ -113,13 +93,4 @@ For more details, see [Install an extension](../../marketplace/get-vsts-extensio
  
 ## Next steps
 
-* [Filter and scope your search](repos-and-projects.md)
-* [Use the rich search results page](search-results.md)
-
-## See also
-
-* [Choose your search scope](repos-and-projects.md)
-* [Advanced Code Search options](advanced-search.md)
-* [Rich Code Search results](search-results.md)
-* [Set up and administration](administration.md)
-
+* [Learn more about Code Search](advanced-search.md)

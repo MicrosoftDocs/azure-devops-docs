@@ -1,92 +1,52 @@
 ---
 title: Load Testing with Visual Studio and Visual Studio Team Services
-description: About Load Testing, overview of capabilities and features
+description: Load Testing index
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
-ms.assetid: EE700B72-6DE1-4561-BE43-50AB0842FD1F
+ms.assetid: C5C81ACE-0BBA-4D32-9CC9-28CF5C5865A6
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/12/2016
 ---
 
-# Load testing scenarios and capabilities
+# Load testing
 
-**Visual Studio 2017 | Visual Studio 2015 | Team Services | [Previous version](https://msdn.microsoft.com/library/dn250793%28v=vs.120%29.aspx)**  
+## Overview
 
-> See also [Manual and exploratory testing](../manual-test/index.md), [Continuous testing](../build-release/test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
+* [About load testing](overview.md)
 
-![Cloud-based Load Testing](_img/performance-testing/IC838830.png)
+## 5-minute Quickstarts
 
-Load test your code with hundreds of thousands of users using 
-[Visual Studio Team Services](http://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409&wt.mc_id=o~msft~vscom~getstarted-hero~dn906133&campaign=o~msft~vscom~getstarted-hero~dn906133&scenario=test).
+* [Load test with Visual Studio](getting-started-with-performance-testing.md)
+* [Load test with Team Services](get-started-simple-cloud-load-test.md)
+* [Load test with Azure portal](app-service-web-app-performance-test.md)
+* [View and compare results](performance-reports.md)
 
-## Comprehensive testing capabilities
+## Step-by-Step Tutorials
 
-* Load test web sites, apps, and APIs.
+* [Run load tests before release](run-performance-tests-app-before-release.md)
 
-*  Author tests using [Visual Studio](run-performance-tests-app-before-release.md), 
-    [Azure](app-service-web-app-performance-test.md), and
-    [Visual Studio Team Services](get-started-simple-cloud-load-test.md).
+## How-to Guides
 
-*  Quickly create load tests by specifying a [website](get-started-simple-cloud-load-test.md), referencing a 
-    [JMeter test](get-started-jmeter-test.md) file, or
-    [recording and replaying your actions](record-and-replay-cloud-load-tests.md).
+* [Add app performance data](get-performance-data-for-load-tests.md)
+* [Run Apache JMeter load tests](get-started-jmeter-test.md)
+* [Record and replay tests](record-and-replay-cloud-load-tests.md)
 
-*  Run tests or customize them using [powerful tools in Visual Studio](run-performance-tests-app-before-release.md).
+## Troubleshooting
 
-*  You can even use existing unit or functional tests to generate load.
+* [Team Services connectivity](reference-qa.md#qaconnectts)
+* [Visual Studio connectivity](reference-qa.md#troubleshooting)
 
-![Comprehensive testing capabilities](_img/performance-testing/load-test-menu.png)
+## Reference
 
-## Cloud scalable
+* [Q & A](reference-qa.md)
 
-* Scale to hundreds of thousands of concurrent users, and generate hundreds of thousands of connections in minutes.
+## Resources
 
-* Cloud-based load testing leveraging the power of Azure is like having a whole performance lab at your fingertips.
+* [Edit load tests](https://msdn.microsoft.com/library/ff406975%28v=vs.140%29.aspx)
+* [Distribute load tests](https://msdn.microsoft.com/library/dd728093%28v=vs.140%29.aspx)
+* [Analyze load test results](https://msdn.microsoft.com/library/ee923686%28v=vs.140%29.aspx)
+* [Fix undetectable parameters](https://msdn.microsoft.com/library/ff460245%28v=vs.140%29.aspx)
+* [Create custom code & plug-ins](https://msdn.microsoft.com/library/ee923683%28v=vs.140%29.aspx)
+* [Posts on the ALM blog](https://social.msdn.microsoft.com/Search/en-US?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4)
 
-* Of course you can [run your load test from on-premises agents](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle) too!<p />
-
-![Cloud scalable](_img/performance-testing/IC778490.png)
-
-## Generate load from multiple regions worldwide
-
-* Run tests from one of many global Azure datacenter locations to minimize latency
-  and simulate users' real-world conditions.
-
-![Generate load from multiple regions worldwide](_img/performance-testing/IC778317.png)
-
-## Deep analysis with rich diagnostics
-
-* Includes trace and exception logging.
-
-* View app performance with [real-time charts and graphs](performance-reports.md).
-
-* Go even further with [Application Insights](get-performance-data-for-load-tests.md), 
-  and correlate test results with server diagnostics.
-
-![Deep analysis with rich diagnostics](_img/performance-testing/IC778315.png)
-
-## Free allocation and flexible low-cost pricing
-
-* Pricing is per virtual user minute (VUM) - a measure 
-  of how long your test is and how many users the test simulates.
-
-* You get a generous allocation of virtual user minutes free each month.
-
-* See the section **Performance &amp; Load Testing** at the bottom of the
-  [Visual Studio Team Services Pricing](https://www.visualstudio.com/team-services/pricing/) page.
-  
-## More information
-
-* [Get started with load testing](getting-started-with-performance-testing.md)
-
-* [Run URL-based load tests with Visual Studio Team Services](get-started-simple-cloud-load-test.md)
-
-* [Run Apache JMeter load tests with Visual Studio Team Services](get-started-jmeter-test.md)
-
-* [Performance test your Azure web app under load](app-service-web-app-performance-test.md)
-
->If you prefer to run your tests in a local environment rather
-than in the cloud, see [Use a lab environment for your devops](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

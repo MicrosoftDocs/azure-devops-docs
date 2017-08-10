@@ -1,5 +1,5 @@
 ---
-title: Tutorial - Search for work items in a Visual Studio Team Services account
+title: Search for work items in a Visual Studio Team Services account
 description: Use Work Item Search to search across all work item fields over all projects of your Visual Studio Team Services (VSTS) projects, from anywhere and any computer or mobile device, using your web browser. Perform full text searches across all fields to efficiently locate relevant work items.
 ms.assetid: 133EF8B9-B4F9-4057-9CB3-E745A7E0B8F5
 ms.prod: vs-devops-alm
@@ -15,30 +15,6 @@ ms.date: 12/04/2016
 **| Team Services | TFS 2017.2 |**
 
 Work Item Search provides fast and flexible search across all your work items over all projects in an account. 
-You can use the Work Item Search full text search engine to easily search for terms across all work item fields 
-and efficiently locate relevant work items. Use in-line search filters, on any work item field, to quickly narrow 
-down to a list of work items. By using Work Item Search you can:
-
-* **Search over all your projects**:
-  Search in your own and your partner teams' backlog. Use cross-project 
-  searches over all the work items in your Team Services account to search 
-  across your organization's entire work items. Narrow your search by using project and 
-  area path filters. 
-  
-* **Search across all work item fields**:
-  Quickly and easily find relevant work items by searching across all work item fields
-  (including custom fields). Use a full text search across all fields to efficiently
-  locate relevant work items. The snippet view indicates where matches were found.<p />
-  
-* **Search in specific fields**:
-  Use the quick in-line search filters, on any work item field, to narrow down to a
-  list of work items in seconds. The dropdown list of suggestions helps complete your
-  search faster. For example, a search such as **AssignedTo:Chris WorkItemType:Bug
-  State:Active** finds all active bugs assigned to a user named Chris. 
-
-* **Take advantage of integration with work item tracking**:
-  The Work Item Search interface integrates with familiar controls in the **Work** hub,
-  letting you view, edit, comment, share, and much more.
 
 <a name="start-search"></a>
 ## Get searching
@@ -108,5 +84,4 @@ down to a list of work items. By using Work Item Search you can:
 
 ## Next steps
 
-* [Use the rich search results page](search-results.md)
-* [Learn about the advanced search syntax](advanced-search-syntax.md)
+* [Learn more about Work Item Search](advanced-search-syntax.md)

@@ -9,7 +9,7 @@ ms.author: douge
 ms.date: 08/04/2016
 ---
 
-# Set up and administer Microsoft Code Search/Work Item Search
+# Set up and administer Microsoft Code Search and Work Item Search
 
 [!INCLUDE [version-header-shared](../_shared/version-header-shared.md)]
 
@@ -675,17 +675,6 @@ name of the server where Search is installed:
 1. If performance does recover, consider locating Code Search 
    on a separate server if you have not already done so.
 
-## See also
-
-* [Install and configure TFS](../../setup-admin/tfs/install/get-started.md)
-* [TFS requirements and compatibility](../../setup-admin/requirements.md)
-* [Get started with Code Search](get-started.md)
-* [Choose your search scope](repos-and-projects.md)
-* [Advanced Code Search options](advanced-search.md)
-* [Rich Code Search results](search-results.md)
-
 <a name="support"></a>
 
 [!INCLUDE [shared-got-feedback](../_shared/shared-got-feedback.md)]
-
-[!INCLUDE [shared-back-to-overview](../_shared/shared-back-to-overview.md)]
