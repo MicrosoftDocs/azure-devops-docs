@@ -12,7 +12,7 @@ ms.date: 08/23/2016
 # Creating custom extensions for Visual Studio Team Services (VSTS)
 
 >[!NOTE]
-> This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, visit the [Marketplace documentation](../marketplace/extend-overview.md). For information on 
+> This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, visit the [Marketplace documentation](../marketplace/index.md). For information on 
 
 
 ## What are extensions?

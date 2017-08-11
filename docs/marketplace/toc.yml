@@ -2,22 +2,10 @@
   items:
   - name: Marketplace overview
     href: index.md
-  - name: Marketplace billing overview
-    href: marketplace-billing-qa.md
-  - name: Get and use Marketplace extensions
-    href: extend-overview.md
-- name: Quick start
+- name: Quickstarts
   items:
-  - name: How to set up billing
-    href: ../setup-admin/team-services/set-up-billing-for-your-account-vs.md
-  - name: How to buy Team Services users
-    href: ../setup-admin/team-services/buy-basic-access-add-team-services-users.md
   - name: How to buy Team Services extensions
     href: get-vsts-extensions.md
-  - name: How to buy build pipelines
-    href: ../setup-admin/team-services/buy-more-build-vs.md
-  - name: How to buy load testing services
-    href: ../setup-admin/team-services/buy-load-testing-vs.md
 - name: Tutorials
   items:
   - name: Get extensions for Team Services
@@ -34,52 +22,22 @@
     href: vs-subscriptions/buy-vs-subscriptions.md
   - name: How to buy Xamarin University
     href: xamarin-univ.md
-  - name: Services
-    items:
-    - name: AppVeyor
-      href: ../service-hooks/services/appveyor.md
-    - name: Azure Service Bus
-      href: ../service-hooks/services/azure-service-bus.md
-    - name: Azure Storage
-      href: ../service-hooks/services/azure-storage.md
-    - name: Bamboo
-      href: ../service-hooks/services/bamboo.md
-    - name: Campfire
-      href: ../service-hooks/services/campfire.md
-    - name: Flowdock
-      href: ../service-hooks/services/flowdock.md
-    - name: HipChat
-      href: ../service-hooks/services/hipchat.md
-    - name: Hubot
-      href: ../service-hooks/services/hubot.md
-    - name: Jenkins
-      href: ../service-hooks/services/jenkins.md
-    - name: MyGet
-      href: ../service-hooks/services/myget.md
-    - name: Slack
-      href: ../service-hooks/services/slack.md
-    - name: Trello
-      href: ../service-hooks/services/trello.md
-    - name: UserVoice
-      href: ../service-hooks/services/uservoice.md
-    - name: WebHooks
-      href: ../service-hooks/services/webhooks.md
-    - name: Zapier
-      href: ../service-hooks/services/zapier.md
-    - name: Zendesk
-      href: ../service-hooks/services/zendesk.md
 - name: How to guides
   items:
-  - name: Authorize a service
-    href: ../service-hooks/authorize.md
   - name: Rate and review extensions
     href: rating-and-review.md
 - name: Troubleshooting
   items:
-  - name: Troubleshoot service hooks issues
-    href: ../service-hooks/troubleshoot.md
 - name: Resources
   items:
+  - name: How to set up billing
+    href: ../setup-admin/team-services/set-up-billing-for-your-account-vs.md
+  - name: How to buy Team Services users
+    href: ../setup-admin/team-services/buy-basic-access-add-team-services-users.md
+  - name: How to buy build pipelines
+    href: ../setup-admin/team-services/buy-more-build-vs.md
+  - name: How to buy load testing services
+    href: ../setup-admin/team-services/buy-load-testing-vs.md
   - name: Extensions for Visual Studio
     href: ../integrate/ide/extensions/overview.md
   - name: Extensions for VS Code

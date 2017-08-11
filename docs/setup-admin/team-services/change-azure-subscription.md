@@ -206,7 +206,7 @@ valid for Team Services accounts in India South."
 A: This happens if your Team Services account was already 
 set up for billing with an Azure subscription, either manually 
 through Azure or while purchasing from the 
-[Visual Studio Marketplace](../../marketplace/overview.md)
+[Visual Studio Marketplace](../../marketplace/index.md)
 for your account. The selected Azure subscription is also 
 used to bill all later purchases for your account.
 

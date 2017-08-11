@@ -167,7 +167,7 @@ ms.date: 08/04/2016
   <div class="row">
     <div class="col-sm-4 col-md-3 col-md-offset-2 item">
       <div class="title">
-        <a href="marketplace/extend-overview.md">Marketplace</a>
+        <a href="marketplace/index.md">Marketplace</a>
         <div class="desc">
           Find extensions and integrations to expand your devops environment.
         </div>

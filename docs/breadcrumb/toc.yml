@@ -89,7 +89,7 @@
   - name: TFS-Project Server integration
     tocHref: /vsts/work/tfs-ps-sync
     topicHref: /vsts/work/tfs-ps-sync/synchronize-tfs-project-server
-  - name: Marketplace and Billing
+  - name: Marketplace
     tocHref: /vsts/marketplace/
     topicHref: /vsts/marketplace/overview
   - name: Integrate
