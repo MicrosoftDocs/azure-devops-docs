@@ -148,7 +148,7 @@ For a simplified view of the default permissions granted to built-in groups and 
 <li style="margin-bottom:2px">[Area paths](../../work/customize/set-area-paths.md)</li>
 <li style="margin-bottom:2px">[Iteration paths](../../work/customize/set-iteration-paths-sprints.md)</li>
 <li style="margin-bottom:2px">[Work item query and folder](../../work/track/set-query-permissions.md)</li>
-<li style="margin-bottom:2px">[Dashboard permissions](../../report/dashboards.md#set-permissions) (Team Services)</li>
+<li style="margin-bottom:2px">[Dashboard permissions](../../report/dashboard-permissions.md#set-permissions) (Team Services)</li>
 <li style="margin-bottom:2px">[Restrict access to resources](../restrict-access-tfs.md)</li>
 </ul>
 </div>
@@ -204,7 +204,7 @@ Team administrators can manage settings for their team, including team alerts an
 <div style="float:left;width:190px;margin:3px;font-size:90%">
 <p style="padding-bottom:0px;text-align:center;"><b>Other team assets  </b></p>
 <ul style="padding-left:20px">
-<li style="margin-bottom:0px">[Manage team dashboard(s)](../../report//dashboards.md) </li>
+<li style="margin-bottom:0px">[Manage team dashboard(s)](../../report/dashboards.md) </li>
 <li style="margin-bottom:0px">[Manage notifications for a team](../../work/track/alerts-and-notifications.md) (Team Services) </li>
 <li style="margin-bottom:0px">[Create and manage team alerts](../../work/track/alerts-and-notifications.md) (TFS) </li>
 <li style="margin-bottom:0px">[Create and manage team rooms](../../collaborate/collaborate-in-a-team-room.md)  </li>

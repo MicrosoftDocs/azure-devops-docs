@@ -27,7 +27,7 @@ This topic provides descriptions for each built-in group and permission. To lear
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](add-administrator-tfs.md)<br/>- [Add users to a team project](./team-services/add-team-members-vs.md) (Team Services)<br/>- [Add users to a team project](./add-users.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)  |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (Team Services)<br/> - [Dashboard permissions](../report/dashboards.md#set-permissions)|    
+> |- [Add users to an administrator role](add-administrator-tfs.md)<br/>- [Add users to a team project](./team-services/add-team-members-vs.md) (Team Services)<br/>- [Add users to a team project](./add-users.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)  |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (Team Services)<br/> - [Dashboard permissions](../report/dashboard-permissions.md#set-permissions)|    
 
  
 <table valign="top">
@@ -451,7 +451,7 @@ For each team that you add, you can assign one or more team members as administr
 	* [Board: Definition of Done](../work/kanban/definition-of-done.md)  
 	* [Charts: Cumulative flow](../report/guidance/cumulative-flow.md#configure) 
 - **Manage team dashboards**  
-	Can add, configure, and manage permissions (Team Services and TFS 2017) for team dashboards. For details, see [Add and manage dashboards](../report/dashboards.md#set-permissions).  
+	Can add, configure, and manage permissions (Team Services and TFS 2017) for team dashboards. For details, see [Add and manage dashboards](../report/dashboard-permissions.md#set-permissions).  
 - **Set working days off**    	
 	Sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Team admins can choose which days are non-working days through the team's Settings dialog. For details, see [Set working days](../work/customize/set-working-days.md).
 - **Show bugs on backlogs and boards**   
