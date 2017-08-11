@@ -1,5 +1,5 @@
 ---
-title: CI/CD with VS 2017, Linux App Service, Docker, and Azure Container Registry (ACR) | VSTS Quickstart
+title: Deploy your ASP.NET Core app to Azure Container Service | VSTS Quickstart
 description: Leverage Visual Studio 2017 to set up a continuous integration (CI) build for your ASP.NET Core app, and then a continuous deployment (CD) release to an Azure Linux App Service using Visual Studio Team Services
 services: vsts
 documentationcenter: ''
@@ -17,7 +17,7 @@ ms.date: 08/04/2016
 ms.custom: mvc
 ---
 
-# CI/CD with Linux App Service, Docker, and Azure Container Registry (ACR)
+# Deploy your ASP.NET Core app to Azure Container Service
 
 Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your ASP.NET Core apps. This quickstart shows how to set up CI and CD to deploy an ASP.NET Core application to Linux App Service with Docker and Azure Container Registry.
 
@@ -37,21 +37,21 @@ You use [Azure Container Registry](https://docs.microsoft.com/en-us/azure/contai
 2.  In the Azure Portal, **click** **New, Containers, then click Azure Container Registry**.
 3.  Choose a **Registry name**, **Resource Group**, and **Location**.  
 4.  Choose **Enable** for **Admin user**, and Click **Create**.
-5.  Wait for the deployment to complete in the Azure Portal before proceeding. 
+5.  Wait for the deployment to complete in the Azure Portal before proceeding.
 
 ## Create a Docker-enabled ASP.NET Core Web Application    
 Use Visual Studio 2017 to quickly create a Docker-enabled ASP.NET Core application.  Visual Studio 2017 will create the required Docker files, and add them to your new solution.   
 
 1. Ensure [Docker for Windows](https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows) is installed on your development machine.
 2. After installing Docker for Windows, reboot your machine.  After rebooting, launch **Docker for Windows**.
-2. In Visual Studio 2017 create a new **ASP.NET Core Web Application (.NET Core)** by navigating to **file, New Project, Templates, Visual C#, then click Web**. 
+2. In Visual Studio 2017 create a new **ASP.NET Core Web Application (.NET Core)** by navigating to **file, New Project, Templates, Visual C#, then click Web**.
 3. In the ASP.NET Core templates dialogue, Choose **Web Application** and ensure the **Enable Docker Support** checkbox is selected.
 4. Click **Ok** to create the project.
-5. Once the project is created, click **Build then click Rebuild Solution** and ensure there are no errors. 
+5. Once the project is created, click **Build then click Rebuild Solution** and ensure there are no errors.
 
 ## Add the solution to source control in VSTS    
 To create a CI/CD pipeline, you need to add your source code to VSTS.  If you already have your ASP.NET Core Web Application solution in a VSTS Team Project, you may skip this section.
-   
+
 1.	Ensure your solution is open, and connect Team Explorer to a VSTS account and Team Project.      
 2.	**Right click** your solution and click **Add To Source Control**.    
 3.	Click **Team Explorer**, and click the **Sync** button.
@@ -87,7 +87,7 @@ The tools in Visual Studio 2017 automate the creation of a CI/CD pipeline.  The 
 
 ##	Configure the App Service Docker settings  [ENGINEERING is fixing a bug and we can remove this section/work around]
 1.  Currently if you navigate to your App Service, you receive a 503 error.
-2.  Navigate to **Container registries** in the Azure Portal.  Copy the values for **Login Server, Username, and Password**.  **Note**:  In later steps you will add the prefix https:// to the value for the Login URL. 
+2.  Navigate to **Container registries** in the Azure Portal.  Copy the values for **Login Server, Username, and Password**.  **Note**:  In later steps you will add the prefix https:// to the value for the Login URL.
 3.  Navigate to the newly created **App Service** in the Azure Portal.
 4.  Choose **Docker Container** under the **SETTINGS** section for your App Service.
 5.  Choose **Private registry** and configure the details you saved above.  **Note**:  You must place https:// in front of the URL.  Example:  **https://LoginUrlGoesHere**

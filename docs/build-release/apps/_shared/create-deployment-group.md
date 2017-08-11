@@ -16,7 +16,7 @@ Deployment groups in VSTS make it easier to organize the servers that you want t
 
 1. On your VM, in an **Administrator PowerShell** console, paste and run the script.
 
-1. When you're prompted to configure tags for the agent, enter **Y**, and then enter **web**.
+1. When you're prompted to configure tags for the agent, press Enter (you don't need any tags).
 
 1. When you're prompted for the user account, press Enter to accept the defaults.
 

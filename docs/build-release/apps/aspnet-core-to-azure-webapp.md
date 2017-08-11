@@ -1,5 +1,5 @@
 ---
-title: Build and Deploy an ASP.NET Core app to an Azure web app | VSTS Quickstart
+title: Deploy your ASP.NET Core app to an Azure web app | VSTS Quickstart
 description: Set up a continuous integration (CI) build for your ASP.NET Core application, and then a continuous deployment (CD) release to Azure web app using Visual Studio Team Services
 services: vsts
 documentationcenter: ''
@@ -18,9 +18,9 @@ ms.author: alewis
 ms.custom: mvc
 ---
 
-# CI/CD of an ASP.NET Core app to an Azure web app
+# Deploy your ASP.NET Core app to an Azure web app
 
-Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline to automatically deploy your ASP.NET Core web app to Azure App Services. 
+Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline to automatically deploy your ASP.NET Core web app to Azure App Services.
 In this quickstart you will use the Azure portal to configure a basic CI/CD pipeline, and then see it build and deploy your app.
 
 ![A typical release pipeline for web applications](../get-started/_img/ci-cd/part-1/ReleasePipeline.png)

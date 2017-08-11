@@ -1,4 +1,4 @@
-- name: CI/CD to Azure
+- name: Deploy to Azure
   href: index.md
 - name: Overview
   items:
@@ -8,19 +8,39 @@
     href: /vsts/build-release/
 - name: Quickstarts
   items:
-  - name: "QS from build-release 1, contextual link"
-    href: /vsts/build-release/
-  - name: "QS from build-release 2, contextual link"
-    href: /vsts/build-release/
-  - name: "QS from build-release 3, contextual link"
-    href: /vsts/build-release/
+  - name: "CI/CD to Azure Web App"
+    href: /vsts/build-release/apps/aspnet-core-to-azure-webapp.md
+  - name: "CI/CD to Windows VM"
+    href: /vsts/build-release/apps/aspnet-core-to-windows-vm.md
+  - name: "CI/CD to Azure Container Service"
+    href: /vsts/build-release/apps/aspnet-core-to-acs.md
 - name: Tutorials
   items:
-  - name: "Tutorial from build-release or Azure service 1, contextual link"
-    href: /vsts/build-release/
-  - name: "Tutorial from build-release or Azure service 2, contextual link"
-    href: /vsts/build-release/
-  - name: "Tutorial from build-release or Azure service 3, contextual link"
-    href: /azure/virtual-machines/linux/
+  - name: "Customize CD process"
+    href: /vsts/build-release/tutorials/customize-cd-process.md
+  - name: "Deploy to multiple VMs"
+    href: /vsts/build-release/tutorials/deploy-to-vms.md
+  - name: "Manage infrastructure as code"
+    href: /vsts/build-release/tutorials/infra-as-code.md
 - name: Concepts
-- name: Resources
+  items:
+  - name: Build definitions
+    href: /vsts/build-release/concepts/definitions/build/artifacts.md
+  - name: Release definitions
+    href: /vsts/build-release/concepts/definitions/release/index.md
+  - name: Deployment groups
+    href: /vsts/build-release/concepts/library/deployment-groups.md
+  - name: Service endpoints
+    href: /vsts/build-release/concepts/library/service-endpoints.md
+- name: How to
+  items:
+  - name: Run a PowerShell script
+    href: /vsts/build-release/scripts/index.md
+  - name: Run Git commands
+    href: /vsts/build-release/scripts/git-commands.md
+  - name: Troubleshooting build
+    href: /vsts/build-release/troubleshooting.md
+  - name: Debug deployment issues
+    href: /vsts/build-release/actions/debug-deployment-issues.md
+  - name: Troubleshoot Azure connections
+    href: /vsts/build-release/actions/azure-rm-endpoint.md

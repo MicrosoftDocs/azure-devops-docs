@@ -1,5 +1,5 @@
 ---
-title: Build and Deploy an ASP.NET Core app to a Windows VM | VSTS Quickstart
+title: Deploy your ASP.NET Core app to a Windows VM | VSTS Quickstart
 description: Set up a continuous integration (CI) build for your ASP.NET Core app, and then a continuous deployment (CD) release an to Azure Windows VM using Visual Studio Team Services
 services: vsts
 documentationcenter: ''
@@ -17,7 +17,7 @@ ms.date: 08/04/2016
 ms.custom: mvc
 ---
 
-# CI/CD of an ASP.NET Core app to a Windows virtual machine
+# Deploy your ASP.NET Core app to a Windows virtual machine
 
 Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline to automatically deploy your ASP.NET Core apps to a Windows virtual machine (VM) in Azure.
 
@@ -111,7 +111,7 @@ Continuous Integration (CI) is the process of automating the build and testing o
 
 [//]: # (TODO: ![Screenshot showing release action on build summary](_shared/_img/cicd-get-started-dotnetcore-release.png)
 
-[//]: # (TODO: In the **Create release definition** wizard, select the **IIS Website and SQL Database deployment** template, and click **Apply**.)
+[//]: # (TODO: In the **Create release definition** wizard, select the **IIS Website Deployment** template, and click **Apply**.)
 
 [//]: # (TODO: ![Screenshot showing IIS template](_img/aspnet-core-to-windows-vm/select-iis-website-and-sql-database-deployment-release-template.png)
 
@@ -135,19 +135,13 @@ Continuous deployment (CD) is a lean practice that your team can use to keep pro
 
  ![Screenshot showing release action on build summary](_shared/_img/cicd-get-started-dotnetcore-release.png)
 
-1. In the **Create release definition** wizard, select **IIS Website and SQL Database deployment** template, and then click **Apply**.
+1. In the **Create release definition** wizard, select **IIS Website Deployment** template, and then click **Apply**.
 
  ![Screenshot showing IIS template](_img/aspnet-core-to-windows-vm/select-iis-website-and-sql-database-deployment-release-template.png)
 
-1. Select the **Tasks** tab, and then select the **SQL Deployment** phase. In the upper-right corner, click **X Remove** to delete this phase. (We won't be deploying a database in this quickstart.)
-
-1. Click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*. In the **Machine tags** box, enter `web`.
+1. Click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*.
 
  ![Screenshot showing release definition](_img/aspnet-core-to-windows-vm/cicd-get-started-release-definition.png)
-
-1. Select the **IIS Web App Manage** task, and then in the upper-right corner, click **X Remove** to delete this task. (We won't create a new website in this quickstart. Instead, we'll deploy to the **default web site**.)
-
-1. Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Expand **Advanced Deployment Options** and then select **Take App Offline**. Leave all the other default settings.
 
 1. Click **Save**. On the Save dialog box, click **OK**.
 
