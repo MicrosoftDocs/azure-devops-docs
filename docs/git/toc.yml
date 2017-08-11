@@ -11,7 +11,7 @@
   - name: Create repo - CLI
     href: share-your-code-in-git-cmdline.md
   - name: Create repo - Visual Studio
-    href: share-your-code-in-git-vs.md
+    href: share-your-code-in-git-vs-2017.md
   - name: Create repo - IntelliJ
     href: http://java.visualstudio.com/Docs/tools/intelliJ
   - name: Create repo - Xcode

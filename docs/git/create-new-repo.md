@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: sdanie
-ms.date: 07/24/2017
+ms.date: 08/10/2017
 ---
 
 # Create a new Git repo in your project
@@ -94,14 +94,6 @@ In this step, we'll make a change to the files on your computer, commit the chan
 
   ![View changed file](_img/repo-mgmt/readme-changed-file.png)  
 
-## Clean up resources
-
-You can remove unused Git repos from your project when they are no longer needed. If you want to save the repo (and its [commit history](tutorial/history.md)) but no longer need to work with it, consider [renaming](repo-rename.md) the repo and [locking](lock-branches.md) its default branch instead of removing it.
-
-You cannot remove a repo if it is the only Git repo in the project. If you need to delete the only Git repo in a project, create a new Git repo first, then delete the repo.
-
-To delete a repo, see [Delete a Git repo from your project](delete-existing-repo.md).
-
 ## Next steps
 
 - New to Git repos? [Learn more](https://www.visualstudio.com/learn/set-up-a-git-repository/)
@@ -110,4 +102,9 @@ To delete a repo, see [Delete a Git repo from your project](delete-existing-repo
 - Learn about the general [Git workflow](./tutorial/gitworkflow.md) that most developers use when writing code and sharing it with the team
 - Learn how to use [branches](./tutorial/branches.md) to manage and isolate your code
 - Review code and merge it into your default branch with [pull requests](./tutorial/pullrequest.md)
+- All done with the sample repo you created in this article? You can remove unused Git repos from your project when they are no longer needed. If you want to save the repo (and its [commit history](tutorial/history.md)) but no longer need to work with it, consider [renaming](repo-rename.md) the repo and [locking](lock-branches.md) its default branch instead of removing it.
+
+  You cannot remove a repo if it is the only Git repo in the project. If you need to delete the only Git repo in a project, create a new Git repo first, then delete the repo.
+
+  To delete a repo, see [Delete a Git repo from your project](delete-existing-repo.md).
 

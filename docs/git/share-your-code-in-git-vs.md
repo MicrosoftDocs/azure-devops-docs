@@ -8,7 +8,7 @@ ms.topic: get-started-article
 toc: show
 ms.manager: douge
 ms.author: sdanie
-ms.date: 04/03/2017
+ms.date: 08/10/2017
 ---
 
 # Share your code with Visual Studio 2015 and Team Services Git

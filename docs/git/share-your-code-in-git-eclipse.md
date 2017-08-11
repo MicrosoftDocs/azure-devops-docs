@@ -6,14 +6,14 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
-ms.author: routlaw
-ms.date: 08/04/2016
+ms.author: sdanie
+ms.date: 08/10/2017
 ---
 
 # Share your code in Git using Eclipse
 #### Team Services | TFS 2015 & 2017
 
-Share your Eclipse project with your team in a Team Services/TFS Git repo.
+Share your Eclipse project with your team in a Team Services/TFS Git repo. If you don’t have a VSTS account, you can [sign up](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 <a name="git"></a>
 
@@ -76,17 +76,16 @@ Before you can push your project to Team Services, you need to add it to a local
 
 Your project code is now your Team Services Git repo.
 
-## Try this next
+## Next steps
 
 Learn more about using Git in the [Git tutorial](tutorial/gitworkflow.md) and [create a build](../build-release/java/quick-to-azure.md) for your project code.
 
 
-## Q&A
+## Frequently asked questions
 
-<!-- BEGINSECTION class="m-qanda" -->
+* [What if the Git views for commit and push don't show up?](#what-if-the-git-views-for-commit-and-push-dont-show-up)
 
-#### Q: What if the Git views for commit and push don't show up?
+### What if the Git views for commit and push don't show up?
 
-A: You can [download EGit](http://www.eclipse.org/egit/) to use Git with Eclipse.
+You can [download EGit](http://www.eclipse.org/egit/) to use Git with Eclipse.
 
-<!-- ENDSECTION -->

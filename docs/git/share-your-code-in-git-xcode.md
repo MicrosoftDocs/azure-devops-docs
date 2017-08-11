@@ -6,20 +6,23 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
-ms.author: routlaw
-ms.date: 08/04/2016
+ms.author: sdanie
+ms.date: 08/10/2017
 ---
 
 #  Share your code in Git using Xcode
 #### Team Services | TFS 2015 & 2017
 
-Share your Xcode projects in a Team Services Git repo.
+This guide shows you how to share your Xcode projects in a Team Services Git repo. If you don’t have a VSTS account, you can [sign up](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 ## Create a local Git repo for your Xcode project
 
 Create a local Git repo for your code to manage your project in version control. 
 
-> If your project is already in a local Git repo, you can skip this step.
+* [New projects](#new-projects)
+* [Existing projects](#existing-projects)
+
+If your project is already in a local Git repo, you can skip ahead to [Create a new Team Services repo](#create-a-new-team-services-repo).
 
 ### New projects
 
@@ -37,7 +40,7 @@ Create a local Git repo for your existing projects not in version control by goi
 
 Create a new Git repo in Team Servies for your Xcode project. 
 
-> If you have already created a repo for your Xcode project in Team Services, you can skip this step.
+If you have already created a repo for your Xcode project in Team Services, you can skip ahead to [Push your project](#push-your-project).
 
 0. Browse to your Team Project in your Team Services account and select the drop-down ![Team Services drop-down picker](_img/share-your-code-in-git-xcode/vsts_drop_down_arrow.png) next to the name of the current Git repo. Select **New Repository..**  
   ![Create a new Git repo in Team Services](_img/share-your-code-in-git-xcode/newrepo.png)
@@ -68,18 +71,15 @@ Create a new Git repo in Team Servies for your Xcode project.
 
 Xcode will [push](tutorial/pushing.md) your project to your Team Services Git repo so you can share it with your team.
 
-## Try this next
+## Next steps
 
 Learn more about using Git in the [Git tutorial](tutorial/gitworkflow.md) and [create a build](../build-release/overview.md) for your project code.
 
-## Q&A
+## Frequently asked questions
 
-<!-- BEGINSECTION class="m-qanda" -->
+* [Can I use SSH to connect to my Team Services Git repo?](#can-i-use-ssh-to-connect-to-my-team-services-git-repo)
 
-<a name="pat"></a>
+### Can I use SSH to connect to my Team Services Git repo? 
 
-###Q: Can I use SSH to connect to my Team Services Git repo? 
+Yes. [Set up SSH credentials](use-ssh-keys-to-authenticate.md) and use the SSH clone URL when adding the remote for your local Git repo.
 
-A:  Yes. [Set up SSH credentials](use-ssh-keys-to-authenticate.md) and use the SSH clone URL when adding the remote for your local Git repo.
-
-<!-- ENDSECTION -->

@@ -8,7 +8,7 @@ ms.topic: get-started-article
 toc: show
 ms.manager: douge
 ms.author: sdanie
-ms.date: 04/03/2017
+ms.date: 08/10/2017
 ---
 
 # Share your code with Visual Studio 2017 and Team Services Git
@@ -21,8 +21,9 @@ ms.date: 04/03/2017
 
 Share your Visual Studio solution in a new Team Services or Team Foundation Server Git repo.
 
-> This article walks you through the steps to get a Visual Studio solution on your PC into a Git repo you can share with others, even if you don't have a Team Services account.
-> If you need to work with a Visual Studio solution hosted in an existing repo, use the [Git quick start](gitquickstart.md) instead.
+This article walks you through the steps to get a Visual Studio solution on your PC into a Git repo you can share with others, even if you don't have a Team Services account. If you don’t have a VSTS account, you can [sign up](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md) for one for free. Each account includes free, unlimited private Git repositories.
+
+If you want to work with a Visual Studio solution hosted in an existing repo, see the [Git tutorial](gitquickstart.md).
 
 ##  Create a local Git repo for your project
 
@@ -72,7 +73,7 @@ You can [commit](tutorial/commits.md) changes to your local Git repository by se
 0. Select the unpublished changes status bar icon ( ![Visual Studio Unpublished Changes Status Bar icon](_img/share-your-code-in-git-vs/vs_unpublished_changes.png) ) or the **Sync** view in Team Explorer. Select **Push** to 
 update your code in Team Services/TFS.
 
- ![Push your changes](tutorial/_img/vspush.gif)
+ ![Push your changes](_img/share-your-code-in-git-vs/vspush.png)
 
 ## Get changes from others
 
@@ -91,17 +92,21 @@ Double-click a commit to view its file changes.
 
  ![The changes are now in your local repo](_img/share-your-code-in-git-vs/vs_pull_complete.png)
  
-## Try this next
+## Next steps
 
 [Set up a build](../build-release/overview.md) for your code and learn more about using Git in the [Team Services Git tutorial](tutorial/gitworkflow.md).
 
-## Troubleshooting
+## Frequently asked questions
 
-<!-- BEGINSECTION class="md-qanda" -->
+* [I don't see the **Add to Source Control** button in the status bar.](#i-dont-see-the-add-to-source-control-button-in-the-status-bar)
+* [How can I see what changes are in a commit before I pull it into my local branch?](#how-can-i-see-what-changes-are-in-a-commit-before-i-pull-it-into-my-local-branch)
+* [How do I associate my commits with work items?](#how-do-i-associate-my-commits-with-work-items)
+* [Can I use the Git command prompt with Visual Studio?](#can-i-use-the-git-command-prompt-with-visual-studio)
 
-###  I don't see the **Add to Source Control** button in the status bar.
 
-A: The **Add to Source Control** button in the status bar ( ![Add to Source Control](_img/share-your-code-in-git-vs/add_src_control_status_bar.png) )  was added in Visual Studio 2017 (it was **Publish** in Visual Studio 2015 Update 2 and later) and will only appear when you have Git as your source control provider. If your code is already in a Git repo, you won't see the **Add to Source Control** button in the status bar, but the status of the current branch in your local repo instead.
+### I don't see the **Add to Source Control** button in the status bar.
+
+The **Add to Source Control** button in the status bar ( ![Add to Source Control](_img/share-your-code-in-git-vs/add_src_control_status_bar.png) )  was added in Visual Studio 2017 (it was **Publish** in Visual Studio 2015 Update 2 and later) and will only appear when you have Git as your source control provider. If your code is already in a Git repo, you won't see the **Add to Source Control** button in the status bar, but the status of the current branch in your local repo instead.
 
 If you are in a previous version of Visual Studio, create a local Git repo for your project by selecting the **Create new Git repository** option in the **New Project** window when you create a new project. 
 
@@ -109,7 +114,7 @@ You can create a local Git repo for an existing solution by right-clicking your 
 
 ### How can I see what changes are in a commit before I pull it into my local branch?
 
-A: To see what's changed in a commit, go to the **Syncrhonization** page in Team Explorer and right-click on the commit. Select **View Commit Details**.
+To see what's changed in a commit, go to the **Syncrhonization** page in Team Explorer and right-click on the commit. Select **View Commit Details**.
 You can then right-click on any file modified by the commit and select **Compare with Previous...** to view the changes compared to the previous 
 version of the file.
 
@@ -117,7 +122,7 @@ version of the file.
 
 ### How do I associate my commits with work items?
 
-A: You can include work items in your commits through **Related Work Items** in the **Changes** page in Team Explorer. 
+You can include work items in your commits through **Related Work Items** in the **Changes** page in Team Explorer. 
 
 ![Adding work items to changes](_img/share-your-code-in-git-vs/vs_linked_work_items.png)
 
@@ -131,4 +136,3 @@ Make sure to install the latest release of [Git for Windows](https://git-scm.com
 
 See [the Team Services Git tutorial](tutorial/gitworkflow.md) and the [command reference](command-prompt.md) for additional help using Git from the command line.
 
-<!-- ENDSECTION --> 
