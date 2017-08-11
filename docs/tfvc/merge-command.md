@@ -15,8 +15,8 @@ ms.date: 08/10/2016
 
 The **merge** command applies changes from one branch into another.
 
->**Note:**  
->The results of this command are not reflected in the Team Foundation version control server until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
+> [!NOTE]
+> The results of this command are not reflected in the Team Foundation version control server until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
 
 **Required Permissions**
 

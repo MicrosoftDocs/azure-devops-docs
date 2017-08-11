@@ -116,7 +116,7 @@ To configure the secure store service:
   3.  Choose **New** to create a secure store
       target application for Team Foundation Server.
 
-      > **Tip:**
+      > [!TIP]
       > If you have not created a key, SharePoint Products prompts you to create
       > one by choosing **Generate New Key**. Without a
       > key, you cannot create a target application for the secure store.
@@ -126,7 +126,7 @@ To configure the secure store service:
       **Display Name**, enter 
       ```TFS```.
 
-      > **Tip:**
+      > [!TIP]
       > You do not have to use ```TFS``` for
       > **Target Application ID** or
       > **Display Name**, but take note of whatever you use
@@ -169,7 +169,7 @@ To configure the secure store service:
       confirm the password of the report reader account for Team
       Foundation Server, and then choose **OK**.
 
-      > **Tip:**
+      > [!TIP]
       > TFSReports is the placeholder name of the report reader account.
 
 
@@ -200,7 +200,7 @@ To configure services in Office SharePoint Server 2007:
       farms** or **Web server for medium server
       farms**.
 
-      > **Note:**
+      > [!NOTE]
       > For this procedure, both options are equally valid. The services are the
       > same for both options.
 
@@ -233,7 +233,7 @@ To configure services in Office SharePoint Server 2007:
       choose **Start**, and then wait for the
       operation to complete.
 
-      > **Note:**
+      > [!NOTE]
       > The search service account that you specify for Office SharePoint Server
       > requires special permissions and has security implications. For this
       > account, you should not specify the service account that you use for
@@ -259,7 +259,7 @@ To configure services in Office SharePoint Server 2007:
       choose **Start**, and then wait for the
       operation to complete.
 
-      > **Note:**
+      > [!NOTE]
       > The accounts that you specify for the service account and the content
       > access account both require special permissions and have
       > security implications. For more information, see the following page on
@@ -304,7 +304,7 @@ To create a shared service provider and the web application that it will use:
     to the name that you provided in the previous step (for
     example, SharedServices1).
 
-    > **Important:**
+    > [!IMPORTANT]
     > Do not change the port number or remove the port number reference from
     > the description.
 
@@ -351,7 +351,7 @@ To create a shared service provider and the web application that it will use:
     enter the user name and password of a domain account that you want
     to use as the account for the service credentials.
 
-    > **Note:**
+    > [!NOTE]
     > You must specify a domain user account, but it doesn't have to be a
     > member of any particular security group. Specify a unique user account
     > that doesn't have administrative permissions. Do not use the service
@@ -364,7 +364,7 @@ To create a shared service provider and the web application that it will use:
     choose **OK**, and then wait for the
     operation to complete.
 
-    > **Note:**
+    > [!NOTE]
     > If a warning message appears about hosting the administration site for
     > SSP and the root site on the same server, choose <span
     > **OK**.
@@ -418,7 +418,7 @@ To configure single sign-on:
       configured to use as the sign-on account, and then choose 
       **OK**.
 
-      > **Note:**
+      > [!NOTE]
       > The service account that you specify requires special permissions and
       > has security implications. The account must have the permissions that
       > are required to log on interactively on this server and must be a member
@@ -451,7 +451,7 @@ To configure single sign-on:
   10. Under **Security Configuration**, choose
       **Manage settings for single sign-on**.
 
-      > **Note:**
+      > [!NOTE]
       > To open this page, you might need to log on with the account and
       > credentials that you configured in the previous step. In that case, you
       > should switch users or start another session and log on to the server
@@ -474,7 +474,7 @@ To configure single sign-on:
       enter the user name and password of an account that you have
       configured to use as the sign-on account.
 
-      > **Note:**
+      > [!NOTE]
       > The service account that you specify requires special permissions and
       > has security implications. The account must have the permissions that
       > are required to log on interactively on this server and must be a member
@@ -512,7 +512,7 @@ To configure single sign-on:
   18. Return to the **Manage Settings For Single
       Sign-On** page.
 
-      > **Note:**
+      > [!NOTE]
       > If you signed into SharePoint Central Administration with a different
       > user account to change the settings for single sign-on, you should
       > change back to a session that you are running with your own account.

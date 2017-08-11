@@ -46,8 +46,8 @@ The analysis services database is a multidimensional database that aggregates th
 
 The analysis services database organizes data in a cube structure. The cube contains measures that are aggregated against many dimensions. This structure provides aggregate values, such as the hours of work for a set of work items. The values are selected directly from the cube instead of calculated in the query.
 
->**Note:**  
->Some measures, such as **Work Item.Work Item Count**, are not pre-aggregated. They are calculated when the query is performed.
+> [!NOTE]
+> Some measures, such as **Work Item.Work Item Count**, are not pre-aggregated. They are calculated when the query is performed.
 
 
 You can easily build PivotTable and PivotChart reports in Excel by using the analysis services database. For more information, see [Create Excel reports from a work item query](excel/create-status-and-trend-excel-reports.md).
@@ -58,8 +58,8 @@ For more information about this source of data, see [Perspectives and measure gr
 
 The warehouse database is a relational database that organizes data in a set of related tables and provides views and table-valued functions for accessing that data. Data from the team project collections is gathered and maintained in the warehouse database. If you are familiar with writing Transact-SQL queries, you can create reports by using the warehouse database.
 
->[!NOTE]   
->The warehouse database might contain detailed data that is not present in the analysis services database, depending on the work items that your project uses. For more information about how work item fields are mapped to the warehouse, see [Reportable fields reference for Visual Studio ALM](../work/reference/reportable-fields-reference.md).
+> [!NOTE]   
+> The warehouse database might contain detailed data that is not present in the analysis services database, depending on the work items that your project uses. For more information about how work item fields are mapped to the warehouse, see [Reportable fields reference for Visual Studio ALM](../work/reference/reportable-fields-reference.md).
 
 
 For more information about the warehouse database, see [Table reference for the relational warehouse database](sql-reports/table-reference-relational-warehouse-database.md).

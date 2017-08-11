@@ -11,10 +11,10 @@ ms.date: 07/20/2017
 
 #Add task checklists
 
-<b>Team Services | TFS 2017 | TFS 2015.1 </b>
+**Team Services | TFS 2017 | TFS 2015.1**
 
->[!NOTE]  
-><b>Feature availability: </b>Task checklists on the Kanban board are supported from Team Services or the web portal for TFS 2015.1 or later version.  
+> [!NOTE]  
+> **Feature availability:** Task checklists on the Kanban board are supported from Team Services or the web portal for TFS 2015.1 or later version.  
 
 Many teams find Kanban ideal for tracking work as it supports visualizing the flow of work in progress. And, you can quickly add new items and update status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md).  
 

@@ -14,10 +14,10 @@ ms.date: 05/29/2017
 
 **Team Services | TFS 2017.1**  
 
->[!NOTE]  
->**Feature availability**: The features described in this topic are currently in preview for Team Services. You can enable or disable these features from your account menu, [Preview features-New Account Landing Page](../collaborate/preview-features.md). 
+> [!NOTE]  
+> **Feature availability**: The features described in this topic are currently in preview for Team Services. You can enable or disable these features from your account menu, [Preview features-New Account Landing Page](../collaborate/preview-features.md). 
 >
->For TFS 2017.1, the features described in this topic are automatically enabled for all users and cannot be disabled. To upgrade to TFS 2017.1, go to the [Visual Studio downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs). 
+> For TFS 2017.1, the features described in this topic are automatically enabled for all users and cannot be disabled. To upgrade to TFS 2017.1, go to the [Visual Studio downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs). 
 
 From your account, you gain access to a number of page views that are particularly helpful if you work in several team projects. These pages provide quick access and filter functions to support your work within a single team project or  work you're doing across several projects.  
 
@@ -34,10 +34,10 @@ To access these pages, open your web browser to the following URL:
 <b>https://<i>AccountName</i>.visualstudio.com/_projects</b>
 
  
->[!NOTE]   
->For Team Services, the account hub is in preview mode. If you haven't enabled it yet for your account, you can do so through [your user account menu](../collaborate/preview-features.md). This hub is associated with the account collection and not any one team project or team.  
+> [!NOTE]
+> For Team Services, the account hub is in preview mode. If you haven't enabled it yet for your account, you can do so through [your user account menu](../collaborate/preview-features.md). This hub is associated with the account collection and not any one team project or team.  
 > 
->For TFS 2017.1, the account hub is automatically enabled for all users. 
+> For TFS 2017.1, the account hub is automatically enabled for all users. 
 
 You'll see something similar to the following welcome page.
 
@@ -102,8 +102,8 @@ To filter the list, type a keyword in the *Filter favorites* box. The list will 
 ## Work: View and open work items  
 Open the **Work items** hub to access the set of work items assigned to you or followed by you. The lists available from each page span all team projects that you work in. 
 
->[!NOTE]  
-><b>Feature availability: </b>For Team Services, you can access the Work items hub [from a mobile device](../collaborate/mobile-work.md). 
+> [!NOTE]  
+> <b>Feature availability: </b>For Team Services, you can access the Work items hub [from a mobile device](../collaborate/mobile-work.md). 
 
 ###Your assigned work items 
 The **Assigned to me** page lists all work items assigned to you in the order they were last updated. To open or update a work item, click its title. 
@@ -149,7 +149,8 @@ Similar to the Favorites page, you can filter the list by typing a keyword in th
 
 To open a team room, click **Rooms**. You'll see all the team rooms defined for the account. Click the name of a team room which you have access. 
 
->**Note:**  You only have access to those team rooms of which you are a team member.  
+> [!NOTE]
+> You only have access to those team rooms of which you are a team member.  
 
 <img src="_img/account-home-rooms.png" alt="Account home, Rooms, selected team room" style="border: 1px solid #CCCCCC;" />   
 

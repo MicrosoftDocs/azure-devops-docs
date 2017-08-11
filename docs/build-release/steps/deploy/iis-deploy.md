@@ -1,5 +1,5 @@
 ---
-title: Team Services and Team Foundation Server Build and Deploy - IIS Web App Deploy task
+title: VSTS and TFS Build and Deploy - IIS Web App Deploy task
 description: Team Services and Team Foundation Server build task step to  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release

@@ -89,7 +89,8 @@ You can pass environment variables of the build machine into build steps. For ex
 | ---- | --------- |
 | ![](../steps/utility/_img/command-line.png) **Utility: Command Line** | Tool: `echo`<br />Arguments: `$(PATH)` |
 
-> **Note:** If you have defined the a variable of the same name (for example `PATH`) on the [variables tab](variables.md), then your value overrides the environment variable when you use it as shown above.
+> [!NOTE]
+> If you have defined the a variable of the same name (for example `PATH`) on the [variables tab](variables.md), then your value overrides the environment variable when you use it as shown above.
 
 ## Predefined variables
 

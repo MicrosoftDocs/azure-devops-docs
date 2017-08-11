@@ -78,7 +78,7 @@ using Azure credentials or an Azure management certificate.
 | Password | Required for Credentials authentication. Password for the user specified above. |
 | Management Certificate | Required for Certificate based authentication. Copy the value of the management certificate key from your [publish settings XML file](https://go.microsoft.com/fwlink/?LinkID=312990) or the Azure portal. |
 
->If your subscription is defined in an [Azure Government Cloud](government-cloud.md), ensure your application meets the relevant compliance requirements before you configure a service endpoint.
+> If your subscription is defined in an [Azure Government Cloud](government-cloud.md), ensure your application meets the relevant compliance requirements before you configure a service endpoint.
 
 <h3 id="sep-azure-rm">Azure Resource Manager service endpoint</h3>
 
@@ -281,7 +281,8 @@ Note that there is a specific endpoint for [other Git servers](#sep-extgit).
 | Connection name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your GitHub account or subscription. |
 <p />
 
-**Notes**: If you select **Grant authorization** for the **Choose authorization** option,
+> [!NOTE]
+> If you select **Grant authorization** for the **Choose authorization** option,
 the dialog shows an **Authorize** button that opens the GitHub login page.
 If you select **Personal access token** you must obtain a suitable token
 and paste it into the **Token** textbox. The dialog shows the recommended scopes

@@ -27,8 +27,8 @@ The following predefined roles are suggested for use with Team Foundation Server
 
 For detailed information about pre-defined roles in Reporting Services, see the following topic on the Microsoft Web site: [Using Predefined Roles](http://go.microsoft.com/fwlink/?LinkId=117113).
 
->**Important:**
->  You should restrict membership in Reporting Services to only those users who need the specific level of access and permissions granted by membership in that predefined role. Add a user or group to the predefined role that has the minimum permissions required to complete the user's or group's role within a team project. For example, if a user only needs to view the project schedule, you should add the user to the Browser role but not to the Content Manager role.
+> [!IMPORTANT]
+> You should restrict membership in Reporting Services to only those users who need the specific level of access and permissions granted by membership in that predefined role. Add a user or group to the predefined role that has the minimum permissions required to complete the user's or group's role within a team project. For example, if a user only needs to view the project schedule, you should add the user to the Browser role but not to the Content Manager role.
 
 ## System Administrator
 

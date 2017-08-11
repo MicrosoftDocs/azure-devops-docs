@@ -30,8 +30,8 @@ Use this topic to learn:
 
 There are two velocity charts, the one viewed from the backlog of a team and the one you access by adding the Velocity widget to a dashboard. The Velocity widget enables you to view more sprints and additional information than that provided by the velocity chart.   
 
->[!NOTE]   
-><b>Feature availability:</b> The Velocity widget is available only for Team Services at this time. 
+> [!NOTE]   
+> **Feature availability:** The Velocity widget is available only for Team Services at this time. 
 
 <table>
 <tr valign="top">

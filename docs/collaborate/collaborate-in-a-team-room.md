@@ -14,10 +14,10 @@ ms.date: 07/21/2017
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 
->[!NOTE]  
-><b>Feature availability: </b>The Team Room feature is in the process of being deprecated. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](slack.md). As a result, the Team Room feature will be deprecated from both Team Services and TFS.
+> [!NOTE]  
+> **Feature availability:** The Team Room feature is in the process of being deprecated. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](slack.md). As a result, the Team Room feature will be deprecated from both Team Services and TFS.
 >
->To learn more about this change and the timeline for deprecation, see this blog post: [Deprecation of the Team Rooms in Team Services and TFS](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).  
+> To learn more about this change and the timeline for deprecation, see this blog post: [Deprecation of the Team Rooms in Team Services and TFS](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).  
 
 Team rooms, like chat rooms, provide teams with a space to discuss work in progress, ask questions, share status, and clarify issues that arise. By fostering and capturing communication among team members, both near and far, team rooms can help increase your team's productivity.    
 

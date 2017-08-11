@@ -1,5 +1,5 @@
 ---
-title: Requirements and compatibility | Team Foundation Server Setup, Upgrade and Administration
+title: Requirements and compatibility | TFS Setup, Upgrade and Administration
 description: Describes hardware, operating systems, SQL Server, compatibility, and other requirements for TFS. Also describes compatibility between TFS client versions and server versions. Plus supported browsers for Visual Studio Team Services and web client access to TFS.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs
@@ -14,7 +14,6 @@ ms.date: 03/02/2016
 
 **Team Services** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-<a name="operating-systems"></a>
 ## Operating systems
 
 TFS can be installed on a Windows server or client operating system.
@@ -75,7 +74,6 @@ For more information, see the following pages on the Microsoft website:
 * [Support partners for non-Microsoft hardware virtualization software](http://go.microsoft.com/fwlink/?LinkId=196063)
 * [Server Virtualization](http://go.microsoft.com/fwlink/?LinkId=196072) (officially supported products)
 
-<a name="sql-server"></a>
 ## SQL Server
 
 Use one of the following versions of SQL Server for TFS:
@@ -137,7 +135,6 @@ TFS supports Express, Standard, and Enterprise [editions of SQL server](http://w
 The Express edition is only recommended for evaluation purposes, personal use, or for very small teams.
 We recommend Standard or Enterprise for all other scenarios.
 
-<a name="sharepoint"></a>
 ## SharePoint
 
 SharePoint is a collaboration product is not a TFS requirement, but some teams find SharePoint integration useful. If you want to use SharePoint Products, you must use a supported version that has the TFS extension for SharePoint installed.
@@ -186,7 +183,6 @@ You cannot install TFS on servers that are joined to domains whose domain contro
 | **Windows 2000 mixed mode**: Domain controllers that are running Windows NT Server 4.0, Windows 2000, Windows Server 2003, and Windows Server 2003 R2. | No |
 |**Windows Server 2003 interim mode**: Domain controllers that are running Windows NT Server 4.0, Windows Server 2003, and Windows Server 2003 R2. | No |
 
-<a name="accounts"></a>
 ## Accounts
 
 You must use service accounts to install Team Foundation Server, Team
@@ -305,10 +301,7 @@ Foundation Server requires, this guide uses the placeholder names that
 are specified in the preceding tables. You do not have to use these
 placeholder names for any accounts that you might create.
 
-
-
-<a name="project-server"></a>
-## Project Server 
+## Project Server
 
 **TFS 2017 discontinues support for Project Server.**
 
@@ -418,7 +411,6 @@ The following components do not have additional language requirements that are s
 Test controllers and agents have their own language requirements. For more information, see the following page on the Microsoft website: [Test Controller and Test Agent Requirements](https://msdn.microsoft.com/library/ff937706.aspx)
 
 
-<a name="client-compatibility"></a>
 ## Client compatibility
 
 ### Visual Studio

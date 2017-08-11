@@ -19,15 +19,15 @@ If you intend to have SQL Server and TFS on the same server, then you might be a
 
 If you want more control over installation options, use the advanced configuration.
 
->**Tip:**
->  If you want to see the default options for TFS, use the advanced wizard and don’t change any of the default settings. You’ll get the same TFS installation as if you had used the standard wizard.
+> [!TIP]
+> If you want to see the default options for TFS, use the advanced wizard and don’t change any of the default settings. You’ll get the same TFS installation as if you had used the standard wizard.
 
 ## What will I need?
 
 Whether you use standard or advanced TFS install wizards, you’ll need at least one domain account for the report reader account. TFS uses this account to generate reports. If you let us install SharePoint, we use this same account for the Farm Admin account in SharePoint.
 
->**Tip:**
->  The report reader account only needs the **Allow log on locally** permission, which all domain accounts have by default.
+> [!TIP]
+> The report reader account only needs the **Allow log on locally** permission, which all domain accounts have by default.
 
 ## Why use the advanced wizard?
 
@@ -37,8 +37,8 @@ Why use advanced? The standard installation might not fit your needs. You might 
 
 Don’t confuse the multiple server installation with the robust scale-out features that Team Foundation Server offers. These scale-out features include the ability to create a Team Foundation Server farm and add a team project collection to an instance of SQL Server that was not part of the original deployment of Team Foundation Server. However, these scale-out features are not part of this scenario. This scenario offers you guidance for an initial deployment of Team Foundation Server that takes advantage of configurable installation options, such as installing TFS on more than one server. For more information about how to add an application-tier server to your deployment of Team Foundation Server, see [How to: Create a Team Foundation server farm (high availability)](../create-tfs-farm.md).
 
->**Tip:**
->  A multiple-server installation requires an Active Directory domain and domain accounts or the Network Service account. You cannot use local accounts for service accounts.
+> [!TIP]
+> A multiple-server installation requires an Active Directory domain and domain accounts or the Network Service account. You cannot use local accounts for service accounts.
 
 ## To install Team Foundation Server
 
@@ -56,8 +56,8 @@ For more information, see: [SQL Server requirements for Team Foundation Server](
 ![Configure SharePoint Server](../_img/ic665433.png)
 For more information, see [SharePoint Products requirements for Team Foundation Server](../../../requirements.md#sharepoint), [Manually Install SharePoint products for Team Foundation Server](../sharepoint/install-sharepoint.md)
 
->**Tip:**
->  You can also [verify](../sharepoint/verify-sharepoint.md) and use an existing SharePoint deployment that meets the [TFS requirements for SharePoint](../../../requirements.md#sharepoint). If you’re existing SharePoint is not on the same server as where you’ll install TFS, you’ll want to first install the TFS SharePoint extensions on the SharePoint site. See [How to: Install Remote SharePoint Products for Team Foundation Server](../sharepoint/setup-remote-sharepoint.md).
+> [!TIP]
+> You can also [verify](../sharepoint/verify-sharepoint.md) and use an existing SharePoint deployment that meets the [TFS requirements for SharePoint](../../../requirements.md#sharepoint). If you’re existing SharePoint is not on the same server as where you’ll install TFS, you’ll want to first install the TFS SharePoint extensions on the SharePoint site. See [How to: Install Remote SharePoint Products for Team Foundation Server](../sharepoint/setup-remote-sharepoint.md).
 
 ![Step 4](../_img/ic646327.png) Run the Team Foundation Server install from the product DVD and then use one of the configuration wizards to configure your installation. Use the standard wizard if you have SQL Server on the default instance, and TFS will install SharePoint Foundation 2013 for you. For everything else, use the advanced wizard. See, “Why use the advanced wizard?” earlier.
 
@@ -65,8 +65,8 @@ For more information, see [SharePoint Products requirements for Team Foundation 
 
 For remote SharePoint Products deployments, you can use a special version of the installation program that installs only the Team Foundation Server extensions on the SharePoint Products server. This keeps the server running SharePoint Products tidy. You don’t need to run this special installer on the server running Team Foundation Server, where the extensions are installed by default with most installations of Team Foundation Server.
 
->**Tip:**
-If you have a remote portal for your SharePoint Products, you must install Team Foundation Server Extensions for SharePoint Products on the remote portal. If multiple servers are running SharePoint Products in a web farm, you must install and configure these extensions on every server in that farm.
+> [!TIP]
+> If you have a remote portal for your SharePoint Products, you must install Team Foundation Server Extensions for SharePoint Products on the remote portal. If multiple servers are running SharePoint Products in a web farm, you must install and configure these extensions on every server in that farm.
 
 
 To perform this procedure, you must be a member of the **Administrators** security group.
@@ -76,8 +76,8 @@ To run the Team Foundation Server installer:
 
 1.  Insert the Team Foundation Server DVD in the drive and launch the tfs\_server.exe file to begin the installation.
 
-	>**Tip:**  
-	>If you don’t want to install all of Team Foundation Server on the server that is running SharePoint Products, launch the tfs_sharePointExtensions.exe file from the SharePoint Extensions folder to install only the Team Foundation Server Extensions for SharePoint Products.
+	> [!TIP]
+	> If you don’t want to install all of Team Foundation Server on the server that is running SharePoint Products, launch the tfs_sharePointExtensions.exe file from the SharePoint Extensions folder to install only the Team Foundation Server Extensions for SharePoint Products.
 
 2.  On the license terms dialog box, accept the license terms and then choose **Install Now**. If you want to install Team Foundation Server to a specific location in the file system, choose the browse button **(…)** next to the default install location.
 

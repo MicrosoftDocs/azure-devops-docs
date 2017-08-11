@@ -34,7 +34,8 @@ By using the Test perspective, you can create reports that answer the following 
 - How many tests are regressing?  
 - How consistent is the manual test activity over time?   
 
-**Note:**  If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups in the whole Team System cube.
+> [!NOTE]
+> If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups in the whole Team System cube.
   
  To use many Test measures and dimension attributes, the test team must publish the test results to the data store for Team Foundation Server. For more information, see [Required activities](#tracking) later in this topic.  
   

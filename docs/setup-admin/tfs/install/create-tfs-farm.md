@@ -56,7 +56,7 @@ You can use a wizard to add an application tier to an existing Team Foundation S
 
 Your Team Foundation Server deployment must use a domain account for its service account. If you originally used a built-in account for the TFS service account, you must change it to a domain account. For more information, see the section "Assigning a Different Account as the Service Account" on this page on the Microsoft website: Change the Service Account or Password for Team Foundation Server.
 
-> **Tip:**
+> [!TIP]
 > You can access the Team Foundation Server Configuration tool by launching Team Foundation Server Administration Console, choosing **Application Tier**, and then choosing **Configure Installed Features**.
  
 **Required permissions:** To perform this procedure, you must be a member of the **Administrators** security group on the server. 
@@ -79,7 +79,7 @@ To configure Team Foundation Server by using the application-tier only option:
 
   5. In the list, choose the account you want to use. Enter the password for the service account. To test the user account and password combination, you can optionally choose **Test**.
 
-    > **Note:
+    > [!NOTE]
     > Make sure that the service account you specify has been added to the Farm Administrators group for the SharePoint Central Administration site. For more information, see [Add the service account for Team Foundation Server to the Farm Administrators group](sharepoint/setup-remote-sharepoint.md#tfs-svc-acct-to-farm-admin-group).
 
   6. Under **Authentication Method**, choose **NTLM** to use NTLM authentication or **Negotiate (Kerberos)** to first attempt Kerberos authentication, the more secure option. If that fails, fall back to NTLM. Choose **Next**.
@@ -96,6 +96,6 @@ To configure Team Foundation Server by using the application-tier only option:
 
   The Team Foundation Server Administration Console appears.
 
-> **Tip:**
+> [!TIP]
 > If you want to connect to an NLB cluster from a client that is running on one of the application-tier servers in the cluster, you should connect using localhost as the name of the server, instead of the Domain Name System (DNS) name for the load balancer. By default, Internet Information Services (IIS) prevents you from connecting to an NLB cluster from any server in the cluster, unless you use localhost as the name of the cluster.
  

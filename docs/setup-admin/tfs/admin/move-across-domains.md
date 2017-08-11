@@ -15,14 +15,14 @@ ms.technology: tfs-on-prem
 
 The most common environment-based move scenario is changing the domain of the TFS deployment, whether it's a domain name change or going from a workgroup to a domain.
 
->**Important:**  
->In some situations you might want to change the domain of a TFS deployment as well as its hardware. Changing the hardware is a restoration-based move, and you should never combine the two move types. First complete the [hardware move](move-clone-hardware.md), and then change the environment.
->
->Additionally, changing identities in TFS as part of an environmental move is the aspect that most often causes conflicts or problems. The [Identities Command](../command-line/tfsconfig-cmd.md#identities) is a powerful tool, but it has certain limitations. Read up about it as part of planning your move. To help ensure a successful move, make sure that you understand the following requirements:
+> [!IMPORTANT]
+> In some situations you might want to change the domain of a TFS deployment as well as its hardware. Changing the hardware is a restoration-based move, and you should never combine the two move types. First complete the [hardware move](move-clone-hardware.md), and then change the environment.
+> 
+> Additionally, changing identities in TFS as part of an environmental move is the aspect that most often causes conflicts or problems. The [Identities Command](../command-line/tfsconfig-cmd.md#identities) is a powerful tool, but it has certain limitations. Read up about it as part of planning your move. To help ensure a successful move, make sure that you understand the following requirements:
 > * Once a user account is present in TFS, it cannot be removed or have another account mapped to it. For example, if you are moving DomainA/UserA to DomainB/UserB, the Identities command would only work to migrate the user if DomainB/UserB is not already present in TFS.
 > * Because the members of the local Administrators group are automatically added to TFS, make sure to remove any accounts that you want migrated from that group before you change the domain or environment.
 >
->For further background information, [go here](http://blogs.msdn.com/b/vasu_sankaran/archive/2010/06/07/identity-change-in-tfs-2010.aspx) for a detailed description of how identity changes in TFS work, including limitations of the tool.
+> For further background information, [go here](http://blogs.msdn.com/b/vasu_sankaran/archive/2010/06/07/identity-change-in-tfs-2010.aspx) for a detailed description of how identity changes in TFS work, including limitations of the tool.
 
 
 We'll walk through the steps to change the environment of your TFS deployment in the following sections:
@@ -59,8 +59,8 @@ Now that you're sure you're using an account that has all the permissions needed
 
 Now check the list of identities in the current TFS environment and look for any potential problems with groups or individual user accounts that might exist in the new environment.
 
->**Tip:**  
->Consider creating a table or migration map of identities to be moved as part of the environmental move, including details of which accounts might not be able to be migrated automatically.
+> [!TIP]
+> Consider creating a table or migration map of identities to be moved as part of the environmental move, including details of which accounts might not be able to be migrated automatically.
 
 ### Check identities
 
@@ -103,8 +103,8 @@ Stopping the services helps ensure that users cannot make changes to work items 
 
 3.  Restart the computer for the domain change to take effect.
 
-    >**Note:**  
-	>After you restart the computer, a warning might appear that services or drivers could not be started. Continue with the next procedure.
+    > [!NOTE]
+	> After you restart the computer, a warning might appear that services or drivers could not be started. Continue with the next procedure.
 
 <a name="config-sharept-products"></a>
 ## Configure SharePoint Products for the new environment
@@ -119,8 +119,8 @@ Skip this procedure if you are not using SharePoint Products in your deployment
 
     **stsadm.exe -o setapppassword -password** *Key*
 
-    >**Note:**  
-    >This key is an encryption string that is used to encrypt the password for the account that is used to access the forest or domain. The encryption string must be the same for every server in the farm, but a unique string should be used for each farm.
+    > [!NOTE]
+    > This key is an encryption string that is used to encrypt the password for the account that is used to access the forest or domain. The encryption string must be the same for every server in the farm, but a unique string should be used for each farm.
 
 3.  Type the following command, where *domain:DNSName* is the target forest or domain and its DNS name, *user,password* is the username and password for an account that has access to the target forest or domain, and *WebApp* is the name of the Web application that supports your deployment of Team Foundation Server:
 
@@ -143,8 +143,8 @@ If account names are the same in both domains, and the only difference is the do
 
         TFSConfig identities /change /fromdomain:OldComputerorDomainName /todomain:NewDomainName /account:OldTFSServiceAccount /toaccount:NewTFSServiceAccount
 
-    >**Caution:**  
-    >If your service account was a system account such as Network Service, you cannot directly migrate the service account, because a system account with the same name exists in the new environment. You'll have to perform a two-stage process change. See the example in [Identities Command](../command-line/tfsconfig-cmd.md#identities).
+    > [!WARNING]
+    > If your service account was a system account such as Network Service, you cannot directly migrate the service account, because a system account with the same name exists in the new environment. You'll have to perform a two-stage process change. See the example in [Identities Command](../command-line/tfsconfig-cmd.md#identities).
 
 2.  To migrate all accounts that have the same name in the new environment, type the following command:
 
@@ -168,8 +168,8 @@ If account names are the same in both domains, and the only difference is the do
 
         TFSConfig Accounts /change /AccountType:Proxy /account:AccountName /password:Password
 
-    >**Note:**  
-    >If you are moving to a non-trusted domain, you might also need to manually add users and groups to teams, projects, collections, and Team Foundation Server itself. For more information, see [Add users to team projects](../../add-users.md), [Set administrator permissions for team project collections](../../add-administrator-tfs.md), and [Set administrator permissions for Team Foundation Server](../../add-administrator-tfs.md).
+    > [!NOTE]
+    > If you are moving to a non-trusted domain, you might also need to manually add users and groups to teams, projects, collections, and Team Foundation Server itself. For more information, see [Add users to team projects](../../add-users.md), [Set administrator permissions for team project collections](../../add-administrator-tfs.md), and [Set administrator permissions for Team Foundation Server](../../add-administrator-tfs.md).
 
 7.  If your deployment is integrated with Project Server, you might need to perform additional steps to configure the service accounts with the permissions required for operation. For more information, see [Assign permissions to support TFS-Project Server integration](https://msdn.microsoft.com/library/gg412653) and [ConfigureTFS-Project Server integration](https://msdn.microsoft.com/library/gg412647).
 

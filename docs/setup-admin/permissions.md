@@ -51,12 +51,12 @@ To learn more about inheritance, see [About permissions.md](../security/about-pe
 </tr>
 </table>
 
->[!NOTE]  
->Certain features are only available to users who have the appropriate licensing level for those features. Access to those features is not controlled by permissions
+> [!NOTE]  
+> Certain features are only available to users who have the appropriate licensing level for those features. Access to those features is not controlled by permissions
 but by membership in an access level. To learn more, see [Access levels](../access-levels.md). <!--- Manage users and access (Team Services)](./team-services/add-account-users-assign-access-levels-team-services.md) or [Change access levels (TFS)](../work/connect/change-access-levels.md). --> 
 
 
-## Groups  
+## Groups
 
 Permissions can be granted directly to an individual, or to a group.
 Using groups can make things a lot simpler,
@@ -78,6 +78,7 @@ SharePoint Web Application Services
 <a name="server"></a>
 
 ## Server-level groups (TFS)
+
 Server groups apply to TFS only. When you install TFS, the system creates default groups that have [deployment-wide, server-level permissions](#server-permissions). You can neither remove nor delete the built-in server-level groups.
 
 ![ADMIN_GROUPS_PERMISSIONS](_img/permissions/server-groups-and-permissions.png)
@@ -200,6 +201,7 @@ You can't remove or delete the default server level groups.
 
 
 ### Collection-level groups
+
 When you create a Team Services account or TFS collection, the system creates collection-level groups that have [permissions in that collection](#collection-level). You can neither remove nor delete the built-in collection-level groups.
 
 <!---
@@ -327,6 +329,7 @@ Release Administrators (TFS 2017, Team Services)
 
 
 ### Project-level groups
+
 For each team project that you create, the system creates the followings team project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
 
 > The full name of each of these groups is **[{team project name}]\{group name}**.
@@ -414,7 +417,7 @@ Show bugs on backlogs and boards
 -->
 
 
-### Team administrator role  
+### Team administrator role
 
 For each team that you add, you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing the following team assets.  
 
@@ -456,7 +459,7 @@ For each team that you add, you can assign one or more team members as administr
 
 
 
-## Permissions   
+## Permissions
 
 
 The system manages permissions at different levels&mdash;server, collection, project, or object&mdash;and by default assigns them to one or more built-in groups. You manage most permissions through the web portal.
@@ -466,6 +469,7 @@ The system manages permissions at different levels&mdash;server, collection, pro
 
 
 ### Server-level permissions (TFS)
+
 You manage server-level permissions through the [Team Foundation Administration Console](add-administrator-tfs.md) or [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#permissions). Team Foundation Administrators are granted all server-level permissions. Other server-level groups have select permission assignments.
 
 
@@ -573,7 +577,7 @@ You manage server-level permissions through the [Team Foundation Administration 
 <a id="collection">  </a>
 <a id="collection-level"> </a>
 
-### Collection-level permissions  
+### Collection-level permissions
 
 You manage collection-level permissions through the [web portal admin context](../connect/work-web-portal.md#admin-context) or [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#collection-level-permissions). Project Collection Administrators are granted all collection-level permissions. Other collection-level groups have select permission assignments.
 
@@ -768,7 +772,7 @@ You manage collection-level permissions through the [web portal admin context](.
 <a name="project_test">  </a>
 <a name="team-project-level-permissions">  </a>
 
-### Project-level permissions  
+### Project-level permissions
 
 You manage project-level permissions from the [web portal admin context](../connect/work-web-portal.md#admin-context) or using the [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#team-project-level-permissions). Project Administrators are assigned all project-level permissions. Other project-level groups are assigned a subset of these permissions.
 
@@ -871,7 +875,7 @@ You manage project-level permissions from the [web portal admin context](../conn
 
 <a name="build"></a>
 
-### Build permissions (object-level)  
+### Build permissions (object-level)
 
 You manage build permissions [for each build defined in the web portal](../build-release/concepts/policies/permissions.md#build-permissions) or using the [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for each build definition.
 
@@ -896,7 +900,7 @@ The following permissions are defined in Build. All of these can be set at both 
 | **Destroy builds** | Can delete builds from the **Deleted** tab. |
 | **Edit build definition** | Can save any changes to a build definition, including configuration variables, triggers, repositories, and retention policy. |
 | **Edit build quality** | Can add tags to a build. |
-| **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../build-release/define/triggers.md#gated). This does not apply to PR builds. |
+| **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../build-release/define/triggers.md). This does not apply to PR builds. |
 | **Retain indefinitely** | Can toggle the retain indefinitely flag on a build. |
 | **Stop builds** | Can stop builds queued by other team members or by the system.  |
 | **View build definition** | Can view build definition(s). |
@@ -1016,7 +1020,7 @@ The following permissions are defined in Build. All of these can be set at both 
 <a id="git-repo">  </a>
 <a id="git-repository">  </a>
 
-### Git repository permissions (object-level)  
+### Git repository permissions (object-level)
 
 <!---
 Contribute 

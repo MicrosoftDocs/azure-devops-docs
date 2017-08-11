@@ -15,8 +15,8 @@ ms.technology: tfs-on-prem
 
 The steps in this topic are for installing SQL Server 2012 enterprise edition, but you can use the same steps for installing the standard edition. The steps for SQL 2014 are also very similar to these. We’ll install all the SQL Server 2012 features that TFS requires on the same server as TFS, but this isn’t a requirement. TFS is very flexible with regard to SQL Server topologies. See [One Server or Two?](#one-svr-or-two)
 
->**Tip:**  
->You can also use an existing installation of SQL Server for TFS, but to do this you’ll need the SQL Server administrator to grant you a lot of administrative credentials. You must be a member of the sysadmin Server role in SQL Server to install and configure TFS. [Why does TFS need so much privilege on the SQL Server?](http://blogs.msdn.com/b/bharry/archive/2010/08/20/database-permissions-required-to-configure-tfs.aspx) (blog post)
+> [!TIP]
+> You can also use an existing installation of SQL Server for TFS, but to do this you’ll need the SQL Server administrator to grant you a lot of administrative credentials. You must be a member of the sysadmin Server role in SQL Server to install and configure TFS. [Why does TFS need so much privilege on the SQL Server?](http://blogs.msdn.com/b/bharry/archive/2010/08/20/database-permissions-required-to-configure-tfs.aspx) (blog post)
 
 <a name="one-svr-or-two"></a>
 ## One server or two?
@@ -33,16 +33,16 @@ There are many different topology choices you could make. In general, TFS allows
 
 If you want to install SQL Server features on different servers, run the SQL Server installation on each server where you want to install a feature. Use the same instructions below for each installation, but at step 9, only install the features that you require.
 
->**Tip:**  
->A multiple-server installation of TFS requires an Active Directory domain and domain accounts or the Network Service account. You cannot use local accounts for service accounts.
+> [!TIP]
+> A multiple-server installation of TFS requires an Active Directory domain and domain accounts or the Network Service account. You cannot use local accounts for service accounts.
 
 ## To install SQL Server
 
 **Required Permissions**  
 You must be a member of the **Windows Administrators** security group on the server on which you are installing SQL Server. To manually configure a report server, you must also be a member of the **Windows Administrators** security group on the SQL Server that hosts the report server database, if this instance of SQL Server is not on your report server.
 
->**Tip**:  
->If you are installing SQL Server 2014 on Windows Server 2012 or Windows Server 2012 R2, you must have the .NET Framework 3.5 installed. You can install the .NET Framework 3.5 by using the Add Features Wizard from Server Manager. For more information, see the following page on the Microsoft website: [Adding Server Roles and Features (Windows 2012/Windows 2012 R2)](https://technet.microsoft.com/library/hh831809.aspx), [Adding Server Roles and Features (Windows Server 2008 R2)](https://technet.microsoft.com/library/cc732263.aspx)
+> [!TIP]
+> If you are installing SQL Server 2014 on Windows Server 2012 or Windows Server 2012 R2, you must have the .NET Framework 3.5 installed. You can install the .NET Framework 3.5 by using the Add Features Wizard from Server Manager. For more information, see the following page on the Microsoft website: [Adding Server Roles and Features (Windows 2012/Windows 2012 R2)](https://technet.microsoft.com/library/hh831809.aspx), [Adding Server Roles and Features (Windows Server 2008 R2)](https://technet.microsoft.com/library/cc732263.aspx)
 
 
 1.  Insert the installation DVD for a supported version of SQL Server and launch setup.exe.
@@ -62,8 +62,8 @@ You must be a member of the **Windows Administrators** security group on the ser
 
     ![Windows Firewall warning](_img/ic688130.png)
 
-    >**Tip:**  
-    >A Windows Firewall warning might appear, but you can safely ignore this warning if you’re planning to also install TFS on this server. TFS automatically adds an exception to Windows Firewall for SQL Server, if both servers (TFS and SQL Server) are installed on the same machine. If you’re installing TFS on some other server, you’ll want to [open a port for SQL Server in Windows Firewall on this server](http://elhajj.wordpress.com/2013/02/25/workaround-error-tf255049-punching-a-hole-through-windows-firewall/) (blog post).
+    > [!TIP]
+    > A Windows Firewall warning might appear, but you can safely ignore this warning if you’re planning to also install TFS on this server. TFS automatically adds an exception to Windows Firewall for SQL Server, if both servers (TFS and SQL Server) are installed on the same machine. If you’re installing TFS on some other server, you’ll want to [open a port for SQL Server in Windows Firewall on this server](http://elhajj.wordpress.com/2013/02/25/workaround-error-tf255049-punching-a-hole-through-windows-firewall/) (blog post).
 	>
 	>For more information about SQL Server ports required for Team Foundation Server, see [Ports required for installation of Team Foundation Server](../../architecture/required-ports.md).
 
@@ -103,8 +103,8 @@ You must be a member of the **Windows Administrators** security group on the ser
 
     ![Server Configuration (details)](_img/ic665100.png)
 
-    >**Note:**  
-    >Are you using a non-English version of SQL Server? The default collation settings for U.S. English meet the requirements for Team Foundation Server. If you’re not using English, you can set collation settings for the Database Engine on this page. For more information, see [SQL Server Collation Requirements for Team Foundation Server](collation-requirements.md).
+    > [!NOTE]
+    > Are you using a non-English version of SQL Server? The default collation settings for U.S. English meet the requirements for Team Foundation Server. If you’re not using English, you can set collation settings for the Database Engine on this page. For more information, see [SQL Server Collation Requirements for Team Foundation Server](collation-requirements.md).
 
 14. If you selected the **Database Engine Services** check box in step 8, on the **Database Engine Configuration** page, choose **Windows authentication mode**, choose **Add Current User**. Otherwise skip to the next step.
 
@@ -120,8 +120,8 @@ You must be a member of the **Windows Administrators** security group on the ser
 
     If you had to choose **Install only**, you might be planning to have the report server and Team Foundation Server on different servers. This is a supported topology, but you will have to manually configure the report server after you finish installing SQL Server. Use these instructions: [Configure Report Server Manually](#config-report-svr-manually)
 
-    >**Note:**  
-    >You should not choose **Reporting Service SharePoint Integrated Mode**. TFS does not support this configuration mode.
+    > [!NOTE]
+    > You should not choose **Reporting Service SharePoint Integrated Mode**. TFS does not support this configuration mode.
 
 17. (Optional) On the **Error and Usage Reporting** page, specify whether to send information about errors.
 
@@ -202,7 +202,7 @@ These databases must use the naming structure as shown, but you can either omit 
 
 When you install Team Foundation Server, you must select the **Use pre-existing empty database(s)** check box. If you added a label, you must also type it in **Server Databases Label**. The installation wizard will then use the empty databases that you created to set up the configuration database.
 
-> **Note:**  
+> [!NOTE]
 > Each project collection requires its own database, but you cannot configure Team Foundation Server to use an empty project collection database during installation. You must add an empty project collection database after installation, using Team Foundation Server Administration Console.
 
 
@@ -250,7 +250,7 @@ To verify the report server URLs are running using SQL Server Reporting Services
 
 1.  On the server that is running SQL Server Reporting Services, launch **Reporting Services Configuration Manager**.
 
-    > Note:
+    > [!NOTE]
     > On Windows Server, you must open the context menu for **Reporting Services Configuration Manager** and choose **Run as administrator**.
 
     The **Reporting Services Configuration Connection** dialog box appears.

@@ -35,8 +35,8 @@ To set this up, you install and configure the proxy server at the remote site, c
 
 You can use these procedures to configure Team Foundation Server Proxy.
 
->**Note:**  
->You can access the Team Foundation Server Configuration tool from the **Start** menu by launching Team Foundation Server Administration Console, choosing **Proxy Server**, and then choosing **Configure Installed Features**.
+> [!NOTE]
+> You can access the Team Foundation Server Configuration tool from the **Start** menu by launching Team Foundation Server Administration Console, choosing **Proxy Server**, and then choosing **Configure Installed Features**.
 
 **Required permissions**: To follow this procedure, you must be a member of the **Administrators** security group on the server on which you are configuring Team Foundation Server Proxy. You must be a member of the Project Collection Administrators group on TFS. If you connect the proxy to a collection on Visual Studio Team Services, you need the Microsoft account you used to set up the service.
 
@@ -63,8 +63,8 @@ To configure Team Foundation Server Proxy by using Team Foundation Server Config
 
 3.  Choose **Browse**, and then choose the team project collection to which you want this proxy server to connect. Choose **Next**.
 
-	>**Note:**  
-	>If your team project collection is on Visual Studio Team Services, you're prompted to authenticate. Enter the Microsoft account you used to set up the service.
+	> [!NOTE]
+	> If your team project collection is on Visual Studio Team Services, you're prompted to authenticate. Enter the Microsoft account you used to set up the service.
 
 4.  Under **Service Account**, choose **Use a system account** to use Network Service or **Use a user account** to use a domain or local account. If you are using a user account, you must type the password. To test the user account and password combination, choose **Test.**
 

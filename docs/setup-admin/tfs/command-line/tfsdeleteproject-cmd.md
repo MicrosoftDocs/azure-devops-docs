@@ -18,8 +18,8 @@ In addition, if there are components that remain undeleted after an unsuccessful
 
 To delete a team project from Visual Studio Team Services or from TFS using the admin console, see [Delete a team project](../../delete-team-project.md). 
 
->**Caution**:  
->TFSDeleteProject permanently destroys the team project, after which it cannot be recovered. You should backup all important project data before using TFSDeleteProject. 
+> [!WARNING]
+> TFSDeleteProject permanently destroys the team project, after which it cannot be recovered. You should backup all important project data before using TFSDeleteProject. 
 
 To access the TFSDeleteProject command-line tool, open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter: 
 
@@ -150,8 +150,8 @@ You do not need to delete the build drop location of an old team project before 
  
 In the second phase, TFSDeleteProject deletes the following data: 
 
->**Important**:  
->These steps can take a long time to complete, and during that time they can degrade server performance. 
+> [!IMPORTANT]
+> These steps can take a long time to complete, and during that time they can degrade server performance. 
 
 
 - TFSDeleteProject Uses the Reporting Services APIs to delete reports on the server that hosts Reporting Services.
@@ -159,10 +159,10 @@ In the second phase, TFSDeleteProject deletes the following data:
 This step occurs only if the project owns the site and site deletion is not excluded in the command line.
 (Consider that multiple projects may point to a single site, but only one of them can be the owner where reports/dashboards are by default using this project).
 
-	>**Note**:  
-	>Prior to deleting a team project, you can confirm that Reporting Services and SharePoint Products
-	>are using the correct project URLs by verifying the portal settings.
-	>For more information, see [How to: Add a Team Project Portal](https://msdn.microsoft.com/library/dd386320.aspx).
+	> [!NOTE]
+	> Prior to deleting a team project, you can confirm that Reporting Services and SharePoint Products
+	> are using the correct project URLs by verifying the portal settings.
+	> For more information, see [How to: Add a Team Project Portal](https://msdn.microsoft.com/library/dd386320.aspx).
 
 If TFSDeleteProject successfully deletes all of the above data elements, it returns the message Done.
 To verify this result, see Verify Team Project Components Are Deleted.
@@ -241,20 +241,20 @@ By default, each Web service call that the TFSDeleteProject command issues to de
 If there are six calls, then the process could take up to an hour.
 If you want to delete a team project that is associated with a large amount of data, you can temporarily increase this time-out period. 
 
->**Note**:  
->When you increase the time-out period, the change affects all Web service calls.
->In general, you want to keep the time-out period to within 10 minutes to prevent
->Web service calls from degrading server performance and causing users to be locked out
->from using the user interface for long periods of time.
->Therefore, after the project is successfully deleted, you should change the time-out period back to 10 minutes.
+> [!NOTE]
+> When you increase the time-out period, the change affects all Web service calls.
+> In general, you want to keep the time-out period to within 10 minutes to prevent
+> Web service calls from degrading server performance and causing users to be locked out
+> from using the user interface for long periods of time.
+> Therefore, after the project is successfully deleted, you should change the time-out period back to 10 minutes.
 
 Required Permissions 
 
 To complete these procedures, you must be a Windows Administrator on the application-tier server. 
 
->**Important**:  
->Improperly modifying your computer's registry can cause your computer to become unstable.
->If you are not familiar with the registry, you should not add or remove entries, or modify it in any way.
+> [!IMPORTANT]
+> Improperly modifying your computer's registry can cause your computer to become unstable.
+> If you are not familiar with the registry, you should not add or remove entries, or modify it in any way.
 
 0. Log on to the application-tier server. 
 
@@ -290,4 +290,3 @@ The following command removes all components associated with the team project St
 on the Team Foundation Server AdventureWorks1 server in project collection Collection1 and from Team Explorer.
 
 	TFSDeleteProject /force /collection:http://AdventureWorks1:8080/tfs/Collection1 StoreFront
-

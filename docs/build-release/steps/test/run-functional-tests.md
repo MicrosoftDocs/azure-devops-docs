@@ -1,5 +1,5 @@
 ---
-title: Team Services and Team Foundation Server Build and Test - Run Functional Tests step
+title: VSTS and TFS Build and Test - Run Functional Tests step
 ms.assetid: DAA55EF5-A6A2-4962-80A0-7D25E64D1DE2
 description: Run Coded UI/Selenium/Functional tests on a set of machines using the Test Agent to integrate cloud-based load tests into your build and release pipelines
 ms.prod: vs-devops-test-continuous

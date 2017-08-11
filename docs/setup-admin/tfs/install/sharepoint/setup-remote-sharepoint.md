@@ -30,8 +30,8 @@ You can install and configure SharePoint Foundation 2013 during the extensions c
 
 ![Step 2](../_img/ic646325.png)   Run the Team Foundation Server install from the product DVD and then use the Team Foundation Server Extensions for SharePoint Products configuration wizard to configure your installation. This wizard installs and configures the extensions and, if you want, SharePoint Foundation 2013. After you configure the TFS Extensions, add the service account that you will use for Team Foundation Server to the Farm Administrators group. For more information: [Run Team Foundation Server installation](../install-2013/install-tfs.md#installer), [Configure Team Foundation Server Extensions for SharePoint Products](#config-exts), Add the service account for Team Foundation Server to the Farm Administrators group (below).
 
->**Tip:**  
->If you don't want to install all of Team Foundation Server on the server that is running SharePoint Products, launch the tfs_sharePointExtensions.exe file from the SharePoint Extensions folder to install only the Team Foundation Server Extensions for SharePoint Products.
+> [!TIP]
+> If you don't want to install all of Team Foundation Server on the server that is running SharePoint Products, launch the tfs_sharePointExtensions.exe file from the SharePoint Extensions folder to install only the Team Foundation Server Extensions for SharePoint Products.
 
 <a name="tfs-svc-acct-to-farm-admin-group"></a>
 **Add the service account for Team Foundation Server to the Farm Administrators group**
@@ -52,7 +52,7 @@ To add the service account for Team Foundation Server to the Farm Administrators
 
   4. In the **Users/Groups** box, enter the name of the service account for TFS and choose Share. 
 
-  > **Tip:**
+  > [!TIP]
   > If you have to manually add a server name followed by the $ symbol, the search utility might not find it, but you will still be able to choose **Share**.
 
 

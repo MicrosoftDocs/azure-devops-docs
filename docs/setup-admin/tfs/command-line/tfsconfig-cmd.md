@@ -13,7 +13,7 @@ ms.date: 08/04/2016
 
 **TFS 2017** | **TFS 2015** | **TFS 2013** | **TFS 2012** | **TFS 2010**
 
->For versions earlier than TFS 2010, a few of these commands are available in the TFSAdminUtils command-line tool.
+> For versions earlier than TFS 2010, a few of these commands are available in the TFSAdminUtils command-line tool.
 
 The **TFSConfig** command-line tool can be used to perform a variety of administrative actions for
 your on-premises deployment of Team Foundation Server (TFS). 

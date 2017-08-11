@@ -31,4 +31,4 @@ For example, a developer's machine and the build agent might have cached differe
 ## Dealing with broken and incorrect packages
 
 If a package is broken, buggy, or shares unintended content (like secrets), the best response is to prepare a fix and publish it as a new version.
-Then, depending on the severity of the issue and how widely depended-on the package is, you can [unlist or delete](../nuget/remove.md) the package to make it unavailable for consumption.
+Then, depending on the severity of the issue and how widely depended-on the package is, you can [unlist or delete](../nuget/unlist-delete.md) the package to make it unavailable for consumption.

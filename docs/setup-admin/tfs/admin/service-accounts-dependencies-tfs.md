@@ -35,15 +35,15 @@ You can install and deploy different features of TFS in various ways. The distr
 
 Although TFS uses several service accounts, you can use the same domain or workgroup account for most or all of them. For example, you can use the same domain account "Contoso\\Example" as both the service account for Team Foundation Server (*TFSService*) and the data sources account for SQL Server Reporting Services (*TFSReports*). However, different service accounts can require different permission levels. For example, *TFSService* must have the **Log on as a service** permission, and *TFSReports* must have the **Allow log on locally** permission. If you use the same account "Contoso\\Example" for both, you must grant both of these permissions to it. In addition, *TFSService* requires significantly more permissions to operate correctly than those that *TFSReports* requires, as the table later in this topic shows. For security purposes, you should consider using separate accounts for these two service accounts.
 
->**Important:**  
->You must not use the account that was used to install Team Foundation Server as the account for either of these service accounts.
+> [!IMPORTANT]
+> You must not use the account that was used to install Team Foundation Server as the account for either of these service accounts.
 
 If you have deployed Team Foundation Server in an Active Directory domain, you should set the **Account is sensitive and cannot be delegated** option for service accounts. For example, in the following table, you should set that option for *TFSService*. For more information about required service accounts and placeholder names used in documentation for Team Foundation Server, see the topic "[Accounts required for installation of Team Foundation Server](../../requirements.md#accounts)" in the installation guide for Team Foundation. For more information about how to restrict account delegation in Active Directory, see the following page on the Microsoft Web site: [Enabling Delegated Authentication](http://go.microsoft.com/fwlink/?LinkId=61995).
 
 Because you must manage several service accounts, each service account is referred to by a placeholder name that identifies its function, as listed in the table later in this topic. The placeholder name is not the actual name of the account that you use for each service account. The actual name of the account varies depending on your deployment. In the previous example, the account used for both *TFSService* and *TFSReports* was "Contoso\\Example." In your own deployment, you might create domain accounts with the specific names of "TFSService" and "TFSReports," or you might use the system account Network Service as the service account for Team Foundation Server.
 
->**Important:**  
->Unless specifically stated otherwise, no groups or accounts in the following table should be members of the Administrators group on any of the servers in your deployment of Team Foundation Server.
+> [!IMPORTANT]
+> Unless specifically stated otherwise, no groups or accounts in the following table should be members of the Administrators group on any of the servers in your deployment of Team Foundation Server.
 
 The following table shows all the service accounts that you might use in a deployment of TFS:
 
@@ -85,8 +85,8 @@ The following services run under service accounts in a deployment of Team Founda
 
 For more information about service accounts for SQL Server, see the following page on the Microsoft Web site: [SQL Server Books Online](http://go.microsoft.com/fwlink/?LinkID=62398). For the most recent information about service accounts in Team Foundation, see [Team Foundation Server install guide](../install/get-started.md).
 
->**Note:**  
->If you change the service account for Team Foundation Build, you must make sure that the new service account is a member of the Build Services group. You must also make sure that the account has read/write permissions to the temporary folders and the ASP.NET temporary folder. Similarly, if you change the service account for the Team Foundation Server Proxy service, you must make sure that the account is a member of the appropriate groups. For more information, see [Configure Your Build System](https://msdn.microsoft.com/library/ms181711).
+> [!NOTE]
+> If you change the service account for Team Foundation Build, you must make sure that the new service account is a member of the Build Services group. You must also make sure that the account has read/write permissions to the temporary folders and the ASP.NET temporary folder. Similarly, if you change the service account for the Team Foundation Server Proxy service, you must make sure that the account is a member of the appropriate groups. For more information, see [Configure Your Build System](https://msdn.microsoft.com/library/ms181711).
 
 
 ## Q & A 
@@ -106,3 +106,4 @@ For more information about service accounts for SQL Server, see the following pa
 -  [Change the service account or password for SQL Server Reporting Services](change-service-account-or-password-sql-reporting.md) 
 
 -  [Change the service account or password for Team Foundation Server](change-service-account-password.md)
+- 

@@ -117,7 +117,7 @@ To grant access between Team Foundation Server and a SharePoint web application:
 6.  In **Central Administration URL**, specify
     the URL and the port number for SharePoint Central Administration.
     
-    > **Note:**
+    > [!NOTE]
     > If you have administrative permissions on the server that is running
     > SharePoint Products, you can view this URL and port number by opening
     > SharePoint Central Administration. If not, you must obtain this
@@ -128,7 +128,7 @@ To grant access between Team Foundation Server and a SharePoint web application:
     you want to use as the root for team project collections that use
     this SharePoint web application.
 
-    > **Note:**
+    > [!NOTE]
     > By default, the location name is **/sites**, but
     > you can use any named path for site collections as configured in
     > SharePoint Central Administration. If you are deploying Team Foundation
@@ -146,7 +146,7 @@ To grant access between Team Foundation Server and a SharePoint web application:
     with Team Foundation Server. This process might take
     several moments.
 
-    > **Note:**
+    > [!NOTE]
     > Team Foundation Server will not only grant access but also attempt to
     > add the service accounts for the SharePoint web application to the
     > appropriate group in Team Foundation. If any one of these attempts
@@ -161,7 +161,7 @@ Foundation Server, you must add the service account for the web
 application to the **SharePoint Web Application
 Services** group in Team Foundation Server.
 
-> **Note:**
+> [!NOTE]
 > You do not have to perform the procedure to grant access between a
 > SharePoint web application and Team Foundation Server if your account is
 > a member of the Farm Administrators group. If your account is a member

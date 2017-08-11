@@ -196,7 +196,7 @@ Module path: `TFS/Core/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md)[]&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;  [Contracts.TeamProjectReference](../../DistributedTask/Contracts/TeamProjectReference.md)[]&gt;
 
 <a name="method_getTeam"></a>
 <h2 class='method'>getTeam()</h2>

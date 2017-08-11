@@ -1,5 +1,5 @@
 ---
-title: Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server
+title: Modify or Remove Access Between a SharePoint Web Application and TFS
 description: Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server
 ms.assetid: 0ba027bb-bfb9-490e-9220-2fe98230ee40
 ms.manager: douge
@@ -21,7 +21,7 @@ you change your deployment to use HTTPS and Secure Socket Layer (SSL)
 instead of HTTP, you must update the access grant for the web
 application to reflect these changes.
 
-> **Note:**
+> [!NOTE]
 > When you remove an access grant, you should verify whether the service
 > account for the SharePoint web application is being used by another web
 > application in the deployment. If it is not, you should remove the
@@ -78,7 +78,7 @@ To modify or delete access from Team Foundation Server to a SharePoint web appli
     -   Choose **Change**, change the access
         grant, and then choose **OK**.
 
-        > **Note:** 
+        > [!NOTE]
         > Any changes that you make to the access settings for the web application
         > might have a significant impact on the team projects and team project
         > collections that use this SharePoint web application. On the 
@@ -93,7 +93,7 @@ To modify or delete access from Team Foundation Server to a SharePoint web appli
         you want to remove access to the web application. If you are not
         sure, choose **No**.
 
-        > **Important:**
+        > [!IMPORTANT]
         > When you remove a web application, you will have a significant impact on
         > any team projects and team project collections that use this SharePoint
         > web application. If you remove access for a SharePoint web application,
@@ -132,7 +132,7 @@ Services** group in Team Foundation Server.
     Applications** section, highlight the service account that you
     want to remove, and choose **Remove**.
 
-    > **Important:**
+    > [!IMPORTANT]
     > You will not be asked to verify the removal of the service account. Make
     > sure that you have clicked the service account that you intend to remove
     > before you choose **Remove**. If you remove the

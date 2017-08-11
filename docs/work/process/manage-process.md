@@ -33,7 +33,7 @@ For example, as shown in the picture below, you see a list of team projects defi
 <img src="_img/mprocess-overview-project-list.png" alt="Admin context, Account settings, Overview, Project list and the process they use" style="border: 1px solid #CCCCCC;" />  
 
 To perform any of the following actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit or create a specific process](#process-permissions).  To get added to an admin group, see [Add administrators](../../setup-admin/add-administrator-tfs.md#project-collection). 
-- Import Process (only supported for accounts that use the [Hosted XML process model](../customize/customize-work.md#hosted-xml-process-model)) 
+- Import Process (only supported for accounts that use the [Hosted XML process model](../customize/customize-work.md)) 
 - Create an inherited process   
 - Customize a process  
 - Change team projects to use an inherited process or a system process    

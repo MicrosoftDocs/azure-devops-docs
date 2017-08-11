@@ -19,7 +19,7 @@ To clone your TFS deployment, you perform the same steps as a move plus a few ad
 
 You perform a move when you plan to discontinue use of the original hardware and TFS deployment. You perform a clone when you intend to continue using the original TFS instance.
 
-> **Important:**  
+> [!IMPORTANT]
 > In some situations you might want to change the domain of a TFS deployment as well as its hardware. Changing the domain is an environment-based move, and you should never combine the two move types. First complete the hardware move, and then change the environment.
 
 Moving TFS requires several steps. We'll walk through them in the following sections:
@@ -116,7 +116,7 @@ To configure a new server or servers for TFS, you must first install and configu
 
 -   a supported version of SharePoint Products (if your deployment is integrated with SharePoint Products and you want to move it to the same server as TFS)
 
-> **Note:**  
+> [!NOTE]
 > Unlike installing a new deployment of TFS, you will not be able to install SharePoint Products as part of the Standard Single-Server or Advanced options when moving to a new server. You must manually install the same version and edition of SharePoint Products that you used in your previous deployment, or follow the guidance for your version and edition of SharePoint Products to move its deployment to the new hardware separately.
 
 -   Install and configure Windows, IIS (if not configured by default), and SharePoint (if using) in the new environment, and make sure that the server and its software are operational. 
@@ -304,7 +304,7 @@ Not sure what groups and permissions to expect? For more information, see [Add u
 
     If you want to refresh the entire cache for all users the next time they log on, use the [witadmin rebuildcache](rebuild-client-cache.md) command.
 
-    > **Note:**  
+    > [!NOTE]
     > If you restored your databases to a different point in time, you will also need to refresh the version control cache as documented in [Refresh the data caches on client computers](backup/refresh-data-caches.md).
 
 

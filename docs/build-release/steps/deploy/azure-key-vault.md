@@ -64,11 +64,10 @@ When you want to access secrets:
 | **Key Vault** | Required. Select the name of the Azure Key Vault from which the secrets will be downloaded. |
 | **Secrets filter** | Required. A comma-separated list of secret names to be downloaded. Use the default value `*` to download all the secrets from the vault. |
 
-**Note:**
-
-Values are retrieved as strings. For example, if there is a secret named **connectionString**,
-a task variable `connectionString` is created with the latest value of the respective secret
-fetched from Azure key vault. This variable is then available in subsequent tasks.
+> [!NOTE]
+> Values are retrieved as strings. For example, if there is a secret named **connectionString**,
+> a task variable `connectionString` is created with the latest value of the respective secret
+> fetched from Azure key vault. This variable is then available in subsequent tasks.
 
 If the value fetched from the vault is a certificate (for example, a PFX file), the task variable
 will contain the contents of the PFX in string format. You can use the following PowerShell code

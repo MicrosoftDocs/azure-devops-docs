@@ -15,10 +15,10 @@ ms.technology: tfs-on-prem
 
 File type definitions allow you to customize the way Team Foundation version control processes files with specific extensions. By defining a file type, you can disable files with certain extensions from being merged and thereby, prevent multiple users from checking them out in parallel.
 
-> **Note:**
+> [!NOTE]
 > By default, file merging and multiple check-out is enabled.
 
-> **Note:**
+> [!NOTE]
 > Multiple check-out can be disabled at the team project level.
 
 ## File Type Properties
@@ -49,9 +49,9 @@ To edit a file type association, you must have the Edit server-level information
 
 To change a file type association in version control:
 
-  1. On the **Team** menu, click **Team Foundation Server Settings**, and then **Source Control File Types…**. The **File Types** dialog box displays a listing of the file extensions currently associated with version control.
+  1. On the **Team** menu, click **Team Foundation Server Settings**, and then **Source Control File Typesï¿½**. The **File Types** dialog box displays a listing of the file extensions currently associated with version control.
 
-  2. Click **Edit…**.
+  2. Click **Editï¿½**.
 
   3. On the **Edit File Type** dialog box, in the **Name** box, type a description for the file type; for example, Word Documents to add Microsoft Word document file association to version control.
 
@@ -61,7 +61,7 @@ To change a file type association in version control:
 
   6. Click **OK** to return to the **File Types** dialog box and see that the new entry is reflected.
 
-> **Tip:**
+> [!TIP]
 > You can specify multiple file type extension associations with a single name; for example you could add **dot** to the Word Documents name entered earlier.
  
 
@@ -70,7 +70,7 @@ To change a file type association in version control:
 
 Team Foundation version control properties include general file and folder information and the file encoding type. The properties also list the pending check-in status, security information, and branching history. For more information, see [View Version Control File and Folder Properties](https://msdn.microsoft.com/en-us/library/ms245468(v=vs.110).aspx).
 
-> **Note:**
+> [!NOTE]
 > Team Foundation version control properties are not viewed in Visual Studio's Properties Window. They are viewed in their own **Properties** dialog box, as described in the procedure below.
  
 **Required Permissions:**
@@ -96,7 +96,7 @@ To configure version control file encoding:
 
   7. Click **OK**.
 
-> **Note:**
+> [!NOTE]
 > The set encoding results in a pending change that must be checked in.
  
 
@@ -123,7 +123,7 @@ To add a file type association to version control:
 
   6. Click **OK** to return to the **File Types** dialog box with the new entry reflected.
 
-> **Tip:**
+> [!TIP]
 > You can specify multiple file type extensions to be associated with a single name, for example you could add **dot** to the **Word Documents** name entered in this procedure.
  
 

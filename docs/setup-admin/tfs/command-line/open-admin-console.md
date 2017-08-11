@@ -27,7 +27,7 @@ Required Permissions: you must be a member of the local Administrators group on 
 
 To open the administration console from the Start menu on a server that is running one or more components of Team Foundation, type and choose **Team Foundation Server Administration Console**.  On older versions of Windows, you may need to choose **All Programs**, then choose **Microsoft Team Foundation Server**, and then choose **Team Foundation Server Administration Console**.
 
-> Note:
+> [!NOTE]
 > If **Team Foundation Server Administration Console** does not appear as a menu option, you might not have permission to open it. You can try to open it at a command prompt, but you might not be able to access some or all of the administration console's functionality.
  
 The administration console opens. You might have to wait briefly for all the information to populate throughout the nodes of the console.
@@ -43,6 +43,6 @@ By default, the tools directory is located in `Drive:\Program Files\Microsoft Te
 
 The administration console opens. You might have to wait briefly for all the information to populate throughout the nodes of the administration console.
 
-> Note:
+> [!NOTE]
 > You can open the administration console at a command prompt even if you do not have all the required permissions to view or modify some or all of the information that the console shows.
 

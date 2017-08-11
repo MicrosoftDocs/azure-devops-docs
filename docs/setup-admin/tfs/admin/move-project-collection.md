@@ -62,7 +62,7 @@ Before you start your move, make sure that you're an administrator on the server
 
 Before you move a collection, you must first detach it from the deployment of TFS on which it is running. It's very important that you not skip this step. When you detach a collection, all jobs and services are stopped, and then the collection database is stopped. In addition, the detach process copies over the collection-specific data from the configuration database and saves it as part of the team project collection database. This configuration data is what allows the collection database to be attached to a different deployment of TFS. If that data is not present, you cannot attach the collection to any deployment of TFS except the one from which it originated.
 
->**Note:**
+> [!NOTE]
 >  Detaching a collection prevents users from accessing any projects in that collection.
 
 1.  Open the administration console for Team Foundation on the server that hosts the collection that you want to move, and in **Team Project Collections**, highlight the collection that you want to move.
@@ -103,9 +103,9 @@ After you have detached the collection, you must back up its database to move it
 ![Use the tools provided with SQL Server](_img/ic738721.png)
 -   For information about this task, see the following page on the Microsoft website, and make sure to choose the version of SQL Server that matches your deployment: [Backing Up and Restoring Databases in SQL Server](http://go.microsoft.com/fwlink/?LinkId=115430) and [Create a backup schedule and plan](backup/config-backup-sched-plan.md).
 
->**Important**:
->You can only restore a database to the same version or a more recent version of SQL Server. You can't restore a SQL Server database to an earlier version of the product </br>
->If your original deployment used the Enterprise or Datacenter editions of SQL Server, and you want to restore databases to a server running Standard edition, you must use a backup set that was made with SQL Server compression disabled. Unless you disable data compression, you will not be able to successfully restore Enterprise or Datacenter edition databases to a server running Standard edition. To turn off compression, follow the steps in the [Microsoft Knowledge Base article](http://go.microsoft.com/fwlink/?LinkId=253758).
+> [!IMPORTANT]
+> You can only restore a database to the same version or a more recent version of SQL Server. You can't restore a SQL Server database to an earlier version of the product </br>
+> If your original deployment used the Enterprise or Datacenter editions of SQL Server, and you want to restore databases to a server running Standard edition, you must use a backup set that was made with SQL Server compression disabled. Unless you disable data compression, you will not be able to successfully restore Enterprise or Datacenter edition databases to a server running Standard edition. To turn off compression, follow the steps in the [Microsoft Knowledge Base article](http://go.microsoft.com/fwlink/?LinkId=253758).
 
 <a name="move-coll-db"></a>
 ## 3. Move the collection database
@@ -125,8 +125,8 @@ As part of moving the collection, you must restore, copy, or otherwise move the 
 
 After you restore the collection database, you can attach the collection to the deployment of TFS to which you want to move it. If the deployment you're moving to uses reporting, a reporting folder and default reports will be built for the collection you're attaching as part of the process.
 
->**Note:**
->  Warnings will appear when you attach the collection if your deployment uses SharePoint Products and the service account for TFS is not a member of the Farm Administrators group, or if your deployment uses reporting and you've already created a reporting folder and path that is identical to the previous deployment's folder and path. This behavior is expected, and you can proceed.
+> [!NOTE]
+> Warnings will appear when you attach the collection if your deployment uses SharePoint Products and the service account for TFS is not a member of the Farm Administrators group, or if your deployment uses reporting and you've already created a reporting folder and path that is identical to the previous deployment's folder and path. This behavior is expected, and you can proceed.
 
 1.  Open the administration console for Team Foundation on the server that hosts the application tier for the deployment to which you want to move the collection.
 
@@ -225,16 +225,16 @@ You'll also need to rebuild the warehouse and analysis services cube on the orig
 
 4.  In the **Rebuild the Warehouse and Analysis Services Databases** dialog box, choose **OK**.
 
-    >**Note:**
-    >  The warehouses will finish rebuilding and the data will finish repopulating after the Start Rebuild action completes. Depending on the size of your deployment and the amount of data, the entire process might take several hours to complete.
+    > [!NOTE]
+    > The warehouses will finish rebuilding and the data will finish repopulating after the Start Rebuild action completes. Depending on the size of your deployment and the amount of data, the entire process might take several hours to complete.
 
 ### Q: How do I move a collection that uses SharePoint Products?
 
 **A:** To move a team project collection that uses a SharePoint Web application, you must move both the team project collection itself and the SharePoint site collection that supports the team project collection. The site collection must be moved to the Web application that will support the team project collection in the new deployment. Specifically, you must [back up the site collection database](https://technet.microsoft.com/library/ee748617(v=office.15).aspx) and then [move the site collection database](https://technet.microsoft.com/library/cc825328(v=office.15).aspx). Once you've done that and attached the moved team project collection to its destination TFS, you'll need to repair the connection between that TFS and its SharePoint web application to ensure that the attached collection connects properly to the moved site collection. You’ll also need to make sure that the SharePoint tab for the team project collection points to that site collection database.
 
->**Note**:
->If you are moving the collection between deployments that use SharePoint Products, it is strongly recommended that the service account for TFS be a member of the <strong>Farm Administrators</strong> group in SharePoint Products in both deployments. Otherwise, you might experience errors when you attempt to detach or attach the collection. </br>
->You can move a team project collection without granting this membership to the service account for TFS. However, errors will appear when you attach the collection, and you will need to perform additional steps to reconnect projects with their portals. Even if your operational requirements generally restrict granting this membership to the service account, you should consider adding the service account to the Farm Administrators group for the duration of the move operation.
+> [!NOTE]
+> If you are moving the collection between deployments that use SharePoint Products, it is strongly recommended that the service account for TFS be a member of the <strong>Farm Administrators</strong> group in SharePoint Products in both deployments. Otherwise, you might experience errors when you attempt to detach or attach the collection. </br>
+> You can move a team project collection without granting this membership to the service account for TFS. However, errors will appear when you attach the collection, and you will need to perform additional steps to reconnect projects with their portals. Even if your operational requirements generally restrict granting this membership to the service account, you should consider adding the service account to the Farm Administrators group for the duration of the move operation.
 
 1.  Open the administration console for Team Foundation, choose **SharePoint Web Applications**, and in the list of Web applications, choose the Web application that will support the collection that you just attached.
 

@@ -59,8 +59,8 @@ To perform this procedure, you must be a member of the **Administrators** securi
 
 4.  In **Claims Authentication Types**, make sure that check boxes for **Enable Windows Authentication**, **Integrated Windows authentication**, and **NTLM** are selected.
 
->**Note:**  
->You should check that the authentication setting that appears in the SharePoint Central Administration site matches the authentication setting that appears in IIS.
+> [!NOTE]
+> You should check that the authentication setting that appears in the SharePoint Central Administration site matches the authentication setting that appears in IIS.
 
 ### To verify that a supported enterprise edition of SharePoint Server is configured for dashboard compatibility
 

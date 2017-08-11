@@ -23,26 +23,26 @@ Review the requirements listed here and then choose a server upgrade path. You c
 
 ¹ Unlike Visual Studio 2013, there was no Update 1 for TFS 2013. The first update for TFS 2013 is Update 2.
 
-> **Tip:** 
+> [!TIP]
 > Do you need to upgrade from TFS 2008? You must upgrade to TFS 2012 first: [There is an ISO of TFS 2012 available](http://go.microsoft.com/fwlink?linkid=255990) for you to prepare your TFS 2008 installation for an upgrade to TFS 2013.
 
 ## New prerequisite requirements
 
 **SQL Server**: Before you start your upgrade, you might have to upgrade SQL Server to meet new Team Foundation Server requirements. SQL Server 2008 R2 is no longer supported. SQL Server 2012 with SP1 is supported. For more information, see [SQL Server requirements for Team Foundation Server](../../../requirements.md#sql-server).
 
-> **Tip:**  
+> [!TIP]
 > If you’re using SQL Server 2012 with SP1, we recommend you also apply [cumulative update 2 on top of SP1](http://support.microsoft.com/kb/2790947) to address a critical SQL Server bug around resource consumption. This isn’t a hard requirement because the bug only affects a small number of instances, but we wanted you to be aware of it. If you don’t apply CU2, you should apply a SQL Server hotfix ([KB2793634](http://support.microsoft.com/kb/2793634)) to addresses another (different) issue where SQL Server 2012 with SP1 might request an excessive amount of restarts.
 
 **SharePoint Products**: If you have a portal server, you might have to upgrade it to continue using SharePoint integration. We no longer support Windows SharePoint Services 3.0 or Microsoft Office SharePoint Server 2007. See [SharePoint Products requirements for Team Foundation Server](../../../requirements.md#sharepoint).
 
-> **Tip:**  
+> [!TIP]
 > Do you need to upgrade SharePoint to a supported version? See [Upgrade from Office SharePoint Server 2007 or Windows SharePoint Services 3.0 to SharePoint Server 2013 or SharePoint Foundation 2013](https://technet.microsoft.com/library/ee947141.aspx)
 
 ### What about skipping reporting or SharePoint during upgrade?
 
 If you don’t install reporting or SharePoint, your deployment is simpler, but we don’t recommend it. Keep these two features during upgrade because the upgrade configuration will automatically link upgraded projects to the portal and reporting features. If you add a portal or reporting after you upgrade, you cannot easily create these links between all your upgraded projects and the portal.
 
-> **Tip:**  
+> [!TIP]
 > Team Foundation Server doesn’t support changing languages during an upgrade. You should maintain the locale of your operating system and Team Foundation Server during the upgrade. For more information, see: [Language requirements for Team Foundation Server](../../../requirements.md#languages)
 
 ## Next step: choose a server upgrade path

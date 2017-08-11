@@ -37,8 +37,8 @@ Required for reporting | Reporting Services – Native </br> Analysis Services |
 | Service account | You can use a domain account or a built-in account. |
 
 
->**Tip:**  
->For TFS installations that require running SQL Server on dedicated hardware, hardware recommendations are available. For more information, see [System requirements for Team Foundation Server](../../../requirements.md)
+> [!TIP]
+> For TFS installations that require running SQL Server on dedicated hardware, hardware recommendations are available. For more information, see [System requirements for Team Foundation Server](../../../requirements.md)
 
 **Your limits on database read operations**  
 Microsoft does not support any read operations against the TFS databases that originate from queries, scripts, .dll files, and so on, not provided by Microsoft or its support teams. If Microsoft Support determines that those read operations prevent them from solving your problem, the entire database will be unsupported. To return the database to a supported state, all unsupported read operations must stop.
@@ -93,7 +93,7 @@ These databases must use the naming structure as shown, but you can either omit 
 
 When you install Team Foundation Server, you must select the **Use pre-existing empty database(s)** check box. If you added a label, you must also type it in **Server Databases Label**. The installation wizard will then use the empty databases that you created to set up the configuration database.
 
-> **Note:**  
+> [!NOTE]
 > Each project collection requires its own database, but you cannot configure Team Foundation Server to use an empty project collection database during installation. You must add an empty project collection database after installation, using Team Foundation Server Administration Console.
 
 
@@ -142,7 +142,7 @@ To verify the report server URLs are running using SQL Server Reporting Services
 
 1.  On the server that is running SQL Server Reporting Services, launch **Reporting Services Configuration Manager**.
 
-    > Note:
+    > [!NOTE]
     > On Windows Server, you must open the context menu for **Reporting Services Configuration Manager** and choose **Run as administrator**.
 
     The **Reporting Services Configuration Connection** dialog box appears.

@@ -32,7 +32,7 @@ Lifecycle](https://msdn.microsoft.com/en-us/library/dd997438(v=vs.120).aspx).
 If you are upgrading from earlier versions of Lab Management or SCVMM,
 see [upgrading](https://msdn.microsoft.com/en-us/library/hh707966(v=vs.120).aspx).
 
-> **Note:**
+> [!NOTE]
 > Any computers that you use as Library Servers (including the SCVMM
 > machine that has a default library server) and as Hyper-V hosts should
 > be on a gigabit network that is connected to a common network switch.
@@ -60,7 +60,7 @@ information:
 -   *tfssvc*: The account under which Team
     Foundation Server is running.
 
-    > **Note:**
+    > [!NOTE]
     > You must use a domain user account and password for the TFSservice
     > account to set up an SCVMM environment for lab management.
 
@@ -88,7 +88,7 @@ the *HyperVHost* machine, the *VmmMachine* and the *LibraryMachine* all on the s
 
   Windows Server 2008 R2 operating system with Hyper-V 64-bit, Standard, Enterprise, and Datacenter Editions.
 
-  Windows Server 2008 R2—Server Core installation, Standard, Enterprise, and Datacenter Editions.
+  Windows Server 2008 R2ï¿½Server Core installation, Standard, Enterprise, and Datacenter Editions.
 
   Windows Server 2008 operating system with Hyper-V 64-bit, Standard, Enterprise, and Datacenter Editions with Service Pack 2.
 
@@ -162,7 +162,7 @@ the permissions that are required. For a simple setup, the
 *VmmMachine</span> and the 
 *LibraryMachine</span> can be the same machine.
 
-> **Note:**
+> [!NOTE]
 > All the machines that are used for Lab Management must be joined either
 > to the same domain or domains that have two-way trust between them.
 
@@ -215,7 +215,7 @@ To enable the Hyper-V role on each Hyper-V host with Windows Server:
           you must select an active network adapter and then choose 
           **Next**.
 
-          > **Note:**
+          > [!NOTE]
           > To find which network adapters are active, use the **ipconfig** command
           > to view which network adapters have IP addresses. In the wizard, select
           > the network adapter that should be used for creating a virtual network.
@@ -263,7 +263,7 @@ To change Windows Remote Management configuration settings:
       the **Command Prompt**, and then choose 
       **Run as administrator**.
 
-      > **Note:**
+      > [!NOTE]
       > You must be a domain user who has been added to the administrators group
       > for this machine.
 
@@ -309,7 +309,7 @@ To verify that Hyper-V is installed correctly and is working:
     the information from the following
     [Microsoft](http://go.microsoft.com/fwlink/?LinkID=179170) Web site.
 
-    > **Note:**
+    > [!NOTE]
     > You can change the settings for the virtual machine based on your needs.
     > You can update the hard disk size and the memory. For more information
     > about these settings, see the following [Microsoft Web
@@ -320,14 +320,14 @@ To verify that Hyper-V is installed correctly and is working:
     following
     [Microsoft](http://go.microsoft.com/fwlink/?LinkId=181894) Web site.
 
-    > **Note:**
+    > [!NOTE]
     > If you have multiple hard disk drives on your Hyper-V machine, you must
     > configure the paths for the virtual machines to be the larger disk, or
     > you may not have sufficient disk space to create your virtual machines.
 
 For more information about Hyper-V, see [this overview of Hyper-V](http://go.microsoft.com/fwlink/?linkid=164925).
 
-> **Note:**
+> [!NOTE]
 > When you create or start a virtual machine, issues may occur due to
 > antivirus software. For more information, see the following [Microsoft
 > Web site](http://go.microsoft.com/fwlink/?LinkId=180418).
@@ -344,7 +344,7 @@ machines and templates to create environments. Two versions of System
 Center Virtual Machine Manager are supported for Lab Management: SCVMM
 2012 or SCVMM 2008 R2. Lab Management **does not** support SCVMM 2016. 
 
-> **Note:**
+> [!NOTE]
 > If you are using the stand-alone Hyper-V Server 2008 R2 operating
 > system, you must install SCVMM on a separate 
 > *VmmMachine*. You cannot use the 
@@ -367,7 +367,7 @@ Install SCVMM server and its administrator console on the VMMMachine:
   3.  In System Center 2012 setup, choose 
       **Install**.
 
-      > **Tip:**
+      > [!TIP]
       > If you do not have Microsoft .NET Framework 3.5 SP1 installed, VMM Setup
       > prompts you to install it. Choose **OK**.
 
@@ -451,7 +451,7 @@ To configure SCVMM:
       4.  On the **Summary** wizard page, choose
           **Finish**.
 
-          > **Note:**
+          > [!NOTE]
           > It is recommended that you configure a separate host group for each team
           > project collection. For example, if you plan to configure Lab Management
           > in two project collections in Team Foundation Server, you can create two
@@ -475,7 +475,7 @@ To configure SCVMM:
           In the ribbon, choose **Add library
           shares** and follow the instruction in the wizard.
 
-          > **Note:**
+          > [!NOTE]
           > We recommend that you configure a separate library share for each team
           > project collection.
 
@@ -528,7 +528,7 @@ To install SCVMM server and SCVMM Administrator Console on the VmmMachine:
           Edition SP3**, and then choose 
           **Next**.
 
-          > **Note:**
+          > [!NOTE]
           > If you do have an existing instance of SQL that you want to use, then
           > select **Use a supported version of SQL Server**.
 
@@ -536,7 +536,7 @@ To install SCVMM server and SCVMM Administrator Console on the VmmMachine:
           page, select **Create a new library
           share**.
 
-          > **Note:**
+          > [!NOTE]
           > You can accept the default names and locations for the library share or
           > enter different values.
 
@@ -570,7 +570,7 @@ To install SCVMM server and SCVMM Administrator Console on the VmmMachine:
 After you install VMM manager, you must add your Hyper-V host machine to
 a host group, and optionally add more library shares.
 
-> **Note:**
+> [!NOTE]
 > A host group lets you group the Hyper-V host machines together in a
 > meaningful way based on the purpose of the host machine. For example, a
 > set of host machines might belong to a particular department in your
@@ -591,7 +591,7 @@ To configure SCVMM:
           ```<the name of the SCVMM Server>:<port number>```, and then choose
           **Connect**.
 
-          > **Note:**
+          > [!NOTE]
           > If you receive an error message that states that you cannot connect
           > because the service is not running, run services.msc and verify that
           > Virtual Machine Manager Service is running.
@@ -615,7 +615,7 @@ To configure SCVMM:
       3.  On the **Summary** wizard page, choose
           **Add Hosts**.
 
-          > **Note:**
+          > [!NOTE]
           > We recommend that you configure a separate host group for each team
           > project collection. For example, if you plan to configure Lab Management
           > in two project collections in Team Foundation Server, you can create two
@@ -638,7 +638,7 @@ To configure SCVMM:
           under the **Actions** pane on the
           right side.
 
-          > **Note:**
+          > [!NOTE]
           > We recommend that you configure a separate library share for each team
           > project collection.
 
@@ -674,7 +674,7 @@ To configure SCVMM:
 
       5.  Repeat steps b through d for each host.
 
-> **Important:**
+> [!IMPORTANT]
 > If you have two SCVMM servers that are both configured to be used by Lab
 > Management with a specific Team Foundation Server, then each SCVMM
 > server must be configured to use a unique MAC range. To configure the
@@ -803,7 +803,7 @@ you must also install the SCVMM Administrator Console on your
 the computer that you are using as your 
 *VmmMachine*.
 
-> **Note:**
+> [!NOTE]
 > If your deployment of Team Foundation Server has more than one
 > application-tier machine, install the console on every application tier
 > in the deployment.
@@ -875,7 +875,7 @@ To configure Lab Management for Team Foundation Server:
       Server**, and then choose **Team Foundation
       Server Administration Console**.
 
-      > **Note:**
+      > [!NOTE]
       > You must log on to *TfsMachine* as *domain(\\*tfsadmin*.
 
   2.  In the Administration Console, in the 
@@ -1002,7 +1002,7 @@ definition to deploy your application, or run tests by using a test
 controller on your SCVMM environments, you must add a domain user
 account that will be used by test agents and build agents.
 
-> **Note:**
+> [!NOTE]
 > You must have a team project collection already created for this step of
 > the configuration.
 
@@ -1013,7 +1013,7 @@ To configure Lab Management for each team project collection:
       Project Collections** under **Application
       Tier**.
 
-      > **Important:**
+      > [!IMPORTANT]
       > You must configure a library share for each team project collection that
       > you want to configure for Lab Management.
 
@@ -1046,7 +1046,7 @@ To configure Lab Management for each team project collection:
       collection, select the **Auto Provision**
       check box for the library share.
 
-      > **Note:**
+      > [!NOTE]
       > If you select to auto-provision the library share, Team Foundation
       > Server automatically adds the library share to all the team projects in
       > this team project collection. For team projects that have not yet been
@@ -1060,7 +1060,7 @@ To configure Lab Management for each team project collection:
   7.  To select the host group to use for a team project collection,
       choose **Host Groups**.
 
-      > **Important:**
+      > [!IMPORTANT]
       > You must select the host group for each team project collection that you
       > want to configure for Lab Management.
 
@@ -1075,7 +1075,7 @@ To configure Lab Management for each team project collection:
       collection, choose the **Auto Provision**
       check box for the host group.
 
-      > **Note:**
+      > [!NOTE]
       > If you select to auto-provision the host group, Team Foundation Server
       > automatically adds the host group to all the team projects in this team
       > project collection. For team projects that have not yet been created,
@@ -1105,7 +1105,7 @@ To install the test controller:
       Test Agents and Test
       Controllers](https://msdn.microsoft.com/en-us/library/dd648127(v=vs.120).aspx).
 
-      > **Note:**
+      > [!NOTE]
       > You must register the test controller with the team project collection
       > that you are using for Lab Management.
 
@@ -1113,7 +1113,7 @@ To install the test controller:
       agents and build agents and between the test controllers and Team
       Foundation Server.
 
-      > **Caution:**
+      > [!WARNING]
       > The service account that you specify must be a domain account. For
       > security reasons, this account must have limited privileges. The account
       > that you use must not have any administrative permission or be the

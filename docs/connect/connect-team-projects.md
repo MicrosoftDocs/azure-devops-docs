@@ -319,7 +319,7 @@ Additional resources you may find of interest:
 - [Collaborate using team resources](../work/scale/manage-team-assets.md)  
 - [Customize the work tracking experience](../work/customize/customize-work.md)  
 
-If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../git/get-started.md) and [Manage bugs](../work/backlogs/manage-bugs.md).  
+If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../git/gitquickstart.md) and [Manage bugs](../work/backlogs/manage-bugs.md).  
 
 To start planning and tracking work, see [Get started with Agile tools to plan and track work](../work/overview.md). 
 

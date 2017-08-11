@@ -370,7 +370,7 @@ By installing [TFS Power Tools](https://marketplace.visualstudio.com/items?itemN
 Additional requirements may apply.
 
 >[!NOTE]  
->For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](/docs/work/process/new-work-item-experience).  
+>For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../work/process/new-work-item-experience.md).  
 
 
 [!INCLUDE [temp](../_shared/help-support-shared.md)]

@@ -1,5 +1,5 @@
 ---
-title: Team Services and Team Foundation Server Build and Test - Publish Test Results step
+title: VSTS and TFS Build and Test - Publish Test Results step
 ms.assetid: 6D7152C7-2CC7-4CB3-8002-2498650A2509
 description: Publish Test Results with the Visual Studio to integrate cloud-based load tests into your build and release pipelines 
 ms.prod: vs-devops-test-continuous
@@ -68,6 +68,3 @@ The build agent must have the following capabilities:
 <!-- ENDSECTION -->
 
 [!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
-
-
- 

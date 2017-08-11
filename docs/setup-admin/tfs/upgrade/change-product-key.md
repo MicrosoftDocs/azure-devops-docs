@@ -18,7 +18,7 @@ To move from the trial edition to the full edition of Team Foundation Server, yo
 
 You can review the license type, license expiration date, and product key number of your deployment of Team Foundation Server. Problems with an expired or non-valid product key can disrupt your deployment. If you installed a trial edition of Team Foundation Server, you should be careful not to let the license expire. After the license expires, your users will be unable to use Team Foundation Server until you take steps to correct the situation. You might also need to locate the product key of Team Foundation Server for support or record-keeping purposes.
 
-> **Note:**
+> [!NOTE]
 > If you have any issues during the licensing upgrade process, you can contact support for Visual Studio. For more information, see the following page on the Microsoft Web site: [Help and Support](http://go.microsoft.com/fwlink/?linkid=108287) and the [Team Foundation Server Licensing Whitepaper](http://go.microsoft.com/fwlink/?LinkID=253211).
 
 **Required Permissions**

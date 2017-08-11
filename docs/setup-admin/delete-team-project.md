@@ -74,7 +74,7 @@ You can use the following procedures to save data that users most care about, su
 
     This process doesn’t save any change history or links to other artifacts.
 
-    If you use Git, [clone your repositories](../git/get-started.md) to retain the full project history and all the branches.
+    If you use Git, [clone your repositories](../git/gitquickstart.md) to retain the full project history and all the branches.
 
 -   **Build data**: To save logs and data in your drop build folders, see [View build results](https://msdn.microsoft.com/library/ms181733.aspx).
 

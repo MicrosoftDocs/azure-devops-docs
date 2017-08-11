@@ -58,7 +58,7 @@ do that now to access the TFS custom backup and restore tools. You're
 going to back up all of your TFS data, including the encryption key for
 the report server.
 
-> **Tip:**
+> [!TIP]
 > All your data needs to be backed up to the same point in time in order
 > for the restore and upgrade to work correctly. The only reason to not
 > back up a database would be, for example, if you have reporting in the
@@ -180,7 +180,7 @@ To restore your TFS data:
   5.  Select the check boxes for the databases you want to restore to the
       SQL Server you identified at the start of this procedure.
 
-        > **Important:**
+        > [!IMPORTANT]
         > For SharePoint, you must only restore the WSS\_Content database. Do not
         > restore the WSS\_AdminContent or WSS\_Config databases. You want the new
         > SharePoint Foundation versions of these databases, not the ones from the

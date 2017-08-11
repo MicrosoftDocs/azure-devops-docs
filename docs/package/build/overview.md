@@ -19,7 +19,7 @@ Package Management can integrate with most build systems using REST APIs and pac
 * [Team Build](team-build.md)
 * [Jenkins](jenkins.md)
 
-To integrate with other build systems, use the [packaging REST APIs](../../../integrate/api/packaging/overview.md).
+To integrate with other build systems, use the [packaging REST APIs](../../integrate/rest-api-overview.md).
 
 For details on build tasks related to Package Management, see the following:
 * [NuGet Installer](../../build-release/steps/package/nuget-installer.md)

@@ -15,8 +15,8 @@ ms.technology: tfs-on-prem
 
 First, install TFS, then run the upgrade configuration wizard. If you move the TFS application tier to new hardware, you must update the URL for the application tier after you finish running the TFS upgrade wizard.
 
->**Tip:**
->  After you install TFS, its configuration tool appears automatically. If for some reason you don’t see it, you can access it from the TFS administration console. Launch TFS administration console from the **Start** menu. In the admin console, choose **Application Tier**, and then choose **Configure Installed Features**.
+> [!TIP]
+> After you install TFS, its configuration tool appears automatically. If for some reason you don’t see it, you can access it from the TFS administration console. Launch TFS administration console from the **Start** menu. In the admin console, choose **Application Tier**, and then choose **Configure Installed Features**.
 
 **Required Permissions**
 
@@ -52,8 +52,8 @@ You must be a member of the Windows Administrators security group. If you’re u
 
     2.  In **Backup Databases to**, accept the default location or enter another location.
 
-        >**Note:**
-        >  If you want to overwrite backups stored in this network location, you can choose **Overwrite existing database backups at this location**.
+        > [!NOTE]
+        > If you want to overwrite backups stored in this network location, you can choose **Overwrite existing database backups at this location**.
 
     3.  Choose **Backup Now**.
 
@@ -77,8 +77,8 @@ You must be a member of the Windows Administrators security group. If you’re u
 
 8.  Select the **Configure Reporting for use with Team Foundation Server** check box to use reporting, or clear the check box to skip reporting, and then choose **Next**.
 
-    >**Tip:**
-    >  If you skip reporting and add it later during an upgrade, you may need to use different database names for the reporting warehouse databases (TFS_Warehouse and TFS_Analysis). As an alternative, you can delete the old reporting databases and new databases will be created using the default names.
+    > [!TIP]
+    > If you skip reporting and add it later during an upgrade, you may need to use different database names for the reporting warehouse databases (TFS_Warehouse and TFS_Analysis). As an alternative, you can delete the old reporting databases and new databases will be created using the default names.
 
     1.  Enter the name of the server that is running SQL Server Reporting Services in **Reporting Services Instance** and choose **Populate URLs**.** **
 
@@ -120,8 +120,8 @@ You must be a member of the Windows Administrators security group. If you’re u
 
     The wizard applies configuration settings.
 
-    >**Tip:**
-    >  Did you get error TF255356 when you tried to upgrade from TFS 2012 (or TF400744 with TFS 2010)? These are misleading error messages. Read this blog post to recover: [TF255356: Known Issue with Configuring TFS 2013 RTM Express and Basic](http://blogs.msdn.com/b/visualstudioalm/archive/2013/12/04/known-issue-with-configuring-tfs-2013-rtm-express-and-basic.aspx)
+    > [!TIP]
+    > Did you get error TF255356 when you tried to upgrade from TFS 2012 (or TF400744 with TFS 2010)? These are misleading error messages. Read this blog post to recover: [TF255356: Known Issue with Configuring TFS 2013 RTM Express and Basic](http://blogs.msdn.com/b/visualstudioalm/archive/2013/12/04/known-issue-with-configuring-tfs-2013-rtm-express-and-basic.aspx)
 
 12. Choose **Next**.
 
@@ -131,8 +131,8 @@ You must be a member of the Windows Administrators security group. If you’re u
 
 14. Read the final summary screen, and then choose **Close** twice—once in the wizard and then again in the configuration tool.
 
->**Tip:**
->  If you have Project Server added to TFS, this is when you should upgrade the TFS Extensions for Project Server. See the heading “Less-common upgrade tasks” for more information in [TFS upgrade requirements](upgrade-2013/upgrade-2013-requirements.md)
+> [!TIP]
+> If you have Project Server added to TFS, this is when you should upgrade the TFS Extensions for Project Server. See the heading “Less-common upgrade tasks” for more information in [TFS upgrade requirements](upgrade-2013/upgrade-2013-requirements.md)
 
 ## Update the URL for TFS
 

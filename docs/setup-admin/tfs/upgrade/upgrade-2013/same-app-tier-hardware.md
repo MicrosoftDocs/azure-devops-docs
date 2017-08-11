@@ -27,8 +27,8 @@ For more information, see: [System requirements for Team Foundation Server](../.
 
 ![](../../install/_img/ic646325.png) **Uninstall TFS 2010**. Use Control Panel to completely uninstall Team Foundation Server 2010. If you’re upgrading TFS 2012, you don’t have to uninstall the old version of TFS. You can skip this step and we’ll preserve some of your application tier settings.
 
->**Tip:**  
->If SharePoint is running on a computer other than Team Foundation Server, you have to [uninstall the TFS extensions for SharePoint from the SharePoint server](use-same-sharepoint-site.md), too. If SharePoint Products is on the TFS application-tier, don’t worry. We uninstall the TFS extensions for SharePoint at the same time as we remove the old version of TFS.
+> [!TIP]
+> If SharePoint is running on a computer other than Team Foundation Server, you have to [uninstall the TFS extensions for SharePoint from the SharePoint server](use-same-sharepoint-site.md), too. If SharePoint Products is on the TFS application-tier, don’t worry. We uninstall the TFS extensions for SharePoint at the same time as we remove the old version of TFS.
 
 ![](../_img/ic552209.png)
 
@@ -38,8 +38,8 @@ For more information, see: [Run the TFS Upgrade Wizard](../run-upgrade-wizard.md
 
 ![](../../install/_img/ic612456.png)
 
->**Tip:**  
->If you have Project Server added to TFS, this is when you should upgrade the TFS Extensions for Project Server. See the heading “Less-common upgrade tasks” for more information in [TFS upgrade requirements](upgrade-2013-requirements.md).
+> [!TIP]
+> If you have Project Server added to TFS, this is when you should upgrade the TFS Extensions for Project Server. See the heading “Less-common upgrade tasks” for more information in [TFS upgrade requirements](upgrade-2013-requirements.md).
 
 ## Next Step: Set up a new build machine
 

@@ -80,7 +80,7 @@ In this example, we grant the Team Admins group permissions to move work items t
 
 <a id="restrict-delete-permissions"></a>
 ###Restrict users from deleting work items 
-You can restrict users from deleting work items by changing their permissions to Dlete work items in this project. For more information about restricting permissions, see [Restrict access to resources, Work items](../../setup-admin/restrict-access-tfs.md#work-items). 
+You can restrict users from deleting work items by changing their permissions to Delete work items in this project. For more information about restricting permissions, see [Restrict access to resources, Work items](../../setup-admin/restrict-access-tfs.md#work-items). 
 
 <a id="delete-test-permissions"></a>
 ###Additional permissions and access level required to delete test artifacts

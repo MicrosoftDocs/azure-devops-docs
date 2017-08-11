@@ -678,7 +678,7 @@ Module path: `TFS/build-release/RestClient`
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Timeline](../../../TFS/build/Contracts/Timeline.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;  [Contracts.Timeline](../../DistributedTask/Contracts/Timeline.md)&gt;
 
 <a name="method_getBuildWorkItemsRefs"></a>
 <h2 class='method'>getBuildWorkItemsRefs()</h2>

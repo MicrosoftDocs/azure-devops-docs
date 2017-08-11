@@ -15,8 +15,8 @@ ms.date: 08/04/2016
 
 You can use the **TFSServiceControl** command to stop or start all of the services and application pools Team Foundation Server (TFS) uses. For example, you use this command when backing up or restoring databases, or when you are moving your deployment from one machine to another.
 
->**Note:**  
->You must use the <strong>TFSServiceControl</strong> command to ensure that all necessary operations, services, and application pools are stopped for maintenance tasks such as backup and restore. You cannot manually perform all of the tasks carried out by the <strong>TFSServiceControl</strong> command.
+> [!NOTE]
+> You must use the <strong>TFSServiceControl</strong> command to ensure that all necessary operations, services, and application pools are stopped for maintenance tasks such as backup and restore. You cannot manually perform all of the tasks carried out by the <strong>TFSServiceControl</strong> command.
 
 Requirements
 

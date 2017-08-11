@@ -14,16 +14,16 @@ ms.date: 08/02/2017
 
 **Team Services | TFS 2017 | TFS 2015**  
 
->[!NOTE]  
->**Feature availability**: The project page described in this topic is in preview for Team Services. It is enabled or disabled when you [enable or disable the Account Landing Page](../collaborate/preview-features.md) from your profile/account menu. For users of TFS 2017.1 and later versions, this feature is enabled by default and can't be turned off. 
+> [!NOTE]  
+> **Feature availability**: The project page described in this topic is in preview for Team Services. It is enabled or disabled when you [enable or disable the Account Landing Page](../collaborate/preview-features.md) from your profile/account menu. For users of TFS 2017.1 and later versions, this feature is enabled by default and can't be turned off. 
 >
->The Project page replaces the [Welcome page](#welcome-pages) used in TFS 2017 and earlier versions. 
+> The Project page replaces the [Welcome page](#welcome-pages) used in TFS 2017 and earlier versions. 
 
 You can quickly get started with a team project from the project page. You can share your project vision with your team, add team members, and check the latest activity. Use this page to leverage all the built-in DevOps functionality of Team Services and to perform the following activities:
 
   
->[!NOTE]  
->The features and functions available from your project page depend on the source control&#151;Git or Team Foundation Version Control (TFVC)&#151;that you selected when you [created your team project](../setup-admin/create-team-project.md).  
+> [!NOTE]  
+> The features and functions available from your project page depend on the source control&#151;Git or Team Foundation Version Control (TFVC)&#151;that you selected when you [created your team project](../setup-admin/create-team-project.md).  
 
 
 <div style="float:left;width:320px;margin:3px;font-size:90%">
@@ -63,8 +63,8 @@ To view the project page, open your web browser to the following URL:
 
 <b>https://<i>AccountName</i>.visualstudio.com/<i>ProjectName</i></b>
 
->[!TIP]  
->If your page isn't similar to one of the following images, then you need to [enable the feature](../collaborate/preview-features.md).  
+> [!TIP]  
+> If your page isn't similar to one of the following images, then you need to [enable the feature](../collaborate/preview-features.md).  
 
 ## Get started with a new team project 
 
@@ -117,8 +117,8 @@ To add team members or manage membership in the team project, click ![Add team m
 <a id="welcome-pages"></a> 
 ## Repository welcome pages
 
->[!NOTE]  
->**Feature availability**: The Welcome pages are available from the web portal of TFS 2017 and earlier versions.  
+> [!NOTE]  
+> **Feature availability**: The Welcome pages are available from the web portal of TFS 2017 and earlier versions.  
 
 Here's an example of a Welcome page:
 
@@ -137,8 +137,8 @@ Use these pages to orient contributors to working within a Git repository or Tea
 
 ### Edit or create additional pages
 
->[!NOTE]  
->If you set policies on the Git repository, changes to the welcome page must be done as a pull request.  
+> [!NOTE]  
+> If you set policies on the Git repository, changes to the welcome page must be done as a pull request.  
 
 1. You can start editing directly from the Welcome page.
 

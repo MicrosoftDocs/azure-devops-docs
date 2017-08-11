@@ -1,5 +1,5 @@
 ---
-title: Change the service account or password for SQL Server Reporting Services  for Team Foundation Server
+title: Change the service account or password for SQL Server Reporting Services for TFS
 description: Change the service account or password for SQL Server Reporting Services  for Team Foundation Server
 ms.assetid: 658da0e5-0390-4016-bacf-4ad9003777a6
 ms.manager: douge
@@ -32,7 +32,7 @@ Instead, the utility updates TFS to use a different set of credentials.
 
 You change the password or account used as the *FSReports* account by using the **TFSConfig** command-line utility with the **Accounts** option.
 
-> **Important:**
+> [!IMPORTANT]
 > The **TFSConfig** utility changes only those services that run under the old account.
 
 You can use the same utility to assign a different account to be the
@@ -99,7 +99,7 @@ account or to assign a different account, you must log on to a server
 that hosts the application services for Team Foundation and use the
 **TfsConfig Accounts** utility.
 
-> **Note:**
+> [!NOTE]
 > Depending on your deployment configuration, you might need to restart
 > Internet Information Services (IIS) after you complete this procedure
 > for the changes to take effect.
@@ -150,7 +150,7 @@ To use the administration console to change the password:
     **Status**, and then choose 
     **Close**.
 
-    > **Note:**
+    > [!NOTE]
     > This process might take a few minutes.
 
 To assign a new reporting services service account to all Team Foundation Server services using the TFSConfig utility:
@@ -193,7 +193,7 @@ To use the administration console to change the account:
         **Use a system account**, and then choose a
         system account from the drop-down list.
 
-        > **Note:**
+        > [!NOTE]
         > System accounts do not have user-managed passwords. If you choose to use
         > a system account as TFSReports, you should not type a password in the
         > password field.
@@ -213,5 +213,5 @@ To use the administration console to change the account:
     **Status**, and then choose 
     **Close**.
 
-    > **Note:**
+    > [!NOTE]
     > This process might take a few minutes.

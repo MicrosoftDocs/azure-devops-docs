@@ -103,8 +103,8 @@ one team.
 
     ![The team inherits permissions from Contributors](_img/team-inherits-from-contribs.png)
 
-    Tip: It's a good idea to test changes in permissions immediately
-    after you make them.
+    > [!TIP]
+    > Tip: It's a good idea to test changes in permissions immediately after you make them.
 
 3.  Teams can also have specific permissions for the areas and
     iterations that they work in. Because areas and iterations affect an

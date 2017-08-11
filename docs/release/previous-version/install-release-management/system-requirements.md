@@ -27,8 +27,9 @@ These are the software requirements for the Release Management server.
 * Windows Server 2012
 * Windows Server 2008 R2, Service Pack 1 
 
-***Tip:*** _You must install Release Management server on server-class 
-operating system._
+> [!TIP]
+> _You must install Release Management server on server-class 
+> operating system._
  
 **Team Foundation Server (TFS)** 
 
@@ -42,8 +43,9 @@ with the following versions of TFS:
 * Team Foundation Server 2012
 * Team Foundation Server 2010
 
-***Note:*** _TFS is not a mandatory requirement. Release Management can be 
-used in a standalone mode to deploy applications._
+> [!NOTE]
+> _TFS is not a mandatory requirement. Release Management can be 
+> used in a standalone mode to deploy applications._
 
 **SQL Server:** 
 
@@ -90,8 +92,9 @@ Release Management client can connect to the following versions of TFS:
 * Team Foundation Server 2012
 * Team Foundation Server 2010
 
-***Note:*** _TFS is not a mandatory requirement. Release Management Client 
-can connect to Visual Studio Team Services to deploy applications._
+> [!NOTE]
+> _TFS is not a mandatory requirement. Release Management Client 
+> can connect to Visual Studio Team Services to deploy applications._
 
 These are the hardware requirements for the Release Management client.
 

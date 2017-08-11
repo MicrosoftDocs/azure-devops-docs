@@ -53,8 +53,8 @@ Access control entries are security mechanisms that determine which operations a
 
 The following example displays what namespaces are available at the server level for the application-tier server that is named ADatumCorporation.
 
->**Note:**  
->The examples are for illustration only and are fictitious. No real association is intended or inferred.
+> [!NOTE]
+> The examples are for illustration only and are fictitious. No real association is intended or inferred.
 
      tfssecurity /a /server:ServerURL 
 
@@ -189,8 +189,8 @@ Access control entries are security mechanisms that determine which operations a
 
 The following example displays what namespaces are available at the server level for the application-tier server that is named ADatumCorporation.
 
->**Note:**  
->The examples are for illustration only and are fictitious. No real association is intended or inferred.
+> [!NOTE]
+> The examples are for illustration only and are fictitious. No real association is intended or inferred.
 
      tfssecurity /a /server:ServerURL 
 
@@ -325,8 +325,8 @@ Access control entries are security mechanisms that determine which operations a
  
 The following example displays what users and groups have access to the FrameworkGlobalSecurity token in the Server namespace within the ADatumCorporation deployment.
 
->**Note:**  
->The examples are for illustration only and are fictitious. No real association is intended or inferred.
+> [!NOTE]
+> The examples are for illustration only and are fictitious. No real association is intended or inferred.
 
 	tfssecurity /acl Server FrameworkGlobalSecurity /server:ServerURL 
 
@@ -414,8 +414,8 @@ You can also add users and groups to an existing group using Team Explorer. For 
 
 The following example adds the Datum1 domain user John Peoples (Datum1\\jpeoples) to the Team Foundation Administrators group.
 
->**Note:**  
->The examples are for illustration only and are fictitious. No real association is intended or inferred.
+> [!NOTE]
+> The examples are for illustration only and are fictitious. No real association is intended or inferred.
 
     tfssecurity /g+ "Team Foundation Administrators" n:Datum1\jpeoples /server:http://ADatumCorporation:8080
 
@@ -484,8 +484,8 @@ You can also add users and groups to an existing group using Team Explorer. For 
 
 The following example removes the Datum1 domain user John Peoples (Datum1\\jpeoples) from the Team Foundation Administrators group.
 
->**Note:**  
->The examples are for illustration only and are fictitious. No real association is intended or inferred.
+> [!NOTE]
+> The examples are for illustration only and are fictitious. No real association is intended or inferred.
 
     tfssecurity /g- "Team Foundation Administrators" n:Datum1\jpeoples /server:http://ADatumCorporation:8080
 
@@ -552,15 +552,15 @@ A project-level group is a security group for your team project. You can use pro
 
 The following example creates a group that is specific to the project that the URI "vstfs://Classification/TeamProject/00000000-0000-0000-0000-000000000000" specifies. The group is named "Test Group" and has the description "This group is for testing."
 
->**Note:**  
->The examples are for illustration only and are fictitious. No real association is intended or inferred.
+> [!NOTE]
+> The examples are for illustration only and are fictitious. No real association is intended or inferred.
 
 You must replace the placeholder GUID with the URI of the team project for which you want to create this group. To obtain the URI for a team project, open Team Explorer, right-click the team project, click Properties, and copy the entire value of the URL property.
 
 After you run the command, you can verify the group in Team Explorer. Right-click the team project that you used in the command, click Team Project Settings, and then click Group Memberships. In the Project Groups on  TeamProjectName dialog box, the Groups list includes Test Group .
 
->**Note:**  
->You can use the **/gc** command to create groups but not to add any users to the groups or assign any permissions. To change the membership of the group, see [/g+: Add a user or another group to an existing group](#gplus) and [/g-: Remove a user or group](#gminus). To change the permissions for the group, see [/a+: Add permissions](#aplus) and [/a-: Remove a user or a group from membership in a group](#aminus).
+> [!NOTE]
+> You can use the **/gc** command to create groups but not to add any users to the groups or assign any permissions. To change the membership of the group, see [/g+: Add a user or another group to an existing group](#gplus) and [/g-: Remove a user or group](#gminus). To change the permissions for the group, see [/a+: Add permissions](#aplus) and [/a-: Remove a user or a group from membership in a group](#aminus).
 
     tfssecurity /gc "vstfs:///Classification/TeamProject/00000000-0000-0000-0000-000000000000" "Test Group"
 		"This group is for team members who test our code" /collection:CollectionURL
@@ -590,15 +590,15 @@ Run this command on an application-tier server for Team Foundation.
 
 Server-level groups are created directly on the application tier and apply to all team project collections. Collection-level are created at the team project collection level. They apply to that collection and have implications for all team projects within the collection. In contrast, team project groups apply to a specific project within a collection but not any other projects in that collection. You can assign permissions to server-level groups so that members of those groups can perform tasks in Team Foundation Server (TFS) itself, such as creating team project collections. You can assign permissions to collection-level groups so that members of those groups can perform tasks across a team project collection, such as administering users.
 
->**Note:**  
->You can use the <b>/gcg</b> command to create groups, but you cannot use it to add any users to the groups or assign any permissions. For information about how to change the membership of a group, see [/g+: Add a user or another group to an existing group](#gplus) and [/g-: Remove a user or group](#gminus). For information about how to change the permissions for the group, see [/a+: Add permissions](#aplus) and [/a-: Remove a user or a group from membership in a group](#aminus).
+> [!NOTE]
+> You can use the <b>/gcg</b> command to create groups, but you cannot use it to add any users to the groups or assign any permissions. For information about how to change the membership of a group, see [/g+: Add a user or another group to an existing group](#gplus) and [/g-: Remove a user or group](#gminus). For information about how to change the permissions for the group, see [/a+: Add permissions](#aplus) and [/a-: Remove a user or a group from membership in a group](#aminus).
 
 #### Example
 
 The following example creates a collection-level group that is named "Datum Testers" with the description "A. Datum Corporation Testers."
 
->**Note:**  
->The examples are for illustration only and are fictitious. No real association is intended or inferred.
+> [!NOTE]
+> The examples are for illustration only and are fictitious. No real association is intended or inferred.
 
     tfssecurity /gcg "Datum Testers" "A. Datum Corporation Testers" /collection:CollectionURL
 
@@ -634,8 +634,8 @@ You can also remove groups on Team Explorer. For more information, see [Remove a
 
 The following example deletes a group from the team project collection. The group is identified by "S-1-5-21-2127521184-1604012920-1887927527-588340", the security identifier (SID). For more information about finding the SID of a group, see [/im: Display information about identities that compose direct membership](#im). You can also use the friendly name to delete a group.
 
->**Note:**  
->The examples are for illustration only and are fictitious. No real association is intended or inferred.
+> [!NOTE]
+> The examples are for illustration only and are fictitious. No real association is intended or inferred.
 
     tfssecurity /gd S-1-5-21-2127521184-1604012920-1887927527-588340 /collection:CollectionURL
 
@@ -666,8 +666,8 @@ Run this command on an application-tier server for Team Foundation.
 
 The following example associates the description "The members of this group test the code for this project" with the group "Datum Testers."
 
->**Note:**  
->The examples are for illustration only and are fictitious. No real association is intended or inferred.
+> [!NOTE]
+> The examples are for illustration only and are fictitious. No real association is intended or inferred.
 
     tfssecurity /gud "Datum Testers" "The members of this group test the code for this project" /collection:CollectionURL
 
@@ -698,8 +698,8 @@ Run this command on an application-tier server for Team Foundation.
 
 The following example renames the collection-level group "A. Datum Corporation Testers" to "A. Datum Corporation Test Engineers."
 
->**Note:**  
->The examples are for illustration only and are fictitious. No real association is intended or inferred.
+> [!NOTE]
+> The examples are for illustration only and are fictitious. No real association is intended or inferred.
 
     tfssecurity /gun "A. Datum Corporation Testers" "A. Datum Corporation Test Engineers" /collection:CollectionURL
 
@@ -733,8 +733,8 @@ The **/i** command of the **TFSSecurity** command-line utility displays informat
 
 The following example displays identity information for the "Team Foundation Administrators" group.
 
->**Note:**  
->The examples are for illustration only and are fictitious. No real association is intended or inferred.
+> [!NOTE]
+> The examples are for illustration only and are fictitious. No real association is intended or inferred.
 
     tfssecurity /i "Team Foundation Administrators" /server:ServerURL 
 
@@ -816,8 +816,8 @@ The **/im** command of **TFSSecurity** displays the direct members of the specif
 
 The following example displays direct membership identity information for the "Team Foundation Administrators" group in the domain "Datum1" at the fictitious company "A. Datum Corporation".
 
->**Note:**  
->The examples are for illustration only and are fictitious. No real association is intended or inferred.
+> [!NOTE]
+> The examples are for illustration only and are fictitious. No real association is intended or inferred.
 
     tfssecurity /im "Team Foundation Administrators" /server:ServerURL
 
@@ -931,8 +931,8 @@ The **/imx** command of **TFSSecurity** displays the expanded members of the spe
 
 The following example displays expanded membership identity information for the "Team Foundation Administrators" group in the domain "Datum1" at the fictitious company "A. Datum Corporation".
 
->**Note:**  
->The examples are for illustration only and are fictitious. No real association is intended or inferred.
+> [!NOTE]
+> The examples are for illustration only and are fictitious. No real association is intended or inferred.
 
     tfssecurity /imx "Team Foundation Administrators" /server:ServerURL
 
@@ -1041,8 +1041,8 @@ Use **/m** to check explicit and implicit group membership information for a spe
 
 To use the **/m** command, you must be a member of the Team Foundation Administrators security group. For more information, see [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
 
->**Note:**  
->Even if you are logged on with administrative credentials, you must open an elevated Command Prompt to perform this function.
+> [!NOTE]
+> Even if you are logged on with administrative credentials, you must open an elevated Command Prompt to perform this function.
 
 #### Parameters
 
@@ -1063,8 +1063,8 @@ The **/m** command of the **TFSSecurity** command-line utility checks both direc
 
 The following example verifies whether the user "Datum1\\jpeoples" belongs to the Team Foundation Administrators server-level group.
 
->**Note:**  
->The examples are for illustration only and are fictitious. No real association is intended or inferred.
+> [!NOTE]
+> The examples are for illustration only and are fictitious. No real association is intended or inferred.
 
 ```cmdline
 tfssecurity /m "Team Foundation Administrators" n:Datum1\jpeoples /server:http://ADatumCorporation:8080
@@ -1102,7 +1102,7 @@ Sample output:
 |[Trigger events](../../permissions.md#trigger-events-permission)|Server|TRIGGER_EVENT|
 |[Use full Web Access features](../../permissions.md#use-full-web-access-features-permission)|Server|FullAccess|
 |[View instance-level information](../../permissions.md#view-instance-level-information-permission)|Server|GENERIC_READ|
-|[Publish extensions](../../extend/publish/overview.md)| Publisher| **For TFS 2017 or earlier**:<br />Create<br/>Publish<br />Write<br /><br />**For TFS 2017**:<br />CreatePublisher<br />PublishExtension<br />UpdateExtension<br />DeleteExtensions<br />|
+|[Publish extensions](../../../extend/publish/overview.md)| Publisher| **For TFS 2017 or earlier**:<br />Create<br/>Publish<br />Write<br /><br />**For TFS 2017**:<br />CreatePublisher<br />PublishExtension<br />UpdateExtension<br />DeleteExtensions<br />|
 
 <a id="collection-level-permissions"></a>
 ### Collection level
@@ -1247,10 +1247,10 @@ TFS 2017 Update 1 and later
 |[Create Tag](../../permissions.md#git-create-tag-permission)|GitRepositories|CreateTag|
 |[Delete Repository](../../permissions.md#git-delete-repository-permission)|GitRepositories|DeleteRepository|
 |[Edit Policies](../../permissions.md#git-edit-policies-permission)|GitRepositories|EditPolicies|
-|[Exempt From Policy Enforcement](../../permissions.md#git-exempt-from-policy-enforcement-permission)|GitRepositories|PolicyExempt|
+|[Exempt From Policy Enforcement](../../permissions.md#git-repository-permissions-objectlevel)|GitRepositories|PolicyExempt|
 |[Force Push (Rewrite History and Delete Branches)](../../permissions.md#git-force-push-permission)|GitRepositories|ForcePush|
-|[Manage Notes](../../permissions.md#git-manage-notes-permission)|GitRepositories|ManageNote|
-|[Manage Permissions](../../permissions.md#git-manage-permissions-permission)|GitRepositories|ManagePermissions|
+|[Manage Notes](../../permissions.md#git-repository-permissions-objectlevel)|GitRepositories|ManageNote|
+|[Manage Permissions](../../permissions.md#git-repository-permissions-objectlevel)|GitRepositories|ManagePermissions|
 |[Read](../../permissions.md#git-read-permission)|GitRepositories|GenericRead|
 |[Remove Others' Locks](../../permissions.md#git-remove-others-locks-permission)|GitRepositories|RemoveOthersLocks|
 |[Rename Repository](../../permissions.md#git-rename-repository-permission)|GitRepositories|RenameRepository|
@@ -1305,7 +1305,3 @@ The following markers are used to identify types of identities and ACEs in outpu
 |**+**|ALLOW access control entry.|
 |**-**|DENY access control entry.|
 |**\* \[\]**|Inherited access control entry.|
-
-
-
-

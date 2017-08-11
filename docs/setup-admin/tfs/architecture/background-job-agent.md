@@ -17,8 +17,8 @@ The Visual Studio Team Foundation Background Job Agent service provides a genera
 
 Some Team Foundation services have tasks that recur at regular intervals. For example, administrators might want to schedule builds on a nightly basis. To accomplish this, build services must be able to set up an automatically scheduled event in the registration database. The Team Foundation Background Job Agent service provides a single Windows-based service to schedule repeating tasks on servers that are running Team Foundation. The service runs through the registration database, identifies all Team Foundation Server Web services that have scheduled events, and schedules these tasks.
 
->**Important:**
->  To perform tasks such as creating team project collections, the service account that the Team Foundation Background Job Agent uses must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](../admin/service-accounts-dependencies-tfs.md).
+> [!IMPORTANT]
+> To perform tasks such as creating team project collections, the service account that the Team Foundation Background Job Agent uses must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](../admin/service-accounts-dependencies-tfs.md).
 
 ## Instances
 

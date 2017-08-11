@@ -17,10 +17,10 @@ You can force a rebuild of the cache on each client computer the next time it co
 
 To prevent workspace errors from occurring during version control or build operations in Team Foundation, the data cache on client computers must be updated after certain maintenance operations. After you move, restore, rename, or fail over a data-tier or application-tier server, you must refresh the cache for tracking work items and users must refresh the version control cache on client computers. 
 
-> **Important:**
+> [!IMPORTANT]
 > To avoid server performance issues, you should not run this command during normal operating hours.
 
-To run the tool, open a Command Prompt window where where you’ve installed Visual Studio and enter:
+To run the tool, open a Command Prompt window where where youï¿½ve installed Visual Studio and enter:
 
   ```cd %programfiles(x86)%\Microsoft Visual Studio <version>\Common7\IDE```
 
@@ -28,7 +28,7 @@ On a 32-bit edition of Windows, replace ```%programfiles(x86)%``` with ```%progr
 
 **Requirements:** To use the witadmin rebuildcache command, you must be a member of the Team Foundation Administrators security group or the Project Administrators security group for the project collection that you want to manage. Permission reference for Team Foundation Server. 
 
-> **Note:**
+> [!NOTE]
 > Even if you log on with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for **Command Prompt**, and choose **Run as Administrator**. For more information, see the [Microsoft Web site](http://go.microsoft.com/fwlink/?LinkId=111235).
 
 

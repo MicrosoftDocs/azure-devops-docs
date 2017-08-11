@@ -21,8 +21,8 @@ Team Foundation Server, SharePoint Products, and SQL Server Reporting Services a
 
 If your server is in an Active Directory domain, one option is to create specific Active Directory groups to manage your users, like a group of developers and testers for all projects in the team project collection, or a group of users who can create and administer projects in the collection. Similarly, you can create an Active Directory account for services that can't be configured to use the Network Service system account as the service account. To do so, create an Active Directory account for SharePoint Foundation and as the read-access data source account for reports in SQL Server Reporting Services.
 
->**Important:**
->  If you decide to use Active Directory groups in TFS, consider creating specific ones whose purpose is dedicated to user management in TFS. Using previously existing groups that were created for another purpose, particularly if they are managed by others who are not familiar with TFS, can lead to unexpected user consequences when membership changes to support some other function.
+> [!IMPORTANT]
+> If you decide to use Active Directory groups in TFS, consider creating specific ones whose purpose is dedicated to user management in TFS. Using previously existing groups that were created for another purpose, particularly if they are managed by others who are not familiar with TFS, can lead to unexpected user consequences when membership changes to support some other function.
 
 The default choice during installation is to use the Network Service system account as the service account for Team Foundation Server and SQL Server. If you want to use a specific account as the service account for security purposes or other reasons, such as a scaled-out deployment, you can. You might also want to create a specific Active Directory account to use as the service account for SharePoint Foundation and as the data source reader account for SQL Server Reporting Services.
 

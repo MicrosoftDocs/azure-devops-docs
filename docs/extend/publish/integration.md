@@ -18,7 +18,8 @@ The Visual Studio Marketplace is a one-stop-shop for individuals and teams to fi
 
 [Browse the marketplace](https://marketplace.visualstudio.com) to see examples of other integrations and extensions.
 
->Note: If you're looking for packaging and publishing information for extensions, check out [Package & Publish Extensions](./overview.md).
+> [!NOTE]
+> If you're looking for packaging and publishing information for extensions, check out [Package & Publish Extensions](./overview.md).
 
 ## Publishing Requirements
 
@@ -36,7 +37,7 @@ Publishing to the Marketplace is an iterative process that starts with creating 
 
 ![example](./_img/integration-example.png)
 
-[Jenkins for Visual Studio Team Services](https://marketplace.visualstudio.com/items/ms.jenkins)
+[Jenkins for Visual Studio Team Services](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins)
 
 Note: you will see the term `extension` used in documentations referenced below. Extensions are another type of Marketplace item and share many similarities from a discovery standpoint as integrations.
 
@@ -105,9 +106,9 @@ npm i -g tfx-cli
 tfx extension create --manifest-globs vss-extension.json
 ```
 
->[!NOTE]
->An extension/integration's version must be incremented on every update. <br>
->If you haven't incremented your extension/integration in the manifest, you should pass the `--rev-version` command line switch. This will increment the *patch* version number of your extension and save the new version to your manifest.
+> [!NOTE]
+> An extension/integration's version must be incremented on every update. <br>
+> If you haven't incremented your extension/integration in the manifest, you should pass the `--rev-version` command line switch. This will increment the *patch* version number of your extension and save the new version to your manifest.
 
 ### Publish your integration to the Marketplace
 

@@ -11,7 +11,7 @@ ms.date: 04/03/2017
 
 # Link work items to support traceability and manage dependencies  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+**Team Services | TFS 2017 | TFS 2015 | TFS 2013**
 
 [!INCLUDE [temp](../_shared/image-differences.md)]
 

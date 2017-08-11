@@ -14,10 +14,10 @@ ms.date: 06/16/2017
 
 <p><b>TFS 2017 (Hosted XML) | TFS 2015  | TFS 2013 </b></p>
 
->[!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
+> [!IMPORTANT]  
+> This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
 >
->For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
+> For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
 
 When you design a work item form, you want to position fields on the form so that they support the data entry and workflow processes that will be followed by team members. If you are adding just a few fields to an existing form, you must determine where you want to add them on the form. If you are adding several fields to support a new collection of data to track, you may want to add a new tab just for these fields. To minimize the need to scroll a form, you can group fields into several columns in the top of the form or in a tab.  
   

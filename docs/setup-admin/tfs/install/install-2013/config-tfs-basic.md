@@ -17,8 +17,8 @@ ms.technology: tfs-on-prem
 
 You can configure Team Foundation Server to use the basic configuration, which enables you to use SQL Server Express. 
 
->**Tip:**  
->You can access the Team Foundation Server Configuration tool by launching Team Foundation Server Administration Console, choosing **Application Tier**, and then choosing **Configure Installed Features**.
+> [!TIP]
+> You can access the Team Foundation Server Configuration tool by launching Team Foundation Server Administration Console, choosing **Application Tier**, and then choosing **Configure Installed Features**.
 
 **Required Permissions**
 
@@ -32,8 +32,8 @@ To perform this procedure, you must be a member of the **Administrators** securi
 
 3.  Choose **Install SQL Server Express** to host the configuration database on an instance of SQL Server Express.
 
-	>**Tip:**  
-	>You don’t have to use SQL Server Express. You can also choose **Use an existing SQL Server Instance ** and then type the name of the server that is running a supported version of SQL Server or the named instance that will host the configuration database in **SQL Server Instance**. Choose **Test** to test the connectivity to SQL Server.
+	> [!TIP]
+	> You don’t have to use SQL Server Express. You can also choose **Use an existing SQL Server Instance ** and then type the name of the server that is running a supported version of SQL Server or the named instance that will host the configuration database in **SQL Server Instance**. Choose **Test** to test the connectivity to SQL Server.
 
 4.  Review your configurations settings and then choose **Next**.
 
@@ -43,8 +43,8 @@ To perform this procedure, you must be a member of the **Administrators** securi
 
     The wizard applies configuration settings. After the wizard completes, close it.
 
-	>**Tip:**  
-	>Did you get error TF255356 you tried install TFS Basic or Express? It’s a misleading error message. Read this blog post to recover: [TF255356: Known Issue with Configuring TFS 2013 RTM Express and Basic](http://blogs.msdn.com/b/visualstudioalm/archive/2013/12/04/known-issue-with-configuring-tfs-2013-rtm-express-and-basic.aspx)
+	> [!TIP]
+	> Did you get error TF255356 you tried install TFS Basic or Express? It’s a misleading error message. Read this blog post to recover: [TF255356: Known Issue with Configuring TFS 2013 RTM Express and Basic](http://blogs.msdn.com/b/visualstudioalm/archive/2013/12/04/known-issue-with-configuring-tfs-2013-rtm-express-and-basic.aspx)
 
 6.  In the TFS Configuration tool, choose **Configure Team Foundation Build Service**, **Start Wizard**.
 
@@ -56,8 +56,8 @@ To perform this procedure, you must be a member of the **Administrators** securi
 
 9.  Choose **Use a system account** to run the build service as Network Service or Local Service.
 
-	>**Tip:**  
-	>You can also run the build service as a domain or local account. Enter the account name and password and choose **Test**.
+	> [!TIP]
+	> You can also run the build service as a domain or local account. Enter the account name and password and choose **Test**.
 
 10. Review your settings and then choose **Next**. If you run into a problem, use the detailed results to fix the issue, and then run the checks again.
 
@@ -67,8 +67,8 @@ To perform this procedure, you must be a member of the **Administrators** securi
 
     The Team Foundation Server Administration Console appears.
 
->**Tip:**  
->After you set up TFS and the build service, the next thing to do is [create a team project](../../../create-team-project.md).
+> [!TIP]
+> After you set up TFS and the build service, the next thing to do is [create a team project](../../../create-team-project.md).
 
 ## See Also
 

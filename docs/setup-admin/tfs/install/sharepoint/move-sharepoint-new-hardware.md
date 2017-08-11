@@ -103,15 +103,15 @@ When you installed SharePoint, a brand new content database was created for Shar
 
 3.  Choose **WSS\_Content**.
 
-	>**Note:**  
-	>WSS_Content is the default name. Your installation might use a custom name for this database.
+	> [!NOTE]
+	> WSS_Content is the default name. Your installation might use a custom name for this database.
 
     The **Manage Content Database Settings** page opens.
 
 4.  Select the **Remove content database** check box, and then choose **OK**.
 
-	>**Note:**  
-	>This step detaches the database but does not delete any content.
+	> [!NOTE]
+	> This step detaches the database but does not delete any content.
 
 5.  In the warning dialog box that appears, choose **OK**.
 

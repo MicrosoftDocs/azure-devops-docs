@@ -14,10 +14,10 @@ ms.date: 02/14/2017
 
 <p><b>TFS 2017 (Hosted XML) | TFS 2015 </b></p>
 
->[!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
+> [!IMPORTANT]  
+> This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
 >
->For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
+> For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
 
 You can add web content or HTML content to a work item form by exporting the type definition XML file and adding a `WebpageControl` in the `FORM` section. After you modify and import the XML file, you can verify the display of the Web content in the updated work item type.  
   

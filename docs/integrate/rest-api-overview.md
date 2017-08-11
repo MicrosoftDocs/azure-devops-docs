@@ -18,9 +18,9 @@ Representational State Transfer (REST) APIs are service endpoints that support s
 - The basic components of a REST API request/response pair.
 - Overviews of creating and sending a REST request, and handling the response.
 
->[!NOTE]
->Most REST APIs have a corresponding .NET Client Library that can be used to greatly simplify your client code. Find out more about them at the 
->[.NET Client Libraries documentation](./concepts/dotnet-client-libraries.md)
+> [!NOTE]
+> Most REST APIs have a corresponding .NET Client Library that can be used to greatly simplify your client code. Find out more about them at the 
+> [.NET Client Libraries documentation](./concepts/dotnet-client-libraries.md)
 
 
 ## Components of a REST API request/response pair
@@ -37,7 +37,8 @@ A REST API request/response pair can be separated into five components:
         * `api-version=1.0`
         * `api-version=1.2-preview`
         * `api-version=2.0-preview.1`
-> Note: *area** and *team-project* are optional, depending on the API request. 
+> [!NOTE]
+> *area** and *team-project* are optional, depending on the API request. 
 2. HTTP **request message header** fields:
     * A required [HTTP method](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) (also known as an operation or verb), which tells the service what type of operation you are requesting. Azure REST APIs support GET, HEAD, PUT, POST, and PATCH methods.
     * Optional additional header fields, as required by the specified URI and HTTP method. For example, an Authorization header that provides a bearer token containing client authorization information for the request.
@@ -65,7 +66,8 @@ There are many ways to authenticate your application or service with Team Servic
 | TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](./get-started/client-libraries/dotnet.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | [VSTS Extension](https://www.visualstudio.com/en-us/docs/integrate/extensions/get-started/node#files) | Visual Studio Team Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](https://www.visualstudio.com/en-us/docs/integrate/extensions/develop/add-dashboard-widget) |
 
-> **Note:** You can find more information on authentication on our [authentication guidance page](./get-started/authentication/authentication-guidance.md)
+> [!NOTE]
+> You can find more information on authentication on our [authentication guidance page](./get-started/authentication/authentication-guidance.md)
 
 ### Assemble the request
 

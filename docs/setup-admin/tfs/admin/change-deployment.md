@@ -64,7 +64,7 @@ the following guidelines:
     procedure in [Remove a component from participating in data
     synchronization](https://msdn.microsoft.com/en-us/library/gg412644(v=vs.120).aspx).
 
-    > **Note:**
+    > [!NOTE]
     > If you delete not only a mapped project collection but also all
     > instances of PWA that were mapped to it, you will remove all mappings of
     > work items that have been synchronized. However, the instance of PWA
@@ -125,7 +125,7 @@ To move some collections to a different instance of TFS and a different instance
   1.  Use the **/UnmapPwaFromCollection** command option with the
       **/force** switch to unmap each collection that you are moving.
 
-      > **Warning:**
+      > [!WARNING]
       > By using the **/force** switch, you break all associations between
       > enterprise project plans and team projects that are defined for
       > the collection.
@@ -194,7 +194,7 @@ To move an instance of Team Foundation Server to which an instance of PWA is map
   5.  Use the **/UnRegisterPWA** command option to unregister the instance
       of PWA from the first application-tier server.
 
-> **Note:**
+> [!NOTE]
 > You must specify the **/force** switch when you move the project
 > collection to a different instance of Team Foundation Server. If the
 > instance identifier has not changed, you do not have to specify the

@@ -29,8 +29,9 @@ Similarly, to use common styles in the widget configuration, include the line be
 This will pull a stylesheet by the name sdk-widget-configuration.css and include it in the iframe for your widget configuration. 
 It includes styles for font-family, font-size and styles for common form elements like input, textarea, and select. 
 
-> **Note:** For these styles to apply to your widget, you need to add a "widget" class on the HTML element that contains your widget. All styles from the sdk-widgets.css are scoped to this class. 
-Similarly, add a "widget-configuration" class on the HTML element that contains your widget configuration. All styles from the sdk-widget-configuration.css are scoped to this class.
+> [!NOTE]
+> For these styles to apply to your widget, you need to add a "widget" class on the HTML element that contains your widget. All styles from the sdk-widgets.css are scoped to this class. 
+> Similarly, add a "widget-configuration" class on the HTML element that contains your widget configuration. All styles from the sdk-widget-configuration.css are scoped to this class.
 
 Download the [samples](https://github.com/Microsoft/vsts-extension-samples/tree/master/widgets) to get started or use the code snippets provided below. 
 

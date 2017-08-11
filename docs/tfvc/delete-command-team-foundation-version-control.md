@@ -15,8 +15,8 @@ ms.date: 08/10/2016
 
 Removes files and folders from the Team Foundation version control server and deletes them from the disk.
 
->**Note:**  
->The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
+> [!NOTE]
+> The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
 
 **Required Permissions**
 

@@ -25,8 +25,8 @@ Use SQL Server documentation for guidance about configuring AlwaysOn Availabilit
 
 This a high level walkthrough of the steps required to implement AlwaysOn Availability Groups during TFS installation.
 
->**Tip:**  
->To set the MultisubnetFailover option to true in the connection string for an already running deployment of TFS, use the RegisterDB command of TFSConfig with the /usesqlalwayson argument. You will need to use the TFSService Control Command to stop and start TFS before you can set the MultisubnetFailover option. See [RegisterDB Command](../../command-line/tfsconfig-cmd.md#registerdb) and [TFSServiceControl Command](../../command-line/tfsservicecontrol-cmd.md).
+> [!TIP]
+> To set the MultisubnetFailover option to true in the connection string for an already running deployment of TFS, use the RegisterDB command of TFSConfig with the /usesqlalwayson argument. You will need to use the TFSService Control Command to stop and start TFS before you can set the MultisubnetFailover option. See [RegisterDB Command](../../command-line/tfsconfig-cmd.md#registerdb) and [TFSServiceControl Command](../../command-line/tfsservicecontrol-cmd.md).
 
 ###One: set up AlwaysOn Availability Groups
 
@@ -38,8 +38,8 @@ The SQL Server AlwaysOn Availability Group must be ready before you install TFS.
 
 If you’re installing TFS for the first time, use the Advanced configuration wizard, which gives you access to the **SQL AlwaysOn Availability Group** check box (pictured above). On this screen, enter the Availability Group Listener in the **SQL Server Instance** text box. TFS will create TFS\_Configuration and the DefaultCollection databases on the Primary replica of your AlwaysOn Availability Group. The databases for SharePoint will also be created, if you allow TFS to install SharePoint Foundation.
 
->**Tip:**  
->You can also access the **SQL AlwaysOn Availability Group** check box by using the Application-Tier Only or Upgrade wizards. See [How to: Create a Team Foundation server farm (high availability)](../create-tfs-farm.md) or [TFS upgrade requirements](../../upgrade/upgrade-2013/upgrade-2013-requirements.md).
+> [!TIP]
+> You can also access the **SQL AlwaysOn Availability Group** check box by using the Application-Tier Only or Upgrade wizards. See [How to: Create a Team Foundation server farm (high availability)](../create-tfs-farm.md) or [TFS upgrade requirements](../../upgrade/upgrade-2013/upgrade-2013-requirements.md).
 
 ###Three: add the new TFS databases to the AlwaysOn Availability Group
 
@@ -47,8 +47,8 @@ If you’re installing TFS for the first time, use the Advanced configuration wi
 
 You’ll need to back up any databases that you want to add to the AlwaysOn Availability Group to bring them into compliance for data stored in an AlwaysOn Availability Group. Next, use the Availability Group Wizard to add the databases to the group. See [Creation and Configuration of Availability Groups (SQL Server)](https://technet.microsoft.com/library/ff878265.aspx), and [Use the New Availability Group Wizard (SQL Server Management Studio)](https://technet.microsoft.com/library/hh403415.aspx).
 
->**Tip:**  
->If you add a new team project collection to TFS, remember to add the database for the collection to your availability group in SQL Server. You cannot have some databases for team project collections in and some outside the availability group.
+> [!TIP]
+> If you add a new team project collection to TFS, remember to add the database for the collection to your availability group in SQL Server. You cannot have some databases for team project collections in and some outside the availability group.
 
 ## AlwaysOn Availability Groups Support for Reporting and SharePoint
 

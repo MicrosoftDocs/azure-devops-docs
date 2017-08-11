@@ -78,7 +78,8 @@ If you're using Visual Studio Team Services (Team Services), you can build code 
 
 ### Connect using your GitHub user account
 
-> **Note:**  If you're using a pop-up blocker, you'll need to allow your Team Services account to display pop-up windows.
+> [!NOTE]
+> If you're using a pop-up blocker, you'll need to allow your Team Services account to display pop-up windows.
 
 This is the easier way to authorize your account. This approach grants your Team Services account access to GitHub via OAuth.
 

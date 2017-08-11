@@ -25,14 +25,14 @@ If you use advanced on a client operating system, you don’t need any domain ac
 
 For more information about accounts, see [Accounts required for installation of Team Foundation Server](../../../requirements.md#accounts).
 
->**Tip:**  
->Access the Team Foundation Server Configuration tool by launching Team Foundation Server Administration Console, choosing **Application Tier**, and then choosing **Configure Installed Features**.
+> [!TIP]
+> Access the Team Foundation Server Configuration tool by launching Team Foundation Server Administration Console, choosing **Application Tier**, and then choosing **Configure Installed Features**.
 
 **Required permissions**  
 You must be a member of the **Administrators** security group on the server on which you will install TFS. If you plan to configure reporting, you must also be a member of the **Administrators** security group on the server that is running SQL Server Reporting Services. If you plan to configure SharePoint, you must be a member of the **Farm Administrators** group on the SharePoint administration site. If you did not install the Database Engine that will host the configuration database or a database administrator manages the instance of SQL Server that you are using, you must be a member of **sysadmin** Server role in SQL Server.
 
->**Tip:**  
->If you or your database administrator want a better understanding of the required SQL Server permissions, see the following page on the Microsoft website: [Database Permissions Required to Configure TFS](https://blogs.msdn.microsoft.com/bharry/2010/08/20/database-permissions-required-to-configure-tfs/).
+> [!TIP]
+> If you or your database administrator want a better understanding of the required SQL Server permissions, see the following page on the Microsoft website: [Database Permissions Required to Configure TFS](https://blogs.msdn.microsoft.com/bharry/2010/08/20/database-permissions-required-to-configure-tfs/).
 
 ### To configure Team Foundation Server using the advanced configuration
 
@@ -66,8 +66,8 @@ You must be a member of the **Administrators** security group on the server on w
 
     Network Service is the default value for the TFS service account.
 
-    >**Tip:**  
-    >If your report server and SharePoint servers are not installed on the same server as TFS, you should add the account you use here to the Farm Administrators group (for SharePoint) and the content manager group on the report server. If you’re installing TFS on the same server as the report server and SharePoint, this account is added to these groups automatically.
+    > [!TIP]
+    > If your report server and SharePoint servers are not installed on the same server as TFS, you should add the account you use here to the Farm Administrators group (for SharePoint) and the content manager group on the report server. If you’re installing TFS on the same server as the report server and SharePoint, this account is added to these groups automatically.
 
 4.  Choose **NTLM** as an **Authentication Method**. If you choose **Negotiate (Kerberos)**, Kerberos authentication is attempted first. If that attempt fails, NTLM authentication is used.
 
@@ -121,8 +121,8 @@ You must be a member of the **Administrators** security group on the server on w
 
         ![Specify the report reader](../../admin/_img/ic742587.png)
 
-        >**Tip:**  
-        >If you specified a user account for the service account of TFS in step 3, you must select the **Use a different account than the Team Foundation Server service account for the report reader account** check box to use a different account.
+        > [!TIP]
+        > If you specified a user account for the service account of TFS in step 3, you must select the **Use a different account than the Team Foundation Server service account for the report reader account** check box to use a different account.
 
 10. Choose **Configure SharePoint Products for use with Team Foundation Server** to use SharePoint. Otherwise, clear the check box to skip it.
 
@@ -140,8 +140,8 @@ You must be a member of the **Administrators** security group on the server on w
 
             ![Choose the big button](../../admin/_img/ic676784.png)
 
-            >**Note:**  
-            >If the SharePoint installation requires a reboot, you might need to reenter some of the information you previously entered in this wizard.
+            > [!NOTE]
+            > If the SharePoint installation requires a reboot, you might need to reenter some of the information you previously entered in this wizard.
 
         3.  Type a user account and password for the service account for SharePoint Foundation. If you specified a user account for the service account of TFS in step 3, you must select the **Use a different account than the Team Foundation Server service account for the SharePoint farm** check box to use a different account.
 

@@ -17,8 +17,8 @@ ms.technology: tfs-on-prem
 
 If your current SharePoint site meets the new requirements for TFS 2013, you can continue to use it, if you perform a few procedures. First you have to uninstall the old TFS extensions for SharePoint¹, and then install the new version of the extensions. You also want to make sure the service account that you will use on the upgraded Team Foundation Server is a member of the Farm administrators group. If you’re currently using Windows SharePoint Services 3.0 or SharePoint Server 2007, you’ll have to upgrade to supported version of SharePoint. For more information, see [Upgrade from Office SharePoint Server 2007 or Windows SharePoint Services 3.0 to SharePoint Server 2013 or SharePoint Foundation 2013](https://technet.microsoft.com/library/ee947141.aspx)
 
->**Tip:**
->   If you’re upgrading TFS 2012, you don’t have to uninstall the old version of TFS extensions.
+> [!TIP]
+> If you’re upgrading TFS 2012, you don’t have to uninstall the old version of TFS extensions.
 
 **Required Permissions**
 
@@ -31,8 +31,8 @@ On the SharePoint site you were using with TFS 2010, uninstall the TFS Extension
 
 If SharePoint and the previous version of TFS were on the same computer, you have to uninstall the entire TFS application tier. In the new upgraded TFS deployment, your SharePoint server will be on a different server than the TFS application tier, and the only TFS component on the SharePoint server will be the TFS extensions for SharePoint.
 
->**Tip:**
->  If you’re upgrading TFS 2012, you don’t have to uninstall the old version of TFS. You can skip this step and install the new TFS extensions without uninstalling the old.
+> [!TIP]
+> If you’re upgrading TFS 2012, you don’t have to uninstall the old version of TFS. You can skip this step and install the new TFS extensions without uninstalling the old.
 
 ### Install the new TFS extensions
 

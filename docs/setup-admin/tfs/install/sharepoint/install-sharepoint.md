@@ -17,8 +17,8 @@ This procedure is for installing and configuring SharePoint Server 2013 on the s
 
 We’re going to install SharePoint after we install SQL Server, so that we can use the same Database Engine instance we installed for TFS for our SharePoint deployment, although using the same SQL Server instance for both SharePoint and TFS is not a requirement.
 
->**Tip:**
->  Installing SharePoint on the same server as TFS isn’t a requirement either. TFS is very flexible with regard to the topology of your SharePoint installation. See “What If I Already Have SharePoint?” later.
+> [!TIP]
+> Installing SharePoint on the same server as TFS isn’t a requirement either. TFS is very flexible with regard to the topology of your SharePoint installation. See “What If I Already Have SharePoint?” later.
 
 ## Do I even need SharePoint?
 
@@ -30,8 +30,8 @@ You don’t need to add SharePoint to your initial TFS installation. You can alw
 
 Assuming you still want SharePoint in your TFS deployment, you’ll need a single domain account to act as the TFS Report Reader account. TFS uses this account to generate reports. (Even if you don’t set up SharePoint, you’ll need a report reader account to generate reports). We’re going to use the report reader account for reports, but we’ll also use it as the Farm Administrator account for our SharePoint installation, just as TFS would during a standard install.
 
->**Tip:**
->  Don’t put the report reader account in the Windows Administrators security group. It just needs the Allow log on locally permission, which all domain accounts have by default.
+> [!TIP]
+> Don’t put the report reader account in the Windows Administrators security group. It just needs the Allow log on locally permission, which all domain accounts have by default.
 
 ## Free SharePoint vs. paid-for SharePoint
 
@@ -51,8 +51,8 @@ Team Foundation Server contains dashboards that use SharePoint Products feature
 
 If your existing SharePoint installation meets the TFS requirements for SharePoint, you can [verify your existing SharePoint deployment](verify-sharepoint.md) and then integrate it with TFS. Before you verify, review the [SharePoint requirements for TFS](../../../requirements.md#sharepoint).
 
->**Tip:**
->  You can use a remote SharePoint installation—an instance of SharePoint that is not installed on the TFS server—but to do this you’ll need to install the TFS extensions for SharePoint on the SharePoint server. See [How to: Install Remote SharePoint Products for Team Foundation Server](setup-remote-sharepoint.md).
+> [!TIP]
+> You can use a remote SharePoint installation—an instance of SharePoint that is not installed on the TFS server—but to do this you’ll need to install the TFS extensions for SharePoint on the SharePoint server. See [How to: Install Remote SharePoint Products for Team Foundation Server](setup-remote-sharepoint.md).
 
 ## To install SharePoint 2013 products for TFS
 
@@ -62,7 +62,7 @@ You must be a member of the **Windows Administrators** security group on the com
 
 Before you install any SharePoint 2013 product, run the SharePoint 2013 Products preparation tool. After preparing the server, you’ll install SharePoint, and then do whatever post installation configuration tasks are appropriate for the product you just installed.
 
-Remember that you’ll need a single domain account to act as the TFS Report Reader account to install SharePoint Server 2013. See, “What will I need?”
+Remember that you’ll need a single domain account to act as the TFS Report Reader account to install SharePoint Server 2013. See, [What will I need?](#what-will-i-need)?
 
 ### Run the preparation tool
 
@@ -120,8 +120,8 @@ Remember that you’ll need a single domain account to act as the TFS Report Rea
 
 8.  On the Welcome page, choose **Next**.
 
-    >**Note:**
-    >  A warning about restarting certain services will appear. Choose **Yes**. Some services might need to be restarted during the configuration phase.
+    > [!NOTE]
+    > A warning about restarting certain services will appear. Choose **Yes**. Some services might need to be restarted during the configuration phase.
 
     ![Choose Yes](_img/ic666685.png)
 
@@ -135,15 +135,15 @@ Remember that you’ll need a single domain account to act as the TFS Report Rea
 
         ![Name of the SQL Server?](_img/ic666687.png)
 
-        >**Tip:**
-        >  If you used a named instance in step 10 of your SQL Server install, type the named instance here. For example, severname\InstanceName.
+        > [!TIP]
+        > If you used a named instance in step 10 of your SQL Server install, type the named instance here. For example, servername\InstanceName.
 
     2.  Type the name of the report reader account and its password. 
 
         ![Add report reader account](_img/ic666688.png)
 
-        >**Tip:**
-        >  You can use the same account here that you will use for the report reader account. Even if you use the report reader account here, the account you use to run the wizard will also be added to the SharePoint Farm administrators group.
+        > [!TIP]
+        > You can use the same account here that you will use for the report reader account. Even if you use the report reader account here, the account you use to run the wizard will also be added to the SharePoint Farm administrators group.
 
 11. Type a password in **Passphrase** and confirm it.
 
@@ -187,8 +187,8 @@ No matter which version of SharePoint you install, you must run the SharePoint C
 
     SharePoint selects all of them by default.
 
-    >**Tip:**
-    >  Remember that you can always come back later to run the configuration wizards, but to succeed with your TFS installation, you have to run it one time after the SharePoint installation.
+    > [!TIP]
+    > Remember that you can always come back later to run the configuration wizards, but to succeed with your TFS installation, you have to run it one time after the SharePoint installation.
 
 4.  Choose **Next**.
 
@@ -256,15 +256,15 @@ To configure the secure store service, you must create a target application for 
 
     ![Create a secure store target application](_img/ic667398.png)
 
-    >**Tip:**
-    >  If you have not created a key, SharePoint Products prompts you to create one by choosing **Generate New Key**. Without a key, you cannot create a target application for the secure store.
+    > [!TIP]
+    > If you have not created a key, SharePoint Products prompts you to create one by choosing **Generate New Key**. Without a key, you cannot create a target application for the secure store.
 
     The fields configured in the next four steps are pictured in the next screenshot.
 
 4.  In **Target Application ID** and **Display Name**, enter TFS
 
-    >**Tip:**
-    >  You do not have to use TFS for Target Application ID or Display Name, but take note of whatever you use here, because you will need it to configure Team Foundation Server later.
+    > [!TIP]
+    > You do not have to use TFS for Target Application ID or Display Name, but take note of whatever you use here, because you will need it to configure Team Foundation Server later.
 
 5.  In Contact E-mail, type the e-mail address of the person or group you want email messages about this application to be sent to
 

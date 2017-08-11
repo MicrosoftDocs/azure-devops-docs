@@ -276,8 +276,8 @@ Use these shortcuts when working in Team Explorer. You can use query results sho
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+0,b&nbsp;&nbsp;&nbsp;</span>Open [Build](../build-release/overview.md)  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+0,c&nbsp;&nbsp;&nbsp;</span>Open [Connect](https://msdn.microsoft.com/library/ms181475.aspx)  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+0,d&nbsp;&nbsp;&nbsp;</span>Open [Documents](https://msdn.microsoft.com/library/ms242883.aspx)  
-<span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+0,e&nbsp;&nbsp;&nbsp;</span>Open [Branches (Git)](../git/get-started.md)   
-<span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+0,g&nbsp;&nbsp;&nbsp;</span>Open [Changes (Git)](../git/get-started.md)  
+<span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+0,e&nbsp;&nbsp;&nbsp;</span>Open [Branches (Git)](../git/gitquickstart.md)   
+<span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+0,g&nbsp;&nbsp;&nbsp;</span>Open [Changes (Git)](../git/gitquickstart.md)  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+0,h&nbsp;&nbsp;&nbsp;</span>Open Home  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+0,m&nbsp;&nbsp;&nbsp;</span>Open [My Work (TFVC)](https://msdn.microsoft.com/library/hh474795.aspx)  
 <span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+0,p&nbsp;&nbsp;&nbsp;</span>Open [Pending changes (TFVC)](https://msdn.microsoft.com/en-us/library/ms181403.aspx)   

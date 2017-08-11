@@ -12,10 +12,10 @@ ms.date: 08/10/2016
 
 # Package Management in Team Services and TFS
 
-<img alt="Welcome to package mangement" src="_shared/_img/bo-package-push.svg" height="300px">
+<img alt="Welcome to package management" src="_shared/_img/bo-package-push.svg" height="300px">
 
->[!NOTE]
->Package Management is an **[extension](http://go.microsoft.com/fwlink/?LinkId=723595)** that makes it easy to discover, install, and publish packages.
+> [!NOTE]
+> Package Management is an **[extension](http://go.microsoft.com/fwlink/?LinkId=723595)** that makes it easy to discover, install, and publish packages.
 >It's deeply integrated with other Team Services and TFS hubs like Build so that package management can become a seamless part of your existing workflows.
 >The extension must be installed from the Marketplace to create or consume packages.
 
@@ -26,7 +26,7 @@ Package Management introduces the concept of multiple *feeds* that can be used t
 ## Get started using Package Management
 Get up and running with NuGet or npm in Team Services and TFS in just a few minutes with the [NuGet quick start](get-started-nuget.md) and [npm quick start](get-started-npm.md).
 
-If you haven't used packages before, see the [conceptual introduction](what-is-packaging.md). When you're ready to get started, [install and license Package Management](install.md).
+If you haven't used packages before, see the [conceptual introduction](index.md). When you're ready to get started, [install and license Package Management](install.md).
 
 ## Versions and compatability
 Some package management services are only compatible with specific versions of TFS. Check out the table below to see compatibility.

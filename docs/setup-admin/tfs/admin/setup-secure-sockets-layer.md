@@ -153,7 +153,7 @@ To perform the procedures in this topic, you must first meet the following requi
  
  * If your deployment uses reporting, you must be a member of an administrative security group or have equivalent permissions individually set for configuring reporting services. 
  
- For more information about permissions, see [Pernission reference for Team Foundation Server](../../permissions.md).
+ For more information about permissions, see [Permission reference for Team Foundation Server](../../permissions.md).
 
 <a name="assumptions"></a>
 ## Assumptions
@@ -194,7 +194,7 @@ After you enlist in a certification authority, you must either request a certifi
 
 -   Each server that is running SharePoint Products, if SharePoint Products is configured for your deployment.
 
-    > **Note:**  
+    > [!NOTE]
     > Configuring a SharePoint site to use HTTPS and certificates often requires additional steps, such as [configuring alternate access mappings](https://technet.microsoft.com/library/cc263208(v=office.15).aspx) and [configuring authentication infrastructure](https://technet.microsoft.com/library/jj219795(v=office.15).aspx). For more information, consult the latest SharePoint documentation for your version of the product.
 
 -   The server that is running Reporting Services, if one is configured for your deployment.
@@ -239,7 +239,7 @@ In addition, the client computers in your deployment will need to be enrolled in
 
     In **Port**, type a different port number.
 
-    > **Important:**  
+    > [!IMPORTANT]
     > The default port number for SSL connections is 443, but you must assign a unique port number for each of the following sites: Default Website, Team Foundation Server, Microsoft Team Foundation Server Proxy (if your deployment uses it), and SharePoint Central Administration (if your deployment uses SharePoint).</p>
     <p>You should record the SSL port number for each website that you configure. You will need to specify these numbers in the administration console for Team Foundation.
 
@@ -262,7 +262,7 @@ In addition, the client computers in your deployment will need to be enrolled in
 
 You must configure your firewall to allow traffic through the SSL ports that you just specified in IIS. For more information, see the documentation for your firewall.
 
-> **Important:**  
+> [!IMPORTANT]
 > Make sure to test traffic on the ports you specified from another computer. If you cannot access the default website or Team Web Access, double-check the port settings you specified for these websites in IIS, and make sure that the firewall is configured appropriately to allow traffic on those ports.
 
 <a name="config-sql-svr-reporting"></a>
@@ -270,7 +270,7 @@ You must configure your firewall to allow traffic through the SSL ports that you
 
 If your deployment uses reporting, you must configure SQL Server Reporting Services to support HTTPS with SSL and to use the port that you specified in IIS for Team Foundation Server. Otherwise, the report server will not function correctly for your deployment. For more information, see [Configuring a Report Server for Secure Sockets Layer (SSL) Connections](https://technet.microsoft.com/library/ms345223(v=sql.110).aspx).
 
-> **Tip:**  
+> [!TIP]
 > If your deployment does not use reporting, you can skip this procedure.
 
 <a name="config-https"></a>
@@ -371,7 +371,7 @@ You can require all connections to the TFS application tier to use HTTPS with SS
 
 If you installed Team Foundation Build Service on one or more servers, you must install the certificate in the Trusted Root Certification Authorities store of each server. For more information, see [Obtaining a Certificate](#obtaining-certificate) and [Requesting, installing, and configuring websites with a certificate](#request-install-config-websites) earlier in this topic. Both the controller and the agent require a certificate with a private key with which to identify themselves in HTTPS connections.
 
-> **Note:**  
+> [!NOTE]
 > To perform builds over SSL, the certificate must be installed in the trusted root store on both the build controller and the build agent.
 
 <a name="updating-build-configs"></a>
@@ -472,7 +472,7 @@ Setting up a TFS connection for the first time? There are some additional steps 
 
 1.  Launch the Release Management Client.
 
-    > **Tip:**  
+    > [!TIP]
     > If you get an error message saying you no longer have access to the server, you can reinstall the Release Management client, or you can use a command line tool to point the client to the server using the new port and protocol. For more information, see this [blog post](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/02/did-you-uninstall-release-management-server-and-lose-access-to-the-release-management-client.aspx).
 
 2.  Choose **Administration**, and then choose **Settings**.
@@ -506,7 +506,7 @@ Setting up a TFS connection for the first time? There are some additional steps 
 
 On every client computer from which users access Team Foundation, you must install the certificate locally and clear the client cache for any user who has accessed Team Foundation from that computer. Otherwise, users will not be able to connect to Team Foundation from that computer. For more information, see [Manage Trusted Root Certificates](http://go.microsoft.com/fwlink/?LinkId=164939).
 
-> **Important:**  
+> [!IMPORTANT]
 > Do not follow this procedure for computers that are running both Team Foundation Server and one or more clients of Team Foundation.
 
 ### To install the certificate on a client computer
@@ -531,7 +531,7 @@ On every client computer from which users access Team Foundation, you must insta
 
 6.  Repeat these steps for the account of every user who has accessed Team Foundation from that computer.
 
-    > **Note:**  
+    > [!NOTE]
     > You might want to distribute instructions for clearing the cache to all of your Team Foundation users so that they can clear the caches for themselves.
 
 ### To connect client computers to the reconfigured deployment
@@ -547,7 +547,7 @@ By default, projects that use Git for version control will fail to validate the 
 
 For more information about how Git network operations work in Visual Studio 2013, see this [blog post](http://blogs.msdn.com/b/phkelley/archive/2013/10/20/git-network-operations-in-visual-studio-2013.aspx).
 
-> **Tip:**  
+> [!TIP]
 > For other Git credential management tasks, such as Windows authentication, consider downloading and installing [Windows Credential Store for Git](http://gitcredentialstore.codeplex.com/).
 
 ### To configure the certificate store for Git

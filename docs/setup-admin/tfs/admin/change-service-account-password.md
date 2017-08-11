@@ -32,8 +32,8 @@ To follow a command-line procedure, you might need to open an elevated Command P
 
 To change the password of *TFSService*, you must log on to the application-tier server for Team Foundation and either use the administration console for Team Foundation, or open a Command Prompt window and use the TFSConfig command-line utility. If your deployment includes more than one application-tier server, you must perform this task on each server, or the account information will be out of synchronization.
 
->**Note:**  
->Depending on your deployment configuration, you might need to restart Internet Information Services (IIS) after you complete the procedure before the changes will take effect.
+> [!NOTE]
+> Depending on your deployment configuration, you might need to restart Internet Information Services (IIS) after you complete the procedure before the changes will take effect.
 
 ### To use the administration console to change the password
 
@@ -47,8 +47,8 @@ To change the password of *TFSService*, you must log on to the application-tier 
 
     The **Update Account Password** window opens.
 
-    >**Note:**  
-    >If you used a system account as the service account, you will see an error message when you choose **Update Account Password**. You do not need to change the password of that account. System accounts do not have user-managed passwords.
+    > [!NOTE]
+    > If you used a system account as the service account, you will see an error message when you choose **Update Account Password**. You do not need to change the password of that account. System accounts do not have user-managed passwords.
 
 4.  Type the new password in **Password**, and then choose **OK**.
 
@@ -56,8 +56,8 @@ To change the password of *TFSService*, you must log on to the application-tier 
 
 5.  Wait for all the status messages to complete in **Status**, and then choose **Close**.
 
-    >**Note:**  
-    >This process might take a few minutes.
+    > [!NOTE]
+    > This process might take a few minutes.
 
 **To use the TFSConfig utility to change the password**:
 
@@ -106,7 +106,8 @@ To configure TFS to use a different account as the service account for Team Foun
 
 6.  Wait for all the status messages to complete in **Status**, and then choose **Close**.
 
-    >**Note:**  This process might take a few minutes.
+    > [!NOTE]
+    > This process might take a few minutes.
 
 **To use the TFSConfig utility to change the service account**:
 

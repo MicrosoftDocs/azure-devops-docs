@@ -55,7 +55,8 @@ look at the information on the service that you're interested in.
  
 5.	Select an action to perform on the target service. 
 
-	**Note:** The list of available actions may be limited based on the event type you selected. 
+	> [!NOTE]
+    > The list of available actions may be limited based on the event type you selected. 
 
     <img alt="Select an action to perform on the target service" src="./_img/Trello_wizard_Action.png" style="border: 1px solid #CCCCCC" />
 
@@ -104,7 +105,7 @@ don't otherwise have access to.
 
 ####Q: Can I create service hook subscriptions for a project programmatically?
 
-A: Yes. Go [here](./create-subscription.md) for more details.
+A: Yes. Go [here](create-subscription.md) for more details.
 
 ####Q: Can I remove an app's access to my account after I've authorized it?
 

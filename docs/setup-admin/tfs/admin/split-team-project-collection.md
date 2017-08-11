@@ -21,7 +21,7 @@ As your business changes, you might want to split a single team project collecti
 
 -   You want to change ownership of some of the projects in the collection to a remote office that has its own deployment of TFS. This scenario requires that you first split a collection and then move one of the resulting collections to the remote office deployment.
 
-	>**Note:**  
+	> [!NOTE]
 	>The procedures in this topic support only splitting a team project collection. If you want to move a collection after you split it, see [Move a team project collection](move-project-collection.md).
 
 **In this topic**
@@ -73,8 +73,8 @@ First detach the collection from the deployment of TFS on which it is running. D
 
     ![](_img/ic738726.png)
 
-	>**Tip:**  
-	>The default name for a team project collection is &quot;DefaultCollection.&quot; If you are splitting this database, make sure to give the second collection a distinctly different name, because this is the default choice at connection.
+	> [!TIP]
+	> The default name for a team project collection is &quot;DefaultCollection.&quot; If you are splitting this database, make sure to give the second collection a distinctly different name, because this is the default choice at connection.
 
 3.  On the **General** tab, choose **Stop Collection**.
 
@@ -110,16 +110,16 @@ After you have detached the collection, you must back up its database before you
 
 -   For information about how to manually back up and restore individual databases, see the following pages on the Microsoft Web site, and make sure to choose the version of SQL Server that matches your deployment: [Backing Up and Restoring Databases in SQL Server](http://go.microsoft.com/fwlink/?LinkId=115430) and [Create a backup schedule and plan](backup/config-backup-sched-plan.md).
 
-    >**Important:**  
-    >If your original deployment used the Enterprise or Datacenter editions of SQL Server, and you want to restore the database that you want to split to a server running Standard edition, you must use a backup set that was made with SQL Server compression disabled. Unless you disable data compression, you will not be able to successfully restore Enterprise or Datacenter edition databases to a server running Standard edition. To turn off compression, follow the steps in the [Microsoft Knowledge Base article](http://go.microsoft.com/fwlink/?LinkId=253758).
+    > [!IMPORTANT]
+    > If your original deployment used the Enterprise or Datacenter editions of SQL Server, and you want to restore the database that you want to split to a server running Standard edition, you must use a backup set that was made with SQL Server compression disabled. Unless you disable data compression, you will not be able to successfully restore Enterprise or Datacenter edition databases to a server running Standard edition. To turn off compression, follow the steps in the [Microsoft Knowledge Base article](http://go.microsoft.com/fwlink/?LinkId=253758).
 
 <a name="restor-coll-db-new-name"></a>
 ## 2-a. Restore the collection database
 
 When you split a collection, you must restore the backup of the collection database to an instance of SQL Server that is configured to support the deployment of TFS. When you restore the database, you must give it a different name from the name of the original collection database.
 
->**Tip:**
-The steps below give a general overview of how to restore a team project collection database in SQL Server 2012 using SQL Server Management Studio. For more information about how to manually back up and restore individual databases, see the following page on the Microsoft Web site, and make sure to choose the version of SQL Server that matches your deployment: [Backing Up and Restoring Databases in SQL Server](http://go.microsoft.com/fwlink/?LinkId=115430).
+> [!TIP]
+> The steps below give a general overview of how to restore a team project collection database in SQL Server 2012 using SQL Server Management Studio. For more information about how to manually back up and restore individual databases, see the following page on the Microsoft Web site, and make sure to choose the version of SQL Server that matches your deployment: [Backing Up and Restoring Databases in SQL Server](http://go.microsoft.com/fwlink/?LinkId=115430).
 
 ### To restore the collection database with a new name
 
@@ -143,8 +143,8 @@ The steps below give a general overview of how to restore a team project collect
 
 After you have restored the database with a different name, you must reattach the original collection database to the deployment of TFS.
 
->**Note:**  
->If your deployment uses SharePoint Products and the service account for TFS is not a member of the Farm Administrators group, warnings will appear when you attach the collection. This behavior is expected.
+> [!NOTE]
+> If your deployment uses SharePoint Products and the service account for TFS is not a member of the Farm Administrators group, warnings will appear when you attach the collection. This behavior is expected.
 
 
 ### To attach the collection
@@ -182,8 +182,8 @@ After you have restored the database with a different name, you must reattach th
 
 After you attach the original collection database, you must attach the renamed collection to the deployment of TFS. When this collection is attached, it will remain stopped. You will not be able to start it until all duplicate projects have been removed.
 
->**Note:**  
->Warnings will appear when you attach the collection if your deployment uses SharePoint Products and the service account for TFS is not a member of the Farm Administrators group. This behavior is expected.
+> [!NOTE]
+> Warnings will appear when you attach the collection if your deployment uses SharePoint Products and the service account for TFS is not a member of the Farm Administrators group. This behavior is expected.
 
 
 ### To attach the renamed collection database
@@ -208,8 +208,8 @@ After you attach the original collection database, you must attach the renamed c
 
 9.  On the **Monitor the team project collection attach progress** page, when all processes have completed, choose **Next**.
 
-	>**Note:**  
-	>If the collection is supported by a SharePoint Web application, a warning icon will appear for the attach status of the SharePoint Web application. Similarly, if the original collection included reporting, a warning icon will appear for the attach status for reports. This behavior is expected, and you can ignore it.
+	> [!NOTE]
+	> If the collection is supported by a SharePoint Web application, a warning icon will appear for the attach status of the SharePoint Web application. Similarly, if the original collection included reporting, a warning icon will appear for the attach status for reports. This behavior is expected, and you can ignore it.
 
 10. (Optional) On the **Review supplemental information for this team project collection** page, choose or note the location of the log file, and then close the wizard.
 
@@ -228,8 +228,8 @@ After you attach the original collection database, you must attach the renamed c
 
 Now that you have two copies of the collection attached to TFS, you must delete each project from either the original collection or the renamed collection so that no project remains in both collections.
 
->**Important:**  
->A project cannot exist in more than one collection. Until you delete all duplicated projects between the split collections, you will not be able to start the renamed collection.
+> [!IMPORTANT]
+> A project cannot exist in more than one collection. Until you delete all duplicated projects between the split collections, you will not be able to start the renamed collection.
 
 ### To delete projects from the collections
 
@@ -239,8 +239,8 @@ Now that you have two copies of the collection attached to TFS, you must delete 
 
 3.  On the **Team Projects** tab, in the list of team projects, choose a project that you want to delete from the collection, and then choose **Delete**.
 
-	>**Tip:**  
-	>You can select more than one project to delete at a time.
+	> [!TIP]
+	> You can select more than one project to delete at a time.
 
     ![](_img/ic738734.png)
 
@@ -302,8 +302,8 @@ After you configure administrators for both collections, either you or those adm
 
 After you delete projects, you must move the reports that the split collection uses into a different folder, and you must delete them from the original folder.
 
->**Important:**  
->The report folders exist in both locations. Make sure that you move all reports appropriately before you delete any report folders.
+> [!IMPORTANT]
+> The report folders exist in both locations. Make sure that you move all reports appropriately before you delete any report folders.
 
 ### To split reports into separate folders
 
@@ -325,8 +325,8 @@ Once you've split the reports and started both collections, you must rebuild the
 
 4.  In the **Rebuild the Warehouse and Analysis Services Databases** dialog box, choose **OK**.
 
-	>**Note:**  
-	>The warehouses will continue to be rebuilt and the data will continue to be repopulated after the Start Rebuild action finishes. Depending on the size of your deployment and the amount of data, the whole process might take several hours to complete.
+	> [!NOTE]
+	> The warehouses will continue to be rebuilt and the data will continue to be repopulated after the Start Rebuild action finishes. Depending on the size of your deployment and the amount of data, the whole process might take several hours to complete.
 
 ### Q: Can I split a collection that uses SharePoint Products to support one or more team projects in the collection?
 
@@ -336,8 +336,8 @@ After you attach the renamed collection and remove all duplicate projects, you m
 
 If your deployment uses SharePoint Products, it is strongly recommended that the service account for TFS be a member of the **Farm Administrators** group.
 
->**Note:**  
->You can split a team project collection without granting this membership to the service account for TFS. However, you will see errors when you attach the collection, and you will need to perform additional steps to reconnect projects with their portals. Even if your operational requirements generally restrict granting this membership to the service account, you should consider adding the service account to the Farm Administrators group for the duration of the split operation.
+> [!NOTE]
+> You can split a team project collection without granting this membership to the service account for TFS. However, you will see errors when you attach the collection, and you will need to perform additional steps to reconnect projects with their portals. Even if your operational requirements generally restrict granting this membership to the service account, you should consider adding the service account to the Farm Administrators group for the duration of the split operation.
 
 
 ### To repair the connection to a SharePoint Web application
@@ -365,8 +365,8 @@ You can continue to use the same site collection in SharePoint Products to suppo
 
 1.  For information about how to split a site collection, see [Move site collections between databases](https://technet.microsoft.com/library/cc825328(v=office.15).aspx) or the latest guidance for your version of SharePoint Products.
 
-	>**Tip:**  
-	>Make sure that you configure user permissions and access to the site collections to match the user access to the team project collections, as detailed earlier in this topic.
+	> [!TIP]
+	> Make sure that you configure user permissions and access to the site collections to match the user access to the team project collections, as detailed earlier in this topic.
 
 2.  Configure any affected team project collection to utilize the split site collection by opening the administration console, choosing the collection from the list of the team project collections, and on the SharePoint Site tab, choosing **Edit Default Site Location**.
 

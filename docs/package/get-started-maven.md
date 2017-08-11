@@ -66,4 +66,4 @@ You can also go directly to the [Team Build + Maven guide](maven/maven-team-buil
 
 ## What's next?
 
-For more advanced topics, check out the [content summary](overview.md#content-summary).
+For more advanced topics, check out the [content summary](overview.md).

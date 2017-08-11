@@ -1,5 +1,5 @@
 ---
-title: Release Definitions for Release Management in Visual Studio Team Services and Team Foundation Server (TFS)
+title: Release Definitions for Release Management in VSTS and TFS
 description: Understand release definitions in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 604AFC89-57CD-44F9-B440-5F07F88F0BD4
 ms.prod: vs-devops-alm

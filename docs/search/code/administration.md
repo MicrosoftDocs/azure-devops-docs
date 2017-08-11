@@ -331,11 +331,12 @@ the **SqlScripts** folder and its contents is present, along with the PowerShell
 
 ![Download script files for administration](_img/administration/script-filesv2.png)
 
-**NOTE**: When executing scripts, ensure you run the appropriate script for your TFS version:
-
-* [TFS 2017 RTM](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017RTW)
-* [TFS 2017 Update 1](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update1)
-* [TFS 2017 Update 2](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update2)
+> [!NOTE]
+> When executing scripts, ensure you run the appropriate script for your TFS version:
+> 
+> * [TFS 2017 RTM](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017RTW)
+> * [TFS 2017 Update 1](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update1)
+> * [TFS 2017 Update 2](https://github.com/Microsoft/Code-Search/tree/master/TFS_2017Update2)
 
 <a name="check-index"></a>
 ### Check indexing status for TFS 2017 RTM

@@ -21,8 +21,8 @@ You can change the following settings:
 
 You can perform these tasks by editing the web.config file for version control, which is located in the installation directory on the application-tier server.
 
->**Note:**  
->By default, the installation directory for the application tier is *%programfiles%\*Microsoft Team Foundation Server 12.0\Application Tier\Web Services.
+> [!NOTE]
+> By default, the installation directory for the application tier is *%programfiles%\*Microsoft Team Foundation Server 12.0\Application Tier\Web Services.
 
 **Required Permissions**  
 To perform these procedures, you must be a member of the **Administrators** security group on the application-tier server for Team Foundation.
@@ -71,15 +71,15 @@ For more information, see the [Microsoft website](http://go.microsoft.com/fwlink
 
 10. Save and close the web.config file.
 
-    >**Note:**  
-    >To maximize performance, copy the files from the old cache folder to the new cache folder.
+    > [!NOTE]
+    > To maximize performance, copy the files from the old cache folder to the new cache folder.
 
 11. Open a Command Prompt window, type **iisreset**, and then press ENTER.
 
 12. Delete the old cache root folder.
 
-    >**Note:**  
-	>By default, the cache root folder is located at *%programfiles%*\Microsoft Team Foundation Server 12.0\Version Control Proxy\Web Services\VersionControlProxy\Data.
+    > [!NOTE]
+	> By default, the cache root folder is located at *%programfiles%*\Microsoft Team Foundation Server 12.0\Version Control Proxy\Web Services\VersionControlProxy\Data.
 
 
 ## Changing limits for removing files from the cache
@@ -107,8 +107,8 @@ You can change the maximum limit on the amount of storage space that the applica
 
             <add key="FixedSizeBasedPolicy" value="500" />
 
-        >**Note:**  
-		>If both the `FixedSizeBasedPolicy` and `PercentageBasedPolicy` elements are specified, the value of the `FixedSizeBasedPolicy` element is used, and the value of the `PercentageBasedPolicy` element is ignored.
+        > [!NOTE]
+		> If both the `FixedSizeBasedPolicy` and `PercentageBasedPolicy` elements are specified, the value of the `FixedSizeBasedPolicy` element is used, and the value of the `PercentageBasedPolicy` element is ignored.
 
 4.  Save and close the web.config file.
 

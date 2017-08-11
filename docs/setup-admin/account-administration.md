@@ -1,6 +1,6 @@
 ---
 title: Set up Team Services, Team Foundation Server, Visual Studio Team Services, or TFS
-description: Get Git or Team Foundation version control, tools for Agile and Java teams, and DevOps for continous integration and continuous delivery to build, test, and release in the cloud or on-premises
+description: Get Git or Team Foundation version control, tools for Agile and Java teams, and DevOps for continuos integration and continuous delivery to build, test, and release in the cloud or on-premises
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
@@ -13,7 +13,7 @@ ms.date: 04/04/2017
 
 
 #Administrative guide to working in Team Services and TFS  
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013 </b> 
+**Team Services | TFS 2017 | TFS 2015 | TFS 2013**
 
 Work on apps anytime, anywhere. Use 
 integrated, powerful, cross-platform, 
@@ -141,7 +141,6 @@ Team administrators can manage settings for their team, including team alerts an
 
 </ul>
 </div>
-
 
 <div style="float:left;width:190px;margin:3px;font-size:90%">
 <p style="padding-bottom:0px;text-align:center;"><b>Other team assets  </b></p>

@@ -17,7 +17,7 @@ ms.date: 08/04/2016
 The simplest way to set up TFS is to put everything on a single server. 
 Make sure to review our [hardware recommendations](../../requirements.md#hardware-recommendations)
 to confirm that this configuration seems appropriate for your team. If not, 
-consider a [dual server](dual-server.md) or [mutliple server](multiple-server.md)
+consider a [dual server](dual-server.md) or [multiple server](multiple-server.md)
 configuration instead.
 
 ## Preparation

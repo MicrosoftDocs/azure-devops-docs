@@ -83,7 +83,7 @@ For each contribution in your extension, the manifest defines
 Learn about all of the places where you can add an extension in the [contributions reference](../reference/targets/overview.md).
 
 ### Scopes
-Include the [scopes](/integrate/extensions/develop/manifest.md#scopes) that your extension requires.
+Include the[scopes](manifest.md#scopes) that your extension requires.
 In this case, we need `vso.work` to access work items.
 
 

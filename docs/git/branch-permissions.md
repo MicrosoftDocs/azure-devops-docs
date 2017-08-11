@@ -47,11 +47,11 @@ The user or group will still exist in your Team Project and this change will not
 ## Set permissions 
 
 Control branch permission settings from the branch permission view. Users and groups with permissions set at the repo level will
-[inherit those permissions](../setup-admin/permissions.md#inheritance) by default. 
+[inherit those permissions](../security/about-permissions.md#inheritance) by default. 
 
->[!NOTE] 
->These permissions have changed in TFS 2017 Update 1 and VSTS.
->If you are using an earlier version of TFS, see the [previous list of permissions](branch-permissions-before-2017.md).
+> [!NOTE] 
+> These permissions have changed in TFS 2017 Update 1 and VSTS.
+> If you are using an earlier version of TFS, see the [previous list of permissions](branch-permissions-before-2017.md).
 
 <table valign="top" width="100%">
 <tbody valign="top">

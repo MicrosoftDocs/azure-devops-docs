@@ -32,8 +32,9 @@ permissions.
    you must be a member of the Windows **Administrators** group (local user) 
    or the **Domain Administrators** group (domain account). 
 
-   ***Tip:*** _Do you need to add team mates to the **Release Manager** role 
-   in Release Management? See [Add users to Release Management](../add-users-and-groups.md)._
+    > [!TIP]
+    > _Do you need to add team mates to the **Release Manager** role 
+    > in Release Management? See [Add users to Release Management](../add-users-and-groups.md)._
 
 1. Either designate an existing account or create a user account in TFS 
    to act as intermediary account for Release Management. This can be a local 
@@ -42,9 +43,10 @@ permissions.
 
    ![Selecting an intermediary account for TFS](_img/connect-tfs-02.png)
 
-   ***Note:*** _If you're planning to use an account that already exists in 
-   TFS, you can skip this step. If you have TFS deployed on more than one 
-   server, you'll want to use a domain account._
+    > [!NOTE]
+    > _If you're planning to use an account that already exists in 
+    > TFS, you can skip this step. If you have TFS deployed on more than one 
+    > server, you'll want to use a domain account._
 
 1. In TFS, make the account a member of the **Project Collection 
    Administrators** group. For more details, see
@@ -82,7 +84,8 @@ permissions.
 1. Ensure that you are a member of the **Release Manager** role in Release 
    Management. This is required to connect an SMTP server to Release Management.
 
-   ***Tip:*** _Do you need to add team mates to the **Release Manager** role 
+    > [!TIP]
+    > _Do you need to add team mates to the **Release Manager** role 
    in Release Management? See [Add users to Release Management](../add-users-and-groups.md)._
 
 1. In Release Management client, choose **Administration** and then **Settings**.

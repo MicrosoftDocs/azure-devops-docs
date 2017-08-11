@@ -101,7 +101,8 @@ Services or a NuGet repository to store your artifacts. -->
 You can configure Release Management to deploy
 artifacts from all these sources.
 
-<!-- **Note:** Integration with Package Management and NuGet
+<!-- > [!NOTE]
+> Integration with Package Management and NuGet
 repositories is not yet available. -->
 
 By default, a release created from the release definition will use the
@@ -124,7 +125,8 @@ You can link a release definition to any of
 the build definitions in your Visual Studio Team Services account
 or Team Foundation Server project collection.
 
->**Note:** you must include a **Publish Artifacts** task step in your build
+> [!NOTE]
+> you must include a **Publish Artifacts** task step in your build
 definition. For XAML build definitions, an artifact with the name **drop**
 is published implicitly.
 
@@ -169,7 +171,8 @@ The following features are available when using Jenkins sources:
 | Artifact download | By default, Jenkins builds are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
 <p />
 
-**Note**: Release Management in Team Services may
+> [!NOTE]
+> Release Management in Team Services may
 not be able to contact your Jenkins server if,
 for example, it is within your enterprise network.
 In this case you can integrate
@@ -258,15 +261,16 @@ The following features are available when using TeamCity sources:
 | Artifact download | By default, TeamCity builds are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
 <p />
 
-**Note**: Release Management in Team Services may
-not be able to contact your TeamCity server if,
-for example, it is within your
-enterprise network. In this case you can integrate
-Release Management with TeamCity by setting up an
-on-premises agent that can access the TeamCity server.
-You will not be able to see the name of your TeamCity
-projects when linking to a build, but you can type
-this into the link dialog field.
+> [!NOTE]
+>  Release Management in Team Services may
+> not be able to contact your TeamCity server if,
+> for example, it is within your
+> enterprise network. In this case you can integrate
+> Release Management with TeamCity by setting up an
+> on-premises agent that can access the TeamCity server.
+> You will not be able to see the name of your TeamCity
+> projects when linking to a build, but you can type
+> this into the link dialog field.
 
 <h3 id="onpremtfssource">External TFS</h3>
 
@@ -303,20 +307,21 @@ The following features are available when using external TFS sources:
 | Artifact download | By default, External TFS artifacts are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
 <p />
 
-**Note**: Release Management in Team Services may
-not be able to contact an on-premises TFS server if,
-for example, it is within your
-enterprise network. In this case you can integrate
-Release Management with TFS by setting up an
-on-premises agent that can access the TFS server.
-You will not be able to see the name of your TFS
-projects or build definitions when linking to a build, but you can type
-these into the link dialog fields. In addition, when you
-create a release, Team Services may not be able to
-query the TFS server for the build numbers. Instead,
-type the **Build ID** (not the build number) of the
-desired build into the appropriate field, or select
-the **Latest** build.
+> [!NOTE]
+> Release Management in Team Services may
+> not be able to contact an on-premises TFS server if,
+> for example, it is within your
+> enterprise network. In this case you can integrate
+> Release Management with TFS by setting up an
+> on-premises agent that can access the TFS server.
+> You will not be able to see the name of your TFS
+> projects or build definitions when linking to a build, but you can type
+> these into the link dialog fields. In addition, when you
+> create a release, Team Services may not be able to
+> query the TFS server for the build numbers. Instead,
+> type the **Build ID** (not the build number) of the
+> desired build into the appropriate field, or select
+> the **Latest** build.
 
 ### Other sources
 
@@ -379,7 +384,7 @@ the source alias from the artifacts tab of a release definition; for example, wh
 the name of the build definition and you want to use a
 source alias that reflects the name of the build definition.
 
->The source alias can contain only alphanumeric characters
+> The source alias can contain only alphanumeric characters
 and underscores, and must start with a letter or an underscore
 
 <h2 id="primary-source">Primary source</h2>

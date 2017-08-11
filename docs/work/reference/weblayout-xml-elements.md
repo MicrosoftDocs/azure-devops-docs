@@ -13,8 +13,8 @@ ms.date: 03/02/2017
 
 <b>Team Services (Hosted XML) | TFS 2017 </b>
 
->[!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [Layout XML element reference](layout-xml-element-reference.md). 
+> [!IMPORTANT]  
+> This topic applies to team project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [Layout XML element reference](layout-xml-element-reference.md). 
 >
 >For the Inheritance process model, see [Customize a process](../process/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
 
@@ -102,8 +102,8 @@ You can modify select elements within the **SystemControls** section, such as ch
 The other layout elements that you can customize are those associated with a page, such as the Details page, or  other custom pages that you add. 
 
 
->[!TIP]  
->The **Page** element is similar to the deprecated **Tab** element. However, a **Page** element can't be grouped or nested. One page defines one tab within the web form.  
+> [!TIP]  
+> The **Page** element is similar to the deprecated **Tab** element. However, a **Page** element can't be grouped or nested. One page defines one tab within the web form.  
 
 This topic provides you with a quick reference to the **WebLayout** element and it's child elements. Use this as a guide to further customize a WIT definition that's been transformed and contains the new **WebLayout** section. 
 

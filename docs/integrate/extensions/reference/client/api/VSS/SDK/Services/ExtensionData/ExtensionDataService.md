@@ -50,7 +50,7 @@ Factory method for creating/getting an instance of the extension settings servic
 * `publisherName`: string. 
 * `extensionName`: string. 
 * `registrationId`: string. 
-* `webContext`: [Contracts_Platform.WebContext](../../../../VSS/Common/Contracts/Platform/WebContext.md). Optional. 
+* `webContext`: [Contracts_Platform.WebContext](../../../References/SDK_Interfaces/WebContext.md). Optional. 
 
 #### Returns
 

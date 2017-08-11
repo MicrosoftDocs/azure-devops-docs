@@ -1,5 +1,5 @@
 ---
-title: Build and Release Tasks in Visual Studio Team Services and Team Foundation Server
+title: Build and Release Tasks in VSTS and TFS
 description: Understand Build and Release tasks in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
 ms.prod: vs-devops-alm
@@ -65,7 +65,6 @@ Clear this check box to disable a task. This is useful
 when you want to temporarily take task out of the process for testing or for specific deployments.
 
 > [!TIP]
-> 
 > You can also right-click the task to toggle this setting.
 
 ### Timeout
@@ -87,7 +86,6 @@ Select the condition for running this task:
 * [Custom conditions](conditions.md)
 
 > [!NOTE]
-> 
 > If you're running tasks in cases when the build is canceled, then make sure you specify sufficient time for these tasks to run the [definition options](../../define/options.md#job-cancel-timeout).
 
 ### TFS 2015 and TFS 2017 options

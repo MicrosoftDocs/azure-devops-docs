@@ -25,8 +25,8 @@ Team admin permissions are role-based, unlike project admin permissions which ar
 
 You can configure most of your team settings from the common configuration dialog. 
 
->[!NOTE]
-><b>Feature availability: </b>The common configuration dialog is available from Team Services and the web portal for TFS 2015.1 and later versions.  
+> [!NOTE]
+> **Feature availability:** The common configuration dialog is available from Team Services and the web portal for TFS 2015.1 and later versions.  
 
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, from any team backlog or board to set one or more team settings.  
 

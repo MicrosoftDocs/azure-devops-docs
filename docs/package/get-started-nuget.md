@@ -45,4 +45,4 @@ To get started with continuous integration, see the [Continuous delivery overvie
 
 ## What's next?
 
-For more advanced topics, check out the [content summary](overview.md#content-summary).
+For more advanced topics, check out the [content summary](overview.md).

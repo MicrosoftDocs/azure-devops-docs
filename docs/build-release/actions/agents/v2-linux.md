@@ -94,7 +94,8 @@ If your agent is running on these operating systems you can run the agent as a s
 
 We provide the `./svc.sh` script for you to run and manage your agent as a systemd service.
 
-> **Note:** If you have a different distribution, or if you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service-files).
+> [!NOTE]
+> If you have a different distribution, or if you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service-files).
 
 ### Commands
 

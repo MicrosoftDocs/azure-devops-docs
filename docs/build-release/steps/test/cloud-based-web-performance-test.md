@@ -1,5 +1,5 @@
 ---
-title: Team Services and Team Foundation Server Build and Test - Cloud-based Web Performance Test
+title: VSTS and TFS Build and Test - Cloud-based Web Performance Test
 ms.assetid: 8030BD4C-F119-4A0F-9ED5-B021C4E760CD
 description: Runs the Quick Web Performance Test with Visual Studio Team Services to easily verify your web application exists and is responsive
 ms.prod: vs-devops-test-continuous

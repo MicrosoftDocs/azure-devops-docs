@@ -35,7 +35,8 @@ The steps involved in completing this tutorial are:
 - [Step 1: Creating the extension manifest file](#step1)
 - [Step 2: The build task definition, in the task.json file](#step2)
 
-> Note: This tutorial will refer to the home directory for your project as "home". 
+> [!NOTE]
+> This tutorial will refer to the home directory for your project as "home". 
 
 <a name="step1" />
 
@@ -73,9 +74,11 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory o
 }
 ```
 
-> **Note:** You will need to update the `publisher` property.
+> [!NOTE]
+> You will need to update the `publisher` property.
 
-> **Note:** "BuildTaskFolder" is the path where we'll eventually place our build task definition
+> [!NOTE]
+> "BuildTaskFolder" is the path where we'll eventually place our build task definition
 
 <a name="customendpoint" />
 

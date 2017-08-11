@@ -66,7 +66,7 @@ Whether you deploy Team Foundation Server in a workgroup or a domain, you must c
 
 Security for Team Foundation Server is integrated with and relies on Windows integrated authentication and the security features of the Windows operating system. You can use Windows integrated authentication to authenticate accounts for connections between Team Foundation clients and TFS, for Web services on the servers that host the logical application and data tiers, and for connections between application-tier and data-tier servers themselves. 
 
-> **NOTE**
+> [!NOTE]
 > You can configure TFS to support Kerberos for mutual authentication of both the client and the server after you install TFS. 
  
 You should not configure any SQL Server database connections between Team Foundation Server and SharePoint Products to use SQL Server Authentication because it is not as secure as Windows authentication. When you connect to the database, the user name and the password for the database administrator account are sent in an unencrypted format. Windows integrated authentication does not send the user name and password. Instead, it uses Windows integrated authentication security protocols to transfer service account identity information that is associated with the host Internet Information Services (IIS) application pool to SQL Server.

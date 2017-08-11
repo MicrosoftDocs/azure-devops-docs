@@ -19,7 +19,7 @@ You can configure Team Foundation Server to use the standard configuration. To
 
 For more information about accounts, see [Accounts required for installation of Team Foundation Server](../../../requirements.md#accounts)
 
-> TIP
+> [!TIP]
 > You can access the Team Foundation Server Configuration tool by launching Team Foundation Server Administration Console, choosing **Application Tier**, and then choosing **Configure Installed Features**.
 
 **Required Permissions**
@@ -42,7 +42,7 @@ You must be a member of the **Administrators** security group on the server that
 
 5.  Choose **Install SharePoint Foundation 2013**.
 
-> Note
+> [!NOTE]
 > If the SharePoint installation requires a reboot, you might need to reenter some of the information you previously entered in this wizard.
 
 6.  After Team Foundation Server installs SharePoint Foundation, choose **Next**.
