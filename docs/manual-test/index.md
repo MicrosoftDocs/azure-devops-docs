@@ -26,8 +26,8 @@ using the VSTS or TFS web portal.
 
 | | |
 | --- | --- |
-| ![icon]()<br />[Test from the Kanban board](../work/kanban/add-run-update-tests.md?toc=/vsts/manual-test/toc.json) | ![icon]()<br />[Create a test plan](getting-started/create-a-test-plan.md) |
-| ![icon]()<br />[Create test cases](getting-started/create-test-cases.md) | ![icon]()<br />[Run manual tests](getting-started/run-manual-tests.md) |
+| ![icon](_img/kanban-icon.png)<br />[Test from the Kanban board](../work/kanban/add-run-update-tests.md?toc=/vsts/manual-test/toc.json) | ![icon](_img/testplan-icon.png)<br />[Create a test plan](getting-started/create-a-test-plan.md) |
+| ![icon](_img/testcases-icon.png)<br />[Create test cases](getting-started/create-test-cases.md) | ![icon](_img/runtests2-icon.png)<br />[Run manual tests](getting-started/run-manual-tests.md) |
 | | |
 
 Use the **Test &amp; Feedback extension** to associate work items
@@ -36,7 +36,7 @@ tasks and test cases automatically linked to that work item.
 
 | | | |
 | --- | --- | --- |
-| ![icon]()<br />[Install the extension](getting-started/perform-exploratory-tests.md) | ![icon]()<br />[Test in Connected mode](connected-mode-exploratory-testing.md) | ![icon]()<br />[Test in Standalone mode](standalone-mode-exploratory-testing.md) |
+| ![icon](_img/marketplace-icon.png)<br />[Install the extension](getting-started/perform-exploratory-tests.md) | ![icon](_img/connectedmode-icon.png)<br />[Test in Connected mode](connected-mode-exploratory-testing.md) | ![icon](_img/standalonemode-icon.png)<br />[Test in Standalone mode](standalone-mode-exploratory-testing.md) |
 | | | |
 
 ## How-to Guides

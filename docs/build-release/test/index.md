@@ -20,7 +20,7 @@ ms.date: 08/12/2016
 
 | | | |
 | --- | --- | --- |
-| ![icon]()<br />[Continuous testing](getting-started-with-continuous-testing.md) | ![icon]()<br />[Selenium testing](continuous-test-selenium.md) | ![icon]()<br />[Review test results](review-continuous-test-results-after-build.md) |
+| ![icon](_img/continuoustest-icon.png)<br />[Continuous testing](getting-started-with-continuous-testing.md) | ![icon](_img/selenium-icon.png)<br />[Selenium testing](continuous-test-selenium.md) | ![icon](_img/reviewresults-icon.png)<br />[Review test results](review-continuous-test-results-after-build.md) |
 | | | |
 
 ## How-to Guides
