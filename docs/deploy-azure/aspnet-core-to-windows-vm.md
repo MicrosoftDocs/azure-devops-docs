@@ -39,23 +39,22 @@ Running an ASP.NET Core app on Windows requires some dependencies.
 
 On your VM, open an **Administrator: Windows PowerShell** console. Install IIS and the required .NET features:
 
+[//]: # (TODO: try consolidating with this `Install-WindowsFeature Web-Server,Web-Asp-Net45,NET-Framework-Features -IncludeManagementTools`)
+
 ```ps
+# Install IIS and the IIS management tools on the VM
+Install-WindowsFeature web-server -IncludeManagementTools
+
 Install-WindowsFeature Web-Server,Web-Asp-Net45,NET-Framework-Features
-```
 
-[//]: # (TODO: Ask to have above install handled in prereq. [Conversation]:="Adding some software to Azure Windows VM")
+# Install the .NET Core SDK on the VM
+Invoke-WebRequest https://go.microsoft.com/fwlink/?linkid=848827 -outfile $env:temp\dotnet-dev-win-x64.1.0.4.exe
+Start-Process $env:temp\dotnet-dev-win-x64.1.0.4.exe -ArgumentList '/quiet' -Wait
+Invoke-WebRequest https://go.microsoft.com/fwlink/?LinkId=817246 -outfile $env:temp\DotNetCore.WindowsHosting.exe
+Start-Process $env:temp\DotNetCore.WindowsHosting.exe -ArgumentList '/quiet' -Wait
 
-On your VM, install the [.NET Core Windows Server Hosting](https://go.microsoft.com/fwlink/?linkid=848766) bundle. The bundle will install the .NET Core Runtime, .NET Core Library, and the [ASP.NET Core Module](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps). The module creates the reverse-proxy between IIS and the Kestrel server.
-
-[//]: # (TODO: Ask .net core writers, Micheal)
-
-After the installation is done, to effect a change to the system PATH, run the following commands from a PowerShell prompt on your VM:
-
-```ps
+# Restart the web server so that system PATH updates take effect
 net stop was /y
-```
-
-```ps
 net start w3svc
 ```
 
@@ -137,11 +136,11 @@ Continuous deployment (CD) is a lean practice that your team can use to keep pro
 
 1. In the **Create release definition** wizard, select **IIS Website Deployment** template, and then click **Apply**.
 
- ![Screenshot showing IIS template](_img/aspnet-core-to-windows-vm/select-iis-website-and-sql-database-deployment-release-template.png)
+ ![Screenshot showing IIS website deployment template](_img/aspnet-core-to-windows-vm/select-iis-website-deployment-release-template.png)
 
 1. Click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*.
 
- ![Screenshot showing release definition](_img/aspnet-core-to-windows-vm/cicd-get-started-release-definition.png)
+ ![iis deployment group in release definition](_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
 
 1. Click **Save**. On the Save dialog box, click **OK**.
 
@@ -174,6 +173,6 @@ You've just put your own CI/CD processes in place. You can modify these build an
 
 * [Deploy to multiple VMs](deploy-to-vms.md)
 
-* [Manage infrastructure as code](infra-as-code.md)
+* [Manage infrastructure as code](infrastructure-as-code.md)
 
 [//]: # (TODO MAYBE [!INCLUDE [include](_shared/quickstart-next-steps.md)

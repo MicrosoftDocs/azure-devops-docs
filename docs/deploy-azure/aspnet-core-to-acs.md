@@ -107,4 +107,4 @@ You've just put your own CI/CD processes in place. You can modify these build an
 
 * [Customize CD process](customize-cd-process.md)
 
-* [Manage infrastructure as code](infra-as-code.md)
+* [Manage infrastructure as code](infrastructure-as-code.md) 

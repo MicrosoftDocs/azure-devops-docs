@@ -75,6 +75,6 @@ When you configured your CI/CD process in this quickstart, a build and release d
 
 * [Customize CD process](customize-cd-process.md)
 
-* [Manage infrastructure as code](infra-as-code.md)
+* [Manage infrastructure as code](infrastructure-as-code.md)
 
 [//]: # (TODO MAYBE [!INCLUDE [include](_shared/quickstart-next-steps.md)

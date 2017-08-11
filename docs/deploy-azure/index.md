@@ -32,7 +32,7 @@ Learn how to build your app and deploy it to your choice of Azure service.
 
 * [Customize CD process](customize-cd-process.md)
 * [Deploy to multiple VMs](deploy-to-vms.md)
-* [Manage infrastructure as code](infra-as-code.md)
+* [Manage infrastructure as code](infrastructure-as-code.md)
 
 ## Videos
 

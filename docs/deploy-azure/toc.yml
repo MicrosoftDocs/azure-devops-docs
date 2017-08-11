@@ -16,7 +16,7 @@
   - name: "Deploy to multiple VMs"
     href: deploy-to-vms.md
   - name: "Manage infrastructure as code"
-    href: infra-as-code.md
+    href: infrastructure-as-code.md
 - name: Concepts
   items:
   - name: Build definitions
