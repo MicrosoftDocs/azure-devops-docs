@@ -20,7 +20,7 @@ ms.custom: mvc
 # Deploy to multiple VMs
 
 In the quickstarts, you learned about how to deploy your application to a
-[Windows VM](../apps/aspnet-core-to-windows-vm.md) or to a Linux VM in Azure. To scale out and avoid down time,
+[Windows VM](aspnet-core-to-windows-vm.md) or to a Linux VM in Azure. To scale out and avoid down time,
 you can implement rolling deployments your app to multiple VMs.
 
 In this tutorial, you learn about:

@@ -35,7 +35,7 @@ On your dev machine, you need Azure PowerShell module version 4.0 or newer. See 
 
 [!INCLUDE [temp](../../apps/_shared/create-azure-windows-vm.md)]
 
-[!INCLUDE [temp](../../apps/_shared/create-deployment-group.md)]
+[!INCLUDE [temp](../../../deploy-azure/_shared/create-deployment-group.md)]
 
 [!INCLUDE [temp](../../get-started/_shared/import-code-1.md)]
 
@@ -63,7 +63,7 @@ In the dialog that prompts to **Create release definition**, select **Yes**.
 
 In the **Create release definition** wizard, select the **IIS Website and SQL Database deployment** template, and click **Apply**.
 
-![Screenshot showing IIS template](../../apps/_img/aspnet-core-to-windows-vm/select-iis-website-and-sql-database-deployment-release-template.png)
+![Screenshot showing IIS template](../../../deploy-azure/_img/aspnet-core-to-windows-vm/select-iis-website-and-sql-database-deployment-release-template.png)
 
 Click **Tasks**, and then select the **SQL Deployment** phase. Click 'X' to delete this phase. We won't be deploying a database in this quickstart.
 
@@ -73,7 +73,7 @@ Select the **IIS Web App Manage** task; click 'X' to delete this task. We will n
 
 Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Leave all the other default settings.
 
-![Screenshot showing release definition](../../apps/_img/aspnet-core-to-windows-vm/cicd-get-started-release-definition.png)
+![Screenshot showing release definition](../../../deploy-azure/_img/aspnet-core-to-windows-vm/cicd-get-started-release-definition.png)
 
 [!INCLUDE [temp](../../apps/_shared/set-up-cd-3.md)]
 

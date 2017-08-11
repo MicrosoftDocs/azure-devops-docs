@@ -51,7 +51,7 @@ You will need to adapt the names so that they are unique in App Services - perha
 by adding your initials and a number to each one.
 Use the following steps to create each one.
 
-[!INCLUDE [create-azure-web-app-portal](../apps/_shared/create-azure-web-app-portal.md)]
+[!INCLUDE [create-azure-web-app-portal](../../deploy-azure/_shared/create-azure-web-app-portal.md)]
 
 ## Add test, QA, and production environments to the release definition
 

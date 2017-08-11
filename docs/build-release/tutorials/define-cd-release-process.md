@@ -44,7 +44,7 @@ This tutorial requires you to have already created a set of build artifacts from
 a build definition. If you don't already have a build definition that creates a set of artifacts for your app,
 work through the tutorial [Define your continuous integration (CI) build process](define-ci-build-process.md) first.
 
-[!INCLUDE [create-azure-web-app-portal](../apps/_shared/create-azure-web-app-portal.md)]
+[!INCLUDE [create-azure-web-app-portal](../../deploy-azure/_shared/create-azure-web-app-portal.md)]
 
 ## Create a new release definition
 

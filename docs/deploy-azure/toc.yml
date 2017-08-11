@@ -4,24 +4,22 @@
   items:
   - name: "Deploy to Azure with VSTS"
     href: overview-deploy-azure.md
-  - name: "Build and Release"
-    href: /vsts/build-release/
 - name: Quickstarts
   items:
   - name: "CI/CD to Azure Web App"
-    href: /vsts/build-release/apps/aspnet-core-to-azure-webapp.md
+    href: aspnet-core-to-azure-webapp.md
   - name: "CI/CD to Windows VM"
-    href: /vsts/build-release/apps/aspnet-core-to-windows-vm.md
+    href: aspnet-core-to-windows-vm.md
   - name: "CI/CD to Azure Container Service"
-    href: /vsts/build-release/apps/aspnet-core-to-acs.md
+    href: aspnet-core-to-acs.md
 - name: Tutorials
   items:
   - name: "Customize CD process"
-    href: /vsts/build-release/tutorials/customize-cd-process.md
+    href: customize-cd-process.md
   - name: "Deploy to multiple VMs"
-    href: /vsts/build-release/tutorials/deploy-to-vms.md
+    href: deploy-to-vms.md
   - name: "Manage infrastructure as code"
-    href: /vsts/build-release/tutorials/infra-as-code.md
+    href: infra-as-code.md
 - name: Concepts
   items:
   - name: Build definitions

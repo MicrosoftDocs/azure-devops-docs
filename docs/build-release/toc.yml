@@ -9,14 +9,14 @@
   - name: CI/CD to web app
     items:
     - name: ASP.NET Core
-      href: apps/aspnet-core-to-azure-webapp.md
+      href: /vsts/deploy-azure/aspnet-core-to-azure-webapp?toc=/vsts/build-release/toc.json&bc=/vsts/breadcrumb/toc.json
     - name: ASP.NET
     - name: Node.js
     - name: Java
   - name: CI/CD to Windows VMs
     items:
     - name: ASP.NET Core
-      href: apps/aspnet-core-to-windows-vm.md
+      href: /vsts/deploy-azure/aspnet-core-to-windows-vm?toc=/vsts/build-release/toc.json&bc=/vsts/breadcrumb/toc.json
     - name: ASP.NET
   - name: CI/CD to Linux VMs
     items:
@@ -26,7 +26,7 @@
   - name: CI/CD to Containers
     items:
     - name: ASP.NET Core
-      href: apps/aspnet-core-to-acs.md
+      href: /vsts/deploy-azure/aspnet-core-to-acs?toc=/vsts/build-release/toc.json&bc=/vsts/breadcrumb/toc.json
     - name: Node.js
 - name: Tutorials
   items:

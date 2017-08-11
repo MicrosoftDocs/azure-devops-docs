@@ -21,7 +21,7 @@ ms.custom: mvc
 
 Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your ASP.NET Core apps. This quickstart shows how to set up CI and CD to deploy an ASP.NET Core application to Linux App Service with Docker and Azure Container Registry.
 
-![A typical release pipeline for web applications](../get-started/_img/ci-cd/part-1/ReleasePipeline.png)
+![A typical release pipeline for web applications](../build-release/get-started/_img/ci-cd/part-1/ReleasePipeline.png)
 
 With your CI/CD processes in place, you'll push a change into your team's git repo and the results will automatically show up on your site.
 
@@ -105,6 +105,6 @@ The CD tooling for Visual Studio 2017 automated the creation of the CI/CD pipeli
 ## Next Steps    
 You've just put your own CI/CD processes in place. You can modify these build and release definitions to meet the needs of your team. To learn more see one of these tutorials:
 
-* [Define your continuous integration (CI) build process](../tutorials/define-ci-build-process.md)
-* [Define your continuous deployment (CD) process](../tutorials/define-cd-release-process.md)
-* [Define your multi-stage continuous deployment (CD) process](../tutorials/define-multistage-release-process.md)
+* [Customize CD process](customize-cd-process.md)
+
+* [Manage infrastructure as code](infra-as-code.md)

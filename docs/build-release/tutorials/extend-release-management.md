@@ -39,7 +39,7 @@ This tutorial requires you to have completed the tutorial
 first. This tutorial extends that one by using the same set of build artifacts
 from the build definition. You also need an Azure App Services website where you will deploy the app.
 
-[!INCLUDE [create-azure-web-app-portal](../apps/_shared/create-azure-web-app-portal.md)]
+[!INCLUDE [create-azure-web-app-portal](../../deploy-azure/_shared/create-azure-web-app-portal.md)]
 
 ## Select and install an extension
 
