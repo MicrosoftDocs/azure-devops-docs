@@ -42,11 +42,9 @@ If your team project uses TFVC in your Visual Studio Team Services account, read
 
 Your code is in TFVC, so now your teammates can contribute.
 
-## Try this next
+## Next steps
 
-* [Build your Eclipse projects](../build-release/get-started/java-maven.md)
+> [!div class="nextstepaction"]
+> [Build your Eclipse projects](../build-release/get-started/java-maven.md)
 
-## Q&A
 
-
-<!-- ENDSECTION -->

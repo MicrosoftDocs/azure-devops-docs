@@ -87,6 +87,7 @@ If you aren't getting them, you can sign up in the team explorer settings page.
 
  ![Work environment restored after resuming work](_img/get-code-reviewed-vs/IC683039.png)
 
-## Try this next
+## Next steps
 
- * [Create your backlog](../work/backlogs/create-your-backlog.md)
+> [!div class="nextstepaction"]
+> [Create your backlog](../work/backlogs/create-your-backlog.md)

@@ -15,7 +15,7 @@ ms.date: 08/10/2016
 
 Share your Xcode projects in Visual Studio Team Services using a TFVC repository by using the Git-tf command line tool to push your changes from the local Git repotory to TFVC.
 
-#####Download and configure Git-tf
+## Download and configure Git-tf
 
 1. Download and extract [Git-tf](http://go.microsoft.com/fwlink/p/?LinkId=261658).
 
@@ -52,7 +52,7 @@ Share your Xcode projects in Visual Studio Team Services using a TFVC repository
     git config git-tf.server.password mypassword
     ```
 
-#####Share your code
+## Share your code
 
 
 1. After you commit changes to your local Git repository, and you're ready to share them in Visual Studio Team Services, check them in.
@@ -83,21 +83,22 @@ Share your Xcode projects in Visual Studio Team Services using a TFVC repository
     ![git tf help](./_img/share-your-code-in-tfvc-xcode/git-tf-help.png)
     ![git tf help checkin](./_img/share-your-code-in-tfvc-xcode/git-tf-help-checkin.png)
 
-<!-- ENDSECTION -->
 
-## Q&A
 
-<!-- BEGINSECTION class="m-qanda" -->
+## Frequently asked questions
 
-####Q: Should I use Git or TFVC for my team project?
+* [Should I use Git or TFVC for my team project?](#should-i-use-git-or-tfvc-for-my-team-project)
+* [If my team project uses Git Version control, can I still share my Xcode projects in Visual Studio Team Services?](#if-my-team-project-uses-git-version-control-can-i-still-share-my-xcode-projects-in-visual-studio-team-services)
 
-A: That depends on a number of factors, like the size of your codebase and the size and distribution of your team. 
+### Should I use Git or TFVC for my team project?
+
+That depends on a number of factors, like the size of your codebase and the size and distribution of your team. 
 Learn which version control ([Git](../git/overview.md) or [Team Foundation Version Control](overview.md)) 
 works best for you.
 
-####Q: If my team project uses Git Version control, can I still share my Xcode projects in Visual Studio Team Services?
+### If my team project uses Git Version control, can I still share my Xcode projects in Visual Studio Team Services?
 
-A: Yes, see [Share your code in Git using Xcode](../git/share-your-code-in-git-xcode.md)
+Yes, see [Share your code in Git using Xcode](../git/share-your-code-in-git-xcode.md).
 
 
-<!-- ENDSECTION -->
+

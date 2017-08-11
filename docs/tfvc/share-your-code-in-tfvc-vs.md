@@ -66,7 +66,7 @@ Now that you've added your app, you can skip down to
 
 0. Move the code you want to upload to the workspace folder.
 
- ![Move your source code to your workspace folder](_img/share-your-code-in-tfvc-vs/IC689415.jpg)
+ ![Move your source code to your workspace folder](_img/share-your-code-in-tfvc-vs/IC689415.png)
 
 0. Open your solution in Visual Studio.
 
@@ -140,18 +140,20 @@ Your whole team can work on the code now. All your changes are tracked in versio
 
  ![History window](_img/share-your-code-in-tfvc-vs/IC682163.png)
 
-## Try this next
+## Next steps
 
-[Get your code reviewed](get-code-reviewed-vs.md)
+> [!div class="nextstepaction"]
+> [Get your code reviewed](get-code-reviewed-vs.md)
 
-## Q&A
+## Frequently asked questions
 
-<!-- BEGINSECTION class="md-qanda" -->
+* [My code is somewhere else. Can I migrate it to my TFVC project on Visual Studio Team Services?](#my-code-is-somewhere-else-can-i-migrate-it-to-my-tfvc-project-on-visual-studio-team-services)
+* [I don't see the Configure Workspace link shown in the steps above. What do I do next?](#i-dont-see-the-configure-workspace-link-shown-in-the-steps-above-what-do-i-do-next)
 
 <a name="migrate"></a>
-#### Q: My code is somewhere else. Can I migrate it to my TFVC project on Visual Studio Team Services?
+### My code is somewhere else. Can I migrate it to my TFVC project on Visual Studio Team Services?
 
-A: Yes:
+Yes:
 
  * [Upgrade From Visual SourceSafe](http://msdn.microsoft.com/library/ms253060).
 
@@ -164,13 +166,13 @@ A: Yes:
 [!INCLUDE [temp](../_shared/qa-vs-legacy-connect.md)]
 
 <a name="workspace_exists"></a>
-#### Q:	I don't see the Configure Workspace link shown in the steps above. What do I do next?
+### I don't see the Configure Workspace link shown in the steps above. What do I do next?
 
-A:	You might already have a workspace on your computer. To see your workspace, open Source 
+You might already have a workspace on your computer. To see your workspace, open Source 
 Control Explorer. Or change your workspace. Find out how to [manage files under 
 source control](http://msdn.microsoft.com/library/ms181370.aspx) or 
 [manage workspaces](http://msdn.microsoft.com/library/ms181383.aspx).
 
 ![In Team Explorer, click Source Control Explorer or Manage Workspaces](_img/share-your-code-in-tfvc-vs/OpenSCE_ManageWorkspaces.png)
 
-<!-- ENDSECTION --> 
+
