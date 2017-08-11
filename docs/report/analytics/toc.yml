@@ -13,8 +13,20 @@
     href: access-analytics-excel.md
   - name: Access data through Power BI desktop
     href: access-analytics-power-bi.md
-- name: Tutorials
+- name: Samples
   items:
+  - name: OData example 1 (TBD)
+  - name: OData example 2 (TBD)
+- name: Concepts
+  items:
+  - name: Data model
+    href: data-model-analytics-service.md
+  - name: Power BI desktop and OData aggregations
+    href: using-odata-aggregations-with-power-bi-desktop.md 
+- name: How-to Guides
+  items:
+  - name: Assign permissions (Security)
+    href: /vsts/report/analytics/analytics-security?toc=/vsts/report/powerbi/toc.json
   - name: WIT analytics
     href: wit-analytics.md
   - name: Analytic recipes
@@ -33,16 +45,6 @@
     href: widget-extensions-against-analytics-service.md
   - name: Add configuration to an extension
     href: widget-extension-against-analytics-service-configuration.md
-- name: Samples
-  items:
-  - name: OData example 1 (TBD)
-  - name: OData example 2 (TBD)
-- name: Concepts
-  items:
-  - name: Data model
-    href: data-model-analytics-service.md
-  - name: Power BI desktop and OData aggregations
-    href: using-odata-aggregations-with-power-bi-desktop.md 
 - name: Reference
   items:
   - name: Power BI templates (TBD)

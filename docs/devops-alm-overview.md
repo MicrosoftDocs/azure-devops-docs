@@ -76,7 +76,7 @@ Software development teams often rely on re-using libraries or providing librari
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Package Management</p>
 <ul style="padding-left:30px">
 <li style="margin-bottom:2px">[Package Management overview](package/overview.md)</li>
-<li style="margin-bottom:2px">[What is Package Management?](package/what-is-packaging.md)</li>
+<li style="margin-bottom:2px">[What is Package Management?](package/overview.md)</li>
 <li style="margin-bottom:2px">[Integrate packages into builds and releases](package/build/overview.md)</li>
 
 </ul>

@@ -20,6 +20,15 @@ You use cumulative flow diagrams (CFD) to monitor the flow of work through a sys
 
 The CFD widget provides more configuration options than those supported by the default CFD charts shown on the backlog and board pages. With the [CFD widget](#configure-widget), you can monitor the count of work items as they progressively move through various states which you define. You can configure the CFD chart to monitor the flow of epics, features, user stories, product backlog items, or requirements, depending on the process ([Agile](../../work/guidance/agile-process.md), [Scrum](../../work/guidance/scrum-process.md), or ([CMMI](../../work/guidance/cmmi-process.md)) you've selected.
 
+
+Use this topic to learn: 
+
+> [!div class="checklist"]
+> * How to work with cumulative flow charts    
+> * Install and configure the Cumulative Flow widget (Analytics service)  
+> * How to work with the Cumulative Flow chart (work tracking datastore)     
+> * Required and recommended team activities to support tracking cumulative flow     
+
 ## View the cumulative flow chart (Kanban board) 
 
 You open the cumulative flow for your backlog or portfolio backlog by clicking the image in the upper-right corner of the Kanban board page. 
@@ -222,24 +231,6 @@ A good rule of thumb for work in progress is that there should be no more than t
 
 Sometimes it takes time to get information from a stakeholder, or it takes more time to acquire necessary software. There are any number of reasons why work might be halted so having a secondary item to switch to provides a little bit of leeway. If both items are blocked, it's time to raise a red flag to get something unblocked&mdash;not just switch to yet another item. As soon as there are a large number of items in progress, the person working on those items will have difficulty context switching, are more likely to forget what they were doing, and likely incur mistakes.  
 
-<a id="configure"></a>
-##Configure the CFD chart (Kanban board) 
-
-Each team can set their preferences for the cumulative flow charts for their Kanban boards.  
-
-1. Open the Board page for the backlog level for which you want to configure and then open the common configuration dialog. Click the ![gear icon](../../work/_img/icons/team-settings-gear-icon.png) gear icon.  
-
-	<img src="../../work/customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />  
-
-	If you're not a team admin, [get added as one](../../work/scale/add-team-administrator.md). Only team and project admins can customize the team Kanban boards and CFD charts.  
-
-2. Click the Cumulative flow tab and specify the team's preferences.  
-
-	<img src="_img/cfd-configure-common-settings.png" alt="Kanban board, Common configuration dialog, Cumulative flow" style="border: 1px solid #CCCCCC;" />  
-
-3. Repeat steps 1 and 2 for each backlog level you want to configure.  
-
-
 <a id="configure-widget"></a>
 ## Configure the CFD widget    
 
@@ -273,49 +264,28 @@ You will need to be a team administrator or a member of the Project Administrato
    
 	<img src="_img/cfd-exampe-rolling-30-days.png" alt="Example CFD chart, rolling 30 days" style="border: 1px solid #CCCCCC;" />    
 
-##Related notes
+
+<a id="configure"></a>
+## Configure the CFD chart (Kanban board) 
+
+Each team can set their preferences for the cumulative flow charts for their Kanban boards.  
+
+1. Open the Board page for the backlog level for which you want to configure and then open the common configuration dialog. Click the ![gear icon](../../work/_img/icons/team-settings-gear-icon.png) gear icon.  
+
+	<img src="../../work/customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />  
+
+	If you're not a team admin, [get added as one](../../work/scale/add-team-administrator.md). Only team and project admins can customize the team Kanban boards and CFD charts.  
+
+2. Click the Cumulative flow tab and specify the team's preferences.  
+
+	<img src="_img/cfd-configure-common-settings.png" alt="Kanban board, Common configuration dialog, Cumulative flow" style="border: 1px solid #CCCCCC;" />  
+
+3. Repeat steps 1 and 2 for each backlog level you want to configure.  
+
+
+
+## Related notes
 
 For the CFD chart to reflect useful information, you'll want to update the status of work items to reflect progress as it occurs. The quickest way to make these updates is through your [Kanban board](../../work/kanban/kanban-basics.md).  
 
-For additional information, see these resources:  
-
-<div style="float:left;width:240px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:5px;text-align:center;">Plan and track</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Monitor progress and trends](../monitor-progress-trends.md)</li>
-<li style="margin-bottom:2px">[Kanban basics](../../work/kanban/kanban-basics.md)</li>
-<li style="margin-bottom:2px">[Task checklists](../../work/kanban/add-task-checklists.md)</li>
-<li style="margin-bottom:2px">[Features and epics](../../work/kanban/kanban-epics-features-stories.md)</li>
-<li style="margin-bottom:2px">[Add and manage inline tests](../../work/kanban/add-run-update-tests.md)</li>
-<li style="margin-bottom:2px">[Git development](../../work/backlogs/connect-work-items-to-git-dev-ops.md)</li>
-</ul>
-</div>
-<div style="float:left;width:180px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:5px;text-align:center;">Customize</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Add columns](../../work/kanban/add-columns.md)</li>
-<li style="margin-bottom:2px">[WIP limits](../../work/kanban/wip-limits.md)</li>
-<li style="margin-bottom:2px">[Split columns](../../work/kanban/split-columns.md)</li>
-<li style="margin-bottom:2px">[Expedite work](../../work/kanban/expedite-work.md)</li>
-<li style="margin-bottom:2px">[Definition of done](../../work/kanban/definition-of-done.md)</li>
-<li style="margin-bottom:2px">[Customize cards](../../work/customize/customize-cards.md)</li>
-<li style="margin-bottom:2px">[Card reordering](../../work/customize/reorder-cards.md)</li>
-</ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
-<a id="switch-team-context">  </a>
-
-### Switch team project or team focus   
-
-Remember that the CFD chart is based on data collected for a specific team. 
-
-You navigate to your team context from the top navigation bar. The method changes slightly depending on the platform/version you work from and the features you have enabled.     
-
-To switch your team focus, see [Work in the web portal, Switch team project or team focus](../../work/how-to/switch-team-context-work.md). 
-
-Need more information about teams? See [Multiple teams](../../work/scale/multiple-teams.md) and [Manage team assets](../../work/scale/manage-team-assets.md). 
-
-
+  

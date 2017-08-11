@@ -24,31 +24,12 @@ Not all pick lists are defined in the same way. Some lists are defined through t
 >[!NOTE]  
 ><b>Feature availability: </b>You can exercise some features only from an on-premises TFS and are noted as such. 
 
-<div style="float:left;width:300px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">WIT definition</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Customize a pick list](add-modify-field.md#picklist)</li>
-<li style="margin-bottom:2px">[Add rules to a field](add-modify-field.md#add-rules)</li>
-<li style="margin-bottom:2px">[Add a custom field](add-modify-field.md#add-custom-field)</li>
-<li style="margin-bottom:2px">[Change the field label on the form](add-modify-field.md#change-label)</li>
-<li style="margin-bottom:2px">[Add a custom control](add-modify-field.md#custom-control)</li>
-<li style="margin-bottom:2px">[Limit the Assigned To field list](add-modify-field.md#limit-account-names) </li>
 
-</ul>
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |WIT definition  |Command line change  |
+> |-------------|----------|  
+> |- [Customize a pick list](add-modify-field.md#picklist)<br/>- [Add rules to a field](add-modify-field.md#add-rules)<br/>- [Add a custom field](add-modify-field.md#add-custom-field)<br/>- [Change the field label on the form](add-modify-field.md#change-label)<br/>- [Add a custom control](add-modify-field.md#custom-control)<br/>- [Limit the Assigned To field list](add-modify-field.md#limit-account-names) |- [List fields](add-modify-field.md#list-fields)<br/>- [Change a field attribute](add-modify-field.md#change-attribute) (On-premises XML)<br/>- [Delete a field](add-modify-field.md#delete-field) (On-premises XML)<br/>- [Index a field](add-modify-field.md#index-field) (On-premises XML) | 
 
-<div style="float:left;width:330px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Command line change</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[List fields](add-modify-field.md#list-fields)</li>
-<li style="margin-bottom:2px">[Change a field attribute](add-modify-field.md#change-attribute) (On-premises XML)</li>
-<li style="margin-bottom:2px">[Delete a field](add-modify-field.md#delete-field) (On-premises XML)</li>
-<li style="margin-bottom:2px">[Index a field](add-modify-field.md#index-field) (On-premises XML)</li>
- </ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
 
 
 ##Methods by which work item fields get added 

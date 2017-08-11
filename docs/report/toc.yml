@@ -8,7 +8,7 @@
   items:
   - name: Add and manage dashboards
     href: dashboards.md
-  - name: Add charts and widgets to a dashboard
+  - name: Add widgets to a dashboard
     href: add-widget-to-dashboard.md
   - name: Configure work item query-based charts
     href: charts.md
@@ -24,13 +24,29 @@
     href: guidance/team-velocity.md
   - name: "Configure test status, progress, and result charts"
     href: ../manual-test/getting-started/track-test-status.md
+- name: How-to Guides
+  items:
+  - name: Add charts to a dashboard
+    href: add-charts-to-dashboard.md
+  - name: Add Markdown to a dashboard
+    href: add-markdown-to-dashboard.md
+  - name: Set dashboard permissions
+    href: dashboard-permissions.md
+  - name: Switch project or team focus
+    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/report/toc.json
 - name: Reference
   items:
   - name: Widget catalog
     href: widget-catalog.md
 - name: Resources
   items:
+  - name: Scrum
+    href: /vsts/work/scrum/index
+  - name: Kanban
+    href: /vsts/work/kanban/index
   - name: Marketplace widgets
     href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance
+
+
 
  

@@ -115,6 +115,19 @@ Based on the platform or version you use, you can perform the following tasks.
 
  
  
+
+<a id="clients"></a>  
+## Clients that support tracking work items  
+You can add work items from various clients, such as: 
+- From the web portal backlog pages, you can add user stories, backlog items, features, and epics from the [quick add panel](../backlogs/create-your-backlog.md). 
+- From the [Team Explorer add-in to Visual Studio](../../connect/work-team-explorer.md), you can add most types of work items from the Work page.  
+- If you work in [Eclipse](https://eclipse.org/home/newcomers.php), you can create work items using [Team Explorer Everywhere](https://www.visualstudio.com/products/team-explorer-everywhere-vs). 
+- From Test Manager or the web portal, you can can [create test cases that automatically link to a user story or product backlog item](../../manual-test/getting-started/create-test-cases.md).
+- You can create bugs from the web portal, Visual Studio, or when [testing with Test Manager](https://msdn.microsoft.com/library/dd286731.aspx).  
+
+For an overview of all clients that connect to your team project, see [Tools and clients that connect to Team Services and TFS](../../tools.md). 
+
+
 ## Related notes
 
 You access tools provided by Team Services and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access. To learn more, see [Permissions and access for work tracking](../permissions-access-work-tracking.md). 

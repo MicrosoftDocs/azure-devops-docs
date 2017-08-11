@@ -14,18 +14,19 @@ ms.date: 08/03/2017
 
 **Team Services**
 
+>[!NOTE]  
+> **Feature availability:**  VSTS PowerBI requires access to the Analytics Service. The Analytics Service is in preview and only available to select customers of Team Services at this time. If you're a Team Services customer and are interested in working with the preview version of the Analytics service, contact the [Analytics service team](mailto:vsts-analytics-supp@microsoft.com).  
+
 <!---
 
 ## Overview  
 [Power BI integration overview](overview.md)
 -->
 
-## 5-minute Quickstarts  
-TBD 
 
+## How-to Guides
 
-## Step-by-Step Tutorials
-
+- [Assign permissions (Security)](/vsts/report/analytics/analytics-security?toc=/vsts/report/powerbi/toc.json)  
 - [Power BI integration overview](overview.md)  
 - [Connect to Power BI, Content Pack](connect-vso-pbi-vs.md)  
 - [Connect to Power BI, Data Connector](connect-vso-pbi-vs.md)  
@@ -34,25 +35,12 @@ TBD
 - [Create trend charts](create-trend-charts.md)  
 - [Create rollup charts](create-rollup-charts.md)    
  
-
-
- 
-
-## Concepts 
-
-
-## How-to guides  
-
- 
   
 ## Resources 
+  
+- [Retrieve data through OData](../analytics/overview-analytics-service.md)   
 
-   
-- [Analytics service overview](../analytics/overview-analytics-service.md)   
 
- 
-
-The Analytics service is in preview and only available to select customers of Team Services at this time. If you're a Team Services customer and are interested in working with the preview version of the Analytics service, contact the [Analytics service team](mailto:vsts-analytics-supp@microsoft.com).  
  
 
  

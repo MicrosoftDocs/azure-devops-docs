@@ -101,79 +101,14 @@ By linking work items using Related or Dependent link types, you can track work 
 Some work item types have two or more link control tabs. Each tab is designed to support specific types of links and restricts the types of link relationships made. To learn more, see [Manage dependencies, link work items to support traceability](../track/link-work-items-support-traceability.md).  
   
 
-##Related notes
-
-Once you've added several work items, you can use additional features to get notified of changes, create queries, define status and trend charts, plus more. To customize a work item type, see [Customize your work tracking experience](../customize/customize-work.md). 
-
-
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Process guidance</p> 
-- [Choose your process](../guidance/choose-process.md)  
-- [Agile](../guidance/agile-process.md)   
-- [Scrum](../guidance/scrum-process.md)  
-- [CMMI](../guidance/cmmi-process.md)   
-- [Work item field index](../guidance/work-item-field.md)    
-</div>
-
-<div style="float:left;width:240px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Manage</p> 
-- [Create your backlog](create-your-backlog.md)  
-- [Copy or clone a work item](copy-clone-work-items.md#copy-clone)   
-- [Change, move, or delete a work item](remove-delete-work-items.md)   
-- [Pre-populate fields using a template](../productivity/work-item-template.md)   
-- [Integrate with Git](../backlogs/connect-work-items-to-git-dev-ops.md)   
-- [Productivity tips](../productivity/productivity-tips.md)   
-     
-</div>
-
-<div style="float:left;width:180px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Track</p>
-- [Queries (work items)](../track/using-queries.md)    
-- [Charts](../../Report/charts.md)   
-- [Dashboards](../../Report/dashboards.md)   
-- [Share work plans](../track/share-plans.md)   
-- [Follow a work item](../../collaborate/follow-work-items.md)   
-- [Alerts](../track/alerts-and-notifications.md)     
-- [Tag work items](../track/add-tags-to-work-items.md)   
-- [History & audit](../track/history-and-auditing.md)      
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
-
-<a id="clients"></a>  
-###Clients that support tracking work items  
-You can add work items from various clients, such as: 
-- From the web portal backlog pages, you can add user stories, backlog items, features, and epics from the [quick add panel](create-your-backlog.md). 
-- From the [Team Explorer add-in to Visual Studio](../../connect/work-team-explorer.md), you can add most types of work items from the Work page.  
-- If you work in [Eclipse](https://eclipse.org/home/newcomers.php), you can create work items using [Team Explorer Everywhere](https://www.visualstudio.com/products/team-explorer-everywhere-vs). 
-- From Test Manager or the web portal, you can can [create test cases that automatically link to a user story or product backlog item](../../manual-test/getting-started/create-test-cases.md).
-- You can create bugs from the web portal, Visual Studio, or when [testing with Test Manager](https://msdn.microsoft.com/library/dd286731.aspx).  
-
-For an overview of all clients that connect to your team project, see [Tools and clients that connect to Team Services and TFS](../../tools.md). 
-
-###Plan your project
-The quickest way to plan your project is to [create your backlog](../backlogs/create-your-backlog.md). If you have a number of product backlog items, user stories, requirements, or tasks that you want to bulk add, you can use [Excel](../office/bulk-add-modify-work-items-excel.md) or [Project](../office/create-your-backlog-tasks-using-project.md).
-
-If you are planning a product suite and managing a portfolio of projects across several teams, you'll want to read (New) Manage work across the enterprise.
-
-<!---
-###Find or list work items based on select criteria
-Type an ID in the Search work items box and then choose the search icon.  
-
-![Seach work items text box](_img/add-work-items-search-box-id.png)
-
-Use the ![context menu icon](../_img/icons/context_menu.png) context menu to add a filter based on [assignment, status, a keyword, or a work item type](../track/example-queries.md).  
-
-Or, using the ![context menu icon](../_img/icons/context_menu.png) context menu, add filters to find items based on assignment, status, a keyword, or a work item type. For example, enter **A=@Me T=Task** to list all tasks assigned to you. Use the **=**, **:**, and **–** operators to specify the operations: Equals, Contains, and Not, respectively.  
-
-Once you have a results list, you can [modify the filter criteria to refine your search results](../track/using-queries.md).
---> 
-
-###Get the URL for a work item
+## Get the URL for a work item
 From the web portal, simply copy the URL from the web browser address or open the context menu for the work item ID hyperlink and choose the Copy shortcut.  
 
 In Visual Studio, right-click the work item tab to copy the URL. The URL opens the work item in the web portal.  
 
 ![Email a hyperlink for a work item](_img/add-work-items-copy-url-for-a-work-item.png)
+
+## Related notes
+
+Once you've added several work items, you can use additional features to get notified of changes, create queries, define status and trend charts, plus more. To customize a work item type, see [Customize your work tracking experience](../customize/customize-work.md). 
+

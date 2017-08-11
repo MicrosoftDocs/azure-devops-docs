@@ -34,10 +34,14 @@ ms.date: 06/22/2017
 - [Configure test status, progress, and result charts](../manual-test/getting-started/track-test-status.md)  
  
 
-## Concepts 
+## How-to Guides
 
-TBD 
+- [Add charts to a dashboard](add-charts-to-dashboard.md)  
+- [Add Markdown to a dashboard](add-markdown-to-dashboard.md)  
+- [Set dashboard permissions](dashboard-permissions.md)  
 
+## Reference 
+- [Widget catalog](widget-catalog.md)  
  
 ## Resources 
 

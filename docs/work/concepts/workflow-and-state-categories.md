@@ -23,23 +23,12 @@ Workflow states define how a work item progresses upon its creation to closure. 
 
 The natural progressions and regressions of the user story, product backlog item, and requirement WITs are as shown.  
 
-<div style="float:left;width:240px;margin:12px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">User Story (Agile)</p>
-<img src="../guidance/_img/ALM_PT_Agile_WF_UserStory.png" title="User Story workflow states, Agile process " alt="User Story workflow states, Agile process" />
-</div>
+**Workflow states**
 
-<div style="float:left;width:220px;margin:12px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Product backlog item (Scrum)</p>
-<img src="../guidance/_img/ALM_PT_Scrum_WF_PBI.png" title="Product backlog item workflow states, Scrum process template" style="padding-left:20px;" alt="Product backlog item workflow states, Scrum process template" />
-</div>
-
-<div style="float:left;width:220px;margin:12px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Requirement (CMMI)</p>
-<img src="../guidance/_img/ALM_PT_CMMI_WF_Requirement.png" title="Requirement workflow states, CMMI process " style="padding-left:20px;" alt="Requirement workflow states, CMMI process " />
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |User Story, Agile process  |Product backlog item, Scrum process |Requirement, CMMI process  |  
+> |-------------|----------|---------| 
+> |<img src="../guidance/_img/ALM_PT_Agile_WF_UserStory.png" title="User Story workflow states, Agile process " alt="User Story workflow states, Agile process" />|<img src="../guidance/_img/ALM_PT_Scrum_WF_PBI.png" title="Product backlog item workflow states, Scrum process template" style="padding-left:20px;" alt="Product backlog item workflow states, Scrum process template" />|<img src="../guidance/_img/ALM_PT_CMMI_WF_Requirement.png" title="Requirement workflow states, CMMI process " style="padding-left:20px;" alt="Requirement workflow states, CMMI process " /> |
 
 
 <a id="state-categories">  </a>  

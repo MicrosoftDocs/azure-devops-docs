@@ -32,7 +32,7 @@ Start tracking work by adding work items, creating your backlog, or scheduling s
 - [Drive Git development](backlogs/connect-work-items-to-git-dev-ops.md)   
 - [Storyboard your ideas](office/storyboard-your-ideas-using-powerpoint.md)   
 
-## Step-by-step tutorials
+## Step-by-StepTutorials
 
 Whether you use scrum, Kanban, or a combination of Agile methods, you can get started tracking bugs, driving your Git development, and more using the Agile tools available to you. 
 
@@ -135,15 +135,15 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 
 
 ### Configure your project 
-* [Define area paths](/team-services/work/customize/set-area-paths)  
-* [Define iteration paths](/team-services/work/customize/set-iteration-paths-sprints)  
+* [Define area paths](/vsts/work/customize/set-area-paths)  
+* [Define iteration paths](/vsts/work/customize/set-iteration-paths-sprints)  
 
 ### Administrate 
 * [Manage permissions & access](how-to/set-permissions-access-work-tracking.md)  
 * [Change access levels](connect/change-access-levels.md)  
 * [Manage new form rollout](customize/manage-new-form-rollout.md)  
-* [Customize work tracking](/team-services/work/customize/customize-work)  
-* [TFS-Project Server integration](/team-services/work/office/sync-ps-tfs)    
+* [Customize work tracking](/vsts/work/customize/customize-work)  
+* [TFS-Project Server integration](/vsts/work/office/sync-ps-tfs)    
 
 
 -->

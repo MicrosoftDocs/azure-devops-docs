@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/16/2017
+ms.date: 08/10/2017
 ---
 
 # Use templates to add and update work items 
@@ -261,7 +261,7 @@ For example, the following widget contains links to three templates.
 
 <img src="_img/wi-templates-markdown-widget-with-template-links.png" alt="Markdown widget with links to templates" style="border: 1px solid #CCCCCC;" /> 
 
-To learn more about the markdown widget see [Add charts and widgets to a dashboard, Markdown widgets](../../report/add-widget-to-dashboard.md#markdown-widget).  
+To learn more about the markdown widget see [Add charts and widgets to a dashboard, Markdown widgets](../../report/add-markdown-to-dashboard.md).  
 
 
 <a id="apply"> </a>
@@ -366,7 +366,7 @@ You manage templates from the team admin context. All templates are defined for 
 
 <img src="_img/wit-templates-open-team-admin-context.png" alt="Open team admin context" style="border: 1px solid #CCCCCC;" />  
 
-<p>If you're not a team administrator, [get added as one](../scale/manage-team-assets.md#add-team-admin). Only team or project administrators can change team templates. </p>
+<p>If you're not a team administrator, [get added as one](../scale/add-team-administrator.md). Only team or project administrators can change team templates. </p>
 
 <li>
 <p>Click Templates under the Work hub.</p> 

@@ -26,40 +26,12 @@ Most WIT customizations are made to the WIT definition, however, other customiza
 >[!NOTE]  
 ><b>Feature availability: </b>You can exercise some features only from an on-premises TFS and are noted as such. 
 
-<div style="float:left;width:235px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">WIT definition</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Add or modify a field to an existing WIT](#modify-field)</li>
-<li style="margin-bottom:2px">[Add a custom WIT, modify a WIT](#add-wit)</li>
-<li style="margin-bottom:2px">[Change the workflow (states, reasons, transitions)](#modify-workflow)</li>
-<li style="margin-bottom:2px">[Modify the work item form](../reference/change-work-item-form-layout.md) </li>
-</ul>
-</div>
-
-<div style="float:left;width:235px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">ProcessConfiguration definition</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Specify the WIT color](#change-wit-color) </li>
-<li style="margin-bottom:1px">[Specify the WIT icon](#change-wit-color) (TFS 2017.2)</li>
-<li style="margin-bottom:2px">[Specify the workflow state color](#change-wit-color)</li>
-<li style="margin-bottom:2px">[Add or remove a WIT from the backlog or task board](#change-wit-backlog-board)</li>
-<li style="margin-bottom:2px">[Add a custom WIT to a backlog or board](add-wits-to-backlogs-and-boards.md)  </li>
-<li style="margin-bottom:2px">[Add a portfolio backlog ](add-portfolio-backlogs.md)</li>
-</ul>
-</div>
-
-<div style="float:left;width:235px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Command line change</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[List WITs](../reference/witadmin/witadmin-import-export-manage-wits.md)</li>
-<li style="margin-bottom:2px">[Deactivate or disable a WIT](#deactivate-wit)  </li>
-<li style="margin-bottom:2px">[Rename a WIT](#rename-wit) (TFS only)</li>
-<li style="margin-bottom:2px">[Delete a WIT](#delete-wit) (TFS only)</li>
- </ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |WIT definition  |ProcessConfiguration definition  |Command line change| 
+> |-------------|----------|----------|    
+> |- [Add or modify a field to an existing WIT](#modify-field)<br/>- [Add a custom WIT, modify a WIT](#add-wit)<br/>- [Change the workflow (states, reasons, transitions)](#modify-workflow)<br/>- [Modify the work item form](../reference/change-work-item-form-layout.md)  
+|- [Specify the WIT color](#change-wit-color) <br/>- [Specify the WIT icon](#change-wit-color) (TFS 2017.2)<br/>- [Specify the workflow state color](#change-wit-color)<br/>- [Add or remove a WIT from the backlog or task board](#change-wit-backlog-board)<br/>- [Add a custom WIT to a backlog or board](add-wits-to-backlogs-and-boards.md)  <br/>- [Add a portfolio backlog ](add-portfolio-backlogs.md)|- [List WITs](../reference/witadmin/witadmin-import-export-manage-wits.md)<br/>- [Deactivate or disable a WIT](#deactivate-wit)<br/>- [Rename a WIT](#rename-wit) (TFS only)<br/>- [Delete a WIT](#delete-wit) (TFS only) |
+ 
 
 <a id="add-wit">  </a>
 <a id="edit-wit">  </a>
@@ -150,39 +122,10 @@ The following illustrations highlight the most common elements on work item form
 You can customize the form to accomplish the following objectives:  
 
 
-<div style="float:left;width:300px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">New form enabled</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Add or modify a field](../reference/weblayout-xml-elements.md)</li>
-<li style="margin-bottom:2px">[Change a field label](../reference/weblayout-xml-elements.md)</li>
-<li style="margin-bottom:2px">[Rearrange fields](../reference/weblayout-xml-elements.md)</li>
-<li style="margin-bottom:2px">[Add a group or page](../reference/weblayout-xml-elements.md)</li>
-<li style="margin-bottom:2px">[Add a group](../reference/weblayout-xml-elements.md)</li>
-<li style="margin-bottom:2px">[Add a custom control, group, or page](../reference/weblayout-xml-elements.md)</li>
-<li style="margin-bottom:2px">[Add informational text or hyperlinks](../reference/provide-help-text-hyperlinks-web-content-form.md)</li>
-<li style="margin-bottom:2px">[Embed HTML text or display dynamic reports](../reference/provide-help-text-hyperlinks-web-content-form.md)  </li>
-<li style="margin-bottom:2px">[Add a links-control page](../reference/linkscontroloptions-xml-elements.md)</li>
-</ul>
-</div>
-
-<div style="float:left;width:300px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Old form in use</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Add or modify a field](../reference/specify-work-item-form-controls.md)</li>
-<li style="margin-bottom:2px">[Change a field label](../reference/specify-work-item-form-controls.md)</li>
-<li style="margin-bottom:2px">[Rearrange fields](../reference/specify-work-item-form-controls.md)</li>
-<li style="margin-bottom:2px">[Add tabs, columns, or groups](../reference/design-work-item-form.md)</li>
-<li style="margin-bottom:2px">[Add informational text or hyperlinks](../reference/provide-help-text-hyperlinks-web-content-form.md)</li>
-<li style="margin-bottom:2px">[Embed HTML text or display dynamic reports](../reference/provide-help-text-hyperlinks-web-content-form.md)  </li>
-<li style="margin-bottom:2px">[Add a links-control tab](../reference/define-link-controls.md)</li>
-<li style="margin-bottom:2px">[Add an attachment control](../reference/add-the-attachments-control.md)</li>
-</ul>
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
-
+> [!div class="mx-tdBreakAll"]  
+> | New form enabled  |Old form in use  |
+> |-------------|----------|  
+> |- [Add or modify a field](../reference/weblayout-xml-elements.md)<br/>- [Change a field label](../reference/weblayout-xml-elements.md)<br/>- [Rearrange fields](../reference/weblayout-xml-elements.md)<br/>- [Add a group or page](../reference/weblayout-xml-elements.md)<br/>- [Add a group](../reference/weblayout-xml-elements.md)<br/>- [Add a custom control, group, or page](../reference/weblayout-xml-elements.md)<br/>- [Add informational text or hyperlinks](../reference/provide-help-text-hyperlinks-web-content-form.md)<br/>- [Embed HTML text or display dynamic reports](../reference/provide-help-text-hyperlinks-web-content-form.md)  <br/>- [Add a links-control page](../reference/linkscontroloptions-xml-elements.md) |- [Add or modify a field](../reference/specify-work-item-form-controls.md)<br/>- [Change a field label](../reference/specify-work-item-form-controls.md)<br/>- [Rearrange fields](../reference/specify-work-item-form-controls.md)<br/>- [Add tabs, columns, or groups](../reference/design-work-item-form.md)<br/>- [Add informational text or hyperlinks](../reference/provide-help-text-hyperlinks-web-content-form.md)<br/>- [Embed HTML text or display dynamic reports](../reference/provide-help-text-hyperlinks-web-content-form.md)  <br/>- [Add a links-control tab](../reference/define-link-controls.md)<br/>- [Add an attachment control](../reference/add-the-attachments-control.md) |
 
 
 <a id="change-wit-backlog-board">  </a>

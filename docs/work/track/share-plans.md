@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/10/2017  
+ms.date: 08/10/2017  
 ---
 
 # Share work plans and progress 
@@ -78,52 +78,44 @@ The rich text formatting toolbar appears above each text box that can be formatt
 
 The specific set of formatting features differs depending on the client you use. In all clients, you can bold, italicize, and underline text. You can also add and remove hyperlinks, format text as ordered or unordered lists, and add images. 
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
+### Team Services, TFS 2017 
 
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#attach-files">Rich text fields</li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-explorer-rich-text">Team Explorer</a></li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#tfs-portal-rich-text">TFS 2015, TFS 2013, TEE</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-services-rich-text">Team Services, TFS 2017</a></li>
-</ul>
- 
-<div id="rich-text" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
+**Rich text formatting toolbar - Team Services &  TFS 2017 web portal** 
 
-<div id="team-services-rich-text" class="tab-pane fade in active">
-<p>**Rich text formatting toolbar - Team Services &  TFS 2017 web portal** </p>
 <img src="_img/rich-text-ui-team-services.png" alt="Rich text tool bar - Team Services" style="border: 1px solid #CCCCCC;" />
-<br/>
-<p>In Team Services, you can use the ![Remove format](../_img/icons/remove-formatting-icon.png) icon or CTRL+Spacebar to remove formatting from highlighted text.</p>
 
-<blockquote style="font-size: 13px"><b>Note: </b>The History field is no longer a rich-text field. To annotate the work item history, add to the Description or Discussion fields. </blockquote> 
+In Team Services, you can use the ![Remove format](../_img/icons/remove-formatting-icon.png) icon or CTRL+Spacebar to remove formatting from highlighted text.
 
-</div>
+> [!NOTE]  
+> The History field is no longer a rich-text field. To annotate the work item history, add to the Description or Discussion fields. 
 
-<div id="tfs-portal-rich-text" class="tab-pane fade">
-<p>**Rich text formatting toolbar - TFS web portal and Team Explorer Everywhere** </p> 
+### TFS 2015, TFS 2013, TEE
+
+<a id="tfs-portal-rich-text" />
+
+**Rich text formatting toolbar - TFS web portal and Team Explorer Everywhere** 
+
 <img src="_img/rich-text-ui-web-portal.png" alt="Rich text tool bar - web portal" style="border: 1px solid #CCCCCC;" />
-</div>
 
 
-<div id="team-explorer-rich-text" class="tab-pane fade">
-<p>**Rich text formatting toolbar - Visual Studio**  </p>
+### Visual Studio, Team Explorer 
+<a id="team-explorer-rich-text" />
+
+**Rich text formatting toolbar - Visual Studio** 
+
 <img src="_img/rich-text-ui-te.png" alt="Rich text tool bar - Team Explorer" style="border: 1px solid #CCCCCC;" />
-<p>From Team Explorer you can choose the font, font size, and text and background colors.</p>
 
-<p>If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te).</p>
+From Team Explorer you can choose the font, font size, and text and background colors.
 
-</div>
+If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te).
 
-</div>
-</div>
-
-
-<p>You can also use the following shortcut keys to format your text:</p>
+You can also use the following shortcut keys to format your text: 
 - **Bold**: Ctrl+B  
 - *Italic*: Ctrl+I  
 - <u>Underscore</u>: Ctrl+U 
-<br/>   
-<p>You can copy and paste HTML text or an image from another application directly into the text box using Ctrl+C and Ctrl+V shortcuts.</p>
+
+You can copy and paste HTML text or an image from another application directly into the text box using Ctrl+C and Ctrl+V shortcuts.
+
 
 
 
@@ -142,8 +134,9 @@ Again, your link options will differ depending on the client you use. For specif
 
 ## Attach files
 
-<p>To help track a work item, use the ![Attachment tab icon](../backlogs/_img/icon-attachments-tab-wi.png) or **Attachments** tab to attach a file with supplemental information. </p> 
-<p>For example, you can attach a screen image that illustrates a problem, a line of code in a text file, a log, an e-mail thread, or a product feature's specification.</p>
+To help track a work item, use the ![Attachment tab icon](../backlogs/_img/icon-attachments-tab-wi.png) or **Attachments** tab to attach a file with supplemental information. 
+
+For example, you can attach a screen image that illustrates a problem, a line of code in a text file, a log, an e-mail thread, or a product feature's specification.
 
 <div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
 
@@ -157,54 +150,46 @@ Again, your link options will differ depending on the client you use. For specif
 <div id="attach-files-example" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
 
 <div id="team-services" class="tab-pane fade in active">
-<p>**Attachment control toolbar - Team Services &  TFS 2017 web portal**</p>
+
+**Attachment control toolbar - Team Services &  TFS 2017 web portal** 
+
 <img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal Team Services" style="border: 1px solid #CCCCCC;" />  
 
-<blockquote style="font-size: 13px">
-![tip icon](../_img/icons/tip-icon.png)<br/>
-From Team Services, you can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, from Team Services and TFS 2017.1 and later versions, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../reference/markdown-guidance.md#attach). </blockquote> 
+> [!TIP]    
+> From Team Services, you can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, from Team Services and TFS 2017.1 and later versions, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../reference/markdown-guidance.md#attach).  
 
-<p>You can edit, open, save, or delete an attachment by clicking an attachment and opening it's ![actions icon](../_img/icons/actions-icon.png) actions menu. </p>
+You can edit, open, save, or delete an attachment by clicking an attachment and opening it's ![actions icon](../_img/icons/actions-icon.png) actions menu. 
 
 <img src="_img/share-plans-attachment-menu-options.png" alt="Attachment menu options,  Team Services" style="border: 1px solid #CCCCCC;" />
 
-<blockquote>
-![note icon](../_img/icons/note-icon.png)<br/>
-For Team Services, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
-</blockquote> 
+> [!NOTE]  
+> For Team Services, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
 
-</div>
 
-<div id="tfs-portal" class="tab-pane fade">
+<a id="tfs-portal" />
 
-<p>**Attachment control toolbar - TFS 2015 web portal and Team Explorer Everywhere** </p>
+**Attachment control toolbar - TFS 2015 web portal and Team Explorer Everywhere** 
 
 <img src="_img/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises TFS), and Eclipse" style="border: 1px solid #CCCCCC;" />  
 
-<p>Click the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment. Click an item and then click ![open icon](../_img/icons/open-icon.png) to open the attachment or ![download icon](../_img/icons/download-icon.png) to save a copy.  </p>  
-
-</div>
+Click the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment. Click an item and then click ![open icon](../_img/icons/open-icon.png) to open the attachment or ![download icon](../_img/icons/download-icon.png) to save a copy.  
 
 
-<div id="team-explorer" class="tab-pane fade">
 
-<p>**Attachment control toolbar - Visual Studio Team Explorer** </p>
+<a id="team-explorer" />
+
+**Attachment control toolbar - Visual Studio Team Explorer** 
+
 <img src="_img/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises TFS), Visual Studio and Eclipse" style="border: 1px solid #CCCCCC;" />
 
-<blockquote style="font-size: 13px">
-![tip icon](../_img/icons/tip-icon.png)<br/>
-From Visual Studio, you can drag and drop files into the attachment area. 
-</blockquote> 
+> [!TIP]    
+> From Visual Studio, you can drag and drop files into the attachment area. 
 
-<p>Click the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment.</p> 
-<p>Click one or more items and then right-click to open the menu options to download or delete several attachments.</p> 
+Click the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment.
+
+Click one or more items and then right-click to open the menu options to download or delete several attachments. 
+
 <img src="_img/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 1px solid #CCCCCC;" />
-
-</div>
-
-</div>
-</div>
-
 
 By default, the size of work item attachments is limited to 4 MB. For on-premises deployments, you can use the TFS web service to [increase the size of files you attach up to 2GB](https://msdn.microsoft.com/library/ms400780.aspx).
 
@@ -220,89 +205,41 @@ Storyboarding your ideas and goals increases visual understanding. With [PowerPo
 
 By linking your storyboard to a work item, you provide your team access to the shared file where they can add their comments. From the ![Links tab icon](../backlogs/_img/icon-links-tab-wi.png),  **Links**, or a **Storyboards** tab, you can link storyboards that you created using PowerPoint Storyboarding or other application. When you make changes to a linked storyboard, the work item continues to link to the file with the latest changes.
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
 
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#attach-files">Start storyboarding</li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-explorer-storyboard">Team Explorer</a></li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#tfs-portal-storyboard">TFS 2015, TFS 2013, TEE</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-services-storyboard">Team Services, TFS 2017 </a></li>
-</ul>
- 
-<div id="attach-files-example" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
+<a id="team-services-storyboard" />
 
-<div id="team-services-storyboard" class="tab-pane fade in active">
-<p>**Start storyboarding - Team Services & TFS 2017 web portal**</p>
-<p>You can open Storyboarding with PowerPoint from the ![actions icon](../_img/icons/actions-icon.png) actions menu within a work item form. </p>
+**Start storyboarding - Team Services & TFS 2017 web portal**
+
+You can open Storyboarding with PowerPoint from the ![actions icon](../_img/icons/actions-icon.png) actions menu within a work item form. 
+
 <img src="_img/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal Team Services" style="border: 1px solid #CCCCCC;" />  
 
-<p>To link to an existing storyboard, click the ![Links page icon](../_img/icons/icon-links-tab-wi.png) Links tab and add a storyboard link.  </p>
-</div>
+To link to an existing storyboard, click the ![Links page icon](../_img/icons/icon-links-tab-wi.png) Links tab and add a storyboard link.  
 
-<div id="tfs-portal-storyboard" class="tab-pane fade">
-<p>**Storyboards tab control - TFS 2015 web portal and Team Explorer Everywhere** </p>
-<p>From the **Storyboards** tab, click Start Storyboarding to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.</p>  
+
+<a id="tfs-portal-storyboard" />
+
+**Storyboards tab control - TFS 2015 web portal and Team Explorer Everywhere** 
+
+From the **Storyboards** tab, click Start Storyboarding to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
 
 <img src="_img/share-plans-storyboard-tfs-web-tab.png" alt="Storyboard links control" style="border: 1px solid #CCCCCC;" />  
 
-</div>
 
+<a id="team-explorer-storyboard" />
 
-<div id="team-explorer-storyboard" class="tab-pane fade">
+**Storyboards tab control - Visual Studio Team Explorer** 
 
-<p>**Storyboards tab control - Visual Studio Team Explorer** </p>
 <img src="_img/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 1px solid #CCCCCC;" />
+
 To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoint](../office/storyboard-your-ideas-using-powerpoint.md).  
-</div>
-
-</div>
-</div>
 
 
 
-
-
-
-
-##Related notes  
+## Related notes  
 
 As you can see, there are many ways to share information using work items alone. See these additional tools and features to support planning, tracking, and sharing information with your team.   
-<div style="float:left;width:180px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Plan</p>
-- [Create your backlog](../backlogs/create-your-backlog.md)   
-- [Sprint planning](../scrum/sprint-planning.md)   
-- [Remove/delete work items](../backlogs/remove-delete-work-items.md)   
-</div>
 
-<div style="float:left;width:220px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Track</p>
-- [Define a query](using-queries.md)   
-- [Add a link to work items](../backlogs/add-link.md)   
-- [Follow a work item or pull request](../../collaborate/follow-work-items.md)   
-- [Tag work items](add-tags-to-work-items.md)   
-- [History & audit](history-and-auditing.md)   
-- [Link to Git objects](../backlogs/connect-work-items-to-git-dev-ops.md)   
-- [Dashboards](../../report/dashboards.md)      
-</div>
-
-<div style="float:left;width:120px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Office clients</p>
-- [Excel](../office/bulk-add-modify-work-items-excel.md)    
-- [Project ](https://msdn.microsoft.com/library/ms181675.aspx)     
-- [Storyboarding](../office/storyboard-your-ideas-using-powerpoint.md)        
-</div>
-
-<div style="float:left;width:170px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Other</p>
-- [Work from the account hub](../../connect/account-home-pages.md)  
-- [Productivity tips](../productivity/productivity-tips.md)     
-- [Markdown widget](../../report/widget-catalog.md#markdown-widget)   
-- [Practices that scale](../scale/practices-that-scale.md)       
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
 
 ### SharePoint project portal (on-premises TFS)  
 

@@ -76,19 +76,19 @@ When you link work items, you select a link type. In general, use the following 
 
 0. Select the link type, enter a work item ID, and then click OK. 
 
-	For example, here we use the Related link type to link three items to the bug with ID of *46*. The image illustrates the target work item is the bug. (Click &#x25BC; for the <a data-toggle="collapse" href="#tfs">**TFS web portal** &#x25BC;</a> and the <a data-toggle="collapse" href="#vs">**Visual Studio** &#x25BC;</a> versions. 
-	<div class="collapse" id="tfs">
-	<img src="_img/bulk-modify-link-new-ts.png" alt="TFS web portal, Add link dialog " style="border: 1px solid #CCCCCC;" />  		
-	</div>	
-	<div class="collapse" id="vs">
-	<img src="_img/add-link-related-existing-item-vs.png" alt="Visual Studio, Add link dialog" style="border: 1px solid #CCCCCC;" />  		
-	</div>
+	For example, here we use the Related link type to link three items to the bug with ID of *46*. The images illustrate the target work item is the bug.  
 
-	<img src="_img/add-link-related-specify-id.png" alt="Add link dialog" style="border: 1px solid #CCCCCC;" />
+	**Web Portal (Browser)** 
+	<img src="_img/bulk-modify-link-new-ts.png" alt="TFS web portal, Add link dialog " style="border: 1px solid #CCCCCC;" />  		
+		
+	**Visual Studio**
+	<img src="_img/add-link-related-existing-item-vs.png" alt="Visual Studio, Add link dialog" style="border: 1px solid #CCCCCC;" />  		
 
 	To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different team project, you can click the &hellip; context menu or Browse button (Visual Studio) to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
 
-	(Team Services only) To view the work items selected for linking, you can click the ![info icon](../_img/icons/info-icon.png). 
+0.  (Team Services only) To view the work items selected for linking, you can click the ![info icon](../_img/icons/info-icon.png). 
+
+	<img src="_img/add-link-related-specify-id.png" alt="Add link dialog" style="border: 1px solid #CCCCCC;" />
 
 	<img src="_img/add-link-info-icon-clicked.png" alt="Add link dialog, show the work items selected for linking" style="border: 1px solid #CCCCCC;" /> 
 

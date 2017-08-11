@@ -54,41 +54,23 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	>[!NOTE]  
 	>Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../scale/add-team-administrator.md).
 	
-	<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-	<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-	<li style="float:left;" data-toggle="collapse" data-target="#bug-settings">Choose where bugs appear</li>
-	<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#bug-settings-tfs-2013">TFS 2015 & 2013.4</a></li>
-	<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#bug-settings-tfs-2015">TFS 2017 & 2015.1</a></li>
-	<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#bug-settings-team-services">Team Services</a></li>
-	</ul>
+	**Team Services**  
 	
-	<div id="bug-settings" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-	
-	<div id="bug-settings-tfs-2013" class="tab-pane fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-	
-	<img src="_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 1px solid #CCCCCC;" />
-	
-	</div>
-
-	<div id="bug-settings-tfs-2015" class="tab-pane fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-	
-	<img src="_img/show-bugs-settings-2017.png" alt="TFS, web portal, team settings dialog, Working with bugs tab" style="border: 1px solid #CCCCCC;" />
-	
-	</div>
-	
-	<div id="bug-settings-team-services" class="tab-pane fade in active">  
 	<img src="_img/show-bugs-settings-ts.png" alt="Team Services, web portal, team settings dialog, Working with bugs tab" style="border: 1px solid #CCCCCC;" />
 	
-	</div>
-	</div>
-	</div>
+	**TFS 2017**   
+	<img src="_img/show-bugs-settings-2017.png" alt="TFS, web portal, team settings dialog, Working with bugs tab" style="border: 1px solid #CCCCCC;" />
+	
+	**TFS 2015, TFS 2013**  
+	
+	<img src="_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 1px solid #CCCCCC;" />
  	  
 3. To see the changes, open or refresh the team's [backlog](../backlogs/create-your-backlog.md), [sprint backlog pages](../scrum/sprint-planning.md), or [Kanban board](../kanban/kanban-basics.md).  
 
->[!TIP]  
->If, after refreshing a backlog or board, and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](../troubleshoot/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or task boards.  
+> [!TIP]  
+> If, after refreshing a backlog or board, and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](../troubleshoot/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or task boards.  
 
-##Related notes
+## Related notes
 
 Bugs are a common item that teams want to track, and choose how they track it. See [Manage bugs](../backlogs/manage-bugs.md) for more guidance. 
 

@@ -17,17 +17,19 @@ ms.date: 08/04/2017
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 
+<!---
 ## Overview  
 - [OData & the Analytics Service](overview-analytics-service.md)
-
+-->
 
 ## 5-minute Quickstarts  
 - [Client authentication ](client-authentication-options.md)  
 - [Access data through Excel](access-analytics-excel.md)  
 - [Access data through Power BI desktop](access-analytics-power-bi.md)  
 
-## Step-by-Step Tutorials
+## How-to Guides
 
+- [Assign permissions (Security)](/vsts/report/analytics/analytics-security?toc=/vsts/report/analytics/toc.json)  
 - [WIT analytics](wit-analytics.md)
 - [Analytic recipes](analytics-recipes.md)  
 - [Aggregate data](aggregated-data-analytics.md)  
@@ -47,12 +49,5 @@ ms.date: 08/04/2017
  
 ## Resources 
 
+- [name: Power BI integration overview](../powerbi/overview.md)  
 - [OData Version 4.0 Part 2: URL Conventions Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)
-
- 
-<!---
-The Analytics service is in preview and only available to select customers of Team Services at this time. If you're a Team Services customer and are interested in working with the preview version of the Analytics service, contact the [Analytics service team](mailto:vsts-analytics-supp@microsoft.com).  
- 
--->
-
- 

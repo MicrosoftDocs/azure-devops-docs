@@ -234,4 +234,4 @@ The schema definition for process templates uses a mix of camel-case and all cap
 -  [Choose a process or process template](../../guidance/choose-process.md)   
 -  [Customize a process template](customize-process.md)  
 -  [Customize your work tracking experience](../../customize/customize-work.md)
--  [Testing overview](/team-services/test/index)
+-  [Testing overview](/vsts/test/index)

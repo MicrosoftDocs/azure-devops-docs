@@ -25,7 +25,7 @@ With queries you can ...
 - [Begin your query with the search box](search-box-queries.md)
    
 
-## Step-by-step Tutorials
+## Step-by-StepTutorials
 
 - Add & run queries
 - Triage work items

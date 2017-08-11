@@ -489,16 +489,9 @@ Attached image files render directly into your comment.
 Once you save a new comment or update a comment with an attachment, reviewers see the attached image(s) in the comment and can select links to download attached files.
 
 
-
 ## Related notes  
+- [READMEs & Wikis](/vsts/collaborate/index) 
 
-
-- [Project vision page or Welcome pages](../collaborate/project-vision-status.md) 
-- [Readme files](../git/create-a-readme.md) 
-- [Pull requests](../git/pull-requests.md) 
-- [Markdown widget](../report/add-widget-to-dashboard.md#markdown-widget)  
-- [Dashboards](../report/dashboards.md)
-- [Widget catalog](../report/widget-catalog.md) 
 
   
   

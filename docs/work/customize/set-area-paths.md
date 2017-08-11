@@ -7,8 +7,9 @@ ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 06/01/2016
+ms.date: 08/10/2017
 ---
+
 
 
 
@@ -44,159 +45,103 @@ If you want to add area paths to support teams, you can do that when you [add te
 
 Certain [restrictions](#name-restrictions) apply on names of areas.  
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
 
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
+<a id="admin-intro-team-services" /> 
 
-<li style="float:left;" data-toggle="collapse" data-target="#admin-intro">Open the admin context, project-level</li>
+**Team Services**
 
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:50px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#admin-intro-tfs-2015">TFS 2015, TFS 2013</a></li>
+1. From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.   
 
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:50px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#admin-intro-tfs-2017">TFS 2017</a></li>
+	<img src="_img/modify-areas-its-open-admin-context-ts.png" alt="Web portal, Team Services, Open Admin context, team project level" style="border: 1px solid #CCCCCC;" />  
 
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#admin-intro-tfs-2017-1">TFS 2017.1</a></li>
+	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings.  
 
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#admin-intro-team-services">Team Services</a></li>
+	<img src="_img/modify-areas-its-choose-project-settings-admin-context-ts.png" alt="Default Collection Overview, Projects reference processes" style="border: 1px solid #CCCCCC;" /> 
 
-</ul>
-
-<div id="admin-intro" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-
-<div id="admin-intro-team-services" class="tab-pane fade in active"> 
-<ol>
-<li>
-<p>From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.  </p>
-
-<img src="_img/modify-areas-its-open-admin-context-ts.png" alt="Web portal, Team Services, Open Admin context, team project level" style="border: 1px solid #CCCCCC;" />  
-
-<p>If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings. </p>
-
-<img src="_img/modify-areas-its-choose-project-settings-admin-context-ts.png" alt="Default Collection Overview, Projects reference processes" style="border: 1px solid #CCCCCC;" /> 
-</li>
-<li>
-<p>Open the **Work** hub.  </p>
-</li>
-</ol>
-</div>
-
-<div id="admin-intro-tfs-2017-1" class="tab-pane fade"> 
-<ol>
-<li>
-<p>From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.  </p>
-
-<img src="_img/modify-areas-its-open-admin-context-tfs-2017-1.png" alt="Web portal, TFS 2017.1, Open Admin context, team project level" style="border: 1px solid #CCCCCC;" />  
-
-<p>If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings. </p>
-
-<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017-1.png" alt="Web portal, TFS 2017.1, Choose the gear icon to Open Project settings" style="border: 1px solid #CCCCCC;" /> 
-</li>
-<li>
-<p>Open the **Work** hub.  </p>
-</li>
-</ol>
-
-</div>
-
-<div id="admin-intro-tfs-2017" class="tab-pane fade"> 
-<ol>
-<li>
-<p>From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.  </p>
-
-<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017.png" alt="Web portal, TFS 2017, Open Admin context, team project level" style="border: 1px solid #CCCCCC;" />  
-
-<p>If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings. </p>
-
-<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017_v0.png" alt="Web portal, TFS 2017, Choose the gear icon to Open Project settings" style="border: 1px solid #CCCCCC;" /> 
-</li>
-<li>
-<p>Open the **Work** hub.  </p>
-</li>
-</ol>
-
-  
-</div>
-
-
-<div id="admin-intro-tfs-2015" class="tab-pane fade">
+2. Open the **Work** hub.   
  
-<ol>
-<li>
-<p>From the web portal user context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.  </p>
+**TFS 2017.1**
+<a id="admin-intro-tfs-2017-1" /> 
 
-<img src="../_img/icons/ALM_OpenAdminContext.png" alt="Open the project administration page" style="border: 1px solid #CCCCCC;" /> 
-</li>
-<li>
-<p>Open the **Work** hub.  </p>
-</li>
-</ol>
+1. From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.   
 
-</div>
+	<img src="_img/modify-areas-its-open-admin-context-tfs-2017-1.png" alt="Web portal, TFS 2017.1, Open Admin context, team project level" style="border: 1px solid #CCCCCC;" />  
 
+	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings.  
 
-</div>
-</div>
+	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017-1.png" alt="Web portal, TFS 2017.1, Choose the gear icon to Open Project settings" style="border: 1px solid #CCCCCC;" /> 
 
+2. Open the **Work** hub.  
+ 
+**TFS 2017**
+<a id="admin-intro-tfs-2017" /> 
+
+1. From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.   
+
+	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017.png" alt="Web portal, TFS 2017, Open Admin context, team project level" style="border: 1px solid #CCCCCC;" />  
+
+	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings. 
+
+	<img src="_img/modify-areas-its-choose-project-settings-admin-context-tfs-2017_v0.png" alt="Web portal, TFS 2017, Choose the gear icon to Open Project settings" style="border: 1px solid #CCCCCC;" /> 
+
+2. Open the **Work** hub.   
+ 
+
+**TFS 2015**
+<a id="admin-intro-tfs-2015" />
+ 
+1. From the web portal user context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.   
+
+	<img src="../_img/icons/ALM_OpenAdminContext.png" alt="Open the project administration page" style="border: 1px solid #CCCCCC;" /> 
+
+2. Open the **Work** hub.   
 
 ## Add an area 
 
-
-
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;"> 
-
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-
-<li style="float:left;" data-toggle="collapse" data-target="#area-paths">Areas </li>
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs-2015-area-paths">TFS 2015, TFS 2013</a></li>
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs-15-area-paths">TFS 2017</a></li>
-
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#team-services-area-paths">Team Services</a></li>
-</ul>
- 
-<div id="area-paths" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-
-<div id="team-services-area-paths" class="tab-pane fade in active">
-
 <a id="add-areas-team-services">   </a>
-<h3>Add area paths (Team Services) </h3>
-<ol><li><p>Open the Work, Areas page for the team project context.</p>
-<p>If you haven't added any areas or teams, you'll see that only one area is defined. </p> 
-<img src="_img/modify-areas-its-areas-ts.png" alt="Areas, defaults defined for team project" style="border: 1px solid #CCCCCC;" />  
-</li>
-<li><p>Add a new child node to the area you have selected.</p>
-<img src="_img/m-areas-add-area-path.png" alt="TFS 15, Areas, Create a new area node" style="border: 1px solid #CCCCCC;" /> 
-</li>
-</ol>
-</div>
+
+### Add area paths (Team Services) < 
+
+1. Open the Work, Areas page for the team project context.  
+
+	If you haven't added any areas or teams, you'll see that only one area is defined.   
+
+	<img src="_img/modify-areas-its-areas-ts.png" alt="Areas, defaults defined for team project" style="border: 1px solid #CCCCCC;" />  
+
+2.  Add a new child node to the area you have selected. 
+
+	<img src="_img/m-areas-add-area-path.png" alt="TFS 15, Areas, Create a new area node" style="border: 1px solid #CCCCCC;" /> 
+
+<a id="tfs-15-area-paths" />
+
+### Add area paths (TFS 2017)  
+
+1. Open the Work, Areas page for the team project context. 
+
+	If you haven't added any areas or teams, you'll see that only one area is defined.   
+
+	<img src="_img/modify-areas-its-areas-ts.png" alt="Areas, defaults defined for team project" style="border: 1px solid #CCCCCC;" />  
+
+2. Add a new child node to the area you have selected.  
+
+	<img src="_img/m-areas-add-area-path.png" alt="TFS 15, Areas, Create a new area node" style="border: 1px solid #CCCCCC;" /> 
+ 
 
 
-<div class="tab-pane fade" id="tfs-15-area-paths" >
-<h3>Add area paths (TFS 2017) </h3> 
-<ol><li><p>Open the Work, Areas page for the team project context.</p>
-<p>If you haven't added any areas or teams, you'll see that only one area is defined. </p> 
-<img src="_img/modify-areas-its-areas-ts.png" alt="Areas, defaults defined for team project" style="border: 1px solid #CCCCCC;" />  
-</li>
-<li><p>Add a new child node to the area you have selected.</p>
-<img src="_img/m-areas-add-area-path.png" alt="TFS 15, Areas, Create a new area node" style="border: 1px solid #CCCCCC;" /> 
-</li>
-</ol>
-</div>
+<a id="tfs-2015-area-paths" />
 
-<div class="tab-pane fade" id="tfs-2015-area-paths" >
-<h3>Add area paths (TFS 2015)</h3>
-<ol><li><p>Open the **Areas** tab.</p>
-<img src="_img/ALM_CW_OpenAreas.png" alt="Open the areas page defined for team project" style="border: 1px solid #CCCCCC;" />  
-<p>From the areas page, you can set the default area path used to filter the backlog.  The default area path is also used when new work items a user creates new work items.</p>
-</li>
-<li><p>Add a new child node to the area you have selected.</p>
-<img src="_img/ALM_CW_CreateArea.png" alt="Create a new area node" style="border: 1px solid #CCCCCC;" />
-</li>
-</ol>
-</div>
+### Add area paths (TFS 2015) 
 
-</div>
-</div>
+1. Open the **Areas** tab.  
+
+	<img src="_img/ALM_CW_OpenAreas.png" alt="Open the areas page defined for team project" style="border: 1px solid #CCCCCC;" />  
+
+	From the areas page, you can set the default area path used to filter the backlog.  The default area path is also used when new work items a user creates new work items. 
+
+2. Add a new child node to the area you have selected.</p>
+
+	<img src="_img/ALM_CW_CreateArea.png" alt="Create a new area node" style="border: 1px solid #CCCCCC;" />
+ 
 
  
 <a name="rename-delete"></a>

@@ -20,7 +20,7 @@ ms.date: 06/14/2017
 ## Create light-weight charts  
 To get started, you can open a shared query and create a chart based on your tracking interests. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.   
 
-[![Edit query](_img/gs-chart-query.png)](../work/track/using-queries.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-widget-to-dashboard.md#add-charts)  
+[![Edit query](_img/gs-chart-query.png)](../work/track/using-queries.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)  
 
 The available queries differ based on the process&mdash;[Agile](../work/guidance/agile-process.md), [Scrum](../work/guidance/scrum-process.md), or [CMMI](../work/guidance/cmmi-process.md)&mdash;selected to create your team project.  
 
@@ -63,7 +63,7 @@ Each sprint provides access to two charts. The first [tracks capacity](../work/s
 
 The steps to creating charts that track test progress and results are similar to those for tracking work. The starting point, however, begins with the test plan rather than a query. For example, you can find out how many test cases are ready to run, or how many tests are passing and failing in each test suite. 
 
-[![Edit query](_img/gs-chart-test-type.png)](../manual-test/getting-started/track-test-status.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-widget-to-dashboard.md#add-charts)
+[![Edit query](_img/gs-chart-test-type.png)](../manual-test/getting-started/track-test-status.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)
 
 
 And, just like work item query-based charts, you can add these charts to a dashboard.  
@@ -85,6 +85,39 @@ With the code tile widgets, you can monitor the activity occuring within a repo 
 
 
 
+
+### System-generated work tracking charts 
+
+There are a number of system-generated charts that you can access from the web portal, but can't add to a dashboard. However, you may find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data which you can add to the dashboard. These include: 
+
+- [Team velocity](./guidance/team-velocity.md)
+- [Sprint burndown chart](../work/scrum/sprint-burndown.md) (see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget))
+- [Cumulative flow](guidance/cumulative-flow.md) (see [CFD widget](widget-catalog.md#cfd-widget))
+
+
+
+### Marketplace widgets
+
+You may find additional widgets of interest from the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
+
+If your account or project collection administrator disables a marketplace widget, you'll see the following image: 
+
+<img src="_img/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" style="border: 1px solid #CCCCCC;" />   
+
+To regain access to it, request your admin to reinstate or reinstall the widget. 
+
+### Widget size
+
+Some widgets are pre-sized and can't be changed. Others are configurable through their configuration dialog. 
+
+For example, the Chart for work items widget allows you to select an area size ranging from 2 x 2  to 4 x 4 (tiles).  
+
+
+<img src="_img/add-widget-size.png" alt="Change widget size" style="border: 1px solid #CCCCCC;" />   
+
+### Extensibility 
+
+Using the REST API service, you can [create a dashboard widget](../extend/develop/add-dashboard-widget.md). 
 
 ## Related notes   
 

@@ -4,13 +4,12 @@
   items:
   - name: Power BI integration overview
     href: overview.md
-- name: Quickstarts
-- name: Tutorials
+- name: How-to Guides
   items:
+  - name: Assign permissions (Security)
+    href: /vsts/report/analytics/analytics-security?toc=/vsts/report/powerbi/toc.json
   - name: Power BI - Content Pack
     items:
-    - name: Assign permissions (Security)
-      href: ../analytics/analytics-security.md
     - name: Connect
       href: connect-vso-pbi-vs.md
     - name: Create dashboards
@@ -28,23 +27,21 @@
 - name: Samples
   items:
   - name: Power BI example reports
-    href: data-connector-examples.md
-- name: Concepts  
+    href: data-connector-examples.md 
 - name: Reference
   items:
   - name: Power BI available data
     href: vso-pbi-whats-available-vs.md
   - name: Power BI
-    href: ../analytics/access-analytics-power-bi.md
+    href: /vsts/report/analytics/access-analytics-power-bi?toc=/vsts/report/powerbi/toc.json
   - name: Power BI desktop and OData aggregations
-    href: ../analytics/using-odata-aggregations-with-power-bi-desktop.md
+    href: /vsts/report/analytics/using-odata-aggregations-with-power-bi-desktop?toc=/vsts/report/powerbi/toc.json
   - name: Power BI templates (TBD)
   - name: Add custom measures (TBD)
   - name: Merge data from multiple sources (TBD)
   - name: "Share reports, publish to PowerBI.com"
-    href: ../analytics/publishing-power-bi-desktop-to-power-bi.md
-- name: Troubleshooting
+    href: /vsts/report/analytics/publishing-power-bi-desktop-to-power-bi?toc=/vsts/report/powerbi/toc.json
 - name: Resources
   items:
-  - name: Retrieve data through OData (Team Services)
+  - name: Retrieve data through OData 
     href: ../analytics/overview-analytics-service.md

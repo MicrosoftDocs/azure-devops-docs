@@ -64,7 +64,8 @@ You can change the refresh frequency of the data warehouse or other process cont
 
 3. In the **newValue** box, type the new number in seconds, and then click **Invoke**.  
 
-	<blockquote style="font-size: 13px"><b>Important: </b>If you reduce the interval to less than the default of two hours (7200 seconds), processing of the data warehouse will consume server resources more frequently. Depending on the volume of data that your deployment has to process, you may want to reduce the interval to one hour (3600 seconds) or increase it to more than two hours. </blockquote>  
+	> [!IMPORTANT]  
+	> If you reduce the interval to less than the default of two hours (7200 seconds), processing of the data warehouse will consume server resources more frequently. Depending on the volume of data that your deployment has to process, you may want to reduce the interval to one hour (3600 seconds) or increase it to more than two hours.  
  
   A confirmation Web page appears and indicates that the **IncrementalProcessIntervalSeconds** setting has been changed.
 

@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2016
+ms.date: 08/11/2017
 ---
 
 #Manually process the TFS data warehouse and analysis services cube
@@ -21,7 +21,8 @@ You use the Warehouse Control Web Service to process the warehouse or cube or pe
 
  ![Warehouse Control Web Services page](_img/web-services.png)
 
-<blockquote style="font-size: 13px"><b>Note: </b>Do not use SQL Server Management Studio (SSMS) to manually process the cube. Processing the cube using that tool is not supported. </blockquote>  
+> [!NOTE]  
+> Do not use SQL Server Management Studio (SSMS) to manually process the cube. Processing the cube using that tool is not supported. 
 
  
 ##Process the warehouse or cube

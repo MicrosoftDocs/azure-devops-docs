@@ -119,7 +119,8 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 	The rebuild process starts first for the warehouse and then for the cube. The time that is required to rebuild the databases is based on the amount of data that is stored in the data warehouse. When the databases have been rebuilt, the jobs for processing the databases are automatically started. 
 
-	<blockquote style="font-size: 13px"><b>Note: </b>While the warehouse and the cube are being rebuilt, the administration console for Team Foundation may stop responding. You might need to refresh the administration console after the warehouse and the cube have been rebuilt.</blockquote>  
+	> [!NOTE]  
+	> While the warehouse and the cube are being rebuilt, the administration console for Team Foundation may stop responding. You might need to refresh the administration console after the warehouse and the cube have been rebuilt. 
 
 5. (Optional) To check the status of the rebuild process, you can use the Warehouse Control Web service. For more information, see [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md).  
 
@@ -133,7 +134,8 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 	```http://localhost/Reports  ```
 
-	<blockquote style="font-size: 13px">**Tip:  **You may need to start Internet Explorer as an administrator by choosing **Start**, **All Programs**, open the context menu of Internet Explorer, and then choosing **Run as administrator**. </blockquote>   
+	> [!TIP]  
+	> You may need to start Internet Explorer as an administrator by choosing **Start**, **All Programs**, open the context menu of Internet Explorer, and then choosing **Run as administrator**.   
 
 	If you have deployed a named instance on the data-tier server, type this string instead:
 

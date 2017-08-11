@@ -178,25 +178,11 @@ To learn all about what's new in TFS, see [What's new](../../whats-new.md).
 
 To get started, manage permissions, or learn more about features made available through access to TFS, see these topics:    
 
-#### Get started 
 - [Work in the web portal](../../connect/work-web-portal.md)   
-- [Team Services](../../setup-admin/account-administration.md#account-setup)   
-- [TFS](../../setup-admin/account-administration.md#team-foundation-server)   
-
-#### Manage permissions
 - [Permissions & access](../../setup-admin/permissions-access.md)  
 - [Add team members](../scale/multiple-teams.md#add-team-members)  
-- [Restrict access to features](../../setup-admin/restrict-access-tfs.md)  
-- [Permissions reference](../../setup-admin/permissions.md)  
 
-#### Plan and track work 
-- [Agile project management](../overview.md)  
-- [Agile tools overview](../overview.md)  
-- [Backlogs, boards, and plans](../backlogs-boards-plans.md)  
-- [Dashboards and reports](../../report/overview.md)   
-- [Configure features after an upgrade](../customize/configure-features-after-upgrade.md)  
-
-
+ 
 <a id="administer-account" >  </a>
 
 Within the admin context, there are several hubs which support administrating features at the team, project, or project collection level. You can learn more from these resources:

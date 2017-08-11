@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/02/2017
+ms.date: 08/10/2017
 ---
+
 
 # Customize your work tracking experience 
 
@@ -30,18 +31,13 @@ Customizations you make occur at one of three levels:
 
 Each team project provides a number of shared resources that support all teams added to the project. You configure these features through the user interface or the admin context of the web portal. 
 
-> [!div class="mx-tdBreakAll"]  
-> |Area path pick lists | Sprint/iteration pick lists | 
-> |-------------|----------| 
-> |Change the [pick list of area paths](set-area-paths.md) to support grouping work items by team, product, or feature area.<br/> 
-![Hierarchical area paths](../../_img/alm-feature-area-paths.png) | Change the [pick list of iteration paths](../scrum/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team.<br/> 
-![Iterations or sprints](../../_img/alm-feature-define-sprints.png) |
+|Area path pick lists | Sprint/iteration pick lists | 
+|-------------|----------| 
+|Change the [pick list of area paths](set-area-paths.md) to support grouping work items by team, product, or feature area.<br/>![Hierarchical area paths](../../_img/alm-feature-area-paths.png)|Change the [pick list of iteration paths](../scrum/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team.<br/> ![Iterations or sprints](../../_img/alm-feature-define-sprints.png) |
  
-> [!div class="mx-tdBreakAll"]  
-> |Shared queries | Tags | 
-> |-------------|----------| 
-> |Open shared queries or create your own query using the query editor [to list work items or show hierarchical or dependent items](../track/using-queries.md).<br/> ![Shared queries](_img/customize-work-shared-queries-min.png) |[Add tags to work items](../track/add-tags-to-work-items.md) to filter backlogs and queries<br/>
-![Add tags to filter backlogs, boards, and queries](_img/alm-feature-tags.png) |   
+|Shared queries | Tags | 
+|-------------|----------| 
+|Open shared queries or create your own query using the query editor [to list work items or show hierarchical or dependent items](../track/using-queries.md).<br/> ![Shared queries](_img/customize-work-shared-queries-min.png) |[Add tags to work items](../track/add-tags-to-work-items.md) to filter backlogs and queries<br/>![Add tags to filter backlogs, boards, and queries](_img/alm-feature-tags.png) |   
  
 
 <a id="process-models"></a>
@@ -166,58 +162,18 @@ For a simplified view of the most common, default permissions and access assignm
 
 Otherwise, to grant or restrict access to select features or functions, review one of these topics: 
  
-<div style="float:left;width:230px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Manage access </p>
-- [Add team members (Team Services)](../../setup-admin/team-services/add-team-members-vs.md)    
-- [Add team members (TFS)](../scale/multiple-teams.md#add-team-members)    
-- [Stakeholder access](../connect/change-access-levels.md)    
-- [Advanced access level](../connect/change-access-levels.md)    
- 
-</div>
-
-<div style="float:left;width:280px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Permissions </p>
-- [Area path permissions](../how-to/set-permissions-access-work-tracking.md#set-permissions-area-path)     
-- [Process permissions](../process/manage-process.md#process-permissions)   
-- [Work item query and folder permissions](../track/set-query-permissions.md)   
-- [Dashboard permissions](../../report/dashboards.md#set-permissions)   
-- [Plan permissions](../scale/review-team-plans.md#plan-permissions) (Team Services)   
-- [Tagging permissions](../../setup-admin/permissions.md#tags)   
-- [Test permissions](../../setup-admin/permissions.md#project_test)   
-- [Restrict access](../../setup-admin/restrict-access-tfs.md)    
-   
-</div>
-
-
-<div style="float:left;width:120px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Shared resources</p>
-- [Alerts](../track/alerts-and-notifications.md)    
-- [Area paths](set-area-paths.md)   
-- [Iteration paths](set-iteration-paths-sprints.md)   
-- [Queries](../track/using-queries.md)   
-- [Tags](../track/add-tags-to-work-items.md)   
-   
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
-
-
-
-##Related notes
+> [!div class="mx-tdBreakAll"]  
+> |Manage access   |Permissions  |Shared resources  |
+> |-------------|----------|---------|
+> |- [Add team members (Team Services)](../../setup-admin/team-services/add-team-members-vs.md)<br/>- [Add team members (TFS)](../scale/multiple-teams.md#add-team-members)<br/>- [Stakeholder access](../connect/change-access-levels.md)<br/>- [Advanced access level](../connect/change-access-levels.md) |- [Area path permissions](../how-to/set-permissions-access-work-tracking.md#set-permissions-area-path)     - [Process permissions](../process/manage-process.md#process-permissions)<br/>- [Work item query and folder permissions](../track/set-query-permissions.md)<br/>- [Dashboard permissions](../../report/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../scale/review-team-plans.md#plan-permissions)<br/>- [Tagging permissions](../../setup-admin/permissions.md#tags)<br/>- [Test permissions](../../setup-admin/permissions.md#project_test)<br/>- [Restrict access](../../setup-admin/restrict-access-tfs.md) | - [Alerts](../track/alerts-and-notifications.md)<br/>- [Area paths](set-area-paths.md)<br/>- [Iteration paths](set-iteration-paths-sprints.md)<br/>- [Queries](../track/using-queries.md)<br/>- [Tags](../track/add-tags-to-work-items.md) | 
+  
+## Related notes
 
 Learn more about how to use work tracking to plan, manage, and monitor your projects:  
 
-- [Configure team settings](../scale/manage-team-assets.md)  
-- [**witadmin** command-line tools](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
-- [Agile tools](../overview.md)  
-- [Agile project management, get started](../overview.md)   
-- [Scrum](../guidance/scrum-process.md) | [Agile](../guidance/agile-process.md) | [CMMI](../guidance/cmmi-process.md) processes and process templates  
-- [Configure features after an upgrade](configure-features-after-upgrade.md) (TFS only)    
+- [Configure team settings](../scale/manage-team-assets.md) 
 
-
-###Additional options 
+### Additional options 
 Do you want to customize your tools in a way that's not supported?  
 
 Here are a few options available to you:  
@@ -229,7 +185,7 @@ Here are a few options available to you:
 
 
 <a id="test-experience"></a>
-###Customize the test experience (TFS)  
+### Customize the test experience (TFS)  
 
 Several WITs support the test experience within the web portal Test hub and Test Manager client. You can customize these WITs as you would any other WIT. The following image illustrates the support link relationships.  
 
@@ -261,8 +217,6 @@ You can increase this value up to a maximum of 1500 by specifying a value for th
     . . .
     </TaskBacklog>
  
-
-
 
 <a id="assign-fields">  </a>
 #### Change field assignments (Hosted XML, On-premises XML) 
@@ -298,9 +252,10 @@ Upgrades to an on-premises TFS can introduce new features that require updates t
 To minimize the amount of manual work you'll need to do after a TFS upgrade, understand which customizations support an easy update path and which do not. 
 
 
-<div style="float:left;width:350px;margin:8px;font-size:90%">
-<p><b>Compatible for quick updating</b></p>
-<p>With the following customizations, you can use the Configure Features Wizard to automatically apply any changes to your team project required for new features. </p>
+
+#### Compatible for quick updating  
+
+With the following customizations, you can use the Configure Features Wizard to automatically apply any changes to your team project required for new features.
 
 <ul>
 <li>Fields: Add custom fields, customize a pick list, add or modify area and iteration paths, add rules to a field  </li>
@@ -310,16 +265,12 @@ To minimize the amount of manual work you'll need to do after a TFS upgrade, und
 <li>Office integration: Add or change how Project fields map to TFS fields   </li>
 </ul>
 
-<p>To learn more about the Configure Features Wizard, see [Configure features after an upgrade](configure-features-after-upgrade.md).</p>
-
-</div>
-
-<div style="float:left;width:350px;margin:8px;font-size:90%">
-<p><b>Compatible, but may require manual updates</b></p>
+To learn more about the Configure Features Wizard, see [Configure features after an upgrade](configure-features-after-upgrade.md).
 
 
+#### Compatible, but may require manual updates
 
-<p>The Configure Features Wizard requires that specific work item types, workflow states, and fields exist in the team project. When you make the following customizations, you might need to modify your custom process for the wizard to run, or you might have to update your team project manually. </p>
+The Configure Features Wizard requires that specific work item types, workflow states, and fields exist in the team project. When you make the following customizations, you might need to modify your custom process for the wizard to run, or you might have to update your team project manually. 
 
 <ul>
 <li>Fields: Change attributes of an existing field, remove fields that are referenced in the process configuration </li>
@@ -329,12 +280,7 @@ To minimize the amount of manual work you'll need to do after a TFS upgrade, und
 <li>Agile tools: Change a field specified for a ```TypeField``` in the process configuration.   </li>
 </ul>
 
-<p>In addition, changes you make to WITs or the workflow could require updates to other artifacts provided with your process, such as Excel or SQL Server Reporting Services reports.</p>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
+In addition, changes you make to WITs or the workflow could require updates to other artifacts provided with your process, such as Excel or SQL Server Reporting Services reports.
  
 
 #### Customizations to avoid
@@ -357,8 +303,6 @@ To learn more about reporting attributes, see [Add or modify work item fields to
 
 <!---
  
-
-
 <a id="field-reference">  </a>  
 ### What is a field? How are field names used?  
 
@@ -386,8 +330,7 @@ When adding custom fields, note the following limits:
 [add-team-admin]: ../scale/add-team-administrator.md
 
  
-  
-
+ 
 [!INCLUDE [temp](../_shared/help-support-shared.md)]
 
 <!--- ADDRESS THESE VERBATIMS: 

@@ -560,7 +560,7 @@ You set test permissions at the team project level from the admin context Securi
 
 You can define and manage dashboards from the web portal, Dashboard hub. For an overview of dashboard and chart features, see [Dashboards and reports overview](../report/overview.md). 
 
-You set [dashboard permissions at the team level](../report/dashboards.md#set-permissions) from the team dashboard page. 
+You set [dashboard permissions at the team level](../report/dashboard-permissions.md) from the team dashboard page. 
 
 <table>
 <tr valign="bottom">

@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/22/2017   
+ms.date: 08/10/2017
 ---
+
 
 # Customize cards  
 
@@ -260,7 +261,7 @@ You change the way cards display on the task board the same way you change the K
 	![Task board, Style dialog, example style rule](_img/task-board-card-style-rule-stale-tasks.png)  
 
 <a id="color-tags">  </a>
-##Add color to your tags  
+## Add color to your tags  
 
 >[!NOTE]  
 ><b>Feature availability: </b>This feature is supported from Team Services or the web portal for TFS 2015.1 or later version. 
@@ -284,25 +285,10 @@ With the Kanban board, you gain a rich set of tools and a rich set of customizat
 
 As shown in the following examples, the Task and Test annotations indicate that two each of tasks and tests have been defined for the work item. If you find that there are some features you're not using, you can disable them from the Annotations tab. 
 
-
-<div style="float:left;width:220px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Task annotations</p>
-<img src="_img/annotate-task.png" alt="Task annotations enabled" style="border: 1px solid #CCCCCC;" />  
-</div>
-
-<div style="float:left;width:220px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Test annotations</p>
-<img src="_img/annotate-test.png" alt="Test annotations enabled" style="border: 1px solid #CCCCCC;" />  
-</div>
-
-<div style="float:left;width:220px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">No annotations</p>
-<img src="_img/annotate-none.png" alt="Annotations disabled" style="border: 1px solid #CCCCCC;" />  
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-<br/>
+> [!div class="mx-tdBreakAll"]  
+> | Task annotations  |Test annotations  |No annotations |
+> |-------------|----------|----------|    
+> |<img src="_img/annotate-task.png" alt="Task annotations enabled" style="border: 1px solid #CCCCCC;" /> | <img src="_img/annotate-test.png" alt="Test annotations enabled" style="border: 1px solid #CCCCCC;" />  | <img src="_img/annotate-none.png" alt="Annotations disabled" style="border: 1px solid #CCCCCC;" /> | 
 
 To learn more about using these features, see [Add task checklists](../kanban/add-task-checklists.md) and [Add, run, and update inline tests](../kanban/add-run-update-tests.md).  
 

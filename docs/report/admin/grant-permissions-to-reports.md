@@ -30,7 +30,8 @@ Now that you've uploaded reports, you'll want to enable members of your team to 
 ##Add accounts to predefined roles to view or manage reports
 Add report viewers to the **Browser** role. Add TFS report authors to the **Team Foundation Content Manager** role.
 
-<blockquote style="font-size: 13px">**Tip:**  Permissions to access Report Manager are managed separately from TFS permissions. Even if you have added team members to a TFS group, you will still have to add them to a Report Manager role. </blockquote>  
+> [!TIP]    
+> Permissions to access Report Manager are managed separately from TFS permissions. Even if you have added team members to a TFS group, you will still have to add them to a Report Manager role.  
 
 1. If you haven't been added to the **Content Manager** role for Reporting Services, get added by someone who has been added to this role.  
 
@@ -44,7 +45,8 @@ Add report viewers to the **Browser** role. Add TFS report authors to the **Team
 
 	![Open SSRS new role assignment](_img/IC665039.png)
 
-	<blockquote style="font-size: 13px">**Tip:  ** To limit access to reports defined for a team project or team project collection, first navigate to the corresponding folder and then open New Role Assignment.</blockquote>  
+	> [!TIP]    
+	> To limit access to reports defined for a team project or team project collection, first navigate to the corresponding folder and then open New Role Assignment.  
 
  
 4. Add the account name and select their role. 
@@ -79,7 +81,8 @@ If members need to create or customize reports, add their accounts to the **TfsW
 
 	![Add member to Tfs_Analysis data reader role](_img/IC665046.png)
 
-<blockquote style="font-size: 13px"><b>Important: </b>  Accounts that you add to the **TfsWarehouseDataReader** roles can view data for all team projects that are hosted in all team project collections in the TFS deployment. There is no way to limit access to a team project or collection.</blockquote>  
+> [!IMPORTANT]  
+> Accounts that you add to the **TfsWarehouseDataReader** roles can view data for all team projects that are hosted in all team project collections in the TFS deployment. There is no way to limit access to a team project or collection.   
 
 
 ##Try this next
