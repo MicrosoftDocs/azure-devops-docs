@@ -1,9 +1,6 @@
 - name: Deploy to Azure
   href: index.md
 - name: Overview
-  items:
-  - name: "Deploy to Azure with VSTS"
-    href: overview-deploy-azure.md
 - name: Quickstarts
   items:
   - name: "CI/CD to Azure Web App"
