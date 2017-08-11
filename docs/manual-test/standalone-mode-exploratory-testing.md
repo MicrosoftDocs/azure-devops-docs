@@ -11,8 +11,6 @@ ms.date: 08/12/2016
 
 # Exploratory testing with the Test &amp; Feedback extension in Standalone mode
  
-[!INCLUDE [version-header-none](_shared/version-header-none.md)] 
-
 All teams can use the Test &amp; Feedback extension (previously 
 called the Exploratory Testing extension) in **Standalone** mode. 
 Users don't need a Visual Studio Team Services account 
@@ -71,12 +69,9 @@ or Team Foundation Server connection to use this mode.
    Share it with the rest of your team as an email attachment, or 
    copy it to OneNote, Word, or in any other format you prefer.
 
-[How do I play the video recordings I created with the extension?](getting-started/perform-exploratory-tests.md#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
 
-## See also
+## Next step
 
-* [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
-* [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
-* [Overview of manual and exploratory testing](index.md)
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [Use the extension in Connected mode](connected-mode-exploratory-testing.md)

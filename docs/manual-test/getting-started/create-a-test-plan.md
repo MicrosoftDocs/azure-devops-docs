@@ -12,8 +12,6 @@ ms.date: 08/12/2016
 
 # Create a test plan
 
-**Visual Studio 2017 | Visual Studio 2015 | TFS 2017 | TFS 2015 | [Previous version](https://msdn.microsoft.com/library/dd380763%28v=vs.120%29.aspx)**
-
 Create test plans to track manual testing 
 for sprints or milestones. That way, 
 you can see when the testing for a 
@@ -21,7 +19,7 @@ specific sprint or milestone is complete.
 
 Test plans are used to group together test suites and individual test cases.
 This includes static test suites, requirement-based suites, and
-[query-based suites](#query-based-suites). You can add individual test cases to a test plan without creating
+[query-based suites](../reference-qa.md#query-based-suites). You can add individual test cases to a test plan without creating
 a test suite if you wish, but using a test suite provides a way to group
 test cases for separate testing scenarios within a single test plan.
 
@@ -77,88 +75,7 @@ and [create your backlog](../../work/backlogs/create-your-backlog.md).
 
    Now you've created a requirement-based test suite for each backlog item.
 
-##  Try this next
+##  Next step
 
-* [Create manual test cases](create-test-cases.md#test-cases) 
-  for each test suite.
-
-<a name="qa"></a>
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-#### Q: Can I rename my test plan?
-
-A:  Yes, open the test plan from the shortcut menu and rename it.
-
-![Rename a test plan](_img/create-a-test-plan/rename-test-plan.png)
-
-#### Q: Can I permanently delete my test plan?
-
-A:  Yes, do this from the shortcut menu for the test plan.
-
-![Delete a test plan](_img/create-a-test-plan/delete-test-plan.png)
-
-See also [Delete test artifacts](../../work/backlogs/remove-delete-work-items.md#delete-test)
-
-#### Q: Can I group and reorder my requirement-based test suites together?
-
-A:  Yes, you can create a static test suite that can 
-contain any type of test suites - just like folders. 
-Drag test suites to group them in a static test plan.
-Drag and drop tests to reorder them.
-
-![Use static test suites like folders](_img/create-a-test-plan/AddRequirementSuitesToTestPlan4.png)
-
-<a name="query-based-suites"></a>
-#### Q: What are query-based test suites ?
-
-A:  Use a query to group together test cases that have a particular characteristic, 
-for example, all tests that have Priority=1. The suite will automatically include 
-every test case that is returned by the query that you define.
-
-#### Q: Can I edit other properties of a test plan from the test hub?
-
-A:  You can only do this from Microsoft Test Manager (MTM). If you're using Visual Studio 2017, Visual Studio 2015,
-Visual Studio 2013, or Visual Studio 2012 Update 3, you can open a test plan in MTM directly from the Test hub. 
-(The most recently installed version of MTM is launched.)
-
-![Open test plan using Microsoft Test Manager](_img/create-a-test-plan/OpenTestPlanMTM.png) 
-
-#### Q: Can I copy, clone, and move test plans and test suites?
-
-Yes, install the [Test Case Explorer extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer) from Marketplace.
-
-#### Q: Can I export the test plan to share or review offline?
-
-A:  Yes, you can export test plans, test suites, and test cases. Select the details 
-that you want in the report. Then email or print this report for review.
-
-![Right-click a test suite, and choose Export](_img/create-a-test-plan/ExportTestPlanHTML.png)
-
-Change the test case fields in the report by adding or removing columns from 
-the list view of the test suite.
-
-#### Q: When I export a test plan, can I just view the data or copy it to a Word document?
-
-A:  Yes, choose Print in the Export dialog box, then choose Cancel in the Print dialog box. 
-This displays the data in the report. Select all the text, then copy and paste it 
-into a Word document, if you want. All the formatting in the report is retained.
-
-#### Q: When I export a test plan, can I customize the report?
-
-A:  You can only do this if you are using an on-premises Team Foundation Server. 
-You can [edit the XSLT file](https://msdn.microsoft.com/library/dd380763.aspx#XSLT).
-
-#### Q: Can I track changes to test plans and test suites that I create with Visual Studio Team Services?
-
-A:  Yes, you can track changes to test plans and test suites. Open the work item 
-for the test plan or test suite, then view the work item history.
-
-For test suites, other actions are tracked in the Test Suite Audit field. 
-For example, adding and removing test cases from a test suite are tracked in this field.
-
-<!-- ENDSECTION -->
-
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
-
+> [!div class="nextstepaction"]
+> [Create manual test cases](create-test-cases.md#test-cases) 

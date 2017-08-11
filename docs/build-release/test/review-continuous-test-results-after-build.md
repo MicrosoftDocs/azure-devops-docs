@@ -11,8 +11,6 @@ ms.date: 08/12/2016
 
 # Review continuous test results after a build
 
-[!INCLUDE [version-header-vs-tfs](_shared/version-header-vs-tfs.md)]
-
 After your build finishes running continuous tests using Visual Studio Team Services or Team Foundation Server,
 review your test results to start analyzing any problems that you found.
 
@@ -72,15 +70,7 @@ In this example, you'll learn how to:
 
   ![Test result summary in Release hub](_img/review-continuous-test-results-after-build/release-test-results-01.png)
 
-## Next steps
+## Next step
 
-* [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
-* [Testing with unified agents and phases](test-with-unified-agent-and-phases.md)
-
-## See also
-
-* [Q &amp; A for continuous testing](reference-qa.md)
-* [Run tests with your builds](getting-started-with-continuous-testing.md)
-* [Get started with Selenium testing in a CI pipeline](continuous-test-selenium.md)
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)

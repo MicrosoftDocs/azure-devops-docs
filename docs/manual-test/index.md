@@ -76,6 +76,7 @@ tasks and test cases automatically linked to that work item.
 
 * [REST API for test management](../integrate/index.md)
 * [Unable to connect](../work/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/manual-test/toc.json)
+* [Q &amp; A](reference-qa.md)
 
 ## Resources
 

@@ -10,8 +10,6 @@ ms.author: ahomer
 ms.date: 08/12/2016
 ---
 
-[!INCLUDE [version-header-vs-ts](_shared/version-header-vs-ts.md)]
-
 <a name="cloudloadtest"></a>
 # Load test your app in the cloud using Visual Studio
 
@@ -157,21 +155,7 @@ connect Visual Studio to your Team Services account.
    more closely, you can refine your test by specifying web performance 
    test properties, load test scenario properties, and run settings properties.
 
-## Next steps
+## Next step
 
-* [Add app performance data](get-performance-data-for-load-tests.md)
-* [View and compare results](performance-reports.md) 
-* [Run Apache JMeter load tests](get-started-jmeter-test.md) 
-* [Record and replay tests](record-and-replay-cloud-load-tests.md)
-* [Profile live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler)
-
-## See also
-
-* [Q &amp; A for load testing](reference-qa.md)
-* [Load test with Team Services](get-started-simple-cloud-load-test.md) 
-* [Load test with Azure portal](app-service-web-app-performance-test.md) 
-* [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
-* [Run Apache JMeter load tests with Visual Studio Team Services](get-started-jmeter-test.md)
-* [Analyze load test results using the Load Test Analyzer](https://msdn.microsoft.com/library/ee923686.aspx)
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [Add app performance data](get-performance-data-for-load-tests.md)

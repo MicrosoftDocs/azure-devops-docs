@@ -11,8 +11,6 @@ ms.date: 08/12/2016
 
 # Exploratory testing with the Test &amp; Feedback extension in Connected mode
  
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
-
 To use the Test &amp; Feedback extension (previously called the 
 Exploratory Testing extension) in **Connected** mode you must connect 
 to your Team Services account or Team Foundation Server 2015 and later.
@@ -80,7 +78,7 @@ After you have connected, you are ready to begin testing your app.
    ![Take a screenshot, make notes, or record your actions as a video](_img/connected-mode-exploratory-testing/create-bugs-01a.png)
 
    >Some browsers may not provide all of the capture capabilities.
-   See [Which web browsers does the extension support?](getting-started/perform-exploratory-tests.md#browser-support) 
+   See [Which web browsers does the extension support?](reference-qa.md#browser-support) 
 
 1. When you are done exploring and capturing information, create a bug or a task. 
 
@@ -104,7 +102,7 @@ After you have connected, you are ready to begin testing your app.
 
    ![Save the bug or task](_img/connected-mode-exploratory-testing/create-bugs-04.png)
 
-   > You can also [add your findings to an existing similar bug](#addsimilar). 
+   > You can also [add your findings to an existing similar bug](reference-qa.md#addsimilar). 
 
 1. View a list of all your activities in reverse chronological order
    in the **Session timeline** page. It shows all the screenshots, videos, and notes 
@@ -124,7 +122,7 @@ After you have connected, you are ready to begin testing your app.
 
    ![The bug or task in TS or TFS](_img/connected-mode-exploratory-testing/create-bugs-10.png)
 
-[How do I play the video recordings I created with the extension?](getting-started/perform-exploratory-tests.md#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
  
 ## Create test cases
 
@@ -165,28 +163,9 @@ The extension lets you create test cases as you explore your application.
 
 1. Now see how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
-[How do I play the video recordings I created with the extension?](getting-started/perform-exploratory-tests.md#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
 
-## Q&A
+## Next step
 
-<!-- BEGINSECTION class="md-qanda" -->
-
-<a name="addsimilar"></a>
-#### Q: Can I edit an existing bug instead of creating a new bug when using the Test &amp; Feedback extension?
-
-**A**: Yes, the extension automatically shows bugs that may be related to the one you are creating
-and allows you to add your screenshots, notes, and videos to this existing bug. 
-For more details, see [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md).
-
-<!-- ENDSECTION --> 
-
-## See also
-
-* [Explore work items with exploratory testing](explore-workitems-exploratory-testing.md)
-* [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
-* [Get insights across your exploratory testing sessions](insights-exploratory-testing.md)
-* [Use the Test &amp; Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
-* [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
-* [Overview of manual and exploratory testing](index.md)
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [Get insights across your sessions](insights-exploratory-testing.md)

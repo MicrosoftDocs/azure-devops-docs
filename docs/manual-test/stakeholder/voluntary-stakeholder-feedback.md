@@ -48,7 +48,7 @@ voluntarily, even if you haven't received a specific
    such as capturing screenshots, notes, and screen recordings.
 
    >Some browsers may not provide all of the capture capabilities.
-   See [Which web browsers does the extension support?](../getting-started/perform-exploratory-tests.md#browser-support) 
+   See [Which web browsers does the extension support?](../reference-qa.md#browser-support) 
  
 1. When you are done capturing feedback, Choose **Provide feedback**.
 

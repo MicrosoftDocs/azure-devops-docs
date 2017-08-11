@@ -74,7 +74,7 @@ to assist test teams by providing feedback.
    For more details, see [this topic](../connected-mode-exploratory-testing.md). 
 
    >Some browsers may not provide all the capture capabilities.
-   See [Which web browsers does the extension support?](../getting-started/perform-exploratory-tests.md#browser-support) 
+   See [Which web browsers does the extension support?](../reference-qa.md#browser-support) 
  
 1. When you are done capturing feedback:
 

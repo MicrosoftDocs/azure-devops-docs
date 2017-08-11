@@ -11,8 +11,6 @@ ms.date: 08/12/2016
 
 # Load test with the Azure portal
 
-**| Team Services |**
-
 Check your web app's performance before you launch it or deploy updates to production. 
 That way, you can better assess whether your app is ready for release. Feel more
 confident that your app can handle the traffic during peak use or at your next marketing push.
@@ -144,19 +142,7 @@ To upload and run a Visual Studio Web Test file:
 
    ![Rerunning the test](_img/app-service-web-app-performance-test/multiple-rerun-test.png)
 
-## Next steps
+## Next step
 
-* [Add app performance data](get-performance-data-for-load-tests.md)
-* [Run Apache JMeter load tests](get-started-jmeter-test.md) 
-* [Record and replay tests](record-and-replay-cloud-load-tests.md)
-* [Profile live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler)
-
-## See also
-
-* [Q &amp; A for load testing](reference-qa.md#qaazure)
-* [Load test with Visual Studio](getting-started-with-performance-testing.md) 
-* [Load test with Team Services](get-started-simple-cloud-load-test.md) 
-* [View and compare results](performance-reports.md) 
-* [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [Add app performance data](get-performance-data-for-load-tests.md)

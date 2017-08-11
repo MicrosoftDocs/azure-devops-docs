@@ -11,8 +11,6 @@ ms.date: 08/12/2016
 
 # Exploratory test and submit feedback directly from your browser
 
-[!INCLUDE [version-header-ts-tfs](../_shared/version-header-ts-tfs.md)] 
-
 The **Test &amp; Feedback extension** (previously called the Exploratory Testing extension)
 helps teams perform exploratory testing and provide feedback. 
 Everyone in the team, such as developers, product owners, managers, UX or UI engineers, 
@@ -64,7 +62,7 @@ and more.
 <a name="install"></a>
 ## Install the Test &amp; Feedback extension
 
-1. Check the list of [supported browsers](#browser-support) and decide which you want to use.
+1. Check the list of [supported browsers](../reference-qa.md#browser-support) and decide which you want to use.
 
 1. Download and install your chosen browser, if you haven't already, then open it.
 
@@ -133,63 +131,7 @@ update it automatically.
 >If you have problems connecting to Team Services or TFS, you may find
 the topic [TF31002: Unable to connect](https://www.visualstudio.com/en-us/docs/work/reference/error/tf31002-unable-connect-tfs) useful.
 
-## Try this next
+## Next step
 
-* [Use the Test &amp; Feedback extension in **Connected** mode](../connected-mode-exploratory-testing.md)
-* [Use the Test &amp; Feedback extension in **Standalone** mode](../standalone-mode-exploratory-testing.md)
-* [Get stakeholder feedback with the Test & Feedback extension](../stakeholder/request-stakeholder-feedback.md)
-
-##  Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<a name="browser-support"><a/>
-#### Q: Which web browsers does the extension support?
-
-A:  The Test &amp; Feedback extension is currently available for
-[Google Chrome](https://www.google.com/chrome/)
-and [Mozilla Firefox version 50.0 and higher](https://www.mozilla.org/).
-Edge support is planned. 
-
-Some browser versions do not currently support all the features of the Test &amp; Feedback extension.
-
-| Feature | Chrome | Firefox |
-| --- | --- | --- |
-| Capture screenshots with inline annotations | &nbsp; **Yes** | &nbsp; **Yes** |
-| Capture notes | &nbsp; **Yes** | &nbsp; **Yes** |
-| Capture screen recordings | &nbsp; **Yes** | &nbsp; **No** |
-| Capture page load data | &nbsp; **Yes** | &nbsp; **No** |
-| Capture user actions log | &nbsp; **Yes** |&nbsp; **No** |
-| Capture system information | &nbsp; **Yes** |&nbsp; **No** |
-| Create bugs | &nbsp; **Yes** | &nbsp; **Yes** |
-| Create tasks and test cases | &nbsp; **Yes** | &nbsp; **Yes** |
-| Create feedback requests | &nbsp; **Yes** | &nbsp; **Yes** |
-| Export session report for sharing | &nbsp; **Yes** | &nbsp; **Yes** |
-| End-to-end tracability for workitems | &nbsp; **Yes** | &nbsp; **Yes** |
-| Simplified bug and task tracking and triaging | &nbsp; **Yes** | &nbsp; **Yes** |
-| View and get insights from sessions | &nbsp; **Yes** | &nbsp; **Yes** |
-| View similar existing bugs | &nbsp; **Yes** | &nbsp; **Yes** |
-| Test app on devices using cloud providers such as Perfecto | &nbsp; **Yes** | &nbsp; **No** |
-| Manage feedback requests | &nbsp; **Yes** | &nbsp; **Yes** |
-
-<p />
-For more details, see 
-[Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web).
-
-<a name="recording-playback"><a/>
-#### Q: How do I play the video recordings I created with the extension?
-
-The video recordings created by the Test &amp; Feedback extension can be
-viewed in [Google Chrome](https://www.google.com/chrome/) browser and in the
-[VLC Video Player](http://www.videolan.org/vlc/download-windows.html).
-
-#### Q: Does the extension support Team Foundation Server?
-
-A: The Test &amp; Feedback extension supports Team Foundation Server 2015 and later. 
-All users, including stakeholders, can use the extension in Connected
-mode with all the functionality except session insights and the request
-and provide feedback flow, which are supported only for TFS 2017.
-
-<!-- ENDSECTION --> 
-
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [Use the Test &amp; Feedback extension in **Connected** mode](../connected-mode-exploratory-testing.md)

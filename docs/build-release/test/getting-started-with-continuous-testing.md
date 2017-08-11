@@ -12,8 +12,6 @@ ms.date: 07/03/2017
 
 # Get started with continuous testing
 
-**Team Services | TFS 2017 | TFS 2015 | [Previous version](https://msdn.microsoft.com/library/ee702477%28v=vs.120%29.aspx)**  
-
 Make sure that your app still works after every 
 check-in and build using Visual Studio Team Services. 
 Find problems earlier by running tests 
@@ -104,18 +102,7 @@ solution - on the same build machine.
    ![Error and stack trace for a failed test](_img/getting-started-with-continuous-testing/build-error-message.png)
  
 <a name="runothertests"></a>
-## Next steps
+## Next step
 
-* [Review your test results](review-continuous-test-results-after-build.md) 
-* [Testing with unified agents and phases](test-with-unified-agent-and-phases.md)
-
-## See also
-
-* [Q &amp; A for continuous testing](reference-qa.md)
-* [End-to-end example of continuous testing](example-continuous-testing.md)
-* [Run Selenium tests](continuous-test-selenium.md)
-* [Test Java applications](continuous-test-java.md)
-
-Also see the blog posts and videos listed in the **References** section.
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [Review your test results](review-continuous-test-results-after-build.md) 

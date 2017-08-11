@@ -11,8 +11,6 @@ ms.date: 08/12/2016
 
 # Run URL-based load tests with Visual Studio Team Services
 
-[!INCLUDE [version-header-ts](_shared/version-header-ts.md)]
-
 You can run a load test on your web app or site directly
 using Visual Studio Team Services.
 
@@ -117,21 +115,7 @@ In this example, you'll learn how to:
 
    ![Rerunning the same test](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-rerun-test.png)
 
-## Next steps
+## Next step
 
-* [View and compare load test runs](performance-reports.md)
-* [Add app performance data](get-performance-data-for-load-tests.md)
-* [Run Apache JMeter load tests](get-started-jmeter-test.md) 
-* [Record and replay tests](record-and-replay-cloud-load-tests.md)
-* [Profile live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler)
-
-## See also
-
-* [Q &amp; A for load testing](reference-qa.md)
-* [Load test with Visual Studio](getting-started-with-performance-testing.md) 
-* [Load test with Azure portal](app-service-web-app-performance-test.md) 
-* [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
-* [Run Apache JMeter load tests with Visual Studio Team Services](get-started-jmeter-test.md)
-* [Analyze load test results using the Load Test Analyzer](https://msdn.microsoft.com/library/ee923686.aspx)
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [View and compare load test runs](performance-reports.md)

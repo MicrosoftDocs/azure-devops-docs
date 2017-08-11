@@ -11,8 +11,6 @@ ms.date: 08/12/2016
 
 # Continuous integration, test, and deployment tutorial
 
-**Visual Studio 2017 | Visual Studio  2015 | Team Services** 
-
 This tutorial demonstrates how you can use the continuous integration and
 continuous deployment features of Visual Studio Team Services and
 Microsoft Team Foundation Server (TFS) to build, test, and deploy
@@ -306,11 +304,7 @@ post-deployment load test.
 
    ![Viewing the final result website](_img/example-continuous-testing/example-continuous-testing-71.png)
 
-## See also
+## Next step
 
-* [Continuous integration on any platform](../../build-release/overview.md)
-* [Get started with continuous testing](getting-started-with-continuous-testing.md)
-* [Git and Team Services](../../git/overview.md)
-* [More examples](../../build-release/apps/index.md)
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [CI/CD in depth](../../build-release/overview.md)

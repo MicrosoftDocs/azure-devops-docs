@@ -12,8 +12,6 @@ ms.date: 08/04/2016
 
 # Search your code
 
-**| Team Services |**
-
 Use Code Search to search across all of your projects, find specific types of code,
 and easily drill down or widen your search
 
@@ -91,6 +89,7 @@ For more details, see [Install an extension](../../marketplace/get-vsts-extensio
 
    ![Open the file in Code Explorer](_img/get-started/open-in-code-explorer.png)
  
-## Next steps
+## Next step
 
-* [Learn more about Code Search](advanced-search.md)
+> [!div class="nextstepaction"]
+> [Learn more about Code Search](advanced-search.md)

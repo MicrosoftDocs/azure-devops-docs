@@ -158,7 +158,7 @@ view it before you save the bug.
 
 ![Viewing the diagnostic data in the bug you are creating](_img/collect-diagnostic-data/collect-diagnostic-data-15.png) 
 
-[How do I play the video recordings I created with the extension?](getting-started/perform-exploratory-tests.md#recording-playback)
+[How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
 
 <a name="collect-desktop"></a>
 ## Collect diagnostic data from desktop apps

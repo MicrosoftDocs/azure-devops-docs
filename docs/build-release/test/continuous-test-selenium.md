@@ -12,8 +12,6 @@ ms.date: 06/15/2017
 
 # Get started with Selenium testing in a CI pipeline
 
-[!INCLUDE [version-header-vs-tfs](_shared/version-header-vs-tfs.md)]
-
 Performing user interface testing as part of the
 build process is a great way of detecting
 unexpected changes and need not be difficult. This
@@ -261,21 +259,5 @@ the source code must be in version control.
 
 ## Next steps
 
-* [Review your test results](review-continuous-test-results-after-build.md) 
-* [Testing with unified agents and phases](test-with-unified-agent-and-phases.md)
-
-## Also see
-
-* [Use Selenium with cloud-based load testing](http://blogs.msdn.com/visualstudioalm/archive/2014/11/17/using-selenium-with-cloud-load-testing.aspx)
-* [Run tests with builds](getting-started-with-continuous-testing.md)
-* [Create your Visual Studio Team Services Account](http://visualstudio.com/)
-* [Get started with developer testing tools](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing)
-
-For more information about Selenium browser automation, see:
-
-* [Selenium HQ](http://docs.seleniumhq.org/)
-* [Selenium documentation](http://www.seleniumhq.org/docs/01_introducing_selenium.jsp)
-
-For information about deploying PhantomJS.exe as part of your test, see [this blog post](http://blogs.msdn.com/visualstudioalm/archive/2014/11/17/using-selenium-with-cloud-load-testing.aspx).
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)]
+> [!div class="nextstepaction"]
+> [Review your test results](review-continuous-test-results-after-build.md) 

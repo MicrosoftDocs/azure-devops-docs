@@ -12,8 +12,6 @@ ms.date: 12/04/2016
 
 # Search for work items
 
-**| Team Services | TFS 2017.2 |**
-
 Work Item Search provides fast and flexible search across all your work items over all projects in an account. 
 
 <a name="start-search"></a>
@@ -82,6 +80,7 @@ Work Item Search provides fast and flexible search across all your work items ov
 
    >Work Item search remembers your filter settings. For example, the project and area path that you have selected in a search will be applied in your subsequent searches.
 
-## Next steps
+## Next step
 
-* [Learn more about Work Item Search](advanced-search-syntax.md)
+> [!div class="nextstepaction"]
+> [Learn more about Work Item Search](advanced-search-syntax.md)

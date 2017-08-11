@@ -12,8 +12,6 @@ ms.date: 08/12/2016
 
 # Tutorial: Load test your app before release
 
-**Team Services | Visual Studio 2017 | Visual Studio 2015 | [Previous version](https://msdn.microsoft.com/library/dn250793%28v=vs.120%29.aspx)**
-
 Find performance issues before you release your app 
 by running load tests with with Visual Studio 
 Enterprise using [Cloud-based Load Testing](http://go.microsoft.com/fwlink/?LinkID=317257)
@@ -167,8 +165,7 @@ and [run settings properties](https://msdn.microsoft.com/library/ff406976%28v=vs
 
 ![Percentage of new users property](_img/run-performance-tests-app-before-release/percentage-new-users.png)
 
-## Next Step
+## Next step
 
-* [Run URL-based load tests with Visual Studio Team Services](get-started-simple-cloud-load-test.md)
-
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [Run URL-based load tests](get-started-simple-cloud-load-test.md)
