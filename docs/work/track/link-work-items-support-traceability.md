@@ -58,84 +58,66 @@ Also, you can use the context menu in the web portal or Team Explorer.
 > [!NOTE]
 > For each work item, you can add a maximum of 5000 links to other work items.  
 
-### Add a link from one work item to another work item  
+## Add a link from one work item to another work item  
 
 You can create links between work items by using one of the links control tabs within a work item form. The user interface to link a work item differs based on the platform, version, and client you use. To link several work items to a new or existing item, see [Add link to work items](../backlogs/add-link.md). 
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
+### Team Services
+<a id="team-services-link" /> 
 
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
+From the new work item form (available from the web portal of [Team Services and TFS 2017](../process/new-work-item-experience.md)), you can add a link using the **Related Work** section or from the **Links** tab.
 
-<li style="float:left;" data-toggle="collapse" data-target="#link">Link a work item </li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#team-explorer-link">Team Explorer, Eclipse</a></li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs-portal-link">TFS 2013, TFS 2015</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#team-services-link">Team Services & TFS 2017</a></li>
-</ul>
- 
-<div id="link" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-
-<div id="team-services-link" class="tab-pane fade in active"> 
-<p>From the new work item form (available from the web portal of [Team Services and TFS 2017](../process/new-work-item-experience.md)), you can add a link using the **Related Work** section or from the **Links** tab.</p>
-<p>Open a work item and click the ![Add icon](../_img/icons/Action_Add.png) icon to add a link. </p>
+Open a work item and click the ![Add icon](../_img/icons/Action_Add.png) icon to add a link. 
    
 <img src="_img/link-work-items-new-form-control.png" alt="Web portal, work item form, Related work section, " style="border: 1px solid #CCCCCC;" />
 
-<p>Choose **Existing item** to link to a work item or other object using any supported link type. Choose **New item** to initiate a link and define a new work item at the same time. For details, see [Add link to work items](../backlogs/add-link.md).</p>
+Choose **Existing item** to link to a work item or other object using any supported link type. Choose **New item** to initiate a link and define a new work item at the same time. For details, see [Add link to work items](../backlogs/add-link.md).
 
 <img src="../reference/_img/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 1px solid #CCCCCC;" />
 
-<p>From the **Related Work** or **Links** tab, you can also perform these actions: </p>
-<ul>
-<li>Open an associated item or object: click the linked item</li>
-<li>Delete a link: highlight it and click the ![delete icon](../_img/icons/delete_icon.png) delete icon</li>
-</ul>
-<p>From a query results page, you can also perform these actions:</p>
-<ul>
-<li>Link selected items to a new work item  </li>
-<li>Link selected items to an existing work item </li>  
-</ul>
-<p>For details, see [Add link to work items](../backlogs/add-link.md#link).</p>
+From the **Related Work** or **Links** tab, you can also perform these actions: 
 
-</div>
+- Open an associated item or object: click the linked item</li>
+- Delete a link: highlight it and click the ![delete icon](../_img/icons/delete_icon.png) delete icon</li>
 
-<div id="tfs-portal-link" class="tab-pane fade">
-<p>If you connect to the web portal for TFS 2015 or earlier versions, you can link work items to other work items or supported objects from one of the available link tabs. Some work item types have two or more link control tabs. Each tab is designed to support specific types of links and restricts the types of link relationships made.</p>
+From a query results page, you can also perform these actions: 
+- Link selected items to a new work item  </li>
+- Link selected items to an existing work item </li>  
+
+For details, see [Add link to work items](../backlogs/add-link.md#link).</p>
+
+<a id="tfs-portal-link" />
+### TFS 2015, TFS 2013 (Web Portal) 
+
+If you connect to the web portal for TFS 2015 or earlier versions, you can link work items to other work items or supported objects from one of the available link tabs. Some work item types have two or more link control tabs. Each tab is designed to support specific types of links and restricts the types of link relationships made.
  
-<p>Open a work item and click one of the Links tab. From the links control tab you can link to a new or existing work items, open the linked object, or delete a link.</p> 
+Open a work item and click one of the Links tab. From the links control tab you can link to a new or existing work items, open the linked object, or delete a link.
 
 ![Link controls provided in a work item form](../backlogs/_img/work-items-link-controls.png)  
 
 
-</div>
+<a id="team-explorer-link" />
+### Visual Studio, Team Explorer  
 
-<div id="team-explorer-link" class="tab-pane fade">
-<p>If you primarily work in Visual Studio or Team Explorer, and want to link work items, you can do so in a number of ways. Depending on the work item form and customizations that may have been made to your work item form, you may see several Link tabs. Link tabs can be customized to allow or restrict specific link types.  </p>
+If you primarily work in Visual Studio or Team Explorer, and want to link work items, you can do so in a number of ways. Depending on the work item form and customizations that may have been made to your work item form, you may see several Link tabs. Link tabs can be customized to allow or restrict specific link types.  
 
-<p>**Team Explorer**</p>
-
-<p>Open a work item and click the Links tab. From the links control tab you can link to new or existing work items, open the linked object, edit the link type, delete a link, or open the list of links in a query or Excel or Project.</p>
+Open a work item and click the Links tab. From the links control tab you can link to new or existing work items, open the linked object, edit the link type, delete a link, or open the list of links in a query or Excel or Project.
 
 ![Work item form link toolbar controls](_img/IC673344.png)  
-<br/>
-<p>**Team Explorer/Eclipse**</p>
 
-<p>Open a work item and click the Links tab. From the links control tab you can link to new or existing work items, delete a link, or open the linked object.</p>
+### Team Explorer Everwhere**
+
+Open a work item and click the Links tab. From the links control tab you can link to new or existing work items, delete a link, or open the linked object.
 
 ![Link control options (Team Explorer, Eclipse)](_img/IC775501.png)  
-<br/>
-<p>**Link a work item to an existing work item (Team Explorer)**</p>
 
-<p>From the Query Results view, you can link a work item to a new or existing work item. Click the work item you want to link, open the context menu for that work item and (1) click Link to an Existing Item... (2)Fill out the dialog that appears, (3) click Save, and then (4) Save Results to save the changes made to the work item. </p>
+**Link a work item to an existing work item (Team Explorer)**
+
+From the Query Results view, you can link a work item to a new or existing work item. Click the work item you want to link, open the context menu for that work item and (1) click Link to an Existing Item... (2)Fill out the dialog that appears, (3) click Save, and then (4) Save Results to save the changes made to the work item. 
 
 ![Link to an existing work item](_img/IC588289.png)
-<br/>
-</div>
 
-</div>
-</div>  
-
-
-### Link or change parent-child links between work items
+## Link or change parent-child links between work items
 
 These features let you quickly link or change links that use the parent-child link type:
 
@@ -146,7 +128,7 @@ These features let you quickly link or change links that use the parent-child li
 You can also use Excel or Project to change the link structure. See [Bulk add or modify work items with Excel](../office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../office/create-your-backlog-tasks-using-project.md).
 
 
-### Link test cases, shared steps, and test results
+## Link test cases, shared steps, and test results
 
 You can link work items to test cases using the **Tested/Tested By** link types. You use the same link controls you use to link work items to other work items as [described earlier](#link-work-items). 
 
@@ -174,7 +156,7 @@ As you develop your software, you can capture which code changes and builds supp
 
 You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the Development section within the [new work item form](../process/new-work-item-experience.md). 
 
-### Link work items and Git code development  
+## Link work items and Git code development  
 
 The recommended method is to drive development from the work item or add the work item ID when creating branches, commits (git), changesets (TFVC), pull requests (git). 
 
@@ -187,7 +169,7 @@ Git lets you link work items to commits by using the **Commit** link type. You c
 
 	<img src="../backlogs/_img/drive-git-development-dev-section.png" alt="Work item form, Development section" style="border: 1px solid #CCCCCC;" />   
 
-### Link work item and TFVC code development  
+## Link work item and TFVC code development  
 
 Team Foundation version control (TFVC) lets you link work items to version control changesets or versioned source code files by using the **Changeset** and **Versioned Item** link types. When you check in pending changes or use My Work to check in changes, [work items are automatically linked to your changes](../../tfvc/check-your-work-team-codebase.md).
 
@@ -240,7 +222,6 @@ For query examples, see [Link and attachment queries](linking-attachments.md).
 > You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using Parent/Child or any other link type. You can only view the hierarchy through the [Test Plans page of the Test hub](../../manual-test/getting-started/create-a-test-plan.md). 
 
 
-
 <a id="link-type-guidance"></a>
 ## Link type descriptions and guidance 
  
@@ -252,7 +233,6 @@ Link types you use to link work items are subject to certain restrictions based 
 <tr>
 <th width="35%">Link type</th>
 <th width="65%">Usage</th>
-
 
 <tr>
 <td>**Affects-Affected by**<br/>(Dependency topology, CMMI only)<br/>  
@@ -361,15 +341,9 @@ Once you've formed a link relationship, you can't edit the link type of that rel
 For additional information, see these topics: 
 
 - [Add link to multiple work items](../backlogs/add-link.md)  
-- [Add work items (new work item form)](../backlogs/add-work-items.md)
 - [Share plans, add attachments](share-plans.md)  
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../office/bulk-add-modify-work-items-excel.md)  
-
-For customization options, see these topics: 
-- [Specify scoped link controls](../reference/linkscontroloptions-xml-elements.md)
-- [Define a custom link type (TFS only)](../reference/define-custom-link-type.md)
-
 
 ### Visualize related work and other objects 
 

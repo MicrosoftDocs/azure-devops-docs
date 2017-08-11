@@ -7,7 +7,7 @@ ms.prod: vs-devops-alm
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/07/2017  
+ms.date: 08/11/2017
 ---
 
 # Work in Team Explorer
@@ -38,16 +38,12 @@ Team Explorer connects Visual Studio to team projects. You can manage source cod
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Home page with Git</p>
 <p style="text-align:center;"><img src="_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" /></p>
 
-</div>
 
-<div style="float:left;width:320px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Home page with TFVC</p>
-<p style="text-align:center;"><img src="_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" /></p>
+> [!div class="mx-tdBreakAll"]  
+> |Home page with Git  |Home page with TFVC  |
+> |-------------|----------|
+> |<img src="_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" />|<img src="_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" />|
 
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
 
 
 >[!NOTE]  
@@ -61,25 +57,14 @@ If you work in Eclipse or on a non-Windows platform, you can [install the Team E
 
 
 
-<div style="float:left;width:360px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Home page with Git (Eclipse)</p>
-<p style="text-align:Center;"><img src="_img/work-team-explorer/IC774826.png" title="Home page w/ Git as source control - Eclipse" alt="Home page w/ Git as source control - Eclipse" /></p>
-
-</div>
-
-<div style="float:left;width:360px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Home page with TFVC (Eclipse)</p>
-<p style="text-align:Center;"><img src="_img/work-team-explorer/IC774825.png" title="Home page w/ TFVC as source control - Eclipse" alt="Home page w/ TFVC as source control - Eclipse" /></p>
+> [!div class="mx-tdBreakAll"]  
+> |Home page with Git (Eclipse) |Home page with TFVC (Eclipse) |
+> |-------------|----------|
+> |<img src="_img/work-team-explorer/IC774826.png" title="Home page w/ Git as source control - Eclipse" alt="Home page w/ Git as source control - Eclipse" /> |<img src="_img/work-team-explorer/IC774825.png" title="Home page w/ TFVC as source control - Eclipse" alt="Home page w/ TFVC as source control - Eclipse" /> |
 
 
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
-
->[!NOTE]  
->Some pages, such as **Reports** and **Documents**, only appear when TFS is configured with the required resources, such as SQL Server Reporting Services and SharePoint.
+> [!NOTE]  
+> Some pages, such as **Reports** and **Documents**, only appear when TFS is configured with the required resources, such as SQL Server Reporting Services and SharePoint.
 
 
 ## Choose the page to access the task you want
@@ -92,106 +77,39 @@ From the **Connect** page, you can select the team projects you want to connect 
 
 ![Team Explorer, Connect](_img/te-connect-manage.png)
 
-<div style="float:left;width:300px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">**Git**: Local Git repo</p>
-<p style="padding-left:20px;padding-bottom:0px;text-align:left;">If you connect to a Git repo, you also can [create, add, or clone repositories](..//git/tutorial/creatingrepo.md).  </p>
-<p style="text-align:Center;">![Team Explorer, Connect, local Git repo options](_img/te-connect-local-git-repos.png)</p>
-
-</div>
-
-
-<div style="float:left;width:400px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">**TFVC**: Map workspace</p>
-<p style="padding-left:30px;padding-bottom:0px;text-align:left;">If you connect to a TFVC repo, you'll be prompted to [Configure your workspace (TFVC)](../build-release/define/options.md) on first connect. </p>
-<p style="text-align:Center;">![Team Explorer, Connect, configure TFVC workspace](_img/te-tfvc-configure-workspace.png)</p>
-
-
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |Git: Local Git repo |TFVC: Map workspace |
+> |-------------|----------|
+> |If you connect to a Git repo, you also can [create, add, or clone repositories](..//git/tutorial/creatingrepo.md).<br/>![Team Explorer, Connect, local Git repo options](_img/te-connect-local-git-repos.png) |If you connect to a TFVC repo, you'll be prompted to [Configure your workspace (TFVC)](../build-release/define/options.md) on first connect.<br/>![Team Explorer, Connect, configure TFVC workspace](_img/te-tfvc-configure-workspace.png)|
 
 
 
-
->**Important:** From the Visual Studio plug-in, you can [Create a team project](../setup-admin/create-team-project.md). The ability to create team projects is not supported from the Eclipse plug-in. You can, however, create team projects from the web portal account/collection administration context. 
+> [!IMPORTANT]  
+> From the Visual Studio plug-in, you can [Create a team project](../setup-admin/create-team-project.md). The ability to create team projects is not supported from the Eclipse plug-in. You can, however, create team projects from the web portal account/collection administration context. 
 
 
 
 ### Home, Work, and Build pages 
 
-<div style="float:left;width:160px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">**Home**</p>
-<ul style="padding-left:20px">
-<li style="margin-bottom:2px">[Configure workspace](../tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)</li>
-<li style="margin-bottom:2px">Open [Web portal](work-web-portal.md#user-context)</li>
-<li style="margin-bottom:2px">Open [Task Board](../work/scrum/task-board.md)</li>
-<li style="margin-bottom:2px">Open [Team Room](../collaborate/collaborate-in-a-team-room.md)</li>
-</ul>
 
+> [!div class="mx-tdBreakAll"]  
+> |Home|Work Items  |Build |
+> |-------------|----------|----------|
+> |-[Configure workspace](../tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)<br/>- Open [Web portal](work-web-portal.md#user-context)<br/>- Open [Task Board](../work/scrum/task-board.md)<br/>- Open [Team Room](../collaborate/collaborate-in-a-team-room.md) |- [Add work items](../work/backlogs/add-work-items.md)<br/>- [Use the query editor to list and manage queries](../work/track/using-queries.md)<br/>- [Organize query folders and set query permissions](../work/track/set-query-permissions.md)<br/>- [Open query in Excel](../work/office/bulk-add-modify-work-items-excel.md)<br/>- [Open query in Project](../work/office/create-your-backlog-tasks-using-project.md)<br/>- [Email query results list using Outlook](../work/track/share-plans.md)<br/>- [Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md) (TFS only) |- [Create build definitions](../build-release/define/build.md)<br/>- [View and manage builds](../build-release/overview.md)<br/>- [Manage the build queue](../build-release/concepts/agents/pools-queues.md) |
 
-</div>
-
-
-
-
-<div style="float:left;width:280px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">**Work Items**</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Create work items](../work/backlogs/add-work-items.md)</li>
-<li style="margin-bottom:2px">[Use the query editor to list and manage queries](../work/track/using-queries.md)</li>
-<li style="margin-bottom:2px">[Organize query folders and set query permissions](../work/track/set-query-permissions.md)</li>
-<li style="margin-bottom:2px">[Open query in Excel](../work/office/bulk-add-modify-work-items-excel.md)</li>
-<li style="margin-bottom:2px">[Open query in Project](../work/office/create-your-backlog-tasks-using-project.md)</li>
-<li style="margin-bottom:2px">[Email query results list using Outlook](../work/track/share-plans.md)</li>
-<li style="margin-bottom:2px">[Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md) (TFS only)</li>
-</ul>
-
-</div>
-
-<div style="float:left;width:170px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">**Build**</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Create build definitions](../build-release/define/build.md)</li>
-<li style="margin-bottom:2px">[View and manage builds](../build-release/overview.md)</li>
-<li style="margin-bottom:2px">[Manage the build queue](../build-release/concepts/agents/pools-queues.md)</li>
-</ul>
-
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
->[!NOTE]  
->If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te). 
+> [!NOTE]  
+> If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te). 
 
 ### Git and TFVC pages  
 
 The Git and TFVC repos support different pages and functions. You'll see one or the other pages depending on the team project and repro you connect to. For a comparison of the two repos, see [Choosing the right version control for your project](../tfvc/comparison-git-tfvc.md). 
- 
-<div style="float:left;width:300px;margin:3px;font-size:95%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">**Git**</p>
-<ul style="padding-left:20px">
-<li style="margin-bottom:2px">**Changes**: [Save work with commits](../git/tutorial/commits.md)</li>
-<li style="margin-bottom:2px">**Branches**: [Create work in branches](../git/tutorial/branches.md)</li>
-<li style="margin-bottom:2px">**Pull Requests**: [Review code with pull requests](../git/tutorial/pullrequest.md)</li>
-<li style="margin-bottom:2px">**Sync**: [Update code with fetch and pull](../git/tutorial/pulling.md))</li>
-</ul>
 
-</div>
 
-<div style="float:left;width:300px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">**TFVC**</p>
-<ul style="padding-left:40px">
-<li style="margin-bottom:2px">**My Work**: [Suspend/resume work](../tfvc/suspend-your-work-manage-your-shelvesets.md)  &#124; [Code review](../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)    </li>
-<li style="margin-bottom:2px">**Pending Changes**: [Manage pending changes](../tfvc/develop-code-manage-pending-changes.md) &#124; [Find shelvesets](../tfvc/suspend-your-work-manage-your-shelvesets.md) &#124; [Resolve conflicts](../tfvc/resolve-team-foundation-version-control-conflicts.md)</li>
-<li style="margin-bottom:2px">**Source Control Explorer**: [Add/view files and folders](../tfvc/add-files-server.md)</li>
-</ul>
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |Git | TFVC  |
+> |-------------|----------|
+> |-**Changes**: [Save work with commits](../git/tutorial/commits.md)<br/>-**Branches**: [Create work in branches](../git/tutorial/branches.md)<br/>-**Pull Requests**: [Review code with pull requests](../git/tutorial/pullrequest.md)<br/>-**Sync**: [Update code with fetch and pull](../git/tutorial/pulling.md)) | **My Work**: [Suspend/resume work](../tfvc/suspend-your-work-manage-your-shelvesets.md)  &#124; [Code review](../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)<br/>-**Pending Changes**: [Manage pending changes](../tfvc/develop-code-manage-pending-changes.md) &#124; [Find shelvesets](../tfvc/suspend-your-work-manage-your-shelvesets.md) &#124; [Resolve conflicts](../tfvc/resolve-team-foundation-version-control-conflicts.md)<br/>-**Source Control Explorer**: [Add/view files and folders](../tfvc/add-files-server.md) |
 
-<div style="clear:left;font-size:100%">
-</div>
- 
 ### Report and Document pages (TFS only)  
 
 The **Report** page opens the [Reporting Services report site](../report/sql-reports/reporting-services-reports.md). This page appears only when your team project has been configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting has been configured for the team project.
@@ -207,104 +125,16 @@ From the **Settings** page, you can configure administrative features for either
 Most of the links open to a web portal administration page. Not all settings are available from the Team Explorer plug-in for Eclipse. 
  
 
-<div style="float:left;width:340px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Team project settings</p>
-<p style="padding-bottom:0px;text-align:left;">Required membership:  [Project Administrators](../setup-admin/add-administrator-tfs.md#team-project)</p>
-<ul style="padding-left:20px">
-<li style="margin-bottom:2px">[Security (manage project-level permissions)](../setup-admin/permissions.md#team-project-level-permissions)</li>
- <li style="margin-bottom:2px">[Group membership: manage group permissions](../setup-admin/permissions.md)</li> 
- <li style="margin-bottom:2px">Source Control: Configure the [check-in and check-out policies](../tfvc/add-check-policies.md) (TFVC only)  </li> 
- <li style="margin-bottom:2px">[Work Item Areas (project-wide)](../work/customize/set-area-paths.md)</li>
- <li style="margin-bottom:2px">[Work Item Areas (project-wide)](../work/customize/set-iteration-paths-sprints.md)</li>
-<li style="margin-bottom:2px">[Portal Settings (Enable portal or process guidance)](../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)</li>
-<li style="margin-bottom:2px">[Project Alerts](../work/track/alerts-and-notifications.md)</li>
-
-</ul>
-</div> 
- 
-
-<div style="float:left;width:340px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Collection settings (TFS)</p>
-<p style="padding-bottom:0px;text-align:left;">Required membership: [Project Collection Administrators](../setup-admin/add-administrator-tfs.md#project-collection)</p>
-<ul style="padding-left:40px">
-<li style="margin-bottom:2px">[Security (manage project-level permissions)](../setup-admin/permissions.md#collection-level)</li>
- <li style="margin-bottom:2px">[Group membership: manage group permissions](../setup-admin/permissions.md)</li>
- <li style="margin-bottom:2px">Source Control: Configure the [default workspace type for the collection](../tfvc/decide-between-using-local-server-workspace.md#manage-team-project-collection-workspace-settings-for-your-team) (TFVC only)  </li> 
- <li style="margin-bottom:2px">[Process Template Manager: download, upload, delete, or set a default process template](../work/guidance/manage-process-templates.md)  
-</ul>
-</div>  
-
-<div style="clear:left;font-size:100%">
-</div> 
+> [!div class="mx-tdBreakAll"]  
+> |Team project settings | Collection settings (TFS)  |
+> |-------------|----------|
+> |Required membership: [Project Administrators](../setup-admin/add-administrator-tfs.md#team-project)<br/>-[Security (manage project-level permissions)](../setup-admin/permissions.md#team-project-level-permissions)<br/>-[Group membership: manage group permissions](../setup-admin/permissions.md)<br/>-Source Control: Configure the [check-in and check-out policies](../tfvc/add-check-policies.md) (TFVC only)<br/>-[Work Item Areas (project-wide)](../work/customize/set-area-paths.md)<br/>-[Work Item Areas (project-wide)](../work/customize/set-iteration-paths-sprints.md)<br/>-[Portal Settings (Enable portal or process guidance)](../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)<br/>-[Project Alerts](../work/track/alerts-and-notifications.md) |Required membership: [Project Collection Administrators](../setup-admin/add-administrator-tfs.md#project-collection)<br/>-[Security (manage project-level permissions)](../setup-admin/permissions.md#collection-level)<br/>-[Group membership: manage group permissions](../setup-admin/permissions.md)<br/>-Source Control: Configure the [default workspace type for the collection](../tfvc/decide-between-using-local-server-workspace.md#manage-team-project-collection-workspace-settings-for-your-team) (TFVC only)<br/>-[Process Template Manager: download, upload, delete, or set a default process template](../work/guidance/manage-process-templates.md) |
 
 To learn more about administration features, see [Work in the web portal, administration context](work-web-portal.md#admin-context).
 
 
 ## Related notes 
 You've now got a basic understanding of how to work in the Team Explorer add-in for Visual Studio and Eclipse.
-
-Additional resources you may find of interest are listed below. Note that many of these resources you access from the web portal, and not from Team Explorer.   
-
-<div style="float:left;width:220px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Setup</p>
-<ul style="padding-left:10px">
- <li style="margin-bottom:2px">[Choose a process (Agile, Scrum, CMMI) - review work item hierarchy](../work/guidance/choose-process.md)</li>
- <li style="margin-bottom:2px">[Create a team project](../setup-admin/create-team-project.md)</li>
- <li style="margin-bottom:2px">[Add users](../setup-admin/add-users.md)</li>
- <li style="margin-bottom:2px">[Connect to team projects](connect-team-projects.md)</li>
- <li style="margin-bottom:2px">[Work in the web portal](work-web-portal.md) </li>
- <li style="margin-bottom:2px">[User-focused features](user-focused-features.md) </li>
- <li style="margin-bottom:2px">[Collaborate using team resources](../work/scale/manage-team-assets.md) </li>
-</ul>
-</div>
-
-<div style="float:left;width:240px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Manage work</p>
-<ul style="padding-left:20px">
- <li style="margin-bottom:2px">[Add work items](../work/backlogs/add-work-items.md)</li>
- <li style="margin-bottom:2px">[Create your backlog](../work/backlogs/create-your-backlog.md)</li>
- <li style="margin-bottom:2px">[Organize your backlog](../work/backlogs/organize-backlog.md)</li>
- <li style="margin-bottom:2px">[Pre-populate fields using a template](../work/productivity/work-item-template.md)</li>
- <li style="margin-bottom:2px">[Change, move, or delete a work item](../work/backlogs/remove-delete-work-items.md)</li>
- <li style="margin-bottom:2px">[Productivity tips](../work/productivity/productivity-tips.md)</li>
- <li style="margin-bottom:2px">[Work item field index](../work/guidance/work-item-field.md)</li>
-</ul>
-</div>
-
-<div style="float:left;width:160px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Track work</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Queries (work items)](../work/track/using-queries.md)</li>
- <li style="margin-bottom:2px">[Charts](../report/charts.md)</li>
- <li style="margin-bottom:2px">[Dashboards](../report/dashboards.md)</li>
- <li style="margin-bottom:2px">[Share work plans](../work/track/share-plans.md)</li>
- <li style="margin-bottom:2px">[Follow a work item](../collaborate/follow-work-items.md)</li>
- <li style="margin-bottom:2px">[Alerts](../work/track/alerts-and-notifications.md) </li> 
- <li style="margin-bottom:2px">[Tag work items](../work/track/add-tags-to-work-items.md)</li>
- <li style="margin-bottom:2px">[History & audit](../work/track/history-and-auditing.md)</li>
-</ul>
-</div>
-
-<div style="float:left;width:170px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Customize</p>
-<ul style="padding-left:30px">
- <li style="margin-bottom:2px">[Customize the work tracking experience](../work/customize/customize-work.md)</li>
- <li style="margin-bottom:2px">[Cards on boards](../work/customize/customize-cards.md)</li>
-
-</ul>
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
-
-### User accounts and licensing  
-
-To connect to a team project from Team Explorer, you need your user account added to the team project. This is typically done by the [account owner (Team Services)](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) or a [project administrator (TFS)](../setup-admin/add-users.md). 
-
-Team Services provides access to the first 5 account users free. After that, you need to [pay for more users (Team Services)](../setup-admin/team-services/buy-basic-access-add-team-services-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid Team Services users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
-
-In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../quickstart/get-started-stakeholder.md).  
 
 ### Troubleshoot connection problems  
 
@@ -352,7 +182,6 @@ If data doesn't appear as expected, the first thing to try is to refresh your cl
 [!INCLUDE [temp](_shared/when-to-refresh-client.md)]
 
 
-
 [!INCLUDE [temp](../_shared/images-not-appearing-vs.md)] 
 
 
@@ -369,8 +198,7 @@ By installing [TFS Power Tools](https://marketplace.visualstudio.com/items?itemN
 
 Additional requirements may apply.
 
->[!NOTE]  
->For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../work/process/new-work-item-experience.md).  
+> [!NOTE]  
+> For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](/docs/work/process/new-work-item-experience).  
 
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)]

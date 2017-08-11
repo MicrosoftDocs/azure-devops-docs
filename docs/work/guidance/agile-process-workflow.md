@@ -110,25 +110,13 @@ As work progresses, you change the State field to update the status. Optionally,
 
 By updating the workflow, teams know which items are new, in progress, or completed. Most WITs support transition both forward and backward from each workflow state. These diagrams show the main progression and regression states of the user story, bug, and task WITs. 
 
-<div style="float:left;width:240px;margin:12px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">User Story</p>
-<img src="_img/ALM_PT_Agile_WF_UserStory.png" title="User Story workflow states, Agile process " alt="User Story workflow states, Agile process" />
-</div>
 
-<div style="float:left;width:200px;margin:12px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Bug</p>
-<img src="_img/agile-bug-workflow.png" title="Bug workflow states, Agile process" style="padding-left:20px;" alt="Bug workflow states, Agile process" />
-</div>
-
-<div style="float:left;width:220px;margin:12px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Task</p>
-<img src="_img/ALM_PT_Agile_WF_Task.png" title="Task workflow states, Agile process " style="padding-left:20px;" alt="Task workflow states, Agile process" />
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |User Story |Bug |Task |  
+> |-------------|----------|---------| 
+> |<img src="_img/ALM_PT_Agile_WF_UserStory.png" title="User Story workflow states, Agile process " alt="User Story workflow states, Agile process" /> |<img src="_img/agile-bug-workflow.png" title="Bug workflow states, Agile process" style="padding-left:20px;" alt="Bug workflow states, Agile process" /> |<img src="_img/ALM_PT_Agile_WF_Task.png" title="Task workflow states, Agile process " style="padding-left:20px;" alt="Task workflow states, Agile process" />| 
 
 
-
-<div style="clear:left;font-size:100%">
-</div>
  
 A typical workflow progression for a user story follows:
 
@@ -340,5 +328,4 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 </table>
 
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)]
 

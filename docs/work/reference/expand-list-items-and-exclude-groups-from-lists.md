@@ -120,12 +120,10 @@ In this example, the field contains a string value, a group, and a global list. 
 <tr>
 <td>
 
-<div style="color:Black;">
 <pre><code>&lt;ALLOWEDVALUES expanditems="true" filteritems="excludegroups"&gt; 
    &lt;LISTITEM value="string" /&gt; 
    &lt;LISTITEM value="[Project]\Business Analysts" /&gt;  
    &lt;GLOBALLIST name="BoolValues" /&gt; </code></pre>
-</div>
 
 
 </td>

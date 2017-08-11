@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/19/2017
+ms.date: 08/11/2017 
 ---
 
 # Add a custom field to a work item type (Inheritance process model)  
@@ -21,38 +21,11 @@ For a list of all fields defined for your account&mdash;which includes all field
 
 Locked and inherited fields correspond to fields inherited from a system process. You can't customize locked fields. You can customize some options for inherited fields. 
 
-<div style="float:left;width:160px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">![Inherited field](_img/inherited-icon.png) **Inherited fields:**</p>
-- [Change the field label](#rename-field)    
-- [Show/Hide field on form](#show-hide-field)      
-</div>
 
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">**Custom fields:**</p>
-- [Add a custom field](#add-field)   
-- [Add pick list (drop-down menu)](#pick-list)   
-- [Add person-name/Identity](#identity)   
-- [Add a rich-text (HTML) field](#html)    
-- [Add a checkbox (Boolean) field](#boolean-field)  
-- [Add a custom control](custom-controls-process.md)   
-   
-</div>
-
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">&nbsp;&nbsp;&nbsp;</p>
-- [Change the field label](#rename-field)      
-- [Set Required/Default options](#options)    
-- [Move the field within the layout](customize-process-form.md#move-field)   
-- [Remove field from form](#remove-field)     
-- [Delete field](#delete-field)   
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
-
-<br/>
-
+> [!div class="mx-tdBreakAll"]  
+> |![Inherited field](_img/inherited-icon.png) Inherited fields |Custom fields |&nbsp;&nbsp;&nbsp;| 
+> |-------------|----------|---------| 
+> |- [Change the field label](#rename-field)<br/>- [Show/Hide field on form](#show-hide-field) |- [Add a custom field](#add-field)<br/>- [Add pick list (drop-down menu)](#pick-list)<br/>- [Add person-name/Identity](#identity)<br/>- [Add a rich-text (HTML) field](#html) <br/>- [Add a checkbox (Boolean) field](#boolean-field)<br/>- [Add a custom control](custom-controls-process.md) | - [Change the field label](#rename-field)<br/>- [Set Required/Default options](#options)<br/>- [Move the field within the layout](customize-process-form.md#move-field)<br/>- [Remove field from form](#remove-field)<br/>- [Delete field](#delete-field) | 
 
 When adding custom fields, note the following limits:  
 *   A maximum of 64 fields can be defined for each WIT  

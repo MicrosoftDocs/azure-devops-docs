@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: C6C40D47-F937-48D3-9CD7-2B067FD82C31
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/17/2017  
+ms.date: 08/11/2017
 ---
 
 #Collaborate overview   
@@ -32,7 +32,6 @@ Use your Account home page to quickly navigate to teams, team projects, work ite
 <ul style="padding-left:30px;font-size:90%">
 
 <li style="margin-bottom:1px">[Account home pages](../connect/account-home-pages.md)</li>
-<li style="margin-bottom:1px">[User-focused features](../connect/user-focused-features.md)</li>
 <li style="margin-bottom:1px">[Team projects](../connect/account-home-pages.md#projects)</li>
 <li style="margin-bottom:1px">[My Favorites](../connect/account-home-pages.md#favorites) </li>
 <li style="margin-bottom:1px">[Work items assigned to me](../connect/account-home-pages.md)</li>
@@ -122,7 +121,7 @@ Follow a specific object, such as a work item or pull request, to get notified w
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">&#64;mention</p>
 <ul style="padding-left:30px;font-size:90%">
-<li style="margin-bottom:1px">[@mention to notify a team member](../work/productivity/productivity-tips.md#mention-person-id) </li>
+<li style="margin-bottom:1px">[@mention to further discussion](../notifications/at-mentions.md) </li>
 <li style="margin-bottom:1px">[Work item discussions](../work/concepts/work-item-form-controls.md#discussion) </li>
 </ul>
 
@@ -242,7 +241,7 @@ Use the quick add panel from the backlog pages to add user stories, requirements
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Quick linking</p>
 
 <ul style="padding-left:30px;font-size:90%">
-<li style="margin-bottom:1px">[#ID control to link a pull request to a work item](../work/productivity/productivity-tips.md#mention-wit-id) </li>
+<li style="margin-bottom:1px">[#ID control to link to work items](../notifications/add-links-to-work-items.md) </li>
 <li style="margin-bottom:1px">[#ID control in discussions, and commit, changeset, and shelveset comments](#mention-wit-id)  </li>
 <li style="margin-bottom:1px">[Map backlog items (parent-child links)](../work/backlogs/organize-backlog.md) </li>
 </ul>

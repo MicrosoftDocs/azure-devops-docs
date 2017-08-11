@@ -7,7 +7,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 493362ae-5318-4719-9e0f-48c74ff8f0ba
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/15/2017 
+ms.date: 08/11/2017
 ---
 
 # Navigating in the web portal
@@ -152,7 +152,7 @@ Several features display information based on the logged-in user account or the 
 
 <img src="../setup-admin/_img/account-prefs/open-profile-team-services.png" alt="Team Services, My Profile link on Account menu" style="border: 1px solid #CCCCCC;" />   
 
-In addition, they have access to special queries&mdash;Assigned to me query, Followed work items, and more&mdash; dashboard widget such as the Assigned to me widget, and the ability to save favorites under a **My favorites** folder. Here's an example of the Assigned to me widget that you can add to a dashboard. To learn more, see [User-focused features](user-focused-features.md).
+In addition, they have access to special queries&mdash;Assigned to me query, Followed work items, and more&mdash; dashboard widget such as the Assigned to me widget, and the ability to save favorites under a **My favorites** folder. Here's an example of the Assigned to me widget that you can add to a dashboard. 
 
 <img src="_img/web-portal-assigned-to-me-widget.png" alt="Team Services, web portal, user profile/account menu" style="border: 1px solid #CCCCCC;" /> 
 
@@ -474,9 +474,7 @@ Additional resources you may find of interest:
 
 - [Work effectively from your account home page](account-home-pages.md)
 - [Connect to team projects](connect-team-projects.md)  
-- [Work in Team Explorer](work-team-explorer.md)
-- [User-focused features](user-focused-features.md)  
-- [Collaborate using team resources](../work/scale/manage-team-assets.md)  
+- [Work in Team Explorer](work-team-explorer.md)  
 
 <!---
 ### Navigating within the admin context (Team Services and TFS 2017)  
@@ -498,7 +496,7 @@ The admin project setting hubs appear. While the hub names are similar to those 
 
 <img src="_img/web-portal-admin-project-settings-new-nav.png" alt="Web portal, new nav, project admin setting" style="border: 1px solid #CCCCCC;" />    
 
-####Admin account settings 
+#### Admin account settings 
 To open the admin account settings, choose the Account settings option from the project/team menu.
 
 ![Web portal, new nav, open account settings](_img/web-portal-open-account-settings-new-nav.png)    

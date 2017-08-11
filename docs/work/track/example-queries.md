@@ -33,21 +33,12 @@ For the mechanics of constructing and saving queries, see [Use the query editor 
 
 If you are looking for a specific work item, using the adhoc query or search box query may be your best bet. If you want to generate a list of work items to triage, update, chart, or share with others, then use a managed query. 
  
-### Get started with queries< 
-- [Organize and run managed queries](organize-view-run-queries.md)  
-- [Adhoc versus managed queries](adhoc-vs-managed-queries.md)    
+- [Organize and run managed queries](organize-view-run-queries.md)     
 - [Search box queries](search-box-queries.md)  
 - [Query editor](using-queries.md)    
 - [Query operators & macros](query-operators-variables.md)       
 - [Work item field index](../guidance/work-item-field.md)   
 - [Query permissions](set-query-permissions.md)  
-
-### Track and share work items 
-- [Add tags to work items](add-tags-to-work-items.md)  
-- [Follow work](../../collaborate/follow-work-items.md)  
-- [Share work plans](share-plans.md)  
-- [Link work items](link-work-items-support-traceability.md)  
- 
 
 ### Query charts and widgets 
 - [Chart a flat-list query](../../report/charts.md)   
@@ -62,124 +53,24 @@ If you are looking for a specific work item, using the adhoc query or search box
 
 ####*You can list work items based on the following criteria...*  
 
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;margin-bottom:0px;text-align:center;">Assignment and<br/>other account-specific fields</p>
-- [Active items assigned to me](query-by-workflow-changes.md#me)   
-- [Closed items that were assigned to me](query-by-workflow-changes.md#me)   
-- [Active items assigned to my team](query-by-workflow-changes.md#me)   
-- [Items I've modified in the last 30 days](query-by-workflow-changes.md#me)   
-- [Items I closed](query-by-workflow-changes.md#workflow-change-who)   
-- [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change-who)   
-  
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |Assignment and<br/>other account-specific fields |<br/>Keywords or phrases |Work item counts<br/>and numeric fields  |  
+> |-------------|----------|---------|  
+> |- [Active items assigned to me](query-by-workflow-changes.md#me)<br/>- [Closed items that were assigned to me](query-by-workflow-changes.md#me)<br/>- [Active items assigned to my team](query-by-workflow-changes.md#me)<br/>- [Items I've modified in the last 30 days](query-by-workflow-changes.md#me)<br/>- [Items I closed](query-by-workflow-changes.md#workflow-change-who)<br/>- [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change-who) |- [Items containing a keyword/phrase](titles-ids-descriptions.md#keyword)<br/>- [Items not containing a keyword/phrase](titles-ids-descriptions.md#keyword)<br/>- [Items with an undefined field](titles-ids-descriptions.md#undefined-value)<br/>- [Items that belong to a category](titles-ids-descriptions.md#category)|- [Count of active bugs per developer](query-numeric.md#counts)<br/>- [Count of bugs by area and states](query-numeric.md#counts)<br/>- [Sum of story points and their status](query-numeric.md#effort)<br/>- [Burnup chart of user stories for a sprint](query-numeric.md#effort)<br/>- [Sum of remaining work per developer](query-numeric.md#work)  | 
 
-
-<div style="float:left;width:240px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;margin-bottom:0px;text-align:center;"><br/>Keywords or phrases</p> 
-- [Items containing a keyword/phrase](titles-ids-descriptions.md#keyword)   
-- [Items not containing a keyword/phrase](titles-ids-descriptions.md#keyword)   
-- [Items with an undefined field](titles-ids-descriptions.md#undefined-value)   
-- [Items that belong to a category](titles-ids-descriptions.md#category)      
-</div>
-
-
-<div style="float:left;width:240px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;margin-bottom:0px;text-align:center;">Work item counts<br/>and numeric fields</p>
-- [Count of active bugs per developer](query-numeric.md#counts)   
-- [Count of bugs by area and states](query-numeric.md#counts)   
-- [Sum of story points and their status](query-numeric.md#effort)   
-- [Burnup chart of user stories for a sprint](query-numeric.md#effort)    
-- [Sum of remaining work per developer](query-numeric.md#work)    
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
-<hr/>
-
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;margin-bottom:0px;text-align:center;">History and revision changes</p>
-- [History contains a specific word](history-and-auditing.md)   
-- [History doesn't contain a specific word](history-and-auditing.md)   
-- [Reactivated items](history-and-auditing.md)   
-- [Items closed within a time period](history-and-auditing.md)   
-- [Items you've been associated with](history-and-auditing.md)      
-</div>
-
-
-<div style="float:left;width:240px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;margin-bottom:0px;text-align:center;">Date field or current iteration</p>
-- [Items created in the last 30 days](query-by-date-or-current-iteration.md)   
-- [Items modified on a specific date](query-by-date-or-current-iteration.md)   
-- [Items resolved today](query-by-date-or-current-iteration.md)   
-- [Items closed within a specific time period](query-by-date-or-current-iteration.md)   
-- [Items whose updated status](query-by-date-or-current-iteration.md)   
-- [Items closed in the current sprint](query-by-date-or-current-iteration.md)   
-   
-</div>
-
-
-<div style="float:left;width:240px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;margin-bottom:0px;text-align:center;">State, reason, or workflow changes</p>
-- [Resolved user stories](query-by-workflow-changes.md#workflow-change)   
-- [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change)   
-- [Items failing acceptance tests](query-by-workflow-changes.md#workflow-change)   
-- [Items closed within the last 15 days](query-by-workflow-changes.md#workflow-change)   
-- [Items removed as they're duplicate](query-by-workflow-changes.md)   
-- [Items closed and then reactivated](query-by-workflow-changes.md#reactivated)   
-- [Stories in the Code/Doing column](query-by-workflow-changes.md#kanban_query_fields)   
-- [Items in the Expedite swimlane](query-by-workflow-changes.md#kanban_query_fields)   
-- [Items in a swimlane containing "Test"](query-by-workflow-changes.md#kanban_query_fields)   
-   
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-<hr/>
-
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;margin-bottom:0px;text-align:center;">Links and attachments</p>
-- [All child items of a single epic ](linking-attachments.md)   
-- [All related items](linking-attachments.md)   
-- [Items with one or more attachments](linking-attachments.md)   
-- [Items with 2 or more hyperlinks ](linking-attachments.md)   
-- [Items containing external links](linking-attachments.md)      
-</div>
-
-
-<div style="float:left;width:240px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;margin-bottom:0px;text-align:center;">Tags</p> 
-- [Items containing a specific tag](add-tags-to-work-items.md)   
-- [Items that don't contain a specific tag](add-tags-to-work-items.md)   
-- [Items that contain two or more tags ](add-tags-to-work-items.md)     
-</div>
-
-
-<div style="float:left;width:240px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;margin-bottom:0px;text-align:center;">Build and Test fields</p>
-- [List bugs and linked test cases](build-test-integration.md#linked-bugs)   
-- [List automated test cases](build-test-integration.md)   
-- [List requirement-based test suites](build-test-integration.md)   
-- [List query-based test suites](build-test-integration.md)     
-</div>
-<div style="clear:left;font-size:100%">
-</div>
-
-<hr/>
-
-
-
+> [!div class="mx-tdBreakAll"]  
+> |History and revision changes |Date field or current iteration |State, reason, or workflow changes  |  
+> |-------------|----------|---------|  
+> |- [History contains a specific word](history-and-auditing.md)<br/>- [History doesn't contain a specific word](history-and-auditing.md)<br/>- [Reactivated items](history-and-auditing.md)<br/>- [Items closed within a time period](history-and-auditing.md)<br/>- [Items you've been associated with](history-and-auditing.md) |- [Items created in the last 30 days](query-by-date-or-current-iteration.md)<br/>- [Items modified on a specific date](query-by-date-or-current-iteration.md)<br/>- [Items resolved today](query-by-date-or-current-iteration.md)<br/>- [Items closed within a specific time period](query-by-date-or-current-iteration.md) <br/>-  [Items whose updated status](query-by-date-or-current-iteration.md)<br/>- [Items closed in the current sprint](query-by-date-or-current-iteration.md) |- [Resolved user stories](query-by-workflow-changes.md#workflow-change)<br/>-  [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change) <br/>- - [Items failing acceptance tests](query-by-workflow-changes.md#workflow-change)<br/>-  [Items closed within the last 15 days](query-by-workflow-changes.md#workflow-change)<br/>-  [Items removed as they're duplicate](query-by-workflow-changes.md)<br/>-  [Items closed and then reactivated](query-by-workflow-changes.md#reactivated)<br/>-  [Stories in the Code/Doing column](query-by-workflow-changes.md#kanban_query_fields)<br/>-  [Items in the Expedite swimlane](query-by-workflow-changes.md#kanban_query_fields)<br/>-  [Items in a swimlane containing "Test"](query-by-workflow-changes.md#kanban_query_fields) |    
+ 
+> [!div class="mx-tdBreakAll"]  
+> |Links and attachments |Tags |Build and Test fields  |  
+> |-------------|----------|---------|  
+> |-  [All child items of a single epic ](linking-attachments.md)<br/>- [All related items](linking-attachments.md)<br/>- [Items with one or more attachments](linking-attachments.md)<br/>- [Items with 2 or more hyperlinks ](linking-attachments.md) <br/>- [Items containing external links](linking-attachments.md) |- [Items containing a specific tag](add-tags-to-work-items.md)<br/>- [Items that don't contain a specific tag](add-tags-to-work-items.md)<br/>- [Items that contain two or more tags ](add-tags-to-work-items.md) |- [List bugs and linked test cases](build-test-integration.md#linked-bugs)<br/>- [List automated test cases](build-test-integration.md)<br/>- [List requirement-based test suites](build-test-integration.md)<br/>- [List query-based test suites](build-test-integration.md) |    
 
 ## Related notes
 
 To add a custom field to support your query needs, see [Customize your work tracking experience](../customize/customize-work.md). 
-
-- [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
-- [Add work items](../backlogs/add-work-items.md)  
-- [Work item field index](../guidance/work-item-field.md) 
-- [Agile tools](../overview.md)  
-- [Work Item Query Language](../../reference/wiql-syntax.md)  
-
 
 ### Visualize related work and other objects 
 

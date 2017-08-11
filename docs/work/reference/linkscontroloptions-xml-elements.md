@@ -36,42 +36,13 @@ The  **LinksControlOptions** element is a child element of the **Control** eleme
 
 The updated **LinksControlOptions** element introduces several new elements and deprecates several elements that are still in use with the [client **LinksControlOptions** element version](https://msdn.microsoft.com/library/aa337625.aspx). Overall, it's a much simpler syntax structure than its predecessor. 
 
-<div style="float:left;width:200px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">New elements</p>
-<ul style="list-style-type:none;padding-left:10px">
-<li>```ListViewOptions```   </li>
-<li>```LinkFilters```  </li>
-<li>```ExternalLinkFilter```  </li>
-<li>```WorkItemLinkFilter```   </li>
-<li>```Columns```   </li>
-<li>```Column```   </li>
-</ul>
-</div>
 
-
-<div style="float:left;width:200px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Maintained elements</p>
-<ul style="list-style-type:none;padding-left:30px">
-<li>```Filter```  </li>
-<li>```LinksControlOptions```  </li>
-<li>```WorkItemTypeFilters```   </li>
-</ul>
-</div>
-
-<div style="float:left;width:200px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Deprecated elements</p>
-<ul style="list-style-type:none;padding-left:30px">
-<li>```ExternalLinkFilters```   </li>
-<li>```WorkItemLinkFilters```   </li>
-<li>```LinkColumns``` </li>
-<li>```LinkColumn```   </li>
-</ul>
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |New elements  |Maintained elements  |Deprecated elements  |
+> |-------------------------|--------------------|----------------------|
+> |- ListViewOptions<br/>- LinkFilters<br/>- ExternalLinkFilter<br/>- WorkItemLinkFilter<br/>- Columns<br/>- Column |- Filter<br/>- LinksControlOptions<br/>- WorkItemTypeFilters |- ExternalLinkFilters<br/>- WorkItemLinkFilters<br/>- LinkColumns<br/>- LinkColumn |
  
-
-<div style="clear:left;font-size:100%">
-</div>
- 
+  
 ### Differences between web and client links controls   
 
 The following table summarizes the differences between the **LinksControlOptions** elements used within the **WebLayout** section and those that are used within the **Layout** section.  The **WebLayout** section supports display of work item forms through the web portal, while the **Layout** section supports display of work item forms from the web portal for TFS 2015 and clients such as Visual Studio. 

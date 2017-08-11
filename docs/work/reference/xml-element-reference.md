@@ -52,8 +52,10 @@ By using the index of elements in this topic, you can look up the syntax structu
 > - For TFS 2015 users, the new form isn't available. Use the (**FORM-Layout**) elements to customize your WIT definitions. You must [upgrade to TFS 2017 or later version](https://www.visualstudio.com/downloads/#team-foundation-server-2017) to access the new form.  
 
 
-<div style="float:left;width:130px;margin:3px;font-size:90%">
-<h3 style="margin-bottom:8px">WITD</h3>
+<table>
+<tr>
+<td>
+<h3>WITD</h3>
 - [DESCRIPTION](all-witd-xml-elements-reference.md)  
 - [FIELDS](define-modify-work-item-fields.md) (Definition)  
 - [FORM](all-form-xml-elements-reference.md)  
@@ -75,8 +77,8 @@ By using the index of elements in this topic, you can look up the syntax structu
 - [TRANSITION](transition-xml-element.md)     
 - [TRANSITIONS](all-workflow-xml-elements-reference.md)     
 - [WORKFLOW](all-workflow-xml-elements-reference.md) 
-</div>
-<div style="float:left;width:155px;margin:3px;font-size:90%">
+</td>
+<td>
 <h3 style="margin-bottom:8px">FIELD</h3>
 - [ALLOWEDVALUES](define-pick-lists.md)  
 - [ALLOWEXISTINGVALUE](define-pick-lists.md)  
@@ -101,11 +103,9 @@ By using the index of elements in this topic, you can look up the syntax structu
 - [WHEN](assign-conditional-based-values-and-rules.md)     
 - [WHENNOT](assign-conditional-based-values-and-rules.md)     
 - [WHENCHANGED](assign-conditional-based-values-and-rules.md)     
-- [WHENNOTCHANGED](assign-conditional-based-values-and-rules.md) 
-</div>
-
-
-<div style="float:left;width:155px;margin:3px;font-size:90%">
+- [WHENNOTCHANGED](assign-conditional-based-values-and-rules.md)
+</td>
+<td> 
 <h3 style="margin-bottom:8px">FORM-Layout</h3>
 - [Column](all-form-xml-elements-reference.md)     
 - [Content](webpagecontroloptions-xml-elements-reference.md)     
@@ -130,9 +130,8 @@ By using the index of elements in this topic, you can look up the syntax structu
 - [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)  
 - [WorkItemLinkFilters](linkscontroloptions-elements.md)     
 - [WorkItemTypeFilters](linkscontroloptions-elements.md)      
-</div>
-
-<div style="float:left;width:170px;margin:3px;font-size:90%">
+</td>
+<td>
 <h3 style="margin-bottom:8px">FORM-WebLayout</h3>
 - [Column](linkscontroloptions-xml-elements.md)   
 - [Columns](linkscontroloptions-xml-elements.md)   
@@ -170,12 +169,9 @@ By using the index of elements in this topic, you can look up the syntax structu
 - [WorkItemLinkFilter](linkscontroloptions-xml-elements.md)   
 - [WorkItemLinkFilters](linkscontroloptions-elements.md)     
 - [WorkItemTypeFilters](linkscontroloptions-elements.md)
-    
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
+</td>
+</tr>
+</table>
   
 <a name="index_objects"></a> 
 
@@ -183,8 +179,10 @@ By using the index of elements in this topic, you can look up the syntax structu
 
 The following table provides an index to the reference topics for the elements used to define  categories, global lists, link types, and process configuration.  
 
-<div style="float:left;width:180px;margin:3px;font-size:90%">
-<h3 style="margin-bottom:8px">[Categories](categories-xml-element-reference.md)</h3>
+<table>
+<tr>
+<td>
+<h3>[Categories](categories-xml-element-reference.md)</h3>
 - CATEGORIES    
 - CATEGORY   
 - DEFAULTWORKITEMTYPE  
@@ -197,10 +195,9 @@ The following table provides an index to the reference topics for the elements u
 
 <h3 style="margin-bottom:8px">[Link types](link-type-element-reference.md)</h3>
 - LinkTypes    
-- LinkType   
-  
-</div>
-<div style="float:left;width:220px;margin:3px;font-size:90%">
+- LinkType    
+</td>
+<td>
 <h3 style="margin-bottom:8px">[ProcessConfiguration](process-configuration-xml-element.md)</h3>
 - AddPanel  
 - BugWorkItems  
@@ -229,13 +226,9 @@ The following table provides an index to the reference topics for the elements u
 - Weekends  
 - WorkItemColor  
 - WorkItemColors  
-
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
-<br/>
+</td>
+</tr>
+</table> 
 
 <!---
 ##  Objects used to track work  

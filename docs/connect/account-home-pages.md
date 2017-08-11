@@ -7,7 +7,7 @@ ms.prod: vs-devops-alm
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/29/2017  
+ms.date: 08/11/2017
 ---
 
 # Work effectively from your account hub
@@ -165,10 +165,5 @@ To learn more about team rooms, see [Collaborate in a team room](../collaborate/
 
 - [Enable preview features](../collaborate/preview-features.md)  
 - [Work in the web portal](work-web-portal.md) 
-- [User-focused features](user-focused-features.md)  
-- [Productivity tips](../work/productivity/productivity-tips.md)  
 - [Connect to team projects](connect-team-projects.md)  
-- [Collaborate using team resources](../work/scale/manage-team-assets.md)  
 
-
-[!INCLUDE [temp](../_shared/switch-team-context.md)]

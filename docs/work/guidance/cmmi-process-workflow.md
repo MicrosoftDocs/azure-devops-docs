@@ -14,7 +14,6 @@ ms.date: 04/05/2017
 
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>
 
-
 Teams use the work item types (WITs) provided with the MSF for CMMI Process Improvement 2015 (CMMI) process to plan and track progress of software projects. Teams define requirements to manage the backlog of work and then, using the Kanban board, track progress by updating the status of requirements.
  
 <img src="_img/cmmi-process-plan-wits.png" alt="CMMI process, WITs used to plan and track" style="border: 1px solid #CCCCCC;" />
@@ -25,10 +24,10 @@ Using Microsoft Test Manager and the web portal, testers create and run test cas
 
 To support additional CMMI processes, teams can track change requests, risks, issues, and notes captured in review meetings.
 
->[!NOTE]  
-><b>Feature availability: </b> Work item tracking forms and features available to you differ depending on whether you connect to the cloud or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. Forms and guidance provided in this topic reflect those available with the [new form experience](../process/new-work-item-experience.md) (Team Services and the web portal for TFS 2017 and later versions). 
+> [!NOTE]  
+> **Feature availability:**  Work item tracking forms and features available to you differ depending on whether you connect to the cloud or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. Forms and guidance provided in this topic reflect those available with the [new form experience](../process/new-work-item-experience.md) (Team Services and the web portal for TFS 2017 and later versions). 
 >
->If you connect to TFS 2015 or earlier versions, or open the form from Visual Studio Team Explorer, see [Add work items (TFS)](../backlogs/add-work-items-tfs.md).    
+> If you connect to TFS 2015 or earlier versions, or open the form from Visual Studio Team Explorer, see [Add work items (TFS)](../backlogs/add-work-items-tfs.md).    
 
 
 ## Define requirements 
@@ -312,22 +311,10 @@ As work progresses, you change the State field to update the status. Optionally,
 
 These diagrams show the main progression and regression states for the Requirement, Bug, and Task WITs. 
 
-<div style="float:left;width:240px;margin:12px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Requirement</p>
-<img src="_img/IC757081.png" title="Requirement workflow states, CMMI process" alt="Requirement workflow states, CMMI process" />
-</div>
-<div style="float:left;width:220px;margin:12px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Bug</p>
-<img src="_img/IC757084.png" title="Bug workflow states, CMMI process" alt="Bug workflow states, CMMI process" />
-</div>
-
-<div style="float:left;width:220px;margin:12px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Task</p>
-<img src="_img/IC757087.png" title="Task workflow states, CMMI process" alt="Task workflow states, CMMI process" />
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |Requirement  |Bug |Task |  
+> |-------------|----------|---------| 
+> |<img src="_img/IC757081.png" title="Requirement workflow states, CMMI process" alt="Requirement workflow states, CMMI process" /> |<img src="_img/IC757084.png" title="Bug workflow states, CMMI process" alt="Bug workflow states, CMMI process" /> |<img src="_img/IC757087.png" title="Task workflow states, CMMI process" alt="Task workflow states, CMMI process" /> |
 
 The typical workflow progression for a requirement is:  
 -   The product owner creates a requirement in the **Proposed** state with the default reason, **New requirement**.  

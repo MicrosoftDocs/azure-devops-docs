@@ -7,25 +7,26 @@ ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 05/10/2017  
+ms.date: 08/11/2017  
 ---
 
 # Use the query editor to create managed queries  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+**Team Services | TFS 2017 | TFS 2015 | TFS 2013**  
 
-Managed queries help you find work items that you want to review, triage, update, or list in a report. Also, with flat-list queries, you can create status and trend charts and place them on your team dashboard. 
-
-To quickly find a work item by ID, simply enter the ID in the [work item search box](search-box-queries.md). Or, you can enter a keyword to list items containing the keyword in its title, description, or history.   
-
-Otherwise, you can use the Query Editor to craft simple or more complex queries based on the filter clauses you specify. Start by choosing from these three query types:
-*	[Flat list of work items](#flat-list-query)
-*	[Hierarchical list using a tree query](#tree-query)
-*	[List showing dependencies using a direct links query](#directs-link-query) 
+You can create queries in Team Services, the  web portal for Team Foundation Server (TFS), and Team Explorer. Also, you can open a query in [Excel](../office/bulk-add-modify-work-items-excel.md) or [Project](../office/create-your-backlog-tasks-using-project.md) to perform bulk additions and modifications.  
 
 For details on constructing query clauses and information on each query operator&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash;and macros, see [Query fields, operators, and macros](query-operators-variables.md). For an index of example queries, see [Create managed queries](example-queries.md#examples). 
 
-You can create queries in Team Services, the  web portal for Team Foundation Server (TFS), and Team Explorer. Also, you can open a query in [Excel](../office/bulk-add-modify-work-items-excel.md) or [Project](../office/create-your-backlog-tasks-using-project.md) to perform bulk additions and modifications.  
+In this topic you'll learn:  
+
+> [!div class="checklist"] 
+> * How to open and edit a query   
+> * How to add or create a query 
+> * How to group query clauses 
+> * Understand when to use a flat-list, tree, or direct-links query 
+> * How to query across team projects    
+
 
 [!INCLUDE [temp](../_shared/image-differences.md)]
 
@@ -90,7 +91,7 @@ If your query results do not return your expected set of work items, follow thes
 - Review the options available to specify [fields, operators, and values](query-operators-variables.md).  
 
 <a id="tree-query" />
-###Use a tree query to view hierarchies  
+### Use a tree query to view hierarchies  
 
 Use the tree query (![Tree Query](_img/11.png)) to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.
 
@@ -159,6 +160,14 @@ All fields from all WITs defined in all team projects in the collection always a
 
 Use **Team Project=@Project** to scope the query to find only those work items defined for the current team project. 
 
+<a id="favorite-query">  </a>
+## Add a query to the dashboard or share it with your team 
+To add a query to the home page or a dashboard, open the ![Context Menu Icon](_img/22.png) context menu for the query and [add it to a specific dashboard or as a team favorite](../../report/dashboards.md).   
+
+Share queries with your team by adding them to a folder under the Shared Queries space.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../setup-admin/add-users.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
+
+You can only add shared queries to dashboards or as team favorites, and only if you have [team administrator or project administrator permissions](../scale/manage-team-assets.md). 
+
 ## Related notes
 
 That's the basics about using queries. For an index of query examples, see [Create managed queries](example-queries.md#examples). To add a custom field to track additional data, see [Customize your work tracking experience](../customize/customize-work.md). 
@@ -169,24 +178,9 @@ See also:
 - [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
 - [Add work items](../backlogs/add-work-items.md)  
 - [Work item field index](../guidance/work-item-field.md) 
-- [Agile tools](../overview.md)   
 - [Chart a flat-list query](../../report/charts.md)  
 - [Create Excel reports from a query (TFS)](../../report/excel/create-status-and-trend-excel-reports.md)
-
-### Add or change columns   
-To add or remove columns or change the result sort order, open Column Options.
-
-![Display Columns Tab in Column Options Dialog](_img/19.png)
-
-Also, from the results list, you can drag a column to a new position and select the column title to change the sort order by column.
-
-<a id="favorite-query">  </a>
-### Add a query to the dashboard or share it with your team 
-To add a query to the home page or a dashboard, open the ![Context Menu Icon](_img/22.png) context menu for the query and [add it to a specific dashboard or as a team favorite](../../report/dashboards.md).   
-
-Share queries with your team by adding them to a folder under the Shared Queries space.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../setup-admin/add-users.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
-
-You can only add shared queries to dashboards or as team favorites, and only if you have [team administrator or project administrator permissions](../scale/manage-team-assets.md). 
+- [Change column options](../how-to/set-column-options.md)
 
 
 ### Task board versus query list items
@@ -284,5 +278,5 @@ See also:
 - [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md)  
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
  
->[!NOTE]  
->For queries made against Team Services, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
+> [!NOTE]  
+> For queries made against Team Services, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  

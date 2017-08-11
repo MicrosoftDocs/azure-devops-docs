@@ -88,6 +88,4 @@ You can create reports and query for data by using the warehouse database. The d
 |[Work Item Changeset tables](work-item-changeset-tables.md)|Links between work items and changesets.|  
 |[Work Item Test Result tables](work-item-test-result-tables.md)|Links between work items and test results.|  
   
-##Related notes
-- [Agile tools](../../work/overview.md)
-- [Dashboards and reports](../overview.md) 
+ 

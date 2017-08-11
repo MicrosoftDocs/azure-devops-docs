@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3   
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/29/2017
+ms.date: 08/11/2017 
 ---
 
 # Customize a process  
@@ -35,157 +35,51 @@ You can customize the elements listed below. Some options of inherited elements 
 
 Choose your inherited process, the work item type and then add and edit fields from the **Layout** page. Customizations are subject to the guidelines and limitations outlined under [What is a field?](customize-process-field.md#field-reference).
 
+> [!div class="mx-tdBreakAll"]  
+> |![Inherited field](_img/inherited-icon.png) Inherited fields |Custom fields |&nbsp;&nbsp;&nbsp;| 
+> |-------------|----------|---------| 
+> |- [Change the field label](customize-process-field.md#rename-field)<br/>- [Show/Hide field on form](customize-process-field.md#show-hide-field) |- [Add a custom field](customize-process-field.md#add-field)<br/>- [Add pick list (drop-down menu)](customize-process-field.md#pick-list)<br/>- [Add person-name/Identity](customize-process-field.md#identity)<br/>- [Add a rich-text (HTML) field](customize-process-field.md#html) <br/>- [Add a checkbox (Boolean) field](customize-process-field.md#boolean-field)<br/>- [Add a custom control](custom-controls-process.md) | - [Change the field label](customize-process-field.md#rename-field)<br/>- [Set Required/Default options](customize-process-field.md#options)<br/>- [Move the field within the layout](customize-process-form.md#move-field)<br/>- [Remove field from form](customize-process-field.md#remove-field)<br/>- [Delete field](customize-process-field.md#delete-field) | 
 
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">![Inherited field](_img/inherited-icon.png) **Inherited fields:**</p>
-- [Change the field label](customize-process-field.md#rename-field)    
-- [Show/Hide field on form](customize-process-field.md#show-hide-field)     
-</div>
-
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">**Custom fields:**</p>
-- [Add a custom field](customize-process-field.md#add-field)   
-- [Add pick list (drop-down menu)](customize-process-field.md#pick-list)   
-- [Add person-name/Identity](customize-process-field.md#identity)   
-- [Add a rich-text (HTML) field](customize-process-field.md#html)    
-- [Add a checkbox (Boolean) field](customize-process-field.md#boolean-field)  
-- [Add a custom control](custom-controls-process.md)   
-   
-</div>
-
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">&nbsp;&nbsp;&nbsp;</p>
-- [Change the field label](customize-process-field.md#rename-field)  
-- [Set Required/Default options](customize-process-field.md#options)   
-- [Move the field within the layout](customize-process-form.md#move-field)  
-- [Remove field from form](customize-process-field.md#remove-field)      
-- [Delete field](customize-process-field.md#delete-field)  
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
 
 
 ### Work item types
 
 Choose your inherited process, and then add or edit a work item type from the **Work item types** page.
 
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">![Inherited field](_img/inherited-icon.png) **Inherited WITs:**</p>
-- [Add/remove custom fields](customize-process-field.md)  
-- [Add/remove custom groups](customize-process-form.md#groups)   
-- [Add/delete custom pages](customize-process-form.md#pages)    
-- [Add/remove a custom control](custom-controls-process.md)     
-- [Enable/disable](customize-process-wit.md#enable-disable)  
-- </div>
+> [!div class="mx-tdBreakAll"]  
+> |![Inherited field](_img/inherited-icon.png) Inherited WITs | Custom WITs |&nbsp;&nbsp;&nbsp;| 
+> |-------------|----------|---------| 
+> |- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove custom groups](customize-process-form.md#groups)<br/>- [Add/delete custom pages](customize-process-form.md#pages)<br/>- [Add/remove a custom control](custom-controls-process.md) <br/>- [Enable/disable](customize-process-wit.md#enable-disable) |- [Add custom WIT](customize-process-wit.md#add-wit)<br/>- [Change color or description](customize-process-wit.md#overview)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove custom groups](customize-process-form.md#groups)<br/>- [Add/delete custom pages](customize-process-form.md#pages)<br/>- [Add/remove a custom control](custom-controls-process.md) |- [Add, edit, or remove a workflow state](customize-process-workflow.md#states)<br/>- [Enable/disable](customize-process-wit.md#enable-disable)<br/>- [Delete](customize-process-wit.md#destroy) |  
 
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">**Custom WITs:**</p>
-- [Add custom WIT](customize-process-wit.md#add-wit)     
-- [Change color or description](customize-process-wit.md#overview)    
-- [Add/remove custom fields](customize-process-field.md)  
-- [Add/remove custom groups](customize-process-form.md#groups)    
-- [Add/delete custom pages](customize-process-form.md#pages)    
-- [Add/remove a custom control](custom-controls-process.md)  
-  
-</div>
-
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">&nbsp;&nbsp;&nbsp;</p>
-- [Add, edit, or remove a workflow state](customize-process-workflow.md#states)   
-- [Enable/disable](customize-process-wit.md#enable-disable)        
-- [Delete](customize-process-wit.md#destroy)    
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
 
 
 ### Web form layout  
 
 Choose your inherited process and the work item type, and then modify the form from the **Layout** page.
 
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">![Inherited field](_img/inherited-icon.png) **Inherited groups:**</p>
-- [Relabel](customize-process-form.md#groups)   
-- [Add/remove custom fields](customize-process-field.md)   
-- [Show/hide fields](customize-process-field.md#remove-field)    
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |![Inherited field](_img/inherited-icon.png) Inherited groups |Custom groups |&nbsp;&nbsp;&nbsp;| 
+> |-------------|----------|---------| 
+> |- [Relabel](customize-process-form.md#groups)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Show/hide fields](customize-process-field.md#remove-field)<br/>![Inherited field](_img/inherited-icon.png) **Inherited pages**<br/>- [Relabel](customize-process-form.md#pages)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove a custom group](customize-process-form.md#groups) |- [Add, modify, re-sequence, delete](customize-process-form.md#groups)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/Hide a group extension](custom-controls-process.md)<br/>**Custom pages**<br/> - [Add, modify, re-sequence, delete](customize-process-form.md#pages)<br/>- [Add/delete custom fields](customize-process-field.md)<br/>- [Add/Hide a page extension](custom-controls-process.md) |    
 
 
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">**Custom groups:**</p>
-- [Add, modify, re-sequence, delete](customize-process-form.md#groups)    
-- [Add/remove custom fields](customize-process-field.md)     
-- [Add/Hide a group extension](custom-controls-process.md)   
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
-
-<br/>
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">![Inherited field](_img/inherited-icon.png) **Inherited pages:**</p>
-- [Relabel](customize-process-form.md#pages)     
-- [Add/remove custom fields](customize-process-field.md)   
-- [Add/remove a custom group](customize-process-form.md#groups)  
-</div>
-
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">**Custom pages:**</p>
-- [Add, modify, re-sequence, delete](customize-process-form.md#pages)   
-- [Add/delete custom fields](customize-process-field.md)   
-- [Add/Hide a page extension](custom-controls-process.md)   
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
-
-
-###Workflow states
+### Workflow states
 
 Choose your inherited process, the work item type, and then modify the workflow from the **States** page.  
 
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">![Inherited field](_img/inherited-icon.png) **Inherited states:**</p>
-- [View workflow states](customize-process-workflow.md#hide-state)   
-- [Hide a state](customize-process-workflow.md#hide-state)       
-</div>
-
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">**Custom states:**</p>
-- [Add a state](customize-process-workflow.md#add-states)   
-- [Edit a state (change color or category)](customize-process-workflow.md#edit-state)   
-- [Remove a state](customize-process-workflow.md#remove-state)   
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |![Inherited field](_img/inherited-icon.png) Inherited states |Custom states |
+> |-------------|----------|
+> |- [View workflow states](customize-process-workflow.md#hide-state)<br/>- [Hide a state](customize-process-workflow.md#hide-state) |- [Add a state](customize-process-workflow.md#add-states)<br/>- [Edit a state (change color or category)](customize-process-workflow.md#edit-state)<br/>- [Remove a state](customize-process-workflow.md#remove-state) |   
 
 ### Backlogs 
 Choose your inherited process, and then modify the backlogs configuration from the **Backlog levels** page. Inherited backlogs aren't locked. 
 
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">![Inherited field](_img/inherited-icon.png) **Inherited backlogs:**</p>
-- [Add a custom WIT](customize-process-backlogs-boards.md)  
-- [Change the default WIT](customize-process-backlogs-boards.md)  
-- [Rename the requirement backlog](customize-process-backlogs-boards.md#edit-product-backlog)  
-- [Rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)  
-</div>
 
-<div style="float:left;width:300px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">**Custom backlogs:**</p>
-- [Add a portfolio backlog which displays custom WITs](customize-process-backlogs-boards.md#portfolio-backlogs)  
-- [Edit or rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)    
-- [Delete the top-level custom portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog) 
-
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
+> [!div class="mx-tdBreakAll"]  
+> |![Inherited field](_img/inherited-icon.png) Inherited backlogs |Custom backlogs |
+> |-------------|----------|
+> |- [Add a custom WIT](customize-process-backlogs-boards.md)<br/>- [Change the default WIT](customize-process-backlogs-boards.md)<br/>- [Rename the requirement backlog](customize-process-backlogs-boards.md#edit-product-backlog)<br/>- [Rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog) |- [Add a portfolio backlog which displays custom WITs](customize-process-backlogs-boards.md#portfolio-backlogs)<br/>- [Edit or rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)<br/>- [Delete the top-level custom portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog) |
 
 
 <a id="start-customizing">  </a>

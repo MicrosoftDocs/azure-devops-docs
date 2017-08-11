@@ -90,51 +90,9 @@ From the Capacity page, enter the capacity and days off for each member of your 
 
 Most teams specify capacity in terms of hours, however, you can also specify it in days. For example, .5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit you will use to estimate the time a task will take to complete. You only have to indicate planned days off. You [manage weekend days or other recurring days off](../customize/set-working-days.md) under team settings.
 
-<!---
->[!NOTE]  
->The user interface is slightly different depending on the platform and version you work from. 
-
-For example, Christie Church's capacity is 6 hours/day for design work. 
-
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;"> 
-
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-
-<li style="float:left;" data-toggle="collapse" data-target="#capacity">Set capacity </li>
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs-2015-capacity">TFS 2015, TFS 2013</a></li>
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs-2015-1-capacity">TFS 2015.1</a></li>
-
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#team-services-capacity">Team Services, TFS 2017</a></li>
-</ul>
- 
-<div id="capacity" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-
-<div id="team-services-capacity" class="tab-pane fade in active">
-<p>Additional options available from the Capacity page include copying capacity from the previous iteration, adding team members, adding multiple activities. See [Capacity planning](../scale/capacity-planning.md) for these and more settings.  </p> 
-<img src="../scale/_img/capacity-planning-set-capacity-tfs-15.png" alt="Team Services, Set Capacity" style="border: 1px solid #CCCCCC;" />
-</div>
-
-<div class="tab-pane fade" id="tfs-2015-capacity" >
- <p> If you don't see a team member listed, either [add them to the team](../scale/add-team-administrator.md) then press the button to add all missing team members to this sprint's capacity planning, or add the user individually.
-</p> 
-<img src="../scale/_img/set-sprint1-capacity.png" title="TFS 2015, Set Capacity" alt="Capacity page" style="border: 1px solid #CCCCCC;" />  
-</div>
-
-<div class="tab-pane fade" id="tfs-2015-1-capacity" >
-<p>Additional options available from the Capacity page include copying capacity from the previous iteration, adding team members, adding multiple activities. See [Capacity planning](../scale/capacity-planning.md) for these and more settings.  </p> 
-<img src="../scale/_img/capacity-planning-set-capacity-tfs-2015.1.png" alt="TFS 2015.1, Set Capacity" style="border: 1px solid #CCCCCC;" /> 
-</div>
-
-</div>
-</div>
-
--->
-
 
 <a id="define-tasks">  </a>
-##Define tasks to complete each item
+## Define tasks to complete each item
 
 The capacity tool tells you how much work your team can commit to. However, to compare capacity with actually planned work, you need to define and estimate tasks for each backlog item.
 
@@ -148,25 +106,19 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 2. Name the task and enter an estimate for Remaining Work. Also, if you know who'll perform the work, go ahead and assign the task to that team member.  
 
-	>[!NOTE]  
-	><b>Feature availability: </b>From the web portal for Team Services and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and ealier versions, the old form is supported.   
+	> [!NOTE]  
+	> **Feature availability:** From the web portal for Team Services and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and ealier versions, the old form is supported.   
 	
-	<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-	<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-	<li style="float:left;" data-toggle="collapse" data-target="#task-form">Task form</li> 
-	<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:50px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#task-form-tfs-2015-13">Old form</a></li>
-	<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#task-form-team-services">New form</a></li>
-	</ul> 
-	<div id="task-form" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-	<div id="task-form-team-services" class="tab-pane fade in active"> 
+	<a id="task-form-team-services" /> 
+	#### Task form, new form 
+
 	<img src="_img/sp-scrum-task-form.png" alt="New task form" style="border: 1px solid #CCCCCC;" />
-	</div>
+
 	
-	<div id="task-form-tfs-2015-13" class="tab-pane fade"> 
+	<a id="task-form-tfs-2015-13" class="tab-pane fade"> 
+	#### Task form, old form 
+
 	<img src="_img/IC797606.png" alt="Web portal, Task form, oldform"  style="border: 1px solid #CCCCCC;" />  
-	</div>
-	</div>
-	</div> 
 	
 	At the planning stage, Remaining Work corresponds to an estimate of how long it will take to complete the task.  
 	
@@ -189,7 +141,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 
 <a id="adjust-work">  </a>
-##Second pass: adjust work to fit team capacity
+## Second pass: adjust work to fit team capacity
 
 After you've defined all the tasks for all the items, check whether your team is at or over capacity. If under capacity, you can consider adding more items onto the sprint. If over capacity, you'll want to remove items out of the backlog.  
 
@@ -203,9 +155,9 @@ If your team's over capacity, drag items from the bottom of the list onto Backlo
 
 ![Drag items back to product backlog](_img/IC797613.png)  
 
->[!TIP]    
->Dragging a backlog item to the backlog or another sprint reassigns all child tasks to the same iteration path. 
->Also, you can multi-select several items and drag them to the backlog or another sprint. 
+> [!TIP]    
+> Dragging a backlog item to the backlog or another sprint reassigns all child tasks to the same iteration path. 
+> Also, you can multi-select several items and drag them to the backlog or another sprint. 
 
 ### Load balance work across the team
 
@@ -240,7 +192,7 @@ To copy, clone, or delete work items, or to quickly create work items using a te
 
 
 <a id="share" >  </a>
-###Share your sprint plan
+### Share your sprint plan
  
 Any stakeholder on your team (someone with permissions to connect to your team project) can view your sprint plan. 
 Simply send them the URL of your sprint backlog page. But also, you can share it with them through email or print a version. 
@@ -260,7 +212,7 @@ Or, you can select all the items in the list, choose **Copy as HTML**, and paste
 
 
 <a id="order"> </a>
-###Order, re-parent, and reassign items to different sprints
+### Order, re-parent, and reassign items to different sprints
 When you need to change the order of an item, simply drag the item to its new location. Also, you can [re-parent an item using the mapping pane](../backlogs/organize-backlog.md), or simply drag it within the hierarchy to change its parent. 
 
 ![Hierarchical view of backlogs](_img/ALM_OB_ReparentAnItem.png)

@@ -64,12 +64,12 @@ Use the new Discussion section to add and review comments made about the work be
 
 Click the ![Discussions icon](../_img/icons/icon-discussions-wi.png) discussion icon, which indicates how many comments have been added, to move your focus to the discussion section.  Click the ![full screen icon](../_img/icons/fullscreen_icon.png) full screen icon to expand the display of the discussion section within the form.   
 
-Within the discussion section, you can use the [**@mention** control](../productivity/productivity-tips.md#mention-person-id) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](../productivity/productivity-tips.md#mention-wit-id). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
+Within the discussion section, you can use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
 <img src="../backlogs/_img/add-work-items-discussion.png" alt="Discussion section" style="border: 1px solid #CCCCCC;" />  
 
->[!IMPORTANT]
->For on-premises TFS, [you must configure an SMTP sever](../../setup-admin/tfs/admin/setup-customize-alerts.md) in order for team members to receive notifications.     
+> [!IMPORTANT]
+> For on-premises TFS, [you must configure an SMTP sever](../../setup-admin/tfs/admin/setup-customize-alerts.md) in order for team members to receive notifications.     
 
 ### Access to other tasks
 

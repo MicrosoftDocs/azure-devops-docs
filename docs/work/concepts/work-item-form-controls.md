@@ -7,7 +7,7 @@ ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 06/22/2017
+ms.date: 08/11/2017
 ---
 
 # Work item form controls
@@ -143,9 +143,9 @@ Click the ![Discussions icon](../_img/icons/icon-discussions-wi.png) discussion 
 
 <img src="../backlogs/_img/add-work-items-discussion.png" alt="Discussion section" style="border: 1px solid #CCCCCC;" />  
 
-Within the discussion section, you can use the [**@mention** control](../productivity/productivity-tips.md#mention-person-id) to notify another team member about the discussion. Simply type **@** and their name. 
+Within the discussion section, you can use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. 
 
-To reference a work item, use the [**#ID** control](../productivity/productivity-tips.md#mention-wit-id). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
+To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
 >[!IMPORTANT]  
 >For on-premises TFS, [you must configure an SMTP sever](../../setup-admin/tfs/admin/setup-customize-alerts.md) in order for team members to receive notifications. 

@@ -2,6 +2,10 @@
   href: index.md
 - name: Overview
   items:
+  - name: Create managed queries to list, update, or chart work items
+    href: example-queries.md
+  - name: Individual versus shared queries
+    href: my-shared-queries.md
   - name: Adhoc vs managed queries
     href: adhoc-vs-managed-queries.md
 - name: Quickstarts

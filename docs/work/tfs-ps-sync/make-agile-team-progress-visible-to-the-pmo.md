@@ -62,21 +62,20 @@ ms.date: 01/12/2017
 |Automatic approvals|Define a rule to automatically approve all updates that are submitted from Team Foundation Server to Project Server.|As a project manager, you can define approval rules by using the instance of PWA for your project plan. For more information, see [Approve or reject task updates](http://go.microsoft.com/fwlink/?LinkId=203361).|  
   
   
+<a name="ActionsAgileTeam"></a>   
+## Tasks and recommended practices for the Agile development team  
+
+As a team lead, you can use the backlog, task board, and work item pages in the web portal to perform the following tasks:  
   
-##  <a name="ActionsAgileTeam"></a> Tasks and recommended practices for the Agile development team  
- As a team lead, you can use the backlog, task board, and work item pages in the web portal to perform the following tasks:  
-  
--   [Define User Stories and Tasks](#DefineStories)  
-  
--   [Plan an Iteration](#PlanIteration)  
-  
--   [Submit User Stories to Project Server](#SubmitStories)  
-  
+-   [Define User Stories and Tasks](#DefineStories)    
+-   [Plan an Iteration](#PlanIteration)    
+-   [Submit User Stories to Project Server](#SubmitStories)   
 -   [Update Remaining and Completed Work](#UpdateWork)  
   
- To use the Agile planning tools, see [Agile tools](../overview.md). You can also export a shared query to Excel to perform bulk updates of user stories and tasks.  See [Bulk add or modify work items with Excel])(../office/bulk-add-modify-work-items-excel.md).  
+You can also export a shared query to Excel to perform bulk updates of user stories and tasks. See [Bulk add or modify work items with Excel](../office/bulk-add-modify-work-items-excel.md).  
   
-###  <a name="DefineStories"></a> Define user stories and tasks  
+<a name="DefineStories"></a> 
+### Define user stories and tasks  
  You can use the sprint backlog page to [plan a sprint or iteration](../scrum/sprint-planning.md). This page calculates individual and team capacity based on the estimated and remaining effort that is defined for tasks.  
   
  As the following illustration shows, you can use the backlog page to define user stories and the tasks that are required to implement them. Tasks are automatically linked to user stories. This association supports the rollup of work hours from all tasks to the user story.  
@@ -88,7 +87,8 @@ ms.date: 01/12/2017
   
  ![Capacity Load Balancing](_img/tfs-ps_excel_capacity_agileplan.png "TFS-PS_Excel_Capacity_AgilePlan")  
   
-###  <a name="SubmitStories"></a> Submit user stories to Project Server  
+<a name="SubmitStories"></a> 
+###  Submit user stories to Project Server  
  As a team lead, you determine when you want to submit user stories to the PMO. You can use the bulk edit feature available in the web portal to assign user stories and to update the value assigned to **Project Server Submit** for several user stories.  
   
 ##### To bulk update several fields  

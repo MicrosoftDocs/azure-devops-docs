@@ -29,51 +29,10 @@ The **WebLayout** element is a required child element of the **FORM** element.
 The **WebLayout** and updated **Control** elements introduce several new elements and deprecate several elements and attributes. Overall, it's a much simpler syntax structure than its predecessor. 
 
 
-<div style="float:left;width:175px;margin:3px;font-size:100%">
-<p style="font-weight:bold;margin-bottom:-16px;text-align:center;">New elements</p>  
-- ```ControlContribution```   
-- ```GroupContribution```  
-- ```Input```  
-- ```Inputs```  
-- ```Page```  
-- ```PageContribution```  
-- ```Section```  
-- ```SystemControls```  
-- ```WebLayout```   
-</div>
-
-
-<div style="float:left;width:175px;margin:3px;font-size:100%">
-<p style="font-weight:bold;margin-bottom:-16px;text-align:center;">Maintained elements</p>  
-- ```FORM```  
-- ```Layout```   
-- ```Group```   
-- ```Control```  
-
-</div>
-
-<div style="float:left;width:175px;margin:3px;font-size:100%">
-<p style="font-weight:bold;margin-bottom:-16px;text-align:center;">Deprecated elements</p>  
-- ```Column```   
-- ```Splitter```   
-- ```Tab```    
-- ```TabGroup```   
-</div>
-
-<div style="float:left;width:175px;margin:3px;font-size:100%">
-<p style="font-weight:bold;margin-bottom:-16px;text-align:center;">Deprecated attributes</p>   
-- ```ControlSpacing```    
-- ```FixedWidth```   
-- ```LabelPosition```  
-- ```LabelSpacing```  
-- ```Margin```   
-- ```MinimumSize```    
-- ```Padding```   
-- ```PercentWidth```   
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |New elements  |Maintained elements  |Deprecated elements  |Deprecated attributes  |
+> |-------------------------|--------------------|----------------------|----------------------|
+> |- ControlContribution<br/>- GroupContribution<br/>- Input<br/>- Inputs<br/>- Page<br/>- PageContribution<br/>- Section<br/>- SystemControls<br/>- WebLayout|- FORM<br/>- Layout<br/>- Group<br/>- Control |- Column<br/>- Splitter<br/>- Tab<br/>- TabGroup |- ControlSpacing<br/>- FixedWidth<br/>- LabelPosition<br/>- LabelSpacing<br/>- Margin<br/>- MinimumSize<br/>- Padding<br/>- PercentWidth |
 
 
 In the new web form layout, the system manages the header elements shown below. These include the display of the work item ID, Title, State, Assigned To, Area and Iteration fields, tags, as well as the pages to display ![History page icon](../_img/icons/icon-history-tab-wi.png) History, ![Links page icon](../_img/icons/icon-links-tab-wi.png) Links, and ![Attachments page icon](../_img/icons/icon-attachments-tab-wi.png) Attachments.  

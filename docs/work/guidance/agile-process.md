@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.assetid: 28e9cb42-f049-45eb-a2d8-f7a3b93471b8
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/03/2017
+ms.date: 08/11/2017
 ---
+
 
 # Agile process 
 
@@ -27,8 +28,6 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 >and Test Plan and Test Suite, TFS 2013.3 and later versions.   
 >
 >Additional artifacts, such as [SQL Server reports](#reports) and [SharePoint dashboards](#dashboards), are only available when you connect to a team project from an on-premises Team Foundation Server (TFS). Other resource requirements apply. 
-
-
 
 
 ## Plan and track work
@@ -75,77 +74,19 @@ To get started, you can open a shared query and create a chart based on your tra
 <a id="reports"></a>
 ###SQL Server reports (TFS) 
 
-If you connect to an on-premises TFS, you can access the following Agile process reports. For these reports to be useful, [teams must perform certain activities,](../../Report/admin/review-team-activities-for-useful-reports.md) such as define build processes, link work items, and update status or remaining work.  
+If you connect to an on-premises TFS, you can access the following Agile process reports. For these reports to be useful, [teams must perform certain activities,](../../report/admin/review-team-activities-for-useful-reports.md) such as define build processes, link work items, and update status or remaining work.  
 
-To access these reports, your team project collection and the team project must be configured with SQL Server Analysis Services and Reporting Services.  If you need to add reporting services or update reports to the latest versions, see [Add reports to a team project](../../Report/admin/add-reports-to-a-team-project.md).  
+To access these reports, your team project collection and the team project must be configured with SQL Server Analysis Services and Reporting Services.  If you need to add reporting services or update reports to the latest versions, see [Add reports to a team project](../../report/admin/add-reports-to-a-team-project.md).  
 
-
-
-<div style="float:left;width:220px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Project management reports</p>
-<ul style="padding-left:10px">
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380678.aspx">Burndown and Burn Rate</a></li>
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380673.aspx">Remaining Work</a></li>
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380706.aspx">Status of All Iterations</a> (similar to Velocity)</li>
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380641.aspx">Stories Overview</a> </li>
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380641.aspx">Stories Progress</a> </li>
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/ee707132.aspx">Unplanned Work</a></li>
-</ul>
-</div>
-<div style="float:left;width:220px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Test and bug reports</p>
-<ul style="padding-left:20px">
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380736.aspx">Bug Status</a> </li>
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380674.aspx">Bug Trends</a> </li>
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380713.aspx">Test Case Readiness</a></li>
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380702.aspx">Test Plan Progress</a> </li>
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380731.aspx">Reactivations</a> </li>
-</ul>
-</div>
-
-<div style="float:left;width:220px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Build reports</p>
-<ul style="padding-left:20px">
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380683.aspx">Build Quality Indicators</a> </li>
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380643.aspx">Build Success Over Time</a></li>
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380708.aspx">Build Summary</a></li>
-</ul>
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
 
 <a id="dashboards"></a>
 ### SharePoint portal dashboards (TFS) 
 
 If you connect to an on-premises TFS, you can access Agile process dashboards displayed through SharePoint. These dashboards display project data, support investigation tasks, and help teams to perform common tasks quickly. The following dashboards support the display of web access parts for listing work items and reports that were built in the Analysis Services cube.
 
-<div style="float:left;width:220px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Standard dashboards</p>
-<ul style="padding-left:20px">
-<li style="margin-bottom:2px">[Project Dashboard](https://msdn.microsoft.com/library/ee828504.aspx) </li>
-<li style="margin-bottom:2px">[My Dashboard](https://msdn.microsoft.com/library/dd420561.aspx)</li>
-</ul>
-</div>
 
-<div style="float:left;width:220px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Enterprise dashboards</p>
-<ul style="padding-left:20px">
-<li style="margin-bottom:2px">[Bugs Dashboard](https://msdn.microsoft.com/library/dd560860.aspx)  </li>
-<li style="margin-bottom:2px">[Build Dashboard](https://msdn.microsoft.com/library/dd420556.aspx)  </li>
-<li style="margin-bottom:2px">[Progress Dashboard](https://msdn.microsoft.com/library/dd420557.aspx)  </li>
-<li style="margin-bottom:2px">[Quality Dashboard](https://msdn.microsoft.com/library/dd420562.aspx)  </li>
-<li style="margin-bottom:2px">[Test Dashboard](https://msdn.microsoft.com/library/dd420548.aspx)  </li>
-</ul>
-</div>
+To use [dashboards](../../report/sharepoint-dashboards/project-portal-dashboards.md) your team project must have a [project portal configured and the project portal must point to a SharePoint site](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
 
-
-<div style="clear:left;font-size:100%">
-</div>
-
-
-To use [Dashboards](https://msdn.microsoft.com/library/dd380719.aspx) your team project must have a [project portal configured and the project portal must point to a SharePoint site](https://msdn.microsoft.com/library/ms242883.aspx).
 
 ##Related notes  
 

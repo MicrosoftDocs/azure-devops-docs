@@ -7,7 +7,7 @@ ms.topic: get-started-article
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/14/2017  
+ms.date: 08/11/2017
 ---
 
 
@@ -204,8 +204,7 @@ The following examples show how to use operators when you create a search string
 - [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
 - [Use the query editor to list and manage queries](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   
-- [Work item field index](../guidance/work-item-field.md)   
-- [User-focused features](../../connect/user-focused-features.md)  
+- [Work item field index](../guidance/work-item-field.md)     
 
 
 ### Does the search box support less than/greater than operators?

@@ -121,11 +121,9 @@ Using the REST API service, you can [create a dashboard widget](../extend/develo
 
 ## Related notes   
 
-
-Prior to monitoring work progress and trends, you'll need to have [planned your project and made progress on work you're tracking](../work/overview.md). 
+Prior to monitoring work progress and trends, you'll need to have [planned your project and made progress on work you're tracking](../work/backlogs/create-your-backlog.md). 
 
 In addition to the lightweight charts, you also have access to the following shared queries provided with the default process templates.   
-
 
 <!---
 <a id="shared-queries">  </a>

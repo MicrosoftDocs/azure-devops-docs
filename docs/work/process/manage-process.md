@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 6EB45080-22E2-43AD-92F9-77D03D5C136F  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/12/2017
+ms.date: 08/11/2017
 ---
 
 <!-- supports the FWLink: http://go.microsoft.com/fwlink/?LinkID=616878 --> 
@@ -29,11 +29,10 @@ Once you've created an inherited process, you can customize it, create team proj
 
 For example, as shown in the picture below, you see a list of team projects defined for the *fabrikam* account. The second column shows the process used by each team project. To update the *Fabrikam Fiber* team project, you need to update the *MyAgile* process (which inherits from the Agile system process). Any changes you make to the *MyAgile* process will also update the *Test Agile* team project. You can't customize the *Scrum project*, on the other hand, until you change it to a Scrum inherited process.
 
-
 <img src="_img/mprocess-overview-project-list.png" alt="Admin context, Account settings, Overview, Project list and the process they use" style="border: 1px solid #CCCCCC;" />  
 
 To perform any of the following actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit or create a specific process](#process-permissions).  To get added to an admin group, see [Add administrators](../../setup-admin/add-administrator-tfs.md#project-collection). 
-- Import Process (only supported for accounts that use the [Hosted XML process model](../customize/customize-work.md)) 
+- Import Process (only supported for accounts that use the [Hosted XML process model](../customize/hosted-xml-process-model.md)) 
 - Create an inherited process   
 - Customize a process  
 - Change team projects to use an inherited process or a system process    

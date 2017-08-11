@@ -6,12 +6,15 @@ ms.prod: vs-devops-alm
 ms.assetid: 3FAB9216-1D9A-442A-BEE7-5D1889B634B5
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/22/2017
+ms.date: 08/11/2017
 ---
 
 # Productivity tips
 
 [!INCLUDE [temp](../_shared/dev15-version-header.md)]  
+
+
+
 
 Productivity is all about producing more value in less time. You can use the tips below to work more quickly and efficiently as you work in Visual Studio Team Services or the web portal for Team Foundation Server (TFS).  
 
@@ -39,8 +42,8 @@ Here are some of the types of productivity tools and tasks that you can access:
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Follow</p>
 
 <ul style="padding-left:30px;font-size:90%">
-<li style="margin-bottom:1px">[Follow a work item](#follow) (TFS 2017)</li>
-<li style="margin-bottom:1px">[Follow a pull request](#follow-pr) (TFS 2017.1)</li>
+<li style="margin-bottom:1px">[Follow a work item](../../collaborate/follow-work-items.md) (TFS 2017)</li>
+<li style="margin-bottom:1px">[Follow a pull request](../../collaborate/follow-work-items.md) (TFS 2017.1)</li>
 <li style="margin-bottom:1px">[Manage work items you're following](../../collaborate/follow-work-items.md) (TFS 2017)</li>
 <li style="margin-bottom:1px">[View work items you're following across team projects](../../connect/account-home-pages.md#follow-work) (TFS 2017.1)</li>
 </ul>
@@ -85,7 +88,7 @@ Here are some of the types of productivity tools and tasks that you can access:
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">@mention, notifications and alerts </p>
 
 <ul style="padding-left:30px;font-size:90%">
-<li style="margin-bottom:1px">[@mention to notify a team member](#mention-person-id)  (TFS 2015.2)</li>
+<li style="margin-bottom:1px">[@mention to notify a team member](../../notifications/at-mentions.md)  (TFS 2015.2)</li>
 <li style="margin-bottom:1px">[Work item discussions](../concepts/work-item-form-controls.md#discussion) (TFS 2017)</li>
 <li style="margin-bottom:1px">[Manage personal notifications](../../collaborate/manage-personal-notifications.md) (TFS 2017.1)</li>
 <li style="margin-bottom:1px">[Manage team notifications](../../collaborate/manage-team-notifications.md) (TFS 2017.1)</li>
@@ -332,7 +335,7 @@ You can perform similar [searches on your code based on keywords and semantic s
 <img src="_img/ALM_PRD_CodeSearch.png" alt="Work item search box, find work items using macros" style="border: 1px solid #CCCCCC;" />   
 
 
-###Quick access using dashboards  
+### Quick access using dashboards  
 
 You can quickly access code, builds, and work items when you [add widgets and charts to your team dashboard](../../Report/dashboards.md). In addition, you can quickly open a page, create work items, or access additional tools from one of several [widgets](../../report/widget-catalog.md) that you add to a dashboard.  
 
@@ -348,7 +351,7 @@ To update your on-premises TFS, visit the [Visual Studio downloads page for Team
 - [Visibility across teams](../scale/visibility-across-teams.md)
 - [Review team plans](../scale/review-team-plans.md)  
 - [Work item templates](work-item-template.md)
-- [Collaborate overview](../../collaborate/overview.md)
+
 
 
 

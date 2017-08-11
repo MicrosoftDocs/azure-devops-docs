@@ -59,23 +59,6 @@ To get started with a code base, [set up Git](../git/gitquickstart.md) or [set u
 
 To learn more about each hub and the tasks you can perform, see [Work in the web portal](work-web-portal.md).
 
-[!INCLUDE [temp](../_shared/switch-team-context.md)]
-
-<!--- 
-### To browse to a different team project
-
-From the account home page, click Browse. 
-
-<img src="_img/connect-tp-browse.png" alt="Web portal, browse team projects" style="border: 1px solid #CCCCCC;" />
-
-### To switch context to a different team project
-
-Choose the team project you want to work on from the team project menu. 
-
-<img src="_img/connect-tp-switch-context.png" alt="Web portal, switch team projects" style="border: 1px solid #CCCCCC;" />
-
---> 
-
 
 ### To log on with different credentials
 
@@ -118,56 +101,49 @@ Choose the team project you want to work on from the team project menu.
 
 <div id="connect-dialog" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
 <div id="vs-2015-connect-dialog" class="tab-pane fade in active" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;"> 
-<p> From the Connect page, choose the **Connect to Team Project** link to select a different account, TFS, or team project to connect to.
 
-    <p>![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
+### Visual Studio 2015 
+From the Connect page, choose the **Connect to Team Project** link to select a different account, TFS, or team project to connect to.
 
-    <p>Select the team projects that you will work on.   
+![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
 
-    <p>![Connect to Team Foundation Server dialog box](_img/connect-team-projects-tfs/IC671574.png)   
+Select the team projects that you will work on.   
 
-    <p>If it's your first time connecting, add TFS to the list of recognized servers.   
+![Connect to Team Foundation Server dialog box](_img/connect-team-projects-tfs/IC671574.png)   
 
-    <p>![ALM\_EXL\_AddServer](_img/connect-team-projects-tfs/IC658167.png)   
+If it's your first time connecting, add TFS to the list of recognized servers.   
 
-    <p>If you selected just one team project, you'll see the Home page for that project. The pages that appear differ based on the resources enabled and the source control system selected for your team project.
+![ALM\_EXL\_AddServer](_img/connect-team-projects-tfs/IC658167.png)   
+
+If you selected just one team project, you'll see the Home page for that project. The pages that appear differ based on the resources enabled and the source control system selected for your team project.
 	
 </div>
    
-<div class="tab-pane fade" id="vs-2017-connect-dialog" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-<p>
+<a id="vs-2017-connect-dialog" />
+
+### Visual Studio 2017 
 Select the connect icon in Team Explorer to open up the **Connect** page. Choose the **Connect to Team Project** link to select a team project to connect to.
 
-    <p>![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
+![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
 
-     <p>The **Connect to a Project** dialog will appear and show the Team Services projects you can connect to, along with the repos in those projects.
+The **Connect to a Project** dialog will appear and show the Team Services projects you can connect to, along with the repos in those projects.
 
-     <p>![Connect to a Project dialog box](_img/connect-team-projects-tfs/vs2017_connect_dialog.png)
+![Connect to a Project dialog box](_img/connect-team-projects-tfs/vs2017_connect_dialog.png)
 
-    <p>Select the **Add Server** link to connect to a team project in Team Foundation Server. Enter the URL to your TFS server and select **Add**. 
+Select the **Add Server** link to connect to a team project in Team Foundation Server. Enter the URL to your TFS server and select **Add**. 
 
-     <p>![ALM\_EXL\_AddServer](_img/connect-team-projects-tfs/vs2017_add_tfs_server.png)
+![ALM\_EXL\_AddServer](_img/connect-team-projects-tfs/vs2017_add_tfs_server.png)
 
-     <p>Select a team project from the list and select **Connect**. 
+Select a team project from the list and select **Connect**. 
       
-</div></div></div>   
-<br/>   
-<p>Team Explorer will display the Home page for that project. The pages that appear differ based on the resources enabled and the source control system selected for your team project.
+---
 
-<div style="float:left;width:320px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Home page with Git</p>
-<p style="text-align:center;"><img src="_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" /></p>
+Team Explorer will display the Home page for that project. The pages that appear differ based on the resources enabled and the source control system selected for your team project.
 
-</div>
-
-<div style="float:left;width:320px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Home page with TFVC</p>
-<p style="text-align:center;"><img src="_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" /></p>
-
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>   
+> [!div class="mx-tdBreakAll"]  
+> |Home page with Git  |Home page with TFVC  |
+> |-------------|----------|
+> |<img src="_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" />|<img src="_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" />|
 
 To learn more about each page and the tasks you can perform, see [Work in Team Explorer](work-team-explorer.md).   
    
@@ -187,37 +163,39 @@ Your client remembers the set of connections you've configured. You can quickly 
 <div id="connect-account-dialog" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
 <div id="vs-2015-connect-account-dialog" class="tab-pane fade in active" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;"> 
  
-<ol><li><p> From the Connect page, choose the **Connect to Team Project** link to log on with different credentials.
 
-    <p>![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
+### Visual Studio 2015 
 
-    <p>The **Switch User** link appears only when you are actively connected to a team project hosted on Team Services.  
+1. From the Connect page, choose the **Connect to Team Project** link to log on with different credentials.
 
-	<p>![Connect to Team Foundation Server dialog box](_img/connect-team-projects-tfs/IC719958.png)</li>
+	![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
 
-<li>  Sign on using a valid Microsoft account—an account that is associated with a Visual Studio Team Services team project.</li></ol>
-</div>
+	The **Switch User** link appears only when you are actively connected to a team project hosted on Team Services.  
 
-<div class="tab-pane fade" id="vs-2017-connect-account-dialog" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
+	![Connect to Team Foundation Server dialog box](_img/connect-team-projects-tfs/IC719958.png) 
 
-<ol><li><p> From the Connect page, choose the **Connect to Team Project** link to log on with different credentials.
+2. Sign on using a valid Microsoft account—an account that is associated with a Visual Studio Team Services team project. 
 
-<p>![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
 
-<p>Select a different user from the drop-down or select **Add an account...** to access a team project using a different account.
+### Visual Studio 2017 
 
-<p>![Connect with VS 2017 TFS or Team Services using a different account](_img/connect-team-projects-tfs/choose-different-user-vs2017.png)</li>
+1. From the Connect page, choose the **Connect to Team Project** link to log on with different credentials.
 
-<li>  Sign on using a valid Microsoft account—an account that is associated with a Visual Studio Team Services team project.</li></ol>
-</div></div></div>  </br>
+	![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
+
+	Select a different user from the drop-down or select **Add an account...** to access a team project using a different account.
+
+	![Connect with VS 2017 TFS or Team Services using a different account](_img/connect-team-projects-tfs/choose-different-user-vs2017.png) 
+
+2. Sign on using a valid Microsoft account—an account that is associated with a Visual Studio Team Services team project. 
 
 ### To change accounts 
 
--   To run Visual Studio under an account that is different from your logged on Windows account, open the context menu for **devenv.exe** to access your run as options.
+To run Visual Studio under an account that is different from your logged on Windows account, open the context menu for **devenv.exe** to access your run as options.
 
-    ![Context menu for Visual Studio devenv.exe](_img/connect-team-projects-tfs/IC719959.png)
+![Context menu for Visual Studio devenv.exe](_img/connect-team-projects-tfs/IC719959.png)
 
-    You can locate the executable in the following folder: *Drive*:\\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\.
+You can locate the executable in the following folder: *Drive*:\\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\.
 
 
 <a id="excel-project">  </a>
@@ -226,19 +204,19 @@ Your client remembers the set of connections you've configured. You can quickly 
 To add or modify work items by using Excel or Project, you connect your worksheet or project plan to a team project. Establishing this connection binds the document to the hosted account or selected TFS, team project collection, and team project to exchange information. 
  
 
->[!NOTE]  
->You can't use Office Project 365 to connect to Team Services or TFS.
+> [!NOTE]  
+> You can't use Office Project 365 to connect to Team Services or TFS.
  
 ### Connect from a worksheet or project plan 
 
 To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. See [Permission reference](../setup-admin/permissions.md) for details.
 
-
 1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Team Services or TFS 2017, you'll need Project 2010 or a more recent version. For client compatibility, see [Requirements](../setup-admin/requirements.md)
 
 2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on Team Services or an on-premises TFS. 
 
-	<blockquote style="font-size: 13px"><b>Feature availability: </b> The only way to get the Team Foundation add-in to Excel is by installing one of the latest editions of Visual Studio or  TFS Standalone Office Integration. </blockquote>  
+	> [!NOTE]  
+	> **Feature availability:** The only way to get the Team Foundation add-in to Excel is by installing one of the latest editions of Visual Studio or  TFS Standalone Office Integration.   
 
 3.  Start with a blank worksheet or project plan. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007 or Project 2007), see step 2.
 
@@ -312,12 +290,7 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 Additional resources you may find of interest: 
 
 - [Work in web portal](work-web-portal.md) 
-- [Work in team Explorer](work-web-portal.md) 
-- [User-focused features](user-focused-features.md)  
-- [Productivity tips](../work/productivity/productivity-tips.md)
-- [Keyboard shortcuts](../reference/keyboard-shortcuts.md) 
-- [Collaborate using team resources](../work/scale/manage-team-assets.md)  
-- [Customize the work tracking experience](../work/customize/customize-work.md)  
+- [Work in Team Explorer](work-web-portal.md) 
 
 If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../git/gitquickstart.md) and [Manage bugs](../work/backlogs/manage-bugs.md).  
 

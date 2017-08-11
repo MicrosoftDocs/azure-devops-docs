@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.assetid: f4e77db3-e54c-472a-ba60-92ceb8331882
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/03/2017
+ms.date: 08/11/2017
 ---
+
 
 # Scrum process   
 
@@ -40,8 +41,9 @@ The essential flow for getting started is as shown. To get started using Scrum o
 
 [![Define stories](../_img/gs-planning-define-stories.png)](../backlogs/create-your-backlog.md)[![Organize backlog](../_img/gs-planning-organize-backlog.png)](../backlogs/organize-backlog.md)[![Manage bugs](../_img/gs-planning-manage-bugs.png)](../backlogs/manage-bugs.md)[![Manage issues](../_img/gs-planning-manage-issues.png)](../backlogs/manage-issues-impediments.md)
 
-<blockquote style="font-size: 13px"><b>Note: </b>A work item is a database record that contains the definition, assignment, priority, and state of work. Work item types define the template of fields, workflow, and form for each type. Work items can be linked to each other to support tracking dependencies, roll up of work, and reports.  
-</blockquote>  
+> [!NOTE]  
+> A work item is a database record that contains the definition, assignment, priority, and state of work. Work item types define the template of fields, workflow, and form for each type. Work items can be linked to each other to support tracking dependencies, roll up of work, and reports.  
+  
 
 
 [Scrum work item types and workflow](scrum-process-workflow.md) provides more details about using these WITs.  
@@ -75,46 +77,17 @@ To get started, you can open a shared query and create a chart based on your tra
 <a id="reports"></a>
 ###Scrum process and SQL Server reports (TFS) 
 
-If you connect to an on-premises TFS, you can access the following Scrum process reports. For these reports to be useful, [teams must perform certain activities,](../../Report/admin/review-team-activities-for-useful-reports.md) such as define build processes, link work items, and update status or remaining work.  
+If you connect to an on-premises TFS, you can access the following Scrum process reports. For these reports to be useful, [teams must perform certain activities,](../../report/admin/review-team-activities-for-useful-reports.md) such as define build processes, link work items, and update status or remaining work.  
 
-To access these reports, your team project collection and the team project must be configured with SQL Server Analysis Services and Reporting Services.  If you need to add reporting services or update reports to the latest versions, see [Add reports to a team project](../../Report/admin/add-reports-to-a-team-project.md).  
-
-<div style="float:left;width:220px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Project management reports</p>
-<ul style="padding-left:10px">
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dn641200.aspx">Backlog Overview</a></li>
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/ff731579.aspx">Release Burndown</a></li>
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/ff731588.aspx">Sprint Burndown</a></li>
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/ff731575.aspx">Velocity</a></li>
-</ul>
-</div>
-<div style="float:left;width:220px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Test and bug reports</p>
-<ul style="padding-left:20px">
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380713.aspx">Test Case Readiness</a></li>
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380702.aspx">Test Plan Progress</a> </li>
-</ul>
-</div>
-
-<div style="float:left;width:220px;margin:8px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Build reports</p>
-<ul style="padding-left:20px">
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380643.aspx">Build Success Over Time</a></li>
-<li style="margin-bottom:2px"><a href="https://msdn.microsoft.com/library/dd380708.aspx">Build Summary</a></li>
-</ul>
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
+To access these reports, your team project collection and the team project must be configured with SQL Server Analysis Services and Reporting Services.  If you need to add reporting services or update reports to the latest versions, see [Add reports to a team project](../../report/admin/add-reports-to-a-team-project.md).  
 
 
 <a id="dashboards"></a>
 ### SharePoint portal dashboards (TFS) 
 
-If you connect to an on-premises TFS, you can access the  [Release](https://msdn.microsoft.com/library/dn641201.aspx) dashboard displayed through the SharePoint project portal. This dashboard displays project data, support investigation tasks, and help teams to perform common tasks quickly. 
+If you connect to an on-premises TFS, you can access the [Release](../../report/sharepoint-dashboards/release-scrum.md) dashboard displayed through the SharePoint project portal. This dashboard displays project data, support investigation tasks, and help teams to perform common tasks quickly. 
 
-To access this dashboard, your team project must have a [project portal configured and the project portal must point to a SharePoint site](https://msdn.microsoft.com/library/ms242883.aspx).
+To access this dashboard, your team project must have a [project portal configured and the project portal must point to a SharePoint site](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
 
 
 ## Related notes 
@@ -126,7 +99,7 @@ To access this dashboard, your team project must have a [project portal configur
 
 Your product owner can plan and track product backlog items and bugs in the product backlog by using the **Product Backlog** query. You can find work items that are assigned to the current sprint by using the shared queries that are listed under the **Current Sprint** folder. These queries find work items that are assigned to a specified iteration or sprint. As you plan additional sprints, you can modify these queries to specify the latest sprint and save them to additional folders that you create, such as **Sprint 2** or **Sprint 3**.
 
-The project administrator for each team project [defines area and iteration paths](../customize/set-area-paths.md) for that project so that the team can track progress by those designations.  
+The project administrator for each team project [defines area paths](../customize/set-area-paths.md) and [iteration paths](../customize/set-iteration-paths-sprints.md) for that project so that the team can track progress by those designations.  
 
 |Shared queries|Description| 
 |---|---|  
@@ -139,5 +112,3 @@ The project administrator for each team project [defines area and iteration path
 |Feedback | Lists all feedback responses that are in an Active state. |
 |Product Backlog |Lists all product backlog items and bugs that are assigned to the root iteration. Product backlog items and bugs are sorted by backlog priority.|  
 
-
-[!INCLUDE [temp](../_shared/help-support-shared.md)]

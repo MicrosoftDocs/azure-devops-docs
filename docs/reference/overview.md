@@ -54,7 +54,6 @@ ms.date: 03/02/2017
 <li style="margin-bottom:2px">[Choose a process](../work/guidance/choose-process.md)</li>
 <li style="margin-bottom:2px">[Keyboard shortcuts](keyboard-shortcuts.md)</li>
 <li style="margin-bottom:2px">[Markdown guidance](markdown-guidance.md)</li>
-<li style="margin-bottom:2px">[Productivity tips](../work/productivity/productivity-tips.md)</li>
 <li style="margin-bottom:2px">[Share storyboard shapes](../work/office/add-share-storyboard-shapes.md)</li>
 <li style="margin-bottom:2px">[Work item field index](../work/guidance/work-item-field.md)</li>
 <li style="margin-bottom:2px">[Reportable fields reference (TFS)](../work/reference/reportable-fields-reference.md)</li>

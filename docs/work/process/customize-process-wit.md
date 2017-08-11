@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/29/2017 
+ms.date: 08/11/2017 
 ---
 
 # Customize a work item type (Inheritance process model)    
@@ -32,38 +32,11 @@ You can add fields and modify the workflow and form for all inherited WITs that 
 
 Here are your customization options for inherited and custom WITs. 
 
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">![Inherited field](_img/inherited-icon.png) **Inherited WITs:**</p>
-- [Add/remove custom fields](customize-process-field.md)   
-- [Add/remove custom groups](customize-process-form.md#groups)    
-- [Add/delete custom pages](customize-process-form.md#pages)    
-- [Add/remove a custom control](custom-controls-process.md)     
-- [Hide a workflow state](customize-process-workflow.md#hide-state)   
-- [Enable/disable](#enable-disable)  
-</div> 
+> [!div class="mx-tdBreakAll"]  
+> |![Inherited field](_img/inherited-icon.png) Inherited WITs | Custom WITs |&nbsp;&nbsp;&nbsp;| 
+> |-------------|----------|---------| 
+> |- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove custom groups](customize-process-form.md#groups)<br/>- [Add/delete custom pages](customize-process-form.md#pages)<br/>- [Add/remove a custom control](custom-controls-process.md) <br/>- [Enable/disable](#enable-disable) |- [Add custom WIT](#add-wit)<br/>- [Change color or description](#overview)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove custom groups](customize-process-form.md#groups)<br/>- [Add/delete custom pages](customize-process-form.md#pages)<br/>- [Add/remove a custom control](custom-controls-process.md) |- [Add, edit, or remove a workflow state](customize-process-workflow.md#states)<br/>- [Enable/disable](#enable-disable)<br/>- [Delete](#destroy) |  
 
-<div style="float:left;width:200px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">**Custom WITs:**</p>
-- [Add custom WIT](#add-wit)   
-- [Change color, icon or description](#overview)     
-- [Add/remove custom fields](customize-process-field.md)   
-- [Add/remove custom groups](customize-process-form.md#groups)    
-- [Add/delete custom pages](customize-process-form.md#pages)    
-- [Add/remove a custom control](custom-controls-process.md)     
-</div>
-
-
-<div style="float:left;width:220px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">&nbsp;&nbsp;&nbsp;</p>
-- [Add, edit, or remove a workflow state](customize-process-workflow.md#states)   
-- [Enable/disable](#enable-disable)   
-- [Delete](#destroy)  
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
-<br/>
 
 To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](manage-process.md#process-permissions). 
 

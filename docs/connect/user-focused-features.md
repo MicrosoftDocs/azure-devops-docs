@@ -145,7 +145,7 @@ When leaving a code comment in a pull request, you can type **#** to trigger the
 
 <img src="../work/productivity/_img/ALM_PRD_ID_PR.png" alt="Pull request comment area, type # to invoke work item control" style="border: 1px solid #CCCCCC;" />    
 
-For details, see [Productivity tips, Use the #ID control to link to work items](../work/productivity/productivity-tips.md#mention-wit-id)
+For details, see [Link work items using the #ID control](../notifications/add-links-to-work-items.md)
 
 In a similar manner to the #ID field for a pull request, you can enter #ID within a work item Discussion, a commit, or a changeset or shelveset. You'll receive the same work item picker that displays a list of 50 work items that you have recently modified or that are assigned to you.   
 
@@ -384,11 +384,8 @@ Work
 
 Additional resources you may find of interest: 
 
-<!---[Work effectively from your account hub](account-home-pages.md)-->
+- [Work effectively from your account hub](account-home-pages.md) 
 - [Work in the web portal](work-web-portal.md) 
-- [Productivity tips](../work/productivity/productivity-tips.md)
-- [Keyboard shortcuts](../reference/keyboard-shortcuts.md) 
-- [Collaborate using team resources](../work/scale/manage-team-assets.md)  
 
 ### Set your account preferences  
 
@@ -396,7 +393,6 @@ You [set your account preferences](../setup-admin/account-preferences.md) throug
 
 ![Team Services, My Profile link on Account menu](../setup-admin/_img/account-prefs/open-profile-team-services.png)   
 
-[!INCLUDE [temp](../_shared/help-support-shared.md)]
 
 
  

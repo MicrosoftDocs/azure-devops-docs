@@ -34,35 +34,11 @@ As an example, you can make a field required based on value assignments made to 
 	(Condition) And when the value of the Tech Lead = Jamal Hartnett   
 	(Action) Then make the Integration Build field required   
 
-<div style="float:left;width:380px;margin:15px">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Supported conditions</p>
-- A work item state changes to a selected state   
-- A work item state changes from one state to another state   
-- A work item is created    
-- A work item state is in a selected state  
-- The value of a field equals a specified value   
-- The value of a field does not equal a specified value  
-- A value is defined for a field  
-- No value is defined for a field  
-- A change was made to the value of a field  
-- No change was made to the value of a field    
+> [!div class="mx-tdBreakAll"]  
+> |Supported conditions |Supported actions  |
+> |-------------|----------|  
+> |- A work item state changes to a selected state<br/>- A work item state changes from one state to another state<br/>- A work item is created<br/>- A work item state is in a selected state<br/>- The value of a field equals a specified value<br/>- The value of a field does not equal a specified value<br/>- A value is defined for a field<br/>- No value is defined for a field<br/>- A change was made to the value of a field<br/>- No change was made to the value of a field |- Clear the value of a field<br/>- Copy the value of a field to another field   <br/>- Make a field required<br/>- Set the value of a field<br/>- Set the value of a field to the current date-time<br/>- Set the value of a field to the current user  |
 
-</div>
-
-<div style="float:left;width:330px;margin:15px">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">Supported actions</p>
-
-- Clear the value of a field  
-- Copy the value of a field to another field   
-- Make a field required   
-- Set the value of a field  
-- Set the value of a field to the current date-time  
-- Set the value of a field to the current user   
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
 
 >[!NOTE]   
 >You make a field required and specify a field default through the [**Options** tab for the field](customize-process-field.md#options).  

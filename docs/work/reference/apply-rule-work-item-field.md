@@ -27,38 +27,10 @@ All of these rule elements can be defined within the **FIELD** definition of a w
 
 You can define any combination of rules to a field, subject to the constraints as described in this topic.
 
-<div style="float:left;width:175px;margin:3px;font-size:90%">
-<p style="padding-left:2px;padding-bottom:0px;text-align:center;"><b>[Help text](#help-text)</b> </p>
-<p style="padding-left:2px;padding-bottom:0px;text-align:left;">Specify tool-tip text to appear in a work item form for a field.</p>
-
-</div>
-
-
-<div style="float:left;width:175px;margin:3px;font-size:90%">
-<p style="padding-left:20px;padding-bottom:0px;text-align:center;"><b>[Pick list](#pick-list)</b> </p>
-<p style="padding-left:20px;padding-bottom:0px;text-align:left;">Specify a drop-down menu or pick list of allowed, suggested, or prohibited values.</p>
-
-</div>
-
-
-<div style="float:left;width:175px;margin:3px;font-size:90%">
-<p style="padding-left:20px;padding-bottom:0px;text-align:center;"><b>[Assign value](#assign-value-rules)</b> </p>
-<p style="padding-left:20px;padding-bottom:0px;text-align:left;">Define run-time behaviors and constraints that clear field values, copy values, match a pattern, make a field read-only and more.</p>
-
-</div>
-
-
-<div style="float:left;width:175px;margin:3px;font-size:90%">
-<p style="padding-left:20px;padding-bottom:0px;text-align:center;"><b>[Conditional](#conditional-rules)</b> </p>
-<p style="padding-left:20px;padding-bottom:0px;text-align:left;">Specify when a set of rules will be applied to a parent field.</p>
-
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
-
-<br/> 
+- [Help text](#help-text): Use to specify tool-tip text to appear in a work item form for a field 
+- [Pick list](#pick-list): Use to specify a drop-down menu or pick list of allowed, suggested, or prohibited values 
+- [Assign value](#assign-value-rules): Use to define run-time behaviors and constraints that clear field values, copy values, match a pattern, make a field read-only and more 
+- [Conditional](#conditional-rules): Use to specify when a set of rules will be applied to a parent field.
 
 
 Field rules are one component you have to customize work item tracking. To learn more, see [Customize work tracking objects to support your team's processes](../customize/customize-work.md).

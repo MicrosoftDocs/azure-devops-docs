@@ -44,32 +44,8 @@ You have two ways to perform work item searches: adhoc and managed. You perform 
 Note that with  Work item search, the work item search box is repurposed to support adhoc queries. In order to initiate a managed search, you need to open the **Work>Queries** page. 
 
 
-##Related notes  
+##Resources 
 
-To learn more about each search type, see these topics:  
-
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:0px;text-align:center;">Adhoc work item queries </p>
-- [Get started with Work Item Search](../../search/workitem/work-item-search.md)   
-- [Advanced work item search options](../../search/workitem/advanced-search-syntax.md)       
-</div>
-
-
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:0px;text-align:center;">Managed work item queries</p>
-- [Use the query editor to list and manage queries](using-queries.md)   
-- [Create managed queries](example-queries.md)   
-- [Search box queries](search-box-queries.md)     
-- [Items that belong to a category](titles-ids-descriptions.md#category)      
-</div>
-
-
-<div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:0px;text-align:center;">Code search</p>
-- [Install Code search extension](../../search/code/code-search.md)   
-- [Advanced options](../../search/code/advanced-search.md)      
-</div>
-
-
-<div style="clear:left;font-size:100%">
-</div>
+- [Use the query editor to create managed queries](using-queries.md)
+- [Code and work item search](../../search/index.md)
+ 

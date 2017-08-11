@@ -117,7 +117,7 @@ A team room is automatically created when you [add a team](../work/scale/multipl
 
 - To completely exit a team room, close all browser instances where you've logged into the team room  
 - To mute the sound, click the ![Audio icon on the Rooms page](_img/ALM_CT_AudioIcon.png) audio icon to turn the sound off or on  
-- For other uses of the `#mention` control plus more ways to increase your productivity, see [Productivity tips](../work/productivity/productivity-tips.md)   
+- For other uses of the `@mention`, see [Use @mentions to further discussion](../notifications/at-mentions.md)   
 - To change your profile image, see [Account preferences](../setup-admin/account-preferences.md).  
 
 

@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/29/2017 
+ms.date: 08/11/2017 
 ---
 
 # Customize the workflow (Inheritance process model)   
@@ -23,25 +23,10 @@ Here, the Bug WIT has been customized to support a Triaged state. The state and 
 
 You customize the workflow for a WIT by adding a custom state. Each customizable WIT consists of three or more inherited states. Inherited states differ based on the system process &mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md)&mdash;you chose from which to create your custom process. 
 
-
-
-<div style="float:left;width:180px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">![Inherited field](_img/inherited-icon.png) **Inherited states:**</p>
-- [View workflow states](#hide-state)   
-- [Hide a state](#hide-state)       
-</div>
-
-<div style="float:left;width:220px;margin:3px;font-size:90%">
-<p style="font-weight:bold;margin-bottom:2px;text-align:center;">![Inherited field](_img/inherited-icon.png) **Custom states:**</p>
-- [Add a state](#add-states)   
-- [Edit a state (change color or category)](#edit-state)   
-- [Remove a state](customize-process-workflow.md#remove-state)   
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
-<br/>
+> [!div class="mx-tdBreakAll"]  
+> |![Inherited field](_img/inherited-icon.png) Inherited states |Custom states |
+> |-------------|----------|
+> |- [View workflow states](#hide-state)<br/>- [Hide a state](#hide-state) |- [Add a state](#add-states)<br/>- [Edit a state (change color or category)](#edit-state)<br/>- [Remove a state](customize-process-workflow.md#remove-state) |  
 
 To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](manage-process.md#process-permissions).  
 

@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: E0AACC40-9A9E-4A48-A1D7-1CE70D53EEA8  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/29/2017
+ms.date: 08/11/2017 
 ---
 
 # Customize the web form for a work item type (Inheritance process model)  
@@ -29,40 +29,16 @@ A custom page appears on the form as a tab to the right of the Details page. Gro
 
 Here are your customization options for inherited groups and pages. For information on field customization options, see [Customize a field for a process](customize-process-field.md).
 
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p>![Inherited field](_img/inherited-icon.png) **Inherited groups:**</p>
-- [Relabel](#groups)   
-- [Show/hide inherited fields](customize-process-field.md#show-hide-field) 
-- [Add/remove custom fields](customize-process-field.md#remove-field)      
-</div>
-
-<div style="float:left;width:300px;margin:3px;font-size:90%">
-<p>**Custom groups:**</p>
-- [Add, modify, move, remove](#groups)    
-- [Add/remove custom fields](customize-process-field.md)     
-- [Add/hide a group extension](custom-controls-process.md)   
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |![Inherited field](_img/inherited-icon.png) Inherited groups |Custom groups |&nbsp;&nbsp;&nbsp;| 
+> |-------------|----------|---------| 
+> |- [Relabel](#groups)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Show/hide fields](customize-process-field.md#remove-field) |- [Add, modify, re-sequence, delete](#groups)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/Hide a group extension](custom-controls-process.md) |  
 
 
-<div style="clear:left;font-size:100%">
-</div>
-
-<div style="float:left;width:210px;margin:3px;font-size:90%">
-<p>![Inherited field](_img/inherited-icon.png) **Inherited pages:**</p>
-- [Relabel](#pages)     
-- [Add/remove custom fields](customize-process-field.md)   
-- [Add/remove a custom group](#groups)  
-</div>
-
-<div style="float:left;width:300px;margin:3px;font-size:90%">
-<p>**Custom pages:**</p>
-- [Add, modify, move, delete](#pages)   
-- [Add/delete custom fields](customize-process-field.md)   
-- [Add/hide a page extension](custom-controls-process.md)   
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |![Inherited field](_img/inherited-icon.png) Inherited pages |Custom pages | 
+> |-------------|----------|
+> |- [Relabel](#pages)<br/>- [Add/remove custom fields](customize-process-field.md)<br/>- [Add/remove a custom group](#groups) |- [Add, modify, re-sequence, delete](#pages)<br/>- [Add/delete custom fields](customize-process-field.md)<br/>- [Add/Hide a page extension](custom-controls-process.md) |  
  
 
 To perform any of these actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](manage-process.md#process-permissions).  

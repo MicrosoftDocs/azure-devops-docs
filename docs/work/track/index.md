@@ -16,18 +16,20 @@ ms.date: 07/26/2017
 
 With queries you can ...  
 
+<!---
 ## Overview  
 
 - [Adhoc vs managed queries](adhoc-vs-managed-queries.md)  
-- 
+-->
+ 
 ## 5-minute Quickstarts  
 
 - [Begin your query with the search box](search-box-queries.md)
    
 
-## Step-by-StepTutorials
+## Step-by-Step Tutorials
 
-- Add & run queries
+- Organize, view, and run queries
 - Triage work items
 - [Edit a query](using-queries.md)
 - [Add a query chart](/vsts/report/charts?toc=/vsts/work/track/toc.json)
@@ -46,10 +48,7 @@ With queries you can ...
 - [Query by links or attachments](linking-attachments.md) 
 
 
-## Concepts 
-- [Adhoc vs managed queries](adhoc-vs-managed-queries.md) 
-
-## How-to guides
+## How-to Guides
 - [Change column options](/vsts/work/how-to/set-column-options?toc=/vsts/work/track/toc.json)  
 - [Email/print work items](/vsts/work/how-to/email-work-items?toc=/vsts/work/track/toc.json) 
 - [Filter backlogs, boards, & queries](/vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/track/toc.json)  

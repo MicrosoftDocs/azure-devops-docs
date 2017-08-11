@@ -28,6 +28,10 @@
     href: events-subscribers-notification-types.md 
 - name: How-to guides
   items:
+  - name: Use @mentions to further discussion
+    href: at-mentions.md
+  - name: Use #ID to link to work items
+    href: add-links-to-work-items.md
   - name: Go mobile
     href: /vsts/collaborate/mobile-work?toc=/vsts/notifications/toc.json
   - name: Set team project or collection-level alerts 

@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/19/2017
+ms.date: 08/11/2017
 ---
 
 # Drive Git development from a work item   
@@ -146,14 +146,11 @@ Learn more about tracking work with work items and developing with Git from thes
 
 - [Add work items](add-work-items.md)  
 - [Git overview](../../git/overview.md)  
-- [TFVC overview](../../tfvc/overview.md)
-- [Productivity tips](../productivity/productivity-tips.md)  
-- [Link work items to support traceability and manage dependencies](../track/link-work-items-support-traceability.md)  
-- [Create your backlog](create-your-backlog.md)  
-- [Agile tools](../overview.md)  
+- [TFVC overview](../../tfvc/overview.md)  
+- [Create your backlog](create-your-backlog.md)   
 
->[!NOTE]    
->To learn more or to customize the Development links control, see [LinksControlOptions elements, Development links control](../reference/linkscontroloptions-xml-elements.md#development-links-control).    
+> [!NOTE]     
+> To learn more or to customize the Development links control, see [LinksControlOptions elements, Development links control](../reference/linkscontroloptions-xml-elements.md#development-links-control).    
 
 Keep in mind that the Development section only appears when using the web portal for Team Services or TFS 2017 or later versions. The work item tracking experience and forms that appear in Visual Studio will be missing several of the features that the web portal makes available.  
 
@@ -164,8 +161,6 @@ With Git commits, any work items that have been linked to a commit will be liste
 <img src="_img/developer-associated-work-items-build.png" alt="Work item form, Development section" style="border: 1px solid #CCCCCC;" />  
 
 <!--- Add info about option to set build linking; link to release notes if needed --> 
-
-
 
 
 ### Link types showing in the Development section

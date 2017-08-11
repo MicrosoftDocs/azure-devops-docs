@@ -7,14 +7,14 @@ ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 06/13/2017
+ms.date: 08/11/2017
 ---
 
 
 
 # Backlogs, boards, and plans  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+**Team Services | TFS 2017 | TFS 2015 | TFS 2013**
 
 What can you do from a backlog view versus a board view? How do these differ from plans? How do changes you make in one show up on the other? What customizations can you make for each? 
 
@@ -61,8 +61,6 @@ For details about working in each type of board, see [Kanban basics](kanban/kanb
 ### Feature support across backlogs and boards
 The following table indicates those elements or tasks associated with each type of backlog and board. 
 
-
-<div style="font-size:90%">
 
 
 <table width="100%"> 
@@ -210,18 +208,14 @@ The following table indicates those elements or tasks associated with each type 
 </table>
 
 
-<p><b>Notes:</b></p>
-<ol>
-<li>Each team can determine how they want to track bugs: as requirements, as tasks, or not at all. When tracked as requirements, they appear in your product backlog, sprint backlogs, and Kanban board. When tracked as tasks, they appear in your sprint backlogs and task boards. For details, see [Show bugs on backlogs and boards](customize/show-bugs-on-backlog.md).</li>
-<li>Work items that appear on each team backlog and board meet the criteria defined for the [team selected area and iteration paths](about-teams-and-settings.md).</li>
-<li>The "In progress items Show/Hide" control is another filter you can apply to your product and portfolio backlogs. This control essentially shows or hides those work items where work has begun. It's useful to show/hide In Progress items when [forecasting sprint work](scrum/forecast.md).</li>
-<li>When you [add a team](scale/multiple-teams.md), you essentially add another product backlog associated with that team. Each team can then manage their own set of sprint backlogs and portfolio backlogs. See [Configure team settings](scale/manage-team-assets.md) for details. </li> 
-<li>Duration refers to how you use your backlog or board to plan and track work over time. Once you change the State of a work item to done or completed, it no longer appears on a portfolio or project backlog. As you complete each sprint, the system maintains a history of your activity. You can review past sprints and sprint burndown charts by choosing the sprint listed under the Past section. For more information, see [Sprint burndown](scrum/sprint-burndown.md#current-and-past-sprint-burndown-charts).</li>
-</ol>
-</div>
+**Notes:**
+1. Each team can determine how they want to track bugs: as requirements, as tasks, or not at all. When tracked as requirements, they appear in your product backlog, sprint backlogs, and Kanban board. When tracked as tasks, they appear in your sprint backlogs and task boards. For details, see [Show bugs on backlogs and boards](customize/show-bugs-on-backlog.md).  
+2. Work items that appear on each team backlog and board meet the criteria defined for the [team selected area and iteration paths](about-teams-and-settings.md).  
+3. The "In progress items Show/Hide" control is another filter you can apply to your product and portfolio backlogs. This control essentially shows or hides those work items where work has begun. It's useful to show/hide In Progress items when [forecasting sprint work](scrum/forecast.md).  
+4. When you [add a team](scale/multiple-teams.md), you essentially add another product backlog associated with that team. Each team can then manage their own set of sprint backlogs and portfolio backlogs. See [Configure team settings](scale/manage-team-assets.md) for details.  
+5. Duration refers to how you use your backlog or board to plan and track work over time. Once you change the State of a work item to done or completed, it no longer appears on a portfolio or project backlog. As you complete each sprint, the system maintains a history of your activity. You can review past sprints and sprint burndown charts by choosing the sprint listed under the Past section. For more information, see [Sprint burndown](scrum/sprint-burndown.md#current-and-past-sprint-burndown-charts).
 
-<div style="clear:left;font-size:100%">
-</div>
+
 
 
 <a id="plans">  </a>
@@ -253,8 +247,6 @@ A few things to keep in mind...
 
 Additional topics of interest:
 
-<div style="float:left;width:170px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Navigate</p>
 - [About teams and Agile tools](about-teams-and-settings.md)   
 - [Add work items](/vsts/work/backlogs/add-work-items?toc=/vsts/work/work-items/toc.json)   
 - [Adhoc vs managed work item queries](./track/adhoc-vs-managed-queries.md)   
