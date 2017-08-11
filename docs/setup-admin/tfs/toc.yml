@@ -1,7 +1,7 @@
 - name: Overview
   items:
   - name: TFS Administration (TFS Parts)
-    href: ../get-started.md
+    href: ../account-administration.md
 - name: Quickstarts
   items:
   - name: Single server install

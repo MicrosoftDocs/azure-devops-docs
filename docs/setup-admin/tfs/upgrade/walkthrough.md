@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 Let's walk through a typical TFS upgrade scenario to get a sense of what the high level steps discussed in
-the [overview](../../get-started.md) might look like in a real world example.
+the [overview](../../account-administration.md) might look like in a real world example.
 
 ## Prepare your environment
 
