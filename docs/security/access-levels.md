@@ -10,71 +10,42 @@ ms.author: kaelli
 ms.date: 07/20/2017
 ---
 
-# Change access levels
+# Access levels
 
 **Team Services | TFS 2017 | TFS 2015 | TFS 2013**  
 
-**UPDATE - To Be Completed - Make into an Overview **
+Access levels enable administrators the ability to provide their user base access to the features they need and only pay for those features. To connect and use the functions and features that TFS provides, users must be added to a group with the appropriate permissions. To use select web portal features, they must also belong to the access level that enables access to that feature.
+
+Three access levels are used: 
+
+- **Basic**: Should be assigned to all users with a TFS client access license (CAL). Basic provides access to most features, except for Test.
+All Visual Studio subscriptions and paid Team Services users include a TFS CAL.
+- **Stakeholder**: Should be assigned to those users who need to enter bugs, view backlogs, boards, charts, and dashboards, but who don't have a TFS CAL. Stakeholders can also view releases and manage release approvals. Stakeholder access is free. 
+- **VS Enterprise**: Should be assigned to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN subscriptions or Test Professional, assign the Basic access level and the Test Manager extension.) To learn more, see [Get extensions for TFS, Assign paid extension access to users](../marketplace/get-tfs-extensions.md#assign-extension). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension](../marketplace/get-tfs-extensions.md#assign-extension).
+
+For TFS 2017 and earlier versions, the **Advanced** level should be assigned to those users for whom you've purchased the full Test feature set. Here are the purchasing options:  
+- Higher-level Visual Studio subscriptions: Visual Studio Test Professional, Visual Studio Enterprise, or MSDN platform subscriptions.
+These include a TFS CAL plus the rights to access the full set of Test features.  
+- A paid Visual Studio Team Services user (which includes a TFS CAL) plus the [Test Manager extension](#test-manager). 
+
+For TFS 2017.2, Assign **Advanced** access to those users for whom you've purchased MSDN Platform or Visual Studio Test Professional subscriptions. These include a TFS CAL plus the rights to access Test Manager. To learn more, see [Get extensions for TFS, Assign paid extension access to users](../marketplace/get-tfs-extensions.md#assign-extension).
 
 
->[!IMPORTANT]  
->This topic applies to managing access levels for team projects defined on an on-premises Team Foundation Server (TFS). To manage access levels for Team Services, see [Manage users and access in Visual Studio Team Services](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md). For Team Services feature availability, see the [Visual Studio Team Services Feature Matrix](https://www.visualstudio.com/pricing/visual-studio-online-feature-matrix-vs).
-
-To connect and use the functions and features that TFS provides, users must be added to a group with the appropriate permissions. To use select web portal features, they must also belong to the access level that enables access to that feature.
+> [!NOTE]   
+> The **Advanced** access level is deprecated for TFS 2017 and later versions of TFS. Use the **VS Enterprise** access level only for active Visual Studio Enterprise subscribers. For MSDN Platforms and Visual Studio Test Professional with MSDN subscribers needing access to the Test hub, assign them to the Advanced access level and the Test Manager extension.  
+ 
 
 When you add a user or group to a team or team project, they're automatically granted access to those features supported by the default access level, which is Basic. This provides most users all the features they need. For a simplified overview of the permissions assigned to the most common groups&#151;Readers, Contributors, and Project Administrators&#151;as well as the Stakeholder access group, see [Permissions and access](../setup-admin/permissions-access.md).  
 
-Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features. Advanced and Visual Enterprise access levels include all Basic features. In the images provided below (click &#x25BC; to view), the circled features indicate the features made available from the previous access level.
-
-<ul>
-<li>Assign <a data-toggle="collapse" href="#basic-access">**Basic** &#x25BC;</a>, the default access level, to users with a TFS client access license (CAL).
-Basic provides access to most features, except for Test.
-All Visual Studio subscriptions and paid Team Services users include a TFS CAL.
-Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).   
-<img src="../work/connect/_img/access-levels-2017-basic.png" alt="Basic access features" style="border: 1px solid #CCCCCC;" />  		
-
-</li>
-
-<li>Assign <a data-toggle="collapse" href="#stakeholder-access">**Stakeholder** &#x25BC;</a> access to those users who need to enter bugs, view backlogs, boards, charts, and dashboards, but who don't have a TFS CAL.
-
-<img src="../work/connect/_img/access-levels-2017-stakeholder.png" alt="Stakeholder access features" style="border: 1px solid #CCCCCC;" />  		
-
-Stakeholder access is free. Stakeholders can also view releases and manage release approvals.
+Make sure to set each user's access level based on what you've purchased for that user. Basic access includes all Stakeholder features. Advanced and Visual Enterprise access levels include all Basic features.  
+ 
 See [Stakeholder access](../quickstart/get-started-stakeholder.md) for details of features available to stakeholders.
-</li>
-
-<li>For <u>TFS 2013 and TFS 2015 versions</u>, Assign <a data-toggle="collapse" href="#advanced-access">**Advanced** &#x25BC;</a> access to those users for whom you've purchased the full Test feature set. Here are the purchasing options:  
-
-<img src="../work/connect/_img/access-levels-2015-advanced.png" alt="Advanced access features" style="border: 1px solid #CCCCCC;" />  		
-
-<ul>
-<li>Higher-level Visual Studio subscriptions: Visual Studio Test Professional, Visual Studio Enterprise, or MSDN platform subscriptions.
-		These include a TFS CAL plus the rights to access the full set of Test features. </li>
-<li>A paid Visual Studio Team Services user (which includes a TFS CAL) plus the [Test Manager extension](#test-manager).</li>
-</ul>
-</li>
-
-<li>For <u>TFS 2017.2</u>, Assign <a data-toggle="collapse" href="#advanced-access-2017-2">**Advanced** &#x25BC;</a> access to those users for whom you've purchased MSDN Platform or Visual Studio Test Professional subscriptions. These include a TFS CAL plus the rights to access Test Manager. To learn more, see [Get extensions for TFS, Assign paid extension access to users](../marketplace/get-tfs-extensions.md#assign-extension).
-
-<img src="../work/connect/_img/access-levels-2017-update2-vs-t.png" alt="TFS 2017.2, Advanced Access" style="border: 1px solid #CCCCCC;" />
-
-<blockquote>**Note**: The **Advanced** access level will be deprecated for future versions of TFS. Use the **VS Enterprise** access level only for active Visual Studio Enterprise subscribers. For MSDN Platforms and Visual Studio Test Professional with MSDN subscribers needing access to the Test hub, assign them to the Advanced access level and the Test Manager extension. </blockquote>
-</li>
-
-<li>For <u>TFS 2017 versions</u>, Assign <a data-toggle="collapse" href="#vs-enterprise-access">**VS Enterprise** &#x25BC;</a> access to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN subscriptions or Test Professional, assign the Basic access level and the Test Manager extension.) To learn more, see [Get extensions for TFS, Assign paid extension access to users](../marketplace/get-tfs-extensions.md#assign-extension). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension](../marketplace/get-tfs-extensions.md#assign-extension).
-
-<img src="../work/connect/_img/access-levels-2017-vs.png" alt="VS Enterprise access features" style="border: 1px solid #CCCCCC;" />  		
-
-</li>
-
-
-</ul>
 
 
 <a id="grant-permissions"  >  </a>  
 ## Permissions versus access levels  
 
-As previously mentioned, setting the access level for  users or groups doesn't provide them access to a team project or the web portal. Only users or groups added to a team or TFS group can connect to a team project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the team project](../setup-admin/add-users.md) or as a [team member](../work/scale/multiple-teams.md#add-team-members).
+Setting the access level for  users or groups doesn't provide them access to a team project or the web portal. Only users or groups added to a team or TFS group can connect to a team project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the team project](../setup-admin/add-users.md) or as a [team member](../work/scale/multiple-teams.md#add-team-members).
 
 TFS controls access through these three inter-connected functional areas:
 

@@ -29,7 +29,7 @@
 - name: Concepts
   items:
   - name: About access levels 
-    href: /vsts/setup-admin/permissions-access?toc=/vsts/security/toc.json
+    href: /vsts/access-levels?toc=/vsts/security/toc.json
   - name: Use AAD groups for automated user provisioning (New Topic)
   - name: Access with Azure Active Directory (Team Services) 
     href: /vsts/setup-admin/tfs/admin/setup-ad-groups?toc=/vsts/security/toc.json

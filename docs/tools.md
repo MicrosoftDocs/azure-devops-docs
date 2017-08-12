@@ -53,20 +53,10 @@ To understand what features you get with the Visual Studio versions, see [Compar
 
 Team Explorer, a plug-in to all Visual Studio versions, provides connects Visual Studio to team projects defined in Team Services or TFS. You can manage source code, work items, and builds. To learn more, see [Work in Team Explorer](connect/work-team-explorer.md).
 
-<div style="float:left;width:320px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Home page with Git</p>
-<p style="text-align:center;"><img src="connect/_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" /></p>
-
-</div>
-
-<div style="float:left;width:320px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Home page with TFVC</p>
-<p style="text-align:center;"><img src="connect/_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" /></p>
-
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |Home page with Git |Home page with TFVC |
+> |-------------|----------|
+> |<img src="connect/_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" /> | <img src="connect/_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" /> |
 
 
 ##Office integration tools 
@@ -192,9 +182,8 @@ REST APIs are provided to support building extensions to Team Services and TFS. 
 
 
 ## Related notes 
-- [Key concepts](concepts.md)  
-- [Essential services](services.md)  
-- [Software development roles](roles.md)  
-
-- [Pricing](https://www.visualstudio.com/team-services/pricing/)  
+- [Key concepts](concepts.md)
+- [Essential services](services.md)
+- [Software development roles](roles.md)
+- [Pricing](https://www.visualstudio.com/team-services/pricing/)
  
