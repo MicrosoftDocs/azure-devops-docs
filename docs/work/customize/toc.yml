@@ -6,11 +6,23 @@
     href: customize-work.md
 - name: Quickstarts
   items:
+  - name: Define area paths
+    href: set-area-paths.md
+  - name: Define iteration paths or sprints
+    href: set-iteration-paths-sprints.md
   - name: Add a custom field (To be written)
     href: add-custom-field.md
   - name: Add a custom work item type
     href: add-custom-wit.md
-- name: Tutorials
+- name: Concepts
+  items:
+  - name: Inheritance process model
+    href: inheritance-process-model.md
+  - name: Hosted XML process model
+    href: hosted-xml-process-model.md
+  - name: On-premises XML process model
+    href: on-premises-xml-process-model.md
+- name: How-to guides
   items:
   - name: Inheritance process model
     items:
@@ -30,21 +42,10 @@
       href: ../process/custom-controls-process.md
     - name: Customize backlogs and boards
       href: ../process/customize-process-backlogs-boards.md
-  - name: Customize a Hosted XML process
-    href: ../import-process/customize-process.md
-  - name: Customize an On-premises XML process (NEW)
-- name: Concepts
-  items:
-  - name: Inheritance process model
-    href: inheritance-process-model.md
-  - name: Hosted XML process model
-    href: hosted-xml-process-model.md
-  - name: On-premises XML process model
-    href: on-premises-xml-process-model.md
-- name: How-to guides
-  items:
   - name: Hosted XML
     items:
+    - name: Customize a Hosted XML process
+      href: ../import-process/customize-process.md
     - name: Import a process
       href: ../import-process/import-process.md
     - name: Differences between cloud and on-premises process customizations
@@ -55,6 +56,8 @@
       href: customize-wit-form.md
   - name: Fields
     items:
+    - name: Add or modify a field
+      href: add-modify-field.md
     - name: Apply a field rule
       href: ../reference/apply-rule-work-item-field.md
     - name: Define pick lists
@@ -67,8 +70,10 @@
       href: ../reference/add-or-modify-work-item-fields-to-support-reporting.md
   - name: Change the workflow
     href: ../reference/change-workflow-wit.md
-  - name: Work item form
+  - name: Work item type or form
     items:
+    - name: Add or modify a work item type
+      href: add-modify-wit.md
     - name: Design the work item form
       href: ../reference/design-work-item-form.md
     - name: Add the Attachments control
@@ -91,16 +96,32 @@
       href: add-portfolio-backlogs.md
     - name: Use categories to group work item types
       href: ../reference/use-categories-to-group-work-item-types.md
+  - name: Process templates
+    items:
+    - name: Upload/download process templates
+      href: ../guidance/manage-process-templates.md
+    - name: Customize a process template
+      href: ../reference/process-templates/customize-process.md
+  - name: On-premises TFS only
+    items:
+    - name: Configure features after an upgrade
+      href: /vsts/work/customize/configure-features-after-upgrade
+    - name: Add features manually 
+      href: add-features-manually.md
+    - name: Additional configuration options
+      href: additional-configuration-options.md
+    - name: New features added through feature enablement 
+      href: new-features-added.md
+    - name: Update a customized process template to access new features
+      href: update-customized-process-template.md
+    - name: When upgrading from TFS 2008 or TFS 2010  
+      href: upgrade-tfs-2008-or-2010.md
     - name: Define a custom link type
       href: ../reference/define-custom-link-type.md
     - name: Change the maximum attachment size for work items
       href: ../reference/change-maximum-attachment-size-work-items.md
-    - name: Customize a process template
-      href: ../reference/process-templates/customize-process.md
     - name: Use team fields instead of area paths
       href: use-team-fields-instead-area-paths.md
-  - name: Configure features after an upgrade
-    href: /vsts/work/customize/configure-features-after-upgrade
 - name: Reference
   items:
   - name: Changes made to process templates
@@ -170,8 +191,6 @@
       href: ../reference/process-configuration-xml-element.md
   - name: Process template
     items:
-    - name: Upload/download process templates
-      href: ../guidance/manage-process-templates.md
     - name: XML element index
       href: ../reference/process-templates/process-template-plug-ins-xml-elements-index.md
     - name: Process template files

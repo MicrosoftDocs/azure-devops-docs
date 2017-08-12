@@ -49,7 +49,7 @@ You can configure most of your team settings from the common configuration dialo
 
 ## Related notes 
 
-To create additional teams, see [Multiple teams](multiple-teams.md).  
+To create additional teams, see [Add teams and team members](multiple-teams.md).  
 
 If team members don't have access to all the features they want, check that they have [the access level needed for those features](../connect/change-access-levels.md).  
 

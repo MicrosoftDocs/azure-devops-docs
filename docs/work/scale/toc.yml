@@ -32,7 +32,11 @@
 - name: How-to Guides
   items:
   - name: Set team defaults
-    href: set-team-defaults.md
+    href: set-team-defaults.md    
+  - name: Define area paths
+    href: /vsts/work/customize/set-area-paths?toc=/vsts/work/scale/toc.json 
+  - name: Define iteration paths or sprints
+    href: /vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/scale/toc.json 
   - name: Configure team settings
     href: manage-team-assets.md 
     items:

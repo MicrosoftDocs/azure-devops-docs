@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 03/02/2017    
 ---
 
-#Update a customized process template to access new features
+# Update a customized process template to access new features
 
 <b>TFS 2017 | TFS 2015 | TFS 2013</b> 
 

@@ -13,34 +13,41 @@ ms.date: 07/26/2017
 
 **Team Services | TFS 2017 | TFS 2015 | TFS 2013**
 
-With work item customization, you can add a custom field or work item type (WIT), or modify existing WITs. The method you use depends on whether you work in Team Services, which uses the Inheritance and Hosted XML process models, or an on-premises TFS, which uses the On-premises process model.  
+With work item customization, you can add a custom field or work item type (WIT), or modify existing WITs. The method you use depends on whether you work in Team Services, which uses the Inheritance and Hosted XML process models, or an on-premises TFS, which uses the On-premises XML process model.  
 
 ## 5-minute Quickstarts  
 
+- [Define area paths](set-area-paths.md)
+- [Define iteration paths or sprints](set-iteration-paths-sprints.md)
 - [Add a custom field](add-custom-field.md)
 - [Add a custom work item type](add-custom-wit.md)  
-
-## Step-by-StepTutorials
-
-Tutorials are provided for customizing work tracking based on each of the three supported process models. 
-
-- **Inheritance process model**
-	- [Manage processes](../process/manage-process.md)  
-	- [Customize a process](../process/customize-process.md)  
-	- [Add a custom field](../process/customize-process-field.md)  
-	- [Customize a web form](../process/customize-process-form.md)  
-	- [Customize a workflow](../process/customize-process-workflow.md)  
-	- [Customize a work item type](../process/customize-process-wit.md)  
-	- [Add a custom control](../process/custom-controls-process.md)  
-	- [Customize backlogs and boards](../process/customize-process-backlogs-boards.md)  
-- [Customize a Hosted XML process](../import-process/customize-process.md)  
-- Customize an On-premises XML process (NEW)
 
 ## Concepts
 
 - [Inheritance process model](inheritance-process-model.md)  
 - [Hosted XML process model](hosted-xml-process-model.md)  
 - [On-premises XML process model](on-premises-xml-process-model.md)  
+
+
+## How-to Guides
+
+Use the guidance provided in the following topics based on the process model or process template that you want to customize.  
+
+- **Inheritance process model**
+	- [Manage processes](../process/manage-process.md)  
+	- [Customize a process](../process/customize-process.md)  
+
+- **Hosted XML process model**
+	- [Customize a Hosted XML process](../import-process/customize-process.md)  
+    - [Import a process](../import-process/import-process.md)  
+
+- **On-premises XML process model**
+    - [Add or modify a field](add-modify-field.md)
+    - [Add or modify a work item type](add-modify-wit.md)
+
+- **Process templates**
+    - [Upload or download a process template](../guidance/manage-process-templates.md)
+    - [Customize a process template](../reference/process-templates/customize-process.md)  
 
 ## Reference  
 

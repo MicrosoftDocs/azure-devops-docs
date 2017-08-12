@@ -23,7 +23,10 @@ By using the index of elements in this topic, you can look up the syntax structu
   
 ##  Alphabetical index  
 
-<div style="float:left;width:225px;margin:3px;font-size:90%">
+
+<table>
+<tr>
+<td>
 -   [activateFeatures](define-project-portal-plug-in.md)      
 -   [CATEGORIES](../use-categories-to-group-work-item-types.md)    
 -   [CATEGORY](../use-categories-to-group-work-item-types.md)    
@@ -43,9 +46,8 @@ By using the index of elements in this topic, you can look up the syntax structu
 -   [FIELD](add-work-item-instance-process-template.md) (work item instance)  
 -   [FIELD](../all-field-xml-elements-reference.md)    
 -   [FIELDS](../all-field-xml-elements-reference.md)    
-</div>
-
-<div style="float:left;width:175px;margin:3px;font-size:90%">
+</td>
+<td>
 -   [File](define-project-portal-plug-in.md)    
 -   [files](define-project-portal-plug-in.md)    
 -   [folder](define-project-portal-plug-in.md) (portal)  
@@ -66,9 +68,8 @@ By using the index of elements in this topic, you can look up the syntax structu
 -   [name](../apply-rule-work-item-field.md)    
 -   [Node](define-classification-plug-in.md)    
 -   [Nodes](define-classification-plug-in.md)    
-</div>
-
-<div style="float:left;width:175px;margin:3px;font-size:90%">
+</td>
+<td>
 -   [parameter](add-reports-to-the-process-template.md)    
 -   [parameters](add-reports-to-the-process-template.md)    
 -   [permission](define-groups-teams-permissions-plug-in.md)    
@@ -88,9 +89,8 @@ By using the index of elements in this topic, you can look up the syntax structu
 -   [QueryFolder](add-work-item-queries-process-template.md)    
 -   [Reference](add-reports-to-the-process-template.md)    
 -   [report](add-reports-to-the-process-template.md)    
-</div>
-
-<div style="float:left;width:175px;margin:3px;font-size:90%">
+</td>
+<td>
 -   [ReportingServices](add-reports-to-the-process-template.md)    
 -   [reports](add-reports-to-the-process-template.md)    
 -   [site](add-reports-to-the-process-template.md) (reporting)  
@@ -110,11 +110,9 @@ By using the index of elements in this topic, you can look up the syntax structu
 -   [WORKITEMS](add-work-item-instance-process-template.md)    
 -   [WORKITEMTYPE](../use-categories-to-group-work-item-types.md) (category)  
 -   [WORKITEMTYPE](../all-witd-xml-elements-reference.md) (definition)   
-   
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
+</td>
+</tr>
+</table>
 
  
 <a name="pt"></a>   

@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 08/04/2016
 ---
 
-#When upgrading from TFS 2008 or TFS 2010  
+# When upgrading from TFS 2008 or TFS 2010  
 
 <b>TFS 2015 </b> 
 
