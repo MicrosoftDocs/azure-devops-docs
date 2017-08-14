@@ -99,11 +99,6 @@ sections:
     - html: <a href="concepts/agents/agents">Build and release agents</a>
     - html: <a href="concepts/process/tasks">Build and release tasks</a>
     - html: <a href="concepts/licensing/concurrent-pipelines-ts">Licensing and build and release pipelines</a>
-
-Release definitions
-Build and release agents
-Build and release tasks 
-Licensing and build and release pipelines
 - title: Resources
   items:
   - type: list
