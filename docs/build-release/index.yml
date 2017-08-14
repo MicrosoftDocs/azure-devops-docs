@@ -1,0 +1,115 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Build and Release
+metadata:
+  document_id: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8
+  title: CI/CD index to content | VSTS and TFS 
+  description: 'Learn how to configure CI/CD for the app and platform of your choice. Tutorials, references, and other documentation. ' 
+  services: azure
+  author: kaelli
+  manager: douge
+  ms.prod: vs-devops-alm
+  ms.topic: get-started-article
+  ms.date: 07/20/2017
+  ms.author: kaelli
+abstract:
+  description: 'Visual Studio Team Services and Team Foundation Server help you implement a highly customizable continuous integration (CI) and deployment (CD) pipeline for your .NET, Java, Node, PHP, or Python apps. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.'
+sections:
+- title: 5-Minute Quickstarts
+  items:
+  - type: paragraph
+    text: 'Learn how to build your app and deploy it to your choice of Azure service.'
+  - type: table
+    style: dataMatrix
+    columns:
+      - image:
+          src: /media/logos/logo_NETcore.svg
+      - image:
+          src: /media/logos/logo_NET.svg
+      - image:
+          src: /media/logos/logo_nodejs.svg
+      - image:
+          src: /media/logos/logo_java.svg
+    rows:
+      - title: Web apps
+        values:
+        - href: /vsts/deploy-azure/aspnet-core-to-azure-webapp?toc=/vsts/build-release/toc.json&bc=/vsts/breadcrumb/toc.json
+        - href: 
+        - href: 
+        - href: 
+        - href: 
+      - title: Windows virtual machines
+        values:
+          - href: /vsts/deploy-azure/aspnet-core-to-windows-vm?toc=/vsts/build-release/toc.json&bc=/vsts/breadcrumb/toc.json
+          - href: 
+          - href: 
+          - href: 
+          - href: 
+      - title: Linux virtual machines
+        values:
+          - href: /vsts/deploy-azure/aspnet-core-to-windows-vm?toc=/vsts/build-release/toc.json&bc=/vsts/breadcrumb/toc.json
+          - href: 
+          - href: 
+          - href: 
+          - href: 
+      - title: Containers
+        values:
+          - href: /vsts/deploy-azure/aspnet-core-to-acs?toc=/vsts/build-release/toc.json&bc=/vsts/breadcrumb/toc.json
+          - href: 
+          - href: 
+          - href: 
+          - href: 
+- title: Step-by-Step Tutorials
+  items:
+  - type: paragraph
+    text: ''
+  - type: list
+    style: ordered
+    items:
+    - html: <a href="tutorials/define-ci-build-process">Define CI build process</a>
+    - html: <a href="tutorials/define-cd-release-process">Define CD release process</a>
+    - html: <a href="tutorials/define-multistage-release-process">Set up multi-stage release</a>
+    - html: <a href="tutorials/ci-build-git">CI builds for Git in VSTS</a>
+    - html: <a href="tutorials/ci-build-github">CI builds for GitHub</a>
+    - html: <a href="tutorials/extend-release-management">Extend CI/CD</a>
+- title: Videos
+  items:
+    type: list
+    style: cards
+    className: cardsW
+    items:
+    - html: <p><a href="https://channel9.msdn.com/Events/build-release/2017/P4105/player">Build pipeline via Visual Studio</a></p>
+      image: 
+        src: _img/index/build-ci-cd-pipeline-vs-video.png
+        href: https://channel9.msdn.com/Events/build-release/2017/P4105/player
+    - html: <p><a href="https://channel9.msdn.com/Blogs/azurestack/Azure-Stack-for-Developers-Part-1-Overview">Azure Stack CI/CD</a></p>
+      image: 
+        src: _img/index/azure-stack-video.png
+        href: https://channel9.msdn.com/Blogs/azurestack/Azure-Stack-for-Developers-Part-1-Overview
+    - html: <p><a href="https://channel9.msdn.com/Events/Connect/2016/204/player">Azure Container Service video</a></p>
+      image: 
+        src: _img/index/ci-cd-azure-container-service-video.png
+        href: https://channel9.msdn.com/Events/Connect/2016/204/player
+- title: Concepts
+  items:
+  - type: list
+    style: unordered
+    items: 
+    - html: <a href="concepts/definitions/release/index">Release definitions</a>
+    - html: <a href="concepts/agents/agents">Build and release agents</a>
+    - html: <a href="concepts/process/tasks">Build and release tasks</a>
+    - html: <a href="concepts/licensing/concurrent-pipelines-ts">Licensing and build and release pipelines</a>
+
+Release definitions
+Build and release agents
+Build and release tasks 
+Licensing and build and release pipelines
+- title: Resources
+  items:
+  - type: list
+    style: unordered
+    items:
+     - html: <a href="https://www.visualstudio.com/learn/what-is-continuous-integration/">What is Continuous Integration?</a>
+     - html: <a href="https://www.visualstudio.com/learn/what-is-continuous-delivery/">What is Continuous Delivery?</a>
+     - html: <a href="https://www.visualstudio.com/learn/what-is-devops/">What is DevOps?</a>
+     - html: <a href="https://marketplace.visualstudio.com/search?target=VSTS&amp;category=Build%20and%20release&amp;sortBy=Downloads">Build and release Marketplace extensions</a>

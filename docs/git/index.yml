@@ -1,0 +1,98 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Git index to content
+metadata:
+  document_id: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603
+  title: Git documentation for Team Services and TFS - Tutorials, API Reference | Microsoft Docs
+  description: Guide to getting started with Git documentation
+  services: mysql
+  author: kaelli
+  manager: douge
+  ms.prod: vs-devops-alm
+  ms.technology: vs-devops-git  
+  ms.topic: get-started-article  
+  ms.date: 07/20/2017
+  ms.author: kaelli
+abstract:
+  description: Use Git repos to host and collaborate on your code using Team Services or Team Foundation Server.  
+sections:
+- title: 5-Minute Quickstarts
+  items:
+  - type: paragraph
+    text: 'Get started by creating a repo, uploading your code, and inviting developers to work in the repo. You can use any one of these clients or IDEs: '
+  - type: list
+    style: icon48
+    items: 
+    - image: 
+        src: /media/common/i_get-started.svg
+      text: Create a new Git repo
+      href: create-new-repo
+    - image: 
+        src: /media/logos/logo_visual-studio.svg
+      text: Share your code with Visual Studio and Git
+      href: share-your-code-in-git-vs
+    - image: 
+        src: /media/common/i_cligeneric.svg
+      text: Get started with Git from the command line
+      href: share-your-code-in-git-cmdline
+    - image: 
+        src: /media/common/placeholder.svg
+      text: Share your code in Git using Xcode
+      href: share-your-code-in-git-xcode
+    - image: 
+        src: /media/common/placeholder.svg
+      text: Share your code in Git using Eclipse
+      href: share-your-code-in-git-eclipse
+- title: Step-by-Step Tutorials
+  items:
+  - type: paragraph
+    text: 'Learn how to design your database and develop apps:'
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="tutorial/creatingrepo">Create a new repo</a>
+    - html: <a href="tutorial/clone">Clone an existing repo</a>
+    - html: <a href="tutorial/commits">Save work with commits</a>
+    - html: <a href="tutorial/branches">Create work in branches</a>
+    - html: <a href="tutorial/pushing">Share code with push</a>
+    - html: <a href="tutorial/pulling">Update code with fetch and pull</a>
+    - html: <a href="tutorial/pullrequest">Review code with pull requests</a>
+    - html: <a href="tutorial/rebase">Apply changes with rebase</a>
+    - html: <a href="tutorial/cherry-pick">Copy changes with cherry-pick</a>
+    - html: <a href="tutorial/merging">Resolve merge conflicts</a>
+    - html: <a href="tutorial/undo">Undo changes</a>
+    - html: <a href="tutorial/ignore-files">Ignore files</a>
+    - html: <a href="tutorial/history">Review history</a>
+- title: Videos
+  items:
+    type: list
+    style: cards
+    className: cardsW
+    items:
+    - html: <p><a href="https://channel9.msdn.com/Events/Build/2017/P4101/player">Git at scale</a></p>
+      image: 
+        src: _img/index/git-at-scale-video-img.png
+        href: https://channel9.msdn.com/Events/Build/2017/P4101/player
+- title: Concepts
+  items:
+  - type: list
+    style: unordered
+    items: 
+    - html: <a href="/en-us/vsts/git/concepts/history"">History in Git</a>
+    - html: <a href="/en-us/vsts/git/concepts/history-simplification">History simplification</a>
+    - html: <a href="/en-us/vsts/git/concepts/git-branching-guidance"">Branch organization</a>
+    - html: <a href="/en-us/vsts/git/concepts/pull-requests">Pull requests</a>
+    - html: <a href="/en-us/vsts/git/auth-overview">Authentication</a>
+    - html: <a href="/en-us/vsts/git/concepts/git-dates">Understand dates in Git</a>
+    - html: <a href="/en-us/vsts/git/concepts/git-names">Understand names in Git</a>
+- title: Resources
+  items:
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="https://www.visualstudio.com/learn/what-is-git/">What is Git?</a>
+    - html: <a href="https://www.visualstudio.com/learn/what-is-version-control/">What is version control?</a>
+    - html: <a href="https://www.visualstudio.com/learn/centralized-to-git/">Plan your migration to Git</a>
+    - html: <a href="https://www.visualstudio.com/learn/migrate-from-tfvc-to-git/">Migrate from TFVC to Git</a>
+    - html: <a href="https://www.visualstudio.com/learn/git-at-scale/">Git at Scale</a>
+    - html: <a href="https://marketplace.visualstudio.com/search?target=VSTS&category=Code&sortBy=Downloads">Marketplace extensions</a>
