@@ -21,7 +21,7 @@ ms.custom: mvc
 
 Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your ASP.NET Core apps. This quickstart shows how to set up CI and CD to deploy an ASP.NET Core application to Linux App Service using Docker and [Azure Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/).
 
-![A typical release pipeline for web applications](_img/aspnet-core-to-acr/vscode-git-ci-cd-to-azure-container.png)
+![A typical release pipeline for web applications](_img/aspnet-core-to-acr/cicddockerflow.png)
 
 With your CI/CD processes in place, you'll push a change into your team's git repo and the results will automatically show up on your site.
 
