@@ -148,21 +148,6 @@ Copy you public key directly from the PuTTYgen window and paste into the **Key D
 You can then compare the MD5 signature to the one in your  profile. This is useful if you have connection problems or have concerns about incorrectly
 pasting in the public key into the **Key Data** field when adding the key to Team Services.
  
-### How can I test my SSH connection without running a Git command?
- 
-Run the following from the command prompt to test your connection:
- 
- <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&#062; ssh -T <font color="#F9FE64">account@account.visualstudio.com</font></pre>
-
-You will replace `account@account.visualstudio.com` with the corresponding information from the clone URL from the repository, e.g. `fabfiber@fabfiber.visualstudio.com` if from the
-above example. You will see this output if successful:
-
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-<font color="#63E463">Authentication for user with identifier "2ee0ba7b-fb11-44b3-b69e-33684597fbfb" was successful against account "fabfiber".</br> 
-Shell is not supported.</font>
-</pre>
- 
 <a name="migrate"></a>
  
 ### How can I start using SSH in a repository where I am currently using HTTPS?
