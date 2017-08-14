@@ -35,18 +35,10 @@ Request feedback from stakeholders directly from a Team Services or TFS work ite
 
 1. Choose **Send** to generate emails to all the selected stakeholders.
 
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-#### Q: Can teams request feedback from other team members, such as users having Basic access?
-
-**A**: Yes, teams can request feedback from other team members too. 
-Just add their names in the feedback request form so that a 
-**Request feedback** email is sent to them. Also see
-[Can users with Basic access respond to feedback requests?](provide-stakeholder-feedback.md#non-stakeholder-feedback).
-
-<!-- ENDSECTION --> 
+> [!NOTE]
+> Teams can request feedback from other team members, such as users having Basic access. 
+> Just add their names in the feedback request form so that a **Request feedback** email is sent to them.
+> Also see [Can users with Basic access respond to feedback requests?](provide-stakeholder-feedback.md#non-stakeholder-feedback).
 
 ## See also
 

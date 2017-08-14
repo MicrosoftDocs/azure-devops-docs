@@ -23,7 +23,7 @@ Use Microsoft Test Manager to specify test configurations. But you can still run
 
 **Requirements**
 
-* Visual Studio Ultimate, Visual Studio Premium, Visual Studio Test Professional
+* Visual Studio Enterprise, Ultimate, Premium, or Test Professional
 
 ## Planning tests with configurations  
  
@@ -83,21 +83,19 @@ Create new configurations that your tests can use:
 
 ![Define configurations as combinations of values](_img/test-configurations-specifying-test-platforms/mtmconfig-07.png)
 
-## Q &amp; A  
- 
-**Q: Are different test data a good use of a test configuration variable?**
+**Are different test data a good use of a test configuration variable?**
 
-**A**: It's better to use [parameters](../repeat-test-with-different-data.md)
+It's better to use [parameters](../repeat-test-with-different-data.md)
 when you want a test to be run with different test data, because it's easy to set different parameters for different test cases. 
 Test configurations are better for variations in the hardware or software platform on which the application under test is installed. 
 
-**Q: Repeating tests on different configurations is boring.**
+## Improving performance when repeating tests  
 
-**A**:  And slow and error-prone. But there is a way to speed things up. 
-[Record your actions](../getting-started/record-play-back-manual-tests.md) on one configuration, and then play them back on another. 
+Repeating tests on different configurations can be slow and error-prone.
+To speed things up, [record your actions](../getting-started/record-play-back-manual-tests.md) on one configuration,
+and then play them back on another. 
 
 If you play back on a different browser, choose the **Change browser for playback** option under the play menu in test runner. 
-
 However, be aware that record/playback doesn't work for all browsers and applications. In some cases you might have to play back some steps manually.
   
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

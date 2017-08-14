@@ -204,22 +204,11 @@ and other run settings in Microsoft Test Manager (MTM) and run your
 tests using MTM. For more details, see 
 [Run manual tests with Microsoft Test Manager](mtm/run-manual-tests-with-microsoft-test-manager.md).
 
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-#### Q: I have an older version of Microsoft Test Manager. Can I launch the test runner from test hub? 
-
-**A**: We recommend you upgrade to the latest version of Microsoft Test Manager.
-However, if you have Microsoft Test Manager 2015 or an earlier version installed,
-you can choose **Microsoft Test Runner 2015 and earlier** when you launch the 
-test runner from Test hub using **Run with options**. You must
-[configure the data collectors](https://msdn.microsoft.com/en-us/library/ee231892.aspx)
-and other run settings in Microsoft Test Manager (MTM) and specify these as the
-default settings for the test plan. For more details, see 
-[Run manual tests with Microsoft Test Manager](mtm/run-manual-tests-with-microsoft-test-manager.md).
-
-<!-- ENDSECTION --> 
+> [!NOTE]
+> If you have an older version of Microsoft Test Manager, we recommend you upgrade to the latest version.
+> However, if you have Microsoft Test Manager 2015 or an earlier version installed, you can choose **Microsoft Test Runner 2015 and earlier** when you launch the test runner from Test hub using **Run with options**.
+> You must [configure the data collectors](https://msdn.microsoft.com/en-us/library/ee231892.aspx) and other run settings in Microsoft Test Manager (MTM) and specify these as the default settings for the test plan.
+> For more details, see [Run manual tests with Microsoft Test Manager](mtm/run-manual-tests-with-microsoft-test-manager.md).
 
 ## See also
 

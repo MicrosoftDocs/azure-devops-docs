@@ -139,7 +139,7 @@ Simply follow these steps:
 ## Related topics
 
 * [Download Team Foundation Server](https://www.visualstudio.com/products/tfs-overview-vs)
-* [Install and configure Team Foundation Server](../../../../setup-admin/get-started.md)
+* [Install and configure Team Foundation Server](../../../../setup-admin/index.md)
 * [Sign up for Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs)
 
 [!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]

@@ -195,46 +195,7 @@ Learn more about
 Or learn more about
 [team administration](../../work/scale/manage-team-assets.md).
 
-##  Try this next
+##  Next step
 
-* [Control how long to keep test results](how-long-to-keep-test-results.md)
-
-<a name="qa"></a>
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-#### Q: Can I view the recent test results for an individual test case?
-
-A:  Yes, select the test case within a test suite and then 
-choose to view the test details pane.
-
-![From test suite, select test case. On toolbar, click test details icon to view the test details pane](_img/track-test-status/ShowDetailsPane.png)
-
-View the recent test results for this test case.
-
-![In test details pane, open the Pane list, choose Test Results](_img/track-test-status/TestResultsPane.png)
-
-#### Q: How is data shown in the charts for test cases that are in multiple test suites?
-
-A:  For test case charts, if a test case has been added to 
-multiple test suites in a plan then it's only counted once.
-
-For test result charts, each instance of a test that is run 
-is counted for each of the test suites separately.
-
-#### Q: Who can create charts?
-
-A: You need at least a Basic access to create charts.
-
-#### Q: How can I edit or delete a chart?
-
-A: Select the option you want from the chart's context menu.
-
-#### Q: How do I control how long I keep my test data?
-
-A: [Learn more here](how-long-to-keep-test-results.md).
-
-<!-- ENDSECTION --> 
-
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+> [!div class="nextstepaction"]
+> [Control how long to keep test results](how-long-to-keep-test-results.md)

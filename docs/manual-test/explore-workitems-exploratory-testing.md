@@ -26,8 +26,8 @@ You can explore:
 * Work items belonging to a requirement category, a feature category, or an epic category
 * Requirements-based test suites and test cases.
 
-You can explore a work item from the 
-[Kanban board](#kanban) or from the [extension](#extension).
+You can explore a work item from the [Kanban board](#kanban) or from the [extension](#extension).
+You can also explore [multiple work items in the same session](#multipleitems).
 
 <a name="kanban"></a>
 ## Explore work items from the Kanban board
@@ -78,22 +78,16 @@ You can explore a work item from the
 
    ![Viewing the current work item](_img/explore-workitems-exploratory-testing/explore-workitems-04.png)
  
-## Q&A
+<a name="multipleitems"></a>
+## Explore multiple work items  in the same session
 
-<!-- BEGINSECTION class="md-qanda" -->
+To explore another work item, you must first dissociate the current work item from the in-progress session.
 
-#### Q: Can I explore multiple work-items in the same session?
+1. Open the **Explore work item** page and choose **Change**. 
 
-**A**: Yes. To explore another work item, you must first dissociate the current 
-work item from the in-progress session. Open the 
-**Explore work item** page and choose **Change**. 
+   ![Changing the work item you are exploring](_img/explore-workitems-exploratory-testing/explore-workitems-09.png)
 
-![Changing the work item you are exploring](_img/explore-workitems-exploratory-testing/explore-workitems-09.png)
-
-Then associate the new work item with the in-progress session
-as described above.
- 
-<!-- ENDSECTION --> 
+2. Associate the new work item with the in-progress session as [described above](#extension).
 
 ## See Also
 

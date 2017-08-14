@@ -121,39 +121,8 @@ you'll have to manually perform that step.
 
    ![Play each step and then check the result.](_img/record-play-manual-tests/play-check-result.png)
 
-## Q & A
+## See Also
 
-<!-- BEGINSECTION class="m-qanda" -->
-
-####Q: Can I record a test in one test plan and play it back in another?
-  
-A:  Yes, this is a great way to do regression tests quickly and accurately. 
-If you want to repeat some tests you did in a previous sprint, 
-just add those test cases to the test plan for the current sprint.
-The recording is linked to the test case, not to its appearance 
-in any particular test plan or suite.
-
-####Q: Can I record a test in one test configuration and play it back in a different configuration? The tests for different configurations show up as separate tests in the Run page.
-  
-A:  Yes, the recording is linked to the test case, 
-so you can play it back from any instance of that test case, even in different 
-[test configurations](../test-different-configurations.md), 
-test suites, or test plans.
-
-####Q: Some or all of my actions aren't recorded, or the playback doesn’t work properly. Why?
-  
-A:  Action recording works best for apps in which each user 
-interface field has a unique ID, and for basic actions such as keystrokes, 
-clicks, and menu selections. It doesn't work for some apps and web browsers.
-See [Supported configurations and platforms for coded UI tests and action recordings](https://msdn.microsoft.com/library/dd380742).
-
-To learn how to develop your app so that it's easier to record tests, 
-see [Enable coded UI testing of your controls](https://msdn.microsoft.com/library/hh552522).
-
-#### Q: Record and playback is great. But can I completely automate a test, including verifying the results?
-
-A:  Yes, see [Automate system tests](https://msdn.microsoft.com/library/ff472576%28v=vs.140%29.aspx).
-
-<!-- ENDSECTION -->
+* [Q &amp; A for recording and playing back manual tests](../reference-qa.md#mtmqna)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

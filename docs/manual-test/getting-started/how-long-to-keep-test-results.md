@@ -77,40 +77,4 @@ for example, results published from external test systems,
 set the retention limits at the team project level. 
 [Learn more](#manual-test-results-limits)
 
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-#### Q: What are the default retention limits?
-
-A: For team projects created before October 2015, 
-Visual Studio Team Services doesn't delete results from automated tests 
-and manual tests unless you change the retention limit. 
-
-For new team projects created after October 2015, 
-Visual Studio Team Services deletes all test results after one year (365 days),
-unless you chose to indefinitely retain a build associated with those results. 
-
-#### Q: What is the default test retention policy for XAML builds?
-
-A: By default, a XAML build definition is set up to delete builds older 
-than the 10 most recent builds. But related test results aren't automatically
-deleted when those builds are deleted. 
-[Learn more](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx). 
-
-#### Q: Why isn't test data deleted for XAML builds by default? 
-
-A: By default, this is turned off because 10 builds can happen very quickly, 
-especially with continuous integration builds. 
-Test results are often deleted before you can analyze them. 
-
-<a name="keep-build-indefinitely"></a>
-#### Q: How do I keep a build indefinitely?
-
-A: Like this:
-
-![Keep a build indefinitely](_img/how-long-to-keep-test-results/build-keep-indefinitely.png)
-
-<!-- ENDSECTION -->
-
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

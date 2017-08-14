@@ -14,7 +14,12 @@ ms.date: 07/04/2017
 * [Creating manual test plans](#testplans)
 * [Creating manual test cases](#testcases)
 * [Running manual tests](#runtests)
+* [Tracking test status](#trackstatus)
+* [Managing test results](#manageresults)
+* [Sharing steps between test cases](#sharesteps)
+* [Repeating a test with different data](#repeatdifferent)
 * [Test &amp Feedback extension](#tandfext)
+* [Microsoft Test Manager](#mtmqna)
 
 <a name="testplans"></a>
 ## Creating manual test plans
@@ -31,7 +36,7 @@ ms.date: 07/04/2017
 
 ![Delete a test plan](getting-started/_img/create-a-test-plan/delete-test-plan.png)
 
-See also [Delete test artifacts](../../work/backlogs/remove-delete-work-items.md#delete-test)
+See also [Delete test artifacts](../work/backlogs/remove-delete-work-items.md#delete-test)
 
 ### Q: Can I group and reorder my requirement-based test suites together?
 
@@ -109,7 +114,7 @@ Or permanently delete it.
 
 ![Delete a test case](getting-started/_img/create-test-cases/delete-test-case.png)
 
-See also [Delete test artifacts](../../work/backlogs/remove-delete-work-items.md#delete-test)
+See also [Delete test artifacts](../work/backlogs/remove-delete-work-items.md#delete-test)
 
 ### Q: Can I add an extra line to a test step?
 
@@ -366,6 +371,120 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 *****
 
+<a name="trackstatus"></a>
+## Tracking test status
+
+### Q: Can I view the recent test results for an individual test case?
+
+**A:**  Yes, select the test case within a test suite and then 
+choose to view the test details pane.
+
+![From test suite, select test case. On toolbar, click test details icon to view the test details pane](getting-started/_img/track-test-status/ShowDetailsPane.png)
+
+View the recent test results for this test case.
+
+![In test details pane, open the Pane list, choose Test Results](getting-started/_img/track-test-status/TestResultsPane.png)
+
+### Q: How is data shown in the charts for test cases that are in multiple test suites?
+
+**A:**  For test case charts, if a test case has been added to 
+multiple test suites in a plan then it's only counted once.
+For test result charts, each instance of a test that is run 
+is counted for each of the test suites separately.
+
+### Q: Who can create charts?
+
+**A:** You need at least a Basic access to create charts.
+
+### Q: How can I edit or delete a chart?
+
+**A:** Select the option you want from the chart's context menu.
+
+### Q: How do I control how long I keep my test data?
+
+**A:** [Learn more here](getting-started/how-long-to-keep-test-results.md).
+
+*****
+
+<a name="repeatdifferent"><a/>
+## Repeating a test with different data
+
+### Q: Are parameters the best way to specify that the test should be run on different operating system platforms? And with different browsers, databases, and so on?
+
+**A**: It's better to use [test configurations](test-different-configurations.md) for that.
+With test case parameters, you run the different parameter values one after another, 
+which makes it difficult to switch from one platform to another.
+
+### Q: Can I use parameters in shared steps?
+
+**A**: Yes. You set the parameter values in the test cases where you use the shared steps.
+
+### Q: Can I import parameter values from an Excel spreadsheet to my shared parameter sets?
+
+**A**: Yes. Copy the data from your Excel spreadsheet and paste it 
+into your shared parameters grid. You can also copy the data from 
+your grid back into Excel if you need to.
+
+*****
+
+<a name="manageresults"><a/>
+## Managing test results
+
+### Q: What are the default retention limits?
+
+**A**: For team projects created before October 2015, 
+Visual Studio Team Services doesn't delete results from automated tests 
+and manual tests unless you change the retention limit. 
+
+For new team projects created after October 2015, 
+Visual Studio Team Services deletes all test results after one year (365 days),
+unless you chose to indefinitely retain a build associated with those results. 
+
+### Q: What is the default test retention policy for XAML builds?
+
+**A**: By default, a XAML build definition is set up to delete builds older 
+than the 10 most recent builds. But related test results aren't automatically
+deleted when those builds are deleted. 
+[Learn more](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx). 
+
+### Q: Why isn't test data deleted for XAML builds by default? 
+
+**A**: By default, this is turned off because 10 builds can happen very quickly, 
+especially with continuous integration builds. 
+Test results are often deleted before you can analyze them. 
+
+<a name="keep-build-indefinitely"></a>
+### Q: How do I keep a build indefinitely?
+
+**A**: Like this:
+
+![Keep a build indefinitely](getting-started/_img/how-long-to-keep-test-results/build-keep-indefinitely.png)
+
+*****
+
+<a name="sharesteps"><a/>
+## Sharing steps between test cases
+
+### Q: How do I use shared steps in Microsoft Test Manager?**  
+
+**A:** It's almost exactly the same in Microsoft Test Manager as in the web portal. The buttons look slightly different.  
+  
+### Q: Can I find all my shared steps, and all the test cases where they are used?**  
+
+**A:** Yes. [Open Microsoft Test Manager](mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md) and look under **Organize**, **Shared Steps Manager**.  
+Shared steps and test cases are stored as work items in Team Foundation Server.  
+  
+### Q: Can I share steps between test plans and team projects?**  
+
+**A:** Yes. But don't forget that if you edit shared steps, the changes appear in every place you use them.  
+  
+### Q: Can I use parameters in shared steps?**  
+
+**A:** Yes. You provide values for the [parameters](repeat-test-with-different-data.md) in the test cases where the shared steps are used.  
+You don't have to provide values in the shared steps definition. However, you can provide one default row of values, which is used when you create an action recording of a standalone shared step.
+
+*****
+
 <a name="tandfext"><a/>
 ## Test &amp; Feedback extension
 
@@ -422,6 +541,39 @@ and provide feedback flow, which are supported only for TFS 2017.
 **A:** Yes, the extension automatically shows bugs that may be related to the one you are creating
 and allows you to add your screenshots, notes, and videos to this existing bug. 
 For more details, see [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md).
+
+*****
+
+<a name="mtmqna"></a>
+## Microsoft Test Manager
+
+### Q: Can I record a test in one test plan and play it back in another?
+  
+**A:** Yes, this is a great way to do regression tests quickly and accurately. 
+If you want to repeat some tests you did in a previous sprint, 
+just add those test cases to the test plan for the current sprint.
+The recording is linked to the test case, not to its appearance 
+in any particular test plan or suite.
+
+### Q: Can I record a test in one test configuration and play it back in a different configuration? The tests for different configurations show up as separate tests in the Run page.
+  
+**A:** Yes, the recording is linked to the test case, 
+so you can play it back from any instance of that test case, even in different 
+[test configurations](test-different-configurations.md), 
+test suites, or test plans.
+
+### Q: Some or all of my actions aren't recorded, or the playback doesn’t work properly. Why?
+  
+**A:** Action recording works best for apps in which each user 
+interface field has a unique ID, and for basic actions such as keystrokes, 
+clicks, and menu selections. It doesn't work for some apps and web browsers.
+See [Supported configurations and platforms for coded UI tests and action recordings](https://msdn.microsoft.com/library/dd380742).
+To learn how to develop your app so that it's easier to record tests, 
+see [Enable coded UI testing of your controls](https://msdn.microsoft.com/library/hh552522).
+
+### Q: Record and playback is great. But can I completely automate a test, including verifying the results?
+
+**A:** Yes, see [Automate system tests](https://msdn.microsoft.com/library/ff472576%28v=vs.140%29.aspx).
 
 *****
 

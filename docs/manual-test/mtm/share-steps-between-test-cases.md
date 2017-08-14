@@ -41,22 +41,4 @@ When you [run a test](../getting-started/run-manual-tests.md), you can either ma
   
 ![Shared steps in Test Runner.](_img/share-steps-between-test-cases/almt_ws33runsharedsteps.png)  
   
-## Q &amp; A
-
-**Q: How do I use shared steps in Microsoft Test Manager?**  
-It's almost exactly the same in Microsoft Test Manager as in the web portal. The buttons look slightly different.  
-  
-**Q: Can I find all my shared steps, and all the test cases where they are used?**  
-Yes. [Open Microsoft Test Manager](connect-microsoft-test-manager-to-your-team-project-and-test-plan.md) and look under **Organize**, **Shared Steps Manager**.  
-  
-Shared steps and test cases are stored as work items in Team Foundation Server.  
-  
-**Q: Can I share steps between test plans and team projects?**  
-Yes. But don't forget that if you edit shared steps, the changes appear in every place you use them.  
-  
-**Q: Can I use parameters in shared steps?**  
-Yes. You provide values for the [parameters](../repeat-test-with-different-data.md) in the test cases where the shared steps are used.  
-  
-You don't have to provide values in the shared steps definition. However, you can provide one default row of values, which is used when you create an action recording of a standalone shared step.
-
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

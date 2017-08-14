@@ -27,6 +27,9 @@ your findings to an existing bug.
    ![The link to view similar bugs](_img/add-to-bugs-exploratory-testing/add-to-existing-bugs-01.png)
  
    The form displays **0 Similar** if it does not find any matching bugs.
+   In this case, or if you don't see a "similar" link, you can create a
+   new bug containing your screenshots, notes, and videos
+   as described in [this topic](connected-mode-exploratory-testing.md).
  
 1. If you see a bug you want to update, instead of creating a new one:
 
@@ -41,7 +44,7 @@ your findings to an existing bug.
 
      ![Saving the updated bug](_img/add-to-bugs-exploratory-testing/add-to-existing-bugs-03.png)
 
-1. If, instead, you decide not to update an existing bug:
+1. If, instead, you decide not to update an existing bug, ignore the "similar" link and:
 
    - Choose the **New bug** link to return to the bug details form.
 
@@ -51,24 +54,6 @@ your findings to an existing bug.
      as described in [this topic](connected-mode-exploratory-testing.md).<p />
    
 1. Continue exploring your app, filing bugs and tasks, and creating test cases. 
- 
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-#### Q: What happens if I don't see a "similar" link, or I see "0 Similar" in the bug dialog?
-
-**A**: This means that the extension could not find any bugs with
-similar keywords in the title. You can create a
-new bug containing your screenshots, notes, and videos
-as described in [this topic](connected-mode-exploratory-testing.md).
-
-#### Q: What about if I don't want to update an existing bug?
-
-**A**: Simply ignore the "similar" link and carry on creating and
-saving the new bug as described in [this topic](connected-mode-exploratory-testing.md).
- 
-<!-- ENDSECTION --> 
 
 ## See Also
 

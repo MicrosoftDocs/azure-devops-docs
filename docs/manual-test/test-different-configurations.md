@@ -35,7 +35,7 @@ Then you can:
 * [Run tests with each of the configurations](#run-configs)
 * [Track your test results for each configuration](#track-configs)
 
->This feature is available only in Visual Studio Team Services.
+> This feature is available only in Visual Studio Team Services.
 
 <a name="create-configs"></a>
 ## Create configurations and variables
@@ -146,16 +146,8 @@ or test suite apply to all tests or suites within it.
 
    ![The configuration test result chart](_img/testing-configurations/testing-configurations-11.png)
 
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-#### Q: I have a test case that appears in several test plans and test suites. Do I have to set the configurations for each of these test points? 
-
-**A**: Yes. The same test case can have different configuration 
-settings in different test suites and test plans.
-
-<!-- ENDSECTION --> 
+> If you have a test case that appears in several test plans and test suites, you can set the different configurations for each of these. 
+The same test case can have different configuration settings in different test suites and test plans.
 
 ## See also
 
