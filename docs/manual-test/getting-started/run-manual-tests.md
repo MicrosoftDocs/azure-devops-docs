@@ -108,6 +108,10 @@ However, if you want to collect more types of data, run your tests using
 For more information, see
 [Collect diagnostic data](../collect-diagnostic-data.md#collect-desktop).
 
+## See also
+
+*  [Q &amp; A for manual testing](../reference-qa.md#runtests)
+
 ## Next step
 
 > [!div class="nextstepaction"]

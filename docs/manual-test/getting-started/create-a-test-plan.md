@@ -74,6 +74,10 @@ and [create your backlog](../../work/backlogs/create-your-backlog.md).
    ![Select backlog items, then click Create suites](_img/create-a-test-plan/AddRequirementSuitesToTestPlan3.png)
 
    Now you've created a requirement-based test suite for each backlog item.
+   
+## See also
+
+*  [Q &amp; A for manual testing](../reference-qa.md#testplans)
 
 ##  Next step
 

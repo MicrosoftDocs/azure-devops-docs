@@ -131,6 +131,10 @@ update it automatically.
 >If you have problems connecting to Team Services or TFS, you may find
 the topic [TF31002: Unable to connect](https://www.visualstudio.com/en-us/docs/work/reference/error/tf31002-unable-connect-tfs) useful.
 
+## See also
+
+*  [Q &amp; A for manual testing](../reference-qa.md#tandfext)
+
 ## Next step
 
 > [!div class="nextstepaction"]

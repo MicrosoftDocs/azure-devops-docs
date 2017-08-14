@@ -195,6 +195,10 @@ Learn more about
 Or learn more about
 [team administration](../../work/scale/manage-team-assets.md).
 
+## See also
+
+*  [Q &amp; A for manual testing](../reference-qa.md#trackstatus)
+
 ##  Next step
 
 > [!div class="nextstepaction"]

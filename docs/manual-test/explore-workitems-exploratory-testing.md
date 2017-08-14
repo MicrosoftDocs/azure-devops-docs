@@ -91,6 +91,7 @@ To explore another work item, you must first dissociate the current work item fr
 
 ## See Also
 
+* [Q &amp; A for manual testing](reference-qa.md#tandfext)
 * [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 * [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
 * [Get insights across your exploratory testing sessions](insights-exploratory-testing.md)

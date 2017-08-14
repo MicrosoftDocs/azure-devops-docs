@@ -78,6 +78,8 @@
         href: mtm/testing-windows-store-apps.md
   - name: Reference
     items:
+    - name: "Q & A"
+      href: reference-qa.md
     - name: REST API for test management
       href: ../integrate/index.md
     - name: Unable to connect

@@ -77,4 +77,8 @@ for example, results published from external test systems,
 set the retention limits at the team project level. 
 [Learn more](#manual-test-results-limits)
 
+## See also
+
+*  [Q &amp; A for manual testing](../reference-qa.md#manageresults)
+
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

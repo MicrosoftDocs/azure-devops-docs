@@ -203,6 +203,7 @@ you must [configure the data collectors](https://msdn.microsoft.com/en-us/librar
 and other run settings in Microsoft Test Manager (MTM) and run your 
 tests using MTM. For more details, see 
 [Run manual tests with Microsoft Test Manager](mtm/run-manual-tests-with-microsoft-test-manager.md).
+<p />
 
 > [!NOTE]
 > If you have an older version of Microsoft Test Manager, we recommend you upgrade to the latest version.

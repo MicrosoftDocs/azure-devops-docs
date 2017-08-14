@@ -41,4 +41,8 @@ When you [run a test](../getting-started/run-manual-tests.md), you can either ma
   
 ![Shared steps in Test Runner.](_img/share-steps-between-test-cases/almt_ws33runsharedsteps.png)  
   
+## See also
+
+*  [Q &amp; A for manual testing](../reference-qa.md#sharesteps)
+
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

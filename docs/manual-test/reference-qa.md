@@ -18,7 +18,7 @@ ms.date: 07/04/2017
 * [Managing test results](#manageresults)
 * [Sharing steps between test cases](#sharesteps)
 * [Repeating a test with different data](#repeatdifferent)
-* [Test &amp Feedback extension](#tandfext)
+* [Test &amp; Feedback extension](#tandfext)
 * [Microsoft Test Manager](#mtmqna)
 
 <a name="testplans"></a>

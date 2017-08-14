@@ -57,6 +57,10 @@ the tests.
 
    ![Assign testers to run all tests and send emails to them](_img/create-test-cases/AssignMultipleTestersEmail.png)
 
+## See also
+
+*  [Q &amp; A for manual testing](../reference-qa.md#testcases)
+
 ##  Next step
 
 > [!div class="nextstepaction"]
