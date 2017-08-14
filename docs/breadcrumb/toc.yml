@@ -83,7 +83,7 @@
       topicHref: /vsts/setup-admin/team-services/overview
     - name: TFS Server Administration
       tocHref: /vsts/setup-admin/tfs/
-      topicHref: /vsts/setup-admin/get-started
+      topicHref: /vsts/setup-admin/tfs/install/get-started
     - name: "Security & Identity"
       tocHref: /vsts/security/
       topicHref: /vsts/security/index
