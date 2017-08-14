@@ -23,7 +23,7 @@ Visual Studio Team Services (VSTS) provides a highly customizable continuous int
 
 You'll use the VSTS portal to set up CI/CD. Your CI process runs the .NET Core commands to restore packages, build and test the app, and finally publish artifacts. Your CD process automatically picks up these artifacts and deploys them to your environment. Finally, you'll test it all out by pushing a small code change into your team's git repo. Your CI/CD processes will automatically deploy the change.
 
-![A typical release pipeline for web applications](../build-release/get-started/_img/ci-cd/part-1/ReleasePipeline.png)
+![A typical release pipeline for web applications](_shared/_img/vscode-git-ci-cd-to-azure.png)
 
 Your code changes automatically appear on your site:
 
