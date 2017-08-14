@@ -19,7 +19,7 @@ do not support SharePoint or reporting, etc.
 
 ## Prepare your environment
 
-As with any upgrade, you will need to check [system requirements](../../requirements.md) to
+As with any upgrade, you will need to check [system requirements](../../setup-admin/requirements.md) to
 ensure that your current configuration is supported. For an Express deployment this will mean 
 checking the OS. The TFS 2015 Express upgrade process will attempt to upgrade SQL Express to
 SQL 2014 SP1 Express, which typically requires the latest service pack of whatever version
@@ -44,7 +44,7 @@ You will only need to make a couple of basic decisions, and when upgrading
 from TFS 2012 or TFS 2013 the settings from your previous deployment will be remembered for you.
 
 By default, the TFS 2015 Express upgrade will install and configure a build agent for the 
-[new TFS 2015 build system](../../../build-release/overview.md), and will set it up to start automatically
+[new TFS 2015 build system](../../build-release/overview.md), and will set it up to start automatically
 so that you can start using it right away after your upgrade. If you do not want to use the 
 new build system, you can uncheck the box to turn the agent off.
 

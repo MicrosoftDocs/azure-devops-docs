@@ -23,7 +23,7 @@ To set this up, you install and configure the proxy server at the remote site, c
 
 | | Task | Detailed instructions |
 | --- | --- | --- |
-| ![Step 1](_img/ic646324.png) | **Check for supported hardware and software**. Verify that the operating system meets requirements for Team Foundation Server Proxy and that the hardware can run it. | [System requirements for Team Foundation Server Proxy](../../requirements.md#proxy-server) |
+| ![Step 1](_img/ic646324.png) | **Check for supported hardware and software**. Verify that the operating system meets requirements for Team Foundation Server Proxy and that the hardware can run it. | [System requirements for Team Foundation Server Proxy](../../setup-admin/requirements.md#proxy-server) |
 | ![Step 2](_img/ic646325.png) | **Set up Team Foundation Server Proxy**. Install Team Foundation Server Proxy. After the installation is finished, use the Team Foundation Server Configuration Tool to configure your proxy server. | [Run Team Foundation Server installation](install-2013/install-tfs.md#installer) <br/> [How to: Configure Team Foundation Server Proxy Using the Team Foundation Server Configuration Tool](#config--proxy-with-config-tool) |
 | ![Step 3](_img/ic646326.png) | **Connect Team Explorer to Team Foundation Server Proxy**. After you configure the proxy server to connect to Team Foundation Server, you must configure Team Explorer to access version control files through the proxy server. | [How to: Configure Team Foundation version control to use Proxy server](#config-to-use-proxy) |
 
@@ -40,7 +40,7 @@ You can use these procedures to configure Team Foundation Server Proxy.
 
 **Required permissions**: To follow this procedure, you must be a member of the **Administrators** security group on the server on which you are configuring Team Foundation Server Proxy. You must be a member of the Project Collection Administrators group on TFS. If you connect the proxy to a collection on Visual Studio Team Services, you need the Microsoft account you used to set up the service.
 
-To configure Proxy Server, you must have TFS installed on a server operating system. For more information, see [System requirements for Team Foundation Server](../../requirements.md).
+To configure Proxy Server, you must have TFS installed on a server operating system. For more information, see [System requirements for Team Foundation Server](../../setup-admin/requirements.md).
 
 To configure Team Foundation Server Proxy by using Team Foundation Server Configuration tool, follow these steps:
 

@@ -61,7 +61,7 @@ you could end up with corrupted databases.
 
 To use the **PrepareClone** command, you must be a member of the Team Foundation Administrators security group
 and a member of the sysadmin security group for any SQL Server databases that Team Foundation Server uses.
-For more information, see [Permission reference for Team Foundation Server](../../../permissions.md).
+For more information, see [Permission reference for Team Foundation Server](../../../setup-admin/permissions.md).
 
 ### Remarks
 

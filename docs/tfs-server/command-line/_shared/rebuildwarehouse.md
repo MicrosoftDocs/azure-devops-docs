@@ -44,7 +44,7 @@ To use the **RebuildWarehouse** command, you must be a member of the following g
 
 -   the sysadmin group on the server or servers that are running the instance of SQL Server that hosts the databases for TFS
 
-For more information, see [Permission reference for Team Foundation Server](../../../permissions.md).
+For more information, see [Permission reference for Team Foundation Server](../../../setup-admin/permissions.md).
 
 ### Remarks
 

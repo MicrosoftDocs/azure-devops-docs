@@ -38,7 +38,7 @@ You use the **AddProjectReports** command to add or overwrite reports for an exi
 
 ### Required permissions
 
-To use the **AddProjectReports** command, you must have permissions to run **TFSConfig** and to [upload reports to the Reporting Service](../../../../report/admin/grant-permissions-to-reports.md). 
+To use the **AddProjectReports** command, you must have permissions to run **TFSConfig** and to [upload reports to the Reporting Service](../../../report/admin/grant-permissions-to-reports.md). 
 
 ### Remarks
 
@@ -50,7 +50,7 @@ You may need to use this command when:
 
 If you would like to overwrite reports in your project with default reports because you upgraded TFS and old reports in your team project are no longer compatible, use the **/force** option. If you have customized reports, please make a backup before doing this. 
 
-To learn more about adding reports to an on-premises TFS, see [Add reports to a team project](../../../../report/admin/add-reports-to-a-team-project.md).
+To learn more about adding reports to an on-premises TFS, see [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md).
 
 ### Example
 

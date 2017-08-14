@@ -20,7 +20,7 @@ To use the **CreateTeamProjectLibraryShare** command, you must have
 **Manage Lab Locations** permission at the Team Project Collection
 Library Share level. By default, members of the Team Foundation Server
 Administrators and Project Collection Administrators groups have this
-permission. For more information, see [Permission reference for Team Foundation Server](../../../permissions.md).
+permission. For more information, see [Permission reference for Team Foundation Server](../../../setup-admin/permissions.md).
 
 
     TFSLabConfig CreateTeamProjectLibraryShare 

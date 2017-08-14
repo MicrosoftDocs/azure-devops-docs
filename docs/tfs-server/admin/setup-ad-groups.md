@@ -56,11 +56,11 @@ Later on, as the deployment expands, you might decide to create other groups.
 
 ### Try this next
 
--    [Add users to team projects](../../add-users.md) 
+-    [Add users to team projects](../../setup-admin/add-users.md) 
 
 ## Q & A
 
 **Q: Can I use groups to restrict access to projects or features in TFS?**
 
-**A:** Yes, you can. You can create specific groups for [restricting access to projects](../../restrict-access-tfs.md), for [managing access levels](../../../work/connect/change-access-levels.md), and other purposes.
+**A:** Yes, you can. You can create specific groups for [restricting access to projects](../../setup-admin/restrict-access-tfs.md), for [managing access levels](../../work/connect/change-access-levels.md), and other purposes.
 

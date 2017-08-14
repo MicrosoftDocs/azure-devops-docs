@@ -17,7 +17,7 @@ To prevent workspace errors from occurring during version control or build opera
 
 **Required permissions**
 
-To invoke the **StampWorkitemCache** Web method, you must be a member of the **Administrators** security group on the application-tier server for Team Foundation. For more information, see [Pernission reference for Team Foundation Server](../../../permissions.md).
+To invoke the **StampWorkitemCache** Web method, you must be a member of the **Administrators** security group on the application-tier server for Team Foundation. For more information, see [Permission reference for Team Foundation Server](../../../setup-admin/permissions.md).
 
 To use the **tf workspaces** command on the client computer, your **Read** permission must be set to **Allow**.
 
@@ -64,13 +64,13 @@ To refresh the version control cache on client computers:
 
     **tf workspaces /collection:http://FabrikamPrime:8080/tfs/DefaultCollection**
 
-    For more information, see [Workspaces Command](../../../../tfvc/workspaces-command.md).
+    For more information, see [Workspaces Command](../../../tfvc/workspaces-command.md).
 
 
 ## See Also
 
  [Open the Team Foundation Administration Console](../../command-line/open-admin-console.md) 
 
- [Workspaces Command](../../../../tfvc/workspaces-command.md) 
+ [Workspaces Command](../../../tfvc/workspaces-command.md) 
 
  [Managing Data](https://msdn.microsoft.com/library/ms253169) 

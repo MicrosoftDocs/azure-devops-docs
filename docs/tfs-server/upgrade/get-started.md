@@ -17,7 +17,7 @@ ms.date: 09/26/2016
 
 The general process for upgrading an existing deployment of Team Foundation Server is to:
 
-1.	**Prepare your environment**. New [system requirements](../../requirements.md) may require you to upgrade hardware or software. 
+1.	**Prepare your environment**. New [system requirements](../../setup-admin/requirements.md) may require you to upgrade hardware or software. 
 And regardless, an upgrade is a good time to consider whether your current environment is meeting your needs, 
 or whether it makes sense to make changes. 
 
@@ -36,16 +36,16 @@ through the upgrade wizard to upgrade your databases.
 	> you will need to upgrade to TFS 2015 in multiple hops.
 	> For example, if you are on TFS 2008 you could upgrade to TFS 2012 first and then to TFS 2015. 
 
-4. **Configure new features**. Depending on what version you upgraded from, you may need to [configure each team project](../../../work/customize/configure-features-after-upgrade.md) to gain access to some of the new features made available. You don't have to do this immediately, but those features aren't available in that team project until they're configured. Depending on the team project, you'll use some combination of the Configure Features wizard that appears on the Work page and some manual configuration.
+4. **Configure new features**. Depending on what version you upgraded from, you may need to [configure each team project](../../work/customize/configure-features-after-upgrade.md) to gain access to some of the new features made available. You don't have to do this immediately, but those features aren't available in that team project until they're configured. Depending on the team project, you'll use some combination of the Configure Features wizard that appears on the Work page and some manual configuration.
 
 ## Before you upgrade to TFS 2017   
 
 If you use TFS-Project Server integration to synchronize data between TFS and Project Server, then you'll want to review the following two topics:  
 
-- [Synchronize TFS with Project Server](../../../work/office/sync-ps-tfs.md) - which describes how native integration with Project Server is no longer supported, and instead a solution is provided by our partner, Tivitie. 
-- [Remove integration of TFS with Project Server](../../../work/office/remove-tfs-ps-integration.md) - which provides step-by-step procedures for removing the integration. You need to perform the first procedure provided prior to your upgrade.  
+- [Synchronize TFS with Project Server](../../work/office/sync-ps-tfs.md) - which describes how native integration with Project Server is no longer supported, and instead a solution is provided by our partner, Tivitie. 
+- [Remove integration of TFS with Project Server](../../work/office/remove-tfs-ps-integration.md) - which provides step-by-step procedures for removing the integration. You need to perform the first procedure provided prior to your upgrade.  
 
-Also, we recommend that you review the options you have when [you upgrade from TFS 2008 or TFS 2010](../../../work/customize/upgrade-tfs-2008-or-2010.md). Depending on the amount of customization you've made to your work tracking process, you'll want to choose between the options described.  
+Also, we recommend that you review the options you have when [you upgrade from TFS 2008 or TFS 2010](../../work/customize/upgrade-tfs-2008-or-2010.md). Depending on the amount of customization you've made to your work tracking process, you'll want to choose between the options described.  
 
 ## Complexity
 
@@ -64,7 +64,7 @@ prepare for the worst; and finally, do the upgrade.
 
 Your TFS deployment will be offline for the duration of the upgrade. Upgrade times can be measured in minutes for 
 very small deployments or in days for very large deployments. You can keep 
-your upgrades comparably speedy by [cleaning up unnecessary data](../../clean-up-data.md). If you're keeping up 
+your upgrades comparably speedy by [cleaning up unnecessary data](../../setup-admin/clean-up-data.md). If you're keeping up 
 with the latest versions of TFS, that helps a lot, too. 
 
 If you're upgrading a very large database to TFS 2015, consider using the [TfsPreUpgrade tool](pre-upgrade.md). 

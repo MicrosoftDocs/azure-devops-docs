@@ -27,9 +27,9 @@ ms.date: 06/22/2017
 
 Once you've installed TFS, you're ready to create a team project, add users, grant or restrict access to select resources     
 
-- [Create a team project](../create-team-project.md)
-- [Add users to projects](../add-users.md)
-- [Restrict access to resources](../restrict-access-tfs.md)
+- [Create a team project](../setup-admin/create-team-project.md)
+- [Add users to projects](../setup-admin/add-users.md)
+- [Restrict access to resources](../setup-admin/restrict-access-tfs.md)
 - [Configure an SMTP server](admin/setup-customize-alerts.md)
 
 
@@ -41,9 +41,9 @@ Once you've installed TFS, you're ready to create a team project, add users, gra
 
 ## How-to guides
 
-- [Add administrators](../add-administrator-tfs.md)
+- [Add administrators](../setup-admin/add-administrator-tfs.md)
 - [Change permission levels](admin/change-permission-levels.md)
-- [Buy access to TFS or Test hub](../buy-access-tfs-test-hub.md)
+- [Buy access to TFS or Test hub](../setup-admin/buy-access-tfs-test-hub.md)
  
 
 

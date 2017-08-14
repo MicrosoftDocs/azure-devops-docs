@@ -153,7 +153,7 @@ To perform the procedures in this topic, you must first meet the following requi
  
  * If your deployment uses reporting, you must be a member of an administrative security group or have equivalent permissions individually set for configuring reporting services. 
  
- For more information about permissions, see [Permission reference for Team Foundation Server](../../permissions.md).
+ For more information about permissions, see [Permission reference for Team Foundation Server](../../setup-admin/permissions.md).
 
 <a name="assumptions"></a>
 ## Assumptions
@@ -422,7 +422,7 @@ To deploy Release Management with HTTPS, use the task list below. If you’re co
 
 4.  Open any firewalls. After you install the certificates, make sure to open any ports you used for SSL traffic. For more information, see [Configure Your Firewall](#config-firewall).
 
-5.  Test. The website for Release Management Server is not configured for browsing, so to test that it’s available, you should connect to it with Release Management Client, connect the agents in your environment and then make a release. For more information, see [Making all the Release Management connections with HTTPS](#making-release-mgt-conn) and [Manage your release](../../../release/previous-version/manage-your-release.md).
+5.  Test. The website for Release Management Server is not configured for browsing, so to test that it’s available, you should connect to it with Release Management Client, connect the agents in your environment and then make a release. For more information, see [Making all the Release Management connections with HTTPS](#making-release-mgt-conn) and [Manage your release](../../release/previous-version/manage-your-release.md).
 
 <a name="config-release-mgt-server"></a>
 ### Configure Release Management Server to use HTTPS
@@ -466,7 +466,7 @@ Release Management supports either the HTTPS or HTTP protocol but not both proto
 
 Once the certificates have been installed on all the computers running Release Management Client and Microsoft Deployment Agent, you can connect the computers to the Release Management Server over SSL. If TFS is running HTTPS with SSL, you must configure the TFS connection to use HTTPS.
 
-Setting up a TFS connection for the first time? There are some additional steps and some account permission requirements. For more information, see [Connect Release Management to TFS](../../../release/previous-version/install-release-management/connect-to-tfs.md)
+Setting up a TFS connection for the first time? There are some additional steps and some account permission requirements. For more information, see [Connect Release Management to TFS](../../release/previous-version/install-release-management/connect-to-tfs.md)
 
 ### Connect Release Management Client to Release Management Server using HTTPS
 
@@ -538,7 +538,7 @@ On every client computer from which users access Team Foundation, you must insta
 
 -   In Visual Studio, connect to Team Foundation Server by using the new HTTPS URL.
 
-    For more information, see [Connect to team projects in Team Foundation Server](../../../connect/connect-team-projects.md).
+    For more information, see [Connect to team projects in Team Foundation Server](../../connect/connect-team-projects.md).
 
 <a name="config-git"></a>
 ## Configuring Git

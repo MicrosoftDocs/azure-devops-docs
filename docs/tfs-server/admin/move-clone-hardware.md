@@ -75,7 +75,7 @@ In order to successfully move TFS, you'll need to be an administrator on both se
 
     -   SharePoint Products: Farm Administrators (if your TFS deployment integrates with SharePoint Products)
 
-If you aren't a member of one or more of these groups, [get permissions now](../../add-administrator-tfs.md).
+If you aren't a member of one or more of these groups, [get permissions now](../../setup-admin/add-administrator-tfs.md).
 
 
 
@@ -121,7 +121,7 @@ To configure a new server or servers for TFS, you must first install and configu
 
 -   Install and configure Windows, IIS (if not configured by default), and SharePoint (if using) in the new environment, and make sure that the server and its software are operational. 
 
-    For more information, see [the system requirements for Team Foundation Server](../../requirements.md) and [Move SharePoint to new hardware for TFS](../install/sharepoint/move-sharepoint-new-hardware.md).
+    For more information, see [the system requirements for Team Foundation Server](../../setup-admin/requirements.md) and [Move SharePoint to new hardware for TFS](../install/sharepoint/move-sharepoint-new-hardware.md).
 
 
 
@@ -291,7 +291,7 @@ After you move to new hardware, make sure that all users, groups, and service ac
 
 -   Open Team Web Access and verify that team sites and teams appear as expected.
 
-Not sure what groups and permissions to expect? For more information, see [Add users to team projects](../../add-users.md), [Set administrator permissions for team project collections](../../add-administrator-tfs.md), [Set administrator permissions for Team Foundation Server](../../add-administrator-tfs.md), and [Service accounts and dependencies in Team Foundation Server](service-accounts-dependencies-tfs.md).
+Not sure what groups and permissions to expect? For more information, see [Add users to team projects](../../setup-admin/add-users.md), [Set administrator permissions for team project collections](../../setup-admin/add-administrator-tfs.md), [Set administrator permissions for Team Foundation Server](../../setup-admin/add-administrator-tfs.md), and [Service accounts and dependencies in Team Foundation Server](service-accounts-dependencies-tfs.md).
 
 <a name="refresh-caches-clients"></a>
 ## Refresh the data cache on client computers

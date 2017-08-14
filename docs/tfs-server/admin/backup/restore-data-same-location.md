@@ -268,11 +268,11 @@ After you restore the data, you must restart the services to return the server t
 
     **tf workspaces /collection:http://FabrikamPrime:8080/tfs/DefaultCollection**
 
-    For more information, see [Workspaces Command](../../../../tfvc/workspaces-command.md).
+    For more information, see [Workspaces Command](../../../tfvc/workspaces-command.md).
 
 ## See Also
 
- [Pernission reference for Team Foundation Server](../../../permissions.md) 
+ [Pernission reference for Team Foundation Server](../../../setup-admin/permissions.md) 
 
  [Team Foundation Server architecture](../../architecture/architecture.md) 
 

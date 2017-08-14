@@ -28,12 +28,12 @@ Review the requirements listed here and then choose a server upgrade path. You c
 
 ## New prerequisite requirements
 
-**SQL Server**: Before you start your upgrade, you might have to upgrade SQL Server to meet new Team Foundation Server requirements. SQL Server 2008 R2 is no longer supported. SQL Server 2012 with SP1 is supported. For more information, see [SQL Server requirements for Team Foundation Server](../../../requirements.md#sql-server).
+**SQL Server**: Before you start your upgrade, you might have to upgrade SQL Server to meet new Team Foundation Server requirements. SQL Server 2008 R2 is no longer supported. SQL Server 2012 with SP1 is supported. For more information, see [SQL Server requirements for Team Foundation Server](../../../setup-admin/requirements.md#sql-server).
 
 > [!TIP]
 > If you’re using SQL Server 2012 with SP1, we recommend you also apply [cumulative update 2 on top of SP1](http://support.microsoft.com/kb/2790947) to address a critical SQL Server bug around resource consumption. This isn’t a hard requirement because the bug only affects a small number of instances, but we wanted you to be aware of it. If you don’t apply CU2, you should apply a SQL Server hotfix ([KB2793634](http://support.microsoft.com/kb/2793634)) to addresses another (different) issue where SQL Server 2012 with SP1 might request an excessive amount of restarts.
 
-**SharePoint Products**: If you have a portal server, you might have to upgrade it to continue using SharePoint integration. We no longer support Windows SharePoint Services 3.0 or Microsoft Office SharePoint Server 2007. See [SharePoint Products requirements for Team Foundation Server](../../../requirements.md#sharepoint).
+**SharePoint Products**: If you have a portal server, you might have to upgrade it to continue using SharePoint integration. We no longer support Windows SharePoint Services 3.0 or Microsoft Office SharePoint Server 2007. See [SharePoint Products requirements for Team Foundation Server](../../../setup-admin/requirements.md#sharepoint).
 
 > [!TIP]
 > Do you need to upgrade SharePoint to a supported version? See [Upgrade from Office SharePoint Server 2007 or Windows SharePoint Services 3.0 to SharePoint Server 2013 or SharePoint Foundation 2013](https://technet.microsoft.com/library/ee947141.aspx)
@@ -43,7 +43,7 @@ Review the requirements listed here and then choose a server upgrade path. You c
 If you don’t install reporting or SharePoint, your deployment is simpler, but we don’t recommend it. Keep these two features during upgrade because the upgrade configuration will automatically link upgraded projects to the portal and reporting features. If you add a portal or reporting after you upgrade, you cannot easily create these links between all your upgraded projects and the portal.
 
 > [!TIP]
-> Team Foundation Server doesn’t support changing languages during an upgrade. You should maintain the locale of your operating system and Team Foundation Server during the upgrade. For more information, see: [Language requirements for Team Foundation Server](../../../requirements.md#languages)
+> Team Foundation Server doesn’t support changing languages during an upgrade. You should maintain the locale of your operating system and Team Foundation Server during the upgrade. For more information, see: [Language requirements for Team Foundation Server](../../../setup-admin/requirements.md#languages)
 
 ## Next step: choose a server upgrade path
 

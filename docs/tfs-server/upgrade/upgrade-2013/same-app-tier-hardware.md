@@ -23,7 +23,7 @@ Illustration of an In-place Upgrade
 
 Determine the service account you will use for Team Foundation Server. By default, TFS uses Network Service, but you can also use a domain account. In most cases, you should use the same account you used for the previous installation or consider using Network Service.
 
-For more information, see: [System requirements for Team Foundation Server](../../../requirements.md), or [Accounts required for installation of Team Foundation Server](../../../requirements.md#accounts).
+For more information, see: [System requirements for Team Foundation Server](../../../setup-admin/requirements.md), or [Accounts required for installation of Team Foundation Server](../../../setup-admin/requirements.md#accounts).
 
 ![](../../install/_img/ic646325.png) **Uninstall TFS 2010**. Use Control Panel to completely uninstall Team Foundation Server 2010. If you’re upgrading TFS 2012, you don’t have to uninstall the old version of TFS. You can skip this step and we’ll preserve some of your application tier settings.
 

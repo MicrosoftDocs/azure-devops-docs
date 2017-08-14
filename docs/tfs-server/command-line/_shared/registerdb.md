@@ -38,7 +38,7 @@ You might use this command when restoring the configuration database to new hard
 
 To use the **RegisterDB** command, you must be a member of the Team Foundation Administrators group on the application-tier server
 for Team Foundation and a member of the sysadmin group in SQL Server on the data-tier server for Team Foundation.
-For more information, see [Permission reference for Team Foundation Server](../../../permissions.md).
+For more information, see [Permission reference for Team Foundation Server](../../../setup-admin/permissions.md).
 
 ### Remarks
 

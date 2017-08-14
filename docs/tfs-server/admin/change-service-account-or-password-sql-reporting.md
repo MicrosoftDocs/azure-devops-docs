@@ -78,7 +78,7 @@ is installed. You must also be a member of the
 **sysadmin** group on the server that hosts the
 configuration database. For more information about permissions, see
 [Permission reference for Team Foundation
-Server](../../permissions.md).
+Server](../../setup-admin/permissions.md).
 
 In addition to these permissions, you might need to address the
 following requirements:

@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 Let's walk through a typical TFS upgrade scenario to get a sense of what the high level steps discussed in
-the [overview](../../account-administration.md) might look like in a real world example.
+the [overview](../../setup-admin/account-administration.md) might look like in a real world example.
 
 ## Prepare your environment
 
@@ -23,7 +23,7 @@ application tier and a second serving as the data tier for both the config/colle
 reporting and analysis services databases. Both machines are currently running Windows Server 2008 SP2, and
 the data tier is currently running SQL Server 2008 R2. 
 
-Our first step is to check the [system requirements](../../requirements.md) for TFS 2015. Unfortunately,
+Our first step is to check the [system requirements](../../setup-admin/requirements.md) for TFS 2015. Unfortunately,
 neither the OS nor the SQL version we are using are still supported, so we will need to make some changes. We
 decide to take the opportunity to acquire two more powerful machines, and we install Windows Server 2012 R2 on
 both of them. We install SQL Server 2014 on the data tier, making sure to include Reporting Services and
@@ -46,7 +46,7 @@ For our dry run, the steps for our upgrade will be:
 4. Run through the upgrade wizard, 
 being sure to use a service account which does not have any permissions in our production environment. 
 See *Protecting production* in the [dry run in pre-production](pre-production.md) document for more information. 
-5. Optionally [configure new features](../../../work/customize/upgrade-tfs-2008-or-2010.md) which require changes to our existing team projects.
+5. Optionally [configure new features](../../work/customize/upgrade-tfs-2008-or-2010.md) which require changes to our existing team projects.
 
 ## Do the upgrade
 
@@ -58,7 +58,7 @@ Assuming that all goes smoothly, the production upgrade steps will be quite simi
 4. Install TFS 2015 on our new application tier.
 5. Use the scheduled backups wizard to restore the database backups.
 6. Run through the upgrade wizard, using our desired production service account.
-7. Optionally [configure new features](../../../work/customize/configure-features-after-upgrade.md) which require changes to our existing team projects.
+7. Optionally [configure new features](../../work/customize/configure-features-after-upgrade.md) which require changes to our existing team projects.
 
 And we're done! 
 

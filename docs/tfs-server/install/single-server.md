@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 **TFS 2017** | **TFS 2015**
 
 The simplest way to set up TFS is to put everything on a single server. 
-Make sure to review our [hardware recommendations](../../requirements.md#hardware-recommendations)
+Make sure to review our [hardware recommendations](../../setup-admin/requirements.md#hardware-recommendations)
 to confirm that this configuration seems appropriate for your team. If not, 
 consider a [dual server](dual-server.md) or [multiple server](multiple-server.md)
 configuration instead.
@@ -23,10 +23,10 @@ configuration instead.
 ## Preparation
 
 0. Prepare a single computer that satisfies the 
-[system requirements](../../requirements.md) for TFS. 
+[system requirements](../../setup-admin/requirements.md) for TFS. 
 
 0. If you do not plan to use SQL Express, set up an
-[appropriate version of SQL Server](../../requirements.md#sql-server).
+[appropriate version of SQL Server](../../setup-admin/requirements.md#sql-server).
 When you set SQL Server up for TFS, install at least the database
 engine and full text search services.
 
@@ -82,10 +82,10 @@ With the New Deployment - Basic scenario, you will need to choose:
 
 - Whether to install SQL Express or use an existing SQL Server instance.
 - Which website settings to use, including whether to use HTTP or HTTPS
-bindings. See [website settings](../../websitesettings.md) for more 
+bindings. See [website settings](../../setup-admin/websitesettings.md) for more 
 information.
 - Whether to install and configure Code Search features. See
-[configuring Search](../../../search/code/administration.md#config-tfs) 
+[configuring Search](../../search/code/administration.md#config-tfs) 
 for more information.
 
 If you select the New Deployment - Advanced scenario, you will additionally need

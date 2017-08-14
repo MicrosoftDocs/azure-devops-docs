@@ -86,7 +86,7 @@ production. Make sure you remember to use a service account which has no permiss
 
 Some upgrades introduce new features which take additional steps to configure, since they involve process changes to 
 your existing team projects. Depending on the specifics of your team projects and the version of TFS you are upgrading 
-from, this could be more or less complicated. See [here](../../../work/customize/configure-features-after-upgrade.md) for details. 
+from, this could be more or less complicated. See [here](../../work/customize/configure-features-after-upgrade.md) for details. 
 
 ## Try things out
 

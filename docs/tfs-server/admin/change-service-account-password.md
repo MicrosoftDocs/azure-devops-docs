@@ -20,11 +20,11 @@ For simplicity, the TFS documentation refers to this account as TFSService, alth
 >**Note:**  
 >TFS and its utilities cannot create a new local or domain account to use as *TFSService*, and they cannot update the password for that account in the workgroup or the domain. Instead, the utilities update the records to match the new credentials. If you your deployment includes more than one application-tier server, you must manually update each server with any changes to the service account or its password.
 
-For more information about service accounts in TFS, see [Service accounts and dependencies in Team Foundation Server](service-accounts-dependencies-tfs.md). For more information about the accounts required for installation, including the service account for TFS, see [Accounts required for installation of Team Foundation Server](../../requirements.md#accounts).
+For more information about service accounts in TFS, see [Service accounts and dependencies in Team Foundation Server](service-accounts-dependencies-tfs.md). For more information about the accounts required for installation, including the service account for TFS, see [Accounts required for installation of Team Foundation Server](../../setup-admin/requirements.md#accounts).
 
 **Required Permissions**:
 
- * To perform these procedures, you must be a member of the **Administrators** group on the Team Foundation application-tier server and a member of the **sysadmin** group on the server and instance of SQL Server that hosts the configuration database for Team Foundation. For more information, see [Team Foundation Server architecture](../architecture/architecture.md) and [Pernission reference for Team Foundation Server](../../permissions.md).
+ * To perform these procedures, you must be a member of the **Administrators** group on the Team Foundation application-tier server and a member of the **sysadmin** group on the server and instance of SQL Server that hosts the configuration database for Team Foundation. For more information, see [Team Foundation Server architecture](../architecture/architecture.md) and [Pernission reference for Team Foundation Server](../../setup-admin/permissions.md).
 
 To follow a command-line procedure, you might need to open an elevated Command Prompt window. To perform this task, open the context menu for **Command Prompt**, and choose **Run as Administrator**. For more information, see this page on the Microsoft Web site: [User Account Control](http://go.microsoft.com/fwlink/?LinkId=111235).
 

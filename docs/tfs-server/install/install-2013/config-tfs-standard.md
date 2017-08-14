@@ -17,7 +17,7 @@ ms.technology: tfs-on-prem
 
 You can configure Team Foundation Server to use the standard configuration. To complete this procedure, you must have a domain account. 
 
-For more information about accounts, see [Accounts required for installation of Team Foundation Server](../../../requirements.md#accounts)
+For more information about accounts, see [Accounts required for installation of Team Foundation Server](../../../setup-admin/requirements.md#accounts)
 
 > [!TIP]
 > You can access the Team Foundation Server Configuration tool by launching Team Foundation Server Administration Console, choosing **Application Tier**, and then choosing **Configure Installed Features**.

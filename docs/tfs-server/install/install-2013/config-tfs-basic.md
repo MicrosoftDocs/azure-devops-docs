@@ -68,7 +68,7 @@ To perform this procedure, you must be a member of the **Administrators** securi
     The Team Foundation Server Administration Console appears.
 
 > [!TIP]
-> After you set up TFS and the build service, the next thing to do is [create a team project](../../../create-team-project.md).
+> After you set up TFS and the build service, the next thing to do is [create a team project](../../../setup-admin/create-team-project.md).
 
 ## See Also
 

@@ -17,7 +17,7 @@ For feedback requests and alerts to work, you must configure an SMTP server for 
 
 ## Configure an SMTP server for TFS
 
-1.  If you aren't an administrator of TFS, [get those permissions](../../add-administrator-tfs.md).
+1.  If you aren't an administrator of TFS, [get those permissions](../../setup-admin/add-administrator-tfs.md).
 
 2.  Open the Team Foundation Administration Console from the **Start** menu. Or, at a command prompt, type **TFSMgmt.exe** (located in *Drive*:\\%programfiles%\\Microsoft Team Foundation Server 12.0\\Tools).
 
@@ -40,14 +40,14 @@ For feedback requests and alerts to work, you must configure an SMTP server for 
 
     ![Manage individual alerts from Team Web Access](_img/ic726730.png)
 
-    Create an alert and then perform an action that will trigger the alert. You can [set alerts for yourself or for a team](../../../work/track/alerts-and-notifications.md).
+    Create an alert and then perform an action that will trigger the alert. You can [set alerts for yourself or for a team](../../work/track/alerts-and-notifications.md).
 
-This task supports [Request and review feedback](../../../work/connect/get-feedback.md) and [Set alerts, get notified when changes occur](../../../work/track/alerts-and-notifications.md).
+This task supports [Request and review feedback](../../work/connect/get-feedback.md) and [Set alerts, get notified when changes occur](../../work/track/alerts-and-notifications.md).
 
 
 ## Customize the format for TFS email alerts
 
-You can customize the format of email notifications, or alerts, that [team members subscribe to](../../../work/track/alerts-and-notifications.md). These notifications are sent when changes occur to work items, code reviews, source control files, and builds. To customize their format, you can modify their associated XSL transform files. In addition, your team members can configure *project alerts* in Team Web Access (TWA) for various notifications and specify whether they want HTML or plain text as the format.
+You can customize the format of email notifications, or alerts, that [team members subscribe to](../../work/track/alerts-and-notifications.md). These notifications are sent when changes occur to work items, code reviews, source control files, and builds. To customize their format, you can modify their associated XSL transform files. In addition, your team members can configure *project alerts* in Team Web Access (TWA) for various notifications and specify whether they want HTML or plain text as the format.
 
 Alert format transform files are stored in the following folder on the application-tier server:
 
@@ -88,7 +88,7 @@ To perform these procedures, you must be a member of the **Administrators** secu
 
 ## See Also
 
- [Set alerts, get notified when changes occur](../../../work/track/alerts-and-notifications.md)  
+ [Set alerts, get notified when changes occur](../../work/track/alerts-and-notifications.md)  
 
  [Support alerts and feedback requests with an SMTP server](setup-customize-alerts.md)  
 
