@@ -8,7 +8,7 @@
   - name: "CI/CD to Windows VM"
     href: aspnet-core-to-windows-vm.md
   - name: "CI/CD to Azure Container Service"
-    href: aspnet-core-to-acs.md
+    href: aspnet-core-to-acr.md
 - name: Tutorials
   items:
   - name: "Customize CD process"

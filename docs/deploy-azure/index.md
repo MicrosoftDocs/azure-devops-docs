@@ -23,7 +23,7 @@ Learn how to build your app and deploy it to your choice of Azure service.
 <tr valign="middle" align="center">
 <td>![Web apps](../build-release/_img/index/app-service-web.png)<br/>[Web Apps](aspnet-core-to-azure-webapp.md)</td>
 <td>![Windows VMs](../build-release/_img/index/virtualmachine.png)<br/>[Windows VMs](aspnet-core-to-windows-vm.md)</td>
-<td>![Containers](../build-release/_img/index/appservice.png)<br/>[Containers](aspnet-core-to-acs.md)</td>
+<td>![Containers](../build-release/_img/index/appservice.png)<br/>[Containers](aspnet-core-to-acr.md)</td>
 </td>
 </tr>
 </table>    
