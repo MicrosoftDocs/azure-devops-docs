@@ -2,18 +2,20 @@
 
 Now that you have a completely automated CI/CD pipeline, any changes that you make to the app are automatically built and deployed by VSTS. To try this, make a change to the app and commit that change to the Git repository.
 
-You can use Visual Studio Code or Visual Studio to connect and push commits into your VSTS Git repo. (See [Share code with push](https://www.visualstudio.com/docs/git/tutorial/pushing).) However, VSTS also features a web-based editor to so that you can quickly commit small changes to source code directly in your browser.
+You can use [Visual Studio Code](https://code.visualstudio.com/Docs/editor/versioncontrol) or [Visual Studio](../../git/tutorial/pushing.md) to connect and push commits into your VSTS Git repo.
 
-In the VSTS **Code** hub, edit the **Views/Home/Index.cshtml** file.
+However, VSTS also features a web-based editor to so that you can quickly commit small changes to source code directly in your browser.
 
-![edit action in asp.net core view](_img/aspnet-core-code-edit-action.png)
+1. In the VSTS **Code** hub, edit the **Views/Home/Index.cshtml** file.
 
-Make a simple change above the slide carousel `div` tag:
+ ![edit action in asp.net core view](_img/aspnet-core-code-edit-action.png)
 
-```html
+1. Make a simple change above the slide carousel `div` tag:
+
+ ```html
 <h1>Demo of CI/CD!!</h1>
 ```
 
-![change code in asp.net core view](_img/aspnet-core-code-change.png)
+1. **Commit** your changes to trigger a CI build. When the build completes, it triggers an automatic deployment.
 
-**Commit** your changes to trigger a CI build. When the build completes, it triggers an automatic deployment.
+ ![change code in asp.net core view](_img/aspnet-core-code-change.png)
