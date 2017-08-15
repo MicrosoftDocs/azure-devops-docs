@@ -36,7 +36,7 @@ Check out the [authentication guidance](./get-started/authentication/authenticat
 ## Quickstarts
 Check out the quick starts to get you started:
     * [Create a bug](./quickstarts/create-bug-dotnet.md)
-    * [Get work items using queries](./quickstarts/work-item-quickstart.md)
+    * [Get work items using queries](./quickstarts/work-item-dotnet.md)
     * [Integrate with Jenkins](./quickstarts/jenkins-integrate-quickstart.md)
 
 

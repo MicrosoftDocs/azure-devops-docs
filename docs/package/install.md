@@ -84,6 +84,8 @@ From any collection in TFS, hover over the settings menu and select the **Users*
 
 Select **Assign**, type the user(s) you want to assign licenses, then select **Ok.**
 
+Users with Visual Studio Enterprise subscriptions get Package Management for free.  [Ensure that your Visual Studio Enterprise subscribers are assigned VSE access level](../work/connect/change-access-levels.md).
+
 Users using an instance of TFS disconnected from the internet (and thus unable to purchase licenses from the marketplace) can still assign licenses purchased through an enterprise agreement.
 
 <!-- BEGINSECTION class="md-qanda" -->

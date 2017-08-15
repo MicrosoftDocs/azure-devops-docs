@@ -2,12 +2,14 @@
   href: ./index.md
 - name: Quickstarts
   items:
-  - name: .NET - Create a bug (TODO)
+  - name: .NET - Create a bug
     href: quickstarts/create-bug-dotnet.md
-  - name: REST APIs - Create a bug (TODO)
+  - name: REST APIs - Create a bug
     href: quickstarts/create-bug-rest.md
-  - name: Get work items using queries (TODO)
-    href: quickstarts/work-item-quickstart.md
+  - name: .NET - query work items (TODO)
+    href: quickstarts/work-item-dotnet.md
+  - name: REST APIs - query work items (TODO)
+    href: quickstarts/work-item-rest.md
   - name: Integrate with Jenkins (TODO)
     href: quickstarts/jenkins-integrate-quickstart.md
 - name: Samples

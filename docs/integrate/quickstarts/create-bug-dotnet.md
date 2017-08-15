@@ -14,72 +14,134 @@ ms.custom: get-started-article
 
 Creating a new bug (or any work item) is pretty straight forward. You just need to set the field values and send a JSON-Patch object to the REST endpoint.
 
-You can view the sample REST endpoint [here](https://review.docs.microsoft.com/en-us/rest/api/vsts/workitemtracking/createworkitem?branch=master).
+You can view the sample REST endpoint (Create Work Item) [here](https://review.docs.microsoft.com/en-us/rest/api/vsts/workitemtracking/createworkitem?branch=master).
 
+## Prerequisites
+To work on this Quickstart, you'll need the following prerequisites:
+
+* A Visual Studio Team Services account
+* A Personal Access Token, [find out how to create one](../get-started/authentication/PATs.md)
+* A C# development environment, you can use [Visual Studio](https://www.visualstudio.com/vs/)
+
+
+## Content  
 There are a few things happening in the code sample below:
-0. Create an array of objects to set the field values
-0. Convert that array to a serialized json object
-0. Send that serialized json object to the REST endpoint
+0. Authentication
+    0. Creating credentials using your PAT
+    0. Creating a VSSConnection with your VSTS URI and the credentials
+0. Retrieving the client using your VSSConnection
+0. Creating the bug
+    0. Create an array of objects to set the field values
+    0. Convert that array to a serialized json object
+    0. Send that serialized json object to the REST endpoint
 
+## C# Code
 ```c#
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 using Microsoft.TeamFoundation.WorkItemTracking.WebApi;
 using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
+using Microsoft.VisualStudio.Services.Common;
 using Microsoft.VisualStudio.Services.WebApi.Patch.Json;
 using Microsoft.VisualStudio.Services.WebApi.Patch;
-using Microsoft.VisualStudio.Services.Common;
+using Microsoft.VisualStudio.Services.WebApi;
+using System.Net.Http.Headers;
+using System.Net.Http;
+using Newtonsoft.Json;
 
-...
-
-public void CreateBug()
+ 
+public class CreateBug 
 {
-   string _personalAccessToken = "your personal access token";
-   string _projectName = "fabrikam"
-   Uri _uri = new Uri("https://account.visualstudio.com");
-   VssBasicCredential _credentials = new VssBasicCredential("", _personalAccessToken);
+    readonly string _uri;
+    readonly string _personalAccessToken;
+    readonly string _project;
 
-   JsonPatchDocument patchDocument = new JsonPatchDocument();
+    /// <summary>
+    /// Constructor. Manually set values to match your account.
+    /// </summary>
+    public CreateBug()
+    {
+        _uri = "https://accountname.visualstudio.com";
+        _personalAccessToken = "personal access token";
+        _project = "project name";
+    }
 
-   //add fields to your patch document
-   patchDocument.Add(
-       new JsonPatchOperation() {
-           Operation = Operation.Add,
-           Path = "/fields/System.Title",
-           Value = "Authorization Errors"
-       }
-   );
+    /// <summary>
+    /// Create a bug using the .NET client library
+    /// </summary>
+    /// <returns>Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItem</returns>    
+    public WorkItem CreateBugUsingClientLib()
+    {
+        Uri uri = new Uri(_uri);
+        string personalAccessToken = _personalAccessToken;
+        string project = _project;
 
-   patchDocument.Add(
-       new JsonPatchOperation() {
-           Operation = Operation.Add,
-           Path = "/fields/Microsoft.VSTS.TCM.ReproSteps",
-           Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/en-us/library/live/hh826547.aspx"
-       }
-   );
+        VssBasicCredential credentials = new VssBasicCredential("", _personalAccessToken);
+        JsonPatchDocument patchDocument = new JsonPatchDocument();
 
-   patchDocument.Add(
-       new JsonPatchOperation() {
-           Operation = Operation.Add,
-           Path = "/fields/Microsoft.VSTS.Common.Priority",
-           Value = "1"
-       }
-   );
+        //add fields and their values to your patch document
+        patchDocument.Add(
+            new JsonPatchOperation()
+            {
+                Operation = Operation.Add,
+                Path = "/fields/System.Title",
+                Value = "Authorization Errors"
+            }
+        );
 
-   patchDocument.Add(
-       new JsonPatchOperation() {
-           Operation = Operation.Add,
-           Path = "/fields/Microsoft.VSTS.Common.Severity",
-           Value = "2 - High"
-       }
-   );
+        patchDocument.Add(
+            new JsonPatchOperation()
+            {
+                Operation = Operation.Add,
+                Path = "/fields/Microsoft.VSTS.TCM.ReproSteps",
+                Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http:// msdn.microsoft.com/en-us/library/live/hh826547.aspx"
+            }
+        );
 
-   //use the workItemTrackingHttpClient
-   using (WorkItemTrackingHttpClient workItemTrackingHttpClient = new WorkItemTrackingHttpClient(_uri, _credentials))
-   {
-       //create a work item
-       WorkItem result = workItemTrackingHttpClient.CreateWorkItemAsync(patchDocument, _projectName, "Bug").Result;
-   }
+        patchDocument.Add(
+            new JsonPatchOperation()
+            {
+                Operation = Operation.Add,
+                Path = "/fields/Microsoft.VSTS.Common.Priority",
+                Value = "1"
+            }
+        );
+
+        patchDocument.Add(
+            new JsonPatchOperation()
+            {
+                Operation = Operation.Add,
+                Path = "/fields/Microsoft.VSTS.Common.Severity",
+                Value = "2 - High"
+            }
+        );
+        VssConnection connection = new VssConnection(uri, credentials);
+        WorkItemTrackingHttpClient workItemTrackingHttpClient = connection.GetClient<WorkItemTrackingHttpClient>();
+
+        try
+        {
+            WorkItem result = workItemTrackingHttpClient.CreateWorkItemAsync(patchDocument, project, "Bug").Result;
+
+            Console.WriteLine("Bug Successfully Created: Bug #{0}", result.Id);
+
+            return result;
+        }
+        catch (AggregateException ex)
+        {
+            Console.WriteLine("Error creating bug: {0}", ex.InnerException.Message);
+            return null;
+        }
+    }
 }
 ```
 
 Contracts used: [WorkItem](../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md), [JSONPatchDocument](../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchdocument.md), [JSONPatchOperation](../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchoperation.md)
+
+## Next Steps
+
+* Check out another Quickstart: [Get a list of work items using queries](./work-item-dotnet.md)
+* Explore the [REST API](../get-started/rest/samples.md) or [.NET client library](../get-started/client-libraries/samples.md) samples
