@@ -43,7 +43,7 @@ For example, the following image illustrates four different charts created from 
 	- To group by team, include the Area Path or Node Name in the query or column options  
 	- To group by a custom field, include it in a query clause or column options (See [Customize your work tracking experience](../work/customize/customize-work.md) to learn about adding a custom field)
 
-	If you receive an error message when you close the chart editor, you need to request [Basic access](../Work/connect/change-access-levels.md).
+	If you receive an error message when you close the chart editor, you need to request [Basic access](../security/change-access-levels.md).
 
 3.	To sort the results, choose value or label as the sort option and then ascending or descending.  
 	 

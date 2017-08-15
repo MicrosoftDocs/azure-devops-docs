@@ -12,19 +12,21 @@ ms.date: 08/04/2017
 
 
 
-# Authentication, permissions, and access 
+# Permissions and groups 
 
 **Team Services | TFS 2017 | TFS 2015** 
 
 <!--- TO BE COMPLETED   --> 
 
-Answers these questions:  
-- How does authentication work? 
-- How are permissions managed? Permission levels - collection, project, group, server   
-- What are access levels? How are they managed? 
-- Built-in/default groups 
-- Other - ssh  
-- Active Directory usage  
+
+!!! WORK IN PROGRESS !!! 
+
+<!--- TO BE COMPLETED  ---> 
+
+* Provide the conceptual information about permissions and groups 
+* Provide links to other salient topics   
+
+!!! WORK IN PROGRESS !!! 
 
  > [!NOTE] 
  > Permissions are different than access levels.
@@ -33,6 +35,48 @@ Answers these questions:
  > If you're just trying to give someone access to a team room or to Agile portfolio management
  > and test case management features,
  > you'll want to [change access levels](../work/connect/change-access-levels.md), not permissions.
+
+To access the resources you manage in Team Services or TFS&mdash;like your code, builds, and work&mdash;you need to have permissions to those specific resources.
+Permissions may apply to an entire TFS instance, to a collection in that instance, to a team project, or to specific objects in a team project&mdash;builds, areas, iterations, work item queries, tagging, tfvc, git, lab and release management.
+
+Each functional area uses groups to simplify management across the deployment. You add users and groups through the web portal administration context. Permissions are automatically set based on the group that you add users to, or based on the object, project, collection, or server level to which you add groups.
+
+
+<a id="grant-permissions"  >  </a>  
+## Permissions versus access levels  
+
+Setting the access level for  users or groups doesn't provide them access to a team project or the web portal. Only users or groups added to a team or TFS group can connect to a team project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the team project](../setup-admin/add-users.md) or as a [team member](../work/scale/multiple-teams.md#add-team-members).
+
+TFS controls access through these three inter-connected functional areas:
+
+-   **Access level management** controls access to features provided via the web portal, the web application for TFS. Based on  what has been purchased for a user, administrators set the user's access  level to Basic, Advanced, or Stakeholder (previously labeled Standard, Full, and Limited).
+
+-   **Membership management** supports adding individual Windows user accounts and groups to default TFS groups. Also, you can create TFS groups. Each default TFS group is associated with a set of default permissions. All users added to any TFS group are added to the Valid Users group. A valid user is someone who can connect to the team project.
+
+-   **Permission management** controls access to specific functional tasks at different levels of the system. Object-level permissions set permissions on a file, folder, build definition, or a shared query. Permission settings correspond to **Allow**, **Deny**, **Inherited allow**, **Inherited deny**, and **Not set**.
+
+Each functional area uses groups to simplify management across the deployment. You add users and groups through the TFS web service administration pages. Permissions are automatically set based on the TFS group that you add users to, or based on the object, project, collection, or server level to which you add groups. On the other hand, access level management controls access for all users and groups at the server level.
+
+<img src="../work/connect/_img/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 1px solid #CCCCCC;" />  
+
+You can create local groups or Active Directory (AD) [groups to manage your users](../setup-admin/tfs/admin/setup-ad-groups.md). If you decide to use groups, make sure that membership in those groups is limited to TFS users. Because group membership can be altered by their owners at any time, if those owners did not consider TFS when they created those groups, their changes to membership can cause unwanted side effects within TFS.  
+
+Here's what you need to know about permission settings:  
+
+-   **Allow** or **Deny** explicitly grants or restricts users from performing specific tasks, and are usually inherited from group membership.  
+
+-   **Not set** implicitly denies users the ability to perform tasks that require that permission, but allows membership in a group that does have that permission set to take precedence, also known as **Inherited allow** and **Inherited deny**.  
+
+-   For most groups and almost all permissions, **Deny** trumps **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user will not be able to perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.  
+
+    For members of the **Project Collection Administrators** or **Team Foundation Administrators** groups, Deny doesn't trump Allow. Permissions assigned to these groups take precedent over any Deny set within any other group to which that member might belong.
+
+-   Changing a permission for a group changes that permission for all users who are granted that permission through their membership in that group. In other words, depending on the size of the group, you might affect the ability of hundreds of users to do their jobs by changing just one permission. So make sure you understand the impact before you make a change.
+
+Two useful tips for understanding the effects of change: The **Member of** tab shows the groups that an individual user or group belongs to. You can also hover over an inherited permission, and a **Why?** icon will appear. If you choose it, a dialog box will open with more information.
+
+<img src="../work/connect/_img/control-panel-contributors-group-permissions.png" alt="Control panel, team project, Security tab, Contributors group, permissions" style="border: 1px solid #CCCCCC;" />  
+
 
 
 ## Manage large numbers of users using Active Directory, Azure Active Directory, or Windows groups

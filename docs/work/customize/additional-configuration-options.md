@@ -63,7 +63,7 @@ Feedback
 You can [request feedback](../connect/get-feedback.md) from your stakeholders and capture their comments on your working software. Reviewer feedback--in the form of videos, screenshots, type-written comments, and ratings--is captured into work items that you can review and use to create a bug or suggest a new backlog item. 
 </td>
 <td>
-**Required:** Provide [Advanced access](../connect/change-access-levels.md) to users who'll request feedback.<br/>
+**Required:** Provide [Advanced access](../../security/change-access-levels.md) to users who'll request feedback.<br/>
 **Required:** [Configure an SMTP server for TFS](../../setup-admin/tfs/admin/setup-customize-alerts.md). <br/>
 **Required:** [Grant stakeholders permission](../connect/give-permissions-feedback.md).
 
@@ -122,7 +122,7 @@ With this feature, you can [storyboard your ideas using the Storyboarding add-in
 <td>
 Most of your team will be able to view and create Epics and Features once you've enabled the Portfolio Backlogs feature. However, you may need to enable one or more of these backlogs for a team as described in [Organize your backlogs](../backlogs/organize-backlog.md). <br/>
 
-All stakeholders and contributors to your team project can view and add items to a portfolio backlog. However, to reorder, reparent, and exercise other portfolio backlog features, you need to have [Advanced access](../connect/change-access-levels.md).<br/>
+All stakeholders and contributors to your team project can view and add items to a portfolio backlog. However, to reorder, reparent, and exercise other portfolio backlog features, you need to have [Advanced access](../../security/change-access-levels.md).<br/>
 
 <p>Other resources you may find useful to manage your teams and backlogs:</p>
 <ul>
@@ -153,7 +153,7 @@ Test Plan and Test Suite
 This feature adds the Test Plan and Test Suite WITs, and converts existing test plans and test suites to work items. With this feature enabled, you can now customize these WITs like other work items, and create queries to find test plans and test suites.  
 </td>
 <td>
-To fully manage web-based test plans, you need to have [Advanced access](../connect/change-access-levels.md).<br/>
+To fully manage web-based test plans, you need to have [Advanced access](../../security/change-access-levels.md).<br/>
 You can customize the test plan and test suite WITs in the same way you can customize other WITs. See these topics to learn more: <br/> 
 <ul>
 <li>[Field customizations](add-modify-field.md): Add a custom field, modify a pick list, or add a field rule.</li>

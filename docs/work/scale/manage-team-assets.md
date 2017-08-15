@@ -51,7 +51,7 @@ You can configure most of your team settings from the common configuration dialo
 
 To create additional teams, see [Add teams and team members](multiple-teams.md).  
 
-If team members don't have access to all the features they want, check that they have [the access level needed for those features](../connect/change-access-levels.md).  
+If team members don't have access to all the features they want, check that they have [the access level needed for those features](../../security/change-access-levels.md).  
 
 You can also [restrict access to select features and functions](../../setup-admin/restrict-access-tfs.md).
 

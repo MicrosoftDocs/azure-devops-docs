@@ -95,7 +95,7 @@ Set the permissions for **Manage test plans** and **Manage test suites** to **Al
 
 <img src="../backlogs/_img/delete-test-artifacts-area-path-permissions.png" alt="Set Area path permissions for the team project" style="border: 1px solid #CCCCCC;" />
 
-To have full access to the Test feature set, your [access level must be set to Advanced](../connect/change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
+To have full access to the Test feature set, your [access level must be set to Advanced](../../security/change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
 
 ## Related notes 
 

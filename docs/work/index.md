@@ -140,7 +140,7 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 
 ### Administrate 
 * [Manage permissions & access](how-to/set-permissions-access-work-tracking.md)  
-* [Change access levels](connect/change-access-levels.md)  
+* [Change access levels](../security/change-access-levels.md)  
 * [Manage new form rollout](customize/manage-new-form-rollout.md)  
 * [Customize work tracking](/vsts/work/customize/customize-work)  
 * [TFS-Project Server integration](/vsts/work/office/sync-ps-tfs)    

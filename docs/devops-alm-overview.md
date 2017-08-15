@@ -275,7 +275,7 @@ Other topics of interest:
 ### Pricing, costs, and licenses</span>
 [Team Services Pricing](https://www.visualstudio.com/team-services/pricing/) provides per user costs. Small teams (5 users or fewer) can start for free. Unlimited Visual Studio subscribers are free.   
 
-On-premises TFS provides three access levels: [Stakeholder, Basic, and Advanced](work/connect/change-access-levels.md). You don't need to buy additional licenses for Visual Studio subscribers. Use the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing) to plan your licensing requirements. 
+On-premises TFS provides three access levels: [Stakeholder, Basic, and Advanced](security/change-access-levels.md). You don't need to buy additional licenses for Visual Studio subscribers. Use the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing) to plan your licensing requirements. 
 
 
 ### Extensibility: Create first-class integration experiences 

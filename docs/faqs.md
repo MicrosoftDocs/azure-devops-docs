@@ -41,7 +41,7 @@ See [Software development roles](roles.md).
   
 -   **Stakeholder access**: This view allows anyone on your team to check project status and provide feedback. Stakeholders can [track project priorities and provide direction, feature ideas, and business alignment to a team](quickstart/get-started-stakeholder.md).  
   
-     To grant stakeholders access, add them to the [Stakeholder access group](work/connect/change-access-levels.md).  
+     To grant stakeholders access, add them to the [Stakeholder access group](security/change-access-levels.md).  
   
 -   **Provide feedback**: To allow your stakeholders to provide feedback, you must [grant them specific permissions](work/connect/give-permissions-feedback.md).  
   

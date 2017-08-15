@@ -2,46 +2,65 @@
   href: index.md
 - name: Overview
   items:
-  - name: Authentication, permissions, and access (InProgress)   
-    href: about-permissions.md
+  - name: About security and identity (InProgress)   
+    href: about-security-identity.md
   - name: Default permission and access assignments
-    href: /vsts/setup-admin/permissions-access?toc=/vsts/security/toc.json
+    href: /vsts/security/permissions-access?toc=/vsts/security/toc.json
 - name: Quickstart
   items:
     - name: Invite new users (new topic)
     - name: View permissions (InProgress)
       href: view-permissions.md
-    - name: Add users to a team project  
-      href: /vsts/setup-admin/add-users?toc=/vsts/security/toc.json
-    - name: Add administrators to a team project  
-      href: /vsts/setup-admin/add-administrator-team-project?toc=/vsts/security/toc.json
-    - name: Restrict access to resources
-      href: /vsts/setup-admin/restrict-access-tfs?toc=/vsts/security/toc.json
+    - name: Add a user to a team project  
+      href: /vsts/accounts/add-users?toc=/vsts/security/toc.json
+
 - name: Tutorials
   items:
   - name: Manage users (New Topic)
   - name: Authenticate access with personal access tokens
     href: /vsts/setup-admin/team-services/use-personal-access-tokens-to-authenticate?toc=/vsts/security/toc.json
-  - name: Add administrators to project collection
-    href: /vsts/setup-admin/add-administrator-project-collection?toc=/vsts/security/toc.json
-  - name: "Change access levels (TFS)" 
-    href: /vsts/work/connect/change-access-levels?toc=/vsts/security/toc.json 
 - name: Concepts
   items:
+  - name: About permissions and groups
+    href: /vsts/security/about-permissions?toc=/vsts/security/toc.json
   - name: About access levels 
-    href: /vsts/access-levels?toc=/vsts/security/toc.json
-  - name: Use AAD groups for automated user provisioning (New Topic)
-  - name: Access with Azure Active Directory (Team Services) 
-    href: /vsts/setup-admin/tfs/admin/setup-ad-groups?toc=/vsts/security/toc.json
-  - name: Set up Active Directory groups (TFS) 
-    href: /vsts/setup-admin/tfs/admin/setup-ad-groups?toc=/vsts/security/toc.json
-- name: Reference
-  items:
-  - name: Permission lookup guide (New Topic)
-  - name: Permissions and groups reference
-    href: /vsts/setup-admin/permissions?toc=/vsts/security/toc.json
+    href: /vsts/security/access-levels?toc=/vsts/security/toc.json
+  - name: Use AD or AAD groups for automated user provisioning (New Topic)
+    href: /vsts/security/use-ad-aad-groups-provisioning?toc=/vsts/security/toc.json
+  - name: Azure Active Directory groups (Team Services) 
+    href: /vsts/accounts/team-services/access-with-azure-ad?toc=/vsts/security/toc.json
+  - name: Active Directory groups (TFS) 
+    href: /vsts/tfs-server/admin/setup-ad-groups?toc=/vsts/security/toc.json
   - name: Authentication guidance
     href: /vsts/integrate/get-started/authentication/authentication-guidance?toc=/vsts/security/toc.json
+  - name: Web site settings and security (TFS)
+    href: /vsts/security/websitesettings?toc=/vsts/security/toc.json
+- name: How-to Guides
+  items:
+  - name: Set Git branch permissions
+    href: /vsts/git/branch-permissions?toc=/vsts/security/toc.json 
+  - name: Set build and release permissions 
+    href: /vsts/security/set-build-release-permissions?toc=/vsts/security/toc.json 
+  - name: Set permissions and access for work tracking
+    href: /vsts/work/how-to-set-permissions-access-work-tracking?toc=/vsts/security/toc.json 
+  - name: Set project-level permissions
+    href: set-project-level-permissions.md
+  - name: Set collection-level permissions 
+    href: set-collection-level-permissions.md 
+  - name: "Change access levels (TFS)" 
+    href: /vsts/security/change-access-levels?toc=/vsts/security/toc.json 
+  - name: Add administrators to a team project  
+    href: /vsts/accounts/add-administrator-team-project?toc=/vsts/security/toc.json
+  - name: Add administrators to a project collection
+    href: /vsts/accounts/add-administrator-project-collection?toc=/vsts/security/toc.json
+  - name: Restrict access to resources
+    href: /vsts/accounts/restrict-access-tfs?toc=/vsts/security/toc.json- 
+- name: Reference
+  items:
+  - name: Permission lookup guide 
+    href: permissions-lookup-guide.md
+  - name: Permissions and groups reference
+    href: /vsts/security/permissions?toc=/vsts/security/toc.json
   - name: Authorize access to REST APIs with OAuth
     href: /vsts/integrate/get-started/authentication/oauth?toc=/vsts/security/toc.json
   - name: Authenticate with personal access tokens
@@ -53,5 +72,11 @@
 - name: Troubleshooting
 - name: Resources
   items:
+  - name: Account management (VSTS)
+    href: ../accounts/index.md
+  - name: TFS Server management
+    href: ./tfs-server/index.md
+  - name: Billing
+    href: ../billing/index.md
   - name: Visual Studio Team Services Data Protection Overview
     href: https://www.visualstudio.com/articles/team-services-security-whitepaper

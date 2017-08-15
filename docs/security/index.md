@@ -16,7 +16,7 @@ ms.date: 08/04/2017
 
 <!---
 ## Overview  
-[Authentication, permissions, and access](about-permissions.md)
+[About security and identity](about-permissions.md)
 [Default permission and access assignments](/vsts/setup-admin/permissions-access?toc=/vsts/security/toc.json)
 -->
 
@@ -24,24 +24,40 @@ ms.date: 08/04/2017
   
 - [View permissions](view-permissions.md)
 - [Add users to a team project](/vsts/setup-admin/add-users?toc=/vsts/security/toc.json)  
-- [Add administrators to a team project](/vsts/setup-admin/add-administrator-team-project?toc=/vsts/security/toc.json)  
-- [Restrict access to resources](/vsts/setup-admin/restrict-access-tfs?toc=/vsts/security/toc.json)   
 
 ## Step-by-Step Tutorials
 
+- Manage users (new topic)
 - [Authenticate access with personal access tokens](/vsts/setup-admin/team-services/use-personal-access-tokens-to-authenticate?toc=/vsts/security/toc.json)  
-- [Add administrators to project collection](/vsts/setup-admin/add-administrator-project-collection?toc=/vsts/security/toc.json)  
-- [Change access levels (TFS)](/vsts/work/connect/change-access-levels?toc=/vsts/security/toc.json)   
- 
+
 
 ## Concepts 
+- [About permissions and groups](about-permissions.md)  
 - [About access levels](access-levels.md)  
-- [Access with Azure Active Directory (Team Services)](/vsts/etup-admin/tfs/admin/setup-ad-groups?toc=/vsts/security/toc.json)  
-- [Set up Active Directory groups (TFS)](/vsts/setup-admin/tfs/admin/setup-ad-groups?toc=/vsts/security/toc.json)
+- [Use AD or AAD groups for automated user provisioning](use-ad-or-add-groups-provisioning.md)  
 
- 
+## How-to Guides 
+
+- [Set Git branch permissions](/vsts/git/branch-permissions?toc=/vsts/security/toc.json) 
+- [Set build and release permissions](/vsts/security/set-build-release-permissions?toc=/vsts/security/toc.json) 
+- [Set permissions and access for work tracking](/vsts/work/how-to-set-permissions-access-work-tracking?toc=/vsts/security/toc.json) 
+- [Set project-level permissions](set-project-level-permissions.md) 
+- [Set collection-level permissions](set-collection-level-permissions.md) 
+- [Add administrators to a team project](/vsts/setup-admin/add-administrator-team-project?toc=/vsts/security/toc.json)  
+- [Add administrators to project collection](/vsts/setup-admin/add-administrator-project-collection?toc=/vsts/security/toc.json)  
+- [Change access levels (TFS)](/vsts/security/change-access-levels?toc=/vsts/security/toc.json)
+- [Restrict access to a resource](/vsts/setup-admin/restrict-access-tfs?toc=/vsts/security/toc.json)
+
+## Reference 
+- [Permissions lookup guide](permissions-lookup-guide.md)
+- [Permissions and groups reference](permissions.md)  
+
+
 ## Resources 
  
+- [Account management (VSTS)](../accounts/index.md)
+- [TFS Server management](../tfs-server/index.md)
+- [Billing](../billing/index.md)
 - [Visual Studio Team Services Data Protection Overview](https://www.visualstudio.com/articles/team-services-security-whitepaper)
 
  

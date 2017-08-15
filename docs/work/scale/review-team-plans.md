@@ -16,7 +16,7 @@ ms.date: 06/13/2017
 <b>Team Services | TFS 2017.2</b> 
 
 > [!NOTE]  
-> **Feature availability**: [Delivery Plans, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for Team Services and TFS 2017.2 and later versions. All users with [basic access](../connect/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../quickstart/get-started-stakeholder.md), however, don’t have access to Delivery Plans.)  
+> **Feature availability**: [Delivery Plans, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for Team Services and TFS 2017.2 and later versions. All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../quickstart/get-started-stakeholder.md), however, don’t have access to Delivery Plans.)  
 
 Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view. 
 
@@ -44,7 +44,7 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
 ### Pre-requisites
 In order to add and configure a plan, you must have the following in place:  
 - [Installed the Plans extension](#install-plans)  
-- Be granted Basic access or greater in [Team Services](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) or [TFS](../connect/change-access-levels.md) (Users with Stakeholder access can't add or view plans)  
+- Be granted Basic access or greater in [Team Services](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) or [TFS](../../security/change-access-levels.md) (Users with Stakeholder access can't add or view plans)  
 - [Defined iteration paths](../customize/set-area-paths.md) for the team project  
 - [Configured teams](multiple-teams.md) and [set team defaults and team sprints](set-team-defaults.md)   
 - Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned them to iterations      
@@ -59,7 +59,7 @@ Once you have [installed Delivery Plans](#install-plans), the Plans page appears
 
 	<img src="_img/review-team-plans-no-plans-defined.png" alt="Create new plan" style="border: 1px solid #CCCCCC;" /> 
 
-	All users, except users [assigned Stakeholder access](../connect/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Permissions to create and edit plans](#plan-permissions).  
+	All users, except users [assigned Stakeholder access](../../security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Permissions to create and edit plans](#plan-permissions).  
 
 0. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
 
