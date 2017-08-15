@@ -12,7 +12,9 @@ ms.date: 07/21/2017
 
 # Create your backlog
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**  
+<!---
+<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+--> 
 
 Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. 
 Once defined, you have a prioritized list of features and requirements to build. Your backlog also provides a 

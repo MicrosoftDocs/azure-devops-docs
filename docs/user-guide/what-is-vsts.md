@@ -11,10 +11,16 @@ ms.date: 06/22/2017
 
 # What is Visual Studio Team Services? 
 
-It's a cloud platform
-Supports source control and work tracking 
-Main benefits
+<!--- TO BE COMPLETED   --> 
 
+
+!!! WORK IN PROGRESS !!! 
+
+- It's a cloud platform
+- Supports source control and work tracking 
+- Main benefits
+
+!!! WORK IN PROGRESS !!! 
 
 ## Where do I start?
 - Sign up for free - create an account and a team project/repository 

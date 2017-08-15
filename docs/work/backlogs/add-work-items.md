@@ -12,8 +12,9 @@ ms.date: 08/07/2017
 
 # Track work and issues, add and update a work item 
 
-**Team Services | TFS 2017 |**  
-
+<!---
+<b>Team Services | TFS 2017</b> 
+-->
 
 >[!IMPORTANT]   
 ><b>Feature availability: </b>The new work item  experience is currently available from Team Services and the web portal for TFS 2017. This topic describes how to track work using the new form. If you don't see the new form, [your admin may need to enable it](../customize/manage-new-form-rollout.md), or if it's enabled, [you may need to switch to use it](../process/new-work-item-experience.md#switch-new) 

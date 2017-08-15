@@ -6,14 +6,17 @@ ms.prod: vs-devops-alm
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/23/2017
+ms.date: 08/15/2017
 ---
 
 
 
 # Add teams and team members  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013 </b>  
+
+<!---
+<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+--> 
 
 As your organization grows, you'll want to make sure that you configure your Agile tools to support that growth. To enable each feature team the autonomy it needs to manage their backlog and plan their sprints, they need their own set of team tools. 
 

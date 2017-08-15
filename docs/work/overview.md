@@ -7,7 +7,7 @@ ms.assetid: 28C02AE8-CF8D-4B6E-8301-F46A5622E6C4
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 07/26/2017
+ms.date: 08/15/2017
 ---
 
 # About Agile tools and Agile project management 
@@ -29,6 +29,15 @@ Most Agile tools are [scoped to a team](about-teams-and-settings.md). This suppo
 >To understand the differences between backlogs, boards and Delivery plans, see [Backlogs, boards, and plans](backlogs-boards-plans.md). 
  
 
+## Kanban method and tools
+Kanban uses a visual interactive board to plan and show progress using cards. Your Kanban board is fully customizable to support the workflow used by your team.  
+
+[![Configure Kanban board](_img/gs-planning-configure-kanban.png)](./kanban/kanban-basics.md)[![Update the Kanban board](_img/gs-planning-track-kanban.png)](./kanban/kanban-basics.md)[![Monitor progress](_img/gs-planning-monitor-kanban.png)](../Report/guidance/cumulative-flow.md)
+
+You update the status of work by dragging card to another column on the Kanban board. You can even change the order of items as you move a card to a new column.   
+
+![Reorder cards while changing columns](https://i3-vso.sec.s-msft.com/dynimg/IC822185.gif)
+
 ## Define work items and create your backlog  
 
 You build your project plan by creating a backlog of work items that represent the features, requirements, user stories, or other work to perform. Portfolio backlogs provide support for organizing work in a hierarchical fashion and tracking major product initiatives or scenarios that rely on many stories or requirements.  Different types of work items help you track different types of work, such as user stories, tasks, bugs, issues, and more. 
@@ -42,58 +51,6 @@ The Scrum method uses sprints to plan work to perform by a team within a specifi
 [![Schedule sprints](_img/gs-planning-define-sprints.png)](./scrum/define-sprints.md)[![Plan a sprint](_img/gs-planning-plan-sprint.png)](./scrum/sprint-planning.md)[![Monitor sprint progress](_img/gs-planning-monitor-sprint.png)](./scrum/task-board.md)[![Forecast](_img/gs-planning-forecast.png)](./scrum/forecast.md)
 
 You can quickly assign work items to a sprint by dragging and dropping them from the product backlog to the sprint. 
-
-## Kanban method and tools
-Kanban uses a visual interactive board to plan and show progress using cards. Your Kanban board is fully customizable to support the workflow used by your team.  
-
-[![Configure Kanban board](_img/gs-planning-configure-kanban.png)](./kanban/kanban-basics.md)[![Update the Kanban board](_img/gs-planning-track-kanban.png)](./kanban/kanban-basics.md)[![Monitor progress](_img/gs-planning-monitor-kanban.png)](../Report/guidance/cumulative-flow.md)
-
-You update the status of work by dragging card to another column on the Kanban board. You can even change the order of items as you move a card to a new column.   
-
-![Reorder cards while changing columns](https://i3-vso.sec.s-msft.com/dynimg/IC822185.gif)
-
-<a id="scale">  </a>
-<a id="collection-project-team-structure">  </a>
-## Scale: Manage work across the enterprise
-
-How do you manage work across the enterprise using Agile tools?  How will you scale your Agile tools to support your growing enterprise?  
-
-When you connect to Team Services or an on-premises TFS, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system.
-
-When you create your team project, a team of the same name is automatically created. For small teams, this is sufficient.  
-
-However, for enterprise-level organizations, it may be necessary to scale up, to create additional teams and/or team projects. These can be created within the single account or collection.
-
-You can scale your system as needed by adding teams and/or team projects. These can be created within the single account or collection. As your organization grows, your tools can grow to support a [culture of team autonomy as well as organizational alignment](./scale/agile-culture.md). 
-
-
-<table width="100%">
-<tbody valign="top">
-<tr>
-<td width="40%">
-**Single team project, team defined within an account/collection**  
-![Single collection-project-team conceptual image](../connect/_img/web-portal-account-project-team-concept.png)  
-</td>
-
-<td width="60%">
-**Multiple team projects and teams defined within an account/collection**   
-![Scaled collection-project-team conceptual image](../connect/_img/web-portal-account-project-team-scale-concept.png)  
-
-</td>
-</tr>
-</tbody>
-</table>
- 
-
-To learn more, see the following topics:  
-
-- [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)
-- [About teams and Agile tools](about-teams-and-settings.md) 
-- Manage a [portfolio of backlogs](./scale/portfolio-management.md) and gain insight into each team's progress as well as the progress of all programs.  
-- Use [Delivery plans](./scale/review-team-plans.md) to review the schedule of stories or features your teams plan to deliver. Delivery plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view. 
-- Incrementally adopt [practices that scale](./scale/practices-that-scale.md) to create greater rhythm and flow within your organization, engage customers, improve project visibility, and develop a productive workforce.
-- Structure team projects to gain [visibility across teams](./scale/visibility-across-teams.md) or to support [epics, release trains, and multiple backlogs to support the Scaled Agile Framework](./scale/scaled-agile-framework.md). 
-
 
 
 ## Try this next  

@@ -12,7 +12,9 @@ ms.date: 03/16/2017
 
 # Set alerts, get notified when changes occur 
 
+<!---
 <b>TFS 2017 | TFS 2015 | TFS 2013</b> 
+--> 
 
 >[!IMPORTANT]  
 >This topic describes how to manage alerts or email notifications when working from the web portal for an on-premises TFS. If you work in Team Services or TFS 2017.1 or later version, see [Manage your notifications](../../collaborate/manage-personal-notifications.md) and  [Manage notifications for a team](../../collaborate/manage-team-notifications.md). 

@@ -11,7 +11,9 @@ ms.date: 07/20/2017
 
 #Add task checklists
 
-**Team Services | TFS 2017 | TFS 2015.1**
+<!---
+<b>Team Services | TFS 2017 | TFS 2015.1</b> 
+--> 
 
 > [!NOTE]  
 > **Feature availability:** Task checklists on the Kanban board are supported from Team Services or the web portal for TFS 2015.1 or later version.  

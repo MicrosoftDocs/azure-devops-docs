@@ -7,15 +7,26 @@ ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 07/20/2017
+ms.date: 08/15/2017
 ---
 
 # Get started as a Stakeholder  
 
+<!---
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+-->
 
-With Stakeholder access, you can add and modify work items, approve releases, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. For a review of all features you have access to, see [Stakeholder feature access](#feature-access). 
+With Stakeholder access, you can add and modify work items, approve releases, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 
+Use this topic to learn:
+
+> [!div class="checklist"]   
+> * How to sign-in to an account
+> * How to add a work item
+> * How to view the product backlog and add new work to it
+> * How to view work in progress on the Kanban board
+> * Find work assigned to you, or query for other work items
+> * Understand the set of features you have access to
 
 ## First time signing in 
 

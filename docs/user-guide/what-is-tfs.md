@@ -14,10 +14,18 @@ ms.date: 12/07/2016
 **TFS 2017 | TFS 2015 | TFS 2013**
 
  
+<!--- TO BE COMPLETED   --> 
 
-It's an on-premises server platform
-Supports source control and work tracking 
-Main benefits
+
+!!! WORK IN PROGRESS !!! 
+
+- It's an on-premises server platform
+- Supports source control and work tracking 
+- Main benefits
+
+!!! WORK IN PROGRESS !!! 
+
+
 
 Choose on-premises TFS when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  
 

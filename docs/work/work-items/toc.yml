@@ -28,6 +28,8 @@
     href: ../track/add-tags-to-work-items.md
   - name: Follow work
     href: /vsts/collaborate/follow-work-items?toc=/vsts/work/work-items/toc.json
+  - name: Get started as a Stakeholder
+    href: /vsts/quickstart/get-started-stakeholder?toc=/vsts/work/work-items/toc.json
 - name: Concepts
   items:
   - name: About permissions and access

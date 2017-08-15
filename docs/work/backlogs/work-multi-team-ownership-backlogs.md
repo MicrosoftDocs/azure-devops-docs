@@ -12,7 +12,9 @@ ms.date: 05/10/2017
 
 # Work with multi-team ownership of backlog items  
 
-**Team Services | TFS 2017 | TFS 2015**  
+<!---
+<b>Team Services | TFS 2017 | TFS 2015</b> 
+--> 
 
 <a id="multi-team">  </a>
 

@@ -6,14 +6,15 @@ ms.prod: vs-devops-alm
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/14/2017
+ms.date: 08/15/2017
 ---
 
 
 # Kanban board features and epics  
 
-<b>Team Services | TFS 2017 | TFS 2015 </b>
-
+<!---
+<b>Team Services | TFS 2017 | TFS 2015</b> 
+--> 
 
 If you use Kanban to track progress on your backlog, you can also use Kanban boards to track epics and features.  
 

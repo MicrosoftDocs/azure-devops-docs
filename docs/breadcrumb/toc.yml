@@ -2,43 +2,64 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items:
-  - name: Git
-    tocHref: /vsts/git/
-    topicHref: /vsts/git/index
-  - name: TFVC
-    tocHref: /vsts/tfvc/
-    topicHref: /vsts/tfvc/overview
-  - name: Deploy to Azure
-    tocHref: /vsts/deploy-azure/
-    topicHref: /vsts/deploy-azure/index
-  - name: Build and Release
-    tocHref: /vsts/build-release/
-    topicHref: /vsts/build-release/overview
-  - name: Package Management
-    tocHref: /vsts/package/
-    topicHref: /vsts/package/overview
-  - name: Manual Test
-    tocHref: /vsts/manual-test/
-    topicHref: /vsts/manual-test/index
-  - name: Load Test
-    tocHref: /vsts/load-test/
-    topicHref: /vsts/load-test/index
+  - name: Get started user guide
+    tocHref: /vsts/user-guide/
+    topicHref: /vsts/user-guide/index
+  - name: Code
+    tocHref: /vsts/
+    topicHref: /vsts/index#pivot=services&panel=code
+    items:
+    - name: Git
+      tocHref: /vsts/git/
+      topicHref: /vsts/git/index
+    - name: TFVC
+      tocHref: /vsts/tfvc/
+      topicHref: /vsts/tfvc/overview
+  - name: "Continuous Integration & Delivery"
+    tocHref: /vsts/
+    topicHref: /vsts/index#pivot=services&panel=code
+    items:
+    - name: Deploy to Azure
+      tocHref: /vsts/deploy-azure/
+      topicHref: /vsts/deploy-azure/index
+    - name: Build and Release
+      tocHref: /vsts/build-release/
+      topicHref: /vsts/build-release/index
+    - name: Package Management
+      tocHref: /vsts/package/
+      topicHref: /vsts/package/index
+    - name: Continuous Testing
+      tocHref: /vsts/build-release/
+      topicHref: /vsts/build-release/test/index
+  - name: Testing
+    tocHref: /vsts/
+    topicHref: /vsts/index#pivot=services&panel=testing
+    items:
+    - name: Manual Testing
+      tocHref: /vsts/manual-test/
+      topicHref: /vsts/manual-test/index
+    - name: Load Testing
+      tocHref: /vsts/load-test/
+      topicHref: /vsts/load-test/index
+    - name: Unit Testing
+      tocHref: https://docs.microsoft.com/visualstudio/test/improve-code-quality/
+      topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
   - name: Agile
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=agile
     items:
-    - name: Work items
-      tocHref: /vsts/work/work-items/
-      topicHref: /vsts/work/work-items/index
-    - name: Backlogs
-      tocHref: /vsts/work/backlogs/
-      topicHref: /vsts/work/backlogs/index
     - name: Kanban
       tocHref: /vsts/work/kanban/
       topicHref: /vsts/work/kanban/index
+    - name: Backlogs
+      tocHref: /vsts/work/backlogs/
+      topicHref: /vsts/work/backlogs/index
     - name: Scrum
       tocHref: /vsts/work/scrum/
       topicHref: /vsts/work/scrum/index
+    - name: Work items
+      tocHref: /vsts/work/work-items/
+      topicHref: /vsts/work/work-items/index
     - name: Queries
       tocHref: /vsts/work/track/
       topicHref: /vsts/work/track/index
@@ -79,14 +100,17 @@
     topicHref: /vsts/index#pivot=services&panel=admin
     items:
     - name: Team Services Account Management
-      tocHref: /vsts/setup-admin/team-services/
-      topicHref: /vsts/setup-admin/team-services/overview
+      tocHref: /vsts/accounts/
+      topicHref: /vsts/accounts/index
     - name: TFS Server Administration
-      tocHref: /vsts/setup-admin/tfs/
-      topicHref: /vsts/setup-admin/tfs/install/get-started
+      tocHref: /vsts/tfs-server/
+      topicHref: /vsts/tfs-server/index
     - name: "Security & Identity"
       tocHref: /vsts/security/
       topicHref: /vsts/security/index
+    - name: Billing
+      tocHref: /vsts/billing/
+      topicHref: /vsts/billing/index
     - name: "Scale & Configure Teams"
       tocHref: /vsts/work/scale/
       topicHref: /vsts/work/scale/index
@@ -96,27 +120,28 @@
     - name: Manage Extensions
       tocHref: /vsts/marketplace/
       topicHref: /vsts/marketplace/index
-  - name: Service Hooks
-    tocHref: /vsts/marketplace/integrate/service-hooks/
-    topicHref: /vsts/marketplace/integrate/service-hooks/get-started
-  - name: Extend overview
-    tocHref: /vsts/extend/
-    topicHref: /vsts/extend/overview
-  - name: Visual Studio Extensions
-    tocHref: /vsts/integrate/ide/extensions/
-    topicHref: /vsts/integrate/ide/extensions/overview
-  - name: TFS SharePoint integration
-    tocHref: /vsts/ecosystem/sharepoint/
-    topicHref: /vsts/ecosystem/sharepoint/index
-  - name: TFS-Project Server integration
-    tocHref: /vsts/work/tfs-ps-sync
-    topicHref: /vsts/work/tfs-ps-sync/synchronize-tfs-project-server
-  - name: Marketplace
-    tocHref: /vsts/marketplace/
-    topicHref: /vsts/marketplace/overview
-  - name: Integrate
-    tocHref: /vsts/integrate/
-    topicHref: /vsts/integrate/overview
-  - name: Visual Studio subscriptions
-    tocHref: /vsts/marketplace/vs-subscriptions/
-    topicHref: /vsts/marketplace/vs-subscriptions/buy-vs-subscriptions
+  - name: Integration
+    tocHref: /vsts/
+    topicHref: /vsts/index#pivot=services&panel=integration
+    items:
+    - name: Service Hooks
+      tocHref: /vsts/service-hooks/
+      topicHref: /vsts/service-hooks/index
+    - name: Extend overview
+      tocHref: /vsts/extend/
+      topicHref: /vsts/extend/index
+    - name: Visual Studio Extensions
+      tocHref: /vsts/integrate/ide/extensions/
+      topicHref: /vsts/integrate/ide/extensions/overview
+    - name: Integrate
+      tocHref: /vsts/integrate/
+      topicHref: /vsts/integrate/index
+    - name: Visual Studio subscriptions
+      tocHref: /vsts/marketplace/vs-subscriptions/
+      topicHref: /vsts/marketplace/vs-subscriptions/buy-vs-subscriptions
+    - name: TFS SharePoint integration
+      tocHref: /vsts/ecosystem/sharepoint/
+      topicHref: /vsts/ecosystem/sharepoint/index
+    - name: TFS-Project Server integration
+      tocHref: /vsts/work/tfs-ps-sync/
+      topicHref: /vsts/work/tfs-ps-sync/synchronize-tfs-project-server

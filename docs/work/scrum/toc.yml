@@ -20,6 +20,8 @@
     href: task-board.md
   - name: Plan capacity
     href: ../scale/capacity-planning.md
+  - name: Review team delivery plans
+    href: /vsts/work/scale/review-team-plans?toc=/vsts/work/scrum/toc.json
   - name: Sprint burndown
     href: sprint-burndown.md
   - name: Forecast
