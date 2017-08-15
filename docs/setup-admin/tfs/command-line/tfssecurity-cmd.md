@@ -1247,10 +1247,10 @@ TFS 2017 Update 1 and later
 |[Create Tag](../../permissions.md#git-create-tag-permission)|GitRepositories|CreateTag|
 |[Delete Repository](../../permissions.md#git-delete-repository-permission)|GitRepositories|DeleteRepository|
 |[Edit Policies](../../permissions.md#git-edit-policies-permission)|GitRepositories|EditPolicies|
-|[Exempt From Policy Enforcement](../../permissions.md#git-repository-permissions-objectlevel)|GitRepositories|PolicyExempt|
+|[Exempt From Policy Enforcement](../../../security/permissions.md#git-repository-permissions-objectlevel)|GitRepositories|PolicyExempt|
 |[Force Push (Rewrite History and Delete Branches)](../../permissions.md#git-force-push-permission)|GitRepositories|ForcePush|
-|[Manage Notes](../../permissions.md#git-repository-permissions-objectlevel)|GitRepositories|ManageNote|
-|[Manage Permissions](../../permissions.md#git-repository-permissions-objectlevel)|GitRepositories|ManagePermissions|
+|[Manage Notes](../../../security/permissions.md#git-repository-permissions-objectlevel)|GitRepositories|ManageNote|
+|[Manage Permissions](../../../security/permissions.md#git-repository-permissions-objectlevel)|GitRepositories|ManagePermissions|
 |[Read](../../permissions.md#git-read-permission)|GitRepositories|GenericRead|
 |[Remove Others' Locks](../../permissions.md#git-remove-others-locks-permission)|GitRepositories|RemoveOthersLocks|
 |[Rename Repository](../../permissions.md#git-rename-repository-permission)|GitRepositories|RenameRepository|

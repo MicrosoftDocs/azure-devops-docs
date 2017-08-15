@@ -75,7 +75,7 @@
   - name: Account management (VSTS)
     href: ../accounts/index.md
   - name: TFS Server management
-    href: ./tfs-server/index.md
+    href: ../tfs-server/index.md
   - name: Billing
     href: ../billing/index.md
   - name: Visual Studio Team Services Data Protection Overview

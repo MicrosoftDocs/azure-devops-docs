@@ -14,10 +14,16 @@ ms.date: 07/20/2017
 
 **TFS 2017 | TFS 2015 | TFS 2013**  
 
+<!--- TO BE COMPLETED   --> 
+
+
+!!! WORK IN PROGRESS !!! 
+
 **UPDATE - To Be Completed - Make into a Tutorial **
 
+!!! WORK IN PROGRESS !!! 
 
-See [Access levels](../../security/access-levels.md).
+See [Access levels](access-levels.md).
 
 
 >[!IMPORTANT]  
