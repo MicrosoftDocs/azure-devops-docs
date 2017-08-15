@@ -222,6 +222,7 @@ ms.date: 07/26/2017
                     <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a>
                     </li>
                   </ul>
+				</div>
                 <div class="group">
                   <h3>Agile</h3>
                   <ul>
@@ -247,7 +248,6 @@ ms.date: 07/26/2017
                     <li><a class="barLink" href="/vsts/search/index">Search</a>
                     </li>                    
                   </ul>
-                </div>
                 </div>
               </li>
               <li>
@@ -1061,235 +1061,99 @@ ms.date: 07/26/2017
                 </div>
               </li>
 			  <li>
-                <ul class="cardsL">
+                <ul class="directory">
                     <li>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage">
-                                                <img src="/media/common/placeholder.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                            <h3>Work item visualizer</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-slack">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage">
-                                                <img src="/media/common/placeholder.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                            <h3>Slack</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=Berichthaus.TfsTimetracker">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage">
-                                                <img src="/media/common/placeholder.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                            <h3>Timetracker</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
+						<div class="group">
+							<ul>
+								<li>
+									<a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization">
+										<img src="/media/common/placeholder.svg" alt="" />
+										<h3>Work item visualizer</h3>
+									</a>
+								</li>
+								<li>
+									<a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-slack">
+										<img src="/media/common/placeholder.svg" alt="" />
+										 <h3>Slack</h3>
+									</a>
+								</li>
+								<li>
+									<a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=Berichthaus.TfsTimetracker">
+										<img src="/media/common/placeholder.svg" alt="" />
+										<h3>Timetracker</h3>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="group">
+							<ul>
+								<li>
+									<a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards">
+										<img src="/media/common/placeholder.svg" alt="" />
+										 <h3>Agile cards</h3>
+									</a>
+								</li>
+								<li>
+									<a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins">
+										<img src="/media/common/placeholder.svg" alt="" />
+										<h3>Jenkins</h3>
+									</a>
+								</li>
+								<li>
+									<a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-bamboo">
+										<img src="/media/common/placeholder.svg" alt="" />
+										<h3>Bamboo</h3>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="group">
+							<ul>
+								<li>
+									<a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search">
+										<img src="/media/common/placeholder.svg" alt="" />
+										<h3>Code Search</h3>
+									</a>
+								</li>
+								<li>
+									<a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web">
+										<img src="/media/common/placeholder.svg" alt="" />
+										<h3>Test &amp; Feedback</h3>
+									</a>
+								</li>
+								<li>
+									<a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-zendesk">
+										<img src="/media/common/placeholder.svg" alt="" />
+										<h3>ZenDesk</h3>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="group">
+							<ul>
+								<li>
+									<a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-trello">
+										<img src="/media/common/placeholder.svg" alt="" />
+										<h3>Trello</h3>
+									</a>
+								</li>
+								<li>
+									<a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice">
+										<img src="/media/common/placeholder.svg" alt="" />
+										<h3>UserVoice</h3>
+									</a>
+								</li>
+								<li>
+									<a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks">
+										<img src="/media/common/placeholder.svg" alt="" />
+										<h3>Octopus Deploy</h3>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
 				</ul>
-				<ul class="cardsL">
-                    <li>
-
-                        <a href="https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage">
-                                                <img src="/media/common/placeholder.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                            <h3>Agile cards</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage">
-                                                <img src="/media/common/placeholder.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                            <h3>Jenkins</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-bamboo">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage">
-                                                <img src="/media/common/placeholder.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                            <h3>Bamboo</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <ul class="cardsFTitle">
-                    <li>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage">
-                                                <img src="/media/common/placeholder.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                            <h3>Code Search</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-
-                        <a href="https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage">
-                                                <img src="/media/common/placeholder.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                            <h3>Test &amp; Feedback</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-
-                        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-zendesk">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage">
-                                                <img src="/media/common/placeholder.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                            <h3>ZenDesk</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-trello">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage">
-                                                <img src="/media/common/placeholder.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                            <h3>Trello</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage">
-                                                <img src="/media/common/placeholder.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                            <h3>UserVoice</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage">
-                                                <img src="/media/common/placeholder.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                            <h3>Octopus Deploy
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
+			  </li>
               <li>
                   <div class="cardSize">
                       <div class="cardPadding">
