@@ -43,8 +43,6 @@ Learn how to build your app and deploy it to your choice of Azure service.
 
 <!--- These were taken from the CI/CD MVC deck -->
 
-* [Define CI build process](tutorials/define-ci-build-process.md)
-* [Define CD release process](tutorials/define-cd-release-process.md)
 * [Set up multi-stage release](tutorials/define-multistage-release-process.md)
 * [CI builds for Git in VSTS](tutorials/ci-build-git.md)
 * [CI builds for GitHub](tutorials/ci-build-github.md)
