@@ -8,10 +8,10 @@
     href: collaborate-with-packages.md
   - name: About release views
     href: feeds/about-release-views.md
-- name: Quickstarts
-  items:
   - name: Install and license Package Management
     href: install.md
+- name: Quickstarts
+  items:
   - name: Get started with NuGet
     href: get-started-nuget.md
   - name: Get started with npm
