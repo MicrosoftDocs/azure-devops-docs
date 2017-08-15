@@ -122,9 +122,9 @@ ms.date: 07/26/2017
                       <div class="cardText">
                         <h3>Agile</h3>
                         <ul class="noBullet">
-                          <li><a class="barLink" href="">Scrum</a></li>
-                          <li><a class="barLink" href="">Kanban</a></li>
-                          <li><a class="barLink" href="">Dashboards</a></li>
+                          <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
+                          <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
+                          <li><a class="barLink" href="/vsts/report/index">Dashboards</a></li>
                         </ul>
                       </div>
                     </div>
@@ -155,7 +155,7 @@ ms.date: 07/26/2017
                         <h3>Resources</h3>
                         <ul class="cardsFTitle">
                           <li>
-                            <a href="">
+                            <a href="/vsts/marketplace/overview">
                               <div class="cardSize">
                                 <div class="cardPadding">
                                   <div class="card">
@@ -173,7 +173,7 @@ ms.date: 07/26/2017
                             </a>
                           </li>
                           <li>
-                            <a href="">
+                            <a href="https://www.visualstudio.com/learn-git/">
                               <div class="cardSize">
                                 <div class="cardPadding">
                                   <div class="card">
@@ -191,7 +191,7 @@ ms.date: 07/26/2017
                             </a>
                           </li>
                           <li>
-                            <a href="">
+                            <a href="https://www.visualstudio.com/devops/">
                               <div class="cardSize">
                                 <div class="cardPadding">
                                   <div class="card">
@@ -209,7 +209,7 @@ ms.date: 07/26/2017
                             </a>
                           </li>
                           <li>
-                            <a href="">
+                            <a href="https://www.visualstudio.com/agile/">
                               <div class="cardSize">
                                 <div class="cardPadding">
                                   <div class="card">
@@ -246,8 +246,8 @@ ms.date: 07/26/2017
                 <div class="group">
                   <h3>Code</h3>
                   <ul>
-                    <li><a class="barLink" href="/vsts/git/overview">Git</a></li>
-                    <li><a class="barLink" href="/vsts/tfvc/overview">TFVC</a>
+                    <li><a class="barLink" href="/vsts/git/index">Git</a></li>
+                    <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a>
                     </li>
                   </ul>
                   <h3>Continuous Integration &amp; Delivery</h3>
@@ -263,8 +263,6 @@ ms.date: 07/26/2017
                   </ul>
                   <h3>Testing</h3>
                   <ul>
-                    <li><a class="barLink" href="">Test Management</a>
-                    </li>
                     <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit Testing</a>
                     </li>
                     <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a>
@@ -278,12 +276,8 @@ ms.date: 07/26/2017
                     </li>
                     <li><a class="barLink" href="/vsts/collaborate/index">READMEs &amp; Wikis</a>
                     </li>
-                    <li><a class="barLink" href="">Social</a>
-                    </li>
-                    <li><a class="barLink" href="/vsts/git/tutorial/pullrequest">Pull Requests</a>
-                    </li>
-                    <li><a class="barLink" href="/vsts/git/concepts/pull-requests#get-your-code-reviewed">Code Reviews</a>
-                    </li>
+                    <li><a class="barLink" href="/vsts/search/index">Search</a>
+                    </li>                    
                   </ul>
                 </div>
                 <div class="group">
@@ -299,9 +293,8 @@ ms.date: 07/26/2017
                   <h3>Analytics</h3>
                   <ul>
                     <li><a class="barLink" href="/vsts/report/index">Dashboards</a></li>
-                    <li><a class="barLink" href="/vsts/report/analytics/index">PowerBI</a></li>
-                    <li><a class="barLink" href="/vsts/report/powerbi/index">OData</a></li>
-					<li><a class="barLink" href="/vsts/report/sql-reports/">Data Warehouse (SQL Reports)</a></li>
+                    <li><a class="barLink" href="/vsts/report/powerbi/index">PowerBI</a></li>
+                    <li><a class="barLink" href="/vsts/report/analytics/index">OData</a></li>
                   </ul>
                 </div>
               </li>
@@ -314,13 +307,13 @@ ms.date: 07/26/2017
                     <li><a class="barLink" href="">Billing</a></li>
                     <li><a class="barLink" href="/vsts/work/scale/index">Scale and configure teams</a></li>
                     <li><a class="barLink" href="/vsts/marketplace/overview">Marketplace</a></li>
-                    <li><a class="barLink" href="">Security and Identity</a></li>
+                    <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
                     <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
                     <li><a class="barLink" href="/vsts/work/customize/index">Work Item Customization</a></li>
                   </ul>
                   <h3>Integration</h3>
                   <ul>
-                    <li><a class="barLink" href="/vsts/marketplace/integrate/service-hooks/get-started">Service Hooks</a></li>
+                    <li><a class="barLink" href="/vsts/service-hooks/index">Service Hooks</a></li>
                     <li><a class="barLink" href="/vsts/extend/overview">Custom Extensions</a></li>
                     <li><a class="barLink" href="/rest/api/vsts/">REST APIs</a></li>
                     <li><a class="barLink" href="/vsts-dotnet/api/microsoft.teamfoundation.framework.common">.NET APIs</a></li>
@@ -559,7 +552,7 @@ ms.date: 07/26/2017
                 </a>
               </li>
 			  <li>
-                <a href="">
+                <a href="/vsts/search/index">
                   <div class="cardSize">
                     <div class="cardPadding">
                       <div class="card">
@@ -569,7 +562,7 @@ ms.date: 07/26/2017
                           </div>
                         </div>
                         <div class="cardText">
-                          <h3>Social</h3>
+                          <h3>Search</h3>
                           <p>Description</p>
                         </div>
                       </div>
@@ -916,7 +909,7 @@ ms.date: 07/26/2017
                 </a>
               </li>
 			  <li>
-                <a href="">
+                <a href="/vsts/security/index">
                   <div class="cardSize">
                     <div class="cardPadding">
                       <div class="card">
@@ -1136,7 +1129,7 @@ ms.date: 07/26/2017
                                       .NET Client Libraries
                                   </h3>
                                   <p>
-                                      <a href="/vsts/integrate/overview">Get started</a>
+                                      <a href="/vsts/integrate/get-started/client-libraries/dotnet">Get started</a>
                                   </p>
                                   <p>
                                       <a href="">API reference</a>
@@ -1160,7 +1153,7 @@ ms.date: 07/26/2017
                                       REST APIs
                                   </h3>
                                   <p>
-                                      <a href="/vsts/integrate/overview">Get started</a>
+                                      <a href="/vsts/integrate/#rest-apis">Get started</a>
                                   </p>
                                   <p>
                                       <a href="">API reference</a>
@@ -1200,7 +1193,7 @@ ms.date: 07/26/2017
                                       Custom extensions
                                   </h3>
                                   <p>
-                                      <a href="/vsts/extend/overview">Get started</a>
+                                      <a href="/vsts/extend">Get started</a>
                                   </p>
                                   <p>
                                       <a href="">API reference</a>
@@ -1229,7 +1222,7 @@ ms.date: 07/26/2017
               <li>
                 <ul class="cardsFTitle">
                   <li>
-                      <a href="">
+                      <a href="https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization">
                       <div class="cardSize">
                           <div class="cardPadding">
                               <div class="card">
@@ -1239,15 +1232,17 @@ ms.date: 07/26/2017
                                       </div>
                                   </div>
                                   <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                      <h3>Title</h3>
+                                      <h3>Work item visualizer</h3>
                                   </div>
                               </div>
                           </div>
                       </div>
-                      </a>
-                  </li>
+				  </a>
+			  </li>
+              <li>
+                <ul class="cardsFTitle">
                   <li>
-                      <a href="">
+                      <a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-slack">
                       <div class="cardSize">
                           <div class="cardPadding">
                               <div class="card">
@@ -1257,15 +1252,17 @@ ms.date: 07/26/2017
                                       </div>
                                   </div>
                                   <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                      <h3>Title</h3>
+                                      <h3>Slack</h3>
                                   </div>
                               </div>
                           </div>
                       </div>
-                      </a>
-                  </li>
+				  </a>
+			  </li>
+              <li>
+                <ul class="cardsFTitle">
                   <li>
-                      <a href="">
+                      <a href="https://marketplace.visualstudio.com/items?itemName=Berichthaus.TfsTimetracker">
                       <div class="cardSize">
                           <div class="cardPadding">
                               <div class="card">
@@ -1275,107 +1272,195 @@ ms.date: 07/26/2017
                                       </div>
                                   </div>
                                   <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                      <h3>Title</h3>
+                                      <h3>Timetracker</h3>
                                   </div>
                               </div>
                           </div>
                       </div>
-                      </a>
-                  </li>
-                    <li>
-                        <a href="">
-                        <div class="cardSize">
-                            <div class="cardPadding">
-                                <div class="card">
-                                    <div class="cardImageOuter">
-                                        <div class="cardImage">
-                                            <img src="/media/common/placeholder.svg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                        <h3>Title</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </li>
+				  </a>
+			  </li>
+              <li>
+                <ul class="cardsFTitle">
+                  <li>
+                      <a href="https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards">
+                      <div class="cardSize">
+                          <div class="cardPadding">
+                              <div class="card">
+                                  <div class="cardImageOuter">
+                                      <div class="cardImage">
+                                          <img src="/media/common/placeholder.svg" alt="" />
+                                      </div>
+                                  </div>
+                                  <div class="cardText" style="padding-left: 32px;padding-top:14px">
+                                      <h3>Agile cards</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+				  </a>
+			  </li>
+              <li>
+                <ul class="cardsFTitle">
+                  <li>
+                      <a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins">
+                      <div class="cardSize">
+                          <div class="cardPadding">
+                              <div class="card">
+                                  <div class="cardImageOuter">
+                                      <div class="cardImage">
+                                          <img src="/media/common/placeholder.svg" alt="" />
+                                      </div>
+                                  </div>
+                                  <div class="cardText" style="padding-left: 32px;padding-top:14px">
+                                      <h3>Jenkins</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+				  </a>
+			  </li>
+              <li>
+                <ul class="cardsFTitle">
+                  <li>
+                      <a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-bamboo">
+                      <div class="cardSize">
+                          <div class="cardPadding">
+                              <div class="card">
+                                  <div class="cardImageOuter">
+                                      <div class="cardImage">
+                                          <img src="/media/common/placeholder.svg" alt="" />
+                                      </div>
+                                  </div>
+                                  <div class="cardText" style="padding-left: 32px;padding-top:14px">
+                                      <h3>Bamboo</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+				  </a>
+			  </li>
                 </ul>
               </li>
               <li>
-                  <ul class="cardsFTitle">
-                    <li>
-                        <a href="">
-                        <div class="cardSize">
-                            <div class="cardPadding">
-                                <div class="card">
-                                    <div class="cardImageOuter">
-                                        <div class="cardImage">
-                                            <img src="/media/common/placeholder.svg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                        <h3>Title</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                        <div class="cardSize">
-                            <div class="cardPadding">
-                                <div class="card">
-                                    <div class="cardImageOuter">
-                                        <div class="cardImage">
-                                            <img src="/media/common/placeholder.svg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                        <h3>Title</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                        <div class="cardSize">
-                            <div class="cardPadding">
-                                <div class="card">
-                                    <div class="cardImageOuter">
-                                        <div class="cardImage">
-                                            <img src="/media/common/placeholder.svg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                        <h3>Title</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                        <div class="cardSize">
-                            <div class="cardPadding">
-                                <div class="card">
-                                    <div class="cardImageOuter">
-                                        <div class="cardImage">
-                                            <img src="/media/common/placeholder.svg" alt="" />
-                                        </div>
-                                    </div>
-                                    <div class="cardText" style="padding-left: 32px;padding-top:14px">
-                                        <h3>Title</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </li>
+                <ul class="cardsFTitle">
+                  <li>
+                      <a href="https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search">
+                      <div class="cardSize">
+                          <div class="cardPadding">
+                              <div class="card">
+                                  <div class="cardImageOuter">
+                                      <div class="cardImage">
+                                          <img src="/media/common/placeholder.svg" alt="" />
+                                      </div>
+                                  </div>
+                                  <div class="cardText" style="padding-left: 32px;padding-top:14px">
+                                      <h3>Code Search</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+				  </a>
+			  </li>
+              <li>
+                <ul class="cardsFTitle">
+                  <li>
+                      <a href="https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web">
+                      <div class="cardSize">
+                          <div class="cardPadding">
+                              <div class="card">
+                                  <div class="cardImageOuter">
+                                      <div class="cardImage">
+                                          <img src="/media/common/placeholder.svg" alt="" />
+                                      </div>
+                                  </div>
+                                  <div class="cardText" style="padding-left: 32px;padding-top:14px">
+                                      <h3>Test &amp; Feedback</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+				  </a>
+			  </li>
+              <li>
+                <ul class="cardsFTitle">
+                  <li>
+                      <a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-zendesk">
+                      <div class="cardSize">
+                          <div class="cardPadding">
+                              <div class="card">
+                                  <div class="cardImageOuter">
+                                      <div class="cardImage">
+                                          <img src="/media/common/placeholder.svg" alt="" />
+                                      </div>
+                                  </div>
+                                  <div class="cardText" style="padding-left: 32px;padding-top:14px">
+                                      <h3>ZenDesk</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+				  </a>
+			  </li>
+              <li>
+                <ul class="cardsFTitle">
+                  <li>
+                      <a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-trello">
+                      <div class="cardSize">
+                          <div class="cardPadding">
+                              <div class="card">
+                                  <div class="cardImageOuter">
+                                      <div class="cardImage">
+                                          <img src="/media/common/placeholder.svg" alt="" />
+                                      </div>
+                                  </div>
+                                  <div class="cardText" style="padding-left: 32px;padding-top:14px">
+                                      <h3>Trello</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+				  </a>
+			  </li>
+              <li>
+                <ul class="cardsFTitle">
+                  <li>
+                      <a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice">
+                      <div class="cardSize">
+                          <div class="cardPadding">
+                              <div class="card">
+                                  <div class="cardImageOuter">
+                                      <div class="cardImage">
+                                          <img src="/media/common/placeholder.svg" alt="" />
+                                      </div>
+                                  </div>
+                                  <div class="cardText" style="padding-left: 32px;padding-top:14px">
+                                      <h3>UserVoice</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+				  </a>
+			  </li>
+              <li>
+                <ul class="cardsFTitle">
+                  <li>
+                      <a href="https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks">
+                      <div class="cardSize">
+                          <div class="cardPadding">
+                              <div class="card">
+                                  <div class="cardImageOuter">
+                                      <div class="cardImage">
+                                          <img src="/media/common/placeholder.svg" alt="" />
+                                      </div>
+                                  </div>
+                                  <div class="cardText" style="padding-left: 32px;padding-top:14px">
+                                      <h3>Octopus Deploy</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+				  </a>
+			  </li>
                   </ul>
               </li>
             </ul>
