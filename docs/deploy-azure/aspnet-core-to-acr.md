@@ -17,7 +17,7 @@ ms.date: 08/04/2016
 ms.custom: mvc
 ---
 
-# Deploy an ASP.NET Core App to Linux App Service
+# Deploy your ASP.NET Core App to Linux App Service with Docker and Azure Container Registry
 
 Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your ASP.NET Core apps. This quickstart shows how to set up CI and CD to deploy an ASP.NET Core application to Linux App Service using Docker and [Azure Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/).
 
