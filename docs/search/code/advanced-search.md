@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # How To: Use Code Search
 
-[!INCLUDE [version-header-shared](../_shared/version-header-shared.md)]
+<!-- [!INCLUDE [version-header-shared](../_shared/version-header-shared.md)] -->
 
 By using Code Search you can:
 

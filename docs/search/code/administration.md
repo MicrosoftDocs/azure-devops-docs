@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Set up and administer Microsoft Code Search and Work Item Search
 
-[!INCLUDE [version-header-shared](../_shared/version-header-shared.md)]
+<!-- [!INCLUDE [version-header-shared](../_shared/version-header-shared.md)] -->
 
 In this topic:
 

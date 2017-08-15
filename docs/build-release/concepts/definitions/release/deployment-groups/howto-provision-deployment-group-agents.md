@@ -9,8 +9,6 @@ ms.author: ahomer
 ms.date: 05/12/2017
 ---
 
-**| Team Services |**
-
 # How To: Provision agents for deployment groups
 
 [Deployment groups](index.md) make it easy to define logical groups of target machines for deployment,

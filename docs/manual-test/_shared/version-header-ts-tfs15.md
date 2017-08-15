@@ -1,1 +1,1 @@
-**Team Services | TFS 2017**  
+<!-- **Team Services | TFS 2017** -->

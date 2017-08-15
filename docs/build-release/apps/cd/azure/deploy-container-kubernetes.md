@@ -11,8 +11,6 @@ ms.date: 01/02/2017
 
 # Implement continuous deployment of your app using Kubernetes to Azure Container Service
 
-**| Team Services |**
-
 Continuous deployment (CD) means starting an automated deployment process whenever a new successful build is available.
 Here. we'll show you how to set up continuous delivery of a Docker based app by using Visual Studio Team Services
 to a Kubernetes cluster running in Azure Container Service.

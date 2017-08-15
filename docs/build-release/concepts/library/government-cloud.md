@@ -12,8 +12,6 @@ ms.date: 10/20/2016
 
 # Deployments to Azure Government Cloud
 
-**| Team Services |**
-
 [Azure Government Clouds](https://azure.microsoft.com/en-us/overview/clouds/government/)
 provide private and semi-isolated locations for specific Government or other services, separate from the normal
 Azure services. Highest levels of privacy have been adopted for these clouds, including restricted data access policies.

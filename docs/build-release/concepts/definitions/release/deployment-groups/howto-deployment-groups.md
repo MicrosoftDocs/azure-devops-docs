@@ -11,8 +11,6 @@ ms.date: 05/12/2017
 
 # How to: Use deployment groups
 
-**| Team Services |**
-
 >**Team Services:** Deployment groups are not yet available to all Team Services accounts.  
 >**TFS:** At present, deployment groups are not available in Team Foundation Server.
 

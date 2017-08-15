@@ -11,8 +11,6 @@ ms.date: 01/02/2017
 
 # Deploy your Web Deploy package to IIS servers
 
-**| Team Services |**
-
 > This is a preview feature that is available to only some accounts in Team Services.
 
 Continuous deployment means starting an automated deployment process whenever a new successful build is available. Here we'll show you how to set up continuous deployment of your ASP.NET or Node app to one or more IIS servers using Release Management.

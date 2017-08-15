@@ -11,7 +11,7 @@ ms.date: 08/12/2016
 
 # Testing with unified agents and phases
 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
+<!-- [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] -->
 
 Version 2 of the **Visual Studio Test** task uses the unified Build and Release
 agent, instead of a different custom agent as was the case with version 1.

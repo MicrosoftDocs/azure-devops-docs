@@ -12,7 +12,7 @@ ms.date: 08/12/2016
 
 # Testing Java applications with Visual Studio Team Services
 
-[!INCLUDE [version-header-vs-tfs](_shared/version-header-vs-tfs.md)]
+<!-- [!INCLUDE [version-header-vs-tfs](_shared/version-header-vs-tfs.md)] -->
 
 Visual Studio Team Services includes build tasks to
 make it easy to integrate your build and testing 

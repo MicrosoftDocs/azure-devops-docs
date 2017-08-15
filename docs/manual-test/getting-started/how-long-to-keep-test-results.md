@@ -11,7 +11,7 @@ ms.date: 08/12/2016
 
 # Control how long to keep test results in Visual Studio Team Services
 
-**Visual Studio 2017 | Visual Studio 2015 | TFS 2017 | TFS 2015**
+<!-- **Visual Studio 2017 | Visual Studio 2015 | TFS 2017 | TFS 2015** -->
 
 Running tests, especially automated ones, generates lots of data. 
 To keep your test system responsive and performing well,

@@ -11,7 +11,7 @@ ms.date: 08/12/2016
 
 # Associate automated test results with requirements
 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
+<!-- [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]  -->
 
 If your test suites include **requirements**, link these to your test results
 and view the results on your team's dashboard. This enables end-to-end 

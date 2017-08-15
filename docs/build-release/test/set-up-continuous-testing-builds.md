@@ -11,7 +11,7 @@ ms.date: 06/15/2017
 
 # Set up continuous testing for your builds
 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
+<!-- [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] -->
 
 Find problems early after changes are checked in and built by running continuous tests using Visual Studio Team Services or Team Foundation Server.
 

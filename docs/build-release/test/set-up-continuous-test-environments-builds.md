@@ -11,7 +11,7 @@ ms.date: 08/12/2016
 
 # Set up environments to run continuous test tasks with your build tasks
 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
+<!-- [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] -->
 
 To test your app using different platforms and configurations,
 set up separate environments to run your app and tests with your
