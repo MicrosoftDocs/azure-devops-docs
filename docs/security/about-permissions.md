@@ -7,14 +7,16 @@ ms.assetid:
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/04/2017
+ms.date: 08/15/2017
 ---
 
 
 
 # Permissions and groups 
 
-**Team Services | TFS 2017 | TFS 2015** 
+<!---
+<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+-->
 
 <!--- TO BE COMPLETED   --> 
 

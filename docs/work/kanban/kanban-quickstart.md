@@ -7,12 +7,14 @@ ms.prod: vs-devops-alm
 ms.assetid: 4942A638-9888-461E-969D-0BB9B1FE1736
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/02/2017
+ms.date: 08/15/2017
 ---
 
 # Get started using your Kanban board
 
-<b>Team Services | TFS 2017 </b> 
+<!---
+<b>Team Services | TFS 2017</b> 
+--> 
 
 Your Kanban board turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a backlog item, user story, or bug at that stage of work.  
 

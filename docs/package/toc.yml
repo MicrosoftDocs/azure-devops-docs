@@ -79,7 +79,7 @@
   - name: Gradle
     items:
     - name: Use Gradle with VSTS
-      href: ./gradle/use-package-gradle.md
+      href: ./gradle/build-package-gradle.md
     - name: Publish a Gradle package
       href: ./gradle/publish-package-gradle.md
      

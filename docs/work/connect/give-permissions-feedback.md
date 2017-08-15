@@ -6,12 +6,15 @@ ms.prod: vs-devops-alm
 ms.assetid: db5148e8-0dd2-4ddd-b563-d9b924356263  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/16/2017
+ms.date: 08/15/2017
 ---
 
 # Give reviewers permissions to provide feedback
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**  
+
+<!---
+<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+--> 
 
 You provide feedback to users that you plan to [request feedback](get-feedback.md) from. Reviewers who aren't members of your team require special permissions to provide feedback using the Microsoft Feedback Client. 
 

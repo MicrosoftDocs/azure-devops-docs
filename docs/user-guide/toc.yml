@@ -1,4 +1,4 @@
-- name: Get started
+- name: Get started user guide
   href: index.md
 - name: Overview
   items:
@@ -10,48 +10,79 @@
     href: ../services.md
 - name: Quickstarts
   items:
-  - name: Set up/sign up with Team Services
-    href: /vsts/setup-admin/team-services/sign-up-for-visual-studio-team-services?toc=/vsts/user-guide/toc.json 
+  - name: Sign up and create a team project  
+    href: /vsts/accounts/team-services/sign-up-for-visual-studio-team-services?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
   - name: Code with Git
-    href: ../git/gitquickstart.md
-  - name: Track work via Kanban 
-    href: ../work/kanban/kanban-quickstart.md
-  - name: Stakeholder access
-    href: ../quickstart/get-started-stakeholder.md
+    href: /vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+  - name: Invite new users (NEW)   
+  - name: "Build & release"
+    href: /vsts/build-release/get-started/ci-cd-part-1?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json
+  - name: Track work
+    items:  
+    - name: Create your backlog
+      href: /vsts/work/backlogs/create-your-backlog?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
+    - name: Update your board (Kanban) 
+      href: /vsts/work/kanban/kanban-quickstart?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
+    - name: Define and assign work to sprints 
+      href: /vsts/work/scrum/define-sprints?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+    - name: Capture bugs 
+      href: /vsts/work/backlogs/manage-bugs?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+    - name: Listing work items (Queries) 
+      href: /vsts/work/track/organize-view-run-queries?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+  - name: Test your app
+    items:  
+    - name: Add and run manual tests
+      href: /vsts/work/kanban/add-run-update-tests?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
+    - name: Run URL-based load tests  
+      href: /vsts/load-test/get-started-simple-cloud-load-test?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
+    - name: Exploratory testing
+      href: /vsts/manual-test/connected-mode-exploratory-testing?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+    - name: Unit testing
+      href: https://docs.microsoft.com/visualstudio/test/unit-test-your-code?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+  - name: Get extensions
+    items:  
+    - name: Popular extensions
+      href: /vsts/marketplace/index?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
+    - name: Service hooks 
+      href: /vsts/service-hooks/index?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
 - name: Tutorials
   items:
-  - name: Set your preferences
-    href: /vsts/setup-admin/account-preferences?toc=/vsts/user-guide/toc.json
   - name: Set favorites
-    href: /vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json
+    href: /vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: "Follow work & pull requests"
-    href: /vsts/collaborate/follow-work-items?toc=/vsts/user-guide/toc.json
-  - name: Authenticate with personal access tokens
-    href: /vsts/setup-admin/team-services/use-personal-access-tokens-to-authenticate?toc=/vsts/user-guide/toc.json
+    href: /vsts/collaborate/follow-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+  - name: Enable preview features
+    href: /vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+  - name: Get started as a Stakeholder
+    href: /vsts/quickstart/get-started-stakeholder?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json&bc=/vsts/breadcrumb/toc.json 
 - name: Concepts
   items:
   - name: "Team projects, teams, and repos (NEW)"
     href: team-projects-teams-repos.md
-  - name: Access levels (NEW)
-    href: /vsts/security/access-levels?toc=/vsts/user-guide/toc.json
-  - name: Source control (NEW)
-    href: ../concepts/source-control.md
-  - name: "Kanban & Agile (NEW)"
-    href: ../concepts/kanban-agile.md
+  - name: Source control 
+    href: source-control.md
+  - name: "Kanban & Agile tools"
+    href: /vsts/work/overview?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
   - name: "Clients & tools"
-    href: ../tools.md
+    href: /vsts/tools?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
   - name: Software development roles
-    href: ../roles.md
+    href: /vsts/roles?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
   - name: "How Team Services & TFS differ"
-    href: ../about-vsts-tfs.md
-- name: How-to guides
+    href: /vsts/about-vsts-tfs?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
+- name: How-to
   items:
   - name: Connect to a team project
-    href:  /vsts/connect/connect-team-projects?toc=/vsts/user-guide/toc.json
+    href:  /vsts/connect/connect-team-projects?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+  - name: View permissions
+    href: /vsts/security/view-permissions?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: Go mobile
-    href: /vsts/collaborate/mobile-work?toc=/vsts/user-guide/toc.json
+    href: /vsts/collaborate/mobile-work?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+  - name: Set your preferences
+    href: /vsts/setup-admin/account-preferences?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: Switch project or team focus
-    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/user-guide/toc.json
+    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+  - name: Authenticate with personal access tokens
+    href: /vsts/setup-admin/team-services/use-personal-access-tokens-to-authenticate?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: "Permissions & access"
@@ -66,8 +97,10 @@
     href: /vsts/connect/work-web-portal?toc=/vsts/user-guide/toc.json
 - name: Resources
   items:
-  - name: "Marketplace, billing, & extensions"
-    href: ../marketplace/index.md
+  - name: Account Management (Team Services)
+    href: ../accounts/index.md
+  - name: TFS Server Administration 
+    href: ../tfs-server/index.md
   - name: Migrate from TFS to Team Services Tutorial
     href: https://www.visualstudio.com/articles/migration-overview
   - name: Technical articles

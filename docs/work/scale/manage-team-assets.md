@@ -11,7 +11,9 @@ ms.date: 08/02/2017
 
 # Configure team settings 
 
+<!---
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+-->
 
 <!--- Still needs work, versioning, and other team settings from the admin context, add something about something, team-specific widgets--> 
 

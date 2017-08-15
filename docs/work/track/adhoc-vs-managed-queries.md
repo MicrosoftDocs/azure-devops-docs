@@ -12,7 +12,9 @@ ms.date: 06/02/2017
 
 # Adhoc vs managed work item queries
 
-<b>Team Services </b>  
+<!---
+<b>Team Services | TFS 2017</b> 
+--> 
 
 >[!NOTE]  
 >**Feature availability:**&#160;&#160;The Work item search feature is available from Team Services.     

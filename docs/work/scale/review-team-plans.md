@@ -13,10 +13,23 @@ ms.date: 06/13/2017
 
 # Review team Delivery Plans 
 
+
+<!---
 <b>Team Services | TFS 2017.2</b> 
+--> 
 
 > [!NOTE]  
 > **Feature availability**: [Delivery Plans, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for Team Services and TFS 2017.2 and later versions. All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../quickstart/get-started-stakeholder.md), however, don’t have access to Delivery Plans.)  
+
+In this topic you'll learn:
+
+> [!div class="checklist"]   
+> - How to review a plan with your teams
+> - How to add and edit a plan
+> - How to add field criteria, customize cards, and add markers
+> - How to open a plan from the list of defined plans 
+> - How to work with the interactive elements of plans and change the plan view
+> - What permissions are required to create and view plans  
 
 Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view. 
 

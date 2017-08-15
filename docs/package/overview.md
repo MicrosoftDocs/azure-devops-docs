@@ -12,7 +12,7 @@ ms.date: 08/10/2016
 
 # Package Management in Team Services and TFS
 
-<img alt="Welcome to package management" src="_shared/_img/bo-package-push.svg" height="300px">
+<img alt="Welcome to package management" src="_shared/_img/bo-package-push.png" height="300px">
 
 > [!NOTE]
 > Package Management is an **[extension](http://go.microsoft.com/fwlink/?LinkId=723595)** that makes it easy to discover, install, and publish packages.

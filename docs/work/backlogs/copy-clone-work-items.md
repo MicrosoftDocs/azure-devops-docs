@@ -11,7 +11,9 @@ ms.date: 08/10/2017
 
 # Copy or clone work items  
 
-**Team Services | TFS 2017 | TFS 2015**    
+<!---
+<b>Team Services | TFS 2017 | TFS 2015</b> 
+--> 
 
 There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. In addition, you can choose to change the team project or work item type when copying/cloning a work item. 
 

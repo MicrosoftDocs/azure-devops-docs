@@ -13,7 +13,9 @@ ms.date: 06/02/2017
 # Add tags to work items to categorize and filter lists and boards  
  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+<!---
+<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+--> 
 
 Tagging work items helps you quickly filter the product backlog or a work 
 item query by categories that you define. 

@@ -2,6 +2,8 @@
   href: index.md
 - name: Overview
   items:
+  - name: Support a growing organization
+    href: /vsts/work/scale-teams?toc=/vsts/work/scale/toc.json 
   - name: "About teams & Agile tools"
     href: /vsts/work/about-teams-and-settings?toc=/vsts/work/scale/toc.json 
   - name: Manage teams (To be written)
@@ -16,7 +18,7 @@
   - name: Manage portfolios
     href: portfolio-management.md
   - name: Review team delivery plans
-    href: review-team-plans.md
+    href: /vsts/work/scale/review-team-plans?toc=/vsts/work/scale/toc.json
   - name: Scaled Agile Framework
     href: scaled-agile-framework.md
   - name: Define a work item template 

@@ -7,12 +7,15 @@ ms.prod: vs-devops-alm
 ms.assetid: 92395eeb-6372-49b3-935d-dab5feef1d54
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/18/2017
+ms.date: 08/15/2017
 --- 
 
 # Kanban basics
 
+
+<!---
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+--> 
 
 To maximize a team's ability to consistently deliver high quality software, Kanban emphasize two main practices. The first, visualize the flow of work, requires you to map your team's workflow stages and configure your Kanban board to match. The second, constrain the amount of work in progress, requires you to set work-in-progress (WIP) limits. You're then ready to track progress on your Kanban board and monitor key metrics to reduce lead or cycle time.  
 

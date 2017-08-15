@@ -10,8 +10,10 @@ ms.date: 07/14/2017
 --- 
 
 # Bulk modify work items  
+<!---
+<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+--> 
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**  
 <!--- UPDATES REQUIRED FOR MULTI-VERSION  TAGGING -->  
 
 Use bulk modify when you need to quickly make the same change to a number of work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that will contain the same value. Use [Excel](../office/bulk-add-modify-work-items-excel.md) to update multiple fields with different values. 

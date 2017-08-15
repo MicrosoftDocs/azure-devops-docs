@@ -6,12 +6,14 @@ ms.prod: vs-devops-alm
 ms.assetid: b8fc1618-6501-41dd-86a6-78290bb84dcd  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/04/2016
+ms.date: 08/15/2017
 ---
 
-#Get feedback
+# Get feedback
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**  
+<!---
+<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+--> 
 
 
 >**Feature availability**: For TFS 2015 or earlier versions, you need to belong to the [Advanced access level](../../security/change-access-levels.md) to request feedback. For Team Services or TFS 2015.1 or later versions, you can request feedback with a [Basic license](https://www.visualstudio.com/pricing/visual-studio-online-feature-matrix-vs) or [Basic access level](../../security/change-access-levels.md).  

@@ -14,30 +14,32 @@ ms.date: 08/02/2017
 
 New to Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)? We'll walk you through the basics of the web interface and some common tasks.  
 
+<!---
 ## Overview
 [What is VSTS?](what-is-vsts.md)
 [What is TFS?](what-is-tfs.md)
 [Overview of services](../services.md)
+-->
+
 
 ## 5-Minute Quickstarts
 
-Get oriented to the basics of VSTS and TFS.
+Get started with a free account, share your code using Git, and track your work using a Kanban board.  
 
 ![Learn the UI](_img/placeholder-web-app.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Create a repo](_img/placeholder-git-repo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Create a Kanban](_img/placeholder-kanban.png)   
 
-- [Set up/sign up with Team Services](/vsts/setup-admin/team-services/sign-up-for-visual-studio-team-services?toc=/vsts/user-guide/toc.json)  
-- [Code with Git](../git/gitquickstart.md)
-- [Track work via Kanban](../work/kanban/kanban-quickstart.md)
-- [Stakeholder access](../quickstart/get-started-stakeholder.md)
+- [Set up/sign up with Team Services](/vsts/accounts/team-services/sign-up-for-visual-studio-team-services?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json)  
+- [Code with Git](/vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json)
+- [Track work via Kanban](/vsts/work/kanban/kanban-quickstart?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json)
 
 
-## Tutorials  
 
-- [Set account preferences](/vsts/setup-admin/account-preferences?toc=/vsts/user-guide/toc.json)  
-- [Set favorites](/vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json)   
+## Step-by-Step Tutorials  
+
+- [Set favorites](/vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json) 
 - [Follow work and pull requests](/vsts/collaborate/follow-work-items?toc=/vsts/user-guide/toc.json)  
 - [Enable preview features](/vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json)  
-- [Authenticate with personal access tokens](/vsts/setup-admin/team-services/use-personal-access-tokens-to-authenticate?toc=/vsts/user-guide/toc.json)    
+ 
 
 ## Videos
 

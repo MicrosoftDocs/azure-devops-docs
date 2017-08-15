@@ -10,7 +10,7 @@ ms.date: 06/28/2017
 --- 
 
 
-#Set team defaults  
+# Set team defaults  
 
 [!INCLUDE [temp](../_shared/dev15-version-header.md)]
  

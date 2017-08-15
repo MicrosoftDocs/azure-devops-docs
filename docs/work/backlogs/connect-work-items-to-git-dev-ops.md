@@ -11,7 +11,9 @@ ms.date: 08/11/2017
 
 # Drive Git development from a work item   
 
-**Team Services | TFS 2017**   
+<!---
+<b>Team Services | TFS 2017</b> 
+--> 
 
 >[!NOTE]  
 ><b>Feature availability: </b>The Development section appears in the work item web form for Team Services or TFS 2017 or later versions, configured with the [new work item tracking experience](../process/new-work-item-experience.md). It supports both Git and TFVC version control repositories. Go here to learn how to [add a Git repository for your existing team project](../../setup-admin/create-team-project.md#git-and-tfvs-repos).   

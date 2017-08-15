@@ -1,1 +1,4 @@
-<p><b>Team Services | TFS 2017 </b></p>
+
+<!---
+<b>Team Services | TFS 2017</b> 
+--> 

@@ -7,12 +7,14 @@ ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 06/19/2017
+ms.date: 08/15/2017
 ---
 
 # Manage issues or impediments 
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013** 
+<!---
+<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+--> 
 
 <a name="manage-impediments"></a>
 
