@@ -19,7 +19,7 @@ ms.custom: mvc
 
 # Deploy your ASP.NET Core app to a Windows virtual machine
 
-Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline to automatically deploy your ASP.NET Core apps to a Windows virtual machine (VM) in Azure.
+Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline to automatically deploy your ASP.NET Core web app to a Windows virtual machine (VM) in Azure.
 
 You'll use the VSTS portal to set up CI/CD. Your CI process runs the .NET Core commands to restore packages, build and test the app, and finally publish artifacts. Your CD process automatically picks up these artifacts and deploys them to your environment. Finally, you'll test it all out by pushing a small code change into your team's git repo. Your CI/CD processes will automatically deploy the change.
 
@@ -39,9 +39,7 @@ Running an ASP.NET Core app on Windows requires some dependencies.
 
 On your VM, open an **Administrator: Windows PowerShell** console. Install IIS and the required .NET features:
 
-[//]: # (TODO: try consolidating with this `Install-WindowsFeature Web-Server,Web-Asp-Net45,NET-Framework-Features -IncludeManagementTools`)
-
-```ps
+```PowerShell
 # Install IIS
 Install-WindowsFeature Web-Server,Web-Asp-Net45,NET-Framework-Features
 
@@ -57,6 +55,8 @@ Start-Process $env:temp\DotNetCore.WindowsHosting.exe -ArgumentList '/quiet' -Wa
 net stop was /y
 net start w3svc
 ```
+
+When `net start w3svc` appears, press **Enter** to run it.
 
 [!INCLUDE [temp](_shared/create-deployment-group.md)]
 
@@ -98,7 +98,7 @@ Continuous Integration (CI) is the process of automating the build and testing o
 
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
-1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog, click **Queue**.
+1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
 
 1. A new build is started. You will see a link to the new build on the top of the page. Click the link to watch the new build as it happens. Wait for the build to complete and succeed before proceeding to the next section.
 
@@ -138,7 +138,7 @@ Continuous deployment (CD) is a lean practice that your team can use to keep pro
 
  ![Screenshot showing IIS website deployment template](_img/aspnet-core-to-windows-vm/select-iis-website-deployment-release-template.png)
 
-1. Click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*.
+1. Click the **Tasks** tab, and then click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*.
 
  ![iis deployment group in release definition](_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
 
@@ -154,7 +154,7 @@ Continuous deployment (CD) is a lean practice that your team can use to keep pro
 
  ![new release created message](_shared/_img/new-release-created-message.png)
 
-1. Select the **Logs** tab to watch the live logs from the deployment as it happens. Wait for the release to be deployed to the Azure web app.
+1. Click the **Logs** tab to watch the live logs from the deployment as it happens. Wait for the release to be deployed to the Azure web app.
 
 1. Once deployment has completed, open your web browser and test your web app: `http://<publicIpAddress>`
 
