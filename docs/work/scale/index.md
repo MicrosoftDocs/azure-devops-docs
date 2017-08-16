@@ -12,8 +12,6 @@ ms.date: 08/03/2017
 
 # Scale & Configure Teams 
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
-
 The #1 way you scale your team project is by adding teams.   
 
 

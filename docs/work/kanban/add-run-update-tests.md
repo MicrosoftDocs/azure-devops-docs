@@ -26,7 +26,7 @@ In this topic, you'll learn:
 > * How to expand or collapse inline tests   
 > * How to reorder or reparent inline tests  
 
-![Kanban board with several inline tests defined](_img/i-test-board-intro.png)
+<img src="_img/i-test-board-intro.png" alt="Web portal, Kanban board with several inline tests defined" style="border: 1px solid #CCCCCC;" /> 
 
 Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
  
@@ -34,24 +34,23 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 1. To start adding tests, open the menu for the work item.  
 
-  ![Open the context menu of a backlog item to add inline test case](_img/i-test-add-test.png)  
+	<img src="_img/i-test-add-test.png" alt="Open the context menu of a backlog item to add inline test case" style="border: 1px solid #CCCCCC;" /> 
 
   Adding inline tests is the same as adding test cases to a test suite. A default test plan and test suite are automatically created under which the manual test cases are grouped.  
 
   For example, a test suite is created for each user story, and all inline tests are added to that suite. Below, user story 152 is highlighted which has three manual tests defined with IDs of 153, 155, and 161.  
 
-  ![Inline test cases get added to test suites and test plans](_img/i-test-plan-suite.png)  
+	<img src="_img/i-test-plan-suite.png" alt="Inline test cases get added to test suites and test plans" style="border: 1px solid #CCCCCC;" /> 
 
   To learn more about test plans and test suites, see [Plan your tests](../../manual-test/getting-started/create-a-test-plan.md).  
 
 2. If you have a number of tests to add, simply keep typing each title and click Enter. 
 
-  ![Work item with several test cases added](_img/i-test-story-with-3-inline-tests.png)  
+	<img src="_img/i-test-story-with-3-inline-tests.png" alt="Work item with several test cases added" style="border: 1px solid #CCCCCC;" />   
 
+	To add details to the test case, open it. You can click the title, double-click the inline item, or open the context menu and choose Open. 
 
-To add details to the test case, open it. You can click the title, double-click the inline item, or open the context menu and choose Open. 
-
-![Open test case form from Kanban board](_img/i-test-case-form.png)
+	<img src="_img/i-test-case-form.png" alt="Open test case form from Kanban board" style="border: 1px solid #CCCCCC;" /> 
 
 See [Create manual tests](../../manual-test/getting-started/create-test-cases.md) to learn more about defining tests. 
 
@@ -61,7 +60,7 @@ Prior to running the test, you must add details.
 
 Run the test by selecting ![Run icon](../_img/icons/run_query.png) Run test from the ![Actions icon](../_img/icons/actions-icon.png) actions menu for the inline test.  
 
-![Run a test](_img/i-test-run-test.png)  
+<img src="_img/i-test-run-test.png" alt="Run a test" style="border: 1px solid #CCCCCC;" />  
 
 Microsoft Test Runner starts in a new browser instance. For details on running a test, see [Run manual tests](../../manual-test/getting-started/run-manual-tests.md).
 
@@ -70,7 +69,7 @@ Microsoft Test Runner starts in a new browser instance. For details on running a
 
 You can update the status of the test from the ![Actions icon](../_img/icons/actions-icon.png) actions menu . 
 
-![Check tasks that are complete](_img/i-test-update-status.png)
+<img src="_img/i-test-update-status.png" alt="Check tasks that are complete" style="border: 1px solid #CCCCCC;" /> 
  
 Updating the status of tests enable you to [track test results](../../manual-test/getting-started/track-test-status.md).  
 
@@ -88,7 +87,6 @@ Simply click the inline test summary to expand a collapsed set of tests. Click t
 
 ## Copy or reparent a test 
 
-
 To reparent a test, drag and drop the test onto a different user story.    
 
 ![Drag tests to reassign them to a different user story ](_img/i-test-drag-reparent.png)  
@@ -98,8 +96,8 @@ This action automatically changes the linked relationship of the test to point t
 To create a copy of a test to add to a different user story, select the test, press the CTRL key and then drag and drop the test onto the card of the user story.  
 
 
-
 ## Related notes
+
 Use inline tests for lightweight traceability and to manage manual tests for user stories or other backlog items that they support. To learn more about test case management, see [Create manual tests](../../manual-test/getting-started/create-test-cases.md).  
 
 If you find that you don't use this feature, you can disable it from the [common configurations dialog](../customize/customize-cards.md#annotations). 
@@ -119,12 +117,9 @@ Test integration with the Kanban board makes it easy for teams to get started wi
 ### Customize the Kanban board 
 To customize or change the layout of the board, see one of these topics. 
 
-* [Add columns](add-columns.md)  
-* [WIP limits](wip-limits.md)  
+* [Add columns](add-columns.md)   
 * [Add swimlanes, expedite work](expedite-work.md)   
-* [Split columns](split-columns.md)   
-* [Customize cards](../customize/customize-cards.md)  
-* [Definition of Done](definition-of-done.md)  
+* [Customize cards](../customize/customize-cards.md)   
 * [Add tags to categorize and filter lists](../track/add-tags-to-work-items.md)  
 
 ### REST API resources

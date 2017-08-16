@@ -12,8 +12,6 @@ ms.date: 07/26/2017
 
 # Queries
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
-
 With queries you can ...  
 
 <!---

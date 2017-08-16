@@ -12,8 +12,6 @@ ms.date: 08/03/2017
 
 # VSTS & PowerBI 
 
-**Team Services**
-
 >[!NOTE]  
 > **Feature availability:**  VSTS PowerBI requires access to the Analytics Service. The Analytics Service is in preview and only available to select customers of Team Services at this time. If you're a Team Services customer and are interested in working with the preview version of the Analytics service, contact the [Analytics service team](mailto:vsts-analytics-supp@microsoft.com).  
 

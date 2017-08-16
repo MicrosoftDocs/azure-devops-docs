@@ -48,7 +48,7 @@ If you have a number of items to add, simply keep typing your task titles and cl
 
 If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md)
 
-For additional guidance on working with checklist on a Kanban board, see [Add task checklists](add-task-checklists.md). You can perform the same operations for the features and epics Kanban boards as you do with the Kanban board for the product backlog. This includes:    
+For additional guidance on working with a checklist on a Kanban board, see [Add task checklists](add-task-checklists.md). You can perform the same operations for the features and epics Kanban boards as you do with the Kanban board for the product backlog. This includes:    
 
 - Mark an item as done  
 - Reorder and reparent work items  
@@ -57,10 +57,7 @@ For additional guidance on working with checklist on a Kanban board, see [Add ta
 To customize the columns, swimlanes, or cards for each Kanban board, make sure you first select the board and then click the gear icon to open the Settings dialog. See these topics for details: 
 
 * [Add columns](add-columns.md)  
-* [WIP limits](wip-limits.md)  
 * [Add swimlanes, expedite work](expedite-work.md)   
-* [Split columns](split-columns.md)   
-* [Definition of Done](definition-of-done.md)  
 * [Customize cards](../customize/customize-cards.md)  
 
 

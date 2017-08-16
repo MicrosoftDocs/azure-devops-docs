@@ -11,9 +11,6 @@ ms.date: 08/03/2017
 ---
 
 # Notifications  
-
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
-
  
 <!---
 ## Overview

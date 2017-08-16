@@ -31,6 +31,8 @@
     href: agile-culture.md
   - name: Practices that scale
     href: practices-that-scale.md
+  - name: team administrator Permissions
+    href: team-administrator-permissions.md	
 - name: How-to Guides
   items:
   - name: Set team defaults

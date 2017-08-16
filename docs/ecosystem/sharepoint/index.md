@@ -11,37 +11,19 @@ ms.date: 08/02/2017
 ---
 
 # SharePoint Integration  
-
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
-
-With SharePoint ...  
-
-## Overview  
-- About Sharepoint integration 
+  
 
 
 ## 5-minute Quickstarts  
-
-TBD
+- [Share information using the SharePoint portal](../../report/sharepoint-dashboards/share-information-using-the-project-portal.md)
 
 
 ## Step-by-Step Tutorials
 
-TBD
+- [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)    
+- [Manage documents and document libraries](../../report/sharepoint-dashboards/manage-documents-and-document-libraries.md)  
+- [Configure or redirect process guidance](../../report/sharepoint-dashboards/configure-or-redirect-process-guidance.md)
 
 
-
-## Concepts 
-
-TBD 
-
-
-
-## How-to guides  
-TBD
- 
-  
-## Resources 
-TBD
 
    

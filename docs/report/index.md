@@ -12,8 +12,6 @@ ms.date: 06/22/2017
 
 # Dashboards 
 
-[!INCLUDE [temp](_shared/vsts-tfs-header-17-15.md)]
-
 <!---
 ## Overview  
 [Charts, dashboards, and widgets](overview.md)

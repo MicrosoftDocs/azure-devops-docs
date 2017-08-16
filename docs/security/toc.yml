@@ -8,15 +8,14 @@
     href: /vsts/security/permissions-access?toc=/vsts/security/toc.json
 - name: Quickstart
   items:
-    - name: Invite new users (new topic)
-    - name: View permissions (InProgress)
-      href: view-permissions.md
-    - name: Add a user to a team project  
-      href: /vsts/accounts/add-users?toc=/vsts/security/toc.json
-
+  - name: Invite new users (new topic)
+  - name: View permissions (InProgress)
+    href: view-permissions.md
 - name: Tutorials
   items:
   - name: Manage users (New Topic)
+  - name: Add a user to a team project  
+    href: /vsts/accounts/add-users?toc=/vsts/security/toc.json
   - name: Authenticate access with personal access tokens
     href: /vsts/setup-admin/team-services/use-personal-access-tokens-to-authenticate?toc=/vsts/security/toc.json
 - name: Concepts
@@ -26,7 +25,7 @@
   - name: About access levels 
     href: /vsts/security/access-levels?toc=/vsts/security/toc.json
   - name: Use AD or AAD groups for automated user provisioning (New Topic)
-    href: /vsts/security/use-ad-aad-groups-provisioning?toc=/vsts/security/toc.json
+    href: /vsts/security/use-ad-or-aad-groups-provisioning?toc=/vsts/security/toc.json
   - name: Azure Active Directory groups (Team Services) 
     href: /vsts/accounts/team-services/access-with-azure-ad?toc=/vsts/security/toc.json
   - name: Active Directory groups (TFS) 
@@ -39,14 +38,14 @@
   items:
   - name: Set Git branch permissions
     href: /vsts/git/branch-permissions?toc=/vsts/security/toc.json 
+  - name: Set Git or TFVC repository permissions
+    href: /vsts/security/set-git-tfvc-repository-permissions?toc=/vsts/security/toc.json 
   - name: Set build and release permissions 
     href: /vsts/security/set-build-release-permissions?toc=/vsts/security/toc.json 
   - name: Set permissions and access for work tracking
-    href: /vsts/work/how-to-set-permissions-access-work-tracking?toc=/vsts/security/toc.json 
-  - name: Set project-level permissions
-    href: set-project-level-permissions.md
-  - name: Set collection-level permissions 
-    href: set-collection-level-permissions.md 
+    href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/security/toc.json 
+  - name: Set project or collection-level permissions
+    href: set-project-collection-level-permissions.md
   - name: "Change access levels (TFS)" 
     href: /vsts/security/change-access-levels?toc=/vsts/security/toc.json 
   - name: Add administrators to a team project  
@@ -54,7 +53,7 @@
   - name: Add administrators to a project collection
     href: /vsts/accounts/add-administrator-project-collection?toc=/vsts/security/toc.json
   - name: Restrict access to resources
-    href: /vsts/accounts/restrict-access-tfs?toc=/vsts/security/toc.json- 
+    href: /vsts/accounts/restrict-access-tfs?toc=/vsts/security/toc.json 
 - name: Reference
   items:
   - name: Permission lookup guide 
@@ -66,10 +65,9 @@
   - name: Authenticate with personal access tokens
     href: /vsts/integrate/get-started/authentication/pats?toc=/vsts/security/toc.json
   - name: Git permissions prior to TFS 2017 Update 1
-    href: /vsts/setup-admin/git-permissions-before-2017?toc=/vsts/security/toc.json
+    href: /vsts/accounts/git-permissions-before-2017?toc=/vsts/security/toc.json
   - name: TFSSecurity
-    href: /vsts/setup-admin/tfs/command-line/tfssecurity-cmd?toc=/vsts/security/toc.json
-- name: Troubleshooting
+    href: /vsts/tfs-server/command-line/tfssecurity-cmd?toc=/vsts/security/toc.json
 - name: Resources
   items:
   - name: Account management (VSTS)

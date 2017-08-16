@@ -48,7 +48,7 @@ To go directly to the [project vision and status page](/team-services/collaborat
 <img src="../../_shared/_img/work-web-portal-ts-switch-team-focus.png" alt="Choose another team from the team project menu" style="border: 1px solid #CCCCCC;" /> 
 
 ### TFS 2017.1 
-<a id="switch-context-tfs-2017-1" /"> 
+<a id="switch-context-tfs-2017-1" /> 
 
 To switch your team focus to a team project or team you've recently viewed, hover over the ![Team Services icon](/team-services/_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon and choose from the drop-down menu of options. If you don't see the team or team project you want, choose **Browse&hellip;** to [browse all team projects and teams](/team-services/connect/account-home-pages). Your selection will open the [project vision and status page](/team-services/collaborate/project-vision-status) for the team project.
 

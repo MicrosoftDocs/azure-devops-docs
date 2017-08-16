@@ -12,8 +12,6 @@ ms.date: 08/03/2017
 
 # READMEs & Wikis 
 
-<b>Team Services | TFS 2017 | TFS 2015</b> 
-
 Repository README files and team project Wikis are great ways to share information with your team and stakeholders. 
 
 <!--- There isn't really any how-to guidance about creating or working with README file, what we have is conceptual --> 

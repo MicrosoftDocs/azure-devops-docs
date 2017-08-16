@@ -12,9 +12,7 @@ ms.date: 05/16/2017
 
 # Kanban best practices
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
-
-Having worked through the four [Kanban basics](../kanban/kanban-basics.md) steps, you're well on your way to implementing most of Kanban's six core practices.
+Having worked through the four configuration steps provided in [Kanban basics](../kanban/kanban-basics.md), you're well on your way to implementing most of Kanban's six core practices.
 
 1. **Visualize your workflow**. Teams track their work using a Kanban board that maps to how they work. Teams discuss how to best focus their resources to deliver the most important work.
 2. **Limit work in progress**. Teams set and adhere to WIP limits they set for each stage of work. They use WIP limits to maintain focus on completing what they started and to identify bottlenecks occurring in their processes.
@@ -26,7 +24,8 @@ Having worked through the four [Kanban basics](../kanban/kanban-basics.md) steps
 Over time, Kanban can provide your team insight as to how well their current processes work end-to-end and how to improve them. Incremental adoption of Kanban practices tends to yield greater success and builds on the sixth practice, to evolve experimentally. These practices arose from principles of Lean Manufacturing and Systems Thinking.
 
 
-## Kanban industry resources
+## Additional resources
+- [Agile Culture](https://www.visualstudio.com/learn/agile-culture/)
 - [What is Kanban?](http://kanbanblog.com/explained/) 
 - [Kanban: Successful Evolutionary Change for Your Technology Business by David J. Anderson](http://www.amazon.com/Kanban-Successful-Evolutionary-Technology-Business/dp/0984521402/)
 - [Agile Project Management with Kanban by Eric Brechner](http://www.amazon.com/Project-Management-Kanban-Developer-Practices/dp/0735698953/)

@@ -30,14 +30,6 @@ ms.date: 08/15/2017
 
 !!! WORK IN PROGRESS !!! 
 
- > [!NOTE] 
- > Permissions are different than access levels.
- > Access levels control what features are visible to users in the web portal,
- > and are dependent on user licenses; permissions control a user's ability to use features across TFS.
- > If you're just trying to give someone access to a team room or to Agile portfolio management
- > and test case management features,
- > you'll want to [change access levels](../work/connect/change-access-levels.md), not permissions.
-
 To access the resources you manage in Team Services or TFS&mdash;like your code, builds, and work&mdash;you need to have permissions to those specific resources.
 Permissions may apply to an entire TFS instance, to a collection in that instance, to a team project, or to specific objects in a team project&mdash;builds, areas, iterations, work item queries, tagging, tfvc, git, lab and release management.
 
@@ -46,6 +38,17 @@ Each functional area uses groups to simplify management across the deployment. Y
 
 <a id="grant-permissions"  >  </a>  
 ## Permissions versus access levels  
+
+
+
+ > [!NOTE] 
+ > Permissions are different than access levels.
+ > Access levels control what features are visible to users in the web portal,
+ > and are dependent on user licenses; permissions control a user's ability to use features across TFS.
+ > If you're just trying to give someone access to a team room or to Agile portfolio management
+ > and test case management features,
+ > you'll want to [change access levels](../work/connect/change-access-levels.md), not permissions.
+
 
 Setting the access level for  users or groups doesn't provide them access to a team project or the web portal. Only users or groups added to a team or TFS group can connect to a team project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the team project](../setup-admin/add-users.md) or as a [team member](../work/scale/multiple-teams.md#add-team-members).
 
@@ -80,22 +83,9 @@ Two useful tips for understanding the effects of change: The **Member of** tab s
 <img src="../work/connect/_img/control-panel-contributors-group-permissions.png" alt="Control panel, team project, Security tab, Contributors group, permissions" style="border: 1px solid #CCCCCC;" />  
 
 
-
-## Manage large numbers of users using Active Directory, Azure Active Directory, or Windows groups
-
-If you need to set permissions for large numbers of users,
-create a group in Windows, Active Directory, or Azure Active Directory,
-add these groups to TFS groups or Team Services groups,
-and add the same groups to grant access to additional resources.
-
-<img src="../setup-admin/_img/permissions/grant-permissions.png" style="border: 1px solid #CCCCCC" />
-
-Of course, you don't need to grant permissions for reports or the project portal
-if your team project doesn't use SQL Server Reporting Services or a SharePoint site.
-
 ## Tools used to set permissions
 
-You can use the tools listed in the following table to set permissions.
+You set most permissions through the web portal. You can use the tools listed in the following table to set permissions.
 Different tools are used depending on whether you are setting permissions at a server, collection, or team project level.
 You use the [TFS web portal administration context](../setup-admin/add-users.md) to set most permissions.  
 

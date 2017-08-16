@@ -12,14 +12,12 @@ ms.date: 08/03/2017
 
 # Data Warehouse and SQL Server Reports    
 
-**TFS 2017 | TFS 2015 | TFS 2013**
-
-
 
 ## Overview  
 
-- [Reporting Services Reports](reporting-services-reports.md)
-
+<!---
+[Reporting Services Reports](reporting-services-reports.md)
+-->
 
 ## 5-minute Quickstarts  
 - [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md)  
@@ -27,8 +25,8 @@ ms.date: 08/03/2017
 
 ## Step-by-Step Tutorials
 
-TBD
- 
+- [Add reports to a team project](../admin/add-reports-to-a-team-project.md)
+- [Manually process the data warehouse and cube](../admin/manually-process-data-warehouse-and-cube.md)
 
 ## Concepts 
 

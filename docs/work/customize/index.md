@@ -11,8 +11,6 @@ ms.date: 07/26/2017
 
 # Work Item Customization  
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**
-
 With work item customization, you can add a custom field or work item type (WIT), or modify existing WITs. The method you use depends on whether you work in Team Services, which uses the Inheritance and Hosted XML process models, or an on-premises TFS, which uses the On-premises XML process model.  
 
 ## 5-minute Quickstarts  

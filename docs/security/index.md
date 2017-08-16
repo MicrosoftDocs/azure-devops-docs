@@ -34,15 +34,14 @@ ms.date: 08/04/2017
 ## Concepts 
 - [About permissions and groups](about-permissions.md)  
 - [About access levels](access-levels.md)  
-- [Use AD or AAD groups for automated user provisioning](use-ad-or-add-groups-provisioning.md)  
+- [Use AD or AAD groups for automated user provisioning](use-ad-or-aad-groups-provisioning.md)  
 
 ## How-to Guides 
 
 - [Set Git branch permissions](/vsts/git/branch-permissions?toc=/vsts/security/toc.json) 
 - [Set build and release permissions](/vsts/security/set-build-release-permissions?toc=/vsts/security/toc.json) 
 - [Set permissions and access for work tracking](/vsts/work/how-to-set-permissions-access-work-tracking?toc=/vsts/security/toc.json) 
-- [Set project-level permissions](set-project-level-permissions.md) 
-- [Set collection-level permissions](set-collection-level-permissions.md) 
+- [Set project or collection-level permissions](set-project-collection-level-permissions.md)  
 - [Add administrators to a team project](/vsts/setup-admin/add-administrator-team-project?toc=/vsts/security/toc.json)  
 - [Add administrators to project collection](/vsts/setup-admin/add-administrator-project-collection?toc=/vsts/security/toc.json)  
 - [Change access levels (TFS)](/vsts/security/change-access-levels?toc=/vsts/security/toc.json)

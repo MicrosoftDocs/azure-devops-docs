@@ -12,8 +12,6 @@
     href: create-your-backlog.md
   - name: Drive Git development
     href: connect-work-items-to-git-dev-ops.md
-  - name: Storyboard your ideas
-    href: ../office/storyboard-your-ideas-using-powerpoint.md
 - name: Tutorials
   items:
   - name: "Define features & epics"
@@ -50,6 +48,8 @@
     href: /vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/backlogs/toc.json
   - name: Copy as HTML 
     href: /vsts/work/backlogs/copy-clone-work-items#html?toc=/vsts/work/backlogs/toc.json
+  - name: Storyboard your ideas
+    href: ../office/storyboard-your-ideas-using-powerpoint.md
 - name: Troubleshooting
   items:
   - name: Fix "Ordering backlog items is disabled"

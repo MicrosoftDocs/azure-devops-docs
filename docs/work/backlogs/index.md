@@ -12,8 +12,6 @@ ms.date: 08/03/2017
 
 # Backlogs
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
-
 With Agile tools, project managers and teams can quickly plan and track the work required to bring applications from idea to completion. Agile tools provide you with the power, flexibility, and responsiveness you need to stay on top of changing priorities, deadlines, and requirements. 
 
 <!---
@@ -30,7 +28,6 @@ Build your backlog, drive your code development efforts from your work items, an
 
 - [Create your backlog](create-your-backlog.md)  
 - [Drive Git development](connect-work-items-to-git-dev-ops.md)   
-- [Storyboard your ideas](../office/storyboard-your-ideas-using-powerpoint.md)   
 
 ## Step-by-Step Tutorials
 

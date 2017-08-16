@@ -11,8 +11,6 @@ ms.date: 08/07/2017
 ---
 
 # Feedback 
-
-<b>Team Services | TFS 2017 | TFS 2015</b> 
  
 You can request feedback using one of two tools, through the Test & Feedback extension or through the Request feedback link you access from a dashboard. 
 
