@@ -1039,7 +1039,7 @@ ms.date: 07/26/2017
                 <ul id="ecosystem">
                     <li>
                         <a href="#ecosystem-all"></a>
-                        <ul id="ecosystem-all" class="cardsL">
+                        <ul id="ecosystem-all" class="cardsL cols cols4">
                             <li>
                                 <div class="container intro">
                                     <h1>Get Extensions</h1>
@@ -1051,7 +1051,7 @@ ms.date: 07/26/2017
                                     <h2>Popular Extensions</h2>
                                 </div>
                             </li>
-                            <li style="flex: 0 1 25%">
+                            <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -1072,7 +1072,7 @@ ms.date: 07/26/2017
                                     </div>
                                 </div>
                             </li>
-                            <li style="flex: 0 1 25%">
+                            <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -1093,7 +1093,7 @@ ms.date: 07/26/2017
                                     </div>
                                 </div>
                             </li>
-                            <li style="flex: 0 1 25%">
+                            <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -1114,7 +1114,7 @@ ms.date: 07/26/2017
                                     </div>
                                 </div>
                             </li>
-                            <li style="flex: 0 1 25%">
+                            <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -1142,7 +1142,7 @@ ms.date: 07/26/2017
                                     <p>Create custom extensions to transform your Visual Studio Team Services look and experience</p>
                                 </div>
                             </li>
-                            <li style="flex: 0 1 25%">
+                            <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -1161,7 +1161,7 @@ ms.date: 07/26/2017
                                     </div>
                                 </div>
                             </li>
-                            <li style="flex: 0 1 25%">
+                            <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -1180,7 +1180,7 @@ ms.date: 07/26/2017
                                     </div>
                                 </div>
                             </li>
-                            <li style="flex: 0 1 25%">
+                            <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -1196,7 +1196,7 @@ ms.date: 07/26/2017
                                     </div>
                                 </div>
                             </li>
-                            <li style="flex: 0 1 25%">
+                            <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
