@@ -310,18 +310,18 @@ for the Azure subscription that's linked to your Team Services account.
 <li>Go to **Browse** > **Team Services accounts**. 
 Select your Team Services account.
 <p>
-<p>![Browse, Team Services accounts, select your Team Services account](_img/_shared/AP_VSO_SelectLinkedAccount.png)
+<p>![Browse, Team Services accounts, select your Team Services account](_img/_shared/ap_vso_selectlinkedaccount.png)
 <p>
 <p>[Why don't I see my Team Services account?](#WhyNoVSOAccount)
 <p>
 <li>Go to **Settings** > **Users**.
 <p>
-<p>![View users](_img/_shared/AP_VSO_ManageLicenses.png)
+<p>![View users](_img/_shared/ap_vso_managelicenses.png)
 <p>
 <li>Select the number of users with Basic access that you want to pay for. 
 To cancel all paid users, reduce this number to zero (0). Save your changes.
 <p>
-<p>![Update paid users. Save changes](_img/buy-more-basic-access/AP_VSO_SelectTotalUsers.png)
+<p>![Update paid users. Save changes](_img/buy-more-basic-access/ap_vso_selecttotalusers.png)
 <p>If you add users, you're not charged until you save your changes. 
 </ol>
 </div>
@@ -337,19 +337,19 @@ for the Azure subscription that's linked to your Team Services account.
 <li>Go to **Visual Studio Team Services**. 
 Select your Team Services account.
 <p>
-<p>![Visual Studio Team Services, select your Team Services account](_img/_shared/AzureChooseLinkedAccount.png)
+<p>![Visual Studio Team Services, select your Team Services account](_img/_shared/azurechooselinkedaccount.png)
 <p>
 <p>[Why don't I see my Team Services account?](#WhyNoVSOAccount)
 <p>
 <li>Go to **Scale**.
 <p>
-<p>![Go to the Scale page](_img/_shared/AzureScaleLicensesResources.png)
+<p>![Go to the Scale page](_img/_shared/azurescalelicensesresources.png)
 <p>
 <li>Drag the slider to select the total number of users with Basic access 
 that you want in your Team Services account. To cancel all paid users, 
 drag the slider until only 5 users appear. Save your changes. 
 <p>
-<p>![Update paid users](_img/buy-more-basic-access/AP_VSO_SelectTotalUsers.png)
+<p>![Update paid users](_img/buy-more-basic-access/ap_vso_selecttotalusers.png)
 <p>
 <p>**Note** Your account includes 5 free users who get Basic access. 
 So you'll only pay for users beyond that quantity. You're not charged until you save your changes. 

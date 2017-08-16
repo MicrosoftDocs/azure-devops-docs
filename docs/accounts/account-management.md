@@ -257,8 +257,8 @@ The method used to customize a team project depends on the process model you use
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Reports, documents, and dashboards (TFS) </p>
 <ul style="padding-left:20px">
- <li style="margin-bottom:2px">[Add reports to a team project](../report//admin/add-reports-to-a-team-project.md)</li>
- <li style="margin-bottom:2px">[Manage the data warehouse and analysis services cube](../report//admin/manage-reports-data-warehouse-cube.md)</li>
+ <li style="margin-bottom:2px">[Add reports to a team project](../report/admin/add-reports-to-a-team-project.md)</li>
+ <li style="margin-bottom:2px">[Manage the data warehouse and analysis services cube](../report/admin/manage-reports-data-warehouse-cube.md)</li>
  <li style="margin-bottom:2px">[Change the service account or password for SQL Server Reporting Services](../setup-admin/tfs/admin/change-service-account-or-password-sql-reporting.md)</li> 
  <li style="margin-bottom:2px">[Add SharePoint products to your deployment](../setup-admin/tfs/admin/add-sharepoint-to-tfs.md)</li>
  <li style="margin-bottom:2px">[Configure or add a project portal](https://msdn.microsoft.com/library/ms242865.aspx)</li>
@@ -313,12 +313,12 @@ The method used to customize a team project depends on the process model you use
 
 #### Create your account
 To get started in the cloud, 
-[create your Team Services account](./team-services/sign-up-for-visual-studio-team-services.md). 
+[create your Team Services account](team-services/sign-up-for-visual-studio-team-services.md). 
 You'll choose Git or Team Foundation as your version control, 
 so that Team Services can create your team project for code and other assets, 
 like builds, tests, and work items. If you're starting with Visual Studio 
 as your development environment, you can create your Team Services account when you 
-[set up Visual Studio](./team-services/set-up-vs.md).
+[set up Visual Studio](team-services/set-up-vs.md).
 
 Your Team Services account includes 5 free users 
 with Basic access plus unlimited Visual Studio 
@@ -329,7 +329,7 @@ and cloud-based load testing.
 
 #### Connect to your account
 After Team Services creates your account, 
-[connect to your account](./team-services/connect-to-visual-studio-team-services.md) 
+[connect to your account](team-services/connect-to-visual-studio-team-services.md) 
 with tools like Xcode, Eclipse, or Visual Studio, 
 and add code to your team project.
 
@@ -340,13 +340,13 @@ create personal access tokens to authenticate your identity.
 Use a credential manager to create, store, and secure your tokens, 
 so you don't have to reenter them every time you push. 
 Or if you don't want to use a credential manager, you can 
-[create personal access tokens manually](./team-services/use-personal-access-tokens-to-authenticate.md).
+[create personal access tokens manually](team-services/use-personal-access-tokens-to-authenticate.md).
 
 #### Add users and assign access
 To share work with others, 
-[add users and assign access](./team-services/add-account-users-assign-access-levels-team-services.md). 
+[add users and assign access](team-services/add-account-users-assign-access-levels-team-services.md). 
 That way, you control the access that each user gets. 
-Or [add users to your team project](./team-services/add-team-members-vs.md), 
+Or [add users to your team project](team-services/add-team-members-vs.md), 
 and let Team Services assign the next available access to them.
 
 #### Try extensions for free
@@ -354,12 +354,12 @@ Help your team do more with Team Services extensions.
 For example, Team Services account owners can 
 try the Test Manager extension free for 90 days. 
 During the trial, all users with Basic access can 
-[try Test Manager for free](./team-services/try-additional-features-vs.md).
+[try Test Manager for free](team-services/try-additional-features-vs.md).
 
 #### Set up billing
 If you need more than free users and amounts 
 of services included with your account, 
-[set up billing for your account](./team-services/set-up-billing-for-your-account-vs.md).
+[set up billing for your account](team-services/set-up-billing-for-your-account-vs.md).
 You can then pay for more users with Basic access, 
 pay for more services, and purchase extensions for your account.
 
@@ -369,14 +369,14 @@ so that you can control access the same way that you do
 with Microsoft services like Office 365 and Microsoft Azure. 
 If your organization uses a directory (tenant) managed by Azure AD, 
 your Team Services account can also 
-[use your directory to authenticate access](./team-services/manage-organization-access-for-your-account-vs.md). 
-Or [change your Azure AD](./team-services/change-azure-active-directory-team-services-account.md), 
+[use your directory to authenticate access](team-services/manage-organization-access-for-your-account-vs.md). 
+Or [change your Azure AD](team-services/change-azure-active-directory-team-services-account.md), 
 if you're already connected to an existing directory.
 
 ### Install TFS
 
 To install the best configuration for your team, 
-[check the requirements](./requirements.md) and 
+[check the requirements](requirements.md) and 
 [overview](../setup-admin/tfs/install/get-started.md). 
 Or choose based on your team size: 
 
@@ -390,7 +390,7 @@ Or choose based on your team size:
 ### Upgrade TFS
 
 To understand factors that affect your upgrade's compexity, 
-[check the requirements](./requirements.md) and 
+[check the requirements](requirements.md) and 
 [review the upgrade process](../setup-admin/tfs/upgrade/get-started.md), 
 which supports upgrades from 2005 to the latest version. 
 

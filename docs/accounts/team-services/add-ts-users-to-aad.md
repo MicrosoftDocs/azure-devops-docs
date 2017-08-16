@@ -47,7 +47,7 @@ including yourself as the Team Services account owner, if not in the directory a
   Here's what the Fabrikam directory might look like in the Azure classic portal after Jamal adds users from his 
   Team Services account.
     
-  ![Directory after adding users](./_img/manage-work-access/AzureAddMembers3.png)
+  ![Directory after adding users](_img/manage-work-access/azureaddmembers3.png)
 
   [More questions about setting up users?](#faq-users)
 
@@ -136,7 +136,7 @@ To learn more, contact your Azure AD administrator. The setting below doesn't af
 
 0.	Go to your Team Services account's control panel.
 
-	![Go to account control panel](./_img/_shared/AccountSettings.png)
+	![Go to account control panel](_img/_shared/accountsettings.png)
 
 0.	Go to your account settings. 
 Allow or deny account access for external users added as guests. 

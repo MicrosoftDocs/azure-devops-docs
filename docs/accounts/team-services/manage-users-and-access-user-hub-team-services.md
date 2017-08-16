@@ -333,7 +333,7 @@ service from a build definition or pushing code to Team Services from a git comm
 
 <a name="paid-basic-access-join-other-accounts"></a>
 
-[!INCLUDE [can-paid-Basic-users-join-other-accounts](../../_shared/qa-can-paid-Basic-users-join-other-accounts.md)]
+[!INCLUDE [can-paid-Basic-users-join-other-accounts](../../_shared/qa-can-paid-basic-users-join-other-accounts.md)]
 
 <a name="feature-access"></a>
 

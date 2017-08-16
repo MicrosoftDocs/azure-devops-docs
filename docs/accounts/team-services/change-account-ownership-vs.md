@@ -54,17 +54,17 @@ go to your Team Services account settings
 
 0.	Change the account owner.
 
-	![Change current owner](_img/change-account-ownership/VSOControlPanelChangeOwner.png)
+	![Change current owner](_img/change-account-ownership/vsocontrolpanelchangeowner.png)
 
 0.	Find and select the new owner.
 
-	![Find and select owner](_img/change-account-ownership/VSOFindNewAccountOwner.png)
+	![Find and select owner](_img/change-account-ownership/vsofindnewaccountowner.png)
 
 	[Can't find the person you want?](#NoNewOwner) 
 
 0.	Save your changes.
 
-	![Select new owner, save changes](_img/change-account-ownership/VSOSaveNewAccountOwner.png)
+	![Select new owner, save changes](_img/change-account-ownership/vsosavenewaccountowner.png)
 
 	Your Team Services account has a new owner! 
 

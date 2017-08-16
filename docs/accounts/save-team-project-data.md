@@ -30,7 +30,7 @@ You can use the following procedures to save data that users most care about, su
 
 -   **Source code and custom build templates:** You can download your files as a zip file.
 
-    ![context menu with download as zip menu item](_img/delete-team-project/IC760345.png)
+    ![context menu with download as zip menu item](_img/delete-team-project/ic760345.png)
 
     This process doesn’t save any change history or links to other artifacts.
 
@@ -52,7 +52,7 @@ You can easily save data stored for a team project collection by [making a backu
 
 **A:** If your on-premises team project used reporting, and you didn’t choose to delete external artifacts, you can delete the reports using SQL Server Report Manager. From the team project collection page, delete the folder that corresponds to the deleted team project.
 
-![context menu with delete command](_img/delete-team-project/IC686857.png)
+![context menu with delete command](_img/delete-team-project/ic686857.png)
 
 ### Q: How do I remove the team project portal?
 

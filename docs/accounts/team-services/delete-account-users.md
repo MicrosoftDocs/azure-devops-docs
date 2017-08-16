@@ -38,7 +38,7 @@ then choose **Delete**.
 
     ![Go to Users hub](_img/_shared/users-hub-updated.png)
 
-    ![Delete users from the Users hub](_img/assign-licenses/VSO-UsersHub-DeleteUser.png)
+    ![Delete users from the Users hub](_img/assign-licenses/vso-usershub-deleteuser.png)
 
 0.	To make sure that you've removed the user completely, 
 check your [security groups and permissions](../add-users.md). 
@@ -213,7 +213,7 @@ Learn [how to buy Visual Studio subscriptions](../../marketplace/vs-subscription
 
 <a name="paid-basic-access-join-other-accounts"></a>
 
-[!INCLUDE [can-paid-Basic-users-join-other-accounts](../../_shared/qa-can-paid-Basic-users-join-other-accounts.md)]
+[!INCLUDE [can-paid-Basic-users-join-other-accounts](../../_shared/qa-can-paid-basic-users-join-other-accounts.md)]
 
 <a name="feature-access"></a>
 

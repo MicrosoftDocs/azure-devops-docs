@@ -92,7 +92,7 @@ in SQL Server Reporting Services.
 
 #### Q: Where can I find information about each individual permission? 
 
-**A:** You can find detailed information about individual permissions and their relationship to default groups in TFS in the [Permission reference for Team Foundation Server](./permissions.md).
+**A:** You can find detailed information about individual permissions and their relationship to default groups in TFS in the [Permission reference for Team Foundation Server](permissions.md).
 
 ## Team project
 

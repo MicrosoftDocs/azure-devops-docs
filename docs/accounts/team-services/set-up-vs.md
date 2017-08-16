@@ -95,7 +95,7 @@ and choose the version control to manage your code.
 0.	If you're a new Visual Studio user, you can change your settings here, 
 or change them later in Visual Studio options.
 
-	![Change settings, if you want](_img/set-up-vs/HelloNewProfile.png)
+	![Change settings, if you want](_img/set-up-vs/hellonewprofile.png)
 
 	These changes are saved with your profile, 
 	and your settings roam with you wherever you sign in. 

@@ -185,7 +185,7 @@ Team administrators can manage settings for their team, including team alerts an
 <li style="margin-bottom:0px">[Swimlanes](../../work/kanban/expedite-work.md)</li>
 <li style="margin-bottom:0px">[Card reordering](../../work/customize/reorder-cards.md)</li> 
 <li style="margin-bottom:0px">[Definition of Done](../../work/kanban/definition-of-done.md)</li>
-<li style="margin-bottom:0px">[Cumulative flow chart](../../report//guidance/cumulative-flow.md#configure) </li>
+<li style="margin-bottom:0px">[Cumulative flow chart](../../report/guidance/cumulative-flow.md#configure) </li>
 </ul>
 
 </div>
@@ -204,7 +204,7 @@ Team administrators can manage settings for their team, including team alerts an
 <div style="float:left;width:190px;margin:3px;font-size:90%">
 <p style="padding-bottom:0px;text-align:center;"><b>Other team assets  </b></p>
 <ul style="padding-left:20px">
-<li style="margin-bottom:0px">[Manage team dashboard(s)](../../report//dashboards.md) </li>
+<li style="margin-bottom:0px">[Manage team dashboard(s)](../../report/dashboards.md) </li>
 <li style="margin-bottom:0px">[Manage notifications for a team](../../work/track/alerts-and-notifications.md) (Team Services) </li>
 <li style="margin-bottom:0px">[Create and manage team alerts](../../work/track/alerts-and-notifications.md) (TFS) </li>
 <li style="margin-bottom:0px">[Create and manage team rooms](../../collaborate/collaborate-in-a-team-room.md)  </li>

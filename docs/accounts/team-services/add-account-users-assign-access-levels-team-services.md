@@ -95,7 +95,7 @@ You'll need [Team Services project collection administrator or account owner per
 
     ![Go to Users hub](_img/_shared/users-hub-updated.png)
 	
-    ![Your account access appears in the Users hub](_img/assign-licenses/VSO-UsersHub-OwnerOnly.png)
+    ![Your account access appears in the Users hub](_img/assign-licenses/vso-usershub-owneronly.png)
 
 0.	Add the user's email address. 
 Select their access level, based on the features they need. 
@@ -146,12 +146,12 @@ Select their access level, based on the features they need.
 
 	For example, to add another Visual Studio subscriber:
 
-	![Add Visual Studio subscribers](_img/assign-licenses/VSO-UsersHub-AddMSDNUsers.png)
+	![Add Visual Studio subscribers](_img/assign-licenses/vso-usershub-addmsdnusers.png)
           
 	Team Services automatically recognizes and validates Visual Studio subscribers, 
 	and assigns access levels that match their subscriptions, no matter which access levels you give them.
 	   
-	![Team Services validates Visual Studio subscribers when they sign in](_img/assign-licenses/VSO-UsersHub-LicenseValidated.png)
+	![Team Services validates Visual Studio subscribers when they sign in](_img/assign-licenses/vso-usershub-licensevalidated.png)
 
 	[Why won't my subscription validate when I sign in?](#ValidateMSDNSubscription)
 
@@ -159,7 +159,7 @@ Select their access level, based on the features they need.
 	adding Visual Studio subscribers, some free users who get Basic features, 
 	a Stakeholder, and paying for more users with get Basic features:
 
-	![Added users and assigned access](_img/assign-licenses/VSO-UsersHub-BoughtLicenses-Stake.png)
+	![Added users and assigned access](_img/assign-licenses/vso-usershub-boughtlicenses-stake.png)
 
 	Your user summary shows only the number of users with access levels assigned to them.
 
@@ -219,7 +219,7 @@ then choose **Delete**.
 
     ![Go to Users hub](_img/_shared/users-hub-updated.png)
 
-    ![Delete users from the Users hub](_img/assign-licenses/VSO-UsersHub-DeleteUser.png)
+    ![Delete users from the Users hub](_img/assign-licenses/vso-usershub-deleteuser.png)
 
 0.	To make sure that you've removed the user completely, 
 check your [security groups and permissions](../add-users.md). 
@@ -394,7 +394,7 @@ Learn [how to buy Visual Studio subscriptions](../../marketplace/vs-subscription
 
 <a name="paid-basic-access-join-other-accounts"></a>
 
-[!INCLUDE [can-paid-Basic-users-join-other-accounts](../../_shared/qa-can-paid-Basic-users-join-other-accounts.md)]
+[!INCLUDE [can-paid-Basic-users-join-other-accounts](../../_shared/qa-can-paid-basic-users-join-other-accounts.md)]
 
 <a name="feature-access"></a>
 

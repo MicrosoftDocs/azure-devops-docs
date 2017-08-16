@@ -75,7 +75,7 @@ as Team Services account owner and as Azure subscription Co-administrator or gre
 0. Go to **More services** > **Developer tools** > **Team Services accounts**. 
 Select your Team Services account.
 
-    ![More services, Developer tools, Team Services accounts, select your account](_img/set-up-billing/AP_VSO_startlink2.png)
+    ![More services, Developer tools, Team Services accounts, select your account](_img/set-up-billing/ap_vso_startlink2.png)
 
 0. Choose the **Link** button.
 
@@ -83,11 +83,11 @@ Select your Team Services account.
 
 0. Select your Azure subscription. 
 
- ![Select an Azure subscription](_img/set-up-billing/AP_VSO_SelectSubscription.png)
+ ![Select an Azure subscription](_img/set-up-billing/ap_vso_selectsubscription.png)
 
  After Azure sets up the link, your Team Services account appears linked to your Azure subscription. 
 
- ![Your account is now linked to your Azure subscription](_img/set-up-billing/AP_VSO_Linked.png)
+ ![Your account is now linked to your Azure subscription](_img/set-up-billing/ap_vso_linked.png)
 
 #### Next
 
@@ -165,7 +165,7 @@ as Team Services account owner and as Azure subscription Co-administrator or gre
 0. Go to **More services** > **Developer tools** > **Team Services accounts**. 
 Select your Team Services account.
 
- ![More services, Developer tools, Team Services, select your account](_img/_shared/AP_VSO_SelectLinkedAccount.png)
+ ![More services, Developer tools, Team Services, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
 
 0. Unlink your account.
 
@@ -177,12 +177,12 @@ Select your Team Services account.
 0. Go to **More services** > **Developer tools** > **Team Services accounts**. 
 Select your Team Services account.
 
- ![More services, Developer tools, Team Services accounts, select your account](_img/set-up-billing/AP_VSO_startlink2.png)
+ ![More services, Developer tools, Team Services accounts, select your account](_img/set-up-billing/ap_vso_startlink2.png)
 
 0. Select your Azure subscription. 
 Finish relinking your account.
 
- ![Select an Azure subscription](_img/set-up-billing/AP_VSO_change-azure-subscription.png)
+ ![Select an Azure subscription](_img/set-up-billing/ap_vso_change-azure-subscription.png)
 
  After you finish relinking, 
  your account reappears in the Azure portal with 
@@ -231,7 +231,7 @@ than one Azure subscription. These subscriptions are
 also filtered by the directories selected in the Azure 
 classic portal's **Subscriptions** list:
 
-    ![Subscriptions filter](./_img/set-up-billing/AzureSubscriptionsFilter.png)
+    ![Subscriptions filter](_img/set-up-billing/azuresubscriptionsfilter.png)
 
 <a name="WhyDirectory"></a>
 
@@ -273,7 +273,7 @@ your account might already linked to another Azure subscription.
     To select the directory that your Team Services account uses, 
     open the Azure portal's **Subscriptions** list:
 
- ![Filter your subscriptions to the connected directory ](./_img/set-up-billing/AzureSubscriptionsFilter.png)
+ ![Filter your subscriptions to the connected directory ](_img/set-up-billing/azuresubscriptionsfilter.png)
 
 <a name="BillingRestriction"></a>
 

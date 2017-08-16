@@ -63,13 +63,13 @@ or [Azure portal](https://portal.azure.com).
 
 	**Azure classic portal**
 
-	![Select your VSTS account, unlink your account from your Azure subscription](./_img/delete-account/AzureUnlinkVSOAccount.png)
+	![Select your VSTS account, unlink your account from your Azure subscription](_img/delete-account/azureunlinkvsoaccount.png)
 
 	**Azure portal**
 
-	![Browse, Team Services accounts, select your account](./_img/_shared/AP_VSO_SelectLinkedAccount.png)
+	![Browse, Team Services accounts, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
 
-	![Unlink your account from an Azure subscription](./_img/delete-account/APP_UnlinkVSOAccount2.png)
+	![Unlink your account from an Azure subscription](_img/delete-account/app_unlinkvsoaccount2.png)
 
 	[Need help?](#get-support)
 
@@ -87,7 +87,7 @@ permissions to delete your Team Services account.
 
 0.  Under **Settings**, delete your account.
 
-	![Click Delete account](_img/delete-account/VSODeleteAccount.png)
+	![Click Delete account](_img/delete-account/vsodeleteaccount.png)
 
 	You'll be redirected to www.visualstudio.com, but you'll stay signed in. 
 

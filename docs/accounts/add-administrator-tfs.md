@@ -163,7 +163,7 @@ If the user  doesn't have these permissions and role memberships, TFS configurat
 
 #### Q: Where can I find more information about each individual TFS permission?
 
-**A:** See [Permissions and groups reference](./permissions.md).
+**A:** See [Permissions and groups reference](permissions.md).
 
 <a name="project-collection"></a>
 ## Project collection
@@ -240,7 +240,7 @@ in SQL Server Reporting Services.
 
 #### Q: Where can I find information about each individual permission? 
 
-**A:** You can find detailed information about individual permissions and their relationship to default groups in TFS in the [Permission reference for Team Foundation Server](./permissions.md).
+**A:** You can find detailed information about individual permissions and their relationship to default groups in TFS in the [Permission reference for Team Foundation Server](permissions.md).
 
 ## Team project
 
@@ -258,4 +258,4 @@ in SQL Server Reporting Services.
 
 0. Add an administrator.
 
-	![Add link in the administrators section of the team administration page](./_img/add-administrator-tfs/add-team-administrator.png)
+	![Add link in the administrators section of the team administration page](_img/add-administrator-tfs/add-team-administrator.png)
