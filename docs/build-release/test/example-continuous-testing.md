@@ -22,8 +22,8 @@ In this tutorial, you will learn how to:
 > [!div class="checklist"]
 > * [Create the Azure app service instance for your sample app](#create-service).
 > * [Create and check in a sample ASP.NET MVC web app containing unit tests](#create-app).
-> * [Configure continuous integration (CI) to build the sample application and run the unit tests](#configure-ci).
-> * [Configure continuous deployment (CD) to deploy the sample app and run a quick performance test](#configure-cd).
+> * [Configure continuous integration (CI) to build the app and run the unit tests](#configure-ci).
+> * [Configure continuous deployment (CD) to deploy the app and run a quick performance test](#configure-cd).
 > * [Modify the sample app to explore behavior when a test fails](#test-failure).
 > * [Fix the test failure and view the complete CI/CD process](#view-process).
 
