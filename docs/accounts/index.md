@@ -42,7 +42,7 @@ Use this index to setup and manage your account and configure key settings to su
 
 [Add users to your account](team-services/add-account-users-from-user-hub.md)
 
-[Try extensions for free](../billing/try-additional-features-vs.md)
+[Try extensions for free](../billing/team-services/try-additional-features-vs.md)
 
 
 ## Step-by-Step Tutorials

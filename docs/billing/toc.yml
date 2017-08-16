@@ -1,4 +1,4 @@
-- name: VSTS account administration
+- name: Billing
   href: index.md
 - name: Overview
   items:
@@ -6,6 +6,8 @@
     href: overview.md
 - name: Quickstarts
   items:
+  - name: Sign up for your account
+    href: team-services/sign-up-for-visual-studio-team-services.md
   - name: Try extensions for free
     href: team-services/try-additional-features-vs.md
   - name: Install an extension
@@ -46,8 +48,6 @@
     href: team-services/link-msdn-subscription-to-organizational-account-vs.md
 - name: Reference
   items:
-  - name: Reference tour
-    href: ../reference/overview.md
   - name: Permissions and groups reference
     href: permissions.md
   - name: Extensibility overview

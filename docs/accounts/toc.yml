@@ -113,8 +113,6 @@
     href: team-services/buy-more-build-vs.md
 - name: Reference
   items:
-  - name: Reference tour
-    href: ../reference/overview.md
   - name: Permissions and groups reference
     href: permissions.md
   - name: Extensibility overview
