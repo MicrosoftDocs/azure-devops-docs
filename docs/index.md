@@ -1047,11 +1047,11 @@ ms.date: 07/26/2017
                                 </div>
                             </li>
                             <li>
-                                <div class="container intro">
+                                <div class="container">
                                     <h2>Popular Extensions</h2>
                                 </div>
                             </li>
-                            <li>
+                            <li style="flex: 0 1 25%">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -1072,7 +1072,7 @@ ms.date: 07/26/2017
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li style="flex: 0 1 25%">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -1093,7 +1093,7 @@ ms.date: 07/26/2017
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li style="flex: 0 1 25%">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -1114,7 +1114,7 @@ ms.date: 07/26/2017
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li style="flex: 0 1 25%">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -1142,7 +1142,7 @@ ms.date: 07/26/2017
                                     <p>Create custom extensions to transform your Visual Studio Team Services look and experience</p>
                                 </div>
                             </li>
-                            <li>
+                            <li style="flex: 0 1 25%">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -1161,7 +1161,7 @@ ms.date: 07/26/2017
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li style="flex: 0 1 25%">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -1180,7 +1180,7 @@ ms.date: 07/26/2017
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li style="flex: 0 1 25%">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -1196,7 +1196,7 @@ ms.date: 07/26/2017
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li style="flex: 0 1 25%">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
