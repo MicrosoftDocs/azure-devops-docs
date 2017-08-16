@@ -155,24 +155,16 @@ ms.date: 07/26/2017
                                                 <h3>Resources</h3>
                                                 <ul class="noBullet">
                                                     <li>
-                                                        <a class="barLink" href="/vsts/marketplace/overview">
-                              <img src="/media/common/placeholder.svg" alt="" />Marketplace
-                            </a>
+                                                        <a class="barLink" href="/vsts/marketplace/overview"><img src="/media/common/placeholder.svg" alt="" />Marketplace</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/learn-git/">
-                              <img src="/media/common/placeholder.svg" alt="" />Learn about Git
-                            </a>
+                                                        <a class="barLink" href="https://www.visualstudio.com/learn-git/"><img src="/media/common/placeholder.svg" alt="" />Learn about Git</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/devops/">
-								<img src="/media/common/placeholder.svg" alt="" />Learn about DevOps
-                            </a>
+                                                        <a class="barLink" href="https://www.visualstudio.com/devops/"><img src="/media/common/placeholder.svg" alt="" />Learn about DevOps</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/agile/">
-                              <img src="/media/common/placeholder.svg" alt="" />Learn about Agile                                 
-                            </a>
+                                                        <a class="barLink" href="https://www.visualstudio.com/agile/"><img src="/media/common/placeholder.svg" alt="" />Learn about Agile</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1047,189 +1039,182 @@ ms.date: 07/26/2017
                 <ul id="ecosystem">
                     <li>
                         <a href="#ecosystem-all"></a>
-                        <ul id="ecosystem-all">
-                            <li class="fullSpan intro">
-                                <div class="container">
+                        <ul id="ecosystem-all" class="cardsL">
+                            <li>
+                                <div class="container intro">
                                     <h1>Get Extensions</h1>
                                     <p>Integrate your Visual Studio Team Services with popular extensions like Slack or Jenkins</p>
                                 </div>
                             </li>
                             <li>
-                                <div class="container">
+                                <div class="container intro">
                                     <h2>Popular Extensions</h2>
                                 </div>
                             </li>
                             <li>
-                                <ul class="cardsL">
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <ul class="noBullet">
-                                                            <li>
-                                                                <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization"><img src="/media/common/placeholder.svg" alt="" />Work item visualizer</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-slack"><img src="/media/common/placeholder.svg" alt="" />Slack</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=Berichthaus.TfsTimetracker"><img src="/media/common/placeholder.svg" alt="" />Timetracker</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization"><img src="/media/common/placeholder.svg" alt="" />Work item visualizer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-slack"><img src="/media/common/placeholder.svg" alt="" />Slack</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=Berichthaus.TfsTimetracker"><img src="/media/common/placeholder.svg" alt="" />Timetracker</a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <ul class="noBullet">
-                                                            <li>
-                                                                <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards"><img src="/media/common/placeholder.svg" alt="" />Agile cards</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins"><img src="/media/common/placeholder.svg" alt="" />Jenkins</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-bamboo"><img src="/media/common/placeholder.svg" alt="" />Bamboo</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <ul class="noBullet">
-                                                            <li>
-                                                                <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search"><img src="/media/common/placeholder.svg" alt="" />Code Search</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web"><img src="/media/common/placeholder.svg" alt="" />Test &amp; Feedback</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-zendesk"><img src="/media/common/placeholder.svg" alt="" />ZenDesk</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <ul class="noBullet">
-                                                            <li>
-                                                                <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-trello"><img src="/media/common/placeholder.svg" alt="" />Trello</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice"><img src="/media/common/placeholder.svg" alt="" />UserVoice</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks"><img src="/media/common/placeholder.svg" alt="" />Octopus Deploy</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="fullSpan intro">
-                                <div class="container">
-                                    <h1>Build your own extensions</h2>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards"><img src="/media/common/placeholder.svg" alt="" />Agile cards</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins"><img src="/media/common/placeholder.svg" alt="" />Jenkins</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-bamboo"><img src="/media/common/placeholder.svg" alt="" />Bamboo</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search"><img src="/media/common/placeholder.svg" alt="" />Code Search</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web"><img src="/media/common/placeholder.svg" alt="" />Test &amp; Feedback</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-zendesk"><img src="/media/common/placeholder.svg" alt="" />ZenDesk</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-trello"><img src="/media/common/placeholder.svg" alt="" />Trello</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice"><img src="/media/common/placeholder.svg" alt="" />UserVoice</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks"><img src="/media/common/placeholder.svg" alt="" />Octopus Deploy</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                                
+                            <li>
+                                <div class="container intro">
+                                    <h1>Build your own extensions</h1>
                                     <p>Create custom extensions to transform your Visual Studio Team Services look and experience</p>
                                 </div>
                             </li>
                             <li>
-                                <ul class="cardsL">
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <h3>REST APIs</h3>
-                                                        <ul class="noBullet">
-                                                            <li>
-                                                                <a class="barLink" href="/vsts/integrate/#rest-apis">Get Started</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="barLink" href="">API reference</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>REST APIs</h3>
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/vsts/integrate/#rest-apis">Get Started</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="">API reference</a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <h3>.NET Client APIs</h3>
-                                                        <ul class="noBullet">
-                                                            <li>
-                                                                <a class="barLink" href="/vsts/integrate/get-started/client-libraries/dotnet">Get Started</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="barLink" href="">API reference</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <h3>Custom extensions</h3>
-                                                        <ul class="noBullet">
-                                                            <li>
-                                                                <a class="barLink" href="/vsts/extend">Get Started</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardText">
-                                                        <h3>TypeScript libraries</h3>
-                                                        <ul class="noBullet">
-                                                            <li>
-                                                                <a class="barLink" href="">Get Started</a>
-                                                            </li>
-                                                            <li>
-                                                                <a class="barLink" href="">API reference</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
                             </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>.NET Client APIs</h3>
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/vsts/integrate/get-started/client-libraries/dotnet">Get Started</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="">API reference</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Custom extensions</h3>
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/vsts/extend">Get Started</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>TypeScript libraries</h3>
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="">Get Started</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="">API reference</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>                                
                         </ul>
                     </li>
                 </ul>
