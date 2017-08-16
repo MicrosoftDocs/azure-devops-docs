@@ -23,7 +23,7 @@ To set this up, you install and configure the proxy server at the remote site, c
 
 | | Task | Detailed instructions |
 | --- | --- | --- |
-| ![Step 1](_img/ic646324.png) | **Check for supported hardware and software**. Verify that the operating system meets requirements for Team Foundation Server Proxy and that the hardware can run it. | [System requirements for Team Foundation Server Proxy](../../setup-admin/requirements.md#proxy-server) |
+| ![Step 1](_img/ic646324.png) | **Check for supported hardware and software**. Verify that the operating system meets requirements for Team Foundation Server Proxy and that the hardware can run it. | [System requirements for Team Foundation Server Proxy](../../requirements.md#proxy-server) |
 | ![Step 2](_img/ic646325.png) | **Set up Team Foundation Server Proxy**. Install Team Foundation Server Proxy. After the installation is finished, use the Team Foundation Server Configuration Tool to configure your proxy server. | [Run Team Foundation Server installation](install-2013/install-tfs.md#installer) <br/> [How to: Configure Team Foundation Server Proxy Using the Team Foundation Server Configuration Tool](#config--proxy-with-config-tool) |
 | ![Step 3](_img/ic646326.png) | **Connect Team Explorer to Team Foundation Server Proxy**. After you configure the proxy server to connect to Team Foundation Server, you must configure Team Explorer to access version control files through the proxy server. | [How to: Configure Team Foundation version control to use Proxy server](#config-to-use-proxy) |
 
@@ -35,12 +35,22 @@ To set this up, you install and configure the proxy server at the remote site, c
 
 You can use these procedures to configure Team Foundation Server Proxy.
 
+>**Note:**  
+>You can access the Team Foundation Server Configuration tool from the **Start** menu by launching Team Foundation Server Administration Console, choosing **Proxy Server**, and then choosing **Configure Installed Features**.
+
+**Required permissions**: To follow this procedure, you must be a member of the **Administrators** security group on the server on which you are configuring Team Foundation Server Proxy. You must be a member of the Project Collection Administrators group on TFS. 
+
+For VSTS you either need to be a collection admin or have manage proxy permissions on the Proxy namespace. You can grant that using:
+
 > [!NOTE]
-> You can access the Team Foundation Server Configuration tool from the **Start** menu by launching Team Foundation Server Administration Console, choosing **Proxy Server**, and then choosing **Configure Installed Features**.
+> You must have a proxy server at TFS 2017 Update 2 and newer to use the following command.
 
-**Required permissions**: To follow this procedure, you must be a member of the **Administrators** security group on the server on which you are configuring Team Foundation Server Proxy. You must be a member of the Project Collection Administrators group on TFS. If you connect the proxy to a collection on Visual Studio Team Services, you need the Microsoft account you used to set up the service.
+```no-highlight
+tfssecurity /a+ Proxy Proxy Manage <user account> ALLOW /collection:{collection url}
+```
 
-To configure Proxy Server, you must have TFS installed on a server operating system. For more information, see [System requirements for Team Foundation Server](../../setup-admin/requirements.md).
+<br />
+To configure Proxy Server, you must have TFS installed on a server operating system. For more information, see [System requirements for Team Foundation Server](../../requirements.md).
 
 To configure Team Foundation Server Proxy by using Team Foundation Server Configuration tool, follow these steps:
 
@@ -63,18 +73,17 @@ To configure Team Foundation Server Proxy by using Team Foundation Server Config
 
 3.  Choose **Browse**, and then choose the team project collection to which you want this proxy server to connect. Choose **Next**.
 
-	> [!NOTE]
-	> If your team project collection is on Visual Studio Team Services, you're prompted to authenticate. Enter the Microsoft account you used to set up the service.
+	>**Note:**  
+	>If your team project collection is on Visual Studio Team Services, you're prompted to authenticate. Enter the Microsoft account you used to set up the service.
 
 4.  Under **Service Account**, choose **Use a system account** to use Network Service or **Use a user account** to use a domain or local account. If you are using a user account, you must type the password. To test the user account and password combination, choose **Test.**
 
     Network Service is the default value for the proxy server service account.
 
 5.  The following optional configurations appear under **Advanced Configuration**:
+    - If you're connected to the hosted service, **Account Name** appears here.
 
-    -   If you're connected to the hosted service, **Account Name** appears here.
-
-        When you created the instance of Team Foundation Server on the hosted service, **Account Name** was automatically created for you. This account will be added to the **Project Collection Proxy Service Accounts** group on the hosted service. To use a different account, enter the account name and choose **Test**. To reset to the default service account automatically created for you, choose **Reset to default service account**.
+        When you created the instance of Team Foundation Server on the hosted service, Account Name was automatically created for you. This account will be added to the **Project Collection Proxy Service Accounts** group on the hosted service. To use a different account, enter the account name and choose **Test**. To reset to the default service account automatically created for you, choose **Reset to default service account**. *This is no longer applicable for TFS 2017 Update 2 and newer proxy servers.*
 
     -   You can change authentication settings. Under **Authentication Method**, choose **NTLM** to use NTLM authentication or **Negotiate (Kerberos)** to first attempt Kerberos authentication, the more secure option, and if that fails, fall back to NTLM.
 
