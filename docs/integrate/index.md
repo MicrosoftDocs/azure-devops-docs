@@ -9,7 +9,7 @@ ms.author: elbatk
 ms.date: 08/23/2016
 ---
 
-# Overview of integrating with Visual Studio Team Services
+# Integrating with Visual Studio Team Services
 
 You can build custom applications or services that integrate with your Visual Studio Team Services (VSTS) account by using the [REST APIs](#rest-apis) to make direct HTTP calls, or utilize our [.NET Client Libraries](#.net-client-libraries).
 
@@ -17,33 +17,33 @@ Along with interacting with VSTS in your application, you can also integrate wit
 
 <a name ="customApps"/>
 
-## REST APIs
-You can leverage our REST APIs directly to interact with all areas of VSTS or TFS.
-
-You can check out the [REST API reference documentation](https://review.docs.microsoft.com/en-us/rest/api/vsts/?branch=master) to be introduced to the REST APIs and see how to use them.
-
-## .NET client libraries
-For .NET developers building Windows apps and services that integrate with VSTS, client libraries are available for integrating with work item tracking, version control, build, and other services.These packages make it easy to acquire and redistribute the libraries needed by your app or service.
-
-Explore the [.NET client library overview](./get-started/client-libraries/dotnet.md) for the different packages and samples.
-
-## Authentication
-Authentication is a vital part of integrating with VSTS. Based on the type of application you're building, and what products you're building it for, you'll want to choose a different method of authentication.
-
-Check out the [authentication guidance](./get-started/authentication/authentication-guidance.md) page to find out exactly which method you should use, along with samples for how to implement it.
-
-
-## Quickstarts
+## 5-minute Quickstarts 
 Check out the quick starts to get you started:
-    * [Create a bug](./quickstarts/create-bug-dotnet.md)
-    * [Get work items using queries](./quickstarts/work-item-dotnet.md)
-    * [Integrate with Jenkins](./quickstarts/jenkins-integrate-quickstart.md)
+* [Create a bug](./quickstarts/create-bug-quickstart.md)
+* [Get work items using queries](./quickstarts/work-item-quickstart.md)
+* [Integrate with Jenkins](./quickstarts/jenkins-integrate-quickstart.md)
 
+
+## Concepts
+* [.NET client libraries](./concepts/dotnet-client-libraries.md)
+* [Authentication](./get-started/authentication/authentication-guidance.md)
+* [Service hooks](./concepts/service-hooks.md)
+* [REST API Versioning](./concepts/rest-api-versioning.md)
+* [Cross-origin resource sharing](./concepts/cross-origin-resource-sharing.md)
 
 ## Samples
-If you're looking for samples, find your languages below:
-    * [REST API samples](./get-started/rest/samples.md)
-    * [.NET client library samples](./get-started/client-libraries/samples.md)
+* [Custom application samples](./get-started/client-libraries/samples.md)
+
+## How-to
+* [Authenticate with PATs](./get-started/authentication/pats.md)
+* [Authenticate with OAuth 2.0](./get-started/authentication/oauth.md)
+* [Create service hooks subscriptions programmatically](../service-hooks/create-subscription.md?toc=/vsts/integrate/toc.json)
+
+## Reference
+* [.NET client libraries reference](https://review.docs.microsoft.com/en-us/vsts-dotnet/api/microsoft.teamfoundation.framework.common?branch=master)
+* [REST API reference](https://review.docs.microsoft.com/en-us/rest/api/vsts/?branch=master)
+* [Service hooks consumers and action reference](../service-hooks/consumers.md?toc=/vsts/integrate/toc.json)
+* [Service hooks events reference](../service-hooks/events.md?toc=/vsts/integrate/toc.json)
 
 
 
