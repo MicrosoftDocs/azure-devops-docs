@@ -27,43 +27,43 @@ an ASP.NET app
 to a Windows virtual machine in Azure. 
 You create the virtual machine using Azure Powershell, and then you set up CI/CD in Team Services. In the CI process, you build the app using MSBuild and run tests using VSTest.
 
-![Screenshot showing ASP.NET web app](./_img/media/cicd-get-started-aspnet-sample.png)
+![Screenshot showing ASP.NET web app](_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-sample.png)
 
-[!INCLUDE [temp](../../get-started/_shared/vsts-and-azure-setup.md)]
+[!INCLUDE [temp](../get-started/_shared/vsts-and-azure-setup.md)]
 
 On your dev machine, you need Azure PowerShell module version 4.0 or newer. See [Install and configure Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-4.2.0). 
 
-[!INCLUDE [temp](../../apps/_shared/create-azure-windows-vm.md)]
+[!INCLUDE [temp](_shared/create-azure-windows-vm.md)]
 
-[!INCLUDE [temp](../../../deploy-azure/_shared/create-deployment-group.md)]
+[!INCLUDE [temp](../../deploy-azure/_shared/create-deployment-group.md)]
 
-[!INCLUDE [temp](../../get-started/_shared/import-code-1.md)]
+[!INCLUDE [temp](../get-started/_shared/import-code-1.md)]
 
 ```bash
 https://github.com/adventworks/aspnet4-sample
 ```
 
-[!INCLUDE [temp](../../get-started/_shared/import-code-2.md)]
+[!INCLUDE [temp](../get-started/_shared/import-code-2.md)]
 
-[!INCLUDE [temp](../../apps/_shared/set-up-ci-1.md)]
+[!INCLUDE [temp](../apps/_shared/set-up-ci-1.md)]
 
 In the right panel, select **ASP.NET**, and then click **Apply**.
 
-![Screenshot showing ASP.NET template](./_img/media/cicd-get-started-apply-template.png)
+![Screenshot showing ASP.NET template](./_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-apply-template.png)
 
-[!INCLUDE [temp](../../apps/_shared/set-up-ci-2.md)]
+[!INCLUDE [temp](_shared/set-up-ci-2.md)]
 
-[!INCLUDE [temp](../../apps/_shared/set-up-ci-3.md)]
+[!INCLUDE [temp](_shared/set-up-ci-3.md)]
 
-[!INCLUDE [temp](../../apps/_shared/set-up-cd-1.md)]
+[!INCLUDE [temp](_shared/set-up-cd-1.md)]
 
-![Screenshot showing build summary](_img/media/cicd-get-started-aspnet-build-summary.png)
+![Screenshot showing build summary](_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-build-summary.png)
 
 In the dialog that prompts to **Create release definition**, select **Yes**.
 
 In the **Create release definition** wizard, select the **IIS Website and SQL Database deployment** template, and click **Apply**.
 
-![Screenshot showing IIS template](_img/media/select-iis-website-and-sql-database-deployment-release-template.png)
+![Screenshot showing IIS template](_img/aspnet-from-vsts-to-windows-vm/select-iis-website-and-sql-database-deployment-release-template.png)
 
 Click **Tasks**, and then select the **SQL Deployment** phase. Click 'X' to delete this phase. We won't be deploying a database in this quickstart.
 
@@ -73,15 +73,15 @@ Select the **IIS Web App Manage** task; click 'X' to delete this task. We will n
 
 Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Leave all the other default settings.
 
-![Screenshot showing release definition](_img/media/cicd-get-started-release-definition.png)
+![Screenshot showing release definition](_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-release-definition.png)
 
-[!INCLUDE [temp](../../apps/_shared/set-up-cd-3.md)]
+[!INCLUDE [temp](_shared/set-up-cd-3.md)]
 
 ## Update to redeploy the code
 
 Navigate to the **Code** hub in the VSTS portal. Navigate to **Views/Home/Index.cshtml** file. Make the following simple change to that file by selecting the edit action.
 
-![Screenshot showing update to code](./_img/media/cicd-get-started-aspnet-update-code.png)
+![Screenshot showing update to code](./_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-update-code.png)
 
 Add the following line of text as indicated in the image above:
 ```
@@ -100,4 +100,4 @@ http://<publicIpAddress>
 
 **Congratulations!** You've deployed changes to your application using CI/CD.
 
-[!INCLUDE [temp](../../get-started/_shared/clean-up-resources.md)]
+[!INCLUDE [temp](../get-started/_shared/clean-up-resources.md)]

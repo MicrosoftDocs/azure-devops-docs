@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/aspnet/aspnet4/quick-to-azure
+redirect_url: /docs/build-release/apps/aspnet-core-from-vsts-to-azure-web-app
 ---
