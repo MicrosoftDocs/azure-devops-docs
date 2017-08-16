@@ -143,5 +143,5 @@ Contracts used: [WorkItem](../../extend/reference/client/api/TFS/WorkItemTrackin
 
 ## Next Steps
 
-* Check out another Quickstart: [Get a list of work items using queries](./work-item-dotnet.md)
+* Check out another Quickstart: [Get a list of work items using queries](./work-item-quickstart.md)
 * Explore the [REST API](../get-started/rest/samples.md) or [.NET client library](../get-started/client-libraries/samples.md) samples
