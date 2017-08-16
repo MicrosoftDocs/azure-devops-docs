@@ -66,20 +66,20 @@ make sure that you use a [supported browser](https://azure.microsoft.com/en-us/d
 <li>Go to **More services** > **Developer tools** > **Team Services accounts**.
 Select your Team Services account.
 <p>
-<p>![Browse, Team Services accounts, select your account](_img/_shared/AP_VSO_SelectLinkedAccount.png)
+<p>![Browse, Team Services accounts, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
 <p>
 <p>[Why don't I see my Team Services account?](#WhyNoVSOAccount)
 <p>
 <li>Select **Cloud-based load testing**.
 <p>
-<p>![Click Settings, select Clouse-based load testing](_img/get-more-build-load-testing/AP_VSO_ManageServices.png)
+<p>![Click Settings, select Clouse-based load testing](_img/get-more-build-load-testing/ap_vso_manageservices.png)
 <p>
 <li>Turn on paid load testing.
 <p>
 <p>If you want, set a monthly limit on the virtual user minutes that you use.
 When you're done, save your changes.
 <p>
-<p>![Click Paid, select an optional monthly limit, save changes](_img/get-more-build-load-testing/AP_VSO_PaidCloudLoadTesting.png)
+<p>![Click Paid, select an optional monthly limit, save changes](_img/get-more-build-load-testing/ap_vso_paidcloudloadtesting.png)
 <p>
 </ol>
 </div>
@@ -96,20 +96,20 @@ make sure that you use a [supported browser](https://azure.microsoft.com/en-us/d
 <p>
 <li>Select your Team Services account.
 <p>
-<p>![Select your Team Services account](_img/_shared/AzureChooseLinkedAccount.png)
+<p>![Select your Team Services account](_img/_shared/azurechooselinkedaccount.png)
 <p>
 <p>[Why don't I see my Team Services account?](#WhyNoVSOAccount)
 <p>
 <li>Go to **Scale**.
 <p>
-<p>![Click Scale](_img/_shared/AzureScaleLicensesResources.png)
+<p>![Click Scale](_img/_shared/azurescalelicensesresources.png)
 <p>
 <li>Turn on paid Load Testing.
 You can also set monthly limits on the amounts that your account uses.
 <p>
 <p>You're not charged until your account goes above the free monthly amounts.
 <p>
-<p>![Turn on paid Load Testing. Select optional monthly limits](_img/get-more-build-load-testing/AzureManageResources.png)
+<p>![Turn on paid Load Testing. Select optional monthly limits](_img/get-more-build-load-testing/azuremanageresources.png)
 <p>
 <li>When you're done, save your changes.
 <p>
@@ -118,7 +118,7 @@ You can also set monthly limits on the amounts that your account uses.
 <p>To check the amounts used by your account,
 you can come back to the Azure classic portal.
 <p>
-<p>![Check amounts used on your account dashboard in Azure](_img/get-more-build-load-testing/AzureDashboard.png)
+<p>![Check amounts used on your account dashboard in Azure](_img/get-more-build-load-testing/azuredashboard.png)
 <p>
 </ol>
 </div>

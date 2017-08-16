@@ -46,7 +46,7 @@ This topic provides descriptions for each built-in group and permission. To lear
 <li>**Not set**</li>
 </ul>
 
-To learn more about inheritance, see [About permissions.md](../security/about-permissions.md#inheritance).
+To learn more about inheritance, see [About permissions](../security/about-permissions.md#inheritance).
 </td>
 </tr>
 </table>

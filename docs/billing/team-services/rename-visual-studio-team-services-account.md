@@ -34,12 +34,12 @@ you'll need at least Basic access and account owner permissions.
 
 0.	Under **Settings**, change your account URL.
 
-    ![Change your account name](_img/rename-vso-account/VSORenameAccount.png)
+    ![Change your account name](_img/rename-vso-account/vsorenameaccount.png)
 
 0.  Confirm that you want to rename your account. 
 Give your account a new name. Save your changes.
 
-    ![Confirm renaming your account, provide new account name](_img/rename-vso-account/VSOConfirmAccountRename.png)
+    ![Confirm renaming your account, provide new account name](_img/rename-vso-account/vsoconfirmaccountrename.png)
 
 	[Need help?](#get-support)
 

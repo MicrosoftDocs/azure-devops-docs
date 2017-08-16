@@ -68,13 +68,13 @@ depending on the Team Services group that you want to work on.
 
 0.	Select the Team Services group where you want to add your Azure AD group.
 
-    ![Select a Team Services group. Go to Members, Add](./_img/manage-azure-ad-groups/VSOGroupAddMemberButton.png)
+    ![Select a Team Services group. Go to Members, Add](_img/manage-azure-ad-groups/vsogroupaddmemberbutton.png)
 
 0.	Find the Azure AD group that you want to add. Just start typing the group's name, alias, 
 or display name. Then select the group to add it.  You can get more details about a group and its members by choosing 
 the contact card icon to the right of the name.
 
-    ![Browse directory for groups](./_img/manage-azure-ad-groups/AddAADGroupPanelBrowse.png)
+    ![Browse directory for groups](_img/manage-azure-ad-groups/addaadgrouppanelbrowse.png)
     
     You [invite guests into your Azure AD](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/11/inviting-directory-guests-to-aad-backed-vsts-accounts) 
     and into your Azure AD backed Team Services accounts, without waiting for them 
@@ -125,7 +125,7 @@ or the group management tools that your organization supports.
 
 A: On the group's identity card, check the group's source:
 
-![To find the group's source, check the group's identity card](./_img/manage-azure-ad-groups/CheckIdentitySourceAAD.png)
+![To find the group's source, check the group's identity card](_img/manage-azure-ad-groups/checkidentitysourceaad.png)
 
 ####Q:	 Why doesn't the Users hub show all Azure AD group members?
 
@@ -219,7 +219,7 @@ top navigation bar and **Security** in the menu.
 
 Find the Azure AD group, then delete that group from your Team Services account.
 
-![Find the Azure Active Directory group, delete from Team Services](./_img/manage-azure-ad-groups/DeleteAADGroupFromVSO.png)
+![Find the Azure Active Directory group, delete from Team Services](_img/manage-azure-ad-groups/deleteaadgroupfromvso.png)
 
 <a name="ChooseOrgAcctMSAcct"></a>
 

@@ -75,7 +75,7 @@ Learn more about [Azure AD administrators](https://azure.microsoft.com/en-us/doc
   To check your permissions, [Sign in to the Azure classic portal](https://manage.windowsazure.com/) with your 
   work or school account. Go to your target directory.
 
-  ![Check that you're a global administrator](./_img/manage-work-access/AzureADAdmin.png)
+  ![Check that you're a global administrator](_img/manage-work-access/azureadadmin.png)
 
 *	You must add your Microsoft account to your Azure AD. Although directory membership isn't required to 
 connect your Team Services account to Azure AD, this will make sure that you can sign in and 
@@ -134,7 +134,7 @@ including yourself as the Team Services account owner, if not in the directory a
   Here's what the Fabrikam directory might look like in the Azure classic portal after Jamal adds users from his 
   Team Services account.
     
-  ![Directory after adding users](./_img/manage-work-access/AzureAddMembers3.png)
+  ![Directory after adding users](_img/manage-work-access/azureaddmembers3.png)
 
   [More questions about setting up users?](#faq-users)
 
@@ -161,7 +161,7 @@ to the Azure subscription associated with your directory.
   Team Services account is already connected to that directory.  You'll actually connect your account to a directory 
   elsewhere and later in Azure.
 
-  ![No connected directory](./_img/_shared/no-directory.png)
+  ![No connected directory](_img/_shared/no-directory.png)
 
   [What if my account is already linked to an Azure subscription?](#subscription-linked-already)
 
@@ -173,25 +173,25 @@ to the Azure subscription associated with your directory.
 0.	Go to **Visual Studio Team Services**. 
 Select your Team Services account.
 
-    ![Azure portal, Team Services, select your account](./_img/manage-work-access/AzureVSO_Unconnected.png)
+    ![Azure portal, Team Services, select your account](_img/manage-work-access/azurevso_unconnected.png)
 
 0.	Choose **Configure** > **Connect**.
 
-    ![Configure your account](./_img/manage-work-access/AzureConfigureVSO.png)
+    ![Configure your account](_img/manage-work-access/azureconfigurevso.png)
 
-    ![Connect your account](./_img/manage-work-access/AzureConnectDirectory1.png)
+    ![Connect your account](_img/manage-work-access/azureconnectdirectory1.png)
 
 0.	From the list of directories associated with the Azure subscription 
 that's linked to your Team Services account, 
 select the directory that you want to connect. 
 Save your changes when you're done.
 
-	![Select your directory](_img/manage-work-access/AzureConnectDirectory2.png)
+	![Select your directory](_img/manage-work-access/azureconnectdirectory2.png)
 
 	*	[Why don't I see the directory that I want?](#why-not-my-directory)
 	*	[My account's already connected to a directory. What do I do?](#AlreadyConnected)
 
-	![Account is now connected to your directory](./_img/manage-work-access/AzureConnectDirectory3.png)
+	![Account is now connected to your directory](_img/manage-work-access/azureconnectdirectory3.png)
 
 	Your account is now connected to your organization's directory.
 
@@ -258,19 +258,19 @@ with your Microsoft account as the Team Services account owner.
 0.  Go to **Visual Studio Team Services**. 
 Select your Team Services account.
 
-	![Select your account](./_img/manage-work-access/AzureSelectConnectedVSO.png)
+	![Select your account](_img/manage-work-access/azureselectconnectedvso.png)
 
 0.	Chooose **Configure** > **Disconnect**.
 
-	![Configure account](./_img/manage-work-access/azure-configure-disconnect.png)
+	![Configure account](_img/manage-work-access/azure-configure-disconnect.png)
 
-	![Disconnect account from directory](./_img/manage-work-access/AzureDisconnectDirectory1.png)
+	![Disconnect account from directory](_img/manage-work-access/azuredisconnectdirectory1.png)
 
 0.	Select **None (no directory connection)**.
 
-	![Select no directory connection](./_img/manage-work-access/AzureDisconnectDirectory2.png)
+	![Select no directory connection](_img/manage-work-access/azuredisconnectdirectory2.png)
 
-	![Account is now disconnected from your directory](./_img/manage-work-access/AzureDisconnectDirectory3.png)
+	![Account is now disconnected from your directory](_img/manage-work-access/azuredisconnectdirectory3.png)
 
 	Your Team Services account is disconnected from your organization's directory. 
 	Only users with Microsoft accounts can sign in.
@@ -300,7 +300,7 @@ as the directory administrator in Azure.
 Find the Azure AD that's connected to your 
 Team Services account.
 
-    ![Find the directory connected to your account](./_img/manage-work-access/AzureFindConnectedDirectory.png)
+    ![Find the directory connected to your account](_img/manage-work-access/azurefindconnecteddirectory.png)
 
 ###	Delete users from Azure AD
 
@@ -390,7 +390,7 @@ To learn more, contact your Azure AD administrator. The setting below doesn't af
 
 0.	Go to your Team Services account's control panel.
 
-	![Go to account control panel](./_img/_shared/AccountSettings.png)
+	![Go to account control panel](_img/_shared/accountsettings.png)
 
 0.	Go to your account settings. 
 Allow or deny account access for external users added as guests. 

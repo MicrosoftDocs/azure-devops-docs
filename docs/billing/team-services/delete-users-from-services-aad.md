@@ -37,7 +37,7 @@ as the directory administrator in Azure.
 Find the Azure AD that's connected to your 
 Team Services account.
 
-    ![Find the directory connected to your account](./_img/manage-work-access/AzureFindConnectedDirectory.png)
+    ![Find the directory connected to your account](_img/manage-work-access/azurefindconnecteddirectory.png)
 
 ###	Delete users from Azure AD
 
@@ -127,7 +127,7 @@ To learn more, contact your Azure AD administrator. The setting below doesn't af
 
 0.	Go to your Team Services account's control panel.
 
-	![Go to account control panel](./_img/_shared/AccountSettings.png)
+	![Go to account control panel](_img/_shared/accountsettings.png)
 
 0.	Go to your account settings. 
 Allow or deny account access for external users added as guests. 

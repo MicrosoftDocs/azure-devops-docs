@@ -58,19 +58,19 @@ with your Microsoft account as the Team Services account owner.
 0.  Go to **Visual Studio Team Services**. 
 Select your Team Services account.
 
-	![Select your account](./_img/manage-work-access/AzureSelectConnectedVSO.png)
+	![Select your account](_img/manage-work-access/azureselectconnectedvso.png)
 
 0.	Chooose **Configure** > **Disconnect**.
 
-	![Configure account](./_img/manage-work-access/azure-configure-disconnect.png)
+	![Configure account](_img/manage-work-access/azure-configure-disconnect.png)
 
-	![Disconnect account from directory](./_img/manage-work-access/AzureDisconnectDirectory1.png)
+	![Disconnect account from directory](_img/manage-work-access/azuredisconnectdirectory1.png)
 
 0.	Select **None (no directory connection)**.
 
-	![Select no directory connection](./_img/manage-work-access/AzureDisconnectDirectory2.png)
+	![Select no directory connection](_img/manage-work-access/azuredisconnectdirectory2.png)
 
-	![Account is now disconnected from your directory](./_img/manage-work-access/AzureDisconnectDirectory3.png)
+	![Account is now disconnected from your directory](_img/manage-work-access/azuredisconnectdirectory3.png)
 
 	Your Team Services account is disconnected from your organization's directory. 
 	Only users with Microsoft accounts can sign in.
@@ -163,7 +163,7 @@ To learn more, contact your Azure AD administrator. The setting below doesn't af
 
 0.	Go to your Team Services account's control panel.
 
-	![Go to account control panel](./_img/_shared/AccountSettings.png)
+	![Go to account control panel](_img/_shared/accountsettings.png)
 
 0.	Go to your account settings. 
 Allow or deny account access for external users added as guests. 

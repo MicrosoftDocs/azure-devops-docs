@@ -38,7 +38,7 @@ instead. Learn about other
 
 0.  Sign in to [Visual Studio Marketplace > Visual Studio Team Services](https://marketplace.visualstudio.com/vsts).
 
-	![Find extension trial](../../marketplace/_img/get-vsts-extensions/marketplace.png)
+	![Find extension trial](../_img/get-vsts-extensions/marketplace.png)
 
 	[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
 

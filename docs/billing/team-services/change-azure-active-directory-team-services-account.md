@@ -88,11 +88,11 @@ so you can perform the migration.
 
 0.	View your Team Services account users.
 
-	![Users hub](./_img/_shared/users-hub-jamal.png)
+	![Users hub](_img/_shared/users-hub-jamal.png)
 
 0.	Add your Microsoft account to your Team Services account as a user.
 
-	![Add your Microsoft account](./_img/change-azure-active-directory/add-msa-vsts.png)
+	![Add your Microsoft account](_img/change-azure-active-directory/add-msa-vsts.png)
 
 	Your Microsoft account appears in this list 
 	because you added this user to the source directory.
@@ -126,7 +126,7 @@ so they can get Team Services account access as directory members.
 
 0.	Find and select the directory that you want connected to your Team Services account.
 
-	![Find target directory](./_img/change-azure-active-directory/azure-choose-target-directory.png)
+	![Find target directory](_img/change-azure-active-directory/azure-choose-target-directory.png)
 
 0.	[Add your account to the directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-create-users), and in the **Tell us about this user** step, choose **User with an existing Microsoft account**.  In the **user profile** step, choose the user administrator role.
 
@@ -140,27 +140,27 @@ with the Microsoft account that you're using for the migration.
 
 0.	Select your Team Services account.
 
-	![Select your Team Services account](./_img/manage-work-access/AzureSelectConnectedVSO.png)
+	![Select your Team Services account](_img/manage-work-access/azureselectconnectedvso.png)
 
 0.	Configure your account.
 
-	![Configure your account](./_img/manage-work-access/azure-configure-disconnect.png)
+	![Configure your account](_img/manage-work-access/azure-configure-disconnect.png)
 
 0.	Disconnect your account from the source directory.
 
-	![Disconnect account](./_img/manage-work-access/AzureDisconnectDirectory1.png)
+	![Disconnect account](_img/manage-work-access/azuredisconnectdirectory1.png)
 
-	![Select None, no directory connection](./_img/manage-work-access/AzureDisconnectDirectory2.png)
+	![Select None, no directory connection](_img/manage-work-access/azuredisconnectdirectory2.png)
 
 	After you save your changes, your Team Services account is disconnected. 
 	Now, only users with Microsoft accounts can sign in to your Team Services account. 
 	This is why we previously set up your Microsoft account as a Team Services account user.
 
-	![Your account is now disconnected](./_img/manage-work-access/AzureDisconnectDirectory3.png)
+	![Your account is now disconnected](_img/manage-work-access/azuredisconnectdirectory3.png)
 
 0.	Unlink your Team Services account from the source Azure subscription.
 
-	![Select your Team Services account](./_img/_shared/azure-unlink-subscription.png)
+	![Select your Team Services account](_img/_shared/azure-unlink-subscription.png)
 
 	Your Team Services account is removed from the Azure classic portal. 
 	You can now link your account to another Azure subscription and directory.
@@ -169,19 +169,19 @@ with the Microsoft account that you're using for the migration.
 
 0.	Link your Team Services account to the target Azure subscription.
 
-	![Link Team Services account](./_img/set-up-billing/AzureDeveloperServicesStart.png)
+	![Link Team Services account](_img/set-up-billing/azuredeveloperservicesstart.png)
 
-	![Select your Team Services account and target Azure subscription](./_img/change-azure-active-directory/select-account-subscription.png)
+	![Select your Team Services account and target Azure subscription](_img/change-azure-active-directory/select-account-subscription.png)
 
 0.	Configure your account.
 
-	![Configure your account](./_img/manage-work-access/azure-configure-disconnect.png)
+	![Configure your account](_img/manage-work-access/azure-configure-disconnect.png)
 
 0.	Connect your account to the target directory. Save your changes when you're done.
 
-	![Connect your Team Services account](./_img/manage-work-access/AzureDisconnectDirectory3.png)
+	![Connect your Team Services account](_img/manage-work-access/azuredisconnectdirectory3.png)
 
-	![Select target directory](./_img/change-azure-active-directory/select-directory.png)
+	![Select target directory](_img/change-azure-active-directory/select-directory.png)
 
 0.	To check that you finished this task successfully, invite a user from the target directory 
 to your Team Services account. Confirm that they can sign in. Learn how to 

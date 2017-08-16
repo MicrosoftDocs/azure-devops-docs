@@ -39,15 +39,15 @@ If you're using TFS 2015 Update 2 or later then you can create a team project fr
 
 3. Open the collection administration page for the collection you want to create the team project in. 
 
-    ![Collection administration link](_img/create-team-project/AdminOverview.png)
+    ![Collection administration link](_img/create-team-project/adminoverview.png)
     
 4. Click New team project.
 
-    ![New team project button](_img/create-team-project/CollectionOverview.png)
+    ![New team project button](_img/create-team-project/collectionoverview.png)
 
 5. Provide a name for your new Team project, select it's initial source control type, and select a process to create a team project.
 
-    ![Create team project dialog](_img/create-team-project/CreateProject.png)
+    ![Create team project dialog](_img/create-team-project/createproject.png)
 
 ### From Team Explorer
 
@@ -152,7 +152,7 @@ If you receive an error message that states you don’t have permission, go get 
 
 **Error TF30169: The New Team Project Wizard was unable to download the process template {0}.**  indicates that SharePoint site process templates are not available on the server that hosts SharePoint Products.
 
-Contact the system administrator for the server that hosts SharePoint Products and request the required process templates be added to the server. See [Requirements and compatibility](./requirements.md).
+Contact the system administrator for the server that hosts SharePoint Products and request the required process templates be added to the server. See [Requirements and compatibility](requirements.md).
 
 ###To resolve Error TF30321 
 

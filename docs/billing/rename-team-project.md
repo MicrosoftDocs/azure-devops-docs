@@ -28,9 +28,9 @@ You can change the name of a team project from its administration overview page.
 
 2. Edit the name. 
 
-	![Enter a new project name](_img/rename-team-project/ProjectRename1.png)
+	![Enter a new project name](_img/rename-team-project/projectrename1.png)
 	
-	If you don't see the textbox appear, then you're not a member of the Project Administrators group for that particular project. Learn how to [get added](./add-users.md) to the Project Administrators group.
+	If you don't see the textbox appear, then you're not a member of the Project Administrators group for that particular project. Learn how to [get added](add-users.md) to the Project Administrators group.
 
 ### From the project collection administration page
 
@@ -42,7 +42,7 @@ You can also change the name of a team project from the project collection admin
 
 	![Rename menu item in the team project context menu on the project collection administration page](_img/rename-team-project/collection-rename.png)
 
-	If the rename action is disabled, then you're not a member of the Project Administrators group for that particular project. Learn how to [get added](./add-users.md) to the Project Administrators group.
+	If the rename action is disabled, then you're not a member of the Project Administrators group for that particular project. Learn how to [get added](add-users.md) to the Project Administrators group.
 
 
 <a id="more-work"></a>
@@ -79,25 +79,25 @@ Copy the repository URL to your clipboard.
 
 ![Git code explorer tab](_img/rename-team-project/team-project-git-tabs.png)
 
-![Remote URL for the repository](_img/rename-team-project/CloneURL.png)
+![Remote URL for the repository](_img/rename-team-project/cloneurl.png)
 
 #### Update your remote in Visual Studio 2015
 
 1. Connect to the repo.
 
- ![Connect to the repository](_img/rename-team-project/RepoConnect.png)
+ ![Connect to the repository](_img/rename-team-project/repoconnect.png)
  
 2. Open the project settings.
  
- ![Project settings](_img/rename-team-project/ProjectSettings.png)
+ ![Project settings](_img/rename-team-project/projectsettings.png)
 
 3. Open the repo settings.
 
- ![Repository settings](_img/rename-team-project/RepoSettings.png)
+ ![Repository settings](_img/rename-team-project/reposettings.png)
 
 4. Edit the fetch and push remote references and paste the URL that you [copied from the remote repo](#copy_remote_repo_url).
 
- ![Edit remote](_img/rename-team-project/EditRepoSettings.png)
+ ![Edit remote](_img/rename-team-project/editreposettings.png)
 
 #### Update your remote in older versions of Visual Studio from the command prompt
 
@@ -113,11 +113,11 @@ If you use an older version of Visual Studio or work with Git from the command p
 
 1. Refresh Team Explorer.
 
- ![Refresh Team Explorer](_img/rename-team-project/RefreshTeamExplorer.png)
+ ![Refresh Team Explorer](_img/rename-team-project/refreshteamexplorer.png)
 
 2. Team Explorer now shows the updated repo name. 
 
- ![Team Explorer Updated](_img/rename-team-project/Result.png)
+ ![Team Explorer Updated](_img/rename-team-project/result.png)
 
 
 <a id="tfvc-server"></a>

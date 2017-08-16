@@ -21,7 +21,7 @@ apps can use these authentication methods:
 *	[OAuth](../../integrate/get-started/Authentication/oauth.md) 
 to generate tokens for accessing [REST APIs for Team Services and Team Foundation Server](../../integrate/get-started/rest/basics.md). 
 The [Accounts](https://visualstudio.com/integrate/api/shared/accounts.md) 
-and [Profiles](https://visualstudio.com/integrate/api/shared/profiles.md) 
+and [Profiles](../../integrate/api/shared/profiles.md) 
 APIs support only OAuth.
 
 *	[Alternate credentials](../../git/auth-overview.md#alternate-credentials) 
@@ -72,7 +72,7 @@ To continue, you'll need at least Basic access and Team Services account owner p
 0.  Review your application connection settings. 
 Change these settings, based on your security policies.
 
-    ![Under Application Connections, change each setting as necessary, save your changes](_img/change-account-access-policies/Connections.png)
+    ![Under Application Connections, change each setting as necessary, save your changes](_img/change-account-access-policies/connections.png)
 
 	[Need help?](#get-support)
 

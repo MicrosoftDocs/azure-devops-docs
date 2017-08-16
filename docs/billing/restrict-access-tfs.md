@@ -13,7 +13,7 @@ ms.date: 08/04/2017
 
 **Team Services** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-You can restrict access to resources that you manage in TFS or Team Services by setting the permission state to Deny through a security group. For a comprehensive list of default groups and permissions, see [Permission reference for Team Foundation Server](./permissions.md).
+You can restrict access to resources that you manage in TFS or Team Services by setting the permission state to Deny through a security group. For a comprehensive list of default groups and permissions, see [Permission reference for Team Foundation Server](permissions.md).
 
 ## TFVC
 
@@ -26,7 +26,7 @@ From the Version Control tab in the TWA administration context, you can set perm
 For team projects that use Git for version control, you can set the following permissions.
 
 ![Permissions page for Git project in admin context](_img/restrict-access-tfs/git-permissions.png)  
-For additional information, see [Permission reference for Team Foundation Server](./permissions.md).
+For additional information, see [Permission reference for Team Foundation Server](permissions.md).
 
 ## Build definitions
 
@@ -39,7 +39,7 @@ You can set permissions for the build operations shown in the following image.
 ![Permissions page for TF version control](_img/restrict-access-tfs/readers-permissions.png)  
 
 Also, you can set permissions by opening the ![Context Menu Icon](_img/context-menu-icon.png) context menu for a build definition.  
-For additional information, see [Permission reference for Team Foundation Server](./permissions.md).
+For additional information, see [Permission reference for Team Foundation Server](permissions.md).
 
 <a name="work-items"></a>
 ## Work items

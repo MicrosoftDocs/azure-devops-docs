@@ -185,7 +185,7 @@ Team administrators can manage settings for their team, including team alerts an
 <li style="margin-bottom:0px">[Swimlanes](../../work/kanban/expedite-work.md)</li>
 <li style="margin-bottom:0px">[Card reordering](../../work/customize/reorder-cards.md)</li> 
 <li style="margin-bottom:0px">[Definition of Done](../../work/kanban/definition-of-done.md)</li>
-<li style="margin-bottom:0px">[Cumulative flow chart](../../report//guidance/cumulative-flow.md#configure) </li>
+<li style="margin-bottom:0px">[Cumulative flow chart](../../report/guidance/cumulative-flow.md#configure) </li>
 </ul>
 
 </div>

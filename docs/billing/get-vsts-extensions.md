@@ -53,7 +53,7 @@ like Cloud-based Load Testing.
 
 0.  Sign in to the [Visual Studio Marketplace > Visual Studio Team Services](https://marketplace.visualstudio.com/vsts).
 	
-	<img alt="Visual Studio Marketplace" src="./_img/get-vsts-extensions/marketplace.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Visual Studio Marketplace" src="_img/get-vsts-extensions/marketplace.png" style="border: 1px solid #CCCCCC" />
 
 0.	Find and select the extension that you want to install.
 
@@ -68,11 +68,11 @@ install or buy the extension.
 	**Start Trial** appears only if the extension offers a trial. 
 	Learn [how to try extensions](https://www.visualstudio.com/docs/setup-admin/team-services/try-additional-features-vs).
 
-	<img alt="Install or buy the extension" src="./_img/get-vsts-extensions/test-manager-extension.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Install or buy the extension" src="_img/get-vsts-extensions/test-manager-extension.png" style="border: 1px solid #CCCCCC" />
 
 0.  Select your Team Services account to install this extension. 
 
-	<img alt="Select Team Services account for this extension" src="./_img/get-vsts-extensions/account.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Select Team Services account for this extension" src="_img/get-vsts-extensions/account.png" style="border: 1px solid #CCCCCC" />
 
 	*	[Why don't I see any Team Services accounts?](#no-accounts) 
 
@@ -82,11 +82,11 @@ install or buy the extension.
 select an [Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) 
 that you'll use to pay for extension access.
 	
-	<img alt="For paid extensions, select an Azure subscription for billing" src="./_img/get-vsts-extensions/select-azure-sub.png" style="border: 1px solid #CCCCCC" />
+	<img alt="For paid extensions, select an Azure subscription for billing" src="_img/get-vsts-extensions/select-azure-sub.png" style="border: 1px solid #CCCCCC" />
 
 	Then select the number of users who will need paid access.
 
-	<img alt="Select number of users who need paid extension access" src="./_img/get-vsts-extensions/select-paid-users.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Select number of users who need paid extension access" src="_img/get-vsts-extensions/select-paid-users.png" style="border: 1px solid #CCCCCC" />
 
 0.	Finish your installation. 
 
@@ -95,7 +95,7 @@ make sure that you [assign the extension to users who need access](#assign-exten
 Otherwise, you can now go to your Team Services account to use your extension. 
 Also, tell your team about this extension, so they can start using its capabilities too.
 
-	<img alt="Extension installed" src="./_img/get-vsts-extensions/go-to-account.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Extension installed" src="_img/get-vsts-extensions/go-to-account.png" style="border: 1px solid #CCCCCC" />
 
 <a name="request"></a>
 ## Request extensions for your Team Services account
@@ -105,27 +105,27 @@ You can request extensions instead.
 
 0.  Sign in to [Visual Studio Marketplace > Visual Studio Team Services](https://marketplace.visualstudio.com/vsts).
 	
-	<img alt="Visual Studio Marketplace" src="./_img/get-vsts-extensions/marketplace.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Visual Studio Marketplace" src="_img/get-vsts-extensions/marketplace.png" style="border: 1px solid #CCCCCC" />
 
 0. Find and select the extension that you want to request.
 
 0. Try to install the extension.
 
-	<img alt="Extension details" src="./_img/get-vsts-extensions/hockey-app-extension.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Extension details" src="_img/get-vsts-extensions/hockey-app-extension.png" style="border: 1px solid #CCCCCC" />
 
 0. Select the Team Services account where you want to install the extension. 
 If you don't have permissions to install the extension, 
 you can request it now.
 
-	<img alt="Request extension" src="./_img/get-vsts-extensions/request-install.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Request extension" src="_img/get-vsts-extensions/request-install.png" style="border: 1px solid #CCCCCC" />
 
 	You can review your requests after the Visual Studio Marketplace sends the request to the account owner.	
 
-	<img alt="Go to requests" src="./_img/get-vsts-extensions/view-request.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Go to requests" src="_img/get-vsts-extensions/view-request.png" style="border: 1px solid #CCCCCC" />
 
 	Your requests appear on your Team Services account's extensions page.
 
-	<img alt="View requested extensions" src="./_img/get-vsts-extensions/my-request.png" style="border: 1px solid #CCCCCC" />
+	<img alt="View requested extensions" src="_img/get-vsts-extensions/my-request.png" style="border: 1px solid #CCCCCC" />
 
 	Your Team Services account owner or project collection administrator 
 	can review your request after they get it.
@@ -148,7 +148,7 @@ When you approve the request, Team Services automatically installs the extension
 
 0.	Review and approve your requested extensions.
 
-	<img alt="Extensions tab, requested extensions" src="./_img/get-vsts-extensions/approve-request-updated-ui.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Extensions tab, requested extensions" src="_img/get-vsts-extensions/approve-request-updated-ui.png" style="border: 1px solid #CCCCCC" />
 
 0.	After you approve extension requests, 
 Team Services automatically installs those extensions. 
@@ -448,7 +448,7 @@ or you don't have access to your linked Azure subscription.
 
 		0.	Under **Settings**, go to **Azure Active Directory**.
 
-			<img alt="Under Azure Active Directory, check for a directory connected to Team Services account" src="./_img/get-vsts-extensions/team-services-account-no-directory.png" style="border: 1px solid #CCCCCC" />
+			<img alt="Under Azure Active Directory, check for a directory connected to Team Services account" src="_img/get-vsts-extensions/team-services-account-no-directory.png" style="border: 1px solid #CCCCCC" />
 
 		Find the directory that's associated with your Azure subscription in 
 		the Azure classic portal (```https://manage.windowsazure.com```).
@@ -458,7 +458,7 @@ or you don't have access to your linked Azure subscription.
 		0.	Go to **Settings**.
 		0.	Find your Azure subscription and the associated directory.
  
-			<img alt="Subscription directory" src="./_img/get-vsts-extensions/subscription-directory.png" style="border: 1px solid #CCCCCC" />
+			<img alt="Subscription directory" src="_img/get-vsts-extensions/subscription-directory.png" style="border: 1px solid #CCCCCC" />
 
 		To resolve this problem, follow these steps:
 
@@ -487,7 +487,7 @@ change the directory for your Azure subscription to match the directory that's c
 	0.	Under **Settings**, go to ** Azure Active Directory** 
 	to find the connected directory.
 
-		<img alt="Under Azure Active Directory, find directory connected to Team Services account" src="./_img/get-vsts-extensions/team-services-account-directory.png" style="border: 1px solid #CCCCCC" />
+		<img alt="Under Azure Active Directory, find directory connected to Team Services account" src="_img/get-vsts-extensions/team-services-account-directory.png" style="border: 1px solid #CCCCCC" />
 
 	Find the directory that's associated with your Azure subscription 
 	in the Azure classic portal (```https://manage.windowsazure.com```).
@@ -497,7 +497,7 @@ change the directory for your Azure subscription to match the directory that's c
 	0.	Go to **Settings**.
 	0.	Find your Azure subscription and the associated directory.
 
-		<img alt="Subscription directory" src="./_img/get-vsts-extensions/subscription-directory.png" style="border: 1px solid #CCCCCC" />
+		<img alt="Subscription directory" src="_img/get-vsts-extensions/subscription-directory.png" style="border: 1px solid #CCCCCC" />
 
 	Change the directory that's associated with your Azure subscription 
 	to match the directory that's connected to your Team Services account.
