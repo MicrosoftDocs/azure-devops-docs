@@ -14,7 +14,7 @@ ms.date: 10/20/2016
 
 [!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
 
-A **release definition** is one of the fundamental concepts in Release Management for Team Services and TFS.
+A **release definition** is one of the fundamental concepts in Release Management for VSTS and TFS.
 It defines the end-to-end release process for an application to be deployed across various environments.
 
 You start using Release Management by authoring a release definition for your application. To author a release definition, you must specify the [artifacts](artifacts.md) that make up the application and the **release process**.

@@ -14,7 +14,7 @@ ms.date: 08/12/2016
 
 <!-- [!INCLUDE [version-header-vs-tfs](_shared/version-header-vs-tfs.md)] -->
 
-Visual Studio Team Services includes build tasks to
+Visual Studio Team Services (VSTS) includes build tasks to
 make it easy to integrate your build and testing 
 efforts into your release pipelines with rich 
 reporting highlighting build-on-build changes, 
@@ -35,14 +35,14 @@ In this topic:
 <a name="build-integration"></a>
 ## Build integration
 
-Visual Studio Team Services build tasks make it 
+VSTS build tasks make it 
 easy to build to build Java applications. These 
 same tasks also make it easy to test your Java 
 applications. The example below uses Maven to build
 a Java application, runs JUnit tests, and uses Maven and 
 to test the application.
 
-![Visual Studio Team Services build and test integration](_img/continuous-test-java/continuous-test-java-01.png)
+![VSTS build and test integration](_img/continuous-test-java/continuous-test-java-01.png)
 
 The output of these tests and other testing 
 frameworks is made available in the standard 
@@ -55,7 +55,7 @@ importing the test results from JUnit.
 <a name="summary-results"></a>
 ## Build-on-build summary results
 
-Visual Studio Team Services automatically adds 
+VSTS automatically adds 
 build-on-build changes in the summary view to give 
 a clear indication if your quality is improving.
 In the example below you can see 16 new tests were 

@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 
 In this topic:
 
-* **Configure Code Search in Team Services**
+* **Configure Code Search in VSTS**
   - [Install the Code Search extension](#config-ts)
   - [Uninstall the Code Search extension](#uninstall-ts)<p />
 
@@ -36,16 +36,16 @@ Stakeholders do not have access to code, and therefore no access to Code Search.
 All users have access to Work Item Search.
 
 <a name="config-ts"></a>
-## Install Code Search in Team Services
+## Install Code Search in VSTS
 
 Go to [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=703823&clcid=0x409)
-to install the extension in your Team Services account as an administrator.
-Non-administrative users can also go here to request the extension be added to Team Services. 
+to install the extension in your VSTS account as an administrator.
+Non-administrative users can also go here to request the extension be added to VSTS. 
 
 For more details, see [Install an extension](../../marketplace/get-vsts-extensions.md#install-extension) in the Marketplace documentation.
 
 <a name="uninstall-ts"></a>
-## Uninstall Code Search in Team Services
+## Uninstall Code Search in VSTS
 
 See [Uninstall or disable an extension](../../marketplace/get-vsts-extensions.md#uninstall-disable-extension) in the Marketplace documentation. 
 
@@ -602,7 +602,7 @@ Code Search for Team Foundation Server 2017 has the following limitations:
 1. The search box is shown only in the context of a project page. 
    Navigate to a project and check if the search box is displayed at the top right. 
 
-   ![The Code Search textbox in the VS Team Services title bar](_img/get-started/title-bar-search-box-empty-outlined.png)    
+   ![The Code Search textbox in the VSTS title bar](_img/get-started/title-bar-search-box-empty-outlined.png)    
 
 1. If the search box is not shown, verify that the extension is installed for the collection. 
    If not, [install](#config-ts) or [configure](#config-tfs) the extension.

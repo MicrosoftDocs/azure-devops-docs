@@ -107,7 +107,7 @@ If you're running release builds of .cpp unit tests, make sure that you have Win
 <a name="xaml-build"></a>
 ### Q: What are the differences if I am still using a XAML build?
 
-**A**: If you are using a XAML build in Team Services or TFS, you can run tests
+**A**: If you are using a XAML build in VSTS or TFS, you can run tests
 that you have associated in a Build-Deploy-Test workflow using a
 [Lab environment](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 You can also run tests using Microsoft Test Manager (MTM) and a
@@ -130,7 +130,7 @@ You can also run tests using Microsoft Test Manager (MTM) and a
 ### Q: Can I configure work items to open in Visual Studio?
 
 **A**: Yes, if you want test work items to open inside Visual Studio
-instead of the default Team Services or TFS UI in your web browser,
+instead of the default VSTS or TFS UI in your web browser,
 change the **Work Items | General** setting from the **Tools | Options** menu in Visual Studio. 
 
 ![Change work item display mode](_img/associate-automated-test-with-test-case/work-item-compatibility.png)
@@ -235,7 +235,7 @@ See [How does selecting "Test run (for on-demand runs)" in the Visual Studio Tes
 #### Q: Can I trigger these runs and view the results in Microsoft Test Manager?
 
 **A:** No. MTM will not support running automated tests against Team Foundation
-builds. It only works in the web-based interface for Team Services and TFS.
+builds. It only works in the web-based interface for VSTS and TFS.
 All new manual and automated testing product development investments will be
 in the web-based interface. No further development is planned for MTM. See
 [Guidance on Microsoft Test Manager usage](../../manual-test/mtm/guidance-mtm-usage.md).
@@ -251,7 +251,7 @@ runs can still be triggered but releases will be queued for processing
 until agents are available.
 
 * You have sufficient concurrent pipelines to enable concurrent releases.
-See [Concurrent pipelines in Team Services](../../build-release/concepts/licensing/concurrent-pipelines-ts.md) 
+See [Concurrent pipelines in VSTS](../../build-release/concepts/licensing/concurrent-pipelines-ts.md) 
 or [Concurrent pipelines in TFS](../../build-release/concepts/licensing/concurrent-pipelines-tfs.md) for more information. 
 
 * Testers do not run the same tests in parallel. Doing so may cause

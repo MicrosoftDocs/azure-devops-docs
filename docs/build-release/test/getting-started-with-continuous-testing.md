@@ -13,7 +13,7 @@ ms.date: 07/03/2017
 # Get started with continuous testing
 
 Make sure that your app still works after every 
-check-in and build using Visual Studio Team Services. 
+check-in and build using Visual Studio Team Services (VSTS). 
 Find problems earlier by running tests 
 automatically with each build. When your build is 
 done, review your test results to start resolving 
@@ -33,7 +33,7 @@ This overview shows how to get started by running
 unit tests with your build. 
 
 1. [Check in your solution](../../tfvc/overview.md) 
-   to Visual Studio Team Services. Include your test projects.
+   to VSTS. Include your test projects.
 
 1. [Create a build definition](../overview.md) 
    that builds your solution after each check-in, 
@@ -47,14 +47,14 @@ machines that you've already set up. Then set up
 your build to run your app and tests in the 
 environments that you created.
 
->You can create and use a test lab instead of using Team Services or Team Foundation Server. For more information, see
+>You can create and use a test lab instead of using VSTS or TFS. For more information, see
 [Use a lab environment for your devops](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle)
 
 <a name="createbuild"></a>
 ## Create a build definition
 
 Your build definition must include a test task that runs unit tests. 
-For example, if you're building a Visual Studio solution in Team Services,
+For example, if you're building a Visual Studio solution in VSTS,
 your build definition should include a **Visual Studio Test** task. After your 
 build starts, this task automatically runs all the unit tests in your 
 solution - on the same build machine. 

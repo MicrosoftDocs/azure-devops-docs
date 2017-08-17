@@ -12,7 +12,7 @@ ms.date: 08/12/2016
 # Continuous integration, test, and deployment tutorial
 
 This tutorial demonstrates how you can use the continuous integration and
-continuous deployment features of Visual Studio Team Services and
+continuous deployment features of Visual Studio Team Services (VSTS) and
 Microsoft Team Foundation Server (TFS) to build, test, and deploy
 applications quickly and efficiently to Azure App Services; and
 run a simple load test after deploying every update.
@@ -50,15 +50,14 @@ unit tests that you can execute as part of the build process.
 
    ![Including unit tests in your project](_img/example-continuous-testing/example-continuous-testing-11.png)
 
-1. Save and close the new project, then check it into your Visual Studio Team Services or
-   Team Foundation Server repository. 
+1. Save and close the new project, then check it into your VSTS or TFS repository. 
 
    ![Checking the sample app into the repository](_img/example-continuous-testing/example-continuous-testing-12.png)
 
 >For more details about creating apps in Visual Studio, see
 [Solutions and Projects in Visual Studio](https://docs.microsoft.com/visualstudio/ide/solutions-and-projects-in-visual-studio).
-For more details about using Team Services code repositories, see
-[Share your code with Visual Studio and Team Services Git](../../git/share-your-code-in-git-vs.md).
+For more details about using VSTS code repositories, see
+[Share your code with Visual Studio and VSTS Git](../../git/share-your-code-in-git-vs.md).
 
 <a name="configure-ci"></a>
 ## Configure continuous integration
@@ -67,7 +66,7 @@ In this section, you will create a build definition that is configured to
 run automatically when you check in any changes to the sample app, and it
 will automatically execute the unit tests it contains.
 
-1. Sign into your Visual Studio Team Services account (**https://**_your-acccount_**.visualstudio.com**)
+1. Sign into your VSTS account (**https://**_your-acccount_**.visualstudio.com**)
    and open the project where you checked in the sample app.
 
 1. Open the **Build &amp; Release** hub and, in the **Builds** tab, choose
@@ -112,7 +111,7 @@ will automatically execute the unit tests it contains.
 
    ![Viewing the test results](_img/example-continuous-testing/example-continuous-testing-31.png)
 
->For more details about build definitions in Team Services, see
+>For more details about build definitions in VSTS, see
 [Continuous integration on any platform](../../build-release/overview.md). For more details about unit tests and the results, see 
 [Get started with unit testing](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing).
 
@@ -202,9 +201,9 @@ a simple load test to validate the deployment.
    ![Viewing details of the load test run](_img/example-continuous-testing/example-continuous-testing-54.png)
 
    >For more details about release definitions, see
-   [Release Management in Team Services](../../build-release/concepts/definitions/release/index.md).
+   [Release Management in VSTS](../../build-release/concepts/definitions/release/index.md).
    For more details about load tests and the results, see 
-   [Run URL-based load tests with Visual Studio Team Services](../../load-test/get-started-simple-cloud-load-test.md).
+   [Run URL-based load tests with VSTS](../../load-test/get-started-simple-cloud-load-test.md).
 
 <a name="test-failure"></a>
 ## Explore behavior when a test fails
@@ -227,7 +226,7 @@ the build process.
    }
    ```
 
-1. Save the change and check in the change to your Team Services repository.
+1. Save the change and check in the change to your VSTS repository.
 
 1. Open the **Builds** tab of the **Build &amp; Release** hub. You'll see
    a build of your build definition in "_in progress_". Choose the build number link 
@@ -284,7 +283,7 @@ post-deployment load test.
 
    ```
 
-1. Save the change and check in the change to your Team Services repository.
+1. Save the change and check in the change to your VSTS repository.
 
 1. Open the **Builds** tab of the **Build &amp; Release** hub. You'll see
    a build of your build definition in "_in progress_". Choose the build number link 

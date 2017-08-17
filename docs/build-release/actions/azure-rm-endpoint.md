@@ -10,7 +10,7 @@ ms.date: 10/20/2016
 ---
 # How to: Troubleshoot Azure Resource Manager service endpoints
 
-**Team Services | TFS 2017 | TFS 2015**
+**VSTS | TFS 2017 | TFS 2015**
 
 This topic will help you resolve issues you may encounter when creating
 a connection to Microsoft Azure using an **Azure Resource Manager** service endpoint.
@@ -107,7 +107,7 @@ These errors typically occur when your session has expired.
 
 To resolve these issues:
 
-* Sign out of Team Services or TFS.
+* Sign out of VSTS or TFS.
 * Open an InPrivate or incognito browser window and navigate to [https://www.visualstudio.com/team-services/](https://www.visualstudio.com/team-services/).
 * If you are prompted to sign out, do so.
 * Sign in using the appropriate credentials.

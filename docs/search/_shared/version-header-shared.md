@@ -1,1 +1,1 @@
-**Team Services | TFS 2017**  
+**VSTS | TFS 2017**  

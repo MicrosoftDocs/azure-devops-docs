@@ -12,13 +12,13 @@ ms.date: 10/20/2016
 
 # Variable groups
 
-**TFS 2017 | Team Services**
+**TFS 2017 | VSTS**
 
 Use a variable group to store values that you want to make available across
 multiple release definitions. Variable groups are defined and managed in the **Library** tab of the
 **Build &amp; Release** hub.
 
-> Variable groups can only be used in release definitions in TFS 2017 and Team Services at present. They cannot yet be used in build definitions.
+> Variable groups can only be used in release definitions in TFS 2017 and VSTS at present. They cannot yet be used in build definitions.
 
 ## Use a variable group
 

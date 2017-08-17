@@ -13,7 +13,7 @@ ms.date: 06/15/2017
 
 <!-- [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] -->
 
-Find problems early after changes are checked in and built by running continuous tests using Visual Studio Team Services or Team Foundation Server.
+Find problems early after changes are checked in and built by running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).
 
 Before you start:
 
@@ -23,7 +23,7 @@ Before you start:
 
 ## Step 1: Set up app deployment for your build
 
-1. In Visual Studio Team Services or Team Foundation Server, go to your team project.
+1. In VSTS or TFS, go to your team project.
 
 1. Go to your build definition. Add steps to deploy your app for testing. For example, if you're testing a Visual Studio solution:
 

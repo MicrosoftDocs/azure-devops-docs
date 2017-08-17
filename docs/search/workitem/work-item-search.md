@@ -20,7 +20,7 @@ Work Item Search provides fast and flexible search across all your work items ov
 1. In the search textbox at the top right of the window, check that the text says
    _Search work items_.
 
-   ![The Work Item Search textbox in the VS Team Services title bar](_img/get-started/title-bar-search-box-empty-outlined.png)    
+   ![The Work Item Search textbox in the VSTS title bar](_img/get-started/title-bar-search-box-empty-outlined.png)    
 
    If you have the Code Search extension installed, the search text box may
    say _Search code_. In this case, use the drop-down selector to change it. 

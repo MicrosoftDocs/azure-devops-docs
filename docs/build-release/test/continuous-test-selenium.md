@@ -125,9 +125,9 @@ from Visual Studio Test Explorer.
 To include the Selenium test as part of a build,
 the source code must be in version control.
 
-![Checking the code into Visual Studio Team Services](_img/continuous-test-selenium/continuous-test-selenium-05.png)
+![Checking the code into VSTS](_img/continuous-test-selenium/continuous-test-selenium-05.png)
 
-1. In your Visual Studio Team Services account where
+1. In your Visual Studio Team Services (VSTS) account where
    you checked in the test code, open the **Build &amp; Release** hub and select the **Builds** tab.
 
 1. Create a new build definition using the **.NET Desktop**

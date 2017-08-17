@@ -11,7 +11,7 @@ ms.date: 21/03/2017
 
 # Run automated tests from test plans in the Test hub
 
-<!-- **Team Services | TFS 2017 Update 2** -->
+<!-- **VSTS | TFS 2017 Update 2** -->
 
 Automate test cases in your test plans and run them directly from the **Test** hub:
 

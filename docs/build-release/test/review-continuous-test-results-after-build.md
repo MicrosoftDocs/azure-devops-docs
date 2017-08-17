@@ -11,7 +11,7 @@ ms.date: 08/12/2016
 
 # Review continuous test results after a build
 
-After your build finishes running continuous tests using Visual Studio Team Services or Team Foundation Server,
+After your build finishes running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS),
 review your test results to start analyzing any problems that you found.
 
 In this example, you'll learn how to:
@@ -24,7 +24,7 @@ In this example, you'll learn how to:
 <a name="reviewtests"></a>  
 ## Review your test results
 
-1. In Visual Studio Team Services or Team Foundation Server, go to your team project.
+1. In VSTS or TFS, go to your team project.
 
 1. Find your build and open the build summary.
 

@@ -18,8 +18,8 @@ and easily drill down or widen your search
 ## Prepare
 
 Go to [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=703823&clcid=0x409)
-to install the extension in your Team Services account as an administrator.
-Non-administrative users can also go here to request the extension be added to Team Services. 
+to install the extension in your VSTS account as an administrator.
+Non-administrative users can also go here to request the extension be added to VSTS. 
 For more details, see [Install an extension](../../marketplace/get-vsts-extensions.md#install-extension) in the Marketplace documentation.
 
 >Only users with Basic access can use Code Search.

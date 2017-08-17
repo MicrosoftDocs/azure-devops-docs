@@ -21,7 +21,7 @@ appropriate tasks and settings, which can considerably reduce the time and
 effort required to create a release definition.
 
 A set of pre-defined environment templates are available in
-Team Services and in each version of TFS. You can use these templates
+VSTS and in each version of TFS. You can use these templates
 when you create a new release definition or add a new
 environment to a definition. You can also create your own custom
 environment templates from an environment you have populated and

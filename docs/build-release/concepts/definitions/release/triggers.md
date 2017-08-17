@@ -34,7 +34,7 @@ you can configure continuous deployment for each of them.
 In other words, you can choose to have a release created automatically when a new build
 of any of those artifacts is produced. You can further choose to create the release only
 when the build is produced by compiling code from certain branches
-(only applicable when the code is in a Team Services or a TFS Git repository)
+(only applicable when the code is in a VSTS or a TFS Git repository)
 or when the build has certain tags.
 
 Note that, even though a release is automatically created, it

@@ -11,7 +11,7 @@ ms.date: 08/12/2016
 
 # Continuous testing scenarios and capabilities
 
-<!-- **Team Services | TFS 2017 | TFS 2015 | [Previous version](https://msdn.microsoft.com/library/ee702477%28v=vs.120%29.aspx)**   -->
+<!-- **VSTS | TFS 2017 | TFS 2015 | [Previous version](https://msdn.microsoft.com/library/ee702477%28v=vs.120%29.aspx)**   -->
 
 > See also [Manual and exploratory testing](../../manual-test/index.md), [Load and performance testing](../../load-test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
 
@@ -21,13 +21,13 @@ choose the technologies and frameworks, then test
 your changes continuously in a fast, scalable, and 
 efficient manner. 
 
-![Test with Visual Studio Team Services and Team Foundation Server](_img/continuous-testing/test-types.png)
+![Test with Visual Studio VSTS and Team Foundation Server](_img/continuous-testing/test-types.png)
 
 <a name="maintain-quality"></a>
 ## Maintain quality and find problems as you develop
 
-Continuous testing with Visual Studio Team Services
-or Team Foundation Server ensures your app still 
+Continuous testing with Visual Studio Team Services (VSTS)
+or Team Foundation Server (TFS) ensures your app still 
 works after every check-in and build, enabling you 
 to find problems earlier by running tests 
 automatically with each build.

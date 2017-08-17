@@ -12,17 +12,17 @@ ms.date: 12/04/2016
 
 # Search across all your code and work items
 
-Visual Studio Team Services and Team Foundation Server store a tremendous amount of information; 
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) store a tremendous amount of information; 
 work items for planning and tracking your work, version control to track code file changes, 
 and build and release services to help you ship effortlessly. 
 As your backlog and codebase expand and are divided across multiple projects, teams and repositories, 
 finding what you need becomes increasingly difficult. To maximize cross-team 
 collaboration and sharing, you need solutions that can quickly and 
 efficiently locate information across all your projects. The Search 
-extensions available for Visual Studio Team Services and Team Foundation Server 
+extensions available for VSTS and Team Foundation Server 
 enable you to search across all the projects, teams and repositories to which you have access. 
 
-![Search boxes in Team Services and Team Foundation Server](_img/_shared/title-bar-search-box-select-type.png)
+![Search boxes in VSTS and TFS](_img/_shared/title-bar-search-box-select-type.png)
 
 The Search extensions make it easy to search for information across all
 your projects, from anywhere and any computer or mobile device, using just a web browser.

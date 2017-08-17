@@ -30,7 +30,7 @@ The process to associate an automated test with a test case is:
 1. Create a test project containing your automated test.
    [What types of tests are supported?](reference-qa.md#test-types)
 
-1. Check your test project into a Team Services or Team
+1. Check your test project into a VSTS or Team
    Foundation Server (TFS) repository.
 
 1. Create a build definition for your project, ensuring that it
@@ -43,7 +43,7 @@ The process to associate an automated test with a test case is:
    been added to a test plan that uses the build you just defined. 
 
 If you are using Team Foundation Build and Release Management in
-Team Services or TFS (not a [XAML build](reference-qa.md#xaml-build)), you can run associated tests in the 
+VSTS or TFS (not a [XAML build](reference-qa.md#xaml-build)), you can run associated tests in the 
 Build & Release pipeline by using the
 [Visual Studio Test Agent Deployment](../../build-release/steps/test/visual-studio-test-agent-deployment.md) and
 [Run Functional Tests](../../build-release/steps/test/run-functional-tests.md) tasks.

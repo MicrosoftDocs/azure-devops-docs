@@ -15,7 +15,7 @@ ms.date: 08/12/2016
 
 To test your app using different platforms and configurations,
 set up separate environments to run your app and tests with your
-builds in Visual Studio Team Services or Team Foundation Server.
+builds in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).
 
 ## Set up machines to run your app and tests
 
@@ -25,7 +25,7 @@ You'll need to set up physical or virtual machines to run your app and tests, fo
 
 * Machines with the necessary browsers to run your tests
 
-With Visual Studio Team Services, you can define environments that have physical and virtual machines, such as Azure VMs and Azure resource groups. With Team Foundation Server, you can define environments using only physical machines.
+With VSTS, you can define environments that have physical and virtual machines, such as Azure VMs and Azure resource groups. With TFS, you can define environments using only physical machines.
 
 If you want to use a PowerShell script to deploy your app, make sure to:
 
@@ -40,7 +40,7 @@ to install your agents.
 
 ## Define a list of machines to run your app and tests
 
-Previous versions of Team Services and TFS included the capability to define
+Previous versions of VSTS and TFS included the capability to define
 **Machine Groups**. However, this feature has been deprecated and it is no longer
 possible to use it to create machine groups.
 

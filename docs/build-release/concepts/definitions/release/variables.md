@@ -82,8 +82,8 @@ With the exception of **System.Debug**, these variables are read-only and their 
 
 | Variable name | Description | Example | Not available in |
 |---------------|-------------|---------|--------------|
-| System.TeamFoundationServerUri | The URL of the Release Management service endpoint in the TFS or Team Services account. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
-| System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or Team Services account. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/fabrikam.visualstudio.com/ | |
+| System.TeamFoundationServerUri | The URL of the Release Management service endpoint in the TFS or VSTS account. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
+| System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or VSTS account. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/fabrikam.visualstudio.com/ | |
 | System.CollectionId | The ID of the collection to which this build or release belongs. | 6c6f3423-1c84-4625-995a-f7f143a1e43d | TFS 2015 |
 | System.TeamProject | The name of the team project to which this build or release belongs. | Fabrikam | |
 | System.TeamProjectId | The ID of the team project to which this build or release belongs. | 79f5c12e-3337-4151-be41-a268d2c73344 | TFS 2015 |

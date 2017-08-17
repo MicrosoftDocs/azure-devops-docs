@@ -12,7 +12,7 @@ ms.date: 10/20/2016
 
 # Phases in Build and Release Management
 
-**TFS 2017 | Team Services**
+**TFS 2017 | VSTS**
 
 Tasks can run in different **phases**, which effectively represent different execution locations.
 
@@ -30,7 +30,7 @@ By using different task phases in a build or release definition, you can:
   to artifacts. This can reduce execution time and improve deployment efficiency.
 
 * Permit access to OAuth tokens for only the tasks that need to interact
-  with Team Services or Team Foundation Server.  
+  with Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). 
 
 * Specify different execution timeouts for different sets of tasks to
   maximize deployment performance and control.
@@ -41,8 +41,8 @@ The task phases you can use are:
 
 * **[Agent phase](#agent-phase)**. In this phase, tasks are executed on the computer(s) that host the build and release agent.
 
-* **[Agentless phase](#server-phase)**. In this phase, tasks are orchestrated by and executed on the Team Services
-  or Team Foundation Server. An agentless phase does not require an agent
+* **[Agentless phase](#server-phase)**. In this phase, tasks are orchestrated by and executed on VSTS
+  or TFS. An agentless phase does not require an agent
   or any target computers.
 
 * **[Deployment group phase](#deployment-group-phase)**. In this phase, tasks are executed on the computer(s) defined in a
@@ -83,10 +83,10 @@ You can configure the following properties for an agent phase:
 
 * **Allow scripts to access OAuth token:** Use this option if you
   want to allow tasks running in this phase access to the
-  current Team Services or TFS OAuth security token.
+  current VSTS or TFS OAuth security token.
   This is useful in many scenarios, such as when you need to
   run a custom PowerShell script that invokes the REST APIs
-  on Team Services - perhaps to create a work item or query a build for information.
+  on VSTS - perhaps to create a work item or query a build for information.
 
 <a name="parallelexec"></a>
 ### Parallel and multiple execution using agent phases
@@ -139,7 +139,7 @@ Here are some examples where multiple execution is appropriate:
   deployment, you can specify the maximum number of agents that can
   be used at the same time for multi-configuration testing.
 
-  > Multi-configuration testing is only possible with Release definitions in TFS 2017 and Team Services. It is not possible with Build definitions.
+  > Multi-configuration testing is only possible with Release definitions in TFS 2017 and VSTS. It is not possible with Build definitions.
 
 To use multi-configuration or parallel deployment, set the options in the agent phase properties panel:
 
@@ -192,14 +192,14 @@ a maximum of four agents at any one time:
 ## Agentless phase
 
 Use an agentless phase in a release definition to run tasks that do
-not require an agent, and execute entirely on the Team Services or Team Foundation Server.
+not require an agent, and execute entirely on the VSTS or TFS.
 Only a few tasks, such as the [Manual Intervention](#maninterv) and [Invoke REST API](#invokeapi) tasks,
 are supported in an agentless phase at present. The properties of
 an agentless phase are similar to those of the [agent phase](#agent-props).
 
 ![Agentless phase properties](_img/phases-05.png)
 
-> Agentless phases and manual intervention tasks only work in release definitions in Team Services and TFS 2017.
+> Agentless phases and manual intervention tasks only work in release definitions in VSTS and TFS 2017.
 
 <a name="maninterv"></a>
 ### The Manual Intervention task
@@ -259,7 +259,7 @@ The timeout and additional options of a deployment group phase are the same as t
 You can add multiple phases to a release definition, and then add
 tasks to each one by selecting the target phase for the new tasks.
 
-> Multiple phases can only be used in Release Management in Team Services and TFS 2017.
+> Multiple phases can only be used in Release Management in VSTS and TFS 2017.
 
 For example, the definition shown below divides the overall release
 execution into separate execution phases by using two agent phases
@@ -273,7 +273,7 @@ In the example above:
    and, after this phase is complete, the agent is released.
 
 1. The agentless phase contains a Manual Intervention task
-   that runs on the Team Services or Team Foundation Server.
+   that runs on the VSTS or TFS.
    It does not execute on, or require, an agent or any target servers.
    The Manual Intervention task displays its message and waits for a
    "resume" or "reject" response from the user. In this example, if

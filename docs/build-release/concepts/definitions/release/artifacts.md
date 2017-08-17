@@ -122,7 +122,7 @@ sources.
 ### Team Build
 
 You can link a release definition to any of
-the build definitions in your Visual Studio Team Services account
+the build definitions in your Visual Studio Team Services (VSTS) account
 or Team Foundation Server project collection.
 
 > [!NOTE]
@@ -130,13 +130,13 @@ or Team Foundation Server project collection.
 definition. For XAML build definitions, an artifact with the name **drop**
 is published implicitly.
 
-Some of the differences in capabilities between different versions of TFS and Team Services are:
+Some of the differences in capabilities between different versions of TFS and VSTS are:
 
 * **TFS 2015**: You can link build definitions only from the same team project of your collection.
   You can link multiple definitions, but you cannot specify default versions. You can set up a continuous deployment trigger on only one of the definitions.
   When multiple build definitions are linked, the latest builds of all the other definitions are used, along with the build that triggered the release creation.
 
-* **TFS 2017** and **Team Services**: You can link build definitions from any of the team projects in your collection or account.
+* **TFS 2017** and **VSTS**: You can link build definitions from any of the team projects in your collection or account.
   You can link multiple build definitions and specify default values for each of them. You can set up continuous deployment triggers on
   multiple build sources. When any of the builds completes, it will trigger the creation of a release.
 
@@ -146,7 +146,7 @@ The following features are available when using Team Build sources:
 |---------|----------------------------------|
 | Auto-trigger releases | New releases can be created automatically when new builds (including XAML builds) are produced. See [Continuous Deployment](triggers.md) for details. You do not need to configure anything within the build definition. See the notes above for differences between version of TFS.|
 | Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for builds from Team Build. |
-| Work items and commits | Team Build integrates with work items in TFS and Team Services. These work items are also shown in the details of releases. Team Build integrates with a number of version control systems such as TFVC and Git, GitHub, Subversion, and external Git repositories. Release Management shows the commits only when the build is produced from source code in TFVC or Git.|
+| Work items and commits | Team Build integrates with work items in TFS and VSTS. These work items are also shown in the details of releases. Team Build integrates with a number of version control systems such as TFVC and Git, GitHub, Subversion, and external Git repositories. Release Management shows the commits only when the build is produced from source code in TFVC or Git.|
 | Artifact download | By default, build artifacts are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
 | Deployment section in build | The build summary includes a **Deployment** section, which lists all the environments to which the build was deployed. |
 
@@ -165,14 +165,14 @@ The following features are available when using Jenkins sources:
 
 | Feature | Behavior with Jenkins sources |
 |---------|-------------------------------|
-| Auto-trigger releases | You cannot configure a continuous deployment trigger for Jenkins sources in a release definition. However, you can use the [VS Team Services Continuous Deployment Plugin](https://wiki.jenkins-ci.org/display/JENKINS/VS+Team+Services+Continuous+Deployment+Plugin), available from the Jenkins website, to add post-build steps to Jenkins CI projects that trigger a release in TFS or Team Services when a build completes successfully. |
+| Auto-trigger releases | You cannot configure a continuous deployment trigger for Jenkins sources in a release definition. However, you can use the [VSTS Continuous Deployment Plugin](https://wiki.jenkins-ci.org/display/JENKINS/VS+Team+Services+Continuous+Deployment+Plugin), available from the Jenkins website, to add post-build steps to Jenkins CI projects that trigger a release in TFS or VSTS when a build completes successfully. |
 | Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for builds from Jenkins. |
 | Work items and commits | Release Management cannot show work items or commits for Jenkins builds. |
 | Artifact download | By default, Jenkins builds are downloaded to the agent. You can configure an option in the environment to [skip the download](../../process/phases.md#agent-phase) of artifacts. |
 <p />
 
 > [!NOTE]
-> Release Management in Team Services may
+> Release Management in VSTS may
 not be able to contact your Jenkins server if,
 for example, it is within your enterprise network.
 In this case you can integrate
@@ -183,7 +183,7 @@ projects when linking to a build, but you can type
 this into the link dialog field.
 
 For more information about Jenkins integration capabilities, see
-[Team Services Integration with Jenkins Jobs, Pipelines, and Artifacts](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/tfs-integration-jenkins-jobs-pipelines-artifacts/).
+[VSTS Integration with Jenkins Jobs, Pipelines, and Artifacts](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/tfs-integration-jenkins-jobs-pipelines-artifacts/).
 
 <h3 id="tfvcsource">TFVC, Git, and GitHub</h3>
 
@@ -262,7 +262,7 @@ The following features are available when using TeamCity sources:
 <p />
 
 > [!NOTE]
->  Release Management in Team Services may
+>  Release Management in VSTS may
 > not be able to contact your TeamCity server if,
 > for example, it is within your
 > enterprise network. In this case you can integrate
@@ -274,17 +274,17 @@ The following features are available when using TeamCity sources:
 
 <h3 id="onpremtfssource">External TFS</h3>
 
-You can use the Release Management service in Team Services to deploy artifacts
+You can use the Release Management service in VSTS to deploy artifacts
 published by an on-premises TFS server. You don't need to make the TFS
 server visible on the Internet; you just set up an on-premises
 automation agent. Builds from an on-premises TFS server are downloaded directly into the
 on-premises agent, and then deployed to the specified target servers. They
 will not leave your enterprise network. This allows you to leverage all of
 your investments in your on-premises TFS server, and take advantage of the
-Release Management capabilities in Team Services.
+Release Management capabilities in VSTS.
 
 >Using this mechanism, you can also deploy artifacts published in one
-Team Services account from another Team Services account, or deploy artifacts
+VSTS account from another VSTS account, or deploy artifacts
 published in one Team Foundation Server from another Team Foundation Server.
 
 To enable these scenarios, you must install the
@@ -308,7 +308,7 @@ The following features are available when using external TFS sources:
 <p />
 
 > [!NOTE]
-> Release Management in Team Services may
+> Release Management in VSTS may
 > not be able to contact an on-premises TFS server if,
 > for example, it is within your
 > enterprise network. In this case you can integrate
@@ -317,7 +317,7 @@ The following features are available when using external TFS sources:
 > You will not be able to see the name of your TFS
 > projects or build definitions when linking to a build, but you can type
 > these into the link dialog fields. In addition, when you
-> create a release, Team Services may not be able to
+> create a release, VSTS may not be able to
 > query the TFS server for the build numbers. Instead,
 > type the **Build ID** (not the build number) of the
 > desired build into the appropriate field, or select

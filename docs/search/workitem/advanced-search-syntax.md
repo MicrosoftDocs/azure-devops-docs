@@ -13,14 +13,14 @@ ms.date: 12/04/2016
 
 [!INCLUDE [version-header-shared-tsonly](../_shared/version-header-shared-tsonly.md)]
 
-Work Item Search is available as a built-in extension in Visual Studio Team Services.
+Work Item Search is available as a built-in extension in Visual Studio Team Services (VSTS).
 Users can use Work Item Search by default without any installation.
 
 By using Work Item Search you can:
 
 * **Search over all your projects**:
   Search in your own and your partner teams' backlog. Use cross-project 
-  searches over all the work items in your Team Services account to search 
+  searches over all the work items in your VSTS account to search 
   across your organization's entire work items. Narrow your search by using project and 
   area path filters. 
   
@@ -119,7 +119,7 @@ Narrow the search to a specific location using the `proj`, `area`, or `iteration
 <a name="quicknavigation"></a>
 ## Quickly navigate to a work item using its ID
 
-Type or paste the work item ID in the search box in the Team Services title bar 
+Type or paste the work item ID in the search box in the VSTS title bar 
 to quickly navigate to it. Searching for a work item ID opens the work item in a 
 modal dialog, providing quick access to read and edit work items.
 

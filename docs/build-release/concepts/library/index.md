@@ -12,16 +12,16 @@ ms.date: 10/20/2016
 
 # Library
 
-**TFS 2017 | Team Services**
+**TFS 2017 | VSTS**
 
 *Library* is a collection of _shared_ build and release assets for a team project.
 Assets defined in a library can be used in multiple build and release definitions of the team project.
-The **Library** tab can be accessed directly in the **Build &amp; Release** hub in Team Services and Team Foundation Server.
+The **Library** tab can be accessed directly in the **Build &amp; Release** hub in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).
 
 At present, the library contains two types of assets: [variable groups](variable-groups.md) and [secure files](secure-files.md).
 
-> Variable groups are available to only release definitions in Team Services and TFS 2017 at present.
-Task groups and service endpoints are available to build and release definitions in TFS 2015, TFS 2017, and Team Services.
+> Variable groups are available to only release definitions in VSTS and TFS 2017 at present.
+Task groups and service endpoints are available to build and release definitions in TFS 2015, TFS 2017, and VSTS.
 
 <h2 id="security">Library Security</h2>
 

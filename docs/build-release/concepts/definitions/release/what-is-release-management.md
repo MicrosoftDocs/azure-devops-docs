@@ -12,10 +12,10 @@ ms.date: 10/20/2016
 
 # What is Release Management?
 
-**Team Services | TFS 2017 | TFS 2015**
+**VSTS | TFS 2017 | TFS 2015**
 
-**Release Management** is a service in Visual Studio Team Services
-and Team Foundation Server (update 2 and later) and an essential
+**Release Management** is a service in Visual Studio Team Services (VSTS)
+and Team Foundation Server (TFS, Update 2 and later) and an essential
 element of DevOps that helps your team **continuously deliver** software
 to your customers at a faster pace and with lower risk.
 You can **fully automate** the testing and delivery of your software
@@ -52,7 +52,7 @@ Consider using Release Management if:
 
 * **You use a continuous integration (CI) system**
   and are looking for a fully-fledged continuous delivery or release
-  management system. Whether you use Team Build from Team Services or Team Foundation Server, or
+  management system. Whether you use Team Build from VSTS or TFS, or
   Jenkins as your CI system, you can set up Release Management to
   automatically deploy new builds to multiple environments. Even if
   we do not yet support integration with your favorite CI system or artifact
@@ -85,7 +85,7 @@ Consider using Release Management if:
 ## How does Release Management work?
 
 The Release Management service stores the data about your release definitions,
-environments, tasks, releases, and deployments in Team Services or Team Foundation Server.
+environments, tasks, releases, and deployments in VSTS or TFS.
 
 ![Release management components](_img/what-is-release-management/understand-rm-05.png)
 
@@ -102,7 +102,7 @@ Release Management runs the following steps as part of every deployment:
 
 1. **Agent selection**: An automation agent picks up the job.
    The agents for Release Management are exactly the same as those that run your
-   Builds in Team Services and Team Foundation Server. A release definition can
+   Builds in VSTS and TFS. A release definition can
    contain settings to select an appropriate agent at runtime.
 
 1. **Download artifacts**: The agent downloads all the artifacts specified
@@ -114,8 +114,8 @@ Release Management runs the following steps as part of every deployment:
    deployment job to deploy the app to the target servers for an environment.
 
 1. **Generate progress logs**: The agent creates detailed logs for each
-   step while running the deployment, and pushes these logs back to Team Services
-   or Team Foundation Server.
+   step while running the deployment, and pushes these logs back to VSTS
+   or TFS.
 
 1. **Post-deployment approval:** When deployment to an environment is complete,
    Release Management checks if there is a post-deployment approval required
