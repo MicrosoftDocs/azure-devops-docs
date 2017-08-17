@@ -105,8 +105,6 @@ Finish relinking your account.
 that you had in Azure.
 
 
-**NEED REF TO LINK SECTION OF set-up-billing-for-your-account-vs.md ???????????**
-
 
 ## Q&A
 

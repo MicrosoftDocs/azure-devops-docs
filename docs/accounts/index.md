@@ -10,7 +10,7 @@ ms.author: estfan
 ms.date: 07/12/2017
 ---
 
-# Account management 
+# Account Management 
 
 **Team Services**
 

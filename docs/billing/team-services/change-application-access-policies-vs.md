@@ -20,7 +20,7 @@ apps can use these authentication methods:
 
 *	[OAuth](../../integrate/get-started/Authentication/oauth.md) 
 to generate tokens for accessing [REST APIs for Team Services and Team Foundation Server](../../integrate/get-started/rest/basics.md). 
-The [Accounts](https://visualstudio.com/integrate/api/shared/accounts.md) 
+The [Accounts](../../integrate/api/shared/accounts.md) 
 and [Profiles](../../integrate/api/shared/profiles.md) 
 APIs support only OAuth.
 
