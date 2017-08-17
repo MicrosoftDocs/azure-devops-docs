@@ -18,7 +18,7 @@ ms.date: 08/26/2016
 <a name="request"></a>
 ## Request feedback from stakeholders
 
-Request feedback from stakeholders directly from a Team Services or TFS work item. 
+Request feedback from stakeholders directly from a VSTS or TFS work item. 
 
 1. Open the work item form for the user story or feature for which
    you want to request feedback.

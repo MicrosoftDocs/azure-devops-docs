@@ -13,7 +13,7 @@ ms.date: 08/12/2016
  
 All teams can use the Test &amp; Feedback extension (previously 
 called the Exploratory Testing extension) in **Standalone** mode. 
-Users don't need a Visual Studio Team Services account 
+Users don't need a Visual Studio Team Services (VSTS) account 
 or Team Foundation Server connection to use this mode.
 
 1. If you haven't already, [install the Test &amp; Feedback extension](getting-started/perform-exploratory-tests.md).

@@ -53,7 +53,7 @@ the tests.
    After you select the testers, you can email them so they
    know the tests are ready for them to run. (You just need 
    [Basic access](https://www.visualstudio.com/products/visual-studio-online-Basic-vs)
-   to run tests from Visual Studio Team Services.)
+   to run tests from VSTS.)
 
    ![Assign testers to run all tests and send emails to them](_img/create-test-cases/AssignMultipleTestersEmail.png)
 

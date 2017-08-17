@@ -34,11 +34,11 @@ In this example, you'll learn how to:
   if you don't have one already. Learn how you can 
   [open an Azure account for free](https://azure.microsoft.com/pricing/free-trial/?WT.mc_id=A261C142F).
 
-* You'll need a [Visual Studio Team Services (Team Services)](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
+* You'll need a [Visual Studio Team Services (VSTS)](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
   account to keep your performance test history. A suitable account will be created 
   automatically when you set up your performance test. Or you can create a new account 
   or use an existing account if you're the account owner. 
-  [What else can I do with a Visual Studio Team Services account?](reference-qa.md#TeamServicesAccount)
+  [What else can I do with a VSTS account?](reference-qa.md#TeamServicesAccount)
 
 * Deploy your app for testing in a non-production environment. 
   Have your app use an App Service plan other than the plan used in production. 
@@ -48,7 +48,7 @@ In this example, you'll learn how to:
 ## Set up and run your performance test
 
 1. Sign in to the [Azure Portal](https://portal.azure.com). 
-   To use a Visual Studio Team Services account that you own, 
+   To use a VSTS account that you own, 
    sign in as the account owner.
 
 1. Go to your web app.
@@ -59,12 +59,12 @@ In this example, you'll learn how to:
 
    ![Go to Tools, Performance Test](_img/app-service-web-app-performance-test/azure-np-web-app-details-tools-expanded.png)
  
-1. Now you'll link a [Visual Studio Team Services (Team Services)](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
+1. Now you'll link a [Visual Studio Team Services](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
    account to keep your performance test history.
 
-   If you have a Team Services account to use, select that account. If you don't, create a new account.
+   If you have a VSTS account to use, select that account. If you don't, create a new account.
 
-   ![Select existing Team Services account, or create a new account](_img/app-service-web-app-performance-test/azure-np-no-vso-account.png)
+   ![Select existing VSTS account, or create a new account](_img/app-service-web-app-performance-test/azure-np-no-vso-account.png)
 
 1. Create your performance test. Set the details and run the test. 
    You can watch the results in real time while the test runs.

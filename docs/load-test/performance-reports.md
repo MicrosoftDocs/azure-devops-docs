@@ -19,7 +19,7 @@ information.
 In this example, you'll learn how to:
 
 * [Open a load test in Visual Studio](#openvs)
-* [Open a load test in Team Services](#opents)
+* [Open a load test in VSTS](#opents)
 * [Filter and select a load test](#filterselect)
 * [Compare two test runs](#comparetests)
 
@@ -37,7 +37,7 @@ In this example, you'll learn how to:
    ![View all the past and current load test runs](_img/performance-reports/LoadTestManagerView.png)
 
 <a name="opents"></a>
-## Open a load test in Team Services
+## Open a load test in VSTS
 
 * If you are running URL-based or Apache JMeter load tests, you
   can see the list of all the test runs in Visual Studio Team
@@ -52,7 +52,7 @@ In this example, you'll learn how to:
 
    ![Filter load test runs by state, date, or user](_img/performance-reports/LoadTestFilterView.png)
 
-1. Select a test run and open the shortcut menu (in Team Services you can
+1. Select a test run and open the shortcut menu (in VSTS you can
    use the ![down arrow](_img/performance-reports/LoadTestListMenu-icon.png) 
    icon) to see details of the test run, or stop a running test. 
 

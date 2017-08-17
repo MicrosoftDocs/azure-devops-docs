@@ -15,7 +15,7 @@ ms.date: 08/12/2016
 Find performance issues before you release your app by running load tests with with Visual Studio 
 Enterprise using [Cloud-based Load Testing](http://go.microsoft.com/fwlink/?LinkID=317257)
 to provide virtual machines in the cloud that generate the load of many users accessing your web site at the same time.
-All you need is a [Visual Studio Team Services account](http://go.microsoft.com/fwlink/?LinkId=307137).
+All you need is a [Visual Studio Team Services (VSTS) account](http://go.microsoft.com/fwlink/?LinkId=307137).
 
 In this tutorial, you'll learn how to:
 
@@ -107,7 +107,7 @@ actions in your app at the same time.
 
    ![Select which tests to include in the test mix](_img/run-performance-tests-app-before-release/select-tests-for-test-mix.png)
 
-   When you run cloud-based load tests using your Visual Studio Team Services account, you can run those tests and generate load in an Azure datacenter that's closer to your users. That way, you reduce latency and simulate local conditions.
+   When you run cloud-based load tests using your VSTS account, you can run those tests and generate load in an Azure datacenter that's closer to your users. That way, you reduce latency and simulate local conditions.
 
 1. Select the location where you want to run your load test.
 
@@ -120,7 +120,7 @@ actions in your app at the same time.
 <a name="runanalyze"></a>
 ## Run and analyze your load test
 
-You can run your load test locally, or you can run it in the cloud using Visual Studio Team Services. 
+You can run your load test locally, or you can run it in the cloud using VSTS. 
 All you need is a [Visual Studio Team Services account](https://www.visualstudio.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services). 
 If you run the load test in the cloud, you can generate more load without setting up test controllers and test agents. 
 To learn how easy it is to use Cloud-based Load Testing to run your load tests, go 

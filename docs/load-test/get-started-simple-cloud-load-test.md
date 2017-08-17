@@ -9,10 +9,10 @@ ms.author: ahomer
 ms.date: 08/12/2016
 ---
 
-# Run URL-based load tests with Visual Studio Team Services
+# Run URL-based load tests with VSTS
 
 You can run a load test on your web app or site directly
-using Visual Studio Team Services.
+using Visual Studio Team Services (VSTS).
 
 In this example, you'll learn how to:
 
@@ -26,13 +26,13 @@ In this example, you'll learn how to:
 * You will need a [Visual Studio Enterprise subscription](https://www.visualstudio.com/products/visual-studio-enterprise-vs)
   (monthly, annual, or MSDN) to run URL-based load tests.
 
-* [Create your Visual Studio Team Services account](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
+* [Create your VSTS account](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
   if you don't have one already. 
 
 <a name="runtests"></a>
 ## Run a URL-based load test
 
-1. Sign in to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).
+1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
 1. Go to the **Load test** hub, open the **+ New** 
    menu and choose **URL based test**.

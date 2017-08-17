@@ -45,14 +45,14 @@ Using the extension is a simple, three step process.
   create test cases for scenarios discovered during exploration. 
 
 * **Collaborate with your team** by sharing your findings. 
-  Export your session report in Standalone mode, or connect to Team Services or
+  Export your session report in Standalone mode, or connect to VSTS or
   Team Foundation Server (2015 or later) for a fully integrated experience
   including exploring user stories and backlog items, simplified tracking and triaging of 
   bugs and tasks, and managing feedback requests in one place.
 
 As users perform exploratory testing, you can
 [get insights from the sessions](../insights-exploratory-testing.md) in the **Test** hub of 
-Team Services or TFS. View completed exploratory sessions and derive meaningful
+VSTS or TFS. View completed exploratory sessions and derive meaningful
 insights across all the sessions. Get end-to-end traceability such as a breakdown 
 of the work items created, the work items explored and not explored, session owners,
 and more.
@@ -110,7 +110,7 @@ update it automatically.
    ![Choose connection mode](_img/perform-exploratory-tests/getstarted-06.png)
 
    **[Connected mode](../connected-mode-exploratory-testing.md)**  
-   Available to all users of Team Services and TFS 2015 or later:
+   Available to all users of VSTS and TFS 2015 or later:
 
    - Users with **Basic** access: Full capture and create capabilities
      to submit bugs, tasks, and test cases. Includes collaboration
@@ -120,15 +120,14 @@ update it automatically.
    - Users with **Stakeholder** access: Full capture and create capabilities,
      except for test cases, to submit feedback and respond to feedback
      requests from the team. 
-   - Feedback experience is available only in Team Services and TFS 2017 or later.<p />
+   - Feedback experience is available only in VSTS and TFS 2017 or later.<p />
  
    **[Standalone mode](../standalone-mode-exploratory-testing.md)**  
-   Available to everyone. No connection to Team Services or Team
-   Foundation Server is required. Take notes and screenshots with
+   Available to everyone. No connection to VSTS or TFS is required. Take notes and screenshots with
    inline annotations to capture issues. Create bugs and export
    a session report to share findings.
  
->If you have problems connecting to Team Services or TFS, you may find
+>If you have problems connecting to VSTS or TFS, you may find
 the topic [TF31002: Unable to connect](https://www.visualstudio.com/en-us/docs/work/reference/error/tf31002-unable-connect-tfs) useful.
 
 ## See also

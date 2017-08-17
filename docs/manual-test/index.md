@@ -12,7 +12,7 @@ ms.date: 08/09/2016
 
 # Manual and exploratory testing
 
-Visual Studio Team Services and Team Foundation Server provide rich and powerful
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide rich and powerful
 tools everyone in the team can use to drive quality and collaboration throughout the development process.
 
 ## Overview

@@ -13,10 +13,10 @@ ms.date: 10/20/2016
 
 [!INCLUDE [version-header-ts-tfs15](../_shared/version-header-ts-tfs15.md)] 
 
-Team Services and Team Foundation Server offer both web-based and client-based solutions for manual testing:
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) offer both web-based and client-based solutions for manual testing:
 
 * The **Test Center** in Microsoft Test Manager (MTM) client is a desktop-based manual testing solution, which has traditionally been used by testers for their Manual testing needs.
-* The **Test hub** in Team Services and Team Foundation Server (TFS) is a web-based manual testing solution, which works across all platforms and with all browsers. We have invested in Test hub over past two years to provide you better experiences across Plan, Author, Execute and Track phases of Manual testing.
+* The **Test hub** in VSTS and TFS is a web-based manual testing solution, which works across all platforms and with all browsers. We have invested in Test hub over past two years to provide you better experiences across Plan, Author, Execute and Track phases of Manual testing.
 
 >Because the **Test hub** is a fully featured Test management solution which works across all platforms and with all browsers, 
 we **recommend** you use the **Test hub** over Microsoft Test Manager for
@@ -29,7 +29,7 @@ solution for manual testing compared to Microsoft Test Manager.
 
 ## Manual Testing with the Test hub 
 
-The **Test hub** in Team Services and TFS is a fully-featured test
+The **Test hub** in VSTS and TFS is a fully-featured test
 management solution spanning all phases of the testing lifecycle.
 The **Test hub** works on all platforms (such as Windows, MacOS,
 Linux, and others) and all browsers (such as Edge, Chrome, Firefox,
@@ -182,7 +182,7 @@ all platforms and all browsers, and has a rich and modern web UI that improves y
 experience across all phases of manual testing. 
 
 All the test plans, test suites, test cases, and other test management data you create
-using MTM are stored in your Team Services account or Team Foundation Server, so existing
+using MTM are stored in your VSTS account or TFS, so existing
 MTM users can easily get started using the **Test hub**.
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

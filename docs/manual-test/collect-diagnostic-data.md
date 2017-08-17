@@ -169,7 +169,7 @@ Microsoft Test Runner. Instead, use
 [Microsoft Test Manager client](https://www.visualstudio.com/en-us/products/visual-studio-test-professional-with-msdn-vs.aspx)
 to collect additional diagnostic from desktop apps.
 
-1. In the Test hub in Team Services or Team Foundation Server, 
+1. In the Test hub in VSTS or TFS, 
    select a test case, test suite, or test plan to execute.
 
 1. Open the **Run** menu and choose **Run with options**.

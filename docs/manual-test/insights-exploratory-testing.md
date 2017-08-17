@@ -24,7 +24,7 @@ at team or individual level, and for a specific period.
  
      ![Opening the insights page from the extension](_img/insights-exploratory-testing/insights-exploratory-testing-01.png)
  
-   - From the Team Services or TFS **Test** hub by opening the **Runs** tab and choosing **Recent exploratory sessions**.  
+   - From the VSTS or TFS **Test** hub by opening the **Runs** tab and choosing **Recent exploratory sessions**.  
 
      ![Opening the insights page from the Test hub](_img/insights-exploratory-testing/insights-exploratory-testing-02.png)
 
@@ -94,7 +94,7 @@ app from the information collected during your exploratory testing sessions.
 
 Use a query to explore the work items that users have not yet explored.
 
-1. Create a shared query in Team Services or TFS that selects work items
+1. Create a shared query in VSTS or TFS that selects work items
    that can be explored using the Test &amp; Feedback extension, such as
    work items in the epic category, feature category, requirement category, 
    requirement-based suites, or test cases. 

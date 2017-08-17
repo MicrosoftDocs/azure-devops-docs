@@ -64,7 +64,7 @@ voluntarily, even if you haven't received a specific
 
    ![Entering a title and star rating](../_img/_shared/provide-stakeholder-feedback-09.png)
 
-1. Save your feedback. This create a work item in Team Services
+1. Save your feedback. This create a work item in VSTS
    or TFS containing all your feedback.
  
 1. Continue to capture more feedback if required. You can submit 

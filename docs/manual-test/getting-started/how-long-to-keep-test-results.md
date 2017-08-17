@@ -9,7 +9,7 @@ ms.author: ahomer
 ms.date: 08/12/2016
 ---
 
-# Control how long to keep test results in Visual Studio Team Services
+# Control how long to keep test results in VSTS
 
 <!-- **Visual Studio 2017 | Visual Studio 2015 | TFS 2017 | TFS 2015** -->
 
@@ -25,11 +25,11 @@ for example, up to a year.
 
 To delete manual test results after a specific number of days, 
 set the retention limit at the team project level. 
-Visual Studio Team Services keeps manual test results related to builds, 
+Visual Studio Team Services (VSTS) keeps manual test results related to builds, 
 even after you delete those builds. That way, build policies don't delete 
 your test results before you can analyze the data.
 
-1. Sign to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```). 
+1. Sign to your VSTS account (```https://{youraccount}.visualstudio.com```). 
    You'll need at least team project administrator permissions.
 
 1. Go to your team project.
@@ -46,12 +46,12 @@ your test results before you can analyze the data.
 
 ### Automated test results associated with builds
 
-By default, Visual Studio Team Services keeps automated test results related to builds 
+By default, VSTS keeps automated test results related to builds 
 only as long as you keep those builds. To keep test results after you delete your builds, 
 edit the build retention policy. If you use Git for version control, 
 you can specify how long to keep automated test results based on the branch. 
 
-1. Sign to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```). 
+1. Sign to your VSTS account (```https://{youraccount}.visualstudio.com```). 
    You'll need at least build level permissions to edit build definitions.
 
 1. Go to your team project. Find and edit your build definition.

@@ -18,8 +18,6 @@ Use a variable group to store values that you want to make available across
 multiple release definitions. Variable groups are defined and managed in the **Library** tab of the
 **Build &amp; Release** hub.
 
-> Variable groups can only be used in release definitions in TFS 2017 and VSTS at present. They cannot yet be used in build definitions.
-
 ## Use a variable group
 
 To use a variable group in a release definition, open the definition, select the **Variables**
@@ -44,8 +42,10 @@ Link an existing Azure key Vault to a variable group and map selective vault sec
 
    ![Variable group with Azure key vault integration](_img/link-azure-key-vault-variable-group.png)
 
-1. Ensure the Azure endpoint has at least **Get** and **List** permissions
-   on the vault. You can set these permissions in the [Azure portal](https://portal.azure.com):
+1. Ensure the Azure endpoint has at least **Get** and **List** management permissions on the vault for secrets.
+   You can enable VSTS to set these permissions by choosing **Authorize** next to the vault name.
+
+   Alternatively, you can set the permissions manually in the [Azure portal](https://portal.azure.com):
 
    - Open the **Settings** blade for the vault, choose **Access policies**, then **Add new**.
 
@@ -67,6 +67,10 @@ Link an existing Azure key Vault to a variable group and map selective vault sec
 
 * When *new* secrets are added to the vault, they are **not** made available automatically to all the release definitions. 
   New secrets must be explicitly added to the variable group in order to make them available to release definitions
-  in which the variable group is used. 
+  in which the variable group is used.
+
+* Azure Key Vault supports storing and managing cryptographic keys and secrets in Azure.
+  Currently, VSTS variable group integration supports mapping only secrets from the Azure key vault.
+  Cryptographic keys and certificates are not yet supported
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

@@ -29,7 +29,7 @@ icon or the drop-down list at the top of the left column.
 
 ![Selecting a test plan from the drop-down list](_img/create-a-test-plan/select-test-plan.png)
 
-Test plans, suites, and test cases are stored in Team Services and TFS
+Test plans, suites, and test cases are stored in VSTS and TFS
 as special types of work items.
 
 ## Create a test plan containing test suites  
@@ -39,7 +39,7 @@ as special types of work items.
 [create your team project](../../setup-admin/account-administration.md), 
 and [create your backlog](../../work/backlogs/create-your-backlog.md). 
 
-1. In Visual Studio Team Services, select your team project. 
+1. In VSTS, select your team project. 
    (If you haven't been here before, use Browse.)
 
    ![Select team project from account overview page](_img/create-a-test-plan/SelectTeamProject.png)

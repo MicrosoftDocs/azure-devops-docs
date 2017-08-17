@@ -13,7 +13,7 @@ ms.date: 08/12/2016
  
 To use the Test &amp; Feedback extension (previously called the 
 Exploratory Testing extension) in **Connected** mode you must connect 
-to your Team Services account or Team Foundation Server 2015 and later.
+to your VSTS account or TFS 2015 and later.
 This automatically configures the extension based on your access level: 
 
 * Users with **Basic** access can use the extension to perform exploratory
@@ -27,10 +27,10 @@ This automatically configures the extension based on your access level:
   by the team by choosing the **Provide feedback** link in the email.
   [More details](stakeholder/provide-stakeholder-feedback.md#email).
 
-## Connect to Team Services or TFS
+## Connect to VSTS or TFS
 
-1. If you want to use Team Services, and you haven't already done so, 
-   [sign up for a Team Services account](https://www.visualstudio.com/products/visual-studio-team-services-vs)
+1. If you want to use VSTS, and you haven't already done so, 
+   [sign up for a VSTS account](https://www.visualstudio.com/products/visual-studio-team-services-vs)
    now. Make sure you create a team project when you create your account.
 
 1. If you haven't already, [install the Test &amp; Feedback extension](getting-started/perform-exploratory-tests.md).
@@ -39,9 +39,9 @@ This automatically configures the extension based on your access level:
 
    ![Start the extension in Connected mode](_img/_shared/connectedmode-01.png)
  
-1. Enter the URL of the Team Services account or TFS you want to connect to and choose **Next**.
+1. Enter the URL of the VSTS account or TFS you want to connect to and choose **Next**.
 
-   ![Enter the URL of your Team Services account or TFS](_img/_shared/connectedmode-02.png)
+   ![Enter the URL of your VSTS account or TFS](_img/_shared/connectedmode-02.png)
 
    If you are connecting for the first time, you may be prompted to sign in. 
  
@@ -112,13 +112,13 @@ After you have connected, you are ready to begin testing your app.
    ![Review your captured information](_img/connected-mode-exploratory-testing/create-bugs-08.png)
 
    > You can use the extension to [explore work items](explore-workitems-exploratory-testing.md)
-   in Team Services or TFS.
+   in VSTS or TFS.
 
-1. To view a bug or task in Team Services or TFS, choose the link in the session timeline.
+1. To view a bug or task in VSTS or TFS, choose the link in the session timeline.
 
    ![View a bug or task](_img/connected-mode-exploratory-testing/create-bugs-09.png)
 
-   This opens the work item form in Team Services or TFS.
+   This opens the work item form in VSTS or TFS.
 
    ![The bug or task in TS or TFS](_img/connected-mode-exploratory-testing/create-bugs-10.png)
 
@@ -152,8 +152,8 @@ The extension lets you create test cases as you explore your application.
 
    ![Stop the exploratory testing session](_img/connected-mode-exploratory-testing/create-bugs-05.png)
 
-1. If you are using Team Services, or TFS 2017 and higher, open the **Session timeline** page and choose the "view" icon to see your completed exploratory 
-   sessions in Team Services or TFS.
+1. If you are using VSTS, or TFS 2017 and higher, open the **Session timeline** page and choose the "view" icon to see your completed exploratory 
+   sessions in VSTS or TFS.
 
    ![View the exploratory testing session](_img/connected-mode-exploratory-testing/create-bugs-06.png)
 

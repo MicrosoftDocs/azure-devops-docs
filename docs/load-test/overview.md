@@ -11,14 +11,14 @@ ms.date: 08/12/2016
 
 # Load testing scenarios and capabilities
 
-<!-- **Visual Studio 2017 | Visual Studio 2015 | Team Services | [Previous version](https://msdn.microsoft.com/library/dn250793%28v=vs.120%29.aspx)**   -->
+<!-- **Visual Studio 2017 | Visual Studio 2015 | VSTS | [Previous version](https://msdn.microsoft.com/library/dn250793%28v=vs.120%29.aspx)**   -->
 
 > See also [Manual and exploratory testing](../manual-test/index.md), [Continuous testing](../build-release/test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
 
 ![Cloud-based Load Testing](_img/performance-testing/IC838830.png)
 
 Load test your app with hundreds of thousands of users using 
-[Visual Studio Team Services](http://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409&wt.mc_id=o~msft~vscom~getstarted-hero~dn906133&campaign=o~msft~vscom~getstarted-hero~dn906133&scenario=test).
+[Visual Studio Team Services (VSTS)](http://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409&wt.mc_id=o~msft~vscom~getstarted-hero~dn906133&campaign=o~msft~vscom~getstarted-hero~dn906133&scenario=test).
 
 ## Comprehensive testing capabilities
 
@@ -80,9 +80,9 @@ Load test your app with hundreds of thousands of users using
 
 * [Get started with load testing](getting-started-with-performance-testing.md)
 
-* [Run URL-based load tests with Visual Studio Team Services](get-started-simple-cloud-load-test.md)
+* [Run URL-based load tests with VSTS](get-started-simple-cloud-load-test.md)
 
-* [Run Apache JMeter load tests with Visual Studio Team Services](get-started-jmeter-test.md)
+* [Run Apache JMeter load tests with VSTS](get-started-jmeter-test.md)
 
 * [Performance test your Azure web app under load](app-service-web-app-performance-test.md)
 

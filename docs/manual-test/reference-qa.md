@@ -87,7 +87,7 @@ into a Word document, if you want. All the formatting in the report is retained.
 **A:** You can only do this if you are using an on-premises Team Foundation Server. 
 You can [edit the XSLT file](https://msdn.microsoft.com/library/dd380763.aspx#XSLT).
 
-### Q: Can I track changes to test plans and test suites that I create with Visual Studio Team Services?
+### Q: Can I track changes to test plans and test suites that I create with VSTS?
 
 **A:** Yes, you can track changes to test plans and test suites. Open the work item 
 for the test plan or test suite, then view the work item history.
@@ -281,8 +281,8 @@ longer linked to the backlog item for that test suite.
 ### Q: Why do I see the wrong test suite and tests when I click 'View Tests' from the notification email about tests that are assigned to me?
 
 **A:** This might happen if you were prompted to enter sign-in 
-credentials for Visual Studio Team Services when you clicked this link. 
-Without signing out from Visual Studio Team Services, click 'View Tests' 
+credentials for VSTS when you clicked this link. 
+Without signing out of VSTS, click 'View Tests' 
 again to see the correct test suite and tests.
 
 *****
@@ -319,7 +319,7 @@ against that build.
 
 ### Q: Can I fix my test steps while I'm running a test?
 
-**A:** Yes, if you have the Test Manager for Visual Studio Team Services. 
+**A:** Yes, if you have the Test Manager for VSTS. 
 You can insert, move, or delete steps. 
 Or you can edit the text itself. Use the edit icon next to the test 
 step number to do this.
@@ -433,11 +433,11 @@ your grid back into Excel if you need to.
 ### Q: What are the default retention limits?
 
 **A**: For team projects created before October 2015, 
-Visual Studio Team Services doesn't delete results from automated tests 
+VSTS doesn't delete results from automated tests 
 and manual tests unless you change the retention limit. 
 
 For new team projects created after October 2015, 
-Visual Studio Team Services deletes all test results after one year (365 days),
+VSTS deletes all test results after one year (365 days),
 unless you chose to indefinitely retain a build associated with those results. 
 
 ### Q: What is the default test retention policy for XAML builds?

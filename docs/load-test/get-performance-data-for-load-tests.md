@@ -14,7 +14,7 @@ ms.date: 08/12/2016
 
 [!INCLUDE [version-header-vs-ts](_shared/version-header-vs-ts.md)]
 
-When you load test your app in the cloud using Visual Studio Team Services, 
+When you load test your app in the cloud using Visual Studio Team Services (VSTS), 
 you can compare app performance with virtual user load using 
 [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/).
 Then, by doing a quick root cause analysis, you can figure out which code 
@@ -25,13 +25,13 @@ is causing performance problems.
    if you haven't already done so.
 
 1. [Enable Azure Active Directory](https://www.visualstudio.com/docs/setup-admin/team-services/manage-organization-access-for-your-account-vs)
-   for your Team Services account, if you haven't already done so.
+   for your VSTS account, if you haven't already done so.
 
-1. [Link your Team Services account with your Azure subscription](https://www.visualstudio.com/docs/setup-admin/team-services/manage-organization-access-for-your-account-vs#connect-your-team-services-account-to-your-directory),
+1. [Link your VSTS account with your Azure subscription](https://www.visualstudio.com/docs/setup-admin/team-services/manage-organization-access-for-your-account-vs#connect-your-team-services-account-to-your-directory),
    if you haven't already done so.
 
-1. Sign in to your Team Services account from your web browser to refresh the Azure Resources Manager access token. 
-   The token is valid for 12 hours in the context of Team Services.
+1. Sign in to your VSTS account from your web browser to refresh the Azure Resources Manager access token. 
+   The token is valid for 12 hours in the context of VSTS.
 
    - If you have already signed, you must sign out and then sign in again.<p />
 
@@ -74,7 +74,7 @@ is causing performance problems.
 
 * [Q &amp; A for load testing](reference-qa.md#qaappinsights)
 * [Load test with Visual Studio](getting-started-with-performance-testing.md) 
-* [Load test with Team Services](get-started-simple-cloud-load-test.md) 
+* [Load test with VSTS](get-started-simple-cloud-load-test.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
 * [Analyze load test results using the Load Test Analyzer](https://msdn.microsoft.com/library/ee923686.aspx)

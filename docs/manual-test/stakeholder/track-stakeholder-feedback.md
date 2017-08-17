@@ -18,7 +18,7 @@ ms.date: 08/26/2016
 <a name="track"></a>
 ## Track feedback requests
 
-1. In Team Services or TFS, select your project and open 
+1. In VSTS or TFS, select your project and open 
    the **Queries** tab of the **Work** hub.
 
    ![Opening the Queries tab of the Work hub](_img/track-stakeholder-feedback/track-stakeholder-feedback-30.png)

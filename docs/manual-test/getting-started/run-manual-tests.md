@@ -20,7 +20,7 @@ are automatically included in the bug.
 * [Run tests for desktop apps](#run-desktop)
 
 You just need [Basic access](https://www.visualstudio.com/team-services/compare-features/) 
-to run tests that have been assigned to you with Visual Studio Team Services. 
+to run tests that have been assigned to you with Visual Studio Team Services (VSTS). 
 Learn more about the
 [access](https://www.visualstudio.com/pricing/visual-studio-online-pricing-vs) 
 that you need for more advanced testing features.
@@ -66,7 +66,7 @@ that you need for more advanced testing features.
    ![Bugs logged](_img/run-manual-tests/RunTest_5.png)
 
 1. When you've run all your tests, save the results and close Test Runner. 
-   All the test results are stored in Visual Studio Team Services.
+   All the test results are stored in VSTS.
    [How do I resume testing, or run one or more tests again?](../reference-qa.md#qanda)
 
 1. View the testing status for your test suite.
