@@ -29,44 +29,44 @@ Use this index to setup and manage your account and configure key settings to su
 
 ## 5-Minute Quickstarts  
 
-[Create your account with a person Microsoft account](team-services/sign-up-for-visual-studio-team-services.md)
+* [Create your account with a person Microsoft account](team-services/sign-up-for-visual-studio-team-services.md)
 
-[Create your account with a work or school account](team-services/sign-up-for-visual-studio-team-services.md)
+* [Create your account with a work or school account](team-services/sign-up-for-visual-studio-team-services.md)
 
-[Connect to your account](team-services/connect-to-visual-studio-team-services.md)
+* [Connect to your account](team-services/connect-to-visual-studio-team-services.md)
 
-[Add users to your account](team-services/add-account-users-from-user-hub.md)
+* [Add users to your account](team-services/add-account-users-from-user-hub.md)
 
-[Try extensions for free](../billing/team-services/try-additional-features-vs.md)
+* [Try extensions for free](../billing/team-services/try-additional-features-vs.md)
 
 
 ## Step-by-Step Tutorials
 
-[Change Azure AD tenant](team-services/change-azure-active-directory-team-services-account.md)
+* [Change Azure AD tenant](team-services/change-azure-active-directory-team-services-account.md)
 
 
 ## Concepts 
 
-[Access with Azure AD](team-services/manage-organization-access-for-your-account-vs.md)
+* [Access with Azure AD](team-services/manage-organization-access-for-your-account-vs.md)
 
-[Access with Azure AD groups](team-services/manage-azure-active-directory-groups-visual-studio-team-services.md)
+* [Access with Azure AD groups](team-services/manage-azure-active-directory-groups-visual-studio-team-services.md)
  
  
 ## Resources 
 
-[Set up billing](team-services/set-up-billing-for-your-account-vs.md)
+* [Set up billing](team-services/set-up-billing-for-your-account-vs.md)
 
-[Pay for more users](team-services/buy-basic-access-add-team-services-users.md)
+* [Pay for more users](team-services/buy-basic-access-add-team-services-users.md)
 
-[Permissions and access](permissions-access.md). 
+* [Permissions and access](permissions-access.md). 
 
-[Manage users and access](team-services/add-account-users-assign-access-levels-team-services.md)
+* [Manage users and access](team-services/add-account-users-assign-access-levels-team-services.md)
 
-[Add users to team projects](team-services/add-team-members-vs.md)
+* [Add users to team projects](team-services/add-team-members-vs.md)
 
-[Manage access levels](../work/connect/change-access-levels.md)
+* [Manage access levels](../work/connect/change-access-levels.md)
 
-[Add Stakeholder users](../work/connect/change-access-levels.md)
+* [Add Stakeholder users](../work/connect/change-access-levels.md)
 
-[Add users to an administrator role](add-administrator-tfs.md)
+* [Add users to an administrator role](add-administrator-tfs.md)
 

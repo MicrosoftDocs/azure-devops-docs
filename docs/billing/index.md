@@ -39,7 +39,7 @@ VSTS billing covers:
 
 ## Step-by-Step Tutorials
 
-[Change Azure AD tenant](team-services/change-azure-active-directory-team-services-account.md)
+* [Change Azure AD tenant](team-services/change-azure-active-directory-team-services-account.md)
 
 
 ## Concepts 
@@ -48,17 +48,17 @@ Team Services works with Azure Active Directory (Azure AD),
 so that you can control access the same way that you do 
 with Microsoft services such as Office 365 and Microsoft Azure. 
 If your organization uses a directory (tenant) managed by Azure AD, 
-your Team Services account can also 
-[use your directory to authenticate access](team-services/manage-organization-access-for-your-account-vs.md). 
-Or [change your Azure AD](team-services/change-azure-active-directory-team-services-account.md), 
-if you're already connected to an existing directory.
+your Team Services account can also:
 
- 
+* [use your directory to authenticate access](team-services/manage-organization-access-for-your-account-vs.md)
+
+* [change your Azure AD](team-services/change-azure-active-directory-team-services-account.md)
+
+
 ## Resources 
 
-[Key concepts](../concepts.md)
+* [Key concepts](../concepts.md)
 
-[Software development roles](../roles.md)
+* [Software development roles](../roles.md)
 
-[Pricing](https://www.visualstudio.com/team-services/pricing/)
-
+* [Pricing](https://www.visualstudio.com/team-services/pricing/)
