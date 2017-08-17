@@ -12,6 +12,9 @@ ms.date: 08/03/2017
 
 # Work Items
 
+
+Track the features and requirements you're developing, code defects or bugs, and other particulars using work items. 
+
 <!---
 ## Overview  
 [About work items](wit-overview.md) 
@@ -19,14 +22,10 @@ ms.date: 08/03/2017
 
 
 ## 5-Minute Quickstarts  
-
-Start tracking work by adding work items, creating your backlog, or scheduling sprints.  
-
+ 
 - [Add work items](../backlogs/add-work-items.md)
 
 ## Step-by-Step Tutorials
-
-Whether you use scrum, Kanban, or a combination of Agile methods, you can get started tracking bugs, driving your Git development, and more using the Agile tools available to you. 
 
 - [Manage bugs](../backlogs/manage-bugs.md)
 - [Manage issues](../backlogs/manage-issues-impediments.md)
@@ -57,6 +56,13 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Work item field index](../guidance/work-item-field.md)    
   
 
+## Resources 
+
+- [Kanban](../kanban/index.md)
+- [Scrum](../scrum/index.md)
+- [Backlogs](../backlogs/index.md)
+- [Work item queries](../track/index.md)
+- [Work item customization](../customize/index.md)
 
 
 

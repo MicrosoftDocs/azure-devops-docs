@@ -1,4 +1,4 @@
-- name: Get started user guide
+- name: New User Guide
   href: index.md
 - name: Overview
   items:
@@ -13,19 +13,19 @@
   - name: Sign up and invite some teammates 
     href: sign-up-invite-teammates.md
   - name: Code with Git
-    href: /vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+    href: /vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: "Build & release an app"
-    href: /vsts/build-release/get-started/ci-cd-part-1?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json
+    href: /vsts/build-release/get-started/ci-cd-part-1?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
   - name: "Plan & track work" 
     href: plan-track-work.md 
   - name: Add and run manual tests
-    href: /vsts/work/kanban/add-run-update-tests?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
+    href: /vsts/work/kanban/add-run-update-tests?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Try extensions for free
-    href: /vsts/accounts/team-services/try-additional-features-vs?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
+    href: /vsts/accounts/team-services/try-additional-features-vs?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
 - name: Tutorials
   items:
   - name: Set favorites
-    href: /vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+    href: /vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: "Follow work & pull requests"
     href: /vsts/collaborate/follow-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: Get started as a Stakeholder
@@ -37,47 +37,51 @@
   - name: Source control 
     href: source-control.md
   - name: "Kanban & Agile tools"
-    href: /vsts/work/overview?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
+    href: /vsts/work/overview?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: "Clients & tools"
-    href: /vsts/tools?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
+    href: /vsts/tools?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Software development roles
-    href: /vsts/roles?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
+    href: /vsts/roles?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: "How do Team Services & TFS differ"
-    href: /vsts/about-vsts-tfs?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
+    href: /vsts/about-vsts-tfs?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
 - name: How-to
   items:
   - name: Enable preview features
-    href: /vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+    href: /vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Connect to a team project
-    href:  /vsts/connect/connect-team-projects?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+    href:  /vsts/connect/connect-team-projects?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: View permissions
-    href: /vsts/security/view-permissions?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+    href: /vsts/security/view-permissions?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Go mobile
-    href: /vsts/collaborate/mobile-work?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+    href: /vsts/collaborate/mobile-work?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Set your preferences
     href: /vsts/setup-admin/account-preferences?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: Switch project or team focus
     href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: Authenticate with personal access tokens
-    href: /vsts/setup-admin/team-services/use-personal-access-tokens-to-authenticate?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+    href: /vsts/setup-admin/team-services/use-personal-access-tokens-to-authenticate?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: "Permissions & access"
-    href: /vsts/setup-admin/permissions-access?toc=/vsts/user-guide/toc.json
+    href: /vsts/setup-admin/permissions-access?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Keyboard shortcuts
-    href: /vsts/reference/keyboard-shortcuts?toc=/vsts/user-guide/toc.json
+    href: /vsts/reference/keyboard-shortcuts?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Markdown guidance
-    href: /vsts/reference/markdown-guidance?toc=/vsts/user-guide/toc.json
+    href: /vsts/reference/markdown-guidance?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: FAQs
     href: ../faqs.md
   - name: Navigate in the web portal
-    href: /vsts/connect/work-web-portal?toc=/vsts/user-guide/toc.json
+    href: /vsts/connect/work-web-portal?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
 - name: Resources
   items:
+  - name: Visual Studio IDE
+    href: https://docs.microsoft.com/visualstudio/
+  - name: Visual Studio Code 
+    href: https://code.visualstudio.com/docs
+  - name: Visual Studio for Mac
+    href: https://docs.microsoft.com/visualstudio/mac
   - name: Account Management (Team Services)
     href: ../accounts/index.md
-  - name: TFS Server Administration 
-    href: ../tfs-server/index.md
   - name: Migrate from TFS to Team Services Tutorial
     href: https://www.visualstudio.com/articles/migration-overview
   - name: Technical articles

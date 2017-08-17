@@ -12,10 +12,9 @@ ms.date: 06/22/2017
 
 
 # Triage work items  
-
-<!---
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
---> 
+
+!!! WORK IN PROGRESS !!! 
 
 Using a work item query you can review and update a set of work items. Oftentimes team use the triage mode for a query to perform the following tasks: 
 - Set the priority of a bug or work item

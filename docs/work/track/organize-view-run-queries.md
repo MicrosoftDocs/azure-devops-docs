@@ -13,10 +13,9 @@ ms.date: 05/31/2017
 
 # Organize, view, and run queries    
 
-<!---
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
---> 
 
+!!! WORK IN PROGRESS !!!
 
 ## Enable or disable the New queries experience
 

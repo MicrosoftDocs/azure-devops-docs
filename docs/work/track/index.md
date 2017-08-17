@@ -12,7 +12,7 @@ ms.date: 07/26/2017
 
 # Queries
 
-With queries you can ...  
+List bugs, user stories, or other work items based on field criteria you specify. Then you can review with your team, triage, or perform bulk updates.  
 
 <!---
 ## Overview  
@@ -23,15 +23,16 @@ With queries you can ...
 ## 5-Minute Quickstarts  
 
 - [Begin your query with the search box](search-box-queries.md)
-   
+- View and run a query (NEW)
+
 
 ## Step-by-Step Tutorials
 
-- Organize, view, and run queries
-- Triage work items
+- [Triage work items](triage-work-items.md)
+- [Organize queries](organize-view-run-queries.md)
 - [Edit a query](using-queries.md)
-- [Add a query chart](/vsts/report/charts?toc=/vsts/work/track/toc.json)
-- [Copy a query](/vsts/work/backlogs/copy-clone-work-items#html?toc=/vsts/work/track/toc.json) 
+- [Add a query chart](/vsts/report/charts?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json) 
+- [Copy a query](/vsts/work/backlogs/copy-clone-work-items#html?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json)  
 
 ## Samples
 - [Example search box queries](search-box-queries.md)
@@ -47,17 +48,22 @@ With queries you can ...
 
 
 ## How-to Guides
-- [Change column options](/vsts/work/how-to/set-column-options?toc=/vsts/work/track/toc.json)  
-- [Email/print work items](/vsts/work/how-to/email-work-items?toc=/vsts/work/track/toc.json) 
-- [Filter backlogs, boards, & queries](/vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/track/toc.json)  
+- [Change column options](/vsts/work/how-to/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json)  
+- [Email/print work items](/vsts/work/how-to/email-work-items?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json) 
+- [Filter backlogs, boards, & queries](/vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json)  
 
 
 ## Reference 
 - [Query fields, operators & macros](query-operators-variables.md)      
-- [Work item field index](/vsts/work/guidance/work-item-field?toc=/vsts/work/track/toc.json) 
-- [WIQL syntax](/vsts/reference/wiql-syntax?toc=/vsts/work/track/toc.json)
+- [Work item field index](/vsts/work/guidance/work-item-field?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json) 
+- [WIQL syntax](/vsts/reference/wiql-syntax?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json)
+- [Permissions and access for work tracking](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json)
  
 ## Resources
+- [Backlogs](../backlogs/index.md)
+- [Kanban](../kanban/index.md)
+- [Scrum](../scrum/index.md)
+- [Work item customization](../customize/index.md)
 - [Wiql Editor (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)   
 - [Enhanced Export (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export)
   
