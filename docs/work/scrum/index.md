@@ -60,7 +60,7 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 
 
 ## Resources 
-- [Backlogs](../backlog/index.md)
+- [Backlogs](../backlogs/index.md)
 - [Kanban](../kanban/index.md)
 - [Work item queries](../track/index.md)
 - [Work item customization](../customize/index.md)

@@ -42,7 +42,7 @@ Start tracking work by adding work items, creating your backlog, or scheduling s
 
 
 ## Resources  
-- [Backlogs](../backlog/index.md)
+- [Backlogs](../backlogs/index.md)
 - [Kanban](../kanban/index.md)
 - [Scrum](../scrum/index.md)
 - [Work item customization](../customize/index.md)

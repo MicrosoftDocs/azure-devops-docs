@@ -60,7 +60,7 @@ List bugs, user stories, or other work items based on field criteria you specify
 - [Permissions and access for work tracking](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json)
  
 ## Resources
-- [Backlogs](../backlog/index.md)
+- [Backlogs](../backlogs/index.md)
 - [Kanban](../kanban/index.md)
 - [Scrum](../scrum/index.md)
 - [Work item customization](../customize/index.md)

@@ -27,7 +27,7 @@
   - name: About permissions and access
     href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: About teams and Agile tools
-    href: /vsts/work/scale/about-teams-and-settings?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/breadcrumb/toc.json  
+    href: /vsts/work/about-teams-and-settings?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/breadcrumb/toc.json  
   - name: Work item form controls
     href: /vsts/work/concepts/work-item-form-controls?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: "Workflow states & state categories"

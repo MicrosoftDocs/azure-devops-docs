@@ -55,7 +55,7 @@ Get collaboration going by adding, updating, and reviewing your Kanban board.
   
 ## Resources 
 
-- [Backlogs](../backlog/index.md)
+- [Backlogs](../backlogs/index.md)
 - [Scrum](../scrum/index.md)
 - [Work item queries](../track/index.md)
 - [Work item customization](../customize/index.md)
