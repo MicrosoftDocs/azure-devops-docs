@@ -18,6 +18,8 @@ Inside the **Control Options** of each task, you can specify the conditions unde
 [!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
 * Custom conditions
 
+> In a release definition, conditions are defined in the **Additional options** section of the properties panel for a phase. 
+
 ## Enable a custom condition
 
 If the built-in conditions don't meet your needs, then you can specify **custom conditions**.
@@ -63,6 +65,8 @@ and(failed(), eq(variables['Build.Reason'], 'PullRequest'))
 ```
 and(always(), eq(variables['Build.Reason'], 'Schedule'))
 ```
+
+> **Release.Artifacts.{artifact-alias}.SourceBranch** is equivalent to **Build.SourceBranch**.
 
 ## Types
 
@@ -183,7 +187,9 @@ Some of the more useful predefined variables include:
 
 * `Build.SourceBranch`
 
-For details on these and other variables, including predefined variables and their possible values, see [Build variables](../../define/variables.md).
+* `Release.Artifacts.{artifact-alias}.SourceBranch`
+
+For details on these and other variables, including predefined variables and their possible values, see [Build variables](../../define/variables.md) and [Release variables](../../concepts/definitions/release/variables.md).
 
 ## Job status functions
 
@@ -305,7 +311,7 @@ For details on these and other variables, including predefined variables and the
 
 ### Can I specify custom conditions for tasks in a release process?
 
-Not yet, but we're working on it.
+Yes, in the **Additional options** section of the properties panel for a phase, select **Custom condition using variable expressions** in the **Run this phase** list.
 
 ### What about string parsing and other operations?
 
@@ -314,5 +320,9 @@ We might add these later. [Vote on user voice](https://visualstudio.uservoice.co
 ### I've got a condition that runs even when build was cancelled. Does this affect a build that I cancelled in the queue?
 
 No. If you cancel a build while it's in the queue, then the entire build is canceled, including tasks like this.
+
+### I've got a task condition that runs even when the deployment was canceled. How do I specify this?
+
+This scenario is not yet supported for release definitions.
 
 <!-- ENDSECTION -->

@@ -302,8 +302,8 @@ phased execution:
 ## Conditional phase execution
 
 Agent and Deployment Group phases include an option to run the tasks
-in the phase only when specific conditions are met. Select a predefined
-condition, or select "custom" and enter an expression that evaluates
+in the phase only when specific [conditions](conditions.md) are met. Select a predefined
+condition, or select "custom" and enter an [expression](conditions.md) that evaluates
 to **true** or **false**. Nested expressions can be used, and the
 expressions can access variables available in the release definition.
 
@@ -313,5 +313,6 @@ expressions can access variables available in the release definition.
 
 * [Tasks](tasks.md)
 * [Task groups](../library/task-groups.md)
+* [Specify conditions for running a task](conditions.md)
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
