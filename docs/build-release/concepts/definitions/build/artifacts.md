@@ -125,7 +125,7 @@ For the full example, see [Build your C++ app for Windows](../../../apps/windows
 
 [ASP.NET Core](../../../apps/aspnet/ci/build-aspnet-core.md)
 
-[Node.js](../../../apps/node/nodejs-to-azure.md)
+[Node.js](../../../apps/nodejs/nodejs-to-azure.md)
 
 [Java](../../../apps/java/maven-to-azure.md)
 

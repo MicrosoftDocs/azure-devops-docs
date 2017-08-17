@@ -30,7 +30,7 @@ Before you begin, you'll need a CI build that publishes your Web Deploy package.
 
 * [Build your ASP.NET Core app](../aspnet/ci/build-aspnet-core.md)
 
-* [Build your Node app with Gulp](../node/nodejs-to-azure.md)
+* [Build your Node app with Gulp](../nodejs/nodejs-to-azure.md)
 
 [!INCLUDE [azure-web-app-setup](../_shared/azure-web-app-setup.md)]
 

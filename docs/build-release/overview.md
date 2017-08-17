@@ -77,7 +77,7 @@ for your entire team. Organize shared assets such as [service endpoints](concept
 <p style="font-weight:bold;padding-top:10px">Build</p>
 <ul style="padding-left:30px">
  <li>[ASP.NET](apps/aspnet/ci/build-aspnet-4.md) and [ASP.NET Core](apps/aspnet/ci/build-aspnet-core.md)</li>
- <li>[Java](apps/java/maven-to-azure.md) and [Node](apps/node/nodejs-to-azure.md)</li>
+ <li>[Java](apps/java/maven-to-azure.md) and [Node](apps/nodejs/nodejs-to-azure.md)</li>
  <li>[UWP](apps/windows/universal.md) and [C++](apps/windows/cpp.md)
  <li>[Xamarin](apps/mobile/xamarin.md) and [XCode](apps/mobile/xcode-ios.md)</li>
  <li>[Cordova](apps/mobile/cordova-build.md)</li>

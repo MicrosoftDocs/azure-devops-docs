@@ -103,7 +103,7 @@
     - name: C++ 
       href: apps/windows/cpp.md
     - name: Node.js 
-      href: apps/node/nodejs-to-azure.md
+      href: apps/nodejs/nodejs-to-azure.md
     - name: Java 
       href: apps/java/maven-to-azure.md
     - name: Xamarin 

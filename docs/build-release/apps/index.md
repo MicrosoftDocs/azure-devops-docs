@@ -27,7 +27,7 @@ continuous integration (CI) and continuous deployment (CD) process.
  <li style="margin-bottom:5px">[ASP.NET 4 apps](aspnet/ci/build-aspnet-4.md)</li>
  <li style="margin-bottom:5px">[ASP.NET Core apps](aspnet/ci/build-aspnet-core.md)</li>
  <li style="margin-bottom:5px">[Java apps with Maven](../get-started/java-maven.md)</li>
- <li style="margin-bottom:5px">[Node apps](node/nodejs-to-azure.md)</li>
+ <li style="margin-bottom:5px">[Node apps](nodejs/nodejs-to-azure.md)</li>
  <li style="margin-bottom:5px">[Cloud Services apps](aspnet/ci/build-aspnet-cloudservice.md)</li>
  <li style="margin-bottom:5px">[SQL database DACPAC](aspnet/ci/build-aspnet-dacpac.md)</li>
  <li style="margin-bottom:5px">[C++ apps for Windows](windows/cpp.md)</li>
