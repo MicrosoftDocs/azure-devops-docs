@@ -18,7 +18,17 @@ ms.date: 05/22/2017
 >[!NOTE]  
 ><b>Feature availability: </b>The Follow a work item feature is available from Team Services and TFS 2017. The Follow a pull request feature is available from Team Services and TFS 2017 Update 1. For on-premises TFS, [you must configure an SMTP sever](../setup-admin/tfs/admin/setup-customize-alerts.md) for the follow features to work.   
 
-##Follow a work item or pull request  
+To get notified of changes made to a work item or a pull request, you can elect to follow them. 
+
+This topic shows you how to:  
+
+> [!div class="checklist"]   
+> * Follow a work item
+> * Follow a pull request       
+> * Manage work items that you're following   
+
+
+# Follow a work item
 
 When you want to track the progress of a single work item, click the ![Follow icon](../work/_img/icons/follow-icon.png) icon. This signals the system to notify you when changes are made to the work item.  
 

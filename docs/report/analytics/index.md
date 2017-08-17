@@ -22,7 +22,7 @@ ms.date: 08/04/2017
 - [OData & the Analytics Service](overview-analytics-service.md)
 -->
 
-## 5-minute Quickstarts  
+## 5-Minute Quickstarts  
 - [Client authentication ](client-authentication-options.md)  
 - [Access data through Excel](access-analytics-excel.md)  
 - [Access data through Power BI desktop](access-analytics-power-bi.md)  

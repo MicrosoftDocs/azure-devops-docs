@@ -19,7 +19,7 @@ You can request feedback using one of two tools, through the Test & Feedback ext
 [About feedback](about-feedback.md)
 -->
 
-## 5-minute Quickstarts  
+## 5-Minute Quickstarts  
 - [Request feedback (Test & Feedback extension)](/vsts/manual-test/stakeholder/request-stakeholder-feedback?toc=/vsts/collaborate/feedback/toc.json)
 - [Get feedback (Work tracking)](/vsts/work/connect/get-feedback?toc=/vsts/collaborate/feedback/toc.json) 
 

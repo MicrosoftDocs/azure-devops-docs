@@ -21,7 +21,7 @@ Repository README files and team project Wikis are great ways to share informati
 [About READMEs & Wikis?](about-readme-wiki.md)
 -->
 
-## 5-minute Quickstarts  
+## 5-Minute Quickstarts  
 - [Share your project vision](project-vision-status.md)
 
 

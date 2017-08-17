@@ -45,38 +45,12 @@ group in Team Foundation Server (TFS).
 	However, if you have multiple application tiers,
 	you'll need to repeat these two steps on every application tier server.
 	And if you have SharePoint or reporting on other servers,
-	you might need to manually add administrative users to those products separately.
+	you might need to manually add administrative users to those products separately. 
 
-	### SharePoint
+	See [Set SharePoint site permissions](../security/set-sharepoint-permissions.md) or [Grant permissions to view or create SQL Server reports in TFS](../report/admin/grant-permissions-to-reports.md). 
 
-	1.  On the server that's running SharePoint Products, open SharePoint Central Administration.
 
-	2.  Grant permissions that are appropriate for this user at the farm or the Web application level,
-		depending on your security needs.
 
-		For optimum interoperability, consider adding users of the **Team Foundation Administrators** group
-		to the following groups in SharePoint Products:
-
-		-   **Farm Administrators**
-
-		-   **Site Collection Administrators** group for all site collections that the deployment of Team Foundation Server uses
-
-		![Follow instructions for your version of SharePoint](_img/add-administrator-tfs/people-and-groups.png)
-
-	### Reporting Services
-
-	2.  Go to `http://{ReportServer}/Reports/Pages/Folder.aspx`, where {ReportServer} is the name of the server
-		that's running Reporting Services.
-
-		> If you are using a named instance, include its name in the path of the reports, like this:
-		> `http://{ReportServer}/Reports_{InstanceName}/Pages/Folder.aspx`
-
-	3.  Choose **Folder Settings**, and then choose **New Role Assignment**.
-
-	4.  Add the account name of the user or group to whom you want grant administrative permissions
-		and grant them membership in the Team Foundation Content Manager role.
-
-		![Click and choose, or tab, spacebar, and enter](_img/add-administrator-tfs/rs-role-assignment.png)
 
 ### Q & A
 

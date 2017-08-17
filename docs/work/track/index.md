@@ -20,7 +20,7 @@ With queries you can ...
 - [Adhoc vs managed queries](adhoc-vs-managed-queries.md)  
 -->
  
-## 5-minute Quickstarts  
+## 5-Minute Quickstarts  
 
 - [Begin your query with the search box](search-box-queries.md)
    

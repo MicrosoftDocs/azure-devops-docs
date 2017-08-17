@@ -1,5 +1,5 @@
 ---
-title: Services | Team Services & TFS
+title: A tour of VSTS & TFS services | Team Services & TFS
 description: Understand the services that support the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
@@ -7,10 +7,10 @@ ms.topic: get-started-article
 ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/07/2016
+ms.date: 08/15/2017
 ---
 
-# Essential services provided with Team Services and TFS 
+# A tour of services provided with Team Services and TFS 
 <b>Team Services | TFS 2017 | TFS 2015  </b> 
 
 Team Services and TFS provide an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web-based interface that you can access from all major browsers on any platform. Web services are access through the following five main hubs: 

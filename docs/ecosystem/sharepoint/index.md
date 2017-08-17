@@ -14,7 +14,7 @@ ms.date: 08/02/2017
   
 
 
-## 5-minute Quickstarts  
+## 5-Minute Quickstarts  
 - [Share information using the SharePoint portal](../../report/sharepoint-dashboards/share-information-using-the-project-portal.md)
 
 

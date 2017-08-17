@@ -20,14 +20,14 @@ ms.date: 08/04/2017
 [Default permission and access assignments](/vsts/setup-admin/permissions-access?toc=/vsts/security/toc.json)
 -->
 
-## 5-minute Quickstarts  
+## 5-Minute Quickstarts  
   
 - [View permissions](view-permissions.md)
 - [Add users to a team project](/vsts/setup-admin/add-users?toc=/vsts/security/toc.json)  
 
 ## Step-by-Step Tutorials
 
-- Manage users (new topic)
+- [Invite new users](/vsts/accounts/team-services/add-account-users-from-user-hub?toc=/vsts/security/toc.json)
 - [Authenticate access with personal access tokens](/vsts/setup-admin/team-services/use-personal-access-tokens-to-authenticate?toc=/vsts/security/toc.json)  
 
 

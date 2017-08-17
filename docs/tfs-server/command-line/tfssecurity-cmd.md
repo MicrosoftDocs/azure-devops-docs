@@ -1259,13 +1259,13 @@ TFS 2017 RTM and earlier
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Administer](../../setup-admin/git-permissions-before-2017.md#git-administer-permission)|GitRepositories|Administer|
-|[Branch Creation](../../setup-admin/git-permissions-before-2017.md#git-branch-creation-permission)|GitRepositories|CreateBranch|
-|[Contribute](../../setup-admin/git-permissions-before-2017.md#git-contribute-permission)|GitRepositories|GenericContribute|
-|[Note Management](../../setup-admin/git-permissions-before-2017.md#git-note-management-permission)|GitRepositories|ManageNote|
-|[Read](../../setup-admin/git-permissions-before-2017.md#git-read-permission)|GitRepositories|GenericRead|
-|[Rewrite and destroy history (force push)](../../setup-admin/git-permissions-before-2017.md#git-rewrite-and-destroy-history-permission)|GitRepositories|ForcePush|
-|[Tag Creation](../../setup-admin/git-permissions-before-2017.md#git-tag-creation-permission)|GitRepositories|CreateTag|
+|[Administer](../../security/git-permissions-before-2017.md#git-administer-permission)|GitRepositories|Administer|
+|[Branch Creation](../../security/git-permissions-before-2017.md#git-branch-creation-permission)|GitRepositories|CreateBranch|
+|[Contribute](../../security/git-permissions-before-2017.md#git-contribute-permission)|GitRepositories|GenericContribute|
+|[Note Management](../../security/git-permissions-before-2017.md#git-note-management-permission)|GitRepositories|ManageNote|
+|[Read](../../security/git-permissions-before-2017.md#git-read-permission)|GitRepositories|GenericRead|
+|[Rewrite and destroy history (force push)](../../security/git-permissions-before-2017.md#git-rewrite-and-destroy-history-permission)|GitRepositories|ForcePush|
+|[Tag Creation](../../security/git-permissions-before-2017.md#git-tag-creation-permission)|GitRepositories|CreateTag|
 
 <a id="specifiers"></a>
 ## Identity specifiers

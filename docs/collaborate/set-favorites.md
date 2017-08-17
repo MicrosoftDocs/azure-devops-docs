@@ -13,10 +13,10 @@ ms.date: 07/22/2017
 
 [!INCLUDE [temp](../work/_shared/dev15-and-ts-version-header.md)]  
 
-<!--- Multiple version topic -->  
+<!--- Multiple version topi; need to update with latest screenshots-->  
 
 <a id="team-favorites"> </a>
-### Set team favorites 
+## Set team favorites 
 Team favorites are a quick way for members of your team to quickly access shared resources of interest. You can define team favorites for the following:
 
 - **Code hub/Explorer**: Add repos or folders to team favories  

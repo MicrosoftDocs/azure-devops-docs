@@ -10,49 +10,24 @@
     href: ../services.md
 - name: Quickstarts
   items:
-  - name: Sign up and create a team project  
-    href: /vsts/accounts/team-services/sign-up-for-visual-studio-team-services?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
+  - name: Sign up and invite some teammates 
+    href: sign-up-invite-teammates.md
   - name: Code with Git
     href: /vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
-  - name: Invite new users (NEW)   
-  - name: "Build & release"
+  - name: "Build & release an app"
     href: /vsts/build-release/get-started/ci-cd-part-1?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json
-  - name: Track work
-    items:  
-    - name: Create your backlog
-      href: /vsts/work/backlogs/create-your-backlog?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
-    - name: Update your board (Kanban) 
-      href: /vsts/work/kanban/kanban-quickstart?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
-    - name: Define and assign work to sprints 
-      href: /vsts/work/scrum/define-sprints?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
-    - name: Capture bugs 
-      href: /vsts/work/backlogs/manage-bugs?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
-    - name: Listing work items (Queries) 
-      href: /vsts/work/track/organize-view-run-queries?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
-  - name: Test your app
-    items:  
-    - name: Add and run manual tests
-      href: /vsts/work/kanban/add-run-update-tests?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
-    - name: Run URL-based load tests  
-      href: /vsts/load-test/get-started-simple-cloud-load-test?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
-    - name: Exploratory testing
-      href: /vsts/manual-test/connected-mode-exploratory-testing?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
-    - name: Unit testing
-      href: https://docs.microsoft.com/visualstudio/test/unit-test-your-code?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
-  - name: Get extensions
-    items:  
-    - name: Popular extensions
-      href: /vsts/marketplace/index?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
-    - name: Service hooks 
-      href: /vsts/service-hooks/index?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
+  - name: "Plan & track work" 
+    href: plan-track-work.md 
+  - name: Add and run manual tests
+    href: /vsts/work/kanban/add-run-update-tests?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
+  - name: Try extensions for free
+    href: /vsts/accounts/team-services/try-additional-features-vs?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
 - name: Tutorials
   items:
   - name: Set favorites
     href: /vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: "Follow work & pull requests"
     href: /vsts/collaborate/follow-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
-  - name: Enable preview features
-    href: /vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: Get started as a Stakeholder
     href: /vsts/quickstart/get-started-stakeholder?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json&bc=/vsts/breadcrumb/toc.json 
 - name: Concepts
@@ -71,6 +46,8 @@
     href: /vsts/about-vsts-tfs?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json  
 - name: How-to
   items:
+  - name: Enable preview features
+    href: /vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: Connect to a team project
     href:  /vsts/connect/connect-team-projects?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: View permissions

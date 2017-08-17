@@ -17,7 +17,7 @@ ms.date: 08/03/2017
   [What are notifications?](about-notifications.md)
 -->
 
-## 5-minute Quickstarts  
+## 5-Minute Quickstarts  
 
 - [Set your personal notifications](../collaborate/manage-personal-notifications.md)
 - [Follow work & pull requests](../collaborate/follow-work-items.md)  

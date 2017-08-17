@@ -1040,7 +1040,7 @@ Rename Repository
 
 >[!NOTE] 
 >These permissions have changed in TFS 2017 Update 1 and VSTS.
->If you are using an earlier version of TFS, see the [previous list of permissions](git-permissions-before-2017.md).
+>If you are using an earlier version of TFS, see the [previous list of permissions](../security/git-permissions-before-2017.md).
 
 You manage the security of each Git repository or branch from the [web portal](../git/branch-permissions.md) or using the [TFSSecurity command-line tool](tfs/command-line/tfssecurity-cmd.md#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a team project that's been configured with a Git repository). You can manage these permissions for each Git repository.
 

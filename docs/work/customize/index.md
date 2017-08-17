@@ -13,7 +13,7 @@ ms.date: 07/26/2017
 
 With work item customization, you can add a custom field or work item type (WIT), or modify existing WITs. The method you use depends on whether you work in Team Services, which uses the Inheritance and Hosted XML process models, or an on-premises TFS, which uses the On-premises XML process model.  
 
-## 5-minute Quickstarts  
+## 5-Minute Quickstarts  
 
 - [Define area paths](set-area-paths.md)
 - [Define iteration paths or sprints](set-iteration-paths-sprints.md)

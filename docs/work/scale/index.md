@@ -15,7 +15,7 @@ ms.date: 08/03/2017
 The #1 way you scale your team project is by adding teams.   
 
 
-## 5-minute Quickstarts  
+## 5-Minute Quickstarts  
 
 Start tracking work by adding work items, creating your backlog, or scheduling sprints.  
 
@@ -35,7 +35,7 @@ Start tracking work by adding work items, creating your backlog, or scheduling s
 - [Visibility across teams](visibility-across-teams.md)   
 - [Agile culture and scale](agile-culture.md)   
 - [Practices that scale](practices-that-scale.md)  
-
+- [Team administrator role and permissions](team-administrator-permissions.md)
 
 
 ## Reference   

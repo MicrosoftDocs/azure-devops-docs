@@ -17,7 +17,7 @@ ms.date: 06/22/2017
 [Charts, dashboards, and widgets](overview.md)
 -->
 
-## 5-minute Quickstarts  
+## 5-Minute Quickstarts  
 - [Add and manage dashboards](dashboards.md)  
 - [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  
 - [Configure work item query-based charts](charts.md)
@@ -29,7 +29,7 @@ ms.date: 06/22/2017
 - [Work with lead/cycle time](guidance/cycle-time-and-lead-time.md)
 - [Work with sprint burndown](../work/scrum/sprint-burndown.md)
 - [Work with Velocity](guidance/team-velocity.md)
-- [Configure test status, progress, and result charts](../manual-test/getting-started/track-test-status.md)  
+
  
 
 ## How-to Guides
@@ -37,6 +37,8 @@ ms.date: 06/22/2017
 - [Add charts to a dashboard](add-charts-to-dashboard.md)  
 - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)  
 - [Set dashboard permissions](dashboard-permissions.md)  
+- [Configure test status, progress, and result charts](../manual-test/getting-started/track-test-status.md)  
+
 
 ## Reference 
 - [Widget catalog](widget-catalog.md)  

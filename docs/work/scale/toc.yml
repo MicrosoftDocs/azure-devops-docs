@@ -3,7 +3,7 @@
 - name: Overview
   items:
   - name: Support a growing organization
-    href: /vsts/work/scale-teams?toc=/vsts/work/scale/toc.json 
+    href: /vsts/work/scale/scale-teams?toc=/vsts/work/scale/toc.json 
   - name: "About teams & Agile tools"
     href: /vsts/work/about-teams-and-settings?toc=/vsts/work/scale/toc.json 
   - name: Manage teams (To be written)
@@ -21,8 +21,6 @@
     href: /vsts/work/scale/review-team-plans?toc=/vsts/work/scale/toc.json
   - name: Scaled Agile Framework
     href: scaled-agile-framework.md
-  - name: Define a work item template 
-    href: /vsts/work/productivity/work-item-template?toc=/vsts/work/scale/toc.json
 - name: Concepts
   items:
   - name: Visibility across teams
@@ -31,7 +29,7 @@
     href: agile-culture.md
   - name: Practices that scale
     href: practices-that-scale.md
-  - name: team administrator Permissions
+  - name: Team administrator role and permissions
     href: team-administrator-permissions.md	
 - name: How-to Guides
   items:
@@ -41,6 +39,8 @@
     href: /vsts/work/customize/set-area-paths?toc=/vsts/work/scale/toc.json 
   - name: Define iteration paths or sprints
     href: /vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/scale/toc.json 
+  - name: Define a work item template 
+    href: /vsts/work/productivity/work-item-template?toc=/vsts/work/scale/toc.json
   - name: Configure team settings
     href: manage-team-assets.md 
     items:

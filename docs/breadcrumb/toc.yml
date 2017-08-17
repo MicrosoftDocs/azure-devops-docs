@@ -6,7 +6,7 @@
     tocHref: /vsts/user-guide/
     topicHref: /vsts/user-guide/index
   - name: Code
-    tocHref: /vsts/
+    tocHref: /vsts/git/
     topicHref: /vsts/index#pivot=services&panel=code
     items:
     - name: Git
@@ -16,7 +16,7 @@
       tocHref: /vsts/tfvc/
       topicHref: /vsts/tfvc/overview
   - name: "Continuous Integration & Delivery"
-    tocHref: /vsts/
+    tocHref: /vsts/build-release/
     topicHref: /vsts/index#pivot=services&panel=code
     items:
     - name: Deploy to Azure
@@ -32,7 +32,7 @@
       tocHref: /vsts/build-release/
       topicHref: /vsts/build-release/test/index
   - name: Testing
-    tocHref: /vsts/
+    tocHref: /vsts/manual-test/
     topicHref: /vsts/index#pivot=services&panel=testing
     items:
     - name: Manual Testing
@@ -45,7 +45,7 @@
       tocHref: https://docs.microsoft.com/visualstudio/test/improve-code-quality/
       topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
   - name: Agile
-    tocHref: /vsts/
+    tocHref: /vsts/work/
     topicHref: /vsts/index#pivot=services&panel=agile
     items:
     - name: Kanban
@@ -64,7 +64,7 @@
       tocHref: /vsts/work/track/
       topicHref: /vsts/work/track/index
   - name: Analytics
-    tocHref: /vsts/
+    tocHref: /vsts/report/
     topicHref: /vsts/index#pivot=services&panel=analytics
     items:
     - name: "Charts, Dashboards & Widgets"
@@ -80,7 +80,7 @@
       tocHref: /vsts/report/sql-reports
       topicHref: /vsts/report/sql-reports/index
   - name: Collaboration
-    tocHref: /vsts/
+    tocHref: /vsts/collaborate/
     topicHref: /vsts/index#pivot=services&panel=collaboration
     items:
     - name: Notifications
@@ -96,7 +96,7 @@
       tocHref: /vsts/collaborate/feedback/
       topicHref: /vsts/collaborate/feedback/index
   - name: Admin
-    tocHref: /vsts/
+    tocHref: /vsts/accounts/
     topicHref: /vsts/index#pivot=services&panel=admin
     items:
     - name: Team Services Account Management
@@ -121,7 +121,7 @@
       tocHref: /vsts/marketplace/
       topicHref: /vsts/marketplace/index
   - name: Integration
-    tocHref: /vsts/
+    tocHref: /vsts/integrate/
     topicHref: /vsts/index#pivot=services&panel=integration
     items:
     - name: Service Hooks

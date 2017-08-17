@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 02/22/2017
 ---
 
-# Grant permissions to view or create reports in TFS
+# Grant permissions to view or create SQL Server reports in TFS
 
 <b>TFS 2017 | TFS 2015 | TFS 2013</b>  
 

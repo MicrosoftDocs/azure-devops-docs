@@ -23,7 +23,7 @@ With Scrum, you can schedule and plan sprints, update your task board, and monit
 -->
 
 
-## 5-minute Quickstarts  
+## 5-Minute Quickstarts  
 
 Start tracking work by adding work items, creating your backlog, or scheduling sprints.  
   

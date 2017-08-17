@@ -21,7 +21,7 @@ Your Kanban board turns your backlog into an interactive signboard, providing a 
 [Backlogs, boards, & plans](/vsts/work/backlogs-boards-plans?toc=/vsts/work/kanban/toc.json) 
 -->
 
-## 5-minute Quickstarts  
+## 5-Minute Quickstarts  
 
 Start tracking work by adding work items, updating status, and inviting others to use your Kanban board.  
 

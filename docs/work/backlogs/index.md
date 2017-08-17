@@ -22,7 +22,7 @@ With Agile tools, project managers and teams can quickly plan and track the work
 -->
 
 
-## 5-minute Quickstarts  
+## 5-Minute Quickstarts  
 
 Build your backlog, drive your code development efforts from your work items, and storyboard your ideas using PowerPoint Storyboarding.   
 

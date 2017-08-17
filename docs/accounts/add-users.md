@@ -1,6 +1,6 @@
 ---
-title: Add users to a team project, sharepoint and reporting services, and groups
-description: Add users to a team project, sharepoint and reporting services, and groups
+title: Add users to a team project and groups
+description: Add users to a team project and groups
 ms.assetid: 3cfefdd2-b161-4e04-8dc0-e2deeac50262
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs
@@ -29,7 +29,7 @@ skip this topic and [simply add them to a team](../work/scale/multiple-teams.md)
  > and are dependent on user licenses; permissions control a user's ability to use features across TFS.
  > If you're just trying to give someone access to a team room or to Agile portfolio management
  > and test case management features,
- > you'll want to [change access levels](../work/connect/change-access-levels.md), not permissions.
+ > you'll want to [change access levels](../security/change-access-levels.md), not permissions.
 
 <../security/view-permissions.md --> 
 
@@ -76,48 +76,8 @@ If your TFS deployment is integrated with SharePoint Foundation,
 you'll need to manage membership in the SharePoint groups to grant permissions to the team project portal
 for your TFS users.
 
-## Add users to SharePoint
+See [Set SharePoint site permissions](../security/set-sharepoint-permissions.md) or [Grant permissions to view or create SQL Server reports in TFS](../report/admin/grant-permissions-to-reports.md). 
 
-1.  Open your project portal.
-
-2.  Choose **Share**, and add users or user groups to the appropriate SharePoint groups.
-
-    ![Choose the SharePoint group and add users](_img/add-users-team-project/invite-people.png)
-
-    -   To add users who will require minimal access to the project, choose **Readers**.
-
-    -   To add users who will contribute fully to this project, choose **Contributors**.
-
-    -   To add users who will act as project leads, choose **Full Control**.
-
-For more information about users and groups in SharePoint Products,
-[go here](https://technet.microsoft.com/library/cc262690.aspx).
-
-If your TFS deployment is integrated with SQL Server Reporting Services,
-you'll need to manage users in the appropriate SQL Server Reporting Services groups,
-or they won't be able to view or edit those reports.
-
-## Add users to Reporting Services
-
-1.  Open Internet Explorer or another browser compatible with Reporting Services administration,
-and navigate to the following address,
-where *ReportServer* represents the name of the server that is running SQL Server Reporting Services:
-
-    **http://** *ReportServer* **/Reports/Pages/Folder.aspx**
-
-2.  On the **Home** page, choose **Folder Settings**, and in Security, choose **New Role Assignment** and add users.
-
-    -   To add users who can act as readers of or contributors to the project, select the **Browsers** check box.
-
-        ![Click or tab to selection and spacebar to check](_img/add-users-team-project/assign-rs-browser.png)
-
-    -   To add users who will act as project leads, select the **Team Foundation Content Manager** check box.
-
-        ![Choose the role assignment for the user or group](_img/add-users-team-project/assign-rs-role.png)
-
-If you're a member of [Team Foundation Administrators](add-administrator-tfs.md),
-you can verify what features are available for your users by default,
-and see whether any users are members of groups that have access outside of the default level.
 
 ## Verify
 

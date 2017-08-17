@@ -18,8 +18,6 @@
     href: define-features-epics.md
   - name: Organize your backlog (map or reparent)
     href: organize-backlog.md
-  - name: "Create backlog items & tasks (Project)"
-    href: ../office/create-your-backlog-tasks-using-project.md
 - name: Concepts
   items:
   - name: Grooming your backlog
@@ -48,6 +46,8 @@
     href: /vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/backlogs/toc.json
   - name: Copy as HTML 
     href: /vsts/work/backlogs/copy-clone-work-items#html?toc=/vsts/work/backlogs/toc.json
+  - name: "Create backlog items & tasks (Project)"
+    href: ../office/create-your-backlog-tasks-using-project.md
   - name: Storyboard your ideas
     href: ../office/storyboard-your-ideas-using-powerpoint.md
 - name: Troubleshooting
