@@ -34,7 +34,9 @@ With your CI/CD processes in place, you'll push a change into your team's Git re
 
 [!INCLUDE [import-code-aspnet-core](_shared/import-code-aspnet-core.md)]
 
-[!INCLUDE [create-azure-web-app-portal](_shared/create-azure-web-app-portal.md)]
+<a name="create-webapp-portal"></a>
+
+!INCLUDE [create-azure-web-app-portal](_shared/create-azure-web-app-portal.md)]
 
 ## Configure continuous delivery
 

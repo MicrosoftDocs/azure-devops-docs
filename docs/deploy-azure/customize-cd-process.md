@@ -39,10 +39,9 @@ that you will use in this tutorial. However, you can start with any other releas
 quickstarts or tutorials, but you will then need to adapt the following steps to match your own release definition. 
 
 You will also need an additional Azure App Services website to deploy your app to when you add a new environment to the release
-definition in this tutorial. It's a good idea to create that now by following the steps in the next section. You'll need to choose
+definition in this tutorial. It's a good idea to create that now by following
+[these steps in the quickstart](aspnet-core-to-azure-webapp.md#create-webapp-portal). You'll need to choose
 a different name for your new website, perhaps containing the text "QA" to help you easily see which is which later on.
-
-[!INCLUDE [create-azure-web-app-portal](_shared/create-azure-web-app-portal.md)]
 
 ## Release definitions in VSTS
 
@@ -132,29 +131,30 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
    targets (the websites where each copy of the app will be deployed).
 
 1. The clone of the environment appears after the existing environment in the pipeline, and has the name **Copy of Production**.
-   To tidy up, rename the environments:
-   
-   - Select the first environment named **Production** and change the name to **QA**.
+   Select this environment and, in the **Environment** panel, change the name to **QA**. 
 
-   - Select the second environment named **Copy of Production** and change the name to just **Production**.
+   ![Renaming the clone environment](_img/customize-cd-process/rename-copy-environment.png)
 
-   ![Renaming the existing environments](_img/customize-cd-process/rename-environments.png)
+1. To reorganize the environments in the pipeline, choose the **Pre-deployment conditions** icon for the **QA** environment and
+   set the trigger to **After release**. The pipeline diagram changes to show that the deployment to the two environments will
+   now execute in parallel. 
 
-1. In the **Environments** section, choose the **Pre-deployment conditions** icon for the **Production** environment
-   to open the conditions panel. Now you see an additional trigger type named "Environment", which is selected
-   for this environment. This trigger will cause a deployment to start to the **Production** environment when a
-   deployment to the **QA** environment has succeeded (the QA environment is selected in the list for the trigger).  
-   
-   ![Viewing the Production environment trigger](_img/customize-cd-process/production-environment-trigger.png)
+   ![Changing the QA environment trigger](_img/customize-cd-process/change-trigger-qa.png)
 
+1. Choose the **Pre-deployment conditions** icon for the **Production** environment and
+   set the trigger to **After environment**, then select **QA** in the **Environments** drop-down list.
+   The pipeline diagram changes to show that the deployment to the two environments will
+   now execute in the required order.
+     
+   ![Changing the Production environment trigger](_img/customize-cd-process/change-trigger-prod.png)
+ 
    Notice that you can specify deployment to start when a deployment to the previous environment is _partially_ successful.
    Usually, this means the deployment tasks were set to continue the deployment even if a specific non-critical task failed
    (the default is that all tasks must succeed). You're most likely to set this option if you create a pipeline containing
    [fork and join deployments](../build-release/concepts/definitions/release/triggers.md?toc=/vsts/deploy-azure/toc.json)
    that deploy to different environments in parallel.  
 
-1. Your release definition should now look like that shown below.
-   If you are happy with it so far, open the **Tasks** drop-down list and choose the **QA** environment.
+1. Open the **Tasks** drop-down list and choose the **QA** environment.
 
    ![Open the tasks pane for the QA environment](_img/customize-cd-process/open-qa-tasks.png)
 
@@ -252,8 +252,15 @@ from the release you created in the previous section.
 
    ![Viewing and downloading individual log files](_img/customize-cd-process/download-logs.png)
 
-1. Select one of the environment links in the list of process tasks to see more details about
+1. Open the **Summary** tab to see the overall detail of the release. It shows details of the build and
+   the environments it was deployed to - along with the deployment status and other information about
+   the release.   
+
+   ![Viewing the summary page](_img/customize-cd-process/final-summary.png)
+
+1. Select each of the environment links to see more details about
    existing and pending deployments to that specific environment.
+   You can use these pages to verify that the same build was deployed to both environments.
 
    ![Viewing details from one environment](_img/customize-cd-process/environment-result-details.png)
 
