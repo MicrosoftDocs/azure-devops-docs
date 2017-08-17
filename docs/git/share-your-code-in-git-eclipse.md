@@ -78,7 +78,7 @@ Your project code is now your Team Services Git repo.
 
 ## Next steps
 
-Learn more about using Git in the [Git tutorial](tutorial/gitworkflow.md) and [create a build](../build-release/java/quick-to-azure.md) for your project code.
+Learn more about using Git in the [Git tutorial](tutorial/gitworkflow.md) and [create a build](../build-release/apps/java/quick-to-azure.md) for your project code.
 
 
 ## Frequently asked questions

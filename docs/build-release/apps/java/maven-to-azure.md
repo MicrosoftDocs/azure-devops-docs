@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Build and Deploy your Java app to an Azure web app
 
-**[Team Services](../../java/quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../release/previous-version/release-management-overview.md)**
+**[Team Services](../java/quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../release/previous-version/release-management-overview.md)**
 
 In just a few steps you can build and deploy your Java app to Azure. This works from both the Visual Studio Team Services service and your on-premises Team Foundation Server.
 
@@ -48,7 +48,7 @@ On the Variables tab, store the data needed to copy files to Azure via FTP. Copy
 | azure.ftp.userName | Take this value from your Azure web app essentials. For example if the name of your Azure web app is FabrikamJava, then the value would be : ```FabrikamJava\YourUserName``` |
 | azure.ftp.password | Take this value from your Azure subscription deployment settings. In your build definition variables, make sure to click secret to avoid exposing this password value. [I don't want to use my Azure subscription FTP credentials. Can I use credentials scoped to my Azure web app?](#azure_site_ftp) |
 
-![Java deployment build variables](_img/azure-java-deployment-variables.png)
+![Java deployment build variables](_img/maven-to-azure/azure-java-deployment-variables.png)
 
 ### Add build steps
 
