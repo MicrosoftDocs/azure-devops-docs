@@ -43,24 +43,39 @@
 - name: Concepts
   items:
   - name: Share work plans
-    href: /vsts/work/share-plans?toc=/vsts/work/track/toc.json
+    href: /vsts/work/share-plans?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: Switch project or team focus
-    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/track/toc.json
+    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json
   - name: Change column options
-    href: /vsts/work/how-to/set-column-options?toc=/vsts/work/track/toc.json
+    href: /vsts/work/how-to/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json
   - name: Email/print work items
-    href: /vsts/work/how-to/email-work-items?toc=/vsts/work/track/toc.json
+    href: /vsts/work/how-to/email-work-itemsv
   - name: "Filter, backlogs, boards, & queries"
-    href: /vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/track/toc.json
+    href: /vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json
   - name: Copy as HTML 
-    href: /vsts/work/backlogs/copy-clone-work-items#html?toc=/vsts/work/track/toc.json
+    href: /vsts/work/backlogs/copy-clone-work-items#html?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json
 - name: Reference
   items:
   - name: "Query fields, operators & macros"
     href: query-operators-variables.md
   - name: Work item field index
-    href: /vsts/work/guidance/work-item-field?toc=/vsts/work/track/toc.json
+    href: /vsts/work/guidance/work-item-field?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json
   - name: WIQL syntax
-    href: ../../reference/wiql-syntax.md
+    href: /vsts/reference/wiql-syntax?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json
+- name: Resources
+  items:
+  - name: Backlogs
+    href: ../backlogs/index.md
+  - name: Kanban
+    href: ../kanban/index.md
+  - name: Scrum
+    href: ../scrum/index.md
+  - name: Work item customization
+    href: ../customize/index.md
+  - name: Wiql Editor (Marketplace extension)
+    href: https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor
+  - name: Enhanced Export (Marketplace extension)
+    href: https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export
+

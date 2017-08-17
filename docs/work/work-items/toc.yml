@@ -23,21 +23,21 @@
   - name: Bulk modify (web)
     href: ../backlogs/bulk-modify-work-items.md
   - name: Follow work
-    href: /vsts/collaborate/follow-work-items?toc=/vsts/work/work-items/toc.json
+    href: /vsts/collaborate/follow-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: Get started as a Stakeholder
-    href: /vsts/quickstart/get-started-stakeholder?toc=/vsts/work/work-items/toc.json
+    href: /vsts/quickstart/get-started-stakeholder?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
 - name: Concepts
   items:
   - name: About permissions and access
-    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/work-items/toc.json
+    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: "Link types & link relationships"
-    href: ../track/link-work-items-support-traceability.md
+    href: /vsts/work/track/link-work-items-support-traceability?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: Work item form controls
-    href: ../concepts/work-item-form-controls.md
+    href: /vsts/work/concepts/work-item-form-controls?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: Share work plans
-    href: /vsts/work/track/share-plans?toc=/vsts/work/work-items/toc.json
+    href: /vsts/work/track/share-plans?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: New work item experience
-    href: /vsts/work/process/new-work-item-experience?toc=/vsts/work/work-items/toc.json
+    href: /vsts/work/process/new-work-item-experience?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: Process guidance
     items:
     - name: Agile process
@@ -93,23 +93,23 @@
 - name: How-to guides
   items:
   - name: Add tags to work items
-    href: /vsts/work/track/add-tags-to-work-items?toc=/vsts/work/work-items/toc.json
+    href: /vsts/work/track/add-tags-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: Use work item templates
-    href: /vsts/work/productivity/work-item-template?toc=/vsts/work/work-items/toc.json
+    href: /vsts/work/productivity/work-item-template?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: Switch project or team focus
-    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/work-items/toc.json
+    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: Email/print work items
-    href: /vsts/work/how-to/email-work-items?toc=/vsts/work/work-items/toc.json
+    href: /vsts/work/how-to/email-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: Define area paths
-    href: /vsts/work/customize/set-area-paths?toc=/vsts/work/work-items/toc.json
+    href: /vsts/work/customize/set-area-paths?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: Define iteration paths
-    href: /vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/work-items/toc.json
+    href: /vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: "Manage permissions & access"
-    href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/work/work-items/toc.json
+    href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: Bulk add or modify (Excel)
-    href: /vsts/work/office/bulk-add-modify-work-items-excel?toc=/vsts/work/work-items/toc.json
+    href: /vsts/work/office/bulk-add-modify-work-items-excel?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: "Add & share storyboard shapes"
-    href: /vsts/work/office/add-share-storyboard-shapes?toc=/vsts/work/work-items/toc.json
+    href: /vsts/work/office/add-share-storyboard-shapes?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: Work item field index
@@ -124,13 +124,19 @@
     href: ../guidance/cmmi/guidance-requirements-field-reference-cmmi.md
   - name: Review meeting field reference
     href: ../guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md
+  - name: Clients that support work tracking
+    href: /vsts/tools?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
 - name: Resources
   items:
+  - name: Kanban
+    href: ../kanban/index.md
+  - name: Scrum
+    href: ../scrum/index.md
+  - name: Backlogs
+    href: ../backlogs/index.md
+  - name: Work item queries
+    href: ../track/index.md
   - name: Adhoc work item search
     href: ../../search/workitem/work-item-search.md
-  - name: Work item queries
-    href: ../track/using-queries.md
-  - name: Clients that support work tracking
-    href: ../../tools.md
-  - name: Productivity tips
-    href: ../productivity/productivity-tips.md
+  - name: Work item customization
+    href: ../customize/index.md

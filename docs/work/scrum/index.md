@@ -19,7 +19,7 @@ With Scrum, you can schedule and plan sprints, update your task board, and monit
 <!---
 ## Overview  
 [About Scrum](scrum-overview.md) 
-[About teams and Agile tools](/vsts/work/about-teams-and-settings?toc=/vsts/work/scrum/toc.json)  
+[About teams and Agile tools](/vsts/work/about-teams-and-settings?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/breadcrumb/toc.json)  
 -->
 
 
@@ -37,28 +37,33 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Add and update tasks](task-board.md)  
 - [Sprint burndown](sprint-burndown.md)  
 - [Forecast](forecast.md) 
-- [Velocity](/vsts/report/guidance/team-velocity?toc=/vsts/work/scrum/toc.json)  
+- [Velocity](/vsts/report/guidance/team-velocity?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/breadcrumb/toc.json) 
  
 
 ## Concepts          
 - [Scrum best practices](../concepts/best-practices-scrum.md)    
-- [About permissions and access](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/scrum/toc.json)  
-- [Share work plans](/vsts/work/track/share-plans?toc=/vsts/work/scrum/toc.json) 
+- [About permissions and access](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/breadcrumb/toc.json)
+- [Share work plans](/vsts/work/track/share-plans?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/breadcrumb/toc.json) 
 
 
 ## How-to Guides
-* [Switch project or team focus](/vsts/work/how-to/switch-team-context-work?toc=/vsts/work/scrum/toc.json)  
-* [Filter backlogs, boards, & queries](/vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/scrum/toc.json)  
-* [Change column options](/vsts/work/how-to/set-column-options?toc=/vsts/work/scrum/toc.json)   
-* [Email/print work items](/vsts/work/how-to/email-work-items?toc=/vsts/work/scrum/toc.json)    
-* [Define iteration paths](/vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/scrum/toc.json)    
+* [Switch project or team focus](/vsts/work/how-to/switch-team-context-work?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/breadcrumb/toc.json)
+* [Filter backlogs, boards, & queries](/vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/breadcrumb/toc.json)
+* [Change column options](/vsts/work/how-to/set-column-options?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/breadcrumb/toc.json)  
+* [Email/print work items](/vsts/work/how-to/email-work-items?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/breadcrumb/toc.json)   
+* [Define iteration paths](/vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/breadcrumb/toc.json)
 
 
 ## Reference   
-- [Permissions and access for work tracking](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/scrum/toc.json) 
-- [Work item field index](/vsts/work/guidance/work-item-field?toc=/vsts/work/scrum/toc.json)  
-  
+- [Permissions and access for work tracking](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/breadcrumb/toc.json)
+- [Work item field index](/vsts/work/guidance/work-item-field?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/breadcrumb/toc.json)
+
+
 ## Resources 
+- [Backlogs](../backlog/index.md)
+- [Kanban](../kanban/index.md)
+- [Work item queries](../track/index.md)
+- [Work item customization](../customize/index.md)
 - [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)  
 - [What is Agile development?](https://www.visualstudio.com/learn/what-is-agile-development/)  
 

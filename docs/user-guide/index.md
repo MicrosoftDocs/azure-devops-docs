@@ -10,9 +10,11 @@ ms.author: kaelli
 ms.date: 08/02/2017
 ---
 
-# Guide for users new to VSTS and TFS
+# New User Guide
 
-New to Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)? We'll walk you through the basics of the web interface and some common tasks.  
+New to Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)? 
+
+We'll walk you through the basics of the web interface and some common tasks.  
 
 <!---
 ## Overview
@@ -28,17 +30,17 @@ Get started with a free account, share your code using Git, and track your work 
 
 ![Learn the UI](_img/placeholder-web-app.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Create a repo](_img/placeholder-git-repo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Create a Kanban](_img/placeholder-kanban.png)   
 
-- [Set up/sign up with Team Services](/vsts/accounts/team-services/sign-up-for-visual-studio-team-services?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json)  
-- [Code with Git](/vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json)
-- [Track work via Kanban](/vsts/work/kanban/kanban-quickstart?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json)
+- [Set up/sign up with Team Services](/vsts/accounts/team-services/sign-up-for-visual-studio-team-services?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
+- [Code with Git](/vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Track work via Kanban](/vsts/work/kanban/kanban-quickstart?toc=/vsts/user-guide/toc.json&&bc=/vsts/user-guide/breadcrumb/toc.json)
 
 
 
 ## Step-by-Step Tutorials  
 
-- [Set favorites](/vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json) 
-- [Follow work and pull requests](/vsts/collaborate/follow-work-items?toc=/vsts/user-guide/toc.json)  
-- [Enable preview features](/vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json)  
+- [Set favorites](/vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) 
+- [Follow work and pull requests](/vsts/collaborate/follow-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
+- [Enable preview features](/vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
  
 
 ## Videos
@@ -63,4 +65,6 @@ Get started with a free account, share your code using Git, and track your work 
 
 ## Resources
 
-- VSCOM_RESOURCE_LINKS_HERE
+- [Visual Studio IDE](https://docs.microsoft.com/visualstudio/)
+- [Visual Studio Code](https://code.visualstudio.com/docs)
+- [Visual Studio for Mac](https://docs.microsoft.com/visualstudio/mac)
