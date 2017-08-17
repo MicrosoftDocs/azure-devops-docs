@@ -9,7 +9,7 @@ ms.author: douge
 ms.date: 8/9/2017
 ---
 
-# Push a Gradle package and build with it using VSTS
+# Push a Maven package with Gradle and build with it using VSTS
 
 Gradle is a popular package manager for Android Java developers. Learn how to build and share a Gradle package for your team project with Visual Studio Team Services (VSTS).
 
@@ -31,6 +31,9 @@ gradle -v
 ```
 
 You're ready to start! This tutorial will guide you through the process of pushing or pulling a Gradle package and then building your code project with it.
+
+
+[DOUGE NOTE: ASSUME THEY ARE WORKING FROM CLONED REPO. ALL COMMANDS SHOULD BE RUN UNDER LOCAL REPO.]
 
 ## Set up authentication
 
@@ -137,6 +140,8 @@ gradle publish
 [NEED OUTPUT HERE AFTER WE HAVE FINAL PEDAGOGICAL EXAMPLE]
 ```
 
+Your new package name is `orgId:artifactId`.
+
 ## Pull a Gradle package into your project
 
 
@@ -152,6 +157,8 @@ dependencies {
     compile(group: 'MyGroup', name: 'myFirstApp', version: '1.0-SNAPSHOT')  
 } 
 ```   
+
+This tells `gradle build` to include the package you created prior, which is effectively named orgId:artifactId, and it should be applied to the app named in the dependencies. [DOUGE: CLEAN UP PROSE]
 
 To test this, create a simple Java code file and build it with Gradle. You can use this code to test:
 
@@ -183,9 +190,11 @@ Open a CLI and run the following command:
 gradle wrapper
 ```
 
-[DOUGE NOTE: Where is the wrapper created? Need a fair few more details here. How do I bring it into VSTS Build?]
+The gradle wrapper is created in the directory where you ran the above command. The wrapper's file name is **gradlew**. Do not rename this file.
 
-Run "gradle wrapper" to generate a gradle wrapper file.  Team Build will use this to run Gradle on the build agent. 
+Push an update that contains the wrapper (gradlew) from your project repo to origin. Team Build requires this file on the remote repo for your project.
+
+[DOUGE NOTES: EXPAND THIS]
 Create a new build and select the "Gradle" template.  You can configure various gradle tasks to run on the agent.  Queue the build and it should work! 
 
 
