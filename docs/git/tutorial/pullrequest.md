@@ -5,15 +5,13 @@ ms.assetid: 731eeda5-133f-46d5-ab60-b27a5280210d
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
-ms.author: routlaw
-ms.date: 08/04/2016
+ms.author: sdanie
+ms.date: 08/14/2017
 ---
 
 #  Create a pull request
 
 ###### Team Services | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
-
-## What is a pull request?
 
 [Git's workflow](gitworkflow.md) uses [branches](branches.md) to isolate work until you're ready to merge the changes into your default branch, such as `master`. 
 The pull request is the collaborative process that lets the rest of the team discuss changes in a branch and agree to merge them once everyone approves.
@@ -24,7 +22,13 @@ Use pull requests to get early feedback from others on work in progress, even if
 In this image, the purple branch is merged into the blue branch through a pull request. The changes are discussed by reviewers in the pull request before the code is merged.
 When you complete the pull request, there is a merge commit (seen here as the filled blue commit) where the changes in the purple branch are now [merged](merging.md) in the blue branch. 
 
-## Creating Pull Requests
+In this tutorial you learn how to:
+
+> [!div class="checklist"]
+> * Create a pull request
+> * Complete a pull request
+
+## Create a pull request
 
 To create a pull request in Team Services:
 
@@ -62,7 +66,7 @@ revisit the changes and link to the conversations that took place in the abandon
 You can also open up a pull request on a very early version of your code to ask for feedback from others, even if the code isn't ready to merge yet. 
 Once you get the team's feedback, you can keep the pull request open to continue the conversation or abandon the pull request until your code is ready to be shared again. 
 
-## Completing a pull request
+## Complete a pull request
 
 ![Completing a pull request in Team Services](_img/completepull.gif)
 
@@ -74,3 +78,8 @@ so unless you plan on doing more work in the branch, it is safe to remove.
 You must resolve any [merge conflicts](merging.md) between the pull request branch the target branch. Git adds
 a new commit (the *merge commit*) to the end of the master branch. This merge commit links the earlier history of both the master branch and the commits for the branch
 that was merged as part of the pull request.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Resolve merge conflicts](merging.md)

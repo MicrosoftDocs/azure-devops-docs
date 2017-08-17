@@ -34,11 +34,12 @@ Get started by creating a team project, configuring your workspace, and reviewin
 </tr>
 </table>    
 
-## Step-by-step Tutorials  
+## Step-by-Step Tutorials  
 
 Learn the basics of working in TFVC with the following tutorial which shows a day in the life of a devops developer using Visual Studio and TFVC.
 
 * [Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
+* [Visual Studio: Review Code](get-code-reviewed-vs.md)
 
 
 ## Resources 

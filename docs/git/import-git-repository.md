@@ -62,3 +62,7 @@ One way to check if the username / password you are using are basic auth or not 
 
     `git clone https://<<username>>:<<password>>@<<remaining clone Url>>`
 
+## Next steps
+
+> [!div class="nextstepaction"]
+> Learn more about using Git in the [Git tutorial](tutorial/gitworkflow.md) and [create a build](../build-release/overview.md) for your project code. 

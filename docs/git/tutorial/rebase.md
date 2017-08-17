@@ -6,15 +6,13 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
-ms.author: routlaw
-ms.date: 08/04/2016
+ms.author: sdanie
+ms.date: 08/14/2017
 ---
 
 #  Apply changes with rebase
 
 ###### Team Services | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
-
-## Overview
 
 One of the tradeoffs from the [Git feature branch workflow](gitworkflow.md) is that you do not actively manage your version control history. 
 Git creates this history as you save your code in your [commits](commits.md) and merges changes back into the master branch with [pull requests](pullrequest.md).  
@@ -27,6 +25,12 @@ The commit history of your current branch will be rewritten so that it starts fr
 Rebasing your changes in your feature branch off the latest changes in the main branch lets you test your changes on the most recent version in the main branch while keeping
 a clean Git history.
 
+In this tutorial you learn how to:
+
+> [!div class="checklist"]
+> * Force push to update your remote branch
+> * Squash local commits
+
 ### Video overview
 
 <iframe src="https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Rebase/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe> 
@@ -35,12 +39,9 @@ a clean Git history.
 
 Rebasing is a powerful tool for catching up changes a main branch but you must be careful about its use. Some things to keep in mind before you rebase:
 
-----
 0. Never rebase commits that have been [pushed](pushing.md) and shared with others. The only exception to this rule is when you are certain no one on your team is using the commits or the branch you pushed.
 0. Use rebase to catch up with the commits on the another branch as you work with a local feature branch. This is especially useful when working in long-running feature braches to check how your changes work with the latest updates on the master branch.
 0. You can't update a published branch with a `push` after you've rebased the local branch. You'll need to force push the branch to rewrite the history of the remote branch to match the local history. Never force push branches in use by others.
-      
----- 
 
 During a rebase, Git attempts to reconcile the changes recorded in the commits on your branch and the changes in the commits in the target branch.
 Resolve any conflicts between the commits in the same way that you resolve [merge conflicts](merging.md).
@@ -52,27 +53,20 @@ Your team should agree under what circumstances you should `rebase` a branch. Yo
 A suggested approach is to allow rebasing local changes that you have made but haven't shared with others, but to merge once you are sharing changes
 with others. This avoids trouble with rewriting history while still letting you easily catch up with changes as you develop your code locally.
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#changeexample">How to rebase changes</li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#cmdline0">Command Line</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#vs0">Visual Studio</a></li>
-</ul>
+# [Visual Studio](#tab/visual-studio)
 
-<div id="changeexample" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-<div id="vs0" class="tab-pane fade in active">
-<h6>Visual Studio 2015 &amp; 2017</h6>
+Visual Studio 2015 & 2017
 
-<P>In Team Explorer, go to the **Branches** view. Click  **Rebase**. You'll see a prompt to rebase the changes from your current branch, and then a drop-down to specify which branch
+In Team Explorer, go to the **Branches** view. Click  **Rebase**. You'll see a prompt to rebase the changes from your current branch, and then a drop-down to specify which branch
 the changes in the current branch should be replayed on top of. If there is a conflict, resolve it just like you resolve [merge conflicts](merging.md) in Visual Studio.
 
 ![Rebasing with Git in Visual Studio](../_shared/_img/vs-rebasing.gif)
-</div>
 
-<div class="tab-pane fade" id="cmdline0" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
+# [Command Line](#tab/command-line)
 
-<h4>Rebase with the command line</h4>
-<p>The `rebase` command takes a target branch to replay the current branch's commits onto. After the rebase finishes, your current branch will have the commit history from 
+### Rebase with the command line
+
+The `rebase` command takes a target branch to replay the current branch's commits onto. After the rebase finishes, your current branch will have the commit history from 
  the target branch. 
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
@@ -84,12 +78,16 @@ Applying: updated feature again
 Applying: final feature update</font>
 </pre>
  
-<p>If you hit a conflict, resolve the conflicting files, do a `git add` to stage the merged changes, then continue the rebase with `git rebase --continue`. 
+If you hit a conflict, resolve the conflicting files, do a `git add` to stage the merged changes, then continue the rebase with `git rebase --continue`. 
 
-</div></div></div>
+---
+
+
+
 
 ## Force push to update your remote branch
 
+> [!WARNING]
 > Avoid trouble: Never force push a branch that others are working on. Only force push branches that you alone work with.
 
 After a successful rebase, your local branch will have a different history than your remote branch. You must force push your local branch to update your remote branch.
@@ -128,3 +126,8 @@ window open up where Git asks you to give a commit message for the commit with t
 this down to one line of text (just like you would have for a normal commit) and save and quit the editor. 
 
 > Team Services and TFS users can [squash merge](../merging-with-squash.md) their pull requests to consolidate commits added to the master branch.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Copy changes with cherry-pick](cherry-pick.md)

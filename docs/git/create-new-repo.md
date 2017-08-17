@@ -96,15 +96,28 @@ In this step, we'll make a change to the files on your computer, commit the chan
 
 ## Next steps
 
-- New to Git repos? [Learn more](https://www.visualstudio.com/learn/set-up-a-git-repository/)
-- [Invite others](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) to collaborate with you in the repo
-- Learn more about [cloning](./tutorial/clone.md) the repo to your computer
-- Learn about the general [Git workflow](./tutorial/gitworkflow.md) that most developers use when writing code and sharing it with the team
-- Learn how to use [branches](./tutorial/branches.md) to manage and isolate your code
-- Review code and merge it into your default branch with [pull requests](./tutorial/pullrequest.md)
-- All done with the sample repo you created in this article? You can remove unused Git repos from your project when they are no longer needed. If you want to save the repo (and its [commit history](tutorial/history.md)) but no longer need to work with it, consider [renaming](repo-rename.md) the repo and [locking](lock-branches.md) its default branch instead of removing it.
+> [!div class="nextstepaction"]
+> New to Git repos? [Learn more](https://www.visualstudio.com/learn/set-up-a-git-repository/)
 
-  You cannot remove a repo if it is the only Git repo in the project. If you need to delete the only Git repo in a project, create a new Git repo first, then delete the repo.
+> [!div class="nextstepaction"]
+> [Invite others](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) to collaborate with you in the repo
 
-  To delete a repo, see [Delete a Git repo from your project](delete-existing-repo.md).
+> [!div class="nextstepaction"]
+> Learn more about [cloning](./tutorial/clone.md) the repo to your computer
+
+> [!div class="nextstepaction"]
+> Learn about the general [Git workflow](./tutorial/gitworkflow.md) that most developers use when writing code and sharing it with the team
+
+> [!div class="nextstepaction"]
+> Learn how to use [branches](./tutorial/branches.md) to manage and isolate your code
+
+> [!div class="nextstepaction"]
+> Review code and merge it into your default branch with [pull requests](./tutorial/pullrequest.md)
+
+> [!div class="nextstepaction"]
+> All done with the sample repo you created in this article? You can remove unused Git repos from your project when they are no longer needed. If you want to save the repo (and its [commit history](tutorial/history.md)) but no longer need to work with it, consider [renaming](repo-rename.md) the repo and [locking](lock-branches.md) its default branch instead of removing it.
+> 
+> You cannot remove a repo if it is the only Git repo in the project. If you need to delete the only Git repo in a project, create a new Git repo first, then delete the repo.
+> 
+> To delete a repo, see [Delete a Git repo from your project](delete-existing-repo.md).
 

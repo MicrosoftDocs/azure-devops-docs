@@ -8,8 +8,6 @@
   items:
   - name: Visual Studio
     href: share-your-code-in-tfvc-vs.md
-  - name: "Visual Studio: Review Code"
-    href: get-code-reviewed-vs.md
   - name: Eclipse
     href: share-your-code-in-tfvc-eclipse.md
   - name: Xcode
@@ -18,6 +16,8 @@
   items:
   - name: "Walkthrough: Fix a bug and get your code reviewed"
     href: day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md
+  - name: "Visual Studio: Review Code"
+    href: get-code-reviewed-vs.md
 - name: Concepts
   items:
   - name: Compare TFVC and Git 

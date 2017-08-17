@@ -140,12 +140,7 @@ Your whole team can work on the code now. All your changes are tracked in versio
 
  ![History window](_img/share-your-code-in-tfvc-vs/IC682163.png)
 
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Get your code reviewed](get-code-reviewed-vs.md)
-
-## Frequently asked questions
+## Troubleshooting
 
 * [My code is somewhere else. Can I migrate it to my TFVC project on Visual Studio Team Services?](#my-code-is-somewhere-else-can-i-migrate-it-to-my-tfvc-project-on-visual-studio-team-services)
 * [I don't see the Configure Workspace link shown in the steps above. What do I do next?](#i-dont-see-the-configure-workspace-link-shown-in-the-steps-above-what-do-i-do-next)
@@ -159,12 +154,6 @@ Yes:
 
  * [Migrate from Team Foundation Server into Visual Studio Team Services](https://www.visualstudio.com/en-us/articles/adopting-vsts).
 
-[!INCLUDE [temp](_shared/open-team-project-in-vs-qa.md)]
-
-[!INCLUDE [temp](../_shared/qa-vs-launch-fail.md)]
-
-[!INCLUDE [temp](../_shared/qa-vs-legacy-connect.md)]
-
 <a name="workspace_exists"></a>
 ### I don't see the Configure Workspace link shown in the steps above. What do I do next?
 
@@ -175,4 +164,7 @@ source control](http://msdn.microsoft.com/library/ms181370.aspx) or
 
 ![In Team Explorer, click Source Control Explorer or Manage Workspaces](_img/share-your-code-in-tfvc-vs/OpenSCE_ManageWorkspaces.png)
 
+## Next steps
 
+> [!div class="nextstepaction"]
+> [Get your code reviewed](get-code-reviewed-vs.md)

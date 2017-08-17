@@ -7,11 +7,11 @@ ms.topic: get-started-article
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/20/2017
+ms.date: 07/20/20-7
 layout: LandingPage
 ---
 
-# Git documentation for Team Services and TFS
+# Git
 
 Use Git repos to host and collaborate on your code using Team Services or Team Foundation Server.  
 
@@ -36,28 +36,31 @@ Get started by creating a repo, uploading your code, and inviting developers to 
 
 Or, you can [import an existing repo](import-git-repository.md) from GitHub, BitBucket, GitLab, or other location to a new, empty repo. 
 
-## Step-by-step Tutorials  
+## Step-by-Step Tutorials  
 
 Learn the basics of working in Git with these tutorials which show tasks performed using Visual Studio or the command line.  
 
-1. [Create a new repo](tutorial/creatingrepo.md)  
-1. [Clone an existing repo](tutorial/clone.md)  
-1. [Save work with commits](tutorial/commits.md)  
-1. [Create work in branches](tutorial/branches.md)  
-1. [Share code with push](tutorial/pushing.md)  
-1. [Update code with fetch and pull](tutorial/pulling.md)  
-1. [Review code with pull requests](tutorial/pullrequest.md)  
-1. [Apply changes with rebase](tutorial/rebase.md)  
-1. [Copy changes with cherry-pick](tutorial/cherry-pick.md)  
-1. [Resolve merge conflicts](tutorial/merging.md)  
-1. [Undo changes](tutorial/undo.md)  
-1. [Ignore files](tutorial/ignore-files.md)  
-1. [Review history](tutorial/history.md)  
+- [Create a new repo](tutorial/creatingrepo.md)  
+- [Clone an existing repo](tutorial/clone.md)  
+- [Save work with commits](tutorial/commits.md)  
+- [Create work in branches](tutorial/branches.md)  
+- [Share code with push](tutorial/pushing.md)  
+- [Update code with fetch and pull](tutorial/pulling.md)  
+- [Review code with pull requests](tutorial/pullrequest.md)  
+- [Apply changes with rebase](tutorial/rebase.md)  
+- [Copy changes with cherry-pick](tutorial/cherry-pick.md)  
+- [Resolve merge conflicts](tutorial/merging.md)  
+- [Undo changes](tutorial/undo.md)  
+- [Ignore files](tutorial/ignore-files.md)  
+- [Review history](tutorial/history.md)  
 
 
 ## Videos 
  
-[![Git at scale video](_img/index/git-at-scale-video-img.png)](https://channel9.msdn.com/Events/Build/2017/P4101/player)  
+[![Git at scale video](_img/index/git-at-scale-video-img.png)](https://channel9.msdn.com/Events/Build/20-7/P4-0-/player)  
+
+[![Creating a repo video](_img/index/create-a-git-repo-video-img.png)](https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Create-a-Git-repo-in-Visual-Studio-20-5/player)
+
 
 
 ## Resources 

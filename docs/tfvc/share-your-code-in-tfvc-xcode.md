@@ -85,7 +85,7 @@ Share your Xcode projects in Visual Studio Team Services using a TFVC repository
 
 
 
-## Frequently asked questions
+## Additional information
 
 * [Should I use Git or TFVC for my team project?](#should-i-use-git-or-tfvc-for-my-team-project)
 * [If my team project uses Git Version control, can I still share my Xcode projects in Visual Studio Team Services?](#if-my-team-project-uses-git-version-control-can-i-still-share-my-xcode-projects-in-visual-studio-team-services)
@@ -100,5 +100,8 @@ works best for you.
 
 Yes, see [Share your code in Git using Xcode](../git/share-your-code-in-git-xcode.md).
 
+## Next steps
 
+> [!div class="nextstepaction"]
+> [Choosing the right version control for your project](comparison-git-tfvc.md)
 

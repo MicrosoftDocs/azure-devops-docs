@@ -73,7 +73,8 @@ Xcode will [push](tutorial/pushing.md) your project to your Team Services Git re
 
 ## Next steps
 
-Learn more about using Git in the [Git tutorial](tutorial/gitworkflow.md) and [create a build](../build-release/overview.md) for your project code.
+> [!div class="nextstepaction"]
+> Learn more about using Git in the [Git tutorial](tutorial/gitworkflow.md) and [create a build](../build-release/overview.md) for your project code.
 
 ## Frequently asked questions
 
