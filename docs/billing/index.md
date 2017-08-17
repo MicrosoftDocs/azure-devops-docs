@@ -10,37 +10,36 @@ ms.author: estfan
 ms.date: 07/12/2017
 ---
 
-# Billing for VSTS
+# Billing
 
-**Team Services**
+**Team Services** | **TFS** | **HockeyApp** | **Xamarin University** | **VS SUbscriptions**
 
 VSTS billing covers:
 
 * Purchasing extensions for Visual Studio, Visual Studio Team Services, Team Foundation Server (TFS), and Visual Studio Code
 
-* Purchase pay-for-usage extensions, such as Test Manager and Package Management (these extensions are assigned to specific users). 
+* Purchasing for pay-for-usage extensions, such as Test Manager and Package Management (these extensions are assigned to specific users). 
 
+* Purchasing subscriptions for Visual Studio, HockeyApp, and Xamarin University
 
 
 **UNDER CONSTRUCTION -- JUST A PLACEHOLDER FOR NOW**
 
 
 
-## Overview  
 
-[Billing overview](overview.md)
+## 5-Minute Quickstarts  
 
+ * [Set up billing](team-services/set-up-billing-for-your-account-vs.md)
 
-## 5-minute Quickstarts  
+ * [Try extensions for free](team-services/try-additional-features-vs.md)
 
-[Set up billing](team-services/set-up-billing-for-your-account-vs.md)
-
-[Try extensions for free](team-services/try-additional-features-vs.md)
-
-[Pay for more users](team-services/buy-basic-access-add-team-services-users.md)
+ * [Pay for more users](team-services/buy-basic-access-add-team-services-users.md)
 
 
 ## Step-by-Step Tutorials
+
+[Change Azure AD tenant](team-services/change-azure-active-directory-team-services-account.md)
 
 
 ## Concepts 
@@ -62,8 +61,4 @@ if you're already connected to an existing directory.
 [Software development roles](../roles.md)
 
 [Pricing](https://www.visualstudio.com/team-services/pricing/)
-
-
-
-
 

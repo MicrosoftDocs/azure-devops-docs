@@ -10,6 +10,8 @@
     href: team-services/sign-up-for-visual-studio-team-services.md
   - name: Try extensions for free
     href: team-services/try-additional-features-vs.md
+  - name: Pay for VSTS users
+    href: team-services/buy-basic-access-add-team-services-users.md
   - name: Install an extension
     href: ../marketplace/install-vsts-extension.md
   - name: Request permission for an extension

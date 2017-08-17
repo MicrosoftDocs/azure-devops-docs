@@ -8,18 +8,22 @@
     href: team-services/access-with-azure-ad.md
 - name: Quickstarts
   items:
-  - name: Sign up for your account
+  - name: Create your account with a person Microsoft account
+    href: team-services/sign-up-for-visual-studio-team-services.md
+  - name: Create your account with a work or school account
+    href: team-services/sign-up-for-visual-studio-team-services.md
+  - name: Sign up for your account (TO BE REMOVED)
     href: team-services/sign-up-for-visual-studio-team-services.md
   - name: Connect to your account from tools
     href: team-services/connect-to-visual-studio-team-services.md
-  - name: Add users to your account
-    href: team-services/add-account-users-assign-access-levels-team-services.md
   - name: "User hub: add users to your account"
     href: team-services/add-account-users-from-user-hub.md
-  - name: "User hub: add basic or VS subscription users to your account"
-    href: team-services/add-basic-or-vs-subscription-users.md
   - name: Try extensions for free
     href: team-services/try-additional-features-vs.md
+  - name: Add users to your account (TO BE REMOVED)
+    href: team-services/add-account-users-assign-access-levels-team-services.md
+  - name: "User hub: add basic or VS subscription users to your account"
+    href: team-services/add-basic-or-vs-subscription-users.md
   - name: Get more features (extensions)
     items:
     - name: Install an extension

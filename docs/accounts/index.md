@@ -10,7 +10,7 @@ ms.author: estfan
 ms.date: 07/12/2017
 ---
 
-# Account management for Team Services 
+# Account management 
 
 **Team Services**
 
@@ -27,12 +27,7 @@ Use this index to setup and manage your account and configure key settings to su
 
 
 
-## Overview  
-
-[Account management](account-management.md)
-
-
-## 5-minute Quickstarts  
+## 5-Minute Quickstarts  
 
 [Create your account with a person Microsoft account](team-services/sign-up-for-visual-studio-team-services.md)
 
