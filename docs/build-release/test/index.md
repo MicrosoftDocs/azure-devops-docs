@@ -47,3 +47,5 @@ ms.date: 08/12/2016
 | --- | --- |
 | [DevOps Rangers](https://vsartestreleaseguide.codeplex.com/) | [Plug-ins for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246630) |
 | | |
+
+> See also [Manual and exploratory testing](../../manual-test/index.md), [Load and performance testing](../../load-test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).

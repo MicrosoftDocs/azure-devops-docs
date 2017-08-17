@@ -11,7 +11,7 @@ ms.date: 01/17/2017
 
 # Deploy: Azure CLI
 
-**Team Services**
+**VSTS**
 
 ![icon](_img/azure-cli-icon.png) Run a shell or batch 
 script containing Azure CLI commands against an Azure subscription.

@@ -34,7 +34,7 @@ ms.date: 08/12/2016
 
 ### Q: I'm having problems using xUnit with .NET Core apps. Where can I get more information?
 
-**A**: See the blog post [Unit Tests with .NET Core and Visual Studio Team Services](http://blogs.perficient.com/microsoft/2016/08/unit-test-with-net-core-and-vsts/).
+**A**: See the blog post [Unit Tests with .NET Core and VSTS](http://blogs.perficient.com/microsoft/2016/08/unit-test-with-net-core-and-vsts/).
 
 <a name="qa-more-tests"></a>
 ### Q: What are the typical types of tests I can run to validate my app and deployment?

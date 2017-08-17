@@ -36,7 +36,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
    > [!Note]
    >
-   > If you are using TFS (rather than Team Services) you may find that the **Azure App Service Deploy** task is not available, depending on your version and update of TFS.
+   > If you are using TFS (rather than VSTS) you may find that the **Azure App Service Deploy** task is not available, depending on your version and update of TFS.
    > Instead, you can use the [Azure Web App Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment) task to deploy your app.
 
 1. Edit the name of the release definition, choose **Save**, and choose **OK**.

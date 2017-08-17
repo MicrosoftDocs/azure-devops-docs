@@ -10,7 +10,7 @@ ms.author: ahomer
 ms.date: 08/12/2016
 ---
 
-# Testing Java applications with Visual Studio Team Services
+# Testing Java applications with VSTS
 
 <!-- [!INCLUDE [version-header-vs-tfs](_shared/version-header-vs-tfs.md)] -->
 
@@ -105,7 +105,7 @@ coverage in different areas.
 
 ## See also
 
-[Visual Studio Team Services Java website](http://java.visualstudio.com/)
+[VSTS Java website](http://java.visualstudio.com/)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
  

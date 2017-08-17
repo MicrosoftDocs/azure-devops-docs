@@ -86,3 +86,4 @@ tasks and test cases automatically linked to that work item.
 | [Using Microsoft Test Manager](https://msdn.microsoft.com/en-us/library/jj635157.aspx) | [Blog posts for test management](https://blogs.msdn.microsoft.com/visualstudioalm/tag/test-management/) | |
 | | | |
 
+> See also [Load and performance testing](../load-test/index.md), [Continuous testing](../build-release/test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).

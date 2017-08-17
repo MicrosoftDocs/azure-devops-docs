@@ -14,7 +14,7 @@ ms.date: 01/17/2017
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ![icon](_img/publish-test-results-icon.png)
-Publishes the test results to TFS or Team Services when tests are run
+Publishes the test results to TFS or VSTS when tests are run
 using a runner of your choice.
 
 The task supports popular test result formats

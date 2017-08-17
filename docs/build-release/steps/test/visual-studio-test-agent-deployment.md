@@ -60,13 +60,13 @@ Use this task for:
 The supported options for these scenarios are:
 
 * **TFS**
-  - On-premises and Visual Studio Team Services<p />
+  - On-premises and VSTS<p />
 * **Build and release agents**
   - Hosted and on-premises agents are supported.
   - The XPlat agent is not supported for any build/deploy/test tasks
   - The agent must be able to communicate with all test machines. 
     If the test machines are on-premises, the Hosted agent pool in
-    Team Services cannot be used.
+    VSTS cannot be used.
   - The agent must have Internet access to download test agents. 
     If this is not the case, the test agent must be manually 
     downloaded, uploaded to a network location accessible to

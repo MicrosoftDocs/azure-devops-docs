@@ -15,7 +15,7 @@ ms.date: 10/20/2016
 
 This example shows how you can integrate **VMware 
 vCenter Server** with Release Management in Visual 
-Studio Team Services or Team Foundation Server. 
+Studio Team Services (VSTS) or Team Foundation Server (TFS). 
 You can provision and manage virtual machines in vCenter 
 and then deploy your apps to them.
 
@@ -77,7 +77,7 @@ the agent machine:
 1. Follow these steps to create a vCenter Server Service 
    endpoint in your team project:
 
-   * Open your Team Services or TFS team project in 
+   * Open your VSTS or TFS team project in 
      your web browser. Choose the **Settings** icon in the menu bar and select **Services**.
 
    * In the **Services** tab, choose **New Service Endpoint**, and select **VMware vCenter Server**.

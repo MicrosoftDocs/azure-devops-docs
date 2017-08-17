@@ -14,7 +14,7 @@ ms.date: 02/01/2017
 [!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
 
 > A simpler way to deploy web applications to IIS servers is by using [deployment groups](deploy-webdeploy-iis-deploygroups.md)
-instead of WinRM. Deployment groups are currently in preview for some accounts in Team Services. They are not yet available in TFS.
+instead of WinRM. Deployment groups are currently in preview for some accounts in VSTS. They are not yet available in TFS.
 
 Continuous deployment means starting an automated deployment process whenever a new successful build is available.
 Here we'll show you how to set up continuous deployment of your ASP.NET or Node app to one or more IIS servers using Release Management.
@@ -119,7 +119,7 @@ In this example, we will deploy to the Default Web Site on each of the servers. 
 ### IIS WinRM extension
 
 Install the [IIS Web App Deployment Using WinRM](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp)
-extension from Visual Studio Marketplace to your Team Services account or Team Foundation Server.
+extension from Visual Studio Marketplace to your VSTS account or TFS.
 
 ## Define and test your CD release process
 

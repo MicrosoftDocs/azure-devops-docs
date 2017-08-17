@@ -9,17 +9,17 @@ ms.author: ahomer
 ms.date: 08/22/2016
 ---
 
-# Implement continuous deployment of your app to Linux VMs using Jenkins and Team Services
+# Implement continuous deployment of your app to Linux VMs using Jenkins and VSTS
 
-Continuous integration (CI) and continuous deployment (CD) is a pipeline by which you can build, release, and deploy your code. Team Services provides a complete, fully featured set of CI/CD automation tools for deployment to Azure. Jenkins is a popular 3rd-party CI/CD server-based tool that also provides CI/CD automation. You can use both together to customize how you deliver your cloud app or service.
+Continuous integration (CI) and continuous deployment (CD) is a pipeline by which you can build, release, and deploy your code. VSTS provides a complete, fully featured set of CI/CD automation tools for deployment to Azure. Jenkins is a popular 3rd-party CI/CD server-based tool that also provides CI/CD automation. You can use both together to customize how you deliver your cloud app or service.
 
-In this tutorial, you use Jenkins to build a Node.js web app, and Visual Studio Team Services to deploy it
+In this tutorial, you use Jenkins to build a Node.js web app, and Visual Studio Team Services (VSTS) to deploy it
 to a [deployment group](https://www.visualstudio.com/docs/build-release/concepts/definitions/release/deployment-groups/) containing Linux virtual machines.
 
 You will:
 
 * Build your app in Jenkins
-* Configure Jenkins for Team Services integration
+* Configure Jenkins for VSTS integration
 * Create a deployment group for the Azure virtual machines
 * Create a release definition that configures the VMs and deploys the app
 
@@ -28,14 +28,14 @@ You will:
 * You need access to a Jenkins account. If you have not yet created a Jenkins server,
   see [Jenkins Documentation](https://jenkins.io/doc/). 
 
-* Sign in to your Team Services account (`https://{youraccount}.visualstudio.com`). 
-  You can get a [free Team Services account](https://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409&wt.mc_id=o~msft~vscom~home-vsts-hero~27308&campaign=o~msft~vscom~home-vsts-hero~27308).
+* Sign in to your VSTS account (`https://{youraccount}.visualstudio.com`). 
+  You can get a [free VSTS account](https://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409&wt.mc_id=o~msft~vscom~home-vsts-hero~27308&campaign=o~msft~vscom~home-vsts-hero~27308).
 
   > [!NOTE]
-  > For more information, see [Connect to Team Services](https://www.visualstudio.com/docs/setup-admin/team-services/connect-to-visual-studio-team-services).
+  > For more information, see [Connect to VSTS](https://www.visualstudio.com/docs/setup-admin/team-services/connect-to-visual-studio-team-services).
 
-* Create a personal access token (PAT) in your Team Services account if you don't already have one. Jenkins requires this information to access your Team Services account.
-  Read [How do I create a personal access token for Team Services and TFS](https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate) to learn how to generate one.
+* Create a personal access token (PAT) in your VSTS account if you don't already have one. Jenkins requires this information to access your Team Services account.
+  Read [How do I create a personal access token for VSTS and TFS](https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate) to learn how to generate one.
 
 ### Get the sample app
 
@@ -71,7 +71,7 @@ machines. Specifically, the script installs Node, Nginx, and PM2; configures Ngi
 
 ## Configure Jenkins plugins
 
-First, you must configure two Jenkins plugins for **NodeJS** and **Integration with Team Services**.
+First, you must configure two Jenkins plugins for **NodeJS** and **Integration with VSTS**.
 
 1. Open your Jenkins account and choose **Manage Jenkins**.
 
@@ -81,7 +81,7 @@ First, you must configure two Jenkins plugins for **NodeJS** and **Integration w
 
    ![Adding the NodeJS plugin to Jenkins](_img/tutorial-build-deploy-jenkins/jenkins-nodejs-plugin.png)
 
-1. Filter the list to find the **Team Foundation Server** plugin and install it. (This plug-in works for both Team Services and Team Foundation Server.) Restarting Jenkins is not necessary.
+1. Filter the list to find the **Team Foundation Server** plugin and install it. (This plug-in works for both VSTS and Team Foundation Server.) Restarting Jenkins is not necessary.
 
 ## Configure Jenkins build for Node.js
 
@@ -106,11 +106,11 @@ In Jenkins, create a new build project and configure it as follows:
 
 1. In the **Build** tab, enter the command `npm install` to ensure all dependencies are updated.
 
-## Configure Jenkins for Team Services integration
+## Configure Jenkins for VSTS integration
 
 1. In the **Post-build Actions** tab, for **Files to archive**, enter `**/*` to include all files.
 
-1. For **Trigger release in TFS/Team Services**, enter the full URL of your account
+1. For **Trigger release in TFS/VSTS**, enter the full URL of your account
    (such as `https://your-account-name.visualstudio.com`), the project name,
    a name for the release definition (created later), and the credentials to connect to your account.
    You need your user name and the PAT you created earlier. 
@@ -121,9 +121,9 @@ In Jenkins, create a new build project and configure it as follows:
 
 ## Create a Jenkins service endpoint
 
-A service endpoint allows Team Services to connect to Jenkins.
+A service endpoint allows VSTS to connect to Jenkins.
 
-1. Open the **Services** page in Team Services, open the **New Service Endpoint** list, and choose **Jenkins**.
+1. Open the **Services** page in VSTS, open the **New Service Endpoint** list, and choose **Jenkins**.
 
    ![Add a Jenkins endpoint](_img/tutorial-build-deploy-jenkins/add-jenkins-endpoint.png)
 
@@ -153,8 +153,8 @@ You don't need to register the virtual machines manually.
 
 ## Create a release definition
 
-A release definition specifies the process Team Services will execute to deploy the app.
-To create the release definition in Team Services:
+A release definition specifies the process VSTS will execute to deploy the app.
+To create the release definition in VSTS:
 
 1. Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
    in the list of release definitions, and choose the **Create release definition**. 
@@ -205,7 +205,7 @@ The **Azure Resource Group Deployment** task is used to create the deployment gr
 
 * **Enable prerequisites**: `Configure with Deployment Group agent`
 
-* **TFS/VSTS endpoint**: Choose **Add** and, in the "Add new Team Foundation Server/Team Services Connection" dialog, select **Token Based Authentication**. Enter a name of the connection and the URL of your team project. Then generate and enter a [Personal Access Token (PAT)]( https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) to authenticate the connection to your team project.
+* **TFS/VSTS endpoint**: Choose **Add** and, in the "Add new Team Foundation Server/VSTS Connection" dialog, select **Token Based Authentication**. Enter a name of the connection and the URL of your team project. Then generate and enter a [Personal Access Token (PAT)]( https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) to authenticate the connection to your team project.
 
   ![Create a Personal Access Token](_img/tutorial-build-deploy-jenkins/create-a-pat.png)
 
@@ -263,7 +263,7 @@ The **Shell Script** task is used to provide the configuration for a script to r
 1. Commit your change.
 
 1. After a few minutes, you will see a new release created in the **Releases** 
-   page of Team Services or TFS. Open the release to see the deployment taking place. Congratulations!
+   page of VSTS or TFS. Open the release to see the deployment taking place. Congratulations!
 
 ## Next Steps
 

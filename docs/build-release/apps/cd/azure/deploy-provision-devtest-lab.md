@@ -18,7 +18,7 @@ service lets you quickly provision development and test environments using reusa
 templates. You can use pre-created images, minimize waste with quotas and policies,
 and minimize costs by using automated shutdown. 
 
-By using an extension installed in Team Services or Team Foundation Server you
+By using an extension installed in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) you
 can easily integrate your build and release pipeline with  Azure DevTest Labs.
 The extension installs three tasks to create a VM, create a custom image from
 a VM, and delete a VM. This makes it easy to, for example, quickly deploy a 
@@ -34,8 +34,8 @@ Start by installing the
 [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks)
 extension from Visual Studio Marketplace:
 
-* For Team Services, choose **Install**
-* For Team Foundation Server, choose **Download** and install the extension on your server.
+* For VSTS, choose **Install**
+* For TFS, choose **Download** and install the extension on your server.
 
 ## Create an Azure RM template
 

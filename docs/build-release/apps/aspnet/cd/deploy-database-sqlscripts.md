@@ -52,7 +52,7 @@ the database script will be executed.
 
 You will need a **SQL script** that is published as an artifact by Team Build or a similar continuous integration service. Alternatively, you can also store the script in a version control repository. If you do not have a script, follow these steps to get started with a simple script.
 
-* Check the following script into a version control repository such as Team Services or TFS as `DatabaseExample.sql`.
+* Check the following script into a version control repository such as VSTS or TFS as `DatabaseExample.sql`.
 
   ```
   USE [master]

@@ -11,7 +11,7 @@ ms.date: 01/02/2017
 
 # Deploy your Web Deploy package to IIS servers
 
-> This is a preview feature that is available to only some accounts in Team Services.
+> This is a preview feature that is available to only some accounts in VSTS.
 
 Continuous deployment means starting an automated deployment process whenever a new successful build is available. Here we'll show you how to set up continuous deployment of your ASP.NET or Node app to one or more IIS servers using Release Management.
 
@@ -39,7 +39,7 @@ In this example, we will deploy to the Default Web Site on each of the servers. 
 
 ### Deployment group
 
-Carry out the following steps in your Team Services account to create a Deployment Group consisting of the target IIS servers.
+Carry out the following steps in your VSTS account to create a Deployment Group consisting of the target IIS servers.
 
 1. Open the **Deployment groups** tab of the **Build &amp; Release** hub
    and choose **+ New** to create a new group

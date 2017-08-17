@@ -44,7 +44,7 @@ You need SCVMM.
 
 1. Create an SCVMM service endpoint in your team project:
 
-   * Open your Team Services or TFS team project in 
+   * Open your VSTS or TFS team project in 
      your web browser. Choose the **Settings** icon in the menu bar and select **Services**.
 
    * In the **Services** tab, choose **New Service Endpoint**, and select **SCVMM**.

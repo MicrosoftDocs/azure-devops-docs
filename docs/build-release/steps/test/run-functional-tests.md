@@ -71,7 +71,7 @@ test level.
 
 These scenarios are supported for:
 
-* **TFS on-premises and Visual Studio Team Services**
+* **TFS on-premises and VSTS**
 
 * **Build agents**
   - [Hosted](../../concepts/agents/hosted.md) and [on-premises](../../concepts/agents/agents.md) agents.
