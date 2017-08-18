@@ -8,6 +8,12 @@
   items:
   - name: CI/CD Hello world
     href: get-started/ci-cd-part-1.md
+  - name: CD to Azure App Services
+    href: apps/cd/deploy-webdeploy-webapps.md
+  - name: CD to Azure Windows VM
+    href: apps/cd/azure/deploy-provision-azure-vm.md
+  - name: CD to IIS Deployment Group
+    href: apps/cd/deploy-webdeploy-iis-deploygroups.md
 - name: Tutorials
   items:
   - name: CI builds for Git in VSTS
@@ -120,16 +126,12 @@
       href: apps/aspnet/ci/build-aspnet-dacpac.md
   - name: Deploy your app
     items:
-    - name: Azure web site 
-      href: apps/cd/deploy-webdeploy-webapps.md
     - name: Azure cloud service 
       href: apps/aspnet/cd/deploy-cloudservice-cloudservice.md
     - name: Azure Government Cloud 
       href: concepts/library/government-cloud.md
     - name: Azure Container Service (Kubernetes) 
       href: apps/cd/azure/deploy-container-kubernetes.md
-    - name: IIS servers 
-      href: apps/cd/deploy-webdeploy-iis-deploygroups.md
     - name: IIS servers (WinRM) 
       href: apps/cd/deploy-webdeploy-iis-winrm.md
     - name: Azure SQL database (DACPAC) 

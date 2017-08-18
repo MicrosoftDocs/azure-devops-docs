@@ -1,6 +1,6 @@
 ---
 ms.assetid: 10C708EC-0D2A-4EF8-9381-4CF8B1EBA755
-title: Provision an Azure Virtual Machine using Azure RM templates with Microsoft Release Management in Visual Team Services and Team Foundation Server
+title: CD of an Azure virtual machine using a Resource Manager template
 description: Provision a Microsoft Azure Virtual Machine using Azure Resource Manager templates in Microsoft Release Management in Visual Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
@@ -9,9 +9,7 @@ ms.author: ahomer
 ms.date: 10/20/2016
 ---
 
-# Provision an Azure virtual machine using an Azure RM template
-
-[!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
+# CD of an Azure virtual machine using a Resource Manager template
 
 In just a few steps, you can provision Azure virtual machines (VMs)
 using [Resource Manager (RM) templates](https://azure.microsoft.com/documentation/articles/resource-group-template-deploy/).
@@ -19,16 +17,13 @@ Managing the definitions for virtual machines in this
 way is considered **Infrastructure as code** and is
 a good DevOps practice.
 
-## Get set up
-
-### Begin with a CI build
+## Prerequisites
 
 Before you begin, you need a CI build that creates your Azure RM template. To set up CI, see:
 
 * [Build an Azure virtual machine using an Azure RM template](build-azure-vm-template.md)
 
-
-## Create the release definition
+## Define and test your CD release process
 
 Carry out the following steps to deploy the Azure Resource Group.
 
@@ -51,13 +46,13 @@ Carry out the following steps to deploy the Azure Resource Group.
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
      connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm).
    
-   - **Action**: `Create or Update Resource Group`.
+   - **Action**: `Create or Update Resource Group`
    
-   - **Resource Group**: Enter a name for a new resource group, or specify an existing resource group.
+   - **Resource Group**: The name for a new resource group, or an existing resource group name.
    
-   - **Template location**: The path of the Resource Manager template; for example: `$(System.DefaultWorkingDirectory)\ASPNet4.CI\drop\HelloWorldARM\Templates\WindowsVirtualMachine.json`.
+   - **Template location**: The path of the Resource Manager template; for example: `$(System.DefaultWorkingDirectory)\ASPNet4.CI\drop\HelloWorldARM\Templates\WindowsVirtualMachine.json`
    
-   - **Template Parameters**: The path of the Resource Manager template parameters file; for example `$(System.DefaultWorkingDirectory)\ASPNet4.CI\drop\HelloWorldARM\Templates\WindowsVirtualMachine.parameters.json`.
+   - **Template Parameters**: The path of the Resource Manager template parameters file; for example `$(System.DefaultWorkingDirectory)\ASPNet4.CI\drop\HelloWorldARM\Templates\WindowsVirtualMachine.parameters.json`
    
    - **Override Template Parameters**: A list of values for the parameters in the template; for example: `-adminUsername $(vmuser) -adminPassword (ConvertTo-SecureString -String $(vmpassword) -AsPlainText -Force) -dnsNameForPublicIP $(dns)'`. Use the **...** button to open the parameters editor dialog.
    
@@ -83,14 +78,3 @@ Carry out the following steps to deploy the Azure Resource Group.
 
 1. Create a new release, select the latest build, and 
    deploy it to the single environment.
-
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-[!INCLUDE [temp](../../../_shared/qa-versions.md)]
-
-<!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
-

@@ -1,6 +1,6 @@
 ---
 ms.assetid: 449254BF-EAC1-466E-B10C-85C2DE086F30
-title: CD app to Azure App Services website
+title: CD to Azure App Services
 description: Set up continuous deployment (CD) of an ASP.NET or Node.js web deploy package to a Microsoft Azure App Services website from Release Management in Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
@@ -9,20 +9,18 @@ ms.author: ahomer
 ms.date: 01/02/2017
 ---
 
-# Implement continuous deployment of your app to an Azure App Services website
+# CD to Azure App Services
 
 [!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
 
 Continuous deployment (CD) means starting an automated deployment process whenever a new successful build is available.
 Here we'll show you how to set up continuous deployment of your ASP.NET or Node app to an Azure App Services website using Release Management.
 
-You can also use these steps to deploy your app to an Azure Government Cloud
+> You can also use these steps to deploy your app to an Azure Government Cloud
 by creating a suitable service endpoint for your Azure Government Cloud subscription.
 For more details, see the [Azure Government Cloud deployments](../../concepts/library/government-cloud.md).
 
-## Get set up
-
-### Begin with a CI build
+## Prerequisites
 
 Before you begin, you'll need a CI build that publishes your Web Deploy package. To set up CI for your specific type of app, see:
 
@@ -108,13 +106,3 @@ If you want to deploy to a staging slot in an Azure App Services website, and th
    
 You might also consider [Configuring Auto Swap](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-staged-publishing#Auto-Swap)
 for your Azure App Services web app to automatically swap the app into production after successful deployment.
-
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
-
-<!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
