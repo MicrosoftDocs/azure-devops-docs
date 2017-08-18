@@ -1,5 +1,5 @@
 ---
-title: Manual and exploratory testing of your applications - Visual Studio Team Services
+title: Exploratory and manual testing of your applications - Visual Studio Team Services
 description: Drive quality and collaboration throughout the development process with manual and exploratory testing capabilities
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
@@ -10,7 +10,7 @@ ms.author: ahomer
 ms.date: 08/09/2016
 ---
 
-# Manual and exploratory testing scenarios and capabilities
+# Exploratory and manual testing scenarios and capabilities
  
 [!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
 

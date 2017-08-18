@@ -1,5 +1,5 @@
 ---
-title: Continuous testing
+title: Continuous Testing
 description: Continuous testing in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-continuous
@@ -9,7 +9,7 @@ ms.author: ahomer
 ms.date: 08/12/2016
 ---
 
-# Continuous testing
+# Continuous Testing
 
 ## Overview
 

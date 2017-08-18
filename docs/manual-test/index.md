@@ -1,5 +1,5 @@
 ---
-title: Manual and exploratory testing
+title: Exploratory and Manual Testing
 description: Manual and exploratory testing index
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
@@ -10,14 +10,14 @@ ms.author: ahomer
 ms.date: 08/09/2016
 ---
 
-# Manual and exploratory testing
+# Exploratory &amp; Manual Testing
 
 Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide rich and powerful
 tools everyone in the team can use to drive quality and collaboration throughout the development process.
 
 ## Overview
 
-* [About manual and exploratory testing](overview.md)
+* [About exploratory and manual testing](overview.md)
 
 ## 5-Minute Quickstarts
 

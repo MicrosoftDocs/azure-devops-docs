@@ -1,5 +1,5 @@
 ---
-title: Load testing
+title: Load Testing
 description: Load Testing with Visual Studio and Visual Studio Team Services (VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
@@ -9,7 +9,7 @@ ms.author: ahomer
 ms.date: 08/12/2016
 ---
 
-# Load testing
+# Load Testing
 
 Load test your app with hundreds of thousands of users using Visual Studio Team Services (VSTS).
 
