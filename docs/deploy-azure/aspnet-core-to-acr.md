@@ -29,7 +29,7 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 
 ## Prerequisites
 
-* Make sure you are an administrator of a VSTS account. If you don't have a VSTS account, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If you are new to VSTS or Git, see [Create a team project](https://www.visualstudio.com/docs/setup-admin/create-team-project) to create your first team project and learn about Git.
+[!INCLUDE [include](../build-release/_shared/ci-cd-prerequisites.md)]
 * [Visual Studio 2017](https://www.visualstudio.com/downloads/)    
 * [Continuous Delivery Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio)
 
