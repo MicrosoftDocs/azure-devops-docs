@@ -21,7 +21,7 @@
 - name: Tutorials
   items:
   - name: Change Azure AD tenant
-    href: change-azure-active-directory-team-services-account.md
+    href: ../accounts/change-azure-active-directory-team-services-account.md
 - name: How-to
   items:
   - name: Link work accounts to Visual Studio with MSDN subscriptions

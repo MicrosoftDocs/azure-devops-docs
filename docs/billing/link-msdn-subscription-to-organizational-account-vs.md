@@ -110,6 +110,6 @@ If Team Services still doesn't recognize your subscription, try these other
 ####Q:  Why can't I sign in with my work or school account after adding it to my subscription or getting invited to Visual Studio Team Services?
 
 A:  Check with the Team Services account owner that they've 
-[set up Azure Active Directory (Azure AD) access](manage-organization-access-for-your-account-vs.md) 
+[set up Azure Active Directory (Azure AD) access](../accounts/manage-organization-access-for-your-account-vs.md) 
 between the Team Services account and your organization's 
 directory that manages your work or school account.

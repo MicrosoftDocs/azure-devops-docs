@@ -121,16 +121,16 @@ add your code, work items, or more users.
 
 *	Add code to Git or Team Foundation version control
 
-	*	Git with [Eclipse](connect-to-visual-studio-team-services.md#eclipse), 
+	*	Git with [Eclipse](../accounts/connect-to-visual-studio-team-services.md#eclipse), 
 	[Xcode](../git/share-your-code-in-git-xcode.md), 
 	[Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio), 
 	[IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), 
-	[Visual Studio](connect-to-visual-studio-team-services.md#vs), or 
+	[Visual Studio](../accounts/connect-to-visual-studio-team-services.md#vs), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-	*	TFVC using [Eclipse](connect-to-visual-studio-team-services.md#eclipse), 
+	*	TFVC using [Eclipse](../accounts/connect-to-visual-studio-team-services.md#eclipse), 
 	[Xcode](../tfvc/share-your-code-in-tfvc-xcode.md), 
-	[Visual Studio](connect-to-visual-studio-team-services.md#vs), or 
+	[Visual Studio](../accounts/connect-to-visual-studio-team-services.md#vs), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 *	[Create your backlog](../work/backlogs/create-your-backlog.md), 
@@ -236,23 +236,23 @@ add code, work items, or more users.
 
 *	Add code to Git or Team Foundation version control
 
-	*	Git with [Eclipse](connect-to-visual-studio-team-services.md#eclipse), 
+	*	Git with [Eclipse](../accounts/connect-to-visual-studio-team-services.md#eclipse), 
 	[Xcode](../git/share-your-code-in-git-xcode.md), 
 	[Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio), 
 	[IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), 
-	[Visual Studio](connect-to-visual-studio-team-services.md#vs), or 
+	[Visual Studio](../accounts/connect-to-visual-studio-team-services.md#vs), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-	*	TFVC using [Eclipse](connect-to-visual-studio-team-services.md#eclipse), 
+	*	TFVC using [Eclipse](../accounts/connect-to-visual-studio-team-services.md#eclipse), 
 	[Xcode](../tfvc/share-your-code-in-tfvc-xcode.md), 
-	[Visual Studio](connect-to-visual-studio-team-services.md#vs), or 
+	[Visual Studio](../accounts/connect-to-visual-studio-team-services.md#vs), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 *	[Create your backlog](../work/backlogs/create-your-backlog.md), 
 	[manage your process](../work/process/manage-process.md), 
 	or [customize your process](../work/process/customize-process.md) 
 
-*	[Manage access with Azure AD groups](manage-azure-active-directory-groups-visual-studio-team-services.md) 
+*	[Manage access with Azure AD groups](../accounts/manage-azure-active-directory-groups-visual-studio-team-services.md) 
 
 ## Q & A
 
@@ -375,7 +375,7 @@ Learn more about
 <a name="ChangeDirectory"></a>
 ####Q:	Can I change the directory after signup?
 
-A:	Yes, see [Change your account's Azure AD](change-azure-active-directory-team-services-account.md).
+A:	Yes, see [Change your account's Azure AD](../accounts/change-azure-active-directory-team-services-account.md).
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
