@@ -1,11 +1,13 @@
 - name: Overview
   items:
-  - name: Marketplace overview
+  - name: Billing and Subscriptions overview
     href: index.md
 - name: Quickstarts
   items:
-  - name: How to buy Team Services extensions
+  - name: Buy Team Services extensions
     href: get-vsts-extensions.md
+  - name: Manage VS subscriptions
+    href: using-admin-portal.md
 - name: Tutorials
   items:
   - name: Get extensions for Team Services
@@ -31,6 +33,8 @@
 - name: Resources
   items:
   - name: How to set up billing
+    href: ../setup-admin/team-services/set-up-billing-for-your-account-vs.md
+  - name: How to manage subscriptions
     href: ../setup-admin/team-services/set-up-billing-for-your-account-vs.md
   - name: How to buy Team Services users
     href: ../setup-admin/team-services/buy-basic-access-add-team-services-users.md
