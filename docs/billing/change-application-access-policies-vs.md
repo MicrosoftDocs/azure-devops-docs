@@ -18,24 +18,25 @@ to integrate with its services and resources in your Team Services account.
 To access your account without asking for user credentials multiple times, 
 apps can use these authentication methods:
 
-*	[OAuth](../../integrate/get-started/Authentication/oauth.md) 
-to generate tokens for accessing [REST APIs for Team Services and Team Foundation Server](../../integrate/get-started/rest/basics.md). 
-The [Accounts](../../integrate/api/shared/accounts.md) 
-and [Profiles](../../integrate/api/shared/profiles.md) 
+
+*	[OAuth](/vsts/integrate/get-started/Authentication/oauth.md) 
+to generate tokens for accessing [REST APIs for Team Services and Team Foundation Server](../integrate/get-started/rest/basics.md). 
+The [Accounts](../integrate/api/shared/accounts.md) 
+and [Profiles](../integrate/api/shared/profiles.md) 
 APIs support only OAuth.
 
-*	[Alternate credentials](../../git/auth-overview.md#alternate-credentials) 
+*	[Alternate credentials](../git/auth-overview.md#alternate-credentials) 
 as a single set of credentials across all tools that don't have 
 plug-in, extension, or native support. For example, 
 you can use basic authentication to access 
-[REST APIs for Team Services and TFS](../../integrate/get-started/rest/basics.md), 
+[REST APIs for Team Services and TFS](../integrate/get-started/rest/basics.md), 
 but you must turn on alternate credentials.
 
-*	[SSH authentication](../../git/use-ssh-keys-to-authenticate.md) 
+*	[SSH authentication](../git/use-ssh-keys-to-authenticate.md) 
 to generate encryption keys when you use Linux, Mac, 
 or Windows running [Git for Windows](http://www.git-scm.com/download/win) 
 and can't use 
-[Git credential managers](../../git/set-up-credential-managers.md) 
+[Git credential managers](../git/set-up-credential-managers.md) 
 or [personal access tokens](use-personal-access-tokens-to-authenticate.md) 
 for HTTPS authentication.
 
@@ -46,7 +47,7 @@ to generate tokens for:
 	*	Clients like Xcode and Nuget that require usernames and passwords 
 		as basic credentials and don't support Microsoft account 
 		and Azure Active Directory features like multi-factor authentication 
-	*	Accessing [REST APIs for Team Services and TFS](../../integrate/get-started/rest/basics.md)
+	*	Accessing [REST APIs for Team Services and TFS](../integrate/get-started/rest/basics.md)
 
 By default, your Team Services account allows access for all authentication methods. 
 You can limit access, but you must specifically restrict access for each method. 
@@ -67,7 +68,7 @@ To continue, you'll need at least Basic access and Team Services account owner p
 
 0.	From your account toolbar, go to **Settings**.
 
-    ![Click the gear icon, go to Settings](../../_shared/_img/account-settings-new-ui.png)
+    ![Click the gear icon, go to Settings](../_shared/_img/account-settings-new-ui.png)
 
 0.  Review your application connection settings. 
 Change these settings, based on your security policies.
@@ -107,20 +108,20 @@ A:  Find the [apps that integrate with Visual Studio Team Services here](https:/
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
 
-[!INCLUDE [why-no-owned-accounts](../../_shared/qa-why-no-owned-accounts.md)]
+[!INCLUDE [why-no-owned-accounts](../_shared/qa-why-no-owned-accounts.md)]
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
 
-[!INCLUDE [choose-msa-azuread-account2](../../_shared/qa-choose-msa-azuread-account2.md)]
+[!INCLUDE [choose-msa-azuread-account2](../_shared/qa-choose-msa-azuread-account2.md)]
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
 
 <!-- ENDSECTION --> 

@@ -196,19 +196,19 @@ that you had in Azure.
 
 ## Q&A
 
-[!INCLUDE [browser-problems-azure](../../_shared/qa-browser-problems-azure.md)]
+[!INCLUDE [browser-problems-azure](../_shared/qa-browser-problems-azure.md)]
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find project collection administrator](../../_shared/qa-find-project-collection-administrator.md)]
+[!INCLUDE [find project collection administrator](../_shared/qa-find-project-collection-administrator.md)]
 
-[!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
 
-[!INCLUDE [why-no-owned-accounts](../../_shared/qa-why-no-owned-accounts.md)]
+[!INCLUDE [why-no-owned-accounts](../_shared/qa-why-no-owned-accounts.md)]
 
 <a name="AzureMSDNSubscription"></a>
 
-[!INCLUDE [azure-subscriptions-for-billing](../../_shared/qa-azure-subscriptions-for-billing.md)]
+[!INCLUDE [azure-subscriptions-for-billing](../_shared/qa-azure-subscriptions-for-billing.md)]
 
 <a name="SettingsDescription"></a>
 
@@ -292,7 +292,7 @@ valid for Team Services accounts in India South."
 A: This happens if your Team Services account was already 
 set up for billing with an Azure subscription, either manually 
 through Azure or while purchasing from the 
-[Visual Studio Marketplace](../../marketplace/index.md)
+[Visual Studio Marketplace](../marketplace/index.md)
 for your account. The selected Azure subscription is also 
 used to bill all later purchases for your account.
 
@@ -338,7 +338,7 @@ After that, you're billed automatically on the
 1st day of the calendar month. 
 Learn more about [pricing here](https://www.visualstudio.com/products/visual-studio-team-services-pricing-vs).
 
-[!INCLUDE [azure-bill-larger](../../_shared/qa-azure-bill-larger.md)]
+[!INCLUDE [azure-bill-larger](../_shared/qa-azure-bill-larger.md)]
 
 ####Q: How do I stop billing?
 
@@ -367,7 +367,7 @@ fixing this issue reactivates your subscription and restores your account's paid
 
 <a name="AzureSubscriptionDisabled"></a>
 
-[!INCLUDE [azure-subscription-disabled-team-services](../../_shared/qa-azure-subscription-disabled-team-services.md)]
+[!INCLUDE [azure-subscription-disabled-team-services](../_shared/qa-azure-subscription-disabled-team-services.md)]
 
 <a name="unlinking"></a>
 ####Q: What happens if I unlink my Team Services account?
@@ -398,8 +398,8 @@ so they don't lose access on the 1st of next month.
 
 <a name="get-support"></a>
 
-[!INCLUDE [azure-account-billing-support](../../_shared/qa-azure-account-billing-support.md)]
+[!INCLUDE [azure-account-billing-support](../_shared/qa-azure-account-billing-support.md)]
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
 
 <!-- ENDSECTION --> 

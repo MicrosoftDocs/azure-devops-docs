@@ -24,7 +24,7 @@ so your team can build often, test early, and ship faster.
 
 > Want to set up an on-premises server? 
 > [Get Team Foundation Server here](https://www.visualstudio.com/products/tfs-overview-vs), 
-> or learn [how to install and set up Team Foundation Server](../../setup-admin/tfs/install/get-started.md). 
+> or learn [how to install and set up Team Foundation Server](../setup-admin/tfs/install/get-started.md). 
 
 
 [What users can join for free?  What do they get in Visual Studio Team Services?](#free-users)
@@ -82,8 +82,8 @@ To manage your code, choose Git or Team Foundation Version Control.
 
 	![Name your Visual Studio Team Services account, choose your version control](_img/sign-up-visual-studio-team-services/create-team-services-account.png)
 
-	Learn which version control ([Git](../../git/overview.md) 
-	or [Team Foundation Version Control](../../tfvc/overview.md)) 
+	Learn which version control ([Git](../git/overview.md) 
+	or [Team Foundation Version Control](../tfvc/overview.md)) 
 	works best for you.
 
 0.	Confirm your account's location. 
@@ -122,20 +122,20 @@ add your code, work items, or more users.
 *	Add code to Git or Team Foundation version control
 
 	*	Git with [Eclipse](connect-to-visual-studio-team-services.md#eclipse), 
-	[Xcode](../../git/share-your-code-in-git-xcode.md), 
+	[Xcode](../git/share-your-code-in-git-xcode.md), 
 	[Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio), 
 	[IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), 
 	[Visual Studio](connect-to-visual-studio-team-services.md#vs), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 	*	TFVC using [Eclipse](connect-to-visual-studio-team-services.md#eclipse), 
-	[Xcode](../../tfvc/share-your-code-in-tfvc-xcode.md), 
+	[Xcode](../tfvc/share-your-code-in-tfvc-xcode.md), 
 	[Visual Studio](connect-to-visual-studio-team-services.md#vs), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-*	[Create your backlog](../../work/backlogs/create-your-backlog.md), 
-	[manage your process](../../work/process/manage-process.md), 
-	or [customize your process](../../work/process/customize-process.md)
+*	[Create your backlog](../work/backlogs/create-your-backlog.md), 
+	[manage your process](../work/process/manage-process.md), 
+	or [customize your process](../work/process/customize-process.md)
 
 <a name="orgaccount"></a>
 
@@ -197,8 +197,8 @@ To manage your code, choose Git or Team Foundation Version Control.
 	![Name your account, choose your version control](_img/sign-up-visual-studio-team-services/create-team-services-account-directory.png)
 
 	Learn which 
-	version control ([Git](../../git/overview.md) 
-	or [Team Foundation Version Control](../../tfvc/overview.md)) 
+	version control ([Git](../git/overview.md) 
+	or [Team Foundation Version Control](../tfvc/overview.md)) 
 	works best for you.
 
 0.	Confirm your account's location and the **directory** 
@@ -237,20 +237,20 @@ add code, work items, or more users.
 *	Add code to Git or Team Foundation version control
 
 	*	Git with [Eclipse](connect-to-visual-studio-team-services.md#eclipse), 
-	[Xcode](../../git/share-your-code-in-git-xcode.md), 
+	[Xcode](../git/share-your-code-in-git-xcode.md), 
 	[Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio), 
 	[IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), 
 	[Visual Studio](connect-to-visual-studio-team-services.md#vs), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 	*	TFVC using [Eclipse](connect-to-visual-studio-team-services.md#eclipse), 
-	[Xcode](../../tfvc/share-your-code-in-tfvc-xcode.md), 
+	[Xcode](../tfvc/share-your-code-in-tfvc-xcode.md), 
 	[Visual Studio](connect-to-visual-studio-team-services.md#vs), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-*	[Create your backlog](../../work/backlogs/create-your-backlog.md), 
-	[manage your process](../../work/process/manage-process.md), 
-	or [customize your process](../../work/process/customize-process.md) 
+*	[Create your backlog](../work/backlogs/create-your-backlog.md), 
+	[manage your process](../work/process/manage-process.md), 
+	or [customize your process](../work/process/customize-process.md) 
 
 *	[Manage access with Azure AD groups](manage-azure-active-directory-groups-visual-studio-team-services.md) 
 
@@ -277,7 +277,7 @@ who also get Basic features, and in some cases, additional features with specifi
 
 <a name="browser-problems"></a>
 
-[!INCLUDE [browser-problems](../../_shared/qa-browser-problems.md)]
+[!INCLUDE [browser-problems](../_shared/qa-browser-problems.md)]
 
 ####Q:  Which Visual Studio subscriptions can I use with Visual Studio Team Services?
 
@@ -299,7 +299,7 @@ You only have to do this step once.
 
 <a name="account-location"></a>
 
-[!INCLUDE [account-location-process-template](../../_shared/qa-account-location-process-template.md)]
+[!INCLUDE [account-location-process-template](../_shared/qa-account-location-process-template.md)]
 
 ####Q:	Why are some features not available with my account?
 
@@ -332,17 +332,17 @@ A:	Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.c
 
 <a name="another-team-project"></a>
 
-[!INCLUDE [another-team-project](../../_shared/qa-another-team-project.md)]
+[!INCLUDE [another-team-project](../_shared/qa-another-team-project.md)]
 
-[!INCLUDE [delete-team-project](../../_shared/qa-delete-team-project.md)]
+[!INCLUDE [delete-team-project](../_shared/qa-delete-team-project.md)]
 
-[!INCLUDE [find-account-name](../../_shared/qa-find-account-name.md)]
+[!INCLUDE [find-account-name](../_shared/qa-find-account-name.md)]
 
-[!INCLUDE [recover-password](../../_shared/qa-recover-password.md)]
+[!INCLUDE [recover-password](../_shared/qa-recover-password.md)]
 
-[!INCLUDE [change-account-name-owner](../../_shared/qa-change-account-name-owner.md)]
+[!INCLUDE [change-account-name-owner](../_shared/qa-change-account-name-owner.md)]
 
-[!INCLUDE [delete-account](../../_shared/qa-delete-account.md)]
+[!INCLUDE [delete-account](../_shared/qa-delete-account.md)]
 
 <a name="SignInAccountDifferences"></a>
 ####Q:	What's the difference between using a Microsoft account and a work account or school account to sign up?
@@ -379,7 +379,7 @@ A:	Yes, see [Change your account's Azure AD](change-azure-active-directory-team-
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
 
 *	Choose **Work or school account** if you want to use your organization's directory 
 to authenticate Team Services users and to control Team Services account access. 
@@ -389,14 +389,14 @@ All other users must sign in with work or school accounts too.
 *	Choose **Personal account** if you want to use your Microsoft account with Team Services. 
 All other users must sign in with Microsoft accounts too.
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 
-[!INCLUDE [secure-protect-data](../../_shared/qa-secure-protect-data.md)]
+[!INCLUDE [secure-protect-data](../_shared/qa-secure-protect-data.md)]
 
-[!INCLUDE [team-services-sla](../../_shared/qa-team-services-sla.md)]
+[!INCLUDE [team-services-sla](../_shared/qa-team-services-sla.md)]
 
 <a name="get-support"></a>
 
-[!INCLUDE [visual-studio-subscription-support](../../_shared/qa-visual-studio-subscription-support.md)]
+[!INCLUDE [visual-studio-subscription-support](../_shared/qa-visual-studio-subscription-support.md)]
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]

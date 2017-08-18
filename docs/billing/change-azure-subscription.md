@@ -4,51 +4,36 @@ description: Use an Azure subscription to pay for more users, build & release pi
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
-ms.assetid: bd87ec5c-84f2-4efa-bc37-a6999cb9532e
+ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
 ms.manager: douge
 ms.author: estfan
 ms.date: 04/28/2017
 ---
 
-#  Set up billing to pay for users, pipelines, and cloud-based load testing in Visual Studio Team Services
+# Change the Azure subscription your Team Services account uses for billing
 
 **Team Services**
 
 
-PLACEHOLDER FILE
 
 
+PLACEHOLDER TOPIC
 
 
-<a name="AddAzureAdmin"></a>
-## Add backup billing managers for your Team Services account
-
-To let others manage billing or make purchases through Visual Studio Marketplace for your Team Services account, 
-add **owner** or **contributor** roles to users in the Azure subscription that's linked to your Team Services account.
-
-
-[Sign in to the Azure portal](https://portal.azure.com/) as the Azure subscription administrator, and navigate to access control to add owners or contributors:
-
-![access control adding owners and contributors](_img/set-up-billing/ap-add-owncontrib.png)
-
-Owners and contributors of the Azure subscription linked to your Team Services account can make purchases in the 
-Marketplace.  Owners can also add these roles to other users.
-
-Learn more about [viewing access assignments for users](https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-manage-assignments#view-access-assignments).
-
-If needed, you can [pay for more users](buy-basic-access-add-team-services-users.md).
-
-Learn more about [adding roles in Azure portal](https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-configure#add-access).
-
-
-<a name="change-azure-subscription"></a>
-## Change the Azure subscription your Team Services account uses for billing
 
 If you want to use another Azure subscription to bill purchases for your Team Services account, 
 you can unlink your Team Services account from your current Azure subscription, 
 and relink your account to another Azure subscription that's associated with you as the Team Services account owner. 
 
-### What do I need to change my Azure subscription?
+
+<a name="change-azure-subscription"></a>
+
+
+
+
+
+
+## What do I need to change my Azure subscription?
 
 * Team Services project collection administrator or account owner permissions ([How do I find the project collection administrator or account owner permissions](#find-owner))
 
@@ -61,7 +46,7 @@ and relink your account to another Azure subscription that's associated with you
 > non-Microsoft paid extensions without refund or credit.
 >
 > When you relink your account to another Azure subscription, 
-> you'll have to add again your paid users, 
+> you'll have to add your paid users again, 
 > extensions, and pipelines by repurchasing them in the 
 > Visual Studio Marketplace, or if applicable, 
 > resetting previous quantities in the Azure portal.  If 
@@ -119,21 +104,23 @@ Finish relinking your account.
 [agents](buy-more-build-vs.md) 
 that you had in Azure.
 
+
+
 ## Q&A
 
-[!INCLUDE [browser-problems-azure](../../_shared/qa-browser-problems-azure.md)]
+[!INCLUDE [browser-problems-azure](../_shared/qa-browser-problems-azure.md)]
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find project collection administrator](../../_shared/qa-find-project-collection-administrator.md)]
+[!INCLUDE [find project collection administrator](../_shared/qa-find-project-collection-administrator.md)]
 
-[!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
 
-[!INCLUDE [why-no-owned-accounts](../../_shared/qa-why-no-owned-accounts.md)]
+[!INCLUDE [why-no-owned-accounts](../_shared/qa-why-no-owned-accounts.md)]
 
 <a name="AzureMSDNSubscription"></a>
 
-[!INCLUDE [azure-subscriptions-for-billing](../../_shared/qa-azure-subscriptions-for-billing.md)]
+[!INCLUDE [azure-subscriptions-for-billing](../_shared/qa-azure-subscriptions-for-billing.md)]
 
 <a name="SettingsDescription"></a>
 
@@ -217,7 +204,7 @@ valid for Team Services accounts in India South."
 A: This happens if your Team Services account was already 
 set up for billing with an Azure subscription, either manually 
 through Azure or while purchasing from the 
-[Visual Studio Marketplace](../../marketplace/index.md)
+[Visual Studio Marketplace](../marketplace/index.md)
 for your account. The selected Azure subscription is also 
 used to bill all later purchases for your account.
 
@@ -263,7 +250,7 @@ After that, you're billed automatically on the
 1st day of the calendar month. 
 Learn more about [pricing here](https://www.visualstudio.com/products/visual-studio-team-services-pricing-vs).
 
-[!INCLUDE [azure-bill-larger](../../_shared/qa-azure-bill-larger.md)]
+[!INCLUDE [azure-bill-larger](../_shared/qa-azure-bill-larger.md)]
 
 ####Q: How do I stop billing?
 
@@ -292,7 +279,7 @@ fixing this issue reactivates your subscription and restores your account's paid
 
 <a name="AzureSubscriptionDisabled"></a>
 
-[!INCLUDE [azure-subscription-disabled-team-services](../../_shared/qa-azure-subscription-disabled-team-services.md)]
+[!INCLUDE [azure-subscription-disabled-team-services](../_shared/qa-azure-subscription-disabled-team-services.md)]
 
 <a name="unlinking"></a>
 ####Q: What happens if I unlink my Team Services account?
@@ -323,8 +310,8 @@ so they don't lose access on the 1st of next month.
 
 <a name="get-support"></a>
 
-[!INCLUDE [azure-account-billing-support](../../_shared/qa-azure-account-billing-support.md)]
+[!INCLUDE [azure-account-billing-support](../_shared/qa-azure-account-billing-support.md)]
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
 
 <!-- ENDSECTION --> 

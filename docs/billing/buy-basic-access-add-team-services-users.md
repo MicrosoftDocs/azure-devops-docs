@@ -42,13 +42,13 @@ you can still [find those steps here](#update-paid-users-azure).
 > and to license the Visual Studio IDE and other Microsoft software for dev and test. 
 > To buy more [Visual Studio subscriptions](https://www.visualstudio.com/products/how-to-buy-vs), 
 > visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions), 
-> or learn [how to buy Visual Studio subscriptions here](../../marketplace/vs-subscriptions/buy-vs-subscriptions.md).
+> or learn [how to buy Visual Studio subscriptions here](../marketplace/vs-subscriptions/buy-vs-subscriptions.md).
 > </div>
 >
 > <p><a data-toggle="collapse" href="#expando-change-paid-extension-users">Need to change paid extension users instead? &#x25BC;</a></p>
 > <div class="collapse" id="expando-change-paid-extension-users">
 > <p>To change the number of paid extension users that you have in your Team Services account, 
-> learn [how to update your paid extension users here](../../marketplace/get-vsts-extensions.md#change-extension-quantity).
+> learn [how to update your paid extension users here](../marketplace/get-vsts-extensions.md#change-extension-quantity).
 > </div>
 >
 > <p><a data-toggle="collapse" href="#expando-access-vs-perms">How does access differ from permissions? &#x25BC;</a></p>
@@ -56,12 +56,12 @@ you can still [find those steps here](#update-paid-users-azure).
 > <p> Access levels control which features are available to users, 
 > while permissions control access to account resources. 
 > Learn how to [manage users and access levels here](add-account-users-assign-access-levels-team-services.md). 
-> For TFS, learn how to [change access levels here](../../work/connect/change-access-levels.md) 
-> or [buy more access to TFS or the Test hub here](../buy-access-tfs-test-hub.md). 
+> For TFS, learn how to [change access levels here](../work/connect/change-access-levels.md) 
+> or [buy more access to TFS or the Test hub here](buy-access-tfs-test-hub.md). 
 >
 > To manage permissions for Team Services or TFS instead, 
-> learn how to [add permissions here](../add-users.md) or 
-> [restrict permissions here](../restrict-access-tfs.md).
+> learn how to [add permissions here](add-users.md) or 
+> [restrict permissions here](restrict-access-tfs.md).
 > </div>
 
 ## Before you start
@@ -208,7 +208,7 @@ reduce this number to zero (0).
 	access in your Team Services account than you have in the Visual Studio Marketplace. 
 	Otherwise, when the next Azure billing cycle starts, 
 	the paid users who haven't signed into your account the longest will lose access first. 
-	If you [pay for TFS client access licenses (CALs) through Team Services](../buy-access-tfs-test-hub.md), 
+	If you [pay for TFS client access licenses (CALs) through Team Services](buy-access-tfs-test-hub.md), 
 	make sure that you still have enough CALs for the users who need them.
 
 	<a name="RemoveLicenses"></a>
@@ -231,9 +231,9 @@ reduce this number to zero (0).
 
 <a name="FindOwnerPCA"></a>
 
-[!INCLUDE [find-project-collection-administrator](../../_shared/qa-find-project-collection-administrator.md)]
+[!INCLUDE [find-project-collection-administrator](../_shared/qa-find-project-collection-administrator.md)]
 
-[!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
 
 <!-- ENDSECTION --> 
 
@@ -241,11 +241,11 @@ reduce this number to zero (0).
 
 <a name="AzureMSDNSubscription"></a>
 
-[!INCLUDE [azure-subscriptions-for-billing](../../_shared/qa-azure-subscriptions-for-billing.md)]
+[!INCLUDE [azure-subscriptions-for-billing](../_shared/qa-azure-subscriptions-for-billing.md)]
 
 <a name="billing"></a>
 
-[!INCLUDE [azure-billing](../../marketplace/_shared/qa-azure-billing.md)]
+[!INCLUDE [azure-billing](../marketplace/_shared/qa-azure-billing.md)]
 
 <a name="QALicensesResources"></a>
 
@@ -267,11 +267,11 @@ you must make the change before the last day of the month.
 
 <a name="no-accounts"></a>
 
-[!INCLUDE [no-accounts](../../marketplace/_shared/qa-no-accounts.md)]
+[!INCLUDE [no-accounts](../marketplace/_shared/qa-no-accounts.md)]
 
-[!INCLUDE [azure-bill-larger](../../_shared/qa-azure-bill-larger.md)]
+[!INCLUDE [azure-bill-larger](../_shared/qa-azure-bill-larger.md)]
 
-[!INCLUDE [azure-subscription-disabled-team-services](../../_shared/qa-azure-subscription-disabled-team-services.md)]
+[!INCLUDE [azure-subscription-disabled-team-services](../_shared/qa-azure-subscription-disabled-team-services.md)]
 
 <a name="update-paid-users-azure"></a>
 ####Q: Can I still buy or manage paid Basic access through the Azure portal?
@@ -360,7 +360,7 @@ So you'll only pay for users beyond that quantity. You're not charged until you 
 
 <a name="WhyNoVSOAccount"></a>
 
-[!INCLUDE [azure-why-no-team-services-account](../../_shared/qa-azure-why-no-team-services-account.md)]
+[!INCLUDE [azure-why-no-team-services-account](../_shared/qa-azure-why-no-team-services-account.md)]
 
 </div></div>
 
@@ -370,9 +370,9 @@ So you'll only pay for users beyond that quantity. You're not charged until you 
 
 A:	[Learn more here](https://go.microsoft.com/fwlink/?LinkId=698858).
 
-[!INCLUDE [azure-account-billing-support](../../_shared/qa-azure-account-billing-support.md)]
+[!INCLUDE [azure-account-billing-support](../_shared/qa-azure-account-billing-support.md)]
 
-[!INCLUDE [marketplace-support](../../marketplace/_shared/qa-marketplace-support.md)]
+[!INCLUDE [marketplace-support](../marketplace/_shared/qa-marketplace-support.md)]
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
 

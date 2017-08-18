@@ -223,11 +223,11 @@ Find the Azure AD group, then delete that group from your Team Services account.
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
 
-[!INCLUDE [choose-msa-azuread-account2](../../_shared/qa-choose-msa-azuread-account2.md)]
+[!INCLUDE [choose-msa-azuread-account2](../_shared/qa-choose-msa-azuread-account2.md)]
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 
 ####Q:	 Where can I ask more questions or send suggestions?
 

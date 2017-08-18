@@ -4,13 +4,13 @@ description: Azure Active Directory (Azure AD) - Control access to Visual Studio
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
-ms.assetid: eb0d51c2-fb28-4c55-9fcd-33a5942130f0
+ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.manager: douge
 ms.author: estfan
 ms.date: 1/19/2017
 ---
 
-#	Team Services: Access with Azure Active Directory (Azure AD)
+#  Disconnect your Team Services account from your directory
 
 **Team Services**
 
@@ -19,32 +19,68 @@ PLACEHOLDER TOPIC
 
 
 
-<a id="delete-directory-members"></a>
-##  Delete users from Team Services connected to Azure AD
 
-You can just [delete the user from each Team Services account](add-account-users-assign-access-levels-team-services.md#delete-user) 
-where you need to remove them. If you delete the user only from Azure AD, they may still show up in Team Services, but 
-they won't be able to sign in.
 
-0.  [Sign in to the Azure classic portal](https://manage.windowsazure.com/) 
-as the directory administrator in Azure.
+<a name="DisconnectDirectory"></a>
+
+To stop using your organization's directory and return to signing in with Microsoft accounts, 
+you can disconnect your Team Services account from your directory. 
+
+You'll need:
+
+*	[Microsoft accounts](https://signup.live.com/) 
+for all users in your Team Services account, 
+including yourself as Team Services account owner
+
+*	[Team Services account ownership](#find-owner) for your Microsoft account 
+
+*	Global administrator permissions in your Azure AD 
+for your Microsoft account as the Team Services account owner. You'll need both 
+because Azure AD users can't disconnect Team Services accounts from directories. 
+You can add Microsoft accounts to a directory as external users. 
+Learn about [managing Azure administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/).
+
+**What happens to current users?**  Users will continue working seamlessly if they have Microsoft accounts 
+that share the same sign-in addresses that they use now.
+Otherwise, they won't have access until you add them to 
+Team Services as new users. They can migrate everything except work history, 
+relink Visual Studio subscriptions, and have their access levels reassigned to their new identities.
+
+0.	[Sign in to the Azure classic portal](https://manage.windowsazure.com/) 
+with your Microsoft account as the Team Services account owner.
 
 	> [!NOTE]
-	> You can find the connected Azure AD 
-	> only through the Azure classic portal.
+	> You can disconnect your Team Services account 
+	> from your directory only through the Azure classic portal.
+
+	[Why am I asked to choose between a work or school account and a personal account?](#ChooseOrgAcctMSAcct)
 
 0.  Go to **Visual Studio Team Services**. 
-Find the Azure AD that's connected to your 
-Team Services account.
+Select your Team Services account.
 
-    ![Find the directory connected to your account](_img/manage-work-access/azurefindconnecteddirectory.png)
+	![Select your account](_img/manage-work-access/azureselectconnectedvso.png)
 
-###	Delete users from Azure AD
+0.	Chooose **Configure** > **Disconnect**.
 
-0.	Follow [these steps](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-delete-user-azure-portal) on the azure portal.
+	![Configure account](_img/manage-work-access/azure-configure-disconnect.png)
 
-0.  [Remove the user](add-account-users-assign-access-levels-team-services.md#delete-user) 
-from your Team Services account and reassign their access levels, if necessary.
+	![Disconnect account from directory](_img/manage-work-access/azuredisconnectdirectory1.png)
+
+0.	Select **None (no directory connection)**.
+
+	![Select no directory connection](_img/manage-work-access/azuredisconnectdirectory2.png)
+
+	![Account is now disconnected from your directory](_img/manage-work-access/azuredisconnectdirectory3.png)
+
+	Your Team Services account is disconnected from your organization's directory. 
+	Only users with Microsoft accounts can sign in.
+	**Before you disconnect your Team Services account from your directory**, 
+	make sure to **change the Team Services account owner to a Microsoft account**, 
+	and not to a school or work account. If you don't do this, 
+	you can't sign in to your Team Services account unless your work or school 
+	account has the same email address as your Microsoft account.
+
+	[More questions about disconnecting?](#faq-disconnect)
 
 ## Q&A
 
@@ -75,11 +111,11 @@ Learn how to [associate your Azure subscription to your Office 365 Azure AD](htt
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
 
 
 <a name="faq-users"></a>
@@ -299,5 +335,5 @@ subscriptions. They can use any email address to create a Microsoft account.
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
 

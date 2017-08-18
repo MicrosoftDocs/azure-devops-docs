@@ -37,7 +37,7 @@ Use this index to setup and manage your account and configure key settings to su
 
 * [Add users to your account](team-services/add-account-users-from-user-hub.md)
 
-* [Try extensions for free](../billing/team-services/try-additional-features-vs.md)
+* [Try extensions for free](../billing/try-additional-features-vs.md)
 
 
 ## Step-by-Step Tutorials
@@ -54,7 +54,7 @@ Use this index to setup and manage your account and configure key settings to su
  
 ## Resources 
 
-* [Set up billing](team-services/set-up-billing-for-your-account-vs.md)
+* [Set up billing](../billing/set-up-billing-for-your-account-vs.md)
 
 * [Pay for more users](team-services/buy-basic-access-add-team-services-users.md)
 

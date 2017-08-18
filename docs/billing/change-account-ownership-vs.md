@@ -46,11 +46,11 @@ and agreed to the Terms of Service.
 0.	To find the current account owner, 
 go to your Team Services account settings
 
-	![Go to account settings](../../_shared/_img/account-settings-new-ui.png)
+	![Go to account settings](../_shared/_img/account-settings-new-ui.png)
 
 0.	Under **Settings**, find the current owner.
 
-	![Find current owner](../../_shared/_img/account-owner-new-ui.png)
+	![Find current owner](../_shared/_img/account-owner-new-ui.png)
 
 0.	Change the account owner.
 
@@ -75,9 +75,9 @@ go to your Team Services account settings
 
 <a name="find-owner-pca"></a>
 
-[!INCLUDE [find-project-collection-administrator](../../_shared/qa-find-project-collection-administrator.md)]
+[!INCLUDE [find-project-collection-administrator](../_shared/qa-find-project-collection-administrator.md)]
 
-[!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
 
 <a name="NoNewOwner"></a>
 ####Q: Why can't I find the user I want to make the new owner?
@@ -99,7 +99,7 @@ in the possible account owners list.
 directory members won't appear in the possible account owners 
 list until they meet the requirements above.
 
-[!INCLUDE [recover-password](../../_shared/qa-recover-password.md)]
+[!INCLUDE [recover-password](../_shared/qa-recover-password.md)]
 
 ####Q: Can I reverse the account owner change?
 
@@ -142,16 +142,16 @@ and change the account owner, but they can't rename the account URL.
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
 
-[!INCLUDE [choose-msa-azuread-account2](../../_shared/qa-choose-msa-azuread-account2.md)]
+[!INCLUDE [choose-msa-azuread-account2](../_shared/qa-choose-msa-azuread-account2.md)]
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 
-[!INCLUDE [why-no-owned-accounts](../../_shared/qa-why-no-owned-accounts.md)]
+[!INCLUDE [why-no-owned-accounts](../_shared/qa-why-no-owned-accounts.md)]
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
 
 <!-- ENDSECTION --> 

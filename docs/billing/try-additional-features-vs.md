@@ -38,7 +38,7 @@ instead. Learn about other
 
 0.  Sign in to [Visual Studio Marketplace > Visual Studio Team Services](https://marketplace.visualstudio.com/vsts).
 
-	![Find extension trial](../_img/get-vsts-extensions/marketplace.png)
+	![Find extension trial](_img/get-vsts-extensions/marketplace.png)
 
 	[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
 
@@ -72,10 +72,10 @@ Charges won't start until the trial ends.
 > [!TIP]
 > You only have to buy and assign extensions for users who need access. 
 > Some extensions include free users. To keep access to such extensions, 
-> [assign the extension up to the number of free users that you get](../../marketplace/get-vsts-extensions.md#assign-extension). 
+> [assign the extension up to the number of free users that you get](../marketplace/get-vsts-extensions.md#assign-extension). 
 > For additional users who need access, 
-> [buy the extension from the Visual Studio Marketplace](../../marketplace/get-vsts-extensions.md) 
-> and [assign the extension to these users](../../marketplace/get-vsts-extensions.md#assign-extension). 
+> [buy the extension from the Visual Studio Marketplace](../marketplace/get-vsts-extensions.md) 
+> and [assign the extension to these users](../marketplace/get-vsts-extensions.md#assign-extension). 
 > If you have [Visual Studio subscribers](https://marketplace.visualstudio.com/subscriptions), 
 > check their subscription benefits. These users get additional features, 
 > like Test Manager, included with their subscriptions as benefits. 
@@ -83,20 +83,20 @@ Charges won't start until the trial ends.
 > can continue using them without paid access and assignment.
 > 
 > To change the number of users that already have paid extension access, 
-> learn [how to change that quantity here](../../marketplace/get-vsts-extensions.md#change-extension-quantity).
+> learn [how to change that quantity here](../marketplace/get-vsts-extensions.md#change-extension-quantity).
 
 If you lose access because the trial expires, 
 just follow these steps to buy and assign the 
 extension for users who need access.
 
-0.	[Buy the extension](../../marketplace/get-vsts-extensions.md#install-extension) 
+0.	[Buy the extension](../marketplace/get-vsts-extensions.md#install-extension) 
 only for users who need access.
 
 	To buy the extension, you can also go to the extension pane in your account.	
 
 	![Users hub, extension pane](_img/try-additional-features/extension-trial-in-account-updated-ui.png)
 
-0.	[Assign the extension](../../marketplace/get-vsts-extensions.md#assign-extension) 
+0.	[Assign the extension](../marketplace/get-vsts-extensions.md#assign-extension) 
 only to users who need access.
 
 [Need help?](#get-support)
@@ -119,14 +119,14 @@ A:  You can start an extension trial only once per account.
 
 <a name="no-accounts"></a>
 
-[!INCLUDE [no-accounts](../../marketplace/_shared/qa-no-accounts.md)]
+[!INCLUDE [no-accounts](../marketplace/_shared/qa-no-accounts.md)]
 
 <a name="no-permissions"></a>
 ####Q:		Why can't I start an extension trial for the selected Team Services account?
 
 A:	You must be the Team Services [account owner or project collection administrator](#find-owner) 
 to start an extension trial for the selected Team Services account. If you don't have permissions, 
-you can [request the extension](../../marketplace/get-vsts-extensions.md#request) instead. 
+you can [request the extension](../marketplace/get-vsts-extensions.md#request) instead. 
 
 <a name="check-trial"></a>
 ####Q:		How do I check an extension's trial status?
@@ -143,32 +143,32 @@ from your Team Services account.
 
 <a name="feature-access"></a>
 
-[!INCLUDE [no-access-existing-features](../../_shared/qa-no-access-existing-features.md)]
+[!INCLUDE [no-access-existing-features](../_shared/qa-no-access-existing-features.md)]
 
 <a name="extension-access"></a>
 
-[!INCLUDE [no-access-extension-features](../../_shared/qa-no-access-extension-features.md)]
+[!INCLUDE [no-access-extension-features](../_shared/qa-no-access-extension-features.md)]
 
-[!INCLUDE [extension-trial-ending-expiring-free-users](../../_shared/qa-extension-trial-ending-expiring-free-users.md)]
+[!INCLUDE [extension-trial-ending-expiring-free-users](../_shared/qa-extension-trial-ending-expiring-free-users.md)]
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
 
-[!INCLUDE [choose-msa-azuread-account2](../../_shared/qa-choose-msa-azuread-account2.md)]
+[!INCLUDE [choose-msa-azuread-account2](../_shared/qa-choose-msa-azuread-account2.md)]
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-project-collection-administrator](../../_shared/qa-find-project-collection-administrator.md)]
+[!INCLUDE [find-project-collection-administrator](../_shared/qa-find-project-collection-administrator.md)]
 
-[!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
 
-[!INCLUDE [why-no-owned-accounts](../../_shared/qa-why-no-owned-accounts.md)]
+[!INCLUDE [why-no-owned-accounts](../_shared/qa-why-no-owned-accounts.md)]
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
 
 <!-- ENDSECTION --> 

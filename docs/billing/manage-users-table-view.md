@@ -50,13 +50,13 @@ who also get Basic features, and in some cases, additional features with specifi
 
 Access levels control which features are available to users, while permissions control their access to account resources. 
 [Can't access some features?](#feature-access) 
-For TFS, learn [how to change access levels](../../work/connect/change-access-levels.md) 
-or [buy more access to TFS or the Test hub](../buy-access-tfs-test-hub.md). 
+For TFS, learn [how to change access levels](../work/connect/change-access-levels.md) 
+or [buy more access to TFS or the Test hub](buy-access-tfs-test-hub.md). 
 
-To control access to account resources instead, learn [how to add permissions](../add-users.md) or 
-[restrict permissions](../restrict-access-tfs.md).  To change how many users can access paid extensions in your 
+To control access to account resources instead, learn [how to add permissions](add-users.md) or 
+[restrict permissions](restrict-access-tfs.md).  To change how many users can access paid extensions in your 
 Team Services account, 
-learn [how to change paid extension users](../../marketplace/get-vsts-extensions.md#change-extension-quantity).
+learn [how to change paid extension users](../marketplace/get-vsts-extensions.md#change-extension-quantity).
 
 
 ## Before you get started
@@ -102,14 +102,14 @@ A:  To access the Users hub and manage users, you must have
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-project-collection-administrator](../../_shared/qa-find-project-collection-administrator.md)]
+[!INCLUDE [find-project-collection-administrator](../_shared/qa-find-project-collection-administrator.md)]
 
-[!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
 
 
 <a name="users-delay"></a>
 
-[!INCLUDE [user-delay](../../_shared/qa-user-delay.md)]
+[!INCLUDE [user-delay](../_shared/qa-user-delay.md)]
 
 
 ### Visual Studio subscriptions
@@ -126,7 +126,7 @@ subscribers who have Team Services as a benefit.
 
 For example, if you select "Visual Studio/MSDN Subscriber", 
 but you don't have a valid and active Visual Studio subscription, you can only 
-[work as a stakeholder](../../quickstart/get-started-stakeholder.md).
+[work as a stakeholder](../quickstart/get-started-stakeholder.md).
 
 <a name="EligibleMSDNSubscriptions"></a>
 
@@ -201,7 +201,7 @@ no matter the current access level that's assigned to them.
 #### Q: What happens if a user's subscription expires?
 
 A: If no other access levels are available, they'll 
-[work as stakeholders](../../quickstart/get-started-stakeholder.md). 
+[work as stakeholders](../quickstart/get-started-stakeholder.md). 
 To restore access, they must renew their subscription.
 
 <a name="extension-transition"></a>
@@ -235,7 +235,7 @@ users to 0.
 0. On the 1st day of the next calendar month, 
 [go to the Marketplace](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly) 
 and buy Visual Studio Professional monthly subscriptions for the same users. 
-Learn [how to buy Visual Studio subscriptions](../../marketplace/vs-subscriptions/buy-vs-subscriptions.md).
+Learn [how to buy Visual Studio subscriptions](../marketplace/vs-subscriptions/buy-vs-subscriptions.md).
 
 	**Note** If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, 
 	make sure to remove your subscription's default spending limit indefinitely. 
@@ -252,11 +252,11 @@ service from a build definition or pushing code to Team Services from a git comm
 
 <a name="paid-basic-access-join-other-accounts"></a>
 
-[!INCLUDE [can-paid-Basic-users-join-other-accounts](../../_shared/qa-can-paid-basic-users-join-other-accounts.md)]
+[!INCLUDE [can-paid-Basic-users-join-other-accounts](../_shared/qa-can-paid-basic-users-join-other-accounts.md)]
 
 <a name="feature-access"></a>
 
-[!INCLUDE [no-access-existing-features](../../_shared/qa-no-access-existing-features.md)]
+[!INCLUDE [no-access-existing-features](../_shared/qa-no-access-existing-features.md)]
 
 <a name="stopped-features"></a>
 
@@ -264,10 +264,10 @@ service from a build definition or pushing code to Team Services from a git comm
 
 A: This might happen for different reasons, 
 but meanwhile, you or your team member can continue 
-[working as a stakeholder](../../quickstart/get-started-stakeholder.md):
+[working as a stakeholder](../quickstart/get-started-stakeholder.md):
 
 *	Your or your team member's Visual Studio subscription has expired. 
-Meanwhile, they'll [work as stakeholders](../../quickstart/get-started-stakeholder.md), 
+Meanwhile, they'll [work as stakeholders](../quickstart/get-started-stakeholder.md), 
 or you can give them Basic access until they renew their subscriptions.
 After they sign in, Team Services will restore their access automatically.
 
@@ -327,7 +327,7 @@ Learn more about [controlling access with a directory](manage-organization-acces
 
 <a name="ConnectedDirectory"></a>
 
-[!INCLUDE [does-account-use-azuread](../../_shared/qa-does-account-use-azuread.md)]
+[!INCLUDE [does-account-use-azuread](../_shared/qa-does-account-use-azuread.md)]
 
 <a name="DeleteFromDirectory"></a>
 
@@ -339,14 +339,14 @@ assets associated with that directory.  You must have Azure AD global administra
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
 
-[!INCLUDE [choose-msa-azuread-account2](../../_shared/qa-choose-msa-azuread-account2.md)]
+[!INCLUDE [choose-msa-azuread-account2](../_shared/qa-choose-msa-azuread-account2.md)]
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 
 
 ###	More support
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
 

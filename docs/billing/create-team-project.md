@@ -16,7 +16,7 @@ ms.date: 04/13/2017
 
 >[!NOTE]  
 >If you don’t want to manage an on-premises server, you can 
-[Sign up for Visual Studio Team Services and create a team project](team-services/sign-up-for-visual-studio-team-services.md). This topic applies to creating a team project when you have an on-premises Team Foundation Server (TFS) deployed.
+[Sign up for Visual Studio Team Services and create a team project](sign-up-for-visual-studio-team-services.md). This topic applies to creating a team project when you have an on-premises Team Foundation Server (TFS) deployed.
 
 You create a team project to establish a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. Team projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). 
 

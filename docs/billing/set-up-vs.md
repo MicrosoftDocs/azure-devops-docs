@@ -17,7 +17,7 @@ ms.date: 08/04/2016
 When you first launch [Visual Studio 2015](https://www.visualstudio.com/products/vs-2015-product-editions), 
 you can sign in and connect to [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs).
 
-If you have already gone through Visual Studio sign in, or you are using Visual Studio 2017, then [learn how](../../git/gitquickstart-vs2017.md) to connect to 
+If you have already gone through Visual Studio sign in, or you are using Visual Studio 2017, then [learn how](../git/gitquickstart-vs2017.md) to connect to 
 your Team Services from the Team Explorer window.
 
 Once connected, you can store or share code in free, unlimited, private, 
@@ -29,7 +29,7 @@ test early, and ship faster.
 > To set up Visual Studio without Team Services, 
 > learn how to [get started here](https://msdn.microsoft.com/library/e2h7fzkw.aspx). 
 > To host your own server, 
-> learn how to [install and set up Team Foundation Server](../../setup-admin/tfs/install/get-started.md).
+> learn how to [install and set up Team Foundation Server](../setup-admin/tfs/install/get-started.md).
 
 Visual Studio Team Services is free for 
 [up to 5 users with access to Basic features](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) 
@@ -39,7 +39,7 @@ Learn [what else you get with Team Services](https://www.visualstudio.com/pricin
 If you want, you can also use Team Services with any IDE or code editor, like:
 
 *	[Eclipse, Android Studio, or IntelliJ](http://java.visualstudio.com/Docs/tools/intro)
-*	Xcode (see [Git](../../git/share-your-code-in-git-xcode.md) or [TFVC](../../tfvc/share-your-code-in-tfvc-xcode.md))
+*	Xcode (see [Git](../git/share-your-code-in-git-xcode.md) or [TFVC](../tfvc/share-your-code-in-tfvc-xcode.md))
 *	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 ##	How do I set up Visual Studio 2015 for Team Services during sign in?
@@ -87,9 +87,9 @@ and choose the version control to manage your code.
 	![Create your team project](_img/set-up-vs/create-team-project-vs.png)
 
 	Not sure which to choose? Learn which 
-	[process](../../work/guidance/choose-process.md) 
-	and version control ([Git](../../git/overview.md) 
-	or [Team Foundation Version Control](../../tfvc/overview.md))
+	[process](../work/guidance/choose-process.md) 
+	and version control ([Git](../git/overview.md) 
+	or [Team Foundation Version Control](../tfvc/overview.md))
 	work best for you.
 
 0.	If you're a new Visual Studio user, you can change your settings here, 
@@ -109,12 +109,12 @@ or change them later in Visual Studio options.
 
 *	[Add users to your Team Services account](add-account-users-assign-access-levels-team-services.md)
 
-*	Add code to [Git](../../git/share-your-code-in-git-vs.md) 
-or [Team Foundation](../../tfvc/share-your-code-in-tfvc-vs.md) version control
+*	Add code to [Git](../git/share-your-code-in-git-vs.md) 
+or [Team Foundation](../tfvc/share-your-code-in-tfvc-vs.md) version control
 
-*	[Create your backlog](../../work/backlogs/create-your-backlog.md) to organize your work, 
-	[manage your process](../../work/process/manage-process.md), 
-	or [customize your process](../../work/process/customize-process.md)
+*	[Create your backlog](../work/backlogs/create-your-backlog.md) to organize your work, 
+	[manage your process](../work/process/manage-process.md), 
+	or [customize your process](../work/process/customize-process.md)
 
 ## Q & A
 
@@ -155,7 +155,7 @@ that's managed by Azure Active Directory.
 
 <a name="vs-versions"></a>
 
-[!INCLUDE [visual-studio-versions](../../_shared/qa-visual-studio-versions.md)]
+[!INCLUDE [visual-studio-versions](../_shared/qa-visual-studio-versions.md)]
 
 ####Q: Can I use Visual Studio 2015 with Visual Studio 2013 and 2012 on the same computer?
 
@@ -190,11 +190,11 @@ A:	Learn how to [sign up for Visual Studio Team Services](sign-up-for-visual-stu
 
 <a name="browser-problems"></a>
 
-[!INCLUDE [browser-problems](../../_shared/qa-browser-problems.md)]
+[!INCLUDE [browser-problems](../_shared/qa-browser-problems.md)]
 
-[!INCLUDE [find-account-name](../../_shared/qa-find-account-name.md)]
+[!INCLUDE [find-account-name](../_shared/qa-find-account-name.md)]
 
-[!INCLUDE [recover-password](../../_shared/qa-recover-password.md)]
+[!INCLUDE [recover-password](../_shared/qa-recover-password.md)]
 
 <a name="change-location"></a>
 ####Q: Can I change my Visual Studio Team Services account location?
@@ -209,14 +209,14 @@ Your account's default location is selected based on the closest
 [Microsoft Azure region](https://azure.microsoft.com/en-us/regions) 
 where Visual Studio Team Services is available. 
 
-[!INCLUDE [secure-protect-data](../../_shared/qa-secure-protect-data.md)]
+[!INCLUDE [secure-protect-data](../_shared/qa-secure-protect-data.md)]
 
-[!INCLUDE [team-services-sla](../../_shared/qa-team-services-sla.md)]
+[!INCLUDE [team-services-sla](../_shared/qa-team-services-sla.md)]
 
-[!INCLUDE [change-account-name-owner](../../_shared/qa-change-account-name-owner.md)]
+[!INCLUDE [change-account-name-owner](../_shared/qa-change-account-name-owner.md)]
 
-[!INCLUDE [delete-account](../../_shared/qa-delete-account.md)]
+[!INCLUDE [delete-account](../_shared/qa-delete-account.md)]
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
 
 <!-- ENDSECTION -->

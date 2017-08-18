@@ -47,18 +47,18 @@ team project after you sign in.
 To manage your code, select Git or Team Foundation Version Control. 
 To manage your work, select Agile or another work item process template. 
 
-	![Create your first team project](../../_shared/_img/create-team-project-updated.png)
+	![Create your first team project](../_shared/_img/create-team-project-updated.png)
 
 	Not sure which to choose? Learn which version control 
-	or [work item process template](../../work/guidance/choose-process.md) 
+	or [work item process template](../work/guidance/choose-process.md) 
 	works best for you:
 
-	*	[**Git**](../../git/overview.md): 
+	*	[**Git**](../git/overview.md): 
 	Work in a decentralized version 
 	control system that provides lightweight 
 	branches and a good experience when working offline.
 
-	*	[**Team Foundation Version Control**](../../tfvc/overview.md): 
+	*	[**Team Foundation Version Control**](../tfvc/overview.md): 
 	Work in a centralized version control system that 
 	provides a good experience, even with a massive codebase.
 
@@ -107,11 +107,11 @@ find and select your team project.
 
 0. Choose your next step based on the version control you selected:
 
- * [Share code in Git using Visual Studio](../../git/share-your-code-in-git-vs.md)
+ * [Share code in Git using Visual Studio](../git/share-your-code-in-git-vs.md)
 
- * [Share code in TFVC using Visual Studio](../../tfvc/share-your-code-in-tfvc-vs.md#workspace)
+ * [Share code in TFVC using Visual Studio](../tfvc/share-your-code-in-tfvc-vs.md#workspace)
 
-Learn about [connecting to team projects](../../connect/connect-team-projects.md#visual-studio).
+Learn about [connecting to team projects](../connect/connect-team-projects.md#visual-studio).
 
 
 ## Connect from Visual Studio Code
@@ -125,9 +125,9 @@ Set up [VS Code](https://code.visualstudio.com/docs/editor/versioncontrol) with 
 
 Choose your next step based on the version control you selected:
 
- * [Share code in Git using Xcode](../../git/share-your-code-in-git-xcode.md)
+ * [Share code in Git using Xcode](../git/share-your-code-in-git-xcode.md)
 
- * [Share code in TFVC using Xcode](../../tfvc/share-your-code-in-tfvc-xcode.md)
+ * [Share code in TFVC using Xcode](../tfvc/share-your-code-in-tfvc-xcode.md)
 
 <a name="eclipse"></a>
 ## Connect and share code from Eclipse
@@ -177,15 +177,15 @@ Choose your next step based on the version control you selected:
 
 0. Connect to your team project.
 
-	![Add Existing Team Project dialog box with collection and team project selected](../../_shared/_img/add-existing-team-project.png)
+	![Add Existing Team Project dialog box with collection and team project selected](../_shared/_img/add-existing-team-project.png)
 
 ### Share your code
 
 Choose your next step based on the version control you selected:
 
- * [Share code in Git using Eclipse](../../git/share-your-code-in-git-eclipse.md)
+ * [Share code in Git using Eclipse](../git/share-your-code-in-git-eclipse.md)
 
- * [Share code in TFVC using Eclipse](../../tfvc/share-your-code-in-tfvc-eclipse.md)
+ * [Share code in TFVC using Eclipse](../tfvc/share-your-code-in-tfvc-eclipse.md)
 
 ## Q&A
 
@@ -193,19 +193,19 @@ Choose your next step based on the version control you selected:
 
 <a name="browser-problems"></a>
 
-[!INCLUDE [browser-problems](../../_shared/qa-browser-problems.md)]
+[!INCLUDE [browser-problems](../_shared/qa-browser-problems.md)]
 
-[!INCLUDE [vs-launch-fail](../../_shared/qa-vs-launch-fail.md)]
+[!INCLUDE [vs-launch-fail](../_shared/qa-vs-launch-fail.md)]
 
 <a name="vs-versions"></a>
 
-[!INCLUDE [visual-studio-versions](../../_shared/qa-visual-studio-versions.md)]
+[!INCLUDE [visual-studio-versions](../_shared/qa-visual-studio-versions.md)]
 
 <a name="another-team-project"></a>
 
-[!INCLUDE [another-team-project](../../_shared/qa-another-team-project.md)]
+[!INCLUDE [another-team-project](../_shared/qa-another-team-project.md)]
 
-[!INCLUDE [delete-team-project](../../_shared/qa-delete-team-project.md)]
+[!INCLUDE [delete-team-project](../_shared/qa-delete-team-project.md)]
 
 #### Q: Where can I learn more about Team Explorer Everywhere for Eclipse?
 
@@ -222,15 +222,15 @@ Markdown, look at
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
 
-[!INCLUDE [choose-msa-azuread-account2](../../_shared/qa-choose-msa-azuread-account2.md)]
+[!INCLUDE [choose-msa-azuread-account2](../_shared/qa-choose-msa-azuread-account2.md)]
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
 
 <!-- ENDSECTION --> 
 

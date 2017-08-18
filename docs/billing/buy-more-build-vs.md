@@ -17,7 +17,7 @@ ms.date: 04/28/2017
 Visual Studio Team Services offers these
 [additional team services](https://www.visualstudio.com/team-services/pricing):
 
-Create, queue, and monitor cross-platform builds and releases with these [Build & Release task-based services](../../build-release/concepts/licensing/concurrent-pipelines-ts.md).
+Create, queue, and monitor cross-platform builds and releases with these [Build & Release task-based services](../build-release/concepts/licensing/concurrent-pipelines-ts.md).
 Use Hosted Pipelines to run builds and deploy releases concurrently on Microsoft-managed
 agents. Use Private Pipelines to run builds and deploy releases on machines that you manage,
 running agent software from Microsoft.
@@ -52,8 +52,8 @@ running agent software from Microsoft.
 
     Learn about:
 
-    * [Team Services: Build & Release pipelines](../../build-release/concepts/licensing/concurrent-pipelines-ts.md)
-    * [TFS: Build & Release pipelines](../../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
+    * [Team Services: Build & Release pipelines](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
+    * [TFS: Build & Release pipelines](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
     * [Pricing for Build & Release pipelines](https://www.visualstudio.com/team-services/pricing)
 
 
@@ -192,11 +192,11 @@ then update your number of paid pipelines.
 
 ## Related notes  
 
-- [Build your app](../../build-release/apps/index.md)
-- [Concurrent build and release pipelines in Visual Studio Team Services](../../build-release/concepts/licensing/concurrent-pipelines-ts.md)
-- [Concurrent release pipelines in Team Foundation Server](../../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
+- [Build your app](../build-release/apps/index.md)
+- [Concurrent build and release pipelines in Visual Studio Team Services](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
+- [Concurrent release pipelines in Team Foundation Server](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
 - [How to buy cloud-based load testing in Team Services](buy-load-testing-vs.md)  
-- [Visual Studio Marketplace and billing Q&A](../../marketplace/marketplace-billing-qa.md)  
+- [Visual Studio Marketplace and billing Q&A](../marketplace/marketplace-billing-qa.md)  
 
 
 ## Q & A
@@ -207,7 +207,7 @@ then update your number of paid pipelines.
 A:  When you pay for pipelines, you can run more than one build or release at the same time
 in your Team Services account. Learn
 [about pipeline pricing](https://www.visualstudio.com/team-services/pricing)
-or [how pipelines work](../../build-release/concepts/licensing/concurrent-pipelines-ts.md).
+or [how pipelines work](../build-release/concepts/licensing/concurrent-pipelines-ts.md).
 
 ### Q: Are there any limits on builds and releases?
 
@@ -233,7 +233,7 @@ includes unlimited minutes per month, within reason.
 although a private XAML controller can host more than one agent.
 
 *  For Cloud-based Load Testing, you're charged for each
-   [virtual user minute](../../load-test/reference-qa.md#VUM).
+   [virtual user minute](../load-test/reference-qa.md#VUM).
 
 *   Graduated discounts Cloud-based Load Testing
 are calculated based on your Azure subscription billing cycle.
@@ -258,30 +258,30 @@ or [Team Services Support](https://www.visualstudio.com/team-services/support).
 
 <a name="no-accounts"></a>
 
-[!INCLUDE [no-accounts](../../marketplace/_shared/qa-no-accounts.md)]
+[!INCLUDE [no-accounts](../marketplace/_shared/qa-no-accounts.md)]
 
 <a name="WhyNoVSOAccount"></a>
 
-[!INCLUDE [azure-why-no-team-services-account](../../_shared/qa-azure-why-no-team-services-account.md)]
+[!INCLUDE [azure-why-no-team-services-account](../_shared/qa-azure-why-no-team-services-account.md)]
 
 <a name="FindOwnerPCA"></a>
 
-[!INCLUDE [find-project-collection-administrator](../../_shared/qa-find-project-collection-administrator.md)]
+[!INCLUDE [find-project-collection-administrator](../_shared/qa-find-project-collection-administrator.md)]
 
-[!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
 
 <a name="get-support"></a>
 
-[!INCLUDE [azure-account-billing-support](../../_shared/qa-azure-account-billing-support.md)]
+[!INCLUDE [azure-account-billing-support](../_shared/qa-azure-account-billing-support.md)]
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
 
 <a name="AzureMSDNSubscription"></a>
 
-[!INCLUDE [azure-subscriptions-for-billing](../../_shared/qa-azure-subscriptions-for-billing.md)]
+[!INCLUDE [azure-subscriptions-for-billing](../_shared/qa-azure-subscriptions-for-billing.md)]
 
 <a name="billing"></a>
 
-[!INCLUDE [azure-billing](../../marketplace/_shared/qa-azure-billing.md)]
+[!INCLUDE [azure-billing](../marketplace/_shared/qa-azure-billing.md)]
 
 -->

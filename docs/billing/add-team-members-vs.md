@@ -17,7 +17,7 @@ ms.date: 1/11/2017
 Add members to your team project in Visual Studio Team Services, 
 so you can share code and work with your team, track their status, 
 coordinate dev, build, test, and release activities, and more. 
-For Team Foundation Server, learn [how to add team project members here](../add-users.md).
+For Team Foundation Server, learn [how to add team project members here](add-users.md).
 
 When you add members to team projects, 
 Team Services will automatically assign them 
@@ -31,14 +31,14 @@ like [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-t
 > To manually assign access levels, 
 > [add members to your account instead](add-account-users-assign-access-levels-team-services.md). 
 > To control access to account resources, 
-> [add permissions](../add-users.md) or [restrict permissions](../restrict-access-tfs.md) instead.
+> [add permissions](add-users.md) or [restrict permissions](restrict-access-tfs.md) instead.
 
 ## Before you get started
 
 If you don't have a team project yet, 
 [create your team project first](connect-to-visual-studio-team-services.md).
 To add members to team projects, you'll need 
-[project administrator](../add-administrator-tfs.md), 
+[project administrator](add-administrator-tfs.md), 
 [project collection administrator, or account owner](#find-pca-owner) permissions.
 
 ## Add members to your team project
@@ -113,8 +113,8 @@ Add them one at a time or all at the same time.
 ####	Next
 
 *	[Connect to Team Services](connect-to-visual-studio-team-services.md) to share code from Xcode, Eclipse, or Visual Studio
-*	[Create a backlog](../../work/backlogs/create-your-backlog.md) to plan, organize, and track your work.
-*	[Grow and scale your teams](../../work/scale/multiple-teams.md)
+*	[Create a backlog](../work/backlogs/create-your-backlog.md) to plan, organize, and track your work.
+*	[Grow and scale your teams](../work/scale/multiple-teams.md)
 
 ## Q&A
 
@@ -135,7 +135,7 @@ return to your Team Services account,
 This lets you pay monthly for their access, and you can cancel anytime.
 
 If you need more Visual Studio subscriptions, 
-learn [how to buy these subscriptions](../../marketplace/vs-subscriptions/buy-vs-subscriptions.md) 
+learn [how to buy these subscriptions](../marketplace/vs-subscriptions/buy-vs-subscriptions.md) 
 from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions).
 
 <a name="WhyCantSignIn"></a>
@@ -157,7 +157,7 @@ Learn [how to control account access with Azure AD](manage-organization-access-f
 
 <a name="feature-access"></a>
 
-[!INCLUDE [no-access-existing-features](../../_shared/qa-no-access-existing-features.md)]
+[!INCLUDE [no-access-existing-features](../_shared/qa-no-access-existing-features.md)]
 
 ####Q:	 Why did some users lose access to certain features?
 
@@ -165,7 +165,7 @@ A:	This might happen for [different reasons](add-account-users-assign-access-lev
 
 <a name="ConnectedDirectory"></a>
 
-[!INCLUDE [does-account-use-azuread](../../_shared/qa-does-account-use-azuread.md)]
+[!INCLUDE [does-account-use-azuread](../_shared/qa-does-account-use-azuread.md)]
 
 <a name="RemovePeople"></a>
 
@@ -178,24 +178,24 @@ anymore, you must reduce your paid users to avoid charges.
 
 <a name="users-delay"></a>
 
-[!INCLUDE [user-delay](../../_shared/qa-user-delay.md)]
+[!INCLUDE [user-delay](../_shared/qa-user-delay.md)]
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
 
-[!INCLUDE [choose-msa-azuread-account2](../../_shared/qa-choose-msa-azuread-account2.md)]
+[!INCLUDE [choose-msa-azuread-account2](../_shared/qa-choose-msa-azuread-account2.md)]
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 
 <a name="find-pca-owner"></a>
 
-[!INCLUDE [find-project-collection-administrator](../../_shared/qa-find-project-collection-administrator.md)]
+[!INCLUDE [find-project-collection-administrator](../_shared/qa-find-project-collection-administrator.md)]
 
-[!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
 
 <!-- ENDSECTION --> 

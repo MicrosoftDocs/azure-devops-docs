@@ -81,7 +81,7 @@ reduce this number to zero (0).
 	access in your Team Services account than you have in the Visual Studio Marketplace. 
 	Otherwise, when the next Azure billing cycle starts, 
 	the paid users who haven't signed into your account the longest will lose access first. 
-	If you [pay for TFS client access licenses (CALs) through Team Services](../buy-access-tfs-test-hub.md), 
+	If you [pay for TFS client access licenses (CALs) through Team Services](buy-access-tfs-test-hub.md), 
 	make sure that you still have enough CALs for the users who need them.
 
 	<a name="RemoveLicenses"></a>
@@ -104,9 +104,9 @@ reduce this number to zero (0).
 
 <a name="FindOwnerPCA"></a>
 
-[!INCLUDE [find-project-collection-administrator](../../_shared/qa-find-project-collection-administrator.md)]
+[!INCLUDE [find-project-collection-administrator](../_shared/qa-find-project-collection-administrator.md)]
 
-[!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
 
 <!-- ENDSECTION --> 
 
@@ -114,11 +114,11 @@ reduce this number to zero (0).
 
 <a name="AzureMSDNSubscription"></a>
 
-[!INCLUDE [azure-subscriptions-for-billing](../../_shared/qa-azure-subscriptions-for-billing.md)]
+[!INCLUDE [azure-subscriptions-for-billing](../_shared/qa-azure-subscriptions-for-billing.md)]
 
 <a name="billing"></a>
 
-[!INCLUDE [azure-billing](../../marketplace/_shared/qa-azure-billing.md)]
+[!INCLUDE [azure-billing](../marketplace/_shared/qa-azure-billing.md)]
 
 <a name="QALicensesResources"></a>
 
@@ -140,11 +140,11 @@ you must make the change before the last day of the month.
 
 <a name="no-accounts"></a>
 
-[!INCLUDE [no-accounts](../../marketplace/_shared/qa-no-accounts.md)]
+[!INCLUDE [no-accounts](../marketplace/_shared/qa-no-accounts.md)]
 
-[!INCLUDE [azure-bill-larger](../../_shared/qa-azure-bill-larger.md)]
+[!INCLUDE [azure-bill-larger](../_shared/qa-azure-bill-larger.md)]
 
-[!INCLUDE [azure-subscription-disabled-team-services](../../_shared/qa-azure-subscription-disabled-team-services.md)]
+[!INCLUDE [azure-subscription-disabled-team-services](../_shared/qa-azure-subscription-disabled-team-services.md)]
 
 <a name="update-paid-users-azure"></a>
 ####Q: Can I still buy or manage paid Basic access through the Azure portal?
@@ -233,7 +233,7 @@ So you'll only pay for users beyond that quantity. You're not charged until you 
 
 <a name="WhyNoVSOAccount"></a>
 
-[!INCLUDE [azure-why-no-team-services-account](../../_shared/qa-azure-why-no-team-services-account.md)]
+[!INCLUDE [azure-why-no-team-services-account](../_shared/qa-azure-why-no-team-services-account.md)]
 
 </div></div>
 
@@ -243,9 +243,9 @@ So you'll only pay for users beyond that quantity. You're not charged until you 
 
 A:	[Learn more here](https://go.microsoft.com/fwlink/?LinkId=698858).
 
-[!INCLUDE [azure-account-billing-support](../../_shared/qa-azure-account-billing-support.md)]
+[!INCLUDE [azure-account-billing-support](../_shared/qa-azure-account-billing-support.md)]
 
-[!INCLUDE [marketplace-support](../../marketplace/_shared/qa-marketplace-support.md)]
+[!INCLUDE [marketplace-support](../marketplace/_shared/qa-marketplace-support.md)]
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
 

@@ -4,83 +4,56 @@ description: Azure Active Directory (Azure AD) - Control access to Visual Studio
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
-ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
+ms.assetid: aacee943-d278-46f4-bc13-c58f30f1282a
 ms.manager: douge
 ms.author: estfan
 ms.date: 1/19/2017
 ---
 
-#  Disconnect your Team Services account from your directory
+#	Team Services: Access with Azure Active Directory (Azure AD)
 
 **Team Services**
 
 
-PLACEHOLDER TOPIC
+<a name="SetUpCurrentUsers"></a>
+##  Add Team Services account users to your directory
 
+If your users do not already exist in Azure AD:
 
+0.  Sign in to the [Azure classic portal](https://manage.windowsazure.com/) 
+or the [Azure portal](https://portal.azure.com) 
+as global administrator for your organization's directory. 
+See these topics for how to:
 
+	*	[Add users in the Azure classic portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-create-users).
+	*	[Add users in the Azure portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-create-azure-portal).
 
+	[Why am I asked to choose between a "work or school account" and a "personal account"?](#ChooseOrgAcctMSAcct)
 
-<a name="DisconnectDirectory"></a>
+0.	Add the sign-in addresses for all your Team Services account users to your directory, 
+including yourself as the Team Services account owner, if not in the directory already. 
 
-To stop using your organization's directory and return to signing in with Microsoft accounts, 
-you can disconnect your Team Services account from your directory. 
+  What does an example directory look like?
+  
+  Suppose Jamal is an Azure AD global administrator at Fabrikam and is in the Fabrikam directory with his 
+  work account (jamalhartnett@fabrikam.com). He's also the Team Services account owner and a user with his Microsoft 
+  account (jamalhartnett@live.com). He wants to keep his work history, so he adds his Microsoft account to the 
+  Fabrikam directory.  If Jamal doesn't need his work history, he can use his work account with Team Services. But 
+  free up the access used by his Microsoft account, he must change the Team Services account owner to his work account. 
 
-You'll need:
+  Nicole, another user, has a work account (nicolezamora@fabrikam.com) that shares the same sign-in address with her 
+  Microsoft account, so she will continue to work seamlessly with the same sign-in address.
 
-*	[Microsoft accounts](https://signup.live.com/) 
-for all users in your Team Services account, 
-including yourself as Team Services account owner
+  Here's what the Fabrikam directory might look like in the Azure classic portal after Jamal adds users from his 
+  Team Services account.
+    
+  ![Directory after adding users](_img/manage-work-access/azureaddmembers3.png)
 
-*	[Team Services account ownership](#find-owner) for your Microsoft account 
+  [More questions about setting up users?](#faq-users)
 
-*	Global administrator permissions in your Azure AD 
-for your Microsoft account as the Team Services account owner. You'll need both 
-because Azure AD users can't disconnect Team Services accounts from directories. 
-You can add Microsoft accounts to a directory as external users. 
-Learn about [managing Azure administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/).
+0.  After adding your account users to your directory, 
+connect your Team Services account to your directory. 
 
-**What happens to current users?**  Users will continue working seamlessly if they have Microsoft accounts 
-that share the same sign-in addresses that they use now.
-Otherwise, they won't have access until you add them to 
-Team Services as new users. They can migrate everything except work history, 
-relink Visual Studio subscriptions, and have their access levels reassigned to their new identities.
-
-0.	[Sign in to the Azure classic portal](https://manage.windowsazure.com/) 
-with your Microsoft account as the Team Services account owner.
-
-	> [!NOTE]
-	> You can disconnect your Team Services account 
-	> from your directory only through the Azure classic portal.
-
-	[Why am I asked to choose between a work or school account and a personal account?](#ChooseOrgAcctMSAcct)
-
-0.  Go to **Visual Studio Team Services**. 
-Select your Team Services account.
-
-	![Select your account](_img/manage-work-access/azureselectconnectedvso.png)
-
-0.	Chooose **Configure** > **Disconnect**.
-
-	![Configure account](_img/manage-work-access/azure-configure-disconnect.png)
-
-	![Disconnect account from directory](_img/manage-work-access/azuredisconnectdirectory1.png)
-
-0.	Select **None (no directory connection)**.
-
-	![Select no directory connection](_img/manage-work-access/azuredisconnectdirectory2.png)
-
-	![Account is now disconnected from your directory](_img/manage-work-access/azuredisconnectdirectory3.png)
-
-	Your Team Services account is disconnected from your organization's directory. 
-	Only users with Microsoft accounts can sign in.
-	**Before you disconnect your Team Services account from your directory**, 
-	make sure to **change the Team Services account owner to a Microsoft account**, 
-	and not to a school or work account. If you don't do this, 
-	you can't sign in to your Team Services account unless your work or school 
-	account has the same email address as your Microsoft account.
-
-	[More questions about disconnecting?](#faq-disconnect)
 
 ## Q&A
 
@@ -111,11 +84,11 @@ Learn how to [associate your Azure subscription to your Office 365 Azure AD](htt
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
 
 
 <a name="faq-users"></a>
@@ -335,5 +308,5 @@ subscriptions. They can use any email address to create a Microsoft account.
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
 

@@ -18,7 +18,7 @@ To connect and use the functions and features that Team Services or TFS provides
 
 In addition to permissions, access to select features are controlled by the access level assigned to a user. Contributors and administrators should be added to Basic (paid) access. Stakeholder access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
 
-For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about assigning access levels and supporting stakeholder access, see [Manage users and access](team-services/add-account-users-assign-access-levels-team-services.md) for Team Services, and [Change access levels](../work/connect/change-access-levels.md) for TFS. 
+For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about assigning access levels and supporting stakeholder access, see [Manage users and access](add-account-users-assign-access-levels-team-services.md) for Team Services, and [Change access levels](../work/connect/change-access-levels.md) for TFS. 
 
 
 ## Code  
@@ -642,7 +642,7 @@ You set [dashboard permissions at the team level](../report/dashboard-permission
 
 - [Add users to a team project](add-users.md)  
 - [Permissions and groups reference](permissions.md)  
-- [Manage users and access](team-services/add-account-users-assign-access-levels-team-services.md) (Team Services) 
+- [Manage users and access](add-account-users-assign-access-levels-team-services.md) (Team Services) 
 - [Change access levels](../work/connect/change-access-levels.md) (TFS)
 - [Administration guide](account-administration.md)  
 

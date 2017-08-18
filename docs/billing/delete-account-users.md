@@ -41,7 +41,7 @@ then choose **Delete**.
     ![Delete users from the Users hub](_img/assign-licenses/vso-usershub-deleteuser.png)
 
 0.	To make sure that you've removed the user completely, 
-check your [security groups and permissions](../add-users.md). 
+check your [security groups and permissions](add-users.md). 
 
 	[Why don't users appear or disappear promptly in Team Services after I add or delete them in the Users hub?](#users-delay)
 
@@ -69,13 +69,13 @@ A:  To access the Users hub and manage users, you must have
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-project-collection-administrator](../../_shared/qa-find-project-collection-administrator.md)]
+[!INCLUDE [find-project-collection-administrator](../_shared/qa-find-project-collection-administrator.md)]
 
-[!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
 
 <a name="users-delay"></a>
 
-[!INCLUDE [user-delay](../../_shared/qa-user-delay.md)]
+[!INCLUDE [user-delay](../_shared/qa-user-delay.md)]
 
 <!-- ENDSECTION -->
 
@@ -95,7 +95,7 @@ subscribers who have Team Services as a benefit.
 
 For example, if you select "Visual Studio/MSDN Subscriber", 
 but you don't have a valid and active Visual Studio subscription, you can only 
-[work as a stakeholder](../../quickstart/get-started-stakeholder.md).
+[work as a stakeholder](../quickstart/get-started-stakeholder.md).
 
 <a name="EligibleMSDNSubscriptions"></a>
 
@@ -170,7 +170,7 @@ no matter the current access level that's assigned to them.
 ####Q:  What happens if a user's subscription expires?
 
 A:  If no other access levels are available, they'll 
-[work as stakeholders](../../quickstart/get-started-stakeholder.md). 
+[work as stakeholders](../quickstart/get-started-stakeholder.md). 
 To restore access, they must renew their subscription.
 
 <a name="extension-transition"></a>
@@ -199,7 +199,7 @@ users to 0.
 0.	On the 1st day of the next calendar month, 
 [go to the Marketplace](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly) 
 and buy Visual Studio Professional monthly subscriptions for the same users. 
-Learn [how to buy Visual Studio subscriptions](../../marketplace/vs-subscriptions/buy-vs-subscriptions.md).
+Learn [how to buy Visual Studio subscriptions](../marketplace/vs-subscriptions/buy-vs-subscriptions.md).
 
 	**Note** If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, 
 	make sure to remove your subscription's default spending limit indefinitely. 
@@ -213,11 +213,11 @@ Learn [how to buy Visual Studio subscriptions](../../marketplace/vs-subscription
 
 <a name="paid-basic-access-join-other-accounts"></a>
 
-[!INCLUDE [can-paid-Basic-users-join-other-accounts](../../_shared/qa-can-paid-basic-users-join-other-accounts.md)]
+[!INCLUDE [can-paid-Basic-users-join-other-accounts](../_shared/qa-can-paid-basic-users-join-other-accounts.md)]
 
 <a name="feature-access"></a>
 
-[!INCLUDE [no-access-existing-features](../../_shared/qa-no-access-existing-features.md)]
+[!INCLUDE [no-access-existing-features](../_shared/qa-no-access-existing-features.md)]
 
 <a name="stopped-features"></a>
 
@@ -225,10 +225,10 @@ Learn [how to buy Visual Studio subscriptions](../../marketplace/vs-subscription
 
 A:  This might happen for different reasons, 
 but meanwhile, you or your team member can continue 
-[working as a stakeholder](../../quickstart/get-started-stakeholder.md):
+[working as a stakeholder](../quickstart/get-started-stakeholder.md):
 
 *	Your or your team member's Visual Studio subscription has expired. 
-Meanwhile, they'll [work as stakeholders](../../quickstart/get-started-stakeholder.md), 
+Meanwhile, they'll [work as stakeholders](../quickstart/get-started-stakeholder.md), 
 or you can give them Basic access until they renew their subscriptions.
 After they sign in, Team Services will restore their access automatically.
 
@@ -291,7 +291,7 @@ Learn more about [controlling access with a directory](manage-organization-acces
 
 <a name="ConnectedDirectory"></a>
 
-[!INCLUDE [does-account-use-azuread](../../_shared/qa-does-account-use-azuread.md)]
+[!INCLUDE [does-account-use-azuread](../_shared/qa-does-account-use-azuread.md)]
 
 <a name="DeleteFromDirectory"></a>
 
@@ -305,11 +305,11 @@ You must have Azure AD global administrator permissions to
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
 
-[!INCLUDE [choose-msa-azuread-account2](../../_shared/qa-choose-msa-azuread-account2.md)]
+[!INCLUDE [choose-msa-azuread-account2](../_shared/qa-choose-msa-azuread-account2.md)]
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 
 <!-- ENDSECTION -->
 
@@ -318,6 +318,6 @@ You must have Azure AD global administrator permissions to
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
 
 <!-- ENDSECTION -->

@@ -114,7 +114,7 @@
   items:
   - name: TBD FROM TOPIC INTROS
   - name: Buying build pipelines
-    href: team-services/buy-more-build-vs.md
+    href: ../billing/buy-more-build-vs.md
 - name: Reference
   items:
   - name: Permissions and groups reference
@@ -131,19 +131,17 @@
     href: ../billing/index.md
     items:
     - name: "Set up billing: link Azure subscription to Team Services Account"
-      href: ../billing/team-services/set-up-billing-for-your-account-vs.md
+      href: ../billing/set-up-billing-for-your-account-vs.md
     - name: "Set up billing: add backup billing managers"
-      href: ../billing/team-services/add-backup-billing-managers.md
+      href: ../billing/add-backup-billing-managers.md
     - name: "Set up billing: change Azure subscription for billing"
-      href: ../billing/team-services/change-azure-subscription.md
+      href: ../billing/change-azure-subscription.md
     - name: Pay for Team Services users
-      href: ../billing/team-services/buy-basic-access-add-team-services-users.md
+      href: ../billing/buy-basic-access-add-team-services-users.md
     - name: Change number of paid users
-      href: ../billing/team-services/change-number-of-paid-users.md
+      href: ../billing/change-number-of-paid-users.md
     - name: How to buy build pipelines
-      href: ../billing/team-services/buy-more-build-vs.md
-    - name: Change number of paid build pipelines
-      href: ../billing/team-services/buy-more-build-vs.md
+      href: ../billing/buy-more-build-vs.md
     - name: Install an extension for Team Services
       href: ../billing/get-vsts-extensions.md
     - name: Request permissions for Team Services extensions

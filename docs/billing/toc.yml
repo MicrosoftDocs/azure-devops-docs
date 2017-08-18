@@ -7,11 +7,11 @@
 - name: Quickstarts
   items:
   - name: Sign up for your account
-    href: team-services/sign-up-for-visual-studio-team-services.md
+    href: sign-up-for-visual-studio-team-services.md
   - name: Try extensions for free
-    href: team-services/try-additional-features-vs.md
+    href: try-additional-features-vs.md
   - name: Pay for VSTS users
-    href: team-services/buy-basic-access-add-team-services-users.md
+    href: buy-basic-access-add-team-services-users.md
   - name: Install an extension
     href: ../marketplace/install-vsts-extension.md
   - name: Request permission for an extension
@@ -21,23 +21,23 @@
 - name: Tutorials
   items:
   - name: Change Azure AD tenant
-    href: team-services/change-azure-active-directory-team-services-account.md
+    href: change-azure-active-directory-team-services-account.md
 - name: How-to
   items:
   - name: Link work accounts to Visual Studio with MSDN subscriptions
-    href: team-services/link-msdn-subscription-to-organizational-account-vs.md
+    href: link-msdn-subscription-to-organizational-account-vs.md
   - name: "Set up billing: link Azure subscription to Team Services Account"
-    href: team-services/set-up-billing-for-your-account-vs.md
+    href: set-up-billing-for-your-account-vs.md
   - name: "Set up billing: add backup billing managers"
-    href: team-services/add-backup-billing-managers.md
+    href: add-backup-billing-managers.md
   - name: "Set up billing: change Azure subscription for billing"
-    href: team-services/change-azure-subscription.md
+    href: change-azure-subscription.md
   - name: Pay for Team Services users
-    href: team-services/buy-basic-access-add-team-services-users.md
+    href: buy-basic-access-add-team-services-users.md
   - name: How to buy build pipelines
-    href: team-services/buy-more-build-vs.md
+    href: buy-more-build-vs.md
   - name: Change number of paid users
-    href: team-services/change-number-of-paid-users.md
+    href: change-number-of-paid-users.md
   - name: Approve requests for Team Services extensions
     href: ../marketplace/approve-vsts-extensions.md
   - name: Uninstall or disable extensions
@@ -45,9 +45,9 @@
 - name: Concepts
   items:
   - name: TBD FROM TOPIC INTROS
-    href: team-services/add-backup-billing-managers.md
+    href: add-backup-billing-managers.md
   - name: "For example: Using MSDN subscription"
-    href: team-services/link-msdn-subscription-to-organizational-account-vs.md
+    href: link-msdn-subscription-to-organizational-account-vs.md
 - name: Reference
   items:
   - name: Permissions and groups reference
@@ -61,7 +61,7 @@
 - name: Resources
   items:
   - name: How to buy load testing services
-    href: team-services/buy-load-testing-vs.md
+    href: buy-load-testing-vs.md
   - name: Migrate from TFS to Team Services Tutorial
     href: https://www.visualstudio.com/articles/migration-overview
   - name: Integrate with other services

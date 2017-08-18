@@ -30,16 +30,16 @@ VSTS billing covers:
 
 ## 5-Minute Quickstarts  
 
- * [Set up billing](team-services/set-up-billing-for-your-account-vs.md)
+ * [Set up billing](set-up-billing-for-your-account-vs.md)
 
- * [Try extensions for free](team-services/try-additional-features-vs.md)
+ * [Try extensions for free](try-additional-features-vs.md)
 
- * [Pay for more users](team-services/buy-basic-access-add-team-services-users.md)
+ * [Pay for more users](buy-basic-access-add-team-services-users.md)
 
 
 ## Step-by-Step Tutorials
 
-* [Change Azure AD tenant](team-services/change-azure-active-directory-team-services-account.md)
+* [Change Azure AD tenant](change-azure-active-directory-team-services-account.md)
 
 
 ## Concepts 
@@ -50,9 +50,9 @@ with Microsoft services such as Office 365 and Microsoft Azure.
 If your organization uses a directory (tenant) managed by Azure AD, 
 your Team Services account can also:
 
-* [use your directory to authenticate access](team-services/manage-organization-access-for-your-account-vs.md)
+* [use your directory to authenticate access](manage-organization-access-for-your-account-vs.md)
 
-* [change your Azure AD](team-services/change-azure-active-directory-team-services-account.md)
+* [change your Azure AD](change-azure-active-directory-team-services-account.md)
 
 
 ## Resources 
