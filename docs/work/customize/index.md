@@ -60,4 +60,11 @@ Use the guidance provided in the following topics based on the process model or 
 - [Categories XML element reference](../reference/categories-xml-element-reference.md)  
 - [Process configuration XML element reference](../reference/process-configuration-xml-element.md) 
 - [witadmin command line tool](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)   
-  
+ 
+## Reference   
+- [Work items](/vsts/work/work-items/index)
+- [Scale & configure teams](/vsts/work/scale/index)
+- [Account Management (VSTS)](/vsts/accounts/index)
+- [TFS Server Administration](/vsts/tfs-server/index)
+- [Marketplace extensions](/vsts/marketplace/get-vsts-extensions)
+- [Extensibility and REST APIs](/vsts/extend/overview) 

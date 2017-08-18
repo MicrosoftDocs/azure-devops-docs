@@ -57,9 +57,9 @@ The following table summarizes the differences between the three supported proce
 <table width="90%">
 <tr valign="bottom">
 <th width="50%">Feature </th>
-<th >Inheritance</th>
-<th >Hosted XML</th>
-<th >On-premises XML</th>
+<th >[Inheritance](inheritance-process-model.md)</th>
+<th >[Hosted XML](hosted-xml-process-model.md)</th>
+<th >[On-premises XML](on-premises-xml-process-model.md)</th>
 </tr>
 
 <tbody valign="top" align="center">
@@ -165,7 +165,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 > [!div class="mx-tdBreakAll"]  
 > |Manage access   |Permissions  |Shared resources  |
 > |-------------|----------|---------|
-> |- [Add team members (Team Services)](../../accounts/add-team-members-vs.md)<br/>- [Add team members (TFS)](../scale/multiple-teams.md#add-team-members)<br/>- [Stakeholder access](../../security/change-access-levels.md)<br/>- [Advanced access level](../../security/change-access-levels.md) |- [Area path permissions](../how-to/set-permissions-access-work-tracking.md#set-permissions-area-path)     - [Process permissions](../process/manage-process.md#process-permissions)<br/>- [Work item query and folder permissions](../track/set-query-permissions.md)<br/>- [Dashboard permissions](../../report/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../scale/review-team-plans.md#plan-permissions)<br/>- [Tagging permissions](../../security/permissions.md#tags)<br/>- [Test permissions](../../security/permissions.md#project_test)<br/>- [Restrict access](../../accounts/restrict-access-tfs.md) | - [Alerts](../track/alerts-and-notifications.md)<br/>- [Area paths](set-area-paths.md)<br/>- [Iteration paths](set-iteration-paths-sprints.md)<br/>- [Queries](../track/using-queries.md)<br/>- [Tags](../track/add-tags-to-work-items.md) | 
+> |- [Add team members (Team Services)](../../accounts/add-team-members-vs.md)<br/>- [Add team members (TFS)](../scale/multiple-teams.md#add-team-members)<br/>- [Stakeholder access](../../security/change-access-levels.md)<br/>- [VS Enterprise & Advanced access level](../../security/change-access-levels.md) |- [Area path permissions](../how-to/set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>- [Process permissions](../process/manage-process.md#process-permissions)<br/>- [Work item query and folder permissions](../track/set-query-permissions.md)<br/>- [Dashboard permissions](../../report/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../scale/review-team-plans.md#plan-permissions)<br/>- [Tagging permissions](../../security/permissions.md#tags)<br/>- [Test permissions](../../security/permissions.md#project_test)<br/>- [Restrict access](../../accounts/restrict-access-tfs.md) | - [Alerts](../track/alerts-and-notifications.md)<br/>- [Area paths](set-area-paths.md)<br/>- [Iteration paths](set-iteration-paths-sprints.md)<br/>- [Queries](../track/using-queries.md)<br/>- [Tags](../track/add-tags-to-work-items.md) | 
   
 ## Related notes
 

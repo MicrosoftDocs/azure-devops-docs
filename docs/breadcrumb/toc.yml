@@ -77,7 +77,7 @@
       tocHref: /vsts/report/analytics/
       topicHref: /vsts/report//analytics/index
     - name: "Data Warehouse & SQL Reports"
-      tocHref: /vsts/report/sql-reports
+      tocHref: /vsts/report/sql-reports/
       topicHref: /vsts/report/sql-reports/index
   - name: Collaboration
     tocHref: /vsts/collaborate/

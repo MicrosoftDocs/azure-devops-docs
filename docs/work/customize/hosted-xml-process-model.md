@@ -17,7 +17,14 @@ ms.date: 08/02/2017
 **Team Services**
 
 <a id="hosted-xml-process-model">  </a>
-### Hosted XML process model  
+
+<a id="hosted-xml-sequence"></a>
+ 
+Use the following sequences when you manage your Team Services through the Hosted XML process model. This sequence requires you to update your team project by updating the process template that it uses. We recommend that you maintain your process templates in a repository for version control.  
+
+[![Export process](_img/cust-wit-form-export-process.png)](../import-process/import-process.md#export-process)[![Edit XML definition file(s)](_img/cust-wit-form-edit-def-file.png)](../reference/weblayout-xml-elements.md)[![Import process](_img/cust-wit-form-import-process.png)](../import-process/import-process.md)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
+
+
 You can perform the following tasks with the Hosted XML process model. 
 
 > [!div class="mx-tdBreakAll"]  
@@ -32,10 +39,3 @@ You can perform the following tasks with the Hosted XML process model.
 > | Backlogs and process configuration | Process template |  
 > |----------|---------|   
 > |- [Add WITs to backlogs or boards](add-wits-to-backlogs-and-boards.md)<br/>- [Add portfolio backlogs](add-portfolio-backlogs.md)<br/>- [Configure the quick add panel](../reference/process-configuration-xml-element.md#add)<br/>- [Configure the default backlog columns](../reference/process-configuration-xml-element.md#columns)<br/>- [Set maximum number of task board items](../reference/process-configuration-xml-element.md#number_items)<br/>- [Set default weekend days (Scrum)](../reference/process-configuration-xml-element.md#weekend_days) <br/>- [Set default bug management behavior](../reference/process-configuration-xml-element.md#behaviors)<br/>- [Set default hidden backlogs](../reference/process-configuration-xml-element.md#behaviors)<br/>- [Process configuration](../reference/process-configuration-xml-element.md)<br/>- [Categories](../reference/categories-xml-element-reference.md) |-[Import a process template](../import-process/import-process.md#import-from-TFS)<br/>- [Export a process template](../import-process/import-process.md#export-process)<br/>- [Customize a process template](../import-process/customize-process.md) |
-
-<a id="hosted-xml-sequence"></a>
-## Customization sequence for Hosted XML process model
- 
-Use the following sequences when you manage your Team Services through the Hosted XML process model. This sequence requires you to update your team project by updating the process template that it uses. We recommend that you maintain your process templates in a repository for version control.  
-
-[![Export process](_img/cust-wit-form-export-process.png)](../import-process/import-process.md#export-process)[![Edit XML definition file(s)](_img/cust-wit-form-edit-def-file.png)](../reference/weblayout-xml-elements.md)[![Import process](_img/cust-wit-form-import-process.png)](../import-process/import-process.md)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  

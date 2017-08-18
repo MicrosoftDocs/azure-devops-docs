@@ -22,7 +22,7 @@
     href: hosted-xml-process-model.md
   - name: On-premises XML process model
     href: on-premises-xml-process-model.md
-- name: How-to guides
+- name: How-to Guides
   items:
   - name: Inheritance process model
     items:
@@ -38,6 +38,8 @@
       href: ../process/customize-process-workflow.md
     - name: Customize a work item type
       href: ../process/customize-process-wit.md
+    - name: Add a custom rule
+      href: ../process/custom-rules.md
     - name: Add a custom control
       href: ../process/custom-controls-process.md
     - name: Customize backlogs and boards
@@ -126,6 +128,10 @@
   items:
   - name: Changes made to process templates
     href: ../guidance/changes-to-process-templates.md
+  - name: Work tracking object limits
+    href: object-limits.md
+  - name: Naming conventions
+    href: /vsts/reference/naming-restrictions?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: WITD XML reference
     items:
     - name: XML element reference
@@ -291,6 +297,14 @@
       href: ../reference/api-ref/partialopen.md
 - name: Resources
   items:
+  - name: Work items
+    href: /vsts/work/work-items/index
+  - name: "Scale & configure teams"
+    href: /vsts/work/scale/index
+  - name: Account Management (VSTS)
+    href: /vsts/accounts/index
+  - name: TFS Server Administration
+    href: /vsts/tfs-server/index
   - name: Marketplace extensions
     href: /vsts/marketplace/get-vsts-extensions
   - name: Extensibility and REST APIs

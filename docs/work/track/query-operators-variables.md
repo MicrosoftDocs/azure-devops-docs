@@ -216,7 +216,7 @@ You can use query operators in the following table to specify how each value in 
 	<td><p> <strong>String</strong>  that matches the name of a user group or category group in Team Foundation Server.</p>
 <blockquote><strong>Note:</strong>  You can use the <strong>In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. The operator cannot be used to query Azure Active Directory groups.
 </blockquote>
-<p>For information about category groups, see [Use categories to group work item types](../reference/use-categories-to-group-work-item-types.md). For more information about Azure Active Directory and Team Services, see [Access with Azure Active Directory groups](https://www.visualstudio.com/docs/setup-admin/team-services/manage-azure-active-directory-groups-visual-studio-team-services).</p></td></tr>
+<p>For information about category groups, see [Use categories to group work item types](../reference/use-categories-to-group-work-item-types.md). For more information about Azure Active Directory and Team Services, see [Access with Azure Active Directory groups](https://www.visualstudio.com/docs/setup-admin/vsts/manage-azure-active-directory-groups-visual-studio-team-services).</p></td></tr>
 <tr>
 	<td><p><strong>Not in Group</strong></p></td>
 	<td><p>Does not match a value that is a member of the group in the clause.</p></td>
