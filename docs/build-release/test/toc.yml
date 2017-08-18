@@ -1,3 +1,5 @@
+- name: Continuous testing
+  href: index.md
 - name: Overview
   items:
   - name: About continuous testing

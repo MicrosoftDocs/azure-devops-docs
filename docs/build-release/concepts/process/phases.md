@@ -34,6 +34,10 @@ By using different task phases in a build or release definition, you can:
 
 * Specify different execution timeouts for different sets of tasks to
   maximize deployment performance and control.
+  
+* Specify the conditions under which the tasks in the phase will execute;
+  for example, when a prevous phase has failed or when a [custom condition](conditions.md)
+  defined by an expression is true.
 
   ![Task phases schematic diagram](_img/phases-01.png)
 
@@ -76,7 +80,7 @@ You can configure the following properties for an agent phase:
   executing the tasks will be selected. In the case where multiple jobs are created, all the agents must have capabilities that satisfy the demands.
   For more details, see [Capabilities](../agents/agents.md#capabilities).
 
-* **Skip artifacts download:** When used in a release definition, you may choose to skip the
+* **Skip download of artifacts:** When used in a release definition, you may choose to skip the
   [download of artifacts](../definitions/release/artifacts.md#download)
   during the job execution. Use this option if you want to implement
   your own custom logic for downloading artifacts by using tasks, or if the tasks in a particular phase do not rely on the artifacts.
@@ -87,6 +91,14 @@ You can configure the following properties for an agent phase:
   This is useful in many scenarios, such as when you need to
   run a custom PowerShell script that invokes the REST APIs
   on VSTS - perhaps to create a work item or query a build for information.
+
+* **Run this phase:** Use this option to run the tasks
+  in the phase only when specific [conditions](conditions.md) are met. Select a predefined
+  condition, or select "custom" and enter an [expression](conditions.md) that evaluates
+  to **true** or **false**. Nested expressions can be used, and the
+  expressions can access variables available in the release definition.
+
+  ![Conditional phase execution option](_img/conditional-phase.png)
 
 <a name="parallelexec"></a>
 ### Parallel and multiple execution using agent phases
@@ -298,16 +310,6 @@ phased execution:
   subsequent phases of the release. For example, setting
   **Always run** on a task at the end of the first phase will
   not guarantee that tasks in subsequent phases will run.
-
-## Conditional phase execution
-
-Agent and Deployment Group phases include an option to run the tasks
-in the phase only when specific [conditions](conditions.md) are met. Select a predefined
-condition, or select "custom" and enter an [expression](conditions.md) that evaluates
-to **true** or **false**. Nested expressions can be used, and the
-expressions can access variables available in the release definition.
-
-![Conditional phase execution option](_img/conditional-phase.png)
 
 ## Related topics
 
