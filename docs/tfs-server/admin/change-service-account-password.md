@@ -20,7 +20,7 @@ For simplicity, the TFS documentation refers to this account as TFSService, alth
 >**Note:**  
 >TFS and its utilities cannot create a new local or domain account to use as *TFSService*, and they cannot update the password for that account in the workgroup or the domain. Instead, the utilities update the records to match the new credentials. If you your deployment includes more than one application-tier server, you must manually update each server with any changes to the service account or its password.
 
-For more information about service accounts in TFS, see [Service accounts and dependencies in Team Foundation Server](service-accounts-dependencies-tfs.md). For more information about the accounts required for installation, including the service account for TFS, see [Accounts required for installation of Team Foundation Server](../../setup-admin/requirements.md#accounts).
+For more information about service accounts in TFS, see [Service accounts and dependencies in Team Foundation Server](service-accounts-dependencies-tfs.md). For more information about the accounts required for installation, including the service account for TFS, see [Accounts required for installation of Team Foundation Server](../../accounts/requirements.md#accounts).
 
 **Required Permissions**:
 

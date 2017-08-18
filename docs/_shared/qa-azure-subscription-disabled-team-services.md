@@ -6,6 +6,6 @@ check your subscription status in the [Account Center](https://account.windowsaz
 then try to [fix your subscription](https://docs.microsoft.com/en-us/azure/billing-subscription-become-disable). 
 This will restore your account's paid settings. 
 Or you can link your Team Services account to another Azure subscription by 
-[unlinking your account from the disabled subscription](../setup-admin/team-services/set-up-billing-for-your-account-vs.md#change-azure-subscription). 
+[unlinking your account from the disabled subscription](../billing/set-up-billing-for-your-account-vs.md#change-azure-subscription). 
 While your subscription is disabled, your account goes back to the free 
 monthly limits until your subscription is fixed.

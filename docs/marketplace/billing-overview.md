@@ -76,9 +76,9 @@ Choose from free extensions in the
 ## Start for free, add users and services as you grow 
 To start using Team Services for 
 free, go to the [Team Services signup page (```https://www.visualstudio.com/```)](https://www.visualstudio.com/). 
-Or learn [how to sign up for Team Services](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md). 
+Or learn [how to sign up for Team Services](../accounts/sign-up-for-visual-studio-team-services.md). 
 
-To start for free with an on-premises TFS, download and install [Team Foundation Server 2017 Express](https://www.visualstudio.com/downloads/#team-foundation-server-express-2017) and then [create a team project](../setup-admin/create-team-project.md). TFS Express is a free, source code-control project management and team collaboration platform for individual developers and small teams of five or less. Install Visual Studio Team Foundation Server Express 2017 on your desktop or laptop.
+To start for free with an on-premises TFS, download and install [Team Foundation Server 2017 Express](https://www.visualstudio.com/downloads/#team-foundation-server-express-2017) and then [create a team project](../accounts/create-team-project.md). TFS Express is a free, source code-control project management and team collaboration platform for individual developers and small teams of five or less. Install Visual Studio Team Foundation Server Express 2017 on your desktop or laptop.
 
 Here's an overview about what your team gets with a free account or with TFS Express, 
 the kinds of users who can join your account, 
@@ -157,7 +157,7 @@ and then add them to your Team Services account.
 For pricing, get specific numbers with our 
 [Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=visual-studio-team-services) 
 or [group pricing here](https://www.visualstudio.com/team-services/pricing/), 
-or learn [how to pay for Team Services users](../setup-admin/team-services/buy-basic-access-add-team-services-users.md).
+or learn [how to pay for Team Services users](../billing/buy-basic-access-add-team-services-users.md).
 
 
 ###	Increase your Build & Release capacity  
@@ -189,16 +189,16 @@ Learn about:
 
 *   [Concurrent build and release pipelines in Team Services](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
 *   [Concurrent build and release pipelines in TFS](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
-*   [How to buy more pipeline capacity for builds or releases in Team Services](../setup-admin/team-services/buy-more-build-vs.md)
-*   [Buy more cloud-based testing services](../setup-admin/team-services/buy-load-testing-vs.md) 
+*   [How to buy more pipeline capacity for builds or releases in Team Services](../billing/buy-more-build-vs.md)
+*   [Buy more cloud-based testing services](../billing/buy-load-testing-vs.md) 
 
 ###	Get more virtual user minutes for performance & load testing 
 
 If you need more than 20,000 virtual user minutes per month, 
 for pricing, see [Performance & Load Testing](https://www.visualstudio.com/team-services/pricing/), 
 or [our Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=visual-studio-team-services). 
-Learn [how to set up billing for your Team Services account](../setup-admin/team-services/set-up-billing-for-your-account-vs.md), 
-so you can [buy more virtual user minutes through Azure](../setup-admin/team-services/buy-load-testing-vs.md).
+Learn [how to set up billing for your Team Services account](../billing/set-up-billing-for-your-account-vs.md), 
+so you can [buy more virtual user minutes through Azure](../billing/buy-load-testing-vs.md).
 
 ###	Go beyond free extensions to meet your team's needs
 
@@ -236,7 +236,7 @@ If you work in the cloud and use both Team Services and Azure services, your pri
 > When you pay monthly for Team Services users, 
 > each paid user also gets a TFS 2015 client access license (CAL). 
 > Learn how this lets you 
-> [buy monthly access to TFS](../setup-admin/buy-access-tfs-test-hub.md) 
+> [buy monthly access to TFS](../billing/buy-access-tfs-test-hub.md) 
 > for your team. Learn about [Visual Studio subscription pricing](https://www.visualstudio.com/vs/pricing/).
  
 Service usage by minutes (such as cloud testing)  

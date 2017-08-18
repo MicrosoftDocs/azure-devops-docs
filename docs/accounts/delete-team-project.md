@@ -38,7 +38,7 @@ You can delete a team project from Visual Studio Team Services or from an on-pre
 <a name="delete-team-proj"></a>
 ## Delete a team project from Team Foundation Server (on-premises)
 
-Using the administration console, you can delete a team project from a team project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](../setup-admin/tfs/command-line/tfsdeleteproject-cmd.md) to delete all artifacts.
+Using the administration console, you can delete a team project from a team project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](../tfs-server/command-line/tfsdeleteproject-cmd.md) to delete all artifacts.
 
 1.  If you're not a member of one or more of the following administrator groups, [get those permissions now](add-administrator-tfs.md):
 
@@ -84,7 +84,7 @@ You can use the following procedures to save data that users most care about, su
 
 ### Save data stored on Team Foundation Server
 
-You can easily save data stored for a team project collection by [making a backup of the database](../setup-admin/tfs/admin/backup/config-backup-sched-plan.md). Or, you can use the same operations described earlier in [Save data stored on Visual Studio Team Services](#saveservice).
+You can easily save data stored for a team project collection by [making a backup of the database](../tfs-server/admin/backup/config-backup-sched-plan.md). Or, you can use the same operations described earlier in [Save data stored on Visual Studio Team Services](#saveservice).
 
 ## Q & A (for on-premises deployments only)
 
@@ -112,4 +112,4 @@ You can easily save data stored for a team project collection by [making a backu
 
     Review the information about the failure, and then try to delete the project again.
 
-    If partial data remains, you can also use the [TFSDeleteProject](../setup-admin/tfs/command-line/tfsdeleteproject-cmd.md) command line tool.
+    If partial data remains, you can also use the [TFSDeleteProject](../tfs-server/command-line/tfsdeleteproject-cmd.md) command line tool.

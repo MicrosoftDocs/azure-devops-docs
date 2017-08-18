@@ -29,7 +29,7 @@ test early, and ship faster.
 > To set up Visual Studio without Team Services, 
 > learn how to [get started here](https://msdn.microsoft.com/library/e2h7fzkw.aspx). 
 > To host your own server, 
-> learn how to [install and set up Team Foundation Server](../setup-admin/tfs/install/get-started.md).
+> learn how to [install and set up Team Foundation Server](../tfs-server/install/get-started.md).
 
 Visual Studio Team Services is free for 
 [up to 5 users with access to Basic features](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) 

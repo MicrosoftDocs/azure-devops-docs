@@ -64,7 +64,7 @@ to use for billing purchases from the Visual Studio Marketplace
 
 	For example, you can use the Azure subscription that's linked to 
 	your Visual Studio Team Services account, if your account is already 
-	[set up for billing](../setup-admin/team-services/set-up-billing-for-your-account-vs.md). 
+	[set up for billing](../billing/set-up-billing-for-your-account-vs.md). 
 	If you don't have an Azure subscription, you can 
 	[sign up for Azure](https://account.windowsazure.com/Subscriptions) 
 	before or during your first Marketplace purchase. Learn more about 

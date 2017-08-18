@@ -16,9 +16,9 @@ ms.date: 03/02/2016
  
 ### Q: How do I get started?  
 **A: To get started in the cloud or on-premises:** 
-- To get started with Team Services, begin by [creating a user account](https://www.visualstudio.com/team-services/). Step-by-step instructions are provided in [Sign up for Visual Studio Team Services](./setup-admin/team-services/sign-up-for-visual-studio-team-services.md).  
-- To get started with an on-premises TFS, download and install the [latest version of TFS](https://www.visualstudio.com/downloads/). See [Install and configure TFS](./setup-admin/tfs/install/get-started.md) for details.  
-- If you need to create a team project, create one in [Visual Studio Team Services](setup-admin/team-services/set-up-vs.md) or set one up in an [on-premises TFS](setup-admin/create-team-project.md).   
+- To get started with Team Services, begin by [creating a user account](https://www.visualstudio.com/team-services/). Step-by-step instructions are provided in [Sign up for Visual Studio Team Services](accounts/sign-up-for-visual-studio-team-services.md).  
+- To get started with an on-premises TFS, download and install the [latest version of TFS](https://www.visualstudio.com/downloads/). See [Install and configure TFS](./tfs-server/install/get-started.md) for details.  
+- If you need to create a team project, create one in [Visual Studio Team Services](accounts/set-up-vs.md) or set one up in an [on-premises TFS](accounts/create-team-project.md).   
 - If you don't have access to the team project, [get invited to the team](work/scale/multiple-teams.md#add-team-members).  
 - If it's your first time connecting to a team project, see [Connect to a team project](connect/connect-team-projects.md).  
 
@@ -34,7 +34,7 @@ Go to one of these pages to download a version of Visual Studio or client tool p
 See [Software development roles](roles.md).  
 
 ### Q: What compatibility issues exist between client and server versions?  
- **A:** See [Requirements and compatibility](setup-admin/requirements.md).  
+ **A:** See [Requirements and compatibility](accounts/requirements.md).  
  
 ### Q: Can stakeholders who don't use Visual Studio participate on our team?  
  **A**: Yes. You can provide access to stakeholders who have no CAL for the following activities:  

@@ -23,7 +23,7 @@ If you use advanced on a client operating system, you don’t need any domain ac
 -   The report reader account for creating HTML reports.  
 -   The service account for new installations of SharePoint Foundation.
 
-For more information about accounts, see [Accounts required for installation of Team Foundation Server](../../../setup-admin/requirements.md#accounts).
+For more information about accounts, see [Accounts required for installation of Team Foundation Server](../../../accounts/requirements.md#accounts).
 
 > [!TIP]
 > Access the Team Foundation Server Configuration tool by launching Team Foundation Server Administration Console, choosing **Application Tier**, and then choosing **Configure Installed Features**.

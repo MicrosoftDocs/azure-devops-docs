@@ -426,7 +426,7 @@ change the directory for your Azure subscription to match the directory that's c
 	under **Settings**, select the Azure subscription that you previously found.
 	0.	Choose **Edit directory**.
 
-		<img alt="Change directory" src="../setup-admin/team-services/_img/manage-work-access/AzureSubscriptionEditDirectory.png" style="border: 1px solid #CCCCCC" />
+		<img alt="Change directory" src="../billing/_img/manage-work-access/azuresubscriptioneditdirectory.png" style="border: 1px solid #CCCCCC" />
 
 	0.	Change the subscription's current directory to the 
 	directory that's connected to your Team Services account.

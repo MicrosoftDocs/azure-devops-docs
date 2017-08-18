@@ -44,7 +44,7 @@ You can use the following procedures to save data that users most care about, su
 
 ### Save data stored on Team Foundation Server
 
-You can easily save data stored for a team project collection by [making a backup of the database](../setup-admin/tfs/admin/backup/config-backup-sched-plan.md). Or, you can use the same operations described earlier in [Save data stored on Visual Studio Team Services](#saveservice).
+You can easily save data stored for a team project collection by [making a backup of the database](../tfs-server/admin/backup/config-backup-sched-plan.md). Or, you can use the same operations described earlier in [Save data stored on Visual Studio Team Services](#saveservice).
 
 ## Q & A (for on-premises deployments only)
 
@@ -72,4 +72,4 @@ You can easily save data stored for a team project collection by [making a backu
 
     Review the information about the failure, and then try to delete the project again.
 
-    If partial data remains, you can also use the [TFSDeleteProject](../setup-admin/tfs/command-line/tfsdeleteproject-cmd.md) command line tool.
+    If partial data remains, you can also use the [TFSDeleteProject](../tfs-server/command-line/tfsdeleteproject-cmd.md) command line tool.

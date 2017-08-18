@@ -12,7 +12,7 @@ ms.date: 08/10/2017
 
 # Get started with Git from the command line
 
-This guide show you how to share your code in a Team Services Git repo using the command line.  If you don’t have a VSTS account, you can [sign up](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md) for one for free. Each account includes free, unlimited private Git repositories.
+This guide show you how to share your code in a Team Services Git repo using the command line.  If you don’t have a VSTS account, you can [sign up](../accounts/sign-up-for-visual-studio-team-services.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 The instructions below use the default bash shell used on Linux and Mac OS X, but the Git commands will work in any shell, including Git Bash from Git for Windows.
 

@@ -21,7 +21,7 @@ ms.date: 08/10/2017
 
 Share your Visual Studio solution in a new Team Services or Team Foundation Server Git repo.
 
-This article walks you through the steps to get a Visual Studio solution on your PC into a Git repo you can share with others, even if you don't have a Team Services account. If you don’t have a VSTS account, you can [sign up](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md) for one for free. Each account includes free, unlimited private Git repositories.
+This article walks you through the steps to get a Visual Studio solution on your PC into a Git repo you can share with others, even if you don't have a Team Services account. If you don’t have a VSTS account, you can [sign up](../accounts/sign-up-for-visual-studio-team-services.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 If you want to work with a Visual Studio solution hosted in an existing repo, see the [Git tutorial](gitquickstart.md).
 

@@ -6,4 +6,4 @@
 
 * TFS 2015 Update 3: `http://{your_server}:8080/tfs/{collection-name}/_admin/_AgentQueue`
 
-[The TFS URL doesn't work for me. How can I get the correct URL?](../../../../setup-admin/websitesettings.md)
+[The TFS URL doesn't work for me. How can I get the correct URL?](../../../../security/websitesettings.md)

@@ -207,7 +207,7 @@ may encounter the following known issues:
 * If you do not have relevant permission to create build and release definitions 
   in the Team Services account, the Continuous Delivery configuration will fail
   with an appropriate error message. See 
-  [Manage users and access in Visual Studio Team Services](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md).
+  [Manage users and access in Visual Studio Team Services](../../accounts/add-account-users-assign-access-levels-team-services.md).
   
 * Continuous Delivery supports only applications developed by using
   [ASP.NET](https://www.asp.net/) and [ASP.NET Core](https://www.microsoft.com/net/core#windows).
@@ -222,7 +222,7 @@ may encounter the following known issues:
   "No accounts found" message in this situation. To resolve this, you can
   configure your Visual Studio Team Services account to be backed by an
   Azure Active Directory (AAD) instance. For information on how to do this, see
-  [Team Services - Access with Azure Active Directory](../../setup-admin/team-services/manage-organization-access-for-your-account-vs.md).
+  [Team Services - Access with Azure Active Directory](../../accounts/manage-organization-access-for-your-account-vs.md).
 
 ## Q&A
 

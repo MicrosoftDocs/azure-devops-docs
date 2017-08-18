@@ -56,7 +56,7 @@ To create a pull request in Team Services:
 0. Create a pull request for the branch in Team Services.   
 ![Creating a pull request in Team Services](_img/createpullrequest.gif)   
 
-0. You can also create a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Team Project](../../setup-admin/team-services/connect-to-visual-studio-team-services.md) and select **New Pull Request** to open a pull request for your
+0. You can also create a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Team Project](../../accounts/connect-to-visual-studio-team-services.md) and select **New Pull Request** to open a pull request for your
 current branch:   
 ![Add a Pull Request from Visual Studio](_img/vs_pull_requests.png)   
 

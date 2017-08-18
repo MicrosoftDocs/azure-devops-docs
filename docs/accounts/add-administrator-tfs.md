@@ -115,7 +115,7 @@ Granting permissions directly in each program in your deployment of Team Foundat
 -   The **sysadmin** role in SQL Server on each server that hosts databases for Team Foundation Server.
 
 >**Important:**  
->To perform administrative tasks that involve database changes, such as creating team project collections, your user account requires administrative permissions, and the service account that the Team Foundation Background Job Agent uses also must have certain permissions granted to it. For more information, see [Service accounts and dependencies](../setup-admin/tfs/admin/service-accounts-dependencies-tfs.md).
+>To perform administrative tasks that involve database changes, such as creating team project collections, your user account requires administrative permissions, and the service account that the Team Foundation Background Job Agent uses also must have certain permissions granted to it. For more information, see [Service accounts and dependencies](../tfs-server/admin/service-accounts-dependencies-tfs.md).
 
 #### Q: What are the minimum permissions required for TFS to connect to SQL Server?
 
@@ -133,7 +133,7 @@ If the user  doesn't have these permissions and role memberships, TFS configurat
 
 #### Q: Can SQL Server permissions and role memberships be revoked after TFS is installed or upgraded?
 
-**A:** Yes, as long as TFS service accounts are allocated the required permissions and role memberships as described in [Service accounts and dependencies](../setup-admin/tfs/admin/service-accounts-dependencies-tfs.md). Administrators only require permissions and role memberships described above when they need to install, upgrade, or configure TFS.
+**A:** Yes, as long as TFS service accounts are allocated the required permissions and role memberships as described in [Service accounts and dependencies](../tfs-server/admin/service-accounts-dependencies-tfs.md). Administrators only require permissions and role memberships described above when they need to install, upgrade, or configure TFS.
 
 #### Q: Where can I find more information about each individual TFS permission?
 
@@ -210,7 +210,7 @@ in SQL Server Reporting Services.
 -   To add permissions for Reporting Services, you must be a member of the **Content Managers** group or the **Team Foundation Content Managers** group for Reporting Services.
 
 >**Important:**
->  To perform administrative tasks such as creating team project collections, your user account requires administrative permissions, and the service account that the Team Foundation Background Job Agent uses also must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](../setup-admin/tfs/admin/service-accounts-dependencies-tfs.md) and [Team Foundation Background Job Agent](../setup-admin/tfs/architecture/background-job-agent.md).
+>  To perform administrative tasks such as creating team project collections, your user account requires administrative permissions, and the service account that the Team Foundation Background Job Agent uses also must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](../tfs-server/admin/service-accounts-dependencies-tfs.md) and [Team Foundation Background Job Agent](../tfs-server/architecture/background-job-agent.md).
 
 #### Q: Where can I find information about each individual permission? 
 

@@ -76,7 +76,7 @@ The following example displays the myproj team project settings in the team proj
 
 #### Concepts
 
-[Managing File Types](../setup-admin/tfs/admin/manage-file-types.md)
+[Managing File Types](../tfs-server/admin/manage-file-types.md)
 
 #### Other Resources
 

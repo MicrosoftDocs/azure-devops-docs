@@ -2,7 +2,7 @@
 
 0. Before you start, if you haven't already:
 
- * [Sign up and create your team project](../../setup-admin/team-services/sign-up-for-visual-studio-team-services.md).
+ * [Sign up and create your team project](../../accounts/sign-up-for-visual-studio-team-services.md).
  * Install [Visual Studio 2013 or later](https://www.visualstudio.com/downloads).
 
 0. Go to your team project's page 

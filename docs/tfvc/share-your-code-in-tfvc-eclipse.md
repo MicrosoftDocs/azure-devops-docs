@@ -22,7 +22,7 @@ If your team project uses TFVC in your Visual Studio Team Services account, read
 <a name="tfvc"></a>
 ## Share using TFVC
 
-1. If you haven't yet, [Connect to Visual Studio Team Services using Eclipse](../setup-admin/team-services/connect-to-visual-studio-team-services.md#TEEConnect).
+1. If you haven't yet, [Connect to Visual Studio Team Services using Eclipse](../accounts/connect-to-visual-studio-team-services.md#TEEConnect).
 
 2. In Package Explorer, right-click the project and choose Team, Share Project.
 

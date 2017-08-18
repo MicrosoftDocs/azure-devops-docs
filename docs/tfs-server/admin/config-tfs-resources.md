@@ -31,7 +31,7 @@ through the administration console are indicated with this image: ![Team Foundat
 
 * **Application tier**
 
-  * [Add administration console users](../../setup-admin/add-administrator-tfs.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)
+  * [Add administration console users](../../accounts/add-administrator-tfs.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)
 
   * [Configure an SMTP server to support alerts and feedback requests](setup-customize-alerts.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)
 
@@ -59,9 +59,9 @@ through the administration console are indicated with this image: ![Team Foundat
 
 * **Team projects**
 
-  * [Create a team project](../../setup-admin/create-team-project.md)
+  * [Create a team project](../../accounts/create-team-project.md)
 
-  * [Delete a team project](../../setup-admin/delete-team-project.md#delete-team-proj) ![Team Foundation Server Administration Console](_img/admin-console-button.png)
+  * [Delete a team project](../../accounts/delete-team-project.md#delete-team-proj) ![Team Foundation Server Administration Console](_img/admin-console-button.png)
 
   * [Add reports to a team project](../../report/admin/add-reports-to-a-team-project.md)
 
@@ -102,7 +102,7 @@ you want to manage.
 
 1.  If you're not a local administrator on the server where the
     console is running and an administrator in TFS, [get those
-    permissions](../../setup-admin/add-administrator-tfs.md).
+    permissions](../../accounts/add-administrator-tfs.md).
 
 2.  To open the console:
 
@@ -288,17 +288,17 @@ like?](http://blogs.msdn.com/b/granth/archive/2013/10/08/what-does-a-well-mainta
 
 -   The installation guide includes details about these elements:
 
-    -   [system requirements](../../setup-admin/requirements.md)
+    -   [system requirements](../../accounts/requirements.md)
 
-    -   [SQL Server requirements](../../setup-admin/requirements.md#sql-server)
+    -   [SQL Server requirements](../../accounts/requirements.md#sql-server)
 
-    -   [Active Directory requirements](../../setup-admin/requirements.md)
+    -   [Active Directory requirements](../../accounts/requirements.md)
 
-    -   [SharePoint Products requirements](../../setup-admin/requirements.md#sharepoint)
+    -   [SharePoint Products requirements](../../accounts/requirements.md#sharepoint)
 
-    -   [account requirements](../../setup-admin/requirements.md#accounts)
+    -   [account requirements](../../accounts/requirements.md#accounts)
 
-    -   [language requirements](../../setup-admin/requirements.md#languages)
+    -   [language requirements](../../accounts/requirements.md#languages)
 
     -   [port requirements](../architecture/required-ports.md).
 

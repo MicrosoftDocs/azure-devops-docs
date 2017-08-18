@@ -151,10 +151,10 @@ You can perform many code development and administrative tasks using command lin
 <div style="float:left;width:180px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Administrative tools</p>
 <ul style="padding-left:5px">
- <li style="margin-bottom:2px">[TFSConfig](setup-admin/tfs/command-line/tfsconfig-cmd.md)</li>
- <li style="margin-bottom:2px">[TFSDeleteProject](setup-admin/tfs/command-line/tfsdeleteproject-cmd.md)</li>
- <li style="margin-bottom:2px">[TFSSecurity](setup-admin/tfs/command-line/tfssecurity-cmd.md)</li>
- <li style="margin-bottom:2px">[TFSServiceControl](setup-admin/tfs/command-line/tfsservicecontrol-cmd.md)</li>
+ <li style="margin-bottom:2px">[TFSConfig](tfs-server/command-line/tfsconfig-cmd.md)</li>
+ <li style="margin-bottom:2px">[TFSDeleteProject](tfs-server/command-line/tfsdeleteproject-cmd.md)</li>
+ <li style="margin-bottom:2px">[TFSSecurity](tfs-server/command-line/tfssecurity-cmd.md)</li>
+ <li style="margin-bottom:2px">[TFSServiceControl](tfs-server/command-line/tfsservicecontrol-cmd.md)</li>
  <li style="margin-bottom:2px">[witadmin (work item tracking)](https://msdn.microsoft.com/library/dd236914.aspx)</li>
 </ul>
 </div>

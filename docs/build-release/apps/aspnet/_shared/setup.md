@@ -4,7 +4,7 @@
 
 You'll need an account on Visual Studio Team Services. To create one, visit [Sign up for Team Services](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services).
 
-You can also use Team Foundation Server (TFS) if your organization requires the use of on-premises servers instead of Team Services, and we'll show some of those details. Also see [Get Started with TFS](../../../../setup-admin/tfs/install/get-started.md) for general information.
+You can also use Team Foundation Server (TFS) if your organization requires the use of on-premises servers instead of Team Services, and we'll show some of those details. Also see [Get Started with TFS](../../../../tfs-server/install/get-started.md) for general information.
 
 ### Set up local version control and a team project
 

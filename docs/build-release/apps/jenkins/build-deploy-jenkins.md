@@ -205,7 +205,7 @@ The **Azure Resource Group Deployment** task is used to create the deployment gr
 
 * **Enable prerequisites**: `Configure with Deployment Group agent`
 
-* **TFS/VSTS endpoint**: Choose **Add** and, in the "Add new Team Foundation Server/VSTS Connection" dialog, select **Token Based Authentication**. Enter a name of the connection and the URL of your team project. Then generate and enter a [Personal Access Token (PAT)]( https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) to authenticate the connection to your team project.
+* **TFS/VSTS endpoint**: Choose **Add** and, in the "Add new Team Foundation Server/VSTS Connection" dialog, select **Token Based Authentication**. Enter a name of the connection and the URL of your team project. Then generate and enter a [Personal Access Token (PAT)](../../../accounts/use-personal-access-tokens-to-authenticate.md) to authenticate the connection to your team project.
 
   ![Create a Personal Access Token](_img/tutorial-build-deploy-jenkins/create-a-pat.png)
 

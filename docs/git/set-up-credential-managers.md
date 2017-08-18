@@ -14,7 +14,7 @@ ms.date: 01/09/2017
 
 Git Credential Managers simplify authentication with your Team Services/TFS Git repos. Credential Managers let you use the same credentials that you use for the Team Services/TFS web interface and support multi-factor authentication through Microsoft Account (MSA) or Azure Active Directory (AAD). In addition to supporting multi-factor authentication with Team Services, the credential managers also provide support two-factor authentication with [GitHub repositories](https://help.github.com/articles/about-two-factor-authentication/).
 
-Team Services provides IDE support for MSA and AAD authentication through [Team Explorer in Visual Studio](../setup-admin/team-services/connect-to-visual-studio-team-services.md#vs), [IntelliJ and Android Studio with the Team Services Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), and [Eclipse (with the Team Explorer Everywhere plug-in)] (https://github.com/Microsoft/team-explorer-everywhere). If your environment doesn't have an integration available, configure your IDE  with a [Personal Access Token](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) or [SSH](use-ssh-keys-to-authenticate.md) to connect with your to your repos.
+Team Services provides IDE support for MSA and AAD authentication through [Team Explorer in Visual Studio](../accounts/connect-to-visual-studio-team-services.md#vs), [IntelliJ and Android Studio with the Team Services Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), and [Eclipse (with the Team Explorer Everywhere plug-in)] (https://github.com/Microsoft/team-explorer-everywhere). If your environment doesn't have an integration available, configure your IDE  with a [Personal Access Token](../accounts/use-personal-access-tokens-to-authenticate.md) or [SSH](use-ssh-keys-to-authenticate.md) to connect with your to your repos.
 
 ## Install the Git Credential Manager
  
@@ -38,7 +38,7 @@ When you connect to a Team Services Git repository from your Git client for the 
 
 ![Git Credential Manager prompting during Git pull](_img/gcm_login_prompt.gif)
    
-Once authenticated, the credential manager will create and cache a [personal access token](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) for future connections to the repo. Git commands that connect to this account will not prompt for user credentials until the token expires or is revoked through Team Services/TFS.
+Once authenticated, the credential manager will create and cache a [personal access token](../accounts/use-personal-access-tokens-to-authenticate.md) for future connections to the repo. Git commands that connect to this account will not prompt for user credentials until the token expires or is revoked through Team Services/TFS.
 
 ### Getting help 
 

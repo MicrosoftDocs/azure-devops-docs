@@ -12,7 +12,7 @@ ms.date: 08/10/2017
 # Import a Git repo
 #### Team Services | TFS 2017 Update 1
 
-This guide shows you how to import an existing Git repo from GitHub, BitBucket, GitLab, or other location into a new or empty existing repo in your Team Project. If you don’t have a VSTS account, you can [sign up](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md) for one for free. Each account includes free, unlimited private Git repositories.
+This guide shows you how to import an existing Git repo from GitHub, BitBucket, GitLab, or other location into a new or empty existing repo in your Team Project. If you don’t have a VSTS account, you can [sign up](../accounts/sign-up-for-visual-studio-team-services.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 ## Import into a new repo
 

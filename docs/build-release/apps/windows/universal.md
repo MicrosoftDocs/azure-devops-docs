@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 
 ## Upload your code
 
-Upload your code to [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs) or your [on-premises Team Foundation Server](../../../setup-admin/tfs/install/get-started.md). Either push your code to Git or check in your code to TFVC.
+Upload your code to [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs) or your [on-premises Team Foundation Server](../../../tfs-server/install/get-started.md). Either push your code to Git or check in your code to TFVC.
 
 You must also upload your .pfx certificate file. For example if you are working in a Git repo:
 

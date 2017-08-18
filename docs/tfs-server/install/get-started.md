@@ -20,7 +20,7 @@ ms.date: 08/04/2016
 You have many choices
 in how to deploy TFS, from putting everything on a single server all the way to using multiple 
 application tiers, multiple SQL instances, and a SharePoint farm. See our
-[hardware recommendations](../../setup-admin/requirements.md#hardware-recommendations) for more detailed help 
+[hardware recommendations](../../accounts/requirements.md#hardware-recommendations) for more detailed help 
 in determining the right type of deployment for your team. 
 
 * [Single server](single-server.md)
@@ -52,7 +52,7 @@ In TFS 2015 Update 2 and later, it supports all of the same features as TFS.
 TFS Express licensing limits it to five active users, however. 
 
 You might also want to consider using a free
-[Visual Studio Team Services account](../../setup-admin/team-services/sign-up-for-visual-studio-team-services.md)
+[Visual Studio Team Services account](../../accounts/sign-up-for-visual-studio-team-services.md)
 for personal use.
 Because it's in the cloud, you won't have to install SQL Server and TFS on your own hardware,
 and you won't need to do things like manage your own backups.

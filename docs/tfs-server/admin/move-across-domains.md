@@ -49,7 +49,7 @@ In order to successfully change the environment for TFS, you'll need to be an ad
     -   SQL Server: sysadmin  
     -   SharePoint Products: Farm Administrators (if your TFS deployment integrates with SharePoint Products)
 
-If you aren't a member of one or more of these groups, [get permissions now](../../setup-admin/add-administrator-tfs.md).
+If you aren't a member of one or more of these groups, [get permissions now](../../accounts/add-administrator-tfs.md).
 
 Now that you're sure you're using an account that has all the permissions needed, it's time to start checking accounts to see if there might be any conflicts with names or groups in the environment to which you'll be moving. We already know that accounts that are members of the local Administrators group can't be migrated, so let's remove those first.
 
@@ -169,7 +169,7 @@ If account names are the same in both domains, and the only difference is the do
         TFSConfig Accounts /change /AccountType:Proxy /account:AccountName /password:Password
 
     > [!NOTE]
-    > If you are moving to a non-trusted domain, you might also need to manually add users and groups to teams, projects, collections, and Team Foundation Server itself. For more information, see [Add users to team projects](../../setup-admin/add-users.md), [Set administrator permissions for team project collections](../../setup-admin/add-administrator-tfs.md), and [Set administrator permissions for Team Foundation Server](../../setup-admin/add-administrator-tfs.md).
+    > If you are moving to a non-trusted domain, you might also need to manually add users and groups to teams, projects, collections, and Team Foundation Server itself. For more information, see [Add users to team projects](../../accounts/add-users.md), [Set administrator permissions for team project collections](../../accounts/add-administrator-tfs.md), and [Set administrator permissions for Team Foundation Server](../../accounts/add-administrator-tfs.md).
 
 7.  If your deployment is integrated with Project Server, you might need to perform additional steps to configure the service accounts with the permissions required for operation. For more information, see [Assign permissions to support TFS-Project Server integration](https://msdn.microsoft.com/library/gg412653) and [ConfigureTFS-Project Server integration](https://msdn.microsoft.com/library/gg412647).
 

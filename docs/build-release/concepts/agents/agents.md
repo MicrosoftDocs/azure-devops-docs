@@ -103,7 +103,7 @@ In TFS 2015:
 
 * An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for OSX and Linux) are used to initiate communication with TFS. The agent uses these credentials to listening to the job queue.
 
-* The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](../../../setup-admin/websitesettings.md) between the agent and TFS.
+* The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](../../../security/websitesettings.md) between the agent and TFS.
 
 ### Communication to deploy to target servers
 
@@ -123,13 +123,13 @@ as shown in the following schematic.
 
 To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. Your agent can authenticate to Team Services or TFS using one of the following methods:
 
-* **Personal Access Token (PAT):** [Generate](../../../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with Team Services or TFS 2017. PAT is the only scheme that works with Team Services.
+* **Personal Access Token (PAT):** [Generate](../../../accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with Team Services or TFS 2017. PAT is the only scheme that works with Team Services.
 
 * **Integrated:** Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos.
 
 * **Negotiate:** Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos.
 
-* **Alternate:** Connect to TFS using Basic authentication. To use this method you'll first need to [configure HTTPS on TFS](../../../setup-admin/websitesettings.md).
+* **Alternate:** Connect to TFS using Basic authentication. To use this method you'll first need to [configure HTTPS on TFS](../../../security/websitesettings.md).
 
 <h2 id="account">Interactive vs. service</h2>
 

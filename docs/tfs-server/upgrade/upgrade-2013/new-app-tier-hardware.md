@@ -23,7 +23,7 @@ Illustration of migration upgrade
 
 Determine the service account you will use for Team Foundation Server. By default, TFS uses Network Service, but you can also use a domain account. In most cases, you should use the same account you used for the previous installation or consider using Network Service.
 
-For more information, see [requirements for Team Foundation Server](../../../setup-admin/requirements.md), or [Accounts required for installation of Team Foundation Server](setup-sql-server.md).
+For more information, see [requirements for Team Foundation Server](../../../accounts/requirements.md), or [Accounts required for installation of Team Foundation Server](setup-sql-server.md).
 
 ![](../../install/_img/ic646325.png) **Set up SQL Server**. You’re going to install all the SQL Server features that TFS requires on the same server where you’ll eventually run TFS.
 
@@ -62,7 +62,7 @@ For more information, see [Run the TFS Upgrade Wizard](../run-upgrade-wizard.md)
 ![](../../install/_img/ic612456.png)
 
 > [!TIP]
-> If you have Project Server added to TFS, this is the point where you should upgrade the TFS Extensions for Project Server. See the heading "Less-common upgrade tasks" for more information in [TFS upgrade requirements](../../../setup-admin/requirements.md)
+> If you have Project Server added to TFS, this is the point where you should upgrade the TFS Extensions for Project Server. See the heading "Less-common upgrade tasks" for more information in [TFS upgrade requirements](../../../accounts/requirements.md)
 
 ## Next Step: Set up a new build machine
 

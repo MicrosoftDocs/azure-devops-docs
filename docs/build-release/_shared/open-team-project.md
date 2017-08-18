@@ -4,4 +4,4 @@ Open your team project in your web browser:
 
 * On-premises TFS: `http://{your-server}:8080/tfs/DefaultCollection/{your-team-project}`
 
-[The TFS URL doesn't work for me. How can I get the correct URL?](../../setup-admin/websitesettings.md)
+[The TFS URL doesn't work for me. How can I get the correct URL?](../../security/websitesettings.md)

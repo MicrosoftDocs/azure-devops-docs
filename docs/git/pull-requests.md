@@ -13,7 +13,7 @@ ms.date: 08/17/2016
 
 #### Team Services | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
-Create pull requests to review and merge code in a [Git team project](../setup-admin/create-team-project.md).
+Create pull requests to review and merge code in a [Git team project](../accounts/create-team-project.md).
 Pull requests let your team give feedback on changes in feature branches before merging the code into the master branch.
 Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
@@ -63,7 +63,7 @@ Pick the branch you wish to have reviewed and the branch you want to merge the c
 
 Create pull requests directly from Visual Studio. 
 
-0. [Connect to your Team Project from Visual Studio](../setup-admin/team-services/connect-to-visual-studio-team-services.md#vs)
+0. [Connect to your Team Project from Visual Studio](../accounts/connect-to-visual-studio-team-services.md#vs)
 0. Open Team Explorer (select **View**, then **Team Explorer** or use the Ctrl+\, Ctrl+M hotkey)
 0. Select **Pull Requests** from the navigation drop-down menu or select the **Pull Requests** button.
 
@@ -90,7 +90,7 @@ Add reviewers to your pull request.
 
 0. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Reviewers** area.
 
-0. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Team Project, you'll need to [add them](../setup-admin/team-services/add-team-members-vs.md).
+0. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Team Project, you'll need to [add them](../accounts/add-team-members-vs.md).
 
 0. As you enter a name or email address, a list of matching users or groups will appear. Select the user or group from the list to add them as a reviewer.
 

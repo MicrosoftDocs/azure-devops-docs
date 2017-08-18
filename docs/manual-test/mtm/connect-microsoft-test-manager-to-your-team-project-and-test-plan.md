@@ -19,7 +19,7 @@ Use Microsoft Test Manager (MTM) to help you test the application you built. MTM
   
 1. If you don't have MTM, download and install [Microsoft Visual Studio Test Professional](https://www.visualstudio.com/downloads/).  
   
-   Don't have a team project? [Set up a team project](../../setup-admin/create-team-project.md)  
+   Don't have a team project? [Set up a team project](../../accounts/create-team-project.md)  
   
 1. Connect to TFS and choose your team project.  
   

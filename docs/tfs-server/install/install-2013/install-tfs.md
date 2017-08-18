@@ -44,20 +44,20 @@ Don’t confuse the multiple server installation with the robust scale-out featu
 
 ![Step 1](../_img/ic646324.png) Verify that the operating system and hardware meet the requirements for Team Foundation Server and all its prerequisites. You must use a 64-bit server if you install TFS on a server operating system. Determine the report reader account you will use for Team Foundation Server.
 
-For more information, see [System requirements for Team Foundation Server](../../../setup-admin/requirements.md), [Accounts required for installation of Team Foundation Server](../../../setup-admin/requirements.md#accounts).
+For more information, see [System requirements for Team Foundation Server](../../../accounts/requirements.md), [Accounts required for installation of Team Foundation Server](../../../accounts/requirements.md#accounts).
 
 ![Step 2](../_img/ic646325.png) Install a supported version of SQL Server. You must install these SQL Server features: Database Engine, Full-Text and Semantic Extractions for Search. To get HTML reports from your TFS team projects, add these features: Analysis Services, and Reporting Services – Native
 
 ![SQL R2 installation](../_img/ic665430.png)
-For more information, see: [SQL Server requirements for Team Foundation Server](../../../setup-admin/requirements.md#sql-server), [Manually install SQL Server for Team Foundation Server](../sql-server/install-sql-server.md)
+For more information, see: [SQL Server requirements for Team Foundation Server](../../../accounts/requirements.md#sql-server), [Manually install SQL Server for Team Foundation Server](../sql-server/install-sql-server.md)
 
 ![Step 3](../_img/ic646326.png) You have a lot of options for SharePoint. If you have SQL Server and TFS on running on the same server, your best alternative might be to install SharePoint on a different server to minimize competition for resources. If you know you want SharePoint Server, you should install and configure it before you install TFS. Remember that you can always skip SharePoint integration altogether by using the TFS advanced wizard. TFS doesn’t require SharePoint.
 
 ![Configure SharePoint Server](../_img/ic665433.png)
-For more information, see [SharePoint Products requirements for Team Foundation Server](../../../setup-admin/requirements.md#sharepoint), [Manually Install SharePoint products for Team Foundation Server](../sharepoint/install-sharepoint.md)
+For more information, see [SharePoint Products requirements for Team Foundation Server](../../../accounts/requirements.md#sharepoint), [Manually Install SharePoint products for Team Foundation Server](../sharepoint/install-sharepoint.md)
 
 > [!TIP]
-> You can also [verify](../sharepoint/verify-sharepoint.md) and use an existing SharePoint deployment that meets the [TFS requirements for SharePoint](../../../setup-admin/requirements.md#sharepoint). If you’re existing SharePoint is not on the same server as where you’ll install TFS, you’ll want to first install the TFS SharePoint extensions on the SharePoint site. See [How to: Install Remote SharePoint Products for Team Foundation Server](../sharepoint/setup-remote-sharepoint.md).
+> You can also [verify](../sharepoint/verify-sharepoint.md) and use an existing SharePoint deployment that meets the [TFS requirements for SharePoint](../../../accounts/requirements.md#sharepoint). If you’re existing SharePoint is not on the same server as where you’ll install TFS, you’ll want to first install the TFS SharePoint extensions on the SharePoint site. See [How to: Install Remote SharePoint Products for Team Foundation Server](../sharepoint/setup-remote-sharepoint.md).
 
 ![Step 4](../_img/ic646327.png) Run the Team Foundation Server install from the product DVD and then use one of the configuration wizards to configure your installation. Use the standard wizard if you have SQL Server on the default instance, and TFS will install SharePoint Foundation 2013 for you. For everything else, use the advanced wizard. See, “Why use the advanced wizard?” earlier.
 

@@ -6,8 +6,6 @@
     href: overview.md
 - name: Quickstarts
   items:
-  - name: Sign up for your account
-    href: sign-up-for-visual-studio-team-services.md
   - name: Try extensions for free
     href: try-additional-features-vs.md
   - name: Pay for VSTS users

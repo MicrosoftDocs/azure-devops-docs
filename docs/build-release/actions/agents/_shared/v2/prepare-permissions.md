@@ -39,8 +39,8 @@ Make sure the user account that you're going to use has permission to register t
 
 <li>Click the pool on the left side of the page and then click **Roles**.</li>
 
-<li>If the user account you're going to use is not shown, then get an administrator to add it. The administrator can be an agent pool administrator, a [Team Services account owner](../../../../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md#find-owner), or a [TFS server administrator](../../../../../setup-admin/add-administrator-tfs.md).
-If its a [deployment group](../../../../concepts/definitions/release/deployment-groups/index.md) agent, the administrator can be an deployment group administrator, a [Team Services account owner](../../../../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md#find-owner), or a [TFS server administrator](../../../../../setup-admin/add-administrator-tfs.md).
+<li>If the user account you're going to use is not shown, then get an administrator to add it. The administrator can be an agent pool administrator, a [Team Services account owner](../../../../../accounts/add-account-users-assign-access-levels-team-services.md#find-owner), or a [TFS server administrator](../../../../../accounts/add-administrator-tfs.md).
+If its a [deployment group](../../../../concepts/definitions/release/deployment-groups/index.md) agent, the administrator can be an deployment group administrator, a [Team Services account owner](../../../../../accounts/add-account-users-assign-access-levels-team-services.md#find-owner), or a [TFS server administrator](../../../../../accounts/add-administrator-tfs.md).
 You can add a user to the deployment group adminstrator role in the **Security** tab on the **Deployment Groups** page of the **Build &amp; Release** hub.</li>
 </ol>
 

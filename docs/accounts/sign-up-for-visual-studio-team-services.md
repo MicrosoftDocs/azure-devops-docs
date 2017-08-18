@@ -24,7 +24,7 @@ so your team can build often, test early, and ship faster.
 
 > Want to set up an on-premises server? 
 > [Get Team Foundation Server here](https://www.visualstudio.com/products/tfs-overview-vs), 
-> or learn [how to install and set up Team Foundation Server](../setup-admin/tfs/install/get-started.md). 
+> or learn [how to install and set up Team Foundation Server](../tfs-server/install/get-started.md). 
 
 
 [What users can join for free?  What do they get in Visual Studio Team Services?](#free-users)

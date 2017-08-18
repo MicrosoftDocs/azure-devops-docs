@@ -247,9 +247,9 @@ The method used to customize a team project depends on the process model you use
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Project collections (TFS) </p>
 <ul style="padding-left:20px">
- <li style="margin-bottom:2px">[Manage team project collections](../setup-admin/tfs/admin/manage-team-project-collections.md)</li>
- <li style="margin-bottom:2px">[Move a team project collection](../setup-admin/tfs/admin/move-project-collection.md)</li>
- <li style="margin-bottom:2px">[Split a team project collection](../setup-admin/tfs/admin/split-team-project-collection.md)</li>
+ <li style="margin-bottom:2px">[Manage team project collections](../tfs-server/admin/manage-team-project-collections.md)</li>
+ <li style="margin-bottom:2px">[Move a team project collection](../tfs-server/admin/move-project-collection.md)</li>
+ <li style="margin-bottom:2px">[Split a team project collection](../tfs-server/admin/split-team-project-collection.md)</li>
 </ul>
 </div>
 
@@ -259,8 +259,8 @@ The method used to customize a team project depends on the process model you use
 <ul style="padding-left:20px">
  <li style="margin-bottom:2px">[Add reports to a team project](../report/admin/add-reports-to-a-team-project.md)</li>
  <li style="margin-bottom:2px">[Manage the data warehouse and analysis services cube](../report/admin/manage-reports-data-warehouse-cube.md)</li>
- <li style="margin-bottom:2px">[Change the service account or password for SQL Server Reporting Services](../setup-admin/tfs/admin/change-service-account-or-password-sql-reporting.md)</li> 
- <li style="margin-bottom:2px">[Add SharePoint products to your deployment](../setup-admin/tfs/admin/add-sharepoint-to-tfs.md)</li>
+ <li style="margin-bottom:2px">[Change the service account or password for SQL Server Reporting Services](../tfs-server/admin/change-service-account-or-password-sql-reporting.md)</li> 
+ <li style="margin-bottom:2px">[Add SharePoint products to your deployment](../tfs-server/admin/add-sharepoint-to-tfs.md)</li>
  <li style="margin-bottom:2px">[Configure or add a project portal](https://msdn.microsoft.com/library/ms242865.aspx)</li>
  <li style="margin-bottom:2px">[Support rollup of work and other fields](https://msdn.microsoft.com/library/dn217871.aspx)</li>
 </ul>
@@ -285,10 +285,10 @@ The method used to customize a team project depends on the process model you use
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Command line tools</p>
 <ul style="padding-left:20px">
- <li style="margin-bottom:2px">[TFSConfig](../setup-admin/tfs/command-line/tfsconfig-cmd.md)</li>
- <li style="margin-bottom:2px">[TFSDeleteProject](../setup-admin/tfs/command-line/tfsdeleteproject-cmd.md)</li>
- <li style="margin-bottom:2px">[TFSSecurity](../setup-admin/tfs/command-line/tfssecurity-cmd.md)</li>
- <li style="margin-bottom:2px">[TFSServiceControl](../setup-admin/tfs/command-line/tfsservicecontrol-cmd.md)</li>
+ <li style="margin-bottom:2px">[TFSConfig](../tfs-server/command-line/tfsconfig-cmd.md)</li>
+ <li style="margin-bottom:2px">[TFSDeleteProject](../tfs-server/command-line/tfsdeleteproject-cmd.md)</li>
+ <li style="margin-bottom:2px">[TFSSecurity](../tfs-server/command-line/tfssecurity-cmd.md)</li>
+ <li style="margin-bottom:2px">[TFSServiceControl](../tfs-server/command-line/tfsservicecontrol-cmd.md)</li>
  <li style="margin-bottom:2px">[witadmin](https://msdn.microsoft.com/library/dd236914.aspx)</li>
 </ul>
 </div>
@@ -377,29 +377,29 @@ if you're already connected to an existing directory.
 
 To install the best configuration for your team, 
 [check the requirements](requirements.md) and 
-[overview](../setup-admin/tfs/install/get-started.md). 
+[overview](../tfs-server/install/get-started.md). 
 Or choose based on your team size: 
 
 - For smaller teams, 
-[single server](../setup-admin/tfs/install/single-server.md) is the simplest.
+[single server](../tfs-server/install/single-server.md) is the simplest.
 - For larger teams, consider a 
-[dual server](../setup-admin/tfs/install/dual-server.md) installation.
+[dual server](../tfs-server/install/dual-server.md) installation.
 - For the largest organizations, you can set up TFS across 
-[multiple servers with data and application tiers](../setup-admin/tfs/install/multiple-server.md).
+[multiple servers with data and application tiers](../tfs-server/install/multiple-server.md).
 	
 ### Upgrade TFS
 
 To understand factors that affect your upgrade's compexity, 
 [check the requirements](requirements.md) and 
-[review the upgrade process](../setup-admin/tfs/upgrade/get-started.md), 
+[review the upgrade process](../tfs-server/upgrade/get-started.md), 
 which supports upgrades from 2005 to the latest version. 
 
 Learn if a dry run makes sense for you, and weigh the benefits 
-and the costs to perform a [pre-production upgrade](../setup-admin/tfs/upgrade/pre-production.md). 
+and the costs to perform a [pre-production upgrade](../tfs-server/upgrade/pre-production.md). 
 
 When you're ready to upgrade, minimize downtime with the 
-[TfsPreUpgrade tool](../setup-admin/tfs/upgrade/pre-upgrade.md) - 
+[TfsPreUpgrade tool](../tfs-server/upgrade/pre-upgrade.md) - 
 especially for very large TFS collection databases (> 1 TB). 
-Follow these steps for [how to upgrade TFS](../setup-admin/tfs/upgrade/walkthrough.md), 
-and for [how to upgrade TFS Express](../setup-admin/tfs/upgrade/express.md), if you have that.
+Follow these steps for [how to upgrade TFS](../tfs-server/upgrade/walkthrough.md), 
+and for [how to upgrade TFS Express](../tfs-server/upgrade/express.md), if you have that.
 

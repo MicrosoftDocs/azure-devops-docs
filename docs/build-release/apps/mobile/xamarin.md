@@ -23,7 +23,7 @@ Xamarin enables you to develop a single solution and deploy it to Android, iOS, 
 
 ## Upload your code
 
-Upload your Xamarin solution to [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs) or your [on-premises Team Foundation Server](../../../setup-admin/tfs/install/get-started.md). Either push your code to Git or check in your code to TFVC.
+Upload your Xamarin solution to [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs) or your [on-premises Team Foundation Server](../../../tfs-server/install/get-started.md). Either push your code to Git or check in your code to TFVC.
 
 [I don't have a Xamarin solution yet but I'd like to try this out.](#new_solution)
 
@@ -418,7 +418,7 @@ On the [build tab](../../define/build.md):
 
 0. In Visual Studio, File -> New Project -> Visual C# -> Cross-Platform -> Blank App (Xamarin.Forms Portable).
 
-0. Upload your code to [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs) or your [on-premises Team Foundation Server](../../../setup-admin/tfs/install/get-started.md). Either push your code to Git or check in your code to TFVC.
+0. Upload your code to [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs) or your [on-premises Team Foundation Server](../../../tfs-server/install/get-started.md). Either push your code to Git or check in your code to TFVC.
 
 [Where can I learn more to get started with Xamarin?](https://developer.xamarin.com/guides/cross-platform/getting_started/)
 

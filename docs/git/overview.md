@@ -91,7 +91,7 @@ New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git a
 <div class="col-sm-6 col-md-6">
 
 <p>Connect your favorite development environment to Team Services to access your repos and manage your work.
-Team Services IDE integrations are available for [Visual Studio](../setup-admin/team-services/set-up-vs.md), 
+Team Services IDE integrations are available for [Visual Studio](../accounts/set-up-vs.md), 
 [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team), [Eclipse](http://java.visualstudio.com/Docs/tools/eclipse), 
 and [IntelliJ](https://java.visualstudio.com/Docs/tools/intelliJ).</p>
 

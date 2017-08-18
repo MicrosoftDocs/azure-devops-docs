@@ -13,7 +13,7 @@ ms.date: 08/10/2017
 #  Share your code in Git using Xcode
 #### Team Services | TFS 2015 & 2017
 
-This guide shows you how to share your Xcode projects in a Team Services Git repo. If you don’t have a VSTS account, you can [sign up](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md) for one for free. Each account includes free, unlimited private Git repositories.
+This guide shows you how to share your Xcode projects in a Team Services Git repo. If you don’t have a VSTS account, you can [sign up](../accounts/sign-up-for-visual-studio-team-services.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 ## Create a local Git repo for your Xcode project
 
@@ -65,7 +65,7 @@ If you have already created a repo for your Xcode project in Team Services, you 
 
   ![Push your Xcode project to Team Services](_img/share-your-code-in-git-xcode/xcodepushtomaster.png)
 
-0. If prompted, enter your Team Services credentials. For **Username**, enter your Team Services username. For **Password**, enter a [Personal Access Token](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) created for your user in Team Services. Select **OK**. 
+0. If prompted, enter your Team Services credentials. For **Username**, enter your Team Services username. For **Password**, enter a [Personal Access Token](../accounts/use-personal-access-tokens-to-authenticate.md) created for your user in Team Services. Select **OK**. 
 
   ![Authenticate using personal access tokens to Team Services](_img/share-your-code-in-git-xcode/xcodeauthentication.png)
 

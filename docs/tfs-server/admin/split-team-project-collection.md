@@ -56,7 +56,7 @@ To split a team project collection, follow these steps:
 
 **Before you begin**
 
-Make sure that you're an administrator on the servers and in SQL Server and TFS. If you're not an administrator, [get added as one](../../setup-admin/add-administrator-tfs.md).
+Make sure that you're an administrator on the servers and in SQL Server and TFS. If you're not an administrator, [get added as one](../../accounts/add-administrator-tfs.md).
 
 <a name="detach-the-coll"></a>
 ## 1-a. Detach the collection
@@ -280,7 +280,7 @@ After you have split a collection, you must update the permission groups for bot
 
 ### To configure administrators for both collections
 
--   For more information, see [Set administrator permissions for team project collections](../../setup-admin/add-administrator-tfs.md).
+-   For more information, see [Set administrator permissions for team project collections](../../accounts/add-administrator-tfs.md).
 
 <a name="config-users-projs"></a>
 ## 3-b. Configure users and groups for projects
@@ -291,7 +291,7 @@ After you configure administrators for both collections, either you or those adm
 
 ### To configure access for users to team projects
 
--   For more information, see [Add users to team projects](../../setup-admin/add-users.md) and [Add team members](../../work/scale/multiple-teams.md#add-team-members).
+-   For more information, see [Add users to team projects](../../accounts/add-users.md) and [Add team members](../../work/scale/multiple-teams.md#add-team-members).
 
 <a name="q-and-a"></a>
 ## Q & A

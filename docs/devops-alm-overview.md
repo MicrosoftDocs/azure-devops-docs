@@ -34,12 +34,12 @@ Whether you work in the cloud, on-premises, or a hybrid of each, you have a comp
 Choose Team Services when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to cloud load testing, cloud build servers, and application insights. [Small teams can start for free!](https://www.visualstudio.com/products/visual-studio-team-services-vs.aspx)  
 
 
-[![Sign up for Team Services](_img/overview/vsts-setup-1.png)](setup-admin/team-services/sign-up-for-visual-studio-team-services.md)[![Add team members](_img/overview/vsts-setup-3.png)](setup-admin/team-services/add-team-members-vs.md)[![Add code to repository](_img/overview/vsts-setup-4.png)](#add-code)   
+[![Sign up for Team Services](_img/overview/vsts-setup-1.png)](accounts/sign-up-for-visual-studio-team-services.md)[![Add team members](_img/overview/vsts-setup-3.png)](accounts/add-team-members-vs.md)[![Add code to repository](_img/overview/vsts-setup-4.png)](#add-code)   
 
 ### Work on-premises
 Choose on-premises TFS when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  
 
-[![Install TFS](_img/overview/tfs-setup-1.png)](setup-admin/tfs/install/single-server.md)[![Create a team project](_img/overview/tfs-setup-2.png)](setup-admin/create-team-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](setup-admin/add-users.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](setup-admin/tfs/admin/backup/back-up-restore-tfs.md)   
+[![Install TFS](_img/overview/tfs-setup-1.png)](tfs-server/install/single-server.md)[![Create a team project](_img/overview/tfs-setup-2.png)](accounts/create-team-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](accounts/add-users.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](tfs-server/admin/backup/back-up-restore-tfs.md)   
  
 <a id="add-code">  </a>
 ## Develop code using your IDE of choice 
@@ -326,7 +326,7 @@ With Marketplace extensions (currently in private preview), you can create first
 <li style="margin-bottom:2px">[Visual Studio Partner program](https://vsipprogram.com/About)</li>
 <li style="margin-bottom:2px">[Products and extensions for Visual Studio](https://visualstudiogallery.msdn.microsoft.com)</li>
 <li style="margin-bottom:2px">[Extension examples](https://github.com/Microsoft/vso-extension-samples)</li>
-<li style="margin-bottom:2px">[Client-object model SDK](setup-admin/tfs/architecture/extend-vs-for-alm.md) (TFS)</li>
+<li style="margin-bottom:2px">[Client-object model SDK](tfs-server/architecture/extend-vs-for-alm.md) (TFS)</li>
 </ul>
 </div>
 <div style="clear:left;font-size:100%">
@@ -385,9 +385,9 @@ Monitor your web and device apps to gain actionable insight to improve performan
 <div style="float:left;width:180px;margin:6px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Team Services</p>
 <ul style="padding-left:30px">
- <li style="margin-bottom:2px">[Set up Visual Studio](setup-admin/team-services/set-up-vs.md)</li>
- <li style="margin-bottom:2px">[Connect to Team Services](setup-admin/team-services/connect-to-visual-studio-team-services.md)</li>
- <li style="margin-bottom:2px">[Add team members](setup-admin/team-services/connect-to-visual-studio-team-services.md)</li>
+ <li style="margin-bottom:2px">[Set up Visual Studio](accounts/set-up-vs.md)</li>
+ <li style="margin-bottom:2px">[Connect to Team Services](accounts/connect-to-visual-studio-team-services.md)</li>
+ <li style="margin-bottom:2px">[Add team members](accounts/connect-to-visual-studio-team-services.md)</li>
  <li style="margin-bottom:2px">[Migrate from Team Foundation Server to Visual Studio Team Services](https://www.visualstudio.com/en-us/articles/adopting-vsts)</li>
 </ul>
 </div>
@@ -397,13 +397,13 @@ Monitor your web and device apps to gain actionable insight to improve performan
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">TFS</p>
 <p><i>Server</i></p>
 <ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Install and setup](setup-admin/tfs/install/get-started.md)</li>
-<li style="margin-bottom:2px">[Upgrade](setup-admin/tfs/upgrade/get-started.md)</li>
+<li style="margin-bottom:2px">[Install and setup](tfs-server/install/get-started.md)</li>
+<li style="margin-bottom:2px">[Upgrade](tfs-server/upgrade/get-started.md)</li>
 <li style="margin-bottom:2px">[Administer](accounts/account-management.md)</li>
 </ul>
 <p><i>Team project</i></p>
 <ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Create a team project](setup-admin/create-team-project.md)</li>
+<li style="margin-bottom:2px">[Create a team project](accounts/create-team-project.md)</li>
 <li style="margin-bottom:2px">[Update a team project](work/customize/configure-features-after-upgrade.md)</li>
 </ul>
 </div>

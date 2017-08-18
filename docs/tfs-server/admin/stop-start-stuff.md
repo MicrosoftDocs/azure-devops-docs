@@ -19,7 +19,7 @@ For operations such as backing up or restoring databases, you can run the [TFSSe
 
 ## To stop or start a service, application pool, or Web site
 
-1.  If you’re not a member of the **Administrators** group on the server that hosts the service, application pool, or Web site that you want to manage, get added now. See [Set administrator permissions for Team Foundation Server](../../setup-admin/add-administrator-tfs.md).
+1.  If you’re not a member of the **Administrators** group on the server that hosts the service, application pool, or Web site that you want to manage, get added now. See [Set administrator permissions for Team Foundation Server](../../accounts/add-administrator-tfs.md).
 
 2.  Log on to the server that hosts the service, application pool, or Web site.
 

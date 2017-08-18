@@ -96,7 +96,7 @@ For more information, see the Q & A section of [Set administrator permissions fo
 ### Remarks
 
 Before you can use the **Unattend** command to configure TFS,
-you must [create the service accounts](../../../setup-admin/requirements.md#accounts) that you will use as part of your deployment.
+you must [create the service accounts](../../../accounts/requirements.md#accounts) that you will use as part of your deployment.
 You must also install any prerequisite software for your chosen installation type. This includes TFS itself.
 You must install TFS but you don't have to configure it because the **Unattend** command will do that for you.
 

@@ -50,7 +50,7 @@ Team project collections serve as containers for security and administration in 
 physical database boundaries. They are also used to group related team projects. Finally, team projects 
 are used to encapsulate the assets of individual software projects, including source code, work items, 
 and so on. Learn more about these concepts at 
-[Manage team project collections](./setup-admin/tfs/admin/manage-team-project-collections.md). 
+[Manage team project collections](tfs-server/admin/manage-team-project-collections.md). 
 
 Team Services is slightly different. It currently only has two options for scoping and scaling 
 data&mdash;accounts and team projects. Accounts in Team Services get their own URLs (for example, ```https://contoso.visualstudio.com```) 
@@ -98,9 +98,9 @@ In TFS, you provide users access to deployments by adding Active Directory (AD) 
 As users are added and removed in AD they also gain and lose access to TFS. 
 
 In Team Services, you can use a similar mechanism to 
-[provide access to groups of users](./setup-admin/team-services/manage-azure-active-directory-groups-visual-studio-team-services.md) 
+[provide access to groups of users](accounts/manage-azure-active-directory-groups-visual-studio-team-services.md) 
 by adding Azure AD groups to TFS groups. If you use Microsoft Accounts instead of Azure AD, you will have to
-[add users](./setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) one at a time. 
+[add users](accounts/add-account-users-assign-access-levels-team-services.md) one at a time. 
 
 ### Manage user access
 
@@ -116,11 +116,11 @@ Visual Studio subscribers can have either Basic or Advanced access, based on the
 Note that TFS does not attempt to verify these licenses or enforce compliance. 
 
 In Team Services, you must 
-[assign an access level](setup-admin/team-services/add-account-users-assign-access-levels-team-services.md)
+[assign an access level](accounts/add-account-users-assign-access-levels-team-services.md)
 to each user in your account's Users hub. Team Services validates Visual Studio subscribers as 
 they sign in. You can assign Basic access for free to five users without Visual Studio subscriptions. 
 To give Basic access to more users, you'll need to set up billing for your account and
-[pay for more users](setup-admin/team-services/buy-basic-access-add-team-services-users.md). 
+[pay for more users](billing/buy-basic-access-add-team-services-users.md). 
 Otherwise, all other users get Stakeholder access.
 
 If you use Azure AD groups to provide access to groups of users, Team Services will assign appropriate 

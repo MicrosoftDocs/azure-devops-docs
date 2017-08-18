@@ -38,7 +38,7 @@ will be stored.
 
 ## View information or configure existing team project
 
-1.  If you haven't been added as a TFS administrator, [get added now](../../setup-admin/add-administrator-tfs.md).
+1.  If you haven't been added as a TFS administrator, [get added now](../../accounts/add-administrator-tfs.md).
 
     You must be a member of the local Administrators group on the server
     where you want to open the console, and either a member of the Team
@@ -62,9 +62,9 @@ will be stored.
 
     | Tab | Tasks |
     | --- | --- |
-    | **General** | <ul><li> **Start Collection** or **Stop Collection**: Start or stop a collection. Team projects become unavailable when you stop a collection. You typically stop a collection to support maintenance operations, such as moving or splitting a collection. </li><li> If the collection is started, only **Stop Collection** appears. If the collection is stopped, only *Start Collection** appears. Starting or stopping a collection can take several minutes to complete. You might need to choose **Refresh** to display the change in state. </li><li> **Edit settings**: Edit the collection's description or configuration. </li><li> **Group Membership**: Add or remove users or groups as members of a collection. To learn more, see [Set administrator permissions for team project collections](../../setup-admin/add-administrator-tfs.md#project-collection). </li><li> **Administer Security**: Manage the  permissions of a collection group. To learn more, see [Permission reference for Team Foundation Server](../../security/permissions.md). </li></ul> |
+    | **General** | <ul><li> **Start Collection** or **Stop Collection**: Start or stop a collection. Team projects become unavailable when you stop a collection. You typically stop a collection to support maintenance operations, such as moving or splitting a collection. </li><li> If the collection is started, only **Stop Collection** appears. If the collection is stopped, only *Start Collection** appears. Starting or stopping a collection can take several minutes to complete. You might need to choose **Refresh** to display the change in state. </li><li> **Edit settings**: Edit the collection's description or configuration. </li><li> **Group Membership**: Add or remove users or groups as members of a collection. To learn more, see [Set administrator permissions for team project collections](../../accounts/add-administrator-tfs.md#project-collection). </li><li> **Administer Security**: Manage the  permissions of a collection group. To learn more, see [Permission reference for Team Foundation Server](../../security/permissions.md). </li></ul> |
     | **Status** | View an activity log or rerun a job. |
-    | **Team Projects** | <ul><li> View the team projects defined for a collection and [Delete a team project](../../setup-admin/delete-team-project.md). </li><li> To learn more about team projects, see [Create a team project](../../setup-admin/create-team-project.md). </li></ul> |
+    | **Team Projects** | <ul><li> View the team projects defined for a collection and [Delete a team project](../../accounts/delete-team-project.md). </li><li> To learn more about team projects, see [Create a team project](../../accounts/create-team-project.md). </li></ul> |
     | **Reports Folder** | <ul><li> Configure the report server for use by the collection. </li><li>  When you edit the default folder location, the operation will fail if you type the path of a folder that does not exist on the server and you do not have permission to create a folder on that server. You must specify an existing folder if you do not have permissions to create folders on that server. </li><li> To remove the default location for report subfolders, choose **Clear Configuration**.  </li><li> Removing the configuration removes the reporting functionality for all existing and future team projects in the collection.  </li><li> This tab only appears when you've [added a report server to TFS](../../report/admin/add-a-report-server.md). </li></ul> |
     | **SharePoint Site** | <ul><li> View, configure, or remove the default root location for where team project portals are created. The **Create New Team  Project Wizard** creates team project portals at this location. </li><li> If the **SharePoint Web Application** list is empty, the application-tier hasn't been configured with any applications. </li><li> This tab only appears when you've configured the application-tier with SharePoint Products. See [Add SharePoint products to your deployment](add-sharepoint-to-tfs.md). </li></ul> |
 
@@ -74,7 +74,7 @@ will be stored.
 
 Before creating a team project collection, jump to this [section to learn more about the pros and cons of creating multiple team project collections](#pros_cons).
 
-1.  If you haven't been added as an administrator to TFS, [get added now](../../setup-admin/add-administrator-tfs.md).
+1.  If you haven't been added as an administrator to TFS, [get added now](../../accounts/add-administrator-tfs.md).
 
     You must be a member of the local Administrators group on the server
     where you want to open the console, and either a member of the Team

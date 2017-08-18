@@ -210,7 +210,7 @@ ms.date: 08/04/2016
     </div>
     <div class="col-sm-6 col-md-3 item">
       <div class="title">
-        <a href="setup-admin/tfs/index.md">Team Foundation Server</a>
+        <a href="tfs-server/index.md">Team Foundation Server</a>
         <div class="desc">
           Install, upgrade, and administer on-premises TFS.
         </div>

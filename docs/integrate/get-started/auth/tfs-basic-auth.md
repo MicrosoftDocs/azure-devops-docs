@@ -13,7 +13,7 @@ ms.date: 03/10/2017
 
 > [!IMPORTANT]
 > Basic authentication is not recommended.  Turning on IIS basic authentication causes various issues, and you should 
-> use [personal access tokens (PATs)](../../../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) instead.  For example, if you turn on IIS basic authentication, GIT command line will stop working.
+> use [personal access tokens (PATs)](../../../accounts/use-personal-access-tokens-to-authenticate.md) instead.  For example, if you turn on IIS basic authentication, GIT command line will stop working.
 
 
 ## If you know you want IIS basic authentication, then you'll need ...
@@ -30,7 +30,7 @@ npm i -g tfx-cli
 ## Configure TFS to use Basic Authentication
 
 > [!WARNING]
-> Basic authentication sends usernames and passwords in plaintext. You should consider [configuring TFS to use SSL](../../../setup-admin/tfs/admin/setup-secure-sockets-layer.md) in order to enable secure communication when using basic auth.
+> Basic authentication sends usernames and passwords in plaintext. You should consider [configuring TFS to use SSL](../../../tfs-server/admin/setup-secure-sockets-layer.md) in order to enable secure communication when using basic auth.
 
 
 

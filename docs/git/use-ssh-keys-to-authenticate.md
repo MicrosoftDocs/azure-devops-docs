@@ -13,7 +13,7 @@ ms.date: 08/04/2016
 #### Team Services | TFS 2015 Update 3 | TFS 2017
 
 Connect to your Git repos through SSH when you can't use the recommended [Git Credential Managers](set-up-credential-managers.md) or
-[Personal Access Tokens](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) to securely connect using HTTPS authentication.
+[Personal Access Tokens](../accounts/use-personal-access-tokens-to-authenticate.md) to securely connect using HTTPS authentication.
 
 > Visual Studio does not support connecting to Git repos via SSH.
 
