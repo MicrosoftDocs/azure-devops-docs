@@ -107,7 +107,7 @@ Responsible for account or collection-level settings. These include:
 - Customize work tracking processes (Team Services only) 
 - Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
 
-To get started, see [Set up Team Services or Team Foundation Server](setup-admin/account-administration.md). 
+To get started, see [Set up Team Services or Team Foundation Server](accounts/account-management.md). 
 
  
 ###TFS administrators
@@ -119,7 +119,7 @@ Responsible for installing, upgrading, and maintaining an on-premises TFS deploy
 - Build retention policies
 - Add and manage team project collections     
   
-To get started, see [Set up Team Services or Team Foundation Server](setup-admin/account-administration.md). 
+To get started, see [Set up Team Services or Team Foundation Server](accounts/account-management.md). 
 
 
 

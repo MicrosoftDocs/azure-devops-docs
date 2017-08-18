@@ -107,7 +107,7 @@ or change them later in Visual Studio options.
 
 ####	Next
 
-*	[Add users to your Team Services account](add-account-users-assign-access-levels-team-services.md)
+*	[Add users to your Team Services account](../accounts/team-services/add-account-users-assign-access-levels-team-services.md)
 
 *	Add code to [Git](../git/share-your-code-in-git-vs.md) 
 or [Team Foundation](../tfvc/share-your-code-in-tfvc-vs.md) version control

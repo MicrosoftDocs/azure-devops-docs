@@ -117,7 +117,7 @@ add your code, work items, or more users.
 
 #### Next steps  
 
-*	[Manage users and access](add-account-users-assign-access-levels-team-services.md)
+*	[Manage users and access](../accounts/team-services/add-account-users-assign-access-levels-team-services.md)
 
 *	Add code to Git or Team Foundation version control
 
@@ -232,7 +232,7 @@ add code, work items, or more users.
 
 #### Next steps 
 
-*	[Manage users and access](add-account-users-assign-access-levels-team-services.md) 
+*	[Manage users and access](../accounts/team-services/add-account-users-assign-access-levels-team-services.md) 
 
 *	Add code to Git or Team Foundation version control
 

@@ -92,7 +92,7 @@ reduce this number to zero (0).
 	</div>
 
 0.	Confirm your changes. Go back to your Team Services account to 
-[reassign access levels for your users, if necessary](add-account-users-assign-access-levels-team-services.md).
+[reassign access levels for your users, if necessary](../accounts/team-services/add-account-users-assign-access-levels-team-services.md).
 
 	![Reassign user access levels, if necesary](_img/buy-more-basic-access/confirm-updated-basic-access-purchase-vs-marketplace.png)
 

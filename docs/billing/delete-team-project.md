@@ -29,7 +29,7 @@ You can delete a team project from Visual Studio Team Services or from an on-pre
 
 	<img src="_img/delete-team-project-select-actions-menu.png" alt="Open the actions menu for a team project" style="border: 1px solid #CCCCCC;" />  
 
-    If you don’t see the actions icon ![actions icon image](../work/_img/icons/actions-icon.png), either you’re not accessing Team Services or you’re not a member of the Project Collection Administrators group. For on-premises team projects, [go to the next section](#tfs). Otherwise, go [here](add-administrator-tfs.md) to learn how to get added to the Project Collection Administrators group.
+    If you don’t see the actions icon ![actions icon image](../work/_img/icons/actions-icon.png), either you’re not accessing Team Services or you’re not a member of the Project Collection Administrators group. For on-premises team projects, [go to the next section](#tfs). Otherwise, go [here](../accounts/add-administrator-tfs.md) to learn how to get added to the Project Collection Administrators group.
 
 3.  You must type the name of the team project in order to initiate the delete operation. 
 
@@ -40,7 +40,7 @@ You can delete a team project from Visual Studio Team Services or from an on-pre
 
 Using the administration console, you can delete a team project from a team project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](../setup-admin/tfs/command-line/tfsdeleteproject-cmd.md) to delete all artifacts.
 
-1.  If you're not a member of one or more of the following administrator groups, [get those permissions now](add-administrator-tfs.md):
+1.  If you're not a member of one or more of the following administrator groups, [get those permissions now](../accounts/add-administrator-tfs.md):
 
     -   Team Foundation Administrators group (required).
 

@@ -115,7 +115,7 @@ where *ReportServer* represents the name of the server that is running SQL Serve
 
         ![Choose the role assignment for the user or group](_img/add-users-team-project/assign-rs-role.png)
 
-If you're a member of [Team Foundation Administrators](add-administrator-tfs.md),
+If you're a member of [Team Foundation Administrators](../accounts/add-administrator-tfs.md),
 you can verify what features are available for your users by default,
 and see whether any users are members of groups that have access outside of the default level.
 
@@ -157,8 +157,8 @@ see [Permission reference for Team Foundation Server](../security/permissions.md
 #### Q: How do I add someone as an administrator?
 
 A: You'll need to add that user to groups
-at the [project-collection level](add-administrator-tfs.md#project-collection)
-or at the [server-level](add-administrator-tfs.md).
+at the [project-collection level](../accounts/add-administrator-tfs.md#project-collection)
+or at the [server-level](../accounts/add-administrator-tfs.md).
 
 #### Q: Can I restrict access to a team project or to functional areas within a team project?
 

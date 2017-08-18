@@ -185,7 +185,7 @@ with the Microsoft account that you're using for the migration.
 
 0.	To check that you finished this task successfully, invite a user from the target directory 
 to your Team Services account. Confirm that they can sign in. Learn how to 
-[add users and assign access](add-account-users-assign-access-levels-team-services.md).
+[add users and assign access](../accounts/team-services/add-account-users-assign-access-levels-team-services.md).
 
 0.	Add the remaining users from the target directory to your Team Services account.
 

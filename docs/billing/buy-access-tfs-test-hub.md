@@ -54,7 +54,7 @@ if you don't have one already.
 0.	If you haven't already, sign in to your Team Services account 
 (```https://{youraccount}.visualstudio.com```). 
 
-0. [Add your users who need Basic access](add-account-users-assign-access-levels-team-services.md) 
+0. [Add your users who need Basic access](../accounts/team-services/add-account-users-assign-access-levels-team-services.md) 
 to your Team Services account so that you can track these users more easily.
 
 	Though these users will get invited to your Team Services account, 
@@ -88,7 +88,7 @@ for users who need Test hub access.
 0.	If you haven't already, sign in to your Team Services account 
 (```https://{youraccount}.visualstudio.com```). 
 
-0. [Add your users who need Basic access](add-account-users-assign-access-levels-team-services.md) 
+0. [Add your users who need Basic access](../accounts/team-services/add-account-users-assign-access-levels-team-services.md) 
 to your Team Services account and 
 [assign them the Test Manager extension](../marketplace/get-vsts-extensions.md#assign-extension) 
 so that you can track these users.

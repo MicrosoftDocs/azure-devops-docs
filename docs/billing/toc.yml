@@ -36,12 +36,20 @@
     href: buy-basic-access-add-team-services-users.md
   - name: How to buy build pipelines
     href: buy-more-build-vs.md
+  - name: How to buy load testing services
+    href: buy-load-testing-vs.md
   - name: Change number of paid users
     href: change-number-of-paid-users.md
   - name: Approve requests for Team Services extensions
     href: ../marketplace/approve-vsts-extensions.md
   - name: Uninstall or disable extensions
     href: ../marketplace/uninstall-disable-vsts-extensions.md
+  - name: Buy Visual Studio subscriptions
+    href: vs-subscriptions/buy-vs-subscriptions.md
+  - name: Manage Visual Studio subscriptions
+    href: vs-subscriptions/manage-vs-subscriptions.md
+  - name: View Visual Studio subscriptions
+    href: vs-subscriptions/view-vs-subscriptions.md
 - name: Concepts
   items:
   - name: TBD FROM TOPIC INTROS
@@ -60,8 +68,6 @@
   - name: "[Bar Q&A]"
 - name: Resources
   items:
-  - name: How to buy load testing services
-    href: buy-load-testing-vs.md
   - name: Migrate from TFS to Team Services Tutorial
     href: https://www.visualstudio.com/articles/migration-overview
   - name: Integrate with other services

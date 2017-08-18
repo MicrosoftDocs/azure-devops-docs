@@ -12,7 +12,7 @@ ms.date: 08/11/2017
 #Collaborate overview   
 <b>Team Services | TFS 2017 | TFS 2015  </b> 
 
-Here you'll find links to topics that will support your ability to collaborate with others in developing software working either in Team Services of an on-premises TFS. If you work as an administrator, you'll want to review the [admin guide](../setup-admin/account-administration.md) as well. 
+Here you'll find links to topics that will support your ability to collaborate with others in developing software working either in Team Services of an on-premises TFS. If you work as an administrator, you'll want to review the [admin guide](../accounts/account-management.md) as well. 
 
 
 > [!NOTE]  

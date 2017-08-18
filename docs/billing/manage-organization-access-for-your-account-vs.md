@@ -96,7 +96,7 @@ What if we can't use the same sign-in addresses?  You'll have to add these users
 or if they have existing work or school accounts, they can use those instead. Their work in Team Services 
 won't be lost and will stay with their current Team Services sign-in addresses.  You'll have to add them as new 
 users to Team Services, reassign access levels, and readd them to any team projects. They can migrate work that they want to keep, 
-except for their work history. Learn [how to manage Team Services account users](add-account-users-assign-access-levels-team-services.md).
+except for their work history. Learn [how to manage Team Services account users](../accounts/team-services/add-account-users-assign-access-levels-team-services.md).
 
 What happens to tools that use my credentials, like alternate credentials?  Alternate credentials won't work anymore for 
 tools that run outside a web browser, like the Git command line tool.  You'll have 
@@ -215,7 +215,7 @@ Learn [how to link work or school accounts to Visual Studio with MSDN subscripti
 
 #####  Next
 
-*   [Manage users and access](add-account-users-assign-access-levels-team-services.md)
+*   [Manage users and access](../accounts/team-services/add-account-users-assign-access-levels-team-services.md)
 *   [Manage access with Azure AD groups](manage-azure-active-directory-groups-visual-studio-team-services.md)
 
 <a name="DisconnectDirectory"></a>
@@ -285,7 +285,7 @@ Select your Team Services account.
 <a id="delete-directory-members"></a>
 ##  Delete users from Team Services connected to Azure AD
 
-You can just [delete the user from each Team Services account](add-account-users-assign-access-levels-team-services.md#delete-user) 
+You can just [delete the user from each Team Services account](../accounts/team-services/add-account-users-assign-access-levels-team-services.md#delete-user) 
 where you need to remove them. If you delete the user only from Azure AD, they may still show up in Team Services, but 
 they won't be able to sign in.
 
@@ -306,7 +306,7 @@ Team Services account.
 
 0.	Follow [these steps](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-delete-user-azure-portal) on the azure portal.
 
-0.  [Remove the user](add-account-users-assign-access-levels-team-services.md#delete-user) 
+0.  [Remove the user](../accounts/team-services/add-account-users-assign-access-levels-team-services.md#delete-user) 
 from your Team Services account and reassign their access levels, if necessary.
 
 ## Q&A

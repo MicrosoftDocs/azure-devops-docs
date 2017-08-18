@@ -30,7 +30,7 @@ Make sure that the new owner:
 (```https://{youraccount}.visualstudio.com```).
 
 *	Also has at least Basic access, not Stakeholder. 
-Learn [how to manage users and access](add-account-users-assign-access-levels-team-services.md). 
+Learn [how to manage users and access](../accounts/team-services/add-account-users-assign-access-levels-team-services.md). 
 
 *	Has signed in to your Team Services account, 
 created a Visual Studio profile, 
@@ -86,7 +86,7 @@ A: This might happen because:
 
 *	They're not in your Team Services account, 
 or they don't have account access. 
-Learn how to [add them to your account](add-account-users-assign-access-levels-team-services.md).
+Learn how to [add them to your account](../accounts/team-services/add-account-users-assign-access-levels-team-services.md).
 
 *	They haven't created a Visual Studio profile 
 and agreed to the Terms of Service.
