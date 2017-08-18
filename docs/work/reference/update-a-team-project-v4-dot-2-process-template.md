@@ -45,7 +45,7 @@ These procedures will only support access to new features available with TFS 201
   
 -   To grant permissions, you must be a member of the administrative group at the level of the group that you want to change. For example, if you want to change permissions for a group or user at the team project collection level, you must be a member of the **Project Collection Administrators** group for that collection, or your **Edit Collection-Level Information** permission must be set to **Allow**.  
   
-For more information, see [Permission reference](../../setup-admin/permissions.md).  
+For more information, see [Permission reference](../../security/permissions.md).  
   
 <a name="rename_system"></a> 
 ##1. Rename system fields  
@@ -257,7 +257,7 @@ Open a web portal and [determine if all features are available to you](../custom
   
  You can grant permissions by following the procedures that are indicated for the specific scope area:  
   
--   You can set project-level permissions or area node permissions from the administration page of web portal. See [Permissions reference](../../setup-admin/permissions.md) and [Customize your area or iteration paths](../customize/set-area-paths.md).  update-a-team-project-manually-to-support-test-management.md
+-   You can set project-level permissions or area node permissions from the administration page of web portal. See [Permissions reference](../../security/permissions.md) and [Customize your area or iteration paths](../customize/set-area-paths.md).  update-a-team-project-manually-to-support-test-management.md
   
 -   You can set project collection permissions from Team Explorer by choosing **Team, Team Project Collection Settings, Security**, by opening and using the administration console for Team Foundation, or by using the **TFSSecurity** and **tf** command-line tools. For more information, see [Add an administrator](../../setup-admin/add-administrator-tfs.md).  
   

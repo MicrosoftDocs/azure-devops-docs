@@ -12,9 +12,7 @@ ms.date: 08/15/2017
 
 # Get started using your Kanban board
 
-<!---
 <b>Team Services | TFS 2017</b> 
---> 
 
 Your Kanban board turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a backlog item, user story, or bug at that stage of work.  
 
@@ -34,7 +32,7 @@ If you don't see the team or team project you want, click the ![Team Services ic
 
 To contribute to the Kanban board, you must be a member of the Contributors group. To configure the Kanban board, you must be [added as a team administrator](../scale/add-team-administrator.md) or be a member of the Project Administrators group. If you're the account owner or creator of the team project, then you'll have these permissions.  
 
-If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) or [TFS](../../setup-admin/add-users.md).  
+If you don't have access to the team project, ask the account owner or project administrator to add you.  
 
  
 <!---
@@ -90,12 +88,16 @@ To add users to your team project, see these topics:
 
 ## Try this next 
 
-To get the full power of the Kanban board working for you, you'll want to configure it to match how your team works. Review [Kanban basics](kanban-basics.md) to map the flow of work and set WIP limits for your team.   
- 
+To get the full power of the Kanban board working for you, you'll want to configure it to map the flow of work and set WIP limits for your team.   
+
+> [!div class="nextstepaction"]
+> [Kanban basics](kanban-basics.md)  
+
+
+If you're new to Team Services or TFS and want to understand what you can customize, see [Customize your work tracking experience](../customize/customize-work.md). 
+
 > [!NOTE]  
 > Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs-boards-plans.md). To switch to the [product backlog](../backlogs/create-your-backlog.md), click **Backlog**. And, to switch to the [Task board](../scrum/task-board.md), click on the current iteration or other sprint of interest. If no sprints appear, see [Schedule sprints](../scrum/define-sprints.md). 
-
-if you're new to Team Services or TFS and want to understand what you can customize, see [Customize your work tracking experience](../customize/customize-work.md). 
 
 <!--- 
 Here are a few things you can do. See at a glance the estimated size of work for each item which displays at the bottom right of each card. Add items to your backlog in the first column. When priorities change, move items up and down within a column. And, as work completes in one stage, update the status of an item by dragging and dropping it to a downstream stage.

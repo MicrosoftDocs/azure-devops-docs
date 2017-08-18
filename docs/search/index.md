@@ -1,5 +1,5 @@
 ---
-title: Search code and work items in Visual Studio Team Services and Team Foundation Server
+title: Search
 description: Search with Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: A8EB4B0C-5656-4070-9A0F-488AB8288BBE
 ms.prod: vs-devops-alm
@@ -16,12 +16,16 @@ ms.date: 12/04/2016
 
 * [About Search](overview.md)
 
-## 5-minute Quickstarts
+## 5-Minute Quickstarts
 
 | | |
 | --- | --- |
 | ![icon](_img/_shared/codesearch-icon.png)<br />[Search code](code/code-search.md) | ![icon](_img/_shared/wisearch-icon.png)<br />[Search work items](workitem/work-item-search.md) |
 | | |
+
+## Videos
+
+<iframe src="https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/500/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe>
 
 ## How-to Guides
 
@@ -31,8 +35,7 @@ ms.date: 12/04/2016
 
 ## Resources
 
-| | |
-| --- | --- |
-| [Code Search Video](https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4) | [Code Search blog posts](https://social.msdn.microsoft.com/Search/en-US?query=code%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5) |
-| [Code Search on Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) | [Work Item Search blog posts](https://social.msdn.microsoft.com/Search/en-US?query=work%20item%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5) |
-| | |
+| | | |
+| --- | --- | --- |
+| [Code Search blog posts](https://social.msdn.microsoft.com/Search/en-US?query=code%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5) | [Code Search on Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) | [Work Item Search blog posts](https://social.msdn.microsoft.com/Search/en-US?query=work%20item%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5) |
+| | | |

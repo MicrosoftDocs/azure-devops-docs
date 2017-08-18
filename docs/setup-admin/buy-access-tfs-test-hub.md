@@ -38,7 +38,7 @@ which provides access to the full test capabilities in the Test hub for TFS and 
 [Follow these steps to pay monthly for TFS Test hub access](#test-hub).
 
 To learn more about requirements to access TFS or the Test hub, 
-see [Change access levels](../work/connect/change-access-levels.md). 
+see [Change access levels](../security/change-access-levels.md). 
 For more about TFS licensing, see the 
 [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
 
@@ -62,7 +62,7 @@ to your Team Services account so that you can track these users more easily.
 
 0.	As TFS administrator, 
 now [add these same users to TFS](add-users.md#add-users-team-project), 
-and [give them the necessary access](../work/connect/change-access-levels.md).
+and [give them the necessary access](../security/change-access-levels.md).
 
 	**Note** TFS doesn't detect what happens in Team Services 
 	so make sure to add these users to TFS and assign them the 
@@ -104,7 +104,7 @@ so that you can track these users.
 	the same credentials that they used to join your Team Services account.
 
 0.	As TFS administrator, [add these same users to TFS](add-users.md#add-users-team-project) 
-if necessary. [Give them Advanced access](../work/connect/change-access-levels.md) 
+if necessary. [Give them Advanced access](../security/change-access-levels.md) 
 so they can use the Test hub.
 
 	**Note** TFS doesn't detect what happens in Team Services 
@@ -129,7 +129,7 @@ like payment by credit card and more.
 
 ####Q:	Where can I learn more about TFS CALs and access levels for the Test hub?
 
-A: See [Change access levels](../work/connect/change-access-levels.md).
+A: See [Change access levels](../security/change-access-levels.md).
 
 ####Q:	Where can I find more Team Services extensions and more info about the Visual Studio Marketplace?
 

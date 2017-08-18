@@ -1,52 +1,52 @@
 - name: Load testing
+  href: index.md
+- name: Overview
   items:
-  - name: Overview
-    items:
-    - name: About load testing
-      href: overview.md
-  - name: Quickstarts
-    items:
-    - name: Load test with Visual Studio
-      href: getting-started-with-performance-testing.md
-    - name: Load test with VSTS
-      href: get-started-simple-cloud-load-test.md
-    - name: Load test with Azure portal
-      href: app-service-web-app-performance-test.md
-    - name: View and compare results
-      href: performance-reports.md
-  - name: Tutorials
-    items:
-    - name: Run load tests before release
-      href: run-performance-tests-app-before-release.md
-  - name: How-to Guides
-    items:
-    - name: Add app performance data
-      href: get-performance-data-for-load-tests.md
-    - name: Run Apache JMeter load tests
-      href: get-started-jmeter-test.md
-    - name: Record and replay tests
-      href: record-and-replay-cloud-load-tests.md
-  - name: Troubleshooting
-    items:
-    - name: VSTS connectivity
-      href: reference-qa.md#qaconnectts
-    - name: Visual Studio connectivity
-      href: reference-qa.md#troubleshooting
-  - name: Reference
-    items:
-    - name: "Q & A"
-      href: reference-qa.md
-  - name: Resources
-    items:
-    - name: Edit load tests
-      href: https://msdn.microsoft.com/library/ff406975%28v=vs.140%29.aspx
-    - name: Distribute load tests
-      href: https://msdn.microsoft.com/library/dd728093%28v=vs.140%29.aspx
-    - name: Analyze load test results
-      href: https://msdn.microsoft.com/library/ee923686%28v=vs.140%29.aspx
-    - name: Fix undetectable parameters
-      href: https://msdn.microsoft.com/library/ff460245%28v=vs.140%29.aspx
-    - name: "Create custom code & plug-ins"
-      href: https://msdn.microsoft.com/library/ee923683%28v=vs.140%29.aspx
-    - name: Posts on the ALM blog
-      href: https://social.msdn.microsoft.com/Search/en-US?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
+  - name: About load testing
+    href: overview.md
+- name: Quickstarts
+  items:
+  - name: Load test with Visual Studio
+    href: getting-started-with-performance-testing.md
+  - name: Load test with VSTS
+    href: get-started-simple-cloud-load-test.md
+  - name: Load test with Azure portal
+    href: app-service-web-app-performance-test.md
+  - name: View and compare results
+    href: performance-reports.md
+- name: Tutorials
+  items:
+  - name: Run load tests before release
+    href: run-performance-tests-app-before-release.md
+- name: How-to Guides
+  items:
+  - name: Add app performance data
+    href: get-performance-data-for-load-tests.md
+  - name: Run Apache JMeter load tests
+    href: get-started-jmeter-test.md
+  - name: Record and replay tests
+    href: record-and-replay-cloud-load-tests.md
+- name: Troubleshooting
+  items:
+  - name: VSTS connectivity
+    href: reference-qa.md#qaconnectts
+  - name: Visual Studio connectivity
+    href: reference-qa.md#troubleshooting
+- name: Reference
+  items:
+  - name: "Q & A"
+    href: reference-qa.md
+- name: Resources
+  items:
+  - name: Edit load tests
+    href: https://msdn.microsoft.com/library/ff406975%28v=vs.140%29.aspx
+  - name: Distribute load tests
+    href: https://msdn.microsoft.com/library/dd728093%28v=vs.140%29.aspx
+  - name: Analyze load test results
+    href: https://msdn.microsoft.com/library/ee923686%28v=vs.140%29.aspx
+  - name: Fix undetectable parameters
+    href: https://msdn.microsoft.com/library/ff460245%28v=vs.140%29.aspx
+  - name: "Create custom code & plug-ins"
+    href: https://msdn.microsoft.com/library/ee923683%28v=vs.140%29.aspx
+  - name: Posts on the ALM blog
+    href: https://social.msdn.microsoft.com/Search/en-US?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4

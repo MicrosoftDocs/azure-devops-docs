@@ -34,7 +34,7 @@ Members of the Project Administrators groups can create and administer team room
 
 	![Team room tile on team project home page](_img/ALM_CT_TeamroomTile.png) 
 	
-	If you don't see the room tile, [(Visual Studio Team Services) ask your account administrator to grant you a Basic license](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) or [(on-premises TFS) request Basic access from your TFS administrator](../work/connect/change-access-levels.md).  
+	If you don't see the room tile, [(Visual Studio Team Services) ask your account administrator to grant you a Basic license](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) or [(on-premises TFS) request Basic access from your TFS administrator](../security/change-access-levels.md).  
 
 	If you can't enter the room, get added as a member: [(Visual Studio Team Services) Add team members](../setup-admin/team-services/add-team-members-vs.md) or [(on-premises TFS) Add team members](../work/scale/multiple-teams.md#add-team-members).
 

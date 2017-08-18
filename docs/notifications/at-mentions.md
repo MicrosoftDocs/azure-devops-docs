@@ -11,7 +11,7 @@ ms.date: 08/11/2017
 ---
 
 
-# Use @mentions to further discussion
+# Use &#64;mentions to further discussion
 **Team Services | TFS 2017 | TFS 2015.2**
 
 The **@mention** control allows you to quickly pull someone into a discussion.  The **#ID** control quickly links the object you're working in to a work item based on its ID.

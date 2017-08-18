@@ -39,7 +39,7 @@ To open the Security dialog, click **More>Security** on the wiki home page.
  
 <img src="_img/wiki/wiki-open-security.png" alt="Wiki, open security" style="border: 1px solid #CCCCCC;" />  
 
-For definitions of each repository permission, see [Git repository permissions](../setup-admin/permissions.md#git-repository).
+For definitions of each repository permission, see [Git repository permissions](../security/permissions.md#git-repository).
 
 <img src="_img/wiki/security-dialog.png" alt="Wiki security dialog" style="border: 1px solid #CCCCCC;" />  
 

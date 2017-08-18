@@ -14,7 +14,7 @@ ms.date: 12/1/2016
 
 In TFS 2017 Update 1 (and VSTS), Git repository permissions have changed.
 For those customers using previous versions of TFS, here are the old permissions.
-Those using TFS 2017 Update 1 or VSTS should see the [latest list of permissions](permissions.md#git-repository).
+Those using TFS 2017 Update 1 or VSTS should see the [latest list of permissions](../security/permissions.md#git-repository).
 
 These permissions appear only for a team project including a Git repository.
 

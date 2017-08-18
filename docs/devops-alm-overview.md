@@ -399,7 +399,7 @@ Monitor your web and device apps to gain actionable insight to improve performan
 <ul style="padding-left:30px">
 <li style="margin-bottom:2px">[Install and setup](setup-admin/tfs/install/get-started.md)</li>
 <li style="margin-bottom:2px">[Upgrade](setup-admin/tfs/upgrade/get-started.md)</li>
-<li style="margin-bottom:2px">[Administer](setup-admin/account-administration.md)</li>
+<li style="margin-bottom:2px">[Administer](accounts/account-management.md)</li>
 </ul>
 <p><i>Team project</i></p>
 <ul style="padding-left:30px">

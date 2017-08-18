@@ -33,7 +33,7 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer’
 ![Open a command prompt to a repo from inside Visaul Studio](_img/command-prompt/open_cmd_prompt_repo_vs.png)
 
 > [!IMPORTANT]
-> Some commands require having [specific Git permissions](../setup-admin/permissions.md#git-repository) in Team Services to complete.
+> Some commands require having [specific Git permissions](../security/set-git-tfvc-repository-permissions.md#git-repository) in Team Services to complete.
 
 ## Repos
 

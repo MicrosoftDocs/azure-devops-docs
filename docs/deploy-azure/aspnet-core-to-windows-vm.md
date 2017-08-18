@@ -29,8 +29,9 @@ Your code changes automatically appear on your site:
 
 ![Screenshot showing ASP.NET Core web app](_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
-[!INCLUDE [include](_shared/prerequisites.md)]
+## Prerequisites
 
+[!INCLUDE [include](../build-release/_shared/ci-cd-prerequisites.md)]
 * Have a Windows virtual machine that has a default web site running in IIS. See [Create a Windows virtual machine with the Azure CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-cli) for instructions to create a virtual machine in Azure, to install IIS, and to obtain its `publicIpAddress`.
 
 ## Prepare the Windows VM
@@ -60,37 +61,29 @@ When `net start w3svc` appears, press **Enter** to run it.
 
 [!INCLUDE [temp](_shared/create-deployment-group.md)]
 
-[!INCLUDE [temp](_shared/import-code-aspnet-core.md)]
+## Import code for sample app into VSTS
 
-[//]: # (TODO)
+[!INCLUDE [include](../build-release/apps/aspnet/ci/_shared/import-code-aspnet-core-vsts.md)]
 
-[//]: # (TODO: Restore use of includes when we get support for using them in a list.)
-
-[//]: # (TODO: [!INCLUDE [temp](_shared/set-up-ci-1.md])
-
-[//]: # (TODO: In the right panel, select **ASP.NET Core**, and then click **Apply**.)
-
-[//]: # (TODO: ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
-
-[//]: # (TODO: [!INCLUDE [temp](_shared/set-up-ci-2.md])
-
-[//]: # (TODO: [!INCLUDE [temp](_shared/set-up-ci-3.md])
-
-[//]: # (TODO)
+[//]: # (TODO: we want factoring of include like above so we can reuse stock fragments that appear in many many places)
 
 ## Set up continuous integration
 
-Continuous Integration (CI) is the process of automating the build and testing of code every time a team member commits changes to version control. Here you'll create a CI build definition that helps team keep the master branch clean.
+[!INCLUDE [include](../build-release/_shared/ci-quickstart-intro.md)]
+
+[//]: # (TODO: Restore use of includes when we get support for using them in a list.)
+
+[//]: # (TODO: [!INCLUDE [include](../build-release/apps/aspnet/ci/_shared/create-aspnet-core-build-team-services.md])
 
 1. On the **Files** tab of the **Code** hub, click **Set up build**.
 
- ![Screenshot showing button to set up build for a repository](_shared/_img/set-up-first-build-from-code-hub.png)
+ ![Screenshot showing button to set up build for a repository](../build-release/apps/aspnet/ci/_shared/_img/set-up-first-build-from-code-hub.png)
 
  You are taken to the **Build & Release** hub in VSTS and asked to **Choose a template**.
 
 1. In the right panel, click **ASP.NET Core**, and then click **Apply**.
 
- ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
+ ![Screenshot showing dotnet core template](../build-release/apps/aspnet/ci/_shared/_img/apply-aspnet-core-build-template.png)
 
  You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time check in code.
 

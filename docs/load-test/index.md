@@ -1,6 +1,6 @@
 ---
-title: Load Testing with Visual Studio and Visual Studio Team Services
-description: Load Testing index
+title: Load Testing
+description: Load Testing with Visual Studio and Visual Studio Team Services (VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
 ms.assetid: C5C81ACE-0BBA-4D32-9CC9-28CF5C5865A6
@@ -9,7 +9,7 @@ ms.author: ahomer
 ms.date: 08/12/2016
 ---
 
-# Load testing
+# Load Testing
 
 Load test your app with hundreds of thousands of users using Visual Studio Team Services (VSTS).
 
@@ -17,7 +17,7 @@ Load test your app with hundreds of thousands of users using Visual Studio Team 
 
 * [About load testing](overview.md)
 
-## 5-minute Quickstarts
+## 5-Minute Quickstarts
 
 Load test from your preferred UI, and compare the results.
 
@@ -25,6 +25,14 @@ Load test from your preferred UI, and compare the results.
 | --- | --- |
 | ![icon](_img/visualstudio-icon.png)<br />[Load test with Visual Studio](getting-started-with-performance-testing.md) | ![icon](_img/vsts-icon.png)<br />[Load test with VSTS](get-started-simple-cloud-load-test.md) |
 | ![icon](_img/azure-icon.png)<br />[Load test with Azure portal](app-service-web-app-performance-test.md) | ![icon](_img/reviewresults-icon.png)<br />[View and compare results](performance-reports.md) |
+| | |
+
+## Videos
+
+| | |
+| --- | --- |
+| <iframe src="https://channel9.msdn.com/Events/Ignite/New-Zealand-2016/M379/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Blogs/Developer-Support-Series-PGI-Sessions/Developer-Support-Series-Cloud-Load-Testing/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Events/TechDays/Techdays-2016-The-Netherlands/Cloud-Based-Load-Testing-of-web-applications-with-Visual-Studio-2015/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Shows/Cloud+Cover/Episode-213-Azure-App-Service-Best-Practices-for-Large-Scale-Applications/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
 | | |
 
 ## Step-by-Step Tutorials

@@ -17,7 +17,7 @@ As roles and responsibilities change in your team, you might need to
 change the permission levels for individual team members, or for the
 team as a whole. Permissions are different than access levels. If you're
 just trying to give someone access to a product backlog or the provide
-feedback features, you'll want to [change access levels](../../work/connect/change-access-levels.md), not
+feedback features, you'll want to [change access levels](../../security/change-access-levels.md), not
 permissions.
 
 ## A few things to know about permissions in TFS

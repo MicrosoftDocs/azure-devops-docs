@@ -9,8 +9,7 @@ ms.author: kaelli
 ms.date: 04/03/2017
 ---
 
-
-#Split columns
+# Split columns
 
 <b>Team Services | TFS 2017 | TFS 2015 </b>
 

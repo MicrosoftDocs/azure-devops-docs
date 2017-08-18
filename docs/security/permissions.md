@@ -47,7 +47,7 @@ To learn more about inheritance, see [About permissions.md](about-permissions.md
 
 > [!NOTE]  
 > Certain features are only available to users who have the appropriate licensing level for those features. Access to those features is not controlled by permissions
-but by membership in an access level. To learn more, see [Access levels](access-levels.md). <!--- Manage users and access (Team Services)](../accounts/team-services/add-account-users-assign-access-levels-team-services.md) or [Change access levels (TFS)](../work/connect/change-access-levels.md). --> 
+but by membership in an access level. To learn more, see [Access levels](access-levels.md). <!--- Manage users and access (Team Services)](../accounts/team-services/add-account-users-assign-access-levels-team-services.md) or [Change access levels (TFS)](change-access-levels.md). --> 
 
 
 ## Groups
@@ -1034,7 +1034,7 @@ Rename Repository
 
 >[!NOTE] 
 >These permissions have changed in TFS 2017 Update 1 and VSTS.
->If you are using an earlier version of TFS, see the [previous list of permissions](../accounts/git-permissions-before-2017.md).
+>If you are using an earlier version of TFS, see the [previous list of permissions](git-permissions-before-2017.md).
 
 You manage the security of each Git repository or branch from the [web portal](../git/branch-permissions.md) or using the [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a team project that's been configured with a Git repository). You can manage these permissions for each Git repository.
 
@@ -1556,7 +1556,7 @@ You manage query and query folder permissions through the [web portal](../work/t
 
 Consider granting the Contribute permissions to users or groups that require the abilityto create and share work item queries for the team project. To learn more, see [Set permissions on queries](../work/track/set-query-permissions.md).
 
-> To create query charts [you need Basic access](../work/connect/change-access-levels.md).
+> To create query charts [you need Basic access](change-access-levels.md).
 
 <table valign="top" width="100%">
 <tbody valign="top">

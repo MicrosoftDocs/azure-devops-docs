@@ -1,6 +1,6 @@
 ---
 ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
-title: Deploy your Web Deploy package to IIS servers
+title: CD to an IIS Deployment Group
 description: Example of deploying an ASP.NET or Node Web Deploy package to IIS servers using Deployment Groups in Release Management in Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
@@ -9,15 +9,11 @@ ms.author: ahomer
 ms.date: 01/02/2017
 ---
 
-# Deploy your Web Deploy package to IIS servers
-
-> This is a preview feature that is available to only some accounts in VSTS.
+# CD to an IIS Deployment Group
 
 Continuous deployment means starting an automated deployment process whenever a new successful build is available. Here we'll show you how to set up continuous deployment of your ASP.NET or Node app to one or more IIS servers using Release Management.
 
-## Get set up
-
-### Begin with a CI build
+## Prerequisites
 
 Before you begin, you'll need a CI build that publishes your Web Deploy package. To set up CI for your specific type of app, see:
 
@@ -37,7 +33,7 @@ If you are deploying a Node application to IIS target servers, follow the instru
 
 In this example, we will deploy to the Default Web Site on each of the servers. If you need to deploy to another website, make sure you configure this as well.
 
-### Deployment group
+## Create a Deployment Group
 
 Carry out the following steps in your VSTS account to create a Deployment Group consisting of the target IIS servers.
 
@@ -121,7 +117,7 @@ You're now ready to create a release, which means to start the process of runnin
 
 1. After the release is complete, navigate to your site running on the IIS servers, and verify its contents.
 
-## Next
+## Next steps
 
 ### Dynamically create and remove a deployment group
 
@@ -174,13 +170,3 @@ To deploy a database with your app:
    - **Machine tags**: `database`<p />
    
    Then add a **SQL Server Database Deploy** task to this phase.
-
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
-
-<!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

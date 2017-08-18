@@ -22,7 +22,7 @@ This topic provides a roadmap to support you in quickly coming up to speed on th
 
 ##Contributor roles  
 
-Team members are contributors who have access to the code base, work item tracking, Agile tools, build definitions, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through the [permission management](setup-admin/permissions.md).   
+Team members are contributors who have access to the code base, work item tracking, Agile tools, build definitions, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through the [permission management](security/permissions.md).   
 
 ### Software developers 
 Developers use Visual Studio or other [tools](tools.md) to develop their applications. They then check in their changes to a Git or TFVC repository hosted in Team Services or TFS. From the web portal or supported IDE, they can view repositories, check history, and more. 
@@ -93,7 +93,7 @@ To get started, see [Manage team assets](work/scale/manage-team-assets.md).
 ###Project administrators
 Responsible for project level settings, including: 
 - [Area paths](work/customize/set-area-paths.md) and [Iteration paths](work/customize/set-iteration-paths-sprints.md)
-- [Project permissions and repository security](setup-admin/permissions.md)
+- [Project permissions and repository security](security/permissions.md)
 - [Customize work tracking objects (TFS only)](work/customize/customize-work.md) 
 - [Build agents, pools, and service endpoints](build-release/overview.md) 
 - [Test](manual-test/getting-started/how-long-to-keep-test-results.md) and [release](build-release/concepts/policies/retention.md) retention policies 
@@ -107,7 +107,7 @@ Responsible for account or collection-level settings. These include:
 - Customize work tracking processes (Team Services only) 
 - Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
 
-To get started, see [Set up Team Services or Team Foundation Server](setup-admin/account-administration.md). 
+To get started, see [Set up Team Services or Team Foundation Server](accounts/account-management.md). 
 
  
 ###TFS administrators
@@ -119,7 +119,7 @@ Responsible for installing, upgrading, and maintaining an on-premises TFS deploy
 - Build retention policies
 - Add and manage team project collections     
   
-To get started, see [Set up Team Services or Team Foundation Server](setup-admin/account-administration.md). 
+To get started, see [Set up Team Services or Team Foundation Server](accounts/account-management.md). 
 
 
 

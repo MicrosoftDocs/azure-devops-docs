@@ -15,7 +15,7 @@ ms.date: 08/10/2016
 
 Discards one or more pending changes to files or folders.
 
-**Requirements:** See [Pernission reference for Team Foundation Server](../setup-admin/permissions.md).
+**Requirements:** See [Permissions and groups reference](../security/permissions.md).
 
     tf undo [/workspace:workspacename[;workspaceowner]]
     [/recursive] itemspec [/noprompt] [/login:username,[password]]

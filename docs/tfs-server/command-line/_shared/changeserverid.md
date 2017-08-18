@@ -50,7 +50,7 @@ Although you would not typically use this command in daily operations, you might
 
 ### Required permissions
 
-To use the **ChangeServerID** command, you must be a member of the Team Foundation Administrators security group and a member of the sysadmin security role for all SQL Server instances that Team Foundation Server uses. For more information, see [Permission reference for Team Foundation](../../../setup-admin/permissions.md).
+To use the **ChangeServerID** command, you must be a member of the Team Foundation Administrators security group and a member of the sysadmin security role for all SQL Server instances that Team Foundation Server uses. For more information, see [Permission reference for Team Foundation](../../../security/permissions.md).
 
 ### Remarks
 

@@ -28,7 +28,7 @@ You can use a lock to temporarily freeze the server version of an item so that y
 
 **Requirements**
 
-See [Permission reference for Team Foundation Server](../setup-admin/permissions.md).
+See [Permissions and groups reference](../security/permissions.md).
 
 ### To lock a folder or file from Source Control Explorer
 
@@ -55,7 +55,7 @@ See [Permission reference for Team Foundation Server](../setup-admin/permissions
 ### To unlock a folder or file from Source Control Explorer
 
 > [!IMPORTANT]
-> You can only unlock files other members of your team have locked if you have [UnlockOther permissions]((../setup-admin/permissions.md). 
+> You can only unlock files other members of your team have locked if you have [UnlockOther permissions](../security/permissions.md). 
 > If you don't have permission to unlock a file the option will be inaccessible.
 
 1.  While working in the server workspace, navigate to the **View** menu and choose **Other Windows**, then choose **Source Control Explorer**.

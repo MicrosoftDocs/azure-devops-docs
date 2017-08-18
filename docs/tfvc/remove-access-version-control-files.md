@@ -27,7 +27,7 @@ The following procedure provides the details for removing the file by using the 
 
 **Required Permissions**
 
-To remove access to Team Foundation version control files, you must belong to the **Team Foundation Administrators** group. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To remove access to Team Foundation version control files, you must belong to the **Team Foundation Administrators** group. For more information, see [Permissions and groups reference](../security/permissions.md).
 
 ### To remove access to a file under version control
 

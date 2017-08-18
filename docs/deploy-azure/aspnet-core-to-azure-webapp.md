@@ -29,14 +29,18 @@ With your CI/CD processes in place, you'll push a change into your team's Git re
 
 ![Screenshot showing ASP.NET Core web app](_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
-[!INCLUDE [prerequisites](_shared/prerequisites.md)]
+## Prerequisites
+
+[!INCLUDE [include](../build-release/_shared/ci-cd-prerequisites.md)]
 * An Azure subscription. If you don't have an Azure subscription, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
-[!INCLUDE [import-code-aspnet-core](_shared/import-code-aspnet-core.md)]
+## Import code for sample app into VSTS
+
+[!INCLUDE [include](../build-release/apps/aspnet/ci/_shared/import-code-aspnet-core-vsts.md)]
 
 <a name="create-webapp-portal"></a>
 
-!INCLUDE [create-azure-web-app-portal](_shared/create-azure-web-app-portal.md)]
+[!INCLUDE [create-azure-web-app-portal](_shared/create-azure-web-app-portal.md)]
 
 ## Configure continuous delivery
 

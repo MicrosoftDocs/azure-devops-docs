@@ -209,7 +209,7 @@ To add or modify work items by using Excel or Project, you connect your workshee
  
 ### Connect from a worksheet or project plan 
 
-To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. See [Permission reference](../setup-admin/permissions.md) for details.
+To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. See [Permission reference](../security/permissions.md) for details.
 
 1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Team Services or TFS 2017, you'll need Project 2010 or a more recent version. For client compatibility, see [Requirements](../setup-admin/requirements.md)
 

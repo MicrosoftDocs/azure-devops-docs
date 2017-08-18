@@ -12,9 +12,9 @@ ms.date: 08/15/2017
 
 # Kanban board features and epics  
 
-<!---
+
 <b>Team Services | TFS 2017 | TFS 2015</b> 
---> 
+
 
 If you use Kanban to track progress on your backlog, you can also use Kanban boards to track epics and features.  
 
@@ -24,7 +24,6 @@ In this topic, you'll learn:
 > [!div class="checklist"] 
 > * How to add epics and features using your portfolio backlogs    
 > * Keyboard shortcuts for working with the Kanban board  
-
 
 
 <img src="_img/features-with-stories.png" alt="Web portal, Features Kanban board with several user stories defined" style="border: 1px solid #CCCCCC;" />
@@ -41,8 +40,6 @@ Add new items to a feature or epic through the item's ![actions icon](../_img/ic
 
 If you have a number of items to add, simply keep typing your task titles and click Enter. If you have details you want to add about to a work item, hover over the item and press Enter.  
  
-[!INCLUDE [temp](../_shared/kanban-board-controls.md)]  
-
 
 ## Related notes
 

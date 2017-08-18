@@ -13,6 +13,8 @@ ms.date: 08/03/2017
 
 # Events, subscriptions, notification types, and roles
 
+!!! WORK IN PROGRESS !!! 
+
 ## Event types   
 
  

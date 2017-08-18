@@ -38,23 +38,23 @@ which provides access to the full test capabilities in the Test hub for TFS and 
 [Follow these steps to pay monthly for TFS Test hub access](#test-hub).
 
 To learn more about requirements to access TFS or the Test hub, 
-see [Change access levels](../work/connect/change-access-levels.md). 
+see [Change access levels](../security/change-access-levels.md). 
 For more about TFS licensing, see the 
 [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
 
 <a id="rent-cal"></a>
 ## Buy monthly access to TFS
 
-0.	[Sign up for a Team Services account](team-services/sign-up-for-visual-studio-team-services.md), 
+0.	[Sign up for a Team Services account](sign-up-for-visual-studio-team-services.md), 
 if you don't have one already.
 
 0.	Based on the number of users who need TFS CALs, 
-[pay for users who need Basic access](team-services/buy-basic-access-add-team-services-users.md).
+[pay for users who need Basic access](buy-basic-access-add-team-services-users.md).
 
 0.	If you haven't already, sign in to your Team Services account 
 (```https://{youraccount}.visualstudio.com```). 
 
-0. [Add your users who need Basic access](team-services/add-account-users-assign-access-levels-team-services.md) 
+0. [Add your users who need Basic access](../accounts/add-account-users-assign-access-levels-team-services.md) 
 to your Team Services account so that you can track these users more easily.
 
 	Though these users will get invited to your Team Services account, 
@@ -62,7 +62,7 @@ to your Team Services account so that you can track these users more easily.
 
 0.	As TFS administrator, 
 now [add these same users to TFS](add-users.md#add-users-team-project), 
-and [give them the necessary access](../work/connect/change-access-levels.md).
+and [give them the necessary access](../security/change-access-levels.md).
 
 	**Note** TFS doesn't detect what happens in Team Services 
 	so make sure to add these users to TFS and assign them the 
@@ -74,11 +74,11 @@ and [give them the necessary access](../work/connect/change-access-levels.md).
 <a id="test-hub"></a>
 ## Buy monthly access to the Test hub
 
-0.	[Sign up for a Team Services account](team-services/sign-up-for-visual-studio-team-services.md), 
+0.	[Sign up for a Team Services account](sign-up-for-visual-studio-team-services.md), 
 if you don't have one already.
 
 0.	Based on the number of users who need TFS CALs, 
-[pay for users who need Basic access](team-services/buy-basic-access-add-team-services-users.md).
+[pay for users who need Basic access](buy-basic-access-add-team-services-users.md).
 
 0.	[Buy the Test Manager extension](../marketplace/get-vsts-extensions.md#install-extension) 
 for users who need Test hub access.
@@ -88,7 +88,7 @@ for users who need Test hub access.
 0.	If you haven't already, sign in to your Team Services account 
 (```https://{youraccount}.visualstudio.com```). 
 
-0. [Add your users who need Basic access](team-services/add-account-users-assign-access-levels-team-services.md) 
+0. [Add your users who need Basic access](../accounts/add-account-users-assign-access-levels-team-services.md) 
 to your Team Services account and 
 [assign them the Test Manager extension](../marketplace/get-vsts-extensions.md#assign-extension) 
 so that you can track these users.
@@ -104,7 +104,7 @@ so that you can track these users.
 	the same credentials that they used to join your Team Services account.
 
 0.	As TFS administrator, [add these same users to TFS](add-users.md#add-users-team-project) 
-if necessary. [Give them Advanced access](../work/connect/change-access-levels.md) 
+if necessary. [Give them Advanced access](../security/change-access-levels.md) 
 so they can use the Test hub.
 
 	**Note** TFS doesn't detect what happens in Team Services 
@@ -129,7 +129,7 @@ like payment by credit card and more.
 
 ####Q:	Where can I learn more about TFS CALs and access levels for the Test hub?
 
-A: See [Change access levels](../work/connect/change-access-levels.md).
+A: See [Change access levels](../security/change-access-levels.md).
 
 ####Q:	Where can I find more Team Services extensions and more info about the Visual Studio Marketplace?
 

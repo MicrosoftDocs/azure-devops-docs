@@ -395,9 +395,9 @@ Below we show the admin context for the team project level.
 <ul style="padding-left:40px">
  <li style="margin-bottom:2px">[Overview: Add teams](../work/scale/multiple-teams.md)</li>
  <li style="margin-bottom:2px">[Work/Iterations & Areas (project-wide)](../work/customize/set-area-paths.md)</li>
-<li style="margin-bottom:2px">[Security (manage project-level permissions)](../setup-admin/permissions.md#team-project-level-permissions)</li>
+<li style="margin-bottom:2px">[Security (manage project-level permissions)](../security/permissions.md#team-project-level-permissions)</li>
 <li style="margin-bottom:2px">[Notifications](../collaborate/manage-team-notifications.md) or [Alerts](../work/track/alerts-and-notifications.md)</li>
-<li style="margin-bottom:2px">[Version Control (manage repository permissions)](../setup-admin/permissions.md#git-repository)</li>
+<li style="margin-bottom:2px">[Version Control (manage repository permissions)](../security/permissions.md#git-repository)</li>
 <li style="margin-bottom:2px">[Agent queues](../build-release/concepts/agents/pools-queues.md)</li>
 <li style="margin-bottom:2px">[Service hooks](../service-hooks/services/webhooks.md)</li>
 <li style="margin-bottom:2px">[Services](../build-release/concepts/library/service-endpoints.md)</li>
@@ -416,7 +416,7 @@ Below we show the admin context for the team project level.
 <ul style="padding-left:20px">
  <li style="margin-bottom:2px">[Overview: Create team projects](../setup-admin/create-team-project.md)  &#124; [Rename team project](../setup-admin/rename-team-project.md) &#124; [Delete team project](../setup-admin/delete-team-project.md) &#124; [Change process](../work/process/manage-process.md) </li>
  <li style="margin-bottom:2px">[Settings: Set  account preferences](../setup-admin/account-preferences.md) &#124; [Change application access policies](../setup-admin/team-services/change-application-access-policies-vs.md) &#124; [Change account owner](../setup-admin/team-services/change-account-ownership-vs.md) &#124; [Delete or recover account](../setup-admin/team-services/delete-or-recover-your-account-vs.md) </li>
-<li style="margin-bottom:2px">[Security (manage collection-level permissions)](../setup-admin/permissions.md#collection-level)</li>
+<li style="margin-bottom:2px">[Security (manage collection-level permissions)](../security/permissions.md#collection-level)</li>
 <li style="margin-bottom:2px">[Process (customize work tracking)](../work/process/manage-process.md) </li>
 <li style="margin-bottom:2px">[Build (manage build policies)](../build-release/concepts/policies/retention.md)</li>
 <li style="margin-bottom:2px">[Agent pools (manage build agents)](../build-release/concepts/agents/pools-queues.md) (Team Services) </li>
@@ -431,7 +431,7 @@ Below we show the admin context for the team project level.
 <p style="padding-bottom:0px;text-align:left;">Required membership: [Project Collection Administrators](../setup-admin/add-administrator-tfs.md#project-collection)</p>
 <ul style="padding-left:40px">
  <li style="margin-bottom:2px">[Overview: Create team projects](../setup-admin/create-team-project.md)  &#124; [Rename team project](../setup-admin/rename-team-project.md) &#124; [Delete team project](../setup-admin/delete-team-project.md)</li>
-<li style="margin-bottom:2px">[Security (manage collection-level permissions)](../setup-admin/permissions.md#collection-level)</li>
+<li style="margin-bottom:2px">[Security (manage collection-level permissions)](../security/permissions.md#collection-level)</li>
 <li style="margin-bottom:2px">[Build (manage build policies)](../build-release/concepts/policies/retention.md)</li>
 <li style="margin-bottom:2px">[Agent queues](../build-release/concepts/agents/pools-queues.md) </li>
 <li style="margin-bottom:2px">[Extensions (install/manage extensions)](../marketplace/get-vsts-extensions.md)</li>
@@ -447,7 +447,7 @@ Below we show the admin context for the team project level.
 <p style="padding-bottom:0px;text-align:left;">Required membership: [Team Foundation Administrators](../setup-admin/add-administrator-tfs.md#server)</p>
 <ul style="padding-left:20px">
  <li style="margin-bottom:2px">Control panel: Choose team project/team</li>
- <li style="margin-bottom:2px">[Access levels (Stakeholder, Basic, Advanced)](../work/connect/change-access-levels.md)</li>
+ <li style="margin-bottom:2px">[Access levels (Stakeholder, Basic, Advanced)](../security/change-access-levels.md)</li>
  <li style="margin-bottom:2px">[Legacy Extensions (manage)](../marketplace/get-vsts-extensions.md)</li>
 <li style="margin-bottom:2px">[Agent pools (manage build agents)](../build-release/concepts/agents/pools-queues.md)</li>
 

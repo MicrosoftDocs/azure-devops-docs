@@ -11,9 +11,9 @@ ms.date: 05/18/2017
 --- 
 
 # Define features and epics  
-<!---
+
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
---> 
+
 
 While many teams can work with a flat list of items, sometimes it helps to group related items into a hierarchical structure. 
 Perhaps you like to start with a big picture and break it down into smaller deliverables. 

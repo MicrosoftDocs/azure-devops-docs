@@ -36,7 +36,7 @@ so you can install [free, preview, and paid extensions](#difference).
 ### What do I need to install extensions?
 
 [Project collection administrators](../setup-admin/add-administrator-tfs.md#project-collection) 
-with [**Edit collection-level information** permissions](../setup-admin/permissions.md#collection) 
+with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
 can install extensions. If you don't have permissions, you can [request extensions](#request) instead.
 
 For paid extensions, you'll need an 
@@ -117,13 +117,13 @@ and then installing them in a team project collection.
 ### Who can upload extensions?
 
 [Team Foundation administrators](../setup-admin/add-administrator-tfs.md#server) 
-with [**Edit instance-level information** permissions](../setup-admin/permissions.md#server) 
+with [**Edit instance-level information** permissions](../security/permissions.md#server) 
 can upload extensions.
 
 ### Who can install extensions?
 
 [Project collection administrators](../setup-admin/add-administrator-tfs.md#project-collection) 
-with [**Edit collection-level information** permissions](../setup-admin/permissions.md#collection) 
+with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
 can install extensions. If you don't have permissions, you can [request extensions](#request) instead.
 
 ### Download from Visual Studio Marketplace
@@ -271,7 +271,7 @@ you'll get email when another team project member requests an extension.
 When you approve the request, TFS automatically installs the extension.
 
 To approve extensions, you must also have 
-[**Edit collection-level information** permissions](../setup-admin/permissions.md#collection).
+[**Edit collection-level information** permissions](../security/permissions.md#collection).
 
 0.	Go to your TFS home page, 
 then go to your team project (```https://{server}:8080/tfs/{team-project-collection}/{team-project}```).
@@ -336,7 +336,7 @@ so they can start using that extension's capabilities.
 ### Who can assign paid extensions to users?
 
 [Project collection administrators](../setup-admin/add-administrator-tfs.md#project-collection) 
-with [**Edit collection-level information** permissions](../setup-admin/permissions.md#collection) 
+with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
 can assign paid extensions to users.
 
 0.  From your TFS home page, go to your control panel (```https://{server}:8080/tfs/_admin```).
@@ -381,7 +381,7 @@ reduce your users to zero (0).
 ### Who can change the number of paid extension users?
 
 [Project collection administrators](../setup-admin/add-administrator-tfs.md#project-collection) 
-with [**Edit collection-level information** permissions](../setup-admin/permissions.md#collection) 
+with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
 can change the number of paid extension users whose access that you pay for.
 
 0.  From your TFS home page, go to your control panel (```https://{server}:8080/tfs/_admin```).
@@ -418,7 +418,7 @@ you can uninstall or disable this extension.
 ### Who can uninstall or disable extensions?
 
 [Project collection administrators](../setup-admin/add-administrator-tfs.md#project-collection) 
-with [**Edit collection-level information** permissions](../setup-admin/permissions.md#collection) 
+with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
 can uninstall or disable extensions. 
 
 0.	From your TFS home page (```https://{server}:8080/tfs/```), 
@@ -498,7 +498,7 @@ A: This might happen for these reasons:
 
 *	You must be a member of the 
 [Project Collection Administrators group](../setup-admin/add-administrator-tfs.md#project-collection) 
-with [**Edit collection-level information** permissions](../setup-admin/permissions.md#collection) 
+with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
 in the team project collection where you want to install extensions.
 If you don't have permissions, you can [request extensions](#request) instead.
 

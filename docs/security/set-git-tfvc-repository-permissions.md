@@ -11,13 +11,11 @@ ms.date: 08/04/2017
 
 # Set repository permissions for Git or TFVC 
 
-<!---
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
--->
 
 You can grant or restrict access to a repository by setting the permission state to Allow or Deny for a single user or a security group. For a description of each security group and permission level, see [Permissions and group reference](permissions.md).
 
-
+<a id="git-repository">  </a>
 ## Set Git repository permissions
 
 You can set the permissions for all Git repositories for a team project, or for a single repository. 
@@ -42,7 +40,7 @@ You can set the permissions for all Git repositories for a team project, or for 
  
 
  
-
+<a id="tfvc-repository">  </a>
 ## Set TFVC repository permissions
 
 
@@ -64,4 +62,4 @@ You can set the permissions for all Git repositories for a team project, or for 
 
 ## Related notes
 
-- [Git permissions prior to TFS 2017 Update 1](../setup-admin/git-permissions-before-2017.md)  
+- [Git permissions prior to TFS 2017 Update 1](git-permissions-before-2017.md)  

@@ -17,7 +17,7 @@ Administrators of Team Foundation version control can add check-in policy requir
 
 **Required Permissions**
 
-To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
 ## Procedure
 

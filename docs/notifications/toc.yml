@@ -6,40 +6,43 @@
     href: about-notifications.md
 - name: Quickstarts
   items:
-  - name: Set your personal notifications
-    href: ../collaborate/manage-personal-notifications.md
-  - name: "Follow work & pull requests"
-    href: ../collaborate/follow-work-items.md
+  - name: "Use @mentions to further discussion"
+    href: at-mentions.md
+  - name: "Use #ID to link to work items"
+    href: add-links-to-work-items.md
 - name: Tutorials
   items:
-  - name: Set team notifications
-    href: ../collaborate/manage-team-notifications.md
-  - name: Campfire
-    href: ../collaborate/campfire.md
-  - name: Flowdock
-    href: ../collaborate/flowdock.md
-  - name: Hipchat
-    href: ../collaborate/hipchat.md
-  - name: Slack
-    href: ../collaborate/slack.md
+  - name: "Follow work & pull requests"
+    href: /vsts/collaborate/follow-work-items?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Set your personal notifications
+    href: /vsts/collaborate/manage-personal-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json 
 - name: Concepts
   items:
   - name: Events, subscribers, notification types, roles
-    href: events-subscribers-notification-types.md 
-- name: How-to guides
+    href: events-subscribers-notification-types.md
+- name: How-to Guides
   items:
-  - name: Use @mentions to further discussion
-    href: at-mentions.md
-  - name: Use #ID to link to work items
-    href: add-links-to-work-items.md
   - name: Go mobile
-    href: /vsts/collaborate/mobile-work?toc=/vsts/notifications/toc.json
-  - name: Set team project or collection-level alerts 
-    href: ../collaborate/collaborate-in-a-team-room.md
+    href: /vsts/collaborate/mobile-work?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Manage team notifications
+    href: /vsts/collaborate/manage-team-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Set team project or collection-level alerts (NEW) 
+  - name: Campfire
+    href: /vsts/collaborate/campfire?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Flowdock
+    href: /vsts/collaborate/flowdock?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Hipchat
+    href: /vsts/collaborate/hipchat?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Slack
+    href: /vsts/collaborate/slack?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Collaborate in a team room
-    href: ../collaborate/collaborate-in-a-team-room.md
+    href: /vsts/collaborate/collaborate-in-a-team-room?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
 - name: Resources    
   items:
+  - name: Git
+    href: ../git/index.md
+  - name: Work items
+    href: ../work/work-items/index.md
   - name: Microsoft Teams Integration
     href: https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams
   - name: Integrate with service hooks

@@ -133,7 +133,7 @@ User accounts that you add must conform to the following restrictions.
 
 Groups enable you to apply certain rights or permissions to a group of users.
 
-On-premises TFS groups can consist of Active Directory group accounts, TFS group accounts, Windows user accounts, Windows group accounts, or any mixture of these types. See [Manage users or groups in TFS](../setup-admin/permissions.md).  
+On-premises TFS groups can consist of Active Directory group accounts, TFS group accounts, Windows user accounts, Windows group accounts, or any mixture of these types. See [Manage users or groups in TFS](../security/permissions.md).  
 
 Groups that you add must conform to the following restrictions.  
 

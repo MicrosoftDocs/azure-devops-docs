@@ -13,12 +13,11 @@ ms.date: 03/22/2017
 
 **Team Services** 
 
-Inside the **Control Options** of each task, you can specify the conditions under which the task is run:
+Inside the **Control Options** of each task, and in the **Additional options** for a phase in a release definition,
+you can specify the conditions under which the task or phase will run:
 
 [!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
 * Custom conditions
-
-> In a release definition, conditions are defined in the **Additional options** section of the properties panel for a phase. 
 
 ## Enable a custom condition
 
@@ -308,10 +307,6 @@ For details on these and other variables, including predefined variables and the
 ## Q&A
 
 <!-- BEGINSECTION class="md-qanda" -->
-
-### Can I specify custom conditions for tasks in a release process?
-
-Yes, in the **Additional options** section of the properties panel for a phase, select **Custom condition using variable expressions** in the **Run this phase** list.
 
 ### What about string parsing and other operations?
 

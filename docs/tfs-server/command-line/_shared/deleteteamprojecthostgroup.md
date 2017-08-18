@@ -16,7 +16,7 @@ To use the **DeleteTeamProjectHostGroup** command, you must have Delete
 Lab Locations permission for the Team Project host group. By default,
 Team Foundation Server Administrators, Team Project Collection
 Administrators and Team Project Administrators have this permission. For
-more information, see [Permission reference for Team Foundation Server](../../../setup-admin/permissions.md).
+more information, see [Permission reference for Team Foundation Server](../../../security/permissions.md).
 
     TFSLabConfig DeleteTeamProjectHostGroup
           /Collection:collectionUrl

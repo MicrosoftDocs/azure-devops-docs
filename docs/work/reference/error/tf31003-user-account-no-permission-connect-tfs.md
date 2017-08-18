@@ -27,4 +27,4 @@ You might receive this error when you try to connect to Visual Studio Team Servi
 ## Related notes 
 - [Add users to team projects (TFS)](../../../setup-admin/add-users.md)   
 - [Assign licenses to users of Team Services](../../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md)
-- [Permission reference](../../../setup-admin/permissions.md)
+- [Permission reference](../../../security/permissions.md)

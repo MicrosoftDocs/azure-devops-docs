@@ -17,7 +17,7 @@ Modifies the user access control list (ACL) and displays authorization settings 
 
 **Required Permissions**
 
-To use the **permission** command, you must have the **Manipulate security settings** permission set to **Allow** for the folders being modified, be a member of the **Team Foundation Administrators** security group, or be a system administrator on the local computer (Windows Administrator security group). For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **permission** command, you must have the **Manipulate security settings** permission set to **Allow** for the folders being modified, be a member of the **Team Foundation Administrators** security group, or be a system administrator on the local computer (Windows Administrator security group). For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf permission [/allow:(* |perm1[,perm2,...]] 
     [/deny:(* |perm1[,perm2,...])] [/remove:(* |perm1[,perm2,...])] 
@@ -36,7 +36,7 @@ To use the **permission** command, you must have the **Manipulate security setti
 <tbody>
 <tr>
 <td><p><em>perm</em></p></td>
-<td><p>Name of a permission or role to modify. For more information about the permission names, see <a href="../setup-admin/permissions.md">Team Foundation Server Permissions</a>.</p></td>
+<td><p>Name of a permission or role to modify. For more information about the permission names, see <a href="../security/permissions.md">Team Foundation Server Permissions</a>.</p></td>
 </tr>
 <tr>
 <td><p><em>Username</em></p></td>
@@ -125,7 +125,7 @@ You can specify more than one *Itemspec* argument.
 <li><p>tf: AdminConfiguration</p></li>
 <li><p>tf: AdminConnections</p></li>
 </ul>
-<p>For more information about permissions, see <a href="../setup-admin/permissions.md">Team Foundation Server Permissions</a>.</p></td>
+<p>For more information about permissions, see <a href="../security/permissions.md">Team Foundation Server Permissions</a>.</p></td>
 </tr>
 <tr>
 <td><p><strong>/login</strong></p></td>

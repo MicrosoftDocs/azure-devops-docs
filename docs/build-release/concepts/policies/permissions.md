@@ -33,7 +33,7 @@ Management in TFS, you can also use Active Directory groups to
 manage permissions. If you are using Team Services, and your Team
 Services account is integrated with Azure Active Directory (AAD),
 you can also use AAD groups. For more details, see
-[Permissions and groups in Team Services and TFS](../../../setup-admin/permissions.md).
+[Permissions and groups in Team Services and TFS](../../../security/permissions.md).
 
 ## Security of agents and library entities
 

@@ -21,7 +21,7 @@ To use the **CreateTeamProjectHostGroup** command, you must have the
 **Manage Lab Locations** permission at the Team Project Collection Host
 Group level. By default, the members of the Team Foundation Server
 Administrators and Project Collection Administrators groups have this
-permission. For more information, see [Permission reference for Team Foundation Server](../../../setup-admin/permissions.md).
+permission. For more information, see [Permission reference for Team Foundation Server](../../../security/permissions.md).
 
 
     TFSLabConfig CreateTeamProjectHostGroup

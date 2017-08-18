@@ -5,25 +5,25 @@
   - name: Account management
     href: account-management.md
   - name: Access with Azure AD
-    href: team-services/access-with-azure-ad.md
+    href: access-with-azure-ad.md
 - name: Quickstarts
   items:
   - name: Create your account with a person Microsoft account
-    href: team-services/sign-up-for-visual-studio-team-services.md
+    href: sign-up-for-visual-studio-team-services.md
   - name: Create your account with a work or school account
-    href: team-services/sign-up-for-visual-studio-team-services.md
+    href: sign-up-for-visual-studio-team-services.md
   - name: Sign up for your account (TO BE REMOVED)
-    href: team-services/sign-up-for-visual-studio-team-services.md
+    href: sign-up-for-visual-studio-team-services.md
   - name: Connect to your account from tools
-    href: team-services/connect-to-visual-studio-team-services.md
+    href: connect-to-visual-studio-team-services.md
   - name: "User hub: add users to your account"
-    href: team-services/add-account-users-from-user-hub.md
+    href: add-account-users-from-user-hub.md
   - name: Try extensions for free
-    href: team-services/try-additional-features-vs.md
+    href: try-additional-features-vs.md
   - name: Add users to your account (TO BE REMOVED)
-    href: team-services/add-account-users-assign-access-levels-team-services.md
+    href: add-account-users-assign-access-levels-team-services.md
   - name: "User hub: add basic or VS subscription users to your account"
-    href: team-services/add-basic-or-vs-subscription-users.md
+    href: add-basic-or-vs-subscription-users.md
   - name: Get more features (extensions)
     items:
     - name: Install an extension
@@ -35,19 +35,19 @@
 - name: Tutorials
   items:
   - name: Change Azure AD tenant
-    href: team-services/change-azure-active-directory-team-services-account.md
+    href: change-azure-active-directory-team-services-account.md
 - name: How-to
   items:
   - name: Manage accounts
     items:
     - name: Change account owner
-      href: team-services/change-account-ownership-vs.md
+      href: change-account-ownership-vs.md
     - name: Rename account
-      href: team-services/rename-visual-studio-team-services-account.md
+      href: rename-visual-studio-team-services-account.md
     - name: Delete account
-      href: team-services/delete-your-vsts-account.md
+      href: delete-your-vsts-account.md
     - name: Recover account
-      href: team-services/recover-your-vsts-account.md
+      href: recover-your-vsts-account.md
     - name: Sign in with different credentials
       href: ../connect/connect-team-projects.md#logindifferentcred
   - name: Manage team projects
@@ -65,37 +65,37 @@
   - name: Manage account access
     items:
     - name: "User hub: manage users from table view"
-      href: team-services/manage-users-table-view.md
+      href: manage-users-table-view.md
     - name: Manage conditional access
-      href: team-services/manage-conditional-access.md
+      href: manage-conditional-access.md
     - name: "User hub: delete users from your account"
-      href: team-services/delete-account-users-users-hub.md
+      href: delete-account-users-users-hub.md
     - name: Add members to team projects
-      href: team-services/add-team-members-vs.md
+      href: add-team-members-vs.md
     - name: Delete users from your account
-      href: team-services/delete-account-users.md
+      href: delete-account-users.md
     - name: Link work accounts to Visual Studio with MSDN subscriptions
-      href: team-services/link-msdn-subscription-to-organizational-account-vs.md
+      href: link-msdn-subscription-to-organizational-account-vs.md
     - name: Authenticate with personal access tokens
-      href: team-services/use-personal-access-tokens-to-authenticate.md
+      href: use-personal-access-tokens-to-authenticate.md
     - name: Change app access policies
-      href: team-services/change-application-access-policies-vs.md
+      href: change-application-access-policies-vs.md
     - name: Access with Azure AD
       items:
       - name: Add Team Services users to your Azure AD
-        href: team-services/add-ts-users-to-aad.md
+        href: add-ts-users-to-aad.md
       - name: Connect Team Services account to Azure AD
-        href: team-services/connect-account-to-aad.md
+        href: connect-account-to-aad.md
       - name: Disconnect Team Services account from Azure AD
-        href: team-services/disconnect-account-from-aad.md
+        href: disconnect-account-from-aad.md
       - name: Delete users from Team Services connected to Azure AD
-        href: team-services/delete-users-from-services-aad.md
+        href: delete-users-from-services-aad.md
       - name: Add Azure AD group to Team Services group
-        href: team-services/manage-azure-active-directory-groups-visual-studio-team-services.md
+        href: manage-azure-active-directory-groups-visual-studio-team-services.md
   - name: Permissions and access
     items:
     - name: Permissions and access
-      href: permissions-access.md
+      href: ../security/permissions-access.md
     - name: Add users to projects
       href: add-users.md
     - name: Add administrators to project collection
@@ -105,20 +105,20 @@
     - name: Restrict access to resources
       href: restrict-access-tfs.md
     - name: Change access levels
-      href: ../work/connect/change-access-levels.md
+      href: ../security/change-access-levels.md
     - name: Stakeholder access
       href: ../quickstart/get-started-stakeholder.md
     - name: Permissions and groups reference
-      href: permissions.md
+      href: ../security/permissions.md
 - name: Concepts
   items:
   - name: TBD FROM TOPIC INTROS
   - name: Buying build pipelines
-    href: team-services/buy-more-build-vs.md
+    href: ../billing/buy-more-build-vs.md
 - name: Reference
   items:
   - name: Permissions and groups reference
-    href: permissions.md
+    href: ../security/permissions.md
   - name: Extensibility overview
     href: ../extend/index.md
 - name: Troubleshooting
@@ -131,19 +131,17 @@
     href: ../billing/index.md
     items:
     - name: "Set up billing: link Azure subscription to Team Services Account"
-      href: ../billing/team-services/set-up-billing-for-your-account-vs.md
+      href: ../billing/set-up-billing-for-your-account-vs.md
     - name: "Set up billing: add backup billing managers"
-      href: ../billing/team-services/add-backup-billing-managers.md
+      href: ../billing/add-backup-billing-managers.md
     - name: "Set up billing: change Azure subscription for billing"
-      href: ../billing/team-services/change-azure-subscription.md
+      href: ../billing/change-azure-subscription.md
     - name: Pay for Team Services users
-      href: ../billing/team-services/buy-basic-access-add-team-services-users.md
+      href: ../billing/buy-basic-access-add-team-services-users.md
     - name: Change number of paid users
-      href: ../billing/team-services/change-number-of-paid-users.md
+      href: ../billing/change-number-of-paid-users.md
     - name: How to buy build pipelines
-      href: ../billing/team-services/buy-more-build-vs.md
-    - name: Change number of paid build pipelines
-      href: ../billing/team-services/buy-more-build-vs.md
+      href: ../billing/buy-more-build-vs.md
     - name: Install an extension for Team Services
       href: ../billing/get-vsts-extensions.md
     - name: Request permissions for Team Services extensions

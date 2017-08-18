@@ -17,7 +17,7 @@ You can annotate a file to learn who made changes and what changes they made in 
 
 **Required Permissions**
 
-To perform these procedures, you must have the **Read** permission set to **Allow**. For more information, see [Permission reference for Team Foundation Server](../setup-admin/permissions.md).
+To perform these procedures, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
 ### To annotate a file
 

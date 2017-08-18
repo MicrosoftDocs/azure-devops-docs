@@ -32,7 +32,7 @@ You can use the **License** command to display, modify, or extend the licensing 
 
 ### Required Permissions
 
-To use the **License** command, you must be a member of the Team Foundation Administrators security group. For more information, see [Permission reference for Team Foundation Server](../../../setup-admin/permissions.md).
+To use the **License** command, you must be a member of the Team Foundation Administrators security group. For more information, see [Permission reference for Team Foundation Server](../../../security/permissions.md).
 
 ### Remarks
 

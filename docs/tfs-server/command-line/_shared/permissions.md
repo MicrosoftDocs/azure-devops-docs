@@ -3,7 +3,7 @@ Use the **TFSLabConfig Permissions** command to set and get permissions
 set for a specified user or for multiple users on a specified object in
 Visual Studio Lab Management. For more information about individual
 permissions, see the Lab Management Permissions section of
-[Permission reference for Team Foundation Server](../../../setup-admin/permissions.md).
+[Permission reference for Team Foundation Server](../../../security/permissions.md).
 
 **Required Permissions:**
 
@@ -11,7 +11,7 @@ To query permissions on an object, you must have Read permissions for
 the object. To change permissions on an object the **Permissions**
 command, you must have the **Manage Permissions** permission. By
 default, the creator of the object has this permission. For more
-information, see [Permission reference for Team Foundation Server](../../../setup-admin/permissions.md).
+information, see [Permission reference for Team Foundation Server](../../../security/permissions.md).
 
 
     TFSLabConfig Permissions
@@ -33,9 +33,9 @@ information, see [Permission reference for Team Foundation Server](../../../setu
 | *objectSpec* | Optional. Specifies the target object such as a team project or library share to which the permissions are applied. For information about how to specify objects, see objectSpec below. |
 | **User**: *userName1[,userName2][,...]* | Optional. Specifies one or more users to which the permissions are applied. Use commas to separate multiple user names. |
 | **Group**: *groupName1[,groupName2][,...]* | Optional. Specifies one or more groups to which the permissions are applied. Use commas to separate multiple group names. |
-| **Allow**: {* &#124; *perm1*[,*perm2*][,...] } | Optional. Enables the specified permissions for the specified users or groups. Use an asterisk (*) to specify all permissions. To specify an individual permission, use the identifiers in the **Name at command line** column of the table in the Lab Management Permissions section of [Permission reference for Team Foundation Server](../../../setup-admin/permissions.md). Use commas to separate multiple permissions. | 
-| Deny:{* &#124; *perm1*[,*perm2*][,...] }  | Optional. Denies the specified permissions for the specified users or groups. Use an asterisk (*) to specify all permissions. To specify an individual permission, use the identifiers in the **Name at command line** column of the table in the Lab Management Permissions section of [Permission reference for Team Foundation Server](../../../setup-admin/permissions.md). Use commas to separate multiple permissions. |
-| **Remove**:{* &#124; *perm1*[,*perm2*][,...] } | Optional. Unsets the specified permissions that were previously granted or denied to the user or group. To specify an individual permission, use the identifiers in the **Name at command line** column of the table in the Lab Management Permissions section of [Permission reference for Team Foundation Server](../../../setup-admin/permissions.md). Use commas to separate multiple permissions. | 
+| **Allow**: {* &#124; *perm1*[,*perm2*][,...] } | Optional. Enables the specified permissions for the specified users or groups. Use an asterisk (*) to specify all permissions. To specify an individual permission, use the identifiers in the **Name at command line** column of the table in the Lab Management Permissions section of [Permission reference for Team Foundation Server](../../../security/permissions.md). Use commas to separate multiple permissions. | 
+| Deny:{* &#124; *perm1*[,*perm2*][,...] }  | Optional. Denies the specified permissions for the specified users or groups. Use an asterisk (*) to specify all permissions. To specify an individual permission, use the identifiers in the **Name at command line** column of the table in the Lab Management Permissions section of [Permission reference for Team Foundation Server](../../../security/permissions.md). Use commas to separate multiple permissions. |
+| **Remove**:{* &#124; *perm1*[,*perm2*][,...] } | Optional. Unsets the specified permissions that were previously granted or denied to the user or group. To specify an individual permission, use the identifiers in the **Name at command line** column of the table in the Lab Management Permissions section of [Permission reference for Team Foundation Server](../../../security/permissions.md). Use commas to separate multiple permissions. | 
 | **Inherit:Yes &#124; No** | Optional. If you specify **yes**, all permissions associated with a parent ACL are inherited by an item. Cannot be combined with the /**remove**, /**user**, or /**group** options. |
 
 ### objectSpec

@@ -37,7 +37,7 @@ through the administration console are indicated with this image: ![Team Foundat
 
   * [Change cache settings for an application-tier server](change-caching-app-tier.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)
 
-  * [Manage access to features in Team Web Access](../../work/connect/change-access-levels.md)
+  * [Manage access to features in Team Web Access](../../security/change-access-levels.md)
 
 * **Data tier**
 
@@ -252,7 +252,7 @@ also [Move Team Foundation Server from one environment to another](move-across-d
     Administrators](http://blogs.msdn.com/b/granth/archive/2013/02/13/tfs2012-new-tools-for-tfs-administrators.aspx).
 
 -   From the Control Panel context of TWA, you can export an audit log
-    of all users and their access levels. See [Change access levels](../../work/connect/change-access-levels.md).
+    of all users and their access levels. See [Change access levels](../../security/change-access-levels.md).
 
 For additional monitoring tips, see this blog post: [What does a well
 maintained Team Foundation Server look

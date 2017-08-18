@@ -1,3 +1,5 @@
+- name: Search
+  href: index.md
 - name: Overview
   items:
   - name: About Search

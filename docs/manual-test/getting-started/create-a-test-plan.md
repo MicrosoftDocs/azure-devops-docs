@@ -36,7 +36,7 @@ as special types of work items.
 
 1. If you haven't already, 
 [sign up for Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
-[create your team project](../../setup-admin/account-administration.md), 
+[create your team project](../../accounts/account-management.md), 
 and [create your backlog](../../work/backlogs/create-your-backlog.md). 
 
 1. In VSTS, select your team project. 

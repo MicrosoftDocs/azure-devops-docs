@@ -202,7 +202,7 @@ ms.date: 08/04/2016
   <div class="row">
     <div class="col-sm-6 col-md-3 col-md-offset-2 item">
       <div class="title">
-        <a href="setup-admin/account-administration.md">Team Services</a>
+        <a href="accounts/account-management.md">Team Services</a>
         <div class="desc">
           Set up your Team Services account in the cloud. Manage account access, billing, and purchases.
         </div>

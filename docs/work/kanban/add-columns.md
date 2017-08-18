@@ -9,15 +9,9 @@ ms.author: kaelli
 ms.date: 07/20/2017
 --- 
 
-#Add columns
+# Add columns
 
 [!INCLUDE [temp](../_shared/dev15-version-header.md)]  
-
-
->[!NOTE]  
->If you're looking at how to add columns to a task board, you need to customize the workflow. For details, see [Customize your work tracking experience](../customize/customize-work.md). To add columns to a backlog or query results, see [Change column options](../how-to/set-column-options.md).   
->
->For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs-boards-plans.md).
 
 Kanban's number one practice is to visualize the flow of work. Accordingly, your number one task is to visualize your team's workflow. You do this by identifying the types of work and handoffs that occur regularly as your team moves items off the backlog and into a shippable state.
 
@@ -28,6 +22,12 @@ For example, the main workflow stages performed by our example dev team are capt
 ![Kanban board, columns customized ](_img/ALM_AC_KanbanIntro.png)
 
 If you're just getting started, review [Kanban basics](kanban-basics.md) to get an overview of how to access your board and implement Kanban.
+
+
+>[!NOTE]  
+>If you're looking at how to add columns to a task board, you need to customize the workflow. For details, see [Customize your work flow (Inheritance process model](../customize/customize-work.md) or [Add or modify a work item type (Hosted XML or On-premises XML process models](../customize/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../how-to/set-column-options.md).   
+>
+>For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs-boards-plans.md).
 
 <a id="map-the-flow-of-work">  </a>
 
@@ -282,7 +282,7 @@ In this example, bugs have been added to show on the Kanban board. You need to m
 ![Kanban column to State mappings with bugs ](_img/ALM_AC_Update.png)
 
 
-## Related Kanban notes
+## Related notes
 
 That's about all you need to know about working with Kanban columns. Here are a few more options you have for customizing the look and feel of the board. 
 
@@ -290,8 +290,7 @@ That's about all you need to know about working with Kanban columns. Here are a 
 * [Add swimlanes, expedite work](expedite-work.md)   
 * [Split columns](split-columns.md)   
 * [Definition of Done](definition-of-done.md)  
-* [Customize cards](../customize/customize-cards.md)  
-* [Card reordering](../customize/reorder-cards.md)  
+* [Customize cards](../customize/customize-cards.md) 
 * [Cumulative flow diagram](../../report/guidance/cumulative-flow.md)  
 
 

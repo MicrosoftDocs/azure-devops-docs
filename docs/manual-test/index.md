@@ -1,5 +1,5 @@
 ---
-title: Manual and exploratory testing
+title: Exploratory and Manual Testing
 description: Manual and exploratory testing index
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
@@ -10,16 +10,16 @@ ms.author: ahomer
 ms.date: 08/09/2016
 ---
 
-# Manual and exploratory testing
+# Exploratory &amp; Manual Testing
 
 Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide rich and powerful
 tools everyone in the team can use to drive quality and collaboration throughout the development process.
 
 ## Overview
 
-* [About manual and exploratory testing](overview.md)
+* [About exploratory and manual testing](overview.md)
 
-## 5-minute Quickstarts
+## 5-Minute Quickstarts
 
 Learn how to create tests plans and test cases, and run them
 using the VSTS or TFS web portal.
@@ -38,6 +38,14 @@ tasks and test cases automatically linked to that work item.
 | --- | --- | --- |
 | ![icon](_img/marketplace-icon.png)<br />[Install the extension](getting-started/perform-exploratory-tests.md) | ![icon](_img/connectedmode-icon.png)<br />[Test in Connected mode](connected-mode-exploratory-testing.md) | ![icon](_img/standalonemode-icon.png)<br />[Test in Standalone mode](standalone-mode-exploratory-testing.md) |
 | | | |
+
+## Videos
+
+| | |
+| --- | --- |
+| <iframe src="https://channel9.msdn.com/Events/Connect/2016/193/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Connect/2016/194/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
+| | |
 
 ## How-to Guides
 

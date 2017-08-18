@@ -30,7 +30,7 @@ Use **/a+** to add permissions for a user or a group in a server-level, collecti
 
 #### Required Permissions
 
-To use the **/a+** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. If you are changing permissions for a team project, you must also have the Edit project-level information permission for the team project set to Allow. For more information, see [Permission reference for Team Foundation Server](../../permissions.md).
+To use the **/a+** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. If you are changing permissions for a team project, you must also have the Edit project-level information permission for the team project set to Allow. For more information, see [Permission reference for Team Foundation Server(../../../security/permissions.md).
 
 #### Parameters
 
@@ -304,7 +304,7 @@ Use **/acl** to display the access control list that applies to a particular obj
 To use the **/acl** command, you must have the **View collection-level information**
 or the **View instance-level information** permission set to **Allow**,
 depending on whether you are using the **/collection** or **/server** parameter, respectively.
-For more information, see [Permission reference for Team Foundation Server](../../permissions.md).
+For more information, see [Permission reference for Team Foundation Server(../../../security/permissions.md).
 
 #### Parameters
 
@@ -1094,14 +1094,14 @@ Sample output:
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Administer warehouse](../../permissions.md#administer-warehouse-permission)|Warehouse|Administer|
-|[Create team project collection](../../permissions.md#create-team-project-collection-permission)|CollectionManagement|CreateCollection|
-|[Delete team project collection](../../permissions.md#delete-team-project-collection-permission)|CollectionManagement|DeleteCollection|
-|[Edit instance-level information](../../permissions.md#edit-instance-level-information-permission)|Server|GENERIC_WRITE<br /><br />tf: AdminConfiguration<br /><br />tf: AdminConnections|
-|[Make requests on behalf of others](../../permissions.md#make-requests-on-behalf-of-others-permission)|Server|Impersonate|
-|[Trigger events](../../permissions.md#trigger-events-permission)|Server|TRIGGER_EVENT|
-|[Use full Web Access features](../../permissions.md#use-full-web-access-features-permission)|Server|FullAccess|
-|[View instance-level information](../../permissions.md#view-instance-level-information-permission)|Server|GENERIC_READ|
+|[Administer warehouse(../../../security/permissions.md#administer-warehouse-permission)|Warehouse|Administer|
+|[Create team project collection(../../../security/permissions.md#create-team-project-collection-permission)|CollectionManagement|CreateCollection|
+|[Delete team project collection(../../../security/permissions.md#delete-team-project-collection-permission)|CollectionManagement|DeleteCollection|
+|[Edit instance-level information(../../../security/permissions.md#edit-instance-level-information-permission)|Server|GENERIC_WRITE<br /><br />tf: AdminConfiguration<br /><br />tf: AdminConnections|
+|[Make requests on behalf of others(../../../security/permissions.md#make-requests-on-behalf-of-others-permission)|Server|Impersonate|
+|[Trigger events(../../../security/permissions.md#trigger-events-permission)|Server|TRIGGER_EVENT|
+|[Use full Web Access features(../../../security/permissions.md#use-full-web-access-features-permission)|Server|FullAccess|
+|[View instance-level information(../../../security/permissions.md#view-instance-level-information-permission)|Server|GENERIC_READ|
 |[Publish extensions](../../../extend/publish/overview.md)| Publisher| **For TFS 2017 or earlier**:<br />Create<br/>Publish<br />Write<br /><br />**For TFS 2017**:<br />CreatePublisher<br />PublishExtension<br />UpdateExtension<br />DeleteExtensions<br />|
 
 <a id="collection-level-permissions"></a>
@@ -1109,24 +1109,24 @@ Sample output:
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Administer build resource permissions](../../permissions.md#administer-build-resource-permissions-permission)|BuildAdministration|AdministerBuildResourcePermissions|
-|[Administer Project Server integration](../../permissions.md#administer-Project-Server-integration-permission)|ProjectServerAdministration|AdministerProjectServer|
-|[Administer shelved changes](../../permissions.md#administer-shelved-changes-permission)|VersionControlPrivileges|AdminShelvesets<br /><br />tf: AdminShelvesets|
-|[Administer workspaces](../../permissions.md#administer-workspaces-permission)|VersionControlPrivileges|AdminWorkspaces<br /><br />tf: AdminWorkspaces|
-|[Alter trace settings](../../permissions.md#alter-trace-settings-permission)|Collection|DIAGNOSTIC_TRACE|
-|[Create a workspace](../../permissions.md#create-a-workspace-permission)|VersionControlPrivileges|tf: CreateWorkspace|
-|[Create new projects](../../permissions.md#create-new-team-projects-permission)|Collection|CREATE_PROJECTS|
-|[Delete team project](../../permissions.md#delete-team-project-permission)|Project|Delete|
-|[Edit collection-level information](../../permissions.md#edit-collection-level-information-permission)|Collection<br /><br />VersionControlPrivileges|GENERIC_WRITE<br /><br />tf: AdminConfiguration<br /><br />tf: AdminConnections|
-|[Make requests on behalf of others](../../permissions.md#make-requests-on-behalf-of-others-permission)|Server|Impersonate|
-|[Manage build resources](../../permissions.md#manage-build-resources-permission)|BuildAdministration|ManageBuildResources|
-|[Manage process template](../../permissions.md#manage-process-template-permission)|Collection|MANAGE_TEMPLATE|
-|[Manage test controllers](../../permissions.md#manage-test-controllers-permission)|Collection|MANAGE_TEST_CONTROLLERS|
-|[Trigger events](../../permissions.md#trigger-events-permission)|Collection|TRIGGER_EVENT|
-|[Use build resources](../../permissions.md#use-build-resources-permission)|BuildAdministration|UseBuildResources|
-|[View build resources](../../permissions.md#view-build-resources-permission)|BuildAdministration|ViewBuildResources|
-|[View collection-level information](../../permissions.md#view-collection-level-information-permission)|Collection|GENERIC_READ|
-|[View system synchronization information](../../permissions.md#view-system-synchronization-information-permission)|Collection|SYNCHRONIZE_READ|
+|[Administer build resource permissions(../../../security/permissions.md#administer-build-resource-permissions-permission)|BuildAdministration|AdministerBuildResourcePermissions|
+|[Administer Project Server integration(../../../security/permissions.md#administer-Project-Server-integration-permission)|ProjectServerAdministration|AdministerProjectServer|
+|[Administer shelved changes(../../../security/permissions.md#administer-shelved-changes-permission)|VersionControlPrivileges|AdminShelvesets<br /><br />tf: AdminShelvesets|
+|[Administer workspaces(../../../security/permissions.md#administer-workspaces-permission)|VersionControlPrivileges|AdminWorkspaces<br /><br />tf: AdminWorkspaces|
+|[Alter trace settings(../../../security/permissions.md#alter-trace-settings-permission)|Collection|DIAGNOSTIC_TRACE|
+|[Create a workspace(../../../security/permissions.md#create-a-workspace-permission)|VersionControlPrivileges|tf: CreateWorkspace|
+|[Create new projects(../../../security/permissions.md#create-new-team-projects-permission)|Collection|CREATE_PROJECTS|
+|[Delete team project(../../../security/permissions.md#delete-team-project-permission)|Project|Delete|
+|[Edit collection-level information(../../../security/permissions.md#edit-collection-level-information-permission)|Collection<br /><br />VersionControlPrivileges|GENERIC_WRITE<br /><br />tf: AdminConfiguration<br /><br />tf: AdminConnections|
+|[Make requests on behalf of others(../../../security/permissions.md#make-requests-on-behalf-of-others-permission)|Server|Impersonate|
+|[Manage build resources(../../../security/permissions.md#manage-build-resources-permission)|BuildAdministration|ManageBuildResources|
+|[Manage process template(../../../security/permissions.md#manage-process-template-permission)|Collection|MANAGE_TEMPLATE|
+|[Manage test controllers(../../../security/permissions.md#manage-test-controllers-permission)|Collection|MANAGE_TEST_CONTROLLERS|
+|[Trigger events(../../../security/permissions.md#trigger-events-permission)|Collection|TRIGGER_EVENT|
+|[Use build resources(../../../security/permissions.md#use-build-resources-permission)|BuildAdministration|UseBuildResources|
+|[View build resources(../../../security/permissions.md#view-build-resources-permission)|BuildAdministration|ViewBuildResources|
+|[View collection-level information(../../../security/permissions.md#view-collection-level-information-permission)|Collection|GENERIC_READ|
+|[View system synchronization information(../../../security/permissions.md#view-system-synchronization-information-permission)|Collection|SYNCHRONIZE_READ|
 |Can create a SOAP-based web service subscription. |EventSubscription|CREATE_SOAP_SUBSCRIPTION|
 |Can view subscription events defined for a team project. |EventSubscription|GENERIC_READ|
 |Can create alerts for other users or for a team. |EventSubscription|GENERIC_WRITE|
@@ -1137,102 +1137,102 @@ Sample output:
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Create tag definition](../../permissions.md#create-tag-definition-permission)|Tagging|Create|
-|[Create test runs](../../permissions.md#create-test-runs-permission)|Project| PUBLISH_TEST_RESULTS
-|[Delete team project](../../permissions.md#delete-team-project-permission)|Project|DELETE|
-|[Delete work items](../../permissions.md#delete-work-items-in-this-project-permission) (TFS 2015.2)| Project | WORK_ITEM_DELETE | 
-|[Delete test runs](../../permissions.md#delete-test-runs-permission)|Project|DELETE_TEST_RESULTS|
-|[Edit project-level information](../../permissions.md#edit-team-project-level-information-permission)|Project|GENERIC_WRITE|
-|[Move work items out of this project](../../permissions.md#move-work-items-out-of-this-project-permission) (TFS 2015.2)| Project| WORK_ITEM_MOVE | 
-|[Manage test configurations](../../permissions.md#manage-test-configurations-permission)|Project|MANAGE_TEST_CONFIGURATIONS|
-|[Manage test environments](../../permissions.md#manage-test-environments-permission)|Project|MANAGE_TEST_ENVIRONMENTS|
-|[Permanently delete (destroy) work items in this project](../../permissions.md#permanently-delete-work-items-in-this-project-permission) (TFS 2015.2)| Project | WORK_ITEM_PERMANENTLY_DELETE | 
-|[View project-level information](../../permissions.md#view-team-project-level-information-permission)|Project|GENERIC_READ|
-|[View test runs](../../permissions.md#view-test-runs-permission)|Project|VIEW_TEST_RESULTS|
+|[Create tag definition(../../../security/permissions.md#create-tag-definition-permission)|Tagging|Create|
+|[Create test runs(../../../security/permissions.md#create-test-runs-permission)|Project| PUBLISH_TEST_RESULTS
+|[Delete team project(../../../security/permissions.md#delete-team-project-permission)|Project|DELETE|
+|[Delete work items(../../../security/permissions.md#delete-work-items-in-this-project-permission) (TFS 2015.2)| Project | WORK_ITEM_DELETE | 
+|[Delete test runs(../../../security/permissions.md#delete-test-runs-permission)|Project|DELETE_TEST_RESULTS|
+|[Edit project-level information(../../../security/permissions.md#edit-team-project-level-information-permission)|Project|GENERIC_WRITE|
+|[Move work items out of this project(../../../security/permissions.md#move-work-items-out-of-this-project-permission) (TFS 2015.2)| Project| WORK_ITEM_MOVE | 
+|[Manage test configurations(../../../security/permissions.md#manage-test-configurations-permission)|Project|MANAGE_TEST_CONFIGURATIONS|
+|[Manage test environments(../../../security/permissions.md#manage-test-environments-permission)|Project|MANAGE_TEST_ENVIRONMENTS|
+|[Permanently delete (destroy) work items in this project(../../../security/permissions.md#permanently-delete-work-items-in-this-project-permission) (TFS 2015.2)| Project | WORK_ITEM_PERMANENTLY_DELETE | 
+|[View project-level information(../../../security/permissions.md#view-team-project-level-information-permission)|Project|GENERIC_READ|
+|[View test runs(../../../security/permissions.md#view-test-runs-permission)|Project|VIEW_TEST_RESULTS|
 
 <a id="build-permissions"></a>
 ### Build
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Administer build permissions](../../permissions.md#administer-build-permissions-permission)|Build|AdministerBuildPermissions|
-|[Delete build definition](../../permissions.md#delete-build-definition-permission)|Build|DeleteBuildDefinition|
-|[Delete builds](../../permissions.md#delete-builds-permission)|Build|DeleteBuilds|
-|[Destroy builds](../../permissions.md#destroy-builds-permission)|Build|DestroyBuilds|
-|[Edit build definition](../../permissions.md#edit-build-definition-permission)|Build|EditBuildDefinition|
-|[Edit build quality](../../permissions.md#edit-build-quality-permission)|Build|EditBuildDefinition|
-|[Manage build qualities](../../permissions.md#manage-build-qualities-permission)|Build|ManageBuildQualities|
-|[Manage build queue](../../permissions.md#manage-build-queue-permission)|Build|ManageBuildQueue|
-|[Override check-in validation by build](../../permissions.md#override-check-in-validation-by-build-permission)|Build|OverrideBuildCheckInValidation|
-|[Queue builds](../../permissions.md#queue-builds-permission)|Build|QueueBuilds|
-|[Retain indefinitely](../../permissions.md#retain-indefinitely-permission)|Build|RetainIndefinitely|
-|[Stop builds](../../permissions.md#stop-builds-permission)|Build|StopBuilds|
-|[Update build information](../../permissions.md#update-build-information-permission)|Build|UpdateBuildInformation|
-|[View build definition](../../permissions.md#view-build-definition-permission)|Build|ViewBuildDefinition|
-|[View builds](../../permissions.md#view-builds-permission)|Build|ViewBuilds|
+|[Administer build permissions(../../../security/permissions.md#administer-build-permissions-permission)|Build|AdministerBuildPermissions|
+|[Delete build definition(../../../security/permissions.md#delete-build-definition-permission)|Build|DeleteBuildDefinition|
+|[Delete builds(../../../security/permissions.md#delete-builds-permission)|Build|DeleteBuilds|
+|[Destroy builds(../../../security/permissions.md#destroy-builds-permission)|Build|DestroyBuilds|
+|[Edit build definition(../../../security/permissions.md#edit-build-definition-permission)|Build|EditBuildDefinition|
+|[Edit build quality(../../../security/permissions.md#edit-build-quality-permission)|Build|EditBuildDefinition|
+|[Manage build qualities(../../../security/permissions.md#manage-build-qualities-permission)|Build|ManageBuildQualities|
+|[Manage build queue(../../../security/permissions.md#manage-build-queue-permission)|Build|ManageBuildQueue|
+|[Override check-in validation by build(../../../security/permissions.md#override-check-in-validation-by-build-permission)|Build|OverrideBuildCheckInValidation|
+|[Queue builds(../../../security/permissions.md#queue-builds-permission)|Build|QueueBuilds|
+|[Retain indefinitely(../../../security/permissions.md#retain-indefinitely-permission)|Build|RetainIndefinitely|
+|[Stop builds(../../../security/permissions.md#stop-builds-permission)|Build|StopBuilds|
+|[Update build information(../../../security/permissions.md#update-build-information-permission)|Build|UpdateBuildInformation|
+|[View build definition(../../../security/permissions.md#view-build-definition-permission)|Build|ViewBuildDefinition|
+|[View builds(../../../security/permissions.md#view-builds-permission)|Build|ViewBuilds|
 
 <a id="work-item-query-permissions"></a>
 ### Work item query
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Contribute](../../permissions.md#workitemqueryfolders-contribute-permission)|WorkItemQueryFolders|CONTRIBUTE|
-|[Delete](../../permissions.md#workitemqueryfolders-delete-permission)|WorkItemQueryFolders|DELETE|
-|[Manage permissions](../../permissions.md#workitemqueryfolders-manage-permissions-permission)||MANAGEPERMISSIONS|
-|[Read](../../permissions.md#workitemqueryfolders-read-permission)|WorkItemQueryFolders|READ|
+|[Contribute(../../../security/permissions.md#workitemqueryfolders-contribute-permission)|WorkItemQueryFolders|CONTRIBUTE|
+|[Delete(../../../security/permissions.md#workitemqueryfolders-delete-permission)|WorkItemQueryFolders|DELETE|
+|[Manage permissions(../../../security/permissions.md#workitemqueryfolders-manage-permissions-permission)||MANAGEPERMISSIONS|
+|[Read(../../../security/permissions.md#workitemqueryfolders-read-permission)|WorkItemQueryFolders|READ|
 
 <a id="tagging-permissions"></a>
 ### Tagging
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Create tag definition](../../permissions.md#create-tag-definition-permission)|Tagging|CREATE|
-|[Delete tag definition](../../permissions.md#delete-tag-definition-permission)|Tagging|DELETE|
-|[Enumerate tag definition](../../permissions.md#enumerate-tag-definition-permission)|Tagging|ENUMERATE|
-|[Update tag definition](../../permissions.md#update-tag-definition-permission)|Tagging|UPDATE|
+|[Create tag definition(../../../security/permissions.md#create-tag-definition-permission)|Tagging|CREATE|
+|[Delete tag definition(../../../security/permissions.md#delete-tag-definition-permission)|Tagging|DELETE|
+|[Enumerate tag definition(../../../security/permissions.md#enumerate-tag-definition-permission)|Tagging|ENUMERATE|
+|[Update tag definition(../../../security/permissions.md#update-tag-definition-permission)|Tagging|UPDATE|
 
 <a id="area-permissions"</a>
 ### Area
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Create child nodes](../../permissions.md#area-create-child-nodes-permission)|CSS|CREATE_CHILDREN|
-|[Delete this node](../../permissions.md#area-delete-this-node-permission)|CSS|DELETE|
-|[Edit this node](../../permissions.md#area-edit-this-node-permission)|CSS|GENERIC_WRITE|
-|[Edit work items in this node](../../permissions.md#area-edit-work-items-in-this-node-permission)|CSS|WORK_ITEM_WRITE|
-|[Manage test plans](../../permissions.md#area-manage-test-plans-permission)|CSS|MANAGE_TEST_PLANS|
-|[Manage test suites](../../permissions.md#area-manage-test-suites-permission)|CSS|MANAGE_TEST_SUITES|
-|[View permissions for this node](../../permissions.md#area-view-permissions-for-this-node-permission)|CSS|GENERIC_READ|
-|[View work items in this node](../../permissions.md#area-view-work-items-in-this-node-permission)|CSS|WORK_ITEM_READ|
+|[Create child nodes(../../../security/permissions.md#area-create-child-nodes-permission)|CSS|CREATE_CHILDREN|
+|[Delete this node(../../../security/permissions.md#area-delete-this-node-permission)|CSS|DELETE|
+|[Edit this node(../../../security/permissions.md#area-edit-this-node-permission)|CSS|GENERIC_WRITE|
+|[Edit work items in this node(../../../security/permissions.md#area-edit-work-items-in-this-node-permission)|CSS|WORK_ITEM_WRITE|
+|[Manage test plans(../../../security/permissions.md#area-manage-test-plans-permission)|CSS|MANAGE_TEST_PLANS|
+|[Manage test suites(../../../security/permissions.md#area-manage-test-suites-permission)|CSS|MANAGE_TEST_SUITES|
+|[View permissions for this node(../../../security/permissions.md#area-view-permissions-for-this-node-permission)|CSS|GENERIC_READ|
+|[View work items in this node(../../../security/permissions.md#area-view-work-items-in-this-node-permission)|CSS|WORK_ITEM_READ|
 
 <a id="iteration-permissions"></a>
 ### Iteration
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Create child nodes](../../permissions.md#iteration-create-child-nodes-permission)|Iteration|CREATE_CHILDREN|
-|[Delete this node](../../permissions.md#iteration-delete-this-node-permission)|Iteration|DELETE|
-|[Edit this node](../../permissions.md#iteration-edit-this-node-permission)|Iteration|GENERIC_WRITE|
-|[View permissions for this node](../../permissions.md#iteration-view-permissions-for-this-node-permission)|Iteration|GENERIC_WRITE|
+|[Create child nodes(../../../security/permissions.md#iteration-create-child-nodes-permission)|Iteration|CREATE_CHILDREN|
+|[Delete this node(../../../security/permissions.md#iteration-delete-this-node-permission)|Iteration|DELETE|
+|[Edit this node(../../../security/permissions.md#iteration-edit-this-node-permission)|Iteration|GENERIC_WRITE|
+|[View permissions for this node(../../../security/permissions.md#iteration-view-permissions-for-this-node-permission)|Iteration|GENERIC_WRITE|
 
 <a id="tfvc-permissions"></a>
 ### TFVC
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Administer labels](../../permissions.md#administer-labels-permission)|VersionControlItems|LabelOthers|
-|[Check in](../../permissions.md#check-in-permission)|VersionControlItems|Checkin|
-|[Check in other users' changes](../../permissions.md#check-in-other-users-changes-permission)|VersionControlItems|CheckinOther|
-|[Check out](../../permissions.md#check-out-permission)|VersionControlItems|PendChange|
-|[Label](../../permissions.md#label-permission)|VersionControlItems|Label|
-|[Lock](../../permissions.md#lock-permission)|VersionControlItems|Lock|
-|[Manage branch](../../permissions.md#manage-branch-permission)|VersionControlItems|ManageBranch|
-|[Manage permissions](../../permissions.md#manage-permissions-permission)|VersionControlItems|AdminProjectRights|
-|[Merge](../../permissions.md#merge-permission)|VersionControlItems|VersionControlItems|
-|[Read](../../permissions.md#read-permission)|VersionControlItems||
-|[Revise other users' changes](../../permissions.md#revise-other-users-changes-permission)|VersionControlItems|ReviseOther|
-|[Undo other users' changes](../../permissions.md#undo-other-users-changes-merge-permission)|VersionControlItems|UndoOther|
-|[Unlock other users'-changes](../../permissions.md#unlock-other-users-changes-permission)|VersionControlItems|UnlockOther|
+|[Administer labels(../../../security/permissions.md#administer-labels-permission)|VersionControlItems|LabelOthers|
+|[Check in(../../../security/permissions.md#check-in-permission)|VersionControlItems|Checkin|
+|[Check in other users' changes(../../../security/permissions.md#check-in-other-users-changes-permission)|VersionControlItems|CheckinOther|
+|[Check out(../../../security/permissions.md#check-out-permission)|VersionControlItems|PendChange|
+|[Label(../../../security/permissions.md#label-permission)|VersionControlItems|Label|
+|[Lock(../../../security/permissions.md#lock-permission)|VersionControlItems|Lock|
+|[Manage branch(../../../security/permissions.md#manage-branch-permission)|VersionControlItems|ManageBranch|
+|[Manage permissions(../../../security/permissions.md#manage-permissions-permission)|VersionControlItems|AdminProjectRights|
+|[Merge(../../../security/permissions.md#merge-permission)|VersionControlItems|VersionControlItems|
+|[Read(../../../security/permissions.md#read-permission)|VersionControlItems||
+|[Revise other users' changes(../../../security/permissions.md#revise-other-users-changes-permission)|VersionControlItems|ReviseOther|
+|[Undo other users' changes(../../../security/permissions.md#undo-other-users-changes-merge-permission)|VersionControlItems|UndoOther|
+|[Unlock other users'-changes(../../../security/permissions.md#unlock-other-users-changes-permission)|VersionControlItems|UnlockOther|
 
 <a id="git-repo-permissions"></a>
 ### Git repository
@@ -1241,19 +1241,19 @@ TFS 2017 Update 1 and later
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Contribute](../../permissions.md#git-contribute-permission)|GitRepositories|GenericContribute|
-|[Create Branch](../../permissions.md#git-create-branch-permission)|GitRepositories|CreateBranch|
-|[Create Repository](../../permissions.md#git-create-repository-permission)|GitRepositories|CreateRepository|
-|[Create Tag](../../permissions.md#git-create-tag-permission)|GitRepositories|CreateTag|
-|[Delete Repository](../../permissions.md#git-delete-repository-permission)|GitRepositories|DeleteRepository|
-|[Edit Policies](../../permissions.md#git-edit-policies-permission)|GitRepositories|EditPolicies|
+|[Contribute(../../../security/permissions.md#git-contribute-permission)|GitRepositories|GenericContribute|
+|[Create Branch(../../../security/permissions.md#git-create-branch-permission)|GitRepositories|CreateBranch|
+|[Create Repository(../../../security/permissions.md#git-create-repository-permission)|GitRepositories|CreateRepository|
+|[Create Tag(../../../security/permissions.md#git-create-tag-permission)|GitRepositories|CreateTag|
+|[Delete Repository(../../../security/permissions.md#git-delete-repository-permission)|GitRepositories|DeleteRepository|
+|[Edit Policies(../../../security/permissions.md#git-edit-policies-permission)|GitRepositories|EditPolicies|
 |[Exempt From Policy Enforcement](../../../security/permissions.md#git-repository-permissions-objectlevel)|GitRepositories|PolicyExempt|
-|[Force Push (Rewrite History and Delete Branches)](../../permissions.md#git-force-push-permission)|GitRepositories|ForcePush|
+|[Force Push (Rewrite History and Delete Branches)(../../../security/permissions.md#git-force-push-permission)|GitRepositories|ForcePush|
 |[Manage Notes](../../../security/permissions.md#git-repository-permissions-objectlevel)|GitRepositories|ManageNote|
 |[Manage Permissions](../../../security/permissions.md#git-repository-permissions-objectlevel)|GitRepositories|ManagePermissions|
-|[Read](../../permissions.md#git-read-permission)|GitRepositories|GenericRead|
-|[Remove Others' Locks](../../permissions.md#git-remove-others-locks-permission)|GitRepositories|RemoveOthersLocks|
-|[Rename Repository](../../permissions.md#git-rename-repository-permission)|GitRepositories|RenameRepository|
+|[Read(../../../security/permissions.md#git-read-permission)|GitRepositories|GenericRead|
+|[Remove Others' Locks(../../../security/permissions.md#git-remove-others-locks-permission)|GitRepositories|RemoveOthersLocks|
+|[Rename Repository(../../../security/permissions.md#git-rename-repository-permission)|GitRepositories|RenameRepository|
 
 TFS 2017 RTM and earlier
 

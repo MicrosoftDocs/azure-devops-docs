@@ -18,7 +18,7 @@ Adds files and folders to version control.
 >**Tip:**  
 >Before you add files to version control, you should first set up the workspace on your dev machine. See [Workspace Command](workspace-command.md) or [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md).  
 
-**Requirements:** See [Permission reference for Team Foundation Server](../setup-admin/permissions.md).
+**Requirements:** See [Permissions and groups reference](../security/permissions.md).
 
     tf add itemspec [/lock:(none|checkin|checkout)] [/encoding:filetype] 
     [/noprompt] [/recursive] [/noignore] [/login:username,[password]] 

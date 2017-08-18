@@ -52,6 +52,8 @@
     href: /vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/breadcrumb/toc.json
   - name: Copy as HTML 
     href: /vsts/work/backlogs/copy-clone-work-items#html?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/breadcrumb/toc.json
+  - name: "Manage permissions & access"
+    href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: "Permissions & access for work tracking"

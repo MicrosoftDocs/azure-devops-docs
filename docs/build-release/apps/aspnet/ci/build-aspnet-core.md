@@ -11,58 +11,63 @@ ms.date: 05/23/2017
 
 # Build your ASP.NET Core app
 
-[!INCLUDE [temp](../../../_shared/version-tfs-2017-rtm.md)]
+[ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications. Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) process to automatically build your ASP.NET Core web app whenver your team pushes or checks in code. In this tutorial you learn how to define your CI process. 
 
-[!INCLUDE [temp](../../../_shared/ci-cd-newbies.md)]
+## Prerequisites 
 
-[ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications. Here we'll show you how to define your continuous integration (CI) process.
+[!INCLUDE [include](../../../_shared/ci-cd-prerequisites.md)]
 
-## Get set up
+## Open your team project
 
-For the instructions in this topic, you need an ASP.NET Core project in Visual Studio 2017 or Visual Studio 2015 Update 3.
+[!INCLUDE [include](../../../_shared/open-team-project.md)]
 
-> [!TIP]
-> If you don't yet have an app but want to try this out, then see the [Q&A below](#new_solution).
+## Import sample app code
 
-## Create the build definition
+### VSTS and TFS 2017 Update 2
 
-<ol>
-    [!INCLUDE [include](../../../_shared/begin-create-build-definition.md)]
+[!INCLUDE [include](_shared/import-code-aspnet-core-vsts.md)]
 
-    <li>Where is your code?
-   <ul>
-      <li>Team Services: Select the **ASP.NET Core (PREVIEW)** template</li>
-      <li>TFS: Start with an empty process.</li>
-   </ul>
-   </li>
+### TFS 2017 RTM
 
+1. On your dev machine, clone this repo
 
-    <li>As the repository source, select the team project, repository, and branch.</li>
+ ```
+  https://github.com/adventworks/dotnetcore-sample
+```
 
-</ol>
+1. Publish the repo to your team project. See [Create a new Git repo](../../../../git/tutorial/creatingrepo.md).
 
-## Add build tasks
+## Set up continuous integration
 
-### Team Services
+[!INCLUDE [include](../../../_shared/ci-quickstart-intro.md)]
+
+### VSTS and TFS 2017 Update 2
+
+[!INCLUDE [include](_shared/create-aspnet-core-build-team-services.md)]
 
 [!INCLUDE [include](../_shared/aspnet-core-build-tasks.md)]
 
-### TFS 2017
+### TFS 2017 RTM
 
-Add the following tasks.
+1. Make sure you have a [windows build agent set up](../../../actions/agents/v2-windows.md).
 
-  <table>
-  <tr>
-    <td>![icon](../../../steps/utility/_img/command-line.png)<br/>[Utility: Command Line](../../../steps/utility/command-line.md)</td>
-    <td>
-      <p>Restore NuGet packages.</p>
-      <ul>
-        <li>Tool: `dotnet`</li>
-        <li>Arguments: `restore`</li>
-        <li>Advanced, Working folder: Folder in which the project.json file (for projects created with VS 2015) or .csproj file (for projects created with VS 2017) exists.</li>
-      </ul>
-    </td>
-  </tr>
+1. On the **Files** tab of the **Code** hub, click **build setup now**.
+
+1. On the **Create new build definition** dialog box, select **Empty**, and then click **Next**.
+
+1. Make sure the agent queue for which you set up an agent is selected, and then click **Create**.
+
+1. Click **Add build step** and then from the **Task catalogue** dialog box add the following tasks.
+
+![icon](../../../steps/utility/_img/command-line.png) [Utility: Command Line](../../../steps/utility/command-line.md) (Restore NuGet packages.)
+
+* Tool: `dotnet`
+
+* Arguments: `restore`
+
+* Advanced, Working folder: Folder in which the project.json file (for projects created with VS 2015) or .csproj file (for projects created with VS 2017) exists.
+      
+<table>
   <tr>
     <td>![icon](../../../steps/build/_img/visual-studio-build.png)<br>[Build: Visual Studio Build](../../../steps/build/visual-studio-build.md)</td>
     <td>

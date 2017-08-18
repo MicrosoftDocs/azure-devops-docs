@@ -16,7 +16,7 @@ ms.date: 08/23/2016
 ## Overview
 
 Set up permissions to control who can read and update the code in a branch on your Git repo.
-You can set permissions for individual users and groups, and inherit and override permissions as needed from your [repo permissions](../setup-admin/permissions.md#git-repository).
+You can set permissions for individual users and groups, and inherit and override permissions as needed from your [repo permissions](../security/set-git-tfvc-repository-permissions.md#git-repository).
 
 ## Use the branches view to configure security
 

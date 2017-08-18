@@ -29,7 +29,7 @@ You may be able to resolve errors and warnings that the [Configure Features](htt
   
 -   To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** for the team project.  
   
- For more information, see [Permission reference](../../setup-admin/permissions.md).  
+ For more information, see [Permission reference](../../security/permissions.md).  
   
 ##  <a name="errors"></a> Resolve errors reported by the Configure Features wizard  
  You can resolve an error by modifying the process template used to configure the new features, or by modifying your team project. After you've corrected the error, rerun the wizard.  

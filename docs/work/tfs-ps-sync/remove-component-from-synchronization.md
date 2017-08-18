@@ -134,6 +134,6 @@ When you delete a task from Project Server that has been synchronized with a wor
   
 ## Related notes  
  [Map integration components](map-integration-components.md)   
- [Configure and manage TFS resources](../../setup-admin/account-administration.md)   
+ [Configure and manage TFS resources](../../accounts/account-management.md)   
  [Remove items that aren't synchronizing](remove-items-not-synching.md)   
  [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)

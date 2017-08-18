@@ -52,7 +52,7 @@ You can use the **ssh** command to regenerate the SSH server host key, get the s
 To use the **SSH** command, you must be a member of the Team Foundation Administrators security group as well as the local Administrators group on the machine running **TFSConfig**. 
 You must also be a member of the sysadmin security role for all the SQL Server instances used by the TFS deployment. 
 
-For more information, see [Permission reference for Team Foundation Server](../../../setup-admin/permissions.md).
+For more information, see [Permission reference for Team Foundation Server](../../../security/permissions.md).
 
 ### Remarks
 

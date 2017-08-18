@@ -46,7 +46,7 @@ cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\12.0
   
  **Requirements**  
   
- To use the **TFSFieldMapping** command, you must be a member of the **Team Foundation Administrators** or the **Project Administrators** security group. For more information, see [Permission reference](../../setup-admin/permissions.md).  
+ To use the **TFSFieldMapping** command, you must be a member of the **Team Foundation Administrators** or the **Project Administrators** security group. For more information, see [Permission reference](../../security/permissions.md).  
   
 ## Syntax  
   
