@@ -310,9 +310,9 @@ Stakeholder access supports business owners and analysts and other team members 
 
 Stakeholder access provides free access to Team Services and to on-premises TFS team projects. Stakeholders don't have to have a client access license (CAL). This view restricts functionality so that your organization complies with the end-user license agreement for Team Foundation Server. For more information, see [Visual Studio licensing white paper](http://go.microsoft.com/fwlink/?LinkId=255102).  
 
-Only account owners or members of the [Team Foundation Server Administration group](../setup-admin/add-administrator-tfs.md) can add accounts to get Stakeholder access. For information on adding stakeholder accounts:  
+Only account owners or members of the [Team Foundation Server Administration group](../accounts/add-administrator-tfs.md) can add accounts to get Stakeholder access. For information on adding stakeholder accounts:  
 
-   **Team Services:**&#160;&#160;[Add users in Visual Studio Team Services](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md)  
+   **Team Services:**&#160;&#160;[Add users in Visual Studio Team Services](../accounts/add-account-users-assign-access-levels-team-services.md)  
    **On-premises TFS:**&#160;&#160;[Change access levels](../security/change-access-levels.md)  
 
 With stakeholder access, anyone on your team can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to project plans by adding and modifying work items.  
@@ -336,7 +336,7 @@ By default, team members inherit the permissions afforded to members of the team
 
 ![Default permissions assigned to team contributors](scale/_img/default-permissions-assigned-to-team-contributors.png)  
 
-If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Add users to a team project](../setup-admin/add-users.md). 
+If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Add users to a team project](../accounts/add-users.md). 
 
 
 ## Related notes 
@@ -351,6 +351,6 @@ For a simplified view of permissions assigned to built-in groups, see [Permissio
 For a complete reference of all built-in groups and permissions, see [Permissions and groups](../security/permissions.md). 
 
 For information about assigning access levels and supporting stakeholder access, see: 
-- **Team Services**: [Add users and assign licenses in Visual Studio Team Services](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md)
+- **Team Services**: [Add users and assign licenses in Visual Studio Team Services](../accounts/add-account-users-assign-access-levels-team-services.md)
 - **TFS**: [Change access levels](../security/change-access-levels.md)  
 

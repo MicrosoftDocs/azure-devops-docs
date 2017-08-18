@@ -5,11 +5,11 @@
   - name: About security and identity (InProgress)   
     href: about-security-identity.md
   - name: Default permission and access assignments
-    href: /vsts/security/permissions-access?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
+    href: permissions-access.md
 - name: Quickstart
   items:
   - name: Invite new users
-    href: /vsts/accounts/team-services/add-account-users-from-user-hub?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
+    href: /vsts/accounts/add-account-users-from-user-hub?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: View permissions (InProgress)
     href: view-permissions.md
 - name: Tutorials
@@ -18,7 +18,7 @@
   - name: Add a user to a team project  
     href: /vsts/accounts/add-users?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: Authenticate access with personal access tokens
-    href: /vsts/setup-admin/team-services/use-personal-access-tokens-to-authenticate?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
+    href: /vsts/accounts/use-personal-access-tokens-to-authenticate?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
 - name: Concepts
   items:
   - name: About permissions and groups
@@ -28,7 +28,7 @@
   - name: Use AD or AAD groups for automated user provisioning (New Topic)
     href: /vsts/security/use-ad-or-aad-groups-provisioning?toc=/vsts/security/toc.json
   - name: Azure Active Directory groups (Team Services) 
-    href: /vsts/accounts/team-services/access-with-azure-ad?toc=/vsts/security/toc.json
+    href: /vsts/accounts/access-with-azure-ad?toc=/vsts/security/toc.json
   - name: Active Directory groups (TFS) 
     href: /vsts/tfs-server/admin/setup-ad-groups?toc=/vsts/security/toc.json
   - name: Authentication guidance

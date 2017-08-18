@@ -30,7 +30,7 @@ Teams can quickly find important information about their team projects by using 
   
 -   To view the dashboard, you must be assigned or belong to a group that has been assigned **Read** permissions in SharePoint Products for the team project.  
   
--   To create or modify work items from the dashboard, you must be a member of the **Contributors** group or your **Edit work items in this node** permissions must be set to **Allow**. See [Add users to team projects](../../setup-admin/add-users.md).  
+-   To create or modify work items from the dashboard, you must be a member of the **Contributors** group or your **Edit work items in this node** permissions must be set to **Allow**. See [Add users to team projects](../../accounts/add-users.md).  
   
 ##  <a name="Available"></a> Dashboards available to you  
  The dashboards that are available to you depend on the version of SharePoint Products that is installed on your portal and the process template used to create your team project. The following dashboards are installed with the Agile and CMMI process templates. When you create a team project with the Scrum process template, you only have access to the [Release dashboard](release-scrum.md).  

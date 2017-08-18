@@ -50,7 +50,7 @@ create a group in Windows, Active Directory, or Azure Active Directory,
 add these groups to TFS groups or Team Services groups,
 and add the same groups to grant access to additional resources.
 
-<img src="../setup-admin/_img/permissions/grant-permissions.png" style="border: 1px solid #CCCCCC" />
+<img src="_img/permissions/grant-permissions.png" style="border: 1px solid #CCCCCC" />
 
 Of course, you don't need to grant permissions for reports or the project portal
 if your team project doesn't use SQL Server Reporting Services or a SharePoint site.
@@ -59,7 +59,7 @@ if your team project doesn't use SQL Server Reporting Services or a SharePoint s
 
 You can use the tools listed in the following table to set permissions.
 Different tools are used depending on whether you are setting permissions at a server, collection, or team project level.
-You use the [TFS web portal administration context](../setup-admin/add-users.md) to set most permissions.  
+You use the [TFS web portal administration context](../accounts/add-users.md) to set most permissions.  
 
 |Permission level|Web portal security pages |Team Foundation Administration Console|TFSSecurity command-line tool|Tf command-line tool|TFSLabConfig command-line tool|
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -103,12 +103,12 @@ that has the permission explicitly set.
 To understand why a permission is inherited, you can pause over the permission setting, and then choose **Why?**.
 A new window will open. It displays the inheritance information for that permission.
 
-<img src="../setup-admin/_img/permissions/inherited-permissions.png" style="border: 1px solid #CCCCCC" />
+<img src="_img/permissions/inherited-permissions.png" style="border: 1px solid #CCCCCC" />
 
 Some object level Security dialog boxes provide an Inheritance on/off option.
 Use this option to disable inheritance for folders, shared queries, and other objects.
 
-<img src="../setup-admin/_img/permissions/turn-on-inheritance.png" style="border: 1px solid #CCCCCC" />
+<img src="_img/permissions/turn-on-inheritance.png" style="border: 1px solid #CCCCCC" />
 
 **When assigning permissions**
  
@@ -143,23 +143,23 @@ information**, and **View collection-level information**.
 
 This means that all users that you add to one team project can view the objects in other team projects within a collection.
 If you need to restrict view access, then you can [set restrictions through the area path node](../work/how-to/set-permissions-access-work-tracking.md).
-For additional methods, see [Restrict access in TFS](../setup-admin/restrict-access-tfs.md).
+For additional methods, see [Restrict access in TFS](../accounts/restrict-access-tfs.md).
 
 If you remove or deny the **View instance-level information** permission for one of the Valid Users groups,
 no users in the group will be able to access the team project, collection, or deployment, depending on the group you set.
 
-In addition, the `VALIDUSER` element can be used [to allow or restrict access for work item tracking](../setup-admin/restrict-access-tfs.md#work-items).
+In addition, the `VALIDUSER` element can be used [to allow or restrict access for work item tracking](../accounts/restrict-access-tfs.md#work-items).
 
 ## SQL Server reports (TFS) 
 
 For information about how to set permissions in Reporting Services,
-see [Add administrators to TFS](../setup-admin/add-administrator-tfs.md).
+see [Add administrators to TFS](../accounts/add-administrator-tfs.md).
 
 
 ## SharePoint integration (TFS)  
 
 For information about how to set permissions for SharePoint Products integrated with TFS,
-see [Add administrators to TFS](../setup-admin/add-administrator-tfs.md).
+see [Add administrators to TFS](../accounts/add-administrator-tfs.md).
 
 For more information, see [Determine permission levels and groups in SharePoint 2013](https://technet.microsoft.com/en-us/library/cc262690.aspx).
 
@@ -186,10 +186,10 @@ to generate encryption keys when you use Linux, Mac,
 or Windows running [Git for Windows](http://www.git-scm.com/download/win) 
 and can't use 
 [Git credential managers](../git/set-up-credential-managers.md) 
-or [personal access tokens](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) 
+or [personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
 for HTTPS authentication.
 
-*	[Personal access tokens](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) 
+*	[Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
 to generate tokens for: 
 
 	*	Accessing specific resources or activities, like builds or work items
@@ -206,7 +206,7 @@ Any app that previously had access will get an
 authentication error and can't access your account.
 
 > To remove access for personal access tokens, 
-> you must [revoke them](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md).
+> you must [revoke them](../accounts/use-personal-access-tokens-to-authenticate.md).
 
 
 

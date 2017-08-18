@@ -451,7 +451,7 @@ For information about data types and default field attributes, see [Work item da
 ####Notes  
 
 <a id="sync">  </a>
-1.  By default, system synchronizes system-defined person-name fields with Active Directory (TFS) or Azure Active Directory (Team Services). These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a team project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. See [Set up groups for use in TFS deployments](../../setup-admin/tfs/admin/setup-ad-groups.md).  
+1.  By default, system synchronizes system-defined person-name fields with Active Directory (TFS) or Azure Active Directory (Team Services). These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a team project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. See [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md).  
 
 	You can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](https://msdn.microsoft.com/library/aa337627.aspx).  
 

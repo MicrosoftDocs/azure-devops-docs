@@ -51,7 +51,7 @@ The project portal is a site associated with a team project for the purposes of 
 ##  <a name="simple"></a> Configure a Web site for your portal  
  Configure this option when you aren't using SharePoint Products or when your team project is hosted on VSTS.  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](https://www.visualstudio.com/en-us/docs/setup-admin/add-users).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](https://www.visualstudio.com/en-us/docs/accounts/add-users).  
   
 2.  Open Portal Settings.  
   
@@ -60,9 +60,9 @@ The project portal is a site associated with a team project for the purposes of 
      ![Specify URL  for project portal Web site](_img/alm_pg_portalwebsite.png "ALM_PG_PortalWebSite")  
   
 ##  <a name="validtfs"></a> Configure a prepared SharePoint site for your portal  
- Choose this option when you have a SharePoint Web application that has been integrated to work with TFS. To learn how to do this, see [SharePoint Products requirements for Team Foundation Server](https://www.visualstudio.com/en-us/docs/setup-admin/requirements#sharepoint).  
+ Choose this option when you have a SharePoint Web application that has been integrated to work with TFS. To learn how to do this, see [SharePoint Products requirements for Team Foundation Server](https://www.visualstudio.com/en-us/docs/accounts/requirements#sharepoint).  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](https://www.visualstudio.com/en-us/docs/setup-admin/add-users).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](https://www.visualstudio.com/en-us/docs/accounts/add-users).  
   
 2.  Open Portal Settings from the Settings page in Team Explorer.  
   
@@ -75,7 +75,7 @@ The project portal is a site associated with a team project for the purposes of 
 ##  <a name="addsp"></a> Add SharePoint site integration and upload portal contents from a process template  
  Choose this option to gain access to Excel reports, dashboards, and process guidance support.  To add the portal to the team project, use the **tfpt** command line tool that TFS Power Tools provides.  
   
-1.  [Add SharePoint products to your deployment](../../setup-admin/tfs/admin/add-sharepoint-to-tfs.md).  
+1.  [Add SharePoint products to your deployment](../../tfs-server/admin/add-sharepoint-to-tfs.md).  
   
 2.  Verify that you have the following tools, configurations, and permissions.  
   
@@ -85,9 +85,9 @@ The project portal is a site associated with a team project for the purposes of 
   
     2.  If you haven't installed a version of Visual Studio, [install one of them now](https://www.visualstudio.com/downloads/download-visual-studio-vs). You can download Team Explorer for free. Team Explorer must be installed on the same machine where you run the **tfpt** command line tool.  
   
-    3.  If you aren't an administrator for the team project, [get added now](../../setup-admin/add-administrator-tfs.md#project-collection).  
+    3.  If you aren't an administrator for the team project, [get added now](../../accounts/add-administrator-tfs.md#project-collection).  
   
-    4.  If you haven't been granted Full Control for the SharePoint site, [get that permission now](../../setup-admin/add-users.md).  
+    4.  If you haven't been granted Full Control for the SharePoint site, [get that permission now](../../accounts/add-users.md).  
   
 3.  Open a Command Prompt in administrative mode and change to the directory where you installed the power tools.  
   
@@ -130,7 +130,7 @@ The project portal is a site associated with a team project for the purposes of 
   
      ![Show Project Portal link on Documents page](_img/alm_pg_showprojectportal.png "ALM_PG_ShowProjectPortal")  
   
-8.  From your project portal, [add team member accounts to the Contributors group](https://www.visualstudio.com/en-us/docs/setup-admin/add-users) for the SharePoint site.  
+8.  From your project portal, [add team member accounts to the Contributors group](https://www.visualstudio.com/en-us/docs/accounts/add-users) for the SharePoint site.  
   
 ## Related notes 
 

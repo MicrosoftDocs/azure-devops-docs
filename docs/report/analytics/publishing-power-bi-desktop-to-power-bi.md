@@ -70,6 +70,6 @@ At this point the data will update on your scheduled basis using the credentials
 
 - [Analytics service overview](overview-analytics-service.md)  
 - [Client Authentication Options](client-authentication-options.md)
-- [Authenticate your identity with personal access tokens](../../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md)  
+- [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  
 - [Access data throughPower BI desktop](access-analytics-power-bi.md)  

@@ -40,7 +40,7 @@ The following steps provide support for the test experience available with TFS 2
   
 1.  **Import the test plan and test suite WIT definitions**.  
   
-    1.  If you don't have administrative permissions, [get them](../../setup-admin/add-administrator-tfs.md). To perform all the update steps, you need to be a member of the **Team Foundation Administrators** security group, and an administrator on the application-tier server.  
+    1.  If you don't have administrative permissions, [get them](../../accounts/add-administrator-tfs.md). To perform all the update steps, you need to be a member of the **Team Foundation Administrators** security group, and an administrator on the application-tier server.  
   
     2.  [Download the latest process template](../guidance/manage-process-templates.md).  
   
@@ -151,9 +151,9 @@ The following steps provide support for the test experience available with TFS 2
         TFSConfig TCM /upgradeStatus /collectionName:CollectionName /TeamProject:TeamProjectName  
         ```  
   
- After a successful data migration, all test management data should be available for use. For more information about this utility, see [TFSConfig command, TCM](../../setup-admin/tfs/command-line/tfsconfig-cmd.md#tcm).  
+ After a successful data migration, all test management data should be available for use. For more information about this utility, see [TFSConfig command, TCM](../../tfs-server/command-line/tfsconfig-cmd.md#tcm).  
   
  For information about how to access the new WIT-based test plans and test suites in the web portal, see [Create a test plan](../../manual-test/getting-started/create-a-test-plan.md).
 
 ## Related notes
-- [Manage TFS server configuration with TFSConfig](../../setup-admin/tfs/command-line/tfsconfig-cmd.md)
+- [Manage TFS server configuration with TFSConfig](../../tfs-server/command-line/tfsconfig-cmd.md)

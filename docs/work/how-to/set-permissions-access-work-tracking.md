@@ -51,7 +51,7 @@ Permissions placed on an area paths allows you to permit or restrict access to e
 
 	![Permissions for an area node](../customize/_img/ALM_CW_PermisionsForArea.png)
 
-	If the group or team member doesn't appear in the list, you can [**Add** it](../../setup-admin/add-users.md).  
+	If the group or team member doesn't appear in the list, you can [**Add** it](../../accounts/add-users.md).  
 	
 You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  
 
@@ -80,7 +80,7 @@ In this example, we grant the Team Admins group permissions to move work items t
 
 <a id="restrict-delete-permissions"></a>
 ###Restrict users from deleting work items 
-You can restrict users from deleting work items by changing their permissions to Delete work items in this project. For more information about restricting permissions, see [Restrict access to resources, Work items](../../setup-admin/restrict-access-tfs.md#work-items). 
+You can restrict users from deleting work items by changing their permissions to Delete work items in this project. For more information about restricting permissions, see [Restrict access to resources, Work items](../../accounts/restrict-access-tfs.md#work-items). 
 
 <a id="delete-test-permissions"></a>
 ###Additional permissions and access level required to delete test artifacts

@@ -31,7 +31,7 @@ create a group in Windows, Active Directory, or Azure Active Directory,
 add these groups to TFS groups or Team Services groups,
 and add the same groups to grant access to additional resources.
 
-<img src="../setup-admin/_img/permissions/grant-permissions.png" style="border: 1px solid #CCCCCC" />
+<img src="_img/permissions/grant-permissions.png" style="border: 1px solid #CCCCCC" />
 
 Of course, you don't need to grant permissions for reports or the project portal
 if your team project doesn't use SQL Server Reporting Services or a SharePoint site.

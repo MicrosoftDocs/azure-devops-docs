@@ -32,15 +32,15 @@
   - name: Configure SharePoint integration
     items:
     - name: Configure enterprise app definition
-      href: ../../setup-admin/tfs/install/sharepoint/config-enterprise-app-def.md
+      href: ../../tfs-server/install/sharepoint/config-enterprise-app-def.md
     - name: Install on same server
-      href: ../../setup-admin/tfs/install/sharepoint/install-sharepoint.md
+      href: ../../tfs-server/install/sharepoint/install-sharepoint.md
     - name: Install on different server
-      href: ../../setup-admin/tfs/install/sharepoint/setup-remote-sharepoint.md
+      href: ../../tfs-server/install/sharepoint/setup-remote-sharepoint.md
     - name: Verify SharePoint
-      href: ../../setup-admin/tfs/install/sharepoint/verify-sharepoint.md
+      href: ../../tfs-server/install/sharepoint/verify-sharepoint.md
     - name: Move SharePoint to new hardware
-      href: ../../setup-admin/tfs//install/sharepoint/move-sharepoint-new-hardware.md
+      href: ../../tfs-server/install/sharepoint/move-sharepoint-new-hardware.md
   - name: Migrate from SharePoint 2013 with TFS integration to SharePoint 2016 (InProgress) 
   - name: Disable SharePoint integration
     items:

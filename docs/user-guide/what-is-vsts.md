@@ -30,7 +30,7 @@ ms.date: 06/22/2017
 Choose Team Services when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to cloud load testing, cloud build servers, and application insights. [Small teams can start for free!](https://www.visualstudio.com/products/visual-studio-team-services-vs.aspx)  
 
 
-[![Sign up for Team Services](../_img/overview/vsts-setup-1.png)](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md)[![Add team members](../_img/overview/vsts-setup-3.png)](../setup-admin/team-services/add-team-members-vs.md)[![Add code to repository](../_img/overview/vsts-setup-4.png)](../devops-alm-overview.md#add-code) 
+[![Sign up for Team Services](../_img/overview/vsts-setup-1.png)](../accounts/sign-up-for-visual-studio-team-services.md)[![Add team members](../_img/overview/vsts-setup-3.png)](../accounts/add-team-members-vs.md)[![Add code to repository](../_img/overview/vsts-setup-4.png)](../devops-alm-overview.md#add-code) 
 
 
 ## Build and release your apps

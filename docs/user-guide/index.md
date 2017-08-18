@@ -7,7 +7,7 @@ ms.topic: get-started-article
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/02/2017
+ms.date: 08/18/2017
 ---
 
 # New User Guide
@@ -30,7 +30,7 @@ Get started with a free account, share your code using Git, and track your work 
 
 ![Learn the UI](_img/placeholder-web-app.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Create a repo](_img/placeholder-git-repo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Create a Kanban](_img/placeholder-kanban.png)   
 
-- [Set up/sign up with Team Services](/vsts/accounts/team-services/sign-up-for-visual-studio-team-services?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
+- [Set up/sign up with Team Services](/vsts/accounts/sign-up-for-visual-studio-team-services?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
 - [Code with Git](/vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Track work via Kanban](/vsts/work/kanban/kanban-quickstart?toc=/vsts/user-guide/toc.json&&bc=/vsts/user-guide/breadcrumb/toc.json)
 
@@ -38,8 +38,8 @@ Get started with a free account, share your code using Git, and track your work 
 
 ## Step-by-Step Tutorials  
 
-- [Set favorites](/vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) 
-- [Follow work and pull requests](/vsts/collaborate/follow-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
+- [Set favorites](/vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Follow work and pull requests](/vsts/collaborate/follow-work-items??toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Enable preview features](/vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
  
 
@@ -58,9 +58,9 @@ Get started with a free account, share your code using Git, and track your work 
 - Licensing (TBW) 
 
 ## Reference
-- [Permissions and access](/vsts/setup-admin/permissions-access?toc=/vsts/user-guide/toc.json)      
-- [Keyboard shortcuts](/vsts/reference/keyboard-shortcuts?toc=/vsts/user-guide/toc.json)
-- [Markdown guidance](/vsts/reference/markdown-guidance?toc=/vsts/user-guide/toc.json)
+- [Permissions and access](/vsts/security/permissions-access?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Keyboard shortcuts](/vsts/reference/keyboard-shortcuts?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Markdown guidance](/vsts/reference/markdown-guidance?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 
 
 ## Resources

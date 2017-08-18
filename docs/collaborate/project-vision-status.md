@@ -23,7 +23,7 @@ You can quickly get started with a team project from the project page. You can s
 
   
 > [!NOTE]  
-> The features and functions available from your project page depend on the source control&#151;Git or Team Foundation Version Control (TFVC)&#151;that you selected when you [created your team project](../setup-admin/create-team-project.md).  
+> The features and functions available from your project page depend on the source control&#151;Git or Team Foundation Version Control (TFVC)&#151;that you selected when you [created your team project](../accounts/create-team-project.md).  
 
 
 <div style="float:left;width:320px;margin:3px;font-size:90%">
@@ -85,7 +85,7 @@ Upon adding a team project to your collection, you'll see the get started page. 
 
 You can share your project vision and objective, as well as ways for team members to contribute to the project through a Project readme. 
 
-To edit the project README.md file, click the Edit button. You'll need to be a member of the [Project Administrators group](../setup-admin/add-administrator-tfs.md) or have your Edit project-level information permission set to allow. 
+To edit the project README.md file, click the Edit button. You'll need to be a member of the [Project Administrators group](../accounts/add-administrator-tfs.md) or have your Edit project-level information permission set to allow. 
 
 You can use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../git/create-a-readme.md) and [Markdown guidance](../reference/markdown-guidance.md). 
 
@@ -174,7 +174,7 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 
 - [Work effectively from your account hub](../connect/account-home-pages.md)  
 - [Enable preview features](../collaborate/preview-features.md)   
-- [Create a team project](../setup-admin/create-team-project.md) 
+- [Create a team project](../accounts/create-team-project.md) 
 - [Create a Readme for your repo](../git/create-a-readme.md)  
 - [Markdown guidance](../reference/markdown-guidance.md) 
 - [Agile tools overview](../work/overview.md)  
@@ -185,7 +185,7 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 
 ### Required permissions 
 
-To edit information on the team project page or manage team membership, you must be a member of the [Project Administrators group](../setup-admin/add-administrator-tfs.md) or have your Edit project-level information permission set to allow. 
+To edit information on the team project page or manage team membership, you must be a member of the [Project Administrators group](../accounts/add-administrator-tfs.md) or have your Edit project-level information permission set to allow. 
 
 To view the team project page, you must be a valid member of the team project. For more information, see [Permissions and groups, Valid user groups](../security/about-permissions.md#validusers). 
 

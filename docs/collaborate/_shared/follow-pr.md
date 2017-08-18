@@ -5,10 +5,10 @@ To track the progress of a single pull request, click the ![Follow icon](../../w
 <img src="../../work/track/_img/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" style="border: 1px solid #CCCCCC;" />  
 
 >[!IMPORTANT]
->For on-premises TFS, [you must configure an SMTP sever](../../setup-admin/tfs/admin/setup-customize-alerts.md) in order for team members to receive notifications.  
+>For on-premises TFS, [you must configure an SMTP sever](../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.  
 
 You'll only receive notifications when other members of your team modifies the PR, such as adding to the discussion or adding an attachment. 
 
-Notifications are sent to your preferred email address, which you can change from your [account preferences](../../setup-admin/account-preferences.md).  
+Notifications are sent to your preferred email address, which you can change from your [account preferences](../../accounts/account-preferences.md).  
 
 To stop following changes, open the PR context menu and click the ![Following icon](../../work/_img/icons/following-icon.png) icon. 

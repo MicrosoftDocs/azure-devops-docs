@@ -39,4 +39,4 @@ This error occurs when the New Team Project Wizard is building the **Confirm Tea
 3.  Contact the vendor who created or supplied the plug-in.  
   
 ## Related notes
-- [Create a team project](../../../setup-admin/create-team-project.md)
+- [Create a team project](../../../accounts/create-team-project.md)

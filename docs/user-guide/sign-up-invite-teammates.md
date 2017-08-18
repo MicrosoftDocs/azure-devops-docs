@@ -31,13 +31,13 @@ Enter your email address for your Microsoft account.
 	and get Visual Studio Team Services as a benefit, 
 	use the Microsoft account associated with your subscription. 
 
-	![Enter your email address](../accounts/team-services/_img/_shared/sign-in.png)
+	![Enter your email address](../accounts/_img/_shared/sign-in.png)
 
 0.	On the Microsoft account sign-in page, 
 enter your email address for your Microsoft account. 
 Then enter your password, and finish signing in.
 
-	![Enter password for your Microsoft account](../accounts/team-services/_img/_shared/sign-in-msa2.png)
+	![Enter password for your Microsoft account](../accounts/_img/_shared/sign-in-msa2.png)
 
 	If you don't have a Microsoft account, 
 	you can create a Microsoft account at this time. 
@@ -45,7 +45,7 @@ Then enter your password, and finish signing in.
 0.	Name your  account. 
 To manage your code, choose Git or Team Foundation Version Control.
 
-	![Name your Visual Studio Team Services account, choose your version control](../accounts/team-services/_img/sign-up-visual-studio-team-services/create-team-services-account.png)
+	![Name your Visual Studio Team Services account, choose your version control](../accounts/_img/sign-up-visual-studio-team-services/create-team-services-account.png)
 
 	Learn which version control ([Git](../git/overview.md) 
 	or [Team Foundation Version Control](../tfvc/overview.md)) 
@@ -53,7 +53,7 @@ To manage your code, choose Git or Team Foundation Version Control.
 
 0.	Confirm your account's location. 
 
-	![Rename team project, change account location, or select another process](../accounts/team-services/_img/sign-up-visual-studio-team-services/check-account-location-standard.png)
+	![Rename team project, change account location, or select another process](../accounts/_img/sign-up-visual-studio-team-services/check-account-location-standard.png)
 	
 	Team Services will create your first team project as "MyFirstProject" 
 	and will use Agile as your default work item process to organize your work. 
@@ -63,7 +63,7 @@ To manage your code, choose Git or Team Foundation Version Control.
 0.	After Visual Studio Team Services creates your account and team project, 
 add your code, work items, or more users.
 
-	![Add code or work items](../accounts/team-services/_img/_shared/team-project-created.png)
+	![Add code or work items](../accounts/_img/_shared/team-project-created.png)
 
 	Congratulations, you're now a Visual Studio Team Services account owner! 
 

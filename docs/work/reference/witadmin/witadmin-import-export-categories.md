@@ -35,7 +35,7 @@ To learn about the default categories and how they are used, see [Use categories
   
 -   To import categories of work item types, you must be a member of the **Project Administrators** security group or have the **Edit project-level information** permission set to **Allow**.  
   
-For more information, see [Add an administrator](../../../setup-admin/add-administrator-tfs.md). 
+For more information, see [Add an administrator](../../../accounts/add-administrator-tfs.md). 
 
 ## Syntax  
   

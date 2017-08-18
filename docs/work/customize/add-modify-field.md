@@ -245,7 +245,7 @@ To modify the field label, change the value assigned to the ```Control``` elemen
 <a id="custom-control">  </a>
 ## Add a custom control  
 
-Using the [object model for tracking work items](../../setup-admin/tfs/architecture/extend-vs-for-alm.md), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
+Using the [object model for tracking work items](../../tfs-server/architecture/extend-vs-for-alm.md), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
 Or, you can add a custom control which is available through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=custom%20controls&target=VSTS&sortBy=Relevance). For example:
 
@@ -263,7 +263,7 @@ By default, the drop-down menu for the Assigned To field displays all users who 
 
 The most efficient way to apply security restrictions is to create custom groups that you manage either in Windows or a collection or team project  group.
 
-1.  Create the security group that you want to use and add the accounts to the group. For example, create a new group called **Team Contributors**. See [Add users to team projects](../../setup-admin/add-users.md).
+1.  Create the security group that you want to use and add the accounts to the group. For example, create a new group called **Team Contributors**. See [Add users to team projects](../../accounts/add-users.md).
 
 2.  Modify the definition file for each work item type that you want to limit the user set. Add the **VALIDUSER** element to the **FIELD** element definition for the Assigned To field, and specify the TFS group.
 
@@ -277,7 +277,7 @@ The most efficient way to apply security restrictions is to create custom groups
 
     By specifying the **ALLOWEXISTINGVALUE** element, you avoid validation errors that would otherwise occur when members leave the team and are no longer registered as project contributors.
 
-See also [Restrict access](../../setup-admin/restrict-access-tfs.md).  
+See also [Restrict access](../../accounts/restrict-access-tfs.md).  
 
 <a id="change-attribute">  </a>
 ## Change an attribute of an existing field (On-premises XML) 
@@ -335,7 +335,7 @@ Other related topics or resources:
 - (Team Services)  To add or customize a field by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to Allow    
 - (TFS) To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
   
-To get added as an administrator, [Add administrators](../../setup-admin/add-administrator-tfs.md).
+To get added as an administrator, [Add administrators](../../accounts/add-administrator-tfs.md).
 
 <a id="field-reference"></a>  
 
@@ -454,7 +454,7 @@ When you remove a field from a specific type of work item, that field is not rem
 For more information, see [Manage work item fields](../reference/witadmin/manage-work-item-fields.md).  
 
 <!---
-1.  If you don't have project administrator permissions for your team project, [get them](../../setup-admin/add-administrator-tfs.md).  
+1.  If you don't have project administrator permissions for your team project, [get them](../../accounts/add-administrator-tfs.md).  
 
 2.  Open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:
 

@@ -21,11 +21,11 @@ This error may occur under the following conditions:
   
 -   The wizard, while creating a team project, encounters another server component (for example, the virtual directory used by Internet Information Services) and does not find the required permissions set on your user account.  
   
- To create a team project, you must have the required permissions set on each server that hosts Team Foundation Server, SharePoint Products, and SQL Server Reporting Services. For more information, see [Create a team project](../../../setup-admin/create-team-project.md) .  
+ To create a team project, you must have the required permissions set on each server that hosts Team Foundation Server, SharePoint Products, and SQL Server Reporting Services. For more information, see [Create a team project](../../../accounts/create-team-project.md) .  
   
 ### To correct this error  
   
 -   Contact your Team Foundation Server or project collection administrator and ask that the required permissions be added to your user account. This includes the required permissions on each server that hosts Team Foundation Server, SharePoint Products, and SQL Server Reporting Services.  
   
-For more information, see [Add accounts to administer project collections](../../../setup-admin/add-administrator-tfs.md).  
+For more information, see [Add accounts to administer project collections](../../../accounts/add-administrator-tfs.md).  
   

@@ -1,5 +1,5 @@
 ---
-title: Scale: Manage work across the enterprise | Team Services & TFS
+title: Scale and manage work across the enterprise | Team Services & TFS
 description: Scale your team project by adding teams  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

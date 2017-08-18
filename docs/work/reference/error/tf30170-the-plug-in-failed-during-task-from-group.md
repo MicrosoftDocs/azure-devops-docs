@@ -25,4 +25,4 @@ This error occurs when a third-party plug-in does not operate in the manner the 
 2.  If the problem persists, reinstall the third-party plug-in.  
   
 ## Related notes 
-- [Create a team project](../../../setup-admin/create-team-project.md)
+- [Create a team project](../../../accounts/create-team-project.md)

@@ -1,5 +1,5 @@
 
-Before you start tracking work, you must have a team project. To create one hosted in the cloud, see [Sign up for Visual Studio Team Services](../../setup-admin/team-services/sign-up-for-visual-studio-team-services.md). To create one hosted on an on-premises TFS, see [Create a team project](../../setup-admin/create-team-project.md).   
+Before you start tracking work, you must have a team project. To create one hosted in the cloud, see [Sign up for Visual Studio Team Services](../../accounts/sign-up-for-visual-studio-team-services.md). To create one hosted on an on-premises TFS, see [Create a team project](../../accounts/create-team-project.md).   
 
 If you have a team project, start tracking work:  
 

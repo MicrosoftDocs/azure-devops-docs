@@ -223,7 +223,7 @@ You can use query operators in the following table to specify how each value in 
 	<td><p> <strong>String</strong>  that matches the name of a user group in Team Foundation Server or a category group defined for a team project.</p>
 <blockquote><strong>Note:</strong>  You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. The operator cannot be used to query Azure Active Directory groups.
 </blockquote>
-<p>For more information about Azure Active Directory and Team Services, see [Access with Azure Active Directory groups](https://www.visualstudio.com/docs/setup-admin/team-services/manage-azure-active-directory-groups-visual-studio-team-services).</p></td>
+<p>For more information about Azure Active Directory and Team Services, see [Access with Azure Active Directory groups](../../accounts/manage-azure-active-directory-groups-visual-studio-team-services.md).</p></td>
 </tr>
 <tr>
 	<td><p><strong>Was Ever</strong></p></td>
@@ -305,7 +305,7 @@ For examples, see [Example work item queries](example-queries.md) and [Query for
 
 Full-text searches require a SQL collation that corresponds to a language which has a word breaker registered with SQL Server. If the collation settings for the team project collection database used for your Team Foundation Server instance do not correspond to a supported language, your search results may not match your expectations. In these cases, you might try using the **Contains** or **Does Not Contain** operators.
 
-For more information, see [Full-Text Search Queries and Collation Settings](../../setup-admin/tfs/install/sql-server/collation-requirements.md).
+For more information, see [Full-Text Search Queries and Collation Settings](../../tfs-server/install/sql-server/collation-requirements.md).
 
 ## Query indexed fields
 

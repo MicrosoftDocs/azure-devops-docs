@@ -31,7 +31,7 @@ You can share documents and files that you want to make available to all team me
   
 -   You must also have **Contribute** permissions set for the project portal in SharePoint Products.  
   
-     For more information, see [Add users to team projects](../../setup-admin/add-users.md).  
+     For more information, see [Add users to team projects](../../accounts/add-users.md).  
   
 ##  <a name="TE_Uploading"></a> Upload a document  
   

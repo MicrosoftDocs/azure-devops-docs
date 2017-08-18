@@ -33,7 +33,7 @@ To request feedback, you fill out a form that generates an email request to your
 
 	<blockquote style="font-size: 13px"><b>Note: </b>If your on-premises TFS team project was upgraded from TFS 2010 or earlier version, you may have to update your team project using the [Configure Features wizard](../customize/configure-features-after-upgrade.md).</blockquote>  
 
-	If the following message appears, you need to [configure an SMTP server](../../setup-admin/tfs/admin/setup-customize-alerts.md).
+	If the following message appears, you need to [configure an SMTP server](../../tfs-server/admin/setup-customize-alerts.md).
 
 	![Error message about email notifications not configured](_img/ALM_GF_SMTPServer.png)  
 
@@ -108,7 +108,7 @@ Reviewers launch your application and provide feedback through the free Microsof
 	With the feedback experience, you can engage stakeholders frequently to provide continuous feedback. Interacting with your working apps, your stakeholders can record rich and actionable data that the system automatically stores in the form of video or audio recordings, comments, and annotated screenshots. You can then take action on each feedback response by assigning it to a team member or creating bugs or backlog items to the linked feedback. 
 
 ##Related feedback notes  
-- You can only request feedback from a team project hosted on Team Services or an on-premises TFS. If you don't have a team project yet, create one in [Team Services](../../setup-admin/team-services/set-up-vs.md) or set one up in an [on-premises TFS](../../setup-admin/create-team-project.md).  
+- You can only request feedback from a team project hosted on Team Services or an on-premises TFS. If you don't have a team project yet, create one in [Team Services](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).  
 - You can [change the audio device or annotation tool](https://msdn.microsoft.com/library/hh561374.aspx) using the Settings icon change settings icon on the Microsoft Feedback Client.  
 - If you access the Microsoft Feedback Client from a remote machine, you can [enable remote audio](https://msdn.microsoft.com/library/hh420489.aspx).  
 - You can download the Feedback client from here: [Visual Studio download site](https://www.microsoft.com/download/details.aspx?id=48142).  

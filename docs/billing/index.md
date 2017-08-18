@@ -39,7 +39,7 @@ VSTS billing covers:
 
 ## Step-by-Step Tutorials
 
-* [Change Azure AD tenant](change-azure-active-directory-team-services-account.md)
+* [Change Azure AD tenant](../accounts/change-azure-active-directory-team-services-account.md)
 
 
 ## Concepts 
@@ -50,9 +50,9 @@ with Microsoft services such as Office 365 and Microsoft Azure.
 If your organization uses a directory (tenant) managed by Azure AD, 
 your Team Services account can also:
 
-* [use your directory to authenticate access](manage-organization-access-for-your-account-vs.md)
+* [use your directory to authenticate access](../accounts/manage-organization-access-for-your-account-vs.md)
 
-* [change your Azure AD](change-azure-active-directory-team-services-account.md)
+* [change your Azure AD](../accounts/change-azure-active-directory-team-services-account.md)
 
 
 ## Resources 

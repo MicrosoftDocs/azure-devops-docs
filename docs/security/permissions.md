@@ -21,7 +21,7 @@ This topic provides descriptions for each built-in group and permission. To lear
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](../accounts/add-administrator-tfs.md)<br/>- [Add users to a team project](../accounts/team-services/add-team-members-vs.md) (Team Services)<br/>- [Add users to a team project](../accounts/add-users.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)  |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](../accounts/restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (Team Services)<br/> - [Dashboard permissions](../report/dashboard-permissions.md#set-permissions)|    
+> |- [Add users to an administrator role](../accounts/add-administrator-tfs.md)<br/>- [Add users to a team project](../accounts/add-team-members-vs.md) (Team Services)<br/>- [Add users to a team project](../accounts/add-users.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)  |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](../accounts/restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (Team Services)<br/> - [Dashboard permissions](../report/dashboard-permissions.md#set-permissions)|    
 
  
 <table valign="top">
@@ -47,7 +47,7 @@ To learn more about inheritance, see [About permissions.md](about-permissions.md
 
 > [!NOTE]  
 > Certain features are only available to users who have the appropriate licensing level for those features. Access to those features is not controlled by permissions
-but by membership in an access level. To learn more, see [Access levels](access-levels.md). <!--- Manage users and access (Team Services)](../accounts/team-services/add-account-users-assign-access-levels-team-services.md) or [Change access levels (TFS)](change-access-levels.md). --> 
+but by membership in an access level. To learn more, see [Access levels](access-levels.md). <!--- Manage users and access (Team Services)](../accounts/add-account-users-assign-access-levels-team-services.md) or [Change access levels (TFS)](change-access-levels.md). --> 
 
 
 ## Groups
@@ -1900,7 +1900,7 @@ You can manage alert permissions using [TFSSecurity](../tfs-server/command-line/
 ##Related notes
 
 - [About permissions](about-permissions.md)  
-- [Add users to a team project](../accounts/team-services/add-team-members-vs.md) (Team Services)   
+- [Add users to a team project](../accounts/add-team-members-vs.md) (Team Services)   
 - [Add users to a team project](../accounts/add-users.md) (TFS)   
 - [Add users to an administrator role](../accounts/add-administrator-tfs.md)   
 - [Make a user a team admin](../work/scale/manage-team-assets.md)  

@@ -83,7 +83,7 @@ With user-focused features, you gain quick access to the work you're most intere
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Security</p>
 <ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Personal access tokens](../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) (TFS 2017)</li>
+<li style="margin-bottom:2px">[Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) (TFS 2017)</li>
 <li style="margin-bottom:2px">[Alternate authentication credentials](../git/auth-overview.md#alternate-credentials)</li>
 <li style="margin-bottom:2px">[OAuth authorizations](../integrate/get-started/Authentication/oauth.md)</li>
 <li style="margin-bottom:2px">[SSH public keys](../git/use-ssh-keys-to-authenticate.md) (TFS 2017)</li>
@@ -153,7 +153,7 @@ In a similar manner to the #ID field for a pull request, you can enter #ID withi
 ### Tag pull requests you want to follow  
 
 >[!NOTE]  
-><b>Feature availability: </b>The **Follow** feature for pull requests is supported from Team Services or the web portal for TFS 2017.1 or later versions. For on-premises TFS, [you must configure an SMTP sever](../setup-admin/tfs/admin/setup-customize-alerts.md) in order for team members to receive notifications. 
+><b>Feature availability: </b>The **Follow** feature for pull requests is supported from Team Services or the web portal for TFS 2017.1 or later versions. For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications. 
 
 To track the progress of a single pull request, click the ![Follow icon](../work/_img/icons/follow-icon.png) option from the context menu. To stop following changes, open the PR context menu and click the ![Following icon](../work/_img/icons/following-icon.png) icon. For details, see [Follow a work item or pull request](../collaborate/follow-work-items.md).  
 
@@ -170,7 +170,7 @@ Several features support your ability to track work assigned to you or work you 
 <a id="follow">  </a>
 ### Tag work items you want to follow  
 >[!NOTE]  
-><b>Feature availability: </b>The **Follow** feature is supported from Team Services or the web portal for TFS 2017 or later version. For on-premises TFS, [you must configure an SMTP sever](../setup-admin/tfs/admin/setup-customize-alerts.md) in order for team members to receive notifications.    
+><b>Feature availability: </b>The **Follow** feature is supported from Team Services or the web portal for TFS 2017 or later version. For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.    
 
 Click the ![Follow icon](../work/_img/icons/follow-icon.png) icon from any work item to get notified when changes are made to the work item or people add to the discussion. To stop following changes, click the ![Following icon](../work/_img/icons/following-icon.png) icon. For details, see [Follow a work item or pull request](../collaborate/follow-work-items.md).  
 
@@ -243,7 +243,7 @@ For Team Services and TFS 2017.1 and later versions, you [manage  your personal 
 The functionality is similar whether you are managing notifications or alerts, as indicated in the following tables. The main differences are changes made to the user interface. 
 
 >[!IMPORTANT]
->For on-premises TFS, [you must configure an SMTP sever](../setup-admin/tfs/admin/setup-customize-alerts.md) in order for team members to receive notifications.
+>For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.
 
 ### Notifications (Team Services, TFS 2017.1)
 
@@ -389,9 +389,9 @@ Additional resources you may find of interest:
 
 ### Set your account preferences  
 
-You [set your account preferences](../setup-admin/account-preferences.md) through your account menu.  
+You [set your account preferences](../accounts/account-preferences.md) through your account menu.  
 
-![Team Services, My Profile link on Account menu](../setup-admin/_img/account-prefs/open-profile-team-services.png)   
+![Team Services, My Profile link on Account menu](../accounts/_img/account-prefs/open-profile-team-services.png)   
 
 
 

@@ -30,7 +30,7 @@ Some features provide a new user interface and functionality, which can be manag
 
 <li style="margin-bottom:1px">[New Account Landing page](../connect/account-home-pages.md)  </li>
 <li style="margin-bottom:1px">[New Release Definition Editor](../build-release/preview/release-definition-editor.md) (Team Services)</li>
-<li style="margin-bottom:1px">[Streamlined User Management](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) (Team Services)</li>
+<li style="margin-bottom:1px">[Streamlined User Management](../accounts/add-account-users-assign-access-levels-team-services.md) (Team Services)</li>
 </ul>
 
 <!---
@@ -48,7 +48,7 @@ Some features provide a new user interface and functionality, which can be manag
 <li style="margin-bottom:1px">[Combine email recipients](manage-team-notifications.md) (TFS 2017.1)</li> 
 <li style="margin-bottom:1px">[New Account Landing page](../connect/account-home-pages.md) </li>
 <li style="margin-bottom:1px">[New Release Definition Editor](../build-release/preview/release-definition-editor.md) (Team Services)</li>
-<li style="margin-bottom:1px">[Streamlined User Management](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) (Team Services)</li>
+<li style="margin-bottom:1px">[Streamlined User Management](../accounts/add-account-users-assign-access-levels-team-services.md) (Team Services)</li>
 <!---
 <li style="margin-bottom:1px">[Task tool installers](#task-tool-installers)</li> 
 -->
@@ -102,7 +102,7 @@ If you have administrative privileges, you'll see a menu from which to choose wh
 When you enable a feature at the account level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose.
 
 >[!TIP]  
->If you don't see the user/account menu option, then you aren't an account administrator. To get added as one, see [Add administrators to Team Services and TFS](../setup-admin/add-administrator-tfs.md).  
+>If you don't see the user/account menu option, then you aren't an account administrator. To get added as one, see [Add administrators to Team Services and TFS](../accounts/add-administrator-tfs.md).  
 
 <img align="top" src="_img/preview-features-admin-s117.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC;" />  <img align="top" src="_img/preview-features-admin-s117-2.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC">  
 
@@ -149,6 +149,6 @@ You can enable a built-in Wiki for your team project or for an account. This fea
 ##Related notes  
 
 - [Collaborate overview](overview.md)  
-- [Streamlined user management](../setup-admin/team-services/manage-users-and-access-user-hub-team-services.md)  
+- [Streamlined user management](../accounts/add-account-users-from-user-hub.md)  
 - [New Account Landing page](../connect/account-home-pages.md)  
 - [New Build Editor](../build-release/preview/2017-user-experience.md)  

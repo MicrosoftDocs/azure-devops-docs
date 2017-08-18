@@ -37,12 +37,12 @@ and look at what groups you belong to and what permissions you have.
 
 3.  If you aren't a project administrator, you need to be. Find someone who is, and have them add you:
 
-    ![You can add more than one person at a time](../setup-admin/_img/add-users-team-project/add-user.png)
+    ![You can add more than one person at a time](_img/add-user.png)
 
 4.  If you need to make changes at the team level, change your context to the team overview.
 If you aren't a team administrator, you can add yourself if you're already a project administrator. Otherwise, have someone add you.
 
-    ![Team administrators do not have to be team members](../setup-admin/_img/add-administrator-tfs/add-team-administrator.png)
+    ![Team administrators](_img/add-team-administrator.png)
 
 5.  Similarly, if you need to add users to SharePoint Products or SQL Server Reporting Services,
 make sure that you have the required permissions.
@@ -50,5 +50,5 @@ make sure that you have the required permissions.
 ## Related notes
 
 - [Add users to a team](../work/scale/multiple-teams.md)  
-- [Add users to a team project](../setup-admin/add-users.md)
+- [Add users to a team project](../accounts/add-users.md)
 

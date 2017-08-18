@@ -60,8 +60,8 @@ you can still [find those steps here](#update-paid-users-azure).
 > or [buy more access to TFS or the Test hub here](buy-access-tfs-test-hub.md). 
 >
 > To manage permissions for Team Services or TFS instead, 
-> learn how to [add permissions here](add-users.md) or 
-> [restrict permissions here](restrict-access-tfs.md).
+> learn how to [add permissions here](../accounts/add-users.md) or 
+> [restrict permissions here](../accounts/restrict-access-tfs.md).
 > </div>
 
 ## Before you start

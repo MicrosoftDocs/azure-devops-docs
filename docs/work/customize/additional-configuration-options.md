@@ -39,7 +39,7 @@ Code Review
 Adds the Code Review Request and Code Review Response work item types (WITs). With them, you can [request a code review and track code review responses](https://www.visualstudio.com/get-started/code/get-code-reviewed-vs).  
 </td>
 <td>
-**Required:** [Configure an SMTP server for TFS](../../setup-admin/tfs/admin/setup-customize-alerts.md). <br/>
+**Required:** [Configure an SMTP server for TFS](../../tfs-server/admin/setup-customize-alerts.md). <br/>
 **Required:** Visual Studio (any version).
 **Availability:** Only supported when your team project uses Team Foundation version control for source control.
 </td></tr>
@@ -64,7 +64,7 @@ You can [request feedback](../connect/get-feedback.md) from your stakeholders an
 </td>
 <td>
 **Required:** Provide [Advanced access](../../security/change-access-levels.md) to users who'll request feedback.<br/>
-**Required:** [Configure an SMTP server for TFS](../../setup-admin/tfs/admin/setup-customize-alerts.md). <br/>
+**Required:** [Configure an SMTP server for TFS](../../tfs-server/admin/setup-customize-alerts.md). <br/>
 **Required:** [Grant stakeholders permission](../connect/give-permissions-feedback.md).
 
 </td>
@@ -183,7 +183,7 @@ To get started, each team must choose their preference as described in [Show bug
 
 ##Related notes 
 
-If you are the server administrator for TFS and don't actually contribute to a team, then you may want to [remove yourself as a member, and add a project lead as the team administrator](../../setup-admin/add-users.md). (When you ran the Configure Features wizard, the system automatically added your user account as a team administrator for the team project.)
+If you are the server administrator for TFS and don't actually contribute to a team, then you may want to [remove yourself as a member, and add a project lead as the team administrator](../../accounts/add-users.md). (When you ran the Configure Features wizard, the system automatically added your user account as a team administrator for the team project.)
 
 If you have updated a team project based on v5.0 of MSF for Agile, do the manual updates described in [Update the Workflow for Agile Team Projects](../reference/update-the-workflow-for-agile-team-projects.md).
 

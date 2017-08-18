@@ -21,7 +21,7 @@ ms.date: 02/22/2017
 You can use Project 2010 or later versions to plan team projects, schedule tasks, assign resources, and track changes to data that is stored in Team Services or TFS. By using Project, you can access many tools and functions through the simplified graphical menus and Office Ribbon. The Team tab menu, as shown in the following illustration, displays the same functions that are available from the Team tab in Excel.
 
 >[!NOTE]  
->For version compatibility between Team Services/TFS and Office clients, see [Requirements and compatibility, Office](../../setup-admin/requirements.md#office).  
+>For version compatibility between Team Services/TFS and Office clients, see [Requirements and compatibility, Office](../../accounts/requirements.md#office).  
  
 **Project team tab ribbon** 
 

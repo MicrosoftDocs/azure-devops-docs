@@ -13,7 +13,7 @@ ms.date: 05/26/2017
 
 **Team Services | TFS 2017 | TFS 2015 | TFS 2013**
 
-Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your team project](../../setup-admin/create-team-project.md).  
+Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your team project](../../accounts/create-team-project.md).  
 
 To support additional tracking needs, you can define your own custom work item fields. For more information, see:  
 - **Team Services**:  [Customize process](../process/customize-process.md)  

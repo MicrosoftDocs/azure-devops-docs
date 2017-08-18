@@ -40,7 +40,7 @@ Similar to work item types, you can define and modify custom link types. However
   
 -   To delete, import, or reactive link types, you must be a member of the **Project Collection Administrators** security group or have your **Manage work item link types** permission set to **Allow**.  
   
-For more information, see [Add an administrator](../../../setup-admin/add-administrator-tfs.md).  
+For more information, see [Add an administrator](../../../accounts/add-administrator-tfs.md).  
   
 > [!NOTE]
 >  Even if you log on with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**.  For more information, see the Microsoft Web site: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  

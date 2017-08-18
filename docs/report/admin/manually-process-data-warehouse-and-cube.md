@@ -31,7 +31,7 @@ Processing the warehouse or cube depends on how much data is involved; it can ta
 
 ###To access the web services
 
-1. If you aren't a member of the **Administrators** security group on the application-tier server for TFS, [get added now](../../setup-admin/add-administrator-tfs.md).  
+1. If you aren't a member of the **Administrators** security group on the application-tier server for TFS, [get added now](../../accounts/add-administrator-tfs.md).  
 
 	Also, make sure that your server-level **Administer warehouse** permission must be set to **Allow**.
 

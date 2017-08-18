@@ -61,7 +61,7 @@ to your Team Services account so that you can track these users more easily.
 	you're not required to use Team Services.
 
 0.	As TFS administrator, 
-now [add these same users to TFS](add-users.md#add-users-team-project), 
+now [add these same users to TFS](../accounts/add-users.md#add-users-team-project), 
 and [give them the necessary access](../security/change-access-levels.md).
 
 	**Note** TFS doesn't detect what happens in Team Services 
@@ -103,7 +103,7 @@ so that you can track these users.
 	**Note** These users must sign in to Visual Studio Test Professional with 
 	the same credentials that they used to join your Team Services account.
 
-0.	As TFS administrator, [add these same users to TFS](add-users.md#add-users-team-project) 
+0.	As TFS administrator, [add these same users to TFS](../accounts/add-users.md#add-users-team-project) 
 if necessary. [Give them Advanced access](../security/change-access-levels.md) 
 so they can use the Test hub.
 

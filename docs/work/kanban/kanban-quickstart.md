@@ -20,7 +20,7 @@ User stories and bugs correspond to types of work items. You use  [work items](.
 
 ## Open your Kanban board from the web portal
 
-You access your Kanban board from the from the **Work** hub, **Backlogs** page. You then click **Board**. If you don't have a team project yet, create one in [Visual Studio Team Services](../../setup-admin/team-services/set-up-vs.md) or set one up in an [on-premises TFS](../../setup-admin/create-team-project.md).  
+You access your Kanban board from the from the **Work** hub, **Backlogs** page. You then click **Board**. If you don't have a team project yet, create one in [Visual Studio Team Services](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).  
 
 <img src="../backlogs/_img/cyb-open-backlog-tfs-2017.png" alt="Web portal, choose Work hub, Backlogs" style="border: 1px solid #CCCCCC;" />   
 
@@ -82,8 +82,8 @@ If the field you want to update isn't showing, then [customize the card to show 
 All members of a team project will be able to view and contribute to your Kanban board. To invite users to start contributing, email them the URL of your Kanban board. 
 
 To add users to your team project, see these topics:   
--  **Team Services**: [Add and manage users](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md)   
--  **On-premises TFS**: [Add users to a team project](../../setup-admin/add-users.md)   
+-  **Team Services**: [Add and manage users](../../accounts/add-account-users-assign-access-levels-team-services.md)   
+-  **On-premises TFS**: [Add users to a team project](../../accounts/add-users.md)   
 
 
 ## Try this next 

@@ -44,7 +44,7 @@ You open your Kanban board using one of these URLs that connects you to your tea
 **Team Services**:  ```http://AccountName/DefaultCollection/TeamProjectName/_backlogs/board/ ```  
 **On-premises TFS**:  ```http://ServerName:8080/tfs/DefaultCollection/TeamProjectName/_backlogs/board/```  
 
-If you don't have a team project yet, create one in [Visual Studio Team Services](../../setup-admin/team-services/set-up-vs.md) or set one up in an [on-premises TFS](../../setup-admin/create-team-project.md). If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) or [TFS](../../setup-admin/add-users.md).
+If you don't have a team project yet, create one in [Visual Studio Team Services](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md). If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../accounts/add-account-users-assign-access-levels-team-services.md) or [TFS](../../accounts/add-users.md).
 
 ## 1. Map the flow of how your team works
 <meta name="description" content="Kanban workflow" />

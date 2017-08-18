@@ -27,13 +27,13 @@ You use work items to share information, assign work to team members, track depe
 and more. Because the most important work appears at the top of the list, your team always knows what to work on next.
 
 ## Convert ideas into backlog items or stories
-Building your backlog starts by quickly capturing the requirements you want for your product. If you don't have a team project yet, create one in [Visual Studio Team Services](../../setup-admin/team-services/set-up-vs.md) or set one up in an [on-premises TFS](../../setup-admin/create-team-project.md).   
+Building your backlog starts by quickly capturing the requirements you want for your product. If you don't have a team project yet, create one in [Visual Studio Team Services](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).   
 
 
 
 ### Open your backlog from the web portal
 
-You access your product backlog from the **Work** hub, **Backlogs** page. If you don't have a team project yet, create one in [Visual Studio Team Services](../../setup-admin/team-services/set-up-vs.md) or set one up in an [on-premises TFS](../../setup-admin/create-team-project.md).   
+You access your product backlog from the **Work** hub, **Backlogs** page. If you don't have a team project yet, create one in [Visual Studio Team Services](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).   
  
 <img src="../backlogs/_img/cyb-open-backlog-tfs-2017.png" alt="Web portal, choose Work hub, Backlogs" style="border: 1px solid #CCCCCC;" /> 
 
@@ -41,7 +41,7 @@ The URL follows this pattern:
 - **Team Services**: ```https://<account name>.visualstudio.com/DefaultCollection/<project name>/_backlogs```  
 - **On-premises TFS**: ```http://serverName:8080/tfs/DefaultCollection/projectName/_backlogs```  
   
-To contribute to the backlog, you must be a member of the Contributors group. If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) or [TFS](../../setup-admin/add-users.md).
+To contribute to the backlog, you must be a member of the Contributors group. If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../accounts/add-account-users-assign-access-levels-team-services.md) or [TFS](../../accounts/add-users.md).
 
 If you don't see the team or team project you want, click the ![Team Services icon](../_img/icons/project-icon.png) Team Services icon to [browse all team projects and teams](../../connect/account-home-pages.md). 
  
@@ -56,7 +56,7 @@ If you don't see the team or team project you want, click the ![Team Services ic
 
 <img src="../_shared/_img/switch-team-project-2.png" alt="Choose another team from the team project menu" style="border: 1px solid #CCCCCC;" /> 
 
-<p>If you don't have a team project yet, create one in [Visual Studio Team Services](../../setup-admin/team-services/set-up-vs.md) or set one up in an [on-premises TFS](../../setup-admin/create-team-project.md). </p>  
+<p>If you don't have a team project yet, create one in [Visual Studio Team Services](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md). </p>  
 
 -->
 
