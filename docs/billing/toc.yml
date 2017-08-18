@@ -24,6 +24,8 @@
     href: ../accounts/change-azure-active-directory-team-services-account.md
 - name: How-to
   items:
+  - name: Manage VS subscriptions
+    href: using-admin-portal.md
   - name: Link work accounts to Visual Studio with MSDN subscriptions
     href: link-msdn-subscription-to-organizational-account-vs.md
   - name: "Set up billing: link Azure subscription to Team Services Account"

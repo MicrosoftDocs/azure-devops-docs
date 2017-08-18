@@ -6,8 +6,6 @@
   items:
   - name: Buy Team Services extensions
     href: get-vsts-extensions.md
-  - name: Manage VS subscriptions
-    href: using-admin-portal.md
 - name: Tutorials
   items:
   - name: Get extensions for Team Services
