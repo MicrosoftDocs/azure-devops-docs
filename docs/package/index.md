@@ -13,7 +13,6 @@ ms.date: 08/10/2016
 
 Host your NuGet, npm, and Maven packages in **Team Services** and **Team Foundation Server 2017 Update 1** using Package Management feeds. 
 
-
 ## 5-Minute Quickstarts 
 
 - [Get started with NuGet](get-started-nuget.md)  
@@ -30,5 +29,4 @@ Host your NuGet, npm, and Maven packages in **Team Services** and **Team Foundat
 - Accounts and tenants (TBW)  
 - Licensing (TBW) 
 
-## Resources
 
