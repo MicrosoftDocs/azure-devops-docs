@@ -1,17 +1,17 @@
 - name: Overview
   items:
   - name: TFS management (TFS Parts)
-    href: ../setup-admin/account-administration.md?toc=/vsts/tfs-server/toc.json
+    href: ../accounts/account-management.md?toc=/vsts/tfs-server/toc.json
 - name: Quickstarts
   items:
   - name: Single server install
     href: ./install/single-server.md
   - name: Create a team project
-    href: ../setup-admin/create-team-project.md?toc=/vsts/tfs-server/toc.json
+    href: ../accounts/create-team-project.md?toc=/vsts/tfs-server/toc.json
   - name: Add users to projects
-    href: ../setup-admin/add-users.md?toc=/vsts/tfs-server/toc.json
+    href: ../accounts/add-users.md?toc=/vsts/tfs-server/toc.json
   - name: Restrict access to resources
-    href: ../setup-admin/restrict-access-tfs.md?toc=/vsts/tfs-server/toc.json
+    href: ../accounts/restrict-access-tfs.md?toc=/vsts/tfs-server/toc.json
   - name: Configure an SMTP server
     href: ./admin/setup-customize-alerts.md
 - name: Tutorials
@@ -35,9 +35,9 @@
     - name: Get started
       href: ./install/get-started.md
     - name: Requirements
-      href: ../setup-admin/requirements.md?toc=/vsts/tfs-server/toc.json
+      href: ../accounts/requirements.md?toc=/vsts/tfs-server/toc.json
     - name: Requirement changes
-      href: ../setup-admin/requirement-changes-tfs15.md?toc=/vsts/tfs-server/toc.json
+      href: requirement-changes-tfs15.md?toc=/vsts/tfs-server/toc.json
     - name: Dual server install
       href: ./install/dual-server.md
     - name: Multiple server install
@@ -132,7 +132,7 @@
     href: ./upgrade/get-started.md
     items:
     - name: Requirements
-      href: ../setup-admin/requirements.md?toc=/vsts/tfs-server/toc.json
+      href: ../accounts/requirements.md?toc=/vsts/tfs-server/toc.json
     - name: Pre-upgrade
       href: ./upgrade/pre-upgrade.md
     - name: Pre-production
@@ -183,7 +183,7 @@
   - name: Install proxy server and set up remote site
     href: ./install/install-proxy-setup-remote.md
   - name: Change site and certificate settings
-    href: ../setup-admin/websitesettings.md?toc=/vsts/tfs-server/toc.json
+    href: ../security/websitesettings.md?toc=/vsts/tfs-server/toc.json
 - name: Concepts
   items:
   - name: TFS Architecture
