@@ -30,7 +30,7 @@ If you are a Project Collection Administrator, you can now navigate to the new U
 
 When your account stays within the free limits, you don't have to pay for users to join your account.
 You only have to pay if you have more than 5 users who need Basic features, and they don't have Visual Studio subscriptions.
-You can [pay for additional users in the Visual Studio Marketplace](buy-basic-access-add-team-services-users.md), 
+You can [pay for additional users in the Visual Studio Marketplace](../billing/buy-basic-access-add-team-services-users.md), 
 return to your Team Services account, add these users, and assign them Basic access. 
 You pay monthly for their access and cancel the access anytime.
 
@@ -137,7 +137,7 @@ that you can use with Team Services.
 
 *	If you used a Microsoft account to activate your Visual Studio subscription, 
 and you're using an Azure "work or school account" with Team Services, 
-learn [how to add your "work or school account" to your subscription](link-msdn-subscription-to-organizational-account-vs.md).
+learn [how to add your "work or school account" to your subscription](../billing/link-msdn-subscription-to-organizational-account-vs.md).
 
 Still having problems? Try these 
 [troubleshooting tips](http://blogs.msdn.com/b/visualstudioalm/archive/2014/03/19/visual-studio-online-best-practices-troubleshooting-issues-with-the-quot-eligible-msdn-subscriber-license-type.aspx). 
@@ -193,7 +193,7 @@ Learn [how to buy Visual Studio subscriptions](../marketplace/vs-subscriptions/b
 
 	**Note** If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, 
 	make sure to remove your subscription's default spending limit indefinitely. 
-	[Learn more](set-up-billing-for-your-account-vs.md#AzureMSDNSubscription).
+	[Learn more](../billing/set-up-billing-for-your-account-vs.md#AzureMSDNSubscription).
 
 
 ### User access
@@ -232,13 +232,13 @@ To fix this problem, visit the [Azure account portal](https://account.windowsazu
 
 *	The Azure subscription used for billing was 
 unlinked from your Team Services account. 
-Learn more about [linking your account](set-up-billing-for-your-account-vs.md).
+Learn more about [linking your account](../billing/set-up-billing-for-your-account-vs.md).
 
 *	Your Team Services account has more users with Basic access 
 than the number of users that you're paying for in Azure. 
 Your account includes 5 free users with Basic access, 
 but if you need to add more users with Basic access, 
-you can [pay for these users](buy-basic-access-add-team-services-users.md). 
+you can [pay for these users](../billing/buy-basic-access-add-team-services-users.md). 
 Otherwise, on the 1st day of the calendar month, users who haven't 
 signed into your account the longest will lose access first. 
 If your account has users who don't need access anymore, 
@@ -260,7 +260,7 @@ This might happen for different reasons.
 	the Azure subscription used for billing might 
 	be unlinked from your Team Services account 
 	or might no longer be active. Learn more about 
-	[linking your Team Services account](set-up-billing-for-your-account-vs.md), 
+	[linking your Team Services account](../billing/set-up-billing-for-your-account-vs.md), 
 	or visit the [Azure account portal](https://account.windowsazure.com/subscriptions) 
 	to check your payment details.
 

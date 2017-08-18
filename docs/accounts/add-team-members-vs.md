@@ -128,8 +128,8 @@ You can add unlimited Stakeholders and Visual Studio subscribers for no extra ch
 After you assign all 5 free users with Basic access, 
 you can continue adding Stakeholders and Visual Studio subscribers. 
 To add a 6th user or more with Basic access, 
-you'll need to [set up billing in Azure](set-up-billing-for-your-account-vs.md). 
-You can then [pay for more users who need Basic access](buy-basic-access-add-team-services-users.md), 
+you'll need to [set up billing in Azure](../billing/set-up-billing-for-your-account-vs.md). 
+You can then [pay for more users who need Basic access](../billing/buy-basic-access-add-team-services-users.md), 
 return to your Team Services account, 
 [add these users, and assign them Basic access](add-account-users-assign-access-levels-team-services.md). 
 This lets you pay monthly for their access, and you can cancel anytime.

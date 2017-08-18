@@ -124,7 +124,7 @@ permissions to restore your Team Services account.
 0.  After you restore your account:
 
 	*	If billing was set up for your account, you'll have to set it up again. Just 
-[relink your account](set-up-billing-for-your-account-vs.md) to an Azure subscription.
+[relink your account](../billing/set-up-billing-for-your-account-vs.md) to an Azure subscription.
 
 	*   If your account was connected to Azure AD for authenticating user access, you won't have to reconnect it again.
 

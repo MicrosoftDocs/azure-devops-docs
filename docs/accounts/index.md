@@ -56,7 +56,7 @@ Use this index to setup and manage your account and configure key settings to su
 
 * [Set up billing](../billing/set-up-billing-for-your-account-vs.md)
 
-* [Pay for more users](buy-basic-access-add-team-services-users.md)
+* [Pay for more users](../billing/buy-basic-access-add-team-services-users.md)
 
 * [Permissions and access](../security/permissions-access.md). 
 

@@ -75,7 +75,7 @@
     - name: Delete users from your account
       href: delete-account-users.md
     - name: Link work accounts to Visual Studio with MSDN subscriptions
-      href: link-msdn-subscription-to-organizational-account-vs.md
+      href: ../billing/link-msdn-subscription-to-organizational-account-vs.md
     - name: Authenticate with personal access tokens
       href: use-personal-access-tokens-to-authenticate.md
     - name: Change app access policies

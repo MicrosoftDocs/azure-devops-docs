@@ -145,7 +145,7 @@ A:  If you used a Microsoft account to activate a
 that includes Team Services as a benefit, 
 you can add a work or school account that's 
 managed by Azure Active Directory to your subscription. 
-Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](link-msdn-subscription-to-organizational-account-vs.md).
+Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](../billing/link-msdn-subscription-to-organizational-account-vs.md).
 
 <a name="guest-access"></a>
 ####Q:  Can I control access to my Team Services account for external users in the connected directory?
@@ -192,7 +192,7 @@ least Co-administrator permissions for your subscription.
 You need both to make your directory appear in the Azure portal, 
 so that you can link your subscription 
 and connect your Azure AD to your Team Services account. Learn 
-[how to manage Azure subscription administrators](set-up-billing-for-your-account-vs.md#AddAzureAdmin).
+[how to manage Azure subscription administrators](../billing/set-up-billing-for-your-account-vs.md#AddAzureAdmin).
 
 <a name="why-not-my-directory"></a>
 ####Q:  Why don't I see the directory that I want to connect? What should I do?
@@ -210,7 +210,7 @@ least Co-administrator permissions for your subscription.
 You need both to make your directory appear in the Azure portal, 
 so that you can link your subscription 
 and connect your Azure AD to your Team Services account. Learn 
-[how to manage Azure subscription administrators](set-up-billing-for-your-account-vs.md#AddAzureAdmin).
+[how to manage Azure subscription administrators](../billing/set-up-billing-for-your-account-vs.md#AddAzureAdmin).
 
 	For example, if you want to use an Office 365 Azure AD, 
 	you can't use the [free subscription](https://technet.microsoft.com/library/dn832618.aspx) 
@@ -235,7 +235,7 @@ and connect your Azure AD to your Team Services account. Learn
 
 *	Your Team Services account isn't linked to the Azure 
 subscription that's associated with your directory. Learn 
-[how to link your Team Services account to an Azure subscription](set-up-billing-for-your-account-vs.md).
+[how to link your Team Services account to an Azure subscription](../billing/set-up-billing-for-your-account-vs.md).
 	
 	**Important** This link also sets up account billing, 
 	so you can bill Team Services purchases to your Azure subscription. 
@@ -262,18 +262,18 @@ subscription that's associated with your directory. Learn
 <a name="subscription-linked-already"></a>
 ####Q:  What if my Team Services account is already linked to an Azure subscription?
 
-A:  You can [change the Azure subscription](set-up-billing-for-your-account-vs.md#change-azure-subscription) 
+A:  You can [change the Azure subscription](../billing/set-up-billing-for-your-account-vs.md#change-azure-subscription) 
 that's linked to your Team Services account. 
 However, unlinking will cause your account 
 to go back to the 
-[free account limits](set-up-billing-for-your-account-vs.md#unlinking), 
+[free account limits](../billing/set-up-billing-for-your-account-vs.md#unlinking), 
 and some users might lose access until you relink. 
 
 ####Q:  What happens if I unlink my Azure subscription while my Team Services account is connected to a directory?
 
 A:  This doesn't affect your account's connection to the directory, 
 but unlinking will cause your account to go back to the 
-[free account limits](set-up-billing-for-your-account-vs.md#unlinking), 
+[free account limits](../billing/set-up-billing-for-your-account-vs.md#unlinking), 
 and some users might lose access until you relink.
 
 <a name="AlreadyConnected"></a>
@@ -316,7 +316,7 @@ If you have a Visual Studio with MSDN subscription that
 [includes Team Services](https://www.visualstudio.com/vs/pricing/) as a benefit, 
 and you activated that subscription with a Microsoft account, 
 you can add a work or school account that's managed by Azure Active Directory to your subscription. 
-Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](link-msdn-subscription-to-organizational-account-vs.md).
+Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](../billing/link-msdn-subscription-to-organizational-account-vs.md).
 
 <a name="faq-disconnect"></a>
 ### Disconnect from directory

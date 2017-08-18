@@ -111,7 +111,7 @@ add your code, work items, or more users.
 
 	> [!NOTE]
 	> If you activated your Visual Studio subscription with a Microsoft account, and your subscription includes Team Services
-	> as a benefit, learn [how to add your work or school account](link-msdn-subscription-to-organizational-account-vs.md) to your
+	> as a benefit, learn [how to add your work or school account](../billing/link-msdn-subscription-to-organizational-account-vs.md) to your
 	> subscription so you can use your subscriber benefits in Team Services.
 
 
@@ -227,7 +227,7 @@ add code, work items, or more users.
 
 	> [!NOTE]
 	> If you activated your Visual Studio subscription with a Microsoft account, and your subscription includes Team Services
-	> as a benefit, learn [how to add your work or school account](link-msdn-subscription-to-organizational-account-vs.md) to your
+	> as a benefit, learn [how to add your work or school account](../billing/link-msdn-subscription-to-organizational-account-vs.md) to your
 	> subscription so you can use your subscriber benefits in Team Services.
 
 #### Next steps 
