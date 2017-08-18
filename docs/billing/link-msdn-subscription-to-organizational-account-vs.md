@@ -93,7 +93,7 @@ A:  No, you can add only one work or school account.
 A:	This might happen for different reasons: 
 
 *	You must have an active, valid, and 
-[eligible Visual Studio subscription](../accounts/team-services/add-account-users-assign-access-levels-team-services.md#EligibleMSDNSubscriptions) 
+[eligible Visual Studio subscription](../accounts/add-account-users-assign-access-levels-team-services.md#EligibleMSDNSubscriptions) 
 that includes Team Services as a benefit.
 
 *	If your Visual Studio subscription is valid and eligible, 
@@ -102,7 +102,7 @@ before you sign in to Team Services.
 
 *	Team Services should automatically recognize your subscription when you sign in. 
 If not, try having the Team Services account owner set 
-[your access level to "Visual Studio/MSDN Subscriber" in the Team Services account](../accounts/team-services/add-account-users-assign-access-levels-team-services.md). 
+[your access level to "Visual Studio/MSDN Subscriber" in the Team Services account](../accounts/add-account-users-assign-access-levels-team-services.md). 
 
 If Team Services still doesn't recognize your subscription, try these other 
 [troubleshooting tips](http://blogs.msdn.com/b/visualstudioalm/archive/2014/03/19/visual-studio-online-best-practices-troubleshooting-issues-with-the-quot-eligible-msdn-subscriber-license-type.aspx).

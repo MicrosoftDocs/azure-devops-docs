@@ -4,222 +4,24 @@ description: Azure Active Directory (Azure AD) - Control access to Visual Studio
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
-ms.assetid: cdd9bea5-4ee4-479e-bc77-fa13a36a37a9
+ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.manager: douge
 ms.author: estfan
 ms.date: 1/19/2017
 ---
 
-#	Team Services: Access with Azure Active Directory (Azure AD)
+#  Disconnect your Team Services account from your directory
 
 **Team Services**
 
-Want to authenticate users and control access to 
-your Team Services account the same way that you 
-can with Microsoft services like Office 365 and Azure? 
-If your Team Services account was created with a Microsoft account, 
-you can connect your Team Services account to your 
-organization's directory (tenant) in 
-[Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
-You can then sign in to Team Services with the same username 
-and password that you use with these Microsoft services. 
-You can also enforce policies for accessing 
-your team's critical resources and key assets.
 
-> To use existing on-premises identities with Team Services, 
-> you can integrate on-premises directories with Azure AD by using 
-> [Azure AD Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/). 
-> To switch your Team Services account to another directory, 
-> learn [how to change your directory in Azure AD](change-azure-active-directory-team-services-account.md).
+PLACEHOLDER TOPIC
 
-##  How does Azure AD control access to Team Services?
 
-Your Team Services account authenticates users 
-through your organization's directory so that 
-only users who are members in that directory can 
-get access to your Team Services account. 
-When users are removed from your directory, 
-for example, because they've moved elsewhere, 
-they can't access your account anymore. 
-Only specific [Azure AD administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/) 
-can manage users in your directory, 
-so they control who can get access to your Team Services account. 
 
-Without Azure AD, you're solely responsible for 
-controlling Team Services account access. 
-And all users must sign in with Microsoft accounts.
 
-<a name="permissions"></a>
-## What do I need to set up an existing Team Services with Azure AD?
-
-You'll need:
-
-*	[Ownership of the Team Services account](#find-owner) that you want to connect to Azure AD. 
-
-*	A ["full" Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/), 
-such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/en-us/offers/ms-azr-0003p/), 
-associated with your organization's Azure AD and at 
-least Co-administrator permissions for your subscription. 
-You'll need both to make your directory appear in the Azure portal, 
-so that you can link your subscription and connect your 
-Azure AD to your Team Services account. Learn about 
-[Azure subscription Co-administrator permissions](set-up-billing-for-your-account-vs.md#AddAzureAdmin).
-
-  [Want to use Office 365 Azure AD with Team Services?](#o365aad)
-
-*	(Only needed if you need to add users to Azure AD) Global administrator permissions for your directory so 
-you can add current Team Services users to that directory. 
-Otherwise, work with your directory's global administrator to add users. 
-Learn more about [Azure AD administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/).
-
-  To check your permissions, [Sign in to the Azure classic portal](https://manage.windowsazure.com/) with your 
-  work or school account. Go to your target directory.
-
-  ![Check that you're a global administrator](_img/manage-work-access/azureadadmin.png)
-
-*	You must add your Microsoft account to your Azure AD. Although directory membership isn't required to 
-connect your Team Services account to Azure AD, this will make sure that you can sign in and 
-access your Team Services account after connecting to Azure AD. Otherwise, your Microsoft account will not have access to 
-your Team Services account.
-
-## What happens to current users?
-
-Your work in Team Services is associated with your sign-in address. 
-After your Team Services account is connected to your directory, 
-users will continue working seamlessly if their 
-sign-in addresses appear in the connected directory. 
-If they don't, you'll have to [add those users to your directory](#SetUpCurrentUsers). 
-Your organization might have policies about adding users to the directory, 
-so find out more first. 
-
-What if we can't use the same sign-in addresses?  You'll have to add these users to the directory with new work or school accounts, 
-or if they have existing work or school accounts, they can use those instead. Their work in Team Services 
-won't be lost and will stay with their current Team Services sign-in addresses.  You'll have to add them as new 
-users to Team Services, reassign access levels, and readd them to any team projects. They can migrate work that they want to keep, 
-except for their work history. Learn [how to manage Team Services account users](../accounts/add-account-users-assign-access-levels-team-services.md).
-
-What happens to tools that use my credentials, like alternate credentials?  Alternate credentials won't work anymore for 
-tools that run outside a web browser, like the Git command line tool.  You'll have 
-to [set up your credentials](http://support.microsoft.com/kb/2991274/en-us) again for the Team Services account that you connected.
-
-<a name="SetUpCurrentUsers"></a>
-##  Add Team Services account users to your directory
-
-If your users do not already exist in Azure AD:
-
-0.  Sign in to the [Azure classic portal](https://manage.windowsazure.com/) 
-or the [Azure portal](https://portal.azure.com) 
-as global administrator for your organization's directory. 
-See these topics for how to:
-
-	*	[Add users in the Azure classic portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-create-users).
-	*	[Add users in the Azure portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-create-azure-portal).
-
-	[Why am I asked to choose between a "work or school account" and a "personal account"?](#ChooseOrgAcctMSAcct)
-
-0.	Add the sign-in addresses for all your Team Services account users to your directory, 
-including yourself as the Team Services account owner, if not in the directory already. 
-
-  What does an example directory look like?
-  
-  Suppose Jamal is an Azure AD global administrator at Fabrikam and is in the Fabrikam directory with his 
-  work account (jamalhartnett@fabrikam.com). He's also the Team Services account owner and a user with his Microsoft 
-  account (jamalhartnett@live.com). He wants to keep his work history, so he adds his Microsoft account to the 
-  Fabrikam directory.  If Jamal doesn't need his work history, he can use his work account with Team Services. But 
-  free up the access used by his Microsoft account, he must change the Team Services account owner to his work account. 
-
-  Nicole, another user, has a work account (nicolezamora@fabrikam.com) that shares the same sign-in address with her 
-  Microsoft account, so she will continue to work seamlessly with the same sign-in address.
-
-  Here's what the Fabrikam directory might look like in the Azure classic portal after Jamal adds users from his 
-  Team Services account.
-    
-  ![Directory after adding users](_img/manage-work-access/azureaddmembers3.png)
-
-  [More questions about setting up users?](#faq-users)
-
-0.  After adding your account users to your directory, 
-connect your Team Services account to your directory. 
-
-<a name="ConnectDirectory"></a>
-##  Connect your Team Services account to your directory
-
-0.  [Sign in to the Azure classic portal](https://manage.windowsazure.com/) 
-with your personal Microsoft account as the Team Services account owner.
-
-	> [!NOTE]
-	> You can connect your Team Services account 
-	> and your directory only through the Azure classic portal.
-
-	[Why am I asked to choose between a "work or school account" and a "personal account"?](#ChooseOrgAcctMSAcct)
-
-0.  If you haven't already, 
-[link your Team Services account](set-up-billing-for-your-account-vs.md) 
-to the Azure subscription associated with your directory.
-
-  Why don't I see a directory when I link my account?  **Directory** shows a directory only when the selected 
-  Team Services account is already connected to that directory.  You'll actually connect your account to a directory 
-  elsewhere and later in Azure.
-
-  ![No connected directory](_img/_shared/no-directory.png)
-
-  [What if my account is already linked to an Azure subscription?](#subscription-linked-already)
-
-  **Important** Want to use your Azure subscription to bill Team Services purchases?  You can use your linked Azure 
-  subscription to bill purchases for your Team Services account, but if your subscription has a 
-	[spending limit](https://azure.microsoft.com/en-us/pricing/spending-limits/), you must first remove this 
-	spending limit **indefinitely**. Learn [how and why you must remove this spending limit](#remove-spending-limit).
-
-0.	Go to **Visual Studio Team Services**. 
-Select your Team Services account.
-
-    ![Azure portal, Team Services, select your account](_img/manage-work-access/azurevso_unconnected.png)
-
-0.	Choose **Configure** > **Connect**.
-
-    ![Configure your account](_img/manage-work-access/azureconfigurevso.png)
-
-    ![Connect your account](_img/manage-work-access/azureconnectdirectory1.png)
-
-0.	From the list of directories associated with the Azure subscription 
-that's linked to your Team Services account, 
-select the directory that you want to connect. 
-Save your changes when you're done.
-
-	![Select your directory](_img/manage-work-access/azureconnectdirectory2.png)
-
-	*	[Why don't I see the directory that I want?](#why-not-my-directory)
-	*	[My account's already connected to a directory. What do I do?](#AlreadyConnected)
-
-	![Account is now connected to your directory](_img/manage-work-access/azureconnectdirectory3.png)
-
-	Your account is now connected to your organization's directory.
-
-0.	To check that users can access your Team Services account, 
-invite a user from your directory to your Team Services account 
-and confirm that they can sign in.
-
-0.  If you use alternate credentials with tools that run outside a web browser, 
-like the Git command line tool, those tools won't work anymore. 
-You must [set up your credentials](http://support.microsoft.com/kb/2991274/en-us) 
-again for the Team Services account that you connected.
-
-0.	If you used a Microsoft account to sign up for a 
-[Visual Studio with MSDN subscription](https://www.visualstudio.com/vs/pricing/) 
-that includes Team Services as a benefit, 
-you can add a work or school account that's 
-managed by Azure Active Directory to your subscription. 
-Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](link-msdn-subscription-to-organizational-account-vs.md).
-
-	[More questions about connecting?](#faq-connect)
-
-#####  Next
-
-*   [Manage users and access](../accounts/add-account-users-assign-access-levels-team-services.md)
-*   [Manage access with Azure AD groups](manage-azure-active-directory-groups-visual-studio-team-services.md)
 
 <a name="DisconnectDirectory"></a>
-##  Disconnect your Team Services account from your directory
 
 To stop using your organization's directory and return to signing in with Microsoft accounts, 
 you can disconnect your Team Services account from your directory. 
@@ -238,9 +40,7 @@ because Azure AD users can't disconnect Team Services accounts from directories.
 You can add Microsoft accounts to a directory as external users. 
 Learn about [managing Azure administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/).
 
-###	What happens to current users?
-
-Users will continue working seamlessly if they have Microsoft accounts 
+**What happens to current users?**  Users will continue working seamlessly if they have Microsoft accounts 
 that share the same sign-in addresses that they use now.
 Otherwise, they won't have access until you add them to 
 Team Services as new users. They can migrate everything except work history, 
@@ -281,33 +81,6 @@ Select your Team Services account.
 	account has the same email address as your Microsoft account.
 
 	[More questions about disconnecting?](#faq-disconnect)
-
-<a id="delete-directory-members"></a>
-##  Delete users from Team Services connected to Azure AD
-
-You can just [delete the user from each Team Services account](../accounts/add-account-users-assign-access-levels-team-services.md#delete-user) 
-where you need to remove them. If you delete the user only from Azure AD, they may still show up in Team Services, but 
-they won't be able to sign in.
-
-0.  [Sign in to the Azure classic portal](https://manage.windowsazure.com/) 
-as the directory administrator in Azure.
-
-	> [!NOTE]
-	> You can find the connected Azure AD 
-	> only through the Azure classic portal.
-
-0.  Go to **Visual Studio Team Services**. 
-Find the Azure AD that's connected to your 
-Team Services account.
-
-    ![Find the directory connected to your account](_img/manage-work-access/azurefindconnecteddirectory.png)
-
-###	Delete users from Azure AD
-
-0.	Follow [these steps](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-delete-user-azure-portal) on the azure portal.
-
-0.  [Remove the user](../accounts/add-account-users-assign-access-levels-team-services.md#delete-user) 
-from your Team Services account and reassign their access levels, if necessary.
 
 ## Q&A
 

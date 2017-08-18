@@ -29,40 +29,40 @@ Use this index to setup and manage your account and configure key settings to su
 
 ## 5-Minute Quickstarts  
 
-* [Create your account with a person Microsoft account](team-services/sign-up-for-visual-studio-team-services.md)
+* [Create your account with a person Microsoft account](sign-up-for-visual-studio-team-services.md)
 
-* [Create your account with a work or school account](team-services/sign-up-for-visual-studio-team-services.md)
+* [Create your account with a work or school account](sign-up-for-visual-studio-team-services.md)
 
-* [Connect to your account](team-services/connect-to-visual-studio-team-services.md)
+* [Connect to your account](connect-to-visual-studio-team-services.md)
 
-* [Add users to your account](team-services/add-account-users-from-user-hub.md)
+* [Add users to your account](add-account-users-from-user-hub.md)
 
 * [Try extensions for free](../billing/try-additional-features-vs.md)
 
 
 ## Step-by-Step Tutorials
 
-* [Change Azure AD tenant](team-services/change-azure-active-directory-team-services-account.md)
+* [Change Azure AD tenant](change-azure-active-directory-team-services-account.md)
 
 
 ## Concepts 
 
-* [Access with Azure AD](team-services/manage-organization-access-for-your-account-vs.md)
+* [Access with Azure AD](manage-organization-access-for-your-account-vs.md)
 
-* [Access with Azure AD groups](team-services/manage-azure-active-directory-groups-visual-studio-team-services.md)
+* [Access with Azure AD groups](manage-azure-active-directory-groups-visual-studio-team-services.md)
  
  
 ## Resources 
 
 * [Set up billing](../billing/set-up-billing-for-your-account-vs.md)
 
-* [Pay for more users](team-services/buy-basic-access-add-team-services-users.md)
+* [Pay for more users](buy-basic-access-add-team-services-users.md)
 
 * [Permissions and access](../security/permissions-access.md). 
 
-* [Manage users and access](team-services/add-account-users-assign-access-levels-team-services.md)
+* [Manage users and access](add-account-users-assign-access-levels-team-services.md)
 
-* [Add users to team projects](team-services/add-team-members-vs.md)
+* [Add users to team projects](add-team-members-vs.md)
 
 * [Manage access levels](../security/change-access-levels.md)
 

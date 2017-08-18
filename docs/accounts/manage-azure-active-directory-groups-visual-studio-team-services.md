@@ -137,7 +137,7 @@ account before they appear in the Users hub.
 
 A: When these group members sign in to your Team Services account for the first time, 
 Team Services assigns an access level to them automatically. If they have 
-[Visual Studio subscriptions](../accounts/add-account-users-assign-access-levels-team-services.md#EligibleMSDNSubscriptions), 
+[Visual Studio subscriptions](add-account-users-assign-access-levels-team-services.md#EligibleMSDNSubscriptions), 
 Team Services assigns the respective access level to them. 
 Otherwise, Team Services assigns them the next "best available" 
 [access level](https://www.visualstudio.com/pricing/visual-studio-online-feature-matrix-vs) 

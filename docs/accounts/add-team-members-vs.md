@@ -29,7 +29,7 @@ signs in, they'll get Basic access, and in some cases, additional features with 
 like [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web). 
 
 > To manually assign access levels, 
-> [add members to your account instead](../accounts/add-account-users-assign-access-levels-team-services.md). 
+> [add members to your account instead](add-account-users-assign-access-levels-team-services.md). 
 > To control access to account resources, 
 > [add permissions](add-users.md) or [restrict permissions](restrict-access-tfs.md) instead.
 
@@ -38,7 +38,7 @@ like [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-t
 If you don't have a team project yet, 
 [create your team project first](connect-to-visual-studio-team-services.md).
 To add members to team projects, you'll need 
-[project administrator](../accounts/add-administrator-tfs.md), 
+[project administrator](add-administrator-tfs.md), 
 [project collection administrator, or account owner](#find-pca-owner) permissions.
 
 ## Add members to your team project
@@ -131,7 +131,7 @@ To add a 6th user or more with Basic access,
 you'll need to [set up billing in Azure](set-up-billing-for-your-account-vs.md). 
 You can then [pay for more users who need Basic access](buy-basic-access-add-team-services-users.md), 
 return to your Team Services account, 
-[add these users, and assign them Basic access](../accounts/add-account-users-assign-access-levels-team-services.md). 
+[add these users, and assign them Basic access](add-account-users-assign-access-levels-team-services.md). 
 This lets you pay monthly for their access, and you can cancel anytime.
 
 If you need more Visual Studio subscriptions, 
@@ -161,7 +161,7 @@ Learn [how to control account access with Azure AD](manage-organization-access-f
 
 ####Q:	 Why did some users lose access to certain features?
 
-A:	This might happen for [different reasons](../accounts/add-account-users-assign-access-levels-team-services.md#stopped-features).  
+A:	This might happen for [different reasons](add-account-users-assign-access-levels-team-services.md#stopped-features).  
 
 <a name="ConnectedDirectory"></a>
 
@@ -171,7 +171,7 @@ A:	This might happen for [different reasons](../accounts/add-account-users-assig
 
 ####Q:	How do I remove users from my Visual Studio Team Services account?
 
-A:	Learn [how to delete users](../accounts/add-account-users-assign-access-levels-team-services.md#delete-user) 
+A:	Learn [how to delete users](add-account-users-assign-access-levels-team-services.md#delete-user) 
 across all team projects in your Visual Studio Team Services account. 
 If you paid for more users, but don't need their account access
 anymore, you must reduce your paid users to avoid charges.
