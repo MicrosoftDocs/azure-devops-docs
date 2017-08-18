@@ -62,5 +62,5 @@ Later on, as the deployment expands, you might decide to create other groups.
 
 **Q: Can I use groups to restrict access to projects or features in TFS?**
 
-**A:** Yes, you can. You can create specific groups for [restricting access to projects](../../setup-admin/restrict-access-tfs.md), for [managing access levels](../../work/connect/change-access-levels.md), and other purposes.
+**A:** Yes, you can. You can create specific groups for [restricting access to projects](../../setup-admin/restrict-access-tfs.md), for [managing access levels](../../security/change-access-levels.md), and other purposes.
 

@@ -14,6 +14,9 @@ ms.date: 08/03/2017
 
 # What are notifications?  
 
+!!! WORK IN PROGRESS !!! 
+
+
 Notifications help you and your team stay informed about activity in your Team Services projects. With notifications, you are notified when changes occur to work items, code reviews, pull requests, source control files, and builds, you can be notified via email. For example, you can get notified whenever a bug that you opened is resolved or a work item is assigned to you. 
 
 ## What are subscriptions? 

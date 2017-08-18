@@ -38,7 +38,7 @@ of TFS that utilizes HTTPS, secure sockets layer (SSL), and certificates.
 
 To use the **Certificates** command, you must be a member of the Team Foundation Administrators security group
 and the local Administrators group on the computer from which you run the command.
-For more information, see [Permission reference for Team Foundation Server](../../../setup-admin/permissions.md).
+For more information, see [Permission reference for Team Foundation Server](../../../security/permissions.md).
 
 ### Remarks
 

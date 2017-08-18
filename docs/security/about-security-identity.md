@@ -40,7 +40,7 @@ Answers these questions:
  > and are dependent on user licenses; permissions control a user's ability to use features across TFS.
  > If you're just trying to give someone access to a team room or to Agile portfolio management
  > and test case management features,
- > you'll want to [change access levels](../work/connect/change-access-levels.md), not permissions.
+ > you'll want to [change access levels](change-access-levels.md), not permissions.
 
 
 ## Manage large numbers of users using Active Directory, Azure Active Directory, or Windows groups
@@ -63,19 +63,19 @@ You use the [TFS web portal administration context](../setup-admin/add-users.md)
 
 |Permission level|Web portal security pages |Team Foundation Administration Console|TFSSecurity command-line tool|Tf command-line tool|TFSLabConfig command-line tool|
 |---|:---:|:---:|:---:|:---:|:---:|
-|[Server-level](../setup-admin/permissions.md#server)||![check mark](../_img/check.png)|![check mark](../_img/check.png)|||
-|[Collection-level](../setup-admin/permissions.md#collection)|![check mark](../_img/check.png)|![check mark](../_img/check.png)|![check mark](../_img/check.png)|||
-|[Team project and test level](../setup-admin/permissions.md#project_test)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
-|[Build level](../setup-admin/permissions.md#build)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
-|[Git repository](../setup-admin/permissions.md#git-repo)|![check mark](../_img/check.png)|||![check mark](../_img/check.png)||
-|[Team Foundation Version Control](../setup-admin/permissions.md#tfvc)|![check mark](../_img/check.png)|||![check mark](../_img/check.png)||
-|[Area level for work item tracking](../setup-admin/permissions.md#area-permissions)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
-|[Iteration level for work item tracking](../setup-admin/permissions.md#iteration-path-permissions)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
-|[Work item query](../setup-admin/permissions.md#query)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
-|[Work item tags](../setup-admin/permissions.md#tags)|||![check mark](../_img/check.png)|||
-|[Alerts](../setup-admin/permissions.md#alerts)|||![check mark](../_img/check.png)|||
-|[Release Management](../setup-admin/permissions.md#release_management) |![check mark](../_img/check.png)||||| |
-|[Lab Management](../setup-admin/permissions.md#lab)|||||![check mark](../_img/check.png)|
+|[Server-level](permissions.md#server)||![check mark](../_img/check.png)|![check mark](../_img/check.png)|||
+|[Collection-level](permissions.md#collection)|![check mark](../_img/check.png)|![check mark](../_img/check.png)|![check mark](../_img/check.png)|||
+|[Team project and test level](permissions.md#project_test)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
+|[Build level](permissions.md#build)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
+|[Git repository](permissions.md#git-repo)|![check mark](../_img/check.png)|||![check mark](../_img/check.png)||
+|[Team Foundation Version Control](permissions.md#tfvc)|![check mark](../_img/check.png)|||![check mark](../_img/check.png)||
+|[Area level for work item tracking](permissions.md#area-permissions)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
+|[Iteration level for work item tracking](permissions.md#iteration-path-permissions)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
+|[Work item query](permissions.md#query)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
+|[Work item tags](permissions.md#tags)|||![check mark](../_img/check.png)|||
+|[Alerts](permissions.md#alerts)|||![check mark](../_img/check.png)|||
+|[Release Management](permissions.md#release_management) |![check mark](../_img/check.png)||||| |
+|[Lab Management](permissions.md#lab)|||||![check mark](../_img/check.png)|
 
 
 <a name="inheritance"></a>

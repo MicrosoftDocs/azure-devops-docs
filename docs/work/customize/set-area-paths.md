@@ -168,7 +168,7 @@ As you can see, areas play a major role in supporting Agile tools and managing w
 *	[Set team defaults](../scale/set-team-defaults.md)  
 *	[Configure team settings and add team administrators](../scale/manage-team-assets.md)   
 *	[Agile tools that rely on areas or iterations](../about-teams-and-settings.md)
-*	[Permissions and access](../../setup-admin/permissions-access.md)  
+*	[Permissions and access](../../security/permissions-access.md)  
 
 
 <a name="permissions"></a>

@@ -23,7 +23,7 @@ The Stories Overview report lists all user stories, filtered by area and iterati
   
  **Required Permissions**  
   
- To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../../setup-admin/add-users.md) or [Managing Permissions in Team Foundation Server](../../setup-admin/permissions.md).  
+ To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
   
 <a name="Data"></a> 
 ## Data in the report  

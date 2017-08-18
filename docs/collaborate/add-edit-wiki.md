@@ -146,7 +146,7 @@ To find a page, enter a title or keyword into the **Filter pages** box.
 
 - [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../reference/markdown-guidance.md)  
 - [Get Started with Git and Team Services](../git/gitquickstart.md)
-- [Git repository permissions](../setup-admin/permissions.md#git-repository)
+- [Git repository permissions](../security/permissions.md#git-repository)
 
 
 <a id="page-title-names"></a>

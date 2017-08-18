@@ -7,9 +7,10 @@
   - name: Individual versus shared queries
     href: my-shared-queries.md
   - name: Adhoc vs managed queries
-    href: adhoc-vs-managed-queries.md
+    href: /vsts/work/track/adhoc-vs-managed-queries?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
 - name: Quickstarts
   items:
+  - name: View and run a query (NEW)
   - name: Search box query
     href: search-box-queries.md
 - name: Tutorials
@@ -20,6 +21,10 @@
     href: triage-work-items.md
   - name: Edit a query
     href: using-queries.md
+  - name: Bulk modify (web)
+    href: /vsts/work/backlogs/bulk-modify-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+  - name: Follow work
+    href: /vsts/collaborate/follow-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
 - name: Samples
   items:
   - name: Query by title, ID, or description
@@ -43,7 +48,7 @@
 - name: Concepts
   items:
   - name: Share work plans
-    href: /vsts/work/share-plans?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json
+    href: /vsts/work/track/share-plans?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: Switch project or team focus
@@ -56,14 +61,16 @@
     href: /vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json
   - name: Copy as HTML 
     href: /vsts/work/backlogs/copy-clone-work-items#html?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json
+  - name: "Manage permissions & access"
+    href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: "Query fields, operators & macros"
     href: query-operators-variables.md
   - name: Work item field index
-    href: /vsts/work/guidance/work-item-field?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json
+    href: /vsts/work/guidance/work-item-field?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
   - name: WIQL syntax
-    href: /vsts/reference/wiql-syntax?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json
+    href: /vsts/reference/wiql-syntax?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
 - name: Resources
   items:
   - name: Backlogs

@@ -23,7 +23,7 @@ You can use the Bug Trends report to help track the rate at which your team is d
   
  **Required Permissions**  
   
- To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Add users to team projects](../../setup-admin/add-users.md) or [Managing Permissions in Team Foundation Server](../../setup-admin/permissions.md).  
+ To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
   
 ##  <a name="Data"></a> Data in the Report  
  The Bug Trends report calculates a rolling average of the number of bugs that the team has opened, resolved, and closed based on the filters that you specify. The rolling average is based on the seven days before the date for which it is calculated. That is, the report averages the number of bugs in each state for each of the seven days before the date, and then the result is divided by seven. The data is derived from the data warehouse.  

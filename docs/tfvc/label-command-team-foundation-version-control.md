@@ -19,7 +19,7 @@ Attaches a label to or removes a label from a version of a file or folder in the
 
 **Required Permissions**
 
-To use the **label** command, you must have the **Label** permission set to **Allow**. To modify or delete labels created by other users, you must have the **Administer labels** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **label** command, you must have the **Label** permission set to **Allow**. To modify or delete labels created by other users, you must have the **Administer labels** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf label labelname[@scope] [/owner:ownername] 
     itemspec [/version:versionspec] [/comment:("comment"|@commentfile)] 

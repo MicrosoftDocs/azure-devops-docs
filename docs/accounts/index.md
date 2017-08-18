@@ -58,15 +58,15 @@ Use this index to setup and manage your account and configure key settings to su
 
 * [Pay for more users](team-services/buy-basic-access-add-team-services-users.md)
 
-* [Permissions and access](permissions-access.md). 
+* [Permissions and access](../security/permissions-access.md). 
 
 * [Manage users and access](team-services/add-account-users-assign-access-levels-team-services.md)
 
 * [Add users to team projects](team-services/add-team-members-vs.md)
 
-* [Manage access levels](../work/connect/change-access-levels.md)
+* [Manage access levels](../security/change-access-levels.md)
 
-* [Add Stakeholder users](../work/connect/change-access-levels.md)
+* [Add Stakeholder users](../security/change-access-levels.md)
 
 * [Add users to an administrator role](add-administrator-tfs.md)
 

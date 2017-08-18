@@ -241,7 +241,7 @@ The **Manage test plans** permission enables users to:
 - Add or remove test suites to or from test plans 
 - Change test plan properties such as build and test settings 
 
-Additional test management permissions are assigned at the team project level and include the ability to create, delete, and view test runs, and manage test configurations and environments. See [Project, object, and test-level permissions](../setup-admin/permissions.md#project_test).  
+Additional test management permissions are assigned at the team project level and include the ability to create, delete, and view test runs, and manage test configurations and environments. See [Project, object, and test-level permissions](../security/permissions.md#project_test).  
  
 
 
@@ -300,7 +300,7 @@ Additional test management permissions are assigned at the team project level an
 - Edit shared work item queries  
 - Edit team project level permission ACLs  
 - Create and modify global lists  
-- Edit [event subscriptions](../setup-admin/permissions.md#alerts) (email or SOAP) on team project level events.
+- Edit [event subscriptions](../security/permissions.md#alerts) (email or SOAP) on team project level events.
 
 
 <a id="stakeholder-access"></a>  
@@ -341,16 +341,16 @@ If your on-premises TFS deployment includes reporting or SharePoint Products, ad
 
 ## Related notes 
 
-For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../setup-admin/permissions-access.md). For a comprehensive list of all permissions and default groups, see the [Permissions reference for TFS](../setup-admin/permissions.md). 
+For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../security/permissions-access.md). For a comprehensive list of all permissions and default groups, see the [Permissions reference for TFS](../security/permissions.md). 
 
 *	[Set permissions and access for work tracking](how-to/set-permissions-access-work-tracking.md) 
 *	[Get started as a Stakeholder](../quickstart/get-started-stakeholder.md)  
 *	[Add another team](scale/multiple-teams.md)  
 *	[Configure team settings](scale/manage-team-assets.md)   
 
-For a complete reference of all built-in groups and permissions, see [Permissions and groups](../setup-admin/permissions.md). 
+For a complete reference of all built-in groups and permissions, see [Permissions and groups](../security/permissions.md). 
 
 For information about assigning access levels and supporting stakeholder access, see: 
 - **Team Services**: [Add users and assign licenses in Visual Studio Team Services](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md)
-- **TFS**: [Change access levels](./connect/change-access-levels.md)  
+- **TFS**: [Change access levels](../security/change-access-levels.md)  
 

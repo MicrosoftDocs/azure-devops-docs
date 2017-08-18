@@ -17,7 +17,7 @@ Displays information about items under version control.
 
 **Required Permissions**
 
-To use the **properties** command, you must have the **Read** permission set to **Allow** for all specified files and folders. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **properties** command, you must have the **Read** permission set to **Allow** for all specified files and folders. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf properties [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,[password]]
     itemspec [/version:versionspec] [/workspace] 

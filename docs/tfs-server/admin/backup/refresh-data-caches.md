@@ -17,7 +17,7 @@ To prevent workspace errors from occurring during version control or build opera
 
 **Required permissions**
 
-To invoke the **StampWorkitemCache** Web method, you must be a member of the **Administrators** security group on the application-tier server for Team Foundation. For more information, see [Permission reference for Team Foundation Server](../../../setup-admin/permissions.md).
+To invoke the **StampWorkitemCache** Web method, you must be a member of the **Administrators** security group on the application-tier server for Team Foundation. For more information, see [Permission reference for Team Foundation Server](../../../security/permissions.md).
 
 To use the **tf workspaces** command on the client computer, your **Read** permission must be set to **Allow**.
 

@@ -27,7 +27,7 @@ To perform these procedures, you must have the following permissions set:
 
 -   If the item in the target tree is being renamed, you must have the **Check out** permission for both the source tree and the target tree set to **Allow**.
 
--   If any files affected by the operation are locked, you must have the **Lock** permission set to **Allow**. For more information about permissions, see [Pernission reference for Team Foundation Server](../setup-admin/permissions.md).
+-   If any files affected by the operation are locked, you must have the **Lock** permission set to **Allow**. For more information about permissions, see [Permissions and groups reference](../security/permissions.md).
 
 ## Initiate a Merge from the Source Control Window
 

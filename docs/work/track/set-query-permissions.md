@@ -71,7 +71,7 @@ With queries, you can not only list work items, you can create status and trend 
 - [Run and edit queries](using-queries.md)  
 - [Dashboards](../../report/dashboards.md)  
 - [Add a chart to a dashboard](../../report/add-charts-to-dashboard.md)   
-- [Permissions and access](../../setup-admin/permissions-access.md)  
+- [Permissions and access](../../security/permissions-access.md)  
 
 ### Q & A   
 <!-- BEGINSECTION class="md-qanda" -->

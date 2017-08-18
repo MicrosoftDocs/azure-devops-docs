@@ -169,7 +169,7 @@ You can control access to activities in Lab Management by changing the Lab plug-
   
 ## Related notes
 - [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
-- [Permission reference](../../../setup-admin/permissions.md)
+- [Permission reference](../../../security/permissions.md)
 - [Configure Lab Management with TFSLabConfig, Permissions](../../../setup-admin/tfs/command-line/tfslabconfig-cmd.md#permissions)
 
  

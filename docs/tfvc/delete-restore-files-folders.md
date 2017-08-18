@@ -17,7 +17,7 @@ You can delete files and folders from TFVC and also restore them, from both in t
 
 **Requirements**
 
-See [Permission reference for Team Foundation Server](../setup-admin/permissions.md).
+See [Permissions and groups reference](../security/permissions.md).
 
 ## Delete an item
 

@@ -12,7 +12,7 @@ To use the **ListTeamProjectCollectionHostGroups** command, you must
 have **View Lab Resources** permission at the Team Project collection
 level. By default, members of the TFS Administrators and Team Project
 Collection Administrators groups have this permission. For more
-information, see [Permission reference for Team Foundation Server](../../../permissions.md).
+information, see [Permissions and groups reference](/vsts/security/permissions).
 
     TFSLabConfig ListTeamProjectCollectionHostGroups
           /Collection:collectionUrl

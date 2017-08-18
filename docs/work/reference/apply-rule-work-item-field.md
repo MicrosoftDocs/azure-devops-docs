@@ -327,7 +327,7 @@ All users and groups must be qualified by one of these tokens. For example, the 
     <READONLY for="Dev Team"/>
     </FIELD>
 
-To learn more about built-in groups, see [Permissions and groups](../../setup-admin/permissions.md) 
+To learn more about built-in groups, see [Permissions and groups](../../security/permissions.md) 
 
 ## Related notes
   

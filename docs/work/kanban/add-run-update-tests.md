@@ -114,14 +114,6 @@ To initate web-based exploratory testing for a user story, you need to install t
 Test integration with the Kanban board makes it easy for teams to get started with manual testing and then take advantage of the full testing capabilities in Test Manager later, when required. When test cases are created from the Kanban board and updated afterwards in Test Manager, the Kanban board shows the correct status. However, integration is not optimized to work in the other direction; for example, when users create requirement-based suites with Test Manager instead of in the Kanban board. We intend to make some major performance improvements to this integration in future releases.
 
 
-### Customize the Kanban board 
-To customize or change the layout of the board, see one of these topics. 
-
-* [Add columns](add-columns.md)   
-* [Add swimlanes, expedite work](expedite-work.md)   
-* [Customize cards](../customize/customize-cards.md)   
-* [Add tags to categorize and filter lists](../track/add-tags-to-work-items.md)  
-
 ### REST API resources
 To programmatically create test cases, see the [Test management (REST API reference)](https://www.visualstudio.com/integrate/api/test/overview).
 

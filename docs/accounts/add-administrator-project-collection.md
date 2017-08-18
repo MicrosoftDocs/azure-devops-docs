@@ -71,7 +71,7 @@ in SQL Server Reporting Services.
 
 **A:** A team project collection administrator for TFS must be a member of the following groups or have the following permissions:
 
--   Team Foundation Server: **Project Collection Administrators** or the appropriate [collection-level permissions](permissions.md#collection) set to **Allow**.
+-   Team Foundation Server: **Project Collection Administrators** or the appropriate [collection-level permissions](../security/permissions.md#collection) set to **Allow**.
 
 -   SharePoint Products: If the collection is configured with a site collection resource, **Site Collection Administrators**.
 
@@ -92,7 +92,7 @@ in SQL Server Reporting Services.
 
 #### Q: Where can I find information about each individual permission? 
 
-**A:** You can find detailed information about individual permissions and their relationship to default groups in TFS in the [Permission reference for Team Foundation Server](permissions.md).
+**A:** You can find detailed information about individual permissions and their relationship to default groups in TFS in the [Permission reference for Team Foundation Server](../security/permissions.md).
 
 ## Team project
 

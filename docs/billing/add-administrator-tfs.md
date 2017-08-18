@@ -98,7 +98,7 @@ For example, you need to add someone as an administrator if that person is expec
 
 **A:** Optimally, an administrator for TFS must be a member of the following groups or have the following permissions:
 
--   Team Foundation Server: **Team Foundation Administrators** or have the appropriate [server-level permissions](permissions.md#server) set to **Allow**.  
+-   Team Foundation Server: **Team Foundation Administrators** or have the appropriate [server-level permissions](../security/permissions.md#server) set to **Allow**.  
 -   Windows: the local **Administrators** group on the server that is running the administration console for Team Foundation. The administration console requires administrative permissions to operate correctly.  
 -   SharePoint Products: the appropriate groups or permissions in SharePoint Central Administration. Depending on your deployment configuration and security requirements, you might not need to add the user to any groups in SharePoint Products. For optimum interoperability, consider adding them to the following SharePoint Products groups:  
     -   **Farm Administrators**  
@@ -163,7 +163,7 @@ If the user  doesn't have these permissions and role memberships, TFS configurat
 
 #### Q: Where can I find more information about each individual TFS permission?
 
-**A:** See [Permissions and groups reference](permissions.md).
+**A:** See [Permissions and groups reference](../security/permissions.md).
 
 <a name="project-collection"></a>
 ## Project collection
@@ -219,7 +219,7 @@ in SQL Server Reporting Services.
 
 **A:** A team project collection administrator for TFS must be a member of the following groups or have the following permissions:
 
--   Team Foundation Server: **Project Collection Administrators** or the appropriate [collection-level permissions](permissions.md#collection) set to **Allow**.
+-   Team Foundation Server: **Project Collection Administrators** or the appropriate [collection-level permissions](../security/permissions.md#collection) set to **Allow**.
 
 -   SharePoint Products: If the collection is configured with a site collection resource, **Site Collection Administrators**.
 
@@ -240,7 +240,7 @@ in SQL Server Reporting Services.
 
 #### Q: Where can I find information about each individual permission? 
 
-**A:** You can find detailed information about individual permissions and their relationship to default groups in TFS in the [Permission reference for Team Foundation Server](permissions.md).
+**A:** You can find detailed information about individual permissions and their relationship to default groups in TFS in the [Permission reference for Team Foundation Server](../security/permissions.md).
 
 ## Team project
 

@@ -15,7 +15,7 @@ ms.date: 08/10/2016
 
 Gets (downloads) either the latest version or a specified version of one or more files or folders from Team Foundation Server to the workspace. Although the **Get** command provides a different user interface than Visual Studio (see [Download (get) files from the Server](download-get-files-from-server.md)), the process is fundamentally the same.
 
-**Requirements:** See [Pernission reference for Team Foundation Server](../setup-admin/permissions.md).
+**Requirements:** See [Permissions and groups reference](../security/permissions.md).
 
     tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
     [/recursive] [/preview] [/noautoresolve] [/noprompt]

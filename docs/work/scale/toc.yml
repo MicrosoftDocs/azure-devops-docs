@@ -74,7 +74,8 @@
     href: /vsts/collaborate/manage-team-notifications?toc=/vsts/work/scale/toc.json&bc=/vsts/work/breadcrumb/toc.json
   - name: Switch project or team focus
     href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/scale/toc.json&bc=/vsts/work/breadcrumb/toc.json
-
+  - name: "Manage permissions & access"
+    href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: "Permissions & access for work tracking"

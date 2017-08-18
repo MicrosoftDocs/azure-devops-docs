@@ -137,7 +137,7 @@ To use the **Accounts** command, you must be a member of
 
 If you use the **/proxy** option, you must be an administrator on the proxy server.
 
-For more information, see [Permission reference for Team Foundation Server](../../../permissions.md)>.
+For more information, see [Permissions and groups reference](/vsts/security/permissions)>.
 
 ### Remarks
 

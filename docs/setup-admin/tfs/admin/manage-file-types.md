@@ -75,7 +75,7 @@ Team Foundation version control properties include general file and folder infor
  
 **Required Permissions:**
 
-To perform these procedures, you must have the Read and the Check out permissions set to Allow. For more information, see [Team Foundation Server Permissions](../../permissions.md).
+To perform these procedures, you must have the Read and the Check out permissions set to Allow. For more information, see [Team Foundation Server Permissions(../../../security/permissions.md).
 
 To configure version control file encoding:
 
@@ -107,7 +107,7 @@ File type definitions allow you to customize the way the version control system 
 
 **Required Permissions:**
 
-To add a file type association, you must have the **Edit server-level information** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](../../permissions.md).
+To add a file type association, you must have the **Edit server-level information** permission set to **Allow**. For more information, see [Team Foundation Server Permissions(../../../security/permissions.md).
 
 To add a file type association to version control:
 
@@ -134,7 +134,7 @@ File type definitions let you customize the way the version control system handl
 
 **Required Permissions:**
 
-To remove a file type association, you must have the **Edit server-level information** permission set to Allow. For more information, see [Team Foundation Server Permissions](../../permissions.md).
+To remove a file type association, you must have the **Edit server-level information** permission set to Allow. For more information, see [Team Foundation Server Permissions(../../../security/permissions.md).
 
 To remove a file type associated with version control:
 

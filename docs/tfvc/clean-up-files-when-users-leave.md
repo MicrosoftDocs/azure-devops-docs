@@ -17,7 +17,7 @@ When a member leaves a team, version control administrators must correctly dispo
 
 **Required Permissions**
 
-To perform these procedures, you must be a member of the **Team Foundation Administrators** security group. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To perform these procedures, you must be a member of the **Team Foundation Administrators** security group. For more information, see [Permissions and groups reference](../security/permissions.md).
 
 ### To clean up version-controlled files after a team member leaves
 

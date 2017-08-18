@@ -29,7 +29,7 @@ skip this topic and [simply add them to a team](../work/scale/multiple-teams.md)
  > and are dependent on user licenses; permissions control a user's ability to use features across TFS.
  > If you're just trying to give someone access to a team room or to Agile portfolio management
  > and test case management features,
- > you'll want to [change access levels](../work/connect/change-access-levels.md), not permissions.
+ > you'll want to [change access levels](../security/change-access-levels.md), not permissions.
 
 <!--- NOTE, I moved the VIew permissions section to a new topic under docs/security/view-permissions.md --> 
 
@@ -40,7 +40,7 @@ skip this topic and [simply add them to a team](../work/scale/multiple-teams.md)
 
     ![Select team project from TFS home page](_img/add-users-team-project/overview.png)
 
-    Tip: Managing user access to TFS is much easier [using groups](./permissions.md), not individual users.
+    Tip: Managing user access to TFS is much easier [using groups](../security/permissions.md), not individual users.
 
     Choose the gear icon ![Settings icon](_img/admin-gear-icon.png) to open the administration context for the project,
 	and then navigate to the Security tab.
@@ -152,7 +152,7 @@ A: The following picture shows the default permission assignments made to the Co
 ![Contributor role default permissions](_img/add-users-team-project/permissions.png)
 
 To learn more about other groups and their permission assignments,
-see [Permission reference for Team Foundation Server](./permissions.md).
+see [Permission reference for Team Foundation Server](../security/permissions.md).
 
 #### Q: How do I add someone as an administrator?
 

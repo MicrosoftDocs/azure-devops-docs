@@ -278,7 +278,7 @@ When you open the shortcut menu for an item in the Label window, you can also ch
 
  [Create and work with workspaces](create-work-workspaces.md) 
 
- [Pernission reference for Team Foundation Server](../setup-admin/permissions.md) 
+ [Permissions and groups reference](../security/permissions.md) 
 
  [Use branches to isolate risk in Team Foundation Version Control](use-branches-isolate-risk-team-foundation-version-control.md) 
 

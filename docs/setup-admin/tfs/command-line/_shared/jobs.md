@@ -32,7 +32,7 @@ or to retry a job for one or all team project collections.
 
 ### Required permissions
 
-To use the **Jobs** command, you must be a member of the Team Foundation Administrators security group. For more information, see [Permission reference for Team Foundation Server](../../../permissions.md).
+To use the **Jobs** command, you must be a member of the Team Foundation Administrators security group. For more information, see [Permissions and groups reference](/vsts/security/permissions).
 
 ### Remarks
 

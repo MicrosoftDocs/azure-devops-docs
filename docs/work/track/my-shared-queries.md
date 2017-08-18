@@ -15,6 +15,9 @@ ms.date: 08/11/2017
 
 **Team Services | TFS 2017 | TFS 2015 | TFS 2013**
 
+!!! WORK IN PROGRESS !!! 
+
+
 Managed queries help you find work items that you want to review, triage, update, or list in a report. Also, with flat-list queries, you can create status and trend charts and place them on your team dashboard. 
 
 To quickly find a work item by ID, simply enter the ID in the [work item search box](search-box-queries.md). Or, you can enter a keyword to list items containing the keyword in its title, description, or history.   

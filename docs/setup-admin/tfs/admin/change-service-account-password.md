@@ -24,7 +24,7 @@ For more information about service accounts in TFS, see [Service accounts and de
 
 **Required Permissions**:
 
- * To perform these procedures, you must be a member of the **Administrators** group on the Team Foundation application-tier server and a member of the **sysadmin** group on the server and instance of SQL Server that hosts the configuration database for Team Foundation. For more information, see [Team Foundation Server architecture](../architecture/architecture.md) and [Pernission reference for Team Foundation Server](../../permissions.md).
+ * To perform these procedures, you must be a member of the **Administrators** group on the Team Foundation application-tier server and a member of the **sysadmin** group on the server and instance of SQL Server that hosts the configuration database for Team Foundation. For more information, see [Team Foundation Server architecture](../architecture/architecture.md) and [Pernission reference for Team Foundation Server(../../../security/permissions.md).
 
 To follow a command-line procedure, you might need to open an elevated Command Prompt window. To perform this task, open the context menu for **Command Prompt**, and choose **Run as Administrator**. For more information, see this page on the Microsoft Web site: [User Account Control](http://go.microsoft.com/fwlink/?LinkId=111235).
 

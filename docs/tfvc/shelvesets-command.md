@@ -17,7 +17,7 @@ Displays information about a set of shelved changes.
 
 **Required Permissions**
 
-To use the **shelvesets** command, you must the have **Read** permission and the **Check out** permission set to **Allow** for the items in the shelvesets. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **shelvesets** command, you must the have **Read** permission and the **Check out** permission set to **Allow** for the items in the shelvesets. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf shelvesets [/owner:ownername] [/format:(brief|detailed)] [/collection:TeamProjectCollectionUrl]] [/login:username,[password]] shelvesetname
 ## Parameters<table>

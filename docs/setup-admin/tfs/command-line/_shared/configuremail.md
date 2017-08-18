@@ -23,7 +23,7 @@ Configure the server that runs Team Foundation Server (TFS) to use an existing S
 
 ### Required permissions
 
-To use the **ConfigureMail** command, you must be a member of the Team Foundation Administrators security group on the Team Foundation application-tier server. For more information, see [Permission reference for Team Foundation Server](../../../permissions.md)
+To use the **ConfigureMail** command, you must be a member of the Team Foundation Administrators security group on the Team Foundation application-tier server. For more information, see [Permissions and groups reference](/vsts/security/permissions)
 
 ### Remarks
 

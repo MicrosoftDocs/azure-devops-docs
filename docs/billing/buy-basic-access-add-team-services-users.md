@@ -56,7 +56,7 @@ you can still [find those steps here](#update-paid-users-azure).
 > <p> Access levels control which features are available to users, 
 > while permissions control access to account resources. 
 > Learn how to [manage users and access levels here](add-account-users-assign-access-levels-team-services.md). 
-> For TFS, learn how to [change access levels here](../work/connect/change-access-levels.md) 
+> For TFS, learn how to [change access levels here](../security/change-access-levels.md) 
 > or [buy more access to TFS or the Test hub here](buy-access-tfs-test-hub.md). 
 >
 > To manage permissions for Team Services or TFS instead, 

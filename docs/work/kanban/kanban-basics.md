@@ -12,10 +12,7 @@ ms.date: 08/15/2017
 
 # Kanban basics
 
-
-<!---
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
---> 
 
 To maximize a team's ability to consistently deliver high quality software, Kanban emphasize two main practices. The first, visualize the flow of work, requires you to map your team's workflow stages and configure your Kanban board to match. The second, constrain the amount of work in progress, requires you to set work-in-progress (WIP) limits. You're then ready to track progress on your Kanban board and monitor key metrics to reduce lead or cycle time.  
 
@@ -32,14 +29,13 @@ Review this topic to gain an understanding of how to configure and start working
 > * How to turn live updates on or off  
  
 
-[!INCLUDE [temp](../_shared/image-differences.md)]  
-
 To view your Kanban board, click the **Board** link from the **Work>Backlogs** page. 
 
-<img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 2px solid #C3C3C3;" />  
 
-> [!NOTE]  
-> Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs-boards-plans.md). To switch to the [product backlog](../backlogs/create-your-backlog.md), click **Backlog**. And, to switch to the [Task board](../scrum/task-board.md), click on the current iteration or other sprint of interest. If no sprints appear, see [Schedule sprints](../scrum/define-sprints.md). 
+
+[!INCLUDE [temp](../_shared/image-differences.md)] 
+
 
 User stories and bugs correspond to types of work items. You use  [work items](../backlogs/add-work-items.md) to share information, assign work to team members, update status, track dependencies, and more.
 
@@ -127,10 +123,7 @@ By monitoring these metrics, you can gain insight into how to optimize your proc
 >[!NOTE]  
 ><b>Feature availability: </b>From Team Services, you can also add the [Cumulative Flow Diagram (CFD)](../../report/guidance/cumulative-flow.md), [Lead Time and Cycle Time](../../report/guidance/cycle-time-and-lead-time.md), and [Velocity](../../report/guidance/team-velocity.md) widgets to a team dashboard.  
 
-
-## Related notes
-
-Each team can manage their backlog and customize their Kanban board. [Add teams](../scale/multiple-teams.md) when you assign specific feature areas to different teams for development. Each team can then manage their backlog and focus on how they will develop their deliverables. 
+## Try this next
 
 Here are some useful tips when working with the Kanban board:
 - To focus on select work items, [filter your Kanban board](../how-to/filter-backlog-or-board.md)
@@ -140,10 +133,13 @@ Here are some useful tips when working with the Kanban board:
 - If you use Scrumban, drag-and-drop cards onto a sprint to quickly assign them to a sprint.  
 
 
+> [!NOTE]  
+> Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs-boards-plans.md). To switch to the [product backlog](../backlogs/create-your-backlog.md), click **Backlog**. And, to switch to the [Task board](../scrum/task-board.md), click on the current iteration or other sprint of interest. If no sprints appear, see [Schedule sprints](../scrum/define-sprints.md). 
 
-if you're new to Team Services or TFS and want to understand what you can customize, see [Customize your work tracking experience](../customize/customize-work.md). 
+Each team can manage their backlog and customize their Kanban board. [Add teams](../scale/multiple-teams.md) when you assign specific feature areas to different teams for development. Each team can then manage their backlog and focus on how they will develop their deliverables. 
 
 
+If you're new to Team Services or TFS and want to understand what you can customize, see [Customize your work tracking experience](../customize/customize-work.md). 
 
 
 [!INCLUDE [temp](../_shared/live-updates.md)]  

@@ -153,7 +153,7 @@ To perform the procedures in this topic, you must first meet the following requi
  
  * If your deployment uses reporting, you must be a member of an administrative security group or have equivalent permissions individually set for configuring reporting services. 
  
- For more information about permissions, see [Permission reference for Team Foundation Server](../../setup-admin/permissions.md).
+ For more information about permissions, see [Permission reference for Team Foundation Server](../../security/permissions.md).
 
 <a name="assumptions"></a>
 ## Assumptions

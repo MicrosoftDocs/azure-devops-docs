@@ -15,7 +15,7 @@ ms.date: 08/10/2016
 
 Checks out a file and changes its pending change status to Edit. You can call this command using either **Checkout** or **Edit**.
 
-**Requirements:** See [Pernission reference for Team Foundation Server](../setup-admin/permissions.md).
+**Requirements:** See [Permissions and groups reference](../security/permissions.md).
 
     tf checkout [/lock:(none|checkin|checkout)] [/recursive] [/encoding:encoding] itemspec [/login: username,[password]]
 

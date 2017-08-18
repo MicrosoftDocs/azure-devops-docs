@@ -117,7 +117,7 @@ Or [add users to your team project](add-team-members-vs.md),
 and let Team Services assign the next available access to them.
 
 
-For a simplified view of the default permissions granted to built-in groups and stakeholders, see   [Permissions and access](../permissions-access.md). 
+For a simplified view of the default permissions granted to built-in groups and stakeholders, see   [Permissions and access](../../security/permissions-access.md). 
 
 <div style="float:left;width:230px;margin:3px">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Team Services</p>
@@ -157,7 +157,7 @@ For a simplified view of the default permissions granted to built-in groups and 
 <div style="clear:left;font-size:100%">
 </div>
 
-For details on built-in groups and permission management, see [Permissions and groups reference](../permissions.md). 
+For details on built-in groups and permission management, see [Permissions and groups reference](../../security/permissions.md). 
 
 ## Configure team settings
 
@@ -237,10 +237,10 @@ Members of the Project Administrators and Project Collection Administrator group
 <li style="margin-bottom:0px">[Build agents, pools, and service endpoints](../../build-release/overview.md)</li> 
 <li style="margin-bottom:0px">[Test retention policies](../../manual-test/getting-started/how-long-to-keep-test-results.md)</li> 
 <li style="margin-bottom:0px">[Build and release retention policies](../../build-release/concepts/policies/retention.md) </li>
-<li style="margin-bottom:0px">[Test permissions](../permissions.md#project_test)</li>
-<li style="margin-bottom:0px">[Build permissions](../permissions.md#build)</li>
-<li style="margin-bottom:0px">[Git repository security](../permissions.md#git-repo)</li>
-<li style="margin-bottom:0px">[TFVC security](../permissions.md#tfvc)</li>
+<li style="margin-bottom:0px">[Test permissions](../../security/permissions.md#project_test)</li>
+<li style="margin-bottom:0px">[Build permissions](../../security/permissions.md#build)</li>
+<li style="margin-bottom:0px">[Git repository security](../../security/permissions.md#git-repo)</li>
+<li style="margin-bottom:0px">[TFVC security](../../security/permissions.md#tfvc)</li>
 </ul>
 </div>
 
@@ -249,7 +249,7 @@ Members of the Project Administrators and Project Collection Administrator group
 <ul style="padding-left:20px">
 <li style="margin-bottom:0px">[Area and iteration paths](../../work/customize/set-area-paths.md) </li>
 <li style="margin-bottom:2px">[Work item query and folder](../../work/track/set-query-permissions.md)</li>
-<li style="margin-bottom:0px">[Project-level permissions](../permissions.md#project_test) </li>
+<li style="margin-bottom:0px">[Project-level permissions](../../security/permissions.md#project_test) </li>
 <li style="margin-bottom:0px">[Customize work tracking objects (TFS only)](../../work/customize/customize-work.md) </li> 
 </ul>
 
@@ -276,7 +276,7 @@ The method used to customize a team project depends on the process model you use
 <ul style="padding-left:20px">
 <li style="margin-bottom:2px">[Manage build agents](../../build-release/concepts/agents/pools-queues.md) (Team Services) </li>
 <li style="margin-bottom:2px">[Extensions (install/manage extensions)](../../marketplace/get-vsts-extensions.md)</li>
-<li style="margin-bottom:2px">[Security (manage collection-level permissions)](../permissions.md#collection)</li>
+<li style="margin-bottom:2px">[Security (manage collection-level permissions)](../../security/permissions.md#collection)</li>
 </ul>
 </div>
  

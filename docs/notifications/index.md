@@ -19,18 +19,14 @@ ms.date: 08/03/2017
 
 ## 5-Minute Quickstarts  
 
-- [Set your personal notifications](../collaborate/manage-personal-notifications.md)
-- [Follow work & pull requests](../collaborate/follow-work-items.md)  
+- [Use @mentions to further discussion](at-mentions.md)
+- [Use #ID to link to work items](add-links-to-work-items.md)
+ 
 
 
 ## Step-by-Step Tutorials
-
-- [Set team notifications](../collaborate/manage-team-notifications.md)
-- [Post messages to Campfire](../collaborate/campfire.md)
-- [Post messages to Flowdock](../collaborate/flowdock.md)
-- [Post messages to Hipchat](../collaborate/hipchat.md)
-- [Post messages to Slack](../collaborate/slack.md)
-
+- [Follow work & pull requests](/vsts/collaborate/follow-work-items?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
+- [Set your personal notifications](/vsts/collaborate/manage-personal-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
 
 ## Concepts 
 
@@ -38,11 +34,17 @@ ms.date: 08/03/2017
 
 
 ## How-to guides  
-- [Go mobile](/vsts/collaborate/mobile-work?toc=/vsts/notifications/toc.json)  
-- Set team project or collection-level alerts (NEW TOPIC)  
-- [Collaborate in a team room](../collaborate/collaborate-in-a-team-room.md)
+- [Go mobile](/vsts/collaborate/mobile-work?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)  
+
+- [Set team notifications](/vsts/collaborate/manage-team-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
+- Set team project or collection-level alerts (NEW TOPIC) 
+- [Post messages to Campfire](/vsts/collaborate/campfire?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
+- [Post messages to Flowdock](/vsts/collaborate/flowdock?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
+- [Post messages to Hipchat](/vsts/collaborate/hipchat?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
+- [Post messages to Slack](/vsts/collaborate/slack?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
   
 ## Resources 
-
+- [Work items](../work/work-items/index.md)
+- [Backlogs](../work/backlogs/index.md)
 - [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams) 
 - [Integrate with service hooks](../service-hooks/index.md)  

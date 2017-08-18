@@ -16,7 +16,7 @@ ms.date: 08/10/2016
 Displays the version of one or more items in a workspace.
 
 **Required Permissions**  
-To use the **localversions** command, you must have the **Use** permission to the workspace. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **localversions** command, you must have the **Use** permission to the workspace. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf localversions ItemSpec
     [/recursive] [/format:brief|detailed]

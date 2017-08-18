@@ -51,7 +51,7 @@
 - name: Reference
   items:
   - name: Permissions and groups reference
-    href: permissions.md
+    href: ../security/permissions.md
   - name: Extensibility overview
     href: ../extend/index.md
 - name: Troubleshooting

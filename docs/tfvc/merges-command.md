@@ -16,7 +16,7 @@ ms.date: 08/10/2016
 Displays detailed information about past merges between the specified source and destination branches.
 
 **Required Permissions**  
-To use the **merges** command, you must have the **Read** permission set to **Allow** for both source and destination branches. For more information, see [Team Foundation Server Permissions](../setup-admin/permissions.md).
+To use the **merges** command, you must have the **Read** permission set to **Allow** for both source and destination branches. For more information, see [Permissions and groups reference](../security/permissions.md).
 
     tf merges [source] destination [/recursive] [/extended] [/format:(brief|deltailed)] [/login:username, [password]] [/showall]]] [/collection:TeamProjectCollectionUrl]
 

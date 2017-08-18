@@ -95,7 +95,7 @@
   - name: Permissions and access
     items:
     - name: Permissions and access
-      href: permissions-access.md
+      href: ../security/permissions-access.md
     - name: Add users to projects
       href: add-users.md
     - name: Add administrators to project collection
@@ -105,11 +105,11 @@
     - name: Restrict access to resources
       href: restrict-access-tfs.md
     - name: Change access levels
-      href: ../work/connect/change-access-levels.md
+      href: ../security/change-access-levels.md
     - name: Stakeholder access
       href: ../quickstart/get-started-stakeholder.md
     - name: Permissions and groups reference
-      href: permissions.md
+      href: ../security/permissions.md
 - name: Concepts
   items:
   - name: TBD FROM TOPIC INTROS
@@ -118,7 +118,7 @@
 - name: Reference
   items:
   - name: Permissions and groups reference
-    href: permissions.md
+    href: ../security/permissions.md
   - name: Extensibility overview
     href: ../extend/index.md
 - name: Troubleshooting

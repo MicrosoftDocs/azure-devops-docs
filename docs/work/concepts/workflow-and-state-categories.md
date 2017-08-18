@@ -12,6 +12,8 @@ ms.date: 03/31/2017
 
 # Workflow states and state categories
 
+<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+
 All workflows consist of states, transitions, and reasons. A transition supports forward and backward movement among two states. When you add a custom state, the system automatically adds transitions from the custom state to all other inherited states (except for Removed).  
 
 Each state belongs to a state category (previously referred to as a metastate). State categories support the Agile tool backlog and board views. 

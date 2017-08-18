@@ -15,7 +15,7 @@ ms.date: 08/10/2016
 
 Displays information about pending changes to files and folders in one or more workspaces. Or, when you use the **/shelveset** option, displays information about pending changes in a shelveset.
 
-**Requirements:** See [Pernission reference for Team Foundation Server](../setup-admin/permissions.md).
+**Requirements:** See [Permissions and groups reference](../security/permissions.md).
 
     tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
     [/login:username,[password]]

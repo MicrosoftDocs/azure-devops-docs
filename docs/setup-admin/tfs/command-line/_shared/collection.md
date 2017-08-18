@@ -85,7 +85,7 @@ However, you cannot use the **Collection** command to create a team project coll
 
 To use the **Collections** command, you must be a member of the Team Foundation Administrators security group as well as the local Administrators group on the machine running **TFSConfig**. You must also be a member of the sysadmin security role for all instances of SQL Server used by TFS databases. If your deployment is integrated with SharePoint and you are using the **/delete** option, you must also be a member of the Farm Administrators group for the SharePoint farm from which you are deleting the site collection. 
 
-For more information, see [Permission reference for Team Foundation Server](../../../permissions.md).
+For more information, see [Permissions and groups reference](/vsts/security/permissions).
 
 ### Remarks
 

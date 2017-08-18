@@ -56,7 +56,7 @@ Make sure to sign in with the ID that you used to purchase your subscriptions.
 > <p> Access levels control which features are available to users, 
 > while permissions control their access to account resources. 
 > [Can't access some features?](#feature-access) 
-> For TFS, learn [how to change access levels](../work/connect/change-access-levels.md) 
+> For TFS, learn [how to change access levels](../security/change-access-levels.md) 
 > or [buy more access to TFS or the Test hub](buy-access-tfs-test-hub.md). 
 >
 > To control access to account resources instead, 

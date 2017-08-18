@@ -56,7 +56,7 @@ New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git a
             <li>[Delete a repo](delete-existing-repo.md)</li>
             <li>[Import a repo](import-git-repository.md)</li>
             <li>[Git and TFVC repos](team-projects.md)</li>
-            <li>[Set repo permissions](../setup-admin/permissions.md#git-repository)</li> 
+            <li>[Set repo permissions](../security/set-git-tfvc-repository-permissions.md#git-repository)</li> 
             <li>[Work with large files](manage-large-files.md)</li>
         </ul>
     </div>
@@ -147,7 +147,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 
 <ul>
 <li>[Create](create-new-repo.md), [delete](delete-existing-repo.md), and [rename](repo-rename.md) repos.</li>
-<li>Set [repo permissions](../setup-admin/permissions.md) and [branch permissions](branch-permissions.md)</li>
+<li>Set [repo permissions](../security/permissions.md) and [branch permissions](branch-permissions.md)</li>
 <li>[Set up branch policies](branch-policies.md) to protect key branches</li>
 <li>[Set up continuous integration](../build-release/define/triggers.md#continuous-integration-ci) to catch bugs sooner.</li>
 </ul>
