@@ -39,4 +39,4 @@ To perform this procedure, you must be a member of the Administrators group on t
   
 ## Related notes
  
-- [Verify SharePoint products for Team Foundation Server](../../setup-admin/tfs/install/sharepoint/verify-sharepoint.md)
+- [Verify SharePoint products for Team Foundation Server](../../tfs-server/install/sharepoint/verify-sharepoint.md)

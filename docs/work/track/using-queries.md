@@ -60,7 +60,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 	  
 	  ![Save Query As](_img/6.png)    
 	  
-	  To save a query to the Shared Queries folder, you need to be a [team administrator](../scale/manage-team-assets.md), a member of the [Project Administrators group](../../setup-admin/add-users.md), or have your Contribute permissions on the folder set to Allow. To learn more, see [Set query permissions](set-query-permissions.md).
+	  To save a query to the Shared Queries folder, you need to be a [team administrator](../scale/manage-team-assets.md), a member of the [Project Administrators group](../../accounts/add-users.md), or have your Contribute permissions on the folder set to Allow. To learn more, see [Set query permissions](set-query-permissions.md).
 
 <a id="flat-list" />
 ## Create a query
@@ -166,7 +166,7 @@ Use **Team Project=@Project** to scope the query to find only those work items d
 ## Add a query to the dashboard or share it with your team 
 To add a query to the home page or a dashboard, open the ![Context Menu Icon](_img/22.png) context menu for the query and [add it to a specific dashboard or as a team favorite](../../report/dashboards.md).   
 
-Share queries with your team by adding them to a folder under the Shared Queries space.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../setup-admin/add-users.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
+Share queries with your team by adding them to a folder under the Shared Queries space.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../accounts/add-users.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 
 You can only add shared queries to dashboards or as team favorites, and only if you have [team administrator or project administrator permissions](../scale/manage-team-assets.md). 
 

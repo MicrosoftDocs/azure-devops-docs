@@ -16,9 +16,9 @@ ms.date: 08/11/2017
 
 The web portal provides support for teams to collaborate through the planning, development, and release cycles. You use the web portal to perform both software development and administrative tasks.  
 
-You can manage source code, plan and track work, define builds, run tests, and manage releases. The web portal connects you to the team project defined for an account in [Visual Studio Team Services](../setup-admin/team-services/sign-up-for-visual-studio-team-services.md) or within an on-premise TFS. 
+You can manage source code, plan and track work, define builds, run tests, and manage releases. The web portal connects you to the team project defined for an account in [Visual Studio Team Services](../accounts/sign-up-for-visual-studio-team-services.md) or within an on-premise TFS. 
 
-If you don't have a team project yet, create one in [Visual Studio Team Services](../setup-admin/team-services/set-up-vs.md) or set one up in an [on-premises TFS](../setup-admin/create-team-project.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members).
+If you don't have a team project yet, create one in [Visual Studio Team Services](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members).
 
 >[!NOTE]  
 >The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to Team Services or your on-premises TFS and [options that you or your admin have enabled](../collaborate/preview-features.md). However, the basic functionality available to you remains the same unless explicitly mentioned.  
@@ -29,7 +29,7 @@ If you don't have a team project yet, create one in [Visual Studio Team Services
 >[!NOTE]  
 >**Feature availability**: The features available to you depend on the platform (Team Services or on-premises TFS), TFS version, features enabled for your team project or collection, and your access level. New features are deployed regularly to Team Services. Many of these features are then made available to [on-premises TFS through regular updates](https://www.visualstudio.com/articles/news/features-timeline).  
 
-To get started, from a [supported web browser](../setup-admin/requirements.md#browsers) enter the following URL:
+To get started, from a [supported web browser](../accounts/requirements.md#browsers) enter the following URL:
 
 **Team Services:**
 	<pre><code>https://<i>AccountName</i>.visualstudio.com/DefaultCollection/<i>ProjectName</i> </code></pre>
@@ -39,7 +39,7 @@ To get started, from a [supported web browser](../setup-admin/requirements.md#br
 
 
 >[!NOTE]  
->For TFS, the TFS administrator can configure the following elements: protocol (*https* vs *http*), port (*8080*), virtual directory (*tfs*), and collection name (*DefaultCollection*) (See [Web site settings and security](../setup-admin/websitesettings.md).) For example, a deployment configured on port 443 with no vdir, an FQDN, and a custom collection name might look like: *https://tfs.contoso.com/CustomCollection/ProjectName*. If the above pattern doesn't work for you, check with your TFS administrator.    
+>For TFS, the TFS administrator can configure the following elements: protocol (*https* vs *http*), port (*8080*), virtual directory (*tfs*), and collection name (*DefaultCollection*) (See [Web site settings and security](../security/websitesettings.md).) For example, a deployment configured on port 443 with no vdir, an FQDN, and a custom collection name might look like: *https://tfs.contoso.com/CustomCollection/ProjectName*. If the above pattern doesn't work for you, check with your TFS administrator.    
  
 
 The web portal is one of several clients that can connect to a team project. Different clients support different features and functions. For a list of all clients that connect to Team Services or TFS, see [Tools and clients that connect to Team Services and TFS](../tools.md). 
@@ -148,9 +148,9 @@ To learn more about each administrative context level, see the [Administrative c
 <a id="user-focused-features">  </a>
 ### User-focused features
 
-Several features display information based on the logged-in user account or the selected team context. First off, users can [set their preferences](../setup-admin/account-preferences.md) through their profile or account menu:
+Several features display information based on the logged-in user account or the selected team context. First off, users can [set their preferences](../accounts/account-preferences.md) through their profile or account menu:
 
-<img src="../setup-admin/_img/account-prefs/open-profile-team-services.png" alt="Team Services, My Profile link on Account menu" style="border: 1px solid #CCCCCC;" />   
+<img src="../accounts/_img/account-prefs/open-profile-team-services.png" alt="Team Services, My Profile link on Account menu" style="border: 1px solid #CCCCCC;" />   
 
 In addition, they have access to special queries&mdash;Assigned to me query, Followed work items, and more&mdash; dashboard widget such as the Assigned to me widget, and the ability to save favorites under a **My favorites** folder. Here's an example of the Assigned to me widget that you can add to a dashboard. 
 
@@ -391,7 +391,7 @@ Below we show the admin context for the team project level.
 
 <div style="float:left;width:375px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Team project settings</p>
-<p style="padding-bottom:0px;text-align:left;">Required membership:  [Project Administrators](../setup-admin/add-administrator-tfs.md#team-project)</p>
+<p style="padding-bottom:0px;text-align:left;">Required membership:  [Project Administrators](../accounts/add-administrator-tfs.md#team-project)</p>
 <ul style="padding-left:40px">
  <li style="margin-bottom:2px">[Overview: Add teams](../work/scale/multiple-teams.md)</li>
  <li style="margin-bottom:2px">[Work/Iterations & Areas (project-wide)](../work/customize/set-area-paths.md)</li>
@@ -412,10 +412,10 @@ Below we show the admin context for the team project level.
 
 <div style="float:left;width:375px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Account settings (Team Services)</p>
-<p style="padding-bottom:0px;text-align:left;">Required membership: [Project Collection Administrators](../setup-admin/add-administrator-tfs.md#project-collection)</p>
+<p style="padding-bottom:0px;text-align:left;">Required membership: [Project Collection Administrators](../accounts/add-administrator-tfs.md#project-collection)</p>
 <ul style="padding-left:20px">
- <li style="margin-bottom:2px">[Overview: Create team projects](../setup-admin/create-team-project.md)  &#124; [Rename team project](../setup-admin/rename-team-project.md) &#124; [Delete team project](../setup-admin/delete-team-project.md) &#124; [Change process](../work/process/manage-process.md) </li>
- <li style="margin-bottom:2px">[Settings: Set  account preferences](../setup-admin/account-preferences.md) &#124; [Change application access policies](../setup-admin/team-services/change-application-access-policies-vs.md) &#124; [Change account owner](../setup-admin/team-services/change-account-ownership-vs.md) &#124; [Delete or recover account](../setup-admin/team-services/delete-or-recover-your-account-vs.md) </li>
+ <li style="margin-bottom:2px">[Overview: Create team projects](../accounts/create-team-project.md)  &#124; [Rename team project](../accounts/rename-team-project.md) &#124; [Delete team project](../accounts/delete-team-project.md) &#124; [Change process](../work/process/manage-process.md) </li>
+ <li style="margin-bottom:2px">[Settings: Set  account preferences](../accounts/account-preferences.md) &#124; [Change application access policies](../accounts/change-application-access-policies-vs.md) &#124; [Change account owner](../accounts/change-account-ownership-vs.md) &#124; [Delete or recover account](../accounts/delete-or-recover-your-account-vs.md) </li>
 <li style="margin-bottom:2px">[Security (manage collection-level permissions)](../security/permissions.md#collection-level)</li>
 <li style="margin-bottom:2px">[Process (customize work tracking)](../work/process/manage-process.md) </li>
 <li style="margin-bottom:2px">[Build (manage build policies)](../build-release/concepts/policies/retention.md)</li>
@@ -428,9 +428,9 @@ Below we show the admin context for the team project level.
 
 <div style="float:left;width:375px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Collection settings (TFS)</p>
-<p style="padding-bottom:0px;text-align:left;">Required membership: [Project Collection Administrators](../setup-admin/add-administrator-tfs.md#project-collection)</p>
+<p style="padding-bottom:0px;text-align:left;">Required membership: [Project Collection Administrators](../accounts/add-administrator-tfs.md#project-collection)</p>
 <ul style="padding-left:40px">
- <li style="margin-bottom:2px">[Overview: Create team projects](../setup-admin/create-team-project.md)  &#124; [Rename team project](../setup-admin/rename-team-project.md) &#124; [Delete team project](../setup-admin/delete-team-project.md)</li>
+ <li style="margin-bottom:2px">[Overview: Create team projects](../accounts/create-team-project.md)  &#124; [Rename team project](../accounts/rename-team-project.md) &#124; [Delete team project](../accounts/delete-team-project.md)</li>
 <li style="margin-bottom:2px">[Security (manage collection-level permissions)](../security/permissions.md#collection-level)</li>
 <li style="margin-bottom:2px">[Build (manage build policies)](../build-release/concepts/policies/retention.md)</li>
 <li style="margin-bottom:2px">[Agent queues](../build-release/concepts/agents/pools-queues.md) </li>
@@ -444,7 +444,7 @@ Below we show the admin context for the team project level.
 
 <div style="float:left;width:375px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Server-level settings (TFS only)</p>
-<p style="padding-bottom:0px;text-align:left;">Required membership: [Team Foundation Administrators](../setup-admin/add-administrator-tfs.md#server)</p>
+<p style="padding-bottom:0px;text-align:left;">Required membership: [Team Foundation Administrators](../accounts/add-administrator-tfs.md#server)</p>
 <ul style="padding-left:20px">
  <li style="margin-bottom:2px">Control panel: Choose team project/team</li>
  <li style="margin-bottom:2px">[Access levels (Stakeholder, Basic, Advanced)](../security/change-access-levels.md)</li>
@@ -510,9 +510,9 @@ To return to a team or project user context, select the team or project from the
 
 ### User accounts and licensing  
 
-To connect to the web portal, you need your user account added to the team project. This is typically done by the [account owner (Team Services)](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) or a [project administrator (TFS)](../setup-admin/add-users.md).
+To connect to the web portal, you need your user account added to the team project. This is typically done by the [account owner (Team Services)](../accounts/add-account-users-assign-access-levels-team-services.md) or a [project administrator (TFS)](../accounts/add-users.md).
 
-For Team Services, five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users (Team Services)](../setup-admin/team-services/buy-basic-access-add-team-services-users.md).
+For Team Services, five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users (Team Services)](../accounts/buy-basic-access-add-team-services-users.md).
 
 For TFS, limited access is available to an unlimited number of stakeholders for free; most regular contributors must have a TFS client access license (CAL). For details, see [Work as a Stakeholder](../quickstart/get-started-stakeholder.md).
 

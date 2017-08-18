@@ -31,7 +31,7 @@ For example, as shown in the picture below, you see a list of team projects defi
 
 <img src="_img/mprocess-overview-project-list.png" alt="Admin context, Account settings, Overview, Project list and the process they use" style="border: 1px solid #CCCCCC;" />  
 
-To perform any of the following actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit or create a specific process](#process-permissions).  To get added to an admin group, see [Add administrators](../../setup-admin/add-administrator-tfs.md#project-collection). 
+To perform any of the following actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit or create a specific process](#process-permissions).  To get added to an admin group, see [Add administrators](../../accounts/add-administrator-tfs.md#project-collection). 
 - Import Process (only supported for accounts that use the [Hosted XML process model](../customize/hosted-xml-process-model.md)) 
 - Create an inherited process   
 - Customize a process  
@@ -108,7 +108,7 @@ You can change the process a team project uses from a system process or inherite
 
 	<img src="_img/mprocess-create-team-project.png" alt="Create a team project from the selected process" style="border: 1px solid #CCCCCC;" />
 
-0. The Create new project page opens. For details, see [Create your team project](../../setup-admin/create-team-project.md).
+0. The Create new project page opens. For details, see [Create your team project](../../accounts/create-team-project.md).
 
 ##Related notes  
 
@@ -128,7 +128,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 
 	<img src="_img/mprocess-open-security-dialog-inherited.png" alt="Open security dialog" style="border: 1px solid #CCCCCC;" />  
 
-2. Add the account name of the person you want to grant permissions to, set the permissions to **Allow** that you want them to have, and then click Save changes. For more information about setting permissions, see [Restrict access](../../setup-admin/restrict-access-tfs.md).
+2. Add the account name of the person you want to grant permissions to, set the permissions to **Allow** that you want them to have, and then click Save changes. For more information about setting permissions, see [Restrict access](../../accounts/restrict-access-tfs.md).
 
 	Here we add Christie Church and allow her to edit the process.  
  

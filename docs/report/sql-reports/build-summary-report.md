@@ -25,7 +25,7 @@ The Build Summary lists builds and provides information about test results, test
   
  **Required Permissions**  
   
- To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../../setup-admin/add-users.md).  
+ To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../../accounts/add-users.md).  
   
 ##  <a name="Data"></a> Data in the Report  
  The data that appears in the Build Summary report is derived from the data warehouse. The report presents a visual display of the percentage of tests that are passing, code that is being tested, and changes in code across several builds.  

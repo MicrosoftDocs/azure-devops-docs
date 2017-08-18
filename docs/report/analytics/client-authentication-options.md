@@ -151,7 +151,7 @@ If you receive an access denied message, you may need to change your authenticat
 ## Related notes
 
 - [Analytics service overview](overview-analytics-service.md)  
-- [Authenticate your identity with personal access tokens](../../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md)  
+- [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  
 - [Access data throughPower BI desktop](access-analytics-power-bi.md)  
 - [Publish a Power BI Desktop file to PowerBI.com](publishing-power-bi-desktop-to-power-bi.md)  

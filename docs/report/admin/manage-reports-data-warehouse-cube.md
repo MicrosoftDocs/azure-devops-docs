@@ -74,8 +74,8 @@ You can manage the warehouse and analysis services cube to address the following
 ##Related content
 
 - [Reportable fields reference](../../work/reference/reportable-fields-reference.md) provides definitions for eacha reportable field. A default set of fields appears in the relational warehouse database or the cube. These fields have a reportable attribute value of Detail, Dimension, or Measure. 
-[Understanding SQL Server and SQL Server Reporting Services](../../setup-admin/tfs/architecture/sql-server-databases.md) describes the relationships and dependencies between SQL Server and TFS.
+[Understanding SQL Server and SQL Server Reporting Services](../../tfs-server/architecture/sql-server-databases.md) describes the relationships and dependencies between SQL Server and TFS.
  
-- [Manage team project collections](../../setup-admin/tfs/admin/manage-team-project-collections.md) describes how you can enable and disable data that flows into the data warehouse by editing the reporting configuration for your team project collections. After you add a report server to your deployment, you can configure reporting resources for your team project collections and the projects in those collections.
+- [Manage team project collections](../../tfs-server/admin/manage-team-project-collections.md) describes how you can enable and disable data that flows into the data warehouse by editing the reporting configuration for your team project collections. After you add a report server to your deployment, you can configure reporting resources for your team project collections and the projects in those collections.
 
 - [Data Warehouse extensibility](https://msdn.microsoft.com/library/bb130342.aspx) describes how you can add new data types to the data warehouse by implementing a warehouse adaptor. 

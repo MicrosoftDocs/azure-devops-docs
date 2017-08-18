@@ -25,7 +25,7 @@ As the team resolves and closes bugs, you can use the Reactivations report to de
   
  **Required Permissions**  
   
- To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Add users to team projects](../../setup-admin/add-users.md).  
+ To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in SQL Server Reporting Services. For more information, see [Add users to team projects](../../accounts/add-users.md).  
   
 ##  <a name="Data"></a> Data in the Report  
  The Reactivations report shows an area graph of the number of bugs or stories that are in a resolved state or that have been reactivated from the closed state. The data is derived from the data warehouse. The graph depicts the number of items based on the time duration and filters that you specify, as the following illustration shows.  

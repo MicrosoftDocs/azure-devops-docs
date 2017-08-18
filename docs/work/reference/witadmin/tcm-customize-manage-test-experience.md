@@ -40,7 +40,7 @@ Also, you can use `tcm` command options to [copy and clone test suites and test 
   
  **Requirements**  
   
- For the team project where the work item types are defined, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group. See [Add accounts to administer project collections](../../../setup-admin/add-administrator-tfs.md).  
+ For the team project where the work item types are defined, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group. See [Add accounts to administer project collections](../../../accounts/add-administrator-tfs.md).  
   
 ## Syntax  
   

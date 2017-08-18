@@ -17,18 +17,18 @@ ms.date: 08/04/2017
 <!---
 ## Overview  
 [About security and identity](about-permissions.md)
-[Default permission and access assignments](/vsts/setup-admin/permissions-access?toc=/vsts/security/toc.json)
+[Default permission and access assignments](/vsts/accounts/permissions-access?toc=/vsts/security/toc.json)
 -->
 
 ## 5-Minute Quickstarts  
   
 - [View permissions](view-permissions.md)
-- [Add users to a team project](/vsts/setup-admin/add-users?toc=/vsts/security/toc.json)  
+- [Add users to a team project](/vsts/accounts/add-users?toc=/vsts/security/toc.json)  
 
 ## Step-by-Step Tutorials
 
-- [Invite new users](/vsts/accounts/team-services/add-account-users-from-user-hub?toc=/vsts/security/toc.json)
-- [Authenticate access with personal access tokens](/vsts/setup-admin/team-services/use-personal-access-tokens-to-authenticate?toc=/vsts/security/toc.json)  
+- [Invite new users](/vsts/accounts/add-account-users-from-user-hub?toc=/vsts/security/toc.json)
+- [Authenticate access with personal access tokens](/vsts/accounts/use-personal-access-tokens-to-authenticate?toc=/vsts/security/toc.json)  
 
 
 ## Concepts 
@@ -42,10 +42,10 @@ ms.date: 08/04/2017
 - [Set build and release permissions](/vsts/security/set-build-release-permissions?toc=/vsts/security/toc.json) 
 - [Set permissions and access for work tracking](/vsts/work/how-to-set-permissions-access-work-tracking?toc=/vsts/security/toc.json) 
 - [Set project or collection-level permissions](set-project-collection-level-permissions.md)  
-- [Add administrators to a team project](/vsts/setup-admin/add-administrator-team-project?toc=/vsts/security/toc.json)  
-- [Add administrators to project collection](/vsts/setup-admin/add-administrator-project-collection?toc=/vsts/security/toc.json)  
+- [Add administrators to a team project](/vsts/accounts/add-administrator-team-project?toc=/vsts/security/toc.json)  
+- [Add administrators to project collection](/vsts/accounts/add-administrator-project-collection?toc=/vsts/security/toc.json)  
 - [Change access levels (TFS)](/vsts/security/change-access-levels?toc=/vsts/security/toc.json)
-- [Restrict access to a resource](/vsts/setup-admin/restrict-access-tfs?toc=/vsts/security/toc.json)
+- [Restrict access to a resource](/vsts/accounts/restrict-access-tfs?toc=/vsts/security/toc.json)
 
 ## Reference 
 - [Permissions lookup guide](permissions-lookup-guide.md)

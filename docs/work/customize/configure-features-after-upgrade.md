@@ -30,7 +30,7 @@ If you have several team projects to update, you can [apply updates programmatic
 
 	![Open the administration page](../connect/_img/ALM_CAL_OpenAdminPage.png)  
 
-	If you're not a team project administrator, [get added as one](../../setup-admin/add-users.md). Only project administrators or TFS administrators can run the wizard.
+	If you're not a team project administrator, [get added as one](../../accounts/add-users.md). Only project administrators or TFS administrators can run the wizard.
 
 3. If you see a **Configure Features link**, run the wizard. 
 
@@ -80,7 +80,7 @@ In particular:
 
 - To view and work with Epic and Feature portfolio backlogs, you may need to [select them for your team](select-backlog-navigation-levels.md) 
 - To add the Epic portfolio backlog to your team project or additional portfolio backlog levels, you can [add them manually](add-portfolio-backlogs.md).    
-- To use Code Review and Feedback Request, you need to [configure an SMTP server for TFS](../../setup-admin/tfs/admin/setup-customize-alerts.md).  
+- To use Code Review and Feedback Request, you need to [configure an SMTP server for TFS](../../tfs-server/admin/setup-customize-alerts.md).  
 - To use Bugs Behavior, you must configure this option as described in [Show bugs on backlogs and boards feature](show-bugs-on-backlog.md). 
 - To fully manage Epic and Feature portfolio backlogs or web-based test plans, you need to have [Advanced access](../../security/change-access-levels.md).
 

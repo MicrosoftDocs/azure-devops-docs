@@ -41,7 +41,7 @@ In this topic you'll learn:
 ## Move from one team to two teams 
 As your team grows, you can easily move from one team to two. In this example, we add two feature teams, Email and Voice, and maintain the Fabrikam Fiber team with visibility across each of these two teams.  
 
-If you're not a project administrator, [get added as one](../../setup-admin/add-administrator-tfs.md). Only project administrators can add teams.  
+If you're not a project administrator, [get added as one](../../accounts/add-administrator-tfs.md). Only project administrators can add teams.  
 
 
 ### Add two feature teams 
@@ -103,9 +103,9 @@ If you're moving from one team to two teams, team members already have access to
 Several Agile tools, like capacity planning and team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts of team members to support planning activities or sending alerts. 
 
 > [!NOTE]   
-> If you use Team Services, you must first [add user accounts to the team project](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) or [setup your account to work with Azure AD](../../setup-admin/team-services/manage-organization-access-for-your-account-vs.md). This way user accounts will be available to add to a team.
+> If you use Team Services, you must first [add user accounts to the team project](../../accounts/add-account-users-assign-access-levels-team-services.md) or [setup your account to work with Azure AD](../../accounts/manage-organization-access-for-your-account-vs.md). This way user accounts will be available to add to a team.
 >
->For TFS, the first time you add an account you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in TFS deployments](../../setup-admin/tfs/admin/setup-ad-groups.md).
+>For TFS, the first time you add an account you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md).
 
 
 #### Team Services, TFS 2017  
@@ -142,7 +142,7 @@ Several Agile tools, like capacity planning and team alerts, and dashboard widge
 
 2. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. 
 
-	The first time an account is added to TFS, you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in TFS deployments](../../setup-admin/tfs/admin/setup-ad-groups.md). </p>
+	The first time an account is added to TFS, you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md). </p>
 
 	<img src="_img/scale-agile-add-team-members-user-accounts.png" alt="Type the account aliases and check name" style="border: 1px solid #CCCCCC;" /> 
 
@@ -216,7 +216,7 @@ By default, team members inherit the permissions afforded to members of the team
 
 ![Default permissions assigned to team contributors](_img/default-permissions-assigned-to-team-contributors.png)  
 
-If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Add users to a team project](../../setup-admin/add-users.md). 
+If your on-premises TFS deployment includes reporting or SharePoint Products, add users to those resources. See [Add users to a team project](../../accounts/add-users.md). 
 
 
 ## Try this next 

@@ -29,7 +29,7 @@ ms.date: 12/07/2016
 
 Choose on-premises TFS when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  
 
-[![Install TFS](../_img/overview/tfs-setup-1.png)](../setup-admin/tfs/install/single-server.md)[![Create a team project](../_img/overview/tfs-setup-2.png)](../setup-admin/create-team-project.md)[![Add team members](../_img/overview/tfs-setup-3.png)](../setup-admin/add-users.md)[![Configure a backup schedule](../_img/overview/tfs-setup-4.png)](../setup-admin/tfs/admin/backup/back-up-restore-tfs.md)   
+[![Install TFS](../_img/overview/tfs-setup-1.png)](../tfs-server/install/single-server.md)[![Create a team project](../_img/overview/tfs-setup-2.png)](../setup-admin/create-team-project.md)[![Add team members](../_img/overview/tfs-setup-3.png)](../setup-admin/add-users.md)[![Configure a backup schedule](../_img/overview/tfs-setup-4.png)](../tfs-server/admin/backup/back-up-restore-tfs.md)   
  
 
 

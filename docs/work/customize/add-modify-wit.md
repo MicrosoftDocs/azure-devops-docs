@@ -173,7 +173,7 @@ Other related topics or resources:
 - (TFS) To add or customize a WIT, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.
 - (Team Services)  To add or customize a WIT by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to Allow    
   
-To get added as an administrator, see [Add administrators](../../setup-admin/add-administrator-tfs.md).
+To get added as an administrator, see [Add administrators](../../accounts/add-administrator-tfs.md).
 
 
 <a id="witadmin">  </a>  
@@ -182,7 +182,7 @@ To get added as an administrator, see [Add administrators](../../setup-admin/add
 >[!NOTE]  
 >If you use the Hosted XML process model, you need to import and export the process template used by your team project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
 
-1.  If you don't have administration permissions for your team project, [get them](../../setup-admin/add-administrator-tfs.md).  
+1.  If you don't have administration permissions for your team project, [get them](../../accounts/add-administrator-tfs.md).  
 
 2.  Open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
 

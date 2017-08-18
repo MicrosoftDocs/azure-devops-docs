@@ -23,7 +23,7 @@ You use Team Explorer to manage work that is assigned to you, your team, or you
 > - [Visual Studio Team Services Plugin for Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio)  
 > - [Visual Studio Team Services Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intellij) 
 > - [Visual Studio Code](http://java.visualstudio.com/Docs/tools/vscode)    
->For information about compatibility among client and server versions, see [Requirements and compatibility](../setup-admin/requirements.md).
+>For information about compatibility among client and server versions, see [Requirements and compatibility](../accounts/requirements.md).
 
 The operations available to you depend on which source control option—Team Foundation version control (TFVC) or Git—was selected to manage source code when the team project was created.
 
@@ -85,7 +85,7 @@ From the **Connect** page, you can select the team projects you want to connect 
 
 
 > [!IMPORTANT]  
-> From the Visual Studio plug-in, you can [Create a team project](../setup-admin/create-team-project.md). The ability to create team projects is not supported from the Eclipse plug-in. You can, however, create team projects from the web portal account/collection administration context. 
+> From the Visual Studio plug-in, you can [Create a team project](../accounts/create-team-project.md). The ability to create team projects is not supported from the Eclipse plug-in. You can, however, create team projects from the web portal account/collection administration context. 
 
 
 
@@ -116,7 +116,7 @@ The **Report** page opens the [Reporting Services report site](../report/sql-rep
 
 From the **Document** page, you can [open project portal](../report/sharepoint-dashboards/share-information-using-the-project-portal.md) and [manage documents and document libraries](../report/sharepoint-dashboards/manage-documents-and-document-libraries.md). This page appears only if your team project has been configured with a SharePoint Products portal.
   
-If your team project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](../setup-admin/tfs/admin/config-tfs-resources.md).
+If your team project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](../tfs-server/admin/config-tfs-resources.md).
 
 ### Settings page 
 
@@ -128,7 +128,7 @@ Most of the links open to a web portal administration page. Not all settings are
 > [!div class="mx-tdBreakAll"]  
 > |Team project settings | Collection settings (TFS)  |
 > |-------------|----------|
-> |Required membership: [Project Administrators](../setup-admin/add-administrator-tfs.md#team-project)<br/>-[Security (manage project-level permissions)](../security/permissions.md#team-project-level-permissions)<br/>-[Group membership: manage group permissions](../security/permissions.md)<br/>-Source Control: Configure the [check-in and check-out policies](../tfvc/add-check-policies.md) (TFVC only)<br/>-[Work Item Areas (project-wide)](../work/customize/set-area-paths.md)<br/>-[Work Item Areas (project-wide)](../work/customize/set-iteration-paths-sprints.md)<br/>-[Portal Settings (Enable portal or process guidance)](../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)<br/>-[Project Alerts](../work/track/alerts-and-notifications.md) |Required membership: [Project Collection Administrators](../setup-admin/add-administrator-tfs.md#project-collection)<br/>-[Security (manage project-level permissions)](../security/permissions.md#collection-level)<br/>-[Group membership: manage group permissions](../security/permissions.md)<br/>-Source Control: Configure the [default workspace type for the collection](../tfvc/decide-between-using-local-server-workspace.md#manage-team-project-collection-workspace-settings-for-your-team) (TFVC only)<br/>-[Process Template Manager: download, upload, delete, or set a default process template](../work/guidance/manage-process-templates.md) |
+> |Required membership: [Project Administrators](../accounts/add-administrator-tfs.md#team-project)<br/>-[Security (manage project-level permissions)](../security/permissions.md#team-project-level-permissions)<br/>-[Group membership: manage group permissions](../security/permissions.md)<br/>-Source Control: Configure the [check-in and check-out policies](../tfvc/add-check-policies.md) (TFVC only)<br/>-[Work Item Areas (project-wide)](../work/customize/set-area-paths.md)<br/>-[Work Item Areas (project-wide)](../work/customize/set-iteration-paths-sprints.md)<br/>-[Portal Settings (Enable portal or process guidance)](../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)<br/>-[Project Alerts](../work/track/alerts-and-notifications.md) |Required membership: [Project Collection Administrators](../accounts/add-administrator-tfs.md#project-collection)<br/>-[Security (manage project-level permissions)](../security/permissions.md#collection-level)<br/>-[Group membership: manage group permissions](../security/permissions.md)<br/>-Source Control: Configure the [default workspace type for the collection](../tfvc/decide-between-using-local-server-workspace.md#manage-team-project-collection-workspace-settings-for-your-team) (TFVC only)<br/>-[Process Template Manager: download, upload, delete, or set a default process template](../work/guidance/manage-process-templates.md) |
 
 To learn more about administration features, see [Work in the web portal, administration context](work-web-portal.md#admin-context).
 
@@ -140,7 +140,7 @@ You've now got a basic understanding of how to work in the Team Explorer add-in 
 
 Here's a list of the most frequently encountered connection problems and what to do about them. Start at the top and follow it in the order indicated.
 
-1.  Verify that you have [required permissions](../setup-admin/add-users.md).
+1.  Verify that you have [required permissions](../accounts/add-users.md).
 
     If the errors that you receive indicate read-only or blocked actions, you might not have permission to act on the data.
 

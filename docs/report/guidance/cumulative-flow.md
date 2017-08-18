@@ -130,7 +130,7 @@ CFD charts display the count of work items grouped by state/Kanban column over t
 1. The current CFD implementation does not provide discrete numbers on Lead Time and Cycle Time.  
 
 >[!NOTE]   
-><b>Feature availability:</b>  For Team Services, you can add a [Cycle time widget](../widget-catalog.md#cycle-time-widget) and [Lead time widget](../widget-catalog.md#lead-time-widget) to your dashboard. You need to first install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widgets to your dashboard](../add-widget-to-dashboard.md).  You must be an account owner or a member of the [Project Collection Administrator grou](../../setup-admin/add-administrator-tfs.md) to add extensions.
+><b>Feature availability:</b>  For Team Services, you can add a [Cycle time widget](../widget-catalog.md#cycle-time-widget) and [Lead time widget](../widget-catalog.md#lead-time-widget) to your dashboard. You need to first install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widgets to your dashboard](../add-widget-to-dashboard.md).  You must be an account owner or a member of the [Project Collection Administrator grou](../../accounts/add-administrator-tfs.md) to add extensions.
 
 
 There is a very tight, well defined correlation between Lead Time/Cycle Time and Work in Progress (WIP). The more work in progress, the longer the cycle time which leads to longer lead times. The opposite is also true&mdash;the less work in progress, the shorter the cycle and lead time is because the development team can focus on fewer items. This is a key reason why you can and should set [Work In Progress limits on the Kanban board](../../work/kanban/wip-limits.md).  
@@ -235,7 +235,7 @@ Sometimes it takes time to get information from a stakeholder, or it takes more 
 ## Configure the CFD widget    
 
 >[!NOTE]   
-><b>Feature availability:</b> For Team Services, you can add the [CFD widget](../widget-catalog.md#cycle-time-widget) to your dashboard. You need to first install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../setup-admin/add-administrator-tfs.md) to add extensions.  
+><b>Feature availability:</b> For Team Services, you can add the [CFD widget](../widget-catalog.md#cycle-time-widget) to your dashboard. You need to first install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../accounts/add-administrator-tfs.md) to add extensions.  
 
 You will need to be a team administrator or a member of the Project Administrators group to perform these tasks. See 
 [Manage team assets](../../work/scale/add-team-administrator.md)to get added as a team admin. 

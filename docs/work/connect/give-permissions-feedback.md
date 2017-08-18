@@ -24,7 +24,7 @@ You provide feedback to users that you plan to [request feedback](get-feedback.m
 
 	![Open the administration page](_img/ALM_CAL_OpenAdminPage.png)  
 
-	If you aren't a member of the **Project Administrators** or **Team Foundation Administrators** group, get added. See [Add an administrator](../../setup-admin/add-administrator-tfs.md). You'll need to be a member in order to add users and groups to a team project, change permissions, and grant them access to the web portal.
+	If you aren't a member of the **Project Administrators** or **Team Foundation Administrators** group, get added. See [Add an administrator](../../accounts/add-administrator-tfs.md). You'll need to be a member in order to add users and groups to a team project, change permissions, and grant them access to the web portal.
 
 2. Create a group for your reviewers.
 
@@ -68,7 +68,7 @@ Since feedback is captured in a feedback response work item, reviewers need to b
 
 Sometimes additional ideas occur after reviewers submit their feedback. By providing access to the web portal, reviewers can revisit and further annotate their feedback submissions. 
 
-- **Team Services:**  [Assign the **Stakeholder** license to accounts](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) that you add to your Reviewer group   
+- **Team Services:**  [Assign the **Stakeholder** license to accounts](../../accounts/add-account-users-assign-access-levels-team-services.md) that you add to your Reviewer group   
 - **On-premises TFS:**  [Add your Reviewer group to the **Stakeholder** group on the **access levels** page](../../security/change-access-levels.md). If you don't see this tab, get administrative permissions. 
 
 ![Add reviewers to the Limited group](_img/ALM_GP_ModifyFeedback.png)

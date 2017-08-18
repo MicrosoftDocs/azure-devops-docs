@@ -45,7 +45,7 @@ User accounts identify users in Visual Studio Team Services or TFS. These accoun
 
 You add existing user accounts. You can't create a user account. To add user accounts to a team project, see:  
 
-*	Visual Studio Team Services: [Add team members](https://www.visualstudio.com/docs/setup-admin/team-services/add-team-members-vs)  
+*	Visual Studio Team Services: [Add team members](https://www.visualstudio.com/docs/accounts/team-services/add-team-members-vs)  
 *	On-premises TFS: [Add users to team projects](https://msdn.microsoft.com/library/bb558971.aspx)   
 
 User accounts that you add must conform to the following restrictions.  
@@ -212,7 +212,7 @@ Must not include commas (,)
 A team project collection identifies a group of team projects and the resources that are associated with those projects. It provides an organizing structure that you can use to define and control a group of team projects within an on-premises TFS.  
 
 Also, the collection name is part of the connection string used to connect team members to team projects. The default assigned corresponds to *DefaultCollection*. 
-[Manage team project collections](../setup-admin/tfs/admin/manage-team-project-collections.md) provides more information. 
+[Manage team project collections](../tfs-server/admin/manage-team-project-collections.md) provides more information. 
 
 Names you assign to team project collections must conform to the following restrictions.  
 

@@ -59,7 +59,7 @@ For an overview of the three system processes, see [Choose a process](../guidanc
 ##1. Export the files you need
 <ol>
 
-<li>If you aren't the account owner or a member of the Project Collection Administrator's group, [get added as an administrator](../../setup-admin/add-administrator-tfs.md). You need these permissions to customize the team project.</li>   
+<li>If you aren't the account owner or a member of the Project Collection Administrator's group, [get added as an administrator](../../accounts/add-administrator-tfs.md). You need these permissions to customize the team project.</li>   
 <li>Get the files you need: 
 <ul>
 <li>For **Hosted XML**: [Export the process you want to update](../import-process/import-process.md)<br/>
@@ -204,7 +204,7 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 
 2.	Open or refresh the web portal and confirm that Initiative appears as a portfolio backlog as expected. See [Organize your backlog](../backlogs/organize-backlog.md).  
 3.	Grant [Advanced access](../../security/change-access-levels.md) to users who'll need to exercise all the features available with portfolio backlogs.  
-	For **Hosted XML:**  See [Assign licenses to users](../../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md).
+	For **Hosted XML:**  See [Assign licenses to users](../../accounts/add-account-users-assign-access-levels-team-services.md).
 
 
 <a id="import-export">  </a>

@@ -372,7 +372,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	If the ```version``` statement isn't present, the Configure Features wizard can't select the process template for updating a team project. Also, if more than one process template has been uploaded that specifies the same highest version number, then none of these process templates can be selected for updating a team project.
 1. [Upload the process template](../guidance/manage-process-templates.md).
 
-	To verify your changes, create a test project. See [create a team project](../../setup-admin/create-team-project.md).
+	To verify your changes, create a test project. See [create a team project](../../accounts/create-team-project.md).
 
 ## 5. Run the Configure Features wizard
 

@@ -59,7 +59,7 @@ If a project isn't listed, you can find it by searching for it using the *Filter
 <img src="_img/account-home-search-projects-design.png" alt="Account home, Projects page, filter on Design" style="border: 1px solid #CCCCCC;" />    
 
 ### Add a team project
-If you're an account administrator or are a member of the Project Collection Administrators group, the New Project button is shown. Click New Project to [add a team project](../setup-admin/create-team-project.md). 
+If you're an account administrator or are a member of the Project Collection Administrators group, the New Project button is shown. Click New Project to [add a team project](../accounts/create-team-project.md). 
 
 <img src="_img/account-home-projects-new-project.png" alt="Account home, Projects page, New team project" style="border: 1px solid #CCCCCC;" />
 

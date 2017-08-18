@@ -33,7 +33,7 @@ You build your project plan by creating a backlog of work items that represent t
 
 ## Try this next  
 
-Take these tools for a test run by [creating an account on Team Services for free](../../setup-admin/team-services/sign-up-for-visual-studio-team-services.md). From there, you're ready to [create your backlog](create-your-backlog.md).  
+Take these tools for a test run by [creating an account on Team Services for free](../../accounts/sign-up-for-visual-studio-team-services.md). From there, you're ready to [create your backlog](create-your-backlog.md).  
 
 Once you've started tracking work, you'll want to monitor and track progress, identify trends, and share your plans. See [Charts, dashboards, and widgets](../../report/overview.md). 
 

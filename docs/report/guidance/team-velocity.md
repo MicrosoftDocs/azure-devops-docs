@@ -85,7 +85,7 @@ You configure your velocity widget for a team. To learn more about teams, see [A
 
 ### Pre-requisites
 In order to add a Velocity widget to a dashboard, you must have the following in place:  
-- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../setup-admin/add-administrator-tfs.md) to add extensions.  
+- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../accounts/add-administrator-tfs.md) to add extensions.  
 - [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../work/scale/add-team-administrator.md)or have [permissions to add and edit dashboards](../dashboard-permissions.md#set-permissions). 
 
 > [!NOTE]   

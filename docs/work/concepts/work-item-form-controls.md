@@ -148,7 +148,7 @@ Within the discussion section, you can use the [**@mention** control](../../noti
 To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
 >[!IMPORTANT]  
->For on-premises TFS, [you must configure an SMTP sever](../../setup-admin/tfs/admin/setup-customize-alerts.md) in order for team members to receive notifications. 
+>For on-premises TFS, [you must configure an SMTP sever](../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications. 
 
 
 ## Related notes

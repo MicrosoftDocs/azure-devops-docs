@@ -69,7 +69,7 @@ Within the discussion section, you can use the [**@mention** control](../../noti
 <img src="../backlogs/_img/add-work-items-discussion.png" alt="Discussion section" style="border: 1px solid #CCCCCC;" />  
 
 > [!IMPORTANT]
-> For on-premises TFS, [you must configure an SMTP sever](../../setup-admin/tfs/admin/setup-customize-alerts.md) in order for team members to receive notifications.     
+> For on-premises TFS, [you must configure an SMTP sever](../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.     
 
 ### Access to other tasks
 

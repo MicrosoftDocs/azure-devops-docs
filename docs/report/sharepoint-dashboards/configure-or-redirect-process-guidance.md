@@ -56,7 +56,7 @@ Your team can use process guidance to capture how they coordinate work on a team
 ##  <a name="simple"></a> Specify a website for your process guidance  
  Choose this option when you aren't using SharePoint Products or when your team project is hosted on VSTS.  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](https://www.visualstudio.com/en-us/docs/setup-admin/add-users).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](https://www.visualstudio.com/en-us/docs/accounts/add-users).  
   
 2.  Open Portal Settings and choose the Process Guidance tab.  
   
@@ -69,7 +69,7 @@ Your team can use process guidance to capture how they coordinate work on a team
 ##  <a name="sp"></a> Specify a SharePoint document library that contains your process guidance  
  Some process guidance links will work only if process guidance has been enabled for your team project.  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](https://www.visualstudio.com/en-us/docs/setup-admin/add-users).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](https://www.visualstudio.com/en-us/docs/accounts/add-users).  
   
 2.  Open Portal Settings and choose the Process Guidance tab.  
   

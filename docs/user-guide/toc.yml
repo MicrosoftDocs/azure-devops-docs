@@ -21,7 +21,7 @@
   - name: Add and run manual tests
     href: /vsts/work/kanban/add-run-update-tests?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Try extensions for free
-    href: /vsts/accounts/team-services/try-additional-features-vs?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: /vsts/accounts/try-additional-features-vs?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
 - name: Tutorials
   items:
   - name: Set favorites
@@ -55,15 +55,15 @@
   - name: Go mobile
     href: /vsts/collaborate/mobile-work?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Set your preferences
-    href: /vsts/setup-admin/account-preferences?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
+    href: /vsts/accounts/account-preferences?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: Switch project or team focus
     href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json 
   - name: Authenticate with personal access tokens
-    href: /vsts/setup-admin/team-services/use-personal-access-tokens-to-authenticate?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
+    href: /vsts/accounts/use-personal-access-tokens-to-authenticate?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: "Permissions & access"
-    href: /vsts/setup-admin/permissions-access?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
+    href: /vsts/security/permissions-access?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Keyboard shortcuts
     href: /vsts/reference/keyboard-shortcuts?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Markdown guidance

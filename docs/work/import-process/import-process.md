@@ -77,7 +77,7 @@ Migration to Team Services is a great time to think about process alignment acro
 Prior to importing a process, you'll want to [customize it to support your work tracking needs](customize-process.md). 
 Name your process something other than Scrum, Agile, or CMMI. These system processes are locked and you're prevented from overwriting them.   
 
-1. Only administrators can import process so if you aren't the account owner or a member of the Project Collection Administrator's group, [get added](../../setup-admin/add-administrator-tfs.md#project-collection). 
+1. Only administrators can import process so if you aren't the account owner or a member of the Project Collection Administrator's group, [get added](../../accounts/add-administrator-tfs.md#project-collection). 
 
 2.  From the Process tab, choose import and then browse to the zip file of the process you've customized.  
   

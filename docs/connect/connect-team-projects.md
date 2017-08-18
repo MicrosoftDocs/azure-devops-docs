@@ -25,7 +25,7 @@ To share code, build apps, track work, and collaborate with team members, you co
 >[!NOTE]
 >A team project defines a process and data storage in which you manage your software projects from planning to deployment. You or a team member create a team project either on Team Services or an on-premises TFS. When you connect to a team project, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system. 
 
-If you don't have a team project yet, create one in [Visual Studio Team Services](../setup-admin/team-services/set-up-vs.md) or set one up in an [on-premises TFS](../setup-admin/create-team-project.md). If you need to add a team, see [Multiple teams](../work/scale/multiple-teams.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members). 
+If you don't have a team project yet, create one in [Visual Studio Team Services](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md). If you need to add a team, see [Multiple teams](../work/scale/multiple-teams.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members). 
 
 From each of these clients, you can quickly switch context to a different team project and connect under a different account name. If you work remotely, you can configure your client to [connect to a TFS Proxy server](#proxy).
 
@@ -81,11 +81,11 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 
 
 >[!TIP]  
->If you're connecting to Team Services, see also [Connect to Visual Studio Team Services from Eclipse, Xcode, Visual Studio, and more](../setup-admin/team-services/connect-to-visual-studio-team-services.md). 
+>If you're connecting to Team Services, see also [Connect to Visual Studio Team Services from Eclipse, Xcode, Visual Studio, and more](../accounts/connect-to-visual-studio-team-services.md). 
 
 1.  If you haven't already, [download and install a version of Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs).
 
-2.  If you're not a member of a TFS security group, [get added as one](../setup-admin/add-users.md).
+2.  If you're not a member of a TFS security group, [get added as one](../accounts/add-users.md).
 
 3.  Check with a team member to determine the names of the server, team project collection, and team project that you will connect to.
 
@@ -211,7 +211,7 @@ To add or modify work items by using Excel or Project, you connect your workshee
 
 To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. See [Permission reference](../security/permissions.md) for details.
 
-1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Team Services or TFS 2017, you'll need Project 2010 or a more recent version. For client compatibility, see [Requirements](../setup-admin/requirements.md)
+1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Team Services or TFS 2017, you'll need Project 2010 or a more recent version. For client compatibility, see [Requirements](../accounts/requirements.md)
 
 2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on Team Services or an on-premises TFS. 
 
@@ -225,7 +225,7 @@ To follow these procedures, you must be a member of the **Readers** group or hav
     > [!TIP]    
     > If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/vstudio/ms268871.aspx).
 
-4.  Connect to Team Services account or a TFS instance and the team project. If you can't connect, [get added as a team member](../setup-admin/add-users.md).
+4.  Connect to Team Services account or a TFS instance and the team project. If you can't connect, [get added as a team member](../accounts/add-users.md).
 
     ![Connect to server](../work/office/_img/IC680074.png)
 
@@ -298,16 +298,16 @@ To start planning and tracking work, see [Get started with Agile tools to plan a
 
 ### User accounts and licensing  
 
-To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (Team Services)](../setup-admin/team-services/add-account-users-assign-access-levels-team-services.md) or a [project administrator (TFS)](../setup-admin/add-users.md). 
+To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (Team Services)](../accounts/add-account-users-assign-access-levels-team-services.md) or a [project administrator (TFS)](../accounts/add-users.md). 
 
-Team Services provides access to the first 5 account users free. After that, you need to [pay for more users (Team Services)](../setup-admin/team-services/buy-basic-access-add-team-services-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid Team Services users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
+Team Services provides access to the first 5 account users free. After that, you need to [pay for more users (Team Services)](../accounts/buy-basic-access-add-team-services-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid Team Services users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
 
 In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../quickstart/get-started-stakeholder.md).
 
 <a name="proxy"></a>
 ## Configure Visual Studio to connect to TFS Proxy
 
-If your remote team uses a [TFS Proxy server](../setup-admin/tfs/install/install-proxy-setup-remote.md) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
+If your remote team uses a [TFS Proxy server](../tfs-server/install/install-proxy-setup-remote.md) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
 
 1.  First, make sure that you have connected to TFS as described [in the previous section](#visual-studio).
 
@@ -338,7 +338,7 @@ In addition to connecting through a web browser, Visual Studio, Eclipse, Excel, 
 
 ### Requirements and client compatibility 
 
-Some tasks or features aren't available when you connect to a later version of TFS than which your client supports. For more information, see [Requirements and compatibility](../setup-admin/requirements.md).
+Some tasks or features aren't available when you connect to a later version of TFS than which your client supports. For more information, see [Requirements and compatibility](../accounts/requirements.md).
 
 ### Determine your platform or TFS version 
 
@@ -346,7 +346,7 @@ See [Feedback and support](../provide-feedback.md#platform-version)
 
 ### Connect to a TFS with Secure Sockets Layer (SSL) configured
 
-If you connect to a TFS instance that has SSL configured, then you'll need to install a certificate and clear the client cache. For details, see [Set up HTTPS with Secure Sockets Layer (SSL) for TFS, Configuring Client Computers](../setup-admin/tfs/admin/setup-secure-sockets-layer.md#config-client-computers). 
+If you connect to a TFS instance that has SSL configured, then you'll need to install a certificate and clear the client cache. For details, see [Set up HTTPS with Secure Sockets Layer (SSL) for TFS, Configuring Client Computers](../tfs-server/admin/setup-secure-sockets-layer.md#config-client-computers). 
 
 
 ### Clear the cache on client computers  

@@ -23,7 +23,7 @@ After the team creates test plans and starts to run tests by using the test mana
   
  **Requirements**  
   
--   To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../../setup-admin/add-users.md).  
+-   To view the report, you must be assigned or belong to a group that has been assigned the **Browser** role in Reporting Services. For more information, see [Add users to team projects](../../accounts/add-users.md).  
   
 -   The team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node. If you need to add reports, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).  
   

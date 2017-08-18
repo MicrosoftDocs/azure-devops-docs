@@ -23,7 +23,7 @@ By using the plug-in file for Groups and Permissions, you can configure the init
   
  For information about how to customize types of work items to allow or deny access to groups or users, see [Apply a field rule](../apply-rule-work-item-field.md).  
   
- For more information about how to administer users and groups and control access for Visual Studio Application Lifecycle Management (ALM), see [Set up groups for use in TFS deployments](../../../setup-admin/tfs/admin/setup-ad-groups.md).  
+ For more information about how to administer users and groups and control access for Visual Studio Application Lifecycle Management (ALM), see [Set up groups for use in TFS deployments](../../../tfs-server/admin/setup-ad-groups.md).  
   
 ##  <a name="ElementsGroups"></a> Define and assign permissions to groups  
  You can use the **group** and **member** elements to specify a new security group in Team Foundation Server and add members to that group. You can use the group **permission** element to assign permissions to a group and to members of that group. You must encapsulate each of these elements within their corresponding container elements: **groups**, **permissions**, and **members**. You use the following the syntax structure for each of these elements:  
@@ -263,8 +263,8 @@ The following table describes the permissions that you can assign to control acc
 ## Related notes 
 - [Define groups, teams, and permissions](define-groups-teams-permissions-plug-in.md)   
 - [Control access to functional areas](control-access-to-functional-areas.md)   
-- [Set up groups for use in TFS deployments](../../../setup-admin/tfs/admin/setup-ad-groups.md)   
+- [Set up groups for use in TFS deployments](../../../tfs-server/admin/setup-ad-groups.md)   
 - [Permission reference](https://www.visualstudio.com/en-us/docs/tfvc/permission-command)
-- [Change groups and permissions with TFSSecurity](../../../setup-admin/tfs/command-line/tfssecurity-cmd.md)
+- [Change groups and permissions with TFSSecurity](../../../tfs-server/command-line/tfssecurity-cmd.md)
 - [tf permission Command](../../../tfvc/permission-command.md).  
   

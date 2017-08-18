@@ -55,7 +55,7 @@ To create additional teams, see [Add teams and team members](multiple-teams.md).
 
 If team members don't have access to all the features they want, check that they have [the access level needed for those features](../../security/change-access-levels.md).  
 
-You can also [restrict access to select features and functions](../../setup-admin/restrict-access-tfs.md).
+You can also [restrict access to select features and functions](../../accounts/restrict-access-tfs.md).
 
 
 ### Team name, description, and picture

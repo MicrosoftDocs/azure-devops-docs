@@ -19,12 +19,12 @@ You receive this error when your run the New Team Project Wizard under the follo
   
      Correct this error by contacting your administrator and ask that the permission **Create new projects** be added to your user account.  
   
-     If your on-premises TFS supports SharePoint Products or SQL Server Reporting Services, you might need to have permissions set for those products as well. See [Add accounts to administer project collections](../../../setup-admin/add-administrator-tfs.md).  
+     If your on-premises TFS supports SharePoint Products or SQL Server Reporting Services, you might need to have permissions set for those products as well. See [Add accounts to administer project collections](../../../accounts/add-administrator-tfs.md).  
   
 -   You're client version isn't compatible with the TFS version where you're trying to create a team project.  
   
      To create a team project or manage process templates on an on-premises TFS, you must connect using the same version level of Visual Studio or Team Explorer. That is, to create a team project for an on-premises TFS 2015, you must connect from Team Explorer 2015. You can [download and install released versions of Visual Studio Community](http://www.visualstudio.com/downloads/download-visual-studio-vs) or [prerelease versions in](http://www.visualstudio.com/downloads/prerelease-software-downloads-vs) in a side by side configuration for free.  
   
 ## Related notes  
-- [Create a team project](../../../setup-admin/create-team-project.md)   
+- [Create a team project](../../../accounts/create-team-project.md)   
 - [Permission reference](../../../security/permissions.md)

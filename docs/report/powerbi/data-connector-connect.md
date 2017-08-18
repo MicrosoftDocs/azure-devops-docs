@@ -149,7 +149,7 @@ You import data from the Analytics Service for Team Services into Power BI using
 - [Permissions required to access the Analytics service](../analytics/analytics-security.md)
 - [Power BI integration overview](overview.md)
 - [Analytics Service security](../analytics/analytics-security.md)
-- [Authenticate your identity with personal access tokens](../../setup-admin/team-services/use-personal-access-tokens-to-authenticate.md) 
+- [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md) 
 - [Available data tables in the Power BI Data Connector](data-connector-available-data.md)  
 - [Data Connector - Example reports](data-connector-examples.md)
 

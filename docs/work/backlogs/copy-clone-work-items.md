@@ -83,7 +83,7 @@ If you have a large number of work items whose type you want to change, use [Cha
 With this option, you can copy an HTML formatted table of selected items from either a backlog page or query results list. You can then email this list using your choice of email client, or paste into a Word document, Excel spreadsheet, or other application. 
  
 >[!NOTE]  
->The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises TFS, all email actions require an [SMTP server to be configured](../../setup-admin/tfs/admin/setup-customize-alerts.md). 
+>The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises TFS, all email actions require an [SMTP server to be configured](../../tfs-server/admin/setup-customize-alerts.md). 
 
 **Team Services**
 

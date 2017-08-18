@@ -190,5 +190,5 @@ You must specify permissions for each group that you create. You use the **permi
 -  [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
 -  [Control access to functional areas](control-access-to-functional-areas.md)   
 -  [Apply a field rule](../apply-rule-work-item-field.md)   
--  [Set up groups for use in TFS deployments](../../../setup-admin/tfs/admin/setup-ad-groups.md)  
+-  [Set up groups for use in TFS deployments](../../../tfs-server/admin/setup-ad-groups.md)  
 -  [Customize a process](customize-process.md)

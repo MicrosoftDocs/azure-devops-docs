@@ -31,7 +31,7 @@ For an overview of all three processes, see [Choose a process](../guidance/choos
 
 
 ##Add work items to define new work
-You can start adding work items once you connect to a team project. If you don't have a team project yet, create one in [Team Services](../../setup-admin/team-services/set-up-vs.md) or set one up in an [on-premises TFS](../../setup-admin/create-team-project.md).
+You can start adding work items once you connect to a team project. If you don't have a team project yet, create one in [Team Services](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).
 
 Here we show how to add work items from the web portal. For additional clients that you can use, see [Clients that support tracking work items](#clients).
 

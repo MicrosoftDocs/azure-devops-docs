@@ -14,18 +14,16 @@ ms.date: 08/03/2017
 
 As your organization grows, you can support individual teams by giving them the autonomy to work the way they work best by giving them a set of their Agile tools. You do this by adding teams. 
 
-## 5-Minute Quickstarts  
+## 5-Minute Quickstarts    
 
-Start tracking work by adding work items, creating your backlog, or scheduling sprints.  
-
-- [Add a team & team members](multiple-teams.md)  
 - [Add a team administrator](add-team-administrator.md)  
 
 
 ## Step-by-Step Tutorials
 
+- [Add a team & team members](multiple-teams.md)  
 - [Manage portfolios](portfolio-management.md)
-- [Review team delivery plans](/vsts/work/scale/review-team-plans?toc=/vsts/work/scale/toc.json&bc=/vsts/work/breadcrumb/toc.json) 
+- [Review team delivery plans](/vsts/work/scale/review-team-plans?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json) 
 - [Scaled Agile Framework](scaled-agile-framework.md) 
 
 
@@ -38,7 +36,7 @@ Start tracking work by adding work items, creating your backlog, or scheduling s
 
 
 ## Reference   
-- [Permissions and access for work tracking](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/scale/toc.json&bc=/vsts/work/breadcrumb/toc.json) 
+- [Permissions and access for work tracking](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json) 
 
 
 ## Resources  

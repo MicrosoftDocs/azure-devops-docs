@@ -38,7 +38,7 @@ You can upload, download, and delete process templates for a team project collec
 
 	You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://www.visualstudio.com/downloads/#visual-studio-community-2015-with-update-3-free).  
 
-	If you aren't a member of the Project Collection Administrators group, [get added as one](../../setup-admin/add-administrator-tfs.md#project-collection).  
+	If you aren't a member of the Project Collection Administrators group, [get added as one](../../accounts/add-administrator-tfs.md#project-collection).  
 
 2.	From, Visual Studio, open the Process Template Manager from the **Team, Team Project Collection Settings** menu.
 
@@ -143,7 +143,7 @@ For additional restrictions, see [Naming restrictions](../../reference/naming-re
 
 Periodically, updates are made to the process templates to support new features. For details, see [Changes made to process templates](changes-to-process-templates.md).  
 
-- [Create a team project](../../setup-admin/create-team-project.md)   
+- [Create a team project](../../accounts/create-team-project.md)   
 - [Customize a process template](../reference/process-templates/customize-process.md)   
 - [Process template and plug-in files](../reference/process-templates/overview-process-template-files.md)  
 - [Import and update a process (Hosted XML)](../import-process/import-process.md)   
