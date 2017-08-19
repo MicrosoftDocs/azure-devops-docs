@@ -46,8 +46,6 @@
     href: vs-subscriptions/buy-vs-subscriptions.md
   - name: Manage Visual Studio subscriptions
     href: vs-subscriptions/manage-vs-subscriptions.md
-  - name: Manage Visual Studio subscriptions from Admin Portal
-    href: using-admin-portal.md
   - name: View Visual Studio subscriptions
     href: vs-subscriptions/view-vs-subscriptions.md
 - name: Concepts

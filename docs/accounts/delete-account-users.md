@@ -199,7 +199,7 @@ users to 0.
 0.	On the 1st day of the next calendar month, 
 [go to the Marketplace](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly) 
 and buy Visual Studio Professional monthly subscriptions for the same users. 
-Learn [how to buy Visual Studio subscriptions](../marketplace/vs-subscriptions/buy-vs-subscriptions.md).
+Learn [how to buy Visual Studio subscriptions](../billing/vs-subscriptions/buy-vs-subscriptions.md).
 
 	**Note** If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, 
 	make sure to remove your subscription's default spending limit indefinitely. 

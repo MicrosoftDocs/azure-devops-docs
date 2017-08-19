@@ -41,7 +41,7 @@ if you're buying for your organization, and they manage identities with Azure Ac
 0.	Select the Azure subscription to use for billing.
 Or sign up for a new subscription, if you don't have one.
 
-	<img alt="Select Azure subscription for biling" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Select Azure subscription for biling" src="_img/buy-vs-subscriptions/buy-vs-sub-azure-sub.png" style="border: 1px solid #CCCCCC" />
 
 0.	Select the number of subscriptions to buy.
 

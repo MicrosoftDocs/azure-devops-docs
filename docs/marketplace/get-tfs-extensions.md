@@ -63,11 +63,11 @@ go to the team project collection where you want to install the extension.
 0.  From your team project collection, 
 go to the Visual Studio Marketplace.
 
-	<img alt="Browse Marketplace in new navigation" src="./_shared/_img/browse-marketplace2-new.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Browse Marketplace in new navigation" src="_shared/_img/browse-marketplace2-new.png" style="border: 1px solid #CCCCCC" />
 
 0.	Find and select the extension that you want to install.
 
-   <img alt="Select a TFS extension" src="./_img/get-tfs-extensions/connected/marketplace-select-extension.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Select a TFS extension" src="_img/get-tfs-extensions/connected/marketplace-select-extension.png" style="border: 1px solid #CCCCCC" />
 
    TFS is connected to the Marketplace, so the Marketplace automatically filters and shows on-premises extensions only.
 
@@ -132,9 +132,9 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 0.	Find the extension that you want to install.
 
-	<img alt="View" src="./_img/get-tfs-extensions/standalone/marketplace-find-extension.png" style="border: 1px solid #CCCCCC" />	
+	<img alt="View" src="_img/get-tfs-extensions/standalone/marketplace-find-extension.png" style="border: 1px solid #CCCCCC" />	
 
-	<img alt="View" src="./_img/get-tfs-extensions/standalone/marketplace-find-extension2.png" style="border: 1px solid #CCCCCC" />	
+	<img alt="View" src="_img/get-tfs-extensions/standalone/marketplace-find-extension2.png" style="border: 1px solid #CCCCCC" />	
 
 0.	Download and save your extension.
 

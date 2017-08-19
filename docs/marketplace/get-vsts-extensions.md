@@ -53,7 +53,7 @@ like Cloud-based Load Testing.
 
 0.  Sign in to the [Visual Studio Marketplace > Visual Studio Team Services](https://marketplace.visualstudio.com/vsts).
 	
-	<img alt="Visual Studio Marketplace" src="./_img/get-vsts-extensions/marketplace.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Visual Studio Marketplace" src="_img/get-vsts-extensions/marketplace.png" style="border: 1px solid #CCCCCC" />
 
 0.	Find and select the extension that you want to install.
 
@@ -105,7 +105,7 @@ You can request extensions instead.
 
 0.  Sign in to [Visual Studio Marketplace > Visual Studio Team Services](https://marketplace.visualstudio.com/vsts).
 	
-	<img alt="Visual Studio Marketplace" src="./_img/get-vsts-extensions/marketplace.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Visual Studio Marketplace" src="_img/get-vsts-extensions/marketplace.png" style="border: 1px solid #CCCCCC" />
 
 0. Find and select the extension that you want to request.
 

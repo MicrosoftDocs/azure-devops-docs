@@ -62,7 +62,7 @@ The account owner and other members of the Project Collection Administrator grou
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Billing and purchases</p>
 <ul style="padding-left:20px">
  <li style="margin-bottom:2px">[Set up billing](../billing/set-up-billing-for-your-account-vs.md)</li> 
- <li style="margin-bottom:2px">[Try extensions for free](try-additional-features-vs.md)</li>
+ <li style="margin-bottom:2px">[Try extensions for free](../billing/try-additional-features-vs.md)</li>
  <li style="margin-bottom:2px">[Pay for more users](../billing/buy-basic-access-add-team-services-users.md)</li>
  <li style="margin-bottom:2px">[Buy more pipeline capacity for builds](../billing/buy-more-build-vs.md)</li>
  <li style="margin-bottom:2px">[Buy more cloud-based testing services](../billing/buy-load-testing-vs.md)</li>
@@ -354,7 +354,7 @@ Help your team do more with Team Services extensions.
 For example, Team Services account owners can 
 try the Test Manager extension free for 90 days. 
 During the trial, all users with Basic access can 
-[try Test Manager for free](try-additional-features-vs.md).
+[try Test Manager for free](../billing/try-additional-features-vs.md).
 
 #### Set up billing
 If you need more than free users and amounts 

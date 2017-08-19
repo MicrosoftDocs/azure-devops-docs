@@ -4,7 +4,7 @@ description: Buy Basic access to add more users in Visual Studio Team Services (
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
-ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
+ms.assetid: bbef464e-ab42-4258-83bd-c477ebb9d8ab
 ms.manager: douge
 ms.author: estfan
 ms.date: 1/10/2017

@@ -246,7 +246,7 @@ Before you make purchases though, you must
 [remove your spending limit](https://azure.microsoft.com/en-us/pricing/spending-limits/) 
 from these subscriptions.
 
-<img alt="Spending limit" src="./_shared/_img/spending-limit.png" style="border: 1px solid #CCCCCC" />
+<img alt="Spending limit" src="_shared/_img/spending-limit.png" style="border: 1px solid #CCCCCC" />
 
 <a name="spending-limit"></a>
 
@@ -257,7 +257,7 @@ when your monthly charges are billed the next month.
 Otherwise, all resources billed to this subscription will be suspended,
 including virtual machines and all other workloads. 
 
-<img alt="Remove spending limit indefinitely" src="./_shared/_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
+<img alt="Remove spending limit indefinitely" src="_shared/_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
 
 ###Q:	How often am I billed for Visual Studio subscriptions?
 
@@ -276,7 +276,7 @@ after the anniversary date of your subscription purchase.
 
 [!INCLUDE [azure-bill-larger](../_shared/qa-azure-bill-larger.md)]
 
-[!INCLUDE [azure-billing-support](./_shared/qa-azure-billing-support.md)]
+[!INCLUDE [azure-billing-support](_shared/qa-azure-billing-support.md)]
 
 
 
@@ -288,7 +288,7 @@ after the anniversary date of your subscription purchase.
 <a name="marketplace-support"></a>
 ##Marketplace support  
 
-[!INCLUDE [marketplace-support](./_shared/qa-marketplace-support.md)]
+[!INCLUDE [marketplace-support](_shared/qa-marketplace-support.md)]
 
 <a name="get-support"></a>
 

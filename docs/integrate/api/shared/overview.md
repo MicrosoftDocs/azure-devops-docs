@@ -11,9 +11,9 @@ ms.date: 08/04/2016
 
 # Accounts and profiles
 
-Each person using Visual Studio Team Services has a [profile](./profiles.md) and access to one or more [accounts](./accounts.md).
+Each person using Visual Studio Team Services has a [profile](./profiles.md) and access to one or more [accounts](accounts.md).
 
-* [Accounts](./accounts.md)
+* [Accounts](accounts.md)
 * [Profiles](./profiles.md)
 
 ## Common tasks
@@ -26,7 +26,7 @@ Get the authenticated user's [profile](./profiles.md).
 
 ### Get my accounts
 
-Get the list of [accounts](./accounts.md) that the authenticated user has access to.
+Get the list of [accounts](accounts.md) that the authenticated user has access to.
 
-<img alt="The accounts" src="./_img/accounts.png" style="border: 1px solid #CCCCCC" />
+<img alt="The accounts" src="_img/accounts.png" style="border: 1px solid #CCCCCC" />
 

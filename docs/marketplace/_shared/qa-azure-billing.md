@@ -59,7 +59,7 @@ Before you make purchases, you must
 [remove your spending limit](https://azure.microsoft.com/en-us/pricing/spending-limits/) 
 from these subscriptions.
 
-<img alt="Spending limit" src="./_img/spending-limit.png" style="border: 1px solid #CCCCCC" />
+<img alt="Spending limit" src="_img/spending-limit.png" style="border: 1px solid #CCCCCC" />
 
 <a name="spending-limit"></a>
 
@@ -69,7 +69,7 @@ when your monthly charges are billed the next month.
 Otherwise, all resources billed to this subscription will be suspended,
 including virtual machines and all other workloads. 
 
-<img alt="Remove spending limit indefinitely" src="./_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
+<img alt="Remove spending limit indefinitely" src="_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
 
 ####Q: Where can I check my bill or correct any billing information on my Azure subscription?
 

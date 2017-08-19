@@ -308,7 +308,7 @@ which are available as free or paid.
 
 For example, [web-based test case management](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 requires that you install the Test Manager extension, 
-but you can [try paid extensions for free](try-additional-features-vs.md), 
+but you can [try paid extensions for free](../billing/try-additional-features-vs.md), 
 if you haven't started the extension trials already. 
 Otherwise, you can [pay for user access](https://www.visualstudio.com/get-started/marketplace/get-vsts-extensions) 
 to these features.

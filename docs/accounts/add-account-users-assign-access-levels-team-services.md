@@ -37,9 +37,9 @@ return to your Team Services account, add these users, and assign them Basic acc
 This lets you pay monthly for their access, and you can cancel anytime.
 <p>Visual Studio subscriptions give you flexible ways to access Team Services 
 and to license the Visual Studio IDE and other Microsoft software for dev and test. 
-Learn [how to buy Visual Studio subscriptions](../marketplace/vs-subscriptions/buy-vs-subscriptions.md) 
+Learn [how to buy Visual Studio subscriptions](../billing/vs-subscriptions/buy-vs-subscriptions.md) 
 from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions). 
-<p>Or learn [how to manage purchased Visual Studio subscriptions](../marketplace/vs-subscriptions/buy-vs-subscriptions.md#manage-subscriptions) 
+<p>Or learn [how to manage purchased Visual Studio subscriptions](../billing/vs-subscriptions/buy-vs-subscriptions.md#manage-subscriptions) 
 in the [Visual Studio Subscriptions Administration portal](https://manage.visualstudio.com/_apis/Home/redirect?RedirectSource=Commerce). 
 Make sure to sign in with the ID that you used to purchase your subscriptions.
 </div>
@@ -380,7 +380,7 @@ users to 0.
 0.	On the 1st day of the next calendar month, 
 [go to the Marketplace](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly) 
 and buy Visual Studio Professional monthly subscriptions for the same users. 
-Learn [how to buy Visual Studio subscriptions](../marketplace/vs-subscriptions/buy-vs-subscriptions.md).
+Learn [how to buy Visual Studio subscriptions](../billing/vs-subscriptions/buy-vs-subscriptions.md).
 
 	**Note** If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, 
 	make sure to remove your subscription's default spending limit indefinitely. 

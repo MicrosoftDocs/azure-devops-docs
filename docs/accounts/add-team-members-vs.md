@@ -135,7 +135,7 @@ return to your Team Services account,
 This lets you pay monthly for their access, and you can cancel anytime.
 
 If you need more Visual Studio subscriptions, 
-learn [how to buy these subscriptions](../marketplace/vs-subscriptions/buy-vs-subscriptions.md) 
+learn [how to buy these subscriptions](../billing/vs-subscriptions/buy-vs-subscriptions.md) 
 from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions).
 
 <a name="WhyCantSignIn"></a>

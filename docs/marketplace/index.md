@@ -18,7 +18,7 @@ The Visual Studio Marketplace provides support for the following:
 - Purchase pay-for-usage extensions, such as Test Manager and Package Management (these extensions are assigned to specific users). 
 
 
-<img alt="Marketplace" src="./_img/overview/marketplace-vs-new.png" />
+<img alt="Marketplace" src="_img/overview/marketplace-vs-new.png" />
 
 ## What are extensions
 

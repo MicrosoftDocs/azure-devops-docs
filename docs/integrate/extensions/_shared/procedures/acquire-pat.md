@@ -23,7 +23,7 @@ publishing APIs work outside the context of an account.
 This will limit the token to only being able 
 to publish extensions to the Visual Studio Marketplace.
 
-   <img alt="Marketplace scope" src="./_img/create-pat/marketplace-scope.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Marketplace scope" src="_img/create-pat/marketplace-scope.png" style="border: 1px solid #CCCCCC" />
        
 0. Finish creating your token. 
     

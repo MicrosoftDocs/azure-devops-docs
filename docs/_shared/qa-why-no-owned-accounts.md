@@ -8,7 +8,7 @@ If you were asked to choose between your personal Microsoft account,
 or your work or school account when you signed in, 
 you might have selected the wrong identity. 
 
-<img src="./_img/sign-in-picker.png" alt="Choose work or school account, or personal Microsoft account" style="border: 1px solid #CCCCCC">
+<img src="_img/sign-in-picker.png" alt="Choose work or school account, or personal Microsoft account" style="border: 1px solid #CCCCCC">
 
 Please try signing out completely from Team Services, 
 then sign in again, and select your other identity.

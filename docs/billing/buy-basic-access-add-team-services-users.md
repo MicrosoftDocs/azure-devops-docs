@@ -42,7 +42,7 @@ you can still [find those steps here](#update-paid-users-azure).
 > and to license the Visual Studio IDE and other Microsoft software for dev and test. 
 > To buy more [Visual Studio subscriptions](https://www.visualstudio.com/products/how-to-buy-vs), 
 > visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions), 
-> or learn [how to buy Visual Studio subscriptions here](../marketplace/vs-subscriptions/buy-vs-subscriptions.md).
+> or learn [how to buy Visual Studio subscriptions here](vs-subscriptions/buy-vs-subscriptions.md).
 > </div>
 >
 > <p><a data-toggle="collapse" href="#expando-change-paid-extension-users">Need to change paid extension users instead? &#x25BC;</a></p>
