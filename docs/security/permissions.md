@@ -23,32 +23,6 @@ This topic provides descriptions for each built-in group and permission. To lear
 > |-------------|----------|---------|   
 > |- [Add users to an administrator role](../accounts/add-administrator-tfs.md)<br/>- [Add users to a team project](../accounts/add-team-members-vs.md) (Team Services)<br/>- [Add users to a team project](../accounts/add-users.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)  |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](../accounts/restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (Team Services)<br/> - [Dashboard permissions](../report/dashboard-permissions.md#set-permissions)|    
 
- 
-<table valign="top">
-<tr valign="top">
-<td>![Conceptual image of permissions and access levels](_img/permissions/permissions-overview.png) </td>
-<td><p>**Permission states**</p>
-<p>User or group has permissions to perform a task:</p>
-<ul>
-<li>**Allow**</li>
-<li>**Inherited allow**</li>
-</ul>
-<p>User or group doesn't have permission to perform a task:</p>
-<ul>
-<li>**Deny**</li>
-<li>**Inherited deny**</li>
-<li>**Not set**</li>
-</ul>
-
-To learn more about inheritance, see [About permissions.md](about-permissions.md#inheritance).
-</td>
-</tr>
-</table>
-
-> [!NOTE]  
-> Certain features are only available to users who have the appropriate licensing level for those features. Access to those features is not controlled by permissions
-but by membership in an access level. To learn more, see [Access levels](access-levels.md). <!--- Manage users and access (Team Services)](../accounts/add-account-users-assign-access-levels-team-services.md) or [Change access levels (TFS)](change-access-levels.md). --> 
-
 
 ## Groups
 

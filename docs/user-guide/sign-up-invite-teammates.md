@@ -13,7 +13,7 @@ ms.date: 07/14/2017
 # Sign up for a free VSTS account and invite others to join your team  
 **Team Services**
 
-NEW - BEING WRITTEN 
+!!! WORK IN PROGRESS !!! 
  
 Sign up for a [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) 
 account to upload and share code in a free unlimited private 

@@ -2,8 +2,8 @@
   href: index.md
 - name: Overview
   items:
-  - name: About work items (NEW TOPIC) 
-    href: wit-overview.md
+  - name: About work items
+    href: about-work-items.md
 - name: Quickstarts
   items:
   - name: Add a work item

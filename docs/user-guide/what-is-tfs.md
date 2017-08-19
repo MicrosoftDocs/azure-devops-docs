@@ -25,12 +25,23 @@ ms.date: 12/07/2016
 
 !!! WORK IN PROGRESS !!! 
 
+Team Foundation Server (TFS) is the on-premises version of our cloud service, [Visual Studio Team Services](what-is-vsts.md) (VSTS).  
 
+TFS provides an integrated set of features that you access through your web browser or a supported IDE, including: 
 
-Choose on-premises TFS when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  
+- Git repositories for source control of your code   
+- Build and release management to support continuous integration and delivery of your apps 
+- Agile tools to support planning and tracking your work, code defects, and issues using Kanban and Scrum methods 
+- A variety of tools to test your apps, including manual/exploratory testing, load testing, and continuous testing 
+- Highly customizable dashboards for sharing progress and trends 
 
-[![Install TFS](../_img/overview/tfs-setup-1.png)](../tfs-server/install/single-server.md)[![Create a team project](../_img/overview/tfs-setup-2.png)](../setup-admin/create-team-project.md)[![Add team members](../_img/overview/tfs-setup-3.png)](../setup-admin/add-users.md)[![Configure a backup schedule](../_img/overview/tfs-setup-4.png)](../tfs-server/admin/backup/back-up-restore-tfs.md)   
- 
+In addition, the TFS ecosystem provides support for adding extensions, integrating with other popular services, such as: Campfire, Slack, Trello, UserVoice, and more, and developing your own custom extensions.  
+
+When you deploy TFS, you can also configure the following servers or integration points: 
+
+- **Build server**: supports on-premise builds, you can use a combination of on-premises builds and cloud-hosted builds   
+- **SQL Server and SQL Analysis Server**: supports SQL Server Reports and the ability to create Excel pivot charts based on the cube 
+
 
 
 ## Where do I start?
@@ -39,46 +50,23 @@ Choose on-premises TFS when you need your data to stay within your network or yo
 - Or, begin tracking your work using Scrum, Kanban, or a combination of methods 
 
 
-## Build and release your apps
+Choose an on-premises TFS when you need your data to stay within your network or you want access to SQL Server reporting services that integrate with TFS data and tools. You can start for free by downloading TFS Express. 
 
-You can use our cloud platform to build your apps or use our build server 
 
- 
-## Add extensions or integrate with other services 
-
-Ecosystem, Marketplace, ... 
-
+[![Install TFS](../_img/overview/tfs-setup-1.png)](../tfs-server/install/single-server.md)[![Create a team project](../_img/overview/tfs-setup-2.png)](../accounts/create-team-project.md)[![Add team members](../_img/overview/tfs-setup-3.png)](../accounts/add-users.md)[![Configure a backup schedule](../_img/overview/tfs-setup-4.png)](../tfs-server/admin/backup/back-up-restore-tfs.md)   
  
 
-## On-premises TFS services  
-
-When you deploy TFS, you can also configure the following servers or integration points: 
-
-- **Build server**: supports on-premise builds, you can use a combination of on-premises builds and cloud-hosted builds   
-- **SQL Server and SQL Analysis Server**: supports SQL Server Reports and the ability to create Excel pivot charts based on the cube 
-- **SharePoint integration**: provides support for a team project portal which provides dashboards, a wiki, document repository, and other SharePoint features. 
 
 <!--- Add note about SharePoint integration deprecation for TFS 2018  --> 
 
-## Pricing
-- [Pricing](https://www.visualstudio.com/vs/pricing/)
+## Try this next 
 
-
-## Administrative services  
-
-There are a number of features and tasks associated with administrating a collaborate software development environment. You perform most of these tasks through the web portal for either Team Services or TFS. 
-
-
-> [!div class="mx-tdBreakAll"]  
-> |Account Management (Team Services)  | Administration (TFS)  | 
-> |-------------|----------| 
-> |- Manage users, access, and billing<br/>- Add and manage team projects and teams<br/>- Customize work tracking processes<br/>- Manage build retention policies<br/>- Add and manage build agent pools<br/>- Add and manage extensions|-Manage users, access, and permissions<br/>- Add and manage teams, team projects, and collections<br/>- Customize work tracking processes<br/>- Manage build retention policies<br/>- Add and manage build agent pools<br/>- Add and manage extensions<br/>- Configure an SMTP server (supports feedback requests and notification features)<br/>- Configure a backup schedule and manage database backups<br/>- Manage upgrades |
-
- 
-## Related notes 
-- [Key concepts](../concepts.md)
+To learn more, see these topics: 
+- [A tour of services](../services.md)
+- [Key concepts](../concepts.md)  
 - [Client-server tools](../tools.md)
 - [Software development roles](../roles.md)
+- [Pricing - TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
 
 
 ### Case studies 

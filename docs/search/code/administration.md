@@ -28,8 +28,8 @@ In this topic:
   - [Limitations of Search](#limit-tfs)
   - [Troubleshoot Search](#trouble-tfs)
 
-Also see [Install and configure TFS](../../setup-admin/tfs/install/get-started.md)
-and [TFS requirements and compatibility](../../setup-admin/requirements.md).
+Also see [Install and configure TFS](../../tfs-server/install/get-started.md)
+and [TFS requirements and compatibility](../../accounts/requirements.md).
 
 >Users with at least a **Basic** access can use Code Search. 
 Stakeholders do not have access to code, and therefore no access to Code Search. 

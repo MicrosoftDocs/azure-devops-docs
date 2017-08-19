@@ -7,7 +7,7 @@ ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 07/21/2017
+ms.date:08/18/2017
 ---
 
 
@@ -146,9 +146,6 @@ As you can see, the task board provides a lot of support for your Scrum activiti
 | ![full screen icon](../_img/icons/fullscreen_icon.png)/![exit full screen icon](../_img/icons/exitfullscreen_icon.png)     | Enter or exit full screen mode         |
 
 See also [Keyboard shortcuts](../../reference/keyboard-shortcuts.md).     
-
-
-[!INCLUDE [temp](../_shared/assign-to-team-member.md)]  
 
 
 ### Customize the task board 

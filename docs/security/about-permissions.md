@@ -184,7 +184,34 @@ For information about how to set permissions in Reporting Services,
 see [Add administrators to TFS](../accounts/add-administrator-tfs.md).
 
 
-## SharePoint integration (TFS)  
+## Tools used to set permissions
+
+You can use the tools listed in the following table to set permissions.
+Different tools are used depending on whether you are setting permissions at a server, collection, or team project level.
+You use the [TFS web portal administration context](../accounts/add-users.md) to set most permissions.  
+
+|Permission level|Web portal security pages |Team Foundation Administration Console|TFSSecurity command-line tool|Tf command-line tool|TFSLabConfig command-line tool|
+|---|:---:|:---:|:---:|:---:|:---:|
+|[Server-level](permissions.md#server)||![check mark](../_img/check.png)|![check mark](../_img/check.png)|||
+|[Collection-level](permissions.md#collection)|![check mark](../_img/check.png)|![check mark](../_img/check.png)|![check mark](../_img/check.png)|||
+|[Team project and test level](permissions.md#project_test)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
+|[Build level](permissions.md#build)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
+|[Git repository](permissions.md#git-repo)|![check mark](../_img/check.png)|||![check mark](../_img/check.png)||
+|[Team Foundation Version Control](permissions.md#tfvc)|![check mark](../_img/check.png)|||![check mark](../_img/check.png)||
+|[Area level for work item tracking](permissions.md#area-permissions)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
+|[Iteration level for work item tracking](permissions.md#iteration-path-permissions)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
+|[Work item query](permissions.md#query)|![check mark](../_img/check.png)||![check mark](../_img/check.png)|||
+|[Work item tags](permissions.md#tags)|||![check mark](../_img/check.png)|||
+|[Alerts](permissions.md#alerts)|||![check mark](../_img/check.png)|||
+|[Release Management](permissions.md#release_management) |![check mark](../_img/check.png)||||| |
+|[Lab Management](permissions.md#lab)|||||![check mark](../_img/check.png)|
+
+
+
+
+## On-premises TFS 
+
+### SharePoint integration    
 
 For information about how to set permissions for SharePoint Products integrated with TFS,
 see [Add administrators to TFS](../accounts/add-administrator-tfs.md).
@@ -192,52 +219,10 @@ see [Add administrators to TFS](../accounts/add-administrator-tfs.md).
 For more information, see [Determine permission levels and groups in SharePoint 2013](https://technet.microsoft.com/en-us/library/cc262690.aspx).
 
 
-## Authentication methods, integrating with other services and apps 
+## SQL Server reports (TFS) 
 
-With VSTS and TFS, other applications and services can integrate with VSTS and TFS services and resources. To access your account without asking for user credentials multiple times, apps can use these authentication methods:
-
-*	[OAuth](/vsts/integrate/get-started/Authentication/oauth) 
-to generate tokens for accessing [REST APIs for Team Services and Team Foundation Server](/vsts/integrate/get-started/rest/basics). 
-The [Accounts](/vsts/integrate/api/shared/accounts) 
-and [Profiles](/vsts/integrate/api/shared/profiles) 
-APIs support only OAuth.
-
-*	[Alternate credentials](../git/auth-overview.md#alternate-credentials) 
-as a single set of credentials across all tools that don't have 
-plug-in, extension, or native support. For example, 
-you can use basic authentication to access 
-[REST APIs for Team Services and TFS](../integrate/get-started/rest/basics.md), 
-but you must turn on alternate credentials.
-
-*	[SSH authentication](../git/use-ssh-keys-to-authenticate.md) 
-to generate encryption keys when you use Linux, Mac, 
-or Windows running [Git for Windows](http://www.git-scm.com/download/win) 
-and can't use 
-[Git credential managers](../git/set-up-credential-managers.md) 
-or [personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
-for HTTPS authentication.
-
-*	[Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
-to generate tokens for: 
-
-	*	Accessing specific resources or activities, like builds or work items
-	*	Clients like Xcode and Nuget that require usernames and passwords 
-		as basic credentials and don't support Microsoft account 
-		and Azure Active Directory features like multi-factor authentication 
-	*	Accessing [REST APIs for Team Services and TFS](../integrate/get-started/rest/basics.md)
-
-By default, your account or collection allows access for all authentication methods. 
-You can limit access, but you must specifically restrict access for each method. 
-When you deny access to an authentication method, 
-no app can use that method to access your account. 
-Any app that previously had access will get an 
-authentication error and can't access your account.
-
-> To remove access for personal access tokens, 
-> you must [revoke them](../accounts/use-personal-access-tokens-to-authenticate.md).
-
-
-
+For information about how to set permissions in Reporting Services,
+see [Add administrators to TFS](../accounts/add-administrator-tfs.md).
 
 
 <!-- TODO: Cover how to set permissions for Reporting Services and SharePoint as mainline sections. -->  

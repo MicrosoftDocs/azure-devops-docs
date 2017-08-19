@@ -13,6 +13,14 @@ ms.date: 08/15/2017
 # A tour of services provided with Team Services and TFS 
 <b>Team Services | TFS 2017 | TFS 2015  </b> 
 
+<!--- TO BE COMPLETED   --> 
+
+!!! WORK IN PROGRESS !!! 
+
+Update this to provide more of a tour with screenshots 
+
+!!! WORK IN PROGRESS !!! 
+
 Team Services and TFS provide an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web-based interface that you can access from all major browsers on any platform. Web services are access through the following five main hubs: 
 
 ![Team Services, main hubs](_img/services-hubs.png)  

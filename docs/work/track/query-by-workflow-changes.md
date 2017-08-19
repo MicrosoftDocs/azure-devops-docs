@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/09/2016
+ms.date:08/18/2017
 ---
 
 # Query by assignment, workflow or Kanban board changes
@@ -469,10 +469,7 @@ For information about data types and default field attributes, see [Work item da
 
 For more query examples, see [Create managed queries](example-queries.md).  
 
-
 <a id="assigned_to-field">  </a>
-
-[!INCLUDE [temp](../_shared/assign-to-team-member.md)]
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  
