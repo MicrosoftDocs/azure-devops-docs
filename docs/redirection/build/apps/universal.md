@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/apps/windows/universal
+redirect_url: /vsts/build-release/apps/windows/universal
 ---

@@ -12,9 +12,8 @@ ms.date: 08/07/2017
 
 # Track work and issues, add and update a work item 
 
-<!---
 <b>Team Services | TFS 2017</b> 
--->
+
 
 >[!IMPORTANT]   
 ><b>Feature availability: </b>The new work item  experience is currently available from Team Services and the web portal for TFS 2017. This topic describes how to track work using the new form. If you don't see the new form, [your admin may need to enable it](../customize/manage-new-form-rollout.md), or if it's enabled, [you may need to switch to use it](../process/new-work-item-experience.md#switch-new) 
@@ -40,7 +39,7 @@ Here we show how to add work items from the web portal.
 
 2.	From the Work hub, choose the work item type from the New Work Item list of options. Here, we choose to create an Impediment. 
 
-	<img src="_img/add-work-items-choose-user-story.png" alt="Team Services, TFS 2017, Work hub, Add a work item" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/add-work-items-choose-user-story.png" alt="Team Services, TFS 2017, Work hub, Add a work item" style="border: 2px solid #C3C3C3;" /> 
 
 	>[!NOTE]  
 	>Depending on the process chosen when the team project was created&mdash;[Scrum](../guidance/scrum-process.md), 
@@ -52,11 +51,11 @@ Here we show how to add work items from the web portal.
 <!---
 	Or, from the Queries page, click the New menu and select the work item type. 
 
-	<img src="_img/cyb-new-work-item-impediment-form.png" alt="Create a new impediment" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/cyb-new-work-item-impediment-form.png" alt="Create a new impediment" style="border: 2px solid #C3C3C3;" />
 -->
 3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
-	<img src="_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 2px solid #C3C3C3;" />  
 
 	You can [add tags to any work item to filter backlogs and queries](../track/add-tags-to-work-items.md).
 

@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/apps/aspnet/aspnetcore-to-azure
+redirect_url: /vsts/build-release/apps/aspnet/aspnetcore-to-azure
 ---

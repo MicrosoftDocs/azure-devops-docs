@@ -1,3 +1,3 @@
 ﻿---
-redirect_url: /docs/work/customize/set-area-paths
+redirect_url: /vsts/work/customize/set-area-paths
 ---

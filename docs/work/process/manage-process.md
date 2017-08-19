@@ -29,7 +29,7 @@ Once you've created an inherited process, you can customize it, create team proj
 
 For example, as shown in the picture below, you see a list of team projects defined for the *fabrikam* account. The second column shows the process used by each team project. To update the *Fabrikam Fiber* team project, you need to update the *MyAgile* process (which inherits from the Agile system process). Any changes you make to the *MyAgile* process will also update the *Test Agile* team project. You can't customize the *Scrum project*, on the other hand, until you change it to a Scrum inherited process.
 
-<img src="_img/mprocess-overview-project-list.png" alt="Admin context, Account settings, Overview, Project list and the process they use" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/mprocess-overview-project-list.png" alt="Admin context, Account settings, Overview, Project list and the process they use" style="border: 2px solid #C3C3C3;" />  
 
 To perform any of the following actions, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit or create a specific process](#process-permissions).  To get added to an admin group, see [Add administrators](../../accounts/add-administrator-tfs.md#project-collection). 
 - Import Process (only supported for accounts that use the [Hosted XML process model](../customize/hosted-xml-process-model.md)) 
@@ -54,13 +54,13 @@ You can create an inherited process from any one of the three system processes: 
 
 	Here, we create an inherited process from the Agile system process.   
 
-	<img src="_img/mprocess-create-inherited-process.png" alt="Process, choose Create inherited process" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/mprocess-create-inherited-process.png" alt="Process, choose Create inherited process" style="border: 2px solid #C3C3C3;" />  
 
 	If you don't have access to these options, ask your project collection admin to [grant you permissions](#process-permissions). 
 
 0.	Enter a name for your process and optionally a description. (For naming restrictions, see [Process name restrictions](#process-naming) later in this topic.)
 
-	<img src="_img/mprocess-create-inherited-process-dialog.png" alt="Create inherited process dialog" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/mprocess-create-inherited-process-dialog.png" alt="Create inherited process dialog" style="border: 2px solid #C3C3C3;" />  
 
 Once you've defined the inherited process, you can perform these actions: 
 - [Customize a process](customize-process.md)   
@@ -87,7 +87,7 @@ You can change the process a team project uses from a system process or inherite
 
 	Here we open the menu for the Agile system process:
 
-	<img src="_img/mprocess-change-process-to-core-process-agile.png" alt="Agile process context menu, Choose Change team projects to use Agile" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/mprocess-change-process-to-core-process-agile.png" alt="Agile process context menu, Choose Change team projects to use Agile" style="border: 2px solid #C3C3C3;" />  
 
 	The system lists only those team projects that are valid for the current process.
 
@@ -95,7 +95,7 @@ You can change the process a team project uses from a system process or inherite
 
 	Here we choose to use the Agile process for the team projects Fabrikam Fiber A and Fabrikam Fiber.  Only those projects created from the Agile process or one that inherits from Agile will appear under the Available projects column. 
  
-	<img src="_img/mprocess-change-process-dialog-to-agile.png" alt="Change process to a system process dialog" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/mprocess-change-process-dialog-to-agile.png" alt="Change process to a system process dialog" style="border: 2px solid #C3C3C3;" />  
 
 0. After  you've confirmed that the projects you want to change are correct, click Ok. 
 
@@ -106,7 +106,7 @@ You can change the process a team project uses from a system process or inherite
 
 0. Open the &hellip; context menu for the process you want to use and choose **New team project**.  
 
-	<img src="_img/mprocess-create-team-project.png" alt="Create a team project from the selected process" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/mprocess-create-team-project.png" alt="Create a team project from the selected process" style="border: 2px solid #C3C3C3;" />
 
 0. The Create new project page opens. For details, see [Create your team project](../../accounts/create-team-project.md).
 
@@ -126,13 +126,13 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 
 1. Open the &hellip; context menu for the inherited process and choose Security.   
 
-	<img src="_img/mprocess-open-security-dialog-inherited.png" alt="Open security dialog" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/mprocess-open-security-dialog-inherited.png" alt="Open security dialog" style="border: 2px solid #C3C3C3;" />  
 
 2. Add the account name of the person you want to grant permissions to, set the permissions to **Allow** that you want them to have, and then click Save changes. For more information about setting permissions, see [Restrict access](../../accounts/restrict-access-tfs.md).
 
 	Here we add Christie Church and allow her to edit the process.  
  
-	<img src="_img/mprocess-security-dialog-inherited.png" alt="Permissions for a process dialogue" style="border: 1px solid #CCCCCC;" />    
+	<img src="_img/mprocess-security-dialog-inherited.png" alt="Permissions for a process dialogue" style="border: 2px solid #C3C3C3;" />    
 
 >[!NOTE]  	  
 > Each process is a securable unit and has individual access control lists (ACLs) that govern creating, editing, and deleting inherited processes.  At the collection level, team project collection administrators can choose which processes can be inherited from and by whom. When you create a new inherited process, the process creator as well as team project collection administrators have full control of the process and can also set individual ACLs for other users and groups to edit and delete the process.

@@ -16,16 +16,14 @@ As your organization grows, you can support individual teams by giving them the 
 
 ## 5-Minute Quickstarts    
 
+- [Add a team & team members](multiple-teams.md)  
 - [Add a team administrator](add-team-administrator.md)  
-
 
 ## Step-by-Step Tutorials
 
 - [Add a team & team members](multiple-teams.md)  
 - [Manage portfolios](portfolio-management.md)
 - [Review team delivery plans](/vsts/work/scale/review-team-plans?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json) 
-- [Scaled Agile Framework](scaled-agile-framework.md) 
-
 
 ## Concepts 
        
@@ -33,6 +31,14 @@ As your organization grows, you can support individual teams by giving them the 
 - [Agile culture and scale](agile-culture.md)   
 - [Practices that scale](practices-that-scale.md)  
 - [Team administrator role and permissions](team-administrator-permissions.md)
+
+## How-to Guides
+- [Set team defaults](set-team-defaults.md)    
+- [Define area paths](/vsts/work/customize/set-area-paths?toc=/vsts/work/scale/toc.json&bc=/vsts/work/breadcrumb/toc.json)
+- [Define iteration paths or sprints](/vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/scale/toc.json&bc=/vsts/work/breadcrumb/toc.json)
+- [Define a work item template](/vsts/work/productivity/work-item-template?toc=/vsts/work/scale/toc.json&bc=/vsts/work/breadcrumb/toc.json)
+- [Configure team settings](manage-team-assets.md) 
+- [Scaled Agile Framework](scaled-agile-framework.md) 
 
 
 ## Reference   

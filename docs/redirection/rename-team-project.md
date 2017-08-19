@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/rename-team-project
+redirect_url: /vsts/accounts/rename-team-project
 ---

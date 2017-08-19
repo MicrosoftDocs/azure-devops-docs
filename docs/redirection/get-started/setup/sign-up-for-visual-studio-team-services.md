@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/team-services/sign-up-for-visual-studio-team-services
+redirect_url: /vsts/accounts/sign-up-for-visual-studio-team-services
 ---

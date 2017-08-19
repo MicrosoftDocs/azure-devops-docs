@@ -27,27 +27,27 @@ With storyboarding, you turn your ideas and goals into something visual. Your id
 
 3.  Open Power Point Storyboarding and start with a blank slide. You should see the **Storyboarding** ribbon and **Storyboard Shapes** library. If you don't see the Storyboarding ribbon, see step 2.
 
-    <img src="_img/IC652597.png" alt="Open PowerPoint Storyboarding" style="border: 1px solid #CCCCCC;" /> 
+    <img src="_img/IC652597.png" alt="Open PowerPoint Storyboarding" style="border: 2px solid #C3C3C3;" /> 
 
     Or, you can open PowerPoint Storyboarding from the work item **Storyboarding** tab. 
 
-    <img src="_img/IC652012.png" alt="Start PowerPoint Storyboarding from work item" style="border: 1px solid #CCCCCC;" /> 
+    <img src="_img/IC652012.png" alt="Start PowerPoint Storyboarding from work item" style="border: 2px solid #C3C3C3;" /> 
 
     Or, from the web portal and the new work item form, click the **Start storyboarding** menu option from any valid work item.     
 
-	<img src="../backlogs/_img/add-work-item-start-storyboarding.png" alt="Work item form, Start storyboarding menu option" style="border: 1px solid #CCCCCC;" /> 
+	<img src="../backlogs/_img/add-work-item-start-storyboarding.png" alt="Work item form, Start storyboarding menu option" style="border: 2px solid #C3C3C3;" /> 
 
 4.  Add a background shape that's appropriate for your app. To add a shape, just drag it onto the slide.
 
-    <img src="_img/IC652013.png" alt="Drag a shape onto the slide" style="border: 1px solid #CCCCCC;" /> 
+    <img src="_img/IC652013.png" alt="Drag a shape onto the slide" style="border: 2px solid #C3C3C3;" /> 
 
 5.  Search for more shapes to complete your design.
 
-    <img src="_img/IC652014.png" alt="Search for shapes" style="border: 1px solid #CCCCCC;" />
+    <img src="_img/IC652014.png" alt="Search for shapes" style="border: 2px solid #C3C3C3;" />
 
 6.  Create mores slides to show the flow of your app. Share them with your team to get early feedback on the design.
 
-    <img src="_img/IC652599.png" alt="Develop your storyboard with multiple slides" style="border: 1px solid #CCCCCC;" />
+    <img src="_img/IC652599.png" alt="Develop your storyboard with multiple slides" style="border: 2px solid #C3C3C3;" />
 
 >[!TIP]  
 >- Use animation to bring your user interface flow to life.  
@@ -65,7 +65,7 @@ When you share your storyboards to a shared network location, you can link the s
 
     Otherwise, open the **Links** tab or the **Storyboard Links** tab.
 
-    <img src="_img/IC654069.png" alt="Open Storyboard Links to link to a work item" style="border: 1px solid #CCCCCC;" />
+    <img src="_img/IC654069.png" alt="Open Storyboard Links to link to a work item" style="border: 2px solid #C3C3C3;" />
 
 	>[!NOTE]  
 	>The **Storyboards** tab is no longer supported in the web form from Team Services  or TFS 2017 with the new web form enabled. However, you can link to a storyboard from the **Links** tab using the Storyboard link.  
@@ -88,11 +88,11 @@ When you share your storyboards to a shared network location, you can link the s
 
 6.  Now the storyboard is linked to the work item.
 
-    <img src="_img/IC657080.png" alt="Linked work item in Storyboard links dialog box" style="border: 1px solid #CCCCCC;" />
+    <img src="_img/IC657080.png" alt="Linked work item in Storyboard links dialog box" style="border: 2px solid #C3C3C3;" />
 
 7.  And, whoever views the work item can also access the storyboard.
 
-	<img src="_img/IC652022.png" alt="Storyboard tab with linked storyboard" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/IC652022.png" alt="Storyboard tab with linked storyboard" style="border: 2px solid #C3C3C3;" /> 
 
 With PowerPoint Storyboarding, you can illustrate a new or a modified interface. You can capture existing user interfaces and build a storyboard from a collection of predefined storyboard shapes. Also, you can customize the slide layouts for your web, client, or phone applications. And, by linking the storyboard to the product backlog item or user story, you automatically share it with your team.
 

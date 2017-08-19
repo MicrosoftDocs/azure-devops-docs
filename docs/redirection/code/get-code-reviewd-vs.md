@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/tfvc/get-code-reviewed-vs
+redirect_url: /vsts/tfvc/get-code-reviewed-vs
 ---

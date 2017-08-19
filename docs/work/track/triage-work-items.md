@@ -48,7 +48,7 @@ Once you have the queries of interest to your team, you can [create status or tr
 
 From the query results page, you can quickly move up and down within the list of bug work items using the up and down arrows. As you review each bug, you can assign it, add details, or set priority. 
 
-<img src="../backlogs/_img/scrum-active-bug-triage-mode-co.png" alt="Triage query results" style="border: 1px solid #CCCCCC;" />
+<img src="../backlogs/_img/scrum-active-bug-triage-mode-co.png" alt="Triage query results" style="border: 2px solid #C3C3C3;" />
 
 
 ##Related notes 

@@ -47,7 +47,7 @@ Because this setting affects all team members' view of the team backlogs and boa
 
 2. Click the **Backlogs** tab and check the boxes of those backlog levels you want your team to manage. 
 
-	<img src="_img/select-nav-backlog-levels-config-ts.png" alt="Team Services, web portal, team settings dialog, Backlogs tab" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/select-nav-backlog-levels-config-ts.png" alt="Team Services, web portal, team settings dialog, Backlogs tab" style="border: 2px solid #C3C3C3;" />
 
 3. To see the changes, open or refresh your team's backlog web page. 
  
@@ -59,7 +59,7 @@ Because this setting affects all team members' view of the team backlogs and boa
 
 2. Click the **Backlogs** tab and check the boxes of those backlog levels you want your team to manage. 
 
-	<img src="_img/select-nav-backlog-levels-config-tfs-2017.png" alt="TFS 2017, web portal, team settings dialog, Working with bugs tab" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/select-nav-backlog-levels-config-tfs-2017.png" alt="TFS 2017, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
 
 3. To see the changes, open or refresh your team's backlog web page. 
 
@@ -76,7 +76,7 @@ Because this setting affects all team members' view of the team backlogs and boa
 
 3. Click the **Backlogs** tab and check the boxes of those backlog levels you want your team to manage. 
 
-	<img src="../backlogs/_img/ALM_OB_BacklogSettings.png" alt="TFS 2015.1 or later, web portal, team settings dialog, Backlogs tab" style="border: 1px solid #CCCCCC;" /> 
+	<img src="../backlogs/_img/ALM_OB_BacklogSettings.png" alt="TFS 2015.1 or later, web portal, team settings dialog, Backlogs tab" style="border: 2px solid #C3C3C3;" /> 
 
 4. To see the changes, open or refresh your team's backlog web page. 
  

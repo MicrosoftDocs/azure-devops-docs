@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/team-services/add-account-users-assign-access-levels-team-services
+redirect_url: /vsts/accounts/add-account-users-assign-access-levels-team-services
 ---

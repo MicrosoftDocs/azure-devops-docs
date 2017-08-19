@@ -22,7 +22,7 @@ The classifications that you define appear on the **Areas** and **Iterations** p
   
 [!INCLUDE [temp](../../_shared/image-differences.md)]
 
-<img src="../../customize/_img/mareas-work-areas-admin-page.png" alt="Areas, defaults defined for team project" style="border: 1px solid #CCCCCC;" /> 
+<img src="../../customize/_img/mareas-work-areas-admin-page.png" alt="Areas, defaults defined for team project" style="border: 2px solid #C3C3C3;" /> 
 
 For an overview of using the web portal, see [Work in the web portal](../../../connect/work-web-portal.md).  
   

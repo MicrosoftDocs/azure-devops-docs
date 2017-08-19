@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/collaborate/collaborate-in-a-team-room
+redirect_url: /vsts/collaborate/collaborate-in-a-team-room
 ---

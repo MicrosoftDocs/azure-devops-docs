@@ -210,21 +210,21 @@ When leaving a code comment in a pull request, you can type **@** to trigger the
 
 To filter the list, enter the user name or alias until you've found a match.
 
-<img src="_img/at-mention-pr-type-name.png" alt="Web portal, Pull Request, Type a user name or email alias to locate a match" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/at-mention-pr-type-name.png" alt="Web portal, Pull Request, Type a user name or email alias to locate a match" style="border: 2px solid #C3C3C3;" /> 
 
 To **@mention** a user you've never selected previously, just continue typing to perform your search against the full directory.  
 
 Names of those that you mention appear in <span style="color:#0099FF">blue text</span>. Click the <span style="color:#0099FF">**@mention link name**</span> to open the user's contact card, which can provide you additional context for why they were pulled into the conversation.  
 
-<img src="_img/at-mention-link-to-user-contact-card.png" alt="Web portal, At mention user contact card accessible]" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/at-mention-link-to-user-contact-card.png" alt="Web portal, At mention user contact card accessible]" style="border: 2px solid #C3C3C3;" /> 
 
 Upon completion of your selection and text entry, your **@mention** user will receive an email alerting them about the mention.  
 
-<img src="_img/mail-to-at-mention-user.png" alt="Email sent to at-mention user account]" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/mail-to-at-mention-user.png" alt="Email sent to at-mention user account]" style="border: 2px solid #C3C3C3;" /> 
 
 When viewing their own mentioned names in conversations, users will notice that their own name is are highlighted in orange text.  
 
-<img src="_img/at-mention-link-view-of-own-name.png" alt="Web portal, At mention of ones own name appears in orange text]" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/at-mention-link-view-of-own-name.png" alt="Web portal, At mention of ones own name appears in orange text]" style="border: 2px solid #C3C3C3;" /> 
 
 You can use the **@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments. You can also use the **@mention** control in the [Discussion section of work item forms](../concepts/work-item-form-controls.md#discussion). 
 
@@ -240,7 +240,7 @@ When leaving a code comment in a pull request, you can type **#** to trigger the
 
 You can narrow the list of suggested work items by entering keywords that match the work item type, ID, or title, or you can enter the exact work item ID.
 
-<img src="_img/ALM_PRD_ID_PR.png" alt="Pull request comment area, type # to invoke work item control" style="border: 1px solid #CCCCCC;" />     
+<img src="_img/ALM_PRD_ID_PR.png" alt="Pull request comment area, type # to invoke work item control" style="border: 2px solid #C3C3C3;" />     
 
 To further filter the list, continue entering keywords until you've found a match. You can enter up to five keywords.   
 
@@ -275,13 +275,13 @@ Provide the team a hyperlink to this template and you save every team member fro
 
 The following image shows a new bug form opened from a work item template. The new web form is available from Team Services and TFS 2017 [once the admin has enabled it](../customize/manage-new-form-rollout.md).  
 
-<img src="_img/prod-tips-work-item-template-bug-new-form.png" alt="Bug work item form template with pre-populated fields" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/prod-tips-work-item-template-bug-new-form.png" alt="Bug work item form template with pre-populated fields" style="border: 2px solid #C3C3C3;" /> 
 
 ####Bug work item form with pre-populated fields (TTFS 2015) 
 
 The following image shows a new bug form opened from a work item template from the web portal of TFS 2015.
 
-<img src="_img/ALM_PRD_BugTemplate.png" alt="Web portal, New bug work item template with pre-populated fields]" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/ALM_PRD_BugTemplate.png" alt="Web portal, New bug work item template with pre-populated fields]" style="border: 2px solid #C3C3C3;" /> 
 
 
 <a id="quick-find">  </a>
@@ -324,7 +324,7 @@ Using the work items search box, you can quickly [find work items based on ID, a
 
 With the [Work item search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search). installed, the work item search box changes to support an adhoc search query. It opens to a set of search results similar to that shown below. To learn more, see [Adhoc vs managed work item queries](../track/adhoc-vs-managed-queries.md) and [Rich work item search results](../../search/workitem/advanced-search-syntax.md).
 
-<img src="../../search/workitem/_img/get-started/results-matching.png" alt="work item adhoc search results" style="border: 1px solid #CCCCCC;" />  
+<img src="../../search/workitem/_img/get-started/results-matching.png" alt="work item adhoc search results" style="border: 2px solid #C3C3C3;" />  
 
 
 <a id="quick-find-code">  </a>
@@ -332,7 +332,7 @@ With the [Work item search extension](https://marketplace.visualstudio.com/items
 
 You can perform similar [searches on your code based on keywords and semantic search filters across your Git repositories](../../search/code/code-search.md).  
 
-<img src="_img/ALM_PRD_CodeSearch.png" alt="Work item search box, find work items using macros" style="border: 1px solid #CCCCCC;" />   
+<img src="_img/ALM_PRD_CodeSearch.png" alt="Work item search box, find work items using macros" style="border: 2px solid #C3C3C3;" />   
 
 
 ### Quick access using dashboards  

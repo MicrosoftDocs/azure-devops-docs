@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/work/connect/work-as-a-stakeholder
+redirect_url: /vsts/work/connect/work-as-a-stakeholder
 ---

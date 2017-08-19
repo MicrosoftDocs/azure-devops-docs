@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/alm-devops-features
+redirect_url: /vsts/alm-devops-features
 ---

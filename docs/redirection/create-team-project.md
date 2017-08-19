@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/create-team-project
+redirect_url: /vsts/accounts/create-team-project
 ---

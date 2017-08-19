@@ -16,7 +16,7 @@ ms.date: 04/05/2017
 
 Teams use the work item types (WITs) provided with the MSF for CMMI Process Improvement 2015 (CMMI) process to plan and track progress of software projects. Teams define requirements to manage the backlog of work and then, using the Kanban board, track progress by updating the status of requirements.
  
-<img src="_img/cmmi-process-plan-wits.png" alt="CMMI process, WITs used to plan and track" style="border: 1px solid #CCCCCC;" />
+<img src="_img/cmmi-process-plan-wits.png" alt="CMMI process, WITs used to plan and track" style="border: 2px solid #C3C3C3;" />
 
 To gain insight into a portfolio of requirements, product owners can map requirements to features. When teams work in iterations, they define tasks that automatically link to requirements.
 
@@ -34,7 +34,7 @@ To support additional CMMI processes, teams can track change requests, risks, is
 
 Create requirements from the quick add panel on the [product backlog page](../backlogs/create-your-backlog.md). Alternatively, you can bulk add requirements using [Excel](../office//bulk-add-modify-work-items-excel.md) or [Project](../office/create-your-backlog-tasks-using-project.md).
 
-<img src="_img/cmmi-quick-add-panel.png" alt="CMMI process, Quick add panel on the requirements backlog page" style="border: 1px solid #CCCCCC;" />
+<img src="_img/cmmi-quick-add-panel.png" alt="CMMI process, Quick add panel on the requirements backlog page" style="border: 2px solid #C3C3C3;" />
 
 
 Later, you can open each requirement to provide more details and estimate its size.
@@ -305,7 +305,7 @@ Use the following guidance and that provided for [fields used in common across w
 
 As work progresses, you change the State field to update the status. Optionally, you can specify a reason. The state and reason fields appear on the work item form in the header area. 
 
-<img src="_img/agile-bug-form-state-reason.png" alt="Bug work item form, header area" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/agile-bug-form-state-reason.png" alt="Bug work item form, header area" style="border: 2px solid #C3C3C3;" /> 
 
 ### CMMI workflow states 
 
@@ -326,7 +326,7 @@ The typical workflow progression for a requirement is:
 
 Teams can use the [Kanban board](../kanban/kanban-basics.md) to update the status of requirements, and the [sprint task board](../scrum/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
-<img src="../kanban/_img/ALM_CC_MoveCard.png" alt="Web portal, Track progress on the Kanban board" style="border: 1px solid #CCCCCC;" />
+<img src="../kanban/_img/ALM_CC_MoveCard.png" alt="Web portal, Track progress on the Kanban board" style="border: 2px solid #C3C3C3;" />
 
 You can customize the Kanban board to support additional [swim lanes](../kanban/expedite-work.md) or [columns](../kanban/add-columns.md). For additional customization options, see [Customize your work tracking experience](#customize-work-tracking).
 
@@ -344,7 +344,7 @@ The feature work item contains similar fields provided for requirements and incl
 
 When your team manages their work in sprints, they can use the [sprint backlog page](../scrum/sprint-planning.md) to break down the work to be accomplished into distinct tasks.  
 
-<img src="_img/IC697755.png" alt="Web portal, Add task link on a sprint backlog page" style="border: 1px solid #CCCCCC;" />
+<img src="_img/IC697755.png" alt="Web portal, Add task link on a sprint backlog page" style="border: 2px solid #C3C3C3;" />
 
 Name the task and estimate the work it will take.
 
@@ -413,7 +413,7 @@ From the web portal or Test Manager, you can [create test cases that automatical
 
 The test case contains a number of fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../track/build-test-integration.md).  
 
-<img src="_img/agile-test-case-form.png" alt="Web portal, Test case work item form" style="border: 1px solid #CCCCCC;" />
+<img src="_img/agile-test-case-form.png" alt="Web portal, Test case work item form" style="border: 2px solid #C3C3C3;" />
 
 The ![Links tab icon](../backlogs/_img/icon-links-tab-wi.png) (links tab) lists all the requirements and bugs in a test case. By using linking, the team can track the progress made in testing each item and supports information that appears in the [Requirements Overview Report](../../report/sql-reports/requirements-overview-report-cmmi.md) report.
 

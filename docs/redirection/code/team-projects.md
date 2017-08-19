@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/tfvc-team-projects
+redirect_url: /vsts/tfvc-team-projects
 ---

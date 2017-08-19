@@ -32,7 +32,7 @@ Work items have received a facelift. To provide a fresher, more modern experienc
 
 Here's what you'll see when you preview the new form.  
 
-<img src="../_shared/_img/new-form-user-story-3-col.png" alt="New form for user story" style="border: 1px solid #CCCCCC;" />
+<img src="../_shared/_img/new-form-user-story-3-col.png" alt="New form for user story" style="border: 2px solid #C3C3C3;" />
 
 For guidance in using the new form features, see [Add work items to plan and track your project](../backlogs/add-work-items.md).   
 
@@ -42,20 +42,20 @@ For guidance in using the new form features, see [Add work items to plan and tra
 
 First off, you'll notice that the form reflects the color of your work item type&mdash;bug, user story, or task. And, we've done away with duplicate titles to cut down on clutter. Whether you're working from a backlog, board, or query&mdash;your experience remains the same.  
 
-<img src="../_shared/_img/new-form-bug-header.png" alt="New form, bug, header" style="border: 1px solid #CCCCCC;" />
+<img src="../_shared/_img/new-form-bug-header.png" alt="New form, bug, header" style="border: 2px solid #C3C3C3;" />
 
 ### Great consumption experience  
  
 Your data has more structure and organization. Plus, you can focus more easily on areas of interest by collapsing groups to hide details you don't care about. And as you resize the form, it quickly responds to provide you with a great viewing experience even within a limited screen width.  
  
-<img src="../_shared/_img/new-form-exp-resized-user-story-form.png" alt="New form, collapsible groups, responsive form" style="border: 1px solid #CCCCCC;" />
+<img src="../_shared/_img/new-form-exp-resized-user-story-form.png" alt="New form, collapsible groups, responsive form" style="border: 2px solid #C3C3C3;" />
 
 
 ### More viewing area to support core experiences  
  
 All the core tabs&mdash;Details, History, Links, and Attachments&mdash;now have more screen space. See [History and auditing](../track/history-and-auditing.md) for details on the new History tab.
 
-<img src="../backlogs/_img/add-work-item-history.png" alt="New form, history tab" style="border: 1px solid #CCCCCC;" />   
+<img src="../backlogs/_img/add-work-item-history.png" alt="New form, history tab" style="border: 2px solid #C3C3C3;" />   
 
 <a id="discussion">  </a>
 ### Discussion  
@@ -66,7 +66,7 @@ Click the ![Discussions icon](../_img/icons/icon-discussions-wi.png) discussion 
 
 Within the discussion section, you can use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
-<img src="../backlogs/_img/add-work-items-discussion.png" alt="Discussion section" style="border: 1px solid #CCCCCC;" />  
+<img src="../backlogs/_img/add-work-items-discussion.png" alt="Discussion section" style="border: 2px solid #C3C3C3;" />  
 
 > [!IMPORTANT]
 > For on-premises TFS, [you must configure an SMTP sever](../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.     
@@ -75,7 +75,7 @@ Within the discussion section, you can use the [**@mention** control](../../noti
 
 Looking for the toolbar task options? You access them now through the ![Actions icon](../_img/icons/actions-icon.png) Actions icon.  
 
-<img src="../backlogs/_img/new-form-action-menu.png" alt="New form, User story, Actions menu" style="border: 1px solid #CCCCCC;" />  
+<img src="../backlogs/_img/new-form-action-menu.png" alt="New form, User story, Actions menu" style="border: 2px solid #C3C3C3;" />  
 
 <a id="switch-new">  </a> 
 ## Switch to the new experience  

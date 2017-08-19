@@ -23,7 +23,7 @@ You add all custom controls by installing its extension from the [Visual Studio 
 
 For example, you can add the [**Who recently viewed a work item?** extension](https://marketplace.visualstudio.com/items?itemName=mmanela.vsts-workitem-recentlyviewed). This group-level control appears in your work item form as shown. 
 
-<img src="_img/custom-controls-group-extension-example-who-recently-viewed.png" alt="Work item form, group extension example, Who viewed this" style="border: 1px solid #CCCCCC;" />
+<img src="_img/custom-controls-group-extension-example-who-recently-viewed.png" alt="Work item form, group extension example, Who viewed this" style="border: 2px solid #C3C3C3;" />
 
 
 <a id="add-extension">  </a>
@@ -35,7 +35,7 @@ Browse the Marketplace to determine what extension(s) you want to add. To instal
 
 From the admin context, Extensions hub, you can view the extensions that are already installed.    
 
-<img src="_img/custom-controls-extensions-admin-page-ts.png" alt="Account settings, Extensions page, Team Services" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/custom-controls-extensions-admin-page-ts.png" alt="Account settings, Extensions page, Team Services" style="border: 2px solid #C3C3C3;" />  
 
 You may need to click ![Refresh](_img/custom-controls-refresh_extensions.png) to refresh the page to show newly installed extensions. 
 
@@ -51,7 +51,7 @@ You may need to click ![Refresh](_img/custom-controls-refresh_extensions.png) to
 
 3. With the WIT selected, click **Add custom control**. 
 
-	<img src="_img/cpcontrols-add-custom-control.png" alt="Process, WIT, Bug, Layout, New custom control" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/cpcontrols-add-custom-control.png" alt="Process, WIT, Bug, Layout, New custom control" style="border: 2px solid #C3C3C3;" />  
 
 	>[!NOTE]  
 	>If you don't see the **Add custom control** option, then you haven't installed a field-level extension. Or, you may need to refresh your browser to cause your browser to register any new extensions that have been installed. 
@@ -60,13 +60,13 @@ You may need to click ![Refresh](_img/custom-controls-refresh_extensions.png) to
 
 	For example, here we choose the Toggle control that you can associate with a Boolean field.   
 
-	<img src="_img/custom-control-add-field-level-control-to-bug.png" alt="Add a  custom control dialog, Definition tab" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/custom-control-add-field-level-control-to-bug.png" alt="Add a  custom control dialog, Definition tab" style="border: 2px solid #C3C3C3;" />  
 
 4. Click the Options tab and fill out the dialog box. The options you need to specify will depend on the extension you've selected.   
 
 	For example, here we specify the custom field, Triaged, and indicate the toggle labels to appear on the form.   
 
-	<img src="_img/custom-control-add-field-level-control-to-bug-options-tab.png" alt="Custom control dialog" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/custom-control-add-field-level-control-to-bug-options-tab.png" alt="Custom control dialog" style="border: 2px solid #C3C3C3;" />
 
 5. (Optional) Open the Layout tab and specify the label for the field. 
  
@@ -100,7 +100,7 @@ Action-level extensions are added to the context menu of inherited and customiza
 
 For example, the following image shows nine action-level contributions have been added and appear in the context menu for the user story.  
 
-<img src="_img/custom-control-web-form-user-story-action-level-menu-options.png" alt="User story web form, context menu, Action-level options" style="border: 1px solid #CCCCCC;" />
+<img src="_img/custom-control-web-form-user-story-action-level-menu-options.png" alt="User story web form, context menu, Action-level options" style="border: 2px solid #C3C3C3;" />
 
 
  
@@ -145,8 +145,8 @@ o add a custom control, you begin by adding it first through the Extensions page
 	>[!IMPORTANT]  
 	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XMl process model as described in [Customize your work tracking experience](../customize/customize-work.md).
 
-	<img src="../process/_img/manage-process-open-account-settings.png" alt="Default Collection Overview, Projects reference processes" style="border: 1px solid #CCCCCC;" /> 
+	<img src="../process/_img/manage-process-open-account-settings.png" alt="Default Collection Overview, Projects reference processes" style="border: 2px solid #C3C3C3;" /> 
 
-	<img src="_img/custom-controls-field-extension-dialog.png" alt="Custom control dialog" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/custom-controls-field-extension-dialog.png" alt="Custom control dialog" style="border: 2px solid #C3C3C3;" />
 
 -->  

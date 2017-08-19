@@ -56,14 +56,14 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	
 	**Team Services**  
 	
-	<img src="_img/show-bugs-settings-ts.png" alt="Team Services, web portal, team settings dialog, Working with bugs tab" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/show-bugs-settings-ts.png" alt="Team Services, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
 	
 	**TFS 2017**   
-	<img src="_img/show-bugs-settings-2017.png" alt="TFS, web portal, team settings dialog, Working with bugs tab" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/show-bugs-settings-2017.png" alt="TFS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
 	
 	**TFS 2015, TFS 2013**  
 	
-	<img src="_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />
  	  
 3. To see the changes, open or refresh the team's [backlog](../backlogs/create-your-backlog.md), [sprint backlog pages](../scrum/sprint-planning.md), or [Kanban board](../kanban/kanban-basics.md).  
 

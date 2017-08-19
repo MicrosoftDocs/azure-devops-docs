@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/report/monitor-progress-trends
+redirect_url: /vsts/report/monitor-progress-trends
 ---

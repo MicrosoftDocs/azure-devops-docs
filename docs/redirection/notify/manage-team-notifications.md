@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/collaborate/manage-team-notifications
+redirect_url: /vsts/collaborate/manage-team-notifications
 ---

@@ -37,11 +37,11 @@
 
 <p>Choose the Account settings option from the project/team menu.</p>
 
-<img src="../../connect/_img/web-portal-open-account-settings-new-nav.png" alt="Web portal, new nav, open account settings" style="border: 1px solid #CCCCCC;" />
+<img src="../../connect/_img/web-portal-open-account-settings-new-nav.png" alt="Web portal, new nav, open account settings" style="border: 2px solid #C3C3C3;" />
 
 <p>Click Process. </p> 
 
-<img src="../_shared/_img/web-portal-admin-process-hub-new-nav.png" alt="Web portal, Account menu, Turn on new navigation selection" style="border: 1px solid #CCCCCC;" />  
+<img src="../_shared/_img/web-portal-admin-process-hub-new-nav.png" alt="Web portal, Account menu, Turn on new navigation selection" style="border: 2px solid #C3C3C3;" />  
 
 
 
@@ -55,7 +55,7 @@
 <li><p>Choose the inherited process you want to customize, and then click Work Item Types.</p>
 <p>If you haven't created one yet, see [Create an inherited process](../process/manage-process.md#create-inherited-process).</p>
 <p>Here we open Work Item Types for the MyAgile process.</p> 
-<img src="../process/_img/cwit-open-process-wits.png" alt="Process page, WITs" style="border: 1px solid #CCCCCC;" />
+<img src="../process/_img/cwit-open-process-wits.png" alt="Process page, WITs" style="border: 2px solid #C3C3C3;" />
 
 </li>
 </ol> 

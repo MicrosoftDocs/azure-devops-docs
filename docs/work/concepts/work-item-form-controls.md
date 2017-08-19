@@ -51,10 +51,10 @@ As the following image shows, each work item form comes with a number of control
 | ![Storyboard icon](../_img/icons/storyboard-icon.png) | [Storyboard with PowerPoint](../office/storyboard-your-ideas-using-powerpoint.md)  (Appears  under ![Actions icon](../_img/icons/actions-icon.png) Actions menu)  | 
 
 <a id="update-work-status">  </a>
-##Update work status  
+## Update work status  
 As work progresses, team members can update the state and reassign it as needed. 
 
-<img src="../backlogs/_img/add-work-item-vsts-update-state.png" alt="Product backlog item workflow, Scrum process" style="border: 1px solid #CCCCCC;" />  
+<img src="../backlogs/_img/add-work-item-vsts-update-state.png" alt="Product backlog item workflow, Scrum process" style="border: 2px solid #C3C3C3;" />  
 
 While the workflow states differ for different work item types, they usually follow a progression from New or Active to Closed or Done. The following image shows the work flow states for the Agile process user story. If you want to discard a work item, change the state to Removed.  
 
@@ -90,7 +90,7 @@ Removed work items remain in the data store and can be reactivated by changing t
 
 With each update, the Reason field also updates and changes are recorded in the History field which you can view through the ![history tab icon](../_img/icons/icon-history-tab-wi.png) **History** tab. To find work items based on their history, see [History & auditing](../track/history-and-auditing.md).   
 
-<img src="../backlogs/_img/add-work-item-history.png" alt="View change history" style="border: 1px solid #CCCCCC;" />  
+<img src="../backlogs/_img/add-work-item-history.png" alt="View change history" style="border: 2px solid #C3C3C3;" />  
 
 
 
@@ -101,10 +101,10 @@ By linking work items using Related or Dependent link types, you can track work 
 
 There are three links controls provided on most forms. The Development and Related Work scoped links controls appear on the Details tab. The ![Links page icon](../_img/icons/icon-links-tab-wi.png) Links tab provides access to all links made to the work item.  
 
-<img src="../reference/_img/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 1px solid #CCCCCC;" />  
+<img src="../reference/_img/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 2px solid #C3C3C3;" />  
 
 
-### Add links  
+## Add links  
 
 From each links control, you can perform these actions:  
 
@@ -112,7 +112,7 @@ From each links control, you can perform these actions:
 - To delete a link, highlight it and click the ![delete icon](../_img/icons/delete_icon.png) delete icon   
 - To link to an existing item, or create and link a new work item, select one of the menu options.  
 
-<img src="../reference/_img/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 1px solid #CCCCCC;" />  
+<img src="../reference/_img/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 2px solid #C3C3C3;" />  
 
 To learn more, see [Add links to work items](../backlogs/add-link.md).
 
@@ -132,7 +132,7 @@ The Related Work links control displays links to other work items in a set order
 
 In addition, the Links control tab provides access to all links made to the work item&mdash;both work items and external objects. 
 
-<img src="../backlogs/_img/add-work-item-links.png" alt="Agile process, User Story work item form, Links control tab" style="border: 1px solid #CCCCCC;" />   
+<img src="../backlogs/_img/add-work-item-links.png" alt="Agile process, User Story work item form, Links control tab" style="border: 2px solid #C3C3C3;" />   
 
 <a id="discussion">  </a>
 ## Add to the discussion  
@@ -141,7 +141,7 @@ Add and review comments made about the work being performed by going to the disc
 
 Click the ![Discussions icon](../_img/icons/icon-discussions-wi.png) discussion icon, which indicates how many comments have been added, to move your focus to the discussion section.  Click the ![full screen icon](../_img/icons/fullscreen_icon.png) full screen icon to expand the display of the discussion section within the form.   
 
-<img src="../backlogs/_img/add-work-items-discussion.png" alt="Discussion section" style="border: 1px solid #CCCCCC;" />  
+<img src="../backlogs/_img/add-work-items-discussion.png" alt="Discussion section" style="border: 2px solid #C3C3C3;" />  
 
 Within the discussion section, you can use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. 
 
@@ -151,34 +151,29 @@ To reference a work item, use the [**#ID** control](../../notifications/add-link
 >For on-premises TFS, [you must configure an SMTP sever](../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications. 
 
 
-## Related notes
-
-Keep in mind that the work item tracking experience and forms that appear in Visual Studio won't show several of the features that the web portal makes available. To add a field or customize a work item type, see [Customize your work tracking experience](../customize/customize-work.md). 
-
-
 <a id="copy-url">  </a>
 ## Copy the URL
 From the web portal, simply copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](../backlogs/_img/icon-copy-to-clipboard.png) copy-to-clipboard icon. For other copy options, see [Copy or clone work items](../backlogs/copy-clone-work-items.md). 
   
-<img src="../backlogs/_img/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #CCCCCC;" />  
+<img src="../backlogs/_img/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" style="border: 2px solid #C3C3C3;" />  
 
 
 
 <a id="start-storyboarding">  </a>
-###Start storyboarding  
+## Start storyboarding  
 
 >[!NOTE]  
 ><b>Feature availability: </b>The Start storyboarding menu option is only available from the new web form. However, from TFS, you can click the Start Storyboarding link from the Storyboard tabs from a backlog item, or simply open PowerPoint. See [Storyboard your ideas using PowerPoint](../office/storyboard-your-ideas-using-powerpoint.md) for requirements and usage.    
 
 You can storyboard your ideas using PowerPoint to bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides. From any work item, you can open PowerPoint by choosing the Start storyboarding menu option.    
 
-<img src="../backlogs/_img/add-work-item-start-storyboarding.png" alt="Work item form, Start storyboarding menu option" style="border: 1px solid #CCCCCC;" /> 
+<img src="../backlogs/_img/add-work-item-start-storyboarding.png" alt="Work item form, Start storyboarding menu option" style="border: 2px solid #C3C3C3;" /> 
 
 
-###Find or list work items  
+##Find or list work items  
 Type an ID in the Search work items box and then choose the search icon.  
 
-<img src="../backlogs/_img/add-work-items-search-box-id.png" alt="Search work items text box" style="border: 1px solid #CCCCCC;" />  
+<img src="../backlogs/_img/add-work-items-search-box-id.png" alt="Search work items text box" style="border: 2px solid #C3C3C3;" />  
 
 Use the ![context menu icon](../_img/icons/context_menu.png) context menu to add a filter based on [assignment, status, a keyword, or a work item type](../track/example-queries.md). 
 
@@ -186,6 +181,9 @@ Or, using the ![context menu icon](../_img/icons/context_menu.png) context menu,
 
 Once you have a results list, you can [modify the filter criteria to refine your search results](../track/using-queries.md).
 
+## Related notes
+
+Keep in mind that the work item tracking experience and forms that appear in Visual Studio won't show several of the features that the web portal makes available. To add a field or customize a work item type, see [Customize your work tracking experience](../customize/customize-work.md). 
 
 <!---
 

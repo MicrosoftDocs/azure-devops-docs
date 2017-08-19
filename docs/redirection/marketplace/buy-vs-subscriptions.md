@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/marketplace/vs-subscriptions/buy-vs-subscriptions
+redirect_url: /vsts/marketplace/vs-subscriptions/buy-vs-subscriptions
 ---

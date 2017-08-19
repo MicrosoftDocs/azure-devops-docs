@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/collaborate/hipchat
+redirect_url: /vsts/collaborate/hipchat
 ---

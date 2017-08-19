@@ -9,29 +9,42 @@ ms.author: kaelli
 ms.date: 08/15/2017
 ---
 
-
-
 # Permissions granted to the team administrator role
 
-For each team that you add, you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing the following team assets.  
+<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>
 
->[!NOTE]   
->Project Administrators can manage all team admin areas for all teams. 
+While most permissions are governed by belonging to a security group or defined at the object level, team settings are managed by the team administrator role.
 
-- **Create and manage team alerts**  
-	Can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. For details, see [Manage team alerts](../../collaborate/manage-team-notifications.md).
-	>[!NOTE] 
-	There is no UI associated with managing alert permissions. Instead, you can use **TFSSecurity** to manage alerts in TFS. 
-- <a id="team-rooms" />**Create and manage team rooms**  
-	Can add users and events to team rooms, and add team rooms. Team rooms are chat rooms limited to team members. For details, see [Collaborate in a team room](../../collaborate/collaborate-in-a-team-room.md). 
-- <a id="team-rooms" />**Select team area paths**   
-	Can select the default area path(s) associated with the team. These settings affect a number of Agile tools available to the team. For details, see [Set team defaults](set-team-defaults.md). 	
-- **Select team sprints** 
-	Can select the default area path(s) associated with the team. These settings affect a number of Agile tools available to the team. For details, see [Set team defaults](set-team-defaults.md). 
-- **Configure team backlogs**   
-	Can choose which backlog levels are active for a team. For example, a feature team may choose to show only the product backlog and a management team may choose to show only the feature and epic backlogs. For details, see [Select backlog levels for your team](../customize/select-backlog-navigation-levels.md).  
-- **Customize the Kanban board**   
-	Can fully customize the team's Kanban boards associate with the product and portfolio backlogs. This includes the following elements:
+For each team that you add, you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing and configuring [team assets](../about-teams-and-settings.md).  
+
+In addition to team administrators, all members of the Project Administrators and Project Collection Administrators groups can manage settings for all teams as well as add team administors. 
+
+## Set team defaults 
+
+Team administrators can select the area paths and iteration paths associated with their team. These settings affect a number of Agile tools available to the team. 
+
+These include the following associations made for each team:  
+
+- The default area path 
+- The area path(s) 	
+- The default iteration path 
+- The selected iteration paths 
+
+For details, see [Set team defaults](set-team-defaults.md). 
+
+## Enable team backlogs and configure how bugs are managed on backlogs and boards    
+
+Team administrators can choose which backlog levels are active for a team. For example, a feature team may choose to show only the product backlog and a management team may choose to show only the feature and epic backlogs. 
+
+Also, they can choose whether bugs are treated similar to user stories and requirements or as tasks. 
+
+For details, see these topics: 
+- [Select backlog levels for your team](../customize/select-backlog-navigation-levels.md)
+- [Set your team's preferences for tracking bugs](../customize/show-bugs-on-backlog.md).
+
+## Customize  Kanban boards 
+	
+Team administrators can fully customize the team's Kanban boards associate with the product and portfolio backlogs. This includes the following elements:
 	* [Cards: Fields](../customize/customize-cards.md#kanban-board)  
 	* [Cards: Styles](../customize/customize-cards.md#style-rule)  
 	* [Cards: Tag colors](../customize/customize-cards.md#color-tags)  
@@ -44,9 +57,32 @@ For each team that you add, you can assign one or more team members as administr
 	* [Board: Card reordering](../customize/reorder-cards.md)  
 	* [Board: Definition of Done](../kanban/definition-of-done.md)  
 	* [Charts: Cumulative flow](../../report/guidance/cumulative-flow.md#configure) 
-- **Manage team dashboards**  
-	Can add, configure, and manage permissions (Team Services and TFS 2017) for team dashboards. For details, see [Add and manage dashboards](../../report/dashboard-permissions.md#set-permissions).  
-- **Set working days off**    	
-	Sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Team admins can choose which days are non-working days through the team's Settings dialog. For details, see [Set working days](../customize/set-working-days.md).
-- **Show bugs on backlogs and boards**   
-	Team admins can choose whether bugs are treated similar to user stories and requirements or as tasks. For details, see [Set your team's preferences for tracking bugs](../customize/show-bugs-on-backlog.md).
+
+## Add and manage team dashboards   
+
+Team administrators can add, configure, and manage permissions (Team Services and TFS 2017) for team dashboards. For details, see [Add and manage dashboards](../../report/dashboard-permissions.md#set-permissions). 
+
+ 
+## Set working days off    	
+	
+Sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Team admins can choose which days are non-working days through the team's Settings dialog. For details, see [Set working days](../customize/set-working-days.md).
+
+
+## Manage team alerts 
+
+Team administrators can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. For details, see [Manage team alerts](../../collaborate/manage-team-notifications.md).
+
+> [!NOTE]  
+> There is no UI associated with managing alert permissions. Instead, you can use **TFSSecurity** to manage alerts in TFS. 
+
+
+<a id="team-rooms" />
+## Create and manage team rooms 
+
+Team administrators can add users and events to team rooms, and add team rooms. Team rooms are chat rooms limited to team members. For details, see [Collaborate in a team room](../../collaborate/collaborate-in-a-team-room.md).  
+
+## Related notes
+
+- [Permissions and access for work tracking](../permissions-access-work-tracking.md) 
+- [Add teams and team members](multiple-teams.md) 
+- [Add a team administrator](add-team-administrator.md) 

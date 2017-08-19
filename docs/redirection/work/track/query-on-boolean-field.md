@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/work/track/example-queries
+redirect_url: /vsts/work/track/example-queries
 ---

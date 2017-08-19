@@ -30,7 +30,7 @@ To get added as a team administrator, ask another team admin or the account owne
 
 	**Team Services and TFS 2017** 
 
-	<img src="_img/add-team-admin-link.png" alt="Web portal, VSTS & TFS 2017, Open  team administrator context" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/add-team-admin-link.png" alt="Web portal, VSTS & TFS 2017, Open  team administrator context" style="border: 2px solid #C3C3C3;" />
 
 	**TFS 2015** 
 
@@ -40,7 +40,7 @@ To get added as a team administrator, ask another team admin or the account owne
 
 	**Team Services and TFS 2017** 
 
-	<img src="_img/add-admin-dialog.png" alt="VSTS, TFS 2017, Add team administrator dialog" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/add-admin-dialog.png" alt="VSTS, TFS 2017, Add team administrator dialog" style="border: 2px solid #C3C3C3;" /> 
 
 	**TFS 2015** 
 

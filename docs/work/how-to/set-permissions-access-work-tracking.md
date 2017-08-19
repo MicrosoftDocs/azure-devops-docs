@@ -76,7 +76,7 @@ For example, as a project admin you can grant a user, team group, or other group
 
 In this example, we grant the Team Admins group permissions to move work items to another team project and to permanently delete work items.     
 
-<img src="../backlogs/_img/delete-test-project-permissions.png" alt="Set Team Admin permissions" style="border: 1px solid #CCCCCC;" />
+<img src="../backlogs/_img/delete-test-project-permissions.png" alt="Set Team Admin permissions" style="border: 2px solid #C3C3C3;" />
 
 <a id="restrict-delete-permissions"></a>
 ###Restrict users from deleting work items 
@@ -89,11 +89,11 @@ In addition to the project-level permissions set in the previous section, team m
 
 Open the Security page for the area path and choose the user or group you want to grant permissions.
 
-<img src="../backlogs/_img/delete-test-artifacts-open-area-permissions.png" alt="Open Area path permissions for the team project" style="border: 1px solid #CCCCCC;" />
+<img src="../backlogs/_img/delete-test-artifacts-open-area-permissions.png" alt="Open Area path permissions for the team project" style="border: 2px solid #C3C3C3;" />
 
 Set the permissions for **Manage test plans** and **Manage test suites** to **Allow**.  
 
-<img src="../backlogs/_img/delete-test-artifacts-area-path-permissions.png" alt="Set Area path permissions for the team project" style="border: 1px solid #CCCCCC;" />
+<img src="../backlogs/_img/delete-test-artifacts-area-path-permissions.png" alt="Set Area path permissions for the team project" style="border: 2px solid #C3C3C3;" />
 
 To have full access to the Test feature set, your [access level must be set to Advanced](../../security/change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
 

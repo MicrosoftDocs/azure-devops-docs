@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/tfs/upgrade/express
+redirect_url: /vsts/tfs-server/upgrade/express
 ---

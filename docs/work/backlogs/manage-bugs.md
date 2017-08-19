@@ -56,14 +56,14 @@ The bug work item form tracks similar information to the one shown for the Scrum
  
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../process/new-work-item-experience.md). 
 
-<img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, Team Services" style="border: 1px solid #CCCCCC;" />
+<img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, Team Services" style="border: 2px solid #C3C3C3;" />
 </div>
 
 #### TFS 2015 | TFS 2013 (old web form) 
 
 To learn more about working in the web form for TFS 2015 or earlier versions, see [Add work items to plan and track your project](add-work-items-tfs.md). 
 
-<img src="_img/scrum-bug-wi-form.png" alt="Scrum bug work item form, TFS 2015 or earlier versions" style="border: 1px solid #CCCCCC;" />
+<img src="_img/scrum-bug-wi-form.png" alt="Scrum bug work item form, TFS 2015 or earlier versions" style="border: 2px solid #C3C3C3;" />
 
 
 ### Fields specific to bugs
@@ -203,7 +203,7 @@ Once you have the queries of interest to your team, you can [create status or tr
 
 From the query results page, you can quickly move up and down within the list of bug work items using the up and down arrows. As you review each bug, you can assign it, add details, or set priority. 
 
-<img src="_img/scrum-active-bug-triage-mode-co.png" alt="Triage query results" style="border: 1px solid #CCCCCC;" />
+<img src="_img/scrum-active-bug-triage-mode-co.png" alt="Triage query results" style="border: 2px solid #C3C3C3;" />
 
 
 <a id="track"> </a>
@@ -333,7 +333,7 @@ To learn how to add SQL Server reports for a team project, see [Add reports to a
 
 To track your bugs and integrate with other resources available to you, see these topics: 
 
-- [Scrum and working with sprints best practices](../concepts/best-practices-scrum.md)  
+- [Scrum and working with sprints best practices](../scrum/best-practices-scrum.md)  
 - [Follow a work item or pull request](../../collaborate/follow-work-items.md)
 - [Move, change type, or delete work items](remove-delete-work-items.md)
 - [Pre-populate fields using a template](../productivity/work-item-template.md)

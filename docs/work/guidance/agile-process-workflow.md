@@ -15,7 +15,7 @@ ms.date: 04/05/2017
 
 Teams use the work item types (WITs) provided with the Agile process to plan and track progress of software projects. Teams define user stories to manage the backlog of work and then, using the Kanban board, track progress by updating the status of those stories.
 
-<img src="_img/agile-process-plan-wits.png" alt="Agile process, WITs used to plan and track" style="border: 1px solid #CCCCCC;" />
+<img src="_img/agile-process-plan-wits.png" alt="Agile process, WITs used to plan and track" style="border: 2px solid #C3C3C3;" />
 
 To gain insight into a portfolio of features, scenarios, or user experiences, product owners and program managers can map user stories to features. When teams work in sprints, they define tasks which automatically link to user stories. 
 
@@ -34,7 +34,7 @@ User stories define the applications, requirements, and elements that teams need
 
 Create user stories from the quick add panel on the [product backlog page](../backlogs/create-your-backlog.md). From that page, you can also drag-and-drop items to reorder them or [map them to features](../backlogs/organize-backlog.md). 
 
-<img src="_img/IC697757.png" alt="Web portal, Agile process, Quick add panel " style="border: 1px solid #CCCCCC;" />
+<img src="_img/IC697757.png" alt="Web portal, Agile process, Quick add panel " style="border: 2px solid #C3C3C3;" />
 
 Later, you can open each user story to provide more details and estimate the story points.
 
@@ -103,7 +103,7 @@ Use the following guidance and that provided for [fields used in common across w
 
 As work progresses, you change the State field to update the status. Optionally, you can specify a reason. The state and reason fields appear on the work item form in the header area. 
 
-<img src="_img/agile-bug-form-state-reason.png" alt="Bug work item form, header area" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/agile-bug-form-state-reason.png" alt="Bug work item form, header area" style="border: 2px solid #C3C3C3;" /> 
 
 
 ### Agile workflow states 
@@ -150,7 +150,7 @@ When your team manages their work in sprints, they can use the [sprint backlog p
 
 Name the task and estimate the work it will take.
 
-<img src="_img/agile-task-form.png" alt="Agile task work item form" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/agile-task-form.png" alt="Agile task work item form" style="border: 2px solid #C3C3C3;" /> 
 
 Using Agile processes, teams forecast work and define tasks at the start of each sprint, and each team member performs a subset of those tasks. Tasks can include development, testing, and other kinds of work. For example, a developer can define tasks to implement user stories, and a tester can define tasks to write and run test cases.
 
@@ -199,7 +199,7 @@ From the web portal or Test Manager, you can [create test cases that automatical
 
 The test case contains a number of fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../track/build-test-integration.md).
 
-<img src="_img/agile-test-case-form.png" alt="Test case form" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/agile-test-case-form.png" alt="Test case form" style="border: 2px solid #C3C3C3;" /> 
 
 The ![Links tab icon](../backlogs/_img/icon-links-tab-wi.png) (links tab) captures the links to user stories and bugs in a test case. By linking user stories and bugs to test cases, the team can track the progress made in testing each item. By defining these links, you support information that appears in the [Stories Overview Report](../../report/sql-reports/stories-overview-report-agile.md) report.
 

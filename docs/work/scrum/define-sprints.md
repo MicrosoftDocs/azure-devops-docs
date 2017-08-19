@@ -7,7 +7,7 @@ ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 07/21/2017
+ms.date: 08/19/2017
 ---
 
 
@@ -29,11 +29,11 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 1. Choose the sprint listed under Current and then click **Set dates**.  
 
-	<img src="_img/define-sprints-set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/define-sprints-set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 2px solid #C3C3C3;" />  
 
 2. Click the calendar icon to choose the date for the start and then the end of the sprint. 
 
-	<img src="_img/define-sprints-edit-iteration-set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/define-sprints-edit-iteration-set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 2px solid #C3C3C3;" />  
 
 That's it! You can now start [planning your first sprint](sprint-planning.md). 
 
@@ -62,7 +62,7 @@ Defining additional sprints is a two-step process. You first define the sprints 
 
 [![Define team project sprints](_img/define-sprints-project-level.png)](../customize/set-area-paths.md)[![Select team sprints](_img/define-sprints-team-level.png)](../scale/set-team-defaults.md)
 
-Each sprint that you select for your team provides access to a [sprint backlog, task board, and other sprint planning tools](../concepts/sprint-planning-tools.md) for planning and tracking work. 
+Each sprint that you select for your team provides access to a [sprint backlog, task board, and other sprint planning tools](scrum-sprint-planning-tools.md) for planning and tracking work. 
 
 For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint. 
 

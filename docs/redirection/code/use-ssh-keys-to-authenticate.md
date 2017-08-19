@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/git/use-ssh-keys-to-authenticate
+redirect_url: /vsts/git/use-ssh-keys-to-authenticate
 ---

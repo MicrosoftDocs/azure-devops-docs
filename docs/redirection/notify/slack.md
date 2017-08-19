@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/collaborate/slack
+redirect_url: /vsts/collaborate/slack
 ---

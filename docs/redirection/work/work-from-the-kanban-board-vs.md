@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/work/kanban/kanban-basics
+redirect_url: /vsts/work/kanban/kanban-basics
 ---

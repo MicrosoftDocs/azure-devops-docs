@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/tfs/command-line/tfsconfig-cmd
+redirect_url: /vsts/tfs-server/command-line/tfsconfig-cmd
 ---

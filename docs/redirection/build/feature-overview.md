@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/overview
+redirect_url: /vsts/build-release/overview
 ---

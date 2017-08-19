@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/team-services/delete-or-recover-your-account-vs
+redirect_url: /vsts/accounts/delete-or-recover-your-account-vs
 ---

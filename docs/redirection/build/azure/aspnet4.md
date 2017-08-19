@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/apps/aspnet/aspnet4-to-azure
+redirect_url: /vsts/build-release/apps/aspnet/aspnet4-to-azure
 ---

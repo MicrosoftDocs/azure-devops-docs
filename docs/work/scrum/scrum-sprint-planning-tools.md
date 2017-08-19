@@ -1,24 +1,25 @@
 ---
-title: Sprint planning tools | Team Services & TFS  
-description: Understand the Agile tools available when your team uses sprints-Visual Studio Team Services (VSTS) and Team Foundation Server  
+title: Scrum and sprint planning tools | Team Services & TFS
+description: Understand the tools available to you to support Scrum and working in sprints  in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)   
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
-ms.assetid: 534FDB2B-7DC5-4A53-9FE3-F3FC2E0E79A5
+ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 06/22/2017
---- 
+ms.date: 08/19/2017
+---
+
+
+# Scrum and sprint planning tools
+ 
+<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+
+<!--- ADD WIDGET INFO AS WELL --> 
 
 <a id="sprint-tools">   </a>
-# Sprint Agile tools
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>
-
-
-Once you've defined and selected the sprints for your team, [you can start using these tools to plan your sprint](../scrum/sprint-planning.md).  
-
-<!--- MAKE THIS RESPONSIVE COLUMNS --> 
+Once you've [defined and selected the sprints for your team](../scale/set-team-defaults.md), you can start using the following tools to plan your sprint.  
 
 
 ## Track team capacity
@@ -33,10 +34,10 @@ At the start of each sprint, you'll want to plan the work that your team can com
 </p>
 <p>By setting team capacity, the team knows exactly the total number of work hours or days the team has for each sprint. With this tool, you set individual team member capacity as well as days off. And, conveniently, you can set holidays or shared days off taken by the entire team. </p>
 <p>Setting capacity for each team member working during a sprint causes the capacity bar for that individual to appear. </p>
-<p>You [set recurring days off](../customize/set-working-days.md), such as weekends, through team settings.</p>
+<p>You <a href="#team_settings">set recurring days off</a>, such as weekends, through team settings.</p>
 </td>
 <td>
-![Team capacity planning tool](../scrum/_img/team-capacity-planning-tool.png) 
+![Team capacity planning tool](_img/team-capacity-planning-tool.png) 
 </td>
 </tr>
 <tr valign="top" > 
@@ -57,16 +58,16 @@ At the start of each sprint, you'll want to plan the work that your team can com
 </li>
 </ul>
 <p>Here's how to interpret the capacity colors:</p>
-![These colors help you distinguish capacity](../scrum/_img/capacity-planning-tool-color-chart.png)
+![These colors help you distinguish capacity](_img/capacity-planning-tool-color-chart.png)
 </td>
 <td width="455px">
-![Capacity bars](../scrum/_img/ALM_DS_CapacityBars_S.png)
+![Capacity bars](_img/ALM_DS_CapacityBars_S.png)
 </td>
 </tr>
 </table>
 
 
-## Update tasks, monitor burndown 
+##  Update tasks, monitor burndown 
 During a sprint, your team can use the task board and sprint burndown chart to track their progress. Your sprint burndown chart provides you with an at-a-glance visual to determine if your team is on track to meet their sprint plan.  
  
 <table valign="top">
@@ -75,11 +76,11 @@ During a sprint, your team can use the task board and sprint burndown chart to t
 <p>
 <b>Task board</b>
 </p>
-<p>Your [task board](../scrum/task-board.md) provides an interactive progress board for work required to complete the sprint backlog. During your sprint you'll want to update the status of tasks and the remaining work for each task. </p>
+<p>Your [task board](task-board.md) provides an interactive progress board for work required to complete the sprint backlog. During your sprint you'll want to update the status of tasks and the remaining work for each task. </p>
 <p>Updating tasks daily or several times a week yields a smoother burndown chart. </p>
 </td>
 <td width="520px">
-![Task board](../scrum/_img/ALM_DS_Task_board_S.png)
+![Task board](_img/ALM_DS_Task_board_S.png)
 </td>
 </tr>
 <tr valign="top" > 
@@ -87,23 +88,21 @@ During a sprint, your team can use the task board and sprint burndown chart to t
 <p>
 <b>Sprint burndown chart</b>
 </p>
-<p>You use the [sprint burndown chart](../scrum/sprint-burndown.md) to mitigate risk and check for scope creep throughout your sprint cycle. The burndown chart reflects the progress made by your team in completing all the work they estimated during their sprint planning meeting. </p>
+<p>You use the [sprint burndown chart](sprint-burndown.md) to mitigate risk and check for scope creep throughout your sprint cycle. The burndown chart reflects the progress made by your team in completing all the work they estimated during their sprint planning meeting. </p>
 <p>The ideal trend line always indicates a smooth and steady burndown. The blue area, however, represents what's actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks.</p>
 </td>
 <td>
-![Sprint burndown chart](../scrum/_img/ALM_DS_SprntBD_Chrt_S.png)
+![Sprint burndown chart](_img/ALM_DS_SprntBD_Chrt_S.png)
 </td>
 </tr>
 </table>
 
 
-
-
 <a id="velocity-forecast">  </a>
-## Velocity and forecast 
+##  Velocity and forecast 
 <p>While you use sprint planning and tracking tools for each sprint, you use the velocity and forecast tools to estimate work that can be completed in future sprints. </p>
 <p>Velocity provides a useful metric for gaining insight into how much work your team can complete during a sprint cycle. And, the forecast tool provides a means for determining how much work your team can complete within a sprint based on a specified team velocity. </p>
-<p>After your team has worked several sprints, they can use the [velocity](../../report/guidance/team-velocity.md) and [forecast tools](../scrum/forecast.md) to estimate work that can be accomplished in future sprints.  </p>
+<p>After your team has worked several sprints, they can use the [velocity chart](../../report/guidance/team-velocity.md) and [forecast](forecast.md) tool to estimate work that can be accomplished in future sprints.  </p>
 
 <table valign="top" > 
 <tr valign="top" > 
@@ -113,10 +112,10 @@ During a sprint, your team can use the task board and sprint burndown chart to t
 </p>
 <p>Each team is associated with one and only one velocity chart. The green bar within the chart indicates the total estimated effort (story points or size) of backlog items (user stories or requirements) completed within the sprint. (Blue corresponds to the estimated effort of items not yet completed.)  </p>
 <p>Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog. </p>
-<p>By minimizing the variability of backlog item size─effort or story points&mdash;you gain more reliable velocity metrics.</p>
+<p>By minimizing the variability of backlog item size─effort or story points─you gain more reliable velocity metrics.</p>
 </td>
 <td width="500px">
-![Velocity chart](../scrum/_img/velocity-chart.png)
+![Velocity chart](_img/velocity-chart.png)
 </td>
 </tr>
 <tr valign="top" > 
@@ -128,16 +127,33 @@ During a sprint, your team can use the task board and sprint burndown chart to t
 <p>By plugging in a velocity, you can see which items are within scope for the set of sprints the team has selected. As shown here, a velocity of 15 indicates that it will take three sprints to complete the work shown. </p>
 </td>
 <td>
-![Forecast tool](../scrum/_img/forecast-tool.png)
+![Forecast tool](_img/forecast-tool.png)
 </td>
 </tr>
 </table>  
 
+## How selected sprints show up on the backlog 
+Each sprint that you select for your team provides access to a sprint backlog, task board, and other Agile tools for planning and tracking work. 
 
-<!--- ADD WIDGET INFO AS WELL --> 
+<a id="ts-sprints" /> 
+**Team Services, TFS 2017**
 
-##Related notes  
+For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint.  
+
+<img src="_img/define-sprints-selected-team-iterations-vsts.png" alt="Team Services and TFS 2017, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" /> 
+
+**TFS 2015**
+<a id="tfs2015-sprints" />
+
+For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access to four sprint backlogs. They also get access to capacity planning tools and a task board for each sprint.  
+
+<img src="_img/selected-iterations-generate-sprint-backlogs.png" alt="TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" /> 
+
+## Related notes 
+If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path, which you configure via the [Set team defaults](../scale/set-team-defaults.md) .  
 
 - [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)
-- [Define iteration paths](../customize/set-iteration-paths-sprints.md) 
+- [Add teams and team members](../scale/multiple-teams.md)  
+- [Define iterations for a project](../customize/set-iteration-paths-sprints.md) 
 - [Configure team settings](../scale/manage-team-assets.md)  
+

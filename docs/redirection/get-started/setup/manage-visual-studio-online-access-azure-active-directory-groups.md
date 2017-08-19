@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/team-services/manage-visual-studio-online-access-azure-active-directory-groups
+redirect_url: /vsts/accounts/manage-visual-studio-online-access-azure-active-directory-groups
 ---

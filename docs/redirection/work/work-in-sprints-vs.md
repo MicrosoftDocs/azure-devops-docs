@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/work/scrum/sprint-planning
+redirect_url: /vsts/work/scrum/sprint-planning
 ---

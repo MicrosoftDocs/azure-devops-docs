@@ -4,11 +4,11 @@
 	>[!IMPORTANT]  
 	>If you don't see the Account settings option, then you're working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../customize/customize-work.md).
 	
-	<img src="../process/_img/manage-process-open-account-settings.png" alt="Default Collection Overview, Projects reference processes" style="border: 1px solid #CCCCCC;" /> 
+	<img src="../process/_img/manage-process-open-account-settings.png" alt="Default Collection Overview, Projects reference processes" style="border: 2px solid #C3C3C3;" /> 
 
 0. Click Process.   
 
-	<img src="../_shared/_img/web-portal-admin-process-hub-new-nav.png" alt="Web portal, Account menu, Turn on new navigation selection" style="border: 1px solid #CCCCCC;" />  
+	<img src="../_shared/_img/web-portal-admin-process-hub-new-nav.png" alt="Web portal, Account menu, Turn on new navigation selection" style="border: 2px solid #C3C3C3;" />  
 
 <!---
 <ol>
@@ -46,11 +46,11 @@
 
 <p>Choose the Account settings option from the project/team menu.</p>
 
-<img src="../../connect/_img/web-portal-open-account-settings-new-nav.png" alt="Web portal, new nav, open account settings" style="border: 1px solid #CCCCCC;" />
+<img src="../../connect/_img/web-portal-open-account-settings-new-nav.png" alt="Web portal, new nav, open account settings" style="border: 2px solid #C3C3C3;" />
 
 <p>Click Process. </p> 
 
-<img src="../_shared/_img/web-portal-admin-process-hub-new-nav.png" alt="Web portal, Account menu, Turn on new navigation selection" style="border: 1px solid #CCCCCC;" />  
+<img src="../_shared/_img/web-portal-admin-process-hub-new-nav.png" alt="Web portal, Account menu, Turn on new navigation selection" style="border: 2px solid #C3C3C3;" />  
 
 </div>
 
@@ -59,7 +59,7 @@
 
 <li><p>You'll see the three default system processes. The lock icon indicates that you're not able to customize these processes.</p> 
 
-<img src="../process/_img/manage-process-default-collection-processes-up1.png" alt="Process tab" style="border: 1px solid #CCCCCC;" />  
+<img src="../process/_img/manage-process-default-collection-processes-up1.png" alt="Process tab" style="border: 2px solid #C3C3C3;" />  
 
 </li>
 </ol> 

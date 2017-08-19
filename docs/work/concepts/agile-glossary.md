@@ -10,9 +10,11 @@ ms.topic: get-started-article
 ms.date: 06/22/2017
 ---
 
+# Agile glossary 
+
 
 <a id="object-definitions"></a>
-### Definitions of key work tracking objects 
+## Definitions of key work tracking objects 
 
 Your work tracking experience is managed and customized primarily through the objects defined in the following table. 
 

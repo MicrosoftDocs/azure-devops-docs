@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/account-preferences
+redirect_url: /vsts/accounts/account-preferences
 ---

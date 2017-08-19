@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/work/customize/customize-work
+redirect_url: /vsts/work/customize/customize-work
 ---

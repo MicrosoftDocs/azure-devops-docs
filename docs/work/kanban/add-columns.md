@@ -101,19 +101,19 @@ You'll see different column titles and choices based on the following:
   
 First, open the Kanban portal for your team project. Click the **Board** link from the **Work>Backlogs** page. 
 
-<img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 2px solid #C3C3C3;" />  
 
 #### Team Services, TFS 2017  
         
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns.   
 
-	<img src="_img/add-columns-open-settings-ts.png" alt="Team Services, Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/add-columns-open-settings-ts.png" alt="Team Services, Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />  
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns. 
 
 2. Click a column tab to see all the settings you can modify. Your initial column settings will look something like this. 
 
-	<img src="_img/add-columns-settings-dialog-ts.png" alt="Team Services, Kanban board, Customize columns, default columns, Agile process" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/add-columns-settings-dialog-ts.png" alt="Team Services, Kanban board, Customize columns, default columns, Agile process" style="border: 2px solid #C3C3C3;" />  
 
 3. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 
@@ -121,11 +121,11 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 	You can rename a column directly form the Kanban board. 
 
-	<img src="_img/rename-kanban-columns-direct-ts.png" alt="Kanban board, rename a column directly" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/rename-kanban-columns-direct-ts.png" alt="Kanban board, rename a column directly" style="border: 2px solid #C3C3C3;" />
 
 	Or, you can open the dialog and change one or more settings for a Kanban column. 
 
-	<img src="_img/add-columns-settings-dialog-add-test-ts.png" alt="Team Services, Kanban board, Settings, Columns, Add and rename  columns, Agile process" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/add-columns-settings-dialog-add-test-ts.png" alt="Team Services, Kanban board, Settings, Columns, Add and rename  columns, Agile process" style="border: 2px solid #C3C3C3;" /> 
 
 4. To change the column order, simply drag the column tab to the position you want.  
 
@@ -141,7 +141,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns. 
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />
+	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns. 
 
@@ -176,7 +176,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 <ol>
 <li><p>To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open Customize Columns.</p>
-<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />  
+<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />  
 
 <p>If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.</p>   
 
@@ -203,7 +203,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 <!---
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns.  
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />  
+	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />  
 
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.  
 
@@ -274,7 +274,7 @@ For example, if you change the team setting and add bugs to the Requirements Cat
 
 **Team Services**  
 In this example two new states have been added, Triaged for bug, and Investigate for user story. Each needs to be mapped to an existing or new column in order for the Kanban board to display work items assigned to these states.  
-<img src="_img/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" style="border: 2px solid #C3C3C3;" />  
 
 **TFS 2015** 
 

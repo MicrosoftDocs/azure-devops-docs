@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/package/what-is-packaging
+redirect_url: /vsts/package/what-is-packaging
 ---

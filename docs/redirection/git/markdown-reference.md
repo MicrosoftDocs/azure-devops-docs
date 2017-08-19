@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/reference/markdown-guidance
+redirect_url: /vsts/reference/markdown-guidance
 ---

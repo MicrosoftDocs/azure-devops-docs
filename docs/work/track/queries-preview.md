@@ -25,7 +25,7 @@ We have launched a preview version of a modernized query experience that you acc
 
 The Queries hub now opens to a list of your favorite queries, or you can click All to show all queries defined for the team project. 
 
-<img src="_img/queries-favorites-pivot.png" alt="List of queries separated into personal favorites and team favorites groups" style="border: 1px solid #cccccc;"/>
+<img src="_img/queries-favorites-pivot.png" alt="List of queries separated into personal favorites and team favorites groups" style="border: 2px solid #C3C3C3;"/>
 
 * Query lists highlight additional metadata for each query that include:
     * The type of query
@@ -38,7 +38,7 @@ The Queries hub now opens to a list of your favorite queries, or you can click A
 
 Open a query to view the query results and access the query triage mode. 
 
-<img src="_img/queries-triage.png" alt="Query results are listed in a grid with work item details displayed on the right." style="border: 1px solid #cccccc;"/>
+<img src="_img/queries-triage.png" alt="Query results are listed in a grid with work item details displayed on the right." style="border: 2px solid #C3C3C3;"/>
 
 * Navigate back to your queries list or subfolders using the browser or by clicking back on the Hub name
 * Quickly favorite a query by using the star next to the query name

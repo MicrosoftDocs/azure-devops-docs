@@ -33,7 +33,7 @@ From a sprint task board, there are three types of rollup:
 - The sum of all Remaining Work defined for all tasks within a column displays at the top of each column
 - The sum of all Remaining Work defined for all tasks for a backlog item displays within each row, grouped by column.      
 
-<img src="../scrum/_img/ALM_TB_Intro.png" alt="Task board, collapsed backlog items" style="border: 1px solid #CCCCCC;" />
+<img src="../scrum/_img/ALM_TB_Intro.png" alt="Task board, collapsed backlog items" style="border: 2px solid #C3C3C3;" />
 
 When you update the status of a task as Completed, the system automatically zeros out the Remaining Work for that task. To learn more, see [Task board](../scrum/task-board.md).
 

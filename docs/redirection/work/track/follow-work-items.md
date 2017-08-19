@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/collaborate/follow-work-items
+redirect_url: /vsts/collaborate/follow-work-items
 ---

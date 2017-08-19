@@ -1,3 +1,3 @@
 ﻿---
-redirect_url: /docs/work/reference/specify-work-item-form-controls
+redirect_url: /vsts/work/reference/specify-work-item-form-controls
 ---

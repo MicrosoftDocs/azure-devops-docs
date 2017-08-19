@@ -43,7 +43,7 @@ Here's an example of a sprint plan that consists of backlog items and the tasks 
 By setting team capacity and estimating tasks, the team can see when the team or a team member is at, under, or over capacity.
 
 
-<img src="_img/sp-intro.png" alt="Sprint planning" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/sp-intro.png" alt="Sprint planning" style="border: 2px solid #C3C3C3;" /> 
 
 
 >[!NOTE]  
@@ -64,7 +64,7 @@ To plan sprints, you should be a member of the team and belong to the Contributo
 
 3. Begin your planning efforts by moving items from your backlog to your current sprint, one item at a time. Simply drag each item from the product backlog onto the sprint.  
 
-	<img src="_img/sp-assign-to-sprints.png" alt="Product backlog page, drag work items to sprint or assign to sprint through the context menu" style="border: 1px solid #CCCCCC;" />   
+	<img src="_img/sp-assign-to-sprints.png" alt="Product backlog page, drag work items to sprint or assign to sprint through the context menu" style="border: 2px solid #C3C3C3;" />   
 	
 	If you don't see any links listed under Current or Future, your team admin needs to [select your team's sprints](../scale/set-team-defaults.md#activate).  
 	
@@ -72,7 +72,7 @@ To plan sprints, you should be a member of the team and belong to the Contributo
 
 2. Next, check the total level of effort of your sprint items. For example, the Fabrikam Fiber team has four members with a total velocity of 40 effort points per three week sprint cycle. So, they're in good shape to commit to the 6 items in the Sprint 1 backlog.  
 	
-	<img src="_img/sp-check-total-effort-level.png" alt="Sprint backlog page, determine total level of effort" style="border: 1px solid #CCCCCC;" />   
+	<img src="_img/sp-check-total-effort-level.png" alt="Sprint backlog page, determine total level of effort" style="border: 2px solid #C3C3C3;" />   
 	
 	If you don't see the Effort, Story Points, or Size fields, you can add them by clicking [Column Options](../how-to/set-column-options.md). For a description of how these fields are used, see [Create your backlog, Add details and estimates](../backlogs/create-your-backlog.md#estimates). 
 
@@ -100,7 +100,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 1. In the sprint backlog, add a task.  
 
-	<img src="_img/sp-add-tasks.png" alt="Sprint backlog page, add task" style="border: 1px solid #CCCCCC;" />     
+	<img src="_img/sp-add-tasks.png" alt="Sprint backlog page, add task" style="border: 2px solid #C3C3C3;" />     
 
 	Creating tasks from the sprint backlog automatically links the task to its parent backlog item.  
 
@@ -112,13 +112,13 @@ Add as many tasks as needed to capture the work required to complete each item. 
 	<a id="task-form-team-services" /> 
 	#### Task form, new form 
 
-	<img src="_img/sp-scrum-task-form.png" alt="New task form" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/sp-scrum-task-form.png" alt="New task form" style="border: 2px solid #C3C3C3;" />
 
 	
 	<a id="task-form-tfs-2015-13" class="tab-pane fade"> 
 	#### Task form, old form 
 
-	<img src="_img/IC797606.png" alt="Web portal, Task form, oldform"  style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/IC797606.png" alt="Web portal, Task form, oldform"  style="border: 2px solid #C3C3C3;" />  
 	
 	At the planning stage, Remaining Work corresponds to an estimate of how long it will take to complete the task.  
 	
@@ -203,7 +203,7 @@ To email it, create and save the query for the sprint backlog.
 
 Then, open the query and click the email icon. 
 
-<img src="_img/IC795975.png" alt="Email query" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/IC795975.png" alt="Email query" style="border: 2px solid #C3C3C3;" />  
 
 
 In the form that appears, enter the name(s) of valid users (ones who have access to the team project). 

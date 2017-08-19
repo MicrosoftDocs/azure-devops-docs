@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/connect/user-focused-features
+redirect_url: /vsts/connect/user-focused-features
 ---

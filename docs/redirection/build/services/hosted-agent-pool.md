@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/admin/agents/hosted-pool
+redirect_url: /vsts/build-release/admin/agents/hosted-pool
 ---

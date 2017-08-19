@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/tfs/upgrade/get-started
+redirect_url: /vsts/tfs-server/upgrade/get-started
 ---

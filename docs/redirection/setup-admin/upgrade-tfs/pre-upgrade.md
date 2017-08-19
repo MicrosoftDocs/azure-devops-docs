@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/tfs/upgrade/pre-upgrade
+redirect_url: /vsts/tfs-server/upgrade/pre-upgrade
 ---

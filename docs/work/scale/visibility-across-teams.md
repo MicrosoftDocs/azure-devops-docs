@@ -35,7 +35,7 @@ With a Delivery Plan, you gain a tailor-made view across several teams and their
 
 When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Review team plans](review-team-plans.md). 
 
-<img src="_img/plans_move1.png" alt="Interactive plan elements" style="border: 1px solid #CCCCCC;" />
+<img src="_img/plans_move1.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
 
 <a id="portfolio-backlogs">  </a>
 ## Use portfolio backlogs to track features and epics  
@@ -62,11 +62,11 @@ With the multi-team portfolio backlog view, you can:
 
 Management teams can drill down from their portfolio backlog to see how epics are progressing.    
 
-<img src="_img/visibility-management-team-epics.png" alt="Management teams, Epic portfolio backlog expanded" style="border: 1px solid #CCCCCC;" />
+<img src="_img/visibility-management-team-epics.png" alt="Management teams, Epic portfolio backlog expanded" style="border: 2px solid #C3C3C3;" />
 
 And, feature teams can turn on Show parents on their backlogs to see context and even those stories  
 
-<img src="_img/visibility-feature-team-backlog-show-parents.png" alt="Feature teams, Portfolio backlog with show parents" style="border: 1px solid #CCCCCC;" />
+<img src="_img/visibility-feature-team-backlog-show-parents.png" alt="Feature teams, Portfolio backlog with show parents" style="border: 2px solid #C3C3C3;" />
 
 >[!TIP]  
 >When estimating stories or product backlog items, start with one story point per person per day. Feature teams can later calibrate and adjust those estimates as needed. For example, the [velocity](../../report/guidance/team-velocity.md) of a seasoned team will be higher than a new team. The size of the work stays the same, but a seasoned team can just deliver faster.  
@@ -85,7 +85,7 @@ The two areas of most interest to management teams is project health and bug deb
 
 For example, here we've added three query-based charts, one for each team, to a dashboard that shows the active and resolved bugs over the previous 4 weeks. 
 
-<img src="_img/visibility-bug-debt-email-team.png" alt="Bug debt, Email team" style="border: 1px solid #CCCCCC;" />  <img src="_img/visibility-bug-debt-voice-team.png" alt="Bug debt, Voice team" style="border: 1px solid #CCCCCC;" />  <img src="_img/visibility-bug-debt-web-team.png" alt="Bug debt, Web team" style="border: 1px solid #CCCCCC;" />
+<img src="_img/visibility-bug-debt-email-team.png" alt="Bug debt, Email team" style="border: 2px solid #C3C3C3;" />  <img src="_img/visibility-bug-debt-voice-team.png" alt="Bug debt, Voice team" style="border: 2px solid #C3C3C3;" />  <img src="_img/visibility-bug-debt-web-team.png" alt="Bug debt, Web team" style="border: 2px solid #C3C3C3;" />
 
 
 When defining multi-team dashboards, consider the following:

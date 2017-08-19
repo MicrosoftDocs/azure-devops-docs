@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/work/guidance/work-item-field
+redirect_url: /vsts/work/guidance/work-item-field
 ---

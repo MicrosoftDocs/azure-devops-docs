@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/delete-team-project
+redirect_url: /vsts/accounts/delete-team-project
 ---

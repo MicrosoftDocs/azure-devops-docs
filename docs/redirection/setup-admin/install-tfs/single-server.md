@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/tfs/install/single-server
+redirect_url: /vsts/tfs-server/install/single-server
 ---

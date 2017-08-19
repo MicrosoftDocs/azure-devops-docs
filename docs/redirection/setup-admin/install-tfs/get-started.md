@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/tfs/install/get-started
+redirect_url: /vsts/tfs-server/install/get-started
 ---

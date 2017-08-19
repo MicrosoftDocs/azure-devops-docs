@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/collaborate/campfire
+redirect_url: /vsts/collaborate/campfire
 ---

@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/get-started/dot-net
+redirect_url: /vsts/build-release/get-started/dot-net
 ---

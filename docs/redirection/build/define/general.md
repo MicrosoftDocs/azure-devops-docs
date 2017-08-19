@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/define/options
+redirect_url: /vsts/build-release/define/options
 ---

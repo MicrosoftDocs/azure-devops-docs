@@ -41,7 +41,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 
 1.	Open a shared query. For example, from the web portal, open the Active Bugs or similar flat list query.   
   
-	<img src="_img/using-queries-active-bugs-ts.png" alt="Web portal, Work>Queries, Open Shared queries, Active Bugs" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/using-queries-active-bugs-ts.png" alt="Web portal, Work>Queries, Open Shared queries, Active Bugs" style="border: 2px solid #C3C3C3;" /> 
 
 	>[!TIP]  
 	>If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, click **View>Team Explorer** from the top level menu.   
@@ -51,7 +51,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 	
 	**Team Services, TFS 2017, TFS 2015:**  
 	
-	<img src="_img/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 2px solid #C3C3C3;" />  
 
 	**TFS 2013:**  
 	![Editor View of a Flat List Query - On-premises TFS](_img/5.png)  
@@ -67,7 +67,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 
 You can start a fresh, new query from the Queries page in the web portal or the Work Items page in Team Explorer.  
 
-<img src="_img/using-queries-new-query-ts.png" alt="Queries page, Choose New query from the drop down menu" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/using-queries-new-query-ts.png" alt="Queries page, Choose New query from the drop down menu" style="border: 2px solid #C3C3C3;" /> 
 
 ### Group clauses
 
@@ -82,7 +82,7 @@ In the next example, the first expression returns all work items that are priori
 
 To group one or more clauses, select them and then choose the ![Group Query Clause icon](../_img/icons/group-clauses-icon.png) group clauses icon.
 
-<img src="_img/10.png" alt="Web portal, Group Selected Query Clauses" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/10.png" alt="Web portal, Group Selected Query Clauses" style="border: 2px solid #C3C3C3;" /> 
 
 If your query results do not return your expected set of work items, follow these steps: 
 
@@ -142,11 +142,11 @@ By default, shared queries and new queries are scoped to the current team projec
 ### Team Services and TFS 2015.1  
 To list work items defined in two or more team projects, checkmark **Query across projects**. For example, the following query finds all features created in all team projects within the last 30 days.
  
-<img src="_img/using-queries-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across team projects" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/using-queries-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across team projects" style="border: 2px solid #C3C3C3;" /> 
 
 With the Query across projects checked, you can add the Team Project field to filter to a select number of team projects.   
 
-<img src="_img/using-queries-query-across-select-projects.png" alt="Team Services and TFS 2015.1, Web portal, Query across select team projects using the In operator" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/using-queries-query-across-select-projects.png" alt="Team Services and TFS 2015.1, Web portal, Query across select team projects using the In operator" style="border: 2px solid #C3C3C3;" /> 
 
 >[!NOTE]  
 >Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
@@ -156,7 +156,7 @@ The Team Project field becomes available only after you check  **Query across pr
 ### TFS 2015, TFS 2013 
 To find all features created in all team projects within the last 30 days, remove the **Team Project=@Project** clause from the query.  
 
-<img src="_img/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select team projects using the In operator" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select team projects using the In operator" style="border: 2px solid #C3C3C3;" /> 
 
 All fields from all WITs defined in all team projects in the collection always appear in the Field drop-down menu.  
 

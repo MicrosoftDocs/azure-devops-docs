@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/tfvc/comparison-git-tfvc
+redirect_url: /vsts/tfvc/comparison-git-tfvc
 ---

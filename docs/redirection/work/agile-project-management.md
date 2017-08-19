@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/work/overview
+redirect_url: /vsts/work/overview
 ---

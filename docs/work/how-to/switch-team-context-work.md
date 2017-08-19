@@ -28,7 +28,7 @@ To view a list of teams defined for a team project, open the admin context for t
 >[!NOTE]  
 >**Feature availability**: The **Change process** link is only supported for team projects that use the [Inheritance process model](../customize/inheritance-process-model.md).  
 
-<img src="../scale/_img/multiple-teams-view-teams.png" alt="Web portal, admin context, team project, Overview page" style="border: 1px solid #CCCCCC;" /> 
+<img src="../scale/_img/multiple-teams-view-teams.png" alt="Web portal, admin context, team project, Overview page" style="border: 2px solid #C3C3C3;" /> 
 
 ## Switch to a different team 
 
@@ -45,7 +45,7 @@ You can switch your team focus to a team project or team you've recently viewed 
 
 To go directly to the [project vision and status page](/vsts/collaborate/project-vision-status), choose the project home icon from the drop-down menu, for example, ![project home icon](../../_shared/_img/work-web-portal-home-page-icon.png).
 
-<img src="../../_shared/_img/work-web-portal-ts-switch-team-focus.png" alt="Choose another team from the team project menu" style="border: 1px solid #CCCCCC;" /> 
+<img src="../../_shared/_img/work-web-portal-ts-switch-team-focus.png" alt="Choose another team from the team project menu" style="border: 2px solid #C3C3C3;" /> 
 
 ### TFS 2017.1 
 <a id="switch-context-tfs-2017-1" /> 
@@ -56,7 +56,7 @@ To access your [account hub](/vsts/connect/account-home-pages), click the ![Team
 
 To go directly to the [project vision and status page](/vsts/collaborate/project-vision-status), choose the project home icon from the drop-down menu, for example, ![project home icon](../../_shared/_img/work-web-portal-home-page-icon.png).
 
-<img src="../../_shared/_img/work-web-portal-tfs-2017-1-switch-team-focus.png" alt="Choose another team from the team project menu" style="border: 1px solid #CCCCCC;" /> 
+<img src="../../_shared/_img/work-web-portal-tfs-2017-1-switch-team-focus.png" alt="Choose another team from the team project menu" style="border: 2px solid #C3C3C3;" /> 
 
 
 ### TFS 2017
@@ -64,7 +64,7 @@ To go directly to the [project vision and status page](/vsts/collaborate/project
 
 Open the team project/team drop-down menu and select the team project/team that you've recently visited. If you don't see the team or team project you want, choose **Browse all** to browse all team projects and teams. 
 
-<img src="../_shared/_img/switch-context-tfs-2017.png" alt="Choose another team from the team project menu" style="border: 1px solid #CCCCCC;" /> 
+<img src="../_shared/_img/switch-context-tfs-2017.png" alt="Choose another team from the team project menu" style="border: 2px solid #C3C3C3;" /> 
 
 
 ### TFS 2015
@@ -72,7 +72,7 @@ Open the team project/team drop-down menu and select the team project/team that 
 
 Open the team project/team drop-down menu and select the team project/team that you've recently visited. If you don't see the team or team project you want, choose **Browse all** to browse all team projects and teams. 
 
-<img src="../_shared/_img/switch-team-project-2.png" alt="Choose another team from the team project menu" style="border: 1px solid #CCCCCC;" /> 
+<img src="../_shared/_img/switch-team-project-2.png" alt="Choose another team from the team project menu" style="border: 2px solid #C3C3C3;" /> 
 
 
 ## Switch to a team project or team from the account hub 

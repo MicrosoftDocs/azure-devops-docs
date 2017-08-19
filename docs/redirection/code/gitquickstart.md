@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/git/gitquickstart
+redirect_url: /vsts/git/gitquickstart
 ---

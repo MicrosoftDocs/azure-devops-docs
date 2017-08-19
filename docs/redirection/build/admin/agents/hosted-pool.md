@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/concepts/agents/hosted
+redirect_url: /vsts/build-release/concepts/agents/hosted
 ---

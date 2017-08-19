@@ -67,12 +67,12 @@ The menu options available to you change depending on the platform you work from
 <tr valign="top">
 <td>
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlog menu </p>
-<img src="_img/bulk-m-backlog-menu-options-ts.png" alt="Backlog multi-select menu" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/bulk-m-backlog-menu-options-ts.png" alt="Backlog multi-select menu" style="border: 2px solid #C3C3C3;" />  
 </td>
 
 <td>
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query results multi-select menu </p>
-<img src="_img/bulk-m-query-results-menu-options-ts.png" valign="top" alt="Query results multi-select menu" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/bulk-m-query-results-menu-options-ts.png" valign="top" alt="Query results multi-select menu" style="border: 2px solid #C3C3C3;" /> 
 </td>
 </tr>
 </table>
@@ -83,12 +83,12 @@ The menu options available to you change depending on the platform you work from
 <tr valign="top">
 <td>
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlog multi-select menu </p>
-<img src="_img/bulk-m-backlog-r-tfs-2016-menu-options.png" alt="Query results multi-select menu" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/bulk-m-backlog-r-tfs-2016-menu-options.png" alt="Query results multi-select menu" style="border: 2px solid #C3C3C3;" />  
 </td>
 
 <td>
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query results multi-select menu </p>
-<img src="_img/bulk-m-query-r-tfs-2016-menu-options.png" alt="Query results multi-select menu, TFS-2015 " style="border: 1px solid #CCCCCC;" />  
+<img src="_img/bulk-m-query-r-tfs-2016-menu-options.png" alt="Query results multi-select menu, TFS-2015 " style="border: 2px solid #C3C3C3;" />  
 </td>
 </tr>
 </table>
@@ -99,12 +99,12 @@ The menu options available to you change depending on the platform you work from
 <tr valign="top">
 <td>
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Backlog multi-select menu</p>
-<img src="_img/bulk-m-backlog-r-tfs-menu-options.png" alt="Backlog multi-select menu, TFS 2015" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/bulk-m-backlog-r-tfs-menu-options.png" alt="Backlog multi-select menu, TFS 2015" style="border: 2px solid #C3C3C3;" /> 
 </td>
 
 <td>
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Query results multi-select menu</p>
-<img src="_img/bulk-m-query-r-tfs-menu-options.png" alt="Query results multi-select menu, TFS 2015" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/bulk-m-query-r-tfs-menu-options.png" alt="Query results multi-select menu, TFS 2015" style="border: 2px solid #C3C3C3;" />  
 </td>
 </tr>
 </table>
@@ -121,11 +121,11 @@ Here, we use the context menu to move several non-sequential items to the curren
 
 #### Team Services and TFS 2017 
 
-<img src="_img/bulk-modify-multi-select-ts.png" alt="Team Services, Backlog page, multi-select items, Open context menu, Move to iteration,  " style="border: 1px solid #CCCCCC;" />
+<img src="_img/bulk-modify-multi-select-ts.png" alt="Team Services, Backlog page, multi-select items, Open context menu, Move to iteration,  " style="border: 2px solid #C3C3C3;" />
 
 #### TFS 2015 and TFS 2013
 
-<img src="_img/backlog-multi-select-non-sequential-items.png" alt="TFS 2015, web portal, Backlog page, multi-select items, Open context menu, Move to iteration,  " style="border: 1px solid #CCCCCC;" />
+<img src="_img/backlog-multi-select-non-sequential-items.png" alt="TFS 2015, web portal, Backlog page, multi-select items, Open context menu, Move to iteration,  " style="border: 2px solid #C3C3C3;" />
 
 
 >[!TIP]  
@@ -162,17 +162,17 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../guidance/work-item-field.md). 
 
-	<img src="_img/bulk-modify-edit-fields-ts.png" alt="Team Services or TFS 2017, Query results page, bulk edit fields" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/bulk-modify-edit-fields-ts.png" alt="Team Services or TFS 2017, Query results page, bulk edit fields" style="border: 2px solid #C3C3C3;" />
 
 2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
 
-	<img src="_img/bulk-modify-save-ts.png" alt="Team Services or TFS 2017, Query results page, save bulk modified items" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/bulk-modify-save-ts.png" alt="Team Services or TFS 2017, Query results page, save bulk modified items" style="border: 2px solid #C3C3C3;" />
 
 #### TFS 2015 and TFS 2013
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../guidance/work-item-field.md). 
 
-	<img src="_img/IC666563.png" alt="TFS 2015, web portal, Query results page, Edit work items dialog, bulk modify fields" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/IC666563.png" alt="TFS 2015, web portal, Query results page, Edit work items dialog, bulk modify fields" style="border: 2px solid #C3C3C3;" />
 
 2. Save all work items that you bulk-modified. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
 

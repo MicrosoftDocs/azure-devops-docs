@@ -19,8 +19,6 @@
     href: portfolio-management.md
   - name: Review team delivery plans
     href: /vsts/work/scale/review-team-plans?toc=/vsts/work/scale/toc.json&bc=/vsts/work/breadcrumb/toc.json
-  - name: Scaled Agile Framework
-    href: scaled-agile-framework.md
 - name: Concepts
   items:
   - name: Visibility across teams
@@ -41,6 +39,8 @@
     href: /vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/scale/toc.json&bc=/vsts/work/breadcrumb/toc.json
   - name: Define a work item template 
     href: /vsts/work/productivity/work-item-template?toc=/vsts/work/scale/toc.json&bc=/vsts/work/breadcrumb/toc.json
+  - name: Scaled Agile Framework
+    href: scaled-agile-framework.md
   - name: Configure team settings
     href: manage-team-assets.md 
     items:

@@ -22,7 +22,7 @@ To learn more or to change team defaults, see [Set team defaults](../scale/set-t
 
 <p>You navigate to your team context from the top navigation bar as shown. Choose Browse All if the name you want doesn't appear in the list. </p>
 
-<img src="../backlogs/_img/switch-team-project-2.png" alt="Backlog page, old nav, switch team context" style="border: 1px solid #CCCCCC;" />  
+<img src="../backlogs/_img/switch-team-project-2.png" alt="Backlog page, old nav, switch team context" style="border: 2px solid #C3C3C3;" />  
 
 
 </div>
@@ -34,7 +34,7 @@ To learn more or to change team defaults, see [Set team defaults](../scale/set-t
 
 <p>You navigate to your team context from the top navigation bar as shown. Choose Browse All if the name you want doesn't appear in the list. </p>
 
-<img src="../_shared/_img/switch-team-context-new-nav.png" alt="Backlog page, new nav, switch team comtext" style="border: 1px solid #CCCCCC;" />
+<img src="../_shared/_img/switch-team-context-new-nav.png" alt="Backlog page, new nav, switch team comtext" style="border: 2px solid #C3C3C3;" />
 
 
 </div>

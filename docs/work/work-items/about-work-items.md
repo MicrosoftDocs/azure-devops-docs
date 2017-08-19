@@ -24,7 +24,7 @@ To track different types of work, different work item types (WITs) are defined. 
 
 For example, the following WITs are available to you when you choose the Agile team project. 
 
-<img src="../guidance/_img/agile-process-plan-wits.png" alt="Agile process, WITs used to plan and track" style="border: 1px solid #CCCCCC;" />
+<img src="../guidance/_img/agile-process-plan-wits.png" alt="Agile process, WITs used to plan and track" style="border: 2px solid #C3C3C3;" />
 
 To learn more about processes and process templates, see [Choose a process](../guidance/choose-process.md).
 

@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/work/agile-project-management
+redirect_url: /vsts/work/agile-project-management
 ---

@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/design/index
+redirect_url: /vsts/design/index
 ---

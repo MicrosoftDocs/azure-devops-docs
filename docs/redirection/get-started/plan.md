@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/work/plan
+redirect_url: /vsts/work/plan
 ---

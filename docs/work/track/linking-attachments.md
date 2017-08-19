@@ -84,7 +84,7 @@ You can [link work items to track related work and dependencies](link-work-items
 
 Add a query and select **Tree of work items** to begin your query. You should see something similar to the following: 
 
-<img src="_img/query-link-attach-all-items-tree-query.png" alt="Query editor, new tree of work items query" style="border: 1px solid #CCCCCC;" />
+<img src="_img/query-link-attach-all-items-tree-query.png" alt="Query editor, new tree of work items query" style="border: 2px solid #C3C3C3;" />
 
 >[!NOTE]  
 >You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test Plans page of the Test hub](../../manual-test/getting-started/create-a-test-plan.md). 

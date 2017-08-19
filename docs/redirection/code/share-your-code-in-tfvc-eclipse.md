@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/tfvc/share-your-code-in-tfvc-eclipse
+redirect_url: /vsts/tfvc/share-your-code-in-tfvc-eclipse
 ---

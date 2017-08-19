@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate
+redirect_url: /vsts/accounts/use-personal-access-tokens-to-authenticate
 ---

@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/collaborate/manage-personal-notifications
+redirect_url: /vsts/collaborate/manage-personal-notifications
 ---

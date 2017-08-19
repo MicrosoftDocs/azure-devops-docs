@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/git/overview
+redirect_url: /vsts/git/overview
 ---

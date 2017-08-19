@@ -82,7 +82,7 @@ The specific set of formatting features differs depending on the client you use.
 
 **Rich text formatting toolbar - Team Services &  TFS 2017 web portal** 
 
-<img src="_img/rich-text-ui-team-services.png" alt="Rich text tool bar - Team Services" style="border: 1px solid #CCCCCC;" />
+<img src="_img/rich-text-ui-team-services.png" alt="Rich text tool bar - Team Services" style="border: 2px solid #C3C3C3;" />
 
 In Team Services, you can use the ![Remove format](../_img/icons/remove-formatting-icon.png) icon or CTRL+Spacebar to remove formatting from highlighted text.
 
@@ -95,7 +95,7 @@ In Team Services, you can use the ![Remove format](../_img/icons/remove-formatti
 
 **Rich text formatting toolbar - TFS web portal and Team Explorer Everywhere** 
 
-<img src="_img/rich-text-ui-web-portal.png" alt="Rich text tool bar - web portal" style="border: 1px solid #CCCCCC;" />
+<img src="_img/rich-text-ui-web-portal.png" alt="Rich text tool bar - web portal" style="border: 2px solid #C3C3C3;" />
 
 
 ### Visual Studio, Team Explorer 
@@ -103,7 +103,7 @@ In Team Services, you can use the ![Remove format](../_img/icons/remove-formatti
 
 **Rich text formatting toolbar - Visual Studio** 
 
-<img src="_img/rich-text-ui-te.png" alt="Rich text tool bar - Team Explorer" style="border: 1px solid #CCCCCC;" />
+<img src="_img/rich-text-ui-te.png" alt="Rich text tool bar - Team Explorer" style="border: 2px solid #C3C3C3;" />
 
 From Team Explorer you can choose the font, font size, and text and background colors.
 
@@ -142,14 +142,14 @@ For example, you can attach a screen image that illustrates a problem, a line of
 
 ### Attachment control toolbar, Team Services &  TFS 2017 web portal 
 
-<img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal Team Services" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal Team Services" style="border: 2px solid #C3C3C3;" />  
 
 > [!TIP]    
 > From Team Services, you can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, from Team Services and TFS 2017.1 and later versions, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../reference/markdown-guidance.md#attach).  
 
 You can edit, open, save, or delete an attachment by clicking an attachment and opening it's ![actions icon](../_img/icons/actions-icon.png) actions menu. 
 
-<img src="_img/share-plans-attachment-menu-options.png" alt="Attachment menu options,  Team Services" style="border: 1px solid #CCCCCC;" />
+<img src="_img/share-plans-attachment-menu-options.png" alt="Attachment menu options,  Team Services" style="border: 2px solid #C3C3C3;" />
 
 > [!NOTE]  
 > For Team Services, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
@@ -158,7 +158,7 @@ You can edit, open, save, or delete an attachment by clicking an attachment and 
 <a id="tfs-portal" />
 ### Attachment control toolbar, TFS 2015 web portal and Team Explorer Everywhere
 
-<img src="_img/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises TFS), and Eclipse" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises TFS), and Eclipse" style="border: 2px solid #C3C3C3;" />  
 
 Click the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment. Click an item and then click ![open icon](../_img/icons/open-icon.png) to open the attachment or ![download icon](../_img/icons/download-icon.png) to save a copy.  
 
@@ -168,7 +168,7 @@ Click the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachm
 
 **Attachment control toolbar - Visual Studio Team Explorer** 
 
-<img src="_img/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises TFS), Visual Studio and Eclipse" style="border: 1px solid #CCCCCC;" />
+<img src="_img/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises TFS), Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" />
 
 > [!TIP]    
 > From Visual Studio, you can drag and drop files into the attachment area. 
@@ -177,7 +177,7 @@ Click the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachm
 
 Click one or more items and then right-click to open the menu options to download or delete several attachments. 
 
-<img src="_img/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 1px solid #CCCCCC;" />
+<img src="_img/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 2px solid #C3C3C3;" />
 
 By default, the size of work item attachments is limited to 4 MB. For on-premises deployments, you can use the TFS web service to [increase the size of files you attach up to 2GB](https://msdn.microsoft.com/library/ms400780.aspx).
 
@@ -198,7 +198,7 @@ By linking your storyboard to a work item, you provide your team access to the s
 
 You can open Storyboarding with PowerPoint from the ![actions icon](../_img/icons/actions-icon.png) actions menu within a work item form. 
 
-<img src="_img/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal Team Services" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal Team Services" style="border: 2px solid #C3C3C3;" />  
 
 To link to an existing storyboard, click the ![Links page icon](../_img/icons/icon-links-tab-wi.png) Links tab and add a storyboard link.  
 
@@ -209,14 +209,14 @@ To link to an existing storyboard, click the ![Links page icon](../_img/icons/ic
 
 From the **Storyboards** tab, click Start Storyboarding to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
 
-<img src="_img/share-plans-storyboard-tfs-web-tab.png" alt="Storyboard links control" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/share-plans-storyboard-tfs-web-tab.png" alt="Storyboard links control" style="border: 2px solid #C3C3C3;" />  
 
 
 <a id="team-explorer-storyboard" />
 
 **Storyboards tab control - Visual Studio Team Explorer** 
 
-<img src="_img/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 1px solid #CCCCCC;" />
+<img src="_img/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
 
 To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoint](../office/storyboard-your-ideas-using-powerpoint.md).  
 

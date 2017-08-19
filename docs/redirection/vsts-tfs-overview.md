@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/devops-alm-overview
+redirect_url: /vsts/devops-alm-overview
 ---

@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/tfs/command-line/tfsdeleteproject-cmd
+redirect_url: /vsts/tfs-server/command-line/tfsdeleteproject-cmd
 ---

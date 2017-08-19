@@ -19,7 +19,7 @@ To support your work tracking requirements, you can customize each WIT to add cu
 
 For example, the following form shows that two custom pages have been added, **Impact** and **Mitigation**. In addition, several new groups and fields have been added to the Details page.  
 
-<img src="_img/cpform-customized-form-intro.png" alt="Customized user story form" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/cpform-customized-form-intro.png" alt="Customized user story form" style="border: 2px solid #C3C3C3;" /> 
 
 ##What you can customize   
 
@@ -88,11 +88,11 @@ You can add your own custom groups to both inherited pages and custom pages.
 
 1. From the Layout page, choose New group.    
 
-	<img src="_img/cpform-new-group.png" alt="Process>Work Item Types>Bug>Layout>Add new group" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/cpform-new-group.png" alt="Process>Work Item Types>Bug>Layout>Add new group" style="border: 2px solid #C3C3C3;" /> 
 
 2. Label the group and choose the column it should appear in.
 
-	<img src="_img/cpform-add-group-dialog.png" alt="Add custom group dialog" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/cpform-add-group-dialog.png" alt="Add custom group dialog" style="border: 2px solid #C3C3C3;" />
 
 	<a id="edit-group"></a>
 3. (Optional) Once you've added the group, you can drag and drop the group into any column or within the column, or select the Move Up or Move Down options from the group's &hellip; context menu.  
@@ -120,7 +120,7 @@ To move a field to another page, choose Edit from the field's &hellip; context m
 
 Here we move the Customer ticket field to the Details page and the Customer focus group.   
 
-<img src="_img/cpform-move-field-to-custom-group.png" alt="Edit field dialog, Move field to custom group" style="border: 1px solid #CCCCCC;" />
+<img src="_img/cpform-move-field-to-custom-group.png" alt="Edit field dialog, Move field to custom group" style="border: 2px solid #C3C3C3;" />
  
 
 <a id="show-hide-remove-field"></a>
@@ -135,7 +135,7 @@ For an inherited field, open the field's &hellip; context menu, and then choose 
 
 Here we remove the Severity inherited field from appearing on the Bug form.   
 
-<img src="_img/cpform-hide-layout.png" alt="Layout, Inherited Field, Context Menu, Hide from layout" style="border: 1px solid #CCCCCC;" />
+<img src="_img/cpform-hide-layout.png" alt="Layout, Inherited Field, Context Menu, Hide from layout" style="border: 2px solid #C3C3C3;" />
 
 Removing a custom field from a form removes tracking data for the WIT. You can re-add a custom field to a WIT by adding it to a form as an existing field. 
 
@@ -153,18 +153,18 @@ Add a custom page when you have several custom fields that you want to group wit
 
 0. From the Layout page of the WIT you've selected, click New page.    
 
-	<img src="_img/cpform-add-page.png" alt="Process, Work Item Types, Bug: Layout, New page option" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/cpform-add-page.png" alt="Process, Work Item Types, Bug: Layout, New page option" style="border: 2px solid #C3C3C3;" />
 
 0. Label the page.
 
-	<img src="_img/cpform-add-page-dialog.png" alt="Process, Work Item Types, Bug: Layout, Add a page to bug dialog" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/cpform-add-page-dialog.png" alt="Process, Work Item Types, Bug: Layout, Add a page to bug dialog" style="border: 2px solid #C3C3C3;" />
 
 	<a id="edit-page"></a>
 0. Edit the page to add [fields](customize-process-field.md) or [groups](#groups).  
 
 0. When you've finished adding groups and fields to the page, verify your layout is as expected. Refresh your browser and open a work item of the type you just customized. 
 
-	<img src="_img/cpform-custom-page-in-form.png" alt="Bug work item form, Custom page" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/cpform-custom-page-in-form.png" alt="Bug work item form, Custom page" style="border: 2px solid #C3C3C3;" />
 
 
 <a id="reorder-page"></a>
@@ -172,7 +172,7 @@ Add a custom page when you have several custom fields that you want to group wit
 
 You can reorder custom pages using drag and drop, or choose the move operation from the custom page &hellip; context menu. You can't move the inherited Details page.
 
-<img src="_img/cpform-re-sequence-page.png" alt="Re-order custom pages" style="border: 1px solid #CCCCCC;" />
+<img src="_img/cpform-re-sequence-page.png" alt="Re-order custom pages" style="border: 2px solid #C3C3C3;" />
 
 <a id="delete-page"></a>
 ### Delete a page  

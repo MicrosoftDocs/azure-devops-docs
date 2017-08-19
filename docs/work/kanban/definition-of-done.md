@@ -30,7 +30,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
  
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.  
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #CCCCCC;" />
+	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />
 
 	If you're not a team administrator, [get added as one](../scale/add-team-administrator.md). Only team or project administrators can customize the Kanban board.
 
@@ -39,7 +39,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 	**Team Services and TFS 2015.1 and later versions**  
 	Click a column tab and enter the Definition of Done for that column. Enter text that defines your [team's Definition of Done](#your-team-working-software-and-the-definition-of-done). 
 
-	<img src="_img/vso-kanban-board-definition-of-done-no-tags.png" alt="Kanban board, Coding column tab, Definition of done]" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/vso-kanban-board-definition-of-done-no-tags.png" alt="Kanban board, Coding column tab, Definition of done]" style="border: 2px solid #C3C3C3;" />  
 
 	**TFS 2015**   
 
@@ -130,7 +130,7 @@ Acceptance criteria corresponds to what a customer should expect when a user sto
 
 Acceptance criteria defines when a feature is shippable. Capture the criteria for each backlog item in the Acceptance Criteria field (for Scrum product backlog items) or the Description field (for Agile user stories and CMMI requirements).
 
-<img src="_img/vso-product-backlog-work-item-form-acceptance-criteria.png" alt="Acceptance criteria field on work item form]" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/vso-product-backlog-work-item-form-acceptance-criteria.png" alt="Acceptance criteria field on work item form]" style="border: 2px solid #C3C3C3;" />  
 
 The Definition of Done, on the other hand, is about delivering an incremental piece of a feature as it moves from not started to complete. Agile teams meet with greater success when each handoff made is in a ready state for the recipient to begin their work. 
 

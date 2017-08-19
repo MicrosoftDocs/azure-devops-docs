@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/tfvc/debug-your-app-vs
+redirect_url: /vsts/tfvc/debug-your-app-vs
 ---

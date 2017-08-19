@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/tfs/upgrade/walkthrough
+redirect_url: /vsts/tfs-server/upgrade/walkthrough
 ---

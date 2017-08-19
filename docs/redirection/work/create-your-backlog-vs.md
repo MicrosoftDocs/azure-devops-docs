@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/work/backlogs/create-your-backlog
+redirect_url: /vsts/work/backlogs/create-your-backlog
 ---

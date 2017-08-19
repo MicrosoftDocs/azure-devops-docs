@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/git/merging-with-squash
+redirect_url: /vsts/git/merging-with-squash
 ---

@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/work/how-to/filter-backlog-or-board
+redirect_url: /vsts/work/how-to/filter-backlog-or-board
 ---

@@ -111,11 +111,11 @@ The steps to capture a work item differ based on the platform, version, and clie
 <ol><li> 
 <p>Open a work item with the fields defined that you want to capture, and click the ![Actions icon](../_img/icons/actions-icon.png) actions icon to open the menu. Choose Templates and then Capture.     </p>   
    
-<img src="_img/wi-templates-capture-bug-vsts.png" alt="Capture work item field definitions as a template" style="border: 1px solid #CCCCCC;" />
+<img src="_img/wi-templates-capture-bug-vsts.png" alt="Capture work item field definitions as a template" style="border: 2px solid #C3C3C3;" />
 </li>
 <li> 
 <p>Name the template and optionally add and remove fields. Save the template when finished.</p>
-<img src="_img/wi-templates-capture-template-dialog.png" alt="Capture template dialog" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/wi-templates-capture-template-dialog.png" alt="Capture template dialog" style="border: 2px solid #C3C3C3;" /> 
 </li>
 <li> 
 <p>Once you've saved the template, click Copy link to capture the URL for the template that you can use to add work items using the template.</p> 
@@ -167,11 +167,11 @@ The steps to capture a work item differ based on the platform, version, and clie
 <ol>
 <li> <p>Open or run a query that lists the work item whose fields you want to capture.</p></li> 
 <li> Right-click the work item of the type and whose fields you want to capture, and select Capture Template from the context menu.</p>
-<img src="_img/wi-templates-te-capture-wi-as-template.png" alt="Capture work item field definitions as a template from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
+<img src="_img/wi-templates-te-capture-wi-as-template.png" alt="Capture work item field definitions as a template from Visual Studio with Power Tools installed" style="border: 2px solid #C3C3C3;" />
 </li>
 
 <li><p>In the dialog, use the checkboxes to select all the fields you want to save in the template, and add a name and (optionally) description to the template.</p>
-<img src="_img/wi-templates-capture-template-dialog-te.png" alt="Capture template dialog from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
+<img src="_img/wi-templates-capture-template-dialog-te.png" alt="Capture template dialog from Visual Studio with Power Tools installed" style="border: 2px solid #C3C3C3;" />
 </li> 
 <li><p>Save the template and it will appear in the root of the Team Explorer pane under the Templates section.</p></li>  
 
@@ -206,7 +206,7 @@ The main method for adding a work item using a template is to open the template 
 <ol><li> 
 <p>Click the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose Copy link.     </p>   
    
-<img src="_img/wi-templates-copy-url-vsts.png" alt="Copy link of a template" style="border: 1px solid #CCCCCC;" />
+<img src="_img/wi-templates-copy-url-vsts.png" alt="Copy link of a template" style="border: 2px solid #C3C3C3;" />
 </li>
 <li> 
 <p>Copy the link to a shared network or send to your team via email. Also, consider [adding a link the team dashboard](#markdown-widget).  </p>
@@ -232,7 +232,7 @@ The main method for adding a work item using a template is to open the template 
  
 <ol>
 <li> <p>You can copy the link to a template which will open in the web portal, by opening the context menu for the template.  </p>
-<img src="_img/wi-templates-copy-URL-te.png" alt="Copy link to template from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
+<img src="_img/wi-templates-copy-URL-te.png" alt="Copy link to template from Visual Studio with Power Tools installed" style="border: 2px solid #C3C3C3;" />
 </li>
 
 <li><p>Paste the copied link into a web browser to check that it works as expected. </p>
@@ -259,7 +259,7 @@ You can add links to a markdown widget that appear on your team dashboard in the
 
 For example, the following widget contains links to three templates.  
 
-<img src="_img/wi-templates-markdown-widget-with-template-links.png" alt="Markdown widget with links to templates" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/wi-templates-markdown-widget-with-template-links.png" alt="Markdown widget with links to templates" style="border: 2px solid #C3C3C3;" /> 
 
 To learn more about the markdown widget see [Add charts and widgets to a dashboard, Markdown widgets](../../report/add-markdown-to-dashboard.md).  
 
@@ -285,7 +285,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 <ol><li> 
 <p>Open the work item that you want to update using the fields defined within a template, and click the ![sctions icon](../_img/icons/actions-icon.png) actions icon to access your menu. Click Templates and then click the name of a pre-defined template.      </p>   
    
-<img src="_img/wi-templates-apply-user-story-template-vsts.png" alt="Apply a template to an existing work item within the form" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/wi-templates-apply-user-story-template-vsts.png" alt="Apply a template to an existing work item within the form" style="border: 2px solid #C3C3C3;" /> 
 
 <blockquote><b>Tip:</b>
 Refresh your browser to discover the latest templates that have been added. If you don't see any templates, it may be that there are none defined for the work item type. Click **Manage&#133;** to open the team settings Templates admin page for your team to review or add templates. </blockquote> 
@@ -302,7 +302,7 @@ Refresh your browser to discover the latest templates that have been added. If y
 <p>To bulk update several work items, first select them from the backlog or a query results list, and then open the actions menu for one of them. All work items you select must be of the same work item type. For example, all user stories or all bugs. </p></li>
 <li>
 <p>Choose the template to apply.</p> 
-<img src="_img/wi-templates-bulk-update-list-vsts.png" alt="Bulk update several work items (Team Services) " style="border: 1px solid #CCCCCC;" />
+<img src="_img/wi-templates-bulk-update-list-vsts.png" alt="Bulk update several work items (Team Services) " style="border: 2px solid #C3C3C3;" />
 </li>
 <li><p>Field changes are automatically applied and work items saved. To learn more about bulk updates, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md). </p>
 </li>
@@ -316,14 +316,14 @@ Refresh your browser to discover the latest templates that have been added. If y
 <ol>
 <li><p>Open or run a query that lists the work item(s) whose fields you want to capture.</p></li> 
 <li><p>Right-click the work items&mdash;which must be of the same type&mdash;  and click Apply Template from the context menu.</p>
-<img src="_img/wi-templates-apply-template-options-te.png" alt="Apply template to selected work item from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
+<img src="_img/wi-templates-apply-template-options-te.png" alt="Apply template to selected work item from Visual Studio with Power Tools installed" style="border: 2px solid #C3C3C3;" />
 </li>
 
 <li><p>Select the template to use and click OK. </p>
-<img src="_img/wi-templates-apply-template-dialog-te.png" alt="Apply template dialog from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
+<img src="_img/wi-templates-apply-template-dialog-te.png" alt="Apply template dialog from Visual Studio with Power Tools installed" style="border: 2px solid #C3C3C3;" />
 </li> 
 <li><p>Save the work item. </p>
-<img src="_img/wi-templates-apply-save-work-items-te.png" alt="Save changes from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
+<img src="_img/wi-templates-apply-save-work-items-te.png" alt="Save changes from Visual Studio with Power Tools installed" style="border: 2px solid #C3C3C3;" />
 </li> 
 </ol>
 
@@ -364,13 +364,13 @@ You manage templates from the team admin context. All templates are defined for 
 <ol><li>
 <p>From a web browser, open the web portal administrative context for your team. Here we open the admin page for the Web team.</p>
 
-<img src="_img/wit-templates-open-team-admin-context.png" alt="Open team admin context" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/wit-templates-open-team-admin-context.png" alt="Open team admin context" style="border: 2px solid #C3C3C3;" />  
 
 <p>If you're not a team administrator, [get added as one](../scale/add-team-administrator.md). Only team or project administrators can change team templates. </p>
 
 <li>
 <p>Click Templates under the Work hub.</p> 
-<img src="_img/wit-templates-work-templates-page.png" alt="Open Work - Templates page for team" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/wit-templates-work-templates-page.png" alt="Open Work - Templates page for team" style="border: 2px solid #C3C3C3;" />  
 
 <p>From here, you can click on any work item type to view or add templates for that type. </p> 
 </li></ol>
@@ -380,12 +380,12 @@ You manage templates from the team admin context. All templates are defined for 
 
 <p>For example, click User Story to view templates defined to capture user stories.</p>
 
-<img src="_img/wi-templates-user-stories-list.png" alt="Manage user story templates" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/wi-templates-user-stories-list.png" alt="Manage user story templates" style="border: 2px solid #C3C3C3;" />  
 
 <h3>Define a template from scratch</h3>  
 <ol><li>
 <p>From the work item type page, click ![green plus icon](../_img/icons/green_plus_icon.png) New template to create a template from scratch.</p>
-<img src="_img/wi-templates-new-template.png" alt="Add a user story template" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/wi-templates-new-template.png" alt="Add a user story template" style="border: 2px solid #C3C3C3;" />  
 </li>
 <li><p>Name the template and optionally add and remove fields. Save the template when finished.</p>
 <p>Once you've saved the template, click Copy link to capture the URL for the template that you can use to add work items using the template. </p>
@@ -394,13 +394,13 @@ You manage templates from the team admin context. All templates are defined for 
 <h3>Edit, delete, or copy link to a template </h3>
 <p>From the work item type page, click ![actions icon](../_img/icons/actions-icon.png) the actions icon for an existing template to access the menu options to Edit, Delete, or Copy link.<p>
 
-<img src="_img/wi-templates-template-action-menu.png" alt="Open template action menu" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/wi-templates-template-action-menu.png" alt="Open template action menu" style="border: 2px solid #C3C3C3;" />  
 
 <h3>Copy or duplicate a template </h3> 
 <ol><li>
 <p>To duplicate an existing template, click ![actions icon](../_img/icons/actions-icon.png) the actions icon for an existing template and click Create copy.</p>
 
-<img src="_img/wi-templates-copy-template.png" alt="Copy an existing template" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/wi-templates-copy-template.png" alt="Copy an existing template" style="border: 2px solid #C3C3C3;" />  
 </li>
 <li>
 <p>Name the template and optionally add and remove fields. Save the template when finished.</p>
@@ -422,10 +422,10 @@ You manage templates from the team admin context. All templates are defined for 
 <h3> Define a template from scratch</h3>  
 <ol>
 <li>From the Templates section, right-click Templates and choosee to create a template from scratch.
-<img src="_img/wi-templates-new-template-te.png" alt="Add a new template, Visual Studio " style="border: 1px solid #CCCCCC;" />  
+<img src="_img/wi-templates-new-template-te.png" alt="Add a new template, Visual Studio " style="border: 2px solid #C3C3C3;" />  
 </li>
 <li>Save the template, provide a Name in the dialog provided.  
-<img src="_img/wi-templates-new-template-save-as-te.png" alt="Add a new template, Visual Studio " style="border: 1px solid #CCCCCC;" />  
+<img src="_img/wi-templates-new-template-save-as-te.png" alt="Add a new template, Visual Studio " style="border: 2px solid #C3C3C3;" />  
 <p>Once you've saved the template, click Copy link to capture the URL for the template that you can use to add work items using the template.</p>
 </li>
 </ol>
@@ -433,7 +433,7 @@ You manage templates from the team admin context. All templates are defined for 
 <h3>Edit, use, copy, or delete a template </h3> 
 To edit, delete, or perform another action on a template, open its context menu (right-click) and choose the option you want.  
 
-<img src="_img/wi-templates-context-menu-te.png" alt="Open template action menu" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/wi-templates-context-menu-te.png" alt="Open template action menu" style="border: 2px solid #C3C3C3;" />  
 
 To make frequently-used templates more accessible, you can set a default template for each work item type. To do so, right-click on a template in Team Explorer and click **Set As Default**. A checkmark will appear on the icon to indicate that it is now the default. 
 
@@ -500,7 +500,7 @@ You can add tags to a template and they'll be applied to the work item when you 
 
 With Team Services, you can specify tags to be specifically added or removed. 
 
-<img src="_img/wi-templates-add-remove-tags.png" alt="Edit bug template, add or remove tags" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/wi-templates-add-remove-tags.png" alt="Edit bug template, add or remove tags" style="border: 2px solid #C3C3C3;" />  
 
 If you don't specify tags to remove, then all tags present in a work item will remain defined even when you apply a work item template to an existing work item. 
 

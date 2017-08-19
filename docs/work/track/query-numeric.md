@@ -86,7 +86,7 @@ Unestimated user stories
 
 All queries show a count of items when you run the query. Here we define a flat-list query that filters for bugs in any state.  
 
-<img src="_img/query-effort-active-bugs-count-summary.png" alt="Query bugs any state, count of work items summary" style="border: 1px solid #CCCCCC;" />
+<img src="_img/query-effort-active-bugs-count-summary.png" alt="Query bugs any state, count of work items summary" style="border: 2px solid #C3C3C3;" />
 
 In addition, all charts contain a Values selection designed to display a count of work items within the chart. 
 
@@ -94,13 +94,13 @@ In addition, all charts contain a Values selection designed to display a count o
  
 Create an  active bugs query and modify the column options to show Assigned To and State. Then, add a pivot chart that displays the assignments and state. 
 
-<img src="_img/query-effort-config-chart-count-bugs-state-pivot-chart.png" alt="Configure chart, count of bugs by developer, area, pivot chart" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/query-effort-config-chart-count-bugs-state-pivot-chart.png" alt="Configure chart, count of bugs by developer, area, pivot chart" style="border: 2px solid #C3C3C3;" />  
 
 ### Count of bugs by state and area 
 
 Using the same flat-list query that filters for bugs shown in the previous section, you can show a count based on area. Modify the column options to show the Area Path. Then, add a pivot chart that displays the state and area path. 
 
-<img src="_img/query-effort-config-chart-count-bugs-area-state-pivot-chart.png" alt="Configure chart, count of bugs by area, state, pivot chart" style="border: 1px solid #CCCCCC;" />
+<img src="_img/query-effort-config-chart-count-bugs-area-state-pivot-chart.png" alt="Configure chart, count of bugs by area, state, pivot chart" style="border: 2px solid #C3C3C3;" />
 
 <a id="effort"/>
 ##Queries and charts based on effort or story points 
@@ -114,11 +114,11 @@ You can assign Story Points to user stories or bugs when you work in an Agile pr
 
 Create a query that filters for User Story as the work item type and modify the column options to show Story Points and State. 
 
-<img src="_img/query-effort-sum-story-points-iteration.png" alt="Query editor, flat list, open stories" style="border: 1px solid #CCCCCC;" />
+<img src="_img/query-effort-sum-story-points-iteration.png" alt="Query editor, flat list, open stories" style="border: 2px solid #C3C3C3;" />
 
 Then, add a stacked bar chart that sums the Story Points. 
 
-<img src="_img/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 1px solid #CCCCCC;" />
+<img src="_img/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 2px solid #C3C3C3;" />
 
 >[!NOTE]  
 >For information on system-defined cumulative flow diagrams, see [Cumulative flow](../../report/guidance/cumulative-flow.md).
@@ -127,11 +127,11 @@ Then, add a stacked bar chart that sums the Story Points.
 
 Create a query that filters for User Story as the work item type and in the Active or Closed state. Modify the column options to show Story Points. 
 
-<img src="_img/query-effort-sum-story-points-active-closed.png" alt="Query editor, flat list, user stories - active or closed" style="border: 1px solid #CCCCCC;" />
+<img src="_img/query-effort-sum-story-points-active-closed.png" alt="Query editor, flat list, user stories - active or closed" style="border: 2px solid #C3C3C3;" />
 
 Then, add a stacked area trend chart that sums the Story Points. 
 
-<img src="_img/query-effort-config-chart-sum-story-points-burnup.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 1px solid #CCCCCC;" />
+<img src="_img/query-effort-config-chart-sum-story-points-burnup.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 2px solid #C3C3C3;" />
 
 <a id="work"/>
 ##Queries and charts based on remaining and completed work 
@@ -155,11 +155,11 @@ Based on the process your team project references, you can assign the following 
 
 If you follow Scrum practices and estimate Remaining Work for your tasks and bugs, you can get a roll up of the amount of work remaining for each developer with the following query and chart. By using the In operator and including both Task and Bug, you include any bugs that are being tracked as tasks. 
 
-<img src="_img/query-effort-tasks-bugs-list.png" alt="Query of tasks and bugs for sprint" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/query-effort-tasks-bugs-list.png" alt="Query of tasks and bugs for sprint" style="border: 2px solid #C3C3C3;" />  
 
 Add Remaining Work as a column option to the query and save. To view a sum of the remaining work, add a pivot chart as shown. 
 
-<img src="_img/example-query-config-chart-sum-remaining-work-pivot-chart.png" alt="Configure chart, sum of remaining work by developer, area, pivot chart" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/example-query-config-chart-sum-remaining-work-pivot-chart.png" alt="Configure chart, sum of remaining work by developer, area, pivot chart" style="border: 2px solid #C3C3C3;" />  
 
 
 >[!NOTE]  

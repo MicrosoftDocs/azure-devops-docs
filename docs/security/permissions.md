@@ -389,13 +389,15 @@ Show bugs on backlogs and boards
 
 For each team that you add, you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing the following team assets.  
 
->[!NOTE]   
->Project Administrators can manage all team admin areas for all teams. 
+> [!NOTE]   
+> Project Administrators can manage all team admin areas for all teams. 
 
 - **Create and manage team alerts**  
 	Can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. For details, see [Manage team alerts](../work/track/alerts-and-notifications.md).
-	>[!NOTE] 
-	There is no UI associated with managing alert permissions. Instead, you can use **TFSSecurity** to manage alerts in TFS. 
+
+	> [!NOTE] 
+	> There is no UI associated with managing alert permissions. Instead, you can use **TFSSecurity** to manage alerts in TFS. 
+
 - <a id="team-rooms" />**Create and manage team rooms**  
 	Can add users and events to team rooms, and add team rooms. Team rooms are chat rooms limited to team members. For details, see [Collaborate in a team room](../collaborate/collaborate-in-a-team-room.md). 
 - <a id="team-rooms" />**Select team area paths**   

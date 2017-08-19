@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/work/backlogs-boards-plans
+redirect_url: /vsts/work/backlogs-boards-plans
 ---

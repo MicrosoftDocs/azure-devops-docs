@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/git/share-your-code-in-git-vs
+redirect_url: /vsts/git/share-your-code-in-git-vs
 ---

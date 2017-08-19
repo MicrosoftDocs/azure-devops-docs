@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/build-release/actions/agents/v2-linux
+redirect_url: /vsts/build-release/actions/agents/v2-linux
 ---

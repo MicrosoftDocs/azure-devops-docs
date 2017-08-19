@@ -1,3 +1,3 @@
 ﻿---
-redirect_url: /docs/quickstart/get-started-stakeholder
+redirect_url: /vsts/quickstart/get-started-stakeholder
 ---

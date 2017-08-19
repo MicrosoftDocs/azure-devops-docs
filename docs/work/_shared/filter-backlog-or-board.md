@@ -9,7 +9,7 @@ You can use keywords to filter your backlogs, Kanban boards, and query results. 
 
 Here, we filter the backlog to only show items that include 'Web' in any one of the displayed column fields. 
 
-<img src="../backlogs/_img/cyb-filter-backlog.png" alt="Apply text filter" style="border: 1px solid #CCCCCC;" />  
+<img src="../backlogs/_img/cyb-filter-backlog.png" alt="Apply text filter" style="border: 2px solid #C3C3C3;" />  
 
 The filtered set is always a flat list, even if you've selected to show parents.  
 

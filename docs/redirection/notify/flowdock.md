@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/collaborate/flowdock
+redirect_url: /vsts/collaborate/flowdock
 ---

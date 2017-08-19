@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/work/track/using-queries
+redirect_url: /vsts/work/track/using-queries
 ---

@@ -35,7 +35,7 @@ The page opens to **Favorites** which lists all queries you have favorited.
 - Click the star icon to favorite or unfavorite a query
 - Open the context menu to access other options: 
 
-	<img src="_img/organize-queries-drop-down-menu.png" alt="New query experience, Query context menu, shared query" style="border: 1px solid #cccccc;"/>
+	<img src="_img/organize-queries-drop-down-menu.png" alt="New query experience, Query context menu, shared query" style="border: 2px solid #C3C3C3;"/>
 
 
 **Old queries experience**
@@ -47,7 +47,7 @@ The page opens to the **Assigned to me** query which lists all work items curren
 - Click a query title to run the query 
 - Open the context menu to access other options: 
 
-	<img src="_img/organize-queries-drop-down-menu-old-exp.png" alt="Old query experience, Query context menu, shared query" style="border: 1px solid #cccccc;"/>
+	<img src="_img/organize-queries-drop-down-menu-old-exp.png" alt="Old query experience, Query context menu, shared query" style="border: 2px solid #C3C3C3;"/>
 
 You can change the permissions set for a shared query folder or shared query. For details, see [Set query permissions](set-query-permissions.md). 
 

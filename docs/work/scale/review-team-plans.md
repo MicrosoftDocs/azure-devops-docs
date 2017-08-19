@@ -13,10 +13,7 @@ ms.date: 06/13/2017
 
 # Review team Delivery Plans 
 
-
-<!---
 <b>Team Services | TFS 2017.2</b> 
---> 
 
 > [!NOTE]  
 > **Feature availability**: [Delivery Plans, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for Team Services and TFS 2017.2 and later versions. All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../quickstart/get-started-stakeholder.md), however, don’t have access to Delivery Plans.)  
@@ -66,17 +63,17 @@ In order to add and configure a plan, you must have the following in place:
 
 Once you have [installed Delivery Plans](#install-plans), the Plans page appears under the Work hub.
 
-<img src="_img/review-team-plans-open-plans.png" alt="Plans menu item" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/review-team-plans-open-plans.png" alt="Plans menu item" style="border: 2px solid #C3C3C3;" /> 
 
 0. To add a plan, click New Plan from the Plans page. 
 
-	<img src="_img/review-team-plans-no-plans-defined.png" alt="Create new plan" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/review-team-plans-no-plans-defined.png" alt="Create new plan" style="border: 2px solid #C3C3C3;" /> 
 
 	All users, except users [assigned Stakeholder access](../../security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Permissions to create and edit plans](#plan-permissions).  
 
 0. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
 
-	<img src="_img/review-team-plans-new-plan.png" alt="Plans wizard" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/review-team-plans-new-plan.png" alt="Plans wizard" style="border: 2px solid #C3C3C3;" />
 
 	When defining a plan, note the following:  
 	- Use the name and description field to clearly identify your plan within the project 
@@ -100,15 +97,15 @@ Once you've defined a plan, you can further customize it.
 
 	Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
 
-	<img src="_img/review-team-plans-set-field-criteria.png" alt="Settings dialog, Fields page" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/review-team-plans-set-field-criteria.png" alt="Settings dialog, Fields page" style="border: 2px solid #C3C3C3;" />
 
 3. To set a marker, open the Markers page, specify a date and select a color. 	
 
-	<img src="_img/review-team-plans-set-markers.png" alt="Settings dialog, Fields page" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/review-team-plans-set-markers.png" alt="Settings dialog, Fields page" style="border: 2px solid #C3C3C3;" />
 
 	Markers appear on the plan as shown: 
 
-	<img src="_img/review-team-plans-show-markers.png" alt="Plans, Markers appear on calendar slide" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/review-team-plans-show-markers.png" alt="Plans, Markers appear on calendar slide" style="border: 2px solid #C3C3C3;" />
 
 
 ## View the list of plans, open a plan  
@@ -119,13 +116,13 @@ Use the favorite's star to favorite a plan so that you can quickly return to tha
 
 To open a plan, simply click the plan name.  
 
-<img src="_img/review-team-plans-view-plans.png" alt="Plan Favorites" style="border: 1px solid #CCCCCC;" />
+<img src="_img/review-team-plans-view-plans.png" alt="Plan Favorites" style="border: 2px solid #C3C3C3;" />
 
 ## Interactive elements of plans, change the plan view  
  
 Each team's backlog specified in a Delivery Plan appears as a row within the plan view. When collapsed, a roll-up of the backlog items shows. When expanded, a card for each backlog item appears, organized by their assigned iteration. 
 
-<img src="_img/plans_view2.png" alt="Interactive plan elements" style="border: 1px solid #CCCCCC;" />
+<img src="_img/plans_view2.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
 
 You can interact with the plan in the following ways: 
 - Scale the size of the cards (enter **+** or **-** to also scale) 
@@ -144,7 +141,7 @@ For a list of all keyboard shortcuts, see [Plan view keyboard shortcuts](#plans-
 
 In the following example, Team 1 features expanded, two items are scheduled for delivery in Sprint 50. 
 
-<img src="_img/review-tp-show-team-1.png" alt="Team rows in plans" style="border: 1px solid #CCCCCC;" />
+<img src="_img/review-tp-show-team-1.png" alt="Team rows in plans" style="border: 2px solid #C3C3C3;" />
 
 You can also quickly see that:  
 * Team 1 is currently working on Sprint 50 deliverables
@@ -160,14 +157,14 @@ To gain a summary view of work that is schedule, collapse all teams. You can the
 
 For example, here you can see the count of Features for Team 1 for the next 3 sprints. You can collapse/expand team rows by clicking the team name or the sprint name.
 
-<img src="_img/plans_view4.png" alt="Collapse click targets" style="border: 1px solid #CCCCCC;" />
+<img src="_img/plans_view4.png" alt="Collapse click targets" style="border: 2px solid #C3C3C3;" />
 
  
 ### Minimize the fields displayed on cards  
 
 To quickly change the cards to only show their Title, enter the keyboard shortcut 't'. This will hide all other fields, as shown in the following image, the Assigned to field no longer appears. To persist this view, edit the [plan's settings for card fields](#card-settings).
 
-<img src="_img/plans_view5.png" alt="Cards showing the Title only" style="border: 1px solid #CCCCCC;" />
+<img src="_img/plans_view5.png" alt="Cards showing the Title only" style="border: 2px solid #C3C3C3;" />
 
 ### Update the iteration for a backlog item 
 
@@ -197,7 +194,7 @@ Plans are an object within a team project. You manage plan permissions for each 
  
 0. To grant permissions to a group or user to manage or edit a specific plan, click the  ![actions icon](../_img/icons/actions-icon.png) actions icon to open the Security dialog for the plan.  
 
-<img src="_img/review-tp-open-security-dialog.png" alt="Open the Permissions dialog for a plan" style="border: 1px solid #CCCCCC;" />    
+<img src="_img/review-tp-open-security-dialog.png" alt="Open the Permissions dialog for a plan" style="border: 2px solid #C3C3C3;" />    
 
 0. Add a user or group who you want to grant permissions to or restrict access. By default, non-administrators can't delete or edit a plan that you create. 
 
@@ -205,14 +202,14 @@ Plans are an object within a team project. You manage plan permissions for each 
 
 	For example, here we grant permission to Raisa to edit the plan.
 
-	<img src="_img/review-tp-security-dialog.png" alt="Permissions dialog for a query" style="border: 1px solid #CCCCCC;" />   
+	<img src="_img/review-tp-security-dialog.png" alt="Permissions dialog for a query" style="border: 2px solid #C3C3C3;" />   
 
 <a id="plans-keyboard-shortcuts">  </a>
 ### Plans view, keyboard shortcuts  
  
 From a Delivery Plan page, enter **?** to open the keyboard shortcuts pane. For additional shortcuts, see [hotkeys and keyboard shortcuts](../../reference/keyboard-shortcuts.md).
 
-<img src="_img/plans-keyboard-shortcuts.png" alt="Plans page, keyboard shortcuts" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/plans-keyboard-shortcuts.png" alt="Plans page, keyboard shortcuts" style="border: 2px solid #C3C3C3;" /> 
 
 
 <a id="install-plans">  </a>

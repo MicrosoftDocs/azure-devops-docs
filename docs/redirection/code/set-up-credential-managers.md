@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/git/set-up-credential-managers
+redirect_url: /vsts/git/set-up-credential-managers
 ---

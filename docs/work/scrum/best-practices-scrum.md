@@ -15,7 +15,6 @@ ms.date: 08/02/2017
  
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
-
 <a id="sprint-planning-meeting">  </a>
 ## Sprint planning meetings 
 
@@ -23,7 +22,7 @@ Much of sprint planning involves a negotiation between the product owner and the
 
 In the first part of the meeting, your product owner meets with your team to discuss the user stories that might be included in the sprint. Your product owner will share information and answer any questions that your team has about those stories. This conversation might reveal details such as data sources, user interface layout, response time expectations, and considerations for security and usability. Your team should capture these details within the backlog items form. During this part of the meeting, your team learns what it must build.
 
-As you plan your sprints, you may discover additional requirements that you should capture and add to your backlog. Before your sprint planning meeting, you'll want to [refine your backlog](best-practices-product-backlog.md#groom) to make sure that it is well defined and in priority order. 
+As you plan your sprints, you may discover additional requirements that you should capture and add to your backlog. Before your sprint planning meeting, you'll want to [refine your backlog](../concepts/best-practices-product-backlog.md#groom) to make sure that it is well defined and in priority order. 
 
 Also, setting a sprint goal as part of your planning efforts can help the team stay focused on what's most important for each sprint. 
 
@@ -42,26 +41,27 @@ You can learn more about conducting your sprint planning meeting from these reso
 Scrum teams use sprint goals to focus their sprint activities. They often set this goal during their sprint planning meeting. The goal summarizes what the team wants to accomplish by the end of the sprint. By explicitly stating the goal, you create shared understanding within the team of the core objective. The sprint goal can also help guide the team when conflicts arise around priorities. 
 <a id="tips-from-trenches" />
 
->## Tips from the trenches: Define sprint goals 
->The sprint goal defines what the product owner and the team consider as the ultimate target to accomplish that sprint. 
->It's not a random selection of backlog items that don't really have a relationship, but a short piece of text that captures 
->what the team should try to accomplish. Normally the product owner comes up with the sprint goal before selecting a 
->number of items for the next sprint. The items for that sprint should all fit that common goal.
->
->Sprint goals can be feature oriented, but might also have a large process component such as deployment automation or test automation. 
->For example:
-> - This sprint we will focus on a very simple user story and we will use it to prove that the proposed solution will work.  
-> - This sprint will revolve around implementing the security features that will properly secure the administration section of the website.  
-> - This sprint will be about integrating the most important payment gateways so that we can start collecting money.  
-> 
-> Setting the sprint goals helps the team to stay focused. 
-> It will make it easier to define priority of tasks within a sprint and it will probably 
+## Tips from the trenches: Define sprint goals 
+The sprint goal defines what the product owner and the team consider as the ultimate target to accomplish that sprint. 
+It's not a random selection of backlog items that don't really have a relationship, but a short piece of text that captures 
+what the team should try to accomplish. Normally the product owner comes up with the sprint goal before selecting a 
+number of items for the next sprint. The items for that sprint should all fit that common goal.
+
+Sprint goals can be feature oriented, but might also have a large process component such as deployment automation or test automation. 
+
+For example:
+- This sprint we will focus on a very simple user story and we will use it to prove that the proposed solution will work.  
+- This sprint will revolve around implementing the security features that will properly secure the administration section of the website.  
+- This sprint will be about integrating the most important payment gateways so that we can start collecting money.  
+
+Setting the sprint goals helps the team to stay focused. 
+It will make it easier to define priority of tasks within a sprint and it will probably 
 help limit the number of stakeholders and end-users that are involved. 
-> 
-> During the sprint review the most important question you should ask yourself is whether you managed to achieve the sprint goal. 
-> How many stories you actually completed comes second. If the goal is accomplished, the sprint succeeds, even if not all stories were finished.
-> 
-> Contributed by [Jesse Houwing](http://blog.jessehouwing.nl/), Visual Studio devops Ranger and a senior consultant working for Avanade Netherlands.
+
+During the sprint review the most important question you should ask yourself is whether you managed to achieve the sprint goal. 
+How many stories you actually completed comes second. If the goal is accomplished, the sprint succeeds, even if not all stories were finished.
+
+*Contributed by [Jesse Houwing](http://blog.jessehouwing.nl/), Visual Studio devops Ranger and a senior consultant working for Avanade Netherlands.*
 
 ## Tips for successful triage meetings  
 Fixing bugs represents a trade-off with regards to other work. Use your triage meeting to determine how important fixing each bug is against other priorities related to meeting the project scope, budget, and schedule.  
@@ -73,7 +73,7 @@ Fixing bugs represents a trade-off with regards to other work. Use your triage m
 
 
 
-### Manage your technical debt 
+## Manage your technical debt 
 
 Consider managing your bug bar and technical debt as part of your team's overall set of continuous improvement activities. You may find these additional resources of interest: 
 
@@ -82,20 +82,19 @@ Consider managing your bug bar and technical debt as part of your team's overall
 
 
 
->###Tips from the trenches: [Agile Bug Management: Not an Oxymoron](https://visualstudiomagazine.com/articles/2012/10/12/agile-bug-management.aspx)  
->*by Gregg Boer, Principal Program Manager, Visual Studio Cloud Services at Microsoft*  
->#### Every Sprint, Address any Known Bug Debt 
->Every sprint, the team looks at any bugs remaining in the bug backlog and allocates capacity to get that known set of bugs down to zero, or near-zero. Whether this is one day, one week or the entire sprint, they fix the bugs first. Bugs found later, within the sprint, are not considered part of that initial commitment. Unless they're very high priority, they're put on the bug backlog for the next sprint.
->
->Many teams work in a commitment-based organization, where management places a high value on a team's ability to meet their commitments. Doing capacity planning against a known set of bugs makes sprint planning more deterministic, increasing their chance to meet commitments. Any new bugs discovered during the sprint are not a part of the initial commitment, and will be tackled next sprint.>
- >
->#### Managing Bug Debt across an Enterprise 
->An organization transitioning to a culture where debt is continually eliminated likely is dealing with the following question: How do you get teams to reduce their bug count without telling them exactly what to do? Leadership wants the team to change, yet gives the team autonomy to determine how they change. One option is to use a bug cap.
->
->For example, consider a bug cap of three bugs per engineer. This means a team of 10 people should not have more than 30 bugs in its bug backlog. If the team is over its cap, it's expected to stop work on new features and get under the bug cap. A team is expected to be under its cap at all times, but the team decides how it wants to do that. The bug cap ensures that bug debt is never carried for too long, and the team can learn from the mistakes that causes the bugs to be injected in the first place. 
->
->Remember that the bug cap represents the bugs in the bug backlog. It does not include bugs found and fixed within the sprint in which a feature is developed. Those bugs are considered undone work, not debt. 
+##Tips from the trenches: [Agile Bug Management: Not an Oxymoron](https://visualstudiomagazine.com/articles/2012/10/12/agile-bug-management.aspx)  
+*by Gregg Boer, Principal Program Manager, Visual Studio Cloud Services at Microsoft*  
+### Every Sprint, Address any Known Bug Debt 
+Every sprint, the team looks at any bugs remaining in the bug backlog and allocates capacity to get that known set of bugs down to zero, or near-zero. Whether this is one day, one week or the entire sprint, they fix the bugs first. Bugs found later, within the sprint, are not considered part of that initial commitment. Unless they're very high priority, they're put on the bug backlog for the next sprint.
 
+Many teams work in a commitment-based organization, where management places a high value on a team's ability to meet their commitments. Doing capacity planning against a known set of bugs makes sprint planning more deterministic, increasing their chance to meet commitments. Any new bugs discovered during the sprint are not a part of the initial commitment, and will be tackled next sprint.>
+
+### Managing Bug Debt across an Enterprise 
+An organization transitioning to a culture where debt is continually eliminated likely is dealing with the following question: How do you get teams to reduce their bug count without telling them exactly what to do? Leadership wants the team to change, yet gives the team autonomy to determine how they change. One option is to use a bug cap.
+
+For example, consider a bug cap of three bugs per engineer. This means a team of 10 people should not have more than 30 bugs in its bug backlog. If the team is over its cap, it's expected to stop work on new features and get under the bug cap. A team is expected to be under its cap at all times, but the team decides how it wants to do that. The bug cap ensures that bug debt is never carried for too long, and the team can learn from the mistakes that causes the bugs to be injected in the first place. 
+
+Remember that the bug cap represents the bugs in the bug backlog. It does not include bugs found and fixed within the sprint in which a feature is developed. Those bugs are considered undone work, not debt. 
 
 While bugs contribute to technical debt, they may not represent all debt. 
 
@@ -105,7 +104,7 @@ You need to track work to address technical debt as PBIs, user stories, or bugs.
 
 
 <a id="scrum-master-role">  </a>
-### Role of the Scrum Master  
+## Role of the Scrum Master  
 
 Scrum Masters help build and maintain healthy teams by employing Scrum processes. They guide, coach, teach, and assist Scrum teams in the proper employment of Scrum methods. Scrum Masters also act as change agents to help teams overcome impediments and to drive the team toward significant productivity increases.   
 
@@ -128,7 +127,7 @@ Good Scrum Masters possess or develop excellent communication, negotiation, and 
 Just as it's cheaper to fix a bug soon after it's discovered, it's also easier and less disruptive to fix a team issue when it's small and manageable before it grows into a major issue.  
 
 <a id="daily-scrum-meetings">  </a>
-### Daily Scrum meetings
+## Daily Scrum meetings
 Daily Scrum meetings help keep a team focused on what it needs to do the next day to maximize the team's ability to meet its sprint commitments. Your Scrum Master should enforce the structure of the meeting and ensure that it starts on time and finishes in 15 minutes or less.  
 
 Three aspects of successful Scrum meetings are:
@@ -150,7 +149,6 @@ This response conveys what was accomplished, what will be accomplished, and that
 Contrast with this next example:  
 
 >*"Yesterday, I worked on the class, and it works. Today, I will work on the interface. No blocking issues."*  
-
 
 Here, the team member doesn't provide enough detail about what class they worked on nor which interface components they'll complete. In fact, the word accomplished never came up.
 

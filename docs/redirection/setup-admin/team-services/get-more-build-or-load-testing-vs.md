@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/setup-admin/team-services/buy-more-build-vs 
+redirect_url: /vsts/billing/buy-more-build-vs 
 ---

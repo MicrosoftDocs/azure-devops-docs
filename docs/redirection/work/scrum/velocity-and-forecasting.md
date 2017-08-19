@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/report/guidance/team-velocity
+redirect_url: /vsts/report/guidance/team-velocity
 ---

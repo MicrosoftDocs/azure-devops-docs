@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/vsts-tfs-overview
+redirect_url: /vsts/vsts-tfs-overview
 ---

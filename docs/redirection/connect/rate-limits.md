@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/reference/rate-limits
+redirect_url: /vsts/reference/rate-limits
 ---

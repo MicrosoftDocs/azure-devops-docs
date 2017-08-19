@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/work/scale/agile-culture
+redirect_url: /vsts/work/scale/agile-culture
 ---

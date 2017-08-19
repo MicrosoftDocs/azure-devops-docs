@@ -52,7 +52,7 @@ In this example, a Velocity of 15 is used. The forecast tool shows between two a
 - Sprint 5: 19 Effort points, 3 items can be started 
 
 
-<img src="_img/vel-forecast-forecast-ts.png" alt="Web portal, Backlog, Forecast On" style="border: 1px solid #CCCCCC;" />
+<img src="_img/vel-forecast-forecast-ts.png" alt="Web portal, Backlog, Forecast On" style="border: 2px solid #C3C3C3;" />
 
 ### TFS 2013 - TFS 2017.1 
 
@@ -67,7 +67,7 @@ In summary:
 - Sprint 5: 16 Effort points, which reflects 4 unused velocity points 
 - Sprint 6: 19 Effort points  
 
-<img src="_img/ALM_VF_Forecast_1.png" alt="Web portal, Enter a velocity to show forecast lines" style="border: 1px solid #CCCCCC;" />
+<img src="_img/ALM_VF_Forecast_1.png" alt="Web portal, Enter a velocity to show forecast lines" style="border: 2px solid #C3C3C3;" />
 
 ## Tips for using the forecast tool
 
