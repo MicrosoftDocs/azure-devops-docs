@@ -1,5 +1,9 @@
+- name: "Building Extensions"
+  href: index.md
 - name: Overview
-  href: ./index.md
+  items:
+    - name: Extensions overview
+      href: ./overview.md
 - name: Quickstarts
   items:
   - name: Write your first extension

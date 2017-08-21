@@ -1,59 +1,94 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Developing extensions for Visual Studio Team Services (VSTS) and Team Foundation Server
-description: Overview of creating extensions for Visual Studio Team Services (VSTS)
-ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
+title: An index for building extensions for Visual Studio Team Services
+description: Index of building extensions with Visual Studio Team Services
+ms.assetid: 153aa519-6233-4292-8eac-44de15f2d3dd
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/23/2016
 ---
 
-# Creating custom extensions for Visual Studio Team Services (VSTS)
+# Building Visual Studio Team Services Extensions
 
->[!NOTE]
-> This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, visit the [Marketplace documentation](../marketplace/index.md). For information on 
+You can build custom applications or services that integrate with your Visual Studio Team Services (VSTS) account by using the [REST APIs](#rest-apis) to make direct HTTP calls, or utilize our [.NET Client Libraries](#.net-client-libraries).
+
+Along with interacting with VSTS in your application, you can also integrate with popular third-party services such as Slack or Jenkins.
+
+<a name ="customApps"/>
+
+## 5-minute Quickstarts 
+Check out the quick starts to get you started:
+* [Write your first extension](get-started/node.md)
+
+## Concepts
+* [Extension points](reference/targets/overview.md)
+* [Contribution model](develop/contributions-overview.md)
+
+## Samples
+* [Sample extensions](develop/samples-overview.md)
+
+## How-to
+* Develop
+    * [Add a build task](develop/add-build-task.md)
+    * [Add a dashboard widget](develop/add-dashboard-widget.md)
+    * [Add a new service endpoint](develop/service-endpoints.md)
+    * [Add a hub](develop/add-hub.md)
+    * [Add a menu action](develop/add-action.md)
+    * [Add backlog tabs](develop/add-backlog-tabs.md)
+    * [Add backlog panels](develop/add-backlog-panel.md)
+    * [Add a service hook](develop/add-service-hook.md)
+    * [Add a chart](develop/add-chart.md)
+    * [Store data and settings](develop/data-storage.md)
+    * [Extend the work item form](develop/add-workitem-extension.md)
+    * [Add a custom control to the work item form](develop/custom-control.md)
+    * [Configure work item form extensions in TFS](develop/configure-workitemform-extensions.md)
+    * [Call a REST API](develop/call-rest-api.md)
+    * Use a platform UI control
+        * [Configure](develop/ui-controls/configure.md)
+        * [Use grid](develop/ui-controls/grido.md)
+        * [Use menubar](develop/ui-controls/menubaro.md)
+        * [Use treeview](develop/ui-controls/treeviewo.md)
+        * [Use combo](develop/ui-controls/comboo.md)
+        * [Use modal dialog](develop/ui-controls/modaldialogo.md)
+        * [Use splitter](develop/ui-controls/splittero.md)
+        * [Use wait control](develop/ui-controls/waitcontrolo.md)
+        * [Use pivot filter](develop/ui-controls/pivotfiltero.md)
+* Package and publish
+    * [Package and publish extensions](publish/overview.md)
+    * [Package and publish integrations](publish/integration.md)
+    * [Make your listing public](publish/publicize.md)
+    * [Publish via command line](publish/command-line.md)
+* Test and debug
+    * [Debug a web extension](test/debug-in-browser.md)
+    * [Menu group IDs](test/discover-menu-group-ids.md)
+* Reporting
+    * [Extension reporting](extension-report.md)
+    * [Extension statistics PowerBI content pack](extension-statistics-powerbi-contentpack.md)
+
+## Reference
+* Development
+    * [Manifest reference](develop/manifest.md)
+    * [Build task reference](develop/build-task-schema.md)
+    * [Endpoint authentication schemes](develop/auth-schemes.md)
+    * [Content hosting](develop/static-content.md)
+    * [Modal dialog](develop/using-host-dialog.md)
+    * [Host page navigation](develop/host-navigation.md)
+    * [Basic styles for widgets](develop/styles-from-widget-sdk.md)
+    * [Auth and security](develop/auth.md)
+    * [Deploy web content to Azure](publish/publish-azure.md)
+    * UI controls
+        * [Combo](reference/client/controls/combo.md)
+        * [Grid](reference/client/controls/grid.md)
+        * [TreeView](reference/client/controls/tree.md)
+        * [MenuBar](reference/client/controls/menubar.md)
+        * [Modal Dialog](reference/client/controls/modaldialog.md)
+        * [Splitter](reference/client/controls/splitter.md)
+        * [WaitControl](reference/client/controls/waitcontrol.md)
+* TypeScript APIs
+    * [Core client SDK](./reference/client/core-sdk.md)
+    * [Client services](./reference/client/client-services.md)
+    * [REST clients](./reference/client/rest-clients.md)
 
 
-## What are extensions?
-
-Extensions are simple add-ons that can be used to customize and extend your DevOps experience with Team Services. 
-They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.
-They utilize our [RESTful API Library](https://visualstudio.com/integrate/api/overview.md) in order to easily interact with Team Services and applications/services.
-The [Visual Studio Marketplace](https://marketplace.visualstudio.com/VSTS) is where extensions are published, 
-where they can be kept privately for you and your team or shared with the millions of developers currently using Team Services. 
-
-## What makes up an extension?
-<div align="center" style="padding-top:15px">
-<img src="./_img/extension-components.png" style="padding-bottom:20px">
-</div>
-
-- A [JSON manifest file](./develop/manifest.md) contains basic info about the extension.
-- Discovery assets - the markdown and images that make up your extension's overview and aesthetics in the marketplace. 
-- Static files that contain the logic of your extension, including HTML, JS, and CSS files. Static files are only applicable to contribution-based extensions.
-
-All of these are bundled up to make a Team Extensions Service Package (.vsix file) that is published to the marketplace. From the marketplace,
-extensions can be installed directly by Team Services users.
-
-
-## What can you do with extensions?
-
-There are dozens of places where you can add to the Team Services user interface, and we're adding more every sprint. Learn about all of the places where you can add a hub in the [contributions reference](./reference/targets/overview.md).
-
-- [Provide new build and release tasks](./develop/add-build-task.md) that teams can use in their builds.
-- Use [dashboard widgets](./develop/add-dashboard-widget.md) to get custom views within Team Services. 
-- Extend the [work item form](./develop/add-workitem-extension.md) with new tabs, sections, and actions.
-- Create [your own hub](./develop/add-hub.md) to embed new capabilities within our Agile, code, build, and test experiences. 
-- Develop [actions](./develop/add-action.md) that can be run on hubs, whether they're ours or ones you've created. 
-
-
-## Next Steps
-
-### Quickstarts
-
-* [Write your first extension (Add a hub)](./get-started/node.md)
-
-### Reference
-
-* [Extension manifest reference](./develop/manifest.md)
 
