@@ -248,7 +248,7 @@ Your directory administrator controls who can
 [join the directory](https://msdn.microsoft.com/library/azure/hh967632.aspx) 
 and get access. Otherwise, the Team Services account owner 
 is solely responsible for managing access. Learn more about 
-[managing work access](../accounts/manage-organization-access-for-your-account-vs.md) 
+[managing work access](../accounts/access-with-azure-ad.md) 
 for your account.
 
 <a name="CannotLinkVSOAccount"></a>

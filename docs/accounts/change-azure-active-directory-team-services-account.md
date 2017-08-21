@@ -224,7 +224,7 @@ that you want to use. This typically happens with Office 365 Azure AD.
 *	Your Team Services account isn't linked to the Azure subscription 
 associated with your directory.
 
-Learn [how to resolve why you can't see your directory](manage-organization-access-for-your-account-vs.md#why-not-my-directory).
+Learn [how to resolve why you can't see your directory](faq-azure-access.md#why-not-my-directory).
 
 <a name="find-owner"></a>
 

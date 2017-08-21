@@ -153,7 +153,7 @@ users must be directory members to get access.
 If you're an Azure AD administrator, 
 you can add users to the directory. If you're not, 
 work with the directory administrator to add them. 
-Learn [how to control account access with Azure AD](manage-organization-access-for-your-account-vs.md).
+Learn [how to control account access with Azure AD](access-with-azure-ad.md).
 
 <a name="feature-access"></a>
 

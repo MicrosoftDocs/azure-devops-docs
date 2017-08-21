@@ -222,7 +222,7 @@ may encounter the following known issues:
   "No accounts found" message in this situation. To resolve this, you can
   configure your Visual Studio Team Services account to be backed by an
   Azure Active Directory (AAD) instance. For information on how to do this, see
-  [Team Services - Access with Azure Active Directory](../../accounts/manage-organization-access-for-your-account-vs.md).
+  [Team Services - Access with Azure Active Directory](../../accounts/access-with-azure-ad.md).
 
 ## Q&A
 

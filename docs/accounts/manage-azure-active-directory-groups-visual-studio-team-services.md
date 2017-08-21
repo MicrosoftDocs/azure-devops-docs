@@ -18,7 +18,7 @@ critical resources and key business assets in Team Services?
 If you already use Microsoft services like Office 365 or 
 [Azure Active Directory (Azure AD)](https://www.microsoft.com/en-us/server-cloud/products/azure-active-directory/), 
 you can use the same identities with your Team Services account. 
-[Azure AD works with your Team Services account](manage-organization-access-for-your-account-vs.md) 
+[Azure AD works with your Team Services account](access-with-azure-ad.md) 
 to control access and authenticate users through your organization's directory. 
 
 When you organize directory members with 
@@ -36,7 +36,7 @@ Not familiar with Azure AD,
 but want to check it out? Learn more about 
 [Azure AD benefits](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/)
 and differences in how you 
-[control Team Services account access with Microsoft accounts or with Azure AD](manage-organization-access-for-your-account-vs.md).
+[control Team Services account access with Microsoft accounts or with Azure AD](access-with-azure-ad.md).
 
 ## Before you start
 
@@ -96,7 +96,7 @@ for sharing work items, code, resources,
 and other assets with your team and partners. 
 
 Learn more about the differences in how you 
-[control access with Microsoft accounts or with Azure AD, and how to switch](manage-organization-access-for-your-account-vs.md)
+[control access with Microsoft accounts or with Azure AD, and how to switch](access-with-azure-ad.md)
 when you're ready.
 
 ####Q: Why can't I assign Team Services permissions directly to an Azure AD group?

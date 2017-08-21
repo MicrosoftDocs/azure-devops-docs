@@ -43,7 +43,6 @@ The account owner and other members of the Project Collection Administrator grou
  <li style="margin-bottom:2px">[Connect to your account](connect-to-visual-studio-team-services.md)</li>
  <li style="margin-bottom:2px">[Change account owner](change-account-ownership-vs.md)</li>
  <li style="margin-bottom:2px">[Rename account](rename-visual-studio-team-services-account.md)</li>
- <li style="margin-bottom:2px">[Delete or recover account](delete-or-recover-your-account-vs.md)</li>
  <li style="margin-bottom:2px">[Authenticate app access](use-personal-access-tokens-to-authenticate.md)</li>
  <li style="margin-bottom:2px">[Change app access policies](change-application-access-policies-vs.md)</li>
 </ul>
@@ -52,7 +51,7 @@ The account owner and other members of the Project Collection Administrator grou
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Azure Active Directory</p>
 <ul style="padding-left:20px">
- <li style="margin-bottom:2px">[Access with Azure AD](manage-organization-access-for-your-account-vs.md)</li>
+ <li style="margin-bottom:2px">[Access with Azure AD](access-with-azure-ad.md)</li>
  <li style="margin-bottom:2px">[Access with Azure AD groups](manage-azure-active-directory-groups-visual-studio-team-services.md)</li>
  <li style="margin-bottom:2px">[Change Azure AD](change-azure-active-directory-team-services-account.md)</li>
 </ul>
@@ -369,7 +368,7 @@ so that you can control access the same way that you do
 with Microsoft services like Office 365 and Microsoft Azure. 
 If your organization uses a directory (tenant) managed by Azure AD, 
 your Team Services account can also 
-[use your directory to authenticate access](manage-organization-access-for-your-account-vs.md). 
+[use your directory to authenticate access](access-with-azure-ad.md). 
 Or [change your Azure AD](change-azure-active-directory-team-services-account.md), 
 if you're already connected to an existing directory.
 

@@ -287,7 +287,7 @@ through Azure Active Directory (Azure AD). All users must be directory members t
 If you're a directory administrator, you can 
 [add users to the directory](https://msdn.microsoft.com/library/azure/hh967632.aspx). 
 If you're not, work with your directory administrator to add users. 
-Learn more about [controlling access with a directory](manage-organization-access-for-your-account-vs.md).
+Learn more about [controlling access with a directory](access-with-azure-ad.md).
 
 <a name="ConnectedDirectory"></a>
 
@@ -301,7 +301,7 @@ A:  Yes, but this removes their access
 to all Team Services accounts and other 
 assets associated with that directory. 
 You must have Azure AD global administrator permissions to  
-[delete a user from your Azure AD](manage-organization-access-for-your-account-vs.md#delete-directory-members).
+[delete a user from your Azure AD](delete-users-from-services-aad.md).
 
 <a name="ChooseOrgAcctMSAcct"></a>
 

@@ -83,7 +83,7 @@
     - name: Access with Azure AD
       items:
       - name: Add Team Services users to your Azure AD
-        href: add-ts-users-to-aad.md
+        href: add-users-to-aad.md
       - name: Connect Team Services account to Azure AD
         href: connect-account-to-aad.md
       - name: Disconnect Team Services account from Azure AD
@@ -123,8 +123,8 @@
     href: ../extend/index.md
 - name: Troubleshooting
   items:
-  - name: "[Foo Q&A]"
-  - name: "[Bar Q&A]"
+  - name: Access with Azure Active Directory
+    href: faq-azure-access.md
 - name: Resources
   items:
   - name: "Billing and extensions"

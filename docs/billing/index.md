@@ -50,7 +50,7 @@ with Microsoft services such as Office 365 and Microsoft Azure.
 If your organization uses a directory (tenant) managed by Azure AD, 
 your Team Services account can also:
 
-* [use your directory to authenticate access](../accounts/manage-organization-access-for-your-account-vs.md)
+* [use your directory to authenticate access](../accounts/access-with-azure-ad.md)
 
 * [change your Azure AD](../accounts/change-azure-active-directory-team-services-account.md)
 

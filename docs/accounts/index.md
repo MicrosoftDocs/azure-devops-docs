@@ -47,7 +47,7 @@ Use this index to setup and manage your account and configure key settings to su
 
 ## Concepts 
 
-* [Access with Azure AD](manage-organization-access-for-your-account-vs.md)
+* [Access with Azure AD](access-with-azure-ad.md)
 
 * [Access with Azure AD groups](manage-azure-active-directory-groups-visual-studio-team-services.md)
  

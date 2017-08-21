@@ -1,6 +1,6 @@
 ---
-title: Delete or recover Team Services account | Visual Studio Team Services
-description: How to delete or recover account in Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
+title: Restore your Visual Studio Team Services account
+description: Restore your Visual Studio Team Services account
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
@@ -9,19 +9,10 @@ ms.author: estfan
 ms.date: 08/04/2016
 ---
 
-#   Delete or recover Visual Studio Team Services account
+# Restore your Visual Studio Team Services account
 
 **Team Services**
 
-
-PLACEHOLDER FILE
-
-
-
-
-
-<a name="undelete"></a>
-##  Restore your Visual Studio Team Services account
 
 Your account will be disabled but available for 90 days after you delete it. 
 If you change your mind during this time, you can recover your account. 
@@ -56,26 +47,7 @@ permissions to restore your Team Services account.
 
 	[Need help?](#get-support)
 
-##  Q&A
 
-<!-- BEGINSECTION class="md-qanda" -->
 
-<a name="find-owner"></a>
+[Troubleshooting](faq-delete-restore-vsts-account.md)
 
-[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
-
-[!INCLUDE [why-no-owned-accounts](../_shared/qa-why-no-owned-accounts.md)]
-
-<a name="ChooseOrgAcctMSAcct"></a>
-
-[!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
-
-[!INCLUDE [choose-msa-azuread-account2](../_shared/qa-choose-msa-azuread-account2.md)]
-
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
-
-<a name="get-support"></a>
-
-[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
-
-<!-- ENDSECTION --> 

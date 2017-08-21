@@ -1,63 +1,19 @@
 ---
-title: Team Services - Access with Azure AD | Visual Studio Team Services
-description: Azure Active Directory (Azure AD) - Control access to Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
-ms.topic: get-started-article
+title: Troubleshooting access with Azure Active Directory (Azure AD)
+description: Troubleshooting access with Azure Active Directory (Azure AD)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
-ms.assetid: aacee943-d278-46f4-bc13-c58f30f1282a
+ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
 ms.manager: douge
 ms.author: estfan
 ms.date: 1/19/2017
 ---
 
-#	Team Services: Access with Azure Active Directory (Azure AD)
+#	Troubleshooting access with Azure Active Directory (Azure AD)
 
 **Team Services**
 
-
-<a name="SetUpCurrentUsers"></a>
-##  Add Team Services account users to your directory
-
-If your users do not already exist in Azure AD:
-
-0.  Sign in to the [Azure classic portal](https://manage.windowsazure.com/) 
-or the [Azure portal](https://portal.azure.com) 
-as global administrator for your organization's directory. 
-See these topics for how to:
-
-	*	[Add users in the Azure classic portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-create-users).
-	*	[Add users in the Azure portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-create-azure-portal).
-
-	[Why am I asked to choose between a "work or school account" and a "personal account"?](#ChooseOrgAcctMSAcct)
-
-0.	Add the sign-in addresses for all your Team Services account users to your directory, 
-including yourself as the Team Services account owner, if not in the directory already. 
-
-  What does an example directory look like?
-  
-  Suppose Jamal is an Azure AD global administrator at Fabrikam and is in the Fabrikam directory with his 
-  work account (jamalhartnett@fabrikam.com). He's also the Team Services account owner and a user with his Microsoft 
-  account (jamalhartnett@live.com). He wants to keep his work history, so he adds his Microsoft account to the 
-  Fabrikam directory.  If Jamal doesn't need his work history, he can use his work account with Team Services. But 
-  free up the access used by his Microsoft account, he must change the Team Services account owner to his work account. 
-
-  Nicole, another user, has a work account (nicolezamora@fabrikam.com) that shares the same sign-in address with her 
-  Microsoft account, so she will continue to work seamlessly with the same sign-in address.
-
-  Here's what the Fabrikam directory might look like in the Azure classic portal after Jamal adds users from his 
-  Team Services account.
-    
-  ![Directory after adding users](_img/manage-work-access/azureaddmembers3.png)
-
-  [More questions about setting up users?](#faq-users)
-
-0.  After adding your account users to your directory, 
-connect your Team Services account to your directory. 
-
-
-## Q&A
-
-### General
+## General
 
 <a name="o365aad"></a>
 #### Q: Can I use Office 365 Azure AD with Team Services?
@@ -92,7 +48,7 @@ Learn how to [associate your Azure subscription to your Office 365 Azure AD](htt
 
 
 <a name="faq-users"></a>
-### Add users to directory
+## Add users to directory
 
 
 ####Q:  Can I switch current users from Microsoft accounts to work accounts in Team Services?
@@ -144,7 +100,7 @@ Allow or deny account access for external users added as guests.
 	![Change external guest access](_img/manage-work-access/guest-access.png)
 
 <a name="faq-connect"></a>
-### Connect to directory
+## Connect to directory
 
 <a name="connect-o365-azure-ad"></a>
 ####Q:	Can I connect my Team Services account to an Azure AD created from Office 365?
@@ -292,7 +248,7 @@ you can add a work or school account that's managed by Azure Active Directory to
 Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](../billing/link-msdn-subscription-to-organizational-account-vs.md).
 
 <a name="faq-disconnect"></a>
-### Disconnect from directory
+## Disconnect from directory
 
 ####Q:    Why can't users sign in after my Team Services account is disconnected?
 
