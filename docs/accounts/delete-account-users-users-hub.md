@@ -1,6 +1,6 @@
 ---
-title: Manage users and access user hub Visual Studio Team Services
-description: Add users and assign access levels in user hub Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
+title: Delete users using the user hub for Visual Studio Team Services
+description: Delete users using the user hub for Visual Studio Team Services
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
@@ -37,7 +37,6 @@ learn [how to change paid extension users](../marketplace/get-vsts-extensions.md
 You'll need [Team Services project collection administrator or account owner permissions](#find-owner). 
 
 
-<a name="delete-user"></a>
 ##  Delete users from your Visual Studio Team Services account
 
 0. Sign in to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).
@@ -58,4 +57,9 @@ so you're not charged in your next Azure billing cycle.
 
  > To reduce or cancel these users for the next month, you must make updates before the last day of the current month. 
  > Your bill won't show these change until the next month because paid users are monthly purchases. 
+
+
+## Troubleshooting
+
+[Troubleshooting](faq-add-delete-users.md)
 
