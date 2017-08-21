@@ -82,7 +82,7 @@ but by membership in an access level. To learn more, see [Access levels](access-
 
 See these topics for more information: 
 - [Permissions and groups reference](permissions.md)
-- [Access with Azure Active Directory (Azure AD)](../accounts/add-ts-users-to-aad.md). 
+- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-aad.md). 
 - [Set up groups for use in TFS deployments](../tfs-server/admin/setup-ad-groups.md).
 
 

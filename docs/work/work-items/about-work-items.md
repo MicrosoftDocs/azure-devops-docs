@@ -47,7 +47,7 @@ By default, the system synchronizes system-defined person-name fields with  Azur
 
 You can grant access to a team project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. See these topics for more information: 
 
-- [Access with Azure Active Directory (Azure AD)](../../accounts/add-ts-users-to-aad.md) 
+- [Access with Azure Active Directory (Azure AD)](../../accounts/add-users-to-aad.md) 
 - [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md).
 
 Anyone who has read-write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../../quickstart/get-started-stakeholder.md).  

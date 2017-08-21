@@ -415,7 +415,7 @@ Below we show the admin context for the team project level.
 <p style="padding-bottom:0px;text-align:left;">Required membership: [Project Collection Administrators](../accounts/add-administrator-tfs.md#project-collection)</p>
 <ul style="padding-left:20px">
  <li style="margin-bottom:2px">[Overview: Create team projects](../accounts/create-team-project.md)  &#124; [Rename team project](../accounts/rename-team-project.md) &#124; [Delete team project](../accounts/delete-team-project.md) &#124; [Change process](../work/process/manage-process.md) </li>
- <li style="margin-bottom:2px">[Settings: Set  account preferences](../accounts/account-preferences.md) &#124; [Change application access policies](../accounts/change-application-access-policies-vs.md) &#124; [Change account owner](../accounts/change-account-ownership-vs.md) &#124; [Delete or recover account](../accounts/delete-or-recover-your-account-vs.md) </li>
+ <li style="margin-bottom:2px">[Settings: Set  account preferences](../accounts/account-preferences.md) &#124; [Change application access policies](../accounts/change-application-access-policies-vs.md) &#124; [Change account owner](../accounts/change-account-ownership-vs.md) &#124; [Delete your account](../accounts/delete-your-vsts-account.md) &#124; [Recover your account](../accounts/recover-your-vsts-account.md)</li>
 <li style="margin-bottom:2px">[Security (manage collection-level permissions)](../security/permissions.md#collection-level)</li>
 <li style="margin-bottom:2px">[Process (customize work tracking)](../work/process/manage-process.md) </li>
 <li style="margin-bottom:2px">[Build (manage build policies)](../build-release/concepts/policies/retention.md)</li>

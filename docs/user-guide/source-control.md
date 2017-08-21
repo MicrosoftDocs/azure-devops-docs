@@ -28,7 +28,7 @@ With TFVC, devs have only one version of each file on their dev machines. Histor
  
 ## Try this next  
 
-Start sharing your code or getting your code under source control by [creating an account on Team Services for free](../accounts/sign-up-for-visual-studio-team-services.md).  
+Start sharing your code or getting your code under source control by [creating an account on Team Services for free](../accounts/create-account-with-personal-msa.md).  
 
 > [!div class="nextstepaction"]
 > [Add your code using Git](/vsts/git/gitquickstart?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json)  
