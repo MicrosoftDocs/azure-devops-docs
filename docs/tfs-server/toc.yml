@@ -1,3 +1,5 @@
+- name: "Team Foundation Server"
+  href: ./index.md
 - name: Overview
   items:
   - name: TFS management (TFS Parts)
