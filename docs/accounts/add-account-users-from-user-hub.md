@@ -79,28 +79,8 @@ link to the account page.
 ![Add users by inviting them to the account](_img/user-hub/add-users.jpg)
 
 
-##	Manage users in table view
+[Manage users in table view](manage-users-table-view.md)
 
-The Users view shows key information per user in a table. You can see and modify assigned service extensions and 
-access levels.  You can multi-select users and bulk edit their extensions and access.  You can filter by searching for 
-partial user names, access level, or extension names.  You can see the last access date for each user to help you choose 
-from whom you might remove access or lower access to stay within your license limits.
-
-Go to the User Hub:
-
-![go to the user hub](_img/_shared/users-hub-updated.png)
-
-Choose a user in the table and then choose the **...** in the name column to see the context menu.  The menu supports **Change access level**, **Manage project**, **Manage extension** (if there are extensions), and **Remove from account** (deletes user).
-
-![Account level table of users with key information per user](_img/user-hub/acct-level-users.jpg)
-
-
-##	Detailed view of individual users
-
-Using the detailed user view, you can change the access level, service extensions, and project group memberships that 
-a user has. The same operations from the table's context menu are available in this dialog.
-
-![User details view](_img/user-hub/user-details.jpg)
 
 
 ## Troubleshooting

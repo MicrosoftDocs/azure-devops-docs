@@ -18,18 +18,8 @@
     href: add-account-users-from-user-hub.md
   - name: Try extensions for free
     href: ../billing/try-additional-features-vs.md
-  - name: Add users to your account (TO BE REMOVED)
-    href: add-account-users-assign-access-levels-team-services.md
   - name: "User hub: add basic or VS subscription users to your account"
     href: add-basic-or-vs-subscription-users.md
-  - name: Get more features (extensions)
-    items:
-    - name: Install an extension
-      href: ../marketplace/install-vsts-extension.md
-    - name: Request permission for an extension
-      href: ../marketplace/request-vsts-extension.md
-    - name: Assign paid extensions access
-      href: ../marketplace/assign-paid-extensions.md
 - name: Tutorials
   items:
   - name: Change Azure AD tenant
@@ -62,12 +52,16 @@
       href: /vsts/connect/connect-team-projects?toc=/vsts/setup-admin/toc.json
   - name: Manage account access
     items:
+    - name: "User hub: add users to your account"
+      href: add-account-users-from-user-hub.md
     - name: "User hub: manage users from table view"
       href: manage-users-table-view.md
-    - name: Manage conditional access
-      href: manage-conditional-access.md
     - name: "User hub: delete users from your account"
       href: delete-account-users-users-hub.md
+    - name: Add users to your account
+      href: add-account-users-assign-access-levels-team-services.md
+    - name: Manage conditional access
+      href: manage-conditional-access.md
     - name: Add members to team projects
       href: add-team-members-vs.md
     - name: Delete users from your account
@@ -93,7 +87,7 @@
   - name: Permissions and access
     items:
     - name: Permissions and access
-      href: ../security/permissions-access.md
+      href: ../security/permissions-access.md?toc=/vsts/accounts/toc.json
     - name: Add users to projects
       href: add-users.md
     - name: Add administrators to project collection
@@ -108,9 +102,18 @@
       href: ../quickstart/get-started-stakeholder.md
     - name: Permissions and groups reference
       href: ../security/permissions.md
+  - name: Get more features (extensions)
+    items:
+    - name: Install an extension
+      href: ../marketplace/install-vsts-extension.md
+    - name: Request permission for an extension
+      href: ../marketplace/request-vsts-extension.md
+    - name: Assign paid extensions access
+      href: ../marketplace/assign-paid-extensions.md
 - name: Concepts
   items:
-  - name: TBD FROM TOPIC INTROS
+  - name: Permissions and access
+    href: ../security/permissions-access.md
   - name: Buying build pipelines
     href: ../billing/buy-more-build-vs.md
 - name: Reference
