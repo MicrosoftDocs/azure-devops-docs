@@ -82,19 +82,9 @@ Visual Studio 2017 can automate the creation of a CI/CD pipeline.  The CD toolin
     ![Visual Studio output window](_img/aspnet-core-to-acr/vsoutputs.png)
 7.  A **build** and **release** will then execute.  **Navigate** to the VSTS account and monitor the build and release processes until they complete.  This process may take several minutes.
 8.  When the deployment finishes, verify that your changes are live in your web browser: **http://**_your-app-name_**.azurewebsites.net**.
-9.  **Note**:  Currently the below work around is required until engineering pushes an update.  You will receive an HTTP 503 error until performing the work around.
-10.  **Optionally** you can make changes to the web app code and push them to VSTS.  A new build and release will execute and deploy the changes.
+9.  Make changes to the web app code and push them to VSTS.  A new build and release will execute and deploy the changes.
 
 You're now ready to collaborate with a team on an ASP.NET Core app with a CI/CD process that automatically deploys your latest work to your Azure App Service.
-
-##	[TEMPORARY SECTION - ENGINEERING is fixing a bug and we can eventually remove this section/work around]
-1.  Currently if you navigate to your App Service, you receive a 503 error.
-2.  Navigate to **Container registries** in the Azure Portal.  Copy the values for **Login Server, Username, and Password**.  **Note**:  In later steps you will add the prefix https:// to the value for the Login URL.
-3.  Navigate to the newly created **App Service** in the Azure Portal.
-4.  Choose **Docker Container** under the **SETTINGS** section for your App Service.
-5.  Choose **Private registry** and configure the details you saved above.  **Note**:  You must place https:// in front of the URL.  Example:  **https://LoginUrlGoesHere**
-5.	**Refresh** your App Service URL in a browser.  The web app should now display.  
-6.  **Optional:**  Make changes to your website and **push** the changes into VSTS.  A build and release will execute and your changes will be deployed.
 
 ## Next Steps    
 You've just put your own CI/CD processes in place. You can modify these build and release definitions to meet the needs of your team. To learn more see this tutorial:
