@@ -91,7 +91,7 @@ tasks and test cases automatically linked to that work item.
 | | | |
 | --- | --- | --- |
 | [Get Stakeholder feedback](../collaborate/feedback/index.md) | [Blog posts for testing](https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/) | [Test & Feedback posts](https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4) |
-| [Using Microsoft Test Manager](https://msdn.microsoft.com/en-us/library/jj635157.aspx) | [Blog posts for test management](https://blogs.msdn.microsoft.com/visualstudioalm/tag/test-management/) | |
+| [Using Microsoft Test Manager](https://msdn.microsoft.com/en-us/library/jj635157.aspx) | [Blog posts for test management](https://blogs.msdn.microsoft.com/devops/?s=test+management) | |
 | | | |
 
 > See also [Load and performance testing](../load-test/index.md), [Continuous testing](../build-release/test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).

@@ -60,7 +60,7 @@ You can also explore [multiple work items in the same session](#multipleitems).
 1. Open the **Explore work item** page in the extension and search for 
    the work item you want to explore.
  
-   ![](_img/explore-workitems-exploratory-testing/explore-workitems-05.png)
+   ![Searching for a workitem](_img/explore-workitems-exploratory-testing/explore-workitems-05.png)
 
    You can search using the work item identifier or keywords in the work item title.
   

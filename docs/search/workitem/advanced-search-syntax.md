@@ -45,7 +45,7 @@ By using Work Item Search you can:
 You can easily search across all work item fields, including custom fields, 
 which enables more natural searches. The snippet view indicates where matches were found.
 
-<img src="_img/get-started/NewSearchAcross.gif" width="710" height="400" border="0"></img>  
+<img alt="Search across all work item fields" src="_img/get-started/NewSearchAcross.gif" width="710" height="400" border="0"></img>  
 
 Use simple search strings for words or phrases. Work item search matches derived forms 
 of your search terms; for example, a search for "updating" will also find instances of the word 
@@ -87,7 +87,7 @@ For example, a search such as **t: Bug CreatedDate> @Today-7** finds all bugs cr
 * For the search query that contain multiple terms and users looking for exact match, embed the search term inside " ";
 for example, a search such as **BuildPath: "tools.demoproject.com"** finds all work items that neccesarily contain the path "tools.demoproject.com". 
 
-<img src="_img/get-started/NewFilters.gif" width="710" height="400" border="0"></img>  
+<img alt="Quick inline search filters let you refine work items in seconds" src="_img/get-started/NewFilters.gif" width="710" height="400" border="0"></img>  
 
 ## Quick Filters shortcuts
 

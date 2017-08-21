@@ -35,7 +35,7 @@ The build agent must have the following capabilities:
 
 | Argument | Description |
 | -------- | ----------- |
-| **VS Team Services connection** | The name of a Generic Service Endpoint that references the VSTS account you will be running the load test from and publishing the results to.<br />- Required for builds and releases on TFS and must specify a connection to the Team Services account where the load test will run.<br />- Optional for builds and releases on Team Services. In this case, if not provided, the current Team Services connection is used.<br />- See [Generic service endpoint](https://www.visualstudio.com/en-us/docs/build-release/concepts/library/service-endpoints#sep-generic). |
+| **VS Team Services connection** | The name of a Generic Service Endpoint that references the VSTS account you will be running the load test from and publishing the results to.<br />- Required for builds and releases on TFS and must specify a connection to the Team Services account where the load test will run.<br />- Optional for builds and releases on Team Services. In this case, if not provided, the current Team Services connection is used.<br />- See [Generic service endpoint](../../concepts/library/service-endpoints.md). |
 | **Test settings file** | Required. The path relative to the repository root of the test settings file that specifies the files and data required for the load test such as the test settings, any deployment items, and setup/clean-up scripts. The task will search this path and any subfolders. |
 | **Load test files folder** | Required. The path of the load test project. The task looks here for the files required for the load test, such as the load test file, any deployment items, and setup/clean-up scripts. The task will search this path and any subfolders. |
 | **Load test file** | Required. The name of the load test file (such as **myfile.loadtest**) to be executed as part of this task. This allows you to have more than one load test file and choose the one to execute based on the deployment environment or other factors. |
@@ -52,7 +52,7 @@ The build agent must have the following capabilities:
 * [Cloud-based Load Testing](https://www.visualstudio.com/features/vso-cloud-load-testing-vs)
 * [Source code for this task](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/RunLoadTest)
 * [Build your Visual Studio solution](../../get-started/dot-net.md)
-* [Cloud-based Load Testing Knowledge Base](http://aka.ms/loadtestkb)  
+* [Cloud-based Load Testing Knowledge Base](https://blogs.msdn.microsoft.com/devops/?s=clt)  
 
 ## Related tasks
 

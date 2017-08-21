@@ -105,7 +105,7 @@ entire test is shown as failed.
 1. Double-click a test result to view the test run details, 
    and the test results for each iteration.
 
-   ![](_img/repeat-test-with-different-data/repeat-test-with-different-data-10.png)
+   ![Viewing the test run details](_img/repeat-test-with-different-data/repeat-test-with-different-data-10.png)
  
 ## Speed up test iterations by using record and playback
 

@@ -93,10 +93,10 @@ The directory administrator has permission to change this setting, as follows:
 
    ![Opening the CONFIGURE tab in Azure Active Directory](_img/azure-rm-endpoint/azure-rm-endpoint-06.png)
 
-1. Ensure the value of the **USERS MAY ADD INTEGRATED APPLICATIONS** is set to
+1. Ensure the value of **USERS MAY ADD INTEGRATED APPLICATIONS** is set to
    **YES**. If not, change it to **YES** and save the change.
 
-   ![](_img/azure-rm-endpoint/azure-rm-endpoint-07.png)
+   ![Ensure the value of the USERS MAY ADD INTEGRATED APPLICATIONS is set to YES](_img/azure-rm-endpoint/azure-rm-endpoint-07.png)
 
 <a name="sessionexpired"></a>
 ### Failed to obtain an access token or A valid refresh token was not found

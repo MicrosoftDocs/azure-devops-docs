@@ -13,7 +13,7 @@ ms.date: 01/17/2017
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/powershell-on-target-machines-icon.png) Execute PowerShell scripts on remote machine(s).
+![icon](_img/powershell-on-target-machines-icon.png) Execute PowerShell scripts on remote machine(s).
 
 This task can run both PowerShell scripts and PowerShell-DSC scripts. 
 

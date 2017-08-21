@@ -26,25 +26,25 @@ To associate automated test results with requirements:
 1. On the test results page, select the tests you want to link to requirements
 and choose the **Associate tests to work item** (link) icon.
 
-   ![](_img/associate-automated-results-with-requirements/associate-tests-results.png)
+   ![Select the tests you want to link to requirements](_img/associate-automated-results-with-requirements/associate-tests-results.png)
 
 1. Select the requirements from the list of suggested work items and choose **Associate**. 
 
-   ![](_img/associate-automated-results-with-requirements/associate-tests.png)
+   ![Select the requirements from the list](_img/associate-automated-results-with-requirements/associate-tests.png)
 
 1. To see the related test results, select **Requirements** in the **Group by** list.  
 
-   ![](_img/associate-automated-results-with-requirements/associate-tests-groupby.png)
+   ![Select **Requirements** in the **Group by** list](_img/associate-automated-results-with-requirements/associate-tests-groupby.png)
 
 1. On your team's dashboard, add the **Requirements quality** widget and configure
    it for the appropriate build definition and work item query.  
 
-   ![](_img/associate-automated-results-with-requirements/associate-tests-configuration.png)
+   ![Add the **Requirements quality** widget](_img/associate-automated-results-with-requirements/associate-tests-configuration.png)
 
 1. This shows the pass rate for each of your requirements.
    Use the links to view the results in more detail, and the **Expand** link to see more.
 
-   ![](_img/associate-automated-results-with-requirements/associate-tests-dashboard.png)
+   ![Links to view the results in more detail, and the **Expand** link](_img/associate-automated-results-with-requirements/associate-tests-dashboard.png)
 
 ## See Also
 

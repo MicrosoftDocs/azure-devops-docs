@@ -19,8 +19,7 @@ using a runner of your choice.
 
 The task supports popular test result formats
 including [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd),
-NUnit 2 [sample XML](https://www.nunit.org/docs/2.6/files/TestResult.xml) [XSD](http://www.nunit.org/docs/2.6.4/files/Results.xsd),
-[NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
+[NUnit 2](http://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
 Visual Studio Test (TRX), and
 [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html). 
 If you use the built-in tasks such as
@@ -38,7 +37,7 @@ The build agent must have the following capabilities:
 
 | Argument | Description |
 | -------- | ----------- |
-| **Test result format** | Specify the format of the results files you want to publish. The following formats are supported.<br /> - Version 1 of the task: [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html), NUnit 2 [sample XML](https://www.nunit.org/docs/2.6/files/TestResult.xml) [XSD](http://www.nunit.org/docs/2.6.4/files/Results.xsd), Visual Studio Test Results (TRX)<br />- Version 2 of the task: [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html), NUnit 2 [sample XML](https://www.nunit.org/docs/2.6/files/TestResult.xml) [XSD](http://www.nunit.org/docs/2.6.4/files/Results.xsd), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format), Visual Studio Test Results (TRX) |
+| **Test result format** | Specify the format of the results files you want to publish. The following formats are supported.<br /> - Version 1 of the task: [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html), [NUnit 2](http://nunit.org/documentation/), Visual Studio Test Results (TRX)<br />- Version 2 of the task: [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html), [NUnit 2](http://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format), Visual Studio Test Results (TRX) |
 | **Test results files** | Use this to specify one or more test results files.<br />- Version 1 of the task: You can use a single-folder wildcard (`*`) and recursive wildcards (`**`). For example, `**/TEST-*.xml` searches for all the XML files whose names start with `TEST-` in all subdirectories. Multiple paths can be specified, separated by a semicolon.<br />- Version 2 of the task: Uses the [minimatch patterns](../file-matching-patterns.md). For example, `**/TEST-*.xml` searches for all the XML files whose names start with `TEST-` in all subdirectories. |
 | **Search folder** | Available only in version 2 of the task. Folder to search for the test result files. Default is `$(System.DefaultWorkingDirectory)` |
 | **Merge test results** | When this option is selected, test results from all the files will be reported against a single test run. If this option is not selected, a separate test run will be created for each test result file. |

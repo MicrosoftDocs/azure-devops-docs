@@ -13,7 +13,7 @@ ms.date: 01/17/2017
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/windows-machine-file-copy-icon.png) Copy files to remote machines.
+![icon](_img/windows-machine-file-copy-icon.png) Copy files to remote machines.
 
 Use this task to copy application files and other artifacts such as
 PowerShell scripts and PowerShell-DSC modules that are required to 

@@ -13,7 +13,7 @@ ms.date: 01/17/2017
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
-![](_img/azure-service-fabric.png) Deploy a Service Fabric application to a cluster.
+![icon](_img/azure-service-fabric.png) Deploy a Service Fabric application to a cluster.
 
 This task deploys an Azure Service Fabric application to a cluster 
 according to the settings defined in the publish profile.

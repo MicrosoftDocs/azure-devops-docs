@@ -13,7 +13,7 @@ ms.date: 05/03/2017
 
 [!INCLUDE [version-team-services](../../_shared/version-team-services.md)]
 
-![](_img/iis-deploy-icon.png) Deploy a Website or Web Application.
+![icon](_img/iis-deploy-icon.png) Deploy a Website or Web Application.
 
 Use this task to deploy IIS Websites and Virtual Applications using WebDeploy.
 Supports file transforms and variable substitution, removing additional files at destination,

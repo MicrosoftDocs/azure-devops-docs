@@ -13,7 +13,7 @@ ms.date: 05/03/2017
 
 [!INCLUDE [version-team-services](../../_shared/version-team-services.md)]
 
-![](_img/iis-manage-icon.png) Manage an IIS Website.
+![icon](_img/iis-manage-icon.png) Manage an IIS Website.
 
 Use this task to create or update, start or stop, and recycle IIS Websites, IIS Web Applications,
 Virtual Directories, and IIS Application Pools. Supports adding application pools, and 

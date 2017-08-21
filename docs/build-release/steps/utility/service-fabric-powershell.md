@@ -11,7 +11,7 @@ ms.date: 01/17/2017
 
 # Utility: Service Fabric PowerShell 
  
-![](_img/azure-service-fabric.png) Run a PowerShell script within the context of an Azure Service Fabric cluster connection.
+![icon](_img/azure-service-fabric.png) Run a PowerShell script within the context of an Azure Service Fabric cluster connection.
 
 Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized.
 

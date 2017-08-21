@@ -70,7 +70,7 @@ solution - on the same build machine.
 
    ![Build definition: customize unit test run](_img/getting-started-with-continuous-testing/edit-unit-test-task.png)
 
-   > The Visual Studio Test task version 2 supports Test Impact Analysis (TIA). See [these blog posts](https://blogs.msdn.microsoft.com/visualstudioalm/tag/tia/).
+   > The Visual Studio Test task version 2 supports Test Impact Analysis (TIA). See [these blog posts](https://blogs.msdn.microsoft.com/devops/?s=test+impact).
 
 1. When you're done, save your build definition.
 

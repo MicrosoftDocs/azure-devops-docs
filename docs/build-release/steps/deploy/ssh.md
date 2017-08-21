@@ -13,7 +13,7 @@ ms.date: 01/17/2017
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
-![](_img/ssh.png) Run shell commands or a script on a remote machine using SSH.
+![icon](_img/ssh.png) Run shell commands or a script on a remote machine using SSH.
 
 This task enables you to connect to a remote machine using SSH and run commands or a script.
 
