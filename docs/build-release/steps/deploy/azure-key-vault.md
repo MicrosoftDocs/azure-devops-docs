@@ -1,5 +1,5 @@
 ---
-title: Team Services and Team Foundation Server Build and Deploy - Azure Key Vault task
+title: Build and Deploy - Azure Key Vault task
 description: Team Services and Team Foundation Server build task step to download secrets such as authentication keys, storage account keys, data encryption keys, .PFX files, and passwords from an Azure key vault
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
@@ -73,7 +73,7 @@ If the value fetched from the vault is a certificate (for example, a PFX file), 
 will contain the contents of the PFX in string format. You can use the following PowerShell code
 to retrieve the PFX file from the task variable:
  
-```
+```powershell
 $kvSecretBytes = [System.Convert]::FromBase64String($(PfxSecret))
 $certCollection = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2Collection
 $certCollection.Import($kvSecretBytes,$null,[System.Security.Cryptography.X509Certificates.X509KeyStorageFlags]::Exportable)
@@ -82,7 +82,7 @@ $certCollection.Import($kvSecretBytes,$null,[System.Security.Cryptography.X509Ce
 If the certificate file will be stored locally on the machine, it is good practice
 to encrypt it with a password: 
 
-```
+```powershell
  #Get the file created
 $password = 'your password'
 $protectedCertificateBytes = $certCollection.Export([System.Security.Cryptography.X509Certificates.X509ContentType]::Pkcs12, $password)

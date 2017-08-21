@@ -1,6 +1,6 @@
 ---
 ms.assetid: 10C708EC-0D2A-4EF8-9381-4CF8B1EBA755
-title: CD of an Azure virtual machine using a Resource Manager template
+title: CD of an Azure VM using a Resource Manager template
 description: Provision a Microsoft Azure Virtual Machine using Azure Resource Manager templates in Microsoft Release Management in Visual Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
@@ -50,11 +50,11 @@ Carry out the following steps to deploy the Azure Resource Group.
    
    - **Resource Group**: The name for a new resource group, or an existing resource group name.
    
-   - **Template location**: The path of the Resource Manager template; for example: `$(System.DefaultWorkingDirectory)\ASPNet4.CI\drop\HelloWorldARM\Templates\WindowsVirtualMachine.json`
+   - **Template location**: The path of the Resource Manager template; for example:<br />`$(System.DefaultWorkingDirectory)\ASPNet4.CI\drop\HelloWorldARM\Templates\WindowsVirtualMachine.json`
    
-   - **Template Parameters**: The path of the Resource Manager template parameters file; for example `$(System.DefaultWorkingDirectory)\ASPNet4.CI\drop\HelloWorldARM\Templates\WindowsVirtualMachine.parameters.json`
+   - **Template Parameters**: The path of the Resource Manager template parameters file; for example:<br />`$(System.DefaultWorkingDirectory)\ASPNet4.CI\drop\HelloWorldARM\Templates\WindowsVirtualMachine.parameters.json`
    
-   - **Override Template Parameters**: A list of values for the parameters in the template; for example: `-adminUsername $(vmuser) -adminPassword (ConvertTo-SecureString -String $(vmpassword) -AsPlainText -Force) -dnsNameForPublicIP $(dns)'`. Use the **...** button to open the parameters editor dialog.
+   - **Override Template Parameters**: A list of values for the parameters in the template; for example:<br />`-adminUsername $(vmuser) -adminPassword (ConvertTo-SecureString -String $(vmpassword) -AsPlainText -Force) -dnsNameForPublicIP $(dns)'`<br />Use the **...** button to open the parameters editor dialog.
    
    - **Enable Deployment Prerequisites**: Checked.
    

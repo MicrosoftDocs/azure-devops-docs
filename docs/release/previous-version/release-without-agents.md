@@ -1,6 +1,6 @@
 ---
-title: Release without deployment agents in Release Management server/client for Visual Studio 2015 and TFS 2015
-description: Release your app to Microsoft Azure or on-premises environments without using deployment agents in Release Management server/client for Visual Studio 2015 and TFS 2015
+title: Release without deployment agents in Release Management
+description: Release your app to Microsoft Azure or on-premises without using deployment agents
 ms.assetid: 3C4A0EA1-C4ED-4674-8E9F-AE54D6DA05C0
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
@@ -314,37 +314,41 @@ You also need a build definition that builds your app.
    This example shows how to use a DSC configuration script to copy 
    files with a command to generate a .mof file at the end.
 
-        configuration FileCopy
-        {
-          Node $AllNodes.NodeName  
-          {
-            File CopyDeploymentBits
-            {  
-              Ensure = "Present"
-              Type = "Directory"
-              Recurse = $true
-              SourcePath = $applicationPath
-              DestinationPath = $Node.DeploymentPath
-            }
-          }
-        }
+   ```DSC
+   configuration FileCopy
+   {
+     Node $AllNodes.NodeName  
+     {
+       File CopyDeploymentBits
+       {  
+         Ensure = "Present"
+         Type = "Directory"
+         Recurse = $true
+         SourcePath = $applicationPath
+         DestinationPath = $Node.DeploymentPath
+       }
+     }
+   }
 
-        FileCopy -ConfigurationData $ConfigData ��"Verbose
-
+   FileCopy -ConfigurationData $ConfigData ��"Verbose
+   ```
+   
    The parameter values `$AllNodes` and `$Node` in this example are from 
    an optional configuration file - not to be confused with the DSC configuration. 
    Use configuration files if you want to use the same script but parameterize 
    the values when you deploy to a different stage. 
    Here's what this configuration file looks like.
 
-        $ConfigData = @{
-          AllNodes = @(
-            @{ NodeName = $env:COMPUTERNAME;
-               DeploymentPath = $env:SystemDrive + "\FolderCopyTest"
-             }
-          )
+   ```Configuration
+   $ConfigData = @{
+   AllNodes = @(
+       @{ NodeName = $env:COMPUTERNAME;
+           DeploymentPath = $env:SystemDrive + "\FolderCopyTest"
         }
-
+     )
+   }
+   ```
+   
 ## Next steps
 
 1. [Start a new release](manage-your-release.md#StartRelease).

@@ -1,5 +1,5 @@
 ---
-title: Exploratory and manual testing of your applications - Visual Studio Team Services
+title: Exploratory and manual testing of your applications
 description: Drive quality and collaboration throughout the development process with manual and exploratory testing capabilities
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
@@ -179,7 +179,7 @@ and [Provide stakeholder feedback](stakeholder/provide-stakeholder-feedback.md).
 
 * **End to End Traceability**. VSTS and TFS provide [end-to-end traceability of your requirements, builds, tests and bugs](../work/track/link-work-items-support-traceability.md?toc=/vsts/manual-test/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
 
-* **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend VSTS and TFS](../integrate/get-started/overview.md). Use the [REST APIs](../integrate/get-started/rest/basics.md) and [contribution model](../extend/develop/contributions-overview.md) available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
+* **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend VSTS and TFS](../integrate/index.md). Use the REST APIs and contribution model available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
 
 ## Additional resources
 

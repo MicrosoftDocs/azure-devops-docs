@@ -1,5 +1,5 @@
 ---
-title: Simple, Secure CI App Signing Using Visual Studio Team Services or Team Foundation Server 2015
+title: Simple, Secure CI App Signing
 description: Simple, Secure CI App Signing Using Visual Studio Team Services or Team Foundation Services 2015
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build

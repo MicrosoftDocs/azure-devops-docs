@@ -128,7 +128,7 @@ Tcm.exe can be used to copy test suites. Open a command prompt and change direct
   
 Open the Developer Command Prompt. Alternatively, use a standard command prompt and change directory to **%VS110COMNTOOLS%..\IDE**. Use tcm.exe:  
   
-```ms-dos  
+```MS-DOS  
 cd %VS110COMNTOOLS%..\IDE  
   
 tcm suites /clone       
@@ -159,7 +159,7 @@ Parameters:
   
  Examples:  
   
-```  
+```MS-DOS  
 tcm suites /clone /collection:http://tfs.fabrikam.com:8080/tfs/DefaultCollection  
    /teamproject:IceCream /destinationteamproject:ToyStore  
    /clonerequirements  

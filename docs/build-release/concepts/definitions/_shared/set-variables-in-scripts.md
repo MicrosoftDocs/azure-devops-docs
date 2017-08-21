@@ -41,7 +41,8 @@ set sauceArgument=%~1
 set secretSauceArgument=%~2
 @echo No problem reading %sauceArgument% or %SAUCE%
 @echo But I cannot read %SECRETSAUCE%
-@echo But I can read %secretSauceArgument% (but the log is redacted so I do not spoil the secret)
+@echo But I can read %secretSauceArgument% (but the log is redacted so I do not spoil
+      the secret)
 </code></pre>
 </li>
 </ul>
@@ -54,7 +55,8 @@ set secretSauceArgument=%~2
 <p>![PowerShell icon](../../../steps/utility/_img/powershell.png) Set the `sauce` and `secretSauce` variables</p>
 <pre>
 <code class="language-ps">Write-Host "##vso[task.setvariable variable=sauce]crushed tomatoes"
-Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
+Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with
+            garlic"
 </code></pre><br/>
 
 <p>![PowerShell icon](../../../steps/utility/_img/powershell.png) Read the variables</p>
@@ -72,7 +74,8 @@ Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed to
 )
 Write-Host No problem reading $env:sauce or $sauceArgument
 Write-Host But I cannot read $env:secretSauce
-Write-Host But I can read $secretSauceArgument "(but the log is redacted so I do not spoil the secret)"
+Write-Host But I can read $secretSauceArgument "(but the log is redacted so I do not
+           spoil the secret)"
 </code></pre>
 </li>
 </ul>

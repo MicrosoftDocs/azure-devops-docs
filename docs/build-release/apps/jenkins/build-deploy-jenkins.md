@@ -53,7 +53,7 @@ and [Making a private repository public](https://help.github.com/articles/making
 
 ### About the sample app
 
-This section describes the sample app used in this tutorial. You can skip this and go to [Configure Jenkins plugins](#Configure Jenkins plugins).
+This section describes the sample app used in this tutorial. You can skip this and go to [Configure Jenkins plugins](#config).
 
 The app was built using [Yeoman](http://yeoman.io/learning/index.html);
 it uses **Express**, **bower**, and **grunt**; and it has some **npm** packages as dependencies.
@@ -69,6 +69,7 @@ select the machines to receive the deployment.
 The sample also contains a script that sets up Nginx and deploys the app. It is executed on each of the virtual
 machines. Specifically, the script installs Node, Nginx, and PM2; configures Nginx and PM2; then starts the Node app.
 
+<a name="config"></a>
 ## Configure Jenkins plugins
 
 First, you must configure two Jenkins plugins for **NodeJS** and **Integration with VSTS**.

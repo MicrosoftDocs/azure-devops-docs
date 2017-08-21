@@ -193,7 +193,7 @@ Defines and secures a connection to a Microsoft Azure Service Fabric cluster.
 
 You can use the following PowerShell script to obtain a Base64-encoded representation of a certificate:
 
-```
+```powershell
 [System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes("path-to-certificate-file\certificate.pfx"))
 ```
 

@@ -1,6 +1,6 @@
 ---
 ms.assetid: 10C708EC-0D2A-4EF8-9381-4CF8B1EBA755
-title: Build an Azure Virtual Machine using Azure RM templates with Microsoft Release Management in Visual Team Services and Team Foundation Server
+title: Build an Azure Virtual Machine using Azure RM templates
 description: Build a Microsoft Azure Virtual Machine using Azure Resource Manager templates in Microsoft Release Management in Visual Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release

@@ -1,6 +1,6 @@
 ---
-title: Archived release notes for Microsoft Release Management in Visual Studio Team Services and Team Foundation Server
-description: Archived release notes and calendar for Microsoft Release Management in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Archived release notes for Microsoft Release Management
+description: Archived release for VSTS and TFS
 ms.assetid: 1872D1B0-0514-4FD2-9BFB-DF9538BF93DF
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
@@ -506,7 +506,7 @@ For more details, see [Agent phase properties](../concepts/process/phases.md)
 
 This is a simple example showing how to get a build definition:
 
-```
+```powershell
 $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build-release/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=2.0"
 Write-Host "URL: $url"
 $definition = Invoke-RestMethod -Uri $url -Headers @{
@@ -631,8 +631,6 @@ in VisualStudio Marketplace adds all the service endpoint
 types and tasks necessary for you to work with Docker
 from Team Services.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/wXZ7qsmVTpw" frameborder="0" allowfullscreen="true"></iframe><p />
-
 <a name="may23-teamcity"></a>
 **TeamCity integration**
 
@@ -644,8 +642,6 @@ service endpoint. Then configure your release definitions
 to deploy artifacts produced by TeamCity builds.
 See [TeamCity artifact sources](../concepts/definitions/release/artifacts.md#teamcitysource).
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/zDZRvc_6UiU" frameborder="0" allowfullscreen="true"></iframe><p />
-
 <a name="may23-hooks"></a>
 **Service hooks integration**
 
@@ -653,8 +649,6 @@ Send release notifications when new releases are created,
 deployments are started or completed, or when approvals
 are pending or completed. Integrate with third party tools
 such as Slack to receive such notifications.
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/AWvC9LA4gbo" frameborder="0" allowfullscreen="true"></iframe><p />
 
 <a name="may23-clientsdk"></a>
 **Release Management client SDK**
@@ -697,8 +691,6 @@ environments to a definition, and cloning an environment.
 View all the activity on a release in one place; including deployments,
 approvals, configuration edits, and more.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/7qNWodwF-5A?list=PLP3SfFPBD6cQhukBZMm-YXaPplQESPW-f" frameborder="0" allowfullscreen="true"></iframe><p />
-
 _**NOTE**: This feature is being rolled out over time to all regions;
 therefore, it may not yet be available in your region._
 
@@ -726,8 +718,6 @@ Want all of your production deployments to happen at midnight? You can
 configure a condition on an environment that selects a successful
 deployment (or just the latest one) from another environment, and deploys
 it at the specified time.
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/k50CqzIqHPc?list=PLP3SfFPBD6cQhukBZMm-YXaPplQESPW-f" frameborder="0" allowfullscreen="true"></iframe><p />
 
 ![View the history of a release](_img/rm-archived/release-notes-14.png)
 
@@ -809,15 +799,11 @@ Send the details of a release, including all the
 sections (such as deployment status, work items,
 commits, and build details) to email recipients.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/Jh3FoQ6cWh0" frameborder="0" allowfullscreen="true"></iframe><p />
-
 **Release definition summary - dashboard widget**
 
 Pin a release definition to the dashboard - an
 easy way to make a summary of releases for that
 definition visible to all your team.
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/KxLfeaC8AiA?list=PLP3SfFPBD6cQhukBZMm-YXaPplQESPW-f" frameborder="0" allowfullscreen="true"></iframe><p />
 
 **Deploy based on conditions in multiple environments**
 
@@ -826,8 +812,6 @@ deployments_), but you could not start a deployment
 to an environment based on the status of multiple
 environments (_join deployments_). Now you can, as
 this video demonstrates.
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/t8DbjERHzB0" frameborder="0" allowfullscreen="true"></iframe><p />
 
 For more details, see [Parallel forked and joined deployments](../concepts/definitions/release/triggers.md#parallel-forked-and-joined-deployments)
 

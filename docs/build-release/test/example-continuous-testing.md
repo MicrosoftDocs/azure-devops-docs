@@ -1,6 +1,6 @@
 ---
-title: Continuous integration, test, and deployment tutorial with Visual Studio Team Services and Team Foundation Server
-description: Continuous integration, test, and deployment example using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+title: Continuous integration, test, and deployment tutorial
+description: Continuous integration, test, and deployment example in VSTS and TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-continuous
 ms.assetid: 447F1F56-993A-4AB0-B521-ED72514BDEE3
@@ -218,7 +218,7 @@ the build process.
 
 1. Change the line in the **About** method to show a different message, such as: 
 
-   ```
+   ```csharp
    public ActionResult About()
    {
      ViewBag.Message = "My super new web app.";
@@ -267,7 +267,7 @@ post-deployment load test.
 1. Change the line in the **About** test method so that it matches the
    message you specified when you edited the main project earlier. In this example: 
 
-   ```
+   ```csharp
    [TestMethod]
    public void About()
    {

@@ -29,7 +29,7 @@ deploy to a Service Fabric cluster.
 
 | Argument | Description |
 | -------- | ----------- |
-| **Publish Profile** | The location of the publish profile that specifies the settings to use for deployment, including the location of the target Service Fabric cluster. Can include wildcards and variables. Example: `$(system.defaultworkingdirectory)/**/drop/projectartifacts/**/PublishProfiles/Cloud.xml` |
+| **Publish Profile** | The location of the publish profile that specifies the settings to use for deployment, including the location of the target Service Fabric cluster. Can include wildcards and variables. Example:<br />`$(system.defaultworkingdirectory)/**/drop/projectartifacts/**/PublishProfiles/Cloud.xml` |
 | **Application Package** | The location of the Service Fabric application package to be deployed to the cluster. Can include wildcards and variables. Example: `$(system.defaultworkingdirectory)/**/drop/applicationpackage` |
 | **Cluster Connection** | The name of the Azure Service Fabric service endpoint defined in the TS/TFS project that describes the connection to the cluster. |
 | **Control options** | See [Control options](../../concepts/process/tasks.md#controloptions) |

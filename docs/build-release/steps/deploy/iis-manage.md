@@ -1,5 +1,5 @@
 ---
-title: Team Services and Team Foundation Server Build and Deploy - IIS Web App Manage task
+title: Build and Deploy - IIS Web App Manage task
 description: Team Services and Team Foundation Server build task step to create or update, start or stop IIS Web Sites, IIS Web Applications, Virtual Directories, and IIS Application Pools 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release

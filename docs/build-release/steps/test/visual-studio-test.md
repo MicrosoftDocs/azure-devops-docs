@@ -1,7 +1,7 @@
 ---
-title: Team Services and Team Foundation Server Build and Test - Visual Studio Test step
+title: Build and Test - Visual Studio Test step
 ms.assetid: C7835706-4700-4848-95D8-69F55BA2CFE1
-description: Run tests with the Visual Studio test runner to integrate cloud-based load tests into your build and release pipelines 
+description: Run tests with the Visual Studio test runner
 ms.prod: vs-devops-test-continuous
 ms.technology: vs-devops-build
 ms.manager: douge

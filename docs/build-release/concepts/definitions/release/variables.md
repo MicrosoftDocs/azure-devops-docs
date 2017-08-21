@@ -80,17 +80,18 @@ With the exception of **System.Debug**, these variables are read-only and their 
 
 ### System variables
 
-| Variable name | Description | Example | Not available in |
-|---------------|-------------|---------|--------------|
-| System.TeamFoundationServerUri | The URL of the Release Management service endpoint in the TFS or VSTS account. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
-| System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or VSTS account. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/fabrikam.visualstudio.com/ | |
-| System.CollectionId | The ID of the collection to which this build or release belongs. | 6c6f3423-1c84-4625-995a-f7f143a1e43d | TFS 2015 |
-| System.TeamProject | The name of the team project to which this build or release belongs. | Fabrikam | |
-| System.TeamProjectId | The ID of the team project to which this build or release belongs. | 79f5c12e-3337-4151-be41-a268d2c73344 | TFS 2015 |
-| System.ArtifactsDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.DefaultWorkingDirectory. | C:\agent\_work\r1\a |  |
-| System.DefaultWorkingDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.ArtifactsDirectory. | C:\agent\_work\r1\a | |
-| System.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and Agent.WorkFolder. | C:\agent\_work |  |
-| System.Debug | This is the only system variable that can be _set_ by the users. Set this to true to run the deployment in debug mode to assist in fault-finding. | true | &nbsp; |
+> [!div class="mx-tdBreakAll"]
+> | Variable name | Description | Example | Not available in |
+> |---------------|-------------|---------|--------------|
+> | System.TeamFoundationServerUri | The URL of the Release Management service endpoint in the TFS or VSTS account. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm .visualstudio.com/ | |
+> | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or VSTS account. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/fabrikam .visualstudio.com/ | |
+> | System.CollectionId | The ID of the collection to which this build or release belongs. | 6c6f3423-1c84-4625 -995a-f7f143a1e43d | TFS 2015 |
+> | System.TeamProject | The name of the team project to which this build or release belongs. | Fabrikam | |
+> | System.TeamProjectId | The ID of the team project to which this build or release belongs. | 79f5c12e-3337-4151-be41 -a268d2c73344 | TFS 2015 |
+> | System.ArtifactsDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.DefaultWorkingDirectory. | C:\agent\_work\r1\a |  |
+> | System.DefaultWorkingDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.ArtifactsDirectory. | C:\agent\_work\r1\a | |
+> | System.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and Agent.WorkFolder. | C:\agent\_work |  |
+> | System.Debug | This is the only system variable that can be _set_ by the users. Set this to true to run the deployment in debug mode to assist in fault-finding. | true | &nbsp; |
 
 <!-- Other hidden system variables
 [SYSTEM] -> [release]
@@ -117,23 +118,24 @@ With the exception of **System.Debug**, these variables are read-only and their 
 
 ### Release variables
 
-| Variable name | Description | Example | Not available in |
-|---------------|-------------|---------|------------------|
-| Release.DefinitionName | The name of the release definition to which the current release belongs. | fabrikam-cd | |
-| Release.DefinitionId | The ID of the release definition to which the current release belongs. | 1 | TFS 2015 |
-| Release.ReleaseName | The name of the current release. | Release-47 | |
-| Release.ReleaseId | The identifier of the current release record. | 118 | |
-| Release.ReleaseUri | The URI of current release. | vstfs:///ReleaseManagement/Release/118 | |
-| Release.ReleaseDescription | The text description provided at the time of the release. | Critical security patch | |
-| Release.RequestedFor | The display name of identity that triggered the release. | Mateo Escobedo | |
-| Release.RequestedForId | The ID of identity that triggered the release. | 2f435d07-769f-4e46-849d-10d1ab9ba6ab | |
-| Release.EnvironmentName | The name of environment to which deployment is currently in progress. | Dev | |
-| Release.EnvironmentId | The ID of the environment instance in a release to which the deployment is currently in progress. | 276 | |
-| Release.EnvironmentUri | The URI of environment instance in a release to which deployment is currently in progress. | vstfs:///ReleaseManagement/Environment/276 | |
-| Release.DefinitionEnvironmentId | The ID of the environment in the corresponding release definition. | 1 | TFS 2015 |
-| Release.AttemptNumber | The number of times this release is deployed in this environment. | 1 | TFS 2015 |
-| Release.Deployment.RequestedFor | The display name of the identity that triggered (started) the deployment currently in progress. | Mateo Escobedo | TFS 2015 |
-| Release.Deployment.RequestedForId | The ID of the identity that triggered (started) the deployment currently in progress. | 2f435d07-769f-4e46-849d-10d1ab9ba6ab | TFS 2015 |
+> [!div class="mx-tdBreakAll"]
+> | Variable name | Description | Example | Not available in |
+> |---------------|-------------|---------|------------------|
+> | Release.DefinitionName | The name of the release definition to which the current release belongs. | fabrikam-cd | |
+> | Release.DefinitionId | The ID of the release definition to which the current release belongs. | 1 | TFS 2015 |
+> | Release.ReleaseName | The name of the current release. | Release-47 | |
+> | Release.ReleaseId | The identifier of the current release record. | 118 | |
+> | Release.ReleaseUri | The URI of current release. | vstfs:///ReleaseManagement /Release/118 | |
+> | Release.ReleaseDescription | The text description provided at the time of the release. | Critical security patch | |
+> | Release.RequestedFor | The display name of identity that triggered the release. | Mateo Escobedo | |
+> | Release.RequestedForId | The ID of identity that triggered the release. | 2f435d07-769f-4e46 -849d-10d1ab9ba6ab | |
+> | Release.EnvironmentName | The name of environment to which deployment is currently in progress. | Dev | |
+> | Release.EnvironmentId | The ID of the environment instance in a release to which the deployment is currently in progress. | 276 | |
+> | Release.EnvironmentUri | The URI of environment instance in a release to which deployment is currently in progress. | vstfs:///ReleaseManagement/Environment/276 | |
+> | Release.DefinitionEnvironmentId | The ID of the environment in the corresponding release definition. | 1 | TFS 2015 |
+> | Release.AttemptNumber | The number of times this release is deployed in this environment. | 1 | TFS 2015 |
+> | Release.Deployment.RequestedFor | The display name of the identity that triggered (started) the deployment currently in progress. | Mateo Escobedo | TFS 2015 |
+> | Release.Deployment.RequestedForId | The ID of the identity that triggered (started) the deployment currently in progress. | 2f435d07-769f-4e46-849d-10d1ab9ba6ab | TFS 2015 |
 
 <!-- Other hidden variables
 [RELEASE_DEPLOYMENTID] -> [276]
@@ -145,22 +147,24 @@ With the exception of **System.Debug**, these variables are read-only and their 
 
 ### Release environment variables
 
-| Variable name | Description | Example | Not available in |
-|---------------|-------------|---------|------------------|
-| Release.Environments.{Environment name}.Status | The status of deployment of this release within a specified environment. | NotStarted | TFS 2015 |
+> [!div class="mx-tdBreakAll"]
+> | Variable name | Description | Example | Not available in |
+> |---------------|-------------|---------|------------------|
+> | Release.Environments.{Environment name}.Status | The status of deployment of this release within a specified environment. | NotStarted | TFS 2015 |
 
 ### Agent variables
 
-| Variable name | Description | Example | Not available in |
-| ------------- | ----------- |---------|------------------|
-| Agent.Name | The name of the agent as registered with the [agent pool](../../agents/pools-queues.md). This is likely to be different from the computer name. | fabrikam-agent | |
-| Agent.MachineName | The name of the computer on which the agent is configured. | fabrikam-agent | |
-| Agent.Version | The version of the agent software. | 2.109.1 | |
-| Agent.JobName | The name of the job that is running, such as Release or Build. | Release | |
-| Agent.HomeDirectory | The folder where the agent is installed. This folder contains the code and resources for the agent. | C:\agent | |
-| Agent.ReleaseDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as System.ArtifactsDirectory and System.DefaultWorkingDirectory. | C:\agent\_work\r1\a | |
-| Agent.RootDirectory | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.WorkFolder and System.WorkFolder. | C:\agent\_work | |
-| Agent.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and System.WorkFolder. | C:\agent\_work | &nbsp; |
+> [!div class="mx-tdBreakAll"]
+> | Variable name | Description | Example | Not available in |
+> | ------------- | ----------- |---------|------------------|
+> | Agent.Name | The name of the agent as registered with the [agent pool](../../agents/pools-queues.md). This is likely to be different from the computer name. | fabrikam-agent | |
+> | Agent.MachineName | The name of the computer on which the agent is configured. | fabrikam-agent | |
+> | Agent.Version | The version of the agent software. | 2.109.1 | |
+> | Agent.JobName | The name of the job that is running, such as Release or Build. | Release | |
+> | Agent.HomeDirectory | The folder where the agent is installed. This folder contains the code and resources for the agent. | C:\agent | |
+> | Agent.ReleaseDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as System.ArtifactsDirectory and System.DefaultWorkingDirectory. | C:\agent\_work\r1\a | |
+> | Agent.RootDirectory | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.WorkFolder and System.WorkFolder. | C:\agent\_work | |
+> | Agent.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and System.WorkFolder. | C:\agent\_work | &nbsp; |
 
 <!--
 [AGENT_SERVEROMDIRECTORY] -> [C:\agent\externals\vstsom]
@@ -172,39 +176,41 @@ With the exception of **System.Debug**, these variables are read-only and their 
 
 For each artifact that is referenced in a release, you can use the following artifact variables. Not all variables are meaningful for each artifact type. The table below lists the default artifact variables and provides examples of the values that they have depending on the artifact type. If an example is empty, it implies that the variable is not populated for that artifact type.
 
-| Variable name | Description | Team Build example | Jenkins/TeamCity example  | TFVC/Git example | GitHub example|
-|---------------|-------------|--------------------|---------------------------|------------------|---------------|
-| Release.Artifacts.{Artifact alias}.DefinitionId | The identifier of the build definition or repository. | 1 |  |  | fabrikam/asp |
-| Release.Artifacts.{Artifact alias}.DefinitionName | The name of the build definition or repository. | fabrikam-ci |  | TFVC: $/fabrikam, Git: fabrikam | fabrikam/asp (master) |
-| Release.Artifacts.{Artifact alias}.BuildNumber | The build number or the commit identifier. | 20170112.1 | 20170112.1 | TFVC: Changeset 3, Git: 38629c964 | 38629c964 |
-| Release.Artifacts.{Artifact alias}.BuildId | The build identifier. | 130 | 130 |  | 38629c964d21fe405ef830b7d0220966b82c9e11 |
-| Release.Artifacts.{Artifact alias}.BuildURI | The URL for the build. | vstfs:///build-release/Build/130 |  |  |  | https://github.com/fabrikam/asp |
-| Release.Artifacts.{Artifact alias}.SourceBranch | The path of the branch from which the source was built. | refs/heads/master |  |  | |
-| Release.Artifacts.{Artifact alias}.SourceBranchName | The name of the branch from which the source was built. | master |  |  |  |
-| Release.Artifacts.{Artifact alias}.SourceVersion | The commit that was built. | bc0044458ba1d9298cdc649cb5dcf013180706f7 |  |  |  |
-| Release.Artifacts.{Artifact alias}.Repository.Provider | The type of repository from which the source was built | Git |  |  |  |
-| Release.Artifacts.{Artifact alias}.RequestedForID | The identifier of the account that triggered the build. | 2f435d07-769f-4e46-849d-10d1ab9ba6ab | | | |
-| Release.Artifacts.{Artifact alias}.RequestedFor | The name of the account that requested the build. | Mateo Escobedo | | | |
-| Release.Artifacts.{Artifact alias}.Type | The type of artifact source, such as Build. | Build | Jenkins: Jenkins, TeamCity:TeamCity | TFVC: TFVC, Git: Git | GitHub |
+> [!div class="mx-tdBreakAll"]
+> | Variable name | Description | Team Build example | Jenkins/ TeamCity example  | TFVC/Git example | GitHub example|
+> |---------------|-------------|--------------------|---------------------------|------------------|---------------|
+> | Release.Artifacts.{Artifact alias}.DefinitionId | The identifier of the build definition or repository. | 1 |  |  | fabrikam/asp |
+> | Release.Artifacts.{Artifact alias}.DefinitionName | The name of the build definition or repository. | fabrikam-ci |  | TFVC: $/fabrikam, Git: fabrikam | fabrikam/asp (master) |
+> | Release.Artifacts.{Artifact alias}.BuildNumber | The build number or the commit identifier. | 20170112.1 | 20170112.1 | TFVC: Changeset 3, Git: 38629c964 | 38629c964 |
+> | Release.Artifacts.{Artifact alias}.BuildId | The build identifier. | 130 | 130 |  | 38629c964d21fe405ef830b7d0220966b82c9e11 |
+> | Release.Artifacts.{Artifact alias}.BuildURI | The URL for the build. | vstfs:///build-release /Build/130 |  |  |  | https://github.com/fabrikam/asp |
+> | Release.Artifacts.{Artifact alias}.SourceBranch | The path of the branch from which the source was built. | refs/heads/master |  |  | |
+> | Release.Artifacts.{Artifact alias}.SourceBranchName | The name of the branch from which the source was built. | master |  |  |  |
+> | Release.Artifacts.{Artifact alias}.SourceVersion | The commit that was built. | bc0044458ba1d9298 cdc649cb5dcf013180706f7 |  |  |  |
+> | Release.Artifacts.{Artifact alias}.Repository.Provider | The type of repository from which the source was built | Git |  |  |  |
+> | Release.Artifacts.{Artifact alias}.RequestedForID | The identifier of the account that triggered the build. | 2f435d07-769f-4e46 -849d-10d1ab9ba6ab | | | |
+> | Release.Artifacts.{Artifact alias}.RequestedFor | The name of the account that requested the build. | Mateo Escobedo | | | |
+> | Release.Artifacts.{Artifact alias}.Type | The type of artifact source, such as Build. | Build | Jenkins: Jenkins, TeamCity:TeamCity | TFVC: TFVC, Git: Git | GitHub |
 
 ### Primary artifact variables
 
 You designate one of the artifacts as a primary artifact in a release definition. For the designated primary artifact, Release Management populates the following variables.
 
-| Variable name | Same as |
-|---------------|---------|
-| Build.DefinitionId | Release.Artifacts.{Primary artifact alias}.DefinitionId |
-| Build.DefinitionName | Release.Artifacts.{Primary artifact alias}.DefinitionName |
-| Build.BuildNumber | Release.Artifacts.{Primary artifact alias}.BuildNumber |
-| Build.BuildID | Release.Artifacts.{Primary artifact alias}.BuildId |
-| Build.BuildURI | Release.Artifacts.{Primary artifact alias}.BuildURI |
-| Build.SourceBranch | Release.Artifacts.{Primary artifact alias}.SourceBranch |
-| Build.SourceBranchName | Release.Artifacts.{Primary artifact alias}.SourceBranchName |
-| Build.SourceVersion | Release.Artifacts.{Primary artifact alias}.SourceVersion |
-| Build.Repository.Provider | Release.Artifacts.{Primary artifact alias}.Repository.Provider |
-| Build.RequestedForID | Release.Artifacts.{Primary artifact alias}.RequestedForID |
-| Build.RequestedFor | Release.Artifacts.{Primary artifact alias}.RequestedFor |
-| Build.Type | Release.Artifacts.{Primary artifact alias}.Type |
+> [!div class="mx-tdBreakAll"]
+> | Variable name | Same as |
+> |---------------|---------|
+> | Build.DefinitionId | Release.Artifacts.{Primary artifact alias}.DefinitionId |
+> | Build.DefinitionName | Release.Artifacts.{Primary artifact alias}.DefinitionName |
+> | Build.BuildNumber | Release.Artifacts.{Primary artifact alias}.BuildNumber |
+> | Build.BuildID | Release.Artifacts.{Primary artifact alias}.BuildId |
+> | Build.BuildURI | Release.Artifacts.{Primary artifact alias}.BuildURI |
+> | Build.SourceBranch | Release.Artifacts.{Primary artifact alias}.SourceBranch |
+> | Build.SourceBranchName | Release.Artifacts.{Primary artifact alias}.SourceBranchName |
+> | Build.SourceVersion | Release.Artifacts.{Primary artifact alias}.SourceVersion |
+> | Build.Repository.Provider | Release.Artifacts.{Primary artifact alias}.Repository.Provider |
+> | Build.RequestedForID | Release.Artifacts.{Primary artifact alias}.RequestedForID |
+> | Build.RequestedFor | Release.Artifacts.{Primary artifact alias}.RequestedFor |
+> | Build.Type | Release.Artifacts.{Primary artifact alias}.Type |
 
 
 ### Using default variables

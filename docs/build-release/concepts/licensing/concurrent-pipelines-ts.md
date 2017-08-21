@@ -1,5 +1,5 @@
 ---
-title: Build and Release Management concurrent pipelines in Visual Studio Team Services
+title: Concurrent pipelines in Visual Studio Team Services
 description: Build and Release Management concurrent pipelines in Visual Studio Team Services (VSTS)
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.prod: vs-devops-alm

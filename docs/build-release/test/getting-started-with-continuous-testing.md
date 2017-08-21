@@ -1,5 +1,5 @@
 ---
-title: Get started with continuous testing - Run tests with your builds - Visual Studio Team Services
+title: Get started with continuous testing
 description: Get started with continuous testing. Run tests with your builds for continuous integration 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-continuous

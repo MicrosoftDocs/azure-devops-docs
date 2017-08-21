@@ -41,7 +41,7 @@ from Visual Studio Marketplace.
 
 To substitute JSON variables that are nested or hierarchical, specify them using JSONPath expressions. For example, to replace the value of `ConnectionString` in the sample below, you must define a variable as `Data.DefaultConnection.ConnectionString` in the build or release definition (or the release definition's environment):
 
-```
+```json
 {
   "Data":
   {

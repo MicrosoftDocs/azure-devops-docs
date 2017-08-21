@@ -201,6 +201,7 @@ a maximum of four agents at any one time:
 * **Multipliers** = `Location,Browser`
 * **Maximum number of agents** = `4`
 
+<a name="server-phase"></a>
 ## Agentless phase
 
 Use an agentless phase in a release definition to run tasks that do

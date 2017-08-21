@@ -1,6 +1,6 @@
 ---
 ms.assetid: 1A6903E4-B0B3-426E-9E07-67492ADB1F42
-title: Provision and manage virtual machines in VMware vCenter Server from Release Management in Visual Studio Team Services or Microsoft Team Foundation Server
+title: Provision and manage virtual machines in VMware vCenter Server
 description: Example of provisioning and managing virtual machine in VMware vCenter Server from Release Management in Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release

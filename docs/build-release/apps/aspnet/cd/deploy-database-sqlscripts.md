@@ -54,7 +54,7 @@ You will need a **SQL script** that is published as an artifact by Team Build or
 
 * Check the following script into a version control repository such as VSTS or TFS as `DatabaseExample.sql`.
 
-  ```
+  ```sql
   USE [master]
   GO
   IF NOT EXISTS (SELECT name FROM master.sys.databases WHERE name = N'DatabaseExample')
@@ -66,7 +66,7 @@ In addition, you will need Azure Powershell scripts to create and remove firewal
 
 * Check the following PowerShell script into the same location that has your SQL script as `SetAzureFirewallRule.ps1`.
 
-  ```
+  ```powershell
   [CmdletBinding(DefaultParameterSetName = 'None')]
   param
   (
@@ -97,7 +97,7 @@ In addition, you will need Azure Powershell scripts to create and remove firewal
 
 * Check the following PowerShell script into the same location that has your SQL script as `RemoveAzureFirewallRule.ps1`.
 
-  ```
+  ```powershell
   [CmdletBinding(DefaultParameterSetName = 'None')]
   param
   (

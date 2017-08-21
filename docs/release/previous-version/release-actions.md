@@ -1,6 +1,6 @@
 ---
-title: Release actions to deploy an app with Release Management server/client for VS 2015 and TFS 2015
-description: Release actions to deploy an app for Release Management server/client for Visual Studio 2015 and TFS 2015 
+title: Release actions to deploy an app with Release Management
+description: Release actions in VSTS and TFS
 ms.assetid: FE87197A-610D-4426-A812-2322EAA8700C
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release

@@ -1,6 +1,6 @@
 ---
-title: Search across all your code and work items in Visual Studio Team Services and Team Foundation Server
-description: Quickly and easily search code and work items across all of your Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 2015 projects, from anywhere and any computer or mobile device, using your web browser.
+title: Search across all your code and work items
+description: Quickly Search with VSTS and TFS
 ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-search

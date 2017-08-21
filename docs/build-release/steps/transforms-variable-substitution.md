@@ -57,11 +57,12 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 
    **Configuration file**
  
-   ```
+   ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <configuration>
      <connectionStrings>
-       <add name="DefaultConnection" connectionString="Data Source=(LocalDb)\\MSDB;DbFilename=aspcore-local.mdf;" />
+       <add name="DefaultConnection"
+            connectionString="Data Source=(LocalDb)\\MSDB;DbFilename=aspcore-local.mdf;" />
      </connectionStrings>
      <appSettings>
        <add key="webpages:Version" value="3.0.0.0" />
@@ -77,13 +78,13 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 
    **Transform file**
  
-   ```
+   ```xml
    <?xml version="1.0"?>
    <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
        <connectionStrings>
          <add name="MyDB"
-           connectionString="Data Source=ReleaseSQLServer;Initial Catalog=MyReleaseDB;Integrated Security=True"
-           xdt:Transform="Insert" />
+              connectionString="Data Source=ReleaseSQLServer;Initial Catalog=MyReleaseDB;Integrated Security=True"
+              xdt:Transform="Insert" />
        </connectionStrings>
      <appSettings>
        <add xdt:Transform="Replace" xdt:Locator="Match(key)" key="webpages:Enabled" value="true" />
@@ -113,12 +114,15 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 
 1. Open the `Web.config` file to see the transformations from `Web.Release.config`.
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <configuration>
      <connectionStrings>
-       <add name="DefaultConnection" connectionString="Data Source=(LocalDb)\\MSDB;DbFilename=aspcore-local.mdf;" />
-     <add name="MyDB" connectionString="Data Source=ReleaseSQLServer;Initial Catalog=MyReleaseDB;Integrated Security=True" /></connectionStrings>
+       <add name="DefaultConnection"
+            connectionString="Data Source=(LocalDb)\\MSDB;DbFilename=aspcore-local.mdf;" />
+     <add name="MyDB"
+          connectionString="Data Source=ReleaseSQLServer;Initial Catalog=MyReleaseDB;Integrated Security=True" />
+     </connectionStrings>
      <appSettings>
        <add key="webpages:Version" value="3.0.0.0" />
        <add key="webpages:Enabled" value="true" />
@@ -145,7 +149,7 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
   recommended that the `<DependentUpon>` element is removed from all the transform files to disable any build-time
   configuration when using XML transformation.
 
-  ```
+  ```xml
   ...
   <Content Include="Web.Debug.config">
      <DependentUpon>Web.config</DependentUpon>
@@ -169,7 +173,7 @@ and `configSections` elements of configuration files.
 
 As an example, consider the task of changing the following values in `Web.config`:
  
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
     <configSection>
@@ -177,7 +181,8 @@ As an example, consider the task of changing the following values in `Web.config
     </configSection>
     <connectionStrings>
         <!-- Change connectionString in this line: --> 
-        <add name="DefaultConnection" connectionString="Data Source=(LocalDB)\LocalDB;FileName=Local.mdf" />
+        <add name="DefaultConnection"
+             connectionString="Data Source=(LocalDB)\LocalDB;FileName=Local.mdf" />
     </connectionStrings>
     <appSettings>
         <add key="ClientValidationEnabled" value="true" />
@@ -219,14 +224,15 @@ As an example, consider the task of changing the following values in `Web.config
 
 1. Open the `Web.config` file to see the variable substitutions.
  
-   ```
+   ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <configuration>
        <configSection>
            <section name="entityFramework" />
        </configSection>
        <connectionStrings>
-           <add name="DefaultConnection" connectionString="Data Source=(ProdDB)\MSSQLProdDB;AttachFileName=Local.mdf" />
+           <add name="DefaultConnection"
+                connectionString="Data Source=(ProdDB)\MSSQLProdDB;AttachFileName=Local.mdf" />
        </connectionStrings>
        <appSettings>
            <add key="ClientValidationEnabled" value="true" />
@@ -239,7 +245,8 @@ As an example, consider the task of changing the following values in `Web.config
                <parameters></parameters>
            </defaultConnectionFactory>
            <providers>
-               <provider invariantName="System.Data.SqlClientExtension" type="System.Data.Entity.SqlServer" />
+               <provider invariantName="System.Data.SqlClientExtension"
+                         type="System.Data.Entity.SqlServer" />
            </providers>
        </entityFramework>
    </configuration>
@@ -266,7 +273,7 @@ To substitute variables in specific JSON files, provide newline-separated
 list of JSON files. Files names must be specified relative to the root folder. 
 For example, if your package has in this structure:
 
-```
+```Folders
 /WebPackage(.zip)
   /---- content
     /----- website
@@ -287,7 +294,7 @@ named **appsettings.json**.
 
 As an example, consider the task of overriding values in this JSON file:
  
-```
+```json
 {
   "Data": {
     "DefaultConnection": {
@@ -340,7 +347,7 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
 
 1. After the transformation, the JSON will contain the following:
 
-   ```
+   ```json
    {
      "Data": {
        "DefaultConnection": {

@@ -1,7 +1,7 @@
 ---
 ms.assetid: C08EC3FB-6787-4956-86D3-B4085B69FCBA
-title: Implement continuous deployment of your app to an Azure Virtual Machine Scale Set
-description: Implement continuous deployment of your app to an Azure Virtual Machine Scale Set in Microsoft Release Management in Visual Team Services (VSTS) and Team Foundation Server (TFS)
+title: Implement deployment of your app to Azure Virtual Machine Scale Set
+description: Implement deployment of your app to an Azure Virtual Machine Scale Set
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
 ms.manager: douge
@@ -91,7 +91,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
    
    Use the following script for the **Inline Script** parameter of the **Azure PowerShell** task: 
    
-   ```
+   ```powershell
    # get the VMSS model
 
    $vmss = Get-AzureRmVmss -ResourceGroupName resource_group_name -VMScaleSetName VM_scale_set_name

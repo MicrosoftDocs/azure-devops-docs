@@ -65,54 +65,56 @@ from Visual Studio Test Explorer.
    replace the contents of the file with the following
    code.
 
-         namespace Partsunlimited.UITests
-         {
-           using Microsoft.VisualStudio.TestTools.UnitTesting;
-           using OpenQA.Selenium;
-           using OpenQA.Selenium.Chrome;
-           using OpenQA.Selenium.Firefox;
-           using OpenQA.Selenium.IE;
-           using OpenQA.Selenium.Remote;
-           using OpenQA.Selenium.PhantomJS;
-           using System;
+   ```csharp
+   namespace Partsunlimited.UITests
+   {
+     using Microsoft.VisualStudio.TestTools.UnitTesting;
+     using OpenQA.Selenium;
+     using OpenQA.Selenium.Chrome;
+     using OpenQA.Selenium.Firefox;
+     using OpenQA.Selenium.IE;
+     using OpenQA.Selenium.Remote;
+     using OpenQA.Selenium.PhantomJS;
+     using System;
 
-           [TestClass]
-           public class ChucksClass1
-           {
-             private string baseURL = "http://your-website.azurewebsites.net/";
-             private RemoteWebDriver driver;
-             private string browser;
-             public TestContext TestContext { get; set; }
+     [TestClass]
+     public class ChucksClass1
+     {
+       private string baseURL = "http://your-website.azurewebsites.net/";
+       private RemoteWebDriver driver;
+       private string browser;
+       public TestContext TestContext { get; set; }
 
-             [TestMethod]
-             [TestCategory("Selenium")]
-             [Priority(1)]
-             [Owner("FireFox")]
+       [TestMethod]
+       [TestCategory("Selenium")]
+       [Priority(1)]
+       [Owner("FireFox")]
 
-             public void TireSearch_Any()
-             {
-               driver = new FirefoxDriver();
-               driver.Manage().Window.Maximize();
-               driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
-               driver.Navigate().GoToUrl(this.baseURL);
-               driver.FindElementById("search - box").Clear();
-               driver.FindElementById("search - box").SendKeys("tire");
-               //do other Selenium things here!
-             }
+       public void TireSearch_Any()
+       {
+         driver = new FirefoxDriver();
+         driver.Manage().Window.Maximize();
+         driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
+         driver.Navigate().GoToUrl(this.baseURL);
+         driver.FindElementById("search - box").Clear();
+         driver.FindElementById("search - box").SendKeys("tire");
+         //do other Selenium things here!
+       }
 
-             [TestCleanup()]
-             public void MyTestCleanup()
-             {
-               driver.Quit();
-             }
+       [TestCleanup()]
+       public void MyTestCleanup()
+       {
+         driver.Quit();
+       }
 
-             [TestInitialize()]
-             public void MyTestInitialize()
-             {
-             }
-           }
-         }
-
+       [TestInitialize()]
+       public void MyTestInitialize()
+       {
+       }
+     }
+   }
+   ```
+   
    ![Replacing the code in UnitTest1.cs](_img/continuous-test-selenium/continuous-test-selenium-03.png)
 
 1. Run the Selenium test locally using Test Explorer.

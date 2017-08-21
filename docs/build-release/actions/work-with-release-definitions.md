@@ -1,6 +1,6 @@
 ---
-title: Work with release definitions with Release Management in Team Services or Team Foundation Server
-description: Work with release definitions with Release Management in Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: Work with release definitions with Release Management
+description: Work with release definitions in VSTS and TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
 ms.assetid: A38FB217-B259-4DD1-B5BF-D945278493C2

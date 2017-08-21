@@ -97,7 +97,7 @@ In a single template, you can deploy multiple services along with their dependen
 For a Windows VM, create an ARM template and add a resources element under the
 `Microsoft.Compute/virtualMachine` resource as shown here:
 
-```
+```ARMTemplate
 {
    "publisher": "Microsoft.VisualStudio.Services",
    "type": "TeamServicesAgent",

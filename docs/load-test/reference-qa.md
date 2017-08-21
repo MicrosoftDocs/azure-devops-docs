@@ -459,7 +459,7 @@ For better performance as you download more reports, use SQL Server.
     C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE
 1.  Change the value of bindingRedirect to "8.0.0.0-14.0.0.0"
 
-    ```
+    ```xml
     <dependentAssembly>
       <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.LoadTest" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
       <bindingRedirect oldVersion="8.0.0.0-14.0.0.0" newVersion="12.0.0.0"/>
@@ -603,7 +603,7 @@ ignore the case or convert test names to lower case.
 
 1. Add this line inside the &lt;appSettings&lt; section:
 
-   ```
+   ```xml
    <add key="ElsClientLogLevel" value="XXX"/>
    ```
 
@@ -621,7 +621,7 @@ ignore the case or convert test names to lower case.
    just above the closing tag. You can specify the path for the log 
    file by changing the initializeData value.
 
-   ```
+   ```xml
    <system.diagnostics>
      <trace autoflush="true" indentsize="4">
       <listeners>

@@ -1,6 +1,6 @@
 ---
 ms.assetid: 4FC75F92-EC04-4458-8069-53EEBF855D2F
-title: Manage a virtual machine in Azure DevTest Labs using Microsoft Release Management in Visual Team Services and Team Foundation Server
+title: Manage a virtual machine in Azure DevTest Labs
 description: Create, manage, and delete virtual machines in Azure DevTest Labs service using Microsoft Release Management in Visual Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
@@ -63,30 +63,33 @@ use to create an Azure Virtual Machine on demand.
 
 1. Open a text editor and copy the following script into it.
 
-        Param( [string] $labVmId)
+   ```powershell
+   Param( [string] $labVmId)
 
-        $labVmComputeId = (Get-AzureRmResource -Id $labVmId).Properties.ComputeId
+   $labVmComputeId = (Get-AzureRmResource -Id $labVmId).Properties.ComputeId
 
-        # Get lab VM resource group name
-        $labVmRgName = (Get-AzureRmResource -Id $labVmComputeId).ResourceGroupName
+   # Get lab VM resource group name
+   $labVmRgName = (Get-AzureRmResource -Id $labVmComputeId).ResourceGroupName
 
-        # Get the lab VM Name
-        $labVmName = (Get-AzureRmResource -Id $labVmId).Name
+   # Get the lab VM Name
+   $labVmName = (Get-AzureRmResource -Id $labVmId).Name
 
-        # Get lab VM public IP address
-        $labVMIpAddress = (Get-AzureRmPublicIpAddress -ResourceGroupName $labVmRgName �Name $labVmName).IpAddress
+   # Get lab VM public IP address
+   $labVMIpAddress = (Get-AzureRmPublicIpAddress -ResourceGroupName $labVmRgName
+                      -Name $labVmName).IpAddress
 
-        # Get lab VM FQDN
-        $labVMFqdn = (Get-AzureRmPublicIpAddress -ResourceGroupName $labVmRgName -Name $labVmName).DnsSettings.Fqdn
+   # Get lab VM FQDN
+   $labVMFqdn = (Get-AzureRmPublicIpAddress -ResourceGroupName $labVmRgName
+                 -Name $labVmName).DnsSettings.Fqdn
 
-        # Set a variable labVmRgName to store the lab VM resource group name
-        Write-Host "##vso[task.setvariable variable=labVmRgName;]$labVmRgName"
+   # Set a variable labVmRgName to store the lab VM resource group name
+   Write-Host "##vso[task.setvariable variable=labVmRgName;]$labVmRgName"
 
-        # Set a variable labVMIpAddress to store the lab VM Ip address
-        Write-Host "##vso[task.setvariable variable=labVMIpAddress;]$labVMIpAddress"
+   # Set a variable labVMIpAddress to store the lab VM Ip address
+   Write-Host "##vso[task.setvariable variable=labVMIpAddress;]$labVMIpAddress"
 
-        # Set a variable labVMFqdn to store the lab VM FQDN name
-        Write-Host "##vso[task.setvariable variable=labVMFqdn;]$labVMFqdn"
+   # Set a variable labVMFqdn to store the lab VM FQDN name
+   Write-Host "##vso[task.setvariable variable=labVMFqdn;]$labVMFqdn"
 
 1. Check the script into your source control system. Name 
    it something like **GetLabVMParams.ps1**. 

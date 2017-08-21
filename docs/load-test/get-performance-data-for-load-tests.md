@@ -1,6 +1,6 @@
 ---
-title: Get Application Insights performance data with load tests in Visual Studio Team Services
-description: Get app performance data from Application Insights when you load test with Visual Studio Team Services
+title: Get Application Insights performance data with load tests
+description: Get app performance data from Application Insights in VSTS and TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
 ms.assetid: 5658166B-CA7F-4C6B-B55D-AE745FB78D5C
