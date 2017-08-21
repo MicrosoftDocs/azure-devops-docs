@@ -21,7 +21,7 @@ VSTS and TFS projects contain Git repositories, work items, builds, and releases
 
   ![Select project](_img/repo-mgmt/select-vsts-project.png) 
   
-  If you don’t have a VSTS account, you can [sign up](../accounts/sign-up-for-visual-studio-team-services.md) for one for free. Each account includes free, unlimited private Git repositories.
+  If you don’t have a VSTS account, you can [sign up](../accounts/create-account-with-work-school.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 0. In the **Project** area in the web portal, select **Code**, then select the drop-down next to the current repo name and choose **New Repository**.
 

@@ -45,7 +45,7 @@ For more about TFS licensing, see the
 <a id="rent-cal"></a>
 ## Buy monthly access to TFS
 
-0.	[Sign up for a Team Services account](../accounts/sign-up-for-visual-studio-team-services.md), 
+0.	[Sign up for a Team Services account](../accounts/create-account-with-work-school.md), 
 if you don't have one already.
 
 0.	Based on the number of users who need TFS CALs, 
@@ -74,7 +74,7 @@ and [give them the necessary access](../security/change-access-levels.md).
 <a id="test-hub"></a>
 ## Buy monthly access to the Test hub
 
-0.	[Sign up for a Team Services account](../accounts/sign-up-for-visual-studio-team-services.md), 
+0.	[Sign up for a Team Services account](../accounts/create-account-with-work-school.md), 
 if you don't have one already.
 
 0.	Based on the number of users who need TFS CALs, 

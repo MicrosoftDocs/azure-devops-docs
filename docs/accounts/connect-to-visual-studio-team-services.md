@@ -25,7 +25,7 @@ connect to your private Git repositories or Team Foundation version control from
 *	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 Don't have a [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs) 
-account? [Create your account and your team project first](sign-up-for-visual-studio-team-services.md). 
+account? [Create your account and your team project first](create-account-with-work-school.md). 
 You'll use your team project to store code, 
 builds, tests, work items, and other assets. 
 

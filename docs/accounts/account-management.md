@@ -39,7 +39,7 @@ The account owner and other members of the Project Collection Administrator grou
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Set up Team Services</p>
 <ul style="padding-left:30px">
- <li style="margin-bottom:2px">[Create your account](sign-up-for-visual-studio-team-services.md)</li>
+ <li style="margin-bottom:2px">[Create your account](create-account-with-work-school.md)</li>
  <li style="margin-bottom:2px">[Connect to your account](connect-to-visual-studio-team-services.md)</li>
  <li style="margin-bottom:2px">[Change account owner](change-account-ownership-vs.md)</li>
  <li style="margin-bottom:2px">[Rename account](rename-visual-studio-team-services-account.md)</li>
@@ -312,7 +312,7 @@ The method used to customize a team project depends on the process model you use
 
 #### Create your account
 To get started in the cloud, 
-[create your Team Services account](sign-up-for-visual-studio-team-services.md). 
+[create your Team Services account](create-account-with-work-school.md). 
 You'll choose Git or Team Foundation as your version control, 
 so that Team Services can create your team project for code and other assets, 
 like builds, tests, and work items. If you're starting with Visual Studio 

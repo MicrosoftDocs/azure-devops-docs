@@ -8,12 +8,10 @@
     href: access-with-azure-ad.md
 - name: Quickstarts
   items:
-  - name: Create your account with a person Microsoft account
-    href: sign-up-for-visual-studio-team-services.md
+  - name: Create your account with a personal Microsoft account
+    href: create-account-with-personal-msa.md
   - name: Create your account with a work or school account
-    href: sign-up-for-visual-studio-team-services.md
-  - name: Sign up for your account (TO BE REMOVED)
-    href: sign-up-for-visual-studio-team-services.md
+    href: create-account-with-work-school.md
   - name: Connect to your account from tools
     href: connect-to-visual-studio-team-services.md
   - name: "User hub: add users to your account"

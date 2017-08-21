@@ -76,7 +76,7 @@ Choose from free extensions in the
 ## Start for free, add users and services as you grow 
 To start using Team Services for 
 free, go to the [Team Services signup page (```https://www.visualstudio.com/```)](https://www.visualstudio.com/). 
-Or learn [how to sign up for Team Services](../accounts/sign-up-for-visual-studio-team-services.md). 
+Or learn [how to sign up for Team Services](../accounts/create-account-with-work-school.md). 
 
 To start for free with an on-premises TFS, download and install [Team Foundation Server 2017 Express](https://www.visualstudio.com/downloads/#team-foundation-server-express-2017) and then [create a team project](../accounts/create-team-project.md). TFS Express is a free, source code-control project management and team collaboration platform for individual developers and small teams of five or less. Install Visual Studio Team Foundation Server Express 2017 on your desktop or laptop.
 

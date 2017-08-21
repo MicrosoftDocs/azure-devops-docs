@@ -29,9 +29,9 @@ Use this index to setup and manage your account and configure key settings to su
 
 ## 5-Minute Quickstarts  
 
-* [Create your account with a person Microsoft account](sign-up-for-visual-studio-team-services.md)
+* [Create your account with a person Microsoft account](create-account-with-work-school.md)
 
-* [Create your account with a work or school account](sign-up-for-visual-studio-team-services.md)
+* [Create your account with a work or school account](create-account-with-work-school.md)
 
 * [Connect to your account](connect-to-visual-studio-team-services.md)
 

@@ -3,7 +3,7 @@
 
 0. Before you start, if you haven't already:
 
- * [Sign up and create your team project](../../accounts/sign-up-for-visual-studio-team-services.md).
+ * [Sign up and create your team project](../../accounts/create-account-with-work-school.md).
  * Install [Visual Studio 2013 or later](https://www.visualstudio.com/en-us/downloads).
 
 0. Go to your team project's page 
