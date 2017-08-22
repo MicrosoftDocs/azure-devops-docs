@@ -90,7 +90,7 @@ for users who need Test hub access.
 
 0. [Add your users who need Basic access](../accounts/add-account-users-assign-access-levels-team-services.md) 
 to your Team Services account and 
-[assign them the Test Manager extension](../marketplace/get-vsts-extensions.md#assign-extension) 
+[assign them the Test Manager extension](../marketplace/assign-paid-extensions.md) 
 so that you can track these users.
 
 	Though these users will get invited to your Team Services account, 

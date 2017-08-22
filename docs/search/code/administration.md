@@ -47,7 +47,7 @@ For more details, see [Install an extension](../../marketplace/get-vsts-extensio
 <a name="uninstall-ts"></a>
 ## Uninstall Code Search in VSTS
 
-See [Uninstall or disable an extension](../../marketplace/get-vsts-extensions.md#uninstall-disable-extension) in the Marketplace documentation. 
+See [Uninstall or disable an extension](../../marketplace/uninstall-disable-vsts-extensions.md) in the Marketplace documentation. 
 
 <a name="config-tfs"></a>
 ## Configure Code Search/Work Item Search in Team Foundation Server

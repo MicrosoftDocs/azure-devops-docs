@@ -14,8 +14,6 @@
     href: ../marketplace/install-vsts-extension.md
   - name: Request permission for an extension
     href: ../marketplace/request-vsts-extension.md
-  - name: Assign paid extensions access
-    href: ../marketplace/assign-paid-extensions.md
 - name: Tutorials
   items:
   - name: Change Azure AD tenant
@@ -38,8 +36,12 @@
     href: buy-load-testing-vs.md
   - name: Change number of paid users
     href: change-number-of-paid-users.md
+  - name: Change number of paid extension users
+    href: ../billing/change-number-paid-extension-users.md
   - name: Approve requests for Team Services extensions
     href: ../marketplace/approve-vsts-extensions.md
+  - name: Assign paid extensions access
+    href: ../marketplace/assign-paid-extensions.md
   - name: Uninstall or disable extensions
     href: ../marketplace/uninstall-disable-vsts-extensions.md
   - name: Buy Visual Studio subscriptions

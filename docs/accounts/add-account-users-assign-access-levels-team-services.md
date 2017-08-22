@@ -64,7 +64,7 @@ Make sure to sign in with the ID that you used to purchase your subscriptions.
 > [restrict permissions](restrict-access-tfs.md).
 > To change how many users can access 
 > paid extensions in your Team Services account, 
-> learn [how to change paid extension users](../marketplace/get-vsts-extensions.md#change-extension-quantity).
+> learn [how to change paid extension users](../billing/change-number-paid-extension-users.md).
 > </div>
 
 When people don't need access to your Team Services account anymore,

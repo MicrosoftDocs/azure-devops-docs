@@ -64,7 +64,7 @@ to use for billing purchases from the Visual Studio Marketplace
 
 	For example, you can use the Azure subscription that's linked to 
 	your Visual Studio Team Services account, if your account is already 
-	[set up for billing](../billing/set-up-billing-for-your-account-vs.md). 
+	[set up for billing](set-up-billing-for-your-account-vs.md). 
 	If you don't have an Azure subscription, you can 
 	[sign up for Azure](https://account.windowsazure.com/Subscriptions) 
 	before or during your first Marketplace purchase. Learn more about 
@@ -144,7 +144,7 @@ Learn more about [HockeyApp and Visual Studio Team Services](http://hockeyapp.ne
 as the Team Services account owner.
 
 	If you're not the Team Services account owner,
-	learn how to [request extensions](get-vsts-extensions.md#request).
+	learn how to [request extensions](../marketplace/request-vsts-extension.md).
 
 0.	Install the [HockeyApp extension](https://marketplace.visualstudio.com/items?itemName=ms.hockeyapp) 
 in your Team Services account. Learn more at 

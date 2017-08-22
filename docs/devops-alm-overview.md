@@ -361,7 +361,7 @@ Monitor your web and device apps to gain actionable insight to improve performan
 <div style="float:left;width:210px;margin:6px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">HockeyApp</p>
 <li style="margin-bottom:2px">[Manage mobile apps with HockeyApp](https://support.hockeyapp.net/kb/app-management-2/how-to-create-a-new-app)</li>
-<li style="margin-bottom:2px">[Get HockeyApp plans](marketplace/get-hockeyapp.md)</li>
+<li style="margin-bottom:2px">[Get HockeyApp plans](billing/get-hockeyapp.md)</li>
 <li style="margin-bottom:2px">[Get HockeyApp extension](https://marketplace.visualstudio.com/items?itemname=ms.hockeyapp)</li>
 </ul>
 </div>

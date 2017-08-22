@@ -17,17 +17,19 @@
   - name: How to buy TFS extensions
     href: get-tfs-extensions.md
   - name: How to buy HockeyApp
-    href: get-hockeyapp.md
+    href: ../billing/get-hockeyapp.md
   - name: How to buy Visual Studio subscriptions
     href: ../billing/vs-subscriptions/buy-vs-subscriptions.md
   - name: How to buy Xamarin University
-    href: xamarin-univ.md
+    href: ../billing/xamarin-univ.md
 - name: How to guides
   items:
   - name: Rate and review extensions
     href: rating-and-review.md
 - name: Troubleshooting
   items:
+  - name: Getting and paying for extensions
+    href: faq-extensions.md  
 - name: Resources
   items:
   - name: How to set up billing

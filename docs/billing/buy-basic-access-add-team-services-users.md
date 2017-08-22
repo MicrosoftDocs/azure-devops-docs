@@ -48,7 +48,7 @@ you can still [find those steps here](#update-paid-users-azure).
 > <p><a data-toggle="collapse" href="#expando-change-paid-extension-users">Need to change paid extension users instead? &#x25BC;</a></p>
 > <div class="collapse" id="expando-change-paid-extension-users">
 > <p>To change the number of paid extension users that you have in your Team Services account, 
-> learn [how to update your paid extension users here](../marketplace/get-vsts-extensions.md#change-extension-quantity).
+> learn [how to update your paid extension users here](change-number-paid-extension-users.md).
 > </div>
 >
 > <p><a data-toggle="collapse" href="#expando-access-vs-perms">How does access differ from permissions? &#x25BC;</a></p>

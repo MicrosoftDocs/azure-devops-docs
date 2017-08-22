@@ -49,7 +49,7 @@
     - name: Save team project data
       href: save-team-project-data.md
     - name: Connect to team projects in various ways
-      href: /vsts/connect/connect-team-projects?toc=/vsts/setup-admin/toc.json
+      href: /vsts/connect/connect-team-projects?toc=/vsts/accounts/toc.json
   - name: Manage account access
     items:
     - name: "User hub: add users to your account"
@@ -106,10 +106,16 @@
     items:
     - name: Install an extension
       href: ../marketplace/install-vsts-extension.md
+    - name: Install an extension for Team Services
+      href: ../billing/get-vsts-extensions.md
+    - name: Approve requests for Team Services extensions
+      href: ../marketplace/approve-vsts-extensions.md
     - name: Request permission for an extension
       href: ../marketplace/request-vsts-extension.md
     - name: Assign paid extensions access
       href: ../marketplace/assign-paid-extensions.md
+    - name: Uninstall or disable extensions
+      href: ../marketplace/uninstall-disable-vsts-extensions.md
 - name: Concepts
   items:
   - name: Permissions and access
@@ -141,18 +147,10 @@
       href: ../billing/buy-basic-access-add-team-services-users.md
     - name: Change number of paid users
       href: ../billing/change-number-of-paid-users.md
+    - name: Change number of paid extension users
+      href: ../billing/change-number-paid-extension-users.md
     - name: How to buy build pipelines
       href: ../billing/buy-more-build-vs.md
-    - name: Install an extension for Team Services
-      href: ../billing/get-vsts-extensions.md
-    - name: Request permissions for Team Services extensions
-      href: ../marketplace/request-vsts-extension.md
-    - name: Approve requests for Team Services extensions
-      href: ../marketplace/approve-vsts-extensions.md
-    - name: Assign paid extension access to users
-      href: ../marketplace/assign-paid-extensions.md
-    - name: Uninstall or disable extensions
-      href: ../marketplace/uninstall-disable-vsts-extensions.md
   - name: Account preferences
     href: account-preferences.md
   - name: Migrate from TFS to Team Services Tutorial

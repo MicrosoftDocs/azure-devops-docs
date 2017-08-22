@@ -72,10 +72,10 @@ Charges won't start until the trial ends.
 > [!TIP]
 > You only have to buy and assign extensions for users who need access. 
 > Some extensions include free users. To keep access to such extensions, 
-> [assign the extension up to the number of free users that you get](../marketplace/get-vsts-extensions.md#assign-extension). 
+> [assign the extension up to the number of free users that you get](../marketplace/assign-paid-extensions.md). 
 > For additional users who need access, 
 > [buy the extension from the Visual Studio Marketplace](../marketplace/get-vsts-extensions.md) 
-> and [assign the extension to these users](../marketplace/get-vsts-extensions.md#assign-extension). 
+> and [assign the extension to these users](../marketplace/assign-paid-extensions.md). 
 > If you have [Visual Studio subscribers](https://marketplace.visualstudio.com/subscriptions), 
 > check their subscription benefits. These users get additional features, 
 > like Test Manager, included with their subscriptions as benefits. 
@@ -83,7 +83,7 @@ Charges won't start until the trial ends.
 > can continue using them without paid access and assignment.
 > 
 > To change the number of users that already have paid extension access, 
-> learn [how to change that quantity here](../marketplace/get-vsts-extensions.md#change-extension-quantity).
+> learn [how to change that quantity here](change-number-paid-extension-users.md).
 
 If you lose access because the trial expires, 
 just follow these steps to buy and assign the 
@@ -96,7 +96,7 @@ only for users who need access.
 
 	![Users hub, extension pane](_img/try-additional-features/extension-trial-in-account-updated-ui.png)
 
-0.	[Assign the extension](../marketplace/get-vsts-extensions.md#assign-extension) 
+0.	[Assign the extension](../marketplace/assign-paid-extensions.md) 
 only to users who need access.
 
 [Need help?](#get-support)
@@ -126,7 +126,7 @@ A:  You can start an extension trial only once per account.
 
 A:	You must be the Team Services [account owner or project collection administrator](#find-owner) 
 to start an extension trial for the selected Team Services account. If you don't have permissions, 
-you can [request the extension](../marketplace/get-vsts-extensions.md#request) instead. 
+you can [request the extension](../marketplace/request-vsts-extension.md) instead. 
 
 <a name="check-trial"></a>
 ####Q:		How do I check an extension's trial status?
