@@ -297,6 +297,10 @@ displays the approval dialog.
 
 ![Approving a task step for a release in the Summary page](_img/view-manage-releases/approve-01c.png)
 
+If there is more than one approval waiting for the same user, the reminder will
+contain two links, **All** and **Selected environments**. This saves the user
+from needing to interact with each approval request individually.
+
 Use the approvers pop-up dialog to:
 
 * Enter a comment
