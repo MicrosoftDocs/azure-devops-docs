@@ -11,7 +11,7 @@ ms.date: 3/13/2017
 
 # Artifacts in Team Build
 
-**Team Services | TFS 2015 Update 3 and newer | TFS 2015 RTM ([see Q&A](#tfs-2015)) | [Previous versions (XAML builds)](http://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx)**
+**VSTS | TFS 2015 Update 3 and newer | TFS 2015 RTM ([see Q&A](#tfs-2015)) | [Previous versions (XAML builds)](http://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx)**
 
 Artifacts are the files that you want your build to produce. Artifacts can be nearly anything your team needs to test or deploy your app. For example, you've got a .DLL and .EXE executable files and .PDB symbols file of a C# or C++ .NET Windows app.
 
@@ -133,13 +133,13 @@ For the full example, see [Build your C++ app for Windows](../../../apps/windows
 
 ## Tips
 
-* **Artifact type** argument: **Server** is the best and simplest choice in most cases. This choice causes the artifacts to be stored in Team Services or TFS. But if you're using a private Windows agent, you've got the option [drop to a UNC file share](#unc-file-share).
+* **Artifact type** argument: **Server** is the best and simplest choice in most cases. This choice causes the artifacts to be stored in VSTS or TFS. But if you're using a private Windows agent, you've got the option [drop to a UNC file share](#unc-file-share).
 
 * **Artifact name** argument: Just enter a name that's meaningful to you.
 
 * Use forward slashes in file path arguments so that they work for all agents. Backslashes don't work for macOS and Linux agents.
 
-* On Team Services and some versions of TFS there are two different [variables](../../../define/variables.md) that point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable. 
+* On VSTS and some versions of TFS there are two different [variables](../../../define/variables.md) that point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable. 
 
 * The directory referenced by `Build.ArtifactStagingDirectory` is cleaned up after each build.
 

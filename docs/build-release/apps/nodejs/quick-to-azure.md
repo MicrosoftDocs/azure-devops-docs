@@ -1,5 +1,5 @@
 ---
-title: Quick Start - Build and Deploy a Node.js app | Team Services
+title: Quick Start - Build and Deploy a Node.js app | VSTS
 description: Set up a continuous integration (CI) build for your Node.js app, and then a continuous deployment (CD) release to Azure using Visual Studio Team Services
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
@@ -17,7 +17,7 @@ Node.js apps.
 This quickstart shows how to set up CI and CD to deploy
 a Node.js app
 to an Azure web app. 
-You create the web app using the Azure CLI, then set up CI/CD in Team Services.
+You create the web app using the Azure CLI, then set up CI/CD in VSTS.
 In the CI process, you use Gulp to run Mocha tests.
 
 ![node.js web app](_img/nodejs-web-app.png)
@@ -42,7 +42,7 @@ In the right panel, search for `node`, select **NodeJS with Gulp**, and then cli
 
 [!INCLUDE [temp](../../apps/_shared/set-up-ci-2.md)]
 
-Select the **Run gulp task** from the tasks. On the right side, you see the parameters for the task. Under the section **JUnit Test Results**, select the option to **Publish to TFS/Team Services**.
+Select the **Run gulp task** from the tasks. On the right side, you see the parameters for the task. Under the section **JUnit Test Results**, select the option to **Publish to TFS/VSTS**.
 
 [!INCLUDE [temp](../../apps/_shared/set-up-ci-3.md)]
 

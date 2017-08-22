@@ -12,7 +12,7 @@ ms.date: 4/19/2017
 
 # Tasks for Build and Release
 
-**TFS 2015 | TFS 2017 | Team Services**
+**TFS 2015 | TFS 2017 | VSTS**
 
 A **task** is the building block for defining automation in a
 build definition, or in an environment of a release definition.
@@ -24,7 +24,7 @@ In addition, [Visual Studio Marketplace](https://marketplace.visualstudio.com/VS
 offers a number of extensions; each of which, when installed to your
 account or collection, extends the task catalog with one or more tasks.
 Furthermore, you can write your own [custom extensions](../../../integrate/index.md)
-to add tasks to your account in Team Services or your collection in TFS.
+to add tasks to your account in VSTS or your collection in TFS.
 
 When you add a task to your build or release definition, it may also add a set of **demands** to the definition. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.
 
@@ -72,7 +72,7 @@ when you want to temporarily take task out of the process for testing or for spe
 The timeout for this task in minutes. The default is zero (infinite timeout).
 Setting a value other than zero overrides the setting for the parent task phase.
 
-### Team Services options
+### VSTS options
 
 #### Continue on error (partially successful)
 
@@ -98,11 +98,11 @@ Select this option if you want subsequent tasks in the same phase to run even if
 
 Select this check box if you want the task to run even if the build or deployment is failing.
 
-<h2 id="tool-installers">Build tool installers (Team Services)</h2>
+<h2 id="tool-installers">Build tool installers (VSTS)</h2>
 
-> **Team Services preview feature**
+> **VSTS preview feature**
 >
-> To use this capability you must be working on Team Services and enable the **Task tool installers** [preview feature](../../../collaborate/preview-features.md) for your account.
+> To use this capability you must be working on VSTS and enable the **Task tool installers** [preview feature](../../../collaborate/preview-features.md) for your account.
 
 Tool installers enable your build process to install and control your dependencies. Specifically, you can:
 

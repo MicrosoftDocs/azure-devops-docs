@@ -1,1 +1,1 @@
-Click **Import** to copy the sample app code into your Team Services Git repository.
+Click **Import** to copy the sample app code into your VSTS Git repository.

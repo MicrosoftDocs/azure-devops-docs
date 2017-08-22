@@ -275,7 +275,7 @@ None
 </table>
 
 ## End-to-end example
-You want to package and publish some projects in a C# class library to your Team Services feed.
+You want to package and publish some projects in a C# class library to your VSTS feed.
 
 ```
 `-- Message
@@ -356,7 +356,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
     <tr>
         <td>![Package: NuGet](../package/_img/nuget.png)<br/>**Package: NuGet**</td>
         <td>
-            <p>Publish your packages to Team Services.</p>
+            <p>Publish your packages to VSTS.</p>
             <ul>
                 <li>Command: push</li>
                 <li>Path to NuGet package(s) to publish: ```$(Build.ArtifactStagingDirectory)```</li>

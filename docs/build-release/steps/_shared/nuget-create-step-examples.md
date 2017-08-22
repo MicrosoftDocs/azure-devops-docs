@@ -1,4 +1,4 @@
-You want to package and publish some projects in a C# class library to your Team Services feed.
+You want to package and publish some projects in a C# class library to your VSTS feed.
 
 ```
 `-- Message
@@ -79,7 +79,7 @@ See [Create a feed](../../../package/feeds/create-feed.md).
 <tr>
 <td>![Package: NuGet Publisher](../package/_img/nuget-publisher.png)<br/>**Package: NuGet Publisher**</td>
 <td>
-<p>Publish your packages to Team Services.</p>
+<p>Publish your packages to VSTS.</p>
 <ul>
 <li>Path/Pattern to nupkg: ```**\*.nupkg```</li>
 <li>Feed type: Internal NuGet Feed</li>

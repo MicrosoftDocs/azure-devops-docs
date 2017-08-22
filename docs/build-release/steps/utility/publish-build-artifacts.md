@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Utility: Publish Build Artifacts
 
-**Team Services | TFS 2017 | TFS 2015 Update 3 | [TFS 2015 RTM](copy-and-publish-build-artifacts.md) | [Previous versions (XAML builds)](http://msdn.microsoft.com/library/bb778394%28v=vs.120%29.aspx)**
+**VSTS | TFS 2017 | TFS 2015 Update 3 | [TFS 2015 RTM](copy-and-publish-build-artifacts.md) | [Previous versions (XAML builds)](http://msdn.microsoft.com/library/bb778394%28v=vs.120%29.aspx)**
 
 ![](_img/publish-build-artifacts.png) Publish Build artifacts to the server or a file share.
 

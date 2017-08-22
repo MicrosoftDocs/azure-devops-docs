@@ -20,7 +20,7 @@ Visual Studio Team Services (formerly Visual Studio Online) and Team Foundation 
 To streamline CI for Cordova-based projects, we have created a series of build tasks (or steps) that you can use: **Cordova Build**, **[Cordova Command](./cordova-command.md)**, **[Ionic Command](./cordova-command.md)**, and **[PhoneGap Command](./cordova-command.md)**. These tasks will automatically handle fetching the correct version of the appropriate CLI and even setup the correct version of Node.js for you if not present!
 
 **Article sections:**
-* [Installing the VS Team Services Extension for Cordova](#install)
+* [Installing the VSTS Extension for Cordova](#install)
 * [Building Android, Windows, or Windows Phone 8.0 on Windows](#win)
 * [Building iOS on OSX](#osx)
 * [Optional: Using Gulp for script compilation and running tests](#gulp)
@@ -31,7 +31,7 @@ To streamline CI for Cordova-based projects, we have created a series of build t
 To setup a Cordova build in Visual Studio Team Services or TFS 2015, you will need to install the Cordova Build task in your collection.
 
 * **Visual Studio Team Services / Visual Studio Online**: Simply install the [Visual Studio Team Services Extension for Cordova](http://go.microsoft.com/fwlink/?LinkID=691835). 
-* **TFS 2015 Update 1 and Earlier**: TFS 2015 Update 1 and below does not support installing Team Services Extensions. Follow the instructions in the [cordova-tasks](http://go.microsoft.com/fwlink/?LinkID=691187) repository to install.
+* **TFS 2015 Update 1 and Earlier**: TFS 2015 Update 1 and below does not support installing VSTS Extensions. Follow the instructions in the [cordova-tasks](http://go.microsoft.com/fwlink/?LinkID=691187) repository to install.
 
 ## Project setup and build definitions
 We'll assume for the purposes of this tutorial that you want to build a Cordova app for Android, iOS, and Windows and you want to build everything on Windows except iOS. We will accomplish this by using the concept of a "demand" in two separate build definitions to route the work to the correct OS.
@@ -66,7 +66,7 @@ Detailed instructions on creating build definitions in TFS 2015 can be found in 
 	  	<ul>
         <li>**Platform**: android</li>
 		    <li>**Configuration**: debug or release. You can also use a variable from the Variables tab to allow you to select at build time.</li>
-		    <li>**Cordova Version**: Version of the Cordova CLI you want to use to build. If you're using Tools for Apache Cordova you can leave this blank and the correct version will be used based on the contents of taco.json. Otherwise, if not specified, it uses the version specified by the CORDOVA_DEFAULT_VERSION environment variable (like in Team Services) and falls back to the latest version if no environment variable is set.</li>
+		    <li>**Cordova Version**: Version of the Cordova CLI you want to use to build. If you're using Tools for Apache Cordova you can leave this blank and the correct version will be used based on the contents of taco.json. Otherwise, if not specified, it uses the version specified by the CORDOVA_DEFAULT_VERSION environment variable (like in VSTS) and falls back to the latest version if no environment variable is set.</li>
 		    <li>**Android**: You may use these values to specify signing information for this build. See **[securing your signing keys](secure-certs.md)** for details.</li>
 		    <li>**Advanced &gt; Working Directory**: Location of the Cordova project itself inside your repository.</li>
 		  </ul>
@@ -169,7 +169,7 @@ To add TypeScript compilation into your build definition using Gulp, follow thes
 ### Using Gulp to run tests
 You can also use the exact same Gulp build step above to run your tests! The scripts [from the GitHub repo](http://go.microsoft.com/fwlink/?LinkID=691189) mentioned above are ready for use with [Jasmine](http://jasmine.github.io/), [Karma](http://karma-runner.github.io/), and [PhantomJS](http://phantomjs.org/). See the [Cordova test tutorials](http://go.microsoft.com/fwlink/?LinkID=691195) for details on setting up Gulp to run your tests. 
 
-Next, we will configure the definition to publish your test results to VS Team Services or TFS.
+Next, we will configure the definition to publish your test results to VSTS or TFS.
 
 <table>
    <tr>
@@ -197,9 +197,9 @@ That's it!
 
 <a name="agentsetup"></a>
 ##In Depth: Private build agent setup
-As of this writing, you can build Cordova apps targeting Android, Windows, and Windows Phone using the Hosted Agent Pool in Visual Studio Team Services. This allows you to build without setting up a Windows build agent on premise. MacinCloud provides a [special plan](http://go.microsoft.com/fwlink/?LinkID=691834) and streamlined setup experience for Team Services agents targeted at buillding iOS in the cloud. All Cordova prerequisites should already be installed and configured when using the Hosted Agent Pool in Visual Studio Team Services or MacinCloud's special Team Services plan.
+As of this writing, you can build Cordova apps targeting Android, Windows, and Windows Phone using the Hosted Agent Pool in Visual Studio Team Services. This allows you to build without setting up a Windows build agent on premise. MacinCloud provides a [special plan](http://go.microsoft.com/fwlink/?LinkID=691834) and streamlined setup experience for VSTS agents targeted at buillding iOS in the cloud. All Cordova prerequisites should already be installed and configured when using the Hosted Agent Pool in Visual Studio Team Services or MacinCloud's special VSTS plan.
 
-If you are not using the Visual Studio Team Services Hosted Agent Pool or MacinCloud's streamlined [VS Team Services plan](http://go.microsoft.com/fwlink/?LinkID=691834), you can use your own hardware instead. Because of its design, you can easily install the Windows agent on Windows or the [cross-platform agent](http://go.microsoft.com/fwlink/?LinkID=533789) on a Mac and integrate with either TFS or Visual Studio Team Services. The build machine simply needs to have HTTP access to the server with your TFS collection or Visual Studio Team Services. 
+If you are not using the Visual Studio Team Services Hosted Agent Pool or MacinCloud's streamlined [VSTS plan](http://go.microsoft.com/fwlink/?LinkID=691834), you can use your own hardware instead. Because of its design, you can easily install the Windows agent on Windows or the [cross-platform agent](http://go.microsoft.com/fwlink/?LinkID=533789) on a Mac and integrate with either TFS or Visual Studio Team Services. The build machine simply needs to have HTTP access to the server with your TFS collection or Visual Studio Team Services. 
 
 ### Custom Agent Setup
 Since the build process we will describe here is not directly dependent on MSBuild or Visual Studio for Android, you have two options for installing prerequisites on Windows:

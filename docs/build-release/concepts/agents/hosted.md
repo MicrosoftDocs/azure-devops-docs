@@ -11,7 +11,7 @@ ms.date: 11/28/2016
 
 # Hosted agents
 
-**Team Services**
+**VSTS**
 
 If you use Visual Studio Team Services, to build or deploy your app, then it's more convenient to use our hosted agents, but some limitations apply. 
 
@@ -68,7 +68,7 @@ When you use a hosted agent, you should always use [variables](../../define/vari
 
 ### I can't select the hosted queue and I can't queue my build or deployment. How do I fix this?
 
-By default, all project contributors in an account have access to the hosted queue. But, your account administrator may have limited the access of hosted queue to select users or projects. Ask the owner of your Team Services account to grant you permission to use the queue. See [agent queue security](pools-queues.md#security).
+By default, all project contributors in an account have access to the hosted queue. But, your account administrator may have limited the access of hosted queue to select users or projects. Ask the owner of your VSTS account to grant you permission to use the queue. See [agent queue security](pools-queues.md#security).
 
 ### I need more agents. What can I do?
 

@@ -19,7 +19,7 @@ for example, "Dev", "Test", "UAT", and "Production". In effect, a
 deployment group is just another grouping of agents, much like an
 [agent pool](../../../agents/pools-queues.md).
 
-When authoring a Team Services or TFS Release definition, you
+When authoring a VSTS or TFS Release definition, you
 can specify the deployment targets for a [phase](../../../process/phases.md)
 using a deployment group. This makes it easy to define
 [parallel execution](../../../process/phases.md#parallelexec)
@@ -61,7 +61,7 @@ type of agent to suit the target operating system and platform; such as Windows
 and Linux.
 
 If the target machines are Azure VMs, you can quickly and easily prepare them by
-by installing the **Team Services Agent** Azure VM extension on each of the VMs,
+by installing the **VSTS Agent** Azure VM extension on each of the VMs,
 or by using the **Azure Resource Group Deployment** task in your release definition
 to create a deployment group dynamically. 
 

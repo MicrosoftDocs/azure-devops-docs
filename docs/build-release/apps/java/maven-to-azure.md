@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Build and Deploy your Java app to an Azure web app
 
-**[Team Services](../java/quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../release/previous-version/release-management-overview.md)**
+**[VSTS](../java/quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../release/previous-version/release-management-overview.md)**
 
 In just a few steps you can build and deploy your Java app to Azure. This works from both the Visual Studio Team Services service and your on-premises Team Foundation Server.
 

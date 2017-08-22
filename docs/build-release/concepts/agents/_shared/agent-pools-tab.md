@@ -1,5 +1,5 @@
 <ul>
-<li>Team Services: <code>https:&#x2F;&#x2F;{your_account}.visualstudio.com/_admin/_AgentPool</code></li>
+<li>VSTS: <code>https:&#x2F;&#x2F;{your_account}.visualstudio.com/_admin/_AgentPool</code></li>
 
 <li>TFS 2017: <code>https:&#x2F;&#x2F;{your_server}/tfs/DefaultCollection/_admin/_AgentPool</code></li>
 

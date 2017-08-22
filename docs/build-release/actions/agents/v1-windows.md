@@ -10,7 +10,7 @@ ms.date: 08/26/2016
 ---
 # Deploy an agent on Windows for TFS 2015
 
-**[Team Services](v2-windows.md) | [TFS 2017](v2-windows.md) | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
+**[VSTS](v2-windows.md) | [TFS 2017](v2-windows.md) | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you may need a Windows agent. Windows agents can also build and deploy Java and Android apps.
 
@@ -77,7 +77,7 @@ You can use command-line parameters when you configure the agent (```ConfigureAg
 ### Common parameters
 
 */Login:UserName,Password[;AuthType=(AAD|Basic|PAT)]*  
-Used for configuration commands against a Team Services account. The parameter is used to specify the pool administrator credentials. The credentials are used to perform the pool administration changes and are not used later by the agent.  
+Used for configuration commands against a VSTS account. The parameter is used to specify the pool administrator credentials. The credentials are used to perform the pool administration changes and are not used later by the agent.  
 
 When using personal access tokens (PAT) authentication type, specify anything for the user name and specify the PAT as the password.
 

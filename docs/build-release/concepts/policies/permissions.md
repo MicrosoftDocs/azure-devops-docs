@@ -11,12 +11,12 @@ ms.date: 08/26/2016
 
 # Build and release permissions
 
-**Team Services | TFS 2017 | TFS 2015**
+**VSTS | TFS 2017 | TFS 2015**
 
 Team Build and Release Management offer several features to help you
 enforce the security requirements of your team and your
 organization. This security is based on the standard model in Team
-Foundation Server and Team Services.
+Foundation Server and Visual Studio Team Services.
 
 **Permissions** define the authorizations that can be granted or
 denied to users and groups. These permissions can usually be granted or
@@ -30,10 +30,10 @@ provide convenient starting points for managing users.
 Permissions can be set both on specific users and on Team 
 Foundation user groups. If you are using Build and Release
 Management in TFS, you can also use Active Directory groups to
-manage permissions. If you are using Team Services, and your Team
+manage permissions. If you are using VSTS, and your Team
 Services account is integrated with Azure Active Directory (AAD),
 you can also use AAD groups. For more details, see
-[Permissions and groups in Team Services and TFS](../../../security/permissions.md).
+[Permissions and groups in VSTS and TFS](../../../security/permissions.md).
 
 ## Security of agents and library entities
 

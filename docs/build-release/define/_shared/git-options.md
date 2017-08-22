@@ -2,7 +2,7 @@
 
 **Checkout files from LFS:** Select if you want to download files from [large file storage (LFS)](https://www.visualstudio.com/en-us/docs/git/manage-large-files#use-git-large-file-storage-lfs).
 
-* **Team Services:** Select the check box to enable this option.
+* **VSTS:** Select the check box to enable this option.
 
 * **TFS 2017 and TFS 2015 (OSX and Linux only):** On the **Variables** tab, set _Agent.Source.Git.Lfs_ to _true_.
 
@@ -16,8 +16,8 @@
 
 In these cases this option can help you conserve network and storage resources. It might also save time. The reason it doesn't always save time is because in some situations the server might need to spend time calculating the commits to download. 
 
-* **Team Services:** After you select the check box to enable this option, in the **Depth** box specify the number of commits. 
+* **VSTS:** After you select the check box to enable this option, in the **Depth** box specify the number of commits. 
 
 * **TFS 2017 and TFS 2015 (OSX and Linux only):** On the **Variables** tab, set _Agent.Source.Git.ShallowFetchDepth_ to the number of commits in history you want to download. Specify 0 to set no limit.
 
-> **Tip:** If you're using Team Services, the above variables also work and override the check box controls. So for example, you can override the setting when you queue the build.
+> **Tip:** If you're using VSTS, the above variables also work and override the check box controls. So for example, you can override the setting when you queue the build.

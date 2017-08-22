@@ -12,7 +12,7 @@ ms.date: 04/26/2017
 
 # Secure files
 
-**Team Services**
+**VSTS**
 
 Use the **Secure Files** library to store files such as signing certificates, Apple Provisioning Profiles, Android Keystore files, and SSH keys on the server without having to commit them to your source repository. Secure files are defined and managed in the **Library** tab of the **Build &amp; Release** hub.
 

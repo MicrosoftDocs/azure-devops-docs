@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Build definition triggers
 
-**Team Services | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190718%28v=vs.120%29.aspx)**
+**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190718%28v=vs.120%29.aspx)**
 
 <!--
 <div style="padding:5px;border-bottom:1px solid #ccc;font-family:Segoe UI;font-size:13px;margin-bottom:15px">
@@ -41,9 +41,9 @@ If you are using batched changes, you can also specify a maximum number of concu
 
 If your repository is Git then you can specify the branches where you want to trigger builds. You can use wildcard characters.
 
-#### Path filters in Team Services and Team Foundation Services (TFS)
+#### Path filters in Visual Studio Team Services and Team Foundation Services (TFS)
 
-If your Git repo is in Team Services or TFS, you can also specify path filters to reduce the set of files that you want to trigger a build.
+If your Git repo is in VSTS or TFS, you can also specify path filters to reduce the set of files that you want to trigger a build.
 
  > **Tips:**
  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
@@ -55,7 +55,7 @@ If your Git repo is in Team Services or TFS, you can also specify path filters t
 
 For example, you want your build to be triggered by changes in master and most, but not all, of your feature branches. You also don't want builds to be triggered by changes to files in the tools folder.
 
-**Team Services**
+**VSTS**
 
 ![ci trigger git branches](_img/triggers/ci-trigger-git-branches-neweditor.png)
 
@@ -70,7 +70,7 @@ Select the version control paths you want to include and exclude. In most cases,
 
 ### CI trigger for a remote Git repo or Subversion
 
-You can also select the CI trigger if your code is in a remote Git repo or Subversion. In this case we poll for changes at a regular interval. For this to work, Team Services or your Team Foundation Server must be able to resolve the network address of the service or server where your code is stored. For example if there's a firewall blocking the connection, then the CI trigger won't work. 
+You can also select the CI trigger if your code is in a remote Git repo or Subversion. In this case we poll for changes at a regular interval. For this to work, VSTS or your Team Foundation Server must be able to resolve the network address of the service or server where your code is stored. For example if there's a firewall blocking the connection, then the CI trigger won't work. 
 
 
 ## Scheduled
@@ -82,7 +82,7 @@ If your repository is Git, GitHub, or External Git, then you can also specify br
 
 ### Example: Nightly build of Git repo in multiple time zones
 
-**Team Services**
+**VSTS**
 
 ![scheduled trigger multiple time zones](_img/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
 
@@ -93,7 +93,7 @@ If your repository is Git, GitHub, or External Git, then you can also specify br
 
 ### Example: Nightly build with different frequencies
 
-**Team Services**
+**VSTS**
 
 ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
 
@@ -145,11 +145,11 @@ If your code is in a Git repo on Visual Studio Team Services or Team Foundation 
 
 ### My build didn't run. What happened?
 
-If your build is in Team Services, then at least one of your users must sign in regularly for CI and scheduled builds to run. Your Team Services account goes dormant five minutes after the last user signed out. After that, each of your build definitions will run one more time. 
+If your build is in VSTS, then at least one of your users must sign in regularly for CI and scheduled builds to run. Your VSTS account goes dormant five minutes after the last user signed out. After that, each of your build definitions will run one more time. 
 
 For example, while your account is dormant:
 
- * A nightly build of code in your Team Services account will run only one night until someone signs in again.
+ * A nightly build of code in your VSTS account will run only one night until someone signs in again.
 
  * CI builds of an external Git repo will stop running until someone signs in again.
 

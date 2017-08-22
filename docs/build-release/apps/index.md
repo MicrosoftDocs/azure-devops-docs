@@ -1,5 +1,5 @@
 ---
-title: Build and deploy your app - examples | Team Services & TFS 
+title: Build and deploy your app - examples | VSTS & TFS 
 description: Build and deploy your app examples with Visual Studio Team Services and Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
@@ -95,7 +95,7 @@ continuous integration (CI) and continuous deployment (CD) process.
 <p style="font-weight:bold;padding-top:10px">More examples</p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:5px">[Continuous integration, test, and deployment](../test/example-continuous-testing.md)</li>
- <li style="margin-bottom:5px">[Continuous integration for a Service Fabric app using Team Services](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-set-up-continuous-integration/)</li>
+ <li style="margin-bottom:5px">[Continuous integration for a Service Fabric app using VSTS](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-set-up-continuous-integration/)</li>
 </ul>
 </div>
 

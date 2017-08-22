@@ -11,7 +11,7 @@ ms.date: 7/05/2017
 
 # Tool: NuGet Tool Installer
 
-**Team Services**
+**VSTS**
 
 **Build**
 

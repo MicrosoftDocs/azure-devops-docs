@@ -11,7 +11,7 @@ ms.date: 08/18/2016
 
 # Build variables
 
-**Team Services | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh850448%28v=vs.120%29.aspx)**
+**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh850448%28v=vs.120%29.aspx)**
 
 [!INCLUDE [temp](../_shared/ci-cd-newbies.md)]
 
@@ -49,7 +49,7 @@ User-defined variables are formatted differently in different contexts. See abov
 We recommend that you make the variable ![Secret](../_shared/_img/secret-variable-icon.png)
 **Secret** if it contains a password, keys, or some other kind of data that you need to avoid exposing.
 
-**Team Services**
+**VSTS**
 
 ![Keep password secret](_img/variables/keep-password-secret-neweditor.png)
 
@@ -112,7 +112,7 @@ You can pass environment variables of the build machine into build steps. For ex
 | Build.DefinitionVersion<br />BUILD_DEFINITIONVERSION | All | The version of the build definition.|
 | Build.QueuedBy<br />BUILD_QUEUEDBY | All (see Notes) | [How are the identity variables set?](#identity_values)<br /><br />[!INCLUDE [include](_shared/variables-invalid-label-characters.md)]|
 | Build.QueuedById<br />BUILD_QUEUEDBYID | All | [How are the identity variables set?](#identity_values)|
-| Build.Reason<br />BUILD_REASON | All | **Team Services Only**<br /><br />The event that caused the build to run:<br /><br />`Manual`: A user manually queued the build.<br /><br />`IndividualCI`: **Continuous integration (CI)** triggered by a Git push or a TFVC check-in.<br /><br />`BatchedCI`: **Continuous integration (CI)** triggered by a Git push or a TFVC check-in, and the **Batch changes** was selected.<br /><br />`Schedule`: **Scheduled** trigger.<br /><br />`ValidateShelveset`: **Gated check-in** trigger.<br /><br />`CheckInShelveset`: A user manually queued the build of a specific TFVC shelveset.<br /><br />`PullRequest`: The build was triggered by a Git branch policy that requires a build.<br /><br />See [Build definition triggers](../define/triggers.md), [Improve code quality with branch policies](../../git/branch-policies.md).|
+| Build.Reason<br />BUILD_REASON | All | **VSTS Only**<br /><br />The event that caused the build to run:<br /><br />`Manual`: A user manually queued the build.<br /><br />`IndividualCI`: **Continuous integration (CI)** triggered by a Git push or a TFVC check-in.<br /><br />`BatchedCI`: **Continuous integration (CI)** triggered by a Git push or a TFVC check-in, and the **Batch changes** was selected.<br /><br />`Schedule`: **Scheduled** trigger.<br /><br />`ValidateShelveset`: **Gated check-in** trigger.<br /><br />`CheckInShelveset`: A user manually queued the build of a specific TFVC shelveset.<br /><br />`PullRequest`: The build was triggered by a Git branch policy that requires a build.<br /><br />See [Build definition triggers](../define/triggers.md), [Improve code quality with branch policies](../../git/branch-policies.md).|
 | Build.Repository.Clean<br />BUILD_REPOSITORY_CLEAN | Agent | The value you've selected for **Clean** on the [repository tab](repository.md).|
 | Build.Repository.LocalPath<br />BUILD_REPOSITORY_LOCALPATH | Agent | [!INCLUDE [include](_shared/variables-build-sources-directory.md)]|
 | Build.Repository.Name<br />BUILD_REPOSITORY_NAME | Agent | The name of the [repository](repository.md).|

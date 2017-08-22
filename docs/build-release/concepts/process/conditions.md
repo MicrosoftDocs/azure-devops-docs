@@ -11,7 +11,7 @@ ms.date: 03/22/2017
 
 # Specify conditions for running a task
 
-**Team Services** 
+**VSTS** 
 
 Inside the **Control Options** of each task, and in the **Additional options** for a phase in a release definition,
 you can specify the conditions under which the task or phase will run:

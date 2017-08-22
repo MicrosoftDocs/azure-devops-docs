@@ -10,11 +10,11 @@ ms.date: 08/26/2016
 ---
 # Agent pools and queues
 
-**Team Services | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dd793166%28v=vs.120%29.aspx)**
+**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dd793166%28v=vs.120%29.aspx)**
 
-Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. An agent pool defines the sharing boundary for all agents in that pool. In TFS, pools are scoped across all of your Team Foundation Server (TFS); so you can share an agent pool across team project collections and team projects. In Team Services, agent pools are scoped to the Team Services account; so you can share an agent pool across team projects.
+Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. An agent pool defines the sharing boundary for all agents in that pool. In TFS, pools are scoped across all of your Team Foundation Server (TFS); so you can share an agent pool across team project collections and team projects. In VSTS, agent pools are scoped to the VSTS account; so you can share an agent pool across team projects.
 
-An **agent queue** provides access to an agent pool. When you create a build or release definition, you specify which queue it uses. Queues are scoped to your team project in TFS 2017 and in Team Services, so you can only use them across build and release definitions within a team project.
+An **agent queue** provides access to an agent pool. When you create a build or release definition, you specify which queue it uses. Queues are scoped to your team project in TFS 2017 and in VSTS, so you can only use them across build and release definitions within a team project.
 
 To share an agent pool with multiple team projects, you create an agent queue pointing to that pool in each of those team projects. While multiple queues across team projects can use the same agent pool, multiple queues within a team project cannot use the same pool. Also, each queue can use only one agent pool.
 
@@ -42,13 +42,13 @@ We provide the following agent pools by default:
 
 * **Default** pool: Use it to register [private agents](agents.md) that you've set up.
 
-* **Hosted** pool (Team Services only): Contains at least one free hosted agent, and also any [hosted agents you've purchased](../licensing/concurrent-pipelines-tfs.md). The **Hosted** pool is the built-in pool that is a collection of hosted agents.
+* **Hosted** pool (VSTS only): Contains at least one free hosted agent, and also any [hosted agents you've purchased](../licensing/concurrent-pipelines-tfs.md). The **Hosted** pool is the built-in pool that is a collection of hosted agents.
 
  We provide the Hosted pool to each team project through a **Hosted** queue. By default, all contributors in a team project are members of the **User** role on a each hosted queue. This allows every contributor in a team project to author and run build and release definitions using the hosted queue.
 
  [Learn more about hosted agents](agents.md).
 
-* **Hosted Linux** pool (Team Services only): Enables you to build and release on
+* **Hosted Linux** pool (VSTS only): Enables you to build and release on
   Linux machines without having to configure a private agent. The agents
   in this pool run on an Ubuntu Linux host inside the
   [**vsts-agent-docker** container](https://github.com/Microsoft/vsts-agent-docker).
@@ -69,9 +69,9 @@ Here are some typical situations when you might want to create agent pools and q
 
 Understanding how security works for agent pools and queues helps you control sharing and use of agents.
 
-### Team Services and TFS 2017
+### VSTS and TFS 2017
 
-In Team Services and TFS 2017, **roles** are defined on each agent pool, and **membership** in these roles governs what operations you can perform on an agent pool.
+In VSTS and TFS 2017, **roles** are defined on each agent pool, and **membership** in these roles governs what operations you can perform on an agent pool.
 
 | Role on an agent pool | Purpose |
 |------|---------|
@@ -109,7 +109,7 @@ On the Create Queue dialog box, you can't use an existing pool if it is already 
 
 ### I can't select the Hosted queue and I can't queue my build. How do I fix this?
 
-Ask the owner of your Team Services account to grant you permission to use the queue. See [Security of agent pools and queues](#security).
+Ask the owner of your VSTS account to grant you permission to use the queue. See [Security of agent pools and queues](#security).
 
 ### I need more hosted build resources. What can I do?
 

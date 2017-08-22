@@ -11,7 +11,7 @@ ms.date: 08/26/2016
 
 # Deploy an agent on Windows
 
-**Team Services | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
+**VSTS | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
@@ -36,7 +36,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign on to Team Services or TFS, and navigate to the **Agent pools** tab:
+<li>In your web browser, sign on to VSTS or TFS, and navigate to the **Agent pools** tab:
 [!INCLUDE [include](../../concepts/agents/_shared/agent-pools-tab.md)]
 </li>
 
@@ -51,7 +51,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ### Server URL
 
-* Team Services: `https://{your-account}.visualstudio.com`
+* VSTS: `https://{your-account}.visualstudio.com`
 
 * TFS 2017: `https://{your_server}/tfs`
 
@@ -59,7 +59,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ### Authentication type
 
-#### Team Services
+#### VSTS
 
 Choose **PAT**, and then paste the [PAT token you created](#permissions) into the command prompt window.
 
@@ -77,10 +77,10 @@ When you configure your agent to connect to TFS, you've got the following option
 
 * **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
  
-* **PAT** Supported only on Team Services and TFS 2017 or newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window.
+* **PAT** Supported only on VSTS and TFS 2017 or newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window.
 
 > [!NOTE]
-> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with Team Services or TFS](../../concepts/agents/agents.md#communication).
+> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with VSTS or TFS](../../concepts/agents/agents.md#communication).
 
 ## Choose interactive or service mode
 
@@ -126,7 +126,7 @@ The help provides information on authentication alternatives and unattended conf
 
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
 
-### How do I configure the agent to work through a web proxy and connect to Team Services?
+### How do I configure the agent to work through a web proxy and connect to VSTS?
 
 In the agent root directory, create a .proxy file with your proxy server URL.
 

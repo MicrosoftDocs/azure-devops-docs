@@ -1,5 +1,5 @@
 ---
-title: Quick Start - Build and Deploy a Java app | Team Services
+title: Quick Start - Build and Deploy a Java app | VSTS
 description: Set up a continuous integration (CI) build for your Java app, and then a continuous deployment (CD) release to Azure using Visual Studio Team Services
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
@@ -17,7 +17,7 @@ Java apps.
 This quickstart shows how to set up CI and CD to deploy
 a Java app. 
 to an Azure web app. 
-You create the web app using the Azure CLI, then set up CI/CD in Team Services.
+You create the web app using the Azure CLI, then set up CI/CD in VSTS.
 In the CI process, you build the Java app and run JUnit tests using Maven. In the CD process, you deploy the build to an Azure web app.
 
 ![java web app](_img/quick-to-azure/java-web-app.png)

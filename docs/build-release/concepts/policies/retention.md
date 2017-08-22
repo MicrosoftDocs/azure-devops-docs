@@ -11,7 +11,7 @@ ms.date: 08/26/2016
 
 # Build and release retention policies
 
-**Team Services | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx)**
+**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx)**
 
 Retention policies are used to configure how long builds and
 releases are to be retained by the system. The primary reasons to
@@ -36,11 +36,11 @@ if you are building from [Git repositories](#git-repositories).
 
 If you are using an on-premises Team Foundation Server, you can specify build retention policy defaults and maximums for a team project collection. You can also specify when builds are permanently destroyed (removed from the **Deleted** tab in the build explorer).
 
-If you are using Team Services, you can view but not change these settings for your account.
+If you are using VSTS, you can view but not change these settings for your account.
 
 Global build retention policy settings can be managed from the **Build and Release** settings of your account or team project collection:
 
-* Team Services: `https://{your_account}.visualstudio.com/_admin/_buildQueue`
+* VSTS: `https://{your_account}.visualstudio.com/_admin/_buildQueue`
 
 * TFS 2017: `https://{your_server}/tfs/DefaultCollection/_admin/_buildQueue`
 
@@ -61,7 +61,7 @@ The **build destruction policy** helps you keep the builds for a certain period 
 
 If your [repository type](../../define/repository.md) is one of the following, you can define multiple retention policies with branch filters:
 
-* Git in Visual Studio Team Services (Team Services) or Team Foundation Server (TFS)
+* Git in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 * GitHub
 * External Git
 
@@ -116,7 +116,7 @@ The following information is deleted when a build is deleted:
 
 ### When are builds deleted
 
-#### Team Services
+#### VSTS
 
 Your retention policies are processed once per day. The timing of this process varies because we spread the work throughout the day for load balancing purposes. There is no option to change this process.
 
@@ -138,11 +138,11 @@ You can also customize these policies on an [environment-by-environment basis](#
 
 If you are using an on-premises Team Foundation Server, you can specify release retention policy defaults and maximums for a team project. You can also specify when releases are permanently destroyed (removed from the **Deleted** tab in the build explorer).
 
-If you are using Team Services, you can view but not change these settings for your team project.
+If you are using VSTS, you can view but not change these settings for your team project.
 
 Global release retention policy settings can be managed from the **Release** settings of your team project:
 
-* Team Services: `https://{your_account}.visualstudio.com/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
+* VSTS: `https://{your_account}.visualstudio.com/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 * On-premises: `https://{your_server}/tfs/{collection_name}/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 
 The **maximum retention policy** sets the upper limit for how long releases can be retained

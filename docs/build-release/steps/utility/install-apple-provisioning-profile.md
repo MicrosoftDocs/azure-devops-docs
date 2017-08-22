@@ -11,7 +11,7 @@ ms.date: 05/22/2017
 
 # Utility: Install Apple Provisioning Profile
 
-**Team Services**
+**VSTS**
 
 ![](../build/_img/xcode-build.png) Install an Apple provisioning profile required to build on a macOS agent
 

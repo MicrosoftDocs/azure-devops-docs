@@ -19,7 +19,7 @@ You can install the agent in any one of these ways:
 
 * [Run the script](#runscript) that is generated automatically when you create a deployment group.
 
-* [Install the **Team Services Agent** Azure VM extension](#azureext) on each of the VMs.
+* [Install the **VSTS Agent** Azure VM extension](#azureext) on each of the VMs.
 
 * [Use the **Azure Resource Group Deployment** task](#deploytask) in your release definition.
 
@@ -52,24 +52,24 @@ You can install the agent in any one of these ways:
 1. In the **Deployment groups** page of the **Build &amp; Release** hub, open the **Machines** tab and verify that the agents are running. If the tags you configured are not visible, refresh the page.
  
 <a name="azureext"></a>  
-## Install the Team Services Agent Azure VM extension
+## Install the VSTS Agent Azure VM extension
 
 1. In the **Deployment groups** tab of the **Build &amp; Release** hub, choose **+New** to create a new group.
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
 1. In the Azure portal, for each VM that will be included in the deployment group
-   open the **Extension** blade, choose **+ Add** to open the **New resource** list, and select **Team Services Agent**.
+   open the **Extension** blade, choose **+ Add** to open the **New resource** list, and select **VSTS Agent**.
 
-   ![Installing the Team Services Agent extension](_img/howto-provision-azure-vm-agents/azure-vm-create.png)
+   ![Installing the VSTS Agent extension](_img/howto-provision-azure-vm-agents/azure-vm-create.png)
 
-1. In the **Install extension** blade, specify the name of the Team Services account to use. For example, if the account URL is `https://contoso.visualstudio.com`, just specify **contoso**.
+1. In the **Install extension** blade, specify the name of the VSTS account to use. For example, if the account URL is `https://contoso.visualstudio.com`, just specify **contoso**.
 
 1. Specify the Team Project name and the deployment group name.
    
 1. Optionally, specify a name for the agent. If not specified, it uses the VM name appended with `-DG`.
 
-1. Enter the [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181) to use for authentication against the Team Services account.
+1. Enter the [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181) to use for authentication against the VSTS account.
 
 1. Optionally, specify a comma-separated list of tags that will be configured on the agent.
    Tags are not case-sensitive, and each must no more than 256 characters.
@@ -82,13 +82,13 @@ You can install the agent in any one of these ways:
 ## Use the Azure Resource Group Deployment task
 
 You can use the [Azure Resource Group Deployment task](https://aka.ms/argtaskreadme)
-to deploy an Azure Resource Manager (ARM) template that installs the Team Services Agent
+to deploy an Azure Resource Manager (ARM) template that installs the VSTS Agent
 Azure VM extension as you create a virtual machine, or to update the resource group
 to apply the extension after the virtual machine has been created.
 Alternatively, you can use the advanced deployment options of the
 Azure Resource Group Deployment task to deploy the agent to deployment groups. 
 
-### Install the "Team Services Agent" Azure VM extension using an ARM template
+### Install the "VSTS Agent" Azure VM extension using an ARM template
 
 An ARM template is a JSON file that declaratively defines a set of Azure resources.
 The template can be automatically read and the resources provisioned by Azure.
@@ -104,14 +104,14 @@ For a Windows VM, create an ARM template and add a resources element under the
    "typeHandlerVersion": "1.0",
    "autoUpgradeMinorVersion": true,
    "settings": {
-      "VSTSAccountName": "[Required. The Team Services account to use. Example: If your account URL is `https://contoso.visualstudio.com`, just specify "contoso"]",
+      "VSTSAccountName": "[Required. The VSTS account to use. Example: If your account URL is `https://contoso.visualstudio.com`, just specify "contoso"]",
       "TeamProject": "[Required. The Team Project that has the deployment group defined within it]",
       "DeploymentGroup": "[Required. The deployment group against which deployment agent will be registered]",
       "AgentName": "[Optional. If not specified, the VM name with -DG appended will be used]",
       "Tags": "[Optional. A comma-separated list of tags that will be set on the agent. Tags are not case sensitive and each must be no more than 256 characters]"
     },
    "protectedSettings": {
-     "PATToken": "[Required. The Personal Access Token that will be used to authenticate against the Team Services account to download and configure the agent]"
+     "PATToken": "[Required. The Personal Access Token that will be used to authenticate against the VSTS account to download and configure the agent]"
    }
 }
 ```

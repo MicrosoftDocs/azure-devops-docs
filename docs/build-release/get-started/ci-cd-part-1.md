@@ -1,5 +1,5 @@
 ---
-title: Create your first build and release | Team Services
+title: Create your first build and release | VSTS
 description: Are you a CI/CD novice? In just minutes you can create an automated build and release pipeline in Visual Studio Team Services and Microsoft Team Foundation Server.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
@@ -12,7 +12,7 @@ ms.date: 04/03/2017
 
 # CI/CD Hello world
 
-**Team Services**
+**VSTS**
 
 What is continuous integration (CI)? What is continuous deployment (CD)? Why should I care? How do I get started using Team Build and Release Management?
 
@@ -30,11 +30,11 @@ Together, CI and CD mean that any code changes you commit to your repository are
 
 Wanna try it?
 
-## Get set up with Team Services
+## Get set up with VSTS
 
-> Do you already have access to a Team Services account and to a team project that has a Git repo? And do you already have [permissions to create builds](../concepts/policies/permissions.md)? If so, then you can [skip to the next section](#add-script). If you're not sure, it takes just a moment to create a new account and there's no charge.
+> Do you already have access to a VSTS account and to a team project that has a Git repo? And do you already have [permissions to create builds](../concepts/policies/permissions.md)? If so, then you can [skip to the next section](#add-script). If you're not sure, it takes just a moment to create a new account and there's no charge.
 
-1. [Create a new account in Team Services](http://go.microsoft.com/fwlink/?LinkId=307137).
+1. [Create a new account in VSTS](http://go.microsoft.com/fwlink/?LinkId=307137).
 
 1. If you're prompted, then sign in using your personal Microsoft account or your work or school account. (Need help signing up? See [Sign up for Visual Studio Team Services](../../accounts/create-account-with-work-school.md).)
 
@@ -70,15 +70,15 @@ Write-Host "Hello world"
 
 1. **Commit** (save) the file.
 
-> In this tutorial, our focus is on CI/CD, so we're keeping the code part simple. We're working in a Team Services Git repository directly in your web browser.
+> In this tutorial, our focus is on CI/CD, so we're keeping the code part simple. We're working in a VSTS Git repository directly in your web browser.
 >
-> When you're ready to begin building and deploying a real app, you can use a wide range of version control clients and services with Team Services CI builds. [Learn more](#version-control).
+> When you're ready to begin building and deploying a real app, you can use a wide range of version control clients and services with VSTS CI builds. [Learn more](#version-control).
 
 ## Create a build definition
 
 Create a build definition that prints "Hello world."
 
-1. Select the **Build & Release** hub in your Team services project, and then the **Builds** tab.
+1. Select the **Build & Release** hub in your VSTS project, and then the **Builds** tab.
 
  ![navigate to builds tab](_img/ci-cd/part-1/navigate-to-builds-tab.png)
 
@@ -323,7 +323,7 @@ We hope this tutorial gave you an understanding of the basic concepts of Team Bu
 
 <h3 id="version-control">What kinds of version control can I use</h3>
 
-We've used a Git repository in Team Services to keep things focused on CI/CD for this tutorial.
+We've used a Git repository in VSTS to keep things focused on CI/CD for this tutorial.
 
 When you're ready to get going with CI/CD for your app, you can use the version control system of your choice:
 
@@ -345,7 +345,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
 * Services
 
- * [Team Services](https://www.visualstudio.com/team-services/)
+ * [VSTS](https://www.visualstudio.com/team-services/)
 
  * Git service providers such as GitHub and Bitbucket
 

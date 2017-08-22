@@ -11,11 +11,11 @@ ms.date: 05/19/2017
 
 # Migrate from XAML builds to new builds
 
-**Team Services | TFS 2017 RTM | XAML builds**
+**VSTS | TFS 2017 RTM | XAML builds**
 
 We introduced XAML build automation capabilities based on the Windows Workflow Foundation in Team Foundation Server (TFS) 2010. We released another version of [XAML builds](http://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx) in TFS 2013. 
 
-After that we sought to expand beyond .NET and Windows and add support for other kinds of apps that are based on operating systems such as macOS and Linux. It became clear that we needed to switch to a more open, flexible, web-based foundation for our build automation engine. In early 2015 in Team Services, and then in TFS 2015, we introduced a simpler task- and script-driven cross-platform build system.
+After that we sought to expand beyond .NET and Windows and add support for other kinds of apps that are based on operating systems such as macOS and Linux. It became clear that we needed to switch to a more open, flexible, web-based foundation for our build automation engine. In early 2015 in VSTS, and then in TFS 2015, we introduced a simpler task- and script-driven cross-platform build system.
 
 Because the systems are so different, there's no automated or general way to migrate a XAML build definition into a new build definition.  The migration process is to manually create the new build definitions that replicate what your XAML builds do. 
 
@@ -60,7 +60,7 @@ If you're building a standard .NET app, you're probably using one of the out-of-
 <li>Select a template to add the commonly used tasks to your build definition:
 <ul>
  <li>TFS 2017 RTM: Visual Studio template</li>
- <li>Team Services: .NET Desktop template</li>
+ <li>VSTS: .NET Desktop template</li>
 </ul>
 </li>
 
@@ -75,7 +75,7 @@ In each of the following sections we show the XAML user interface, and then prov
 
 ![xaml build general tab](_img/migrate-from-xaml-builds/xaml-build-general-tab.png)
 
-| XAML setting | TFS 2017 RTM equivalent | Team Services equivalent |
+| XAML setting | TFS 2017 RTM equivalent | VSTS equivalent |
 |-|-|-|
 | Build definition name | You can change it whenever you save the definition. | <p>When editing the definition: On the **Tasks** tab, in left pane click **Process**, and the **Name** field appears in right pane.</p><p>In the **Builds** hub (**Mine** or **All Definitions** tab), open the action menu and choose **Rename**.</p> |
 | Description (optional) | Not supported. | Not supported. |
@@ -87,35 +87,35 @@ In each of the following sections we show the XAML user interface, and then prov
 
 ![xaml build source settings tfvc](_img/migrate-from-xaml-builds/xaml-build-source-settings-tfvc.png)
 
-| XAML setting | TFS 2017 RTM equivalent| Team Services equivalent |
+| XAML setting | TFS 2017 RTM equivalent| VSTS equivalent |
 |-|-|-|
 | Source Settings tab | On the **Repository** tab specify your mappings with Active paths as **Map** and Cloaked paths as **Cloak**. | On the **Tasks** tab, in left pane click **Get sources**. Specify your workspace mappings with Active paths as **Map** and Cloaked paths as **Cloak**. |
 
-The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or Team Services.  If you're using Team Services, first make sure to display **Advanced settings**. See [Build definition respository: TFVC](../define/repository.md#tfvc).
+The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build definition respository: TFVC](../define/repository.md#tfvc).
 
 #### Git
 
 ![xaml build source settings git tfs](_img/migrate-from-xaml-builds/xaml-build-source-settings-git-tfs.png)
 
-| XAML setting | TFS 2017 RTM equivalent| Team Services equivalent |
+| XAML setting | TFS 2017 RTM equivalent| VSTS equivalent |
 |-|-|-|
 | Source Settings tab | On the **Repository** tab specify the repository and default branch. | On the **Tasks** tab, in left pane click **Get sources**. Specify the repository and default branch. |
 
-The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or Team Services.  If you're using Team Services, first make sure to display **Advanced settings**. See [Build definition repository: Git](../define/repository.md#git).
+The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build definition repository: Git](../define/repository.md#git).
 
 ### Trigger tab
 
 ![xaml build trigger tab](_img/migrate-from-xaml-builds/xaml-build-trigger-tab.png)
 
-| XAML setting | TFS 2017 RTM and Team Services equivalent |
+| XAML setting | TFS 2017 RTM and VSTS equivalent |
 |-|-|
 |Trigger tab | On the **Triggers** tab, select the trigger you want to use: CI, scheduled, or gated. |
 
 The new build definition offers you some new options. For example:
 
-* You can potentially create fewer build definitions to replace a larger number of XAML build definitions. This is because you can use a single new build definition with multiple triggers. And if you're using Team Services, then you can add multiple scheduled times.
+* You can potentially create fewer build definitions to replace a larger number of XAML build definitions. This is because you can use a single new build definition with multiple triggers. And if you're using VSTS, then you can add multiple scheduled times.
 
-* The **Rolling builds** option is replaced by the **Batch changes** option. You can't specify minimum time between builds. But if you're using Team Services, you can specify the maximum number of concurrent builds per branch.
+* The **Rolling builds** option is replaced by the **Batch changes** option. You can't specify minimum time between builds. But if you're using VSTS, you can specify the maximum number of concurrent builds per branch.
 
 * If your code is in TFVC, you can add folder path filters to include or exclude certain sets of files from triggering a CI build. 
 
@@ -123,7 +123,7 @@ The new build definition offers you some new options. For example:
 
 * If your code is in Git, then you specify the branch filters directly on the **Triggers** tab. And you can add folder path filters to include or exclude certain sets of files from triggering a CI build.
 
-The specific extra options you'll see depend on the version you're using of TFS or Team Services. See [Build definition triggers](../define/triggers.md)
+The specific extra options you'll see depend on the version you're using of TFS or VSTS. See [Build definition triggers](../define/triggers.md)
 
 We don't yet support the **Build even if nothing has changed since the previous build** option.
 
@@ -131,7 +131,7 @@ We don't yet support the **Build even if nothing has changed since the previous 
 
 ![xaml build build defaults tab](_img/migrate-from-xaml-builds/xaml-build-build-defaults-tab.png)
 
-| XAML process parameter | TFS 2017 RTM equivalent| Team Services equivalent |
+| XAML process parameter | TFS 2017 RTM equivalent| VSTS equivalent |
 |-|-|-|
 | Build controller | On the **General** tab, select the default agent queue. | On the **Options** tab, select the default agent queue. |
 | Staging location | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../concepts/definitions/build/artifacts.md). | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../concepts/definitions/build/artifacts.md). |
@@ -148,7 +148,7 @@ The new build definition offers you some new options. For example:
 
 ![xaml source settings git tfs](_img/migrate-from-xaml-builds/xaml-build-template-12-tf-version-control.png)
 
-| XAML process parameter | TFS 2017 RTM equivalent| Team Services equivalent |
+| XAML process parameter | TFS 2017 RTM equivalent| VSTS equivalent |
 |-|-|-|
 | Clean workspace | On the **Repository** tab, open the **Clean** menu, and then select **true**. | On the **Tasks** tab, in left pane click **Get sources**. Display **Advanced settings**, and then select **Clean**. (We plan to change move this option out of advanced settings.) |
 | Get version | You can't specify a changeset in the build definition, but you can specify one when you manually queue a build. | You can't specify a changeset in the build definition, but you can specify one when you manually queue a build. |
@@ -160,7 +160,7 @@ The new build definition offers you some new options. See [Build definition repo
 
 ![xaml source settings git tfs](_img/migrate-from-xaml-builds/git-template-12-xaml-git.png)
 
-| XAML process parameter | TFS 2017 RTM equivalent| Team Services equivalent |
+| XAML process parameter | TFS 2017 RTM equivalent| VSTS equivalent |
 |-|-|-|
 | Clean repository | **Repository** tab, open **Clean** menu, select **true**. | On the **Tasks** tab, in left pane click **Get sources**. Show **Advanced settings**, and then select **Clean**. (We plan to change move this option out of advanced settings.) |
 | Checkout override | You can't specify a commit in the build definition, but you can specify one when you manually queue a build. | You can't specify a commit in the build definition, but you can specify one when you manually queue a build. |
@@ -171,9 +171,9 @@ The new build definition offers you some new options. See [Build definition repo
 
 ![xaml source settings git tfs](_img/migrate-from-xaml-builds/xaml-build-template-12-build.png)
 
-On the **Build** tab (TFS 2017) or the **Tasks** tab (Team Services), after you select the Visual Studio Build task, you'll see the arguments that are equivalent to the XAML build parameters.
+On the **Build** tab (TFS 2017) or the **Tasks** tab (VSTS), after you select the Visual Studio Build task, you'll see the arguments that are equivalent to the XAML build parameters.
 
-| XAML process parameter | TFS 2017 RTM, Team Services equivalent argument |
+| XAML process parameter | TFS 2017 RTM, VSTS equivalent argument |
 |-|-|
 | Projects | Solution |
 | Configurations | Platform, Configuration. See [Visual Studio Build: How do I build multiple configurations for multiple platforms?](../steps/build/visual-studio-build.md#how-do-i-build-multiple-configurations-for-multiple-platforms) | 
@@ -202,7 +202,7 @@ See [Get started with continuous testing](../test/getting-started-with-continuou
 
 ![xaml source settings git tfs](_img/migrate-from-xaml-builds/xaml-build-template-12-publish-symbols.png)
 
-| XAML process parameter | TFS 2017 RTM, Team Services equivalent |
+| XAML process parameter | TFS 2017 RTM, VSTS equivalent |
 |-|-|
 | Path to publish symbols | Click the Publish Symbols task and then copy the path into the **Path to publish symbols** argument. |
 
@@ -210,7 +210,7 @@ See [Get started with continuous testing](../test/getting-started-with-continuou
 
 ![xaml source settings git tfs](_img/migrate-from-xaml-builds/xaml-build-template-12-advanced.png)
 
-| XAML process parameter | TFS 2017 RTM equivalent| Team Services equivalent |
+| XAML process parameter | TFS 2017 RTM equivalent| VSTS equivalent |
 |-|-|-|
 | Maximum agent execution time | None | On the **Options** tab you can specify **Build job timeout in minutes**. |
 | Maximum agent reservation wait time | None | None |
@@ -229,7 +229,7 @@ The new build definition offers you some new options. See:
 
 ![xaml build retention policy tab](_img/migrate-from-xaml-builds/xaml-build-retention-policy-tab.png)
 
-| XAML process parameter | TFS 2017 RTM, Team Services equivalent |
+| XAML process parameter | TFS 2017 RTM, VSTS equivalent |
 |-|-|
 | Retention Policy tab | On the **Retention** tab specify the policies you want to implement. | 
 
@@ -237,7 +237,7 @@ The new build definition offers you some new options. See [Build and release ret
 
 ## Build and release different kinds of apps
 
-In XAML builds you had to create your own custom templates to build different types of apps. In the new build system you can pick from a set of pre-defined templates. The largest and most current set of templates are available on Team Services and in our newest version of TFS.
+In XAML builds you had to create your own custom templates to build different types of apps. In the new build system you can pick from a set of pre-defined templates. The largest and most current set of templates are available on VSTS and in our newest version of TFS.
 
 ### Build
 
@@ -330,7 +330,7 @@ Although the new build definitions are essentially linear, we do give you contro
 
 On TFS 2015 and TFS 2017: You can select Enabled, Continue on error, or Always run.
 
-On Team Services you can specify one of four built-in choices to control when a task is run. If you need more control, you can specify custom conditions. For example:
+On VSTS you can specify one of four built-in choices to control when a task is run. If you need more control, you can specify custom conditions. For example:
 
 ```
 and(failed(), in(variables['Build.Reason'], 'IndividualCI', 'BatchedCI'), startsWith(variables['Build.SourceBranch'], 'refs/heads/features/'))

@@ -19,7 +19,7 @@ ms.date: 08/10/2016
 
 msbuild, visualstudio
 
-> **Team Services and Team Foundation Server 2017:** If your team uses Visual Studio 2017 and you want to use our hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Hosted agents](../../concepts/agents/hosted.md).
+> **Visual Studio Team Services and Team Foundation Server 2017:** If your team uses Visual Studio 2017 and you want to use our hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Hosted agents](../../concepts/agents/hosted.md).
 
 ## Arguments
 
@@ -59,7 +59,7 @@ If you use TFVC, make sure that the  solution is a child of one of the mappings 
 <p>The value you select here adds ```/p:VisualStudioVersion={numeric_visual_studio_version}``` argument to the MSBuild command run by the build. For example, if you select Visual Studio 2015, ```/p:VisualStudioVersion=14.0``` is added to the MSBuild command.
 </p>
 <blockquote>
-<p><strong>Team Services and Team Foundation Server 2017:</strong> If you select **Visual Studio 2017** or **Latest** and you want to use our hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Hosted agents](../../concepts/agents/hosted.md).</p>
+<p><strong>VSTS and Team Foundation Server 2017:</strong> If you select **Visual Studio 2017** or **Latest** and you want to use our hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Hosted agents](../../concepts/agents/hosted.md).</p>
 </blockquote>
 </td>
 </tr>

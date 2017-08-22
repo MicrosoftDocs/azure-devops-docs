@@ -1,5 +1,5 @@
 ---
-title: Continuous integration and deployment (CI/CD) | Team Services & TFS 
+title: Continuous integration and deployment (CI/CD) | VSTS & TFS 
 description: Build and deploy your app on Visual Studio Team Services and Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Continuous integration and Continuous Delivery
 
-**Team Services | TFS 2017 | TFS 2015 | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../release/previous-version/release-management-overview.md)**
+**VSTS | TFS 2017 | TFS 2015 | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../release/previous-version/release-management-overview.md)**
 
 <img style="float:left;margin-right:10px;width:250px;" alt="CI and CD development and release cycle" src="_img/ci-01.png"/>    
     
@@ -43,7 +43,7 @@ Then quickly set up a build and release definition for your ASP.NET application 
 <div style="clear:both;">&nbsp;</div>
 
 <div style="float:left;width:265;margin:3px">
-![2 - Team services app types](_img/overview-05.png)
+![2 - VSTS app types](_img/overview-05.png)
 </div>
 <div style="float:right;width:460px;margin:3px;">
 <p style="font-size:125%;font-weight:bold;padding-bottom:0pxr;">Build and deploy your app</p>

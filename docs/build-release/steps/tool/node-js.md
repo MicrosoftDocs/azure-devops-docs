@@ -11,7 +11,7 @@ ms.date: 4/17/2017
 
 # Tool: Node Tool Installer
 
-**Team Services**
+**VSTS**
 
 **Build**
 

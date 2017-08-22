@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting build
-description: Troubleshooting Team Foundation Build (TFBuild) in Team Foundation Server and Team Services.
+description: Troubleshooting Team Foundation Build (TFBuild) in Team Foundation Server and VSTS.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
@@ -64,7 +64,7 @@ Agent diagnostic logs provide a record of how the agent was configured and what 
 
  - Cannot be opened until the process is terminated.
 
- - Attempts to connect to your Team Foundation Server or Team Services account.
+ - Attempts to connect to your Team Foundation Server or VSTS account.
 
  - Shows when each job was run, and how it completed
 

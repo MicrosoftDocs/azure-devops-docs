@@ -19,7 +19,7 @@ ms.date: 08/10/2016
 
 msbuild
 
-> **Team Services and Team Foundation Server 2017:** If your team uses Visual Studio 2017 and you want to use our hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Hosted agents](../../concepts/agents/hosted.md).
+> **Visual Studio Team Services and Team Foundation Server 2017:** If your team uses Visual Studio 2017 and you want to use our hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Hosted agents](../../concepts/agents/hosted.md).
 
 ## Arguments
 

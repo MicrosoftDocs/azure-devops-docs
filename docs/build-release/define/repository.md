@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Build definition repository
 
-**Team Services | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
+**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
 
 <!--
 <div style="padding:5px;border-bottom:1px solid #ccc;font-family:Segoe UI;font-size:13px;margin-bottom:15px">
@@ -74,14 +74,14 @@ The build process labels your sources with a [TFVC label](../../tfvc/use-labels-
 
 ## GitHub
 
-If you're using Visual Studio Team Services (Team Services), you can build code in a GitHub repo.
+If you're using Visual Studio Team Services (VSTS), you can build code in a GitHub repo.
 
 ### Connect using your GitHub user account
 
 > [!NOTE]
-> If you're using a pop-up blocker, you'll need to allow your Team Services account to display pop-up windows.
+> If you're using a pop-up blocker, you'll need to allow your VSTS account to display pop-up windows.
 
-This is the easier way to authorize your account. This approach grants your Team Services account access to GitHub via OAuth.
+This is the easier way to authorize your account. This approach grants your VSTS account access to GitHub via OAuth.
 
 0. On the **Repository** tab, next to the Connection drop-down, click the **Manage** link. The **Services** tab opens as a new tab in your browser.
 
@@ -105,7 +105,7 @@ This is the easier way to authorize your account. This approach grants your Team
 
  0. Copy the token to your clipboard.
 
-0. Sign on to Team Services and create a build definition.
+0. Sign on to VSTS and create a build definition.
 
 0. On the **Repository** tab, next to the Connection drop-down, click the **Manage** link. The **Services** tab opens as a new tab in your browser.
 

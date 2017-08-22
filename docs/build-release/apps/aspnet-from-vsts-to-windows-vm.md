@@ -1,5 +1,5 @@
 ---
-title: Quick Start - Build and Deploy a ASP.NET app | Team Services
+title: Quick Start - Build and Deploy a ASP.NET app | VSTS
 description: Set up a continuous integration (CI) build for your ASP.NET app, and then a continuous deployment (CD) release to Azure using Visual Studio Team Services
 services: vsts
 documentationcenter: ''
@@ -25,7 +25,7 @@ ASP.NET apps.
 This quickstart shows how to set up CI and CD to deploy
 an ASP.NET app
 to a Windows virtual machine in Azure. 
-You create the virtual machine using Azure Powershell, and then you set up CI/CD in Team Services. In the CI process, you build the app using MSBuild and run tests using VSTest.
+You create the virtual machine using Azure Powershell, and then you set up CI/CD in VSTS. In the CI process, you build the app using MSBuild and run tests using VSTest.
 
 ![Screenshot showing ASP.NET web app](_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-sample.png)
 

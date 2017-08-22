@@ -1,6 +1,6 @@
 ### Where can I learn about Visual Studio Team Services package management?
 
-[Package Management in Team Services and TFS](../../../package/overview.md)
+[Package Management in VSTS and TFS](../../../package/overview.md)
 
 ### Where can I learn more about NuGet?
 

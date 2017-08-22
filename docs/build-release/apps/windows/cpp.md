@@ -32,7 +32,7 @@ In this section we'll create a build definition for your C++ app.
     <li>On the Create new build definition dialog box, select **Visual Studio**, and then click **Next**.</li>
 
 
-    <li>As the repository source, select the team project, repository, and branch, set the option for **continuous integration**, and click **Create**. The continuous integration option is what tells Team Services to queue a build when new code is committed or checked in.</li>
+    <li>As the repository source, select the team project, repository, and branch, set the option for **continuous integration**, and click **Create**. The continuous integration option is what tells VSTS to queue a build when new code is committed or checked in.</li>
 </ol>
 
 ### Build steps

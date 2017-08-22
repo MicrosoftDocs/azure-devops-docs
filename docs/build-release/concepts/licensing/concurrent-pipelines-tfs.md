@@ -10,7 +10,7 @@ ms.date: 10/20/2016
 ---
 # Concurrent release pipelines in Team Foundation Server
 
-**TFS 2017 | [Team Services](concurrent-pipelines-ts.md)**
+**TFS 2017 | [VSTS](concurrent-pipelines-ts.md)**
 
 This article describes the licensing model for Release Management in Team Foundation Server 2017 (TFS 2017). We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
 
@@ -85,7 +85,7 @@ After you've added these users, additional licenses will appear on the resource 
 
 ## Purchase additional concurrent pipelines
 
-If you need to run more concurrent releases, you can [buy additional private pipelines from the Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines). Since there is no way to directly purchase concurrent pipelines from Marketplace for a TFS instance at present, you must first buy concurrent pipelines for a Team Services account. After you buy the private pipelines for a Team Services account, you enter the number of purchased concurrent pipelines manually on the resource limits page described below.
+If you need to run more concurrent releases, you can [buy additional private pipelines from the Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines). Since there is no way to directly purchase concurrent pipelines from Marketplace for a TFS instance at present, you must first buy concurrent pipelines for a VSTS account. After you buy the private pipelines for a VSTS account, you enter the number of purchased concurrent pipelines manually on the resource limits page described below.
 
 ## View and manage concurrent pipelines
 
@@ -117,6 +117,6 @@ In TFS 2015, so long as your users have a TFS CAL, they can use release manageme
 
 In TFS 2013 there is no change in the licensing of release management features.
 
-### How is release management licensed in Team Services?
+### How is release management licensed in VSTS?
 
-See [concurrent pipelines in Team Services](concurrent-pipelines-ts.md).
+See [concurrent pipelines in VSTS](concurrent-pipelines-ts.md).

@@ -16,7 +16,7 @@ This tutorial shows how to configure a continuous delivery (CD) workflow for
 by using Visual Studio Team Services. CD is a great option for projects that require multiple and frequent
 contributions to be integrated.
 
-CD in Team Services simplifies setting up a robust
+CD in VSTS simplifies setting up a robust
 deployment pipeline for your app to publish the most recent updates
 to Azure App Service. The pipeline can be configured to build,
 runs tests, and deploy to a staging slot and then to production. 
@@ -24,7 +24,7 @@ runs tests, and deploy to a staging slot and then to production.
 ## Code
 
 You must store your app's source code in a 
-[Team Services Git](../../git/gitquickstart.md), 
+[VSTS Git](../../git/gitquickstart.md), 
 [GitHub](https://help.github.com/articles/create-a-repo),
 or any other Git repository to use Azure Continuous Delivery.
 Team Foundation Version Control (TFVC) repositories are not supported at present.
@@ -43,7 +43,7 @@ Carry out the following steps to create a simple
 1. Commit the solution to your chosen repository. 
 
 >For more information about publishing your project, see 
-[Get Started with Git and Team Services](../../git/gitquickstart.md)
+[Get Started with Git and VSTS](../../git/gitquickstart.md)
 or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
 
 ## Configure
@@ -61,7 +61,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
 
 1. Select **Choose repository** and select the type of repository where you stored your app's source code.
    You have a choice of **Visual Studio Team Services**, **GitHub** or **External Git**
-   (a Git type repository not hosted in Team Services or GitHub).
+   (a Git type repository not hosted in VSTS or GitHub).
 
    ![Specifying the type of source code repository](_img/continuous-app-service/02.png)
  
@@ -115,7 +115,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
 
    The following sequence of events occurs:
  
-   - Azure Continuous Delivery creates a build and a release definition in the Team Services account
+   - Azure Continuous Delivery creates a build and a release definition in the VSTS account
      you specified, together with a service endpoint to connect to Azure.
  
    - If you chose to create a new Azure App Service instance for load tests, and/or a new slot for
@@ -137,7 +137,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
    ![Viewing the Continuous Delivery log](_img/continuous-app-service/08.png)
 
 1. In the "Successfully set up Continuous Delivery..." item, choose the **Build Definition**
-   link to open the project containing your app in Team Services, and see the summary for the build definition.
+   link to open the project containing your app in VSTS, and see the summary for the build definition.
    Choose **Edit** to see the tasks that have been added and configured.
 
    ![Viewing the newly created build definition](_img/continuous-app-service/09.png)
@@ -147,7 +147,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
    **.NET Core** task is used for  ASP.NET Core apps. 
 
 1. In the "Successfully set up Continuous Delivery..." item, choose the **Release Definition**
-   link to open the project containing your app in Team Services, and see the list of releases for this definition.
+   link to open the project containing your app in VSTS, and see the list of releases for this definition.
    Choose **Edit** to see the tasks that have been added and configured.
 
    ![Viewing the Test environment in the newly created release definition](_img/continuous-app-service/10.png)
@@ -179,13 +179,13 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
 
    You can stop a deployment to your Azure App Service by choosing **Disconnect** at the top of
    the **Continuous Deployment** blade. This deletes the Azure Continuous Delivery
-   configuration in the Azure portal and turns off the build triggers in your Team Services
+   configuration in the Azure portal and turns off the build triggers in your VSTS
    account for this configuration. 
 
    ![Stopping a deployment](_img/continuous-app-service/12.png)
 
    >To ensure the build and release history is preserved, the build and release definitions
-   are not deleted from Team Services when you disconnect.
+   are not deleted from VSTS when you disconnect.
 
 ## Next steps
 
@@ -205,7 +205,7 @@ The Azure Continuous Delivery feature is a preview version. You
 may encounter the following known issues:
 
 * If you do not have relevant permission to create build and release definitions 
-  in the Team Services account, the Continuous Delivery configuration will fail
+  in the VSTS account, the Continuous Delivery configuration will fail
   with an appropriate error message. See 
   [Manage users and access in Visual Studio Team Services](../../accounts/add-account-users-assign-access-levels-team-services.md).
   
@@ -222,7 +222,7 @@ may encounter the following known issues:
   "No accounts found" message in this situation. To resolve this, you can
   configure your Visual Studio Team Services account to be backed by an
   Azure Active Directory (AAD) instance. For information on how to do this, see
-  [Team Services - Access with Azure Active Directory](../../accounts/access-with-azure-ad.md).
+  [VSTS - Access with Azure Active Directory](../../accounts/access-with-azure-ad.md).
 
 ## Q&A
 

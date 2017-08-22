@@ -10,7 +10,7 @@ ms.date: 08/26/2016
 ---
 # Deploy an agent on Linux
 
-**Team Services | TFS 2017 | TFS 2015**
+**VSTS | TFS 2017 | TFS 2015**
 
 To build or deploy you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. We support Ubuntu, Red Hat, and CentOS.
 
@@ -32,11 +32,11 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ## Download and configure the agent
 
-### Team Services and TFS 2017
+### VSTS and TFS 2017
 
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign on to Team Services or TFS, and navigate to the **Agent pools** tab:
+<li>In your web browser, sign on to VSTS or TFS, and navigate to the **Agent pools** tab:
 [!INCLUDE [include](../../concepts/agents/_shared/agent-pools-tab.md)]
 </li>
 
@@ -62,7 +62,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ### Server URL
 
-* Team Services: `https://{your-account}.visualstudio.com`
+* VSTS: `https://{your-account}.visualstudio.com`
 
 * TFS 2017: `https://{your_server}/tfs`
 
@@ -187,7 +187,7 @@ A systemd service file is created:
 
 For example, you have configured an agent (see above) with the name `our-linux-agent`. The service file will be either:
 
-* Team Services: the name of your account. For example if you connect to `https://fabrikam.visualstudio.com` , then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
+* VSTS: the name of your account. For example if you connect to `https://fabrikam.visualstudio.com` , then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
 
 * TFS: the name of your on-premises TFS AT server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `/etc/systemd/system/vsts.agent.our-server.our-linux-agent.service`
 

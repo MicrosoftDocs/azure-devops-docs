@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 
 # Build your .NET app for Windows
 
-**Team Services | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/bb558973%28v=vs.120%29.aspx)**
+**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/bb558973%28v=vs.120%29.aspx)**
 
 [!INCLUDE [temp](../_shared/ci-cd-newbies.md)]
 

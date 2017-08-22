@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Define a continuous integration build for your Node.js app
 
-**[Team Services](../../apps/nodejs/quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../release/previous-version/release-management-overview.md)**
+**[VSTS](../../apps/nodejs/quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../release/previous-version/release-management-overview.md)**
 
 [!INCLUDE [temp](../../_shared/ci-cd-newbies.md)]
 
@@ -23,13 +23,13 @@ Here we'll show you how to define a continuous integration (CI) build process fo
 
 0. Do you have your own code?
 
- * No: Upload the sample app to Visual Studio Team Services (Team Services) or your on-premises Team Foundation Server. Either push your code to Git or check in your code to TFVC.
+ * No: Upload the sample app to Visual Studio Team Services (VSTS) or your on-premises Team Foundation Server. Either push your code to Git or check in your code to TFVC.
 
  * Yes:
 
     0. Copy the **gulpfile.js** and **web.config** files from the sample app to the root folder of your app.
 
-    0. Upload your code to Team Services or your on-premises Team Foundation Server: either push your code to Git or check in your code to TFVC.
+    0. Upload your code to VSTS or your on-premises Team Foundation Server: either push your code to Git or check in your code to TFVC.
 
 [What code is in the sample app?](#code)
 

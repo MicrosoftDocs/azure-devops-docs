@@ -11,7 +11,7 @@ ms.date: 05/22/2017
 
 # Utility: Install Apple Certificate
 
-**Team Services**
+**VSTS**
 
 ![](../build/_img/xcode-build.png) Install an Apple certificate required to build on a macOS agent
 

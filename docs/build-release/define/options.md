@@ -137,7 +137,7 @@ For an example, see [Use a script to customize your build process](../scripts/in
 
 Select the [queue](../concepts/agents/pools-queues.md) that's attached to the pool that contains the agents you want to run this definition.
 
-**Tip:**  If your code is in Visual Studio Team Services (Team Services) and you run your builds on Windows, in many cases the simplest option is use the [Hosted pool](../concepts/agents/hosted.md).
+**Tip:**  If your code is in Visual Studio Team Services (VSTS) and you run your builds on Windows, in many cases the simplest option is use the [Hosted pool](../concepts/agents/hosted.md).
 
 ## Build job authorization scope
 > **TFS 2017 Update 1 and older**
@@ -159,7 +159,7 @@ Specify the maximum time a build job is allowed to execute on an agent before be
 
 <h2 id="job-cancel-timeout">Build job cancel timeout in minutes</h2>
 
-> **Team Services only**
+> **VSTS only**
 
 Specify the maximum time a build job is allowed to respond after the a user cancels the build. You can specify a value from 1 to 60 minutes.
 
@@ -225,7 +225,7 @@ Select this option to build multiple configurations. For example, you could buil
 
 ### In what time zone are the build number time values expressed?
 
-If you are using Team Services, then the time zone is UTC.
+If you are using VSTS, then the time zone is UTC.
 
 If you are using an on-premises Team Foundation Server, then the time zone is the same as the time zone of the operating system of the machine where you are running your application tier server.
 

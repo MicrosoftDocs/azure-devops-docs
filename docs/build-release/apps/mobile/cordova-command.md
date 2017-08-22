@@ -25,7 +25,7 @@ Generally you should only need to use the **[Cordova Build](./cordova-build.md)*
 To setup a Cordova build in Visual Studio Team Services or TFS 2015, you will need to install the Cordova Build task in your collection.
 
 - **Visual Studio Team Services / Visual Studio Online**: Simply install the [Visual Studio Team Services Extension for Cordova](http://go.microsoft.com/fwlink/?LinkID=691835). 
-- **TFS 2015 Update 1 and Earlier**: TFS 2015 Update 1 and below does not support installing Team Services Extensions. Follow the instructions in the [cordova-tasks](http://go.microsoft.com/fwlink/?LinkID=691187) repository to install.
+- **TFS 2015 Update 1 and Earlier**: TFS 2015 Update 1 and below does not support installing VSTS Extensions. Follow the instructions in the [cordova-tasks](http://go.microsoft.com/fwlink/?LinkID=691187) repository to install.
 
 ## The Cordova Command task
 Add the Cordova Command task to your build definition by going to the "Build" tab, adding a new build step, and selecting **Cordova Command** from the **Build** category
@@ -33,7 +33,7 @@ Add the Cordova Command task to your build definition by going to the "Build" ta
 Available Settings:
   - **Command**: The CLI command.  For example "plugin".
   - **Arguments**: Additional arguments for the command.  Ex: "add cordova-plugin-camera"
-  - **Cordova Version**: Version of the Cordova CLI you want to use to run the command. If you're using Tools for Apache Cordova you can leave this blank and the correct version will be used based on the contents of taco.json. Otherwise, if not specified, it uses the version specified by the CORDOVA_DEFAULT_VERSION environment variable (like in Team Services) and falls back to the latest version if no environment variable is set.
+  - **Cordova Version**: Version of the Cordova CLI you want to use to run the command. If you're using Tools for Apache Cordova you can leave this blank and the correct version will be used based on the contents of taco.json. Otherwise, if not specified, it uses the version specified by the CORDOVA_DEFAULT_VERSION environment variable (like in VSTS) and falls back to the latest version if no environment variable is set.
   - **Advanced &gt; Working Directory**: Location of the Cordova project itself inside your solution (not the solution root).
 
 Next, given the task is cross-platform, if you want to be sure this build definition only runs on Windows or OSX, you will need to add a demand that "cmd" exists for Windows...
@@ -50,8 +50,8 @@ The Ionic Command task is similar to the Cordova one. Add the Ionic Command task
 Available Settings:
 * **Command**: The CLI command.  For example "state".
 * **Arguments**: Additional arguments for the command.  Ex: "restore"
-* **Ionic Version**: If not specified, uses the Ionic CLI version specified by the IONIC_DEFAULT_VERSION environment variable (like in Team Services) or the latest if no environment variable is set.
-* **Cordova Version**: Version of Ionic you want to use to run the command. If left blank it uses the version specified by the CORDOVA_DEFAULT_VERSION environment variable (like in Team Services) and falls back to the latest version if no environment variable is set.
+* **Ionic Version**: If not specified, uses the Ionic CLI version specified by the IONIC_DEFAULT_VERSION environment variable (like in VSTS) or the latest if no environment variable is set.
+* **Cordova Version**: Version of Ionic you want to use to run the command. If left blank it uses the version specified by the CORDOVA_DEFAULT_VERSION environment variable (like in VSTS) and falls back to the latest version if no environment variable is set.
 * **Advanced &gt; Working Directory**: Location of the Cordova project itself inside your repository.
 
 > **Troubleshooting Tip:** If you encounter a **spawn EACCES error** when building on a Mac or Linux, be sure all files in the hooks folder to have an "execute bit" set as this a requirement for Cordova. To resolve, add an execute bit to the files in source control or add the following using the Command Line task: chmod +x hooks/after_prepare/010_add_platform_class.js
@@ -62,7 +62,7 @@ The PhoneGap Command task is similar to the Cordova one. Add the PhoneGap Comman
 Available Settings:
 * **Command**: The CLI command. For example "remote login".
 * **Arguments**: Additional arguments for the command.  
-* **PhoneGap Version**: If not specified, uses the PhoneGap CLI version specified by the PHONEGAP_DEFAULT_VERSION environment variable (like in Team Services) or the latest if no environment variable is set.
+* **PhoneGap Version**: If not specified, uses the PhoneGap CLI version specified by the PHONEGAP_DEFAULT_VERSION environment variable (like in VSTS) or the latest if no environment variable is set.
 * **Advanced &gt; Working Directory**: Location of the Cordova project itself inside your repository.
 
 ## More information

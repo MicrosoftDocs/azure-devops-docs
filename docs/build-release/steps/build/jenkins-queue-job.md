@@ -89,7 +89,7 @@ To set it up:
 <ol>
 <li>Install the [Team Foundation Server Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin) on the Jenkins server.
 </li>
-<li>On the Jenkins server, for each job you would like to collect results from, add the <b>Collect results for TFS/Team Services</b> <em>post-build action</em> and then configure it with one or more pairs of result type and include file pattern.
+<li>On the Jenkins server, for each job you would like to collect results from, add the <b>Collect results for TFS/VSTS</b> <em>post-build action</em> and then configure it with one or more pairs of result type and include file pattern.
 </li>
 <li>On the Jenkins Queue Job build task enable the <b>Capture console output and wait for completion</b> to collect results from the root level job, or the <b>Capture pipeline output and wait for pipeline completion</b> to collect results from all pipeline jobs.
 </ol>
