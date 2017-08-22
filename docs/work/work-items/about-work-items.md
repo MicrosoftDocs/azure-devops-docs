@@ -100,63 +100,12 @@ To learn more, see [Customize your work tracking experience](../customize/custom
 With work item templates you can quickly create work items which have pre-populated values for your team's commonly used fields. For example, you can create a task template that will set the area path, iteration path, and discipline or activity whenever you use it to create a task.  
 
 Based on the platform or version you use, you can perform the following tasks. 
-
-<table width="85%">
-<tr>
-<th width="30%">Task </th>
-<th width="15%" align="center" valign="bottom">Team Services</th>
-<th width="15%" align="center" valign="bottom">TFS 2013, TFS 2015<br/>(web portal)</th>
-<th width="15%" align="center" valign="bottom">TFS 2017<br/>(web portal)</th>
-<th width="20%" align="center" valign="bottom">VS 2013, VS 2015 <br/>(with power tools <sup>1</sup>) </th>
-</tr>
-
-<tbody align="center" valign="top" style="font-size: 95%">
-
-<tr>
-<td align="left">[Capture a work item as a template](../productivity/work-item-template.md#capture)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-</tr>
-
-
-<tr>
-<td align="left">[Add a work item using a template](../productivity/work-item-template.md#add-wi)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">[Apply templates to work items](../productivity/work-item-template.md#apply)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td> </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">[Manage work item templates](../productivity/work-item-template.md#manage)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td> </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-</tr>
-</tbody>
-</table>
-
-
-1. If you want to manage work item templates in Visual Studio 2013 or Visual Studio 2015, you can by downloading [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power) for free. With the Work Item Templates power tool add-in, you can:
-	- Create and edit work item templates  
-	- Create and update work items using a template  
-	- Create a template from an existing work item  
-	- Bulk-edit work items by applying a template  
-	- Use templates created in Visual Studio to create work items through the Visual Studio client.  
-	
->[!NOTE]  
-><b>Feature availability: </b>Visual Studio 2015 is the last version in which you can install TFS power tools. You can use the Work Item Templates tool whenever you connect to Team Services or an on-premises TFS that is at TFS 2015 version or earlier. Templates you define through the power tool are separate from those defined through Team Services.    
+- Capture a work item as a template 
+- Add a work item using a template
+- Apply templates to work items
+- Manage work item templates
+ 
+To learn more, see [Use templates to add and update work items](../productivity/work-item-template.md).  
  
  
 

@@ -13,21 +13,9 @@ ms.date: 12/07/2016
 # What is Team Foundation Server? 
 **TFS 2017 | TFS 2015 | TFS 2013**
 
- 
-<!--- TO BE COMPLETED   --> 
-
-
-!!! WORK IN PROGRESS !!! 
-
-- It's an on-premises server platform
-- Supports source control and work tracking 
-- Main benefits
-
-!!! WORK IN PROGRESS !!! 
-
 Team Foundation Server (TFS) is the on-premises version of our cloud service, [Visual Studio Team Services](what-is-vsts.md) (VSTS).  
 
-TFS provides an integrated set of features that you access through your web browser or a supported IDE, including: 
+Just like VSTS, TFS provides an integrated set of features that you access through your web browser or a supported IDE, including: 
 
 - Git repositories for source control of your code   
 - Build and release management to support continuous integration and delivery of your apps 
@@ -53,13 +41,14 @@ When you deploy TFS, you can also configure the following servers or integration
 Choose an on-premises TFS when you need your data to stay within your network or you want access to SQL Server reporting services that integrate with TFS data and tools. You can start for free by downloading TFS Express. 
 
 
-[![Install TFS](../_img/overview/tfs-setup-1.png)](../tfs-server/install/single-server.md)[![Create a team project](../_img/overview/tfs-setup-2.png)](../accounts/create-team-project.md)[![Add team members](../_img/overview/tfs-setup-3.png)](../accounts/add-users.md)[![Configure a backup schedule](../_img/overview/tfs-setup-4.png)](../tfs-server/admin/backup/back-up-restore-tfs.md)   
+[![Install TFS](_img/what-is-tfs-install-tfs-step-1.png)](../tfs-server/install/single-server.md)[![Create a team project](_img/what-is-tfs-create-team-project-step-2.png)](../accounts/create-team-project.md)[![Add team members](_img/what-is-tfs-add-code-step-3.png)](/vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json ) 
  
 
+## Try this next  
 
-<!--- Add note about SharePoint integration deprecation for TFS 2018  --> 
+> [!div class="nextstepaction"]
+> [Install TFS](../tfs-server/install/single-server.md)
 
-## Try this next 
 
 To learn more, see these topics: 
 - [A tour of services](../services.md)

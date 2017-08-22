@@ -45,7 +45,7 @@ To get started, from a [supported web browser](../accounts/requirements.md#brows
 The web portal is one of several clients that can connect to a team project. Different clients support different features and functions. For a list of all clients that connect to Team Services or TFS, see [Tools and clients that connect to Team Services and TFS](../tools.md). 
 
 <a id="nav-concepts">  </a>
-##Navigational concepts  
+## Navigational concepts  
 
 There are three main navigational concepts to understand. The first is the collection-project-team structure, the second is the user/administrative context, and the third corresponds to user-focused and team-scoped features that provide quick access to tasks targeted for the logged-in user or for the selected team.
 
@@ -86,56 +86,38 @@ The user context is used to get work done&mdash;manage code, plan and track work
 
 **User context**   
 You and other team members use the user context to collaborate, plan, and build working software.  
-
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#user-context-id">User context</li> 
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:50px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#tfs-2015-user-context">TFS 2015</a></li>
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:50px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#tfs-2017-user-context">TFS 2017</a></li>
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#ts-account-off-user-context">TFS 2017.1</a></li>
-
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-services-user-context">Team Services</a></li>
-
-</ul>
  
-<div id="user-context-id" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
+<a id="user-context-id" />
 
-<div id="team-services-user-context" class="tab-pane fade in active"> 
-<p>Click any hub to open that hub. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. To access administrative options, click the ![gear icon](_img/work-tfs-web-portal/IC623347.png) gear Settings icon or choose the admin level you want from the drop-down menu. </p>
+<a id="team-services-user-context" /> 
+**Team Services, TFS 2017.2**  
+Click any hub to open that hub. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. To access administrative options, click the ![gear icon](_img/work-tfs-web-portal/IC623347.png) gear Settings icon or choose the admin level you want from the drop-down menu.  
 
 <img src="_img/wwp-user-context-team-services.png" alt="Team Services, User context hubs" style="border: 1px solid #CCCCCC;" /> 
-</div>
+ 
+**TFS 2017, TFS 2017.1 **  
+<a id="tfs-2017-user-context" /> 
 
-<div id="tfs-2017-user-context" class="tab-pane fade"> 
-<p>Click any hub to open that hub. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. To access administrative options, click the ![gear icon](_img/work-tfs-web-portal/IC623347.png) gear Settings icon or choose the admin level you want from the drop-down menu.  </p>
+Click any hub to open that hub. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. To access administrative options, click the ![gear icon](_img/work-tfs-web-portal/IC623347.png) gear Settings icon or choose the admin level you want from the drop-down menu.  
 
 <img src="_img/web-portal-user-context-tfs-2017.png" alt="TFS 2017, User context hubs" style="border: 1px solid #CCCCCC;" /> 
-</div>
 
-<div id="ts-account-off-user-context" class="tab-pane fade"> 
-<p>Click any hub to open that hub. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. To access administrative options, click the ![gear icon](_img/work-tfs-web-portal/IC623347.png) gear Settings icon or choose the admin level you want from the drop-down menu.  </p>
+
+<!---
+<a id="ts-account-off-user-context" /> 
+**Team Services, TFS 2017.1**  
+Click any hub to open that hub. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. To access administrative options, click the ![gear icon](_img/work-tfs-web-portal/IC623347.png) gear Settings icon or choose the admin level you want from the drop-down menu.  
 
 <img src="_img/wwp-user-context-tfs-2017-1.png" alt="Team Services-Account Landing Off, User context hubs" style="border: 1px solid #CCCCCC;" /> 
-</div>
 
-<div id="tfs-2015-user-context" class="tab-pane fade">
+-->
+<a id="tfs-2015-user-context" />
+**TFS 2015, TFS 2013** 
+Click any hub to open that hub. Then, click a page within the hub to open that page. 
 
-<p>Click any hub to open that hub. Then, click a page within the hub to open that page.   </p>
+<img src="_img/web-portal-user-context.png" alt="TFS 2015 or TFS 2013, User context hubs" style="border: 1px solid #CCCCCC;" /> 
 
-<img src="_img/web-portal-user-context.png" alt="TFS 2015, User context hubs" style="border: 1px solid #CCCCCC;" /> 
-
-</div>
-</div>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
-<br/>
+ 
 
 <a id="admin-context">  </a>
 **Administrative context**  
@@ -189,117 +171,30 @@ The **Home** hub supports a configurable Welcome page and dashboards. From the *
 >[!NOTE]  
 >**Feature availability**: The [Account hub or New Account Landing Page feature](account-home-pages.md) is in preview mode for Team Services and turned on for all users of the web portal for TFS 2017.1 and later versions. To enable or disable the feature, see [Enable preview features](../collaborate/preview-features.md). 
 
-<div style="float:left;width:300px;margin:3px;font-size:95%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Home](../report/overview.md)</p>
-<ul style="padding-left:20px">
- <li style="margin-bottom:2px">[Account hub](account-home-pages.md)</li>
- <li style="margin-bottom:2px">[Project vision and status page](../collaborate/project-vision-status.md)</li>
- <li style="margin-bottom:2px">[Project welcome page](../reference/markdown-guidance.md)</li>
- <li style="margin-bottom:2px">[Overview (view/edit default dashboard)](../report/dashboards.md)</li>
- <li style="margin-bottom:2px">[Add/modify dashboards](../report/dashboards.md)</li>
-</ul>
-
-</div>
-
-
-<div style="float:left;width:420px;margin:3px;font-size:95%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Work](../work/overview.md)</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">Backlogs: [Create your backlog](../work/backlogs/create-your-backlog.md)  &#124; [Organize backlogs](../work/backlogs/organize-backlog.md) &#124; [Plan sprints](../work/scrum/sprint-planning.md) </li>
-<li style="margin-bottom:2px">Boards: [Kanban board](../work/kanban/kanban-basics.md) &#124; [Features and epics](../work/kanban/kanban-epics-features-stories.md) &#124;  [Cumulative flow chart](../report/guidance/cumulative-flow.md)</li>
-<li style="margin-bottom:2px">Boards: [Add task checklists](../work/kanban/add-task-checklists.md) &#124; [Task board](../work/scrum/task-board.md) </li>
-<li style="margin-bottom:2px">Queries: [Run/define queries](../report/guidance/cumulative-flow.md) &#124; [Add work items](../work/backlogs/add-work-items.md)  &#124; [Manage bugs](../work/backlogs/manage-bugs.md)</li>
-</ul>
-
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |[Home](../report/overview.md) |[Work](../work/work-items/index.md)|
+> |-------------|----------|
+> |- [Account hub](account-home-pages.md)<br/>- [Project vision and status page](../collaborate/project-vision-status.md)<br/>- [Project welcome page](../reference/markdown-guidance.md)<br/>- [Overview (view/edit default dashboard)](../report/dashboards.md)<br/>- >[Add/modify dashboards](../report/dashboards.md) |- Backlogs: [Create your backlog](../work/backlogs/create-your-backlog.md)  &#124; [Organize backlogs](../work/backlogs/organize-backlog.md) &#124; [Plan sprints](../work/scrum/sprint-planning.md)<br/>- Boards: [Kanban board](../work/kanban/kanban-basics.md) &#124; [Features and epics](../work/kanban/kanban-epics-features-stories.md) &#124;  [Cumulative flow chart](../report/guidance/cumulative-flow.md)<br/>- Boards: [Add task checklists](../work/kanban/add-task-checklists.md) &#124; [Task board](../work/scrum/task-board.md)<br/>- Queries: [Run/define queries](../report/guidance/cumulative-flow.md) &#124; [Add work items](../work/backlogs/add-work-items.md)  &#124; [Manage bugs](../work/backlogs/manage-bugs.md) |
 
 
 ### Source code control: Git and TFVC repositories
 
 The **Code** hub supports management of your source control repositories. You can choose between two types of repos: Git (distributed) or Team Foundation version control (centralized). For a comparison of the two repos, see [Choosing the right version control for your project](../tfvc/comparison-git-tfvc.md).
 
-<div style="float:left;width:300px;margin:3px;font-size:95%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Code: Git](../git/gitquickstart.md)</p>
-<ul style="padding-left:20px">
-<li style="margin-bottom:2px">[Add/manage repositories](../git/create-new-repo.md) &#124; [Rename a repo](../git/repo-rename.md) &#124; [Delete a repo](../git/delete-existing-repo.md)</li>
-<li style="margin-bottom:2px">Explorer</li>
-<li style="margin-bottom:2px">[History: review](../git/manage-your-branches.md#review-updates)</li>
-<li style="margin-bottom:2px">[Branches: Manage branches](../git/manage-your-branches.md)</li>
-<li style="margin-bottom:2px">[Pull Requests: View and create pull requests](../git/pull-requests.md)</li>
-</ul>
 
-</div>
-
-<div style="float:left;width:420px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Code: TFVC](../tfvc/overview.md)</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:2px">[Add/manage repositories](../git/create-new-repo.md) &#124; [Rename a repo](../git/repo-rename.md) &#124; [Delete a repo](../git/delete-existing-repo.md)</li>
-<li style="margin-bottom:2px">[Explorer: View, download, and compare version-controlled files](../tfvc/download-get-files-from-server.md)</li>
-<li style="margin-bottom:2px">[Changesets: find/view](../tfvc/find-view-changesets.md)</li>
-<li style="margin-bottom:2px">[Shelvesets](../tfvc/suspend-your-work-manage-your-shelvesets.md)</li>
-</ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-
-<br/>
+> [!div class="mx-tdBreakAll"]  
+> |[Code: Git](../git/index.md) |[Code: TFVC](../tfvc/index.md)|
+> |-------------|----------|
+> |- [Add/manage repositories](../git/create-new-repo.md) &#124; [Rename a repo](../git/repo-rename.md) &#124; [Delete a repo](../git/delete-existing-repo.md)<br/>- Explorer<br/>- [History: review](../git/manage-your-branches.md#review-updates)<br/>- [Branches: Manage branches](../git/manage-your-branches.md)<br/>- [Pull Requests: View and create pull requests](../git/pull-requests.md) |- [Add/manage repositories](../git/create-new-repo.md) &#124; [Rename a repo](../git/repo-rename.md) &#124; [Delete a repo](../git/delete-existing-repo.md)<br/>- [Explorer: View, download, and compare version-controlled files](../tfvc/download-get-files-from-server.md)<br/>- [Changesets: find/view](../tfvc/find-view-changesets.md)<br/>- [Shelvesets](../tfvc/suspend-your-work-manage-your-shelvesets.md) |
 
 ###Build, test, and release  
 
 The **Build & Release** hub supports defining and managing builds and releases to deploy your software to different staging and production environments. From the **Test** hub, you can create test plans, test cases, and run tests. 
 
-<div style="float:left;width:300px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Build](../build-release/overview.md)</p>
-<ul style="padding-left:20px">
-<li style="margin-bottom:2px">[Definitions: Define a build](../build-release/define/build.md)</li>
-<li style="margin-bottom:2px">[Options: Define multiple configurations](../build-release/define/options.md)</li>
-<li style="margin-bottom:2px">[Repository: Specify repository for build](../build-release/define/repository.md)</li>
-<li style="margin-bottom:2px">[Variables: Use build variables](../build-release/define/variables.md)</li>
-<li style="margin-bottom:2px">[Triggers: Set build triggers](../build-release/define/triggers.md)</li>
-<li style="margin-bottom:2px">[Retention: Set  retention policies](../build-release/concepts/policies/retention.md)</li>
-<li style="margin-bottom:2px">[History: View change history](../build-release/define/history.md)</li>
-</ul>
-
-</div>
-
-<div style="float:left;width:235px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Release](../build-release/concepts/definitions/release/index.md)</p>
-<ul style="padding-left:40px">
-<li style="margin-bottom:2px">[Release definition](../build-release/concepts/definitions/release/index.md)</li>
-<li style="margin-bottom:2px">[Triggers: continuous integration](../build-release/concepts/definitions/release/triggers.md#release-triggers)</li>
-<li style="margin-bottom:2px">[Deploy release](../build-release/actions/create-deploy-releases.md#deploy-command)</li>
-<li style="margin-bottom:2px">[Approve a release](../build-release/concepts/definitions/release/environments.md#approvals)</li>
-<li style="margin-bottom:2px">[Tests: view test results ](../build-release/actions/view-manage-releases.md#test-results)</li>
-<li style="margin-bottom:2px">[Logs: view release logs](../build-release/actions/debug-deployment-issues.md)</li>
-<li style="margin-bottom:2px">[Run unit tests with a build](../build-release/test/getting-started-with-continuous-testing.md)</li>
-</ul>
-
-</div>
-
-<div style="float:left;width:150px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Test](../manual-test/index.md)</p>
-<ul style="padding-left:40px">
-<li style="margin-bottom:2px">[Test plans](../manual-test/getting-started/create-a-test-plan.md)</li>
-<li style="margin-bottom:2px">[Parameters](../manual-test/repeat-test-with-different-data.md)</li>
-<li style="margin-bottom:2px">[Configurations](../manual-test/test-different-configurations.md)</li>
-<li style="margin-bottom:2px">[Runs](../manual-test/getting-started/run-manual-tests.md)</li>
-<li style="margin-bottom:2px">[Machines](../build-release/test/set-up-continuous-test-environments-builds.md)</li>
-<li style="margin-bottom:2px">[Load test](../load-test/getting-started-with-performance-testing.md)</li>
-</ul>
-<br/>
-
-</div>
-
-
-
-<div style="clear:left;font-size:100%">
-</div>
-
-<br/>
+> [!div class="mx-tdBreakAll"]  
+> |[Build](../build-release/index.md)|[Release](../build-release/concepts/definitions/release/index.md)| [Test](../manual-test/index.md) |
+> |-------------|----------|----------|
+> |- [Definitions: Define a build](../build-release/define/build.md)<br/>- [Options: Define multiple configurations](../build-release/define/options.md)<br/>- [Repository: Specify repository for build](../build-release/define/repository.md)<br/>- [Variables: Use build variables](../build-release/define/variables.md)<br/>- [Triggers: Set build triggers](../build-release/define/triggers.md)<br/>- [Retention: Set  retention policies](../build-release/concepts/policies/retention.md)<br/>- [History: View change history](../build-release/define/history.md) |- [Release definition](../build-release/concepts/definitions/release/index.md)<br/>- [Triggers: continuous integration](../build-release/concepts/definitions/release/triggers.md#release-triggers)<br/>- [Deploy release](../build-release/actions/create-deploy-releases.md#deploy-command)<br/>- [Approve a release](../build-release/concepts/definitions/release/environments.md#approvals)<br/>- [Tests: view test results ](../build-release/actions/view-manage-releases.md#test-results)<br/>- [Logs: view release logs](../build-release/actions/debug-deployment-issues.md)<br/>- >[Run unit tests with a build](../build-release/test/getting-started-with-continuous-testing.md) |- [Test plans](../manual-test/getting-started/create-a-test-plan.md)<br/>- [Parameters](../manual-test/repeat-test-with-different-data.md)<br/>- [Configurations](../manual-test/test-different-configurations.md)<br/>- [Runs](../manual-test/getting-started/run-manual-tests.md)<br/>- [Machines](../build-release/test/set-up-continuous-test-environments-builds.md)<br/>- [Load test](../load-test/getting-started-with-performance-testing.md) |
 
 <a id="administrative-context">  </a>
 ## Administrative context and team, team project, and account/collection settings
@@ -308,157 +203,70 @@ From a user context, open the admin context by clicking the ![gear icon](_img/wo
 
 Below we show the admin context for the team project level. 
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
+<a id="admin-intro" />
 
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
+<a id="admin-intro-team-services" />  
+**Team Services, TFS 2017.2** 
 
-<li style="float:left;" data-toggle="collapse" data-target="#admin-intro">Admin context, project-level</li>
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:50px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#admin-intro-tfs-2015">TFS 2015, TFS 2013</a></li>
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:50px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#admin-intro-tfs-2017">TFS 2017</a></li>
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#admin-intro-tfs-2017-1">TFS 2017.1</a></li>
-
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#admin-intro-team-services">Team Services</a></li>
-
-</ul>
-
-<div id="admin-intro" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-
-<div id="admin-intro-team-services" class="tab-pane fade in active"> 
-<p>Open any admin page by clicking it's name. Click or hover over the gear icon to access other administrative options. Note that you can click any of the user-context hubs of **Home**, **Code**, **Work**, and so on to return to the user context.  </p>
+Open any admin page by clicking it's name. Click or hover over the gear icon to access other administrative options. Note that you can click any of the user-context hubs of **Home**, **Code**, **Work**, and so on to return to the user context. 
 
 <img src="_img/work-web-portal_admin-context-project-level-team-services.png" alt="Team Services, Admin context, team project level" style="border: 1px solid #CCCCCC;" />  
-</div>
 
-<div id="admin-intro-tfs-2017-1" class="tab-pane fade"> 
-<p>Open any admin page by clicking it's name. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. Click or hover over the gear icon to access other administrative options. Note that you can click any of the user-context hubs of **Home**, **Code**, **Work**, and so on to return to the user context.   </p>
+
+
+<a id="admin-intro-tfs-2017-1" />
+**TFS 2017.1**  
+
+Open any admin page by clicking it's name. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. Click or hover over the gear icon to access other administrative options. Note that you can click any of the user-context hubs of **Home**, **Code**, **Work**, and so on to return to the user context.   
 
 <img src="_img/work-web-portal_admin-context-project-level-tfs-2017-1.png" alt="TFS 2017.1, Web portal, Admin context, team project level" style="border: 1px solid #CCCCCC;" />  
-</div>
+ 
 
-<div id="admin-intro-tfs-2017" class="tab-pane fade"> 
-<p>Open any admin page by clicking it's corresponding hub. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. Click or hover over the gear icon to access other administrative options. Note that you can click any of the user-context hubs of **Home**, **Code**, **Work**, and so on to return to the user context.   </p>
+<a id="admin-intro-tfs-2017" /> 
+**TFS 2017**  
+
+Open any admin page by clicking it's corresponding hub. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. Click or hover over the gear icon to access other administrative options. Note that you can click any of the user-context hubs of **Home**, **Code**, **Work**, and so on to return to the user context. 
 
 <img src="_img/web-portal-admin-project-settings-new-nav.png" alt="TFS 2017, Web portal, admin context" style="border: 1px solid #CCCCCC;" />  
 
-  
-</div>
 
 
-<div id="admin-intro-tfs-2015" class="tab-pane fade">
-<p>Open any admin page by clicking it's corresponding hub. </p> 
+<a id="admin-intro-tfs-2015" />
+
+**TFS 2015, TFS 2013**  
+Open any admin page by clicking it's corresponding hub.  
  
 <img src="_img/web-portal-project-admin-tfs.png" alt="TFS 2015, Web portal, admin context" style="border: 1px solid #CCCCCC;" />   
 
-<br/>
-
-<p>From within the admin context,  click one of the breadcrumb links to access the settings available at the account/collection, team project, or team level.</p> 
+From within the admin context,  click one of the breadcrumb links to access the settings available at the account/collection, team project, or team level.
 
 ![Web portal admin settings links](_img/web-portal-admin-team-tfs.png)  
    
-</div>
+
+You must be a member of the listed administrator group or role to perform the tasks listed.  
 
 
-</div>
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |Team settings|Team project settings|  
+> |-------------|----------| 
+> |Required membership: [Team administrator role](../work/scale/add-team-administrator.md)<br/><br/>- [Overview: Add team members](../work/scale/multiple-teams.md)  &#124; [Add team admins](../work/scale/add-team-administrator.md)<br/>- [Select backlog levels](../work/customize/select-backlog-navigation-levels.md) &#124; [Set working days](../work/scale/capacity-planning.md)  &#124; [Working with bugs](../work/customize/show-bugs-on-backlog.md)<br/>- [Work/Iterations & Areas (team defaults)](../work/scale/set-team-defaults.md)<br/>- [Work/Templates](../work/productivity/work-item-template.md)<br/>- [Security (manage team-level permissions)](../work/scale/team-administrator-permissions.md)<br/>- [Notifications](../collaborate/manage-team-notifications.md)<br/><br/>For a complete overview of all team assets that you can configure, see  [Manage team assets](../work/scale/manage-team-assets.md) |Required membership:  [Project Administrators](../accounts/add-administrator-tfs.md#team-project)<br/><br/>-  [Overview: Add teams](../work/scale/multiple-teams.md)<br/>- [Work/Iterations & Areas (project-wide)](../work/customize/set-area-paths.md)<br/>- [Security (manage project-level permissions)](../security/permissions.md#team-project-level-permissions)<br/>- [Notifications](../collaborate/manage-team-notifications.md)<br/>- [Version Control (manage repository permissions)](../security/permissions.md#git-repository)<br/>- [Agent queues](../build-release/concepts/agents/pools-queues.md)<br/>- [Service hooks](../service-hooks/services/webhooks.md)<br/>- [Services](../build-release/concepts/library/service-endpoints.md)<br/>- [Test (manage test retention policies](../manual-test/getting-started/how-long-to-keep-test-results.md) 
 
+> [!div class="mx-tdBreakAll"]  
+> |Account settings (Team Services)|Collection settings (TFS)s|  
+> |-------------|----------| 
+> |Required membership: [Project Collection Administrators](../accounts/add-administrator-tfs.md#project-collection)<br/><br/>- [Overview: Create team projects](../accounts/create-team-project.md)  &#124; [Rename team project](../accounts/rename-team-project.md) &#124; [Delete team project](../accounts/delete-team-project.md) &#124; [Change process](../work/process/manage-process.md)<br/>- [Settings: Set  account preferences](../accounts/account-preferences.md) &#124; [Change application access policies](../accounts/change-application-access-policies-vs.md) &#124; [Change account owner](../accounts/change-account-ownership-vs.md) &#124; [Delete your account](../accounts/delete-your-vsts-account.md) &#124; [Recover your account](../accounts/recover-your-vsts-account.md)<br/>- [Security (manage collection-level permissions)](../security/permissions.md#collection-level)<br/>- [Process (customize work tracking)](../work/process/manage-process.md)<br/>- [Build (manage build policies)](../build-release/concepts/policies/retention.md)<br/>- [Agent pools (manage build agents)](../build-release/concepts/agents/pools-queues.md) (Team Services)<br/>- [Extensions (install/manage extensions)](../marketplace/get-vsts-extensions.md) | Required membership: [Project Collection Administrators](../accounts/add-administrator-tfs.md#project-collection)<br/><br/>- [Overview: Create team projects](../accounts/create-team-project.md)  &#124; [Rename team project](../accounts/rename-team-project.md) &#124; [Delete team project](../accounts/delete-team-project.md)<br/>- [Security (manage collection-level permissions)](../security/permissions.md#collection-level)<br/>- [Build (manage build policies)](../build-release/concepts/policies/retention.md)<br/>- >[Agent queues](../build-release/concepts/agents/pools-queues.md)<br/>- [Extensions (install/manage extensions)](../marketplace/get-vsts-extensions.md) |
 
-<hr/>
+**Server-level settings (TFS only) **
 
+Required membership: [Team Foundation Administrators](../accounts/add-administrator-tfs.md#server) 
+
+- Control panel: Choose team project/team  
+- [Access levels (Stakeholder, Basic, Advanced)](../security/change-access-levels.md)  
+- [Legacy Extensions (manage)](../marketplace/get-vsts-extensions.md)   
+- [Agent pools (manage build agents)](../build-release/concepts/agents/pools-queues.md)   
 
  
- You must be a member of the listed administrator group or role to perform the tasks listed.  
-
-<div style="float:left;width:375px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Team settings</p>
-<p style="padding-bottom:0px;text-align:left;">Required membership: [Team administrator role](../work/scale/add-team-administrator.md)</p>
-<ul style="padding-left:20px">
- <li style="margin-bottom:2px">[Overview: Add team members](../work/scale/multiple-teams.md)  &#124; [Add team admins](../work/scale/add-team-administrator.md)  </li>
- <li style="margin-bottom:2px">[Select backlog levels](../work/customize/select-backlog-navigation-levels.md) &#124; [Set working days](../work/scale/capacity-planning.md)  &#124; [Working with bugs](../work/customize/show-bugs-on-backlog.md)</li>
- <li style="margin-bottom:2px">[Work/Iterations & Areas (team defaults)](../work/scale/set-team-defaults.md)</li>
-<li style="margin-bottom:2px">[Work/Templates](../work/productivity/work-item-template.md)  (Team Services) </li>
-<li style="margin-bottom:2px">[Security (manage team-level permissions)](../work/scale/multiple-teams.md)</li>
-<li style="margin-bottom:2px">[Notifications](../collaborate/manage-team-notifications.md) or [Alerts](../work/track/alerts-and-notifications.md)</li>
-</ul>
-
-<p style="padding-bottom:0px;text-align:left;">For a complete overview of all team assets that you can configure, see  [Manage team assets](../work/scale/manage-team-assets.md)</p>
-
-</div>
-
-
-
-<div style="float:left;width:375px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Team project settings</p>
-<p style="padding-bottom:0px;text-align:left;">Required membership:  [Project Administrators](../accounts/add-administrator-tfs.md#team-project)</p>
-<ul style="padding-left:40px">
- <li style="margin-bottom:2px">[Overview: Add teams](../work/scale/multiple-teams.md)</li>
- <li style="margin-bottom:2px">[Work/Iterations & Areas (project-wide)](../work/customize/set-area-paths.md)</li>
-<li style="margin-bottom:2px">[Security (manage project-level permissions)](../security/permissions.md#team-project-level-permissions)</li>
-<li style="margin-bottom:2px">[Notifications](../collaborate/manage-team-notifications.md) or [Alerts](../work/track/alerts-and-notifications.md)</li>
-<li style="margin-bottom:2px">[Version Control (manage repository permissions)](../security/permissions.md#git-repository)</li>
-<li style="margin-bottom:2px">[Agent queues](../build-release/concepts/agents/pools-queues.md)</li>
-<li style="margin-bottom:2px">[Service hooks](../service-hooks/services/webhooks.md)</li>
-<li style="margin-bottom:2px">[Services](../build-release/concepts/library/service-endpoints.md)</li>
-<li style="margin-bottom:2px">[Test (manage test retention policies](../manual-test/getting-started/how-long-to-keep-test-results.md)</li>
-</ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
-<br/>
-
-
-<div style="float:left;width:375px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Account settings (Team Services)</p>
-<p style="padding-bottom:0px;text-align:left;">Required membership: [Project Collection Administrators](../accounts/add-administrator-tfs.md#project-collection)</p>
-<ul style="padding-left:20px">
- <li style="margin-bottom:2px">[Overview: Create team projects](../accounts/create-team-project.md)  &#124; [Rename team project](../accounts/rename-team-project.md) &#124; [Delete team project](../accounts/delete-team-project.md) &#124; [Change process](../work/process/manage-process.md) </li>
- <li style="margin-bottom:2px">[Settings: Set  account preferences](../accounts/account-preferences.md) &#124; [Change application access policies](../accounts/change-application-access-policies-vs.md) &#124; [Change account owner](../accounts/change-account-ownership-vs.md) &#124; [Delete your account](../accounts/delete-your-vsts-account.md) &#124; [Recover your account](../accounts/recover-your-vsts-account.md)</li>
-<li style="margin-bottom:2px">[Security (manage collection-level permissions)](../security/permissions.md#collection-level)</li>
-<li style="margin-bottom:2px">[Process (customize work tracking)](../work/process/manage-process.md) </li>
-<li style="margin-bottom:2px">[Build (manage build policies)](../build-release/concepts/policies/retention.md)</li>
-<li style="margin-bottom:2px">[Agent pools (manage build agents)](../build-release/concepts/agents/pools-queues.md) (Team Services) </li>
-<li style="margin-bottom:2px">[Extensions (install/manage extensions)](../marketplace/get-vsts-extensions.md)</li>
-</ul>
-</div>  
-
-
-
-<div style="float:left;width:375px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Collection settings (TFS)</p>
-<p style="padding-bottom:0px;text-align:left;">Required membership: [Project Collection Administrators](../accounts/add-administrator-tfs.md#project-collection)</p>
-<ul style="padding-left:40px">
- <li style="margin-bottom:2px">[Overview: Create team projects](../accounts/create-team-project.md)  &#124; [Rename team project](../accounts/rename-team-project.md) &#124; [Delete team project](../accounts/delete-team-project.md)</li>
-<li style="margin-bottom:2px">[Security (manage collection-level permissions)](../security/permissions.md#collection-level)</li>
-<li style="margin-bottom:2px">[Build (manage build policies)](../build-release/concepts/policies/retention.md)</li>
-<li style="margin-bottom:2px">[Agent queues](../build-release/concepts/agents/pools-queues.md) </li>
-<li style="margin-bottom:2px">[Extensions (install/manage extensions)](../marketplace/get-vsts-extensions.md)</li>
-</ul>
-</div>  
-
-<div style="clear:left;font-size:100%">
-</div>
-<br/>
-
-<div style="float:left;width:375px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Server-level settings (TFS only)</p>
-<p style="padding-bottom:0px;text-align:left;">Required membership: [Team Foundation Administrators](../accounts/add-administrator-tfs.md#server)</p>
-<ul style="padding-left:20px">
- <li style="margin-bottom:2px">Control panel: Choose team project/team</li>
- <li style="margin-bottom:2px">[Access levels (Stakeholder, Basic, Advanced)](../security/change-access-levels.md)</li>
- <li style="margin-bottom:2px">[Legacy Extensions (manage)](../marketplace/get-vsts-extensions.md)</li>
-<li style="margin-bottom:2px">[Agent pools (manage build agents)](../build-release/concepts/agents/pools-queues.md)</li>
-
-</ul>
-</div>
-
-
-
-
-<div style="clear:left;font-size:100%">
-</div>
+ 
 <!--- End of Admin context -->
 
 

@@ -10,18 +10,12 @@ ms.author: kaelli
 ms.date: 08/15/2017
 ---
 
-# A tour of services provided with Team Services and TFS 
+# A tour of services Team Services and TFS provides 
 <b>Team Services | TFS 2017 | TFS 2015  </b> 
 
-<!--- TO BE COMPLETED   --> 
+With Team Services and TFS, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web-based interface that you can access from all major browsers. 
 
-!!! WORK IN PROGRESS !!! 
-
-Update this to provide more of a tour with screenshots 
-
-!!! WORK IN PROGRESS !!! 
-
-Team Services and TFS provide an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web-based interface that you can access from all major browsers on any platform. Web services are access through the following five main hubs: 
+Web services are access through the following main hubs as shown in the following image.
 
 ![Team Services, main hubs](_img/services-hubs.png)  
 
@@ -38,28 +32,41 @@ For information about client tools, see [Tools](tools.md).
 When you sign up for Team Services or install an on-premises TFS, you get access to the following services. All of these services you manage through a web browser. Some services, such as source control and build definitions, can also be managed through a client.    
 
 
-### Dashboards  
-From the **Dashboards** hub you gain access to team-scoped dashboards and a welcome page. Tasks you can perform in this hub include: 
+
+## Dashboards  
+From the **Dashboards** hub you gain access to user-configurable dashboards.   
+
+<img src="./report/_img/dashboard-view-with-widgets.png" alt="Dashboard hub, Overview" style="border: 2px solid #C3C3C3;" /> 
+
+Tasks you can perform in this hub include: 
 - Add, configure, and manage dashboards   
 - Configure widgets that you add to dashboards 	
 - Quickly navigate to different areas of your team project 
-- View a Welcome page that references a Readme markdown file hosted in your repository  
+ 
 
 To learn more, see [Dashboards](report/dashboards.md). 
 
-### Collaborate on code 
 
-From the **Code** hub you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. From this hub you can perform these tasks: 
-- Comment or review code comments on changesets or Git commits  
-- Review and download files
-- Review change history 
-- Review branches   
-- Review and create a pull request 
+## Code 
+
+From the **Code** hub you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.   
+
+<img src="_img/services/code-git-hub.png" alt="Code hub, Git, files page" style="border: 2px solid #C3C3C3;" /> 
+
+From the Code hub for Git you can perform these tasks:  
+- Review, download, and edit files and review the change history for a file  
+- Review and manage commits that have been pushed       
+- Review, create, approve, comment, and complete pull requests  
+- Add and manage Git tags   
 
 To learn more, see the overviews for [Git](git/overview.md) or [TFVC](tfvc/overview.md). 
 
-### Plan and track work 		
-From the **Work** hub you gain access to Agile tools to support planning and tracking work. Specifically, you can perform these tasks:   			
+## Plan and track work 		
+From the **Work** hub you gain access to Agile tools to support planning and tracking work. 
+
+<img src="_img/services/work-hub-backlogs.png" alt="Work hub, Backlogs page" style="border: 2px solid #C3C3C3;" /> 
+
+Specifically, from the **Work** you can perform these tasks:   			
 - Add and update work items 
 - Define work item queries and create status and trend charts based on those queries 			
 - Manage your product backlog   					
@@ -68,21 +75,28 @@ From the **Work** hub you gain access to Agile tools to support planning and tra
 - Visualize the work flow and update status using Kanban boards	 				
 - Manage portfolios by grouping stories under features and features under epics   
 
-See [Backlogs and board views](work/backlogs-boards-plans.md) for an overview of each, and [Agile tools](work/overview.md) for a complete index of work tracking features and scenarios.   
+See [Backlogs, boards, and plans](work/backlogs-boards-plans.md) for an overview of each.   
  
-### Build & Release 
+## Build & Release 
 The **Build & Release** hub provides an integrated set of features to support building and deploying your applications. 
+
+
+<img src="_img/services/build-release-hub.png" alt="Build-Release hub, Build definitions page" style="border: 2px solid #C3C3C3;" /> 
+
+You use this hub to implement continuous integration and continuous delivery. 
 - **Build automation**: Define the steps to take during build and the triggers that will initiate a build. 
 - **Release management**: Supports a rapid release cadence and management of simultaneous releases. You can configure release definitions that represent your environments from development to production. Run automations to deploy your app to each environment. Add approvers to sign off that the app has been successfully deployed in an environment. Create your release manually or automatically from a build. Then track your releases as they are deployed to various environments.
-- **System Center integration**: Enables a release definition to connect to a System Center Virtual Machine Manager (SCVMM) server to easily provision virtual machines and perform actions on them such as managing checkpoints, starting and stopping VMs, and running PowerShell scripts
-- **VMware Resource Deployment**: Connect to a VMware vCenter Server from Team Services or TFS to provision, start, stop, or snapshot VMware virtual machines.  
+
 
 To learn more, see [Continuous integration on any platform](build-release/overview.md). 
 
 
-### Test 
-The **Test** hub supports manual testing and product owners and business analysts to gauge how their features measure up against the acceptance criteria.  
+## Test 
+Test features support manual and exploratory testing, load or performace testing, and continuous testing.  Here we show the **Test** hub that support creating and managing manual tests.  
 
+<img src="_img/services/test-hub.png" alt="Test hub" style="border: 2px solid #C3C3C3;" /> 
+
+Test **Test** hub provides support for the following:  
 - Customization of workflows with test plan, test suite and test case work items  
 - End-to-end traceability from requirements to test cases and bugs with requirement-based test suites  
 - Criteria-based test selection with query-based test suites    
@@ -93,6 +107,7 @@ The **Test** hub supports manual testing and product owners and business analyst
 - Real-time charts for tracking test activity.  
 
 To learn more, see [Testing overview](manual-test/index.md). 			
+
 
 ## Additional collaboration services 
 
@@ -135,7 +150,7 @@ For continuous delivery to Azure from Team Services, see [Automatically build an
 
 ## Administrative services  
 
-There are a number of features and tasks associated with administrating a collaborate software development environment. You perform most of these tasks through the web portal for either Team Services or TFS. 
+There are a number of features and tasks associated with administrating a collaborate software development environment. You perform most of these tasks through the web portal. 
 
 
 > [!div class="mx-tdBreakAll"]  
@@ -155,3 +170,7 @@ There are a number of features and tasks associated with administrating a collab
 
 - [Build and Deployment Automation Case Study for World Wide Time Keeping: Higher Quality and Faster Delivery in an Increasingly Agile World](https://www.visualstudio.com/en-us/articles/build-deployment-best-practices)  
 
+
+<!---
+**System Center integration**: Enables a release definition to connect to a System Center Virtual Machine Manager (SCVMM) server to easily provision virtual machines and perform actions on them such as managing checkpoints, starting and **VMware Resource Deployment**: Connect to a VMware vCenter Server from Team Services or TFS to provision, start, stop, or snapshot VMware virtual machines. 
+-->

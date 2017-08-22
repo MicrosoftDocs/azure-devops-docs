@@ -11,11 +11,7 @@ ms.date: 06/22/2017
 
 # What is Visual Studio Team Services? 
 
-<!--- TO BE COMPLETED   --> 
-
-!!! WORK IN PROGRESS !!! 
-
-Visual Studio Team Services is a cloud service for collaborating on code development. It provides an integrated set of features that you access through your web browser, including: 
+Visual Studio Team Services is a cloud service for collaborating on code development. It provides an integrated set of features that you access through your web browser or IDE client, including: 
 
 - Git repositories for source control of your code   
 - Build and release management to support continuous integration and delivery of your apps 
@@ -35,10 +31,10 @@ We've made it easy for you to start for free and try out our service.
 
 Sign up for free by creating an account and then, either upload your code to share or source control, or begin tracking your work using Scrum, Kanban, or a combination of methods. 
 
-[![Sign up for Team Services](../_img/overview/vsts-setup-1.png)](sign-up-invite-teammates.md)[![Add team members](../_img/overview/vsts-setup-3.png)](sign-up-invite-teammates.md)[![Add code to repository](../_img/overview/vsts-setup-4.png)](/vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json ) 
+[![Sign up for Team Services](_img/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](_img/what-is-vsts-add-code-ide-step-2.png)](/vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json ) 
 
 
-## Try this next 
+## Try this next  
 
 > [!div class="nextstepaction"]
 > [Sign up and invite team mates](sign-up-invite-teammates.md)

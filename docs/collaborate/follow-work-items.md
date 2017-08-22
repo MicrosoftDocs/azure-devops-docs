@@ -1,12 +1,12 @@
 ---
-title: Follow work | Team Services  
+title: Follow work or pull requests| Team Services  
 description: Quickly track the progress made to a work item by following it when using Visual Studio Team Services (VSTS)  
 ms.technology: collaborate
 ms.prod: vs-devops-alm
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/22/2017  
+ms.date: 08/21/2017  
 ---
 
 # Follow a work item or pull request  
@@ -28,7 +28,7 @@ This topic shows you how to:  
 > * Manage work items that you're following   
 
 
-# Follow a work item
+## Follow a work item
 
 When you want to track the progress of a single work item, click the ![Follow icon](../work/_img/icons/follow-icon.png) icon. This signals the system to notify you when changes are made to the work item.  
 
@@ -44,7 +44,7 @@ Notifications are sent to your preferred email address, which you can change fro
 To stop following changes, click the ![Following icon](../work/_img/icons/following-icon.png)  icon.
  
 <a id="follow-pr"></a>
-##Follow a pull request 
+## Follow a pull request 
 
 To track the progress of a single pull request, click the ![Follow icon](../work/_img/icons/follow-icon.png) option from the context menu. This signals the system to notify you when changes are made to the PR.  
 

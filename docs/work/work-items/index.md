@@ -24,6 +24,10 @@ Track the features and requirements you're developing, code defects or bugs, and
 ## 5-Minute Quickstarts  
  
 - [Add work items](../backlogs/add-work-items.md)
+- [Drive Git development](/vsts/work/backlogs/connect-work-items-to-git-dev-ops?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json )  
+- [Use @mentions to further discussion](/vsts/notifications/at-mentions?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json )
+- [Use #ID to link to work items](/vsts/notifications/add-links-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json )
+
 
 ## Step-by-Step Tutorials
 
@@ -45,9 +49,10 @@ Track the features and requirements you're developing, code defects or bugs, and
 ## How-to guides
 - [Add tags to work items](/vsts/work/track/add-tags-to-work-items?toc=/vsts/work/work-items/toc.json)
 - [Use work item templates](/vsts/work/productivity/work-item-template?toc=/vsts/work/work-items/toc.json)
+- [Go mobile](/vsts/collaborate/mobile-work?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Define area paths](../customize/set-area-paths.md)  
 - [Switch project or team focus](../how-to/switch-team-context-work.md)  
 - [Email/print work items](../how-to/email-work-items.md)    
-- [Define area paths](../customize/set-area-paths.md)  
 - [Define iteration paths](../customize/set-iteration-paths-sprints.md)  
 - [Bulk add or modify (Excel)](/vsts/work/office/bulk-add-modify-work-items-excel?toc=/vsts/work/work-items/toc.json)
 

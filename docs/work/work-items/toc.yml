@@ -8,8 +8,15 @@
   items:
   - name: Add a work item
     href: /vsts/work/backlogs/add-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+  - name: Drive Git development
+    href: /vsts/work/backlogs/connect-work-items-to-git-dev-ops?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+  - name: "Use @mentions to further discussion" 
+    href: /vsts/notifications/at-mentions?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+  - name: "Use #ID to link to work items"
+    href: /vsts/notifications/add-links-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
 - name: Tutorials
   items:
+  - name: Manage user stories (NEW)
   - name: Manage bugs
     href: /vsts/work/backlogs/manage-bugs?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Manage issues or impediments
@@ -22,8 +29,6 @@
     href: /vsts/work/backlogs/bulk-modify-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Follow work
     href: /vsts/collaborate/follow-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-  - name: Get started as a Stakeholder
-    href: /vsts/quickstart/get-started-stakeholder?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
 - name: Concepts
   items:
   - name: About permissions and access
@@ -52,6 +57,17 @@
         href: /vsts/work/guidance/cmmi-process?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
       - name: "CMMI work item types & workflow"
         href: /vsts/work/guidance/cmmi-process-workflow?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
+        items:
+        - name: "Code review & feedback field reference"
+          href: /vsts/work/guidance/guidance-code-review-feedback-field-reference?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+        - name: "Bugs, issues, & risks  field reference"
+          href: /vsts/work/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+        - name: Change request  field reference
+          href: /vsts/work/guidance/cmmi/guidance-change-request-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+        - name: Requirements field reference
+          href: /vsts/work/guidance/cmmi/guidance-requirements-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+        - name: Review meeting field reference
+          href: /vsts/work/guidance/cmmi/guidance-review-meeting-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
       - name: CMMI background
         href: /vsts/work/guidance/cmmi/guidance-background-to-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
       - name: Project management
@@ -96,10 +112,6 @@
     href: /vsts/work/productivity/work-item-template?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
   - name: Copy/clone work items
     href: /vsts/work/backlogs/copy-clone-work-items.md
-  - name: Use @mentions to further discussion
-    href: /vsts/notifications/at-mentions?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
-  - name: Use #ID to link to work items
-    href: /vsts/notifications/add-links-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Go mobile
     href: /vsts/collaborate/mobile-work?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Email/print work items
@@ -114,24 +126,14 @@
     href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Bulk add or modify (Excel)
     href: /vsts/work/office/bulk-add-modify-work-items-excel?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+  - name: Get started as a Stakeholder
+    href: /vsts/quickstart/get-started-stakeholder?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
 - name: Reference
   items:
   - name: Work item field index
     href: /vsts/work/guidance/work-item-field?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-  - name: "Code review & feedback field reference"
-    href: /vsts/work/guidance/guidance-code-review-feedback-field-reference?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-  - name: "Bugs, issues, & risks  field reference"
-    href: /vsts/work/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-  - name: Change request  field reference
-    href: /vsts/work/guidance/cmmi/guidance-change-request-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-  - name: Requirements field reference
-    href: /vsts/work/guidance/cmmi/guidance-requirements-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-  - name: Review meeting field reference
-    href: /vsts/work/guidance/cmmi/guidance-review-meeting-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Clients that support work tracking
     href: /vsts/tools?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-  - name: "Add & share storyboard shapes"
-    href: /vsts/work/office/add-share-storyboard-shapes?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
 - name: Resources
   items:
   - name: Kanban

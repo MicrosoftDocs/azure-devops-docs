@@ -29,7 +29,7 @@ You can start adding work items once you connect to a team project. If you don't
 
 Here we show how to add work items from the web portal. 
 
-1.  Open a browser window and click the Work hub. If you haven't been added as a team member, [get added now](../scale/multiple-teams.md#add-team-members).
+1.  Open a browser window and click the **Work** hub. If you haven't been added as a team member, [get added now](../scale/multiple-teams.md#add-team-members).
 
 	The URL follows this pattern: 
 	- Visual Studio Team Services: ```https://{account name}.visualstudio.com/{project name}/_backlogs```  
@@ -37,7 +37,7 @@ Here we show how to add work items from the web portal.
 
 	If you don't see the team or team project you want, click the ![Team Services icon](../_img/icons/project-icon.png) Team Services icon to [browse all team projects and teams](../../connect/account-home-pages.md).  
 
-2.	From the Work hub, choose the work item type from the New Work Item list of options. Here, we choose to create an Impediment. 
+2.	From the Work hub, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
 	<img src="_img/add-work-items-choose-user-story.png" alt="Team Services, TFS 2017, Work hub, Add a work item" style="border: 2px solid #C3C3C3;" /> 
 
