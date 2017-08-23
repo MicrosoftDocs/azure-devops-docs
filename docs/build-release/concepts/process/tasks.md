@@ -115,7 +115,7 @@ For example, you can set up your build process to run and validate your app for 
 ### Example: Test and validate your app on multiple versions of Node.js
 
 > [!TIP]
-> Want a visual walkthrough? See [our April 19 news release](../../news/2017.md#april-19).
+> Want a visual walkthrough? See [our April 19 news release](../../archive/news/2017.md#april-19).
 
 [Create a new build definition](../../actions/ci-cd-part-1.md) (start with an empty process) to try this out.
 

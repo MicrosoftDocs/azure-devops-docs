@@ -20,8 +20,6 @@ Continuous Integration (CI) is the practice used by development teams to automat
 
 Continuous Delivery (CD) is a process by which code is built, tested, and eventually deployed to a production environment.  Multiple testing or so-called staging environments drive quality.  CI systems produce the deployable artifacts including infrastructure and apps.  Automated release pipelines consume these artifacts to release new versions and fixes to existing systems.  Monitoring and alerting systems run continually to drive visibility into the entire CD process. 
 
-[What's new?](news/2017.md)
-
 [!INCLUDE [temp](_shared/ci-cd-newbies.md)]
 
 <div style="clear:both;"></div>

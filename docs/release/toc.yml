@@ -1,7 +1,7 @@
 - name: Overview
   href: ../build-release/overview.md
 - name: Release notes
-  href: ../build-release/news/rm-archived.md
+  href: ../build-release/archive/news/rm-archived.md
 - name: Setup and configuration
   items:
   - name: Configure agents

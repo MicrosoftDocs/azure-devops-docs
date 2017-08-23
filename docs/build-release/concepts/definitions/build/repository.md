@@ -31,7 +31,7 @@ At the beginning of the build process, the build agent downloads the files from 
 
 **Branch** (default): Select the branch that you want to be the default when you manually queue this build.
 
-> If you're using the [New Build Editor](../../../news/2017.md#january-25), then click **Advanced settings** to see the following options.
+> If you're using the [New Build Editor](../../../archive/news/2017.md#january-25), then click **Advanced settings** to see the following options.
 
 [!INCLUDE [temp](_shared/git-clean-option.md)]
 
@@ -50,7 +50,7 @@ Note: Some build variables might yield a value that is not a valid label. For ex
 
 **Mappings** (workspace): Include with a type value of **Map** only the folders that your build process requires. If a subfolder of a mapped folder contains files that the build process does not require, map it with a type value of **Cloak**. [When would I need to change TFVC mappings. How should I do it?](#tfvc_mappings)
 
-> If you're using the [New Build Editor](../../../news/2017.md#january-25), then click **Advanced settings** to see the following options.
+> If you're using the [New Build Editor](../../../archive/news/2017.md#january-25), then click **Advanced settings** to see the following options.
 
 [!INCLUDE [include](_shared/label-sources.md)]
 
@@ -123,7 +123,7 @@ This is the easier way to authorize your account. This approach grants your VSTS
 
 **Default branch:**  Select the branch that you want to be the default when you manually queue this build.
 
-> If you're using the [New Build Editor](../../../news/2017.md#january-25), then click **Advanced settings** to see the following options.
+> If you're using the [New Build Editor](../../../archive/news/2017.md#january-25), then click **Advanced settings** to see the following options.
 
 [!INCLUDE [temp](_shared/git-clean-option.md)]
 
@@ -147,7 +147,7 @@ This is the easier way to authorize your account. This approach grants your VSTS
 
 **Branch** (default):  Select the branch that you want to be the default when you manually queue this build.
 
-> If you're using the [New Build Editor](../../../news/2017.md#january-25), then click **Advanced settings** to see the following options.
+> If you're using the [New Build Editor](../../../archive/news/2017.md#january-25), then click **Advanced settings** to see the following options.
 
 [!INCLUDE [temp](_shared/git-clean-option.md)]
 
