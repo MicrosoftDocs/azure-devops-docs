@@ -20,8 +20,8 @@ in this early stage, a few things have to be done manually at this point - and t
 with the returned data. This documentation will show you how to do both.
 
 The following topics describe how to build an extension and a widet extension:  
-- [Overview of extensions for Visual Studio Team Services](../../integrate/extensions/get-started/node.md)  
-- [Add a dashboard widget](../../integrate/extensions/develop/add-dashboard-widget.md)  
+- [Overview of extensions for Visual Studio Team Services](../../extend/get-started/node.md)  
+- [Add a dashboard widget](../../extend/develop/add-dashboard-widget.md)  
  
 For the purposes of this example we'll use the open source C3 charting library which sits on top of the D3 graphics library.
 
@@ -44,7 +44,7 @@ At the end of this walk-through you will have a working dashboard widget which a
 5. Add an empty file called **analytics.js** to the **AnalyticsWidgetExtensionSample\scripts** folder - this is where the code
 for the widget will go
 6. Add another folder called **images** to the AnalyticsWidgetExtensionSample folder and copy an image you would like to use
-as your extension image (see this [topic](https://www.visualstudio.com/integrate/extensions/develop/add-dashboard-widget#image) for details on the image)
+as your extension image (see this [topic](https://www.visualstudio.com/extend/develop/add-dashboard-widget#image) for details on the image)
 7. Copy the c3.min.css file into the **AnalyticsWidgetExtensionSample\content** folder
 8. Add a file called **widget.css** into the content folder
 8. In the AnalyticsWidgetExtensionSample folder create a new web page called **Analytics.html**
@@ -127,7 +127,7 @@ VSS.require(["TFS/Dashboards/WidgetHelpers", "VSS/Authentication/Services"], fun
 //Reusable function to call the analytics service and build the chart
 ```
 
-The [register](https://www.visualstudio.com/integrate/extensions/reference/client/core-sdk#method_register) method takes the name of the widget, 
+The [register](https://www.visualstudio.com/extend/reference/client/core-sdk#method_register) method takes the name of the widget, 
 as defined in the manifest which hasn't been created yet, and a function to execute.
 
 **Retrieve data and build the chart**
@@ -242,7 +242,7 @@ put the finishing touches on the widget and see what it looks like.
 
 **Add an extension manifest**
 
-For detailed information on extension manifests for widgets, see  can be found [Add a dashboard widget](../../integrate/extensions/develop/add-dashboard-widget.md).
+For detailed information on extension manifests for widgets, see  can be found [Add a dashboard widget](../../extend/develop/add-dashboard-widget.md).
 
 Add a file called **vss-extension.json** to the root of the project. Add the following to this file:
 
@@ -328,7 +328,7 @@ Add a file called **vss-extension.json** to the root of the project. Add the fol
 ```
 
 Remember to replace the author value denoted by [your publisher name here] with your publisher name. 
-For details on extension manifests, see [Extension manifest reference](../../integrate/extensions/develop/manifest.md).
+For details on extension manifests, see [Extension manifest reference](../../extend/develop/manifest.md).
 
 There are a few key things to note here:
 
@@ -337,7 +337,7 @@ There are a few key things to note here:
 * The supported size is 330x330 which is a 2x2 sized tile (160+160+10 pixels for spacing)
 
 At this point the extension can be compiled, deployed, installed and executed following the steps described in 
-[Write your first extension for VSTS](../../integrate/extensions/get-started/node.md) starting from the Create your publisher section. 
+[Write your first extension for VSTS](../../extend/get-started/node.md) starting from the Create your publisher section. 
 
 You should end up with a widget that looks like this:
 
