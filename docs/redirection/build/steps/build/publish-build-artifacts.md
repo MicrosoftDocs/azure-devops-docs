@@ -1,3 +1,3 @@
 ---
-redirect_url: /vsts/build-release/steps/utility/copy-and-publish-build-artifacts
+redirect_url: /vsts/build-release/tasks/utility/copy-and-publish-build-artifacts
 ---

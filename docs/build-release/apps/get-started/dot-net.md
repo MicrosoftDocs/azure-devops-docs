@@ -53,7 +53,7 @@ Your team now has a CI build to validate every change checked into your codebase
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../steps/_shared/msbuild_qa.md)]
+[!INCLUDE [temp](../../tasks/_shared/msbuild_qa.md)]
 
 [!INCLUDE [temp](../../_shared/qa-definition-common-all-platforms.md)]
 

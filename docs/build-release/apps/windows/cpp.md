@@ -37,7 +37,7 @@ In this section we'll create a build definition for your C++ app.
 
 ### Build steps
 
-On the [build tab](../../steps/index.md) you'll see build steps.
+On the [build tab](../../tasks/index.md) you'll see build steps.
 
 > [!IMPORTANT]
 > Make sure the Copy Files step is set up to copy the artifacts that your team needs. See below for an example.
@@ -45,13 +45,13 @@ On the [build tab](../../steps/index.md) you'll see build steps.
 
 <table>
 <tr>
-<td>![Package: NuGet Installer](../../steps/package/_img/nuget-installer.png)<br/>[Package: NuGet Installer](../../steps/package/nuget-installer.md)</td>
+<td>![Package: NuGet Installer](../../tasks/package/_img/nuget-installer.png)<br/>[Package: NuGet Installer](../../tasks/package/nuget-installer.md)</td>
 <td>
 <p>Install your NuGet package dependencies (if you have any).</p>
 </td>
 </tr>
 <tr>
-    <td>![icon](../../steps/build/_img/visual-studio-build.png)<br>[Build: Visual Studio Build](../../steps/build/visual-studio-build.md)</td>
+    <td>![icon](../../tasks/build/_img/visual-studio-build.png)<br>[Build: Visual Studio Build](../../tasks/build/visual-studio-build.md)</td>
     <td>
         <p>Build the solution.</p>
         <ul>
@@ -62,21 +62,21 @@ On the [build tab](../../steps/index.md) you'll see build steps.
     </td>
 </tr>
 <tr>
-<td>![icon](../../steps/test/_img/visual-studio-test-icon.png)<br/>[Test: Visual Studio Test](../../steps/test/visual-studio-test.md)</td>
+<td>![icon](../../tasks/test/_img/visual-studio-test-icon.png)<br/>[Test: Visual Studio Test](../../tasks/test/visual-studio-test.md)</td>
 <td>
 <p>(Optional) Run your tests.</p>
 </td>
 </tr>
 <tr>
-   <td>![icon](../../steps/build/_img/index-sources-publish-symbols.png)<br>
-            [Build: Index Sources & Publish Symbols](../../steps/build/index-sources-publish-symbols.md)<br/>
+   <td>![icon](../../tasks/build/_img/index-sources-publish-symbols.png)<br>
+            [Build: Index Sources & Publish Symbols](../../tasks/build/index-sources-publish-symbols.md)<br/>
       </td>
    <td>
    <p>(Optional) Index your source code and publish symbols to a file share.</p>
    </td>
         </tr>
 <tr>
-<td>![icon](../../steps/utility/_img/copy-files.png)<br/>[Utility: Copy Files](../../steps/utility/copy-files.md)</td>
+<td>![icon](../../tasks/utility/_img/copy-files.png)<br/>[Utility: Copy Files](../../tasks/utility/copy-files.md)</td>
 <td>
 <p>Copy your binaries to the artifacts staging directory.</p>
 <ul>
@@ -87,7 +87,7 @@ On the [build tab](../../steps/index.md) you'll see build steps.
 </td>
 </tr>
 <tr>
-    <td>![icon](../../steps/utility/_img/publish-build-artifacts.png)<br>[Utility: Publish Build Artifacts](../../steps/utility/publish-build-artifacts.md)</td>
+    <td>![icon](../../tasks/utility/_img/publish-build-artifacts.png)<br>[Utility: Publish Build Artifacts](../../tasks/utility/publish-build-artifacts.md)</td>
     <td>
         <p>Copy (publish) the build artifacts to a folder for the release definition.</p>
         <ul>
@@ -152,7 +152,7 @@ You'll see something like this:
                     | -- ConsoleApplication1.pdb
 ```
 
-To change the artifacts this build produces, modify the [copy step arguments](../../steps/utility/copy-files.md).
+To change the artifacts this build produces, modify the [copy step arguments](../../tasks/utility/copy-files.md).
 
 ## Q&A
 

@@ -211,157 +211,157 @@
     - name: Migrate from XAML builds
       href: actions/migrate-from-xaml-builds.md
 - name: Reference
-  href: steps/index.md
+  href: tasks/index.md
   items:
   - name: Build tasks
     items:
     - name: Android build
-      href: steps/build/android-build.md
+      href: tasks/build/android-build.md
     - name: Android signing
-      href: steps/build/android-signing.md
+      href: tasks/build/android-signing.md
     - name: Ant
-      href: steps/build/ant.md
+      href: tasks/build/ant.md
     - name: CMake
-      href: steps/build/cmake.md
+      href: tasks/build/cmake.md
     - name: Gradle
-      href: steps/build/gradle.md
+      href: tasks/build/gradle.md
     - name: Grunt
-      href: steps/build/grunt.md
+      href: tasks/build/grunt.md
     - name: Gulp
-      href: steps/build/gulp.md
+      href: tasks/build/gulp.md
     - name: Index Sources & Publish Symbols
-      href: steps/build/index-sources-publish-symbols.md
+      href: tasks/build/index-sources-publish-symbols.md
     - name: Jenkins Queue Job
-      href: steps/build/jenkins-queue-job.md
+      href: tasks/build/jenkins-queue-job.md
     - name: Maven
-      href: steps/build/maven.md
+      href: tasks/build/maven.md
     - name: MSBuild
-      href: steps/build/msbuild.md
+      href: tasks/build/msbuild.md
     - name: Visual Studio Build
-      href: steps/build/visual-studio-build.md
+      href: tasks/build/visual-studio-build.md
     - name: Xamarin.Android
-      href: steps/build/xamarin-android.md
+      href: tasks/build/xamarin-android.md
     - name: Xamarin.iOS
-      href: steps/build/xamarin-ios.md
+      href: tasks/build/xamarin-ios.md
     - name: Xcode Build
-      href: steps/build/xcode-build.md
+      href: tasks/build/xcode-build.md
     - name: Xcode Package iOS
-      href: steps/build/xcode-package-ios.md
+      href: tasks/build/xcode-package-ios.md
   - name: Utility tasks
     items:
     - name: Archive files
-      href: steps/utility/archive-files.md
+      href: tasks/utility/archive-files.md
     - name: Batch script
-      href: steps/utility/batch-script.md
+      href: tasks/utility/batch-script.md
     - name: Command line
-      href: steps/utility/command-line.md
+      href: tasks/utility/command-line.md
     - name: Copy and Publish Build Artifacts
-      href: steps/utility/copy-and-publish-build-artifacts.md
+      href: tasks/utility/copy-and-publish-build-artifacts.md
     - name: Copy Files
-      href: steps/utility/copy-files.md
+      href: tasks/utility/copy-files.md
     - name: cURL Upload Files
-      href: steps/utility/curl-upload-files.md
+      href: tasks/utility/curl-upload-files.md
     - name: Delete Files
-      href: steps/utility/delete-files.md
+      href: tasks/utility/delete-files.md
     - name: Extract Files
-      href: steps/utility/extract-files.md
+      href: tasks/utility/extract-files.md
     - name: FTP Upload
-      href: steps/utility/ftp-upload.md
+      href: tasks/utility/ftp-upload.md
     - name: Install Apple Certificate
-      href: steps/utility/install-apple-certificate.md
+      href: tasks/utility/install-apple-certificate.md
     - name: Install Apple Provisioning Profile
-      href: steps/utility/install-apple-provisioning-profile.md
+      href: tasks/utility/install-apple-provisioning-profile.md
     - name: PowerShell
-      href: steps/utility/powershell.md
+      href: tasks/utility/powershell.md
     - name: Publish Build Artifacts
-      href: steps/utility/publish-build-artifacts.md
+      href: tasks/utility/publish-build-artifacts.md
     - name: Service Fabric PowerShell
-      href: steps/utility/service-fabric-powershell.md
+      href: tasks/utility/service-fabric-powershell.md
     - name: Shell script
-      href: steps/utility/shell-script.md
+      href: tasks/utility/shell-script.md
     - name: Update Service Fabric App Versions
-      href: steps/utility/service-fabric-versioning.md
+      href: tasks/utility/service-fabric-versioning.md
     - name: Xamarin license
-      href: steps/utility/xamarin-license.md
+      href: tasks/utility/xamarin-license.md
   - name: Test tasks
     items:
     - name: Cloud-based Apache JMeter Load Test
-      href: steps/test/cloud-based-apache-jmeter-load-test.md
+      href: tasks/test/cloud-based-apache-jmeter-load-test.md
     - name: Cloud-based Load Test
-      href: steps/test/cloud-based-load-test.md
+      href: tasks/test/cloud-based-load-test.md
     - name: Cloud-based Web Performance Test
-      href: steps/test/cloud-based-web-performance-test.md
+      href: tasks/test/cloud-based-web-performance-test.md
     - name: Mobile Center Test
-      href: steps/test/mobile-center-test.md
+      href: tasks/test/mobile-center-test.md
     - name: Publish Code Coverage Results
-      href: steps/test/publish-code-coverage-results.md
+      href: tasks/test/publish-code-coverage-results.md
     - name: Publish Test Results
-      href: steps/test/publish-test-results.md
+      href: tasks/test/publish-test-results.md
     - name: Run Functional Tests
-      href: steps/test/run-functional-tests.md
+      href: tasks/test/run-functional-tests.md
     - name: Visual Studio Test
-      href: steps/test/visual-studio-test.md
+      href: tasks/test/visual-studio-test.md
     - name: Visual Studio Test Agent Deployment
-      href: steps/test/visual-studio-test-agent-deployment.md
+      href: tasks/test/visual-studio-test-agent-deployment.md
     - name: Xamarin Test Cloud
-      href: steps/test/xamarin-test-cloud.md
+      href: tasks/test/xamarin-test-cloud.md
   - name: Package tasks
     items:
     - name: CocoaPods
-      href: steps/package/cocoapods.md
+      href: tasks/package/cocoapods.md
     - name: npm
-      href: steps/package/npm-install.md
+      href: tasks/package/npm-install.md
     - name: NuGet Installer
-      href: steps/package/nuget-installer.md
+      href: tasks/package/nuget-installer.md
     - name: NuGet Packager
-      href: steps/package/nuget-packager.md
+      href: tasks/package/nuget-packager.md
     - name: NuGet Publisher
-      href: steps/package/nuget-publisher.md
+      href: tasks/package/nuget-publisher.md
     - name: Xamarin Component Restore
-      href: steps/package/xamarin-component-restore.md
+      href: tasks/package/xamarin-component-restore.md
   - name: Deploy tasks
     items:
     - name: Azure App Service Deploy
-      href: steps/deploy/azure-app-service-deploy.md
+      href: tasks/deploy/azure-app-service-deploy.md
     - name: Azure App Service Manage
-      href: steps/deploy/azure-app-service-manage.md
+      href: tasks/deploy/azure-app-service-manage.md
     - name: Azure CLI
-      href: steps/deploy/azure-cli.md
+      href: tasks/deploy/azure-cli.md
     - name: Azure Cloud Service Deployment
-      href: steps/deploy/azure-cloud-service-deployment.md
+      href: tasks/deploy/azure-cloud-service-deployment.md
     - name: Azure File Copy
-      href: steps/deploy/azure-file-copy.md
+      href: tasks/deploy/azure-file-copy.md
     - name: Azure Key Vault
-      href: steps/deploy/azure-key-vault.md
+      href: tasks/deploy/azure-key-vault.md
     - name: Azure PowerShell
-      href: steps/deploy/azure-powershell.md
+      href: tasks/deploy/azure-powershell.md
     - name: Azure Resource Group Deployment
-      href: steps/deploy/azure-resource-group-deployment.md
+      href: tasks/deploy/azure-resource-group-deployment.md
     - name: Azure SQL Database Deployment
-      href: steps/deploy/azure-sql-database-deployment.md
+      href: tasks/deploy/azure-sql-database-deployment.md
     - name: Copy Files Over SSH
-      href: steps/deploy/copy-files-over-ssh.md
+      href: tasks/deploy/copy-files-over-ssh.md
     - name: IIS Web App Deploy
-      href: steps/deploy/iis-deploy.md
+      href: tasks/deploy/iis-deploy.md
     - name: IIS Web App Manage
-      href: steps/deploy/iis-manage.md
+      href: tasks/deploy/iis-manage.md
     - name: Mobile Center Upload
-      href: steps/deploy/mobile-center-upload.md
+      href: tasks/deploy/mobile-center-upload.md
     - name: PowerShell on Target Machines
-      href: steps/deploy/powershell-on-target-machines.md
+      href: tasks/deploy/powershell-on-target-machines.md
     - name: Service Fabric App Deployment
-      href: steps/deploy/service-fabric-deploy.md
+      href: tasks/deploy/service-fabric-deploy.md
     - name: Service Fabric Compose Deploy
-      href: steps/deploy/service-fabric-compose-deploy.md
+      href: tasks/deploy/service-fabric-compose-deploy.md
     - name: SSH
-      href: steps/deploy/ssh.md
+      href: tasks/deploy/ssh.md
     - name: Windows Machine File Copy
-      href: steps/deploy/windows-machine-file-copy.md
+      href: tasks/deploy/windows-machine-file-copy.md
   - name: Tool tasks
     items:
     - name: Node Tool Installer
-      href: steps/tool/node-js.md
+      href: tasks/tool/node-js.md
   - name: File matching patterns
-    href: steps/file-matching-patterns.md
+    href: tasks/file-matching-patterns.md
   - name: File and variable transform
-    href: steps/transforms-variable-substitution.md
+    href: tasks/transforms-variable-substitution.md

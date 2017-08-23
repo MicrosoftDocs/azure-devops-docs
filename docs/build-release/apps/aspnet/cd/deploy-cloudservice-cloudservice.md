@@ -76,7 +76,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
 
 1. Select the **Azure Cloud Service Deployment** task and configure it as follows:
    
-   ![icon](../../../steps/deploy/_img/azure-cloud-service-deployment-icon.png) [Deploy: Azure Cloud Service Deployment](../../../steps/deploy/azure-cloud-service-deployment.md) - Deploy the app to an Azure cloud service.
+   ![icon](../../../tasks/deploy/_img/azure-cloud-service-deployment-icon.png) [Deploy: Azure Cloud Service Deployment](../../../tasks/deploy/azure-cloud-service-deployment.md) - Deploy the app to an Azure cloud service.
    
    - **Azure Subscription (Classic)**: Select an Azure Classic service endpoint. If you have not created one already, create one now by choosing **Add**. Then return to your release definition, refresh the **Azure Subscription** list, and select the connection you just created.
    

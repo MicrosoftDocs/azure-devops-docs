@@ -87,11 +87,11 @@ If you run into problems using an on-premises agent, to make sure the repo is cl
 
 Make sure to follow the above steps to [enable Git.exe](#enable).
 
-On the [build tab](../steps/index.md) add this step:
+On the [build tab](../tasks/index.md) add this step:
 
 | Task | Arguments |
 | ---- | --------- |
-| ![](../steps/utility/_img/command-line.png)<br/>[Utility: Command Line](../steps/utility/command-line.md)<br />List the files in the Git repo. | **Tool**: `git`<br /><br />**Arguments**: `ls-files` |
+| ![](../tasks/utility/_img/command-line.png)<br/>[Utility: Command Line](../tasks/utility/command-line.md)<br />List the files in the Git repo. | **Tool**: `git`<br /><br />**Arguments**: `ls-files` |
 
 ### Merge a feature branch to master
 
@@ -125,11 +125,11 @@ ECHO GIT STATUS
 git status
 ```
 
-On the [build tab](../steps/index.md) add this as the last step:
+On the [build tab](../tasks/index.md) add this as the last step:
 
 | Task | Arguments |
 | ---- | --------- |
-| ![](../steps/utility/_img/batch-script.png)<br/>[Utility: Batch Script](../steps/utility/batch-script.md)<br />Run merge.bat. | **Path**: `merge.bat` |
+| ![](../tasks/utility/_img/batch-script.png)<br/>[Utility: Batch Script](../tasks/utility/batch-script.md)<br />Run merge.bat. | **Path**: `merge.bat` |
 
 ## Q&A
 
@@ -143,13 +143,13 @@ Yes
 
 ### Which steps can I use to run Git commands?
 
-[Batch Script](../steps/utility/batch-script.md)
+[Batch Script](../tasks/utility/batch-script.md)
 
-[Command Line](../steps/utility/command-line.md)
+[Command Line](../tasks/utility/command-line.md)
 
-[PowerShell](../steps/utility/powershell.md)
+[PowerShell](../tasks/utility/powershell.md)
 
-[Shell Script](../steps/utility/shell-script.md)
+[Shell Script](../tasks/utility/shell-script.md)
 
 
 ### How do I avoid triggering a CI build when the script pushes?

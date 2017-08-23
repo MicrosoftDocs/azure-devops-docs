@@ -126,7 +126,7 @@ In addition, you will need Azure Powershell scripts to create and remove firewal
 
 1. Add the following tasks to the definition:
 
-   ![Azure Powershell](../../../steps/deploy/_img/azure-powershell-icon.png) [Deploy: Azure Powershell](../../../steps/deploy/azure-powershell.md) - Add a firewall rule in Azure to allow it to connect to Azure SQL Database.
+   ![Azure Powershell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure Powershell](../../../tasks/deploy/azure-powershell.md) - Add a firewall rule in Azure to allow it to connect to Azure SQL Database.
    
    - **Azure Connection Type**: `Azure Classic`. The scripts provided as samples here work with only an Azure Classic connection.
    
@@ -138,13 +138,13 @@ In addition, you will need Azure Powershell scripts to create and remove firewal
    
    - **Script Arguments**: Name of the SQL server you created earlier.<p />
    
-   ![Command Line](../../../steps/utility/_img/command-line.png) [Utility: Command Line](../../../steps/utility/command-line.md) - Run the SQL script.
+   ![Command Line](../../../tasks/utility/_img/command-line.png) [Utility: Command Line](../../../tasks/utility/command-line.md) - Run the SQL script.
    
    - **Tool**: `SQLCMD`.
    
    - **Arguments**: `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}`. For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.<p />
    
-   ![Azure Powershell](../../../steps/deploy/_img/azure-powershell-icon.png) [Deploy: Azure Powershell](../../../steps/deploy/azure-powershell.md) - Remove the firewall rule in Azure.
+   ![Azure Powershell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure Powershell](../../../tasks/deploy/azure-powershell.md) - Remove the firewall rule in Azure.
    
    - **Azure Connection Type**: `Azure Classic`. The scripts provided as samples here work with only an Azure Classic connection.
    

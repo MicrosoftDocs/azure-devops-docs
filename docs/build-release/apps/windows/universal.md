@@ -43,7 +43,7 @@ On the Build tab:
 
 <table>
    <tr>
-      <td>![](../../steps/build/_img/visual-studio-build.png)<br/>
+      <td>![](../../tasks/build/_img/visual-studio-build.png)<br/>
 **Visual Studio Build**</td>
       <td>
 <p>Build your app.</p>
@@ -68,7 +68,7 @@ On the Build tab:
 
 <table>
    <tr>
-      <td>![](../../steps/build/_img/visual-studio-build.png)<br/>
+      <td>![](../../tasks/build/_img/visual-studio-build.png)<br/>
  **Visual Studio Build**</td>
       <td>
 <p>Build your app.</p>

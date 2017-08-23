@@ -73,7 +73,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
 
 1. Add a **SQL Database** task to the default environment and configure it as follows:
 
-   ![icon](../../../steps/deploy/_img/azure-sql-database-deployment-icon.png) [Deploy: Azure SQL Database Deployment](../../../steps/deploy/azure-sql-database-deployment.md) - Deploy the database to Azure SQL Database.
+   ![icon](../../../tasks/deploy/_img/azure-sql-database-deployment-icon.png) [Deploy: Azure SQL Database Deployment](../../../tasks/deploy/azure-sql-database-deployment.md) - Deploy the database to Azure SQL Database.
    
    - **Azure Connection Type**: `Azure Resource Manager`.
    

@@ -61,7 +61,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 
 1. Configure the **Build Machine Image** task as follows:
 
-   ![Build Machine Image](../../../steps/deploy/_img/build-machine-image.png) [Deploy: Build Machine Image](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/15/deploying-applications-to-azure-vm-scale-sets/) - Build machine image using Packer.
+   ![Build Machine Image](../../../tasks/deploy/_img/build-machine-image.png) [Deploy: Build Machine Image](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/15/deploying-applications-to-azure-vm-scale-sets/) - Build machine image using Packer.
    
    - **Packer template**: You can use your own packer configuration JSON file or use the auto-generate feature where the task generates a packer template for you. This example uses the auto-generated packer configuration.
    
@@ -78,7 +78,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
    
    - **Output - Image URL**: Provide a name for the output variable that will hold the URL of the generated machine image. For example, `bakedImageUrl`<p />
    
-   ![Azure PowerShell](../../../steps/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell) - Run a PowerShell script to update the Virtual Machine Scale Set with the new VHD.
+   ![Azure PowerShell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShell) - Run a PowerShell script to update the Virtual Machine Scale Set with the new VHD.
    
    - **Azure Connection Type**: Select `Azure Resource Manager`
    

@@ -111,8 +111,8 @@ When the retention policies mark a build for deletion, you can control which inf
 The following information is deleted when a build is deleted:
 
 * Logs
-* [Published artifacts](../../steps/utility/publish-build-artifacts.md)
-* [Published symbols](../../steps/build/index-sources-publish-symbols.md)
+* [Published artifacts](../../tasks/utility/publish-build-artifacts.md)
+* [Published symbols](../../tasks/build/index-sources-publish-symbols.md)
 
 ### When are builds deleted
 

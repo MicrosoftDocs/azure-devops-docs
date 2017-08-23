@@ -176,7 +176,7 @@ On the **Build** tab (TFS 2017) or the **Tasks** tab (VSTS), after you select th
 | XAML process parameter | TFS 2017 RTM, VSTS equivalent argument |
 |-|-|
 | Projects | Solution |
-| Configurations | Platform, Configuration. See [Visual Studio Build: How do I build multiple configurations for multiple platforms?](../steps/build/visual-studio-build.md#how-do-i-build-multiple-configurations-for-multiple-platforms) | 
+| Configurations | Platform, Configuration. See [Visual Studio Build: How do I build multiple configurations for multiple platforms?](../tasks/build/visual-studio-build.md#how-do-i-build-multiple-configurations-for-multiple-platforms) | 
 | Clean build | Clean | 
 | Output location | The Visual Studio Build task builds and outputs files in the same way you do it on your dev machine, in the local workspace. We give you full control of publishing artifacts out of the local workspace on the agent. See [Artifacts in Team Build](../concepts/definitions/build/artifacts.md). |
 | Advanced, MSBuild arguments | MSBuild Arguments | 
@@ -188,15 +188,15 @@ On the **Build** tab (TFS 2017) or the **Tasks** tab (VSTS), after you select th
 > 
 > In the Visual Studio Build arguments, on the **Visual Studio Version** menu, make sure to select version of Visual Studio that you're using.
 
-The new build definition offers you some new options. See [Visual Studio Build](../steps/build/visual-studio-build.md).
+The new build definition offers you some new options. See [Visual Studio Build](../tasks/build/visual-studio-build.md).
 
-Learn more: [Visual Studio Build task](../steps/build/visual-studio-build.md) (for building solutions), [MSBuild task](../steps/build/msbuild.md) (for building individual projects).
+Learn more: [Visual Studio Build task](../tasks/build/visual-studio-build.md) (for building solutions), [MSBuild task](../tasks/build/msbuild.md) (for building individual projects).
 
 #### Test
 
 ![xaml source settings git tfs](_img/migrate-from-xaml-builds/xaml-build-template-12-test.png)
 
-See [Get started with continuous testing](../test/getting-started-with-continuous-testing.md) and [Visual Studio Test task](../steps/test/visual-studio-test.md).
+See [Get started with continuous testing](../test/getting-started-with-continuous-testing.md) and [Visual Studio Test task](../tasks/test/visual-studio-test.md).
 
 #### Publish Symbols
 
@@ -273,7 +273,7 @@ A few examples include:
 
 For more examples of apps you can build and deploy, see [Build and deploy your app](../apps/index.md).
 
-For a complete list of our build, test, and deployment tasks, see [Build and release tasks](../steps/index.md).
+For a complete list of our build, test, and deployment tasks, see [Build and release tasks](../tasks/index.md).
 
 ## Customize your tasks
 
@@ -288,10 +288,10 @@ offers hundreds of extensions that you can install to add tasks that extend your
 
 A major feature of the new build system is its emphasis on using scripts to customize your build process. You can check your scripts into version control and customize your build using any of these methods:
 
-* [PowerShell scripts](../steps/utility/powershell.md) (Windows)
-* [Batch scripts](../steps/utility/batch-script.md) (Windows)
-* [Command prompt](../steps/utility/command-line.md)
-* [Shell scripts](../steps/utility/shell-script.md) (macOS and Linux)
+* [PowerShell scripts](../tasks/utility/powershell.md) (Windows)
+* [Batch scripts](../tasks/utility/batch-script.md) (Windows)
+* [Command prompt](../tasks/utility/command-line.md)
+* [Shell scripts](../tasks/utility/shell-script.md) (macOS and Linux)
 
 > [!TIP]
 > 
@@ -312,7 +312,7 @@ In XAML builds you created custom XAML templates. In the new builds, it's easier
 
 ### Create a template
 
-If you don't see a template for the kind of app you can start from an empty definition and [add the tasks you need](../steps/index.md). After you've got a pattern that you like, you can clone it or save it as a template directly in your web browser. See [CI/CD Hello world](ci-cd-part-1.md).
+If you don't see a template for the kind of app you can start from an empty definition and [add the tasks you need](../tasks/index.md). After you've got a pattern that you like, you can clone it or save it as a template directly in your web browser. See [CI/CD Hello world](ci-cd-part-1.md).
 
 ### Task groups (TFS 2017 or newer)
 

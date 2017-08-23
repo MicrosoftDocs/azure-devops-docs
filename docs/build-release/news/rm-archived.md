@@ -244,7 +244,7 @@ as a linked artifact or as an inline script.
 
 ![Azure CLI task](_img/rm-archived/release-notes-28.png)
 
-See [Deploy: Azure CLI](../steps/deploy/azure-cli.md).
+See [Deploy: Azure CLI](../tasks/deploy/azure-cli.md).
 
 <a name="oct12-azureep"></a>
 **Simplified Azure endpoint creation**

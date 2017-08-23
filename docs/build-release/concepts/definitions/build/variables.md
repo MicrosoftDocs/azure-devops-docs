@@ -28,12 +28,12 @@ Variables give you a convenient way to get key bits of data into various parts o
 
 | Use | User-defined  | Predefined, all scopes | Predefined, agent scope | Format | Examples and more information |
 |---|---|---|---|---|---|
-| As arguments to build steps | Yes | Yes | Yes | `$(Build.DefinitionName)` | [Command line](../../../steps/utility/command-line.md), [Copy files](../../../steps/utility/copy-files.md) |
+| As arguments to build steps | Yes | Yes | Yes | `$(Build.DefinitionName)` | [Command line](../../../tasks/utility/command-line.md), [Copy files](../../../tasks/utility/copy-files.md) |
 | Apply a version control label during the build process | Yes | Yes | No | `$(Build.DefinitionName)` | [Repository tab](repository.md) (Git and Team Foundation version control **Label format**) |
 | Customize the build number | Yes | Yes | No  | `$(Build.DefinitionName)` | [Build number format options](options.md) |
-| Environment variable in Windows batch scripts| Yes | Yes | Yes | `%BUILD_DEFINITIONNAME%` | [Batch script ](../../../steps/utility/batch-script.md#example) |
+| Environment variable in Windows batch scripts| Yes | Yes | Yes | `%BUILD_DEFINITIONNAME%` | [Batch script ](../../../tasks/utility/batch-script.md#example) |
 | Environment variable in PowerShell scripts | Yes | Yes | Yes | `$env:BUILD_DEFINITIONNAME` | [PowerShell script](../../../scripts/index.md) |
-| Environment variable in Shell scripts | Yes | Yes | Yes | `$BUILD_DEFINITIONNAME` | [Shell script](../../../steps/utility/shell-script.md#example) |
+| Environment variable in Shell scripts | Yes | Yes | Yes | `$BUILD_DEFINITIONNAME` | [Shell script](../../../tasks/utility/shell-script.md#example) |
 
 
 ## User-defined variables
@@ -83,11 +83,11 @@ Select this check box if you want to enable your team to modify the value when t
 
 ## Environment variables
 
-You can pass environment variables of the build machine into build steps. For example, on the [Build tab](../../../steps/index.md) of a build definition, add this step:
+You can pass environment variables of the build machine into build steps. For example, on the [Build tab](../../../tasks/index.md) of a build definition, add this step:
 
 | Task | Arguments |
 | ---- | --------- |
-| ![](../../../steps/utility/_img/command-line.png) **Utility: Command Line** | Tool: `echo`<br />Arguments: `$(PATH)` |
+| ![](../../../tasks/utility/_img/command-line.png) **Utility: Command Line** | Tool: `echo`<br />Arguments: `$(PATH)` |
 
 > [!NOTE]
 > If you have defined the a variable of the same name (for example `PATH`) on the [variables tab](variables.md), then your value overrides the environment variable when you use it as shown above.

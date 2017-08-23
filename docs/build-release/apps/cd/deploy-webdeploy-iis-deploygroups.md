@@ -91,7 +91,7 @@ Your CD release process picks up the artifacts published by your CI build and th
    
    - **Machine tags**: `web`<p />
    
-   ![IIS Web App Manage](../../steps/deploy/_img/iis-manage-icon.png) [Deploy: IIS Web App Manage](../../steps/deploy/iis-manage.md) - Create or update the websites.
+   ![IIS Web App Manage](../../tasks/deploy/_img/iis-manage-icon.png) [Deploy: IIS Web App Manage](../../tasks/deploy/iis-manage.md) - Create or update the websites.
    
    - **Website Name**: `Default Web Site`. If you created a different website on the IIS servers, use that name instead.
    
@@ -99,7 +99,7 @@ Your CD release process picks up the artifacts published by your CI build and th
    
    - **IIS Application pool**: `DefaultAppPool`<p />
    
-   ![IIS Web App Deploy](../../steps/deploy/_img/iis-deploy-icon.png) [Deploy: IIS Web App Deploy](../../steps/deploy/iis-deploy.md) - Deploy the app to IIS.
+   ![IIS Web App Deploy](../../tasks/deploy/_img/iis-deploy-icon.png) [Deploy: IIS Web App Deploy](../../tasks/deploy/iis-deploy.md) - Deploy the app to IIS.
    
    - **Website Name**: `Default Web Site`. If you created a different website on the IIS servers, use that name instead.<p />
    

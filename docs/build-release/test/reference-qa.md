@@ -54,7 +54,7 @@ ms.date: 08/12/2016
 1. Run **load tests** after the app is deployed to staging and production, after it passes all functional tests.
    The example shown above is just a simple test that accesses a single page in the web app to validate that 
    deployment succeeded and the app is running successfully. You can perform must more comprehensive load testing
-   to validate the entire app by running [cloud-based load tests](../../build-release/steps/test/cloud-based-load-test.md)
+   to validate the entire app by running [cloud-based load tests](../../build-release/tasks/test/cloud-based-load-test.md)
    and [Apache JMeter load tests](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/RunJMeterLoadTest).
 
 ### Q: Can I find a specific test run?

@@ -57,7 +57,7 @@ On the Build tab, add these steps:
 <table>
    <tr>
         
-      <td>![Build: Maven](../../steps/build/_img/maven.png) **Build: Maven**</td>
+      <td>![Build: Maven](../../tasks/build/_img/maven.png) **Build: Maven**</td>
       <td>
 <p>Build the app.</p>
 <ul>
@@ -67,7 +67,7 @@ On the Build tab, add these steps:
 </tr>
    
         <tr>
-            <td>![Utility: cURL Upload Files](../../steps/utility/_img/curl-upload-files.png) **Utility: cURL Upload Files**</td>
+            <td>![Utility: cURL Upload Files](../../tasks/utility/_img/curl-upload-files.png) **Utility: cURL Upload Files**</td>
             <td>
 <p>Copy the .war file to Azure.</p>
 <ul>
@@ -80,7 +80,7 @@ On the Build tab, add these steps:
 </td>
         </tr>
         <tr>
-            <td>![Utility: Copy and Publish Build Artifacts](../../steps/utility/_img/publish-build-artifacts.png) **Build: Publish Build Artifacts**</td>
+            <td>![Utility: Copy and Publish Build Artifacts](../../tasks/utility/_img/publish-build-artifacts.png) **Build: Publish Build Artifacts**</td>
             <td>
 <p>(Optional) Drop some of the build outputs, such as the .war file as we do in the example below.</p>
 <ul>

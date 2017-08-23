@@ -99,7 +99,7 @@ Make sure you've prepared the build as described [above](#prepare).
 If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 
 
-#### [Build](../../steps/index.md) steps
+#### [Build](../../tasks/index.md) steps
 
 
 <table>

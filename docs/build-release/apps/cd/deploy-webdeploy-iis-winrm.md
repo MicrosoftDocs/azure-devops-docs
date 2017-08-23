@@ -144,7 +144,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
 
 1. Configure the following tasks in the environment:
   
-   ![Windows Machine File Copy](../../steps/deploy/_img/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../../steps/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
+   ![Windows Machine File Copy](../../tasks/deploy/_img/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../../tasks/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
    
    - **Source**: Select the Web deploy package (zip file) from the artifact source.
    
@@ -156,7 +156,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
    
    - **Destination Folder**: Specify a folder on the target server where the files should be copied to.<p />
    
-   ![WinRM - IIS Web App Deployment](../../steps/deploy/_img/iis-web-application-deployment-icon.png) [Deploy: WinRM - IIS Web App Deployment](https://github.com/Microsoft/vsts-rm-extensions/blob/master/Extensions/IISWebAppDeploy/Src/Tasks/IISWebAppDeploy/README_IISAppDeploy.md) - Deploy the package.
+   ![WinRM - IIS Web App Deployment](../../tasks/deploy/_img/iis-web-application-deployment-icon.png) [Deploy: WinRM - IIS Web App Deployment](https://github.com/Microsoft/vsts-rm-extensions/blob/master/Extensions/IISWebAppDeploy/Src/Tasks/IISWebAppDeploy/README_IISAppDeploy.md) - Deploy the package.
    
    - **Machines**: `$(WebServers)`
    

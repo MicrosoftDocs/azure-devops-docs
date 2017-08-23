@@ -413,7 +413,7 @@ To learn more about build definition settings, see:
 
 * [Getting sources](../concepts/definitions/build/repository.md)
 
-* [Tasks](../steps/index.md)
+* [Tasks](../tasks/index.md)
 
 * [Variables](../concepts/definitions/build/variables.md)
 

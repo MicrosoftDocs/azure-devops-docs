@@ -73,7 +73,7 @@ Detailed instructions on creating build definitions in TFS 2015 can be found in 
       </td>
    </tr>
    <tr>
-    <td>![Utility: Copy and Publish Build Artifacts](../../steps/utility/_img/copy-and-publish-build-artifacts.png)<br />**Utility: Copy and Publish Build Artifacts**</td>
+    <td>![Utility: Copy and Publish Build Artifacts](../../tasks/utility/_img/copy-and-publish-build-artifacts.png)<br />**Utility: Copy and Publish Build Artifacts**</td>
 	  <td>
 	  	<p>Settings:</p>
 	  	<ul>  	   
@@ -141,7 +141,7 @@ To add TypeScript compilation into your build definition using Gulp, follow thes
 
 <table>
    <tr>
-      <td>![Package: npm](../../steps/package/_img/npm.png)<br />**Package: npm** (or the older npm install)</td>
+      <td>![Package: npm](../../tasks/package/_img/npm.png)<br />**Package: npm** (or the older npm install)</td>
       <td>
 	  	<p>Settings:</p>
 	  	<ul>
@@ -153,7 +153,7 @@ To add TypeScript compilation into your build definition using Gulp, follow thes
       </td>
    </tr>
    <tr>
-    <td>![Build: Gulp](../../steps/build/_img/gulp.png)<br />**Build: Gulp**</td>
+    <td>![Build: Gulp](../../tasks/build/_img/gulp.png)<br />**Build: Gulp**</td>
 	  <td>
 	  	<p>Settings:</p>
 	  	<ul>  	   
@@ -173,7 +173,7 @@ Next, we will configure the definition to publish your test results to VSTS or T
 
 <table>
    <tr>
-    <td>![Build: Gulp](../../steps/build/_img/gulp.png)<br />**Build: Gulp**</td>
+    <td>![Build: Gulp](../../tasks/build/_img/gulp.png)<br />**Build: Gulp**</td>
 	  <td>
       <p>Update the **Gulp Task(s)** option in the Gulp step above to reference your "test" task. A value of "scripts test" will first compile TypeScript (or anything else you have configured) and then run tests.</p>
  	  </td>

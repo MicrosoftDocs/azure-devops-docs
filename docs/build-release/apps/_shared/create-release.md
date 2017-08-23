@@ -20,7 +20,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
 1. Select the **Deploy Azure App Service** task and configure it as follows:
  
-   ![Deploy: Azure App Service Deploy](../../steps/deploy/_img/azure-web-app-deployment-icon.png) [Deploy: Azure App Service Deploy](../../steps/deploy/azure-app-service-deploy.md) - Deploy the app to Azure App Services.
+   ![Deploy: Azure App Service Deploy](../../tasks/deploy/_img/azure-web-app-deployment-icon.png) [Deploy: Azure App Service Deploy](../../tasks/deploy/azure-app-service-deploy.md) - Deploy the app to Azure App Services.
    
    - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm). **Note**: If your Azure subscription is defined in an Azure Government Cloud, ensure your deployment process meets the relevant compliance requirements. For more details, see [Azure Government Cloud deployments](../../concepts/library/government-cloud.md).
    

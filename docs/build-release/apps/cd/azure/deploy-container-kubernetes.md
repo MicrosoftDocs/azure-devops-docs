@@ -42,7 +42,7 @@ for deployment using ACS.
 
 1. Configure the tasks as follows:
 
-   ![Build: Docker](../../../steps/deploy/_img/docker-icon.png)<br/>[Build: Docker](../../../steps/deploy/deploy-to-kubernetes.md) Build the container image from the Docker file.
+   ![Build: Docker](../../../tasks/deploy/_img/docker-icon.png)<br/>[Build: Docker](../../../tasks/deploy/deploy-to-kubernetes.md) Build the container image from the Docker file.
    
    - **Container Registry type**: `Azure Container Registry`
    
@@ -58,7 +58,7 @@ for deployment using ACS.
    
    - **Additional Image Tags**: `$(Build.BuildId)`<p />
    
-   ![Build: Docker](../../../steps/deploy/_img/docker-icon.png)<br/>[Build: Docker](../../../steps/deploy/deploy-to-kubernetes.md) Push the container image to a container registry.
+   ![Build: Docker](../../../tasks/deploy/_img/docker-icon.png)<br/>[Build: Docker](../../../tasks/deploy/deploy-to-kubernetes.md) Push the container image to a container registry.
    
    - **Container Registry type**: `Azure Container Registry`
    
@@ -74,7 +74,7 @@ for deployment using ACS.
    
    - **Additional Image Tags**: `$(Build.BuildId)`<p />
    
-   ![Build: Publish Build Artifacts](../../../steps/build/_img/publish-build-artifacts.png) [Build: Publish Build Artifacts](../../../steps/deploy/deploy-to-kubernetes.md) - Publish the Kubernetes configuration files used for creating the [deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) and [service](https://kubernetes.io/docs/concepts/services-networking/service/) in the cluster. These files are added to the [repository](https://github.com/azooinmyluggage/k8s-docker-core/tree/master/k8config).
+   ![Build: Publish Build Artifacts](../../../tasks/build/_img/publish-build-artifacts.png) [Build: Publish Build Artifacts](../../../tasks/deploy/deploy-to-kubernetes.md) - Publish the Kubernetes configuration files used for creating the [deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) and [service](https://kubernetes.io/docs/concepts/services-networking/service/) in the cluster. These files are added to the [repository](https://github.com/azooinmyluggage/k8s-docker-core/tree/master/k8config).
    
    - **Path to Publish**: `k8config`
    
@@ -103,7 +103,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
 1. Configure the tasks as follows:
 
-   ![Deploy: Deploy to Kubernetes](../../../steps/deploy/_img/kubernetes-icon.png) [Deploy: Deploy to Kubernetes](../../../steps/deploy/deploy-to-kubernetes.md) - Create the deployment and secret.
+   ![Deploy: Deploy to Kubernetes](../../../tasks/deploy/_img/kubernetes-icon.png) [Deploy: Deploy to Kubernetes](../../../tasks/deploy/deploy-to-kubernetes.md) - Create the deployment and secret.
    
    - **Container Registry type**: `Azure Container registry`
    
@@ -119,7 +119,7 @@ Your CD release process picks up the artifacts published by your CI build and th
    
    - **Configuration file**: Select the **deployment.yaml** file that was published as an artifact from the build. Example: `$(System.DefaultWorkingDirectory)/Kubernetes-ACS-CI/yaml/deployment.yaml`<p />
    
-   ![Deploy: Deploy to Kubernetes](../../../steps/deploy/_img/kubernetes-icon.png) [Deploy: Deploy to Kubernetes](../../../steps/deploy/deploy-to-kubernetes.md) - Create the service using the yaml file.
+   ![Deploy: Deploy to Kubernetes](../../../tasks/deploy/_img/kubernetes-icon.png) [Deploy: Deploy to Kubernetes](../../../tasks/deploy/deploy-to-kubernetes.md) - Create the service using the yaml file.
    
    - **Container Registry type**: `Azure Container registry`
    
@@ -135,7 +135,7 @@ Your CD release process picks up the artifacts published by your CI build and th
    
    - **Configuration file**: Select the **service.yaml** file that was published as an artifact from the build. Example: `$(System.DefaultWorkingDirectory)/Kubernetes-ACS-CI/yaml/service.yaml`<p />
    
-   ![Deploy: Deploy to Kubernetes](../../../steps/deploy/_img/kubernetes-icon.png) [Deploy: Deploy to Kubernetes](../../../steps/deploy/deploy-to-kubernetes.md)<br/>Update with the latest image.
+   ![Deploy: Deploy to Kubernetes](../../../tasks/deploy/_img/kubernetes-icon.png) [Deploy: Deploy to Kubernetes](../../../tasks/deploy/deploy-to-kubernetes.md)<br/>Update with the latest image.
    
    - **Container Registry type**: `Azure Container registry`
    

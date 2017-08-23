@@ -71,9 +71,9 @@ Certificate** option in some build, test, and deploy tasks to omit certificate c
 
 You will typically use a list of machine names in the following tasks:
 
-* [Run Functional Tests task](../../build-release/steps/test/run-functional-tests.md)
-* [Visual Studio Test Agent Deployment task](../../build-release/steps/test/visual-studio-test-agent-deployment.md) 
-* [PowerShell on Target Machines task](../../build-release/steps/deploy/powershell-on-target-machines.md)
+* [Run Functional Tests task](../../build-release/tasks/test/run-functional-tests.md)
+* [Visual Studio Test Agent Deployment task](../../build-release/tasks/test/visual-studio-test-agent-deployment.md) 
+* [PowerShell on Target Machines task](../../build-release/tasks/deploy/powershell-on-target-machines.md)
 
 ## Next 
 

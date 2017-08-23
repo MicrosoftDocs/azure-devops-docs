@@ -48,7 +48,7 @@ On the **Tasks** or **Build** tab, add these steps.
 <table>
    <tr>
         
-      <td>![Package: npm install](../../steps/package/_img/npm.png)<br/>**Package: npm install**</td>
+      <td>![Package: npm install](../../tasks/package/_img/npm.png)<br/>**Package: npm install**</td>
       <td>
 <p>Install your npm package dependencies.</p>
 <ul>
@@ -58,7 +58,7 @@ On the **Tasks** or **Build** tab, add these steps.
 </tr>
    
         <tr>
-            <td>![Build: Gulp](../../steps/build/_img/gulp.png)<br/>**Build: Gulp**</td>
+            <td>![Build: Gulp](../../tasks/build/_img/gulp.png)<br/>**Build: Gulp**</td>
             <td>
 <p>Pack your files into a .zip file.</p>
 <ul>
@@ -75,7 +75,7 @@ On the **Tasks** or **Build** tab, add these steps.
         </tr>
 
 <tr>
-            <td>![Package: npm test](../../steps/package/_img/npm.png)<br/>**Package: npm test**</td>
+            <td>![Package: npm test](../../tasks/package/_img/npm.png)<br/>**Package: npm test**</td>
             <td>
 <p>(Optional) Test your application.</p>
 <ul>
@@ -85,7 +85,7 @@ On the **Tasks** or **Build** tab, add these steps.
 </td>
         </tr>
 <tr>
-            <td>![Build: Publish Build Artifacts](../../steps/build/_img/publish-build-artifacts.png)<br/>**Build: Publish Build Artifacts**</td>
+            <td>![Build: Publish Build Artifacts](../../tasks/build/_img/publish-build-artifacts.png)<br/>**Build: Publish Build Artifacts**</td>
             <td>
 <p>(Optional) Drop some of the build outputs, such as the .zip file as we do in the example below.</p>
 <ul>
@@ -109,11 +109,11 @@ Save and queue the build. Once the build is done, click the link to the complete
 
 After you've run the CI build, you're ready to create a continuous deployment (CD) release definition so that you can deploy your app to:
 
-* [![Azure Web App Deploy](../../steps/deploy/_img/azure-web-app-deployment-icon.png) An Azure web site ](../cd/deploy-webdeploy-webapps.md)
+* [![Azure Web App Deploy](../../tasks/deploy/_img/azure-web-app-deployment-icon.png) An Azure web site ](../cd/deploy-webdeploy-webapps.md)
 
-* [![IIS Web App Deploy](../../steps/deploy/_img/iis-web-application-deployment-icon.png) An IIS server](../cd/deploy-webdeploy-iis-deploygroups.md)
+* [![IIS Web App Deploy](../../tasks/deploy/_img/iis-web-application-deployment-icon.png) An IIS server](../cd/deploy-webdeploy-iis-deploygroups.md)
 
-* [![Build Machine Image](../../steps/deploy/_img/build-machine-image.png) An Azure Scale Set](../cd/azure/deploy-azure-scaleset.md)
+* [![Build Machine Image](../../tasks/deploy/_img/build-machine-image.png) An Azure Scale Set](../cd/azure/deploy-azure-scaleset.md)
 
 ## Q&A 
 <!-- BEGINSECTION class="md-qanda" -->

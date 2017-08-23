@@ -120,7 +120,7 @@ Here are some examples where multiple execution is appropriate:
   to act as a multiplier, each with two values, you effectively
   create four jobs, one for each combination of values of the two
   variables. For more details and an example of multi-configuration
-  build, see [Visual Studio Build](../../steps/build/visual-studio-build.md).
+  build, see [Visual Studio Build](../../tasks/build/visual-studio-build.md).
 
 * **Multiple execution deployments:** An agent phase can be used
   in an environment of a release definition to run multiple deployment

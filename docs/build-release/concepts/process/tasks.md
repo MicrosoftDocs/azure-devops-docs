@@ -17,7 +17,7 @@ ms.date: 4/19/2017
 A **task** is the building block for defining automation in a
 build definition, or in an environment of a release definition.
 A task is simply a packaged script or procedure that has been
-abstracted with a set of inputs. We provide some [built-in tasks](../../steps/index.md) 
+abstracted with a set of inputs. We provide some [built-in tasks](../../tasks/index.md) 
 to enable fundamental build and deployment scenarios.
 
 In addition, [Visual Studio Marketplace](https://marketplace.visualstudio.com/VSTS)
@@ -123,7 +123,7 @@ For example, you can set up your build process to run and validate your app for 
 
 Add these tasks:
 
-![icon](../../steps/tool/_img/node.png) Tool: Node Installer
+![icon](../../tasks/tool/_img/node.png) Tool: Node Installer
 
 * Version Spec: 
 
@@ -131,7 +131,7 @@ Add these tasks:
 $(NodeVersionSpec)
 ```
 
-![icon](../../steps/utility/_img/command-line.png) Utility: Command Line
+![icon](../../tasks/utility/_img/command-line.png) Utility: Command Line
 
 * Tool (if you're running on a Windows agent)
  ```
@@ -172,16 +172,16 @@ NodeVersionSpec
 
 #### Save & queue
 
-Click **Save & queue**. Observe how two builds are run. The [Node Tool Installer](../../steps/tool/node-js.md) downloads each of the Node.js versions if they are not already on the agent. The [Command Line](../../steps/utility/command-line.md) task logs the location of the Node.js version on disk.
+Click **Save & queue**. Observe how two builds are run. The [Node Tool Installer](../../tasks/tool/node-js.md) downloads each of the Node.js versions if they are not already on the agent. The [Command Line](../../tasks/utility/command-line.md) task logs the location of the Node.js version on disk.
 
 ### Tool installer tasks
 
-For a list of our tool installer tasks, see [Tool installer tasks](../../steps/index.md#tool).
+For a list of our tool installer tasks, see [Tool installer tasks](../../tasks/index.md#tool).
 
 ## Related topics
 
 * [Task phases](phases.md)
 * [Task groups](../library/task-groups.md)
-* [Built-in task catalog](../../steps/index.md)
+* [Built-in task catalog](../../tasks/index.md)
  
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

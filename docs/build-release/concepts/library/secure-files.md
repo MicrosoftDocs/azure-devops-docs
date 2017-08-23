@@ -29,7 +29,7 @@ There's a size limit of 10 MB for each secure file.
 You can build your own tasks that use secure files by using inputs with type `secureFile` in the `task.json`. 
 [Learn how to build a custom task](../../../extend/develop/add-build-task.md).
 
-The Install Apple Provisioning Profile task is a simple example of a task using a secure file. See the [reference documentation](../../steps/utility/install-apple-provisioning-profile.md) and [source code](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InstallAppleProvisioningProfile). 
+The Install Apple Provisioning Profile task is a simple example of a task using a secure file. See the [reference documentation](../../tasks/utility/install-apple-provisioning-profile.md) and [source code](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/InstallAppleProvisioningProfile). 
 
 To handle secure files during build or release, you can refer to the common module available [here](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/Common/securefiles-common). 
 

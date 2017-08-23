@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 
 Xamarin enables you to develop a single solution and deploy it to Android, iOS, and Windows devices. After you define three CI builds, you can build the app whenever your team checks in code.
 
-> You no longer need a Xamarin license to build your Xamarin app. We're deprecating the [Utility: Xamarin license](../../steps/utility/xamarin-license.md) task. We recommend that you remove this task from your build to avoid disruption when we remove the task from the product.
+> You no longer need a Xamarin license to build your Xamarin app. We're deprecating the [Utility: Xamarin license](../../tasks/utility/xamarin-license.md) task. We recommend that you remove this task from your build to avoid disruption when we remove the task from the product.
 
 ## Prerequisites
 
@@ -87,11 +87,11 @@ On the [Variables tab](../../concepts/definitions/build/variables.md):
 
 ### Build steps
 
-On the [build tab](../../steps/index.md):
+On the [build tab](../../tasks/index.md):
 
 <table>
 <tr>
-<td>![Xamarin component restore](../../steps/package/_img/xamarin-component-restore.png)<br/>[Package: Xamarin component restore](../../steps/package/xamarin-component-restore.md)</td>
+<td>![Xamarin component restore](../../tasks/package/_img/xamarin-component-restore.png)<br/>[Package: Xamarin component restore](../../tasks/package/xamarin-component-restore.md)</td>
 <td>
 <p>Restore Xamarin components for the specified solution.</p>
 <ul>
@@ -104,7 +104,7 @@ On the [build tab](../../steps/index.md):
 </td>
 </tr>
 <tr>
-<td>![Package: NuGet Installer](../../steps/package/_img/nuget-installer.png)<br/>[Package: NuGet Installer](../../steps/package/nuget-installer.md)</td>
+<td>![Package: NuGet Installer](../../tasks/package/_img/nuget-installer.png)<br/>[Package: NuGet Installer](../../tasks/package/nuget-installer.md)</td>
 <td>
 <p>Install your NuGet package dependencies.</p>
 <ul>
@@ -113,7 +113,7 @@ On the [build tab](../../steps/index.md):
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/build/_img/xamarin-android.png)<br/>[Build: Xamarin.Android](../../steps/build/xamarin-android.md)</td>
+<td>![icon](../../tasks/build/_img/xamarin-android.png)<br/>[Build: Xamarin.Android](../../tasks/build/xamarin-android.md)</td>
 <td>
 <p>Build your Android project.</p>
 <ul>
@@ -128,7 +128,7 @@ On the [build tab](../../steps/index.md):
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/build/_img/msbuild.png)<br/>[Build: MSBuild](../../steps/build/msbuild.md)</td>
+<td>![icon](../../tasks/build/_img/msbuild.png)<br/>[Build: MSBuild](../../tasks/build/msbuild.md)</td>
 <td>
 <p>Build your tests.</p>
 <blockquote><strong>Note: </strong>If you don't have tests yet, then clear the **Enabled** check box.</blockquote>
@@ -140,19 +140,19 @@ On the [build tab](../../steps/index.md):
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/test/_img/xamarin-test-cloud-icon.png)<br/>[Test: Xamarin Test Cloud](../../steps/test/xamarin-test-cloud.md)</td>
+<td>![icon](../../tasks/test/_img/xamarin-test-cloud-icon.png)<br/>[Test: Xamarin Test Cloud](../../tasks/test/xamarin-test-cloud.md)</td>
 <td>
 <p>Publish your test results to the Xamarin Test Cloud.</p>
 <blockquote><strong>Note: </strong>If you have Xamarin UI tests to run in your Xamarin test cloud account, then check the **Enabled** check box.</blockquote>
 <ul>
 <li>App File: `$(build.binariesdirectory)/$(BuildConfiguration)/*.apk`</li>
 <li>Test Assembly Directory: `$(build.binariesdirectory)/$(BuildConfiguration)/test-assembly`</li>
-<li>For the other arguments, see [Test: Xamarin Test Cloud](../../steps/test/xamarin-test-cloud.md).</li>
+<li>For the other arguments, see [Test: Xamarin Test Cloud](../../tasks/test/xamarin-test-cloud.md).</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/build/_img/android-signing.png)<br/>[Android Signing](../../steps/build/android-signing.md)</td>
+<td>![icon](../../tasks/build/_img/android-signing.png)<br/>[Android Signing](../../tasks/build/android-signing.md)</td>
 <td>
 <p>Sign and align your APK files.</p>
 <ul>
@@ -161,7 +161,7 @@ On the [build tab](../../steps/index.md):
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/utility/_img/publish-build-artifacts.png)<br/>[Utility: Publish Build Artifacts](../../steps/utility/publish-build-artifacts.md)</td>
+<td>![icon](../../tasks/utility/_img/publish-build-artifacts.png)<br/>[Utility: Publish Build Artifacts](../../tasks/utility/publish-build-artifacts.md)</td>
 <td>
 <p>Publish your build artifacts.</p>
 <ul>
@@ -276,11 +276,11 @@ On the [Variables tab](../../concepts/definitions/build/variables.md):
 
 ### Build steps
 
-On the [build tab](../../steps/index.md):
+On the [build tab](../../tasks/index.md):
 
 <table>
 <tr>
-<td>![Xamarin component restore](../../steps/package/_img/xamarin-component-restore.png)<br/>[Package: Xamarin component restore](../../steps/package/xamarin-component-restore.md)</td>
+<td>![Xamarin component restore](../../tasks/package/_img/xamarin-component-restore.png)<br/>[Package: Xamarin component restore](../../tasks/package/xamarin-component-restore.md)</td>
 <td>
 <p>Restore Xamarin components for the specified solution.</p>
 <ul>
@@ -293,7 +293,7 @@ On the [build tab](../../steps/index.md):
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/build/_img/xamarin-ios.png)<br/>[Build: Xamarin.iOS](../../steps/build/xamarin-ios.md)</td>
+<td>![icon](../../tasks/build/_img/xamarin-ios.png)<br/>[Build: Xamarin.iOS](../../tasks/build/xamarin-ios.md)</td>
 <td>
 <p>Build your Xamarin.iOS project.</p>
 <ul>
@@ -303,23 +303,23 @@ Solution: Click the <strong>...</strong> button and select your solution.
 <li>Configuration: `$(BuildConfiguration)`</li>
 <li>Select either **Create app package** or **Build for iOS simulator**.</li>
 </ul>
-<p>If you want to sign and provision, specify the arguments. See [Build: Xamarin.iOS](../../steps/build/xamarin-ios.md).</p>
+<p>If you want to sign and provision, specify the arguments. See [Build: Xamarin.iOS](../../tasks/build/xamarin-ios.md).</p>
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/test/_img/xamarin-test-cloud-icon.png)<br/>[Test: Xamarin Test Cloud](../../steps/test/xamarin-test-cloud.md)</td>
+<td>![icon](../../tasks/test/_img/xamarin-test-cloud-icon.png)<br/>[Test: Xamarin Test Cloud](../../tasks/test/xamarin-test-cloud.md)</td>
 <td>
 <p>Publish your test results to the Xamarin Test Cloud.</p>
 <blockquote><strong>Note: </strong>If you have Xamarin UI tests to run in your Xamarin test cloud account, then check the **Enabled** check box.</blockquote>
 <ul>
 <li>App File: `**/*.ipa`</li>
 <li>Test Assembly Directory: `your-solution-folder/your-xamarin-ui-test-folder/bin/$(BuildConfiguration)`</li>
-<li>For the other arguments, see [Test: Xamarin Test Cloud](../../steps/test/xamarin-test-cloud.md).</li>
+<li>For the other arguments, see [Test: Xamarin Test Cloud](../../tasks/test/xamarin-test-cloud.md).</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td>![](../../steps/utility/_img/copy-files.png)<br/>[Copy Files](../../steps/utility/copy-files.md)</td>
+<td>![](../../tasks/utility/_img/copy-files.png)<br/>[Copy Files](../../tasks/utility/copy-files.md)</td>
 <td>
 <ul>
 <li>Contents: `**/*.ipa`</li>
@@ -328,7 +328,7 @@ Solution: Click the <strong>...</strong> button and select your solution.
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/utility/_img/publish-build-artifacts.png)<br/>[Utility: Publish Build Artifacts](../../steps/utility/publish-build-artifacts.md)</td>
+<td>![icon](../../tasks/utility/_img/publish-build-artifacts.png)<br/>[Utility: Publish Build Artifacts](../../tasks/utility/publish-build-artifacts.md)</td>
 <td>
 <p>Publish your build artifacts.</p>
 <ul>
@@ -370,12 +370,12 @@ On the [variables tab](../../concepts/definitions/build/variables.md):
 
 ### Build steps
 
-On the [build tab](../../steps/index.md):
+On the [build tab](../../tasks/index.md):
 
 
 <table>
 <tr>
-<td>![Package: NuGet Installer](../../steps/package/_img/nuget-installer.png)<br/>[Package: NuGet Installer](../../steps/package/nuget-installer.md)</td>
+<td>![Package: NuGet Installer](../../tasks/package/_img/nuget-installer.png)<br/>[Package: NuGet Installer](../../tasks/package/nuget-installer.md)</td>
 <td>
 <p>Install your NuGet package dependencies.</p>
 <ul>
@@ -384,8 +384,8 @@ On the [build tab](../../steps/index.md):
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/build/_img/visual-studio-build.png)<br/>
-[Visual Studio Build](../../steps/build/visual-studio-build.md)</td>
+<td>![icon](../../tasks/build/_img/visual-studio-build.png)<br/>
+[Visual Studio Build](../../tasks/build/visual-studio-build.md)</td>
       <td>
 <p>Build your app.</p>
 <ul>
@@ -397,13 +397,13 @@ On the [build tab](../../steps/index.md):
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/build/_img/msbuild.png)<br/>[Build: MSBuild](../../steps/build/msbuild.md)</td>
+<td>![icon](../../tasks/build/_img/msbuild.png)<br/>[Build: MSBuild](../../tasks/build/msbuild.md)</td>
 <td>
 <p>(Optional) Build your tests.</p>
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/test/_img/visual-studio-test-icon.png)<br/>[Test: Visual Studio Test](../../steps/test/visual-studio-test.md)</td>
+<td>![icon](../../tasks/test/_img/visual-studio-test-icon.png)<br/>[Test: Visual Studio Test](../../tasks/test/visual-studio-test.md)</td>
 <td>
 <p>(Optional) Run your tests.</p>
 </td>
@@ -478,11 +478,11 @@ On the [variables tab](../../concepts/definitions/build/variables.md):
 
 #### Modify the steps to build the solution
 
-On the [build tab](../../steps/index.md):
+On the [build tab](../../tasks/index.md):
 
 <table>
 <tr>
-<td>![Package: NuGet Installer](../../steps/package/_img/nuget-installer.png)<br/>[Package: NuGet Installer](../../steps/package/nuget-installer.md)</td>
+<td>![Package: NuGet Installer](../../tasks/package/_img/nuget-installer.png)<br/>[Package: NuGet Installer](../../tasks/package/nuget-installer.md)</td>
 <td>
 <p>Install your NuGet package dependencies.</p>
 <ul>
@@ -491,8 +491,8 @@ On the [build tab](../../steps/index.md):
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/build/_img/visual-studio-build.png)<br/>
-[Visual Studio Build](../../steps/build/visual-studio-build.md)</td>
+<td>![icon](../../tasks/build/_img/visual-studio-build.png)<br/>
+[Visual Studio Build](../../tasks/build/visual-studio-build.md)</td>
       <td>
 <p>Build your app.</p>
 <ul>
@@ -502,7 +502,7 @@ On the [build tab](../../steps/index.md):
 </td>
 </tr>
 <tr>
-<td>![icon](../../steps/test/_img/visual-studio-test-icon.png)<br/>[Test: Visual Studio Test](../../steps/test/visual-studio-test.md)</td>
+<td>![icon](../../tasks/test/_img/visual-studio-test-icon.png)<br/>[Test: Visual Studio Test](../../tasks/test/visual-studio-test.md)</td>
 <td>
 <p>(Optional) Run your tests.</p>
 </td>

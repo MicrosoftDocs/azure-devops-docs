@@ -377,8 +377,8 @@ Defines and secures a connection to a remote host using Secure Shell (SSH).
 | Password or passphrase | The password or passphrase for the specified username if using a keypair as credentials. |
 | Private key | The entire contents of the private key file if using this type of authentication. |
 
-Also see [SSH task](../../steps/deploy/ssh.md)
-and [Copy Files Over SSH](../../steps/deploy/copy-files-over-ssh.md).
+Also see [SSH task](../../tasks/deploy/ssh.md)
+and [Copy Files Over SSH](../../tasks/deploy/copy-files-over-ssh.md).
 
 <h3 id="sep-subversion">Subversion service endpoint</h3>
 

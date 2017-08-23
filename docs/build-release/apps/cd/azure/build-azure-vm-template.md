@@ -77,7 +77,7 @@ Save the build definition and queue a new build by selecting the **Queue new bui
 
 After you've run the build, you're ready to create a release definition to provision your virtual machine:
 
-![icon](../../../steps/deploy/_img/azure-resource-group-deployment-icon.png) [Provision an Azure virtual machine using an Azure RM template](deploy-provision-azure-vm.md)
+![icon](../../../tasks/deploy/_img/azure-resource-group-deployment-icon.png) [Provision an Azure virtual machine using an Azure RM template](deploy-provision-azure-vm.md)
 
 ## Q&A
 

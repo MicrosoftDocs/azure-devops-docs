@@ -161,13 +161,13 @@ the source code must be in version control.
 
 1. Configure the tasks as shown here:
 
-   ![Nuget Installer](../steps/package/_img/nuget-installer.png) [Package: Nuget Installer](../steps/package/nuget-installer.md) - Install and update NuGet package dependencies.
+   ![Nuget Installer](../tasks/package/_img/nuget-installer.png) [Package: Nuget Installer](../tasks/package/nuget-installer.md) - Install and update NuGet package dependencies.
    
    - **Path to solution or packages.config**: Select your app solution (.sln) file.
    
    - **Installation type**: `Restore`<p />
    
-   ![Visual Studio Build](../steps/build/_img/visual-studio-build.png) [Build: Visual Studio Build](../steps/build/visual-studio-build.md) - Build with MSBuild and set the Visual Studio version property.
+   ![Visual Studio Build](../tasks/build/_img/visual-studio-build.png) [Build: Visual Studio Build](../tasks/build/visual-studio-build.md) - Build with MSBuild and set the Visual Studio version property.
    
    - **Solution**:  Select your app solution (.sln) file.
    
@@ -177,11 +177,11 @@ the source code must be in version control.
    
    - **Visual Studio Version**: Select the version used to create your app.<p />
    
-   ![Index Sources &amp; Publish Symbols](../steps/build/_img/index-sources-publish-symbols.png) [Test: Index Sources &amp; Publish Symbols](../steps/build/index-sources-publish-symbols.md) - Index the source code and optionally publish symbols to a SymStore file share.
+   ![Index Sources &amp; Publish Symbols](../tasks/build/_img/index-sources-publish-symbols.png) [Test: Index Sources &amp; Publish Symbols](../tasks/build/index-sources-publish-symbols.md) - Index the source code and optionally publish symbols to a SymStore file share.
    
    - **Search pattern**: `**\bin\**\*.pdb`<p />
    
-   ![Visual Studio Test Agent Deployment](../steps/test/_img/visual-studio-test-agent-deployment-icon.png) [Test: Visual Studio Test Agent Deployment](../steps/test/visual-studio-test-agent-deployment.md) - Deploy and configure the test agent to run tests on a set of machines.
+   ![Visual Studio Test Agent Deployment](../tasks/test/_img/visual-studio-test-agent-deployment-icon.png) [Test: Visual Studio Test Agent Deployment](../tasks/test/visual-studio-test-agent-deployment.md) - Deploy and configure the test agent to run tests on a set of machines.
    
    - **Machines**: Comma-delimited list of machine names, or a variable containing the list.
    
@@ -199,7 +199,7 @@ the source code must be in version control.
    
    - **Agent Configuration - Interactive Process**: Checked<p />
    
-   ![Windows Machine File Copy](../steps/deploy/_img/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../steps/deploy/windows-machine-file-copy.md) - Copy files to remote machines.
+   ![Windows Machine File Copy](../tasks/deploy/_img/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../tasks/deploy/windows-machine-file-copy.md) - Copy files to remote machines.
    
    - **Source**: `$(Build.Repository.LocalPath)`
    
@@ -211,7 +211,7 @@ the source code must be in version control.
    
    - **Destination Folder**: `C:\Deploy` or another folder on the target server.<p />
    
-   ![Run Functional Tests](../steps/test/_img/run-functional-tests-icon.png) [Test: Run Functional Tests](../steps/test/run-functional-tests.md) - Run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
+   ![Run Functional Tests](../tasks/test/_img/run-functional-tests-icon.png) [Test: Run Functional Tests](../tasks/test/run-functional-tests.md) - Run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
    
    - **Machines**: Comma-delimited list of machine names, or a variable containing the list.
    
@@ -221,7 +221,7 @@ the source code must be in version control.
    
    - **Execution Options - Test Assembly**: `**\*Test*.dll`<p />
    
-   ![Copy Files](../steps/utility/_img/copy-files.png) [Test: Copy Files](../steps/utility/copy-files.md) - Copy files from a source folder to a target folder using match patterns.
+   ![Copy Files](../tasks/utility/_img/copy-files.png) [Test: Copy Files](../tasks/utility/copy-files.md) - Copy files from a source folder to a target folder using match patterns.
    
    - **Source Folder**: `$(build.sourcesdirectory)`
    
@@ -229,7 +229,7 @@ the source code must be in version control.
    
    - **Target Folder**: `$(build.artifactstagingdirectory)`<p />
    
-   ![Publish Build Artifacts](../steps/utility/_img/publish-build-artifacts.png) [Test: Publish Build Artifacts](../steps/utility/publish-build-artifacts.md) - Publish Build artifacts to the server or a file share.
+   ![Publish Build Artifacts](../tasks/utility/_img/publish-build-artifacts.png) [Test: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) - Publish Build artifacts to the server or a file share.
    
    - **Path to Publish**: Select your Azure subscription.
    

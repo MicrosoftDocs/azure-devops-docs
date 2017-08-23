@@ -26,7 +26,7 @@ Here are some examples of how to publish artifacts from the **Tasks** tab of you
 > [!TIP]
 > If you want to try this and you don't already have a Git repo with a README.md file at the root, you can quickly [create one](../../../../git/create-new-repo.md).
 
-![icon](../../../steps/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+![icon](../../../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
 * Path to publish
 
@@ -45,7 +45,7 @@ drop
 
 You can create multiple artifact items. For example:
 
-![icon](../../../steps/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+![icon](../../../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
 * Path to publish
 
@@ -60,7 +60,7 @@ drop1
 
 * Artifact type: Server
 
-![icon](../../../steps/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+![icon](../../../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
 * Path to publish
 
@@ -83,7 +83,7 @@ The completed build delivers two sets of artifacts.
 
 ### C++ app
 
-![icon](../../../steps/utility/_img/copy-files.png) **Utility: Copy Files**
+![icon](../../../tasks/utility/_img/copy-files.png) **Utility: Copy Files**
 
 * Source folder
 
@@ -103,7 +103,7 @@ $(Build.ArtifactStagingDirectory)
 $(Build.ArtifactStagingDirectory)
 ```
 
-![icon](../../../steps/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+![icon](../../../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
 * Path to publish
 
@@ -163,9 +163,9 @@ If you use a file share, specify the UNC file path to the folder. You can contro
 
 Use these tasks to publish artifacts:
 
-* ![icon](../../../steps/utility/_img/copy-files.png) [Utility: Copy Files](../../../steps/utility/copy-files.md) By copying files to `$(Build.ArtifactStagingDirectory)` you can publish multiple files of different types from different places specified by your [matching patterns](../../../steps/file-matching-patterns.md).
-* ![icon](../../../steps/utility/_img/delete-files.png) [Utility: Delete Files ](../../../steps/utility/delete-files.md) Handy to prune unnecessary files that you copied to the staging directory.
-* ![icon](../../../steps/utility/_img/publish-build-artifacts.png) [Utility: Publish Build Artifacts](../../../steps/utility/publish-build-artifacts.md)
+* ![icon](../../../tasks/utility/_img/copy-files.png) [Utility: Copy Files](../../../tasks/utility/copy-files.md) By copying files to `$(Build.ArtifactStagingDirectory)` you can publish multiple files of different types from different places specified by your [matching patterns](../../../tasks/file-matching-patterns.md).
+* ![icon](../../../tasks/utility/_img/delete-files.png) [Utility: Delete Files ](../../../tasks/utility/delete-files.md) Handy to prune unnecessary files that you copied to the staging directory.
+* ![icon](../../../tasks/utility/_img/publish-build-artifacts.png) [Utility: Publish Build Artifacts](../../../tasks/utility/publish-build-artifacts.md)
 
 ## Explore, download, and deploy your artifacts
 
@@ -182,6 +182,6 @@ You can also use Release Management to deploy your app using the artifacts that 
 
 <h3 id="tfs-2015">How do I publish artifacts from TFS 2015?</h3>
 
-If you're using TFS 2015 RTM, then the steps in the above examples are not available. Instead, you copy and publish your artifacts using a single task: [Build: Publish Build Artifacts](../../../steps/utility/publish-build-artifacts.md).
+If you're using TFS 2015 RTM, then the steps in the above examples are not available. Instead, you copy and publish your artifacts using a single task: [Build: Publish Build Artifacts](../../../tasks/utility/publish-build-artifacts.md).
 
 <!-- ENDSECTION -->

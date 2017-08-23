@@ -59,7 +59,7 @@ ms.date: 05/23/2017
 
 1. Click **Add build step** and then from the **Task catalogue** dialog box add the following tasks.
 
-![icon](../../../steps/utility/_img/command-line.png) [Utility: Command Line](../../../steps/utility/command-line.md) (Restore NuGet packages.)
+![icon](../../../tasks/utility/_img/command-line.png) [Utility: Command Line](../../../tasks/utility/command-line.md) (Restore NuGet packages.)
 
 * Tool: `dotnet`
 
@@ -69,7 +69,7 @@ ms.date: 05/23/2017
       
 <table>
   <tr>
-    <td>![icon](../../../steps/build/_img/visual-studio-build.png)<br>[Build: Visual Studio Build](../../../steps/build/visual-studio-build.md)</td>
+    <td>![icon](../../../tasks/build/_img/visual-studio-build.png)<br>[Build: Visual Studio Build](../../../tasks/build/visual-studio-build.md)</td>
     <td>
       <p>(Optional) Build any additional projects that are checked in.<p>
       <ul>
@@ -81,7 +81,7 @@ ms.date: 05/23/2017
     </td>
   </tr>
   <tr>
-    <td>![Command line](../../../steps/utility/_img/command-line.png)<br/>[Utility: Command Line](../../../steps/utility/command-line.md)</td>
+    <td>![Command line](../../../tasks/utility/_img/command-line.png)<br/>[Utility: Command Line](../../../tasks/utility/command-line.md)</td>
     <td>
       <p>Build your ASP.NET Core project and publish the output to a folder.</p>
       <ul>
@@ -92,7 +92,7 @@ ms.date: 05/23/2017
     </td>
   </tr>
   <tr>
-    <td>![icon](../../../steps/test/_img/visual-studio-test-icon.png)<br/>[Test: Visual Studio Test](../../../steps/test/visual-studio-test.md)</td>
+    <td>![icon](../../../tasks/test/_img/visual-studio-test-icon.png)<br/>[Test: Visual Studio Test](../../../tasks/test/visual-studio-test.md)</td>
     <td>
     <p>(Optional) Run your tests. See</p>
    <ul>
@@ -102,7 +102,7 @@ ms.date: 05/23/2017
     </td>
   </tr>
   <tr>
-    <td>![icon](../../../steps/utility/_img/archive-files.png)<br>[Utility: Archive Files](../../../steps/utility/archive-files.md)</td>
+    <td>![icon](../../../tasks/utility/_img/archive-files.png)<br>[Utility: Archive Files](../../../tasks/utility/archive-files.md)</td>
     <td>
       <p>Archive the output into a web deploy package.</p>
       <ul>
@@ -114,7 +114,7 @@ ms.date: 05/23/2017
     </td>
   </tr>
   <tr>
-    <td>![icon](../../../steps/utility/_img/publish-build-artifacts.png)<br>[Utility: Publish Build Artifacts](../../../steps/utility/publish-build-artifacts.md)</td>
+    <td>![icon](../../../tasks/utility/_img/publish-build-artifacts.png)<br>[Utility: Publish Build Artifacts](../../../tasks/utility/publish-build-artifacts.md)</td>
     <td>
       <p>Publish the build artifacts to be consumed by a release definition.</p>
       <ul>
