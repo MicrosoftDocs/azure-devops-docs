@@ -24,10 +24,10 @@ Learn how to build your app and deploy it to your choice of Azure service.
 
 ## Step-by-Step Tutorials  
 
-* [Set up multi-stage release](tutorials/define-multistage-release-process.md)
-* [CI builds for Git in VSTS](tutorials/ci-build-git.md)
-* [CI builds for GitHub](tutorials/ci-build-github.md)
-* [Extend CI/CD](tutorials/extend-release-management.md)
+* [Set up multi-stage release](actions/define-multistage-release-process.md)
+* [CI builds for Git in VSTS](actions/ci-build-git.md)
+* [CI builds for GitHub](actions/ci-build-github.md)
+* [Extend CI/CD](actions/extend-release-management.md)
 
 ## Videos
 

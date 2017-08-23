@@ -17,13 +17,13 @@
 - name: Tutorials
   items:
   - name: CI builds for Git in VSTS
-    href: tutorials/ci-build-git.md
+    href: actions/ci-build-git.md
   - name: CI builds for GitHub
-    href: tutorials/ci-build-github.md
+    href: actions/ci-build-github.md
   - name: Set up multi-stage release
-    href: tutorials/define-multistage-release-process.md
+    href: actions/define-multistage-release-process.md
   - name: Extend CI/CD
-    href: tutorials/extend-release-management.md
+    href: actions/extend-release-management.md
 - name: Concepts
   items:
   - name: Agents
