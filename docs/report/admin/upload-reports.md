@@ -14,7 +14,7 @@ ms.date: 03/02/2017
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 
 >[!IMPORTANT]
->**Feature availability**: You can only add a report server to an on-premises TFS.  If you're using Team Services, adding a report server isn't a supported option, instead, you can use [PowerBI](../powerbi/overview.md). 
+>**Feature availability**: You can only add a report server to an on-premises TFS.  If you're using VSTS, adding a report server isn't a supported option, instead, you can use [PowerBI](../powerbi/overview.md). 
 
 This is the second task in the four-task sequence to add reports to your team project. You can use the procedures in this topic to upload reports for the first time, or to upload updated reports provided with the latest process templates. 
 
@@ -155,7 +155,7 @@ You can always check the names by opening the context menu for any report, choos
 ####Q: What about uploading Excel reports?
 **A:** For TFS 2015 and earlier versions, you can use **tfpt addprojectportal** command to add a project portal and Excel reports once you have [added a SharePoint web application](https://msdn.microsoft.com/library/ee805928.aspx) to your team project collection. 
 
-####Q: Can I get these same reports using Team Services?
+####Q: Can I get these same reports using VSTS?
 **A:** Not at this time. Uploading reports is only supported for an on-premises TFS. You can, however, [chart the results of a flat-list query](../charts.md).
 
 ####Q: How do I customize a report?

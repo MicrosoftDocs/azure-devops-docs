@@ -1,5 +1,5 @@
 ---
-title: Functions available in Power BI Data Connector | Team Services  
+title: Functions available in Power BI Data Connector | VSTS  
 description: Description of functions available from the Power BI Data Connector and the Analytics Service for Visual Studio Team Services
 ms.assetid: EC735BA2-24C9-4BA3-B35E-2CE9D2F1D7F1
 ms.prod: vs-devops-alm
@@ -12,11 +12,11 @@ ms.date: 01/17/2017
 
 # Functions available in Power BI Data Connector
 
-<b>Team Services</b>
+<b>VSTS</b>
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-The Data Connector for Team Services contributes functions which can be used by query authors.  For example, VSTS.Feed adds to the functionality of OData.Feed by handling unique requirements of the VSTS OData feed such as authentication.  We strongly recommend using VSTS.Feed and using the latest version of Power BI when possible.
+The Data Connector for VSTS contributes functions which can be used by query authors.  For example, VSTS.Feed adds to the functionality of OData.Feed by handling unique requirements of the VSTS OData feed such as authentication.  We strongly recommend using VSTS.Feed and using the latest version of Power BI when possible.
 
 
 <table>
@@ -30,7 +30,7 @@ The Data Connector for Team Services contributes functions which can be used by 
     </tr>
     <tr>
         <td><a href="#vstscontents"><code>VSTS.Contents</code></a></td>
-        <td>Intended for more advanced scenarios, VSTS.Contents returns the contents downloaded from the URL for the Analytics Service for Team Services as a binary value.</td>
+        <td>Intended for more advanced scenarios, VSTS.Contents returns the contents downloaded from the URL for the Analytics Service for VSTS as a binary value.</td>
     </tr>
 
 </table>
@@ -41,7 +41,7 @@ Allows for users to easily execute OData queries against Analytics in Visual Stu
 The `VSTS.Feed` function is similar to the standard `OData.Feed` function in terms of the arguments it accepts and the format of the returned value. For more information, see  [Power Query (M) Formula Reference - OData.Feed](https://msdn.microsoft.com/library/mt260868.aspx).
 
 > [!TIP]
-> If you are already using `OData.Feed` to access data from Team Services, then just replace it with `VSTS.Feed` to leverage Data Connector authentication.
+> If you are already using `OData.Feed` to access data from VSTS, then just replace it with `VSTS.Feed` to leverage Data Connector authentication.
 > This will also inform Power BI that these requests are referencing the same data source and you'll be able to combine the data without violating the single data source constraints for refreshing data sets in the Power BI.com.
 
 ### Arguments for VSTS.Feed
@@ -175,13 +175,13 @@ in
 ```
 
 ## VSTS.Contents
-Advanced function which returns the contents downloaded from the URL for the Analytics Service for Team Services as a binary value.
+Advanced function which returns the contents downloaded from the URL for the Analytics Service for VSTS as a binary value.
 
 The `VSTS.Contents` function is similar to the standard `Web.Contents` function in terms of the arguments it accepts and the format of the returned value.
 For more information please refer to: [Power Query (M) Formula Reference - Web.Contents](https://msdn.microsoft.com/library/mt260892.aspx).
 
 > [!TIP]
-> If you are already using `Web.Contents` to access data from Team Services (REST API or OData), then just replace it with `VSTS.Contents` to leverage Data Connector authentication.
+> If you are already using `Web.Contents` to access data from VSTS (REST API or OData), then just replace it with `VSTS.Contents` to leverage Data Connector authentication.
 > This will also inform Power BI that these requests are referencing the same data source and you'll be able to combine the data without violating the single data source constraints in Power BI Service.
 
 

@@ -1,5 +1,5 @@
 ---
-title: Custom calculations with Power Query | Team Services  
+title: Custom calculations with Power Query | VSTS  
 description: Adding custom columns with custom calculations in Power BI Desktop and Excel using Power Query  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -11,7 +11,7 @@ ms.date: 08/11/2016
 
 #Create custom calculations with Power Query
 
-**Team Services**  
+**VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Data available in Power BI | Team Services
+title: Data available in Power BI | VSTS
 description: Learn about what data is available in the Power BI content pack for Visual Studio Team Services (VSTS)  
 ms.technology: vs-devops-reporting
 ms.prod: vs-devops-alm
@@ -10,13 +10,13 @@ ms.author: stansw
 ms.date: 03/02/2017
 ---
 
-#Available data tables in the Power BI Content Pack for Team Services
+#Available data tables in the Power BI Content Pack for VSTS
 
-<b>Team Services</b>
+<b>VSTS</b>
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-To connect to the Analytics Services for Team Services from the Power BI Desktop, you must download the *Power BI Desktop January 2017 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop/).
+To connect to the Analytics Services for VSTS from the Power BI Desktop, you must download the *Power BI Desktop January 2017 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop/).
 
 The current release of the Data Connector supports custom fields added to the process references by a team project. 
 
@@ -77,6 +77,6 @@ I wouldn't add this statement.
 
 ## Related notes  
 - [Power BI integration overview](overview.md)
-- [Connect to Team Services with Power BI Data Connector](./data-connector-connect.md)
+- [Connect to VSTS with Power BI Data Connector](./data-connector-connect.md)
 - [Data Connector - Example reports](./data-connector-examples.md)
 - [Functions available in Power BI Data Connector](data-connector-functions.md) 

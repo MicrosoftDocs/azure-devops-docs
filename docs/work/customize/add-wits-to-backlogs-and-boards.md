@@ -30,9 +30,9 @@ For example, you may want to track different types of requirements based on thei
 
 
 To add a WIT to track as requirements, tasks, or as bugs perform the corresponding steps:  
-- [Add a WIT to track as requirements](#wit-as-requirements)
-- [Add a WIT to track as tasks](#wit-as-tasks)
-- [Add a WIT to the Bug Category](#wit-as-bugs)
+- [Add a WIT to track as requirements](#wits-as-requirements)
+- [Add a WIT to track as tasks](#wits-as-tasks)
+- [Add a WIT to the Bug Category](#wits-as-bugs)
 
 >[!NOTE]  
 >We recommend that you add a WIT to one and only one of the following categories: Requirement Category, Task Category, or Bug Category. The system prevents you from adding the same WIT to both the Requirement Category and Task Category. WITs that you add to the Bug Category will follow the [bug behavior set for the team](show-bugs-on-backlog.md). 

@@ -1,6 +1,6 @@
 ---
-title: Publish a Power BI Desktop file to PowerBI.com | Team Services  
-description: How to publish and enable refresh of a Power BI Desktop file to PowerBI.com that uses the Analytics Service for Team Services 
+title: Publish a Power BI Desktop file to PowerBI.com | VSTS  
+description: How to publish and enable refresh of a Power BI Desktop file to PowerBI.com that uses the Analytics Service for VSTS 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
@@ -11,7 +11,7 @@ ms.date: 08/04/2017
 
 # Publish a Power BI Desktop file to PowerBI.com 
 
-**Team Services**  
+**VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Create rollup charts | Team Services 
+title: Create rollup charts | VSTS 
 description: Create rollup charts in Power BI from data collected for Visual Studio Team Services (VSTS)   
 ms.assetid: 81223001-126D-4856-B1B3-7231013089F2  
 ms.prod: vs-devops-alm
@@ -11,13 +11,13 @@ ms.date: 08/04/2017
 
 # Create rollup charts
 
-**Team Services**
+**VSTS**
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 Rollup provides summed values of select fields for all child work items of a parent. You can create rollups based on counts of work items or selected measures, such as Story Points, Effort, Size for backlog items and Original Estimate, Remaining Work, Completed Work for tasks. 
 
-Natively, Team Services provides rollup of Remaining Work for tasks on the Task board. 
+Natively, VSTS provides rollup of Remaining Work for tasks on the Task board. 
 
 ![Native support of rollup](_img/native-support-for-rollup.png)
 
@@ -49,13 +49,13 @@ If you use the [Scrum](../../work/guidance/scrum-process.md) or
 
 if you're new to Power BI, go [here to Connect to Power BI](connect-vso-pbi-vs.md).  
 
-You can create Power BI rollup charts for data stored in Team Services. To access similar charts for on-premises TFS, see [Rollup of work and other fields](https://msdn.microsoft.com/library/dn217871.aspx). 
+You can create Power BI rollup charts for data stored in VSTS. To access similar charts for on-premises TFS, see [Rollup of work and other fields](https://msdn.microsoft.com/library/dn217871.aspx). 
 
 
 <a id="supported-rollup-paths"></a>
 
 ##Supported rollup paths  
-The Team Services data model supports rollup along these pre-defined paths.  
+The VSTS data model supports rollup along these pre-defined paths.  
 - **Agile process:** Epics > Features > User Stories > Bugs > Tasks
 
 - **Scrum process:** Epics > Features > Product Backlog Items > Bugs > Tasks

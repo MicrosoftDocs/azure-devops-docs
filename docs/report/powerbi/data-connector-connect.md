@@ -1,5 +1,5 @@
 ---
-title: Connect to Power BI Data Connector | Team Services  
+title: Connect to Power BI Data Connector | VSTS  
 description: Step-by-step guidance on how to connect to Power BI Data Connector to access Visual Studio Team Services (VSTS) data
 ms.assetid: 509ECCF2-E18E-4F14-B7EE-8802AB8938A2
 ms.prod: vs-devops-alm
@@ -10,13 +10,13 @@ ms.topic: get-started-article
 ms.date: 05/21/2017
 ---
 
-# Connect to Team Services with Power BI Data Connector
+# Connect to VSTS with Power BI Data Connector
 
-<b>Team Services</b>
+<b>VSTS</b>
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-You import data from the Analytics Service for Team Services into Power BI using a data connector.  
+You import data from the Analytics Service for VSTS into Power BI using a data connector.  
 
 ## Import data
 
@@ -44,11 +44,11 @@ You import data from the Analytics Service for Team Services into Power BI using
 
 	![](./_img/data-connector-get-data-3.png)
 
-6. **Specify the basic parameters to connect to your data**. *Team Services account name*" and *Project name* are mandatory. 
+6. **Specify the basic parameters to connect to your data**. *VSTS account name*" and *Project name* are mandatory. 
  
 	![](./_img/data-connector-get-data-4.png)
 
-	- For *Team Services account name*, enter just the account name and not the full URL (e.g. use `fabrikam-fiber-inc` if the URL of your account is "`https://fabrikam-fiber-inc.visualstudio.com`").
+	- For *VSTS account name*, enter just the account name and not the full URL (e.g. use `fabrikam-fiber-inc` if the URL of your account is "`https://fabrikam-fiber-inc.visualstudio.com`").
 	- For *Project name*, enter just the project name (e.g. use `Fabrikam-Fiber-Git` if the URL of your project is "`https://fabrikam-fiber-inc.visualstudio.com/Fabrikam-Fiber-Git`").
 	- For *Area path(s)* (optional), enter the full path as it appears in the `Area` field of your work items and optionally add `\*` suffix to include all children.
 	> [!TIP]
@@ -64,7 +64,7 @@ You import data from the Analytics Service for Team Services into Power BI using
 
 	Choose between these two authentication options: 
 	- Select *Organizational account* if your organization is using Azure Active Directory to manage users.  
-	- Select *Basic* if you are connecting to a personal account or you want to use personal access token. This option also support alternate credentials, but it is not recommended as unlike personal access tokens, this login doesn't expire and can't be scoped to limit access to your Team Services data.
+	- Select *Basic* if you are connecting to a personal account or you want to use personal access token. This option also support alternate credentials, but it is not recommended as unlike personal access tokens, this login doesn't expire and can't be scoped to limit access to your VSTS data.
 
 	![](./_img/data-connector-get-data-6.png)
 
@@ -92,7 +92,7 @@ You import data from the Analytics Service for Team Services into Power BI using
 
 	![](./_img/data-connector-get-data-9.png)
 
-10. <a id="select-relevant-rows"></a>**Select relevant rows**.  Just as you can [define work item queries in Team Services](../../work/track/using-queries.md) you can also select the Work Items that you are interested in using the *Power BI Query Editor*. The query editing experience differs from that of the web portal as it shows you a   preview of the dataset after each filter or transformation step you make.
+10. <a id="select-relevant-rows"></a>**Select relevant rows**.  Just as you can [define work item queries in VSTS](../../work/track/using-queries.md) you can also select the Work Items that you are interested in using the *Power BI Query Editor*. The query editing experience differs from that of the web portal as it shows you a   preview of the dataset after each filter or transformation step you make.
 
 	> [!TIP]
 	> Filtering rows can significantly decrease the load time and speed up queries against the dataset.

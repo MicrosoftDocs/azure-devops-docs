@@ -1,5 +1,5 @@
 ---
-title: Create trend charts | Team Services
+title: Create trend charts | VSTS
 description: Create trend, burnup, and burndown charts in Power BI from data collected for Visual Studio Team Services 
 ms.assetid: 94080282-C697-4AF2-BD2E-414674701234  
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 04/06/2016
 
 #Create trend charts
 
-<b>Team Services</b>
+<b>VSTS</b>
 
 Trend charts show progress or activity over time. Common types of trend charts include sprint burndowns or burnups, cumulative flow diagrams, and bug activity. 
 
@@ -36,7 +36,7 @@ After you have your initial chart, you can change the chart type and apply addit
 
 if you're new to Power BI, go [here to Connect to Power BI](connect-vso-pbi-vs.md).  
 
-You can create Power BI trend charts for data stored in Team Services. To access similar charts for on-premises TFS, see [Create status and trend charts in Excel](../excel/create-status-and-trend-excel-reports.md). 
+You can create Power BI trend charts for data stored in VSTS. To access similar charts for on-premises TFS, see [Create status and trend charts in Excel](../excel/create-status-and-trend-excel-reports.md). 
 
 ##Apply State filter 
 

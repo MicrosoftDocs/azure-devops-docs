@@ -1,5 +1,5 @@
 ---
-title: Data available in Power BI | Team Services
+title: Data available in Power BI | VSTS
 description: Learn about what data is available in the Power BI connector for Visual Studio Team Services (VSTS)  
 ms.technology: vs-devops-reporting
 ms.prod: vs-devops-alm
@@ -10,9 +10,9 @@ ms.author: kaelli
 ms.date: 03/02/2017
 ---
 
-#What is available in the Power BI Content Pack for Team Services
+#What is available in the Power BI Content Pack for VSTS
 
-<b>Team Services</b>
+<b>VSTS</b>
 
 Power BI Content Pack for Visual Studio Team Services gathers data from different feature areas and combines them into a single coherent analytical model.
 

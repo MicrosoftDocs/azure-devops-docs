@@ -1,5 +1,5 @@
 ---
-title: Dashboards and reports | Team Services & TFS  
+title: Dashboards and reports | VSTS & TFS  
 description: Review of the OOB charts, widgets, dashboards, and reports available to monitor status and trends in VSTS and and Team Foundation Server (TFS)  
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
 ms.prod: vs-devops-alm
@@ -14,49 +14,46 @@ ms.date: 06/14/2017
 
 [!INCLUDE [temp](_shared/vsts-tfs-header-17-15.md)]
 
+Customizable, highly-configurable dashboards provide you and your teams with the flexibility to share information, monitor progress and trends, and improve your workflow processes. 
 
 
-<a id="monitor-progress">  </a>
-## Create light-weight charts  
-To get started, you can open a shared query and create a chart based on your tracking interests. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.   
+## Add widgets to your dashboard   
 
-[![Edit query](_img/gs-chart-query.png)](../work/track/using-queries.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)  
+With dashboards, you can configure an array of charts and widgets.  
 
-The available queries differ based on the process&mdash;[Agile](../work/guidance/agile-process.md), [Scrum](../work/guidance/scrum-process.md), or [CMMI](../work/guidance/cmmi-process.md)&mdash;selected to create your team project.  
-
-####Sample Agile tool light-weight charts   
-
-![Active bugs](_img/gs-monitor-charts-active-bugs.png)   
-
-## Add chart widgets to a dashboard   
-Dashboards allow you to configure an array of charts that you want to monitor. From the dashboard you can add chart widgets and configure them. Charts that track work require you to first define the query.   
-
-[![Add dashboard](_img/gs-add-dashboard.png)](dashboards.md)[![Add widget](_img/gs-add-widget.png)](widget-catalog.md) [![Add query-based widget](_img/gs-add-query-based-widget.png)](widget-catalog.md)
-
-
-**Sample Agile tool chart widgets**  
-
-![Cumulative flow diagram widget](_img/widget-cfd-chart.png) ![Chart work item query widget](_img/widget-chart-work-query.png)   
-
-
-Teams can [create multiple dashboards](dashboards.md) to share information, access quick links and other functions, and view status, progress, and trends. Easily add and rearrange widgets on the dashboard to show recent changes made to source control folders, build status, and charts created from work item queries.
- 
-**Sample dashboard**  
+Each team can [create multiple dashboards](dashboards.md) to share information, view status, progress, and trends, and access quick links and other functions. Easily add and rearrange widgets on the dashboard to show recent changes made to view build status, bug trends, and more. 
 
 ![Example dashboard](_img/dashboard-view-with-widgets.png)
 
-## Sprint charts     
 
-Each sprint provides access to two charts. The first [tracks capacity](../work/scrum/define-sprints.md) for the team, team activities&mdash;such as Development, Test, Design&mdash;and individual team members. The second tracks the [sprint burndown](../work/scrum/sprint-burndown.md) in terms of remaining work. 
+**Sample chart widgets**  
 
-| Capacity bars | Burndown  |
-|-------| ----- |
-|![Capacity bars](../work/scrum/_img/ALM_DS_CapacityBars_S.png) | ![Burndown chart](../work/scrum/_img/ALM_DS_SprntBD_Chrt_S.png)  |
+![Lead time widget](guidance/_img/lead-time-control-chart.png) ![Cumulative flow diagram widget](guidance/_img/cfd-exampe-rolling-30-days.png)   
+
+**Sequence for adding and customizing a dashboard**
+
+[![Add dashboard](_img/gs-add-dashboard.png)](dashboards.md)[![Add widget](_img/gs-add-widget.png)](add-widget-to-dashboard.md) 
 
 
-**Sprint chart widgets**  
+### Marketplace widgets
 
- ![Sprint capacity widget](_img/widget-sprint-capacity.png)  ![Sprint burndown widget](_img/widget-sprint-burndown.png)   
+In addition to the widgets available to your from the widget catalog, you may find additional widgets of interest from the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
+
+
+
+<a id="monitor-progress">  </a>
+## Generate status and trend charts from queries  
+
+With flat-list queries, you can create various charts to monitor status, progress, and trends. To get started, you can open a shared query and create a chart based on your tracking interests. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.   
+
+
+#### Sample Agile tool light-weight charts   
+
+![Active bugs](_img/gs-monitor-charts-active-bugs.png)   
+
+**Sequence for adding query-based charts to a dashboard**
+[![Edit query](_img/gs-chart-query.png)](../work/track/using-queries.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)   
+
 
 
 ## Test progress, results, and trends  
@@ -96,15 +93,6 @@ There are a number of system-generated charts that you can access from the web p
 
 
 
-### Marketplace widgets
-
-You may find additional widgets of interest from the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
-
-If your account or project collection administrator disables a marketplace widget, you'll see the following image: 
-
-<img src="_img/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" style="border: 1px solid #CCCCCC;" />   
-
-To regain access to it, request your admin to reinstate or reinstall the widget. 
 
 ### Widget size
 
@@ -125,6 +113,37 @@ Prior to monitoring work progress and trends, you'll need to have [planned your 
 
 In addition to the lightweight charts, you also have access to the following shared queries provided with the default process templates.   
 
+
+
+### Add custom fields  
+You can add data to support reporting requirements in the following ways:
+
+- [Add a custom field (Inheritance process model, VSTS)](../work/process/customize-process-field.md)
+- [Add or modify a field (Hosted XML or On-premises XML)](../work/customize/add-modify-field.md)  
+
+
+### Extensibility  
+In addition to the widgets described in the Widget catalog, you may also add widgets made available through the [Marketplace (VSTS only)](https://marketplace.visualstudio.com/#VSTS) or create your own widgets using the [Widget REST APIs](https://www.visualstudio.com/extend/develop/add-dashboard-widget). 
+
+### Disabled Marketplace widget 
+
+If your account or project collection administrator disables a marketplace widget, you'll see the following image: 
+
+<img src="_img/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" style="border: 1px solid #CCCCCC;" />   
+
+To regain access to it, request your admin to reinstate or reinstall the widget. 
+
+
+
+<!---
+*   Incorporate data from other resources to an Excel report using PowerPivot.
+    PowerPivot for Excel 2010 is a data analysis add-in for Microsoft Excel 2010. By using this add-in, you can generate reports that combine data from other data stores or databases with data from Team Foundation Server. For more information, see [Microsoft PowerPivot](https://msdn.microsoft.com/library/gg399131.aspx). 
+
+*   Create an adapter to add new data types to the data warehouse (TFS).
+    An adapter is a managed assembly that implements [IWarehouseAdapter](http://msdn.microsoft.com/library/microsoft.teamfoundation.adapter.iwarehouseadapter.aspx). An adapter uses the warehouse object model to interact with the TFS data warehouse. When an adapter adds data fields to the warehouse, it programmatically extends the schema that defines data that is moved to the warehouse. For more information, see [Data Warehouse Extensibility](http://msdn.microsoft.com/library/bb130342.aspx) and [How to: Create an Adapter](http://msdn.microsoft.com/library/bb286956.aspx). 
+
+--> 
+
 <!---
 <a id="shared-queries">  </a>
 #### Predefined shared queries   
@@ -139,27 +158,22 @@ In addition to the lightweight charts, you also have access to the following sha
 1. Create sprint-specific queries by adding a filter clause ```Iteration Path=@CurrentIteration``` to an existing project status query.    
 2. The Scrum process treats bugs the same as product backlog items, so no bug-specific queries are predefined. To monitor bugs, add a filter clause with ```Work Item Type=Bug```.   
 
+
+## Sprint charts     
+
+Each sprint provides access to two charts. The first [tracks capacity](../work/scrum/define-sprints.md) for the team, team activities&mdash;such as Development, Test, Design&mdash;and individual team members. The second tracks the [sprint burndown](../work/scrum/sprint-burndown.md) in terms of remaining work. 
+
+| Capacity bars | Burndown  |
+|-------| ----- |
+|![Capacity bars](../work/scrum/_img/ALM_DS_CapacityBars_S.png) | ![Burndown chart](../work/scrum/_img/ALM_DS_SprntBD_Chrt_S.png)  |
+
+
+**Sprint chart widgets**  
+
+ ![Sprint capacity widget](_img/widget-sprint-capacity.png)  ![Sprint burndown widget](_img/widget-sprint-burndown.png)   
+
+
 -->
-
-### Add custom fields  
-You can add data to support reporting requirements in the following ways:
-
-- [Add a custom field (Inheritance process model, Team Services)](../work/process/customize-process-field.md)
-- [Add or modify a field (Hosted XML or On-premises XML)](../work/customize/add-modify-field.md)  
-
-
-### Extensibility  
-In addition to the widgets described in the Widget catalog, you may also add widgets made available through the [Marketplace (Team Services only)](https://marketplace.visualstudio.com/#VSTS) or create your own widgets using the [Widget REST APIs](https://www.visualstudio.com/extend/develop/add-dashboard-widget). 
-
-
-<!---
-*   Incorporate data from other resources to an Excel report using PowerPivot.
-    PowerPivot for Excel 2010 is a data analysis add-in for Microsoft Excel 2010. By using this add-in, you can generate reports that combine data from other data stores or databases with data from Team Foundation Server. For more information, see [Microsoft PowerPivot](https://msdn.microsoft.com/library/gg399131.aspx). 
-
-*   Create an adapter to add new data types to the data warehouse (TFS).
-    An adapter is a managed assembly that implements [IWarehouseAdapter](http://msdn.microsoft.com/library/microsoft.teamfoundation.adapter.iwarehouseadapter.aspx). An adapter uses the warehouse object model to interact with the TFS data warehouse. When an adapter adds data fields to the warehouse, it programmatically extends the schema that defines data that is moved to the warehouse. For more information, see [Data Warehouse Extensibility](http://msdn.microsoft.com/library/bb130342.aspx) and [How to: Create an Adapter](http://msdn.microsoft.com/library/bb286956.aspx). 
-
---> 
 
 [excel-adhoc-query-report]: ./excel/create-status-and-trend-excel-reports.md
 [add-a-team]: ../Work/scale/multiple-teams.md

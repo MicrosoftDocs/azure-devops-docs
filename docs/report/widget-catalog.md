@@ -1,5 +1,5 @@
 ---
-title: Widget catalog | Team Services & TFS  
+title: Widget catalog | VSTS & TFS  
 description: Determine which widgets you want to add to your dashboards when working in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -12,10 +12,10 @@ ms.date: 08/10/2017
 
 # Widget catalog 
 
-<b>Team Services | TFS 2017 | TFS 2015.1-2015.3  </b>  
+<b>VSTS | TFS 2017 | TFS 2015.1-2015.3  </b>  
 
 >[!NOTE]  
->**Feature availability**: You can access the widget catalog from Team Services or the web portal for TFS 2015.1 or later version. All widgets listed below are available from the web portal for Team Services. Some widgets listed below are only available when you connect to TFS 2015 Update 2 or later version.  
+>**Feature availability**: You can access the widget catalog from VSTS or the web portal for TFS 2015.1 or later version. All widgets listed below are available from the web portal for VSTS. Some widgets listed below are only available when you connect to TFS 2015 Update 2 or later version.  
 >
 >With TFS 2015, you have access to a [single team dashboard](team-dashboard.md) with which you can pin items but can't add widgets to the dashboard. Install [TFS 2015 Update 1](https://www.visualstudio.com/news/tfs2015-update1-vs.aspx) or later version to get access to the widget catalog and [multiple team dashboards](dashboards.md). 
 To determine the platform and version you're on, see [Provide product and content feedback, Platforms and version support](../provide-feedback.md#platform-version). 
@@ -47,7 +47,7 @@ Adds a configurable tile to display the summary of a code folder or Git reposito
 ![Pull request widget](_img/widget-catalog-pull-request.png)
 
 > [!NOTE]  
-> **<b>Feature availability:** Available from Team Services or TFS 2015.2 or later version.   
+> **<b>Feature availability:** Available from VSTS or TFS 2015.2 or later version.   
 
 
 
@@ -68,7 +68,7 @@ To learn more about pull requests, see [Review code with pull requests](../git/p
 ![Assigned to me widget](_img/widget-assigned-to-me.png)  
 
 > [!NOTE]  
-> **Feature availability:** You can access this widget from Team Services and TFS 2017.   
+> **Feature availability:** You can access this widget from VSTS and TFS 2017.   
 
 
 
@@ -87,7 +87,7 @@ Displays the list of work items currently assigned to the currently logged in us
 ![Chart work item query widget](_img/widget-chart-work-query.png)  
 
 > [!NOTE]  
-> **Feature availability:** You can access this widget from Team Services or TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#add-charts) to add shared query charts to a dashboard.    
+> **Feature availability:** You can access this widget from VSTS or TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#add-charts) to add shared query charts to a dashboard.    
 
 Adds a tile to display a progress or trend chart that builds off a shared work item query. 
 From the configuration dialog, select a shared query and [specify the chart type and values](charts.md#add-chart-widget).   
@@ -101,7 +101,7 @@ From the configuration dialog, select a shared query and [specify the chart type
 ![Cumulative flow diagram widget](_img/widget-cfd-chart.png)  
 
 > [!NOTE]  
-> **Feature availability:** This widget is available for Team Services.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../accounts/add-administrator-tfs.md) to add extensions. 
+> **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../accounts/add-administrator-tfs.md) to add extensions. 
  
 
 Displays the cumulative flow of backlog items based on the time frame, team, backlog level and swimlane you select. 
@@ -118,7 +118,7 @@ Hover over each color within the chart to see the count of items for a particula
 ![Cumulative flow diagram widget](_img/widget-cycle-time.png)  
 
 > [!NOTE]  
-> **Feature availability:** This widget is available for Team Services.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../accounts/add-administrator-tfs.md) to add extensions. 
+> **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../accounts/add-administrator-tfs.md) to add extensions. 
  
 
 Displays the cycle time of work items closed in a specified timeframe for a single team and backlog level. The cycle time of a work item is defined as the time taken to close a work item after work on it has started. 
@@ -133,7 +133,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 ![Lead time widget](_img/widget-lead-time.png)  
 
 > [!NOTE]  
-> **Feature availability:** This widget is available for Team Services. To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../accounts/add-administrator-tfs.md) to add extensions. 
+> **Feature availability:** This widget is available for VSTS. To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../accounts/add-administrator-tfs.md) to add extensions. 
  
 
 Displays the lead time of work items closed in a specified timeframe for a single team and backlog level. The lead time of a work item is defined as the time taken to close a work item after it was created. 
@@ -150,7 +150,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 
 Enables you to add work items from the dashboard. You [use work items to plan and track work](../work/backlogs/add-work-items.md).  <br/><br/>
 
-Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint (TFS) or the default iteration (Team Services). To change team defaults, see [Set team defaults](../work/scale/set-team-defaults.md).
+Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint (TFS) or the default iteration (VSTS). To change team defaults, see [Set team defaults](../work/scale/set-team-defaults.md).
 
 
 ----
@@ -230,7 +230,7 @@ Teams [specify their capacity to plan and monitor their sprint resources](../wor
 ![Sprint overview widget](_img/widget-sprint-overview.png)
 
 
-For Team Services, inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items.  
+For VSTS, inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items.  
 For on-premises TFS, inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started.
 
 Teams [plan their sprints by defining sprints](../work/scale/set-team-defaults.md) and [assigning backlog items to an iteration](../work/scrum/sprint-planning.md). 
@@ -242,7 +242,7 @@ Teams [plan their sprints by defining sprints](../work/scale/set-team-defaults.m
 ![Sprint velocity widget](_img/widget-velocity.png)
 
 > [!NOTE]  
-> **Feature availability:** This widget is available for Team Services. To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../accounts/add-administrator-tfs.md) to add extensions.
+> **Feature availability:** This widget is available for VSTS. To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../accounts/add-administrator-tfs.md) to add extensions.
 
 
 The velocity widget tracks a team's capacity to deliver work sprint after sprint. You configure the widget by selecting a team, a work item type, an aggregation field, and the number of sprints. The widget takes advantage of the Analytics service. You can track the velocity for a single team, not multiple teams.    
@@ -270,7 +270,7 @@ Provides quick access to open the following Agile tools and team resources:
 ![Build history widget](_img/widget-build-history-chart.png)   
 
 > [!NOTE]  
-> **Feature availability:** You can access this widget from Team Services or TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#add-charts) to add a build summary chart to a dashboard.  
+> **Feature availability:** You can access this widget from VSTS or TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#add-charts) to add a build summary chart to a dashboard.  
 
 Adds a tile to display a histogram of all builds run for the configured build definition.
 From the configuration dialog, select the build you want to monitor. 
@@ -284,7 +284,7 @@ Hover over a bar to learn how long the build took to complete. Click the bar to 
 ![Deployment status widget](_img/widget-deployment-status.png)  
 
 > [!NOTE]  
-> **Feature availability:** You can access this widget from Team Services or TFS 2017.1 or later versions.  
+> **Feature availability:** You can access this widget from VSTS or TFS 2017.1 or later versions.  
 
 Configurable widget that shows a consolidated view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build definition, branch, and linked release definitions. 
 
@@ -298,7 +298,7 @@ To learn more, see [View and manage releases](../build-release/actions/view-mana
 ![Release definition overview widget](_img/widget-release-definitions.png)  
 
 > [!NOTE]  
-> **Feature availability:**  You can access this widget from Team Services.   
+> **Feature availability:**  You can access this widget from VSTS.   
 
 Configurable widget that you can use to view and track the status of a release definition. The widget shows the release as a series of environments, with the name of the release and the date or time it was started. The color of the heading and the icon in each environment indicate the current status of the release, which are the same as are used on the **Releases** page. Select a release definition in the left column to filter the list to just releases for that definition.
 To learn more, see [Add release information to the dashboard](../build-release/actions/view-manage-releases.md#add-widget). 
@@ -311,7 +311,7 @@ To learn more, see [Add release information to the dashboard](../build-release/a
 ![Requirements quality widget](_img/widget-requirements-quality.png)  
 
 > [!NOTE]  
-> **Feature availability:** You can access this widget from Team Services or TFS 2017.   
+> **Feature availability:** You can access this widget from VSTS or TFS 2017.   
 
 Configurable widget that you can use to track quality continuously from a build or release definition. 
 To learn more, see [Associate automated test results with requirements](../build-release/test/associate-automated-results-with-requirements.md). 
@@ -323,7 +323,7 @@ To learn more, see [Associate automated test results with requirements](../build
 ![Test results trend widget](_img/widget-test-results-trend.png)
 
 > [!NOTE]  
-> **Feature availability:** You can access this widget from Team Services or TFS 2017.   
+> **Feature availability:** You can access this widget from VSTS or TFS 2017.   
 
 Adds a configurable tile that displays the trend of test results, such as passed or failed tests, for the selected build definition. 
 
@@ -340,7 +340,7 @@ To learn more about creating charts for tracking test results, see [Track your t
 ![Embedded web page widget](_img/embedded-web-page-widget.png)
 
 > [!NOTE]  
-> **Feature availability:** You can access this widget from Team Services or TFS 2017 or later version.  
+> **Feature availability:** You can access this widget from VSTS or TFS 2017 or later version.  
 
 Adds a configurable tile to display the contents of a web page. Only webpages that allow [iframe embedding](http://go.microsoft.com/fwlink/?LinkId=808035) are supported.
 
@@ -353,7 +353,7 @@ Adds a configurable tile to display the contents of a web page. Only webpages th
 ![Markdown widget](_img/widget-markdown-tile.png)
 
 > [!NOTE]  
-> **Feature availability:** For Team Services and TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.  
+> **Feature availability:** For VSTS and TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.  
  
 Adds a configurable tile to display any type of information, guidance, or links that you want.
 From the configuration dialog, add the information you want to share with your team. 

@@ -15,7 +15,7 @@ ms.date: 02/22/2017
 
 
 >[!IMPORTANT]
->**Feature availability**: You can only add a report server to an on-premises TFS.  If you're using Team Services, adding a report server isn't a supported option, instead, you can use [PowerBI](../powerbi/overview.md).
+>**Feature availability**: You can only add a report server to an on-premises TFS.  If you're using VSTS, adding a report server isn't a supported option, instead, you can use [PowerBI](../powerbi/overview.md).
  
 This is the third task in the four-task sequence to add reports to your team project. You can use the procedures in this topic to set permissions to view or author reports.  
 

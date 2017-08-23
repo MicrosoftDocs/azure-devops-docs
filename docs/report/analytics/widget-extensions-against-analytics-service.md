@@ -1,5 +1,5 @@
 ---
-title: Build a dashboard widget that calls the analytics service | Team Services
+title: Build a dashboard widget that calls the analytics service | VSTS
 description: How to access Analytics Service OData for Visual Studio Team Services (VSTS) from a dashboard widget extension
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -11,7 +11,7 @@ ms.date: 08/11/2016
 
 # Build a dashboard widget extension that calls the Analytics Service
 
-**Team Services**  
+**VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
@@ -337,7 +337,7 @@ There are a few key things to note here:
 * The supported size is 330x330 which is a 2x2 sized tile (160+160+10 pixels for spacing)
 
 At this point the extension can be compiled, deployed, installed and executed following the steps described in 
-[Write your first extension for Team Services](../../integrate/extensions/get-started/node.md) starting from the Create your publisher section. 
+[Write your first extension for VSTS](../../integrate/extensions/get-started/node.md) starting from the Create your publisher section. 
 
 You should end up with a widget that looks like this:
 

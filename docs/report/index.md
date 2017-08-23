@@ -1,5 +1,5 @@
 ---
-title: Dashboards | Team Services & TFS  
+title: Dashboards | VSTS & TFS  
 description: Index to topics for working with dashboards to monitor status and trends in VSTS and Team Foundation Server (TFS)  
 ms.assetid: CF7FBF52-AC95-4B0B-9FEC-D2EDD5583F9E
 ms.prod: vs-devops-alm
@@ -12,6 +12,8 @@ ms.date: 06/22/2017
 
 # Dashboards 
 
+Start gaining visibility into how your team is progressing by adding one or more widgets to your dashboard. Each team can customize and configure dashboards to share information and monitor their progress.  
+
 <!---
 ## Overview  
 [Charts, dashboards, and widgets](overview.md)
@@ -20,7 +22,7 @@ ms.date: 06/22/2017
 ## 5-Minute Quickstarts  
 - [Add and manage dashboards](dashboards.md)  
 - [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  
-- [Configure work item query-based charts](charts.md)
+
 
 
 ## Step-by-Step Tutorials
@@ -30,13 +32,16 @@ ms.date: 06/22/2017
 - [Work with sprint burndown](../work/scrum/sprint-burndown.md)
 - [Work with Velocity](guidance/team-velocity.md)
 
- 
+## Concepts
+- [Cumulative flow, lead time, and cycle time guidance](guidance/cumulative-flow-cycle-lead-time-guidance.md)
+- [Velocity guidance](guidance/cumulative-flow-cycle-lead-time-guidance.md)
 
 ## How-to Guides
 
-- [Add charts to a dashboard](add-charts-to-dashboard.md)  
-- [Add Markdown to a dashboard](add-markdown-to-dashboard.md)  
 - [Set dashboard permissions](dashboard-permissions.md)  
+- [Add Markdown to a dashboard](add-markdown-to-dashboard.md)   
+- [Configure work item query-based charts](charts.md)
+- [Add charts to a dashboard](add-charts-to-dashboard.md)  
 - [Configure test status, progress, and result charts](../manual-test/getting-started/track-test-status.md)  
 
 

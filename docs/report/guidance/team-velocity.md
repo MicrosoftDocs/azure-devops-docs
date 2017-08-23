@@ -1,5 +1,5 @@
 ---
-title: Velocity | Team Services & TFS
+title: Velocity | VSTS & TFS
 description: Track team velocity across several sprints using the velocity chart or widget       
 ms.technology: vs-devops-reporting  
 ms.prod: vs-devops-alm
@@ -14,7 +14,7 @@ ms.date: 07/12/2017
 
 # Velocity 
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 Teams track their velocity to help them determine how much work they can perform sprint-over-sprint. Velocity provides an indication of how much work a team can complete during a sprint based either on a count of work items completed or the sum of estimates made to Effort (PBIs), Story Points (user stories), or Size (requirements). Velocity calculations rely on the team's ability to estimate backlog items. 
 
@@ -23,7 +23,6 @@ Once your team has completed a few sprints, they can use their velocity to [fore
 Use this topic to learn: 
 
 > [!div class="checklist"]
-> * How velocity metrics should be used     
 > * Install and configure the Velocity widget (Analytics service)  
 > * How to work with the Velocity chart (work tracking datastore)     
 > * Required and recommended team activities to support velocity tracking      
@@ -31,7 +30,7 @@ Use this topic to learn:
 There are two velocity charts, the one viewed from the backlog of a team and the one you access by adding the Velocity widget to a dashboard. The Velocity widget enables you to view more sprints and additional information than that provided by the velocity chart.   
 
 > [!NOTE]   
-> **Feature availability:** The Velocity widget is available only for Team Services at this time. 
+> **Feature availability:** The Velocity widget is available only for VSTS at this time. 
 
 <table>
 <tr valign="top">
@@ -45,39 +44,7 @@ There are two velocity charts, the one viewed from the backlog of a team and the
 </td>
 </tr>
 </table>
-
-## Velocity metrics and usage guidance 
  
-Velocity provides a useful metric for these activities:  
-- Support sprint planning  
-- Forecast future sprints and the backlog items that can be completed   
-- A guide for determining how well the team estimates and meets their planned commitments 
-
-And, with the velocity widget, you can quickly determine the following:  
-- Planned velocity 
-- Actual (completed) velocity 
-- Work completed later than planned
-- Amount of work not completed   
-
-The velocity chart requires that teams estimate their backlog items with a number using the [Effort, Story Points, or Size fields](../../work/track/query-numeric.md).   
-
-The velocity widget allows teams to track velocity based on the count of backlog items or with  estimates for the the Effort, Story Points, or Size fields.
-
-<a id="minimize-variability" >    </a>
-
-#### Minimize variability in your estimates 
-Estimates, by their nature, don't reflect reality. They represent a best guess by the team as to the effort required to complete an item, relative to the effort of other items on the backlog.  
-
-By minimizing the size variability of your backlog items, you help strengthen the team's ability to  create more accurate estimates.  Variability increases uncertainty. By minimizing the variability of your estimates, you increase the likelihood of more reliable velocity metrics and forecast results.  
-
-
-#### Velocity is not a KPI 
-
-While velocity provides a measure of a team's ability to deliver work over time, you shouldn't confuse it as a key performance indicator of the team. 
-
-Velocity simply provides an aid to determine team capacity. Nothing more, nothing less. Asking a team to increase their velocity, basically asks them to accomplish more with the same resources. This request will mostly likely lead to "Story points inflation" and lead to less desirable outcomes. 
-
-
 <a id="configure-widget"></a>
 ## Configure the Velocity widget    
 
@@ -128,7 +95,7 @@ In order to add a Velocity widget to a dashboard, you must have the following in
 
 
 <a id="velocity-chart">   </a>
-## Work with the team velocity chart 
+## Work with the built-in team velocity chart 
 Velocity provides a useful metric for gaining insight into how much work your team can complete during a sprint cycle. Each team is associated with one and only one velocity chart.  
 
 Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog.  
@@ -152,7 +119,7 @@ Velocity will vary depending on team capacity, sprint over sprint. However, over
 
 	>[!NOTE]  
 	>Work items based on the [Scrum process](../../work/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../work/guidance/agile-process.md) and [CMMI](../../work/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/concepts/workflow-and-state-categories.md).
-	>
+	
 ## Required and recommended activities   
 
 For your team to gain the greatest utility from the velocity chart or velocity widget, follow these required and recommended tasks.  
@@ -171,31 +138,11 @@ For your team to gain the greatest utility from the velocity chart or velocity w
 *	At the end of the sprint, update the status of those backlog items that the team has fully completed. Incomplete items should be moved back to the product backlog and considered in a future sprint planning meeting.   
 
 ## Try this next
-Now that you understand how to work with velocity, you can use it to [forecast your sprints](../../work/scrum/forecast.md) and support your team's [sprint planning activities](../../work/scrum/sprint-planning.md).
 
-## Related notes
+> [!div class="nextstepaction"]
+> [Velocity guidance](velocity-guidance.md)
 
-*	[Define sprints for the team project](../../work/customize/set-iteration-paths-sprints.md)  
-*	[Select sprints for a team](../../work/scale/set-team-defaults.md)  
-*	Use the [task board](../../work/scrum/task-board.md) to track work during your sprint
-*	Monitor the [sprint burndown chart](../../work/scrum/sprint-burndown.md) to determine if your team is on track to complete the sprint plan
-
-### Industry resources
-- [How Should We Use Velocity?](https://www.scrumalliance.org/community/articles/2013/2013-april/how-should-we-use-velocity)  
-- [Velocity Is Not the Goal](https://www.scrumalliance.org/community/articles/2017/march/sprint-velocity-sense-and-nonsense)   
-- [How to Calculate and Use Velocity to Help Your Team and Your Projects](https://www.scrumalliance.org/community/articles/2014/february/velocity)
-
+ 
 ### Add other teams
 If you work with several teams, and each team wants to work with their own backlog view, velocity chart, and forecast tool, you can [add teams](../../work/scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those whose assigned area paths and iteration paths meet those [set for the team](../../work/scale/set-team-defaults.md). 
 
-
-<!---
-### Other types of velocity charts
-
-While the velocity chart provides a measure of Effort, Story Points, or Size that gets completed sprint-over-sprint, there may be other types of velocity that you may want to track. You can create similar charts by creating a work item query and [chart the count of or sum of items](../charts.md).  
-
-For example, you can create a chart of the number of Product backlog items and bugs completed for the last several sprints. For examples on creating this type of chart, see [Query by numeric fields](../../work/track/query-numeric.md).
-
-![Velocity count of backlog items and bugs](_img/ALM_VF_VelocityCountItems.png)  
-
--->

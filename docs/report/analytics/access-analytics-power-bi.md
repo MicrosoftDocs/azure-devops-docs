@@ -1,5 +1,5 @@
 ---
-title: Access data from Power BI desktop | Team Services  
+title: Access data from Power BI desktop | VSTS  
 description: How to access Analytics Service OData for Visual Studio Team Services (VSTS) from Power BI Desktop   
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -11,7 +11,7 @@ ms.date: 08/04/2017
 
 # Access data through Power BI desktop 
 
-**Team Services**  
+**VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
@@ -92,7 +92,7 @@ With Power BI Desktop, you can create a templated Power BI file and prompt
 the user for various parameters. We have created such a file with several basic capabilities for reporting on the current
 state of work items to get you started. As we include additional data types, we will improve this file.
 
-The current Team Services work items template file supports a single project only.
+The current VSTS work items template file supports a single project only.
 
 **What's included**
 
@@ -105,7 +105,7 @@ The current Team Services work items template file supports a single project onl
 
 1. [Download Power BI Desktop](https://go.microsoft.com/fwlink/?LinkId=521662&clcid=0x409), the April version or later.  
 
-2. Download the [Team Services work items template file](http://go.microsoft.com/fwlink/?LinkId=797544).  
+2. Download the [VSTS work items template file](http://go.microsoft.com/fwlink/?LinkId=797544).  
 
 3. Double-click the downloaded file to open it and enter the account and project as noted here:  
 

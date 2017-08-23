@@ -1,5 +1,5 @@
 ---
-title: Work item tracking analytics | Team Services  
+title: Work item tracking analytics | VSTS  
 description: How to query the OData Analytics service to generate work item tracking reports for Visual Studio Team Services (VSTS)  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -11,7 +11,7 @@ ms.date: 08/11/2016
 
 #Analytics - Work Item Tracking OData queries 
 
-**Team Services**  
+**VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
@@ -51,7 +51,7 @@ This is equivalent to selecting all rows in the entity, but returning only these
 
 ### Target a specific project  
 
-Because team projects are an integral part of Team Services, we have added the ability to specify the project scope in the URL. By specifying the project, you automatically filter for any entities that are related to the project entity.
+Because team projects are an integral part of VSTS, we have added the ability to specify the project scope in the URL. By specifying the project, you automatically filter for any entities that are related to the project entity.
 
 For example, the following project-scoped query will return the count of work items for a specific project:  
 

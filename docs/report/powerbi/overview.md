@@ -1,6 +1,6 @@
 ---
-title: Power BI integration overview | Team Services
-description: Overview of the different integration options to connect to Power BI and Team Services.
+title: Power BI integration overview | VSTS
+description: Overview of the different integration options to connect to Power BI and VSTS.
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -12,23 +12,23 @@ ms.date: 05/21/2017
 
 # Power BI integration overview
 
-<b>Team Services</b>
+<b>VSTS</b>
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-Gain insight and analyze the progress and quality of your project by connecting Power BI to the data collected and stored in Team Services.
+Gain insight and analyze the progress and quality of your project by connecting Power BI to the data collected and stored in VSTS.
 Currently, you can choose between two different options depending on your reporting requirements.
 
 The first option, the **Content Pack**, contains a complete analytic data model (tables, relationships and measures), a set of default reports and a default dashboard. Reports and dashboard are fully customizable but the data model is not.
 
 This option is great for users who want to get quick insights without the need of building custom models.
-The data model is shared between all users and therefore does not support process customization, this is one of the primary reasons to consider the second option. To learn more, see [Connect to Team Services with Power BI Content Pack](connect-vso-pbi-vs.md). 
+The data model is shared between all users and therefore does not support process customization, this is one of the primary reasons to consider the second option. To learn more, see [Connect to VSTS with Power BI Content Pack](connect-vso-pbi-vs.md). 
 
 
 The second option, **Data Connector**, has been released with the *Power BI Desktop January 2017 Update*.
 This option is available in the *Power BI Desktop*. It allows users to select the data they are interested in, which includes support for a fully customized data model by including project-specific fields, work item customizations, and adding tables from additional data sources.
 
-Since you select which data to load, this approach works well for very large accounts, that could not use the *Content Pack* in the past.To learn more, see [Connect to Team Services with Power BI Data Connector](data-connector-connect.md). 
+Since you select which data to load, this approach works well for very large accounts, that could not use the *Content Pack* in the past.To learn more, see [Connect to VSTS with Power BI Data Connector](data-connector-connect.md). 
 
 The following table contains a detailed comparison of both options.
 
@@ -51,7 +51,7 @@ The following table contains a detailed comparison of both options.
     </tr>
     <tr>
         <td>Data Source</td>
-        <td><a href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">Team Services REST API</a></td>
+        <td><a href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">VSTS REST API</a></td>
         <td><a href="https://www.visualstudio.com/en-us/docs/report/analytics/overview-analytics-service">Analytics Service</a><sup> 1</sup></td>
     </tr>
     <tr>
@@ -201,7 +201,7 @@ Using the number of work items as a proxy measure for the size of account, an ac
 To get started using Power BI and the Analytics service, make sure you have [permissions required to access the Analytics service](../analytics/analytics-security.md) and then review the [knowledge base of articles](https://support.powerbi.com/).
 
 - [Connect to services with content packs for Power BI](https://powerbi.microsoft.com/documentation/powerbi-content-packs-services/)
-- [Connect to Team Services with Power BI Data Connector](./data-connector-connect.md)
+- [Connect to VSTS with Power BI Data Connector](./data-connector-connect.md)
 - [Data Connector - Example reports](./data-connector-examples.md)
 - [Functions available in Power BI Data Connector](data-connector-functions.md)  
 - [Available data tables in the Power BI Content Pack](data-connector-available-data.md) 

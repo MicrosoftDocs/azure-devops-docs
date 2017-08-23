@@ -1,5 +1,5 @@
 ---
-title: Linked work item queries | Team Services  
+title: Linked work item queries | VSTS  
 description: How to query for linked work items using the Analytics service for Visual Studio Team Services (VSTS)  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -11,7 +11,7 @@ ms.date: 08/11/2016
 
 #Query for linked work items 
 
-**Team Services**  
+**VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 

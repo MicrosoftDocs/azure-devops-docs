@@ -1,5 +1,5 @@
 ---
-title: VSTS & Power BI | Team Services 
+title: VSTS & Power BI | VSTS 
 description: Index to topics for generating PowerBI charts, reports, and dashboards for VSTS and and Team Foundation Server (TFS)  
 ms.assetid:  
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 08/03/2017
 # VSTS & PowerBI 
 
 >[!NOTE]  
-> **Feature availability:**  VSTS PowerBI requires access to the Analytics Service. The Analytics Service is in preview and only available to select customers of Team Services at this time. If you're a Team Services customer and are interested in working with the preview version of the Analytics service, contact the [Analytics service team](mailto:vsts-analytics-supp@microsoft.com).  
+> **Feature availability:**  VSTS PowerBI requires access to the Analytics Service. The Analytics Service is in preview and only available to select customers of VSTS at this time. If you're a VSTS customer and are interested in working with the preview version of the Analytics service, contact the [Analytics service team](mailto:vsts-analytics-supp@microsoft.com).  
 
 <!---
 

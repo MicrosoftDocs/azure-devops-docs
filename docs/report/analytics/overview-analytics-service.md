@@ -1,5 +1,5 @@
 ---
-title: Analytics service overview | Team Services  
+title: Analytics service overview | VSTS  
 description: Overview of the Analytics service for Visual Studio Team Services 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -12,11 +12,11 @@ ms.date: 08/04/2017
 # Analytics Service overview  
 
 
-**Team Services**  
+**VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]  
 
-The Analytics service provides a concise OData model over the Team Services suite&mdash;Work Item Tracking, Test, Version Control, Release and Build. You can use it to answer quantitative questions regarding past or present state and velocity of your projects. It is built upon a near real-time reporting warehouse hosted in the cloud and optimized for fast read-access and support of server-based aggregations.  
+The Analytics service provides a concise OData model over the VSTS suite&mdash;Work Item Tracking, Test, Version Control, Release and Build. You can use it to answer quantitative questions regarding past or present state and velocity of your projects. It is built upon a near real-time reporting warehouse hosted in the cloud and optimized for fast read-access and support of server-based aggregations.  
 
 You can learn more from one of these topics:
 

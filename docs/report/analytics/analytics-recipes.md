@@ -1,5 +1,5 @@
 ---
-title: Analytics recipes | Team Services  
+title: Analytics recipes | VSTS  
 description: Provides general queries for use with the Analytics service for Visual Studio Team Services 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -11,7 +11,7 @@ ms.date: 08/11/2016
 
 #Analytics service recipes  
 
-**Team Services**  
+**VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 

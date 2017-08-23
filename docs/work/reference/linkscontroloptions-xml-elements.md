@@ -284,7 +284,7 @@ The following table describes the **LinksControlOptions** element and its child 
 <td><p> <strong>ExternalLinkFilter</strong> </p></td>
 <td><p>Optional <strong>LinkFilters</strong> element used to specify an external link type. With an external link type, users can create a link relationship to objects that are not work items, such as changesets, hyperlinks, and files under version control. </p>
 <pre><code>&lt;ExternalLinkFilter Type=&quot;ExternalLinkName&quot; /&gt;</code></pre>
-<p>Examples of external link types you can specify include: ```Fixed in Changeset```, ```Fixed in Commit```, ```Source Code File```, ```Pull Request```, and ```Hyperlink```. See [External link types](#external-link-types) for a complete list. </p>
+<p>Examples of external link types you can specify include: ```Fixed in Changeset```, ```Fixed in Commit```, ```Source Code File```, ```Pull Request```, and ```Hyperlink```. See [External link types](link-type-element-reference.md#external-link-types) for a complete list. </p>
 
 <p>Specify ```System.IncludeAllExternalLinks``` to include all external link types.</p>
 <blockquote style="font-size: 13px"><b>Note: </b>When you specify  ```System.IncludeAllExternalLinks```, the system displays all links in alphabetical order by external link type. 

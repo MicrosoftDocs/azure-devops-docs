@@ -1,5 +1,5 @@
 ---
-title: Shared dimensions in the Analysis Services Cube | Team Services & TFS
+title: Shared dimensions in the Analysis Services Cube | VSTS & TFS
 description: Uses to show the data for only those team projects that you specify.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

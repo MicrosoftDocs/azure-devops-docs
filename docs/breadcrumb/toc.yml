@@ -35,7 +35,7 @@
     tocHref: /vsts/manual-test/
     topicHref: /vsts/index#pivot=services&panel=testing
     items:
-    - name: Manual Testing
+    - name: "Exploratory & Manual Testing"
       tocHref: /vsts/manual-test/
       topicHref: /vsts/manual-test/index
     - name: Load Testing
@@ -70,15 +70,9 @@
     - name: "Charts, Dashboards & Widgets"
       tocHref: /vsts/report/
       topicHref: /vsts/report/index
-    - name: PowerBI
+    - name: "VSTS & PowerBI"
       tocHref: /vsts/report/powerbi/
-      topicHref: /vsts/report//powerbi/index
-    - name: "OData & the Analytics Service"
-      tocHref: /vsts/report/analytics/
-      topicHref: /vsts/report//analytics/index
-    - name: "Data Warehouse & SQL Reports"
-      tocHref: /vsts/report/sql-reports/
-      topicHref: /vsts/report/sql-reports/index
+      topicHref: /vsts/report/powerbi/index
   - name: Collaboration
     tocHref: /vsts/collaborate/
     topicHref: /vsts/index#pivot=services&panel=collaboration
@@ -145,3 +139,6 @@
     - name: TFS-Project Server integration
       tocHref: /vsts/work/tfs-ps-sync/
       topicHref: /vsts/work/tfs-ps-sync/synchronize-tfs-project-server
+    - name: "Data Warehouse & SQL Reports"
+      tocHref: /vsts/report/sql-reports/
+      topicHref: /vsts/report/sql-reports/index

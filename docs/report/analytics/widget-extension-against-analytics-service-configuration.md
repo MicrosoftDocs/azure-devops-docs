@@ -1,5 +1,5 @@
 ---
-title: Add configuration to an extension | Team Services
+title: Add configuration to an extension | VSTS
 description: How to add configuration options to an extension that calls the Analytics Service
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -11,7 +11,7 @@ ms.date: 08/11/2016
 
 # Add configuration to an extension that calls the Analytics Service
 
-**Team Services**  
+**VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 

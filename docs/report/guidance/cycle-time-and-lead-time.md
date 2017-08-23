@@ -1,5 +1,5 @@
 ---
-title: Cycle time and lead time control charts | Team Services  
+title: Cycle time and lead time control charts | VSTS  
 description: Configure and use the cycle time and lead time control charts/widgets to improve your team's ability to plan and improve processes  
 ms.prod: vs-devops-alm  
 ms.technology: vs-devops-reporting  
@@ -11,83 +11,21 @@ ms.date: 05/26/2017
 
 # Lead time and cycle time control charts
 
-**Team Services**
+**VSTS**
 
 > [!NOTE]  
-> <b>Feature availability:</b> The Lead Time and Cycle Time  widgets are only available for Team Services at this time.
+> <b>Feature availability:</b> The Lead Time and Cycle Time  widgets are only available for VSTS at this time.
 
 Both lead time and cycle time measures are extremely useful to teams as they indicate how long it takes for work to flow through their development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for your team to complete work items once they begin actively working on them.  
 
 These measures help teams plan, spot variations in efficiency, and identify potential process issues. The lower the lead and cycle times, the faster the throughput your team has.
  
-Both Lead Time and Cycle Time widgets display as scatter-plot control charts. They display summary information as well as provide several interactive elements. 
+Use this topic to learn: 
 
-**Example Lead Time widget**  
-<img src="_img/lead-time-control-chart.png" alt="Cycle Time widget" style="border: 1px solid #CCCCCC;" />
+> [!div class="checklist"] 
+> * Install and configure the Lead Time and Cycle Time widgets (Analytics service)  
+> * Interpret the scatter-plot control charts  
 
-The chart dots represent completed work items where their position on the horizontal axis represents the date they were completed. Their position on the vertical axis represents the calculated lead time or cycle time. 
-- Larger dots represent multiple work items with the same lead/cycle time 
-- Dot color corresponds to the work item type displayed in the legend
-- Dark gray dots correspond to a mix of work item types.
-  
-
-#### *Summary elements include:* 
-- Days on average (average lead time or cycle time) for the main work item types configured for the chart 
-- The number of backlog work items used in the chart calculations; if there are more than three types of work items, you'll see a summary for Other  
-- The black trend line indicates the moving average 
-- The band around the trend line shows the standard deviation.
-
-#### *Interactive elements include:*  
-- Hover over any dot to see which work items contributed to the data point and the lead/cycle time for those items  
-- Click a dot to open the work item or query that lists the work items   
-- To filter the chart, click a work item type in the legend (![backlog item icon](../../_img/icons/user-story-icon.png),![bug item icon](../../_img/icons/bug-icon.png), or other icon)  to filter on that type; to return to the original chart, refresh the dashboard.  
-
-## Moving average and standard deviation calculations 
-
-The daily moving average value corresponds to the average of data points that fall within the moving average window. 
-The time-based moving average window is calculated based on the current day and previous *N* days, where *N* corresponds to 20% of the number of days the chart displays, rounded down to the nearest odd number. 
-
-For example, if the chart displays the last 30 days, then *N*=5 days (20% of 30 days=6 days, rounded down to 5). The moving average window for April 10th corresponds to the previous 5 days. Therefore, the April 10th moving average is the average of all data points that fall on April 5th through April 10th.  
-
-If there are no data points that fall within the moving average window, the chart doesn't show a moving average line. This can happen if you are starting out and there aren't enough days to calculate a moving average. 
-
-The standard deviation appears as a band that encompasses the moving average. Standard deviation is calculated based on all data points falling within the same moving average window. Like moving average, if no data points fall within the moving average window, the chart doesn't plot standard deviation.  
-
-
-## Lead time versus cycle time   
-
-The diagram below illustrates how lead time differs from cycle time. Lead time is calculated from work item creation to entering a Completed state. Cycle time is calculated from first entering an In Progress state to entering a Completed state. 
-
-#### Illustration of lead time versus cycle time 
-<img src="_img/cycle-lead-time-concept-intro.png" alt="Conceptual image of how cycle time and lead time are measured" style="border: 1px solid #CCCCCC;" />
-
-If a work item enters a Completed state and then is reactivated and moved out of that state, then any additional time it spends in a Proposed/In Progress state will contribute to its lead/cycle time when it enters a Completed state for the second time.
-
-If your team uses the Kanban board, you’ll want to understand how your Kanban columns map to workflow states. For more information on configuring your Kanban board, see [Add columns](../../work/kanban/add-columns.md). 
-
-To learn more about how the system uses the state categories&mdash;Proposed, In Progress, and Completed&mdash;see [Workflow states and state categories](../../work/concepts/workflow-and-state-categories.md).   
-
-## Plan using estimate delivery times based on lead/cycle times  
-You can use the average lead/cycle times and standard deviations to estimate delivery times. 
-
-When you create a work item, you can use your team’s average lead time to estimate when your team will complete that work item. Your team’s standard deviation tells you the variability of the estimate. Likewise, you can use cycle time and its standard deviation to estimate the completion of a work item once work has begun.  
-
-In the following chart, the average cycle time is 8 days. The standard deviation is +/- 6 days. Using this data, we can estimate that the team will complete future user stories about 2-14 days after they begin work. The narrower the standard deviation, the more predictable your estimates.
-
-#### Example Cycle Time widget
-
-<img src="_img/cycle-time-planning.png" alt="Cycle Time widget" style="border: 1px solid #CCCCCC;" />
-
-
-## Identify process issues 
-Review your team’s control chart for outliers. Outliers often represent an underlying process issue. For example, waiting too long to complete pull request reviews or not resolving an external dependency in a timely manner.
-
-As you can see in the following chart, which shows several outliers, several bugs took significantly longer to complete than the team's average. Investigating why these bugs took longer may help uncover process issues. Addressing the process issues can help reduce your team's standard deviation and improve your team's predictability. 
-
-#### Example Cycle Time widget showing several outliers 
-<img src="_img/cycle-time-outliers.png" alt="Cycle Time widget showing several outliners" style="border: 1px solid #CCCCCC;" />
-
-You can also see how process changes affect your lead and cycle time. For example, on May 15th the team made a concerted effort to limit the work in progress and address stale bugs. You can see that the standard deviation narrows after that date, showing improved predictability. 
 
 
 <a id="configure-widget"></a>
@@ -125,6 +63,32 @@ In order to configure the Cycle Time and Lead Time widgets, you must have the fo
 	<img src="_img/cycle-lead-time-lt-sample-chart.png" alt="Example CFD chart, rolling 30 days" style="border: 1px solid #CCCCCC;" /> 
 
 	For your lead/cycle time charts to provide useful data, your team must [Update the status](../../work/kanban/kanban-basics.md#track-work) in a timely manner those work items that the widgets track.  
+
+
+## How to interpret the scatter-plot control charts 
+
+Both Lead Time and Cycle Time widgets display as scatter-plot control charts. They display summary information as well as provide several interactive elements. 
+
+**Example Lead Time widget**  
+<img src="_img/lead-time-control-chart.png" alt="Cycle Time widget" style="border: 1px solid #CCCCCC;" />
+
+The chart dots represent completed work items where their position on the horizontal axis represents the date they were completed. Their position on the vertical axis represents the calculated lead time or cycle time. 
+- Larger dots represent multiple work items with the same lead/cycle time 
+- Dot color corresponds to the work item type displayed in the legend
+- Dark gray dots correspond to a mix of work item types.
+  
+
+#### *Summary elements include:* 
+- Days on average (average lead time or cycle time) for the main work item types configured for the chart 
+- The number of backlog work items used in the chart calculations; if there are more than three types of work items, you'll see a summary for Other  
+- The black trend line indicates the moving average 
+- The band around the trend line shows the standard deviation.
+
+#### *Interactive elements include:*  
+- Hover over any dot to see which work items contributed to the data point and the lead/cycle time for those items  
+- Click a dot to open the work item or query that lists the work items   
+- To filter the chart, click a work item type in the legend (![backlog item icon](../../_img/icons/user-story-icon.png),![bug item icon](../../_img/icons/bug-icon.png), or other icon)  to filter on that type; to return to the original chart, refresh the dashboard.  
+
 
 ## Related notes
 

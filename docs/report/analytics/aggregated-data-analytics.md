@@ -1,5 +1,5 @@
 ---
-title: Aggregate data | Team Services  
+title: Aggregate data | VSTS  
 description: How to aggregate data with the Analytics Service
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -11,7 +11,7 @@ ms.date: 08/04/2017
 
 # Aggregate data   
 
-**Team Services**  
+**VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 

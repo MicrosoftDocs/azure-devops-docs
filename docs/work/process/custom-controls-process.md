@@ -96,7 +96,7 @@ If you've installed a group or page extension, refresh your browser, and then op
 
 ## Action-level contributions
 
-Action-level extensions are added to the context menu of inherited and customizable WITs for both system and inherited processes. All action-level extensions are added to all work item types and cannot be hidden or removed without [uninstalling or disabling the extension](../../marketplace/get-vsts-extensions.md#uninstall-or-disable-extensions-in-your-team-services-account).  
+Action-level extensions are added to the context menu of inherited and customizable WITs for both system and inherited processes. All action-level extensions are added to all work item types and cannot be hidden or removed without [uninstalling or disabling the extension](../../marketplace/uninstall-disable-vsts-extensions.md).  
 
 For example, the following image shows nine action-level contributions have been added and appear in the context menu for the user story.  
 

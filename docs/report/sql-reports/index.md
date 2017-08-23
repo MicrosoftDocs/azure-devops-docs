@@ -15,7 +15,7 @@ ms.date: 08/03/2017
 > [!IMPORTANT]  
 > Integration with the data warehouse and SQL Server Reporting Services is only supported for on-premises TFS. If you don't have a reporting site and want to add it, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).  
 > 
-> For information on what is supported for Team Services, see [Dashboards and reports overview](../overview.md). 
+> For information on what is supported for VSTS, see [Dashboards and reports overview](../overview.md). 
 
 
 <!---

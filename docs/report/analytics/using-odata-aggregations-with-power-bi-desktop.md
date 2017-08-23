@@ -1,5 +1,5 @@
 ---
-title: Using OData aggregations with Power BI Desktop | Team Services  
+title: Using OData aggregations with Power BI Desktop | VSTS  
 description: Describes how to call the Analytics Service using aggregations extensions for the most flexibility 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -11,7 +11,7 @@ ms.date: 08/11/2016
 
 #Using OData Aggregations with Power BI desktop  
 
-**Team Services**  
+**VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 

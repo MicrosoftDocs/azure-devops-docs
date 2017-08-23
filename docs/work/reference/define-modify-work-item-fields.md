@@ -52,7 +52,7 @@ The following list shows the supported data types:
 </td></tr>
 <tr>
 	<td><p><strong>History</strong> </p></td>
-	<td><p>Custom formatted field used to track historical information. This data type is only used to support the <strong>History</strong> field. This field is automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](#full-text) described later in this topic. For query examples, see [History and auditing](../track/history-and-auditing.md). </p>
+	<td><p>Custom formatted field used to track historical information. This data type is only used to support the <strong>History</strong> field. This field is automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](../track/query-operators-variables.md#full-text) described later in this topic. For query examples, see [History and auditing](../track/history-and-auditing.md). </p>
 
 <blockquote><b>Note:</b>  The **System.History** field is the only field that uses this data type. You cannot define a custom field using this data type. For the client work item form, you add the **System.History** field by using the **WorkItemLogControl** **type** attribute which supports rich text format controls.</blockquote>
 
@@ -111,7 +111,7 @@ Some field values are especially useful for reporting. By using the work item ty
 
 After you define a field, you can use the **witadmin changefield** command at a command prompt to change the value of all attributes except for the **refname** attribute.
 
-For information about best practices in labeling fields for reporting purposes, see [Add or modify work item fields to support reporting](https://msdn.microsoft.com/library/ee921481.aspx).
+For information about best practices in labeling fields for reporting purposes, see [Add or modify work item fields to support reporting](add-or-modify-work-item-fields-to-support-reporting.md).
 
 ### Attribute values
 
@@ -125,7 +125,7 @@ As the following table describes, you can assign one of the following values to 
 |---|---|
 | **Detail** |Use the **Detail** type only for Integer, Double, String, or DateTime fields.<br /><br />The data in this field is moved into the relational warehouse database in the Work Item and Current Work Item tables but not into the SQL Server Analysis Services cube. By using this type for unrestricted text fields, you can use them in reports without making the cube significantly larger.|
 | **Dimension** |Use the **Dimension** type only for Integer, String, or DateTime fields.<br /><br />The data in this field enters the relational warehouse database and the Analysis Services cube as an attribute of the Work Item dimension so that the data can be used to filter reports. Use this type for fields that have lists of valid values. Work Item Type and State are good examples of a dimension.|
-| **Measure** |Use the **Measure** type only for Integer and Double fields. Measures are the numeric values in your reports.<br /><br />During processing of the Analysis Services cube, data is precalculated on fields that are set to **Measure**. For example, the Work Item and Current Work Item measure groups contain cumulative data for the following fields: Original Estimate, Remaining Hours, and Completed Hours. For more information about measure groups, see [Perspectives and measure groups provided in the Analysis Services cube](https://msdn.microsoft.com/library/ms244710.aspx).<br /><br />When you specify **Measure**, you must specify **sum** for the **formula** attribute, which returns the sum of each measure referenced in the query.|
+| **Measure** |Use the **Measure** type only for Integer and Double fields. Measures are the numeric values in your reports.<br /><br />During processing of the Analysis Services cube, data is precalculated on fields that are set to **Measure**. For example, the Work Item and Current Work Item measure groups contain cumulative data for the following fields: Original Estimate, Remaining Hours, and Completed Hours. For more information about measure groups, see [Perspectives and measure groups provided in the Analysis Services cube](../../report/sql-reports/perspective-measure-groups-cube.md).<br /><br />When you specify **Measure**, you must specify **sum** for the **formula** attribute, which returns the sum of each measure referenced in the query.|
 | **None** |Specify **None** when you do not want to include the field in reports. This value is the default assignment.|
 
 ### Syntax examples 

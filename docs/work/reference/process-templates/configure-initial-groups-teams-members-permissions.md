@@ -264,7 +264,7 @@ The following table describes the permissions that you can assign to control acc
 - [Define groups, teams, and permissions](define-groups-teams-permissions-plug-in.md)   
 - [Control access to functional areas](control-access-to-functional-areas.md)   
 - [Set up groups for use in TFS deployments](../../../tfs-server/admin/setup-ad-groups.md)   
-- [Permission reference](https://www.visualstudio.com/en-us/docs/tfvc/permission-command)
+- [Permission reference](/vsts/tfvc/permission-command)
 - [Change groups and permissions with TFSSecurity](../../../tfs-server/command-line/tfssecurity-cmd.md)
 - [tf permission Command](../../../tfvc/permission-command.md).  
   

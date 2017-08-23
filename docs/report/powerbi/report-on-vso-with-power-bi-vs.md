@@ -1,5 +1,5 @@
 ---
-title: Dashboards and reports using Power BI | Team Services
+title: Dashboards and reports using Power BI | VSTS
 description: Learn about default reports and how to refresh datasets, create reports and dashboards from Visual Studio Team Services (VSTS) data using Power BI  
 ms.technology: vs-devops-reporting
 ms.prod: vs-devops-alm
@@ -12,16 +12,16 @@ ms.date: 08/04/2017
 
 
 # Create Power BI dashboards and reports 
-**Team Services**
+**VSTS**
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-You can create dashboards, individual reports, or explore data collected for your Team Services account once you [connect to Power BI](connect-vso-pbi-vs.md). As the Power BI data model for Team Services grows to include more features you'll have access to more advanced reporting. As Power BI is upgraded, it will provide you with additional visualizations and capabilities over time without any upgrades.
+You can create dashboards, individual reports, or explore data collected for your VSTS account once you [connect to Power BI](connect-vso-pbi-vs.md). As the Power BI data model for VSTS grows to include more features you'll have access to more advanced reporting. As Power BI is upgraded, it will provide you with additional visualizations and capabilities over time without any upgrades.
 
-Prior to working with Team Services data, review [Power BI Preview - basic concepts](https://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts).
+Prior to working with VSTS data, review [Power BI Preview - basic concepts](https://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts).
 
 ## Get started
-After getting connected to Team Services you will see an initial dashboard. On the left side of the screen you will notice Dashboards, Reports and Datasets.
+After getting connected to VSTS you will see an initial dashboard. On the left side of the screen you will notice Dashboards, Reports and Datasets.
 
 ![Dashboards, Reports and Datasets](_img/vs-team-services-power-bi-opened.png)
 
@@ -30,7 +30,7 @@ These are related in the following way: Dashboards contain charts that are based
 Currently, a report can be based on a single dataset. You can create as many reports based on a dataset as you want. Dashboards can contain charts from one or more reports or Power Q&A questions.
 
 > [!NOTE]  
-> Consider renaming the dataset, report and dashboard immediately after the data finishes loading. Every time you click **Get Data**, new data is imported with the name "Team Services"  and another dataset, report and dashboard is created. This can become confusing very quickly.
+> Consider renaming the dataset, report and dashboard immediately after the data finishes loading. Every time you click **Get Data**, new data is imported with the name "VSTS"  and another dataset, report and dashboard is created. This can become confusing very quickly.
 > 
 > A good habit is to rename the datasets based on either the account or the project name. For example, using Fabrikam as the account or Fabrikam.projectA to differentiate a project will make using Power BI much easier.  
 

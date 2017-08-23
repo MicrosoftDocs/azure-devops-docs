@@ -1,5 +1,5 @@
 ---
-title: Access data through Excel | Team Services  
+title: Access data through Excel | VSTS  
 description: How to access Analytics Service OData for Visual Studio Team Services (VSTS) from Excel
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -11,7 +11,7 @@ ms.date: 08/04/2017
 
 # Access data through Excel 
 
-**Team Services**  
+**VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 

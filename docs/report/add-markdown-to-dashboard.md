@@ -1,5 +1,5 @@
 ---
-title: Add markdown to a dashboard | Team Services & TFS  
+title: Add markdown to a dashboard | VSTS & TFS  
 description: Add and configure the Markdown widget you add to a team dashboard  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -12,7 +12,7 @@ ms.date: 08/10/2017
 
 # Add Markdown to a dashboard
 
-<b>Team Services | TFS 2017 | TFS 2015.1-2015.3  </b>  
+<b>VSTS | TFS 2017 | TFS 2015.1-2015.3  </b>  
 
 <a id="markdown-widget">  </a> 
 
@@ -27,7 +27,7 @@ Here's an example:
 
 
 >[!NOTE]  
->Links to documents on file shares using `file://` are not supported on Team Services or TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
+>Links to documents on file shares using `file://` are not supported on VSTS or TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
 >
 >For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](../reference/markdown-guidance.md#relative-links). 
 

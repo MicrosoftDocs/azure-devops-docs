@@ -1,5 +1,5 @@
 ---
-title: VSTS & Power BI | Team Services 
+title: VSTS & Power BI | VSTS 
 description: Index to topics for generating PowerBI charts, reports, and dashboards for VSTS and and Team Foundation Server (TFS)  
 ms.assetid:  
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/04/2017
 
 # OData & the Analytics Service for Visual Studio Team Services
 
-**Team Services**
+**VSTS**
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 

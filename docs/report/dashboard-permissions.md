@@ -13,13 +13,13 @@ ms.date: 07/13/2017
 
 # Set dashboard permissions    
 
-**Team Services | TFS 2017**
+**VSTS | TFS 2017**
 
 <a id="set-permissions">  </a>
 
 
 >[!NOTE]  
->**Feature availability:**  For Team Services and TFS 2017.1 and later versions, you can set dashboard permissions. 
+>**Feature availability:**  For VSTS and TFS 2017.1 and later versions, you can set dashboard permissions. 
 
 From the **Permissions** tab you can grant or restrict permissions to your team members to edit and manage your team dashboards.  The default setting provides all team members permissions to edit and manage dashboards.  
  

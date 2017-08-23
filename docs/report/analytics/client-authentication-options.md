@@ -1,5 +1,5 @@
 ---
-title: Client authentication options | Team Services  
+title: Client authentication options | VSTS  
 description: Client authentication options to use when connecting to the Analytics service for Visual Studio Team Services using Power BI or Excel
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -12,7 +12,7 @@ ms.date: 08/04/2017
 
 # Client authentication options 
 
-**Team Services**  
+**VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
@@ -48,10 +48,10 @@ the **oAuth2** option.
 
 - As part of good password management, these tokens automatically expire so you don't have to remember to change your password
 - Since PATs are a generated password, you won't use a common password as part of your AAC, which means a more limited surface area for attack  
-- If you need to provide a diagnostic trace and forget to replace the value, you can simply revoke the credential thereby maintaining secure access to Team Services.
+- If you need to provide a diagnostic trace and forget to replace the value, you can simply revoke the credential thereby maintaining secure access to VSTS.
 
 
-0. Log in to Team Services, and choose My security from your account menu options.  
+0. Log in to VSTS, and choose My security from your account menu options.  
 
 	<img src="_img/client-auth-profile-security.png" alt="User Profile, My Security menu option" style="border: 1px solid #CCCCCC;" /> 
 
@@ -75,7 +75,7 @@ the **oAuth2** option.
 
 	<img src="_img/authentication-4.png" alt="PAT created" style="border: 1px solid #CCCCCC;" />  
 
-0. If you need to revoke a token, simply navigate to this page and click the **Revoke** link. That token will immediately be deniedaccess to Team Services.
+0. If you need to revoke a token, simply navigate to this page and click the **Revoke** link. That token will immediately be deniedaccess to VSTS.
 	
 	These tokens are your identity. When used, the token is acting as you. Keep your tokens secret and treat them like your password. To help keep your token more secure, consider using credential managers so that you don't have to enter your credentials every time you push.  
 

@@ -1,5 +1,5 @@
 ---
-title: Analytics service security, permissions | Team Services  
+title: Analytics service security, permissions | VSTS  
 description: Required permissions necessary to access the Analytics service and how to handle project access denied errors
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -11,11 +11,11 @@ ms.date: 05/21/2017
 
 # Permissions required to access the Analytics service
 
-**Team Services**  
+**VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-The Analytics service implements a subset of the security found in the Team Services operational store. The security container in the Analytics service is at the team project level.   
+The Analytics service implements a subset of the security found in the VSTS operational store. The security container in the Analytics service is at the team project level.   
 
 >[!NOTE]  
 >The Analytics service does not support security at the area path level. Therefore, if a user has access to a team project and can report on that project but they don't have access to work items in specific areas of that project, they can view data through the Analytics service. Therefore, to protect your data, the best practice is to not allow reporting against the Analytics service for any user who does not have access to all data within a team project.  

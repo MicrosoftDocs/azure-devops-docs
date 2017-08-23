@@ -1,5 +1,5 @@
 ---
-title: Add charts to a dashboard | Team Services & TFS  
+title: Add charts to a dashboard | VSTS & TFS  
 description: Add system-generated charts or query-based charts to a team dashboard  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -12,11 +12,11 @@ ms.date: 08/10/2017
 
 # Add charts to a dashboard
 
-<b>Team Services | TFS 2017 | TFS 2015.1-2015.3  </b>  
+<b>VSTS | TFS 2017 | TFS 2015.1-2015.3  </b>  
 
 <a id="add-charts"></a>
 
-All charts listed in the following table are available from Team Services and TFS 2017.1. You can add them to a dashboard from the widget catalog or directly from the Build, Release, Test, or Work hubs. For TFS 2015. and earlier versions, some charts require you to add them to a team dashboard from the hub. 
+All charts listed in the following table are available from VSTS and TFS 2017.1. You can add them to a dashboard from the widget catalog or directly from the Build, Release, Test, or Work hubs. For TFS 2015. and earlier versions, some charts require you to add them to a team dashboard from the hub. 
 
 <table >
 <thead align="center">
@@ -91,7 +91,7 @@ All charts listed in the following table are available from Team Services and TF
 ## Add a build history chart
 
 >[!NOTE]  
-><b>Feature availability: </b> This chart is supported from Team Services and TFS 2015.1 and later versions. With Team Services and later versions of TFS, you can also add it to a team dashboard from the [widget catalog](widget-catalog.md#build-history-widget).  
+><b>Feature availability: </b> This chart is supported from VSTS and TFS 2015.1 and later versions. With VSTS and later versions of TFS, you can also add it to a team dashboard from the [widget catalog](widget-catalog.md#build-history-widget).  
 
 Each time a build is run, it logs information about the build, including the run time, errors and warnings, and whether it successfully completed or failed.   
 
@@ -112,7 +112,7 @@ Each time a build is run, it logs information about the build, including the run
 ## Add a release summary chart
 
 >[!NOTE]  
-><b>Feature availability: </b> This chart is supported from Team Services and TFS 2017.1 and later versions. You can also add it to a team dashboard from the [widget catalog](widget-catalog.md#release-definition-widget).  
+><b>Feature availability: </b> This chart is supported from VSTS and TFS 2017.1 and later versions. You can also add it to a team dashboard from the [widget catalog](widget-catalog.md#release-definition-widget).  
 
 Each time a [release is deployed](../build-release/actions/view-manage-releases.md#add-widget), it logs information about the release to each of its environments. You can add a release tile to your team dashboard to monitor release progress and gain quick access to each release. 
 
@@ -131,7 +131,7 @@ Each time a [release is deployed](../build-release/actions/view-manage-releases.
 ## Add a test status or result chart  
 
 >[!NOTE]  
-><b>Feature availability: </b> This feature is supported from Team Services and TFS 2015.  
+><b>Feature availability: </b> This feature is supported from VSTS and TFS 2015.  
 
 As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../manual-test/getting-started/track-test-status.md).  
 
@@ -145,7 +145,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 ## Add a test quality trend chart   
 
 >[!NOTE]  
-><b>Feature availability: </b> This chart is supported from Team Services and TFS 2015.2 or later versions. From Team Services and TFS 2017 and later versions, you can add a [test result trend chart widget](widget-catalog.md#test-results-widget) to a team dashboard. 
+><b>Feature availability: </b> This chart is supported from VSTS and TFS 2015.2 or later versions. From VSTS and TFS 2017 and later versions, you can add a [test result trend chart widget](widget-catalog.md#test-results-widget) to a team dashboard. 
 
 
 You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../build-release/test/getting-started-with-continuous-testing.md).  
@@ -167,7 +167,7 @@ You can add trends to the dashboard of the failures and duration of those [tests
 ## Add a work item query or chart  
 
 >[!NOTE]  
-><b>Feature availability: </b> This feature is supported from Team Services or TFS 2015. With Team Services, you can add a [work item query chart widget](widget-catalog.md#build-history-widget) to a team dashboard.  
+><b>Feature availability: </b> This feature is supported from VSTS or TFS 2015. With VSTS, you can add a [work item query chart widget](widget-catalog.md#build-history-widget) to a team dashboard.  
 
 
 You add work item queries and charts to a dashboard from the Queries page. Queries and charts must be associated with queries under the Shared queries folder.  
@@ -189,7 +189,7 @@ You add work item queries and charts to a dashboard from the Queries page. Queri
 ## Add a markdown file to a dashboard  
  
 >[!NOTE]  
->**Feature availability:** Adding a Markdown file to a team dashboard is available from Team Services and the web portal for TFS 2015.3 and later versions.
+>**Feature availability:** Adding a Markdown file to a team dashboard is available from VSTS and the web portal for TFS 2015.3 and later versions.
 
 Open the Markdown file defined in your repository and make sure you are in your team context. 
 
@@ -211,7 +211,7 @@ Here's an example:
 
 
 >[!NOTE]  
->Links to documents on file shares using `file://` are not supported on Team Services or TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
+>Links to documents on file shares using `file://` are not supported on VSTS or TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
 >
 >For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](../reference/markdown-guidance.md#relative-links). 
 

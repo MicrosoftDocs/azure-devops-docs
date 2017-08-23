@@ -1,5 +1,5 @@
 ---
-title: Build a hub extension | Team Services
+title: Build a hub extension | VSTS
 description: How to build a hub extension that calls the Analytics Service OData for Visual Studio Team Services (VSTS) from Power BI Desktop
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -11,7 +11,7 @@ ms.date: 08/11/2016
 
 # Build a hub extension  
 
-**Team Services**  
+**VSTS**  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
@@ -19,7 +19,7 @@ Building an extension that calls the Analytics Service is identical to building 
 in this early stage, a few things have to be done manually at this point - and then there's working
 with the returned data. This documentation will show you how to do both.
 
-To build an extension, see [Write your first extension for Team Services](../../integrate/extensions/get-started/node.md).
+To build an extension, see [Write your first extension for VSTS](../../integrate/extensions/get-started/node.md).
 We won't be building a grid control to hold the results though - we'll be building a chart. For the purposes of this
 example we'll use the open source C3 library which sits on top of D3.
 
@@ -271,7 +271,7 @@ There are a few key things to note here:
 * The scope is **vso.analytics** which is the OAuth scope required to access the analytics service
 
 At this point the extension can be compiled, deployed, installed and executed following the steps described 
-in the [Create your first extension for Team Services](../../integrate/extensions/get-started/node.md) documentation, starting from the Create your publisher section.
+in the [Create your first extension for VSTS](../../integrate/extensions/get-started/node.md) documentation, starting from the Create your publisher section.
 
 Once the solution is deployed you should see something similar to the following:
 

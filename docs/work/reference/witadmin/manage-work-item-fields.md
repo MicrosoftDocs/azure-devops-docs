@@ -76,7 +76,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 |**/syncnamechanges**|Specifies to use the work item field to store names and to update as changes are made in Active Directory or a workgroup. This option is valid only when a field with the data type of String is specified for the `typename`.<br /><br /> Specify `true` to enable synchronization for the data field, specify `false` to disable synchronization for the data field.|  
 |**/reportingname**:`ReportingName`|Specifies the name of the field in the data warehouse to be used for reporting.|  
 |**/reportingrefname**:`ReportingRefName`|Specifies the reference name of the field in the data warehouse to be used for reporting.|  
-|**/reportingtype:** `Type`|Specifies how the field is used in the warehouse for reporting. The following values are valid:<br /><br /> -   **dimension:** Used for the Integer, String, or DateTime fields.<br />-   **detail:** Used for the Integer, Double, String, or DateTime fields.<br />-   **measure:** Used for the Integer and Double fields. The default aggregation type is sum. You can specify another aggregation type by using the **formula** parameter.<br />-   **none:** Used to disable reportability on the field.<br /><br /> For more information, see [Define and modify work item fields](https://www.visualstudio.com/en-us/docs/work/reference/define-modify-work-item-fields).|  
+|**/reportingtype:** `Type`|Specifies how the field is used in the warehouse for reporting. The following values are valid:<br /><br /> -   **dimension:** Used for the Integer, String, or DateTime fields.<br />-   **detail:** Used for the Integer, Double, String, or DateTime fields.<br />-   **measure:** Used for the Integer and Double fields. The default aggregation type is sum. You can specify another aggregation type by using the **formula** parameter.<br />-   **none:** Used to disable reportability on the field.<br /><br /> For more information, see [Define and modify work item fields](/vsts/work/reference/define-modify-work-item-fields).|  
 |**/reportingformula:** `Formula`|Specifies the aggregation formula to be used when the field is reported as a `measure`. The only supported formula is `sum`.|  
 |**/type:** `HTML` &#124; `PlainText`|Specifies to convert the contents of the field from `PlainText` to `HTML` or from `HTML` to `PlainText`. You can specify this option only for fields whose type assignment is `PlainText` or `HTML`. See [FIELD (Definition) element reference](https://msdn.microsoft.com/en-us/library/aa337627).|  
 |**/unused**|Lists all fields that are not used by any team project defined in the team project collection.|  
@@ -111,7 +111,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
   
 -   **Name** that displays on the work item form. See [Control](https://msdn.microsoft.com/en-us/library/aa337625).  
   
--   **Help text**. See [Apply a field rule](https://www.visualstudio.com/en-us/docs/work/reference/apply-rule-work-item-field).  
+-   **Help text**. See [Apply a field rule](/vsts/work/reference/apply-rule-work-item-field).  
   
 -   **Allowed values** or items within a pick list or drop-down menu. See [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](https://msdn.microsoft.com/en-us/library/ms194947).  
   
@@ -146,7 +146,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
     Indexed: False  
     ```  
   
-     The **Use** parameter indicates the name of each project and the work item type where the field is used. For more information about field attributes, see [Index of work item fields](https://www.visualstudio.com/en-us/docs/work/guidance/work-item-field).  
+     The **Use** parameter indicates the name of each project and the work item type where the field is used. For more information about field attributes, see [Index of work item fields](/vsts/work/guidance/work-item-field).  
   
 ### List all fields in a team project collection  
   
@@ -156,7 +156,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
     witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection  
     ```  
   
-     Field information for all the fields for the named project collection appears. See [Index of work item fields](https://www.visualstudio.com/en-us/docs/work/guidance/work-item-field).  
+     Field information for all the fields for the named project collection appears. See [Index of work item fields](/vsts/work/guidance/work-item-field).  
   
 ### List fields that are not being used  
   

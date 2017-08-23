@@ -1,5 +1,5 @@
 ---
-title: Status and trend work item, query-based charts | Team Services & TFS  
+title: Status and trend work item, query-based charts | VSTS & TFS  
 description: Create status, progress, and trend charts from flat-based queries   in VSTS and Team Foundation Server  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -83,18 +83,18 @@ To add a chart to your team's home page, you must be a [team administrator](../w
 To add other types of charts, such as test results and build summary charts, see [Add widgets and chart to a dashboard](add-widget-to-dashboard.md). 
 
 >[!NOTE]  
-><b>Feature availability: </b> For on-premises TFS 2015, you can pin charts to the team homepage. From Team Services or TFS 2015.1, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md).  
+><b>Feature availability: </b> For on-premises TFS 2015, you can pin charts to the team homepage. From VSTS or TFS 2015.1, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md).  
 
 
 <a id="add-chart-widget"></a> 
 ## Add chart widget to a dashboard   
 >[!NOTE]  
-><b>Feature availability: </b> The widget, Chart for Work Items, is available from Team Services or TFS 2015.2 or later version. You add it to a team dashboard from the [widget catalog](widget-catalog.md). 
+><b>Feature availability: </b> The widget, Chart for Work Items, is available from VSTS or TFS 2015.2 or later version. You add it to a team dashboard from the [widget catalog](widget-catalog.md). 
 
  
 If you've already defined your [flat list query](../work/track/using-queries.md), you can add and configure a chart to a team dashboard using the Chart for work items widget. 
 
-1. From the web portal for Team Services, open the [team dashboard](dashboards.md) you want to add the chart to.   
+1. From the web portal for VSTS, open the [team dashboard](dashboards.md) you want to add the chart to.   
 
 2. Click ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify a dashboard, and then click ![add a widget icon](_img/add-widget-icon.png) to access the widget catalog.  
 
