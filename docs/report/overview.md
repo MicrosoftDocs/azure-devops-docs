@@ -7,10 +7,10 @@ ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 06/14/2017
+ms.date: 8/22/2017
 ---
 
-# Charts, dashboards, and widgets overview  
+# Dashboards, charts, & widgets    
 
 [!INCLUDE [temp](_shared/vsts-tfs-header-17-15.md)]
 
@@ -19,9 +19,9 @@ Customizable, highly-configurable dashboards provide you and your teams with the
 
 ## Add widgets to your dashboard   
 
-With dashboards, you can configure an array of charts and widgets.  
+With dashboards, you can configure an array of charts and widgets. 
 
-Each team can [create multiple dashboards](dashboards.md) to share information, view status, progress, and trends, and access quick links and other functions. Easily add and rearrange widgets on the dashboard to show recent changes made to view build status, bug trends, and more. 
+Each team can [add and configure multiple dashboards](dashboards.md) to share information, view status, progress, and trends, and access quick links and other functions. Easily add and rearrange widgets on the dashboard to show recent changes made to view build status, bug trends, and more. 
 
 ![Example dashboard](_img/dashboard-view-with-widgets.png)
 
@@ -34,11 +34,19 @@ Each team can [create multiple dashboards](dashboards.md) to share information, 
 
 [![Add dashboard](_img/gs-add-dashboard.png)](dashboards.md)[![Add widget](_img/gs-add-widget.png)](add-widget-to-dashboard.md) 
 
+### Monitor code activity, build progress and deployment status
+
+With the code tile widgets, you can monitor the activity occuring within a repo or branch folder. Build history displays a histogram of all builds run for a specific build definition. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
+
+**Code, build, and release chart widgets**  
+
+![Code tile widget](_img/widget-code-tile.png)&nbsp;&nbsp;&nbsp;![Pull request widget](_img/widget-catalog-pull-request.png)  
+![Build history widget](_img/widget-build-history-chart.png)&nbsp;&nbsp;&nbsp;![Deployment status widget](_img/widget-deployment-status.png)    
+
 
 ### Marketplace widgets
 
 In addition to the widgets available to your from the widget catalog, you may find additional widgets of interest from the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
-
 
 
 <a id="monitor-progress">  </a>
@@ -51,68 +59,61 @@ With flat-list queries, you can create various charts to monitor status, progres
 
 ![Active bugs](_img/gs-monitor-charts-active-bugs.png)   
 
-**Sequence for adding query-based charts to a dashboard**
+**Sequence for adding query-based charts to a dashboard**   
+
 [![Edit query](_img/gs-chart-query.png)](../work/track/using-queries.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)   
 
+
+Prior to monitoring work progress and trends, you'll need to have [planned your project and made progress on work you're tracking](../work/backlogs/create-your-backlog.md). 
 
 
 ## Test progress, results, and trends  
 
 The steps to creating charts that track test progress and results are similar to those for tracking work. The starting point, however, begins with the test plan rather than a query. For example, you can find out how many test cases are ready to run, or how many tests are passing and failing in each test suite. 
 
-[![Edit query](_img/gs-chart-test-type.png)](../manual-test/getting-started/track-test-status.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)
-
-
-And, just like work item query-based charts, you can add these charts to a dashboard.  
-
-####Sample light-weight test charts   
+#### Sample light-weight test charts   
 
 ![Active bugs](_img/gs-monitor-test-charts.png)
 
+And, just like work item query-based charts, you can add these charts to a dashboard.  
 
+**Sequence for adding test progress and result charts to a dashboard**  
 
-## Monitor code activity, build progress and trends  
-
-With the code tile widgets, you can monitor the activity occuring within a repo or branch folder. Build history displays a histogram of all builds run for a specific build definition. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
-
-**Code and build history chart widgets**  
-
-![Code tile widget](_img/widget-code-tile.png)
-![Build history widget](_img/widget-build-history-chart.png)  
+[![Edit query](_img/gs-chart-test-type.png)](../manual-test/getting-started/track-test-status.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)
 
 
 
-
-### System-generated work tracking charts 
+## System-generated work tracking charts 
 
 There are a number of system-generated charts that you can access from the web portal, but can't add to a dashboard. However, you may find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data which you can add to the dashboard. These include: 
 
-- [Team velocity](./guidance/team-velocity.md)
-- [Sprint burndown chart](../work/scrum/sprint-burndown.md) (see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget))
-- [Cumulative flow](guidance/cumulative-flow.md) (see [CFD widget](widget-catalog.md#cfd-widget))
+
+- [Cumulative flow](guidance/cumulative-flow.md)
+- [Team velocity](guidance/team-velocity.md)
+- - [Sprint burndown chart](../work/scrum/sprint-burndown.md)  
+
+
+## Sprint charts     
+
+Each sprint provides access to two charts. The first [tracks capacity](../work/scrum/define-sprints.md) for the team, team activities&mdash;such as Development, Test, Design&mdash;and individual team members. The second tracks the [sprint burndown](../work/scrum/sprint-burndown.md) in terms of remaining work. 
+
+| Capacity bars | Burndown  |
+|-------| ----- |
+|![Capacity bars](../work/scrum/_img/ALM_DS_CapacityBars_S.png) | ![Burndown chart](../work/scrum/_img/ALM_DS_SprntBD_Chrt_S.png)  |
+
+
+**Sprint chart widgets**  
+
+ ![Sprint capacity widget](_img/widget-sprint-capacity.png)  ![Sprint burndown widget](_img/widget-sprint-burndown.png)   
 
 
 
+## Try this next
 
-### Widget size
-
-Some widgets are pre-sized and can't be changed. Others are configurable through their configuration dialog. 
-
-For example, the Chart for work items widget allows you to select an area size ranging from 2 x 2  to 4 x 4 (tiles).  
-
-
-<img src="_img/add-widget-size.png" alt="Change widget size" style="border: 1px solid #CCCCCC;" />   
-
-### Extensibility 
-
-Using the REST API service, you can [create a dashboard widget](../extend/develop/add-dashboard-widget.md). 
-
-## Related notes   
-
-Prior to monitoring work progress and trends, you'll need to have [planned your project and made progress on work you're tracking](../work/backlogs/create-your-backlog.md). 
-
-In addition to the lightweight charts, you also have access to the following shared queries provided with the default process templates.   
-
+> [!div class="nextstepaction"]
+> [Add a widget to a dashboard](widget-catalog.md) 
+> or
+> [Review available widgets](widget-catalog.md) 
 
 
 ### Add custom fields  
@@ -121,18 +122,10 @@ You can add data to support reporting requirements in the following ways:
 - [Add a custom field (Inheritance process model, VSTS)](../work/process/customize-process-field.md)
 - [Add or modify a field (Hosted XML or On-premises XML)](../work/customize/add-modify-field.md)  
 
+### Extensibility 
 
-### Extensibility  
-In addition to the widgets described in the Widget catalog, you may also add widgets made available through the [Marketplace (VSTS only)](https://marketplace.visualstudio.com/#VSTS) or create your own widgets using the [Widget REST APIs](https://www.visualstudio.com/extend/develop/add-dashboard-widget). 
-
-### Disabled Marketplace widget 
-
-If your account or project collection administrator disables a marketplace widget, you'll see the following image: 
-
-<img src="_img/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" style="border: 1px solid #CCCCCC;" />   
-
-To regain access to it, request your admin to reinstate or reinstall the widget. 
-
+Using the REST API service, you can [create a custom widget](../extend/develop/add-dashboard-widget.md). 
+ 
 
 
 <!---
@@ -158,19 +151,6 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 1. Create sprint-specific queries by adding a filter clause ```Iteration Path=@CurrentIteration``` to an existing project status query.    
 2. The Scrum process treats bugs the same as product backlog items, so no bug-specific queries are predefined. To monitor bugs, add a filter clause with ```Work Item Type=Bug```.   
 
-
-## Sprint charts     
-
-Each sprint provides access to two charts. The first [tracks capacity](../work/scrum/define-sprints.md) for the team, team activities&mdash;such as Development, Test, Design&mdash;and individual team members. The second tracks the [sprint burndown](../work/scrum/sprint-burndown.md) in terms of remaining work. 
-
-| Capacity bars | Burndown  |
-|-------| ----- |
-|![Capacity bars](../work/scrum/_img/ALM_DS_CapacityBars_S.png) | ![Burndown chart](../work/scrum/_img/ALM_DS_SprntBD_Chrt_S.png)  |
-
-
-**Sprint chart widgets**  
-
- ![Sprint capacity widget](_img/widget-sprint-capacity.png)  ![Sprint burndown widget](_img/widget-sprint-burndown.png)   
 
 
 -->

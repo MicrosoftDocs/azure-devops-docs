@@ -21,7 +21,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 0. Click **Publish** on the **Home** tab. 
 
-    <img src="_img/publish-1.png" alt="Publish Power BI Desktop file" style="border: 1px solid #CCCCCC;" /> 
+    <img src="_img/publish-1.png" alt="Publish Power BI Desktop file" style="border: 2px solid #C3C3C3;" /> 
 
 0. You will be prompted to Sign in or create and if you don't have a Power BI account you can create one. Click **Sign in**
     
@@ -38,7 +38,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 0.  Click the ellipsis next to the dataset that represents the report you just loaded (this is typically the file name.   
 
-     <img src="_img/publish-3.png" alt="Select the dataset" style="border: 1px solid #CCCCCC;" />
+     <img src="_img/publish-3.png" alt="Select the dataset" style="border: 2px solid #C3C3C3;" />
 
 0. Click **Schedule Refresh**.  
 
@@ -49,7 +49,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 0. Select the appropriate authentication option (as discussed in [Client Authentication Options](client-authentication-options.md)). 
 * Use **oAuth2**  for Azure Active Directory (AAD) credentials.
 
-    <img src="_img/aad-auth-power-bi.png" alt="vt" style="border: 1px solid #CCCCCC;" />
+    <img src="_img/aad-auth-power-bi.png" alt="vt" style="border: 2px solid #C3C3C3;" />
  
 * Use **Basic** for PAT credentials   
 

@@ -22,7 +22,7 @@ The Analytics service implements a subset of the security found in the VSTS oper
 
 Security is granted by giving a user the **View analytics** permission in Visual Studio Team Services. 
 
-<img src="_img/analytics_permission.png" alt="Analytics Permission dialog" style="border: 1px solid #CCCCCC;" />
+<img src="_img/analytics_permission.png" alt="Analytics Permission dialog" style="border: 2px solid #C3C3C3;" />
 
 **The whole truth or nothing at all**
 

@@ -15,6 +15,16 @@ ms.date: 08/02/2017
  
 <b>VSTS | TFS 2017 | TFS 2015 | 2013</b>  
 
+Review your sprint burndown chart throughout your sprint cycle to check for these indicators:  
+
+> [!div class="checklist"]   
+> * Is remaining work getting updated regularly? Flat spaces within the blue area indicate a lack of updates.  
+> * Is remaining work increasing instead of decreasing? Increases can indicate unestimated or unplanned work.  Both signal a need for the team to discuss how they'll complete the sprint tasks on time.   
+> * Based on the actual burn rate, does the team feel confident that they'll complete the work by the end of the sprint?    
+
+
+To configure or view sprint burndown charts, see [Sprint burndown](../../work/scrum/sprint-burndown.md).
+
 
 <a id="scope-management">  </a>
 ## Scope management  
@@ -63,6 +73,8 @@ Your burn-down chart shows you if your project is on schedule. A daily check can
 In addition to the sprint burndown chart, teams can review the velocity at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint.  
 
 You can use your team [velocity](team-velocity.md) as input into the [forecast](../../work/scrum/forecast.md) tool to help plan your sprints.   
+
+
 
 ### Industry resources:  
 *	[Understanding the Scrum Burndown Chart](http://www.methodsandtools.com/archive/scrumburndown.php)  

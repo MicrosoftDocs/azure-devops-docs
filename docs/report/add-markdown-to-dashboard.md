@@ -23,7 +23,7 @@ Use the Markdown widget to support your team and stakeholders by adding informat
 
 Here's an example:  
 
-<img src="../reference/_img/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 1px solid #CCCCCC;" /> 
+<img src="../reference/_img/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
 
 >[!NOTE]  

@@ -32,11 +32,11 @@ For example, the following image illustrates four different charts created from 
 
 1.	From the Queries page, open the chart editor for a flat list query. You must belong to the Contributors group to create charts. Stakeholders can view charts but not create them. 
 
-	<img src="_img/charts-new-chart.png" alt="Web portal, Queries page, Chart tab, New chart link" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/charts-new-chart.png" alt="Web portal, Queries page, Chart tab, New chart link" style="border: 2px solid #C3C3C3;" />  
 
 2.	Select the chart type and field for grouping values. When you use pie, bar, and column charts, select a single field to view a count of work items.  
 
-	<img src="_img/charts-pie-chart-active-bugs-by-priority.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Configure a Pie chart" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/charts-pie-chart-active-bugs-by-priority.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Configure a Pie chart" style="border: 2px solid #C3C3C3;" /> 
 
 	If you don't see the field you want in the **Group by** drop-down list, add the field as a column to the query and save the query. You can group by any field except date-time and free-form text fields. For example: 
 	- To group by iterations, include the Iteration Path in the query or column options    
@@ -56,20 +56,20 @@ Charts automatically update when you edit the query or refresh the query results
 
 A stacked bar chart lets you track progress against two field values. Node Name will display the last leaf within the hierarchy of area paths. Use this when you want to show data across teams.  
 
-<img src="_img/charts-add-stacked-bar.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked bar chart" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/charts-add-stacked-bar.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked bar chart" style="border: 2px solid #C3C3C3;" /> 
 
 
 ### Trend chart  
 Trend charts let you view progress for the last one, two, or four weeks. 
 
-<img src="_img/charts-active-bugs-area-trend-2-weeks.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked area trend chart" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/charts-active-bugs-area-trend-2-weeks.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked area trend chart" style="border: 2px solid #C3C3C3;" /> 
 
 
 ### Burndown chart  
 
 Choose the Sum operator for Remaining Work to view a burndown chart of tasks. 
 
-<img src="_img/create-burndown-trend-sum-chart.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog,Trend chart for the past 4 weeks" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/create-burndown-trend-sum-chart.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog,Trend chart for the past 4 weeks" style="border: 2px solid #C3C3C3;" /> 
  
 
 ## Add a chart to a team dashboard 
@@ -102,11 +102,11 @@ If you've already defined your [flat list query](../work/track/using-queries.md)
 
 3. Choose the Chart for work items widget and then click Add. 
 
-	<img src="_img/widget-chart-work-query.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/widget-chart-work-query.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget" style="border: 2px solid #C3C3C3;" /> 
 
 4. Click the widget's ![Configure widget icon](_img/icons/configure-icon.png) or the ![Actions icon](_img/icons/actions-icon.png) configure icon to open the configuration dialog. 
 
-	<img src="_img/charts-chart-wit-widget-configure-dialog.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget, Configuration dialog" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/charts-chart-wit-widget-configure-dialog.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget, Configuration dialog" style="border: 2px solid #C3C3C3;" /> 
 
 5. Give the chart a title, select the flat list query on which the chart is based, and choose the chart type.   
 

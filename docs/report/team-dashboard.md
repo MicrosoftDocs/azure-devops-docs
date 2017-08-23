@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 08/11/2016
 ---
 
-#Team dashboard
+# Pin items to a team dashboard (TFS)
 
 <b>TFS 2015 | TFS 2013</b>  
 

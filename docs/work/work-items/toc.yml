@@ -48,47 +48,47 @@
     - name: "Agile work item types & workflow"
       href: /vsts/work/guidance/agile-process-workflow?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
     - name: Scrum process
-      href: /vsts/work/guidance/scrum-process.md
+      href: /vsts/work/guidance/scrum-process?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
     - name: "Scrum work item types & workflow"
       href: /vsts/work/guidance/scrum-process-workflow?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
     - name: CMMI process guidance
       items:
       - name: CMMI process
-        href: /vsts/work/guidance/cmmi-process?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
+        href: /vsts/work/guidance/cmmi-process?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
       - name: "CMMI work item types & workflow"
-        href: /vsts/work/guidance/cmmi-process-workflow?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
+        href: /vsts/work/guidance/cmmi-process-workflow?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         items:
         - name: "Code review & feedback field reference"
           href: /vsts/work/guidance/guidance-code-review-feedback-field-reference?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         - name: "Bugs, issues, & risks  field reference"
           href: /vsts/work/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-        - name: Change request  field reference
+        - name: Change request field reference
           href: /vsts/work/guidance/cmmi/guidance-change-request-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         - name: Requirements field reference
           href: /vsts/work/guidance/cmmi/guidance-requirements-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         - name: Review meeting field reference
           href: /vsts/work/guidance/cmmi/guidance-review-meeting-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
       - name: CMMI background
-        href: /vsts/work/guidance/cmmi/guidance-background-to-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
+        href: /vsts/work/guidance/cmmi/guidance-background-to-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
       - name: Project management
-        href: /vsts/work/guidance/cmmi/guidance-project-management?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
+        href: /vsts/work/guidance/cmmi/guidance-project-management?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
         items:
         - name: Project activities
-          href: ../guidance/cmmi/guidance-project-activities.md
+          href: /vsts/work/guidance/cmmi/guidance-project-activities?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
         - name: Project inception
-          href: ../guidance/cmmi/guidance-project-inception.md
+          href: /vsts/work/guidance/cmmi/guidance-project-inception?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
         - name: Plan a project
-          href: ../guidance/cmmi/guidance-plan-a-project-cmmi.md
+          href: /vsts/work/guidance/cmmi/guidance-plan-a-project-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         - name: Manage change
-          href: ../guidance/cmmi/guidance-manage-change.md
+          href: /vsts/work/guidance/cmmi/guidance-manage-change?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         - name: Manage risk
-          href: ../guidance/cmmi/guidance-manage-risks.md
+          href: /vsts/work/guidance/cmmi/guidance-manage-risks?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         - name: Iteration activities
-          href: ../guidance/cmmi/guidance-iteration-activities.md
+          href: /vsts/work/guidance/cmmi/guidance-iteration-activities?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         - name: Plan an iteration
-          href: ../guidance/cmmi/guidance-plan-an-iteration-cmmi.md
+          href: /vsts/work/guidance/cmmi/guidance-plan-an-iteration-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         - name: Manage issues
-          href: ../guidance/cmmi/guidance-manage-issues-cmmi.md
+          href: /vsts/work/guidance/cmmi/guidance-manage-issues-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
       - name: Engineering
         href: ../guidance/cmmi/guidance-engineering.md
         items:

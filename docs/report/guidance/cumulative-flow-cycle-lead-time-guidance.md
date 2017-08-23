@@ -11,11 +11,11 @@ ms.date: 8/22/2017
 
 # Cumulative flow, lead time, and cycle time guidance 
 
-[!INCLUDE [temp](../../work/_shared/dev15-version-header.md)]
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
-You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. There are two CFD charts, the one viewed from the Kanban board and the one you access by adding the CFD widget to your dashboard. 
+You use cumulative flow diagrams (CFD) to monitor the flow of work through a system.  The two primary metrics to track, cycle time and lead time, can be extracted from the chart. Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lead-time.md) to your dashboards (VSTS only at this time). 
 
-The two primary metrics to track, cycle time and lead time, can be extracted from the chart. Also, you can add the [Lead time and cycle time control charts](cycle-time-and-lead-time.md) to your dashboards. 
+To configure or view CFD charts, see [Configure a cumulative flow chart](cumulative-flow.md).
 
 
 ## Sample charts and primary metrics
@@ -99,11 +99,7 @@ CFD charts display the count of work items grouped by state/Kanban column over t
 
 **Note**:
 
-1. The current CFD implementation does not provide discrete numbers on Lead Time and Cycle Time.  
-
->[!NOTE]   
-><b>Feature availability:</b>  For VSTS, you can add a [Cycle time widget](../widget-catalog.md#cycle-time-widget) and [Lead time widget](../widget-catalog.md#lead-time-widget) to your dashboard. You need to first install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widgets to your dashboard](../add-widget-to-dashboard.md).  You must be an account owner or a member of the [Project Collection Administrator grou](../../accounts/add-administrator-tfs.md) to add extensions.
-
+1. The CFD widget (Analytics Service) and built-in CFD chart (work tracking data store) do not provide discrete numbers on Lead Time and Cycle Time. However, the [Lead Time and Cycle Time widgets](cycle-time-and-lead-time.md) do provide these numbers.  
 
 There is a very tight, well defined correlation between Lead Time/Cycle Time and Work in Progress (WIP). The more work in progress, the longer the cycle time which leads to longer lead times. The opposite is also true&mdash;the less work in progress, the shorter the cycle and lead time is because the development team can focus on fewer items. This is a key reason why you can and should set [Work In Progress limits on the Kanban board](../../work/kanban/wip-limits.md).  
 
@@ -204,24 +200,13 @@ A good rule of thumb for work in progress is that there should be no more than t
 Sometimes it takes time to get information from a stakeholder, or it takes more time to acquire necessary software. There are any number of reasons why work might be halted so having a secondary item to switch to provides a little bit of leeway. If both items are blocked, it's time to raise a red flag to get something unblocked&mdash;not just switch to yet another item. As soon as there are a large number of items in progress, the person working on those items will have difficulty context switching, are more likely to forget what they were doing, and likely incur mistakes.  
 
 
-## Moving average and standard deviation calculations 
-
-The daily moving average value corresponds to the average of data points that fall within the moving average window. 
-The time-based moving average window is calculated based on the current day and previous *N* days, where *N* corresponds to 20% of the number of days the chart displays, rounded down to the nearest odd number. 
-
-For example, if the chart displays the last 30 days, then *N*=5 days (20% of 30 days=6 days, rounded down to 5). The moving average window for April 10th corresponds to the previous 5 days. Therefore, the April 10th moving average is the average of all data points that fall on April 5th through April 10th.  
-
-If there are no data points that fall within the moving average window, the chart doesn't show a moving average line. This can happen if you are starting out and there aren't enough days to calculate a moving average. 
-
-The standard deviation appears as a band that encompasses the moving average. Standard deviation is calculated based on all data points falling within the same moving average window. Like moving average, if no data points fall within the moving average window, the chart doesn't plot standard deviation.  
-
 
 ## Lead time versus cycle time   
 
 The diagram below illustrates how lead time differs from cycle time. Lead time is calculated from work item creation to entering a Completed state. Cycle time is calculated from first entering an In Progress state to entering a Completed state. 
 
 #### Illustration of lead time versus cycle time 
-<img src="_img/cycle-lead-time-concept-intro.png" alt="Conceptual image of how cycle time and lead time are measured" style="border: 1px solid #CCCCCC;" />
+<img src="_img/cycle-lead-time-concept-intro.png" alt="Conceptual image of how cycle time and lead time are measured" style="border: 2px solid #C3C3C3;" />
 
 If a work item enters a Completed state and then is reactivated and moved out of that state, then any additional time it spends in a Proposed/In Progress state will contribute to its lead/cycle time when it enters a Completed state for the second time.
 
@@ -238,7 +223,7 @@ In the following chart, the average cycle time is 8 days. The standard deviation
 
 #### Example Cycle Time widget
 
-<img src="_img/cycle-time-planning.png" alt="Cycle Time widget" style="border: 1px solid #CCCCCC;" />
+<img src="_img/cycle-time-planning.png" alt="Cycle Time widget" style="border: 2px solid #C3C3C3;" />
 
 
 ## Identify process issues 
@@ -247,7 +232,7 @@ Review your team’s control chart for outliers. Outliers often represent an und
 As you can see in the following chart, which shows several outliers, several bugs took significantly longer to complete than the team's average. Investigating why these bugs took longer may help uncover process issues. Addressing the process issues can help reduce your team's standard deviation and improve your team's predictability. 
 
 #### Example Cycle Time widget showing several outliers 
-<img src="_img/cycle-time-outliers.png" alt="Cycle Time widget showing several outliners" style="border: 1px solid #CCCCCC;" />
+<img src="_img/cycle-time-outliers.png" alt="Cycle Time widget showing several outliners" style="border: 2px solid #C3C3C3;" />
 
 You can also see how process changes affect your lead and cycle time. For example, on May 15th the team made a concerted effort to limit the work in progress and address stale bugs. You can see that the standard deviation narrows after that date, showing improved predictability. 
 

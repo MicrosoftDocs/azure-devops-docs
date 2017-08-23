@@ -12,7 +12,7 @@ ms.date: 08/22/2017
 
 # Add widgets to a dashboard
 
-<b>VSTS | TFS 2017 | TFS 2015.1-2015.3</b>  
+<b>VSTS | TFS 2017</b>  
 
 
 Widgets smartly format data to provide access to easily consumable data. You add widgets to your team dashboards to gain visibility into the status and trends occurring as you develop your software project. 
@@ -28,7 +28,7 @@ You can add one or more charts or widgets to your dashboard. You add several wid
 
 
 
-## Connect to your team project web portal 
+## Connect to the web portal for your team project 
 
 To add a widget to a dashboard, you connect to your team project using a [supported web browser](../accounts/requirements.md#supported-browsers).  If you don't have a team project yet, create one in [Visual Studio Team Services](../accounts/create-account-with-personal-msa.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).
 
@@ -63,7 +63,30 @@ Click the delete icon to remove the tile from the dashboard.
  
 Once you've configured the widget, you can edit it by opening the actions menu. 
 
-<img src="_img/add-widget-configure.png" alt="Edit configured widget " style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/add-widget-configure.png" alt="Edit configured widget " style="border: 2px solid #C3C3C3;" /> 
+
+
+## Move or delete a widget from a dashboard  
+
+>[!NOTE]  
+>Just as you have to be a team or project admin to add items to a dashboard, you must have admin permissions to remove items.  
+
+Click ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify your dashboard. You can then drag tiles to reorder their sequence on the dashboard. 
+
+To remove a widget, click the widget's ![Trash icon](_img/dashboard-trash-icon.png) or ![Delete icon](_img/dashboard-delete-icon.png) delete icons. 
+
+When you're finished with your changes, click ![Exit edit-dashboard-mode icon](_img/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
+
+
+## Copy a widget 
+
+>[!NOTE]  
+>**Feature availability:**  This feature is only available from VSTS.    
+
+To copy a configured widget to another team dashboard, click the ![Actions icon](../work/_img/icons/actions-icon.png) actions icon and select **Add to dashboard**. 
+
+<img src="_img/dashboards-copy-widget.png" alt="Copy a widget to another team dashboard" style="border: 2px solid #C3C3C3;" />  
+
 
 
 ## Try this next 
@@ -74,3 +97,23 @@ Once you've configured the widget, you can edit it by opening the actions menu.
 > [Review Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
 
 
+### Extensibility  
+In addition to the widgets described in the Widget catalog, you can create your own widgets using the [Widget REST APIs](https://www.visualstudio.com/extend/develop/add-dashboard-widget). 
+
+### Widget size
+
+Some widgets are pre-sized and can't be changed. Others are configurable through their configuration dialog. 
+
+For example, the Chart for work items widget allows you to select an area size ranging from 2 x 2  to 4 x 4 (tiles).  
+
+
+<img src="_img/add-widget-size.png" alt="Change widget size" style="border: 2px solid #C3C3C3;" />  
+
+
+### Disabled Marketplace widget 
+
+If your account or project collection administrator disables a marketplace widget, you'll see the following image: 
+
+<img src="_img/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" style="border: 2px solid #C3C3C3;" />   
+
+To regain access to it, request your admin to reinstate or reinstall the widget.  

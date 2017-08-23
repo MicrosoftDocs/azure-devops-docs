@@ -195,7 +195,7 @@ Open the Markdown file defined in your repository and make sure you are in your 
 
 Click **Add to dashboard**, and then choose the team dashboard to add the markdown file to. As you update the Markdown file, changes will automatically appear on the dashboard upon refresh. See [Dashboards](../Report/dashboards.md) for more info.  
 
-<img src="../reference/_img/markdown-add-file-to-dashboard.png" alt="Web portal, Code hub, README file, Add Markdown page to a dashboard" style="border: 1px solid #CCCCCC;" />
+<img src="../reference/_img/markdown-add-file-to-dashboard.png" alt="Web portal, Code hub, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
 
 <a id="markdown-widget">  </a>
 ## Markdown widgets   
@@ -207,7 +207,7 @@ Use these widgets to support your team and stakeholders by adding information su
 
 Here's an example:  
 
-<img src="../reference/_img/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 1px solid #CCCCCC;" /> 
+<img src="../reference/_img/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
 
 >[!NOTE]  

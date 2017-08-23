@@ -27,29 +27,35 @@ Start gaining visibility into how your team is progressing by adding one or more
 
 ## Step-by-Step Tutorials
 
-- [Work with cumulative flow](guidance/cumulative-flow.md)
-- [Work with lead/cycle time](guidance/cycle-time-and-lead-time.md)
-- [Work with sprint burndown](../work/scrum/sprint-burndown.md)
-- [Work with Velocity](guidance/team-velocity.md)
+- [Configure a cumulative flow chart](guidance/cumulative-flow.md)
+- [Configure a lead/cycle time widget](guidance/cycle-time-and-lead-time.md)
+- [Configure or view Velocity chart](/vsts/work/scrum/sprint-burndown?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json)
+- [View sprint burndown charts](guidance/team-velocity.md)
 
 ## Concepts
 - [Cumulative flow, lead time, and cycle time guidance](guidance/cumulative-flow-cycle-lead-time-guidance.md)
-- [Velocity guidance](guidance/cumulative-flow-cycle-lead-time-guidance.md)
+- [Velocity metrics and usage guidance](guidance/cumulative-flow-cycle-lead-time-guidance.md)
+- [Burndown guidance](guidance/cumulative-flow-cycle-lead-time-guidance.md)
+
 
 ## How-to Guides
 
 - [Set dashboard permissions](dashboard-permissions.md)  
 - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)   
 - [Configure work item query-based charts](charts.md)
+- [Configure test status, progress, and result charts](/vsts/manual-test/getting-started/track-test-status?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json)  
 - [Add charts to a dashboard](add-charts-to-dashboard.md)  
-- [Configure test status, progress, and result charts](../manual-test/getting-started/track-test-status.md)  
-
 
 ## Reference 
 - [Widget catalog](widget-catalog.md)  
  
 ## Resources 
 
+- [Agile](/vsts/#pivot=services&panel=agile)
+- [Continuous Integration & Delivery](/vsts/#pivot=services&panel=delivery)
+- [Testing](/vsts/#pivot=services&panel=testing)
+- [Admin](/vsts/#pivot=services&panel=admin)
+- [Scale & Configure Teams](/vsts/work/scale/index)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)  
  
    

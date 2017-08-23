@@ -13,7 +13,7 @@ ms.date: 07/13/2017
 
 # Set dashboard permissions    
 
-**VSTS | TFS 2017**
+**VSTS | TFS 2017.1**
 
 <a id="set-permissions">  </a>
 
@@ -21,10 +21,14 @@ ms.date: 07/13/2017
 >[!NOTE]  
 >**Feature availability:**  For VSTS and TFS 2017.1 and later versions, you can set dashboard permissions. 
 
-From the **Permissions** tab you can grant or restrict permissions to your team members to edit and manage your team dashboards.  The default setting provides all team members permissions to edit and manage dashboards.  
- 
-<img src="_img/dashboards-permissions.png" alt="Manage dashboards - permissions" style="border: 1px solid #CCCCCC;" /> 
+As a team admin you can set dashboard permissions for your team. As a member of the Project Administrators group, you can set dashboard permissions for all teams.  
 
+From the **Permissions** tab you can grant or restrict permissions to your team members to edit and manage your team dashboards. The default setting provides all team members permissions to edit and manage dashboards.  
  
+<img src="_img/dashboards-permissions.png" alt="Manage dashboards - permissions" style="border: 2px solid #C3C3C3;" /> 
 
+
+## Related notes
+
+- [Add a team administrator](../work/scale/add-team-administrator.md)
  

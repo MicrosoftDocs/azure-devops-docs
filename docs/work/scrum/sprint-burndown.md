@@ -15,12 +15,16 @@ ms.date: 08/02/2017
  
 [!INCLUDE [temp](../_shared/dev15-version-header.md)]
 
-Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](sprint-planning.md). Review your sprint burndown chart throughout your sprint cycle to check for these indicators:  
+Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](sprint-planning.md). 
+
+Use this topic to learn
 
 > [!div class="checklist"]   
-> * Is remaining work getting updated regularly? Flat spaces within the blue area indicate a lack of updates.  
-> * Is remaining work increasing instead of decreasing? Increases can indicate unestimated or unplanned work.  Both signal a need for the team to discuss how they'll complete the sprint tasks on time.   
-> * Based on the actual burn rate, does the team feel confident that they'll complete the work by the end of the sprint?    
+> * How to view current and past sprint burndowns 
+> * Required and recommended activities to support sprint burndown    
+
+For usage guidance, see [Burndown guidance](../../report/guidance/burndown-guidance.md).
+
 
 >[!NOTE]  
 >The system automatically builds a sprint burndown chart based on the tasks and Remaining Work estimates you define and update throughout the sprint cycle. For details, see [Sprint planning](sprint-planning.md) and [Task board](task-board.md).  To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
@@ -42,69 +46,8 @@ Throughout your sprint, you can monitor the sprint burndown chart to determine i
 </td>
 </tr>
 </table>
-
-<a id="scope-management">  </a>
-##Scope management  
-By estimating remaining work of tasks for each product backlog item, teams have a good understanding of what they can accomplish within a sprint. Because the sprint tasks represent the overall sprint scope, the sprint scope is well defined. Anything that is not represented by a task in the sprint should be considered out of scope for the sprint.
-
-As the team makes progress, divergences from the ideal trend line help the team monitor divergences from scope. 
-<table>
-<tr valign="top">
-<td width="35%">
-<p>Increases instead of decreases within the blue graph may indicate:</p> 
-<ul>
-<li>Poor estimates made to tasks</li>
-<li>Discovery of new work not accounted for in sprint planning</li>
-<li>Scope creep, additional work not agreed to by the team.</li>
-</ul>
-<p>Whatever the cause, teams should come together quickly to determine how to remedy the increased workload.</p>
-
-<p>Solutions may include reassigning tasks or recruiting additional resources. The team should move all non-essential sprint work to the backlog and consider it during the next sprint planning meeting.</p>
-</td>
-<td>
-![Sprint burndown chart: Increasing remaining work can indicate scope creep](_img/ALM_SB_ScopeCreep_75.png)
-
-</td>
-</tr>
-</table>
-
-
-<a id="mitigate-risk">  </a>
-##Mitigate risk through daily inspection
-Your burn-down chart shows you if your project is on schedule. A daily check can mitigate risks and provide early warning of potential schedule or cost overruns, two metrics associated with traditional project management. 
-
-<table>
-<tr valign="top">
-<td width="35%">
-<p>For example, when the actual remaining work (blue area) goes flat for a period of time, or remains high above the ideal trend line, the team is at risk of not meeting their sprint commitments.</p>
-<p>Teams should meet immediately to course correct and either reassign work, recruit more resources, or reset expectations.</p>
-</td>
-<td>
-![Sprint burndown chart: Actual remaining work high above ideal trend line](_img/ALM_SB_RiskMitigation.png)
-</td>
-</tr>
-</table>
  
-##Required and recommended activities   
-
-In order to access the sprint burndown chart and use it to monitor your sprint progress, your team must perform the following actions.  
-
-**Required:** 
-*	[Schedule sprints for your team](define-sprints.md).  
-*	[Define and estimate tasks](sprint-planning.md#define-tasks) for each product backlog item you're working on in the sprint. If you work from your team's backlog and task board, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
-*	[Update Remaining Work for each sprint task](task-board.md#update-tasks) as work progresses.  
-
-**Recommended:**  
-*	Define tasks that take a day or less to complete to lessen the impact of poor estimates.  
-*	Don't divide tasks into subtasks. If you divide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task.   
-*	Update Remaining Work daily or several times within a week to support monitoring and achieve a smoother burndown chart.  
-*	At the end of the sprint, update the task status of completed tasks and determine how to handle incomplete tasks.  
-
-<a id="past-sprints">  </a>
-##Current and past sprint burndown charts
-As you complete each sprint, the system maintains a history of your activity. You can always review past sprints and sprint burndown charts by choosing the sprint listed under the Past section.  
-
-![Past sprints provide historical record](_img/ALM_DS_PastSprints.png)
+ 
 
 <a id="open-chart">  </a>
 ###Open sprint burndown chart 
@@ -126,6 +69,28 @@ Teams may find it useful to review this record periodically during their sprint 
 *	How does our projected velocity match up to our actual velocity? 
 *	How can we more accurately determine how much we will be able to accomplish in a sprint? 
 *	How can we complete work at a more regular pace throughout the sprint?
+
+
+## Required and recommended activities   
+
+In order to access the sprint burndown chart and use it to monitor your sprint progress, your team must perform the following actions.  
+
+**Required:** 
+*	[Schedule sprints for your team](define-sprints.md).  
+*	[Define and estimate tasks](sprint-planning.md#define-tasks) for each product backlog item you're working on in the sprint. If you work from your team's backlog and task board, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
+*	[Update Remaining Work for each sprint task](task-board.md#update-tasks) as work progresses.  
+
+**Recommended:**  
+*	Define tasks that take a day or less to complete to lessen the impact of poor estimates.  
+*	Don't divide tasks into subtasks. If you divide a task into subtasks, specify hours only for the subtasks. These hours are rolled up as summary values for the parent task.   
+*	Update Remaining Work daily or several times within a week to support monitoring and achieve a smoother burndown chart.  
+*	At the end of the sprint, update the task status of completed tasks and determine how to handle incomplete tasks.  
+
+<a id="past-sprints">  </a>
+##Current and past sprint burndown charts
+As you complete each sprint, the system maintains a history of your activity. You can always review past sprints and sprint burndown charts by choosing the sprint listed under the Past section.  
+
+<img src="_img/ALM_DS_PastSprints.png" alt="Past sprints provide historical record" style="border: 2px solid #C3C3C3;" /> 
 
 ##Try this next
 In addition to the sprint burndown chart, teams can review the velocity at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint.  

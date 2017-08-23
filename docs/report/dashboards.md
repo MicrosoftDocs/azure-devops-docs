@@ -23,13 +23,13 @@ Share progress and status with your team using configurable team dashboards. Das
 
 The Overview page provides access to a default team dashboard which you can customize by adding, removing, or rearranging the tiles. Each tile corresponds to a widget that provides access to one or more features or functions.  
 
-<img src="_img/dashboard-view-with-widgets.png" alt="Example dashboard" style="border: 1px solid #CCCCCC;" />   
+<img src="_img/dashboard-view-with-widgets.png" alt="Example dashboard" style="border: 2px solid #C3C3C3;" />   
 
 Anyone with access to the team project, including [stakeholders](../quickstart/get-started-stakeholder.md), can view dashboards. However, only team admins can add or modify dashboards. 
 
 If you need to add a team first, see [Multiple agile teams](../work/scale/multiple-teams.md). 
 
-## Connect to your team project web portal 
+## Connect to the web portal for your team project 
 
 To add and manage dashboards, you connect to your team project using a [supported web browser](../accounts/requirements.md#supported-browsers).  If you don't have a team project yet, create one in [Visual Studio Team Services](../accounts/create-account-with-personal-msa.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).
 
@@ -52,28 +52,6 @@ If you don't see the ![plus icon](../work/_img/icons/green_plus_icon.png), then 
 With the dashboard selected, you can add [widgets and charts to the dashboard](add-widget-to-dashboard.md). Or, you can [add charts to a team dashboard from the Work, Build, or Test hubs](add-charts-to-dashboard.md).
 
 
-## Move or delete a widget from a dashboard  
-
->[!NOTE]  
->Just as you have to be a team or project admin to add items to a dashboard, you must have admin permissions to remove items.  
-
-Click ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify your dashboard. You can then drag tiles to reorder their sequence on the dashboard. 
-
-To remove a widget, click the widget's ![Trash icon](_img/dashboard-trash-icon.png) or ![Delete icon](_img/dashboard-delete-icon.png) delete icons. 
-
-When you're finished with your changes, click ![Exit edit-dashboard-mode icon](_img/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
-
-
-## Copy a widget 
-
->[!NOTE]  
->**Feature availability:**  This feature is only available from VSTS.    
-
-To copy a configured widget to another team dashboard, click the ![Actions icon](../work/_img/icons/actions-icon.png) actions icon and select **Add to dashboard**. 
-
-<img src="_img/dashboards-copy-widget.png" alt="Copy a widget to another team dashboard" style="border: 1px solid #CCCCCC;" />  
-
-
 
 <a id="manage">  </a> 
 ## Manage dashboards
@@ -90,18 +68,25 @@ From VSTS and TFS 2017, you can also [manage dashboard permissions](dashboard-pe
 -->
 To manage dashboards, click the ![configure icon](_img/icons/configure-icon.png) wrench icon.
 
-<img src="_img/dashboards-configure-ts.png" alt="Open manage dashboards dialog" style="border: 1px solid #CCCCCC;" />   
+<img src="_img/dashboards-configure-ts.png" alt="Open manage dashboards dialog" style="border: 2px solid #C3C3C3;" />   
 
 
 ### Reorder and auto-refresh 
 
 1. Drag and drop the dashboards into the sequence you want them to appear.  
 
-	<img src="_img/manage-dashboards-ts.png" alt="Manage dashboards - VSTS" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/manage-dashboards-ts.png" alt="Manage dashboards - VSTS" style="border: 2px solid #C3C3C3;" />  
 
 2. Click ![delete icon](_img/icons/delete_icon.png) to delete a dashboard and then click Save.  
 
-3. Select the Auto-refresh checkbox when you want the dashboard to refresh every five minutes.  
+3. Select the Auto-refresh checkbox when you want the dashboard to refresh every five minutes. 
+4.  
+<a id="permissions">  </a>
+### Required permissions
+ 
+If you don't see the ![plus icon](../work/_img/icons/green_plus_icon.png), then you don't have permission to edit your team dashboards. In general, you need to be a team admin for the currently selected team to edit dashboards. Request your current team or project admin to add you as a [team admin](../work/scale/add-team-administrator.md). 
+
+If you work in VSTS, you can ask your team admin to change dashboard permissions to allow you and other team members to edit dashboards as described in [Set permissions](dashboard-permissions.md#set-permissions). 
 
 ## Move or delete a widget from a dashboard  
 
@@ -119,7 +104,7 @@ When you're finished with your changes, click ![Exit edit-dashboard-mode icon](_
 
 1. Click the ![gear icon](../work/_img/icons/team-settings-gear-icon.png) gear icon to open manage dashboards.</p>  
 
-	<img src="_img/dashboards-open-manage-dashboards-tfs.png" alt="Open manage dashboards dialog - TFS web portal" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/dashboards-open-manage-dashboards-tfs.png" alt="Open manage dashboards dialog - TFS web portal" style="border: 2px solid #C3C3C3;" />  
 
 2.  Drag and drop the dashboards into the sequence you want them to appear.  
 
@@ -136,28 +121,23 @@ When you're finished with your changes, click ![Exit edit-dashboard-mode icon](_
 
 ## Try this next 
 
+As you can see, you can use team dashboards to provide guidance and keep your team in sync, providing visibility across the org as to status, trends, and progress. 
+
 > [!div class="nextstepaction"]
+> [Add a widget to a dashboard](widget-catalog.md)
+> or
 > [Review the widget catalog](widget-catalog.md)
 > or
 > [Review Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
 
-## Related notes
-
-As you can see, you can use team dashboards to provide guidance and keep your team in sync, providing visibility across the org as to status, trends, and progress. 
 
 See these additional resources to help you support your team:  
 - [Manage team assets](../work/scale/manage-team-assets.md)  
 - [Share queries with your team](../work/track/using-queries.md) 
 
-Also, you can  using the REST API service. 
 
-<a id="permissions">  </a>
 
-### Required permissions
- 
-If you don't see the ![plus icon](../work/_img/icons/green_plus_icon.png), then you don't have permission to edit your team dashboards. In general, you need to be a team admin for the currently selected team to edit dashboards. Request your current team or project admin to add you as a [team admin](../work/scale/add-team-administrator.md). 
 
-If you work in VSTS, you can ask your team admin to change dashboard permissions to allow you and other team members to edit dashboards as described in [Set permissions](dashboard-permissions.md#set-permissions). 
 
 
 ### Extensibility 
@@ -216,7 +196,7 @@ For example, select the context menu of a query that you want to add to the dash
 
 And, you can add a chart to a team dashboard in a similar way.  
 
-<img src="_img/add-to-dashboard-shared-query-chart.png" alt="Add a chart to a team dashboard" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/add-to-dashboard-shared-query-chart.png" alt="Add a chart to a team dashboard" style="border: 2px solid #C3C3C3;" />  
 
 
 <a id="edit-dashboard"></a>
@@ -248,7 +228,7 @@ And then select the query and specify any rules you want. (For TFS 2015.1 and la
 
 #### Configuration dialog for query tile  
 
-<img src="_img/dashboards-query-tile-config-ts.png" alt="Query tile configuration dialog" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/dashboards-query-tile-config-ts.png" alt="Query tile configuration dialog" style="border: 2px solid #C3C3C3;" />  
 
 --> 
 

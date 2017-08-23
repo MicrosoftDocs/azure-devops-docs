@@ -12,8 +12,13 @@ ms.date: 08/03/2017
 
 # VSTS & PowerBI 
 
+
+<b>VSTS</b> 
+
 >[!NOTE]  
-> **Feature availability:**  VSTS PowerBI requires access to the Analytics Service. The Analytics Service is in preview and only available to select customers of VSTS at this time. If you're a VSTS customer and are interested in working with the preview version of the Analytics service, contact the [Analytics service team](mailto:vsts-analytics-supp@microsoft.com).  
+> **Feature availability:**  Using the Power BI Content Pack, you can generate PowerBI dashboards and reports. The Power BI Data Connector, however, requires access to the Analytics Service. The Analytics Service is in a closed preview at this time.  
+>  
+> Both the Power BI Content Pack and Power BI Data Connector are only available for VSTS.  
 
 <!---
 
@@ -25,20 +30,34 @@ ms.date: 08/03/2017
 ## How-to Guides
 
 - [Assign permissions (Security)](/vsts/report/analytics/analytics-security?toc=/vsts/report/powerbi/toc.json)  
-- [Power BI integration overview](overview.md)  
-- [Connect to Power BI, Content Pack](connect-vso-pbi-vs.md)  
-- [Connect to Power BI, Data Connector](connect-vso-pbi-vs.md)  
+
+### Power BI Content Pack 
+
+- [Connect to VSTS with Power BI Content Pack](connect-vso-pbi-vs.md)  
 - [Create dashboards and reports](report-on-vso-with-power-bi-vs.md) 
-- [Data available](vso-pbi-whats-available-vs.md)  
 - [Create trend charts](create-trend-charts.md)  
-- [Create rollup charts](create-rollup-charts.md)    
+- [Create rollup charts](create-rollup-charts.md) 
+
+### Power BI Data Connector
  
+- [Connect to Power BI via the Data Connector](data-connector-connect.md)  
+- [Access data through the Power BI desktop](/vsts/report/analytics/access-analytics-power-bi?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
+- [Power BI desktop and OData aggregations](/vsts/report/analytics/using-odata-aggregations-with-power-bi-desktop?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
+- [Share reports, publish to PowerBI.com](/vsts/report/analytics/publishing-power-bi-desktop-to-power-bi?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
+
   
+## Reference
+- [Power BI available data](vso-pbi-whats-available-vs.md)    
+- [Data Connector available functions](data-connector-functions.md)    
+- [Analytics Service overview](/vsts/report/analytics/overview-analytics-service?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
+
+
 ## Resources 
   
-- [Retrieve data through OData](../analytics/overview-analytics-service.md)   
-
-
+- [Dashboards, charts, & widgets](/vsts/report/index)  
+- [PowerBI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-get-the-desktop/)  
+- [PowerBI Documentation](https://powerbi.microsoft.com/documentation/powerbi-landing-page/)  
+- [Insights Lab Power BI Widget](https://marketplace.visualstudio.com/items?itemName=InsightsLab.powerbiWidget) 
  
 
  

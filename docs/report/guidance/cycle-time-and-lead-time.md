@@ -20,12 +20,12 @@ Both lead time and cycle time measures are extremely useful to teams as they ind
 
 These measures help teams plan, spot variations in efficiency, and identify potential process issues. The lower the lead and cycle times, the faster the throughput your team has.
  
-Use this topic to learn: 
+In this topic you'll learn:
 
 > [!div class="checklist"] 
-> * Install and configure the Lead Time and Cycle Time widgets (Analytics service)  
-> * Interpret the scatter-plot control charts  
-
+> * How to install and configure the Lead Time and Cycle Time widgets (Analytics service)  
+> * How to interpret the scatter-plot control charts  
+> * How moving average and standard deviation are calculated in the charts
 
 
 <a id="configure-widget"></a>
@@ -50,7 +50,7 @@ In order to configure the Cycle Time and Lead Time widgets, you must have the fo
 
 4. Click the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
 
-	<img src="_img/cycle-lead-time-configure-dialog.png" alt="Configure dialog, Lead Time widget" style="border: 1px solid #CCCCCC;" />    
+	<img src="_img/cycle-lead-time-configure-dialog.png" alt="Configure dialog, Lead Time widget" style="border: 2px solid #C3C3C3;" />    
 
 5. For a continuous flow, choose Rolling period and specify the number of days you want to view on the chart.  
 
@@ -60,17 +60,17 @@ In order to configure the Cycle Time and Lead Time widgets, you must have the fo
 
 7. Click Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
-	<img src="_img/cycle-lead-time-lt-sample-chart.png" alt="Example CFD chart, rolling 30 days" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/cycle-lead-time-lt-sample-chart.png" alt="Example CFD chart, rolling 30 days" style="border: 2px solid #C3C3C3;" /> 
 
 	For your lead/cycle time charts to provide useful data, your team must [Update the status](../../work/kanban/kanban-basics.md#track-work) in a timely manner those work items that the widgets track.  
 
 
-## How to interpret the scatter-plot control charts 
+## Interpret the scatter-plot control charts 
 
 Both Lead Time and Cycle Time widgets display as scatter-plot control charts. They display summary information as well as provide several interactive elements. 
 
 **Example Lead Time widget**  
-<img src="_img/lead-time-control-chart.png" alt="Cycle Time widget" style="border: 1px solid #CCCCCC;" />
+<img src="_img/lead-time-control-chart.png" alt="Cycle Time widget" style="border: 2px solid #C3C3C3;" />
 
 The chart dots represent completed work items where their position on the horizontal axis represents the date they were completed. Their position on the vertical axis represents the calculated lead time or cycle time. 
 - Larger dots represent multiple work items with the same lead/cycle time 
@@ -78,16 +78,28 @@ The chart dots represent completed work items where their position on the horizo
 - Dark gray dots correspond to a mix of work item types.
   
 
-#### *Summary elements include:* 
+#### Summary elements include: 
 - Days on average (average lead time or cycle time) for the main work item types configured for the chart 
 - The number of backlog work items used in the chart calculations; if there are more than three types of work items, you'll see a summary for Other  
 - The black trend line indicates the moving average 
 - The band around the trend line shows the standard deviation.
 
-#### *Interactive elements include:*  
+#### Interactive elements include:  
 - Hover over any dot to see which work items contributed to the data point and the lead/cycle time for those items  
 - Click a dot to open the work item or query that lists the work items   
 - To filter the chart, click a work item type in the legend (![backlog item icon](../../_img/icons/user-story-icon.png),![bug item icon](../../_img/icons/bug-icon.png), or other icon)  to filter on that type; to return to the original chart, refresh the dashboard.  
+
+
+## Moving average and standard deviation calculations 
+
+The daily moving average value corresponds to the average of data points that fall within the moving average window. 
+The time-based moving average window is calculated based on the current day and previous *N* days, where *N* corresponds to 20% of the number of days the chart displays, rounded down to the nearest odd number. 
+
+For example, if the chart displays the last 30 days, then *N*=5 days (20% of 30 days=6 days, rounded down to 5). The moving average window for April 10th corresponds to the previous 5 days. Therefore, the April 10th moving average is the average of all data points that fall on April 5th through April 10th.  
+
+If there are no data points that fall within the moving average window, the chart doesn't show a moving average line. This can happen if you are starting out and there aren't enough days to calculate a moving average. 
+
+The standard deviation appears as a band that encompasses the moving average. Standard deviation is calculated based on all data points falling within the same moving average window. Like moving average, if no data points fall within the moving average window, the chart doesn't plot standard deviation.  
 
 
 ## Related notes

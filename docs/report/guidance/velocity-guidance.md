@@ -25,6 +25,8 @@ And, with the velocity widget, you can quickly determine the following:
 - Work completed later than planned
 - Amount of work not completed   
 
+To configure or view Velocity charts, see [Configure and view Velocity charts](team-velocity.md).
+
 The velocity chart requires that teams estimate their backlog items with a number using the [Effort, Story Points, or Size fields](../../work/track/query-numeric.md).   
 
 The velocity widget allows teams to track velocity based on the count of backlog items or with  estimates for the the Effort, Story Points, or Size fields.
@@ -66,9 +68,3 @@ For example, you can create a chart of the number of Product backlog items and b
 
 ### Add other teams
 If you work with several teams, and each team wants to work with their own backlog view, velocity chart, and forecast tool, you can [add teams](../../work/scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those whose assigned area paths and iteration paths meet those [set for the team](../../work/scale/set-team-defaults.md). 
-
-
-<!---
- 
-
--->

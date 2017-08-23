@@ -12,7 +12,7 @@ ms.date: 07/12/2017
 
 <!--- provides support for FWLINK https://go.microsoft.com/fwlink/?linkid=841878; Update when topic goes live --> 
 
-# Velocity 
+# Configure and view Velocity charts 
 
 <b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
@@ -26,6 +26,8 @@ Use this topic to learn:
 > * Install and configure the Velocity widget (Analytics service)  
 > * How to work with the Velocity chart (work tracking datastore)     
 > * Required and recommended team activities to support velocity tracking      
+
+For usage guidance, see [Velocity metrics and usage guidance ](velocity-guidance.md).
 
 There are two velocity charts, the one viewed from the backlog of a team and the one you access by adding the Velocity widget to a dashboard. The Velocity widget enables you to view more sprints and additional information than that provided by the velocity chart.   
 
@@ -67,7 +69,7 @@ In order to add a Velocity widget to a dashboard, you must have the following in
 	
 	Modify the title, select the team, and then choose either the backlog level or work item type to track. Select whether you want to track a count of work items or a sum of a numeric field. The most common summed field is that of Effort, Story Points, or Size.     
 
-	<img src="_img/team-velocity-config-dialog.png" alt="Configure dialog, Velocity widget" style="border: 1px solid #CCCCCC;" />    
+	<img src="_img/team-velocity-config-dialog.png" alt="Configure dialog, Velocity widget" style="border: 2px solid #C3C3C3;" />    
 
 4. Specify the number of sprints you want to view. The default is 6 and the maximum is 15.    
 
@@ -90,7 +92,7 @@ In order to add a Velocity widget to a dashboard, you must have the following in
 
 6. Click Save when done. The following image shows Velocity based on Story Points and 8 sprints of data. 
    
-	<img src="_img/commerce-team-velocity-eight-iterations.png" alt="Example Velocity widget, 8 iterations" style="border: 1px solid #CCCCCC;" />  
+	<img src="_img/commerce-team-velocity-eight-iterations.png" alt="Example Velocity widget, 8 iterations" style="border: 2px solid #C3C3C3;" />  
 
 
 
@@ -115,7 +117,7 @@ Velocity will vary depending on team capacity, sprint over sprint. However, over
 
 	As this chart shows, velocity will fluctuate from sprint-to-sprint for a variety of reasons. However, you can quickly determine the average velocity by averaging the values shown in green for each sprint. You can then plug the average into the Forecast tool.
 
-	<img src="_img/team-velocity-chart-web-7-iterations.png" alt="Web portal, Velocity chart showing seven sprints of in progress and completed work" style="border: 1px solid #CCCCCC;" />
+	<img src="_img/team-velocity-chart-web-7-iterations.png" alt="Web portal, Velocity chart showing seven sprints of in progress and completed work" style="border: 2px solid #C3C3C3;" />
 
 	>[!NOTE]  
 	>Work items based on the [Scrum process](../../work/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../work/guidance/agile-process.md) and [CMMI](../../work/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/concepts/workflow-and-state-categories.md).
