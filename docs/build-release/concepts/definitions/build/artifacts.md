@@ -143,7 +143,7 @@ For the full example, see [Build your C++ app for Windows](../../../apps/windows
 
 * The directory referenced by `Build.ArtifactStagingDirectory` is cleaned up after each build.
 
-* You can [get build artifacts from the REST API](https://www.visualstudio.com/en-us/docs/integrate/api/build-release/builds#get-build-artifacts).
+* You can [get build artifacts from the REST API](../../../../integrate/index.md).
 
 <h2 id="unc-file-share">Publish from TFS to UNC file share</h2>
 

@@ -1,6 +1,6 @@
 **Checkout submodules:**  Select if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
-**Checkout files from LFS:** Select if you want to download files from [large file storage (LFS)](https://www.visualstudio.com/en-us/docs/git/manage-large-files#use-git-large-file-storage-lfs).
+**Checkout files from LFS:** Select if you want to download files from [large file storage (LFS)](../../../git/manage-large-files.md#use-git-large-file-storage-lfs).
 
 * **VSTS:** Select the check box to enable this option.
 

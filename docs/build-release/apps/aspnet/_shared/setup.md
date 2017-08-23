@@ -2,7 +2,7 @@
 
 ### VSTS account
 
-You'll need an account on Visual Studio Team Services. To create one, visit [Sign up for VSTS](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services).
+You'll need an account on Visual Studio Team Services. To create one, visit [Sign up for VSTS](https://www.visualstudio.com/vsts/).
 
 You can also use Team Foundation Server (TFS) if your organization requires the use of on-premises servers instead of VSTS, and we'll show some of those details. Also see [Get Started with TFS](../../../../tfs-server/install/get-started.md) for general information.
 

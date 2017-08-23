@@ -128,7 +128,7 @@ update it automatically.
    a session report to share findings.
  
 >If you have problems connecting to VSTS or TFS, you may find
-the topic [TF31002: Unable to connect](https://www.visualstudio.com/en-us/docs/work/reference/error/tf31002-unable-connect-tfs) useful.
+the topic [TF31002: Unable to connect](../../work/reference/error/tf31002-unable-connect-tfs.md) useful.
 
 ## See also
 

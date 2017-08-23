@@ -141,7 +141,7 @@ service principal that is assigned the **Contributor** role and so has
 access to all resources within the subscription.
 You can edit this service principal in the Azure portal,
 **Subscriptions | Users | Roles** section. For more details, see
-[VSTS: Access with Azure Active Directory (Azure AD)](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/manage-organization-access-for-your-account-vs).
+[Azure Active Directory for developers](https://docs.microsoft.com/en-gb/azure/active-directory/develop/active-directory-developers-guide).
 
 If you want to use an existing service principal instead of creating
 a new one:
