@@ -6,8 +6,8 @@
     href: overview.md
 - name: How-to Guides
   items:
-  - name: Assign permissions (Security)
-    href: /vsts/report/analytics/analytics-security?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+  - name: Client authentication 
+    href: /vsts/report/analytics/client-authentication-options?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
   - name: Power BI Content Pack
     items:
     - name: Connect to VSTS with Power BI Content Pack
@@ -20,10 +20,12 @@
       href: create-rollup-charts.md
   - name: Power BI Data Connector
     items:
-    - name: Access data through the Power BI desktop
-      href: /vsts/report/analytics/access-analytics-power-bi?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+    - name: Assign permissions (Security)
+      href: /vsts/report/analytics/analytics-security?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
     - name: Connect to VSTS 
       href: data-connector-connect.md
+    - name: Access data through Power BI desktop
+      href: /vsts/report/analytics/access-analytics-power-bi?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
     - name: Power BI desktop and OData aggregations
       href: /vsts/report/analytics/using-odata-aggregations-with-power-bi-desktop?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
     - name: "Share reports, publish to PowerBI.com"

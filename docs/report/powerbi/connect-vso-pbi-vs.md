@@ -14,8 +14,6 @@ ms.date: 08/04/2017
 
 **VSTS**
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 You can gain insight and analyze the progress and quality of your project by connecting Power BI to the data collected and stored for VSTS. 
 
 For a list of currently available data, see [What's available in the Power BI VSTS Connector](vso-pbi-whats-available-vs.md). 

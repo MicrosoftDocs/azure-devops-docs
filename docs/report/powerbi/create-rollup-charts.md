@@ -13,8 +13,6 @@ ms.date: 08/04/2017
 
 **VSTS**
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 Rollup provides summed values of select fields for all child work items of a parent. You can create rollups based on counts of work items or selected measures, such as Story Points, Effort, Size for backlog items and Original Estimate, Remaining Work, Completed Work for tasks. 
 
 Natively, VSTS provides rollup of Remaining Work for tasks on the Task board. 

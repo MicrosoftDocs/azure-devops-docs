@@ -15,7 +15,7 @@ ms.date: 04/06/2016
 
 Trend charts show progress or activity over time. Common types of trend charts include sprint burndowns or burnups, cumulative flow diagrams, and bug activity. 
 
-##Story points burnup trend chart 
+## Story points burnup trend chart 
 
 By following steps ![step 1](../_img/icons/step1.png) through ![step 4](../_img/icons/step4.png) of the [basic steps shown below](#basic-steps), you'll see the trend of story points as their added to the work item store. 
   

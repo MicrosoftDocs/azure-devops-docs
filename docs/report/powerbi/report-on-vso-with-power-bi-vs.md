@@ -14,11 +14,9 @@ ms.date: 08/04/2017
 # Create Power BI dashboards and reports 
 **VSTS**
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
-
 You can create dashboards, individual reports, or explore data collected for your VSTS account once you [connect to Power BI](connect-vso-pbi-vs.md). As the Power BI data model for VSTS grows to include more features you'll have access to more advanced reporting. As Power BI is upgraded, it will provide you with additional visualizations and capabilities over time without any upgrades.
 
-Prior to working with VSTS data, review [Power BI Preview - basic concepts](https://support.powerbi.com/knowledgebase/articles/487029-power-bi-preview-basic-concepts).
+Prior to working with VSTS data, review [Power BI - Guided Learning](https://powerbi.microsoft.com/en-us/guided-learning/).
 
 ## Get started
 After getting connected to VSTS you will see an initial dashboard. On the left side of the screen you will notice Dashboards, Reports and Datasets.
@@ -37,10 +35,10 @@ Currently, a report can be based on a single dataset. You can create as many rep
 
 
 ## Work with datasets
-Refer to [Get started with Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-get-started) for information on working with datasets. 
+Refer to [Get started with Power BI](https://powerbi.microsoft.com/documentation/powerbi-service-get-started) for information on working with datasets. 
 
 ##Work with reports
-Reports are at the heart of Power BI and provide the basis for dashboards. Dashboards are the shareable component of Power BI. See the Power BI documentation on [Reports](http://support.powerbi.com/knowledgebase/articles/425684-reports-in-power-bi) for more information.
+Reports are at the heart of Power BI and provide the basis for dashboards. Dashboards are the shareable component of Power BI. See the Power BI documentation on [Reports](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-reports/) for more information.
 
 ###Understand the default report
 The Visual Studio Team Services content pack generates a single report with several pages. 
@@ -87,7 +85,7 @@ The Visual Studio Team Services content pack generates a single report with seve
  &#42;  Delete any project status report pages that don't apply to your particular situation and update the dashboard as appropriate.
 
 ### Edit the default report
-For information on how to edit the default report, see the [Power BI documentation](https://powerbi.microsoft.com/documentation/powerbi-landing-page/).
+For information on how to edit the default report, see the [Power BI documentation](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-the-report-editor-take-a-tour/).
 
 ## Work with Dashboards
-For help in creating and managing Ddashboardss, see the Power BI [documentation](https://support.powerbi.com/knowledgebase/articles/424868-dashboards-in-power-bi-preview).
+For help in creating and managing Dashboards, see the [Dashboards in the Power BI service](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-dashboards/).

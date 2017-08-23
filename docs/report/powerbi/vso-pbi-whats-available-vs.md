@@ -39,42 +39,7 @@ Power BI Content Pack for Visual Studio Team Services gathers data from differen
         <td>Changesets, files, file changes and branches</td>
     </tr>
 </table>
-
-##Timeline for new data availability
-<table width="60%">
-    <tr>
-        <th width="50%">Data</th>
-        <th width="50%">Timeframe</th>
-    </tr>
-    <tr>
-        <td>Test Results</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td>Work Item - Kanban</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td>Work Item - trend data and rollup</td>
-        <td>September 2, 2015 </td>
-    </tr>
-    <tr>
-        <td>Work Item - Current State</td>
-        <td>July 22, 2015 </td>
-    </tr>
-    <tr>
-        <td>Builds - XAML</td>
-        <td>June 24, 2015 </td>
-    </tr>
-    <tr>
-        <td>Source Control - Git</td>
-        <td>May 27, 2015 </td>
-    </tr>
-    <tr>
-        <td>Source Control - TFVC</td>
-        <td>May 27, 2015 </td>
-    </tr>
-</table>
+ 
 
 ##Work with the data model
 The data model has several different sets of tables related to main feature areas.

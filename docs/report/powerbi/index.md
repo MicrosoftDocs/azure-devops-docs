@@ -40,8 +40,7 @@ ms.date: 08/03/2017
 
 ### Power BI Data Connector
  
-- [Connect to Power BI via the Data Connector](data-connector-connect.md)  
-- [Access data through the Power BI desktop](/vsts/report/analytics/access-analytics-power-bi?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
+- [Connect to Power BI via the Data Connector](data-connector-connect.md)     
 - [Power BI desktop and OData aggregations](/vsts/report/analytics/using-odata-aggregations-with-power-bi-desktop?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
 - [Share reports, publish to PowerBI.com](/vsts/report/analytics/publishing-power-bi-desktop-to-power-bi?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json)    
 
