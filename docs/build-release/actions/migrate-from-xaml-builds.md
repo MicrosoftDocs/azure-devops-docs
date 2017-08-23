@@ -182,7 +182,7 @@ On the **Build** tab (TFS 2017) or the **Tasks** tab (VSTS), after you select th
 | Advanced, MSBuild arguments | MSBuild Arguments | 
 | Advanced, MSBuild platform | Advanced, MSBuild Architecture |
 | Advanced, Perform code analysis | Use an MSBuild argument such as`/p:RunCodeAnalysis=true` |
-| Advanced, post- and pre-build scripts | You can run one or more scripts at any point in your build process by adding one or more instances of the PowerShell, Batch, and Command tasks. For example, see [Use a PowerShell script to customize your build process](../scripts/index.md). |
+| Advanced, post- and pre-build scripts | You can run one or more scripts at any point in your build process by adding one or more instances of the PowerShell, Batch, and Command tasks. For example, see [Use a PowerShell script to customize your build process](scripts/powershell.md). |
 
 > [!IMPORTANT] 
 > 

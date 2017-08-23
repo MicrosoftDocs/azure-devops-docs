@@ -32,7 +32,7 @@ Variables give you a convenient way to get key bits of data into various parts o
 | Apply a version control label during the build process | Yes | Yes | No | `$(Build.DefinitionName)` | [Repository tab](repository.md) (Git and Team Foundation version control **Label format**) |
 | Customize the build number | Yes | Yes | No  | `$(Build.DefinitionName)` | [Build number format options](options.md) |
 | Environment variable in Windows batch scripts| Yes | Yes | Yes | `%BUILD_DEFINITIONNAME%` | [Batch script ](../../../tasks/utility/batch-script.md#example) |
-| Environment variable in PowerShell scripts | Yes | Yes | Yes | `$env:BUILD_DEFINITIONNAME` | [PowerShell script](../../../scripts/index.md) |
+| Environment variable in PowerShell scripts | Yes | Yes | Yes | `$env:BUILD_DEFINITIONNAME` | [PowerShell script](../../../actions/scripts/powershell.md) |
 | Environment variable in Shell scripts | Yes | Yes | Yes | `$BUILD_DEFINITIONNAME` | [Shell script](../../../tasks/utility/shell-script.md#example) |
 
 
@@ -130,7 +130,7 @@ You can pass environment variables of the build machine into build steps. For ex
 | Build.Repository.Git.SubmoduleCheckout<br />BUILD_REPOSITORY_GIT_SUBMODULECHECKOUT | Agent | The value you've selected for **Checkout submodules** on the [repository tab](repository.md).|
 | Build.SourceTfvcShelveset<br />BUILD_SOURCETFVCSHELVESET | All (see Notes) | Defined if your [repository](repository.md) is Team Foundation Version Control.<br /><br />If you are running a [gated build](triggers.md#gated) or a [shelveset build](../../../actions/ci-cd-part-1.md#queueabuild), this is set to the name of the [shelveset](../../../../tfvc/suspend-your-work-manage-your-shelvesets.md) you are building.<br /><br />Note: This variable yields a value that is invalid for build use in a build number format.|
 | Common.TestResultsDirectory<br />COMMON_TESTRESULTSDIRECTORY | Agent | The local path on the agent where the test results are created. For example: `c:\agent\_work\1\TestResults`|
-| System.AccessToken<br />SYSTEM_ACCESSTOKEN | Agent | [Use the OAuth token to access the REST API](../../../scripts/index.md#oauth).|
+| System.AccessToken<br />SYSTEM_ACCESSTOKEN | Agent | [Use the OAuth token to access the REST API](../../../actions/scripts/powershell.md#oauth).|
 | System.CollectionId<br />SYSTEM_COLLECTIONID | All | The GUID of the team foundation collection.|
 | System.DefaultWorkingDirectory<br />SYSTEM_DEFAULTWORKINGDIRECTORY | Agent | [!INCLUDE [include](_shared/variables-build-sources-directory.md)]|
 | System.DefinitionId<br />SYSTEM_DEFINITIONID | All | The ID of the build definition.|

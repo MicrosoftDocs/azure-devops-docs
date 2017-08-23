@@ -157,9 +157,9 @@
   - name: Configure/manage CI
     items:
     - name: Run a PowerShell script
-      href: scripts/index.md
+      href: actions/scripts/powershell.md
     - name: Run Git commands
-      href: scripts/git-commands.md
+      href: actions/scripts/git-commands.md
     - name: Troubleshooting build
       href: troubleshooting.md
   - name: Configure/manage CD

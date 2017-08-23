@@ -30,9 +30,9 @@
 - name: How to
   items:
   - name: Run a PowerShell script
-    href: /vsts/build-release/scripts/index.md
+    href: /vsts/build-release/actions/scripts/index.md
   - name: Run Git commands
-    href: /vsts/build-release/scripts/git-commands.md
+    href: /vsts/build-release/actions/scripts/git-commands.md
   - name: Troubleshooting build
     href: /vsts/build-release/troubleshooting.md
   - name: Debug deployment issues

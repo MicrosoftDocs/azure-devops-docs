@@ -15,13 +15,13 @@ ms.date: 08/04/2016
 
 When you are ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build process.
 
-You can run a PowerShell Script on a [Windows build agent](../actions/agents/v2-windows.md).
+You can run a PowerShell Script on a [Windows build agent](../agents/v2-windows.md).
 
 0. Push your script into your repo.
 
 0. Add a PowerShell build step.
 
- ![Add step](../_shared/_img/BldStepAddBegin.png)
+ ![Add step](../../_shared/_img/BldStepAddBegin.png)
 
  ![Add PowerShell step](_img/BldScriptPSAdd.png)
 
@@ -162,9 +162,9 @@ Write-Host "Definition = $($definition | ConvertTo-Json -Depth 1000)"
 
 ### What variables are available for me to use in my scripts?
 
-[Use variables](../concepts/definitions/build/variables.md)
+[Use variables](../../concepts/definitions/build/variables.md)
 
-[!INCLUDE [include](../concepts/definitions/_shared/variable-set-in-script-qa.md)]
+[!INCLUDE [include](../../concepts/definitions/_shared/variable-set-in-script-qa.md)]
 
 ### Which branch of the script does the build run?
 
@@ -174,6 +174,6 @@ The build runs the script same branch of the code you are building.
 
 You can use named parameters. Other kinds of parameters, such as switch parameters, are not yet supported and will cause errors.
 
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->
