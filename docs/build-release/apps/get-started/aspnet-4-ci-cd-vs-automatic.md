@@ -11,16 +11,16 @@ ms.date: 02/10/2017
 
 # Use Visual Studio to automatically generate a CI/CD pipeline to deploy your ASP.NET web app to Azure
 
-[!INCLUDE [include](../_shared/version.md)]
+[!INCLUDE [include](../../_shared/version.md)]
 
 In this walkthrough we'll show how to use Visual Studio to automatically define a continuous integration (CI) and continuous deployment (CD) process to deploy an ASP.NET web application project to [Azure](https://azure.microsoft.com/). 
 
-[!INCLUDE [include](../apps/aspnet/_shared/ci-cd-description.md)]
+[!INCLUDE [include](../../apps/aspnet/_shared/ci-cd-description.md)]
 
 > [!TIP]
 > If you don't yet have an app but want to try this out, then see the [Q&A below](#new_solution).
 
-[!INCLUDE [include](../apps/aspnet/_shared/setup.md)]
+[!INCLUDE [include](../../apps/aspnet/_shared/setup.md)]
 
 ## Install the Continuous Delivery Tools extension
 
@@ -32,7 +32,7 @@ To install the extension within Visual Studio, select **Tools > Extensions and U
 
 To create both the build (CI) and release (CD) definitions for a project, in Visual Studio, right-click the project in Solution Explorer and select **Configure Continuous Delivery....** In the dialog that appears, choose the appropriate repository branch, Azure subscription, and target App Service, and click OK. You'll see details in the Output pane during the process.
 
-[!INCLUDE [include](../apps/aspnet/_shared/commit-build-release.md)]
+[!INCLUDE [include](../../apps/aspnet/_shared/commit-build-release.md)]
 
 ## Q&A
 
@@ -40,7 +40,7 @@ To create both the build (CI) and release (CD) definitions for a project, in Vis
 
 <h3 id="new_solution">How do I create an ASP.NET 4 web app?</h3>
 
-1. In Visual Studio, [connect to your team project](../../connect/connect-team-projects.md#visual-studio).
+1. In Visual Studio, [connect to your team project](../../../connect/connect-team-projects.md#visual-studio).
 
 1. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
 
@@ -56,14 +56,14 @@ To create both the build (CI) and release (CD) definitions for a project, in Vis
 
 1. Clear **Host in the cloud** and click **OK**.
 
-1. [Commit and push (Git)](../../git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../tfvc/share-your-code-in-tfvc-vs.md) your code.
+1. [Commit and push (Git)](../../../git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../tfvc/share-your-code-in-tfvc-vs.md) your code.
 
 ### I got a file not found error message. How do I fix it?
 
-All solution files must be checked into the server to run a build. One known cause of missing files is in cases where you populate an empty repo by creating a new project in Visual Studio 2015 Update 3. We recommend that you update your [.gitignore file](../../git/tutorial/ignore-files.md) with the latest copy from [GitHub: VisualStudio.gitignore](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore).
+All solution files must be checked into the server to run a build. One known cause of missing files is in cases where you populate an empty repo by creating a new project in Visual Studio 2015 Update 3. We recommend that you update your [.gitignore file](../../../git/tutorial/ignore-files.md) with the latest copy from [GitHub: VisualStudio.gitignore](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore).
 
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

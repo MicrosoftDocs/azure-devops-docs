@@ -1,3 +1,3 @@
 ---
-redirect_url: /vsts/build-release/get-started/ci-cd-part-1
+redirect_url: /vsts/build-release/apps/get-started/ci-cd-part-1
 ---

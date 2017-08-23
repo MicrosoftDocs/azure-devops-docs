@@ -34,7 +34,7 @@ You will need:
   [Visual Studio 2017](associate-automated-test-with-test-case.md), 
   or [Visual Studio 2015 or earlier](https://msdn.microsoft.com/en-us/library/dd380741%28v=vs.120%29.aspx).
 
-* A [Team Build definition](../../build-release/get-started/dot-net.md)
+* A [Team Build definition](../../build-release/apps/get-started/dot-net.md)
   that generates builds containing the test binaries.
 
 * The app to test. You can deploy the app as part of the 

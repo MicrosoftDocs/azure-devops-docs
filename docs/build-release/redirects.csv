@@ -8,7 +8,7 @@ Date Added,Title,Topic ID,Content ID,Locale,Product Family,Product Version,Redir
 1/11/2016,Team Foundation Build Overview,99d1d4a8-1f8a-40ca-aabd-76b6cbd2d7a5,ms181710,all,VS,140,2,https://msdn.microsoft.com/en-us/Library/vs/alm/Build/overview,
 1/11/2016,Walkthrough: Configuring Team Build to Build a Visual Studio Setup Project,8461d615-ce78-4ca5-97d6-80d939743052,ms404859,all,VS,140,2,https://msdn.microsoft.com/en-us/Library/vs/alm/Build/overview,
 1/28/2016,Set up a CI build,44717c59-6e8a-47df-a499-3a3eb162b1a6,bb558973,all,VS,140,2,https://msdn.microsoft.com/en-us/Library/vs/alm/Build/vs/define-build,
-1/28/2016,Run tests in your build process,d05743a1-c5cf-447e-bed9-bed3cb595e38,ms253138,all,VS,140,2,https://www.visualstudio.com/en-us/get-started/test/run-tests-with-builds,
+1/28/2016,Run tests in your build process,d05743a1-c5cf-447e-bed9-bed3cb595e38,ms253138,all,VS,140,2,https://www.visualstudio.com/en-us/apps/get-started/test/run-tests-with-builds,
 1/28/2016,Define your build process,61593e10-d24b-492f-b19a-af4d85abea6b,ms181715,all,VS,140,2,https://msdn.microsoft.com/en-us/Library/vs/alm/Build/define/create,
 1/28/2016,Create or edit a build definition,1c2eca2d-9a65-477e-9b23-0678ff7882ee,ms181716,all,VS,140,2,https://msdn.microsoft.com/en-us/Library/vs/alm/Build/define/create,
 1/28/2016,Specify build triggers and reasons,014800ce-b40d-4a03-9925-c7b2c5b60ae2,hh190718,all,VS,140,2,https://msdn.microsoft.com/en-us/Library/vs/alm/Build/define/triggers,

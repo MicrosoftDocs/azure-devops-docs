@@ -7,7 +7,7 @@
 - name: Quickstarts
   items:
   - name: CI/CD Hello world
-    href: get-started/ci-cd-part-1.md
+    href: actions/ci-cd-part-1.md
   - name: CD to Azure App Services
     href: apps/cd/deploy-webdeploy-webapps.md
   - name: CD to Azure Windows VM
@@ -105,7 +105,7 @@
     - name: ASP.NET 4 
       href: apps/aspnet/ci/build-aspnet-4.md
     - name: .NET for Windows 
-      href: get-started/dot-net.md
+      href: apps/get-started/dot-net.md
     - name: C++ 
       href: apps/windows/cpp.md
     - name: Node.js 
@@ -173,7 +173,7 @@
   - name: Automatically generate CI/CD
     items:
     - name: ASP.NET from Visual Studio
-      href: get-started/aspnet-4-ci-cd-vs-automatic.md
+      href: apps/get-started/aspnet-4-ci-cd-vs-automatic.md
     - name: ASP.NET Core with Docker from Visual Studio
       href: apps/aspnet/aspnetcore-docker-to-azure.md
   - name: Use Package Management

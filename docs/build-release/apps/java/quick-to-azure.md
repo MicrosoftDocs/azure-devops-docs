@@ -22,7 +22,7 @@ In the CI process, you build the Java app and run JUnit tests using Maven. In th
 
 ![java web app](_img/quick-to-azure/java-web-app.png)
 
-[!INCLUDE [temp](../../get-started/_shared/vsts-and-azure-setup.md)]
+[!INCLUDE [temp](../../apps/get-started/_shared/vsts-and-azure-setup.md)]
 
 [!INCLUDE [temp](../../apps/_shared/create-azure-web-app.md)]
 
@@ -32,13 +32,13 @@ Set up the Java runtime configuration that your app needs with the `az appservic
 az webapp config set --name <app_name> --resource-group myResourceGroup --java-version 1.8 --java-container Tomcat --java-container-version 8.0
 ```
 
-[!INCLUDE [temp](../../get-started/_shared/import-code-1.md)]
+[!INCLUDE [temp](../../apps/get-started/_shared/import-code-1.md)]
 
 ```bash
 https://github.com/Adventworks/java-sample
 ```
 
-[!INCLUDE [temp](../../get-started/_shared/import-code-2.md)]
+[!INCLUDE [temp](../../apps/get-started/_shared/import-code-2.md)]
 
 [!INCLUDE [temp](../../apps/_shared/set-up-ci-1.md)]
 
@@ -70,6 +70,6 @@ to the following:
 
 Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure web app.
 
-[!INCLUDE [temp](../../get-started/_shared/browse-to-web-app.md)]
+[!INCLUDE [temp](../../apps/get-started/_shared/browse-to-web-app.md)]
 
-[!INCLUDE [temp](../../get-started/_shared/clean-up-resources.md)]
+[!INCLUDE [temp](../../apps/get-started/_shared/clean-up-resources.md)]

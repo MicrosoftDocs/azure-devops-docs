@@ -40,7 +40,7 @@ Build reports track the quality of software under development. By defining tests
 <b>Build and test activities</b> 
 <ol>
 <li>[Configure a build system](../../build-release/concepts/agents/agents.md)</li>
-<li>[Get started with CI/CD](../../build-release/get-started/ci-cd-part-1.md)</li>
+<li>[Get started with CI/CD](../../build-release/actions/ci-cd-part-1.md)</li>
 <li>[Run tests in your build process](../../build-release/test/getting-started-with-continuous-testing.md)</li>
 <li>(Optional) [Rate completed builds](https://msdn.microsoft.com/library/ms181734.aspx) to populate the Build Quality dimension.</li>
 </ol>

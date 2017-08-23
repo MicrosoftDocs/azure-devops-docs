@@ -20,7 +20,7 @@ Visual Studio Team Services and Team Foundation Server help you implement a high
 
 Learn how to build your app and deploy it to your choice of Azure service.
 
-[CI/CD Hello world](get-started/ci-cd-part-1.md)
+[CI/CD Hello world](actions/ci-cd-part-1.md)
 
 ## Step-by-Step Tutorials  
 

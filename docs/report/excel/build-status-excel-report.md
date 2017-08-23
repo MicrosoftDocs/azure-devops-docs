@@ -42,7 +42,7 @@ The Build Status report helps the team track the progress of their builds by sho
   
 -   **Create build definitions**. You can create several build definitions and then run each of them to produce code for a different platform. Also, you can run each build definition for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../build-release/get-started/ci-cd-part-1.md).
+     For more information, see [Get started with CI/CD](../../build-release/actions/ci-cd-part-1.md).
   
 -   **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.  
   

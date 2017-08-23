@@ -29,7 +29,7 @@ Here are the steps to migrate from XAML builds to newer builds:
 
 1. If you're using a private TFS server, [set up agents](agents/v2-windows.md) to run your builds.
 
-1. To get familiar with the new build system, create a ["Hello world" build definition](../get-started/ci-cd-part-1.md).
+1. To get familiar with the new build system, create a ["Hello world" build definition](ci-cd-part-1.md).
 
 1. Create a new build definition intended to replace one of your XAML build definitions. 
 
@@ -257,7 +257,7 @@ Here are a few examples of the kinds of apps you can build:
 
 The new Team Build is tightly integrated with Release Management. So it's easier then ever to automatically kick off a deployment after a successful build. Learn more:
 
-* [CI/CD Hello world](../get-started/ci-cd-part-1.md)
+* [CI/CD Hello world](ci-cd-part-1.md)
 
 * [Release definitions](../concepts/definitions/release/index.md)
 
@@ -312,7 +312,7 @@ In XAML builds you created custom XAML templates. In the new builds, it's easier
 
 ### Create a template
 
-If you don't see a template for the kind of app you can start from an empty definition and [add the tasks you need](../define/build.md). After you've got a pattern that you like, you can clone it or save it as a template directly in your web browser. See [CI/CD Hello world](../get-started/ci-cd-part-1.md).
+If you don't see a template for the kind of app you can start from an empty definition and [add the tasks you need](../define/build.md). After you've got a pattern that you like, you can clone it or save it as a template directly in your web browser. See [CI/CD Hello world](ci-cd-part-1.md).
 
 ### Task groups (TFS 2017 or newer)
 

@@ -21,7 +21,7 @@ If you use Visual Studio Team Services, to build or deploy your app, then it's m
 
 ## Use a hosted agent
 
-To use a hosted agent, while [editing your build definition](../../get-started/ci-cd-part-1.md), on the **Options** or **General** tab, for the **Default agent queue**, and then select either:
+To use a hosted agent, while [editing your build definition](../../actions/ci-cd-part-1.md), on the **Options** or **General** tab, for the **Default agent queue**, and then select either:
 
 * **Hosted** 
 

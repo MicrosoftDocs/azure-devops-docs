@@ -397,9 +397,9 @@ When you manually queue a build, you can, for a single run of the build:
 
 * In a Git repository
 
- - Build a [branch](https://www.visualstudio.com/en-us/get-started/code/git/branches) or a [tag](http://git-scm.com/book/en/v2/Git-Basics-Tagging).
+ - Build a [branch](https://www.visualstudio.com/en-us/apps/get-started/code/git/branches) or a [tag](http://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
- - Build a [commit](https://www.visualstudio.com/en-us/get-started/code/git/commits).
+ - Build a [commit](https://www.visualstudio.com/en-us/apps/get-started/code/git/commits).
 
 * In a TFVC repository
 

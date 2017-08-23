@@ -22,17 +22,17 @@ In the CI process, you use Gulp to run Mocha tests.
 
 ![node.js web app](_img/nodejs-web-app.png)
 
-[!INCLUDE [temp](../../get-started/_shared/vsts-and-azure-setup.md)]
+[!INCLUDE [temp](../../apps/get-started/_shared/vsts-and-azure-setup.md)]
 
 [!INCLUDE [temp](../../apps/_shared/create-azure-web-app.md)]
 
-[!INCLUDE [temp](../../get-started/_shared/import-code-1.md)]
+[!INCLUDE [temp](../../apps/get-started/_shared/import-code-1.md)]
 
 ```bash
 https://github.com/adventworks/nodejs-sample
 ```
 
-[!INCLUDE [temp](../../get-started/_shared/import-code-2.md)]
+[!INCLUDE [temp](../../apps/get-started/_shared/import-code-2.md)]
 
 [!INCLUDE [temp](../../apps/_shared/set-up-ci-1.md)]
 
@@ -72,6 +72,6 @@ res.send('Demo of CI/CD!!');
 
 Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure web app.
 
-[!INCLUDE [temp](../../get-started/_shared/browse-to-web-app.md)]
+[!INCLUDE [temp](../../apps/get-started/_shared/browse-to-web-app.md)]
 
-[!INCLUDE [temp](../../get-started/_shared/clean-up-resources.md)]
+[!INCLUDE [temp](../../apps/get-started/_shared/clean-up-resources.md)]

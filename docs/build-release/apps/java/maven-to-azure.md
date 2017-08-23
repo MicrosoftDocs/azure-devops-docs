@@ -25,7 +25,7 @@ Upload your code to Visual Studio Team Services or your on-premises Team Foundat
 
 0. Sign in to the [Azure portal](https://portal.azure.com/).
 
-0. Edit or [create a Java web app](https://azure.microsoft.com/en-us/documentation/articles/web-sites-java-get-started/) and enable Apache Tomcat. 
+0. Edit or [create a Java web app](https://azure.microsoft.com/en-us/documentation/articles/web-sites-java-apps/get-started/) and enable Apache Tomcat. 
 
 0. Click the deployment credentials part (outlined in red below). Create a user name and password. Click Save. If you previously enabled publishing for a web app, you don't need to do this step.
 

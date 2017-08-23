@@ -117,7 +117,7 @@ For example, you can set up your build process to run and validate your app for 
 > [!TIP]
 > Want a visual walkthrough? See [our April 19 news release](../../news/2017.md#april-19).
 
-[Create a new build definition](../../get-started/ci-cd-part-1.md) (start with an empty process) to try this out.
+[Create a new build definition](../../actions/ci-cd-part-1.md) (start with an empty process) to try this out.
 
 #### Tasks tab
 

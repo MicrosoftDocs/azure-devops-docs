@@ -34,10 +34,10 @@ Continuous Delivery (CD) is a process by which code is built, tested, and eventu
 <div style="float:right;width:460px;margin:3px;">
 <p style="font-size:125%;font-weight:bold;padding-bottom:0px;">Get started</p>
 <p>
-Take this [15 minute tutorial](get-started/dot-net.md) to understand the basic concepts.
+Take this [15 minute tutorial](apps/get-started/dot-net.md) to understand the basic concepts.
 Then quickly set up a build and release definition for your ASP.NET application from the
-[Azure portal](get-started/aspnet-4-ci-cd-azure-automatic.md) or from
-[Visual Studio](get-started/aspnet-4-ci-cd-vs-automatic.md).</p>
+[Azure portal](apps/get-started/aspnet-4-ci-cd-azure-automatic.md) or from
+[Visual Studio](apps/get-started/aspnet-4-ci-cd-vs-automatic.md).</p>
 </div>
 
 <div style="clear:both;">&nbsp;</div>
@@ -100,10 +100,10 @@ for your entire team. Organize shared assets such as [service endpoints](concept
 <p style="font-weight:bold;padding-top:10px">CI/CD get started</p>
 <ul style="padding-left:30px">
  <!-- This needs to be changed to create-your-first-build-and-release.md after the merger of the other branch
- <li>[Tutorial on basic concepts](get-started/create-your-first-release.md)</li>-->
- <li>[CI/CD Hello world](get-started/ci-cd-part-1.md)</li>
- <li>[ASP.NET from the Azure portal](get-started/aspnet-4-ci-cd-azure-automatic.md)</li>
- <li>[ASP.NET from Visual Studio](get-started/aspnet-4-ci-cd-vs-automatic.md)</li>
+ <li>[Tutorial on basic concepts](apps/get-started/create-your-first-release.md)</li>-->
+ <li>[CI/CD Hello world](actions/ci-cd-part-1.md)</li>
+ <li>[ASP.NET from the Azure portal](apps/get-started/aspnet-4-ci-cd-azure-automatic.md)</li>
+ <li>[ASP.NET from Visual Studio](apps/get-started/aspnet-4-ci-cd-vs-automatic.md)</li>
  <li>[ASP.NET do it yourself](apps/aspnet/aspnet4-to-azure.md)</li>
  <li>[ASP.NET Core to Azure from Visual Studio](apps/aspnet/aspnetcore-docker-to-azure.md)</li>
  <li>[ASP.NET Core do it yourself](apps/aspnet/aspnetcore-to-azure.md)</li>
@@ -113,7 +113,7 @@ for your entire team. Organize shared assets such as [service endpoints](concept
 <div style="float:left;width:225px;margin:3px">
 <p style="font-weight:bold;padding-top:10px">Concepts</p>
 <ul style="padding-left:30px">
- <li>[Build definitions](get-started/ci-cd-part-1.md)</li>
+ <li>[Build definitions](actions/ci-cd-part-1.md)</li>
  <li>[Release definitions](concepts/definitions/release/index.md)</li>
  <li>[Agents](concepts/agents/agents.md)</li>
  <li>[Tasks](concepts/process/tasks.md)</li>

@@ -15,7 +15,7 @@
   - name: Code with Git
     href: /vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: "Build & release an app"
-    href: /vsts/build-release/get-started/ci-cd-part-1?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
+    href: /vsts/build-release/apps/get-started/ci-cd-part-1?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
   - name: "Plan & track work" 
     href: plan-track-work.md 
   - name: Add and run manual tests
