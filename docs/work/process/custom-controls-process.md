@@ -30,7 +30,7 @@ For example, you can add the [**Who recently viewed a work item?** extension](ht
 ## Add a Marketplace extension   
 
 Browse the Marketplace to determine what extension(s) you want to add. To install an extension, see these topics: 
-- [Get extensions for Team Services](../../marketplace/get-vsts-extensions.md)
+- [Get extensions for Team Services](../../marketplace/install-vsts-extension.md)
 - [Get extensions for TFS](../../marketplace/get-tfs-extensions.md)
 
 From the admin context, Extensions hub, you can view the extensions that are already installed.    

@@ -161,7 +161,7 @@ Learn [how to control account access with Azure AD](access-with-azure-ad.md).
 
 ####Q:	 Why did some users lose access to certain features?
 
-A:	This might happen for [different reasons](add-account-users-assign-access-levels-team-services.md#stopped-features).  
+A:	This might happen for [different reasons](faq-add-delete-users.md#stopped-features).  
 
 <a name="ConnectedDirectory"></a>
 
@@ -171,7 +171,7 @@ A:	This might happen for [different reasons](add-account-users-assign-access-lev
 
 ####Q:	How do I remove users from my Visual Studio Team Services account?
 
-A:	Learn [how to delete users](add-account-users-assign-access-levels-team-services.md#delete-user) 
+A:	Learn [how to delete users](delete-account-users.md) 
 across all team projects in your Visual Studio Team Services account. 
 If you paid for more users, but don't need their account access
 anymore, you must reduce your paid users to avoid charges.

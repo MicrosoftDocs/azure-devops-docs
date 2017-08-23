@@ -177,6 +177,7 @@ you can [add them to team projects](add-team-members-vs.md).
 
     [Why don't users appear or disappear promptly in Team Services after I add or delete them in the Users hub?](#users-delay)
 
+
 ##	Next
 
 *	Add code to Git or Team Foundation version control
@@ -204,3 +205,4 @@ or [customize your process](../work/process/customize-process.md)
 ## Troubleshooting
 
 [Troubleshooting](faq-add-delete-users.md)
+

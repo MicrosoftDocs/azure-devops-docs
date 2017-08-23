@@ -93,7 +93,7 @@ A:  No, you can add only one work or school account.
 A:	This might happen for different reasons: 
 
 *	You must have an active, valid, and 
-[eligible Visual Studio subscription](../accounts/add-account-users-assign-access-levels-team-services.md#EligibleMSDNSubscriptions) 
+[eligible Visual Studio subscription](../accounts/faq-add-delete-users.md#EligibleMSDNSubscriptions) 
 that includes Team Services as a benefit.
 
 *	If your Visual Studio subscription is valid and eligible, 

@@ -17,7 +17,7 @@ ms.date: 1/19/2017
 For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with VSTS.
 
 
-You can just [delete the user from each Team Services account](add-account-users-assign-access-levels-team-services.md#delete-user) 
+You can just [delete the user from each Team Services account](delete-account-users.md) 
 where you need to remove them. If you delete the user only from Azure AD, they may still show up in Team Services, but 
 they won't be able to sign in.
 
@@ -38,7 +38,7 @@ Team Services account.
 
 0.	Follow [these steps](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-delete-user-azure-portal) on the azure portal.
 
-0.  [Remove the user](add-account-users-assign-access-levels-team-services.md#delete-user) 
+0.  [Remove the user](delete-account-users.md) 
 from your Team Services account and reassign their access levels, if necessary.
 
 
