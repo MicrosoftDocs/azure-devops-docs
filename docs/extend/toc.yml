@@ -131,62 +131,62 @@
   - name: TypeScript APIs
     items:
     - name: Core client SDK
-      href: ../integrate/extensions/reference/client/core-sdk.md
+      href: ./reference/client/core-sdk.md
     - name: Client services
-      href: ../integrate/extensions/reference/client/client-services.md
+      href: ./reference/client/client-services.md
       items:
       - name: ExtensionDataService
-        href: ../integrate/extensions/reference/client/api/VSS/SDK/Services/ExtensionData/ExtensionDataService.md
+        href: ./reference/client/api/VSS/SDK/Services/ExtensionData/ExtensionDataService.md
       - name: HostDialogService
-        href: ../integrate/extensions/reference/client/api/VSS/SDK/Services/Dialogs/HostDialogService.md
+        href: ./reference/client/api/VSS/SDK/Services/Dialogs/HostDialogService.md
       - name: HostNavigationService
-        href: ../integrate/extensions/reference/client/api/VSS/SDK/Services/Navigation/HostNavigationService.md
+        href: ./reference/client/api/VSS/SDK/Services/Navigation/HostNavigationService.md
       - name: ExternalDialog
-        href: ../integrate/extensions/reference/client/api/VSS/SDK/Services/Dialogs/ExternalDialog.md
+        href: ./reference/client/api/VSS/SDK/Services/Dialogs/ExternalDialog.md
       - name: Work Item Form Service
-        href: ../integrate/extensions/reference/client/api/TFS/WorkItemTracking/Services/WorkItemFormService.md
+        href: ./reference/client/api/TFS/WorkItemTracking/Services/WorkItemFormService.md
       - name: Work Item Form Navigation Service
-        href: ../integrate/extensions/reference/client/api/TFS/WorkItemTracking/Services/WorkItemFormNavigationService.md
+        href: ./reference/client/api/TFS/WorkItemTracking/Services/WorkItemFormNavigationService.md
     - name: REST clients
-      href: ../integrate/extensions/reference/client/rest-clients.md
+      href: ./reference/client/rest-clients.md
       items:
       - name: BuildHttpClient2_1
-        href: ../integrate/extensions/reference/client/api/TFS/build/RestClient/BuildHttpClient2_1.md
+        href: ./reference/client/api/TFS/build/RestClient/BuildHttpClient2_1.md
       - name: BuildHttpClient2_2
-        href: ../integrate/extensions/reference/client/api/TFS/build/RestClient/BuildHttpClient2_2.md
+        href: ./reference/client/api/TFS/build/RestClient/BuildHttpClient2_2.md
       - name: CoreHttpClient2_1
-        href: ../integrate/extensions/reference/client/api/TFS/Core/RestClient/CoreHttpClient2_1.md
+        href: ./reference/client/api/TFS/Core/RestClient/CoreHttpClient2_1.md
       - name: CoreHttpClient2_2
-        href: ../integrate/extensions/reference/client/api/TFS/Core/RestClient/CoreHttpClient2_2.md
+        href: ./reference/client/api/TFS/Core/RestClient/CoreHttpClient2_2.md
         items:
         - name: TaskAgentHttpClient2_1
-          href: ../integrate/extensions/reference/client/api/TFS/DistributedTask/TaskAgentRestClient/TaskAgentHttpClient2_1.md
+          href: ./reference/client/api/TFS/DistributedTask/TaskAgentRestClient/TaskAgentHttpClient2_1.md
         - name: TaskAgentHttpClient2_2
-          href: ../integrate/extensions/reference/client/api/TFS/DistributedTask/TaskAgentRestClient/TaskAgentHttpClient2_2.md
+          href: ./reference/client/api/TFS/DistributedTask/TaskAgentRestClient/TaskAgentHttpClient2_2.md
         - name: TaskHttpClient2_1
-          href: ../integrate/extensions/reference/client/api/TFS/DistributedTask/TaskRestClient/TaskHttpClient2_1.md
+          href: ./reference/client/api/TFS/DistributedTask/TaskRestClient/TaskHttpClient2_1.md
         - name: TaskHttpClient2_2
-          href: ../integrate/extensions/reference/client/api/TFS/DistributedTask/TaskRestClient/TaskHttpClient2_2.md
+          href: ./reference/client/api/TFS/DistributedTask/TaskRestClient/TaskHttpClient2_2.md
       - name: TestHttpClient2_1
-        href: ../integrate/extensions/reference/client/api/TFS/TestManagement/RestClient/TestHttpClient2_1.md
+        href: ./reference/client/api/TFS/TestManagement/RestClient/TestHttpClient2_1.md
       - name: TestHttpClient2_2
-        href: ../integrate/extensions/reference/client/api/TFS/TestManagement/RestClient/TestHttpClient2_2.md
+        href: ./reference/client/api/TFS/TestManagement/RestClient/TestHttpClient2_2.md
       - name: GitHttpClient2_1
-        href: ../integrate/extensions/reference/client/api/TFS/VersionControl/GitRestClient/GitHttpClient2_1.md
+        href: ./reference/client/api/TFS/VersionControl/GitRestClient/GitHttpClient2_1.md
       - name: GitHttpClient2_2
-        href: ../integrate/extensions/reference/client/api/TFS/VersionControl/GitRestClient/GitHttpClient2_2.md
+        href: ./reference/client/api/TFS/VersionControl/GitRestClient/GitHttpClient2_2.md
       - name: TfvcHttpClient2_1
-        href: ../integrate/extensions/reference/client/api/TFS/VersionControl/TfvcRestClient/TfvcHttpClient2_1.md
+        href: ./reference/client/api/TFS/VersionControl/TfvcRestClient/TfvcHttpClient2_1.md
       - name: TfvcHttpClient2_2
-        href: ../integrate/extensions/reference/client/api/TFS/VersionControl/TfvcRestClient/TfvcHttpClient2_2.md
+        href: ./reference/client/api/TFS/VersionControl/TfvcRestClient/TfvcHttpClient2_2.md
       - name: WorkHttpClient2_1
-        href: ../integrate/extensions/reference/client/api/TFS/Work/RestClient/WorkHttpClient2_1.md
+        href: ./reference/client/api/TFS/Work/RestClient/WorkHttpClient2_1.md
       - name: WorkHttpClient2_2
-        href: ../integrate/extensions/reference/client/api/TFS/Work/RestClient/WorkHttpClient2_2.md
+        href: ./reference/client/api/TFS/Work/RestClient/WorkHttpClient2_2.md
       - name: WorkItemTrackingHttpClient2_1
-        href: ../integrate/extensions/reference/client/api/TFS/WorkItemTracking/RestClient/WorkItemTrackingHttpClient2_1.md
+        href: ./reference/client/api/TFS/WorkItemTracking/RestClient/WorkItemTrackingHttpClient2_1.md
       - name: WorkItemTrackingHttpClient2_2
-        href: ../integrate/extensions/reference/client/api/TFS/WorkItemTracking/RestClient/WorkItemTrackingHttpClient2_2.md
+        href: ./reference/client/api/TFS/WorkItemTracking/RestClient/WorkItemTrackingHttpClient2_2.md
 - name: How to get help
   href: support/help.md
 - name: Visual Studio extensions

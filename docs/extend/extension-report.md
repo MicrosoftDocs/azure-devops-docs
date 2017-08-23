@@ -27,7 +27,7 @@ For paid extension, all transactional details for buy and trials is available wi
 You can view how many Team Services accounts have uninstalled your extension, daily trend of uninstall, detailed feedback shared during uninstall, and top uninstall reasons.
 You can use search for text and dates to analyze and draw more insights from the detailed feedback. 
 
-For paid extensions, you can use the **Contact** action to reach out to your users for transactional communication. Refer [here](https://www.visualstudio.com/en-us/docs/integrate/extensions/extension-report#contact) for more details. 
+For paid extensions, you can use the **Contact** action to reach out to your users for transactional communication. Refer [here](#contact) for more details. 
 
 ## Sales transaction
 This tab is only available for paid extensions and gives the details of sales w.r.t. quantity and accounts to help understand how the extension is performing. 

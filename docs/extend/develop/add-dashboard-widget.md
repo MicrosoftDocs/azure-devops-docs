@@ -37,7 +37,7 @@ Some knowledge of JavaScript, HTML, CSS is required for widget development.
     ├── node_modules           
     └── scripts
         └── VSS.SDK.min.js       
-├── images                        
+├── img                        
     └── logo.png                           
 ├── scripts                        
 ├── hello-world.html				// html page to be used for your widget  
@@ -339,7 +339,7 @@ Copy the file `hello-world.html` from the previous example, and rename the copy 
     ├── node_modules           
     └── scripts
         └── VSS.SDK.min.js       
-├── images                        
+├── img                        
     └── logo.png                           
 ├── scripts                        
 ├── hello-world.html				// html page to be used for your widget  
@@ -636,7 +636,7 @@ Your folder will now look like the below:
     ├── node_modules           
     └── scripts
         └── VSS.SDK.min.js       
-├── images                        
+├── img                        
     └── logo.png                           
 ├── scripts          
 ├── configuration.html				             

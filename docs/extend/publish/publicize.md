@@ -58,7 +58,7 @@ Once you are ready to publish a public Team Services listing to the Marketplace,
 
 You might be asked to provide more details about yourself or your organization/company. You might also be asked to share more details about your integration or share your extension with Microsoft.
 
-Once your publisher id has been verified you need to set the [public flag](https://www.visualstudio.com/en-us/docs/integrate/extensions/develop/manifest#public-flag) to true in your manifest for your extension to be available publicly.
+Once your publisher id has been verified you need to set the [public flag](../develop/manifest.md#public-flag) to true in your manifest for your extension to be available publicly.
 
 > **Important**: Once your publisher is verified, you will not be able to change its display name without contacting Microsoft.
 

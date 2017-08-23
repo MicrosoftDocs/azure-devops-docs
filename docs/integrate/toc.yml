@@ -43,6 +43,6 @@
   - name: .NET client libraries reference
     href: https://review.docs.microsoft.com/en-us/vsts-dotnet/api/microsoft.teamfoundation.framework.common?branch=master
 - name: How to get help
-  href: extensions/support/help.md
+  href: ../extend/support/help.md?toc=/vsts/integrate/toc.json
 - name: Visual Studio extensions
   href: ide/extensions/overview.md
