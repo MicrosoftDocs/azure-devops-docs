@@ -80,7 +80,7 @@ if you don't have one already.
 0.	Based on the number of users who need TFS CALs, 
 [pay for users who need Basic access](buy-basic-access-add-team-services-users.md).
 
-0.	[Buy the Test Manager extension](../marketplace/get-vsts-extensions.md#install-extension) 
+0.	[Buy the Test Manager extension](../marketplace/install-vsts-extension.md#install-extension) 
 for users who need Test hub access.
 
 	Test Manager is installed automatically in your Team Services account. 

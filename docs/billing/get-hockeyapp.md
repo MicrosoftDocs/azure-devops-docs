@@ -148,7 +148,7 @@ as the Team Services account owner.
 
 0.	Install the [HockeyApp extension](https://marketplace.visualstudio.com/items?itemName=ms.hockeyapp) 
 in your Team Services account. Learn more at 
-[Get extensions for Team Services](get-vsts-extensions.md#install-extension).
+[Get extensions for Team Services](../marketplace/install-vsts-extension.md#install-extension).
 
 	![Install HockeyApp extension](_img/get-hockeyapp/hockey-app-extension.png)
 

@@ -42,7 +42,7 @@ Go to [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=703823&
 to install the extension in your VSTS account as an administrator.
 Non-administrative users can also go here to request the extension be added to VSTS. 
 
-For more details, see [Install an extension](../../marketplace/get-vsts-extensions.md#install-extension) in the Marketplace documentation.
+For more details, see [Install an extension](../../marketplace/install-vsts-extension.md#install-extension) in the Marketplace documentation.
 
 <a name="uninstall-ts"></a>
 ## Uninstall Code Search in VSTS

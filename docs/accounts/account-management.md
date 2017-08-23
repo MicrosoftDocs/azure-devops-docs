@@ -216,7 +216,7 @@ The method used to customize a team project depends on the process model you use
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">DevOps resources and Extensions</p>
 <ul style="padding-left:20px">
 <li style="margin-bottom:2px">[Manage build agents](../build-release/concepts/agents/pools-queues.md) (Team Services) </li>
-<li style="margin-bottom:2px">[Extensions (install/manage extensions)](../marketplace/get-vsts-extensions.md)</li>
+<li style="margin-bottom:2px">[Extensions (install/manage extensions)](../marketplace/install-vsts-extension.md)</li>
 <li style="margin-bottom:2px">[Security (manage collection-level permissions)](../security/permissions.md#collection)</li>
 </ul>
 </div>

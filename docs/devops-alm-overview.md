@@ -289,7 +289,7 @@ With Marketplace extensions (currently in private preview), you can create first
 <ul style="padding-left:10px">
 <li style="margin-bottom:2px">[Find marketplace extensions](marketplace/index.md)</li>
 <li style="margin-bottom:2px">[Buy subscriptions](billing/vs-subscriptions/buy-vs-subscriptions.md)</li>
-<li style="margin-bottom:2px">[Get extensions](marketplace/get-vsts-extensions.md)</li>
+<li style="margin-bottom:2px">[Get extensions](marketplace/install-vsts-extension.md)</li>
 </ul>
 </div> 
 

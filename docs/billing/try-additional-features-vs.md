@@ -74,7 +74,7 @@ Charges won't start until the trial ends.
 > Some extensions include free users. To keep access to such extensions, 
 > [assign the extension up to the number of free users that you get](../marketplace/assign-paid-extensions.md). 
 > For additional users who need access, 
-> [buy the extension from the Visual Studio Marketplace](../marketplace/get-vsts-extensions.md) 
+> [buy the extension from the Visual Studio Marketplace](../marketplace/install-vsts-extension.md) 
 > and [assign the extension to these users](../marketplace/assign-paid-extensions.md). 
 > If you have [Visual Studio subscribers](https://marketplace.visualstudio.com/subscriptions), 
 > check their subscription benefits. These users get additional features, 
@@ -89,7 +89,7 @@ If you lose access because the trial expires,
 just follow these steps to buy and assign the 
 extension for users who need access.
 
-0.	[Buy the extension](../marketplace/get-vsts-extensions.md#install-extension) 
+0.	[Buy the extension](../marketplace/install-vsts-extension.md#install-extension) 
 only for users who need access.
 
 	To buy the extension, you can also go to the extension pane in your account.	

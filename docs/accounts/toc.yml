@@ -104,10 +104,8 @@
       href: ../security/permissions.md
   - name: Get more features (extensions)
     items:
-    - name: Install an extension
+    - name: Install an extension for VSTS
       href: ../marketplace/install-vsts-extension.md
-    - name: Install an extension for Team Services
-      href: ../billing/get-vsts-extensions.md
     - name: Approve requests for Team Services extensions
       href: ../marketplace/approve-vsts-extensions.md
     - name: Request permission for an extension

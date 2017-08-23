@@ -41,7 +41,7 @@ You can install them with a few clicks. You must have administrative permissions
 
 | Product | Topics |
 |-----------------------------|--------------------------------------------------------------------------------------------------|
-| Visual Studio Team Services | [Get extensions for Team Services](get-vsts-extensions.md) <br/> [Develop extensions for Team Services](https://aka.ms/vsoextensions) |
+| Visual Studio Team Services | [Get extensions for Team Services](../marketplace/install-vsts-extension.md) <br/> [Develop extensions for Team Services](https://aka.ms/vsoextensions) |
 | Visual Studio | [Get extensions for Visual Studio](https://marketplace.visualstudio.com/vs) <br/> [Develop extensions for Visual Studio](http://aka.ms/extendvs) |
 | Visual Studio Code | [Get extensions for Visual Studio Code](https://marketplace.visualstudio.com/vscode) <br/> [Develop extensions for Visual Studio Code](http://go.microsoft.com/fwlink/?LinkID=703825) |
 

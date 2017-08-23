@@ -5,7 +5,7 @@ To get started, navigate to the **Package** hub in the **Build & Release** hub g
 
 ![Go to Package hub](_img/goto-feed-hub.png)
 
-_If you don't see the Package hub, then ask your account owner to install the [Package Management extension](https://marketplace.visualstudio.com/items?itemName=ms.feed) from the [Visual Studio Marketplace](../../marketplace/get-vsts-extensions.md)._
+_If you don't see the Package hub, then ask your account owner to install the [Package Management extension](https://marketplace.visualstudio.com/items?itemName=ms.feed) from the [Visual Studio Marketplace](../../marketplace/install-vsts-extension.md)._
 
 Click the dropdown in the top left and select **New feed**:
 

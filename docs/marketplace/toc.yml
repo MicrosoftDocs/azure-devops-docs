@@ -1,15 +1,17 @@
+- name: Marketplace
+  href: index.md
 - name: Overview
   items:
-  - name: Billing and Subscriptions overview
+  - name: Marketplace
     href: index.md
 - name: Quickstarts
   items:
-  - name: Buy Team Services extensions
-    href: get-vsts-extensions.md
+  - name: Install VSTS extensions
+    href: install-vsts-extension.md
 - name: Tutorials
   items:
-  - name: Get extensions for Team Services
-    href: get-vsts-extensions.md
+  - name: Install VSTS extensions
+    href: install-vsts-extension.md
   - name: Get extensions for TFS
     href: get-tfs-extensions.md
   - name: How to buy TFS CALs

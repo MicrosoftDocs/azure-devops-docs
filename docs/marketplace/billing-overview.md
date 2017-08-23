@@ -204,7 +204,7 @@ so you can [buy more virtual user minutes through Azure](../billing/buy-load-tes
 
 You can also buy paid extensions for your Team Services 
 account in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). 
-Learn [how to get paid extensions for your Team Services account](get-vsts-extensions.md).
+Learn [how to get paid extensions for your Team Services account](install-vsts-extension.md).
 
 ## Related notes
 - [Key concepts](../concepts.md)
@@ -212,7 +212,7 @@ Learn [how to get paid extensions for your Team Services account](get-vsts-exten
 - [Client-server tools](../tools.md)
 - [Software development roles](../roles.md)
 
-- [Get extensions for Team Services](get-vsts-extensions.md)
+- [Get extensions for Team Services](install-vsts-extension.md)
 - [Get extensions for TFS](get-tfs-extensions.md)
 
 <!---
