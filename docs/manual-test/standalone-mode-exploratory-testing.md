@@ -11,10 +11,18 @@ ms.date: 08/12/2016
 
 # Exploratory testing with the Test &amp; Feedback extension in Standalone mode
  
-All teams can use the Test &amp; Feedback extension (previously 
-called the Exploratory Testing extension) in **Standalone** mode. 
+All teams can use the Test &amp; Feedback extension in **Standalone** mode. 
 Users don't need a Visual Studio Team Services (VSTS) account 
 or Team Foundation Server connection to use this mode.
+
+In this example, you'll learn how to:
+
+* [Install the extension](#installext)
+* [Create a bug](#createbug)
+* [End your testing session](#endsession)
+
+<a name="testmode"></a>
+## Start testing in Standalone mode
 
 1. If you haven't already, [install the Test &amp; Feedback extension](getting-started/perform-exploratory-tests.md).
 
@@ -39,7 +47,10 @@ or Team Foundation Server connection to use this mode.
 
    ![Add notes about the issue if required](_img/standalone-mode-exploratory-testing/standalonemode-05.png)
 
-1. When you have finished capturing information for this issue, choose **Create bug**.
+<a name="createbug"></a>
+## Create a bug
+
+1. When you have finished capturing information for an issue, choose **Create bug**.
 
    ![Create a bug from the captured information](_img/standalone-mode-exploratory-testing/standalonemode-06.png)
 
@@ -55,8 +66,13 @@ or Team Foundation Server connection to use this mode.
 
    ![Review your captured information](_img/standalone-mode-exploratory-testing/standalonemode-07a.png)
 
+<a name="endsession"></a>
+## End your testing session
+
 1. Continue exploring the application. Create more bugs as you encounter
-   issues with the app. When you're done, stop your session.
+   issues with the app.
+   
+1. When you're done, stop your session.
 
    ![Stop the exploratory testing session](_img/standalone-mode-exploratory-testing/standalonemode-08.png)
 

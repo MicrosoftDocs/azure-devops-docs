@@ -10,7 +10,7 @@ ms.author: ahomer
 ms.date: 08/12/2016
 ---
 
-# Create a test plan
+# Create a test plan and test suite
 
 Create test plans to track manual testing 
 for sprints or milestones. That way, 
@@ -23,21 +23,19 @@ This includes static test suites, requirement-based suites, and
 a test suite if you wish, but using a test suite provides a way to group
 test cases for separate testing scenarios within a single test plan.
 
-The **Test Plans** page shows a single test plan. You select the test plan
-you want to work with using the ![filter-icon](_img/create-a-test-plan/filter-icon.png)
-icon or the drop-down list at the top of the left column.
+In this example, you'll learn how to:
 
-![Selecting a test plan from the drop-down list](_img/create-a-test-plan/select-test-plan.png)
+* [Create a test plan](#testplan)
+* [Add a test suite and select backlog items to test](#backlog)
+* [Find a test plan](#findplan)
 
-Test plans, suites, and test cases are stored in VSTS and TFS
-as special types of work items.
-
-## Create a test plan containing test suites  
+<a name="testplan"></a>
+## Create a test plan
 
 1. If you haven't already, 
-[sign up for Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
-[create your team project](../../accounts/account-management.md), 
-and [create your backlog](../../work/backlogs/create-your-backlog.md). 
+   [sign up for Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
+   [create your team project](../../accounts/account-management.md), 
+   and [create your backlog](../../work/backlogs/create-your-backlog.md). 
 
 1. In VSTS, select your team project. 
    (If you haven't been here before, use Browse.)
@@ -48,9 +46,12 @@ and [create your backlog](../../work/backlogs/create-your-backlog.md).
 
    ![In test plan explorer, open the New (+) list, then click Test plan](_img/create-a-test-plan/CreateATestPlan1a.png)
 
-1. Name the test plan. Check the area path and iteration.
+1. Name the test plan. Check the area path and iteration. Then choose **Create*.
 
    ![Add test plan details, then click Create](_img/create-a-test-plan/CreateATestPlan2.png) 
+
+<a name="backlog"></a>
+## Add a test suite and select backlog items to test
 
 1. Now add test suites for the backlog items that need manual tests. 
    (These backlog items could be user stories, requirements, or other 
@@ -74,6 +75,17 @@ and [create your backlog](../../work/backlogs/create-your-backlog.md).
    ![Select backlog items, then click Create suites](_img/create-a-test-plan/AddRequirementSuitesToTestPlan3.png)
 
    Now you've created a requirement-based test suite for each backlog item.
+
+<a name="findplan"></a>
+## Find a test plan
+
+* The **Test Plans** page shows a single test plan. Use the
+  ![filter-icon](_img/create-a-test-plan/filter-icon.png) icon or the drop-down
+  list at the top of the left column select the test plan you want to work with.
+
+  ![Selecting a test plan from the drop-down list](_img/create-a-test-plan/select-test-plan.png)
+
+Test plans, suites, and test cases are stored in VSTS and TFS as special types of work items.
    
 ## See also
 

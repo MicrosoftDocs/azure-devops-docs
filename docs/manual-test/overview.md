@@ -149,12 +149,45 @@ Maximizing quality in modern software development processes is a
 shared responsibility between developers, managers, product owners,
 user experience teams, and more. Collaborative testing processes and
 tools are the key factors in driving quality in these scenarios.
-VSTS and TFS provide a lightweight, 
-browser-based extension called the Test &amp; Feedback extension,
-which enables everyone to contribute to the quality of your web apps.
-See more at [Exploratory test and submit feedback directly from your browser](getting-started/perform-exploratory-tests.md).
+
+The [Test &amp; Feedback extension](getting-started/perform-exploratory-tests.md)
+is a simple browser-based extension you can use to test web apps 
+anytime and anywhere, and is simple enough for everyone in the team to use.
+It helps to improve productivity by allowing you to spend more time
+finding issues, and less time filing them.
 
 ![Exploratory testing your web apps](_img/manual-testing/exploratory-testing-01.png)
+
+Using the extension is a simple, three step process:
+
+![Schematic showing process steps Capture, Create, Collaborate](getting-started/_img/perform-exploratory-tests/getstarted-05.png)
+ 
+* **Capture your findings** quickly and easily using the tools in the extension. 
+  Capture notes, screenshots with annotations, and screen recordings 
+  to describe your findings and highlight issues. Additionally, in 
+  the background the extension automatically captures rich data such
+  as user actions as an image action log, page load data,
+  and system information about the browser, operating system, memory,
+  and more that can serve as a starting point for debugging. 
+
+* **Create work items** such as bugs, tasks, and test cases directly from 
+  the extension. The captured findings automatically become a part of the work item. 
+  Users can file a bug to report an issue with the product, or create a task that
+  indicates a new work requirement. The extension can also be used to 
+  create test cases for scenarios discovered during exploration. 
+
+* **Collaborate with your team** by sharing your findings. 
+  Export your session report in Standalone mode, or connect to VSTS or
+  Team Foundation Server (2015 or later) for a fully integrated experience
+  including exploring user stories and backlog items, simplified tracking and triaging of 
+  bugs and tasks, and managing feedback requests in one place.
+
+As users perform exploratory testing, you can
+[get insights from the sessions](insights-exploratory-testing.md) in the **Test** hub of 
+VSTS or TFS. View completed exploratory sessions and derive meaningful
+insights across all the sessions. Get end-to-end traceability such as a breakdown 
+of the work items created, the work items explored and not explored, session owners,
+and more.
 
 <a name="stakeholder-feedback"></a>
 ## Stakeholder feedback

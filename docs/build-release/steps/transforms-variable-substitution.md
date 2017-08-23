@@ -108,7 +108,7 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
  
 1. Add an **Azure App Service Deploy** task and set (tick) the **XML transformation** option. 
 
-   ![Release definition for XML transformation](_img/release-definition.png)
+   ![Release definition for XML transformation](_img/release-definition2.png)
  
 1. Save the release definition and start a new release.
 
@@ -139,11 +139,11 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 * You can use this technique to create a default package and deploy it to multiple environments.
 
 * XML transformation takes effect only when the configuration file and transform file
-  reside within the same folder inside the specified package.
+  are in the same folder within the specified package.
  
 * Set the **Copy to Output Directory** property for the configuration transform files to **Copy If Newer**.
 
-* By default, MSBuild applies the transformation as it generates the web package by if the `<DependentUpon>` element
+* By default, MSBuild applies the transformation as it generates the web package if the `<DependentUpon>` element
   is already present in the transform file in the `*.csproj` file. In such cases, the **Azure App Service Deploy**
   task will fail because there is no further transformation applied on the `Web.config` file. Therefore, it is
   recommended that the `<DependentUpon>` element is removed from all the transform files to disable any build-time
@@ -209,7 +209,7 @@ As an example, consider the task of changing the following values in `Web.config
  
 1. Add an **Azure App Service Deploy** task and set (tick) the **XML variable substitution** option. 
 
-   ![Release definition for XML variable substitution](_img/release-definition2.png)
+   ![Release definition for XML variable substitution](_img/release-definition.png)
 
 1. Define the required values in release definition variables:
  
@@ -270,8 +270,8 @@ It overrides the values in the specified JSON configuration files
 and environment variables.
 
 To substitute variables in specific JSON files, provide newline-separated
-list of JSON files. Files names must be specified relative to the root folder. 
-For example, if your package has in this structure:
+list of JSON files. File names must be specified relative to the root folder. 
+For example, if your package has this structure:
 
 ```Folders
 /WebPackage(.zip)

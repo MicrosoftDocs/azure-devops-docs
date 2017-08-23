@@ -13,8 +13,7 @@ ms.date: 08/12/2016
  
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
 
-Use the Test &amp; Feedback extension (previously known as the
-Exploratory Testing extension) to explore existing work items and 
+Use the Test &amp; Feedback extension to explore existing work items and 
 associate them with a new or an in-progress exploratory session. 
 After a work item is associated with a session, all new bugs, tasks and test cases created 
 in the current session are automatically linked to that work item.

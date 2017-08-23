@@ -16,16 +16,15 @@ using Microsoft Test Runner. If you find an issue when testing,
 use Test Runner to create a bug. Test steps, screenshots, and comments 
 are automatically included in the bug. 
 
+In this example, you'll learn how to:
+
 * [Run tests for web apps](#run-web)
 * [Run tests for desktop apps](#run-desktop)
 
-You just need [Basic access](https://www.visualstudio.com/team-services/compare-features/) 
+> You just need [Basic access](https://www.visualstudio.com/team-services/compare-features/) 
 to run tests that have been assigned to you with Visual Studio Team Services (VSTS). 
-Learn more about the
-[access](https://www.visualstudio.com/pricing/visual-studio-online-pricing-vs) 
+Learn more about the [access](https://www.visualstudio.com/pricing/visual-studio-online-pricing-vs) 
 that you need for more advanced testing features.
-
-[Can I run tests offline and then import the results?](../reference-qa.md#runoffline)
 
 <a name="run-web"></a>
 ## Run tests for web apps
@@ -80,6 +79,8 @@ that you need for more advanced testing features.
    
    ![View bugs filed](_img/run-manual-tests/view-bugs.png)  
 
+[Can I run tests offline and then import the results?](../reference-qa.md#runoffline)
+
 <a name="run-desktop"></a>
 ## Run tests for desktop apps
 
@@ -103,10 +104,10 @@ However, if you want to collect more types of data, run your tests using
 
    ![Selecting the Test Runner and options](../_img/_shared/run-manual-tests-19.png)
 
-1. Choose **OK** to start testing. 
+1. Choose **OK** to start testing. For more information, see
+   [Collect diagnostic data](../collect-diagnostic-data.md#collect-desktop).
 
-For more information, see
-[Collect diagnostic data](../collect-diagnostic-data.md#collect-desktop).
+[Can I run tests offline and then import the results?](../reference-qa.md#runoffline)
 
 ## See also
 

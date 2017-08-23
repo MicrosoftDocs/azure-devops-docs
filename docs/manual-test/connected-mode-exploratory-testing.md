@@ -11,8 +11,7 @@ ms.date: 08/12/2016
 
 # Exploratory testing with the Test &amp; Feedback extension in Connected mode
  
-To use the Test &amp; Feedback extension (previously called the 
-Exploratory Testing extension) in **Connected** mode you must connect 
+To use the Test &amp; Feedback extension in **Connected** mode you must connect 
 to your VSTS account or TFS 2015 and later.
 This automatically configures the extension based on your access level: 
 
@@ -27,6 +26,14 @@ This automatically configures the extension based on your access level:
   by the team by choosing the **Provide feedback** link in the email.
   [More details](stakeholder/provide-stakeholder-feedback.md#email).
 
+In this example, you'll learn how to:
+
+* [Connect to VSTS or TFS](#connectvtfs)
+* [Create bugs or tasks](#create-bugs)
+* [Create test cases](#create-testcase)
+* [End your testing session](#endsession)
+
+<a name="connectvtfs"></a>
 ## Connect to VSTS or TFS
 
 1. If you want to use VSTS, and you haven't already done so, 
@@ -124,6 +131,7 @@ After you have connected, you are ready to begin testing your app.
 
 [How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
  
+<a name="create-testcase"></a>
 ## Create test cases
 
 The extension lets you create test cases as you explore your application.
@@ -146,6 +154,7 @@ The extension lets you create test cases as you explore your application.
 
 1. Continue exploring the application. Create more bugs, tasks, or test cases  as required. 
 
+<a name="endsession"></a>
 ## End your testing session
 
 1. When you're done, stop your session.

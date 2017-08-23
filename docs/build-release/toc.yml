@@ -196,6 +196,16 @@
         href: package/maven/install-private-packages-build.md
       - name: Publish packages
         href: package/maven/publish-packages-build.md
+  - name: Use Release Management
+    items:
+    - name: Releases and deployments
+      href: concepts/releases/index.md
+    - name: Work with release definitions
+      href: actions/work-with-release-definitions.md
+    - name: Create and deploy releases
+      href: actions/create-deploy-releases.md
+    - name: View and manage releases
+      href: actions/view-manage-releases.md
   - name: Migrate
     items:
     - name: Migrate from XAML builds

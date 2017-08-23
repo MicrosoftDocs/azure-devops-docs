@@ -18,10 +18,18 @@ meet your users' needs. Organize your test cases by adding test
 cases to test suites. Then choose which testers you want to run 
 the tests.
 
-1.  If you haven't already, 
+In this example, you'll learn how to:
+
+* [Create test cases](#createcase)
+* [Assign testers](#assigncase)
+
+<a name="createcase"></a>
+## Create test cases
+
+1. If you haven't already, 
    [create a test plan and requirement-based test suites](create-a-test-plan.md).
 
-2.  Select a requirement-based test suite, and then create a 
+1. Select a requirement-based test suite, and then create a 
    test case for that suite.
 
    ![Select the test suite for a backlog item, then choose New | New Test Case](_img/create-test-cases/CreateTest_1.png)
@@ -30,7 +38,7 @@ the tests.
    When you add a test case to this kind of suite, the test case is 
    linked automatically to the backlog item.
 
-3.  Add test steps with actions and expected results so that 
+1. Add test steps with actions and expected results so that 
    any team member can run the test. You can add attachments to 
    a step if you want.
 
@@ -38,7 +46,10 @@ the tests.
 
    Now you've created a test case that you can run.
 
-4.  You can reassign test cases so that another tester can 
+<a name="assigncase"></a>
+## Assign testers
+
+1. You can reassign test cases so that another tester can 
    run them. Select the tests that you want to reassign. Then 
    open the shortcut menu (choose the "..." ellipses or right-click) 
    and select the tester you want to run the tests.
@@ -50,7 +61,7 @@ the tests.
    
    ![On the test suite shortcut menu, choose Assign testers to run all tests](_img/create-test-cases/AssignMultipleTesters.png)
 
-   After you select the testers, you can email them so they
+1. After you select the testers, email them so they
    know the tests are ready for them to run. (You just need 
    [Basic access](https://www.visualstudio.com/products/visual-studio-online-Basic-vs)
    to run tests from VSTS.)

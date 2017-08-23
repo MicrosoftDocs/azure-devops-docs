@@ -18,8 +18,7 @@ at team or individual level, and for a specific period.
 
 1. Open the **Recent exploratory sessions** page. You can do this:
 
-   - From the Test &amp; Feedback extension (previously called the 
-     Exploratory Testing extension) by choosing the "view" icon on 
+   - From the Test &amp; Feedback extension by choosing the "view" icon on 
      the **Session timeline** page.
  
      ![Opening the insights page from the extension](_img/insights-exploratory-testing/insights-exploratory-testing-01.png)

@@ -15,12 +15,6 @@ Check your web app's performance before you launch it or deploy updates to produ
 That way, you can better assess whether your app is ready for release. Feel more
 confident that your app can handle the traffic during peak use or at your next marketing push.
 
-These tests simulate user load on your app over a specific time period and measure your app's response.
-For example, your test results show how fast your app responds to a specific number 
-of users. They also show how many requests failed, which might indicate problems with your app.      
-
-![Find performance problems in your web app](_img/app-service-web-app-performance-test/azure-np-perf-test-overview.png)
-
 In this example, you'll learn how to:
 
 * [Prepare your environment for load testing](#preparetests)

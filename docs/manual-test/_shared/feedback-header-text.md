@@ -2,8 +2,7 @@
 can respond to feedback requests for user stories and 
 features generated in VSTS or TFS using
 a lightweight end-to-end flow based on the 
-[Test &amp; Feedback extension](../getting-started/perform-exploratory-tests.md)
-(previously called the Exploratory Testing extension).
+[Test &amp; Feedback extension](../getting-started/perform-exploratory-tests.md).
 Only users with Basic access can request feedback. Basic users
 can provide feedback using the flow described in
 [this topic](../stakeholder/provide-stakeholder-feedback.md#non-stakeholder-feedback).
