@@ -134,7 +134,7 @@ drop
 
 1. Enable **Continuous integration**.
 
->  A continuous integration trigger on a build definition indicates that the system should automatically queue a new build whenever a code change is committed. You can make the trigger more general or more specific, and also schedule your build (for example, on a nightly basis). See [Build triggers](../define/triggers.md).
+>  A continuous integration trigger on a build definition indicates that the system should automatically queue a new build whenever a code change is committed. You can make the trigger more general or more specific, and also schedule your build (for example, on a nightly basis). See [Build triggers](../concepts/definitions/build/triggers.md).
 
 ## Save and queue the build
 
@@ -203,7 +203,7 @@ Write-Host Trigger: $trigger
 
  ![build summary powershell script log](_img/ci-cd/part-1/build-summary-powershell-script-log.png)
 
-> We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](../define/variables.md).
+> We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](../concepts/definitions/build/variables.md).
 
 ## Create a release definition
 
@@ -385,15 +385,15 @@ Or, if you decide to discard the draft, you can delete it from the **All Definit
 
 <h3 id="queueabuild">What else can I do when I queue a build?</h3>
 
-You can queue builds [automatically](../define/triggers.md) or manually.
+You can queue builds [automatically](../concepts/definitions/build/triggers.md) or manually.
 
 When you manually queue a build, you can, for a single run of the build:
 
 * Specify the [queue](../concepts/agents/pools-queues.md) into which the build goes.
 
-* Add and modify some [variables](../define/variables.md).
+* Add and modify some [variables](../concepts/definitions/build/variables.md).
 
-* Add [demands](../define/options.md#demands).
+* Add [demands](../concepts/definitions/build/options.md#demands).
 
 * In a Git repository
 
@@ -411,19 +411,19 @@ When you manually queue a build, you can, for a single run of the build:
 
 To learn more about build definition settings, see:
 
-* [Getting sources](../define/repository.md)
+* [Getting sources](../concepts/definitions/build/repository.md)
 
-* [Tasks](../define/build.md)
+* [Tasks](../steps/index.md)
 
-* [Variables](../define/variables.md)
+* [Variables](../concepts/definitions/build/variables.md)
 
-* [Triggers](../define/triggers.md)
+* [Triggers](../concepts/definitions/build/triggers.md)
 
-* [Options](../define/options.md)
+* [Options](../concepts/definitions/build/options.md)
 
 * [Retention](../concepts/policies/retention.md)
 
-* [History](../define/history.md)
+* [History](../concepts/definitions/build/history.md)
 
 ### How do I programmatically create a build definition?
 

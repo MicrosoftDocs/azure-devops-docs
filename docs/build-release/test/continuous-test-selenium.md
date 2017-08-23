@@ -239,7 +239,7 @@ the source code must be in version control.
 
    >It's generally advisable to use custom variables for parameter values, especially
    where the same value is used in the parameters of more than one task. You can also 
-   secure and hide values by using custom variables. See [Build Variables](../define/variables.md). 
+   secure and hide values by using custom variables. See [Build Variables](../concepts/definitions/build/variables.md). 
 
 1. Save the build definition and queue a new build.
 

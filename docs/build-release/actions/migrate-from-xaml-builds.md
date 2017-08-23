@@ -91,7 +91,7 @@ In each of the following sections we show the XAML user interface, and then prov
 |-|-|-|
 | Source Settings tab | On the **Repository** tab specify your mappings with Active paths as **Map** and Cloaked paths as **Cloak**. | On the **Tasks** tab, in left pane click **Get sources**. Specify your workspace mappings with Active paths as **Map** and Cloaked paths as **Cloak**. |
 
-The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build definition respository: TFVC](../define/repository.md#tfvc).
+The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build definition respository: TFVC](../concepts/definitions/build/repository.md#tfvc).
 
 #### Git
 
@@ -101,7 +101,7 @@ The new build definition offers you some new options. The specific extra options
 |-|-|-|
 | Source Settings tab | On the **Repository** tab specify the repository and default branch. | On the **Tasks** tab, in left pane click **Get sources**. Specify the repository and default branch. |
 
-The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build definition repository: Git](../define/repository.md#git).
+The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build definition repository: Git](../concepts/definitions/build/repository.md#git).
 
 ### Trigger tab
 
@@ -123,7 +123,7 @@ The new build definition offers you some new options. For example:
 
 * If your code is in Git, then you specify the branch filters directly on the **Triggers** tab. And you can add folder path filters to include or exclude certain sets of files from triggering a CI build.
 
-The specific extra options you'll see depend on the version you're using of TFS or VSTS. See [Build definition triggers](../define/triggers.md)
+The specific extra options you'll see depend on the version you're using of TFS or VSTS. See [Build definition triggers](../concepts/definitions/build/triggers.md)
 
 We don't yet support the **Build even if nothing has changed since the previous build** option.
 
@@ -154,7 +154,7 @@ The new build definition offers you some new options. For example:
 | Get version | You can't specify a changeset in the build definition, but you can specify one when you manually queue a build. | You can't specify a changeset in the build definition, but you can specify one when you manually queue a build. |
 | Label Sources | On the **Repository** tab, select an option from the **Label sources** menu. | **Tasks** tab, in left pane click **Get sources**. Select one of the **Tag sources** options. (We plan to change the name of this to **Label sources**.) |
 
-The new build definition offers you some new options. See [Build definition repository](../define/repository.md#tfvc).
+The new build definition offers you some new options. See [Build definition repository](../concepts/definitions/build/repository.md#tfvc).
 
 #### Git
 
@@ -165,7 +165,7 @@ The new build definition offers you some new options. See [Build definition repo
 | Clean repository | **Repository** tab, open **Clean** menu, select **true**. | On the **Tasks** tab, in left pane click **Get sources**. Show **Advanced settings**, and then select **Clean**. (We plan to change move this option out of advanced settings.) |
 | Checkout override | You can't specify a commit in the build definition, but you can specify one when you manually queue a build. | You can't specify a commit in the build definition, but you can specify one when you manually queue a build. |
 
-The new build definition offers you some new options. See [Build definition repository](../define/repository.md#git).
+The new build definition offers you some new options. See [Build definition repository](../concepts/definitions/build/repository.md#git).
 
 #### Build
 
@@ -223,7 +223,7 @@ The new build definition offers you some new options. See:
 
 * [Agent capabilities](../concepts/agents/agents.md#capabilities)
 
-* [Build number format](../define/options.md#build-number-format)
+* [Build number format](../concepts/definitions/build/options.md#build-number-format)
 
 ### Retention Policy tab
 
@@ -273,7 +273,7 @@ A few examples include:
 
 For more examples of apps you can build and deploy, see [Build and deploy your app](../apps/index.md).
 
-For a complete list of our build, test, and deployment tasks, see [Build and release tasks](../define/build.md).
+For a complete list of our build, test, and deployment tasks, see [Build and release tasks](../steps/index.md).
 
 ## Customize your tasks
 
@@ -300,7 +300,7 @@ A major feature of the new build system is its emphasis on using scripts to cust
 ![inline powershell script](_img/migrate-from-xaml-builds/inline-powershell-script.png)
 _TFS 2017 RTM inline PowerShell script_
 
-For all these tasks we offer a set of built-in variables, and if necessary, you can define your own variables. See [Build variables](../define/variables.md).
+For all these tasks we offer a set of built-in variables, and if necessary, you can define your own variables. See [Build variables](../concepts/definitions/build/variables.md).
 
 ### Write a custom task
 
@@ -312,7 +312,7 @@ In XAML builds you created custom XAML templates. In the new builds, it's easier
 
 ### Create a template
 
-If you don't see a template for the kind of app you can start from an empty definition and [add the tasks you need](../define/build.md). After you've got a pattern that you like, you can clone it or save it as a template directly in your web browser. See [CI/CD Hello world](ci-cd-part-1.md).
+If you don't see a template for the kind of app you can start from an empty definition and [add the tasks you need](../steps/index.md). After you've got a pattern that you like, you can clone it or save it as a template directly in your web browser. See [CI/CD Hello world](ci-cd-part-1.md).
 
 ### Task groups (TFS 2017 or newer)
 

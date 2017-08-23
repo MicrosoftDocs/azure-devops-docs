@@ -36,7 +36,7 @@ automatically with each build.
 
 * [Get started with continuous testing](getting-started-with-continuous-testing.md)
 * [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/)
-* [Learn more about test task steps](../define/build.md#test)
+* [Learn more about test task steps](../steps/index.md#test)
 * [An end-to-end example of continuous testing](example-continuous-testing.md)
 * [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
 

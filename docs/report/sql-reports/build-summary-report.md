@@ -73,7 +73,7 @@ The Build Summary lists builds and provides information about test results, test
   
 -   **Run builds regularly**. Builds can be run at set intervals or after every check-in. You can schedule regular builds when you use the schedule trigger.  
   
-     For more information, see [Build triggers](../../build-release/define/triggers.md).
+     For more information, see [Build triggers](../../build-release/concepts/definitions/build/triggers.md).
   
 -   (Optional) **Rate completed builds**. A team member can manually rate a build by using Build Explorer.  
   

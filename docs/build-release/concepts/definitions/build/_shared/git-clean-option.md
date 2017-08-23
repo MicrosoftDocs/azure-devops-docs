@@ -8,4 +8,4 @@
 
  Tip: In this case, if you are building Visual Studio projects, on the Build tab, you can also uncheck the Clean check box of the Visual Studio Build or MSBuild step.
 
-* This setting has no effect if you are using a [hosted agent](../../concepts/agents/hosted.md). 
+* This setting has no effect if you are using a [hosted agent](../../../../concepts/agents/hosted.md). 

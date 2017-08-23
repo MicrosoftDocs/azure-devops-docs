@@ -1,3 +1,3 @@
 ---
-redirect_url: /vsts/build-release/define/variables
+redirect_url: /vsts/build-release/concepts/definitions/build/variables
 ---

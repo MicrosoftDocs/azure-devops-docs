@@ -17,7 +17,7 @@ ms.date: 4/19/2017
 A **task** is the building block for defining automation in a
 build definition, or in an environment of a release definition.
 A task is simply a packaged script or procedure that has been
-abstracted with a set of inputs. We provide some [built-in tasks](../../define/build.md) 
+abstracted with a set of inputs. We provide some [built-in tasks](../../steps/index.md) 
 to enable fundamental build and deployment scenarios.
 
 In addition, [Visual Studio Marketplace](https://marketplace.visualstudio.com/VSTS)
@@ -86,7 +86,7 @@ Select the condition for running this task:
 * [Custom conditions](conditions.md)
 
 > [!NOTE]
-> If you're running tasks in cases when the build is canceled, then make sure you specify sufficient time for these tasks to run the [definition options](../../define/options.md#job-cancel-timeout).
+> If you're running tasks in cases when the build is canceled, then make sure you specify sufficient time for these tasks to run the [definition options](../../concepts/definitions/build/options.md#job-cancel-timeout).
 
 ### TFS 2015 and TFS 2017 options
 
@@ -150,7 +150,7 @@ node
 
 #### Variables tab
 
-On the [Variables tab](../../define/variables.md) define this variable:
+On the [Variables tab](../../concepts/definitions/build/variables.md) define this variable:
 
 |Name|Value|Settable at queue time|
 |-|-|-|
@@ -158,7 +158,7 @@ On the [Variables tab](../../define/variables.md) define this variable:
 
 #### Options tab
 
-On the [Options tab](../../define/options.md):
+On the [Options tab](../../concepts/definitions/build/options.md):
 
 0. Enable **Multi-configuration**.
 
@@ -176,12 +176,12 @@ Click **Save & queue**. Observe how two builds are run. The [Node Tool Installer
 
 ### Tool installer tasks
 
-For a list of our tool installer tasks, see [Tool installer tasks](../../define/build.md#tool).
+For a list of our tool installer tasks, see [Tool installer tasks](../../steps/index.md#tool).
 
 ## Related topics
 
 * [Task phases](phases.md)
 * [Task groups](../library/task-groups.md)
-* [Built-in task catalog](../../define/build.md)
+* [Built-in task catalog](../../steps/index.md)
  
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

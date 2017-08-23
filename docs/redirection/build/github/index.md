@@ -1,3 +1,3 @@
 ---
-redirect_url: /vsts/build-release/define/repository
+redirect_url: /vsts/build-release/concepts/definitions/build/repository
 ---

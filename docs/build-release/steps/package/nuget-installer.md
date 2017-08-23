@@ -75,7 +75,7 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 ```
 
 
-#### [Build](../../define/build.md) steps
+#### [Build](../../index.md) steps
 
 <table>
 <tr>

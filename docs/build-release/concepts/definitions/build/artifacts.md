@@ -139,7 +139,7 @@ For the full example, see [Build your C++ app for Windows](../../../apps/windows
 
 * Use forward slashes in file path arguments so that they work for all agents. Backslashes don't work for macOS and Linux agents.
 
-* On VSTS and some versions of TFS there are two different [variables](../../../define/variables.md) that point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable. 
+* On VSTS and some versions of TFS there are two different [variables](variables.md) that point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable. 
 
 * The directory referenced by `Build.ArtifactStagingDirectory` is cleaned up after each build.
 
@@ -157,7 +157,7 @@ Choose file share to copy the artifact to a file share. Some common reasons to d
 
 * You need to run some custom scripts or other tools against the artifact.
 
-If you use a file share, specify the UNC file path to the folder. You can control how the folder is created for each build using [variables](../../../define/variables.md). For example ```\\my\share\$(Build.DefinitionName)\$(Build.BuildNumber)```.
+If you use a file share, specify the UNC file path to the folder. You can control how the folder is created for each build using [variables](variables.md). For example ```\\my\share\$(Build.DefinitionName)\$(Build.BuildNumber)```.
 
 ## Task reference
 

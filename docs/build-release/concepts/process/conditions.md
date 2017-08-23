@@ -25,7 +25,7 @@ If the built-in conditions don't meet your needs, then you can specify **custom 
 
 Express the condition as a nested set of functions. The agent evaluates the innermost function and works its way out. The final result is a boolean value that determines if the task is run or not. Details on syntax are described below.
 
-Do any of your conditions make it possible for the task to run even after the build is canceled by a user? If so, then specify a reasonable value for **Build job cancel timeout in minutes** [in the options](../../define/options.md) so that these kinds of tasks have enough time to complete after the user clicks **Cancel**.
+Do any of your conditions make it possible for the task to run even after the build is canceled by a user? If so, then specify a reasonable value for **Build job cancel timeout in minutes** [in the options](../../concepts/definitions/build/options.md) so that these kinds of tasks have enough time to complete after the user clicks **Cancel**.
 
 ## Examples
 
@@ -182,13 +182,13 @@ Alias to reference a build variable. For example:
 
 Some of the more useful predefined variables include:
 
-* `Build.Reason` which you an use to check whether the build was the result of a [build trigger](../../define/triggers.md), a [Git PR affected by a branch policy](../../../git/branch-policies.md), or a [TFVC gated check-in](../../../tfvc/check-folder-controlled-by-gated-check-build-process.md).
+* `Build.Reason` which you an use to check whether the build was the result of a [build trigger](../../concepts/definitions/build/triggers.md), a [Git PR affected by a branch policy](../../../git/branch-policies.md), or a [TFVC gated check-in](../../../tfvc/check-folder-controlled-by-gated-check-build-process.md).
 
 * `Build.SourceBranch`
 
 * `Release.Artifacts.{artifact-alias}.SourceBranch`
 
-For details on these and other variables, including predefined variables and their possible values, see [Build variables](../../define/variables.md) and [Release variables](../../concepts/definitions/release/variables.md).
+For details on these and other variables, including predefined variables and their possible values, see [Build variables](../../concepts/definitions/build/variables.md) and [Release variables](../../concepts/definitions/release/variables.md).
 
 ## Job status functions
 

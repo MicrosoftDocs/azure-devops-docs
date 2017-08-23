@@ -59,7 +59,7 @@ None
 </tr>
 <tr>
 <td>Path to symbols folder </td>
-<td>The path to the folder you want to search for symbol files.  If you leave it blank, the path used is [Build.SourcesDirectory](../../define/variables.md).</td>
+<td>The path to the folder you want to search for symbol files.  If you leave it blank, the path used is [Build.SourcesDirectory](../../concepts/definitions/build/variables.md).</td>
 </tr>
 <tr>
 <th style="text-align: center" colspan="2">Advanced</th>
@@ -76,11 +76,11 @@ None
 </tr>
 <tr>
 <td>Product</td>
-<td>If you are publishing your symbols, you can specify the product parameter that is passed to symstore.exe. If blank, [$(Build.DefinitionName)](../../define/variables.md) is passed.</td>
+<td>If you are publishing your symbols, you can specify the product parameter that is passed to symstore.exe. If blank, [$(Build.DefinitionName)](../../concepts/definitions/build/variables.md) is passed.</td>
 </tr>
 <tr>
 <td>Version</td>
-<td>If you are publishing your symbols, you can specify the version parameter that is passed to symstore.exe.  If blank, [$(Build.BuildNumber)](../../define/variables.md) is passed.</td>
+<td>If you are publishing your symbols, you can specify the version parameter that is passed to symstore.exe.  If blank, [$(Build.BuildNumber)](../../concepts/definitions/build/variables.md) is passed.</td>
 </tr>
 <tr>
 <td>Artifact name</td>

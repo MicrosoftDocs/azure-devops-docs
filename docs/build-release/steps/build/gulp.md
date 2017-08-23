@@ -61,7 +61,7 @@ gulp
 
 ### Run gulp.js
 
-On the [Build](../../define/build.md) tab:
+On the [Build](../../index.md) tab:
 
 <table>
 <tr>

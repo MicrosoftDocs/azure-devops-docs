@@ -28,7 +28,7 @@ ms.date: 08/10/2016
 <td>Path</td>
 <td><p>Specify the path to the .bat or .cmd script you want to run. The path must be a fully qualified path or a valid path relative to the default working directory.</p>
 <p>
-In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../define/variables.md).</p>
+In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../concepts/definitions/build/variables.md).</p>
 </td>
 </tr>
 <tr>

@@ -37,13 +37,13 @@ Space-delimited list of actions.  Valid options are `build`, `clean`, `test`, `a
 <tr>
 <td>Configuration</td>
 <td>
-The default value is `$(Configuration)`. Make sure to specify a value (for example, `Release`) on the [variables tab](../../define/variables.md).
+The default value is `$(Configuration)`. Make sure to specify a value (for example, `Release`) on the [variables tab](../../concepts/definitions/build/variables.md).
 </td>
 </tr>
 <tr>
 <td>SDK</td>
 <td>
-The default value is `$(SDK)`. Make sure to specify a value (for example, `iphonesimulator`) on the [variables tab](../../define/variables.md).
+The default value is `$(SDK)`. Make sure to specify a value (for example, `iphonesimulator`) on the [variables tab](../../concepts/definitions/build/variables.md).
 </td>
 </tr>
 <tr>
@@ -98,7 +98,7 @@ Relative path to a PKCS12-formatted .p12 certificate file that contains a signin
 <td>P12 Password</td>
 <td>
 Password to the .p12 file.
-<blockquote><strong>Important: </strong> Use a [secret variable](../../define/variables.md) to avoid exposing this value.</blockquote>
+<blockquote><strong>Important: </strong> Use a [secret variable](../../concepts/definitions/build/variables.md) to avoid exposing this value.</blockquote>
 </td>
 </tr>
 <tr>
@@ -172,7 +172,7 @@ Working directory for the build. If you leave it blank, it is the root of the re
 <tr>
 <td>Output Directory</td>
 <td>
-Relative path where build output (binaries) will be placed. The default value includes build variables. Make sure to specify values on the [variables tab](../../define/variables.md).
+Relative path where build output (binaries) will be placed. The default value includes build variables. Make sure to specify values on the [variables tab](../../concepts/definitions/build/variables.md).
 </td>
 </tr>
 <tr>

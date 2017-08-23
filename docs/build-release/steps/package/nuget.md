@@ -99,7 +99,7 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 ```
 
 
-##### [Build](../../define/build.md) steps
+##### [Build](../../index.md) steps
 
 <table>
     <tr>
@@ -171,7 +171,7 @@ None
     <tr>
         <td>Package folder</td>
         <td>
-            (Optional) Specify the folder where you want to put the packages. You can use a [variable](../../define/variables.md) such as ```$(Build.ArtifactStagingDirectory)``` If you leave it empty, the package will be created in the root of your source tree.
+            (Optional) Specify the folder where you want to put the packages. You can use a [variable](../../concepts/definitions/build/variables.md) such as ```$(Build.ArtifactStagingDirectory)``` If you leave it empty, the package will be created in the root of your source tree.
         </td>
     </tr>
     <tr>
@@ -227,7 +227,7 @@ None
                 <li>Default value: ```$(Build.ArtifactStagingDirectory)/*.nupkg```</li>
                 <li>To publish a single package, click the <strong>...</strong> button and select the file.</li>
                 <li>Use single-folder wildcards (```*```) and recursive wildcards (```**```) to publish multiple packages.</li>
-                <li>Use [variables](../../define/variables.md) to specify directories. For example, if you specified ```$(Build.ArtifactStagingDirectory)\``` as the **package folder** in the pack step above, you could specify ```$(Build.ArtifactStagingDirectory)\**\*.nupkg``` here.</li>
+                <li>Use [variables](../../concepts/definitions/build/variables.md) to specify directories. For example, if you specified ```$(Build.ArtifactStagingDirectory)\``` as the **package folder** in the pack step above, you could specify ```$(Build.ArtifactStagingDirectory)\**\*.nupkg``` here.</li>
             </ul>
         </td>
     </tr>
@@ -300,13 +300,13 @@ You want to package and publish some projects in a C# class library to your VSTS
 Make sure your AssemblyInfo.cs files contain the information you want shown in your packages. For example, ```AssemblyCompanyAttribute``` will be shown as the author, and ```AssemblyDescriptionAttribute``` will be shown as the description.
 
 
-#### [Variables](../../define/variables.md) tab
+#### [Variables](../../concepts/definitions/build/variables.md) tab
 | Name | Value | 
 |---|---|
 |```$(BuildConfiguration)``` | ```release```|
 |```$(BuildPlatform)``` | ```any cpu```|
 
-#### [Options](../../define/options.md)
+#### [Options](../../concepts/definitions/build/options.md)
 | Setting | Value | 
 |---|---|
 | Build number format | ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```|

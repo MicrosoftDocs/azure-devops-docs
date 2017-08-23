@@ -13,7 +13,7 @@ ms.date: 08/10/2016
 
 **Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
-When you check in files to a version control folder that is controlled by a [gated check-in build process](../build-release/define/triggers.md), there are some additional steps that you must take to complete the check-in.
+When you check in files to a version control folder that is controlled by a [gated check-in build process](../build-release/concepts/definitions/build/triggers.md), there are some additional steps that you must take to complete the check-in.
 
 ![](_img/check-folder-controlled-by-gated-check-build-process/IC572351.png)
 **Required permissions**
@@ -102,7 +102,7 @@ If you want to proceed with the gated check-in operation and you do not plan to 
 
 #### Other Resources
 
- [Use a gated check-in build process to validate changes](../build-release/define/triggers.md) 
+ [Use a gated check-in build process to validate changes](../build-release/concepts/definitions/build/triggers.md) 
 
  [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411) 
 

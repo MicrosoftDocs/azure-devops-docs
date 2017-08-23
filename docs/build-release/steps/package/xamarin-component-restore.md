@@ -45,7 +45,7 @@ Xamarin account email address.</td>
 <td>Password</td>
 <td>
 <p>Xamarin account password.</p>
-<blockquote><strong>Important: </strong> Use a [secret variable](../../define/variables.md) to avoid exposing this value.</blockquote>
+<blockquote><strong>Important: </strong> Use a [secret variable](../../concepts/definitions/build/variables.md) to avoid exposing this value.</blockquote>
 </td>
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]

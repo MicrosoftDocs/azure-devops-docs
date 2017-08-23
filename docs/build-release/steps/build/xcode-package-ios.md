@@ -62,7 +62,7 @@ The SDK you want to use.  Run **xcodebuild -showsdks** to see a list of valid SD
 <td>
 Relative path to the built .app file.
 The default value is `$(SDK)/$(Configuration)/build.sym/$(Configuration)-$(SDK)`.
-Make sure to specify the variable values on the [variables tab](../../define/variables.md).
+Make sure to specify the variable values on the [variables tab](../../concepts/definitions/build/variables.md).
 </td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ Make sure to specify the variable values on the [variables tab](../../define/var
 <td>
 Relative path where the .ipa will be placed. The directory will be created if it doesn't exist.
 The default value is `$(SDK)/$(Configuration)/build.sym/$(Configuration)-$(SDK)/output`.
-Make sure to specify the variable values on the [variables tab](../../define/variables.md).
+Make sure to specify the variable values on the [variables tab](../../concepts/definitions/build/variables.md).
 </td>
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]

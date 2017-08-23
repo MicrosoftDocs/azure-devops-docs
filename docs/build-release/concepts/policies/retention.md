@@ -59,7 +59,7 @@ The **build destruction policy** helps you keep the builds for a certain period 
 
 ### Git repositories
 
-If your [repository type](../../define/repository.md) is one of the following, you can define multiple retention policies with branch filters:
+If your [repository type](../../concepts/definitions/build/repository.md) is one of the following, you can define multiple retention policies with branch filters:
 
 * Git in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 * GitHub
@@ -90,7 +90,7 @@ refs/pull/*
 
 ### TFVC and Subversion repositories
 
-For TFVC and Subversion [repository types](../../define/repository.md) you can modify a single policy with the same options shown above.
+For TFVC and Subversion [repository types](../../concepts/definitions/build/repository.md) you can modify a single policy with the same options shown above.
 
 ### Policy order
 

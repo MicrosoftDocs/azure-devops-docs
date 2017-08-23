@@ -39,7 +39,7 @@ None
 <li>Default value: ```**\*.nupkg;-:**\packages\**\*.nupkg```</li>
 <li>To publish a single package, click the <strong>...</strong> button and select the file.</li>
 <li>Use single-folder wildcards (```*```) and recursive wildcards (```**```) to publish multiple packages.</li>
-<li>Use [variables](../../define/variables.md) to specify directories. For example, if you specified ```$(Build.StagingDirectory)\packages``` as the **package folder** in the [NuGet Packager](nuget-packager.md) step, you could specify ```$(Build.StagingDirectory)\packages\**\*.nupkg``` here.</li>
+<li>Use [variables](../../concepts/definitions/build/variables.md) to specify directories. For example, if you specified ```$(Build.StagingDirectory)\packages``` as the **package folder** in the [NuGet Packager](nuget-packager.md) step, you could specify ```$(Build.StagingDirectory)\packages\**\*.nupkg``` here.</li>
 </ul>
 <!-- https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/NugetPublisher/task.json says you can specify multiple patterns separated by semicolons. That doesn't seem to work -->
 </td>

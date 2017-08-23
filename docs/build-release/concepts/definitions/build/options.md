@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Build definition options
 
-[!INCLUDE [temp](../_shared/version.md)]
+[!INCLUDE [temp](../../../_shared/version.md)]
 
 <!--
 <div style="padding:5px;border-bottom:1px solid #ccc;font-family:Segoe UI;font-size:13px;margin-bottom:15px">
@@ -120,14 +120,14 @@ You can also select if you want to assign the work item to the requestor. For ex
 | ```System.Title``` | ```Build $(Build.BuildNumber) failed``` |
 | ```System.Reason``` |  ```Build failure``` |
 
-**Q:** What other work item fields can I set? **A:**  [Work item field index](../../work/guidance/work-item-field.md)
+**Q:** What other work item fields can I set? **A:**  [Work item field index](../../../../work/guidance/work-item-field.md)
 
 
 ## Allow scripts to access the OAuth token
 
 Select this check box if you want to enable your script to use the build process OAuth token.
 
-For an example, see [Use a script to customize your build process](../scripts/index.md).
+For an example, see [Use a script to customize your build process](../../../scripts/index.md).
 
 
 ## Default agent queue
@@ -135,9 +135,9 @@ For an example, see [Use a script to customize your build process](../scripts/in
 >
 > This section is available under <b>General<b> tab.
 
-Select the [queue](../concepts/agents/pools-queues.md) that's attached to the pool that contains the agents you want to run this definition.
+Select the [queue](../../../concepts/agents/pools-queues.md) that's attached to the pool that contains the agents you want to run this definition.
 
-**Tip:**  If your code is in Visual Studio Team Services (VSTS) and you run your builds on Windows, in many cases the simplest option is use the [Hosted pool](../concepts/agents/hosted.md).
+**Tip:**  If your code is in Visual Studio Team Services (VSTS) and you run your builds on Windows, in many cases the simplest option is use the [Hosted pool](../../../concepts/agents/hosted.md).
 
 ## Build job authorization scope
 > **TFS 2017 Update 1 and older**
@@ -163,7 +163,7 @@ Specify the maximum time a build job is allowed to execute on an agent before be
 
 Specify the maximum time a build job is allowed to respond after the a user cancels the build. You can specify a value from 1 to 60 minutes.
 
-Set this value to allow sufficient time for tasks to complete in cases where you've specified to **Run this task** as **Even if a previous task has failed, even if the build was cancelled** or as **Custom conditions** that allow a task to [always run](../concepts/process/conditions.md#always) after cancellation.
+Set this value to allow sufficient time for tasks to complete in cases where you've specified to **Run this task** as **Even if a previous task has failed, even if the build was cancelled** or as **Custom conditions** that allow a task to [always run](../../../concepts/process/conditions.md#always) after cancellation.
 
 Whatever value you set here, the **Build job timeout in minutes** limit still applies. For example:
 
@@ -188,7 +188,7 @@ Use demands to make sure that the capabilities your build needs are present on t
 
 ### Build step demands
 
-Some build steps won't run unless one or more demands are met by the build agent. For example, the [Visual Studio Build](../steps/build/visual-studio-build.md) step demands that ```msbuild``` and ```visualstudio``` are installed on the build agent. If your build [includes steps](build.md) that have demands, they are listed first.
+Some build steps won't run unless one or more demands are met by the build agent. For example, the [Visual Studio Build](../../../steps/build/visual-studio-build.md) step demands that ```msbuild``` and ```visualstudio``` are installed on the build agent. If your build [includes steps](../../../steps/index.md) that have demands, they are listed first.
 
 ### Manually entered demands
 
@@ -203,7 +203,7 @@ Add the demand to your build definition.
 Register each build agent that has the capability.
 
 0. Go to the Agent pools tab at the root of the control panel:
-[!INCLUDE [agent-pools-tab](../concepts/agents/_shared/agent-pools-tab.md)]
+[!INCLUDE [agent-pools-tab](../../../concepts/agents/_shared/agent-pools-tab.md)]
 
 0. Click the agent, and then click **Capabilities**
 
@@ -217,7 +217,7 @@ Register each build agent that has the capability.
 
 ## Multi-configuration
 
-Select this option to build multiple configurations. For example, you could build a C++ app for both debug and release configurations on both x86 and x64 platforms. For details about this example, see [Visual Studio Build](../steps/build/visual-studio-build.md).
+Select this option to build multiple configurations. For example, you could build a C++ app for both debug and release configurations on both x86 and x64 platforms. For details about this example, see [Visual Studio Build](../../../steps/build/visual-studio-build.md).
 
 ## Q&A
 
@@ -229,8 +229,8 @@ If you are using VSTS, then the time zone is UTC.
 
 If you are using an on-premises Team Foundation Server, then the time zone is the same as the time zone of the operating system of the machine where you are running your application tier server.
 
-[!INCLUDE [temp](../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->

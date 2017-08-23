@@ -77,7 +77,7 @@ ls -1 $BUILD_SOURCESDIRECTORY
 echo "Over and out."
 ```
 
-On the [Build tab](../../define/build.md) of a build definition, add this step:
+On the [Build tab](../../index.md) of a build definition, add this step:
 
 <table>
 <tr>

@@ -45,7 +45,7 @@ Specify the username for server authentication.
 <td>Password</td>
 <td>
 <p>Specify the password for server authentication.</p>
-<blockquote><strong>Important: </strong> Use a [secret variable](../../define/variables.md) to avoid exposing this value.</blockquote>
+<blockquote><strong>Important: </strong> Use a [secret variable](../../concepts/definitions/build/variables.md) to avoid exposing this value.</blockquote>
 </td>
 </tr>
 <tr>

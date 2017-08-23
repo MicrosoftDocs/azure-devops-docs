@@ -10,4 +10,4 @@ The control options arguments described above can also be useful when you're try
 
 #### Q: How do variables work? What variables are available for me to use in the arguments? 
 
-A: ```$(Build.SourcesDirectory)``` and ```$(Agent.BuildDirectory)``` are just a few of the variables you can use. See [Variables](../../define/variables.md).
+A: ```$(Build.SourcesDirectory)``` and ```$(Agent.BuildDirectory)``` are just a few of the variables you can use. See [Variables](../../concepts/definitions/build/variables.md).

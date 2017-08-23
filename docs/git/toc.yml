@@ -120,7 +120,7 @@
     - name: Branch permissions
       href: branch-permissions.md
   - name: Set up continuous integration
-    href: ../build-release/define/triggers.md
+    href: ../build-release/concepts/definitions/build/triggers.md
 - name: Reference
   items:
   - name: Command reference

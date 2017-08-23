@@ -43,15 +43,15 @@
       - name: Artifacts
         href: concepts/definitions/build/artifacts.md
       - name: History
-        href: define/history.md
+        href: concepts/definitions/build/history.md
       - name: Options
-        href: define/options.md
+        href: concepts/definitions/build/options.md
       - name: Repository
-        href: define/repository.md
+        href: concepts/definitions/build/repository.md
       - name: Triggers
-        href: define/triggers.md
+        href: concepts/definitions/build/triggers.md
       - name: Variables
-        href: define/variables.md
+        href: concepts/definitions/build/variables.md
     - name: Release
       items:
       - name: Release definitions
@@ -211,7 +211,7 @@
     - name: Migrate from XAML builds
       href: actions/migrate-from-xaml-builds.md
 - name: Reference
-  href: define/build.md
+  href: steps/index.md
   items:
   - name: Build tasks
     items:

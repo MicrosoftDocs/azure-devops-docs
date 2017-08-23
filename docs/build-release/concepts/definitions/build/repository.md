@@ -31,7 +31,7 @@ At the beginning of the build process, the build agent downloads the files from 
 
 **Branch** (default): Select the branch that you want to be the default when you manually queue this build.
 
-> If you're using the [New Build Editor](../news/2017.md#january-25), then click **Advanced settings** to see the following options.
+> If you're using the [New Build Editor](../../../news/2017.md#january-25), then click **Advanced settings** to see the following options.
 
 [!INCLUDE [temp](_shared/git-clean-option.md)]
 
@@ -50,11 +50,11 @@ Note: Some build variables might yield a value that is not a valid label. For ex
 
 **Mappings** (workspace): Include with a type value of **Map** only the folders that your build process requires. If a subfolder of a mapped folder contains files that the build process does not require, map it with a type value of **Cloak**. [When would I need to change TFVC mappings. How should I do it?](#tfvc_mappings)
 
-> If you're using the [New Build Editor](../news/2017.md#january-25), then click **Advanced settings** to see the following options.
+> If you're using the [New Build Editor](../../../news/2017.md#january-25), then click **Advanced settings** to see the following options.
 
 [!INCLUDE [include](_shared/label-sources.md)]
 
-The build process labels your sources with a [TFVC label](../../tfvc/use-labels-take-snapshot-your-files.md).
+The build process labels your sources with a [TFVC label](../../../../tfvc/use-labels-take-snapshot-your-files.md).
 
 **Clean:**
 
@@ -70,7 +70,7 @@ The build process labels your sources with a [TFVC label](../../tfvc/use-labels-
 
  Tip: In this case, if you are building Visual Studio projects, on the Build tab, you can also uncheck the Clean check box of the Visual Studio Build or MSBuild step.
 
-* This setting has no effect if you are using a [hosted agent](../concepts/agents/hosted.md).
+* This setting has no effect if you are using a [hosted agent](../../../concepts/agents/hosted.md).
 
 ## GitHub
 
@@ -123,7 +123,7 @@ This is the easier way to authorize your account. This approach grants your VSTS
 
 **Default branch:**  Select the branch that you want to be the default when you manually queue this build.
 
-> If you're using the [New Build Editor](../news/2017.md#january-25), then click **Advanced settings** to see the following options.
+> If you're using the [New Build Editor](../../../news/2017.md#january-25), then click **Advanced settings** to see the following options.
 
 [!INCLUDE [temp](_shared/git-clean-option.md)]
 
@@ -147,7 +147,7 @@ This is the easier way to authorize your account. This approach grants your VSTS
 
 **Branch** (default):  Select the branch that you want to be the default when you manually queue this build.
 
-> If you're using the [New Build Editor](../news/2017.md#january-25), then click **Advanced settings** to see the following options.
+> If you're using the [New Build Editor](../../../news/2017.md#january-25), then click **Advanced settings** to see the following options.
 
 [!INCLUDE [temp](_shared/git-clean-option.md)]
 
@@ -155,7 +155,7 @@ This is the easier way to authorize your account. This approach grants your VSTS
 
 ## Subversion
 
-You can build code you manage in Subversion. You must install the Subversion client on your [build agents](../concepts/agents/agents.md#install).
+You can build code you manage in Subversion. You must install the Subversion client on your [build agents](../../../concepts/agents/agents.md#install).
 
 ## Q&A  
 
@@ -165,7 +165,7 @@ You can build code you manage in Subversion. You must install the Subversion cli
 
 ### How do I reference the sources directory on the build agent?
 
-Use the [Build.SourcesDirectory variable](../define/variables.md).
+Use the [Build.SourcesDirectory variable](variables.md).
 
 
 ### What kinds of submodules can I check out?
@@ -204,14 +204,14 @@ When you remove projects, look for mappings that you can remove from the workspa
 
 If this is a CI build, in most cases you should make sure that these mappings match the match the filter settings of your CI trigger on the [Triggers tab](triggers.md).
 
-For more information on how to optimize a TFVC workspace, see [Optimize your workspace](../../tfvc/optimize-your-workspace.md).
+For more information on how to optimize a TFVC workspace, see [Optimize your workspace](../../../../tfvc/optimize-your-workspace.md).
 
 ### Is it possible to disable downloading files?
 
 If you want to disable downloading sources, define `Build.SyncSources` on the [variables tab](variables.md) and set it to false.
 
-[!INCLUDE [temp](../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->

@@ -47,7 +47,7 @@ AndroidSDK, MSBuild, Xamarin.Android
 <tr>
 <td>Output Directory</td>
 <td>
-Use a [variable](../../define/variables.md) to specify the folder where you want the output files to go. For example: ```$(build.binariesdirectory)/$(BuildConfiguration)```
+Use a [variable](../../concepts/definitions/build/variables.md) to specify the folder where you want the output files to go. For example: ```$(build.binariesdirectory)/$(BuildConfiguration)```
 </td>
 </tr>
 <tr>

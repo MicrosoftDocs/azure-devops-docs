@@ -103,7 +103,7 @@ If your repository is Git, GitHub, or External Git, then you can also specify br
 
 <h2 id="gated">TFVC gated check-in</h2>
 
-If your code is in a [Team Foundation version control (TFVC)](../../tfvc/overview.md) repo, use gated check-in to protect against breaking changes.
+If your code is in a [Team Foundation version control (TFVC)](../../../../tfvc/overview.md) repo, use gated check-in to protect against breaking changes.
 
 By default **Use workspace mappings for filters** is selected. Builds are triggered whenever a change is checked in under a path specified in your mappings on the [repository tab](repository.md#tfvc).
 
@@ -113,11 +113,11 @@ Otherwise, you can clear this check box and specify the paths in the trigger.
 
 When a developers try to check-in, they are prompted to build their changes.
 
-![Gated check-in prompt](../define/_img/triggers/tfvc-gated-check-in-prompt.png)
+![Gated check-in prompt](_img/triggers/tfvc-gated-check-in-prompt.png)
 
 The system then creates a shelveset and builds it.
 
-For details on the gated check-in experience, see [Check in to a folder that is controlled by a gated check-in build process](../../tfvc/check-folder-controlled-by-gated-check-build-process.md).
+For details on the gated check-in experience, see [Check in to a folder that is controlled by a gated check-in build process](../../../../tfvc/check-folder-controlled-by-gated-check-build-process.md).
 
 
 ### Option to run CI builds
@@ -129,9 +129,9 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 
 ### A few other things to know
 
-* Make sure the folders you include in your trigger are also included in your mappings on the [Repository tab](../define/repository.md).
+* Make sure the folders you include in your trigger are also included in your mappings on the [Repository tab](repository.md).
 
-* You can run gated builds on either a [hosted agent](../concepts/agents/hosted.md) or a [windows agent](../actions/agents/v2-windows.md). You cannot run them on the cross-platform agent.
+* You can run gated builds on either a [hosted agent](../../../concepts/agents/hosted.md) or a [windows agent](../../../actions/agents/v2-windows.md). You cannot run them on the cross-platform agent.
 
 
 ## Q&A
@@ -141,7 +141,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 
 ### How do I protect my Git codebase from build breaks?
 
-If your code is in a Git repo on Visual Studio Team Services or Team Foundation Server, you can create a branch policy that runs your build. See [Improve code quality with branch policies](../../git/branch-policies.md). This option is not available for GitHub repos.
+If your code is in a Git repo on Visual Studio Team Services or Team Foundation Server, you can create a branch policy that runs your build. See [Improve code quality with branch policies](../../../../git/branch-policies.md). This option is not available for GitHub repos.
 
 ### My build didn't run. What happened?
 
@@ -157,8 +157,8 @@ For example, while your account is dormant:
 
 Not yet. See [User Voice: Provide build configuration dependencies in TFS Build](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/2165043-provide-build-configuration-dependencies-in-tfs-bu).
 
-[!INCLUDE [temp](../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->

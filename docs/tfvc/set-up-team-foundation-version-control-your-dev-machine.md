@@ -106,7 +106,7 @@ You’ve already got an app in progress and you want to begin working on it unde
 
 ## Try this next
 
- [Set up a CI build](../build-release/define/triggers.md) 
+ [Set up a CI build](../build-release/concepts/definitions/build/triggers.md) 
 
 ## Dig deeper
 

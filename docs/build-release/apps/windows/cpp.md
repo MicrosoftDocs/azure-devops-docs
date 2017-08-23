@@ -37,7 +37,7 @@ In this section we'll create a build definition for your C++ app.
 
 ### Build steps
 
-On the [build tab](../../define/build.md) you'll see build steps.
+On the [build tab](../../steps/index.md) you'll see build steps.
 
 > [!IMPORTANT]
 > Make sure the Copy Files step is set up to copy the artifacts that your team needs. See below for an example.
@@ -101,7 +101,7 @@ On the [build tab](../../define/build.md) you'll see build steps.
 
 ### Variables
 
-On the [Variables tab](../../define/variables.md) define these variables:
+On the [Variables tab](../../concepts/definitions/build/variables.md) define these variables:
 
 |Name|Value|
 |-|-|
@@ -110,7 +110,7 @@ On the [Variables tab](../../define/variables.md) define these variables:
 
 ### Options
 
-On the [Options tab](../../define/options.md):
+On the [Options tab](../../concepts/definitions/build/options.md):
 
 0. Select **Multi-configuration**.
 
@@ -123,7 +123,7 @@ BuildConfiguration, BuildPlatform
 
 ### Triggers
 
-On the [Triggers](../../define/triggers.md) tab, make sure **Continuous integration (CI)** is selected and that you're including the branches you want to build. For example, if you want the build to run for any branch, you can include `*`.
+On the [Triggers](../../concepts/definitions/build/triggers.md) tab, make sure **Continuous integration (CI)** is selected and that you're including the branches you want to build. For example, if you want the build to run for any branch, you can include `*`.
 
 Optionally, you can specify that your build is run on a schedule. For example, you can make it a nightly build.
 

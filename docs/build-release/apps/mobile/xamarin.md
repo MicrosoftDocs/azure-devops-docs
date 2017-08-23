@@ -69,7 +69,7 @@ You'll need some agents to run your builds.
 
 ### Variables
 
-On the [Variables tab](../../define/variables.md):
+On the [Variables tab](../../concepts/definitions/build/variables.md):
 
 <table>
     <thead>
@@ -87,7 +87,7 @@ On the [Variables tab](../../define/variables.md):
 
 ### Build steps
 
-On the [build tab](../../define/build.md):
+On the [build tab](../../steps/index.md):
 
 <table>
 <tr>
@@ -259,7 +259,7 @@ To fix this issue:
 
 ### Variables
 
-On the [Variables tab](../../define/variables.md):
+On the [Variables tab](../../concepts/definitions/build/variables.md):
 
 <table>
     <thead>
@@ -276,7 +276,7 @@ On the [Variables tab](../../define/variables.md):
 
 ### Build steps
 
-On the [build tab](../../define/build.md):
+On the [build tab](../../steps/index.md):
 
 <table>
 <tr>
@@ -348,7 +348,7 @@ Solution: Click the <strong>...</strong> button and select your solution.
 
 ### Variables
 
-On the [variables tab](../../define/variables.md):
+On the [variables tab](../../concepts/definitions/build/variables.md):
 
 <table>
     <thead>
@@ -370,7 +370,7 @@ On the [variables tab](../../define/variables.md):
 
 ### Build steps
 
-On the [build tab](../../define/build.md):
+On the [build tab](../../steps/index.md):
 
 
 <table>
@@ -456,7 +456,7 @@ If you want to build your UWP app at the solution level, you should first config
 
 #### Add UWP Release to the variables
 
-On the [variables tab](../../define/variables.md):
+On the [variables tab](../../concepts/definitions/build/variables.md):
 
 <table>
     <thead>
@@ -478,7 +478,7 @@ On the [variables tab](../../define/variables.md):
 
 #### Modify the steps to build the solution
 
-On the [build tab](../../define/build.md):
+On the [build tab](../../steps/index.md):
 
 <table>
 <tr>

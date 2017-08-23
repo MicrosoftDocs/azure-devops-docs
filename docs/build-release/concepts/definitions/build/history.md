@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Build definition history
 
-[!INCLUDE [temp](../_shared/version.md)]
+[!INCLUDE [temp](../../../_shared/version.md)]
 
 <!--
 <div style="padding:5px;border-bottom:1px solid #ccc;font-family:Segoe UI;font-size:13px;margin-bottom:15px">
@@ -36,8 +36,8 @@ From the **History** tab you can see a list of changes that includes who made th
 
 No
 
-[!INCLUDE [temp](../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->

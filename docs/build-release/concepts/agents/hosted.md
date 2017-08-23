@@ -57,7 +57,7 @@ If our hosted agents don't meet your needs, then you can [deploy your own privat
 
 ## Avoid hard coded references
 
-When you use a hosted agent, you should always use [variables](../../define/variables.md) to construct any references to resources used by your build. We recommend you avoid making hard-coded presumptions about resources provided by the hosted agent (for example, the drive letter of folder that contains the repo).
+When you use a hosted agent, you should always use [variables](../../concepts/definitions/build/variables.md) to construct any references to resources used by your build. We recommend you avoid making hard-coded presumptions about resources provided by the hosted agent (for example, the drive letter of folder that contains the repo).
 
 <h2 id="software">Software</h2>
 
