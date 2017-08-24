@@ -133,11 +133,50 @@ To register an agent, you need to be a member of the [administrator role](pools-
 
 <h2 id="account">Interactive vs. service</h2>
 
-You can run your agent as either a service or an interactive process. After you've configured the agent, we recommend that you first try it in interactive mode to make sure it works. Also, in some cases you might need to run the agent interactively for production use. For example, if you need to run an elevated process or run UI tests.
+You can run your agent as either a service or an interactive process.
+Whether you run an agent as a service or interactively, you can choose
+which account you use to run the agent. Note that this is different
+from the credentials that you use when you register the agent with
+VSTS or TFS. The choice of agent account depends solely on the needs
+of the tasks running in your build and deployment jobs.
 
-After you've verified that the agent is working, for production use, we recommend that you run the agent as a service. The main advantage is that the agent stays more reliably in a running state. For example, it starts automatically when you restart the machine and after some kinds of failures. You can leverage the service manager of the operating system to manage the life cycle of the agent. Also, the experiences for auto-upgrading agents are better when they are run as services.
+For example, to run tasks that use Windows authentication to access an external
+service, you must run the agent using an account that has access
+to that service. However, if you are running UI tests such as Selenium or Coded UI tests that
+require a browser, the browser is launched in the context of the agent account.
 
-Whether you run an agent as a service or interactively, you can choose which account you use to run the agent. Note that this is different from the credentials that you use when you register the agent with VSTS or TFS. The choice of agent account depends solely on the needs of the tasks running in your build and deployment jobs. For instance, to  run tasks that use Windows authentication to access an external service, you need to run the agent using an account that has access to that service.
+After you've configured the agent, we recommend you first try it
+in interactive mode to make sure it works. Then, for production use,
+we recommend you run the agent in one of the following modes so
+that it reliably remains in a running state. These modes also
+ensure that the agent starts automatically if the machine is restarted. 
+
+1. **As a service**. You can leverage the service manager of the
+   operating system to manage the lifecycle of the agent. In addition, the
+   experience for auto-upgrading the agent is better when it is run
+   as a service.
+
+1. **As an interactive process with auto-logon enabled**. In some cases,
+   you might need to run the agent interactively for production use -
+   such as to run UI tests. When the agent is configured to run in this
+   mode, the screen saver is also disabled. Some domain policies may
+   prevent you from enabling auto-logon or disabling the screen saver. In
+   such cases, you may need to seek an exemption from the domain policy,
+   or run the agent on a workgroup computer where the domain policies
+   do not apply. 
+
+   **Note:** There are security risks when you enable automatic logon
+   or disable the screen saver because you enable other users to walk
+   up to the computer and use the account that automatically logs on. If you configure the agent to run
+   in this way, you must ensure the computer is physically protected;
+   for example, located in a secure facility. If you use
+   Remote Desktop to access the computer on which an agent is running
+   with auto-logon, simply closing the Remote Desktop causes the
+   computer to be locked and any UI tests that run on this agent may
+   fail. To avoid this, use the [tscon](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/tscon)
+   command to disconnect from Remote Desktop. For example:
+
+   `%windir%\System32\tscon.exe 1 /dest:console`
 
 ## Agent version and upgrades
 
