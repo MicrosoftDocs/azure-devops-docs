@@ -15,7 +15,7 @@ You can build custom applications or services that integrate with your Visual St
 
 Along with interacting with VSTS or TFS in your application, you can also integrate with popular third-party services such as Slack or Jenkins.
 
-## 5-minute Quickstarts 
+## 5-Minute Quickstarts 
 Check out the quick starts to get you started:
 * [Create a bug](./quickstarts/create-bug-quickstart.md)
 * [Get work items using queries](./quickstarts/work-item-quickstart.md)
@@ -32,7 +32,7 @@ Check out the quick starts to get you started:
 ## Samples
 * [Custom application samples](./get-started/client-libraries/samples.md)
 
-## How-to
+## How-to Guides
 * [Authenticate with PATs](./get-started/authentication/pats.md)
 * [Authenticate with OAuth 2.0](./get-started/authentication/oauth.md)
 * [Create service hooks subscriptions programmatically](../service-hooks/create-subscription.md?toc=/vsts/integrate/toc.json)
