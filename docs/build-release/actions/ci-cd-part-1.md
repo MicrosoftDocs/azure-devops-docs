@@ -304,7 +304,7 @@ We hope this tutorial gave you an understanding of the basic concepts of Team Bu
 
 * [ASP.NET](../apps/aspnet/ci/build-aspnet-4.md)
 
-* [ASP.NET core](../apps/aspnet/ci/build-aspnet-core.md)
+* [ASP.NET core](../apps/aspnet/build-aspnet-core.md)
 
 * [Node.js](../apps/nodejs/nodejs-to-azure.md)
 

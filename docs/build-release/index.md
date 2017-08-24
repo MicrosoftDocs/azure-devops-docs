@@ -22,12 +22,12 @@ Learn how to build your app.
 <table>
 <tr valign="middle" align="center">
 <!--
-<td>![ASP.NET core](_img/index/logo_net.svg)<br/>[ASP.NET Core](apps/aspnet/ci/build-aspnet-core.md)</td>
+<td>![ASP.NET core](_img/index/logo_net.svg)<br/>[ASP.NET Core](apps/aspnet/build-aspnet-core.md)</td>
 <td>![ASP.NET](_img/index/logo_net.svg)<br/>[ASP.NET](apps/aspnet/ci/build-aspnet-4.md)</td>
 <td>![Node.js](_img/index/logo_nodejs.svg)<br/>[Node.js](apps/nodejs/quick-to-azure.md)</td>
 <td>![Java](_img/index/logo_java.svg)<br/>[Java](apps/java/quick-to-azure.md)</td>
 -->
-<td>[ASP.NET Core](apps/aspnet/ci/build-aspnet-core.md)</td>
+<td>[ASP.NET Core](apps/aspnet/build-aspnet-core.md)</td>
 <td>[ASP.NET](apps/aspnet/ci/build-aspnet-4.md)</td>
 <td>[Node.js](apps/nodejs/quick-to-azure.md)</td>
 <td>[Java](apps/java/quick-to-azure.md)</td>

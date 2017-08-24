@@ -36,7 +36,7 @@ With your CI/CD processes in place, you'll push a change into your team's Git re
 
 ## Import code for sample app into VSTS
 
-[!INCLUDE [include](../build-release/apps/aspnet/ci/_shared/import-code-aspnet-core-vsts.md)]
+[!INCLUDE [include](../build-release/apps/aspnet/_shared/import-code-aspnet-core-vsts.md)]
 
 <a name="create-webapp-portal"></a>
 

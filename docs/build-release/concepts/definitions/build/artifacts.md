@@ -123,7 +123,7 @@ For the full example, see [Build your C++ app for Windows](../../../apps/windows
 
 ### Other examples
 
-[ASP.NET Core](../../../apps/aspnet/ci/build-aspnet-core.md)
+[ASP.NET Core](../../../apps/aspnet/build-aspnet-core.md)
 
 [Node.js](../../../apps/nodejs/nodejs-to-azure.md)
 

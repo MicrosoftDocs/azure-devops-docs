@@ -63,7 +63,7 @@ When `net start w3svc` appears, press **Enter** to run it.
 
 ## Import code for sample app into VSTS
 
-[!INCLUDE [include](../build-release/apps/aspnet/ci/_shared/import-code-aspnet-core-vsts.md)]
+[!INCLUDE [include](../build-release/apps/aspnet/_shared/import-code-aspnet-core-vsts.md)]
 
 [//]: # (TODO: we want factoring of include like above so we can reuse stock fragments that appear in many many places)
 
@@ -73,17 +73,17 @@ When `net start w3svc` appears, press **Enter** to run it.
 
 [//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-[//]: # (TODO: [!INCLUDE [include](../build-release/apps/aspnet/ci/_shared/create-aspnet-core-build-team-services.md])
+[//]: # (TODO: [!INCLUDE [include](../build-release/apps/_shared/create-aspnet-core-build-team-services.md])
 
 1. On the **Files** tab of the **Code** hub, click **Set up build**.
 
- ![Screenshot showing button to set up build for a repository](../build-release/apps/aspnet/ci/_shared/_img/set-up-first-build-from-code-hub.png)
+ ![Screenshot showing button to set up build for a repository](../build-release/apps/_shared/_img/set-up-first-build-from-code-hub.png)
 
  You are taken to the **Build & Release** hub in VSTS and asked to **Choose a template**.
 
 1. In the right panel, click **ASP.NET Core**, and then click **Apply**.
 
- ![Screenshot showing dotnet core template](../build-release/apps/aspnet/ci/_shared/_img/apply-aspnet-core-build-template.png)
+ ![Screenshot showing dotnet core template](../build-release/apps/aspnet/_shared/_img/apply-aspnet-core-build-template.png)
 
  You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time check in code.
 
@@ -93,7 +93,7 @@ When `net start w3svc` appears, press **Enter** to run it.
 
 1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
 
-1. A new build is started. You will see a link to the new build on the top of the page. Click the link to watch the new build as it happens. Wait for the build to complete and succeed before proceeding to the next section.
+A new build is started. You will see a link to the new build on the top of the page. Click the link to watch the new build as it happens. Wait for the build to complete and succeed before proceeding to the next section.
 
 [//]: # (TODO)
 

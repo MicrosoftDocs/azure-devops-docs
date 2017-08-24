@@ -26,7 +26,7 @@ Before you begin, you'll need a CI build that publishes your Web Deploy package.
 
 * [Build your ASP.NET 4 app](../aspnet/ci/build-aspnet-4.md)
 
-* [Build your ASP.NET Core app](../aspnet/ci/build-aspnet-core.md)
+* [Build your ASP.NET Core app](../aspnet/build-aspnet-core.md)
 
 * [Build your Node app with Gulp](../nodejs/nodejs-to-azure.md)
 
