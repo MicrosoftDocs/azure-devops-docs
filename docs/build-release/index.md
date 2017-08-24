@@ -15,18 +15,39 @@ layout: LandingPage
 
 Visual Studio Team Services and Team Foundation Server help you implement a highly customizable continuous integration (CI) and deployment (CD) pipeline for your .NET, Java, Node, PHP, or Python apps. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
 
-
 ## 5-Minute Quickstarts
 
-Learn how to build your app and deploy it to your choice of Azure service.
+Learn how to build your app.
 
-[CI/CD Hello world](actions/ci-cd-part-1.md)
+<table>
+<tr valign="middle" align="center">
+<!--
+<td>![ASP.NET core](_img/index/logo_net.svg)<br/>[ASP.NET Core](apps/aspnet/ci/build-aspnet-core.md)</td>
+<td>![ASP.NET](_img/index/logo_net.svg)<br/>[ASP.NET](apps/aspnet/ci/build-aspnet-4.md)</td>
+<td>![Node.js](_img/index/logo_nodejs.svg)<br/>[Node.js](apps/nodejs/quick-to-azure.md)</td>
+<td>![Java](_img/index/logo_java.svg)<br/>[Java](apps/java/quick-to-azure.md)</td>
+-->
+<td>[ASP.NET Core](apps/aspnet/ci/build-aspnet-core.md)</td>
+<td>[ASP.NET](apps/aspnet/ci/build-aspnet-4.md)</td>
+<td>[Node.js](apps/nodejs/quick-to-azure.md)</td>
+<td>[Java](apps/java/quick-to-azure.md)</td>
+</tr>
+</table>    
+
+Learn how to deploy your app.
+
+<table>
+<tr valign="middle" align="center">
+<td>![Web apps](_img/index/app-service-web.png)<br/>[Azure web app](apps/cd/deploy-webdeploy-webapps.md)</td>
+<td>![Windows VMs](_img/index/virtualmachine.png)<br/>[Windows VM](apps/cd/azure/deploy-provision-azure-vm.md)</td>
+</tr>
+</table>    
 
 ## Step-by-Step Tutorials  
 
-* [Set up multi-stage release](actions/define-multistage-release-process.md)
 * [CI builds for Git in VSTS](actions/ci-build-git.md)
 * [CI builds for GitHub](actions/ci-build-github.md)
+* [Set up multi-stage release](actions/define-multistage-release-process.md)
 * [Extend CI/CD](actions/extend-release-management.md)
 
 ## Videos

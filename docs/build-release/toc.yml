@@ -2,18 +2,26 @@
   href: index.md
 - name: Overview
   items:
-  - name: Build
-  - name: Release
+  - name: About Build and Release
+    href: overview.md
 - name: Quickstarts
   items:
-  - name: CI/CD Hello world
-    href: actions/ci-cd-part-1.md
-  - name: CD to Azure App Services
-    href: apps/cd/deploy-webdeploy-webapps.md
-  - name: CD to Azure Windows VM
-    href: apps/cd/azure/deploy-provision-azure-vm.md
-  - name: CD to IIS Deployment Group
-    href: apps/cd/deploy-webdeploy-iis-deploygroups.md
+  - name: Build your app
+    items:
+    - name: ASP.NET Core
+      href: apps/aspnet/ci/build-aspnet-core.md
+    - name: ASP.NET
+      href: apps/aspnet/ci/build-aspnet-4.md
+    - name: Node.js
+      href: apps/nodejs/quick-to-azure.md
+    - name: Java
+      href: apps/java/quick-to-azure.md
+  - name: Deploy your app
+    items:
+    - name: Azure web app
+      href: apps/cd/deploy-webdeploy-webapps.md
+    - name: Windows VM
+      href: apps/cd/azure/deploy-provision-azure-vm.md
 - name: Tutorials
   items:
   - name: CI builds for Git in VSTS
@@ -100,47 +108,39 @@
   items:
   - name: Build your app
     items:
-    - name: ASP.NET Core 
-      href: apps/aspnet/ci/build-aspnet-core.md
-    - name: ASP.NET 4 
-      href: apps/aspnet/ci/build-aspnet-4.md
-    - name: .NET for Windows 
+    - name: .NET for Windows
       href: apps/get-started/dot-net.md
-    - name: C++ 
+    - name: C++
       href: apps/windows/cpp.md
-    - name: Node.js 
-      href: apps/nodejs/nodejs-to-azure.md
-    - name: Java 
-      href: apps/java/maven-to-azure.md
-    - name: Xamarin 
+    - name: Xamarin
       href: apps/mobile/xamarin.md
-    - name: Xcode 
+    - name: Xcode
       href: apps/mobile/xcode-ios.md
-    - name: Cordova 
+    - name: Cordova
       href: apps/mobile/cordova-build.md
-    - name: Universal Windows Platform 
+    - name: Universal Windows Platform
       href: apps/windows/universal.md
-    - name: Azure Cloud Service 
+    - name: Azure Cloud Service
       href: apps/aspnet/ci/build-aspnet-cloudservice.md
-    - name: SQL Server Database 
+    - name: SQL Server Database
       href: apps/aspnet/ci/build-aspnet-dacpac.md
   - name: Deploy your app
     items:
-    - name: Azure cloud service 
+    - name: Azure cloud service
       href: apps/aspnet/cd/deploy-cloudservice-cloudservice.md
-    - name: Azure Government Cloud 
+    - name: Azure Government Cloud
       href: concepts/library/government-cloud.md
-    - name: Azure Container Service (Kubernetes) 
+    - name: Azure Container Service (Kubernetes)
       href: apps/cd/azure/deploy-container-kubernetes.md
-    - name: IIS servers (WinRM) 
+    - name: IIS servers (WinRM)
       href: apps/cd/deploy-webdeploy-iis-winrm.md
-    - name: Azure SQL database (DACPAC) 
+    - name: Azure SQL database (DACPAC)
       href: apps/aspnet/cd/deploy-dacpac-sqlpackage.md
-    - name: Azure SQL database (SQL scripts) 
+    - name: Azure SQL database (SQL scripts)
       href: apps/aspnet/cd/deploy-database-sqlscripts.md
-    - name: SCVMM 
+    - name: SCVMM
       href: apps/cd/scvmm/configure-scvmm.md
-    - name: VMware 
+    - name: VMware
       href: apps/cd/provision-vm-in-vmware.md
   - name: Deploy an agent
     items:
