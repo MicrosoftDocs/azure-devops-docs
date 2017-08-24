@@ -121,7 +121,7 @@ least Co-administrator permissions for your subscription.
 You need both to make your directory appear in the Azure portal, 
 so that you can link your subscription 
 and connect your Azure AD to your Team Services account. Learn 
-[how to manage Azure subscription administrators](../billing/set-up-billing-for-your-account-vs.md#AddAzureAdmin).
+[how to manage Azure subscription administrators](../billing/add-backup-billing-managers.md).
 
 <a name="why-not-my-directory"></a>
 ####Q:  Why don't I see the directory that I want to connect? What should I do?
@@ -139,7 +139,7 @@ least Co-administrator permissions for your subscription.
 You need both to make your directory appear in the Azure portal, 
 so that you can link your subscription 
 and connect your Azure AD to your Team Services account. Learn 
-[how to manage Azure subscription administrators](../billing/set-up-billing-for-your-account-vs.md#AddAzureAdmin).
+[how to manage Azure subscription administrators](../billing/add-backup-billing-managers.md).
 
 	For example, if you want to use an Office 365 Azure AD, 
 	you can't use the [free subscription](https://technet.microsoft.com/library/dn832618.aspx) 
@@ -191,18 +191,18 @@ subscription that's associated with your directory. Learn
 <a name="subscription-linked-already"></a>
 ####Q:  What if my Team Services account is already linked to an Azure subscription?
 
-A:  You can [change the Azure subscription](../billing/set-up-billing-for-your-account-vs.md#change-azure-subscription) 
+A:  You can [change the Azure subscription](../billing/change-azure-subscription.md) 
 that's linked to your Team Services account. 
 However, unlinking will cause your account 
 to go back to the 
-[free account limits](../billing/set-up-billing-for-your-account-vs.md#unlinking), 
+[free account limits](../billing/faq-billing-setup.md#unlinking), 
 and some users might lose access until you relink. 
 
 ####Q:  What happens if I unlink my Azure subscription while my Team Services account is connected to a directory?
 
 A:  This doesn't affect your account's connection to the directory, 
 but unlinking will cause your account to go back to the 
-[free account limits](../billing/set-up-billing-for-your-account-vs.md#unlinking), 
+[free account limits](../billing/faq-billing-setup.md#unlinking), 
 and some users might lose access until you relink.
 
 <a name="AlreadyConnected"></a>

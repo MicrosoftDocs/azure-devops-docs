@@ -89,7 +89,7 @@ if your Team Services account isn't linked already.
   you'll need at least Co-administrator permissions for that subscription.
   If you don't have permissions, have an Azure Account
   Administrator or Service Administrator
-  [add you as Co-administrator to the Azure subscription that you want to use for billing](set-up-billing-for-your-account-vs.md#AddAzureAdmin).
+  [add you as Co-administrator to the Azure subscription that you want to use for billing](add-backup-billing-managers.md).
 
   If you don't have an Azure subscription,
   you can create a subscription when you start your purchase.
@@ -148,7 +148,7 @@ if you have multiple accounts.
   you'll need at least Co-administrator permissions for that subscription.
   If you don't have permissions,
   have an Azure Account Administrator or Service Administrator
-  [add you as a Co-administrator to the linked Azure subscription](set-up-billing-for-your-account-vs.md#AddAzureAdmin).
+  [add you as a Co-administrator to the linked Azure subscription](add-backup-billing-managers.md).
   </div>
 
 0.  Select the number of pipelines that you want to buy.

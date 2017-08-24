@@ -20,14 +20,16 @@
     href: ../accounts/change-azure-active-directory-team-services-account.md
 - name: How-to
   items:
+  - name: Set up billing
+    items:
+    - name: Link Azure subscription to Team Services Account
+      href: set-up-billing-for-your-account-vs.md
+    - name: Add backup billing managers
+      href: add-backup-billing-managers.md
+    - name: Change Azure subscription for billing
+      href: change-azure-subscription.md
   - name: Link work accounts to Visual Studio with MSDN subscriptions
     href: link-msdn-subscription-to-organizational-account-vs.md
-  - name: "Set up billing: link Azure subscription to Team Services Account"
-    href: set-up-billing-for-your-account-vs.md
-  - name: "Set up billing: add backup billing managers"
-    href: add-backup-billing-managers.md
-  - name: "Set up billing: change Azure subscription for billing"
-    href: change-azure-subscription.md
   - name: Pay for Team Services users
     href: buy-basic-access-add-team-services-users.md
   - name: How to buy build pipelines
@@ -36,41 +38,49 @@
     href: buy-load-testing-vs.md
   - name: Change number of paid users
     href: change-number-of-paid-users.md
-  - name: Change number of paid extension users
-    href: ../billing/change-number-paid-extension-users.md
-  - name: Approve requests for Team Services extensions
-    href: ../marketplace/approve-vsts-extensions.md?toc=/vsts/accounts/toc.json
-  - name: Assign paid extensions access
-    href: ../marketplace/assign-paid-extensions.md?toc=/vsts/accounts/toc.json
-  - name: Uninstall or disable extensions
-    href: ../marketplace/uninstall-disable-vsts-extensions.md?toc=/vsts/accounts/toc.json
-  - name: Buy Visual Studio subscriptions
-    href: vs-subscriptions/buy-vs-subscriptions.md
+  - name: Mange extensions
+    items:
+    - name: Change number of paid extension users
+      href: ../billing/change-number-paid-extension-users.md
+    - name: Request permission for an extension
+      href: ../marketplace/request-vsts-extension.md?toc=/vsts/accounts/toc.json
+    - name: Approve requests for Team Services extensions
+      href: ../marketplace/approve-vsts-extensions.md?toc=/vsts/accounts/toc.json
+    - name: Assign paid extensions access
+      href: ../marketplace/assign-paid-extensions.md?toc=/vsts/accounts/toc.json
+    - name: Uninstall or disable extensions
+      href: ../marketplace/uninstall-disable-vsts-extensions.md?toc=/vsts/accounts/toc.json
+  - name: How to buy HockeyApp
+    href: get-hockeyapp.md
+  - name: How to buy Xamarin University
+    href: xamarin-univ.md
   - name: Manage Visual Studio subscriptions
-    href: vs-subscriptions/manage-vs-subscriptions.md
-  - name: View Visual Studio subscriptions
-    href: vs-subscriptions/view-vs-subscriptions.md
+    items:
+    - name: Buy Visual Studio subscriptions
+      href: vs-subscriptions/buy-vs-subscriptions.md
+    - name: Manage Visual Studio subscriptions
+      href: vs-subscriptions/manage-vs-subscriptions.md
+    - name: View Visual Studio subscriptions
+      href: vs-subscriptions/view-vs-subscriptions.md
 - name: Concepts
   items:
   - name: Set up billing
     href: billing-concepts.md
   - name: Use backup billing managers
     href: add-backup-billing-managers.md
-  - name: "For example: Using MSDN subscription"
+  - name: "NEED TO FIX: Using MSDN subscription"
     href: link-msdn-subscription-to-organizational-account-vs.md
 - name: Reference
   items:
-  - name: Permissions and groups reference
+  - name: Permissions and access for VSTS
     href: ../security/permissions.md
   - name: Extensibility overview
     href: ../extend/index.md
 - name: Troubleshooting
   items:
-  - name: "[Foo Q&A]"
-  - name: "[Bar Q&A]"
+  - name: Billing signup
+    href: faq-billing-setup.md
 - name: Resources
   items:
-  - name: Migrate from TFS to Team Services Tutorial
-    href: https://www.visualstudio.com/articles/migration-overview
   - name: Integrate with other services
     href: ../service-hooks/index.md

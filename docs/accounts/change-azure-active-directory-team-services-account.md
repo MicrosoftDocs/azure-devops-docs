@@ -34,7 +34,7 @@ Learn [how to manage Azure AD administrators](https://azure.microsoft.com/en-us/
 
 *	Co-administrator permissions for the Azure subscriptions 
 associated with your source and target directories. 
-Learn [how to manage Azure subscription administrators](../billing/set-up-billing-for-your-account-vs.md#AddAzureAdmin).
+Learn [how to manage Azure subscription administrators](../billing/add-backup-billing-managers.md).
 
 *	A temporary Microsoft account, like @outlook.com, 
 to move your Team Services account between directories. 

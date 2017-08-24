@@ -42,7 +42,7 @@ if you haven't already. You'll need an [Azure subscription](#AzureMSDNSubscripti
 that you can link to your Team Services account for billing.
 
 *  If you're going through the Azure portal, you'll also need at least
-[Co-administrator permissions](set-up-billing-for-your-account-vs.md#AddAzureAdmin)
+[Co-administrator permissions](add-backup-billing-managers.md)
 for the Azure subscription that's linked to your Team Services account for billing.
 
 You can follow the steps below for the Azure classic portal

@@ -44,7 +44,7 @@ you can still [find those steps here](#update-paid-users-azure).
 *	You'll need at least Co-administrator permissions for the Azure subscription 
 that's linked to your Team Services account for billing. If you don't have permissions, 
 have an Azure Account Administrator or Service Administrator 
-[add you as a Co-administrator to the linked Azure subscription](set-up-billing-for-your-account-vs.md#AddAzureAdmin).
+[add you as a Co-administrator to the linked Azure subscription](add-backup-billing-managers.md).
 
 ### Update number of users who have paid Basic access
 
@@ -175,7 +175,7 @@ of Team Services users that you're paying to get Basic access.
 <p>**Azure portal**
 <p>
 <p>Before you start, you'll need [Team Services project collection administrator or account owner permissions](#find-owner). 
-You'll also need at least [Co-administrator permissions](set-up-billing-for-your-account-vs.md#AddAzureAdmin) 
+You'll also need at least [Co-administrator permissions](add-backup-billing-managers.md) 
 for the Azure subscription that's linked to your Team Services account.
 <p>
 <ol>
@@ -202,7 +202,7 @@ To cancel all paid users, reduce this number to zero (0). Save your changes.
 <div class="tab-pane fade" id="azure-classic-portal-0" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
 <p>**Azure classic portal**
 <p>
-<p>Before you start, you'll need at least [Co-administrator permissions](set-up-billing-for-your-account-vs.md#AddAzureAdmin) 
+<p>Before you start, you'll need at least [Co-administrator permissions](add-backup-billing-managers.md) 
 for the Azure subscription that's linked to your Team Services account. 
 <p>
 <ol>

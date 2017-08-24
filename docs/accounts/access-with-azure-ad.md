@@ -64,7 +64,7 @@ least Co-administrator permissions for your subscription.
 You'll need both to make your directory appear in the Azure portal, 
 so that you can link your subscription and connect your 
 Azure AD to your Team Services account. Learn about 
-[Azure subscription Co-administrator permissions](../billing/set-up-billing-for-your-account-vs.md#AddAzureAdmin).
+[Azure subscription Co-administrator permissions](../billing/add-backup-billing-managers.md).
 
   [Want to use Office 365 Azure AD with Team Services?](#o365aad)
 
