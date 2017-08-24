@@ -21,11 +21,10 @@ Host your NuGet, npm, and Maven packages in **Team Services** and **Team Foundat
 
 ## How-To Guides
 
-- [Publish a NuGet package]()
-- [Publish an npm package]()
-- [Publish a Maven package]()
-- [Publish a Gradle package]()
-- 
+- [Publish a NuGet package](nuget/publish.md)
+- [Publish an npm package](npm/publish.md)
+- [Publish a Maven package](maven/publish.md)
+- [Publish a Gradle package](gradle/publish-package-gradle.md)
 
 ## Resources
 
