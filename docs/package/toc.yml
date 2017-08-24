@@ -18,7 +18,7 @@
     href: get-started-npm.md
   - name: Get started with Maven
     href: get-started-maven.md
-- name: How to
+- name: How-to Guides
   items:
   - name: Feeds
     items:
@@ -78,10 +78,14 @@
       href: ./maven/install.md
   - name: Gradle
     items:
-    - name: Use Gradle with VSTS
-      href: ./gradle/build-package-gradle.md
+    - name: Pull a Gradle package and build
+      href: ./gradle/pull-package-gradle.md
     - name: Publish a Gradle package
       href: ./gradle/publish-package-gradle.md
-     
+- name: Resources
+  items:
+  - name: Build and Release
+    href: /vsts/build-release/index.md
+  
 
 
