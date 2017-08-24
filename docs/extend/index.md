@@ -1,19 +1,19 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: An index for building extensions for Visual Studio Team Services
-description: Index of building extensions with Visual Studio Team Services
+title: An index for building extensions for Visual Studio Team Services and Team Foundation Server
+description: Index of building extensions for Visual Studio Team Services and Team Foundation Server
 ms.assetid: 153aa519-6233-4292-8eac-44de15f2d3dd
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/23/2016
 ---
 
-# Building Visual Studio Team Services Extensions
+# Building Visual Studio Team Services  and Team Foundation Server Extensions
 
-You can build custom applications or services that integrate with your Visual Studio Team Services (VSTS) account by using the [REST APIs](#rest-apis) to make direct HTTP calls, or utilize our [.NET Client Libraries](#.net-client-libraries).
+You can build custom applications or services that integrate with your Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) accounts by using the [REST APIs](#rest-apis) to make direct HTTP calls, or utilize our [.NET Client Libraries](#.net-client-libraries).
 
-Along with interacting with VSTS in your application, you can also integrate with popular third-party services such as Slack or Jenkins.
+Along with interacting with VSTS or TFS in your application, you can also integrate with popular third-party services such as Slack or Jenkins.
 
 <a name ="customApps"/>
 

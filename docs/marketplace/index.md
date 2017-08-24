@@ -14,9 +14,10 @@ ms.date: 08/23/2016
 Extensions for Visual Studio Team Services (VSTS) can be installed through the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
 ## 5-minute Quickstarts 
-Check out the quick starts to get you started:
-* [Buy Team Services extensions](install-vsts-extension.md)
+* [Install VSTS extensions](install-vsts-extension.md)
 * [Get extensions for TFS](./get-tfs-extensions.md)
+* [How to buy TFS extensions](get-tfs-extensions.md)
+* [How to buy TFS CALs](https://www.visualstudio.com/team-services/tfs-pricing/)
 
 ## How-to Guides
 * [Rate and review extensions](./rating-and-review.md)

@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-marketplace
-title: Troubleshoot your integrations | Visual Studio Team Services
+title: Troubleshoot your service hooks integrations | Visual Studio Team Services
 description: Troubleshoot problems with the services you have integrated with your Visual Studio Team Services account
 ms.assetid: dcf00653-24c5-4ab6-b9e8-19ec098bbb66
 ms.manager: douge
@@ -30,7 +30,7 @@ and event payload data, select a subscription in the table and click **History**
 
    <img alt="View detailed activity for a subscriptions" src="./_img/troubleshoot/detailed-activity.png" style="border: 1px solid #CCCCCC" />
 
-## Q & A
+## FAQs
 
 <!-- BEGINSECTION class="m-qanda" -->
 

@@ -14,12 +14,33 @@ ms.date: 08/23/2016
 Service hooks enable you to perform tasks on other services when events happen in your Visual Studio Team Services (VSTS) projects. For example, create a card in Trello when a work item is created or send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services as a more efficient way to drive activities when events happen in your projects.
 
 ## 5-minute Quickstarts 
-
+* [AppVeyor](services/appveyor.md)
+* [Azure Service Bus](services/azure-service-bus.md)
+* [Azure Storage](services/azure-storage.md)
+* [Bamboo](services/bamboo.md)
+* [Campfire](services/campfire.md)
+* [Flowdock](services/flowdock.md)
+* [HipChat](services/hipchat.md)
+* [Hubot](services/hubot.md)
+* [Jenkins](services/jenkins.md)
+* [MyGet](services/myget.md)
+* [Slack](services/slack.md)
+* [Microsoft Teams](services/teams.md)
+* [Trello](services/trello.md)
+* [UserVoice](services/uservoice.md)
+* [WebHooks](services/webhooks.md)
+* [Zapier](services/zapier.md)
+* [Zendesk](services/zendesk.md)
 
 ## How-to Guides
-
+* [Authorize applications with VSTS](./authorize.md)
 
 ## Troubleshooting
+* [Troubleshoot service hooks and FAQs](./troubleshoot.md)
+
+## Resources
+* [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
+* [Billing information](../billing/index.md)
 
 
 

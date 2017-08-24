@@ -22,7 +22,7 @@
     href: ./concepts/rest-api-versioning.md
   - name: Cross-origin resource sharing
     href: ./concepts/cross-origin-resource-sharing.md
-- name: How to
+- name: How-to Guides
   items:
   - name: Authenticate with PATs
     href: get-started/authentication/pats.md

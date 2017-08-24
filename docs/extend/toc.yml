@@ -18,7 +18,7 @@
     href: reference/targets/overview.md
   - name: Contribution model
     href: develop/contributions-overview.md
-- name: How to
+- name: How-to Guides
   items:
   - name: Add a build task
     href: develop/add-build-task.md

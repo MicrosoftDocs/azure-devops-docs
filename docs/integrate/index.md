@@ -2,20 +2,18 @@
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
 title: Integrating custom apps and third party services with Visual Studio Team Services and Team Foundation Server
-description: Overview of integrating with Visual Studio Team Services
+description: Overview of integrating with Visual Studio Team Services and Team Foundation Server
 ms.assetid: c9b97ad7-ffd8-4657-8322-74f764eec5c9
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/23/2016
 ---
 
-# Integrating with Visual Studio Team Services
+# Integrating with Visual Studio Team Services and Team Foundation Server
 
-You can build custom applications or services that integrate with your Visual Studio Team Services (VSTS) account by using the [REST APIs](#rest-apis) to make direct HTTP calls, or utilize our [.NET Client Libraries](#.net-client-libraries).
+You can build custom applications or services that integrate with your Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) accounts by using the [REST APIs](#rest-apis) to make direct HTTP calls, or utilize our [.NET Client Libraries](#.net-client-libraries).
 
-Along with interacting with VSTS in your application, you can also integrate with popular third-party services such as Slack or Jenkins.
-
-<a name ="customApps"/>
+Along with interacting with VSTS or TFS in your application, you can also integrate with popular third-party services such as Slack or Jenkins.
 
 ## 5-minute Quickstarts 
 Check out the quick starts to get you started:

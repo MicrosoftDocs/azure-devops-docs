@@ -3,7 +3,7 @@
   items:
   - name: Overview
     href: overview.md
-  - name: Services
+  - name: Quickstarts
     items:
     - name: AppVeyor
       href: services/appveyor.md
@@ -39,7 +39,17 @@
       href: services/zapier.md
     - name: Zendesk
       href: services/zendesk.md
-  - name: Authorize
-    href: authorize.md
+  - name: How-to Guides
+    items:
+    - name: Authorize other services
+      href: authorize.md
   - name: Troubleshoot
-    href: troubleshoot.md
+    items:
+    - name: Troubleshoot and FAQs
+      href: troubleshoot.md
+  - name: Resources
+    items:
+    - name: Visual Studio Marketplace
+      href: https://marketplace.visualstudio.com/
+    - name: Billing information
+      href: ../billing/index.md
