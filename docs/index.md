@@ -1153,7 +1153,7 @@ ms.date: 07/26/2017
                                                         <a class="barLink" href="/vsts/integrate/#rest-apis">Get Started</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="">API reference</a>
+                                                        <a class="barLink" href="/rest/api/vsts/">API reference</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1172,7 +1172,7 @@ ms.date: 07/26/2017
                                                         <a class="barLink" href="/vsts/integrate/get-started/client-libraries/dotnet">Get Started</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="">API reference</a>
+                                                        <a class="barLink" href="/dotnet/api/microsoft.teamfoundation?view=vsservicesclient-15.112.1">API reference</a>
                                                     </li>
                                                 </ul>
                                             </div>
