@@ -35,7 +35,7 @@
   - name: How to manage subscriptions
     href: ../billing/set-up-billing-for-your-account-vs.md
   - name: How to buy Team Services users
-    href: ../billing/buy-basic-access-add-team-services-users.md
+    href: ../billing/buy-basic-access-add-users.md
   - name: How to buy build pipelines
     href: ../billing/buy-more-build-vs.md
   - name: How to buy load testing services

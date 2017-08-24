@@ -81,7 +81,7 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 
 
 >[!TIP]  
->If you're connecting to Team Services, see also [Connect to Visual Studio Team Services from Eclipse, Xcode, Visual Studio, and more](../accounts/connect-to-visual-studio-team-services.md). 
+>If you're connecting to Team Services, see also [Connect to Visual Studio Team Services from Eclipse, Xcode, Visual Studio, and more](../accounts/connect-to-vsts.md). 
 
 1.  If you haven't already, [download and install a version of Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs).
 
@@ -298,9 +298,9 @@ To start planning and tracking work, see [Get started with Agile tools to plan a
 
 ### User accounts and licensing  
 
-To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (Team Services)](../accounts/add-account-users-assign-access-levels-team-services.md) or a [project administrator (TFS)](../accounts/add-users.md). 
+To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (Team Services)](../accounts/add-account-users-assign-access-levels.md) or a [project administrator (TFS)](../accounts/add-users.md). 
 
-Team Services provides access to the first 5 account users free. After that, you need to [pay for more users (Team Services)](../billing/buy-basic-access-add-team-services-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid Team Services users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
+Team Services provides access to the first 5 account users free. After that, you need to [pay for more users (Team Services)](../billing/buy-basic-access-add-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid Team Services users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
 
 In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../quickstart/get-started-stakeholder.md).
 

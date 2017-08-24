@@ -134,7 +134,7 @@ Learn more about
 <a name="ChangeDirectory"></a>
 ####Q:	Can I change the directory after signup?
 
-A:	Yes, see [Change your account's Azure AD](change-azure-active-directory-team-services-account.md).
+A:	Yes, see [Change your account's Azure AD](change-azure-active-directory-vsts-account.md).
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
@@ -152,10 +152,10 @@ All other users must sign in with Microsoft accounts too.
 
 [!INCLUDE [secure-protect-data](../_shared/qa-secure-protect-data.md)]
 
-[!INCLUDE [team-services-sla](../_shared/qa-team-services-sla.md)]
+[!INCLUDE [team-services-sla](../_shared/qa-vsts-sla.md)]
 
 <a name="get-support"></a>
 
 [!INCLUDE [visual-studio-subscription-support](../_shared/qa-visual-studio-subscription-support.md)]
 
-[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-vsts-support.md)]

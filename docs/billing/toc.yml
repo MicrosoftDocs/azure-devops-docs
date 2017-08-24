@@ -7,7 +7,7 @@
 - name: Quickstarts
   items:
   - name: Pay for VSTS users
-    href: buy-basic-access-add-team-services-users.md
+    href: buy-basic-access-add-users.md
   - name: Try extensions for free
     href: try-additional-features-vs.md
   - name: Install an extension
@@ -17,7 +17,7 @@
 - name: Tutorials
   items:
   - name: Change Azure AD tenant
-    href: ../accounts/change-azure-active-directory-team-services-account.md
+    href: ../accounts/change-azure-active-directory-vsts-account.md
 - name: How-to
   items:
   - name: Set up billing
@@ -31,7 +31,7 @@
   - name: Link work accounts to Visual Studio with MSDN subscriptions
     href: link-msdn-subscription-to-organizational-account-vs.md
   - name: Pay for Team Services users
-    href: buy-basic-access-add-team-services-users.md
+    href: buy-basic-access-add-users.md
   - name: How to buy build pipelines
     href: buy-more-build-vs.md
   - name: How to buy load testing services

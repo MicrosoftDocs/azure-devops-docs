@@ -183,7 +183,7 @@ or [Team Services Support](https://www.visualstudio.com/team-services/support).
 
 <a name="WhyNoVSOAccount"></a>
 
-[!INCLUDE [azure-why-no-team-services-account](../_shared/qa-azure-why-no-team-services-account.md)]
+[!INCLUDE [azure-why-no-team-services-account](../_shared/qa-azure-why-no-vsts-account)]
 
 <a name="FindOwnerPCA"></a>
 

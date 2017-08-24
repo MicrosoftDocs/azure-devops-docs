@@ -13,7 +13,7 @@
   - name: Create your account with a work or school account
     href: create-account-with-work-school.md
   - name: Connect to your account from tools
-    href: connect-to-visual-studio-team-services.md
+    href: connect-to-vsts.md
   - name: "User hub: add users to your account"
     href: add-account-users-from-user-hub.md
   - name: Try extensions for free
@@ -23,7 +23,7 @@
 - name: Tutorials
   items:
   - name: Change Azure AD tenant
-    href: change-azure-active-directory-team-services-account.md
+    href: change-azure-active-directory-vsts-account.md
 - name: How-to
   items:
   - name: Manage accounts
@@ -31,7 +31,7 @@
     - name: Change account owner
       href: change-account-ownership-vs.md
     - name: Rename account
-      href: rename-visual-studio-team-services-account.md
+      href: rename-vsts-account.md
     - name: Delete account
       href: delete-your-vsts-account.md
     - name: Recover account
@@ -59,7 +59,7 @@
     - name: "User hub: delete users from your account"
       href: delete-account-users-users-hub.md
     - name: Add users to your account
-      href: add-account-users-assign-access-levels-team-services.md
+      href: add-account-users-assign-access-levels.md
     - name: Manage conditional access
       href: manage-conditional-access.md
     - name: Add members to team projects
@@ -83,7 +83,7 @@
       - name: Delete users from Team Services connected to Azure AD
         href: delete-users-from-services-aad.md
       - name: Add Azure AD group to Team Services group
-        href: manage-azure-active-directory-groups-visual-studio-team-services.md
+        href: manage-azure-active-directory-groups-vsts.md
   - name: Permissions and access
     items:
     - name: Permissions and access
@@ -142,7 +142,7 @@
     - name: "Set up billing: change Azure subscription for billing"
       href: ../billing/change-azure-subscription.md
     - name: Pay for Team Services users
-      href: ../billing/buy-basic-access-add-team-services-users.md
+      href: ../billing/buy-basic-access-add-users.md
     - name: Change number of paid users
       href: ../billing/change-number-of-paid-users.md
     - name: Change number of paid extension users

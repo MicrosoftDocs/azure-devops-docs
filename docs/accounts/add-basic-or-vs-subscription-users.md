@@ -30,7 +30,7 @@ If you are a Project Collection Administrator, you can now navigate to the new U
 
 When your account stays within the free limits, you don't have to pay for users to join your account.
 You only have to pay if you have more than 5 users who need Basic features, and they don't have Visual Studio subscriptions.
-You can [pay for additional users in the Visual Studio Marketplace](../billing/buy-basic-access-add-team-services-users.md), 
+You can [pay for additional users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md), 
 return to your Team Services account, add these users, and assign them Basic access. 
 You pay monthly for their access and cancel the access anytime.
 
@@ -238,7 +238,7 @@ Learn more about [linking your account](../billing/set-up-billing-for-your-accou
 than the number of users that you're paying for in Azure. 
 Your account includes 5 free users with Basic access, 
 but if you need to add more users with Basic access, 
-you can [pay for these users](../billing/buy-basic-access-add-team-services-users.md). 
+you can [pay for these users](../billing/buy-basic-access-add-users.md). 
 Otherwise, on the 1st day of the calendar month, users who haven't 
 signed into your account the longest will lose access first. 
 If your account has users who don't need access anymore, 
@@ -302,5 +302,5 @@ assets associated with that directory.  You must have Azure AD global administra
 
 ###	More support
 
-[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-vsts-support.md)]
 

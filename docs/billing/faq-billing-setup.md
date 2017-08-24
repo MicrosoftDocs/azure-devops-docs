@@ -185,7 +185,7 @@ fixing this issue reactivates your subscription and restores your account's paid
 
 <a name="AzureSubscriptionDisabled"></a>
 
-[!INCLUDE [azure-subscription-disabled-team-services](../_shared/qa-azure-subscription-disabled-team-services.md)]
+[!INCLUDE [azure-subscription-disabled-team-services](../_shared/qa-azure-subscription-disabled.md)]
 
 <a name="unlinking"></a>
 ####Q: What happens if I unlink my Team Services account?
@@ -218,5 +218,5 @@ so they don't lose access on the 1st of next month.
 
 [!INCLUDE [azure-account-billing-support](../_shared/qa-azure-account-billing-support.md)]
 
-[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-vsts-support.md)]
 

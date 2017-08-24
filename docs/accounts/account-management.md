@@ -40,9 +40,9 @@ The account owner and other members of the Project Collection Administrator grou
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Set up Team Services</p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:2px">[Create your account](create-account-with-work-school.md)</li>
- <li style="margin-bottom:2px">[Connect to your account](connect-to-visual-studio-team-services.md)</li>
+ <li style="margin-bottom:2px">[Connect to your account](connect-to-vsts.md)</li>
  <li style="margin-bottom:2px">[Change account owner](change-account-ownership-vs.md)</li>
- <li style="margin-bottom:2px">[Rename account](rename-visual-studio-team-services-account.md)</li>
+ <li style="margin-bottom:2px">[Rename account](rename-vsts-account.md)</li>
  <li style="margin-bottom:2px">[Authenticate app access](use-personal-access-tokens-to-authenticate.md)</li>
  <li style="margin-bottom:2px">[Change app access policies](change-application-access-policies-vs.md)</li>
 </ul>
@@ -52,8 +52,8 @@ The account owner and other members of the Project Collection Administrator grou
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Azure Active Directory</p>
 <ul style="padding-left:20px">
  <li style="margin-bottom:2px">[Access with Azure AD](access-with-azure-ad.md)</li>
- <li style="margin-bottom:2px">[Access with Azure AD groups](manage-azure-active-directory-groups-visual-studio-team-services.md)</li>
- <li style="margin-bottom:2px">[Change Azure AD](change-azure-active-directory-team-services-account.md)</li>
+ <li style="margin-bottom:2px">[Access with Azure AD groups](manage-azure-active-directory-groups-vsts.md)</li>
+ <li style="margin-bottom:2px">[Change Azure AD](change-azure-active-directory-vsts-account.md)</li>
 </ul>
 </div>
 
@@ -62,7 +62,7 @@ The account owner and other members of the Project Collection Administrator grou
 <ul style="padding-left:20px">
  <li style="margin-bottom:2px">[Set up billing](../billing/set-up-billing-for-your-account-vs.md)</li> 
  <li style="margin-bottom:2px">[Try extensions for free](../billing/try-additional-features-vs.md)</li>
- <li style="margin-bottom:2px">[Pay for more users](../billing/buy-basic-access-add-team-services-users.md)</li>
+ <li style="margin-bottom:2px">[Pay for more users](../billing/buy-basic-access-add-users.md)</li>
  <li style="margin-bottom:2px">[Buy more pipeline capacity for builds](../billing/buy-more-build-vs.md)</li>
  <li style="margin-bottom:2px">[Buy more cloud-based testing services](../billing/buy-load-testing-vs.md)</li>
 </ul>
@@ -80,7 +80,7 @@ For a simplified view of the default permissions granted to built-in groups and 
 <div style="float:left;width:230px;margin:3px">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Team Services</p>
 <ul style="padding-left:30px;font-size:90%">
- <li style="margin-bottom:2px">[Manage users and access](add-account-users-assign-access-levels-team-services.md) </li>
+ <li style="margin-bottom:2px">[Manage users and access](add-account-users-assign-access-levels.md) </li>
  <li style="margin-bottom:2px">[Add users to team projects](add-team-members-vs.md) </li>
 <li style="margin-bottom:2px">[Make a user a team admin](../work/scale/manage-team-assets.md )</li>
 <li style="margin-bottom:2px">[Add users to an administrator role](add-administrator-tfs.md)</li>
@@ -328,7 +328,7 @@ and cloud-based load testing.
 
 #### Connect to your account
 After Team Services creates your account, 
-[connect to your account](connect-to-visual-studio-team-services.md) 
+[connect to your account](connect-to-vsts.md) 
 with tools like Xcode, Eclipse, or Visual Studio, 
 and add code to your team project.
 
@@ -343,7 +343,7 @@ Or if you don't want to use a credential manager, you can
 
 #### Add users and assign access
 To share work with others, 
-[add users and assign access](add-account-users-assign-access-levels-team-services.md). 
+[add users and assign access](add-account-users-assign-access-levels.md). 
 That way, you control the access that each user gets. 
 Or [add users to your team project](add-team-members-vs.md), 
 and let Team Services assign the next available access to them.
@@ -369,7 +369,7 @@ with Microsoft services like Office 365 and Microsoft Azure.
 If your organization uses a directory (tenant) managed by Azure AD, 
 your Team Services account can also 
 [use your directory to authenticate access](access-with-azure-ad.md). 
-Or [change your Azure AD](change-azure-active-directory-team-services-account.md), 
+Or [change your Azure AD](change-azure-active-directory-vsts-account.md), 
 if you're already connected to an existing directory.
 
 ### Install TFS

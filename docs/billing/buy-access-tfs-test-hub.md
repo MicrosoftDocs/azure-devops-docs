@@ -49,12 +49,12 @@ For more about TFS licensing, see the
 if you don't have one already.
 
 0.	Based on the number of users who need TFS CALs, 
-[pay for users who need Basic access](buy-basic-access-add-team-services-users.md).
+[pay for users who need Basic access](buy-basic-access-add-users.md).
 
 0.	If you haven't already, sign in to your Team Services account 
 (```https://{youraccount}.visualstudio.com```). 
 
-0. [Add your users who need Basic access](../accounts/add-account-users-assign-access-levels-team-services.md) 
+0. [Add your users who need Basic access](../accounts/add-account-users-assign-access-levels.md) 
 to your Team Services account so that you can track these users more easily.
 
 	Though these users will get invited to your Team Services account, 
@@ -78,7 +78,7 @@ and [give them the necessary access](../security/change-access-levels.md).
 if you don't have one already.
 
 0.	Based on the number of users who need TFS CALs, 
-[pay for users who need Basic access](buy-basic-access-add-team-services-users.md).
+[pay for users who need Basic access](buy-basic-access-add-users.md).
 
 0.	[Buy the Test Manager extension](../marketplace/install-vsts-extension.md#install-extension) 
 for users who need Test hub access.
@@ -88,7 +88,7 @@ for users who need Test hub access.
 0.	If you haven't already, sign in to your Team Services account 
 (```https://{youraccount}.visualstudio.com```). 
 
-0. [Add your users who need Basic access](../accounts/add-account-users-assign-access-levels-team-services.md) 
+0. [Add your users who need Basic access](../accounts/add-account-users-assign-access-levels.md) 
 to your Team Services account and 
 [assign them the Test Manager extension](../marketplace/assign-paid-extensions.md) 
 so that you can track these users.

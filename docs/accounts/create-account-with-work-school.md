@@ -144,27 +144,27 @@ add code, work items, or more users.
 
 #### Next steps 
 
-*	[Manage users and access](add-account-users-assign-access-levels-team-services.md) 
+*	[Manage users and access](add-account-users-assign-access-levels.md) 
 
 *	Add code to Git or Team Foundation version control
 
-	*	Git with [Eclipse](connect-to-visual-studio-team-services.md#eclipse), 
+	*	Git with [Eclipse](connect-to-vsts.md#eclipse), 
 	[Xcode](../git/share-your-code-in-git-xcode.md), 
 	[Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio), 
 	[IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), 
-	[Visual Studio](connect-to-visual-studio-team-services.md#vs), or 
+	[Visual Studio](connect-to-vsts.md#vs), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-	*	TFVC using [Eclipse](connect-to-visual-studio-team-services.md#eclipse), 
+	*	TFVC using [Eclipse](connect-to-vsts.md#eclipse), 
 	[Xcode](../tfvc/share-your-code-in-tfvc-xcode.md), 
-	[Visual Studio](connect-to-visual-studio-team-services.md#vs), or 
+	[Visual Studio](connect-to-vsts.md#vs), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 *	[Create your backlog](../work/backlogs/create-your-backlog.md), 
 	[manage your process](../work/process/manage-process.md), 
 	or [customize your process](../work/process/customize-process.md) 
 
-*	[Manage access with Azure AD groups](manage-azure-active-directory-groups-visual-studio-team-services.md) 
+*	[Manage access with Azure AD groups](manage-azure-active-directory-groups-vsts.md) 
 
 ## Troubleshooting
 

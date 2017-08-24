@@ -100,7 +100,7 @@ In this step, we'll make a change to the files on your computer, commit the chan
 > New to Git repos? [Learn more](https://www.visualstudio.com/learn/set-up-a-git-repository/)
 
 > [!div class="nextstepaction"]
-> [Invite others](../accounts/add-account-users-assign-access-levels-team-services.md) to collaborate with you in the repo
+> [Invite others](../accounts/add-account-users-assign-access-levels.md) to collaborate with you in the repo
 
 > [!div class="nextstepaction"]
 > Learn more about [cloning](./tutorial/clone.md) the repo to your computer

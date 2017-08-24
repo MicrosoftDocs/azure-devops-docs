@@ -207,7 +207,7 @@ may encounter the following known issues:
 * If you do not have relevant permission to create build and release definitions 
   in the VSTS account, the Continuous Delivery configuration will fail
   with an appropriate error message. See 
-  [Manage users and access in Visual Studio Team Services](../../../accounts/add-account-users-assign-access-levels-team-services.md).
+  [Manage users and access in Visual Studio Team Services](../../../accounts/add-account-users-assign-access-levels.md).
   
 * Continuous Delivery supports only applications developed by using
   [ASP.NET](https://www.asp.net/) and [ASP.NET Core](https://www.microsoft.com/net/core#windows).

@@ -92,7 +92,7 @@ reduce this number to zero (0).
 	</div>
 
 0.	Confirm your changes. Go back to your Team Services account to 
-[reassign access levels for your users, if necessary](../accounts/add-account-users-assign-access-levels-team-services.md).
+[reassign access levels for your users, if necessary](../accounts/add-account-users-assign-access-levels.md).
 
 	![Reassign user access levels, if necesary](_img/buy-more-basic-access/confirm-updated-basic-access-purchase-vs-marketplace.png)
 
@@ -144,7 +144,7 @@ you must make the change before the last day of the month.
 
 [!INCLUDE [azure-bill-larger](../_shared/qa-azure-bill-larger.md)]
 
-[!INCLUDE [azure-subscription-disabled-team-services](../_shared/qa-azure-subscription-disabled-team-services.md)]
+[!INCLUDE [azure-subscription-disabled-team-services](../_shared/qa-azure-subscription-disabled.md)]
 
 <a name="update-paid-users-azure"></a>
 ####Q: Can I still buy or manage paid Basic access through the Azure portal?
@@ -233,7 +233,7 @@ So you'll only pay for users beyond that quantity. You're not charged until you 
 
 <a name="WhyNoVSOAccount"></a>
 
-[!INCLUDE [azure-why-no-team-services-account](../_shared/qa-azure-why-no-team-services-account.md)]
+[!INCLUDE [azure-why-no-team-services-account](../_shared/qa-azure-why-no-vsts-account.md)]
 
 </div></div>
 
@@ -247,5 +247,5 @@ A:	[Learn more here](https://go.microsoft.com/fwlink/?LinkId=698858).
 
 [!INCLUDE [marketplace-support](../marketplace/_shared/qa-marketplace-support.md)]
 
-[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-vsts-support.md)]
 

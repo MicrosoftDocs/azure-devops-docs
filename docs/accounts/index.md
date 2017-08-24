@@ -33,7 +33,7 @@ Use this index to setup and manage your account and configure key settings to su
 
 * [Create your account with a work or school account](create-account-with-work-school.md)
 
-* [Connect to your account](connect-to-visual-studio-team-services.md)
+* [Connect to your account](connect-to-vsts.md)
 
 * [Add users to your account](add-account-users-from-user-hub.md)
 
@@ -42,25 +42,25 @@ Use this index to setup and manage your account and configure key settings to su
 
 ## Step-by-Step Tutorials
 
-* [Change Azure AD tenant](change-azure-active-directory-team-services-account.md)
+* [Change Azure AD tenant](change-azure-active-directory-vsts-account.md)
 
 
 ## Concepts 
 
 * [Access with Azure AD](access-with-azure-ad.md)
 
-* [Access with Azure AD groups](manage-azure-active-directory-groups-visual-studio-team-services.md)
+* [Access with Azure AD groups](manage-azure-active-directory-groups-vsts.md)
  
  
 ## Resources 
 
 * [Set up billing](../billing/set-up-billing-for-your-account-vs.md)
 
-* [Pay for more users](../billing/buy-basic-access-add-team-services-users.md)
+* [Pay for more users](../billing/buy-basic-access-add-users.md)
 
 * [Permissions and access](../security/permissions-access.md). 
 
-* [Manage users and access](add-account-users-assign-access-levels-team-services.md)
+* [Manage users and access](add-account-users-assign-access-levels.md)
 
 * [Add users to team projects](add-team-members-vs.md)
 

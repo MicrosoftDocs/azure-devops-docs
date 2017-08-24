@@ -41,7 +41,7 @@ The URL follows this pattern:
 - **Team Services**: ```https://<account name>.visualstudio.com/DefaultCollection/<project name>/_backlogs```  
 - **On-premises TFS**: ```http://serverName:8080/tfs/DefaultCollection/projectName/_backlogs```  
   
-To contribute to the backlog, you must be a member of the Contributors group. If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../accounts/add-account-users-assign-access-levels-team-services.md) or [TFS](../../accounts/add-users.md).
+To contribute to the backlog, you must be a member of the Contributors group. If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../accounts/add-account-users-assign-access-levels.md) or [TFS](../../accounts/add-users.md).
 
 If you don't see the team or team project you want, click the ![Team Services icon](../_img/icons/project-icon.png) Team Services icon to [browse all team projects and teams](../../connect/account-home-pages.md). 
  

@@ -107,7 +107,7 @@ or change them later in Visual Studio options.
 
 ####	Next
 
-*	[Add users to your Team Services account](add-account-users-assign-access-levels-team-services.md)
+*	[Add users to your Team Services account](add-account-users-assign-access-levels.md)
 
 *	Add code to [Git](../git/share-your-code-in-git-vs.md) 
 or [Team Foundation](../tfvc/share-your-code-in-tfvc-vs.md) version control
@@ -211,12 +211,12 @@ where Visual Studio Team Services is available.
 
 [!INCLUDE [secure-protect-data](../_shared/qa-secure-protect-data.md)]
 
-[!INCLUDE [team-services-sla](../_shared/qa-team-services-sla.md)]
+[!INCLUDE [team-services-sla](../_shared/qa-vsts-sla.md)]
 
 [!INCLUDE [change-account-name-owner](../_shared/qa-change-account-name-owner.md)]
 
 [!INCLUDE [delete-account](../_shared/qa-delete-account.md)]
 
-[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-vsts-support.md)]
 
 <!-- ENDSECTION -->

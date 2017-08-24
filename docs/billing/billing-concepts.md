@@ -23,7 +23,7 @@ you want to buy Team Services extensions from the
 > or extensions, you can go directly to the Visual Studio Marketplace and 
 > set up billing during your first purchase:
 >
-> * [Pay for more users](buy-basic-access-add-team-services-users.md)
+> * [Pay for more users](buy-basic-access-add-users.md)
 > * [Buy more capacity for Build & Release](buy-more-build-vs.md)
 >
 > Otherwise, if you're buying Cloud-Based Load Testing for the first time, 

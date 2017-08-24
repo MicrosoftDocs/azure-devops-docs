@@ -130,7 +130,7 @@ for your Team Services account.
 
 [!INCLUDE [azure-bill-larger](../_shared/qa-azure-bill-larger.md)]
 
-[!INCLUDE [azure-subscription-disabled-team-services](../_shared/qa-azure-subscription-disabled-team-services.md)]
+[!INCLUDE [azure-subscription-disabled-team-services](../_shared/qa-azure-subscription-disabled.md)]
 
 [!INCLUDE [azure-billing-support](_shared/qa-azure-billing-support.md)]
 

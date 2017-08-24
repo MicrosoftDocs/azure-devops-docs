@@ -157,7 +157,7 @@ and then add them to your Team Services account.
 For pricing, get specific numbers with our 
 [Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=visual-studio-team-services) 
 or [group pricing here](https://www.visualstudio.com/team-services/pricing/), 
-or learn [how to pay for Team Services users](../billing/buy-basic-access-add-team-services-users.md).
+or learn [how to pay for Team Services users](../billing/buy-basic-access-add-users.md).
 
 
 ###	Increase your Build & Release capacity  

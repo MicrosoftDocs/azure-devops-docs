@@ -32,7 +32,7 @@ When your account stays within the free limits,
 you don't have to pay for users to join your account.
 You only have to pay if you have more than 5 users 
 who need Basic features, and they don't have Visual Studio subscriptions.
-You can [pay for additional users in the Visual Studio Marketplace](../billing/buy-basic-access-add-team-services-users.md), 
+You can [pay for additional users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md), 
 return to your Team Services account, add these users, and assign them Basic access. 
 This lets you pay monthly for their access, and you can cancel anytime.
 
@@ -127,7 +127,7 @@ Select their access level, based on the features they need.
 	<p>
 	<p>If you have more users who need Basic features, 
 	and they don't have Visual Studio subscriptions, 
-	you can [pay for these users](../billing/buy-basic-access-add-team-services-users.md), 
+	you can [pay for these users](../billing/buy-basic-access-add-users.md), 
 	return to your Team Services account, add these users, and assign them Basic access.
 	<p>
 	<li>**[Stakeholder](https://www.visualstudio.com/team-services/compare-features/)**: Unlimited users who get Stakeholder features 
@@ -182,16 +182,16 @@ you can [add them to team projects](add-team-members-vs.md).
 
 *	Add code to Git or Team Foundation version control
 
-	*	Git with [Eclipse](connect-to-visual-studio-team-services.md#eclipse), 
+	*	Git with [Eclipse](connect-to-vsts.md#eclipse), 
 	[Xcode](../git/share-your-code-in-git-xcode.md), 
-	[Visual Studio](connect-to-visual-studio-team-services.md#vs), 
+	[Visual Studio](connect-to-vsts.md#vs), 
 	[Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio), 
 	[IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), 
 	or [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-	*	TFVC using [Eclipse](connect-to-visual-studio-team-services.md#eclipse), 
+	*	TFVC using [Eclipse](connect-to-vsts.md#eclipse), 
 	[Xcode](../tfvc/share-your-code-in-tfvc-xcode.md), 
-	[Visual Studio](connect-to-visual-studio-team-services.md#vs), or 
+	[Visual Studio](connect-to-vsts.md#vs), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 *	[Create a backlog](../work/backlogs/create-your-backlog.md) 

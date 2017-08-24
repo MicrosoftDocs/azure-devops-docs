@@ -30,7 +30,7 @@ Make sure that the new owner:
 (```https://{youraccount}.visualstudio.com```).
 
 *	Also has at least Basic access, not Stakeholder. 
-Learn [how to manage users and access](add-account-users-assign-access-levels-team-services.md). 
+Learn [how to manage users and access](add-account-users-assign-access-levels.md). 
 
 *	Has signed in to your Team Services account, 
 created a Visual Studio profile, 
@@ -86,7 +86,7 @@ A: This might happen because:
 
 *	They're not in your Team Services account, 
 or they don't have account access. 
-Learn how to [add them to your account](add-account-users-assign-access-levels-team-services.md).
+Learn how to [add them to your account](add-account-users-assign-access-levels.md).
 
 *	They haven't created a Visual Studio profile 
 and agreed to the Terms of Service.
@@ -109,7 +109,7 @@ A: Yes, if you're a project collection administrator.
 
 A: Only the account owner can change the URL. 
 If you're the account owner, learn how to 
-[change the account URL here](rename-visual-studio-team-services-account.md).
+[change the account URL here](rename-vsts-account.md).
 
 ####Q:	How many account owners can I have?
 
@@ -152,6 +152,6 @@ and change the account owner, but they can't rename the account URL.
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-vsts-support.md)]
 
 <!-- ENDSECTION --> 

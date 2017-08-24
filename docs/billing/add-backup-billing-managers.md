@@ -31,7 +31,7 @@ Marketplace.  Owners can also add these roles to other users.
 
 Learn more about [viewing access assignments for users](https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-manage-assignments#view-access-assignments).
 
-If needed, you can [pay for more users](buy-basic-access-add-team-services-users.md).
+If needed, you can [pay for more users](buy-basic-access-add-users.md).
 
 Learn more about [adding roles in Azure portal](https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-configure#add-access).
 

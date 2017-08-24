@@ -185,7 +185,7 @@ with the Microsoft account that you're using for the migration.
 
 0.	To check that you finished this task successfully, invite a user from the target directory 
 to your Team Services account. Confirm that they can sign in. Learn how to 
-[add users and assign access](add-account-users-assign-access-levels-team-services.md).
+[add users and assign access](add-account-users-assign-access-levels.md).
 
 0.	Add the remaining users from the target directory to your Team Services account.
 
@@ -242,6 +242,6 @@ Learn [how to resolve why you can't see your directory](faq-azure-access.md#why-
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-vsts-support.md)]
 
 <!-- ENDSECTION --> 

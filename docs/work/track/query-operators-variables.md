@@ -223,7 +223,7 @@ You can use query operators in the following table to specify how each value in 
 	<td><p> <strong>String</strong>  that matches the name of a user group in Team Foundation Server or a category group defined for a team project.</p>
 <blockquote><strong>Note:</strong>  You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. The operator cannot be used to query Azure Active Directory groups.
 </blockquote>
-<p>For more information about Azure Active Directory and Team Services, see [Access with Azure Active Directory groups](../../accounts/manage-azure-active-directory-groups-visual-studio-team-services.md).</p></td>
+<p>For more information about Azure Active Directory and Team Services, see [Access with Azure Active Directory groups](../../accounts/manage-azure-active-directory-groups-vsts.md).</p></td>
 </tr>
 <tr>
 	<td><p><strong>Was Ever</strong></p></td>

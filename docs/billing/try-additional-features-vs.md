@@ -169,6 +169,6 @@ from your Team Services account.
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-vsts-support.md)]
 
 <!-- ENDSECTION --> 

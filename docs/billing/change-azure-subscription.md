@@ -88,7 +88,7 @@ Finish relinking your account.
  [how to link your Team Services account to an Azure subscription](#AzurePortal).
 
 0. Follow these steps to restore any 
-[paid users](buy-basic-access-add-team-services-users.md) or 
+[paid users](buy-basic-access-add-users.md) or 
 [agents](buy-more-build-vs.md) 
 that you had in Azure.
 

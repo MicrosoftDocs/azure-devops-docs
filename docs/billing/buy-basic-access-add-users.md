@@ -55,7 +55,7 @@ you can still [find those steps here](#update-paid-users-azure).
 > <div class="collapse" id="expando-access-vs-perms">
 > <p> Access levels control which features are available to users, 
 > while permissions control access to account resources. 
-> Learn how to [manage users and access levels here](../accounts/add-account-users-assign-access-levels-team-services.md). 
+> Learn how to [manage users and access levels here](../accounts/add-account-users-assign-access-levels.md). 
 > For TFS, learn how to [change access levels here](../security/change-access-levels.md) 
 > or [buy more access to TFS or the Test hub here](buy-access-tfs-test-hub.md). 
 >
@@ -137,7 +137,7 @@ if you have multiple accounts.
 	![Enter the number of users who need paid Basic access](_img/buy-more-basic-access/select-number-users-vs-marketplace.png)
 
 0.	Now go to your Team Services account, 
-[add your new users, and assign them Basic access](../accounts/add-account-users-assign-access-levels-team-services.md). 
+[add your new users, and assign them Basic access](../accounts/add-account-users-assign-access-levels.md). 
 
 	![Go to your Team Services account](_img/buy-more-basic-access/confirm-basic-access-purchase-vs-marketplace.png)
 
@@ -223,7 +223,7 @@ reduce this number to zero (0).
 	</div>
 
 0.	Confirm your changes. Go back to your Team Services account to 
-[reassign access levels for your users, if necessary](../accounts/add-account-users-assign-access-levels-team-services.md).
+[reassign access levels for your users, if necessary](../accounts/add-account-users-assign-access-levels.md).
 
 	![Reassign user access levels, if necesary](_img/buy-more-basic-access/confirm-updated-basic-access-purchase-vs-marketplace.png)
 

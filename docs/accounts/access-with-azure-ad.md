@@ -31,7 +31,7 @@ your team's critical resources and key assets.
 > you can integrate on-premises directories with Azure AD by using 
 > [Azure AD Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/). 
 > To switch your Team Services account to another directory, 
-> learn [how to change your directory in Azure AD](change-azure-active-directory-team-services-account.md).
+> learn [how to change your directory in Azure AD](change-azure-active-directory-vsts-account.md).
 
 ##  How does Azure AD control access to Team Services?
 
@@ -97,7 +97,7 @@ What if we can't use the same sign-in addresses?  You'll have to add these users
 or if they have existing work or school accounts, they can use those instead. Their work in Team Services 
 won't be lost and will stay with their current Team Services sign-in addresses.  You'll have to add them as new 
 users to Team Services, reassign access levels, and readd them to any team projects. They can migrate work that they want to keep, 
-except for their work history. Learn [how to manage Team Services account users](add-account-users-assign-access-levels-team-services.md).
+except for their work history. Learn [how to manage Team Services account users](add-account-users-assign-access-levels.md).
 
 What happens to tools that use my credentials, like alternate credentials?  Alternate credentials won't work anymore for 
 tools that run outside a web browser, like the Git command line tool.  You'll have 

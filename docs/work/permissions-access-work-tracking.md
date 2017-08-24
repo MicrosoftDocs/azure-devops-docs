@@ -312,7 +312,7 @@ Stakeholder access provides free access to Team Services and to on-premises TFS 
 
 Only account owners or members of the [Team Foundation Server Administration group](../accounts/add-administrator-tfs.md) can add accounts to get Stakeholder access. For information on adding stakeholder accounts:  
 
-   **Team Services:**&#160;&#160;[Add users in Visual Studio Team Services](../accounts/add-account-users-assign-access-levels-team-services.md)  
+   **Team Services:**&#160;&#160;[Add users in Visual Studio Team Services](../accounts/add-account-users-assign-access-levels.md)  
    **On-premises TFS:**&#160;&#160;[Change access levels](../security/change-access-levels.md)  
 
 With stakeholder access, anyone on your team can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to project plans by adding and modifying work items.  
@@ -351,6 +351,6 @@ For a simplified view of permissions assigned to built-in groups, see [Permissio
 For a complete reference of all built-in groups and permissions, see [Permissions and groups](../security/permissions.md). 
 
 For information about assigning access levels and supporting stakeholder access, see: 
-- **Team Services**: [Add users and assign licenses in Visual Studio Team Services](../accounts/add-account-users-assign-access-levels-team-services.md)
+- **Team Services**: [Add users and assign licenses in Visual Studio Team Services](../accounts/add-account-users-assign-access-levels.md)
 - **TFS**: [Change access levels](../security/change-access-levels.md)  
 

@@ -100,8 +100,8 @@ Learn [how to link work or school accounts to Visual Studio with MSDN subscripti
 
 **Next:**
 
-*   [Manage users and access](add-account-users-assign-access-levels-team-services.md)
-*   [Manage access with Azure AD groups](manage-azure-active-directory-groups-visual-studio-team-services.md)
+*   [Manage users and access](add-account-users-assign-access-levels.md)
+*   [Manage access with Azure AD groups](manage-azure-active-directory-groups-vsts.md)
 
 
 [Troubleshooting Q&A](faq-azure-access.md)

@@ -34,12 +34,12 @@ VSTS billing covers:
 
  * [Try extensions for free](try-additional-features-vs.md)
 
- * [Pay for more users](buy-basic-access-add-team-services-users.md)
+ * [Pay for more users](buy-basic-access-add-users.md)
 
 
 ## Step-by-Step Tutorials
 
-* [Change Azure AD tenant](../accounts/change-azure-active-directory-team-services-account.md)
+* [Change Azure AD tenant](../accounts/change-azure-active-directory-vsts-account.md)
 
 
 ## Concepts 
@@ -52,7 +52,7 @@ your Team Services account can also:
 
 * [use your directory to authenticate access](../accounts/access-with-azure-ad.md)
 
-* [change your Azure AD](../accounts/change-azure-active-directory-team-services-account.md)
+* [change your Azure AD](../accounts/change-azure-active-directory-vsts-account.md)
 
 
 ## Resources 

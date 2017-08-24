@@ -318,9 +318,9 @@ To return to a team or project user context, select the team or project from the
 
 ### User accounts and licensing  
 
-To connect to the web portal, you need your user account added to the team project. This is typically done by the [account owner (Team Services)](../accounts/add-account-users-assign-access-levels-team-services.md) or a [project administrator (TFS)](../accounts/add-users.md).
+To connect to the web portal, you need your user account added to the team project. This is typically done by the [account owner (Team Services)](../accounts/add-account-users-assign-access-levels.md) or a [project administrator (TFS)](../accounts/add-users.md).
 
-For Team Services, five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users (Team Services)](../billing/buy-basic-access-add-team-services-users.md).
+For Team Services, five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users (Team Services)](../billing/buy-basic-access-add-users.md).
 
 For TFS, limited access is available to an unlimited number of stakeholders for free; most regular contributors must have a TFS client access license (CAL). For details, see [Work as a Stakeholder](../quickstart/get-started-stakeholder.md).
 

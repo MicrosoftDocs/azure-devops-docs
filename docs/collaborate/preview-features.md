@@ -30,7 +30,7 @@ Some features provide a new user interface and functionality, which can be manag
 
 <li style="margin-bottom:1px">[New Account Landing page](../connect/account-home-pages.md)  </li>
 <li style="margin-bottom:1px">[New Release Definition Editor](../build-release/preview/release-definition-editor.md) (Team Services)</li>
-<li style="margin-bottom:1px">[Streamlined User Management](../accounts/add-account-users-assign-access-levels-team-services.md) (Team Services)</li>
+<li style="margin-bottom:1px">[Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) (Team Services)</li>
 </ul>
 
 <!---
@@ -48,7 +48,7 @@ Some features provide a new user interface and functionality, which can be manag
 <li style="margin-bottom:1px">[Combine email recipients](manage-team-notifications.md) (TFS 2017.1)</li> 
 <li style="margin-bottom:1px">[New Account Landing page](../connect/account-home-pages.md) </li>
 <li style="margin-bottom:1px">[New Release Definition Editor](../build-release/preview/release-definition-editor.md) (Team Services)</li>
-<li style="margin-bottom:1px">[Streamlined User Management](../accounts/add-account-users-assign-access-levels-team-services.md) (Team Services)</li>
+<li style="margin-bottom:1px">[Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) (Team Services)</li>
 <!---
 <li style="margin-bottom:1px">[Task tool installers](#task-tool-installers)</li> 
 -->

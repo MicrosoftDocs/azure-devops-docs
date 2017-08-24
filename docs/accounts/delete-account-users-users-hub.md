@@ -52,7 +52,7 @@ You'll need [Team Services project collection administrator or account owner per
  [Why don't users appear or disappear promptly in Team Services after I add or delete them in the Users hub?](#users-delay)
 
 0. If you deleted paid users who had Basic features, and you don't want to pay for these users, you must also 
-[reduce these users in the Visual Studio Marketplace](../billing/buy-basic-access-add-team-services-users.md), 
+[reduce these users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md), 
 so you're not charged in your next Azure billing cycle.
 
  > To reduce or cancel these users for the next month, you must make updates before the last day of the current month. 

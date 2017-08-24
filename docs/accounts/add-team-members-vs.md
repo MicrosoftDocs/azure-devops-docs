@@ -29,14 +29,14 @@ signs in, they'll get Basic access, and in some cases, additional features with 
 like [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web). 
 
 > To manually assign access levels, 
-> [add members to your account instead](add-account-users-assign-access-levels-team-services.md). 
+> [add members to your account instead](add-account-users-assign-access-levels.md). 
 > To control access to account resources, 
 > [add permissions](add-users.md) or [restrict permissions](restrict-access-tfs.md) instead.
 
 ## Before you get started
 
 If you don't have a team project yet, 
-[create your team project first](connect-to-visual-studio-team-services.md).
+[create your team project first](connect-to-vsts.md).
 To add members to team projects, you'll need 
 [project administrator](add-administrator-tfs.md), 
 [project collection administrator, or account owner](#find-pca-owner) permissions.
@@ -112,7 +112,7 @@ Add them one at a time or all at the same time.
 
 ####	Next
 
-*	[Connect to Team Services](connect-to-visual-studio-team-services.md) to share code from Xcode, Eclipse, or Visual Studio
+*	[Connect to Team Services](connect-to-vsts.md) to share code from Xcode, Eclipse, or Visual Studio
 *	[Create a backlog](../work/backlogs/create-your-backlog.md) to plan, organize, and track your work.
 *	[Grow and scale your teams](../work/scale/multiple-teams.md)
 
@@ -129,9 +129,9 @@ After you assign all 5 free users with Basic access,
 you can continue adding Stakeholders and Visual Studio subscribers. 
 To add a 6th user or more with Basic access, 
 you'll need to [set up billing in Azure](../billing/set-up-billing-for-your-account-vs.md). 
-You can then [pay for more users who need Basic access](../billing/buy-basic-access-add-team-services-users.md), 
+You can then [pay for more users who need Basic access](../billing/buy-basic-access-add-users.md), 
 return to your Team Services account, 
-[add these users, and assign them Basic access](add-account-users-assign-access-levels-team-services.md). 
+[add these users, and assign them Basic access](add-account-users-assign-access-levels.md). 
 This lets you pay monthly for their access, and you can cancel anytime.
 
 If you need more Visual Studio subscriptions, 
@@ -196,6 +196,6 @@ anymore, you must reduce your paid users to avoid charges.
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-vsts-support.md)]
 
 <!-- ENDSECTION --> 

@@ -62,7 +62,7 @@ To manage your work, select Agile or another work item process template.
 	Work in a centralized version control system that 
 	provides a good experience, even with a massive codebase.
 
-0.	[Add users to your account](add-account-users-assign-access-levels-team-services.md), 
+0.	[Add users to your account](add-account-users-assign-access-levels.md), 
 or [add users to your team project](add-team-members-vs.md). 
 
 0. Connect and share your code from:
@@ -230,7 +230,7 @@ Markdown, look at
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../_shared/qa-get-team-services-support.md)]
+[!INCLUDE [get-team-services-support](../_shared/qa-get-vsts-support.md)]
 
 <!-- ENDSECTION --> 
 

@@ -82,7 +82,7 @@ If the field you want to update isn't showing, then [customize the card to show 
 All members of a team project will be able to view and contribute to your Kanban board. To invite users to start contributing, email them the URL of your Kanban board. 
 
 To add users to your team project, see these topics:   
--  **Team Services**: [Add and manage users](../../accounts/add-account-users-assign-access-levels-team-services.md)   
+-  **Team Services**: [Add and manage users](../../accounts/add-account-users-assign-access-levels.md)   
 -  **On-premises TFS**: [Add users to a team project](../../accounts/add-users.md)   
 
 

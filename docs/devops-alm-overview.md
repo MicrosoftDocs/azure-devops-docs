@@ -386,8 +386,8 @@ Monitor your web and device apps to gain actionable insight to improve performan
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Team Services</p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:2px">[Set up Visual Studio](accounts/set-up-vs.md)</li>
- <li style="margin-bottom:2px">[Connect to Team Services](accounts/connect-to-visual-studio-team-services.md)</li>
- <li style="margin-bottom:2px">[Add team members](accounts/connect-to-visual-studio-team-services.md)</li>
+ <li style="margin-bottom:2px">[Connect to Team Services](accounts/connect-to-vsts.md)</li>
+ <li style="margin-bottom:2px">[Add team members](accounts/connect-to-vsts.md)</li>
  <li style="margin-bottom:2px">[Migrate from Team Foundation Server to Visual Studio Team Services](https://www.visualstudio.com/en-us/articles/adopting-vsts)</li>
 </ul>
 </div>
