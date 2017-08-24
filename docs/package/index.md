@@ -21,8 +21,6 @@ Host your NuGet, npm, and Maven packages in **Team Services** and **Team Foundat
 
 ## How-To Guides
 
-## How-To Guides
-
 - [Publish a NuGet package](nuget/publish.md)
 - [Publish an npm package](npm/publish.md)
 - [Publish a Maven package](maven/publish.md)
