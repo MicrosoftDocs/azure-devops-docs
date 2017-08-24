@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/10/2017
+ms.date: 08/23/2017
 ---
 
 # Import a Git repo
@@ -44,7 +44,7 @@ Although most of the time the import is successful, the following conditions can
 ### What if my source repository is behind two-factor authentication?
 
 The import service uses REST APIs to validate and trigger import and cannot work directly with repositories that require two-factor authentication.
-Most Git hosting providers like [GitHub](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) and [Team Services](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate) support personal tokens which can be supplied to the import service. 
+Most Git hosting providers like [GitHub](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) and [Team Services](../accounts/use-personal-access-tokens-to-authenticate.md) support personal tokens which can be supplied to the import service. 
 
 ### What if my source repository does not support multi_ack?
 

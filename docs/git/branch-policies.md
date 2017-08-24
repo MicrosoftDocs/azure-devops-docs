@@ -7,7 +7,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: sdanie
-ms.date: 03/29/2017
+ms.date: 08/23/2017
 ---
 
 #  Improve code quality with branch policies
@@ -101,8 +101,8 @@ updates when the protected branch is updated if the most recent build is no long
 
 ## Require linked work items
 
-Require associations between pull requests and a work item to ensure that changes to your branch have [work item management tracking](https://www.visualstudio.com/en-us/docs/work/backlogs/connect-work-items-to-git-dev-ops).
-Linking work items provides additional context for your changes and ensures that updates go through your [work item tracking process](https://www.visualstudio.com/en-us/docs/work/process/customize-process).
+Require associations between pull requests and a work item to ensure that changes to your branch have [work item management tracking](../work/backlogs/connect-work-items-to-git-dev-ops.md).
+Linking work items provides additional context for your changes and ensures that updates go through your [work item tracking process]../docs/work/process/customize-process.md).
 
 ![Require linked work items in your pull requests](_img/branch-policies/work_item_linking.png)
 
@@ -118,7 +118,7 @@ Select **Require a specific type of merge when pull requests are completed** and
 
 ## Bypass branch policies
 
-In some cases, you need to bypass policy requirements so you can push changes to the branch directly. For these situations, grant the **Exempt from policy enforcement** permission to a user or group. You can scope this permission to an entire project, a repo, or a single branch. Manage this permission along the with other [Git permissions](https://www.visualstudio.com/en-us/docs/setup-admin/permissions#Git).  
+In some cases, you need to bypass policy requirements so you can push changes to the branch directly. For these situations, grant the **Exempt from policy enforcement** permission to a user or group. You can scope this permission to an entire project, a repo, or a single branch. Manage this permission along the with other [Git permissions](../security/permissions.md#git-repository-permissions-object-level).  
 
 ![Exempt from policy enforcement permission](_img/branch-policies/PolicyExemptPermission.png)
 
