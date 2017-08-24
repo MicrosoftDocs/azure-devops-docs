@@ -24,7 +24,7 @@ If you have a team project already, and want to start coding an application proj
 
 
 >[!IMPORTANT]  
->When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for Team Services. 
+>When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for VSTS. 
 >
 >If you want these features to be to be available on your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../work/reference/process-templates/overview-process-template-files.md#client-support).  
 
@@ -141,7 +141,7 @@ From the admin context of the web portal, you can add additional repositories to
 
 ![Add repositories to an existing team project](_img/create-team-project-add-repositories.png) 
 
-<blockquote style="font-size: 13px"><b>Feature availability: </b>The ability to work from both Git and TFVC repositories from the same team project is only supported when you connect to Team Services or an on-premises application server that you've upgraded to TFS 2015 Update 1. Additional steps to address permissions may be required. See [Git team projects](../git/team-projects.md) or [TFVC team projects](../tfvc/team-projects.md).</blockquote>  
+<blockquote style="font-size: 13px"><b>Feature availability: </b>The ability to work from both Git and TFVC repositories from the same team project is only supported when you connect to VSTS or an on-premises application server that you've upgraded to TFS 2015 Update 1. Additional steps to address permissions may be required. See [Git team projects](../git/team-projects.md) or [TFVC team projects](../tfvc/team-projects.md).</blockquote>  
 
 ##Resolve errors
 

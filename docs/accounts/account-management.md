@@ -1,5 +1,5 @@
 ---
-title: Set up Team Services, Team Foundation Server, Visual Studio Team Services, or TFS
+title: Set up VSTS, Team Foundation Server, Visual Studio Team Services, or TFS
 description: Get Git or Team Foundation version control, tools for Agile and Java teams, and DevOps for continous integration and continuous delivery to build, test, and release in the cloud or on-premises
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs
@@ -12,8 +12,8 @@ ms.date: 04/04/2017
 ---
 
 
-#Administrative guide to working in Team Services and TFS  
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013 </b> 
+#Administrative guide to working in VSTS and TFS  
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013 </b> 
 
 Work on apps anytime, anywhere. Use 
 integrated, powerful, cross-platform, 
@@ -23,7 +23,7 @@ test early, and ship faster.
 
 Use this index to setup and manage your account or servers as well as configure key settings to support your teams. 
 
-- **Want to work in the cloud?** Set up a Team Services account. 
+- **Want to work in the cloud?** Set up a VSTS account. 
     Connect your dev tools, 
     share code, invite team members, 
     and start working. 
@@ -33,11 +33,11 @@ Use this index to setup and manage your account or servers as well as configure 
 
 <a id="account-setup">  </a>
 <a id="team-services">  </a>
-## Account setup (Team Services)  
-The account owner and other members of the Project Collection Administrator group are responsible for account or collection-level settings in Team Services.  
+## Account setup (VSTS)  
+The account owner and other members of the Project Collection Administrator group are responsible for account or collection-level settings in VSTS.  
 
 <div style="float:left;width:230px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Set up Team Services</p>
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Set up VSTS</p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:2px">[Create your account](create-account-with-work-school.md)</li>
  <li style="margin-bottom:2px">[Connect to your account](connect-to-vsts.md)</li>
@@ -78,7 +78,7 @@ The account owner and other members of the Project Collection Administrator grou
 For a simplified view of the default permissions granted to built-in groups and stakeholders, see   [Permissions and access](../security/permissions-access.md). 
 
 <div style="float:left;width:230px;margin:3px">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Team Services</p>
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">VSTS</p>
 <ul style="padding-left:30px;font-size:90%">
  <li style="margin-bottom:2px">[Manage users and access](add-account-users-assign-access-levels.md) </li>
  <li style="margin-bottom:2px">[Add users to team projects](add-team-members-vs.md) </li>
@@ -113,7 +113,7 @@ For a simplified view of the default permissions granted to built-in groups and 
 <ul style="padding-left:20px;font-size:90%">
 <li style="margin-bottom:2px">[Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)</li>
 <li style="margin-bottom:2px">[Work item query and folder](../work/track/set-query-permissions.md)</li>
-<li style="margin-bottom:2px">[Dashboard permissions](../report/dashboard-permissions.md#set-permissions) (Team Services)</li>
+<li style="margin-bottom:2px">[Dashboard permissions](../report/dashboard-permissions.md#set-permissions) (VSTS)</li>
 <li style="margin-bottom:2px">[Restrict access to resources](restrict-access-tfs.md)</li>
 </ul>
 </div>
@@ -146,7 +146,7 @@ Team administrators can manage settings for their team, including team alerts an
 <p style="padding-bottom:0px;text-align:center;"><b>Other team assets  </b></p>
 <ul style="padding-left:20px">
 <li style="margin-bottom:0px">[Manage team dashboard(s)](../report/dashboards.md) </li>
-<li style="margin-bottom:0px">[Manage notifications for a team](../work/track/alerts-and-notifications.md) (Team Services) </li>
+<li style="margin-bottom:0px">[Manage notifications for a team](../work/track/alerts-and-notifications.md) (VSTS) </li>
 <li style="margin-bottom:0px">[Create and manage team alerts](../work/track/alerts-and-notifications.md) (TFS) </li>
 <li style="margin-bottom:0px">[Create and manage team rooms](../collaborate/collaborate-in-a-team-room.md)  </li>
 </ul>
@@ -215,7 +215,7 @@ The method used to customize a team project depends on the process model you use
 <div style="float:left;width:330px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">DevOps resources and Extensions</p>
 <ul style="padding-left:20px">
-<li style="margin-bottom:2px">[Manage build agents](../build-release/concepts/agents/pools-queues.md) (Team Services) </li>
+<li style="margin-bottom:2px">[Manage build agents](../build-release/concepts/agents/pools-queues.md) (VSTS) </li>
 <li style="margin-bottom:2px">[Extensions (install/manage extensions)](../marketplace/install-vsts-extension.md)</li>
 <li style="margin-bottom:2px">[Security (manage collection-level permissions)](../security/permissions.md#collection)</li>
 </ul>
@@ -228,7 +228,7 @@ The method used to customize a team project depends on the process model you use
 ### Manage team projects, project collections, reports, and project portals
 
 >[!NOTE]  
->For Team Services, the account corresponds to a project collection, and tasks associated with managing the account are listed under [Account setup (Team Services)](#account-setup).  
+>For VSTS, the account corresponds to a project collection, and tasks associated with managing the account are listed under [Account setup (VSTS)](#account-setup).  
 >
 >Tasks associated with managing project collections, reports, dashboards, and SharePoint web portals are valid for TFS only.   
 
@@ -297,10 +297,10 @@ The method used to customize a team project depends on the process model you use
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Service hooks </p>
 <ul style="padding-left:20px">
  <li style="margin-bottom:2px">[Integrate with service hooks](../service-hooks/index.md)</li>
- <li style="margin-bottom:2px">[Campfire](../collaborate/campfire.md) (Team Services)</li>
- <li style="margin-bottom:2px">[Flowdock](../collaborate/flowdock.md) (Team Services)</li>
- <li style="margin-bottom:2px">[HipChat](../collaborate/flowdock.md) (Team Services)</li>
- <li style="margin-bottom:2px">[Slack](../collaborate/slack.md) (Team Services)</li>
+ <li style="margin-bottom:2px">[Campfire](../collaborate/campfire.md) (VSTS)</li>
+ <li style="margin-bottom:2px">[Flowdock](../collaborate/flowdock.md) (VSTS)</li>
+ <li style="margin-bottom:2px">[HipChat](../collaborate/flowdock.md) (VSTS)</li>
+ <li style="margin-bottom:2px">[Slack](../collaborate/slack.md) (VSTS)</li>
 </ul>
 </div>
 
@@ -308,18 +308,18 @@ The method used to customize a team project depends on the process model you use
 <div style="clear:left;font-size:100%">
 </div>
 
-### Set up Team Services
+### Set up VSTS
 
 #### Create your account
 To get started in the cloud, 
-[create your Team Services account](create-account-with-work-school.md). 
+[create your VSTS account](create-account-with-work-school.md). 
 You'll choose Git or Team Foundation as your version control, 
-so that Team Services can create your team project for code and other assets, 
+so that VSTS can create your team project for code and other assets, 
 like builds, tests, and work items. If you're starting with Visual Studio 
-as your development environment, you can create your Team Services account when you 
+as your development environment, you can create your VSTS account when you 
 [set up Visual Studio](set-up-vs.md).
 
-Your Team Services account includes 5 free users 
+Your VSTS account includes 5 free users 
 with Basic access plus unlimited Visual Studio 
 subscribers and Stakeholders at no extra charge. 
 Your account also includes free monthly amounts 
@@ -327,14 +327,14 @@ of additional services, like build and deployment,
 and cloud-based load testing.
 
 #### Connect to your account
-After Team Services creates your account, 
+After VSTS creates your account, 
 [connect to your account](connect-to-vsts.md) 
 with tools like Xcode, Eclipse, or Visual Studio, 
 and add code to your team project.
 
 Some clients, like Xcode, Git, and NuGet, require basic credentials 
-(a username and password) for you to access Team Services. 
-To connect these clients to Team Services, 
+(a username and password) for you to access VSTS. 
+To connect these clients to VSTS, 
 create personal access tokens to authenticate your identity. 
 Use a credential manager to create, store, and secure your tokens, 
 so you don't have to reenter them every time you push. 
@@ -346,11 +346,11 @@ To share work with others,
 [add users and assign access](add-account-users-assign-access-levels.md). 
 That way, you control the access that each user gets. 
 Or [add users to your team project](add-team-members-vs.md), 
-and let Team Services assign the next available access to them.
+and let VSTS assign the next available access to them.
 
 #### Try extensions for free
-Help your team do more with Team Services extensions. 
-For example, Team Services account owners can 
+Help your team do more with VSTS extensions. 
+For example, VSTS account owners can 
 try the Test Manager extension free for 90 days. 
 During the trial, all users with Basic access can 
 [try Test Manager for free](../billing/try-additional-features-vs.md).
@@ -363,11 +363,11 @@ You can then pay for more users with Basic access,
 pay for more services, and purchase extensions for your account.
 
 #### Access with Azure AD
-Team Services works with Azure Active Directory (Azure AD), 
+VSTS works with Azure Active Directory (Azure AD), 
 so that you can control access the same way that you do 
 with Microsoft services like Office 365 and Microsoft Azure. 
 If your organization uses a directory (tenant) managed by Azure AD, 
-your Team Services account can also 
+your VSTS account can also 
 [use your directory to authenticate access](access-with-azure-ad.md). 
 Or [change your Azure AD](change-azure-active-directory-vsts-account.md), 
 if you're already connected to an existing directory.

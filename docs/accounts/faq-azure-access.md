@@ -11,14 +11,14 @@ ms.date: 1/19/2017
 
 #	Troubleshooting access with Azure Active Directory (Azure AD)
 
-**Team Services**
+**VSTS**
 
 ## General
 
 <a name="o365aad"></a>
-#### Q: Can I use Office 365 Azure AD with Team Services?
+#### Q: Can I use Office 365 Azure AD with VSTS?
 
-A: To connect your Team Services account to an Office 365 Azure AD, 
+A: To connect your VSTS account to an Office 365 Azure AD, 
 you can't use the [free subscription](https://technet.microsoft.com/library/dn832618.aspx) 
 that you can activate for your Office 365 Azure AD.
 	
@@ -51,12 +51,12 @@ Learn how to [associate your Azure subscription to your Office 365 Azure AD](htt
 ## Add users to directory
 
 
-####Q:  Can I switch current users from Microsoft accounts to work accounts in Team Services?
+####Q:  Can I switch current users from Microsoft accounts to work accounts in VSTS?
 
-A:  No, although you can add new work accounts to your Team Services account, 
+A:  No, although you can add new work accounts to your VSTS account, 
 they're treated as new users. If you want to access all your work, 
 including its history, you must use the same sign-in addresses that 
-you used before your Team Services account was connected to your Azure AD.
+you used before your VSTS account was connected to your Azure AD.
 You can do this by adding your Microsoft account as a member to your Azure AD.
 
 ####Q:  Why can't I add users from other directories to my Azure AD?
@@ -71,13 +71,13 @@ or create new work accounts for them in your directory.
 
 A:  If you used a Microsoft account to activate a 
 [Visual Studio with MSDN subscription](https://www.visualstudio.com/vs/pricing/) 
-that includes Team Services as a benefit, 
+that includes VSTS as a benefit, 
 you can add a work or school account that's 
 managed by Azure Active Directory to your subscription. 
 Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](../billing/link-msdn-subscription-to-organizational-account-vs.md).
 
 <a name="guest-access"></a>
-####Q:  Can I control access to my Team Services account for external users in the connected directory?
+####Q:  Can I control access to my VSTS account for external users in the connected directory?
 
 A:	Yes, but only for external users who are 
 [added as guests through Office 365](https://support.office.com/en-us/article/Share-sites-or-documents-with-people-outside-your-organization-80E49744-E30F-44DB-8D51-16661B1D4232) 
@@ -90,7 +90,7 @@ To learn more, contact your Azure AD administrator. The setting below doesn't af
 
 **To control account access for external users added through Office 365 or Azure AD B2B collaboration**
 
-0.	Go to your Team Services account's control panel.
+0.	Go to your VSTS account's control panel.
 
 	![Go to account control panel](_img/_shared/accountsettings.png)
 
@@ -103,7 +103,7 @@ Allow or deny account access for external users added as guests.
 ## Connect to directory
 
 <a name="connect-o365-azure-ad"></a>
-####Q:	Can I connect my Team Services account to an Azure AD created from Office 365?
+####Q:	Can I connect my VSTS account to an Azure AD created from Office 365?
 
 A:	Yes, but if you can't find your Office 365 Azure AD 
 when connecting your account in the Azure portal, 
@@ -120,7 +120,7 @@ associated with your organization's Azure AD and at
 least Co-administrator permissions for your subscription.
 You need both to make your directory appear in the Azure portal, 
 so that you can link your subscription 
-and connect your Azure AD to your Team Services account. Learn 
+and connect your Azure AD to your VSTS account. Learn 
 [how to manage Azure subscription administrators](../billing/add-backup-billing-managers.md).
 
 <a name="why-not-my-directory"></a>
@@ -129,7 +129,7 @@ and connect your Azure AD to your Team Services account. Learn
 A:	This might happen because: 
 
 *	You don't have 
-[Team Services account owner permissions](#find-owner) to manage directory connections.
+[VSTS account owner permissions](#find-owner) to manage directory connections.
 
 *	You don't have an active and valid 
 ["full" Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/), 
@@ -138,7 +138,7 @@ associated with your organization's Azure AD and at
 least Co-administrator permissions for your subscription. 
 You need both to make your directory appear in the Azure portal, 
 so that you can link your subscription 
-and connect your Azure AD to your Team Services account. Learn 
+and connect your Azure AD to your VSTS account. Learn 
 [how to manage Azure subscription administrators](../billing/add-backup-billing-managers.md).
 
 	For example, if you want to use an Office 365 Azure AD, 
@@ -162,12 +162,12 @@ and connect your Azure AD to your Team Services account. Learn
 
 <a name="remove-spending-limit"></a>
 
-*	Your Team Services account isn't linked to the Azure 
+*	Your VSTS account isn't linked to the Azure 
 subscription that's associated with your directory. Learn 
-[how to link your Team Services account to an Azure subscription](../billing/set-up-billing-for-your-account-vs.md).
+[how to link your VSTS account to an Azure subscription](../billing/set-up-billing-for-your-account-vs.md).
 	
 	**Important** This link also sets up account billing, 
-	so you can bill Team Services purchases to your Azure subscription. 
+	so you can bill VSTS purchases to your Azure subscription. 
 	Some Azure subscriptions have a 
 	[spending limit](https://azure.microsoft.com/en-us/pricing/spending-limits/).
 	If your Azure subscription has a spending limit, 
@@ -176,7 +176,7 @@ subscription that's associated with your directory. Learn
 	This prevents disabling your Azure subscription the 
 	next month when your monthly charges are billed. 
 	Otherwise, all resources billed to this subscription will be suspended, 
-	including all Team Services purchases, 
+	including all VSTS purchases, 
 	Visual Studio Marketplace purchases, 
 	and Azure resources. Learn more about 
 	[how to manage your subscription's spending limit](https://msdn.microsoft.com/library/azure/dn465781.aspx).
@@ -189,16 +189,16 @@ subscription that's associated with your directory. Learn
 	0.	Remove your spending limit **indefinitely**.
 
 <a name="subscription-linked-already"></a>
-####Q:  What if my Team Services account is already linked to an Azure subscription?
+####Q:  What if my VSTS account is already linked to an Azure subscription?
 
 A:  You can [change the Azure subscription](../billing/change-azure-subscription.md) 
-that's linked to your Team Services account. 
+that's linked to your VSTS account. 
 However, unlinking will cause your account 
 to go back to the 
 [free account limits](../billing/faq-billing-setup.md#unlinking), 
 and some users might lose access until you relink. 
 
-####Q:  What happens if I unlink my Azure subscription while my Team Services account is connected to a directory?
+####Q:  What happens if I unlink my Azure subscription while my VSTS account is connected to a directory?
 
 A:  This doesn't affect your account's connection to the directory, 
 but unlinking will cause your account to go back to the 
@@ -206,29 +206,29 @@ but unlinking will cause your account to go back to the
 and some users might lose access until you relink.
 
 <a name="AlreadyConnected"></a>
-####Q:  Why is my Team Services account already connected to a directory? Can I change that directory?
+####Q:  Why is my VSTS account already connected to a directory? Can I change that directory?
 
-A:	Your Team Services account was connected to a directory when the 
+A:	Your VSTS account was connected to a directory when the 
 account owner created the account or sometime after that. 
-When you create a Team Services account with a work or school account, 
-your Team Services account is automatically connected to the directory 
+When you create a VSTS account with a work or school account, 
+your VSTS account is automatically connected to the directory 
 that manages that work or school account. 
-You can [disconnect your Team Services account](#DisconnectDirectory) from this directory 
+You can [disconnect your VSTS account](#DisconnectDirectory) from this directory 
 and reconnect to another directory, but you might have to migrate some users.
 
 <a name="AlternateCredentials"></a>
 ####Q:  My alternate credentials don't work anymore. What do I do?
 
-A:  This happens after you connect your Team Services 
+A:  This happens after you connect your VSTS 
 account to a directory. You must 
 [set up your credentials](http://support.microsoft.com/kb/2991274) 
 again for the account that you connected.
 
 <a name="CantSignIn"></a>
-####Q:  Why can't users sign in after my Team Services account is connected to a directory?
+####Q:  Why can't users sign in after my VSTS account is connected to a directory?
 
 A:  Make sure their sign-in addresses are in the 
-connected directory and in your Team Services account. 
+connected directory and in your VSTS account. 
 If they're not directory members, and you have at least 
 [user administrator permissions](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/), 
 you can [add them to the directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-create-users/). 
@@ -242,7 +242,7 @@ choose the identity that's a member in your directory because
 only directory members can get access to your account.
 
 If you have a Visual Studio with MSDN subscription that 
-[includes Team Services](https://www.visualstudio.com/vs/pricing/) as a benefit, 
+[includes VSTS](https://www.visualstudio.com/vs/pricing/) as a benefit, 
 and you activated that subscription with a Microsoft account, 
 you can add a work or school account that's managed by Azure Active Directory to your subscription. 
 Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](../billing/link-msdn-subscription-to-organizational-account-vs.md).
@@ -250,14 +250,14 @@ Learn [how to link work or school accounts to Visual Studio with MSDN subscripti
 <a name="faq-disconnect"></a>
 ## Disconnect from directory
 
-####Q:    Why can't users sign in after my Team Services account is disconnected?
+####Q:    Why can't users sign in after my VSTS account is disconnected?
 
 A:  They must now use Microsoft accounts to sign in. 
 They can continue working seamlessly if they have Microsoft 
 accounts with the same sign-in addresses that they use now. 
 
 If they must create Microsoft accounts with different sign-in addresses, 
-you must add those sign-in-addresses to your Team Services account,
+you must add those sign-in-addresses to your VSTS account,
 and reassign access to them. They can migrate work that they want to keep, 
 except work history. They might also have to relink their MSDN 
 subscriptions. They can use any email address to create a Microsoft account.

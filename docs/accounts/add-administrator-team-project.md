@@ -1,5 +1,5 @@
 ---
-title: Add administrators | Team Services & TFS  
+title: Add administrators | VSTS & TFS  
 description: Add server, team project collection,  or team project administrators 
 ms.assetid: 3f11f0b6-42bd-48c7-b5f9-0946240392cf
 ms.prod: vs-devops-alm
@@ -9,9 +9,9 @@ ms.author: estfan
 ms.date: 03/29/2017
 ---
 
-# Add administrators to Team Services and TFS
+# Add administrators to VSTS and TFS
 
-**Team Services**
+**VSTS**
 
 
 PLACEHOLDER TOPIC

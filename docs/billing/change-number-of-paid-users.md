@@ -1,5 +1,5 @@
 ---
-title: Buy Basic access to add Team Services users | Visual Studio Team Services
+title: Buy Basic access to add VSTS users | Visual Studio Team Services
 description: Buy Basic access to add more users in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
@@ -10,9 +10,9 @@ ms.author: estfan
 ms.date: 1/10/2017
 ---
 
-# Change number of users who have paid Basic access in Team Services
+# Change number of users who have paid Basic access in VSTS
 
-**Team Services**
+**VSTS**
 
 
 
@@ -21,12 +21,12 @@ PLACEHOLDER TOPIC
 
 
 When your team size changes, and you have to update the users 
-who have paid Basic access in your Team Services account, 
+who have paid Basic access in your VSTS account, 
 update this quantity in the Visual Studio Marketplace, 
 whether you're adding or removing these users. 
 
 For example, if you remove users who have paid 
-Basic access from your Team Services account, 
+Basic access from your VSTS account, 
 you must reduce them too in the Visual Studio Marketplace. That way, 
 you're not charged for them when your next Azure billing cycle starts. 
 If you previously managed paid Basic access through the Azure portal, 
@@ -38,30 +38,30 @@ you can still [find those steps here](#update-paid-users-azure).
 
 ### Before you start
 
-*	You'll need Team Services 
+*	You'll need VSTS 
 [project collection administrator or account owner permissions](#FindOwnerPCA).
 
 *	You'll need at least Co-administrator permissions for the Azure subscription 
-that's linked to your Team Services account for billing. If you don't have permissions, 
+that's linked to your VSTS account for billing. If you don't have permissions, 
 have an Azure Account Administrator or Service Administrator 
 [add you as a Co-administrator to the linked Azure subscription](add-backup-billing-managers.md).
 
 ### Update number of users who have paid Basic access
 
-0.	As Team Services project collection administrator or account owner, 
-sign in to [**Visual Studio Marketplace** > **Other** > **Team Services Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), 
+0.	As VSTS project collection administrator or account owner, 
+sign in to [**Visual Studio Marketplace** > **Other** > **VSTS Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), 
 and choose **Buy**.
 
-	![Go to Visual Studio Marketplace, Other, Team Services Users](_img/buy-more-basic-access/team-services-users-vs-marketplace.png)
+	![Go to Visual Studio Marketplace, Other, VSTS Users](_img/buy-more-basic-access/team-services-users-vs-marketplace.png)
 
-0.  Select your Team Services account, 
+0.  Select your VSTS account, 
 if you have multiple accounts.
 
-	![Select your Team Services account](_img/buy-more-basic-access/select-team-services-account-vs-marketplace.png)
+	![Select your VSTS account](_img/buy-more-basic-access/select-team-services-account-vs-marketplace.png)
 
-	<p><a data-toggle="collapse" href="#expando-why-no-ts-account">Don't see your Team Services accounts? &#x25BC;</a></p>
+	<p><a data-toggle="collapse" href="#expando-why-no-ts-account">Don't see your VSTS accounts? &#x25BC;</a></p>
 	<div class="collapse" id="expando-why-no-ts-account">
-	<p>To select your Team Services account here, you must have have Team Services 
+	<p>To select your VSTS account here, you must have have VSTS 
 	[project collection administrator or account owner permissions](#FindOwnerPCA).	
 	</div>
 
@@ -78,10 +78,10 @@ reduce this number to zero (0).
 	![Increase users who have paid Basic access](_img/buy-more-basic-access/select-number-users-vs-marketplace-add-more.png)
 
 	**Note** When you reduce users, make sure that you don't have more users with paid Basic 
-	access in your Team Services account than you have in the Visual Studio Marketplace. 
+	access in your VSTS account than you have in the Visual Studio Marketplace. 
 	Otherwise, when the next Azure billing cycle starts, 
 	the paid users who haven't signed into your account the longest will lose access first. 
-	If you [pay for TFS client access licenses (CALs) through Team Services](buy-access-tfs-test-hub.md), 
+	If you [pay for TFS client access licenses (CALs) through VSTS](buy-access-tfs-test-hub.md), 
 	make sure that you still have enough CALs for the users who need them.
 
 	<a name="RemoveLicenses"></a>
@@ -91,7 +91,7 @@ reduce this number to zero (0).
 	because paid Basic access is a monthly commitment. 
 	</div>
 
-0.	Confirm your changes. Go back to your Team Services account to 
+0.	Confirm your changes. Go back to your VSTS account to 
 [reassign access levels for your users, if necessary](../accounts/add-account-users-assign-access-levels.md).
 
 	![Reassign user access levels, if necesary](_img/buy-more-basic-access/confirm-updated-basic-access-purchase-vs-marketplace.png)
@@ -130,7 +130,7 @@ Your charges are prorated during the 1st month.
 After that, you're billed automatically on the 
 1st day of the calendar month. To calculate pricing, 
 [go to the Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=visual-studio-team-services), 
-or learn about [Team Services user pricing for Basic access](https://www.visualstudio.com/team-services/pricing/). 
+or learn about [VSTS user pricing for Basic access](https://www.visualstudio.com/team-services/pricing/). 
 
 ####Q: When do paid users renew?
 
@@ -151,13 +151,13 @@ you must make the change before the last day of the month.
 
 A:	You can still use the Azure portal or Azure classic portal 
 to pay for users who need Basic access or to manage the number 
-of Team Services users that you're paying to get Basic access.
+of VSTS users that you're paying to get Basic access.
 
 > Try [buying or managing paid Basic access through Visual Studio Marketplace](#buy-access-vs-marketplace). 
 > Otherwise, if you're buying Basic access for the first time, 
-> and you haven't set up billing for your Team Services account yet, 
-> you must [link your Team Services account to an Azure subscription for billing](set-up-billing-for-your-account-vs.md). 
-> You can then pay for Team Services users in the Azure classic portal or the Azure portal. 
+> and you haven't set up billing for your VSTS account yet, 
+> you must [link your VSTS account to an Azure subscription for billing](set-up-billing-for-your-account-vs.md). 
+> You can then pay for VSTS users in the Azure classic portal or the Azure portal. 
 > 
 > To reduce or cancel users who have paid Basic access for the next month, 
 > you must make your changes before the last day of the month. 
@@ -174,18 +174,18 @@ of Team Services users that you're paying to get Basic access.
 <div id="azure-portal-0" class="tab-pane fade in active">
 <p>**Azure portal**
 <p>
-<p>Before you start, you'll need [Team Services project collection administrator or account owner permissions](#find-owner). 
+<p>Before you start, you'll need [VSTS project collection administrator or account owner permissions](#find-owner). 
 You'll also need at least [Co-administrator permissions](add-backup-billing-managers.md) 
-for the Azure subscription that's linked to your Team Services account.
+for the Azure subscription that's linked to your VSTS account.
 <p>
 <ol>
 <li>Sign in to the [Azure portal](https://portal.azure.com).
-<li>Go to **Browse** > **Team Services accounts**. 
-Select your Team Services account.
+<li>Go to **Browse** > **VSTS accounts**. 
+Select your VSTS account.
 <p>
-<p>![Browse, Team Services accounts, select your Team Services account](_img/_shared/ap_vso_selectlinkedaccount.png)
+<p>![Browse, VSTS accounts, select your VSTS account](_img/_shared/ap_vso_selectlinkedaccount.png)
 <p>
-<p>[Why don't I see my Team Services account?](#WhyNoVSOAccount)
+<p>[Why don't I see my VSTS account?](#WhyNoVSOAccount)
 <p>
 <li>Go to **Settings** > **Users**.
 <p>
@@ -203,23 +203,23 @@ To cancel all paid users, reduce this number to zero (0). Save your changes.
 <p>**Azure classic portal**
 <p>
 <p>Before you start, you'll need at least [Co-administrator permissions](add-backup-billing-managers.md) 
-for the Azure subscription that's linked to your Team Services account. 
+for the Azure subscription that's linked to your VSTS account. 
 <p>
 <ol>
 <li>Sign in to the [Azure classic portal](https://manage.windowsazure.com/).
 <li>Go to **Visual Studio Team Services**. 
-Select your Team Services account.
+Select your VSTS account.
 <p>
-<p>![Visual Studio Team Services, select your Team Services account](_img/_shared/azurechooselinkedaccount.png)
+<p>![Visual Studio Team Services, select your VSTS account](_img/_shared/azurechooselinkedaccount.png)
 <p>
-<p>[Why don't I see my Team Services account?](#WhyNoVSOAccount)
+<p>[Why don't I see my VSTS account?](#WhyNoVSOAccount)
 <p>
 <li>Go to **Scale**.
 <p>
 <p>![Go to the Scale page](_img/_shared/azurescalelicensesresources.png)
 <p>
 <li>Drag the slider to select the total number of users with Basic access 
-that you want in your Team Services account. To cancel all paid users, 
+that you want in your VSTS account. To cancel all paid users, 
 drag the slider until only 5 users appear. Save your changes. 
 <p>
 <p>![Update paid users](_img/buy-more-basic-access/ap_vso_selecttotalusers.png)

@@ -11,7 +11,7 @@ ms.date: 08/11/2016
 
 # Save team project data for Visual Studio Team Services
 
-**Team Services**
+**VSTS**
 
 
 When you delete a team project, you cannot recover its data later. Therefore, you should save team project data.

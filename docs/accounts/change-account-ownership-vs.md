@@ -1,5 +1,5 @@
 ---
-title: Change Team Services account owner | Visual Studio Team Services
+title: Change VSTS account owner | Visual Studio Team Services
 description: How to change account owner in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
@@ -11,40 +11,40 @@ ms.date: 10/21/2016
 
 #  Change account owner for Visual Studio Team Services
 
-**Team Services**
+**VSTS**
 
 When your team's roles and responsibilities change, 
-you can change your Team Services account owner to another user. 
+you can change your VSTS account owner to another user. 
 
 <a name="ChangeOwner"></a>
 ## Before you start
 
-You must have at least Basic access, not Stakeholder, and Team Services 
+You must have at least Basic access, not Stakeholder, and VSTS 
 [project collection administrator or account owner permissions](#find-owner-pca). 
 If no one has these permissions, contact 
-[Team Services Support](https://www.visualstudio.com/team-services/support).
+[VSTS Support](https://www.visualstudio.com/team-services/support).
 
 Make sure that the new owner: 
 
-*	Has been added and invited to your Team Services account 
+*	Has been added and invited to your VSTS account 
 (```https://{youraccount}.visualstudio.com```).
 
 *	Also has at least Basic access, not Stakeholder. 
 Learn [how to manage users and access](add-account-users-assign-access-levels.md). 
 
-*	Has signed in to your Team Services account, 
+*	Has signed in to your VSTS account, 
 created a Visual Studio profile, 
 and agreed to the Terms of Service. 
 
-##	Change Team Services account owner
+##	Change VSTS account owner
 
-0.	Sign in to your Team Services account 
+0.	Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```). 
 
 	[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
 
 0.	To find the current account owner, 
-go to your Team Services account settings
+go to your VSTS account settings
 
 	![Go to account settings](../_shared/_img/account-settings-new-ui.png)
 
@@ -66,7 +66,7 @@ go to your Team Services account settings
 
 	![Select new owner, save changes](_img/change-account-ownership/vsosavenewaccountowner.png)
 
-	Your Team Services account has a new owner! 
+	Your VSTS account has a new owner! 
 
 <a name="article12"></a>
 ##  Q&A
@@ -84,7 +84,7 @@ go to your Team Services account settings
 
 A: This might happen because:
 
-*	They're not in your Team Services account, 
+*	They're not in your VSTS account, 
 or they don't have account access. 
 Learn how to [add them to your account](add-account-users-assign-access-levels.md).
 

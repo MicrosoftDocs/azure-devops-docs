@@ -11,15 +11,15 @@ ms.date: 08/04/2016
 
 # Restore your Visual Studio Team Services account
 
-**Team Services**
+**VSTS**
 
 
 Your account will be disabled but available for 90 days after you delete it. 
 If you change your mind during this time, you can recover your account. 
 After 90 days, your account and data are permanently deleted.
 
-You'll need Team Services account owner 
-permissions to restore your Team Services account. 
+You'll need VSTS account owner 
+permissions to restore your VSTS account. 
 [How do I find the account owner?](#find-owner)
 
 0.	Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).

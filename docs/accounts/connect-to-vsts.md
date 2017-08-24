@@ -1,5 +1,5 @@
 ---
-title: Connect to Team Services | Visual Studio Team Services
+title: Connect to VSTS | Visual Studio Team Services
 description: Visual Studio Team Services - Connect Eclipse, Xcode, or Visual Studio to Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 1/11/2017
 
 # Connect to Visual Studio Team Services from Eclipse, Xcode, Visual Studio, and more
 
-**Team Services**
+**VSTS**
 
 To upload and share code after creating your Visual Studio Team Services account, 
 connect to your private Git repositories or Team Foundation version control from tools like:
@@ -29,9 +29,9 @@ account? [Create your account and your team project first](create-account-with-w
 You'll use your team project to store code, 
 builds, tests, work items, and other assets. 
 
-If you created your Team Services account 
+If you created your VSTS account 
 but didn't create a team project for any reason, 
-Team Services prompts to finish creating your 
+VSTS prompts to finish creating your 
 team project after you sign in.
 
 <a name="createteamproject"></a>
@@ -75,7 +75,7 @@ or [add users to your team project](add-team-members-vs.md).
 	* [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 
-## Connect Visual Studio to Team Services from Team Services
+## Connect Visual Studio to VSTS from VSTS
 
 0.	If you haven't already, install 
 [Visual Studio 2017](https://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409).
@@ -99,7 +99,7 @@ find and select your team project.
 
 
 <a name="vs"></a>
-## Connect to Team Services from Visual Studio
+## Connect to VSTS from Visual Studio
 
 0. If you haven't already, install [Visual Studio 2017](https://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409).
 
@@ -116,7 +116,7 @@ Learn about [connecting to team projects](../connect/connect-team-projects.md#vi
 
 ## Connect from Visual Studio Code
 
-Set up [VS Code](https://code.visualstudio.com/docs/editor/versioncontrol) with Git and Team Services.
+Set up [VS Code](https://code.visualstudio.com/docs/editor/versioncontrol) with Git and VSTS.
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Team Services - Access with Azure AD | Visual Studio Team Services
+title: VSTS - Access with Azure AD | Visual Studio Team Services
 description: Azure Active Directory (Azure AD) - Control access to Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
@@ -10,14 +10,14 @@ ms.author: estfan
 ms.date: 1/19/2017
 ---
 
-#  Disconnect your Team Services account from your directory
+#  Disconnect your VSTS account from your directory
 
-**Team Services**
+**VSTS**
 
 <a name="DisconnectDirectory"></a>
 
 To stop using your organization's directory and return to signing in with Microsoft accounts, 
-you can disconnect your Team Services account from your directory. 
+you can disconnect your VSTS account from your directory. 
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with VSTS.
 
@@ -25,34 +25,34 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 You'll need:
 
 *	[Microsoft accounts](https://signup.live.com/) 
-for all users in your Team Services account, 
-including yourself as Team Services account owner
+for all users in your VSTS account, 
+including yourself as VSTS account owner
 
-*	[Team Services account ownership](#find-owner) for your Microsoft account 
+*	[VSTS account ownership](#find-owner) for your Microsoft account 
 
 *	Global administrator permissions in your Azure AD 
-for your Microsoft account as the Team Services account owner. You'll need both 
-because Azure AD users can't disconnect Team Services accounts from directories. 
+for your Microsoft account as the VSTS account owner. You'll need both 
+because Azure AD users can't disconnect VSTS accounts from directories. 
 You can add Microsoft accounts to a directory as external users. 
 Learn about [managing Azure administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/).
 
 **What happens to current users?**  Users will continue working seamlessly if they have Microsoft accounts 
 that share the same sign-in addresses that they use now.
 Otherwise, they won't have access until you add them to 
-Team Services as new users. They can migrate everything except work history, 
+VSTS as new users. They can migrate everything except work history, 
 relink Visual Studio subscriptions, and have their access levels reassigned to their new identities.
 
 0.	[Sign in to the Azure classic portal](https://manage.windowsazure.com/) 
-with your Microsoft account as the Team Services account owner.
+with your Microsoft account as the VSTS account owner.
 
 	> [!NOTE]
-	> You can disconnect your Team Services account 
+	> You can disconnect your VSTS account 
 	> from your directory only through the Azure classic portal.
 
 	[Why am I asked to choose between a work or school account and a personal account?](#ChooseOrgAcctMSAcct)
 
 0.  Go to **Visual Studio Team Services**. 
-Select your Team Services account.
+Select your VSTS account.
 
 	![Select your account](_img/manage-work-access/azureselectconnectedvso.png)
 
@@ -68,12 +68,12 @@ Select your Team Services account.
 
 	![Account is now disconnected from your directory](_img/manage-work-access/azuredisconnectdirectory3.png)
 
-	Your Team Services account is disconnected from your organization's directory. 
+	Your VSTS account is disconnected from your organization's directory. 
 	Only users with Microsoft accounts can sign in.
-	**Before you disconnect your Team Services account from your directory**, 
-	make sure to **change the Team Services account owner to a Microsoft account**, 
+	**Before you disconnect your VSTS account from your directory**, 
+	make sure to **change the VSTS account owner to a Microsoft account**, 
 	and not to a school or work account. If you don't do this, 
-	you can't sign in to your Team Services account unless your work or school 
+	you can't sign in to your VSTS account unless your work or school 
 	account has the same email address as your Microsoft account.
 
 	[More questions about disconnecting?](#faq-disconnect)

@@ -11,7 +11,7 @@ ms.date: 08/04/2017
 
 # Add users to a team project, sharepoint and reporting services, and groups
 
-**Team Services** | **TFS 2015** | **TFS 2013**
+**VSTS** | **TFS 2015** | **TFS 2013**
 
 As roles and responsibilities change,
 you might need to change the membership or permission levels for individual members of a team project.

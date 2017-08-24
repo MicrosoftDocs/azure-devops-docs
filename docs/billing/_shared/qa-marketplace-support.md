@@ -6,7 +6,7 @@ A: Depending on the support you need:
 
 * Visual Studio subscriptions -- [subscriptions support](https://www.visualstudio.com/subscriptions/support)
 
-* Help with Team Services -- [Team Services support](https://www.visualstudio.com/team-services/support-visual-studio-team-services)
+* Help with VSTS -- [VSTS support](https://www.visualstudio.com/team-services/support-visual-studio-team-services)
 
 * Help with Team Foundation Server -- [TFS support](https://www.visualstudio.com/team-services/tfs_support)
 

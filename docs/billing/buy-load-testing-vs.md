@@ -1,5 +1,5 @@
 ---
-title: How to buy cloud-based load testing | Team Services
+title: How to buy cloud-based load testing | VSTS
 description: Buy cloud-based load testing in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
@@ -12,16 +12,16 @@ ms.date: 04/28/2017
 
 #  How to buy cloud-based load testing in Visual Studio Team Services
 
-**Team Services**
+**VSTS**
 
-You can purchase additional minutes to support [load testing your apps](../load-test/index.md). You can create load tests using Visual Studio Ultimate 2013, Visual Studio Enterprise 2015, or later versions. You can then run these tests in Team Services.
+You can purchase additional minutes to support [load testing your apps](../load-test/index.md). You can create load tests using Visual Studio Ultimate 2013, Visual Studio Enterprise 2015, or later versions. You can then run these tests in VSTS.
 
 Load tests are measured and billed in virtual user minutes (VUM) as described in  this Q&A: [What are virtual user minutes (VUMs)? How many minutes will my load test use?](../load-test/reference-qa.md#VUM). 
 
 Your Visual Studio Team Services account includes **free**
 20,000 virtual user minutes per month for cloud-based load testing.
 If you need more than this amount, you must first
-[set up billing for your Team Services account](set-up-billing-for-your-account-vs.md).
+[set up billing for your VSTS account](set-up-billing-for-your-account-vs.md).
 You can then [buy more Cloud-based Load Testing](#buy-load-testing) in the
 [Azure classic portal](https://manage.windowsazure.com/) or the [Azure portal](https://portal.azure.com).
 
@@ -32,18 +32,18 @@ You can then [buy more Cloud-based Load Testing](#buy-load-testing) in the
 
 Before you start:
 
-*  You'll need Team Services
+*  You'll need VSTS
 [project collection administrator or account owner permissions](#FindOwnerPCA)
-to purchase for your Team Services account.
+to purchase for your VSTS account.
 
 *  You must first
-[set up billing for your Team Services account](set-up-billing-for-your-account-vs.md),
+[set up billing for your VSTS account](set-up-billing-for-your-account-vs.md),
 if you haven't already. You'll need an [Azure subscription](#AzureMSDNSubscription)
-that you can link to your Team Services account for billing.
+that you can link to your VSTS account for billing.
 
 *  If you're going through the Azure portal, you'll also need at least
 [Co-administrator permissions](add-backup-billing-managers.md)
-for the Azure subscription that's linked to your Team Services account for billing.
+for the Azure subscription that's linked to your VSTS account for billing.
 
 You can follow the steps below for the Azure classic portal
 or the Azure portal. Both portals will give you the same results.
@@ -63,12 +63,12 @@ or the Azure portal. Both portals will give you the same results.
 <li>[Sign in to the Azure portal](https://portal.azure.com/).
 <p>If you experience browser problems with Azure,
 make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
-<li>Go to **More services** > **Developer tools** > **Team Services accounts**.
-Select your Team Services account.
+<li>Go to **More services** > **Developer tools** > **VSTS accounts**.
+Select your VSTS account.
 <p>
-<p>![Browse, Team Services accounts, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
+<p>![Browse, VSTS accounts, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
 <p>
-<p>[Why don't I see my Team Services account?](#WhyNoVSOAccount)
+<p>[Why don't I see my VSTS account?](#WhyNoVSOAccount)
 <p>
 <li>Select **Cloud-based load testing**.
 <p>
@@ -94,11 +94,11 @@ as your Azure subscription Co-administrator.
 <p>If you experience browser problems with Azure,
 make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 <p>
-<li>Select your Team Services account.
+<li>Select your VSTS account.
 <p>
-<p>![Select your Team Services account](_img/_shared/azurechooselinkedaccount.png)
+<p>![Select your VSTS account](_img/_shared/azurechooselinkedaccount.png)
 <p>
-<p>[Why don't I see my Team Services account?](#WhyNoVSOAccount)
+<p>[Why don't I see my VSTS account?](#WhyNoVSOAccount)
 <p>
 <li>Go to **Scale**.
 <p>
@@ -130,7 +130,7 @@ you can come back to the Azure classic portal.
 
 - [Build your app](../build-release/apps/index.md)
 - [Load test your app](../load-test/get-started-simple-cloud-load-test.md)  
-- [How to buy more pipeline capacity for builds and releases in Team Services](buy-more-build-vs.md)  
+- [How to buy more pipeline capacity for builds and releases in VSTS](buy-more-build-vs.md)  
 - [Visual Studio Marketplace and billing Q&A](../marketplace/marketplace-billing-qa.md)  
 
 ## Q&A
@@ -162,13 +162,13 @@ Learn more about [pricing here](https://www.visualstudio.com/team-services/prici
 
 ### Q: Are there other ways to get features for my account?
 
-A: Yes, you can add other features to your Team Services account when you
+A: Yes, you can add other features to your VSTS account when you
 [download and install extensions from the Visual Studio Marketplace](https://www.visualstudio.com/get-started/marketplace/get-vsts-extensions).
 
-### Q: How do I get help or support for Team Services?
+### Q: How do I get help or support for VSTS?
 
-A:	Try the [Team Services forum](https://social.msdn.microsoft.com/Forums/en-us/home?forum=TFService) 
-or [Team Services Support](https://www.visualstudio.com/team-services/support). 
+A:	Try the [VSTS forum](https://social.msdn.microsoft.com/Forums/en-us/home?forum=TFService) 
+or [VSTS Support](https://www.visualstudio.com/team-services/support). 
 
 
 <!-- ENDSECTION -->

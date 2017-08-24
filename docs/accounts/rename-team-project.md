@@ -1,6 +1,6 @@
 ---
-title: Rename your Team Project | Team Services and TFS
-description: You can rename your team project in Team Services or TFS, and then there are some things you need to do to work with the renamed team project.
+title: Rename your Team Project | VSTS and TFS
+description: You can rename your team project in VSTS or TFS, and then there are some things you need to do to work with the renamed team project.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs
 ms.assetid: 23729f9a-9947-4fc1-89b0-07e3b52298ac
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Rename a team project
 
-**Team Services** | **TFS 2015**
+**VSTS** | **TFS 2015**
 
 A team project rename updates all of your version control paths, work items, queries, and other team project artifacts to reflect the new name. 
 Team projects can be renamed multiple times and older names can be reused as well. 
@@ -206,7 +206,7 @@ Reports will not work as expected until the jobs have run.
 
 #### Q: What permission do I need to rename a team project?
 
-If you're using Team Services or Team Foundation Server 2017 or later, team project rename requires the "rename team project" permission for a team project.
+If you're using VSTS or Team Foundation Server 2017 or later, team project rename requires the "rename team project" permission for a team project.
 If you're using Team Foundation Server 2015, users require "edit project-level information" permission on a team project to rename it. 
 
 #### Q: Can I use a team project name again?

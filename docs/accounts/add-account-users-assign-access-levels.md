@@ -12,11 +12,11 @@ ms.date: 1/13/2017
 
 #	Manage users and access in Visual Studio Team Services
 
-**Team Services**
+**VSTS**
 
-Add users to your Team Services account so you can specify 
+Add users to your VSTS account so you can specify 
 the level of features that they can use: Basic or Stakeholder. 
-These users can join your Team Services account for free:
+These users can join your VSTS account for free:
 
 *	5 users who get [Basic features](https://www.visualstudio.com/team-services/compare-features/), 
 like version control, tools for Agile, Java, build, release management, and more
@@ -33,10 +33,10 @@ you don't have to pay for users to join your account.
 You only have to pay if you have more than 5 users 
 who need Basic features, and they don't have Visual Studio subscriptions.
 You can [pay for additional users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md), 
-return to your Team Services account, add these users, and assign them Basic access. 
+return to your VSTS account, add these users, and assign them Basic access. 
 This lets you pay monthly for their access, and you can cancel anytime.
 
-Visual Studio subscriptions give you flexible ways to access Team Services 
+Visual Studio subscriptions give you flexible ways to access VSTS 
 and to license the Visual Studio IDE and other Microsoft software for dev and test. 
 Learn [how to buy Visual Studio subscriptions](../billing/vs-subscriptions/buy-vs-subscriptions.md) 
 from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions). 
@@ -46,7 +46,7 @@ in the [Visual Studio Subscriptions Administration portal](https://manage.visual
 Make sure to sign in with the ID that you used to purchase your subscriptions.
 
 > You can add people to team projects, 
-> rather than to your account. Team Services automatically assigns them 
+> rather than to your account. VSTS automatically assigns them 
 > [Basic features](https://www.visualstudio.com/team-services/compare-features/), 
 > if your account has seats available, 
 > or [Stakeholder features](https://www.visualstudio.com/team-services/compare-features/), 
@@ -64,32 +64,32 @@ To control access to account resources instead,
 learn [how to add permissions](add-users.md) or 
 [restrict permissions](restrict-access-tfs.md).
 To change how many users can access 
-paid extensions in your Team Services account, 
+paid extensions in your VSTS account, 
 learn [how to change paid extension users](../billing/change-number-paid-extension-users.md).
 
 
 ## Required permissions
 
-You'll need [Team Services project collection administrator or account owner permissions](#find-owner). 
+You'll need [VSTS project collection administrator or account owner permissions](#find-owner). 
 
 ##	Add users to your Visual Studio Team Services account
 
-0.	Sign in to your Team Services account 
+0.	Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```). 
 
 	[Why am I asked to choose between my "work or school account" and my "personal account"?](#ChooseOrgAcctMSAcct)
 
 0.  Go to **Users** where you can view and assign access levels for all account users.
 
-	Why can't I access the Users hub?  You must have [Team Services project collection administrator permissions or account owner permissions](#find-owner) to access the Users hub.
+	Why can't I access the Users hub?  You must have [VSTS project collection administrator permissions or account owner permissions](#find-owner) to access the Users hub.
 
  > [!NOTE]
- > If have an Azure Active Directory (Azure AD) backed Team Services account, and you need to add users who are 
+ > If have an Azure Active Directory (Azure AD) backed VSTS account, and you need to add users who are 
  > external to your Azure AD, first 
  > [add those users as foreign principals](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-create-users#add-a-user) to 
  > your Azure AD.  Be sure on the **Tell us about this user page**, under **Type of user**, to choose **User with an 
  > existing Microsoft account**.  After completing those steps, follow the steps below to add the foreign Azure AD 
- > user to Team Services.
+ > user to VSTS.
 
     ![Go to Users hub](_img/_shared/users-hub-updated.png)
 	
@@ -102,14 +102,14 @@ Select their access level, based on the features they need.
 	<div class="collapse" id="expando-what-sign-in-address">
 	<p>You must add email addresses for 
 	["personal" Microsoft accounts](https://www.microsoft.com/account) 
-	unless your Team Services account 
+	unless your VSTS account 
 	authenticates users and control account access through 
 	[Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
-	[Learn if your Team Services account uses your organization's directory](#ConnectedDirectory). 
+	[Learn if your VSTS account uses your organization's directory](#ConnectedDirectory). 
 	If your users don't have Microsoft accounts, 
 	have them [sign up](https://signup.live.com/).
 
- 	<p>If your Team Services account is connected to your organization's directory, 
+ 	<p>If your VSTS account is connected to your organization's directory, 
 	all users must be members in that directory. If they're not members, 
 	have a directory administrator add them to that directory. 
 	You can then find them in that directory when you add them to your 
@@ -128,7 +128,7 @@ Select their access level, based on the features they need.
 	<p>If you have more users who need Basic features, 
 	and they don't have Visual Studio subscriptions, 
 	you can [pay for these users](../billing/buy-basic-access-add-users.md), 
-	return to your Team Services account, add these users, and assign them Basic access.
+	return to your VSTS account, add these users, and assign them Basic access.
 	<p>
 	<li>**[Stakeholder](https://www.visualstudio.com/team-services/compare-features/)**: Unlimited users who get Stakeholder features 
 	<p>
@@ -136,7 +136,7 @@ Select their access level, based on the features they need.
 	Learn about [working as a stakeholder](../quickstart/get-started-stakeholder.md). 
 	<p>
 	<li>**[Visual Studio/MSDN Subscriber](https://www.visualstudio.com/team-services/compare-features/)**: 
-	Unlimited users whose [Visual Studio subscriptions include Team Services as a benefit](https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/). 
+	Unlimited users whose [Visual Studio subscriptions include VSTS as a benefit](https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/). 
 	See [full benefits](https://www.visualstudio.com/subscriptions/). 
 	<p>	
 	</ul>
@@ -146,10 +146,10 @@ Select their access level, based on the features they need.
 
 	![Add Visual Studio subscribers](_img/assign-licenses/vso-usershub-addmsdnusers.png)
           
-	Team Services automatically recognizes and validates Visual Studio subscribers, 
+	VSTS automatically recognizes and validates Visual Studio subscribers, 
 	and assigns access levels that match their subscriptions, no matter which access levels you give them.
 	   
-	![Team Services validates Visual Studio subscribers when they sign in](_img/assign-licenses/vso-usershub-licensevalidated.png)
+	![VSTS validates Visual Studio subscribers when they sign in](_img/assign-licenses/vso-usershub-licensevalidated.png)
 
 	[Why won't my subscription validate when I sign in?](#ValidateMSDNSubscription)
 
@@ -165,7 +165,7 @@ Select their access level, based on the features they need.
 click **Send Invitation**.
 
 	Each user gets an invitation email that 
-	has a link to your Team Services account. 
+	has a link to your VSTS account. 
 
 	> To sign in to your account, they can use the invitation link, 
 	> or go directly to your account at ```https://{youraccount}.visualstudio.com```.
@@ -175,7 +175,7 @@ click **Send Invitation**.
 0.	After adding users to your account, 
 you can [add them to team projects](add-team-members-vs.md).
 
-    [Why don't users appear or disappear promptly in Team Services after I add or delete them in the Users hub?](#users-delay)
+    [Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](#users-delay)
 
 
 ##	Next

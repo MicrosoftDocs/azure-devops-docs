@@ -1,6 +1,6 @@
 ---
-title: Account preferences | Team Services & TFS
-description: Change picture, set preferred email, or other account preferences from your account profile in VS Team Services (VSTS) or Team Foundation Server (TFS) 
+title: Account preferences | VSTS & TFS
+description: Change picture, set preferred email, or other account preferences from your account profile in VS VSTS (VSTS) or Team Foundation Server (TFS) 
 ms.technology: vs-devops-setup
 ms.prod: vs-devops-alm
 ms.assetid: 30821EA7-F20F-4A15-B4E3-A023C39FFF72
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 #Set your account preferences
 
-**Team Services | TFS 2015**
+**VSTS | TFS 2015**
 
 From your profile page, you can change your picture or other account preferences. Specifically, you can set the following:  
 
@@ -44,7 +44,7 @@ From your profile page, you can change your picture or other account preferences
 <div style="float:left;width:180px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Personal alerts and notifications</p>
 <ul style="padding-left:30px">
-<li style="margin-bottom:1px">[Manage personal notifications](../collaborate/manage-personal-notifications.md) (Team Services, TFS 2017.1)</li>
+<li style="margin-bottom:1px">[Manage personal notifications](../collaborate/manage-personal-notifications.md) (VSTS, TFS 2017.1)</li>
 <li style="margin-bottom:2px">[Set personal alerts](#alerts) (TFS 2015, TFS 2017)</li>
 </ul>
 
@@ -70,18 +70,18 @@ From your profile page, you can change your picture or other account preferences
 <li style="margin-bottom:2px">Pull requests</li>
 </ul>
 
-## Set preferences (Team Services)   
+## Set preferences (VSTS)   
 
 To change your your account information, open your account menu.  
 
-![Team Services, My Profile link on Account menu](_img/account-prefs/open-profile-team-services.png)  
+![VSTS, My Profile link on Account menu](_img/account-prefs/open-profile-team-services.png)  
 
 From the Profile/Information page, click Edit to change the picture, display name, or preferred email. Open the Preferences page to change a locale preference.  
 
 <!---
-![Team Services, Profile page](_img/account-prefs/account-pref-ts-profile-page.png)
+![VSTS, Profile page](_img/account-prefs/account-pref-ts-profile-page.png)
 -->
-<img src="_img/account-prefs/team-services-profile-dialog-co.png" alt="Team Services, Profile page" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/account-prefs/team-services-profile-dialog-co.png" alt="VSTS, Profile page" style="border: 1px solid #CCCCCC;" />  
 
 
 

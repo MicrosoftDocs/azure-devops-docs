@@ -12,14 +12,14 @@ ms.date: 4/17/2017
 
 #	Add account users from the user hub for Visual Studio Team Services
 
-**Team Services Streamlined User Management Preview**
+**VSTS Streamlined User Management Preview**
 
 If you are a Project Collection Administrator, you can now navigate to the new Users page by turning on "Streamlined User Management" under "Preview features".
  
 ![Choose Preview features from your user menu in the upper right corner](_img/user-hub/preview-features.png)
 
-Add users to your Team Services account and specify the level of features they can use, such as Basic or Stakeholder.  
-These kinds of users can join your Team Services account for free:
+Add users to your VSTS account and specify the level of features they can use, such as Basic or Stakeholder.  
+These kinds of users can join your VSTS account for free:
 
 *	5 users who get [Basic features](https://www.visualstudio.com/team-services/compare-features/), 
 such as version control, tools for Agile, Java, build, release management, and more
@@ -33,13 +33,13 @@ who also get Basic features, and in some cases, additional features with specifi
 
 
 > You can add people to team projects, 
-> rather than to your account. Team Services automatically assigns them 
+> rather than to your account. VSTS automatically assigns them 
 > [Basic features](https://www.visualstudio.com/team-services/compare-features/), 
 > if your account has seats available, 
 > or [Stakeholder features](https://www.visualstudio.com/team-services/compare-features/), 
 > if not. Learn [how to add members to team projects](add-team-members-vs.md).
 >
-> When people don't need access to your Team Services account anymore, [delete them](#delete-user) from your account. 
+> When people don't need access to your VSTS account anymore, [delete them](#delete-user) from your account. 
 
 
 ## How does *access* differ from *permissions*?
@@ -51,13 +51,13 @@ or [buy more access to TFS or the Test hub](../billing/buy-access-tfs-test-hub.m
 
 To control access to account resources instead, learn [how to add permissions](add-users.md) or 
 [restrict permissions](restrict-access-tfs.md).  To change how many users can access paid extensions in your 
-Team Services account, 
+VSTS account, 
 learn [how to change paid extension users](../billing/change-number-paid-extension-users.md).
 
 
 ## Required Permissions
 
-You'll need [Team Services project collection administrator or account owner permissions](#find-owner). 
+You'll need [VSTS project collection administrator or account owner permissions](#find-owner). 
 
 ##	Add users to your Visual Studio Team Services account
 
@@ -67,12 +67,12 @@ using this Users view.  When you add users, each receives a notification email w
 link to the account page.
 
  > [!NOTE]
- > If have an Azure Active Directory (Azure AD) backed Team Services account, and you need to add users who are 
+ > If have an Azure Active Directory (Azure AD) backed VSTS account, and you need to add users who are 
  > external to your Azure AD, first 
  > [add those users as foreign principals](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-create-users#add-a-user) to 
  > your Azure AD.  Be sure on the **Tell us about this user page**, under **Type of user**, to choose **User with an 
  > existing Microsoft account**.  After completing those steps, follow the steps below to add the foreign Azure AD 
- > user to Team Services.
+ > user to VSTS.
 
 ![Click the Add Users button](_img/user-hub/add-users-button.png)
 

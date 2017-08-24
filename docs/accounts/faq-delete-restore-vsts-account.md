@@ -11,7 +11,7 @@ ms.date: 1/19/2017
 
 #	Troubleshooting deleting or restoring VSTS acounts
 
-**Team Services**
+**VSTS**
 
 
 

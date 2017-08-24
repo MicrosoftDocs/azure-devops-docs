@@ -1,4 +1,4 @@
-####Q:		Why don't I see my Team Services account in the Visual Studio Marketplace?
+####Q:		Why don't I see my VSTS account in the Visual Studio Marketplace?
 
 A:	If you don't see your account when buying from the Visual Studio Marketplace, 
 try these steps:
@@ -9,7 +9,7 @@ In the top right corner of the page, click your user name to view your profile.
 0.	Close all browser windows.
 0.	Open a private or incognito browsing session.
 0.	Sign in to the Visual Studio Marketplace with the identity 
-that's a user in the Team Services account that you want.
+that's a user in the VSTS account that you want.
 
 	> [!TIP]
 	> If you're asked to choose "work or school account" or 
@@ -21,4 +21,4 @@ that's a user in the Team Services account that you want.
 	> security settings, and permissions.
 	> 
 	> Choose the identity that's the user in 
-	> the Team Services account that you want to select.
+	> the VSTS account that you want to select.

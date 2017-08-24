@@ -31,17 +31,17 @@ that can be installed to help with:
 - Code testing and tracking
 - Collaboration amongst team members
 
-Adding extensions to your Team Services account is incredibly easy:
+Adding extensions to your VSTS account is incredibly easy:
 
 1. Search and find extensions for your account in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
-2. Install the extension from the Marketplace and start using it in Team Services.
+2. Install the extension from the Marketplace and start using it in VSTS.
 You can install them with a few clicks. You must have administrative permissions to upload or install extensions. 
 
 ## Get or build extensions
 
 | Product | Topics |
 |-----------------------------|--------------------------------------------------------------------------------------------------|
-| Visual Studio Team Services | [Get extensions for Team Services](../marketplace/install-vsts-extension.md) <br/> [Develop extensions for Team Services](https://aka.ms/vsoextensions) |
+| Visual Studio Team Services | [Get extensions for VSTS](../marketplace/install-vsts-extension.md) <br/> [Develop extensions for VSTS](https://aka.ms/vsoextensions) |
 | Visual Studio | [Get extensions for Visual Studio](https://marketplace.visualstudio.com/vs) <br/> [Develop extensions for Visual Studio](http://aka.ms/extendvs) |
 | Visual Studio Code | [Get extensions for Visual Studio Code](https://marketplace.visualstudio.com/vscode) <br/> [Develop extensions for Visual Studio Code](http://go.microsoft.com/fwlink/?LinkID=703825) |
 
@@ -96,5 +96,5 @@ will be billed on the 1st day of the calendar month after the anniversary date o
 >[!NOTE]  
 > To find answers to commonly asked questions such as how to remove the spending limit in Azure or other questions around Visual Studio Subscriptions and Azure Billing, see [Marketplace and Billing Q&A](marketplace-billing-qa.md). 
 
-For the billing frequency of extensions, see [Get extensions for Team Services](https://www.visualstudio.com/docs/marketplace/get-vsts-extensions#bill-period).
+For the billing frequency of extensions, see [Get extensions for VSTS](https://www.visualstudio.com/docs/marketplace/get-vsts-extensions#bill-period).
 
