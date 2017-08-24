@@ -31,16 +31,16 @@ ms.date: 08/12/2016
 | <iframe src="https://channel9.msdn.com/Series/Parts-Unlimited-Labs/Parts-Unlimited-Continuous-Integration/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/TechDaysOnline/UK-TechDays-Online-September-2016/Supporting-DevOps-through-testing--its-not-just-about-automating-tests/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
 | | |
 
+## Step-by-Step Tutorials
+
+* [Test your app](example-continuous-testing.md)
+
 ## How-to Guides
 
 * [Set up continuous testing](set-up-continuous-testing-builds.md)
 * [Run tests from the Test hub](run-automated-tests-from-test-hub.md)
 * [Associate tests with test cases](associate-automated-test-with-test-case.md)
 * [Associate results with requirements](associate-automated-results-with-requirements.md)
-
-## Step-by-Step Tutorials
-
-* [Test your app](example-continuous-testing.md)
 
 ## Reference
 
