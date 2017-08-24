@@ -19,14 +19,16 @@ Host your NuGet, npm, and Maven packages in **Team Services** and **Team Foundat
 - [Get started with npm](get-started-npm.md)   
 - [Get started with Maven](get-started-maven.md)  
 
-## Concepts  
+## How-To Guides
 
-- [Key concepts](../concepts.md)    
-- [Clients and tools](../tools.md)     
-- [Software development roles](../roles.md)   
-- [FAQs](../faqs.md)- 
-- [What's the difference between VSTS and TFS?](../about-vsts-tfs.md)  
-- Accounts and tenants (TBW)  
-- Licensing (TBW) 
+- [Publish a NuGet package]()
+- [Publish an npm package]()
+- [Publish a Maven package]()
+- [Publish a Gradle package]()
+- 
+
+## Resources
+
+- [Build and Release with VSTS](/vsts/build-release/index.md)
 
 
