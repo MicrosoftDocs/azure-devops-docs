@@ -1,0 +1,8 @@
+{
+    "redirections": [{
+            "source_path": "test-redirect.md",
+            "redirect_url": "/work/scrum/index.md",
+            "redirect_document_id": false
+        }
+    ]
+}
