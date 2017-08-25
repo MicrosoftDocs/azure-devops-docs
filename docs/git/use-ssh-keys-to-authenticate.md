@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 Connect to your Git repos through SSH when you can't use the recommended [Git Credential Managers](set-up-credential-managers.md) or
 [Personal Access Tokens](../accounts/use-personal-access-tokens-to-authenticate.md) to securely connect using HTTPS authentication.
 
-> Visual Studio does not support connecting to Git repos via SSH.
+> As of Visual Studio 2017, SSH can be used to connect to Git repos.
 
 ## How SSH key authentication works
 SSH public key authentication works with a pair of generated encryption keys. The _public_ key is shared and used to encrypt
