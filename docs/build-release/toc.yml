@@ -182,24 +182,28 @@
       href: apps/aspnet/aspnetcore-docker-to-azure.md
   - name: Use Package Management
     items:
-    - name: Set up Team Build with NuGet
+    - name: NuGet
       items:
-      - name: Restore private packages
-        href: package/nuget/restore-private-package-build.md
-      - name: Pack and push packages
-        href: package/nuget/pack-push-packages-build.md
-    - name: Set up Team Build with npm
+      - name: Use NuGet with Team Services
+        href: /vsts/package/nuget/nuget-exe.md
+      - name: Use dotnet with Team Services
+        href: /vsts/package/nuget/dotnet-exe.md
+      - name: Set up a multi-developer environment
+        href: /vsts/package/nuget/bootstrap-nuget.md
+      - name: Set up Jenkins + NuGet
+        href: /vsts/package/build/jenkins.md
+    - name: npm
       items:
-      - name: Install private packages
-        href: package/npm/install-private-packages-build.md
-      - name: Publish NuGet packages
-        href: package/npm/publish-packages-build.md
-    - name: Set up Team Build with Maven
+      - name: Install an npm package
+        href: /vsts/package/npm/install.md
+    - name: Maven
       items:
-      - name: Install private packages
-        href: package/maven/install-private-packages-build.md
-      - name: Publish packages
-        href: package/maven/publish-packages-build.md
+      - name: Install a Maven project
+        href: /vsts/package/maven/install.md
+    - name: Gradle
+      items:
+      - name: Pull a Gradle package and build
+        href: /vsts/package/gradle/pull-package-gradle.md
   - name: Use Release Management
     items:
     - name: Releases and deployments
