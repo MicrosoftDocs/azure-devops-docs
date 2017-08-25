@@ -3,6 +3,11 @@
             "source_path": "test-redirect.md",
             "redirect_url": "/work/scrum/index.md",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "test/test-redirect-2.md",
+            "redirect_url": "/build-release/apps/aspnet/build-aspnet-4.md",
+            "redirect_document_id": false
         }
     ]
 }
