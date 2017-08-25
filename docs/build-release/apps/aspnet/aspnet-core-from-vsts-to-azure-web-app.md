@@ -26,43 +26,43 @@ an ASP.NET Core app
 to an Azure web app. 
 You create the web app using the Azure CLI, then set up CI/CD in VSTS.
 
-![Screenshot showing ASP.NET Core web app](../../deploy-azure/_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
+![Screenshot showing ASP.NET Core web app](../../../deploy-azure/_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
-[!INCLUDE [temp](../apps/get-started/_shared/vsts-and-azure-setup.md)]
+[!INCLUDE [temp](../../apps/get-started/_shared/vsts-and-azure-setup.md)]
 
-[!INCLUDE [temp](_shared/create-azure-web-app.md)]
+[!INCLUDE [temp](../_shared/create-azure-web-app.md)]
 
-[!INCLUDE [temp](../apps/get-started/_shared/import-code-1.md)]
+[!INCLUDE [temp](../../apps/get-started/_shared/import-code-1.md)]
 
 ```bash
 https://github.com/adventworks/dotnetcore-sample
 ```
 
-[!INCLUDE [temp](../apps/get-started/_shared/import-code-2.md)]
+[!INCLUDE [temp](../../apps/get-started/_shared/import-code-2.md)]
 
-[!INCLUDE [temp](../apps/_shared/set-up-ci-1.md)]
+[!INCLUDE [temp](../../apps/_shared/set-up-ci-1.md)]
 
 In the right panel, select **ASP.NET Core**, and then click **Apply**.
 
-![Screenshot showing dotnet core template](aspnet/_shared/_img/apply-aspnet-core-build-template.png)
+![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
 
-[!INCLUDE [temp](_shared/set-up-ci-2.md)]
+[!INCLUDE [temp](../_shared/set-up-ci-2.md)]
 
-[!INCLUDE [temp](_shared/set-up-ci-3.md)]
+[!INCLUDE [temp](../_shared/set-up-ci-3.md)]
 
-[!INCLUDE [temp](_shared/set-up-cd-1.md)]
+[!INCLUDE [temp](../_shared/set-up-cd-1.md)]
 
-![Screenshot showing release action on build summary](../../deploy-azure/_shared/_img/cicd-get-started-dotnetcore-release.png)
+![Screenshot showing release action on build summary](../../../deploy-azure/_shared/_img/cicd-get-started-dotnetcore-release.png)
 
-[!INCLUDE [temp](_shared/set-up-cd-2.md)]
+[!INCLUDE [temp](../_shared/set-up-cd-2.md)]
 
-[!INCLUDE [temp](_shared/set-up-cd-3.md)]
+[!INCLUDE [temp](../_shared/set-up-cd-3.md)]
 
 ## Update to redeploy the code
 
 Navigate to the **Code** hub in the VSTS portal. Navigate to **Views/Home/Index.cshtml** file. Make the following simple change to that file by selecting the edit action.
 
-![Screenshot showing update to code](../../deploy-azure/_shared/_img/aspnet-core-code-change.png)
+![Screenshot showing update to code](../../../deploy-azure/_shared/_img/aspnet-core-code-change.png)
 
 Add the following line of text above the carousel display in the page:
 ```
@@ -71,6 +71,6 @@ Add the following line of text above the carousel display in the page:
 
 Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure web app.
 
-[!INCLUDE [temp](../apps/get-started/_shared/browse-to-web-app.md)]
+[!INCLUDE [temp](../../apps/get-started/_shared/browse-to-web-app.md)]
 
-[!INCLUDE [temp](../apps/get-started/_shared/clean-up-resources.md)]
+[!INCLUDE [temp](../../apps/get-started/_shared/clean-up-resources.md)]

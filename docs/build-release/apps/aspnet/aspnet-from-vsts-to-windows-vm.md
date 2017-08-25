@@ -29,33 +29,33 @@ You create the virtual machine using Azure Powershell, and then you set up CI/CD
 
 ![Screenshot showing ASP.NET web app](_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-sample.png)
 
-[!INCLUDE [temp](../apps/get-started/_shared/vsts-and-azure-setup.md)]
+[!INCLUDE [temp](../get-started/_shared/vsts-and-azure-setup.md)]
 
 On your dev machine, you need Azure PowerShell module version 4.0 or newer. See [Install and configure Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-4.2.0). 
 
-[!INCLUDE [temp](_shared/create-azure-windows-vm.md)]
+[!INCLUDE [temp](../_shared//create-azure-windows-vm.md)]
 
-[!INCLUDE [temp](../../deploy-azure/_shared/create-deployment-group.md)]
+[!INCLUDE [temp](../../../deploy-azure/_shared/create-deployment-group.md)]
 
-[!INCLUDE [temp](../apps/get-started/_shared/import-code-1.md)]
+[!INCLUDE [temp](../get-started/_shared/import-code-1.md)]
 
 ```bash
 https://github.com/adventworks/aspnet4-sample
 ```
 
-[!INCLUDE [temp](../apps/get-started/_shared/import-code-2.md)]
+[!INCLUDE [temp](../get-started/_shared/import-code-2.md)]
 
-[!INCLUDE [temp](../apps/_shared/set-up-ci-1.md)]
+[!INCLUDE [temp](../_shared/set-up-ci-1.md)]
 
 In the right panel, select **ASP.NET**, and then click **Apply**.
 
 ![Screenshot showing ASP.NET template](./_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-apply-template.png)
 
-[!INCLUDE [temp](_shared/set-up-ci-2.md)]
+[!INCLUDE [temp](../_shared//set-up-ci-2.md)]
 
-[!INCLUDE [temp](_shared/set-up-ci-3.md)]
+[!INCLUDE [temp](../_shared//set-up-ci-3.md)]
 
-[!INCLUDE [temp](_shared/set-up-cd-1.md)]
+[!INCLUDE [temp](../_shared//set-up-cd-1.md)]
 
 ![Screenshot showing build summary](_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-build-summary.png)
 
@@ -75,7 +75,7 @@ Select the **IIS Web App Deploy** task to configure your IIS instance settings a
 
 ![Screenshot showing release definition](_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-release-definition.png)
 
-[!INCLUDE [temp](_shared/set-up-cd-3.md)]
+[!INCLUDE [temp](../_shared//set-up-cd-3.md)]
 
 ## Update to redeploy the code
 
@@ -100,4 +100,4 @@ http://<publicIpAddress>
 
 **Congratulations!** You've deployed changes to your application using CI/CD.
 
-[!INCLUDE [temp](../apps/get-started/_shared/clean-up-resources.md)]
+[!INCLUDE [temp](../get-started/_shared/clean-up-resources.md)]

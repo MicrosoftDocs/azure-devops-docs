@@ -77,8 +77,8 @@ continuous integration (CI) and continuous deployment (CD) process.
 <div style="float:left;width:325px;margin:3px">
 <p style="font-weight:bold;padding-top:10px">Azure Continuous Delivery preview</p>
 <ul style="padding-left:30px">
- <li style="margin-bottom:5px">[ASP.NET 4 using Azure](../apps/get-started/aspnet-4-ci-cd-azure-automatic.md)</li>
- <li style="margin-bottom:5px">[ASP.NET 4 using Visual Studio](../apps/get-started/aspnet-4-ci-cd-vs-automatic.md)</li>
+ <li style="margin-bottom:5px">[ASP.NET 4 using Azure](../apps/aspnet/aspnet-4-ci-cd-azure-automatic.md)</li>
+ <li style="margin-bottom:5px">[ASP.NET 4 using Visual Studio](../apps/aspnet/aspnet-4-ci-cd-vs-automatic.md)</li>
 </ul>
 </div>
 
