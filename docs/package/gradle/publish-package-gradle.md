@@ -11,7 +11,11 @@ ms.date: 8/9/2017
 
 # Publish your Gradle package with VSTS
 
+<<<<<<< HEAD
+This topic covers creating a publishing a Maven package with Gradle.
+=======
 This topic covers creating a publishing a Maven package with Gradle using Visual Studio Team Services (VSTS).
+>>>>>>> 979202d5f20526d08970a01d560977e110ae3a87
 
 ## Prerequisites
 

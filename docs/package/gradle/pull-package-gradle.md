@@ -9,7 +9,11 @@ ms.author: douge
 ms.date: 8/9/2017
 ---
 
+<<<<<<< HEAD
+# Push a Maven package with Gradle and build with it using VSTS
+=======
 # Pull a Maven package with Gradle and build with it using VSTS
+>>>>>>> 979202d5f20526d08970a01d560977e110ae3a87
 
 Gradle is a popular package manager for Android Java developers. Learn how to pull a Gradle package and build with it for your team project with Visual Studio Team Services (VSTS).
 
