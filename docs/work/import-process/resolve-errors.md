@@ -1,5 +1,5 @@
 ---
-title: Resolve validation errors | Team Services  
+title: Resolve validation errors | VSTS  
 description: Fix errors reported upon importing a process to support customization of tracking work in VSTS.  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

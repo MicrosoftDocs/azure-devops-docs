@@ -1,5 +1,5 @@
 ---
-title: Review your repo history (command line) | Team Services & TFS
+title: Review your repo history (command line) | VSTS & TFS
 description: Git history tools with Visual Studio and git command line tools to help you determine the changes in your files.
 ms.assetid: 57a7196a-afce-4508-9846-4bea09d7c794
 ms.prod: vs-devops-alm
@@ -59,7 +59,7 @@ Compare the changes between two versions of a file in your Git repo.
 
 <div id="changeexample" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
 <div id="vs0" class="tab-pane fade">
-<h6 style="padding-left:25px;">Team Services | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017</h6>
+<h6 style="padding-left:25px;">VSTS | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017</h6>
 <ol>
 <li>Right-click the file in Solution Explorer and choose **View History...**. The history window will appear showing the commit ID, author, date, and description of all changes to the file in your local repo across all branches.   
 
@@ -127,7 +127,7 @@ your branch.
 
 <div id="changeexample2" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
 <div id="vs2" class="tab-pane fade">
-<h6>Team Services | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017</h6>
+<h6>VSTS | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017</h6>
 <p>Right-click the file in Solution Explorer and select **View History**. The Visual Studio **History** view will appear, showing the commits in your repo that updated the file.
 You can filter the commits to find the exact commit with the file version you want to restore. Double click on the version to open it in Visual Studio.
    
@@ -176,15 +176,15 @@ changes others have made will affect your work.
 <div id="changeexample1" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
 <div id="vs1" class="tab-pane fade">
 
-<h6>Team Services | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017</h6>
+<h6>VSTS | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017</h6>
 
-<p>Browse to your repo in Team Services or TFS. Select **Branches** from the menu under **Code**:   
+<p>Browse to your repo in VSTS or TFS. Select **Branches** from the menu under **Code**:   
 
-<p>![Open the branches view in Team Services/TFS](_img/branches_view_team_services.png)   
+<p>![Open the branches view in VSTS/TFS](_img/branches_view_team_services.png)   
 
 <p>Locate your branch and select the **...** icon to  view the branch options. Select **Compare branches**.   
 
-<p>![Select the ellipses icon to open branch options, then select team services](_img/team_services_branch_options.png)
+<p>![Select the ellipses icon to open branch options, then select VSTS](_img/team_services_branch_options.png)
    
 <p>Select the branch to compare to from the drop-downs at the top. The view will display all changes between the branches.
 

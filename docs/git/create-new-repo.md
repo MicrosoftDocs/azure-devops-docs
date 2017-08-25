@@ -1,5 +1,5 @@
 ---
-title: Create a new Git repo in your  project | Team Services & TFS
+title: Create a new Git repo in your  project | VSTS & TFS
 description: Create a new Git repo in a Visual Studio Team Services or Team Foundation Server Project
 ms.assetid: 9c6fabfa-ae17-4e65-93a2-9e476f9f88ba
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 08/10/2017
 
 # Create a new Git repo in your project
 
-#### Team Services | TFS 2015 & TFS 2017 
+#### VSTS | TFS 2015 & TFS 2017 
 
 VSTS and TFS projects contain Git repositories, work items, builds, and releases. You can use Git repos in your projects to manage your source code as your project grows. This guide shows you how to create a Git repo using the web portal for either Visual Studio Team Services (VSTS - hosted on Azure) or Team Foundation Server (TFS - on-premises).
 

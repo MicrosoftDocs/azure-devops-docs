@@ -1,5 +1,5 @@
 ---
-title: Inheritance process model | Team Services
+title: Inheritance process model | VSTS
 description: Guide to configuring and customizing work tracking features in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

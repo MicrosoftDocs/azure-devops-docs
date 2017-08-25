@@ -23,7 +23,7 @@ Prior to setting team defaults, [add the teams](multiple-teams.md) you want and 
 
 For TFS 2015 and earlier versions, the default iteration is the same as the backlog iteration. The one value selected both filters items that appear on the team's backlogs and boards, and is assigned to work items created from the team context.  
 
-For Team Services, teams can now set a default iteration different from the backlog iteration. The backlog iteration determines which items appear on the team's backlogs and boards. And, the default iteration determines what value is assigned to work items created from the team context. 
+For VSTS, teams can now set a default iteration different from the backlog iteration. The backlog iteration determines which items appear on the team's backlogs and boards. And, the default iteration determines what value is assigned to work items created from the team context. 
 
 For both platforms, all work items that you create from your team context are automatically assigned both the team's default area path and default iteration path. 
 
@@ -48,7 +48,7 @@ If you're not a team administrator, [get added as one](../scale/add-team-adminis
 
 All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. 
 
-- From Team Services, you can select one or more area paths and optionally include their sub-area paths.  
+- From VSTS, you can select one or more area paths and optionally include their sub-area paths.  
 - From TFS, you can select a single area path, and optionally include their sub-area paths.  
 The default area path determines the default area path assigned to work items that are created from the team context.  
 
@@ -64,20 +64,20 @@ Choose to include sub-area paths when you want to support rollup views of work p
 
 	Here, we navigate to the Fabrikam Fiber Team, the default team for the team project.  
 
-	<img src="_img/stdefaults-open-team-work-area-page.png" alt="Work, Area page for team, Team Services platform" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/stdefaults-open-team-work-area-page.png" alt="Work, Area page for team, VSTS platform" style="border: 2px solid #C3C3C3;" />  
 
 <a id="default-iteration">  </a>
 2. Choose the area path(s) to be active for each team. In general, feature teams set a single area path as their default.   
 
-	<img src="_img/stdefaults-add-area-paths.png" alt="Work, Iterations page for team, Team Services platform" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/stdefaults-add-area-paths.png" alt="Work, Iterations page for team, VSTS platform" style="border: 2px solid #C3C3C3;" />  
 
 	In this instance, we choose to activate all three sub-area paths for the team project. This allows the management team to track progress across all three teams.  
 
-	<img src="_img/stdefaults-set-team-area-paths-management-team-team-services-list.png" alt="Multiple area paths assigned to team, Team Services platform" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/stdefaults-set-team-area-paths-management-team-team-services-list.png" alt="Multiple area paths assigned to team, VSTS platform" style="border: 2px solid #C3C3C3;" />  
 
 3.	When you've finished, refresh the product backlog page for the team, and you'll see those work items assigned to the team. Add Area Path to the columns shown to see the assignments made to work items.  
 
-	<img src="_img/stdefaults-backlog-management-team-team-services-list.png" alt="Product backlog of team with multiple area paths assigned, Team Services platform" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/stdefaults-backlog-management-team-team-services-list.png" alt="Product backlog of team with multiple area paths assigned, VSTS platform" style="border: 2px solid #C3C3C3;" />  
 
 ### For TFS 2015 and earlier versions  
 
@@ -85,7 +85,7 @@ Choose to include sub-area paths when you want to support rollup views of work p
 
 	Here, we navigate to the Web team. The checked box indicates the area paths selected for the team. To exclude sub-areas, select the option from the area path context menu.  
 
-	<img src="_img/stdefaults-open-team-area-page-tfs.png" alt="Work, Area page forWeb  team, Team Services platform" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/stdefaults-open-team-area-page-tfs.png" alt="Work, Area page forWeb  team, VSTS platform" style="border: 2px solid #C3C3C3;" />  
 
 2.	Refresh the product backlog page for the team, and you'll see only those work items assigned to the Fabrikam Fiber\Web area path.   
 
@@ -105,7 +105,7 @@ You activate sprints for each team from the admin pages for each team context. T
 
 	Here, we navigate to the Fabrikam Fiber Team.  
 
-	<img src="../scrum/_img/dsprints-team-work-iterations-page.png" alt="Work, Iterations page for team, Team Services platform" style="border: 2px solid #C3C3C3;" />  
+	<img src="../scrum/_img/dsprints-team-work-iterations-page.png" alt="Work, Iterations page for team, VSTS platform" style="border: 2px solid #C3C3C3;" />  
 <a id="set-backlog-iteration">  </a>
 2. **Backlog iteration**. Only work items assigned to an iteration equal to or under this backlog iteration appear in the team's backlogs and boards. 
 
@@ -121,11 +121,11 @@ You activate sprints for each team from the admin pages for each team context. T
 
 4. **Active sprints**. Add an iteration for each sprint backlog you want active for the team. Add each sprint, one by one, by selecting it from the menu.  
 
- 	<img src="../scrum/_img/dsprints-add-sprints-to-team-iterations-page.png" alt="Work, Iterations page for team, select sprint to activate, Team Services platform" style="border: 2px solid #C3C3C3;" /> 
+ 	<img src="../scrum/_img/dsprints-add-sprints-to-team-iterations-page.png" alt="Work, Iterations page for team, select sprint to activate, VSTS platform" style="border: 2px solid #C3C3C3;" /> 
 
 	When you're done, you should see a list of sprints, similar to the following.  
 
-	<img src="../scrum/_img/dsprints-selected-active-sprints.png" alt="Work, Iterations page for team, activates sprint list, Team Services platform" style="border: 2px solid #C3C3C3;" />  
+	<img src="../scrum/_img/dsprints-selected-active-sprints.png" alt="Work, Iterations page for team, activates sprint list, VSTS platform" style="border: 2px solid #C3C3C3;" />  
 
 	If you don't see the sprints you need, or the dates aren't set, then [return to the team project admin context and define them there](#define-sprints-team-services).  
 

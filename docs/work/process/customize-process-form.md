@@ -1,5 +1,5 @@
 ---
-title: Customize the web form | Team Services    
+title: Customize the web form | VSTS    
 description: Customize the web form for a work item type and Inheritance process model for Visual Studio Team Services (VSTS)      
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

@@ -1,5 +1,5 @@
 ---
-title: Sync your changes to a remote Git repo | Team Services & TFS
+title: Sync your changes to a remote Git repo | VSTS & TFS
 description: Using Git Push to share code with Git.
 ms.assetid: 6c388abd-1b63-4957-9814-9ec5f104fa5b
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/14/2017
 
 #  Share code with push
 
-###### Team Services | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+###### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
 Share changes made in [commits](commits.md) and [branches](branches.md) using the `push` command. 
 Push your branches to the remote repository, where Git takes the commits and adds them to an existing branch on the remote or creates a new branch with the same commits as your local branch.
@@ -35,7 +35,7 @@ In this tutorial you learn how to:
 
 # [Visual Studio](#tab/visual-studio)
 
-Team Services | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017
+VSTS | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017
  
 In Team Explorer, open the **Sync** view. The view lists outgoing commits and will present you with one of two links to push them to your remote repo:
 

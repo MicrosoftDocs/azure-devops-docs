@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Find and view changesets
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 When you [check in your changes](check-your-work-team-codebase.md), they are stored on the server as a changeset. Changesets contain the history of each item in version control.
 

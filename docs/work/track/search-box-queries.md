@@ -30,7 +30,7 @@ Search box queries automatically scope to the items defined to the team project 
 ## Code search vs work item search
  
 >[!NOTE]  
-><b>Feature availability: </b>You can add the Code Search extension to  [Team Services or by upgrading to TFS 2017](../../search/code/administration.md).   
+><b>Feature availability: </b>You can add the Code Search extension to  [VSTS or by upgrading to TFS 2017](../../search/code/administration.md).   
 
 If you've added the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) to VSTS and TFS 2017, you'll notice that the search box moves to the top row, and you can quickly switch between work item and code searches. 
 

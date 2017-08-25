@@ -1,5 +1,5 @@
 ---
-title: Update your branch history with rebase (command line) | Team Services & TFS
+title: Update your branch history with rebase (command line) | VSTS & TFS
 description: Rewriting History using Git rebase
 ms.assetid: 8839a8d8-63c3-43cb-a8d1-1f1cbdb6c371
 ms.prod: vs-devops-alm
@@ -150,7 +150,7 @@ Git will now attempt to condense the commits into a single commit. After the reb
 window open up where Git asks you to give a commit message for the commit with the combined changes. You'll want to condense
 this down to one line of text (just like you would have for a normal commit) and save and quit the editor. 
 
-> Team Services and TFS users can [squash merge](../merging-with-squash.md) their pull requests to consolidate commits added to the master branch.
+> VSTS and TFS users can [squash merge](../merging-with-squash.md) their pull requests to consolidate commits added to the master branch.
 
 ## What's next
 

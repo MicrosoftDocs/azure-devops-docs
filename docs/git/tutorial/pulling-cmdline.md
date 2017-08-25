@@ -1,5 +1,5 @@
 ---
-title: Pull changes to your local Git repo (command line) | Team Services & TFS
+title: Pull changes to your local Git repo (command line) | VSTS & TFS
 description: Using Git Pull, fetch, and  to get code from others.
 ms.assetid: 9a1a4377-5138-4691-9be0-0cc31d2f5a9b
 ms.prod: vs-devops-alm

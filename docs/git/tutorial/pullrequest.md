@@ -1,5 +1,5 @@
 ---
-title: Create a pull request | Team Services & TFS
+title: Create a pull request | VSTS & TFS
 description: Reviewing and Publishing Code using Git Pull Requests
 ms.assetid: 731eeda5-133f-46d5-ab60-b27a5280210d
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 08/14/2017
 
 #  Create a pull request
 
-###### Team Services | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+###### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
 [Git's workflow](gitworkflow.md) uses [branches](branches.md) to isolate work until you're ready to merge the changes into your default branch, such as `master`. 
 The pull request is the collaborative process that lets the rest of the team discuss changes in a branch and agree to merge them once everyone approves.
@@ -33,8 +33,8 @@ In this tutorial you learn how to:
 To create a pull request in Team Services:
 
 0. [Push](pushing.md) your local branch.
-0. Create a pull request for the branch in Team Services.   
-![Creating a pull request in Team Services](_img/createpullrequest.gif)   
+0. Create a pull request for the branch in VSTS.   
+![Creating a pull request in VSTS](_img/createpullrequest.gif)   
 
 0. You can also create a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Team Project](../../accounts/connect-to-vsts.md) and select **New Pull Request** to open a pull request for your
 current branch:   
@@ -50,7 +50,7 @@ You can include Team Services work items and hyperlinks to allow others to have 
 ### Who reviews the pull request?
 
 When you create the pull request, you can add others who need to review your changes. You can add users and groups to the pull request after it is created if the scope of the
-review needs to expand. You can also associate the pull request with a task in Team Services to let others working with the task know changes are ready for review.
+review needs to expand. You can also associate the pull request with a task in VSTS to let others working with the task know changes are ready for review.
 
 ### How does the code review work?
 
@@ -68,7 +68,7 @@ Once you get the team's feedback, you can keep the pull request open to continue
 
 ## Complete a pull request
 
-![Completing a pull request in Team Services](_img/completepull.gif)
+![Completing a pull request in VSTS](_img/completepull.gif)
 
 Once all reviewers have approved the changes, you can now complete the pull request. You'll be prompted for a descriptive message about the changes proposed by the pull
 request. You can choose to delete the pull request branch when the pull request is complete. Git retains the commit history in the `master` branch after the pull request is complete, 

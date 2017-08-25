@@ -25,7 +25,7 @@ The tasks that you specify in the plug-in for SharePoint Products are run only w
 >[!IMPORTANT]  
 >When you create a team project from the web portal, several process template files are ignored. Specifically, the  WssTasks.xml plug-in file that would create a SharePoint site is ignored. 
 >
->For Team Services, the SharePoint site isn't supported. If you want to add a SharePoint site for your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).  
+>For VSTS, the SharePoint site isn't supported. If you want to add a SharePoint site for your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).  
 
   
 <a name="name"></a> 

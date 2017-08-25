@@ -44,7 +44,7 @@ You open your Kanban board using one of these URLs that connects you to your tea
 **VSTS**:  ```http://AccountName/DefaultCollection/TeamProjectName/_backlogs/board/ ```  
 **On-premises TFS**:  ```http://ServerName:8080/tfs/DefaultCollection/TeamProjectName/_backlogs/board/```  
 
-If you don't have a team project yet, create one in [Visual Studio Team Services](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md). If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../accounts/add-account-users-assign-access-levels.md) or [TFS](../../accounts/add-users.md).
+If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md). If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../accounts/add-account-users-assign-access-levels.md) or [TFS](../../accounts/add-users.md).
 
 ## 1. Map the flow of how your team works
 <meta name="description" content="Kanban workflow" />
@@ -121,7 +121,7 @@ The CFD shows the count of items in each Kanban column for the past 30 weeks or 
 By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For additional guidance, see [Cumulative Flow](../../report/guidance/cumulative-flow.md) 
  
 >[!NOTE]  
-><b>Feature availability: </b>From Team Services, you can also add the [Cumulative Flow Diagram (CFD)](../../report/guidance/cumulative-flow.md), [Lead Time and Cycle Time](../../report/guidance/cycle-time-and-lead-time.md), and [Velocity](../../report/guidance/team-velocity.md) widgets to a team dashboard.  
+><b>Feature availability: </b>From VSTS, you can also add the [Cumulative Flow Diagram (CFD)](../../report/guidance/cumulative-flow.md), [Lead Time and Cycle Time](../../report/guidance/cycle-time-and-lead-time.md), and [Velocity](../../report/guidance/team-velocity.md) widgets to a team dashboard.  
 
 ## Try this next
 

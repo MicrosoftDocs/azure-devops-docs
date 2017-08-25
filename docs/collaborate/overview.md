@@ -1,5 +1,5 @@
 ---
-title: Collaborate overview | Team Services & TFS
+title: Collaborate overview | VSTS & TFS
 description: Guide to features that support working across hubs and team projects, sharing information, and managing notifications for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)    
 ms.technology: collaborate
 ms.prod: vs-devops-alm
@@ -10,7 +10,7 @@ ms.date: 08/11/2017
 ---
 
 #Collaborate overview   
-<b>Team Services | TFS 2017 | TFS 2015  </b> 
+<b>VSTS | TFS 2017 | TFS 2015  </b> 
 
 Here you'll find links to topics that will support your ability to collaborate with others in developing software working either in Team Services of an on-premises TFS. If you work as an administrator, you'll want to review the [admin guide](../accounts/account-management.md) as well. 
 
@@ -133,7 +133,7 @@ Follow a specific object, such as a work item or pull request, to get notified w
 
 ## Find what you're looking for 
 
-There are several built-in search functions that support finding version controlled files, filtering or finding a specific branch, and searching and listing work items.  Adhoc work item searches require you to install the [Work item search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search) which is in preview and currently supported for Team Services. Code search requires you to install the [Code search Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).  
+There are several built-in search functions that support finding version controlled files, filtering or finding a specific branch, and searching and listing work items.  Adhoc work item searches require you to install the [Work item search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search) which is in preview and currently supported for VSTS. Code search requires you to install the [Code search Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).  
 
 <div style="float:left;width:230px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Code search</p>

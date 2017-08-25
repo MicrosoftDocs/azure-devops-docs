@@ -36,10 +36,10 @@ To add and manage dashboards, you connect to your team project using a [supporte
 Open a browser window and click the **Dashboards** hub. If you haven't been added as a team member, [get added now](../work/scale/multiple-teams.md#add-team-members).
 
 The URL follows this pattern: 
-- Visual Studio Team Services: ```https://{account name}.visualstudio.com/{project name}/_backlogs```  
+- VSTS: ```https://{account name}.visualstudio.com/{project name}/_backlogs```  
 - Team Foundation Server (on-premises): ```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```  
 
-If you don't see the team or team project you want, click the ![Team Services icon](../work/_img/icons/project-icon.png) Team Services icon to [browse all team projects and teams](../connect/account-home-pages.md).  
+If you don't see the team or team project you want, click the ![VSTS icon](../work/_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../connect/account-home-pages.md).  
 
 ## Add and name your dashboard 
 

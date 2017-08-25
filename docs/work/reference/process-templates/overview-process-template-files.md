@@ -40,7 +40,7 @@ Depending on whether you work from the cloud or an on-premises server, you can c
 (![supported](../../_img/icons/checkmark.png)- Supported; ![not supported](../../_img/icons/delete_icon.png) - Not supported)  
 
 >[!NOTE]  
->For Team Services, even if you initiate creating a team project from Visual Studio or Team Explorer, you'll be taken to the web portal to complete the operation.  
+>For VSTS, even if you initiate creating a team project from Visual Studio or Team Explorer, you'll be taken to the web portal to complete the operation.  
 
 When you create a team project from the web portal, there are several plug-ins that aren't supported. They are simply ignored by the PCW. For details, review [Plug-in file descriptions and PCW support](#PlugInFiles).   
 

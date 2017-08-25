@@ -1,5 +1,5 @@
 ---
-title: Customize the layout | Team Services 
+title: Customize the layout | VSTS 
 description: Customize the web version of the work item form when connecting to a team project hosted on Visual Studio Team Services (VSTS)    
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

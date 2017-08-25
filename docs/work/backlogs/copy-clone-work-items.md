@@ -33,15 +33,15 @@ Clone a work item when you want to create another instance of it. This action op
 
 Copy a work item when you want to create another instance of it and optionally change its work item type. This action opens a form with all fields filled out except for the Title. A related link to the original work item is created. Also any parent link is copied over. No  history or attachments are copied over from the original work item. 
 
-#### Team Services 
+#### VSTS 
 
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and click **Create copy of work item**.  
 
-	<img src="_img/copy-wi-copy-clone-ts.png" alt="Team Services, web portal, user story work item form, open context menu, click Create copy of work item " style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/copy-wi-copy-clone-ts.png" alt="VSTS, web portal, user story work item form, open context menu, click Create copy of work item " style="border: 1px solid #CCCCCC;" /> 
 
 2. Choose the team project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
 
-	<img src="_img/copy-wi-copy-clone-ts-dialogue.png" alt="Team Services, web portal, user story work item form, open context menu, click Copy work item " style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/copy-wi-copy-clone-ts-dialogue.png" alt="VSTS, web portal, user story work item form, open context menu, click Copy work item " style="border: 1px solid #CCCCCC;" /> 
 
 #### TFS 2017
 

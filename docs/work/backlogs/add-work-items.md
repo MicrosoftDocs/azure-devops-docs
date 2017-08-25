@@ -25,7 +25,7 @@ You add work items to plan and manage your project. You use different types of w
 
 <a id="define-new-work">  </a>
 ## Add a work item 
-You can start adding work items once you connect to a team project. If you don't have a team project yet, create one in [Visual Studio Team Services](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).
+You can start adding work items once you connect to a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).
 
 Here we show how to add work items from the web portal. 
 

@@ -12,9 +12,8 @@ ms.date: 08/02/2017
 
 # Set permissions on queries
 
-<!---
 <b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
---> 
+
 
 As with most team project objects, you can control who has access by setting permissions. With queries, you can configure users and groups to create, delete, view, and manage permissions of shared queries and shared query folders. 
 

@@ -1,5 +1,5 @@
 ---
-title: Git command reference | Team Services & TFS
+title: Git command reference | VSTS & TFS
 description: Commands reference for common Git tasks in Visual Studio or the command line
 ms.assetid: FAED51BE-2CB0-46DE-8C72-E4EEF6CB8827
 toc: show
@@ -11,7 +11,7 @@ ms.date: 12/02/2016
 ---
 
 #  Git command reference 
-#### Team Services | TFS 2015 & 2017 | Visual Studio 2015 Update 2 | Visual Studio 2017
+#### VSTS | TFS 2015 & 2017 | Visual Studio 2015 Update 2 | Visual Studio 2017
 
 ## Overview
 
@@ -33,7 +33,7 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer’
 ![Open a command prompt to a repo from inside Visaul Studio](_img/command-prompt/open_cmd_prompt_repo_vs.png)
 
 > [!IMPORTANT]
-> Some commands require having [specific Git permissions](../security/set-git-tfvc-repository-permissions.md#git-repository) in Team Services to complete.
+> Some commands require having [specific Git permissions](../security/set-git-tfvc-repository-permissions.md#git-repository) in VSTS to complete.
 
 ## Repos
 
@@ -48,14 +48,14 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer’
 | Add an existing repo to Visual Studio | Not applicable | Open the solution file in Visual Studio (this will automatically add the repo to Team Explorer) or select **Add** under **Local Git repositories** in the **Connect** view 
 | Delete the Git repo and history, but keep the current version of the files | Delete the hidden .git folder created at the root of the repo | Delete the hidden .git folder created at the root of the repo from Windows Explorer or the command line
 | Delete a local repo and all files | Delete the folder containing your repo from your computer's filesystem |  Close any open solutions using files in the repo, then delete the folder containing your repo from your computer's filesystem. 
-| Delete a repo in your Team Project | Not applicable |  Select the settings icon ( ![Gear icon on the top navigation bar in Team services](_img/command-prompt/settings_icon.png) ) in Team Services/TFS, then select the **Version Control** tab. Find the Git repository to delete and select the **...** next to the name. Choose **Delete Repository** from the options.
+| Delete a repo in your Team Project | Not applicable |  Select the settings icon ( ![Gear icon on the top navigation bar in VSTS](_img/command-prompt/settings_icon.png) ) in VSTS/TFS, then select the **Version Control** tab. Find the Git repository to delete and select the **...** next to the name. Choose **Delete Repository** from the options.
 | Add a remote | git remote add *name* *url* | Open the repository using the **Connect** view in Team Explorer, then open the **Settings** view in Team Explorer. Select **Repository Settings**, and select **Add** under **Remotes** 
 | Update a remote | git remote set-url *name* *url* |  Open the repository using the **Connect** view in Team Explorer, then open the **Settings** view in Team Explorer. Select **Repository Settings**, and select **Edit** under **Remotes** 
 
 Learn more:  
 
-[Create a new repo | Team Services Git tutorial](tutorial/creatingrepo.md)
-[Clone an existing repo | Team Services Git tutorial](tutorial/clone.md)   
+[Create a new repo | VSTS Git tutorial](tutorial/creatingrepo.md)
+[Clone an existing repo | VSTS Git tutorial](tutorial/clone.md)   
 [Share your code in Git with the command line](share-your-code-in-git-cmdline.md)   
 [Share your code in Git with Visual Studio 2015](share-your-code-in-git-vs.md)   
 [Share your code in Git with Visual Studio 2013](share-your-code-in-git-vs-2013.md)   
@@ -72,15 +72,15 @@ Learn more:
 | Delete a local branch | git branch -d *branchname* | Open the **Branches** view in Team Explorer, then right-click the branch and select **Delete**. You must be checked out to a different branch than the one you want to delete.
 | Delete a remote branch | git push origin --delete *branchname* | Open the **Branches** view in Team Explorer, expand the remote that has the branch you want to delete. Right-click the remote and select **Delete Branch from Remote**
 | Lock a branch, preventing updates to it  | From the web, select the **Branches** tab while viewing your repo. Select the **...** next to the branch you want to lock and choose **Lock**. Unlock the branch with **Unlock** | Same as command line
-| Set a default branch in your Team Services/TFS repo | Select the settings icon on the web ( ![Gear icon on the top navigation bar in Team services](_img/command-prompt/settings_icon.png) ), then select the **Version Control** tab. Select your Git repository, then select the **...** next to the branch name and choose **Set as default branch** | Same as command line 
-| Set a compare branch for pull requests in your Team Services/TFS repo | From the web, select the **Branches** tab while viewing your repo. Select the **...** next to the branch you want to lock and choose **Compare branch** | Same as command line
+| Set a default branch in your VSTS/TFS repo | Select the settings icon on the web ( ![Gear icon on the top navigation bar in VSTS](_img/command-prompt/settings_icon.png) ), then select the **Version Control** tab. Select your Git repository, then select the **...** next to the branch name and choose **Set as default branch** | Same as command line 
+| Set a compare branch for pull requests in your VSTS/TFS repo | From the web, select the **Branches** tab while viewing your repo. Select the **...** next to the branch you want to lock and choose **Compare branch** | Same as command line
 
 Learn more:  
 
-[Create and manage your work in branches | Team Services Git tutorial](tutorial/branches.md)   
-[Managing your Git branches in Team Services/TFS](manage-your-branches.md)   
-[Delete a Git branch on your Team Services/TFS repo](delete-branch.md)   
-[Lock and unlock a Team Services/TFS branch](lock-branches.md)
+[Create and manage your work in branches | VSTS Git tutorial](tutorial/branches.md)   
+[Managing your Git branches in VSTS/TFS](manage-your-branches.md)   
+[Delete a Git branch on your VSTS/TFS repo](delete-branch.md)   
+[Lock and unlock a VSTS/TFS branch](lock-branches.md)
 
 ## Commits
 
@@ -97,7 +97,7 @@ Learn more:
 
 Learn more:   
 
-[Save your work with commits | Team Services Git tutorial](tutorial/commits.md)
+[Save your work with commits | VSTS Git tutorial](tutorial/commits.md)
 
 ## Compare files and versions
 
@@ -109,7 +109,7 @@ Learn more:
 
 Learn more:   
 
-[Compare versions and review history | Team Services Git tutorial](tutorial/history.md)
+[Compare versions and review history | VSTS Git tutorial](tutorial/history.md)
 
 ## Sync changes
 
@@ -123,9 +123,9 @@ Learn more:
    
 Learn more:   
  
-[Share code with push | Team Services Git tutorial](tutorial/pushing.md)   
-[Update your code with fetch and pull | Team Services Git tutorial](tutorial/pulling.md)   
-[Resolve merge conflicts | Team Services Git tutorial](tutorial/merging.md)
+[Share code with push | VSTS Git tutorial](tutorial/pushing.md)   
+[Update your code with fetch and pull | VSTS Git tutorial](tutorial/pulling.md)   
+[Resolve merge conflicts | VSTS Git tutorial](tutorial/merging.md)
 
 ## Merge and rebase
 
@@ -139,9 +139,9 @@ Learn more:
    
 Learn more:   
 
-[Resolve merge conflicts | Team Services Git tutorial](tutorial/merging.md)   
-[Catch up and replay changes with rebase | Team Services Git tutorial](tutorial/rebase.md)   
-[Copy changes with cherry-pick | Team Services Git tutorial](tutorial/cherry-pick.md)
+[Resolve merge conflicts | VSTS Git tutorial](tutorial/merging.md)   
+[Catch up and replay changes with rebase | VSTS Git tutorial](tutorial/rebase.md)   
+[Copy changes with cherry-pick | VSTS Git tutorial](tutorial/cherry-pick.md)
 
 ## Undo
 
@@ -158,4 +158,4 @@ Learn more:
    
 Learn more: 
    
-[Undo changes and commits | Team Services Git tutorial](tutorial/undo.md)
+[Undo changes and commits | VSTS Git tutorial](tutorial/undo.md)

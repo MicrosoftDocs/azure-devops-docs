@@ -13,7 +13,7 @@ ms.date: 07/26/2017
 
 <b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>
 
-Add a custom field, a custom work item type (WIT) or modify an existing WIT. The method you use depends on whether you work in Team Services, which uses the Inheritance and Hosted XML process models, or an on-premises TFS, which uses the On-premises XML process model.  
+Add a custom field, a custom work item type (WIT) or modify an existing WIT. The method you use depends on whether you work in VSTS, which uses the Inheritance and Hosted XML process models, or an on-premises TFS, which uses the On-premises XML process model.  
 
 ## 5-Minute Quickstarts  
 

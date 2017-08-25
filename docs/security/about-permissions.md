@@ -15,7 +15,6 @@ ms.date: 08/15/2017
 
 **VSTS | TFS 2017 | TFS 2015 | TFS 2013**
 
-
 To access the resources you manage in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)&mdash;like your code, builds, and work&mdash;you need to have permissions to those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md).
 
 Permissions may apply to a specific team project or objects within the team project, such as Git or TFVC repositories, branches, build definitions, area paths, and more. Or, they can apply to an entire VSTS account or TFS collection, or to a TFS instance. Each functional area uses groups to simplify management across the deployment.
@@ -64,8 +63,16 @@ If it's not set, then the permissions for that node are inheritied from the clos
 that has the permission explicitly set.
 
 To understand why a permission is inherited, you can pause over the permission setting, and then choose **Why?**.
-A new window will open. It displays the inheritance information for that permission.
 
+###VSTS, TFS 2017 
+
+<img src="_img/about-permissions-why.png" style="border: 1px solid #CCCCCC" />
+
+A new window opens that shows the inheritance information for that permission.  
+
+<img src="_img/about-permissions-trace.png" style="border: 1px solid #CCCCCC" />
+
+### TFS 2015, TFS 2013 
 <img src="_img/permissions/inherited-permissions.png" style="border: 1px solid #CCCCCC" />
 
 Some object level Security dialog boxes provide an Inheritance on/off option.

@@ -1,5 +1,5 @@
 ---
-title: Pull changes to your local Git repo | Team Services & TFS
+title: Pull changes to your local Git repo | VSTS & TFS
 description: Using Git Pull, fetch, and  to get code from others.
 ms.assetid: b06b9f18-b76f-418c-93d0-f12d1f48f3c0
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/14/2017
 
 #   Update code with fetch and pull
 
-###### Team Services | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+###### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
 Update the code in your local repo with the changes from other members of your team using the following commands:
 

@@ -1,6 +1,6 @@
 ---
-title: Review and merge code with pull requests | Team Services & TFS
-description:  Conduct a code review in a Git with Visual Studio Team Services or TFS, create a pull request.
+title: Review and merge code with pull requests | VSTS & TFS
+description:  Conduct a code review in a Git with Visual Studio VSTS or TFS, create a pull request.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
@@ -11,7 +11,7 @@ ms.date: 08/17/2016
 
 #  Review code with pull requests
 
-#### Team Services | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
 Create pull requests to review and merge code in a [Git team project](../accounts/create-team-project.md).
 Pull requests let your team give feedback on changes in feature branches before merging the code into the master branch.
@@ -35,7 +35,7 @@ Create a new pull request from:
 
 When you publish or update a feature branch in your Team Services Git repo, you will get a prompt asking if would like to create a pull request in the **Code** view on the web.
 
-![Creating Pull Request through pushed branch in Team Services](_img/pull-requests/create_pr_from_push.png)
+![Creating Pull Request through pushed branch in VSTS](_img/pull-requests/create_pr_from_push.png)
 
 Select the **New pull request** link to go to a page where you will [enter your pull request details](pull-requests.md#finish) and create the pull request.
 
@@ -57,7 +57,7 @@ Create pull requests from any branch from the **Pull Request** tab in the **Code
 Select **New pull request** in the upper right to go to a page where you will [enter your pull request details](pull-requests.md#finish) and create the pull request.
 Pick the branch you wish to have reviewed and the branch you want to merge the changes into, such as the master branch.  
 
-![Choosing source and target branches for a pull request in Team Services](_img/pull-requests/pr_branch_targets.png)
+![Choosing source and target branches for a pull request in VSTS](_img/pull-requests/pr_branch_targets.png)
 
 ### From Visual Studio
 
@@ -131,7 +131,7 @@ Keep these fields up to date so reviewers know what the changes in the pull requ
 Manage your pull requests you own or are assigned to with the **Pull Requests** tab in the Code view on the web.
 Select **Active** to show all active pull requests for the current repo. Select **Completed** or **Abandoned** to bring up a history of closed pull requests. 
 
-![Viewing completed and abandoned pull requests in Team Services](_img/pull-requests/pr_status_widget.png) 
+![Viewing completed and abandoned pull requests in VSTS](_img/pull-requests/pr_status_widget.png) 
 
 ## Review a pull request 
 
@@ -143,7 +143,7 @@ Review the title, description, and discussion to get an understanding of the pro
 Select the **Files** tab to view the differences between the most changes between the source and target branch of the pull request.    
 
 Review previous versions of the code pushed to the source branch of the pull request from the **All changes** drop-down. 
-A new version is added to the list in the drop-down and on the **Updates** tab every time the branch is updated in Team Services. 
+A new version is added to the list in the drop-down and on the **Updates** tab every time the branch is updated in VSTS. 
 
 The diff view updates as you select different changes, showing the differences between the files in the currently selected and previous version in the pull request. 
 Catch up with a pull request after being away from it for awhile by stepping through changes made since your last review.
@@ -198,7 +198,7 @@ Votes in a pull request do not reset when new code is pushed to the branch-make 
 Update your code in response to comments by creating a new [commit](tutorial/commits.md) with the changes and [pushing](tutorial/pushing.md) the updates to the branch in your Team Services repo. 
 You can make quick updates to your branch from the **Files** tab in the **Code** view on the web.
 
-![Updating code directly during a pull request in Team Services](./_img/pull-requests/pr_editing_changes.png)
+![Updating code directly during a pull request in VSTS](./_img/pull-requests/pr_editing_changes.png)
 
 ## Complete the pull request
 
@@ -274,5 +274,5 @@ This is useful when you want to use a branch other than `master` for new changes
 
 0. Select the **...** next to the branch you want to set as default, then select **Set as default branch**.   
 
-   ![Set a default branch for a Git repo in Team Services or Team Foundation Server](_img/pull-requests/set_default_branch.png)
+   ![Set a default branch for a Git repo in VSTS or TFS](_img/pull-requests/set_default_branch.png)
 

@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Administering Team Foundation Version Control
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Topics in this section describe how to complete common administrative version control tasks using Team Foundation.
 ## In This Section

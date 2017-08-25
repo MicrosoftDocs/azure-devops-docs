@@ -13,7 +13,7 @@ ms.date: 05/12/2017
 
 # Choosing the right version control for your project
 
-**Team Services | TFS 2017 | TFS 2015 | Visual Studio 2017, 2015, and 2013**
+**VSTS | TFS 2017 | TFS 2015 | Visual Studio 2017, 2015, and 2013**
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. Team Services supports two types of version control: [Git](../git/gitquickstart-vs2017.md)
 and [Team Foundation Version Control](./overview.md) (TFVC).
@@ -106,7 +106,7 @@ Need more help to make a choice? These charts might help.
 <tr>
 <td>File storage</td>
 <td>You can check in large binary files. You might also want to use [NuGet](http://go.microsoft.com/fwlink/?LinkId=246165) in combination or as an alternative.</td>
-<td>You can check in small binary files as you would regular files. When working with large binary files, use [Git-LFS](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/) to store your large binary files in Team Services.</td>
+<td>You can check in small binary files as you would regular files. When working with large binary files, use [Git-LFS](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/) to store your large binary files in VSTS.</td>
 </tr>
 <tr>
 <td>History</td>

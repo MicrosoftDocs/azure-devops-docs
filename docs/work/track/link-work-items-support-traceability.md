@@ -64,7 +64,7 @@ You can create links between work items by using one of the links control tabs w
 [!INCLUDE [temp](../_shared/image-differences.md)]
 
 
-### Team Services
+### VSTS
 <a id="team-services-link" /> 
 
 From the new work item form (available from the web portal of [VSTS and TFS 2017](../process/new-work-item-experience.md)), you can add a link using the **Related Work** section or from the **Links** tab.

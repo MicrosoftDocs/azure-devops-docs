@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Folder comparison filters
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 The folder comparison filter is an ordered list of name filters that is used to match the names of files or folders that you are comparing. You can use **Compare** to evaluate the file or folder names against the name filters. Once **Compare** finds a match or exclusion, the comparison stops.
 

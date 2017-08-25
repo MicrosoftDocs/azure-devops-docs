@@ -12,7 +12,7 @@ ms.date: 08/03/2017
 
 # Scale & Configure Teams 
 
-As your organization grows, you can support individual teams by giving them the autonomy to work the way they work best by giving them a set of their Agile tools. You do this by adding teams. 
+Give your teams the autonomy they need as your organization grows. Add teams to give each team their set of Agile tools which they can configure their way.   
 
 ## 5-Minute Quickstarts    
 

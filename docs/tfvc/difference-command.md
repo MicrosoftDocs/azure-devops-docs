@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Difference Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Compares, and if it is possible, displays differences between two files, files in two folders, or a shelveset and a local or a server file.
 

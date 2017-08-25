@@ -6,13 +6,13 @@ description: Use Slack with your Visual Studio Team Services account
 ms.assetid: 8e2fda07-0e1e-40b3-9349-c5de12453411
 ms.manager: douge
 ms.author: elbatk
-ms.date: 02/14/2017 
+ms.date: 08/24/2017 
 ---
 
-# Team Services notifications on Slack
+# Visual Studio Team Services (VSTS) notifications on Slack
 
-Post messages to [Slack](https://slack.com/) in response to events in your Visual Studio Team Services account,
-like completed builds, code changes, and new and updated work items.
+Post messages to [Slack](https://slack.com/) in response to events from Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). That way, everyone will know when code has been pushed or checked in, 
+a build has finished, or a work item has been created or updated.
 
 ## Create the Slack integration
 
@@ -21,29 +21,38 @@ to open up the menu, and find **Apps and integrations**:
 <img alt="Integrations link on the account home page" src="./_img/slack/slack-integrations.png" style="border: 1px solid #CCCCCC; width:35%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 1. Search for and click the Visual Studio Team Services integration:
-<img alt="Visual Studio Team Services link" src="./_img/slack/vso.png" style="border: 1px solid #CCCCCC; width:65%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+
+	<img alt="Visual Studio Team Services link" src="./_img/slack/vso.png" style="border: 1px solid #CCCCCC; width:65%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 1. On the Visual Studio Team Services integration page, click **Install**.
+
 1. Choose a channel to have notifications posted to from the dropdown and click **Add Visual Studio Integration**. 
+
 1. Scroll down the page and copy the web hook URL to use when you create the service hook subscription in your Visual Studio Team Services account.
-<img alt="Web hook URL in the integration settings section" src="./_img/slack/webhook-url.png" style="border: 1px solid #CCCCCC; width:70%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+
+	<img alt="Web hook URL in the integration settings section" src="./_img/slack/webhook-url.png" style="border: 1px solid #CCCCCC; width:70%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 ## Create a service hook subscription in your Visual Studio Team Services account
 
-1. From your Visual Studio Team Services account's team project page (```https://[account].visualstudio.com/[project]```), navigate to **Service Hooks** in the settings:
-<img alt="Team Services Service Hook Settings" src="./_img/slack/vsts-service-hooks.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+1. From your VSTS or TFS team project page (```https://[account].visualstudio.com/[project]```), navigate to **Service Hooks** in the settings:
+
+	<img alt="VSTS Service Hook Settings" src="./_img/slack/vsts-service-hooks.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 1. Click **Create subscription** and select the Slack service.
+
 1. Choose the types of events you want to appear in your Slack channel.
-> You can filter each of the triggers in specific ways.
-> For example, the *pull request created* trigger can be filtered on the repository in which the pull request occurs,
-> the target branch it applies to, and the team members that are required or invited to review the request.
+
+	> You can filter each of the triggers in specific ways.
+	> For example, the *pull request created* trigger can be filtered on the repository in which the pull request occurs,
+	> the target branch it applies to, and the team members that are required or invited to review the request.
 
 1. Paste the web hook URL from the Slack integration that you created and click Finish.
-<img alt="Action dialog box with the web hook URL" src="./_img/slack/action.png" style="border: 1px solid #CCCCCC; width:60%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+
+	<img alt="Action dialog box with the web hook URL" src="./_img/slack/action.png" style="border: 1px solid #CCCCCC; width:60%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 1. Now, when the event you configured happens in your project, a notification will apear in your team's Slack channel.
-<img alt="General channel with a real pull request notification" src="./_img/slack/completed-build-in-slack.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+
+	<img alt="General channel with a real pull request notification" src="./_img/slack/completed-build-in-slack.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 ## Q & A
 

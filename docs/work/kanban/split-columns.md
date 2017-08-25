@@ -59,7 +59,7 @@ Now that you understand how your team can use split columns, here's how to turn 
 
 	You'll see different column titles and choices based on the following:
 	
-	- You connect to Visual Studio Team Services or an on-premises TFS  
+	- You connect to VSTS or an on-premises TFS  
 	- The [Process](../guidance/choose-process.md) you used to create your team project  
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
 
@@ -69,7 +69,7 @@ Now that you understand how your team can use split columns, here's how to turn 
 
 	![Kanban board, Customize columns, split columns, Agile process](_img/vso-kanban-split-columns-settings-analyze-no-tags.png)  
 
-	<blockquote><b>Note:</b> When you connect to Visual Studio Team Services, you can can filter queries and create charts using the [Board Column Done field](../track/query-by-workflow-changes.md#kanban_query_fields).</blockquote>  
+	<blockquote><b>Note:</b> When you connect to VSTS, you can can filter queries and create charts using the [Board Column Done field](../track/query-by-workflow-changes.md#kanban_query_fields).</blockquote>  
 
 	**On-premises TFS options:**   
 

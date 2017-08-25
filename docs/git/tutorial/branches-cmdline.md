@@ -1,5 +1,5 @@
 ---
-title: Create and delete a branch in your Git repo (command line) | Team Services & TFS
+title: Create and delete a branch in your Git repo (command line) | VSTS & TFS
 description: Create, use, and delete Git Branches in Visual Studio and from the command line
 ms.assetid: b3a45d31-e5c8-4d61-ab26-04ea4b8a55e9
 ms.prod: vs-devops-alm

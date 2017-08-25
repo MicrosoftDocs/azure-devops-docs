@@ -216,14 +216,14 @@ You can use query operators in the following table to specify how each value in 
 	<td><p> <strong>String</strong>  that matches the name of a user group or category group in Team Foundation Server.</p>
 <blockquote><strong>Note:</strong>  You can use the <strong>In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. The operator cannot be used to query Azure Active Directory groups.
 </blockquote>
-<p>For information about category groups, see [Use categories to group work item types](../reference/use-categories-to-group-work-item-types.md). For more information about Azure Active Directory and Team Services, see [Access with Azure Active Directory groups](https://www.visualstudio.com/docs/setup-admin/vsts/manage-azure-active-directory-groups-visual-studio-team-services).</p></td></tr>
+<p>For information about category groups, see [Use categories to group work item types](../reference/use-categories-to-group-work-item-types.md). For more information about Azure Active Directory and VSTS, see [Access with Azure Active Directory groups](https://www.visualstudio.com/docs/setup-admin/vsts/manage-azure-active-directory-groups-visual-studio-team-services).</p></td></tr>
 <tr>
 	<td><p><strong>Not in Group</strong></p></td>
 	<td><p>Does not match a value that is a member of the group in the clause.</p></td>
 	<td><p> <strong>String</strong>  that matches the name of a user group in Team Foundation Server or a category group defined for a team project.</p>
 <blockquote><strong>Note:</strong>  You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. The operator cannot be used to query Azure Active Directory groups.
 </blockquote>
-<p>For more information about Azure Active Directory and Team Services, see [Access with Azure Active Directory groups](../../accounts/manage-azure-active-directory-groups-vsts.md).</p></td>
+<p>For more information about Azure Active Directory and VSTS, see [Access with Azure Active Directory groups](../../accounts/manage-azure-active-directory-groups-vsts.md).</p></td>
 </tr>
 <tr>
 	<td><p><strong>Was Ever</strong></p></td>
@@ -299,7 +299,7 @@ Specify **Contains** or **Does Not Contain** to search against exact or partial 
 For examples, see [Example work item queries](example-queries.md) and [Query for work items using the History field](history-and-auditing.md).
 
 >[!NOTE]  
->Not all deployments support full-text searches. For example, SQL Express and SQL Azure, which support Visual Studio Team Services, do not support full-text search. In these instances, you will only see the **Contains** and **Does not Contain** operators.
+>Not all deployments support full-text searches. For example, SQL Express and SQL Azure, which support VSTS platform, do not support full-text search. In these instances, you will only see the **Contains** and **Does not Contain** operators.
 
 **Contains Words** and **Does Not Contain Words** filter items based on the full-text search index created for long-text fields. Team Foundation automatically indexes all long-text fields with a data type of **PlainText** and **HTML** and the **Title** field for full-text search. The index and operators are only available when the SQL Server that supports Team Foundation Server supports full-text search.
 

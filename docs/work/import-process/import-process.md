@@ -1,5 +1,5 @@
 ---
-title: Import a process | Team Services   
+title: Import a process | VSTS   
 description: Add or update a process by importing a process to support customization of tracking work in Visual Studio Team Services (VSTS).
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -20,7 +20,7 @@ ms.date: 05/23/2017
 >
 >To learn more about process models, see [Customize work tracking](../customize/customize-work.md). 
 
-In Team Services, you manage customization of work tracking objects through a process.
+In VSTS, you manage customization of work tracking objects through a process.
 Processes are imported and exported through a web based administration experience. 
 
 When you import a new process, you're able to create new team projects using it.  

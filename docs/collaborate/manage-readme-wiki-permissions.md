@@ -1,5 +1,5 @@
 ---
-title: Add and edit wiki pages | Team Services  
+title: Add and edit wiki pages | VSTS  
 description: Share informationwith your team  and increase collaboration using a built-in team project wiki - Visual Studio Team Services (VSTS)  
 ms.technology: collaborate
 ms.prod: vs-devops-alm

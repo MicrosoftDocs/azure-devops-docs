@@ -180,7 +180,7 @@ The following table describes fields associated with links and attachments. Most
 
 <blockquote>
 ![note icon](../_img/icons/note-icon.png)<br/>
-For Team Services, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
+For VSTS, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
 </blockquote> 
 </td>
 <td><p>All</p></td>

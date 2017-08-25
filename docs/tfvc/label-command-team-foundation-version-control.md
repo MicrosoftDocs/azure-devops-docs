@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Label Command (Team Foundation Version Control)
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Updated: October 2011
 

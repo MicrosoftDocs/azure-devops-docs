@@ -1,6 +1,6 @@
 ---
-title: Visual Studio Git tutorial | Team Services & TFS
-description: Learn Git with the Team Services/TFS Git tutorial.
+title: Visual Studio Git tutorial | VSTS & TFS
+description: Learn Git with the VSTS/TFS Git tutorial.
 ms.assetid: 0270b0fa-461b-4079-9703-cdcf53bdf39f
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
@@ -12,7 +12,7 @@ ms.date: 08/19/2016
 
 #  Learn about version control and Git
 
-###### Team Services | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+###### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
 Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features.  
 Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.

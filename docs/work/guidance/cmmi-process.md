@@ -20,7 +20,7 @@ The CMMI process supports the following work item types (WITs) to plan and track
 In addition to the WITs, teams have access to a set of shared work item queries to track information, analyze progress, and make decisions. If you work from an on-premises TFS, you also have access to additional .  
 
 >[!NOTE]  
-><b>Feature availability:</b> From the cloud-based Team Services, you'll always have access to the latest version of the CMMI process, [which you can also customize](../process/customize-process.md). If you connect to an on-premises Team Foundation Server (TFS), the latest version of the CMMI process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize team projects](../customize/customize-work.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
+><b>Feature availability:</b> From the cloud-based VSTS, you'll always have access to the latest version of the CMMI process, [which you can also customize](../process/customize-process.md). If you connect to an on-premises Team Foundation Server (TFS), the latest version of the CMMI process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize team projects](../customize/customize-work.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
 >
 >The following WITs are available as follows: Epic, TFS 2015 and later versions; 
 >Shared Parameters, TFS 2013.2 and later versions; 

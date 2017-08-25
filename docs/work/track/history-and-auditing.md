@@ -19,7 +19,7 @@ You can use either the web portal or Team Explorer to view the history of a work
 
 
 <a id="team-services" /> 
-#### Team Services, TFS 2017
+#### VSTS, TFS 2017
     
 <img src="_img/hist-audit-query-ts-bt.png" alt="Search for items based on words contained in the History field" style="border: 2px solid #C3C3C3;" /> 
 
@@ -107,7 +107,7 @@ Items I've been associated with
 An entry is made to the History field each time a work item is saved. To view the history of changes, open an existing work item, and then choose the ![history tab icon](../_img/icons/icon-history-tab-wi.png) or **History** tab, or for some work item types, choose the **Details** tab. 
 
 <a id="team-services-tab" /> 
-#### Team Services, TFS 2017
+#### VSTS, TFS 2017
      
 <img src="_img/hist-audit-wi-form-vsts-tab.png" alt="View History tab - VSTS" style="border: 2px solid #C3C3C3;" /> 
 
@@ -128,7 +128,7 @@ If you open the work item from the web portal, you'll see the state change histo
 The history details shown depend on the platform, version, and client you user. 
 
 <a id="team-services-view" /> 
-#### Team Services, TFS 2017
+#### VSTS, TFS 2017
 
 Click an entry in the left pane to view the details of changes made.
      

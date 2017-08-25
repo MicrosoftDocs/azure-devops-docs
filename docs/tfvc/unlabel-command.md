@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Unlabel Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Removes an item from an existing label in the server for Team Foundation version control.
 

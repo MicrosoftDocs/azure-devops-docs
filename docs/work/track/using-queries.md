@@ -12,11 +12,10 @@ ms.date: 08/11/2017
 
 # Use the query editor to create managed queries  
 
-<!---
 <b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
---> 
 
-You can create queries in Team Services, the  web portal for Team Foundation Server (TFS), and Team Explorer. Also, you can open a query in [Excel](../office/bulk-add-modify-work-items-excel.md) or [Project](../office/create-your-backlog-tasks-using-project.md) to perform bulk additions and modifications.  
+
+You can create queries in VSTS, the  web portal for Team Foundation Server (TFS), and Team Explorer. Also, you can open a query in [Excel](../office/bulk-add-modify-work-items-excel.md) or [Project](../office/create-your-backlog-tasks-using-project.md) to perform bulk additions and modifications.  
 
 For details on constructing query clauses and information on each query operator&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash;and macros, see [Query fields, operators, and macros](query-operators-variables.md). For an index of example queries, see [Create managed queries](example-queries.md#examples). 
 
@@ -49,7 +48,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 2.	Edit the query to find closed bugs and then run the query. 
 	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current team project. To find work items defined in several team projects, see [Query across team projects](using-queries.md#across-projects).   
 	
-	**Team Services, TFS 2017, TFS 2015:**  
+	**VSTS, TFS 2017, TFS 2015:**  
 	
 	<img src="_img/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 2px solid #C3C3C3;" />  
 
@@ -204,7 +203,7 @@ TFS 2013 and previous versions didn't require encoding.
 >Most browsers enforce a limit of between 2000 and 2083 characters for a URL string.    
 
 
-**Team Services syntax**
+**VSTS syntax**
 
 ```  
 https://{youraccount}.visualstudio.com/DefaultCollection/{TeamProjectName}/{TeamName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage]
@@ -281,4 +280,4 @@ See also:
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
  
 > [!NOTE]  
-> For queries made against Team Services, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
+> For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  

@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Clean Up Files When Users Leave
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 When a member leaves a team, version control administrators must correctly dispose of that member's files.
 

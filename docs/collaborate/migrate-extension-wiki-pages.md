@@ -1,5 +1,5 @@
 ---
-title: Migrate wiki extension pages | Team Services  
+title: Migrate wiki extension pages | VSTS  
 description: Migrate wiki pages created using the Marketplace extension to the Visual Studio Team Services (VSTS) wiki 
 ms.technology: collaborate
 ms.prod: vs-devops-alm
@@ -11,17 +11,17 @@ ms.date: 07/05/2017
 
 # Migrate pages from Wiki extension to a team project wiki
 
-**Team Services**
+**VSTS**
 
 >[!NOTE]  
-><b>Feature availability: </b>Use this topic to migrate pages made using the [Wiki Marketplace  extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) to the Team Services Wiki. The **Wiki*** hub is in Preview and only available for Team Services at this time. To learn more, see [Add and edit your team project Wiki](add-edit-wiki.md).  
+><b>Feature availability: </b>Use this topic to migrate pages made using the [Wiki Marketplace  extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) to the Team Services Wiki. The **Wiki*** hub is in Preview and only available for VSTS at this time. To learn more, see [Add and edit your team project Wiki](add-edit-wiki.md).  
 
 With the release of the Team Services wiki, any wiki pages that you created using the Wiki Marketplace extension have been saved to a git repo in your team project.  
 
 You can migrate the markdown pages and other artifacts that were added to that repo to your team project wiki with these steps:  
 1.	Clone [vsts-wikiTools](https://github.com/Microsoft/vsts-wikiTools) repository and compile the **MigrateToVSTSWiki** tool
-2.	Create and then clone your Team Services wiki    
-3.	Move and commit all markdown pages to your Team Services wiki 
+2.	Create and then clone your VSTS wiki    
+3.	Move and commit all markdown pages to your VSTS wiki 
 4.	Run the wiki migration tool, **MigrateToVSTSWiki.exe** 
 5.	Once you are done, push the changes to the default master branch, *wikiMaster*, of the Team Services wiki repository.
 
@@ -34,7 +34,7 @@ Here are the detailed steps for Wiki migration:
 
 2.  Compile the project under the path **Tools/MigrateToVSTSWiki** to generate the migration tool EXE.
   
-3.  From a web browser, open your Team Services team project and [create your first wiki page](add-edit-wiki.md#create-wiki).   
+3.  From a web browser, open your VSTS team project and [create your first wiki page](add-edit-wiki.md#create-wiki).   
  
 4.	Get the URL to clone your wiki. See [Clone your wiki and edit wiki pages offline](add-edit-wiki.md#edit-wiki-offline).  
 	

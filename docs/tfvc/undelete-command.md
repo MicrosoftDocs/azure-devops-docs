@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Undelete Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 The **undelete** command restores items that were previously deleted.
 

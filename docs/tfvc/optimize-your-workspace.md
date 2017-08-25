@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Optimize your workspace
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Does your team have a large and complex codebase? Do you want your workspace to contain only the files you need to improve performance, reduce network traffic, and reduce the disk space required on your dev machine?
 

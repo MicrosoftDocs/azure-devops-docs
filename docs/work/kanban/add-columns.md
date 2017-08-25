@@ -94,7 +94,7 @@ Now that you've got the essentials of how to work with your Kanban board, here's
 
 You'll see different column titles and choices based on the following:  
 	
-- You connect to Team Services, TFS 2015 Update 1, or TFS 2015  
+- You connect to VSTS, TFS 2015 Update 1, or TFS 2015  
 - The [Process](../guidance/choose-process.md) you used to create your team project  
 - Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).
 <br/>
@@ -103,7 +103,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 <img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 2px solid #C3C3C3;" />  
 
-#### Team Services, TFS 2017  
+#### VSTS, TFS 2017  
         
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns.   
 
@@ -209,7 +209,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 	You'll see different column titles and choices based on the following:  
 	
-	- You connect to Team Services, TFS 2015 Update 1, or TFS 2015  
+	- You connect to VSTS, TFS 2015 Update 1, or TFS 2015  
 	- The [Process](../guidance/choose-process.md) you used to create your team project  
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
 

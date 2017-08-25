@@ -1,5 +1,5 @@
 ---
-title: Differences between cloud and on-premises process customizations | Team Services 
+title: Differences between cloud and on-premises process customizations | VSTS 
 description: Summary of what you can and can't customize in a process template to support customized work tracking in Visual Studio Team Services (VSTS).
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -22,7 +22,7 @@ ms.date: 05/23/2017
 
 Team Services uses a different model than Team Foundation Server (TFS) for relating projects and process.  
 * In TFS, process templates are used as starting points for projects and once a project is created, the project is the scope you customize.
-* In Team Services, process is shared across multiple projects and is the scope you customize.  
+* In VSTS, process is shared across multiple projects and is the scope you customize.  
  
 The structure and overall syntax used in defining process templates remains the same, with only a few minor differences existing between templates you customize for import into VSTSand those you upload to support an on-premises TFS.  
 
@@ -63,7 +63,7 @@ When customizing a process template for import, limit the number of the objects 
                                                                                                                             
 
 ## Tools with limited support 
-When you connect to Team Services, you can use the following tools subject to limitations:   
+When you connect to VSTS, you can use the following tools subject to limitations:   
 
 - [Visual Studio Process Template Manager](../guidance/manage-process-templates.md): You can download a process template, but all other functions are disabled.   
 - Process Editor: You can use select functions to view or export a WIT definition or global list, or use the Work Item Field Explorer. Access is denied to save modified WIT and global list definitions.  

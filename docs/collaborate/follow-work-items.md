@@ -1,5 +1,5 @@
 ---
-title: Follow work or pull requests| Team Services  
+title: Follow work or pull requests| VSTS  
 description: Quickly track the progress made to a work item by following it when using Visual Studio Team Services (VSTS)  
 ms.technology: collaborate
 ms.prod: vs-devops-alm
@@ -16,7 +16,7 @@ ms.date: 08/21/2017
 <a id="follow"></a>
 
 >[!NOTE]  
-><b>Feature availability: </b>The Follow a work item feature is available from Team Services and TFS 2017. The Follow a pull request feature is available from Team Services and TFS 2017 Update 1. For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) for the follow features to work.   
+><b>Feature availability: </b>The Follow a work item feature is available from VSTS and TFS 2017. The Follow a pull request feature is available from VSTS and TFS 2017 Update 1. For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) for the follow features to work.   
 
 To get notified of changes made to a work item or a pull request, you can elect to follow them. 
 
@@ -32,7 +32,7 @@ This topic shows you how to:  
 
 When you want to track the progress of a single work item, click the ![Follow icon](../work/_img/icons/follow-icon.png) icon. This signals the system to notify you when changes are made to the work item.  
 
-<img src="_img/follow-work-item.png" alt="Team Services Work item form, Follow icon control" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/follow-work-item.png" alt="VSTS Work item form, Follow icon control" style="border: 1px solid #CCCCCC;" />  
 
 >[!IMPORTANT]
 >For on-premises TFS, [you must configure an SMTP server](../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.  

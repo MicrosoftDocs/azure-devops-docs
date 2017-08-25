@@ -1,5 +1,5 @@
 ---
-title: Author names in Git | Team Services & TFS
+title: Author names in Git | VSTS & TFS
 description: How Git stores author names
 ms.assetid: 09e60acb-fa48-4843-9f5d-5dfed981f467
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 06/16/2017
 
 When you commit to your local repo, Git includes your name and email address as part of the commit.
 This can sometimes lead to confusion.
-The name and email on your commits may not match the identity you log in with on a Git host like Visual Studio Team Services.
+The name and email on your commits may not match the identity you log in with on a Git host like Visual Studio VSTS.
 Further, you may have commits under several different names and email addresses even though you were the author for each of them.
 
 ## Why are there multiple names for me in my repo?

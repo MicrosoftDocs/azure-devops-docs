@@ -1,5 +1,5 @@
 ---
-title: Get started with Git and Visual Studio 2013 | Team Services & TFS
+title: Get started with Git and Visual Studio 2013 | VSTS & TFS
 description: Get started using Git in Visual Studio
 toc: show
 ms.assetid: BFDE8FAF-63B8-4BC9-9A24-32EE2CA73C13
@@ -18,7 +18,7 @@ ms.date: 08/23/2017
 > - [Visual Studio 2017](gitquickstart-vs2017.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md) 
 
-#### Team Services | TFS 2015 
+#### VSTS | TFS 2015 
 
 Whether your software project is large, small, or brand new, in most cases you'll be better off if you use version control as early as possible. 
 Here, we'll show you how to get started with Git, a distributed version control system. 
@@ -74,7 +74,7 @@ Let's add a new app to the repo so we can make some changes.
 
 	![Navigate to the Changes page](_img/get-started/VSChanges1.png)
 	
-0. The new app appears under the Included Changes section.  Enter a commit message and click the **Commit and Push** button to commit the changes to your local repo then push your changes to Visual Studio Team Services.
+0. The new app appears under the Included Changes section.  Enter a commit message and click the **Commit and Push** button to commit the changes to your local repo then push your changes to Visual Studio VSTS.
 If you haven't previously used Git on this computer, you may have to [configure your username and email address](#configure_username_email).
 
 	![Enter a message and click Commit](_img/get-started/VSChangesCommitPush.png)
@@ -184,7 +184,7 @@ First you'll need to:
 
  ![Prompt to install Git command prompt tools](_img/command-prompt/IC675719.png)
 
-* Get the clone URL from the CODE hub in Visual Studio Team Services.
+* Get the clone URL from the CODE hub in Visual Studio VSTS.
 
 For the Fabrikam project on VSTS, the command to clone would look like this:
 

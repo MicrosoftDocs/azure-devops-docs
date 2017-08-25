@@ -66,7 +66,7 @@ Each sprint that you select for your team provides access to a [sprint backlog, 
 
 For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint. 
 
-![Team Services, sprints](_img/define-sprints-selected-team-iterations-vsts.png)
+![VSTS, sprints](_img/define-sprints-selected-team-iterations-vsts.png)
 
 
 ## Related notes 

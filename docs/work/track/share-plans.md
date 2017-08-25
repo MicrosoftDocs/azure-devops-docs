@@ -78,13 +78,13 @@ The rich text formatting toolbar appears above each text box that can be formatt
 
 The specific set of formatting features differs depending on the client you use. In all clients, you can bold, italicize, and underline text. You can also add and remove hyperlinks, format text as ordered or unordered lists, and add images. 
 
-### Team Services, TFS 2017 
+### VSTS, TFS 2017 
 
-**Rich text formatting toolbar - Team Services &  TFS 2017 web portal** 
+**Rich text formatting toolbar - VSTS &  TFS 2017 web portal** 
 
 <img src="_img/rich-text-ui-team-services.png" alt="Rich text tool bar - VSTS" style="border: 2px solid #C3C3C3;" />
 
-In Team Services, you can use the ![Remove format](../_img/icons/remove-formatting-icon.png) icon or CTRL+Spacebar to remove formatting from highlighted text.
+In VSTS, you can use the ![Remove format](../_img/icons/remove-formatting-icon.png) icon or CTRL+Spacebar to remove formatting from highlighted text.
 
 > [!NOTE]  
 > The History field is no longer a rich-text field. To annotate the work item history, add to the Description or Discussion fields. 
@@ -140,19 +140,19 @@ For example, you can attach a screen image that illustrates a problem, a line of
 
 <a id="team-services" />
 
-### Attachment control toolbar, Team Services &  TFS 2017 web portal 
+### Attachment control toolbar, VSTS &  TFS 2017 web portal 
 
 <img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal VSTS" style="border: 2px solid #C3C3C3;" />  
 
 > [!TIP]    
-> From Team Services, you can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, from VSTS and TFS 2017.1 and later versions, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../reference/markdown-guidance.md#attach).  
+> From VSTS, you can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, from VSTS and TFS 2017.1 and later versions, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../reference/markdown-guidance.md#attach).  
 
 You can edit, open, save, or delete an attachment by clicking an attachment and opening it's ![actions icon](../_img/icons/actions-icon.png) actions menu. 
 
 <img src="_img/share-plans-attachment-menu-options.png" alt="Attachment menu options,  VSTS" style="border: 2px solid #C3C3C3;" />
 
 > [!NOTE]  
-> For Team Services, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
+> For VSTS, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
 
 
 <a id="tfs-portal" />

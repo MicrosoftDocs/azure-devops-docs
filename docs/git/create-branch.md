@@ -1,6 +1,6 @@
 ---
-title: Create a new Git branch from the web | Team Services & TFS
-description: Use the branches page to create a new Git branch in Team Services or Team Foundation Server
+title: Create a new Git branch from the web | VSTS & TFS
+description: Use the branches page to create a new Git branch in VSTS or TFS
 ms.assetid: 13783230-7762-4fd0-b392-5187c7f9fe1e
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
@@ -10,7 +10,7 @@ ms.date: 08/23/2016
 ---
 
 # Create a new Git branch
-#### Team Services | TFS 2017
+#### VSTS | TFS 2017
 
 >[!TIP]
 > Need help creating a new Git branch in your local repo from Visual Studio or the command line? Visit the [Git tutorial](tutorial/branches.md).   

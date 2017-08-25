@@ -12,7 +12,7 @@ ms.date: 07/05/2017
 
 # About READMEs and Wiki
 
-**Team Services | TFS 2017**
+**VSTS | TFS 2017**
 
 
 ## READMEs
@@ -33,4 +33,4 @@ Here are some great readmes that use this format and speak to all three audience
 ## Wiki
 
 >[!NOTE]  
-><b>Feature availability: </b>The built-in wiki is in Preview and available for Team Services at this time. You enable this feature for a team project from the [Preview features option from your profile menu](preview-features.md#account-level).   
+><b>Feature availability: </b>The built-in wiki is in Preview and available for VSTS at this time. You enable this feature for a team project from the [Preview features option from your profile menu](preview-features.md#account-level).   

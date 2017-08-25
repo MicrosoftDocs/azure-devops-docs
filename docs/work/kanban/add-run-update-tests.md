@@ -1,5 +1,5 @@
 ---
-title: Add, run, and update inline tests | Team Services  
+title: Add, run, and update inline tests | VSTS  
 description: Add, run, and update manual test cases via the inline test feature on your Kanban board for lightweight tracking and traceability when working in Visual Studio Team Services (VSTS)    
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -104,7 +104,7 @@ If you find that you don't use this feature, you can disable it from the [common
 
 Additional ways you can quickly add linked items and objects to user stories from the Kanban board:
 - [Add inline tasks](add-task-checklists.md)
-- [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md) (VS Team Services only)
+- [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md) 
 
 To initate web-based exploratory testing for a user story, you need to install the Exploratory testing , see [Exploratory test your web app directly in your browser](../../manual-test/getting-started/perform-exploratory-tests.md).
 

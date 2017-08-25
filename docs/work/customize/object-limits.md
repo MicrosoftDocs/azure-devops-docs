@@ -1,5 +1,5 @@
 ---
-title: Work tracking object limits | Team Services 
+title: Work tracking object limits | VSTS 
 description: Limits placed on the number of objects that can be specified for the Inheritance and Hosted XML process models for Visual Studio Team Services (VSTS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

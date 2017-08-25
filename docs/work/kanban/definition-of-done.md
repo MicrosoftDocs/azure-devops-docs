@@ -12,9 +12,7 @@ ms.date: 04/03/2017
 
 # Definition of Done
 
-<!---
 <b>VSTS | TFS 2017 | TFS 2015</b> 
---> 
 
 As your team updates the status of work as it progresses from one stage to the next, it helps that they agree on what “done” means. By specifying the Definition of Done criteria for each Kanban column, you help share the essential tasks to complete before moving an item into a downstream stage. 
 

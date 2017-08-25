@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Suspend your work and manage your shelvesets
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 For a variety of reasons, sometimes you need to set aside some or all of your work in progress. Shelvesets are useful when you want to stop work for:
 

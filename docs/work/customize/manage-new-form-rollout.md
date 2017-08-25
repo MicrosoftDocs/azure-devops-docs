@@ -1,5 +1,5 @@
 ---
-title: Manage new form roll out| Team Services    
+title: Manage new form roll out| VSTS    
 description: Enable and choose the roll out option of the new work item form for customizing the work tracking experience on the web portal when connecting to VSTS  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

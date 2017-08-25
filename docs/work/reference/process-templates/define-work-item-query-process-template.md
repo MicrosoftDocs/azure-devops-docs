@@ -115,7 +115,7 @@ AND  [Source].[System.IterationPath] UNDER '$$PROJECTNAME$$\Iteration 1'
 ```  
   
 >[!NOTE]  
->For queries made against Team Services, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
+>For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
 
 |Element|Syntax|Description|  
 |-------------|------------|-----------------|  

@@ -1,5 +1,5 @@
 ---
-title: Set favorites | Team Services  
+title: Set favorites | VSTS  
 description: Quickly access objects by favoriting them either for your use or the team's use    
 ms.technology: collaborate
 ms.prod: vs-devops-alm

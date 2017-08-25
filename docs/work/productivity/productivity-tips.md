@@ -344,7 +344,7 @@ You can quickly access code, builds, and work items when you [add widgets and ch
 
 ## Related notes
 
-You may find additional tools to enhance your productivity within the [Marketplace for VS Team Services](https://marketplace.visualstudio.com/VSTS).
+You may find additional tools to enhance your productivity within the [Marketplace for VSTS](https://marketplace.visualstudio.com/VSTS).
 
 To update your on-premises TFS, visit the [Visual Studio downloads page for Team Foundation Server](https://www.visualstudio.com/downloads/#team-foundation-server-2017). 
 

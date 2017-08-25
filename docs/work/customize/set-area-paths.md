@@ -50,7 +50,7 @@ Certain [restrictions](#name-restrictions) apply on names of areas.
 
 1. From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.   
 
-	<img src="_img/modify-areas-its-open-admin-context-ts.png" alt="Web portal, Team Services, Open Admin context, team project level" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 2px solid #C3C3C3;" />  
 
 	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings.  
 

@@ -273,7 +273,7 @@ To query for items based on text entered in the History field, see
 You can use the **@CurrentIteration** macro in a query from the following clients:  
 <ul>
   <li>
-    <p>Web portal that connects to Team Services</p>
+    <p>Web portal that connects to VSTS</p>
   </li>
   <li>
     <p>Web portal that connects to an on-premises TFS 2015 or later version</p>

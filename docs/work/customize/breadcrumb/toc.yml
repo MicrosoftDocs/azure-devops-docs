@@ -6,6 +6,6 @@
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=agile
     items:
-    - name: "Customization"
-      tocHref: /vsts/work/customize/
+    - name: Customization
+      tocHref: /vsts/
       topicHref: /vsts/work/customize/index

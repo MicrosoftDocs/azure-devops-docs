@@ -1,5 +1,5 @@
 ---
-title: TF31002-Unable to connect to this Team Services or TFS | Team Services & TFS
+title: TF31002-Unable to connect to VSTS or TFS | VSTS & TFS
 description: Receive the error when you try to connect to Visual Studio Team Services to Team services or an on-premises Team Foundation Server.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

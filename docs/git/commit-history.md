@@ -1,5 +1,5 @@
 ---
-title: View commit history | Team Services & TFS
+title: View commit history | VSTS & TFS
 description: View Git commit history in Visual Studio
 ms.assetid: f1ceefae-192f-49ee-af52-b9a29852bf85
 toc: show
@@ -12,7 +12,7 @@ ms.date: 03/14/2017
 
 # Commit history
 
-#### Team Services | TFS 2017 Update 1
+#### VSTS | TFS 2017 Update 1
 
 ## Commit history view
 

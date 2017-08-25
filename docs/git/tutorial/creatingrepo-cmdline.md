@@ -1,5 +1,5 @@
 ---
-title: Create a new Git repo (command line) | Team Services & TFS
+title: Create a new Git repo (command line) | VSTS & TFS
 description: Create new Git repos using Visual Studio or command line init 
 ms.assetid: c4ddee3b-d6a8-4c8b-adda-18d9c8b96eef
 ms.prod: vs-devops-alm
@@ -69,7 +69,7 @@ Later you can connect this Git repo to a remote Git repo to share your work with
 
 <div id="changeexample" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
 <div id="vs1" class="tab-pane fade">
-<h6 style="padding-left:25px;">Team Services | TFS 2015 &amp; 2017 | Visual Studio 2015 Update 2</h6>
+<h6 style="padding-left:25px;">VSTS | TFS 2015 &amp; 2017 | Visual Studio 2015 Update 2</h6>
 
 <h4 style="padding-left:25px;">From a new solution</h4>
 

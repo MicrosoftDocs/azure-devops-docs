@@ -7,5 +7,5 @@
     topicHref: /vsts/index#pivot=services&panel=analytics
     items:
     - name: "VSTS & Power BI"
-      tocHref: /vsts/report/powerbi/
+      tocHref: /vsts/
       topicHref: /vsts/report/powerbi/index

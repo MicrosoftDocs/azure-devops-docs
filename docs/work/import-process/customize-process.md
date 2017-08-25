@@ -1,5 +1,5 @@
 ---
-title: Customize a process to import using Hosted XML | Team Services
+title: Customize a process to import using Hosted XML | VSTS
 description: Customize a Hosted XML process to support custom fields, work item types, global lists, and process configuration  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

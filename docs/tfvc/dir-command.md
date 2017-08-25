@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Dir Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 The **dir** command displays all or some of the contents of the server for Team Foundation version control.
 

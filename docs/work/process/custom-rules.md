@@ -1,5 +1,5 @@
 ---
-title: Add a custom rule to a work item type | Team Services  
+title: Add a custom rule to a work item type | VSTS  
 description: Add a custom rule to a process for a work item type for Visual Studio Team Services (VSTS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

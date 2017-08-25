@@ -1,5 +1,5 @@
 ---
-title: Manage processes | Team Services  
+title: Manage processes | VSTS  
 description: Create and apply a process to a team project working in Visual Studio Team Services (VSTS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -16,9 +16,9 @@ ms.date: 08/11/2017
 
 [!INCLUDE [temp](../_shared/process-feature-availability.md)]
 
-In Team Services, you customize your team project through a process. (You configure your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../about-teams-and-settings.md).) A process defines the building blocks of the work tracking system. Whenever you create a team project, you select the process you want your team project to use. 
+In VSTS, you customize your team project through a process. (You configure your [Agile tools&mdash;Scrum and Kanban&mdash;through the web UI](../about-teams-and-settings.md).) A process defines the building blocks of the work tracking system. Whenever you create a team project, you select the process you want your team project to use. 
 
-Team Services supports two types of processes. 
+VSTS supports two types of processes. 
 
 - ![locked icon](_img/locked-icon.png) System processes &mdash;[Scrum, Agile, and CMMI](../guidance/choose-process.md)&mdash;which are locked from being changed except by VSTS.   
 - ![inherited process icon](_img/inherited-process-icon.png) Inherited processes, which you can customize, are so named as they inherit from the system process from which they were created. Any updates Team Services makes to the parent system process will automatically update your custom inherited process.  

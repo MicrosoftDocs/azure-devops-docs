@@ -6,13 +6,14 @@ description: Use Campfire with your Visual Studio Team Services account
 ms.assetid: e8eacf20-c396-4b46-8673-a9f139643968
 ms.manager: douge
 ms.author: elbatk
-ms.date: 02/14/2017 
 ms.topic: get-started-article
+ms.date: 08/24/2017 
 ---
 
-# Team Services notifications on Campfire
+# Notifications and Campfire
 
-Post messages to a room in Campfire in response to events from Visual Studio Team Services.
+Post messages to a room in Campfire in response to events from Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).
+
 For example, you can post a message when a work item is created or changed, or a build occurs.
 
 ## Get a Campfire authorization token
@@ -29,7 +30,7 @@ For example, you can post a message when a work item is created or changed, or a
 
    <img alt="Add service hook" src="../service-hooks/services/_img/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 
-3. Configure the Visual Studio Team Services event that will post a message in a Campfire room.
+3. Configure the VSTS or TFS event that will post a message in a Campfire room.
 
    <img alt="Configure event" src="./_img/campfire/configure-event.png" style="border: 1px solid #CCCCCC" />
 

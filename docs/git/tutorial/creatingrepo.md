@@ -1,5 +1,5 @@
 ---
-title: Create a new Git repo | Team Services & TFS
+title: Create a new Git repo | VSTS & TFS
 description: Create new Git repos using Visual Studio or command line init 
 ms.assetid: 83c20dac-85c6-4fa0-93b5-912d5477246a
 ms.prod: vs-devops-alm
@@ -50,7 +50,7 @@ Later you can connect this Git repo to a remote Git repo to share your work with
 
 ### Prerequisites
 
-* Team Services or TFS 2015 & 2017
+* VSTS or TFS 2015 & 2017
 * Visual Studio 2015 (Update 2) or Visual Studio 2017
 
 ### From a new solution

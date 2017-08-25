@@ -127,7 +127,7 @@ Team Project
 </td>
 <td>
 <p>The team project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more team projects. </p>
-<blockquote>**Note:**&#160;&#160;For Team Services or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see [Example queries, query across team projects](using-queries.md#across-projects). </blockquote>
+<blockquote>**Note:**&#160;&#160;For VSTS or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see [Example queries, query across team projects](using-queries.md#across-projects). </blockquote>
  
 	<p>Reference name=System.TeamProject, Data type=String</p>
 </td>

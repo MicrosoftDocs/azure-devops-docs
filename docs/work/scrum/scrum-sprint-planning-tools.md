@@ -136,7 +136,7 @@ During a sprint, your team can use the task board and sprint burndown chart to t
 Each sprint that you select for your team provides access to a sprint backlog, task board, and other Agile tools for planning and tracking work. 
 
 <a id="ts-sprints" /> 
-**Team Services, TFS 2017**
+**VSTS, TFS 2017**
 
 For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint.  
 

@@ -107,7 +107,7 @@ Based on the platform or version you use, you can perform the following tasks.
  
 Prior to creating templates, consider how you and your team(s) will use the templates. If you'll be using several templates, determine a naming convention that will help users easily select the right template for their use. 
 
-If you want to use custom fields in your templates, define those fields prior to creating your templates. See [Customize a field for a process](../process/customize-process-field.md) for Team Services, and [Add or modify a field](../customize/add-modify-field.md) for on-premises TFS. 
+If you want to use custom fields in your templates, define those fields prior to creating your templates. See [Customize a field for a process](../process/customize-process-field.md) for VSTS, and [Add or modify a field](../customize/add-modify-field.md) for on-premises TFS. 
 
 You can specify any number of fields you want, including ones that the user will change&mdash;such as Title or Description. If you want the work item assigned to a specific team, define the team Area Path as part of the template.  
 

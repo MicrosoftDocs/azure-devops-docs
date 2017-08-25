@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Resolve Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Lets you resolve conflicts between changed items in your workspace and the latest or destination versions of items on the server.
 

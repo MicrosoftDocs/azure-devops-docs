@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Changeset Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Displays information about and lets you change the attributes, such as comments and check-in notes, that are associated with a changeset.
 

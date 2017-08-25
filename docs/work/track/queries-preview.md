@@ -1,5 +1,5 @@
 ---
-title: New queries experience | Team Services  
+title: New queries experience | VSTS  
 description: Highlights the features made available with the changes to the new Queries hub layout
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-agile 

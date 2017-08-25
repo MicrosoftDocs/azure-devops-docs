@@ -1,5 +1,5 @@
 ---
-title: Give reviewers permission to provide feedback | Team Services & TFS
+title: Give reviewers permission to provide feedback | VSTS & TFS
 description: Grant users access to provide feedback initiated from a team project in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -68,7 +68,7 @@ Since feedback is captured in a feedback response work item, reviewers need to b
 
 Sometimes additional ideas occur after reviewers submit their feedback. By providing access to the web portal, reviewers can revisit and further annotate their feedback submissions. 
 
-- **Team Services:**  [Assign the **Stakeholder** license to accounts](../../accounts/add-account-users-assign-access-levels.md) that you add to your Reviewer group   
+- **VSTS:**  [Assign the **Stakeholder** license to accounts](../../accounts/add-account-users-assign-access-levels.md) that you add to your Reviewer group   
 - **On-premises TFS:**  [Add your Reviewer group to the **Stakeholder** group on the **access levels** page](../../security/change-access-levels.md). If you don't see this tab, get administrative permissions. 
 
 ![Add reviewers to the Limited group](_img/ALM_GP_ModifyFeedback.png)

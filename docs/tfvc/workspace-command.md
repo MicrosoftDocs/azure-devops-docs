@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Workspace Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Lets you create, delete, view, or modify properties and mappings associated with a workspace.
 

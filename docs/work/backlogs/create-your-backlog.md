@@ -27,13 +27,13 @@ You use work items to share information, assign work to team members, track depe
 and more. Because the most important work appears at the top of the list, your team always knows what to work on next.
 
 ## Convert ideas into backlog items or stories
-Building your backlog starts by quickly capturing the requirements you want for your product. If you don't have a team project yet, create one in [Visual Studio Team Services](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).   
+Building your backlog starts by quickly capturing the requirements you want for your product. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).   
 
 
 
 ### Open your backlog from the web portal
 
-You access your product backlog from the **Work** hub, **Backlogs** page. If you don't have a team project yet, create one in [Visual Studio Team Services](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).   
+You access your product backlog from the **Work** hub, **Backlogs** page. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).   
  
 <img src="../backlogs/_img/cyb-open-backlog-tfs-2017.png" alt="Web portal, choose Work hub, Backlogs" style="border: 2px solid #C3C3C3;" /> 
 
@@ -56,7 +56,7 @@ If you don't see the team or team project you want, click the ![VSTS icon](../_i
 
 <img src="../_shared/_img/switch-team-project-2.png" alt="Choose another team from the team project menu" style="border: 2px solid #C3C3C3;" /> 
 
-<p>If you don't have a team project yet, create one in [Visual Studio Team Services](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md). </p>  
+<p>If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md). </p>  
 
 -->
 

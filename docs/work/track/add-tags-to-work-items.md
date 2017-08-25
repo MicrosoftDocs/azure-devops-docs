@@ -1,6 +1,6 @@
 ---
 title: Add tags to work items | VSTS & TFS
-description: Add tags to work items to categorize and filter lists when working in  Visual Studio Team Services  and Team Foundation Server (TFS)
+description: Add tags to work items to categorize and filter lists when working in  Visual Studio Team Services (VSTS)  and Team Foundation Server (TFS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.topic: get-started-article  
@@ -12,10 +12,8 @@ ms.date: 06/02/2017
 
 # Add tags to work items to categorize and filter lists and boards  
  
-
-<!---
 <b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
---> 
+
 
 Tagging work items helps you quickly filter the product backlog or a work 
 item query by categories that you define. 
@@ -33,7 +31,7 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 <tr valign="bottom">
 <th width="27%">Task  
 </th>
-<th width="12%">Team Services
+<th width="12%">VSTS
 </th>
 <th width="12%"><br/>TFS 2015<br/>Web portal  
 </th>

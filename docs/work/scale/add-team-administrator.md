@@ -11,10 +11,8 @@ ms.date: 07/21/2017
 
 # Add a team administrator 
 
-
-<!---
 <b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
---> 
+
 
 <a id="add-team-admin">  </a>  
 

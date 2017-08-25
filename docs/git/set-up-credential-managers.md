@@ -1,6 +1,6 @@
 ---
-title: Connect to your Git repos using credential managers | Team Services & TFS
-description: Authenticate to Visual Studio Team Services and TFS Git repos using credential managers
+title: Connect to your Git repos using credential managers | VSTS & TFS
+description: Authenticate to Visual Studio VSTS and TFS Git repos using credential managers
 ms.assetid: 7779af87-460c-4078-bc2b-ceb4b758c24e
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
@@ -10,9 +10,9 @@ ms.date: 01/09/2017
 ---
 
 #  Use Git Credential Managers to Authenticate to Visual Studio Team Services
-#### Team Services | TFS 2015 & 2017| Visual Studio 2015 & 2017
+#### VSTS | TFS 2015 & 2017| Visual Studio 2015 & 2017
 
-Git Credential Managers simplify authentication with your Team Services/TFS Git repos. Credential Managers let you use the same credentials that you use for the Team Services/TFS web interface and support multi-factor authentication through Microsoft Account (MSA) or Azure Active Directory (AAD). In addition to supporting multi-factor authentication with Team Services, the credential managers also provide support two-factor authentication with [GitHub repositories](https://help.github.com/articles/about-two-factor-authentication/).
+Git Credential Managers simplify authentication with your VSTS/TFS Git repos. Credential Managers let you use the same credentials that you use for the VSTS/TFS web interface and support multi-factor authentication through Microsoft Account (MSA) or Azure Active Directory (AAD). In addition to supporting multi-factor authentication with VSTS, the credential managers also provide support two-factor authentication with [GitHub repositories](https://help.github.com/articles/about-two-factor-authentication/).
 
 Team Services provides IDE support for MSA and AAD authentication through [Team Explorer in Visual Studio](../accounts/connect-to-vsts.md#vs), [IntelliJ and Android Studio with the Team Services Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), and [Eclipse (with the Team Explorer Everywhere plug-in)] (https://github.com/Microsoft/team-explorer-everywhere). If your environment doesn't have an integration available, configure your IDE  with a [Personal Access Token](../accounts/use-personal-access-tokens-to-authenticate.md) or [SSH](use-ssh-keys-to-authenticate.md) to connect with your to your repos.
 
@@ -38,7 +38,7 @@ When you connect to a Team Services Git repository from your Git client for the 
 
 ![Git Credential Manager prompting during Git pull](_img/gcm_login_prompt.gif)
    
-Once authenticated, the credential manager will create and cache a [personal access token](../accounts/use-personal-access-tokens-to-authenticate.md) for future connections to the repo. Git commands that connect to this account will not prompt for user credentials until the token expires or is revoked through Team Services/TFS.
+Once authenticated, the credential manager will create and cache a [personal access token](../accounts/use-personal-access-tokens-to-authenticate.md) for future connections to the repo. Git commands that connect to this account will not prompt for user credentials until the token expires or is revoked through VSTS/TFS.
 
 ### Getting help 
 

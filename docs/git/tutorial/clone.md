@@ -1,5 +1,5 @@
 ---
-title: Clone an existing Git repo | Team Services & TFS
+title: Clone an existing Git repo | VSTS & TFS
 description: Create a local copy of an existing repo using Visual Studio or command line clone 
 ms.assetid: b6240e2f-2d3d-4874-9953-7e554d5e3b97
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/11/2017
 
 # Clone an existing Git repo
 
-###### Team Services | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+###### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
 Create a complete local copy of an existing Git repo using by cloning it. 
 Cloning a repo downloads all [commits](commits.md) and [branches](branches.md) in the repo and sets up a named relationship with the existing repo you cloned.
@@ -43,7 +43,7 @@ Before you can clone an existing repo, you'll need a URL that points to the exis
 If you're using Team Services or Team Foundation Server 2017, you can find this clone URL in the web interface. 
 When viewing your repo from the **Code** tab in the interface, select **Clone** in the upper right.
 
-![Get a clone a URL from Team Services](./_img/get_clone_url.gif)
+![Get a clone a URL from VSTS](./_img/get_clone_url.gif)
 
 If you need to clone a GitHub repo, you'll need to get the clone URL from the **Clone or download** button while viewing the repo on the web in GitHub. 
 
@@ -62,7 +62,7 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 
 ### Prerequisites
 
-* Team Services or TFS 2015 & 2017
+* VSTS or TFS 2015 & 2017
 * Visual Studio 2015 or Visual Studio 2017
 
 ### Clone from Visual Studio Team Services / Team Foundation Server
@@ -70,7 +70,7 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 0. Open Team Explorer (go to **View** and select **Team Explorer** or use the Ctrl+\, Ctrl+M hotkey sequence) and open the **Connect** view. Go to **Projects**, then **Manage Connections** if you don't see the Connect view.
 0. Select **Connect...** under **Hosted Service Providers**.
 
-  ![Connecting to Visual Studio Team Services](_img/connect_to_vsts_from_vs2015.png)
+  ![Connecting to Visual Studio VSTS](_img/connect_to_vsts_from_vs2015.png)
 
 0. Choose your team's account from the drop-down in the dialog that appears and select which Team Projects to connect to Team Explorer. Select **Connect**. 
 
@@ -82,7 +82,7 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 
 ### Clone from another Git provider
 
-If you are not using Team Services, you can still clone your repo in Team Explorer and work with your code in Visual Studio.
+If you are not using VSTS, you can still clone your repo in Team Explorer and work with your code in Visual Studio.
 
 0. In Team Explorer, open the **Connect** view.
 0. Select **Clone** under **Local Git Repositories** and enter the URL for your Git repo&mdash;this will be provided by your team or Git hosting 

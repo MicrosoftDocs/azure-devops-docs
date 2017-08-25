@@ -23,7 +23,7 @@ When you create a team project, the Reporting plug-in creates a Report site and 
 > 
 >When you create a team project from the web portal, several process template files are ignored. Specifically, the ReportsTasks.xml plug-in file that would create the Report site is ignored. 
 >
->For Team Services, the Report site isn't supported. If you want to add it for your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).  
+>For VSTS, the Report site isn't supported. If you want to add it for your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).  
 
 You specify two main tasks by using the Reporting plug-in. First, you create the reporting site by using the **site** element. Second, you specify the folder structure and the reports to be uploaded to the site by using the **folder** and **report** elements. The reports that you upload have an .rdl extension and are designed for use with Reporting Services. For an overview of the reports that the TFS process templates provide, see [Reporting Services Reports](../../../report/sql-reports/reporting-services-reports.md).  
   

@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Share your code in TFVC using Eclipse
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Share your code with your team with Visual Studio Team Services and Eclipse.
 

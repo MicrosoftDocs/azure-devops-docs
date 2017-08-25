@@ -1,6 +1,6 @@
 ---
 title: WIP limits | VSTS & TFS
-description: Set Work In Progress Limits on the Kanban board and use to improve your Kanban process - Visual Studio Team Services (VSTS, VS Online) and Team Foundation Server (TFS)  
+description: Set Work In Progress Limits on the Kanban board and use to improve your Kanban process - Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
@@ -116,7 +116,7 @@ With an understanding of how you'll use WIT limits, here's how you set them.
 
 	You'll see different column titles and choices based on the following:
 	
-	- You connect to Visual Studio Team Services or an on-premises TFS
+	- You connect to VSTS or an on-premises TFS
 	- The [Process](../guidance/choose-process.md) you used to create your team project  
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
 
@@ -150,7 +150,7 @@ Here are some additional ways your team can implement Kanban practices and custo
 
 <!---
 >[!NOTE]  
-><b>Feature availability: </b>If you connect to Visual Studio Team Services, you can [add and configure the Cumulative Flow Diagram (CFD) widget to a team dashboard](../../report/guidance/cumulative-flow.md).  
+><b>Feature availability: </b>If you connect to VSTS, you can [add and configure the Cumulative Flow Diagram (CFD) widget to a team dashboard](../../report/guidance/cumulative-flow.md).  
 
 --> 
 

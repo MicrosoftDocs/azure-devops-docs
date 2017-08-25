@@ -12,13 +12,13 @@ ms.date: 08/11/2017
 
 # Work in Team Explorer
 
-**Team Services | TFS 2017 |  TFS 2015 | TFS 2013** 
+**VSTS | TFS 2017 |  TFS 2015 | TFS 2013** 
 
 You use Team Explorer to manage work that is assigned to you, your team, or your team projects, and to coordinate your efforts with other team members to develop a project. Team Explorer is a plug-in that installs with Visual Studio or Eclipse. Working from different platforms, developers and stakeholders can effectively collaborate using Team Explorer connected to team projects hosted on Visual Studio Online or on-premises Team Foundation Server (TFS). 
 
 
 >[!TIP]  
->You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). Additional options for connecting to Team Services or TFS include: 
+>You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). Additional options for connecting to VSTS or TFS include: 
 > - [Team Explorer Everywhere](http://java.visualstudio.com/Docs/tools/eclipse)
 > - [Visual Studio Team Services Plugin for Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio)  
 > - [Visual Studio Team Services Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intellij) 
@@ -49,11 +49,11 @@ Team Explorer connects Visual Studio to team projects. You can manage source cod
 >[!NOTE]  
 >Some pages, such as **Reports** and **Documents**, only appear when TFS is configured with the required resources, such as SQL Server Reporting Services and SharePoint.
 
-If you don't need Visual Studio, but do want to connect to Team Services or TFS or get one or more Team Foundation add-ins, you can install the free [Visual Studio Community](https://www.visualstudio.com/downloads/download-visual-studio-vs).
+If you don't need Visual Studio, but do want to connect to VSTS or TFS or get one or more Team Foundation add-ins, you can install the free [Visual Studio Community](https://www.visualstudio.com/downloads/download-visual-studio-vs).
 
 **Team Explorer plug-in for Eclipse**
 
-If you work in Eclipse or on a non-Windows platform, you can [install the Team Explorer plug-in for Eclipse](http://java.visualstudio.com/Docs/tools/eclipse#_install-the-tee-plugin-for-eclipse). Once installed, you can share your Eclipse projects by adding them to Team Services or TFS using [Git](../git/share-your-code-in-git-eclipse.md) or [TFVC](../tfvc/share-your-code-in-tfvc-eclipse.md).
+If you work in Eclipse or on a non-Windows platform, you can [install the Team Explorer plug-in for Eclipse](http://java.visualstudio.com/Docs/tools/eclipse#_install-the-tee-plugin-for-eclipse). Once installed, you can share your Eclipse projects by adding them to VSTS or TFS using [Git](../git/share-your-code-in-git-eclipse.md) or [TFVC](../tfvc/share-your-code-in-tfvc-eclipse.md).
 
 
 
@@ -120,7 +120,7 @@ If your team project is missing one or more pages, you may be able to [add funct
 
 ### Settings page 
 
-From the **Settings** page, you can configure administrative features for either a team project or team project collection. Configuring features in these areas requires you to be a member of a Team Services or TFS administrator group.
+From the **Settings** page, you can configure administrative features for either a team project or team project collection. Configuring features in these areas requires you to be a member of a VSTS or TFS administrator group.
 
 Most of the links open to a web portal administration page. Not all settings are available from the Team Explorer plug-in for Eclipse. 
  
@@ -153,7 +153,7 @@ Here's a list of the most frequently encountered connection problems and what to
 For more troubleshooting tips, [TF31002: Unable to connect to this Team Foundation Server](../work/reference/error/tf31002-unable-connect-tfs.md).
 
 <a id="clients">  </a>
-### Clients that connect to Team Services or TFS
+### Clients that connect to VSTS or TFS
 
 In addition to connecting through Team Explorer, you can connect to a team project from these clients: 
 

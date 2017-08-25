@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 ---
 
 #  Use Visual Studio and Team Foundation Server with Git
-#### Team Services | TFS 2015 | Visual Studio 2013
+#### VSTS | TFS 2015 | Visual Studio 2013
 
 <table>
 <tr>
@@ -23,7 +23,7 @@ ms.date: 08/04/2016
 
 <p>All this is done on your local dev machine, with no server required. When you�re ready, you can quickly share your code and begin collaborating in TFS or on a third-party Git service.</p>
 
-<p>You can use Visual Studio and Git to collaborate with your team using Team Foundation Server (on-premises or on [Visual Studio Team Services](http://tfs.visualstudio.com/)), on [CodePlex](http://www.codeplex.com/), or on a third-party service such as GitHub or Bitbucket.</p>
+<p>You can use Visual Studio and Git to collaborate with your team using Team Foundation Server (on-premises or on [Visual Studio VSTS](http://tfs.visualstudio.com/)), on [CodePlex](http://www.codeplex.com/), or on a third-party service such as GitHub or Bitbucket.</p>
 
 <ul>
 <li>[Get started using Git](get-started.md)</li>

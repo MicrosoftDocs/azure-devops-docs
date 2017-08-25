@@ -1,6 +1,6 @@
 ---
-title: Visual Studio Git tutorial (command line) | Team Services & TFS
-description: Learn Git with the Team Services/TFS Git tutorial.
+title: Visual Studio Git tutorial (command line) | VSTS & TFS
+description: Learn Git with the VSTS/TFS Git tutorial.
 ms.assetid: 997fbdaf-e704-4b28-bf2b-1fa41741bd83
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git

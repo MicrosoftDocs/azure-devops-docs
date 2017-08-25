@@ -1,5 +1,5 @@
 ---
-title: Get started with Git and Visual Studio 2017 | Team Services & TFS
+title: Get started with Git and Visual Studio 2017 | VSTS & TFS
 description: Quick Start with Git and Visual Studio Team Services and Visual Studio 2017
 ms.assetid: d7dcb364-056f-421b-8896-0304cddf12fe
 ms.prod: vs-devops-alm
@@ -17,12 +17,12 @@ ms.date: 04/03/2017
 > - [Visual Studio 2017](gitquickstart-vs2017.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md)   
    
-###### Team Services | TFS 2015 & TFS 2017  
+###### VSTS | TFS 2015 & TFS 2017  
 
-This guide covers the basics so you can get up and running using Git with code already in Team Services or Team Foundation Server. 
+This guide covers the basics so you can get up and running using Git with code already in VSTS or TFS. 
 Explore our [full tutorial](tutorial/gitworkflow.md) for more information on how to use Git from Visual Studio or the command line. 
 
-If you don't have your code in a Team Services or TFS Git repo, visit our [Visual Studio](share-your-code-in-git-vs.md) or [command line](share-your-code-in-git-cmdline.md) getting started articles to learn how to create a local repo for your code and push it to Team Services.
+If you don't have your code in a VSTS or TFS Git repo, visit our [Visual Studio](share-your-code-in-git-vs.md) or [command line](share-your-code-in-git-cmdline.md) getting started articles to learn how to create a local repo for your code and push it to VSTS.
 
 <a name="clone"></a>
 
@@ -65,7 +65,7 @@ to find it or add a Team Foundation Server where the repo is hosted by selecting
 <li> Open the Team Services web portal in your browser and find your Git repository. 
 Copy the command line instructions from the **Clone** pop-up.   
 
-  ![Finding the Clone URL for your Git Repository in Visual Studio Team Services](_shared/_img/cloneURL.png)
+  ![Finding the Clone URL for your Git Repository in Visual Studio VSTS](_shared/_img/cloneURL.png)
 <li> Navigate to the folder where you want the code stored on your local computer using the command line.
 <li> From the command line, paste the command you copied from the command line instructions. It will look like this
 on the command prompt:
@@ -168,10 +168,10 @@ team, you complete the pull request through the web browser.
 <li> Open up the Team Services project in the web portal and browse to your repository under the "Code" tab. Click the **Create Pull Request** button to
 create a pull request for the branch that you pushed.   
 
-   ![Creating a new Pull Request in Visual Studio Team Services](_shared/_img/vstsCreatePullReq.png)   
+   ![Creating a new Pull Request in Visual Studio VSTS](_shared/_img/vstsCreatePullReq.png)   
 <li> Create the pull request, adding in team members to review and approve the code changes.
 
-<li> Once the changes are approved, complete the pull request in Visual Studio Team Services. 
+<li> Once the changes are approved, complete the pull request in Visual Studio VSTS. 
 This will pull your changes from the branch into the master branch of the code.
 </ol>
 </div></div></div>

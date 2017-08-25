@@ -6,14 +6,13 @@ description: Use Flowdock with your Visual Studio Team Services account
 ms.assetid: e7dbe2dd-2e40-4c2a-976f-9e4253b28e3e
 ms.manager: douge
 ms.author: elbatk
-ms.date: 02/14/2017 
 ms.topic: get-started-article
+ms.date: 08/24/2017 
 ---
 
-# Team Services notifications on Flowdock
+# Notifications and Flowdock
 
-Visual Studio Team Services can post messages to your flow in Flowdock
-so everyone will know when code has been pushed or checked in, 
+Post messages to your flow in Flowdock in response to events from Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). That way, everyone will know when code has been pushed or checked in, 
 a build has finished, or a work item has been created or updated.
 
 ## Set up a flow
@@ -42,17 +41,17 @@ a build has finished, or a work item has been created or updated.
 
 ## Use a service hook to push messages
 
-1. In Visual Studio Team Services, open your team project's administration page.
+1. In VSTS or TFS, open your team project's administration page.
 
 1. Add a service hook.
 
    <img alt="Add service hook" src="./_img/flowdock/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 
-1. Choose Flowdock
+1. Choose Flowdock.
 
    <img alt="Flowdock selected in the service dialog box" src="./_img/flowdock/flowdock-service.png" style="border: 1px solid #CCCCCC" />
 
-1. Configure the Visual Studio Team Services event that will push a message to Flowdock. 
+1. Configure the VSTS or TFS event that will push a message to Flowdock. 
 
    <img alt="Configure event" src="./_img/flowdock/configure-event.png" style="border: 1px solid #CCCCCC" />
 

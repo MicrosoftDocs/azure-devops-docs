@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # View Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 The **view** command retrieves a specific version of a file to a temporary folder on your computer and displays it.
 
