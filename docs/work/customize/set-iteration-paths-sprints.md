@@ -1,34 +1,29 @@
 ---
 title: Customize iteration paths, sprint schedules | VSTS & TFS
-description: Assign work items to sprints, iterations, releases, or other time period by defining iteration paths (Visual Studio Team Services and Team Foundation Server)
+description: Define the iterations or sprints to use when assigning work items in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 08/10/2017
+ms.date: 08/25/2017
 ---
-
 
 
 # Define iteration paths (aka sprints) 
 
 <b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
-Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Whereas, [area paths](set-area-paths.md) allow you to group work items by team, product, or feature area.  
- 
-You define iteration paths for a team project. Teams can then choose which iteration paths are used to support their sprint backlog and other Agile tools. To understand how Agile tools use interation paths, see [Agile tools that rely on areas and iterations](../about-teams-and-settings.md).
 
-Newly created team projects contain a single, root area that corresponds to the team project name. Team projects typically specify a predefined set of iterations to help you get started tracking your work. All you need to do is specify the dates.  
+Newly created team projects contain a single, root area that corresponds to the team project name. Team projects typically specify a predefined set of iterations to help you get started tracking your work. All you need to do is specify the dates. 
 
-The iterations you see depend on the process you used to create your team project. Here we show the defaults defined for the Scrum process. No dates are set. You set dates to correspond to your sprint or release schedules.
+You add iteration paths under this root. To understand how the system uses area paths, see [About area and iteration paths](about-areas-iterations.md). 
 
- 
+
+  
 [!INCLUDE [temp](../_shared/image-differences.md)] 
 
-<img src="_img/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 2px solid #C3C3C3;" /> 
-  
 <a id="open-admin-context">  </a>
 ## Open the administration context for the team project  
 
@@ -42,7 +37,7 @@ To manage areas and iterations you need to be a project administrator or have th
 
 If you want to add area paths to support teams, you can do that when you [add teams to your team project](../scale/multiple-teams.md).  
 
-Certain [restrictions](#name-restrictions) apply on names of areas.  
+Certain [restrictions](about-areas-iterations.md#name-restrictions) apply on names of areas.  
 
 
 **VSTS**

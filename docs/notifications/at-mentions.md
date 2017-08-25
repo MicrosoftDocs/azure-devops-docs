@@ -7,19 +7,19 @@ ms.assetid:
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017
+ms.date: 08/24/2017
 ---
 
 
 # Use &#64;mentions to further discussion
-**Team Services | TFS 2017 | TFS 2015.2**
+**VSTS | TFS 2017 | TFS 2015.2**
 
 The **@mention** control allows you to quickly pull someone into a discussion.  The **#ID** control quickly links the object you're working in to a work item based on its ID.
 
 <a id="mention-person-id">  </a>
 
 >[!NOTE]    
-><b>Feature availability: </b>The **@mention**  control is currently supported from Team Services or the web portal for TFS 2015.2 and later versions. For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.    
+><b>Feature availability: </b>The **@mention**  control is currently supported from VSTS or the web portal for TFS 2015.2 and later versions. For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.    
 
 When leaving a code comment in a pull request, you can type **@** to trigger the **@mention** identity picker. From the identity selector, you'll see a list of those people that you have you've recently mentioned. You can choose one of those names or type in the name of the person you are looking for to perform a directory search.  
 

@@ -11,14 +11,13 @@ ms.date: 08/11/2017
 ---
 
 
-
 # Link work items using the #ID control
-**Team Services | TFS 2017 | TFS 2015.1**
+**VSTS | TFS 2017 | TFS 2015.1**
 
 <a id="mention-wit-id">  </a>
 
 >[!NOTE]  
-><b>Feature availability: </b>The **#ID** special control is currently supported from Team Services or the web portal for TFS 2015.1 or later versions.    
+><b>Feature availability: </b>The **#ID** special control is currently supported from VSTS or the web portal for TFS 2015.1 or later versions.    
 
 When leaving a code comment in a pull request, you can type **#** to trigger the **#ID** work item picker. The picker displays a list of 50 work items that you have recently modified or that are assigned to you. 
 
@@ -28,7 +27,11 @@ You can narrow the list of suggested work items by entering keywords that match 
 
 To further filter the list, continue entering keywords until you've found a match. You can enter up to five keywords.   
 
-## Team Services and TFS 2015.2 
+## Link to work items in pull requests, comments, and commits
+
+ 
+>[!NOTE]  
+><b>Feature availability: </b>The **#ID** special control has been extended to additional objects when working from VSTS and TFS 2015.2 and later versions.   
 
 You can also use the **#ID** control in pull request discussions, commit comments, changeset comments, and shelveset comments. 
 

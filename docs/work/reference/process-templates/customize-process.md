@@ -79,7 +79,7 @@ The primary use of process templates is to create a team project. For the Hosted
   
      Upgrading TFS to a later version uploads the latest versions of the default TFS process templates. To use the available updated templates and to access customizations that you made previously, you may need to add customizations provided with the new templates.  
   
--   If you're considering making extensive customizations, [review how the changes you make will impact maintenance and upgrade of your team projects](../../customize/customize-work.md#before-you-customize).  
+-   If you're considering making extensive customizations, [review how the changes you make will impact maintenance and upgrade of your team projects](../../customize/on-premises-xml-process-model.md#before-you-customize).  
   
 <a name="plan"></a> 
 ##  Process template files and functional areas you can customize  
@@ -200,7 +200,7 @@ When you add objects to a process template, you will want to make sure that you 
 - [XML element reference](../xml-element-reference.md)  
 - [Forum: Team Foundation Server – Process Templates](http://go.microsoft.com/fwlink/?LinkId=216461)    
   
-Sometimes third parties make available process templates that they've created. You may need to do extra work after a TFS upgrade when using a process template provided by a third-party as described [Customize your work tracking experience, Maintenance and upgrade implications (TFS)](../../customize/customize-work.md#before-you-customize).
+Sometimes third parties make available process templates that they've created. You may need to do extra work after a TFS upgrade when using a process template provided by a third-party as described [Customize your work tracking experience, Maintenance and upgrade implications (TFS)](../../customize/on-premises-xml-process-model.md#before-you-customize).
 
  
 ### Required permissions 

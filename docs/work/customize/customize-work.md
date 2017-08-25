@@ -29,12 +29,14 @@ Customizations you make occur at one of three levels:
 <a id="shared-resources"></a>
 ## Shared resources  
 
-Each team project provides a number of shared resources that support all teams added to the project. You configure these features through the user interface or the admin context of the web portal. 
+Each team project provides a number of shared resources that support all teams added to the project. You configure these features through the user interface or the admin context of the web portal. To understand how the system uses area and iteration paths, see [About area and iteration paths](about-areas-iterations.md). 
 
 |Area path pick lists | Sprint/iteration pick lists | 
 |-------------|----------| 
 |Change the [pick list of area paths](set-area-paths.md) to support grouping work items by team, product, or feature area.<br/>![Hierarchical area paths](../../_img/alm-feature-area-paths.png)|Change the [pick list of iteration paths](../scrum/define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team.<br/> ![Iterations or sprints](../../_img/alm-feature-define-sprints.png) |
  
+
+
 |Shared queries | Tags | 
 |-------------|----------| 
 |Open shared queries or create your own query using the query editor [to list work items or show hierarchical or dependent items](../track/using-queries.md).<br/> ![Shared queries](_img/customize-work-shared-queries-min.png) |[Add tags to work items](../track/add-tags-to-work-items.md) to filter backlogs and queries<br/>![Add tags to filter backlogs, boards, and queries](_img/alm-feature-tags.png) |   
@@ -150,9 +152,6 @@ The following table summarizes the differences between the three supported proce
 2. Hosted XML customization supports adding and updating global lists with a process update (subject to limits on maximum size of each list). To learn more, see [Work tracking object limits](object-limits.md).  
 
 
-
-
-
 <a id="access-permissions"></a>
 ## Grant or restrict access to work tracking tools  
 
@@ -167,25 +166,9 @@ Otherwise, to grant or restrict access to select features or functions, review o
 > |-------------|----------|---------|
 > |- [Add team members (VSTS)](../../accounts/add-team-members-vs.md)<br/>- [Add team members (TFS)](../scale/multiple-teams.md#add-team-members)<br/>- [Stakeholder access](../../security/change-access-levels.md)<br/>- [VS Enterprise & Advanced access level](../../security/change-access-levels.md) |- [Area path permissions](../how-to/set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>- [Process permissions](../process/manage-process.md#process-permissions)<br/>- [Work item query and folder permissions](../track/set-query-permissions.md)<br/>- [Dashboard permissions](../../report/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../scale/review-team-plans.md#plan-permissions)<br/>- [Tagging permissions](../../security/permissions.md#tags)<br/>- [Test permissions](../../security/permissions.md#project_test)<br/>- [Restrict access](../../accounts/restrict-access-tfs.md) | - [Alerts](../track/alerts-and-notifications.md)<br/>- [Area paths](set-area-paths.md)<br/>- [Iteration paths](set-iteration-paths-sprints.md)<br/>- [Queries](../track/using-queries.md)<br/>- [Tags](../track/add-tags-to-work-items.md) | 
   
-## Related notes
-
-Learn more about how to use work tracking to plan, manage, and monitor your projects:  
-
-- [Configure team settings](../scale/manage-team-assets.md) 
-
-### Additional options 
-Do you want to customize your tools in a way that's not supported?  
-
-Here are a few options available to you:  
-
-- Check out [Marketplace extensions](https://marketplace.visualstudio.com/VSTS) to see if there's a tool available for your purposes  
-- Determine if a [Service hook](../../service-hooks/index.md) will satisfy your needs  
-- Create your own tool using [REST APIs](https://visualstudio.com/integrate/api/overview)  
-- Add your feature request to our [Team Services user voice page](https://visualstudio.uservoice.com/forums/330519-team-services) page.      
-
 
 <a id="test-experience"></a>
-### Customize the test experience (TFS)  
+## Customize the test experience (TFS)  
 
 Several WITs support the test experience within the web portal Test hub and Test Manager client. You can customize these WITs as you would any other WIT. The following image illustrates the support link relationships.  
 
@@ -200,14 +183,14 @@ See the following resources for additional usage and customization information:
 - [Query based on build and test integration fields](../track/build-test-integration.md)
 
 <a id="person-name-field"></a>
-### Change the pick list for a person-name field  
+## Change the pick list for a person-name field  
 To add values for fields associated with user accounts such as **Assigned To** add users to a TFS security group or by restricting access to a group or set of users. By default, the list for the Assigned To field contains the account names for all users and groups that have been added to TFS. These accounts are often synchronized with Active Directory. See [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md). To limit the names of accounts in a list, see [Limit the number of names that appear in the Assigned To field](add-modify-field.md#limit-account-names). 
 
-### Less common customizations   
+## Less common customizations   
 You can only perform the following customizations when working with the Hosted XML or On-premises XML process models. The customizations made to process configuration apply to all teams added to the team project.  
 
 <a id="limits">  </a>
-#### Backlog and board limits (Hosted XML, On-premises XML) 
+### Backlog and board limits (Hosted XML, On-premises XML) 
 
 To limit the display load time to acceptable parameters, the task board is restricted to a maximum of 1000 work items. For details, see [Process configuration XML element reference](../reference/process-configuration-xml-element.md). 
 
@@ -219,7 +202,7 @@ You can increase this value up to a maximum of 1500 by specifying a value for th
  
 
 <a id="assign-fields">  </a>
-#### Change field assignments (Hosted XML, On-premises XML) 
+### Change field assignments (Hosted XML, On-premises XML) 
 
 You can change the work item fields that are used in calculating capacity, burndown charts, forecasting, and velocity. Any change you make to one of the default assignments should correspond to a change made to the WIT used to define and capture information for that value. 
 
@@ -236,94 +219,26 @@ The fields you assign are used by the following tools:
 | Capacity tools | Activity (Task Activity or Discipline) | 
 
 
-#### Use a team field (On-premises XML)  
+## Additional options 
+Do you want to customize your tools in a way that's not supported?  
 
-Do you want to organize your teams using a team field instead of the area path?  
+Here are a few options available to you:  
 
-If your organization has several teams that work from a common backlog and across many product areas, you might want to [customize the team project to support team fields](use-team-fields-instead-area-paths.md). This configuration will still allow teams to work independently, but work can be assigned to teams instead of by product area path.  
-
-
-<a id="before-you-customize"></a>
-### Maintenance and upgrade implications (TFS)
-Before you customize, you should understand how your customizations may impact your team project when you upgrade your application-tier server.  
-
-Upgrades to an on-premises TFS can introduce new features that require updates to the objects used to track work. These objects include work item types, categories, and process configuration. Minimizing changes to the workflow for a WIT or the process configuration can help minimize the work you must do when you upgrade your TFS. 
-
-To minimize the amount of manual work you'll need to do after a TFS upgrade, understand which customizations support an easy update path and which do not. 
-
-
-
-#### Compatible for quick updating  
-
-With the following customizations, you can use the Configure Features Wizard to automatically apply any changes to your team project required for new features.
-
-<ul>
-<li>Fields: Add custom fields, customize a pick list, add or modify area and iteration paths, add rules to a field  </li>
-<li>WITs: Add custom WITs, change the form layout</li>
-<li>Categories: Add custom categories  </li>
-<li>Agile tools: Customize the columns on the Kanban board, customize the quick add panel  </li>
-<li>Office integration: Add or change how Project fields map to TFS fields   </li>
-</ul>
-
-To learn more about the Configure Features Wizard, see [Configure features after an upgrade](configure-features-after-upgrade.md).
-
-
-#### Compatible, but may require manual updates
-
-The Configure Features Wizard requires that specific work item types, workflow states, and fields exist in the team project. When you make the following customizations, you might need to modify your custom process for the wizard to run, or you might have to update your team project manually. 
-
-<ul>
-<li>Fields: Change attributes of an existing field, remove fields that are referenced in the process configuration </li>
-<li>WITs: Change the workflow </li>
-<li>Agile tools: Change the WITs defined for the Requirement Category, Task Category, or Feature Category.</li>
-<li>Agile tools: Change the metastate mapping defined in the process configuration.  </li>
-<li>Agile tools: Change a field specified for a ```TypeField``` in the process configuration.   </li>
-</ul>
-
-In addition, changes you make to WITs or the workflow could require updates to other artifacts provided with your process, such as Excel or SQL Server Reporting Services reports.
- 
-
-#### Customizations to avoid
-You should avoid making the following customizations because they can result in schema conflicts in the data warehouse or cause problems when updating team projects after a TFS upgrade. 
-
-*	Fields:  
-	*	Change the friendly name of a field (a field specified within a WIT definition file)  
-	*	Change one or more reporting attributes, or the attribute to synchronize person names with Active Directory of a default field  
-*	WITs: Rename or delete WITs 
-*	Categories: Change the name of default categories, or change the WITs specified within default categories  
-
-To learn more about reporting attributes, see [Add or modify work item fields to support reporting](http://msdn.microsoft.com/library/ee921481.aspx).
-
-#### Recommended practices  
-*	Identify the best options for customizing WITs that support your tracking requirements. When you change objects that track work items, you should identify how these changes will affect existing and future team projects.  
-*	Put processes and all XML definition files under version control. Do not deploy objects that you define but have not stored in a repository.  
-*	Test your customized objects just as you would test your software.  
-*	Minimize the number of custom fields that you introduce. Minimize the number of fields that you make reportable.   
-
-
+- Check out [Marketplace extensions](https://marketplace.visualstudio.com/VSTS) to see if there's a tool available for your purposes  
+- Determine if a [Service hook](../../service-hooks/index.md) will satisfy your needs  
+- Create your own tool using [REST APIs](https://visualstudio.com/integrate/api/overview)  
+- Add your feature request to our [Team Services user voice page](https://visualstudio.uservoice.com/forums/330519-team-services) page.   
 <!---
  
-<a id="field-reference">  </a>  
-### What is a field? How are field names used?  
 
-For descriptions and usage of each field defined for the core system processes&mdash;[Scrum, Agile, and CMMI system processes](../guidance/choose-process.md)&mdash;see [Work item field index](../guidance/work-item-field.md).  
+## Related notes
 
-#### Field names  
-A work item field name uniquely identifies each work item field. Make sure your field names fall within these guidelines:  
+Learn more about how to use work tracking to plan, manage, and monitor your projects:  
 
-- Field names must be unique within the account/project collection  
-- Field names must be 128 or fewer Unicode characters  
-- Field names can't contain any leading or trailing spaces, nor two or more consecutive spaces  
-- Field names must contain at least one alphabetic character  
-- Field names can't contain the following characters: ```.,;'`:~\/\*|?"&%$!+=()[]{}<>```.   
-
-Because custom fields are defined for the account collection, you can't add a custom field to a process with the same field name that you add to another inherited process.  
-
-#### Customization limits 
-When adding custom fields, note the following limits:  
-*   A maximum of 256 fields can be defined for each WIT  
-*   A maximum of 512 fields can be defined per process   
-*   
+- [Configure team settings](../scale/manage-team-assets.md) 
+   
+- 
+-   
 -->
 
 [add-team-members]: ../scale/multiple-teams.md#add-team-members
