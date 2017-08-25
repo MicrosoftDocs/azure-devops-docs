@@ -16,7 +16,8 @@
     href: /vsts/notifications/add-links-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
 - name: Tutorials
   items:
-  - name: Manage user stories (NEW)
+  - name: Follow work
+    href: /vsts/collaborate/follow-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Manage bugs
     href: /vsts/work/backlogs/manage-bugs?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Manage issues or impediments
@@ -27,11 +28,11 @@
     href: /vsts/work/backlogs/add-link?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Bulk modify (web)
     href: /vsts/work/backlogs/bulk-modify-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-  - name: Follow work
-    href: /vsts/collaborate/follow-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+  - name: Copy/clone work items
+    href: /vsts/work/backlogs/copy-clone-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
 - name: Concepts
   items:
-  - name: About permissions and access
+  - name: Permissions and access for work tracking
     href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: "Link types & link relationships"
     href: /vsts/work/track/link-work-items-support-traceability?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json toc.json 
@@ -110,8 +111,6 @@
     href: /vsts/work/track/add-tags-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Use work item templates
     href: /vsts/work/productivity/work-item-template?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
-  - name: Copy/clone work items
-    href: /vsts/work/backlogs/copy-clone-work-items.md
   - name: Go mobile
     href: /vsts/collaborate/mobile-work?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Email/print work items

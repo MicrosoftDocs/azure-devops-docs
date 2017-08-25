@@ -105,8 +105,15 @@ Based on the platform or version you use, you can perform the following tasks.
 - Apply templates to work items
 - Manage work item templates
  
+Prior to creating templates, consider how you and your team(s) will use the templates. If you'll be using several templates, determine a naming convention that will help users easily select the right template for their use. 
+
+If you want to use custom fields in your templates, define those fields prior to creating your templates. See [Customize a field for a process](../process/customize-process-field.md) for Team Services, and [Add or modify a field](../customize/add-modify-field.md) for on-premises TFS. 
+
+You can specify any number of fields you want, including ones that the user will change&mdash;such as Title or Description. If you want the work item assigned to a specific team, define the team Area Path as part of the template.  
+
+Once you have a template defined, you can share it via email or a dashboard. Copy the link to the template and paste it within a markdown widget or through the Welcome page. See [Markdown guidance](../../reference/markdown-guidance.md).  
+
 To learn more, see [Use templates to add and update work items](../productivity/work-item-template.md).  
- 
  
 
 ## Try this next 
