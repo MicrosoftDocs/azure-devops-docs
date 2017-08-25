@@ -76,7 +76,7 @@ A: Yes, you can create additional deployment slots in Azure Web Apps,
 and specify which slot to deploy your app to. If you do not specify a slot,
 the default **Production** slot is used. After you deploy, you can swap an
 app to a different slot using the **Azure App Service Manage** task. See
-[Swap deployment slots](../../build-release/apps/cd/deploy-webdeploy-webapps.md#swap-deployment-slots).
+[Swap deployment slots](../../build-release/apps/cd/howto-webdeploy-webapps.md#swapslots).
 
 You can use [task phases](../../build-release/concepts/process/phases.md)
 and the [**Manual Intervention**](../../build-release/concepts/process/phases.md#the-manual-intervention-task) task

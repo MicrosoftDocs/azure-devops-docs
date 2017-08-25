@@ -50,7 +50,7 @@ After you've run the build, you're ready to create a release definition to deplo
 
 * <a href="../cd/deploy-dacpac-sqlpackage.md"><img src="../../../tasks/deploy/_img/azure-sql-database-deployment-icon.png"/> Azure SQL Server</a>
 
-* <a href="../../cd/deploy-webdeploy-iis-deploygroups.md#database"><img src="../../../tasks/deploy/_img/sql-server-database-deployment-icon.png"/> SQL Server</a>
+* <a href="../../cd/howto-webdeploy-iis-deploygroups.md#database"><img src="../../../tasks/deploy/_img/sql-server-database-deployment-icon.png"/> SQL Server</a>
 
 ## Q&A
 

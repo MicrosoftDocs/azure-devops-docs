@@ -119,54 +119,7 @@ You're now ready to create a release, which means to start the process of runnin
 
 ## Next steps
 
-### Dynamically create and remove a deployment group
-
-You can create and remove deployment groups dynamically if you prefer by using
-the [Azure Resource Group Deployment task](https://aka.ms/argtaskreadme)
-to install the agent on the machines in a deployment group using ARM templates.
-See [Provision deployment group agents](../../concepts/definitions/release/deployment-groups/howto-provision-deployment-group-agents.md).  
-
-### Environment specific configuration
-
-If you deploy releases to multiple environments, you can substitute configuration settings in **Web.config** and other configuration files of your website using these steps:
-
-1. Define environment-specific configuration settings in the **Variables** tab of an environment in a release definition; for example,
-   `<connectionStringKeyName> = <value>`.
-
-1. In the **IIS Web App Deploy** task, select the checkbox for **XML variable substitution** under **File Transforms and Variable Substitution Options**.
-
-   > If you prefer to manage environment configuration settings in
-   your own database or Azure keyvault, add a task to the environment to read and emit those values using
-   `##vso[task.setvariable variable=connectionString;issecret=true]<value>`.
-
-   > At present, you cannot apply a different configuration to individual IIS servers.
-
-### Safe rolling deployment
-If your deployment group consists of many IIS target servers, you can deploy to a subset of servers at a time.
-This ensures that your application is available to your customers at all times.
-Simply select the **Run on machine group** phase and select the option to deploy to **1/2 of the targets in parallel**.
-You can also choose other rolling options for your deployment.
-
-<h3 name="database">Database deployment</h3>
-
-To deploy a database with your app:
-
-1. Add both the IIS target servers and database servers to your deployment group. Tag all the IIS servers as `web` and all database servers as `database`.
-
-1. Add two machine group phases to environments in the release definition, and a task in each phase as follows:
-
-   **First [Run on deployment group phase](../../concepts/process/phases.md)** for configuration of web servers.
-   
-   - **Deployment group**: Select the deployment group you created earlier.
-   
-   - **Machine tags**: `web`<p />
-   
-   Then add an **IIS Web App Deploy** task to this phase.
-   
-   **Second [Run on deployment group phase](../../concepts/process/phases.md)** for configuration of database servers.
-   
-   - **Deployment group**: Select the deployment group you created earlier.
-   
-   - **Machine tags**: `database`<p />
-   
-   Then add a **SQL Server Database Deploy** task to this phase.
+* [Dynamically create and remove a deployment group](howto-webdeploy-iis-deploygroups.md#depgroup)
+* [Apply environment-specific configurations](howto-webdeploy-iis-deploygroups.md#envirconfig)
+* [Perform a safe rolling deployment](howto-webdeploy-iis-deploygroups.md#rolling)
+* [Deploy a database with your app](howto-webdeploy-iis-deploygroups.md#database)
