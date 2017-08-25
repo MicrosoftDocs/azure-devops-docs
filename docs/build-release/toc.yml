@@ -21,7 +21,7 @@
     - name: Azure web app
       href: apps/cd/deploy-webdeploy-webapps.md
     - name: Windows VM
-      href: apps/cd/azure/deploy-provision-azure-vm.md
+      href: apps/cd/deploy-webdeploy-iis-deploygroups.md
 - name: Tutorials
   items:
   - name: CI builds for Git in VSTS
