@@ -184,26 +184,26 @@
     items:
     - name: NuGet
       items:
-      - name: Use NuGet with Team Services
-        href: /vsts/package/nuget/nuget-exe.md
-      - name: Use dotnet with Team Services
-        href: /vsts/package/nuget/dotnet-exe.md
+      - name: Use NuGet with VSTS
+        href: /vsts/package/nuget/nuget-exe.md?toc=/vsts/build-release/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
+      - name: Use dotnet with VSTS
+        href: /vsts/package/nuget/dotnet-exe.md?toc=/vsts/build-release/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
       - name: Set up a multi-developer environment
-        href: /vsts/package/nuget/bootstrap-nuget.md
+        href: /vsts/package/nuget/bootstrap-nuget.md?toc=/vsts/build-release/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
       - name: Set up Jenkins + NuGet
-        href: /vsts/package/build/jenkins.md
+        href: /vsts/package/build/jenkins.md?toc=/vsts/build-release/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
     - name: npm
       items:
       - name: Install an npm package
-        href: /vsts/package/npm/install.md
+        href: /vsts/package/npm/install.md?toc=/vsts/build-release/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
     - name: Maven
       items:
       - name: Install a Maven project
-        href: /vsts/package/maven/install.md
+        href: /vsts/package/maven/install.md?toc=/vsts/build-release/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
     - name: Gradle
       items:
       - name: Pull a Gradle package and build
-        href: /vsts/package/gradle/pull-package-gradle.md
+        href: /vsts/package/gradle/pull-package-gradle.md?toc=/vsts/build-release/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
   - name: Use Release Management
     items:
     - name: Releases and deployments

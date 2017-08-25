@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Package Management
 
-Host your NuGet, npm, and Maven packages in **VSTS** and **Team Foundation Server 2017 Update 1** using Package Management feeds. 
+Host your NuGet, npm, and Maven packages in **Visual Studio Team Services (VSTS)** and **Team Foundation Server 2017 Update 1** using Package Management feeds. 
 
 ## 5-Minute Quickstarts 
 
