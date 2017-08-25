@@ -34,8 +34,8 @@
     href: /vsts/security/set-build-release-permissions?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: Set permissions and access for work tracking
     href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
-  - name: Add TFS server-level administrators  
-    href: /vsts/accounts/add-administrator-tfs?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
+  - name: "Set permissions for READMEs & Wikis"
+    href: /vsts/collaborate/manage-readme-wiki-permissions?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: Add accounts using streamlined user management (VSTS)
     href: /vsts/accounts/add-account-users-from-user-hub?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: Add a user to a team project  
@@ -46,6 +46,8 @@
     href: change-access-levels.md  
   - name: Restrict access to resources
     href: /vsts/accounts/restrict-access-tfs?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
+  - name: Add TFS server-level administrators  
+    href: /vsts/accounts/add-administrator-tfs?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Permission lookup guide 

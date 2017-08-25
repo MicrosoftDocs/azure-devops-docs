@@ -14,18 +14,6 @@ ms.date: 08/04/2017
 
 **VSTS | TFS 2017 | TFS 2015 | TFS 2013** 
 
-!!! WORK IN PROGRESS !!! 
-
-<!--- TO BE COMPLETED  ---> 
-
-* Update to show latest guidance for VSTS 
-* Show how to view permissions at the team project level
-* Indicate how to view permissions at the object and collection level
-* Provide links to other salient topics   
-
-!!! WORK IN PROGRESS !!! 
-
-
 You can view your permissions or those defined for another. That way, if you don't have the permission to access a feature or function, you can request it from the right resource. 
 
 Permissions are set at the collection, team project, and object level as described in [About permissions and groups](about-permissions.md).  So to view the permissions you have, you need to open the permissions at the object, project, or collection level. 

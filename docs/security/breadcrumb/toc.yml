@@ -7,5 +7,5 @@
     topicHref: /vsts/index#pivot=services&panel=admin
     items:
     - name: "Security & Identity"
-      tocHref: /vsts/security/
+      tocHref: /vsts/
       topicHref: /vsts/security/index

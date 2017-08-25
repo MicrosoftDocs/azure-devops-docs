@@ -11,13 +11,7 @@ ms.date: 08/14/2017
 
 # Set build and release permissions 
 
-**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
-
-!!! WORK IN PROGRESS !!! 
-
-Include a link to a topic on how to add a user or group to the Security space.
-
-!!! WORK IN PROGRESS !!! 
+**VSTS** | **TFS 2017**
 
 Permissions for build and release functions are set at the object-level for a specific build or release. In addition, there are build permissions set at the  collection level. You grant or restrict permissions by setting the permission state to Allow or Deny, either for a security group or an individual user. 
 
