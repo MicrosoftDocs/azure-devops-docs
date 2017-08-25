@@ -164,6 +164,10 @@
       href: troubleshooting.md
   - name: Configure/manage CD
     items:
+    - name: Extend App Services deployments
+      href: apps/cd/howto-webdeploy-webapps.md
+    - name: Extend IIS Server deployments
+      href: apps/cd/howto-webdeploy-iis-deploygroups.md
     - name: Debug deployment issues
       href: actions/debug-deployment-issues.md
     - name: Run SCVMM scripts for managing VMs
