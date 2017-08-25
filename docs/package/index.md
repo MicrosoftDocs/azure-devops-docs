@@ -9,9 +9,9 @@ ms.author: amullans
 ms.date: 08/10/2016
 ---
 
-# Package Management in Team Services and TFS
+# Package Management
 
-Host your NuGet, npm, and Maven packages in **Team Services** and **Team Foundation Server 2017 Update 1** using Package Management feeds. 
+Host your NuGet, npm, and Maven packages in **VSTS** and **Team Foundation Server 2017 Update 1** using Package Management feeds. 
 
 ## 5-Minute Quickstarts 
 
@@ -21,18 +21,10 @@ Host your NuGet, npm, and Maven packages in **Team Services** and **Team Foundat
 
 ## How-To Guides
 
-<<<<<<< HEAD
-- [Publish a NuGet package]()
-- [Publish an npm package]()
-- [Publish a Maven package]()
-- [Publish a Gradle package]()
-- 
-=======
 - [Publish a NuGet package](nuget/publish.md)
 - [Publish an npm package](npm/publish.md)
 - [Publish a Maven package](maven/publish.md)
 - [Publish a Gradle package](gradle/publish-package-gradle.md)
->>>>>>> 979202d5f20526d08970a01d560977e110ae3a87
 
 ## Resources
 
