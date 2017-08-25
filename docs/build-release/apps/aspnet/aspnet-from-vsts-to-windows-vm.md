@@ -29,7 +29,7 @@ You create the virtual machine using Azure Powershell, and then you set up CI/CD
 
 ![Screenshot showing ASP.NET web app](_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-sample.png)
 
-[!INCLUDE [temp](../get-started/_shared/vsts-and-azure-setup.md)]
+[!INCLUDE [temp](../_shared/vsts-and-azure-setup.md)]
 
 On your dev machine, you need Azure PowerShell module version 4.0 or newer. See [Install and configure Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-4.2.0). 
 
@@ -37,13 +37,13 @@ On your dev machine, you need Azure PowerShell module version 4.0 or newer. See 
 
 [!INCLUDE [temp](../../../deploy-azure/_shared/create-deployment-group.md)]
 
-[!INCLUDE [temp](../get-started/_shared/import-code-1.md)]
+[!INCLUDE [temp](../_shared/import-code-1.md)]
 
 ```bash
 https://github.com/adventworks/aspnet4-sample
 ```
 
-[!INCLUDE [temp](../get-started/_shared/import-code-2.md)]
+[!INCLUDE [temp](../_shared/import-code-2.md)]
 
 [!INCLUDE [temp](../_shared/set-up-ci-1.md)]
 
@@ -100,4 +100,4 @@ http://<publicIpAddress>
 
 **Congratulations!** You've deployed changes to your application using CI/CD.
 
-[!INCLUDE [temp](../get-started/_shared/clean-up-resources.md)]
+[!INCLUDE [temp](../_shared/clean-up-resources.md)]

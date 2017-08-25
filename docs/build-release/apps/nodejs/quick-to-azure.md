@@ -22,37 +22,37 @@ In the CI process, you use Gulp to run Mocha tests.
 
 ![node.js web app](_img/nodejs-web-app.png)
 
-[!INCLUDE [temp](../../apps/get-started/_shared/vsts-and-azure-setup.md)]
+[!INCLUDE [temp](../_shared/vsts-and-azure-setup.md)]
 
-[!INCLUDE [temp](../../apps/_shared/create-azure-web-app.md)]
+[!INCLUDE [temp](../_shared/create-azure-web-app.md)]
 
-[!INCLUDE [temp](../../apps/get-started/_shared/import-code-1.md)]
+[!INCLUDE [temp](../_shared/import-code-1.md)]
 
 ```bash
 https://github.com/adventworks/nodejs-sample
 ```
 
-[!INCLUDE [temp](../../apps/get-started/_shared/import-code-2.md)]
+[!INCLUDE [temp](../_shared/import-code-2.md)]
 
-[!INCLUDE [temp](../../apps/_shared/set-up-ci-1.md)]
+[!INCLUDE [temp](../_shared/set-up-ci-1.md)]
 
 In the right panel, search for `node`, select **NodeJS with Gulp**, and then click **Apply**.
 
  ![apply node.js gulp template](_img/apply-nodejs-gulp-template.png)
 
-[!INCLUDE [temp](../../apps/_shared/set-up-ci-2.md)]
+[!INCLUDE [temp](../_shared/set-up-ci-2.md)]
 
 Select the **Run gulp task** from the tasks. On the right side, you see the parameters for the task. Under the section **JUnit Test Results**, select the option to **Publish to TFS/VSTS**.
 
-[!INCLUDE [temp](../../apps/_shared/set-up-ci-3.md)]
+[!INCLUDE [temp](../_shared/set-up-ci-3.md)]
 
-[!INCLUDE [temp](../../apps/_shared/set-up-cd-1.md)]
+[!INCLUDE [temp](../_shared/set-up-cd-1.md)]
 
 ![Screenshot showing update to code](./_img/cicd-get-started-nodejs-build-summary.png)
 
-[!INCLUDE [temp](../../apps/_shared/set-up-cd-2.md)]
+[!INCLUDE [temp](../_shared/set-up-cd-2.md)]
 
-[!INCLUDE [temp](../../apps/_shared/set-up-cd-3.md)]
+[!INCLUDE [temp](../_shared/set-up-cd-3.md)]
 
 ## Update to redeploy the code
 
@@ -72,6 +72,6 @@ res.send('Demo of CI/CD!!');
 
 Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure web app.
 
-[!INCLUDE [temp](../../apps/get-started/_shared/browse-to-web-app.md)]
+[!INCLUDE [temp](../_shared/browse-to-web-app.md)]
 
-[!INCLUDE [temp](../../apps/get-started/_shared/clean-up-resources.md)]
+[!INCLUDE [temp](../_shared/clean-up-resources.md)]

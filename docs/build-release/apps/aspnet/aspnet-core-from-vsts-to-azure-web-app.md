@@ -28,19 +28,19 @@ You create the web app using the Azure CLI, then set up CI/CD in VSTS.
 
 ![Screenshot showing ASP.NET Core web app](../../../deploy-azure/_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
-[!INCLUDE [temp](../../apps/get-started/_shared/vsts-and-azure-setup.md)]
+[!INCLUDE [temp](../_shared/vsts-and-azure-setup.md)]
 
 [!INCLUDE [temp](../_shared/create-azure-web-app.md)]
 
-[!INCLUDE [temp](../../apps/get-started/_shared/import-code-1.md)]
+[!INCLUDE [temp](../_shared/import-code-1.md)]
 
 ```bash
 https://github.com/adventworks/dotnetcore-sample
 ```
 
-[!INCLUDE [temp](../../apps/get-started/_shared/import-code-2.md)]
+[!INCLUDE [temp](../_shared/import-code-2.md)]
 
-[!INCLUDE [temp](../../apps/_shared/set-up-ci-1.md)]
+[!INCLUDE [temp](../_shared/set-up-ci-1.md)]
 
 In the right panel, select **ASP.NET Core**, and then click **Apply**.
 
@@ -71,6 +71,6 @@ Add the following line of text above the carousel display in the page:
 
 Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure web app.
 
-[!INCLUDE [temp](../../apps/get-started/_shared/browse-to-web-app.md)]
+[!INCLUDE [temp](../_shared/browse-to-web-app.md)]
 
-[!INCLUDE [temp](../../apps/get-started/_shared/clean-up-resources.md)]
+[!INCLUDE [temp](../_shared/clean-up-resources.md)]

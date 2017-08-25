@@ -109,7 +109,7 @@
   - name: Build your app
     items:
     - name: .NET for Windows
-      href: apps/get-started/dot-net.md
+      href: apps/windows/dot-net.md
     - name: C++
       href: apps/windows/cpp.md
     - name: Xamarin
