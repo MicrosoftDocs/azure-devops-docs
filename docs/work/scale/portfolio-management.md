@@ -1,5 +1,5 @@
 ---
-title: Portfolio management | Team Services & TFS 
+title: Portfolio management | VSTS & TFS 
 description: Configure teams to support portfolio backlogs to track progress across teams in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -78,7 +78,7 @@ Here, all backlog items have been assigned to feature teams. While all features 
 <img src="_img/pm-items-assigned-from-common-backlog.png" alt="Backlog view-Items assigned from a common backlog" style="border: 2px solid #C3C3C3;" />
 
 >[!TIP]    
->You can multi-select work items and perform a bulk edit of the area path. In Visual Studio Team Services you can do this from any backlog. From on-premises TFS, you can create a backlog query and [perform bulk updates from the query results](../backlogs/bulk-modify-work-items.md).    
+>You can multi-select work items and perform a bulk edit of the area path. In VSTS you can do this from any backlog. From on-premises TFS, you can create a backlog query and [perform bulk updates from the query results](../backlogs/bulk-modify-work-items.md).    
 
 
 <a id="set_up"></a>

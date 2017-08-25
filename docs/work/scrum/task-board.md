@@ -1,5 +1,5 @@
 ---
-title: Task board | Team Services & TFS  
+title: Task board | VSTS & TFS  
 description: How to implement Scrum when working with the sprint task board in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm 
@@ -110,7 +110,7 @@ At the end of the sprint, you'll want to perform these final tasks:
 Dragging an incomplete item to the product backlog or to a future sprint updates the Iteration Path of all uncompleted child tasks to correspond to the product backlog iteration path or future sprint.   
 
 >[!TIP]
->If you work from Team Services or TFS 2015.1 and later versions, you can 
+>If you work from VSTS and TFS 2015.1 and later versions, you can 
 >[drag-and-drop work items onto a sprint from any backlog or board](define-sprints.md#drag-drop-to-sprint). 
 
 ##Try this next
@@ -161,7 +161,7 @@ If you exceed the number of items allowed on your task board, you'll receive a m
 
 You can reduce the number of items on the task board by moving them to the backlog or another sprint. When you move a parent PBI or user story, all active child tasks (State not equal to Done or Closed) automatically move with the parent item. 
 
-**Team Services and TFS 2015.1 and later versions:**
+**VSTS and TFS 2015.1 and later versions:**
 
 - From the task board, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.  
 - From the sprint backlog, multi-select the items to move and then click the context menu for an item and select the iteration to move them to.  

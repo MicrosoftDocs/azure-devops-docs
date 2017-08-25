@@ -308,11 +308,11 @@ Additional test management permissions are assigned at the team project level an
 
 Stakeholder access supports business owners and analysts and other team members who don't contribute to code, build, and test activities. They contribute by adding ideas to the backlog, adding context and information to work items, and reviewing status and progress. All members of an organization who don't use Visual Studio but want to contribute to work item tracking and monitor progress can be assigned as a stakeholder. 
 
-Stakeholder access provides free access to Team Services and to on-premises TFS team projects. Stakeholders don't have to have a client access license (CAL). This view restricts functionality so that your organization complies with the end-user license agreement for Team Foundation Server. For more information, see [Visual Studio licensing white paper](http://go.microsoft.com/fwlink/?LinkId=255102).  
+Stakeholder access provides free access to VSTS and to on-premises TFS team projects. Stakeholders don't have to have a client access license (CAL). This view restricts functionality so that your organization complies with the end-user license agreement for Team Foundation Server. For more information, see [Visual Studio licensing white paper](http://go.microsoft.com/fwlink/?LinkId=255102).  
 
 Only account owners or members of the [Team Foundation Server Administration group](../accounts/add-administrator-tfs.md) can add accounts to get Stakeholder access. For information on adding stakeholder accounts:  
 
-   **Team Services:**&#160;&#160;[Add users in Visual Studio Team Services](../accounts/add-account-users-assign-access-levels.md)  
+   **VSTS:**&#160;&#160;[Add users in Visual Studio Team Services](../accounts/add-account-users-assign-access-levels.md)  
    **On-premises TFS:**&#160;&#160;[Change access levels](../security/change-access-levels.md)  
 
 With stakeholder access, anyone on your team can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to project plans by adding and modifying work items.  
@@ -351,6 +351,6 @@ For a simplified view of permissions assigned to built-in groups, see [Permissio
 For a complete reference of all built-in groups and permissions, see [Permissions and groups](../security/permissions.md). 
 
 For information about assigning access levels and supporting stakeholder access, see: 
-- **Team Services**: [Add users and assign licenses in Visual Studio Team Services](../accounts/add-account-users-assign-access-levels.md)
+- **VSTS**: [Add users and assign licenses in Visual Studio Team Services](../accounts/add-account-users-assign-access-levels.md)
 - **TFS**: [Change access levels](../security/change-access-levels.md)  
 

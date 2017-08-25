@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Share your code in TFVC using Xcode
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Share your Xcode projects in Visual Studio Team Services using a TFVC repository by using the Git-tf command line tool to push your changes from the local Git repotory to TFVC.
 
@@ -62,7 +62,7 @@ Share your Xcode projects in Visual Studio Team Services using a TFVC repository
     git tf checkin
     ```
 
-    If you've committed multiple changes locally, you'll still get just one changeset in Visual Studio Team Services.
+    If you've committed multiple changes locally, you'll still get just one changeset in VSTS.
 
 2. Resolve a bug or close a task when you check in by providing the work item ID with the resolve flag.
 
@@ -72,7 +72,7 @@ Share your Xcode projects in Visual Studio Team Services using a TFVC repository
 
     The changeset and the work item are linked, and you'll be able to see which bugs are resolved and which tasks were completed in the build reports.
 
-3. You can make sure you're working with your team's latest code by pulling from Visual Studio Team Services.
+3. You can make sure you're working with your team's latest code by pulling from VSTS.
 
     ```
     git tf pull

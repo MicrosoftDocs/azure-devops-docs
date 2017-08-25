@@ -1,5 +1,5 @@
 ---
-title: Update the workflow for agile team projects | Team Services & TFS
+title: Update the workflow for agile team projects | VSTS & TFS
 description: Update the workflow for agile team projects to manually update the user story and task workflow assignments.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

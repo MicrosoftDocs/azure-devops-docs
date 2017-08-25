@@ -12,40 +12,39 @@ ms.date: 08/04/2017
 
 ## View permissions for yourself or others  
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013** 
-
-!!! WORK IN PROGRESS !!! 
-
-<!--- TO BE COMPLETED  ---> 
-
-* Update to show latest guidance for VSTS 
-* Show how to view permissions at the team project level
-* Indicate how to view permissions at the object and collection level
-* Provide links to other salient topics   
-
-!!! WORK IN PROGRESS !!! 
-
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013** 
 
 You can view your permissions or those defined for another. That way, if you don't have the permission to access a feature or function, you can request it from the right resource. 
 
-Permissions are set at the collection, team project, and object level as described 
+Permissions are set at the collection, team project, and object level as described in [About permissions and groups](about-permissions.md).  So to view the permissions you have, you need to open the permissions at the object, project, or collection level. 
 
-1.  Open the administrative context for your team project. ![Settings icon](../_img/icons/admin-gear-icon.png)
+> [!NOTE]   
+> This topic shows how to view permissions assigned to a user as the project-level. However, the steps are similar whether you work from the Security dialog of an object or at the account/collection level. 
+ 
+## View project-level permissions 
 
-2.  In the **Security** tab, under users, find your own name,
-and look at what groups you belong to and what permissions you have.
+0. Open the admin context from the user/team project context. Click the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and click the **Security** tab. 
 
-3.  If you aren't a project administrator, you need to be. Find someone who is, and have them add you:
+0. Begin typing the name into the *Filter users and groups* box. The system will automatically show the names that being with the characters you type.  
 
-    ![You can add more than one person at a time](_img/add-user.png)
+	<img src="_img/view-permissions-search-user-name.png" alt="Find a user account name" style="border: 2px solid #C3C3C3;" />  
 
-4.  If you need to make changes at the team level, change your context to the team overview.
-If you aren't a team administrator, you can add yourself if you're already a project administrator. Otherwise, have someone add you.
+0. Click the name you want. The project-level permissions you have set are based on the groups you belong to or those specifically set for your account.      
 
-    ![Team administrators](_img/add-team-administrator.png)
+	<img src="_img/view-permissions-project-level.png" alt="Web portal, Security tab, Project Administrators Group, Members tab" style="border: 2px solid #C3C3C3;" />   
 
-5.  Similarly, if you need to add users to SharePoint Products or SQL Server Reporting Services,
-make sure that you have the required permissions.
+0. Click **Member of** to see which security groups the user belongs to.  
+
+	Here we see that the user account, Jamal Hartnett, belongs to several teams as well as the Project Collection Administrators group. 
+
+	<img src="_img/view-permissions-member-of.png" alt="Web portal, Security tab, User name, Members tab" style="border: 2px solid #C3C3C3;" />    
+
+## Determine who is a member of the Project Administrators group   
+
+If you aren't a project administrator, and you need to be, find someone who is, and have them add you. You can find who is a member of the Project Administrators group by clicking on that group and seeing who are members. 
+ 
+<img src="_img/view-permissions-project-level-membership.png" alt="Web portal, Security tab, Project Administrators Group, Members tab" style="border: 2px solid #C3C3C3;" />
+
 
 ## Related notes
 

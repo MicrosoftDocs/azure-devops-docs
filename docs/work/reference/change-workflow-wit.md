@@ -1,5 +1,5 @@
 ---
-title: Change the workflow for a work item type | Team Services & TFS
+title: Change the workflow for a work item type | VSTS & TFS
 description: Add States, Transitions, Reasons, or Actions to customize the workflow for a WIT in Team Foundation Server 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -295,4 +295,4 @@ You control the states to and from which team members can change a work item if 
 
 You can change the workflow or view the workflow state diagram that you are defining by using the Process Editor, available for TFS 2015 and earlier versions. You install it from [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power).
   
-You can support your users to visualize the workflow by installing the [State Model Visualization extension](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) from the Visual Studio Marketplace. This tool supports both TFS and Team Services. 
+You can support your users to visualize the workflow by installing the [State Model Visualization extension](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) from the Visual Studio Marketplace. This tool supports both TFS and VSTS. 

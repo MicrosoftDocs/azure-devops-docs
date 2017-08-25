@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Configure Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Enables an administrator to view and change the following configuration settings for a team project in the **Source Control Settings** dialog box:
 

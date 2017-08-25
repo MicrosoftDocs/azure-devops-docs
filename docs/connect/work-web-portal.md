@@ -12,7 +12,7 @@ ms.date: 08/11/2017
 
 # Navigating in the web portal
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**  
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013**  
 
 The web portal provides support for teams to collaborate through the planning, development, and release cycles. You use the web portal to perform both software development and administrative tasks.  
 
@@ -21,17 +21,17 @@ You can manage source code, plan and track work, define builds, run tests, and m
 If you don't have a team project yet, create one in [Visual Studio Team Services](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members).
 
 >[!NOTE]  
->The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to Team Services or your on-premises TFS and [options that you or your admin have enabled](../collaborate/preview-features.md). However, the basic functionality available to you remains the same unless explicitly mentioned.  
+>The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to VSTS or your on-premises TFS and [options that you or your admin have enabled](../collaborate/preview-features.md). However, the basic functionality available to you remains the same unless explicitly mentioned.  
 
 <img src="_img/web-portal-intro.png" alt="Code, Pull Request, Active example" style="border: 1px solid #CCCCCC;" />
 
 
 >[!NOTE]  
->**Feature availability**: The features available to you depend on the platform (Team Services or on-premises TFS), TFS version, features enabled for your team project or collection, and your access level. New features are deployed regularly to Team Services. Many of these features are then made available to [on-premises TFS through regular updates](https://www.visualstudio.com/articles/news/features-timeline).  
+>**Feature availability**: The features available to you depend on the platform (VSTS or on-premises TFS), TFS version, features enabled for your team project or collection, and your access level. New features are deployed regularly to Team Services. Many of these features are then made available to [on-premises TFS through regular updates](https://www.visualstudio.com/articles/news/features-timeline).  
 
 To get started, from a [supported web browser](../accounts/requirements.md#browsers) enter the following URL:
 
-**Team Services:**
+**VSTS:**
 	<pre><code>https://<i>AccountName</i>.visualstudio.com/DefaultCollection/<i>ProjectName</i> </code></pre>
 
 **TFS (on-premises):**   
@@ -42,7 +42,7 @@ To get started, from a [supported web browser](../accounts/requirements.md#brows
 >For TFS, the TFS administrator can configure the following elements: protocol (*https* vs *http*), port (*8080*), virtual directory (*tfs*), and collection name (*DefaultCollection*) (See [Web site settings and security](../security/websitesettings.md).) For example, a deployment configured on port 443 with no vdir, an FQDN, and a custom collection name might look like: *https://tfs.contoso.com/CustomCollection/ProjectName*. If the above pattern doesn't work for you, check with your TFS administrator.    
  
 
-The web portal is one of several clients that can connect to a team project. Different clients support different features and functions. For a list of all clients that connect to Team Services or TFS, see [Tools and clients that connect to Team Services and TFS](../tools.md). 
+The web portal is one of several clients that can connect to a team project. Different clients support different features and functions. For a list of all clients that connect to VSTS or TFS, see [Tools and clients that connect to Team Services and TFS](../tools.md). 
 
 <a id="nav-concepts">  </a>
 ## Navigational concepts  
@@ -51,7 +51,7 @@ There are three main navigational concepts to understand. The first is the colle
 
 <a id="collection-project-team-structure">  </a>
 ### Collection-project-team structure
-When you connect to Team Services or an on-premises TFS, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system.
+When you connect to VSTS or an on-premises TFS, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system.
 
 When you create your team project, a team of the same name is automatically created. For small teams, this is sufficient.  
 
@@ -90,10 +90,10 @@ You and other team members use the user context to collaborate, plan, and build 
 <a id="user-context-id" />
 
 <a id="team-services-user-context" /> 
-**Team Services, TFS 2017.2**  
+**VSTS, TFS 2017.2**  
 Click any hub to open that hub. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. To access administrative options, click the ![gear icon](_img/work-tfs-web-portal/IC623347.png) gear Settings icon or choose the admin level you want from the drop-down menu.  
 
-<img src="_img/wwp-user-context-team-services.png" alt="Team Services, User context hubs" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/wwp-user-context-team-services.png" alt="VSTS, User context hubs" style="border: 1px solid #CCCCCC;" /> 
  
 **TFS 2017, TFS 2017.1 **  
 <a id="tfs-2017-user-context" /> 
@@ -105,7 +105,7 @@ Click any hub to open that hub. Hover your mouse over a hub to access a drop-dow
 
 <!---
 <a id="ts-account-off-user-context" /> 
-**Team Services, TFS 2017.1**  
+**VSTS, TFS 2017.1**  
 Click any hub to open that hub. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. To access administrative options, click the ![gear icon](_img/work-tfs-web-portal/IC623347.png) gear Settings icon or choose the admin level you want from the drop-down menu.  
 
 <img src="_img/wwp-user-context-tfs-2017-1.png" alt="Team Services-Account Landing Off, User context hubs" style="border: 1px solid #CCCCCC;" /> 
@@ -132,15 +132,15 @@ To learn more about each administrative context level, see the [Administrative c
 
 Several features display information based on the logged-in user account or the selected team context. First off, users can [set their preferences](../accounts/account-preferences.md) through their profile or account menu:
 
-<img src="../accounts/_img/account-prefs/open-profile-team-services.png" alt="Team Services, My Profile link on Account menu" style="border: 1px solid #CCCCCC;" />   
+<img src="../accounts/_img/account-prefs/open-profile-team-services.png" alt="VSTS, My Profile link on Account menu" style="border: 1px solid #CCCCCC;" />   
 
 In addition, they have access to special queries&mdash;Assigned to me query, Followed work items, and more&mdash; dashboard widget such as the Assigned to me widget, and the ability to save favorites under a **My favorites** folder. Here's an example of the Assigned to me widget that you can add to a dashboard. 
 
-<img src="_img/web-portal-assigned-to-me-widget.png" alt="Team Services, web portal, user profile/account menu" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/web-portal-assigned-to-me-widget.png" alt="VSTS, web portal, user profile/account menu" style="border: 1px solid #CCCCCC;" /> 
 
 
 >[!NOTE]  
->If you work in Team Services, you can also use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](account-home-pages.md).     
+>If you work in VSTS, you can also use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](account-home-pages.md).     
 
 
 <a id="team-scoped-features">  </a>
@@ -206,11 +206,11 @@ Below we show the admin context for the team project level.
 <a id="admin-intro" />
 
 <a id="admin-intro-team-services" />  
-**Team Services, TFS 2017.2** 
+**VSTS, TFS 2017.2** 
 
 Open any admin page by clicking it's name. Click or hover over the gear icon to access other administrative options. Note that you can click any of the user-context hubs of **Home**, **Code**, **Work**, and so on to return to the user context. 
 
-<img src="_img/work-web-portal_admin-context-project-level-team-services.png" alt="Team Services, Admin context, team project level" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/work-web-portal_admin-context-project-level-team-services.png" alt="VSTS, Admin context, team project level" style="border: 1px solid #CCCCCC;" />  
 
 
 
@@ -320,11 +320,11 @@ To return to a team or project user context, select the team or project from the
 
 To connect to the web portal, you need your user account added to the team project. This is typically done by the [account owner (Team Services)](../accounts/add-account-users-assign-access-levels.md) or a [project administrator (TFS)](../accounts/add-users.md).
 
-For Team Services, five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users (Team Services)](../billing/buy-basic-access-add-users.md).
+For VSTS, five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users (Team Services)](../billing/buy-basic-access-add-users.md).
 
 For TFS, limited access is available to an unlimited number of stakeholders for free; most regular contributors must have a TFS client access license (CAL). For details, see [Work as a Stakeholder](../quickstart/get-started-stakeholder.md).
 
-All Visual Studio subscriptions and paid Team Services users include a TFS CAL. Find out more about licensing from the following pricing pages: 
+All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the following pricing pages: 
 - [Visual Studio Team Services pricing](https://www.visualstudio.com/team-services/pricing/)
 - [Team Foundation Server pricing](https://www.visualstudio.com/team-services/tfs-pricing).
 
@@ -338,7 +338,7 @@ If data doesn't appear as expected, the first thing to try is to refresh your we
 [!INCLUDE [temp](_shared/when-to-refresh-client.md)]
 
 <a id="clients">  </a>
-### Clients that connect to Team Services or TFS
+### Clients that connect to VSTS or TFS
 
 In addition to connecting through a web browser, you can connect to a team project from these clients:
 

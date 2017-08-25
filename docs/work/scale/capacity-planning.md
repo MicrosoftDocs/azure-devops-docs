@@ -1,5 +1,5 @@
 ---
-title: Capacity planning | Team Services & TFS
+title: Capacity planning | VSTS & TFS
 description: Set or copy team member capacity to plan your Scrum sprints when when working from Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -40,8 +40,8 @@ From the Capacity page, enter the capacity and days off for each member of your 
 
 For example, Christie Church's capacity is 6 hours/day for design work. 
 
-#### Team Services and TFS 2017
-<img src="_img/capacity-planning-set-capacity-tfs-15.png" alt="Team Services, Set Capacity" style="border: 2px solid #C3C3C3;" /> 
+#### VSTS and TFS 2017
+<img src="_img/capacity-planning-set-capacity-tfs-15.png" alt="VSTS, Set Capacity" style="border: 2px solid #C3C3C3;" /> 
  
 
 #### TFS 2015.1
@@ -56,7 +56,7 @@ Most teams specify capacity in terms of hours, however, you can also specify it 
 
 
 >[!NOTE]
->For Team Services, the task board always shows "h" for hours. For TFS, you can modify the ProcessConfiguration file for the Remaining Work type field to specify "d" for days, or other preferred label. For details, see [Process configuration XML element reference, Agile tool fields](../reference/process-configuration-xml-element.md#fields).  
+>For VSTS, the task board always shows "h" for hours. For TFS, you can modify the ProcessConfiguration file for the Remaining Work type field to specify "d" for days, or other preferred label. For details, see [Process configuration XML element reference, Agile tool fields](../reference/process-configuration-xml-element.md#fields).  
 
 
 If you haven't set up sprints yet for your team, go [here to do that now](../scrum/define-sprints.md).
@@ -67,7 +67,7 @@ If you don't see a team member listed, you need to [add them to the team](../sca
 ##Copy capacity planning from the previous sprint 
 
 >[!NOTE]
-><b>Feature availability: </b>This feature is available from Team Services and the web portal for TFS 2015.1 and later versions.  
+><b>Feature availability: </b>This feature is available from VSTS and the web portal for TFS 2015.1 and later versions.  
 
 By copying the capacity from the previous sprint, you save time. With the basics defined, all you have to do is adjust the capacity based on individual and team days off and capacity allocation per activity.  
 
@@ -82,7 +82,7 @@ Notice that only the capacity per day and activity are copied over. Individual a
 ##Add or remove users  
 
 >[!NOTE]
-><b>Feature availability: </b>These features are available from Team Services  and the web portal for TFS 2015.1 and later versions.  
+><b>Feature availability: </b>These features are available from VSTS  and the web portal for TFS 2015.1 and later versions.  
 
 Click ![Add user icon](_img/capacity-planning-add-user-icon.png) to add a specific account to your capacity planning, or ![Add missing team members](_img/capacity-planning-add-missing-users-icon.png) to add all missing team members. 
 
@@ -97,7 +97,7 @@ To remove a user, click the option from the users Action menu.
 ##Track capacity when performing multiple activities
 
 >[!NOTE]  
-><b>Feature availability: </b>This feature is currently supported only from the web portal for Team Services or TFS 2015 Update 1 or later version.  
+><b>Feature availability: </b>This feature is currently supported only from the web portal for VSTS and TFS 2015 Update 1 or later version.  
 
 Because individual team members have different sets of skills and duties, you can track their activity and capacity for each activity and for each sprint. 
 

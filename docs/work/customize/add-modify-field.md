@@ -1,5 +1,5 @@
 ---
-title: Add or modify a field | Team Services & TFS  
+title: Add or modify a field | VSTS & TFS  
 description: Modify or add a work item field to support queries, reports, and workflow for Visual Studio Team Services (VSTS) and TFS  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 04/05/2017
 
 # Add or modify a field  
 
-<b>Team Services (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 [!INCLUDE [temp](../_shared/customization-phase-0-and-1.md)]
 
@@ -71,7 +71,7 @@ Any field that you want to use to track data must be added to the WIT definition
 ### Add a checkbox or Boolean field 
 
 >[!NOTE]  
-><b>Feature availability:</b>The Boolean data type is supported for Hosted XML (Team Services) and for On-Premises XML, for TFS 2017.2 and later versions. 
+><b>Feature availability:</b>The Boolean data type is supported for Hosted XML (VSTS) and for On-Premises XML, for TFS 2017.2 and later versions. 
 
 Use the following syntax to add a Boolean field within the **FIELDS** section of the WIT definition. 
 
@@ -332,7 +332,7 @@ Other related topics or resources:
  
 - To list fields, you must have your **View project-level information** permission for the team project in the collection set to **Allow**.  
 - (TFS) To add or customize a field, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.
-- (Team Services)  To add or customize a field by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to Allow    
+- (VSTS)  To add or customize a field by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to Allow    
 - (TFS) To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
   
 To get added as an administrator, [Add administrators](../../accounts/add-administrator-tfs.md).

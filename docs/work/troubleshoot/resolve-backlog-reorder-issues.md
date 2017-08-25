@@ -1,5 +1,5 @@
 ---
-title: Resolve backlog issues | Team Services & TFS
+title: Resolve backlog issues | VSTS & TFS
 description: Resolve error messages when working in backlogs or boards in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

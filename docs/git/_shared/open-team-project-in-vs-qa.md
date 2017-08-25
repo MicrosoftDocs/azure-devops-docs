@@ -2,5 +2,5 @@
 #### Q: Why is my sign-in page different than when I sign in to Visual Studio?
 
 A:	Your sign-in page depends on whether you used a Microsoft account or 
-work account with Team Services. So, sign in with the username and 
-password that you used with Team Services.
+work account with VSTS. So, sign in with the username and 
+password that you used with VSTS.

@@ -1,5 +1,5 @@
 ---
-title: Use team fields instead of area paths to support teams | Team Services & TFS
+title: Use team fields instead of area paths to support teams | VSTS & TFS
 description: Steps to modify the XML syntax to support using a team field  for Visual Studio Team Services (VSTS) and Team Foundation Server
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -14,7 +14,7 @@ ms.date: 04/14/2017
 <b>TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 >[!IMPORTANT]  
->**Feature availability:**&#160;&#160;Team fields are only supported for on-premises TFS. Team fields are not supported in Team Services. 
+>**Feature availability:**&#160;&#160;Team fields are only supported for on-premises TFS. Team fields are not supported in VSTS. 
 >
 >Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
 
@@ -111,7 +111,7 @@ Add a custom team field to all work item types (WITs) that are included in the F
     >[!TIP]  
     >Name your custom field to distinguish it from other system fields. Do not use "System" as a prefix for `refname`. And, keep the `name` and `refname` labels to 128 characters and 70, respectively.
 
-3.  Add the **Team** field to the [Layout section](../reference/layout-xml-element-reference.md) of the work item form. If you are working in Team Services or TFS 2017, you'll also need to edit the [**WebLayout** section](../reference/weblayout-xml-elements.md) of the WIT definition. 
+3.  Add the **Team** field to the [Layout section](../reference/layout-xml-element-reference.md) of the work item form. If you are working in VSTS and TFS 2017, you'll also need to edit the [**WebLayout** section](../reference/weblayout-xml-elements.md) of the WIT definition. 
 
         <FORM>
         . . . 

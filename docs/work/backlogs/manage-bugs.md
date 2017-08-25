@@ -1,5 +1,5 @@
 ---
-title: Manage bugs | Team Services & TFS
+title: Manage bugs | VSTS & TFS
 description: Manage technical debt and triage bugs using Agile tools and Scrum methods when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -9,10 +9,8 @@ ms.author: kaelli
 ms.date: 08/15/2017
 ---
 
-# Manage bugs
-<!---
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
--->       
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+      
  
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed in a timely manner to support high-quality software deployments? And, how do you do this while making good progress on new features? 
 
@@ -48,15 +46,15 @@ You can create bugs from the [web portal](add-work-items.md), Visual Studio/Team
 The bug work item form tracks similar information to the one shown for the Scrum process.  
 
 >[!NOTE]  
->The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to Team Services or your on-premises TFS, options that you or your admin have enabled, and which process was chosen when creating your team project&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md). 
+>The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to VSTSor your on-premises TFS, options that you or your admin have enabled, and which process was chosen when creating your team project&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md). 
 
 
-#### Team Services | TFS 2017 (new form enabled)
+#### VSTS | TFS 2017 (new form enabled)
 
  
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../process/new-work-item-experience.md). 
 
-<img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, Team Services" style="border: 2px solid #C3C3C3;" />
+<img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, VSTS" style="border: 2px solid #C3C3C3;" />
 </div>
 
 #### TFS 2015 | TFS 2013 (old web form) 
@@ -262,7 +260,7 @@ When bugs are treated as tasks, they're often automatically linked to a PBI or u
 Your team should consider fixing all bugs found during a sprint when testing a feature in development.  
 
 >[!TIP]
->If you work from Team Services or TFS 2015.1 and later versions, you can 
+>If you work from VSTS and TFS 2015.1 and later versions, you can 
 >[drag-and-drop work items onto a sprint from any backlog or board](../scrum/define-sprints.md#drag-drop-to-sprint).   
 
 
@@ -318,7 +316,7 @@ To learn more about queries, charts, and dashboards; see [Create managed queries
 ### Pre-defined SQL Server bug reports (on-premises TFS only)
 
 <!---
-If you work from Team Services, you can use Power BI to access [bug reports and dashboards](../../report/powerbi/report-on-vso-with-power-bi-vs.md).
+If you work from VSTS, you can use Power BI to access [bug reports and dashboards](../../report/powerbi/report-on-vso-with-power-bi-vs.md).
 -->
 
 If you work from an on-premises TFS and you have SQL Server Analysis Services and SQL Server Reporting Services configured for your team project, you have access to the following reports (Agile and CMMI processes only).  

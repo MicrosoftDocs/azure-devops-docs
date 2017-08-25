@@ -1,5 +1,5 @@
 ---
-title: Copy changes to a branch with cherry-pick (command line) | Team Services & TFS
+title: Copy changes to a branch with cherry-pick (command line) | VSTS & TFS
 description: Copy and port changes from one branch to another in Git with cherry-pick,
 ms.assetid: 09f07728-57db-49d3-a48b-460c56a55f45
 ms.prod: vs-devops-alm

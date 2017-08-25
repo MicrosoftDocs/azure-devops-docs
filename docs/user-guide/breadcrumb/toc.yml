@@ -1,0 +1,8 @@
+- name: VSTS and TFS
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items: 
+  - name: New User Guide
+    tocHref: /vsts/
+    topicHref: /vsts/user-guide/index
+

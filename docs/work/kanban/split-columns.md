@@ -1,5 +1,5 @@
 ---
-title: Split columns | Team Services & TFS
+title: Split columns | VSTS & TFS
 description: Implement Kanban pull model by dividing each column into Doing and Done when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 04/03/2017
 
 # Split columns
 
-<b>Team Services | TFS 2017 | TFS 2015 </b>
+<b>VSTS | TFS 2017 | TFS 2015 </b>
 
 You use your Kanban board to visualize the flow of work, and monitor how items are or aren't progressing. Because each column corresponds to a stage of work, you can quickly see the number of items in progress at any each stage.  
 
@@ -59,17 +59,17 @@ Now that you understand how your team can use split columns, here's how to turn 
 
 	You'll see different column titles and choices based on the following:
 	
-	- You connect to Visual Studio Team Services or an on-premises TFS  
+	- You connect to VSTS or an on-premises TFS  
 	- The [Process](../guidance/choose-process.md) you used to create your team project  
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
 
 2.	Select each column that you want to split. Before you split columns, you'll want to have [mapped each stage of your team's process to a Kanban column](add-columns.md). 
 
-	**Team Services:**  Click the column tab that you want to set.   
+	**VSTS:**  Click the column tab that you want to set.   
 
 	![Kanban board, Customize columns, split columns, Agile process](_img/vso-kanban-split-columns-settings-analyze-no-tags.png)  
 
-	<blockquote><b>Note:</b> When you connect to Visual Studio Team Services, you can can filter queries and create charts using the [Board Column Done field](../track/query-by-workflow-changes.md#kanban_query_fields).</blockquote>  
+	<blockquote><b>Note:</b> When you connect to VSTS, you can can filter queries and create charts using the [Board Column Done field](../track/query-by-workflow-changes.md#kanban_query_fields).</blockquote>  
 
 	**On-premises TFS options:**   
 

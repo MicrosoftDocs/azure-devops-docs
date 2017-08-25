@@ -1,5 +1,5 @@
 ---
-title: Sprint and scrum best practices | Team Services & TFS
+title: Sprint and scrum best practices | VSTS & TFS
 description: Best practice guidance to implement scrum and use sprint tools in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)   
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 08/02/2017
 
 # Scrum and working with sprints best practices 
  
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
 <a id="sprint-planning-meeting">  </a>
 ## Sprint planning meetings 

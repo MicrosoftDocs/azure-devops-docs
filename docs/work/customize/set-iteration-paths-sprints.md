@@ -14,7 +14,7 @@ ms.date: 08/10/2017
 
 # Define iteration paths (aka sprints) 
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Whereas, [area paths](set-area-paths.md) allow you to group work items by team, product, or feature area.  
  
@@ -45,12 +45,12 @@ If you want to add area paths to support teams, you can do that when you [add te
 Certain [restrictions](#name-restrictions) apply on names of areas.  
 
 
-**Team Services**
+**VSTS**
 <a id="admin-intro-team-services" /> 
 
 1. From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.  
 
-	<img src="_img/modify-areas-its-open-admin-context-ts.png" alt="Web portal, Team Services, Open Admin context, team project level" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 2px solid #C3C3C3;" />  
 
 	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings.  
 
@@ -106,23 +106,23 @@ From the **Iterations** page, you can add and select the iterations that will be
 
  
 <a id="define-sprints-team-services">   </a>
-### Schedule sprints (Team Services) 
+### Schedule sprints (VSTS) 
 
 1. Open the Work, Iterations page for the team project context. 
 
 	For Scrum-based team projects, you'll see these set of sprints. 
 
-	<img src="_img/modify-areas-its-iterations-ts.png" alt="Work, Iterations page, Team Services platform" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/modify-areas-its-iterations-ts.png" alt="Work, Iterations page, VSTS platform" style="border: 2px solid #C3C3C3;" />
 
 	If you need to select another team project, go to the Overview page for the collection (click the DefaultCollection link). 
 
 2. Schedule the start and end dates for each sprint your teams will use. Click Set dates or choose to edit the iteration from the ![Actions icon](../_img/icons/actions-icon.png) actions menu for the sprint. 
 
-	<img src="../scrum/_img/dsprints-edit-sprint-1-set-start-date.png" alt="Edit iteration, schedule start date, Team Services platform" style="border: 2px solid #C3C3C3;" />  
+	<img src="../scrum/_img/dsprints-edit-sprint-1-set-start-date.png" alt="Edit iteration, schedule start date, VSTS platform" style="border: 2px solid #C3C3C3;" />  
 
 3. When you're finished, you'll have a set of sprints scheduled - like this: 
 
-	<img src="_img/modify-areas-its-iterations-scheduled-ts.png" alt="Work, Iterations page, scheduled set of sprints, Team Services platform" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/modify-areas-its-iterations-scheduled-ts.png" alt="Work, Iterations page, scheduled set of sprints, VSTS platform" style="border: 2px solid #C3C3C3;" />
 
 	Your next step is to [choose the sprints each team will use](../scale/set-team-defaults.md#activate-team-services). 
 

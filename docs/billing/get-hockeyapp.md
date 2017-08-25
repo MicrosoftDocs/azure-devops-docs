@@ -141,18 +141,18 @@ Learn more about [HockeyApp and Visual Studio Team Services](http://hockeyapp.ne
 
 0.	Sign in to 
 [Visual Studio Marketplace > Visual Studio Team Services > Build and release > HockeyApp](https://marketplace.visualstudio.com/items?itemName=ms.hockeyapp) 
-as the Team Services account owner.
+as the VSTS account owner.
 
-	If you're not the Team Services account owner,
+	If you're not the VSTS account owner,
 	learn how to [request extensions](../marketplace/request-vsts-extension.md).
 
 0.	Install the [HockeyApp extension](https://marketplace.visualstudio.com/items?itemName=ms.hockeyapp) 
-in your Team Services account. Learn more at 
-[Get extensions for Team Services](../marketplace/install-vsts-extension.md#install-extension).
+in your VSTS account. Learn more at 
+[Get extensions for VSTS](../marketplace/install-vsts-extension.md#install-extension).
 
 	![Install HockeyApp extension](_img/get-hockeyapp/hockey-app-extension.png)
 
-0.	To start using HockeyApp with Team Services, follow the steps on the 
+0.	To start using HockeyApp with VSTS, follow the steps on the 
 [HockeyApp extension page](https://marketplace.visualstudio.com/items?itemName=ms.hockeyapp).
 
 For more details, visit 

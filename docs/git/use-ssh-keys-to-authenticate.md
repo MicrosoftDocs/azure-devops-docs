@@ -1,5 +1,5 @@
 ---
-title: Connect to your Git repos with SSH | Team Services & TFS
+title: Connect to your Git repos with SSH | VSTS & TFS
 description: Authenticate to Visual Studio Team Services Git Repositories with SSH Keys
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.prod: vs-devops-alm
@@ -10,12 +10,12 @@ ms.date: 08/04/2016
 ---
 
 # Use SSH key authentication
-#### Team Services | TFS 2015 Update 3 | TFS 2017
+#### VSTS | TFS 2015 Update 3 | TFS 2017
 
 Connect to your Git repos through SSH when you can't use the recommended [Git Credential Managers](set-up-credential-managers.md) or
 [Personal Access Tokens](../accounts/use-personal-access-tokens-to-authenticate.md) to securely connect using HTTPS authentication.
 
-> Visual Studio does not support connecting to Git repos via SSH.
+> As of Visual Studio 2017, SSH can be used to connect to Git repos.
 
 ## How SSH key authentication works
 SSH public key authentication works with a pair of generated encryption keys. The _public_ key is shared and used to encrypt
@@ -65,22 +65,22 @@ compromised, attackers can use it to trick servers into thinking the connection 
 
 <a name="configuration"></a>
 
-### Step 2:  Add the public key to Team Services/TFS
+### Step 2:  Add the public key to VSTS/TFS
 
 Associate the public key generated in the previous step with your user ID.
 
 0.  Open your security settings by browsing to the web interface and selecting your name in the upper right of the
 user interface. Select **My security** in the menu that appears.
 
-    ![Accessing User Profile in Visual Studio Team Services](_img/use-ssh-authentication/ssh_profile_access.png)
+    ![Accessing User Profile in Visual Studio VSTS](_img/use-ssh-authentication/ssh_profile_access.png)
 
 0. Select **SSH Public Keys** , then select **Add**.
 
-    ![Accessing Security Configuration in Visual Studio Team Services](_img/use-ssh-authentication/ssh_accessing_security_key.png)
+    ![Accessing Security Configuration in Visual Studio VSTS](_img/use-ssh-authentication/ssh_accessing_security_key.png)
 
-0. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Key Data** field. Avoid adding whitespace or new lines into the **Key Data** field-they can cause Team Services to use an invalid public key. 
+0. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Key Data** field. Avoid adding whitespace or new lines into the **Key Data** field-they can cause VSTS to use an invalid public key. 
 
-    ![Configuring Public Key in Visual Studio Team Services](_img/use-ssh-authentication/ssh_key_input.png)
+    ![Configuring Public Key in Visual Studio VSTS](_img/use-ssh-authentication/ssh_key_input.png)
 
 0. Give the key a useful description (this will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key. Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile.
   
@@ -146,7 +146,7 @@ Copy you public key directly from the PuTTYgen window and paste into the **Key D
 </pre>
   
 You can then compare the MD5 signature to the one in your  profile. This is useful if you have connection problems or have concerns about incorrectly
-pasting in the public key into the **Key Data** field when adding the key to Team Services.
+pasting in the public key into the **Key Data** field when adding the key to VSTS.
  
 ### How can I test my SSH connection without running a Git command?
  

@@ -1,5 +1,5 @@
 ---
-title: Individual versus shared queries | Team Services & TFS
+title: Individual versus shared queries | VSTS & TFS
 description: Work with queries to support your and team usage   
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-agile-wit
@@ -13,7 +13,7 @@ ms.date: 08/11/2017
 
 # Individual versus shared queries    
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013**
 
 !!! WORK IN PROGRESS !!! 
 
@@ -61,7 +61,7 @@ Here are some of the tools you can use to manage queries:
 
  
 Quick tips on shared queries
-If you are new to Team Services or TFS and shared queries, review these tips to learn how you can manage work more effectively:
+If you are new to VSTS and TFS and shared queries, review these tips to learn how you can manage work more effectively:
 
 To find work items that are assigned to you, add @Me as the value for the Assigned To field in one of the query clauses.
 All valid users with standard access can create queries and folders under the My Queries area. To create queries and query folders under Shared Queries, you must have the Contribute permission set. For more information, see Set permissions on queries.

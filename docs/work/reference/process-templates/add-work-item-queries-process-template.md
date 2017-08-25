@@ -1,5 +1,5 @@
 ---
-title: Add work item queries to a process template | Team Services & TFS
+title: Add work item queries to a process template | VSTS & TFS
 description: Define the initial set of shared queries and query folder structure for a team project - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

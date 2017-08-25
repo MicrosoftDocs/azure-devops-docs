@@ -1,5 +1,5 @@
 ---
-title: Create a readme for your Git repo | Team Services & TFS
+title: Create a readme for your Git repo | VSTS & TFS
 description: Tips, advice, and suggestions on how to create a great readne file for your Git repo.
 ms.assetid: fcd84ee1-909c-4837-9c39-bf036afe6232
 toc: show

@@ -1,5 +1,5 @@
 ---
-title: Create managed queries | Team Services & TFS
+title: Create managed queries | VSTS & TFS
 description: Track work by creating queries to list items using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-agile-wit
@@ -13,7 +13,7 @@ ms.date: 04/06/2017
 
 # Create managed queries to list, update, or chart work items    
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 A query lists a filtered set of work items. You can initiate a query using the [work item search box](search-box-queries.md) or through the [query editor](using-queries.md). By default, you query within a single team project. However, using the query editor, you can [query across team projects](using-queries.md#across-projects). 
 

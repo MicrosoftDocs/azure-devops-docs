@@ -1,5 +1,5 @@
 ---
-title: Git history simplification | Team Services & TFS
+title: Git history simplification | VSTS & TFS
 description: How git log history simplification works, and why it can lead to confusion.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles

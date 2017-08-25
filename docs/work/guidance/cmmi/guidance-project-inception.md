@@ -1,5 +1,5 @@
 ---
-title: Project inception | Team Services & TFS
+title: Project inception | VSTS & TFS
 description: Arrange the basic resources of the project in an initial stage.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

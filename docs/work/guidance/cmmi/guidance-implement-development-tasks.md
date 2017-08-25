@@ -1,6 +1,6 @@
 ---
-title: Implement development tasks | Team Services & TFS
-description:  Implements the development task that involves adding the appropriate new functionality to your software - Team Services & TFS
+title: Implement development tasks | VSTS & TFS
+description:  Implements the development task that involves adding the appropriate new functionality to your software - VSTS & TFS
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.topic: cmmi

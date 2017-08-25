@@ -1,5 +1,5 @@
 ---
-title: About teams & Agile tools  | Team Services & TFS
+title: About teams & Agile tools  | VSTS & TFS
 description: Guide to adding and configuring teams in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 07/21/2017
 
 # About teams and Agile tools
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013 </b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013 </b> 
 
 <a id="teams"></a>
 
@@ -32,7 +32,7 @@ Each team you create gets access to a suite of Agile tools and team assets. Thes
 These tools reference the team's default area path, iteration path, and selected sprints to automatically filter the set of work items they display. Here's a quick summary of these tools: 
 
 >[!NOTE]  
->Some features are available only from Team Services or TFS 2017 and later versions.  
+>Some features are available only from VSTS and TFS 2017 and later versions.  
 
 
 > [!div class="mx-tdBreakAll"]  

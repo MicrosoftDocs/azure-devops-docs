@@ -1,5 +1,5 @@
 ---
-title: Scrum process work items and workflow | Team Services & TFS 
+title: Scrum process work items and workflow | VSTS & TFS 
 description: How to guide for using the Scrum process  work item types and workflow to track work in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)   
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 04/05/2017
 
 # Scrum process work item types and workflow  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
 To plan a software project and track software defects using Scrum, teams use the product backlog item (PBI) and bug work item types (WITs). To gain insight into a portfolio of features, scenarios, or user experiences, product owners and program managers can map PBIs and bugs to features. When teams work in sprints, they define tasks which automatically link to PBIs and bugs.
 
@@ -70,7 +70,7 @@ Use the following guidance and that provided for [fields used in common across w
 </table>
 
 
-<blockquote style="font-size: 13px"><b>Tip: </b>Use the [Discussion section](../concepts/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from Team Services.   </blockquote>   
+<blockquote style="font-size: 13px"><b>Tip: </b>Use the [Discussion section](../concepts/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from VSTS.   </blockquote>   
 
 ## Track progress
 

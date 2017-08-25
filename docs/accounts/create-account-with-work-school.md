@@ -1,6 +1,6 @@
 ---
-title: Create your Team Services account with a work or school account
-description: Create your Team Services account with a work or school account
+title: Create your VSTS account with a work or school account
+description: Create your VSTS account with a work or school account
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -12,7 +12,7 @@ ms.date: 03/30/2017
 
 #	Create your VSTS account with a work or school account
 
-**Team Services**
+**VSTS**
 
 Sign up for a [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs) 
 account to upload and share code in free unlimited private 
@@ -34,7 +34,7 @@ so your team can build often, test early, and ship faster.
 ##	What do I need to sign up for a Visual Studio Team Services account?
 
 *	To get started quickly and use only Microsoft accounts 
-	with your Team Services account, [sign up with a "personal" Microsoft account](create-account-with-personal-msa.md). 
+	with your VSTS account, [sign up with a "personal" Microsoft account](create-account-with-personal-msa.md). 
 
 	Don't have a Microsoft account? 
 	You can create a Microsoft account 
@@ -45,27 +45,27 @@ so your team can build often, test early, and ship faster.
 
 Use your Microsoft account if you don't need to authenticate users 
 for an organization with [Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
-All users must sign in with Microsoft accounts to your Team Services account.
+All users must sign in with Microsoft accounts to your VSTS account.
 
-Use your work or school account to **automatically connect** your Team Services account to your organization's directory. 
-All users must be members in that directory to get access to your Team Services account.
+Use your work or school account to **automatically connect** your VSTS account to your organization's directory. 
+All users must be members in that directory to get access to your VSTS account.
 
 
 ##	Sign up for Visual Studio Team Services with a work or school account
 
-Want to authenticate users and control access to your Team Services account 
+Want to authenticate users and control access to your VSTS account 
 the same way that you can with Microsoft services like Office 365 and Azure? 
 When you sign up with a "work or school account" that's managed by your 
 organization's directory (tenant) in [Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/), 
-your Team Services account is **automatically connected** to your organization's directory. 
-You can then sign in to Team Services with the same username and password that you use with 
+your VSTS account is **automatically connected** to your organization's directory. 
+You can then sign in to VSTS with the same username and password that you use with 
 other Microsoft services. You can also enforce policies for accessing your team's critical 
 resources and key assets. 
 
 ###  How does Azure AD control access to Visual Studio Team Services?
 
 Visual Studio Team Services authenticates users through your organization's directory 
-so that only users who are members in that directory can get access to your Team Services account. 
+so that only users who are members in that directory can get access to your VSTS account. 
 When users are removed from that directory, for example, because they've moved elsewhere, 
 they can't access your account anymore. Only specific 
 [Azure AD administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/) 
@@ -73,7 +73,7 @@ can manage users in your directory, so they control who can get
 access to your Visual Studio Team Services account.
 
 Without Azure AD, you're solely responsible for controlling 
-Team Services account access. And all users must sign in with Microsoft accounts. 
+VSTS account access. And all users must sign in with Microsoft accounts. 
 [What are other differences?](#SignInAccountDifferences)
 
 ###	What do I need to sign up for Visual Studio Team Services with a work or school account?
@@ -114,17 +114,17 @@ To manage your code, choose Git or Team Foundation Version Control.
 	works best for you.
 
 0.	Confirm your account's location and the **directory** 
-that you're connecting to your Team Services account. 
+that you're connecting to your VSTS account. 
 
 	![Rename team project, change account location, or select another process](_img/sign-up-visual-studio-team-services/change-account-directory.png)
 
 	> [!IMPORTANT]
-	> Team Services will create your first team project as "MyFirstProject" and will use Agile as the default work item
+	> VSTS will create your first team project as "MyFirstProject" and will use Agile as the default work item
 	> process to organize your work. Choose **Change details** to [rename your team project, change the account location, change the
 	> directory, or select another process, like Scrum](#account-location). 
 	> After you create your account, only members of
-	> the directory shown here can get access to your Team Services account. If you belong to multiple directories, check that you want
-	> to connect this directory to your Team Services account. Otherwise, change the directory now. This is easier than [changing the
+	> the directory shown here can get access to your VSTS account. If you belong to multiple directories, check that you want
+	> to connect this directory to your VSTS account. Otherwise, change the directory now. This is easier than [changing the
 	> directory later](#ChangeDirectory).
 
 0.	After Visual Studio Team Services creates your account and team project, 
@@ -134,13 +134,13 @@ add code, work items, or more users.
 
 	Congratulations, you're now a Visual Studio Team Services account owner! 
 
-	To sign in to your Team Services account at any time, 
+	To sign in to your VSTS account at any time, 
 	go to ```https://{youraccount}.visualstudio.com```.
 
 	> [!NOTE]
-	> If you activated your Visual Studio subscription with a Microsoft account, and your subscription includes Team Services
+	> If you activated your Visual Studio subscription with a Microsoft account, and your subscription includes VSTS
 	> as a benefit, learn [how to add your work or school account](../billing/link-msdn-subscription-to-organizational-account-vs.md) to your
-	> subscription so you can use your subscriber benefits in Team Services.
+	> subscription so you can use your subscriber benefits in VSTS.
 
 #### Next steps 
 

@@ -1,5 +1,5 @@
 ---
-title: TF30034-No permissions to create a new team project | Team Services & TFS
+title: TF30034-No permissions to create a new team project | VSTS & TFS
 description: Occurs when a user tries to create a team project and doesn't have the required permissions
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

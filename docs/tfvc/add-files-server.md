@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Add files to the server
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Adding a file to version control is often automatic when you use Solution Explorer and your project is under version control. However, in some cases, you have to take some extra steps to add the project to version control.
 

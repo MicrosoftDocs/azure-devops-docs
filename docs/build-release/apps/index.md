@@ -24,12 +24,12 @@ continuous integration (CI) and continuous deployment (CD) process.
 <div style="float:left;width:325px;margin:3px">
 <p style="font-weight:bold;padding-top:10px">Build your app</p>
 <ul style="padding-left:30px">
- <li style="margin-bottom:5px">[ASP.NET 4 apps](aspnet/ci/build-aspnet-4.md)</li>
+ <li style="margin-bottom:5px">[ASP.NET 4 apps](aspnet/build-aspnet-4.md)</li>
  <li style="margin-bottom:5px">[ASP.NET Core apps](aspnet/build-aspnet-core.md)</li>
- <li style="margin-bottom:5px">[Java apps with Maven](../apps/get-started/java-maven.md)</li>
+ <li style="margin-bottom:5px">[Java apps with Maven](../apps/java/java-maven.md)</li>
  <li style="margin-bottom:5px">[Node apps](nodejs/nodejs-to-azure.md)</li>
- <li style="margin-bottom:5px">[Cloud Services apps](aspnet/ci/build-aspnet-cloudservice.md)</li>
- <li style="margin-bottom:5px">[SQL database DACPAC](aspnet/ci/build-aspnet-dacpac.md)</li>
+ <li style="margin-bottom:5px">[Cloud Services apps](aspnet/build-aspnet-cloudservice.md)</li>
+ <li style="margin-bottom:5px">[SQL database DACPAC](aspnet/build-aspnet-dacpac.md)</li>
  <li style="margin-bottom:5px">[C++ apps for Windows](windows/cpp.md)</li>
  <li style="margin-bottom:5px">[Universal Windows Platform apps](windows/universal.md)</li>
 </ul>
@@ -52,9 +52,9 @@ continuous integration (CI) and continuous deployment (CD) process.
 <p style="font-weight:bold;padding-top:10px">Deploy your app</p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:5px">[Azure web apps](cd/deploy-webdeploy-webapps.md)</li>
- <li style="margin-bottom:5px">[Azure cloud services](aspnet/cd/deploy-cloudservice-cloudservice.md)</li>
- <li style="margin-bottom:5px">[Azure SQL database](aspnet/cd/deploy-dacpac-sqlpackage.md)</li>
- <li style="margin-bottom:5px">[Azure SQL database scripted](aspnet/cd/deploy-database-sqlscripts.md)</li>
+ <li style="margin-bottom:5px">[Azure cloud services](aspnet/deploy-cloudservice-cloudservice.md)</li>
+ <li style="margin-bottom:5px">[Azure SQL database](cd/deploy-dacpac-sqlpackage.md)</li>
+ <li style="margin-bottom:5px">[Azure SQL database scripted](cd/deploy-database-sqlscripts.md)</li>
  <li style="margin-bottom:5px">[Azure Container Service (Kubernetes)](cd/azure/deploy-container-kubernetes.md)</li>
  <li style="margin-bottom:5px">[IIS using deployment groups](cd/deploy-webdeploy-iis-deploygroups.md)</li>
  <li style="margin-bottom:5px">[IIS using Win RM](cd/deploy-webdeploy-iis-winrm.md)</li>
@@ -77,8 +77,8 @@ continuous integration (CI) and continuous deployment (CD) process.
 <div style="float:left;width:325px;margin:3px">
 <p style="font-weight:bold;padding-top:10px">Azure Continuous Delivery preview</p>
 <ul style="padding-left:30px">
- <li style="margin-bottom:5px">[ASP.NET 4 using Azure](../apps/get-started/aspnet-4-ci-cd-azure-automatic.md)</li>
- <li style="margin-bottom:5px">[ASP.NET 4 using Visual Studio](../apps/get-started/aspnet-4-ci-cd-vs-automatic.md)</li>
+ <li style="margin-bottom:5px">[ASP.NET 4 using Azure](../apps/aspnet/aspnet-4-ci-cd-azure-automatic.md)</li>
+ <li style="margin-bottom:5px">[ASP.NET 4 using Visual Studio](../apps/aspnet/aspnet-4-ci-cd-vs-automatic.md)</li>
 </ul>
 </div>
 

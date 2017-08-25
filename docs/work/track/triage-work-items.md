@@ -1,5 +1,5 @@
 ---
-title: Organize and view queries | Team Services & TFS
+title: Organize and view queries | VSTS & TFS
 description: Manage your queries by using favorites and folders 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-agile-wit
@@ -12,7 +12,7 @@ ms.date: 06/22/2017
 
 
 # Triage work items  
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 !!! WORK IN PROGRESS !!! 
 

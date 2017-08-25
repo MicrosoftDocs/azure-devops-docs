@@ -1,5 +1,5 @@
 ---
-title: Use swimlanes to expedite work | Team Services & TFS
+title: Use swimlanes to expedite work | VSTS & TFS
 description: Use swimlanes to differentiate different types of work you track on the Kanban board in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,9 +11,7 @@ ms.date: 04/14/2017
 
 # Expedite work
 
-<!---
-<b>Team Services | TFS 2017 | TFS 2015</b> 
---> 
+<b>VSTS | TFS 2017 | TFS 2015</b> 
 
 Your Kanban board supports your ability to visualize the flow of work as it moves from new to done. When you add swimlanes, you can also visualize the status of work that supports different service-level classes. You can create a swimlane to represent any other dimension that supports your tracking needs.    
 
@@ -57,7 +55,7 @@ Once you've identified one or two, add them to your working Kanban board.
 
 2.	Click ![add icon](../_img/icons/add_icon.png) and enter the name of the swimlane you want to add.  
 	
-	**Team Services and TFS 2015.1:**  
+	**VSTS and TFS 2015.1:**  
 
 	<img src="_img/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 2px solid #C3C3C3;" />    
 
@@ -91,7 +89,7 @@ As you can see, swimlanes provides another way to organize and visualize the flo
 ### Tracking lane moves  
 
 
-**Team Services and TFS 2015.1 and later versions**
+**VSTS and TFS 2015.1 and later versions**
 
 You can track Kanban board swimlane moves using the [Board Lane field](../track/query-by-workflow-changes.md#kanban_query_fields).  
 

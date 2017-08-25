@@ -12,12 +12,13 @@ ms.date: 04/05/2017
 <!---
 Supports the following FWLINK: Learn more about these configuration changes: http://go.microsoft.com/fwlink/?LinkID=242985 - 
 -->
+
 # New features added through feature enablement 
 
 <b>TFS 2017 | TFS 2015 | TFS 2013</b>  
 
 >[!NOTE]  
-<b>Feature availability: </b>This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). Team projects hosted on Team Services [update automatically with each service upgrade](https://www.visualstudio.com/articles/news/features-timeline).
+<b>Feature availability: </b>This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). Team projects hosted on VSTS [update automatically with each service upgrade](https://www.visualstudio.com/articles/news/features-timeline).
   
 The Configure Features Wizard detects which features have and haven't been configured. Most new features include additions or changes to work item types (WITs), categories, or process configuration. New features are introduced with different updates to Team Foundation Server (TFS).  
 

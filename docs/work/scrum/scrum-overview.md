@@ -1,5 +1,5 @@
 ---
-title: Scrum overview | Team Services & TFS
+title: Scrum overview | VSTS & TFS
 description: Use the web portal to implement your Scrum process, plan and track work, and monitor progress and trends  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -23,14 +23,14 @@ You can quickly assign work items to a sprint by dragging and dropping them from
 
 ## Try this next  
 
-Take these tools for a test run by [creating an account on Team Services for free](../../accounts/create-account-with-personal-msa.md). From there, you're ready to [create your backlog](../backlogs/create-your-backlog.md).  
+Take these tools for a test run by [creating an account on VSTS for free](../../accounts/create-account-with-personal-msa.md). From there, you're ready to [create your backlog](../backlogs/create-your-backlog.md).  
 
 Once you've started tracking work, you'll want to monitor and track progress, identify trends, and share your plans. See [Charts, dashboards, and widgets](../../report/overview.md). 
 
 
 ## Related notes
 
-You access tools provided by Team Services and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access. To learn more, see [Permissions and access for work tracking](../permissions-access-work-tracking.md). 
+You access tools provided by VSTS and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access. To learn more, see [Permissions and access for work tracking](../permissions-access-work-tracking.md). 
 
 
 

@@ -11,9 +11,6 @@ ms.date: 06/01/2016
 ---
 
 
-
-
-
 # Agile tools that rely on areas or iterations
 
 [!INCLUDE [temp](../_shared/agile-tools-areas-iterations-summary.md)]
@@ -22,7 +19,6 @@ ms.date: 06/01/2016
 ## Team defaults referenced by backlogs and boards
 
 [!INCLUDE [temp](../_shared/team-defaults-referenced-by-team-tools.md)]
-
 
 
 ## Structure teams, areas, and iterations to support hierarchical teams or scale agility within an enterprise 

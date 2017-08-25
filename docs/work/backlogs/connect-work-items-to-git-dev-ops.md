@@ -1,5 +1,5 @@
 ---
-title: Drive Git or TFVC development from a work item | Team Services & TFS 
+title: Drive Git or TFVC development from a work item | VSTS & TFS 
 description: Create a branch, create a pull request, and automatically link work items with source control branches, builds, commits, changesets, pull requests or other Git or TFVC supported operations  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,11 +12,11 @@ ms.date: 08/11/2017
 # Drive Git development from a work item   
 
 
-<b>Team Services | TFS 2017</b> 
+<b>VSTS | TFS 2017</b> 
 
 
 >[!NOTE]  
-><b>Feature availability: </b>The Development section appears in the work item web form for Team Services or TFS 2017 or later versions, configured with the [new work item tracking experience](../process/new-work-item-experience.md). It supports both Git and TFVC version control repositories. Go here to learn how to [add a Git repository for your existing team project](../../accounts/create-team-project.md#git-and-tfvs-repos).   
+><b>Feature availability: </b>The Development section appears in the work item web form for VSTS and TFS 2017 or later versions, configured with the [new work item tracking experience](../process/new-work-item-experience.md). It supports both Git and TFVC version control repositories. Go here to learn how to [add a Git repository for your existing team project](../../accounts/create-team-project.md#git-and-tfvs-repos).   
 
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
@@ -58,7 +58,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 	Branches you create are automatically linked to the work item.  
 
 	>[!NOTE]  
-	>You can only create a branch once you've added files to the main branch, which is always named ```master```.  Team Services automatically adds a README file to the initial repo created with each new team project.   
+	>You can only create a branch once you've added files to the main branch, which is always named ```master```. VSTS automatically adds a README file to the initial repo created with each new team project.   
 
 2. The system will open to the repository and branch that you just created. 
 
@@ -154,7 +154,7 @@ Learn more about tracking work with work items and developing with Git from thes
 > [!NOTE]     
 > To learn more or to customize the Development links control, see [LinksControlOptions elements, Development links control](../reference/linkscontroloptions-xml-elements.md#development-links-control).    
 
-Keep in mind that the Development section only appears when using the web portal for Team Services or TFS 2017 or later versions. The work item tracking experience and forms that appear in Visual Studio will be missing several of the features that the web portal makes available.  
+Keep in mind that the Development section only appears when using the web portal for VSTS and TFS 2017 or later versions. The work item tracking experience and forms that appear in Visual Studio will be missing several of the features that the web portal makes available.  
 
 ### Associated work items in build 
 
@@ -176,6 +176,6 @@ Hovering over any entry listed under the Development section activates the hyper
 The link types you can add within the development section are Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item. 
 
 >[!NOTE]  
->The link types, **Found in build** and **Integrated in build** are only available from Team Services and only work with the current build processes (not XAML builds). 
+>The link types, **Found in build** and **Integrated in build** are only available from VSTS and only work with the current build processes (not XAML builds). 
 
 <img src="../track/_img/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 2px solid #C3C3C3;" /> 

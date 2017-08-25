@@ -1,5 +1,5 @@
 ---
-title: Permissions and groups | Team Services & TFS
+title: Permissions and groups | VSTS & TFS
 description: Manage groups, security, and permissions in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs
@@ -7,13 +7,13 @@ ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/25/2017
+ms.date: 08/24/2017
 ---
 
 
-# Permissions and groups in Team Services and TFS
+# Permissions and groups in VSTS and TFS
 
-**Team Services** | **TFS 2017** | **TFS 2015** | **TFS 2013**
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 This topic provides descriptions for each built-in group and permission. To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 
@@ -21,9 +21,9 @@ This topic provides descriptions for each built-in group and permission. To lear
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](../accounts/add-administrator-tfs.md)<br/>- [Add users to a team project](../accounts/add-team-members-vs.md) (Team Services)<br/>- [Add users to a team project](../accounts/add-users.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)  |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](../accounts/restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (Team Services)<br/> - [Dashboard permissions](../report/dashboard-permissions.md#set-permissions)|    
+> |- [Add users to an administrator role](../accounts/add-administrator-tfs.md)<br/>- [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)<br/>- [Add users to a team project](../accounts/add-users.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)  |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](../accounts/restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (VSTS)<br/> - [Dashboard permissions](../report/dashboard-permissions.md#set-permissions)|    
 
-
+<a name="groups"></a>
 ## Groups
 
 Permissions can be granted directly to an individual, or to a group.
@@ -295,7 +295,7 @@ Release Administrators (TFS 2017, Team Services)
 [team name]
 -->
 
-
+<a id="project-level-groups" />
 ### Project-level groups
 
 For each team project that you create, the system creates the followings team project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
@@ -421,7 +421,7 @@ For each team that you add, you can assign one or more team members as administr
 	* [Board: Definition of Done](../work/kanban/definition-of-done.md)  
 	* [Charts: Cumulative flow](../report/guidance/cumulative-flow.md#configure) 
 - **Manage team dashboards**  
-	Can add, configure, and manage permissions (Team Services and TFS 2017) for team dashboards. For details, see [Add and manage dashboards](../report/dashboard-permissions.md#set-permissions).  
+	Can add, configure, and manage permissions (VSTS and TFS 2017) for team dashboards. For details, see [Add and manage dashboards](../report/dashboard-permissions.md#set-permissions).  
 - **Set working days off**    	
 	Sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Team admins can choose which days are non-working days through the team's Settings dialog. For details, see [Set working days](../work/customize/set-working-days.md).
 - **Show bugs on backlogs and boards**   
@@ -741,6 +741,7 @@ You manage collection-level permissions through the [web portal admin context](.
 
 <a name="project_test">  </a>
 <a name="team-project-level-permissions">  </a>
+<a name="project-level-permissions" />
 
 ### Project-level permissions
 
@@ -770,8 +771,14 @@ You manage project-level permissions from the [web portal admin context](../conn
 		<td>Can delete a scheduled test.</td>
 	</tr>
 	<tr>
-		<td id="delete-work-items-in-this-project-permission">Delete work items in this project</td>
-		<td>Can [mark work items in this project as deleted](../work/backlogs/remove-delete-work-items.md).</td>
+		<td id="delete-work-items-in-this-project-permission">
+<p>Delete and restore work items</p><p>or Delete work items in this project</p></td>
+		<td>Can [mark work items in this project as deleted](../work/backlogs/remove-delete-work-items.md).
+<ul>
+<li>For VSTS and TFS 2015.1 and later versions, the Contributors group has **Delete and restore work items** at the project-level set to "Allow" by default.</li> 
+<li>For TFS 2015 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to "Not set" by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li>    
+</ul>
+</td>
 	</tr>
 	<tr>
 		<td id="edit-team-project-level-information-permission">Edit team project-level information</td>
@@ -1565,7 +1572,7 @@ Consider granting the Contribute permissions to users or groups that require the
 
 <a id="plan-permissions">  </a>
 
-### Plan permissions (object-level) (Team Services)  
+### Plan permissions (object-level) (VSTS)  
 
 You manage plan permissions through the [web portal](../work/scale/review-team-plans.md#plan-permissions). You manage permissions for each plan through it's Security dialog. Project Administors are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
 
@@ -1700,7 +1707,7 @@ View releases
 
 <a id="release_management">  </a>
 
-### Release management permissions (object-level) (Team Services, TFS 2017)
+### Release management permissions (object-level) (VSTS, TFS 2017)
 
 Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the team project level, for a specific release definition, or for a specific environment in a release definition. Within this hierarchy, permissions can be inherited from the parent or overridden.
 
@@ -1876,7 +1883,7 @@ You can manage alert permissions using [TFSSecurity](../tfs-server/command-line/
 ##Related notes
 
 - [About permissions](about-permissions.md)  
-- [Add users to a team project](../accounts/add-team-members-vs.md) (Team Services)   
+- [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)   
 - [Add users to a team project](../accounts/add-users.md) (TFS)   
 - [Add users to an administrator role](../accounts/add-administrator-tfs.md)   
 - [Make a user a team admin](../work/scale/manage-team-assets.md)  

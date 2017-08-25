@@ -1,5 +1,5 @@
 ---
-title: Add task checklists | Team Services  & TFS  
+title: Add task checklists | VSTS  & TFS  
 description: Add task checklists to your Kanban board for lightweight tracking of to do lists when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)    
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,11 +11,11 @@ ms.date: 07/20/2017
 
 #Add task checklists
 
-<b>Team Services | TFS 2017 | TFS 2015.1</b> 
+<b>VSTS | TFS 2017 | TFS 2015.1</b> 
 
 
 > [!NOTE]  
-> **Feature availability:** Task checklists on the Kanban board are supported from Team Services and the web portal for TFS 2015.1 and later versions.  
+> **Feature availability:** Task checklists on the Kanban board are supported from VSTS and the web portal for TFS 2015.1 and later versions.  
 
 Many teams find Kanban ideal for tracking work as it supports visualizing the flow of work in progress. And, you can quickly add new items and update status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md).  
 
@@ -41,7 +41,7 @@ In this topic, you'll learn:
 
 	<img src="_img/kanban-board-add-task-checklist.png" alt="Open the context menu of a backlog item to add a task" style="border: 2px solid #C3C3C3;" />  
 
-	For users of Team Services or TFS 2017 or later versions, you'll see several additional menu options: 
+	For users of VSTS and TFS 2017 or later versions, you'll see several additional menu options: 
 
 	<img src="_img/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 2px solid #C3C3C3;" /> 
 

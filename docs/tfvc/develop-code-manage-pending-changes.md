@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Develop code and manage pending changes
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Most changes that you make to your files are queued as pending changes. As you work, you can organize, manage, and get details about what you’ve changed.
 

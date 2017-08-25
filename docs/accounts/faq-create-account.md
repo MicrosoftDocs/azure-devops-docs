@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot creating a Team Services account
-description: Troubleshoot creating a Team Services account
+title: Troubleshoot creating a VSTS account
+description: Troubleshoot creating a VSTS account
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -10,9 +10,9 @@ ms.author: estfan
 ms.date: 03/30/2017
 ---
 
-#	Troubleshoot creating a Team Services account
+#	Troubleshoot creating a VSTS account
 
-**Team Services**
+**VSTS**
 
 
 <a name="free-users"></a>
@@ -141,11 +141,11 @@ A:	Yes, see [Change your account's Azure AD](change-azure-active-directory-vsts-
 [!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
 
 *	Choose **Work or school account** if you want to use your organization's directory 
-to authenticate Team Services users and to control Team Services account access. 
+to authenticate VSTS users and to control VSTS account access. 
 This limits access to members in your organization's directory. 
 All other users must sign in with work or school accounts too. 
 
-*	Choose **Personal account** if you want to use your Microsoft account with Team Services. 
+*	Choose **Personal account** if you want to use your Microsoft account with VSTS. 
 All other users must sign in with Microsoft accounts too.
 
 [!INCLUDE [why-cant-sign-in-msa-azuread-account](../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]

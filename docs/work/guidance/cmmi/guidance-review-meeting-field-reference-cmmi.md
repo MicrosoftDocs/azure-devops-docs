@@ -1,5 +1,5 @@
 ---
-title: Review meeting field reference (CMMI) | Team Services & TFS
+title: Review meeting field reference (CMMI) | VSTS & TFS
 description: Definition of fields used to track review meetings in the CMMI process for Visual Studio Team Services (VSTS) and Team Foundation Server
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

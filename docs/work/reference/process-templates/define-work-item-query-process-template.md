@@ -1,5 +1,5 @@
 ---
-title: Define a work item query to add to a process template | Team Services & TFS
+title: Define a work item query to add to a process template | VSTS & TFS
 description: Use Team Explorer to create awork item query, save as a .wiq file, and add to a process template
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -115,7 +115,7 @@ AND  [Source].[System.IterationPath] UNDER '$$PROJECTNAME$$\Iteration 1'
 ```  
   
 >[!NOTE]  
->For queries made against Team Services, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
+>For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
 
 |Element|Syntax|Description|  
 |-------------|------------|-----------------|  

@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Check in your work to the team's codebase
 
-**Team Services | TFS 2015 & TFS 2017 | Visual Studio 2013 | Visual Studio 2015**
+**VSTS | TFS 2015 & TFS 2017 | Visual Studio 2013 | Visual Studio 2015**
 
 Use the **Pending Changes** page (Keyboard: Ctrl + 0, P) in Team Explorer to check in your code into a new changeset.
 

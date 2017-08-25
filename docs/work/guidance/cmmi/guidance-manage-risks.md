@@ -1,5 +1,5 @@
 ---
-title: Manage risks | Team Services & TFS
+title: Manage risks | VSTS & TFS
 description: Understand how Risk implies the actual outcomes may vary, sometimes significantly, from desired outcomes - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

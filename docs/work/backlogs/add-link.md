@@ -1,5 +1,5 @@
 ---
-title: Add links to several work items | Team Services & TFS
+title: Add links to several work items | VSTS & TFS
 description: Link several work items to other work items or to a new git branch in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)   
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 07/25/2017
 
 # Add link to work items  
 
-**Team Services | TFS 2017 | TFS 2015**    
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013**  
 
 You can add a link to a work item from within the work item form or from a backlog or query results list. From a backlog or query results list, you can [select multiple work items](bulk-modify-work-items.md#multi-select) and then link them to a new or existing work item. In general, use the bulk edit to update several work items to link to the same work item, either new or existing. 
 
@@ -36,7 +36,7 @@ For a list of all link types and supported link relationships, see [Link work it
 
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 
-#### Team Services 
+#### VSTS
 
 1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
 
@@ -44,7 +44,7 @@ For a list of all link types and supported link relationships, see [Link work it
 
 	Here we multi-select from the product backlog and choose **Existing item**&hellip;.
 
-	<img src="_img/add-link-existing-backlog-ts.png" alt="Team Services, Query results page, multi-select items, open context menu, Add link, click Link to new item item" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/add-link-existing-backlog-ts.png" alt="VSTS, Query results page, multi-select items, open context menu, Add link, click Link to new item item" style="border: 2px solid #C3C3C3;" /> 
 
 #### TFS 2017  
 
@@ -90,7 +90,7 @@ When you link work items, you select a link type. In general, use the following 
 
 	To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different team project, you can click the &hellip; context menu or Browse button (Visual Studio) to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
 
-0.  (Team Services only) To view the work items selected for linking, you can click the ![info icon](../_img/icons/info-icon.png). 
+0.  (VSTS only) To view the work items selected for linking, you can click the ![info icon](../_img/icons/info-icon.png). 
 
 	<img src="_img/add-link-related-specify-id.png" alt="Add link dialog" style="border: 2px solid #C3C3C3;" />
 
@@ -116,7 +116,7 @@ Here, we have selected to add a link to the selected work items.
 ## Link several work items to a new git branch 
 
 >[!NOTE]  
->**Feature availability**: The **New branch&hellip;** option is available from Team Services and the web portal for TFS 2017 and later versions. 
+>**Feature availability**: The **New branch&hellip;** option is available from VSTS and the web portal for TFS 2017 and later versions. 
 
 You can add a new git branch and link them to existing work items at the same time. 
 

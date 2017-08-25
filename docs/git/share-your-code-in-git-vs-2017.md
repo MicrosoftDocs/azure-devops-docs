@@ -1,5 +1,5 @@
 ---
-title: Share your code with Git using Visual Studio 2017 | Team Services & TFS
+title: Share your code with Git using Visual Studio 2017 | VSTS & TFS
 description: Share code in Git using Visual Studio 2017
 ms.assetid: d34e594b-49c8-456f-87b4-fac75ef0d5c2
 ms.prod: vs-devops-alm
@@ -46,7 +46,7 @@ Once you have a local repo, select items in the status bar to quickly navigate b
 
 0. In the **Push** view in Team Explorer, select the **Publish Git Repo** button under **Push to Visual Studio Team Services**.
 
- ![Publish your code from VS directly into Team Services](_img/share-your-code-in-git-vs/vsts_get_started_te.png)
+ ![Publish your code from VS directly into VSTS](_img/share-your-code-in-git-vs/vsts_get_started_te.png)
 
 0. Verify your email and select your account in the **Team Services Domain** drop down. 
 
@@ -71,7 +71,7 @@ You can [commit](tutorial/commits.md) changes to your local Git repository by se
  ![Add a comment and choose Commit](_img/share-your-code-in-git-vs/vs_commit_te.png)
 
 0. Select the unpublished changes status bar icon ( ![Visual Studio Unpublished Changes Status Bar icon](_img/share-your-code-in-git-vs/vs_unpublished_changes.png) ) or the **Sync** view in Team Explorer. Select **Push** to 
-update your code in Team Services/TFS.
+update your code in VSTS/TFS.
 
  ![Push your changes](_img/share-your-code-in-git-vs/vspush.png)
 
@@ -84,7 +84,7 @@ Double-click a commit to view its file changes.
 
  ![Choose Fetch to see any changes that your team has made](_img/share-your-code-in-git-vs/vs_fetch_commits.png)
 
-0. Select **Sync** to merge the fetched commits into your local repo and then [push](tutorial/pushing.md) any unpublished changes to Team Services.
+0. Select **Sync** to merge the fetched commits into your local repo and then [push](tutorial/pushing.md) any unpublished changes to VSTS.
 
  ![Choose Pull to get these commits locally](_img/share-your-code-in-git-vs/vs_sync_commits.png)
 
@@ -128,12 +128,12 @@ You can include work items in your commits through **Related Work Items** in the
 ![Adding work items to changes](_img/share-your-code-in-git-vs/vs_linked_work_items.png)
 
 Work items can be included in commits by adding #_ID_ into the commit message. For example, "Fixing bug #23 in the reporting tools" would link work item 23
-to the commit. The work item is linked when the commit is pushed to Team Services.
+to the commit. The work item is linked when the commit is pushed to VSTS.
 
 ### Can I use the Git command prompt with Visual Studio?
 
 A: Visual Studio's Team Explorer and the Git command line work great together. Changes to your repos made in either tool will be reflected in the other. 
-Make sure to install the latest release of [Git for Windows](https://git-scm.com/download/win), which has tools to help you connect to your Team Services/TFS repos.
+Make sure to install the latest release of [Git for Windows](https://git-scm.com/download/win), which has tools to help you connect to your VSTS/TFS repos.
 
 See [the Team Services Git tutorial](tutorial/gitworkflow.md) and the [command reference](command-prompt.md) for additional help using Git from the command line.
 

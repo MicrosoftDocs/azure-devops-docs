@@ -12,7 +12,7 @@ ms.date: 07/12/2017
 
 # Account Management 
 
-**Team Services**
+**VSTS**
 
 Work on apps anytime, anywhere. Use integrated, powerful, cross-platform, enterprise-level Agile tools for DevOps 
 so your team can share code, build often, test early, and ship faster.  You can connect your dev tools to VSTS cloud 

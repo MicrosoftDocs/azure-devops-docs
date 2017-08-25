@@ -1,5 +1,5 @@
 ---
-title: Develop requirements | Team Services & TFS
+title: Develop requirements | VSTS & TFS
 description: Describes the requirements what the stakeholders expect from the product and allowing them to be easily discussed with the business stakeholders, using the vocabulary and concepts of the business domain - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -228,7 +228,7 @@ Requirements describe what the stakeholders expect from the product. You should 
 ## Additional resources  
  For more information, see the following Web resources:  
   
--   [Modern Requirements Suite 4TFS](http://www.modernrequirements.com/), a requirement management software platform that bi-directionally connects Microsoft Office technologies with Team Services or TFS to increase stakeholder engagement and provide end-to-end traceability.  
+-   [Modern Requirements Suite 4TFS](http://www.modernrequirements.com/), a requirement management software platform that bi-directionally connects Microsoft Office technologies with VSTS and TFS to increase stakeholder engagement and provide end-to-end traceability.  
     
 -   [A Practical Guide to Feature Driven Development](http://go.microsoft.com/fwlink/?LinkId=179031), Stephen R. Palmer and Malcolm J. Felsing; Prentice-Hall PTR, 2002.  
   

@@ -11,15 +11,15 @@ ms.date: 08/04/2016
 
 #   Change application access policies for your account
 
-**Team Services**
+**VSTS**
 
 Visual Studio Team Services offers the capability for other apps 
-to integrate with its services and resources in your Team Services account. 
+to integrate with its services and resources in your VSTS account. 
 To access your account without asking for user credentials multiple times, 
 apps can use these authentication methods:
 
 *	[OAuth](../integrate/get-started/Authentication/oauth.md) 
-to generate tokens for accessing [REST APIs for Team Services and Team Foundation Server](../integrate/get-started/rest/basics.md). 
+to generate tokens for accessing [REST APIs for VSTS and Team Foundation Server](../integrate/get-started/rest/basics.md). 
 The [Accounts](../integrate/api/shared/accounts.md) 
 and [Profiles](../integrate/api/shared/profiles.md) 
 APIs support only OAuth.
@@ -28,7 +28,7 @@ APIs support only OAuth.
 as a single set of credentials across all tools that don't have 
 plug-in, extension, or native support. For example, 
 you can use basic authentication to access 
-[REST APIs for Team Services and TFS](../integrate/get-started/rest/basics.md), 
+[REST APIs for VSTS and TFS](../integrate/get-started/rest/basics.md), 
 but you must turn on alternate credentials.
 
 *	[SSH authentication](../git/use-ssh-keys-to-authenticate.md) 
@@ -46,9 +46,9 @@ to generate tokens for:
 	*	Clients like Xcode and Nuget that require usernames and passwords 
 		as basic credentials and don't support Microsoft account 
 		and Azure Active Directory features like multi-factor authentication 
-	*	Accessing [REST APIs for Team Services and TFS](../integrate/get-started/rest/basics.md)
+	*	Accessing [REST APIs for VSTS and TFS](../integrate/get-started/rest/basics.md)
 
-By default, your Team Services account allows access for all authentication methods. 
+By default, your VSTS account allows access for all authentication methods. 
 You can limit access, but you must specifically restrict access for each method. 
 When you deny access to an authentication method, 
 no app can use that method to access your account. 
@@ -58,7 +58,7 @@ authentication error and can't access your account.
 > To remove access for personal access tokens, 
 > you must [revoke them](use-personal-access-tokens-to-authenticate.md).
 
-To continue, you'll need at least Basic access and Team Services account owner permissions. 
+To continue, you'll need at least Basic access and VSTS account owner permissions. 
 [How do I find the account owner?](#find-owner)
 
 0.  Sign in as the account owner to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).

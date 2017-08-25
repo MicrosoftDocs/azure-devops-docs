@@ -1,5 +1,5 @@
 ---
-title: Select backlog navigation levels | Team Services & TFS  
+title: Select backlog navigation levels | VSTS & TFS  
 description: Choose which backlog and portfolio backlogs are active for your team in Visual Studio Team Services (VSTS) or Team Foundation Server  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,10 +12,10 @@ ms.date: 03/20/2017
 
 # Select backlog navigation levels for your team
 
-**Team Services | TFS 2017 | TFS 2015**
+**VSTS | TFS 2017 | TFS 2015**
 
 >[!NOTE]  
->**Feature availability**: The team setting for choosing which backlog levels are available is available from Team Services and TFS 2015 and later versions. For TFS 2013, the Feature portfolio backlog level is enabled for all teams.  
+>**Feature availability**: The team setting for choosing which backlog levels are available is available from VSTS and TFS 2015 and later versions. For TFS 2013, the Feature portfolio backlog level is enabled for all teams.  
 
 Each team can determine the backlog levels that they use. For example, feature teams may want to only focus on their product backlog, while a management team may choose to only show feature and epics (the two default portfolio backlogs). You configure which backlog levels appear from your team settings dialog. 
 
@@ -34,12 +34,12 @@ For an overview of process models, see [Customize your work tracking experience]
 ##Set your team's preferences for backlog levels
 
 >[!NOTE]  
-><b>Feature availability: </b>You can manage all your team settings from a common configuration dialog from Team Services or the web portal for TFS 2015 Update 1 or later version.  
+><b>Feature availability: </b>You can manage all your team settings from a common configuration dialog from VSTS or the web portal for TFS 2015 Update 1 or later version.  
 
 Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../scale/add-team-administrator.md).
  	
 
-**Team Services** 
+**VSTS** 
 
 1. From your team's backlog page, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) (gear icon) to open the common configuration team settings.
 
@@ -47,7 +47,7 @@ Because this setting affects all team members' view of the team backlogs and boa
 
 2. Click the **Backlogs** tab and check the boxes of those backlog levels you want your team to manage. 
 
-	<img src="_img/select-nav-backlog-levels-config-ts.png" alt="Team Services, web portal, team settings dialog, Backlogs tab" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/select-nav-backlog-levels-config-ts.png" alt="VSTS, web portal, team settings dialog, Backlogs tab" style="border: 2px solid #C3C3C3;" />
 
 3. To see the changes, open or refresh your team's backlog web page. 
  

@@ -1,5 +1,5 @@
 ---
-title: Query fields, operators, and macros/variables | Team Services & TFS
+title: Query fields, operators, and macros/variables | VSTS & TFS
 description: Descriptions for field data types, operators, and macros/variables used by the Query Editor in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 04/04/2017
 
 # Query fields, operators, and macros
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
 You find and create lists of work items by creating work item queries. By defining one or more clauses, you filter from all work items within a team project or team project collection to return the set of work items that interest you. For each clause, you specify a field, an operator, and a value or variable.  
 
@@ -90,7 +90,7 @@ The value you specify for a field must conform to the data type for that field. 
 <tr>
 	<td><p><strong>Boolean</strong> </p></td>
 	<td><p>Specifies a field that takes on a True/False value. </p>
-<blockquote style="font-size: 13px"><b>Feature availability:</b> The Boolean data type field is only supported for Team Services and TFS 2017 and later versions.    
+<blockquote style="font-size: 13px"><b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017 and later versions.    
 </blockquote>
 </td></tr>
 
@@ -216,14 +216,14 @@ You can use query operators in the following table to specify how each value in 
 	<td><p> <strong>String</strong>  that matches the name of a user group or category group in Team Foundation Server.</p>
 <blockquote><strong>Note:</strong>  You can use the <strong>In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. The operator cannot be used to query Azure Active Directory groups.
 </blockquote>
-<p>For information about category groups, see [Use categories to group work item types](../reference/use-categories-to-group-work-item-types.md). For more information about Azure Active Directory and Team Services, see [Access with Azure Active Directory groups](https://www.visualstudio.com/docs/setup-admin/vsts/manage-azure-active-directory-groups-visual-studio-team-services).</p></td></tr>
+<p>For information about category groups, see [Use categories to group work item types](../reference/use-categories-to-group-work-item-types.md). For more information about Azure Active Directory and VSTS, see [Access with Azure Active Directory groups](https://www.visualstudio.com/docs/setup-admin/vsts/manage-azure-active-directory-groups-visual-studio-team-services).</p></td></tr>
 <tr>
 	<td><p><strong>Not in Group</strong></p></td>
 	<td><p>Does not match a value that is a member of the group in the clause.</p></td>
 	<td><p> <strong>String</strong>  that matches the name of a user group in Team Foundation Server or a category group defined for a team project.</p>
 <blockquote><strong>Note:</strong>  You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. The operator cannot be used to query Azure Active Directory groups.
 </blockquote>
-<p>For more information about Azure Active Directory and Team Services, see [Access with Azure Active Directory groups](../../accounts/manage-azure-active-directory-groups-vsts.md).</p></td>
+<p>For more information about Azure Active Directory and VSTS, see [Access with Azure Active Directory groups](../../accounts/manage-azure-active-directory-groups-vsts.md).</p></td>
 </tr>
 <tr>
 	<td><p><strong>Was Ever</strong></p></td>
@@ -268,7 +268,7 @@ You can use the macros described in the following table to filter your queries b
 <tr>
 	<td>**@CurrentIteration**</td>
 	<td>Use in conjuction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](#switch-team-context). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
-<blockquote><strong>Feature availability:</strong> The **@CurrentIteration** macro is supported for Team Services and TFS 2015 and later versions. The macro only works when run from the web portal. 
+<blockquote><strong>Feature availability:</strong> The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The macro only works when run from the web portal. 
 </blockquote>
 </td>
 </tr>
@@ -277,7 +277,7 @@ You can use the macros described in the following table to filter your queries b
 	<td>**@Project**</td>
 	<td>Use in conjuction with the **Team Project** field to filter for work items in the current team project. For example, you can find all the work items in the current team project with the clause `Team Project=@Project`. 
 
-<blockquote><b>Feature availability:</b>  For Team Services and TFS 2015.1 and later versions, the system automatically defaults to filtering based on the current team project. To learn more, see [Query across team projects](using-queries.md#across-projects).    
+<blockquote><b>Feature availability:</b>  For VSTS and TFS 2015.1 and later versions, the system automatically defaults to filtering based on the current team project. To learn more, see [Query across team projects](using-queries.md#across-projects).    
 </blockquote>
 </td>
 </tr>
@@ -299,7 +299,7 @@ Specify **Contains** or **Does Not Contain** to search against exact or partial 
 For examples, see [Example work item queries](example-queries.md) and [Query for work items using the History field](history-and-auditing.md).
 
 >[!NOTE]  
->Not all deployments support full-text searches. For example, SQL Express and SQL Azure, which support Visual Studio Team Services, do not support full-text search. In these instances, you will only see the **Contains** and **Does not Contain** operators.
+>Not all deployments support full-text searches. For example, SQL Express and SQL Azure, which support VSTS platform, do not support full-text search. In these instances, you will only see the **Contains** and **Does not Contain** operators.
 
 **Contains Words** and **Does Not Contain Words** filter items based on the full-text search index created for long-text fields. Team Foundation automatically indexes all long-text fields with a data type of **PlainText** and **HTML** and the **Title** field for full-text search. The index and operators are only available when the SQL Server that supports Team Foundation Server supports full-text search.
 

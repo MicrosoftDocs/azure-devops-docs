@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Work with version control locks
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 This section describes how to lock a file or folder to prevent it from being checked out and altered. You lock a file or folder using Team Foundation version control locks.
 

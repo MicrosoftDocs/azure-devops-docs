@@ -1,5 +1,5 @@
 ---
-title: Schedule sprints | Team Services & TFS  
+title: Schedule sprints | VSTS & TFS  
 description: Add and set dates for sprints, releases, or iterations to implement Scrum and also to gain access to several built-in charts and widgets   
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 08/19/2017
 
 # Schedule sprints  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 With Scrum, teams plan and track work at regular time intervals, referred to as a sprint cadence. 
 You define sprints to correspond to the cadence your team uses. 
@@ -66,7 +66,7 @@ Each sprint that you select for your team provides access to a [sprint backlog, 
 
 For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint. 
 
-![Team Services, sprints](_img/define-sprints-selected-team-iterations-vsts.png)
+![VSTS, sprints](_img/define-sprints-selected-team-iterations-vsts.png)
 
 
 ## Related notes 

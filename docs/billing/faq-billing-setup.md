@@ -11,7 +11,7 @@ ms.date: 04/28/2017
 
 # Billing troubleshooting
 
-**Team Services**
+**VSTS**
 
 
 [!INCLUDE [browser-problems-azure](../_shared/qa-browser-problems-azure.md)]
@@ -32,16 +32,16 @@ ms.date: 04/28/2017
 
 ####Q: Why don't my options look the same?
 
-A: Your options might look different based on the Team Services account that you select 
+A: Your options might look different based on the VSTS account that you select 
 and how that account is set up:
 
-* **URL**: This list shows only the Team Services accounts that you own. 
+* **URL**: This list shows only the VSTS accounts that you own. 
 [Why don't I see any accounts?](#CannotLinkVSOAccount)
 
 * **Directory**: The name of a directory appears here only when a directory is 
-connected to the Team Services account selected in the **URL** box. 
+connected to the VSTS account selected in the **URL** box. 
 This directory controls access and authenticates users for the 
-selected Team Services account. Learn more about 
+selected VSTS account. Learn more about 
 [why a directory is connected to your account](#WhyDirectory).
 
 * **Subscription**: Appears only when you have more 
@@ -55,47 +55,47 @@ classic portal's **Subscriptions** list:
 
 ####Q: Why is a directory connected to my account?
 
-A: Your Team Services account authenticates users through a directory, 
+A: Your VSTS account authenticates users through a directory, 
 which is managed through [Azure Active Directory (Azure AD)](http://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
 This directory controls who can get access to your account 
 by requiring that all users belong to the directory to get access. 
-Your Team Services account was connected to a directory when the 
+Your VSTS account was connected to a directory when the 
 account owner created the account or sometime after that. 
 
 Your directory administrator controls who can 
 [join the directory](https://msdn.microsoft.com/library/azure/hh967632.aspx) 
-and get access. Otherwise, the Team Services account owner 
+and get access. Otherwise, the VSTS account owner 
 is solely responsible for managing access. Learn more about 
 [managing work access](../accounts/access-with-azure-ad.md) 
 for your account.
 
 <a name="CannotLinkVSOAccount"></a>
 
-####Q: Why can't I link my Team Services account?
+####Q: Why can't I link my VSTS account?
 
 A:  This might happen because:
 
-* You're not the Team Services account owner.
+* You're not the VSTS account owner.
 
 *   You're not at least Co-administrator 
 on the Azure subscription that you want to link.
 
-* If you don't see any Team Services accounts, 
+* If you don't see any VSTS accounts, 
 your account might already linked to another Azure subscription. 
 
-*   If your Team Services account uses Azure Active Directory (Azure AD) 
+*   If your VSTS account uses Azure Active Directory (Azure AD) 
     to authenticate users, you might have a different directory 
     selected in the Azure portal than the directory that's connected 
-    to your Team Services account.
+    to your VSTS account.
 
-    To select the directory that your Team Services account uses, 
+    To select the directory that your VSTS account uses, 
     open the Azure portal's **Subscriptions** list:
 
  ![Filter your subscriptions to the connected directory ](_img/set-up-billing/azuresubscriptionsfilter.png)
 
 <a name="BillingRestriction"></a>
 
-####Q: Are there billing restrictions that might stop me from linking my Team Services account to my Azure subscription?
+####Q: Are there billing restrictions that might stop me from linking my VSTS account to my Azure subscription?
 
 A:  Yes, you can link accounts in India South 
 only to Azure subscriptions with 
@@ -103,27 +103,27 @@ billing addresses in the same region.
 Otherwise, you'll see this message:
 
 "You need an Azure subscription that is 
-valid for Team Services accounts in India South."
+valid for VSTS accounts in India South."
 
-####Q: Why is my Team Services account already linked to an Azure subscription?
+####Q: Why is my VSTS account already linked to an Azure subscription?
 
-A: This happens if your Team Services account was already 
+A: This happens if your VSTS account was already 
 set up for billing with an Azure subscription, either manually 
 through Azure or while purchasing from the 
 [Visual Studio Marketplace](../marketplace/index.md)
 for your account. The selected Azure subscription is also 
 used to bill all later purchases for your account.
 
-####Q:  Can I link an Azure subscription to multiple Team Services accounts?
+####Q:  Can I link an Azure subscription to multiple VSTS accounts?
 
-A:  Yes, you can link an Azure subscription to multiple Team Services accounts. But you can't link a Team 
+A:  Yes, you can link an Azure subscription to multiple VSTS accounts. But you can't link a Team 
 Services account to multiple Azure subscriptions.
 
 <a id="azure-billing"></a>
 
 ####Q: How does Azure billing work?
 
-A: When you link your Team Services account to an Azure subscription, 
+A: When you link your VSTS account to an Azure subscription, 
 you select an eligible [Azure subscription](#AzureMSDNSubscription) 
 where you have Co-administrator permissions or greater. 
 If you don't have an Azure subscription, you can either 
@@ -135,11 +135,11 @@ Payment is set up with a credit card, or by invoice in some cases.
 Charges for your purchases will show up on your monthly Azure bill.
 
 **Note**: You must keep your Azure subscription in good standing 
-to use your Team Services purchases. If your Azure subscription 
+to use your VSTS purchases. If your Azure subscription 
 is canceled or becomes disabled, for example, because the 
 [credit card used for payment expires](#cc-expires), then any purchases with this 
 Azure subscription will be deactivated on the 1st day of next month.
-To avoid losing access to your Team Services purchases, 
+To avoid losing access to your VSTS purchases, 
 please keep your Azure subscription active and updated.
 
 For example, if you paid for users with an Azure subscription that becomes disabled, 
@@ -162,15 +162,15 @@ Learn more about [pricing here](https://www.visualstudio.com/products/visual-stu
 
 A: Sign in to the [Azure classic portal](https://manage.windowsazure.com/) 
 or the [Azure portal](https://portal.azure.com/) 
-as the Team Services account owner or at least Azure subscription Co-administrator. 
-Select your Team Services account, reduce any paid users to zero, and turn off any 
-paid team services. Your Team Services account and bill won't show any changes 
+as the VSTS account owner or at least Azure subscription Co-administrator. 
+Select your VSTS account, reduce any paid users to zero, and turn off any 
+paid team services. Your VSTS account and bill won't show any changes 
 in paid users or team services until next month when these changes take effect. 
 You're still charged for team services that you've already used.
 
 ####Q: What happens if I cancel my Azure subscription?
 
-A: Your Team Services account goes back to the free monthly limits, 
+A: Your VSTS account goes back to the free monthly limits, 
 but you'll keep any paid users or team services until next month. 
 Your account stays linked to your Azure subscription until you unlink your account, 
 or until your account unlinks automatically when your Azure subscription is disabled.
@@ -178,7 +178,7 @@ or until your account unlinks automatically when your Azure subscription is disa
 <a name="cc-expires"></a>
 ####Q: What happens if my credit card expires?
 
-A: Your Team Services account goes back to the free monthly limits, 
+A: Your VSTS account goes back to the free monthly limits, 
 but you'll keep any paid users or team services until next month. 
 Your Azure subscription will eventually become disabled, but 
 fixing this issue reactivates your subscription and restores your account's paid settings.
@@ -188,7 +188,7 @@ fixing this issue reactivates your subscription and restores your account's paid
 [!INCLUDE [azure-subscription-disabled-team-services](../_shared/qa-azure-subscription-disabled.md)]
 
 <a name="unlinking"></a>
-####Q: What happens if I unlink my Team Services account?
+####Q: What happens if I unlink my VSTS account?
 
 A: Your account will revert to the free number 
 of users and pipelines on the 1st of next month, 
@@ -197,10 +197,10 @@ reverts to your free monthly limits.
 Unlinking will cancel paid non-Microsoft 
 extensions **without refund or credit**.
 
-You can relink your Team Services account 
+You can relink your VSTS account 
 to another Azure subscription by going to 
 the Visual Studio Marketplace and repurchasing 
-Team Services users, pipelines, 
+VSTS users, pipelines, 
 or other extensions that you paid for this month. 
 You can also relink by going to the Azure portal.  If
 you've paid for any Microsoft resources this month, 
@@ -209,7 +209,7 @@ new purchases, and the Marketplace will bill immediately to your
 new Azure subscription.
 
 If you wait until the 1st of next month to relink, 
-your Team Services account will revert to the free amounts. 
+your VSTS account will revert to the free amounts. 
 Any paid users will appear expired in your account's 
 Users hub. Make sure that you repurchase any paid users 
 so they don't lose access on the 1st of next month.

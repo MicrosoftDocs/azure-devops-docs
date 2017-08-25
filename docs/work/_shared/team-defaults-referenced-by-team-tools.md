@@ -1,7 +1,7 @@
 
 <!--- Team defaults referenced by Agile tools --> 
 
->**Note**: Some features are available only from Team Services or TFS 2017 or later versions. For details, see [Set team defaults](../scale/set-team-defaults.md).
+>**Note**: Some features are available only from VSTS and TFS 2017 or later versions. For details, see [Set team defaults](../scale/set-team-defaults.md).
 
 When you define a team, you define the team's: 
 - Selected area path(s) 

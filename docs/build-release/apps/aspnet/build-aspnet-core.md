@@ -9,9 +9,9 @@ ms.author: alewis
 ms.date: 05/23/2017
 ---
 
-**VSTS | TFS 2017 Update 2 | [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx)**
-
 # Build your ASP.NET Core app
+
+**VSTS | TFS 2017 Update 2 | [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx)**
 
 [ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications. Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) process to automatically build your ASP.NET Core web app whenver your team pushes or checks in code. In this tutorial you learn how to define your CI process. 
 
@@ -53,13 +53,13 @@ ms.date: 05/23/2017
 
  * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
 
- * **TFS 2017 Update 2:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md) that can build ASP.NET Core apps.
+ * **TFS 2017 Update 2:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
 1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
 
-A new build is started. You will see a link to the new build on the top of the page. Click the link to watch the new build as it happens. Wait for the build to complete and succeed before proceeding to the next section.
+A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens. Wait for the build to complete and succeed before proceeding to the next section.
 
 ## Next steps
 

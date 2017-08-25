@@ -1,5 +1,5 @@
 ---
-title: Create a solution architecture | Team Services & TFS
+title: Create a solution architecture | VSTS & TFS
 description: Investigate alternative architectural strategies to creat good architecture - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

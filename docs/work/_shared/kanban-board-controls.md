@@ -16,7 +16,7 @@
 Enter **?** to open the Kanban board keyboard shortcuts.  
 
 >[!NOTE]  
-><b>Feature availability: </b>Global keyboard shortcuts are available from Team Services and the web portal for TFS 2015.2 and later versions.  
+><b>Feature availability: </b>Global keyboard shortcuts are available from VSTS and the web portal for TFS 2015.2 and later versions.  
 
 <img src="../_shared/_img/kanban-board-keyboard-shortcuts-ts-jul.png" alt="Kanban keyboard shortcuts" style="border: 2px solid #C3C3C3;" />  
   

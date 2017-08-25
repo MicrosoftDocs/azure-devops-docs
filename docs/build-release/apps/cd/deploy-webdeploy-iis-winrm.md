@@ -26,7 +26,7 @@ A task running on the [Build and Release agent](../../concepts/agents/agents.md)
 
 Before you begin, you'll need a CI build that publishes your Web Deploy package. To set up CI for your specific type of app, see:
 
-* [Build your ASP.NET 4 app](../aspnet/ci/build-aspnet-4.md)
+* [Build your ASP.NET 4 app](../aspnet/build-aspnet-4.md)
 
 * [Build your ASP.NET Core app](../aspnet/build-aspnet-core.md)
 

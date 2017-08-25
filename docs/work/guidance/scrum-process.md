@@ -1,5 +1,5 @@
 ---
-title: Scrum process | Team Services & TFS  
+title: Scrum process | VSTS & TFS  
 description: Scrum process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services (VSTS) or Team Foundation Server  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/11/2017
 
 # Scrum process   
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 The Scrum process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as product backlog items, tasks, bugs, and more. These artifacts are created when you create a team project using the Scrum process. They are based on [Scrum principles and values](https://www.scrum.org/). 
 
@@ -22,7 +22,7 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 
 
 >[!NOTE]  
-><b>Feature availability:</b> From the cloud-based Team Services, you'll always have access to the latest version of the Scrum process, [which you can also customize](../process/customize-process.md). If you connect to an on-premises Team Foundation Server (TFS), the latest version of the Scrum process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize team projects](../customize/customize-work.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
+><b>Feature availability:</b> From the cloud-based VSTS, you'll always have access to the latest version of the Scrum process, [which you can also customize](../process/customize-process.md). If you connect to an on-premises Team Foundation Server (TFS), the latest version of the Scrum process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize team projects](../customize/customize-work.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
 >
 >The following WITs are available as follows: Epic, TFS 2015 and later versions; 
 >Shared Parameters, TFS 2013.2 and later versions; 

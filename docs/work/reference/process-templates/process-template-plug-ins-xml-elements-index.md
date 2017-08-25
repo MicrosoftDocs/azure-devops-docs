@@ -1,5 +1,5 @@
 ---
-title: Process template plug-ins index | Team Services & TFS
+title: Process template plug-ins index | VSTS & TFS
 description: Uses to look up the syntax structure and find examples of how to use each element.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit 

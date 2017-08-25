@@ -1,5 +1,5 @@
 ---
-title: Set up Visual Studio with Team Services
+title: Set up Visual Studio with VSTS
 description: Share code with Git and manage work with Agile tools in Visual Studio Team Services (VSTS) for continuous integration and continuous delivery
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
@@ -10,15 +10,15 @@ ms.author: estfan
 ms.date: 08/04/2016
 ---
 
-#	Set up Visual Studio with Team Services
+#	Set up Visual Studio with VSTS
 
-**Team Services**
+**VSTS**
 
 When you first launch [Visual Studio 2015](https://www.visualstudio.com/products/vs-2015-product-editions), 
 you can sign in and connect to [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs).
 
 If you have already gone through Visual Studio sign in, or you are using Visual Studio 2017, then [learn how](../git/gitquickstart-vs2017.md) to connect to 
-your Team Services from the Team Explorer window.
+your VSTS from the Team Explorer window.
 
 Once connected, you can store or share code in free, unlimited, private, 
 cloud-based Git repositories or Team Foundation version control. 
@@ -26,7 +26,7 @@ Organize and manage your work using Agile tools for DevOps,
 continuous integration, and continuous delivery so your team can build often, 
 test early, and ship faster.
 
-> To set up Visual Studio without Team Services, 
+> To set up Visual Studio without VSTS, 
 > learn how to [get started here](https://msdn.microsoft.com/library/e2h7fzkw.aspx). 
 > To host your own server, 
 > learn how to [install and set up Team Foundation Server](../tfs-server/install/get-started.md).
@@ -35,14 +35,14 @@ Visual Studio Team Services is free for
 [up to 5 users with access to Basic features](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) 
 and for unlimited [Visual Studio subscribers](https://www.visualstudio.com/products/how-to-buy-vs) and 
 [Stakeholders who can access limited features](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs).
-Learn [what else you get with Team Services](https://www.visualstudio.com/pricing/visual-studio-team-services-pricing-vs). 
-If you want, you can also use Team Services with any IDE or code editor, like:
+Learn [what else you get with VSTS](https://www.visualstudio.com/pricing/visual-studio-team-services-pricing-vs). 
+If you want, you can also use VSTS with any IDE or code editor, like:
 
 *	[Eclipse, Android Studio, or IntelliJ](http://java.visualstudio.com/Docs/tools/intro)
 *	Xcode (see [Git](../git/share-your-code-in-git-xcode.md) or [TFVC](../tfvc/share-your-code-in-tfvc-xcode.md))
 *	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-##	How do I set up Visual Studio 2015 for Team Services during sign in?
+##	How do I set up Visual Studio 2015 for VSTS during sign in?
 
 0.  [Download and install Visual Studio](https://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409), 
 if you don't have the version you want already. 
@@ -72,12 +72,12 @@ then enter your password.
 
 	![Create your profile](_img/set-up-vs/profile-account-details.png)
 
-0.	Give your Team Services account a name, 
+0.	Give your VSTS account a name, 
 and confirm its location. 
 
 	![Name your account, confirm its location](_img/set-up-vs/profile-account-details2.png)
 
-	[How can I create a Team Services account later](#WhatIsVSO) or [change its location?](#change-location)
+	[How can I create a VSTS account later](#WhatIsVSO) or [change its location?](#change-location)
 
 0.	Create your first team project to store your code, 
 work items, backlog, builds, tests, and other assets. 
@@ -100,14 +100,14 @@ or change them later in Visual Studio options.
 	These changes are saved with your profile, 
 	and your settings roam with you wherever you sign in. 
 
-0.	To view your new Team Services account, 
+0.	To view your new VSTS account, 
 	sign in to ```https://{youraccount}.visualstudio.com```. 
 
-    [Having browser problems with Team Services?](#browser-problems)
+    [Having browser problems with VSTS?](#browser-problems)
 
 ####	Next
 
-*	[Add users to your Team Services account](add-account-users-assign-access-levels.md)
+*	[Add users to your VSTS account](add-account-users-assign-access-levels.md)
 
 *	Add code to [Git](../git/share-your-code-in-git-vs.md) 
 or [Team Foundation](../tfvc/share-your-code-in-tfvc-vs.md) version control
@@ -140,7 +140,7 @@ learn [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.
 *	Visual Studio Express or Community: Continue to use this edition for free
 
 When you create your profile, 
-you can also create a Team Services account. 
+you can also create a VSTS account. 
 
 Learn more about 
 [the benefits of signing in and creating a profile](https://msdn.microsoft.com/library/dn457348.aspx). 

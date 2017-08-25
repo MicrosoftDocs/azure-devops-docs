@@ -1,5 +1,5 @@
 ---
-title: Protect your Git branches with policies | Team Services & TFS
+title: Protect your Git branches with policies | VSTS & TFS
 description: Branch policies provide teams with the means to protect their important branches.
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
 ms.topic: code reference (API)
@@ -11,7 +11,7 @@ ms.date: 08/23/2017
 ---
 
 #  Improve code quality with branch policies
-#### Team Services | TFS 2015 & TFS 2017
+#### VSTS | TFS 2015 & TFS 2017
 
 Branch policies help teams protect their important [branches](tutorial/branches.md) of development. 
 Policies enforce your team's code quality and change management standards.

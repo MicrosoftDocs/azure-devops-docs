@@ -1,5 +1,5 @@
 ---
-title: Attachment upload failed with the error: The underlying connection was closed: An unexpected error occurred on a receive | Team Services & TFS
+title: Attachment upload failed with the error: The underlying connection was closed: An unexpected error occurred on a receive | VSTS & TFS
 description: This message might appear in a dialog box when you save a work item that has attachments 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

@@ -1,5 +1,5 @@
 ---
-title: Track bugs | Team Services & TFS
+title: Track bugs | VSTS & TFS
 description: Use the bug work item to describe and track progress for each bug that you find.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

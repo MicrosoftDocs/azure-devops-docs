@@ -1,5 +1,5 @@
 ---
-title: Add a custom control to a WIT | Team Services  
+title: Add a custom control to a WIT | VSTS  
 description: Customize a process by adding or modifying a custom control for work item type when working in Visual Studio Team Services (VSTS) 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -30,12 +30,12 @@ For example, you can add the [**Who recently viewed a work item?** extension](ht
 ## Add a Marketplace extension   
 
 Browse the Marketplace to determine what extension(s) you want to add. To install an extension, see these topics: 
-- [Get extensions for Team Services](../../marketplace/install-vsts-extension.md)
+- [Get extensions for VSTS](../../marketplace/install-vsts-extension.md)
 - [Get extensions for TFS](../../marketplace/get-tfs-extensions.md)
 
 From the admin context, Extensions hub, you can view the extensions that are already installed.    
 
-<img src="_img/custom-controls-extensions-admin-page-ts.png" alt="Account settings, Extensions page, Team Services" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/custom-controls-extensions-admin-page-ts.png" alt="Account settings, Extensions page, VSTS" style="border: 2px solid #C3C3C3;" />  
 
 You may need to click ![Refresh](_img/custom-controls-refresh_extensions.png) to refresh the page to show newly installed extensions. 
 

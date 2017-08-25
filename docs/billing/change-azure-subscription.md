@@ -1,6 +1,6 @@
 ---
-title: Change the Azure subscription your Team Services account uses for billing
-description: Change the Azure subscription your Team Services account uses for billing
+title: Change the Azure subscription your VSTS account uses for billing
+description: Change the Azure subscription your VSTS account uses for billing
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
@@ -10,19 +10,19 @@ ms.author: estfan
 ms.date: 04/28/2017
 ---
 
-# Change the Azure subscription your Team Services account uses for billing
+# Change the Azure subscription your VSTS account uses for billing
 
-**Team Services**
+**VSTS**
 
 
-If you want to use another Azure subscription to bill purchases for your Team Services account, 
-you can unlink your Team Services account from your current Azure subscription, 
-and relink your account to another Azure subscription that's associated with you as the Team Services account owner. 
+If you want to use another Azure subscription to bill purchases for your VSTS account, 
+you can unlink your VSTS account from your current Azure subscription, 
+and relink your account to another Azure subscription that's associated with you as the VSTS account owner. 
 
 
 ## What do I need to change my Azure subscription?
 
-* Team Services project collection administrator or account owner permissions ([How do I find the project collection administrator or account owner permissions](#find-owner))
+* VSTS project collection administrator or account owner permissions ([How do I find the project collection administrator or account owner permissions](#find-owner))
 
 * At least [an **owner** or **contributor** role](#AddAzureAdmin) for both Azure subscriptions
 
@@ -44,9 +44,9 @@ and relink your account to another Azure subscription that's associated with you
 > billed immediately to your new Azure subscription.
 >
 > If you wait until the 1st of next month to relink, 
-> your Team Services account will revert back to the free amounts, 
+> your VSTS account will revert back to the free amounts, 
 > for example, 5 free users. This means that if you have 
-> any paid users, they'll appear expired in your Team Services account. 
+> any paid users, they'll appear expired in your VSTS account. 
 > So, make sure to restore any paid users so they don't lose access 
 > on the 1st of next month.
 
@@ -55,27 +55,27 @@ and relink your account to another Azure subscription that's associated with you
 ## Change subscription
 
 0. [Sign in to the Azure portal](https://portal.azure.com/) 
-as Team Services account owner and as Azure subscription Co-administrator or greater.
+as VSTS account owner and as Azure subscription Co-administrator or greater.
    
     If you experience browser problems with Azure, 
     make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
-0. Go to **More services** > **Developer tools** > **Team Services accounts**. 
-Select your Team Services account.
+0. Go to **More services** > **Developer tools** > **VSTS accounts**. 
+Select your VSTS account.
 
- ![More services, Developer tools, Team Services, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
+ ![More services, Developer tools, VSTS, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
 
 0. Unlink your account.
 
  ![Unlink your account](_img/_shared/azure-portal-unlink-subscription.png)
 
- Your Team Services account is removed from Azure. 
+ Your VSTS account is removed from Azure. 
  You'll now relink your account to a new Azure subscription.
 
-0. Go to **More services** > **Developer tools** > **Team Services accounts**. 
-Select your Team Services account.
+0. Go to **More services** > **Developer tools** > **VSTS accounts**. 
+Select your VSTS account.
 
- ![More services, Developer tools, Team Services accounts, select your account](_img/set-up-billing/ap_vso_startlink2.png)
+ ![More services, Developer tools, VSTS accounts, select your account](_img/set-up-billing/ap_vso_startlink2.png)
 
 0. Select your Azure subscription. 
 Finish relinking your account.
@@ -85,7 +85,7 @@ Finish relinking your account.
  After you finish relinking, 
  your account reappears in the Azure portal with 
  your selected Azure subscription.  For more details, see 
- [how to link your Team Services account to an Azure subscription](#AzurePortal).
+ [how to link your VSTS account to an Azure subscription](#AzurePortal).
 
 0. Follow these steps to restore any 
 [paid users](buy-basic-access-add-users.md) or 

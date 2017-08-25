@@ -1,5 +1,5 @@
 ---
-title: Pull requests | Team Services & TFS
+title: Pull requests | VSTS & TFS
 description: Pull requests
 ms.assetid: 6ba68828-c05d-4afa-b29f-9ca39be5a0ce
 ms.prod: vs-devops-alm

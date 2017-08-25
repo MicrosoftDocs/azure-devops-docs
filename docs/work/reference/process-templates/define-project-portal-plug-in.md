@@ -1,5 +1,5 @@
 ---
-title: Define the project portal plug-in for a process template | Team Services & TFS
+title: Define the project portal plug-in for a process template | VSTS & TFS
 description: Use the portal plug-in to define the initial document libraries, library structure, and documents of a team project's portal - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -25,7 +25,7 @@ The tasks that you specify in the plug-in for SharePoint Products are run only w
 >[!IMPORTANT]  
 >When you create a team project from the web portal, several process template files are ignored. Specifically, the  WssTasks.xml plug-in file that would create a SharePoint site is ignored. 
 >
->For Team Services, the SharePoint site isn't supported. If you want to add a SharePoint site for your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).  
+>For VSTS, the SharePoint site isn't supported. If you want to add a SharePoint site for your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).  
 
   
 <a name="name"></a> 

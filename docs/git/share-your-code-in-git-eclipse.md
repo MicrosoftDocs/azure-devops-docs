@@ -1,5 +1,5 @@
 ---
-title: Share your Eclipse project with Git | Team Services & TFS
+title: Share your Eclipse project with Git | VSTS & TFS
 description: Share code in Git using Eclipse
 ms.assetid: a00b91da-9f74-44f2-8c48-04bfd50a74c3
 ms.prod: vs-devops-alm
@@ -11,15 +11,15 @@ ms.date: 08/10/2017
 ---
 
 # Share your code in Git using Eclipse
-#### Team Services | TFS 2015 & 2017
+#### VSTS | TFS 2015 & 2017
 
-Share your Eclipse project with your team in a Team Services/TFS Git repo. If you don’t have a VSTS account, you can [sign up](../accounts/create-account-with-work-school.md) for one for free. Each account includes free, unlimited private Git repositories.
+Share your Eclipse project with your team in a VSTS/TFS Git repo. If you don’t have a VSTS account, you can [sign up](../accounts/create-account-with-work-school.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 <a name="git"></a>
 
 ## Use Team Explorer Everywhere
 
-[Team Explorer Everywhere](https://www.visualstudio.com/en-us/products/team-explorer-everywhere-vs.aspx) is an [open-source](https://github.com/Microsoft/team-explorer-everywhere) Eclipse plug-in to connect Eclipse to Team Services or Team Foundation Server. If you're working with Team Services/TFS and Eclipse, use this plugin to connect to your repos, builds, and work items. 
+[Team Explorer Everywhere](https://www.visualstudio.com/en-us/products/team-explorer-everywhere-vs.aspx) is an [open-source](https://github.com/Microsoft/team-explorer-everywhere) Eclipse plug-in to connect Eclipse to Team Services or Team Foundation Server. If you're working with VSTS/TFS and Eclipse, use this plugin to connect to your repos, builds, and work items. 
 
 0. [Install the Team Explorer Everywhere plug-in](http://java.visualstudio.com/docs/tools/eclipse#_install-the-tee-plugin-for-eclipse).
 
@@ -36,7 +36,7 @@ Share your Eclipse project with your team in a Team Services/TFS Git repo. If yo
    > If you don't have a Team Services account, select **Sign up for Visual Studio Team Services** to create an account now.
 
 0. If you know your Team Services or Team Foundation Server account URL, select the **Servers...** button under **Connect to a Team Foundation Server or Team Services account** to add your TFS server or account to the drop-down list. 
-If you don't know your account information for Team Services, select **Browse Visual Studio Services** and select **Next**.
+If you don't know your account information for VSTS, select **Browse Visual Studio Services** and select **Next**.
 
    ![Add Existing Team Project Dialog](_img/share-your-code-in-git-eclipse/tee_existing_team_project.png)
 
@@ -46,7 +46,7 @@ If you don't know your account information for Team Services, select **Browse Vi
 
 ## Create a local Git repo for your Eclipse project
 
-Before you can push your project to Team Services, you need to add it to a local Git repo.
+Before you can push your project to VSTS, you need to add it to a local Git repo.
 
 > If your code is already in a local Git repo, you can skip this step.
 
@@ -60,13 +60,13 @@ Before you can push your project to Team Services, you need to add it to a local
 
     ![Commit your code with Git in Eclipse](_img/share-your-code-in-git-eclipse/commit_files_in_eclipse.png)
 
-## Push your project to your Team Services/TFS repo
+## Push your project to your VSTS/TFS repo
 
 0. In Team Explorer Everywhere, select **Git Repositories**, then right-click the empty repo you want to push your Eclipse project to and select **Copy Clone URL**.
 
     ![Copy the Git repo clone URL in Team Explorer Everywhere with a right-click](_img/share-your-code-in-git-eclipse/tee_copy_clone_url.png)
 
-    > If you don't have an empty Git repo created in Team Services/TFS yet, you can create one using [these instructions](create-new-repo.md).
+    > If you don't have an empty Git repo created in VSTS/TFS yet, you can create one using [these instructions](create-new-repo.md).
     
 0. In Package Explorer, right-click your project and Select **Team, Push Branch ...** . Paste the clone URL from the clipboard into the **URI** field and select **Next**. Make sure **Configure upstream for push and pull** is selected in the next window and select **Next**.
 

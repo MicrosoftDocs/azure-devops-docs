@@ -1,5 +1,5 @@
 ---
-title: XML element index | Team Services & TFS
+title: XML element index | VSTS & TFS
 description: Index of XML elements used to customize the work tracking experience for Hosted XML and On-premises XML process models for Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -12,7 +12,7 @@ ms.date: 04/04/2017
 
 # XML element reference
 
-<b>Team Services (Hosted XML) | TFS 2017 | TFS 2015 </b> 
+<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b> 
 
 >[!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize a process](../process/customize-process.md). 
@@ -46,7 +46,7 @@ By using the index of elements in this topic, you can look up the syntax structu
  The following table provides an index to the reference topics for all child elements of the parent container element. Also, you can access the topic that provides detailed information and examples for each child element.  
 
 >[!NOTE]  
->**Feature availability:**&#160;&#160;The new form elements (**FORM-WebLayout**) and its corresponding features are available from Team Services and the web portal for TFS 2017. To learn more about the new for, see [enable the new form](../process/new-work-item-experience.md)<br/> 
+>**Feature availability:**&#160;&#160;The new form elements (**FORM-WebLayout**) and its corresponding features are available from VSTS and the web portal for TFS 2017. To learn more about the new for, see [enable the new form](../process/new-work-item-experience.md)<br/> 
 > - For users of Team Services working with [hosted XML customization](../import-process/import-process.md), an admin is required to [enable the new form](../customize/manage-new-form-rollout.md).<br/>
 > - For TFS 2017 users, the new form is automatically available when you add team projects to a new collection. For existing team projects, an admin is required to [enable the new form](../customize/manage-new-form-rollout.md).<br/>
 > - For TFS 2015 users, the new form isn't available. Use the (**FORM-Layout**) elements to customize your WIT definitions. You must [upgrade to TFS 2017 or later version](https://www.visualstudio.com/downloads/#team-foundation-server-2017) to access the new form.  

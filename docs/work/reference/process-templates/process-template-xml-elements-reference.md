@@ -1,5 +1,5 @@
 ---
-title: Process template XML elements reference | Team Services & TFS
+title: Process template XML elements reference | VSTS & TFS
 description: Processes the template for adding or removing plug-in files.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

@@ -1,5 +1,5 @@
 ---
-title: Query by title, ID, or rich-text fields | Team Services & TFS
+title: Query by title, ID, or rich-text fields | VSTS & TFS
 description: Example work queries based on titles, IDs, rich-text fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 04/14/2017
 
 # Query by titles, IDs, and rich-text fields
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
 When you want to find work items based on a keyword or phrase, you can do so by entering the [keyword or phrase within the search box](search-box-queries.md#keywords). This initiates a new query which you can modify as needed to further refine your filter criteria, as described in this topic. 
 
@@ -127,7 +127,7 @@ Team Project
 </td>
 <td>
 <p>The team project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more team projects. </p>
-<blockquote>**Note:**&#160;&#160;For Team Services or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see [Example queries, query across team projects](using-queries.md#across-projects). </blockquote>
+<blockquote>**Note:**&#160;&#160;For VSTS or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see [Example queries, query across team projects](using-queries.md#across-projects). </blockquote>
  
 	<p>Reference name=System.TeamProject, Data type=String</p>
 </td>

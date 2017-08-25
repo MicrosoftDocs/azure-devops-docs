@@ -1,6 +1,6 @@
 ---
-title: Set Git branch security and permissions |  Team Services & TFS
-description: Set permissions for Git branches in Team Services/TFS.
+title: Set Git branch security and permissions |  VSTS & TFS
+description: Set permissions for Git branches in VSTS/TFS.
 ms.assetid: 0dacda14-c251-4a89-8141-ae60a47dab52
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
@@ -42,7 +42,7 @@ Enter the display name or their Microsoft Account, then select **Save Changes**.
 Remove permissions for a user or group by selecting the user or VSTS group, then selecting **Remove**. 
 The user or group will still exist in your Team Project and this change will not affect other permissions for the user or group.    
 
-![Remove branch permissions for a user in Team Services or TFS](_img/branches/remove_permissions.png)
+![Remove branch permissions for a user in VSTS or TFS](_img/branches/remove_permissions.png)
  
 ## Set permissions 
 

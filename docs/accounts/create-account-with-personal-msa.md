@@ -1,6 +1,6 @@
 ---
 title: Create your VSTS account with a personal Microsoft account
-description: Create your Team Services account with a personal Microsoft account
+description: Create your VSTS account with a personal Microsoft account
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -12,7 +12,7 @@ ms.date: 03/30/2017
 
 #	Create your VSTS account with a personal Microsoft account
 
-**Team Services**
+**VSTS**
 
 Sign up for a [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs) 
 account to upload and share code in free unlimited private 
@@ -34,7 +34,7 @@ so your team can build often, test early, and ship faster.
 ##	What do I need to sign up for a Visual Studio Team Services account?
 
 *	To get started quickly and use only Microsoft accounts 
-	with your Team Services account, see below. 
+	with your VSTS account, see below. 
 
 	Don't have a Microsoft account? 
 	You can create a Microsoft account 
@@ -46,10 +46,10 @@ so your team can build often, test early, and ship faster.
 
 Use your Microsoft account if you don't need to authenticate users 
 for an organization with [Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
-All users must sign in with Microsoft accounts to your Team Services account.
+All users must sign in with Microsoft accounts to your VSTS account.
 
-Use your work or school account to **automatically connect** your Team Services account to your organization's directory. 
-All users must be members in that directory to get access to your Team Services account.
+Use your work or school account to **automatically connect** your VSTS account to your organization's directory. 
+All users must be members in that directory to get access to your VSTS account.
 
 
 <a name="MicrosoftAccount"></a>
@@ -90,14 +90,14 @@ To manage your code, choose Git or Team Foundation Version Control.
 
 	![Rename team project, change account location, or select another process](_img/sign-up-visual-studio-team-services/check-account-location-standard.png)
 	
-	Team Services will create your first team project as "MyFirstProject" 
+	VSTS will create your first team project as "MyFirstProject" 
 	and will use Agile as your default work item process to organize your work. 
 	Choose **Change details** to 
 	[rename your team project, change the account location, or select another process, like Scrum](#account-location).
 
 	> [!IMPORTANT]
-	> After you create your account, only members of the directory shown here can get access to your Team Services
-	> account. If you belong to multiple directories, check that you want to connect this directory to your Team Services account.
+	> After you create your account, only members of the directory shown here can get access to your VSTS
+	> account. If you belong to multiple directories, check that you want to connect this directory to your VSTS account.
 	> Otherwise, change the directory now. This is easier than [changing the directory later](#ChangeDirectory).
 
 0.	After Visual Studio Team Services creates your account and team project, 
@@ -107,12 +107,12 @@ add your code, work items, or more users.
 
 	Congratulations, you're now a Visual Studio Team Services account owner! 
 
-	To sign in to your Team Services account at any time, go to ```https://{youraccount}.visualstudio.com```.
+	To sign in to your VSTS account at any time, go to ```https://{youraccount}.visualstudio.com```.
 
 	> [!NOTE]
-	> If you activated your Visual Studio subscription with a Microsoft account, and your subscription includes Team Services
+	> If you activated your Visual Studio subscription with a Microsoft account, and your subscription includes VSTS
 	> as a benefit, learn [how to add your work or school account](../billing/link-msdn-subscription-to-organizational-account-vs.md) to your
-	> subscription so you can use your subscriber benefits in Team Services.
+	> subscription so you can use your subscriber benefits in VSTS.
 
 
 ## Next steps  

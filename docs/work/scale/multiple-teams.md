@@ -1,5 +1,5 @@
 ---
-title: Add a team, add team members | Team Services & TFS 
+title: Add a team, add team members | VSTS & TFS 
 description: Add another team or a hierarchy of teams to scale your Agile tools-product and sprint backlogs, Kanban and task boards     
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -9,17 +9,14 @@ ms.author: kaelli
 ms.date: 08/15/2017
 ---
 
-
-
 # Add teams and team members  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
-
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 As your organization grows, you'll want to make sure that you configure your Agile tools to support that growth. To enable each feature team the autonomy it needs to manage their backlog and plan their sprints, they need their own set of team tools. 
 
 >[!NOTE]  
->This topic describes how to add a team or team members to Team Services or TFS. To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
+>This topic describes how to add a team or team members to VSTS and TFS. To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
 >
 >For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](https://www.visualstudio.com/learn/scale-agile-large-teams/) article.
 
@@ -48,7 +45,7 @@ If you're not a project administrator, [get added as one](../../accounts/add-adm
 Add and configure two teams, Email and Voice. Here we show you how to add and configure the Email team. 
 
 <!--- 
-#### Team Services, TFS 2017  
+#### VSTS, TFS 2017  
 -->
 
 <a id="add-team-team-services" /> 
@@ -103,12 +100,12 @@ If you're moving from one team to two teams, team members already have access to
 Several Agile tools, like capacity planning and team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts of team members to support planning activities or sending alerts. 
 
 > [!NOTE]   
-> If you use Team Services, you must first [add user accounts to the team project](../../accounts/add-account-users-assign-access-levels.md) or [setup your account to work with Azure AD](../../accounts/access-with-azure-ad.md). This way user accounts will be available to add to a team.
+> If you use VSTS, you must first [add user accounts to the team project](../../accounts/add-account-users-assign-access-levels.md) or [setup your account to work with Azure AD](../../accounts/access-with-azure-ad.md). This way user accounts will be available to add to a team.
 >
 >For TFS, the first time you add an account you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md).
 
 <!---
-#### Team Services, TFS 2017  
+#### VSTS, TFS 2017  
 -->
 
 <a id="add-team-members-team-services" /> 

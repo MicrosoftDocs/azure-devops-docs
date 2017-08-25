@@ -1,5 +1,5 @@
 ---
-title: FIELD (Definition) element reference | Team Services & TFS
+title: FIELD (Definition) element reference | VSTS & TFS
 description: Syntax and usage of the FIELD element used to specify data fields within a work item type 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -12,7 +12,7 @@ ms.date: 06/16/2017
 
 # FIELD (Definition) element reference
 
-<b>Team Services (Hosted XML) | TFS 2017 | TFS 2015 </b> 
+<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b> 
 
 >[!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize a process](../process/customize-process.md).
@@ -27,7 +27,7 @@ You use the **FIELD** (Definition) element to define a work item field and speci
 ## Syntax  
   
 >[!NOTE]  
-><b>Feature availability:</b> The Boolean data type is supported for Team Services and for on-Premises TFS, for TFS 2017.2 and later versions. 
+><b>Feature availability:</b> The Boolean data type is supported for VSTS and for on-Premises TFS, for TFS 2017.2 and later versions. 
 
 ```  
 <FIELD name="fieldDisplayName" refname="fieldReferenceName" type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID | Boolean"   

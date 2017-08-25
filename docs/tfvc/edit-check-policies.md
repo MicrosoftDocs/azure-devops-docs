@@ -11,7 +11,7 @@ ms.date: 08/18/2016
 
 # Edit Check-In Policies
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Administrators of Team Foundation version control can add and edit check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to version control; for example a user can be required to associate a work item with a changeset. For more information on check-ins, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411). Before editing a check-in policy, you must first create one. For more information, see [Add Check-In Policies](add-check-policies.md). The default available check-in policy types include:
 

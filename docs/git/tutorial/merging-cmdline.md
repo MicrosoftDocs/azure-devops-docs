@@ -1,5 +1,5 @@
 ---
-title: Resolve Git merge conflicts (command line) | Team Services & TFS
+title: Resolve Git merge conflicts (command line) | VSTS & TFS
 description: Resolving Merge Conflicts in Git from Visual Studio or the command line.
 ms.assetid: a5dcc022-f74e-4a2b-b591-4f553dfd06a4
 ms.prod: vs-devops-alm

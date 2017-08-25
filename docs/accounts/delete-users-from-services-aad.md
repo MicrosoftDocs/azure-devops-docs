@@ -1,6 +1,6 @@
 ---
-title: Delete users from Team Services connected to Azure AD
-description: Delete users from Team Services connected to Azure AD
+title: Delete users from VSTS connected to Azure AD
+description: Delete users from VSTS connected to Azure AD
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-admin
@@ -10,15 +10,15 @@ ms.author: estfan
 ms.date: 1/19/2017
 ---
 
-#	Delete users from Team Services connected to Azure AD
+#	Delete users from VSTS connected to Azure AD
 
-**Team Services**
+**VSTS**
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with VSTS.
 
 
-You can just [delete the user from each Team Services account](delete-account-users.md) 
-where you need to remove them. If you delete the user only from Azure AD, they may still show up in Team Services, but 
+You can just [delete the user from each VSTS account](delete-account-users.md) 
+where you need to remove them. If you delete the user only from Azure AD, they may still show up in VSTS, but 
 they won't be able to sign in.
 
 0.  [Sign in to the Azure classic portal](https://manage.windowsazure.com/) 
@@ -30,7 +30,7 @@ as the directory administrator in Azure.
 
 0.  Go to **Visual Studio Team Services**. 
 Find the Azure AD that's connected to your 
-Team Services account.
+VSTS account.
 
     ![Find the directory connected to your account](_img/manage-work-access/azurefindconnecteddirectory.png)
 
@@ -39,7 +39,7 @@ Team Services account.
 0.	Follow [these steps](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-delete-user-azure-portal) on the azure portal.
 
 0.  [Remove the user](delete-account-users.md) 
-from your Team Services account and reassign their access levels, if necessary.
+from your VSTS account and reassign their access levels, if necessary.
 
 
 

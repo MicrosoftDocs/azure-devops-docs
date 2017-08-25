@@ -1,5 +1,5 @@
 ---
-title: Agile glossary | Team Services & TFS
+title: Agile glossary | VSTS & TFS
 description: Key definitions for objects and items used to track work - Visual Studio Team Services (VSTS) and Team Foundation 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

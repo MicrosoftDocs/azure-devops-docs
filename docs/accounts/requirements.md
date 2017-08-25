@@ -12,7 +12,7 @@ ms.date: 03/02/2016
 
 # Requirements and compatibility
 
-**Team Services** | **TFS 2017** | **TFS 2015** | **TFS 2013**
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 <a name="operating-systems"></a>
 ## Operating systems
@@ -581,13 +581,13 @@ and to access TFS with the web client.
 
 Version        | Edge        | Internet Explorer | Safari (Mac)   | Firefox     | Chrome
 ---------------|-------------|-------------------|----------------|-------------|-------------
-Team Services  | most recent | 11 and later      | 9.1 and later  | most recent | most recent
+VSTS  | most recent | 11 and later      | 9.1 and later  | most recent | most recent
 TFS 2017       | most recent | 11 and later      | 9.1 and later  | most recent | most recent
 TFS 2015       | most recent | 9 and later       | 5 and later    | most recent | most recent
 TFS 2013       |             | 9 and later       | 5 and later    | most recent | most recent
 
 Edge, Firefox, and Chrome automatically update themselves, 
-so Team Services and TFS support the most recent version.
+so VSTS and TFS support the most recent version.
 
 ### Office
 

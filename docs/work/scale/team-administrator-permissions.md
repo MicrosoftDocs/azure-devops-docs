@@ -1,5 +1,5 @@
 ---
-title: Team administrator permissions | Team Services & TFS 
+title: Team administrator permissions | VSTS & TFS 
 description: Understand what permissions are granted to team administrators  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 08/15/2017
 
 # Permissions granted to the team administrator role
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>
 
 While most permissions are governed by belonging to a security group or defined at the object level, team settings are managed by the team administrator role.
 
@@ -60,7 +60,7 @@ Team administrators can fully customize the team's Kanban boards associate with 
 
 ## Add and manage team dashboards   
 
-Team administrators can add, configure, and manage permissions (Team Services and TFS 2017) for team dashboards. For details, see [Add and manage dashboards](../../report/dashboard-permissions.md#set-permissions). 
+Team administrators can add, configure, and manage permissions (VSTS and TFS 2017) for team dashboards. For details, see [Add and manage dashboards](../../report/dashboard-permissions.md#set-permissions). 
 
  
 ## Set working days off    	

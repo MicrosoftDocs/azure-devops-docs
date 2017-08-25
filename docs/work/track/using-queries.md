@@ -1,5 +1,5 @@
 ---
-title: Create managed queries with the Query Editor | Team Services & TFS
+title: Create managed queries with the Query Editor | VSTS & TFS
 description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,11 +12,10 @@ ms.date: 08/11/2017
 
 # Use the query editor to create managed queries  
 
-<!---
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
---> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
-You can create queries in Team Services, the  web portal for Team Foundation Server (TFS), and Team Explorer. Also, you can open a query in [Excel](../office/bulk-add-modify-work-items-excel.md) or [Project](../office/create-your-backlog-tasks-using-project.md) to perform bulk additions and modifications.  
+
+You can create queries in VSTS, the  web portal for Team Foundation Server (TFS), and Team Explorer. Also, you can open a query in [Excel](../office/bulk-add-modify-work-items-excel.md) or [Project](../office/create-your-backlog-tasks-using-project.md) to perform bulk additions and modifications.  
 
 For details on constructing query clauses and information on each query operator&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash;and macros, see [Query fields, operators, and macros](query-operators-variables.md). For an index of example queries, see [Create managed queries](example-queries.md#examples). 
 
@@ -49,7 +48,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 2.	Edit the query to find closed bugs and then run the query. 
 	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current team project. To find work items defined in several team projects, see [Query across team projects](using-queries.md#across-projects).   
 	
-	**Team Services, TFS 2017, TFS 2015:**  
+	**VSTS, TFS 2017, TFS 2015:**  
 	
 	<img src="_img/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 2px solid #C3C3C3;" />  
 
@@ -137,16 +136,16 @@ To learn more about each link type, see [Link work items to support traceability
 By default, shared queries and new queries are scoped to the current team project. However, you can create queries to find work items defined within the team project collection. You save cross-project queries under a specific team project.     
 
 > [!NOTE]  
-> <b>Feature availability: </b>The **Query across projects** feature is supported from Team Services and the web portal for TFS 2015.1 or later version.  
+> <b>Feature availability: </b>The **Query across projects** feature is supported from VSTS and the web portal for TFS 2015.1 or later version.  
 
-### Team Services and TFS 2015.1  
+### VSTS and TFS 2015.1  
 To list work items defined in two or more team projects, checkmark **Query across projects**. For example, the following query finds all features created in all team projects within the last 30 days.
  
 <img src="_img/using-queries-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across team projects" style="border: 2px solid #C3C3C3;" /> 
 
 With the Query across projects checked, you can add the Team Project field to filter to a select number of team projects.   
 
-<img src="_img/using-queries-query-across-select-projects.png" alt="Team Services and TFS 2015.1, Web portal, Query across select team projects using the In operator" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/using-queries-query-across-select-projects.png" alt="VSTS and TFS 2015.1, Web portal, Query across select team projects using the In operator" style="border: 2px solid #C3C3C3;" /> 
 
 >[!NOTE]  
 >Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
@@ -196,7 +195,7 @@ From the query editor in Team Explorer, use the File menu to save a query as a .
 ### Define a query as a hyperlink  
 The easiest way to define a hyperlink is to create a query that matches what you want and then copy the URL for the query. The hyperlink uses the work item query language (WIQL), which resembles Transact-SQL. For details about constructing WIQLs, see [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md).
 
-Team Services and TFS 2015 require that you encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
+VSTS and TFS 2015 require that you encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
 
 TFS 2013 and previous versions didn't require encoding.  
 
@@ -204,7 +203,7 @@ TFS 2013 and previous versions didn't require encoding.
 >Most browsers enforce a limit of between 2000 and 2083 characters for a URL string.    
 
 
-**Team Services syntax**
+**VSTS syntax**
 
 ```  
 https://{youraccount}.visualstudio.com/DefaultCollection/{TeamProjectName}/{TeamName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage]
@@ -281,4 +280,4 @@ See also:
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
  
 > [!NOTE]  
-> For queries made against Team Services, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
+> For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  

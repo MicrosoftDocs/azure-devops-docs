@@ -1,5 +1,5 @@
 ---
-title: Tab XML element reference | Team Services & TFS
+title: Tab XML element reference | VSTS & TFS
 description: Uses to cluster a group of fields or to support one or more special controls.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

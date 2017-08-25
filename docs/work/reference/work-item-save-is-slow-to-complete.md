@@ -1,5 +1,5 @@
 ---
-title: Work item save is slow to complete | Team Services & TFS
+title: Work item save is slow to complete | VSTS & TFS
 description: Occurs when you save a work item.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

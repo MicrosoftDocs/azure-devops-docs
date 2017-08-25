@@ -1,5 +1,5 @@
 ---
-title: Rebuild the client cache | Team Services & TFS
+title: Rebuild the client cache | VSTS & TFS
 description: Update the data cache on client computers after certain maintenance operations.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -15,7 +15,7 @@ ms.date: 02/14/2017
 
 
 >[!NOTE]  
->This topic applies to team project customization for the On-premises XML process model. You can't exercise the **witadmin rebuildcache** command against a Team Services account.   <br/><br/>
+>This topic applies to team project customization for the On-premises XML process model. You can't exercise the **witadmin rebuildcache** command against a VSTS account.   <br/><br/>
 >For an overview of what features are supported for all three process models, see [Customize your work tracking experience](../../customize/customize-work.md).  
 
 You can force a rebuild of the cache on each client computer the next time it connects to a team project collection by using the **witadmin rebuildcache** command.  

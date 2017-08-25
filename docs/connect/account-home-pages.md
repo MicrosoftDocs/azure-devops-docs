@@ -12,7 +12,7 @@ ms.date: 08/11/2017
 
 # Work effectively from your account hub
 
-**Team Services | TFS 2017.1**  
+**VSTS | TFS 2017.1**  
 
 > [!NOTE]  
 > **Feature availability**: The features described in this topic are currently in preview for Team Services. You can enable or disable these features from your account menu, [Preview features-New Account Landing Page](../collaborate/preview-features.md). 
@@ -35,7 +35,7 @@ To access these pages, open your web browser to the following URL:
 
  
 > [!NOTE]
-> For Team Services, the account hub is in preview mode. If you haven't enabled it yet for your account, you can do so through [your user account menu](../collaborate/preview-features.md). This hub is associated with the account collection and not any one team project or team.  
+> For VSTS, the account hub is in preview mode. If you haven't enabled it yet for your account, you can do so through [your user account menu](../collaborate/preview-features.md). This hub is associated with the account collection and not any one team project or team.  
 > 
 > For TFS 2017.1, the account hub is automatically enabled for all users. 
 
@@ -103,7 +103,7 @@ To filter the list, type a keyword in the *Filter favorites* box. The list will 
 Open the **Work items** hub to access the set of work items assigned to you or followed by you. The lists available from each page span all team projects that you work in. 
 
 > [!NOTE]  
-> <b>Feature availability: </b>For Team Services, you can access the Work items hub [from a mobile device](../collaborate/mobile-work.md). 
+> <b>Feature availability: </b>For VSTS, you can access the Work items hub [from a mobile device](../collaborate/mobile-work.md). 
 
 ###Your assigned work items 
 The **Assigned to me** page lists all work items assigned to you in the order they were last updated. To open or update a work item, click its title. 

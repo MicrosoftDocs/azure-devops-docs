@@ -1,5 +1,5 @@
 ---
-title: Add administrators | Team Services & TFS  
+title: Add administrators | VSTS & TFS  
 description: Add server, team project collection,  or team project administrators 
 ms.assetid: d8b3e709-b868-409b-98d7-03ea6d1cb77b
 ms.prod: vs-devops-alm
@@ -9,9 +9,9 @@ ms.author: estfan
 ms.date: 03/29/2017
 ---
 
-# Add administrators to Team Services and TFS
+# Add administrators to VSTS and TFS
 
-**Team Services**
+**VSTS**
 
 
 PLACEHOLDER TOPIC TEST
@@ -20,7 +20,7 @@ PLACEHOLDER TOPIC TEST
 <a name="project-collection"></a>
 ## Project collection
 
-In TFS and Team Services, each team project collection is its own grouping
+In TFS and VSTS, each team project collection is its own grouping
 of projects that can share reports, work items, and other items, all stored in a single database.
 Project collection administrators maintain the collection and administer permissions and security
 for other roles at the collection level.

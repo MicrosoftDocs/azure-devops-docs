@@ -7,5 +7,5 @@
     topicHref: /vsts/index#pivot=services&panel=analytics
     items:
     - name: Dashboards
-      tocHref: /vsts/report/
+      tocHref: /vsts/
       topicHref: /vsts/report/index

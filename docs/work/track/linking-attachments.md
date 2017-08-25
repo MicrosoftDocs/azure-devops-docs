@@ -1,5 +1,5 @@
 ---
-title: Link and attachment queries | Team Services & TFS
+title: Link and attachment queries | VSTS & TFS
 description: QUery work items based on link type, link count, link restrictions, and attachment file count in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 05/10/2017
 
 # Link and attachment queries  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on their link type, link count, or attachment file count.
 
@@ -180,7 +180,7 @@ The following table describes fields associated with links and attachments. Most
 
 <blockquote>
 ![note icon](../_img/icons/note-icon.png)<br/>
-For Team Services, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
+For VSTS, you can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.    
 </blockquote> 
 </td>
 <td><p>All</p></td>

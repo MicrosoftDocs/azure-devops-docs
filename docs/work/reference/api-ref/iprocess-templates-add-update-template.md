@@ -1,5 +1,5 @@
 ---
-title: IProcessTemplates.AddUpdateTemplate method | Team Services & TFS 
+title: IProcessTemplates.AddUpdateTemplate method | VSTS & TFS 
 description: Syntax and usage for the IProcessTemplates.AddUpdateTemplate method to add or update a process template when working with Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # IProcessTemplates.AddUpdateTemplate method (String, String, String, String, String)
 
-**Team Services | TFS 2017 | TFS 2015 | [Previous versions](https://msdn.microsoft.com/library/microsoft.teamfoundation.server.iprocesstemplates.addupdatetemplate%28v=vs.120%29.aspx)**
+**VSTS | TFS 2017 | TFS 2015 | [Previous versions](https://msdn.microsoft.com/library/microsoft.teamfoundation.server.iprocesstemplates.addupdatetemplate%28v=vs.120%29.aspx)**
 
 
 

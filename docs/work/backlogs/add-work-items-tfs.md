@@ -10,7 +10,7 @@ ms.author: kaelli
 ms.date: 03/16/2017
 ---
 
-#Add work items to plan and track your project 
+# Add work items to plan and track your project (TFS)
 
 **TFS 2015 | TFS 2013**  
 
@@ -31,9 +31,7 @@ For an overview of all three processes, see [Choose a process](../guidance/choos
 
 
 ##Add work items to define new work
-You can start adding work items once you connect to a team project. If you don't have a team project yet, create one in [Team Services](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).
-
-Here we show how to add work items from the web portal. For additional clients that you can use, see [Clients that support tracking work items](#clients).
+You can start adding work items once you connect to a team project. Here we show how to add work items from the web portal. For additional clients that you can use, see [Clients that support tracking work items](#clients).
 
 1. From a web browser, connect to the team project that you want to work in. For example, the Fabrikam, Inc. team navigates to ```http://fabrikamprime:8080/tfs/DefaultCollection/Fabrikam%20Fiber%20Website/```.  
 	If you haven't been added as a team member, [get added now](../scale/multiple-teams.md#add-team-members).

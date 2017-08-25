@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Properties Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Displays information about items under version control.
 

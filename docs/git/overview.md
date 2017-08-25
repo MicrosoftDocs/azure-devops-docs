@@ -1,5 +1,5 @@
 ---
-title: Git documentation home | Team Services & TFS 
+title: Git documentation home | VSTS & TFS 
 description: Overview of Git version control in Visual Studio Team Services and Team Foundation Server
 ms.assetid: 9e1079da-49a2-4035-addb-238a8023c9b1
 ms.prod: vs-devops-alm
@@ -10,7 +10,7 @@ ms.date: 04/17/2017
 ---
 
 #  Git and Team Services
-#### Team Services | TFS 2015 & 2017  | Visual Studio 2015 & 2017 | [Previous version](overview-2013.md)
+#### VSTS | TFS 2015 & 2017  | Visual Studio 2015 & 2017 | [Previous version](overview-2013.md)
 
 Host and manage your code in Git version control with Team Services and Team Foundation Server. 
 
@@ -90,7 +90,7 @@ New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git a
 </div>
 <div class="col-sm-6 col-md-6">
 
-<p>Connect your favorite development environment to Team Services to access your repos and manage your work.
+<p>Connect your favorite development environment to VSTS to access your repos and manage your work.
 Team Services IDE integrations are available for [Visual Studio](../accounts/set-up-vs.md), 
 [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team), [Eclipse](http://java.visualstudio.com/Docs/tools/eclipse), 
 and [IntelliJ](https://java.visualstudio.com/Docs/tools/intelliJ).</p>
@@ -128,7 +128,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 
 <p>You can authenticate with your Team Services Git repo from any platform using [cross-platform credential managers](set-up-credential-managers.md) or [SSH public key authentication](use-ssh-keys-to-authenticate.md).</p>
 
-<p>If you have code ready to share in Team Services, our getting started guides take you through the steps to connect your development environment to a Team Services Git repo and share your code with your team.</p>
+<p>If you have code ready to share in VSTS, our getting started guides take you through the steps to connect your development environment to a Team Services Git repo and share your code with your team.</p>
 
 <ul>
 <li>[Get Started with Visual Studio](share-your-code-in-git-vs.md)</li>
@@ -165,7 +165,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 <div class="row">
 <div class="col-sm-6 col-md-6">
 
-![Review code with pull requests in Team Services and TFS](_img/overview/IC784012.png)
+![Review code with pull requests in VSTS and TFS](_img/overview/IC784012.png)
 
 </div>
 <div class="col-sm-6 col-md-6"> 

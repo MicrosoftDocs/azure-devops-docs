@@ -12,14 +12,14 @@ ms.date: 08/02/2017
 
 # Share your project vision, view project activity   
 
-**Team Services | TFS 2017 | TFS 2015**  
+**VSTS | TFS 2017 | TFS 2015**  
 
 > [!NOTE]  
-> **Feature availability**: The project page described in this topic is in preview for Team Services. It is enabled or disabled when you [enable or disable the Account Landing Page](../collaborate/preview-features.md) from your profile/account menu. For users of TFS 2017.1 and later versions, this feature is enabled by default and can't be turned off. 
+> **Feature availability**: The project page described in this topic is in preview for VSTS. It is enabled or disabled when you [enable or disable the Account Landing Page](../collaborate/preview-features.md) from your profile/account menu. For users of TFS 2017.1 and later versions, this feature is enabled by default and can't be turned off. 
 >
 > The Project page replaces the [Welcome page](#welcome-pages) used in TFS 2017 and earlier versions. 
 
-You can quickly get started with a team project from the project page. You can share your project vision with your team, add team members, and check the latest activity. Use this page to leverage all the built-in DevOps functionality of Team Services and to perform the following activities:
+You can quickly get started with a team project from the project page. You can share your project vision with your team, add team members, and check the latest activity. Use this page to leverage all the built-in DevOps functionality of VSTS and to perform the following activities:
 
   
 > [!NOTE]  

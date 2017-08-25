@@ -1,5 +1,5 @@
 ---
-title: New queries experience | Team Services  
+title: New queries experience | VSTS  
 description: Highlights the features made available with the changes to the new Queries hub layout
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-agile 
@@ -13,12 +13,12 @@ ms.date: 3/22/2017
 
 # New Queries experience
 
-**Team Services**   
+**VSTS**   
 
 >[!NOTE]    
-><b>Feature availability: </b>The New queries experience is in preview for Team Services and available when you enable it from the web portal. You enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.     
+><b>Feature availability: </b>The New queries experience is in preview for VSTS and available when you enable it from the web portal. You enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.     
    
-We have launched a preview version of a modernized query experience that you access from the **Work>Queries** page in your Team Services account. 
+We have launched a preview version of a modernized query experience that you access from the **Work>Queries** page in your VSTS account. 
 
 
 ## What's new in the Queries hub

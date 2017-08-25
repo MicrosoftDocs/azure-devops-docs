@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Share your code in TFVC using Eclipse
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Share your code with your team with Visual Studio Team Services and Eclipse.
 
@@ -45,6 +45,6 @@ Your code is in TFVC, so now your teammates can contribute.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Build your Eclipse projects](../build-release/apps/get-started/java-maven.md)
+> [Build your Eclipse projects](../build-release/apps/java/java-maven.md)
 
 

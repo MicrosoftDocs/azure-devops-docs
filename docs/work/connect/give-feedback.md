@@ -1,5 +1,5 @@
 ---
-title: Give feedback using Microsoft Feedback Client | Team Services & TFS  
+title: Give feedback using Microsoft Feedback Client | VSTS & TFS  
 description: Respond to a request for feedback using the Microsoft Feedback Client - Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,9 +12,8 @@ ms.date: 08/15/2017
 #Give feedback using Microsoft Feedback Client
 
 
-<!---
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
---> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+
 
 You can respond to a request for feedback using the Microsoft Feedback Client. This tool allows you to launch an application, capture your interaction with it as video and capture your verbal or type-written comments as well. To support traceability, your feedback is stored in the data store for Visual Studio Team Services or an on-premises Team Foundation Server (TFS).  
 

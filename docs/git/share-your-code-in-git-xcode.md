@@ -1,5 +1,5 @@
 ---
-title: Share your Xcode project with Git | Team Services & TFS
+title: Share your Xcode project with Git | VSTS & TFS
 description: "Share code in Git using Xcode"
 ms.assetid: "f1fedd72-d9b9-45cf-99aa-2e624c899c45"
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 08/10/2017
 ---
 
 #  Share your code in Git using Xcode
-#### Team Services | TFS 2015 & 2017
+#### VSTS | TFS 2015 & 2017
 
 This guide shows you how to share your Xcode projects in a Team Services Git repo. If you don’t have a VSTS account, you can [sign up](../accounts/create-account-with-work-school.md) for one for free. Each account includes free, unlimited private Git repositories.
 
@@ -40,12 +40,12 @@ Create a local Git repo for your existing projects not in version control by goi
 
 Create a new Git repo in Team Servies for your Xcode project. 
 
-If you have already created a repo for your Xcode project in Team Services, you can skip ahead to [Push your project](#push-your-project).
+If you have already created a repo for your Xcode project in VSTS, you can skip ahead to [Push your project](#push-your-project).
 
 0. Browse to your Team Project in your Team Services account and select the drop-down ![Team Services drop-down picker](_img/share-your-code-in-git-xcode/vsts_drop_down_arrow.png) next to the name of the current Git repo. Select **New Repository..**  
-  ![Create a new Git repo in Team Services](_img/share-your-code-in-git-xcode/newrepo.png)
+  ![Create a new Git repo in VSTS](_img/share-your-code-in-git-xcode/newrepo.png)
 
-0. Enter a name for your new Git repo and select **Create**. Your browser will navigate to your new empty Git repo for your Xcode project. Copy the clone URL to the clipboard so that you can use it in Xcode to connect to Team Services.  
+0. Enter a name for your new Git repo and select **Create**. Your browser will navigate to your new empty Git repo for your Xcode project. Copy the clone URL to the clipboard so that you can use it in Xcode to connect to VSTS.  
 
  ![Copy the clone URL for your new Git repo](_img/share-your-code-in-git-xcode/newrepocopycloneurl.png)
 
@@ -59,15 +59,15 @@ If you have already created a repo for your Xcode project in Team Services, you 
 
 0. In the **Address** field, paste the Git clone URL for your Team Services repo copied in the previous step. Select **Add Remote**, then select **Done** to finish creating the `origin` remote for your local Git repo.  
 
-  ![Add a remote to the local Git repo for your Xcode project to connect to Team Services](_img/share-your-code-in-git-xcode/xcodeaddremote2.png)
+  ![Add a remote to the local Git repo for your Xcode project to connect to VSTS](_img/share-your-code-in-git-xcode/xcodeaddremote2.png)
 
 0. Go to **Source Control, Push...**, enter the branchname on `origin` to push to, and select **Push**.
 
-  ![Push your Xcode project to Team Services](_img/share-your-code-in-git-xcode/xcodepushtomaster.png)
+  ![Push your Xcode project to VSTS](_img/share-your-code-in-git-xcode/xcodepushtomaster.png)
 
-0. If prompted, enter your Team Services credentials. For **Username**, enter your Team Services username. For **Password**, enter a [Personal Access Token](../accounts/use-personal-access-tokens-to-authenticate.md) created for your user in Team Services. Select **OK**. 
+0. If prompted, enter your Team Services credentials. For **Username**, enter your Team Services username. For **Password**, enter a [Personal Access Token](../accounts/use-personal-access-tokens-to-authenticate.md) created for your user in VSTS. Select **OK**. 
 
-  ![Authenticate using personal access tokens to Team Services](_img/share-your-code-in-git-xcode/xcodeauthentication.png)
+  ![Authenticate using personal access tokens to VSTS](_img/share-your-code-in-git-xcode/xcodeauthentication.png)
 
 Xcode will [push](tutorial/pushing.md) your project to your Team Services Git repo so you can share it with your team.
 

@@ -11,6 +11,6 @@ ms.date: 08/10/2016
 
 # Use Visual Studio with Git
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 See [the Git overview](../git/overview.md).

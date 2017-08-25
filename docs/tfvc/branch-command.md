@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Branch Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 The **branch** command copies an item or set of items, including metadata and version control history, from one location to another in the Team Foundation version control server and in the local workspace.
 

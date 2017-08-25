@@ -1,5 +1,5 @@
 ---
-title: Preview features | Team Services & TFS  
+title: Preview features | VSTS & TFS  
 description: Enable/disable or activate/deactivate features in preview at the user, team project, or account level  
 ms.technology: collaborate
 ms.prod: vs-devops-alm
@@ -12,17 +12,17 @@ ms.date: 06/01/2017
 
 # Enable preview features 
 
-<b> Team Services | TFS 2017.1</b>
+<b> VSTS | TFS 2017.1</b>
 
 >[!NOTE]    
-><b>Feature availability: </b>The preview features you can enable or disable will differ depending on whether you work from Team Services or an on-premises TFS. Preview features become available first on Team Services and then subsequently are made available with an update to TFS. 
+><b>Feature availability: </b>The preview features you can enable or disable will differ depending on whether you work from Team Services or an on-premises TFS. Preview features become available first on VSTS and then subsequently are made available with an update to TFS. 
 
 As new features are introduced, we're providing support for you to turn some of them on or off. That way, you can try them out, provide feedback, and work with those features that meet your requirements.  
 
 Some features provide a new user interface and functionality, which can be managed per user or team member. Others support a default experience for the account and are managed by an account administrator. 
  
 >[!NOTE]  
->**Feature availability**:  You can turn on or off the following features for Team Services (cloud service), or from the web portal of the listed on-premises TFS version or a later version. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Provide product and content feedback](../provide-feedback.md#platform-version).
+>**Feature availability**:  You can turn on or off the following features for VSTS (cloud service), or from the web portal of the listed on-premises TFS version or a later version. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Provide product and content feedback](../provide-feedback.md#platform-version).
 
 <div style="float:left;width:310px;margin:3px">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Preview features per user](#user-level)</p>
@@ -73,7 +73,7 @@ To enable or disable a feature in preview, access the Preview features option fr
 ### New Account Landing Page  
 
 >[!NOTE]   
->For Team Services, each user can enable or disable the account hub.   
+>For VSTS, each user can enable or disable the account hub.   
 > 
 >For TFS 2017.1, the account hub is automatically enabled for all users and cannot be disabled.
     
@@ -102,7 +102,7 @@ If you have administrative privileges, you'll see a menu from which to choose wh
 When you enable a feature at the account level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose.
 
 >[!TIP]  
->If you don't see the user/account menu option, then you aren't an account administrator. To get added as one, see [Add administrators to Team Services and TFS](../accounts/add-administrator-tfs.md).  
+>If you don't see the user/account menu option, then you aren't an account administrator. To get added as one, see [Add administrators to VSTS and TFS](../accounts/add-administrator-tfs.md).  
 
 <img align="top" src="_img/preview-features-admin-s117.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC;" />  <img align="top" src="_img/preview-features-admin-s117-2.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC">  
 
@@ -133,7 +133,7 @@ We're adding some tool installer tasks to enable your build or release process t
 ### Team expansion for notifications 
 
 >[!NOTE]  
->**Feature availability**: You can enable/disable Team expansion for notifications from Team Services and TFS 2017.1 and later versions. 
+>**Feature availability**: You can enable/disable Team expansion for notifications from VSTS and TFS 2017.1 and later versions. 
 
 Enable this feature for your account when you want notifications to be sent by default for all team-associated events. Such events include when pull requests are created or updated. Team admins can choose to opt-out of these notifications. See [Manage team notifications](manage-team-notifications.md).  
 
@@ -141,7 +141,7 @@ Enable this feature for your account when you want notifications to be sent by d
 ### Wiki 
 
 >[!NOTE]  
-><b>Feature availability: </b>The built-in wiki is in Preview and available for Team Services at this time. If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md). 
+><b>Feature availability: </b>The built-in wiki is in Preview and available for VSTS at this time. If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md). 
 >
 You can enable a built-in Wiki for your team project or for an account. This feature is in preview and when enabled adds a **Wiki*** hub from which you can [view and edit wiki pages](add-edit-wiki.md).  
 

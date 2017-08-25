@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Workfold Command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Creates, modifies, or displays information about the mappings between your workspace folders and the folders on the server for Team Foundation version control.
 

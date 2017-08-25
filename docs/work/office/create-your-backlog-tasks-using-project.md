@@ -1,5 +1,5 @@
 ---
-title: Create your backlog and tasks using Project | Team Services & TFS
+title: Create your backlog and tasks using Project | VSTS & TFS
 description: Add items, plan, order, and estimate your backlog of deliverables - Visual Studio Team Services and Team Foundation Server (TFS)  
 ms.topic: get-started-article  
 ms.technology: vs-devops-agile-wit
@@ -12,7 +12,7 @@ ms.date: 07/21/2017
 
 # Create your backlog and tasks using Project 
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**  
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013**  
 
 If Office Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in Team Services or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
 
@@ -33,15 +33,15 @@ Use this topic to learn how to:
 
 ## Add tasks and publish work items
 
-1.  If you don't have Office Project 2007 or a more recent version, [install it](https://products.office.com/project). For Team Services or TFS 2017, you'll need Project 2010 or later version.  
+1.  If you don't have Office Project 2007 or a more recent version, [install it](https://products.office.com/project). For VSTS and TFS 2017, you'll need Project 2010 or later version.  
  
 	>[!NOTE]  
-	>You can't use Office Project 365 to connect to Team Services or TFS. 
+	>You can't use Office Project 365 to connect to VSTS and TFS. 
 
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on Team Services or an on-premises TFS. 
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
 
 	>[!NOTE]    
-	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Team Services and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
+	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
 3.  In Project, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 

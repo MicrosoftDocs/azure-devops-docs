@@ -1,5 +1,5 @@
 ---
-title: Define the root process template tasks | Team Services & TFS
+title: Define the root process template tasks | VSTS & TFS
 description: Add, remove, define, or change the sequence in which process template plug-in files are processed 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -79,7 +79,7 @@ To learn more about the default process templates, see [Choose a process](../../
 3.  **Plug-ins**. You use the **plugins** and **plugin** elements to define the set of plug-ins that the process template uses. You must make sure that if any subordinate XML file references a plug-in, that plug-in appears in this list. You must also specify the wizardPage attribute (a true or false value) to indicate whether the plug-in requires a page on the New Team Project Wizard. You must specify the set of a plug-ins that will be processed when you create a team project and whether the plug-in should have a visible page in the New Team Project Wizard. 
  
 	>[!IMPORTANT]  
-	>When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for Team Services. 
+	>When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for VSTS. 
 	>
 	>If you want these features to be available on your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).   
   

@@ -1,6 +1,6 @@
 ---
-title: Delete a team project from Team Services and TFS
-description: Delete or remove a team project from Visual Studio Team Services (Team Services) or from Team Foundation Server (TFS)
+title: Delete a team project from VSTS and TFS
+description: Delete or remove a team project from Visual Studio Team Services (VSTS) or from Team Foundation Server (TFS)
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -11,7 +11,7 @@ ms.date: 08/11/2016
 
 # Delete a team project
 
-**Team Services** | **TFS 2017** | **TFS 2015** | **TFS 2013** | **[Previous Versions](https://msdn.microsoft.com//library/ff357756(v=vs.110).aspx)**
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013** | **[Previous Versions](https://msdn.microsoft.com//library/ff357756(v=vs.110).aspx)**
 
 If you find that you have a team project you no longer use, you can delete it. Deleting a team project helps simplify the navigation to team projects that are in use.
 
@@ -29,7 +29,7 @@ You can delete a team project from Visual Studio Team Services or from an on-pre
 
 	<img src="_img/delete-team-project-select-actions-menu.png" alt="Open the actions menu for a team project" style="border: 1px solid #CCCCCC;" />  
 
-    If you don’t see the actions icon ![actions icon image](../work/_img/icons/actions-icon.png), either you’re not accessing Team Services or you’re not a member of the Project Collection Administrators group. For on-premises team projects, [go to the next section](#tfs). Otherwise, go [here](add-administrator-tfs.md) to learn how to get added to the Project Collection Administrators group.
+    If you don’t see the actions icon ![actions icon image](../work/_img/icons/actions-icon.png), either you’re not accessing VSTS or you’re not a member of the Project Collection Administrators group. For on-premises team projects, [go to the next section](#tfs). Otherwise, go [here](add-administrator-tfs.md) to learn how to get added to the Project Collection Administrators group.
 
 3.  You must type the name of the team project in order to initiate the delete operation. 
 

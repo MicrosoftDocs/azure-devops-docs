@@ -21,16 +21,10 @@ Learn how to build your app.
 
 <table>
 <tr valign="middle" align="center">
-<!--
-<td>![ASP.NET core](_img/index/logo_net.svg)<br/>[ASP.NET Core](apps/aspnet/build-aspnet-core.md)</td>
-<td>![ASP.NET](_img/index/logo_net.svg)<br/>[ASP.NET](apps/aspnet/ci/build-aspnet-4.md)</td>
-<td>![Node.js](_img/index/logo_nodejs.svg)<br/>[Node.js](apps/nodejs/quick-to-azure.md)</td>
-<td>![Java](_img/index/logo_java.svg)<br/>[Java](apps/java/quick-to-azure.md)</td>
--->
-<td>[ASP.NET Core](apps/aspnet/build-aspnet-core.md)</td>
-<td>[ASP.NET](apps/aspnet/ci/build-aspnet-4.md)</td>
-<td>[Node.js](apps/nodejs/quick-to-azure.md)</td>
-<td>[Java](apps/java/quick-to-azure.md)</td>
+<td><img src="_img/index/logo_net.svg" alt="" width="36px" height="36px"><br/>[ASP.NET Core](apps/aspnet/build-aspnet-core.md)</td>
+<td><img src="_img/index/logo_net.svg" alt="" width="36px" height="36px"><br/>[ASP.NET](apps/aspnet/build-aspnet-4.md)</td>
+<td><img src="_img/index/logo_nodejs.svg" alt="" width="36px" height="36px"><br/>[Node.js](apps/nodejs/quick-to-azure.md)</td>
+<td><img src="_img/index/logo_java.svg" alt="" width="36px" height="36px"><br/>[Java](apps/java/quick-to-azure.md)</td>
 </tr>
 </table>    
 
@@ -38,8 +32,8 @@ Learn how to deploy your app.
 
 <table>
 <tr valign="middle" align="center">
-<td>![Web apps](_img/index/app-service-web.png)<br/>[Azure web app](apps/cd/deploy-webdeploy-webapps.md)</td>
-<td>![Windows VMs](_img/index/virtualmachine.png)<br/>[Windows VM](apps/cd/azure/deploy-provision-azure-vm.md)</td>
+<td><img src="_img/index/app-service-web.png" alt="" width="36px" height="36px"><br/>[Azure web app](apps/cd/deploy-webdeploy-webapps.md)</td>
+<td><img src="_img/index/virtualmachine.png" alt="" width="36px" height="36px"><br/>[Windows VM](apps/cd/deploy-webdeploy-iis-deploygroups.md)</td>
 </tr>
 </table>    
 

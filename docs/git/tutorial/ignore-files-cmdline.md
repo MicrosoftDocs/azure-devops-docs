@@ -1,5 +1,5 @@
 ---
-title: Ignore files in your Git repo (command line) | Team Services & TFS
+title: Ignore files in your Git repo (command line) | VSTS & TFS
 description: Using .gitignore, git update-index, and repo management to ignore and exclude files from Git version control  
 ms.assetid: 950db6ce-f68c-4ecf-ab01-50da5ea9d016
 ms.prod: vs-devops-alm

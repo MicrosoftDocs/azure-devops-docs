@@ -1,5 +1,5 @@
 ---
-title: Manage issues (CMMI) | Team Services & TFS
+title: Manage issues (CMMI) | VSTS & TFS
 description: Use the issue work item to help you to track problems with the project plan and its activities and tasks - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

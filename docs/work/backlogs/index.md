@@ -1,5 +1,5 @@
 ---
-title: Backlogs | Team Services & TFS
+title: Backlogs | VSTS & TFS
 description: Index to topics for planning and tracking work in VSTS and and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,6 +11,8 @@ ms.date: 08/03/2017
 ---
 
 # Backlogs
+
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 Start planning your project by quickly adding user stories or requirements to your product backlog.  
 

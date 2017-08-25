@@ -1,5 +1,5 @@
 ---
-title: Switch team project or team context | Team Services & TFS
+title: Switch team project or team context | VSTS & TFS
 description: Change the focus of your view to another team project or team Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 06/01/2017
 
 # Switch team project or team focus   
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 Several features depend on the team project or team that you have selected. For example, dashboards, backlogs, and board views will change depending on the context selected. 
 
@@ -33,7 +33,7 @@ To view a list of teams defined for a team project, open the admin context for t
 ## Switch to a different team 
 
 >[!NOTE]  
->**Feature availability**: The Account Landing Page feature is in preview mode for Team Services and enabled for all users from web portal for TFS 2017.1 and later versions. To learn more about this feature, see [Work effectively from your account hub](/vsts/connect/account-home-pages). To enable or disable the feature, see [Enable preview features](/vsts/collaborate/preview-features).   
+>**Feature availability**: The Account Landing Page feature is in preview mode for VSTS and enabled for all users from web portal for TFS 2017.1 and later versions. To learn more about this feature, see [Work effectively from your account hub](/vsts/connect/account-home-pages). To enable or disable the feature, see [Enable preview features](/vsts/collaborate/preview-features).   
 
  
 
@@ -41,7 +41,7 @@ To view a list of teams defined for a team project, open the admin context for t
 ### Team Services
 <a id="switch-context-team-services" />
  
-You can switch your team focus to a team project or team you've recently viewed from the team project/team drop-down menu. If you don't see the team or team project you want, click **Browse&hellip;** to [browse all team projects and teams](/vsts/connect/account-home-pages). To access your [account hub](/vsts/connect/account-home-pages), click the ![Team Services icon](../../_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page. 
+You can switch your team focus to a team project or team you've recently viewed from the team project/team drop-down menu. If you don't see the team or team project you want, click **Browse&hellip;** to [browse all team projects and teams](/vsts/connect/account-home-pages). To access your [account hub](/vsts/connect/account-home-pages), click the ![VSTS icon](../../_shared/_img/switch-team-focus-account-project-page-icon.png) VSTS icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page. 
 
 To go directly to the [project vision and status page](/vsts/collaborate/project-vision-status), choose the project home icon from the drop-down menu, for example, ![project home icon](../../_shared/_img/work-web-portal-home-page-icon.png).
 
@@ -50,9 +50,9 @@ To go directly to the [project vision and status page](/vsts/collaborate/project
 ### TFS 2017.1 
 <a id="switch-context-tfs-2017-1" /> 
 
-To switch your team focus to a team project or team you've recently viewed, hover over the ![Team Services icon](_img/switch-team-focus-account-project-page-icon.png) Team Services icon and choose from the drop-down menu of options. If you don't see the team or team project you want, choose **Browse&hellip;** to [browse all team projects and teams](/vsts/connect/account-home-pages). Your selection will open the [project vision and status page](/vsts/collaborate/project-vision-status) for the team project.
+To switch your team focus to a team project or team you've recently viewed, hover over the ![VSTS icon](_img/switch-team-focus-account-project-page-icon.png) VSTS icon and choose from the drop-down menu of options. If you don't see the team or team project you want, choose **Browse&hellip;** to [browse all team projects and teams](/vsts/connect/account-home-pages). Your selection will open the [project vision and status page](/vsts/collaborate/project-vision-status) for the team project.
 
-To access your [account hub](/vsts/connect/account-home-pages), click the ![Team Services icon](_img/switch-team-focus-account-project-page-icon.png) Team Services icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page.  
+To access your [account hub](/vsts/connect/account-home-pages), click the ![VSTS icon](_img/switch-team-focus-account-project-page-icon.png) VSTS icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page.  
 
 To go directly to the [project vision and status page](/vsts/collaborate/project-vision-status), choose the project home icon from the drop-down menu, for example, ![project home icon](../../_shared/_img/work-web-portal-home-page-icon.png).
 
@@ -76,7 +76,7 @@ Open the team project/team drop-down menu and select the team project/team that 
 
 
 ## Switch to a team project or team from the account hub 
-If you work in Team Services or TFS 2017.1, you can use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](../../connect/account-home-pages.md).  
+If you work in VSTS and TFS 2017.1, you can use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](../../connect/account-home-pages.md).  
 
 
 

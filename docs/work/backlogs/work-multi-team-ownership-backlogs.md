@@ -1,6 +1,6 @@
 ---
-title: Organize your backlog | Team Services & TFS  
-description:  Organize your backlog by mapping backlog items to features, and features to epics in Visual Studio Team Services or the web portal for Team Foundation Server (TFS)  
+title: Organize your backlog | VSTS & TFS  
+description:  Organize your backlog by mapping backlog items to features, and features to epics in Visual Studio Team Services or Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: DD78C7B9-A6B5-4596-9ADB-281578E615E2  
@@ -12,9 +12,7 @@ ms.date: 05/10/2017
 
 # Work with multi-team ownership of backlog items  
 
-<!---
-<b>Team Services | TFS 2017 | TFS 2015</b> 
---> 
+<b>VSTS | TFS 2017 | TFS 2015</b> 
 
 <a id="multi-team">  </a>
 

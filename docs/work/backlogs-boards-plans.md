@@ -1,5 +1,5 @@
 ---
-title: Backlogs, boards, plans | Team Services & TFS
+title: Backlogs, boards, plans | VSTS & TFS
 description: Understand the tasks supported among backlogs, Kanban boards, and task boards  when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -14,7 +14,7 @@ ms.date: 08/11/2017
 
 # Backlogs, boards, and plans  
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013**
 
 What can you do from a backlog view versus a board view? How do these differ from plans? How do changes you make in one show up on the other? What customizations can you make for each? 
 
@@ -27,7 +27,7 @@ Which view should you use to work with Agile methods?
 -  You use your sprint backlogs and task boards when you work in Scrum   
 -  You use your Kanban board to update work status and when you employ Kanban methods   
 -  Each backlog is associated with a board, changes to priority order you make in one are reflected in its corresponding board  
--  Plans allow you to review the deliverables for several teams across sprints and a calendar schedule Delivery Plans are available for Team Services and TFS 2017.2 and later versions. You access them by [installing the Marketplace Plans extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans)
+-  Plans allow you to review the deliverables for several teams across sprints and a calendar schedule Delivery Plans are available for VSTS and TFS 2017.2 and later versions. You access them by [installing the Marketplace Plans extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans)
 -  Backlogs, boards, and plans are configurable for each team.  
  
 
@@ -224,7 +224,7 @@ The following table indicates those elements or tasks associated with each type 
 With Delivery Plans, you gain  tailor-made views across several teams and their development backlogs&mdash;stories, features, or epics.  You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule. 
 
 > [!NOTE]  
-> **Feature availability**: Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for Team Services and TFS 2017.2 and later versions. All users with [basic access](../security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don’t have access to Delivery Plans.  
+> **Feature availability**: Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for VSTS and TFS 2017.2 and later versions. All users with [basic access](../security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don’t have access to Delivery Plans.  
 
 When you configure a plan, you select the team or teams and backlog levels of interest. To learn more about Delivery Plans, see [Review team plans](scale/review-team-plans.md). 
 
@@ -266,19 +266,19 @@ You may notice and wonder why the items shown on the task board may differ from 
 It's possible to assign tasks to an iteration but not have them linked to a parent backlog item. These items will show up in the created query, but might not show up on the task board itself. The system runs the query and then applies a few background processes before displaying the task board items.
 
 >[!NOTE]  
->Appearance of task and child items on the task board may differ depending on whether you work in Team Services or TFS. 
+>Appearance of task and child items on the task board may differ depending on whether you work in VSTS and TFS. 
 
 These reasons can cause work items that belong to the Task Category to not appear on a sprint backlog or task board: 
 
 - The task hasn't been linked to a parent backlog item. Only those bugs and tasks that you have linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) whose iteration path is set to the sprint will appear on the sprint backlog page. 
 	>[!NOTE]  
-	>In Team Services and TFS 2015.2 and later versions, tasks not linked to a parent appear under an *Unparented* section. 
+	>In VSTS and TFS 2015.2 and later versions, tasks not linked to a parent appear under an *Unparented* section. 
 
 - The task is a parent of another task, or the user story is a parent of another user story. If you've created a hierarchy of tasks or user stories, [only the child-level tasks or the child-level stories at the bottom of the hierarchy appear](./troubleshoot/resolve-backlog-reorder-issues.md#leaf-nodes). 
 
 - The task's linked parent corresponds to a backlog item defined for another team. Or, the area path of the task's parent backlog item differs from the task's area path.  
 	>[!NOTE]  
-	>In Team Services and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.
+	>In VSTS and TFS 2015.2 and later versions, tasks linked to a parent work item assigned to another team's area path will appear under the *Unparented* section.
 
 
 ### In Progress items filter

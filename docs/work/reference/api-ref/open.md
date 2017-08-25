@@ -1,5 +1,5 @@
 ---
-title: WorkItem.Open method | Team Services & TFS 
+title: WorkItem.Open method | VSTS & TFS 
 description: Syntax and usage for the Open method to open a work item for modification when working with Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,9 +12,9 @@ ms.date: 08/04/2016
 
 # WorkItem.Open Method
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013**
 
-Opens a work item for modification. This method is [rate limited](../../../reference/rate-limits.md) for Team Services customers. For better performance and to work around the rate limits, use [PartialOpen](partialopen.md).
+Opens a work item for modification. This method is [rate limited](../../../reference/rate-limits.md) for VSTS customers. For better performance and to work around the rate limits, use [PartialOpen](partialopen.md).
 
 **Namespace:**   [Microsoft.TeamFoundation.WorkItemTracking.Client](https://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client%28v=vs.120%29.aspx)  
 **Assembly:**  Microsoft.TeamFoundation.WorkItemTracking.Client (in Microsoft.TeamFoundation.WorkItemTracking.Client.dll)

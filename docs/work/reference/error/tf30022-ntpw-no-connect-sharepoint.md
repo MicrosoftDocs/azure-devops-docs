@@ -1,5 +1,5 @@
 ---
-title: TF30022-The New Team Project Wizard could not connect to the Windows SharePoint Services  | Team Services & TFS
+title: TF30022-The New Team Project Wizard could not connect to the Windows SharePoint Services  | VSTS & TFS
 description: The New Team Project Wizard is unable to connect to the server {name} that hosts SharePoint Products while creating a team project.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

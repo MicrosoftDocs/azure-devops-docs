@@ -1,6 +1,6 @@
 ---
-title: Manage branches in your Git repo | Team Services & TFS
-description: Find your work and search for branches using the branches page in Team Services/TFS
+title: Manage branches in your Git repo | VSTS & TFS
+description: Find your work and search for branches using the branches page in VSTS/TFS
 ms.assetid: 17722c33-e156-49f1-acad-5fcf4bc3c4fc
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
@@ -11,7 +11,7 @@ ms.date: 08/23/2016
 
 # Manage branches
 
-###### Team Services | TFS 2017
+###### VSTS | TFS 2017
 
 Manage the work in your team's Team Services Git repo from the **Branches** view on the web. 
 Customize the view to track the branches you care most about so you can stay on top of changes made by your team.
@@ -87,6 +87,6 @@ This is useful when you want to use a branch other than `master` for the main li
 
 0. Select the **...** next to the branch you want to set as default, then select **Set as default branch**.   
 
-   ![Set a default branch for a Git repo in Team Services or Team Foundation Server](_img/pull-requests/set_default_branch.png)
+   ![Set a default branch for a Git repo in VSTS or TFS](_img/pull-requests/set_default_branch.png)
 
 

@@ -1,5 +1,5 @@
 ---
-title: Query by date or current iteration | Team Services & TFS
+title: Query by date or current iteration | VSTS & TFS
 description: Find or list work items based on a date or a team's current iteration using Agile tools and Scrum methods when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -248,7 +248,7 @@ You can't use the **@CurrentIteration** macro from some [clients, features, or R
 	</FIELD >  
 	```
 
-2. Start and Finish Date fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in TFS or Team Services. These fields do not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../office/create-your-backlog-tasks-using-project.md).
+2. Start and Finish Date fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in TFS or VSTS. These fields do not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../office/create-your-backlog-tasks-using-project.md).
 
 
 ##Related notes
@@ -273,13 +273,13 @@ To query for items based on text entered in the History field, see
 You can use the **@CurrentIteration** macro in a query from the following clients:  
 <ul>
   <li>
-    <p>Web portal that connects to Team Services</p>
+    <p>Web portal that connects to VSTS</p>
   </li>
   <li>
     <p>Web portal that connects to an on-premises TFS 2015 or later version</p>
   </li>
   <li>
-    <p>Visual Studio 2015 or Team Explorer 2015 or later versions connected to Team Services or TFS 2015 or later versions.</p>
+    <p>Visual Studio 2015 or Team Explorer 2015 or later versions connected to VSTS and TFS 2015 or later versions.</p>
   </li>
 </ul>
 

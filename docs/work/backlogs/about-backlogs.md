@@ -1,5 +1,5 @@
 ---
-title: About backlogs | Team Services & TFS
+title: About backlogs | VSTS & TFS
 description: Use the web portal to build your backlog
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -10,7 +10,9 @@ ms.topic: get-started-article
 ms.date: 08/07/2017
 ---
 
-#  Build your backlog  
+#  About backlogs
+
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013**  
 
 You plan and track your project using the suite of Agile tools you access from the web portal. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board.  
 
@@ -27,7 +29,7 @@ You build your project plan by creating a backlog of work items that represent t
 
 ## Related notes
 
-You access tools provided by Team Services and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access.  To learn more, see [Permissions and access for work tracking](../permissions-access-work-tracking.md). 
+You access tools provided by VSTS and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access.  To learn more, see [Permissions and access for work tracking](../permissions-access-work-tracking.md). 
 
 For an overview of all your customization options, see [Customize your work tracking experience](../customize/customize-work.md). 
 

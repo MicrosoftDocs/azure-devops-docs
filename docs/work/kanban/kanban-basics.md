@@ -1,5 +1,5 @@
 ---
-title: Kanban basics | Team Services & TFS
+title: Kanban basics | VSTS & TFS
 description: Use the Kanban board, process, and tools to plan and track work in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.topic: get-started-article  
 ms.technology: vs-devops-agile-wit
@@ -12,7 +12,7 @@ ms.date: 08/15/2017
 
 # Kanban basics
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 To maximize a team's ability to consistently deliver high quality software, Kanban emphasize two main practices. The first, visualize the flow of work, requires you to map your team's workflow stages and configure your Kanban board to match. The second, constrain the amount of work in progress, requires you to set work-in-progress (WIP) limits. You're then ready to track progress on your Kanban board and monitor key metrics to reduce lead or cycle time.  
 
@@ -41,10 +41,10 @@ User stories and bugs correspond to types of work items. You use  [work items](.
 
 You open your Kanban board using one of these URLs that connects you to your team project:   
 
-**Team Services**:  ```http://AccountName/DefaultCollection/TeamProjectName/_backlogs/board/ ```  
+**VSTS**:  ```http://AccountName/DefaultCollection/TeamProjectName/_backlogs/board/ ```  
 **On-premises TFS**:  ```http://ServerName:8080/tfs/DefaultCollection/TeamProjectName/_backlogs/board/```  
 
-If you don't have a team project yet, create one in [Visual Studio Team Services](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md). If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../accounts/add-account-users-assign-access-levels.md) or [TFS](../../accounts/add-users.md).
+If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md). If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../accounts/add-account-users-assign-access-levels.md) or [TFS](../../accounts/add-users.md).
 
 ## 1. Map the flow of how your team works
 <meta name="description" content="Kanban workflow" />
@@ -101,7 +101,7 @@ Here are a few things you can do. See at a glance the estimated size of work for
 ![Kanban board, move an item](_img/ALM_CC_MoveCard.png)
 
 >[!NOTE]  
-><b>Feature availability: </b> You can [reorder items within a column](#reorder-cards) from Team Services and the web portal for TFS 2015.1 and later versions.   
+><b>Feature availability: </b> You can [reorder items within a column](#reorder-cards) from VSTS and the web portal for TFS 2015.1 and later versions.   
 
 Also, you can quickly update a field or reassign ownership directly from the board.
 
@@ -121,7 +121,7 @@ The CFD shows the count of items in each Kanban column for the past 30 weeks or 
 By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For additional guidance, see [Cumulative Flow](../../report/guidance/cumulative-flow.md) 
  
 >[!NOTE]  
-><b>Feature availability: </b>From Team Services, you can also add the [Cumulative Flow Diagram (CFD)](../../report/guidance/cumulative-flow.md), [Lead Time and Cycle Time](../../report/guidance/cycle-time-and-lead-time.md), and [Velocity](../../report/guidance/team-velocity.md) widgets to a team dashboard.  
+><b>Feature availability: </b>From VSTS, you can also add the [Cumulative Flow Diagram (CFD)](../../report/guidance/cumulative-flow.md), [Lead Time and Cycle Time](../../report/guidance/cycle-time-and-lead-time.md), and [Velocity](../../report/guidance/team-velocity.md) widgets to a team dashboard.  
 
 ## Try this next
 
@@ -139,7 +139,7 @@ Here are some useful tips when working with the Kanban board:
 Each team can manage their backlog and customize their Kanban board. [Add teams](../scale/multiple-teams.md) when you assign specific feature areas to different teams for development. Each team can then manage their backlog and focus on how they will develop their deliverables. 
 
 
-If you're new to Team Services or TFS and want to understand what you can customize, see [Customize your work tracking experience](../customize/customize-work.md). 
+If you're new to VSTS and TFS and want to understand what you can customize, see [Customize your work tracking experience](../customize/customize-work.md). 
 
 
 [!INCLUDE [temp](../_shared/live-updates.md)]  

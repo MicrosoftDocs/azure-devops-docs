@@ -1,5 +1,5 @@
 ---
-title: Add and edit wiki pages | Team Services  
+title: Add and edit wiki pages | VSTS  
 description: Share informationwith your team  and increase collaboration using a built-in team project wiki - Visual Studio Team Services (VSTS)  
 ms.technology: collaborate
 ms.prod: vs-devops-alm
@@ -12,10 +12,10 @@ ms.date: 08/04/2017
 
 # Add and edit pages in your team project wiki 
 
-**Team Services**
+**VSTS**
 
 >[!NOTE]  
-><b>Feature availability: </b>The built-in wiki is in Preview and available for Team Services at this time. You enable this feature for a team project from the [Preview features option from your profile menu](preview-features.md#account-level).   
+><b>Feature availability: </b>The built-in wiki is in Preview and available for VSTS at this time. You enable this feature for a team project from the [Preview features option from your profile menu](preview-features.md#account-level).   
 >
 >If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md).  
 

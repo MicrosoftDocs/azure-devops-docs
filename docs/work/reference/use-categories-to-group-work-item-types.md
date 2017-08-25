@@ -1,5 +1,5 @@
 ---
-title: Use categories to group work item types | Team Services & TFS
+title: Use categories to group work item types | VSTS & TFS
 description: Generate flexible reports, and support increased integration across team projects using categories 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

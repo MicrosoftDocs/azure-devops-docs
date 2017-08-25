@@ -14,7 +14,7 @@ ms.date: 06/11/2017
 **TFS 2017**  
 
 > [!IMPORTANT]  
-> **Feature availability:**&#160;&#160;The new form and its corresponding features are available from Team Services and the web portal for TFS 2017.<br/> 
+> **Feature availability:**&#160;&#160;The new form and its corresponding features are available from VSTS and the web portal for TFS 2017.<br/> 
 > - For TFS 2017 users, the new form is automatically available when you add team projects to a new collection. For existing team projects, an admin is required to [enable the new form](../customize/manage-new-form-rollout.md).<br/>
 > - For TFS 2015 users, the new form isn't available. You must [upgrade to TFS 2017](https://www.visualstudio.com/downloads/#team-foundation-server-2017) to access the new form.  
 

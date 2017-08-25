@@ -1,5 +1,5 @@
 ---
-title: Review your repo history | Team Services & TFS
+title: Review your repo history | VSTS & TFS
 description: Git history tools with Visual Studio and git command line tools to help you determine the changes in your files.
 ms.assetid: aed4bd97-378a-45f6-8b13-59143fccfe3b
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/14/2017
 
 # Review history
 
-###### Team Services | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+###### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
 Git uses the parent reference information stored in each [commit](commits.md) to manage a full history of your development. 
 Review this commit history to find out when file changes were made and determine differences between versions of your code.
@@ -34,7 +34,7 @@ Compare the changes between two versions of a file in your Git repo.
 
 # [Visual Studio](#tab/visual-studio)
 
-Team Services | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017
+VSTS | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017
 
 0. Right-click the file in Solution Explorer and choose **View History...**. The history window will appear showing the commit ID, author, date, and description of all changes to the file in your local repo across all branches.   
 
@@ -126,7 +126,7 @@ Restore a file to any location by using `git show`. This command prints the file
 
 <div id="changeexample2" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
 <div id="vs2" class="tab-pane fade in active">
-<h6>Team Services | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017</h6>
+<h6>VSTS | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017</h6>
 <p>Right-click the file in Solution Explorer and select **View History**. The Visual Studio **History** view will appear, showing the commits in your repo that updated the file.
 You can filter the commits to find the exact commit with the file version you want to restore. Double click on the version to open it in Visual Studio.
    
@@ -150,15 +150,15 @@ changes others have made will affect your work.
 
 # [Visual Studio](#tab/visual-studio)
 
-Team Services | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017
+VSTS | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017
 
-Browse to your repo in Team Services or TFS. Select **Branches** from the menu under **Code**:   
+Browse to your repo in VSTS or TFS. Select **Branches** from the menu under **Code**:   
 
-![Open the branches view in Team Services/TFS](_img/branches_view_team_services.png)   
+![Open the branches view in VSTS/TFS](_img/branches_view_team_services.png)   
 
 Locate your branch and select the **...** icon to  view the branch options. Select **Compare branches**.   
 
-![Select the ellipses icon to open branch options, then select team services](_img/team_services_branch_options.png)
+![Select the ellipses icon to open branch options, then select VSTS](_img/team_services_branch_options.png)
    
 Select the branch to compare to from the drop-downs at the top. The view will display all changes between the branches.
 

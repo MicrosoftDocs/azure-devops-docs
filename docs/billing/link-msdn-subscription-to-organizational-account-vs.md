@@ -12,7 +12,7 @@ ms.date: 11/29/2016
 
 #   Add work or school accounts to Visual Studio with MSDN subscriptions
 
-**Team Services**
+**VSTS**
 
 The Visual Studio subscriptions portal (```https://my.visualstudio.com```) requires you to use 
 the email address that you previously used to activate your subscription on the MSDN portal, or you can 
@@ -24,7 +24,7 @@ If your subscription includes Visual Studio Team Services or Microsoft Azure as 
 you can add your work or school account to your subscription so that you can use that account with your benefits, 
 **but only for subscriptions that you activated with your Microsoft account**. 
 This lets you sign in to your subscription with your Microsoft account, 
-but access Team Services, Azure, or Visual Studio with benefits assigned to your work or school account.
+but access VSTS, Azure, or Visual Studio with benefits assigned to your work or school account.
 
 > Do you have the same email address for your Microsoft account and your work or school account?
 >
@@ -53,7 +53,7 @@ and follow the steps below:
 0.	Under **Related Links**, go to **Add alternate account**.
 
 	> Why don't I see **Related Links** or **Add alternate account**? 
-	>  * Your subscription must include Team Services or Azure as benefits.
+	>  * Your subscription must include VSTS or Azure as benefits.
 	>  * You're signed in with your work or school account, 
 	>  and your subscription is already associated with that account.  To
 	>  add a work or school account, you must sign in with your Microsoft account.  Please 
@@ -69,7 +69,7 @@ and follow the steps below:
 
 	![Enter your work or school account](_img/link-msdn-subscription/enter-alternate-account-my-visual-studio-com-portal.png)
 
-0.	Use your work or school account to sign in to your Team Services 
+0.	Use your work or school account to sign in to your VSTS 
 account (```https://{youraccount}.visualstudio.com```).
 
 
@@ -88,28 +88,28 @@ You must also use your Microsoft account, not your work or school account, to si
 A:  No, you can add only one work or school account.
 
 <a name="unconfirmed-subscription"></a>
-####Q:  Why doesn't Team Services recognize my subscription?
+####Q:  Why doesn't VSTS recognize my subscription?
 
 A:	This might happen for different reasons: 
 
 *	You must have an active, valid, and 
 [eligible Visual Studio subscription](../accounts/faq-add-delete-users.md#EligibleMSDNSubscriptions) 
-that includes Team Services as a benefit.
+that includes VSTS as a benefit.
 
 *	If your Visual Studio subscription is valid and eligible, 
 [make sure to activate your subscription](https://support.microsoft.com/en-us/kb/3011409) 
-before you sign in to Team Services. 
+before you sign in to VSTS. 
 
-*	Team Services should automatically recognize your subscription when you sign in. 
-If not, try having the Team Services account owner set 
-[your access level to "Visual Studio/MSDN Subscriber" in the Team Services account](../accounts/add-account-users-assign-access-levels.md). 
+*	VSTS should automatically recognize your subscription when you sign in. 
+If not, try having the VSTS account owner set 
+[your access level to "Visual Studio/MSDN Subscriber" in the VSTS account](../accounts/add-account-users-assign-access-levels.md). 
 
-If Team Services still doesn't recognize your subscription, try these other 
+If VSTS still doesn't recognize your subscription, try these other 
 [troubleshooting tips](http://blogs.msdn.com/b/visualstudioalm/archive/2014/03/19/visual-studio-online-best-practices-troubleshooting-issues-with-the-quot-eligible-msdn-subscriber-license-type.aspx).
 
 ####Q:  Why can't I sign in with my work or school account after adding it to my subscription or getting invited to Visual Studio Team Services?
 
-A:  Check with the Team Services account owner that they've 
+A:  Check with the VSTS account owner that they've 
 [set up Azure Active Directory (Azure AD) access](../accounts/access-with-azure-ad.md) 
-between the Team Services account and your organization's 
+between the VSTS account and your organization's 
 directory that manages your work or school account.

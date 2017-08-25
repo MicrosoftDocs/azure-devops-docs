@@ -11,11 +11,11 @@ ms.date: 1/10/2017
 
 # Change number of paid extension users for Visual Studio Team Services
 
-**Team Services**
+**VSTS**
 
 
 To scale with your team's needs, increase or decrease your total number of paid extension users.
-You'll need Team Services 
+You'll need VSTS 
 [project collection administrator or account owner permissions](#find-owner). 
 
 > [!IMPORTANT]

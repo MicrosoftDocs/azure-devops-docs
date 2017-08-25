@@ -1,5 +1,5 @@
 ---
-title: Assign conditional-based values and rules | Team Services & TFS
+title: Assign conditional-based values and rules | VSTS & TFS
 description: Syntax and usage for WHEN, WHENNOT, WHENCHANGED, and WHENNOTCHANGED elements that define rules and values that are run conditionally - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -12,7 +12,7 @@ ms.date: 01/20/2017
 
 # Assign conditional-based values and rules
 
-<b>Team Services (Hosted XML) | TFS 2017 | TFS 2015 </b>
+<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b>
 
 >[!IMPORTANT]    
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize a process](../process/customize-process.md). 

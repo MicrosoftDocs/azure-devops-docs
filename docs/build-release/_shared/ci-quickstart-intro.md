@@ -1,1 +1,1 @@
-Continuous Integration (CI) is the process of automating the build and testing of code every time a team member commits changes to version control. Here you'll create a CI build definition that helps team keep the master branch clean.
+A continuous integration (CI) process automatically builds and tests code every time a team member commits changes to version control. Here you'll create a CI build definition that helps your team keep the master branch clean.

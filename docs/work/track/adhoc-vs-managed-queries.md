@@ -1,5 +1,5 @@
 ---
-title: Adhoc vs managed queries | Team Services & TFS
+title: Adhoc vs managed queries | VSTS & TFS
 description: Use adhoc or built-in search/managed queries to find work items using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,12 +12,11 @@ ms.date: 06/02/2017
 
 # Adhoc vs managed work item queries
 
-<!---
-<b>Team Services | TFS 2017</b> 
---> 
+<b>VSTS | TFS 2017</b> 
+
 
 >[!NOTE]  
->**Feature availability:**&#160;&#160;The Work item search feature is available from Team Services.     
+>**Feature availability:**&#160;&#160;The Work item search feature is available from VSTS.     
 
 You have two ways to perform work item searches: adhoc and managed. You perform adhoc queries using the work item search box (shown below), whereas you perform managed queries using the built-in search function available from the Work hub, Queries page.  
 

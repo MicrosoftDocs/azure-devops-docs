@@ -11,11 +11,9 @@ ms.date: 08/10/2017
 ---
 
 
-
-
 # Define area paths  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 Area paths allow you to group work items by team, product, or feature area. Whereas, [iteration paths](set-iteration-paths-sprints.md) allow you to group work into sprints, milestones, or other event-specific or time-related period. Both these fields allow you to define a hierarchy of paths. 
 
@@ -48,11 +46,11 @@ Certain [restrictions](#name-restrictions) apply on names of areas.
 
 <a id="admin-intro-team-services" /> 
 
-**Team Services**
+**VSTS**
 
 1. From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.   
 
-	<img src="_img/modify-areas-its-open-admin-context-ts.png" alt="Web portal, Team Services, Open Admin context, team project level" style="border: 2px solid #C3C3C3;" />  
+	<img src="_img/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, team project level" style="border: 2px solid #C3C3C3;" />  
 
 	If you're currently working from a team context, then hover over the ![gear icon](../_img/icons/gear_icon.png) and choose Project settings.  
 
@@ -100,7 +98,7 @@ Certain [restrictions](#name-restrictions) apply on names of areas.
 
 <a id="add-areas-team-services">   </a>
 
-### Add area paths (Team Services) < 
+### Add area paths (VSTS) < 
 
 1. Open the Work, Areas page for the team project context.  
 

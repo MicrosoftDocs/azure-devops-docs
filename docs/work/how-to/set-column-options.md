@@ -1,5 +1,5 @@
 ---
-title: Set column options | Team Services & TFS
+title: Set column options | VSTS & TFS
 description: Show fields in a column for a backlog or query in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -14,7 +14,7 @@ ms.date: 06/01/2017
 <a id="column-options">  </a>
 # Change column options 
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 From each backlog page or query, you can add or remove columns. Or, you can drag a column to a new position. 
 

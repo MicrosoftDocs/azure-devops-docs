@@ -1,5 +1,5 @@
 ---
-title: Team Services - Add team project members | Visual Studio Team Services
+title: VSTS - Add team project members | Visual Studio Team Services
 description: Add members to team projects in Visual Studio Team Services (Visual Studio Online, VSTS, VSO)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 1/11/2017
 
 #	Add team project members in Visual Studio Team Services
 
-**Team Services**
+**VSTS**
 
 Add members to your team project in Visual Studio Team Services, 
 so you can share code and work with your team, track their status, 
@@ -20,7 +20,7 @@ coordinate dev, build, test, and release activities, and more.
 For Team Foundation Server, learn [how to add team project members here](add-users.md).
 
 When you add members to team projects, 
-Team Services will automatically assign them 
+VSTS will automatically assign them 
 [Basic access](https://www.visualstudio.com/team-services/compare-features/), 
 if your account has seats available, 
 or [Stakeholder access](https://www.visualstudio.com/team-services/compare-features/), 
@@ -43,7 +43,7 @@ To add members to team projects, you'll need
 
 ## Add members to your team project
 
-0.	Sign in to your Team Services account 
+0.	Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```) 
 as project administrator, project collection administrator, or account owner.
 
@@ -77,17 +77,17 @@ Otherwise, enter the display names for existing users.
 Add them one at a time or all at the same time.
 
 	Which email addresses can I add?
-	 * If your Team Services account is Azure Active Directory backed, then you can only add email addresses that are
+	 * If your VSTS account is Azure Active Directory backed, then you can only add email addresses that are
 	 internal to the tenant.
 	
 	 * You must add email addresses for users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) 
-	unless your Team Services account [uses your organization's directory](#ConnectedDirectory) 
+	unless your VSTS account [uses your organization's directory](#ConnectedDirectory) 
 	to authenticate users and control account access through 
 	[Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
 	If new users don't have Microsoft accounts, have them [sign up](https://signup.live.com/).
 
- 	 * If your Team Services account is connected to your organization's directory, 
-	all users must be directory members and sign in to Team Services with "work or school accounts" that are managed by 
+ 	 * If your VSTS account is connected to your organization's directory, 
+	all users must be directory members and sign in to VSTS with "work or school accounts" that are managed by 
 	your organization's directory. 	If they're not members, have a directory administrator add them to the directory. 
 	That way, you can find them in this directory when you add users by searching for their email addresses or display names.
 
@@ -112,7 +112,7 @@ Add them one at a time or all at the same time.
 
 ####	Next
 
-*	[Connect to Team Services](connect-to-vsts.md) to share code from Xcode, Eclipse, or Visual Studio
+*	[Connect to VSTS](connect-to-vsts.md) to share code from Xcode, Eclipse, or Visual Studio
 *	[Create a backlog](../work/backlogs/create-your-backlog.md) to plan, organize, and track your work.
 *	[Grow and scale your teams](../work/scale/multiple-teams.md)
 
@@ -123,14 +123,14 @@ Add them one at a time or all at the same time.
 <a name="cant-add-users"></a>
 ####Q:	Why can't I add any more members to my team project?
 
-A:	Your Team Services account is free for the first 5 users with Basic access. 
+A:	Your VSTS account is free for the first 5 users with Basic access. 
 You can add unlimited Stakeholders and Visual Studio subscribers for no extra charge. 
 After you assign all 5 free users with Basic access, 
 you can continue adding Stakeholders and Visual Studio subscribers. 
 To add a 6th user or more with Basic access, 
 you'll need to [set up billing in Azure](../billing/set-up-billing-for-your-account-vs.md). 
 You can then [pay for more users who need Basic access](../billing/buy-basic-access-add-users.md), 
-return to your Team Services account, 
+return to your VSTS account, 
 [add these users, and assign them Basic access](add-account-users-assign-access-levels.md). 
 This lets you pay monthly for their access, and you can cancel anytime.
 

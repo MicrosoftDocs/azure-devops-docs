@@ -1,5 +1,5 @@
 ---
-title: Define default value or copy a value | Team Services & TFS
+title: Define default value or copy a value | VSTS & TFS
 description: Syntax and usage for the COPY, DEFAULT, and SERVERDEFAULT elements  
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -12,7 +12,7 @@ ms.date: 04/05/2017
 
 # Define a default value or copy a value to a field
 
-<b>Team Services (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
+<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
 
 
 >[!IMPORTANT]  

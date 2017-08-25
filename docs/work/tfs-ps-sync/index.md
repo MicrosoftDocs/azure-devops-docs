@@ -1,5 +1,5 @@
 ---
-title: TFS-Project Server Integration index | Team Services & TFS
+title: TFS-Project Server Integration index | VSTS & TFS
 description: Index to topics for working with TFS-Project Server synchronization   
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

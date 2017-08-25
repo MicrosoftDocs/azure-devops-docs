@@ -1,6 +1,6 @@
 ---
-title: Resolve data validation errors | Team Services & TFS
-description: Address rule errors that occur when publishing a list from Excel or Project to Team Services or Team Foundation Server (TFS)  
+title: Resolve data validation errors | VSTS & TFS
+description: Address rule errors that occur when publishing a list from Excel or Project to VSTSor Team Foundation Server (TFS)  
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.topic: office

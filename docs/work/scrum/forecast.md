@@ -1,5 +1,5 @@
 ---
-title: Velocity and forecasting | Team Services & TFS
+title: Velocity and forecasting | VSTS & TFS
 description: Use the velocity chart and forecast tool to determine how much work your team can deliver across several sprints    
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 04/11/2017
 
 # Forecasting
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 Teams use the forecast tool to help in their sprint planning efforts. By plugging in a value for the [team velocity](../../report/guidance/team-velocity.md), the forecast tool will show which items in the backlog can be completed within future sprints.  Both tools are team-specific tools that rely on the team's ability to estimate backlog items. Once your team has completed a sprint or two, they can use the team velocity  to forecast how much of the backlog they can finish within the upcoming sprints. 
 
@@ -37,11 +37,11 @@ To forecast your sprint, turn forecasting on and enter your team's predicted vel
 The tool draws lines for each future sprint selected by the team. The Forecast lines show how much work your team should be able to complete in future sprints. Typically, items above the first line are already in progress for the current sprint. Items that fall between the first and second forecast lines indicate what can be completed in the named sprint.   
 
 >[!NOTE]  
->The forecast logic has changed for Team Services. Previously, the forecast tool limited the number of items shown between the forecast lines to those that could be completed within the sprint or using unused Effort points from the previous sprint. 
+>The forecast logic has changed for VSTS. Previously, the forecast tool limited the number of items shown between the forecast lines to those that could be completed within the sprint or using unused Effort points from the previous sprint. 
 >
 >Now, all items listed between the lines can be started in the sprint labeled by the first line, but may not be completed within the sprint. The velocity points that can't be completed in one sprint is carried over to the next sprint. For example, for a velocity of 15, if Item 1 has 35 story points, 20 velocity points are carried over to next sprint, then again 5 velocity points are carried over to sprint after that. 
 
-### Team Services and TFS 2017.2 
+### VSTS and TFS 2017.2 
 
 In this example, a Velocity of 15 is used. The forecast tool shows between two and four items can be worked on during the first five sprints based on the amount of Effort assigned to each work item. The forecast logic carries over velocity points from one sprint to the next. 
 

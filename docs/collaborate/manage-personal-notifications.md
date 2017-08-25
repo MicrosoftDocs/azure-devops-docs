@@ -1,5 +1,5 @@
 ---
-title: Manage your personal notification settings | Team Services & TFS
+title: Manage your personal notification settings | VSTS & TFS
 description: Get notified when changes occur to source code, git, work items, and builds when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: collaborate
 ms.prod: vs-devops-alm
@@ -12,12 +12,12 @@ ms.date: 02/14/2017
 
 # Manage your notifications
 
-<b>Team Services | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
+<b>VSTS | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
 
 >[!NOTE]  
->**Feature availability**: This topic applies to Team Services and to TFS 2017.1 and later versions. If you work from an on-premises TFS 2017 or ealier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) in order for team members to see the Notifications option from their account menu and to  receive notifications. 
+>**Feature availability**: This topic applies to VSTS and to TFS 2017.1 and later versions. If you work from an on-premises TFS 2017 or ealier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) in order for team members to see the Notifications option from their account menu and to  receive notifications. 
  
-Notifications help you and your team stay informed about activity in your Team Services projects. With notifications, you are notified when changes occur to work items, code reviews, pull requests, source control files, and builds, you can be notified via email. For example, you can get notified whenever a bug that you opened is resolved or a work item is assigned to you. 
+Notifications help you and your team stay informed about activity in your VSTS projects. With notifications, you are notified when changes occur to work items, code reviews, pull requests, source control files, and builds, you can be notified via email. For example, you can get notified whenever a bug that you opened is resolved or a work item is assigned to you. 
 
 To manage your notification settings, select the Notifications option under the profile menu:
 	

@@ -1,5 +1,5 @@
 ---
-title: How to buy build hosted and private pipelines | Team Services
+title: How to buy build hosted and private pipelines | VSTS
 description: Buy more capacity for builds and releases by purchasing more private or hosted pipelines in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 04/28/2017
 
 #  How to buy more pipeline capacity for builds and releases in Visual Studio Team Services
 
-**Team Services**
+**VSTS**
 
 Visual Studio Team Services offers these
 [additional team services](https://www.visualstudio.com/team-services/pricing):
@@ -29,13 +29,13 @@ running agent software from Microsoft.
   The maximum number of concurrent builds that you can run and releases
   that you can deploy at the same time is limited only by the number of pipelines that you have.
 
-  Your Team Services account includes these **free** amounts:
+  Your VSTS account includes these **free** amounts:
 
   * 1 free Private Pipeline
 
     With this free Private Pipeline, run unlimited concurrent builds
     or deploy 1 release at a time in Team Foundation Server 2017,
-    or run 1 build or deploy 1 release at a time in Team Services on
+    or run 1 build or deploy 1 release at a time in VSTS on
     agent software from Microsoft.  Private agents are now free and unlimited.
     Each Visual Studio Enterprise subscriber also contributes
     a Private Pipeline that you can use. You can also
@@ -44,7 +44,7 @@ running agent software from Microsoft.
   * 1 free Hosted Pipeline
 
     With this free Hosted Pipeline, you get 4 hours (240 minutes) per month
-    and a maximum duration of 30 minutes per build or deployment in Team Services.
+    and a maximum duration of 30 minutes per build or deployment in VSTS.
     If you just need more build time for 1 concurrent build or release,
     [buy another Hosted Pipeline](#buy-build-release) without the 4-hour limit
     to increase your maximum duration per build or deployment up to 6 hours.
@@ -52,7 +52,7 @@ running agent software from Microsoft.
 
     Learn about:
 
-    * [Team Services: Build & Release pipelines](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
+    * [VSTS: Build & Release pipelines](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
     * [TFS: Build & Release pipelines](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
     * [Pricing for Build & Release pipelines](https://www.visualstudio.com/team-services/pricing)
 
@@ -76,13 +76,13 @@ running agent software from Microsoft.
 
 Before you start:
 
-*  You'll need Team Services
+*  You'll need VSTS
 [project collection administrator or account owner permissions](#FindOwnerPCA)
-to purchase for your Team Services account.
+to purchase for your VSTS account.
 
 *  You'll need an Azure subscription that you can
-link to your Team Services account for billing,
-if your Team Services account isn't linked already.
+link to your VSTS account for billing,
+if your VSTS account isn't linked already.
 [Which Azure subscriptions can I use?](#AzureMSDNSubscription)
 
   To use an existing Azure subscription for billing,
@@ -97,8 +97,8 @@ if your Team Services account isn't linked already.
   You'll get the necessary administrator permissions
   with your new subscription.
 
-  Your Team Services account will reuse this Azure subscription
-  when you make future purchases for your Team Services account
+  Your VSTS account will reuse this Azure subscription
+  when you make future purchases for your VSTS account
   from the [Visual Studio Marketplace](https://marketplace.visualstudio.com)
   or from Azure. [More about Azure subscriptions for billing](#billing).
 
@@ -111,7 +111,7 @@ if your Team Services account isn't linked already.
 > We plan to retire the experience for buying agents in the Azure portal soon.
 
 
-0.  As Team Services project collection administrator or account owner,
+0.  As VSTS project collection administrator or account owner,
 sign in to either:
 
   *  [**Visual Studio Marketplace** > **Build and release** > **Hosted pipelines for Build and Release**](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
@@ -119,16 +119,16 @@ sign in to either:
 
 0.  Choose **Buy** for your selected pipeline.
 
-  ![Select your Team Services account](_img/get-more-build-load-testing/buy-hosted-build-release-pipelines.png)
+  ![Select your VSTS account](_img/get-more-build-load-testing/buy-hosted-build-release-pipelines.png)
 
-0.  Select your Team Services account,
+0.  Select your VSTS account,
 if you have multiple accounts.
 
-  ![Select your Team Services account](_img/get-more-build-load-testing/select-team-services-account.png)
+  ![Select your VSTS account](_img/get-more-build-load-testing/select-team-services-account.png)
 
-  <p><a data-toggle="collapse" href="#expando-why-no-ts-account">Don't see your Team Services accounts? &#x25BC;</a></p>
+  <p><a data-toggle="collapse" href="#expando-why-no-ts-account">Don't see your VSTS accounts? &#x25BC;</a></p>
   <div class="collapse" id="expando-why-no-ts-account">
-  <p>To select your Team Services account here, you must have have Team Services
+  <p>To select your VSTS account here, you must have have VSTS
   [project collection administrator or account owner permissions](#FindOwnerPCA).
   </div>
 
@@ -156,15 +156,15 @@ Finish your purchase.
 
   ![Select number of pipelines to buy](_img/get-more-build-load-testing/select-number-hosted-pipelines.png)
 
-0.  To view your pipelines, go to your Team Services account.
+0.  To view your pipelines, go to your VSTS account.
 
-  ![View pipelines in your Team Services account](_img/get-more-build-load-testing/confirm-hosted-pipeline-purchase.png)
+  ![View pipelines in your VSTS account](_img/get-more-build-load-testing/confirm-hosted-pipeline-purchase.png)
 
-  ![Go to Team Services account toolbar > Build and Release](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
+  ![Go to VSTS account toolbar > Build and Release](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
 
   To return to the Build & Release hub in
-  your Team Services account at any time,
-  go to your Team Services account toolbar,
+  your VSTS account at any time,
+  go to your VSTS account toolbar,
   then go to **Build and Release**
   (```https://{youraccount}.visualstudio.com/_admin/_buildQueue?_a=resourceLimits```).
 
@@ -174,18 +174,18 @@ Finish your purchase.
 When your team's needs for build or release capacity changes,
 you can update the number of pipelines that you bought.
 
-0.  Go to your Team Services account toolbar,
+0.  Go to your VSTS account toolbar,
 then go to **Build and Release**
 (```https://{youraccount}.visualstudio.com/_admin/_buildQueue?_a=resourceLimits```).
 
-  ![Go to Team Services account toolbar > Build and Release](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
+  ![Go to VSTS account toolbar > Build and Release](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
 
 0.  Choose **Change purchased quantity**
 for the paid pipeline that you want to update,
 so you can go to the Visual Studio Marketplace.
 
 0.  In the Visual Studio Marketplace,
-choose **Buy**, select your Team Services account,
+choose **Buy**, select your VSTS account,
 then update your number of paid pipelines.
 
 
@@ -195,7 +195,7 @@ then update your number of paid pipelines.
 - [Build your app](../build-release/apps/index.md)
 - [Concurrent build and release pipelines in Visual Studio Team Services](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
 - [Concurrent release pipelines in Team Foundation Server](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
-- [How to buy cloud-based load testing in Team Services](buy-load-testing-vs.md)  
+- [How to buy cloud-based load testing in VSTS](buy-load-testing-vs.md)  
 - [Visual Studio Marketplace and billing Q&A](../marketplace/marketplace-billing-qa.md)  
 
 
@@ -205,7 +205,7 @@ then update your number of paid pipelines.
 ### Q:  Why pay for pipelines?
 
 A:  When you pay for pipelines, you can run more than one build or release at the same time
-in your Team Services account. Learn
+in your VSTS account. Learn
 [about pipeline pricing](https://www.visualstudio.com/team-services/pricing)
 or [how pipelines work](../build-release/concepts/licensing/concurrent-pipelines-ts.md).
 
@@ -242,13 +242,13 @@ Learn more about [pricing here](https://www.visualstudio.com/team-services/prici
 
 ### Q: Are there other ways to get features for my account?
 
-A: Yes, you can add other features to your Team Services account when you
+A: Yes, you can add other features to your VSTS account when you
 [download and install extensions from the Visual Studio Marketplace](https://www.visualstudio.com/get-started/marketplace/get-vsts-extensions).
 
-### Q: How do I get help or support for Team Services?
+### Q: How do I get help or support for VSTS?
 
-A:	Try the [Team Services forum](https://social.msdn.microsoft.com/Forums/en-us/home?forum=TFService)
-or [Team Services Support](https://www.visualstudio.com/team-services/support).
+A:	Try the [VSTS forum](https://social.msdn.microsoft.com/Forums/en-us/home?forum=TFService)
+or [VSTS Support](https://www.visualstudio.com/team-services/support).
 
 
 <!-- ENDSECTION -->

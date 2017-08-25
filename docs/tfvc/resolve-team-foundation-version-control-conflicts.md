@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Resolve Team Foundation Version Control conflicts
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 An advantage of using Team Foundation version control to manage your files is that several people can work concurrently on a file. One drawback is that sometimes you must resolve conflicts before you can get, check in, unshelve, merge, or roll back your files.
 

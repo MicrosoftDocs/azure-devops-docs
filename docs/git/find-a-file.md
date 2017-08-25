@@ -1,6 +1,6 @@
 ---
-title: Find a file in your Git repo | Team Services & TFS
-description: Search your Git repo in Team Services or Team Foundation Server for a specific file or folder
+title: Find a file in your Git repo | VSTS & TFS
+description: Search your Git repo in VSTS or TFS for a specific file or folder
 ms.assetid: 228495b9-f3cb-484a-a798-d026d650fa26
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
@@ -10,7 +10,7 @@ ms.date: 01/09/2017
 ---
 
 # Find a file or folder in your Git repository
-#### Team Services | TFS 2017
+#### VSTS | TFS 2017
 
 Quickly find and navigate to a file or folder in your Git repository using the path control in the **Code** hub. 
 

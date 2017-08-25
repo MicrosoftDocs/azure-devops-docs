@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Add command
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Adds files and folders to version control.
 

@@ -1,5 +1,5 @@
 ---
-title: Create a pull request (command line) | Team Services & TFS
+title: Create a pull request (command line) | VSTS & TFS
 description: Reviewing and Publishing Code using Git Pull Requests
 ms.assetid: 2b74473f-254c-47e9-9c3b-14586550b87f
 ms.prod: vs-devops-alm
@@ -53,8 +53,8 @@ When you complete the pull request, there is a merge commit (seen here as the fi
 To create a pull request in Team Services:
 
 0. [Push](pushing-cmdline.md) your local branch.
-0. Create a pull request for the branch in Team Services.   
-![Creating a pull request in Team Services](_img/createpullrequest.gif)   
+0. Create a pull request for the branch in VSTS.   
+![Creating a pull request in VSTS](_img/createpullrequest.gif)   
 
 0. You can also create a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Team Project](../../accounts/connect-to-vsts.md) and select **New Pull Request** to open a pull request for your
 current branch:   
@@ -70,7 +70,7 @@ You can include Team Services work items and hyperlinks to allow others to have 
 ### Who reviews the pull request?
 
 When you create the pull request, you can add others who need to review your changes. You can add users and groups to the pull request after it is created if the scope of the
-review needs to expand. You can also associate the pull request with a task in Team Services to let others working with the task know changes are ready for review.
+review needs to expand. You can also associate the pull request with a task in VSTS to let others working with the task know changes are ready for review.
 
 ### How does the code review work?
 
@@ -88,7 +88,7 @@ Once you get the team's feedback, you can keep the pull request open to continue
 
 ## Completing a pull request
 
-![Completing a pull request in Team Services](_img/completepull.gif)
+![Completing a pull request in VSTS](_img/completepull.gif)
 
 Once all reviewers have approved the changes, you can now complete the pull request. You'll be prompted for a descriptive message about the changes proposed by the pull
 request. You can choose to delete the pull request branch when the pull request is complete. Git retains the commit history in the `master` branch after the pull request is complete, 

@@ -1,3 +1,3 @@
 ---
-redirect_url: /vsts/build-release/apps/get-started/dot-net
+redirect_url: /vsts/build-release/apps/windows/dot-net
 ---

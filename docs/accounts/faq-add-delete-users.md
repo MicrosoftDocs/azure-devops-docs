@@ -12,7 +12,7 @@ ms.date: 4/17/2017
 
 #	Troubleshoot adding and deleting users in the VSTS user hub
 
-**Team Services**
+**VSTS**
 
 
 
@@ -21,7 +21,7 @@ ms.date: 4/17/2017
 #### Q: Why can't I manage users?
 
 A:  To access the Users hub and manage users, you must have 
-[Team Services project collection administrator or account owner permissions](#find-owner).
+[VSTS project collection administrator or account owner permissions](#find-owner).
 
 
 <a name="find-owner"></a>
@@ -45,8 +45,8 @@ A:  To access the Users hub and manage users, you must have
 A: Assign this access level to users who have active and valid 
 [Visual Studio subscriptions](#EligibleMSDNSubscriptions). 
 You'll need the email address that's associated with this subscription.
-Team Services automatically recognizes and validates Visual Studio 
-subscribers who have Team Services as a benefit.
+VSTS automatically recognizes and validates Visual Studio 
+subscribers who have VSTS as a benefit.
 
 For example, if you select "Visual Studio/MSDN Subscriber", 
 but you don't have a valid and active Visual Studio subscription, you can only 
@@ -54,9 +54,9 @@ but you don't have a valid and active Visual Studio subscription, you can only
 
 <a name="EligibleMSDNSubscriptions"></a>
 
-#### Q: Which Visual Studio subscriptions can I use with Team Services?
+#### Q: Which Visual Studio subscriptions can I use with VSTS?
 
-A:  These subscriptions include Team Services at no extra charge 
+A:  These subscriptions include VSTS at no extra charge 
 ([check here for the current list](https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/)):
 
 *	Visual Studio Enterprise - monthly
@@ -101,12 +101,12 @@ A: This might happen for different reasons:
 
 *	Make sure that you have an active, valid, and 
 [eligible Visual Studio subscription](#EligibleMSDNSubscriptions) 
-that you can use with Team Services. 
+that you can use with VSTS. 
 
 *	You might experience a delay if your subscription is new.
 
 *	If you used a Microsoft account to activate your Visual Studio subscription, 
-and you're using an Azure "work or school account" with Team Services, 
+and you're using an Azure "work or school account" with VSTS, 
 learn [how to add your "work or school account" to your subscription](../billing/link-msdn-subscription-to-organizational-account-vs.md).
 
 Still having problems? Try these 
@@ -116,7 +116,7 @@ If you need more help, contact [Support](https://www.visualstudio.com/support/).
 <a name="why-access-changed"></a>
 #### Q: Why do Visual Studio subscribers' access levels change after they sign in?
 
-A: Team Services recognizes Visual Studio subscribers 
+A: VSTS recognizes Visual Studio subscribers 
 and will automatically assign them access based on their subscription, 
 no matter the current access level that's assigned to them.
 
@@ -138,12 +138,12 @@ and will transition users automatically. While Visual Studio Online Professional
 purchases now appear as Visual Studio Professional monthly subscriptions on your monthly invoice, 
 we haven't determined when users will be transitioned systematically. 
 This transition provides an upgrade by offering access to unlimited 
-Team Services accounts, not just one account, like Visual Studio Online Professional. 
+VSTS accounts, not just one account, like Visual Studio Online Professional. 
 The rest stays the same - monthly access to the Visual Studio Professional IDE, 
 and pricing remains at $45 per user, per month.
 Learn more about [Visual Studio subscriptions](https://www.visualstudio.com/products/how-to-buy-vs).
 
-If you're buying Professional users for a specific Team Services account,
+If you're buying Professional users for a specific VSTS account,
 which is possible only if you bought before November 2015,
 and want to upgrade, do this:
 	
@@ -172,7 +172,7 @@ Learn [how to buy Visual Studio subscriptions](../billing/vs-subscriptions/buy-v
 
 Last Access is the last date a user accessed any VSTS resources or services. Accessing VSTS includes using 
 *accountname*.visualstudio.com directly as well as using resources or services indirectly, such as using the Package Management 
-service from a build definition or pushing code to Team Services from a git command line or from an IDE.
+service from a build definition or pushing code to VSTS from a git command line or from an IDE.
 
 <a name="paid-basic-access-join-other-accounts"></a>
 
@@ -193,7 +193,7 @@ but meanwhile, you or your team member can continue
 *	Your or your team member's Visual Studio subscription has expired. 
 Meanwhile, they'll [work as stakeholders](../quickstart/get-started-stakeholder.md), 
 or you can give them Basic access until they renew their subscriptions.
-After they sign in, Team Services will restore their access automatically.
+After they sign in, VSTS will restore their access automatically.
 
 *	The Azure subscription used for billing is no longer active. 
 This affects all purchases made with this subscription, 
@@ -201,10 +201,10 @@ including Visual Studio subscriptions.
 To fix this problem, visit the [Azure account portal](https://account.windowsazure.com/subscriptions).
 
 *	The Azure subscription used for billing was 
-unlinked from your Team Services account. 
+unlinked from your VSTS account. 
 Learn more about [linking your account](../billing/set-up-billing-for-your-account-vs.md).
 
-*	Your Team Services account has more users with Basic access 
+*	Your VSTS account has more users with Basic access 
 than the number of users that you're paying for in Azure. 
 Your account includes 5 free users with Basic access, 
 but if you need to add more users with Basic access, 
@@ -228,9 +228,9 @@ This might happen for different reasons.
 
 	*	If you're using a paid extension, 
 	the Azure subscription used for billing might 
-	be unlinked from your Team Services account 
+	be unlinked from your VSTS account 
 	or might no longer be active. Learn more about 
-	[linking your Team Services account](../billing/set-up-billing-for-your-account-vs.md), 
+	[linking your VSTS account](../billing/set-up-billing-for-your-account-vs.md), 
 	or visit the [Azure account portal](https://account.windowsazure.com/subscriptions) 
 	to check your payment details.
 
@@ -241,7 +241,7 @@ This might happen for different reasons.
 
 #### Q: Why do I have to add users to a directory?
 
-A: Your Team Services account authenticates users and controls access 
+A: Your VSTS account authenticates users and controls access 
 through Azure Active Directory (Azure AD). All users must be directory members to get access.
 
 If you're a directory administrator, you can 
@@ -257,7 +257,7 @@ Learn more about [controlling access with a directory](access-with-azure-ad.md).
 
 #### Q: My account controls access with Azure Active Directory (Azure AD). Can I just delete users from the directory?
 
-A: Yes, but this removes their access to all Team Services accounts and other 
+A: Yes, but this removes their access to all VSTS accounts and other 
 assets associated with that directory.  You must have Azure AD global administrator permissions to  
 [delete a user from your Azure AD](delete-users-from-services-aad.md).
 

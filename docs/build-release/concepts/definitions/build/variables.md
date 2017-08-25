@@ -40,7 +40,7 @@ Variables give you a convenient way to get key bits of data into various parts o
 
 Variables are a great way to store and share key bits of data in your build definition. Some build templates automatically define some variables for you.
 
-For example, when you [create a new .NET app build](../../../apps/get-started/dot-net.md), `BuildConfiguration` and `BuildPlatform` are automatically defined for you.
+For example, when you [create a new .NET app build](../../../apps/windows/dot-net.md), `BuildConfiguration` and `BuildPlatform` are automatically defined for you.
 
 User-defined variables are formatted differently in different contexts. See above table.
 

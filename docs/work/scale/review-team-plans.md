@@ -1,5 +1,5 @@
 ---
-title: Review team delivery plans | Team Services & TFS
+title: Review team delivery plans | VSTS & TFS
 description: Install the Delivery Plans extension, add & use plans to review scheduled multi-team deliverables in Visual Studio Team Services (VSTS, VS Online) and Team Foundation Server  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -13,10 +13,10 @@ ms.date: 06/13/2017
 
 # Review team Delivery Plans 
 
-<b>Team Services | TFS 2017.2</b> 
+<b>VSTS | TFS 2017.2</b> 
 
 > [!NOTE]  
-> **Feature availability**: [Delivery Plans, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for Team Services and TFS 2017.2 and later versions. All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../quickstart/get-started-stakeholder.md), however, don’t have access to Delivery Plans.)  
+> **Feature availability**: [Delivery Plans, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for VSTS and TFS 2017.2 and later versions. All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../quickstart/get-started-stakeholder.md), however, don’t have access to Delivery Plans.)  
 
 In this topic you'll learn:
 
@@ -45,7 +45,7 @@ Some questions you might address during the review:
 - *Are dependencies across teams adequately addressed via the planned deliverables?* 
 - *Are their gaps in the schedule, where no deliverables are scheduled? What's the cause? Can this be mitigated?*  
 
-For example, we use Delivery Plans internally to share the schedule of Features that we add to Team Services. By seeing the work many teams have planned for the next 3 sprints, we can easily discuss whether these are the right priorities and if dependencies exist. 
+For example, we use Delivery Plans internally to share the schedule of Features that we add to VSTS. By seeing the work many teams have planned for the next 3 sprints, we can easily discuss whether these are the right priorities and if dependencies exist. 
 
 In this way, a Delivery Plan is a driver of alignment while allowing each team to retain a strong sense of autonomy. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different team projects if they use different processes. You can also customize the card fields so that you only see the data fields of interest and applicable per work item type.  
 
@@ -54,7 +54,7 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
 ### Pre-requisites
 In order to add and configure a plan, you must have the following in place:  
 - [Installed the Plans extension](#install-plans)  
-- Be granted Basic access or greater in [Team Services](../../accounts/add-account-users-assign-access-levels.md) or [TFS](../../security/change-access-levels.md) (Users with Stakeholder access can't add or view plans)  
+- Be granted Basic access or greater in [VSTS](../../accounts/add-account-users-assign-access-levels.md) or [TFS](../../security/change-access-levels.md) (Users with Stakeholder access can't add or view plans)  
 - [Defined iteration paths](../customize/set-area-paths.md) for the team project  
 - [Configured teams](multiple-teams.md) and [set team defaults and team sprints](set-team-defaults.md)   
 - Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned them to iterations      

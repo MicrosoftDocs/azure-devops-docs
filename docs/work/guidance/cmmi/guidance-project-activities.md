@@ -1,5 +1,5 @@
 ---
-title: Project activities | Team Services & TFS
+title: Project activities | VSTS & TFS
 description: Helps you reduce the risks to your project that stem from shifting requirements and implementation costs.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

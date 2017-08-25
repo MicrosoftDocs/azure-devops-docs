@@ -1,5 +1,5 @@
 ---
-title: View commit details | Team Services & TFS
+title: View commit details | VSTS & TFS
 description: View Git commit details in Visual Studio
 ms.assetid: 82aa7c10-c304-400a-84c9-d5ed87d66180
 toc: show
@@ -12,7 +12,7 @@ ms.date: 03/14/2017
 
 # Commit details
 
-#### Team Services | TFS 2017 Update 1 
+#### VSTS | TFS 2017 Update 1 
 
 ## Commit details view
 

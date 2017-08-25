@@ -1,5 +1,5 @@
 ---
-title: About work items | Team Services & TFS
+title: About work items | VSTS & TFS
 description: Use the web portal to plan and track work  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/03/2017
 
 # About work items 
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**  
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013**  
 
 You can use work items to track anything you need to track. 
 
@@ -58,7 +58,7 @@ Within the work item form, such as the web form shown, click the Assigned To fie
 
 Note the following: 
 - You can assign a work item only to team members recognized by the system, ones that you have added as team members 
-- The default list of names available in the drop-down menu for the Assigned To field contains all user accounts added to the [Team Services account](../../accounts/add-team-members-vs.md) or [TFS team project](../../accounts/add-users.md). These accounts are all members of the Project Collection Valid Users group.  Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (Team Services) or deployment (TFS).    
+- The default list of names available in the drop-down menu for the Assigned To field contains all user accounts added to the [VSTS account](../../accounts/add-team-members-vs.md) or [TFS team project](../../accounts/add-users.md). These accounts are all members of the Project Collection Valid Users group.  Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (VSTS) or deployment (TFS).    
 - Some drop-down menus that support assignment from the backlog or board pages in the web portal are automatically limited to team members 
 - Over time, the drop-down menu of person-name fields will display most recently selected names  
 - The system shows the display name and adds the account name when required to disambiguate identical display names  
@@ -105,8 +105,15 @@ Based on the platform or version you use, you can perform the following tasks.
 - Apply templates to work items
 - Manage work item templates
  
+Prior to creating templates, consider how you and your team(s) will use the templates. If you'll be using several templates, determine a naming convention that will help users easily select the right template for their use. 
+
+If you want to use custom fields in your templates, define those fields prior to creating your templates. See [Customize a field for a process](../process/customize-process-field.md) for VSTS, and [Add or modify a field](../customize/add-modify-field.md) for on-premises TFS. 
+
+You can specify any number of fields you want, including ones that the user will change&mdash;such as Title or Description. If you want the work item assigned to a specific team, define the team Area Path as part of the template.  
+
+Once you have a template defined, you can share it via email or a dashboard. Copy the link to the template and paste it within a markdown widget or through the Welcome page. See [Markdown guidance](../../reference/markdown-guidance.md).  
+
 To learn more, see [Use templates to add and update work items](../productivity/work-item-template.md).  
- 
  
 
 ## Try this next 
@@ -133,7 +140,7 @@ You can add work items from various clients, such as:
 - From Test Manager or the web portal, you can can [create test cases that automatically link to a user story or product backlog item](../../manual-test/getting-started/create-test-cases.md).
 - You can create bugs from the web portal, Visual Studio, or when [testing with Test Manager](https://msdn.microsoft.com/library/dd286731.aspx).  
 
-For an overview of all clients that connect to your team project, see [Tools and clients that connect to Team Services and TFS](../../tools.md). 
+For an overview of all clients that connect to your team project, see [Tools and clients that connect to VSTS and TFS](../../tools.md). 
 
 
 

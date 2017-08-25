@@ -1,5 +1,5 @@
 ---
-title: TFS-Office integration issues | Team Services & TFS  
+title: TFS-Office integration issues | VSTS & TFS  
 description: Resolve common integration issues that occur with TFS Office integration, resolve TF86001 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 03/28/2017
 
 # TFS-Office integration issues
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 If you don't see the Team ribbon in Excel, as shown in the image below, you may be able to resolve the issue with the procedures provided in this topic. 
 

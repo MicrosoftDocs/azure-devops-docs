@@ -1,5 +1,5 @@
 ---
-title: Remove work items permanently | Team Services & TFS
+title: Remove work items permanently | VSTS & TFS
 description: Correct issues for individual work items or bluk modify or remove work items added to the task board.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

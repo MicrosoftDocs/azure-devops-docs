@@ -1,5 +1,5 @@
 ---
-title: Upload, download, or delete a process template | Team Services & TFS 
+title: Upload, download, or delete a process template | VSTS & TFS 
 description: Upload, download, delete, or make default a process template for a team project collection 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,17 +11,17 @@ ms.date: 04/13/2017
 
 #Upload or download a process template
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 
 >[!NOTE]  
-><b>Feature availability: </b>From an on-premises Team Foundation Server (TFS), you can upload, download, and delete process templates. From Team Services, you can download process templates. For the Hosted XML and On-premises XML process models, you work with process templates to customize a process template to either update a team project or create a team project. To learn more, see [Customize your work tracking experience](../customize/customize-work.md).   
+><b>Feature availability: </b>From an on-premises Team Foundation Server (TFS), you can upload, download, and delete process templates. From VSTS, you can download process templates. For the Hosted XML and On-premises XML process models, you work with process templates to customize a process template to either update a team project or create a team project. To learn more, see [Customize your work tracking experience](../customize/customize-work.md).   
 
 When you choose to create a team project, the Project Creation Wizard (PCW) reads the process template to configure initial settings and upload artifacts and template files. Each process template defines the building blocks of the work item tracking system as well as other sub-systems you access through Team Services or an on-premises TFS. It supports Hosted XML and On-premises XMl process models which support customization of team projects through the modification and import of XML definition files. 
 
 
 >[!IMPORTANT]  
->When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for Team Services. 
+>When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for VSTS. 
 >
 >If you want these features to be created for a team project on your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../reference/process-templates/overview-process-template-files.md#client-support).  
 
@@ -34,7 +34,7 @@ You can upload, download, and delete process templates for a team project collec
 
 ## To manage a process template 
 
-1.	Open the same version of Visual Studio, Visual Studio Community, or Team Explorer as the on-premises TFS that you connect to. For example, if you connect to a TFS 2015 instance, you must connect from Visual Studio 2015 or Visual Studio Community 2015. If you connect to Team Services, choose the latest version supported.  
+1.	Open the same version of Visual Studio, Visual Studio Community, or Team Explorer as the on-premises TFS that you connect to. For example, if you connect to a TFS 2015 instance, you must connect from Visual Studio 2015 or Visual Studio Community 2015. If you connect to VSTS, choose the latest version supported.  
 
 	You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://www.visualstudio.com/downloads/#visual-studio-community-2015-with-update-3-free).  
 

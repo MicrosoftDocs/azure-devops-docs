@@ -1,5 +1,5 @@
 ---
-title: Add a team administrator | Team Services & TFS 
+title: Add a team administrator | VSTS & TFS 
 description: Add a user account to the team administrator role-Visual Studio Team Services and Team Foundation Server   
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,10 +11,8 @@ ms.date: 07/21/2017
 
 # Add a team administrator 
 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
-<!---
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
---> 
 
 <a id="add-team-admin">  </a>  
 
@@ -28,7 +26,7 @@ To get added as a team administrator, ask another team admin or the account owne
  
 2. Click the **Add** link to open the dialog for adding user identities. 
 
-	**Team Services and TFS 2017** 
+	**VSTS and TFS 2017** 
 
 	<img src="_img/add-team-admin-link.png" alt="Web portal, VSTS & TFS 2017, Open  team administrator context" style="border: 2px solid #C3C3C3;" />
 
@@ -38,7 +36,7 @@ To get added as a team administrator, ask another team admin or the account owne
 
 2. Enter the identities you want to add to the team administrator role. 
 
-	**Team Services and TFS 2017** 
+	**VSTS and TFS 2017** 
 
 	<img src="_img/add-admin-dialog.png" alt="VSTS, TFS 2017, Add team administrator dialog" style="border: 2px solid #C3C3C3;" /> 
 

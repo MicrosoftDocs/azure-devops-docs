@@ -1,5 +1,5 @@
 ---
-title: Share your code with Git from the command line | Team Services & TFS
+title: Share your code with Git from the command line | VSTS & TFS
 description: Share code in Git using the command line
 ms.assetid: 4b299dbf-3ca9-47af-bd6d-8c40bafac447
 ms.prod: vs-devops-alm
@@ -25,7 +25,7 @@ The instructions below use the default bash shell used on Linux and Mac OS X, bu
 ### Windows
 
 Download and install [Git for Windows](https://git-scm.com/download/win) , which includes the [Git Credential Manager](set-up-credential-managers.md) to 
-easily connect to Team Services. 
+easily connect to VSTS. 
 
 ### macOS X
 

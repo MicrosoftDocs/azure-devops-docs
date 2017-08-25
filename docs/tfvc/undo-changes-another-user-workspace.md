@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Undo Changes in Another User's Workspace
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Updated: October 2011
 

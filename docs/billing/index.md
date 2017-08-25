@@ -12,7 +12,7 @@ ms.date: 07/12/2017
 
 # Billing
 
-**Team Services** | **TFS** | **HockeyApp** | **Xamarin University** | **VS SUbscriptions**
+**VSTS** | **TFS** | **HockeyApp** | **Xamarin University** | **VS SUbscriptions**
 
 VSTS billing covers:
 
@@ -44,11 +44,11 @@ VSTS billing covers:
 
 ## Concepts 
 
-Team Services works with Azure Active Directory (Azure AD), 
+VSTS works with Azure Active Directory (Azure AD), 
 so that you can control access the same way that you do 
 with Microsoft services such as Office 365 and Microsoft Azure. 
 If your organization uses a directory (tenant) managed by Azure AD, 
-your Team Services account can also:
+your VSTS account can also:
 
 * [use your directory to authenticate access](../accounts/access-with-azure-ad.md)
 

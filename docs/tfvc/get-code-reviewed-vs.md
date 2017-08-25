@@ -12,7 +12,7 @@ ms.date: 08/10/2016
 
 # Get your code reviewed with Visual Studio
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Before you check in your code, you can use Visual Studio to ask someone else from your team to review it. Your request will show up in his team explorer, in the my work page.
 

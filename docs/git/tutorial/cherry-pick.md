@@ -1,5 +1,5 @@
 ---
-title: Copy changes to a branch with cherry-pick | Team Services & TFS
+title: Copy changes to a branch with cherry-pick | VSTS & TFS
 description: Copy and port changes from one branch to another in Git with cherry-pick,
 ms.assetid: 5bf5a8d2-9ff2-4d89-b59f-484a3c14021a
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/14/2017
 
 # Copy changes with cherry-pick
 
-###### Team Services | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+###### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
 Copy commits from one branch to another using cherry-pick. Unlike a merge or rebase, cherry-pick only brings the changes from the commits you select, instead of all the changes in a branch.
 

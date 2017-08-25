@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Control Access to Team Foundation Version Control
 
-**Team Services | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
+**VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
 Team Foundation version control supports granting access control permissions to Windows Groups, Windows Users, and Team Foundation Groups. Permissions can be inherited from the containing folder, or you can declare permissions explicitly.
 

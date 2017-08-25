@@ -1,5 +1,5 @@
 ---
-title: Changes made to process templates | Team Services & TFS  
+title: Changes made to process templates | VSTS & TFS  
 description: Summary of changes made to Agile, Scrum, and CMMI process templates to support updating existing team projects after a TFS upgrade  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,12 +11,12 @@ ms.date: 02/21/2017
 
 #Changes made to process templates  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
 >[!NOTE]  
->This topic describes changes made to the core system processes&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md) with updates made to the on-premises Team Foundation Server (TFS). These processes are available from both Team Services and TFS. 
+>This topic describes changes made to the core system processes&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md) with updates made to the on-premises Team Foundation Server (TFS). These processes are available from both VSTS and TFS. 
 >
->Team projects hosted on Team Services [update automatically with each service upgrade](https://www.visualstudio.com/articles/news/features-timeline). Whereas, updates to team projects defined on an on-premises TFS may require running the Configure Feature Wizard after updating to a later version of TFS.       
+>Team projects hosted on VSTS [update automatically with each service upgrade](https://www.visualstudio.com/articles/news/features-timeline). Whereas, updates to team projects defined on an on-premises TFS may require running the Configure Feature Wizard after updating to a later version of TFS.       
 
 To support the addition of new features, changes are introduced periodically to the core system processes or process template. A process&mdash;used by the Inheritance process model&mdash;determines the building blocks used to track work. A process template&mdash;used by the Hosted XML and On-premises XML process models&mdash;secifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas. For an overview of process models and customization options, see [Customize your work tracking experience](../customize/customize-work.md).
 

@@ -1,5 +1,5 @@
 ---
-title: TF30017-Team Explorer cannot connect to TFS | Team Services & TFS
+title: TF30017-Team Explorer cannot connect to TFS | VSTS & TFS
 description: Team Explorer will not connect to a server that does not have a valid CA certificate.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

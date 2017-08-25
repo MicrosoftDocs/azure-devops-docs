@@ -1,6 +1,6 @@
 ---
 title: Connect to team projects | Team Service & TFS 
-description: Connect a client to the cloud service Visual Studio Team Services or on-premises Team Foundation Server (TFS) 
+description: Connect a client to the cloud service VSTS or on-premises Team Foundation Server (TFS) 
 ms.topic: get-started-article  
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 12/05/2016
 
 # Connect to team projects 
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013** 
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013** 
 
 To share code, build apps, track work, and collaborate with team members, you connect to a team project from one of the following clients:  
 - [Web portal](#web-portal)  
@@ -23,7 +23,7 @@ To share code, build apps, track work, and collaborate with team members, you co
 - [Visual Studio Code](http://java.visualstudio.com/Docs/tools/vscode)    
 
 >[!NOTE]
->A team project defines a process and data storage in which you manage your software projects from planning to deployment. You or a team member create a team project either on Team Services or an on-premises TFS. When you connect to a team project, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system. 
+>A team project defines a process and data storage in which you manage your software projects from planning to deployment. You or a team member create a team project either on VSTS or an on-premises TFS. When you connect to a team project, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system. 
 
 If you don't have a team project yet, create one in [Visual Studio Team Services](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md). If you need to add a team, see [Multiple teams](../work/scale/multiple-teams.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members). 
 
@@ -34,11 +34,11 @@ To get started with a code base, [set up Git](../git/gitquickstart.md) or [set u
 <a id="web-portal">  </a>
 ## Connect from the web portal
 
-1.  If you're not a member of a Team Services or TFS security group, ask your account or project admin to add you.  
+1.  If you're not a member of a VSTS or TFS security group, ask your account or project admin to add you.  
 
 2.  Open a browser window and type a URL that uses the following form:
 
-	**Team Services:** 
+	**VSTS:** 
 	<pre><code>https://<i>AccountName</i>.visualstudio.com/<i>ProjectName</i> </code></pre>
 
 	**TFS (on-premises):**   
@@ -81,7 +81,7 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 
 
 >[!TIP]  
->If you're connecting to Team Services, see also [Connect to Visual Studio Team Services from Eclipse, Xcode, Visual Studio, and more](../accounts/connect-to-vsts.md). 
+>If you're connecting to VSTS, see also [Connect to Visual Studio Team Services from Eclipse, Xcode, Visual Studio, and more](../accounts/connect-to-vsts.md). 
 
 1.  If you haven't already, [download and install a version of Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs).
 
@@ -205,15 +205,15 @@ To add or modify work items by using Excel or Project, you connect your workshee
  
 
 > [!NOTE]  
-> You can't use Office Project 365 to connect to Team Services or TFS.
+> You can't use Office Project 365 to connect to VSTS or TFS.
  
 ### Connect from a worksheet or project plan 
 
 To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. See [Permission reference](../security/permissions.md) for details.
 
-1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Team Services or TFS 2017, you'll need Project 2010 or a more recent version. For client compatibility, see [Requirements](../accounts/requirements.md)
+1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For VSTS or TFS 2017, you'll need Project 2010 or a more recent version. For client compatibility, see [Requirements](../accounts/requirements.md)
 
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on Team Services or an on-premises TFS. 
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
 
 	> [!NOTE]  
 	> **Feature availability:** The only way to get the Team Foundation add-in to Excel is by installing one of the latest editions of Visual Studio or  TFS Standalone Office Integration.   
@@ -225,11 +225,11 @@ To follow these procedures, you must be a member of the **Readers** group or hav
     > [!TIP]    
     > If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/vstudio/ms268871.aspx).
 
-4.  Connect to Team Services account or a TFS instance and the team project. If you can't connect, [get added as a team member](../accounts/add-users.md).
+4.  Connect to VSTS account or a TFS instance and the team project. If you can't connect, [get added as a team member](../accounts/add-users.md).
 
     ![Connect to server](../work/office/_img/IC680074.png)
 
-    If it is your first time connecting from Excel or Project, you might have to add the Team Services account or TFS server to the list of recognized servers.
+    If it is your first time connecting from Excel or Project, you might have to add the VSTS account or TFS server to the list of recognized servers.
 
     ![Add account or server](../work/office/_img/IC658167.png)
 
@@ -300,7 +300,7 @@ To start planning and tracking work, see [Get started with Agile tools to plan a
 
 To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (Team Services)](../accounts/add-account-users-assign-access-levels.md) or a [project administrator (TFS)](../accounts/add-users.md). 
 
-Team Services provides access to the first 5 account users free. After that, you need to [pay for more users (Team Services)](../billing/buy-basic-access-add-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid Team Services users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
+VSTS provides access to the first 5 account users free. After that, you need to [pay for more users (Team Services)](../billing/buy-basic-access-add-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
 
 In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../quickstart/get-started-stakeholder.md).
 

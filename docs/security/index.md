@@ -1,5 +1,5 @@
 ---
-title: Security & Identity | Team Services 
+title: Security & Identity | VSTS 
 description: Index to topics for working with authentication, permissions, groups, and access levels in VSTS and and Team Foundation Server (TFS)  
 ms.assetid:  
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/04/2017
 
 # Security & Identity 
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013**
 
 <!---
 ## Overview  
@@ -34,17 +34,16 @@ ms.date: 08/04/2017
 ## Concepts 
 - [About permissions and groups](about-permissions.md)  
 - [About access levels](access-levels.md)  
-- [Use AD or AAD groups for automated user provisioning](use-ad-or-aad-groups-provisioning.md)  
+
 
 ## How-to Guides 
 
-- [Set Git branch permissions](/vsts/git/branch-permissions?toc=/vsts/security/toc.json) 
-- [Set build and release permissions](/vsts/security/set-build-release-permissions?toc=/vsts/security/toc.json) 
-- [Set permissions and access for work tracking](/vsts/work/how-to-set-permissions-access-work-tracking?toc=/vsts/security/toc.json) 
+- [Set Git branch permissions](/vsts/git/branch-permissions?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  ) 
+- [Set build and release permissions](set-build-release-permissions.md) 
+- [Set permissions and access for work tracking](/vsts/work/how-to-set-permissions-access-work-tracking?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  ) 
 - [Set project or collection-level permissions](set-project-collection-level-permissions.md)  
-- [Add administrators to a team project](/vsts/accounts/add-administrator-team-project?toc=/vsts/security/toc.json)  
-- [Add administrators to project collection](/vsts/accounts/add-administrator-project-collection?toc=/vsts/security/toc.json)  
-- [Change access levels (TFS)](/vsts/security/change-access-levels?toc=/vsts/security/toc.json)
+- [Add TFS server-level administrators](/vsts/accounts/add-administrator-tfs?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)  
+- [Change access levels (TFS)](change-access-levels.md)
 - [Restrict access to a resource](/vsts/accounts/restrict-access-tfs?toc=/vsts/security/toc.json)
 
 ## Reference 

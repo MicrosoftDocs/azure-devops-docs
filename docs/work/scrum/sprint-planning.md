@@ -1,5 +1,5 @@
 ---
-title: Sprint planning | Team Services & TFS
+title: Sprint planning | VSTS & TFS
 description: Plan a sprint or iteration working with Scrum methods in Visual Studio Team Services (VSTS) or the web portal for Team Foundation Server (TFS)   
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 07/21/2017
 
 # Sprint planning
  
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
 Your team builds the sprint backlog during the sprint planning meeting, typically held on the first day of the sprint. 
 Each sprint corresponds to a time-boxed interval which supports your team's ability to work using Agile processes and tools. 
@@ -107,7 +107,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 2. Name the task and enter an estimate for Remaining Work. Also, if you know who'll perform the work, go ahead and assign the task to that team member.  
 
 	> [!NOTE]  
-	> **Feature availability:** From the web portal for Team Services and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and ealier versions, the old form is supported.   
+	> **Feature availability:** From the web portal for VSTS and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and ealier versions, the old form is supported.   
 	
 	<a id="task-form-team-services" /> 
 	#### Task form, new form 

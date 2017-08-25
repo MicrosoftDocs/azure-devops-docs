@@ -1,5 +1,5 @@
 ---
-title: Project management | Team Services & TFS
+title: Project management | VSTS & TFS
 description: Use to understand how to manage, plan, and coordinate the development and maintenance of software products.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

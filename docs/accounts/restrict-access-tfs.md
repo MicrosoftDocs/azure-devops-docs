@@ -1,6 +1,6 @@
 ---
-title: Restrict access in Team Services and TFS
-description: Restrict access in Team Services and TFS
+title: Restrict access in VSTS and TFS
+description: Restrict access in VSTS and TFS
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs
@@ -9,11 +9,11 @@ ms.author: douge
 ms.date: 08/04/2017
 ---
 
-# Restrict access in Team Services and TFS
+# Restrict access in VSTS and TFS
 
-**Team Services** | **TFS 2017** | **TFS 2015** | **TFS 2013**
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-You can restrict access to resources that you manage in TFS or Team Services by setting the permission state to Deny through a security group. For a comprehensive list of default groups and permissions, see [Permission reference for Team Foundation Server](../security/permissions.md).
+You can restrict access to resources that you manage in TFS or VSTS by setting the permission state to Deny through a security group. For a comprehensive list of default groups and permissions, see [Permission reference for Team Foundation Server](../security/permissions.md).
 
 ## TFVC
 

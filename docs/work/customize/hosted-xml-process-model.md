@@ -14,7 +14,7 @@ ms.date: 08/02/2017
 <a id="inheritance"> </a> 
 # Hosted XML process model  
 
-**Team Services**
+**VSTS**
 
 <a id="hosted-xml-process-model">  </a>
 

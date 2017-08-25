@@ -1,5 +1,5 @@
 ---
-title: Undo changes in your Git repo (command line) | Team Services & TFS
+title: Undo changes in your Git repo (command line) | VSTS & TFS
 description: Undoing Changes with Git in Visual Studio Team Services using reset and revert.
 ms.assetid: d8d8567c-fdce-4dd9-b6ce-3d18018cb872
 ms.prod: vs-devops-alm

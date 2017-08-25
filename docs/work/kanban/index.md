@@ -1,5 +1,5 @@
 ---
-title: Kanban guidance | Team Services & TFS
+title: Kanban guidance | VSTS & TFS
 description: Index to topics for working with Kanban in VSTS and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

@@ -1,4 +1,4 @@
-<b>Team Services (Inheritance)</b>  
+<b>VSTS (Inheritance)</b>  
 
 >[!IMPORTANT]  
 >This topic applies to process customization for the Inheritance process model, which supports customization of team project(s) through a shared process model.

@@ -1,5 +1,5 @@
 ---
-title: Add type definitions for work item categories to a process template | Team Services & TFS
+title: Add type definitions for work item categories to a process template | VSTS & TFS
 description: Add categories for your process template - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

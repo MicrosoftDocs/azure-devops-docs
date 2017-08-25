@@ -1,4 +1,4 @@
-- name: Work Item Customization
+- name: Customization
   href: index.md
 - name: Overview
   items:
@@ -10,10 +10,6 @@
     href: set-area-paths.md
   - name: Define iteration paths or sprints
     href: set-iteration-paths-sprints.md
-  - name: Add a custom field (To be written)
-    href: add-custom-field.md
-  - name: Add a custom work item type
-    href: add-custom-wit.md
 - name: Concepts
   items:
   - name: Inheritance process model

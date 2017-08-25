@@ -1,5 +1,5 @@
 ---
-title: Link and Param XML elements reference | Team Services & TFS
+title: Link and Param XML elements reference | VSTS & TFS
 description: Adds a hyperlink to a field or a standalone label on a work item form by using the Link element - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

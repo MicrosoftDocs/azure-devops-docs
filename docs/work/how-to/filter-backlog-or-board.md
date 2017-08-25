@@ -1,5 +1,5 @@
 ---
-title: Filter backlogs and boards | Team Services & TFS 
+title: Filter backlogs and boards | VSTS & TFS 
 description: Filter your backlog or board based on work item type, assigned to, iteration or sprint, tags, or parent work items  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -14,7 +14,7 @@ ms.date: 07/24/2017
 
 # Filter backlogs, boards, and queries
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
 <!--- NEEDS UPDATING BASED ON FEATURES UNDER RELEASE  --> 
  
@@ -87,7 +87,7 @@ Depending on the size of your team and the number of stories in progress, your K
 ## Filter your Kanban board using keywords and tags 
 
 >[!NOTE]  
-><b>Feature availability: </b>Filter by keywords and tags is available from Team Services and TFS 2015 and later versions.  
+><b>Feature availability: </b>Filter by keywords and tags is available from VSTS and TFS 2015 and later versions.  
 
 To filter the Kanban board, first customize the board settings so that the cards display the fields or tags that contain keywords that you want to filter on. Otherwise, the keywords you enter will filter work items based on title.    
 
@@ -114,7 +114,7 @@ The filter criteria ignores the following characters when the field value starts
 ## Filter your Kanban board using select field values  
 
 >[!NOTE]  
-><b>Feature availability: </b>Filter by select fields is available from Team Services and TFS 2017 and later versions.  
+><b>Feature availability: </b>Filter by select fields is available from VSTS and TFS 2017 and later versions.  
 
 You can filter by select field values using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics). 
 
@@ -141,7 +141,7 @@ Once the board is filtered, you can click the filter icon to hide the drop downs
 <a id="parent-filter"></a>
 ## Filter your Kanban board by specifying parent work items
 >[!NOTE]  
-><b>Feature availability: </b>The **Filter by parent** feature is available from Team Services and TFS 2017 and later versions.  
+><b>Feature availability: </b>The **Filter by parent** feature is available from VSTS and TFS 2017 and later versions.  
 
 You can use the **Filter by parent** feature to filter by select parent work items using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features).
 

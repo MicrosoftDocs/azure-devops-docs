@@ -1,5 +1,5 @@
 ---
-title: Add administrators | Team Services & TFS  
+title: Add administrators | VSTS & TFS  
 description: Add server, team project collection,  or team project administrators 
 ms.assetid: ed578715-f4d2-4042-b797-5f97abde9973
 ms.prod: vs-devops-alm
@@ -9,11 +9,11 @@ ms.author: elbatk
 ms.date: 03/29/2017
 ---
 
-# Add administrators to Team Services and TFS
+# Add administrators to VSTS and TFS
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>
 
-Administrators in Team Services and TFS exist at three levels:
+Administrators in VSTS and TFS exist at three levels:
 the team, the team project, and the team project collection.
 In TFS, there are also server-level administrators.
 
@@ -21,7 +21,7 @@ Here's what you need to do to make someone an administrator at each of those lev
 
 ## Server
 
-> This section does not apply to Team Services.
+> This section does not apply to VSTS.
 
 To perform system maintenance, schedule backups, add functionality, and do other tasks,
 TFS server administrators must be able to configure and control all aspects of TFS.
@@ -142,7 +142,7 @@ If the user  doesn't have these permissions and role memberships, TFS configurat
 <a name="project-collection"></a>
 ## Project collection
 
-In TFS and Team Services, each team project collection is its own grouping
+In TFS and VSTS, each team project collection is its own grouping
 of projects that can share reports, work items, and other items, all stored in a single database.
 Project collection administrators maintain the collection and administer permissions and security
 for other roles at the collection level.

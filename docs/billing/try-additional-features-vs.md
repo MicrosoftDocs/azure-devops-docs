@@ -1,5 +1,5 @@
 ---
-title: Try paid Team Services extensions free | Visual Studio Team Services
+title: Try paid VSTS extensions free | Visual Studio Team Services
 description: Trial the paid feature extensions in Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 1/13/2017
 
 #   Try paid extensions for free in Visual Studio Team Services
 
-**Team Services**
+**VSTS**
 
 Extensions offer features and capabilities that you 
 can install in your Visual Studio Team Services account. 
@@ -25,12 +25,12 @@ comprehensive manual and exploratory testing features.
 
 ## Who can start extension trials?
 
-As the Team Services [account owner or project collection administrator](#find-owner), 
-you can start extension trials for your Team Services account. 
+As the VSTS [account owner or project collection administrator](#find-owner), 
+you can start extension trials for your VSTS account. 
 Otherwise, you can 
 [request extensions](https://www.visualstudio.com/docs/marketplace/get-vsts-extensions#request) 
 instead. Learn about other 
-[Team Services extensions](https://marketplace.visualstudio.com/vsts).
+[VSTS extensions](https://marketplace.visualstudio.com/vsts).
 
 [Can't access existing features?](#feature-access)
 
@@ -46,15 +46,15 @@ instead. Learn about other
 
 	![Start the extension trial](_img/try-additional-features/mp-start-test-manager-trial.png)
 
-0.  Select your Team Services account to install this extension.
+0.  Select your VSTS account to install this extension.
 
-	![Select Team Services account for extension trial](_img/try-additional-features/select-account.png)
+	![Select VSTS account for extension trial](_img/try-additional-features/select-account.png)
 
-	*	[Why don't I see any Team Services accounts?](#no-accounts) 
+	*	[Why don't I see any VSTS accounts?](#no-accounts) 
 	*	[Why can't I start an extension trial for the selected account?](#no-permissions) 
 
 0.	After your extension finishes installing, 
-	go to your Team Services account to use your extension. 
+	go to your VSTS account to use your extension. 
 	Let your team know that they have access too.
 
 	![Marketplace installs your extension](_img/try-additional-features/extension-installed.png)
@@ -108,7 +108,7 @@ only to users who need access.
 <a name="account-trial"></a>
 ####Q:   What happened to the account trial?
 
-A:	Team Services replaced the account trial with the 
+A:	VSTS replaced the account trial with the 
 [Test Manager extension trial](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web), 
 which also offers the same integrated, 
 comprehensive manual and exploratory testing features. 
@@ -122,10 +122,10 @@ A:  You can start an extension trial only once per account.
 [!INCLUDE [no-accounts](../marketplace/_shared/qa-no-accounts.md)]
 
 <a name="no-permissions"></a>
-####Q:		Why can't I start an extension trial for the selected Team Services account?
+####Q:		Why can't I start an extension trial for the selected VSTS account?
 
-A:	You must be the Team Services [account owner or project collection administrator](#find-owner) 
-to start an extension trial for the selected Team Services account. If you don't have permissions, 
+A:	You must be the VSTS [account owner or project collection administrator](#find-owner) 
+to start an extension trial for the selected VSTS account. If you don't have permissions, 
 you can [request the extension](../marketplace/request-vsts-extension.md) instead. 
 
 <a name="check-trial"></a>
@@ -139,7 +139,7 @@ A:	Check the extension pane in your Users hub.
 
 A: To stop your trial, just 
 [uninstall the extension](https://www.visualstudio.com/docs/marketplace/get-vsts-extensions#uninstall-disable-extension) 
-from your Team Services account.
+from your VSTS account.
 
 <a name="feature-access"></a>
 

@@ -1,5 +1,5 @@
 ---
-title: Manage change | Team Services & TFS
+title: Manage change | VSTS & TFS
 description: Use the change request work items to track and control all changes to the product and supporting systems - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

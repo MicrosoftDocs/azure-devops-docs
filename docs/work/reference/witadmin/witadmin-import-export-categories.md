@@ -1,5 +1,5 @@
 ---
-title: Import and export categories | Team Services & TFS
+title: Import and export categories | VSTS & TFS
 description: Use the witadmin commands to import and export categories defined for a team project - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

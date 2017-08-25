@@ -1,5 +1,5 @@
 ---
-title: Git frequently asked questions (command line) | Team Services & TFS
+title: Git frequently asked questions (command line) | VSTS & TFS
 description: Tips, Tricks, and HOWTO to complete some less-common Git tasks.
 ms.assetid: 92ce74f2-4c3b-454f-99af-03e09146daf9
 ms.prod: vs-devops-alm
@@ -78,7 +78,7 @@ who made the commit.
 </pre>
 
 `Blame` does the searching through the commit history for you. You can also go back through the a file's history in Team Services as well for a different approach to determining
-who made a change and when. Go into the Code Explorer for your repository and branch in Team Services, then click on the file of interest. Team Services will show a complete
+who made a change and when. Go into the Code Explorer for your repository and branch in VSTS, then click on the file of interest. Team Services will show a complete
 commit history for that file on the current branch.
 
 ### I've made changes to some files and now I can't checkout to a different branch or rebase my work.

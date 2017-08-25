@@ -1,5 +1,5 @@
 ---
-title: Scaled Agile Framework | Team Services & TFS 
+title: Scaled Agile Framework | VSTS & TFS 
 description: How to implement the Scaled Agile Framework to support epics, release trains, and multiple backlogs when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,9 +12,7 @@ ms.date: 07/22/2017
 
 # Implement Scaled Agile Framework® to support epics, release trains, and multiple backlogs  
 
-<!---
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
--->
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 As enterprises are benefiting from individual agile teams, the question now is how do we scale these practices across teams and gain a portfolio view of the progress of agile teams throughout the enterprise? To address these needs, many businesses are using the Scaled Agile Framework® (SAFe®).  
 
@@ -35,7 +33,7 @@ The SAFe big picture addresses how a portfolio vision is met by a hierarchy of t
 
 Reproduced with permission from &#169; 2011-2016  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
-Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../guidance/agile-process.md), However, the changes can be applied to any team project hosted on Visual Studio Team Services or an on-premises TFS.
+Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../guidance/agile-process.md), However, the changes can be applied to any team project hosted on Visual Studio Team Services (VSTS) or an on-premises TFS.
 
 ![Agile tool structure to support SAFe](_img/safe-objects-map-to-vso-objects.png)  
 
@@ -117,7 +115,8 @@ Another view available to program teams shows query-based graphs of release trai
 
 Since so much of a program team's work revolves around PIs and Release Trains, a custom report showing the scheduled shipping dates and what is projected to be on any given train might be useful. In addition, you can take advantage of the rich reporting options and the built-in reports the following services have to offer:
 
-- When connecting to Visual Studio Team Services: [Power BI integration overview](../../report/powerbi/overview.md) 
+- VSTS or TFS: [Dashboards, charts, and widgets](../../report/overview.md)
+- When connecting to VSTS: [Power BI integration overview](../../report/powerbi/overview.md) 
 - On-premises TFS: [SQL Server Reports](../../report/sql-reports/reporting-services-reports.md)  
 
 ###Feature teams' view of progress
@@ -326,7 +325,7 @@ The same principles apply to user stories in progress. You can map them to featu
 
 ##Related notes
 
-There's no customization required to implement SAFe when working in Visual Studio Team Services or an on-premises TFS 2015 deployment. However, if you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templates with PowerShell: blog post by Gordon Beeming](http://31og.com/post/upgradepublish-tfs-2013-process-templates-with-powershell). This post provides a PowerShell script which you can use to apply the customizations documented in the TFS 2013 version of this article.   
+There's no customization required to implement SAFe when working in VSTS or an on-premises TFS 2015 deployment. However, if you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templates with PowerShell: blog post by Gordon Beeming](http://31og.com/post/upgradepublish-tfs-2013-process-templates-with-powershell). This post provides a PowerShell script which you can use to apply the customizations documented in the TFS 2013 version of this article.   
 
 
 ###Resources
@@ -346,7 +345,7 @@ Resources mentioned earlier in this article and a few more are provided here for
 This article has been updated from the previous white paper developed in collaboration with the following authors:  
 - Gordon Beeming is a Software Developer at Derivco in the sunny city of Durban, South Africa. He spends most his time hacking away at the keyboard in Visual Studio or with his family relaxing. His blog is at [31og.com](http://31og.com) and you can follow him on Twitter at [twitter.com/gordonbeeming](http://twitter.com/gordonbeeming).  
 - Brian Blackman is a principal consultant with Microsoft Premier Developer, focusing on affecting ISV partners and Enterprises success in engineering and the marketplace. He has an MBA, and is a CSM, CSP, MCSD (C++), and MCTS and is a Visual Studio ALM Ranger. When he is not Ruck Mastering and contributing to Visual Studio ALM Ranger projects, he spends his time writing code, creating and delivering workshops, and consulting in various concentrations, especially helping organizations in their quest for business agility.  
-- Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by Visual Studio Team Services and on-premises TFS.
+- Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by VSTS and on-premises TFS.
 - Kathryn Elliott is a senior technical writer at Microsoft.  
 - Susan Ferrell is a senior technical writer and a Visual Studio ALM Ranger.  
 - Willy-Peter Schaub is a program manager with the Visual Studio ALM Rangers at the Microsoft Canada Development Center. Since the mid-'80s, he has been striving for simplicity and maintainability in software engineering. His blog is at [blogs.msdn.com/b/willy-peter_schaub](http://blogs.msdn.com/b/willy-peter_schaub) and you can follow him on Twitter at [twitter.com/wpschaub](http://twitter.com/wpschaub).  

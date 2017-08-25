@@ -1,5 +1,5 @@
 ---
-title: Scrum  | Team Services & TFS
+title: Scrum  | VSTS & TFS
 description: Index to topics for working in Scrum using VSTS or Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 07/14/2017
 
 # Scrum
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 With Scrum, you can schedule and plan sprints, update your task board, and monitor your sprint burndown. 
 

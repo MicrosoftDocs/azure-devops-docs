@@ -30,14 +30,14 @@ Don't order Visual Studio Marketplace services through your reseller.
 
 A:	Yes.  You can use these prepaid funds to pay for: 
 
-*	[Team Services users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) 
-*	[Microsoft-published extensions for Team Services and Team Foundation Server](https://marketplace.visualstudio.com/vsts)
+*	[VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) 
+*	[Microsoft-published extensions for VSTS and Team Foundation Server](https://marketplace.visualstudio.com/vsts)
 *	[Virtual user minutes for Cloud-based Load Testing](https://www.visualstudio.com/docs/setup-admin/team-services/buy-more-build-vs )
 *	[HockeyApp user plans](https://marketplace.visualstudio.com/subscriptions)
 * [Xamarin University](https://www.xamarin.com/university)
 
 You can't use these funds to pay for Visual Studio cloud 
-subscriptions and non-Microsoft extensions for Team Services and Team Foundation Server.
+subscriptions and non-Microsoft extensions for VSTS and Team Foundation Server.
 
 ####Q:	Can I use the Azure Free Trial to buy from the Visual Studio Marketplace?
 

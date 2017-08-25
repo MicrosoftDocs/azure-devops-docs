@@ -1,5 +1,5 @@
 ---
-title: Save your changes with Git commits | Team Services & TFS
+title: Save your changes with Git commits | VSTS & TFS
 description: Use Git commit to save your work into Git version control with Visual Studio or the command line.
 ms.assetid: 223c0064-06ec-433e-8ec2-d73a5435cf23
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/14/2017
 
 #  Save work with commits
 
-###### Team Services | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+###### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
 Git does not automatically snapshot your code as you make edits to files in your repo.  You must tell Git exactly which changes you want to add to the next snapshot by staging those changes.
 After staging your changes, create a commit to save the snapshot to your repo. 

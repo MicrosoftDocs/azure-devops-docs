@@ -1,5 +1,5 @@
 ---
-title: History and auditing | Team Services & TFS
+title: History and auditing | VSTS & TFS
 description: Track changes and use tools to support audit requirements when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 04/14/2017
 
 # History & auditing  
  
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 The history of a work item tells you who opened the item, what changed, and why. This information helps you track how an item changes over time. When you enter information in the history field, provide as much information as possible to help the next work item owner understand what has happened and what they have to do.  
 
@@ -19,7 +19,7 @@ You can use either the web portal or Team Explorer to view the history of a work
 
 
 <a id="team-services" /> 
-#### Team Services, TFS 2017
+#### VSTS, TFS 2017
     
 <img src="_img/hist-audit-query-ts-bt.png" alt="Search for items based on words contained in the History field" style="border: 2px solid #C3C3C3;" /> 
 
@@ -107,9 +107,9 @@ Items I've been associated with
 An entry is made to the History field each time a work item is saved. To view the history of changes, open an existing work item, and then choose the ![history tab icon](../_img/icons/icon-history-tab-wi.png) or **History** tab, or for some work item types, choose the **Details** tab. 
 
 <a id="team-services-tab" /> 
-#### Team Services, TFS 2017
+#### VSTS, TFS 2017
      
-<img src="_img/hist-audit-wi-form-vsts-tab.png" alt="View History tab - Team Services" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/hist-audit-wi-form-vsts-tab.png" alt="View History tab - VSTS" style="border: 2px solid #C3C3C3;" /> 
 
 > [!NOTE]  
 > The History field is no longer a rich-text field. To annotate the work item history, add to the Description or Discussion fields. 
@@ -128,11 +128,11 @@ If you open the work item from the web portal, you'll see the state change histo
 The history details shown depend on the platform, version, and client you user. 
 
 <a id="team-services-view" /> 
-#### Team Services, TFS 2017
+#### VSTS, TFS 2017
 
 Click an entry in the left pane to view the details of changes made.
      
-<img src="_img/hist-audit-wi-form.png" alt="History tab - Team Services" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/hist-audit-wi-form.png" alt="History tab - VSTS" style="border: 2px solid #C3C3C3;" /> 
 
 
 <a id="explorer" /> 

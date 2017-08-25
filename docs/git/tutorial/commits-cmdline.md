@@ -1,5 +1,5 @@
 ---
-title: Save your changes with Git commits (command line) | Team Services & TFS
+title: Save your changes with Git commits (command line) | VSTS & TFS
 description: Use Git commit to save your work into Git version control with Visual Studio or the command line.
 ms.assetid: 2e4cdf2a-927e-4bfa-92b8-b2dc9d5919e7
 ms.prod: vs-devops-alm

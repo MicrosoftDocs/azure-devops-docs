@@ -1,6 +1,6 @@
 ---
-title: Import a Git repo into your team project | Team Services & TFS
-description: Import a repo from Github, Gitlab, or BitBucket into your Team Services/TFS Team Project
+title: Import a Git repo into your team project | VSTS & TFS
+description: Import a repo from Github, Gitlab, or BitBucket into your VSTS/TFS Team Project
 ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git
@@ -10,7 +10,7 @@ ms.date: 08/23/2017
 ---
 
 # Import a Git repo
-#### Team Services | TFS 2017 Update 1
+#### VSTS | TFS 2017 Update 1
 
 This guide shows you how to import an existing Git repo from GitHub, BitBucket, GitLab, or other location into a new or empty existing repo in your Team Project. If you don’t have a VSTS account, you can [sign up](../accounts/create-account-with-work-school.md) for one for free. Each account includes free, unlimited private Git repositories.
 
@@ -44,7 +44,7 @@ Although most of the time the import is successful, the following conditions can
 ### What if my source repository is behind two-factor authentication?
 
 The import service uses REST APIs to validate and trigger import and cannot work directly with repositories that require two-factor authentication.
-Most Git hosting providers like [GitHub](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) and [Team Services](../accounts/use-personal-access-tokens-to-authenticate.md) support personal tokens which can be supplied to the import service. 
+Most Git hosting providers like [GitHub](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) and [VSTS](../accounts/use-personal-access-tokens-to-authenticate.md) support personal tokens which can be supplied to the import service. 
 
 ### What if my source repository does not support multi_ack?
 
@@ -54,7 +54,7 @@ This failure can happen when creating import request or while import is in progr
 
 ### Can I import from previous versions of Team Foundation Server?
 If the source Git repository is in a TFS version earlier than TFS 2017 RTM, then import will fail.
-This happens because of a contract mismatch between latest TFS/Team Services and pre-2017 RTM versions of TFS.
+This happens because of a contract mismatch between latest VSTS/TFS and pre-2017 RTM versions of TFS.
 
 ### Can I use MSA based credentials?
 Unfortunately, MSA based credentials will not work. Import service relies on basic authentication to communicate with the source repository. If the username / password you are using are not basic auth then authentication will fail and import will fail.

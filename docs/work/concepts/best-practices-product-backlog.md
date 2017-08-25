@@ -1,5 +1,5 @@
 ---
-title: Backlog best practices | Team Services & TFS
+title: Backlog best practices | VSTS & TFS
 description: Best practices to manage your product backlog in Visual Studio Team Services (VSTS) and Team Foundation 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/07/2017
 
 # Grooming your backlog  
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013**
  
 A great backlog conveys customer needs and value. Over the course of the project, your team will add detailed 
 information to each backlog item, break them down into smaller items, prioritize and estimate them, and finally, 

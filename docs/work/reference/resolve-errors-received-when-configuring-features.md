@@ -1,5 +1,5 @@
 ---
-title: Resolve errors received when configuring features | Team Services & TFS
+title: Resolve errors received when configuring features | VSTS & TFS
 description: Occurs when definitions in the team project conflict with definitions in the process templates uploaded to your team project collection.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
