@@ -1,5 +1,5 @@
 ---
-title: Process template and plug-in files | Team Services & TFS
+title: Process template and plug-in files | VSTS & TFS
 description: Describes each process template and plug-in file and what is supported when you create a team project via Visual Studio or the web portal  
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit 
@@ -31,7 +31,7 @@ For example, if a process template includes the plug-in for Windows SharePoint S
 
 Depending on whether you work from the cloud or an on-premises server, you can create a team project from one of the following clients.
 
-| Client | Team Services | On-premises TFS | 
+| Client | VSTS | On-premises TFS | 
 |--------|---------------|-----------------| 
 |Visual Studio| ![not supported](../../_img/icons/delete_icon.png) | ![supported](../../_img/icons/checkmark.png)|
 |Team Explorer| ![not supported](../../_img/icons/delete_icon.png) | ![supported](../../_img/icons/checkmark.png) |

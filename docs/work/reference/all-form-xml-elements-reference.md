@@ -1,5 +1,5 @@
 ---
-title: All FORM XML elements reference | Team Services & TFS
+title: All FORM XML elements reference | VSTS & TFS
 description: Use the information in this topic as quick reference to all the elements and main attributes - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

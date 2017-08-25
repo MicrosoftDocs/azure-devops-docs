@@ -1,6 +1,6 @@
 ---
 title: Resolve validation errors | Team Services  
-description: Fix errors reported upon importing a process to support customization of tracking work in Visual Studio Team Services.  
+description: Fix errors reported upon importing a process to support customization of tracking work in VSTS.  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
@@ -14,7 +14,7 @@ ms.date: 05/23/2017
 <b>Team Services (Hosted XML)</b>  
 
 >[!IMPORTANT]  
->**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for accounts that have been migrated to Team Services using the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Team Services process customization. 
+>**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for accounts that have been migrated to VSTSusing the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Team Services process customization. 
 >
 >If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../process/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
 >

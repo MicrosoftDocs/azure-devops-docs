@@ -1,5 +1,5 @@
 ---
-title: Rollup estimated and actual work using Project | Team Services & TFS
+title: Rollup estimated and actual work using Project | VSTS & TFS
 description: Provides summed values of select fields for all child work items of a parent.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

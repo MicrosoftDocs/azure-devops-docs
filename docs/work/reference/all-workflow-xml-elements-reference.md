@@ -1,5 +1,5 @@
 ---
-title: All WORKFLOW XML elements reference | Team Services & TFS
+title: All WORKFLOW XML elements reference | VSTS & TFS
 description: Use the information in this topic as a quick reference to all the elemetns and main attributes - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -12,7 +12,7 @@ ms.date: 02/10/2017
 
 # All WORKFLOW XML elements reference
 
-<b>Team Services (Hosted XML) | TFS 2017 | TFS 2015 </b> 
+<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b> 
 
 >[!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For customizing the workflow for the Inheritance process model, see [Customize a process](../process/customize-process-workflow.md). 

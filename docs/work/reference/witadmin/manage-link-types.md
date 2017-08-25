@@ -1,5 +1,5 @@
 ---
-title: Manage link types | Team Services & TFS
+title: Manage link types | VSTS & TFS
 description: Customize the link types to track related work, dependencies, and changes made over time - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

@@ -1,5 +1,5 @@
 ---
-title: Define link controls, restrict link relationships | Team Services & TFS
+title: Define link controls, restrict link relationships | VSTS & TFS
 description: Controls and restrict the link relationships that the team members can view and make from that control to include only links to other features - Team Foundation Server (TFS) 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

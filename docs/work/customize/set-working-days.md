@@ -1,5 +1,5 @@
 ---
-title: Set working days off | Team Services & TFS
+title: Set working days off | VSTS & TFS
 description: Choose the days your team works for capacity planning purposes and when using sprint/scrum methods  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 05/22/2017
 
 # Set working days  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013 </b>
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013 </b>
 
 Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked in your team's Settings, Working days page. 
 
@@ -22,7 +22,7 @@ If you're not a team administrator, [get added as one](../scale/add-team-adminis
 
 Open the Settings dialog from the Capacity page to set Working days.
 
-<img src="../scale/_img/capacity-planning-open-team-settings-tfs-15.png" alt="Team Services, Capacity page, Settings, Working days" style="border: 2px solid #C3C3C3;" />
+<img src="../scale/_img/capacity-planning-open-team-settings-tfs-15.png" alt="VSTS, Capacity page, Settings, Working days" style="border: 2px solid #C3C3C3;" />
 
 
 ### TFS 2015

@@ -1,5 +1,5 @@
 ---
-title: Index to work item and tracking customization topics | Team Services & TFS
+title: Index to work item and tracking customization topics | VSTS & TFS
 description: Index to topics for customizing your work tracking experience in VSTS and and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -9,16 +9,16 @@ ms.author: kaelli
 ms.date: 07/26/2017
 ---
 
-# Work Item Customization  
+# Customization  
 
-With work item customization, you can add a custom field or work item type (WIT), or modify existing WITs. The method you use depends on whether you work in Team Services, which uses the Inheritance and Hosted XML process models, or an on-premises TFS, which uses the On-premises XML process model.  
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>
+
+Add a custom field, a custom work item type (WIT) or modify an existing WIT. The method you use depends on whether you work in Team Services, which uses the Inheritance and Hosted XML process models, or an on-premises TFS, which uses the On-premises XML process model.  
 
 ## 5-Minute Quickstarts  
 
 - [Define area paths](set-area-paths.md)
-- [Define iteration paths or sprints](set-iteration-paths-sprints.md)
-- [Add a custom field](add-custom-field.md)
-- [Add a custom work item type](add-custom-wit.md)  
+- [Define iteration paths or sprints](set-iteration-paths-sprints.md) 
 
 ## Concepts
 

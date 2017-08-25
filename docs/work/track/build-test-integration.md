@@ -1,5 +1,5 @@
 ---
-title: Build and test integration queries | Team Services & TFS
+title: Build and test integration queries | VSTS & TFS
 description: Track work by creating queries based on build and test integration fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 04/14/2017
 
 # Query based on build and test integration fields
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 Build and test integration work item fields support the following actions:  
 -   Associate bugs with the builds where they were found or fixed  
@@ -106,7 +106,7 @@ To customize a field or pick list, see [Add or modify a field to support queries
 <td><p>Product build number, also known as a revision, in which a bug was found.</p>
 <p>Reference name=Microsoft.VSTS.Build.FoundIn, Data type=String</p>
 <blockquote>
-**Note:** You can also use the **Found in build** link type to link a work item to a build. This link type is available from Team Services and only work with the current build processes (not XAML builds).   
+**Note:** You can also use the **Found in build** link type to link a work item to a build. This link type is available from VSTS and only work with the current build processes (not XAML builds).   
 </blockquote>
 </td>
 <td>Bug</td>
@@ -117,7 +117,7 @@ To customize a field or pick list, see [Add or modify a field to support queries
 <td><p>Product build number that incorporates the code or fixes a bug.</p>
 <p>Reference name=Microsoft.VSTS.Build.IntegrationBuild, Data type=String</p>
 <blockquote>
-**Note:** You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from Team Services and only work with the current build processes (not XAML builds).  
+**Note:** You can also use the **Integrated in build** link type to link a work item to a build. This link type is available from VSTS and only work with the current build processes (not XAML builds).  
 </blockquote>
 </td>
 <td>All</td>

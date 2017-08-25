@@ -1,5 +1,5 @@
 ---
-title: About work items | Team Services & TFS
+title: About work items | VSTS & TFS
 description: Use the web portal to plan and track work  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/03/2017
 
 # About work items 
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**  
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013**  
 
 You can use work items to track anything you need to track. 
 
@@ -58,7 +58,7 @@ Within the work item form, such as the web form shown, click the Assigned To fie
 
 Note the following: 
 - You can assign a work item only to team members recognized by the system, ones that you have added as team members 
-- The default list of names available in the drop-down menu for the Assigned To field contains all user accounts added to the [Team Services account](../../accounts/add-team-members-vs.md) or [TFS team project](../../accounts/add-users.md). These accounts are all members of the Project Collection Valid Users group.  Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (Team Services) or deployment (TFS).    
+- The default list of names available in the drop-down menu for the Assigned To field contains all user accounts added to the [VSTS account](../../accounts/add-team-members-vs.md) or [TFS team project](../../accounts/add-users.md). These accounts are all members of the Project Collection Valid Users group.  Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (VSTS) or deployment (TFS).    
 - Some drop-down menus that support assignment from the backlog or board pages in the web portal are automatically limited to team members 
 - Over time, the drop-down menu of person-name fields will display most recently selected names  
 - The system shows the display name and adds the account name when required to disambiguate identical display names  
@@ -133,7 +133,7 @@ You can add work items from various clients, such as:
 - From Test Manager or the web portal, you can can [create test cases that automatically link to a user story or product backlog item](../../manual-test/getting-started/create-test-cases.md).
 - You can create bugs from the web portal, Visual Studio, or when [testing with Test Manager](https://msdn.microsoft.com/library/dd286731.aspx).  
 
-For an overview of all clients that connect to your team project, see [Tools and clients that connect to Team Services and TFS](../../tools.md). 
+For an overview of all clients that connect to your team project, see [Tools and clients that connect to VSTS and TFS](../../tools.md). 
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Change the maximum attachment size for work items | Team Services & TFS
+title: Change the maximum attachment size for work items | VSTS & TFS
 description: Use the TFS web service to increase the size of files you attach to up to 2GB - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

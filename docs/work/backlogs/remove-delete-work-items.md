@@ -1,5 +1,5 @@
 ---
-title: Move, change, or delete work items | Team Services & TFS
+title: Move, change, or delete work items | VSTS & TFS
 description: Guide to removing/deleting working items and test artifacts from Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)   
 ms.technology: vs-devops-agile-wit
 ms.topic: get-started-article 
@@ -12,17 +12,15 @@ ms.date: 03/29/2017
 
 #Move, change, or delete work items 
 
-<!---
-<b>Team Services | TFS 2017 | TFS 2015</b> 
---> 
+<b>VSTS | TFS 2017 | TFS 2015</b> 
 
 Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect team project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or task board that aren't relevant anymore.  
 
 In this topic you'll learn:  
 
 > [!div class="checklist"] 
-> * How to change the work item type of one or more work items (Team Services)  
-> * How to move one or more work items to another team project  (Team Services)     
+> * How to change the work item type of one or more work items (VSTS)  
+> * How to move one or more work items to another team project  (VSTS)     
 > * How to remove work items from the backlog by changing the State to Removed     
 > * How to delete work items and test artifacts  
 > * How to restore or permanently delete work items (web portal)
@@ -30,7 +28,7 @@ In this topic you'll learn:
 > * What permissions are required to delete work items and test artifacts    
 
 >[!NOTE]  
->**Feature availability:** The following features are available from Team Services (cloud service) or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Provide product and content feedback](../../provide-feedback.md#platform-version) 
+>**Feature availability:** The following features are available from VSTS (cloud service) or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Provide product and content feedback](../../provide-feedback.md#platform-version) 
 
 You only have access to those actions that are supported on your platform and for which you have permissions. If you are a member of the Contributors group (anyone who has been added as a team member) or Project Administrators groups, you have access to the following features. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../security/permissions-access.md). 
 
@@ -38,7 +36,7 @@ You only have access to those actions that are supported on your platform and fo
 > [!div class="mx-tdBreakAll"]  
 > |Contributors|Project Administrators|  
 > |-------------|----------|---------|  
-> |- [Change work item type](#change-type)&#160;<sup>1, 2</sup> (Team Services)<br/>- [Remove work items (change State)](#remove)&#160;<sup>2, 3</sup><br/>- [Delete work items](#delete)&#160;<sup>1, 2</sup>  (Team Services, TFS 2015.2)<br/>- [Restore work items](#restore)&#160;<sup>1, 2, 5</sup> (Team Services, TFS 2015.2)|- [Move a work item to another team project](#move)&#160;<sup>1,&#160;2,&#160;4</sup><br/>- [Permanently delete work items (web portal)](#restore)&#160;<sup>1, 2, 5</sup> (Team Services, TFS 2015.2)<br/>- [Permanently delete work items (command-line tool)](#perm-delete)&#160;<sup>5</sup><br/>- [Permanently delete test artifacts](#delete-test)&#160;<sup>6</sup> (TFS 2017.1)|  
+> |- [Change work item type](#change-type)&#160;<sup>1, 2</sup> (VSTS)<br/>- [Remove work items (change State)](#remove)&#160;<sup>2, 3</sup><br/>- [Delete work items](#delete)&#160;<sup>1, 2</sup>  (VSTS, TFS 2015.2)<br/>- [Restore work items](#restore)&#160;<sup>1, 2, 5</sup> (VSTS, TFS 2015.2)|- [Move a work item to another team project](#move)&#160;<sup>1,&#160;2,&#160;4</sup><br/>- [Permanently delete work items (web portal)](#restore)&#160;<sup>1, 2, 5</sup> (VSTS, TFS 2015.2)<br/>- [Permanently delete work items (command-line tool)](#perm-delete)&#160;<sup>5</sup><br/>- [Permanently delete test artifacts](#delete-test)&#160;<sup>6</sup> (TFS 2017.1)|  
 
 
 **Notes:**  
@@ -72,7 +70,7 @@ You only have access to those actions that are supported on your platform and fo
 ## Change the work item type 
 
 >[!NOTE]  
-><b>Feature availability: </b> The **Change type&hellip;** menu option is supported only from Team Services. You can't change the work item type of work items associated with test management. Both Contributors and users assigned Stakeholder access can change the work item type.       
+><b>Feature availability: </b> The **Change type&hellip;** menu option is supported only from VSTS. You can't change the work item type of work items associated with test management. Both Contributors and users assigned Stakeholder access can change the work item type.       
 
 Changing the work item type refreshes the work item form with the fields defined for the type selected. For example, you can change a bug to a task and the form will refresh with the fields defined for a task. 
 
@@ -93,7 +91,7 @@ When you connect to TFS, you can't change the work item type for an existing wor
 	>[!IMPORTANT]   
 	>From the Query results page, the **Change type&hellip;** option becomes unavailable if you have checked the Query Editor's **Query across projects** checkbox. 
 
-	<img src="_img/bulk-modify-change-type-ts.png" alt="Team Services, backlog, multi-select, open menu, choose Change type option" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/bulk-modify-change-type-ts.png" alt="VSTS, backlog, multi-select, open menu, choose Change type option" style="border: 2px solid #C3C3C3;" />
 
 2. Select the type and optionally enter a comment.  
 
@@ -115,7 +113,7 @@ When you connect to TFS, you can't change the work item type for an existing wor
 ## Move a work item to another team project  
 
 >[!NOTE]    
-><b>Feature availability: </b> The **Move to team project&hellip;** menu option is supported only from Team Services. You can only move work items from one team project to another team project within the account or collection. You can't move work items associated with test management.   
+><b>Feature availability: </b> The **Move to team project&hellip;** menu option is supported only from VSTS. You can only move work items from one team project to another team project within the account or collection. You can't move work items associated with test management.   
 
 When you discover that a work item belongs to a different team project within your account or collection, you can move it where it belongs. You can move a single work item or several [multi-selected work items](bulk-modify-work-items.md). 
 
@@ -149,7 +147,7 @@ To cause removed items to not show up in queries, you must add a clause that ind
 ## Delete work items  
 
 >[!NOTE]  
-><b>Feature availability: </b> The Delete and Recycle bin features are available from Team Services and from the web portal for TFS 2015.2 or later versions. 
+><b>Feature availability: </b> The Delete and Recycle bin features are available from VSTS and from the web portal for TFS 2015.2 or later versions. 
 
 Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related WITS, see [Delete test artifacts](#delete-test). 
 
@@ -158,6 +156,8 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 	![Delete work item from the form](_img/delete-work-item.png)  
 
 	To delete work items, you must be a member of the Project Administrators group or have the **Delete work items in this project** set to Allow. By default, this permission is Not Set for Contributors. 
+	- For VSTS and TFS 2015.1 and later versions, the Contributors group has **Delete and restore work items** at the project-level set to "Allow" by default. 
+	- For TFS 2015 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to "Not set" by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.    
 
 2. Confirm you want to actually delete the item(s).  
 
@@ -179,7 +179,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 # [Browser](#tab/browser)
 >[!NOTE]  
-><b>Feature availability: </b>The Delete and Recycle bin features are available from Team Services and from the web portal for TFS 2015.2 or later versions.  
+><b>Feature availability: </b>The Delete and Recycle bin features are available from VSTS and from the web portal for TFS 2015.2 or later versions.  
 
 1. To restore deleted items, open the Recycle bin from the web portal.  
 
@@ -200,7 +200,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 Use the ```witadmin destroywi``` command to permanently remove work items from the data store. A permanent delete means all information in the WIT data store is deleted and cannot be restored nor reactivated.
 
-You can run ```witadmin destroywi``` against an on-premises TFS server or Team Services account. 
+You can run ```witadmin destroywi``` against an on-premises TFS server or VSTS account. 
 
 1. Open a Command Prompt window where the latest version of Visual Studio is installed and enter:  
 
@@ -210,7 +210,7 @@ You can run ```witadmin destroywi``` against an on-premises TFS server or Team S
 
 	The witadmin command-line tool installs with any version of Visual Studio. You can access this tool by installing the free version of Visual Studio Community. 
 
-3.	To delete several work items from an account hosted on Team Services, enter the following specifying the account name and separating the IDs with commas.    
+3.	To delete several work items from an account hosted on VSTS, enter the following specifying the account name and separating the IDs with commas.    
 
 	```witadmin destroywi /collection:http://AccountName/DefaultCollection /id:12,15,23```
 
@@ -223,7 +223,7 @@ You can run ```witadmin destroywi``` against an on-premises TFS server or Team S
 	```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```  
 
 	>[!NOTE] 
-	>**Required permissions:** For Team Services and TFS 2015.2 or later versions, you must have [Permanently delete work items permission set to Allow](../how-to/set-permissions-access-work-tracking.md#move-delete-permissions). For TFS 2015.1 or earlier versions, you must be a member of the Project Administrators group of have Edit project-level information permissions set to Allow.    
+	>**Required permissions:** For VSTS and TFS 2015.2 or later versions, you must have [Permanently delete work items permission set to Allow](../how-to/set-permissions-access-work-tracking.md#move-delete-permissions). For TFS 2015.1 or earlier versions, you must be a member of the Project Administrators group of have Edit project-level information permissions set to Allow.    
 
 ---
 
@@ -231,7 +231,7 @@ You can run ```witadmin destroywi``` against an on-premises TFS server or Team S
 ## Delete test artifacts  
 
 >[!IMPORTANT]   
-><b>Feature availability: </b> The permanently delete feature of test artifacts is available from the from the Test and Work hubs for Team Services and the web portal of TFS 2017.1 and later versions. 
+><b>Feature availability: </b> The permanently delete feature of test artifacts is available from the from the Test and Work hubs for VSTS and the web portal of TFS 2017.1 and later versions. 
 >
 >We only support permanent deletion of test artifacts such as test plans, test suites, test cases, shared steps and shared parameters. Deleted test artifacts won't appear in the recycle bin and cannot be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted),  test results history, and other associated history.
 

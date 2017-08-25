@@ -1,5 +1,5 @@
 ---
-title: About Kanban and Agile project management | Team Services & TFS
+title: About Kanban and Agile project management | VSTS & TFS
 description: Use the web portal to implement your Kanban process, plan and track work, and monitor progress and trends  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -31,7 +31,7 @@ Once you've configured your Kanban board, you can add work items directly to the
  
 ## Try this next  
 
-Take these tools for a test run by [creating an account on Team Services for free](../../accounts/create-account-with-personal-msa.md). From there, you're ready to add items to your Kanban board and customize it. 
+Take these tools for a test run by [creating an account on VSTS for free](../../accounts/create-account-with-personal-msa.md). From there, you're ready to add items to your Kanban board and customize it. 
 
 > [!div class="nextstepaction"]
 > [Kanban quickstart](kanban-quickstart.md)  

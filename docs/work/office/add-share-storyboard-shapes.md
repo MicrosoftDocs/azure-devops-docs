@@ -1,5 +1,5 @@
 ---
-title: Add and share storyboard shapes | Team Services & TFS
+title: Add and share storyboard shapes | VSTS & TFS
 description: Add and share storyboard shapes with members of your team - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

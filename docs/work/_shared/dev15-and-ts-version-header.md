@@ -1,4 +1,4 @@
 
 
-<b>Team Services | TFS 2017</b> 
+<b>VSTS | TFS 2017</b> 
  

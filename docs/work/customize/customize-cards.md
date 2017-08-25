@@ -1,5 +1,5 @@
 ---
-title: Customize cards | Team Services & TFS
+title: Customize cards | VSTS & TFS
 description: Customize cards on the Kanban and Sprint/Scrum/Task boards for Agile planning tools in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -124,7 +124,7 @@ To customize cards on the Kanban board, see [Change how cards display on the Kan
 ## Highlight work items based on custom criteria 
 
 >[!NOTE]  
-><b>Feature availability: </b>This feature is supported from Team Services or the web portal for TFS 2015.1 or later version. 
+><b>Feature availability: </b>This feature is supported from VSTS or the web portal for TFS 2015.1 or later version. 
 
 With styling rules, you can cause cards to change color when their corresponding work items meet criteria that you set. Here, we highlight severity 1 bugs by having the cards display as yellow. 
 
@@ -173,7 +173,7 @@ As a first step, you'll see that you can change the card display for each work i
 	<table>
 	<tbody valign="top">
 	<tr>
-	<th>Team Services and TFS 2015 Update 1 options</th>
+	<th>VSTS and TFS 2015 Update 1 options</th>
 	<th>TFS 2015 options</th>
 	</tr>
 	<tr><td>Select core fields&mdash;ID, Assigned to, Estimate, Tags&mdash;to display on the card</td>  <td>Select core fields to display on the card</td> </tr>
@@ -184,9 +184,9 @@ As a first step, you'll see that you can change the card display for each work i
 	</tbody>
 	</table>
 
-	**Team Services and TFS 2015 Update 1 options:**  
+	**VSTS and TFS 2015 Update 1 options:**  
 
-	<img src="_img/vso-kanban-card-customize.png" alt="Kanban board, Team Services card customization dialog" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/vso-kanban-card-customize.png" alt="Kanban board, VSTS card customization dialog" style="border: 2px solid #C3C3C3;" />
 
 	**TFS 2015 options:**   
 
@@ -226,7 +226,7 @@ You change the way cards display on the task board the same way you change the K
 
 2.	Just as before, choose the WIT you want to customize, and then checkmark or select the options you want.  
 
-	**Team Services and TFS 2015 Update 1 options:**   
+	**VSTS and TFS 2015 Update 1 options:**   
 	
 	<img src="_img/vso-task-board-card-customize.png" alt="Task board, card customization dialog" style="border: 2px solid #C3C3C3;" />  
 
@@ -242,7 +242,7 @@ You change the way cards display on the task board the same way you change the K
 ## Add style rules to highlight work items with color 
 
 >[!NOTE]  
-><b>Feature availability: </b>This feature is supported from Team Services or the web portal for TFS 2015.1 or later version.   
+><b>Feature availability: </b>This feature is supported from VSTS or the web portal for TFS 2015.1 or later version.   
 
 1.	To cause a card on the Kanban board to change color based on criteria you specify, open Styles. Add a styling rule and set the criteria for the rule.  
 
@@ -264,7 +264,7 @@ You change the way cards display on the task board the same way you change the K
 ## Add color to your tags  
 
 >[!NOTE]  
-><b>Feature availability: </b>This feature is supported from Team Services or the web portal for TFS 2015.1 or later version. 
+><b>Feature availability: </b>This feature is supported from VSTS or the web portal for TFS 2015.1 or later version. 
 
 1.	Prior to setting tag colors, first [add tags to backlog items](../track/add-tags-to-work-items.md) that you want to highlight with color.   
 
@@ -279,7 +279,7 @@ You change the way cards display on the task board the same way you change the K
 ## Annotations  
 
 >[!NOTE]  
-><b>Feature availability: </b>This feature is supported from Team Services and TFS 2017.  
+><b>Feature availability: </b>This feature is supported from VSTS and TFS 2017.  
 
 With the Kanban board, you gain a rich set of tools and a rich set of customization options. Annotations provide visual cues about work items, indicating the number of tasks or tests that have been defined for that work item. Click an annotation to expand the set or gain more information. 
 
@@ -311,7 +311,7 @@ To learn more about using these features, see [Add task checklists](../kanban/ad
 ## Configure inline tests
 
 >[!NOTE]  
-><b>Feature availability: </b>This feature is available from Team Services and TFS 2017. 
+><b>Feature availability: </b>This feature is available from VSTS and TFS 2017. 
 
 You can control the test plan under which inline tests you add through the Kanban board are created. You can choose to create a new test plan for each new test that you add, or add all new tests to a selected test plan going forward. 
 

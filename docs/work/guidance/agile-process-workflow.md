@@ -1,5 +1,5 @@
 ---
-title: Agile process workflow | Team Services & TFS  
+title: Agile process workflow | VSTS & TFS  
 description: How to guide for using the Agile process to track work using its work item types working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)   
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 04/05/2017
 
 # Agile process work item types and workflow  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
 Teams use the work item types (WITs) provided with the Agile process to plan and track progress of software projects. Teams define user stories to manage the backlog of work and then, using the Kanban board, track progress by updating the status of those stories.
 
@@ -97,7 +97,7 @@ Use the following guidance and that provided for [fields used in common across w
 
 
 >[!TIP]    
->Use the [Discussion section](../concepts/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from Team Services.   
+>Use the [Discussion section](../concepts/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from VSTS.   
 
 ## Track progress
 

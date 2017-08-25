@@ -1,5 +1,5 @@
 ---
-title: Create your backlog | Team Services & TFS
+title: Create your backlog | VSTS & TFS
 description: Add items, plan your project, order/prioritize, and estimate your backlog of deliverables - Visual Studio Team Services (VSTS) and Team Foundation Server 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 07/21/2017
 
 # Create your backlog
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. 
 Once defined, you have a prioritized list of features and requirements to build. Your backlog also provides a 
@@ -38,12 +38,12 @@ You access your product backlog from the **Work** hub, **Backlogs** page. If you
 <img src="../backlogs/_img/cyb-open-backlog-tfs-2017.png" alt="Web portal, choose Work hub, Backlogs" style="border: 2px solid #C3C3C3;" /> 
 
 The URL follows this pattern:  
-- **Team Services**: ```https://<account name>.visualstudio.com/DefaultCollection/<project name>/_backlogs```  
+- **VSTS**: ```https://<account name>.visualstudio.com/DefaultCollection/<project name>/_backlogs```  
 - **On-premises TFS**: ```http://serverName:8080/tfs/DefaultCollection/projectName/_backlogs```  
   
 To contribute to the backlog, you must be a member of the Contributors group. If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../accounts/add-account-users-assign-access-levels.md) or [TFS](../../accounts/add-users.md).
 
-If you don't see the team or team project you want, click the ![Team Services icon](../_img/icons/project-icon.png) Team Services icon to [browse all team projects and teams](../../connect/account-home-pages.md). 
+If you don't see the team or team project you want, click the ![VSTS icon](../_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../../connect/account-home-pages.md). 
  
  
 <!---
@@ -99,12 +99,12 @@ more details. You capture these details within the work item form.
 Open each item (double-click, or press Enter to open the selected item) and add all the info you want to track. Enter as much detail as the team needs to understand the scope, estimate the work required, develop tests, and ensure that the end product meets acceptance criteria.  
 
 >[!NOTE]  
-><b>Feature availability: </b>From the web portal for Team Services and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and earlier versions, the old form is supported.   
+><b>Feature availability: </b>From the web portal for VSTS and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and earlier versions, the old form is supported.   
 	
 <!---
 <p>For details on adding work items using the new form, see [add work items](add-work-items.md).</p>  
 
-<img src="_img/cyb-product-backlog-form-ts.png" alt="Product backlog item - Team Services - Add details to a work item" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/cyb-product-backlog-form-ts.png" alt="Product backlog item- VSTS - Add details to a work item" style="border: 2px solid #C3C3C3;" />  
  
 <p>For details on adding work items using the old form, see [add work items (TFS)](add-work-items.md).</p>  
 

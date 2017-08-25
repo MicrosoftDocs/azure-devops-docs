@@ -1,5 +1,5 @@
 ---
-title: Manage work item fields using witadmin | Team Services & TFS
+title: Manage work item fields using witadmin | VSTS & TFS
 description: 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -69,7 +69,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the team project collection or VSTS account. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.<br /><br /> **Team Services format:  http://** *AccountName*.visualstudio.com.DefaultCollection|  
+|**/collection**:`CollectionURL`|Specifies the URI of the team project collection or VSTS account. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.<br /><br /> **VSTS format:  http://** *AccountName*.visualstudio.com.DefaultCollection|  
 |**/n**:`RefName`<br />**/n**:`Name`|The reference name of a work item type field.|  
 |**/index**|Specifies to enable or disable indexing for the specified field. Specify **on** to enable indexing and **off** to disable indexing.|  
 |**/name:** `NewName`|Specifies the new name for the field.|  

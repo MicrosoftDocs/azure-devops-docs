@@ -1,5 +1,5 @@
 ---
-title: Add tags to work items | Team Services & TFS
+title: Add tags to work items | VSTS & TFS
 description: Add tags to work items to categorize and filter lists when working in  Visual Studio Team Services  and Team Foundation Server (TFS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -14,7 +14,7 @@ ms.date: 06/02/2017
  
 
 <!---
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 --> 
 
 Tagging work items helps you quickly filter the product backlog or a work 
@@ -200,7 +200,7 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 
 </table> 
 
-1. Team Explorer Everywhere is the Eclipse plug-in which supports connection to Team Services or TFS. See [Visual Studio Team Explorer Everywhere (TEE)](https://java.visualstudio.com/Docs/tools/eclipse).
+1. Team Explorer Everywhere is the Eclipse plug-in which supports connection to VSTS and TFS. See [Visual Studio Team Explorer Everywhere (TEE)](https://java.visualstudio.com/Docs/tools/eclipse).
 2. Requires the TFS Office Integration add-in. See [Bulk add or modify work items with Excel](../office/bulk-add-modify-work-items-excel.md) for details.
 
 
@@ -226,9 +226,9 @@ By default, all Contributors are granted permissions to create and modify tags.
 You can bulk update work items to add or remove tags.
 
 >[!NOTE]  
-><b>Feature availability: </b>The bulk modify tags feature from the web portal is available from Team Services and TFS 2017 or later versions.   
+><b>Feature availability: </b>The bulk modify tags feature from the web portal is available from VSTS and TFS 2017 or later versions.   
 
-- When connecting to Team Services or TFS 2017: Bulk modify tags in the same way as you [bulk modify other fields using the web portal](../backlogs/bulk-modify-work-items.md#tags), or use [Excel](../office/bulk-add-modify-work-items-excel.md).  
+- When connecting to VSTS and TFS 2017: Bulk modify tags in the same way as you [bulk modify other fields using the web portal](../backlogs/bulk-modify-work-items.md#tags), or use [Excel](../office/bulk-add-modify-work-items-excel.md).  
 
 	![Edit work items - Add tags](_img/tags-bulk-add.png)  
 
@@ -241,7 +241,7 @@ Bulk modify of tags from the Visual Studio client isn't supported.
 
 
 >[!NOTE]  
-><b>Feature availability: </b>To add tags to a query clause, you must work from Team Services or TFS 2013.2 or later versions.  
+><b>Feature availability: </b>To add tags to a query clause, you must work from VSTS and TFS 2013.2 or later versions.  
 
 To query work items based on tags, add a clause for each tag you want to use to support your query.  
 
@@ -294,7 +294,7 @@ If you've added tags to your backlog or board items, you can filter your backlog
 To filter the Kanban board using tags, make sure that you first [customize cards to Show tags](../customize/customize-cards.md).  
 
 >[!NOTE]  
-><b>Feature availability: </b>This feature is currently supported only on the Kanban board from Team Services or the web portal for TFS 2015 Update 1 or later version. 
+><b>Feature availability: </b>This feature is currently supported only on the Kanban board from VSTS or the web portal for TFS 2015 Update 1 or later version. 
 
 To learn more about filtering, see [Filter your backlog or board](../how-to/filter-backlog-or-board.md).  
 

@@ -1,6 +1,6 @@
 ---
 title: Manage new form roll out| Team Services    
-description: Enable and choose the roll out option of the new work item form for customizing the work tracking experience on the web portal when connecting to Team Services   
+description: Enable and choose the roll out option of the new work item form for customizing the work tracking experience on the web portal when connecting to VSTS  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: 51A6F894-9B45-4A07-9DDB-C359C8BB4DE1
@@ -9,13 +9,13 @@ ms.author: kaelli
 ms.date: 03/16/2017
 ---
 
-#Manage roll out of the new web form
+# Manage roll out of the new web form
 
 
-**Team Services | TFS 2017**  
+**VSTS | TFS 2017**  
 
 >[!IMPORTANT]  
->**Feature availability:**&#160;&#160;The new form and its corresponding features are available from Team Services and the web portal for TFS 2017 and later versions.<br/> 
+>**Feature availability:**&#160;&#160;The new form and its corresponding features are available from VSTS and the web portal for TFS 2017 and later versions.<br/> 
 > - For users of Team Services that use the [Inheritance process model](../process/manage-process.md), the switch to the new form is automatic.<br/>
 > - For users of Team Services that use [Hosted XML process model](../import-process/import-process.md), an admin must [enable the new form](../customize/manage-new-form-rollout.md).<br/>
 > - For on-premises TFS 2017 users, the new form is automatically available when you add team projects to a collection. For existing team projects, an admin is required to enable the new form as described in this topic. (The reason the new form isn't automatically enabled for existing team projects is to prevent overwriting customizations made to existing work item types.) <br/>

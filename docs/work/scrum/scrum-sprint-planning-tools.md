@@ -1,5 +1,5 @@
 ---
-title: Scrum and sprint planning tools | Team Services & TFS
+title: Scrum and sprint planning tools | VSTS & TFS
 description: Understand the tools available to you to support Scrum and working in sprints  in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)   
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 08/19/2017
 
 # Scrum and sprint planning tools
  
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
 <!--- ADD WIDGET INFO AS WELL --> 
 
@@ -140,7 +140,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint.  
 
-<img src="_img/define-sprints-selected-team-iterations-vsts.png" alt="Team Services and TFS 2017, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/define-sprints-selected-team-iterations-vsts.png" alt="VSTS and TFS 2017, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" /> 
 
 **TFS 2015**
 <a id="tfs2015-sprints" />

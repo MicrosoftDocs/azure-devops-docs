@@ -9,7 +9,7 @@ ms.author: elbatk
 ms.date: 08/04/2017
 ---
 
-# Add users to a team project, sharepoint and reporting services, and groups
+# Add users to a team project
 
 **VSTS** | **TFS 2015** | **TFS 2013**
 
@@ -23,15 +23,7 @@ If all you want to do is add a user to an existing team in TFS,
 and you don't have to worry about specific permissions for other resources,
 skip this topic and [simply add them to a team](../work/scale/multiple-teams.md).
 
- > [!NOTE] 
- > Permissions are different than access levels.
- > Access levels control what features are visible to users in the web portal,
- > and are dependent on user licenses; permissions control a user's ability to use features across TFS.
- > If you're just trying to give someone access to a team room or to Agile portfolio management
- > and test case management features,
- > you'll want to [change access levels](../security/change-access-levels.md), not permissions.
-
-<../security/view-permissions.md --> 
+To view permissions for yourself or another user, see [View permissions](../security/view-permissions.md).  
 
 <a name="add-users-team-project"></a>
 ## Add users to a team project
@@ -40,7 +32,8 @@ skip this topic and [simply add them to a team](../work/scale/multiple-teams.md)
 
     ![Select team project from TFS home page](_img/add-users-team-project/overview.png)
 
-    Tip: Managing user access to TFS is much easier [using groups](../security/permissions.md), not individual users.
+    > [!TIP]  
+    > Managing users is much easier [using groups](../security/about-permissions.md), not individual users.
 
     Choose the gear icon ![Settings icon](_img/admin-gear-icon.png) to open the administration context for the project,
 	and then navigate to the Security tab.
@@ -105,14 +98,6 @@ Save or open the file.
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-#### Q: Where can I learn more about permissions and built-in groups, like the Contributors group?
-
-A: The following picture shows the default permission assignments made to the Contributors group.
-
-![Contributor role default permissions](_img/add-users-team-project/permissions.png)
-
-To learn more about other groups and their permission assignments,
-see [Permission reference for Team Foundation Server](../security/permissions.md).
 
 #### Q: How do I add someone as an administrator?
 

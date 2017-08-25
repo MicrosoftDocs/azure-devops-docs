@@ -1,5 +1,5 @@
 ---
-title: TF30321-The name you typed is already used for another team project | Team Services & TFS
+title: TF30321-The name you typed is already used for another team project | VSTS & TFS
 description: Display an error when you type a name for the new team project that duplicates the name already being used by another team project on the same server.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

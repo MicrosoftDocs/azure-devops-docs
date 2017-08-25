@@ -1,5 +1,5 @@
 ---
-title: Query fields, operators, and macros/variables | Team Services & TFS
+title: Query fields, operators, and macros/variables | VSTS & TFS
 description: Descriptions for field data types, operators, and macros/variables used by the Query Editor in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 04/04/2017
 
 # Query fields, operators, and macros
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
 You find and create lists of work items by creating work item queries. By defining one or more clauses, you filter from all work items within a team project or team project collection to return the set of work items that interest you. For each clause, you specify a field, an operator, and a value or variable.  
 
@@ -90,7 +90,7 @@ The value you specify for a field must conform to the data type for that field. 
 <tr>
 	<td><p><strong>Boolean</strong> </p></td>
 	<td><p>Specifies a field that takes on a True/False value. </p>
-<blockquote style="font-size: 13px"><b>Feature availability:</b> The Boolean data type field is only supported for Team Services and TFS 2017 and later versions.    
+<blockquote style="font-size: 13px"><b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017 and later versions.    
 </blockquote>
 </td></tr>
 
@@ -268,7 +268,7 @@ You can use the macros described in the following table to filter your queries b
 <tr>
 	<td>**@CurrentIteration**</td>
 	<td>Use in conjuction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](#switch-team-context). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
-<blockquote><strong>Feature availability:</strong> The **@CurrentIteration** macro is supported for Team Services and TFS 2015 and later versions. The macro only works when run from the web portal. 
+<blockquote><strong>Feature availability:</strong> The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The macro only works when run from the web portal. 
 </blockquote>
 </td>
 </tr>
@@ -277,7 +277,7 @@ You can use the macros described in the following table to filter your queries b
 	<td>**@Project**</td>
 	<td>Use in conjuction with the **Team Project** field to filter for work items in the current team project. For example, you can find all the work items in the current team project with the clause `Team Project=@Project`. 
 
-<blockquote><b>Feature availability:</b>  For Team Services and TFS 2015.1 and later versions, the system automatically defaults to filtering based on the current team project. To learn more, see [Query across team projects](using-queries.md#across-projects).    
+<blockquote><b>Feature availability:</b>  For VSTS and TFS 2015.1 and later versions, the system automatically defaults to filtering based on the current team project. To learn more, see [Query across team projects](using-queries.md#across-projects).    
 </blockquote>
 </td>
 </tr>

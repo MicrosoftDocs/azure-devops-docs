@@ -1,5 +1,5 @@
 ---
-title: Portfolio management | Team Services & TFS 
+title: Portfolio management | VSTS & TFS 
 description: Configure teams to support portfolio backlogs to track progress across teams in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

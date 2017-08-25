@@ -1,5 +1,5 @@
 ---
-title: Query by numeric field | Team Services & TFS
+title: Query by numeric field | VSTS & TFS
 description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 11/02/2016
 
 # Query by numeric fields    
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 How do I determine how much work each developer has completed on my team? Is there a way to sum up the effort or story points for an iteration? 
 
@@ -110,7 +110,7 @@ You can assign Story Points to user stories or bugs when you work in an Agile pr
 ### Sum of story points and their status   
 
 >[!NOTE]  
->**Feature availability**: The **Sum** feature is supported on Team Services and TFS 2013.4 and later versions.
+>**Feature availability**: The **Sum** feature is supported on VSTS and TFS 2013.4 and later versions.
 
 Create a query that filters for User Story as the work item type and modify the column options to show Story Points and State. 
 
@@ -151,7 +151,7 @@ Based on the process your team project references, you can assign the following 
 ### Sum of remaining work per developer 
 
 >[!NOTE]  
->**Feature availability**: The **Sum** feature is supported on Team Services and TFS 2013.4 and later versions.
+>**Feature availability**: The **Sum** feature is supported on VSTS and TFS 2013.4 and later versions.
 
 If you follow Scrum practices and estimate Remaining Work for your tasks and bugs, you can get a roll up of the amount of work remaining for each developer with the following query and chart. By using the In operator and including both Task and Bug, you include any bugs that are being tracked as tasks. 
 
@@ -317,7 +317,7 @@ For more information on using work items and queries, see:
 <a id="rollup"/>
 ### Rollup numeric values across work item types  
 
-Rollup provides summed values of select fields for all child work items of a parent. Natively, Team Services and TFS provide rollup of Remaining Work for tasks on the Task board. For other rollup requirements, see the following topics: 
+Rollup provides summed values of select fields for all child work items of a parent. Natively, VSTS and TFS provide rollup of Remaining Work for tasks on the Task board. For other rollup requirements, see the following topics: 
 - [Support rollup of work and other fields](../reference/support-rollup-of-work-and-other-fields.md)  
 -[Rollup estimated and actual work using Project](../office/rollup-estimated-and-actual-work-using-project.md)  
 - [Create rollup charts with Power BI](../../report/powerbi/create-rollup-charts.md)

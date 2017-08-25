@@ -1,5 +1,5 @@
 ---
-title: Control XML element reference | Team Services & TFS
+title: Control XML element reference | VSTS & TFS
 description: Use the control element to define a work item field, text, hyperlink, or other element to display in a work item form - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

@@ -1,5 +1,5 @@
 ---
-title: Localization and globalization of WITD child elements | Team Services & TFS
+title: Localization and globalization of WITD child elements | VSTS & TFS
 description: Understand how to change some parts of the work item type definition so that they appear in your native language - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

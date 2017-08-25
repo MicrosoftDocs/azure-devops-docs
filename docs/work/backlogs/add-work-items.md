@@ -1,5 +1,5 @@
 ---
-title: Add work items | Team Services & TFS  
+title: Add work items | VSTS & TFS  
 description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a team project in Visual Studio Team Services (VSTS).   
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,11 +12,11 @@ ms.date: 08/07/2017
 
 # Track work and issues, add and update a work item 
 
-<b>Team Services | TFS 2017</b> 
+<b>VSTS | TFS 2017</b> 
 
 
 >[!IMPORTANT]   
-><b>Feature availability: </b>The new work item  experience is currently available from Team Services and the web portal for TFS 2017. This topic describes how to track work using the new form. If you don't see the new form, [your admin may need to enable it](../customize/manage-new-form-rollout.md), or if it's enabled, [you may need to switch to use it](../process/new-work-item-experience.md#switch-new) 
+><b>Feature availability: </b>The new work item  experience is currently available from VSTS and the web portal for TFS 2017. This topic describes how to track work using the new form. If you don't see the new form, [your admin may need to enable it](../customize/manage-new-form-rollout.md), or if it's enabled, [you may need to switch to use it](../process/new-work-item-experience.md#switch-new) 
 <!---
 >If you connect to TFS 2015 or earlier versions, see [Add work items to plan and track your project (TFS)](add-work-items-tfs.md).  
 -->
@@ -35,11 +35,11 @@ Here we show how to add work items from the web portal.
 	- Visual Studio Team Services: ```https://{account name}.visualstudio.com/{project name}/_backlogs```  
 	- Team Foundation Server (on-premises): ```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```  
 
-	If you don't see the team or team project you want, click the ![Team Services icon](../_img/icons/project-icon.png) Team Services icon to [browse all team projects and teams](../../connect/account-home-pages.md).  
+	If you don't see the team or team project you want, click the ![VSTS icon](../_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../../connect/account-home-pages.md).  
 
 2.	From the Work hub, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
-	<img src="_img/add-work-items-choose-user-story.png" alt="Team Services, TFS 2017, Work hub, Add a work item" style="border: 2px solid #C3C3C3;" /> 
+	<img src="_img/add-work-items-choose-user-story.png" alt="VSTS, TFS 2017, Work hub, Add a work item" style="border: 2px solid #C3C3C3;" /> 
 
 	>[!NOTE]  
 	>Depending on the process chosen when the team project was created&mdash;[Scrum](../guidance/scrum-process.md), 

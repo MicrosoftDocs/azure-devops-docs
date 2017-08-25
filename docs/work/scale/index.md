@@ -1,5 +1,5 @@
 ---
-title: Scale & Configure Teams | Team Services & TFS
+title: Scale & Configure Teams | VSTS & TFS
 description: Index to topics for scaling Agile tools in VSTS and and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

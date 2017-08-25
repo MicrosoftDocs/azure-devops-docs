@@ -1,5 +1,5 @@
 ---
-title: Support bug update status using My Work | Team Services & TFS
+title: Support bug update status using My Work | VSTS & TFS
 description: Update the ProcessConfiguration bug category states to support code review requests working from Visual Studio   
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

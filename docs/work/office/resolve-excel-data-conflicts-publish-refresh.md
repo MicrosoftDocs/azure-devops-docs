@@ -1,5 +1,5 @@
 ---
-title: Resolve data conflicts (publish and refresh) | Team Services & TFS
+title: Resolve data conflicts (publish and refresh) | VSTS & TFS
 description: Resolves data conflicts from publishing a work item.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

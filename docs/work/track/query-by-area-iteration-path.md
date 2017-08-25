@@ -1,5 +1,5 @@
 ---
-title: Query by area or iteration path | Team Services & TFS
+title: Query by area or iteration path | VSTS & TFS
 description: Find or list work items based on their area or iteration path  (Visual Studio Team Services and Team Foundation Server)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

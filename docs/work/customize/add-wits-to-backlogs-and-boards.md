@@ -1,5 +1,5 @@
 ---
-title: Add WITs to backlogs and boards | Team Services & TFS  
+title: Add WITs to backlogs and boards | VSTS & TFS  
 description: Add work item types to customize your tracking capabilities on product backlogs and Kanban, Scrum, Sprint, and task boards when working with team projects that connect to Visual Studio Team Services (VSTS) Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 03/16/2017
 
 #Add a work item type to a backlog and board
 
-<b>Team Services (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
+<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
 
 
 >[!IMPORTANT]  

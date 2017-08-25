@@ -1,5 +1,5 @@
 ---
-title: Agile culture | Team Services & TFS  
+title: Agile culture | VSTS & TFS  
 description: Create an Agile culture of autonomous teams and an aligned enterprise using Agile tools when working in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

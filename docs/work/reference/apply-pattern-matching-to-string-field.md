@@ -1,5 +1,5 @@
 ---
-title: Apply pattern matching to a string field | Team Services & TFS
+title: Apply pattern matching to a string field | VSTS & TFS
 description: Syntax and usage for the MATCH element to force values in a field of String type to follow specified pattern - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -11,7 +11,7 @@ ms.date: 02/10/2017
 ---
 # Apply pattern matching to a string field
 
-<b>Team Services (Hosted XML) | TFS 2017 | TFS 2015</b>
+<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015</b>
 
 >[!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize/customize-work.md).  

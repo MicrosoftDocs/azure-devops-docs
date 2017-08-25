@@ -1,6 +1,6 @@
 ---
-title: Restrict access in Team Services and TFS
-description: Restrict access in Team Services and TFS
+title: Restrict access in VSTS and TFS
+description: Restrict access in VSTS and TFS
 ms.assetid:  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs
@@ -11,7 +11,7 @@ ms.date: 08/14/2017
 
 # Set build and release permissions 
 
-**Team Services** | **TFS 2017** | **TFS 2015** | **TFS 2013**
+**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 !!! WORK IN PROGRESS !!! 
 
@@ -27,13 +27,13 @@ For definitions of each build and release permission, see [Build and release per
 
 1. From the web portal **Build-Release** hub, **Builds** page, open the Security dialog for a build definition.
 
-	<img src="_img/set-build-permission-open-dialog.png" alt="Open the security dialog for a build definition" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/set-build-permission-open-dialog.png" alt="Open the security dialog for a build definition" style="border: 2px solid #C3C3C3;" /> 
 
 2. Choose the group you want to set permissions for, and then change the permission setting to Allow or Deny. 
 
 	For example, here we change the permission for Edit build definition for the Contributors group to Allow. 
 
-	<img src="_img/set-build-permission-dialog.png" alt="Security dialog for a build definition" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/set-build-permission-dialog.png" alt="Security dialog for a build definition" style="border: 2px solid #C3C3C3;" /> 
 
 3. Save your changes. 
 
@@ -41,7 +41,7 @@ For definitions of each build and release permission, see [Build and release per
 
 1. From the web portal **Build-Release** hub, **Releases** page, open the Security dialog for all release definitions.
 
-	<img src="_img/set-release-permission-open-dialog.png" alt="Open the security dialog for a build definition" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/set-release-permission-open-dialog.png" alt="Open the security dialog for a build definition" style="border: 2px solid #C3C3C3;" /> 
 
 	If you want to manage the permissions for a specific release, then open the Security dialog for that release. 
 
@@ -49,7 +49,7 @@ For definitions of each build and release permission, see [Build and release per
 
 	For example, here we deny access to several permissions for the Contributors group. 
 
-	<img src="_img/set-release-permission-dialog.png" alt="Security dialog for a release definition" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/set-release-permission-dialog.png" alt="Security dialog for a release definition" style="border: 2px solid #C3C3C3;" /> 
 
 3. Save your changes. 
  
@@ -61,7 +61,7 @@ For definitions of each build and release permission, see [Build and release per
 
 	Here we choose the Build Administrators group and change the **Use build resources** permission. 
 
-	<img src="_img/set-build-collection-level-permission-dialog.png" alt="Security dialog for Project Collection Build Administrators group" style="border: 1px solid #CCCCCC;" /> 
+	<img src="_img/set-build-collection-level-permission-dialog.png" alt="Security dialog for Project Collection Build Administrators group" style="border: 2px solid #C3C3C3;" /> 
 
 0. Save your changes. 
 

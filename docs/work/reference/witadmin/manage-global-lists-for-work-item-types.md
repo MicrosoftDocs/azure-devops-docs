@@ -18,7 +18,7 @@ ms.date: 05/10/2017
 Global lists are pick lists that you can include in one or more fields and types of work items. Use them to minimize the work that is required to update a list that is shared by multiple types of work items. Because global lists are defined for a team project collection, they can be included in work item types for all team projects within the collection.  
   
 >[!NOTE]  
->**Feature availability:**&#160;Hosted XML customization for Team Services supports adding and updating global lists with a process update. To learn more, see [Differences between Team Services and TFS process template customizations](../../import-process/differences.md).   
+>**Feature availability:**&#160;Hosted XML customization for VSTS supports adding and updating global lists with a process update. To learn more, see [Differences between VSTS and TFS process template customizations](../../import-process/differences.md).   
 
 You can define a global list within its own definition file, in the definition file for a type of work item, or in global workflow. The global-list definition manages the global lists that are defined for a collection. The global-list definition uses the following commands in the **witadmin** command-line tool:  
   

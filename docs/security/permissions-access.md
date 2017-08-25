@@ -1,5 +1,5 @@
 ---
-title: Permissions and access quick reference | Team Services & TFS 
+title: Permissions and access quick reference | VSTS & TFS 
 description: Simplified views of required permissions and access levels for common user tasks when working in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs
@@ -10,15 +10,15 @@ ms.author: kaelli
 ms.date: 06/02/2017
 ---
 
-# Permissions and access for Team Services and TFS 
+# Permissions and access for VSTS and TFS 
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>  
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
 
-To connect and use the functions and features that Team Services or TFS provides, users must be added to a group with the appropriate permissions. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below. 
+To connect and use the functions and features that VSTS and TFS provides, users must be added to a group with the appropriate permissions. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below. 
 
 In addition to permissions, access to select features are controlled by the access level assigned to a user. Contributors and administrators should be added to Basic (paid) access. Stakeholder access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
 
-For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about assigning access levels and supporting stakeholder access, see [Manage users and access](../accounts/add-account-users-assign-access-levels.md) for Team Services, and [Change access levels](change-access-levels.md) for TFS. 
+For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about assigning access levels and supporting stakeholder access, see [Manage users and access](../accounts/add-account-users-assign-access-levels.md) for VSTS, and [Change access levels](change-access-levels.md) for TFS. 
 
 
 ## Code  
@@ -642,7 +642,7 @@ You set [dashboard permissions at the team level](../report/dashboard-permission
 
 - [Add users to a team project](../accounts/add-users.md)  
 - [Permissions and groups reference](permissions.md)  
-- [Manage users and access](../accounts/add-account-users-assign-access-levels.md) (Team Services) 
+- [Manage users and access](../accounts/add-account-users-assign-access-levels.md) (VSTS) 
 - [Change access levels](change-access-levels.md) 
 - [Account management (VSTS) guide](../accounts/index.md)  
 

@@ -351,6 +351,6 @@ For a simplified view of permissions assigned to built-in groups, see [Permissio
 For a complete reference of all built-in groups and permissions, see [Permissions and groups](../security/permissions.md). 
 
 For information about assigning access levels and supporting stakeholder access, see: 
-- **Team Services**: [Add users and assign licenses in Visual Studio Team Services](../accounts/add-account-users-assign-access-levels.md)
+- **VSTS**: [Add users and assign licenses in Visual Studio Team Services](../accounts/add-account-users-assign-access-levels.md)
 - **TFS**: [Change access levels](../security/change-access-levels.md)  
 

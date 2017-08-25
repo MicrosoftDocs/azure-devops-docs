@@ -1,5 +1,5 @@
 ---
-title: LinksControlOptions XML elements reference | Team Services & TFS 
+title: LinksControlOptions XML elements reference | VSTS & TFS 
 description: XML syntax to scope the allowed links within a links control element used in the new web form layout 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 04/14/2017
 
 # LinksControlOptions XML elements (Web form) 
 
-<b>Team Services (Hosted XML) | TFS 2017 | [Previous versions](linkscontroloptions-elements.md)</b>
+<b>VSTS (Hosted XML) | TFS 2017 | [Previous versions](linkscontroloptions-elements.md)</b>
 
 
 >[!IMPORTANT]  
@@ -143,7 +143,7 @@ The Development links control displays all of your development links, whether ba
 The following code sample specifies the syntax used to code the Development link control. This control supports adding external links of the specified types&mdash; pull requests, builds, branches, commits, and other development-related links&mdash;  and grouping them according to the Development experience.  
 
 >[!NOTE]  
->The link types, `Found in build` and `Integrated in build` are valid for Team Services.  
+>The link types, `Found in build` and `Integrated in build` are valid for VSTS.  
 
 ```
 <Control Type="LinksControl" Label="Development">

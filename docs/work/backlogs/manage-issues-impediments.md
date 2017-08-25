@@ -1,5 +1,5 @@
 ---
-title: Manage issues or impediments | Team Services & TFS
+title: Manage issues or impediments | VSTS & TFS
 description: Add work items to track problems, risks, or other issues that may impeded your plans or schedule - Visual Studio Team Services (VSTS) and Team Foundation 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,9 +12,8 @@ ms.date: 08/15/2017
 
 # Manage issues or impediments 
 
-<!---
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
---> 
+
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 <a name="manage-impediments"></a>
 
@@ -30,11 +29,11 @@ In this topic you'll learn:
 ## Add an issue or impediment 
 
 
-#### Team Services | TFS 2017 (new form enabled)
+#### VSTS | TFS 2017 (new form enabled)
 
 From the **Work** hub, choose Impediment from the New Work Item list of options. Click the ![pin icon](../_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu. 
 
-<img src="_img/cyb-new-work-item-impediment.png" alt="Team Services, TFS 2017 - Add an impediment" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/cyb-new-work-item-impediment.png" alt="VSTS, TFS 2017 - Add an impediment" style="border: 2px solid #C3C3C3;" />  
 
 Or, from the Queries page, you can add a new work item.  
 
@@ -55,6 +54,6 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 - [Create your backlog](create-your-backlog.md) 
 
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../track/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see  these topics for details: 
-- **Inheritance process model** (Team Services): [Customize your backlogs or boards](../process/customize-process-backlogs-boards.md)
-- **Hosted XML process model** (Team Services): [Add a work item type to a backlog and board](../customize/add-wits-to-backlogs-and-boards.md)
+- **Inheritance process model** (VSTS): [Customize your backlogs or boards](../process/customize-process-backlogs-boards.md)
+- **Hosted XML process model** (VSTS): [Add a work item type to a backlog and board](../customize/add-wits-to-backlogs-and-boards.md)
 - **On-premises XML process model** (TFS): [Add a work item type to a backlog and board](../customize/add-wits-to-backlogs-and-boards.md)

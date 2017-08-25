@@ -1,5 +1,5 @@
 ---
-title: Work item templates | Team Services & TFS
+title: Work item templates | VSTS & TFS
 description: Increase productivity, add, manage, administrate work item templates to pre-populate fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 08/10/2017
 
 <!--- Supports FWLINK http://go.microsoft.com/fwlink/?LinkId=824070 -->
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Visual Studio 2013 </b>  
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Visual Studio 2013 </b>  
 
 With work item templates you can quickly create work items which have pre-populated values for your team's commonly used fields. For example, you can create a task template that will set the area path, iteration path, and discipline or activity whenever you use it to create a task.  
 
@@ -77,13 +77,13 @@ Based on the platform or version you use, you can perform the following tasks.
 	- Use templates created in Visual Studio to create work items through the Visual Studio client.  
 	
 >[!NOTE]  
-><b>Feature availability: </b>Visual Studio 2015 is the last version in which you can install TFS power tools. You can use the Work Item Templates tool whenever you connect to Team Services or an on-premises TFS that is at TFS 2015 version or earlier. Templates you define through the power tool are separate from those defined through Team Services.   
+><b>Feature availability: </b>Visual Studio 2015 is the last version in which you can install TFS power tools. You can use the Work Item Templates tool whenever you connect to VSTSor an on-premises TFS that is at TFS 2015 version or earlier. Templates you define through the power tool are separate from those defined through VSTS.   
 
 ## Template guidance and usage 
 
 Prior to creating templates, consider how you and your team(s) will use the templates. If you'll be using several templates, determine a naming convention that will help users easily select the right template for their use. 
 
-If you want to use custom fields in your templates, define those fields prior to creating your templates. See [Customize a field for a process](../process/customize-process-field.md) for Team Services, and [Add or modify a field](../customize/add-modify-field.md) for on-premises TFS. 
+If you want to use custom fields in your templates, define those fields prior to creating your templates. See [Customize a field for a process](../process/customize-process-field.md) for VSTS, and [Add or modify a field](../customize/add-modify-field.md) for on-premises TFS. 
 
 You can specify any number of fields you want, including ones that the user will change&mdash;such as Title or Description. If you want the work item assigned to a specific team, define the team Area Path as part of the template.  
 
@@ -102,7 +102,7 @@ The steps to capture a work item differ based on the platform, version, and clie
 <li style="float:left;" data-toggle="collapse" data-target="#capture">Capture a work item as a template </li>
 <li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-explorer-capture">VS 2013, VS 2015</a></li>
 <li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#tfs-portal-capture">TFS 2013, TFS 2015</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-services-capture">Team Services & TFS 2017</a></li>
+<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-services-capture">VSTS & TFS 2017</a></li>
 </ul>
  
 <div id="capture" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
@@ -197,7 +197,7 @@ The main method for adding a work item using a template is to open the template 
 <li style="float:left;" data-toggle="collapse" data-target="#copy-link">Copy template link </li>
 <li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-explorer-copy-link">VS 2013, VS 2015</a></li>
 <li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#tfs-portal-copy-link">TFS 2013, TFS 2015</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-services-copy-link">Team Services & TFS 2017</a></li>
+<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#team-services-copy-link">VSTS & TFS 2017</a></li>
 </ul>
  
 <div id="copy-link" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
@@ -255,7 +255,7 @@ The main method for adding a work item using a template is to open the template 
 You can add links to a markdown widget that appear on your team dashboard in the web portal. These links open a work item with the template defined fields predefined.
 
 >[!NOTE]   
->**Feature availability:**&#160;&#160;Multiple team dashboards and the Markdown widget are available for Team Services and TFS 2015.2 and later versions. 
+>**Feature availability:**&#160;&#160;Multiple team dashboards and the Markdown widget are available for VSTS and TFS 2015.2 and later versions. 
 
 For example, the following widget contains links to three templates.  
 
@@ -274,7 +274,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 <ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
 <li style="float:left;" data-toggle="collapse" data-target="#apply">Apply a template to work items</li>
 <li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#team-explorer-apply">VS 2013, VS 2015</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#team-services-apply">Team Services & TFS 2017</a></li>
+<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#team-services-apply">VSTS & TFS 2017</a></li>
 </ul>
  
 <div id="apply" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
@@ -302,7 +302,7 @@ Refresh your browser to discover the latest templates that have been added. If y
 <p>To bulk update several work items, first select them from the backlog or a query results list, and then open the actions menu for one of them. All work items you select must be of the same work item type. For example, all user stories or all bugs. </p></li>
 <li>
 <p>Choose the template to apply.</p> 
-<img src="_img/wi-templates-bulk-update-list-vsts.png" alt="Bulk update several work items (Team Services) " style="border: 2px solid #C3C3C3;" />
+<img src="_img/wi-templates-bulk-update-list-vsts.png" alt="Bulk update several work items (VSTS) " style="border: 2px solid #C3C3C3;" />
 </li>
 <li><p>Field changes are automatically applied and work items saved. To learn more about bulk updates, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md). </p>
 </li>
@@ -338,7 +338,7 @@ Refresh your browser to discover the latest templates that have been added. If y
 <a id="manage"> </a> 
 ## Manage work item templates
 
-For Team Services and TFS 2017 and later versions, you can view the list of templates defined for each work item type, and also add, edit, copy, delete, and copy the link of a template. All templates are defined and managed for a team. 
+For VSTS and TFS 2017 and later versions, you can view the list of templates defined for each work item type, and also add, edit, copy, delete, and copy the link of a template. All templates are defined and managed for a team. 
 
 [!INCLUDE [temp](../_shared/learn-about-new-nav-experience.md)] 
 
@@ -349,7 +349,7 @@ If Visual Studio with power tools installed, you can view the list of templates 
 <ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
 <li style="float:left;" data-toggle="collapse" data-target="#apply">Manage  templates  </li>
 <li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#team-explorer-manage">VS 2013, VS 2015</a></li>
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#team-services-manage">Team Services & TFS 2017</a></li>
+<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#team-services-manage">VSTS & TFS 2017</a></li>
 </ul>
  
 <div id="manage" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
@@ -459,7 +459,7 @@ For more information, see these additional resources:
 <div style="float:left;width:220px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Plan and track work</p>
 <ul style="padding-left:10px">
- <li style="margin-bottom:2px">[Add work items](../backlogs/add-work-items.md) (Team Services)</li>
+ <li style="margin-bottom:2px">[Add work items](../backlogs/add-work-items.md) (VSTS)</li>
  <li style="margin-bottom:2px">[Add work items](../backlogs/add-work-items-tfs.md) (on-prem TFS)</li>
  <li style="margin-bottom:2px">[Copy or clone a work item](../backlogs/copy-clone-work-items.md#copy-clone)</li>
  <li style="margin-bottom:2px">[Change, move, or delete a work item](../backlogs/remove-delete-work-items.md)</li>
@@ -468,7 +468,7 @@ For more information, see these additional resources:
 
 
 <div style="float:left;width:180px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Customize (Team Services) </p>
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Customize (VSTS) </p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:2px">[Customize a process](../process/customize-process.md)</li>
  <li style="margin-bottom:2px">[Work item fields](../process/customize-process-field.md)</li>
@@ -494,7 +494,7 @@ For more information, see these additional resources:
 ### Add or remove tags from templates 
 
 >[!NOTE]  
->**Feature availability**: The ability to add and remove tags from a template is supported from Team Services and TFS 2017 and later versions. 
+>**Feature availability**: The ability to add and remove tags from a template is supported from VSTS and TFS 2017 and later versions. 
 
 You can add tags to a template and they'll be applied to the work item when you use the template. 
 
@@ -512,8 +512,8 @@ You can't create templates that contain default links to work items.
 
 However, you can quickly copy tasks, test cases, bugs, and other items using [Excel](../office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list. To learn more, see:  
 - [Add task checklists](../kanban/add-task-checklists.md)
-- [Add, run, and update inline tests](../kanban/add-run-update-tests.md) (Team Services only)  
-- [Add features and epics](../kanban/kanban-epics-features-stories.md) (Team Services only)  
+- [Add, run, and update inline tests](../kanban/add-run-update-tests.md) (VSTS only)  
+- [Add features and epics](../kanban/kanban-epics-features-stories.md) (VSTS only)  
 
 Another option is to use [Excel](../office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list. 
 

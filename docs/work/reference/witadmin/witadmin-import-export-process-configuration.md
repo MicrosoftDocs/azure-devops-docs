@@ -1,5 +1,5 @@
 ---
-title: Import and export process configuration | Team Services & TFS
+title: Import and export process configuration | VSTS & TFS
 description: Customize the process configuration to modify the display of the Agile planning tool pages that you view through the web portal for VSTS or Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

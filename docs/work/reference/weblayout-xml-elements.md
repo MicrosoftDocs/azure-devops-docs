@@ -1,5 +1,5 @@
 ---
-title: WebLayout XML elements reference | Team Services & TFS
+title: WebLayout XML elements reference | VSTS & TFS
 description: Syntax and usage of all elements used in the new web form layout for Visual Studio Team Services (VSTS) and Team Foundation Server
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 03/02/2017
 
 # WebLayout and Control elements  
 
-<b>Team Services (Hosted XML) | TFS 2017 </b>
+<b>VSTS (Hosted XML) | TFS 2017 </b>
 
 > [!IMPORTANT]  
 > This topic applies to team project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [Layout XML element reference](layout-xml-element-reference.md). 
@@ -398,7 +398,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
 <ul>
 <li><p> <strong>DateTimeControl</strong>: Use to display formatted date fields with a field type of <strong>DateTime</strong>.</p></li>
 <li><p><strong>FieldControl</strong>: Use to display Boolean, plain text, numeric fields, person-name fields, and pick lists. Supports fields with a data type of <strong>Boolean</strong>, <strong>Double</strong>, <strong>Identity</strong>, <strong>Integer</strong>,<strong>PlainText</strong>m and <strong>String</strong>.</p>
-<blockquote style="font-size: 13px"><b>Feature availability:</b> The Boolean data type field is only supported for Team Services and TFS 2017 and later versions.    
+<blockquote style="font-size: 13px"><b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017 and later versions.    
 </blockquote>
 </li>
 <li><p> <strong>HtmlFieldControl</strong>: Use to display multi-line, rich-text format of fields with a field type of <strong>HTML</strong>.</p></li>
@@ -468,7 +468,7 @@ For example:
 </code></pre>
 
 >[!NOTE]  
-><b>Feature availability:</b> The Boolean data type field is only supported for Team Services and TFS 2017 and later versions.    
+><b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017 and later versions.    
   
 
 <p>A Boolean field displays as a checkbox within the web work item form.</p>

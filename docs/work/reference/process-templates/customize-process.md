@@ -1,5 +1,5 @@
 ---
-title: Customize a process template | Team Services & TFS
+title: Customize a process template | VSTS & TFS
 description: Define the objects and processes available to you when you create a team project - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -29,7 +29,7 @@ Process templates define the objects and processes available to you when you cre
 
 
 >[!NOTE]  
->If you're looking for **project templates** for software development, see [Creating Visual Studio templates](https://msdn.microsoft.com/library/ms247121.aspx). This topic describes process templates used to create team projects on Team Services or TFS.  
+>If you're looking for **project templates** for software development, see [Creating Visual Studio templates](https://msdn.microsoft.com/library/ms247121.aspx). This topic describes process templates used to create team projects on VSTS and TFS.  
   
 Default process templates define default configurations as well as the following artifacts that your team uses to plan and track work, collaborate, and share information.
 
@@ -88,7 +88,7 @@ Process templates consist of nine plug-ins. Each plug-in defines a set of tasks 
 ![Process Template Plugins](_img/tfs_pt_plugins.png "TFS_PT_Plugins")  
   
 >[!IMPORTANT]  
->When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for Team Services. 
+>When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for VSTS. 
 >
 >If you want these features to be created for a team project on your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).  
 

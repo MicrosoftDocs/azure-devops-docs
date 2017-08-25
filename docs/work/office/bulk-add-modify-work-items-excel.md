@@ -1,5 +1,5 @@
 ---
-title: Bulk modify using Excel | Team Services & TFS  
+title: Bulk modify using Excel | VSTS & TFS  
 description: Use Excel to save you time to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 07/14/2017
 
 # Bulk add or modify work items with Excel 
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 When you have a lot of work items to add or modify, using Excel can save you time. [Use a flat list](../track/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../track/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
 
@@ -30,17 +30,17 @@ In this topic you'll learn:
   
 
 >[!NOTE]  
->You can't use Office Project 365 to connect to Team Services or TFS.
+>You can't use Office Project 365 to connect to VSTS and TFS.
 
 <a id="add-work-items"> </a>  
 ## Add work items
 
-1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Team Services or TFS 2017, you'll need Project 2010 or a later version. 
+1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For VSTS and TFS 2017, you'll need Project 2010 or a later version. 
 
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on Team Services or an on-premises TFS. 
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
 	
 	>[!NOTE]   
-	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Team Services and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
+	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
 
 3.  In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
@@ -53,7 +53,7 @@ In this topic you'll learn:
 
     ![ALM\_EXL\_Connect](_img/IC680074.png)
 
-    If it is your first time connecting from Excel, you might have to add your Visual Studio Team Services account or on-premises TFS to the list of recognized servers.
+    If it is your first time connecting from Excel, you might have to add your VSTS account or on-premises TFS to the list of recognized servers.
 
     ![ALM\_EXL\_AddServer](_img/IC658167.png)
 

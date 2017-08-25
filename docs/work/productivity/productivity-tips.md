@@ -1,5 +1,5 @@
 ---
-title: Productivity tips | Team Services & TFS
+title: Productivity tips | VSTS & TFS
 description: Increase productivity using shortcuts in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -19,7 +19,7 @@ ms.date: 08/11/2017
 Productivity is all about producing more value in less time. You can use the tips below to work more quickly and efficiently as you work in Visual Studio Team Services or the web portal for Team Foundation Server (TFS).  
 
 >[!NOTE]  
->**Feature availability:**&#160;&#160;The following tools and tasks are available from Team Services (cloud service) or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Platform and version support](../../provide-feedback.md#platform-version). 
+>**Feature availability:**&#160;&#160;The following tools and tasks are available from VSTS (cloud service) or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Platform and version support](../../provide-feedback.md#platform-version). 
 
 Here are some of the types of productivity tools and tasks that you can access:  
 
@@ -136,7 +136,7 @@ Here are some of the types of productivity tools and tasks that you can access:
 
 <ul style="padding-left:30px;font-size:90%">
 <li style="margin-bottom:1px">[Work item search box](#quick-find-search-box)</li>
-<li style="margin-bottom:1px">[Ad-hoc search](#adhoc-search)<sup> 4</sup> (Team Services)</li>
+<li style="margin-bottom:1px">[Ad-hoc search](#adhoc-search)<sup> 4</sup> (VSTS)</li>
 <li style="margin-bottom:1px">[Code search](#quick-find-code)<sup> 5</sup> (TFS 2017)</li>
 <li style="margin-bottom:1px">[Query by date or current sprint](../track/query-by-date-or-current-iteration.md)</li>
 <li style="margin-bottom:1px">[Query by workflow or Kanban board column](../track/query-by-workflow-changes.md) (TFS 2015.1)</li>
@@ -172,7 +172,7 @@ Here are some of the types of productivity tools and tasks that you can access:
 1. Use the quick add panel from the backlog pages to add user stories, requirements, or other backlog items. 
 2. Use the Kanban board to quickly add and update the status of items. Also, you support traceability by adding inline items, such as tasks and test cases, which are automatically linked as child items to the parent work items.  
 3. Requires that you have installed a compatible version of Office Excel or Project (Office 2010 or later) and [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1).
-4. Adhoc work item searches requires you to install the [Work item search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search) which is in preview and currently supported for Team Services. 
+4. Adhoc work item searches requires you to install the [Work item search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search) which is in preview and currently supported for VSTS. 
 4. Code search requires you to install the [Code search Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).  
 
 
@@ -180,7 +180,7 @@ Here are some of the types of productivity tools and tasks that you can access:
 ##Keyboard shortcuts
 
 >[!NOTE]  
-><b>Feature availability: </b>Global and hub-specific keyboard shortcuts are only available from Team Services or the web portal for TFS 2015.2 or later version.   
+><b>Feature availability: </b>Global and hub-specific keyboard shortcuts are only available from VSTS or the web portal for TFS 2015.2 or later version.   
 
 Type **?** to access the [Global and hub-specific shortcuts](../../reference/keyboard-shortcuts.md). Each hub will display shortcuts that work specifically within the selected hub.  
 
@@ -204,7 +204,7 @@ The **@mention** control allows you to quickly pull someone into a discussion.
 ###Alert a team member about a change - @mentions control 
 
 >[!NOTE]    
-><b>Feature availability: </b>The **@mention** special control is currently supported only from Team Services or the web portal for TFS 2015.2 or later version. For on-premises TFS, [you must configure an SMTP sever](../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.    
+><b>Feature availability: </b>The **@mention** special control is currently supported only from VSTS or the web portal for TFS 2015.2 or later version. For on-premises TFS, [you must configure an SMTP sever](../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.    
 
 When leaving a code comment in a pull request, you can type **@** to trigger the **@mention** identity picker. From the identity selector, you'll see a list of those people that you have you've recently mentioned. You can choose one of those names or type in the name of the person you are looking for to perform a directory search.  
 
@@ -234,7 +234,7 @@ You can use the **@mention** control in pull request discussions, commit comment
 ### Use the #ID control to link to work items 
 
 >[!NOTE]  
-><b>Feature availability: </b>The **#ID** special control is currently supported only from Team Services or the web portal for TFS 2015.1 or later version.    
+><b>Feature availability: </b>The **#ID** special control is currently supported only from VSTS or the web portal for TFS 2015.1 or later version.    
 
 When leaving a code comment in a pull request, you can type **#** to trigger the **#ID** work item picker. The picker displays a list of 50 work items that you have recently modified or that are assigned to you. 
 
@@ -244,7 +244,7 @@ You can narrow the list of suggested work items by entering keywords that match 
 
 To further filter the list, continue entering keywords until you've found a match. You can enter up to five keywords.   
 
-**Team Services and TFS 2015.2**
+**VSTS and TFS 2015.2**
 
 You can also use the **#ID** control in pull request discussions, commit comments, changeset comments, and shelveset comments.
 
@@ -252,7 +252,7 @@ You can also use the **#ID** control in pull request discussions, commit comment
 ## Follow a work item or pull request  
 
 >[!NOTE]  
-><b>Feature availability: </b>The follow work item feature is currently available from Team Services or the web portal for TFS 2017.  
+><b>Feature availability: </b>The follow work item feature is currently available from VSTS or the web portal for TFS 2017.  
 
 [!INCLUDE [temp](../_shared/follow.md)]
 
@@ -260,7 +260,7 @@ You can also use the **#ID** control in pull request discussions, commit comment
 ##Follow a pull request 
 
 >[!NOTE]  
-><b>Feature availability: </b>The follow pull request feature is currently available from Team Services or the web portal for TFS 2017.1.  
+><b>Feature availability: </b>The follow pull request feature is currently available from VSTS or the web portal for TFS 2017.1.  
 
 [!INCLUDE [temp](../_shared/follow-pr.md)]
 
@@ -271,9 +271,9 @@ You can also use the **#ID** control in pull request discussions, commit comment
 
 Provide the team a hyperlink to this template and you save every team member from having to specify the circled fields in the form.  
 
-#### Bug work item form with pre-populated fields (Team Services, TFS 2017) 
+#### Bug work item form with pre-populated fields (VSTS, TFS 2017) 
 
-The following image shows a new bug form opened from a work item template. The new web form is available from Team Services and TFS 2017 [once the admin has enabled it](../customize/manage-new-form-rollout.md).  
+The following image shows a new bug form opened from a work item template. The new web form is available from VSTS and TFS 2017 [once the admin has enabled it](../customize/manage-new-form-rollout.md).  
 
 <img src="_img/prod-tips-work-item-template-bug-new-form.png" alt="Bug work item form template with pre-populated fields" style="border: 2px solid #C3C3C3;" /> 
 

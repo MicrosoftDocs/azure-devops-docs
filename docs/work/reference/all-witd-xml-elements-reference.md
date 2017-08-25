@@ -1,5 +1,5 @@
 ---
-title: All WITD XML elements reference | Team Services & TFS
+title: All WITD XML elements reference | VSTS & TFS
 description: Customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

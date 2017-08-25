@@ -1,5 +1,5 @@
 ---
-title: Link type element reference | Team Services & TFS
+title: Link type element reference | VSTS & TFS
 description: Synxtax and usage for the LinkType element used to define custom link types to form link relationships between different work item types in Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -12,10 +12,10 @@ ms.date: 02/10/2017
 
 # LinkTypes elements reference 
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013 </b>
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013 </b>
 
 >[!IMPORTANT]  
->This topic provides a reference of link types defined for Team Services and TFS. For the On-premises XML process model, you can add custom link types. Custom link types are not supported for Hosted XML or Inheritance process models. 
+>This topic provides a reference of link types defined for VSTS and TFS. For the On-premises XML process model, you can add custom link types. Custom link types are not supported for Hosted XML or Inheritance process models. 
 >
 >For an overview of process models and supported cusomizations, see [Customize your work tracking experience](../customize/customize-work.md).  
 
@@ -177,7 +177,7 @@ Link category: Process-defined</p></td>
 </table>
 
 Notes:
-1. Available only from Team Services and TFS 2017 and later versions. 
+1. Available only from VSTS and TFS 2017 and later versions. 
 
 <a id="test-plan-links">  </a>
 ### Test plan and test suite links 

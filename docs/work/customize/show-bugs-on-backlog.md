@@ -1,5 +1,5 @@
 ---
-title: Show bugs on backlogs and boards | Team Services & TFS
+title: Show bugs on backlogs and boards | VSTS & TFS
 description: For your team, choose how bugs appear on Agile tool product, sprint/scrum  backlogs, and Kanban and task boards 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,10 +11,10 @@ ms.date: 04/06/2017
 
 # Show bugs on backlogs and boards  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013.4 </b>
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013.4 </b>
 
 >[!NOTE]  
->**Feature availability**: This feature is available from Team Services and the web portal for TFS 2013.4 and later versions. 
+>**Feature availability**: This feature is available from VSTS and the web portal for TFS 2013.4 and later versions. 
 
 As your team identifies code defects or bugs, they can add them to the backlog and track them similar to requirements. Or, they can schedule them to be fixed within a sprint along with other tasks. 
  
@@ -31,9 +31,9 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 ## Set your team's preferences for tracking bugs  
 
 >[!NOTE]  
->**Feature availability**: You can manage all your team settings from a common configuration dialog from Team Services or the web portal for TFS 2015 Update 1 or later version.  
+>**Feature availability**: You can manage all your team settings from a common configuration dialog from VSTS or the web portal for TFS 2015 Update 1 or later version.  
 
-1. (Team Services and TFS 2015.1 and later versions) From your team's backlog page, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) (gear icon) to open the common configuration team settings.  
+1. (VSTS and TFS 2015.1 and later versions) From your team's backlog page, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) (gear icon) to open the common configuration team settings.  
 
 	![Backlog board, open team settings](../backlogs/_img/organize-backlog-open-ccdialog.png) 
 
@@ -54,9 +54,9 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	>[!NOTE]  
 	>Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../scale/add-team-administrator.md).
 	
-	**Team Services**  
+	**VSTS**  
 	
-	<img src="_img/show-bugs-settings-ts.png" alt="Team Services, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/show-bugs-settings-ts.png" alt="VSTS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
 	
 	**TFS 2017**   
 	<img src="_img/show-bugs-settings-2017.png" alt="TFS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />

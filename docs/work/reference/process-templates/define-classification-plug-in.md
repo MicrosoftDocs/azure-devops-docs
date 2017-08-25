@@ -1,5 +1,5 @@
 ---
-title: Define the classification plug-in | Team Services & TFS
+title: Define the classification plug-in | VSTS & TFS
 description: Define areas to organize work items into logical, physical, or functional categories-Team Foundation Server
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

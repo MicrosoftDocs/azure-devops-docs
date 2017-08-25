@@ -1,5 +1,5 @@
 ---
-title: Set team defaults | Team Services & TFS 
+title: Set team defaults | VSTS & TFS 
 description: Configure the default area and iteration paths/sprints for a team when working in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -58,7 +58,7 @@ Choose to include sub-area paths when you want to support rollup views of work p
 > Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board [columns](../kanban/add-columns.md) and [swimlanes](../kanban/expedite-work.md), the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path.   
 
 
-### Team Services and TFS 2017 and later versions 
+### VSTS and TFS 2017 and later versions 
 
 1.	Open the Work, Areas admin page for the team context.  
 
@@ -99,7 +99,7 @@ You [define sprints for the team project](../scrum/define-sprints.md) and then a
 You activate sprints for each team from the admin pages for each team context. The steps differ slightly depending on your platform.
 
 <a id="activate-team-services">  </a>
-### For Team Services and TFS 2017 and later versions  
+### For VSTS and TFS 2017 and later versions  
 
 1.	Open the Work, Iterations page for the team context.  
 

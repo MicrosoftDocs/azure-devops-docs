@@ -1,5 +1,5 @@
 ---
-title: TF30170-The plug-in {0} failed | Team Services & TFS
+title: TF30170-The plug-in {0} failed | VSTS & TFS
 description: Occurs an error when a third-party plug-in does not operate in the manner the New Team Project Wizard expected it to operate.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

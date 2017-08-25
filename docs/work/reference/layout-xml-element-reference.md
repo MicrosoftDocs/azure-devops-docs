@@ -1,5 +1,5 @@
 ---
-title: Layout XML element reference | Team Services & TFS
+title: Layout XML element reference | VSTS & TFS
 description: Use the Layout element to define how the elements on the work item form appear - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

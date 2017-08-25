@@ -1,5 +1,5 @@
 ---
-title: Visibility across teams | Team Services & TFS
+title: Visibility across teams | VSTS & TFS
 description: Determine which methods best support your ability to monitor status and progress across several teams in Visual Studio Team Services (VSTS) and Team Foundation Server  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -31,7 +31,7 @@ For an overview of all team tools, see [Configure team settings](manage-team-ass
 With a Delivery Plan, you gain a tailor-made view across several teams and their development backlogs&mdash;stories, features, or epics. You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule. 
 
 > [!NOTE]  
-> **Feature availability**: Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for Team Services and TFS 2017.2 and later versions. All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don’t have access to Delivery Plans.  
+> **Feature availability**: Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for VSTS and TFS 2017.2 and later versions. All users with [basic access](../../security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don’t have access to Delivery Plans.  
 
 When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Review team plans](review-team-plans.md). 
 
@@ -173,7 +173,7 @@ With the multi-team Kanban board view, you can:
 
 Many project managers are interested in getting numeric rollup of estimates&mdash;Story Points or Effort&mdash; or the Remaining Work field. Rollup provides summed values of select fields for all child work items of a parent. 
 
-Natively, Team Services and TFS provide rollup of Remaining Work for tasks on the task board.
+Natively, VSTS and TFS provide rollup of Remaining Work for tasks on the task board.
 
 ![Rollup of remaining work](_img/visibility-rollup-remaining-work.png)  
 

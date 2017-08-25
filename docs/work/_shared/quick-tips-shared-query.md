@@ -2,7 +2,7 @@
 
 ### Quick tips on shared queries
 
-If you are new to Team Services or TFS and shared queries, review these tips to learn how you can manage work more effectively:
+If you are new to VSTS and TFS and shared queries, review these tips to learn how you can manage work more effectively:
 
 -   To find work items that are assigned to you, add **@Me** as the value for the Assigned To field in one of the query clauses.  
 -   All valid users with standard access can create queries and folders under the **My Queries** area. To create queries and query folders under **Shared Queries**, you must have the Contribute permission set. For more information, see [Set permissions on queries](../track/set-query-permissions.md).

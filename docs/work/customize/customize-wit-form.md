@@ -12,7 +12,7 @@ ms.date: 12/05/2016
 #Customize the work tracking web form  
 
 
-<b>Team Services | TFS 2017</b>  
+<b>VSTS | TFS 2017</b>  
 
 >[!IMPORTANT]  
 ><b>Feature availability: </b>This topic applies to customizations you can make when you use the Hosted XML process model, or you've update your application-tier server to Team Foundation Server 2017 (which uses the On-premises XML process model). For the Inheritance process model, see [Customize a process](../process/customize-process.md). 
@@ -23,7 +23,7 @@ Just as you have been able to customize the form layout for your work item types
  
 
 >[!NOTE]  
->Prior to customizing the web form, your account administrator must have [enabled the new form for your account on Team Services or TFS](manage-new-form-rollout.md). 
+>Prior to customizing the web form, your account administrator must have [enabled the new form for your account on VSTS and TFS](manage-new-form-rollout.md). 
 
 
 You customize transformed WITs in much the same way as you have previously.  The path is slightly different depending on your platform and previous customization choices. 
@@ -75,7 +75,7 @@ See the following topics to make the indicated customizations:
 
         witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
 
-    An example of a *CollectionURL* for a Team Services account is https://*MyAccountName*.visualstudio.com/DefaultCollection.
+    An example of a *CollectionURL* for a VSTS account is https://*MyAccountName*.visualstudio.com/DefaultCollection.
 
 4.  Edit the file. For details, see [WebLayout XML elements](../reference/weblayout-xml-elements.md).  
 
@@ -126,5 +126,5 @@ You'll receive an error if you enable the new form, and then modify a WIT defini
 TBD
 
 
- (Team Services) or http://MyServer:8080/tfs/TeamProjectCollectionName (TFS)   
+ (VSTS) or http://MyServer:8080/tfs/TeamProjectCollectionName (TFS)   
 --> 

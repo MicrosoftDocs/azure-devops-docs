@@ -1,5 +1,5 @@
 ---
-title: TRANSITION XML element | Team Services & TFS
+title: TRANSITION XML element | VSTS & TFS
 description: Syntax and usage of the TRANSITION element used to specify a valid progression or regression from one state to another for a work item type
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -11,7 +11,7 @@ ms.date: 01/20/2017
 ---
 # TRANSITION XML element  
 
-<b>Team Services (Hosted XML) | TFS 2017 | TFS 2015 </b> 
+<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b> 
 
 >[!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize a process](../process/customize-process.md). 

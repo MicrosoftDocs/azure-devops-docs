@@ -1,5 +1,5 @@
 ---
-title: witAdmin:Customize and manage objects for tracking work | Team Services & TFS
+title: witAdmin:Customize and manage objects for tracking work | VSTS & TFS
 description: Tracks your team's progress by creating and customizing objects that track work items.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -44,7 +44,7 @@ For most commands, you must be a member of the Project Administrators or Project
 
 All work tracking objects&mdash;such as, work item types (WITs), process configuration, global lists&mdash; are customized by their XML definitions.  
 
-All **witadmin** commands can be run against an on-premises TFS. You can run list and export **witadmin** commands against a Team Services account. If you are new to work tracking customization and for definitions of the work tracking objects your can customize, see [Customize your work tracking experience](../../customize/customize-work.md). 
+All **witadmin** commands can be run against an on-premises TFS. You can run list and export **witadmin** commands against a VSTS account. If you are new to work tracking customization and for definitions of the work tracking objects your can customize, see [Customize your work tracking experience](../../customize/customize-work.md). 
 
 ####[Work item types](witadmin-import-export-manage-wits.md)
   

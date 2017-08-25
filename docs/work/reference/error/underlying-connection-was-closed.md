@@ -1,5 +1,5 @@
 ---
-title: Underlying connection was closed | Team Services & TFS
+title: Underlying connection was closed | VSTS & TFS
 description: Occurs when users save work items, check in code merges, or perform other operations on a large number of files.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

@@ -1,5 +1,5 @@
 ---
-title: Upload, download, or delete a process template | Team Services & TFS 
+title: Upload, download, or delete a process template | VSTS & TFS 
 description: Upload, download, delete, or make default a process template for a team project collection 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 04/13/2017
 
 #Upload or download a process template
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 
 >[!NOTE]  
@@ -21,7 +21,7 @@ When you choose to create a team project, the Project Creation Wizard (PCW) read
 
 
 >[!IMPORTANT]  
->When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for Team Services. 
+>When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for VSTS. 
 >
 >If you want these features to be created for a team project on your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../reference/process-templates/overview-process-template-files.md#client-support).  
 

@@ -1,5 +1,5 @@
 ---
-title: Add reports to the process template | Team Services & TFS
+title: Add reports to the process template | VSTS & TFS
 description: You can specify the folder structure and set of reports that will appear by using the Reporting plugin - - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

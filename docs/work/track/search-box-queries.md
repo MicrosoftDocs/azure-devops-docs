@@ -1,5 +1,5 @@
 ---
-title: Use the search box for quick queries | Team Services & TFS
+title: Use the search box for quick queries | VSTS & TFS
 description: Use the search box to create a query and filter for assigned to, created by, state, or work item type  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-agile-wit
@@ -13,7 +13,7 @@ ms.date: 08/11/2017
 
 # Use the search box to create a work item query 
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 <a id="search-box"/>
 
@@ -32,7 +32,7 @@ Search box queries automatically scope to the items defined to the team project 
 >[!NOTE]  
 ><b>Feature availability: </b>You can add the Code Search extension to  [Team Services or by upgrading to TFS 2017](../../search/code/administration.md).   
 
-If you've added the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) to Team Services or TFS 2017, you'll notice that the search box moves to the top row, and you can quickly switch between work item and code searches. 
+If you've added the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) to VSTS and TFS 2017, you'll notice that the search box moves to the top row, and you can quickly switch between work item and code searches. 
 
 The search box retains the last used search context for each hub. To learn more about code search, see [Get started with Code Search](../../search/code/code-search.md).
 
@@ -42,7 +42,7 @@ Type the ID in the Search work items box and then choose the search icon. The Se
 
 
 
-### Team Services and TFS 2017 
+### VSTS and TFS 2017 
 ![Search Work Items Text Box](_img/using-queries-search-box-ts.png)
 
 Click within the box to view the set of filters for [assignment,  workflow state](query-by-workflow-changes.md), [keyword, or work item type](titles-ids-descriptions.md). 

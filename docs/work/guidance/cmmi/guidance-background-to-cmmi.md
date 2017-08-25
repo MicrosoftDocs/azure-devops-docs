@@ -1,5 +1,5 @@
 ---
-title: Background to CMMI | Team Services & TFS
+title: Background to CMMI | VSTS & TFS
 description: Guide to the Capability Maturity Model Integration (CMMI) for Development - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

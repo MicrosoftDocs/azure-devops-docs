@@ -1,5 +1,5 @@
 ---
-title: Specify work item form controls | Team Services & TFS
+title: Specify work item form controls | VSTS & TFS
 description: Provides a quick reference to the Control element, its child elements, and attributes.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -78,7 +78,7 @@ Specify the `PlainText` control when you want to capture text that that contains
 ### Add a checkbox or Boolean field 
 
 >[!NOTE]  
-><b>Feature availability:</b>The Boolean data type is supported for Hosted XML (Team Services) and for On-Premises XML, for TFS 2017.2 and later versions. 
+><b>Feature availability:</b>The Boolean data type is supported for Hosted XML (VSTS) and for On-Premises XML, for TFS 2017.2 and later versions. 
 
 Use the following syntax to add a Boolean field within the **FIELDS** section of the WIT definition. 
 

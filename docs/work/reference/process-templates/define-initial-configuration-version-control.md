@@ -1,5 +1,5 @@
 ---
-title: Define the initial configuration of Team Foundation version control | Team Services & TFS
+title: Define the initial configuration of Team Foundation version control | VSTS & TFS
 description: Use the plug-in for version control to configure the team project's initial security permissions, check-out policies, and check-in notes - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

@@ -14,7 +14,7 @@ ms.date: 08/10/2017
 
 # Define iteration paths (aka sprints) 
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Whereas, [area paths](set-area-paths.md) allow you to group work items by team, product, or feature area.  
  
@@ -45,7 +45,7 @@ If you want to add area paths to support teams, you can do that when you [add te
 Certain [restrictions](#name-restrictions) apply on names of areas.  
 
 
-**Team Services**
+**VSTS**
 <a id="admin-intro-team-services" /> 
 
 1. From the web portal for the team project context, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings.  
@@ -106,7 +106,7 @@ From the **Iterations** page, you can add and select the iterations that will be
 
  
 <a id="define-sprints-team-services">   </a>
-### Schedule sprints (Team Services) 
+### Schedule sprints (VSTS) 
 
 1. Open the Work, Iterations page for the team project context. 
 

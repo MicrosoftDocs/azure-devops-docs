@@ -1,5 +1,5 @@
 ---
-title: Support rollup of work and other fields | Team Services & TFS
+title: Support rollup of work and other fields | VSTS & TFS
 description: Provides summed values of select fields for all child work items of a parent.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

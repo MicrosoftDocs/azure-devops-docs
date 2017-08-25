@@ -1,5 +1,5 @@
 ---
-title: Combine pick list types | Team Services & TFS
+title: Combine pick list types | VSTS & TFS
 description: Examples that show how to create pick lists or drop-down menus by combining different types. 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -12,7 +12,7 @@ ms.date: 04/05/2017
 
 # Combine list types
 
-<b>Team Services (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
+<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
 
 
 >[!IMPORTANT]  

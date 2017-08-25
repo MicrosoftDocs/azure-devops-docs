@@ -1,5 +1,5 @@
 ---
-title: Add type definitions for work items to a process template | Team Services & TFS
+title: Add type definitions for work items to a process template | VSTS & TFS
 description: Specify the type definitions for a process template for several work items as a task within the WorkItemTracking plug-in - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

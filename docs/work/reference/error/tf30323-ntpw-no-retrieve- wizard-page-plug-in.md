@@ -1,5 +1,5 @@
 ---
-title: TF30323-The New Team Project Wizard could not retrieve the wizard page from the plug-in {0}. | Team Services & TFS
+title: TF30323-The New Team Project Wizard could not retrieve the wizard page from the plug-in {0}. | VSTS & TFS
 description: Display an error when the New Team Project Wizard could not retrieve the wizard page from the plug-in.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

@@ -1,5 +1,5 @@
 ---
-title: Define the initial configuration of Team Foundation Build | Team Services & TFS
+title: Define the initial configuration of Team Foundation Build | VSTS & TFS
 description: Customize the security permissions for build activities of all team projects that are created with the same process template - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

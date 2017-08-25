@@ -1,5 +1,5 @@
 ---
-title: Scale and manage work across the enterprise | Team Services & TFS
+title: Scale and manage work across the enterprise | VSTS & TFS
 description: Scale your team project by adding teams  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -15,11 +15,11 @@ ms.date: 08/15/2017
 <a id="collection-project-team-structure">  </a>
 ## Support a growing organization, manage work across the enterprise
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 How do you manage work across the enterprise using Agile tools?  How will you scale your Agile tools to support your growing enterprise?  
 
-When you connect to Team Services or an on-premises TFS, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system.
+When you connect to VSTSor an on-premises TFS, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system.
 
 When you create your team project, a team of the same name is automatically created. For small teams, this is sufficient.  
 

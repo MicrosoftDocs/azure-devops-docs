@@ -1,5 +1,5 @@
 ---
-title: WIP limits | Team Services & TFS
+title: WIP limits | VSTS & TFS
 description: Set Work In Progress Limits on the Kanban board and use to improve your Kanban process - Visual Studio Team Services (VSTS, VS Online) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 04/03/2017
 
 # Work in Progress limits
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013 </b>
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013 </b>
 
 An essential Kanban practice─Work in Progress limits, aka “WIP limits”─constrains the amount of work your team undertakes at each work stage. It's designed to focus your team on completing items before starting new work. While counter-intuitive at first, many teams find WIP limits helps them increase their productivity and improve their software quality.  
 
@@ -120,7 +120,7 @@ With an understanding of how you'll use WIT limits, here's how you set them.
 	- The [Process](../guidance/choose-process.md) you used to create your team project  
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
 
-	**Team Services and TFS 2015.1 and later versions**  
+	**VSTS and TFS 2015.1 and later versions**  
 2. Click a column tab to set the WIP limit for that column.  
 
 	<img src="_img/wip-columns-settings.png" alt="Kanban board, Customize columns, default columns, Agile process, set WIP limits" style="border: 2px solid #C3C3C3;" /> 

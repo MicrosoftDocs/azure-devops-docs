@@ -1,5 +1,5 @@
 ---
-title: Agile tools - Scrum, Kanban, and more | Team Services & TFS
+title: Agile tools - Scrum, Kanban, and more | VSTS & TFS
 description: Use the web portal to implement your Scrum or Kanban process, plan and track work, and monitor progress and trends  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -55,21 +55,21 @@ You can quickly assign work items to a sprint by dragging and dropping them from
 
 ## Try this next  
 
-Take these tools for a test run by [creating an account on Team Services for free](../accounts/create-account-with-personal-msa.md). From there, you're ready to [create your backlog](backlogs/create-your-backlog.md).  
+Take these tools for a test run by [creating an account on VSTS for free](../accounts/create-account-with-personal-msa.md). From there, you're ready to [create your backlog](backlogs/create-your-backlog.md).  
 
 Once you've started tracking work, you'll want to monitor and track progress, identify trends, and share your plans. See [Charts, dashboards, and widgets](../report/overview.md). 
 
 
 ## Related notes
 
-You access tools provided by Team Services and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access.  To learn more, see [Permissions and access for work tracking](permissions-access-work-tracking.md). 
+You access tools provided by VSTS and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access.  To learn more, see [Permissions and access for work tracking](permissions-access-work-tracking.md). 
 
 For an overview of all your customization options, see [Customize your work tracking experience](./customize/customize-work.md). 
 
 
 ### Work across team projects 
   
-If you work in Team Services or TFS 2017.1 or later version, you can use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](../connect/account-home-pages.md).  
+If you work in VSTS and TFS 2017.1 or later version, you can use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](../connect/account-home-pages.md).  
  
 
  

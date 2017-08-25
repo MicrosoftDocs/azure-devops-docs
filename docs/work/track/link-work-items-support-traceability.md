@@ -1,5 +1,5 @@
 ---
-title: Link work items to support traceability | Team Services & TFS  
+title: Link work items to support traceability | VSTS & TFS  
 description: Manage dependencies, link work items to other work items, code and build objects, add hyperlinks, and more
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-agile-wit
@@ -11,7 +11,7 @@ ms.date: 04/03/2017
 
 # Link work items to support traceability and manage dependencies  
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013**
 
 By linking work items and other objects, you can track related work, dependencies, and changes made over time. All links are defined with a specific link type. For example, you can use Parent/Child links to link work items to support a hierarchical tree structure. Whereas, the Commit and Branch link types support links between work items and commits and branches, respectively.    
 
@@ -27,7 +27,7 @@ In a nutshell, you can:
 Below, you can learn how to link objects and which link types to use. You can link objects from the web portal or Visual Studio Team Explorer.  
 
 >[!NOTE]  
-><b>Feature availability: </b> Work item forms and features available to you can differ depending on whether you connect to Team Services or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. 
+><b>Feature availability: </b> Work item forms and features available to you can differ depending on whether you connect to VSTSor an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. 
 
 This topic describes the link types available for your use. For details on linking work items, see [Add link to work items](../backlogs/add-link.md).  
 
@@ -67,7 +67,7 @@ You can create links between work items by using one of the links control tabs w
 ### Team Services
 <a id="team-services-link" /> 
 
-From the new work item form (available from the web portal of [Team Services and TFS 2017](../process/new-work-item-experience.md)), you can add a link using the **Related Work** section or from the **Links** tab.
+From the new work item form (available from the web portal of [VSTS and TFS 2017](../process/new-work-item-experience.md)), you can add a link using the **Related Work** section or from the **Links** tab.
 
 Open a work item and click the ![Add icon](../_img/icons/Action_Add.png) icon to add a link. 
    
@@ -154,7 +154,7 @@ As you develop your software, you can capture which code changes and builds supp
 <img src="_img/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 2px solid #C3C3C3;" /> 
 
 >[!NOTE]  
->The link types, **Found in build** and **Integrated in build** are available from Team Services and only work with the current build processes (not XAML builds). To learn more about using these link types, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).   
+>The link types, **Found in build** and **Integrated in build** are available from VSTS and only work with the current build processes (not XAML builds). To learn more about using these link types, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).   
 
 You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the Development section within the [new work item form](../process/new-work-item-experience.md). 
 
@@ -167,7 +167,7 @@ Git lets you link work items to commits by using the **Commit** link type. You c
 - In Visual Studio Team Explorer, add work item IDs before you commit your changes  
 	![Add work item ID or drag items before you commit your changes](_img/link-git-commit-items.png)  
 - You can use the [git-commit](http://git-scm.com/docs/git-commit) command and include the work item ID in your comment. For example, you apply this comment #35 Catch null exception to your commit. When you push the commit, the system creates a Commit link between the commit and work item #35. 
-- And, with the new work item form (available from Team Services or TFS 2017), you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.  
+- And, with the new work item form (available from VSTS and TFS 2017), you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.  
 
 	<img src="../backlogs/_img/drive-git-development-dev-section.png" alt="Work item form, Development section" style="border: 2px solid #C3C3C3;" />   
 
@@ -188,13 +188,13 @@ For TFS 2015 and earlier versions, select work item types may show a Storyboards
 
 <img src="_img/link-tracking-work-item-to-url-link-types.png" alt="Artifact-to-artifact link types" style="border: 2px solid #C3C3C3;" /> 
 
-From the **Storyboards** tab, you can link storyboards that you created using PowerPoint Storyboarding or other application. The Storyboards tab and links control is only available from the web and client work item form for TFS 2015. However, you can still use the Storyboard link type from Team Services and the web portal of TFS 2017 and later versions.
+From the **Storyboards** tab, you can link storyboards that you created using PowerPoint Storyboarding or other application. The Storyboards tab and links control is only available from the web and client work item form for TFS 2015. However, you can still use the Storyboard link type from VSTS and the web portal of TFS 2017 and later versions.
 
 For process templates associated with TFS 2015 and earlier versions, the  **Storyboards** tab links control was added to those work item types used to defined requirements, user stories, or features. When you make changes to a linked storyboard, the work item continues to link to the file with the latest changes.
 
 ![Storyboard links control](_img/IC589934.png)
 
-By using the Storyboard link type, you differentiate the link your adding to specify a storyboard or document that provides work item specifications. Use this link type to provide your team access to the shared file where they can add their comments. You can also link from a Power Point file to Team Services using this link type as described [Storyboard your ideas using PowerPoint](../office/storyboard-your-ideas-using-powerpoint.md).
+By using the Storyboard link type, you differentiate the link your adding to specify a storyboard or document that provides work item specifications. Use this link type to provide your team access to the shared file where they can add their comments. You can also link from a Power Point file to VSTSusing this link type as described [Storyboard your ideas using PowerPoint](../office/storyboard-your-ideas-using-powerpoint.md).
 
 
 

@@ -14,7 +14,7 @@ ms.date: 05/23/2017
 <b>Team Services (Hosted XML)</b>   
 
 >[!IMPORTANT]  
->**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for accounts that have been migrated to Team Services using the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Team Services process customization. 
+>**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for accounts that have been migrated to VSTSusing the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Team Services process customization. 
 >
 >If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../process/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
 >
@@ -43,9 +43,9 @@ Import process supports the following scenarios:
 <a id="import-from-TFS">  </a>
 ## Import a process from an on-premises TFS 
 
-Your first step in migrating team projects that contain custom work tracking objects is to import the process to Team Services.
+Your first step in migrating team projects that contain custom work tracking objects is to import the process to VSTS.
 In Team Foundation Server, each project has its own copy of process so careful consideration needs to be made as to which processes should exist for your organization.
-Migration to Team Services is a great time to think about process alignment across your organization and reducing the number of variants of that centralized process.  
+Migration to VSTSis a great time to think about process alignment across your organization and reducing the number of variants of that centralized process.  
  
 1.  Run the [process export script](#process-export) to generate a process for a given team project.   
 

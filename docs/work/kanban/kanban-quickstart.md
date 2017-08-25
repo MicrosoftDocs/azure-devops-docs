@@ -25,7 +25,7 @@ You access your Kanban board from the from the **Work** hub, **Backlogs** page. 
 <img src="../backlogs/_img/cyb-open-backlog-tfs-2017.png" alt="Web portal, choose Work hub, Backlogs" style="border: 2px solid #C3C3C3;" />   
 
 The URL follows this pattern:  
-- **Team Services**: ```https://<account-name>.visualstudio.com/DefaultCollection/<project name>/_backlogs```  
+- **VSTS**: ```https://<account-name>.visualstudio.com/DefaultCollection/<project name>/_backlogs```  
 - **On-premises TFS**: ```http://serverName:8080/tfs/DefaultCollection/projectName/_backlogs```  
   
 If you don't see the team or team project you want, click the ![Team Services icon](../_img/icons/project-icon.png) Team Services icon to [browse all team projects and teams](../../connect/account-home-pages.md). 
@@ -82,7 +82,7 @@ If the field you want to update isn't showing, then [customize the card to show 
 All members of a team project will be able to view and contribute to your Kanban board. To invite users to start contributing, email them the URL of your Kanban board. 
 
 To add users to your team project, see these topics:   
--  **Team Services**: [Add and manage users](../../accounts/add-account-users-assign-access-levels.md)   
+-  **VSTS**: [Add and manage users](../../accounts/add-account-users-assign-access-levels.md)   
 -  **On-premises TFS**: [Add users to a team project](../../accounts/add-users.md)   
 
 
@@ -117,7 +117,7 @@ Here are some useful tips when working with the Kanban board:
 ## Related notes 
  
 >[!NOTE]  
-><b>Feature availability: </b> You can [reorder items within a column](#reorder-cards) from Team Services and the web portal for TFS 2015.1 and later versions.   
+><b>Feature availability: </b> You can [reorder items within a column](#reorder-cards) from VSTS and the web portal for TFS 2015.1 and later versions.   
 
 Updating your Kanban board as work progresses helps keep you and your team in sync. Also, you'll be able to see and share the value stream your team is delivering to customers.
 

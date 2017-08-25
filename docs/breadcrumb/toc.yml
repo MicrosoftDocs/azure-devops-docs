@@ -1,4 +1,4 @@
-- name: Team Services and TFS
+- name: VSTS and TFS
   tocHref: /vsts/
   topicHref: /vsts/index
   items:
@@ -93,7 +93,7 @@
     tocHref: /vsts/accounts/
     topicHref: /vsts/index#pivot=services&panel=admin
     items:
-    - name: Team Services Account Management
+    - name: VSTS Account Management
       tocHref: /vsts/accounts/
       topicHref: /vsts/accounts/index
     - name: TFS Server Administration

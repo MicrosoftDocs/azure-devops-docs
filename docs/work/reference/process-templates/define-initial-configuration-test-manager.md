@@ -1,5 +1,5 @@
 ---
-title: Define the initial configuration of Test Manager | Team Services & TFS
+title: Define the initial configuration of Test Manager | VSTS & TFS
 description: Use the plug-in for Microsoft Test Manager to define the team project's initial test management setup - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

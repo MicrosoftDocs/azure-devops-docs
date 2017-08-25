@@ -1,5 +1,5 @@
 ---
-title: Kanban best practices | Team Services & TFS
+title: Kanban best practices | VSTS & TFS
 description: Best practices when implementing Kanban in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.topic: get-started-article  
 ms.technology: vs-devops-agile-wit

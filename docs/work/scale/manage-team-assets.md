@@ -12,7 +12,7 @@ ms.date: 08/02/2017
 # Configure team settings 
 
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 <!--- Still needs work, versioning, and other team settings from the admin context, add something about something, team-specific widgets--> 
 
@@ -27,7 +27,7 @@ Team admin permissions are role-based, unlike project admin permissions which ar
 You can configure most of your team settings from the common configuration dialog. 
 
 > [!NOTE]
-> **Feature availability:** The common configuration dialog is available from Team Services and the web portal for TFS 2015.1 and later versions.  
+> **Feature availability:** The common configuration dialog is available from VSTS and the web portal for TFS 2015.1 and later versions.  
 
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, from any team backlog or board to set one or more team settings.  
 

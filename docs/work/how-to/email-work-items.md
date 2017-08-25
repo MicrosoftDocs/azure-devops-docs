@@ -1,5 +1,5 @@
 ---
-title: Email or print work items | Team Services & TFS
+title: Email or print work items | VSTS & TFS
 description: Email links, Copy URL, and share information about work items, queries, and more - Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 06/19/2017
 
 # Email or print work items 
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Team Explorer Everywhere** 
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Team Explorer Everywhere** 
 
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
@@ -68,7 +68,7 @@ Here's a list of the most common ways in which teams share information and plans
 
 
 <tr>
-<td align="left">[Release summary (Team Services)](#release-summary) </td>
+<td align="left">[Release summary (VSTS)](#release-summary) </td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>  </td>
 <td>  </td>
@@ -98,7 +98,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 <a id="team-services-email" />  
 **From the web portal**, open the ![Actions icon](../_img/icons/actions-icon.png) Actions menu and choose the email option. 
    
-![Email work item from Team Services](../track/_img/share-plans-email-work-item-ts.png)    
+![Email work item from VSTS](../track/_img/share-plans-email-work-item-ts.png)    
 
 ### TFS, Web Portal
 <a id="tfs-portal-email" />
@@ -252,7 +252,7 @@ From the Release hub, [choose a specific release](../../build-release/actions/vi
 
 
 >[!NOTE]  
-><b>Feature availability: </b>This feature is currently available only from Team Services.
+><b>Feature availability: </b>This feature is currently available only from VSTS.
  
 
 ![Release summary, send email](../track/_img/share-plans-email-release-definition.png)
@@ -273,7 +273,7 @@ As you can see, there are many ways to share information using work items alone.
 ### Work item hyperlink format  
 How do you define a hyperlink that opens a work item? Specify a URL that conforms to the following syntax:
 
-**Team Services**:
+**VSTS**:
 
    <b>https://</b>*AccountName.visualstudio.com/ProjectName/*<b>_workitems?id=</b>*WorkItemNumber*<b>&_a=edit</b>
 
@@ -299,7 +299,7 @@ How do you define a hyperlink that opens a work item? Specify a URL that conform
 
 **where**:
 
--   *AccountName* specifies the name of the Team Services account  
+-   *AccountName* specifies the name of the VSTS account  
 -   *ServerName* specifies the name of the TFS application tier server   
 -   *Port* specifies the port, default=8080
 -   *CollectionName* specifies the name of the team project collection.

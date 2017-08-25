@@ -1,5 +1,5 @@
 ---
-title: All FIELD XML elements reference | Team Services & TFS
+title: All FIELD XML elements reference | VSTS & TFS
 description: Syntax for FIELD definition and it's child elements - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -24,7 +24,7 @@ Use this topic to look up the syntax of the `FIELD` element or one of its child 
  You use the following syntax to define the data fields for a type of work item. This example shows the format of the **FIELD** (Definition) element and all optional child elements. For more information, see [FIELD (Definition) element reference](field-definition-element-reference.md).  
 
 >[!NOTE]  
-><b>Feature availability:</b>The Boolean data type is supported for Hosted XML (Team Services) and for On-Premises XML, for TFS 2017.2 and later versions. 
+><b>Feature availability:</b>The Boolean data type is supported for Hosted XML (VSTS) and for On-Premises XML, for TFS 2017.2 and later versions. 
   
 ```  
 <FIELD name="fieldDisplayName" refname="fieldReferenceName" type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID | Boolean"  

@@ -1,5 +1,5 @@
 ---
-title: ProcessConfiguration syntax | Team Services & TFS  
+title: ProcessConfiguration syntax | VSTS & TFS  
 description: XML syntax and usage for all ProcessConfiguration elements to support customization of work item types and Agile tool backlogs and boards 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 07/20/2017
 
 # Process configuration XML element reference
 
-<b>Team Services (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
+<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
 
 >[!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize a process](../process/customize-process.md). 
@@ -759,7 +759,7 @@ The supported set of icons you can specify for a work item type are shown below.
 ![icon_airplane, icon_asterisk, icon_book, icon_car, icon_chart, icon_chat_bubble, icon_check_box, icon_clipboard, icon_code_response, icon_code_review](_img/processconfig-wit-icons-one.png) ![icon_color_palette, icon_crown, icon_database_storage, icon_diamond, icon_flame, icon_gavel, icon_gear, icon_gift, icon_government, icon_headphone](_img/processconfig-wit-icons-two.png) ![icon_insect, icon_key, icon_list, icon_megaphone, icon_paint_brush, icon_parachute, icon_response, icon_review, icon_ribbon, icon_sticky_note](_img/processconfig-wit-icons-three.png) ![icon_star, icon_test_beaker, icon_test_parameter, icon_test_plan, icon_test_step, icon_test_suite, icon_traffic_cone, icon_trophy](_img/processconfig-wit-icons-four.png)
 
 >[!NOTE]  
->Icons noted with an asterisk are supported on Team Services and TFS 2017.3 and later versions.
+>Icons noted with an asterisk are supported on VSTS and TFS 2017.3 and later versions.
 
 
 The system applies the color defined for the work item type to the icon. Colors and icons appear in the web portal where ever work items are displayed. This includes under **Related work** in PRs, list of links, the account work item pages as well as the work hub backlogs, boards, queries, and plans.  

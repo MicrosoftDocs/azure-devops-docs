@@ -1,5 +1,5 @@
 ---
-title: Help text, hyperlinks, web content | Team Services & TFS
+title: Help text, hyperlinks, web content | VSTS & TFS
 description: Customize your work item form to provide information or links to content.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -12,7 +12,7 @@ ms.date: 01/20/2017
 
 # Provide help text, hyperlinks, or web content on a work item form
 
-<b>Team Services (Hosted XML) | TFS 2017 | TFS 2015 </b>
+<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b>
 
 >[!IMPORTANT]  
 ><b>Feature availability: </b>This topic applies to customizations you can make when you use the Hosted XML or On-premises process models. The customizations addressed in this topic aren't available for the [Inheritance process model](../process/customize-process.md). 

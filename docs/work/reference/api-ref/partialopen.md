@@ -1,5 +1,5 @@
 ---
-title: WorkItem.PartialOpen method  | Team Services & TFS 
+title: WorkItem.PartialOpen method  | VSTS & TFS 
 description: Syntax and usage for the PartialOpen method to open a work item for modification when working with Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 08/04/2016
 # WorkItem.PartialOpen Method
 
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013**
 
 Opens this work item for modification by loading only the latest revision of this WorkItem. Whenever possible, use this method instead of [Open](open.md) because PartialOpen provides better performance.  
 
@@ -125,7 +125,7 @@ There are two modes of fetching used by PartialOpen, which the caller can use to
 
 (Mode 2) Optimized - Fetch only the fields relevant to a particular project, when project hint is specified. This is most optimal and recommended when all workitems are from the same project.
 
-By using PartialOpen, you can save bandwidth, resources, and time by paging in data for multiple work item fields up to the page size that is specified in [WorkItemCollection.PageSize](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitemcollection.pagesize%28v=vs.120%29.aspx). For Team Services customers, the Open method is rate limited whereas PartialOpen is not.
+By using PartialOpen, you can save bandwidth, resources, and time by paging in data for multiple work item fields up to the page size that is specified in [WorkItemCollection.PageSize](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitemcollection.pagesize%28v=vs.120%29.aspx). For VSTS customers, the Open method is rate limited whereas PartialOpen is not.
 
 This method does nothing if [IsPartialOpen](https://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client.workitem.ispartialopen%28v=vs.120%29.aspx), [IsOpen](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitem.isopen%28v=vs.120%29.aspx) or [IsNew](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitem.isnew%28v=vs.120%29.aspx) are true.
 

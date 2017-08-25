@@ -1,5 +1,5 @@
 ---
-title: Definition of Done | Team Services & TFS
+title: Definition of Done | VSTS & TFS
 description: Support teams shared understanding by providing a definition for what "done" means for each column of the Kanban board when working in Visual Studio Team Services or Team Foundation Server
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 04/03/2017
 # Definition of Done
 
 <!---
-<b>Team Services | TFS 2017 | TFS 2015</b> 
+<b>VSTS | TFS 2017 | TFS 2015</b> 
 --> 
 
 As your team updates the status of work as it progresses from one stage to the next, it helps that they agree on what “done” means. By specifying the Definition of Done criteria for each Kanban column, you help share the essential tasks to complete before moving an item into a downstream stage. 
@@ -36,7 +36,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 2. Open the Definition of Done for the column that applies to the criteria you'll enter. You can specify the Definition of Done for each intermediate column on your team's Kanban board. 
 
-	**Team Services and TFS 2015.1 and later versions**  
+	**VSTS and TFS 2015.1 and later versions**  
 	Click a column tab and enter the Definition of Done for that column. Enter text that defines your [team's Definition of Done](#your-team-working-software-and-the-definition-of-done). 
 
 	<img src="_img/vso-kanban-board-definition-of-done-no-tags.png" alt="Kanban board, Coding column tab, Definition of done]" style="border: 2px solid #C3C3C3;" />  

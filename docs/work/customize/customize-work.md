@@ -1,5 +1,5 @@
 ---
-title: Customize your work tracking experience | Team Services & TFS
+title: Customize your work tracking experience | VSTS & TFS
 description: Guide to configuring and customizing work tracking features in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/10/2017
 
 # Customize your work tracking experience 
 
-**Team Services | TFS 2017 | TFS 2015 | TFS 2013**
+**VSTS | TFS 2017 | TFS 2015 | TFS 2013**
 
 As you plan and track your project, you'll find you may want to configure a feature or customize your experience to meet your team's tracking needs. You configure teams and team Agile tools through the web portal administration context. The method you use to customize team projects, which impacts all teams, depends on the process model you use.  
 
@@ -22,7 +22,7 @@ Customizations you make occur at one of three levels:
 - **Object level**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the team project and assigning users or groups to specific access levels.  
 
 >[!NOTE]  
->If you're new to tracking work in Team Services or TFS, see [Get started with Agile tools to plan and track work](../overview.md). 
+>If you're new to tracking work in VSTS and TFS, see [Get started with Agile tools to plan and track work](../overview.md). 
 
 
 
@@ -48,8 +48,8 @@ Your team project determines the objects available to tracking work and the conf
 
 >[!NOTE]  
 >The method you use to customize work tracking depends on the process model you subscribe to: 
->- **Inheritance**: Supports WSIWIG customization, available for Team Services only  
->- **Hosted XML**: Supports customization through import/export of process templates, available for Team Services only    
+>- **Inheritance**: Supports WSIWIG customization, available for VSTS only  
+>- **Hosted XML**: Supports customization through import/export of process templates, available for VSTS only    
 >- **On-premises XML**: Supports customization through import/export of XML definition files for work tracking objects      
  
 The following table summarizes the differences between the three supported process models. For definitions of the main work tracking objects, see [Agile glossary](../concepts/agile-glossary.md).  
@@ -165,7 +165,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 > [!div class="mx-tdBreakAll"]  
 > |Manage access   |Permissions  |Shared resources  |
 > |-------------|----------|---------|
-> |- [Add team members (Team Services)](../../accounts/add-team-members-vs.md)<br/>- [Add team members (TFS)](../scale/multiple-teams.md#add-team-members)<br/>- [Stakeholder access](../../security/change-access-levels.md)<br/>- [VS Enterprise & Advanced access level](../../security/change-access-levels.md) |- [Area path permissions](../how-to/set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>- [Process permissions](../process/manage-process.md#process-permissions)<br/>- [Work item query and folder permissions](../track/set-query-permissions.md)<br/>- [Dashboard permissions](../../report/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../scale/review-team-plans.md#plan-permissions)<br/>- [Tagging permissions](../../security/permissions.md#tags)<br/>- [Test permissions](../../security/permissions.md#project_test)<br/>- [Restrict access](../../accounts/restrict-access-tfs.md) | - [Alerts](../track/alerts-and-notifications.md)<br/>- [Area paths](set-area-paths.md)<br/>- [Iteration paths](set-iteration-paths-sprints.md)<br/>- [Queries](../track/using-queries.md)<br/>- [Tags](../track/add-tags-to-work-items.md) | 
+> |- [Add team members (VSTS)](../../accounts/add-team-members-vs.md)<br/>- [Add team members (TFS)](../scale/multiple-teams.md#add-team-members)<br/>- [Stakeholder access](../../security/change-access-levels.md)<br/>- [VS Enterprise & Advanced access level](../../security/change-access-levels.md) |- [Area path permissions](../how-to/set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>- [Process permissions](../process/manage-process.md#process-permissions)<br/>- [Work item query and folder permissions](../track/set-query-permissions.md)<br/>- [Dashboard permissions](../../report/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../scale/review-team-plans.md#plan-permissions)<br/>- [Tagging permissions](../../security/permissions.md#tags)<br/>- [Test permissions](../../security/permissions.md#project_test)<br/>- [Restrict access](../../accounts/restrict-access-tfs.md) | - [Alerts](../track/alerts-and-notifications.md)<br/>- [Area paths](set-area-paths.md)<br/>- [Iteration paths](set-iteration-paths-sprints.md)<br/>- [Queries](../track/using-queries.md)<br/>- [Tags](../track/add-tags-to-work-items.md) | 
   
 ## Related notes
 

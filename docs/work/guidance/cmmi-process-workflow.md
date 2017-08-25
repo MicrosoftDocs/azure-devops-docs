@@ -1,5 +1,5 @@
 ---
-title: CMMI process work item and workflow | Team Services & TFS 
+title: CMMI process work item and workflow | VSTS & TFS 
 description: How to guide for using the CMMI process  work item types and workflow to track work in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)   
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 04/05/2017
 # CMMI process work item types and workflow
 
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>
 
 Teams use the work item types (WITs) provided with the MSF for CMMI Process Improvement 2015 (CMMI) process to plan and track progress of software projects. Teams define requirements to manage the backlog of work and then, using the Kanban board, track progress by updating the status of requirements.
  
@@ -298,7 +298,7 @@ Use the following guidance and that provided for [fields used in common across w
 
 
 >[!TIP]    
->Use the [Discussion section](../concepts/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from Team Services.   
+>Use the [Discussion section](../concepts/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from VSTS.   
 
 
 ## Track progress

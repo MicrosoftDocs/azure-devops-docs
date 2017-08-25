@@ -1,5 +1,5 @@
 ---
-title: Schedule projects using Microsoft Project | Team Services & TFS
+title: Schedule projects using Microsoft Project | VSTS & TFS
 description: Uses Microsoft Project 2010 to plan team projects, schedule tasks, assign resources, and track changes to data.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -18,7 +18,7 @@ ms.date: 02/22/2017
 >[!IMPORTANT]  
 >You can use [Project to plan and schedule work items](create-your-backlog-tasks-using-project.md) that you define in Team Services or Team Foundation Server (TFS). Some features may require customizing the Microsoft Project Mapping file which is only supported for the On-Premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize/customize-work.md).  
 
-You can use Project 2010 or later versions to plan team projects, schedule tasks, assign resources, and track changes to data that is stored in Team Services or TFS. By using Project, you can access many tools and functions through the simplified graphical menus and Office Ribbon. The Team tab menu, as shown in the following illustration, displays the same functions that are available from the Team tab in Excel.
+You can use Project 2010 or later versions to plan team projects, schedule tasks, assign resources, and track changes to data that is stored in VSTS and TFS. By using Project, you can access many tools and functions through the simplified graphical menus and Office Ribbon. The Team tab menu, as shown in the following illustration, displays the same functions that are available from the Team tab in Excel.
 
 >[!NOTE]  
 >For version compatibility between Team Services/TFS and Office clients, see [Requirements and compatibility, Office](../../accounts/requirements.md#office).  
@@ -56,7 +56,7 @@ To learn more, see [Changes in Project 2010](http://go.microsoft.com/fwlink/?Lin
 By using Active Mode, you can determine the impact to the schedule when you specify some tasks as inactive. When you mark a task as inactive, you maintain all the data that is associated with the task, but you remove it from consideration in the schedule and resource allocation. 
 
 >[!IMPORTANT]  
->When you inactivate a task in Project, you do not inactivate the task in Team Services or TFS. Inactive tasks are published and refreshed according to their **Publish and Refresh** assignment in the Project plan.   
+>When you inactivate a task in Project, you do not inactivate the task in VSTS and TFS. Inactive tasks are published and refreshed according to their **Publish and Refresh** assignment in the Project plan.   
 
 **Scalable 64-bit support**. With 64-bit compatibility, Project provides performance improvements to support creation of very large and complex projects.
 

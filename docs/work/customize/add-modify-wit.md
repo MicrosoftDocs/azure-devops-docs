@@ -1,5 +1,5 @@
 ---
-title: Add or modify a work item type (WIT) | Team Services & TFS 
+title: Add or modify a work item type (WIT) | VSTS & TFS 
 description: Modify or add a work item type (WIT) to support queries, reports, and workflow for Visual Studio Team Services (VSTS) and TFS  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 06/12/2017
 
 # Add or modify a work item type 
 
-<b>Team Services (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
+<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
 
 [!INCLUDE [temp](../_shared/customization-phase-0-and-1.md)]
 
@@ -110,7 +110,7 @@ For more information about applying workflow field rules, see [FIELD (Workflow) 
 
 The following illustrations highlight the most common elements on work item forms. You can customize all of them except the title area and form controls. The elements you use to customize the form depend on [whether or not the new form has been enabled by your admin](../customize/manage-new-form-rollout.md).  
 
-**Web form with the new form enabled (Team Services, TFS 2017)**  
+**Web form with the new form enabled (VSTS, TFS 2017)**  
 
 ![Header element within web form](../reference/_img/weblayout-system-controls-details-page.png)
  
@@ -170,7 +170,7 @@ Other related topics or resources:
 
 - To list work item types, you must have your **View project-level information** permission for the team project in the collection set to **Allow**.  
 - (TFS) To add or customize a WIT, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.
-- (Team Services)  To add or customize a WIT by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to Allow    
+- (VSTS)  To add or customize a WIT by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to Allow    
   
 To get added as an administrator, see [Add administrators](../../accounts/add-administrator-tfs.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Organize your backlog | Team Services & TFS  
+title: Organize your backlog | VSTS & TFS  
 description:  Organize your backlog by mapping backlog items to features, and features to epics in Visual Studio Team Services or the web portal for Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,9 +12,9 @@ ms.date: 06/19/2017
 
 # Organize your backlog, map child work items to parents 
 
-<!---
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
---> 
+
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+
 
 After you've added [features or epics](define-features-epics.md) to your portfolio backlog, you can quickly organize your backlog by mapping backlog items to them. With features and epics, you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.   
  
@@ -51,7 +51,7 @@ Drag items that are currently unparented to the feature under which they belong.
 <img src="_img/org-backlog-map-pbi-to-feature-ts-new-nav.png" alt="Map a backlog item to a portfolio backlog work item" style="border: 2px solid #C3C3C3;" />  
 
 >[!NOTE]  
-><b>Feature availability: </b> Multi-select of work items on the backlog and sprint backlogs is supported from Team Services and TFS 2015.1 or later versions. This feature works in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
+><b>Feature availability: </b> Multi-select of work items on the backlog and sprint backlogs is supported from VSTS and TFS 2015.1 or later versions. This feature works in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
 
 It's the same process to map features to epics. From the Features backlog, drag features to an epic listed under the mapping pane.  
 
@@ -75,7 +75,7 @@ This works the same as when you [moved items into priority order on your product
 ### Change parent of multiple backlog items 
 
 >[!NOTE]  
-><b>Feature availability: </b> The **Change parent&hellip;** menu option from the backlog page is supported from Team Services. 
+><b>Feature availability: </b> The **Change parent&hellip;** menu option from the backlog page is supported from VSTS. 
 
 From the product backlog you can multi-select several work items and choose **Change parent&hellip;** to link the items to a parent work item item. 
 

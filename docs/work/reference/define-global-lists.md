@@ -15,10 +15,10 @@ ms.date: 05/23/2017
 
 # Define global lists  
 
-<b>Team Services (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 >[!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. Hosted XML customization supports adding and updating global lists with a process update. To learn more, see [Differences between Team Services and TFS process template customizations](../import-process/differences.md).
+>This topic applies to team project customization for Hosted XML and On-premises XML process models. Hosted XML customization supports adding and updating global lists with a process update. To learn more, see [Differences between VSTS and TFS process template customizations](../import-process/differences.md).
 >
 >The Inheritance process model doesn't support global lists. For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
 
