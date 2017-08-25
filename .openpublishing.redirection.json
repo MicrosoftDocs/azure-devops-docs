@@ -1,12 +1,12 @@
 {
     "redirections": [{
-            "source_path": "test-redirect.md",
-            "redirect_url": "/work/scrum/index.md",
+            "source_path": "docs/test-redirect.md",
+            "redirect_url": "/vsts/work/scrum/index",
             "redirect_document_id": false
         },
         {
-            "source_path": "test/test-redirect-2.md",
-            "redirect_url": "/build-release/apps/aspnet/build-aspnet-4.md",
+            "source_path": "docs/test/test-redirect-2.md",
+            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-4",
             "redirect_document_id": false
         }
     ]
