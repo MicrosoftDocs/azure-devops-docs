@@ -11,7 +11,7 @@ ms.date: 05/23/2017
 
 # Process and team projects    
 
-<b>Team Services (Hosted XML)</b>   
+<b>VSTS (Hosted XML)</b>   
 
 >[!IMPORTANT]  
 >**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for accounts that have been migrated to VSTSusing the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Team Services process customization. 

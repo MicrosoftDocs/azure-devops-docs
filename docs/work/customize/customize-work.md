@@ -228,18 +228,8 @@ Here are a few options available to you:
 - Determine if a [Service hook](../../service-hooks/index.md) will satisfy your needs  
 - Create your own tool using [REST APIs](https://visualstudio.com/integrate/api/overview)  
 - Add your feature request to our [Team Services user voice page](https://visualstudio.uservoice.com/forums/330519-team-services) page.   
-<!---
+
  
-
-## Related notes
-
-Learn more about how to use work tracking to plan, manage, and monitor your projects:  
-
-- [Configure team settings](../scale/manage-team-assets.md) 
-   
-- 
--   
--->
 
 [add-team-members]: ../scale/multiple-teams.md#add-team-members
 [add-team-admin]: ../scale/add-team-administrator.md

@@ -299,7 +299,7 @@
   items:
   - name: Work items
     href: /vsts/work/work-items/index
-  - name: "Scale & configure teams"
+  - name: "Scale & Configure Teams"
     href: /vsts/work/scale/index
   - name: Account Management (VSTS)
     href: /vsts/accounts/index

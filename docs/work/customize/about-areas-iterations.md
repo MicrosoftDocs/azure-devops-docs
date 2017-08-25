@@ -21,9 +21,10 @@ You define area and iteration paths for a team project. Teams can then choose wh
 
 The areas and iterations you see depend on the process you used to create your team project. Here we show the defaults defined for the Scrum process. No dates are set. You set dates to correspond to your sprint or release schedules.
 
-<img src="_img/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 2px solid #C3C3C3;" />   <img src="_img/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 2px solid #C3C3C3;" /> 
+> [!div class="mx-tdBreakAll"]  
+> |-------------|----------|  
+> |<img src="_img/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 2px solid #C3C3C3;" /> | <img src="_img/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 2px solid #C3C3C3;" /> |
   
-
 ## How many areas should a team define?
 
 You add areas to support your team's trace-ability and security requirements. Use areas to represent logical or physical components, and then create child areas to represent specific features.  
