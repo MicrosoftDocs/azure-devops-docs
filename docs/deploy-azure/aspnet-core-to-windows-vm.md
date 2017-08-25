@@ -93,7 +93,7 @@ When `net start w3svc` appears, press **Enter** to run it.
 
 1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
 
-A new build is started. You will see a link to the new build on the top of the page. Click the link to watch the new build as it happens. Wait for the build to complete and succeed before proceeding to the next section.
+A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens. Wait for the build to complete and succeed before proceeding to the next section.
 
 [//]: # (TODO)
 

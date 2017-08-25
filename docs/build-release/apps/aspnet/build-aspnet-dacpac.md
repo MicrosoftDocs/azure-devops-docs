@@ -12,7 +12,7 @@ ms.date: 01/02/2017
 # Build your SQL server database
 
 
-[!INCLUDE [temp](../../../_shared/version.md)]
+[!INCLUDE [temp](../../_shared/version.md)]
 
 Here we'll show you how to define your continuous integration (CI) process for your SQL server database project.
 
@@ -28,7 +28,7 @@ For the instructions in this topic, you need a SQL server database project in Vi
 ### Create the build definition
 
 <ol>
-    [!INCLUDE [include](../../../_shared/begin-create-build-definition.md)]
+    [!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
 
     <li>Select the **Visual Studio** template.</li>
 
@@ -48,9 +48,9 @@ Save the build definition and queue a new build by selecting the **Queue new bui
 
 After you've run the build, you're ready to create a release definition to deploy your database to:
 
-* <a href="../cd/deploy-dacpac-sqlpackage.md"><img src="../../../tasks/deploy/_img/azure-sql-database-deployment-icon.png"/> Azure SQL Server</a>
+* <a href="../cd/deploy-dacpac-sqlpackage.md"><img src="../../tasks/deploy/_img/azure-sql-database-deployment-icon.png"/> Azure SQL Server</a>
 
-* <a href="../../cd/howto-webdeploy-iis-deploygroups.md#database"><img src="../../../tasks/deploy/_img/sql-server-database-deployment-icon.png"/> SQL Server</a>
+* <a href="../cd/howto-webdeploy-iis-deploygroups.md#database"><img src="../../tasks/deploy/_img/sql-server-database-deployment-icon.png"/> SQL Server</a>
 
 ## Q&A
 
@@ -58,14 +58,14 @@ After you've run the build, you're ready to create a release definition to deplo
 
 <h3 id="new_solution">How do I create an SQL server database solution?</h3>
 
-0. In Visual Studio, [connect to your team project](../../../../connect/connect-team-projects.md#visual-studio).
+0. In Visual Studio, [connect to your team project](../../../connect/connect-team-projects.md#visual-studio).
 
 0. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
 
 0. Select the **SQL Server** templates section, and then choose the **SQL Server Database Project** template.
 
-0. [Commit and push (Git)](../../../../git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../../tfvc/share-your-code-in-tfvc-vs.md) your code.
+0. [Commit and push (Git)](../../../git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../tfvc/share-your-code-in-tfvc-vs.md) your code.
 
-[!INCLUDE [temp](../../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->

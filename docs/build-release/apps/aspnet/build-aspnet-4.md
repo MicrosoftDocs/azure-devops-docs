@@ -11,7 +11,7 @@ ms.date: 02/10/2017
 
 # Build your ASP.NET 4 app
 
-[!INCLUDE [temp](../../../_shared/version.md)]
+[!INCLUDE [temp](../../_shared/version.md)]
 
 Here we'll show you how to define your continuous integration (CI) process for your ASP.NET 4 app.
 
@@ -27,7 +27,7 @@ For the instructions in this topic, you need an ASP.NET 4 project in Visual Stud
 ### Create the build definition
 
 <ol>
-    [!INCLUDE [include](../../../_shared/begin-create-build-definition.md)]
+    [!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
 
     <li>Select the **ASP.NET (PREVIEW)** template.</li>
 
@@ -51,7 +51,7 @@ Save the build definition and queue a new build by selecting the **Queue new bui
 
 <h3 id="new_solution">How do I create an ASP.NET 4 solution?</h3>
 
-0. In Visual Studio, [connect to your team project](../../../../connect/connect-team-projects.md#visual-studio).
+0. In Visual Studio, [connect to your team project](../../../connect/connect-team-projects.md#visual-studio).
 
 0. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
 
@@ -61,12 +61,12 @@ Save the build definition and queue a new build by selecting the **Queue new bui
 
 0. Click **Change Authentication**, select **No Authentication**, and click **OK**.
 
-0. [Commit and push (Git)](../../../../git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../../tfvc/share-your-code-in-tfvc-vs.md) your code.
+0. [Commit and push (Git)](../../../git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../tfvc/share-your-code-in-tfvc-vs.md) your code.
 
 ### I got a file not found error message. How do I fix it?
 
-All solution files must be checked into the server to run a build. One known cause of missing files is in cases where you populate an empty repo by creating a new project in Visual Studio 2015 Update 3. We recommend that you update your [.gitignore file](../../../../git/tutorial/ignore-files.md) with the latest copy from [GitHub: VisualStudio.gitignore](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore).
+All solution files must be checked into the server to run a build. One known cause of missing files is in cases where you populate an empty repo by creating a new project in Visual Studio 2015 Update 3. We recommend that you update your [.gitignore file](../../../git/tutorial/ignore-files.md) with the latest copy from [GitHub: VisualStudio.gitignore](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore).
 
-[!INCLUDE [temp](../../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->

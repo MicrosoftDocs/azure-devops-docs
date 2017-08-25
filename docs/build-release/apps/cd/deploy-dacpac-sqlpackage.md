@@ -11,7 +11,7 @@ ms.date: 01/02/2016
 
 # Deploy your database to Azure SQL Database using DACPACs
 
-[!INCLUDE [temp](../../../_shared/version-rm-dev14.md)]
+[!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
 
 Continuous deployment means starting an automated deployment process whenever a new successful build is available.
 Here we'll show you how to set up continuous deployment of your database packaged as a DACPAC to an Azure SQL Database using Release Management.
@@ -22,7 +22,7 @@ Here we'll show you how to set up continuous deployment of your database package
 
 Before you begin, you need a CI build that publishes your SQL server package. To set up CI, see:
 
-* [Continuous integration for SQL Server databases](../ci/build-aspnet-dacpac.md)
+* [Continuous integration for SQL Server databases](../aspnet/build-aspnet-dacpac.md)
 
 ### Azure SQL Database
 
@@ -73,11 +73,11 @@ Continuous deployment (CD) means starting an automated release process whenever 
 
 1. Add a **SQL Database** task to the default environment and configure it as follows:
 
-   ![icon](../../../tasks/deploy/_img/azure-sql-database-deployment-icon.png) [Deploy: Azure SQL Database Deployment](../../../tasks/deploy/azure-sql-database-deployment.md) - Deploy the database to Azure SQL Database.
+   ![icon](../../tasks/deploy/_img/azure-sql-database-deployment-icon.png) [Deploy: Azure SQL Database Deployment](../../tasks/deploy/azure-sql-database-deployment.md) - Deploy the database to Azure SQL Database.
    
    - **Azure Connection Type**: `Azure Resource Manager`.
    
-   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../concepts/library/service-endpoints.md#sep-azure-rm).
+   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm).
    
    - **Azure SQL Server Name**: Enter the name of the SQL Database server you created earlier.
    
@@ -107,8 +107,8 @@ This will result in deploying the database DACPAC to Azure SQL Database:
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

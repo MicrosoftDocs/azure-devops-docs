@@ -22,7 +22,7 @@ Learn how to build your app.
 <table>
 <tr valign="middle" align="center">
 <td><img src="_img/index/logo_net.svg" alt="" width="36px" height="36px"><br/>[ASP.NET Core](apps/aspnet/build-aspnet-core.md)</td>
-<td><img src="_img/index/logo_net.svg" alt="" width="36px" height="36px"><br/>[ASP.NET](apps/aspnet/ci/build-aspnet-4.md)</td>
+<td><img src="_img/index/logo_net.svg" alt="" width="36px" height="36px"><br/>[ASP.NET](apps/aspnet/build-aspnet-4.md)</td>
 <td><img src="_img/index/logo_nodejs.svg" alt="" width="36px" height="36px"><br/>[Node.js](apps/nodejs/quick-to-azure.md)</td>
 <td><img src="_img/index/logo_java.svg" alt="" width="36px" height="36px"><br/>[Java](apps/java/quick-to-azure.md)</td>
 </tr>

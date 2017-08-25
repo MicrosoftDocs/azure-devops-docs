@@ -11,14 +11,14 @@ ms.date: 01/02/2017
 
 # Deploy your ASP.NET app to an Azure cloud service
 
-[!INCLUDE [temp](../../../_shared/version-rm-dev14.md)]
+[!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
 
 Continuous deployment means starting an automated deployment process whenever a new successful build is available.
 Here we'll show you how to set up continuous deployment of your ASP.NET app to an Azure cloud service using Release Management.
 
 You can also use these steps to deploy your app to an Azure Government Cloud
 by creating a suitable service endpoint for your Azure Government Cloud subscription.
-For more details, see the [Azure Government Cloud deployments](../../../concepts/library/government-cloud.md).
+For more details, see the [Azure Government Cloud deployments](../../concepts/library/government-cloud.md).
 
 ## Get set up
 
@@ -26,7 +26,7 @@ For more details, see the [Azure Government Cloud deployments](../../../concepts
 
 Before you begin, you'll need a CI build that publishes your Cloud Service package. To set up CI, see:
 
-* [Build your Azure cloud service](../ci/build-aspnet-cloudservice.md)
+* [Build your Azure cloud service](build-aspnet-cloudservice.md)
 
 ### Azure storage
 
@@ -76,7 +76,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
 
 1. Select the **Azure Cloud Service Deployment** task and configure it as follows:
    
-   ![icon](../../../tasks/deploy/_img/azure-cloud-service-deployment-icon.png) [Deploy: Azure Cloud Service Deployment](../../../tasks/deploy/azure-cloud-service-deployment.md) - Deploy the app to an Azure cloud service.
+   ![icon](../../tasks/deploy/_img/azure-cloud-service-deployment-icon.png) [Deploy: Azure Cloud Service Deployment](../../tasks/deploy/azure-cloud-service-deployment.md) - Deploy the app to an Azure cloud service.
    
    - **Azure Subscription (Classic)**: Select an Azure Classic service endpoint. If you have not created one already, create one now by choosing **Add**. Then return to your release definition, refresh the **Azure Subscription** list, and select the connection you just created.
    
@@ -84,7 +84,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
    
    - **Service name**: Select the name of an existing cloud service, or enter the name of a new cloud service.<p />
 
-   > If your Azure subscription is defined in an Azure Government Cloud, ensure your deployment process meets the relevant compliance requirements. For more details, see [Azure Government Cloud deployments](../../../concepts/library/government-cloud.md).
+   > If your Azure subscription is defined in an Azure Government Cloud, ensure your deployment process meets the relevant compliance requirements. For more details, see [Azure Government Cloud deployments](../../concepts/library/government-cloud.md).
    
 1. Edit the name of the release definition, click **Save**, and click **OK**. Note that the default environment is named Environment1, which you can edit by clicking directly on the name.
 
@@ -104,8 +104,8 @@ You're now ready to create a release, which means to start the process of runnin
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

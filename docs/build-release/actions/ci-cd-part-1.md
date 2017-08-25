@@ -302,7 +302,7 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 
 We hope this tutorial gave you an understanding of the basic concepts of Team Build and Release Management. To get started building and deploying an app, we suggest you proceed next to one of these topics:
 
-* [ASP.NET](../apps/aspnet/ci/build-aspnet-4.md)
+* [ASP.NET](../apps/aspnet/build-aspnet-4.md)
 
 * [ASP.NET core](../apps/aspnet/build-aspnet-core.md)
 

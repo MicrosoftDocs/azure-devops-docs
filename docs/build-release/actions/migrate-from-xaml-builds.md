@@ -243,7 +243,7 @@ In XAML builds you had to create your own custom templates to build different ty
 
 Here are a few examples of the kinds of apps you can build:
 
-* [Build your ASP.NET 4 app](../apps/aspnet/ci/build-aspnet-4.md).
+* [Build your ASP.NET 4 app](../apps/aspnet/build-aspnet-4.md).
 
 * [Build your ASP.NET Core app](../apps/aspnet/build-aspnet-core.md)
 

@@ -11,7 +11,7 @@ ms.date: 01/02/2017
 
 # Build your Azure cloud service
 
-[!INCLUDE [temp](../../../_shared/version.md)]
+[!INCLUDE [temp](../../_shared/version.md)]
 
 Here we'll show you how to define your continuous integration (CI) process for your Azure cloud service project.
 
@@ -27,7 +27,7 @@ For the instructions in this topic, you need an Azure cloud service project in V
 ### Create the build definition
 
 <ol>
-    [!INCLUDE [include](../../../_shared/begin-create-build-definition.md)]
+    [!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
 
     <li>Select the **Azure Cloud Service** template.</li>
 
@@ -49,7 +49,7 @@ Save the build definition and queue a new build by selecting the **Queue new bui
 
 After you've run the build, you're ready to create a release definition to deploy your app to:
 
-* <a href="../cd/deploy-cloudservice-cloudservice.md"><img src="../../../tasks/deploy/_img/azure-cloud-service-deployment-icon.png"/> An Azure cloud service</a>
+* <a href="deploy-cloudservice-cloudservice.md"><img src="../../tasks/deploy/_img/azure-cloud-service-deployment-icon.png"/> An Azure cloud service</a>
 
 ## Q&A
 
@@ -57,7 +57,7 @@ After you've run the build, you're ready to create a release definition to deplo
 
 <h3 id="new_solution">How do I create an Azure cloud service solution?</h3>
 
-0. In Visual Studio, [connect to your team project](../../../../connect/connect-team-projects.md#visual-studio).
+0. In Visual Studio, [connect to your team project](../../../connect/connect-team-projects.md#visual-studio).
 
 0. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
 
@@ -67,8 +67,8 @@ After you've run the build, you're ready to create a release definition to deplo
 
 0. When prompted for the type of ASP.NET project for the Web role, choose the **MVC** project.
 
-0. [Commit and push (Git)](../../../../git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../../tfvc/share-your-code-in-tfvc-vs.md) your code.
+0. [Commit and push (Git)](../../../git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../tfvc/share-your-code-in-tfvc-vs.md) your code.
 
-[!INCLUDE [temp](../../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->

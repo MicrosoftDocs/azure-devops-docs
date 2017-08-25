@@ -1,3 +1,3 @@
 ---
-redirect_url: /vsts/build-release/apps/aspnet/cd/deploy-dacpac-sqlpackage
+redirect_url: /vsts/build-release/apps/cd/deploy-dacpac-sqlpackage
 ---

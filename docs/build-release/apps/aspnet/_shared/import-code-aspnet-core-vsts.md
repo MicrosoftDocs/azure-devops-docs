@@ -1,9 +1,7 @@
-VSTS is a full-featured Git server for hosting your team's source code. You'll import code for a sample ASP.NET Core app into VSTS Git repository. This is the app that you will configure CI/CD for.
+VSTS is a full-featured Git server for hosting your team's source code. You'll import code for a sample ASP.NET Core app into VSTS Git repository. This is the app that you'll configure CI/CD for.
 
-<!--
-> [!NOTE]
-> If you already have an ASP.NET Core application checked into your VSTS Git repository, you can use that for this quickstart, so long as your app does not depend on a database.
--->
+[//]: # (> [!NOTE])
+[//]: # (> If you already have an ASP.NET Core application checked into your VSTS Git repository, you can use that for this quickstart, so long as your app does not depend on a database.)
 
 1. In VSTS, on the **Code** hub for your VSTS project, select the option to **Import repository**.
 

@@ -17,7 +17,7 @@ Continuous deployment means starting an automated deployment process whenever a 
 
 Before you begin, you'll need a CI build that publishes your Web Deploy package. To set up CI for your specific type of app, see:
 
-* [Build your ASP.NET 4 app](../aspnet/ci/build-aspnet-4.md)
+* [Build your ASP.NET 4 app](../aspnet/build-aspnet-4.md)
 
 * [Build your ASP.NET Core app](../aspnet/build-aspnet-core.md)
 

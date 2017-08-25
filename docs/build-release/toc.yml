@@ -11,7 +11,7 @@
     - name: ASP.NET Core
       href: apps/aspnet/build-aspnet-core.md
     - name: ASP.NET
-      href: apps/aspnet/ci/build-aspnet-4.md
+      href: apps/aspnet/build-aspnet-4.md
     - name: Node.js
       href: apps/nodejs/quick-to-azure.md
     - name: Java
@@ -121,13 +121,13 @@
     - name: Universal Windows Platform
       href: apps/windows/universal.md
     - name: Azure Cloud Service
-      href: apps/aspnet/ci/build-aspnet-cloudservice.md
+      href: apps/aspnet/build-aspnet-cloudservice.md
     - name: SQL Server Database
-      href: apps/aspnet/ci/build-aspnet-dacpac.md
+      href: apps/aspnet/build-aspnet-dacpac.md
   - name: Deploy your app
     items:
     - name: Azure cloud service
-      href: apps/aspnet/cd/deploy-cloudservice-cloudservice.md
+      href: apps/aspnet/deploy-cloudservice-cloudservice.md
     - name: Azure Government Cloud
       href: concepts/library/government-cloud.md
     - name: Azure Container Service (Kubernetes)
@@ -135,9 +135,9 @@
     - name: IIS servers (WinRM)
       href: apps/cd/deploy-webdeploy-iis-winrm.md
     - name: Azure SQL database (DACPAC)
-      href: apps/aspnet/cd/deploy-dacpac-sqlpackage.md
+      href: apps/cd/deploy-dacpac-sqlpackage.md
     - name: Azure SQL database (SQL scripts)
-      href: apps/aspnet/cd/deploy-database-sqlscripts.md
+      href: apps/cd/deploy-database-sqlscripts.md
     - name: SCVMM
       href: apps/cd/scvmm/configure-scvmm.md
     - name: VMware
