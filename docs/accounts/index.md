@@ -33,7 +33,7 @@ Use this index to setup and manage your account and configure key settings to su
 
 * [Create your account with a work or school account](create-account-with-work-school.md)
 
-* [Connect to your account](connect-to-vsts.md)
+* [Connect to your account](../connect/connect-team-projects.md)
 
 * [Add users to your account](add-account-users-from-user-hub.md)
 

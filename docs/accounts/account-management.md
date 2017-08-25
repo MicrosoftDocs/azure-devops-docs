@@ -40,7 +40,7 @@ The account owner and other members of the Project Collection Administrator grou
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Set up VSTS</p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:2px">[Create your account](create-account-with-work-school.md)</li>
- <li style="margin-bottom:2px">[Connect to your account](connect-to-vsts.md)</li>
+ <li style="margin-bottom:2px">[Connect to your account](../connect/connect-team-projects.md)</li>
  <li style="margin-bottom:2px">[Change account owner](change-account-ownership-vs.md)</li>
  <li style="margin-bottom:2px">[Rename account](rename-vsts-account.md)</li>
  <li style="margin-bottom:2px">[Authenticate app access](use-personal-access-tokens-to-authenticate.md)</li>
@@ -328,7 +328,7 @@ and cloud-based load testing.
 
 #### Connect to your account
 After VSTS creates your account, 
-[connect to your account](connect-to-vsts.md) 
+[connect to your account](../connect/connect-team-projects.md) 
 with tools like Xcode, Eclipse, or Visual Studio, 
 and add code to your team project.
 
