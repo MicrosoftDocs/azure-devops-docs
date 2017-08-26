@@ -136,21 +136,7 @@ To learn more about administration features, see [Work in the web portal, admini
 ## Related notes 
 You've now got a basic understanding of how to work in the Team Explorer add-in for Visual Studio and Eclipse.
 
-### Troubleshoot connection problems  
-
-Here's a list of the most frequently encountered connection problems and what to do about them. Start at the top and follow it in the order indicated.
-
-1.  Verify that you have [required permissions](../accounts/add-users.md).
-
-    If the errors that you receive indicate read-only or blocked actions, you might not have permission to act on the data.
-
-2.  Verify that your computer is connected to the network and can access network resources.
-
-3.  Verify that TFS hasn't been taken offline. Talk with your TFS administrator.
-
-4.  Verify whether your team project has been moved to another team project collection in Team Foundation Server. If it has been moved, you must create a connection to the new server name.
-
-For more troubleshooting tips, [TF31002: Unable to connect to this Team Foundation Server](../work/reference/error/tf31002-unable-connect-tfs.md).
+- [Troubleshoot connection](troubleshoot-connection.md)  
 
 <a id="clients">  </a>
 ### Clients that connect to VSTS or TFS
@@ -180,7 +166,6 @@ If data doesn't appear as expected, the first thing to try is to refresh your cl
 
 
 [!INCLUDE [temp](_shared/when-to-refresh-client.md)]
-
 
 [!INCLUDE [temp](../_shared/images-not-appearing-vs.md)] 
 

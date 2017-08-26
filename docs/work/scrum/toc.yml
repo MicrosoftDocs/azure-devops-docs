@@ -48,8 +48,8 @@
     href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Email/print work items
     href: /vsts/work/how-to/email-work-items.md
-  - name: Copy as HTML 
-    href: /vsts/work/backlogs/copy-clone-work-items#html?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+  - name: "Copy or clone work items & copy as HTML"
+    href: /vsts/work/backlogs/copy-clone-work-items?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Change column options
     href: /vsts/work/how-to/set-column-options?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: "Manage permissions & access"

@@ -28,8 +28,6 @@ We'll walk you through the basics of the web interface and some common tasks.
 
 Get started with a free account, share your code using Git, and track your work using a Kanban board.  
 
-![Learn the UI](_img/placeholder-web-app.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Create a repo](_img/placeholder-git-repo.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Create a Kanban](_img/placeholder-kanban.png)   
-
 - [Set up/sign up with Team Services](/vsts/accounts/sign-up-for-visual-studio-team-services?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
 - [Code with Git](/vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Track work via Kanban](/vsts/work/kanban/kanban-quickstart?toc=/vsts/user-guide/toc.json&&bc=/vsts/user-guide/breadcrumb/toc.json)
@@ -43,10 +41,6 @@ Get started with a free account, share your code using Git, and track your work 
 - [Enable preview features](/vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
  
 
-## Videos
-
-[![Guided tour of the VSTS user interface](_img/index/agile-planning-video-image.png)](https://channel9.msdn.com/Events/build-release/2017/P4105/player)   [![Build a backlog and track your work](_img/index/zero-to-devops-video-image.png)](#)   [![Create a Git repo for code sharing](_img/index/agile-planning-video-image.png)](https://channel9.msdn.com/Events/Connect/2016/204/player)
-
 ## Concepts  
 
 - [Key concepts](../concepts.md)    
@@ -54,8 +48,7 @@ Get started with a free account, share your code using Git, and track your work 
 - [Software development roles](../roles.md)   
 - [FAQs](../faqs.md)- 
 - [What's the difference between VSTS and TFS?](../about-vsts-tfs.md)  
-- Accounts and tenants (TBW)  
-- Licensing (TBW) 
+
 
 ## Reference
 - [Permissions and access](/vsts/security/permissions-access?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)

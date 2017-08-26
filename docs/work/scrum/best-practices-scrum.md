@@ -11,7 +11,7 @@ ms.date: 08/02/2017
 ---
 
 
-# Scrum and working with sprints best practices 
+# Scrum and best practices 
  
 <b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
 

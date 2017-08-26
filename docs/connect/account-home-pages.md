@@ -15,9 +15,7 @@ ms.date: 08/11/2017
 **VSTS | TFS 2017.1**  
 
 > [!NOTE]  
-> **Feature availability**: The features described in this topic are currently in preview for Team Services. You can enable or disable these features from your account menu, [Preview features-New Account Landing Page](../collaborate/preview-features.md). 
->
-> For TFS 2017.1, the features described in this topic are automatically enabled for all users and cannot be disabled. To upgrade to TFS 2017.1, go to the [Visual Studio downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs). 
+> **Feature availability**: The features described in this topic are available from Visual Studio Team Services (VSTS) and TFS 2017.1 and later versions. To upgrade to TFS 2017.1, go to the [Visual Studio downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs).  
 
 From your account, you gain access to a number of page views that are particularly helpful if you work in several team projects. These pages provide quick access and filter functions to support your work within a single team project or  work you're doing across several projects.  
 
@@ -74,9 +72,8 @@ Favorited objects include:
 
 - Team projects   
 - Repositories   
-<!--- Branches (favoriting branches not supported at the account level) -->  
 - Work item queries   
-<!--- Plans (requires the [Plans extension to be installed](../work/scale/multiple-teams.md)) -->
+- Plans (requires installation of the [Delivery Plans extension](../work/scale/review-team-plans.md))
 - Build definitions  
 - Test plans 
 
@@ -161,7 +158,7 @@ To learn more about team rooms, see [Collaborate in a team room](../collaborate/
 
 --> 
 
-##Related notes
+## Related notes
 
 - [Enable preview features](../collaborate/preview-features.md)  
 - [Work in the web portal](work-web-portal.md) 

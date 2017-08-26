@@ -22,9 +22,9 @@
   - name: Edit a query
     href: using-queries.md
   - name: Bulk modify (web)
-    href: /vsts/work/backlogs/bulk-modify-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    href: /vsts/work/backlogs/bulk-modify-work-items?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
   - name: Follow work
-    href: /vsts/collaborate/follow-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    href: /vsts/collaborate/follow-work-items?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
 - name: Samples
   items:
   - name: Query by title, ID, or description
@@ -52,15 +52,15 @@
 - name: How-to Guides
   items:
   - name: Switch project or team focus
-    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json
+    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
   - name: Change column options
-    href: /vsts/work/how-to/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json
+    href: /vsts/work/how-to/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
   - name: Email/print work items
-    href: /vsts/work/how-to/email-work-itemsv
+    href: /vsts/work/how-to/email-work-items?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
   - name: "Filter, backlogs, boards, & queries"
-    href: /vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json
+    href: /vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
   - name: Copy as HTML 
-    href: /vsts/work/backlogs/copy-clone-work-items#html?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json
+    href: /vsts/work/backlogs/copy-clone-work-items?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
   - name: "Manage permissions & access"
     href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
 - name: Reference

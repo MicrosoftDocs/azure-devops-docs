@@ -25,7 +25,7 @@
   - name: Kanban best practices
     href: best-practices-kanban.md
   - name: About teams and Agile tools
-    href: /vsts/work/about-teams-and-settings?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
+    href: /vsts/work/about-teams-and-settings?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: "Workflow states & state categories"
     href: /vsts/work/concepts/workflow-and-state-categories?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: Agile glossary

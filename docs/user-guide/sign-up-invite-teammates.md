@@ -100,7 +100,7 @@ You provide others access to your account by adding their email address.
 ## Next steps  
  
 > [!div class="nextstepaction"]
-> [Add code to your Git repository](/vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) 
+> [Add code to your Git repository](code-with-git.md) 
 > or 
 > [Plan and track work](plan-track-work.md) 
  

@@ -283,6 +283,8 @@ Additional resources you may find of interest:
 - [Work effectively from your account home page](account-home-pages.md)
 - [Connect to team projects](connect-team-projects.md)  
 - [Work in Team Explorer](work-team-explorer.md)  
+- [Troubleshoot connection](troubleshoot-connection.md)  
+
 
 <!---
 ### Navigating within the admin context (Team Services and TFS 2017)  
@@ -393,21 +395,6 @@ Although you can access source code, work items, and builds from both clients, s
 
 To open Excel from the web portal, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](../work/office/bulk-add-modify-work-items-excel.md) or [Project](../work/office/create-your-backlog-tasks-using-project.md) and then open a query that you've created in the web portal. 
 
-### Troubleshoot connection problems
-
-Here's a list of the most frequently encountered connection problems and what to do about them. Start at the top and follow it in the order indicated.
-
-1.  Verify that you have required permissions.
-
-    If the errors that you receive indicate read-only or blocked actions, you might not have permission to act on the data.
-
-2.  Verify that your computer is connected to the network and can access network resources.
-
-3.  Verify that TFS hasn't been taken offline. Talk with your account or TFS administrator.
-
-4.  Verify whether your team project has been moved to another team project collection in Team Foundation Server. If it has been moved, you must create a connection to the new server name.
-
-For more troubleshooting tips, [TF31002: Unable to connect to this Team Foundation Server](../work/reference/error/tf31002-unable-connect-tfs.md).
 
 [!INCLUDE [temp](../_shared/help-support-shared.md)] 
 

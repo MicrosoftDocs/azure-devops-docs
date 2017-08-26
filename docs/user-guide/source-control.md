@@ -31,5 +31,6 @@ With TFVC, devs have only one version of each file on their dev machines. Histor
 Start sharing your code or getting your code under source control by [creating an account on Team Services for free](../accounts/create-account-with-personal-msa.md).  
 
 > [!div class="nextstepaction"]
-> [Add your code using Git](/vsts/git/gitquickstart?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json)  
-> [Compare Git and TFVC](/vsts/tfvc/comparison-git-tfvc?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json )  
+> [Add your code using Git](/vsts/git/gitquickstart?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json)
+> or
+> [Compare Git and TFVC](/vsts/tfvc/comparison-git-tfvc?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json)

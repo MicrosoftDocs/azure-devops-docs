@@ -34,9 +34,9 @@ Give your teams the autonomy they need as your organization grows. Add teams to 
 
 ## How-to Guides
 - [Set team defaults](set-team-defaults.md)    
-- [Define area paths](/vsts/work/customize/set-area-paths?toc=/vsts/work/scale/toc.json&bc=/vsts/work/breadcrumb/toc.json)
-- [Define iteration paths or sprints](/vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/scale/toc.json&bc=/vsts/work/breadcrumb/toc.json)
-- [Define a work item template](/vsts/work/productivity/work-item-template?toc=/vsts/work/scale/toc.json&bc=/vsts/work/breadcrumb/toc.json)
+- [Define area paths](/vsts/work/customize/set-area-paths?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
+- [Define iteration paths or sprints](/vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
+- [Define a work item template](/vsts/work/productivity/work-item-template?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
 - [Configure team settings](manage-team-assets.md) 
 - [Scaled Agile Framework](scaled-agile-framework.md) 
 

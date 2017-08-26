@@ -22,7 +22,6 @@ With Scrum, you can schedule and plan sprints, update your task board, and monit
 [About teams and Agile tools](/vsts/work/about-teams-and-settings?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
 -->
 
-
 ## 5-Minute Quickstarts  
 
 Start tracking work by adding work items, creating your backlog, or scheduling sprints.  
@@ -52,7 +51,7 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 * [Filter backlogs, boards, & queries](/vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
 * [Change column options](/vsts/work/how-to/set-column-options?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
 * [Email/print work items](/vsts/work/how-to/email-work-items?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)   
-* [Define iteration paths](/vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
+* [Define iteration paths](/vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) 
 
 
 ## Reference   

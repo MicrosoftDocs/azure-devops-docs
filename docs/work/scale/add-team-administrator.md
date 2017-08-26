@@ -32,7 +32,7 @@ To get added as a team administrator, ask another team admin or the account owne
 
 	**TFS 2015** 
 
-	![Web portal, TFS 2015, Open team administration context](_img/add-account-as-team-admin.png)  
+	<img src="_img/add-account-as-team-admin.png" alt="Web portal, TFS 2015, Open team administration context" style="border: 2px solid #C3C3C3;" />  
 
 2. Enter the identities you want to add to the team administrator role. 
 
