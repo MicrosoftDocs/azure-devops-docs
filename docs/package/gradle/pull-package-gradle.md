@@ -44,6 +44,8 @@ Navigate to `https://{yourAccount}.visualstudio.com/_details/security/tokens`, w
 Click **Add**.
 ![Add a personal access token](_img/add-pat.png)
 
+![Add a personal access token](_img/add-pat.png)
+
 Give your new token a name and a duration. 
 
 Select the **Packaging (read and write)** scope.
@@ -61,9 +63,6 @@ vstsMavenAccessToken=YOUR_TOKEN_HERE
 ```
 
 Where *YOUR_TOKEN_HERE* is the token string you created and saved previously. Save the file when you're done.
-
-[SCREENSHOT HERE]
-
 
 
 ## Pull a Gradle package into your project
@@ -83,7 +82,7 @@ dependencies {
 ```   
 For example: `compile(group: 'siteOps', name: 'odata-wrappers', version: '1.0.0.0')
 
-This tells `gradle build` to include the package you created prior, which is effectively named `orgId:artifactId`, and that it should be applied to the app named in the dependencies. [DOUGE: CLEAN UP PROSE]
+This tells `gradle build` to include the package you created prior, which is effectively named `orgId:artifactId`, and that it should be applied to the app named in the dependencies. 
 
 To test this, create a simple Java code file and build it with Gradle. You can use this code to test:
 
