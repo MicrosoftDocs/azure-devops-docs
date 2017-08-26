@@ -79,7 +79,7 @@
     href: ../kanban/index.md
   - name: Scrum
     href: ../scrum/index.md
-  - name: Work item customization
+  - name: Customization
     href: ../customize/index.md
   - name: Wiql Editor (Marketplace extension)
     href: https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor

@@ -182,16 +182,16 @@ you can [add them to team projects](add-team-members-vs.md).
 
 *	Add code to Git or Team Foundation version control
 
-	*	Git with [Eclipse](connect-to-vsts.md#eclipse), 
+	*	Git with [Eclipse](https://java.visualstudio.com/Docs/tools/eclipse), 
 	[Xcode](../git/share-your-code-in-git-xcode.md), 
-	[Visual Studio](connect-to-vsts.md#vs), 
+	[Visual Studio](../connect/connect-team-projects.md), 
 	[Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio), 
 	[IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), 
 	or [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-	*	TFVC using [Eclipse](connect-to-vsts.md#eclipse), 
+	*	TFVC using [Eclipse](https://java.visualstudio.com/Docs/tools/eclipse), 
 	[Xcode](../tfvc/share-your-code-in-tfvc-xcode.md), 
-	[Visual Studio](connect-to-vsts.md#vs), or 
+	[Visual Studio](../connect/connect-team-projects.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 *	[Create a backlog](../work/backlogs/create-your-backlog.md) 

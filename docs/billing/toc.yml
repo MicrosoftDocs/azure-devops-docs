@@ -80,6 +80,8 @@
   items:
   - name: Billing signup
     href: faq-billing-setup.md
+  - name: Pay for more Basic users
+    href: faq-pay-for-basic-users.md
 - name: Resources
   items:
   - name: Integrate with other services

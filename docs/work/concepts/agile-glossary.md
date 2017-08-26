@@ -35,21 +35,31 @@ Your work tracking experience is managed and customized primarily through the ob
 <!--- SEE ALSO https://msdn.microsoft.com/en-us/library/ms243130(v=vs.100).aspx --> 
 
 
-### Replace team area path with a team field (On-premises TFS)  
-The default configuration for team projects associates each team with an area path. If your organization has several teams that work from a common backlog and across many product areas, this configuration might not fit how you want to organize your work. By adding a custom field to represent teams in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths.
 
-[Use team fields instead of area paths to support teams](../customize/use-team-fields-instead-area-paths.md) describes how to change the default configuration.
+<a id="field-reference">  </a>  
+## What is a field? How are field names used?  
 
-<!--- Add definitions for these 
-release 
-team 
+For descriptions and usage of each field defined for the core system processes&mdash;[Scrum, Agile, and CMMI system processes](../guidance/choose-process.md)&mdash;see [Work item field index](../guidance/work-item-field.md).  
 
---> 
+### Field names  
+A work item field name uniquely identifies each work item field. Make sure your field names fall within these guidelines:  
 
-## TBD - where do these concepts belong? 
+- Field names must be unique within the account/project collection  
+- Field names must be 128 or fewer Unicode characters  
+- Field names can't contain any leading or trailing spaces, nor two or more consecutive spaces  
+- Field names must contain at least one alphabetic character  
+- Field names can't contain the following characters: ```.,;'`:~\/\*|?"&%$!+=()[]{}<>```.   
+
+Because custom fields are defined for the account collection, you can't add a custom field to a process with the same field name that you add to another inherited process.  
+
+### Customization limits 
+When adding custom fields, note the following limits:  
+*   A maximum of 256 fields can be defined for each WIT  
+*   A maximum of 512 fields can be defined per process   
+
 
 <a id="change-position"> </a>  
-### Backlog position or stack rank order 
+## Backlog position or stack rank order 
 The sequence of items on the backlog page is determined according to where you have [added the items or moved the items on the page](../backlogs/create-your-backlog.md#move-items-priority-order). As you drag and drop items within the backlog list, a background process updates this field.
 
 You should refrain from using the bulk modify function to change the backlog priority of work items. While you can assign a value to the [Backlog Priority (Scrum)](../track/planning-ranking-priorities.md) or [Stack Rank (Agile and CMMI)](../track/planning-ranking-priorities.md) fields, you'll be assigning the same value to all items you've selected for bulk edit. These fields are used by the system to track the relative ranking of items on the product, feature, or epic backlogs.  
@@ -60,7 +70,7 @@ By default, the backlog order fields don't appear on the work item form.
 
 
 <a id="hidden-types"> </a> 
-### Hidden types category   
+## Hidden types category   
 You can use [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from github to quickly determine which WITs belong to the Hidden Types Category. 
 
 To learn more, see [Hidden Types Category](../reference/use-categories-to-group-work-item-types.md#hiddentypes).

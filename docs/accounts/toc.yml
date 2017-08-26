@@ -12,8 +12,6 @@
     href: create-account-with-personal-msa.md
   - name: Create your account with a work or school account
     href: create-account-with-work-school.md
-  - name: Connect to your account from tools
-    href: connect-to-vsts.md
   - name: "User hub: add users to your account"
     href: add-account-users-from-user-hub.md
   - name: Try extensions for free
@@ -128,6 +126,12 @@
     href: ../extend/index.md
 - name: Troubleshooting
   items:
+  - name: Create account
+    href: faq-create-account.md
+  - name: Add and delete account users
+    href: faq-add-delete-users.md
+  - name: Delete and restore VSTS account
+    href: faq-delete-restore-vsts-account.md
   - name: Access with Azure Active Directory
     href: faq-azure-access.md
 - name: Resources

@@ -121,16 +121,16 @@ add your code, work items, or more users.
 
 *	Add code to Git or Team Foundation version control
 
-	*	Git with [Eclipse](connect-to-vsts.md#eclipse), 
+	*	Git with [Eclipse](https://java.visualstudio.com/Docs/tools/eclipse), 
 	[Xcode](../git/share-your-code-in-git-xcode.md), 
 	[Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio), 
 	[IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), 
-	[Visual Studio](connect-to-vsts.md#vs), or 
+	[Visual Studio](../git/share-your-code-in-git-vs-2017.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-	*	TFVC using [Eclipse](connect-to-vsts.md#eclipse), 
+	*	TFVC using [Eclipse](https://java.visualstudio.com/Docs/tools/eclipse), 
 	[Xcode](../tfvc/share-your-code-in-tfvc-xcode.md), 
-	[Visual Studio](connect-to-vsts.md#vs), or 
+	[Visual Studio](../tfvc/use-visual-studio-git.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 *	[Create your backlog](../work/backlogs/create-your-backlog.md), 
@@ -138,6 +138,3 @@ add your code, work items, or more users.
 	or [customize your process](../work/process/customize-process.md)
 
 
-## Troubleshooting
-
-[Troubleshooting](faq-create-account.md)

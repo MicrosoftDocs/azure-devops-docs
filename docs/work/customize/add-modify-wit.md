@@ -215,7 +215,7 @@ What customizations can you make and still use the Configure Features Wizard to 
 
 You can add custom WITs and change the form layout. The [Configure Features Wizard](configure-features-after-upgrade.md) will update your team projects and you'll get access to the latest features.
 
-Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your team project. To learn about other customizations that you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](customize-work.md#before-you-customize).  
+Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your team project. To learn about other customizations that you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](on-premises-xml-process-model.md#before-you-customize).  
 
 ### Rename a WIT (On-premises XML) 
 

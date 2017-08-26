@@ -340,7 +340,7 @@ Enter **y** at the confirmation prompt to complete this step.
 ### Q: What customizations can I make and still use the Configure Features Wizard to update my team project after a TFS upgrade?  
  **A:** You can add custom fields, customize a pick list, and add rules to a field. The [Configure Features Wizard](../../customize/configure-features-after-upgrade.md) will update your team projects and you'll get access to the latest features.  
   
- Changing field attributes is not recommended. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../../customize/customize-work.md#before-you-customize).  
+ Changing field attributes is not recommended. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../../customize/on-premises-xml-process-model.md#before-you-customize).  
   
 ## Related notes 
  

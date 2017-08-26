@@ -142,32 +142,26 @@ add code, work items, or more users.
 	> as a benefit, learn [how to add your work or school account](../billing/link-msdn-subscription-to-organizational-account-vs.md) to your
 	> subscription so you can use your subscriber benefits in VSTS.
 
-#### Next steps 
+## Next steps 
 
-*	[Manage users and access](add-account-users-assign-access-levels.md) 
+*	[Manage users and access](add-account-users-assign-access-levels.md)
 
 *	Add code to Git or Team Foundation version control
 
-	*	Git with [Eclipse](connect-to-vsts.md#eclipse), 
+	*	Git with [Eclipse](https://java.visualstudio.com/Docs/tools/eclipse), 
 	[Xcode](../git/share-your-code-in-git-xcode.md), 
 	[Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio), 
 	[IntelliJ](http://java.visualstudio.com/Docs/tools/intelliJ), 
-	[Visual Studio](connect-to-vsts.md#vs), or 
+	[Visual Studio](../git/share-your-code-in-git-vs-2017.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-	*	TFVC using [Eclipse](connect-to-vsts.md#eclipse), 
+	*	TFVC using [Eclipse](https://java.visualstudio.com/Docs/tools/eclipse), 
 	[Xcode](../tfvc/share-your-code-in-tfvc-xcode.md), 
-	[Visual Studio](connect-to-vsts.md#vs), or 
+	[Visual Studio](../tfvc/use-visual-studio-git.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 *	[Create your backlog](../work/backlogs/create-your-backlog.md), 
 	[manage your process](../work/process/manage-process.md), 
-	or [customize your process](../work/process/customize-process.md) 
-
-*	[Manage access with Azure AD groups](manage-azure-active-directory-groups-vsts.md) 
-
-## Troubleshooting
-
-[Troubleshooting](faq-create-account.md)
+	or [customize your process](../work/process/customize-process.md)
 
 

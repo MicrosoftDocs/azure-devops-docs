@@ -22,6 +22,7 @@ Add a custom field, a custom work item type (WIT) or modify an existing WIT. The
 
 ## Concepts
 
+- [About areas and iterations](about-areas-iterations.md)  
 - [Inheritance process model](inheritance-process-model.md)  
 - [Hosted XML process model](hosted-xml-process-model.md)  
 - [On-premises XML process model](on-premises-xml-process-model.md)  
@@ -32,34 +33,34 @@ Add a custom field, a custom work item type (WIT) or modify an existing WIT. The
 Use the guidance provided in the following topics based on the process model or process template that you want to customize.  
 
 - **Inheritance process model**
-	- [Manage processes](../process/manage-process.md)  
-	- [Customize a process](../process/customize-process.md)  
+	- [Manage processes](/vsts/work/process/manage-process?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)  
+	- [Customize a process](/vsts/work/process/customize-process?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)  
 
 - **Hosted XML process model**
-	- [Customize a Hosted XML process](../import-process/customize-process.md)  
-    - [Import a process](../import-process/import-process.md)  
+	- [Customize a Hosted XML process](/vsts/work/import-process/customize-process?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )  
+    - [Import a process](/vsts/work/import-process/import-process?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)  
 
 - **On-premises XML process model**
     - [Add or modify a field](add-modify-field.md)
     - [Add or modify a work item type](add-modify-wit.md)
 
 - **Process templates**
-    - [Upload or download a process template](../guidance/manage-process-templates.md)
-    - [Customize a process template](../reference/process-templates/customize-process.md)  
+    - [Upload or download a process template](/vsts/work/guidance/manage-process-templates?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )
+    - [Customize a process template](/vsts/work/reference/process-templates/customize-process?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )  
 
 ## Reference  
 
-- [Changes made to process templates](../guidance/changes-to-process-templates.md) 
-- [Work item field index](../guidance/work-item-field.md)     
-- [Index to XML element reference](../reference/xml-element-reference.md)  
-- [All WITD XML elements reference](../reference/all-witd-xml-elements-reference.md)  
-- [All FIELD XML elements reference](../reference/all-field-xml-elements-reference.md)  
-- [All WORKFLOW XML elements reference](../reference/all-workflow-xml-elements-reference.md)  
-- [All FORM XML elements reference](../reference/all-form-xml-elements-reference.md)  
-- [WebLayout and Control elements](../reference/weblayout-xml-elements.md) 
-- [Categories XML element reference](../reference/categories-xml-element-reference.md)  
-- [Process configuration XML element reference](../reference/process-configuration-xml-element.md) 
-- [witadmin command line tool](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)   
+- [Changes made to process templates](/vsts/work/guidance/changes-to-process-templates?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json ) 
+- [Work item field index](/vsts/work/guidance/work-item-field?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )     
+- [Index to XML element reference](/vsts/work/reference/xml-element-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )  
+- [All WITD XML elements reference](/vsts/work/reference/all-witd-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )  
+- [All FIELD XML elements reference](/vsts/work/reference/all-field-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )  
+- [All WORKFLOW XML elements reference](/vsts/work/reference/all-workflow-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )  
+- [All FORM XML elements reference](/vsts/work/reference/all-form-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )  
+- [WebLayout and Control elements](/vsts/work/reference/weblayout-xml-elements?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json ) 
+- [Categories XML element reference](/vsts/work/reference/categories-xml-element-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )  
+- [Process configuration XML element reference](/vsts/work/reference/process-configuration-xml-element?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json ) 
+- [witadmin command line tool](/vsts/work/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )   
  
 ## Reference   
 - [Work items](/vsts/work/work-items/index)

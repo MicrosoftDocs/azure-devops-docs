@@ -63,6 +63,9 @@
     - name: Queries
       tocHref: /vsts/work/track/
       topicHref: /vsts/work/track/index
+    - name: Customization
+      tocHref: /vsts/work/customize/
+      topicHref: /vsts/work/customize/index
   - name: Analytics
     tocHref: /vsts/report/
     topicHref: /vsts/index#pivot=services&panel=analytics
@@ -108,9 +111,6 @@
     - name: "Scale & Configure Teams"
       tocHref: /vsts/work/scale/
       topicHref: /vsts/work/scale/index
-    - name: Work Item Customization
-      tocHref: /vsts/work/customize/
-      topicHref: /vsts/work/customize/index
     - name: Manage Extensions
       tocHref: /vsts/marketplace/
       topicHref: /vsts/marketplace/index

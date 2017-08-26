@@ -81,7 +81,7 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 
 
 >[!TIP]  
->If you're connecting to VSTS, see also [Connect to Visual Studio Team Services from Eclipse, Xcode, Visual Studio, and more](../accounts/connect-to-vsts.md). 
+>If you're connecting to VSTS, see also [Connect to Visual Studio Team Services from Eclipse, Xcode, Visual Studio, and more](../connect/connect-team-projects.md). 
 
 1.  If you haven't already, [download and install a version of Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs).
 

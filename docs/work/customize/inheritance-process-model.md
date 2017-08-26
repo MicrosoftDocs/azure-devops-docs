@@ -16,11 +16,6 @@ ms.date: 08/02/2017
 
 **VSTS**
 
-Use this sequence when you manage your VSTS customization through the Inherited process model. You belong to this phase when your Process user interface appears as shown under [Manage processes](../process/manage-process.md). 
-
-[![Create an inherited process](_img/customize-work-phase2-step1.png)](../process/manage-process.md#create-inherited-process)[![Customize the inherited process](_img/customize-work-phase2-step2.png)](../process/customize-process.md)[![Apply inherited process to team project(s)](_img/customize-work-phase2-step3.png)](../process/manage-process.md#migrate)![Refresh and verify changes](_img/customize-work-phase2-step4.png)  
-
-
 You can perform the following tasks with the Inheritance process model. 
 
 > [!div class="mx-tdBreakAll"]  
@@ -34,6 +29,14 @@ You can perform the following tasks with the Inheritance process model.
 > |----------|---------|   
 > |- [Add custom backlog levels](add-portfolio-backlogs.md)<br/>- [Add a custom WIT to a backlog](../process/customize-process-backlogs-boards.md)<br/>- [Show bugs on backlogs/boards](show-bugs-on-backlog.md)|- [Create & manage an inherited process](../process/manage-process.md)<br/>- [Customize a process](../process/customize-process.md) |
 
+
  
 >[!NOTE]  
 >With the Inheritance process model, you can't modify the pick-lists of pre-defined fields&mdash;such as [Activity](../track/query-numeric.md), [Automation Status](../track/build-test-integration.md), [Discipline](../track/query-numeric.md), [Priority](../track/planning-ranking-priorities.md), plus others.  
+
+
+Use this sequence when you manage your VSTS customization through the Inherited process model. You belong to this phase when your Process user interface appears as shown under [Manage processes](../process/manage-process.md). 
+
+[![Create an inherited process](_img/customize-work-phase2-step1.png)](../process/manage-process.md#create-inherited-process)[![Customize the inherited process](_img/customize-work-phase2-step2.png)](../process/customize-process.md)[![Apply inherited process to team project(s)](_img/customize-work-phase2-step3.png)](../process/manage-process.md#migrate)![Refresh and verify changes](_img/customize-work-phase2-step4.png)  
+
+

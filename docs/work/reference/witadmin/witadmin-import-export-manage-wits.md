@@ -145,7 +145,7 @@ witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
 ### Q: What customizations can I make and still use the Configure Features Wizard to update my team project after a TFS upgrade?  
  **A:** You can add custom WITs and change the form layout. The [Configure Features Wizard](../../customize/configure-features-after-upgrade.md) will update your team projects and you'll get access to the latest features.  
   
- Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your team project. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../../customize/customize-work.md#before-you-customize).  
+ Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your team project. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../../customize/on-premises-xml-process-model.md#before-you-customize).  
   
 <a name="color"></a> 
 ###  Q: How do I change the color associated with a WIT?  
