@@ -41,13 +41,14 @@ First, you need a **gradle.properties** file that contains a VSTS credential tok
 
 Navigate to `https://{yourAccount}.visualstudio.com/_details/security/tokens`, where `{yourAccount}` is the name of your VSTS account or project.
 
-[SCREENSHOT HERE]
 Click **Add**.
+![Add a personal access token](_img/add-pat.png)
 
 Give your new token a name and a duration. 
 
-[SCREENSHOT HERE]
 Select the **Packaging (read and write)** scope.
+
+![Select a token scope](_img/select-scope.png)
 
 The token will be a long alphanumeric string, like "lzitaoxppojf6smpl2cxdoxybepfxfetjvtkmcpw3o6u2smgebfa". Copy this string and store it securely. [DOUGE NOTE: Example of a best practice here?]
 
@@ -117,7 +118,18 @@ The gradle wrapper is created in the directory where you ran the above command. 
 
 `git push` an update that contains the wrapper (gradlew) from your local (clone) repo to origin. Team Build requires this file on the remote repo for your project.
 
-[TO CALVIN: EXPAND THIS -- NEEDS MORE DETAILS]
-Create a new build and select the "Gradle" template.  You can configure various gradle tasks to run on the agent.  Queue the build and it should work! 
+Go to the **Build and Release** hub for your project, and then select **Builds**.
+
+Select the **+ New Definition** button. Scroll down and select the **Gradle** template.
+
+![Select the Gradle template for a new Build task](_img/select-gradle-template.png)
+
+Select **Apply** to start configuring the Build task agent to use your Gradle wrapper.
+
+Now, select the **gradlew build** process. You can use the default settings to start.
+
+![Configure the Gradle template](_img/gradle-build-template.png)
+
+Here, you can configure various Gradle tasks to run on the agent.  Once you've configured the task agent, click **Save & queue** from the top menu and start building with your Gradle wrapper. You're done!
 
 

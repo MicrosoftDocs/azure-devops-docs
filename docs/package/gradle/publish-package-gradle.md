@@ -41,13 +41,14 @@ First, you need a **gradle.properties** file that contains a VSTS credential tok
 
 Navigate to `https://{yourAccount}.visualstudio.com/_details/security/tokens`, where `{yourAccount}` is the name of your VSTS account or project.
 
-[SCREENSHOT HERE]
 Click **Add**.
+![Add a personal access token](_img/add-pat.png)
 
 Give your new token a name and a duration. 
 
-[SCREENSHOT HERE]
 Select the **Packaging (read and write)** scope.
+
+![Select a token scope](_img/select-scope.png)
 
 The token will be a long alphanumeric string, like "lzitaoxppojf6smpl2cxdoxybepfxfetjvtkmcpw3o6u2smgebfa". Copy this string and store it securely. [DOUGE NOTE: Example of a best practice here?]
 
@@ -60,8 +61,6 @@ vstsMavenAccessToken=YOUR_TOKEN_HERE
 ```
 
 Where *YOUR_TOKEN_HERE* is the token string you created and saved previously. Save the file when you're done.
-
-[SCREENSHOT HERE]
 
 ## Configure build.gradle 
 
