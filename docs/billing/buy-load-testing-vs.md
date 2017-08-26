@@ -131,7 +131,7 @@ you can come back to the Azure classic portal.
 - [Build your app](../build-release/apps/index.md)
 - [Load test your app](../load-test/get-started-simple-cloud-load-test.md)  
 - [How to buy more pipeline capacity for builds and releases in VSTS](buy-more-build-vs.md)  
-- [Visual Studio Marketplace and billing Q&A](../marketplace/marketplace-billing-qa.md)  
+- [Marketplace support](../marketplace/marketplace-billing-qa.md)  
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

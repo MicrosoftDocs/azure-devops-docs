@@ -82,6 +82,10 @@
     href: faq-billing-setup.md
   - name: Pay for more Basic users
     href: faq-pay-for-basic-users.md
+  - name: Visual Studio subscriptions
+    href: faq-vs-subscriptions.md
+  - name: Azure billing
+    href: 
 - name: Resources
   items:
   - name: Integrate with other services

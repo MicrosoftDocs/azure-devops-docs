@@ -67,7 +67,7 @@ go to the Visual Studio subscriptions portal
 	<img alt="View subscriptions" src="_img/buy-vs-subscriptions/assign-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
 <a name="manage-subscriptions"></a>
-##  Manage purchased Visual Studio subscriptions as administrator
+##  Change the number of purchased subscriptions
 
 To view all Visual Studio subscriptions purchased 
 from the Visual Studio Marketplace and their assignments to users, 
@@ -83,17 +83,13 @@ and sign in with the identity used to purchase these subscriptions.
 *   To cancel these subscriptions, reduce the number of subscriptions to zero (0). 
 They won't renew at the end of the month.
 
-## View Visual Studio subscriptions assigned to you
-
-To view Visual Studio subscriptions assigned to you 
-specifically and your subscription benefits, 
-go to the Visual Studio subscriptions portal 
-(```https://my.visualstudio.com```).
-
-<img alt="Visual Studio subscriptions portal, Subscriptions" src="_img/buy-vs-subscriptions/view-assigned-subscription-list-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
-
-<img alt="Visual Studio subscriptions portal, Benefits" src="_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
 
 ## Marketplace and Billing Q&A
 
-Visit the [Marketplace and Billing Q&A](../marketplace-billing-qa.md) to find answers to multiple common questions around the Visual Studio Marketplace and Azure billing. 
+Visit [Marketplace support](../../marketplace/marketplace-billing-qa.md), 
+[Visual Studio subscriptions troubleshooting](../faq-vs-subscriptions.md), or 
+[Azure billing troubleshooting](../faq-azure-billing.md) to 
+find answers to multiple common questions around the Visual Studio Marketplace and Azure billing. 
+
+
+

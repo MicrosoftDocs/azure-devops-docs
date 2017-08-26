@@ -196,7 +196,7 @@ then update your number of paid pipelines.
 - [Concurrent build and release pipelines in Visual Studio Team Services](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
 - [Concurrent release pipelines in Team Foundation Server](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
 - [How to buy cloud-based load testing in VSTS](buy-load-testing-vs.md)  
-- [Visual Studio Marketplace and billing Q&A](../marketplace/marketplace-billing-qa.md)  
+- [Marketplace support](../marketplace/marketplace-billing-qa.md)  
 
 
 ## Q & A

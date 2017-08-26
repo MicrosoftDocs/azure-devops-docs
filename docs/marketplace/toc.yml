@@ -21,7 +21,9 @@
 - name: Troubleshooting
   items:
   - name: Getting and paying for extensions
-    href: faq-extensions.md  
+    href: faq-extensions.md
+  - name: Marketplace support
+    href: marketplace-billing-qa.md
 - name: Resources
   items:
   - name: How to buy HockeyApp

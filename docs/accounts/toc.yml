@@ -36,6 +36,8 @@
       href: recover-your-vsts-account.md
     - name: Sign in with different credentials
       href: ../connect/connect-team-projects.md#logindifferentcred
+    - name: Account preferences
+      href: account-preferences.md
   - name: Manage team projects
     items:
     - name: Create team project
@@ -153,8 +155,6 @@
       href: ../billing/change-number-paid-extension-users.md
     - name: How to buy build pipelines
       href: ../billing/buy-more-build-vs.md
-  - name: Account preferences
-    href: account-preferences.md
   - name: Migrate from TFS to Team Services Tutorial
     href: https://www.visualstudio.com/articles/migration-overview
   - name: Integrate with other services
