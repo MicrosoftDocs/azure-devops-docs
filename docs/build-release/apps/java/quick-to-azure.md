@@ -42,7 +42,7 @@ https://github.com/Adventworks/java-sample
 
 [!INCLUDE [temp](../_shared/set-up-ci-1.md)]
 
-In the right panel, search for `node`, select **Maven**, and then click **Apply**.
+In the right panel, search for `java`, select **Maven**, and then click **Apply**.
 
 [!INCLUDE [temp](../_shared/set-up-ci-2.md)]
 

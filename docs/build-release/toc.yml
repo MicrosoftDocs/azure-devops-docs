@@ -13,9 +13,9 @@
     - name: ASP.NET
       href: apps/aspnet/build-aspnet-4.md
     - name: Node.js
-      href: apps/nodejs/quick-to-azure.md
+      href: apps/nodejs/build.md
     - name: Java
-      href: apps/java/quick-to-azure.md
+      href: apps/java/build.md
   - name: Deploy your app
     items:
     - name: Azure web app

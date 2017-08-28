@@ -31,7 +31,7 @@ With your CI/CD processes in place, you'll push a change into your team's Git re
 
 ## Prerequisites
 
-[!INCLUDE [include](../build-release/_shared/ci-cd-prerequisites.md)]
+[!INCLUDE [include](../build-release/_shared/ci-cd-prerequisites-vsts.md)]
 * An Azure subscription. If you don't have an Azure subscription, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
 ## Import code for sample app into VSTS

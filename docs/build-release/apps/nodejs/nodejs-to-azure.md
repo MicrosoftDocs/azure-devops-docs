@@ -3,7 +3,7 @@ title: CI build Node.js app
 description: Set up a continuous integration (CI) build for your Node.js app in Visual Studio Team Services or Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: F0829366-2AC1-4344-9494-98CACEC38806
+ms.assetid: 
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016

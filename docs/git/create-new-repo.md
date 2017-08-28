@@ -1,5 +1,5 @@
 ---
-title: Create a new Git repo in your  project | VSTS & TFS
+title: Create a new Git repo in your project | VSTS & TFS
 description: Create a new Git repo in a Visual Studio Team Services or Team Foundation Server Project
 ms.assetid: 9c6fabfa-ae17-4e65-93a2-9e476f9f88ba
 ms.prod: vs-devops-alm
@@ -42,12 +42,12 @@ VSTS and TFS projects contain Git repositories, work items, builds, and releases
 
 To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](./tutorial/commits.md) and [branches](./tutorial/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
-0. In this example, you'll clone the repo is using Git command line tools:
+0. In this example, you'll clone the repo by using Git command line tools:
 
   - To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](set-up-credential-managers.md#windows)
   - To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linix](set-up-credential-managers.md#macos-and-linux)
 
-0. Select Clone in the upper-right corner of the **Code** window and copy the **Clone URL**.
+0. Select **Clone** in the upper-right corner of the **Code** window and copy the **Clone URL**.
 
   ![Retrieve the clone URL](_img/repo-mgmt/clone-git-repo.png)
 
@@ -97,29 +97,7 @@ In this step, we'll make a change to the files on your computer, commit the chan
 ## Next steps
 
 > [!div class="nextstepaction"]
-> New to Git repos? [Learn more](https://www.visualstudio.com/learn/set-up-a-git-repository/)
+> [New to Git repos? Learn more](https://www.visualstudio.com/learn/set-up-a-git-repository/)
 
 > [!div class="nextstepaction"]
-> [Invite others](../accounts/add-account-users-assign-access-levels.md) to collaborate with you in the repo
-
-> [!div class="nextstepaction"]
-> Learn more about [cloning](./tutorial/clone.md) the repo to your computer
-
-> [!div class="nextstepaction"]
-> Learn about the general [Git workflow](./tutorial/gitworkflow.md) that most developers use when writing code and sharing it with the team
-
-> [!div class="nextstepaction"]
-> Learn how to use [branches](./tutorial/branches.md) to manage and isolate your code
-
-> [!div class="nextstepaction"]
-> Review code and merge it into your default branch with [pull requests](./tutorial/pullrequest.md)
-
-> [!div class="nextstepaction"]
-> All done with the sample repo you created in this article? You can remove unused Git repos from your project when they are no longer needed. If you want to save the repo (and its [commit history](tutorial/history.md)) but no longer need to work with it, consider [renaming](repo-rename.md) the repo and [locking](lock-branches.md) its default branch instead of removing it.
-> 
-> You cannot remove a repo if it is the only Git repo in the project. If you need to delete the only Git repo in a project, create a new Git repo first, then delete the repo.
-> 
-> To delete a repo, see [Delete a Git repo from your project](delete-existing-repo.md).
-
-
-
+> [Checkout more steps in the Git workflow](gitquickstart.md)

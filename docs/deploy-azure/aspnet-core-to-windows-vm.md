@@ -31,7 +31,7 @@ Your code changes automatically appear on your site:
 
 ## Prerequisites
 
-[!INCLUDE [include](../build-release/_shared/ci-cd-prerequisites.md)]
+[!INCLUDE [include](../build-release/_shared/ci-cd-prerequisites-vsts.md)]
 * Have a Windows virtual machine that has a default web site running in IIS. See [Create a Windows virtual machine with the Azure CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-cli) for instructions to create a virtual machine in Azure, to install IIS, and to obtain its `publicIpAddress`.
 
 ## Prepare the Windows VM

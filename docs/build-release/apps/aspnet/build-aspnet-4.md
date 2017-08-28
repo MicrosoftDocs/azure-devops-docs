@@ -17,9 +17,9 @@ ASP.NET is a mature web platform that provides all the services that you require
 
 ## Prerequisites
 
-[!INCLUDE [include](../../_shared/ci-cd-prerequisites.md)]
+[!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-* While the simplest way to exercise this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../actions/agents/v2-windows.md) for your team project, and that you have Visual Studio 2017 installed on the agent machine.
+[!INCLUDE [include](../../_shared/ci-cd-prerequisites-tfs.md)]
 
 ## Import sample app code
 
