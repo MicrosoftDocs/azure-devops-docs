@@ -15,7 +15,7 @@
   - name: Restrict access to resources
     href: ../accounts/restrict-access-tfs.md?toc=/vsts/tfs-server/toc.json
   - name: Configure an SMTP server
-    href: ./admin/setup-customize-alerts.md
+    href: ./admin/setup-customize-alerts.md?toc=/vsts/tfs-server/toc.json
 - name: Tutorials
   items:
   - name: Restore a TFS deployment to new hardware
