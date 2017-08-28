@@ -422,7 +422,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_exploratory_testing.svg" alt="" />
+                                                        <img src="_img/index/i_exploratory-testing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -704,7 +704,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/logo_powerbi.svg" alt="" />
+                                                        <img src="_img/index/logo_power-bi.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -1041,9 +1041,9 @@ ms.date: 07/26/2017
                         <a href="#ecosystem-all"></a>
                         <ul id="ecosystem-all" class="cardsL cols cols4">
                             <li>
-                                <div class="button">
-                                    <a href="#">
-                                        <div>Marketplace    &#x2192;</div>            
+                                <div class="button" style="float:right;">
+                                    <a href="#" style="text-decoration: none;text-transform:inherit;>
+                                        <div style="padding: 18px 15px;font-size:1.8rem;">Marketplace    &gt;</div>            
                                     </a>
                                 </div>
                                 <div class="container intro">
