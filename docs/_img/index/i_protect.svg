@@ -1,0 +1,40 @@
+<svg id="ICONS-64x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1, .cls-5 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        stroke: #556a8a;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #e5e5e5;
+      }
+
+      .cls-4 {
+        fill: #2bc7f4;
+      }
+
+      .cls-5 {
+        stroke: #2bc7f4;
+      }
+    </style>
+  </defs>
+  <title>i_protect</title>
+  <rect class="cls-1" x="18" y="2" width="27" height="36" rx="12" ry="12"/>
+  <rect class="cls-2" x="10" y="24" width="45" height="36" rx="2" ry="2"/>
+  <path class="cls-3" d="M55,25.5v30L24.25,24.76,24,24H53.5C54.6,24,55,24.4,55,25.5Z"/>
+  <rect class="cls-1" x="10" y="24" width="45" height="36" rx="2" ry="2"/>
+  <circle class="cls-4" cx="45" cy="33" r="5"/>
+  <circle class="cls-4" cx="43.09" cy="51.15" r="5"/>
+  <circle class="cls-4" cx="19" cy="42" r="5"/>
+  <polyline class="cls-5" points="45 52 19 42 45 33"/>
+</svg>

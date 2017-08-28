@@ -1,0 +1,16 @@
+<svg id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #06373d;
+      }
+    </style>
+  </defs>
+  <title>logo_zendesk</title>
+  <g>
+    <polygon class="cls-1" points="34.19 44.58 34.19 9 62.15 9 34.19 44.58"/>
+    <polygon class="cls-1" points="30.96 19.42 30.96 55 3 55 30.96 19.42"/>
+  </g>
+  <path class="cls-1" d="M63,55c0-.17,0-.33,0-.5a14.5,14.5,0,0,0-29,0c0,.17,0,.33,0,.5Z"/>
+  <path class="cls-1" d="M31,9c0,.17,0,.33,0,.5a14.5,14.5,0,0,1-29,0c0-.17,0-.33,0-.5Z"/>
+</svg>

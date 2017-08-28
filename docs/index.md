@@ -21,7 +21,7 @@ ms.date: 07/26/2017
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="/media/common/placeholder.svg" alt="" />
+                                        <img src="/media/common/i_get-started.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -57,7 +57,7 @@ ms.date: 07/26/2017
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="/media/common/placeholder.svg" alt="" />
+                                        <img src="/media/common/i_road-map.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -155,16 +155,16 @@ ms.date: 07/26/2017
                                                 <h3>Resources</h3>
                                                 <ul class="noBullet">
                                                     <li>
-                                                        <a class="barLink" href="/vsts/marketplace/overview"><img src="/media/common/placeholder.svg" alt="" />Marketplace</a>
+                                                        <a class="barLink" href="/vsts/marketplace/overview"><img src="_img/index/team-services-marketplace.svg" alt="" />Marketplace</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/learn-git/"><img src="/media/common/placeholder.svg" alt="" />Learn about Git</a>
+                                                        <a class="barLink" href="https://www.visualstudio.com/learn-git/"><img src="_img/index/team-services-git.svg" alt="" />Learn about Git</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/devops/"><img src="/media/common/placeholder.svg" alt="" />Learn about DevOps</a>
+                                                        <a class="barLink" href="https://www.visualstudio.com/devops/"><img src="_img/index/team-services-devops.svg" alt="" />Learn about DevOps</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/agile/"><img src="/media/common/placeholder.svg" alt="" />Learn about Agile</a>
+                                                        <a class="barLink" href="https://www.visualstudio.com/agile/"><img src="_img/index/team-services-agile.svg" alt="" />Learn about Agile</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -403,7 +403,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/i_unit-testing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -422,7 +422,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/i_exploratory_testing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -441,7 +441,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/i_load-testing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -503,7 +503,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/i_search.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -522,7 +522,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/i_pull-request.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -541,7 +541,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_code-quality.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -685,7 +685,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/i_dashboard.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -704,7 +704,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/logo_powerbi.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -723,7 +723,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/logo_odata.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -766,7 +766,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/i_account-management.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -785,7 +785,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_tools.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -804,7 +804,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/i_billing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -842,7 +842,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/team-services-marketplace.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -861,7 +861,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_protect.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -880,7 +880,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_policy.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -923,7 +923,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/i_service-hooks.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -942,7 +942,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/i_extensions.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -961,7 +961,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/logo_REST.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -980,7 +980,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/logo_NET.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -999,7 +999,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/logo_sharepoint.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -1018,7 +1018,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/logo_project-server.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -1041,6 +1041,11 @@ ms.date: 07/26/2017
                         <a href="#ecosystem-all"></a>
                         <ul id="ecosystem-all" class="cardsL cols cols4">
                             <li>
+                                <div class="button">
+                                    <a href="#">
+                                        <div>Marketplace    &#x2192;</div>            
+                                    </a>
+                                </div>
                                 <div class="container intro">
                                     <h1>Get Extensions</h1>
                                     <p>Integrate your Visual Studio Team Services with popular extensions like Slack or Jenkins</p>
@@ -1058,34 +1063,13 @@ ms.date: 07/26/2017
                                             <div class="cardText">
                                                 <ul class="noBullet">
                                                     <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization"><img src="/media/common/placeholder.svg" alt="" />Work item visualizer</a>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization"><img src="_img/index/logo-work-item-visualizer.svg" alt="" />Work item visualizer</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-slack"><img src="/media/common/placeholder.svg" alt="" />Slack</a>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-slack"><img src="_img/index/logo-slack.svg" alt="" />Slack</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=Berichthaus.TfsTimetracker"><img src="/media/common/placeholder.svg" alt="" />Timetracker</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardText">
-                                                <ul class="noBullet">
-                                                    <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards"><img src="/media/common/placeholder.svg" alt="" />Agile cards</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins"><img src="/media/common/placeholder.svg" alt="" />Jenkins</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-bamboo"><img src="/media/common/placeholder.svg" alt="" />Bamboo</a>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=Berichthaus.TfsTimetracker"><img src="_img/index/logo-timetracker.svg" alt="" />Timetracker</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1100,13 +1084,13 @@ ms.date: 07/26/2017
                                             <div class="cardText">
                                                 <ul class="noBullet">
                                                     <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search"><img src="/media/common/placeholder.svg" alt="" />Code Search</a>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards"><img src="_img/index/logo_agile-cards.svg" alt="" />Agile cards</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web"><img src="/media/common/placeholder.svg" alt="" />Test &amp; Feedback</a>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins"><img src="_img/index/logo_jenkins.svg" alt="" />Jenkins</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-zendesk"><img src="/media/common/placeholder.svg" alt="" />ZenDesk</a>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-bamboo"><img src="_img/index/logo_bamboo.svg" alt="" />Bamboo</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1121,13 +1105,34 @@ ms.date: 07/26/2017
                                             <div class="cardText">
                                                 <ul class="noBullet">
                                                     <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-trello"><img src="/media/common/placeholder.svg" alt="" />Trello</a>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search"><img src="_img/index/logo_code-search.svg" alt="" />Code Search</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice"><img src="/media/common/placeholder.svg" alt="" />UserVoice</a>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web"><img src="_img/index/logo_test-feedback.svg" alt="" />Test &amp; Feedback</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks"><img src="/media/common/placeholder.svg" alt="" />Octopus Deploy</a>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-zendesk"><img src="_img/index/logo_zendesk.svg" alt="" />ZenDesk</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-trello"><img src="_img/index/logo_trello.svg" alt="" />Trello</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice"><img src="_img/index/logo-uservoice.svg" alt="" />UserVoice</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks"><img src="_img/index/logo_octopus_deploy.svg" alt="" />Octopus Deploy</a>
                                                     </li>
                                                 </ul>
                                             </div>

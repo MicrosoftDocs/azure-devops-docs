@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e5e5e5;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #556a8a;
+      }
+    </style>
+  </defs>
+  <title>i_scrum</title>
+  <g id="ICONS-64x">
+    <path class="cls-1" d="M31.5,8.13A26.5,26.5,0,1,0,58,34.63,26.5,26.5,0,0,0,31.5,8.13Zm-.5,42a16,16,0,1,1,16-16A16,16,0,0,1,31,50.13Z"/>
+    <g>
+      <path class="cls-2" d="M35.53,8.43a26.51,26.51,0,1,1-6-.23"/>
+      <polygon class="cls-3" points="24.59 16.44 23.21 15.29 28.88 8.47 21.66 3.31 22.7 1.84 31.5 8.13 24.59 16.44"/>
+    </g>
+    <rect class="cls-4" y="0.13" width="64" height="64"/>
+  </g>
+</svg>
