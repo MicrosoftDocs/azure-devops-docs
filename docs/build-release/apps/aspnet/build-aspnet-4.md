@@ -11,20 +11,19 @@ ms.date: 02/10/2017
 
 # Build your ASP.NET 4 app
 
-**VSTS | TFS 2017 Update 2 | [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx)**
+**VSTS | TFS 2017 Update 2**
 
-ASP.NET is a mature web platform that provides all the services that you require to build enterprise-class server-based web applications using .NET on Windows. Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) process to automatically build your ASP.NET web app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process. 
-## Prerequisites 
+ASP.NET is a mature web platform that provides all the services that you require to build enterprise-class server-based web applications using .NET on Windows. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your ASP.NET app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process.
+
+## Prerequisites
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites.md)]
 
-## Open your team project
-
-[!INCLUDE [include](../../_shared/open-team-project.md)]
+* While the simplest way to exercise this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../actions/agents/v2-windows.md) for your team project, and that you have Visual Studio 2017 installed on the agent machine.
 
 ## Import sample app code
 
-[!INCLUDE [include](_shared/import-code-aspnet-4-vsts.md)]
+[!INCLUDE [include](_shared/import-code-aspnet-4.md)]
 
 ## Set up continuous integration
 
@@ -38,7 +37,7 @@ ASP.NET is a mature web platform that provides all the services that you require
 
  You are taken to the **Build & Release** hub in VSTS and asked to **Choose a template**.
 
-1. In the right panel, click **ASP.NET (PREVIEW)**, and then click **Apply**.
+1. In the right panel, click **ASP.NET**, and then click **Apply**.
 
  You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time check in code.
 
@@ -46,13 +45,17 @@ ASP.NET is a mature web platform that provides all the services that you require
 
  * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
 
- * **TFS 2017 Update 2:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+ * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
 1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
 
-A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens. Wait for the build to complete and succeed before proceeding to the next section.
+1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
+
+## View build summary
+
+[!INCLUDE [include](../_shared/view-build-summary.md)]
 
 ## Next steps
 
