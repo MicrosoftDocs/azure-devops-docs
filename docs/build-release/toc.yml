@@ -15,7 +15,7 @@
     - name: Node.js
       href: apps/nodejs/build.md
     - name: Java
-      href: apps/java/build.md
+      href: apps/java/build-maven.md
   - name: Deploy your app
     items:
     - name: Azure web app
