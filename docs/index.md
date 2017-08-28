@@ -378,7 +378,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/i_test.svg" alt="" />
+                                                        <img src="_img/index/i_continuous-testing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -584,7 +584,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/i_portal.svg" alt="" />
+                                                        <img src="_img/index/i_backlog.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -604,7 +604,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/i_sync.svg" alt="" />
+                                                        <img src="_img/index/i_scrum.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -623,7 +623,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/i_road-map.svg" alt="" />
+                                                        <img src="_img/index/i_kanban.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -642,7 +642,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/i_code-automate.svg" alt="" />
+                                                        <img src="_img/index/i_queries.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -661,7 +661,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/i_architecture.svg" alt="" />
+                                                        <img src="_img/index/i_delivery.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -842,7 +842,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/team-services-marketplace.svg" alt="" />
+                                                        <img src="_img/index/i_extend.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
