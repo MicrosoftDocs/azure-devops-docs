@@ -13,7 +13,7 @@ ms.date: 05/23/2017
 
 **VSTS | TFS 2017 Update 2 | [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx)**
 
-[ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications. Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) process to automatically build your ASP.NET Core web app whenver your team pushes or checks in code. In this tutorial you learn how to define your CI process. 
+[ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications. Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) process to automatically build your ASP.NET Core web app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process. 
 
 ## Prerequisites 
 
@@ -63,14 +63,4 @@ A new build is started. You'll see a link to the new build on the top of the pag
 
 ## Next steps
 
-You've just put your own CI process in place to automatically build and validate whatever code is checked in by your team. You can also automatically deploy your app. To learn more, see one of these topics:
-
-* [CD to a Windows VM](../cd/deploy-webdeploy-iis-deploygroups.md)
-
-* [CD to Azure App Services](../cd/deploy-webdeploy-webapps.md)
-
-You can also modify this build definition to meet the needs of your team. To learn more see one of these topics:
-
-* [CI builds for Git in VSTS](../../actions/ci-build-git.md)
-
-* [Extend CI/CD](../../actions/extend-release-management.md)
+[!INCLUDE [include](../_shared/ci-web-app-next-steps.md)]

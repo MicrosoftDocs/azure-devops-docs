@@ -11,62 +11,49 @@ ms.date: 02/10/2017
 
 # Build your ASP.NET 4 app
 
-[!INCLUDE [temp](../../_shared/version.md)]
+**VSTS | TFS 2017 Update 2 | [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx)**
 
-Here we'll show you how to define your continuous integration (CI) process for your ASP.NET 4 app.
+ASP.NET is a mature web platform that provides all the services that you require to build enterprise-class server-based web applications using .NET on Windows. Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) process to automatically build your ASP.NET web app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process. 
+## Prerequisites 
 
-## Get set up
+[!INCLUDE [include](../../_shared/ci-cd-prerequisites.md)]
 
-For the instructions in this topic, you need an ASP.NET 4 project in Visual Studio.
+## Open your team project
 
-> [!TIP]
-> If you don't yet have an app but want to try this out, then see the [Q&A below](#new_solution).
+[!INCLUDE [include](../../_shared/open-team-project.md)]
 
-## Define your CI build process
+## Import sample app code
 
-### Create the build definition
+[!INCLUDE [include](_shared/import-code-aspnet-4-vsts.md)]
 
-<ol>
-    [!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
+## Set up continuous integration
 
-    <li>Select the **ASP.NET (PREVIEW)** template.</li>
+[!INCLUDE [include](../../_shared/ci-quickstart-intro.md)]
 
+[//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-    <li>As the repository source, select the team project, repository, and branch.</li>
-</ol>
+1. On the **Files** tab of the **Code** hub, click **Set up build**.
 
-### Enable continuous integration (CI)
+ ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
-On the Triggers tab, enable **continuous integration** (CI). This tells the system to queue a build whenever someone on your team commits or checks in new code.
+ You are taken to the **Build & Release** hub in VSTS and asked to **Choose a template**.
 
-## Queue and test the build
+1. In the right panel, click **ASP.NET (PREVIEW)**, and then click **Apply**.
 
-Save the build definition and queue a new build by selecting the **Queue new build** command. Once the build is done, click **Artifacts** and then **Explore** to see the zip file produced by the build. This is the web deploy package that your release definition will consume to deploy your app.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time check in code.
 
-[!INCLUDE [include](_shared/deploy-asp-web-app.md)]
+1. For the **Default agent queue**:
 
-## Q&A
+ * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
 
-<!-- BEGINSECTION class="md-qanda" -->
+ * **TFS 2017 Update 2:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 
-<h3 id="new_solution">How do I create an ASP.NET 4 solution?</h3>
+1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
-0. In Visual Studio, [connect to your team project](../../../connect/connect-team-projects.md#visual-studio).
+1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
 
-0. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
+A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens. Wait for the build to complete and succeed before proceeding to the next section.
 
-0. Select the **Web** templates section, and then choose the **ASP.NET Web Application (.NET Framework)** template.
+## Next steps
 
-0. Select **MVC** from the template list.
-
-0. Click **Change Authentication**, select **No Authentication**, and click **OK**.
-
-0. [Commit and push (Git)](../../../git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../tfvc/share-your-code-in-tfvc-vs.md) your code.
-
-### I got a file not found error message. How do I fix it?
-
-All solution files must be checked into the server to run a build. One known cause of missing files is in cases where you populate an empty repo by creating a new project in Visual Studio 2015 Update 3. We recommend that you update your [.gitignore file](../../../git/tutorial/ignore-files.md) with the latest copy from [GitHub: VisualStudio.gitignore](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore).
-
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
-
-<!-- ENDSECTION -->
+[!INCLUDE [include](../_shared/ci-web-app-next-steps.md)]
