@@ -13,7 +13,7 @@
   - name: Create repo - Visual Studio
     href: share-your-code-in-git-vs-2017.md
   - name: Create repo - IntelliJ
-    href: http://java.visualstudio.com/Docs/tools/intelliJ
+    href: create-repo-intellij.md
   - name: Create repo - Xcode
     href: share-your-code-in-git-xcode.md
   - name: Create repo - Eclipse

@@ -15,7 +15,7 @@ ms.date: 05/12/2017
 
 **VSTS | TFS 2017 | TFS 2015 | Visual Studio 2017, 2015, and 2013**
 
-Whether your software project is large or small, using version control as soon as possible is a good idea. Team Services supports two types of version control: [Git](../git/gitquickstart-vs2017.md)
+Whether your software project is large or small, using version control as soon as possible is a good idea. Team Services supports two types of version control: [Git](../git/gitquickstart.md)
 and [Team Foundation Version Control](./overview.md) (TFVC).
  
 <a name="tfvc_or_git_summary"></a>
