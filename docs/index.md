@@ -1042,7 +1042,7 @@ ms.date: 07/26/2017
                         <ul id="ecosystem-all" class="cardsL cols cols4">
                             <li>
                                 <div class="button" style="float:right;">
-                                    <a href="#" style="text-decoration: none;text-transform:inherit;>
+                                    <a href="#" style="text-decoration: none;text-transform:inherit;">
                                         <div style="padding: 18px 15px;font-size:1.8rem;">Marketplace    &gt;</div>            
                                     </a>
                                 </div>
@@ -1132,7 +1132,7 @@ ms.date: 07/26/2017
                                                         <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice"><img src="_img/index/logo-uservoice.svg" alt="" />UserVoice</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks"><img src="_img/index/logo_octopus_deploy.svg" alt="" />Octopus Deploy</a>
+                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks"><img src="_img/index/logo_octopus-deploy.svg" alt="" />Octopus Deploy</a>
                                                     </li>
                                                 </ul>
                                             </div>
