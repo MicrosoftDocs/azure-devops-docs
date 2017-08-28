@@ -3,12 +3,6 @@
   items:
   - name: Backlogs, boards, and plans
     href: backlogs-boards-plans.md
-  - name: Agile project management
-    href: agile-project-management.md
-  - name: Change access levels
-    href: connect/change-access-levels.md
-  - name: Stakeholder access
-    href: connect/work-as-a-stakeholder.md
 - name: Backlogs and work items
   href: backlogs/create-your-backlog.md
   items:
@@ -80,8 +74,6 @@
     href: kanban/kanban-basics.md
   - name: Features & epics
     href: kanban/kanban-epics-features-stories.md
-  - name: Filter a Kanban board
-    href: kanban/filter-kanban-board.md
   - name: Add task checklists
     href: kanban/add-task-checklists.md
   - name: Add, run, and update inline tests
@@ -220,8 +212,6 @@
 - name: Customize work tracking
   href: customize/customize-work.md
   items:
-  - name: Area and iteration paths
-    href: customize/modify-areas-iterations.md
   - name: Data fields
     href: customize/add-modify-field.md
   - name: Work item types
