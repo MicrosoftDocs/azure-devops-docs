@@ -1,29 +1,36 @@
 ---
-title: Continuous integration for ASP.NET Core applications
-description: Define a continuous integration (CI) build for your an ASP.NET Core app in Visual Studio Team Services or Microsoft Team Foundation Server (TFS)
+title: CI build for a Node.js app
+description: Define a continuous integration (CI) build process for your Node.js app in Visual Studio Team Services or Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
+ms.topic: get-started-article
+ms.assetid: F0829366-2AC1-4344-9494-98CACEC38806
 ms.manager: douge
 ms.author: alewis
-ms.date: 05/23/2017
+ms.date: 08/28/2017
 ---
 
-# Build your ASP.NET Core app
+# Build your Node.js app
 
 **VSTS | TFS 2017 Update 2**
 
-[ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your ASP.NET Core app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process.
+Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) process to automatically build your Node.js web app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process. 
 
-## Prerequisites
+## Prerequisites 
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-tfs.md)]
 
+## Open your team project
+
+[!INCLUDE [include](../../_shared/open-team-project.md)]
+
 ## Import sample app code
 
-[!INCLUDE [include](_shared/import-code-aspnet-core.md)]
+[!INCLUDE [include](../_shared/import-code-quickstart-intro.md)]
+
+[!INCLUDE [include](_shared/import-code.md)]
 
 ## Set up continuous integration
 
@@ -31,19 +38,15 @@ ms.date: 05/23/2017
 
 [//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-[//]: # (TODO: [!INCLUDE [include](_shared/create-aspnet-core-build-team-services.md)
-
-[//]: # (TODO: [!INCLUDE [include](_shared/aspnet-core-build-tasks.md)
-
 1. On the **Files** tab of the **Code** hub, click **Set up build**.
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
  You are taken to the **Build & Release** hub and asked to **Choose a template**.
 
-1. In the right panel, click **ASP.NET Core**, and then click **Apply**.
+1. In the right panel, search for `node`, select **NodeJS with Gulp**, and then click **Apply**.
 
- ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
+ ![apply node.js gulp template](_img/apply-nodejs-gulp-template.png)
 
  You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time check in code.
 

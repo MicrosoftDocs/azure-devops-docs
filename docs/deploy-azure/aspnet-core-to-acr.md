@@ -29,7 +29,7 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 
 ## Prerequisites
 
-[!INCLUDE [include](../build-release/_shared/ci-cd-prerequisites.md)]
+[!INCLUDE [include](../build-release/_shared/ci-cd-prerequisites-vsts.md)]
 * [Visual Studio 2017](https://www.visualstudio.com/downloads/)    
 * [Continuous Delivery Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio)
 
