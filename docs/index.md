@@ -1042,7 +1042,7 @@ ms.date: 07/26/2017
                         <ul id="ecosystem-all" class="cardsL cols cols4">
                             <li>
                                 <div class="button" style="float:right;">
-                                    <a href="#" style="text-decoration: none;text-transform:inherit;">
+                                    <a href="https://marketplace.visualstudio.com" style="text-decoration: none;text-transform:inherit;">
                                         <div style="padding: 18px 15px;font-size:1.8rem;">Marketplace    &gt;</div>
                                     </a>
                                 </div>
