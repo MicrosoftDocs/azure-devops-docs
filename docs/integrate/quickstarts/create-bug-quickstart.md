@@ -23,9 +23,13 @@ To work on this Quickstart, you'll need the following prerequisites:
 * A Personal Access Token, [find out how to create one](../get-started/authentication/PATs.md)
 * A C# development environment, you can use [Visual Studio](https://www.visualstudio.com/vs/)
 
+## Create a C# project in Visual Studio
 
-## Content  
+To learn about C# programming within Visual Studio, find the [Visual Studio C# programming documentation](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/)
+
+## C# code content
 There are a few things happening in the code sample below:
+
 0. Authentication
     0. Creating credentials using your PAT
     0. Creating a VSSConnection with your VSTS URI and the credentials
@@ -35,7 +39,7 @@ There are a few things happening in the code sample below:
     0. Convert that array to a serialized json object
     0. Send that serialized json object to the REST endpoint
 
-## C# Code
+## C# code snippet
 ```c#
 using System;
 using System.Collections.Generic;
@@ -144,4 +148,4 @@ Contracts used: [WorkItem](../../extend/reference/client/api/TFS/WorkItemTrackin
 ## Next Steps
 
 * Check out another Quickstart: [Get a list of work items using queries](./work-item-quickstart.md)
-* Explore the [REST API](../get-started/rest/samples.md) or [.NET client library](../get-started/client-libraries/samples.md) samples
+* Explore the [integrate samples](../get-started/client-libraries/samples.md) samples

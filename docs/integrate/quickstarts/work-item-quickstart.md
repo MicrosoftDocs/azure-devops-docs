@@ -20,7 +20,11 @@ To work on this Quickstart, you'll need the following prerequisites:
 * A Personal Access Token, [find out how to create one](../get-started/authentication/PATs.md)
 * A C# development environment, you can use [Visual Studio](https://www.visualstudio.com/vs/)
 
-## Content
+## Create a C# project in Visual Studio
+
+To learn about C# programming within Visual Studio, find the [Visual Studio C# programming documentation](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/)
+
+## C# code content
 There are a few things happening in the code sample below:
 
 1. Authenticating
@@ -31,7 +35,7 @@ There are a few things happening in the code sample below:
     0. Get the results for that query
     0. Get each of the work items by ID
 
-## C# Code
+## C# code snippet
 ```cs
 using System;
 using System.Collections.Generic;
@@ -56,7 +60,7 @@ public class ExecuteQuery
     readonly string _project;
 
     /// <summary>
-    /// Constructor. Manaully set values to match your account.
+    /// Constructor. Manually set values to match your account.
     /// </summary>
     public ExecuteQuery()
     {
@@ -66,7 +70,7 @@ public class ExecuteQuery
     }
 
     /// <summary>
-    /// Execute a WIQL query to reutnr a list of bugs using the .NET client library
+    /// Execute a WIQL query to return a list of bugs using the .NET client library
     /// </summary>
     /// <returns>List of Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models.WorkItem</returns>
     public List<WorkItem> RunGetBugsQueryUsingClientLib()
@@ -91,13 +95,13 @@ public class ExecuteQuery
         //create instance of work item tracking http client
         using (WorkItemTrackingHttpClient workItemTrackingHttpClient = new WorkItemTrackingHttpClient(uri, credentials))
         {
-            //execute the query to get the list of work items in teh results
+            //execute the query to get the list of work items in the results
             WorkItemQueryResult workItemQueryResult = workItemTrackingHttpClient.QueryByWiqlAsync(wiql).Result;
 
             //some error handling                
             if (workItemQueryResult.WorkItems.Count() != 0)
             {
-                //need to get the list of our work item id's and put them into an array
+                //need to get the list of our work item ids and put them into an array
                 List<int> list = new List<int>();
                 foreach (var item in workItemQueryResult.WorkItems)
                 {
@@ -111,7 +115,7 @@ public class ExecuteQuery
                 fields[1] = "System.Title";
                 fields[2] = "System.State";
 
-                //get work items for the id's found in query
+                //get work items for the ids found in query
                 var workItems = workItemTrackingHttpClient.GetWorkItemsAsync(arr, fields, workItemQueryResult.AsOf).Result;
 
                 Console.WriteLine("Query Results: {0} items found", workItems.Count);
@@ -131,4 +135,7 @@ public class ExecuteQuery
 }
 ```
 
-## Next steps
+## Next Steps
+
+* Check out another Quickstart: [Create a bug](./create-bug-quickstart.md)
+* Explore the [integrate samples](../get-started/client-libraries/samples.md) samples
