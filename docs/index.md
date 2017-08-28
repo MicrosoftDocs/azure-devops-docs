@@ -39,7 +39,7 @@ ms.date: 07/26/2017
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="/media/common/placeholder.svg" alt="" />
+                                        <img src="/media/common/i_deploy.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -277,7 +277,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/logo-git-mark.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -296,7 +296,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/logo_vs-team-services.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -465,7 +465,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_alert.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -484,7 +484,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_reference.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -742,7 +742,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_generic-database.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -823,7 +823,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="_img/index/i_configure-teams.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -899,7 +899,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_config-tools.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -1043,7 +1043,7 @@ ms.date: 07/26/2017
                             <li>
                                 <div class="button" style="float:right;">
                                     <a href="#" style="text-decoration: none;text-transform:inherit;">
-                                        <div style="padding: 18px 15px;font-size:1.8rem;">Marketplace    &gt;</div>            
+                                        <div style="padding: 18px 15px;font-size:1.8rem;">Marketplace    &gt;</div>
                                     </a>
                                 </div>
                                 <div class="container intro">
