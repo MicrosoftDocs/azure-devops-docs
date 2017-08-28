@@ -17,7 +17,7 @@ ms.date: 08/04/2016
 When you first launch [Visual Studio 2015](https://www.visualstudio.com/products/vs-2015-product-editions), 
 you can sign in and connect to [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs).
 
-If you have already gone through Visual Studio sign in, or you are using Visual Studio 2017, then [learn how](../git/gitquickstart-vs2017.md) to connect to 
+If you have already gone through Visual Studio sign in, or you are using Visual Studio 2017, then [learn how](../git/gitquickstart.md) to connect to 
 your VSTS from the Team Explorer window.
 
 Once connected, you can store or share code in free, unlimited, private, 
