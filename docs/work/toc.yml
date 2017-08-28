@@ -252,8 +252,6 @@
       href: process/customize-process-workflow.md
     - name: Customize a work item type
       href: process/customize-process-wit.md
-    - name: Add a custom rule to a work item type
-      href: process/custom-rules.md
     - name: Add a custom control
       href: process/custom-controls-process.md
     - name: Customize backlogs and boards
@@ -285,7 +283,6 @@
       href: reference/add-or-change-how-project-fields-map-to-tfs-fields.md
     - name: Customize the Project field mapping
       href: reference/customize-project-field-mapping-file.md
-    - name: [Map Project fields](reference/map-microsoft-project-fields-to-tf-fields.md) - duplicate info, with info on plug-in
     - name: Project field mappings
       href: reference/field-mappings-in-microsoft-project.md
     - name: Upload/download the Project mapping file
