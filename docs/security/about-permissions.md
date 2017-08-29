@@ -174,7 +174,7 @@ You use the [TFS web portal administration context](../accounts/add-users.md) to
 ## SQL Server reports (TFS) 
 
 For information about how to set permissions in Reporting Services,
-see [Add administrators to TFS](../accounts/add-administrator-tfs.md).
+see [Add administrators to TFS](../tfs-server/add-administrator-tfs.md).
 
 
 ## Tools used to set permissions
@@ -207,7 +207,7 @@ You use the [TFS web portal administration context](../accounts/add-users.md) to
 ### SharePoint integration    
 
 For information about how to set permissions for SharePoint Products integrated with TFS,
-see [Add administrators to TFS](../accounts/add-administrator-tfs.md).
+see [Add administrators to TFS](../tfs-server/add-administrator-tfs.md).
 
 For more information, see [Determine permission levels and groups in SharePoint 2013](https://technet.microsoft.com/en-us/library/cc262690.aspx).
 
@@ -215,7 +215,7 @@ For more information, see [Determine permission levels and groups in SharePoint 
 ## SQL Server reports (TFS) 
 
 For information about how to set permissions in Reporting Services,
-see [Add administrators to TFS](../accounts/add-administrator-tfs.md).
+see [Add administrators to TFS](../tfs-server/add-administrator-tfs.md).
 
 
 <!-- TODO: Cover how to set permissions for Reporting Services and SharePoint as mainline sections. -->  

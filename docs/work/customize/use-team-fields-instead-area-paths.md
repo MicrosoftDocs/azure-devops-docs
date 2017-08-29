@@ -39,7 +39,7 @@ When you customize your team project to support team fields, the Team field tab 
 <a id="globallist">  </a>  
 ### 1. Create a global list to manage teams 
 
-1.  If you aren't a member of the **Project Administrators** group, [get those permissions](../../accounts/add-administrator-tfs.md).
+1.  If you aren't a member of the **Project Administrators** group, [get those permissions](../../tfs-server/add-administrator-tfs.md).
 
 2.  Open a Command Prompt window where you've installed a version of Visual Studio (you can [download Visual Studio Community](https://www.visualstudio.com/downloads/) for free) and enter:
 

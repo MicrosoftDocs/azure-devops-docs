@@ -59,7 +59,7 @@ For an overview of the three system processes, see [Choose a process](../guidanc
 ##1. Export the files you need
 <ol>
 
-<li>If you aren't the account owner or a member of the Project Collection Administrator's group, [get added as an administrator](../../accounts/add-administrator-tfs.md). You need these permissions to customize the team project.</li>   
+<li>If you aren't the account owner or a member of the Project Collection Administrator's group, [get added as an administrator](../../tfs-server/add-administrator-tfs.md). You need these permissions to customize the team project.</li>   
 <li>Get the files you need: 
 <ul>
 <li>For **Hosted XML**: [Export the process you want to update](../import-process/import-process.md)<br/>

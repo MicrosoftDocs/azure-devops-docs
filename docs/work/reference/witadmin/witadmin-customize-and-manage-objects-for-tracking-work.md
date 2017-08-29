@@ -28,7 +28,7 @@ As the following illustration shows, you manage categories and types of and work
 
 [!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]  
 
-For most commands, you must be a member of the Project Administrators or Project Collection Administrators groups. For more information, see [Add an administrator](../../../accounts/add-administrator-tfs.md).  
+For most commands, you must be a member of the Project Administrators or Project Collection Administrators groups. For more information, see [Add an administrator](../../../tfs-server/add-administrator-tfs.md).  
 
 <a name="global"></a> 
 ## Global parameters  

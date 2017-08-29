@@ -17,7 +17,7 @@ For feedback requests and alerts to work, you must configure an SMTP server for 
 
 ## Configure an SMTP server for TFS
 
-1.  If you aren't an administrator of TFS, [get those permissions](../../accounts/add-administrator-tfs.md).
+1.  If you aren't an administrator of TFS, [get those permissions](../add-administrator-tfs.md).
 
 2.  Open the Team Foundation Administration Console from the **Start** menu. Or, at a command prompt, type **TFSMgmt.exe** (located in *Drive*:\\%programfiles%\\Microsoft Team Foundation Server 12.0\\Tools).
 

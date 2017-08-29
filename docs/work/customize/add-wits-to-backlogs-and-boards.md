@@ -46,7 +46,7 @@ To add a WIT to track as requirements, tasks, or as bugs perform the correspondi
 
 You'll make your changes to your process definition files, and then import that process to either update existing team projects or use the process to create a team project. 
 
-- If you aren't the account owner or a member of the Project Collection Administrator's group, [get added](../../accounts/add-administrator-tfs.md). 
+- If you aren't the account owner or a member of the Project Collection Administrator's group, [get added](../../tfs-server/add-administrator-tfs.md). 
 - [Export the process you want to update](../import-process/import-process.md) 
 -  If you're new to customizing a process, familiarize yourself with the following resources:
 	- [Customize a process for import to Team Services](../import-process/customize-process.md)
@@ -55,7 +55,7 @@ You'll make your changes to your process definition files, and then import that 
 
 ###On-premises XML process model customization sequence 
 You'll first export your work tracking definition files, update them, and then import them to your team project.  
--  If you aren't a member of the Project Administrator or Project Collection Administrator's group, [get added](../../accounts/add-administrator-tfs.md). 
+-  If you aren't a member of the Project Administrator or Project Collection Administrator's group, [get added](../../tfs-server/add-administrator-tfs.md). 
 -  Update your team project to [enable the latest features](configure-features-after-upgrade.md)
 -  [Export the following objects from your team project](#import-export): 
 	- WIT you want to add to backlogs and boards (if you haven't created it, [do that now](https://msdn.microsoft.com/library/ms404855.aspx))

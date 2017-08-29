@@ -335,7 +335,7 @@ Other related topics or resources:
 - (VSTS)  To add or customize a field by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to Allow    
 - (TFS) To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
   
-To get added as an administrator, [Add administrators](../../accounts/add-administrator-tfs.md).
+To get added as an administrator, [Add administrators](../../tfs-server/add-administrator-tfs.md).
 
 <a id="field-reference"></a>  
 
@@ -454,7 +454,7 @@ When you remove a field from a specific type of work item, that field is not rem
 For more information, see [Manage work item fields](../reference/witadmin/manage-work-item-fields.md).  
 
 <!---
-1.  If you don't have project administrator permissions for your team project, [get them](../../accounts/add-administrator-tfs.md).  
+1.  If you don't have project administrator permissions for your team project, [get them](../../tfs-server/add-administrator-tfs.md).  
 
 2.  Open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:
 

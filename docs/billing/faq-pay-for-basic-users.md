@@ -54,7 +54,7 @@ you must make the change before the last day of the month.
 
 <a name="no-accounts"></a>
 
-[!INCLUDE [no-accounts](../marketplace/_shared/qa-no-accounts.md)]
+[!INCLUDE [no-accounts](_shared/qa-no-accounts.md)]
 
 [!INCLUDE [azure-bill-larger](../_shared/qa-azure-bill-larger.md)]
 

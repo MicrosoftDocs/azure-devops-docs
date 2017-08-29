@@ -40,7 +40,7 @@ you can [request extensions](#request) instead.
 
 <a name="no-accounts"></a>
 
-[!INCLUDE [no-accounts](_shared/qa-no-accounts.md)]
+[!INCLUDE [no-accounts](../billing/_shared/qa-no-accounts.md)]
 
 #### Q: Why can't I install extensions for Team Services?
 

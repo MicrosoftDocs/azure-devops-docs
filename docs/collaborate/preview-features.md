@@ -71,7 +71,7 @@ If you have administrative privileges, you'll see a menu from which to choose wh
 When you enable a feature at the account level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose.
 
 >[!TIP]  
->If you don't see the user/account menu option, then you aren't an account administrator. To get added as one, see [Add administrators to VSTS and TFS](../accounts/add-administrator-tfs.md).  
+>If you don't see the user/account menu option, then you aren't an account administrator. To get added as one, see [Add administrators to VSTS and TFS](../tfs-server/add-administrator-tfs.md).  
 
 <img align="top" src="_img/preview-features-admin-s117.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC;" />  <img align="top" src="_img/preview-features-admin-s117-2.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC">  
 

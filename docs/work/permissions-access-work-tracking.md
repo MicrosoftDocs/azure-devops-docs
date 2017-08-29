@@ -310,7 +310,7 @@ Stakeholder access supports business owners and analysts and other team members 
 
 Stakeholder access provides free access to VSTS and to on-premises TFS team projects. Stakeholders don't have to have a client access license (CAL). This view restricts functionality so that your organization complies with the end-user license agreement for Team Foundation Server. For more information, see [Visual Studio licensing white paper](http://go.microsoft.com/fwlink/?LinkId=255102).  
 
-Only account owners or members of the [Team Foundation Server Administration group](../accounts/add-administrator-tfs.md) can add accounts to get Stakeholder access. For information on adding stakeholder accounts:  
+Only account owners or members of the [Team Foundation Server Administration group](../tfs-server/add-administrator-tfs.md) can add accounts to get Stakeholder access. For information on adding stakeholder accounts:  
 
    **VSTS:**&#160;&#160;[Add users in Visual Studio Team Services](../accounts/add-account-users-assign-access-levels.md)  
    **On-premises TFS:**&#160;&#160;[Change access levels](../security/change-access-levels.md)  
