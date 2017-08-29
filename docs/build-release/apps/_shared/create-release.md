@@ -14,7 +14,10 @@ Your CD release process picks up the artifacts published by your CI build and th
 
      ![Creating a new release definition in the Releases page](_img/release-from-release-page.png)
 
-1. Select the **Azure App Service Deployment** template and choose **Apply**.
+1. If you are deploying a Node app, select the **Deploy Node.js App to Azure App Service** template. 
+   Otherwise, select the **Azure App Service Deployment** template. Then choose **Apply**.
+
+   > The only difference between these templates is that Node template configures the task to generate a **web.config** file containing a parameter that starts the **iisnode** service.
 
 1. If you created your new release definition from a build summary, check that the build definition and artifact
    is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new release definition from

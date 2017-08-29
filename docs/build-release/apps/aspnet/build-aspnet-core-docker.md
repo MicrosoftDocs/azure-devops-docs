@@ -54,4 +54,7 @@ ms.date: 05/23/2017
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Deploy your Docker-enabled ASP.NET Core app to a VM](../cd/deploy-docker-vm.md)
+> [Deploy your Docker-enabled ASP.NET Core app to a Windows VM](../cd/deploy-docker-windowsvm.md)
+
+> [!div class="nextstepaction"]
+> [Deploy your Docker-enabled ASP.NET Core app to a Linux VM](../cd/deploy-docker-linuxvm.md)
