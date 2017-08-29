@@ -2,9 +2,9 @@ VSTS and TFS are full-featured Git servers for hosting your team's source code. 
 
 1. Open your team project in your web browser:
 
- * VSTS: `https://{your-account}.visualstudio.com/DefaultCollection/{your-team-project}`
+ * **VSTS:** `https://{your-account}.visualstudio.com/DefaultCollection/{your-team-project}`
 
- * TFS: `http://{your-server}:8080/tfs/DefaultCollection/{your-team-project}`
+ * **TFS:** `http://{your-server}:8080/tfs/DefaultCollection/{your-team-project}`
 
  [The TFS URL doesn't work for me. How can I get the correct URL?](../../../../security/websitesettings.md)
 

@@ -17,7 +17,7 @@
       topicHref: /vsts/tfvc/overview
   - name: "Continuous Integration & Delivery"
     tocHref: /vsts/build-release/
-    topicHref: /vsts/index#pivot=services&panel=code
+    topicHref: /vsts/index#pivot=services&panel=delivery
     items:
     - name: Deploy to Azure
       tocHref: /vsts/deploy-azure/

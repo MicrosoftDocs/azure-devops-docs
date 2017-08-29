@@ -14,21 +14,15 @@ ms.date: 08/28/2017
 
 **VSTS | TFS 2017 Update 2**
 
-Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) process to automatically build your Node.js web app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process. 
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your Node.js web app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process.
 
-## Prerequisites 
+## Prerequisites
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-tfs.md)]
 
-## Open your team project
-
-[!INCLUDE [include](../../_shared/open-team-project.md)]
-
 ## Import sample app code
-
-[!INCLUDE [include](../_shared/import-code-quickstart-intro.md)]
 
 [!INCLUDE [include](_shared/import-code.md)]
 
@@ -55,6 +49,8 @@ Visual Studio Team Services (VSTS) provides a highly customizable continuous int
  * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+
+1. Select the **Run gulp** task from the tasks. On the right side, you see the parameters for the task. Under the section JUnit Test Results, select the option to Publish to TFS/Team Services.
 
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
