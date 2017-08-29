@@ -38,7 +38,7 @@ TFS uses, if TFS is configured to use SharePoint.
     System Administrators group, and (if your deployment uses
     SharePoint Products) a member of the Farm Administrators group, [get
     those permissions
-    now](../../../accounts/add-administrator-tfs.md).
+    now](../../add-administrator-tfs.md).
 
     In addition, the service account for TFS (TFSService) must have SQL
     Server Perform Back Up and Create Maintenance Plan permissions set

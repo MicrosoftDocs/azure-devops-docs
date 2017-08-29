@@ -119,7 +119,7 @@ A:  You can start an extension trial only once per account.
 
 <a name="no-accounts"></a>
 
-[!INCLUDE [no-accounts](../marketplace/_shared/qa-no-accounts.md)]
+[!INCLUDE [no-accounts](_shared/qa-no-accounts.md)]
 
 <a name="no-permissions"></a>
 ####Q:		Why can't I start an extension trial for the selected VSTS account?

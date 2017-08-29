@@ -258,7 +258,7 @@ or [VSTS Support](https://www.visualstudio.com/team-services/support).
 
 <a name="no-accounts"></a>
 
-[!INCLUDE [no-accounts](../marketplace/_shared/qa-no-accounts.md)]
+[!INCLUDE [no-accounts](_shared/qa-no-accounts.md)]
 
 <a name="WhyNoVSOAccount"></a>
 

@@ -26,7 +26,7 @@ Learn how to build your app.
 <td>[<img src="_img/index/logo_net.svg" alt="" width="36px" height="36px"><br/>.NET Desktop](apps/windows/dot-net.md)</td>
 </tr>
 <tr valign="middle" align="center">
-<td>[<img src="_img/index/logo_nodejs.svg" alt="" width="36px" height="36px"><br/>Node.js](apps/nodejs/build.md)</td>
+<td>[<img src="_img/index/logo_nodejs.svg" alt="" width="36px" height="36px"><br/>Node.js](apps/nodejs/build-gulp.md)</td>
 <td>[<img src="_img/index/logo_java.svg" alt="" width="36px" height="36px"><br/>Java](apps/java/build-maven.md)</td>
 <td>[<img src="_img/index/logo_cpp.png" alt="" width="36px" height="36px"><br/>C++](apps/windows/cpp.md)</td>
 </tr>

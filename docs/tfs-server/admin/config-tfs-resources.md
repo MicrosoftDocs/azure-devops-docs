@@ -31,7 +31,7 @@ through the administration console are indicated with this image: ![Team Foundat
 
 * **Application tier**
 
-  * [Add administration console users](../../accounts/add-administrator-tfs.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)
+  * [Add administration console users](../add-administrator-tfs.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)
 
   * [Configure an SMTP server to support alerts and feedback requests](setup-customize-alerts.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)
 
@@ -102,7 +102,7 @@ you want to manage.
 
 1.  If you're not a local administrator on the server where the
     console is running and an administrator in TFS, [get those
-    permissions](../../accounts/add-administrator-tfs.md).
+    permissions](../add-administrator-tfs.md).
 
 2.  To open the console:
 

@@ -46,7 +46,7 @@ To verify permissions:
 
 -   Log on to the server and make sure that users, groups, and service accounts are configured with the permissions that they need to operate.
 
-    For more information, see [Add users to team projects](../../../accounts/add-users.md), [Set administrator permissions for team project collections](../../../accounts/add-administrator-tfs.md), [Set administrator permissions for Team Foundation Server](../../../accounts/add-administrator-tfs.md), and [Service accounts and dependencies in Team Foundation Server](../service-accounts-dependencies-tfs.md).
+    For more information, see [Add users to team projects](../../../accounts/add-users.md), [Set administrator permissions for team project collections](../../add-administrator-tfs.md), [Set administrator permissions for Team Foundation Server](../../add-administrator-tfs.md), and [Service accounts and dependencies in Team Foundation Server](../service-accounts-dependencies-tfs.md).
 
 
 ## Refresh the work item cache

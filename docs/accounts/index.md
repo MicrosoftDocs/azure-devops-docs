@@ -68,5 +68,5 @@ Use this index to setup and manage your account and configure key settings to su
 
 * [Add Stakeholder users](../security/change-access-levels.md)
 
-* [Add users to an administrator role](add-administrator-tfs.md)
+* [Add users to an administrator role](add-administrator-project-collection.md)
 

@@ -83,7 +83,7 @@ For a simplified view of the default permissions granted to built-in groups and 
  <li style="margin-bottom:2px">[Manage users and access](add-account-users-assign-access-levels.md) </li>
  <li style="margin-bottom:2px">[Add users to team projects](add-team-members-vs.md) </li>
 <li style="margin-bottom:2px">[Make a user a team admin](../work/scale/manage-team-assets.md )</li>
-<li style="margin-bottom:2px">[Add users to an administrator role](add-administrator-tfs.md)</li>
+<li style="margin-bottom:2px">[Add users to an administrator role](add-administrator-project-collection.md)</li>
 </ul>
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">TFS</p>
 <ul style="padding-left:30px;font-size:90%">
@@ -91,7 +91,7 @@ For a simplified view of the default permissions granted to built-in groups and 
 <li style="margin-bottom:2px">[Manage access levels](../security/change-access-levels.md) </li>
 <li style="margin-bottom:2px">[Add Stakeholder users](../security/change-access-levels.md)</li>
 <li style="margin-bottom:2px">[Make a user a team admin](../work/scale/manage-team-assets.md )</li>
-<li style="margin-bottom:2px">[Add users to an administrator role](add-administrator-tfs.md)</li>
+<li style="margin-bottom:2px">[Add users to an administrator role](add-administrator-project-collection.md)</li>
 </ul>
 </div>
 

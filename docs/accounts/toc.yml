@@ -136,6 +136,8 @@
     href: faq-delete-restore-vsts-account.md
   - name: Access with Azure Active Directory
     href: faq-azure-access.md
+  - name: Add administrators
+    href: faq-add-administrators.md
 - name: Resources
   items:
   - name: "Billing and extensions"

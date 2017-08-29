@@ -27,7 +27,7 @@ You set permissions from the web portal. By default, only members of the Project
 
 ## Set permissions on a new query folder
 
-1. If you're not a member of the project administrators group, [get added](../../accounts/add-administrator-tfs.md), or have your **Edit project-level information** permission set to **Allow**.
+1. If you're not a member of the project administrators group, [get added](../../tfs-server/add-administrator-tfs.md), or have your **Edit project-level information** permission set to **Allow**.
 
 2. Create a folder.  
 

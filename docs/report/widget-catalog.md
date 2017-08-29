@@ -101,7 +101,7 @@ From the configuration dialog, select a shared query and [specify the chart type
 ![Cumulative flow diagram widget](_img/widget-cfd-chart.png)  
 
 > [!NOTE]  
-> **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../accounts/add-administrator-tfs.md) to add extensions. 
+> **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../tfs-server/add-administrator-tfs.md) to add extensions. 
  
 
 Displays the cumulative flow of backlog items based on the time frame, team, backlog level and swimlane you select. 
@@ -118,7 +118,7 @@ Hover over each color within the chart to see the count of items for a particula
 ![Cumulative flow diagram widget](_img/widget-cycle-time.png)  
 
 > [!NOTE]  
-> **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../accounts/add-administrator-tfs.md) to add extensions. 
+> **Feature availability:** This widget is available for VSTS.  To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../tfs-server/add-administrator-tfs.md) to add extensions. 
  
 
 Displays the cycle time of work items closed in a specified timeframe for a single team and backlog level. The cycle time of a work item is defined as the time taken to close a work item after work on it has started. 
@@ -133,7 +133,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 ![Lead time widget](_img/widget-lead-time.png)  
 
 > [!NOTE]  
-> **Feature availability:** This widget is available for VSTS. To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../accounts/add-administrator-tfs.md) to add extensions. 
+> **Feature availability:** This widget is available for VSTS. To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../tfs-server/add-administrator-tfs.md) to add extensions. 
  
 
 Displays the lead time of work items closed in a specified timeframe for a single team and backlog level. The lead time of a work item is defined as the time taken to close a work item after it was created. 
@@ -242,7 +242,7 @@ Teams [plan their sprints by defining sprints](../work/scale/set-team-defaults.m
 ![Sprint velocity widget](_img/widget-velocity.png)
 
 > [!NOTE]  
-> **Feature availability:** This widget is available for VSTS. To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../accounts/add-administrator-tfs.md) to add extensions.
+> **Feature availability:** This widget is available for VSTS. To add it to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../tfs-server/add-administrator-tfs.md) to add extensions.
 
 
 The velocity widget tracks a team's capacity to deliver work sprint after sprint. You configure the widget by selecting a team, a work item type, an aggregation field, and the number of sprints. The widget takes advantage of the Analytics service. You can track the velocity for a single team, not multiple teams.    

@@ -35,7 +35,7 @@ In this topic you'll learn:
 ## Move from one team to two teams 
 As your team grows, you can easily move from one team to two. In this example, we add two feature teams, Email and Voice, and maintain the Fabrikam Fiber team with visibility across each of these two teams.  
 
-If you're not a project administrator, [get added as one](../../accounts/add-administrator-tfs.md). Only project administrators can add teams.  
+If you're not a project administrator, [get added as one](../../tfs-server/add-administrator-tfs.md). Only project administrators can add teams.  
 
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 

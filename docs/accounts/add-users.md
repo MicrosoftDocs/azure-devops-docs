@@ -102,8 +102,8 @@ Save or open the file.
 #### Q: How do I add someone as an administrator?
 
 A: You'll need to add that user to groups
-at the [project-collection level](add-administrator-tfs.md#project-collection)
-or at the [server-level](add-administrator-tfs.md).
+at the [project-collection level](add-administrator-project-collection.md)
+or at the [server-level for TFS](../tfs-server/add-administrator-tfs.md).
 
 #### Q: Can I restrict access to a team project or to functional areas within a team project?
 

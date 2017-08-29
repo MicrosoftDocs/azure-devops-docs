@@ -38,7 +38,7 @@ like [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-t
 If you don't have a team project yet, 
 [create your team project first](../connect/connect-team-projects.md).
 To add members to team projects, you'll need 
-[project administrator](add-administrator-tfs.md), 
+[project administrator](add-administrator-team-project.md), 
 [project collection administrator, or account owner](#find-pca-owner) permissions.
 
 ## Add members to your team project

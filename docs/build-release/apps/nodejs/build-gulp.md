@@ -1,6 +1,6 @@
 ---
-title: CI build for a Node.js app
-description: Define a continuous integration (CI) build process for your Node.js app in Visual Studio Team Services or Team Foundation Server
+title: CI build for a Node.js app with Gulp
+description: Define a continuous integration (CI) build process for your Node.js app with Gulp in Visual Studio Team Services or Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.topic: get-started-article
@@ -10,7 +10,7 @@ ms.author: alewis
 ms.date: 08/28/2017
 ---
 
-# Build your Node.js app
+# Build your Node.js app with Gulp
 
 **VSTS | TFS 2017 Update 2**
 

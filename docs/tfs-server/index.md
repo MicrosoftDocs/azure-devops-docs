@@ -41,7 +41,7 @@ Once you've installed TFS, you're ready to create a team project, add users, gra
 
 ## How-to guides
 
-- [Add administrators](../accounts/add-administrator-tfs.md)
+- [Add administrators](add-administrator-tfs.md)
 - [Change permission levels](admin/change-permission-levels.md)
 - [Buy access to TFS or Test hub](../billing/buy-access-tfs-test-hub.md)
  
