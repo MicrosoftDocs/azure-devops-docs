@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Build and Deploy your Java app to an Azure web app
 
-**[VSTS](quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../release/previous-version/release-management-overview.md)**
+**[VSTS](quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../../release/previous-version/release-management-overview.md)**
 
 In just a few steps you can build and deploy your Java app to Azure. This works from both the Visual Studio Team Services service and your on-premises Team Foundation Server.
 
@@ -34,7 +34,7 @@ Upload your code to Visual Studio Team Services or your on-premises Team Foundat
 ## Create the definition
 
 <ol>
-[!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
+[!INCLUDE [include](../../../_shared/begin-create-build-definition.md)]
  
 <li>Click Empty to start with an empty definition.</li>
 </ol>
@@ -57,7 +57,7 @@ On the Build tab, add these steps:
 <table>
    <tr>
         
-      <td>![Build: Maven](../../tasks/build/_img/maven.png) **Build: Maven**</td>
+      <td>![Build: Maven](../../../tasks/build/_img/maven.png) **Build: Maven**</td>
       <td>
 <p>Build the app.</p>
 <ul>
@@ -67,7 +67,7 @@ On the Build tab, add these steps:
 </tr>
    
         <tr>
-            <td>![Utility: cURL Upload Files](../../tasks/utility/_img/curl-upload-files.png) **Utility: cURL Upload Files**</td>
+            <td>![Utility: cURL Upload Files](../../../tasks/utility/_img/curl-upload-files.png) **Utility: cURL Upload Files**</td>
             <td>
 <p>Copy the .war file to Azure.</p>
 <ul>
@@ -80,7 +80,7 @@ On the Build tab, add these steps:
 </td>
         </tr>
         <tr>
-            <td>![Utility: Copy and Publish Build Artifacts](../../tasks/utility/_img/publish-build-artifacts.png) **Build: Publish Build Artifacts**</td>
+            <td>![Utility: Copy and Publish Build Artifacts](../../../tasks/utility/_img/publish-build-artifacts.png) **Build: Publish Build Artifacts**</td>
             <td>
 <p>(Optional) Drop some of the build outputs, such as the .war file as we do in the example below.</p>
 <ul>
@@ -93,7 +93,7 @@ On the Build tab, add these steps:
         </tr>
 </table>
 
-[!INCLUDE [temp](../../_shared/definition-finish-and-test.md)] 
+[!INCLUDE [temp](../../../_shared/definition-finish-and-test.md)] 
 
 After a successful build, check your site: ```http://{web_app_name}.azurewebsites.net/{war_file_name}```
 
@@ -123,13 +123,13 @@ A: Yes.
 
 ### How do I continually deliver my app and manage my releases?
 
-[Learn about Release Management](../../concepts/definitions/release/index.md)
+[Learn about Release Management](../../../concepts/definitions/release/index.md)
 
 
-[!INCLUDE [temp](../../_shared/qa-definition-common-all-platforms.md)]
+[!INCLUDE [temp](../../../_shared/qa-definition-common-all-platforms.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->

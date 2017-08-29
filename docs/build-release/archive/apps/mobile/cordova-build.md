@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Build Apache Cordova apps
 
-[!INCLUDE [temp](../../_shared/version.md)]
+[!INCLUDE [temp](../../../_shared/version.md)]
 
 > **Notice**: Apple's WWDR certificate expired on Feb 14th and as a result you may experience signing failures if you have not updated the cert and **removed the old one**. Follow the steps outlined by Apple under [What should I do if Xcode doesn’t recognize my distribution certificate?](https://developer.apple.com/support/certificates/expiration/) to resolve the problem. Note that this also affects development certs despite the title.
 
@@ -44,7 +44,7 @@ We'll assume for the purposes of this tutorial that you want to build a Cordova 
 
 0. Create a build definition. 
 
- ![New build definition](../../_shared/_img/create-new-build-definition.png)
+ ![New build definition](../../../_shared/_img/create-new-build-definition.png)
  
 0. Click Empty to start with an empty definition.
 
@@ -67,13 +67,13 @@ Detailed instructions on creating build definitions in TFS 2015 can be found in 
         <li>**Platform**: android</li>
 		    <li>**Configuration**: debug or release. You can also use a variable from the Variables tab to allow you to select at build time.</li>
 		    <li>**Cordova Version**: Version of the Cordova CLI you want to use to build. If you're using Tools for Apache Cordova you can leave this blank and the correct version will be used based on the contents of taco.json. Otherwise, if not specified, it uses the version specified by the CORDOVA_DEFAULT_VERSION environment variable (like in VSTS) and falls back to the latest version if no environment variable is set.</li>
-		    <li>**Android**: You may use these values to specify signing information for this build. See **[securing your signing keys](../../apps/mobile/secure-certs.md)** for details.</li>
+		    <li>**Android**: You may use these values to specify signing information for this build. See **[securing your signing keys](../../../apps/mobile/secure-certs.md)** for details.</li>
 		    <li>**Advanced &gt; Working Directory**: Location of the Cordova project itself inside your repository.</li>
 		  </ul>
       </td>
    </tr>
    <tr>
-    <td>![Utility: Copy and Publish Build Artifacts](../../tasks/utility/_img/copy-and-publish-build-artifacts.png)<br />**Utility: Copy and Publish Build Artifacts**</td>
+    <td>![Utility: Copy and Publish Build Artifacts](../../../tasks/utility/_img/copy-and-publish-build-artifacts.png)<br />**Utility: Copy and Publish Build Artifacts**</td>
 	  <td>
 	  	<p>Settings:</p>
 	  	<ul>  	   
@@ -111,7 +111,7 @@ Now let's create a version of this same build definition to target iOS that will
 
 2. Change the **Platform** value for the **Cordova Build** step to **ios** 
 
-3. Update the **iOS** category for the **Cordova Build** step. See **[securing your signing keys](../../apps/mobile/secure-certs.md)** for details on the appropriate options to set for your situation. Be sure to check out the "P12 Certificate File" and "Provisioning Profile File" options that can really streamline setup! The Xcode Developer Path option also allows you to specify the path of a different version of Xcode than you have installed locally.  (Ex: /Applicaitons/Xcode6.4.app/Contents/Developer will use Xcode 6.4 in MacinCloud.)
+3. Update the **iOS** category for the **Cordova Build** step. See **[securing your signing keys](../../../apps/mobile/secure-certs.md)** for details on the appropriate options to set for your situation. Be sure to check out the "P12 Certificate File" and "Provisioning Profile File" options that can really streamline setup! The Xcode Developer Path option also allows you to specify the path of a different version of Xcode than you have installed locally.  (Ex: /Applicaitons/Xcode6.4.app/Contents/Developer will use Xcode 6.4 in MacinCloud.)
 
 	![Windows Build Definition - npm](_img/cordova-build/tfs2015-2.png)
 
@@ -141,7 +141,7 @@ To add TypeScript compilation into your build definition using Gulp, follow thes
 
 <table>
    <tr>
-      <td>![Package: npm](../../tasks/package/_img/npm.png)<br />**Package: npm** (or the older npm install)</td>
+      <td>![Package: npm](../../../tasks/package/_img/npm.png)<br />**Package: npm** (or the older npm install)</td>
       <td>
 	  	<p>Settings:</p>
 	  	<ul>
@@ -153,7 +153,7 @@ To add TypeScript compilation into your build definition using Gulp, follow thes
       </td>
    </tr>
    <tr>
-    <td>![Build: Gulp](../../tasks/build/_img/gulp.png)<br />**Build: Gulp**</td>
+    <td>![Build: Gulp](../../../tasks/build/_img/gulp.png)<br />**Build: Gulp**</td>
 	  <td>
 	  	<p>Settings:</p>
 	  	<ul>  	   
@@ -173,7 +173,7 @@ Next, we will configure the definition to publish your test results to VSTS or T
 
 <table>
    <tr>
-    <td>![Build: Gulp](../../tasks/build/_img/gulp.png)<br />**Build: Gulp**</td>
+    <td>![Build: Gulp](../../../tasks/build/_img/gulp.png)<br />**Build: Gulp**</td>
 	  <td>
       <p>Update the **Gulp Task(s)** option in the Gulp step above to reference your "test" task. A value of "scripts test" will first compile TypeScript (or anything else you have configured) and then run tests.</p>
  	  </td>
@@ -270,7 +270,7 @@ The following will also need to be in your path:
 
 ## More information
 * [Learn about the Cordova and Ionic Command tasks](./cordova-command.md)
-* [Learn about securing your signing keys](../../apps/mobile/secure-certs.md)
+* [Learn about securing your signing keys](../../../apps/mobile/secure-certs.md)
 * [Check out the source code](http://go.microsoft.com/fwlink/?LinkID=691187)
 * [Learn about Tools for Apache Cordova](http://go.microsoft.com/fwlink/?LinkID=618473)
 * [Read tutorials and learn about tips, tricks, and known issues for Cordova](http://go.microsoft.com/fwlink/?LinkID=618471)
@@ -283,10 +283,10 @@ The following will also need to be in your path:
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-definition-common-all-platforms.md)]
+[!INCLUDE [temp](../../../_shared/qa-definition-common-all-platforms.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../../_shared/qa-agents.md)]
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->

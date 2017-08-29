@@ -11,9 +11,9 @@ ms.date: 08/04/2016
 
 # Define a continuous integration build for your Node.js app
 
-**[VSTS](quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../release/previous-version/release-management-overview.md)**
+**[VSTS](quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../../release/previous-version/release-management-overview.md)**
 
-[!INCLUDE [temp](../../_shared/ci-cd-newbies.md)]
+[!INCLUDE [temp](../../../_shared/ci-cd-newbies.md)]
 
 Here we'll show you how to define a continuous integration (CI) build process for your Node.js app. If you want to also continuously deploy (CD) your app to Azure, you'll be set up to make that happen after you're done creating this CI build process.
 
@@ -36,7 +36,7 @@ Here we'll show you how to define a continuous integration (CI) build process fo
 ## Define your CI build
 
 <ol>
-[!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
+[!INCLUDE [include](../../../_shared/begin-create-build-definition.md)]
  
 <li>Click Empty to start with an empty definition.</li>
 </ol>
@@ -48,7 +48,7 @@ On the **Tasks** or **Build** tab, add these steps.
 <table>
    <tr>
         
-      <td>![Package: npm install](../../tasks/package/_img/npm.png)<br/>**Package: npm install**</td>
+      <td>![Package: npm install](../../../tasks/package/_img/npm.png)<br/>**Package: npm install**</td>
       <td>
 <p>Install your npm package dependencies.</p>
 <ul>
@@ -58,7 +58,7 @@ On the **Tasks** or **Build** tab, add these steps.
 </tr>
    
         <tr>
-            <td>![Build: Gulp](../../tasks/build/_img/gulp.png)<br/>**Build: Gulp**</td>
+            <td>![Build: Gulp](../../../tasks/build/_img/gulp.png)<br/>**Build: Gulp**</td>
             <td>
 <p>Pack your files into a .zip file.</p>
 <ul>
@@ -75,7 +75,7 @@ On the **Tasks** or **Build** tab, add these steps.
         </tr>
 
 <tr>
-            <td>![Package: npm test](../../tasks/package/_img/npm.png)<br/>**Package: npm test**</td>
+            <td>![Package: npm test](../../../tasks/package/_img/npm.png)<br/>**Package: npm test**</td>
             <td>
 <p>(Optional) Test your application.</p>
 <ul>
@@ -85,7 +85,7 @@ On the **Tasks** or **Build** tab, add these steps.
 </td>
         </tr>
 <tr>
-            <td>![Build: Publish Build Artifacts](../../tasks/build/_img/publish-build-artifacts.png)<br/>**Build: Publish Build Artifacts**</td>
+            <td>![Build: Publish Build Artifacts](../../../tasks/build/_img/publish-build-artifacts.png)<br/>**Build: Publish Build Artifacts**</td>
             <td>
 <p>(Optional) Drop some of the build outputs, such as the .zip file as we do in the example below.</p>
 <ul>
@@ -109,11 +109,11 @@ Save and queue the build. Once the build is done, click the link to the complete
 
 After you've run the CI build, you're ready to create a continuous deployment (CD) release definition so that you can deploy your app to:
 
-* [![Azure Web App Deploy](../../tasks/deploy/_img/azure-web-app-deployment-icon.png) An Azure web site ](../../apps/cd/deploy-webdeploy-webapps.md)
+* [![Azure Web App Deploy](../../../tasks/deploy/_img/azure-web-app-deployment-icon.png) An Azure web site ](../../../apps/cd/deploy-webdeploy-webapps.md)
 
-* [![IIS Web App Deploy](../../tasks/deploy/_img/iis-web-application-deployment-icon.png) An IIS server](../../apps/cd/deploy-webdeploy-iis-deploygroups.md)
+* [![IIS Web App Deploy](../../../tasks/deploy/_img/iis-web-application-deployment-icon.png) An IIS server](../../../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
-* [![Build Machine Image](../../tasks/deploy/_img/build-machine-image.png) An Azure Scale Set](../../apps/cd/azure/deploy-azure-scaleset.md)
+* [![Build Machine Image](../../../tasks/deploy/_img/build-machine-image.png) An Azure Scale Set](../../../apps/cd/azure/deploy-azure-scaleset.md)
 
 ## Q&A 
 <!-- BEGINSECTION class="md-qanda" -->
@@ -134,6 +134,6 @@ After you've run the CI build, you're ready to create a continuous deployment (C
 
 The gulpfile.js script zips up the app so it can be deployed to Azure. The web.config file enables running the app on Azure. The .gitignore file keeps build artifacts on your dev machine from getting into your Git repo.
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->
