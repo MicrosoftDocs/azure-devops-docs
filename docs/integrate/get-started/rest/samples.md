@@ -39,14 +39,12 @@ using System.Net.Http.Headers;
 //encode your personal access token                   
 string credentials = Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", "", personalAccessToken)));
 
-//create a viewmodel object that is a class that represents 
-//the content in the returned json response
-ListofProjectsResponse.Projects viewModel = new ListofProjectsResponse.Projects();
+ListofProjectsResponse.Projects viewModel = null;
 
 //use the httpclient
 using (var client = new HttpClient())
 {
-    client.BaseAddress = new Uri("https://accountname.visualstudio.com:");  //url of our account
+    client.BaseAddress = new Uri("https://{accountname}.visualstudio.com");  //url of our account
     client.DefaultRequestHeaders.Accept.Clear();
     client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", credentials); 
