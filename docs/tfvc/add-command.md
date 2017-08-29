@@ -3,7 +3,8 @@ title: Add command
 description: Add command
 ms.assetid: 0b61e4c6-a3da-48d6-bda0-7b14452049a4
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

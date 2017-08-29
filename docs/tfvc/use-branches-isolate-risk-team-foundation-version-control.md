@@ -3,7 +3,8 @@ title: Use branches to isolate risk in Team Foundation Version Control
 description: Use branches to isolate risk in Team Foundation Version Control
 ms.assetid: d74122a4-6a3d-45fb-82b7-3c1494ed4afd
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

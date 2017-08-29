@@ -3,7 +3,8 @@ title: Share your code with Git using Visual Studio 2013 | VSTS & TFS
 description: Share code in Git using Visual Studio 2013
 ms.assetid: d4d85217-1967-412d-b253-b6c6289dc459
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.topic: get-started-article
 toc: show
 ms.manager: douge
@@ -14,10 +15,11 @@ ms.date: 08/10/2017/2017
 # Share your code with Visual Studio 2013 and Team Services Git
 
 > [!div class="op_single_selector"]
-> - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
 > - [Visual Studio 2017](share-your-code-in-git-vs-2017.md)
+> - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
 > - [Visual Studio 2013](share-your-code-in-git-vs-2013.md)   
 
+#### VSTS | TFS 2015 & TFS 2017  
 
 Whether your software project is large, small, or brand new, 
 in most cases you'll be better off if you use version control 

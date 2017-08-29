@@ -3,7 +3,8 @@ title: Associate a file type with a file-comparison tool
 description: Associate a file type with a file-comparison tool
 ms.assetid: 3cda923d-7bd8-4ff7-a071-03d8cf60d509
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

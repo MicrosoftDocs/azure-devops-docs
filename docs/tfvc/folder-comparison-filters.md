@@ -3,7 +3,8 @@ title: Folder comparison filters
 description: Folder comparison filters
 ms.assetid: a074c178-1b40-44dd-9e0f-8e9c7f565bfc
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

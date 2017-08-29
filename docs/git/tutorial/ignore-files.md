@@ -3,7 +3,8 @@ title: Ignore files in your Git repo | VSTS & TFS
 description: Using .gitignore, git update-index, and repo management to ignore and exclude files from Git version control  
 ms.assetid: 60982d10-67f1-416f-94ec-eba8d655f601
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
@@ -12,7 +13,7 @@ ms.date: 08/14/2017
 
 # Ignore file changes with Git
 
-###### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
 Not every file created or updated in your code should be committed to Git. Temporary files from your development environment, test outputs and logs are all examples
 of files that you create but are not part of your codebase. Customize which files Git tracks through the gitignore feature.

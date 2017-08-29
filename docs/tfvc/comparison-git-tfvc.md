@@ -4,7 +4,8 @@ description: Choosing which version control to use in Visual Studio Team Service
 ms.assetid: A4D7295A-22AB-4990-BE68-EF81A1C31F01
 ms.topic: code reference (API)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: sdanie
 ms.date: 05/12/2017
