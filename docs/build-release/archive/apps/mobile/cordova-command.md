@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # The Cordova/Ionic/PhoneGap Command Tasks
 
-[!INCLUDE [temp](../../_shared/version.md)]
+[!INCLUDE [temp](../../../_shared/version.md)]
 
 > **Notice**: Apple's WWDR certificate expired on Feb 14th and as a result you may experience signing failures if you have not updated the cert and **removed the old one**. Follow the steps outlined by Apple under [What should I do if Xcode doesn’t recognize my distribution certificate?](https://developer.apple.com/support/certificates/expiration/) to resolve the problem. Note that this also affects development certs despite the title.
 
@@ -79,6 +79,6 @@ Available Settings:
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->

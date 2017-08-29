@@ -24,7 +24,7 @@ runs tests, and deploy to a staging slot and then to production.
 ## Code
 
 You must store your app's source code in a 
-[VSTS Git](../../../git/gitquickstart.md), 
+[VSTS Git](../../../../git/gitquickstart.md), 
 [GitHub](https://help.github.com/articles/create-a-repo),
 or any other Git repository to use Azure Continuous Delivery.
 Team Foundation Version Control (TFVC) repositories are not supported at present.
@@ -43,7 +43,7 @@ Carry out the following steps to create a simple
 1. Commit the solution to your chosen repository. 
 
 >For more information about publishing your project, see 
-[Get Started with Git and VSTS](../../../git/gitquickstart.md)
+[Get Started with Git and VSTS](../../../../git/gitquickstart.md)
 or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
 
 ## Configure
@@ -73,7 +73,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
    If you chose to use an external Git repository, enter the repository name, branch, and (if required) your credentials.
  
    >If you encounter a service endpoint error while configuring Continuous Delivery, see
-   [Troubleshoot Azure Resource Manager service endpoints](../../actions/azure-rm-endpoint.md).
+   [Troubleshoot Azure Resource Manager service endpoints](../../../actions/azure-rm-endpoint.md).
  
 1. Select **Configure Continuous Delivery** and choose the web application framework
    you used to develop your app. This choice influences the way that Azure Continuous Delivery builds
@@ -207,14 +207,14 @@ may encounter the following known issues:
 * If you do not have relevant permission to create build and release definitions 
   in the VSTS account, the Continuous Delivery configuration will fail
   with an appropriate error message. See 
-  [Manage users and access in Visual Studio Team Services](../../../accounts/add-account-users-assign-access-levels.md).
+  [Manage users and access in Visual Studio Team Services](../../../../accounts/add-account-users-assign-access-levels.md).
   
 * Continuous Delivery supports only applications developed by using
   [ASP.NET](https://www.asp.net/) and [ASP.NET Core](https://www.microsoft.com/net/core#windows).
   
 * If you encounter the error "Failed to create an Azure service connection"
   while deploying to Azure App Service, see
-  [Troubleshoot Azure Resource Manager service endpoints](../../actions/azure-rm-endpoint.md).
+  [Troubleshoot Azure Resource Manager service endpoints](../../../actions/azure-rm-endpoint.md).
   
 * There is a known issue where users are able to see their Visual Studio Team
   Services account information within the [Azure classic portal](https://manage.windowsazure.com/),
@@ -222,7 +222,7 @@ may encounter the following known issues:
   "No accounts found" message in this situation. To resolve this, you can
   configure your Visual Studio Team Services account to be backed by an
   Azure Active Directory (AAD) instance. For information on how to do this, see
-  [VSTS - Access with Azure Active Directory](../../../accounts/access-with-azure-ad.md).
+  [VSTS - Access with Azure Active Directory](../../../../accounts/access-with-azure-ad.md).
 
 ## Q&A
 
@@ -230,7 +230,7 @@ may encounter the following known issues:
 
 <h3 id="new_solution">How do I create an ASP.NET 4 web app?</h3>
 
-1. In Visual Studio, [connect to your team project](../../../connect/connect-team-projects.md#visual-studio).
+1. In Visual Studio, [connect to your team project](../../../../connect/connect-team-projects.md#visual-studio).
 
 1. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
 
@@ -246,10 +246,10 @@ may encounter the following known issues:
 
 1. Clear **Host in the cloud** and click **OK**.
 
-1. [Commit and push (Git)](../../../git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../tfvc/share-your-code-in-tfvc-vs.md) your code.
+1. [Commit and push (Git)](../../../../git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../../tfvc/share-your-code-in-tfvc-vs.md) your code.
 
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+[!INCLUDE [qa-versions](../../../_shared/qa-versions.md)]
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]

@@ -10,7 +10,7 @@ Deployment groups in VSTS make it easier to organize the servers that you want t
 
 1. In the **Register machine** section, make sure that **Windows** is selected, and that **Use a personal access token in the script for authentication** is also selected. Click **Copy script to clipboard**.
 
- ![Screenshot showing update to code](../../apps/_shared/_img/windows-deployment-group-setup.png)
+ ![Screenshot showing update to code](../../../apps/_shared/_img/windows-deployment-group-setup.png)
 
  The script that you've copied to your clipboard will download and configure an agent on the VM so that it can receive new web deployment packages and apply them to IIS.
 
@@ -24,4 +24,4 @@ Deployment groups in VSTS make it easier to organize the servers that you want t
 
 1. On the **Deployment groups** page of the **Build & Release** hub in VSTS, open the *myIIS* deployment group. On the **Machines** tab, verify that your VM is listed.
 
- ![Screenshot showing update to code](../../apps/_shared/_img/windows-deployment-group.png)
+ ![Screenshot showing update to code](../../../apps/_shared/_img/windows-deployment-group.png)

@@ -11,11 +11,11 @@ ms.date: 11/10/2016
 
 # Use Visual Studio to automatically generate a CI/CD pipeline to deploy an ASP.NET Core web app with Docker to Azure
 
-[!INCLUDE [temp](../../_shared/version.md)]
+[!INCLUDE [temp](../../../_shared/version.md)]
 
 [ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications, which can be deployed to [Docker containers](https://www.docker.com/what-docker) running on an [Azure Container Service](https://azure.microsoft.com/documentation/articles/container-service-intro/). Visual Studio 2017 RC.3 and newer with the [Continuous Delivery Tools for Visual Studio extension](http://aka.ms/CD4VS) provide an easy way to set up a full continuous integration (CI) and continuous deployment (CD) pipeline for such applications.
 
-[!INCLUDE [temp](../../apps/aspnet/_shared/ci-cd-description.md)]
+[!INCLUDE [temp](../../../apps/aspnet/_shared/ci-cd-description.md)]
 
 ## Creating the release pipeline from Visual Studio
 
@@ -46,7 +46,7 @@ ms.date: 11/10/2016
 
 1. In the process of setting up the release pipeline, VSTS will have already queued a build that, when successful, triggered a release. You can examine the results through both the **Builds** and **Releases** tab. If the deployment was successful, you can visit the web site and see it running.
 
-[!INCLUDE [include](../../apps/aspnet/_shared/commit-build-release.md)]
+[!INCLUDE [include](../../../apps/aspnet/_shared/commit-build-release.md)]
 
 ## Q&A
 
@@ -56,7 +56,7 @@ ms.date: 11/10/2016
 > 
 > Docker-enabled ASP.NET Core projects are supported only in Visual Studio 2017 RC.3 and higher.
 
-1. In Visual Studio, [connect first to a Team Project](../../../connect/connect-team-projects.md#visual-studio).
+1. In Visual Studio, [connect first to a Team Project](../../../../connect/connect-team-projects.md#visual-studio).
  
 1. On the Team Explorer home page under **Solutions**, click **New**. (By connecting to a Team Project first and using the command in Team Explorer, the new project is automatically added to source control in the Team Project.)
  
@@ -86,4 +86,4 @@ We also recommend that for testing purposes you minimize costs by selecting a sm
 
 Try reselecting your User account to refresh the dialog, or close it and reopen it. A newly-created Azure Container Service should then appear.
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../_shared/qa-versions.md)]
