@@ -27,15 +27,10 @@ For example, you can quickly access and navigate to work of interest from the fo
 - **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in   
 - **Rooms**: Team rooms you use to collaborate with other team members.  
 
-To access these pages, open your web browser to the following URL: 
+To access these pages, open your web browser and click the  
 
 <b>https://<i>AccountName</i>.visualstudio.com/_projects</b>
 
- 
-> [!NOTE]
-> For VSTS, the account hub is in preview mode. If you haven't enabled it yet for your account, you can do so through [your user account menu](../collaborate/preview-features.md). This hub is associated with the account collection and not any one team project or team.  
-> 
-> For TFS 2017.1, the account hub is automatically enabled for all users. 
 
 You'll see something similar to the following welcome page.
 

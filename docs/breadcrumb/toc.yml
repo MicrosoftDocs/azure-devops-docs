@@ -66,6 +66,9 @@
     - name: Customization
       tocHref: /vsts/work/customize/
       topicHref: /vsts/work/customize/index
+    - name: Agile at Scale
+      tocHref: /vsts/work/scale/
+      topicHref: /vsts/work/scale/index
   - name: Analytics
     tocHref: /vsts/report/
     topicHref: /vsts/index#pivot=services&panel=analytics
@@ -109,8 +112,8 @@
       tocHref: /vsts/billing/
       topicHref: /vsts/billing/index
     - name: "Scale & Configure Teams"
-      tocHref: /vsts/work/scale/
-      topicHref: /vsts/work/scale/index
+      tocHref: /vsts/teams/
+      topicHref: /vsts/teams/index
     - name: Manage Extensions
       tocHref: /vsts/marketplace/
       topicHref: /vsts/marketplace/index

@@ -32,12 +32,6 @@ Here we show how to add work items from the web portal.
 
 	<img src="../work/backlogs/_img/add-work-items-choose-user-story.png" alt="Team Services, TFS 2017, Work hub, Add a work item" style="border: 2px solid #C3C3C3;" /> 
 
-	>[!NOTE]  
-	>Depending on the process chosen when the team project was created&mdash;[Scrum](../work/guidance/scrum-process.md), 
-	[Agile](../work/guidance/agile-process.md), or [CMMI](../work/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
-	>
-	> For an overview of all three processes, see [Choose a process](../work/guidance/choose-process.md). 
-
 3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
 	<img src="../work/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 2px solid #C3C3C3;" />  
@@ -56,3 +50,9 @@ To quickly add backlog items, such as user stories or requirements, see these to
 
 Or, [learn more about planning and tracking work](../work/work-items/index.md).
  
+
+>[!NOTE]  
+>Depending on the process chosen when the team project was created&mdash;[Scrum](../work/guidance/scrum-process.md), 
+[Agile](../work/guidance/agile-process.md), or [CMMI](../work/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+>
+> For an overview of all three processes, see [Choose a process](../work/guidance/choose-process.md). 

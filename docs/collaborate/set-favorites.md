@@ -20,8 +20,8 @@ As your code base, work tracking efforts, developer operations, and organization
 This topic shows you how to:  
 
 > [!div class="checklist"]   
-> * Favorite a project, team, or team project 
-> * Favorite a repository, build definition, shared query 
+> * Favorite a repository, build definition, shared query, delivery plan, or test plan 
+> * Favorite a team or team project 
 > * View your personal favorites       
 > * Unfavorite an object    
 
@@ -31,38 +31,46 @@ This topic shows you how to:  
 
 You can set favorites for yourself or your team. You can set them for these objects, from the hub or page listed: 
 
-- Code branch or repository -> **Code>Branches** 
+- Code repository -> **Code>Branches**  (personal favorite only) 
 - Build definition -> **Build & Release>Queries**   
-- Delivery plans  -> **Work>Plans**  
 - Queries -> **Work>Queries**  
-- Team project or team  ->  **Account>Projects**   
-- Test Plans -> **Test>Test Plans**
+- Delivery plans  -> **Work>Plans** (personal favorite only) 
+- Test Plans -> **Test>Test Plans** (personal favorite only) 
+- Team project or team  ->  **Account>Projects**  (personal favorite only)   
+
 
 Delivery Plans requires installation of the [Delivery Plans extension](../work/scale/review-team-plans.md).   
 
-## Favorite a repository
+## Favorite a code repository
+
+From your web browser, open the **Code** hub, open the repository menu and click the ![favorites](../connect/_img/icon-favorite-star.png) star icon next to the repository you want to favorite. 
 
 <img src="_img/set-favorites-repository.png" alt="Web portal, Code, Favorite a repo" style="border: 1px solid #CCCCCC;" />
 
 ## Favorite a build definition  
 
+From your web browser, open the **Build-Release** hub, **Builds>All Definitions** page. Next, open the context menu of the build definition you want to favorite, and then select **Add to my favorites** or **Add to team favorites**.  
+
 <img src="_img/set-favorites-build-definitions.png" alt="Web portal, Build & Release, Builds, Add to my favorites" style="border: 1px solid #CCCCCC;" />  
 
 ## Favorite a shared query 
 
+From your web browser, open the **Work** hub, Queries page. Next, open  the context menu of the shared query you want to favorite, and then select **Add to my favorites** or **Add to team favorites**.  
+
 <img src="_img/set-favorites-shared-query.png" alt="Web portal, Work, Queries, Add to my favorites" style="border: 1px solid #CCCCCC;" /> 
 
-- To mark a team project or team as a favorite, go to the **Projects** page and click the ![favorites](../connect/_img/icon-favorite-star.png) star icon next to the team or team project.   
-<!--- Not supported at account level: To mark a git branch as a favorite, open the **Code>Branches** page and click the ![favorites](../connect/_img/icon-favorite-star.png) star icon next to the branch you want to add.  -->  
-- To mark a query as a favorite, open the **Work>Queries** page and drag the query into the My Favorites area. 
-- To mark a plan as a favorite, open the **Work>Plans** page and click the ![favorites](../connect/_img/icon-favorite-star.png) star icon next to a plan.  
-- To mark a build definition as a favorite, open the **Build&Release>All Definitions** page and click the ![favorites](../connect/_img/icon-favorite-star.png) star icon next to the build definition.    
-- To mark a test plan as a favorite, open the **Test>Test Plans** page and click the ![favorites](../connect/_img/icon-favorite-star.png) star icon next to a test plan from the menu that shows All test plans. 
+## Favorite a Delivery Plan 
 
-<a id="view-favorites">  </a>
-## View personal favorites through your account hub 
+To mark a Delivery Plan as a favorite, open the **Work>Plans** page and click the ![favorites](../connect/_img/icon-favorite-star.png) star icon next to the Delivery Plan.
 
-0. From your web browser, open the account or home page for your VSTS account or TFS collection. From anywhere in the web portal, click the ![project icon](../_img/icons/project-icon.png) project icon as shown.  
+## Favorite a test plan    
+
+To mark a test plan as a favorite, open the **Test>Test Plans** page and click the ![favorites](../connect/_img/icon-favorite-star.png) star icon next to a test plan from the menu that shows All test plans. 
+
+
+## Favorite a team or team project   
+ 
+0. Open your account page by clicking the ![project icon](../_img/icons/project-icon.png) project icon as shown from anywhere in the web portal.  
 
 	<img src="_img/set-favorites-click-icon.png" alt="Open the Account home, Projects page" style="border: 1px solid #CCCCCC;" />   
 
@@ -70,15 +78,17 @@ Delivery Plans requires installation of the [Delivery Plans extension](../work/s
 
 	<img src="../connect/_img/account-home-welcome.png" alt="Account home, Projects page" style="border: 1px solid #CCCCCC;" />   
 
-	The URL follows this pattern: 
+0. From the **Projects** page, click the ![favorites](../connect/_img/icon-favorite-star.png) star icon next to the team or team project you want to favorite.  
 
-	**VSTS**: ```https://{account name}.visualstudio.com/{project name}/_projects```  
-	**TFS**: ```https://{server name}.visualstudio.com/DefaultCollection/_projects```  
 
-0. Open the **Favorites** page to quickly access any object or item that you've marked as a favorite. 
+<a id="view-favorites">  </a>
+## View personal favorites through your account hub 
 
-	<img src="../connect/_img/account-home-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #CCCCCC;" />   
+0. From your account page, open the **Favorites** page to quickly access any object or item that you've marked as a favorite. 
 
+<img src="../connect/_img/account-home-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #CCCCCC;" />   
+
+<!---
 <a id="team-favorites"> </a>
 ## Set team favorites 
 Team favorites are a quick way for members of your team to quickly access shared resources of interest. You can define team favorites for the following:
@@ -90,6 +100,8 @@ Team favorites are a quick way for members of your team to quickly access shared
 From your team context, drag shared queries, builds, and folders to Team favorites to provide quick access to those items. Or, choose the Add to team favorites option from the context menu for the item. You must be [added as a team admin](../work/scale/add-team-administrator.md) to manage team favorites.  
 
 ![Drag items to team favorites](../_img/alm-index-team-favorites.png)  
+
+-->
 
 
 ## Try this next  

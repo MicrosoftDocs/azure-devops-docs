@@ -6,8 +6,8 @@
     href: what-is-vsts.md
   - name: "What is Team Foundation Server?"
     href: what-is-tfs.md
-  - name: Overview of services
-    href: ../services.md
+  - name: A tour of our services
+    href: /vsts/services?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json&bc=/vsts/breadcrumb/toc.json 
 - name: Quickstarts
   items:
   - name: Sign up and invite some teammates 
@@ -20,8 +20,8 @@
     href: plan-track-work.md 
   - name: Add and run manual tests
     href: add-run-manual-tests.md
-  - name: Try extensions for free
-    href: /vsts/billing/try-additional-features-vs?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+  - name: Install a Marketplace extension
+    href: /vsts/marketplace/install-vsts-extension?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
 - name: Tutorials
   items:
   - name: Set favorites
@@ -52,16 +52,16 @@
     href: /vsts/notifications/at-mentions?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: "Use #ID to link to work items"
     href: /vsts/notifications/add-links-to-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: Connect to a team project
-    href:  /vsts/connect/connect-team-projects?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: View permissions
     href: /vsts/security/view-permissions?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Go mobile
     href: /vsts/collaborate/mobile-work?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
+  - name: Manage your notifications
+    href: /vsts/collaborate/manage-personal-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Set your preferences
     href: /vsts/accounts/account-preferences?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: Switch project or team focus
-    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+  - name: Connect to a team project
+    href:  /vsts/connect/connect-team-projects?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
 - name: Troubleshooting 
   items:
   - name: Troubleshoot connection
@@ -73,13 +73,13 @@
   - name: Keyboard shortcuts
     href: /vsts/reference/keyboard-shortcuts?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Markdown guidance
-    href: /vsts/reference/markdown-guidance?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: FAQs
-    href: ../faqs.md
+    href: /vsts/reference/markdown-guidance?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json   
   - name: Navigate in the web portal
     href: /vsts/connect/work-web-portal?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Navigate in Team Explorer
     href: /vsts/connect/work-team-explorer?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+  - name: FAQs
+    href: /vsts/faqs?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
 - name: Resources
   items:
   - name: Visual Studio IDE

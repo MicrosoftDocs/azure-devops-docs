@@ -188,7 +188,7 @@ To copy, clone, or delete work items, or to quickly create work items using a te
 
 - [Copy or clone a work item](../backlogs/copy-clone-work-items.md#copy-clone)  
 - [Remove, delete, or recycle a work item](../backlogs/remove-delete-work-items.md)  
-- [Create a work item template](../productivity/work-item-template.md)  
+- [Create a work item template](../backlogs/work-item-template.md)  
 
 
 <a id="share" >  </a>

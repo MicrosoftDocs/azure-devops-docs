@@ -7,72 +7,55 @@ ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
-ms.date: 07/21/2017
+ms.date: 08/28/2017
 ---
 
 # Create your backlog
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS</b> 
 
 Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. 
 Once defined, you have a prioritized list of features and requirements to build. Your backlog also provides a 
 repository of all the information you need to track and share with your team.
 
-
->[!NOTE]  
->Your product backlog is one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs-boards-plans.md).   
-
 Your backlog consists of a list of [work items](add-work-items.md). 
 You use work items to share information, assign work to team members, track dependencies, organize work, 
 and more. Because the most important work appears at the top of the list, your team always knows what to work on next.
 
-## Convert ideas into backlog items or stories
-Building your backlog starts by quickly capturing the requirements you want for your product. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).   
 
+## Open your backlog from the web portal
 
-
-### Open your backlog from the web portal
-
-You access your product backlog from the **Work** hub, **Backlogs** page. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).   
+From your web browser, open your product backlog from the **Work** hub, **Backlogs** page. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md).   
  
 <img src="../backlogs/_img/cyb-open-backlog-tfs-2017.png" alt="Web portal, choose Work hub, Backlogs" style="border: 2px solid #C3C3C3;" /> 
 
-The URL follows this pattern:  
-- **VSTS**: ```https://<account name>.visualstudio.com/DefaultCollection/<project name>/_backlogs```  
-- **On-premises TFS**: ```http://serverName:8080/tfs/DefaultCollection/projectName/_backlogs```  
-  
-To contribute to the backlog, you must be a member of the Contributors group. If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../accounts/add-account-users-assign-access-levels.md) or [TFS](../../accounts/add-users.md).
-
-If you don't see the team or team project you want, click the ![VSTS icon](../_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../../connect/account-home-pages.md). 
+The URL follows this pattern: ```https://<account name>.visualstudio.com/DefaultCollection/<project name>/_backlogs```  
  
  
 <!---
+### TFS
 <img src="_img/cyb-open-backlog-tfs-2015.png" alt="Open the backlog" style="border: 2px solid #C3C3C3;" />  
 
-<p>The URL follows this pattern:</p>
-<p>```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```</p>
+The URL follows this pattern:
+```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```
 
-<p>If you don't see the team or team project you want, open the team project/team drop-down menu and select the team project/team that you've recently visited. If you don't see the team or team project you want, choose **Browse all** to browse all team projects and teams. </p>
+If you don't see the team or team project you want, open the team project/team drop-down menu and select the team project/team that you've recently visited. If you don't see the team or team project you want, choose **Browse all** to browse all team projects and teams. 
 
 <img src="../_shared/_img/switch-team-project-2.png" alt="Choose another team from the team project menu" style="border: 2px solid #C3C3C3;" /> 
 
-<p>If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md). </p>  
+If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).
+
+Building your backlog starts by quickly capturing the requirements you want for your product. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).    
 
 -->
 
-## Build your backlog
+## Convert ideas into backlog items or stories
 Begin building your backlog by entering a title and click Add. Repeat this step until you've captured all your main ideas. 
 
 > [!TIP]  
-> Your backlog shows work that you are planning to do or have started working on. As soon as the State of a work item is set to Done or Completed, the work item no longer shows up on your backlog. You can use the [backlog controls](#backlog-controls) to filter or change your view.     
+> Your backlog shows work that you are planning to do or have started working on. As soon as the State of a work item is set to Done or Completed, the work item no longer shows up on your backlog. You can use the [backlog controls](product-backlog-controls.md) to filter or change your view.     
   
 <img src="_img/create-backlog-add-new-items-ts.png" alt="Add work items to the backlog" style="border: 2px solid #C3C3C3;" />  
-
->[!NOTE]  
->Depending on the process chosen to create your team project&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md)&mdash;
-the items in your backlog may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
->
->By default, PBIs and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can [choose how they want to treat bugs: either as requirements or tasks](../customize/show-bugs-on-backlog.md). 
 
 <a id="move-items-priority-order">  </a>
 ## Move items into priority order
@@ -83,7 +66,7 @@ Reorder your backlog by simply dragging work items. Or, if you prefer the keyboa
 <img src="_img/cyb-order-backlog.png" alt="Reorder work items" style="border: 2px solid #C3C3C3;" />  
 
 
->[!NOTE]  
+>[!TIP]  
 >You can't sort your backlog on a column. If you want to view a sorted listed, click **Create query**, save and open the query, and then sort the query results. To learn more about queries, see [Use the query editor to list and manage queries](../track/using-queries.md).
 
 
@@ -98,10 +81,12 @@ more details. You capture these details within the work item form.
 
 Open each item (double-click, or press Enter to open the selected item) and add all the info you want to track. Enter as much detail as the team needs to understand the scope, estimate the work required, develop tests, and ensure that the end product meets acceptance criteria.  
 
+<!---
+
 >[!NOTE]  
 ><b>Feature availability: </b>From the web portal for VSTS and TFS 2017, you'll have access to the [new form with the new work tracking experience](../backlogs/add-work-items.md). For TFS 2015 and earlier versions, the old form is supported.   
 	
-<!---
+
 <p>For details on adding work items using the new form, see [add work items](add-work-items.md).</p>  
 
 <img src="_img/cyb-product-backlog-form-ts.png" alt="Product backlog item- VSTS - Add details to a work item" style="border: 2px solid #C3C3C3;" />  
@@ -152,40 +137,40 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 ## Try this next
 Now that you've got a working backlog in place, your team can begin work on the top priority items. From here, it's time to make the decision on how you want to work as a team: Scrum or Kanban? You can use these methods independently or together.
 
+> [!div class="nextstepaction"]
+> [Scrum: Schedule sprints](../scrum/define-sprints.md) or [Kanban](../kanban/kanban-quickstart.md) 
+
 Teams that want the least overhead in terms of tracking and estimating may prefer Kanban. Teams that like to work at a steady cadence and plot the details of their sprint plan may prefer Scrum and sprint planning.
 
+<!---
 With [Kanban](../kanban/kanban-basics.md), teams focus on the flow of work from start to finish - limiting work in progress in order to optimize flow and deliver the highest priority items as quickly as possible.
 
 With [Sprint planning](../scrum/sprint-planning.md), teams define a sprint schedule: a time-boxed set of periods for planning and developing. Using the sprint backlog, they plan their sprints by assigning items to the sprint and defining the tasks required to develop each item. Task boards, capacity charts, and sprint burndown charts all help to keep the team aware of progress throughout the sprint cycle.
+-->
+
+>[!NOTE]  
+>Depending on the process chosen to create your team project&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md)&mdash;
+the items in your backlog may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
+>
+>By default, PBIs and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can [choose how they want to treat bugs: either as requirements or tasks](../customize/show-bugs-on-backlog.md). 
+
 
 ## Related notes
 
+- [Groom your backlog](best-practices-product-backlog.md)  
+- [Product backlog controls](product-backlog-controls.md)
+- [Filter product and portfolio backlogs ](filter-backlogs.md)
+- [Backlog priority or stack rank order](stack-rank-backlog-position.md)
+
 If you've already defined a long list of items, you don't have to reenter them one at a time. Instead, use [Microsoft Excel](../office/bulk-add-modify-work-items-excel.md) to quickly import them to your backlog.
 
-<a id="backlog-controls">  </a>
-### Backlog controls  
+To contribute to the backlog, you must be a member of the Contributors group. If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../accounts/add-account-users-assign-access-levels.md) or [TFS](../../accounts/add-users.md).
 
-Once you've defined your backlog, you can use the following controls to change or filter the view. 
+If you don't see the team or team project you want, click the ![VSTS icon](../_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../../connect/account-home-pages.md). 
+ 
 
-> [!IMPORTANT]  
-> If you set the **In progress** control to **Hide**, then items that are no longer in the New, Approved, or Proposed states won't appear in the backlog. 
->
-> Also, even if you have show parents turned on, the **Create query** and mail ![mail icon](../_img/icons/mail_icon.png) controls will only list items at the currently selected level.      
-
-| Control                  | Function                      |
-|--------------------------|-------------------------------|
-| Backlog  | Switch to backlog view    |
-| Board    | [Switch to Kanban board view](../kanban/kanban-basics.md)  |
-| Forecast | [Turn forecasting Off/On](../scrum/forecast.md) |
-| Mapping | [Turn mapping Off/On](organize-backlog.md)   |
-| Parents | [Show/Hide parents](organize-backlog.md) |
-| In progress items | [Show/Hide in progress items](../scrum/forecast.md)   |
-| ![Settings icon](../_img/icons/team-settings-gear-icon.png)    | [Configure team settings](../scale/manage-team-assets.md#team-settings)  |
-| ![full screen icon](../_img/icons/fullscreen_icon.png) / ![exit full screen icon](../_img/icons/exitfullscreen_icon.png)     | Enter or exit full screen mode      |
-| ![expand icon](../_img/icons/expand_icon.png) / ![collapse icon](../_img/icons/collapse_icon.png)   | Expand or collapse one level of the tree hierarchy    |
-| ![mail icon](../_img/icons/mail_icon.png)  | Email a copy of your backlog      |
-| ![Filter](../_img/icons/tag_filter_icon.png)  | [Turn tag filtering On/Off ](../track/add-tags-to-work-items.md)  |  
-
+>[!NOTE]  
+>Your product backlog is one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs-boards-plans.md).   
 
 ### Treat bugs like requirements or tasks
 You have a choice as to how you want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement, and have them appear on their [task board](../scrum/task-board.md).

@@ -113,7 +113,7 @@ You can specify any number of fields you want, including ones that the user will
 
 Once you have a template defined, you can share it via email or a dashboard. Copy the link to the template and paste it within a markdown widget or through the Welcome page. See [Markdown guidance](../../reference/markdown-guidance.md).  
 
-To learn more, see [Use templates to add and update work items](../productivity/work-item-template.md).  
+To learn more, see [Use templates to add and update work items](../backlogs/work-item-template.md).  
  
 
 ## Try this next 
