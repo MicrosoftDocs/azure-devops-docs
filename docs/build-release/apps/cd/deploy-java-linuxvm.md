@@ -22,7 +22,7 @@ as long as your continuous integration process publishes a Java package.
 Before you begin, you'll need a CI build that publishes your Java package.
 To set up CI for your specific type of app, see:
 
-* [Build your Java app]()
+* [Build your Java app with Maven](../java/build-maven.md)
 
 You'll also need an Azure Linux VM with Tomcat installed where you will deploy the app.
 If you don't have one already, create one now. If you need help, follow the

@@ -26,7 +26,7 @@ To set up CI for your specific type of app, see:
 
 You'll also need an Azure VM where you will deploy the app.
 
-[!INCLUDE [create-azure-windows-vm](../_shared/create-azure-windows-vm.md)
+[!INCLUDE [create-azure-windows-vm](../_shared/create-azure-windows-vm.md)]
 
 ## Create a release
 

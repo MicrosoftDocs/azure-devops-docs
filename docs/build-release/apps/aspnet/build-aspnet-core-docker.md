@@ -19,8 +19,6 @@ ms.date: 05/23/2017
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-## Import sample app code
-
 [!INCLUDE [import-code-aspnet-core](../_shared/import-code-aspnet-core-docker.md)]
 
 ## Set up continuous integration
