@@ -118,8 +118,6 @@
   items:
   - name: Build your app
     items:
-    - name: Cordova
-      href: apps/mobile/cordova-build.md
     - name: Azure Cloud Service
       href: apps/aspnet/build-aspnet-cloudservice.md
     - name: SQL Server Database
@@ -127,7 +125,7 @@
   - name: Deploy your app
     items:
     - name: Azure cloud service
-      href: apps/aspnet/deploy-cloudservice-cloudservice.md
+      href: apps/cd/deploy-cloudservice-cloudservice.md
     - name: Azure Government Cloud
       href: concepts/library/government-cloud.md
     - name: Azure Container Service (Kubernetes)
@@ -174,12 +172,6 @@
       href: apps/cd/scvmm/manage-vms-using-scvmm.md
     - name: Troubleshoot Azure connections
       href: actions/azure-rm-endpoint.md
-  - name: Automatically generate CI/CD
-    items:
-    - name: ASP.NET from Visual Studio
-      href: apps/aspnet/aspnet-4-ci-cd-vs-automatic.md
-    - name: ASP.NET Core with Docker from Visual Studio
-      href: apps/aspnet/aspnetcore-docker-to-azure.md
   - name: Use Package Management
     items:
     - name: NuGet

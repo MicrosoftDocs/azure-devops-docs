@@ -90,7 +90,7 @@ See also [Troubleshoot Azure Resource Manager service endpoints](../../actions/a
 
 * [Deploy an Azure web app](../../apps/cd/deploy-webdeploy-webapps.md)
 
-* [Deploy an Azure cloud service](../../apps/aspnet/deploy-cloudservice-cloudservice.md)
+* [Deploy an Azure cloud service](../../apps/cd/deploy-cloudservice-cloudservice.md)
 
 * [Examples index](../../apps/index.md)
 

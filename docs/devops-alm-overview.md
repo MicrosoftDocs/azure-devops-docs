@@ -197,8 +197,8 @@ Release Management helps you automate the deployment and testing of your softwar
 <ul style="padding-left:30px">
 <li style="margin-bottom:2px"><a href="build-release/overview.md">Overview</a></h4>
 <li style="margin-bottom:2px"><a href="build-release/apps/windows/dot-net.md">.NET get started</a></li>
-<li style="margin-bottom:2px"><a href="build-release/apps/java/java-maven.md">Java get started</a></li>
-<li style="margin-bottom:2px"><a href="build-release/apps/aspnet/aspnet4-to-azure.md">Azure</a></li>
+<li style="margin-bottom:2px"><a href="build-release/apps/java/build.md">Java get started</a></li>
+<li style="margin-bottom:2px"><a href="build-release/apps/aspnet/build-aspnet4.md">Azure</a></li>
 <li style="margin-bottom:2px"><a href="build-release/apps/windows/universal.md">Windows</a></li>
 <li style="margin-bottom:2px"><a href="build-release/apps/mobile/xamarin.md">Mobile</a></li>
 </ul>

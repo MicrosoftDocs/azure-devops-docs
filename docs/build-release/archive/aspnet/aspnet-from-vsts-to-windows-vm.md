@@ -33,7 +33,7 @@ You create the virtual machine using Azure Powershell, and then you set up CI/CD
 
 On your dev machine, you need Azure PowerShell module version 4.0 or newer. See [Install and configure Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-4.2.0).
 
-[!INCLUDE [temp](../_shared//create-azure-windows-vm.md)]
+[!INCLUDE [temp](../_shared/create-azure-windows-vm.md)]
 
 [!INCLUDE [temp](../_shared/create-deployment-group.md)]
 
@@ -51,11 +51,11 @@ In the right panel, select **ASP.NET**, and then click **Apply**.
 
 ![Screenshot showing ASP.NET template](./_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-apply-template.png)
 
-[!INCLUDE [temp](../_shared//set-up-ci-2.md)]
+[!INCLUDE [temp](../_shared/set-up-ci-2.md)]
 
-[!INCLUDE [temp](../_shared//set-up-ci-3.md)]
+[!INCLUDE [temp](../_shared/set-up-ci-3.md)]
 
-[!INCLUDE [temp](../_shared//set-up-cd-1.md)]
+[!INCLUDE [temp](../_shared/set-up-cd-1.md)]
 
 ![Screenshot showing build summary](_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-build-summary.png)
 

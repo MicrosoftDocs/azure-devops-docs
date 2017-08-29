@@ -44,7 +44,7 @@ https://github.com/adventworks/dotnetcore-sample
 
 In the right panel, select **ASP.NET Core**, and then click **Apply**.
 
-![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
+![Screenshot showing dotnet core template](../../apps/aspnet/_shared/_img/apply-aspnet-core-build-template.png)
 
 [!INCLUDE [temp](../_shared/set-up-ci-2.md)]
 

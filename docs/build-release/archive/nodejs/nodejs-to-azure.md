@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Define a continuous integration build for your Node.js app
 
-**[VSTS](../../apps/nodejs/quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../release/previous-version/release-management-overview.md)**
+**[VSTS](quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../release/previous-version/release-management-overview.md)**
 
 [!INCLUDE [temp](../../_shared/ci-cd-newbies.md)]
 
@@ -109,11 +109,11 @@ Save and queue the build. Once the build is done, click the link to the complete
 
 After you've run the CI build, you're ready to create a continuous deployment (CD) release definition so that you can deploy your app to:
 
-* [![Azure Web App Deploy](../../tasks/deploy/_img/azure-web-app-deployment-icon.png) An Azure web site ](../cd/deploy-webdeploy-webapps.md)
+* [![Azure Web App Deploy](../../tasks/deploy/_img/azure-web-app-deployment-icon.png) An Azure web site ](../../apps/cd/deploy-webdeploy-webapps.md)
 
-* [![IIS Web App Deploy](../../tasks/deploy/_img/iis-web-application-deployment-icon.png) An IIS server](../cd/deploy-webdeploy-iis-deploygroups.md)
+* [![IIS Web App Deploy](../../tasks/deploy/_img/iis-web-application-deployment-icon.png) An IIS server](../../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
-* [![Build Machine Image](../../tasks/deploy/_img/build-machine-image.png) An Azure Scale Set](../cd/azure/deploy-azure-scaleset.md)
+* [![Build Machine Image](../../tasks/deploy/_img/build-machine-image.png) An Azure Scale Set](../../apps/cd/azure/deploy-azure-scaleset.md)
 
 ## Q&A 
 <!-- BEGINSECTION class="md-qanda" -->

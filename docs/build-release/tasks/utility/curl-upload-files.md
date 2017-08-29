@@ -74,10 +74,6 @@ Arguments to pass to cURL.
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Example
-
-[Build and Deploy your Java application to an Azure web app](../../apps/java/maven-to-azure.md)
-
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
