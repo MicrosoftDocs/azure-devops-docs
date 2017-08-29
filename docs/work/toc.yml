@@ -195,8 +195,6 @@
     href: customize/show-bugs-on-backlog.md
   - name: Show bugs
     href: customize/show-bugs-on-backlog.md
-  - name: Define work item templates
-    href: productivity/work-item-template.md
   - name: Set team defaults
     href: scale/set-team-defaults.md
   - name: Set team favorites
