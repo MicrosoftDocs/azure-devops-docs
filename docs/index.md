@@ -304,7 +304,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/tfvc/overview">
+                                <a href="">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -829,7 +829,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_feedback.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -1015,7 +1015,7 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>TypeScript APIs</h3>
-                                                    <p>Description</p>
+                                                    <p>Interact with VSTS through TypeScript APIs.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1165,8 +1165,7 @@ ms.date: 07/26/2017
                             </li>
                             <li>
                                 <div class="container intro">
-                                    <h1>Build your own extensions</h1>
-                                    
+                                    <h2>Build your own extensions</h2>                                    
                                 </div>
                             </li>
                             <li>
