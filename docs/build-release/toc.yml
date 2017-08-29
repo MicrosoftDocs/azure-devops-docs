@@ -20,7 +20,7 @@
     items:
     - name: Azure web app
       href: apps/cd/deploy-webdeploy-webapps.md
-    - name: Windows VM
+    - name: IIS web server
       href: apps/cd/deploy-webdeploy-iis-deploygroups.md
 - name: Tutorials
   items:

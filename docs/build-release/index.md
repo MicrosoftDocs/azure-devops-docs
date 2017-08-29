@@ -33,7 +33,7 @@ Learn how to deploy your app.
 <table>
 <tr valign="middle" align="center">
 <td>[<img src="_img/index/app-service-web.png" alt="" width="36px" height="36px"><br/>Azure web app](apps/cd/deploy-webdeploy-webapps.md)</td>
-<td>[<img src="_img/index/virtualmachine.png" alt="" width="36px" height="36px"><br/>Windows VM](apps/cd/deploy-webdeploy-iis-deploygroups.md)</td>
+<td>[<img src="_img/index/virtualmachine.png" alt="" width="36px" height="36px"><br/>IIS web server](apps/cd/deploy-webdeploy-iis-deploygroups.md)</td>
 </tr>
 </table>    
 

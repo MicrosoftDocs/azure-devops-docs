@@ -59,7 +59,7 @@ net start w3svc
 
 When `net start w3svc` appears, press **Enter** to run it.
 
-[!INCLUDE [temp](_shared/create-deployment-group.md)]
+[!INCLUDE [temp](../build-release/apps/_shared/create-deployment-group.md)]
 
 ## Import code for sample app into VSTS
 
@@ -129,11 +129,11 @@ Continuous deployment (CD) is a lean practice that your team can use to keep pro
 
 1. In the **Create release definition** wizard, select **IIS Website Deployment** template, and then click **Apply**.
 
- ![Screenshot showing IIS website deployment template](_img/aspnet-core-to-windows-vm/select-iis-website-deployment-release-template.png)
+ ![Screenshot showing IIS website deployment template](../build-release/apps/_shared/_img/aspnet-core-to-windows-vm/select-iis-website-deployment-release-template.png)
 
 1. Click the **Tasks** tab, and then click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*.
 
- ![iis deployment group in release definition](_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
+ ![iis deployment group in release definition](../build-release/apps/_shared/_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
 
 1. Click **Save**. On the Save dialog box, click **OK**.
 

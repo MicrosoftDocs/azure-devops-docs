@@ -1,6 +1,5 @@
 <h2 id="cd">Define your CD release process</h2>
 
-Continuous deployment (CD) means starting an automated release process whenever a new successful build is available.
 Your CD release process picks up the artifacts published by your CI build and then deploys them to your Azure web site.
 
 1. Do one of the following:
@@ -11,7 +10,7 @@ Your CD release process picks up the artifacts published by your CI build and th
      ![Creating a new release definition from the build summary](_img/release-from-build-summary.png)
 
    * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
-     in the list of release definitions, and choose **Create release definition** 
+     in the list of release definitions, and choose **Create release definition**.
 
      ![Creating a new release definition in the Releases page](_img/release-from-release-page.png)
 
@@ -31,33 +30,22 @@ Your CD release process picks up the artifacts published by your CI build and th
    > Continuous deployment is not enabled by default when you create a new release definition from the **Releases** tab.
 
 1. Open the **Task** tab, select the **Deploy Azure App Service** task, and configure it as follows:
- 
+
    ![Deploy: Azure App Service Deploy](../../tasks/deploy/_img/azure-web-app-deployment-icon.png) [Deploy: Azure App Service Deploy](../../tasks/deploy/azure-app-service-deploy.md) task - deploy the app to Azure App Services.
-   
-   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm).
-   
-   - **App Service Name**: the name of the web app (the part of the URL *without* **.azurewebsites.net**).
-   
-   - **Deploy to Slot**: make sure this is cleared (this is the default setting).
-   
-   - **Virtual Application:** leave empty.
-   
-   - **Web Deploy Package:** `$(System.DefaultWorkingDirectory)\**\*.zip` (this is the default setting).
-   
-   - **Additional Deployment Options - Take App Offline:** check that this is set to avoid deployment problems with assemblies that are locked while the app is running (this is the default setting).<p />
 
-   ![Configuring the  Azure App Service Deploy task](_img/configure-app-service-deploy-task.png)
+   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
+     If you are using VSTS and if you see an **Authorize** button next to the input, click on it to authorize VSTS to connect to your Azure subscription. If you are using TFS or if you do not see
+     the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm) to manually set up the connection.
 
-   > [!Note]
-   >
-   > If you are using TFS (rather than VSTS) you may find that the **Azure App Service Deploy** task is not available, depending on your version and update of TFS.
-   > Instead, you can use the [Azure Web App Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment) task to deploy your app.
+     ![Authorizing an Azure subscription](_img/authorize-azure-subscription-in-new-release-definition.png)
+
+   - **App Service Name**: Select the name of the web app from your subscription.
 
 1. Save the release definition.
 
 <h2 id="deploy">Create a release to deploy your app</h2>
 
-You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build. This will result in deploying the build to Azure:
+You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build. This will result in deploying the build:
 
 1. Choose **+ Release** and select **Create Release**.
 
