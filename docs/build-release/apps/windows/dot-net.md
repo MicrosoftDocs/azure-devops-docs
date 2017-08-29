@@ -1,6 +1,5 @@
 ---
-parent: ./index.md
-title: Build your .NET app for Windows
+title: Build your .NET desktop app for Windows
 shorttitle: Visual Studio solution
 description: Define a CI process that builds your .NET app on Team Foundation Server and Visual Studio Team Services.
 ms.prod: vs-devops-alm
@@ -12,53 +11,77 @@ ms.author: alewis
 ms.date: 08/04/2016
 ---
 
-# Build your .NET app for Windows
+# Build your .NET desktop app for Windows
 
-**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/bb558973%28v=vs.120%29.aspx)**
+**VSTS | TFS 2017 Update 2**
 
-[!INCLUDE [temp](../../_shared/ci-cd-newbies.md)]
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your .NET desktop app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process.
 
-After you have [a Windows build agent](../../actions/agents/v2-windows.md), in just a few steps you can define a CI build process that compiles and tests your .NET app whenever your team checks in code.
+## Prerequisites
 
-## Define your process
+[!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-0. If you haven't already, upload your code to [GIT](../../../git/share-your-code-in-git-vs.md) or [TFVC](../../../tfvc/share-your-code-in-tfvc-vs.md).
+[!INCLUDE [include](../../_shared/ci-cd-prerequisites-tfs.md)]
 
-0. Create the build definition.
+## Import sample app code
 
- ![Build tab](../../_shared/_img/create-new-build-definition.png)
+VSTS and TFS are full-featured Git servers for hosting your team's source code. You'll import code for a sample .NET app into VSTS/TFS Git repository. This is the app that you'll configure CI/CD for.
 
- ![New Visual Studio build](_img/dot-net/new-visual-studio-build-from-definition-templates.png)
+1. Open your team project in your web browser:
 
-0. Specify the code you want to build and select the continuous integration (CI) trigger.
+ * **VSTS:** `https://{your-account}.visualstudio.com/DefaultCollection/{your-team-project}`
 
- ![CI trigger](../../_shared/_img/create-new-build-definition-settings-repository-git-ci.png)
+ * **TFS:** `http://{your-server}:8080/tfs/DefaultCollection/{your-team-project}`
 
-0. Save the definition.
+ [The TFS URL doesn't work for me. How can I get the correct URL?](../../../security/websitesettings.md)
 
- ![Save button](../../_shared/_img/build-definition-save-button.png)
+1. On the **Code** hub for your team project, select the option to **Import repository**.
 
- ![Save the build](../../_shared/_img/BldSave.png)
+ ![import repository menu item](../_shared/_img/import-repository-menu-item.png)
 
-0. Queue your new definition to make sure it works.
+1. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** text box.
 
- ![Queue the build](../../_shared/_img/queue-build-dialog-box-with-hosted.png)
+ ```bash
+https://github.com/adventworks/net-sample
+```
 
- ![Completed build](_img/dot-net/visual-studio-build-completed.png)
+1. Click **Import** to copy the sample code into your Git repo.
 
-Your team now has a CI build to validate every change checked into your codebase!
+The sample app in this repository is a Visual Studio solution that has two projects - a .NET Class Library project targeting .NET Framework 4.5 and a Unit Test project. The instructions in this
+quickstart work for applications targeting .NET Framework 4 and above.
 
+## Set up continuous integration
 
-## Q&A
+[!INCLUDE [include](../../_shared/ci-quickstart-intro.md)]
 
-<!-- BEGINSECTION class="md-qanda" -->
+[//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-[!INCLUDE [temp](../../tasks/_shared/msbuild_qa.md)]
+1. On the **Files** tab of the **Code** hub, click **Set up build**.
 
-[!INCLUDE [temp](../../_shared/qa-definition-common-all-platforms.md)]
+ ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+ You are taken to the **Build & Release** hub and asked to **Choose a template**.
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+1. In the right panel, select **.NET Desktop**, and then click **Apply**.
 
-<!-- ENDSECTION -->
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time check in code.
+
+1. For the **Default agent queue**:
+
+ * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
+
+ * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+
+1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+
+1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
+
+1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
+
+## View the build summary
+
+[!INCLUDE [include](../_shared/view-build-summary.md)]
+
+## Next steps
+
+[!INCLUDE [include](../_shared/ci-web-app-next-steps.md)]

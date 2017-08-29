@@ -11,167 +11,94 @@ ms.date: 12/15/2016
 
 # Build your C++ app for Windows
 
-[!INCLUDE [temp](../../_shared/version.md)]
+**VSTS | TFS 2017 Update 2**
 
-Here we'll show you how to create a continuous integration (CI) build to automatically build and test your C++ Windows app whenever your team checks in code. This build will also automatically supply your team with artifacts of your application, which you can use for debugging old builds.
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your C++ application whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process for a C++ application developed using Visual Studio IDE.
 
-## Get set up
+## Prerequisites
 
-For the instructions in this topic, you need a C++ project in Visual Studio.
+[!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-> [!TIP]
-> If you don't yet have an app but want to try this out, then see the [Q&A below](#new_solution).
+[!INCLUDE [include](../../_shared/ci-cd-prerequisites-tfs.md)]
 
-## Create the build definition
+## Import sample app code
 
-In this section we'll create a build definition for your C++ app.
+VSTS and TFS are full-featured Git servers for hosting your team's source code. You'll import code for a sample Windows classic desktop application developed in C++ into VSTS/TFS Git repository. This is the app that you'll configure CI/CD for.
 
-<ol>
-    [!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
+1. Open your team project in your web browser:
 
-    <li>On the Create new build definition dialog box, select **Visual Studio**, and then click **Next**.</li>
+ * **VSTS:** `https://{your-account}.visualstudio.com/DefaultCollection/{your-team-project}`
 
+ * **TFS:** `http://{your-server}:8080/tfs/DefaultCollection/{your-team-project}`
 
-    <li>As the repository source, select the team project, repository, and branch, set the option for **continuous integration**, and click **Create**. The continuous integration option is what tells VSTS to queue a build when new code is committed or checked in.</li>
-</ol>
+ [The TFS URL doesn't work for me. How can I get the correct URL?](../../../security/websitesettings.md)
 
-### Build steps
+1. On the **Code** hub for your team project, select the option to **Import repository**.
 
-On the [build tab](../../tasks/index.md) you'll see build steps.
+ ![import repository menu item](../_shared/_img/import-repository-menu-item.png)
 
-> [!IMPORTANT]
-> Make sure the Copy Files step is set up to copy the artifacts that your team needs. See below for an example.
+1. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** text box.
 
-
-<table>
-<tr>
-<td>![Package: NuGet Installer](../../tasks/package/_img/nuget-installer.png)<br/>[Package: NuGet Installer](../../tasks/package/nuget-installer.md)</td>
-<td>
-<p>Install your NuGet package dependencies (if you have any).</p>
-</td>
-</tr>
-<tr>
-    <td>![icon](../../tasks/build/_img/visual-studio-build.png)<br>[Build: Visual Studio Build](../../tasks/build/visual-studio-build.md)</td>
-    <td>
-        <p>Build the solution.</p>
-        <ul>
-            <li>Solution: ` **\*.sln `</li>
-            <li>Platform: `$(BuildPlatform)`</li>
-            <li>Configuration: ` $(BuildConfiguration)`</li>
-        </ul>
-    </td>
-</tr>
-<tr>
-<td>![icon](../../tasks/test/_img/visual-studio-test-icon.png)<br/>[Test: Visual Studio Test](../../tasks/test/visual-studio-test.md)</td>
-<td>
-<p>(Optional) Run your tests.</p>
-</td>
-</tr>
-<tr>
-   <td>![icon](../../tasks/build/_img/index-sources-publish-symbols.png)<br>
-            [Build: Index Sources & Publish Symbols](../../tasks/build/index-sources-publish-symbols.md)<br/>
-      </td>
-   <td>
-   <p>(Optional) Index your source code and publish symbols to a file share.</p>
-   </td>
-        </tr>
-<tr>
-<td>![icon](../../tasks/utility/_img/copy-files.png)<br/>[Utility: Copy Files](../../tasks/utility/copy-files.md)</td>
-<td>
-<p>Copy your binaries to the artifacts staging directory.</p>
-<ul>
-<li>Source Folder: `$(Build.SourcesDirectory)`</li>
-<li>Contents: `**\$(BuildConfiguration)\**\?(*.exe|*.dll|*.pdb)`</li>
-<li>Target folder: `$(Build.ArtifactStagingDirectory)`</li>
-</ul>
-</td>
-</tr>
-<tr>
-    <td>![icon](../../tasks/utility/_img/publish-build-artifacts.png)<br>[Utility: Publish Build Artifacts](../../tasks/utility/publish-build-artifacts.md)</td>
-    <td>
-        <p>Copy (publish) the build artifacts to a folder for the release definition.</p>
-        <ul>
-            <li>Path to publish: `$(Build.ArtifactStagingDirectory)`</li>
-            <li>Artifact name: `drop`</li>
-            <li>Artifact type: Server</li>
-        </ul>
-    </td>
-</tr>
-</table>
-
-### Variables
-
-On the [Variables tab](../../concepts/definitions/build/variables.md) define these variables:
-
-|Name|Value|
-|-|-|
-|```BuildConfiguration```|```debug, release```|
-|```BuildPlatform```|```x86, x64```|
-
-### Options
-
-On the [Options tab](../../concepts/definitions/build/options.md):
-
-0. Select **Multi-configuration**.
-
-0. Specify **Multipliers:** 
- ```
-BuildConfiguration, BuildPlatform
+ ```bash
+https://github.com/adventworks/cpp-sample
 ```
+
+1. Click **Import** to copy the sample code into your Git repo.
+
+## Set up continuous integration
+
+[!INCLUDE [include](../../_shared/ci-quickstart-intro.md)]
+
+[//]: # (TODO: Restore use of includes when we get support for using them in a list.)
+
+1. On the **Files** tab of the **Code** hub, click **Set up build**.
+
+ ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
+
+ You are taken to the **Build & Release** hub and asked to **Choose a template**.
+
+1. In the right panel, select **.NET Desktop**, and then click **Apply**. This template is useful in building most of the Visual Studio solutions including those that contain classic C++ projects.
+
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time check in code.
+
+1. For the **Default agent queue**:
+
+ * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
+
+ * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+
+1. Click the **Copy Files** task. Specify the following arguments:
+
+ * **Source Folder:** `$(Build.SourcesDirectory)`
+
+ * **Contents:** `**\$(BuildConfiguration)\**\?(*.exe|*.dll|*.pdb)`
+
+ * **Target folder:** `$(Build.ArtifactStagingDirectory)`
+
+1. Click the **Variables** tab and modify these variables:
+
+ * `BuildConfiguration` = `debug, release`
+
+ * `BuildPlatform` = `x86, x64`
+
+1. Click the **Triggers** tab and enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+
+1. Click the **Options** tab and then:
+
+ * Select **Multi-configuration**.
+
+ * Specify **Multipliers:** `BuildConfiguration, BuildPlatform`
 
 0. Select **Parallel** if you have multiple build agents and want to build your configuration/platform pairings in parallel.
 
-### Triggers
+1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
 
-On the [Triggers](../../concepts/definitions/build/triggers.md) tab, make sure **Continuous integration (CI)** is selected and that you're including the branches you want to build. For example, if you want the build to run for any branch, you can include `*`.
+1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
-Optionally, you can specify that your build is run on a schedule. For example, you can make it a nightly build.
+## View the build summary
 
-## Queue and test the build
+[!INCLUDE [include](../_shared/view-build-summary.md)]
 
-Save the build definition and then select **Queue new build**. Once the build is done, click the build number (such as "Build 332"), click the **Artifacts** tab, and then **Explore** to see the zip file produced by the build.
+## Next steps
 
-You'll see something like this:
-
-```
-`-- drop
-    `-- ConsoleApplication1
-        `-- ConsoleApplication1
-            `-- Debug <- (these are for the x86 platform)
-                | -- ConsoleApplication1.exe
-                | -- ConsoleApplication1.pdb
-            `-- Release <- (these are for the x86 platform)
-                | -- ConsoleApplication1.exe
-                | -- ConsoleApplication1.pdb
-            `-- x64
-                `-- Debug
-                    | -- ConsoleApplication1.exe
-                    | -- ConsoleApplication1.pdb
-                `-- Release
-                    | -- ConsoleApplication1.exe
-                    | -- ConsoleApplication1.pdb
-```
-
-To change the artifacts this build produces, modify the [copy step arguments](../../tasks/utility/copy-files.md).
-
-## Q&A
-
-<h3 id="new_solution">How do I create a C++ solution to play with?</h3>
-
-0. In Visual Studio, [connect to your team project](../../../connect/connect-team-projects.md#visual-studio).
-
-0. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
-
-0. On the **New Project** dialog box, in the tree on the left side, select **Templates** > **Visual C++**. In the list in the middle select **Win32 console Application**.
-
-0. On the **Win32 Application Wizard** dialog box, click **Next**, and then click **Finish**.
-
-0. Either [share your code with Git and Visual Studio](../../../git/share-your-code-in-git-vs.md) or [share your code with TFVC and Visual Studio](../../../tfvc/share-your-code-in-tfvc-vs.md).
-
-For more information, see [C++ Windows app](https://docs.microsoft.com/en-us/cpp/windows/overview-of-windows-programming-in-cpp#a-namebknativea-desktop-server-and-cloud-apps-and-games).
-
-### Can Visual Studio project settings affect my CI build?
-
-Yes, if you modify the settings of projects in your solution, this can affect your CI build. For example, in Visual Studio you modify the **Output Directory** property on the **General** page. If you removed `$(Configuration)` from the setting, it could cause problems in your CI build.
-
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [include](../_shared/ci-web-app-next-steps.md)]
