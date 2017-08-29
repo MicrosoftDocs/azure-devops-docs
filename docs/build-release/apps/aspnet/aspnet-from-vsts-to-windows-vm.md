@@ -20,22 +20,22 @@ ms.custom: mvc
 
 # Implement a CI/CD process to build and deploy your ASP.NET app to Azure
 
-Visual Studio Team Services provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
+Visual Studio Team Services provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your
 ASP.NET apps.
 This quickstart shows how to set up CI and CD to deploy
 an ASP.NET app
-to a Windows virtual machine in Azure. 
+to a Windows virtual machine in Azure.
 You create the virtual machine using Azure Powershell, and then you set up CI/CD in VSTS. In the CI process, you build the app using MSBuild and run tests using VSTest.
 
 ![Screenshot showing ASP.NET web app](_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-sample.png)
 
 [!INCLUDE [temp](../_shared/vsts-and-azure-setup.md)]
 
-On your dev machine, you need Azure PowerShell module version 4.0 or newer. See [Install and configure Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-4.2.0). 
+On your dev machine, you need Azure PowerShell module version 4.0 or newer. See [Install and configure Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-4.2.0).
 
 [!INCLUDE [temp](../_shared//create-azure-windows-vm.md)]
 
-[!INCLUDE [temp](../../../deploy-azure/_shared/create-deployment-group.md)]
+[!INCLUDE [temp](../_shared/create-deployment-group.md)]
 
 [!INCLUDE [temp](../_shared/import-code-1.md)]
 

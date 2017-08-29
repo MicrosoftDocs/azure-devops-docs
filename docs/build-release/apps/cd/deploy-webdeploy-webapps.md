@@ -1,6 +1,6 @@
 ---
 ms.assetid: 449254BF-EAC1-466E-B10C-85C2DE086F30
-title: CD to Azure App Services
+title: Deploy to Azure web app
 description: Set up continuous deployment (CD) of an ASP.NET or Node.js web deploy package to a Microsoft Azure App Services website from Release Management in Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
@@ -9,11 +9,13 @@ ms.author: ahomer
 ms.date: 01/02/2017
 ---
 
-# CD to Azure App Services
+# Deploy to Azure web app
 
-Continuous deployment (CD) means starting an automated deployment process whenever a new successful build is available.
-We'll show you how to set up continuous deployment of your ASP.NET or Node app to an Azure App Services website using
-Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS) 2017 Update 2.
+**VSTS | TFS 2017 Update 2**
+
+We'll show you how to set up continuous deployment of your ASP.NET or Node app to an Azure web app using
+Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS). You can use the steps in this quickstart
+as long as your continuous integration process publishes a Web Deploy package.
 
 ## Prerequisites
 
@@ -25,7 +27,7 @@ Before you begin, you'll need a CI build that publishes your Web Deploy package.
 
 * [Build your Node app with Gulp](../nodejs/nodejs-to-azure.md)
 
-You'll also need an Azure App Services website where you will deploy the app.
+You'll also need an Azure web app where you will deploy the app.
 If you don't have one already, create one now. If you need help, follow the
 steps in [this example](../../../deploy-azure/aspnet-core-to-azure-webapp.md#create-webapp-portal).
 

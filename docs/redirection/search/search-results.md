@@ -1,3 +1,3 @@
 ---
-redirect_url: /vsts/search/code/search-results
+redirect_url: /vsts/search/code/advanced-search
 ---

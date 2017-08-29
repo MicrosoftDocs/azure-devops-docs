@@ -33,18 +33,9 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 * [Visual Studio 2017](https://www.visualstudio.com/downloads/)    
 * [Continuous Delivery Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio)
 
-##  Create an Azure Container Registry    
-You use [Azure Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/) to host the Docker image that is deployed to Azure App Service.  Follow the steps below to create and configure the registry to store and manage the Docker container.  In later steps, you use VSTS to deploy the Docker container to Linux App Service in Azure.
+[!INCLUDE [create-azure-container-registry](../build-release/apps/_shared/create-azure-container-registry.md)]
 
-1.  Sign into your Azure Account at [https://portal.azure.com](https://portal.azure.com).
-2.  In the Azure Portal, **click** **New, Containers, then click Azure Container Registry**.    
-3.  Choose a **Registry name**, **Resource Group**, and **Location**.    
-
-    ![Container Registry settings](_img/aspnet-core-to-acr/createacr.png)
-4.  Choose **Enable** for **Admin user**, then Click **Create**.
-5.  Wait for the **Azure Container Registry** deployment to complete.
-
-[!INCLUDE [import-code-aspnet-core](_shared/import-code-aspnet-core-docker.md)]
+[!INCLUDE [import-code-aspnet-core](../build-release/apps/_shared/import-code-aspnet-core-docker.md)]
 
 ##  Clone the solution
 Use the following steps to clone the sample solution and open it in Visual Studio 2017.  This allows you to work with the solution in a local development environment.  In upcoming steps, you use Visual Studio 2017 to configure continuous integration and continuous delivery for the web app.

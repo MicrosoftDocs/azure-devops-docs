@@ -1,3 +1,3 @@
 ---
-redirect_url: /vsts/build-release/apps/cd/deploy-webdeploy-webapps#swap-deployment-slots
+redirect_url: /vsts/build-release/apps/cd/deploy-webdeploy-webapps#swapslots
 ---

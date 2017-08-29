@@ -10,7 +10,7 @@ ms.topic: get-started-article
 ms.date: 08/07/2017
 ---
 
-# Grooming your backlog  
+# Groom your backlog  
 
 **VSTS | TFS 2017 | TFS 2015 | TFS 2013**
  
@@ -18,7 +18,7 @@ A great backlog conveys customer needs and value. Over the course of the project
 information to each backlog item, break them down into smaller items, prioritize and estimate them, and finally, 
 implement them and deliver the results to your customers. 
 
-To get started, see [Create your backlog](../backlogs/create-your-backlog.md).  
+To get started, see [Create your backlog](create-your-backlog.md).  
 
 
 <a name="product-owner-role"></a>

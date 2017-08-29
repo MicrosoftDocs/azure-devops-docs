@@ -27,7 +27,7 @@ In this topic you'll learn:
 > * How to reparent items using drag-and-drop or the **Change parent** option       
 
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+
 
 ## Show parents and expand the tree hierarchy  
 From the product backlog page, set Parents to Show when you want to drill up or down within the hierarchy, set Parents to Show. You can also drag and drop items to reparent items from this view. 
@@ -84,8 +84,11 @@ From the product backlog you can multi-select several work items and choose **Ch
 
 ## Related topics  
 
-- [Backlogs, boards, and plans](../backlogs-boards-plans.md)  
 - [Define features and epics](define-features-epics.md)
 - [Work with multi-team ownership of backlog items](work-multi-team-ownership-backlogs.md)
 - [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md)
-- [Filter backlogs and boards](../how-to/filter-backlog-or-board.md)  
+- [Product backlog controls](product-backlog-controls.md)
+- [Filter product and portfolio backlogs ](filter-backlogs.md)
+
+
+[!INCLUDE [temp](../_shared/image-differences.md)]

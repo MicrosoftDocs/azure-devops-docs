@@ -38,7 +38,7 @@ Build your backlog and then start driving your code development efforts.
 
 ## Concepts 
   
-- [Grooming your backlog](/vsts/work/concepts/best-practices-product-backlog?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)           
+- [Groom your backlog](/vsts/work/backlogs/best-practices-product-backlog?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)           
 - [About permissions and access](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 - [Backlog items & multi-team ownership](work-multi-team-ownership-backlogs.md) 
 - [Share work plans](/vsts/work/track/share-plans?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)

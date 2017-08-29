@@ -14,21 +14,15 @@ ms.date: 08/28/2017
 
 **VSTS | TFS 2017 Update 2**
 
-Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) process to automatically build your Java web app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process. 
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your Java web app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process.
 
-## Prerequisites 
+## Prerequisites
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-tfs.md)]
 
-## Open your team project
-
-[!INCLUDE [include](../../_shared/open-team-project.md)]
-
 ## Import sample app code
-
-[!INCLUDE [include](../_shared/import-code-quickstart-intro.md)]
 
 [!INCLUDE [include](_shared/import-code.md)]
 

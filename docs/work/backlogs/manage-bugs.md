@@ -39,7 +39,7 @@ In addition, you can:
 ## Capture bugs  
 You can track bugs in much the same way that you track product backlog items (PBIs) or user stories. Using the bug work item form, you capture the code defect in the Title, Steps to Reproduce, and other fields.  
 
-You can create bugs from the [web portal](add-work-items.md), Visual Studio/Team Explorer, a [work item template](../productivity/work-item-template.md), or through one of the testing tools.  
+You can create bugs from the [web portal](add-work-items.md), Visual Studio/Team Explorer, a [work item template](work-item-template.md), or through one of the testing tools.  
 
 ### Bug work item form 
 
@@ -334,7 +334,7 @@ To track your bugs and integrate with other resources available to you, see thes
 - [Scrum and working with sprints best practices](../scrum/best-practices-scrum.md)  
 - [Follow a work item or pull request](../../collaborate/follow-work-items.md)
 - [Move, change type, or delete work items](remove-delete-work-items.md)
-- [Pre-populate fields using a template](../productivity/work-item-template.md)
+- [Pre-populate fields using a template](work-item-template.md)
 - [Copy or clone a work item](copy-clone-work-items.md#copy-clone)
 
 ### Integrate & Test resources

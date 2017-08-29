@@ -6,6 +6,6 @@
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=agile
     items:
-    - name: "Scale & Configure Teams"
+    - name: Agile at Scale
       tocHref: /vsts/
       topicHref: /vsts/work/scale/index

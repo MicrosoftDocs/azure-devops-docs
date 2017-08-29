@@ -33,8 +33,7 @@ For a list of all link types and supported link relationships, see [Link work it
   
 <a id="link"> </a>  
 ## Link several items to an existing or new work item 
-
-[!INCLUDE [temp](../_shared/image-differences.md)]  
+ 
 
 #### VSTS
 
@@ -80,11 +79,12 @@ When you link work items, you select a link type. In general, use the following 
 
 	For example, here we use the Related link type to link three items to the bug with ID of *46*. The images illustrate the target work item is the bug.  
 
-	**Web Portal (Browser)**   
+# [Browser](#tab/browser) 
 
 	<img src="_img/bulk-modify-link-new-ts.png" alt="TFS web portal, Add link dialog " style="border: 2px solid #C3C3C3;" />  		
 		
-	**Visual Studio**  
+
+# [Visual Studio](#tab/visual-studio) 
 
 	<img src="_img/add-link-related-existing-item-vs.png" alt="Visual Studio, Add link dialog" style="border: 2px solid #C3C3C3;" />  		
 
@@ -99,6 +99,8 @@ When you link work items, you select a link type. In general, use the following 
 0. If you are working from the Query Results page (web portal or Visual Studio), you'll need to bulk save the work items you've modified. Work items are automatically saved when you work from a backlog page.
 
 	<img src="_img/bulk-modify-link-existing-bulk-save-ts.png" alt="Query results page, multi-select items, bulk save modified work items" style="border: 2px solid #C3C3C3;" /> 	
+
+---
 
 ### Link to a new work item   
 
@@ -186,6 +188,7 @@ For additional information, see:
 - [Use Excel to edit parent-child links](../office/bulk-add-modify-work-items-excel.md)
 - [Use Project to edit parent-child and predecessor-successor links](../office/create-your-backlog-tasks-using-project.md)
 - [Link work items to support traceability](../track/link-work-items-support-traceability.md)
+
 
 
 ### Required permissions  

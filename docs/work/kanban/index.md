@@ -16,7 +16,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 
 <!---
 ## Overview  
-[About Kanban and Agile](kanban-overview.md) 
+[About Kanban and Agile project management](kanban-overview.md) 
 [Backlogs, boards, & plans](/vsts/work/backlogs-boards-plans?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)   
 -->
 
@@ -41,6 +41,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 
 ## How-to Guides
 
+- [Filter your Kanban board](filter-kanban-board.md)  
 - [Add columns](add-columns.md)  
 - [WIP limits](wip-limits.md)  
 - [Split columns](split-columns.md)  

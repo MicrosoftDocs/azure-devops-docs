@@ -36,44 +36,23 @@ Your code changes automatically appear on your site:
 
 ## Prepare the Windows VM
 
-Running an ASP.NET Core app on Windows requires some dependencies.
+[!INCLUDE [prepare-aspnetcore-windows-vm](../build-release/apps/_shared/prepare-aspnetcore-windows-vm.md)]
 
-On your VM, open an **Administrator: Windows PowerShell** console. Install IIS and the required .NET features:
-
-```PowerShell
-# Install IIS
-Install-WindowsFeature Web-Server,Web-Asp-Net45,NET-Framework-Features
-
-# Install the .NET Core SDK
-Invoke-WebRequest https://go.microsoft.com/fwlink/?linkid=848827 -outfile $env:temp\dotnet-dev-win-x64.1.0.4.exe
-Start-Process $env:temp\dotnet-dev-win-x64.1.0.4.exe -ArgumentList '/quiet' -Wait
-
-# Install the .NET Core Windows Server Hosting bundle
-Invoke-WebRequest https://go.microsoft.com/fwlink/?LinkId=817246 -outfile $env:temp\DotNetCore.WindowsHosting.exe
-Start-Process $env:temp\DotNetCore.WindowsHosting.exe -ArgumentList '/quiet' -Wait
-
-# Restart the web server so that system PATH updates take effect
-net stop was /y
-net start w3svc
-```
-
-When `net start w3svc` appears, press **Enter** to run it.
-
-[!INCLUDE [temp](_shared/create-deployment-group.md)]
+[!INCLUDE [create-deployment-group](../build-release/apps/_shared/create-deployment-group.md)]
 
 ## Import code for sample app into VSTS
 
-[!INCLUDE [include](../build-release/apps/aspnet/_shared/import-code-aspnet-core-vsts.md)]
+[!INCLUDE [import-code-aspnet-core-vsts](../build-release/apps/aspnet/_shared/import-code-aspnet-core-vsts.md)]
 
 [//]: # (TODO: we want factoring of include like above so we can reuse stock fragments that appear in many many places)
 
 ## Set up continuous integration
 
-[!INCLUDE [include](../build-release/_shared/ci-quickstart-intro.md)]
+[!INCLUDE [ci-quickstart-intro](../build-release/_shared/ci-quickstart-intro.md)]
 
 [//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-[//]: # (TODO: [!INCLUDE [include](../build-release/apps/_shared/create-aspnet-core-build-team-services.md])
+[//]: # (TODO: [!INCLUDE [create-aspnet-core-build-team-services](../build-release/apps/_shared/create-aspnet-core-build-team-services.md])
 
 1. On the **Files** tab of the **Code** hub, click **Set up build**.
 
@@ -129,11 +108,11 @@ Continuous deployment (CD) is a lean practice that your team can use to keep pro
 
 1. In the **Create release definition** wizard, select **IIS Website Deployment** template, and then click **Apply**.
 
- ![Screenshot showing IIS website deployment template](_img/aspnet-core-to-windows-vm/select-iis-website-deployment-release-template.png)
+ ![Screenshot showing IIS website deployment template](../build-release/apps/_shared/_img/aspnet-core-to-windows-vm/select-iis-website-deployment-release-template.png)
 
 1. Click the **Tasks** tab, and then click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*.
 
- ![iis deployment group in release definition](_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
+ ![iis deployment group in release definition](../build-release/apps/_shared/_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
 
 1. Click **Save**. On the Save dialog box, click **OK**.
 

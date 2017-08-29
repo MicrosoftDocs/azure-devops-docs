@@ -12,7 +12,7 @@ ms.date: 05/18/2017
 
 # Define features and epics  
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015</b> 
 
 
 While many teams can work with a flat list of items, sometimes it helps to group related items into a hierarchical structure. 
@@ -31,13 +31,10 @@ Use this topic to learn how to:
 > * Add features and epics  
 > * Add child items   
 
+With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs-boards-plans.md).  
 
 >[!NOTE]  
 >**Feature availability**: Epics are supported on VSTS and TFS 2015 and later versions. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md).  
-
-With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs-boards-plans.md).  
-
-[!INCLUDE [temp](../_shared/image-differences.md)]
 
 
 <a id="view-portfolio-backlog" />
@@ -153,42 +150,27 @@ The work item types you'll see depends on the [process you selected to create yo
 If you want bugs to show up on your backlog and you're not seeing them, [enable them for your team](../customize/show-bugs-on-backlog.md). 
 
  
-## Try this next
-
-Once you've defined features and epics, you can then [organize your backlog](organize-backlog.md) by using the mapping pane or through drag-and-drop operations.  
-
-## Related notes  
+## Try this next  
 
 Portfolio backlogs are not only a great way to organize your project plan, but also a great way to provide visibility of project plans across enterprise teams. With portfolio backlogs, management teams can gain insight into project status across all their development teams. 
 
-- [About teams and Agile tools](../about-teams-and-settings.md)  
-- [Backlogs, boards, and plans](../backlogs-boards-plans.md)  
-- [Work with multi-team ownership of backlog items](work-multi-team-ownership-backlogs.md)  
-- [Filter backlogs, boards, and queries](../how-to/filter-backlog-or-board.md)
-- [Schedule sprints and assign work to sprints](../scrum/define-sprints.md)  
+> [!div class="nextstepaction"]
+> [Organize your backlog](organize-backlog.md)
+
+
+## Related notes  
+
+- [Product backlog controls](product-backlog-controls.md)
+- [Filter product and portfolio backlogs ](filter-backlogs.md)
 - [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md)   
-- [Customize your backlogs or boards (Inheritance process model)](../process/customize-process-backlogs-boards.md)  
+- [Work with multi-team ownership of backlog items](work-multi-team-ownership-backlogs.md)  
+
 
 
 > [!NOTE]
 > To understand the features supported on each backlog and board, and how each display hierarchical items, see [Backlogs, boards, and plans](../backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../scale/visibility-across-teams.md).    
- 
+  
 
-### Backlog controls
 
-| Control           | Function     |
-|------------------|-------------|
-| Backlog          | Switch to backlog view   |
-| Board          | [Switch to Kanban board view](../kanban/kanban-basics.md)  |
-| Mapping: On/Off     | [Turn mapping Off/On](#mapping)    |
-| Parents: Show/Hide         | Turn tree hierarchy on/off     |
-| In progress items: Show/Hide    |Show or hide list of backlog items whose State is active or in progress       |
-| ![Settings icon](../_img/icons/team-settings-gear-icon.png)  | Configure team settings: [Backlogs](../customize/select-backlog-navigation-levels.md), [Working days](../customize/set-working-days.md), [Working with bugs](../customize/show-bugs-on-backlog.md)   |
-| ![full screen icon](../_img/icons/fullscreen_icon.png)/![exit full screen icon](../_img/icons/exitfullscreen_icon.png)   | Enter or exit full screen mode   |
-| ![expand icon](../_img/icons/expand_icon.png) / ![collapse icon](../_img/icons/collapse_icon.png)    | Expand or collapse one level of the tree hierarchy   |
-| ![mail icon](../_img/icons/mail_icon.png)  | Email a copy of your backlog |
-| ![Filter](../_img/icons/tag_filter_icon.png)    | [Turn tag filtering On/Off ](../track/add-tags-to-work-items.md)  |
-
-Note that even if you have show parents turned on, the **Create query** and mail ![mail icon](../_img/icons/mail_icon.png) controls will only list items at the currently selected level. 
 
 

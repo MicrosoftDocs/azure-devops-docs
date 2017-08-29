@@ -7,7 +7,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.topic: landing-page 
-ms.date: 08/03/2017
+ms.date: 08/28/2017
 ---
 
 # Work Items
@@ -24,9 +24,9 @@ Track the features and requirements you're developing, code defects or bugs, and
 ## 5-Minute Quickstarts  
  
 - [Add work items](../backlogs/add-work-items.md)
-- [Drive Git development](/vsts/work/backlogs/connect-work-items-to-git-dev-ops?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json )  
-- [Use @mentions to further discussion](/vsts/notifications/at-mentions?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json )
-- [Use #ID to link to work items](/vsts/notifications/add-links-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json )
+- [Use @mentions to further discussion](/vsts/notifications/at-mentions?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Use #ID to link to work items](/vsts/notifications/add-links-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Drive Git development](/vsts/work/backlogs/connect-work-items-to-git-dev-ops?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json) 
 
 
 ## Step-by-Step Tutorials

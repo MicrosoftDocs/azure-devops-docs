@@ -2,7 +2,8 @@
 title: Exploratory and manual testing of your applications
 description: Drive quality and collaboration throughout the development process with manual and exploratory testing capabilities
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.topic: get-started-article
 ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
 ms.manager: douge

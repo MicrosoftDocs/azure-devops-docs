@@ -219,7 +219,7 @@ ms.date: 07/26/2017
                                         <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
                                         <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
                                         <li><a class="barLink" href="/vsts/work/track/index">Queries</a></li>
-                                        <li><a class="barLink" href="/vsts/work/scale/review-team-plans">Delivery Plans</a></li>
+                                        <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
                                     </ul>
                                     <h3>Analytics</h3>
                                     <ul>
@@ -245,7 +245,7 @@ ms.date: 07/26/2017
                                         <li><a class="barLink" href="">Account Management</a></li>
                                         <li><a class="barLink" href="/vsts/setup-admin/tfs/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="">Billing</a></li>
-                                        <li><a class="barLink" href="/vsts/work/scale/index">Scale and configure teams</a></li>
+                                        <li><a class="barLink" href="/vsts/teams/index">Scale and configure teams</a></li>
                                         <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
                                         <li><a class="barLink" href="/vsts/work/customize/index">Work Item Customization</a></li>

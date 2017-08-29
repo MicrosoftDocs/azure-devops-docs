@@ -1,17 +1,9 @@
-- name: "Scale & Configure Teams" 
+- name: Agile at Scale 
   href: index.md
 - name: Overview
   items:
-  - name: Support a growing organization
-    href: /vsts/work/scale/scale-teams?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
   - name: "About teams & Agile tools"
     href: /vsts/work/about-teams-and-settings?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
-- name: Quickstarts
-  items:
-  - name: "Add a team & team members"
-    href: multiple-teams.md
-  - name: Add a team administrator
-    href: add-team-administrator.md
 - name: Tutorials
   items:
   - name: Manage portfolios
@@ -30,19 +22,13 @@
     href: team-administrator-permissions.md	
 - name: How-to Guides
   items:
-  - name: Set team defaults
-    href: set-team-defaults.md    
-  - name: Define area paths
-    href: /vsts/work/customize/set-area-paths?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
-  - name: Define iteration paths or sprints
-    href: /vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
-  - name: Define a work item template 
-    href: /vsts/work/productivity/work-item-template?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
   - name: Scaled Agile Framework
     href: scaled-agile-framework.md
   - name: Configure team settings
     href: manage-team-assets.md 
     items:
+    - name: Set team defaults
+      href: set-team-defaults.md  
     - name: Select backlog levels
       href: /vsts/work/customize/select-backlog-navigation-levels?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
     - name: "Show bugs on backlogs & boards"
@@ -51,26 +37,8 @@
       href: /vsts/work/customize/set-working-days?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
     - name: Set team favorites 
       href: /vsts/collaborate/set-favorites?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
-  - name: Customize a Kanban board
-    items:
-    - name: Add or edit columns
-      href: /vsts/work/kanban/add-columns?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
-    - name: Customize cards
-      href: /vsts/work/customize/customize-cards?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
-    - name: WIP limits
-      href: /vsts/work//kanban/wip-limits?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
-    - name: Expedite work
-      href: /vsts/work/kanban/expedite-work?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
-    - name: Split columns
-      href: /vsts/work/kanban/split-columns?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
-    - name: Definition of done
-      href: /vsts/work/kanban/definition-of-done?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
-    - name: Reorder cards
-      href: /vsts/work/customize/reorder-cards?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
-  - name: Customize Task board cards
-    href: /vsts/work/customize/customize-cards?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
-  - name: Manage team notifications
-    href: /vsts/collaborate/manage-team-notifications?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+    - name: Manage team notifications
+      href: /vsts/collaborate/manage-team-notifications?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
   - name: Switch project or team focus
     href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
   - name: "Manage permissions & access"

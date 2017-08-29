@@ -2,7 +2,8 @@
 title: Collect diagnostic data while testing your apps
 description: Manual and exploratory testing - collect diagnostic data while testing web and desktop apps with Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.assetid: F536C364-BEFC-48A8-B977-19233941EF6A
 ms.manager: douge
 ms.author: ahomer
