@@ -38,7 +38,7 @@ https://github.com/adventworks/nodejs-sample
 
 In the right panel, search for `node`, select **NodeJS with Gulp**, and then click **Apply**.
 
- ![apply node.js gulp template](_img/apply-nodejs-gulp-template.png)
+ ![apply node.js gulp template](../../apps/nodejs/_img/apply-nodejs-gulp-template.png)
 
 [!INCLUDE [temp](../_shared/set-up-ci-2.md)]
 

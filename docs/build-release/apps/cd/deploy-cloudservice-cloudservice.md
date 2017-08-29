@@ -26,7 +26,7 @@ For more details, see the [Azure Government Cloud deployments](../../concepts/li
 
 Before you begin, you'll need a CI build that publishes your Cloud Service package. To set up CI, see:
 
-* [Build your Azure cloud service](build-aspnet-cloudservice.md)
+* [Build your Azure cloud service](../aspnet/build-aspnet-cloudservice.md)
 
 ### Azure storage
 

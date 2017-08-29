@@ -78,25 +78,6 @@ A new build is started. You'll see a link to the new build on the top of the pag
 
 [//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-[//]: # (TODO: [!INCLUDE [temp](_shared/set-up-cd-1.md])
-
-[//]: # (TODO: ![Screenshot showing release action on build summary](_shared/_img/cicd-get-started-dotnetcore-release.png)
-
-[//]: # (TODO: In the **Create release definition** wizard, select the **IIS Website Deployment** template, and click **Apply**.)
-
-[//]: # (TODO: ![Screenshot showing IIS template](_img/aspnet-core-to-windows-vm/select-iis-website-and-sql-database-deployment-release-template.png)
-
-[//]: # (TODO: Click **Tasks**, and then select the **SQL Deployment** phase. Click 'X' to delete this phase. We won't be deploying a database in this quickstart.)
-
-[//]: # (TODO: Select **IIS Deployment** phase. For the **Deployment Group**, select the deployment group you created earlier, such as *myIIS*. In the **Machine tags** box, select **Add** and choose the *Web* tag.)
-
-[//]: # (TODO: Select the **IIS Web App Manage** task; click 'X' to delete this task. We will not create a new website for this quickstart. Instead, we will deploy to the **default web site**.)
-
-[//]: # (TODO: Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Leave all the other default settings.)
-
-[//]: # (TODO: ![Screenshot showing release definition](_img/aspnet-core-to-windows-vm/cicd-get-started-release-definition.png)
-
-[//]: # (TODO: [!INCLUDE [temp](_shared/set-up-cd-3.md])
 
 ## Set up continuous deployment
 

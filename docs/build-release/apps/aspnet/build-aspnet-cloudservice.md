@@ -49,7 +49,7 @@ Save the build definition and queue a new build by selecting the **Queue new bui
 
 After you've run the build, you're ready to create a release definition to deploy your app to:
 
-* <a href="deploy-cloudservice-cloudservice.md"><img src="../../tasks/deploy/_img/azure-cloud-service-deployment-icon.png"/> An Azure cloud service</a>
+* <a href="../cd/deploy-cloudservice-cloudservice.md"><img src="../../tasks/deploy/_img/azure-cloud-service-deployment-icon.png"/> An Azure cloud service</a>
 
 ## Q&A
 

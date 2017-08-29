@@ -15,7 +15,7 @@ ms.date: 11/10/2016
 
 [ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications, which can be deployed to [Docker containers](https://www.docker.com/what-docker) running on an [Azure Container Service](https://azure.microsoft.com/documentation/articles/container-service-intro/). Visual Studio 2017 RC.3 and newer with the [Continuous Delivery Tools for Visual Studio extension](http://aka.ms/CD4VS) provide an easy way to set up a full continuous integration (CI) and continuous deployment (CD) pipeline for such applications.
 
-[!INCLUDE [temp](./_shared/ci-cd-description.md)]
+[!INCLUDE [temp](../../apps/aspnet/_shared/ci-cd-description.md)]
 
 ## Creating the release pipeline from Visual Studio
 
@@ -46,7 +46,7 @@ ms.date: 11/10/2016
 
 1. In the process of setting up the release pipeline, VSTS will have already queued a build that, when successful, triggered a release. You can examine the results through both the **Builds** and **Releases** tab. If the deployment was successful, you can visit the web site and see it running.
 
-[!INCLUDE [include](./_shared/commit-build-release.md)]
+[!INCLUDE [include](../../apps/aspnet/_shared/commit-build-release.md)]
 
 ## Q&A
 

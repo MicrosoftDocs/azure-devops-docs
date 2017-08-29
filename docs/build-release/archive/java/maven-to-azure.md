@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Build and Deploy your Java app to an Azure web app
 
-**[VSTS](../java/quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../release/previous-version/release-management-overview.md)**
+**[VSTS](quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../release/previous-version/release-management-overview.md)**
 
 In just a few steps you can build and deploy your Java app to Azure. This works from both the Visual Studio Team Services service and your on-premises Team Foundation Server.
 
@@ -19,7 +19,7 @@ In just a few steps you can build and deploy your Java app to Azure. This works 
 
 Upload your code to Visual Studio Team Services or your on-premises Team Foundation Server. Either push your code to Git or check in your code to TFVC.
 
-[!INCLUDE [temp](../_shared/java-web-app-sample-link.md)]
+[!INCLUDE [temp](_shared/java-web-app-sample-link.md)]
 
 ## Enable Java, Apache Tomcat, and FTP for your Azure web app
 
@@ -29,7 +29,7 @@ Upload your code to Visual Studio Team Services or your on-premises Team Foundat
 
 0. Click the deployment credentials part (outlined in red below). Create a user name and password. Click Save. If you previously enabled publishing for a web app, you don't need to do this step.
 
- ![Create FTP deployment credentials](../_shared/_img/deployment-credentials.png)
+ ![Create FTP deployment credentials](_shared/_img/deployment-credentials.png)
 
 ## Create the definition
 
@@ -101,7 +101,7 @@ After a successful build, check your site: ```http://{web_app_name}.azurewebsite
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../_shared/java-web-app-sample-qa.md)]
+[!INCLUDE [temp](_shared/java-web-app-sample-qa.md)]
 
 
 <a name="azure_site_ftp"></a>
