@@ -15,7 +15,7 @@
     - name: .NET for Windows
       href: apps/windows/dot-net.md
     - name: Node.js
-      href: apps/nodejs/build.md
+      href: apps/nodejs/build-gulp.md
     - name: Java
       href: apps/java/build-maven.md
     - name: C++
