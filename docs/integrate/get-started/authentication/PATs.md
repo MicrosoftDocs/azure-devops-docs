@@ -68,12 +68,14 @@ public static async void GetBuilds()
 <br/>
 When your code is working, it's a good time to switch from basic auth to [OAuth](./oauth.md).
 
-## Q&A
 
-<!-- BEGINSECTION class="md-qanda" -->
+## Enabling IIS Basic Authentication invalidates using PATs for TFS
+
+Learn more about [using IIS Basic Authentication with TFS on-premises](iis-basic-auth.md).
+
+
+## Q&A
 
 #### Q: Can I use basic auth with all of the Visual Studio Team Services REST APIs?
 
 A: No. You can use basic auth with most of them, but [accounts](https://visualstudio.com/api/shared/accounts.md) and [profiles](https://visualstudio.com/api/shared/profiles.md) only support [OAuth](./oauth.md).
-
-<!-- ENDSECTION --> 
