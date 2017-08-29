@@ -3,7 +3,8 @@ title: Get the history of an item
 description: Get the history of an item
 ms.assetid: 5a29031c-7fb6-42ac-885c-276b59a4b951
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

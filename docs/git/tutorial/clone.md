@@ -3,7 +3,8 @@ title: Clone an existing Git repo | VSTS & TFS
 description: Create a local copy of an existing repo using Visual Studio or command line clone 
 ms.assetid: b6240e2f-2d3d-4874-9953-7e554d5e3b97
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
@@ -12,7 +13,7 @@ ms.date: 08/11/2017
 
 # Clone an existing Git repo
 
-###### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+##### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
 Create a complete local copy of an existing Git repo using by cloning it. 
 Cloning a repo downloads all [commits](commits.md) and [branches](branches.md) in the repo and sets up a named relationship with the existing repo you cloned.

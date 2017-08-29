@@ -3,7 +3,8 @@ title: Review your repo history | VSTS & TFS
 description: Git history tools with Visual Studio and git command line tools to help you determine the changes in your files.
 ms.assetid: aed4bd97-378a-45f6-8b13-59143fccfe3b
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
@@ -12,7 +13,7 @@ ms.date: 08/14/2017
 
 # Review history
 
-###### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
 Git uses the parent reference information stored in each [commit](commits.md) to manage a full history of your development. 
 Review this commit history to find out when file changes were made and determine differences between versions of your code.

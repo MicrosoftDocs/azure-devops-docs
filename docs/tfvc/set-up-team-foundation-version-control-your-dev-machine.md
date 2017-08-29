@@ -3,7 +3,8 @@ title: Set up Team Foundation Version Control on your dev machine
 description: Set up Team Foundation Version Control on your dev machine
 ms.assetid: 15428962-f5fc-4aa4-81dc-7d53a8e3a00c
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

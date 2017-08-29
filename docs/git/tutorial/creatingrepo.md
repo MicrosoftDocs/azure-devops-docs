@@ -3,7 +3,8 @@ title: Create a new Git repo | VSTS & TFS
 description: Create new Git repos using Visual Studio or command line init 
 ms.assetid: 83c20dac-85c6-4fa0-93b5-912d5477246a
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
@@ -11,6 +12,8 @@ ms.date: 08/11/2017
 ---
 
 #  Create a new Git repo
+
+#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
 A Git repository, or repo, is a folder that you’ve told Git to help you track file changes in. 
 You can have any number of repos on your computer, each stored in their own folder. 

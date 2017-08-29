@@ -3,7 +3,8 @@ title: Branches Command
 description: Branches Command
 ms.assetid: dae78c90-c65a-444d-96cb-84027b91ad4a
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

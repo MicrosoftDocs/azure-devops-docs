@@ -3,7 +3,8 @@ title: Reconcile differences between two folders
 description: Reconcile differences between two folders
 ms.assetid: 8776e3dd-fc70-422c-a191-81b22a989403
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

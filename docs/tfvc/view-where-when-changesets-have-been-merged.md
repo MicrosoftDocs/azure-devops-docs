@@ -3,7 +3,8 @@ title: View where and when changesets have been merged
 description: View where and when changesets have been merged
 ms.assetid: 457567ff-7da3-4098-b047-bd169bad5a38
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

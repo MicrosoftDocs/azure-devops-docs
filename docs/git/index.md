@@ -2,7 +2,8 @@
 title: Git index to content | VSTS & TFS    
 description: Guide to getting started with Git documentation  
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git  
+ms.technology: vsts-sub-git 
+ms.service: vsts-code  
 ms.topic: get-started-article  
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.manager: douge

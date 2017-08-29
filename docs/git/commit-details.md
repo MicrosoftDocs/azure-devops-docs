@@ -4,7 +4,8 @@ description: View Git commit details in Visual Studio
 ms.assetid: 82aa7c10-c304-400a-84c9-d5ed87d66180
 toc: show
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.manager: douge
 ms.author: sancha
 ms.date: 03/14/2017

@@ -3,7 +3,8 @@ title: Compare folders
 description: Compare folders
 ms.assetid: 9c894c51-c34c-4c03-a840-5e485dbbc55d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

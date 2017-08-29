@@ -12,10 +12,20 @@
       href: apps/aspnet/build-aspnet-core.md
     - name: ASP.NET
       href: apps/aspnet/build-aspnet-4.md
+    - name: .NET for Windows
+      href: apps/windows/dot-net.md
     - name: Node.js
       href: apps/nodejs/build.md
     - name: Java
       href: apps/java/build-maven.md
+    - name: C++
+      href: apps/windows/cpp.md
+    - name: Xcode
+      href: apps/mobile/xcode-ios.md
+    - name: Xamarin
+      href: apps/mobile/xamarin.md
+    - name: Universal Windows Platform
+      href: apps/windows/universal.md
   - name: Deploy your app
     items:
     - name: Azure web app
@@ -108,18 +118,8 @@
   items:
   - name: Build your app
     items:
-    - name: .NET for Windows
-      href: apps/windows/dot-net.md
-    - name: C++
-      href: apps/windows/cpp.md
-    - name: Xamarin
-      href: apps/mobile/xamarin.md
-    - name: Xcode
-      href: apps/mobile/xcode-ios.md
     - name: Cordova
       href: apps/mobile/cordova-build.md
-    - name: Universal Windows Platform
-      href: apps/windows/universal.md
     - name: Azure Cloud Service
       href: apps/aspnet/build-aspnet-cloudservice.md
     - name: SQL Server Database

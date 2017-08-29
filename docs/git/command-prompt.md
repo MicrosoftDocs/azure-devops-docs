@@ -4,7 +4,8 @@ description: Commands reference for common Git tasks in Visual Studio or the com
 ms.assetid: FAED51BE-2CB0-46DE-8C72-E4EEF6CB8827
 toc: show
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 12/02/2016

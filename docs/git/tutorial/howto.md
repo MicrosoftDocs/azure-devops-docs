@@ -3,7 +3,8 @@ title: Git frequently asked questions | VSTS & TFS
 description: Tips, Tricks, and HOWTO to complete some less-common Git tasks.
 ms.assetid: b1262306-214c-4422-8eda-d03d05825241
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/23/2016

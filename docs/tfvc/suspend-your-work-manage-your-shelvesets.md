@@ -3,7 +3,8 @@ title: Suspend your work and manage your shelvesets
 description: Suspend your work and manage your shelvesets
 ms.assetid: 91b026a7-a590-45d1-81cf-97dfa7acba1d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

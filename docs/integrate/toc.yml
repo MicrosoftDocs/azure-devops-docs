@@ -38,6 +38,10 @@
     href: ../service-hooks/consumers.md?toc=/vsts/integrate/toc.json
   - name: Service hooks events
     href: ../service-hooks/events.md?toc=/vsts/integrate/toc.json
+- name: Troubleshooting
+  items:
+  - name: IIS Basic Authentication and PATs
+    href: get-started/authentication/iis-basic-auth.md
 - name: Resources
   items:
   - name: REST API reference

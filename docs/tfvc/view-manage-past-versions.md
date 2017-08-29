@@ -3,7 +3,8 @@ title: View and manage past versions
 description: View and manage past versions
 ms.assetid: 752b4a6f-4212-4117-a994-03856d0c8ea9
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

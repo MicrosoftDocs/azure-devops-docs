@@ -3,7 +3,8 @@ title: Associate a file type with a merge tool
 description: Associate a file type with a merge tool
 ms.assetid: be153b5c-b26d-4bfe-aec2-fd23156ead68
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

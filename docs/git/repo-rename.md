@@ -3,7 +3,8 @@ title: Rename a Git repo in your team project | VSTS & TFS
 description: You can rename a Git repository in a few steps, but be aware that your team will have to take a few more steps to adapt to the change.
 ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 12/15/2016

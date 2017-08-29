@@ -3,7 +3,8 @@ title: Destroy Command (Team Foundation Version Control)
 description: Destroy Command (Team Foundation Version Control)
 ms.assetid: fc14da45-891e-4f18-bbc2-9829b80531db
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016
