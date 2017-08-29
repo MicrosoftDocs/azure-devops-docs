@@ -181,7 +181,7 @@ ms.date: 07/26/2017
                 <ul id="services">
                     <li>
                         <a data-default="true" href="#all">All</a>
-                        <ul id="all" class="directory">
+                        <ul id="all" >
                             <li>
                                 <div class="group">
                                     <h3>Code</h3>
@@ -211,6 +211,8 @@ ms.date: 07/26/2017
                                         </li>
                                     </ul>
                                 </div>
+                            </li>
+                            <li>
                                 <div class="group">
                                     <h3>Agile</h3>
                                     <ul>
@@ -254,7 +256,6 @@ ms.date: 07/26/2017
                                     <ul>
                                         <li><a class="barLink" href="/vsts/extend/overview">Custom Extensions</a></li>
                                         <li><a class="barLink" href="/rest/api/vsts/">REST APIs</a></li>
-                                        <li><a class="barLink" href="/vsts-dotnet/api/microsoft.teamfoundation.framework.common">.NET APIs</a></li>
                                         <li><a class="barLink" href="/vsts/ecosystem/sharepoint/index">SharePoint</a></li>
                                         <li><a class="barLink" href="/vsts/work/tfs-ps-sync/index">Project Server integration</a></li>
                                     </ul>
@@ -880,7 +881,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/i_policy.svg" alt="" />
+                                                        <img src="_img/index/i_branch-policies.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -966,25 +967,6 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>REST APIs</h3>
-                                                    <p>Description</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts-dotnet/api/microsoft.teamfoundation.framework.common">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/logo_NET.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>.NET APIs</h3>
                                                     <p>Description</p>
                                                 </div>
                                             </div>
@@ -1159,25 +1141,6 @@ ms.date: 07/26/2017
                                                     </li>
                                                     <li>
                                                         <a class="barLink" href="/rest/api/vsts/">API reference</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardText">
-                                                <h3>.NET Client APIs</h3>
-                                                <ul class="noBullet">
-                                                    <li>
-                                                        <a class="barLink" href="/vsts/integrate/get-started/client-libraries/dotnet">Get Started</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="/dotnet/api/microsoft.teamfoundation?view=vsservicesclient-15.112.1">API reference</a>
                                                     </li>
                                                 </ul>
                                             </div>
