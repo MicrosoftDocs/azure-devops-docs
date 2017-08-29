@@ -28,9 +28,10 @@ Before you begin, you'll need a CI build that publishes your Web Deploy package.
 
 ### IIS configuration
 
-If you are deploying an ASP.NET app, make sure that you have ASP.NET 4.5, ASP.NET 4.6, or the appropriate version of ASP.NET framework installed on each of your IIS web servers. For more information, see [this topic](https://www.asp.net/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
+If you are deploying an ASP.NET or ASP.NET Core app, follow [these steps](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-cli)
+to create a Windows virtual machine that has a default web site running in IIS, and to obtain its public IP address.
 
-If you are deploying an ASP.NET Core application to IIS web servers, follow the additional instructions in [this topic](https://docs.microsoft.com/en-us/aspnet/core/publishing/iis) to install .NET Core Windows Server Hosting Bundle.
+[!INCLUDE [prepare-aspnetcore-windows-vm](../_shared/prepare-aspnetcore-windows-vm.md)]
 
 If you are deploying a Node application, follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to install and configure IISnode on IIS servers.
 
