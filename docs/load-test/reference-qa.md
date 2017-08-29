@@ -2,7 +2,8 @@
 title: Q & A for load testing   
 description: Q & A for load testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
+ms.technology: vsts-sub-load-test
+ms.service: vsts-testing
 ms.assetid: 1A993338-0EEE-4C54-BA07-F9E54312BDE6
 ms.manager: douge
 ms.author: ahomer

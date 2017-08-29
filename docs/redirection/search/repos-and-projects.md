@@ -1,3 +1,3 @@
 ---
-redirect_url: /vsts/search/code/repos-and-projects
+redirect_url: /vsts/search/code/advanced-search
 ---

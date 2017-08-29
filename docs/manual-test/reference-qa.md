@@ -2,7 +2,8 @@
 title: Q & A for manual testing   
 description: Q & A for manual testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.assetid: C9467223-4513-4F46-812C-44FFE2B27F28
 ms.manager: douge
 ms.author: ahomer

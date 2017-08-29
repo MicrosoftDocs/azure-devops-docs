@@ -2,7 +2,8 @@
 title: Run manual tests in Visual Studio Team Services
 description: Run manual tests and record their results with Microsoft Test Runner and Visual Studio Team Services
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
 ms.manager: douge
 ms.author: ahomer

@@ -3,7 +3,8 @@ title: Search for work items in a Visual Studio Team Services account
 description: Use Work Item Search to search across all work item fields over all projects of your Visual Studio Team Services (VSTS) projects, from anywhere and any computer or mobile device, using your web browser. Perform full text searches across all fields to efficiently locate relevant work items.
 ms.assetid: 133EF8B9-B4F9-4057-9CB3-E745A7E0B8F5
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-search
+ms.technology: vsts-sub-cod
+ms.service: vsts-collaboration
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer

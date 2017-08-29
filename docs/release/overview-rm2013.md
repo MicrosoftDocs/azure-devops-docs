@@ -3,7 +3,8 @@ title: Microsoft Release Management 2013 Server and Client Version - Help Conten
 description: Create managed continuous deployment pipelines using Release Management 2013 (server and client version)
 ms.assetid: 15B2F7A1-E9D3-4D4D-9991-A514959D71F2
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-sub-release
+ms:service: vs-rm
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

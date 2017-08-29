@@ -2,7 +2,8 @@
 title: Exploratory and Manual Testing
 description: Manual and exploratory testing index
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.topic: get-started-article
 ms.assetid: EC51D26A-F000-4C37-8498-99C96AC7B751
 ms.manager: douge
