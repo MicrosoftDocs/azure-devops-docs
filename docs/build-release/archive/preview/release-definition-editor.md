@@ -14,12 +14,12 @@ ms.date: 05/05/2017
 
 VSTS contains a new release definition editor that makes creating release definitions much easier and more intuitive.
 While it is in preview, you can turn the new editor on and off at any time. See
-[Enable preview features](../../collaborate/preview-features.md)
+[Enable preview features](../../../collaborate/preview-features.md)
 for more details.
 
 ![Turning the new editor on and off](_img/release-definition-editor/open-editor.png)
 
-For details of how to use the new editor, see [Work with release definitions](../actions/work-with-release-definitions.md).
+For details of how to use the new editor, see [Work with release definitions](../../actions/work-with-release-definitions.md).
 
 ## Q: Can I edit release definitions with both the existing and the new editors interchangeably?
 
@@ -40,21 +40,21 @@ Please send your feedback to [RM_Customer_Queries@microsoft.com](mailto:RM_Custo
 
 ## Related topics
 
-* [Artifacts](../concepts/definitions/release/artifacts.md)
-* [Environments](../concepts/definitions/release/environments.md)
-* [Triggers](../concepts/definitions/release/triggers.md)
-* [Variables](../concepts/definitions/release/variables.md)
-* [Release retention](../concepts/policies/retention.md)
-* [Release security](../concepts/policies/permissions.md#release-permissions)
+* [Artifacts](../../concepts/definitions/release/artifacts.md)
+* [Environments](../../concepts/definitions/release/environments.md)
+* [Triggers](../../concepts/definitions/release/triggers.md)
+* [Variables](../../concepts/definitions/release/variables.md)
+* [Release retention](../../concepts/policies/retention.md)
+* [Release security](../../concepts/policies/permissions.md#release-permissions)
 
 ## See also
 
-* [Work with release definitions](../actions/work-with-release-definitions.md)
+* [Work with release definitions](../../actions/work-with-release-definitions.md)
 
-* [View and manage releases](../actions/view-manage-releases.md)
+* [View and manage releases](../../actions/view-manage-releases.md)
 
-* [Monitor releases and debug deployment issues](../actions/debug-deployment-issues.md)
+* [Monitor releases and debug deployment issues](../../actions/debug-deployment-issues.md)
 
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
