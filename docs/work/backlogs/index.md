@@ -45,7 +45,7 @@ Build your backlog and then start driving your code development efforts.
 
 ## How-to Guides
 
-* [Switch project or team focus](/vsts/work/how-to/switch-team-context-work?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+
 * [Filter backlogs, boards, & queries](/vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 * [Change column options](/vsts/work/how-to/set-column-options?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 * [Email/print work items](/vsts/work/how-to/email-work-items?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)

@@ -26,19 +26,15 @@ You can add one or more charts or widgets to your dashboard. You add several wid
 >
 >To determine the platform and version you're on, see [Provide product and content feedback, Platforms and version support](../provide-feedback.md#platform-version).   
 
-
-
 ## Connect to the web portal for your team project 
 
-To add a widget to a dashboard, you connect to your team project using a [supported web browser](../accounts/requirements.md#supported-browsers).  If you don't have a team project yet, create one in [Visual Studio Team Services](../accounts/create-account-with-personal-msa.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).
+To add a widget to a dashboard, you connect to your team project using a [supported web browser](../accounts/requirements.md#supported-browsers).  If you don't have a team project yet, create one in [VSTS](../accounts/create-account-with-personal-msa.md)<!--- or set one up in an [on-premises TFS](../accounts/create-team-project.md)-->.
 
 Open a browser window and click the **Dashboards** hub. If you haven't been added as a team member, [get added now](../work/scale/multiple-teams.md#add-team-members).
 
-The URL follows this pattern: 
-- VSTS: ```https://{account name}.visualstudio.com/{project name}/_backlogs```  
-- Team Foundation Server (on-premises): ```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```  
+![Open the Dashboards hub](_img/dashboards-go-to.png) 
 
-If you don't see the team or team project you want, click the ![VSTS icon](../work/_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../connect/account-home-pages.md).  
+If you don't see the team or team project you want, click the ![project icon](../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../connect/account-home-pages.md).  
 
 ## Add a widget to a dashboard  
  

@@ -4,27 +4,24 @@
   items:
   - name: Create managed queries to list, update, or chart work items
     href: example-queries.md
-  - name: Individual versus shared queries
-    href: my-shared-queries.md
   - name: Adhoc vs managed queries
     href: /vsts/work/track/adhoc-vs-managed-queries?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
 - name: Quickstarts
   items:
-  - name: View and run a query (NEW)
-  - name: Search box query
+  - name: View and run a query (IN PROGRESS) 
+    href: view-run-query.md
+  - name: Search box query (IN PROGRESS) 
     href: search-box-queries.md
 - name: Tutorials
   items:
-  - name: Organize and run managed queries
+  - name: Organize and run managed queries (IN PROGRESS) 
     href: organize-view-run-queries.md
-  - name: Triage work items
+  - name: Triage work items (IN PROGRESS) 
     href: triage-work-items.md
   - name: Edit a query
     href: using-queries.md
   - name: Bulk modify (web)
     href: /vsts/work/backlogs/bulk-modify-work-items?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
-  - name: Follow work
-    href: /vsts/collaborate/follow-work-items?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
 - name: Samples
   items:
   - name: Query by title, ID, or description
@@ -45,24 +42,14 @@
     href: build-test-integration.md  
   - name: Query by links or attachments
     href: linking-attachments.md 
-- name: Concepts
-  items:
-  - name: Share work plans
-    href: /vsts/work/track/share-plans?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
 - name: How-to Guides
   items:
-  - name: Switch project or team focus
-    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+  - name: "Filter backlogs & queries"
+    href: /vsts/work/backlogs/filter-backlogs?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+  - name: Copy list of work items 
+    href: /vsts/work/backlogs/copy-list?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
   - name: Change column options
     href: /vsts/work/how-to/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
-  - name: Email/print work items
-    href: /vsts/work/how-to/email-work-items?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
-  - name: "Filter, backlogs, boards, & queries"
-    href: /vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
-  - name: Copy as HTML 
-    href: /vsts/work/backlogs/copy-clone-work-items?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
-  - name: "Manage permissions & access"
-    href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: "Query fields, operators & macros"
@@ -73,12 +60,10 @@
     href: /vsts/reference/wiql-syntax?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
 - name: Resources
   items:
+  - name: Work Items
+    href: ../work-items/index.md
   - name: Backlogs
     href: ../backlogs/index.md
-  - name: Kanban
-    href: ../kanban/index.md
-  - name: Scrum
-    href: ../scrum/index.md
   - name: Customization
     href: ../customize/index.md
   - name: Wiql Editor (Marketplace extension)

@@ -63,7 +63,7 @@ See the following topics to make the indicated customizations:
 <a id="witadmin">  </a>  
 ### Import and export WIT definition files 
 
-1.  If you don't have administration permissions for your team project, [get them](../../tfs-server/add-administrator-tfs.md).  
+1.  If you don't have administration permissions for your team project, [get them](../../security/set-project-collection-level-permissions.md).  
 
 2.  Open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
 

@@ -17,7 +17,10 @@ ms.date: 08/11/2017
 <a id="mention-wit-id">  </a>
 
 >[!NOTE]  
-><b>Feature availability: </b>The **#ID** special control is currently supported from VSTS or the web portal for TFS 2015.1 or later versions.    
+><b>Feature availability: </b>The **#ID** special control is currently supported from VSTS and TFS 2015.1 and later versions.    
+
+
+## Link a pull request to a work item 
 
 When leaving a code comment in a pull request, you can type **#** to trigger the **#ID** work item picker. The picker displays a list of 50 work items that you have recently modified or that are assigned to you. 
 
@@ -36,5 +39,10 @@ To further filter the list, continue entering keywords until you've found a matc
 You can also use the **#ID** control in pull request discussions, commit comments, changeset comments, and shelveset comments. 
 
 
+## Related notes
 
+- [Link work items](../work/backlogs/add-link.md)
+- [Save work with commits](../git/tutorial/commits.md)
+- [Pull requests](../git/tutorial/pullrequest.md)
+- [Check in your work to the team code base](../tfvc/check-your-work-team-codebase.md) 
 

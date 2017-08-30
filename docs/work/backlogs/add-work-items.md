@@ -25,7 +25,7 @@ You add work items to plan and manage your project. You use different types of w
 
 <a id="define-new-work">  </a>
 ## Add a work item 
-You can start adding work items once you connect to a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).
+You can start adding work items once you connect to a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md)<!---or set one up in an [on-premises TFS](../../accounts/create-team-project.md)-->.
 
 Here we show how to add work items from the web portal. 
 
@@ -65,6 +65,20 @@ That's it!
 
 Create as many work items as you need of the type you need to track the work you want to manage.  
 
+## Follow a work item
+
+When you want to track the progress of a single work item, click the ![Follow icon](../_img/icons/follow-icon.png) icon. This signals the system to notify you when changes are made to the work item.  
+
+<img src="_img/follow-work-item.png" alt="VSTS Work item form, Follow icon control" style="border: 1px solid #CCCCCC;" />  
+
+You'll only receive notifications when other members of your team modifies the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
+
+Notifications are sent to your preferred email address, which you can change from your [account preferences](../../accounts/account-preferences.md).  
+
+To stop following changes, click the ![Following icon](../../work/_img/icons/following-icon.png)  icon.
+ 
+>[!IMPORTANT]
+>For on-premises TFS, [you must configure an SMTP sever](../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.  
 
 ## Try this next  
 

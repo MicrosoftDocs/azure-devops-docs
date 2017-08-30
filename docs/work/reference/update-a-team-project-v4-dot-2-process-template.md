@@ -259,7 +259,7 @@ Open a web portal and [determine if all features are available to you](../custom
   
 -   You can set project-level permissions or area node permissions from the administration page of web portal. See [Permissions reference](../../security/permissions.md) and [Customize your area or iteration paths](../customize/set-area-paths.md).  update-a-team-project-manually-to-support-test-management.md
   
--   You can set project collection permissions from Team Explorer by choosing **Team, Team Project Collection Settings, Security**, by opening and using the administration console for Team Foundation, or by using the **TFSSecurity** and **tf** command-line tools. For more information, see [Add an administrator](../../tfs-server/add-administrator-tfs.md).  
+-   You can set project collection permissions from Team Explorer by choosing **Team, Team Project Collection Settings, Security**, by opening and using the administration console for Team Foundation, or by using the **TFSSecurity** and **tf** command-line tools. For more information, see [Add an administrator](../../security/set-project-collection-level-permissions.md).  
   
 <a name="launch_mtm"></a> 
 ##3. Launch Microsoft Test Manager  

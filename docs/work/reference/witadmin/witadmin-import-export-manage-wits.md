@@ -40,7 +40,7 @@ For the team project where the work item types are defined, you must have the fo
   
 -   To destroy, import, or rename work item types, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group.  
   
-For more information, see [Add an administrator](../../../tfs-server/add-administrator-tfs.md).  
+For more information, see [Add an administrator](../../../security/set-project-collection-level-permissions.md).  
   
 > [!NOTE]
 >  Even if you log on with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for the **Command Prompt**, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  

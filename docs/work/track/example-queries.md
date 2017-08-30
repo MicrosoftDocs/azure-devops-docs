@@ -31,21 +31,15 @@ For the mechanics of constructing and saving queries, see [Use the query editor 
 
 ## Getting started 
 
-If you are looking for a specific work item, using the adhoc query or search box query may be your best bet. If you want to generate a list of work items to triage, update, chart, or share with others, then use a managed query. 
+If you are looking for a specific work item, use the adhoc search box. If you want to generate a list of work items to triage, update, chart, or share with others, then use a managed query. 
  
-- [Organize and run managed queries](organize-view-run-queries.md)     
+<!---[Organize and run managed queries](organize-view-run-queries.md)-->     
 - [Search box queries](search-box-queries.md)  
 - [Query editor](using-queries.md)    
 - [Query operators & macros](query-operators-variables.md)       
 - [Work item field index](../guidance/work-item-field.md)   
 - [Query permissions](set-query-permissions.md)  
 
-### Query charts and widgets 
-- [Chart a flat-list query](../../report/charts.md)   
-- [Chart for work items widget](../../report/widget-catalog.md#chart-wit-widget)  
-- [Query results widget](../../report/widget-catalog.md#query-results-widget)   
-- [Query tile widget](../../report/widget-catalog.md#query-tile-widget) 
- 
 
 
 <a id="examples"/>
@@ -71,6 +65,13 @@ If you are looking for a specific work item, using the adhoc query or search box
 ## Related notes
 
 To add a custom field to support your query needs, see [Customize your work tracking experience](../customize/customize-work.md). 
+
+To learn about query charts and widgets, see these topics:  
+- [Chart a flat-list query](../../report/charts.md)   
+- [Chart for work items widget](../../report/widget-catalog.md#chart-wit-widget)  
+- [Query results widget](../../report/widget-catalog.md#query-results-widget)   
+- [Query tile widget](../../report/widget-catalog.md#query-tile-widget) 
+ 
 
 ### Visualize related work and other objects 
 

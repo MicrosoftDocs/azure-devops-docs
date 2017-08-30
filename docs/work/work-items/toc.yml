@@ -8,10 +8,6 @@
   items:
   - name: Add a work item
     href: /vsts/work/backlogs/add-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-  - name: "Use @mentions to further discussion" 
-    href: /vsts/notifications/at-mentions?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
-  - name: "Use #ID to link to work items"
-    href: /vsts/notifications/add-links-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Drive Git development
     href: /vsts/work/backlogs/connect-work-items-to-git-dev-ops?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
 - name: Tutorials
@@ -32,16 +28,16 @@
     href: /vsts/work/backlogs/copy-clone-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
 - name: Concepts
   items:
-  - name: Permissions and access for work tracking
-    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-  - name: "Link types & link relationships"
-    href: /vsts/work/track/link-work-items-support-traceability?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json toc.json 
-  - name: Work item form controls
+  - name: Work item form controls 
     href: /vsts/work/concepts/work-item-form-controls?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
+  - name: "Link types & link relationships"
+    href: /vsts/work/track/link-work-items-support-traceability?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json toc.json  
   - name: Share work plans
     href: /vsts/work/track/share-plans?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: New work item experience
     href: /vsts/work/process/new-work-item-experience?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
+  - name: Permissions and access for work tracking
+    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Process guidance
     items:
     - name: Agile process
@@ -107,6 +103,10 @@
         href: ../guidance/cmmi/track-bugs.md
 - name: How-to guides
   items:
+  - name: "Use @mentions to further discussion" 
+    href: /vsts/notifications/at-mentions?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+  - name: "Use #ID to link to work items"
+    href: /vsts/notifications/add-links-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Add tags to work items
     href: /vsts/work/track/add-tags-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Use work item templates

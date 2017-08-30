@@ -28,26 +28,27 @@ We'll walk you through the basics of the web interface and some common tasks.
 
 Get started with a free account, share your code using Git, and track your work using a Kanban board.  
 
-- [Set up/sign up with Team Services](/vsts/accounts/sign-up-for-visual-studio-team-services?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
-- [Code with Git](/vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Track work via Kanban](/vsts/work/kanban/kanban-quickstart?toc=/vsts/user-guide/toc.json&&bc=/vsts/user-guide/breadcrumb/toc.json)
-
+- [Set up/sign up with Team Services](sign-up-invite-teammates.md)  
+- [Code with Git](code-with-git.md)
+- [Set up continuous integration & delivery](/vsts/build-release/actions/ci-cd-part-1?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Plan & track work](plan-track-work.md)
 
 
 ## Step-by-Step Tutorials  
 
 - [Set favorites](/vsts/collaborate/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Follow work and pull requests](/vsts/collaborate/follow-work-items??toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Follow work and pull requests](/vsts/collaborate/follow-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Enable preview features](/vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
  
 
 ## Concepts  
 
-- [Key concepts](../concepts.md)    
-- [Clients and tools](../tools.md)     
-- [Software development roles](../roles.md)   
-- [FAQs](../faqs.md)- 
-- [What's the difference between VSTS and TFS?](../about-vsts-tfs.md)  
+- [Key concepts](/vsts/concepts.md)    
+- [Source control](source-control.md)   
+- [Kanban & Agile tools](/vsts/work/overview?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Clients and tools](/vsts/tools?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)     
+- [Software development roles](/vsts/roles?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)   
+- [What's the difference between VSTS and TFS?](/vsts/about-vsts-tfs?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
 
 
 ## Reference

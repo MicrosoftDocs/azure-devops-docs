@@ -31,15 +31,17 @@ If you need to add a team first, see [Multiple agile teams](../work/scale/multip
 
 ## Connect to the web portal for your team project 
 
-To add and manage dashboards, you connect to your team project using a [supported web browser](../accounts/requirements.md#supported-browsers).  If you don't have a team project yet, create one in [Visual Studio Team Services](../accounts/create-account-with-personal-msa.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).
+To add and manage dashboards, you connect to your team project using a [supported web browser](../accounts/requirements.md#supported-browsers). If you don't have a team project yet, create one in [VSTS](../accounts/create-account-with-personal-msa.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).  
 
-Open a browser window and click the **Dashboards** hub. If you haven't been added as a team member, [get added now](../work/scale/multiple-teams.md#add-team-members).
+Open a browser window and click the **Dashboards** hub. 
 
-The URL follows this pattern: 
+![Open the Dashboards hub](_img/dashboards-go-to.png) 
+
+<!---The URL follows this pattern: 
 - VSTS: ```https://{account name}.visualstudio.com/{project name}/_backlogs```  
 - Team Foundation Server (on-premises): ```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```  
-
-If you don't see the team or team project you want, click the ![VSTS icon](../work/_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../connect/account-home-pages.md).  
+-->
+If you don't see the team or team project you want, click the ![project icon](../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../connect/account-home-pages.md).    
 
 ## Add and name your dashboard 
 
@@ -50,8 +52,6 @@ From the dashboards tab, click the ![plus icon](../Work/_img/icons/green_plus_ic
 If you don't see the ![plus icon](../work/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team. Either [switch the context to your team](#switch-team-context), or request you be added as a [team admin](../work/scale/add-team-administrator.md). 
 
 With the dashboard selected, you can add [widgets and charts to the dashboard](add-widget-to-dashboard.md). Or, you can [add charts to a team dashboard from the Work, Build, or Test hubs](add-charts-to-dashboard.md).
-
-
 
 <a id="manage">  </a> 
 ## Manage dashboards
@@ -125,26 +125,16 @@ As you can see, you can use team dashboards to provide guidance and keep your te
 
 > [!div class="nextstepaction"]
 > [Add a widget to a dashboard](widget-catalog.md)
-> or
-> [Review the widget catalog](widget-catalog.md)
-> or
-> [Review Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
 
 
 See these additional resources to help you support your team:  
-- [Manage team assets](../work/scale/manage-team-assets.md)  
-- [Share queries with your team](../work/track/using-queries.md) 
-
-
-
-
+- [Review the widget catalog](widget-catalog.md)
+- [Review Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
 
 
 ### Extensibility 
 
 Using the REST API service, you can [add a dashboard](/vsts/integrate/api/dashboard/dashboards) or [create a dashboard widget ](https://www.visualstudio.com/en-us/integrate/extensions/develop/add-dashboard-widget). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](/vsts/integrate/api/dashboard/overview).  
-
-
 
 
 <!---  

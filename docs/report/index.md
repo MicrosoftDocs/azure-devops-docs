@@ -24,7 +24,6 @@ Start gaining visibility into how your team is progressing by adding one or more
 - [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  
 
 
-
 ## Step-by-Step Tutorials
 
 - [Configure a cumulative flow chart](guidance/cumulative-flow.md)
