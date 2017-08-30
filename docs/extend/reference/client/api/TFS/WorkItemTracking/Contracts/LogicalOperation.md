@@ -2,7 +2,8 @@
 title: TFS/WorkItemTracking/Contracts LogicalOperation API | Extensions for Visual Studio Team Services
 ms.assetid: 5e449e47-c42f-8af0-6ba3-24807283c2d0
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -3,7 +3,8 @@ title: VSS/Common/Contracts/Platform ActiveExtensionsData API | Extensions for V
 description: Data related to Active Extensions
 ms.assetid: ac6ac498-d5aa-523a-798d-405a79febd2f
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -3,7 +3,8 @@ title: TFS/Core/Contracts TeamProjectCollection API | Extensions for Visual Stud
 description: Data contract for a TeamProjectCollection.
 ms.assetid: 70fa2ad7-fbf7-0588-16c9-62b4588e0b53
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

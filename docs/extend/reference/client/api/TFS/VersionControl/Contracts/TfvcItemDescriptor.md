@@ -3,7 +3,8 @@ title: TFS/VersionControl/Contracts TfvcItemDescriptor API | Extensions for Visu
 description: Item path and Version descriptor properties
 ms.assetid: 4b5d97aa-b26d-0096-0496-5700f847dc28
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

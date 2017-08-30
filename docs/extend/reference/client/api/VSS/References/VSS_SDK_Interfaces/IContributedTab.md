@@ -2,7 +2,8 @@
 title: VSS/References/VSS.SDK.Interfaces IContributedTab API | Extensions for Visual Studio Team Services
 ms.assetid: 18284bee-cdea-00d5-9d1f-21fa6189fd62
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

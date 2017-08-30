@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts RunUpdateModel API | Extensions for Visual Studio Team Services
 ms.assetid: e7662998-2b1d-6c96-cadb-b8411030a590
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces NavigationContextLevels API | Extensions fo
 description: flags to show which tokens of the navigation context are present in the current request url. the request url&#x27;s context part are formed like http://server:port[/{collection}[/{project}[/{team}]]][/_admin]/_{controller}/{action} The tokens {collection}, {project} and {team} are navigation level tokens whereas _admin segment is a switch to show admin areas of the site.
 ms.assetid: 01705247-4515-7dae-2571-e59459b2a804
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

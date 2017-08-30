@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskReference API | Extensions for Visual Studio Team Services
 ms.assetid: 9fc7f5f0-ec7c-438e-3cbe-c8d4f543bb61
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

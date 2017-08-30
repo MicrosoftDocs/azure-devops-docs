@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts TestReport API | Extensions for Visual Studio Team Services
 ms.assetid: 42c3a548-aae5-71da-c940-20fe2a5b52ae
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.technology: vsts-sub-integrate
+ms.service: vsts-integrate
 title: Authorization using OAuth 2.0 | Visual Studio Team Services REST APIs
 description: Use OAuth 2.0 authentication to get started with the REST APIs for Visual Studio Team Services.
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA

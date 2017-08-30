@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces HubsContext API | Extensions for Visual Stu
 description: Context information containing the relevant hubs and hub groups for a given context
 ms.assetid: 8b581cec-a84c-e3f4-b618-7eab3ae14ad1
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

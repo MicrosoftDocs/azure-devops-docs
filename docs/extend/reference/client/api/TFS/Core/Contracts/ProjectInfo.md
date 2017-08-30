@@ -3,7 +3,8 @@ title: TFS/Core/Contracts ProjectInfo API | Extensions for Visual Studio Team Se
 description: Contains information of the project
 ms.assetid: c28201ab-4507-191e-e99d-167d718087c5
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces ResolvedDataProvider API | Extensions for V
 description: Entry for a specific data provider&#x27;s resulting data
 ms.assetid: 93d4dd41-05d8-5c89-108a-a4179253a433
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

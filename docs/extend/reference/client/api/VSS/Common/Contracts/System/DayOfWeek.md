@@ -2,7 +2,8 @@
 title: VSS/Common/Contracts/System DayOfWeek API | Extensions for Visual Studio Team Services
 ms.assetid: caef37cf-c704-9413-97b0-72f9c9a40332
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces TeamFoundationServiceHostModel API | Extens
 description: Data contract to represent a given team foundation service host (account, collection, deployment)
 ms.assetid: 2e1b7e89-40dd-b658-351f-4bfe8f27984d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

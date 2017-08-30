@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts BuildPollingSummaryEvent API | Extensions for Visual Studio Team Services
 ms.assetid: ec6f9008-0cf4-bc9d-0619-73100ac348f8
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

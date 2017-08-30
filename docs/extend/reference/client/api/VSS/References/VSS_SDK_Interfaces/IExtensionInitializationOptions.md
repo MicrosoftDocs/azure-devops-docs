@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces IExtensionInitializationOptions API | E
 description: Options for the extension&#x27;s initialization method
 ms.assetid: 0fa9821c-ca82-1bb3-9801-d859845925fd
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

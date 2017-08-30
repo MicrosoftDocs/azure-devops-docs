@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/TaskRestClient TaskHttpClient2_1 API | Extensions for Visual Studio Team Services
 ms.assetid: f36d9960-013f-1ca3-0f1c-8598cace1f4d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

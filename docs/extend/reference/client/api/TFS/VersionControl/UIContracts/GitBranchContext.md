@@ -2,7 +2,8 @@
 title: TFS/VersionControl/UIContracts GitBranchContext API | Extensions for Visual Studio Team Services
 ms.assetid: 3ec8451a-765b-28bf-8a5f-d25b180f8156
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

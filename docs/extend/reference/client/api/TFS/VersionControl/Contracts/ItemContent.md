@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts ItemContent API | Extensions for Visual Studio Team Services
 ms.assetid: 6168c0ae-5f16-570f-4032-4938581ec9c8
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts XamlBuildDefinition API | Extensions for Visual Studio Team Services
 ms.assetid: f6cbd2c1-a6f0-0bb3-425f-8242bb8385f4
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

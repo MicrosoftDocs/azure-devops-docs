@@ -3,7 +3,8 @@ title: TFS/Core/Contracts TeamContext API | Extensions for Visual Studio Team Se
 description: The Team Context for an operation.
 ms.assetid: ed8224a3-58fc-a5b3-86a2-1f956fff316d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

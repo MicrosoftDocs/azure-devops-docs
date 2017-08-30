@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts TimelineReference API | Extensions for Visual Studio Team Services
 ms.assetid: 68f48f8b-0dee-7134-5496-c6668e3b78ac
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

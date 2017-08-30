@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces AccessPointModel API | Extensions for Visua
 description: Model to represent a public access uri
 ms.assetid: c0e299fb-8732-8d5b-8a33-acd34e43afa9
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

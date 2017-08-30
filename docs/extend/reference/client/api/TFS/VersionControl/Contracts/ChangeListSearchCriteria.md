@@ -3,7 +3,8 @@ title: TFS/VersionControl/Contracts ChangeListSearchCriteria API | Extensions fo
 description: Criteria used in a search for change lists
 ms.assetid: fffe97e2-8202-fb1b-c67a-503d89745753
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

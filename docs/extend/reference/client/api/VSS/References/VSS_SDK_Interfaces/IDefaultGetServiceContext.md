@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces IDefaultGetServiceContext API | Extensi
 description: Context passed to GetServiceInstance
 ms.assetid: 8b2653a7-2a13-4d86-9581-827e8d6df5af
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

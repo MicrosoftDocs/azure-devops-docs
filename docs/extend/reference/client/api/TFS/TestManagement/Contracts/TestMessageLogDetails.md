@@ -3,7 +3,8 @@ title: TFS/TestManagement/Contracts TestMessageLogDetails API | Extensions for V
 description: An abstracted reference to some other resource. This class is used to provide the build data contracts with a uniform way to reference other resources in a way that provides easy traversal through links.
 ms.assetid: aba1b659-f693-658a-040a-6a1a6afafc4f
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

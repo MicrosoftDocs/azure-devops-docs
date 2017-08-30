@@ -3,7 +3,8 @@ title: TFS/WorkItemTracking/ExtensionContracts IWorkItemChangedArgs API | Extens
 description: Interface defining the arguments for notifications sent by the ActiveWorkItemService
 ms.assetid: b7ff8a40-558d-abf9-5033-b84652e24903
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

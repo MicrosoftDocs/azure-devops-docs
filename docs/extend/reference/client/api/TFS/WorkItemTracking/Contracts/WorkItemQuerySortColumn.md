@@ -2,7 +2,8 @@
 title: TFS/WorkItemTracking/Contracts WorkItemQuerySortColumn API | Extensions for Visual Studio Team Services
 ms.assetid: 426ab3f4-edf8-2524-50fe-2c996b8e2f3d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

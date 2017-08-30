@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces IHostManagementServiceOptions API | Ext
 description: Options passed to the host management service
 ms.assetid: 932e8c72-fe3b-d883-a585-d6c3a309814a
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: VSS/WebApi/Contracts Operation API | Extensions for Visual Studio Team Services
 ms.assetid: 4e1b2f22-5fa9-2b2d-f1b9-f22270477f6a
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

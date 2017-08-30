@@ -2,7 +2,8 @@
 title: TFS/Work/Contracts BoardColumn API | Extensions for Visual Studio Team Services
 ms.assetid: 4cfeaa4a-2181-a85c-5833-bf446d5be1cf
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

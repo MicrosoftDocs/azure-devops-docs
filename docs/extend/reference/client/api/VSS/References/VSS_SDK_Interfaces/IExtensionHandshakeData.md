@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces IExtensionHandshakeData API | Extension
 description: Data passed to the host from an extension frame via the initial handshake
 ms.assetid: 2eaf803e-d682-7903-eaf2-456f59913a4d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

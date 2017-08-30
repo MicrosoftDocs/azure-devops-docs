@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts PropertyValue API | Extensions for Visual Studio Team Services
 ms.assetid: 7566ca43-591e-4ec3-05bc-6632988b7629
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

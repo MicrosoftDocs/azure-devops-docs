@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces IXDMChannel API | Extensions for Visual
 description: Interface for a single XDM channel
 ms.assetid: b0808b49-1647-8473-4190-53444ce711ec
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

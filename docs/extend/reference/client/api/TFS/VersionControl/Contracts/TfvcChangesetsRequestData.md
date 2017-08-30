@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts TfvcChangesetsRequestData API | Extensions for Visual Studio Team Services
 ms.assetid: efbfd9c7-f83f-c597-046e-66c6dc42dfa9
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

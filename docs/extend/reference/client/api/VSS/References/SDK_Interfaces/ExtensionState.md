@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces ExtensionState API | Extensions for Visual 
 description: The state of an extension
 ms.assetid: e859c469-cb91-8fb4-97f6-f6472c452dd0
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

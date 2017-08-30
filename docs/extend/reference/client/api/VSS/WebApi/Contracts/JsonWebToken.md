@@ -2,7 +2,8 @@
 title: VSS/WebApi/Contracts JsonWebToken API | Extensions for Visual Studio Team Services
 ms.assetid: ce564ac7-bfef-1768-ebec-def2d9793402
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

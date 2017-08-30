@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces WebPageDataProviderPageSource API | Extensi
 description: Contextual data for web-page-related data providers about the originating (host/source) page
 ms.assetid: 851f3787-a045-eca0-354f-5de943261595
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

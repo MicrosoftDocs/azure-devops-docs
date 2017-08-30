@@ -2,7 +2,8 @@
 title: TFS/Core/Contracts ConnectedServiceKind API | Extensions for Visual Studio Team Services
 ms.assetid: 92b8ab43-a24b-7b2b-c58b-8902aed6bf49
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

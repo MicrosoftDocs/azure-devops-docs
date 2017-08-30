@@ -2,7 +2,8 @@
 title: TFS/Work/RestClient WorkHttpClient2_1 API | Extensions for Visual Studio Team Services
 ms.assetid: b59a8628-1fca-36f2-f88f-e6801bcda3f2
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

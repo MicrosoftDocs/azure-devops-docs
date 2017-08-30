@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts QueryDeletedOption API | Extensions for Visual Studio Team Services
 ms.assetid: 243c80c5-77bf-7c46-a1e9-1aefaab4a1b6
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

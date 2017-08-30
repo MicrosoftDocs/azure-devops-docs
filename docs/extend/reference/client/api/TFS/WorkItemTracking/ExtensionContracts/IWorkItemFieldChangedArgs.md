@@ -3,7 +3,8 @@ title: TFS/WorkItemTracking/ExtensionContracts IWorkItemFieldChangedArgs API | E
 description: Interface defining the arguments for the &#x27;onFieldChanged&#x27; notification sent by the ActiveWorkItemService
 ms.assetid: af50cfca-f26b-c17a-68d1-e423437c3598
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

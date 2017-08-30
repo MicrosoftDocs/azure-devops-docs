@@ -2,7 +2,8 @@
 title: Assign paid extension access to users for Visual Studio Team Services
 description: Assign paid extension access to users for Visual Studio Team Services
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vsts-sub-marketplace
+ms.service: vsts-marketplace
 ms.assetid: 13c4b901-70d6-488f-9ee5-00eb3121b977 
 ms.manager: douge
 ms.author: elbatk

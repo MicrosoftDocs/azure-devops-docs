@@ -3,7 +3,8 @@ title: TFS/Core/Contracts WebApiTagDefinition API | Extensions for Visual Studio
 description: The representation of a tag definition which is sent across the wire.
 ms.assetid: 031940e6-6203-0a3b-58af-2629ed438606
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

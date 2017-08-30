@@ -2,7 +2,8 @@
 title: VSS/WebApi/Contracts ExtensionLicenseData API | Extensions for Visual Studio Team Services
 ms.assetid: 8385bb5c-a687-be64-0e52-60288b265e35
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

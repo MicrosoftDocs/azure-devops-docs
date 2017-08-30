@@ -3,7 +3,8 @@ title: TFS/Work/Contracts TeamMemberCapacity API | Extensions for Visual Studio 
 description: Represents capacity for a specific team member
 ms.assetid: aa768dd8-d65f-ba8b-7770-857396e07015
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

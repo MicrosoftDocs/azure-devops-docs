@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts DefinitionQueueStatus API | Extensions for Visual Studio Team Services
 ms.assetid: 7586dd3e-2742-6bb2-3764-d6ebab7c99e8
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

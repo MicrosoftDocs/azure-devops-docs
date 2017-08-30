@@ -2,7 +2,8 @@
 title: TFS/WorkItemTracking/Contracts TreeNodeStructureType API | Extensions for Visual Studio Team Services
 ms.assetid: f969d690-821a-bdad-fdd3-e6d5d07a1496
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

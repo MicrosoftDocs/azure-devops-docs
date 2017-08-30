@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts QueuePriority API | Extensions for Visual Studio Team Services
 ms.assetid: 04ef4239-e7f9-06cf-3e1d-95e3d154c69e
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

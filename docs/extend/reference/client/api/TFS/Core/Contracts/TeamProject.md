@@ -3,7 +3,8 @@ title: TFS/Core/Contracts TeamProject API | Extensions for Visual Studio Team Se
 description: Represents a Team Project object.
 ms.assetid: 148745ef-ce48-34c7-69eb-5dc2720a15ee
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

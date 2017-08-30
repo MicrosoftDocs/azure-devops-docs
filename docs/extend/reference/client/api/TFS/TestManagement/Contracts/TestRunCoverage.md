@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts TestRunCoverage API | Extensions for Visual Studio Team Services
 ms.assetid: 76b402a0-7fb9-b4d4-73f0-b05b2fce703a
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

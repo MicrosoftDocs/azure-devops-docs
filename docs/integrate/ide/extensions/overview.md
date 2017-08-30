@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate-ide
+ms.technology: vsts-sub-integrate
+ms.service: vsts-integrate
 title: Building extensions for Visual Studio
 description: Build extensions for Visual Studio
 ms.assetid: A5549D87-6E1E-4429-BE46-8A46A7260A83

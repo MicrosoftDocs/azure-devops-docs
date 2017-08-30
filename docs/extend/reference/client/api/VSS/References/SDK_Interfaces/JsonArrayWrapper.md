@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces JsonArrayWrapper API | Extensions for Visua
 description: Class used to wrap arrays in an object.
 ms.assetid: 07d27add-d6a2-df58-6082-91dfe3472be7
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

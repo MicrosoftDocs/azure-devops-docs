@@ -3,7 +3,8 @@ title: TFS/WorkItemTracking/Services Work Item Form Service API | Extensions for
 description: Host service for interacting with the currently active work item form (work item currently displayed in the UI).
 ms.assetid: 49bc7312-2aee-433d-9336-394b6c426051
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

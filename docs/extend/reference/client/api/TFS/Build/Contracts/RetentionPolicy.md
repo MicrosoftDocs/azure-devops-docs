@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts RetentionPolicy API | Extensions for Visual Studio Team Services
 ms.assetid: 4e7f23b0-6b93-91a6-57e4-b2008a817382
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

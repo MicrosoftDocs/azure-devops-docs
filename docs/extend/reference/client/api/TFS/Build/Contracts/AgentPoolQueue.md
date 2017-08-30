@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts AgentPoolQueue API | Extensions for Visual Studio Team Services
 ms.assetid: f28d1c93-dc54-cfcb-4659-90a9c2a6f33b
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

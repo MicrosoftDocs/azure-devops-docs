@@ -2,7 +2,8 @@
 title: TFS/WorkItemTracking/Contracts IdentityReference API | Extensions for Visual Studio Team Services
 ms.assetid: e9f88dbd-60d9-08be-1cff-b80feec40795
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

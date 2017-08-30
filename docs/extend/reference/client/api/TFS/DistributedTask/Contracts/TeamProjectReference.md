@@ -3,7 +3,8 @@ title: TFS/DistributedTask/Contracts TeamProjectReference API | Extensions for V
 description: Represents a shallow reference to a TeamProject.
 ms.assetid: 6218ff01-01ba-8494-488f-4c2678a1713c
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

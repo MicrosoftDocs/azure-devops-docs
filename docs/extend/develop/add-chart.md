@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-extend
+ms.service: vsts-extend
 title: Add a chart | Extensions for Visual Studio Team Services
 description: Add a chart to your extension in Visual Studio Team Services.
 ms.assetid: ff6b9bbf-fb57-469b-8191-922660393a21

@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces IHostDialogService API | Extensions for
 description: Service which manages showing dialogs in the parent frame
 ms.assetid: 8f15dcd0-c8e1-ba70-5a9b-daa6f4c97f38
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts TfvcLabelRequestData API | Extensions for Visual Studio Team Services
 ms.assetid: 9e867e6d-4e80-61c0-5fa3-8d04a52e7fbf
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

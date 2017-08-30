@@ -2,7 +2,8 @@
 title: VSS/WebApi/Contracts JWTAlgorithm API | Extensions for Visual Studio Team Services
 ms.assetid: 7f6556c5-a72a-151b-aad7-6259225b5ce7
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

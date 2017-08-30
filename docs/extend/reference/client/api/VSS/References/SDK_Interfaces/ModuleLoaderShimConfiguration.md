@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces ModuleLoaderShimConfiguration API | Extensi
 description: AMD javascript module loader shim configuration
 ms.assetid: 78217c62-a1e1-9ba7-fe95-34db9fe8b95a
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

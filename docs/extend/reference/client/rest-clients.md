@@ -3,7 +3,8 @@ title: REST Clients | Extensions for Visual Studio Team Services
 description: Libraries for calling Visual Studio Team Services REST APIs.
 ms.assetid: 7cf04c04-4e20-442f-a108-293294a591ad
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

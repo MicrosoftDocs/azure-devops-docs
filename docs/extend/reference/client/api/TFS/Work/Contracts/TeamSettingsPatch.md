@@ -3,7 +3,8 @@ title: TFS/Work/Contracts TeamSettingsPatch API | Extensions for Visual Studio T
 description: Data contract for what we expect to receive when PATCH
 ms.assetid: e0082c04-07fb-af61-5cfa-c1a0d78cb608
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

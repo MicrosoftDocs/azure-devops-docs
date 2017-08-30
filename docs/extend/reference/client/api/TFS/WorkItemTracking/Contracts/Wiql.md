@@ -2,7 +2,8 @@
 title: TFS/WorkItemTracking/Contracts Wiql API | Extensions for Visual Studio Team Services
 ms.assetid: 02ab9ebd-915b-7cbd-d724-a36bd48725b7
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

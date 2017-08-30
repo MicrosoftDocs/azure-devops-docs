@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts BuildProcessTemplate API | Extensions for Visual Studio Team Services
 ms.assetid: def03e10-3239-e7e7-fd87-c1cf1f1f99c9
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

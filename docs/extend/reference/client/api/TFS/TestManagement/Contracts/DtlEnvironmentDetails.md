@@ -3,7 +3,8 @@ title: TFS/TestManagement/Contracts DtlEnvironmentDetails API | Extensions for V
 description: This is a temporary class to provide the details for the test run environment.
 ms.assetid: b437c5ea-15e9-2378-be94-4bf77ebaafa8
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

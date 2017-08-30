@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 title: TFS/Dashboards/WidgetContracts IWidget API | Extensions for Visual Studio Team Services
 description: Documentation for the IWidget contract.
 ms.assetid: 2F1CB8E2-5027-4134-A96B-E60979DFD11E

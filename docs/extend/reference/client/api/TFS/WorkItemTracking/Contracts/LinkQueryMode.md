@@ -2,7 +2,8 @@
 title: TFS/WorkItemTracking/Contracts LinkQueryMode API | Extensions for Visual Studio Team Services
 ms.assetid: f6b60bb7-7621-ecc5-7a94-c018934525b4
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

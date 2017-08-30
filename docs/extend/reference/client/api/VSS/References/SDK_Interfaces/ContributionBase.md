@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces ContributionBase API | Extensions for Visua
 description: Base class shared by contributions and contribution types
 ms.assetid: f4b51e85-b7a0-fc22-2a14-c3e1aafce419
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

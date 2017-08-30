@@ -2,7 +2,8 @@
 title: TFS/VersionControl/TfvcRestClient TfvcHttpClient2_1 API | Extensions for Visual Studio Team Services
 ms.assetid: 77aa8667-9f64-465d-a0ae-378c0cd91cb6
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

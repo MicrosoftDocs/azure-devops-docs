@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts TfvcShallowBranchRef API | Extensions for Visual Studio Team Services
 ms.assetid: 9bad0dc3-774b-0441-c4e4-d793aa9807b3
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

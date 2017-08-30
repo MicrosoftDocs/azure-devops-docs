@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces IExtensionDataService API | Extensions 
 description: Service which allows for getting and setting of extension data
 ms.assetid: 8692bca2-8ce7-a91f-d508-1f2f1535c4c7
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts GitPathAction API | Extensions for Visual Studio Team Services
 ms.assetid: aa7bbe8c-3694-ef35-654c-b87ef5fc4bec
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

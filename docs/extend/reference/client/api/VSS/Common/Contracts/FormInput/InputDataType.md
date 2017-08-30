@@ -2,7 +2,8 @@
 title: VSS/Common/Contracts/FormInput InputDataType API | Extensions for Visual Studio Team Services
 ms.assetid: bf98d53e-33e9-85be-6d77-a061ca463b3d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

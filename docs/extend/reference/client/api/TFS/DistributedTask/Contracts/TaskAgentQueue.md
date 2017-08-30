@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskAgentQueue API | Extensions for Visual Studio Team Services
 ms.assetid: dd622ef8-d1b2-df8a-33c1-61756ec3280f
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

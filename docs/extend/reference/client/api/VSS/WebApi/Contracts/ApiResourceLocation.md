@@ -3,7 +3,8 @@ title: VSS/WebApi/Contracts ApiResourceLocation API | Extensions for Visual Stud
 description: Information about the location of a REST API resource
 ms.assetid: 37361343-f0c8-b926-f488-9327d6f58edc
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

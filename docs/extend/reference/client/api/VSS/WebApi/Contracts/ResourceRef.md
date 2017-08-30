@@ -2,7 +2,8 @@
 title: VSS/WebApi/Contracts ResourceRef API | Extensions for Visual Studio Team Services
 ms.assetid: 9efb176f-d663-b70b-a3f1-285a6dd05710
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

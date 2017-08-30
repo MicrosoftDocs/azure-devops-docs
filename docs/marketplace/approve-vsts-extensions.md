@@ -3,7 +3,8 @@ title: Approve extension requests for your Team Services account
 description: Approve extension requests for your Team Services account
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vsts-sub-marketplace
+ms.service: vsts-marketplace
 ms.assetid: 376c55bd-f4e2-47d5-a7a3-400e2cd5d84e 
 ms.manager: douge
 ms.author: elbatk

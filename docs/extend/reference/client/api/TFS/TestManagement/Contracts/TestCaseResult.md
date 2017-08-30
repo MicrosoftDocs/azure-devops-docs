@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts TestCaseResult API | Extensions for Visual Studio Team Services
 ms.assetid: 8e625aa7-d1fa-ff00-d98b-41c483ec82c2
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

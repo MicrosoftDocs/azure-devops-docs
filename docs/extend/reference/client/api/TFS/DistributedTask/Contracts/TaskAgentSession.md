@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskAgentSession API | Extensions for Visual Studio Team Services
 ms.assetid: ecbcde63-fa84-c605-b0be-e134f1fb8be5
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

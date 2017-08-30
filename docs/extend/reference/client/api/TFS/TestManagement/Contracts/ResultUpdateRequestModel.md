@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts ResultUpdateRequestModel API | Extensions for Visual Studio Team Services
 ms.assetid: ad33f9cb-2335-4fbb-1cac-a76707053a92
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

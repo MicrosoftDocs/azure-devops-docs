@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts ProcessTemplateType API | Extensions for Visual Studio Team Services
 ms.assetid: d71298af-9f46-ee18-0b80-1de34b38108d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

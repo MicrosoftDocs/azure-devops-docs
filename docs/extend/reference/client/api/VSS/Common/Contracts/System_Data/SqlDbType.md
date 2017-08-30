@@ -3,7 +3,8 @@ title: VSS/Common/Contracts/System.Data SqlDbType API | Extensions for Visual St
 description: Specifies SQL Server-specific data type of a field, property, for use in a System.Data.SqlClient.SqlParameter.
 ms.assetid: 32e64e0a-65fb-56dd-512c-0de496068625
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

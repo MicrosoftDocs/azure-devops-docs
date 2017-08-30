@@ -2,7 +2,8 @@
 title: Add a dashboard widget | Extensions for Visual Studio Team Services
 description: Tutorial for creating a widget that you can then add to a dashboard  
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-extend
+ms.service: vsts-extend
 ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
 ms.topic: get-started-article
 ms.manager: douge

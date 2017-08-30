@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts BuildDefinitionChangingEvent API | Extensions for Visual Studio Team Services
 ms.assetid: 02c32b7c-dec1-fa40-d05b-7541aeb9a3ca
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

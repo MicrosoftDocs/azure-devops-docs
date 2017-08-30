@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 title: TFS/Dashboards/WidgetContracts CustomSettings API | Extensions for Visual Studio Team Services
 description: Documentation for the CustomSettings contract.
 ms.assetid: 19CB39FF-952A-4071-BED8-48F4DE45F082

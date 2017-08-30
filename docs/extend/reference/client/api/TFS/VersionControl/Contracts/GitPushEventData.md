@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts GitPushEventData API | Extensions for Visual Studio Team Services
 ms.assetid: ec8b6f6c-6de0-e0f1-30f3-2fcb76913144
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

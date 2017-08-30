@@ -3,7 +3,8 @@ title: TFS/WorkItemTracking/Services Work Item Form Navigation Service API | Ext
 description: Host service for opening the work item form
 ms.assetid: 924f89e9-0914-2308-8090-b0543fac0556
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

@@ -3,7 +3,8 @@ title: TFS/VersionControl/Contracts ItemDetailsOptions API | Extensions for Visu
 description: Optional details to include when returning an item model
 ms.assetid: 79e2e4d9-0734-6683-2ea5-8c1a58db8f0b
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

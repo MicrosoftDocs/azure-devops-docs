@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts TfvcChangesetRef API | Extensions for Visual Studio Team Services
 ms.assetid: b270d57b-325b-8d01-c26b-7edb0430098f
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

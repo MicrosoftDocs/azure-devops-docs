@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskAgentJobRequest API | Extensions for Visual Studio Team Services
 ms.assetid: d7b51206-ba6b-5491-75eb-f29f281f1065
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

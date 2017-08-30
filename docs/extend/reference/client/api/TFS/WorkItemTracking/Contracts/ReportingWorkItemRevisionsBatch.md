@@ -2,7 +2,8 @@
 title: TFS/WorkItemTracking/Contracts ReportingWorkItemRevisionsBatch API | Extensions for Visual Studio Team Services
 ms.assetid: eb3a4c15-e88b-bee1-fb17-b9ef029163c9
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

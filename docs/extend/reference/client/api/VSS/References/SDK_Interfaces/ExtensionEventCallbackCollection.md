@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces ExtensionEventCallbackCollection API | Exte
 description: Collection of event callbacks - endpoints called when particular extension events occur.
 ms.assetid: 7c547d92-34fc-1a7f-51e5-92288ffde29d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

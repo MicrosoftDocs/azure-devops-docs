@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces IContributedMenuSource API | Extensions
 description: Interface for a registered object that contributes menu item(s)
 ms.assetid: 3575f71f-0dbe-679d-bb31-4b54bf5bb2e3
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

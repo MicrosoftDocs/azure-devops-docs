@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskInputDefinition API | Extensions for Visual Studio Team Services
 ms.assetid: 1efcdb43-b206-5b68-ac0b-56a7563f3f08
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

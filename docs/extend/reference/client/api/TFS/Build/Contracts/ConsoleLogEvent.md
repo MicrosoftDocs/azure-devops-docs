@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts ConsoleLogEvent API | Extensions for Visual Studio Team Services
 ms.assetid: 7a90a46f-393b-3a34-89a9-1843ecc56068
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

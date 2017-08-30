@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts ContinuousDeploymentDefinition API | Extensions for Visual Studio Team Services
 ms.assetid: a16c38cd-8daf-4825-c086-30e3b0b117b2
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

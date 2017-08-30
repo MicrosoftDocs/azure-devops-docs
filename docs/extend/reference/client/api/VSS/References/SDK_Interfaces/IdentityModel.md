@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces IdentityModel API | Extensions for Visual S
 description: Model to represent a TeamFoundationIdentity
 ms.assetid: eb147689-f0a3-ff84-cc6d-73436442432b
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

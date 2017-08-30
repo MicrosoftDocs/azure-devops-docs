@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts TestVariable API | Extensions for Visual Studio Team Services
 ms.assetid: 69bc738a-2ac5-f7dc-fa48-1263b24ca7ec
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

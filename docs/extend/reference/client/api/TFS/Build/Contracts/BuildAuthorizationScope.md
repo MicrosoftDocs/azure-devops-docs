@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts BuildAuthorizationScope API | Extensions for Visual Studio Team Services
 ms.assetid: 5432e038-94b1-ac95-e0ea-4ec8907ec7b5
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces IExternalControlInterfaceInfo API | Ext
 description: Information about a control interface that is exposed across iframe boundaries
 ms.assetid: 02ab4cb6-6f67-e9f8-bc32-d0ad990c476f
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

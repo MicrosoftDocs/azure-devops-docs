@@ -3,7 +3,8 @@ title: TFS/build-release/Contracts ShallowReference API | Extensions for Visual 
 description: An abstracted reference to some other resource. This class is used to provide the build data contracts with a uniform way to reference other resources in a way that provides easy traversal through links.
 ms.assetid: 06d77d3e-a866-3b91-f7e5-8160ea7eefd0
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

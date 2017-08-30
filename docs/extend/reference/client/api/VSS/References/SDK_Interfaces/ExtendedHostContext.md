@@ -2,7 +2,8 @@
 title: VSS/References/SDK.Interfaces ExtendedHostContext API | Extensions for Visual Studio Team Services
 ms.assetid: 149e2bd4-a8c9-09da-9c61-09e65c880d62
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 title: Web Context | Extensions for Visual Studio Team Services
 description: Context data avaialble in your web extensions 
 ms.assetid: b926a050-1e70-4907-8963-e4f2ee9939e5

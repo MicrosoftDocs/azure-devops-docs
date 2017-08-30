@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts FileContentMetadata API | Extensions for Visual Studio Team Services
 ms.assetid: cce957e9-276b-b50e-874b-42e648df8826
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

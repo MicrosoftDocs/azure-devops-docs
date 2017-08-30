@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces DataProviderQuery API | Extensions for Visu
 description: A query that can be issued for data provider data
 ms.assetid: a9bb478b-d7fe-5d30-db69-5bc45e713967
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

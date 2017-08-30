@@ -3,7 +3,8 @@ title: TFS/VersionControl/Contracts GitMediaObjectRef API | Extensions for Visua
 description: Encapsulates the reference metadata of a Git media object.
 ms.assetid: 00720d1a-2cfa-6461-fc4b-8167df5f2013
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

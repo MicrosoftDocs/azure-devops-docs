@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 title: TFS/Dashboards/WidgetHelpers WidgetconfigurationSave API | Extensions for Visual Studio Team Services
 description: Documentation for the WidgetconfigurationSave helper class.
 ms.assetid: F2FC3C7B-BF8B-459B-8BF3-EA1A805A5ADC

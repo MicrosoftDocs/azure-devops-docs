@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces ExtensionEventCallback API | Extensions for
 description: Base class for an event callback for an extension
 ms.assetid: 8c259c9e-50f1-adfc-e70d-576f2a7b4dfc
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

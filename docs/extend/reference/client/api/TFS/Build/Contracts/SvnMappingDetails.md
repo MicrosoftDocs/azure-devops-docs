@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts SvnMappingDetails API | Extensions for Visual Studio Team Services
 ms.assetid: 4a072e3e-cc22-d3c6-60f0-85fcc3838efe
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

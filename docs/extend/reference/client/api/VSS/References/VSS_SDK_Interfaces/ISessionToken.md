@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces ISessionToken API | Extensions for Visu
 description: Session token whose value can be added to the Authorization header in requests to VSTS endpoints
 ms.assetid: e31f5820-ea3a-0adc-0975-118982dcb331
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

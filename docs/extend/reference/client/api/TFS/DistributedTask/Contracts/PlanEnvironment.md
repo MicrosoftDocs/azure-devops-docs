@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts PlanEnvironment API | Extensions for Visual Studio Team Services
 ms.assetid: 0e70ae54-5dda-3635-5740-de5d24900890
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts IdentityRefWithVote API | Extensions for Visual Studio Team Services
 ms.assetid: bcc5666f-cdb1-23a0-18fa-d6a93bffb079
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

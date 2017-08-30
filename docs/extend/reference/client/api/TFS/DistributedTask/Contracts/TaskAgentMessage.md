@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskAgentMessage API | Extensions for Visual Studio Team Services
 ms.assetid: 447567e7-829d-2575-c8c0-5b315c8a6fb7
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts ScheduleDays API | Extensions for Visual Studio Team Services
 ms.assetid: 2da9488b-1666-dae0-151e-8f655e28ed23
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

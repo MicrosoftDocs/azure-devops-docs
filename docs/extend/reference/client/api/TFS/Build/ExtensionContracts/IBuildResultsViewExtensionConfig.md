@@ -3,7 +3,8 @@ title: TFS/build-release/ExtensionContracts IBuildResultsViewExtensionConfig API
 description: Interface defining the configuration that is shared between extension targeted at &quot;ms.vss-build-web.build-results-view&quot; and the host
 ms.assetid: 70f8aa50-d7cf-5deb-ff37-0f06a26f593f
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -3,7 +3,8 @@ title: TFS/DistributedTask/Contracts ServiceEndpoint API | Extensions for Visual
 description: Represents an endpoint which may be used by an orchestration job.
 ms.assetid: 38c251e5-9a98-d26d-2167-73b385234785
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces ExtensionDataCollectionQuery API | Extensio
 description: Represents a query to receive a set of extension data collections
 ms.assetid: 31f779a7-7735-0000-213d-831dc241c62f
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -3,7 +3,8 @@ title: TFS/build-release/Contracts DefinitionReference API | Extensions for Visu
 description: A reference to a definition.
 ms.assetid: d8b850a1-706e-3229-7fe2-309e61862b54
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

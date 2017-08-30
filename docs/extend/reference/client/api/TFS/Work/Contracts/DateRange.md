@@ -2,7 +2,8 @@
 title: TFS/Work/Contracts DateRange API | Extensions for Visual Studio Team Services
 ms.assetid: 6a641371-d27b-e306-e9f5-d8214cbc737f
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

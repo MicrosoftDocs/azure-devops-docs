@@ -2,7 +2,8 @@
 title: TFS/TestManagement/RestClient TestHttpClient2_2 API | Extensions for Visual Studio Team Services
 ms.assetid: f94cc434-0936-ae2b-eddc-54eb9c5d21ea
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

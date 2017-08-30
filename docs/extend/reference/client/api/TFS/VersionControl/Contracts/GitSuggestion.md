@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts GitSuggestion API | Extensions for Visual Studio Team Services
 ms.assetid: 12041471-1ad7-d22a-4f65-52de0e4184bc
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts TfvcBranch API | Extensions for Visual Studio Team Services
 ms.assetid: 6d7ce45c-2962-1bce-b698-5f58bb411536
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

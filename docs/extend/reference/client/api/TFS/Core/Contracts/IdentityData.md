@@ -2,7 +2,8 @@
 title: TFS/Core/Contracts IdentityData API | Extensions for Visual Studio Team Services
 ms.assetid: 7b70d742-006c-58f1-8a6f-55db6b94e704
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

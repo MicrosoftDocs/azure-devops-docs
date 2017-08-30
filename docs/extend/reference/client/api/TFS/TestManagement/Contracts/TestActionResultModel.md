@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts TestActionResultModel API | Extensions for Visual Studio Team Services
 ms.assetid: 076fbaff-95b1-0334-cc71-ceb5be95c317
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

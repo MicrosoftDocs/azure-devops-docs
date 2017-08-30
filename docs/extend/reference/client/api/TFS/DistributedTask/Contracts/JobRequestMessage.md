@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts JobRequestMessage API | Extensions for Visual Studio Team Services
 ms.assetid: 82ef08c9-37ab-873e-8003-7bd8f8894d70
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

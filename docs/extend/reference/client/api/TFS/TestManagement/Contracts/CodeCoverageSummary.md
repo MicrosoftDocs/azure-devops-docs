@@ -3,7 +3,8 @@ title: TFS/TestManagement/Contracts CodeCoverageSummary API | Extensions for Vis
 description: Represents the code coverage summary results Used to publish or retrieve code coverage summary against a build
 ms.assetid: 098e1c8c-a7b6-0deb-a1ce-74efc4ac59c6
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

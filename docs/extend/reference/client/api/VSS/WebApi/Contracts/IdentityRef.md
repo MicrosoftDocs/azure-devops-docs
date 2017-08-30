@@ -2,7 +2,8 @@
 title: VSS/WebApi/Contracts IdentityRef API | Extensions for Visual Studio Team Services
 ms.assetid: 5f1a7145-28a9-669e-bf34-fb509e9f7951
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts PlanUpdateModel API | Extensions for Visual Studio Team Services
 ms.assetid: 898c0ab2-91cc-d547-a98d-94e4d5aa44ed
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -3,7 +3,8 @@ title: REST API samples for Visual Studio Team Services and Team Foundation Serv
 description: REST API samples for Visual Studio Team Services and Team Foundation Server.
 ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.technology: vsts-sub-integrate
+ms.service: vsts-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/25/2016

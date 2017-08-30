@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts TfvcCheckinEventData API | Extensions for Visual Studio Team Services
 ms.assetid: db72028e-96fe-a8f4-da8d-1988a1787d96
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

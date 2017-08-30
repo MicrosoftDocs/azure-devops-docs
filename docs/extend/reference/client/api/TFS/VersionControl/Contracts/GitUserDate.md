@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts GitUserDate API | Extensions for Visual Studio Team Services
 ms.assetid: 648bce87-ce2f-6264-3d61-4430374d6230
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

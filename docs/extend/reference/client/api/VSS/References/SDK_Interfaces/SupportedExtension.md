@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces SupportedExtension API | Extensions for Vis
 description: Information about the extension
 ms.assetid: 45dcffe1-9139-d8a9-4204-697a6a1adc32
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

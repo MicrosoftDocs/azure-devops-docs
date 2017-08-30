@@ -3,7 +3,8 @@ title: TFS/build-release/Contracts InformationNode API | Extensions for Visual S
 description: Data representation of an information node associated with a build
 ms.assetid: d0822b03-5b46-0b84-1277-034da053c55e
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

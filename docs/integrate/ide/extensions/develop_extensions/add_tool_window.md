@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate-ide
+ms.technology: vsts-sub-integrate
+ms.service: vsts-integrate
 title: I want to add a custom tool window
 description: A walkthrough to show you how to create a custom tool window.
 ms.assetid: 66F28F7A-3369-4238-BF01-E63C912827A1

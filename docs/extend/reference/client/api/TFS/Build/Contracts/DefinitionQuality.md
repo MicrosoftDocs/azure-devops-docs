@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts DefinitionQuality API | Extensions for Visual Studio Team Services
 ms.assetid: 9de9a8e6-f52d-9024-de00-463026169be8
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

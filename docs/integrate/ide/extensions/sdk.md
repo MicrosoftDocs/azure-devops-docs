@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate-ide
+ms.technology: vsts-sub-integrate
+ms.service: vsts-integrate
 title: SDK reference for Visual Studio extensions
 description: Find the Visual Studio SDK reference on MSDN.
 ms.assetid: D52D06E0-B0EE-499D-B4CF-B89F6237AE27

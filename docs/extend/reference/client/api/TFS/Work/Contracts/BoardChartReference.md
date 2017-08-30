@@ -2,7 +2,8 @@
 title: TFS/Work/Contracts BoardChartReference API | Extensions for Visual Studio Team Services
 ms.assetid: 72193b47-46b7-9cde-15d5-8472d3482b35
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

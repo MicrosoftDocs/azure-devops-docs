@@ -2,7 +2,8 @@
 title: TFS/Work/Contracts Board API | Extensions for Visual Studio Team Services
 ms.assetid: 4a641c56-ab54-3eba-8a3f-ec5c396792ee
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

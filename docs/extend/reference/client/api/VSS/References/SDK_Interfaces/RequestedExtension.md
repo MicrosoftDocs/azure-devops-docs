@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces RequestedExtension API | Extensions for Vis
 description: A request for an extension (to be installed or have a license assigned)
 ms.assetid: 652df4ba-6caf-fb8b-faf8-261aebd431f3
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces WebContext API | Extensions for Visual Stud
 description: Context information for all web access requests
 ms.assetid: 6092465a-6730-ae0b-adc8-dda13b52522d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

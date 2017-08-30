@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces Contribution API | Extensions for Visual St
 description: An individual contribution made by an extension
 ms.assetid: a907ad7e-405a-24c8-79bb-4a33eebd82dc
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

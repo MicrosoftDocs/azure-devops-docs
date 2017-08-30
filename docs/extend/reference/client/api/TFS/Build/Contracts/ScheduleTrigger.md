@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts ScheduleTrigger API | Extensions for Visual Studio Team Services
 ms.assetid: a983d1c1-3064-4c60-9dde-7869eacdf43f
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

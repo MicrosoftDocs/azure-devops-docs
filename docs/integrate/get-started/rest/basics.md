@@ -3,7 +3,8 @@ title: Get started with the REST APIs for Visual Studio Team Services and Team F
 description: Learn the basic patterns for using the REST APIs for Visual Studio Team Services and Team Foundation Server.
 ms.assetid: bdddaf58-6849-4134-a295-2887dafeeea3
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.technology: vsts-sub-integrate
+ms.service: vsts-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

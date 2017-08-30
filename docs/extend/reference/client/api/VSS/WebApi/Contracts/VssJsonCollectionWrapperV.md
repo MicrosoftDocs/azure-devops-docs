@@ -3,7 +3,8 @@ title: VSS/WebApi/Contracts VssJsonCollectionWrapperV API | Extensions for Visua
 description: This class is used to serialized collections as a single JSON object on the wire, to avoid serializing JSON arrays directly to the client, which can be a security hole
 ms.assetid: 692d78b4-c587-6ace-d121-82488f976d8a
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

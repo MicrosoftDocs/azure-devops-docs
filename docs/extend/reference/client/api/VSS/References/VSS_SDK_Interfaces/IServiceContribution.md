@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces IServiceContribution API | Extensions f
 description: Information about an individual contribution that contributes one or more services registered by id.
 ms.assetid: 90963d2b-1eeb-adbb-6357-6e071249f21e
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts JobAssignedEvent API | Extensions for Visual Studio Team Services
 ms.assetid: 9c0af47b-eb1c-1dc6-7394-df61aafa5d02
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

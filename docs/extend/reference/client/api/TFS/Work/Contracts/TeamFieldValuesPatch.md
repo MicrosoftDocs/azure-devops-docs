@@ -3,7 +3,8 @@ title: TFS/Work/Contracts TeamFieldValuesPatch API | Extensions for Visual Studi
 description: Expected data from PATCH
 ms.assetid: aaa16b45-f7b8-02a0-a3b2-652dfeb1b446
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

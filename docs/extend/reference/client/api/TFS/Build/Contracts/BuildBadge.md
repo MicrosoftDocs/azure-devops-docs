@@ -3,7 +3,8 @@ title: TFS/build-release/Contracts BuildBadge API | Extensions for Visual Studio
 description: Data representation of a build badge
 ms.assetid: ddd4dcfd-24b6-a094-ee50-a91526674d2c
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/WorkItemTracking/Contracts WorkItemDelete API | Extensions for Visual Studio Team Services
 ms.assetid: e24515e5-0ddc-4a77-3bf4-7837de8ed752
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk
