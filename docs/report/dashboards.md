@@ -21,13 +21,11 @@ ms.date: 06/02/2017
 
 Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your team project site. 
 
-The Overview page provides access to a default team dashboard which you can customize by adding, removing, or rearranging the tiles. Each tile corresponds to a widget that provides access to one or more features or functions.  
-
-<img src="_img/dashboard-view-with-widgets.png" alt="Example dashboard" style="border: 2px solid #C3C3C3;" />   
+The Overview page provides access to a default team dashboard which you can customize by adding, removing, or rearranging the tiles. Each tile corresponds to a widget that provides access to one or more features or functions.   
 
 Anyone with access to the team project, including [stakeholders](../quickstart/get-started-stakeholder.md), can view dashboards. However, only team admins can add or modify dashboards. 
 
-If you need to add a team first, see [Multiple agile teams](../work/scale/multiple-teams.md). 
+If you need to add a team first, see [add teams and team members](../work/scale/multiple-teams.md). 
 
 ## Connect to the web portal for your team project 
 
@@ -80,7 +78,8 @@ To manage dashboards, click the ![configure icon](_img/icons/configure-icon.png)
 2. Click ![delete icon](_img/icons/delete_icon.png) to delete a dashboard and then click Save.  
 
 3. Select the Auto-refresh checkbox when you want the dashboard to refresh every five minutes. 
-4.  
+
+ 
 <a id="permissions">  </a>
 ### Required permissions
  
@@ -124,7 +123,7 @@ When you're finished with your changes, click ![Exit edit-dashboard-mode icon](_
 As you can see, you can use team dashboards to provide guidance and keep your team in sync, providing visibility across the org as to status, trends, and progress. 
 
 > [!div class="nextstepaction"]
-> [Add a widget to a dashboard](widget-catalog.md)
+> [Add a widget to a dashboard](add-widget-to-dashboard.md)
 
 
 See these additional resources to help you support your team:  
