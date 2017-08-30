@@ -85,61 +85,52 @@ ms.date: 07/26/2017
                                 </div>
                             </li>
                             <li>
-                                
-                                                <h3>Add your code</h3>
-                                                <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/git/share-your-code-in-git-vs">Git Repositories</a></li>
-                                                </ul>
-                                            
+                                <h3>Add your code</h3>
+                                <ul class="noBullet">
+                                    <li><a class="barLink" href="/vsts/git/share-your-code-in-git-vs">Git Repositories</a></li>
+                                </ul>
                             </li>
                             <li>
-                                
-                                                <h3>Continuous integration &amp; delivery</h3>
-                                                <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/deploy-azure/">Deploy to Azure</a></li>
-                                                    <li><a class="barLink" href="/vsts/build-release/">Build and release</a></li>
-                                                    <li><a class="barLink" href="/vsts/package/">Package management</a></li>
-                                                </ul>
-                                           
+                                <h3>Continuous integration &amp; delivery</h3>
+                                <ul class="noBullet">
+                                    <li><a class="barLink" href="/vsts/deploy-azure/">Deploy to Azure</a></li>
+                                    <li><a class="barLink" href="/vsts/build-release/">Build and release</a></li>
+                                    <li><a class="barLink" href="/vsts/package/">Package management</a></li>
+                                </ul>
                             </li>
                             <li>
- 
-                                                <h3>Agile</h3>
-                                                <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
-                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
-                                                    <li><a class="barLink" href="/vsts/report/index">Dashboards</a></li>
-                                                </ul>
-                                           
+                                <h3>Agile</h3>
+                                <ul class="noBullet">
+                                    <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
+                                    <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
+                                    <li><a class="barLink" href="/vsts/report/index">Dashboards</a></li>
+                                </ul>
                             </li>
                             <li>
-                               
-                                                <h3>Test your code</h3>
-                                                <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/build-release/test/index">Continuous testing</a></li>
-                                                    <li><a class="barLink" href="/vsts/manual-test/index">Exploratory testing</a></li>
-                                                    <li><a class="barLink" href="/vsts/load-test/index">Load testing</a></li>
-                                                </ul>
-                                            
+                                <h3>Test your code</h3>
+                                <ul class="noBullet">
+                                    <li><a class="barLink" href="/vsts/build-release/test/index">Continuous testing</a></li>
+                                    <li><a class="barLink" href="/vsts/manual-test/index">Exploratory testing</a></li>
+                                    <li><a class="barLink" href="/vsts/load-test/index">Load testing</a></li>
+                                </ul>
                             </li>
                             <li>
-                                
-                                                <h3>Resources</h3>
-                                                <ul class="noBullet">
-                                                    <li>
-                                                        <a class="barLink" href="/vsts/marketplace/overview"><img src="_img/index/team-services-marketplace.svg" alt="" />Marketplace</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/learn-git/"><img src="_img/index/team-services-git.svg" alt="" />Learn about Git</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/devops/"><img src="_img/index/team-services-devops.svg" alt="" />Learn about DevOps</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/agile/"><img src="_img/index/team-services-agile.svg" alt="" />Learn about Agile</a>
-                                                    </li>
-                                                </ul>
-                                            
+                                <h3>Resources</h3>
+                                <ul class="noBullet">
+                                    <li>
+                                        <a class="barLink" href="/vsts/marketplace/overview"><img src="_img/index/team-services-marketplace.svg" alt="" />Marketplace</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="https://www.visualstudio.com/learn-git/"><img src="_img/index/team-services-git.svg" alt="" />Learn about Git</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="https://www.visualstudio.com/devops/"><img src="_img/index/team-services-devops.svg" alt="" />Learn about DevOps</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="https://www.visualstudio.com/agile/"><img src="_img/index/team-services-agile.svg" alt="" />Learn about Agile</a>
+                                    </li>
+                                </ul>
+
                             </li>
                         </ul>
                     </li>
@@ -442,7 +433,8 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Task Reference</h3>
-                                                    <p>Include build, utility, test, and deploy tasks in your  build and release definitions.</p>
+                                                    <p>Include build, utility, test, and deploy tasks in your build and release
+                                                        definitions.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -466,7 +458,8 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Continuous Testing</h3>
-                                                    <p>Automate build-deploy-test workflows to test your changes in a fast, scalable, and efficient manner.</p>
+                                                    <p>Automate build-deploy-test workflows to test your changes in a fast,
+                                                        scalable, and efficient manner.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -504,7 +497,8 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Exploratory &amp; Manual Testing</h3>
-                                                    <p>Drive quality and collaboration throughout the development process using a rich set of tools.</p>
+                                                    <p>Drive quality and collaboration throughout the development process using
+                                                        a rich set of tools.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -547,7 +541,8 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Work Items</h3>
-                                                    <p>Track the features and requirements you're developing, code defects, and issues.</p>
+                                                    <p>Track the features and requirements you're developing, code defects,
+                                                        and issues.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -566,7 +561,8 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Backlogs</h3>
-                                                    <p>Create and organize your backlog, track features, users stories, and bugs.</p>
+                                                    <p>Create and organize your backlog, track features, users stories, and
+                                                        bugs.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -661,7 +657,8 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Agile at Scale</h3>
-                                                    <p>Grow your organization, support autonomous teams, and gain visibility across teams.</p>
+                                                    <p>Grow your organization, support autonomous teams, and gain visibility
+                                                        across teams.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -704,7 +701,8 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>PowerBI</h3>
-                                                    <p>Gain insight and analyze the progress and quality of your team projects across your enterprise.</p>
+                                                    <p>Gain insight and analyze the progress and quality of your team projects
+                                                        across your enterprise.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -785,7 +783,8 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Search</h3>
-                                                    <p>Quickly find the code or work items you need  to access across your account or collection.</p>
+                                                    <p>Quickly find the code or work items you need to access across your account
+                                                        or collection.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -804,7 +803,8 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Feedback</h3>
-                                                    <p>Request feedback on your working apps and quickly capture it within a work item form.</p>
+                                                    <p>Request feedback on your working apps and quickly capture it within a
+                                                        work item form.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -828,7 +828,8 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Account Management</h3>
-                                                    <p>Setup and manage your account and configure key settings to support your teams.</p>
+                                                    <p>Setup and manage your account and configure key settings to support your
+                                                        teams.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -866,7 +867,8 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Security &amp; Identity</h3>
-                                                    <p>Manage permissions and access to your team projects and repositories. </p>
+                                                    <p>Manage permissions and access to your team projects and repositories.
+                                                        </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1009,7 +1011,8 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Discover Extensions</h3>
-                                                    <p>Explore the growing set of extensions available from the Visual Studio Marketplace.</p>
+                                                    <p>Explore the growing set of extensions available from the Visual Studio
+                                                        Marketplace.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1028,7 +1031,8 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Service Hooks</h3>
-                                                    <p>Create subscriptions and configure the integration of VSTS or TFS with third-party apps.</p>
+                                                    <p>Create subscriptions and configure the integration of VSTS or TFS with
+                                                        third-party apps.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1044,11 +1048,11 @@ ms.date: 07/26/2017
                 <ul id="ecosystem">
                     <li>
                         <a href="#ecosystem-all"></a>
-                        <ul id="ecosystem-all" class="cardText">
+                        <ul id="ecosystem-all" class="cardText cols cols4">
                             <li>
                                 <div class="button" style="float:right;">
                                     <a href="https://marketplace.visualstudio.com" style="text-decoration: none;text-transform:inherit;">
-                                        <div style="padding: 12px 15px 18px 15px;font-size:1.6rem;">Marketplace    &gt;</div>
+                                        <div style="padding: 12px 15px 18px 15px;font-size:1.6rem;">Marketplace &gt;</div>
                                     </a>
                                 </div>
                                 <div class="intro">
@@ -1062,58 +1066,57 @@ ms.date: 07/26/2017
                                 </div>
                             </li>
                             <li>
-
-                                                <ul class="noBullet">
-                                                    <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization"><img src="_img/index/logo-work-item-visualizer.svg" alt="" />Work item visualizer</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-slack"><img src="_img/index/logo-slack.svg" alt="" />Slack</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=Berichthaus.TfsTimetracker"><img src="_img/index/logo-timetracker.svg" alt="" />Timetracker</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards"><img src="_img/index/logo_agile-cards.svg" alt="" />Agile cards</a>
-                                                    </li>
-                                                </ul>
-                                           
+                                <ul class="noBullet">
+                                    <li>
+                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization"><img src="_img/index/logo-work-item-visualizer.svg" alt="" />Work item visualizer</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-slack"><img src="_img/index/logo-slack.svg" alt="" />Slack</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=Berichthaus.TfsTimetracker"><img src="_img/index/logo-timetracker.svg" alt="" />Timetracker</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
-
-                                                <ul class="noBullet">                                                    
-                                                    <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins"><img src="_img/index/logo_jenkins.svg" alt="" />Jenkins</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-bamboo"><img src="_img/index/logo_bamboo.svg" alt="" />Bamboo</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search"><img src="_img/index/logo_code-search.svg" alt="" />Code Search</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web"><img src="_img/index/logo_test-feedback.svg" alt="" />Test &amp; Feedback</a>
-                                                    </li>
-                                                </ul>
-                                            
+                                <ul class="noBullet">
+                                    <li>
+                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards"><img src="_img/index/logo_agile-cards.svg" alt="" />Agile cards</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins"><img src="_img/index/logo_jenkins.svg" alt="" />Jenkins</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-bamboo"><img src="_img/index/logo_bamboo.svg" alt="" />Bamboo</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
-                                
-                                                <ul class="noBullet">
-                                                    <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-zendesk"><img src="_img/index/logo_zendesk.svg" alt="" />ZenDesk</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-trello"><img src="_img/index/logo_trello.svg" alt="" />Trello</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice"><img src="_img/index/logo-uservoice.svg" alt="" />UserVoice</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks"><img src="_img/index/logo_octopus-deploy.svg" alt="" />Octopus Deploy</a>
-                                                    </li>
-                                                </ul>
-                                            
+                                <ul class="noBullet">
+                                    <li>
+                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search"><img src="_img/index/logo_code-search.svg" alt="" />Code Search</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web"><img src="_img/index/logo_test-feedback.svg" alt="" />Test &amp; Feedback</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-zendesk"><img src="_img/index/logo_zendesk.svg" alt="" />ZenDesk</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="noBullet">
+                                    <li>
+                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-trello"><img src="_img/index/logo_trello.svg" alt="" />Trello</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice"><img src="_img/index/logo-uservoice.svg" alt="" />UserVoice</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks"><img src="_img/index/logo_octopus-deploy.svg" alt="" />Octopus Deploy</a>
+                                    </li>
+                                </ul>
+
                             </li>
                             <li>
                                 <div class="intro">
@@ -1121,42 +1124,36 @@ ms.date: 07/26/2017
                                 </div>
                             </li>
                             <li>
-                                                <p>Create custom extensions to transform your VSTS look and experience.</p>
-                                           
+                                <p>Create custom extensions to transform your VSTS look and experience.</p>
                             </li>
                             <li>
-                                
-                                                <h3>Custom extensions</h3>
-                                                <ul class="noBullet">
-                                                    <li>
-                                                        <a class="barLink" href="/vsts/extend">Get Started</a>
-                                                    </li>
-                                                </ul>
-                                            
-                                                <h3>REST APIs</h3>
-                                                <ul class="noBullet">
-                                                    <li>
-                                                        <a class="barLink" href="/vsts/integrate/#rest-apis">Get Started</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="/rest/api/vsts/">API reference</a>
-                                                    </li>
-                                                </ul>
-                                            
+                                <h3>Custom extensions</h3>
+                                <ul class="noBullet">
+                                    <li>
+                                        <a class="barLink" href="/vsts/extend">Get Started</a>
+                                    </li>
+                                </ul>
+                                <h3>REST APIs</h3>
+                                <ul class="noBullet">
+                                    <li>
+                                        <a class="barLink" href="/vsts/integrate/#rest-apis">Get Started</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="/rest/api/vsts/">API reference</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
-                                
-                                                <h3>TypeScript libraries</h3>
-                                                <ul class="noBullet">
-                                                    <li>
-                                                        <a class="barLink" href="">Get Started</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="">API reference</a>
-                                                    </li>
-                                                </ul>
-                                            
-                            </li>                                
+                                <h3>TypeScript libraries</h3>
+                                <ul class="noBullet">
+                                    <li>
+                                        <a class="barLink" href="">Get Started</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="">API reference</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>
