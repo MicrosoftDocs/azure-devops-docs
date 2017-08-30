@@ -79,8 +79,8 @@ ms.date: 07/26/2017
                         <a href="#start-all"></a>
                         <ul id="start-all" class="cardText">
                             <li>
-                                <div class="container intro">
-                                    <h2 class="likeAnH1">Get Started with VSTS and TFS</h2>
+                                <div class="intro">
+                                    <h1>Get Started with VSTS and TFS</h1>
                                     <p>Explore our most popular services with quickstarts, samples, and tutorials.</p>
                                 </div>
                             </li>
@@ -1048,16 +1048,16 @@ ms.date: 07/26/2017
                             <li>
                                 <div class="button" style="float:right;">
                                     <a href="https://marketplace.visualstudio.com" style="text-decoration: none;text-transform:inherit;">
-                                        <div style="padding: 18px 15px;font-size:1.8rem;">Marketplace    &gt;</div>
+                                        <div style="padding: 12px 15px 18px 15px;font-size:1.6rem;">Marketplace    &gt;</div>
                                     </a>
                                 </div>
-                                <div class="container intro">
-                                    <h2>Get Extensions</h2>
+                                <div class="intro">
+                                    <h2 style="padding-left:0">Get Extensions</h2>
                                     <p>Integrate your Visual Studio Team Services with popular extensions like Slack or Jenkins</p>
                                 </div>
                             </li>
                             <li>
-                                <div class="container">
+                                <div class="">
                                     <h3>Popular Extensions</h3>
                                 </div>
                             </li>
@@ -1116,8 +1116,8 @@ ms.date: 07/26/2017
                                             
                             </li>
                             <li>
-                                <div class="container intro">
-                                    <h2>Build your own extensions</h2>
+                                <div class="intro">
+                                    <h2 style="padding-left:0">Build your own extensions</h2>
                                 </div>
                             </li>
                             <li>
