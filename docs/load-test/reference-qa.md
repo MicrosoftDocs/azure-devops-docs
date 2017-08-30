@@ -383,9 +383,9 @@ add WebDeploy_x64_en-US.msi to Deployment window. The setup.cmd will look like t
 <a name="jmeter-tests"></a>
 ## Q &amp; A for Apache JMeter tests
 
-### Q: What is the supported JMeter version?
+### Q: What are the supported JMeter versions?
 
-**A**: The load test agents run Apache JMeter version 2.13 only.
+**A**: The latest supported version of Apache JMeter is version 3.2.
 
 ### Q: Which samplers are supported?
 
