@@ -76,16 +76,7 @@ A: The hosted pool provides all Visual Studio Team Services accounts with a sing
 
 ### I'm looking for the hosted XAML build controller. Where did it go?
 
-The hosted XAML build controller is no longer supported.
-Accounts created on or after April 2016 do not have access to it.
-We will remove the hosted XAML build controller from all accounts
-on July 1 2017.
-
-> [!IMPORTANT]
->
-> If you have an account in which you still need to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx), you should set up a [private build server](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx) and switch to a [private build controller](https://msdn.microsoft.com/en-us/library/ee330987%28v=vs.120%29.aspx) now.
->
-> ![change from hosted to private xaml build controller](_img/change-from-hosted-to-private-xaml-build-controller.png)
+The hosted XAML build controller is no longer supported. If you have an account in which you still need to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx), you should set up a [private build server](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx) and a [private build controller](https://msdn.microsoft.com/en-us/library/ee330987%28v=vs.120%29.aspx).
 
 > [!TIP]
 >

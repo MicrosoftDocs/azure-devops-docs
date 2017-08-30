@@ -137,6 +137,8 @@ drop
 
 If you're using a private Windows agent, you can set the **artifact type** option to publish your files to a UNC **file share**. 
 
+> [!NOTE]
+>
 > Use a Windows build agent. This option doesn't work for macOS and Linux agents.
 
 Choose file share to copy the artifact to a file share. Some common reasons to do this:

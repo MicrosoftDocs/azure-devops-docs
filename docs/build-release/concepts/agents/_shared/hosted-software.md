@@ -140,4 +140,4 @@
 
 ### Hosted Linux Preview
 
-See https://github.com/Microsoft/vsts-agent-docker/blob/master/ubuntu/16.04/docker/1.12.1/standard/Dockerfile
+See https://github.com/Microsoft/vsts-agent-docker/blob/master/ubuntu/16.04/standard/Dockerfile.
