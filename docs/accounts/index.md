@@ -21,12 +21,6 @@ DevOps and start working.
 Use this index to setup and manage your account and configure key settings to support your teams. 
 
 
-  
-
-**UNDER CONSTRUCTION -- JUST A PLACEHOLDER FOR NOW**
-
-
-
 ## 5-Minute Quickstarts  
 
 * [Create your account with a person Microsoft account](create-account-with-work-school.md)

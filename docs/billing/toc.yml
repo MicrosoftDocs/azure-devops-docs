@@ -22,7 +22,7 @@
   items:
   - name: Set up billing
     items:
-    - name: Link Azure subscription to Team Services Account
+    - name: Link Azure subscription to VSTS Account
       href: set-up-billing-for-your-account-vs.md
     - name: Add backup billing managers
       href: add-backup-billing-managers.md
@@ -30,21 +30,19 @@
       href: change-azure-subscription.md
   - name: Link work accounts to Visual Studio with MSDN subscriptions
     href: link-msdn-subscription-to-organizational-account-vs.md
-  - name: Pay for Team Services users
+  - name: Pay for VSTS users
     href: buy-basic-access-add-users.md
   - name: How to buy build pipelines
     href: buy-more-build-vs.md
   - name: How to buy load testing services
     href: buy-load-testing-vs.md
-  - name: Change number of paid users
-    href: change-number-of-paid-users.md
   - name: Mange extensions
     items:
     - name: Change number of paid extension users
       href: ../billing/change-number-paid-extension-users.md
     - name: Request permission for an extension
       href: ../marketplace/request-vsts-extension.md?toc=/vsts/accounts/toc.json
-    - name: Approve requests for Team Services extensions
+    - name: Approve requests for VSTS extensions
       href: ../marketplace/approve-vsts-extensions.md?toc=/vsts/accounts/toc.json
     - name: Assign paid extensions access
       href: ../marketplace/assign-paid-extensions.md?toc=/vsts/accounts/toc.json
@@ -68,7 +66,7 @@
     href: billing-concepts.md
   - name: Use backup billing managers
     href: add-backup-billing-managers.md
-  - name: "NEED TO FIX: Using MSDN subscription"
+  - name: Use MSDN subscription with organizational account
     href: link-msdn-subscription-to-organizational-account-vs.md
 - name: Reference
   items:

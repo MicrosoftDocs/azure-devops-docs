@@ -74,15 +74,15 @@
       href: change-application-access-policies-vs.md
     - name: Access with Azure AD
       items:
-      - name: Add Team Services users to your Azure AD
+      - name: Add VSTS users to your Azure AD
         href: add-users-to-aad.md
-      - name: Connect Team Services account to Azure AD
+      - name: Connect VSTS account to Azure AD
         href: connect-account-to-aad.md
-      - name: Disconnect Team Services account from Azure AD
+      - name: Disconnect VSTS account from Azure AD
         href: disconnect-account-from-aad.md
-      - name: Delete users from Team Services connected to Azure AD
+      - name: Delete users from VSTS connected to Azure AD
         href: delete-users-from-services-aad.md
-      - name: Add Azure AD group to Team Services group
+      - name: Add Azure AD group to VSTS group
         href: manage-azure-active-directory-groups-vsts.md
   - name: Permissions and access
     items:
@@ -106,7 +106,7 @@
     items:
     - name: Install an extension for VSTS
       href: ../marketplace/install-vsts-extension.md
-    - name: Approve requests for Team Services extensions
+    - name: Approve requests for VSTS extensions
       href: ../marketplace/approve-vsts-extensions.md
     - name: Request permission for an extension
       href: ../marketplace/request-vsts-extension.md
@@ -143,21 +143,19 @@
   - name: "Billing and extensions"
     href: ../billing/index.md
     items:
-    - name: "Set up billing: link Azure subscription to Team Services Account"
+    - name: Link Azure subscription to VSTS Account
       href: ../billing/set-up-billing-for-your-account-vs.md
-    - name: "Set up billing: add backup billing managers"
+    - name: Add backup billing managers
       href: ../billing/add-backup-billing-managers.md
-    - name: "Set up billing: change Azure subscription for billing"
+    - name: Change Azure subscription for billing
       href: ../billing/change-azure-subscription.md
-    - name: Pay for Team Services users
+    - name: Pay for VSTS users
       href: ../billing/buy-basic-access-add-users.md
-    - name: Change number of paid users
-      href: ../billing/change-number-of-paid-users.md
     - name: Change number of paid extension users
       href: ../billing/change-number-paid-extension-users.md
     - name: How to buy build pipelines
       href: ../billing/buy-more-build-vs.md
-  - name: Migrate from TFS to Team Services Tutorial
+  - name: Migrate from TFS to VSTS Tutorial
     href: https://www.visualstudio.com/articles/migration-overview
   - name: Integrate with other services
     href: ../service-hooks/index.md

@@ -23,11 +23,6 @@ VSTS billing covers:
 * Purchasing subscriptions for Visual Studio, HockeyApp, and Xamarin University
 
 
-**UNDER CONSTRUCTION -- JUST A PLACEHOLDER FOR NOW**
-
-
-
-
 ## 5-Minute Quickstarts  
 
  * [Set up billing](set-up-billing-for-your-account-vs.md)
