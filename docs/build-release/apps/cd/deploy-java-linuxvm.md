@@ -26,7 +26,7 @@ To set up CI for your specific type of app, see:
 
 You'll also need an Azure Linux VM with Tomcat installed where you will deploy the app.
 If you don't have one already, create one now. If you need help, follow the
-steps in [this example]().
+steps in [this example](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/classic/setup-tomcat).
 
 ## Create a release
 
