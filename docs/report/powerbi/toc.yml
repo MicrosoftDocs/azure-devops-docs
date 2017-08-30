@@ -3,7 +3,7 @@
 - name: Overview
   items:
   - name: Power BI integration overview
-    href: overview.md
+    href: /vsts/report/powerbi/overview?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: Client authentication 
@@ -11,13 +11,13 @@
   - name: Power BI Content Pack
     items:
     - name: Connect to VSTS with Power BI Content Pack
-      href: connect-vso-pbi-vs.md
+      href: /vsts/report/powerbi/connect-vso-pbi-vs?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
     - name: Create dashboards
-      href: report-on-vso-with-power-bi-vs.md
+      href: /vsts/report/powerbi/report-on-vso-with-power-bi-vs?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
     - name: Create trend charts
-      href: create-trend-charts.md
+      href: /vsts/report/powerbi/create-trend-charts?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
     - name: Create rollup charts
-      href: create-rollup-charts.md
+      href: /vsts/report/powerbi/create-rollup-charts?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
   - name: Power BI Data Connector
     items:
     - name: Assign permissions (Security)
@@ -33,13 +33,13 @@
 - name: Samples
   items:
   - name: Power BI example reports
-    href: data-connector-examples.md 
+    href: /vsts/report/powerbi/data-connector-examples?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Power BI available data
-    href: vso-pbi-whats-available-vs.md
+    href: /vsts/report/powerbi/vso-pbi-whats-available-vs?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
   - name: Data Connector available functions
-    href: data-connector-functions.md
+    href: /vsts/report/powerbi/data-connector-functions?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
   - name: Analytics Service overview 
     href: /vsts/report/analytics/overview-analytics-service?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
 - name: Resources
