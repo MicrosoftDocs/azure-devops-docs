@@ -148,7 +148,7 @@ ms.date: 07/26/2017
                                     <ul>
                                         <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
                                         <li><a class="barLink" href="/vsts/git/tutorial/pullrequest">Pull Requests</a></li>
-                                        <li><a class="barLink" href="">Forks</a></li>
+                                        <li><a class="barLink" href="/vsts/git/concepts/forks">Forks</a></li>
                                         <li><a class="barLink" href="/vsts/git/branch-policies">Branch Policies</a></li>
                                         <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
                                     </ul>
@@ -157,9 +157,9 @@ ms.date: 07/26/2017
                                         <li><a class="barLink" href="/vsts/build-release/index">Build &amp; Release</a></li>
                                         <li><a class="barLink" href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
                                         <li><a class="barLink" href="/vsts/package/index">Package Management</a></li>
-                                        <li><a class="barLink" href="">Library Assets</a></li>
-                                        <li><a class="barLink" href="">Hosted and Private Agents</a></li>
-                                        <li><a class="barLink" href="">Task Reference</a></li>
+                                        <li><a class="barLink" href="/vsts/build-release/concepts/library/index">Library Assets</a></li>
+                                        <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Hosted and Private Agents</a></li>
+                                        <li><a class="barLink" href="/vsts/build-release/tasks">Task Reference</a></li>
                                     </ul>
                                     <h3>Testing</h3>
                                     <ul>
@@ -179,21 +179,20 @@ ms.date: 07/26/2017
                                         <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
                                         <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
                                         <li><a class="barLink" href="/vsts/work/track/index">Queries</a></li>
-                                        <li><a class="barLink" href="">Customization</a></li>
+                                        <li><a class="barLink" href="/vsts/work/customize/index">Customization</a></li>
                                         <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
                                     </ul>
                                     <h3>Analytics</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/report/index">Dashboards</a></li>
                                         <li><a class="barLink" href="/vsts/report/powerbi/index">PowerBI</a></li>
-                                        <li><a class="barLink" href="/vsts/report/analytics/index">OData</a></li>
                                     </ul>
                                     <h3>Collaboration</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/collaborate/index">READMEs &amp; Wikis</a></li>
                                         <li><a class="barLink" href="/vsts/search/index">Search</a></li>
-                                        <li><a class="barLink" href="">Feedback</a></li>
+                                        <li><a class="barLink" href="/vsts/collaborate/feedback/index">Feedback</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -201,16 +200,16 @@ ms.date: 07/26/2017
                                 <div class="group">
                                     <h3>Admin</h3>
                                     <ul>
-                                        <li><a class="barLink" href="">Account Management</a></li>
+                                        <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
                                         <li><a class="barLink" href="/vsts/setup-admin/tfs/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
-                                        <li><a class="barLink" href="">Billing</a></li>
-                                        <li><a class="barLink" href="">Manage Extensions</a></li>
+                                        <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
+                                        <li><a class="barLink" href="/vsts/work/marketplace/index">Manage Extensions</a></li>
                                     </ul>
                                     <h3>Extend</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/extend/overview">Build Extensions</a></li>
-                                        <li><a class="barLink" href="">Build Apps</a></li>
+                                        <li><a class="barLink" href="/vsts/integrate/index">Build Apps</a></li>
                                         <li><a class="barLink" href="/rest/api/vsts/">REST APIs</a></li>
                                         <li><a class="barLink" href="">TypeScript APIs</a></li>
                                     </ul>
@@ -265,7 +264,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="/vsts/git/concepts/forks">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -384,7 +383,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="/vsts/build-release/concepts/library/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -403,7 +402,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="/vsts/build-release/concepts/agents/agents">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -422,7 +421,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="/vsts/build-release/tasks">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -627,7 +626,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="/vsts/work/customize/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -709,25 +708,6 @@ ms.date: 07/26/2017
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/logo_odata.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>OData</h3>
-                                                    <p>NOT SHIPPING UNTIL NOVEMBER</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
                         </ul>
                     </li>
                     <li>
@@ -792,7 +772,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="/vsts/collaborate/feedback/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -817,7 +797,7 @@ ms.date: 07/26/2017
                         <a href="#admin">Admin</a>
                         <ul id="admin" class="cardsA">
                             <li>
-                                <a href="">
+                                <a href="/vsts/accounts/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -876,7 +856,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="/vsts/billing/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -895,7 +875,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="/vsts/work/marketplace/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -938,7 +918,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="/vsts/integrate/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1049,10 +1029,10 @@ ms.date: 07/26/2017
                     <li>
                         <a href="#ecosystem-all"></a>
                         <ul id="ecosystem-all" class="cardText cols cols4">
-                            <li class="fullSpan">
+                            <li class="fullSpan" style="margin-top:0;">
                                 <div class="button" style="float:right;">
                                     <a href="https://marketplace.visualstudio.com" style="text-decoration: none;text-transform:inherit;">
-                                        <div style="padding: 12px 15px 18px 15px;font-size:1.6rem;">Marketplace &gt;</div>
+                                        <div style="padding: 10px 15px 12px 15px;font-size:1.5rem;">Marketplace <img src="_img/index/arrow_24x.svg" alt="" /></div>
                                     </a>
                                 </div>
                                 <div class="intro">
@@ -1060,9 +1040,9 @@ ms.date: 07/26/2017
                                     <p>Integrate your Visual Studio Team Services with popular extensions like Slack or Jenkins</p>
                                 </div>
                             </li>
-                            <li class="fullSpan">
+                            <li class="fullSpan" style="margin-top:12px;">
                                 <div class="">
-                                    <h3>Popular Extensions</h3>
+                                    <h3 style="margin:0;">Popular Extensions</h3>
                                 </div>
                             </li>
                             <li>
@@ -1120,7 +1100,7 @@ ms.date: 07/26/2017
                             </li>
                             <li class="fullSpan">
                                 <div>
-                                    <h2 style="padding-left:0">Build your own extensions</h2>
+                                    <h2 style="padding-left:0;margin-bottom:0;margin-top:24px;font-size:1.8rem;">Build your own extensions</h2>
                                     <p>Create custom extensions to transform your VSTS look and experience.</p>
                                 </div>
                             </li>
