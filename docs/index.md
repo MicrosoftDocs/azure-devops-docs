@@ -78,7 +78,7 @@ ms.date: 07/26/2017
                     <li>
                         <a href="#start-all"></a>
                         <ul id="start-all" class="cardText">
-                            <li>
+                            <li class="fullSpan">
                                 <div class="intro">
                                     <h1>Get Started with VSTS and TFS</h1>
                                     <p>Explore our most popular services with quickstarts, samples, and tutorials.</p>
@@ -1049,7 +1049,7 @@ ms.date: 07/26/2017
                     <li>
                         <a href="#ecosystem-all"></a>
                         <ul id="ecosystem-all" class="cardText cols cols4">
-                            <li>
+                            <li class="fullSpan">
                                 <div class="button" style="float:right;">
                                     <a href="https://marketplace.visualstudio.com" style="text-decoration: none;text-transform:inherit;">
                                         <div style="padding: 12px 15px 18px 15px;font-size:1.6rem;">Marketplace &gt;</div>
@@ -1060,7 +1060,7 @@ ms.date: 07/26/2017
                                     <p>Integrate your Visual Studio Team Services with popular extensions like Slack or Jenkins</p>
                                 </div>
                             </li>
-                            <li>
+                            <li class="fullSpan">
                                 <div class="">
                                     <h3>Popular Extensions</h3>
                                 </div>
@@ -1118,7 +1118,7 @@ ms.date: 07/26/2017
                                 </ul>
 
                             </li>
-                            <li>
+                            <li class="fullSpan">
                                 <div class="intro">
                                     <h2 style="padding-left:0">Build your own extensions</h2>
                                     <p>Create custom extensions to transform your VSTS look and experience.</p>
@@ -1131,6 +1131,8 @@ ms.date: 07/26/2017
                                         <a class="barLink" href="/vsts/extend">Get Started</a>
                                     </li>
                                 </ul>
+                            </li>
+                            <li>
                                 <h3>REST APIs</h3>
                                 <ul class="noBullet">
                                     <li>
