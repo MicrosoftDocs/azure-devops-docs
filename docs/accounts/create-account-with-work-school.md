@@ -3,7 +3,8 @@ title: Create your VSTS account with a work or school account
 description: Create your VSTS account with a work or school account
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.technology: vsts-sub-accounts
+ms.service: vsts-admin
 ms.assetid: 9f2e2b0d-770a-4854-aaa6-60650e3dcdee
 ms.manager: douge
 ms.author: estfan

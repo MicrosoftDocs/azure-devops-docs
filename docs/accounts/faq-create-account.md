@@ -3,7 +3,8 @@ title: Troubleshoot creating a VSTS account
 description: Troubleshoot creating a VSTS account
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.technology: vsts-sub-accounts
+ms.service: vsts-admin
 ms.assetid: 5288549e-30cb-4ac0-81dd-8ba4890e8448
 ms.manager: douge
 ms.author: estfan

@@ -2,7 +2,8 @@
 title: Delete or recover VSTS account
 description: How to delete your VSTS account
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.technology: vsts-sub-accounts
+ms.service: vsts-admin
 ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5
 ms.manager: douge
 ms.author: estfan

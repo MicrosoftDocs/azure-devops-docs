@@ -3,7 +3,8 @@ title: Add administrators to VSTS team projects
 description: Add administrators to VSTS team projects 
 ms.assetid: 3f11f0b6-42bd-48c7-b5f9-0946240392cf
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfs
+ms.technology: vsts-sub-accounts
+ms.service: vsts-admin
 ms.manager: douge  
 ms.author: estfan  
 ms.date: 03/29/2017
