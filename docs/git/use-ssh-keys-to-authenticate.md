@@ -16,6 +16,13 @@ ms.date: 08/04/2016
 Connect to your Git repos through SSH when you can't use the recommended [Git Credential Managers](set-up-credential-managers.md) or
 [Personal Access Tokens](../accounts/use-personal-access-tokens-to-authenticate.md) to securely connect using HTTPS authentication.
 
+>[!IMPORTANT]
+> SSH URLs are changing on September 5, 2017. Old SSH URLs will continue to work through November 6, 2017. If you have already set up SSH, you will need to update your remote URLs:
+> - Visit your repository on the web and select the **Clone** button in the upper right.
+> - Select **SSH** and copy the new SSH URL.
+> - In your Git client, run: ```git remote set-url <remote name, e.g. origin> <new SSH URL>```. Alternatively, in Visual Studio, go to **Repository Settings**, and edit your remotes.
+
+>[!NOTE]
 > As of Visual Studio 2017, SSH can be used to connect to Git repos.
 
 ## How SSH key authentication works
@@ -89,22 +96,22 @@ user interface. Select **My security** in the menu that appears.
 
 > To connect with SSH from an existing cloned repo, see [updating your remotes to SSH](use-ssh-keys-to-authenticate.md#migrate).
 
-0. Copy the SSH clone URL from the web interface:   
+0. Copy the SSH clone URL from the web interface:
 
-   ![Team Services SSH Clone URL](_img/use-ssh-authentication/ssh_clone_URL.png)
+   ![VSTS SSH Clone URL](_img/use-ssh-authentication/ssh_clone_URL.png)
    
 0. Run `git clone` from the command prompt. 
 
    <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-   &#062; git clone <font color="#F9FE64">ssh://fabrikops2@fabrikops2.visualstudio.com:22/DefaultCollection/_git/fabrikamtools</font>
+   &#062; git clone <font color="#F9FE64">ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_git/fabrikamtools</font>
    </pre>
 
 SSH will ask you to verify that the SSH fingerprint for the server you are connecting to. You should verify that the shown fingerprint matches the fingerprint on the **SSH public keys**  page.
- . SSH displays this fingerprint when it connects to an unknown host to protect you from [man-in-the-middle attacks](https://technet.microsoft.com/en-us/library/cc959354.aspx).
+SSH displays this fingerprint when it connects to an unknown host to protect you from [man-in-the-middle attacks](https://technet.microsoft.com/en-us/library/cc959354.aspx).
 Once you accept the host's fingerprint, SSH will not prompt you again unless the fingerprint changes. 
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&#062;  git clone <font color="#F9FE64">ssh://fabrikops2@fabrikops2.visualstudio.com:22/DefaultCollection/_git/fabrikamtools</font><br/><font color="#63E463">The authenticity of host 'fabfiber.visualstudio.com (xxx.xxx.xxx.xxx)' can't be established.   
+&#062;  git clone <font color="#F9FE64">ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_git/fabrikamtools</font><br/><font color="#63E463">The authenticity of host 'fabrikops2.visualstudio.com (xxx.xxx.xxx.xxx)' can't be established.   
 RSA key fingerprint is SHA256:TqZxCdl9u3K2c52nhr4I+YwLTGxxVThi8GyF9Oi0BNxw.
 Are you sure you want to continue connecting (yes/no)? <font color="#F9FE64">yes</font> </font>
 </pre>
@@ -130,7 +137,7 @@ If you are using the Bash shell (including Git Bash), start ssh-agent with:
 &gt; eval `ssh-agent`</pre>
 
 
-### I use [PuTTY](http://www.putty.org/) as my SSH client and generated my keys with PuTTYgen. Can I use these keys with Team Services?
+### I use [PuTTY](http://www.putty.org/) as my SSH client and generated my keys with PuTTYgen. Can I use these keys with VSTS?
 
 Yes. Load the private key with PuTTYgen, go to **Conversions** menu and select **Export OpenSSH key**. 
 Save the private key file and then follow the steps to [set up non-default keys](use-ssh-keys-to-authenticate.md#newkeys).
@@ -148,22 +155,7 @@ Copy you public key directly from the PuTTYgen window and paste into the **Key D
   
 You can then compare the MD5 signature to the one in your  profile. This is useful if you have connection problems or have concerns about incorrectly
 pasting in the public key into the **Key Data** field when adding the key to VSTS.
- 
-### How can I test my SSH connection without running a Git command?
- 
-Run the following from the command prompt to test your connection:
- 
- <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&#062; ssh -T <font color="#F9FE64">account@account.visualstudio.com</font></pre>
 
-You will replace `account@account.visualstudio.com` with the corresponding information from the clone URL from the repository, e.g. `fabfiber@fabfiber.visualstudio.com` if from the
-above example. You will see this output if successful:
-
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-<font color="#63E463">Authentication for user with identifier "2ee0ba7b-fb11-44b3-b69e-33684597fbfb" was successful against account "fabfiber".</br> 
-Shell is not supported.</font>
-</pre>
- 
 <a name="migrate"></a>
  
 ### How can I start using SSH in a repository where I am currently using HTTPS?
@@ -171,16 +163,16 @@ Shell is not supported.</font>
 You'll need to update the `origin` remote in Git to change over from a HTTPS to SSH URL. Once you have the SSH clone URL, run the following command:
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git remote set-url origin <font color="#F9FE64">ssh://fabfiber@fabfiber.visualstudio.com:22/DefaultCollection/_git/fabrikamtools</font>
+&gt; git remote set-url origin <font color="#F9FE64">ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_git/fabrikamtools</font>
 </pre>
 
 You can now run any Git command that connects to `origin`.
 
 <a name="newkeys"></a>
 
-### I'm using Git LFS with Team Services and I get errors when pulling files tracked by Git LFS.
+### I'm using Git LFS with VSTS and I get errors when pulling files tracked by Git LFS.
 
-Team Services currently doesn't support LFS over SSH. Use HTTPS to connect to repos with Git LFS tracked files.
+VSTS currently doesn't support LFS over SSH. Use HTTPS to connect to repos with Git LFS tracked files.
  
 ### How can I use a non default key location, i.e. not ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub ?
 
