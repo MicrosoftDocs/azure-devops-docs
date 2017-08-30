@@ -501,26 +501,26 @@ allows you to run cloud-based load tests. See
 
 ### Q: Can I get more detailed profiler information?
 
-*A**: Yes, see [Profiling live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler).
+**A**: Yes, see [Profiling live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler).
 
 ### Q: Can I view data from other app monitoring tools when load testing in the cloud?
 
-*A**: No.
+**A**: No.
 
 ### Q: Can I increase how often data is collected?
 
-*A**: No, this is currently a fixed frequency of one minute.
+**A**: No, this is currently a fixed frequency of one minute.
 
 ### Q: I don't see any counters even after waiting a few minutes. What's wrong?
 
-*A**: Go to Application Insights and check that you can view performance data 
+**A**: Go to Application Insights and check that you can view performance data 
 for your app there. If you see data collected there, report your issue to 
 [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com). 
 
 <a name="qaconnectts"></a>
 ### Q: Why do I get an "Unable to connect to VSTS due to network failure" error when trying to add apps using the Get Performance Data from Application Insights menu command?
  
-*A**: This can happen because:
+**A**: This can happen because:
 
 * No apps are configured to push analytics data to Application Insights. See 
   [Get started with Visual Studio Application Insights](https://azure.microsoft.com/en-in/documentation/articles/app-insights-get-started/).
