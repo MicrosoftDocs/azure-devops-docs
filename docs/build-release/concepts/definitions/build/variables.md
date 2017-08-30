@@ -46,7 +46,7 @@ User-defined variables are formatted differently in different contexts. See abov
 
 ### Secret Variables
 
-We recommend that you make the variable ![Secret](../../../_shared/_img/secret-variable-icon.png)
+We recommend that you make the variable ![Secret](_img/variables/secret-variable-icon.png)
 **Secret** if it contains a password, keys, or some other kind of data that you need to avoid exposing.
 
 **VSTS**

@@ -21,7 +21,7 @@ You can run a PowerShell Script on a [Windows build agent](../agents/v2-windows.
 
 0. Add a PowerShell build step.
 
- ![Add step](../../_shared/_img/BldStepAddBegin.png)
+ ![Add step](_img/BldStepAddBegin.png)
 
  ![Add PowerShell step](_img/BldScriptPSAdd.png)
 

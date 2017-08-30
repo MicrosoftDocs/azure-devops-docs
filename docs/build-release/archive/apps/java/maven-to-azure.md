@@ -93,7 +93,7 @@ On the Build tab, add these steps:
         </tr>
 </table>
 
-[!INCLUDE [temp](../../../_shared/definition-finish-and-test.md)] 
+[!INCLUDE [temp](../_shared/definition-finish-and-test.md)] 
 
 After a successful build, check your site: ```http://{web_app_name}.azurewebsites.net/{war_file_name}```
 

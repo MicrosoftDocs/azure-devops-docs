@@ -159,7 +159,7 @@
     - name: Run Git commands
       href: actions/scripts/git-commands.md
     - name: Troubleshooting build
-      href: troubleshooting.md
+      href: actions/troubleshooting.md
   - name: Configure/manage CD
     items:
     - name: Extend App Services deployments

@@ -34,7 +34,7 @@
   - name: Run Git commands
     href: /vsts/build-release/actions/scripts/git-commands.md
   - name: Troubleshooting build
-    href: /vsts/build-release/troubleshooting.md
+    href: /vsts/build-release/actions/troubleshooting.md
   - name: Debug deployment issues
     href: /vsts/build-release/actions/debug-deployment-issues.md
   - name: Troubleshoot Azure connections
