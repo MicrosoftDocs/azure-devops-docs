@@ -14,10 +14,6 @@ ms.date: 08/12/2016
 
 Load test your app with hundreds of thousands of users using Visual Studio Team Services (VSTS).
 
-## Overview
-
-* [About load testing](overview.md)
-
 ## 5-Minute Quickstarts
 
 Load test from your preferred UI, and compare the results.

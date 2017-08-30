@@ -13,10 +13,6 @@ ms.date: 12/04/2016
 
 # Search
 
-## Overview
-
-* [About Search](overview.md)
-
 ## 5-Minute Quickstarts
 
 | | |
