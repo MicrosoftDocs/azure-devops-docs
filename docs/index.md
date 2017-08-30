@@ -1117,7 +1117,7 @@ ms.date: 07/26/2017
                             </li>
                             <li>
                                 <div class="container intro">
-                                    <h2>Build your own extensions</h2>                                    
+                                    <h2>Build your own extensions</h2>
                                 </div>
                             </li>
                             <li>
