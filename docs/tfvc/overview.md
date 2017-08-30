@@ -8,7 +8,7 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 05/12/2017
+ms.date: 08/29/2017
 ---
 
 # Use Team Foundation Version Control

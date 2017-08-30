@@ -7,7 +7,7 @@ ms.topic: get-started-article
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/11/2017
+ms.date: 08/29/2017
 layout: LandingPage
 ---
 
