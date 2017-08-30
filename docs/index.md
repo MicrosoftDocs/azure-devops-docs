@@ -1032,7 +1032,7 @@ ms.date: 07/26/2017
                             <li class="fullSpan" style="margin-top:0;">
                                 <div class="button" style="float:right;">
                                     <a href="https://marketplace.visualstudio.com" style="text-decoration: none;text-transform:inherit;">
-                                        <div style="padding: 10px 15px 12px 15px;font-size:1.5rem;">Marketplace <img src="_img/index/arrow_24x.svg" alt="" /></div>
+                                        <div style="padding: 10px 15px 12px 15px;font-size:1.5rem;">Marketplace <img src="_img/index/arrow_24x.svg" alt="" style="height: 24px;width: 24px;vertical-align: middle;padding-left: 12px;" /></div>
                                     </a>
                                 </div>
                                 <div class="intro">
