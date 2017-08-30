@@ -1119,7 +1119,7 @@ ms.date: 07/26/2017
 
                             </li>
                             <li class="fullSpan">
-                                <div class="intro">
+                                <div>
                                     <h2 style="padding-left:0">Build your own extensions</h2>
                                     <p>Create custom extensions to transform your VSTS look and experience.</p>
                                 </div>
