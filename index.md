@@ -1,1 +1,1 @@
-# Index test file for Open Publishing
+# Welcome to test-docset!
