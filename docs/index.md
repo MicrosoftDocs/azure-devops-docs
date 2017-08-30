@@ -1121,10 +1121,8 @@ ms.date: 07/26/2017
                             <li>
                                 <div class="intro">
                                     <h2 style="padding-left:0">Build your own extensions</h2>
+                                    <p>Create custom extensions to transform your VSTS look and experience.</p>
                                 </div>
-                            </li>
-                            <li>
-                                <p>Create custom extensions to transform your VSTS look and experience.</p>
                             </li>
                             <li>
                                 <h3>Custom extensions</h3>
