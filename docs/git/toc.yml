@@ -63,6 +63,8 @@
     href: concepts/git-branching-guidance.md
   - name: Pull requests
     href: concepts/pull-requests.md
+    name: Forks
+    href: concepts/forks.md
   - name: Authentication
     href: auth-overview.md
   - name: Understand dates in Git
