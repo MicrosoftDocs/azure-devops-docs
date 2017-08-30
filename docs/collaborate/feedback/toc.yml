@@ -1,5 +1,5 @@
 - name: Feedback 
-  href: index.md
+  href: /vsts/collaborate/feedback/index?toc=/vsts/collaborate/feedback/toc.json&bc=/vsts/collaborate/feedback/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: Request feedback (Test & Feedback extension) 

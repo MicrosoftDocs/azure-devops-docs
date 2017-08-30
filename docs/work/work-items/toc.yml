@@ -87,21 +87,21 @@
         - name: Manage issues
           href: /vsts/work/guidance/cmmi/guidance-manage-issues-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
       - name: Engineering
-        href: ../guidance/cmmi/guidance-engineering.md
+        href: /vsts/work/guidance/cmmi/guidance-engineering?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         items:
         - name: Develop requirements
-          href: ../guidance/cmmi/guidance-develop-requirements.md
+          href: /vsts/work/guidance/cmmi/guidance-develop-requirements?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         - name: Arrange requirements into a product plan
-          href: ../guidance/cmmi/arrange-requirements-into-a-product-plan.md
+          href: /vsts/work/guidance/cmmi/arrange-requirements-into-a-product-plan?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         - name: Create a solution architecture
-          href: ../guidance/cmmi/guidance-create-solution-architecture.md
+          href: /vsts/work/guidance/cmmi/guidance-create-solution-architecture?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         - name: Implement development tasks
-          href: ../guidance/cmmi/guidance-implement-development-tasks.md
+          href: /vsts/work/guidance/cmmi/guidance-implement-development-tasks?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         - name: Build a product
-          href: ../guidance/cmmi/guidance-build-product.md
+          href: /vsts/work/guidance/cmmi/guidance-build-product?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
       - name: Track bugs
-        href: ../guidance/cmmi/track-bugs.md
-- name: How-to guides
+        href: /vsts/work/guidance/cmmi/track-bugs?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+- name: How-to Guides
   items:
   - name: "Use @mentions to further discussion" 
     href: /vsts/notifications/at-mentions?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
