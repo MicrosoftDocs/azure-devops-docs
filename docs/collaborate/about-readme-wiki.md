@@ -32,5 +32,14 @@ Here are some great readmes that use this format and speak to all three audience
 
 ## Wiki
 
+Use your team project wiki to share information with other team members. Each wiki corresponds to its own git repository and supports collaborative editing of its content and structure.   website that allows collaborative editing of its content and structure.
+
+To learn more, see [Add and edit a wiki](add-edit-wiki.md).
+
 >[!NOTE]  
 ><b>Feature availability: </b>The built-in wiki is in Preview and available for VSTS at this time. You enable this feature for a team project from the [Preview features option from your profile menu](preview-features.md#account-level).   
+
+## Related notes
+- [Add and edit a wiki](add-edit-wiki.md)
+- [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
+- [Markdown guidance](vsts/reference/markdown-guidance

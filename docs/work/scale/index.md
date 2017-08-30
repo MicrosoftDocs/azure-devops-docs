@@ -14,16 +14,11 @@ ms.date: 08/28/2017
 
 Manage portfolios and gain visibility across teams. 
 
-## 5-Minute Quickstarts    
-
-- [Add a team & team members](multiple-teams.md)  
-- [Add a team administrator](add-team-administrator.md)  
-
 ## Step-by-Step Tutorials
 
-- [Add a team & team members](multiple-teams.md)  
 - [Manage portfolios](portfolio-management.md)
 - [Review delivery plans](review-team-plans.md) 
+- [Set team favorites](/vsts/collaborate/set-favorites?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)  
 
 ## Concepts 
        
@@ -39,12 +34,8 @@ Manage portfolios and gain visibility across teams.
 - [Set team defaults](set-team-defaults.md) 
 
 
-## Reference   
-- [Permissions and access for work tracking](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json) 
-
-
 ## Resources  
-- [Backlogs](../backlogs/index.md)
+- [Scale & Configure Teams](../../teams/index.md)
 - [Kanban](../kanban/index.md)
 - [Scrum](../scrum/index.md)
 - [Work item customization](../customize/index.md)

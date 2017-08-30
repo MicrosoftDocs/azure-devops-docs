@@ -10,6 +10,8 @@
     href: portfolio-management.md
   - name: Review team delivery plans
     href: /vsts/work/scale/review-team-plans?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+  - name: Set team favorites
+    href: /vsts/collaborate/set-favorites?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
 - name: Concepts
   items:
   - name: Visibility across teams
@@ -49,6 +51,8 @@
     href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
 - name: Resources
   items:
+  - name: "Scale & Configure Teams"
+    href: ../../teams/index.md
   - name: Backlogs
     href: ../backlogs/index.md
   - name: Kanban

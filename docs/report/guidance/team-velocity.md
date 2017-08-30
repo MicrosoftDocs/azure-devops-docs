@@ -120,7 +120,7 @@ Velocity will vary depending on team capacity, sprint over sprint. However, over
 	<img src="_img/team-velocity-chart-web-7-iterations.png" alt="Web portal, Velocity chart showing seven sprints of in progress and completed work" style="border: 2px solid #C3C3C3;" />
 
 	>[!NOTE]  
-	>Work items based on the [Scrum process](../../work/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../work/guidance/agile-process.md) and [CMMI](../../work/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/concepts/workflow-and-state-categories.md).
+	>Work items based on the [Scrum process](/vsts/work/guidance/scrum-process) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](/vsts/work/work/guidance/agile-process) and [CMMI](/vsts/work/work/guidance/cmmi-process) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/concepts/workflow-and-state-categories.md).
 	
 ## Required and recommended activities   
 

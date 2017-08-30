@@ -1,9 +1,9 @@
 ---
 title: Product backlog controls | VSTS & TFS
-description: Switch views and switch controls or off from your product backlog - Visual Studio Team Services (VSTS) and Team Foundation Server 
+description: Switch views and switch controls on or off from your product backlog - Visual Studio Team Services (VSTS) and Team Foundation Server 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
-ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
+ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article  
@@ -17,11 +17,6 @@ ms.date: 08/28/2017
 <b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 Once you've defined your product backlog, you can use the following controls to change or filter the view. 
-
-> [!IMPORTANT]  
-> If you set the **In progress** control to **Hide**, then items that are no longer in the New, Approved, or Proposed states won't appear in the backlog. 
->
-> Also, even if you have show parents turned on, the **Create query** and mail ![mail icon](../_img/icons/mail_icon.png) controls will only list items at the currently selected level.      
 
 | Control                  | Function                      |
 |--------------------------|-------------------------------|
@@ -37,4 +32,8 @@ Once you've defined your product backlog, you can use the following controls to 
 | ![mail icon](../_img/icons/mail_icon.png)  | Email a copy of your backlog      |
 | ![Filter](../_img/icons/tag_filter_icon.png)  | [Turn tag filtering On/Off ](../track/add-tags-to-work-items.md)  |  
 
-Note that even if you have show parents turned on, the **Create query** and mail ![mail icon](../_img/icons/mail_icon.png) controls will only list items at the currently selected level. 
+> [!IMPORTANT]  
+> If you set the **In progress** control to **Hide**, then items that are no longer in the New, Approved, or Proposed states won't appear in the backlog. 
+
+Even if you have show parents turned on, the **Create query** and mail ![mail icon](../_img/icons/mail_icon.png) controls will only list items at the currently selected level. 
+ 

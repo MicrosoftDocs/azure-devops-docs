@@ -58,10 +58,12 @@
     href: ../backlogs/index.md
   - name: Scrum
     href: ../scrum/index.md
-  - name: Work item queries
+  - name: Queries
     href: ../track/index.md
   - name: Customization
     href: ../customize/index.md
+  - name: "Scale & Configure Teams"
+    href: ../../teams/index.md
   - name: "What is Agile?"
     href: https://www.visualstudio.com/learn/what-is-agile/
   - name: "What is Agile development?"

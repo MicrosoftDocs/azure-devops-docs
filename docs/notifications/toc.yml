@@ -1,32 +1,21 @@
 - name: Notifications
   href: index.md
-- name: Overview
-  items:
-  - name: "What are notifications?"
-    href: about-notifications.md
-- name: Quickstarts
-  items:
-  - name: "Use @mentions to further discussion"
-    href: at-mentions.md
-  - name: "Use #ID to link to work items"
-    href: add-links-to-work-items.md
 - name: Tutorials
   items:
   - name: "Follow work & pull requests"
     href: /vsts/collaborate/follow-work-items?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Set your personal notifications
     href: /vsts/collaborate/manage-personal-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json 
-- name: Concepts
-  items:
-  - name: Events, subscribers, notification types, roles
-    href: events-subscribers-notification-types.md
 - name: How-to Guides
   items:
+  - name: "Use @mentions to further discussion"
+    href: at-mentions.md
+  - name: "Use #ID to link to work items"
+    href: add-links-to-work-items.md
   - name: Go mobile
     href: /vsts/collaborate/mobile-work?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Manage team notifications
     href: /vsts/collaborate/manage-team-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Set team project or collection-level alerts (NEW) 
   - name: Campfire
     href: /vsts/collaborate/campfire?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Flowdock

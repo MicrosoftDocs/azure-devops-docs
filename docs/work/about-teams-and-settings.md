@@ -163,3 +163,4 @@ Can a user account belong to more than one team?
 Yes. When you add user accounts to a team project, you can add them as members of the team project, or you can add them to one or more teams added to the team project. If you work on two or more Scrum teams, you'll want to make sure you, [specify your sprint capacity for each team you work on](scale/capacity-planning.md). 
 
 
+ 

@@ -84,9 +84,17 @@ To mark a test plan as a favorite, open the **Test>Test Plans** page and click t
 <a id="view-favorites">  </a>
 ## View personal favorites through your account hub 
 
-0. From your account page, open the **Favorites** page to quickly access any object or item that you've marked as a favorite. 
+From your account hub, open the **Favorites** page to quickly access any object or item that you've marked as a favorite. 
 
 <img src="../connect/_img/account-home-favorites.png" alt="Account home, Favorites page" style="border: 1px solid #CCCCCC;" />   
+
+<a id="unfavorite">  </a>
+## Unfavorite an object
+
+You can unfavorite an object from your account hub by going to your account hub **Favorites** page and clicking the ![favorited icon](../_img/icons/icon-favorited.png) star icon of a currently favorited object. 
+
+Similarly, you can unfavorite an object from the same page where you favorited it. 
+
 
 <!---
 <a id="team-favorites"> </a>

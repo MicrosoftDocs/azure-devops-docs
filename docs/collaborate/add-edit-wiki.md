@@ -19,7 +19,7 @@ ms.date: 08/04/2017
 >
 >If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md).  
 
-You now have a wiki associated with your team project. Use it to share information with your team members and stakeholders to understand, use, and contribute to your project. 
+Each team project has a wiki associated with it. Use it to share information with your team members and stakeholders to understand, use, and contribute to your project. 
 
 Learn how to: 
 

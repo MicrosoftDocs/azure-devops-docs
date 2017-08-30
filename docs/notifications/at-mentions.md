@@ -14,7 +14,7 @@ ms.date: 08/24/2017
 # Use &#64;mentions to further discussion
 **VSTS | TFS 2017 | TFS 2015.2**
 
-The **@mention** control allows you to quickly pull someone into a discussion.  The **#ID** control quickly links the object you're working in to a work item based on its ID.
+The **@mention** control allows you to quickly pull someone into a discussion.  You can use this control within the Discussion section of a work item form, or a pull request. 
 
 <a id="mention-person-id">  </a>
 
@@ -43,3 +43,7 @@ When viewing their own mentioned names in conversations, users will notice that 
 
 You can use the **@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments. You can also use the **@mention** control in the [Discussion section of work item forms](../work/concepts/work-item-form-controls.md#discussion). 
 
+## Related notes
+
+- [Work item form controls](../work/concepts/work-item-form-controls.md)  
+- [Pull requests](../git/tutorial/pullrequest.md)

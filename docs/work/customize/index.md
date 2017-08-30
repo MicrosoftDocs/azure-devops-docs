@@ -64,7 +64,7 @@ Use the guidance provided in the following topics based on the process model or 
  
 ## Reference   
 - [Work items](/vsts/work/work-items/index)
-- [Scale & configure teams](/vsts/work/scale/index)
+- [Scale & configure teams](/vsts/teams/index)
 - [Account Management (VSTS)](/vsts/accounts/index)
 - [TFS Server Administration](/vsts/tfs-server/index)
 - [Marketplace extensions](/vsts/marketplace/get-vsts-extensions)

@@ -102,7 +102,7 @@ For the CFD chart to reflect useful information, you'll want to update the statu
 ## Try this next
  
 > [!div class="nextstepaction"]
-> [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
+> [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md) or
 > [Kanban basics](../../work/kanban/kanban-basics.md)
 
 

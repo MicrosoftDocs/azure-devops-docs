@@ -14,8 +14,8 @@
     href: sign-up-invite-teammates.md
   - name: Code with Git
     href: code-with-git.md
-  - name: "Build & release an app"
-    href: /vsts/build-release/actions/ci-build-git?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
+  - name: "Set up continuous integration & delivery"
+    href: /vsts/build-release/actions/ci-cd-part-1?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
   - name: "Plan & track work" 
     href: plan-track-work.md 
   - name: Add and run manual tests
@@ -32,6 +32,8 @@
     href: /vsts/quickstart/get-started-stakeholder?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json&bc=/vsts/breadcrumb/toc.json 
 - name: Concepts
   items:
+  - name: Key concepts 
+    href: /vsts//conceptstoc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Source control 
     href: source-control.md
   - name: "Kanban & Agile tools"
@@ -39,9 +41,7 @@
   - name: "Clients & tools"
     href: /vsts/tools?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Software development roles
-    href: /vsts/roles?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
-  - name: Permissions and access
-    href: /vsts/security/permissions-access?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: /vsts/roles?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: "How do Team Services & TFS differ"
     href: /vsts/about-vsts-tfs?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
 - name: How-to Guides
