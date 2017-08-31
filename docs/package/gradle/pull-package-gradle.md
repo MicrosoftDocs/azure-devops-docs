@@ -46,6 +46,8 @@ Click **Add**.
 
 ![Add a personal access token](_img/add-pat.png)
 
+![Add a personal access token](_img/add-pat.png)
+
 Give your new token a name and a duration. 
 
 Select the **Packaging (read and write)** scope.
