@@ -1037,7 +1037,7 @@ ms.date: 07/26/2017
                                 </div>
                                 <div class="intro">
                                     <h2 style="padding-left:0">Get Extensions</h2>
-                                    <p>Integrate your Visual Studio Team Services with popular extensions like Slack or Jenkins</p>
+                                    <p>Extend VSTS with popular extensions like Slack or Jenkins.</p>
                                 </div>
                             </li>
                             <li class="fullSpan" style="margin-top:12px;">
