@@ -692,4 +692,66 @@ To fix this problem, create another load test. Delete the failed test run.
 
 ----------
 
+## Links to useful resources
+
+
+**Getting Started**
+
+* [What is Cloud-based Load Testing (CLT) with Visual Studio Online?](https://www.visualstudio.com/features/vso-cloud-load-testing-vs)
+* [Monitor your app performance data during load run](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/04/07/get-application-performance-data-during-load-runs-with-visual-studio-online.aspx)
+* [Super simple Cloud-based Load Test trial](https://blogs.msdn.microsoft.com/bharry/archive/2014/10/29/super-simple-load-test-trial-experience.aspx)
+* [Automate Cloud-based Load Test for your continuous integration pipeline](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/11/03/cloud-load-testing-rest-apis-are-here.aspx)
+* [Cloud-based Load Testing from Europe](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/11/03/cloud-based-load-testing-from-europe-is-now-possible.aspx)
+* [Pricing](http://azure.microsoft.com/en-us/pricing/details/visual-studio-online/)
+
+**Videos &amp; Webinars**
+
+* [Introduction to Cloud-based Load Testing with Visual Studio Online](https://channel9.msdn.com/Events/Visual-Studio/Launch-2013/qe103)
+* [Get performance counters from your App during a Load test](https://channel9.msdn.com/Series/Application-Insights-for-Visual-Studio-Online/Getting-Started-with-cloud-based-load-testing-and-Application-Insights)
+* [Quick Trial - Load testing made easier](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Load-Testing-Made-Easier)
+
+**Tutorials**
+
+* [All about Load Test planning](https://blogs.msdn.microsoft.com/geoffgr/archive/2014/08/22/all-about-test-planning-part-1-introduction.aspx)
+* [Simulating expected load - how to model real world load in CLT](https://blogs.msdn.microsoft.com/edglas/archive/2010/04/02/simulating-peak-load-with-vs-load-tests.aspx)
+* [Analyzing Load Test results](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/06/10/analyzing-load-test-results-and-everything-you-wanted-to-know-about-load-test-reports.aspx)
+* [Data driven Load Tests with VSO and SQL Azure](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/08/26/data-driven-load-tests-using-visual-studio-online-and-sql-azure.aspx)
+* [Driving Unit Tests from Cloud-based Load test](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/08/01/driving-unit-tests-from-cloud-load-test.aspx)
+* [Parameterizing tests to run in different environments](https://blogs.msdn.microsoft.com/edglas/archive/2010/02/16/parameterizing-tests-to-run-in-different-environments.aspx)
+* [A Web Performance Test primer](https://blogs.msdn.microsoft.com/edglas/archive/2010/03/24/web-test-authoring-and-debugging-techniques-for-visual-studio-2010.aspx)
+* [Managing Load Test results](https://blogs.msdn.microsoft.com/slumley/archive/2007/06/14/managing-load-test-results.aspx)
+* [Getting 90th and 95th percentile results in a Load Test](https://blogs.msdn.microsoft.com/slumley/archive/2007/07/06/how-to-get-90th-and-95th-percentile-information-as-well-as-timing-details-for-every-page-test-and-transcation.aspx)
+* [Understanding Load Test results schema](https://blogs.msdn.microsoft.com/billbar/archive/2006/02/10/what-is-the-data-in-the-vsts-load-test-results-store.aspx)
+* [Load Test plug-ins](https://blogs.msdn.microsoft.com/slumley/archive/2009/04/10/load-test-plug-ins.aspx)
+* [Generating Excel reports for your Load Test runs](https://blogs.msdn.microsoft.com/slumley/archive/2009/05/22/dev10-feature-load-test-excel-report-integration.aspx)
+* [Generating Run Comparison report in Excel](https://blogs.msdn.microsoft.com/slumley/archive/2009/11/07/vsts-2010-feature-load-testing-run-comparison-report-in-excel.aspx)
+* [Understanding Virtual User Activity visualization](https://blogs.msdn.microsoft.com/slumley/archive/2009/06/09/vsts-2010-feature-load-test-virtual-user-activity-visualization.aspx)
+* [Using fiddler to create web tests](http://www.bugtrap.co.uk/2010/06/using-fiddler-with-visual-studio-team.html) 
+* [Creating web tests transactions from fiddler](https://blogs.msdn.microsoft.com/nexpert/archive/2009/05/04/creating-transactional-web-tests-for-visual-studio-with-fiddler-nexpert.aspx)
+* [Creating custom Load profiles via plug-ins](https://blogs.msdn.microsoft.com/slumley/archive/2009/05/04/creating-a-custom-load-profile-which-will-step-user-load-up-and-then-back-down.aspx)
+
+**Case Studies**
+
+* [Load Testing Visual Studio Online itself](https://blogs.msdn.microsoft.com/edglas/archive/2013/11/27/load-testing-visual-studio-online.aspx)
+* [NORAD Tracks Santa](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/01/23/using-visual-studio-online-to-load-test-the-norad-tracks-santa-website.aspx)
+* [Eovendo - Ad Rating Service](http://www.microsoft.com/casestudies/Case_Study_Detail.aspx?CaseStudyID=710000003474)
+
+**Blogs and other references**
+
+* [Quick Reference Guide for VS Performance Testing](http://vsptqrg.codeplex.com/)
+
+**Blogs from Microsoft Load Test champions (a veritable treasure trove)**
+
+* [Geoff Gray's blog](https://blogs.msdn.microsoft.com/geoffgr/)
+* [Ed Glas' blog](https://blogs.msdn.microsoft.com/edglas/archive/2007/12/17/content-index-for-web-tests-and-load-tests.aspx)
+* [Sean Lumley's blog](https://blogs.msdn.microsoft.com/slumley/)
+
+**Samples**
+
+* [Sample plugins](http://teamtestplugins.codeplex.com/)
+* [Sample code for REST APIs (Test Execution)](https://code.msdn.microsoft.com/windowsdesktop/Cloud-Load-Testing-API-b333e778)
+* [Sample code for REST APIs (Importing Results)](https://code.msdn.microsoft.com/windowsdesktop/Importing-Load-Test-Results-b577864b)
+
+-----------------
+
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

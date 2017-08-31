@@ -83,11 +83,11 @@ With the exception of **System.Debug**, these variables are read-only and their 
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Description | Example | Not available in |
 > |---------------|-------------|---------|--------------|
-> | System.TeamFoundationServerUri | The URL of the Release Management service endpoint in the TFS or VSTS account. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm .visualstudio.com/ | |
-> | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or VSTS account. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/fabrikam .visualstudio.com/ | |
-> | System.CollectionId | The ID of the collection to which this build or release belongs. | 6c6f3423-1c84-4625 -995a-f7f143a1e43d | TFS 2015 |
+> | System.TeamFoundationServerUri | The URL of the Release Management service endpoint in the TFS or VSTS account. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
+> | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or VSTS account. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/fabrikam.visualstudio.com/ | |
+> | System.CollectionId | The ID of the collection to which this build or release belongs. | 6c6f3423-1c84-4625-995a-f7f143a1e43d | TFS 2015 |
 > | System.TeamProject | The name of the team project to which this build or release belongs. | Fabrikam | |
-> | System.TeamProjectId | The ID of the team project to which this build or release belongs. | 79f5c12e-3337-4151-be41 -a268d2c73344 | TFS 2015 |
+> | System.TeamProjectId | The ID of the team project to which this build or release belongs. | 79f5c12e-3337-4151-be41-a268d2c73344 | TFS 2015 |
 > | System.ArtifactsDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.DefaultWorkingDirectory. | C:\agent\_work\r1\a |  |
 > | System.DefaultWorkingDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.ArtifactsDirectory. | C:\agent\_work\r1\a | |
 > | System.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and Agent.WorkFolder. | C:\agent\_work |  |
@@ -125,10 +125,10 @@ With the exception of **System.Debug**, these variables are read-only and their 
 > | Release.DefinitionId | The ID of the release definition to which the current release belongs. | 1 | TFS 2015 |
 > | Release.ReleaseName | The name of the current release. | Release-47 | |
 > | Release.ReleaseId | The identifier of the current release record. | 118 | |
-> | Release.ReleaseUri | The URI of current release. | vstfs:///ReleaseManagement /Release/118 | |
+> | Release.ReleaseUri | The URI of current release. | vstfs:///ReleaseManagement/Release/118 | |
 > | Release.ReleaseDescription | The text description provided at the time of the release. | Critical security patch | |
 > | Release.RequestedFor | The display name of identity that triggered the release. | Mateo Escobedo | |
-> | Release.RequestedForId | The ID of identity that triggered the release. | 2f435d07-769f-4e46 -849d-10d1ab9ba6ab | |
+> | Release.RequestedForId | The ID of identity that triggered the release. | 2f435d07-769f-4e46-849d-10d1ab9ba6ab | |
 > | Release.EnvironmentName | The name of environment to which deployment is currently in progress. | Dev | |
 > | Release.EnvironmentId | The ID of the environment instance in a release to which the deployment is currently in progress. | 276 | |
 > | Release.EnvironmentUri | The URI of environment instance in a release to which deployment is currently in progress. | vstfs:///ReleaseManagement/Environment/276 | |
