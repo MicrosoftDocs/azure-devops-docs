@@ -11,7 +11,7 @@ ms.technology: tfs-on-prem
 
 # Team Foundation Server architecture
 
-**TFS 2017** | **TFS 2015** | **TFS 2013**
+**TFS 2017 | TFS 2015 | TFS 2013**
 
 To best plan and manage your deployment, you should first understand the underlying architecture of Team Foundation Server (TFS). Understanding the architecture can help you maintain the overall health of the deployment and help ensure the overall availability of the servers and services your development teams require. 
 
@@ -21,12 +21,9 @@ To understand the architecture of TFS and how it affects your deployment, you sh
 
 * The logical application, data, and client tiers of Team Foundation, and whether you want to use one or more servers for the application and data tiers, or whether you want the application and data tiers hosted in the cloud for you by using Visual Studio Team Services 
 
-
 * The location of the physical or virtual servers that host those tiers
 
-
 * Team Foundation Build and the number and location of build computers that will run in your environment, including how many you might need to support your development practices
-
 
 * The potential need for Team Foundation ServerProxy 
 
@@ -37,42 +34,15 @@ Besides its own services, Team Foundation Server depends on other services in or
 
 > **Caution!** You should not manually modify any of the TFS databases unless you’re instructed to do so by Microsoft Support or you’re following the procedures described for manually backing up the databases. Any other modifications can invalidate your service agreement.
 
-## In this topic
-
-In this topic 
-
-* [Visual Studio Team Services](#teamservices)
-
-* [The Object Model](#theobjectmodel)
-
-* [Web Services and Databases for Local Deployments](#web-svcs-local-deploy)
-
-   * [Collection-Level Services](#collection-level-svcs)
-
-   * [Server-Level Services](#server-level-svcs)
-
-   * [Data Tier](#datatier)
-
-   * [Client Tier](#clienttier)
-
-* [Configuration Information](#config-info)
-
-* [Groups and Permissions](#groups-n-perms)
-
-* [Network Ports and Protocols](#network-ports-protocols)
-
-   * [Default Network Settings](#default-network-settings)
-
-   * [Customizable Network Settings](#customizable-network-settings)
 
 <a name="teamservices"></a>
-## Team Services
+## Visual Studio Team Services (VSTS) 
 
 ![Team Services](../_img/architecture/vsts_architecture_intro.png)
 
-Microsoft offers the option of using Team Services, which can host all of the server-side aspects of TFS for you. Your source code, work items, build configurations, and team features are all hosted in the cloud. From an architectural point of view, this greatly simplifies your use of TFS, as the only aspects of the architecture you need to consider are the client components and their Internet access.
+Microsoft offers the option of using VSTS, which can host all of the server-side aspects of TFS for you. Your source code, work items, build configurations, and team features are all hosted in the cloud. From an architectural point of view, this greatly simplifies your use of TFS, as the only aspects of the architecture you need to consider are the client components and their Internet access.
 
-When using the Team Services, you use a web browser to connect to the service using your Microsoft account. You can create team projects, add members to your team, and work as you would with a locally installed TFS, without the overhead of administering the servers. Team Services hosts your application tier, data tier, and build servers in the cloud. 
+When using the VSTS, you use a web browser to connect to the service using your Microsoft account. You can create team projects, add members to your team, and work as you would with a locally installed TFS, without the overhead of administering the servers. VSTS hosts your application tier, data tier, and build servers in the cloud. 
 
 
 <a name="theobjectmodel"></a>
@@ -140,23 +110,14 @@ Server-level services (also known as application-level services) provide the fun
 Team Foundation Framework Services:
 
 * Registry service
-
 * Event service
-
 * Team Project Collection service
-
 * Property service
-
 * Security service
-
 * Location service
-
 * Identity Management service
-
 * Administration Service
-
 * Collection Management Service
-
 * Catalog Service
 
 <a name="datatier"></a>
@@ -165,11 +126,8 @@ Team Foundation Framework Services:
 The data tier includes data, stored procedures, and other associated logic. When you use Visual Studio Team Services, the data tier is hosted for you using SQL Server Azure. In a local deployment of TFS, the logical data tier consists of the following operational stores within SQL Server. These stores might be located on one physical server or distributed across many servers. You can create applications that extend Team Foundation Server by using some of these operational stores. For more information, see [Extending Team Foundation](extend-vs-for-alm.md).
 
 * Configuration database (TFS_Configuration)
-
 * Application warehouse (TFS_Warehouse)
-
 * Analysis Services database (TFS_Analysis)
-
 * Databases for team project collections (TFS_CollectionName)
 
 
@@ -196,13 +154,9 @@ The client tier communicates with the application tier through the server object
 The hosted service depends on the client services, deployed locally, and an Internet connection to the application and data tiers hosted in the cloud. A local deployment of Team Foundation Server depends on SQL Server, Internet Information Services (IIS), and the Windows operating system. Contingent on your chosen topology, Team Foundation Server might also depend on SQL Server Reporting Services or SharePoint Products. Therefore, configuration information for Team Foundation Server can be stored in any of the following locations:
 
 * IIS data stores.
-
 * Configuration files for Team Foundation Server.
-
 * Data sources for Reporting Services (for example, TFSREPORTS data).
-
 * Configuration database for Team Foundation Server. The Team Foundation Server registry is part of the configuration database.
-
 * Windows Registry.
 
 

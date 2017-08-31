@@ -19,9 +19,11 @@ You can use the backups you made of the original deployment to restore the data 
 
 If you manually configured your backups, you cannot use the Restore wizard in Scheduled Backups to restore those databases. You must manually restore them using the software you used to back them up.
 
-**In this topic**  
--   [Restore Team Foundation Server databases](#restore-tfs-dbs)  
--   [Restore the SharePoint farm](#restore-sharept-farm)
+Use this topic to:
+
+> [!div class="checklist"]   
+> * Restore Team Foundation Server databases
+> * Restore the SharePoint farm
 
 **Required permissions**  
 To perform these procedures, you must be a member of the following groups or have the following permissions:  
@@ -110,14 +112,7 @@ To restore a farm, either you must be logged in with an account that is a member
 
 8.  For more information about restoring a farm, see [Restore a farm (SharePoint Foundation)](http://go.microsoft.com/fwlink/?LinkId=236093).
 
-Tutorial Roadmap:
+## Try this next
 
-* [Home](tut-single-svr-home.md) 
-
-* [Prepare the new hardware](tut-single-svr-prep-new-hw.md)
-
-* YOU ARE HERE: [Restore the databases](tut-single-svr-restore-dbs.md) 
-
-* [Install and configure Team Foundation Server](tut-single-svr-install-config-tfs.md) 
-
-* [Reconnect services and users](tut-single-svr-reconn-svcs-users.md)
+> [!div class="nextstepaction"]
+> * [Install and configure Team Foundation Server](tut-single-svr-install-config-tfs.md) 

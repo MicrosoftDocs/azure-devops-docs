@@ -259,19 +259,38 @@ You can use the macros described in the following table to filter your queries b
 	<td>Use in conjuction with the **Work Item Type** field to search across all work item types. For example, `Work Item Type=[Any]` won't place any filters based on the work item type.
 </td>
 </tr>
+
+
+<tr>
+	<td>**@CurrentIteration**</td>
+	<td>Use in conjuction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../how-to/switch-team-context-work.md). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+<blockquote><strong>Feature availability:</strong> The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The macro only works when run from the web portal. 
+</blockquote>
+</td>
+</tr>
+
+<tr>
+	<td><b>@Follows</b></td>
+	<td>Use in conjuction with the **ID** field and **In** operator to list all work items that you are following. To learn more about the Follow feature, see [Follow a work item or pull request](../../collaborate/follow-work-items.md).
+<blockquote><strong>Feature availability:</strong> The **@Follow** macro is supported for VSTS and TFS 2017 and later versions.
+</blockquote>
+</td>
+</tr>
+
 <tr>
 	<td>**@Me**</td>
 	<td>Use in conjunction with an identity or user account field to automatically search for items associated with your user or account name. For example, you can find work items that you opened with the clause `Created By=@Me`. For additional examples, see [Query by assignment, workflow or Kanban board changes](query-by-workflow-changes.md).
 </td>
 </tr>
-
+<!---
 <tr>
-	<td>**@CurrentIteration**</td>
-	<td>Use in conjuction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](#switch-team-context). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
-<blockquote><strong>Feature availability:</strong> The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The macro only works when run from the web portal. 
+	<td><b>@MyRecentActivity</b></td>
+	<td>Use in conjuction with the **ID** field and **In** operator to list all work items that you are following. To learn more about the Follow feature, see [Follow a work item or pull request](../../collaborate/follow-work-items.md).
+<blockquote><strong>Feature availability:</strong> The **@MyRecentActivity** macro is supported for VSTS and TFS 2018 and later versions.
 </blockquote>
 </td>
 </tr>
+-->
 
 <tr>
 	<td>**@Project**</td>

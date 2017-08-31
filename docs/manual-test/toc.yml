@@ -87,7 +87,7 @@
 - name: Resources
   items:
   - name: Get Stakeholder feedback
-    href: ../collaborate/feedback/index.md 
+    href: ../feedback/index.md 
   - name: Using Microsoft Test Manager
     href: https://msdn.microsoft.com/en-us/library/jj635157.aspx
   - name: REST API for test management

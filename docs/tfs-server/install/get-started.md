@@ -15,27 +15,21 @@ ms.date: 08/04/2016
 
 **TFS 2017** | **TFS 2015**
 
-## For your team
-
-You have many choices
+You have several choices
 in how to deploy TFS, from putting everything on a single server all the way to using multiple 
 application tiers, multiple SQL instances, and a SharePoint farm. See our
 [hardware recommendations](../../accounts/requirements.md#hardware-recommendations) for more detailed help 
 in determining the right type of deployment for your team. 
 
-* [Single server](single-server.md)
-
+* [Single server](single-server.md)    
 	A single server deployment is the easiest way to deploy TFS, with the 
 	application tier and data tier on the same machine.
 
-
-* [Dual server](dual-server.md)
-
+* [Dual server](dual-server.md)  
 	A dual server deployment, with separate application and data tiers, can 
 	provide better performance for larger teams or teams with heavier usage.
 
-* [Multiple server configuration](multiple-server.md)
-
+* [Multiple server configuration](multiple-server.md)  
 	Multiple server deployments, which can involve multiple application 
 	and/or data tiers, can provide better performance for larger teams or 
 	teams with heavier usage. Using multiple servers can also improve high 
@@ -57,7 +51,7 @@ for personal use.
 Because it's in the cloud, you won't have to install SQL Server and TFS on your own hardware,
 and you won't need to do things like manage your own backups.
 
-## The process
+## The installation process
 
 No matter how you plan to deploy TFS, the process always involves three steps - 
 preparation, installation, and configuration. 

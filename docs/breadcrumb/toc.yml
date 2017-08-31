@@ -93,8 +93,8 @@
       tocHref: /vsts/search/
       topicHref: /vsts/search/index
     - name: Feedback
-      tocHref: /vsts/collaborate/feedback/
-      topicHref: /vsts/collaborate/feedback/index
+      tocHref: /vsts/feedback/
+      topicHref: /vsts/feedback/index
   - name: Admin
     tocHref: /vsts/accounts/
     topicHref: /vsts/index#pivot=services&panel=admin

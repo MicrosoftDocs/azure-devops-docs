@@ -15,11 +15,12 @@ ms.technology: tfs-on-prem
 
 This topic, the fourth part of the Restore a Single-Server tutorial, teaches you how to start team project collections and verify user groups on the new server. You will also learn how to clear the data caches on the new server, and how to help ensure that your users do not experience data caching problems when they connect to the new server.
 
-**In this topic**
+Use this topic to:
 
-1.  [Start team project collections and verify permissions](#start-team-project-colls)
+> [!div class="checklist"]   
+> * Start team project collections and verify permissions
+> * Refresh the version control cache on client computers and reconnect to TFS
 
-2.  [Refresh the version control cache on client computers and reconnect to Team Foundation Server](#refresh-vc-cache-reconn-tfs)
 
 **Required permissions**
 
@@ -93,15 +94,3 @@ To refresh the version control cache on client computers:
 
     For more information, see [Workspaces Command](../../../tfvc/workspace-command.md).
 
-
-Tutorial Roadmap:
-
-* [Home](tut-single-svr-home.md) 
-
-* [Prepare the new hardware](tut-single-svr-prep-new-hw.md)
-
-* [Restore the databases](tut-single-svr-restore-dbs.md) 
-
-* [Install and configure Team Foundation Server](tut-single-svr-install-config-tfs.md) 
-
-* YOU ARE HERE: [Reconnect services and users](tut-single-svr-reconn-svcs-users.md)

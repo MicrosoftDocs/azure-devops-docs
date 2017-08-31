@@ -92,8 +92,7 @@ You can [download EGit](http://www.eclipse.org/egit/) to use Git with Eclipse.
 > [!div class="nextstepaction"]
 > [Learn more about using Git in the Git tutorial](tutorial/gitworkflow.md)
 
-> [!div class="nextstepaction"]
-> [create a build for your project code](../build-release/apps/java/quick-to-azure.md)
+
 
 
 

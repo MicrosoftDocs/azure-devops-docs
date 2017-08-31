@@ -20,13 +20,12 @@ Extensions for SharePoint Products on the new server. Additionally, you
 will learn how to configure SharePoint Foundation, reporting, and
 analysis services to work with the new server.
 
-**In this topic:**
+Use this topic to:
 
-1.  [Install Team Foundation Server and the Extensions for SharePoint Products](#InstallTFS)
-
-2.  [Configure SharePoint Foundation](#ConfigureSPT)
-
-3.  [Configure reporting and Analysis Services](#RestoreWarehouse)
+> [!div class="checklist"]   
+> * Install Team Foundation Server and the Extensions for SharePoint Products
+> * Configure SharePoint Foundation 
+> * Configure reporting and Analysis Services  
 
 
 **Required permissions**: you must be a member of the following groups or have the following
@@ -192,15 +191,7 @@ To reconfigure reporting and Analysis Services:
 11. Wait until the command is successfully completed.
 
 
+## Try this next
 
-Tutorial Roadmap:
-
-* [Home](tut-single-svr-home.md) 
-
-* [Prepare the new hardware](tut-single-svr-prep-new-hw.md)
-
-* [Restore the databases](tut-single-svr-restore-dbs.md) 
-
-* YOU ARE HERE: [Install and configure Team Foundation Server](tut-single-svr-install-config-tfs.md) 
-
-* [Reconnect services and users](tut-single-svr-reconn-svcs-users.md)
+> [!div class="nextstepaction"]
+> * [Reconnect services and users](tut-single-svr-reconn-svcs-users.md)

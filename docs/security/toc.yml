@@ -20,8 +20,6 @@
     href: /vsts/security/about-permissions?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: About access levels 
     href: /vsts/security/access-levels?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
-  - name: Azure Active Directory groups (VSTS) 
-    href: /vsts/accounts/access-with-azure-ad?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
   - name: Active Directory groups (TFS) 
     href: /vsts/tfs-server/admin/setup-ad-groups?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
 - name: How-to Guides
