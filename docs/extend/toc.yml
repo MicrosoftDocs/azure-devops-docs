@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-    - name: Extensions overview
+    - name: Create a custom extension
       href: ./overview.md
 - name: Quickstarts
   items:
@@ -26,26 +26,28 @@
     href: develop/add-dashboard-widget.md
   - name: Add a new service endpoint
     href: develop/service-endpoints.md
-  - name: Add a hub
-    href: develop/add-hub.md
-  - name: Add a menu action
-    href: develop/add-action.md
-  - name: Add backlog tabs
-    href: develop/add-backlog-tabs.md
-  - name: Add backlog panels
-    href: develop/add-backlog-panel.md
   - name: Add a service hook
     href: develop/add-service-hook.md
   - name: Add a chart
     href: develop/add-chart.md
   - name: Store data and settings
     href: develop/data-storage.md
-  - name: Extend the work item form
-    href: develop/add-workitem-extension.md
-  - name: Add a custom control to the work item form
-    href: develop/custom-control.md
-  - name: Configure work item form extensions in TFS
-    href: develop/configure-workitemform-extensions.md
+  - name: Add Work hub extensions
+    items:
+    - name: Add a hub
+      href: develop/add-hub.md
+    - name: Add a menu action
+      href: develop/add-action.md
+    - name: Add backlog tabs
+      href: develop/add-backlog-tabs.md
+    - name: Add backlog panels
+      href: develop/add-backlog-panel.md
+    - name: Extend the work item form
+      href: develop/add-workitem-extension.md
+    - name: Add a custom control to the work item form
+      href: develop/custom-control.md
+    - name: Configure work item form extensions in TFS
+      href: develop/configure-workitemform-extensions.md
   - name: Call a REST API
     href: develop/call-rest-api.md
   - name: Use a platform UI control
@@ -128,7 +130,15 @@
         href: reference/client/controls/splitter.md
       - name: WaitControl
         href: reference/client/controls/waitcontrol.md
-- name: How to get help
-  href: support/help.md
-- name: Visual Studio extensions
-  href: https://visualstudio/extend/ide/overview.md
+      - name: How to get help
+        href: support/help.md
+- name: Resources
+  items:
+  - name: Visual Studio Marketplace
+    href: https://marketplace.visualstudio.com/
+  - name: Manage Extensions
+    href: ../marketplace/index.md
+  - name: Build Visual Studio extensions
+    href: https://visualstudio/extend/ide/overview.md
+
+

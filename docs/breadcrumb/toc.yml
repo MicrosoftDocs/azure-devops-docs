@@ -124,9 +124,6 @@
     - name: Service Hooks
       tocHref: /vsts/service-hooks/
       topicHref: /vsts/service-hooks/index
-    - name: Extend overview
-      tocHref: /vsts/extend/
-      topicHref: /vsts/extend/index
     - name: Visual Studio Extensions
       tocHref: /vsts/integrate/ide/extensions/
       topicHref: /vsts/integrate/ide/extensions/overview
@@ -145,3 +142,10 @@
     - name: "Data Warehouse & SQL Reports"
       tocHref: /vsts/report/sql-reports/
       topicHref: /vsts/report/sql-reports/index
+  - name: Extend
+    tocHref: /vsts/extend/
+    topicHref: /vsts/index#pivot=services&panel=integration
+    items:
+    - name: Build extensions
+      tocHref: /vsts/extend/
+      topicHref: /vsts/extend/index

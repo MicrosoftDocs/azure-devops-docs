@@ -10,11 +10,10 @@ ms.author: elbatk
 ms.date: 08/23/2016
 ---
 
-# Building Visual Studio Team Services  and Team Foundation Server Extensions
+# Building Extensions
 
-You can build custom applications or services that integrate with your Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) accounts by using the **REST APIs** to make direct HTTP calls, or utilize our **.NET Client Libraries**.
-
-Along with interacting with VSTS or TFS in your application, you can also integrate with popular third-party services such as Slack or Jenkins.
+Extensions are simple add-ons that can be used to customize and extend your DevOps experience with Team Services. 
+They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.
 
 <a name ="customApps"/>
 
@@ -29,43 +28,14 @@ Check out the quick starts to get you started:
 ## Samples
 * [Sample extensions](develop/samples-overview.md)
 
-## How-to
+## How-to Guides
 * Develop
     * [Add a build task](develop/add-build-task.md)
     * [Add a dashboard widget](develop/add-dashboard-widget.md)
-    * [Add a new service endpoint](develop/service-endpoints.md)
-    * [Add a hub](develop/add-hub.md)
-    * [Add a menu action](develop/add-action.md)
-    * [Add backlog tabs](develop/add-backlog-tabs.md)
-    * [Add backlog panels](develop/add-backlog-panel.md)
-    * [Add a service hook](develop/add-service-hook.md)
-    * [Add a chart](develop/add-chart.md)
-    * [Store data and settings](develop/data-storage.md)
-    * [Extend the work item form](develop/add-workitem-extension.md)
-    * [Add a custom control to the work item form](develop/custom-control.md)
-    * [Configure work item form extensions in TFS](develop/configure-workitemform-extensions.md)
     * [Call a REST API](develop/call-rest-api.md)
-    * Use a platform UI control
-        * [Configure](develop/ui-controls/configure.md)
-        * [Use grid](develop/ui-controls/grido.md)
-        * [Use menubar](develop/ui-controls/menubaro.md)
-        * [Use treeview](develop/ui-controls/treeviewo.md)
-        * [Use combo](develop/ui-controls/comboo.md)
-        * [Use modal dialog](develop/ui-controls/modaldialogo.md)
-        * [Use splitter](develop/ui-controls/splittero.md)
-        * [Use wait control](develop/ui-controls/waitcontrolo.md)
-        * [Use pivot filter](develop/ui-controls/pivotfiltero.md)
 * Package and publish
     * [Package and publish extensions](publish/overview.md)
     * [Package and publish integrations](publish/integration.md)
-    * [Make your listing public](publish/publicize.md)
-    * [Publish via command line](publish/command-line.md)
-* Test and debug
-    * [Debug a web extension](test/debug-in-browser.md)
-    * [Menu group IDs](test/discover-menu-group-ids.md)
-* Reporting
-    * [Extension reporting](extension-report.md)
-    * [Extension statistics PowerBI content pack](extension-statistics-powerbi-contentpack.md)
 
 ## Reference
 * Development
