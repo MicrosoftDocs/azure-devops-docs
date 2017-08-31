@@ -12,7 +12,7 @@ ms.date: 07/04/2017
 
 # FAQs for load testing
 
-[!INCLUDE [version-header-ts](_shared/version-header-ts.md)] 
+[!INCLUDE [version-header-vs-ts](_shared/version-header-vs-ts.md)] 
 
 <a name="qageneral"></a>
 ## General
@@ -692,8 +692,8 @@ To fix this problem, create another load test. Delete the failed test run.
 
 ----------
 
+<a name="qalinks"></a>
 ## Links to useful resources
-
 
 **Getting Started**
 

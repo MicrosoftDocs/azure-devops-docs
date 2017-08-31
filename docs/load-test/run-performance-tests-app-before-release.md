@@ -13,7 +13,7 @@ ms.date: 08/12/2016
 
 # Tutorial: Load test your app before release
 
-[!INCLUDE [version-header-ts](_shared/version-header-ts.md)] 
+[!INCLUDE [version-header-vs-ts](_shared/version-header-vs-ts.md)] 
 
 Find performance issues before you release your app by running load tests with with Visual Studio 
 Enterprise using [Cloud-based Load Testing](http://go.microsoft.com/fwlink/?LinkID=317257)
