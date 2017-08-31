@@ -1,0 +1,44 @@
+<svg id="Screenshots" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-7 {
+        fill: #e5e5e5;
+      }
+
+      .cls-3 {
+        fill: #556a8a;
+      }
+
+      .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #55d2f6;
+      }
+
+      .cls-6, .cls-7 {
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>team-services-marketplace</title>
+  <path class="cls-1" d="M32,63.5A31.5,31.5,0,1,1,63.5,32,31.54,31.54,0,0,1,32,63.5Z"/>
+  <path class="cls-2" d="M32,63A30.94,30.94,0,0,1,8.24,51.91a30.57,30.57,0,0,1-2.51-3.45,28.68,28.68,0,0,1-1.61-2.88L4,45.42c-.13-.27-.25-.54-.37-.82L3.4,44A28.86,28.86,0,0,1,2,40a30.21,30.21,0,0,1-1-6H62.94A31,31,0,0,1,32,63Z"/>
+  <path class="cls-3" d="M32,2A30,30,0,1,1,2,32,30,30,0,0,1,32,2m0-2A32,32,0,1,0,64,32,32,32,0,0,0,32,0Z"/>
+  <rect class="cls-4" width="64" height="64"/>
+  <g>
+    <polygon class="cls-1" points="18 23 48 23.2 42.85 39 24 39 18 23"/>
+    <polygon class="cls-5" points="18.37 23.2 48 23.2 46.07 29 19.66 29 18.37 23.2"/>
+    <polyline class="cls-6" points="18.37 22.9 48 22.9 43.1 39 23.29 39 16 17 10 17"/>
+    <polyline class="cls-6" points="21.64 34.14 25 44 45 44"/>
+    <circle class="cls-7" cx="29" cy="47" r="3"/>
+    <circle class="cls-7" cx="40" cy="47" r="3"/>
+  </g>
+</svg>

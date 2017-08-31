@@ -182,7 +182,7 @@ ms.date: 07/05/2017
 
 [Build: Gulp](../build/gulp.md)
 
-[Build your Node.js app with Gulp](../../apps/nodejs/nodejs-to-azure.md)
+[Build your Node.js app with Gulp](../../apps/nodejs/build-gulp.md)
 
 ## Q&A
 

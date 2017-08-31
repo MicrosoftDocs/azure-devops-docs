@@ -46,7 +46,7 @@ User-defined variables are formatted differently in different contexts. See abov
 
 ### Secret Variables
 
-We recommend that you make the variable ![Secret](../../../_shared/_img/secret-variable-icon.png)
+We recommend that you make the variable ![Secret](_img/variables/secret-variable-icon.png)
 **Secret** if it contains a password, keys, or some other kind of data that you need to avoid exposing.
 
 **VSTS**
@@ -65,7 +65,7 @@ Secret variables are:
 
 * Not decrypted into environment variables. So scripts and programs run by your build steps are not given access by default.
 
-* Decrypted for access by your build steps. So you can use them in password arguments (for example [Build and Deploy your Java application to an Azure web app](../../../apps/java/maven-to-azure.md) and also pass them explicitly into a script or a program from your build step (for example as `$(password)`).
+* Decrypted for access by your build steps. So you can use them in password arguments and also pass them explicitly into a script or a program from your build step (for example as `$(password)`).
 
 
 ### Allow at queue time

@@ -2,7 +2,8 @@
 title: TFS/Core/Contracts WebApiTeam API | Extensions for Visual Studio Team Services
 ms.assetid: b46dbdab-7d19-8a5b-cc5c-196fa50a55e1
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

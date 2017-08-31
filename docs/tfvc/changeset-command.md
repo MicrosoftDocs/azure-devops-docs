@@ -3,7 +3,8 @@ title: Changeset Command
 description: Changeset Command
 ms.assetid: 74d584cf-277f-41f9-b7a1-642ebab963af
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

@@ -1,0 +1,41 @@
+<svg id="ICONS-64x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #556a8a;
+      }
+
+      .cls-2, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #e5e5e5;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+
+      .cls-4, .cls-6 {
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        fill: #2bc7f4;
+      }
+    </style>
+  </defs>
+  <title>i_management</title>
+  <path class="cls-1" d="M41.6,8H22.4A2.39,2.39,0,0,0,20,10.36v8.27A2.39,2.39,0,0,0,22.4,21H22V10H42V21h-.4A2.39,2.39,0,0,0,44,18.64V10.36A2.39,2.39,0,0,0,41.6,8Z"/>
+  <path class="cls-2" d="M57.36,17H6.64A5.75,5.75,0,0,0,1,22.84V52.27A1.71,1.71,0,0,0,2.7,54H61.3a1.63,1.63,0,0,0,.88-.22A1.82,1.82,0,0,0,63,52.27V22.84A5.75,5.75,0,0,0,57.36,17Z"/>
+  <rect class="cls-3" x="1" y="46" width="62" height="8"/>
+  <path class="cls-4" d="M57.36,17H6.64A5.75,5.75,0,0,0,1,22.84V52.27A1.71,1.71,0,0,0,2.7,54H61.3a1.63,1.63,0,0,0,.88-.22A1.82,1.82,0,0,0,63,52.27V22.84A5.75,5.75,0,0,0,57.36,17Z"/>
+  <rect class="cls-5" x="2" y="33" width="60" height="5"/>
+  <rect class="cls-6" x="13" y="29" width="8" height="13.91" rx="2" ry="2"/>
+  <line class="cls-6" x1="17" y1="32" x2="17" y2="40"/>
+  <rect class="cls-6" x="43" y="29" width="8" height="13.91" rx="2" ry="2"/>
+  <line class="cls-6" x1="47" y1="32" x2="47" y2="40"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg id="ICONS-64x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #2bc7f4;
+      }
+
+      .cls-3 {
+        fill: #e5e5e5;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>i_extensions</title>
+  <path class="cls-1" d="M16,48V16H28V4H4V60H32V48Z"/>
+  <rect class="cls-2" x="20" y="20" width="24" height="24"/>
+  <polygon class="cls-1" points="49 31 49 24 53 24 53 11 40 11 40 15 33 15 33 4 60 4 60 31 49 31"/>
+  <path class="cls-3" d="M48,36V48H36V60H60V36Z"/>
+  <rect class="cls-4" width="64" height="64"/>
+</svg>

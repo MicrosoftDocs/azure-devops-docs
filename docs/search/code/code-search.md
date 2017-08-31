@@ -3,7 +3,8 @@ title: Search your code in Visual Studio Team Services and Team Foundation Serve
 description: Get started with Code Search to search code across all of your Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) projects, from anywhere and any computer or mobile device, using your web browser. Find code, trace occurrences across files, discover related items, and explore your project contents.
 ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-search
+ms.technology: vsts-sub-cod
+ms.service: vsts-collaboration
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: douge

@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces DataProviderResult API | Extensions for Vis
 description: Result structure from calls to GetDataProviderData
 ms.assetid: 6b5c41dd-5dac-4489-1107-77c37aa286c6
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

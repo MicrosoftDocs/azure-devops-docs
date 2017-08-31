@@ -42,19 +42,18 @@ The main security concepts to understand are
 
 ## Authentication
 
-Authentication is the verification of the credentials of a connection attempt from a client, server, or process. 
+Authentication verifies a user's identify based on the credentials provided when they sign into VSTS or TFS. These systems integrate with and rely upon the security features provided by these additional systems: 
+- Azure Active Directory (AAD)  
+- Microsoft account (MSA)  
+- Active Directory (AD)  
 
-VSTS and TFS security is integrated with and relies upon Azure Active Directory (AAD) or Active Directory (AD) for integrated authentication and the security features of AAD and AD.  
+AAD and MSA support cloud authentication. We recommend AAD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your VSTS account, you can simply use Microsoft accounts. 
+
+For on-premises TFS, AD is recommended when managing a large group of users. 
 
 ### Authentication methods, integrating with other services and apps 
 
-With VSTS and TFS, other applications and services can integrate with VSTS and TFS services and resources. To access your account without asking for user credentials multiple times, apps can use these authentication methods:
-
-*	[OAuth](/vsts/integrate/get-started/Authentication/oauth) 
-to generate tokens for accessing [REST APIs for Team Services and Team Foundation Server](/vsts/integrate/get-started/rest/basics). 
-The [Accounts](/vsts/integrate/api/shared/accounts) 
-and [Profiles](/vsts/integrate/api/shared/profiles) 
-APIs support only OAuth.
+Other applications and services can integrate with VSTS and TFS services and resources. To access your account without asking for user credentials multiple times, apps can use these authentication methods:
 
 *	[Alternate credentials](../git/auth-overview.md#alternate-credentials) 
 as a single set of credentials across all tools that don't have 
@@ -62,14 +61,6 @@ plug-in, extension, or native support. For example,
 you can use basic authentication to access 
 [REST APIs for VSTS and TFS](../integrate/get-started/rest/basics.md), 
 but you must turn on alternate credentials.
-
-*	[SSH authentication](../git/use-ssh-keys-to-authenticate.md) 
-to generate encryption keys when you use Linux, Mac, 
-or Windows running [Git for Windows](http://www.git-scm.com/download/win) 
-and can't use 
-[Git credential managers](../git/set-up-credential-managers.md) 
-or [personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
-for HTTPS authentication.
 
 *	[Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
 to generate tokens for: 
@@ -80,6 +71,20 @@ to generate tokens for:
 		and Azure Active Directory features like multi-factor authentication 
 	*	Accessing [REST APIs for VSTS and TFS](../integrate/get-started/rest/basics.md)
 
+*	[OAuth](/vsts/integrate/get-started/Authentication/oauth) 
+to generate tokens for accessing [REST APIs](/vsts/integrate/get-started/rest/basics). The [Accounts](/vsts/integrate/api/shared/accounts) 
+and [Profiles](/vsts/integrate/api/shared/profiles) 
+APIs support only OAuth. 
+
+*	[SSH authentication](../git/use-ssh-keys-to-authenticate.md) 
+to generate encryption keys when you use Linux, Mac, 
+or Windows running [Git for Windows](http://www.git-scm.com/download/win) 
+and can't use 
+[Git credential managers](../git/set-up-credential-managers.md) 
+or [personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
+for HTTPS authentication.
+
+
 By default, your account or collection allows access for all authentication methods. 
 You can limit access, but you must specifically restrict access for each method. 
 When you deny access to an authentication method, 
@@ -87,41 +92,38 @@ no app can use that method to access your account.
 Any app that previously had access will get an 
 authentication error and can't access your account.
 
-> To remove access for personal access tokens, 
-> you must [revoke them](../accounts/use-personal-access-tokens-to-authenticate.md).
-
 
 ## Authorization
-Authorization is the verification that the identity that is attempting to connect has permissions to access the object or method. Also, for select features, they may need to belong to an access level that grants them access to a feature. 
+Authorization verifies that the identity whcih is attempting to connect has the neccesary permissions to access a service, feature, function, object, or method. 
 
 Authorization always occurs after successful authentication. If a connection is not authenticated, it fails before any authorization checking is performed. If authentication of a connection succeeds, a specific action might still be disallowed because the user or group did not have authorization to perform that action.  
 
-Authorization is based on users and groups, and the permissions assigned directly to both those users and groups and permissions those users and groups might inherit by belonging to other VSTS or TFS security groups. These users and groups can be AAD or AD users and groups. For TFS, they can also be local users and groups.
+Authorization is based on users and groups, and the permissions assigned directly to both those users and groups and permissions those users and groups might inherit by belonging to one or more VSTS/TFS security groups. These users and groups can be AAD or AD users and groups. For TFS, they can also be local Windows users and groups.
+
+Also, for select features, users and groups may need to belong to an access level that grants them access to a feature. 
 
 ## Security groups and permissions  
 
-VSTS and TFS are preconfigured with default groups at these levels and permissions defined at corresponding levels: 
+VSTS and TFS are preconfigured with default security groups. Default permissions are assigned to the default security groups.   
 
 > [!div class="mx-tdBreakAll"]  
 > | Security groups | Permission levels | Permission States  | 
 > |-------------|----------| ----------| 
-> |- Team project level<br/>- Collection or Account level<br/>- Server level (TFS only) |- Object-level<br/>- Project-level<br/>- Collection-level<br/>- Server-level (TFS only) |User or group has permissions to perform a task:<br/>- **Allow**<br/>- ***Inherited allow**<br/>User or group doesn't have permission to perform a task:<br/>- ***Deny**<br/>- ***Inherited deny**<br/>- ***Not set** |
+> |- Team project level<br/>- Collection or Account level<br/>- Server level (TFS only) |- Object-level<br/>- Project-level<br/>- Collection-level<br/>- Server-level (TFS only) |User or group has permissions to perform a task:<br/>- **Allow**<br/>- **Inherited allow**<br/>User or group doesn't have permission to perform a task:<br/>- **Deny**<br/>- **Inherited deny**<br/>- **Not set** |
 
 You can populate these groups by using individual users. However, for ease of management, it's easier if you populate these groups by using AAD or AD security groups. This method enables you to manage group membership and permissions more efficiently across multiple computers.
 
 ![Conceptual image of permissions and access levels](_img/permissions/permissions-overview.png) 
 
-To learn more about inheritance, see [About permissions.md](about-permissions.md#inheritance).
-
 VSTS and TFS control access through these three inter-connected functional areas:
 
 -   **Membership management** supports adding individual Windows user accounts and groups to default TFS groups. Also, you can create TFS groups. Each default TFS group is associated with a set of default permissions. All users added to any TFS group are added to the Valid Users group. A valid user is someone who can connect to the team project.
 
--   **Permission management** controls access to specific functional tasks at different levels of the system. Object-level permissions set permissions on a file, folder, build definition, or a shared query. Permission settings correspond to **Allow**, **Deny**, **Inherited allow**, **Inherited deny**, and **Not set**.
+-   **Permission management** controls access to specific functional tasks at different levels of the system. Object-level permissions set permissions on a file, folder, build definition, or a shared query. Permission settings correspond to **Allow**, **Deny**, **Inherited allow**, **Inherited deny**, and **Not set**. To learn more about inheritance, see [About permissions and groups](about-permissions.md#inheritance).
 
 -   **Access level management** controls access to features provided via the web portal, the web application for TFS. Based on  what has been purchased for a user, administrators set the user's access  level to Basic, Advanced, or Stakeholder (previously labeled Standard, Full, and Limited).
 
-Each functional area uses groups to simplify management across the deployment. You add users and groups through the TFS web service administration pages. Permissions are automatically set based on the TFS group that you add users to, or based on the object, project, collection, or server level to which you add groups. On the other hand, access level management controls access for all users and groups at the server level.
+Each functional area uses groups to simplify management across the deployment. You add users and groups through the web administration context. Permissions are automatically set based on the security group that you add users to, or based on the object, project, collection, or server level to which you add groups. On the other hand, access level management controls access for all users and groups at the server level.
 
 <img src="_img/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 2px solid #C3C3C3;" />  
 
@@ -135,9 +137,9 @@ The following image shows the default permission assignments made to the Contrib
 ![Contributor role default permissions](_img/contributor-permissions.png)
 
 To learn more about other groups and their permission assignments,
-see [Permissions and groups](permissions.md).
+see [Permissions and groups reference](permissions.md).
 
-
+<a id="access-levels" />
 ## Access levels 
 
 Certain features are only available to users who have the appropriate licensing level for those features. Access to those features is not controlled by permissions but by membership in an access level. To learn more, see [Access levels](access-levels.md). 

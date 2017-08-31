@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts GitCommitRef API | Extensions for Visual Studio Team Services
 ms.assetid: 7ce7a32e-b941-6620-c5c7-3de0c9059f25
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

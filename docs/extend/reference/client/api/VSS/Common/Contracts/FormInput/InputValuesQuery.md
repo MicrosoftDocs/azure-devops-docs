@@ -2,7 +2,8 @@
 title: VSS/Common/Contracts/FormInput InputValuesQuery API | Extensions for Visual Studio Team Services
 ms.assetid: e4e82be8-3abb-2a19-f2d9-3ef5118b4439
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts GitPushSearchCriteria API | Extensions for Visual Studio Team Services
 ms.assetid: 47c919bb-b0df-e4ab-431b-29fd26936e68
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

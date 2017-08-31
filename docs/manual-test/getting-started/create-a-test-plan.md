@@ -2,7 +2,8 @@
 title: Create test plans in Visual Studio Team Services
 description: Create test plans in Visual Studio Team Services to track manual tests during sprints or milestones
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.topic: get-started-article
 ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
 ms.manager: douge
@@ -22,12 +23,6 @@ This includes static test suites, requirement-based suites, and
 [query-based suites](../reference-qa.md#query-based-suites). You can add individual test cases to a test plan without creating
 a test suite if you wish, but using a test suite provides a way to group
 test cases for separate testing scenarios within a single test plan.
-
-In this example, you'll learn how to:
-
-* [Create a test plan](#testplan)
-* [Add a test suite and select backlog items to test](#backlog)
-* [Find a test plan](#findplan)
 
 <a name="testplan"></a>
 ## Create a test plan
@@ -89,7 +84,7 @@ Test plans, suites, and test cases are stored in VSTS and TFS as special types o
    
 ## See also
 
-*  [Q &amp; A for manual testing](../reference-qa.md#testplans)
+*  [FAQs for manual testing](../reference-qa.md#testplans)
 
 ##  Next step
 

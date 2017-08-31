@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts Schedule API | Extensions for Visual Studio Team Services
 ms.assetid: f8e08d14-45f8-724e-0510-7aefdef8663e
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

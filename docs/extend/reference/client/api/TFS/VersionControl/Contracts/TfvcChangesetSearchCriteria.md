@@ -3,7 +3,8 @@ title: TFS/VersionControl/Contracts TfvcChangesetSearchCriteria API | Extensions
 description: Criteria used in a search for change lists
 ms.assetid: 495ac3c4-9db7-b9ec-1265-2f1ca2bd21bf
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

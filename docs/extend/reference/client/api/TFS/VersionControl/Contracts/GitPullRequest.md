@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts GitPullRequest API | Extensions for Visual Studio Team Services
 ms.assetid: 7d0200ed-37a8-aeea-3c2e-c033091ade71
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts MaskHint API | Extensions for Visual Studio Team Services
 ms.assetid: acbcacd3-311c-8fcc-1dfd-aff5a73121a0
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

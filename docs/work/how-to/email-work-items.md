@@ -82,17 +82,18 @@ In addition, if you have stakeholders who don't contribute code but want to cont
 
 
 <a id="email-print-send-links"></a>
-## Email, print, or send links to work item(s)  
 
 Some of the most common ways information is shared within a team or across teams is by emailing lists or links to work items.  
 
 <a id="email-item"></a>
-### Email a single item  
+## Email a single item  
 
 You can quickly email a summary of one or more work items. Summaries include the values assigned to these fields: work item ID, title, work item type, assigned to, state, and tags.  
 
 >[!NOTE]  
 >You can only send the email to addresses that are recognized by the system, that is accounts of team members or stakeholders. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't  permissions to read the mailed work items.  
+
+# [Browser](#tab/browser)
 
 ### Team Services
 <a id="team-services-email" />  
@@ -110,7 +111,8 @@ You can quickly email a summary of one or more work items. Summaries include the
 > [!NOTE]  
 > If you connect to an on-premises TFS, your TFS admin must have [configured an SMTP server](../../tfs-server/admin/setup-customize-alerts.md) for the email feature to work.   
 
-### Visual Studio or Team Explorer
+
+# [Visual Studio](#tab/visual-studio) 
 
 <a id="team-explorer-email" />
 
@@ -118,8 +120,7 @@ From Visual Studio or Team Explorer, choose ![Send work item to Microsoft Outloo
 
 ![Email work item from on-prem TFS](../track/_img/share-plans-email-work-item-te.png)  
   
-
-### Team Explorer Everywhere
+# [Team Explorer Everywhere](#tab/tee) 
 
 <a id="tee-email" />
 
@@ -127,6 +128,7 @@ From Visual Studio or Team Explorer, choose ![Send work item to Microsoft Outloo
 
 ![Email work item from TEE](../track/_img/share-plans-email-work-item-tfs.png)  
  
+---
 
 <a id="email-summary-lists"></a>
 ## Email summary lists with links to items  
@@ -136,8 +138,9 @@ Another way to share items is by emailing summary lists, such as a sprint summar
 Depending on the option and client you choose, summary lists may or may not include a hyperlink to the work item ID.  
 
  
+# [Browser](#tab/browser)
 
-### Team Services
+### Team Services, TFS 2017 
 
 <a id="team-services-email-list" /> 
 <a id="email-list-web-portal" >  </a> 
@@ -150,7 +153,7 @@ If you want to mail a list of all items in the backlog or query, simply click th
 
 ![Email full backlog or query results list](../track/_img/share-plans-email-summary-list-web-portal.png)  
 
-### TFS, Web Portal 
+### TFS 2015
 <a id="tfs-portal-email-list" />
 
 > [!NOTE]   
@@ -165,7 +168,7 @@ If you want to mail a list of all items in the backlog or query, simply click th
 ![Email full backlog or query results list](../track/_img/share-plans-email-summary-list-web-portal.png)  
  
 
-### Visual Studio, Team Explorer
+# [Visual Studio](#tab/visual-studio) 
 <a id="team-explorer-email-list" />
 
 **To email items from Visual Studio**: Open a query, highlight the items from the list, and then choose the Send selection to Microsoft Outlook from the context menu. This option requires that you configure Office Outlook on your client computer.  
@@ -173,13 +176,15 @@ If you want to mail a list of all items in the backlog or query, simply click th
 ![Email selected items from Visual Studio query result list ](../track/_img/share-plans-email-work-item-list.png)   
  
 
-### Team Explorer Everywhere
+# [Team Explorer Everywhere](#tab/tee) 
+
 <a id="tee-email-list" />
 
 **From Eclipse**: Open a query, highlight the items from the list, and then choose the Copy selected items to the clipboard from the context menu. Paste the clipboard contents to your email application.    
  
 ![Email selected items from Eclipse query result list](../track/_img/share-plans-email-work-item-list-eclipse.png)  
  
+---
 
 <a id="copy-formatted-list"></a>
 ## Copy formatted list of work items  
@@ -210,15 +215,15 @@ To print the details of a work item, open a query in Visual Studio that contains
 > [!NOTE]   
 > All URLs you copy, regardless of the client you use to copy them, opens the work item in the web portal. 
 
-
-### Team Services
+# [Browser](#tab/browser)
+### Team Services, TFS 2017 
 <a id="team-services-copy-url" />
 
 **From the web portal**, simply copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](../backlogs/_img/icon-copy-to-clipboard.png) copy-to-clipboard icon.
 
 <img src="../backlogs/_img/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" style="border: 2px solid #C3C3C3;" />  
 
-### TFS, Web Portal 
+### TFS 2015, TFS 2013   
 
 <s id="tfs-portal-copy-url" />
 
@@ -227,23 +232,22 @@ To print the details of a work item, open a query in Visual Studio that contains
 ![Copy hyperlink for a work item from web portal for TFS item](../track/_img/share-plans-copy-URL-wi-tfs.png) 
 
 
-
-### Visual Studio, Team Explorer
+# [Visual Studio](#tab/visual-studio)
 <a id="team-explorer-copy-url" />
 
 **From Visual Studio**, right-click the work item tab to copy the URL. The URL opens the work item in the web portal. 
 
 ![Copy full path hyperlink for a work item from Visual Studio](../backlogs/_img/add-work-items-copy-url-for-a-work-item.png)   
 
+# [Team Explorer Everywhere](#tab/tee) 
 
-### Team Explorer Everywhere
 <a id="tee-copy-url" />
 
 **From Eclipse**, open a query that contains the work item, and then open the context menu to Copy the URL for the selected work item. 
 
 ![Copy full path hyperlink for a work item from Eclipse](../track/_img/share-plans-copy-URL-wi-eclipse.png)   
 
-
+--- 
 
 <a id="release-summary"></a>
 ## Email release summary

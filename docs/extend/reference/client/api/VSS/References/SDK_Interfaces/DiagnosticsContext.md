@@ -2,7 +2,8 @@
 title: VSS/References/SDK.Interfaces DiagnosticsContext API | Extensions for Visual Studio Team Services
 ms.assetid: 94e99ee9-ba85-9b1c-31f3-dcb9c21e98a0
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

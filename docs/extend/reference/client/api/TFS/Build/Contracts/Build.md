@@ -3,7 +3,8 @@ title: TFS/build-release/Contracts Build API | Extensions for Visual Studio Team
 description: Data representation of a build
 ms.assetid: c9030833-785f-f748-cbd7-2269619f1fd7
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

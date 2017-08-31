@@ -26,8 +26,6 @@ For example, the following image illustrates four different charts created from 
 
 ![A view of 4 charts for a flat-list query](_img/charts-active-bugs.png)
 
-[!INCLUDE [temp](_shared/image-differences.md)]
-
 ## Add and configure a query-based chart  
 
 1.	From the Queries page, open the chart editor for a flat list query. You must belong to the Contributors group to create charts. Stakeholders can view charts but not create them. 
@@ -143,6 +141,9 @@ Also, from the web portal, you can view the following charts:
 - [Test progress and test results](../manual-test/getting-started/track-test-status.md)  
 - [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
 - [Widget catalog charts](widget-catalog.md)    
+
+
+[!INCLUDE [temp](_shared/image-differences.md)]
 
 
 ### Requirements to view and create charts  

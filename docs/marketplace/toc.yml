@@ -12,8 +12,6 @@
     href: get-tfs-extensions.md
   - name: How to buy TFS extensions
     href: get-tfs-extensions.md
-  - name: How to buy TFS CALs
-    href: https://www.visualstudio.com/team-services/tfs-pricing/
 - name: How-to Guides
   items:
   - name: Rate and review extensions
@@ -21,25 +19,11 @@
 - name: Troubleshooting
   items:
   - name: Getting and paying for extensions
-    href: faq-extensions.md  
+    href: faq-extensions.md
+  - name: Marketplace support
+    href: marketplace-billing-qa.md
 - name: Resources
   items:
-  - name: How to buy HockeyApp
-    href: ../billing/get-hockeyapp.md
-  - name: How to buy Visual Studio subscriptions
-    href: ../billing/vs-subscriptions/buy-vs-subscriptions.md
-  - name: How to buy Xamarin University
-    href: ../billing/xamarin-univ.md
-  - name: How to set up billing
-    href: ../billing/set-up-billing-for-your-account-vs.md
-  - name: How to manage subscriptions
-    href: ../billing/set-up-billing-for-your-account-vs.md
-  - name: How to buy Team Services users
-    href: ../billing/buy-basic-access-add-users.md
-  - name: How to buy build pipelines
-    href: ../billing/buy-more-build-vs.md
-  - name: How to buy load testing services
-    href: ../billing/buy-load-testing-vs.md
   - name: Extensions for Visual Studio
     href: ../integrate/ide/extensions/overview.md
   - name: Extensions for VS Code
@@ -54,3 +38,5 @@
       href: ../search/workitem/work-item-search.md
   - name: How to build Marketplace extensions
     href: ../extend/index.md#extensions
+  - name: How to buy TFS CALs
+    href: https://www.visualstudio.com/team-services/tfs-pricing/

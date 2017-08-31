@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts DeleteOptions API | Extensions for Visual Studio Team Services
 ms.assetid: 858dcde2-d5de-d485-a506-6c87be2ad22c
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

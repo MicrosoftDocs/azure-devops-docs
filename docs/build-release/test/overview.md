@@ -11,9 +11,7 @@ ms.date: 08/12/2016
 
 # Continuous testing scenarios and capabilities
 
-<!-- **VSTS | TFS 2017 | TFS 2015 | [Previous version](https://msdn.microsoft.com/library/ee702477%28v=vs.120%29.aspx)**   -->
-
-> See also [Manual and exploratory testing](../../manual-test/index.md), [Load and performance testing](../../load-test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
+**VSTS | TFS 2017 | TFS 2015 | [Previous version](https://msdn.microsoft.com/library/ee702477%28v=vs.120%29.aspx)**
 
 Whether your app is on-premises or in the cloud, 
 you can automate build-deploy-test workflows and 
@@ -78,5 +76,7 @@ using continuous testing and looking for advanced
 content, check out 
 [Test automation, planning, and management concepts](https://vsartestreleaseguide.codeplex.com/)
 from the DevOps Rangers.
+
+> See also [Manual and exploratory testing](../../manual-test/index.md), [Load and performance testing](../../load-test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

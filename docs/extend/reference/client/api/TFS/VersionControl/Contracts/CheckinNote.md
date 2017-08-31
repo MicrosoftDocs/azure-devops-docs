@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts CheckinNote API | Extensions for Visual Studio Team Services
 ms.assetid: 41c6ee5f-bd55-92ab-3495-685a8ec349fb
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2bc7f4;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>i_configure-teams</title>
+  <g id="ICONS-64x">
+    <rect class="cls-1" x="11" width="2" height="24"/>
+    <g>
+      <circle class="cls-2" cx="44.5" cy="13.75" r="12.25"/>
+      <path class="cls-2" d="M26,44A18.26,18.26,0,0,1,44.5,26,18.26,18.26,0,0,1,63,44"/>
+    </g>
+    <rect class="cls-1" y="11" width="24" height="2"/>
+    <g>
+      <circle class="cls-2" cx="23.8" cy="33.75" r="12.25"/>
+      <path class="cls-2" d="M5.3,64A18.26,18.26,0,0,1,23.8,46,18.26,18.26,0,0,1,42.3,64"/>
+    </g>
+    <rect class="cls-3" width="64" height="64"/>
+  </g>
+</svg>

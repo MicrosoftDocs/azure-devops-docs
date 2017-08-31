@@ -3,7 +3,8 @@ title: TFS/build-release/Contracts BuildLog API | Extensions for Visual Studio T
 description: Represents a build log.
 ms.assetid: f489a7a5-8cb3-2391-d82c-2696751c2e5e
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

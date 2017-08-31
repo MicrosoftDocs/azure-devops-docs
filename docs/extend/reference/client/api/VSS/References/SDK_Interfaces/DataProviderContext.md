@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces DataProviderContext API | Extensions for Vi
 description: Contextual information that data providers can examine when populating their data
 ms.assetid: 1ef8c124-3346-0d60-bfac-57e64d975fb9
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

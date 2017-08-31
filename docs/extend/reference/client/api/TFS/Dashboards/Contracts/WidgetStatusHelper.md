@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 title: TFS/Dashboards/WidgetHelpers WidgetStatusHelper API | Extensions for Visual Studio Team Services
 description: Documentation for the WidgetStatusHelper helper class.
 ms.assetid: 56D8E588-8873-47A8-AE58-48CA0530D5A5

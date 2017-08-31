@@ -3,7 +3,8 @@ title: VSS/SDK/Services/Navigation HostNavigationService API | Extensions for Vi
 description: Service which allows interaction with the browser location and navigation of the host frame
 ms.assetid: 2eb91c1e-0665-771c-e764-8a1982fdf35e
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

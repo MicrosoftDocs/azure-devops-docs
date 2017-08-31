@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces IExtensionContext API | Extensions for 
 description: Context about the app that owns the content that is being hosted
 ms.assetid: c4bd9815-17f9-9c4f-6240-c8549564fce7
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

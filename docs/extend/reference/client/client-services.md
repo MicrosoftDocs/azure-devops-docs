@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 title: Clients Services | Extensions for Visual Studio Team Services
 description: Client Services provided by Visual Studio Team Services.
 ms.assetid: 92736987-875E-4816-B835-F04917B4AF46

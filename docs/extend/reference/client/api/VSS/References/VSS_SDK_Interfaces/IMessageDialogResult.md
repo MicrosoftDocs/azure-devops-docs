@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces IMessageDialogResult API | Extensions f
 description: Result returned when a MessageDialog is closed.
 ms.assetid: 5e5c6348-b097-e5e5-d001-577a353911fd
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

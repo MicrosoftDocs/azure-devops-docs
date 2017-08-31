@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts GitHistoryQueryResults API | Extensions for Visual Studio Team Services
 ms.assetid: 411868b0-8cd6-d446-ffca-2cb9886b6a03
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

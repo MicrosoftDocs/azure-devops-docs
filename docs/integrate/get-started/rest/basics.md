@@ -3,7 +3,8 @@ title: Get started with the REST APIs for Visual Studio Team Services and Team F
 description: Learn the basic patterns for using the REST APIs for Visual Studio Team Services and Team Foundation Server.
 ms.assetid: bdddaf58-6849-4134-a295-2887dafeeea3
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.technology: vsts-sub-integrate
+ms.service: vsts-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
@@ -42,7 +43,7 @@ If you wish to provide the personal access token through an HTTP header, you mus
 Authorization: Basic BASE64PATSTRING
 ``` 
 <br />
-Here it is in C# using the [HttpClient class](http://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx).
+Here it is in C# using the [HttpClient class](https://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx).
 
 ```cs
 public static async void GetProjects()
@@ -90,7 +91,7 @@ The default collection is `DefaultCollection`, but can be any collection.
 Here's how to get a list of team projects from TFS using the default port and collection.
 
 ```dos
-curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
+curl -u {username}[:{personalaccesstoken}] http://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
 ```
 
 The examples above use personal access tokens, which requires that you [create a personal access token](../Authentication/PATs.md).
@@ -105,35 +106,35 @@ You should get a response like this.
         {
             "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
             "name": "Fabrikam-Fiber-TFVC",
-            "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
+            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
             "description": "TeamFoundationVersionControlprojects",
             "collection": {
                 "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
                 "name": "DefaultCollection",
-                "url": "https: //fabrikam-fiber-inc.visualstudio.com/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "collectionUrl": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection"
+                "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+                "collectionUrl":"https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection"
             },
             "defaultTeam": {
                 "id": "66df9be7-3586-467b-9c5f-425b29afedfd",
                 "name": "Fabrikam-Fiber-TFVCTeam",
-                "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/66df9be7-3586-467b-9c5f-425b29afedfd"
+                "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181-4c6d8e9da5d1/teams/66df9be7-3586-467b-9c5f-425b29afedfd"
             }
         },
         {
             "id": "6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
             "name": "Fabrikam-Fiber-Git",
-            "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
+            "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
             "description": "Gitprojects",
             "collection": {
                 "id": "d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
                 "name": "DefaultCollection",
-                "url": "https: //fabrikam-fiber-inc.visualstudio.com/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
-                "collectionUrl": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection"
+                "url": "https://fabrikam-fiber-inc.visualstudio.com/_apis/projectCollections/d81542e4-cdfa-4333-b082-1ae2d6c3ad16",
+                "collectionUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection"
             },
             "defaultTeam": {
                 "id": "8bd35c5e-30bb-4834-a0c4-d576ce1b8df7",
                 "name": "Fabrikam-Fiber-GitTeam",
-                "url": "https: //fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/teams/8bd35c5e-30bb-4834-a0c4-d576ce1b8df7"
+                "url": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c/teams/8bd35c5e-30bb-4834-a0c4-d576ce1b8df7"
             }
         }
     ],

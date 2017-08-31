@@ -10,7 +10,7 @@ ms.date: 08/02/2017
 ---
 
 
-# Set permissions on queries
+# Set permissions on queries and query folders
 
 <b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
@@ -27,7 +27,7 @@ You set permissions from the web portal. By default, only members of the Project
 
 ## Set permissions on a new query folder
 
-1. If you're not a member of the project administrators group, [get added](../../accounts/add-administrator-tfs.md), or have your **Edit project-level information** permission set to **Allow**.
+1. If you're not a member of the project administrators group, [get added](../../security/set-project-collection-level-permissions.md), or have your **Edit project-level information** permission set to **Allow**.
 
 2. Create a folder.  
 

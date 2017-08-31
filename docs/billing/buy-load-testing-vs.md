@@ -3,7 +3,8 @@ title: How to buy cloud-based load testing | VSTS
 description: Buy cloud-based load testing in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.technology: vsts-sub-billing
+ms.service: vsts-admin
 ms.assetid: A93C7909-4F5B-4758-B6CE-8DE127A91FB9
 ms.manager: douge
 ms.author: kaelli
@@ -131,7 +132,7 @@ you can come back to the Azure classic portal.
 - [Build your app](../build-release/apps/index.md)
 - [Load test your app](../load-test/get-started-simple-cloud-load-test.md)  
 - [How to buy more pipeline capacity for builds and releases in VSTS](buy-more-build-vs.md)  
-- [Visual Studio Marketplace and billing Q&A](../marketplace/marketplace-billing-qa.md)  
+- [Marketplace support](../marketplace/marketplace-billing-qa.md)  
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -179,7 +180,7 @@ or [VSTS Support](https://www.visualstudio.com/team-services/support).
 
 <a name="no-accounts"></a>
 
-[!INCLUDE [no-accounts](../marketplace/_shared/qa-no-accounts.md)]
+[!INCLUDE [no-accounts](_shared/qa-no-accounts.md)]
 
 <a name="WhyNoVSOAccount"></a>
 

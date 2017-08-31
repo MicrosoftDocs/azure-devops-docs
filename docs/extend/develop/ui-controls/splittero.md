@@ -3,7 +3,8 @@ title: Use the Splitter Control | Extensions for Visual Studio Team Services
 description: Use the splitter control to have splitted and resizable containers for other controls.
 ms.assetid: 1EE1DD70-0C64-4B65-8F7F-175A9385041A
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-extend
+ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

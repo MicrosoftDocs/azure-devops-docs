@@ -3,7 +3,8 @@ title: Author names in Git | VSTS & TFS
 description: How Git stores author names
 ms.assetid: 09e60acb-fa48-4843-9f5d-5dfed981f467
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.manager: douge
 ms.author: sdanie
 ms.date: 06/16/2017

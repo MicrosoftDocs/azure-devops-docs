@@ -49,5 +49,5 @@ This error occurs when Team Explorer is not synchronized with or cannot establis
 -   Contact the Team Foundation Server administrator and ask that the application-tier server be restarted.  
   
 ## Related notes
--  [Add an administrator](../../../accounts/add-administrator-tfs.md)   
+-  [Add an administrator](../../../security/set-project-collection-level-permissions.md)   
 -  [Connect to team projects](../../../connect/connect-team-projects.md)

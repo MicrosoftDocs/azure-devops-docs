@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.technology: vsts-sub-integrate
+ms.service: vsts-integrate
 title: Basic Authentication for Team Foundation Server
 description: Use the TFS Cross Platform (tfx) command line interface against TFS using basic authentication.
 ms.assetid: 6dc7f977-4b62-4bd6-b77a-1c6cade1ffa8

@@ -98,7 +98,7 @@ ms.date: 08/04/2016
     </div>
 	<div class="col-sm-4 col-md-3 item">
       <div class="title">
-        <a href="collaborate/overview.md">Collaborate</a>
+        <a href="collaborate/index.md">Collaborate</a>
         <div class="desc">
           Work across hubs and team projects, share information, and manage notifications.  
         </div>

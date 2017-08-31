@@ -38,7 +38,7 @@ On-premises installations of TFS can include reports to help you manage your sof
 
 ####Q: What permissions do I need?
 
-**A:** You need to be a member of the local administrators group on the server, the Team Foundation Administrators group in TFS, and the sysadmin group in SQL Server, or have the equivalent permissions. If you don't have them, [get those permissions now](../../accounts/add-administrator-tfs.md).
+**A:** You need to be a member of the local administrators group on the server, the Team Foundation Administrators group in TFS, and the sysadmin group in SQL Server, or have the equivalent permissions. If you don't have them, [get those permissions now](../../tfs-server/add-administrator-tfs.md).
 
 ####Q: Can I add reporting if TFS is installed on a client operating system?
 
@@ -190,7 +190,7 @@ You can learn more about installing and configuring SQL Server for use with on-p
 
 ###Set permissions
 
-- [Set administrator permissions](../../accounts/add-administrator-tfs.md)  
+- [Set administrator permissions](../../tfs-server/add-administrator-tfs.md)  
 
 
 ###Change the data reader account  

@@ -3,7 +3,8 @@ title: VSS/Common/Contracts/FormInput InputValue API | Extensions for Visual Stu
 description: Information about a single value for an input
 ms.assetid: 79a8eff0-9bdb-0de1-d4b6-16d4ada30620
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

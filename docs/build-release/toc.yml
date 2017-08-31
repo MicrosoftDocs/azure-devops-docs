@@ -12,15 +12,25 @@
       href: apps/aspnet/build-aspnet-core.md
     - name: ASP.NET
       href: apps/aspnet/build-aspnet-4.md
+    - name: .NET for Windows
+      href: apps/windows/dot-net.md
     - name: Node.js
-      href: apps/nodejs/quick-to-azure.md
+      href: apps/nodejs/build-gulp.md
     - name: Java
-      href: apps/java/quick-to-azure.md
+      href: apps/java/build-maven.md
+    - name: C++
+      href: apps/windows/cpp.md
+    - name: Xcode
+      href: apps/mobile/xcode-ios.md
+    - name: Xamarin
+      href: apps/mobile/xamarin.md
+    - name: Universal Windows Platform
+      href: apps/windows/universal.md
   - name: Deploy your app
     items:
     - name: Azure web app
       href: apps/cd/deploy-webdeploy-webapps.md
-    - name: Windows VM
+    - name: IIS web server
       href: apps/cd/deploy-webdeploy-iis-deploygroups.md
 - name: Tutorials
   items:
@@ -108,18 +118,6 @@
   items:
   - name: Build your app
     items:
-    - name: .NET for Windows
-      href: apps/windows/dot-net.md
-    - name: C++
-      href: apps/windows/cpp.md
-    - name: Xamarin
-      href: apps/mobile/xamarin.md
-    - name: Xcode
-      href: apps/mobile/xcode-ios.md
-    - name: Cordova
-      href: apps/mobile/cordova-build.md
-    - name: Universal Windows Platform
-      href: apps/windows/universal.md
     - name: Azure Cloud Service
       href: apps/aspnet/build-aspnet-cloudservice.md
     - name: SQL Server Database
@@ -127,7 +125,7 @@
   - name: Deploy your app
     items:
     - name: Azure cloud service
-      href: apps/aspnet/deploy-cloudservice-cloudservice.md
+      href: apps/cd/deploy-cloudservice-cloudservice.md
     - name: Azure Government Cloud
       href: concepts/library/government-cloud.md
     - name: Azure Container Service (Kubernetes)
@@ -161,7 +159,7 @@
     - name: Run Git commands
       href: actions/scripts/git-commands.md
     - name: Troubleshooting build
-      href: troubleshooting.md
+      href: actions/troubleshooting.md
   - name: Configure/manage CD
     items:
     - name: Extend App Services deployments
@@ -174,12 +172,6 @@
       href: apps/cd/scvmm/manage-vms-using-scvmm.md
     - name: Troubleshoot Azure connections
       href: actions/azure-rm-endpoint.md
-  - name: Automatically generate CI/CD
-    items:
-    - name: ASP.NET from Visual Studio
-      href: apps/aspnet/aspnet-4-ci-cd-vs-automatic.md
-    - name: ASP.NET Core with Docker from Visual Studio
-      href: apps/aspnet/aspnetcore-docker-to-azure.md
   - name: Use Package Management
     items:
     - name: NuGet

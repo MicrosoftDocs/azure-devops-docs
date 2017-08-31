@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-extend
+ms.service: vsts-extend
 title: How to Deploy Web Content to Azure | Extensions for Visual Studio Team Services
 description: How to publish your extension for Visual Studio Team Services to a Microsoft Azure web site.
 ms.assetid: 86c9d7d9-51ea-4169-bf2e-f95138679a00

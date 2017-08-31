@@ -2,7 +2,8 @@
 title: TFS/Core/Contracts Process API | Extensions for Visual Studio Team Services
 ms.assetid: 2d415ad3-fb91-a243-5687-676548658e19
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

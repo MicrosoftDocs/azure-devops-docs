@@ -3,7 +3,8 @@ title: TFS/build-release/Contracts WorkspaceMapping API | Extensions for Visual 
 description: Mapping for a workspace
 ms.assetid: 5c253e06-43f7-52e2-2895-ca9103417b1c
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

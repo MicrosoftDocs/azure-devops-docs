@@ -3,7 +3,8 @@ title: VSS/Common/Contracts/FormInput InputValues API | Extensions for Visual St
 description: Information about the possible/allowed values for a given subscription input
 ms.assetid: 628a9dff-b218-4f25-71ad-239e7090a07e
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

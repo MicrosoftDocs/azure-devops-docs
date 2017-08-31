@@ -7,7 +7,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.topic: landing-page 
-ms.date: 08/07/2017
+ms.date: 08/28/2017
 ---
 
 # Feedback 
@@ -17,22 +17,20 @@ You can request feedback using one of two tools, through the Test & Feedback ext
 <!---
 ## Overview  
 [About feedback](about-feedback.md)
--->
+
 
 ## 5-Minute Quickstarts  
-- [Request feedback (Test & Feedback extension)](/vsts/manual-test/stakeholder/request-stakeholder-feedback?toc=/vsts/collaborate/feedback/toc.json)
-- [Get feedback (Work tracking)](/vsts/work/connect/get-feedback?toc=/vsts/collaborate/feedback/toc.json) 
 
+-->
 
 ## How-to Guides
+- [Request feedback (Test & Feedback extension)](/vsts/manual-test/stakeholder/request-stakeholder-feedback?toc=/vsts/collaborate/feedback/toc.json&bc=/vsts/collaborate/feedback/breadcrumb/toc.json )
+- [Get feedback (Work tracking)](/vsts/work/connect/get-feedback?toc=/vsts/collaborate/feedback/toc.json&bc=/vsts/collaborate/feedback/breadcrumb/toc.json ) 
+- [Provide feedback with the Test & Feedback extension](/vsts/manual-test/stakeholder/provide-stakeholder-feedback?toc=/vsts/collaborate/feedback/toc.json&bc=/vsts/collaborate/feedback/breadcrumb/toc.json )  
+- [Provide feedback with the Feedback client](/vsts/work/connect/give-feedback?toc=/vsts/collaborate/feedback/toc.json&bc=/vsts/collaborate/feedback/breadcrumb/toc.json )  
+- [Set feedback permissions](/vsts/work/connect/give-permissions-feedback?toc=/vsts/collaborate/feedback/toc.json&bc=/vsts/collaborate/feedback/breadcrumb/toc.json )  
 
-- [Provide feedback with the Test & Feedback extension](/vsts/manual-test/stakeholder/provide-stakeholder-feedback?toc=/vsts/collaborate/feedback/toc.json)  
-- [Provide feedback with the Feedback client](/vsts/work/connect/give-feedback?toc=/vsts/collaborate/feedback/toc.json)  
-- [Set feedback permissions](/vsts/work/connect/give-permissions-feedback?toc=/vsts/collaborate/feedback/toc.json)  
-- [Enable remote audio capture](/vsts/work/reference/enable-remote-audio-capture?toc=/vsts/collaborate/feedback/toc.json)  
-- [Change the audio device or annotation tool](/vsts/work/reference/change-audio-device-annotation-tool?toc=/vsts/collaborate/feedback/toc.json)  
 
-  
 ## Resources 
 
 - [Uservoice Integration (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice)  

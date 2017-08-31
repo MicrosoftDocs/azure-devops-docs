@@ -3,7 +3,8 @@ title: TFS/Work/Contracts CapacityPatch API | Extensions for Visual Studio Team 
 description: Expected data from PATCH
 ms.assetid: 6cf4f6ba-30da-3d65-53e4-1682aca67b2c
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

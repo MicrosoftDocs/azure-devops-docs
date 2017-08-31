@@ -3,7 +3,8 @@ title: Get extensions for Visual Studio Team Foundation Server
 description: Find and install extensions for Team Foundation Server from the Visual Studio Marketplace
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vsts-sub-marketplace
+ms.service: vsts-marketplace
 ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8 
 ms.manager: douge
 ms.author: elbatk
@@ -35,7 +36,7 @@ so you can install [free, preview, and paid extensions](#difference).
 
 ### What do I need to install extensions?
 
-[Project collection administrators](../accounts/add-administrator-tfs.md#project-collection) 
+[Project collection administrators](../accounts/add-administrator-project-collection.md) 
 with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
 can install extensions. If you don't have permissions, you can [request extensions](#request) instead.
 
@@ -116,13 +117,13 @@ and then installing them in a team project collection.
 
 ### Who can upload extensions?
 
-[Team Foundation administrators](../accounts/add-administrator-tfs.md#server) 
+[Team Foundation administrators](../tfs-server/add-administrator-tfs.md#server) 
 with [**Edit instance-level information** permissions](../security/permissions.md#server) 
 can upload extensions.
 
 ### Who can install extensions?
 
-[Project collection administrators](../accounts/add-administrator-tfs.md#project-collection) 
+[Project collection administrators](../accounts/add-administrator-project-collection.md) 
 with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
 can install extensions. If you don't have permissions, you can [request extensions](#request) instead.
 
@@ -335,7 +336,7 @@ so they can start using that extension's capabilities.
 
 ### Who can assign paid extensions to users?
 
-[Project collection administrators](../accounts/add-administrator-tfs.md#project-collection) 
+[Project collection administrators](../accounts/add-administrator-project-collection.md) 
 with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
 can assign paid extensions to users.
 
@@ -380,7 +381,7 @@ reduce your users to zero (0).
 
 ### Who can change the number of paid extension users?
 
-[Project collection administrators](../accounts/add-administrator-tfs.md#project-collection) 
+[Project collection administrators](../accounts/add-administrator-project-collection.md) 
 with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
 can change the number of paid extension users whose access that you pay for.
 
@@ -417,7 +418,7 @@ you can uninstall or disable this extension.
 
 ### Who can uninstall or disable extensions?
 
-[Project collection administrators](../accounts/add-administrator-tfs.md#project-collection) 
+[Project collection administrators](../accounts/add-administrator-project-collection.md) 
 with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
 can uninstall or disable extensions. 
 
@@ -497,7 +498,7 @@ for users who need access.
 A: This might happen for these reasons: 
 
 *	You must be a member of the 
-[Project Collection Administrators group](../accounts/add-administrator-tfs.md#project-collection) 
+[Project Collection Administrators group](../accounts/add-administrator-project-collection.md) 
 with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
 in the team project collection where you want to install extensions.
 If you don't have permissions, you can [request extensions](#request) instead.

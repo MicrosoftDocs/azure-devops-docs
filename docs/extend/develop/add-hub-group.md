@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-extend
+ms.service: vsts-extend
 title: Add a Hub Group | Extensions for Visual Studio Team Services
 description: Add a hub group in Visual Studio Team Services for your extension.
 ms.assetid: 8186f578-27a0-4130-ace0-0279c863b1a5

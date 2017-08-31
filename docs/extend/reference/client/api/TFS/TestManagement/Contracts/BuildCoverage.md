@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts BuildCoverage API | Extensions for Visual Studio Team Services
 ms.assetid: 3fccf151-f87a-3f82-638a-0eff83606b8e
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

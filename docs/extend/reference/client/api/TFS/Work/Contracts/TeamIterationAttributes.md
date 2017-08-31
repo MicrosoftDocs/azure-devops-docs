@@ -2,7 +2,8 @@
 title: TFS/Work/Contracts TeamIterationAttributes API | Extensions for Visual Studio Team Services
 ms.assetid: ff89042c-0fec-7d96-3446-5b8a03dddb43
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

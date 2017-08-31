@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/TaskAgentRestClient TaskAgentHttpClient2_2 API | Extensions for Visual Studio Team Services
 ms.assetid: 34ba9371-4384-5a20-18f3-f23438a85330
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

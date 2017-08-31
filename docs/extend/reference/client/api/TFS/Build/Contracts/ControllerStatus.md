@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts ControllerStatus API | Extensions for Visual Studio Team Services
 ms.assetid: c7cdacf6-faeb-7044-abba-c6c7b248bcb4
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

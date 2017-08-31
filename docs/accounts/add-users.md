@@ -3,7 +3,8 @@ title: Add users to a team project and groups
 description: Add users to a team project and groups
 ms.assetid: 3cfefdd2-b161-4e04-8dc0-e2deeac50262
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfs
+ms.technology: vsts-sub-accounts
+ms.service: vsts-admin
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2017
@@ -102,8 +103,8 @@ Save or open the file.
 #### Q: How do I add someone as an administrator?
 
 A: You'll need to add that user to groups
-at the [project-collection level](add-administrator-tfs.md#project-collection)
-or at the [server-level](add-administrator-tfs.md).
+at the [project-collection level](add-administrator-project-collection.md)
+or at the [server-level for TFS](../tfs-server/add-administrator-tfs.md).
 
 #### Q: Can I restrict access to a team project or to functional areas within a team project?
 

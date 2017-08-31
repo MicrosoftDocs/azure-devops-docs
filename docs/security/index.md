@@ -23,28 +23,23 @@ ms.date: 08/04/2017
 ## 5-Minute Quickstarts  
   
 - [View permissions](view-permissions.md)
-- [Add users to a team project](/vsts/accounts/add-users?toc=/vsts/security/toc.json)  
-
-## Step-by-Step Tutorials
-
-- [Invite new users](/vsts/accounts/add-account-users-from-user-hub?toc=/vsts/security/toc.json)
-- [Authenticate access with personal access tokens](/vsts/accounts/use-personal-access-tokens-to-authenticate?toc=/vsts/security/toc.json)  
+- [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)
+- [Set permissions at the project or collection level](set-project-collection-level-permissions.md)  
 
 
 ## Concepts 
 - [About permissions and groups](about-permissions.md)  
 - [About access levels](access-levels.md)  
-
+- [Azure Active Directory groups (VSTS)](/vsts/accounts/access-with-azure-ad?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)
+- [Active Directory groups (TFS)](/vsts/tfs-server/admin/setup-ad-groups?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) 
 
 ## How-to Guides 
 
 - [Set Git branch permissions](/vsts/git/branch-permissions?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  ) 
 - [Set build and release permissions](set-build-release-permissions.md) 
-- [Set permissions and access for work tracking](/vsts/work/how-to-set-permissions-access-work-tracking?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  ) 
-- [Set project or collection-level permissions](set-project-collection-level-permissions.md)  
-- [Add TFS server-level administrators](/vsts/accounts/add-administrator-tfs?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)  
+- [Set permissions and access for work tracking](/vsts/work/how-to-set-permissions-access-work-tracking?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) 
 - [Change access levels (TFS)](change-access-levels.md)
-- [Restrict access to a resource](/vsts/accounts/restrict-access-tfs?toc=/vsts/security/toc.json)
+- [Restrict access to a resource](/vsts/accounts/restrict-access-tfs?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)
 
 ## Reference 
 - [Permissions lookup guide](permissions-lookup-guide.md)
@@ -53,9 +48,8 @@ ms.date: 08/04/2017
 
 ## Resources 
  
-- [Account management (VSTS)](../accounts/index.md)
-- [TFS Server management](../tfs-server/index.md)
+- [Account Management (VSTS)](../accounts/index.md)
+- [Server Administration (TFS)](../tfs-server/index.md)
 - [Billing](../billing/index.md)
+- [Authentication guidance for REST APIs](/vsts/integrate/get-started/authentication/authentication-guidance)
 - [Visual Studio Team Services Data Protection Overview](https://www.visualstudio.com/articles/team-services-security-whitepaper)
-
- 

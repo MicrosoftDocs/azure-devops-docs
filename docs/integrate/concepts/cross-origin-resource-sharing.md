@@ -3,7 +3,8 @@ title: Cross-origin resource sharing (CORS) with Visual Studio Team Services RES
 description: Learn about using CORS with Visual Studio Team Services and TFS REST APIs
 ms.assetid: d7e3c119-5678-40e6-9c11-55a57c171278
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.technology: vsts-sub-integrate
+ms.service: vsts-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

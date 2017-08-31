@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskResult API | Extensions for Visual Studio Team Services
 ms.assetid: 2b234182-ec49-d8ec-e74d-3ba873263c08
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/Core/Contracts Proxy API | Extensions for Visual Studio Team Services
 ms.assetid: 640ed63c-eca1-8bbc-5836-8d6ca2845772
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

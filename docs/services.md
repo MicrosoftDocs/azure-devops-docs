@@ -109,7 +109,7 @@ Test **Test** hub provides support for the following:
 To learn more, see [Testing overview](manual-test/index.md). 			
 
 
-## Additional collaboration services 
+## Collaboration services 
 
 In addition to the above "hub" services, the following services work across hubs to support: 
 - Linking of work items, commits, pull requests and other artifacts to support traceability
@@ -119,10 +119,10 @@ In addition to the above "hub" services, the following services work across hubs
 - Reporting    						
 
 >[!NOTE]  
->Team rooms are deprecated for TFS 2017. Instead, we recommend you use service hooks to integrate with Slack. The Slack extension is pre-installed with Team Services and TFS 2015 and later versions.
+>Team rooms are deprecated for TFS 2017.2. Instead, we recommend you use service hooks to integrate with Slack. The Slack extension is pre-installed with Team Services and TFS 2015 and later versions.
 
 
-### Service hooks
+## Service hooks
 
 Service hooks enable you to perform tasks on other services when events happen within your team project hosted on Team Services or TFS. For example, you can send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services as a more efficient way to drive activities when events happen in your projects.
 
@@ -130,7 +130,7 @@ The following services are available as the target of service hooks. To learn ab
 
 For the latest set of supported services, see [Integrate with service hooks](service-hooks/index.md)
 
-### Cloud-hosted services based on usage   
+## Cloud-hosted services based on usage   
 
 The following services support your DevOps operations.   
 - Cloud-based build and deployment hosted agents  
@@ -140,7 +140,7 @@ The following services support your DevOps operations.
 To learn more, see [Pricing](https://www.visualstudio.com/team-services/pricing/).
 
 
-### Azure services 
+## Azure services 
 Azure provides a number of cloud-hosted services to support application development and deployment. You can make use of these services solely or in combination with Team Services or TFS. 
 
 To browse Azure's directory of integrated services, features, and bundled suites, see [Azure products](https://azure.microsoft.com/services/).  
@@ -150,8 +150,10 @@ For continuous delivery to Azure from Team Services, see [Automatically build an
 
 ## Administrative services  
 
-There are a number of features and tasks associated with administrating a collaborate software development environment. You perform most of these tasks through the web portal. 
+There are a number of features and tasks associated with administrating a collaborate software development environment. You perform most of these tasks through the web portal.   
 
+
+<img src="user-guide/_img/tour-admin-project-level.png" alt="Product backlog" style="border: 2px solid #C3C3C3;" /> 
 
 > [!div class="mx-tdBreakAll"]  
 > |Account Management (Team Services)  | Administration (TFS)  | 
@@ -160,10 +162,9 @@ There are a number of features and tasks associated with administrating a collab
 
  
 ## Related notes 
-- [Key concepts](concepts.md)
-- [Client-server tools](tools.md)
-- [Software development roles](roles.md)
-
+- [Key concepts](concepts.md)  
+- [Client-server tools](tools.md) 
+- [Software development roles](roles.md)  
 - [Pricing](https://www.visualstudio.com/team-services/pricing/)
 
 ### Case studies 

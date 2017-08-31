@@ -11,11 +11,6 @@ ms.date: 08/12/2016
 
 # Continuous Testing
 
-## Overview
-
-* [About continuous testing](overview.md)
-* [About continuous integration and continuous delivery](../overview.md?toc=/vsts/build-release/toc.json)
-
 ## 5-Minute Quickstarts
 
 | | | |
@@ -33,7 +28,7 @@ ms.date: 08/12/2016
 
 ## Step-by-Step Tutorials
 
-* [Test your app](example-continuous-testing.md)
+* [Run unit tests and load tests as you build and deploy your app](example-continuous-testing.md)
 
 ## How-to Guides
 
@@ -47,13 +42,12 @@ ms.date: 08/12/2016
 * [Unified agents and phases](test-with-unified-agent-and-phases.md)
 * [Test Java applications](continuous-test-java.md)
 * [Set up environments](set-up-continuous-test-environments-builds.md)
-* [Q & A](reference-qa.md)
+* [FAQs](reference-qa.md)
 
 ## Resources
 
-| | |
-| --- | --- |
-| [DevOps Rangers](https://vsartestreleaseguide.codeplex.com/) | [Plug-ins for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246630) |
-| | |
-
-> See also [Manual and exploratory testing](../../manual-test/index.md), [Load and performance testing](../../load-test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
+| | | |
+| --- | --- | --- |
+| [DevOps Rangers](https://vsartestreleaseguide.codeplex.com/) | [Plug-ins for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246630) | |
+| [Manual and exploratory testing](../../manual-test/index.md) | [Load and performance testing](../../load-test/index.md) | [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios) |
+| | | |

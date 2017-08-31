@@ -3,7 +3,8 @@ title: VSS/Common/Contracts/FormInput InputValuesError API | Extensions for Visu
 description: Error information related to a subscription input value.
 ms.assetid: e12059df-2544-13d3-1257-197e9fdb5616
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

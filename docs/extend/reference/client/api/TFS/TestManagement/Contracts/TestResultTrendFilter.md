@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts TestResultTrendFilter API | Extensions for Visual Studio Team Services
 ms.assetid: 90784241-49e9-b2c2-9e1d-25d44d6ac5b6
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

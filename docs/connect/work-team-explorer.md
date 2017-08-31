@@ -128,7 +128,7 @@ Most of the links open to a web portal administration page. Not all settings are
 > [!div class="mx-tdBreakAll"]  
 > |Team project settings | Collection settings (TFS)  |
 > |-------------|----------|
-> |Required membership: [Project Administrators](../accounts/add-administrator-tfs.md#team-project)<br/>-[Security (manage project-level permissions)](../security/permissions.md#team-project-level-permissions)<br/>-[Group membership: manage group permissions](../security/permissions.md)<br/>-Source Control: Configure the [check-in and check-out policies](../tfvc/add-check-policies.md) (TFVC only)<br/>-[Work Item Areas (project-wide)](../work/customize/set-area-paths.md)<br/>-[Work Item Areas (project-wide)](../work/customize/set-iteration-paths-sprints.md)<br/>-[Portal Settings (Enable portal or process guidance)](../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)<br/>-[Project Alerts](../work/track/alerts-and-notifications.md) |Required membership: [Project Collection Administrators](../accounts/add-administrator-tfs.md#project-collection)<br/>-[Security (manage project-level permissions)](../security/permissions.md#collection-level)<br/>-[Group membership: manage group permissions](../security/permissions.md)<br/>-Source Control: Configure the [default workspace type for the collection](../tfvc/decide-between-using-local-server-workspace.md#manage-team-project-collection-workspace-settings-for-your-team) (TFVC only)<br/>-[Process Template Manager: download, upload, delete, or set a default process template](../work/guidance/manage-process-templates.md) |
+> |Required membership: [Project Administrators](../accounts/add-administrator-team-project.md)<br/>-[Security (manage project-level permissions)](../security/permissions.md#team-project-level-permissions)<br/>-[Group membership: manage group permissions](../security/permissions.md)<br/>-Source Control: Configure the [check-in and check-out policies](../tfvc/add-check-policies.md) (TFVC only)<br/>-[Work Item Areas (project-wide)](../work/customize/set-area-paths.md)<br/>-[Work Item Areas (project-wide)](../work/customize/set-iteration-paths-sprints.md)<br/>-[Portal Settings (Enable portal or process guidance)](../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)<br/>-[Project Alerts](../work/track/alerts-and-notifications.md) |Required membership: [Project Collection Administrators](../accounts/add-administrator-project-collection.md)<br/>-[Security (manage project-level permissions)](../security/permissions.md#collection-level)<br/>-[Group membership: manage group permissions](../security/permissions.md)<br/>-Source Control: Configure the [default workspace type for the collection](../tfvc/decide-between-using-local-server-workspace.md#manage-team-project-collection-workspace-settings-for-your-team) (TFVC only)<br/>-[Process Template Manager: download, upload, delete, or set a default process template](../work/guidance/manage-process-templates.md) |
 
 To learn more about administration features, see [Work in the web portal, administration context](work-web-portal.md#admin-context).
 
@@ -136,21 +136,7 @@ To learn more about administration features, see [Work in the web portal, admini
 ## Related notes 
 You've now got a basic understanding of how to work in the Team Explorer add-in for Visual Studio and Eclipse.
 
-### Troubleshoot connection problems  
-
-Here's a list of the most frequently encountered connection problems and what to do about them. Start at the top and follow it in the order indicated.
-
-1.  Verify that you have [required permissions](../accounts/add-users.md).
-
-    If the errors that you receive indicate read-only or blocked actions, you might not have permission to act on the data.
-
-2.  Verify that your computer is connected to the network and can access network resources.
-
-3.  Verify that TFS hasn't been taken offline. Talk with your TFS administrator.
-
-4.  Verify whether your team project has been moved to another team project collection in Team Foundation Server. If it has been moved, you must create a connection to the new server name.
-
-For more troubleshooting tips, [TF31002: Unable to connect to this Team Foundation Server](../work/reference/error/tf31002-unable-connect-tfs.md).
+- [Troubleshoot connection](troubleshoot-connection.md)  
 
 <a id="clients">  </a>
 ### Clients that connect to VSTS or TFS
@@ -180,7 +166,6 @@ If data doesn't appear as expected, the first thing to try is to refresh your cl
 
 
 [!INCLUDE [temp](_shared/when-to-refresh-client.md)]
-
 
 [!INCLUDE [temp](../_shared/images-not-appearing-vs.md)] 
 

@@ -3,7 +3,8 @@ title: VSS/Operations/Contracts OperationReference API | Extensions for Visual S
 description: Reference for an async operation.
 ms.assetid: cd2e9e54-8309-518e-6d57-a5b4d3b033e3
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -24,45 +24,14 @@ Some features provide a new user interface and functionality, which can be manag
 >[!NOTE]  
 >**Feature availability**:  You can turn on or off the following features for VSTS (cloud service), or from the web portal of the listed on-premises TFS version or a later version. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Provide product and content feedback](../provide-feedback.md#platform-version).
 
-<div style="float:left;width:310px;margin:3px">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Preview features per user](#user-level)</p>
-<ul style="padding-left:30px">
 
-<li style="margin-bottom:1px">[New Account Landing page](../connect/account-home-pages.md)  </li>
-<li style="margin-bottom:1px">[New Release Definition Editor](../build-release/preview/release-definition-editor.md) (Team Services)</li>
-<li style="margin-bottom:1px">[Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) (Team Services)</li>
-</ul>
-
-<!---
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Preview features per team project](#team-project-level)</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:1px">[Enable Wiki](#team-project-level) (Team Services) </li>
-</ul>
--->
-</div>
-
-
-<div style="float:left;width:340px;margin:3px">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">[Preview features per account](#account-level)</p>
-<ul style="padding-left:30px">
-<li style="margin-bottom:1px">[Combine email recipients](manage-team-notifications.md) (TFS 2017.1)</li> 
-<li style="margin-bottom:1px">[New Account Landing page](../connect/account-home-pages.md) </li>
-<li style="margin-bottom:1px">[New Release Definition Editor](../build-release/preview/release-definition-editor.md) (Team Services)</li>
-<li style="margin-bottom:1px">[Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) (Team Services)</li>
-<!---
-<li style="margin-bottom:1px">[Task tool installers](#task-tool-installers)</li> 
--->
-<li style="margin-bottom:1px">[Team expansion for notifications](#team-expansion-notifications) (TFS 2017.1)</li>
-<li style="margin-bottom:1px">[Wiki](#wiki) (Team Services) </li>
-</ul>
-
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
+> [!div class="mx-tdBreakAll"]  
+> |[Preview features per user](#user-level) |[Preview features per account](#account-level) | 
+> |-------------|----------|
+> |- [New Account Landing page](../connect/account-home-pages.md)<br/>- [New Release Definition Editor](../build-release/archive/preview/release-definition-editor.md) (Team Services)<br/>- [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) (Team Services)|- [Combine email recipients](manage-team-notifications.md) (TFS 2017.1)[Preview features per account](#account-level)[New Account Landing page](../connect/account-home-pages.md)[Preview features per account](#account-level)[New Release Definition Editor](../build-release/archive/preview/release-definition-editor.md) (Team Services)[Preview features per account](#account-level)[Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) (Team Services)[Preview features per account](#account-level)[Team expansion for notifications](#team-expansion-notifications) (TFS 2017.1)[Preview features per account](#account-level)[Wiki](#wiki) (Team Services) |
 
 <a id="user-level">  </a>
-##Enable features for my use  
+## Enable features for my use  
 
 From time to time, a new feature is introduced in Preview mode, which allows you to turn it on or off. 
 
@@ -102,7 +71,7 @@ If you have administrative privileges, you'll see a menu from which to choose wh
 When you enable a feature at the account level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose.
 
 >[!TIP]  
->If you don't see the user/account menu option, then you aren't an account administrator. To get added as one, see [Add administrators to VSTS and TFS](../accounts/add-administrator-tfs.md).  
+>If you don't see the user/account menu option, then you aren't an account administrator. To get added as one, see [Add administrators to VSTS and TFS](../tfs-server/add-administrator-tfs.md).  
 
 <img align="top" src="_img/preview-features-admin-s117.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC;" />  <img align="top" src="_img/preview-features-admin-s117-2.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC">  
 
@@ -145,10 +114,3 @@ Enable this feature for your account when you want notifications to be sent by d
 >
 You can enable a built-in Wiki for your team project or for an account. This feature is in preview and when enabled adds a **Wiki*** hub from which you can [view and edit wiki pages](add-edit-wiki.md).  
 
-
-##Related notes  
-
-- [Collaborate overview](overview.md)  
-- [Streamlined user management](../accounts/add-account-users-from-user-hub.md)  
-- [New Account Landing page](../connect/account-home-pages.md)  
-- [New Build Editor](../build-release/preview/2017-user-experience.md)  

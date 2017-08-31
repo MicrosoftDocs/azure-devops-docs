@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-3, .cls-5 {
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #556a8a;
+      }
+
+      .cls-5 {
+        fill: #2bc7f4;
+      }
+    </style>
+  </defs>
+  <title>i_service-hooks</title>
+  <g id="ICONS-64x">
+    <path class="cls-1" d="M63,34.41A11.6,11.6,0,0,0,48.19,23.27a10.64,10.64,0,0,0-16-11.37A11.61,11.61,0,0,0,22.83,7c-6,0-11.07,5-12,11.52C5.16,19.83,1,25.49,1,32.09S5.84,48.9,18.44,47.94c0,0,31.87,0,32,0S63,47.94,63,34.41Z"/>
+    <rect class="cls-2" width="64" height="64"/>
+    <g>
+      <path class="cls-3" d="M48,36H20.5a6.5,6.5,0,0,1,0-13H35"/>
+      <polygon class="cls-4" points="29.08 30.36 27.86 29.04 34.36 23 27.86 16.96 29.08 15.64 37 23 29.08 30.36"/>
+    </g>
+    <circle class="cls-5" cx="50" cy="36" r="5"/>
+  </g>
+</svg>

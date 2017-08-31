@@ -3,7 +3,8 @@ title: VSS/Common/Contracts/FormInput InputFilter API | Extensions for Visual St
 description: Defines a filter for subscription inputs. The filter matches a set of inputs if any (one or more) of the groups evaluates to true.
 ms.assetid: 8bdeba51-36b0-bca3-be02-c15a6e14777d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

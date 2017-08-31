@@ -1,6 +1,6 @@
 ## Help and support
 
-* See our [troubleshooting](../troubleshooting.md) page.
+* See our [troubleshooting](../actions/troubleshooting.md) page.
 
 * Report any problems on [Developer Community](https://developercommunity.visualstudio.com/),
   make suggestions on [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services),

@@ -3,7 +3,8 @@ title: How to buy build hosted and private pipelines | VSTS
 description: Buy more capacity for builds and releases by purchasing more private or hosted pipelines in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.technology: vsts-sub-billing
+ms.service: vsts-admin
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
 ms.manager: douge
 ms.author: kaelli
@@ -196,7 +197,7 @@ then update your number of paid pipelines.
 - [Concurrent build and release pipelines in Visual Studio Team Services](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
 - [Concurrent release pipelines in Team Foundation Server](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
 - [How to buy cloud-based load testing in VSTS](buy-load-testing-vs.md)  
-- [Visual Studio Marketplace and billing Q&A](../marketplace/marketplace-billing-qa.md)  
+- [Marketplace support](../marketplace/marketplace-billing-qa.md)  
 
 
 ## Q & A
@@ -258,7 +259,7 @@ or [VSTS Support](https://www.visualstudio.com/team-services/support).
 
 <a name="no-accounts"></a>
 
-[!INCLUDE [no-accounts](../marketplace/_shared/qa-no-accounts.md)]
+[!INCLUDE [no-accounts](_shared/qa-no-accounts.md)]
 
 <a name="WhyNoVSOAccount"></a>
 

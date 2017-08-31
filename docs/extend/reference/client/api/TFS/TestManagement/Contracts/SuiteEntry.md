@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts SuiteEntryUpdateModel API | Extensions for Visual Studio Team Services
 ms.assetid: d03dca34-a80f-48bf-ba1d-c62d51a5717d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 ---
 
 # SuiteEntry

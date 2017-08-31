@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts WorkspaceTemplate API | Extensions for Visual Studio Team Services
 ms.assetid: 2994e66e-dd45-3a64-1996-5c1e40800a2f
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

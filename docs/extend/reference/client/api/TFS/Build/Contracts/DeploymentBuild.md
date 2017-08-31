@@ -3,7 +3,8 @@ title: TFS/build-release/Contracts DeploymentBuild API | Extensions for Visual S
 description: Deployment iformation for type &quot;Build&quot;
 ms.assetid: f30cacfa-247e-f5f9-4c85-25facf10efa6
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -88,7 +88,7 @@ On the [Build](../../index.md) tab:
 
 ### Build a Node.js app
 
-[Build your Node.js app with Gulp](../../apps/nodejs/nodejs-to-azure.md)
+[Build your Node.js app with Gulp](../../apps/nodejs/build-gulp.md)
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

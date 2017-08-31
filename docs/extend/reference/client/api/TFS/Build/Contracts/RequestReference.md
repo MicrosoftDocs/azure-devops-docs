@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts RequestReference API | Extensions for Visual Studio Team Services
 ms.assetid: 70e9715c-9757-9892-7784-0f8e68219fd7
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

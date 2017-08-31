@@ -3,23 +3,26 @@ title: Share your code with Git from the command line | VSTS & TFS
 description: Share code in Git using the command line
 ms.assetid: 4b299dbf-3ca9-47af-bd6d-8c40bafac447
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: routlaw
-ms.date: 08/10/2017
+ms.date: 08/29/2017
 ---
 
 # Get started with Git from the command line
 
-This guide show you how to share your code in a Team Services Git repo using the command line.  If you don’t have a VSTS account, you can [sign up](../accounts/create-account-with-work-school.md) for one for free. Each account includes free, unlimited private Git repositories.
+#### VSTS | TFS 2015 & TFS 2017  
+
+This guide show you how to share your code in a VSTS Git repo using the command line.  If you don’t have a VSTS account, you can [sign up](../accounts/create-account-with-work-school.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 The instructions below use the default bash shell used on Linux and Mac OS X, but the Git commands will work in any shell, including Git Bash from Git for Windows.
 
 ## Download and install Git
 
 * [Windows](#windows)
-* [macOS X](#macos-x)
+* [macOS](#macos)
 * [Linux and Unix](#linux-and-unix)
 
 ### Windows
@@ -27,7 +30,7 @@ The instructions below use the default bash shell used on Linux and Mac OS X, bu
 Download and install [Git for Windows](https://git-scm.com/download/win) , which includes the [Git Credential Manager](set-up-credential-managers.md) to 
 easily connect to VSTS. 
 
-### macOS X
+### macOS
 
 Use [Homebrew](http://brew.sh/) to install and set up Git.
 
@@ -57,7 +60,7 @@ Create a local Git repo for your code.
 cd /home/fabrikam/fiber
 ```
 
-0. Create a Git repo on your machine to store your code. You will connect this repo to Team Services in the next step.
+0. Create a Git repo on your machine to store your code. You will connect this repo to VSTS in the next step.
 
 ```
 git init .
@@ -73,13 +76,13 @@ git add --all
 git commit -m "first commit of my code"
 ```
 
-## Create your Team Services repo
+## Create your VSTS repo
 
-0. [Create a new Team services Git repo](create-new-repo.md) for your code. Copy the clone URL once you are done creating your repo.
+0. [Create a new VSTS Git repo](create-new-repo.md) for your code. Copy the clone URL once you are done creating your repo.
 
-   ![Get the clone URL after creating the team services repo](_img/share-your-code-in-git-cmdline/clone_url.png)
+   ![Get the clone URL after creating the VSTS repo](_img/share-your-code-in-git-cmdline/clone_url.png)
 
-0. Connect your local repo to the Team Services repo using the copied clone URL in the `git remote` command:
+0. Connect your local repo to the VSTS repo using the copied clone URL in the `git remote` command:
 
 ```
 git remote add origin https://fabrikops2.visualstudio.com/DefaultCollection/Fabrikam/_git/FabrikamApp

@@ -2,7 +2,8 @@
 title: TFS/VersionControl/UIContracts SourceItemContext API | Extensions for Visual Studio Team Services
 ms.assetid: 5a9cb361-f804-4787-d04e-a37f66330be9
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts DefinitionTriggerType API | Extensions for Visual Studio Team Services
 ms.assetid: d20502f9-69e8-79bc-61c3-41d4d896bd30
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

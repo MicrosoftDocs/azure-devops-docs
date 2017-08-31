@@ -2,7 +2,8 @@
 title: TFS/WorkItemTracking/Contracts ReportingWorkItemRevisionsFilter API | Extensions for Visual Studio Team Services
 ms.assetid: a1bdcaaa-1d82-74c4-a27e-a44c821aafa9
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

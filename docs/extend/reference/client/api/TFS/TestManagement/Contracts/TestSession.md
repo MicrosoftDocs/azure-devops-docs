@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts TestSession API | Extensions for Visual Studio Team Services
 ms.contentid: f3237c96-537c-44cb-9d91-f58316534d20
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ---
 

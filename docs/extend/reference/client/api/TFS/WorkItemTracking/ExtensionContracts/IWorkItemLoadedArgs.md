@@ -3,7 +3,8 @@ title: TFS/WorkItemTracking/ExtensionContracts IWorkItemLoadedArgs API | Extensi
 description: Interface defining the arguments for the &#x27;onLoaded&#x27; notification sent by the ActiveWorkItemService
 ms.assetid: 963f7b3a-f0de-f879-f801-84a820ceb50b
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

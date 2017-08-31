@@ -2,7 +2,8 @@
 title: TFS/Core/Contracts WebApiConnectedService API | Extensions for Visual Studio Team Services
 ms.assetid: c1f1584a-301d-5e9b-e325-6e65169a6522
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

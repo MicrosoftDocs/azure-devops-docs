@@ -2,7 +2,8 @@
 title: TFS/Work/Contracts FilterClause API | Extensions for Visual Studio Team Services
 ms.assetid: 0e57bb51-74b0-3aea-5933-01c0029f17bc
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

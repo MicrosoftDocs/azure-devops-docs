@@ -70,7 +70,7 @@ Rapid and reliable release of software comes from automating as many processes a
 - Your build definitions can include instructions to run tests after the build runs 
 - Release definitions support managing deployment of your software builds to staging or production environments 
 
-![Multiple platform continuous integration](build-release/_img/multi-platform.png) 
+![Multiple platform continuous integration](_img/multi-platform.png) 
 
 ## Scaling  
 

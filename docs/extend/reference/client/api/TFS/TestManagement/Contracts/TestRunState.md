@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts TestRunState API | Extensions for Visual Studio Team Services
 ms.assetid: a94ee7d8-f00c-8930-8e1e-519ee67e5e7f
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

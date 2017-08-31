@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces IXDMObjectRegistry API | Extensions for
 description: Registry of XDM objects that can be invoked by an XDM channel
 ms.assetid: 3b16f27d-4e16-ddd2-b85d-d5553b04efb6
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

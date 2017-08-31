@@ -3,7 +3,8 @@ title: Set up Visual Studio with VSTS
 description: Share code with Git and manage work with Agile tools in Visual Studio Team Services (VSTS) for continuous integration and continuous delivery
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.technology: vsts-sub-accounts
+ms.service: vsts-admin
 ms.assetid: abf70640-8fb2-4def-9237-21276a39b5ad
 ms.manager: douge
 ms.author: estfan
@@ -17,7 +18,7 @@ ms.date: 08/04/2016
 When you first launch [Visual Studio 2015](https://www.visualstudio.com/products/vs-2015-product-editions), 
 you can sign in and connect to [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs).
 
-If you have already gone through Visual Studio sign in, or you are using Visual Studio 2017, then [learn how](../git/gitquickstart-vs2017.md) to connect to 
+If you have already gone through Visual Studio sign in, or you are using Visual Studio 2017, then [learn how](../git/gitquickstart.md) to connect to 
 your VSTS from the Team Explorer window.
 
 Once connected, you can store or share code in free, unlimited, private, 

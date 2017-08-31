@@ -2,7 +2,8 @@
 title: TFS/Core/Contracts ProjectMessage API | Extensions for Visual Studio Team Services
 ms.assetid: 344a7be5-8359-9644-f063-b468766e93fb
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

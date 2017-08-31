@@ -3,7 +3,8 @@ title: TFS/build-release/Contracts Change API | Extensions for Visual Studio Tea
 description: Represents a change associated with a build.
 ms.assetid: ce66a017-4343-3e06-3d07-21f20bb6f36d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -42,10 +42,10 @@ In MSF for CMMI Process Improvement, you plan a project as a series of iteration
  Development work for the tests should be included in the tasks that are linked to the product requirement.  
   
 ### Rolling and nightly builds  
- The build system builds the product from recently checked-in updates and runs automated tests. You can set principal tests to run on a continuous basis, and you can set a full suite to run every night. This practice helps to ensure that multiple increments do not create an accumulation of bugs. For more information see [Configure and manage your build system](/vsts/build-release/admin/index).  
+ The build system builds the product from recently checked-in updates and runs automated tests. You can set principal tests to run on a continuous basis, and you can set a full suite to run every night. This practice helps to ensure that multiple increments do not create an accumulation of bugs. For more information see [Continuous integration & delivery](/vsts/build-release/index).  
   
 ### Stand-up meeting  
- The whole team conducts a brief daily review of progress on the tasks of the iteration. Team members can use the [task board](../../scrum/task-board.md) or project the [Progress Dashboard](https://msdn.microsoft.com/en-us/library/dd420557.aspx) on the wall, share it by using Office Live Meeting, or both.  
+ The whole team conducts a brief daily review of progress on the tasks of the iteration. Team members can use the [task board](../../scrum/task-board.md) or project the [Progress Dashboard](../../../report/sharepoint-dashboards/progress-dashboard-agile-cmmi.md) on the wall, share it by using Office Live Meeting, or both.  
   
 -   Each team member briefly reports recent progress, work in hand for the day, and any blocking issues.  
   
@@ -56,7 +56,7 @@ In MSF for CMMI Process Improvement, you plan a project as a series of iteration
 -   The burndown rate is reviewed.  
   
 ### Scope adjustments  
- The Burndown Chart might indicate that the tasks will not be completed by the end of the iteration. In that case, the project manager or team leader initiates a discussion about how requirements can be simplified so that tasks can be cut. For more information, see [Burndown and Burn Rate](https://msdn.microsoft.com/en-us/library/dd380678.aspx).  
+ The Burndown Chart might indicate that the tasks will not be completed by the end of the iteration. In that case, the project manager or team leader initiates a discussion about how requirements can be simplified so that tasks can be cut. For more information, see [Burndown and Burn Rate](../../../report/sql-reports/burndown-and-burn-rate-report.md).  
   
  The requirements and corresponding tests are adjusted. A new requirement feature is put on the project plan for the missing functionality. In the project plan review that is held toward the end of the iteration, the feature might be assigned to a future iteration or cut.  
   

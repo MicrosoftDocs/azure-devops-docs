@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts ContinuousIntegrationTrigger API | Extensions for Visual Studio Team Services
 ms.assetid: 89b6ae91-8256-6d42-d859-c72fbe21690a
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -3,7 +3,8 @@ title: TFS/WorkItemTracking/ExtensionContracts IWorkItemNotificationListener API
 description: Interface defining notifications provided by the ActiveWorkItemService
 ms.assetid: 89693eba-80ca-e407-7b8f-b9c39a568861
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

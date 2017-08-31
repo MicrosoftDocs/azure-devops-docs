@@ -3,7 +3,8 @@ title: Testing Windows Store apps
 description: Manual and exploratory testing - Testing Windows Store apps
 ms.assetid: e10d1cad-ebea-43ed-92ac-3391e5119fe7
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

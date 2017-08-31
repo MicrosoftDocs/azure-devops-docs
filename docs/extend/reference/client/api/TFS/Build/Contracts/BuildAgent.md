@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts BuildAgent API | Extensions for Visual Studio Team Services
 ms.assetid: ccaf202f-73e1-583a-a449-9742cbd013fc
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

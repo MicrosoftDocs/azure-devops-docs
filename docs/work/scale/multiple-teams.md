@@ -11,7 +11,7 @@ ms.date: 08/15/2017
 
 # Add teams and team members  
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017</b><!--- | TFS 2015 | TFS 2013--> 
 
 As your organization grows, you'll want to make sure that you configure your Agile tools to support that growth. To enable each feature team the autonomy it needs to manage their backlog and plan their sprints, they need their own set of team tools. 
 
@@ -31,14 +31,11 @@ In this topic you'll learn:
 > * Additional permissions you may want to grant team members    
 -->
 
-[!INCLUDE [temp](../_shared/image-differences.md)]  
-
 <a id="add-team"> </a>  
 ## Move from one team to two teams 
 As your team grows, you can easily move from one team to two. In this example, we add two feature teams, Email and Voice, and maintain the Fabrikam Fiber team with visibility across each of these two teams.  
 
-If you're not a project administrator, [get added as one](../../accounts/add-administrator-tfs.md). Only project administrators can add teams.  
-
+If you're not a project administrator, [get added as one](../../security/set-project-collection-level-permissions.md). Only project administrators can add teams.  
 
 ### Add two feature teams 
 
@@ -50,7 +47,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 <a id="add-team-team-services" /> 
 
-1. From the web portal, click the ![gear settings icon](../_img/icons/gear_icon.png) icon to open the administration page for the team project. 
+1. From the web portal, click the ![gear settings icon](../_img/icons/gear_icon.png) icon to open the administration page for the team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md)<!---or set one up in an [on-premises TFS](../../accounts/create-team-project.md)-->.
 
 	<img src="_img/add-teams-open-admin-context-tfs-2017.png" alt="Open team project admin page" style="border: 2px solid #C3C3C3;" />
 
@@ -226,26 +223,8 @@ Once you've created a team, you'll want to configure your Agile tools to support
 
 > [!div class="nextstepaction"]
 > [Add team administrator](add-team-administrator.md)
-> or    
+> or
 > [Configure team settings](manage-team-assets.md)
 
-Here are a few other topics related to working with teams: 
+[!INCLUDE [temp](../_shared/image-differences.md)]  
 
-- [Visibility across teams](visibility-across-teams.md)  
-- [Review team plans](review-team-plans.md)    
-- [Switch team project or team focus](../how-to/switch-team-context-work.md)   
-
-### Work on more than one team
-
-Can a user account belong to more than one team?  
-
-Yes. When you add user accounts to a team project, you can add them as members of the team project, or you can add them to one or more teams added to the team project. If you work on two or more Scrum teams, you'll want to make sure you, [specify your sprint capacity for each team you work on](capacity-planning.md). 
-
-<a id="team-group"> </a>
-### Team group 
-
-You can use this group to filter queries. The name of team groups follows the pattern [Team Project Name]\Team Name. For example, the following query finds work assigned to members of the [Fabrikam Fiber]\Email team group.
-
-<img src="_img/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 2px solid #C3C3C3;" /> 
-
- 

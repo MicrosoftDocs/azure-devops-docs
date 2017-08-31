@@ -2,7 +2,8 @@
 title: Test your Azure web app performance under load from the Azure portal
 description: Run Azure web app performance tests to check how your app handles user load. Measure response time and find failures that might indicate problems.
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
+ms.technology: vsts-sub-load-test
+ms.service: vsts-testing
 ms.assetid: D39BF037-ADF1-41D7-BA6D-84AADA2A16DE
 ms.manager: douge
 ms.author: ahomer
@@ -11,15 +12,11 @@ ms.date: 08/12/2016
 
 # Load test with the Azure portal
 
+[!INCLUDE [version-header-ts](_shared/version-header-ts.md)] 
+
 Check your web app's performance before you launch it or deploy updates to production. 
 That way, you can better assess whether your app is ready for release. Feel more
 confident that your app can handle the traffic during peak use or at your next marketing push.
-
-In this example, you'll learn how to:
-
-* [Prepare your environment for load testing](#preparetests)
-* [Set up and run your performance test](#singletest)
-* [Test multiple URLs](#multitest)
 
 <a name="preparetests"></a>
 ## Prepare your environment

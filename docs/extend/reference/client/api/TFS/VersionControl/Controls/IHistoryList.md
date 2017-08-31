@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Controls IHistoryList API | Extensions for Visual Studio Team Services
 ms.assetid: 51901098-8856-8736-5b79-5d8c5f8d6982
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

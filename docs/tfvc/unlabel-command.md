@@ -3,7 +3,8 @@ title: Unlabel Command
 description: Unlabel Command
 ms.assetid: 37b15bd4-ec75-4fbe-938e-544793c88a3c
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

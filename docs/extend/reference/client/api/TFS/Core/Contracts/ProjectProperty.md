@@ -2,7 +2,8 @@
 title: TFS/Core/Contracts ProjectProperty API | Extensions for Visual Studio Team Services
 ms.assetid: d020e562-5229-c07e-f8a6-769169452734
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

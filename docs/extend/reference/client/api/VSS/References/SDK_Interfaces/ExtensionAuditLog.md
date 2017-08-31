@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces ExtensionAuditLog API | Extensions for Visu
 description: Audit log for an extension
 ms.assetid: 1d37786b-55b0-6943-8f47-184018335716
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

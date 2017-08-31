@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts BuildUpdatedEvent API | Extensions for Visual Studio Team Services
 ms.assetid: 1182b7a4-1605-ee19-2c9c-6d7fc28f7fb6
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

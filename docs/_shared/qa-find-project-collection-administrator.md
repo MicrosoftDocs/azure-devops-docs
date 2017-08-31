@@ -1,7 +1,7 @@
 ####Q:	How do I find a project collection administrator?
 
 A: If you have at least Basic access, 
-you can find your [project collection administrator](../accounts/add-administrator-tfs.md#project-collection) 
+you can find your [project collection administrator](../accounts/add-administrator-project-collection.md) 
 in your Team Services account's security settings.
 
 0.	Go to your Team Services account's security settings. 

@@ -3,16 +3,17 @@ title: Update your branch history with rebase | VSTS & TFS
 description: Rewriting History using Git rebase
 ms.assetid: 7f6312b8-6c98-4f44-9b6e-eecbeafbbaea
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/14/2017
+ms.date: 08/29/2017
 ---
 
 #  Apply changes with rebase
 
-###### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
 One of the tradeoffs from the [Git feature branch workflow](gitworkflow.md) is that you do not actively manage your version control history. 
 Git creates this history as you save your code in your [commits](commits.md) and merges changes back into the master branch with [pull requests](pullrequest.md).  
@@ -88,7 +89,7 @@ If you hit a conflict, resolve the conflicting files, do a `git add` to stage th
 ## Force push to update your remote branch
 
 > [!WARNING]
-> Avoid trouble: Never force push a branch that others are working on. Only force push branches that you alone work with.
+> Never force push a branch that others are working on. Only force push branches that you alone work with.
 
 After a successful rebase, your local branch will have a different history than your remote branch. You must force push your local branch to update your remote branch.
 

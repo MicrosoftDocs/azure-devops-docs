@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts PointAssignment API | Extensions for Visual Studio Team Services
 ms.assetid: 14606b98-f246-5485-2cf2-3d43d7eb0e1f
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

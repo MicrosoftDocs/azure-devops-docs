@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts WebApiConnectedServiceDetails API | Extensions for Visual Studio Team Services
 ms.assetid: ac6590ce-301f-fd1f-8f29-e41c5a86b660
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/Core/RestClient CoreHttpClient2_1 API | Extensions for Visual Studio Team Services
 ms.assetid: 5307889f-f465-c35c-ce00-447872e8f4ff
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

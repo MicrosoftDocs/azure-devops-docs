@@ -3,7 +3,8 @@ title: VSS/Common/Contracts/FormInput InputValidation API | Extensions for Visua
 description: Describes what values are valid for a subscription input
 ms.assetid: 627e6b39-8b0f-f794-01d9-2741e725e2f6
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

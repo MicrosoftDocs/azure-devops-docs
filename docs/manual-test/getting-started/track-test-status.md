@@ -2,7 +2,8 @@
 title: Track test status in Visual Studio Team Services
 description: Track test status with charts and graphs using Visual Studio Team Services
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
 ms.manager: douge
 ms.author: ahomer
@@ -11,7 +12,7 @@ ms.date: 08/12/2016
 
 # Track test status
 
-<!-- **Visual Studio 2017 | Visual Studio 2015 | TFS 2017 | TFS 2015 | [Previous version](https://msdn.microsoft.com/library/dn282443%28v=vs.120%29.aspx)** -->
+**Visual Studio 2017 | Visual Studio 2015 | TFS 2017 | TFS 2015 | [Previous version](https://msdn.microsoft.com/library/dn282443%28v=vs.120%29.aspx)**
 
 Quickly view the status of your testing using lightweight charts. 
 For example, find out how many test cases are ready to run,
@@ -197,7 +198,7 @@ Or learn more about
 
 ## See also
 
-*  [Q &amp; A for manual testing](../reference-qa.md#trackstatus)
+*  [FAQs for manual testing](../reference-qa.md#trackstatus)
 
 ##  Next step
 

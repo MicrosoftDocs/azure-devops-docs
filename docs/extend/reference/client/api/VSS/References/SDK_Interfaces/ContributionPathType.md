@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces ContributionPathType API | Extensions for V
 description: Type of the contribution path
 ms.assetid: 045e39d0-51a6-ca06-fe48-9414dfb9242b
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

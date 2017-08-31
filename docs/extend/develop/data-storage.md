@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-extend
+ms.service: vsts-extend
 title: Data and Setting Storage | Extensions for Visual Studio Team Services
 description: Add an action for your extension that extends Visual Studio Team Services.
 ms.assetid: 4662d1cf-ddb6-4079-8eb4-6f553861c1b4

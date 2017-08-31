@@ -2,7 +2,8 @@
 title: TFS/Core/Contracts WebApiProjectCollection API | Extensions for Visual Studio Team Services
 ms.assetid: 6f74981a-f6ed-7535-60ee-dcdcce629eb6
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: Exploratory testing with the Test &amp; Feedback extension in Standalone mode
 description: Manual and exploratory testing - exploratory testing with the Test &amp; Feedback extension  in Standalone mode
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.assetid: 762A75FB-0B6D-47C3-9232-371348D8D529
 ms.manager: douge
 ms.author: ahomer
@@ -14,12 +15,6 @@ ms.date: 08/12/2016
 All teams can use the Test &amp; Feedback extension in **Standalone** mode. 
 Users don't need a Visual Studio Team Services (VSTS) account 
 or Team Foundation Server connection to use this mode.
-
-In this example, you'll learn how to:
-
-* [Install the extension](#installext)
-* [Create a bug](#createbug)
-* [End your testing session](#endsession)
 
 <a name="testmode"></a>
 ## Start testing in Standalone mode

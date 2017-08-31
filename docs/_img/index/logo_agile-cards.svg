@@ -1,0 +1,18 @@
+<svg id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #117eb9;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>logo_agile-cards</title>
+  <rect class="cls-1" width="64" height="64"/>
+  <polygon class="cls-2" points="44.16 50 23.01 50 20 55 46.57 55 61 31 55.27 31 44.16 50"/>
+  <polygon class="cls-2" points="39.77 23 32.16 36 21.62 36 15 47 41.57 47 56 23 39.77 23"/>
+  <polygon class="cls-2" points="3.56 33 30.13 33 44.56 9 17.99 9 3.56 33"/>
+</svg>

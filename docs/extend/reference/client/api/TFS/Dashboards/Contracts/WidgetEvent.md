@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 title: TFS/Dashboards/WidgetHelpers WidgetEvent API | Extensions for Visual Studio Team Services
 description: Documentation for the WidgetEvent contract.
 ms.assetid: AFD7472A-20F1-41C2-A082-0085AD1B40CF

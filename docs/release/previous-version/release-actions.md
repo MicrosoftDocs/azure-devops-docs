@@ -3,7 +3,8 @@ title: Release actions to deploy an app with Release Management
 description: Release actions in VSTS and TFS
 ms.assetid: FE87197A-610D-4426-A812-2322EAA8700C
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-sub-release
+ms:service: vs-rm
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/04/2016

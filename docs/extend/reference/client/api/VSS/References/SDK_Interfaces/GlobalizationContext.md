@@ -2,7 +2,8 @@
 title: VSS/References/SDK.Interfaces GlobalizationContext API | Extensions for Visual Studio Team Services
 ms.assetid: b399ed9b-d635-e26b-abe4-c34c6009917c
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

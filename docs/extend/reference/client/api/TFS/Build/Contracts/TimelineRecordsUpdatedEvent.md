@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts TimelineRecordsUpdatedEvent API | Extensions for Visual Studio Team Services
 ms.assetid: 703aafe9-6593-72bf-8fb1-a90f5fbf6f82
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: Billing troubleshooting
 description: Billing troubleshooting
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.technology: vsts-sub-billing
+ms.service: vsts-admin
 ms.assetid: b59c53fb-aaa5-408c-8c7d-ab72974ee922
 ms.manager: douge
 ms.author: estfan

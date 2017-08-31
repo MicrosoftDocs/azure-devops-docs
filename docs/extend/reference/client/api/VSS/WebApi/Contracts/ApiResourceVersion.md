@@ -3,7 +3,8 @@ title: VSS/WebApi/Contracts ApiResourceVersion API | Extensions for Visual Studi
 description: Represents version information for a REST Api resource
 ms.assetid: 614bd240-8560-63ff-c1cf-f450f8590cd7
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

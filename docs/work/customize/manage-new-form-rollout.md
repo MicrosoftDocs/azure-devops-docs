@@ -44,7 +44,7 @@ You enable the new form from the project collection admin page.
 
 	<img src="_img/manage-new-form-enable-new-form.png" alt="TFS 2017, Web portal, Project collection admin context, Enable new form" style="border: 2px solid #C3C3C3;" />
 
-	If you don't see the option to enable, you aren't a member of the Project Collection Administrators group. To get added as one, see [Add an administrator](../../accounts/add-administrator-tfs.md).  
+	If you don't see the option to enable, you aren't a member of the Project Collection Administrators group. To get added as one, see [Add an administrator](../../security/set-project-collection-level-permissions.md).  
 
 4. Click **Create new layout** to initiate the process of transforming the WIT definitions.  
 
@@ -63,7 +63,7 @@ You enable the new form from the project collection admin page.
 
 	![Process tab](_img/m-new-form-admin-enable.png)
 
-	If you don't see the option to enable, you aren't a member of the Project Collection Administrators group. To get added as one, see [Add an administrator](../../accounts/add-administrator-tfs.md).  
+	If you don't see the option to enable, you aren't a member of the Project Collection Administrators group. To get added as one, see [Add an administrator](../../security/set-project-collection-level-permissions.md).  
 
 4. Click Create new layout to initiate the process of transforming the WIT definitions.  
 

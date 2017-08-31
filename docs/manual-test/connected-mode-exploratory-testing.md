@@ -2,7 +2,8 @@
 title: Exploratory testing with the Test &amp; Feedback extension in Connected mode
 description: Manual and exploratory testing - exploratory testing with the Test &amp; Feedback extension in Connected mode for a full integrated experience with team systems and environments such as Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.assetid: 0F52826C-218D-437A-B6FF-EB8E8292CE3C
 ms.manager: douge
 ms.author: ahomer
@@ -25,13 +26,6 @@ This automatically configures the extension based on your access level:
 * Users with **Basic** or **Stakeholder** access can use extension to respond to feedback requests sent 
   by the team by choosing the **Provide feedback** link in the email.
   [More details](stakeholder/provide-stakeholder-feedback.md#email).
-
-In this example, you'll learn how to:
-
-* [Connect to VSTS or TFS](#connectvtfs)
-* [Create bugs or tasks](#create-bugs)
-* [Create test cases](#create-testcase)
-* [End your testing session](#endsession)
 
 <a name="connectvtfs"></a>
 ## Connect to VSTS or TFS

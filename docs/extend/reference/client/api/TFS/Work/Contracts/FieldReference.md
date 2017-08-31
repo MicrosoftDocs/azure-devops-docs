@@ -3,7 +3,8 @@ title: TFS/Work/Contracts FieldReference API | Extensions for Visual Studio Team
 description: An abstracted reference to a field
 ms.assetid: 11845f38-a11a-5b66-1891-9f6daa262ed9
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

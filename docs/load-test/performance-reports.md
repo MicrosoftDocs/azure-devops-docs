@@ -2,7 +2,8 @@
 title: View and compare your Visual Studio load test runs 
 description: Get started with web performance tests - view and compare your Visual Studio Team Services load test runs
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
+ms.technology: vsts-sub-load-test
+ms.service: vsts-testing
 ms.assetid: 1A1A725F-4A6A-4652-AFD1-FC7C9A248A7B
 ms.manager: douge
 ms.author: ahomer
@@ -11,17 +12,12 @@ ms.date: 08/12/2016
 
 # View and compare your load test runs
 
+[!INCLUDE [version-header-ts](_shared/version-header-ts.md)] 
+
 You can review past load test runs or current runs started by 
 anyone on your team, at any time. You can also compare two
 test runs to see the gain or loss in performance, and other
 information.
-
-In this example, you'll learn how to:
-
-* [Open a load test in Visual Studio](#openvs)
-* [Open a load test in VSTS](#opents)
-* [Filter and select a load test](#filterselect)
-* [Compare two test runs](#comparetests)
 
 <a name="openvs"></a>
 ## Open a load test in Visual Studio

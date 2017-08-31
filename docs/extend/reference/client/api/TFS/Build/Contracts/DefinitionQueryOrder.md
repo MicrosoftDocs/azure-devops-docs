@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts DefinitionQueryOrder API | Extensions for Visual Studio Team Services
 ms.assetid: 7c611d45-5cd3-b91c-017d-6efa6324ab95
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

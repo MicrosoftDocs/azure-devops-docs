@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces Hub API | Extensions for Visual Studio Team
 description: Model representing a hub in VSTS pages&#x27; navigation menu
 ms.assetid: 4a8365d4-0092-ae07-0898-f98333e3d7ea
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/WorkItemTracking/Contracts WorkItemClassificationNode API | Extensions for Visual Studio Team Services
 ms.assetid: 0417f101-9984-0a36-0344-1b9d02663a59
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -1,8 +1,9 @@
 ---
 title: Manage how long to keep test results in Visual Studio Team Services
 description: Manage how long Visual Studio Team Services keeps you test results
-ms.technology: vs-devops-test-manual
 ms.prod: vs-devops-alm
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
 ms.manager: douge
 ms.author: ahomer
@@ -11,7 +12,7 @@ ms.date: 08/12/2016
 
 # Control how long to keep test results in VSTS
 
-<!-- **Visual Studio 2017 | Visual Studio 2015 | TFS 2017 | TFS 2015** -->
+**Visual Studio 2017 | Visual Studio 2015 | TFS 2017 | TFS 2015**
 
 Running tests, especially automated ones, generates lots of data. 
 To keep your test system responsive and performing well,
@@ -79,6 +80,6 @@ set the retention limits at the team project level.
 
 ## See also
 
-*  [Q &amp; A for manual testing](../reference-qa.md#manageresults)
+*  [FAQs for manual testing](../reference-qa.md#manageresults)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

@@ -3,7 +3,8 @@ title: TFS/Work/Contracts TeamSettingsDataContractBase API | Extensions for Visu
 description: Base class for TeamSettings data contracts. Anything common goes here.
 ms.assetid: ee3ea1ab-f138-1b4b-67ad-4b29f671ccc5
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

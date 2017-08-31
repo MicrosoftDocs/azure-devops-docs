@@ -2,7 +2,8 @@
 title: TFS/VersionControl/GitRestClient GitHttpClient2_2 API | Extensions for Visual Studio Team Services
 ms.assetid: 42d598dd-495f-509e-7253-6ced20ad7aec
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

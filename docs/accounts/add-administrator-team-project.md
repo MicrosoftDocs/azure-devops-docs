@@ -1,23 +1,18 @@
 ---
-title: Add administrators | VSTS & TFS  
-description: Add server, team project collection,  or team project administrators 
+title: Add administrators to VSTS team projects  
+description: Add administrators to VSTS team projects 
 ms.assetid: 3f11f0b6-42bd-48c7-b5f9-0946240392cf
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfs
+ms.technology: vsts-sub-accounts
+ms.service: vsts-admin
 ms.manager: douge  
 ms.author: estfan  
 ms.date: 03/29/2017
 ---
 
-# Add administrators to VSTS and TFS
+# Add administrators to VSTS team projects
 
 **VSTS**
-
-
-PLACEHOLDER TOPIC
-
-
-## Team project
 
 0. From the team page, click the ![Settings icon](_img/admin-gear-icon.png) to go to the team administraton page.
 

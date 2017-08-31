@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e5e5e5;
+      }
+
+      .cls-2 {
+        fill: #f2f2f2;
+      }
+
+      .cls-3, .cls-6 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #556a8a;
+      }
+    </style>
+  </defs>
+  <title>i_pull-request</title>
+  <g id="ICONS-64x">
+    <circle class="cls-1" cx="14" cy="52" r="10"/>
+    <path class="cls-2" d="M24,52A10,10,0,0,1,14,62V42A10,10,0,0,1,24,52Z"/>
+    <circle class="cls-3" cx="14" cy="52" r="10"/>
+    <circle class="cls-4" cx="14" cy="13" r="10"/>
+    <circle class="cls-4" cx="51" cy="52" r="10"/>
+    <path class="cls-2" d="M24,13A10,10,0,0,1,14,23V3A10,10,0,0,1,24,13Z"/>
+    <circle class="cls-3" cx="14" cy="13" r="10"/>
+    <path class="cls-2" d="M41,52A10,10,0,0,0,51,62V42A10,10,0,0,0,41,52Z"/>
+    <circle class="cls-3" cx="51" cy="52" r="10"/>
+    <rect class="cls-5" x="13" y="22" width="2" height="21"/>
+    <path class="cls-3" d="M51,42V21a9.79,9.79,0,0,0-9.5-10H32"/>
+    <polyline class="cls-3" points="40 1.89 31 11 40 19.94"/>
+    <rect class="cls-6" x="0.06" width="63.88" height="64"/>
+  </g>
+</svg>

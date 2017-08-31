@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts ServiceEndpointType API | Extensions for Visual Studio Team Services
 ms.assetid: 05787f0f-4f35-d982-8e57-4c9c72cc28a8
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts Change API | Extensions for Visual Studio Team Services
 ms.assetid: 22cd0c35-5cc9-ea90-ea6e-97140bf18771
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

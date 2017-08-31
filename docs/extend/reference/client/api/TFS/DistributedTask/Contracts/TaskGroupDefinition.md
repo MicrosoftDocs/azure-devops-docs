@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskGroupDefinition API | Extensions for Visual Studio Team Services
 ms.assetid: 01b5dc75-fbce-c885-239a-6b434350cf38
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

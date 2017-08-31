@@ -2,7 +2,8 @@
 title: Explore work items when using exploratory testing 
 description: Manual and exploratory testing - explore work items from the Kanban board or the Test &amp; Feedback extension
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
 ms.manager: douge
 ms.author: ahomer
@@ -90,7 +91,7 @@ To explore another work item, you must first dissociate the current work item fr
 
 ## See Also
 
-* [Q &amp; A for manual testing](reference-qa.md#tandfext)
+* [FAQs for manual testing](reference-qa.md#tandfext)
 * [Use the Test &amp; Feedback extension in Connected mode](connected-mode-exploratory-testing.md)
 * [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
 * [Get insights across your exploratory testing sessions](insights-exploratory-testing.md)

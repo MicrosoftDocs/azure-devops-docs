@@ -2,7 +2,8 @@
 title: Repeat a test with different data
 description: Manual and exploratory testing - repeat a test with different data in Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
 ms.manager: douge
 ms.author: ahomer
@@ -132,7 +133,7 @@ Record and playback doesn't work with all applications. For details, see
 
 ## See also
 
-* [Q &amp; A for manual testing](reference-qa.md#repeatdifferent)
+* [FAQs for manual testing](reference-qa.md#repeatdifferent)
 * [Overview of manual and exploratory testing](index.md)
 * [Testing different configurations](test-different-configurations.md)
 * [Collect diagnostic data](collect-diagnostic-data.md)

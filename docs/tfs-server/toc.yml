@@ -15,7 +15,7 @@
   - name: Restrict access to resources
     href: ../accounts/restrict-access-tfs.md?toc=/vsts/tfs-server/toc.json
   - name: Configure an SMTP server
-    href: ./admin/setup-customize-alerts.md
+    href: ./admin/setup-customize-alerts.md?toc=/vsts/tfs-server/toc.json
 - name: Tutorials
   items:
   - name: Restore a TFS deployment to new hardware
@@ -88,6 +88,8 @@
       href: /docs/report/sql-server/reporting-services-reports
   - name: Administer TFS
     items:
+    - name: Add administrators
+      href: add-administrator-tfs.md
     - name: Configure and manage TFS resources
       href: ./admin/config-tfs-resources.md
     - name: Move team project collection

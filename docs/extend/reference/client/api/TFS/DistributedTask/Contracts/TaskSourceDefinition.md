@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskSourceDefinition API | Extensions for Visual Studio Team Services
 ms.assetid: 17238a00-5073-870d-dd5b-4222ba9a7cca
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

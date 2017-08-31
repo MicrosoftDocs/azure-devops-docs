@@ -3,7 +3,8 @@ title: VSTS billing overview
 description: VSTS billing overview
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vsts-sub-billing
+ms.service: vsts-admin
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.manager: douge
 ms.author: estfan
@@ -94,7 +95,9 @@ For subscriptions, the billing frequency depends on the subscription that you pu
 will be billed on the 1st day of the calendar month after the anniversary date of your subscription purchase.
 
 >[!NOTE]  
-> To find answers to commonly asked questions such as how to remove the spending limit in Azure or other questions around Visual Studio Subscriptions and Azure Billing, see [Marketplace and Billing Q&A](marketplace-billing-qa.md). 
+> To find answers to commonly asked questions such as how to remove the spending limit in Azure or other questions around Visual Studio Subscriptions and Azure Billing, see [Marketplace support](../marketplace/marketplace-billing-qa.md), 
+[Visual Studio subscriptions troubleshooting](faq-vs-subscriptions.md), or 
+[Azure billing troubleshooting](faq-azure-billing.md). 
 
 For the billing frequency of extensions, see [Get extensions for VSTS](https://www.visualstudio.com/docs/marketplace/get-vsts-extensions#bill-period).
 

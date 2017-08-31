@@ -19,23 +19,23 @@
     href: infrastructure-as-code.md
 - name: Concepts
   items:
-  - name: Build definitions
-    href: /vsts/build-release/concepts/definitions/build/artifacts.md
+  - name: Artifacts in Team Build
+    href: /vsts/build-release/concepts/definitions/build/artifacts?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: Release definitions
-    href: /vsts/build-release/concepts/definitions/release/index.md
-  - name: Deployment groups
-    href: /vsts/build-release/concepts/library/deployment-groups.md
+    href: /vsts/build-release/concepts/definitions/release/index?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: Service endpoints
-    href: /vsts/build-release/concepts/library/service-endpoints.md
+    href: /vsts/build-release/concepts/library/service-endpoints?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
 - name: How to
   items:
   - name: Run a PowerShell script
-    href: /vsts/build-release/actions/scripts/index.md
+    href: /vsts/build-release/actions/scripts/powershell?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: Run Git commands
-    href: /vsts/build-release/actions/scripts/git-commands.md
+    href: /vsts/build-release/actions/scripts/git-commands?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: Troubleshooting build
-    href: /vsts/build-release/troubleshooting.md
+    href: /vsts/build-release/actions/troubleshooting?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
+  - name: Use deployment groups
+    href: /vsts/build-release/concepts/definitions/release/deployment-groups/howto-deployment-groups?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: Debug deployment issues
-    href: /vsts/build-release/actions/debug-deployment-issues.md
+    href: /vsts/build-release/actions/debug-deployment-issues?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: Troubleshoot Azure connections
-    href: /vsts/build-release/actions/azure-rm-endpoint.md
+    href: /vsts/build-release/actions/azure-rm-endpoint?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json

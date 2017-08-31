@@ -3,7 +3,8 @@ title: VSS/Operations/Contracts Operation API | Extensions for Visual Studio Tea
 description: Represents an async operation and its progress or result information.
 ms.assetid: 4c2bca2f-ba0b-c38a-9129-960ee5c76b3d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

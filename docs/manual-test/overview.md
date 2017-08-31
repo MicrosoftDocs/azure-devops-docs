@@ -2,7 +2,8 @@
 title: Exploratory and manual testing of your applications
 description: Drive quality and collaboration throughout the development process with manual and exploratory testing capabilities
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.topic: get-started-article
 ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
 ms.manager: douge
@@ -13,8 +14,6 @@ ms.date: 08/09/2016
 # Exploratory and manual testing scenarios and capabilities
  
 [!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
-
-> See also [Load and performance testing](../load-test/index.md), [Continuous testing](../build-release/test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
 
 Quality is a vital aspect of software systems, and manual testing 
 and exploratory testing continue to be an important techniques for maximizing this.
@@ -28,7 +27,6 @@ throughout the development process. The easy-to-use, browser-based
 test management solution provides all the capabilities required for 
 planned manual testing, user acceptance testing, exploratory testing,
 and gathering feedback from stakeholders.
-
 
 * **[Planned manual testing](#manual-testing)**. Manual testing by organizing tests into test plans and test suites by designated testers and test leads.
 
@@ -62,7 +60,7 @@ from the cards on the Kanban board, and then progressively monitor
 status directly from the card. Developers and testers can use these
 rich capabilities to simplify maximizing quality within their teams.
 In VSTS, you need just [Basic access](../billing/buy-basic-access-add-users.md)
-to use these features. See more at [Add, run, and update inline tests](../work/kanban/add-run-update-tests.md?toc=/vsts/manual-test/toc.json).
+to use these features. See more at [Add, run, and update inline tests](../work/kanban/add-run-update-tests.md?toc=/vsts/manual-test/toc.json&bc=/vsts/manual-test/breadcrumb/toc.json).
 
 ![Managing manual tests from the Kanban board](_img/manual-testing/kanban-board-01.png)
 
@@ -210,18 +208,20 @@ and [Provide stakeholder feedback](stakeholder/provide-stakeholder-feedback.md).
 
 * **Rich Diagnostic data collection**. Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
 
-* **End to End Traceability**. VSTS and TFS provide [end-to-end traceability of your requirements, builds, tests and bugs](../work/track/link-work-items-support-traceability.md?toc=/vsts/manual-test/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
+* **End to End Traceability**. VSTS and TFS provide [end-to-end traceability of your requirements, builds, tests and bugs](../work/track/link-work-items-support-traceability.md?toc=/vsts/manual-test/toc.json&bc=/vsts/manual-test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
 
 * **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend VSTS and TFS](../integrate/index.md). Use the REST APIs and contribution model available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
 
 ## Additional resources
 
-* [Get started with manual testing](../work/kanban/add-run-update-tests.md?toc=/vsts/manual-test/toc.json)
+* [Get started with manual testing](../work/kanban/add-run-update-tests.md?toc=/vsts/manual-test/toc.json&bc=/vsts/manual-test/breadcrumb/toc.json)
 * [Advanced manual testing techniques](getting-started/user-acceptance-testing.md)
 * [Get started with exploratory testing](getting-started/perform-exploratory-tests.md)
 * [Advanced exploratory testing techniques](explore-workitems-exploratory-testing.md)
 * [Manual testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
 * [Guidance for MTM usage](mtm/guidance-mtm-usage.md) 
 * [Get stakeholder feedback with exploratory testing](stakeholder/request-stakeholder-feedback.md)
+
+> See also [Load and performance testing](../load-test/index.md), [Continuous testing](../build-release/test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

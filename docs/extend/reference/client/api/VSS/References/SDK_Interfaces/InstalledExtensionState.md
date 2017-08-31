@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces InstalledExtensionState API | Extensions fo
 description: The state of an installed extension
 ms.assetid: 20898fcf-ef81-aef9-9e20-fae9dd5f7ff4
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

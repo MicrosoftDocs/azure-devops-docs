@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts QueryModel API | Extensions for Visual Studio Team Services
 ms.assetid: 542c4be1-3eb9-2841-591e-2197b410b36d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

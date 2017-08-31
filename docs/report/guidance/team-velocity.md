@@ -54,7 +54,7 @@ You configure your velocity widget for a team. To learn more about teams, see [A
 
 ### Pre-requisites
 In order to add a Velocity widget to a dashboard, you must have the following in place:  
-- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../accounts/add-administrator-tfs.md) to add extensions.  
+- Installed the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../tfs-server/add-administrator-tfs.md) to add extensions.  
 - [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../work/scale/add-team-administrator.md)or have [permissions to add and edit dashboards](../dashboard-permissions.md#set-permissions). 
 
 > [!NOTE]   
@@ -120,7 +120,7 @@ Velocity will vary depending on team capacity, sprint over sprint. However, over
 	<img src="_img/team-velocity-chart-web-7-iterations.png" alt="Web portal, Velocity chart showing seven sprints of in progress and completed work" style="border: 2px solid #C3C3C3;" />
 
 	>[!NOTE]  
-	>Work items based on the [Scrum process](../../work/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../work/guidance/agile-process.md) and [CMMI](../../work/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/concepts/workflow-and-state-categories.md).
+	>Work items based on the [Scrum process](/vsts/work/guidance/scrum-process) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](/vsts/work/work/guidance/agile-process) and [CMMI](/vsts/work/work/guidance/cmmi-process) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/concepts/workflow-and-state-categories.md).
 	
 ## Required and recommended activities   
 

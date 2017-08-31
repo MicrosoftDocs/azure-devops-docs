@@ -2,7 +2,8 @@
 title: URL-based load testing with Visual Studio Team Services
 description: Get app performance data when you load test with Visual Studio Team Services
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
+ms.technology: vsts-sub-load-test
+ms.service: vsts-testing
 ms.assetid: 65E96414-756B-4BD9-92C3-4DDB4C7A6B57
 ms.manager: douge
 ms.author: ahomer
@@ -11,14 +12,10 @@ ms.date: 08/12/2016
 
 # Run URL-based load tests with VSTS
 
+[!INCLUDE [version-header-ts](_shared/version-header-ts.md)] 
+
 You can run a load test on your web app or site directly
 using Visual Studio Team Services (VSTS).
-
-In this example, you'll learn how to:
-
-* [Prepare your environment](#prepareenvir)
-* [Run a URL-based load test](#runtests)
-* [View the results of the load test](#viewresults)
 
 <a name="prepareenvir"></a>
 ## Prepare your environment

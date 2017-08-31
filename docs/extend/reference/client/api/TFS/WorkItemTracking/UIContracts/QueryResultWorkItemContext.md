@@ -3,7 +3,8 @@ title: TFS/WorkItemTracking/UIContracts QueryResultWorkItemContext API | Extensi
 description: A query result in the WIT UI
 ms.assetid: 9509fdb5-7e22-7f9f-976a-e8bf539686bb
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

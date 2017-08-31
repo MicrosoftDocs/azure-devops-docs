@@ -2,7 +2,8 @@
 title: TFS/build-release/RestClient BuildHttpClient2_2 API | Extensions for Visual Studio Team Services
 ms.assetid: 77299e6b-d4c4-266f-9462-71d97b981c56
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

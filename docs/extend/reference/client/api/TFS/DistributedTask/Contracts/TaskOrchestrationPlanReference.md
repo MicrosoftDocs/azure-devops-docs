@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskOrchestrationPlanReference API | Extensions for Visual Studio Team Services
 ms.assetid: 16d8a0be-a05c-73ad-fc43-4aa3c319f048
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

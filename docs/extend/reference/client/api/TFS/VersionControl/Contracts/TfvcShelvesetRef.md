@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts TfvcShelvesetRef API | Extensions for Visual Studio Team Services
 ms.assetid: d198c150-a9c0-c7a6-df3a-e2a49a61a4f2
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

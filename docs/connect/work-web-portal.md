@@ -249,16 +249,16 @@ You must be a member of the listed administrator group or role to perform the ta
 > [!div class="mx-tdBreakAll"]  
 > |Team settings|Team project settings|  
 > |-------------|----------| 
-> |Required membership: [Team administrator role](../work/scale/add-team-administrator.md)<br/><br/>- [Overview: Add team members](../work/scale/multiple-teams.md)  &#124; [Add team admins](../work/scale/add-team-administrator.md)<br/>- [Select backlog levels](../work/customize/select-backlog-navigation-levels.md) &#124; [Set working days](../work/scale/capacity-planning.md)  &#124; [Working with bugs](../work/customize/show-bugs-on-backlog.md)<br/>- [Work/Iterations & Areas (team defaults)](../work/scale/set-team-defaults.md)<br/>- [Work/Templates](../work/productivity/work-item-template.md)<br/>- [Security (manage team-level permissions)](../work/scale/team-administrator-permissions.md)<br/>- [Notifications](../collaborate/manage-team-notifications.md)<br/><br/>For a complete overview of all team assets that you can configure, see  [Manage team assets](../work/scale/manage-team-assets.md) |Required membership:  [Project Administrators](../accounts/add-administrator-tfs.md#team-project)<br/><br/>-  [Overview: Add teams](../work/scale/multiple-teams.md)<br/>- [Work/Iterations & Areas (project-wide)](../work/customize/set-area-paths.md)<br/>- [Security (manage project-level permissions)](../security/permissions.md#team-project-level-permissions)<br/>- [Notifications](../collaborate/manage-team-notifications.md)<br/>- [Version Control (manage repository permissions)](../security/permissions.md#git-repository)<br/>- [Agent queues](../build-release/concepts/agents/pools-queues.md)<br/>- [Service hooks](../service-hooks/services/webhooks.md)<br/>- [Services](../build-release/concepts/library/service-endpoints.md)<br/>- [Test (manage test retention policies](../manual-test/getting-started/how-long-to-keep-test-results.md) 
+> |Required membership: [Team administrator role](../work/scale/add-team-administrator.md)<br/><br/>- [Overview: Add team members](../work/scale/multiple-teams.md)  &#124; [Add team admins](../work/scale/add-team-administrator.md)<br/>- [Select backlog levels](../work/customize/select-backlog-navigation-levels.md) &#124; [Set working days](../work/scale/capacity-planning.md)  &#124; [Working with bugs](../work/customize/show-bugs-on-backlog.md)<br/>- [Work/Iterations & Areas (team defaults)](../work/scale/set-team-defaults.md)<br/>- [Work/Templates](../work/backlogs/work-item-template.md)<br/>- [Security (manage team-level permissions)](../work/scale/team-administrator-permissions.md)<br/>- [Notifications](../collaborate/manage-team-notifications.md)<br/><br/>For a complete overview of all team assets that you can configure, see  [Manage team assets](../work/scale/manage-team-assets.md) |Required membership:  [Project Administrators](../accounts/add-administrator-team-project.md)<br/><br/>-  [Overview: Add teams](../work/scale/multiple-teams.md)<br/>- [Work/Iterations & Areas (project-wide)](../work/customize/set-area-paths.md)<br/>- [Security (manage project-level permissions)](../security/permissions.md#team-project-level-permissions)<br/>- [Notifications](../collaborate/manage-team-notifications.md)<br/>- [Version Control (manage repository permissions)](../security/permissions.md#git-repository)<br/>- [Agent queues](../build-release/concepts/agents/pools-queues.md)<br/>- [Service hooks](../service-hooks/services/webhooks.md)<br/>- [Services](../build-release/concepts/library/service-endpoints.md)<br/>- [Test (manage test retention policies](../manual-test/getting-started/how-long-to-keep-test-results.md) 
 
 > [!div class="mx-tdBreakAll"]  
 > |Account settings (Team Services)|Collection settings (TFS)s|  
 > |-------------|----------| 
-> |Required membership: [Project Collection Administrators](../accounts/add-administrator-tfs.md#project-collection)<br/><br/>- [Overview: Create team projects](../accounts/create-team-project.md)  &#124; [Rename team project](../accounts/rename-team-project.md) &#124; [Delete team project](../accounts/delete-team-project.md) &#124; [Change process](../work/process/manage-process.md)<br/>- [Settings: Set  account preferences](../accounts/account-preferences.md) &#124; [Change application access policies](../accounts/change-application-access-policies-vs.md) &#124; [Change account owner](../accounts/change-account-ownership-vs.md) &#124; [Delete your account](../accounts/delete-your-vsts-account.md) &#124; [Recover your account](../accounts/recover-your-vsts-account.md)<br/>- [Security (manage collection-level permissions)](../security/permissions.md#collection-level)<br/>- [Process (customize work tracking)](../work/process/manage-process.md)<br/>- [Build (manage build policies)](../build-release/concepts/policies/retention.md)<br/>- [Agent pools (manage build agents)](../build-release/concepts/agents/pools-queues.md) (Team Services)<br/>- [Extensions (install/manage extensions)](../marketplace/install-vsts-extension.md) | Required membership: [Project Collection Administrators](../accounts/add-administrator-tfs.md#project-collection)<br/><br/>- [Overview: Create team projects](../accounts/create-team-project.md)  &#124; [Rename team project](../accounts/rename-team-project.md) &#124; [Delete team project](../accounts/delete-team-project.md)<br/>- [Security (manage collection-level permissions)](../security/permissions.md#collection-level)<br/>- [Build (manage build policies)](../build-release/concepts/policies/retention.md)<br/>- >[Agent queues](../build-release/concepts/agents/pools-queues.md)<br/>- [Extensions (install/manage extensions)](../marketplace/install-vsts-extension.md) |
+> |Required membership: [Project Collection Administrators](../accounts/add-administrator-project-collection.md)<br/><br/>- [Overview: Create team projects](../accounts/create-team-project.md)  &#124; [Rename team project](../accounts/rename-team-project.md) &#124; [Delete team project](../accounts/delete-team-project.md) &#124; [Change process](../work/process/manage-process.md)<br/>- [Settings: Set  account preferences](../accounts/account-preferences.md) &#124; [Change application access policies](../accounts/change-application-access-policies-vs.md) &#124; [Change account owner](../accounts/change-account-ownership-vs.md) &#124; [Delete your account](../accounts/delete-your-vsts-account.md) &#124; [Recover your account](../accounts/recover-your-vsts-account.md)<br/>- [Security (manage collection-level permissions)](../security/permissions.md#collection-level)<br/>- [Process (customize work tracking)](../work/process/manage-process.md)<br/>- [Build (manage build policies)](../build-release/concepts/policies/retention.md)<br/>- [Agent pools (manage build agents)](../build-release/concepts/agents/pools-queues.md) (Team Services)<br/>- [Extensions (install/manage extensions)](../marketplace/install-vsts-extension.md) | Required membership: [Project Collection Administrators](../accounts/add-administrator-project-collection.md)<br/><br/>- [Overview: Create team projects](../accounts/create-team-project.md)  &#124; [Rename team project](../accounts/rename-team-project.md) &#124; [Delete team project](../accounts/delete-team-project.md)<br/>- [Security (manage collection-level permissions)](../security/permissions.md#collection-level)<br/>- [Build (manage build policies)](../build-release/concepts/policies/retention.md)<br/>- >[Agent queues](../build-release/concepts/agents/pools-queues.md)<br/>- [Extensions (install/manage extensions)](../marketplace/install-vsts-extension.md) |
 
 **Server-level settings (TFS only) **
 
-Required membership: [Team Foundation Administrators](../accounts/add-administrator-tfs.md#server) 
+Required membership: [Team Foundation Administrators](../tfs-server/add-administrator-tfs.md#server) 
 
 - Control panel: Choose team project/team  
 - [Access levels (Stakeholder, Basic, Advanced)](../security/change-access-levels.md)  
@@ -283,6 +283,8 @@ Additional resources you may find of interest:
 - [Work effectively from your account home page](account-home-pages.md)
 - [Connect to team projects](connect-team-projects.md)  
 - [Work in Team Explorer](work-team-explorer.md)  
+- [Troubleshoot connection](troubleshoot-connection.md)  
+
 
 <!---
 ### Navigating within the admin context (Team Services and TFS 2017)  
@@ -393,21 +395,6 @@ Although you can access source code, work items, and builds from both clients, s
 
 To open Excel from the web portal, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](../work/office/bulk-add-modify-work-items-excel.md) or [Project](../work/office/create-your-backlog-tasks-using-project.md) and then open a query that you've created in the web portal. 
 
-### Troubleshoot connection problems
-
-Here's a list of the most frequently encountered connection problems and what to do about them. Start at the top and follow it in the order indicated.
-
-1.  Verify that you have required permissions.
-
-    If the errors that you receive indicate read-only or blocked actions, you might not have permission to act on the data.
-
-2.  Verify that your computer is connected to the network and can access network resources.
-
-3.  Verify that TFS hasn't been taken offline. Talk with your account or TFS administrator.
-
-4.  Verify whether your team project has been moved to another team project collection in Team Foundation Server. If it has been moved, you must create a connection to the new server name.
-
-For more troubleshooting tips, [TF31002: Unable to connect to this Team Foundation Server](../work/reference/error/tf31002-unable-connect-tfs.md).
 
 [!INCLUDE [temp](../_shared/help-support-shared.md)] 
 

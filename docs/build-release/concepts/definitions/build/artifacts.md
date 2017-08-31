@@ -119,18 +119,6 @@ drop
 
 * Artifact type: Server
 
-For the full example, see [Build your C++ app for Windows](../../../apps/windows/cpp.md)
-
-### Other examples
-
-[ASP.NET Core](../../../apps/aspnet/build-aspnet-core.md)
-
-[Node.js](../../../apps/nodejs/nodejs-to-azure.md)
-
-[Java](../../../apps/java/maven-to-azure.md)
-
-[Xamarin](../../../apps/mobile/xamarin.md)
-
 ## Tips
 
 * **Artifact type** argument: **Server** is the best and simplest choice in most cases. This choice causes the artifacts to be stored in VSTS or TFS. But if you're using a private Windows agent, you've got the option [drop to a UNC file share](#unc-file-share).
@@ -149,6 +137,8 @@ For the full example, see [Build your C++ app for Windows](../../../apps/windows
 
 If you're using a private Windows agent, you can set the **artifact type** option to publish your files to a UNC **file share**. 
 
+> [!NOTE]
+>
 > Use a Windows build agent. This option doesn't work for macOS and Linux agents.
 
 Choose file share to copy the artifact to a file share. Some common reasons to do this:

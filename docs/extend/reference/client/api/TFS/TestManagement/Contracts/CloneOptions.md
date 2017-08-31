@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts CloneOptions API | Extensions for Visual Studio Team Services
 ms.assetid: a5e290f2-37f2-791c-b735-3fd9934e845b
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

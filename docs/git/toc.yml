@@ -1,4 +1,4 @@
-- name: Git Documentation
+- name: Git
   href: index.md
 - name: Overview
   items:
@@ -13,7 +13,7 @@
   - name: Create repo - Visual Studio
     href: share-your-code-in-git-vs-2017.md
   - name: Create repo - IntelliJ
-    href: http://java.visualstudio.com/Docs/tools/intelliJ
+    href: create-repo-intellij.md
   - name: Create repo - Xcode
     href: share-your-code-in-git-xcode.md
   - name: Create repo - Eclipse
@@ -63,6 +63,8 @@
     href: concepts/git-branching-guidance.md
   - name: Pull requests
     href: concepts/pull-requests.md
+    name: Forks
+    href: concepts/forks.md
   - name: Authentication
     href: auth-overview.md
   - name: Understand dates in Git
@@ -147,3 +149,5 @@
   items:
   - name: Pro Git
     href: https://www.git-scm.com/book/en/v2
+    name: Learn Git
+    href: https://www.visualstudio.com/learn-git/

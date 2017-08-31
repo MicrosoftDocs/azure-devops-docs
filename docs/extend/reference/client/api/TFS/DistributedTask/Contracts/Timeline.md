@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts Timeline API | Extensions for Visual Studio Team Services
 ms.assetid: ad5ee230-3486-4fd7-f01c-d4de7d100e6a
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -7,32 +7,29 @@ ms.topic: get-started-article
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017
+ms.date: 08/28/2017
 ---
 
 
-# Use the search box to create a work item query 
+# Perform an adhoc search
 
 <b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 <a id="search-box"/>
 
-You can initiate your query from the work item search box. You can find items using shortcut filters or by specifying keywords or phrases, specific fields/field values, assignment or date modifications, or using Equals, Contains, and Not operators.
+You can find items using shortcut filters or by specifying keywords or phrases, specific fields/field values, assignment or date modifications, or using Equals, Contains, and Not operators.
 
-Search box queries automatically scope to the items defined to the team project you're currently connected to. To search across team projects, use the [query editor](using-queries.md). Also, searching is not case-sensitive.
-
-
-[!INCLUDE [temp](../_shared/image-differences.md)]
-
+<!---Search box queries automatically scope to the items defined to the team project you're currently connected to. To search across team projects, use the [query editor](using-queries.md). Also, searching is not case-sensitive.-->
 
 <a id="search-selector" /> 
 <a id="search-box" /> 
 ## Code search vs work item search
  
+<!---
 >[!NOTE]  
 ><b>Feature availability: </b>You can add the Code Search extension to  [VSTS or by upgrading to TFS 2017](../../search/code/administration.md).   
 
-If you've added the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) to VSTS and TFS 2017, you'll notice that the search box moves to the top row, and you can quickly switch between work item and code searches. 
+If you've added the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) to VSTS and TFS 2017, you'll notice that the search box moves to the top row, and you can quickly switch between work item and code searches. -->
 
 The search box retains the last used search context for each hub. To learn more about code search, see [Get started with Code Search](../../search/code/code-search.md).
 
@@ -206,6 +203,7 @@ The following examples show how to use operators when you create a search string
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Work item field index](../guidance/work-item-field.md)     
 
+[!INCLUDE [temp](../_shared/image-differences.md)]
 
 ### Does the search box support less than/greater than operators?
 

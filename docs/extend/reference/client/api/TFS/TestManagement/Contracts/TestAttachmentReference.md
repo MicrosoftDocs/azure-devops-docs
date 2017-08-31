@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts TestAttachmentReference API | Extensions for Visual Studio Team Services
 ms.assetid: 81dadfff-bcd3-4f67-dbad-4db07cf0fc99
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

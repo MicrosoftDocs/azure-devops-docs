@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts TfvcMergeSource API | Extensions for Visual Studio Team Services
 ms.assetid: 8e6d55eb-e2c1-8a15-642e-ddee351c217d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

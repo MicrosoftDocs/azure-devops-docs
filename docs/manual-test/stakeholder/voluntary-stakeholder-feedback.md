@@ -2,7 +2,8 @@
 title: Voluntarily provide stakeholder feedback
 description: Manual and exploratory testing - voluntarily provide stakeholder feedback in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) using the Exploratory Testing browser extension
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.assetid: 4E467527-62C6-4321-BA56-FF82F0FFFD69
 ms.manager: douge
 ms.author: ahomer

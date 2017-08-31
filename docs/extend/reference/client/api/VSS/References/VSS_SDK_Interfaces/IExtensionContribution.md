@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces IExtensionContribution API | Extensions
 description: A Contribution with its containing extension
 ms.assetid: c7bd5e1d-ebae-a92b-4801-be8c1b1f14e0
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

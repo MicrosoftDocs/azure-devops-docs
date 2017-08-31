@@ -21,29 +21,23 @@ Each widget provides access to a chart, user-configurable information, or a set 
 
 You can add one or more charts or widgets to your dashboard. You add several widgets at a time simply by selecting each one. See [Manage dashboards](dashboards.md#manage) to determine the permissions you need to add and remove widgets from a dashboard.    
 
->[!IMPORTANT]  
+
+## Connect to the web portal for your team project 
+
+To add a widget to a dashboard, you connect to your team project using a [supported web browser](../accounts/requirements.md#supported-browsers).  If you don't have a team project yet, create one in [VSTS](../accounts/create-account-with-personal-msa.md)<!--- or set one up in an [on-premises TFS](../accounts/create-team-project.md)-->.
+
+Open a browser window and click the **Dashboards** hub. If you haven't been added as a team member, [get added now](../work/scale/multiple-teams.md#add-team-members).
+
+![Open the Dashboards hub](_img/dashboards-go-to.png) 
+
+If you don't see the team or team project you want, click the ![project icon](../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../connect/account-home-pages.md).  
+
+>[!NOTE]  
 ><b>Feature availability: </b> You can access the [widget catalog](widget-catalog.md) from the web portal for VSTS or TFS 2015.1 or later version. The widget catalog provides widgets for all tiles supported in previous releases of TFS for the team homepage. For on-premises TFS 2015, you can add select charts to the team home page using the [Pin to home page](team-dashboard.md) feature.   
 >
 >To determine the platform and version you're on, see [Provide product and content feedback, Platforms and version support](../provide-feedback.md#platform-version).   
 
-
-
-## Connect to the web portal for your team project 
-
-To add a widget to a dashboard, you connect to your team project using a [supported web browser](../accounts/requirements.md#supported-browsers).  If you don't have a team project yet, create one in [Visual Studio Team Services](../accounts/create-account-with-personal-msa.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).
-
-Open a browser window and click the **Dashboards** hub. If you haven't been added as a team member, [get added now](../work/scale/multiple-teams.md#add-team-members).
-
-The URL follows this pattern: 
-- VSTS: ```https://{account name}.visualstudio.com/{project name}/_backlogs```  
-- Team Foundation Server (on-premises): ```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```  
-
-If you don't see the team or team project you want, click the ![VSTS icon](../work/_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../connect/account-home-pages.md).  
-
 ## Add a widget to a dashboard  
- 
-> [!NOTE]  
-> Widget images may vary depending on which platform you access. This topic shows images that appear in VSTS. However, the widget title and functionality described in this topic are valid for both VSTS and TFS. For example, dashboard edit mode controls shown below are valid for VSTS and TFS 2015.2 and later version. Some functionality differs when you connect to TFS 2015.1 or earlier versions.  
  
 Click ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify a dashboard. Click ![add a widget icon](_img/add-widget-icon.png) to add a widget to the dashboard.  
 
@@ -51,7 +45,8 @@ The [widget catalog](widget-catalog.md) describes all the available widgets, man
 
 >[!NOTE]  
 ><b>Feature availability: </b>For VSTS and TFS 2017 and later versions, you can drag and drop a widget from the catalog onto the dashboard.    
-
+>  
+> Widget images may vary depending on which platform you access. This topic shows images that appear in VSTS. However, the widget title and functionality described in this topic are valid for both VSTS and TFS. For example, dashboard edit mode controls shown below are valid for VSTS and TFS 2015.2 and later version. Some functionality differs when you connect to TFS 2015.1 or earlier versions.  
 
 ## Configure a widget  
 

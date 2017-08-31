@@ -3,7 +3,8 @@ title: TFS/Work/Contracts TeamFieldValues API | Extensions for Visual Studio Tea
 description: Essentially a collection of team field values
 ms.assetid: 0994f3c2-2d2d-dd04-e71c-933b66cb68f8
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

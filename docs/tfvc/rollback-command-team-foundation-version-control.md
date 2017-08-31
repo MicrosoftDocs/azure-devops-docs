@@ -3,7 +3,8 @@ title: Rollback Command (Team Foundation Version Control)
 description: Rollback Command (Team Foundation Version Control)
 ms.assetid: 8cbca369-eda2-459b-aa37-c86ec2eab3b0
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

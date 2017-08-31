@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts AgentStatus API | Extensions for Visual Studio Team Services
 ms.assetid: bca01c71-5269-60b7-7d51-0da8e79933c7
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

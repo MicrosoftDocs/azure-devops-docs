@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.technology: vsts-sub-integrate
+ms.service: vsts-integrate
 title: Profiles | REST API Reference for Visual Studio Team Services
 description: Work with proifiles programmatically using the REST APIs for Visual Studio Team Services.
 ms.assetid: 4F9CF932-0E38-49BC-9663-21B062732173

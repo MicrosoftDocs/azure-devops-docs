@@ -3,7 +3,8 @@ title: VSS/Common/Contracts/FormInput InputDescriptor API | Extensions for Visua
 description: Describes an input for subscriptions.
 ms.assetid: 95830c27-9577-a67a-13e6-8291b57d93c4
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

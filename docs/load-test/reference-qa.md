@@ -1,29 +1,21 @@
 ---
-title: Q & A for load testing   
-description: Q & A for load testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: FAQs for load testing   
+description: FAQs for load testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
+ms.technology: vsts-sub-load-test
+ms.service: vsts-testing
 ms.assetid: 1A993338-0EEE-4C54-BA07-F9E54312BDE6
 ms.manager: douge
 ms.author: ahomer
 ms.date: 07/04/2017
 ---
 
-# Q &amp; A for load testing
+# FAQs for load testing
 
-* [General](#qageneral)
-* [Visual Studio](#qavisualstudio)
-* [Azure portal](#qaazure)
-* [Setting up tests](#set-up-tests)
-* [Apache JMeter tests](#jmeter-tests)
-* [Running and monitoring tests](#run-monitor-tests)
-* [Recording and replaying tests](#recordreplay)
-* [Application Insights](#qaappinsights)
-* [Troubleshooting](#troubleshooting)
-* [Errors](#errors)
+[!INCLUDE [version-header-ts](_shared/version-header-ts.md)] 
 
 <a name="qageneral"></a>
-## General Q &amp; A
+## General
 
 ### Q: How do I learn more about Cloud-based Load Testing?
 
@@ -195,7 +187,7 @@ For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualst
 ----------
 
 <a name="qavisualstudio"></a>
-## Q &amp; A for Visual Studio load testing
+## Visual Studio load testing
 
 ### Q: How can I increase the capacity of my load tests?
 
@@ -233,7 +225,7 @@ For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualst
 ----------
 
 <a name="qaazure"></a>
-## Q &amp; A for Azure load testing
+## Azure load testing
 
 ### Q: Why can't I see my existing VSTS account to run load tests? 
 
@@ -300,7 +292,7 @@ features and services help your team collaborate more easily and deploy continuo
 ----------
 
 <a name="set-up-tests"></a>
-## Q &amp; A for setting up tests
+## Setting up tests
 
 ### Q: Can I have other test types, besides web performance tests, in a load test mix?
 
@@ -380,11 +372,11 @@ add WebDeploy_x64_en-US.msi to Deployment window. The setup.cmd will look like t
 ----------
 
 <a name="jmeter-tests"></a>
-## Q &amp; A for Apache JMeter tests
+## Apache JMeter tests
 
-### Q: What is the supported JMeter version?
+### Q: What are the supported JMeter versions?
 
-**A**: The load test agents run Apache JMeter version 2.13 only.
+**A**: The latest supported version of Apache JMeter is version 3.2.
 
 ### Q: Which samplers are supported?
 
@@ -403,7 +395,7 @@ when you set up the test, and it will be applied when the load test runs.
 ----------
 
 <a name="run-monitor-tests"></a>
-## Q &amp; A for running and monitoring load tests
+## Running and monitoring load tests
 
 ### Q:  Can I use mstest to run load tests with VSTS?
 
@@ -469,7 +461,7 @@ For better performance as you download more reports, use SQL Server.
 ----------
 
 <a name="recordreplay"></a>
-## Q &amp; A for recording and replaying tests
+## Recording and replaying tests
 
 ### Q: Can I simulate actions from different users and data-drive my test?
 
@@ -496,30 +488,30 @@ allows you to run cloud-based load tests. See
 ----------
 
 <a name="qaappinsights"></a>
-## Q &amp; A for Application Insights
+## Application Insights
 
 ### Q: Can I get more detailed profiler information?
 
-*A**: Yes, see [Profiling live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler).
+**A**: Yes, see [Profiling live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler).
 
 ### Q: Can I view data from other app monitoring tools when load testing in the cloud?
 
-*A**: No.
+**A**: No.
 
 ### Q: Can I increase how often data is collected?
 
-*A**: No, this is currently a fixed frequency of one minute.
+**A**: No, this is currently a fixed frequency of one minute.
 
 ### Q: I don't see any counters even after waiting a few minutes. What's wrong?
 
-*A**: Go to Application Insights and check that you can view performance data 
+**A**: Go to Application Insights and check that you can view performance data 
 for your app there. If you see data collected there, report your issue to 
 [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com). 
 
 <a name="qaconnectts"></a>
 ### Q: Why do I get an "Unable to connect to VSTS due to network failure" error when trying to add apps using the Get Performance Data from Application Insights menu command?
  
-*A**: This can happen because:
+**A**: This can happen because:
 
 * No apps are configured to push analytics data to Application Insights. See 
   [Get started with Visual Studio Application Insights](https://azure.microsoft.com/en-in/documentation/articles/app-insights-get-started/).

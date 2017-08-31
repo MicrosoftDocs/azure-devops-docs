@@ -21,19 +21,28 @@ Learn how to build your app.
 
 <table>
 <tr valign="middle" align="center">
-<td><img src="_img/index/logo_net.svg" alt="" width="36px" height="36px"><br/>[ASP.NET Core](apps/aspnet/build-aspnet-core.md)</td>
-<td><img src="_img/index/logo_net.svg" alt="" width="36px" height="36px"><br/>[ASP.NET](apps/aspnet/build-aspnet-4.md)</td>
-<td><img src="_img/index/logo_nodejs.svg" alt="" width="36px" height="36px"><br/>[Node.js](apps/nodejs/quick-to-azure.md)</td>
-<td><img src="_img/index/logo_java.svg" alt="" width="36px" height="36px"><br/>[Java](apps/java/quick-to-azure.md)</td>
+<td>[<img src="_img/index/logo_net.svg" alt="" width="36px" height="36px"><br/>ASP.NET Core](apps/aspnet/build-aspnet-core.md)</td>
+<td>[<img src="_img/index/logo_net.svg" alt="" width="36px" height="36px"><br/>ASP.NET](apps/aspnet/build-aspnet-4.md)</td>
+<td>[<img src="_img/index/logo_net.svg" alt="" width="36px" height="36px"><br/>.NET Desktop](apps/windows/dot-net.md)</td>
 </tr>
-</table>    
+<tr valign="middle" align="center">
+<td>[<img src="_img/index/logo_nodejs.svg" alt="" width="36px" height="36px"><br/>Node.js](apps/nodejs/build-gulp.md)</td>
+<td>[<img src="_img/index/logo_java.svg" alt="" width="36px" height="36px"><br/>Java](apps/java/build-maven.md)</td>
+<td>[<img src="_img/index/logo_cpp.png" alt="" width="36px" height="36px"><br/>C++](apps/windows/cpp.md)</td>
+</tr>
+<tr valign="middle" align="center">
+<td>[<img src="_img/index/logo_ios.png" alt="" width="36px" height="36px"><br/>Xcode](apps/mobile/xcode-ios.md)</td>
+<td>[<img src="_img/index/logo_xamarin.png" alt="" width="36px" height="36px"><br/>Xamarin](apps/mobile/xamarin.md)</td>
+<td>[<img src="_img/index/logo_uwp.png" alt="" width="36px" height="36px"><br/>UWP](apps/windows/universal.md)</td>
+</tr>
+</table>
 
 Learn how to deploy your app.
 
 <table>
 <tr valign="middle" align="center">
-<td><img src="_img/index/app-service-web.png" alt="" width="36px" height="36px"><br/>[Azure web app](apps/cd/deploy-webdeploy-webapps.md)</td>
-<td><img src="_img/index/virtualmachine.png" alt="" width="36px" height="36px"><br/>[Windows VM](apps/cd/deploy-webdeploy-iis-deploygroups.md)</td>
+<td>[<img src="_img/index/app-service-web.png" alt="" width="36px" height="36px"><br/>Azure web app](apps/cd/deploy-webdeploy-webapps.md)</td>
+<td>[<img src="_img/index/virtualmachine.png" alt="" width="36px" height="36px"><br/>IIS web server](apps/cd/deploy-webdeploy-iis-deploygroups.md)</td>
 </tr>
 </table>    
 

@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 title: TFS/Dashboards/WidgetContracts EventArgs API | Extensions for Visual Studio Team Services
 description: Documentation for the EventArgs contract.
 ms.assetid: 5EFE9556-443A-4E6E-B372-330FC754A589

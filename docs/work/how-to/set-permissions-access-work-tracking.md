@@ -38,19 +38,23 @@ Add users to the Contributors group to provide access to most features as listed
 
 <a id="set-permissions-area-path" >  </a> 
 
-## Set permissions to restrict access to work items   
+## Set permissions to restrict access to edit or modify work items    
 
-Permissions placed on an area paths allows you to permit or restrict access to edit or modify work items, test cases, or test plans assigned to those areas. You can restrict access to users or groups. You can also set permissions for who can add or modify areas or iterations for the team project.  
+Permissions you set on an area path allow you to permit or restrict access to edit or modify work items, test cases, or test plans assigned to those areas. You can restrict access to users or groups. You can also set permissions for who can add or modify areas or iterations for the team project.  
 
-1. Open the **Security** dialog for the node you want to manage.  
+1. From the web portal admin context, open the **Work>Areas** page, and then click the context menu for the node you want to manage.  
+	
+	<img src="_img/set-permissions-area-node-open.png" alt="Open the security dialog" style="border: 2px solid #C3C3C3;" /> 
+<!---
+	<img src="../customize/_img/ALM_CW_OpenSecurityDialog.png" alt="Open the security dialog" style="border: 2px solid #C3C3C3;" /> -->
 
-	![Open the security dialog](../customize/_img/ALM_CW_OpenSecurityDialog.png)
+2. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
 
-2. Select the group or team member, and then change the permission settings. For example, for the Disallow Access Group, deny the ability to view, modify, or edit work items in the FabrikamFiber area path.
+	For example, here we've added the Disallow Access Group, and disallowed members of this group the ability to view, modify, or edit work items in the Customer Service area path.
 
-	![Permissions for an area node](../customize/_img/ALM_CW_PermisionsForArea.png)
+	<img src="_img/set-permissions-area-node-dialog.png" alt="Permissions for an area node" style="border: 2px solid #C3C3C3;" />
 
-	If the group or team member doesn't appear in the list, you can [**Add** it](../../accounts/add-users.md).  
+<!--- <img src=".../customize/_img/ALM_CW_PermisionsForArea.png" alt="Permissions for an area node" style="border: 2px solid #C3C3C3;" />--> 
 	
 You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  
 
@@ -67,7 +71,7 @@ For additional ways to restrict modifications to work items, see [Restrict who c
 
 
 <a id="move-delete-permissions"></a>
-###Set permissions to delete work items   
+## Set permissions to delete work items   
 
 By default, Project Administrators and Contributors can change the work item type and delete work items by moving them to the Recycle bin. Only Project Administrators can permanently delete work items and test artifacts. Project admins can grant permissions to other team members as needed. 
 
@@ -78,11 +82,11 @@ In this example, we grant the Team Admins group permissions to move work items t
 <img src="../backlogs/_img/delete-test-project-permissions.png" alt="Set Team Admin permissions" style="border: 2px solid #C3C3C3;" />
 
 <a id="restrict-delete-permissions"></a>
-###Restrict users from deleting work items 
+## Restrict users from deleting work items 
 You can restrict users from deleting work items by changing their permissions to Delete work items in this project. For more information about restricting permissions, see [Restrict access to resources, Work items](../../accounts/restrict-access-tfs.md#work-items). 
 
 <a id="delete-test-permissions"></a>
-###Additional permissions and access level required to delete test artifacts
+## Additional permissions and access level required to delete test artifacts
   
 In addition to the project-level permissions set in the previous section, team members need permissions to manage test artifacts which are set for an area path. 
 
@@ -98,5 +102,7 @@ To have full access to the Test feature set, your [access level must be set to A
 
 ## Related notes 
 
+*	[Set permissions on queries and query folders](../track/set-query-permissions.md)  
+*	[Set permissions on delivery plans](../scale/review-team-plans.md#plan-permissions)  
 *	[Permissions and access for work tracking](../permissions-access-work-tracking.md) 
-   
+*	[Permissions and groups reference](../../security/permissions.md) 

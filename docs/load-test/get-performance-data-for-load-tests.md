@@ -2,7 +2,8 @@
 title: Get Application Insights performance data with load tests
 description: Get app performance data from Application Insights in VSTS and TFS
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-performance
+ms.technology: vsts-sub-load-test
+ms.service: vsts-testing
 ms.assetid: 5658166B-CA7F-4C6B-B55D-AE745FB78D5C
 ms.manager: douge
 ms.author: ahomer
@@ -72,7 +73,7 @@ is causing performance problems.
 
 ## See also
 
-* [Q &amp; A for load testing](reference-qa.md#qaappinsights)
+* [FAQs for load testing](reference-qa.md#qaappinsights)
 * [Load test with Visual Studio](getting-started-with-performance-testing.md) 
 * [Load test with VSTS](get-started-simple-cloud-load-test.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 

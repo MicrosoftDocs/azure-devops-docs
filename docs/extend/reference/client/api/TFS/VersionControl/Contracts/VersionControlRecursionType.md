@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts VersionControlRecursionType API | Extensions for Visual Studio Team Services
 ms.assetid: d82962b4-8e79-a65e-4357-d35a1de0acce
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

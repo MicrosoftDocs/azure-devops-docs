@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces IMessageDialogButton API | Extensions f
 description: Represents a button used in IHostDialogService.openMessageDialog().
 ms.assetid: b07f3d2b-4b81-73ef-4b9c-0a6fd2249e8c
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

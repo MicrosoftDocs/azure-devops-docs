@@ -3,7 +3,8 @@ title: TFS/build-release/Contracts DeploymentDeploy API | Extensions for Visual 
 description: Deployment iformation for type &quot;Deploy&quot;
 ms.assetid: 11a197d3-10dd-d912-4285-53eb0b975c9d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

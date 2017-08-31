@@ -1,0 +1,29 @@
+<svg id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5c2d91;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>logo_code-search</title>
+  <path class="cls-1" d="M44.89,27a18.88,18.88,0,0,1-.32,2H56V27Z"/>
+  <path class="cls-1" d="M32,43a18.89,18.89,0,0,1-6,1,19.13,19.13,0,0,1-2-.11V45H56V43Z"/>
+  <path class="cls-1" d="M38.8,39a19.09,19.09,0,0,1-2.59,2H56V39Z"/>
+  <path class="cls-1" d="M42.13,35a19.11,19.11,0,0,1-1.41,2H56V35Z"/>
+  <path class="cls-1" d="M44,31a18.82,18.82,0,0,1-.8,2H56V31Z"/>
+  <path class="cls-1" d="M44.89,23A19.11,19.11,0,0,1,45,25H56V23Z"/>
+  <path class="cls-1" d="M40.71,13a18.94,18.94,0,0,1,3.85,8H59V47H20V43a18.89,18.89,0,0,1-3-1.29V50H62V13Z"/>
+  <circle class="cls-2" cx="58" cy="16" r="1"/>
+  <circle class="cls-2" cx="54" cy="16" r="1"/>
+  <circle class="cls-2" cx="50" cy="16" r="1"/>
+  <path class="cls-1" d="M17.24,36.83,16,35.46,1.58,49.88a2,2,0,0,0,0,2.83l.71.71a2,2,0,0,0,2.83,0L20.54,38Z"/>
+  <path class="cls-1" d="M26,9A16,16,0,1,0,42,25,16,16,0,0,0,26,9Zm0,29A13,13,0,1,1,39,25,13,13,0,0,1,26,38Z"/>
+  <polygon class="cls-1" points="24.67 33 23 33 26.33 16 28 16 24.67 33"/>
+  <polygon class="cls-1" points="22 28.17 18.41 24.59 22 21 22 18.17 15.59 24.59 22 31 22 28.17"/>
+  <polygon class="cls-1" points="30 28.17 33.59 24.59 30 21 30 18.17 36.41 24.59 30 31 30 28.17"/>
+</svg>

@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces AppInsightsConfiguration API | Extensions f
 description: Model used to configure how TFS reports usage data to Application Insights
 ms.assetid: f203b1bf-1c09-444f-aac5-91788754d051
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -1,11 +1,11 @@
-- name: Continuous testing
+- name: Continuous Testing
   href: index.md
 - name: Overview
   items:
   - name: About continuous testing
     href: overview.md
   - name: About CI/CD
-    href: ../overview.md?toc=/vsts/build-release/toc.json
+    href: ../overview.md
 - name: Quickstarts
   items:
   - name: Continuous testing
@@ -14,6 +14,10 @@
     href: continuous-test-selenium.md
   - name: Review test results
     href: review-continuous-test-results-after-build.md
+- name: Tutorials
+  items:
+  - name: Test your app
+    href: example-continuous-testing.md
 - name: How-to Guides
   items:
   - name: Set up continuous testing
@@ -24,10 +28,6 @@
     href: associate-automated-test-with-test-case.md
   - name: Associate results with requirements
     href: associate-automated-results-with-requirements.md
-- name: Tutorials
-  items:
-  - name: Test your app
-    href: example-continuous-testing.md
 - name: Reference
   items:
   - name: Unified agents and phases
@@ -36,7 +36,7 @@
     href: continuous-test-java.md
   - name: Set up environments
     href: set-up-continuous-test-environments-builds.md
-  - name: "Q & A"
+  - name: FAQs
     href: reference-qa.md
 - name: Resources
   items:
@@ -44,4 +44,9 @@
     href: https://vsartestreleaseguide.codeplex.com/
   - name: Plug-ins for Visual Studio
     href: http://go.microsoft.com/fwlink/?LinkID=246630
-
+  - name: Manual and exploratory testing
+    href: ../../manual-test/index.md
+  - name: Load and performance testing
+    href: ../../load-test/index.md
+  - name: Unit testing
+    href: https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios

@@ -2,7 +2,8 @@
 title: TFS/Work/Contracts Activity API | Extensions for Visual Studio Team Services
 ms.assetid: 57257f6f-2a5b-6d03-2ef2-0617bcceadc0
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

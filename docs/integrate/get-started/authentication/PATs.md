@@ -3,7 +3,8 @@ title: Authenticating with personal access tokens | Visual Studio Team Services 
 description: Use personal access tokens to get started with the REST APIs for Visual Studio Team Services.
 ms.assetid: 255E1E2B-9CB2-4FC3-8495-12DB4149A449
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.technology: vsts-sub-integrate
+ms.service: vsts-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
@@ -68,12 +69,14 @@ public static async void GetBuilds()
 <br/>
 When your code is working, it's a good time to switch from basic auth to [OAuth](./oauth.md).
 
-## Q&A
 
-<!-- BEGINSECTION class="md-qanda" -->
+## Enabling IIS Basic Authentication invalidates using PATs for TFS
+
+Learn more about [using IIS Basic Authentication with TFS on-premises](iis-basic-auth.md).
+
+
+## Q&A
 
 #### Q: Can I use basic auth with all of the Visual Studio Team Services REST APIs?
 
 A: No. You can use basic auth with most of them, but [accounts](https://visualstudio.com/api/shared/accounts.md) and [profiles](https://visualstudio.com/api/shared/profiles.md) only support [OAuth](./oauth.md).
-
-<!-- ENDSECTION --> 

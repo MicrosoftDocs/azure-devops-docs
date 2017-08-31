@@ -2,7 +2,8 @@
 title: Change number of paid extension users for Visual Studio Team Services
 description: Change number of paid extension users for Visual Studio Team Services
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vsts-sub-billing
+ms.service: vsts-admin
 ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f 
 ms.manager: douge
 ms.author: elbatk

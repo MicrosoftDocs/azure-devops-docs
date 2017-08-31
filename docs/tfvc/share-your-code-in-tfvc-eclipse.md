@@ -3,7 +3,9 @@ title: Share your code in TFVC using Eclipse | Visual Studio Team Services
 description: Share code in TFVC using Eclipse
 ms.assetid: 181CB50F-44D3-4BA4-8E89-ADB9CB87DEB6
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfvc
+ms.technology: vsts-sub-tfvc
+ms.service: vsts-code
+ms.topic: get-started-article
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016
@@ -45,6 +47,6 @@ Your code is in TFVC, so now your teammates can contribute.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Build your Eclipse projects](../build-release/apps/java/java-maven.md)
+> [Build your Eclipse projects](../build-release/apps/java/build-maven.md)
 
 

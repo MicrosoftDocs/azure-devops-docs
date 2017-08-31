@@ -3,7 +3,8 @@ title: TFS/TestManagement/Contracts CodeCoverageData API | Extensions for Visual
 description: Represents the build configuration (platform, flavor) and coverage data for the build
 ms.assetid: c3b58257-ba88-89df-4a81-285219d8be16
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

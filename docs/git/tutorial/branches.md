@@ -3,16 +3,17 @@ title: Create and delete a branch in your Git repo | VSTS & TFS
 description: Create, use, and delete Git Branches in Visual Studio and from the command line
 ms.assetid: 4b18a164-d1cb-4f87-89cb-8dc227e64af1
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.topic: get-started-article 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/14/2017
+ms.date: 08/29/2017
 ---
 
 #  Create work in branches  
 
-###### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
 Git branches aren't much more than a small reference that keeps an exact history of commits, so they are very cheap to create.
 [Committing](commits.md) changes to a branch will not affect other branches, and you can share branches with others without having to merge the changes into the main project.

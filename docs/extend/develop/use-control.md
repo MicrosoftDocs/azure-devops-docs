@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-extend
+ms.service: vsts-extend
 title: How to Use a Control | Extensions for Visual Studio Team Services
 description: How to use a control in your extension for Visual Studio Team Services.
 ms.assetid: eadb8d03-0664-4810-a6e8-62d64e834d33

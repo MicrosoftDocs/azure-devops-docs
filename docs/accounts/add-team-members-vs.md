@@ -3,7 +3,8 @@ title: VSTS - Add team project members | Visual Studio Team Services
 description: Add members to team projects in Visual Studio Team Services (Visual Studio Online, VSTS, VSO)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.technology: vsts-sub-accounts
+ms.service: vsts-admin
 ms.assetid: 1cd6673e-f83a-403b-884b-b69b8e3f5c46
 ms.manager: douge
 ms.author: estfan
@@ -38,7 +39,7 @@ like [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-t
 If you don't have a team project yet, 
 [create your team project first](../connect/connect-team-projects.md).
 To add members to team projects, you'll need 
-[project administrator](add-administrator-tfs.md), 
+[project administrator](add-administrator-team-project.md), 
 [project collection administrator, or account owner](#find-pca-owner) permissions.
 
 ## Add members to your team project

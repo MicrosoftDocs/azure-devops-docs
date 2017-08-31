@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces AppInsightsCustomTrackPageData API | Extens
 description: Model that can be used to customize the values sent to AppInsights via &quot;trackPage&quot;
 ms.assetid: cb705e54-f6e1-052d-38fb-a6cac86e5370
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

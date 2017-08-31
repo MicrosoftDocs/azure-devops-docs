@@ -24,7 +24,7 @@ You provide feedback to users that you plan to [request feedback](get-feedback.m
 
 	![Open the administration page](_img/ALM_CAL_OpenAdminPage.png)  
 
-	If you aren't a member of the **Project Administrators** or **Team Foundation Administrators** group, get added. See [Add an administrator](../../accounts/add-administrator-tfs.md). You'll need to be a member in order to add users and groups to a team project, change permissions, and grant them access to the web portal.
+	If you aren't a member of the **Project Administrators** or **Team Foundation Administrators** group, get added. See [Add an administrator](../../security/set-project-collection-level-permissions.md). You'll need to be a member in order to add users and groups to a team project, change permissions, and grant them access to the web portal.
 
 2. Create a group for your reviewers.
 

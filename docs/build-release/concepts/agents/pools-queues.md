@@ -18,15 +18,15 @@ An **agent queue** provides access to an agent pool. When you create a build or 
 
 To share an agent pool with multiple team projects, you create an agent queue pointing to that pool in each of those team projects. While multiple queues across team projects can use the same agent pool, multiple queues within a team project cannot use the same pool. Also, each queue can use only one agent pool.
 
+#### VSTS and TFS 2017
+
 ![TFS 2017 build system architecture](_img/build-system-architecture.png)
 
-<div class="NOTE">
-<h5>NOTE</h5>
-<p>In **TFS 2015** agent queues are scoped to team project collections. <a data-toggle="collapse" href="#expando-tfs-2015-architecture">Show me &#x25BC;</a></p>
-<div class="collapse" id="expando-tfs-2015-architecture">
+#### TFS 2015
+
+In TFS 2015 agent queues are scoped to team project collections.
+
 ![TFS 2015 build system architecture](_img/build-system-architecture-tfs-2015.png)
-</div>
-</div>
 
 You create and manage pools from the Agent pools tab.
 

@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts GitRepositoryPermissions API (Prior to TFS 2017 Update 1) | Extensions for Visual Studio Team Services
 ms.assetid: 76e23ee6-0909-4124-8641-dfbdcff63943
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

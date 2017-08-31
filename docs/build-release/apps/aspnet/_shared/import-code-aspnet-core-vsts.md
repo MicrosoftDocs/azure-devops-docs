@@ -7,7 +7,7 @@ VSTS is a full-featured Git server for hosting your team's source code. You'll i
 
  ![import repository menu item](../../_shared/_img/import-repository-menu-item.png)
 
-1. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** textbox.
+1. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** text box.
 
   ```
   https://github.com/adventworks/dotnetcore-sample

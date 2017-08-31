@@ -30,18 +30,16 @@
     href: guidance/burndown-guidance.md
 - name: How-to Guides
   items:
-  - name: Set dashboard permissions
-    href: dashboard-permissions.md
+  - name: Add charts to a dashboard
+    href: add-charts-to-dashboard.md
   - name: Add Markdown to a dashboard
     href: add-markdown-to-dashboard.md
   - name: Configure work item query-based charts
     href: charts.md
-  - name: "Configure test status, progress, and result charts"
+  - name: "Configure test status, progress, & result charts"
     href: /vsts/manual-test/getting-started/track-test-status?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json
-  - name: Add charts to a dashboard
-    href: add-charts-to-dashboard.md
-  - name: Switch project or team focus
-    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/report/toc.json
+  - name: Set dashboard permissions
+    href: dashboard-permissions.md
 - name: Reference
   items:
   - name: Widget catalog
@@ -50,13 +48,9 @@
   items:
   - name: Agile
     href: /vsts/#pivot=services&panel=agile
-  - name: "Continuous Integration & Delivery"
-    href: /vsts/#pivot=services&panel=delivery
   - name: Testing
     href: /vsts/#pivot=services&panel=testing
-  - name: Admin
-    href: /vsts/#pivot=services&panel=admin
-  - name: "Scale & Configure Teams"
-    href: /vsts/work/scale/index
+  - name: Build a dashboard widget
+    href: /vsts/extend/develop/add-dashboard-widget
   - name: Marketplace widgets
     href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance

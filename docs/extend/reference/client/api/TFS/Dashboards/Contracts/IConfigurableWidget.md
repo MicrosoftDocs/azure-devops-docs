@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 title: TFS/Dashboards/WidgetContracts IConfigurableWidget API | Extensions for Visual Studio Team Services
 description: Documentation for the IConfigurableWidget contract.
 ms.assetid: EE51192C-4294-41AE-A24D-C1F26FE76617

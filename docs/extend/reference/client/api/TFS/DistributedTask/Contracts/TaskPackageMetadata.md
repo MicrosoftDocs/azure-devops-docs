@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskPackageMetadata API | Extensions for Visual Studio Team Services
 ms.assetid: 9d9e8c3d-3a0f-4fc9-0a59-b0f8d8dad1f1
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

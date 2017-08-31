@@ -10,10 +10,6 @@
     href: /vsts/work/backlogs/add-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Drive Git development
     href: /vsts/work/backlogs/connect-work-items-to-git-dev-ops?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
-  - name: "Use @mentions to further discussion" 
-    href: /vsts/notifications/at-mentions?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
-  - name: "Use #ID to link to work items"
-    href: /vsts/notifications/add-links-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
 - name: Tutorials
   items:
   - name: Follow work
@@ -32,16 +28,16 @@
     href: /vsts/work/backlogs/copy-clone-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
 - name: Concepts
   items:
-  - name: Permissions and access for work tracking
-    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-  - name: "Link types & link relationships"
-    href: /vsts/work/track/link-work-items-support-traceability?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json toc.json 
-  - name: Work item form controls
+  - name: Work item form controls 
     href: /vsts/work/concepts/work-item-form-controls?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
+  - name: "Link types & link relationships"
+    href: /vsts/work/track/link-work-items-support-traceability?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json toc.json  
   - name: Share work plans
     href: /vsts/work/track/share-plans?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: New work item experience
     href: /vsts/work/process/new-work-item-experience?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
+  - name: Permissions and access for work tracking
+    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Process guidance
     items:
     - name: Agile process
@@ -91,22 +87,26 @@
         - name: Manage issues
           href: /vsts/work/guidance/cmmi/guidance-manage-issues-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
       - name: Engineering
-        href: ../guidance/cmmi/guidance-engineering.md
+        href: /vsts/work/guidance/cmmi/guidance-engineering?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         items:
         - name: Develop requirements
-          href: ../guidance/cmmi/guidance-develop-requirements.md
+          href: /vsts/work/guidance/cmmi/guidance-develop-requirements?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         - name: Arrange requirements into a product plan
-          href: ../guidance/cmmi/arrange-requirements-into-a-product-plan.md
+          href: /vsts/work/guidance/cmmi/arrange-requirements-into-a-product-plan?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         - name: Create a solution architecture
-          href: ../guidance/cmmi/guidance-create-solution-architecture.md
+          href: /vsts/work/guidance/cmmi/guidance-create-solution-architecture?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         - name: Implement development tasks
-          href: ../guidance/cmmi/guidance-implement-development-tasks.md
+          href: /vsts/work/guidance/cmmi/guidance-implement-development-tasks?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
         - name: Build a product
-          href: ../guidance/cmmi/guidance-build-product.md
+          href: /vsts/work/guidance/cmmi/guidance-build-product?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
       - name: Track bugs
-        href: ../guidance/cmmi/track-bugs.md
-- name: How-to guides
+        href: /vsts/work/guidance/cmmi/track-bugs?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+- name: How-to Guides
   items:
+  - name: "Use @mentions to further discussion" 
+    href: /vsts/notifications/at-mentions?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+  - name: "Use #ID to link to work items"
+    href: /vsts/notifications/add-links-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Add tags to work items
     href: /vsts/work/track/add-tags-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Use work item templates

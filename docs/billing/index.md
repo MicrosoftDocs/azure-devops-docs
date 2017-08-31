@@ -2,7 +2,8 @@
 title: Billing for Visual STudio Team Services  
 description: Index to topics for account billing for Visual Studio Team Services (VSTS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfs
+ms.technology: vsts-sub-billing
+ms.service: vsts-admin
 ms.assetid: eec3c8aa-7985-47fc-8c10-6be0f41eb441
 ms.topic: get started
 ms.manager: douge
@@ -21,11 +22,6 @@ VSTS billing covers:
 * Purchasing for pay-for-usage extensions, such as Test Manager and Package Management (these extensions are assigned to specific users). 
 
 * Purchasing subscriptions for Visual Studio, HockeyApp, and Xamarin University
-
-
-**UNDER CONSTRUCTION -- JUST A PLACEHOLDER FOR NOW**
-
-
 
 
 ## 5-Minute Quickstarts  

@@ -23,7 +23,7 @@ Many teams choose a two or three week cadence. However, you can specify shorter 
 <a id="quick-start-schedule">   </a>
 ## Quick start guide to scheduling sprints
 
-To quickly get started, you can use the default sprints, also referred to as iterations, that were added when your team project was created.  Note, you must be a [member of the Project Administrators group](../../accounts/add-administrator-tfs.md) in order to add sprints and schedule sprint dates. (If you created the team project, you're a member.) 
+To quickly get started, you can use the default sprints, also referred to as iterations, that were added when your team project was created.  Note, you must be a [member of the Project Administrators group](../../security/set-project-collection-level-permissions.md) in order to add sprints and schedule sprint dates. (If you created the team project, you're a member.) 
 
 [!INCLUDE [temp](../_shared/image-differences.md)]
 
@@ -48,7 +48,8 @@ Of course, if you have several teams or more complex release and sprint cadences
 <!--- NOTE FEATURE AVAILABILITY --> 
 You can quickly assign work items to a sprint by dragging and dropping them from the product backlog to the sprint. 
 
-![Assign work items to a sprint](_img/assign-to-sprint-from-kanban-animated.gif)
+<!---
+![Assign work items to a sprint](_img/assign-to-sprint-from-kanban-animated.gif)-->
 
 <a id="schedule">   </a>
 ## Define and schedule sprints for several teams and release cadences 
@@ -69,12 +70,9 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 ![VSTS, sprints](_img/define-sprints-selected-team-iterations-vsts.png)
 
 
+## Try this next
+> [!div class="nextstepaction"]
+> [Plan a sprint](sprint-planning.md) 
+
 ## Related notes 
-If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path, which you configure via the [Set team defaults](../scale/set-team-defaults.md) .  
-
-- [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)
-- [Define iteration paths](../customize/set-iteration-paths-sprints.md) 
-- [Configure team settings](../scale/manage-team-assets.md)  
- 
-
-
+If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's [default area path and iteration path](../scale/set-team-defaults.md).  

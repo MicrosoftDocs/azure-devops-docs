@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-extend
+ms.service: vsts-extend
 title: An index for building extensions for Visual Studio Team Services and Team Foundation Server
 description: Index of building extensions for Visual Studio Team Services and Team Foundation Server
 ms.assetid: 153aa519-6233-4292-8eac-44de15f2d3dd

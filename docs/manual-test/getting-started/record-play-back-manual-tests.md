@@ -2,7 +2,8 @@
 title: Record and play back manual tests | Visual Studio 
 description: Record and play back manual tests
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.assetid: 6B6E991A-969F-4AB3-8031-9BFF260D9142
 ms.manager: douge
 ms.author: ahomer
@@ -11,7 +12,7 @@ ms.date: 08/12/2016
 
 # Record and play back manual tests
 
-<!-- **Visual Studio 2017** | **Visual Studio 2015** | [**Previous version**](https://msdn.microsoft.com/library/dd286714%28v=vs.120%29.aspx) -->
+**Visual Studio 2017** | **Visual Studio 2015** | [**Previous version**](https://msdn.microsoft.com/library/dd286714%28v=vs.120%29.aspx)
 
 Record keystrokes and mouse actions with Microsoft Test Manager 
 while you are testing an app. You can then play back your actions 
@@ -123,6 +124,6 @@ you'll have to manually perform that step.
 
 ## See Also
 
-* [Q &amp; A for recording and playing back manual tests](../reference-qa.md#mtmqna)
+* [FAQs for recording and playing back manual tests](../reference-qa.md#mtmqna)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

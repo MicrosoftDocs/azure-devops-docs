@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskAttachment API | Extensions for Visual Studio Team Services
 ms.assetid: 7591ce1c-fd63-b0fa-ab60-c0b83d80033c
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

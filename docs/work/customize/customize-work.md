@@ -39,7 +39,7 @@ Each team project provides a number of shared resources that support all teams a
 
 |Shared queries | Tags | 
 |-------------|----------| 
-|Open shared queries or create your own query using the query editor [to list work items or show hierarchical or dependent items](../track/using-queries.md).<br/> ![Shared queries](_img/customize-work-shared-queries-min.png) |[Add tags to work items](../track/add-tags-to-work-items.md) to filter backlogs and queries<br/>![Add tags to filter backlogs, boards, and queries](_img/alm-feature-tags.png) |   
+|Open shared queries or create your own<br/>query using the [query editor](../track/using-queries.md) to list work items<br/>or show hierarchical or dependent items.<br/> ![Shared queries](_img/customize-work-shared-queries-min.png) |[Add tags to work items](../track/add-tags-to-work-items.md) to filter backlogs and queries, or list items by tags<br/>![Add tags to filter backlogs, boards, and queries](_img/alm-feature-tags.png) |   
  
 
 <a id="process-models"></a>

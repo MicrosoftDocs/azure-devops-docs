@@ -3,7 +3,8 @@ title: TFS/TestManagement/Contracts RunFilter API | Extensions for Visual Studio
 description: This class is used to provide the filters used for discovery
 ms.assetid: 2a14aadb-85b6-5399-4141-d7f0742163b6
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

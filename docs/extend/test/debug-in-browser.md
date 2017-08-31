@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-extend
+ms.service: vsts-extend
 title: Extension Debugging in a Browser | Extensions for Visual Studio Team Services
 description: How to debug your Visual Studio Team Services extension using browser tools.
 ms.assetid: 8dc00666-844c-404a-9699-512261e53ddf

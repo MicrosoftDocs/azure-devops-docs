@@ -2,7 +2,8 @@
 title: Troubleshooting getting and paying for extensions for Visual Studio Team Services
 description: Troubleshooting getting and paying for extensions for Visual Studio Team Services
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vsts-sub-marketplace
+ms.service: vsts-marketplace
 ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7 
 ms.manager: douge
 ms.author: elbatk
@@ -40,7 +41,7 @@ you can [request extensions](#request) instead.
 
 <a name="no-accounts"></a>
 
-[!INCLUDE [no-accounts](_shared/qa-no-accounts.md)]
+[!INCLUDE [no-accounts](../billing/_shared/qa-no-accounts.md)]
 
 #### Q: Why can't I install extensions for Team Services?
 

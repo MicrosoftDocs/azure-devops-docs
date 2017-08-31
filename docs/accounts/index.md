@@ -2,7 +2,8 @@
 title: Account management for Visual STudio Team Services  
 description: Index to topics for managing the account for Visual Studio Team Services (VSTS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfs
+ms.technology: vsts-sub-accounts
+ms.service: vsts-admin
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
 ms.topic: get started
 ms.manager: douge
@@ -19,12 +20,6 @@ so your team can share code, build often, test early, and ship faster.  You can 
 DevOps and start working. 
 
 Use this index to setup and manage your account and configure key settings to support your teams. 
-
-
-  
-
-**UNDER CONSTRUCTION -- JUST A PLACEHOLDER FOR NOW**
-
 
 
 ## 5-Minute Quickstarts  
@@ -68,5 +63,5 @@ Use this index to setup and manage your account and configure key settings to su
 
 * [Add Stakeholder users](../security/change-access-levels.md)
 
-* [Add users to an administrator role](add-administrator-tfs.md)
+* [Add users to an administrator role](add-administrator-project-collection.md)
 

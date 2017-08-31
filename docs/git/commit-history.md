@@ -4,7 +4,8 @@ description: View Git commit history in Visual Studio
 ms.assetid: f1ceefae-192f-49ee-af52-b9a29852bf85
 toc: show
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.manager: douge
 ms.author: sancha
 ms.date: 03/14/2017

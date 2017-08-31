@@ -3,7 +3,8 @@ title: TFS/Work/Contracts TeamSetting API | Extensions for Visual Studio Team Se
 description: Data contract for TeamSettings
 ms.assetid: 75062086-9d67-3e18-5afb-276bb5e99746
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

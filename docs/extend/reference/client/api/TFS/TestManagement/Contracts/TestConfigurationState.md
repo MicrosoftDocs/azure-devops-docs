@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts TestConfigurationState API | Extensions for Visual Studio Team Services
 ms.assetid: 58844a4f-299d-6435-b6af-dd3f80ce2dbe
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

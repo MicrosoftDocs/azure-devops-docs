@@ -3,7 +3,8 @@ title: VSS/SDK/Services/Dialogs ExternalDialog API | Extensions for Visual Studi
 description: Represents a dialog which hosts an ExternalPart.
 ms.assetid: 892ed410-f04f-320f-63b0-a3a5e0505bf0
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

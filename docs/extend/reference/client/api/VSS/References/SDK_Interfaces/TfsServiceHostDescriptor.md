@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces TfsServiceHostDescriptor API | Extensions f
 description: Internal structure to describe IVssServiceHost
 ms.assetid: c0851bd0-281f-33e9-6d7f-e400da8ddb3d
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

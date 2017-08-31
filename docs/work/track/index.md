@@ -16,23 +16,22 @@ List bugs, user stories, or other work items based on field criteria you specify
 
 <!---
 ## Overview  
+  * name: Individual versus shared queries
+    href: my-shared-queries.md
 
-- [Adhoc vs managed queries](adhoc-vs-managed-queries.md)  
+* [Adhoc vs managed queries](adhoc-vs-managed-queries.md)  
 -->
  
 ## 5-Minute Quickstarts  
 
-- [Begin your query with the search box](search-box-queries.md)
-- View and run a query (NEW)
-
+- [View and run a query (In Progress)](view-run-query.md)
+- [Perform an adhoc search](search-box-queries.md)
 
 ## Step-by-Step Tutorials
 
-- [Triage work items](triage-work-items.md)
-- [Organize queries](organize-view-run-queries.md)
+- [Organize queries (In Progress)](organize-view-run-queries.md)
+- [Triage work items (In Progress)](triage-work-items.md)
 - [Edit a query](using-queries.md)
-- [Add a query chart](/vsts/report/charts?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json) 
-- [Copy a query](/vsts/work/backlogs/copy-clone-work-items#html?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json)  
 
 ## Samples
 - [Example search box queries](search-box-queries.md)

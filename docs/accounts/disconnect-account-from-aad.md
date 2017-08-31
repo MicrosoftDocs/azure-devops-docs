@@ -3,7 +3,8 @@ title: VSTS - Access with Azure AD | Visual Studio Team Services
 description: Azure Active Directory (Azure AD) - Control access to Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.technology: vsts-sub-accounts
+ms.service: vsts-admin
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.manager: douge
 ms.author: estfan

@@ -21,7 +21,7 @@ This topic provides descriptions for each built-in group and permission. To lear
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](../accounts/add-administrator-tfs.md)<br/>- [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)<br/>- [Add users to a team project](../accounts/add-users.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)  |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](../accounts/restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (VSTS)<br/> - [Dashboard permissions](../report/dashboard-permissions.md#set-permissions)|    
+> |- [Add users to an administrator role](../tfs-server/add-administrator-tfs.md)<br/>- [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)<br/>- [Add users to a team project](../accounts/add-users.md) (TFS)<br/>- [Make a user a team admin](../work/scale/add-team-administrator.md)  |- [Git branch](../git/branch-permissions.md)<br/>- [TFVC](../accounts/restrict-access-tfs.md)<br/>- [Builds](../build-release/concepts/policies/permissions.md#build-permissions)<br/>- [Release definition security](../build-release/concepts/policies/permissions.md#release-permissions)<br/>- [Approvals and approvers](../build-release/concepts/definitions/release/environments.md#approvals) | - [Area and iteration paths](../work/how-to/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../work/track/set-query-permissions.md)<br/>- [Plan permissions](../work/scale/review-team-plans.md#plan-permissions) (VSTS)<br/> - [Dashboard permissions](../report/dashboard-permissions.md#set-permissions)|    
 
 <a name="groups"></a>
 ## Groups
@@ -81,7 +81,7 @@ You can't remove or delete the default server level groups.
 			</p>
 			<blockquote>
 				If your deployment uses SharePoint or Reporting,
-				consider [adding the members of this group](../accounts/add-administrator-tfs.md)
+				consider [adding the members of this group](../tfs-server/add-administrator-tfs.md)
 				to the Farm Administrators and Site Collection Administrators groups in SharePoint
 				and the Team Foundation Content Managers groups in Reporting Services.
 			</blockquote>
@@ -215,7 +215,7 @@ When you create a collection, these groups are created that have permissions in 
 			</p>
 			<blockquote>
 				If your deployment uses SharePoint or Reporting,
-				consider [adding the members of this group](../accounts/add-administrator-tfs.md#project-collection)
+				consider [adding the members of this group](../accounts/add-administrator-project-collection.md)
 				to the Site Collection Administrators group in SharePoint
 				and the Team Foundation Content Managers groups in Reporting Services.
 			</blockquote>
@@ -440,7 +440,7 @@ The system manages permissions at different levels&mdash;server, collection, pro
 
 ### Server-level permissions (TFS)
 
-You manage server-level permissions through the [Team Foundation Administration Console](../accounts/add-administrator-tfs.md) or [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#permissions). Team Foundation Administrators are granted all server-level permissions. Other server-level groups have select permission assignments.
+You manage server-level permissions through the [Team Foundation Administration Console](../tfs-server/add-administrator-tfs.md) or [TFSSecurity command-line tool](../tfs-server/command-line/tfssecurity-cmd.md#permissions). Team Foundation Administrators are granted all server-level permissions. Other server-level groups have select permission assignments.
 
 
 <table valign="top" width="100%">
@@ -1885,7 +1885,7 @@ You can manage alert permissions using [TFSSecurity](../tfs-server/command-line/
 - [About permissions](about-permissions.md)  
 - [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)   
 - [Add users to a team project](../accounts/add-users.md) (TFS)   
-- [Add users to an administrator role](../accounts/add-administrator-tfs.md)   
+- [Add users to an administrator role](../tfs-server/add-administrator-tfs.md)   
 - [Make a user a team admin](../work/scale/manage-team-assets.md)  
 - [Change groups and permissions with TFSSecurity](../tfs-server/command-line/tfssecurity-cmd.md)
 

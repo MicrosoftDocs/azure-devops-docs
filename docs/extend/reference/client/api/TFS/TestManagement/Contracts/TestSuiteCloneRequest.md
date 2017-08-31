@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts TestSuiteCloneRequest API | Extensions for Visual Studio Team Services
 ms.assetid: 798bd1cb-ecce-168c-a113-537c32e5e30c
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

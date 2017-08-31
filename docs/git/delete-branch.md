@@ -3,7 +3,8 @@ title: Delete a branch in your Git repo | VSTS & TFS
 description: Use the branches page to delete a Git branch in VSTS or TFS
 ms.assetid: c033e522-5729-49b6-a27c-f13c9f0e57ba
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/23/2016

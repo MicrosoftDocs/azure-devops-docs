@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces InstalledExtension API | Extensions for Vis
 description: Represents a VSTS extension along with its installation state
 ms.assetid: 0b2dda96-6ff3-0d05-711c-a33de4a6da69
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

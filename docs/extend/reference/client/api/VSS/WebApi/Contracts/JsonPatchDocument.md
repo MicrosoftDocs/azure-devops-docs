@@ -3,7 +3,8 @@ title: VSS/WebApi/Contracts JsonPatchDocument API | Extensions for Visual Studio
 description: The JSON model for JSON Patch Operations
 ms.assetid: 9aeb01de-7250-80d5-0394-8b00abff0b60
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskAgentPool API | Extensions for Visual Studio Team Services
 ms.assetid: 2f24f7ca-f6ae-ff04-014b-91864e223175
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

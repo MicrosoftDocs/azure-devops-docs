@@ -51,7 +51,7 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 
 	<img src="_img/access-levels-2017-stakeholder-acess.png" alt="TFS 2017, Web portal, Server settings admin context, Access levels, Stakeholder access level, Add user or group" style="border: 2px solid #C3C3C3;" />
 
-	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../accounts/add-administrator-tfs.md). 
+	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../tfs-server/add-administrator-tfs.md). 
 
 ### TFS 2015, TFS 2013 
 
@@ -63,7 +63,7 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 
 	<img src="_img/change-access-levels-stakeholder-add-user.png" alt="Stakeholder access level, Add Windows user or group" style="border: 2px solid #C3C3C3;" />
 
-	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../accounts/add-administrator-tfs.md). 
+	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../tfs-server/add-administrator-tfs.md). 
 
 
 <a id="set-default" >  </a>

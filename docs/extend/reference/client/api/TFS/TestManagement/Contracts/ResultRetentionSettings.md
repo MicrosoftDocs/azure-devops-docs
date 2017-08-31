@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts ResultRetentionSettings API | Extensions for Visual Studio Team Services
 ms.assetid: 9f3c11af-68b5-e483-07d4-030b365a8ef3
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

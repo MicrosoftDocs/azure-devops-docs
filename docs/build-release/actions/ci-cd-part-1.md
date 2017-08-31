@@ -306,7 +306,7 @@ We hope this tutorial gave you an understanding of the basic concepts of Team Bu
 
 * [ASP.NET core](../apps/aspnet/build-aspnet-core.md)
 
-* [Node.js](../apps/nodejs/nodejs-to-azure.md)
+* [Node.js](../apps/nodejs/build-gulp.md)
 
 * [Build and deploy your app](../apps/index.md)
 

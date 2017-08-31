@@ -1,0 +1,34 @@
+<svg id="ICONS-64x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #55d2f6;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        fill: #e5e5e5;
+      }
+    </style>
+  </defs>
+  <title>i_extend</title>
+  <polygon class="cls-1" points="13 17 59 17 51 42 19.22 42 13 17"/>
+  <polygon class="cls-2" points="13 17 59 17 56 26 15 26 13 17"/>
+  <polyline class="cls-3" points="13 17 59 17 51.4 42 19.08 42 9.58 7 0 7"/>
+  <polyline class="cls-3" points="17.29 35.41 21.48 50.93 54 51"/>
+  <circle class="cls-4" cx="26" cy="56" r="5"/>
+  <circle class="cls-4" cx="46" cy="56" r="5"/>
+</svg>

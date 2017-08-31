@@ -22,7 +22,6 @@ With Scrum, you can schedule and plan sprints, update your task board, and monit
 [About teams and Agile tools](/vsts/work/about-teams-and-settings?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
 -->
 
-
 ## 5-Minute Quickstarts  
 
 Start tracking work by adding work items, creating your backlog, or scheduling sprints.  
@@ -33,8 +32,9 @@ Start tracking work by adding work items, creating your backlog, or scheduling s
 
 Whether you use scrum, Kanban, or a combination of Agile methods, you can get started tracking bugs, driving your Git development, and more using the Agile tools available to you. 
 
-- [Plan sprints](sprint-planning.md)  
+- [Plan a sprint](sprint-planning.md)  
 - [Add and update tasks](task-board.md)  
+- [Plan capacity](/vsts/work/scale/capacity-planning?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
 - [Sprint burndown](sprint-burndown.md)  
 - [Forecast](forecast.md) 
 - [Velocity](/vsts/report/guidance/team-velocity?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) 
@@ -48,11 +48,10 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 
 
 ## How-to Guides
-* [Switch project or team focus](/vsts/work/how-to/switch-team-context-work?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
-* [Filter backlogs, boards, & queries](/vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
-* [Change column options](/vsts/work/how-to/set-column-options?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
-* [Email/print work items](/vsts/work/how-to/email-work-items?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)   
-* [Define iteration paths](/vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
+
+* [Filter backlogs & queries](/vsts/work/backlogs/filter-backlogs?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)
+* [Copy list of work items](/vsts/work/backlogs/copy-list?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)  
+* [Bulk add or modify (Web)](/vsts/work/backlogs/bulk-modify-work-items?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json)   
 
 
 ## Reference   

@@ -2,7 +2,8 @@
 title: TFS/DistributedTask/Contracts EndpointAuthorization API | Extensions for Visual Studio Team Services
 ms.assetid: 8ff2d4be-7620-dd71-5fc0-c57ee170b280
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

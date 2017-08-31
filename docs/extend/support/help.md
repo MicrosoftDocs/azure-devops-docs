@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-extend
+ms.service: vsts-extend
 title: Get Help | Extensions for Visual Studio Team Services
 description: Get help with your extension for Visual Studio Team Services.
 ms.assetid: fdfc7d19-e17a-420a-881a-b88092624d58

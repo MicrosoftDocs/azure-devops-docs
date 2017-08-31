@@ -2,7 +2,8 @@
 title: VSS/References/SDK.Interfaces MicrosoftAjaxConfig API | Extensions for Visual Studio Team Services
 ms.assetid: 99ad56ba-f242-29d1-4e75-22dec07bd86b
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

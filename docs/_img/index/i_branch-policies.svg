@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e5e5e5;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #2bc7f4;
+      }
+    </style>
+  </defs>
+  <title>i_branch-policies</title>
+  <g id="ICONS-64x">
+    <line class="cls-1" x1="10" y1="41" x2="63" y2="41"/>
+    <circle class="cls-1" cx="9" cy="41" r="7"/>
+    <circle class="cls-1" cx="48" cy="41" r="7"/>
+    <path class="cls-2" d="M20,41s11.5-.5,10.5-10.5S32,16,40,16h7"/>
+    <circle class="cls-3" cx="49" cy="16" r="7"/>
+    <rect class="cls-4" width="64" height="64"/>
+  </g>
+</svg>

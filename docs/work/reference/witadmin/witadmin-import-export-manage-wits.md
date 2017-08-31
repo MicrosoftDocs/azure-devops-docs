@@ -40,7 +40,7 @@ For the team project where the work item types are defined, you must have the fo
   
 -   To destroy, import, or rename work item types, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group.  
   
-For more information, see [Add an administrator](../../../accounts/add-administrator-tfs.md).  
+For more information, see [Add an administrator](../../../security/set-project-collection-level-permissions.md).  
   
 > [!NOTE]
 >  Even if you log on with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for the **Command Prompt**, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
@@ -168,7 +168,7 @@ witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
   
 If you want to restrict creation of a specific WIT to a group of users, there are two ways to restrict access:  
   
--  [Add the WIT to the Hidden Categories group](../use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../../productivity/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.  
+-  [Add the WIT to the Hidden Categories group](../use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../../backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.  
 -  Add [a field rule to the workflow](../apply-rule-work-item-field.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.  
   
     ```  

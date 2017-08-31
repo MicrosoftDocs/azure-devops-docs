@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts BuildPhaseStatus API | Extensions for Visual Studio Team Services
 ms.assetid: 0b816025-b43a-7ac8-3008-8d447028be8b
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

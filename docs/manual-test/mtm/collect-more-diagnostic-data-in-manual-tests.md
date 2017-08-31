@@ -3,7 +3,8 @@ title: Collect more diagnostic data in manual tests
 description: Manual and exploratory testing - Collect more diagnostic data in manual tests
 ms.assetid: bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

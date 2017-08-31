@@ -2,7 +2,8 @@
 title: Exploratory test your web app
 description: Exploratory test your web app, find and file bugs in Visual Studio Team Services (VSTS) from your browser with the Test &amp; Feedback extension - for any platform, no test cases or test steps
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.assetid: 1426e139-c7d4-4270-8db7-af7d6da80574
 ms.manager: douge
 ms.author: ahomer
@@ -16,11 +17,6 @@ Everyone in the team, such as developers, product owners, managers, UX or UI eng
 marketing teams, early adopters, and other stakeholders can use the 
 extension to submit bugs or provide feedback and contribute to the 
 quality of your product. 
-
-In this example, you'll learn how to:
-
-* [Install the extension](#installext)
-* [Select an exploratory testing mode](#selectmode)
 
 <a name="installext"></a>
 ## Install the extension
@@ -96,7 +92,7 @@ the topic [TF31002: Unable to connect](../../work/reference/error/tf31002-unable
 
 ## See also
 
-*  [Q &amp; A for manual testing](../reference-qa.md#tandfext)
+*  [FAQs for manual testing](../reference-qa.md#tandfext)
 
 ## Next step
 

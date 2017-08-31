@@ -2,7 +2,8 @@
 title: Run manual tests in Visual Studio Team Services
 description: Run manual tests and record their results with Microsoft Test Runner and Visual Studio Team Services
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-manual
+ms.technology: vsts-sub-manual-test
+ms.service: vsts-testing
 ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
 ms.manager: douge
 ms.author: ahomer
@@ -15,11 +16,6 @@ Run your manual tests and record the test results for each test step
 using Microsoft Test Runner. If you find an issue when testing, 
 use Test Runner to create a bug. Test steps, screenshots, and comments 
 are automatically included in the bug. 
-
-In this example, you'll learn how to:
-
-* [Run tests for web apps](#run-web)
-* [Run tests for desktop apps](#run-desktop)
 
 > You just need [Basic access](https://www.visualstudio.com/team-services/compare-features/) 
 to run tests that have been assigned to you with Visual Studio Team Services (VSTS). 
@@ -111,7 +107,7 @@ However, if you want to collect more types of data, run your tests using
 
 ## See also
 
-*  [Q &amp; A for manual testing](../reference-qa.md#runtests)
+*  [FAQs for manual testing](../reference-qa.md#runtests)
 
 ## Next step
 

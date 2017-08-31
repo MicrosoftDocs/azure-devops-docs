@@ -2,7 +2,8 @@
 title: TFS/WorkItemTracking/Contracts WorkItemReference API | Extensions for Visual Studio Team Services
 ms.assetid: ef1adc05-038f-3f88-cb86-597c84bb40ce
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

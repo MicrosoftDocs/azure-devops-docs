@@ -3,7 +3,8 @@ title: Authentication Schemas for Service Endpoints | Extensions for Visual Stud
 description: Find the different ways to authenticate with external services using service endpoints in Visual Studio Team Services extensions.
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.technology: vsts-sub-extend
+ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 03/02/2016

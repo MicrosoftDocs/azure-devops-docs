@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces PageContext API | Extensions for Visual Stu
 description: Global context placed on each VSSF web page (through json island data) which gives enough information for core TypeScript modules/controls on the page to operate
 ms.assetid: 9a3b5883-8245-6560-dbd9-ea56b6d2c802
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

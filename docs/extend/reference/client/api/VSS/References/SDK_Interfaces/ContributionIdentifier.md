@@ -3,7 +3,8 @@ title: VSS/References/SDK.Interfaces ContributionIdentifier API | Extensions for
 description: Identifier for contributions and contribution types
 ms.assetid: 96e55a05-2199-4940-f164-757886667e31
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

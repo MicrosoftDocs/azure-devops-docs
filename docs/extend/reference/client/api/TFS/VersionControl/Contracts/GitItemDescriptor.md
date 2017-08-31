@@ -2,7 +2,8 @@
 title: TFS/VersionControl/Contracts GitItemDescriptor API | Extensions for Visual Studio Team Services
 ms.assetid: 79043358-fe16-6ea6-3dbe-35d8600f9db2
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -106,7 +106,7 @@ To make continuous integration and deployment (CI/CD) of Docker apps a lot simpl
   with support for Azure Container Service and Azure Container Registry.
 * Begun a preview of the [Hosted Linux pool](#nov2316-hostedlinux) so that you don't have to set up your own Docker hosts.
 * Released [Visual Studio 2017 RC](https://www.visualstudio.com/vs/visual-studio-2017-rc/)
-  and included [new continuous delivery tools](../../apps/aspnet/aspnetcore-docker-to-azure.md)
+  and included [new continuous delivery tools](../apps/aspnet/aspnetcore-docker-to-azure.md)
   for ASP.NET Core Preview apps. You can use these tools to configure a
   CI/CD process quickly in Team Services. Any ASP.NET Core project with
   Docker support enabled can be set up to run an automated build and

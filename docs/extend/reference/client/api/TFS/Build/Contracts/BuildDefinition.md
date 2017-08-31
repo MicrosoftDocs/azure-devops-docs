@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts BuildDefinition API | Extensions for Visual Studio Team Services
 ms.assetid: 9889e558-78df-e571-6884-75fdfd014546
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

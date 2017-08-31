@@ -2,7 +2,8 @@
 title: Buy access to TFS or Test hub | Team Foundation Server (TFS)
 description: Get more access to Team Foundation Server (TFS) or the Test hub
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfs
+ms.technology: vsts-sub-billing
+ms.service: vsts-admin
 ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
 ms.manager: douge
 ms.author: estfan

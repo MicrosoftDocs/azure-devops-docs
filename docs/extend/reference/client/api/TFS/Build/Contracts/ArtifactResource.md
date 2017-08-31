@@ -2,7 +2,8 @@
 title: TFS/build-release/Contracts ArtifactResource API | Extensions for Visual Studio Team Services
 ms.assetid: 0ffa722a-ec5e-c172-2c19-da69ed149d79
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

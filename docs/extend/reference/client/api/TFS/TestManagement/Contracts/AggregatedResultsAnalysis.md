@@ -2,7 +2,8 @@
 title: TFS/TestManagement/Contracts AggregatedResultsAnalysis API | Extensions for Visual Studio Team Services
 ms.assetid: cbe09142-90da-811a-493d-cf1c52073f66
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

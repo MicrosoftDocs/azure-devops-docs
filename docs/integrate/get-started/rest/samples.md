@@ -3,7 +3,8 @@ title: REST API samples for Visual Studio Team Services and Team Foundation Serv
 description: REST API samples for Visual Studio Team Services and Team Foundation Server.
 ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.technology: vsts-sub-integrate
+ms.service: vsts-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/25/2016
@@ -39,14 +40,12 @@ using System.Net.Http.Headers;
 //encode your personal access token                   
 string credentials = Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", "", personalAccessToken)));
 
-//create a viewmodel object that is a class that represents 
-//the content in the returned json response
-ListofProjectsResponse.Projects viewModel = new ListofProjectsResponse.Projects();
+ListofProjectsResponse.Projects viewModel = null;
 
 //use the httpclient
 using (var client = new HttpClient())
 {
-    client.BaseAddress = new Uri("https://accountname.visualstudio.com:");  //url of our account
+    client.BaseAddress = new Uri("https://{accountname}.visualstudio.com");  //url of our account
     client.DefaultRequestHeaders.Accept.Clear();
     client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", credentials); 

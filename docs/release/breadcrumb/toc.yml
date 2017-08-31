@@ -1,0 +1,11 @@
+- name: VSTS and TFS
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items: 
+  - name: Release
+    tocHref: /vsts/
+    topicHref: /vsts/index#pivot=services&panel=delivery
+    items:
+    - name: "Release Management"
+      tocHref: /vsts/
+      topicHref: /vsts/release/index

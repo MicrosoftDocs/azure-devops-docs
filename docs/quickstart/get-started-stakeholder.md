@@ -140,7 +140,7 @@ For a comparison chart of Stakeholder vs Basic access, see this [feature matrix]
 
 **Notes:**   
 1. Stakeholders cannot view markdown README files defined for repositories.  
-2. In order to add users and assign licenses for Team Services, stakeholders must be added to the [Project Collection Administrators](../accounts/add-administrator-tfs.md) group. Also, they must use the current Users page (not the Streamlined User Management page under preview) in order to manage users. To learn more, see [Manage users and access](../accounts/add-account-users-assign-access-levels.md).    
+2. In order to add users and assign licenses for Team Services, stakeholders must be added to the [Project Collection Administrators](../tfs-server/add-administrator-tfs.md) group. Also, they must use the current Users page (not the Streamlined User Management page under preview) in order to manage users. To learn more, see [Manage users and access](../accounts/add-account-users-assign-access-levels.md).    
 3. Stakeholders can only view and approve releases.  
 4. Stakeholders can assign existing tags to work items, but not create new tags.  
 5. Stakeholders cannot change the backlog priority order (all items are added at the end of the backlog), assign items to an iteration using drag and drop, use the mapping pane or forecasting.

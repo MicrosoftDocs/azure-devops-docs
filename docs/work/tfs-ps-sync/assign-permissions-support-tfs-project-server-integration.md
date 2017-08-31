@@ -23,7 +23,7 @@ ms.date: 03/16/2017
 ###  <a name="assign_perm"></a> Do you have all the permissions you need to assign permissions?  
  Make sure you belong to the following groups:  
   
--   **Team Foundation Administrators** group, required to grant TFS permissions. You must also have access to the **Team Foundation Administration Console**. [Add accounts to administer TFS](../../accounts/add-administrator-tfs.md).  
+-   **Team Foundation Administrators** group, required to grant TFS permissions. You must also have access to the **Team Foundation Administration Console**. [Add accounts to administer TFS](../../security/set-project-collection-level-permissions.md).  
   
 -   **Administrator for Project Web App**  for each instance of Project Web Access or Project Web App (PWA), required to grant Project Server permissions. You must also have access to Project Server through PWA.  
   

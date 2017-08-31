@@ -3,7 +3,8 @@ title: Create a team project | TFS
 description: Add a team project to an on-premises Team Foundation Server (TFS)
 ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.technology: vsts-sub-accounts
+ms.service: vsts-admin
 ms.manager: douge
 ms.author: douge
 ms.date: 04/13/2017
@@ -33,7 +34,7 @@ If you have a team project already, and want to start coding an application proj
 
 If you're using TFS 2015 Update 2 or later then you can create a team project from the web as well. It's important to note that for team projects created from the web, Reporting and SharePoint integration steps will be skipped when creating the team project. You can still set up [Reporting](../report/admin/add-reports-to-a-team-project.md) and [SharePoint](../tfs-server/admin/add-sharepoint-to-tfs.md) manually after team project creation. 
 
-1.  If you're not a member of the Project Collection Administrators Group, [get added as one](add-administrator-tfs.md). To create team projects you must have the Create new projects permission set to **Allow**.
+1.  If you're not a member of the Project Collection Administrators Group, [get added as one](add-administrator-project-collection.md). To create team projects you must have the Create new projects permission set to **Allow**.
 
 2. Navigate to the administation overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-team-project/gearicon.png) gear icon in the top right.
 
@@ -53,7 +54,7 @@ If you're using TFS 2015 Update 2 or later then you can create a team project fr
 
 You can create a team project from Team Explorer after you have connected to an on-premises server. 
 
-1.  If you're not a member of the Project Collection Administrators Group, [get added as one](add-administrator-tfs.md). To create team projects you must have the Create new projects permission set to **Allow**.
+1.  If you're not a member of the Project Collection Administrators Group, [get added as one](add-administrator-project-collection.md). To create team projects you must have the Create new projects permission set to **Allow**.
 
 2.  Ask your TFS administrator about the following resources and get additional permissions as needed:
 

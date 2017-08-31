@@ -18,12 +18,6 @@ unexpected changes and need not be difficult. This
 topic describes using Selenium to test your website
 in a continuous integration build.
 
-In this example, you'll learn how to:
-
-* [Create the test project](#create-project)
-* [Include the test in a CI build](#include-test)
-* [View the test results](#view-results)
-
 For more information about Selenium browser automation, see:
 
 * [Selenium HQ](http://docs.seleniumhq.org/)

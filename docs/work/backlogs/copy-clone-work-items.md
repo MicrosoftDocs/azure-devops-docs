@@ -147,5 +147,5 @@ The formatted table contains a link to each work item included in your selected 
 
 - [Bulk modify work items](bulk-modify-work-items.md)   
 - [Move, change, or delete work items](remove-delete-work-items.md)  
-- [Pre-populate fields using work item templates](../productivity/work-item-template.md)
+- [Pre-populate fields using work item templates](work-item-template.md)
 

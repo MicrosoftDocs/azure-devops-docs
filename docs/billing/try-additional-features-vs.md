@@ -3,7 +3,8 @@ title: Try paid VSTS extensions free | Visual Studio Team Services
 description: Trial the paid feature extensions in Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-setup
+ms.technology: vsts-sub-billing
+ms.service: vsts-admin
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.manager: douge
 ms.author: estfan
@@ -119,7 +120,7 @@ A:  You can start an extension trial only once per account.
 
 <a name="no-accounts"></a>
 
-[!INCLUDE [no-accounts](../marketplace/_shared/qa-no-accounts.md)]
+[!INCLUDE [no-accounts](_shared/qa-no-accounts.md)]
 
 <a name="no-permissions"></a>
 ####Q:		Why can't I start an extension trial for the selected VSTS account?

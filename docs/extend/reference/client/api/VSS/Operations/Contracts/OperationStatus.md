@@ -2,7 +2,8 @@
 title: VSS/Operations/Contracts OperationStatus API | Extensions for Visual Studio Team Services
 ms.assetid: d909c9e0-da63-6ccc-0a30-4a86699da444
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -5,17 +5,18 @@ toc: show
 ms.assetid: BFDE8FAF-63B8-4BC9-9A24-32EE2CA73C13
 ms.topic: code reference (API)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/23/2017
+ms.date: 08/28/2017
 ---
 
 #  Get started using Git in Visual Studio
 
 > [!div class="op_single_selector"]
-> - [Visual Studio 2015 Update 2](gitquickstart.md)
-> - [Visual Studio 2017](gitquickstart-vs2017.md)
+> - [Visual Studio 2017](gitquickstart.md)
+> - [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md) 
 
 #### VSTS | TFS 2015 

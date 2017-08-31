@@ -3,21 +3,23 @@ title: Share your code with Git using Visual Studio 2017 | VSTS & TFS
 description: Share code in Git using Visual Studio 2017
 ms.assetid: d34e594b-49c8-456f-87b4-fac75ef0d5c2
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vsts-sub-git 
+ms.service: vsts-code
 ms.topic: get-started-article
 toc: show
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/10/2017
+ms.date: 08/29/2017
 ---
 
 # Share your code with Visual Studio 2017 and Team Services Git
 
 > [!div class="op_single_selector"]
-> - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
 > - [Visual Studio 2017](share-your-code-in-git-vs-2017.md)
+> - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
 > - [Visual Studio 2013](share-your-code-in-git-vs-2013.md)   
    
+#### VSTS | TFS 2015 & TFS 2017  
 
 Share your Visual Studio solution in a new Team Services or Team Foundation Server Git repo.
 

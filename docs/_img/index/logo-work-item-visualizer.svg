@@ -1,0 +1,43 @@
+<svg id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #828282;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #9160a0;
+      }
+
+      .cls-3 {
+        fill: #f3b54b;
+      }
+
+      .cls-4 {
+        fill: #828282;
+      }
+
+      .cls-5 {
+        fill: #198ba2;
+      }
+
+      .cls-6 {
+        fill: #e4cf6f;
+      }
+    </style>
+  </defs>
+  <title>logo-work-item-visualizer</title>
+  <line class="cls-1" x1="13" y1="34" x2="25.86" y2="19"/>
+  <line class="cls-1" x1="13" y1="29" x2="25.86" y2="44"/>
+  <line class="cls-1" x1="36" y1="18" x2="48.86" y2="33"/>
+  <line class="cls-1" x1="38" y1="21.5" x2="50" y2="21.5"/>
+  <rect class="cls-2" x="24" y="16" width="16" height="9"/>
+  <line class="cls-1" x1="15" y1="31.5" x2="27" y2="31.5"/>
+  <rect class="cls-3" x="24" y="27" width="16" height="9"/>
+  <rect class="cls-4" x="48" y="15" width="16" height="9"/>
+  <rect class="cls-4" x="48" y="27" width="16" height="9"/>
+  <rect class="cls-5" y="27" width="16" height="9"/>
+  <rect class="cls-6" x="24" y="38" width="16" height="9"/>
+</svg>

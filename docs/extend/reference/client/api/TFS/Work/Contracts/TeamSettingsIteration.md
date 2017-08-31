@@ -3,7 +3,8 @@ title: TFS/Work/Contracts TeamSettingsIteration API | Extensions for Visual Stud
 description: Represents a shallow ref for a single iteration
 ms.assetid: 308294f1-53d7-8efe-b79e-8cbcaa6e3ceb
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

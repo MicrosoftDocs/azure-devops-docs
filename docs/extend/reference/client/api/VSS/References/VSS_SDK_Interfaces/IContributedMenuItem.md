@@ -3,7 +3,8 @@ title: VSS/References/VSS.SDK.Interfaces IContributedMenuItem API | Extensions f
 description: An individual contributed menu item
 ms.assetid: 9c3dd62c-f01b-f91f-03ca-9d7b7f32a2a3
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

@@ -31,49 +31,28 @@ Your code changes automatically appear on your site:
 
 ## Prerequisites
 
-[!INCLUDE [include](../build-release/_shared/ci-cd-prerequisites.md)]
+[!INCLUDE [include](../build-release/_shared/ci-cd-prerequisites-vsts.md)]
 * Have a Windows virtual machine that has a default web site running in IIS. See [Create a Windows virtual machine with the Azure CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-cli) for instructions to create a virtual machine in Azure, to install IIS, and to obtain its `publicIpAddress`.
 
 ## Prepare the Windows VM
 
-Running an ASP.NET Core app on Windows requires some dependencies.
+[!INCLUDE [prepare-aspnetcore-windows-vm](../build-release/apps/_shared/prepare-aspnetcore-windows-vm.md)]
 
-On your VM, open an **Administrator: Windows PowerShell** console. Install IIS and the required .NET features:
-
-```PowerShell
-# Install IIS
-Install-WindowsFeature Web-Server,Web-Asp-Net45,NET-Framework-Features
-
-# Install the .NET Core SDK
-Invoke-WebRequest https://go.microsoft.com/fwlink/?linkid=848827 -outfile $env:temp\dotnet-dev-win-x64.1.0.4.exe
-Start-Process $env:temp\dotnet-dev-win-x64.1.0.4.exe -ArgumentList '/quiet' -Wait
-
-# Install the .NET Core Windows Server Hosting bundle
-Invoke-WebRequest https://go.microsoft.com/fwlink/?LinkId=817246 -outfile $env:temp\DotNetCore.WindowsHosting.exe
-Start-Process $env:temp\DotNetCore.WindowsHosting.exe -ArgumentList '/quiet' -Wait
-
-# Restart the web server so that system PATH updates take effect
-net stop was /y
-net start w3svc
-```
-
-When `net start w3svc` appears, press **Enter** to run it.
-
-[!INCLUDE [temp](_shared/create-deployment-group.md)]
+[!INCLUDE [create-deployment-group](../build-release/apps/_shared/create-deployment-group.md)]
 
 ## Import code for sample app into VSTS
 
-[!INCLUDE [include](../build-release/apps/aspnet/_shared/import-code-aspnet-core-vsts.md)]
+[!INCLUDE [import-code-aspnet-core-vsts](../build-release/apps/aspnet/_shared/import-code-aspnet-core-vsts.md)]
 
 [//]: # (TODO: we want factoring of include like above so we can reuse stock fragments that appear in many many places)
 
 ## Set up continuous integration
 
-[!INCLUDE [include](../build-release/_shared/ci-quickstart-intro.md)]
+[!INCLUDE [ci-quickstart-intro](../build-release/_shared/ci-quickstart-intro.md)]
 
 [//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-[//]: # (TODO: [!INCLUDE [include](../build-release/apps/_shared/create-aspnet-core-build-team-services.md])
+[//]: # (TODO: [!INCLUDE [create-aspnet-core-build-team-services](../build-release/apps/_shared/create-aspnet-core-build-team-services.md])
 
 1. On the **Files** tab of the **Code** hub, click **Set up build**.
 
@@ -99,25 +78,6 @@ A new build is started. You'll see a link to the new build on the top of the pag
 
 [//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-[//]: # (TODO: [!INCLUDE [temp](_shared/set-up-cd-1.md])
-
-[//]: # (TODO: ![Screenshot showing release action on build summary](_shared/_img/cicd-get-started-dotnetcore-release.png)
-
-[//]: # (TODO: In the **Create release definition** wizard, select the **IIS Website Deployment** template, and click **Apply**.)
-
-[//]: # (TODO: ![Screenshot showing IIS template](_img/aspnet-core-to-windows-vm/select-iis-website-and-sql-database-deployment-release-template.png)
-
-[//]: # (TODO: Click **Tasks**, and then select the **SQL Deployment** phase. Click 'X' to delete this phase. We won't be deploying a database in this quickstart.)
-
-[//]: # (TODO: Select **IIS Deployment** phase. For the **Deployment Group**, select the deployment group you created earlier, such as *myIIS*. In the **Machine tags** box, select **Add** and choose the *Web* tag.)
-
-[//]: # (TODO: Select the **IIS Web App Manage** task; click 'X' to delete this task. We will not create a new website for this quickstart. Instead, we will deploy to the **default web site**.)
-
-[//]: # (TODO: Select the **IIS Web App Deploy** task to configure your IIS instance settings as follows. For **Website Name**, enter *default web site*. Leave all the other default settings.)
-
-[//]: # (TODO: ![Screenshot showing release definition](_img/aspnet-core-to-windows-vm/cicd-get-started-release-definition.png)
-
-[//]: # (TODO: [!INCLUDE [temp](_shared/set-up-cd-3.md])
 
 ## Set up continuous deployment
 
@@ -129,11 +89,11 @@ Continuous deployment (CD) is a lean practice that your team can use to keep pro
 
 1. In the **Create release definition** wizard, select **IIS Website Deployment** template, and then click **Apply**.
 
- ![Screenshot showing IIS website deployment template](_img/aspnet-core-to-windows-vm/select-iis-website-deployment-release-template.png)
+ ![Screenshot showing IIS website deployment template](../build-release/apps/_shared/_img/aspnet-core-to-windows-vm/select-iis-website-deployment-release-template.png)
 
 1. Click the **Tasks** tab, and then click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*.
 
- ![iis deployment group in release definition](_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
+ ![iis deployment group in release definition](../build-release/apps/_shared/_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
 
 1. Click **Save**. On the Save dialog box, click **OK**.
 

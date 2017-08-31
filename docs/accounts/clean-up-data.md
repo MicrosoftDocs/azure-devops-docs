@@ -2,7 +2,8 @@
 title: Clean up TFS Data
 description: Clean up stale data in your Team Foundation Server instance
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfs
+ms.technology: vsts-sub-accounts
+ms.service: vsts-admin
 ms.assetid: 53bcaf92-9dea-46f5-8a1f-637bcf61b4db
 toc: show
 ms.manager: douge

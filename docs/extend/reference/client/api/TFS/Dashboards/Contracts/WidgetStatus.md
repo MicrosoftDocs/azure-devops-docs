@@ -1,6 +1,7 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 title: TFS/Dashboards/WidgetContracts WidgetStatus API | Extensions for Visual Studio Team Services
 description: Documentation for the WidgetStatus contract.
 ms.assetid: 80994108-EAB5-414E-A986-A0EF90D9DF0D

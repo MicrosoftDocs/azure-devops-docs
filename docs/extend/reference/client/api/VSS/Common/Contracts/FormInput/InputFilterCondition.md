@@ -3,7 +3,8 @@ title: VSS/Common/Contracts/FormInput InputFilterCondition API | Extensions for 
 description: An expression which can be applied to filter a list of subscription inputs
 ms.assetid: 100e189f-71b9-6cf6-a2eb-066c90596283
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

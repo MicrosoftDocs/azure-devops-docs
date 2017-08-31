@@ -2,7 +2,8 @@
 title: TFS/WorkItemTracking/Contracts QueryHierarchyItem API | Extensions for Visual Studio Team Services
 ms.assetid: e69d2c6c-0939-59fc-ff0e-9f646801dbd2
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-extensions-api
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
 generated: true
 ms.manager: douge
 ms.author: elbatk

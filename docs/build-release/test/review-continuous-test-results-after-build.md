@@ -14,13 +14,6 @@ ms.date: 08/12/2016
 After your build finishes running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS),
 review your test results to start analyzing any problems that you found.
 
-In this example, you'll learn how to:
-
-* [Review your test results](#reviewtests)
-* [Organize your test results](#organizetests)
-* [Debug failed tests](#debugtests)
-* [View tests in the Release hub](#viewrelease)
-
 <a name="reviewtests"></a>  
 ## Review your test results
 

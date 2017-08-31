@@ -2,7 +2,8 @@
 title: Restore your Visual Studio Team Services account
 description: Restore your Visual Studio Team Services account
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.technology: vsts-sub-accounts
+ms.service: vsts-admin
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.manager: douge
 ms.author: estfan
