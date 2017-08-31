@@ -14,25 +14,25 @@ ms.date: 08/23/2016
 Service hooks enable you to perform tasks on other services when events happen in your Visual Studio Team Services (VSTS) projects. For example, create a card in Trello when a work item is created or send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services as a more efficient way to drive activities when events happen in your projects.
 
 ## 5-minute Quickstarts 
-* [AppVeyor](services/appveyor.md)
-* [Azure Service Bus](services/azure-service-bus.md)
-* [Azure Storage](services/azure-storage.md)
-* [Bamboo](services/bamboo.md)
-* [Campfire](services/campfire.md)
-* [Flowdock](services/flowdock.md)
-* [HipChat](services/hipchat.md)
-* [Hubot](services/hubot.md)
-* [Jenkins](services/jenkins.md)
-* [MyGet](services/myget.md)
-* [Slack](services/slack.md)
-* [Microsoft Teams](services/teams.md)
-* [Trello](services/trello.md)
-* [UserVoice](services/uservoice.md)
-* [WebHooks](services/webhooks.md)
-* [Zapier](services/zapier.md)
-* [Zendesk](services/zendesk.md)
+* [Integrate with Slack](services/slack.md)
+* [Integrate with Jenkins](services/jenkins.md)
+* [Integrate with Trello](services/trello.md)
 
 ## How-to Guides
+* [Integrate with AppVeyor](services/appveyor.md)
+* [Integrate with Azure Service Bus](services/azure-service-bus.md)
+* [Integrate with Azure Storage](services/azure-storage.md)
+* [Integrate with Bamboo](services/bamboo.md)
+* [Integrate with Campfire](services/campfire.md)
+* [Integrate with Flowdock](services/flowdock.md)
+* [Integrate with HipChat](services/hipchat.md)
+* [Integrate with Hubot](services/hubot.md)
+* [Integrate with MyGet](services/myget.md)
+* [Integrate with Microsoft Teams](services/teams.md)
+* [Integrate with UserVoice](services/uservoice.md)
+* [Integrate with WebHooks](services/webhooks.md)
+* [Integrate with Zapier](services/zapier.md)
+* [Integrate with Zendesk](services/zendesk.md)
 * [Authorize applications with VSTS](./authorize.md)
 
 ## Troubleshooting
