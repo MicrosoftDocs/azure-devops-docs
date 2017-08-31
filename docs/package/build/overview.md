@@ -16,7 +16,7 @@ ms.date: 08/10/2016
 
 Package Management can integrate with most build systems using REST APIs and package clients (e.g. NuGet.exe) to enable continuous integration and delivery. We have specific guidance for these build systems:
 
-* [Team Build](team-build.md)
+* [Team Build](team-build-nuget.md)
 * [Jenkins](jenkins.md)
 
 To integrate with other build systems, use the [packaging REST APIs](../../integrate/rest-api-overview.md).

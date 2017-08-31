@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/package/nuget/nuget-exe
+redirect_url: /vsts/package/nuget/nuget-exe
 ---

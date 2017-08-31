@@ -1,3 +1,3 @@
 ---
-redirect_url: /docs/package/nuget/unlist-delete
+redirect_url: /vsts/package/nuget/unlist-delete
 ---
