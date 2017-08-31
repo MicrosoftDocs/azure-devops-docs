@@ -25,8 +25,6 @@ Give your teams the autonomy they need as your organization grows. Add teams to 
 
 ## How-to Guides
 - [Set team defaults](/vsts/work/scale/set-team-defaults.md)    
-- [Define area paths](/vsts/work/customize/set-area-paths?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json)
-- [Define iteration paths or sprints](/vsts/work/customize/set-iteration-paths-sprints?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json)
 - [Configure team settings](/vsts/work/scale/manage-team-assets?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json) 
 
 
@@ -36,7 +34,7 @@ Give your teams the autonomy they need as your organization grows. Add teams to 
 
 
 ## Resources  
-- [Work item customization](../work/customize/index.md)
+- [Customization](../work/customize/index.md)
 - [Agile culture](https://www.visualstudio.com/learn/agile-culture/)  
 - [Scale Agile to large teams](https://www.visualstudio.com/learn/scale-agile-large-teams/)  
 - [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams)  

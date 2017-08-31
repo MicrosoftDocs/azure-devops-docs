@@ -24,8 +24,6 @@
     href: /vsts/accounts/access-with-azure-ad?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
   - name: Active Directory groups (TFS) 
     href: /vsts/tfs-server/admin/setup-ad-groups?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
-  - name: Authentication guidance
-    href: /vsts/integrate/get-started/authentication/authentication-guidance?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: Set Git branch permissions
@@ -46,31 +44,25 @@
     href: change-access-levels.md  
   - name: Restrict access to resources
     href: /vsts/accounts/restrict-access-tfs?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
-  - name: Add TFS server-level administrators  
-    href: /vsts/accounts/add-administrator-tfs?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Permission lookup guide 
     href: permissions-lookup-guide.md
   - name: Permissions and groups reference
     href: /vsts/security/permissions?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
-  - name: Authorize access to REST APIs with OAuth
-    href: /vsts/integrate/get-started/authentication/oauth?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
-  - name: Authenticate with personal access tokens
-    href: /vsts/integrate/get-started/authentication/pats?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: Git permissions prior to TFS 2017 Update 1
     href: /vsts/git-permissions-before-2017?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: Web site settings and security (TFS) 
     href: /vsts/security/websitesettings?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: TFSSecurity
-    href: /vsts/tfs-server/command-line/tfssecurity-cmd?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
+    href: /vsts/tfs-server/command-line/tfssecurity-cmd?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
 - name: Resources
   items:
-  - name: Account management (VSTS)
+  - name: Account Management (VSTS)
     href: ../accounts/index.md
-  - name: Server administration (TFS) 
+  - name: Server Administration (TFS) 
     href: ../tfs-server/index.md
-  - name: Billing
-    href: ../billing/index.md
+  - name: Authentication guidance for REST APIs
+    href: /vsts/integrate/get-started/authentication/authentication-guidance
   - name: Visual Studio Team Services Data Protection Overview
     href: https://www.visualstudio.com/articles/team-services-security-whitepaper

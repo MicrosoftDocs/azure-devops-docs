@@ -213,7 +213,6 @@ Work Item Tracking <br/>
 <li>**[TypeDefinitions](add-wit-definitions-process-template.md)**: Defines the 15 or more work item type XML definition files contained within the TypeDefinition folder. The definitions differ depending on the process template selected. </li>
 <li>**[Work items](add-work-item-instance-process-template.md)**: Defines one or more work items. No definitions are defined within the default process templates. 
 <blockquote>
-![](../../_img/icons/note-icon.png)<br/>
 Support for work item instances isn't supported for Hosted XML.</blockquote></li>
 </ul> 
 
@@ -234,4 +233,4 @@ The schema definition for process templates uses a mix of camel-case and all cap
 -  [Choose a process or process template](../../guidance/choose-process.md)   
 -  [Customize a process template](customize-process.md)  
 -  [Customize your work tracking experience](../../customize/customize-work.md)
--  [Testing overview](/vsts/test/index)
+-  [Testing overview](/vsts/manual-test/index)

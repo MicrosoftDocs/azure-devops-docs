@@ -49,23 +49,19 @@ Use the guidance provided in the following topics based on the process model or 
     - [Customize a process template](/vsts/work/reference/process-templates/customize-process?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )  
 
 ## Reference  
-
-- [Changes made to process templates](/vsts/work/guidance/changes-to-process-templates?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json ) 
-- [Work item field index](/vsts/work/guidance/work-item-field?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )     
+  
 - [Index to XML element reference](/vsts/work/reference/xml-element-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )  
-- [All WITD XML elements reference](/vsts/work/reference/all-witd-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )  
-- [All FIELD XML elements reference](/vsts/work/reference/all-field-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )  
-- [All WORKFLOW XML elements reference](/vsts/work/reference/all-workflow-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )  
-- [All FORM XML elements reference](/vsts/work/reference/all-form-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )  
-- [WebLayout and Control elements](/vsts/work/reference/weblayout-xml-elements?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json ) 
-- [Categories XML element reference](/vsts/work/reference/categories-xml-element-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )  
-- [Process configuration XML element reference](/vsts/work/reference/process-configuration-xml-element?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json ) 
-- [witadmin command line tool](/vsts/work/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json )   
+- [All WITD XML elements reference](/vsts/work/reference/all-witd-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)  
+- [All FIELD XML elements reference](/vsts/work/reference/all-field-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)  
+- [All WORKFLOW XML elements reference](/vsts/work/reference/all-workflow-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)   
+- [WebLayout and Control elements](/vsts/work/reference/weblayout-xml-elements?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) 
+- [Process configuration XML element reference](/vsts/work/reference/process-configuration-xml-element?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) 
+
  
 ## Reference   
 - [Work items](/vsts/work/work-items/index)
 - [Scale & configure teams](/vsts/teams/index)
 - [Account Management (VSTS)](/vsts/accounts/index)
 - [TFS Server Administration](/vsts/tfs-server/index)
-- [Marketplace extensions](/vsts/marketplace/get-vsts-extensions)
+- [Marketplace extensions](/vsts/marketplace/install-vsts-extension)
 - [Extensibility and REST APIs](/vsts/extend/overview) 

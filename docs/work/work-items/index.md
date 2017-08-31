@@ -47,7 +47,7 @@ Track the features and requirements you're developing, code defects or bugs, and
 - [Use #ID to link to work items](/vsts/notifications/add-links-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 - [Use work item form controls](/vsts/work/concepts/work-item-form-controls?toc=/vsts/work/work-items/toc.json)
 - [Add tags to work items](/vsts/work/track/add-tags-to-work-items?toc=/vsts/work/work-items/toc.json)
-- [Use work item templates](/vsts/work/productivity/work-item-template?toc=/vsts/work/work-items/toc.json)
+- [Use work item templates](/vsts/work/backlogs/work-item-template?toc=/vsts/work/work-items/toc.json)
 - [Go mobile](/vsts/collaborate/mobile-work?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)  
 - [Email/print work items](../how-to/email-work-items.md)      
 - [Bulk add or modify (Excel)](/vsts/work/office/bulk-add-modify-work-items-excel?toc=/vsts/work/work-items/toc.json)
