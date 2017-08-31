@@ -8,7 +8,7 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: routlaw
-ms.date: 08/10/2017
+ms.date: 08/29/2017
 ---
 
 # Get started with Git from the command line
@@ -22,7 +22,7 @@ The instructions below use the default bash shell used on Linux and Mac OS X, bu
 ## Download and install Git
 
 * [Windows](#windows)
-* [macOS X](#macos-x)
+* [macOS](#macos)
 * [Linux and Unix](#linux-and-unix)
 
 ### Windows
@@ -30,7 +30,7 @@ The instructions below use the default bash shell used on Linux and Mac OS X, bu
 Download and install [Git for Windows](https://git-scm.com/download/win) , which includes the [Git Credential Manager](set-up-credential-managers.md) to 
 easily connect to VSTS. 
 
-### macOS X
+### macOS
 
 Use [Homebrew](http://brew.sh/) to install and set up Git.
 

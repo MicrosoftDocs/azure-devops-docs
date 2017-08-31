@@ -8,7 +8,7 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/24/2017
+ms.date: 08/30/2017
 ---
 
 # Visual Studio Team Services Plugin for IntelliJ IDEA and Android Studio
@@ -32,7 +32,7 @@ To complete the steps in this guide you need:
   * To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linix](set-up-credential-managers.md#macos-and-linux).
 
 ## Create a repo
-0. Navigate to your VSTS project by browsing to `https:\\<your account name>.visualstudio.com` and selecting the name of your project. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.
+0. Navigate to your VSTS project by browsing to `https://<your account name>.visualstudio.com` and selecting the name of your project. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.
 
   ![Select project](_img/create-repo-intellij/select-vsts-project.png) 
   

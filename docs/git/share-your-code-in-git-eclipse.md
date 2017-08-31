@@ -8,13 +8,17 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/10/2017
+ms.date: 08/30/2017
 ---
 
 # Share your code in Git using Eclipse
 #### VSTS | TFS 2015 & 2017
 
 Share your Eclipse project with your team in a VSTS/TFS Git repo. If you don’t have a VSTS account, you can [sign up](../accounts/create-account-with-work-school.md) for one for free. Each account includes free, unlimited private Git repositories.
+
+## Prerequisites
+
+* A VSTS account. If you don’t have one, you can [sign up](../accounts/create-account-with-work-school.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 <a name="git"></a>
 
@@ -28,15 +32,14 @@ Share your Eclipse project with your team in a VSTS/TFS Git repo. If you don’t
 
    ![Add the Team Explorer view to Eclipse](_img/share-your-code-in-git-eclipse/add_team_explorer_to_eclipse.png)
 
-## Connect to Team Services
+## Connect to VSTS
 
 0. In the Team Explorer Everywhere view, select **Connect to Team Services or a Team Foundation Server** . 
 
    ![Select Connect to Team Foundation Server to connect your TFS or Team Services account](_img/share-your-code-in-git-eclipse/connect_to_vsts_from_tee.png)
    
-   > If you don't have a Team Services account, select **Sign up for Visual Studio Team Services** to create an account now.
 
-0. If you know your Team Services or Team Foundation Server account URL, select the **Servers...** button under **Connect to a Team Foundation Server or Team Services account** to add your TFS server or account to the drop-down list. 
+0. If you know your VSTS or Team Foundation Server account URL, select the **Servers...** button under **Connect to a Team Foundation Server or Team Services account** to add your TFS server or account to the drop-down list. 
 If you don't know your account information for VSTS, select **Browse Visual Studio Services** and select **Next**.
 
    ![Add Existing Team Project Dialog](_img/share-your-code-in-git-eclipse/tee_existing_team_project.png)
@@ -49,6 +52,7 @@ If you don't know your account information for VSTS, select **Browse Visual Stud
 
 Before you can push your project to VSTS, you need to add it to a local Git repo.
 
+> [!NOTE]
 > If your code is already in a local Git repo, you can skip this step.
 
 0. Right-click your project name in Project Explorer and select **Team, Share Project...** Select **Git** and select **Next**. 
@@ -63,11 +67,9 @@ Before you can push your project to VSTS, you need to add it to a local Git repo
 
 ## Push your project to your VSTS/TFS repo
 
-0. In Team Explorer Everywhere, select **Git Repositories**, then right-click the empty repo you want to push your Eclipse project to and select **Copy Clone URL**.
+0. In Team Explorer Everywhere, select **Git Repositories**, then right-click the empty repo you want to push your Eclipse project to and select **Copy Clone URL**. If you don't have an empty Git repo created in VSTS/TFS yet, you can create one using [these instructions](create-new-repo.md).
 
     ![Copy the Git repo clone URL in Team Explorer Everywhere with a right-click](_img/share-your-code-in-git-eclipse/tee_copy_clone_url.png)
-
-    > If you don't have an empty Git repo created in VSTS/TFS yet, you can create one using [these instructions](create-new-repo.md).
     
 0. In Package Explorer, right-click your project and Select **Team, Push Branch ...** . Paste the clone URL from the clipboard into the **URI** field and select **Next**. Make sure **Configure upstream for push and pull** is selected in the next window and select **Next**.
 
@@ -77,17 +79,22 @@ Before you can push your project to VSTS, you need to add it to a local Git repo
 
 Your project code is now your Team Services Git repo.
 
-## Next steps
-
-> [!div class="nextstepaction"]
-> Learn more about using Git in the [Git tutorial](tutorial/gitworkflow.md) and [create a build](../build-release/apps/java/build-maven.md) for your project code.
-
-
-## Frequently asked questions
+## Troubleshooting
 
 * [What if the Git views for commit and push don't show up?](#what-if-the-git-views-for-commit-and-push-dont-show-up)
 
 ### What if the Git views for commit and push don't show up?
 
 You can [download EGit](http://www.eclipse.org/egit/) to use Git with Eclipse.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Learn more about using Git in the Git tutorial](tutorial/gitworkflow.md)
+
+> [!div class="nextstepaction"]
+> [create a build for your project code](../build-release/apps/java/quick-to-azure.md)
+
+
+
 

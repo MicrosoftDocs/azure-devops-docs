@@ -8,13 +8,18 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/23/2017
+ms.date: 08/30/2017
 ---
 
 # Import a Git repo
 #### VSTS | TFS 2017 Update 1
 
-This guide shows you how to import an existing Git repo from GitHub, BitBucket, GitLab, or other location into a new or empty existing repo in your Team Project. If you don’t have a VSTS account, you can [sign up](../accounts/create-account-with-work-school.md) for one for free. Each account includes free, unlimited private Git repositories.
+This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your Team Project. 
+
+## Prerequisites
+
+* A VSTS account. If you don’t have one, you can [sign up](../accounts/create-account-with-work-school.md) for one for free. Each account includes free, unlimited private Git repositories.
+  * If you are using TFS, you must have TFS 2017 Update 1 or higher.
 
 ## Import into a new repo
 
@@ -59,10 +64,12 @@ If the source Git repository is in a TFS version earlier than TFS 2017 RTM, then
 This happens because of a contract mismatch between latest VSTS/TFS and pre-2017 RTM versions of TFS.
 
 ### Can I use MSA based credentials?
-Unfortunately, MSA based credentials will not work. Import service relies on basic authentication to communicate with the source repository. If the username / password you are using are not basic auth then authentication will fail and import will fail.
-One way to check if the username / password you are using are basic auth or not is to try using git.exe to clone your repository using the below format
+Unfortunately, MSA (Microsoft Account, formerly Live ID) based credentials will not work. Import service relies on basic authentication to communicate with the source repository. If the username / password you are using are not basic auth then authentication will fail and import will fail.
+One way to check if the username / password you are using are basic auth or not is to try using Git to clone your repository using the below format
 
-    `git clone https://<<username>>:<<password>>@<<remaining clone Url>>`
+```
+git clone https://<<username>>:<<password>>@<<remaining clone Url>>
+```
 
 ## Next steps
 
