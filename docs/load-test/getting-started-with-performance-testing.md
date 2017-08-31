@@ -14,7 +14,7 @@ ms.date: 08/12/2016
 <a name="cloudloadtest"></a>
 # Load test your app in the cloud using Visual Studio
 
-[!INCLUDE [version-header-ts](_shared/version-header-ts.md)] 
+[!INCLUDE [version-header-vs-ts](_shared/version-header-vs-ts.md)] 
 
 Check your app or web site's performance before you launch it or deploy updates to production.
 Find problems before your customers do. Start running 

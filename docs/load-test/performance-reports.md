@@ -12,7 +12,7 @@ ms.date: 08/12/2016
 
 # View and compare your load test runs
 
-[!INCLUDE [version-header-ts](_shared/version-header-ts.md)] 
+[!INCLUDE [version-header-vs-ts](_shared/version-header-vs-ts.md)] 
 
 You can review past load test runs or current runs started by 
 anyone on your team, at any time. You can also compare two

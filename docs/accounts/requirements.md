@@ -13,13 +13,13 @@ ms.date: 03/02/2016
 
 # Requirements and compatibility
 
-**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
+**VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 <a name="operating-systems"></a>
 ## Operating systems
 
 TFS can be installed on a Windows server or client operating system.
-TFS 2017 only supports 64-bit operating systems. 
+TFS 2017 and TFS 2018 only support 64-bit operating systems.
 For earlier versions of TFS, you can use either the 32-bit or 64-bit operating systems when a 32-bit version is available. 
 We recommend using a server OS unless your TFS instance is for evaluation or personal use.
 
@@ -27,18 +27,20 @@ We recommend using a server OS unless your TFS instance is for evaluation or per
   
 TFS Version | Supported server operating systems
 ------------|--------------------------------
+TFS 2018    | Windows Server 2016<br/>Windows Server 2012 R2 (Essentials, Standard, Datacenter)<br/>Windows Server 2012 (Essentials, Standard, Datacenter)
 TFS 2017    | Windows Server 2016<br/>Windows Server 2012 R2 (Essentials, Standard, Datacenter)<br/>Windows Server 2012 (Essentials, Standard, Datacenter)<br/>Windows Server 2008 R2 (minimum SP1) (Standard, Enterprise, Datacenter)
 TFS 2015    | Windows Server 2016<br/>Windows Server 2012 R2 (Essentials, Standard, Datacenter)<br/>Windows Server 2012 (Essentials, Standard, Datacenter)<br/>Windows Server 2008 R2 (minimum SP1) (Standard, Enterprise, Datacenter)
 TFS 2013    | Windows Server 2012 R2 (Essentials, Standard, Datacenter)<br/>Windows Server 2012 (Essentials, Standard, Datacenter)<br/>Windows Server 2008 R2 (minimum SP1) (Standard, Enterprise, Datacenter)
 TFS 2012    | Windows Server 2012 R2 (Essentials, Standard, Datacenter)<br/>Windows Server 2012 (Essentials, Standard, Datacenter)<br/>Windows Server 2008 R2 (Standard, Enterprise, Datacenter)<br/>Windows Server 2008 (minimum SP2)<br/>Windows Small Business Server 2011 (Standard, Essentials, Premium Add-On)<br/>Windows Home Server 2011
 TFS 2010    | Windows Server 2008 R2 (Standard, Enterprise, Datacenter)<br/>Windows Server 2008 (minimum SP2)<br/>Windows Server 2003 R2<br/>Windows Server 2003 (minimum SP2)
 
-Don't use the [server core](https://msdn.microsoft.com/library/dd184075.aspx) installation option when you set up Windows Server for TFS. It's not supported.
+The [server core](https://msdn.microsoft.com/library/dd184075.aspx) installation option is supported for TFS 2017 and TFS 2018, but not for earlier versions.
 
 ### Client operating systems
 
 TFS Version | Supported client operating systems
 ------------|--------------------------------
+TFS 2018    | Windows 10 (Professional, Enterprise)
 TFS 2017    | Windows 10 (Home, Professional, Enterprise)<br/>Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
 TFS 2015    | Windows 10 (Home, Professional, Enterprise)<br/>Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
 TFS 2013    | Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
@@ -83,6 +85,7 @@ Use one of the following versions of SQL Server for TFS:
 
 TFS version        | Support SQL Server version
 -------------------|------------------------------------
+TFS 2018           | SQL Server 2017<br/>SQL Server 2016 (minimum SP1)
 TFS 2017 Update 1  | SQL Server 2016 (minimum SP1)<br/>SQL Server 2014<br/>
 TFS 2017           | SQL Server 2016<br/>SQL Server 2014<br/>
 TFS 2015 Update 3  | SQL Server 2016<br/>SQL Server 2014<br/>SQL Server 2012 (minimum SP1)
@@ -141,10 +144,15 @@ We recommend Standard or Enterprise for all other scenarios.
 <a name="sharepoint"></a>
 ## SharePoint
 
+**TFS 2018 discontinues support for the TFS Extension for SharePoint. 
+For more information, go here: 
+[https://go.microsoft.com/fwlink/?linkid=852977](https://go.microsoft.com/fwlink/?linkid=852977).**
+
 SharePoint is a collaboration product is not a TFS requirement, but some teams find SharePoint integration useful. If you want to use SharePoint Products, you must use a supported version that has the TFS extension for SharePoint installed.
 
 TFS version | Supported SharePoint versions
 ------------|------------------------------
+TFS 2018    | No longer supported
 TFS 2017    | SharePoint 2013 (Foundation, Standard, Enterprise)<br/>SharePoint 2010 (Foundation, Standard, Enterprise)
 TFS 2015    | SharePoint 2013 (Foundation, Standard, Enterprise)<br/>SharePoint 2010 (Foundation, Standard, Enterprise)
 TFS 2013    | SharePoint 2013 (Foundation, Standard, Enterprise)<br/>SharePoint 2010 (Foundation, Standard, Enterprise)
@@ -608,6 +616,8 @@ TFS 2010    | Office 2010<br/>Office 2007
 
 ## TFS Build Compatibility
 
+**TFS 2018 discontinues support for the Xaml build system.**
+
 We've built a brand new [scriptable build system](../build-release/overview.md) that's web based and cross-platform.
 
 You may want to use an older version of Build if you plan to continue using the Xaml build system, 
@@ -617,6 +627,7 @@ systems as far back as Windows XP and Windows Server 2003.
 
 TFS Version | Supported Build versions
 ------------|--------------------------
+TFS 2018    | TFS 2018 Build Agent<br/>TFS 2017 Build Agent<br/>TFS 2015 Build Agent
 TFS 2017    | TFS 2017 Build Agent<br/>TFS 2015 Build Agent<br/>TFS 2015 Xaml Controller<br/>TFS 2013 Xaml Controller<br/>TFS 2010 Xaml Controller
 TFS 2015    | TFS 2015 Build Agent<br/>TFS 2015 Xaml Controller<br/>TFS 2013 Xaml Controller<br/>TFS 2010 Xaml Controller
 TFS 2013    | TFS 2013 Xaml Controller<br/>TFS 2012 Xaml Controller<br/>TFS 2010 Xaml Controller
