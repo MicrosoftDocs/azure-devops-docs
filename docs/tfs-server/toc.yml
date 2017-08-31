@@ -223,4 +223,9 @@
     - name: TFSServiceControl
       href: ./command-line/tfsservicecontrol-cmd.md
 - name: Reference
+  items: 
+  - name: Requirement changes in TFS 2017
+    href: requirement-changes-tfs15.md
+  - name: Requirement changes in TFS 2018
+    href: requirement-changes-tfs16.md
 - name: Troubleshooting
