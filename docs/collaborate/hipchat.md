@@ -62,7 +62,7 @@ Now the messages are setup. Go to HipChat and see the messages appear.
 
 ####Q: Can I programmatically create subscriptions?
 
-A: Yes, see details [here](/vsts/integrate/get-started/service-hooks/create-subscription).
+A: Yes, see details [here](../service-hooks/create-subscription.md).
 
 ####Q: Where can I get more information about HipChat?
 

@@ -16,9 +16,11 @@ This example shows the steps before you can add a control to the hub that we cre
 
 1. [Get the Client SDK](https://github.com/Microsoft/vss-sdk) and add it to your project.
 
-	```sdk/scripts/VSS.SDK.js```
+	```
+	sdk/scripts/VSS.SDK.js
+	```
 
-1. Reference the SDK from your HTML page.
+2. Reference the SDK from your HTML page.
 
 	```html
 	<head>

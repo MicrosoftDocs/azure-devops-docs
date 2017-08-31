@@ -18,7 +18,6 @@ The HostDialogService enables you to present a modal dialog to the user and prev
     In contrast to the standard dialog control, a modal dialog presented via the HostDialogService prevents interaction by the user on the entire page, not just within the extension.
 </div>
 
-For the full APIs, see [HostDialogService API](..\reference\client\api\VSS\SDK\Services\Dialogs\HostDialogService.md).
 
 ### Dialog contents
 
@@ -132,8 +131,6 @@ To show the dialog (for example when a user clicks an action on a toolbar or men
         dialogService.openDialog(contributionId, dialogOptions);
     });
 ```
-
-For the full set of available dialog options, see [IHostDialogOptions](../reference/client/api/VSS/References/VSS_SDK_Interfaces/IHostDialogOptions.md)
 
 ### Showing the dialog (advanced) 
 

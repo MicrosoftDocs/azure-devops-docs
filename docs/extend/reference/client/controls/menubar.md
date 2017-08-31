@@ -32,9 +32,3 @@ require(["VSS/Controls", "VSS/Controls/Menus"], function(Controls, MenuBar) {
     var menubar = Controls.create(Menus.MenuBar, container, options);
 });
 ```
-## Options
-
-[!INCLUDE [x](../api/VSS/Controls/_shared/Menus/MenuBarOptions.md)]
-
-## Methods
-[!INCLUDE [x](../api/VSS/Controls/_shared/Menus/Menu.md)]

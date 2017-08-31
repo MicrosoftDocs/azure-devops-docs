@@ -12,7 +12,7 @@ ms.date: 08/23/2016
 
 # Building Visual Studio Team Services  and Team Foundation Server Extensions
 
-You can build custom applications or services that integrate with your Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) accounts by using the [REST APIs](#rest-apis) to make direct HTTP calls, or utilize our [.NET Client Libraries](#.net-client-libraries).
+You can build custom applications or services that integrate with your Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) accounts by using the **REST APIs** to make direct HTTP calls, or utilize our **.NET Client Libraries**.
 
 Along with interacting with VSTS or TFS in your application, you can also integrate with popular third-party services such as Slack or Jenkins.
 
@@ -86,10 +86,6 @@ Check out the quick starts to get you started:
         * [Modal Dialog](reference/client/controls/modaldialog.md)
         * [Splitter](reference/client/controls/splitter.md)
         * [WaitControl](reference/client/controls/waitcontrol.md)
-* TypeScript APIs
-    * [Core client SDK](./reference/client/core-sdk.md)
-    * [Client services](./reference/client/client-services.md)
-    * [REST clients](./reference/client/rest-clients.md)
 
 
 

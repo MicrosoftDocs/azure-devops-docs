@@ -32,10 +32,4 @@ See [Use modal dialog](../../../develop/ui-controls/modaldialogo.md) for basic u
   });
 ```
 
-## Options
 
-[!INCLUDE [x](../api/VSS/Controls/_shared/Dialogs/IModalDialogOptions.md)]
-
-## Methods
-
-[!INCLUDE [x](../api/VSS/Controls/_shared/Dialogs/DialogO.md)]

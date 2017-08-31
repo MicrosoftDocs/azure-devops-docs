@@ -12,8 +12,6 @@ ms.date: 08/04/2016
 
 # UI controls
 
-[!INCLUDE [disclaimer](./api/_data/disclaimer.md)]
-
 - [Grid](./controls/grid.md)
 - [TreeView](./controls/tree.md)
 - [MenuBar](./controls/menubar.md)

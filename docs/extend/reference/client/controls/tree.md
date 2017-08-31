@@ -32,10 +32,3 @@ require(["VSS/Controls", "VSS/Controls/TreeView"], function(Controls, TreeView) 
     var treeview = Controls.create(TreeView.TreeView, container, options);
 });
 ```
-
-## Options
-
-[!INCLUDE [x](../api/VSS/Controls/_shared/TreeView/ITreeOptions.md)]
-
-## Methods
-[!INCLUDE [x](../api/VSS/Controls/_shared/TreeView/TreeViewO.md)]

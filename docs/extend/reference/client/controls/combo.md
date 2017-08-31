@@ -32,11 +32,3 @@ See [Use combo](../../../develop/ui-controls/comboo.md) for basic usage and adva
       var combo = Controls.create(Combos.Combo, container, options);
   });
 ```
-
-## Options
-
-[!INCLUDE [x](../api/VSS/Controls/_shared/Combos/IComboOptions.md)]
-
-## Methods
-
-[!INCLUDE [x](../api/VSS/Controls/_shared/Combos/ComboO.md)]

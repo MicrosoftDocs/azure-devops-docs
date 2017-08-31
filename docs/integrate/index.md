@@ -39,7 +39,6 @@ Check out the quick starts to get you started:
 * [Create service hooks subscriptions programmatically](../service-hooks/create-subscription.md?toc=/vsts/integrate/toc.json)
 
 ## Reference
-* [.NET client libraries reference](https://review.docs.microsoft.com/en-us/vsts-dotnet/api/microsoft.teamfoundation.framework.common?branch=master)
 * [REST API reference](https://review.docs.microsoft.com/en-us/rest/api/vsts/?branch=master)
 * [Service hooks consumers and action reference](../service-hooks/consumers.md?toc=/vsts/integrate/toc.json)
 * [Service hooks events reference](../service-hooks/events.md?toc=/vsts/integrate/toc.json)

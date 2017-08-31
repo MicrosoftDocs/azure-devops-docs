@@ -15,8 +15,8 @@ ms.date: 08/29/2016
 ## Calling REST APIs from your extension
 
 Most extensions have a need to call Visual Studio Team Services REST APIs on behalf of the current user. 
-* If you are using the provided [JavaScript REST clients](../reference/client/rest-clients.md), authentication is automatically handled for you. These clients automatically request an access token from the core SDK and set it in the Authorization header of the request.
-* If you are not using the provided clients, you need to request a token from the [Core SDK](../reference/client/core-sdk.md) and set it in the Authorization header of your request:
+* If you are using the provided `JavaScript REST clients`, authentication is automatically handled for you. These clients automatically request an access token from the core SDK and set it in the Authorization header of the request.
+* If you are not using the provided clients, you need to request a token from the `Core SDK` and set it in the Authorization header of your request:
 
     ```
     VSS.require(["VSS/Authentication/Services"],

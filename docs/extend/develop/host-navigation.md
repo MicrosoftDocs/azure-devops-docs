@@ -16,7 +16,6 @@ The HostNavigationService provides APIs for interacting with the parent host fra
 
 ![example](./_img/hash-browser.png)
 
-For more details, see the [HostNavigationService API](..\reference\client\api\VSS\SDK\Services\Navigation\HostNavigationService.md).
 
 ### Get the current hash value
 
