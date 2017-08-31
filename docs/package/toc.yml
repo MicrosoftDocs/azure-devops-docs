@@ -20,6 +20,18 @@
     href: get-started-maven.md
 - name: How-to Guides
   items:
+  - name: Build
+    items:
+    - name: Build with NuGet
+      href: build/team-build-nuget.md
+    - name: Build with npm
+      href: build/team-build-npm.md
+    - name: Build with Jenkins
+      href: build/jenkins.md
+    - name: Build with Maven
+      href: maven/maven-team-build.md
+    - name: Build with Gradle
+      href: /vsts/package/gradle/pull-package-gradle.md
   - name: Feeds
     items:
     - name: Create a feed
