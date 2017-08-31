@@ -1,6 +1,6 @@
 ---
-title: Q & A for load testing   
-description: Q & A for load testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: FAQs for load testing   
+description: FAQs for load testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-load-test
 ms.service: vsts-testing
@@ -10,21 +10,12 @@ ms.author: ahomer
 ms.date: 07/04/2017
 ---
 
-# Q &amp; A for load testing
+# FAQs for load testing
 
-* [General](#qageneral)
-* [Visual Studio](#qavisualstudio)
-* [Azure portal](#qaazure)
-* [Setting up tests](#set-up-tests)
-* [Apache JMeter tests](#jmeter-tests)
-* [Running and monitoring tests](#run-monitor-tests)
-* [Recording and replaying tests](#recordreplay)
-* [Application Insights](#qaappinsights)
-* [Troubleshooting](#troubleshooting)
-* [Errors](#errors)
+[!INCLUDE [version-header-ts](_shared/version-header-ts.md)] 
 
 <a name="qageneral"></a>
-## General Q &amp; A
+## General
 
 ### Q: How do I learn more about Cloud-based Load Testing?
 
@@ -196,7 +187,7 @@ For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualst
 ----------
 
 <a name="qavisualstudio"></a>
-## Q &amp; A for Visual Studio load testing
+## Visual Studio load testing
 
 ### Q: How can I increase the capacity of my load tests?
 
@@ -234,7 +225,7 @@ For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualst
 ----------
 
 <a name="qaazure"></a>
-## Q &amp; A for Azure load testing
+## Azure load testing
 
 ### Q: Why can't I see my existing VSTS account to run load tests? 
 
@@ -301,7 +292,7 @@ features and services help your team collaborate more easily and deploy continuo
 ----------
 
 <a name="set-up-tests"></a>
-## Q &amp; A for setting up tests
+## Setting up tests
 
 ### Q: Can I have other test types, besides web performance tests, in a load test mix?
 
@@ -381,7 +372,7 @@ add WebDeploy_x64_en-US.msi to Deployment window. The setup.cmd will look like t
 ----------
 
 <a name="jmeter-tests"></a>
-## Q &amp; A for Apache JMeter tests
+## Apache JMeter tests
 
 ### Q: What are the supported JMeter versions?
 
@@ -404,7 +395,7 @@ when you set up the test, and it will be applied when the load test runs.
 ----------
 
 <a name="run-monitor-tests"></a>
-## Q &amp; A for running and monitoring load tests
+## Running and monitoring load tests
 
 ### Q:  Can I use mstest to run load tests with VSTS?
 
@@ -470,7 +461,7 @@ For better performance as you download more reports, use SQL Server.
 ----------
 
 <a name="recordreplay"></a>
-## Q &amp; A for recording and replaying tests
+## Recording and replaying tests
 
 ### Q: Can I simulate actions from different users and data-drive my test?
 
@@ -497,7 +488,7 @@ allows you to run cloud-based load tests. See
 ----------
 
 <a name="qaappinsights"></a>
-## Q &amp; A for Application Insights
+## Application Insights
 
 ### Q: Can I get more detailed profiler information?
 

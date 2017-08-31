@@ -12,17 +12,12 @@ ms.date: 08/12/2016
 
 # View and compare your load test runs
 
+[!INCLUDE [version-header-ts](_shared/version-header-ts.md)] 
+
 You can review past load test runs or current runs started by 
 anyone on your team, at any time. You can also compare two
 test runs to see the gain or loss in performance, and other
 information.
-
-In this example, you'll learn how to:
-
-* [Open a load test in Visual Studio](#openvs)
-* [Open a load test in VSTS](#opents)
-* [Filter and select a load test](#filterselect)
-* [Compare two test runs](#comparetests)
 
 <a name="openvs"></a>
 ## Open a load test in Visual Studio

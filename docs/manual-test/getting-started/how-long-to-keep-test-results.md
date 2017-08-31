@@ -12,7 +12,7 @@ ms.date: 08/12/2016
 
 # Control how long to keep test results in VSTS
 
-<!-- **Visual Studio 2017 | Visual Studio 2015 | TFS 2017 | TFS 2015** -->
+**Visual Studio 2017 | Visual Studio 2015 | TFS 2017 | TFS 2015**
 
 Running tests, especially automated ones, generates lots of data. 
 To keep your test system responsive and performing well,
@@ -80,6 +80,6 @@ set the retention limits at the team project level.
 
 ## See also
 
-*  [Q &amp; A for manual testing](../reference-qa.md#manageresults)
+*  [FAQs for manual testing](../reference-qa.md#manageresults)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

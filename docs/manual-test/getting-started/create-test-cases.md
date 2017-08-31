@@ -19,11 +19,6 @@ meet your users' needs. Organize your test cases by adding test
 cases to test suites. Then choose which testers you want to run 
 the tests.
 
-In this example, you'll learn how to:
-
-* [Create test cases](#createcase)
-* [Assign testers](#assigncase)
-
 <a name="createcase"></a>
 ## Create test cases
 
@@ -71,7 +66,7 @@ In this example, you'll learn how to:
 
 ## See also
 
-*  [Q &amp; A for manual testing](../reference-qa.md#testcases)
+*  [FAQs for manual testing](../reference-qa.md#testcases)
 
 ##  Next step
 

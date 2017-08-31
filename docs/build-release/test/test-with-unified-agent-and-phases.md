@@ -11,7 +11,7 @@ ms.date: 08/12/2016
 
 # Testing with unified agents and phases
 
-<!-- [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] -->
+[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
 
 Version 2 of the **Visual Studio Test** task uses the unified Build and Release
 agent, instead of a different custom agent as was the case with version 1.
@@ -133,7 +133,7 @@ for different purposes separately if required.
 
 ![Configuring the release definition with two phases for distributed tests](_img/test-with-unified-agent-and-phases/distributed-tests.png)
 
-## Q & A
+## FAQs
 
 <a name="use-build"></a>
 ### Q: How do I do this with Build? 

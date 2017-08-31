@@ -12,14 +12,10 @@ ms.date: 08/12/2016
 
 # Run URL-based load tests with VSTS
 
+[!INCLUDE [version-header-ts](_shared/version-header-ts.md)] 
+
 You can run a load test on your web app or site directly
 using Visual Studio Team Services (VSTS).
-
-In this example, you'll learn how to:
-
-* [Prepare your environment](#prepareenvir)
-* [Run a URL-based load test](#runtests)
-* [View the results of the load test](#viewresults)
 
 <a name="prepareenvir"></a>
 ## Prepare your environment

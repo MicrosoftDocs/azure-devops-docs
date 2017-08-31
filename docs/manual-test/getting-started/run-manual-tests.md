@@ -17,11 +17,6 @@ using Microsoft Test Runner. If you find an issue when testing,
 use Test Runner to create a bug. Test steps, screenshots, and comments 
 are automatically included in the bug. 
 
-In this example, you'll learn how to:
-
-* [Run tests for web apps](#run-web)
-* [Run tests for desktop apps](#run-desktop)
-
 > You just need [Basic access](https://www.visualstudio.com/team-services/compare-features/) 
 to run tests that have been assigned to you with Visual Studio Team Services (VSTS). 
 Learn more about the [access](https://www.visualstudio.com/pricing/visual-studio-online-pricing-vs) 
@@ -112,7 +107,7 @@ However, if you want to collect more types of data, run your tests using
 
 ## See also
 
-*  [Q &amp; A for manual testing](../reference-qa.md#runtests)
+*  [FAQs for manual testing](../reference-qa.md#runtests)
 
 ## Next step
 

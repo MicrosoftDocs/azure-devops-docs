@@ -11,7 +11,7 @@ ms.date: 08/12/2016
 
 # Associate automated tests with test cases
 
-<!-- **Visual Studio 2017 | [Previous version](https://msdn.microsoft.com/en-us/library/dd380741%28v=vs.110%29.aspx)** -->
+**Visual Studio 2017 | [Previous version](https://msdn.microsoft.com/en-us/library/dd380741%28v=vs.110%29.aspx)**
 
 Consider using Visual Studio to associate automated tests with a test case when:
 

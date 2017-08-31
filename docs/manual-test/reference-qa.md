@@ -1,6 +1,6 @@
 ---
-title: Q & A for manual testing   
-description: Q & A for manual testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: FAQs for manual testing   
+description: FAQs for manual testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
 ms.service: vsts-testing
@@ -10,17 +10,7 @@ ms.author: ahomer
 ms.date: 07/04/2017
 ---
 
-# Q &amp; A for manual testing
-
-* [Creating manual test plans](#testplans)
-* [Creating manual test cases](#testcases)
-* [Running manual tests](#runtests)
-* [Tracking test status](#trackstatus)
-* [Managing test results](#manageresults)
-* [Sharing steps between test cases](#sharesteps)
-* [Repeating a test with different data](#repeatdifferent)
-* [Test &amp; Feedback extension](#tandfext)
-* [Microsoft Test Manager](#mtmqna)
+# FAQs for manual testing
 
 <a name="testplans"></a>
 ## Creating manual test plans

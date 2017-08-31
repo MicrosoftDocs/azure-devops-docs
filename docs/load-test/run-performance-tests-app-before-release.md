@@ -13,6 +13,8 @@ ms.date: 08/12/2016
 
 # Tutorial: Load test your app before release
 
+[!INCLUDE [version-header-ts](_shared/version-header-ts.md)] 
+
 Find performance issues before you release your app by running load tests with with Visual Studio 
 Enterprise using [Cloud-based Load Testing](http://go.microsoft.com/fwlink/?LinkID=317257)
 to provide virtual machines in the cloud that generate the load of many users accessing your web site at the same time.

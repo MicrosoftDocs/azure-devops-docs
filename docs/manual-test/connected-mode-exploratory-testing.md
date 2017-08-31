@@ -27,13 +27,6 @@ This automatically configures the extension based on your access level:
   by the team by choosing the **Provide feedback** link in the email.
   [More details](stakeholder/provide-stakeholder-feedback.md#email).
 
-In this example, you'll learn how to:
-
-* [Connect to VSTS or TFS](#connectvtfs)
-* [Create bugs or tasks](#create-bugs)
-* [Create test cases](#create-testcase)
-* [End your testing session](#endsession)
-
 <a name="connectvtfs"></a>
 ## Connect to VSTS or TFS
 

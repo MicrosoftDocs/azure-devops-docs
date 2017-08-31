@@ -16,12 +16,6 @@ All teams can use the Test &amp; Feedback extension in **Standalone** mode.
 Users don't need a Visual Studio Team Services (VSTS) account 
 or Team Foundation Server connection to use this mode.
 
-In this example, you'll learn how to:
-
-* [Install the extension](#installext)
-* [Create a bug](#createbug)
-* [End your testing session](#endsession)
-
 <a name="testmode"></a>
 ## Start testing in Standalone mode
 

@@ -18,11 +18,6 @@ marketing teams, early adopters, and other stakeholders can use the
 extension to submit bugs or provide feedback and contribute to the 
 quality of your product. 
 
-In this example, you'll learn how to:
-
-* [Install the extension](#installext)
-* [Select an exploratory testing mode](#selectmode)
-
 <a name="installext"></a>
 ## Install the extension
 
@@ -97,7 +92,7 @@ the topic [TF31002: Unable to connect](../../work/reference/error/tf31002-unable
 
 ## See also
 
-*  [Q &amp; A for manual testing](../reference-qa.md#tandfext)
+*  [FAQs for manual testing](../reference-qa.md#tandfext)
 
 ## Next step
 

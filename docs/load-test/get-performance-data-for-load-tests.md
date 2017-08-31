@@ -73,7 +73,7 @@ is causing performance problems.
 
 ## See also
 
-* [Q &amp; A for load testing](reference-qa.md#qaappinsights)
+* [FAQs for load testing](reference-qa.md#qaappinsights)
 * [Load test with Visual Studio](getting-started-with-performance-testing.md) 
 * [Load test with VSTS](get-started-simple-cloud-load-test.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 

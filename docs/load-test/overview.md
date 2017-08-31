@@ -12,9 +12,7 @@ ms.date: 08/12/2016
 
 # Load testing scenarios and capabilities
 
-<!-- **Visual Studio 2017 | Visual Studio 2015 | VSTS | [Previous version](https://msdn.microsoft.com/library/dn250793%28v=vs.120%29.aspx)**   -->
-
-> See also [Manual and exploratory testing](../manual-test/index.md), [Continuous testing](../build-release/test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
+**Visual Studio 2017 | Visual Studio 2015 | VSTS | [Previous version](https://msdn.microsoft.com/library/dn250793%28v=vs.120%29.aspx)**
 
 ![Cloud-based Load Testing](_img/performance-testing/IC838830.png)
 
@@ -87,7 +85,9 @@ Load test your app with hundreds of thousands of users using
 
 * [Performance test your Azure web app under load](app-service-web-app-performance-test.md)
 
->If you prefer to run your tests in a local environment rather
+If you prefer to run your tests in a local environment rather
 than in the cloud, see [Use a lab environment for your devops](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
+
+> See also [Manual and exploratory testing](../manual-test/index.md), [Continuous testing](../build-release/test/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

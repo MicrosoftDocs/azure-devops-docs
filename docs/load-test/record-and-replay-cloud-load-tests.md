@@ -247,7 +247,7 @@ has a detailed example of how dynamic parameters can be identified by inspecting
 
 ## See also
 
-* [Q &amp; A for load testing](reference-qa.md#recordreplay)
+* [FAQs for load testing](reference-qa.md#recordreplay)
 * [Load test with Visual Studio](getting-started-with-performance-testing.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 

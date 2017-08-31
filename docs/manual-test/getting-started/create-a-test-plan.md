@@ -24,12 +24,6 @@ This includes static test suites, requirement-based suites, and
 a test suite if you wish, but using a test suite provides a way to group
 test cases for separate testing scenarios within a single test plan.
 
-In this example, you'll learn how to:
-
-* [Create a test plan](#testplan)
-* [Add a test suite and select backlog items to test](#backlog)
-* [Find a test plan](#findplan)
-
 <a name="testplan"></a>
 ## Create a test plan
 
@@ -90,7 +84,7 @@ Test plans, suites, and test cases are stored in VSTS and TFS as special types o
    
 ## See also
 
-*  [Q &amp; A for manual testing](../reference-qa.md#testplans)
+*  [FAQs for manual testing](../reference-qa.md#testplans)
 
 ##  Next step
 

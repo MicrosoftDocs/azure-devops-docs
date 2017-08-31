@@ -19,13 +19,6 @@ automatically with each build. When your build is
 done, review your test results to start resolving 
 the problems that you find.
 
-In this example, you'll learn how to:
-
-* [Prepare your environment](#beforestart)
-* [Create a build definition](#createbuild)
-* [Start the build](#startbuild)
-* [Review the results](#reviewesults)
-
 <a name="beforestart"></a>
 ## Before you start
 

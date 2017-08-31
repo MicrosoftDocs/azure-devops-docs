@@ -1,6 +1,6 @@
 ---
-title: Q & A for continuous testing   
-description: Q & A for continuous testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: FAQs for continuous testing   
+description: FAQs for continuous testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-continuous
 ms.assetid: F9F85914-C81A-4D9E-80CA-36EC4E8A5677 
@@ -9,11 +9,7 @@ ms.author: ahomer
 ms.date: 08/12/2016
 ---
 
-# Q & A for continuous testing
-
-* [General topics](#gentopics)
-* [Associating tests with test cases](#associate)
-* [Running automated tests from the Test hub](#test-hub)
+# FAQs for continuous testing
 
 <a name="gentopics"></a>
 ## General topics
@@ -72,7 +68,7 @@ ms.date: 08/12/2016
 <a name="qa-stagingslot"></a>
 ### Q: Can I deploy to a staging slot first, and then to production?
 
-A: Yes, you can create additional deployment slots in Azure Web Apps,
+**A**: Yes, you can create additional deployment slots in Azure Web Apps,
 and specify which slot to deploy your app to. If you do not specify a slot,
 the default **Production** slot is used. After you deploy, you can swap an
 app to a different slot using the **Azure App Service Manage** task. See
@@ -100,6 +96,8 @@ If you're running release builds of .cpp unit tests, make sure that you have Win
 * [Configuring Continuous Integration and Continuous Testing with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/17/video-configuring-continuous-integration-and-continuous-testing-with-visual-studio-2015.aspx)
 * [Testing in Continuous Integration and Continuous Deployment Workflows](http://blogs.msdn.com/b/visualstudioalm/archive/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows.aspx)
 * [Integrating Testing Efforts into the DevOps Process with Build vNext and Visual Studio Release Management](https://channel9.msdn.com/Series/ConnectOn-Demand/234)
+
+---------------------
 
 <a name="associate"></a>
 ## Associating tests with test cases
@@ -135,10 +133,12 @@ change the **Work Items | General** setting from the **Tools | Options** menu in
 
 ![Change work item display mode](_img/associate-automated-test-with-test-case/work-item-compatibility.png)
 
+----------------------------
+
 <a name="test-hub"></a>
 ## Running automated tests from the Test hub
 
-#### Q: Can I override the build or environment set at the test plan level for a specific instance of test run?
+### Q: Can I override the build or environment set at the test plan level for a specific instance of test run?
 
 **A:** Yes, you can do this using the **Run with options** command.
 Open the shortcut menu for the test suite in the left column and choose
@@ -158,7 +158,7 @@ Enter the following values in the Run with options dialog and then choose **OK**
 
 ![Configuring the Run with options dialog](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-09a.png)
 
-#### Q: Why use release environments to run tests? 
+### Q: Why use release environments to run tests? 
 
 **A:** Release Management offers a compelling orchestration workflow
 to obtain test binaries as artifacts and run tests. This workflow shares
@@ -172,7 +172,7 @@ and after running tests. Examples include preparing and cleaning test data,
 creating and cleaning configuration files, and more.
 
 <a name="faq-ondemandruns"></a>
-#### Q: How does selecting "Test run" in the Visual Studio Test task version 2 work?
+### Q: How does selecting "Test run" in the Visual Studio Test task version 2 work?
 
 **A:** The Test management sub-system uses the test run object to
 pass the list of tests selected for execution. The test task looks
@@ -185,7 +185,7 @@ and the test run identifiers to the tests that were submitted for
 on-demand test execution. 
 
 <a name="faq-agentmode"></a>
-#### Q: Should the agent run in interactive mode or as a service?
+### Q: Should the agent run in interactive mode or as a service?
 
 **A:** If you are running UI tests such as
 [coded UI](https://docs.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code)
@@ -198,24 +198,24 @@ the agent can be run as a service or in interactive mode. See
 [Deploy an agent on Windows](../../build-release/actions/agents/v2-windows.md),
 and [Agent pools and queues](../../build-release/concepts/agents/pools-queues.md). 
 
-#### Q: Where can I find detailed documentation on how to run Selenium tests?
+### Q: Where can I find detailed documentation on how to run Selenium tests?
 
 **A:** See [Get started with Selenium testing](continuous-test-selenium.md). 
 
-#### Q: What happens if I select multiple configurations for the same test?
+### Q: What happens if I select multiple configurations for the same test?
 
 **A:** Currently, the on-demand workflow is not configuration-aware. 
 In future releases, we plan to pass configuration context to the test
 method and report the appropriate results. 
 
-#### Q: What if I need to download product binaries and test binaries from different builds? Or if I need to obtain artifacts from a source such as Jenkins?
+### Q: What if I need to download product binaries and test binaries from different builds? Or if I need to obtain artifacts from a source such as Jenkins?
 
 **A:** The current capability is optimized for a single team build
 to be tested on-demand using a Release Management workflow.
 We will evaluate support for multi-artifact releases, including
 non-Team Build artifacts such as Jenkins, based on user feedback. 
 
-#### Q: I already have a scheduled testing release definition. Can I reuse the same definition to run test on-demand, or should I create a new definition as shown above? 
+### Q: I already have a scheduled testing release definition. Can I reuse the same definition to run test on-demand, or should I create a new definition as shown above? 
 
 **A:** We recommend you use a separate release definition and environment for on-demand automated testing from the **Test** hub because:
 
@@ -232,7 +232,7 @@ pipeline that contains scheduled testing and deployment to production.
 identifier as an input so that you can trace what triggered the release.
 See [How does selecting "Test run (for on-demand runs)" in the Visual Studio Test task work?](#faq-ondemandruns).
 
-#### Q: Can I trigger these runs and view the results in Microsoft Test Manager?
+### Q: Can I trigger these runs and view the results in Microsoft Test Manager?
 
 **A:** No. MTM will not support running automated tests against Team Foundation
 builds. It only works in the web-based interface for VSTS and TFS.
@@ -240,7 +240,7 @@ All new manual and automated testing product development investments will be
 in the web-based interface. No further development is planned for MTM. See
 [Guidance on Microsoft Test Manager usage](../../manual-test/mtm/guidance-mtm-usage.md).
 
-#### Q: I have multiple testers in my team. Can they run tests from different test suites or test plans in parallel using the same release definition?
+### Q: I have multiple testers in my team. Can they run tests from different test suites or test plans in parallel using the same release definition?
 
 **A:** They can use the same release definition to trigger multiple
 test runs in parallel if:
@@ -271,7 +271,7 @@ from different sources, set this option to
 **Allow only one active deployment at a time**. 
 
 <a name="faq-errors".</a>
-#### Q: What are the typical error scenarios or issues I should look out for if my tests don't run?
+### Q: What are the typical error scenarios or issues I should look out for if my tests don't run?
 
 **A:** Check and resolve issues as follows:
 

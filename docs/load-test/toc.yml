@@ -16,7 +16,7 @@
     href: performance-reports.md
 - name: Tutorials
   items:
-  - name: Run load tests before release
+  - name: Load test before release
     href: run-performance-tests-app-before-release.md
 - name: How-to Guides
   items:
@@ -26,15 +26,9 @@
     href: get-started-jmeter-test.md
   - name: Record and replay tests
     href: record-and-replay-cloud-load-tests.md
-- name: Troubleshooting
-  items:
-  - name: VSTS connectivity
-    href: reference-qa.md#qaconnectts
-  - name: Visual Studio connectivity
-    href: reference-qa.md#troubleshooting
 - name: Reference
   items:
-  - name: "Q & A"
+  - name: FAQs
     href: reference-qa.md
 - name: Resources
   items:
@@ -50,3 +44,9 @@
     href: https://msdn.microsoft.com/library/ee923683%28v=vs.140%29.aspx
   - name: Posts on the ALM blog
     href: https://social.msdn.microsoft.com/Search/en-US?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
+  - name: Manual and exploratory testing
+    href: ../manual-test/index.md
+  - name: Continuous testing
+    href: ../build-release/test/index.md
+  - name: Unit testing
+    href: https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios
