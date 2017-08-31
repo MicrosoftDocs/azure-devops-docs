@@ -7,7 +7,7 @@ ms.technology: vsts-sub-git
 ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
-ms.date: 08/23/2016
+ms.date: 08/29/2016
 ---
 
 #  Frequently Asked Git Questions

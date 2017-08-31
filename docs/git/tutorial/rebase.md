@@ -8,7 +8,7 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/14/2017
+ms.date: 08/29/2017
 ---
 
 #  Apply changes with rebase
@@ -89,7 +89,7 @@ If you hit a conflict, resolve the conflicting files, do a `git add` to stage th
 ## Force push to update your remote branch
 
 > [!WARNING]
-> Avoid trouble: Never force push a branch that others are working on. Only force push branches that you alone work with.
+> Never force push a branch that others are working on. Only force push branches that you alone work with.
 
 After a successful rebase, your local branch will have a different history than your remote branch. You must force push your local branch to update your remote branch.
 

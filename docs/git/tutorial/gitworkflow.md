@@ -8,7 +8,7 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: routlaw
-ms.date: 08/19/2016
+ms.date: 08/29/2016
 ---
 
 #  Learn about version control and Git

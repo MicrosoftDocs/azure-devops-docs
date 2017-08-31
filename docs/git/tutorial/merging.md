@@ -8,7 +8,7 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/14/2017
+ms.date: 08/30/2017
 ---
 
 #  Resolve merge conflicts
@@ -17,7 +17,7 @@ ms.date: 08/14/2017
 
 When you [merge](pulling.md) one branch into another, file changes from commits in one branch can conflict with the changes the other.
 Git attempts to resolve these changes by using the [history](history.md) in your repo to determine what the merged files should look like.
-When it isn't clear how to merge changes, it halts the merge and tells you which files conflict. 
+When it isn't clear how to merge changes, Git halts the merge and tells you which files conflict. 
 
 In this tutorial you learn how to:
 

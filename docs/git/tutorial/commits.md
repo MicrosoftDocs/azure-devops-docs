@@ -8,7 +8,7 @@ ms.service: vsts-code
 ms.topic: get-started-article 
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/14/2017
+ms.date: 08/29/2017
 ---
 
 #  Save work with commits

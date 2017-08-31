@@ -8,7 +8,7 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/14/2017
+ms.date: 08/29/2017
 ---
 
 #  Undo changes
@@ -21,9 +21,6 @@ When undoing changes in Git, first decide what type of changes you are looking t
 - Reset your local branch to a previous commit.
 - Revert changes pushed to a remote branch and shared with others.
 
-> [!WARNING]
-> To avoid trouble, never change the commit history of branches shared with others.
-
 If you just need to make small updates such as to fix a typo or small problem introduced in your last commit, consider [amending your previous commit](commits.md) or fixing the change
 in a new commit instead of any of these other steps. 
 
@@ -31,15 +28,16 @@ In this tutorial you learn how to:
 
 > [!div class="checklist"]
 > * Discard uncommitted changes to a single file
-> * Reset a branch to a previous state
 > * Revert changes in shared commits
+> * Reset a branch to a previous state
+
 
 ## Discard uncommitted changes to a single file
 
 Restore file contents back to a known good version, removing unwanted changes.
 
 > [!WARNING]
->  Avoid trouble: These commands will overwrite your existing file changes.  If you think you might want these changes later, consider [stashing](howto.md#stash) them instead.
+> These commands will overwrite your existing file changes. If you think you might want these changes later, consider [stashing](howto.md#stash) them instead.
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -47,7 +45,7 @@ Visual Studio 2015 &amp; 2017
 
 0. Open up the **Changes** view in Team Explorer.
 0. Under the **Changes** section, find the file that you want to restore to the previous version. If your change is staged, remove it from the **Staged Changes** section by right-clicking and selecting **Unstage**.
-0. Right-click that file and select **Undo Changes**.    
+0. Right-click that file and select **Undo Changes**.
 
     ![Reset a single file with Git in Visual Studio](_img/vs_reset_single_file.gif)
 
@@ -70,40 +68,6 @@ Git will tell you if it is changing a file or swapping between branches in the o
 
 ---
 
-## Reset a branch to a previous state
-
-Use `reset` to bring a branch in your local repository back to the contents of a previous commit. The most common use of the `reset` command is 
-to simply discard all changed files since the last commit and return the files to the state they were in at the most recent commit.
-
-> [!WARNING]
-> Avoid trouble: Don't use `reset` on branches shared with others. Use [revert](undo.md#revert) instead.
-
-# [Visual Studio](#tab/visual-studio)
-
-Visual Studio 2015 & 2017
-
-0. Open up the **Changes** view in Team Explorer. 
-0. Select **Actions** and choose **View History** from the drop-down. 
-0. In the history window that appears, right-click the commit to reset the repo to and select **Reset** from the context menu. 
-0. Choose **Reset and delete changes...**.
-
-    ![Reset a branch from Visual Studio](_img/vs_reset_branch.png)
-
-# [Command Line](#tab/command-line)
-
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git reset --hard HEAD 
-</pre>
-
-The `--hard` part of the command tells Git to reset the files to the state of the previous commit and discard any staged changes. 
-The `HEAD` argument tells Git to reset the local repository to the most recent commit. If you want to reset the repo to a different commit, provide the ID instead of HEAD.
-
----
-
-
-
-A `reset` affects all files in the current branch on the repository, not just those in your current directory. `Reset` only discards changes that haven't 
-been committed yet.
 
 <a name="revert"></a>
 
@@ -133,6 +97,40 @@ These commands will undo the changes made in commit 8437fbaf and create a new co
 
 ---
 
+## Reset a branch to a previous state
+
+Use `reset` to bring a branch in your local repository back to the contents of a previous commit. The most common use of the `reset` command is 
+to simply discard all changed files since the last commit and return the files to the state they were in at the most recent commit.
+
+> [!WARNING]
+> Don't use `reset` on branches shared with others. Use [revert](undo.md#revert) instead.
+
+# [Visual Studio](#tab/visual-studio)
+
+Visual Studio 2015 & 2017
+
+0. Open up the **Changes** view in Team Explorer. 
+0. Select **Actions** and choose **View History** from the drop-down. 
+0. In the history window that appears, right-click the commit to reset the repo to and select **Reset** from the context menu. 
+0. Choose **Reset and delete changes...**.
+
+    ![Reset a branch from Visual Studio](_img/vs_reset_branch.png)
+
+# [Command Line](#tab/command-line)
+
+<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
+&gt; git reset --hard HEAD 
+</pre>
+
+The `--hard` part of the command tells Git to reset the files to the state of the previous commit and discard any staged changes. 
+The `HEAD` argument tells Git to reset the local repository to the most recent commit. If you want to reset the repo to a different commit, provide the ID instead of HEAD.
+
+---
+
+
+
+A `reset` affects all files in the current branch on the repository, not just those in your current directory. `Reset` only discards changes that haven't 
+been committed yet.
 
 
 

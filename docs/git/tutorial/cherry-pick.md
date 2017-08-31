@@ -8,7 +8,7 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/14/2017
+ms.date: 08/29/2017
 ---
 
 # Copy changes with cherry-pick
@@ -19,7 +19,7 @@ Copy commits from one branch to another using cherry-pick. Unlike a merge or reb
 
 Cherry-pick is a great way to tackle these common problems:
 
-- Accidentally committing on the wrong branch. Cherry-pick the commit(s) over to the correct branch and then reset the original branch to the previous commit.
+- Accidentally committing on the wrong branch. Cherry-pick the change(s) over to the correct branch and then reset the original branch to the previous commit.
 - Pulling out a set of commits made in a feature branch so you merge them back to your `master` branch sooner.
 - Porting in specific commits from the `master` branch without rebasing your branch.   
 

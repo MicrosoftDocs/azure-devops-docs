@@ -8,7 +8,7 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/11/2017
+ms.date: 08/29/2017
 ---
 
 # Clone an existing Git repo
@@ -36,7 +36,7 @@ In this tutorial you learn how to:
 >[!TIP]
 > Working from the command line? You can view our video overview using command line steps on [Channel9](https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Create-a-repo-from-the-command-line).
 
-<a name="clone_url" /a>
+<a name="clone_url"></a>
 ## Get the clone URL to your repo
 
 Before you can clone an existing repo, you'll need a URL that points to the existing repo. This URL represents the source of the repo you're going to copy during the clone.

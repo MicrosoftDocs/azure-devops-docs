@@ -8,7 +8,7 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/14/2017
+ms.date: 08/30/2017
 ---
 
 # Ignore file changes with Git
@@ -58,8 +58,7 @@ you can create a empty .gitignore from the command line by navigating to your Gi
 
 ---
 
->[!IMPORTANT]
-> It is strongly recommended to place your .gitignore in the root folder of your repo to prevent confusion.
+Git applies a .gitignore to the folder and any child folders where it's located. We strongly recommended to place your .gitignore in the root folder of your repo to prevent confusion.
 
 ### Customize your .gitignore 
 
