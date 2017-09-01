@@ -7,6 +7,7 @@ ms.author: elbatk
 ms.date: 08/18/2016
 ms.prod: vs-devops-alm
 ms.technology: tfs-on-prem
+ms.topic: get-started-article
 ---
 
 # Install and configure Team Foundation Server

@@ -4,7 +4,6 @@ description: Use npm scopes for private packages in Visual Studio Team Services
 ms.assetid: c88868bd-8101-48f3-b76d-17c858181fda
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
 ms.date: 10/10/2016

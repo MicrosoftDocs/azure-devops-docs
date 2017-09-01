@@ -7,7 +7,8 @@ ms.assetid: BD03B9EE-D4DC-4EDC-B0BF-5C11B34E14C9
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/04/2017
----    
+ms.topic: get-started-article
+---
 
 
 # Add and edit pages in your team project wiki 

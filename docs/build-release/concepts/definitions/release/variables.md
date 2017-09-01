@@ -4,7 +4,6 @@ description: Understand variables in Release Management for Visual Studio Team S
 ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

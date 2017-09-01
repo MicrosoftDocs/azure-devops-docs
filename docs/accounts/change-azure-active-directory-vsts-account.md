@@ -8,6 +8,7 @@ ms.assetid: c687302d-ca34-44ea-8cfb-88fe7330072d
 ms.manager: douge
 ms.author: estfan
 ms.date: 08/04/2016
+ms.topic: get-started-article
 ---
 
 #	VSTS: Change Azure Active Directory (Azure AD) tenant

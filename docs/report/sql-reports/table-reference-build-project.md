@@ -3,7 +3,6 @@ title: Build Project tables | TFS
 description: Query for data about the files and projects that were built and information about those files  
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 3d97e0e9-84ac-4662-84fe-36a38eb463b7
 ms.manager: douge
 ms.author: kaelli

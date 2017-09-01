@@ -4,7 +4,6 @@ description: Working with feeds in Team Build
 ms.assetid: C3D7008E-7C23-49A4-9642-E5906DAE3BAD
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
 ms.date: 11/07/2016

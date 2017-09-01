@@ -1,7 +1,7 @@
 ---
 title: Share your project vision | Team Service  
 description: View or update your project home page to share project vision, objectives, and activity for Visual Studio Team Services (VSTS)  
-ms.topic: get-started-article  
+ms.topic: get-started-article
 ms.technology: collaborate
 ms.prod: vs-devops-alm
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16

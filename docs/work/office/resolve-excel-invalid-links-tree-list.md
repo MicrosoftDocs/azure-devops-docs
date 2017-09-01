@@ -3,7 +3,6 @@ title: Resolve invalid links | VSTS & TFS
 description: Address invalid link error messages that occur when publishing an Excel tree list to VSTSor Team Foundation Server (TFS) 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: office
 ms.assetid: f2250e37-5150-4546-81b8-4ec8023046c2
 ms.manager: douge
 ms.author: kaelli

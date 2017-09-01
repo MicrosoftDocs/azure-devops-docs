@@ -3,7 +3,6 @@ title: Add work items | TFS
 description: Add work items to plan and manage a software project when connected to a team project in Team Foundation Server  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
-ms.topic: get-started-article  
 ms.assetid: 982891A4-A875-478D-AD37-5A0915D11E00  
 ms.manager: douge
 ms.author: kaelli

@@ -3,7 +3,6 @@ title: Tab XML element reference | VSTS & TFS
 description: Uses to cluster a group of fields or to support one or more special controls.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: fe932d65-20d4-46ab-aca0-f4a8423929b4
 ms.manager: douge
 ms.author: kaelli

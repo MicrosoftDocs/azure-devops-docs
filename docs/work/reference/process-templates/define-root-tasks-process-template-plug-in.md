@@ -3,7 +3,6 @@ title: Define the root process template tasks | VSTS & TFS
 description: Add, remove, define, or change the sequence in which process template plug-in files are processed 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: ac935b0b-09b3-4aed-9f3a-08190feb92e2
 ms.manager: douge
 ms.author: kaelli

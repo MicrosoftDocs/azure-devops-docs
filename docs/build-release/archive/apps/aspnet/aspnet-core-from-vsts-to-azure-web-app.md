@@ -12,7 +12,6 @@ ms.service: vsts
 ms.workload: web
 ms.tgt_pltfrm: na
 ms.devlang: dotnetcore
-ms.topic: get-started-article
 ms.date: 06/24/2017
 ms.author: alewis
 ms.custom: mvc

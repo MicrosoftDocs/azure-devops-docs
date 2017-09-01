@@ -3,7 +3,6 @@ title: Resolve errors received when configuring features | VSTS & TFS
 description: Occurs when definitions in the team project conflict with definitions in the process templates uploaded to your team project collection.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: abab1c67-6aa8-494b-86ee-3bc97c650429
 ms.manager: douge
 ms.author: kaelli

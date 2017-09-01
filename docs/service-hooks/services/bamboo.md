@@ -7,7 +7,6 @@ ms.assetid: a5cb1028-9b46-4106-9fdd-5b8059b4dedd
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
-ms.topic: get-started-article
 ---
 
 # Bamboo with Visual Studio Team Services

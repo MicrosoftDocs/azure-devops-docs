@@ -3,7 +3,6 @@ title: Assign conditional-based values and rules | VSTS & TFS
 description: Syntax and usage for WHEN, WHENNOT, WHENCHANGED, and WHENNOTCHANGED elements that define rules and values that are run conditionally - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 7975a8a3-6fa1-43c1-b32b-0bbb9bb336af
 ms.author: kaelli
 ms.manager: douge

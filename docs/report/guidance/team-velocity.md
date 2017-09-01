@@ -7,6 +7,7 @@ ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB
 ms.manager: douge
 ms.author: kaelli
 ms.date: 07/12/2017
+ms.topic: get-started-article
 ---
 
 

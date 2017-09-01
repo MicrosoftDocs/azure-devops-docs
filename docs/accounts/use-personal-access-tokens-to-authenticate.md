@@ -1,7 +1,6 @@
 ---
 title: Authenticate access with personal access tokens | Visual Studio Team Services & TFS
 description: Use personal access tokens to authenticate access to Visual Studio Team Services and Team Foundation Server (TFS)
-ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
 ms.service: vsts-admin

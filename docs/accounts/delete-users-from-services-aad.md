@@ -1,7 +1,6 @@
 ---
 title: Delete users from VSTS connected to Azure AD
 description: Delete users from VSTS connected to Azure AD
-ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
 ms.service: vsts-admin

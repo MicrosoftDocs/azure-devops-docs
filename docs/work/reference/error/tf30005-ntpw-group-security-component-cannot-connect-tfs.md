@@ -3,7 +3,6 @@ title: TF30005-The New Team Project Wizard group security component could not co
 description: Occurs when the New Team Project Wizard is unable to connect to the application-tier server {name} while creating a team project.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: eecc6e96-3c39-4cff-aad4-5ab57582ba2e
 ms.manager: douge
 ms.author: kaelli

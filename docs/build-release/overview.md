@@ -7,6 +7,7 @@ ms.assetid: B1233296-C583-4F2E-981C-82D6A39CFEE4
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
+ms.topic: get-started-article
 ---
 
 # Build and Release in VSTS and TFS

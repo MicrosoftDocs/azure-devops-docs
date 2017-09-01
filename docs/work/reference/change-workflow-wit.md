@@ -3,7 +3,6 @@ title: Change the workflow for a work item type | VSTS & TFS
 description: Add States, Transitions, Reasons, or Actions to customize the workflow for a WIT in Team Foundation Server 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: ca8dff64-7ece-46cf-b985-2751480dff32
 ms.author: kaelli
 ms.manager: douge

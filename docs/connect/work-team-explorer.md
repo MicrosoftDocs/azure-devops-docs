@@ -1,7 +1,6 @@
 ---
 title: Work in Team Explorer | Team Service & TFS 
 description: Understand how to navigate when working in Team Explorer for Visual Studio Team Services and Team Foundation Server (TFS) 
-ms.topic: get-started-article  
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02

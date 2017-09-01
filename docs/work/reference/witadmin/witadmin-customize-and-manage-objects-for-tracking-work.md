@@ -3,7 +3,6 @@ title: witAdmin:Customize and manage objects for tracking work | VSTS & TFS
 description: Tracks your team's progress by creating and customizing objects that track work items.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 7853f6db-98c9-4012-b6a5-51618c41d58c
 ms.manager: douge
 ms.author: kaelli

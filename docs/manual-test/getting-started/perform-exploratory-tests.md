@@ -8,6 +8,7 @@ ms.assetid: 1426e139-c7d4-4270-8db7-af7d6da80574
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/12/2016
+ms.topic: get-started-article
 ---
 
 # Install the Test &amp; Feedback extension

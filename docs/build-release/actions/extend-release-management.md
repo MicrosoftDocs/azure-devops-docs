@@ -10,7 +10,7 @@ editor: ''
 ms.assetid: FDA82F19-07FA-4466-AD8C-0229ED1D876C
 ms.service: vsts
 ms.devlang: dotnetcore
-ms.topic: hero-article
+ms.topic: get-started-article
 ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 07/31/2017

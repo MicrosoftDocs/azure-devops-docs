@@ -3,7 +3,6 @@ title: Remove work items permanently | VSTS & TFS
 description: Correct issues for individual work items or bluk modify or remove work items added to the task board.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 345641a1-0c8d-4af8-84ce-37a449627a52
 ms.manager: douge
 ms.author: kaelli

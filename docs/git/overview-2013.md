@@ -2,7 +2,6 @@
 title: Use Visual Studio and Team Foundation Server with Git
 description: Use Visual Studio and Team Foundation Server with Git
 ms.assetid: 0017E2D7-ECD9-44B9-9AF0-8279136E6B9B
-ms.topic: code reference (API)
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
 ms.service: vsts-code

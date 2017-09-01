@@ -3,7 +3,6 @@ title: Key concepts | Team Services & TFS
 description: Understand the key concepts that support the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
-ms.topic: get-started-article  
 ms.assetid: 76ED7BD4-BD95-450F-BA33-649B80C23BE5
 ms.manager: douge
 ms.author: kaelli

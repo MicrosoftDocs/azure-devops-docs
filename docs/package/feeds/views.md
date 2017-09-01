@@ -4,7 +4,6 @@ description: Use release views to communicate the quality of a package to your c
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
 ms.date: 10/27/2016

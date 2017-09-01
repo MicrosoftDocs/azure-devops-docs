@@ -3,7 +3,6 @@ title: Test Result tables | TFS
 description: Query for data about test results 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting 
-ms.topic: sql-reports
 ms.assetid: 0fa44e3e-3033-49e7-a796-eb4fbd12d984
 ms.manager: douge
 ms.author: kaelli

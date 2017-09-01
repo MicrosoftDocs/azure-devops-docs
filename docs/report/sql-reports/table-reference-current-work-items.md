@@ -3,7 +3,6 @@ title: Current Work Item tables | TFS
 description: Query for data about the current state of bugs, task, and other type of work items 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting 
-ms.topic: sql-reports
 ms.assetid: 8f70c31b-1c6f-4d5b-8413-3948a298d879
 ms.manager: douge
 ms.author: kaelli

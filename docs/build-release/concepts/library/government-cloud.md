@@ -4,7 +4,6 @@ description: Understand Azure Government Cloud deployment in Visual Studio Team 
 ms.assetid: 857AB27D-FA16-44DB-B1C4-CBE946A0A1AD
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

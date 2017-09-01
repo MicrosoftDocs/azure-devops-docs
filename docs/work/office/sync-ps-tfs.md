@@ -8,6 +8,7 @@ toc: show
 ms.manager: douge
 ms.author: kaelli
 ms.date: 04/20/2017  
+ms.topic: get-started-article
 ---
 
 # Synchronize TFS with Project Server, third-party support  

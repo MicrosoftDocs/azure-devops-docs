@@ -3,7 +3,6 @@ title: Track bugs | VSTS & TFS
 description: Use the bug work item to describe and track progress for each bug that you find.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: cmmi
 ms.assetid: 87247b22-4919-4507-af64-372f4cc9bd2f
 ms.manager: douge
 ms.author: kaelli

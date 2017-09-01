@@ -1,6 +1,5 @@
 ---
 title: Upgrade TFS
-ms.topic: Overview
 description: Upgrade your instance of Team Foundation Server to the latest version
 ms.prod: vs-devops-alm
 ms.technology: tfs-on-prem

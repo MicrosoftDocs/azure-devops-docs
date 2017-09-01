@@ -5,7 +5,6 @@ ms.assetid: A8EB4B0C-5656-4070-9A0F-488AB8288BBE
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-cod
 ms.service: vsts-collaboration
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
 ms.date: 12/04/2016

@@ -7,6 +7,7 @@ ms.assetid: C444622C-A2CA-4FCF-9E68-90D8D4896E6B
 ms.manager: douge
 ms.author: kaelli
 ms.date: 05/26/2017
+ms.topic: get-started-article
 ---
 
 # Lead time and cycle time control charts

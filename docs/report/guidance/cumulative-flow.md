@@ -7,6 +7,7 @@ ms.assetid: 9A16EDA7-6249-49E1-84A3-FE7550028E9F
 ms.manager: douge
 ms.author: kaelli
 ms.date: 8/22/2017
+ms.topic: get-started-article
 ---
 
 # Configure a cumulative flow chart

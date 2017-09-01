@@ -7,6 +7,7 @@ ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
 ms.manager: douge
 ms.author: kaelli
 ms.date: 04/11/2017
+ms.topic: get-started-article
 ---
 
 # Forecasting

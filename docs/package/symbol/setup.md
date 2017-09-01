@@ -3,7 +3,6 @@ title: Use Symbol Server in Team Services
 description: Use the Symbol Server feature in Visual Studio Team Services to make debugging easier
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: dandanhe
 ms.date: 07/04/2017

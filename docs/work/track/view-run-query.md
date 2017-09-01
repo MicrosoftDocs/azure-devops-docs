@@ -4,7 +4,7 @@ description: View a list of queries or run a query using Visual Studio Team Serv
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-agile-wit
 ms.assetid:  
-ms.topic: get-started-article 
+ms.topic: get-started-article
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/29/2017  

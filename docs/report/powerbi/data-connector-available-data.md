@@ -3,7 +3,6 @@ title: Data available in Power BI | VSTS
 description: Learn about what data is available in the Power BI content pack for Visual Studio Team Services (VSTS)  
 ms.technology: vs-devops-reporting
 ms.prod: vs-devops-alm
-ms.topic: get-started-article  
 ms.assetid: 8E92B372-B312-4BAD-960A-B3CB0202E2A1  
 ms.manager: douge
 ms.author: stansw

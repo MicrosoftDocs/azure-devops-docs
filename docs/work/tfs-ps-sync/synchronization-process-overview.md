@@ -7,6 +7,7 @@ ms.assetid: a34c054a-1361-43ce-962e-bf29ce04ffb2
 ms.manager: douge
 ms.author: kaelli
 ms.date: 04/05/2017
+ms.topic: get-started-article
 ---
 # Synchronization process overview for TFS-Project Server integration
 

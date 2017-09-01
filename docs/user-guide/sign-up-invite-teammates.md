@@ -3,7 +3,7 @@ title: Sign up and invite teammates | Team Services
 description: Quickstart guide to signing up and inviting others to join a team project in VSTS 
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
-ms.topic: get-started-article  
+ms.topic: get-started-article
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli

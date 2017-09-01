@@ -3,7 +3,6 @@ title: WebpageControlOptions XML elements reference | VSTS & TFS
 description: Syntax and usage for the WebpageControlOptions to display content defined for a Web page or within a CDATA tag on a work item form.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: affebf93-892c-4bce-9ad0-cbdc98410d61
 ms.manager: douge
 ms.author: kaelli

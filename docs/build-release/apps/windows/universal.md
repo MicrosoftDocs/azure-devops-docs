@@ -7,6 +7,7 @@ ms.assetid: E3E15C22-3211-4FCC-A10C-5717EA8B116E
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
+ms.topic: get-started-article
 ---
 
 # Build your Universal Windows Platform app

@@ -1,7 +1,6 @@
 ---
 title: Using the Administrator Portal | Visual Studio Marketplace
 description: How to use the Visual Studio Subscriptions Administrator portal to manage subscriptions
-ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-billing
 ms.service: vsts-admin

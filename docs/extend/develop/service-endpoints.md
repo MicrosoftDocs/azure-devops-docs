@@ -8,7 +8,6 @@ ms.assetid: ad0ea9de-620e-4605-8fcd-3c1443b26d8c
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/22/2016
-ms.topic: get-started-article
 ---
 
 # Service Endpoints in Team Services

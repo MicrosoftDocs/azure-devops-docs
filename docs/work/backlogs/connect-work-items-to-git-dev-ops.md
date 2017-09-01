@@ -7,6 +7,7 @@ ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/11/2017
+ms.topic: get-started-article
 ---
 
 # Drive Git development from a work item   

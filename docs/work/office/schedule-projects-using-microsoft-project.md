@@ -3,7 +3,6 @@ title: Schedule projects using Microsoft Project | VSTS & TFS
 description: Uses Microsoft Project 2010 to plan team projects, schedule tasks, assign resources, and track changes to data.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: office
 ms.assetid: c8d9ea81-ebde-47e5-b813-473018177aa9
 ms.manager: douge
 ms.author: kaelli

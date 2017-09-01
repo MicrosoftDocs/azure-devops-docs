@@ -3,7 +3,6 @@ title: Analyze and report on test results | TFS
 description: View the measures, dimensions, and attributes that pertain to reporting on tests results and test runs 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 85cbf27b-d908-4fa1-8f72-d9a584922a45
 ms.manager: douge
 ms.author: kaelli

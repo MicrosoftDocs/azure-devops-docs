@@ -4,7 +4,6 @@ description: Use packages from npmjs.com in Visual Studio Team Services via upst
 ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: cajone
 ms.date: 01/30/2017

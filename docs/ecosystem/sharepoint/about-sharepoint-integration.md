@@ -7,6 +7,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/04/17
+ms.topic: get-started-article
 ---
 
 # About SharePoint Integration  

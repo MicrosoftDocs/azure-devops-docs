@@ -8,6 +8,7 @@ toc: show
 ms.manager: douge
 ms.author: aaronha
 ms.date: 08/04/2016
+ms.topic: get-started-article
 ---
 
 # Install TFS on a single server

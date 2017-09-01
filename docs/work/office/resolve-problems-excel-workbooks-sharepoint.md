@@ -3,7 +3,6 @@ title: Resolve problems working with Excel workbooks or SharePoint Server | TFS
 description: Resolve an error that occurs with the integration of SharePoint, TFS, and Excel workbooks 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: office
 ms.assetid: fdb0f881-7ead-45f5-85c0-189a86d29d7a
 ms.manager: douge
 ms.author: kaelli

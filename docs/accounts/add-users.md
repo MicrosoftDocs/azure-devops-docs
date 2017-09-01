@@ -8,6 +8,7 @@ ms.service: vsts-admin
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2017
+ms.topic: get-started-article
 ---
 
 # Add users to a team project

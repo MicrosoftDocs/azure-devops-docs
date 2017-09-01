@@ -3,7 +3,7 @@ title: Use the search box for quick queries | VSTS & TFS
 description: Use the search box to create a query and filter for assigned to, created by, state, or work item type  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-agile-wit
-ms.topic: get-started-article 
+ms.topic: get-started-article
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
 ms.manager: douge
 ms.author: kaelli

@@ -3,7 +3,6 @@ title: TF30330-Team Explorer cannot write to the project list configuration file
 description: Display an error when Team Explorer cannot establish read/write access to the project list configuration file.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: 656c2e1d-3a52-4f1e-a41f-7a794a32ac94
 ms.manager: douge
 ms.author: kaelli

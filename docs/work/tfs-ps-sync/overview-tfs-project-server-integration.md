@@ -7,6 +7,7 @@ ms.assetid: 4ee48675-b05f-49fc-847f-bfd47398c598
 ms.manager: douge
 ms.author: kaelli
 ms.date: 01/12/2017
+ms.topic: get-started-article
 ---
 # Overview of TFS-Project Server integration features  
 

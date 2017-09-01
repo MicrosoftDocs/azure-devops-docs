@@ -3,7 +3,6 @@ title: TF30022-The New Team Project Wizard could not connect to the Windows Shar
 description: The New Team Project Wizard is unable to connect to the server {name} that hosts SharePoint Products while creating a team project.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: dd798fbb-8e24-4a33-91f6-7167138d7414
 ms.manager: douge
 ms.author: kaelli

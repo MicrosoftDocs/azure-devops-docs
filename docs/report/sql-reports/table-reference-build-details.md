@@ -3,7 +3,6 @@ title: Build Details tables | TFS
 description: Query for data about builds, such as the status and quality.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: cbcabf4d-d334-4c17-a003-315e337a49b3
 ms.manager: douge
 ms.author: kaelli

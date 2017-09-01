@@ -7,6 +7,7 @@ ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/15/2017
+ms.topic: get-started-article
 ---
 
 <b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 

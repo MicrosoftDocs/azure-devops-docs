@@ -7,6 +7,7 @@ ms.assetid: c784953f-5faf-43eb-a4a9-080afd9270de
 ms.manager: douge
 ms.author: kaelli
 ms.date: 03/28/17
+ms.topic: get-started-article
 ---
 # Reporting Services Reports
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]

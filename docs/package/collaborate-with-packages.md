@@ -7,6 +7,7 @@ ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
 ms.date: 09/29/2016
+ms.topic: get-started-article
 ---
 
 # Collaborate more and build faster with packages

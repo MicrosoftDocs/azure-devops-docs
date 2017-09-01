@@ -7,6 +7,7 @@ ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
 ms.date: 02/22/2017
+ms.topic: get-started-article
 ---
 
 # Grant permissions to view or create SQL Server reports in TFS

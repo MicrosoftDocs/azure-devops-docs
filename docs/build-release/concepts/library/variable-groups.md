@@ -4,7 +4,6 @@ description: Understand variable groups in Microsoft Release Management for Visu
 ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

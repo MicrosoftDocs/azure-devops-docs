@@ -3,7 +3,6 @@ title: Implement development tasks | VSTS & TFS
 description:  Implements the development task that involves adding the appropriate new functionality to your software - VSTS & TFS
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: cmmi
 ms.assetid: e3345668-394d-419a-b813-8fa68b6b1bfc
 ms.manager: douge
 ms.author: kaelli

@@ -7,7 +7,6 @@ ms.assetid: 2fcfead5-4f59-4b49-b55d-3199919e21c3
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
-ms.topic: get-started-article
 ---
 
 # MyGet with Visual Studio Team Services

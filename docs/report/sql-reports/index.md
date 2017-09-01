@@ -6,7 +6,6 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article 
 ms.date: 08/03/2017
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Add work or school account to MSDN subscription | VSTS
 description: Link work or school account to Visual Studio with MSDN subscriptions for use with VSTS
-ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-billing
 ms.service: vsts-admin

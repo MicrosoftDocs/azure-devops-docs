@@ -12,7 +12,6 @@ ms.service: vsts
 ms.workload: web
 ms.tgt_pltfrm: na
 ms.devlang: aspnet
-ms.topic: get-started-article
 ms.author: alewis
 ms.date: 06/27/2017
 ms.custom: mvc

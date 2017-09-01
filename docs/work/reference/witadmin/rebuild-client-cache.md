@@ -3,7 +3,6 @@ title: Rebuild the client cache | VSTS & TFS
 description: Update the data cache on client computers after certain maintenance operations.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: e110852a-ab93-4259-957e-47c2076c20bb
 ms.manager: douge
 ms.author: kaelli

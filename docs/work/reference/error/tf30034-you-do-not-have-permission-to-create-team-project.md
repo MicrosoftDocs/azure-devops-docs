@@ -3,7 +3,6 @@ title: TF30034-No permissions to create a new team project | VSTS & TFS
 description: Occurs when a user tries to create a team project and doesn't have the required permissions
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: 885f02d8-c070-4709-a34d-c891cad30493
 ms.manager: douge
 ms.author: kaelli

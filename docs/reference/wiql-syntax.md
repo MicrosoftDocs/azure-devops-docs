@@ -4,7 +4,6 @@ description:  Reference syntax for the Work Item Query Language (WIQL) to suppor
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
-ms.topic: reference    
 ms.manager: douge
 ms.author: kaelli
 ms.date: 05/10/2017  

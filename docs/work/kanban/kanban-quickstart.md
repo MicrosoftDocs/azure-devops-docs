@@ -1,7 +1,7 @@
 ---
 title: Kanban quickstart | VSTS & TFS
 description: Plan and track your work using the Kanban board in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.topic: get-started-article  
+ms.topic: get-started-article
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: 4942A638-9888-461E-969D-0BB9B1FE1736

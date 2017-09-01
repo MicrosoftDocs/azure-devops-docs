@@ -3,7 +3,6 @@ title: Change request  field reference (CMMI) | VSTS & TFS
 description: Track change requests for CMMI work items, provide description and reference name - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: cmmi
 ms.assetid: 1b95abfa-a1cb-4ebd-aff2-843cf6eec333
 ms.author: kaelli
 ms.manager: douge

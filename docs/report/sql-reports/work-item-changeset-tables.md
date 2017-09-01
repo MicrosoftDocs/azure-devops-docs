@@ -3,7 +3,6 @@ title: Work Item Changeset tables | TFS
 description: Query for data about work items that are linked to changesets 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting 
-ms.topic: sql-reports
 ms.assetid: 0c017c1e-b19b-40b6-9927-b88b48700976
 ms.manager: douge
 ms.author: kaelli

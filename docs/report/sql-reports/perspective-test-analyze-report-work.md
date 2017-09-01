@@ -3,7 +3,6 @@ title: Analyze work items and test case data | TFS
 description: Analyze current or historical data for work items and test cases by using Work Item perspective   
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting 
-ms.topic: sql-reports
 ms.assetid: c6d0d2da-d63f-4e9c-b92e-50c4605a72ef
 ms.manager: douge
 ms.author: kaelli

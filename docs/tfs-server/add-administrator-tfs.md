@@ -7,6 +7,7 @@ ms.technology: vs-devops-tfs
 ms.manager: douge  
 ms.author: elbatk  
 ms.date: 03/29/2017
+ms.topic: get-started-article
 ---
 
 # Add administrators to TFS

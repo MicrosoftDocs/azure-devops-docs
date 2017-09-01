@@ -4,7 +4,6 @@ description: Consume NuGet packages from Visual Studio Team Services or Team Fou
 ms.assetid: BF919E28-65C2-40E3-8A49-5BF0DA3DE598
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
 ms.date: 08/10/2016

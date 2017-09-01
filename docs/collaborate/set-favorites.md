@@ -7,6 +7,7 @@ ms.assetid: 473E452D-59F7-4F6F-97C6-657ECD99ADCB
 ms.manager: douge
 ms.author: kaelli
 ms.date: 07/22/2017  
+ms.topic: get-started-article
 ---
 
 # Set personal or team favorites    

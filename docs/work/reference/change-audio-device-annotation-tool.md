@@ -3,7 +3,6 @@ title: Change the audio device or annotation tool | VSTS & TFS
 description: Change the default settings used for the annotation tool or audio device - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: f0f5bd2d-5a9a-48e0-a5aa-6ac93453b2bc
 ms.author: kaelli
 ms.manager: douge

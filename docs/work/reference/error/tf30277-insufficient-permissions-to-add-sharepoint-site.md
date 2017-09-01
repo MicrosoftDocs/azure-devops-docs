@@ -3,7 +3,6 @@ title: TF30277-You do not have sufficient permissions on the Windows SharePoint 
 description: Occurs when the permissions are not sufficient to allow the user to create a new SharePoint Services site.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: d78a08a0-5dfc-4152-abf4-32b02ba51d36
 ms.manager: douge
 ms.author: kaelli

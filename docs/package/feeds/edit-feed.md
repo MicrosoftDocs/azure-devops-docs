@@ -4,7 +4,6 @@ description: Edit a feed in Visual Studio Team Services or Team Foundation Serve
 ms.assetid: 83348be7-228b-43d1-8374-6046836ed0f5
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
 ms.date: 10/15/2016

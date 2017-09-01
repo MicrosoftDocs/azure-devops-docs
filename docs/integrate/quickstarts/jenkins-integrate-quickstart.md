@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: elbatk
 ms.date: 06/27/2017
 ms.custom: get-started-article
+ms.topic: get-started-article
 ---
 
 # Integrate Jenkins with Visual Studio Team Services

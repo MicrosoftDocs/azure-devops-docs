@@ -3,7 +3,6 @@ title: Define global lists | TFS
 description: Syntax and usage for the GLOBALLIST elements for defining pick lists used across several team projects and work item types  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
-ms.topic: reference
 ms.assetid: b113865c-c68f-48fa-a467-4a94a8445078
 author: kaelli
 ms.author: kaelli

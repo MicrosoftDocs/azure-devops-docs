@@ -3,7 +3,6 @@ title: Get started with VSTS and TFS | VSTS & TFS
 description: Learn the very basics of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.topic: get-started-article  
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
 ms.manager: douge
 ms.author: kaelli

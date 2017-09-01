@@ -8,7 +8,6 @@ ms.assetid: ff6b9bbf-fb57-469b-8191-922660393a21
 ms.manager: douge
 ms.author: rbansal
 ms.date: 10/10/2016
-ms.topic: get-started-article
 ---
 
 # Add a chart

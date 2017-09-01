@@ -3,7 +3,7 @@ title: Plan and track work | VSTS
 description: Begin planning and tracking work in your new team project on Visual Studio Team Services (VSTS)   
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
-ms.topic: get-started-article  
+ms.topic: get-started-article
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli

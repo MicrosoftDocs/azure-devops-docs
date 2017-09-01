@@ -8,6 +8,7 @@ toc: show
 ms.manager: douge
 ms.author: kaelli
 ms.date: 06/02/2017
+ms.topic: get-started-article
 ---
 
 # Permissions and access for VSTS and TFS 

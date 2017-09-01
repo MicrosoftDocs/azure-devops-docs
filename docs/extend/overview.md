@@ -8,6 +8,7 @@ ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/23/2016
+ms.topic: get-started-article
 ---
 
 # Create a custom extension

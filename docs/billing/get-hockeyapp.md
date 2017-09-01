@@ -1,7 +1,6 @@
 ---
 title: Get HockeyApp - Bring DevOps to mobile app development | Visual Studio Marketplace
 description: Distribute mobile apps for testing, collect user feedback, metrics, and live crash reports for apps on Android, iOS, Mac OS X, and Windows. Add DevOps to your Agile, continuous integration, and continuous delivery workflows in Visual Studio Team Services, GitHub, Jira, Bamboo, Team Foundation Server, and more.
-ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-billing
 ms.service: vsts-admin

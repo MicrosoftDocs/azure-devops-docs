@@ -7,6 +7,7 @@ ms.assetid: 644ee4b7-3653-4943-9809-3d14d4d79c48
 ms.manager: douge
 ms.author: kaelli
 ms.date: 03/09/2017
+ms.topic: get-started-article
 ---
 
 # Configure or redirect process guidance

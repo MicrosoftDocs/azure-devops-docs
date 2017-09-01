@@ -4,7 +4,6 @@ description: Continuous testing with Java in a continuous integration pipeline w
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-continuous
 ms.assetid: 3A1A725F-4E7B-4652-BFD1-FC7C9A248B7B
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/12/2016

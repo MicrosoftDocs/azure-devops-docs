@@ -3,7 +3,6 @@ title: Underlying connection was closed | VSTS & TFS
 description: Occurs when users save work items, check in code merges, or perform other operations on a large number of files.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: 31712682-bbb2-4821-b5a4-dd5eb215d18a
 ms.manager: douge
 ms.author: kaelli

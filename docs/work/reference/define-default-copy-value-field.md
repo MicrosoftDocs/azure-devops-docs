@@ -3,7 +3,6 @@ title: Define default value or copy a value | VSTS & TFS
 description: Syntax and usage for the COPY, DEFAULT, and SERVERDEFAULT elements  
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 35c3fcdb-8399-406d-bb8b-179bb543c9ba
 ms.author: kaelli
 ms.manager: douge

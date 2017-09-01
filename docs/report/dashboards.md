@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article 
+ms.topic: get-started-article
 ms.date: 06/02/2017
 ---
 

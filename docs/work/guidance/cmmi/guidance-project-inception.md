@@ -3,7 +3,6 @@ title: Project inception | VSTS & TFS
 description: Arrange the basic resources of the project in an initial stage.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: cmmi
 ms.assetid: 193eee36-7d2a-4652-b905-7759cc60321e
 ms.manager: douge
 ms.author: kaelli

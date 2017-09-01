@@ -3,7 +3,6 @@ title: XML element index | VSTS & TFS
 description: Index of XML elements used to customize the work tracking experience for Hosted XML and On-premises XML process models for Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: f65e3ae0-817a-413e-b5c3-0ebadc3ba944
 ms.manager: douge
 ms.author: kaelli

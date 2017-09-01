@@ -4,7 +4,6 @@ description: Understand the library in Microsoft Release Management for Visual S
 ms.assetid: 45C5042C-9E31-41F8-B63B-6D5C241EEC21
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

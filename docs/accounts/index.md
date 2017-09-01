@@ -5,7 +5,6 @@ ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
 ms.service: vsts-admin
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
-ms.topic: get started
 ms.manager: douge
 ms.author: estfan
 ms.date: 07/12/2017

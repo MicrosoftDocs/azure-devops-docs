@@ -4,7 +4,6 @@ description: Authenticating to feeds with NuGet in Visual Studio Team Services
 ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
 ms.date: 3/29/2017

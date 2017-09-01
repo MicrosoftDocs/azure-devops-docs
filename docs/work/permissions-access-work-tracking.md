@@ -6,7 +6,6 @@ ms.prod: vs-devops-alm
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article  
 ms.date: 07/13/2017
 ---
 

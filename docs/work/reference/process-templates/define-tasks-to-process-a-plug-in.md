@@ -3,7 +3,6 @@ title: Define the tasks to process a plug-in | VSTS & TFS
 description: Use the tasks element and its child elements to define the artifacts to be uploaded or specific elements to be created for a plug-in - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: af1b9f73-b930-49b6-b6f2-68d691b152aa
 ms.manager: douge
 ms.author: kaelli

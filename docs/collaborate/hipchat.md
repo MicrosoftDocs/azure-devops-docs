@@ -6,7 +6,6 @@ description: Use HipChat with your Visual Studio Team Services account
 ms.assetid: c2d8bdb4-9b30-4d39-b8ad-2a1afc704738
 ms.manager: douge
 ms.author: elbatk
-ms.topic: get-started-article
 ms.date: 08/24/2017 
 ---
 

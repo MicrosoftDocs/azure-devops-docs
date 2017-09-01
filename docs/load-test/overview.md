@@ -8,6 +8,7 @@ ms.assetid: EE700B72-6DE1-4561-BE43-50AB0842FD1F
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/12/2016
+ms.topic: get-started-article
 ---
 
 # Load testing scenarios and capabilities

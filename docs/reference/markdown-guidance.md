@@ -6,7 +6,6 @@ ms.technology: vs-devops-overview
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article 
 ms.date: 07/05/2017
 ---
 

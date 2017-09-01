@@ -8,6 +8,7 @@ toc: show
 ms.manager: douge
 ms.author: douge
 ms.date: 08/04/2016
+ms.topic: get-started-article
 ---
 
 # Configure a backup schedule and plan for Team Foundation Server

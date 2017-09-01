@@ -7,6 +7,7 @@ ms.author: billchi
 ms.date: 08/31/2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs
+ms.topic: get-started-article
 ---
 
 # Configure and manage TFS resources

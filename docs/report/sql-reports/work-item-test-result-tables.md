@@ -3,7 +3,6 @@ title: Work Item Test Result tables | TFS
 description: Use Work Item Test Result tables to query for data about work items that are linked to test results.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting 
-ms.topic: sql-reports
 ms.assetid: 33dbfef7-c17b-4884-9a33-cfc61a1d7cd6
 ms.manager: douge
 ms.author: kaelli

@@ -3,7 +3,6 @@ title: Design the work item form | VSTS & TFS
 description: Place and group fields on the form so that they can support the data entry and workflow processes that will be followed by team members - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 51acfaa1-3c2c-4371-b5da-e43d458bb1f7
 ms.manager: douge
 ms.author: kaelli

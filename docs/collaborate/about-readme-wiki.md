@@ -7,7 +7,8 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 ms.date: 07/05/2017
----    
+ms.topic: get-started-article
+---
 
 
 # About READMEs and Wiki

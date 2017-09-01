@@ -7,6 +7,7 @@ ms.assetid: 4ec7be08-78e4-40be-81ae-4d2d81c49cd0
 ms.manager: douge
 ms.author: kaelli
 ms.date: 05/18/2017 
+ms.topic: get-started-article
 ---
 
 

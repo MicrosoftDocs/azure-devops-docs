@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: stansw
-ms.topic: get-started-article 
+ms.topic: get-started-article
 ms.date: 08/23/2017
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: How to buy cloud-based load testing | VSTS
 description: Buy cloud-based load testing in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
-ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-billing
 ms.service: vsts-admin

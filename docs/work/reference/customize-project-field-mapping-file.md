@@ -3,7 +3,6 @@ title: Customize the Project field mapping file | TFS
 description: Change how specific fields are published from Project to Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: b10f8b41-b790-4793-bfe7-a64f935b20fc
 ms.author: kaelli
 ms.manager: douge

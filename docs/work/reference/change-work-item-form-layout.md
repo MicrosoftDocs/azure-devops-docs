@@ -3,7 +3,6 @@ title: Change the work item form layout | VSTS & TFS
 description: Change the work item form layout be exporting the XML file and modifying the contents of the section - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 73869d51-eaa2-4aad-90f4-3081b8d26963
 ms.author: kaelli
 ms.manager: douge

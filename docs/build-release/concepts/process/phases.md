@@ -4,7 +4,6 @@ description: Understand Build and Release Phases in Visual Studio Team Services 
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

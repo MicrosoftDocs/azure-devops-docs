@@ -3,7 +3,6 @@ title: Pull and build with a Gradle package in VSTS
 description: Pull and build with a Gradle package in VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: douge
 ms.date: 8/9/2017

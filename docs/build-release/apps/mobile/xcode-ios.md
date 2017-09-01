@@ -7,6 +7,7 @@ ms.assetid: e1b5bda1-9cab-4083-a593-36ae52e82b4a
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
+ms.topic: get-started-article
 ---
 
 # Build and Test Xcode Projects

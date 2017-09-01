@@ -3,7 +3,6 @@ title: Customize and manage the test experience | VSTS & TFS
 description: Customize three of the features that are supported - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: a4820ed4-9213-4cfc-99e6-f974382036f8
 ms.author: kaelli
 ms.manager: douge

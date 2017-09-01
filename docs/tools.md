@@ -4,7 +4,6 @@ description: Understand the tools that support connecting with the hosted cloud 
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
 ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
-ms.topic: get-started-article  
 ms.manager: douge
 ms.author: kaelli
 ms.date: 03/02/2017

@@ -7,6 +7,7 @@ ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.manager: douge
 ms.author: alewis
 ms.date: 02/10/2017
+ms.topic: get-started-article
 ---
 
 # Build your ASP.NET 4 app

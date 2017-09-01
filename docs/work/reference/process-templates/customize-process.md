@@ -3,7 +3,6 @@ title: Customize a process template | VSTS & TFS
 description: Define the objects and processes available to you when you create a team project - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 3122f0e7-2ad9-46a1-a65f-32af37c0f444
 ms.author: kaelli
 ms.manager: douge

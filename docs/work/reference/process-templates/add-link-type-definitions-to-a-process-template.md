@@ -3,7 +3,6 @@ title: Add link type definitions to a process template | VSTS & TFS
 description: Define additional types of links that team members can create between work items for a team project - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 803dbff8-fa50-4288-9bfb-dc807f4522bf
 ms.author: kaelli
 ms.manager: douge

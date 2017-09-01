@@ -8,7 +8,6 @@ ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/22/2016
-ms.topic: get-started-article
 ---
 
 # Extend the work item form

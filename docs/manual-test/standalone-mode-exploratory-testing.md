@@ -8,6 +8,7 @@ ms.assetid: 762A75FB-0B6D-47C3-9232-371348D8D529
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/12/2016
+ms.topic: get-started-article
 ---
 
 # Exploratory testing with the Test &amp; Feedback extension in Standalone mode

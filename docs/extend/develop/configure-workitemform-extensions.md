@@ -5,7 +5,6 @@ ms.prod: vs-devops-alm
 ms.contentid: DEC28077-2F52-490D-B87C-48D4785CD597
 ms.technology: vsts-sub-extend
 ms.service: vsts-extend
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: elbatk
 ---

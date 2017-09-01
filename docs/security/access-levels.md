@@ -2,7 +2,6 @@
 title: Access levels | TFS 
 description: Understand how access levels are used to support stakeholder, basic, advanced, or VS Enterprise  
 ms.technology: vs-devops-agile-wit
-ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
 ms.manager: douge

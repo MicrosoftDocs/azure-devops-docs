@@ -4,7 +4,7 @@ description: Understand how notifications or alerts are managed in Visual Studio
 ms.prod: vs-devops-alm
 ms.technology: collaborate
 ms.assetid: 
-ms.topic: get-started-article 
+ms.topic: get-started-article
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/31/2017

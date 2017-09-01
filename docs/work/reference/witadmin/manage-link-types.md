@@ -3,7 +3,6 @@ title: Manage link types | VSTS & TFS
 description: Customize the link types to track related work, dependencies, and changes made over time - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: bf160228-16db-45f2-9f4f-3cda82c62a88
 ms.manager: douge
 ms.author: kaelli

@@ -3,7 +3,6 @@ title: Publish a Gradle package with VSTS
 description: Publish Gradle packages using Visual Studio Team Services (VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: douge
 ms.date: 8/9/2017

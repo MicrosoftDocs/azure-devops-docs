@@ -7,7 +7,6 @@ ms.assetid: 38a3f329-96c5-49a2-a88d-523356c496f0
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
-ms.topic: get-started-article
 ---
 
 # Campfire with Visual Studio Team Services

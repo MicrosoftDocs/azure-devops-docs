@@ -7,6 +7,7 @@ ms.assetid: F6FF6E6B-C9AA-4681-9205-D48C8F29D94B
 ms.manager: douge
 ms.author: kaelli
 ms.date: 05/26/2017
+ms.topic: get-started-article
 ---
 
 # Portfolio management 

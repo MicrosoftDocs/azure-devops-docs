@@ -7,7 +7,6 @@ ms.assetid: ca016666-8e07-42a6-a6c5-09fceba179da
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
-ms.topic: get-started-article
 ---
 
 # Azure Storage Queue

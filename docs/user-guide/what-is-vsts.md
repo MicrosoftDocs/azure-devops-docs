@@ -7,6 +7,7 @@ ms.assetid: 4
 ms.manager: douge
 ms.author: kaelli
 ms.date: 06/22/2017
+ms.topic: get-started-article
 ---
 
 # What is Visual Studio Team Services? 

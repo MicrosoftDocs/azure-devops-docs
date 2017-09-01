@@ -7,6 +7,7 @@ ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.manager: douge
 ms.author: alewis
 ms.date: 05/23/2017
+ms.topic: get-started-article
 ---
 
 # Build your ASP.NET Core app

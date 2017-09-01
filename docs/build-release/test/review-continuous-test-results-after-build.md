@@ -7,6 +7,7 @@ ms.assetid: 9A38578C-3310-4DE3-949F-C302AB545C10
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/12/2016
+ms.topic: get-started-article
 ---
 
 # Review continuous test results after a build

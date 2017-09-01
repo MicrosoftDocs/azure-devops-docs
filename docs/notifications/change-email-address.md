@@ -4,7 +4,7 @@ description: Change the email address used to receive alerts or email  notificat
 ms.prod: vs-devops-alm
 ms.technology: collaborate
 ms.assetid: 
-ms.topic: get-started-article  
+ms.topic: get-started-article
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/31/2017

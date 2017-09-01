@@ -7,7 +7,6 @@ ms.assetid: FA7D521A-4B4A-43A8-8443-F86687B46339
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
-ms.topic: get-started-article
 ---
 
 # Hubot with Visual Studio Team Services

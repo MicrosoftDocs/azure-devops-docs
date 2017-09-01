@@ -7,6 +7,7 @@ ms.assetid: 405eea1b-d607-4cae-a98b-cca50c6ce41e
 ms.manager: douge
 ms.author: kaelli
 ms.date: 12/30/2016
+ms.topic: get-started-article
 ---
 
 # Manage documents and document libraries

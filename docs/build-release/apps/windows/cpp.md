@@ -7,6 +7,7 @@ ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49
 ms.manager: douge
 ms.author: alewis
 ms.date: 12/15/2016
+ms.topic: get-started-article
 ---
 
 # Build your C++ app for Windows

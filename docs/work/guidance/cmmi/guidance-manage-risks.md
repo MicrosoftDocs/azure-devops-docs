@@ -3,7 +3,6 @@ title: Manage risks | VSTS & TFS
 description: Understand how Risk implies the actual outcomes may vary, sometimes significantly, from desired outcomes - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: cmmi
 ms.assetid: 8df2e7de-3a67-4f3d-9abb-3067fa3ddd75
 ms.manager: douge
 ms.author: kaelli

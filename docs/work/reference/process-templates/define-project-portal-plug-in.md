@@ -3,7 +3,6 @@ title: Define the project portal plug-in for a process template | VSTS & TFS
 description: Use the portal plug-in to define the initial document libraries, library structure, and documents of a team project's portal - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 3351a292-1ce5-4573-ac88-b86ad7482ac0
 ms.manager: douge
 ms.author: kaelli

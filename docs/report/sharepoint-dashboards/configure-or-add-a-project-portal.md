@@ -7,6 +7,7 @@ ms.assetid: 63eae10a-b4d6-4ef5-93fd-270d20a8a2cf
 ms.manager: douge
 ms.author: kaelli
 ms.date: 03/09/2017
+ms.topic: get-started-article
 ---
 
 # Configure or add a project portal

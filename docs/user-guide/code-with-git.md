@@ -7,6 +7,7 @@ ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/24/2017
+ms.topic: get-started-article
 ---
 
 # Code with Git  

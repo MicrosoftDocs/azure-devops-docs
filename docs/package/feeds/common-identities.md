@@ -4,7 +4,6 @@ description:  Give teams and builds access to Package Management feeds in Visual
 ms.assetid: 6b806512-b99d-45ab-85dc-cdbc1985f0f8
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
 ms.date: 08/10/2016

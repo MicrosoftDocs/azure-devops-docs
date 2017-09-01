@@ -3,7 +3,6 @@ title: Work Item Category tables | TFS
 description: Query for categories of work items defined in Team Foundation Server  
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting 
-ms.topic: sql-reports
 ms.assetid: ae8ea834-400f-4cda-98d4-a7e612c91cce
 ms.manager: douge
 ms.author: kaelli

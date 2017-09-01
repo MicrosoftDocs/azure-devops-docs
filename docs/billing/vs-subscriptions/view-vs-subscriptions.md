@@ -1,7 +1,6 @@
 ---
 title: View Visual Studio subscriptions assigned to you
 description: View Visual Studio subscriptions assigned to you
-ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-billing
 ms.service: vsts-admin

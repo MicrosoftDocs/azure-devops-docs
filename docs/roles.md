@@ -3,7 +3,6 @@ title: Roles | Team Services & TFS
 description: Understand how our tools and services support the various roles supported in software development when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
-ms.topic: get-started-article  
 ms.assetid: 4600B0D9-3799-4902-814B-F6EC9098C4CE
 ms.manager: douge
 ms.author: kaelli

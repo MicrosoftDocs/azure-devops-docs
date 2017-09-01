@@ -3,7 +3,6 @@ title: TF30015-The New Team Project Wizard could not connect to the specified SQ
 description: The New Team Project Wizard was unable to connect to {name}.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: 97f7dbf0-20f4-4e8d-94d2-403ca581d0a2
 ms.manager: douge
 ms.author: kaelli
