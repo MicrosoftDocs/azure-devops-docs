@@ -6,10 +6,10 @@ ms.prod: vs-devops-alm
 ms.assetid: 9C3231E4-FD2F-4F22-BEA0-C1AA0DE294C6  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/15/2017
+ms.date: 08/31/2017
 ---
 
-#Give feedback using Microsoft Feedback Client
+# Give feedback using Microsoft Feedback Client
 
 
 <b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
@@ -36,13 +36,11 @@ You can skip this procedure if you already have Microsoft Feedback Client instal
 2. Restart your computer.
 
 
-
-
 ### To initiate a feedback session from an email request
 
 1. Open your email request, and then choose the **Start your local feedback session** link
 
-	<blockquote style="font-size: 13px"><b>Note: </b>  If you are viewing the email from an internet-based email client, you might need to copy the address behind the link and paste it into the address bar of your browser.</blockquote>Â Â 
+	<blockquote style="font-size: 13px"><b>Note: </b>  If you are viewing the email from an internet-based email client, you might need to copy the address behind the link and paste it into the address bar of your browser.</blockquote>
 
 	If you're accessing the feedback tool on a remote computer, open the shortcut menu for the **Start your local feedback session** link, and then choose **Copy Hyperlink**. On the remote computer, choose **Start**, choose **Run**, paste the hyperlink into the box, and then choose the **OK** button.
 	
@@ -51,8 +49,7 @@ You can skip this procedure if you already have Microsoft Feedback Client instal
 1. Enter the credentials provided to you for connecting with Team Foundation Server, and then choose the **OK** button.
 
 
-
-## Launch the application ##
+## Launch the application
  
 The feedback tool opens to the Start page. Launch the application by following the instructions provided. 
 
@@ -89,7 +86,8 @@ You can change settings defined for the audio device and annotation tool at any 
 
 1. **To start recording:** Choose one of the icons:**  Screen & Voice**, **Screen only**, or  **Voice only**.   
 
-	<blockquote style="font-size: 13px">**Security Note:Â Â **Unless you stop recording, all steps that you take and remarks that you make while recording screen and voice will be recorded. If you provide sensitive data such as user names and passwords, you will capture this information in the recording. However, you can always delete a recording by deleting the image for the recording session that appears in the feedback tool's text box. </blockquote>Â Â 
+	> [!IMPORTANT]   
+	> **Security Note:** Unless you stop recording, all steps that you take and remarks that you make while recording screen and voice will be recorded. If you provide sensitive data such as user names and passwords, you will capture this information in the recording. However, you can always delete a recording by deleting the image for the recording session that appears in the feedback tool's text box. 
 
 1. **To stop recording**: Choose the **Stop** button.
 
@@ -101,7 +99,7 @@ You can change settings defined for the audio device and annotation tool at any 
  
 You can add text, capture a screenshot, annotate a screenshot, or attach a file as part of your feedback. You can perform these operations while you continue to record your feedback. 
 
-By annotating screenshots, you can indicate corrections or improvements by adding text or images to the screenshot that you captured. By default, Microsoft Paint opens automatically when you open a screenshot image that you captured within the feedback tool. You can also configure another annotation tool to open automatically whenever you capture a screenshot. For more information, see [Change the audio device or annotation tool](https://msdn.microsoft.com/en-us/library/hh561374.aspx).
+By annotating screenshots, you can indicate corrections or improvements by adding text or images to the screenshot that you captured. By default, Microsoft Paint opens automatically when you open a screenshot image that you captured within the feedback tool. You can also configure another annotation tool to open automatically whenever you capture a screenshot. For more information, see [Change the audio device or annotation tool](../reference/change-audio-device-annotation-tool.md).
 
 ![Add Txt Screenshot or File](_img/ALM_FB_StartStopDeleteRecording.png)
 
@@ -152,13 +150,13 @@ After you enter your feedback for each item, you can review, make corrections or
 
 ## Related notes
 
-- You [Initiate a feedback request](get-feedback.md) from the home page of your web portal. 
+- You [Initiate a feedback request](get-feedback.md) from the home page of your web portal or using the Other links widget from a team dashboard.  
 - You can [change the audio device or annotation tool](../reference/change-audio-device-annotation-tool.md) using the Settings icon change settings icon on the Microsoft Feedback Client.  
 - If you access the Microsoft Feedback Client from a remote machine, you can [enable remote audio](../reference/enable-remote-audio-capture.md).  
 - To record audio, you must have an audio recording device configured on your computer. If you access the feedback tool from a remote device, you might have to [enable remote audio capture](../reference/enable-remote-audio-capture.md).  
 
 
-###Requirements to provide feedback 
+### Requirements to provide feedback 
 
 - To provide feedback using the Microsoft Feedback Client you must have security credentials that will allow you to connect to Visual Studio Team Services or an on-premises TFS and have the permissions described in [Give reviewers permissions to provide feedback](give-permissions-feedback.md).  
 - Your computer must meet the system requirements for installing Microsoft Feedback Client. For more information, see the following page on the Microsoft website: [Microsoft Feedback Client Download](https://www.microsoft.com/download/details.aspx?id=40768).  

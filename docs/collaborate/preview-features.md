@@ -89,7 +89,7 @@ With out-of-the-box notifications, users automatically receive notifications for
 * The user has a pull request that is updated  
 * The user has a build that completes  
 
-These subscriptions appear in the new user notifications experience, and users can easily choose to opt out of any of them. To learn more, see [Manage personal notifications](manage-personal-notifications.md). 
+These subscriptions appear in the new user notifications experience, and users can easily choose to opt out of any of them. To learn more, see [Manage personal notifications](../notifications/manage-personal-notifications.md). 
 
 <a id="task-tool-installers">  </a>
 ### Task tool installers

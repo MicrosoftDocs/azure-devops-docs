@@ -19,16 +19,6 @@ ms.date: 02/14/2017
  
 As changes occur to work items, code reviews, pull requests, source control files, and builds, your team can be notified via email. For example, when a high priority work item is assigned to your team's area path, an email can be sent to the team.
 
-In addition, if your team uses an external service to collaborate, you can configure notifications to be sent to these services. These services are supported out of the box:
-
-* [Campfire](./campfire.md)
-* [Flowdock](./flowdock.md)
-* [HipChat](./hipchat.md)
-* [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams)
-* [Slack](./slack.md)
-
-You can also use a third-party service like Zapier to send notifications to hundreds of other services. Learn more about [Zapier and Team Services integration](https://www.visualstudio.com/docs/integrate/get-started/service-hooks/services/zapier).
-
 ## Create a custom email subscription
 
 A subscription lets you control what your team should be notified about and how the team will receive those notifications.

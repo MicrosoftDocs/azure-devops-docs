@@ -117,4 +117,4 @@ From your team context, drag shared queries, builds, and folders to Team favorit
 > [!div class="nextstepaction"]
 > [Work effectively from the account home page](../connect/account-home-pages.md)
 > or
-> [Manage personal notifications](manage-personal-notifications.md)
+> [Manage personal notifications](../notifications/manage-personal-notifications.md)

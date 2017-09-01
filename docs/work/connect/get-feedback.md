@@ -13,9 +13,9 @@ ms.date: 08/15/2017
 
 <b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
->**Feature availability**: For Team Foundation Server (TFS) 2015 or earlier versions, you need to belong to the [Advanced access level](../../security/change-access-levels.md) to request feedback. For Visual Studio Team Services 9VSTS) and TFS 2015.1 or later versions, you can request feedback with a [Basic license](https://www.visualstudio.com/pricing/visual-studio-online-feature-matrix-vs) or [Basic access level](../../security/change-access-levels.md).  
+>**Feature availability**: For Visual Studio Team Services (VSTS) and TFS 2015.1 or later versions, you can request feedback with a [Basic license](https://www.visualstudio.com/pricing/visual-studio-online-feature-matrix-vs) or [Basic access level](../../security/change-access-levels.md). For Team Foundation Server (TFS) 2015 or earlier versions, you need to belong to the [Advanced access level](../../security/change-access-levels.md) to request feedback. 
 >
->In addition, for VSTS, you can now [request feedback from stakeholders for web apps using the Test &amp; Feedback extension](../../manual-test/stakeholder/request-stakeholder-feedback.md). For desktop apps, you must use the feedback request form documented in this topic and stakeholders must reply using the Microsoft Feedback Client. 
+>In addition, you can now [request feedback from stakeholders for web apps using the Test &amp; Feedback extension](../../manual-test/stakeholder/request-stakeholder-feedback.md). For desktop apps, you must use the feedback request form documented in this topic and stakeholders must reply using the Microsoft Feedback Client. 
  
 Once you have working software, you're ready to get feedback from your stakeholders. You can ask reviewers to provide videos, screenshots, type-written comments, and ratings. Their feedback is captured into work items that you can review and use to create a bug or suggest a new backlog item. 
 
@@ -75,7 +75,8 @@ Reviewers launch your application and provide feedback through the free Microsof
 
 	![Screenshot icon and Comment text box on Provide page](_img/ALM_GF_AddScreenshot.png)  
 
-	<blockquote style="font-size: 13px">****Security Note:** Unless you stop recording, everything is recorded&mdash;all steps that you take as well as anything you say. If you provide sensitive data such as user names and passwords, you will capture this information in the recording. However, you can always delete a recording by deleting the image for the recording session that appears in the feedback tool's text box. </blockquote>   
+	> [!NOTE]
+	> **Security Note:** Unless you stop recording, everything is recorded&mdash;all steps that you take as well as anything you say. If you provide sensitive data such as user names and passwords, you will capture this information in the recording. However, you can always delete a recording by deleting the image for the recording session that appears in the feedback tool's text box. </blockquote>   
 
 6. Reviewers can modify or even delete parts of their feedback, such as a recording, before they submit their feedback.
 

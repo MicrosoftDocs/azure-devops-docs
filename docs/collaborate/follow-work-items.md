@@ -82,7 +82,7 @@ You can also view and manage work that you're following from the Account home pa
 
 ## Related notes  
 
-- [Manage personal notifications](manage-personal-notifications.md)  
+- [Manage personal notifications](../notifications/manage-personal-notifications.md)  
 - [Set team notifications](manage-team-notifications.md)  
 - [Set personal or team alerts](../work/track/alerts-and-notifications.md)  
 - [View and update work items via the mobile work item form](mobile-work.md)  

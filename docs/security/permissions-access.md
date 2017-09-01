@@ -287,7 +287,7 @@ The team administrator role supports configuration of team settings. To be added
 
 ## Notifications, alerts, and team collaboration tools 
 
-To manage notifications, see [Manage personal notifications](../collaborate/manage-personal-notifications.md) and [Manage team notifications](../collaborate/manage-team-notifications.md).
+To manage notifications, see [Manage personal notifications](../notifications/manage-personal-notifications.md) and [Manage team notifications](../collaborate/manage-team-notifications.md).
 
 >[!NOTE]  
 >There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](../tfs-server/command-line/tfssecurity-cmd.md#collection-level-permissions).
