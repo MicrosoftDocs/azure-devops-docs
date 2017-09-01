@@ -10,7 +10,7 @@ ms.author: elbatk
 ms.date: 08/23/2016
 ---
 
-# Building Extensions
+# Build Extensions
 
 Extensions are simple add-ons that can be used to customize and extend your DevOps experience with Team Services. 
 They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.
