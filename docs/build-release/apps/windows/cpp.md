@@ -60,7 +60,7 @@ https://github.com/adventworks/cpp-sample
 
 1. In the right panel, select **.NET Desktop**, and then click **Apply**. This template is useful in building most of the Visual Studio solutions including those that contain classic C++ projects.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
 
 1. For the **Default agent queue**:
 
