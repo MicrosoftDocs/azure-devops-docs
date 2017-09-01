@@ -11,6 +11,8 @@ ms.date: 08/12/2016
 
 # Review continuous test results after a build
 
+[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
+
 After your build finishes running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS),
 review your test results to start analyzing any problems that you found.
 

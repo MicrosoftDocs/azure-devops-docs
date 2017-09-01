@@ -12,6 +12,8 @@ ms.date: 06/15/2017
 
 # Get started with Selenium testing in a CI pipeline
 
+[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
+
 Performing user interface testing as part of the
 build process is a great way of detecting
 unexpected changes and need not be difficult. This

@@ -12,7 +12,7 @@ ms.date: 08/12/2016
 
 # Track test status
 
-**Visual Studio 2017 | Visual Studio 2015 | TFS 2017 | TFS 2015 | [Previous version](https://msdn.microsoft.com/library/dn282443%28v=vs.120%29.aspx)**
+[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
 Quickly view the status of your testing using lightweight charts. 
 For example, find out how many test cases are ready to run,

@@ -13,6 +13,9 @@ ms.date: 12/04/2016
 
 # Search
 
+Search makes it easy to locate information across all your projects, from anywhere and any computer or mobile device,
+using just a web browser.
+
 ## 5-Minute Quickstarts
 
 | | |

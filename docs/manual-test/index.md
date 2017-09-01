@@ -12,6 +12,8 @@ ms.date: 08/09/2016
 ---
 
 # Exploratory Testing
+ 
+[!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
 
 Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide rich and powerful
 tools everyone in the team can use to drive quality and collaboration throughout the development process.

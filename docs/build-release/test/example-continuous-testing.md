@@ -11,6 +11,8 @@ ms.date: 08/12/2016
 
 # Continuous integration, test, and deployment tutorial
 
+[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
+
 This tutorial demonstrates how you can use the continuous integration and
 continuous deployment features of Visual Studio Team Services (VSTS) and
 Microsoft Team Foundation Server (TFS) to build, test, and deploy

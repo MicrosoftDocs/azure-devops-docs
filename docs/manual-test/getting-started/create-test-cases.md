@@ -13,6 +13,8 @@ ms.date: 08/14/2016
 
 # Create manual test cases
 
+[!INCLUDE [version-header-ts-tfs](../_shared/version-header-ts-tfs.md)] 
+
 <a name="test-cases"></a>
 Create manual test cases to check that each of the deliverables 
 meet your users' needs. Organize your test cases by adding test 

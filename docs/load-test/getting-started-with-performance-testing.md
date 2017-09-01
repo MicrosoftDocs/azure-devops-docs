@@ -1,6 +1,6 @@
 ---
-title: Load test in the cloud with Visual Studio and Team Services
-description: Performance test your app with cloud-based load tests using Visual Studio and Team Services
+title: Load test in the cloud with VSTS
+description: Performance test your app with cloud-based load tests using Visual Studio and Visual Studio Team Services
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-load-test
 ms.service: vsts-testing
@@ -12,14 +12,14 @@ ms.date: 08/12/2016
 ---
 
 <a name="cloudloadtest"></a>
-# Load test your app in the cloud using Visual Studio
+# Load test your app in the cloud using Visual Studio and VSTS
 
 [!INCLUDE [version-header-vs-ts](_shared/version-header-vs-ts.md)] 
 
 Check your app or web site's performance before you launch it or deploy updates to production.
 Find problems before your customers do. Start running 
 [cloud-based load tests](https://www.visualstudio.com/features/vso-cloud-load-testing-vs) 
-in almost no time with Visual Studio and Team Services (VSTS).
+in almost no time with Visual Studio and Visual Studio Team Services (VSTS).
 
 > This example shows how to execute a load test using Visual 
 Studio. You can also run cloud-based load tests directly using your 

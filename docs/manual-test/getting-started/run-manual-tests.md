@@ -12,6 +12,8 @@ ms.date: 08/12/2016
 
 # Run manual tests
 
+[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
+
 Run your manual tests and record the test results for each test step 
 using Microsoft Test Runner. If you find an issue when testing, 
 use Test Runner to create a bug. Test steps, screenshots, and comments 

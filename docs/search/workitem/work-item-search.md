@@ -13,6 +13,8 @@ ms.date: 12/04/2016
 
 # Search for work items
 
+[!INCLUDE [version-header-shared-vsts-tfs](../_shared/version-header-shared-vsts-tfs.md)]
+
 Work Item Search provides fast and flexible search across all your work items over all projects in an account. 
 
 <a name="start-search"></a>

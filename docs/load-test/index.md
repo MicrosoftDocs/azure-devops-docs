@@ -12,6 +12,8 @@ ms.date: 08/12/2016
 
 # Load Testing
 
+**Visual Studio 2017 | Visual Studio 2015 | VSTS | [Previous version](https://msdn.microsoft.com/library/dn250793%28v=vs.120%29.aspx)**
+
 Load test your app with hundreds of thousands of users using Visual Studio Team Services (VSTS).
 
 ## 5-Minute Quickstarts
