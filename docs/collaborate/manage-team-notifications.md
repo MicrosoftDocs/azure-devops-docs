@@ -59,5 +59,5 @@ A subscription lets you control what your team should be notified about and how 
 
 ## Related topics
 
-- [Manage personal notification settings](./manage-personal-notifications.md)  
+- [Manage personal notification settings](../notifications/manage-personal-notifications.md)  
 
