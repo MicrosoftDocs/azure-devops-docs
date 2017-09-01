@@ -6,13 +6,11 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
-ms.date: 08/10/2016
+ms.date: 09/01/2017
 ---
 
 # Create a feed
 
 **Team Services | TFS 2017**
-
-## Create a package management feed in Team Services or TFS
 
 [!INCLUDE [](../_shared/create-feed.md)]

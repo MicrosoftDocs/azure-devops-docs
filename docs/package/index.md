@@ -18,6 +18,10 @@ Host your NuGet, npm, and Maven packages in **Visual Studio Team Services (VSTS)
 - [Get started with npm](get-started-npm.md)   
 - [Get started with Maven](get-started-maven.md)  
 
+## Videos
+
+[![Package Management 101](_img/index/package-management-101.png)](https://channel9.msdn.com/events/Build/2017/P4110)   [![The Zen of Package Management](_img/index/zen-of-package-management.png)](https://channel9.msdn.com/events/Ignite/Australia-2017/NET324)   [![npm and continuous delivery in Package Management](_img/index/npm-and-continuous-delivery.png)](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/T112)
+
 ## How-To Guides
 
 - [Publish a NuGet package](nuget/publish.md)

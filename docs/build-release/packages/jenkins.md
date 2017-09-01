@@ -46,10 +46,7 @@ The sample project is a simple shared library written in C#.
 
 ## Add the Team Services NuGet tools to your repo
 
-The easiest way to use the Team Services NuGet service is by adding the [Microsoft.VisualStudio.Services.NuGet.Bootstrap package](../nuget/bootstrap-nuget.md) to your project.
-
-[!INCLUDE [vss-pm-bootstrap](../_shared/nuget-bootstrap.md)]
-
+The easiest way to use the Team Services NuGet service is by adding the [Microsoft.VisualStudio.Services.NuGet.Bootstrap package](/vsts/package/nuget/bootstrap-nuget.md) to your project.
 
 ## Create a package from your project
 
@@ -63,7 +60,7 @@ The easiest way to use the Team Services NuGet service is by adding the [Microso
 
 
 ## Set up a feed in Team Services and add it to your project
-* [Create a feed](../feeds/create-feed.md) in your Team Services account called *MyGreatFeed*. Since you're the owner of the feed, you will automatically be able to push packages to it.
+* [Create a feed](/vsts/package/feeds/create-feed.md) in your Team Services account called *MyGreatFeed*. Since you're the owner of the feed, you will automatically be able to push packages to it.
 * Add the URL for the feed you just generated to the nuget.config in the root of your repo.
   * Find the `<packageSources>` section of nuget.config.
   * Just before `</packageSources>`, add a line using this template: `<add key="MyGreatFeed" value="{feed_url}" />`. Change `{feed_url}` to the URL of your feed.

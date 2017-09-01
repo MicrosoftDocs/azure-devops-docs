@@ -6,13 +6,12 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
-ms.date: 10/24/2016
+ms.date: 09/01/2017
 ---
 
 # Unlist or delete a NuGet package
 
-**Availability**<br>
-NuGet Package Management is available with **Visual Studio Team Services** and **TFS 2017 and newer**.
+[!INCLUDE [](../_shared/availability-nuget.md)]
 
 There are two options available to remove a version of a NuGet package from a feed.
 

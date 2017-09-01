@@ -47,7 +47,7 @@ under *Options*.  This is telling Maven to use your customized `settings.xml` an
 <br><br>
 5. In the "Variables" tab of the Build editor, create a new variable, name it **mavenAuthToken**, and paste the auth token inside quotes into the **value** field (see screenshot below).  Then click the **lock** button to make it a secure build variable. 
 
-![mavenAuthToken setting](../_img/mavenauthtoken.png)
+![mavenAuthToken setting](_img/mavenauthtoken.png)
 
 >[!NOTE]
 >Note that this authentication model is not fully secure.  Anyone with access to your build can output your

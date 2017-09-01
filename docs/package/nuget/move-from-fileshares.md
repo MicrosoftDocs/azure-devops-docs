@@ -6,13 +6,12 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
-ms.date: 08/10/2016
+ms.date: 09/01/2017
 ---
 
 # Move your packages to the cloud
 
-**Availability**<br>
-NuGet Package Management is available with **Visual Studio Team Services** and **TFS 2017 and newer**.
+[!INCLUDE [](../_shared/availability-nuget.md)]
 
 Visual Studio Team Services provides hosted NuGet feeds as a service. 
 If you're using NuGet packages as a part of your continuous delivery flow, 
@@ -142,4 +141,4 @@ This is especially helpful for users of Visual Studio 2013 (or earlier) or NuGet
 <a name="integrate-with-your-builds"></a>
 #### Integrate with your builds
 
-Update your builds to ensure they have the right credentials to consume and publish packages in feeds. Team Build has _NuGet Installer_ and _NuGet Publisher_ tasks; see the [Team Build](../build/team-build-nuget.md) page for details. 
+Update your builds to ensure they have the right credentials to consume and publish packages in feeds. See the how-to's for [restoring](/vsts/build-release/packages/nuget-restore.md) and [publishing](/vsts/build-release/packages/nuget-pack-publish.md) packages in Team Build.

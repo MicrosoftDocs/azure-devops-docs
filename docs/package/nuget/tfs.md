@@ -6,13 +6,12 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
-ms.date: 3/29/2017
+ms.date: 09/01/2017
 ---
 
 # Use NuGet or dotnet with Team Foundation Server feeds
 
-**Availability**<br>
-NuGet Package Management is available with [**Visual Studio Team Services**](nuget-exe.md) and **TFS 2017**.
+[!INCLUDE [](../_shared/availability-nuget.md)]
 
 Authentication from command-line clients like `nuget` and `dotnet` is a little different for Team Foundation Server users.
 

@@ -6,14 +6,11 @@ ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
-ms.date: 08/10/2016
+ms.date: 09/01/2017
 ---
 
 # Publish a NuGet package from the command line
 
-**Availability**<br>
-NuGet Package Management is available with **Visual Studio Team Services** and **TFS 2017 and newer**.
-
-## Publish NuGet package
+[!INCLUDE [](../_shared/availability-nuget.md)]
 
 [!INCLUDE [](../_shared/publish.md)]

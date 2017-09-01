@@ -11,7 +11,6 @@ ms.date: 08/10/2016
 
 # Consume NuGet packages in Visual Studio
 
-**Availability**<br>
-NuGet Package Management is available with **Visual Studio Team Services** and **TFS 2017 and newer**.
+[!INCLUDE [](../_shared/availability-nuget.md)]
 
 [!INCLUDE [](../_shared/consume.md)]

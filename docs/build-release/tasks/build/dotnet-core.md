@@ -1,27 +1,21 @@
 ---
-title: NuGet restore, pack, and publish
-description: How to use NuGet packages when building code in Visual Studio Team Services
+title: .NET Core
+description: How to use npm packages when building code in Visual Studio Team Services
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
-ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
+ms.technology: vs-devops-build
+ms.assetid: 1CFB5762-5ABB-4107-BDF0-5079555101DC
 ms.manager: douge
-ms.author: elbatk
-ms.date: 07/05/2017
+ms.author: amullans
+ms.date: 09/01/2017
 ---
 
-# Package: NuGet
+# Build: .NET Core
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
-![](_img/nuget.png) Install and update NuGet package dependencies, or package and publish NuGet packages. 
+![](_img/dotnet-core.png) Build, test, and release .NET Core and .NET Standard projects and create .NET Core and .NET Standard NuGet packages using the `dotnet` command-line tool.
 
-If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
-
-> [!TIP]
-> Looking for help to get started? See the how-to's for [restoring](/vsts/build-release/package/nuget-restore.md) and [publishing](/vsts/build-release/package/nuget-pack-publish.md) packages.
-
-> [!NOTE]
-> Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
+If your .NET Core or .NET Standard build depends on NuGet packages, make sure to add two copies of this step: one with the `restore` command and one with the `build` command.
 
 ## Restore NuGet packages
 
@@ -39,9 +33,9 @@ None
         </tr>
     </thead>
     <tr>
-        <td>Path to solution, packages.config, or project.json</td>
+        <td>Path to project(s)</td>
         <td>
-            Copy the **Solution** argument in your [Visual Studio Build step](../../tasks/build/visual-studio-build.md) and paste it
+            Copy the **Project(s)** argument in your `build` command step and paste it
             here, or create a link using the Link button in the information panel.
         </td>
     </tr>
@@ -85,47 +79,6 @@ None
         </td>
     </tr>
     [!INCLUDE [temp](../_shared/control-options-arguments.md)]
-</table>
-
-### Examples
-
-#### Install NuGet dependencies
-
-You're building a Visual Studio solution that depends on a NuGet feed.
-
-```
-`-- ConsoleApplication1
-    |-- ConsoleApplication1.sln
-    |-- NuGet.config
-    `-- ConsoleApplication1
-        |-- ConsoleApplication1.csproj
-```
-
-
-##### [Build](../../index.md) steps
-
-<table>
-    <tr>
-        <td>![Package: NuGet](_img/nuget.png)<br/>**Package: NuGet**</td>
-        <td>
-            Install your NuGet package dependencies.
-            <ul>
-                <li>Path to solution, packages.config, or project.json: ```**/*.sln```</li>
-                <li>Feeds to use: Feeds in my NuGet.config</li>
-                <li>Path to NuGet.config: ```ConsoleApplication1/NuGet.config```</li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
-        <td>
-            Build your solution.
-            <ul>
-                <li>Solution: ```**\*.sln```</li>
-                <li>Restore NuGet Packages: **(Important)** Make sure this option is cleared.</li>
-            </ul>
-        </td>
-    </tr>
 </table>
 
 ## Pack NuGet packages
@@ -277,125 +230,9 @@ None
     </tr>
 </table>
 
-## End-to-end example
-You want to package and publish some projects in a C# class library to your VSTS feed.
-
-```
-`-- Message
-    |-- Message.sln
-    `-- ShortGreeting
-        |-- ShortGreeting.csproj
-        |-- Class1.cs
-        `-- Properties
-            |-- AssemblyInfo.cs
-    `-- LongGreeting
-        |-- LongGreeting.csproj
-        |-- Class1.cs
-        `-- Properties
-            |-- AssemblyInfo.cs
-```
-
-<a name="prepare"></a>
-
-### Prepare
-
-#### AssemblyInfo.cs
-Make sure your AssemblyInfo.cs files contain the information you want shown in your packages. For example, ```AssemblyCompanyAttribute``` will be shown as the author, and ```AssemblyDescriptionAttribute``` will be shown as the description.
-
-
-#### [Variables](../../concepts/definitions/build/variables.md) tab
-| Name | Value | 
-|---|---|
-|```$(BuildConfiguration)``` | ```release```|
-|```$(BuildPlatform)``` | ```any cpu```|
-
-#### [Options](../../concepts/definitions/build/options.md)
-| Setting | Value | 
-|---|---|
-| Build number format | ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```|
-
-
-### Option 1: publish to Visual Studio Team Services
-1. Make sure you've prepared the build as described [above](#prepare).
-2. If you haven't already, [create a feed](../../../package/feeds/create-feed.md).
-3. Add the following build steps:
-
-<table>
-    <tr>
-        <td>![Package: NuGet](_img/nuget.png)<br/>**Package: NuGet**</td>
-        <td>
-            Install your NuGet package dependencies.
-            <ul>
-                <li>Path to solution, packages.config, or project.json: ```**/*.sln```</li>
-                <li>Feeds to use: Feeds I select here</li>
-                <li>Use packages from NuGet.org: Checked</li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
-        <td>
-            <p>Build your solution.</p>
-            <ul>
-                <li>Solution: ```**\*.sln```</li>
-                <li>Platform: ```$(BuildPlatform)```</li>
-                <li>Configuration: ```$(BuildConfiguration)```</li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td>![Package: NuGet](../package/_img/nuget.png)<br/>**Package: NuGet**</td>
-        <td>
-            <p>Package your projects.</p>
-            <ul>
-                <li>Command: pack</li>
-                <li>Path to csproj or nuspec file(s) to pack: ```**/*.csproj```</li>
-                <li>Configuration to Package: ```Release```</li>
-                <li>Package Folder: ```$(Build.ArtifactStagingDirectory)```</li>
-                <li>Pack options > Automatic package versioning: Use the build number</li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td>![Package: NuGet](../package/_img/nuget.png)<br/>**Package: NuGet**</td>
-        <td>
-            <p>Publish your packages to VSTS.</p>
-            <ul>
-                <li>Command: push</li>
-                <li>Path to NuGet package(s) to publish: ```$(Build.ArtifactStagingDirectory)```</li>
-                <li>Target feed location: This account/collection</li>
-                <li>Target feed: Select your feed</li>
-            </ul>
-        </td>
-    </tr>
-</table>
-
-### Option 2: publish to NuGet.org
-1. Make sure you've prepared the build as described [above](#prepare).
-2. If you haven't already, [register with NuGet.org](https://www.nuget.org/).
-3. Use the steps in the previous section, but substitute the final step for the step shown here.
-
-<table>
-    <tr>
-        <td>![Package: NuGet](../package/_img/nuget.png)<br/>**Package: NuGet**</td>
-        <td>
-            <p>Publish your packages to NuGet.org.</p>
-            <ul>
-                <li>Command: push</li>
-                <li>Path to NuGet package(s) to publish: ```$(Build.ArtifactStagingDirectory)```</li>
-                <li>Target feed location: External NuGet server</li>
-                <li>NuGet server: Create a new [NuGet service endpoint](../../concepts/library/service-endpoints.md#sep-nuget) with your
-                    NuGet.org ApiKey and select it here</li>
-            </ul>
-        </td>
-    </tr>
-</table>
-
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
-
-### Why should I check in a NuGet.Config?
 
 [!INCLUDE [temp](../_shared/nuget-step-qa.md)]
 

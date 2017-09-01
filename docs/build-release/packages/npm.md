@@ -17,9 +17,9 @@ This guide covers the basics of using Team Build to work with npm packages in Pa
 
 This walkthrough assumes that you've already:
 
-- [Set up your npmrc files](../npm/npmrc.md) to point to a Package Management feed
+- [Set up your npmrc files](/vsts/package/npm/npmrc.md) to point to a Package Management feed
 - [Created a build](https://msdn.microsoft.com/Library/vs/alm/build-release/vs/define-build)
-- [Added the correct build service identity](../feeds/common-identities.md) to your feed
+- [Added the correct build service identity](/vsts/package/feeds/common-identities.md) to your feed
 
 ## Install packages at the start of your build
 

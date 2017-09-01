@@ -7,7 +7,7 @@ ms.technology: vs-devops-package
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
-ms.date: 10/27/2016
+ms.date: 09/01/2017
 ---
 
 # Learn about release views for package CI/CD

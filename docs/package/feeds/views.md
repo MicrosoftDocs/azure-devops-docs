@@ -55,9 +55,9 @@ If you have a release process with more steps or differently-named steps, you ca
 
 ## Use release views with continous integration/delivery
 
-Today, you can use the **NuGet Publisher** task in Team Build to automatically version your packages and then promote packages into a release view manually in the PACKAGE hub. In this case, make sure to check the **Include pre-release** button in the Visual Studio NuGet Package Manager extension, even when you're using the `Release` view.
+Today, you can use the **NuGet** task in Team Build to automatically version your packages, then promote packages into a release view manually in the PACKAGE hub. In this case, make sure to check the **Include pre-release** button in the Visual Studio NuGet Package Manager extension, even when you're using the `Release` view.
 
-Soon, we'll be investing in experiences in Team Build and Release Management that will enable you to automate the process of promoting a package through release views. We'll also be updating the **NuGet Publisher** task to version your NuGet packages without using the `-prerelease` component of SemVer. 
+You can also promote packages from a build or release using the [Promote package to Release View](https://marketplace.visualstudio.com/items?itemName=rvo.vsts-promotepackage-task) task from the Marketplace.
 
 ### What about SemVer and `-prerelease`?
 
