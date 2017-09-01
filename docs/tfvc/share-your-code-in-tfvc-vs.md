@@ -148,13 +148,13 @@ Your whole team can work on the code now. All your changes are tracked in versio
 * [I don't see the Configure Workspace link shown in the steps above. What do I do next?](#i-dont-see-the-configure-workspace-link-shown-in-the-steps-above-what-do-i-do-next)
 
 <a name="migrate"></a>
-### My code is somewhere else. Can I migrate it to my TFVC project on Visual Studio Team Services?
+### My code is somewhere else. Can I migrate it to my TFVC project on VSTS?
 
 Yes:
 
  * [Upgrade From Visual SourceSafe](http://msdn.microsoft.com/library/ms253060).
 
- * [Migrate from Team Foundation Server into Visual Studio Team Services](https://www.visualstudio.com/en-us/articles/adopting-vsts).
+ * [Migrate from Team Foundation Server into Visual Studio Team Services](../migrate-to-vsts-from-tfs.md).
 
 <a name="workspace_exists"></a>
 ### I don't see the Configure Workspace link shown in the steps above. What do I do next?

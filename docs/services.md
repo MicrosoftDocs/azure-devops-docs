@@ -167,10 +167,6 @@ There are a number of features and tasks associated with administrating a collab
 - [Software development roles](roles.md)  
 - [Pricing](https://www.visualstudio.com/team-services/pricing/)
 
-### Case studies 
-
-- [Build and Deployment Automation Case Study for World Wide Time Keeping: Higher Quality and Faster Delivery in an Increasingly Agile World](https://www.visualstudio.com/en-us/articles/build-deployment-best-practices)  
-
 
 <!---
 **System Center integration**: Enables a release definition to connect to a System Center Virtual Machine Manager (SCVMM) server to easily provision virtual machines and perform actions on them such as managing checkpoints, starting and **VMware Resource Deployment**: Connect to a VMware vCenter Server from Team Services or TFS to provision, start, stop, or snapshot VMware virtual machines. 

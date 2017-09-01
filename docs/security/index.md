@@ -51,4 +51,4 @@ ms.date: 08/04/2017
 - [Server Administration (TFS)](../tfs-server/index.md)
 - [Billing](../billing/index.md)
 - [Authentication guidance for REST APIs](/vsts/integrate/get-started/authentication/authentication-guidance)
-- [Visual Studio Team Services Data Protection Overview](https://www.visualstudio.com/articles/team-services-security-whitepaper)
+- [Visual Studio Team Services Data Protection Overview](/vsts/security/team-services-security-whitepaper)

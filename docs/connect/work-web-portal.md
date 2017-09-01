@@ -26,7 +26,7 @@ If you don't have a team project yet, create one in [Visual Studio Team Services
 
 
 >[!NOTE]  
->**Feature availability**: The features available to you depend on the platform (VSTS or on-premises TFS), TFS version, features enabled for your team project or collection, and your access level. New features are deployed regularly to Team Services. Many of these features are then made available to [on-premises TFS through regular updates](https://www.visualstudio.com/articles/news/features-timeline).  
+>**Feature availability**: The features available to you depend on the platform (VSTS or on-premises TFS), TFS version, features enabled for your team project or collection, and your access level. New features are deployed regularly to Team Services. Many of these features are then made available to [on-premises TFS through regular updates](/vsts/release-notes/index).  
 
 To get started, from a [supported web browser](../accounts/requirements.md#browsers) enter the following URL:
 

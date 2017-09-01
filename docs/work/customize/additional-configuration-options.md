@@ -18,7 +18,7 @@ Supports the following FWLINK: Additional configuration options are available - 
 <b>TFS 2017 | TFS 2015 | TFS 2013</b>
 
 >[!IMPORTANT]  
->This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on Visual Studio Team Services [update automatically with each service upgrade](https://www.visualstudio.com/articles/news/features-timeline). 
+>This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on Visual Studio Team Services [update automatically with each service upgrade](/vsts/release-notes/index). 
 
 
 After you update your team project with the Configure Features wizard, you have access to the latest features. However, you may need to make some additional configurations or customizations to support your work tracking needs. Also, you have access to some features based on the source control setting selected when your team project was created.  

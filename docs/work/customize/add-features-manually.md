@@ -14,7 +14,7 @@ ms.date: 03/16/2017
 <b>TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 >[!IMPORTANT]  
->This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). Team projects hosted on VSTS [update automatically with each service upgrade](https://www.visualstudio.com/articles/news/features-timeline). 
+>This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). Team projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). 
 >
 >For an overview of customization options, see [Customize your work tracking experience](../customize/customize-work.md)
 

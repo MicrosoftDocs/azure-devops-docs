@@ -83,7 +83,7 @@ The following clients support specific tasks, such as managing testing efforts, 
 ##Browser-based web tools 
 
 ###Web portal 
-The collaboration tools supported through the web portal are summarized under [Essential services](services.md). On Team Services, new features are deployed usually every three weeks, and for TFS, usually quarterly. For release notes, see [Visual Studio Team Services Features Timeline](https://www.visualstudio.com/articles/news/features-timeline).
+The collaboration tools supported through the web portal are summarized under [Essential services](services.md). On Team Services, new features are deployed usually every three weeks, and for TFS, usually quarterly. For release notes, see [Visual Studio Team Services Features Timeline](/vsts/release-notes/index).
  
 You can use these browsers to access the web portal (Team Services and TFS).
 

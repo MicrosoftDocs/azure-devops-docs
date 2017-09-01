@@ -65,7 +65,7 @@ New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git a
         <strong style="text-align:center;">Branches</strong>
         <ul>
             <li>[Manage your branches](manage-your-branches.md)</li>
-            <li>[Create a branch strategy](https://www.visualstudio.com/en-us/articles/git-branching-guidance)</li>
+            <li>[Create a branch strategy](concepts/git-branching-guidance.md)</li>
             <li>[Set branch permissions](branch-permissions.md)</li>
             <li>[Lock branches](lock-branches.md)</li>
             <li>[Delete a branch](delete-branch.md)</li>
@@ -178,7 +178,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 <li>[Link work items to pull requests](pull-requests.md#link-work-items)</li> 
 <li>[Set up branch policies](branch-policies.md#require-the-pull-request-to-build)</li> 
 <li>[Squash merge pull requests](merging-with-squash.md)</li>
-<li>[Git branch and pull request workflows](https://www.visualstudio.com/en-us/articles/git-branching-guidance)</li>
+<li>[Git branch and pull request workflows](concepts/git-branching-guidance.md)</li>
 </ul>
 
 </div>

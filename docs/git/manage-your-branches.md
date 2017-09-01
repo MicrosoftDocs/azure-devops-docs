@@ -32,7 +32,7 @@ Filter the shown branches for a specific name or pattern in either view by enter
 Your repo's default branch (for example, `master`) will always sit at top of the list. If your team uses a forward slash separator in your branch names, you'll see a collapsible tree view for those branches.
 
 >[!TIP]   
-> Using a naming convention for your branches is highly recommended. See the [branching guidance article](https://www.visualstudio.com/articles/git-branching-guidance) for suggestions on how to name your branches.   
+> Using a naming convention for your branches is highly recommended. For suggestions on how to name your branches, see [Adopt a Git branching strategy](concepts/git-branching-guidance.md).   
 
 <a name="mark-favorites"></a>
 
