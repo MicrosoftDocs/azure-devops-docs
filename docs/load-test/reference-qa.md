@@ -695,21 +695,6 @@ To fix this problem, create another load test. Delete the failed test run.
 <a name="qalinks"></a>
 ## Links to useful resources
 
-**Getting Started**
-
-* [What is Cloud-based Load Testing (CLT) with Visual Studio Online?](https://www.visualstudio.com/features/vso-cloud-load-testing-vs)
-* [Monitor your app performance data during load run](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/04/07/get-application-performance-data-during-load-runs-with-visual-studio-online.aspx)
-* [Super simple Cloud-based Load Test trial](https://blogs.msdn.microsoft.com/bharry/archive/2014/10/29/super-simple-load-test-trial-experience.aspx)
-* [Automate Cloud-based Load Test for your continuous integration pipeline](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/11/03/cloud-load-testing-rest-apis-are-here.aspx)
-* [Cloud-based Load Testing from Europe](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/11/03/cloud-based-load-testing-from-europe-is-now-possible.aspx)
-* [Pricing](http://azure.microsoft.com/en-us/pricing/details/visual-studio-online/)
-
-**Videos &amp; Webinars**
-
-* [Introduction to Cloud-based Load Testing with Visual Studio Online](https://channel9.msdn.com/Events/Visual-Studio/Launch-2013/qe103)
-* [Get performance counters from your App during a Load test](https://channel9.msdn.com/Series/Application-Insights-for-Visual-Studio-Online/Getting-Started-with-cloud-based-load-testing-and-Application-Insights)
-* [Quick Trial - Load testing made easier](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Load-Testing-Made-Easier)
-
 **Tutorials**
 
 * [All about Load Test planning](https://blogs.msdn.microsoft.com/geoffgr/archive/2014/08/22/all-about-test-planning-part-1-introduction.aspx)
@@ -739,9 +724,6 @@ To fix this problem, create another load test. Delete the failed test run.
 **Blogs and other references**
 
 * [Quick Reference Guide for VS Performance Testing](http://vsptqrg.codeplex.com/)
-
-**Blogs from Microsoft Load Test champions (a veritable treasure trove)**
-
 * [Geoff Gray's blog](https://blogs.msdn.microsoft.com/geoffgr/)
 * [Ed Glas' blog](https://blogs.msdn.microsoft.com/edglas/archive/2007/12/17/content-index-for-web-tests-and-load-tests.aspx)
 * [Sean Lumley's blog](https://blogs.msdn.microsoft.com/slumley/)

@@ -185,12 +185,11 @@ Use the chart's context menu.
 
 ![Open the chart](_img/track-test-status/EditDeletePinChart.png)
 
-You can configure the dashboard widget to show a range of chart types.
-
-![Configure chart widget](_img/track-test-status/configure-dashboard-widget.png)
-
+You can [configure the dashboard widget](../../report/widget-catalog.md)
+to show a range of chart types.
 You must be a team administrator to do this, but team members with 
 Stakeholder access can view the charts on the dashboard. 
+
 Learn more about
 [dashboards](../../report/dashboards.md). 
 Or learn more about
