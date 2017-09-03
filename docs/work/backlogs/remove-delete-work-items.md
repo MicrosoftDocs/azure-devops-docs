@@ -156,8 +156,8 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 	![Delete work item from the form](_img/delete-work-item.png)  
 
 	To delete work items, you must be a member of the Project Administrators group or have the **Delete work items in this project** set to Allow. By default, this permission is Not Set for Contributors. 
-	- For VSTS and TFS 2015.1 and later versions, the Contributors group has **Delete and restore work items** at the project-level set to "Allow" by default. 
-	- For TFS 2015 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to "Not set" by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.    
+	- For VSTS and TFS 2015.2 and later versions, the Contributors group has **Delete and restore work items** at the project-level set to "Allow" by default. 
+	- For TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to "Not set" by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.     
 
 2. Confirm you want to actually delete the item(s).  
 

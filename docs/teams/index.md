@@ -23,7 +23,7 @@ Give your teams the autonomy they need as your organization grows. Add teams to 
 - [Team administrator role and permissions](/vsts/work/scale/team-administrator-permissions?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json)
 
 ## How-to Guides
-- [Set team defaults](/vsts/work/scale/set-team-defaults.md)    
+- [Set team defaults](/vsts/work/scale/set-team-defaults?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json)    
 - [Configure team settings](/vsts/work/scale/manage-team-assets?toc=/vsts/teams/toc.json&bc=/vsts/teams/breadcrumb/toc.json) 
 
 

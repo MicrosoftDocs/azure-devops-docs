@@ -12,7 +12,7 @@ ms.date: 09/26/2016
 
 # Upgrade your deployment to the latest version of TFS
 
-**TFS 2017** | **TFS 2015**
+**TFS 2018 | TFS 2017 | TFS 2015**
 
 The general process for upgrading an existing deployment of Team Foundation Server is to:
 
@@ -36,6 +36,19 @@ through the upgrade wizard to upgrade your databases.
 	> For example, if you are on TFS 2008 you could upgrade to TFS 2012 first and then to TFS 2015. 
 
 4. **Configure new features**. Depending on what version you upgraded from, you may need to [configure each team project](../../work/customize/configure-features-after-upgrade.md) to gain access to some of the new features made available. You don't have to do this immediately, but those features aren't available in that team project until they're configured. Depending on the team project, you'll use some combination of the Configure Features wizard that appears on the Work page and some manual configuration.
+
+
+## Before you upgrade to TFS 2018
+
+As of TFS 2017.2, the [old work item form <Layout> tag has been deprecated](https://blogs.msdn.microsoft.com/devops/2017/05/22/announcing-the-deprecation-of-the-old-work-item-form-in-tfs/) and is no longer supported in TFS 2018. 
+If you are upgrading your server and have a collection where the new work item form has not been enabled you will encounter the following severe warning during readiness checks:
+
+```
+[VS403364]: This release introduces major updates to the work item form layout and functionality and deprecates legacy custom controls. Consequently, the upgrade process will update all work item type definitions to use the new work 
+item form WebLayout element and remove all custom controls. For additional information and recommended upgrade steps, see the Deployment Guide.
+```
+
+We recommend that you review [handling a TFS 2018 upgrade from old form to new form](https://blogs.msdn.microsoft.com/devops/2017/08/31/handling-a-tfs-2018-upgrade-from-old-form-to-new-form/) for further guidance.
 
 ## Before you upgrade to TFS 2017   
 

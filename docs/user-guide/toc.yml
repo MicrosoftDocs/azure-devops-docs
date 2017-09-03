@@ -33,7 +33,7 @@
 - name: Concepts
   items:
   - name: Key concepts 
-    href: /vsts//conceptstoc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
+    href: /vsts/concepts?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Source control 
     href: source-control.md
   - name: "Kanban & Agile tools"

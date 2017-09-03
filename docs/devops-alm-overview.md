@@ -263,11 +263,9 @@ Other topics of interest:
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)   
 
-- [What's new for Team Foundation Server](whats-new.md)   
 
 ### TFS updates
 
-- [What's new](whats-new.md)  
 - [Migrate data from TFS to Team Services](migrate-to-vsts-from-tfs.md)
 
 ### Pricing, costs, and licenses</span>

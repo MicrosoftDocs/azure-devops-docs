@@ -45,8 +45,8 @@ User accounts identify users in Visual Studio Team Services or TFS. These accoun
 
 You add existing user accounts. You can't create a user account. To add user accounts to a team project, see:  
 
-*	Visual Studio Team Services: [Add team members](https://www.visualstudio.com/docs/accounts/team-services/add-team-members-vs)  
-*	On-premises TFS: [Add users to team projects](https://msdn.microsoft.com/library/bb558971.aspx)   
+*	Visual Studio Team Services: [Add team members](../accounts/add-team-members-vs.md)  
+*	On-premises TFS: [Add users to team projects](../accounts/add-users.md)   
 
 User accounts that you add must conform to the following restrictions.  
 

@@ -1,24 +1,26 @@
 ---
-title: Syntax usage for Markdown files and widgets | Team Services & TFS 
+title: Syntax usage for Markdown files and widgets
+titleSuffix: | VSTS & TFS 
 description: Use markdown syntax within pull requests, project pages, readme files, dashboards, and markdown widgets to share information within and across teams  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/05/2017
+ms.topic: get-started-article 
+ms.date: 09/02/2017
 ---
 
 # Syntax guidance for Markdown files, widgets, wikis, and pull request comments  
 
-<b>Team Services | TFS 2017 | TFS 2015</b> 
+<b>VSTS | TFS 2017 | TFS 2015</b> 
 
 Having the right guidance at the right time is critical to success. To support your team or contributors to your project, use [markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your project pages, readme files, dashboards, and pull request comments.   
 
 You can provide guidance to your team in these places using markdown:   
   
 - [Project vision page or Welcome pages](../collaborate/project-vision-status.md)  
-- [Team project wiki](../collaborate/add-edit-wiki.md) (Team Services)   
+- [Team project wiki](../collaborate/add-edit-wiki.md)    
 - [Readme files](../git/create-a-readme.md) 
 - [Pull request comments](../git/pull-requests.md) 
 - [Markdown widget on a team dashboard](../report/widget-catalog.md#markdown-widget)  
@@ -77,11 +79,9 @@ Add two spaces prior to the end of the line.
 This adds space in between paragraphs.
 
  
-
-
 ## Quotes
 
-Quote previous comments or other text to set context for your comment.
+Quote previous comments or text to set context for your comment or text.
 
 Quote single lines of text be putting a `>` before the text. Use multiple `>` characters to nest quoted text.
 Quote blocks of lines of text by using the same level of `>` across multiple lines.
@@ -97,8 +97,7 @@ Quote blocks of lines of text by using the same level of `>` across multiple lin
 
 **Result:**  
 
-![quoting in markdown](_img/markdown_quote.png)
-
+![quoting in markdown](_img/markdown_quote2.jpg)
 
 
 ## Horizontal rules
@@ -158,7 +157,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 ## Links
 
-In pull request comments, HTTP and HTTPS URLs are automatically formatted as links. Also, you can link to work items by typing the # key and a work item ID, and then choosing the work item from the list.
+In pull request comments and wiki, HTTP and HTTPS URLs are automatically formatted as links. Also, you can link to work items by typing the # key and a work item ID, and then choosing the work item from the list.
 
 In markdown files and widgets, you can set text hyperlinks for your URL using the standard markdown link syntax:
 
@@ -178,10 +177,15 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 <ul>
 <li>URL: ```[text to display](http://address.com)```  </li>
 </ul>
+**Supported links for Wiki:**  
+<ul>
+<li>Absolute path of Wiki pages: ```[text to display](/parent-page/child-page)``` </li>
+<li>URL: ```[text to display](http://address.com)```  </li>
+</ul>
 
 
 >[!NOTE]  
->Links to documents on file shares using `file://` are not supported on Team Services or TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
+>Links to documents on file shares using `file://` are not supported on VSTS or TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
 >
 >For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](#relative-links). 
 
@@ -240,9 +244,18 @@ You can also reference headings within another Markdown file:
 [text to display](./target.md#heading id)  
 </pre>
 
+
+<br/>
+In wiki, you can also reference heading in another page:
+
+<Pre>
+[text to display](/page-name#section-name)
+</pre>
+
+
 ## Images 
 
-Add images and animated GIFs to your pull request comments or markdown files to highlight issues   or just to liven the discussion. 
+Add images and animated GIFs to your pull request comments, markdown files, or wiki pages to highlight issues or just to liven the discussion. 
 
 Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91;Text](URL)</pre></div> The text in the brackets describes the image being linked and the URL points to the image location.
 
@@ -257,13 +270,14 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 
 ![Sample flowchart with three items](../git/_img/pull-requests/markdown_sample_image.png)
 
-
 The path to the image file can be a relative path or the absolute path in Git or TVFC, just like the path to another Markdown file in a link.  
 <ul>
 <li>Relative path:<br/> ```![Image alt text](./image.png)``` </li>
 <li>Absolute path in Git:<br/> ```![Image alt text](/_img/image.png)``` </li>
 <li>Absolute path in TFVC:<br/> ```![Image alt text]($/project/folder/_img/image.png)```  </li>
+<li>Resize image:<br/> ```![Image alt text]($/project/folder/_img/image.png WIDTHxHEIGHT)```  </li>
 </ul>
+
 
 ## Tables
 
@@ -408,7 +422,7 @@ Console.WriteLine("Hello, World!");
 
 ## Emoji
 
-In pull request comments, you can use emojis to add character and quickly react to other comments in the request. Type in what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](http://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
+In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Type in what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](http://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
 
 **Example:**
 
@@ -469,11 +483,11 @@ In pull request comments, you can use emojis to add character and quickly react 
 <a name="attach"></a>
 ## Attachments
 
-In pull request comments, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or select the paper-clip icon in the upper-right of the comment box. 
+In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the paper-clip icon in the upper-right of the comment box or the format pane in wiki page. 
 
 <img src="_img/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" style="border: 1px solid #CCCCCC;" /> 
 
-If you have an image in your clipboard, you can paste it from the clipboard into the comment box and it will render directly into your comment.
+If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page and it will render directly into your comment or wiki page.
 
 Attachments support the following file formats:
 
@@ -483,14 +497,64 @@ Attachments support the following file formats:
 - Video files: MOV (.mov), MP4 (.mp4)
 
 Attaching non-image files creates a link to the file in your comment. Update the description text between the brackets to change the text displayed in the link.
-Attached image files render directly into your comment.
+Attached image files render directly into your comment or wiki pages. 
 
-Once you save a new comment or update a comment with an attachment, reviewers see the attached image(s) in the comment and can select links to download attached files.
+Once you save or update a comment or wiki page with an attachment, you can see the attached image(s) and can select links to download attached files.
+
+
+## HTML Tags
+
+In wiki pages, you can also create rich content using HTML tags. 
+
+**Example - Embedded video**
+
+```HTML
+<video src="<path of the video file>" width=400 controls>
+</video>
+```
+
+</br>
+**Result:**
+</br>
+<video src="_img/vstswiki_mid.mp4" width="600" controls>
+</video>
+
+
+**Example - Rich text format**
+
+```HTML
+<p>This text needs to <del>strikethrough</del> <ins>since it is redundant</ins>!</p>
+<p><tt>This text is teletype text.</tt></p>
+<font color="blue">Colored text</font>
+<center>This text will be center-aligned.</center>
+<p>This text contains <sup>superscript</sup> text.</p> 
+<p>This text contains <sub>subscript</sub> text.</p>
+<p>The project status is <span style="color:green;font-weight:bold">GREEN</span> even though the bug count / developer may be in <span style="color:red;font-weight:bold">red.</span> - Capability of span
+<p><small>Disclaimer: Wiki also supports showing small text</small></p>
+<p><big>Bigger text</big></p> 
+```
+
+**Result:**
+<p>This text needs to <del>strikethrough</del> <ins>since it is redundant</ins>!</p>
+<p><tt>This text is teletype text.</tt></p>
+<font color="blue">Colored text</font>
+<center>This text will be center-aligned.</center>
+<p>This text contains <sup>superscript</sup> text.</p> 
+<p>This text contains <sub>subscript</sub> text.</p>
+<p>The project status is <span style="color:green;font-weight:bold">GREEN</span> even though the bug count / developer may be in <span style="color:red;font-weight:bold">red.</span> - Capability of span
+<p><small>Disclaimer: Wiki also supports showing small text</small></p>
+<p><big>Bigger text</big></p> 
+
 
 
 ## Related notes  
-- [READMEs & Wikis](/vsts/collaborate/index) 
 
 
-  
+- [Project vision page or Welcome pages](../collaborate/project-vision-status.md) 
+- [Readme files](../git/create-a-readme.md) 
+- [Pull requests](../git/pull-requests.md) 
+- [Markdown widget](../report/add-markdown-to-dashboard.md)  
+- [Dashboards](../report/dashboards.md)
+- [Widget catalog](../report/widget-catalog.md) 
+- [Wiki](../collaborate/add-edit-wiki.md)
   

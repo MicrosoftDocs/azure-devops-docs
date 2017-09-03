@@ -394,7 +394,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	Code Review
 	</td>
 	<td>
-	 [Request a code review from the My Work page in Team Explorer](https://www.visualstudio.com/get-started/code/get-code-reviewed-vs). My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed. 
+	 [Request a code review from the My Work page in Team Explorer](/vsts/tfvc/get-code-reviewed-vs). My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed. 
 	</td>
 	</tr>
 	<tr>
