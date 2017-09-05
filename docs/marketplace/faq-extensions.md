@@ -31,7 +31,7 @@ ms.date: 08/01/2017
 A: The Team Services account owner and 
 project collection administrator can install extensions. 
 If you don't have permissions, but you're an account member, 
-you can [request extensions](#request) instead. 
+you can request extensions instead. 
 
 <a name="find-owner"></a>
 
@@ -51,7 +51,7 @@ A:	This might happen for these reasons:
 *	You must have Team Services 
 [project collection administrator or account owner permissions](#find-owner). 
 If you don't have permissions, but you're an account member, 
-you can [request extensions](#request) instead.
+you can request extensions instead.
 
 <a name="no-assignment"></a>
 *	If you get an error that your extension is already installed or 

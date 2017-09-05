@@ -31,7 +31,7 @@ For a C# example of the overall flow, see [vsts-auth-samples](https://github.com
 Go to (https://app.vssps.visualstudio.com/app/register) to register your app.
 
 Make sure you select the [scopes](#scopes) that your application needs,
-and then use the exact same scopes when you [authorize your app](#AuthorizeYourApp).
+and then use the exact same scopes when you [authorize your app](#authorize-your-app).
 If you registered your app using the preview APIs, you'll want to re-register because the scopes that you used are now deprecated.
 
 When Visual Studio Team Services presents the authorization approval page to your user,
@@ -226,11 +226,11 @@ Replace the placeholder values in the sample request body above:
 
 [!INCLUDE [scopestable](../../_shared/scopes.md)]
 
-When you [register your app](#registeryourapp),
+When you [register your app](#register-your-app),
 you'll use scopes to indicate which permissions in Visual Studio Team Services your app will require.
 When your users authorize your app to access their account,
 they'll authorize it for those scopes.
-When you call to [request that authorization](#authorizeyourapp),
+When you call to [request that authorization](#authorize-your-app),
 you'll pass the same scopes that you registered.
 
 ## Samples

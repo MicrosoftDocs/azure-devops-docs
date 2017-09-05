@@ -22,7 +22,7 @@ Learn about the [full benefits for these subscriptions](https://www.visualstudio
 *	To bill your purchases, you'll need an [Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/). 
 You can [sign up](https://account.windowsazure.com/Subscriptions) 
 before your first purchase or during your first purchase in the Visual Studio Marketplace.
-Learn [which Azure subscriptions you can use for Visual Studio Marketplace purchases](#billing). 
+Learn [which Azure subscriptions you can use for Visual Studio Marketplace purchases](../faq-azure-billing.md#billing). 
 
 *	To sign up for your Azure subscription and buy from the Visual Studio Marketplace, 
 you'll need a ["personal" Microsoft account](https://www.microsoft.com/account) 
