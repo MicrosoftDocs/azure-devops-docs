@@ -225,7 +225,7 @@ ms.date: 07/26/2017
                         <a href="#code">Code</a>
                         <ul id="code" class="cardsA">
                             <li>
-                                <a href="/vsts/git/overview">
+                                <a href="/vsts/git">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -244,7 +244,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/tfvc/overview">
+                                <a href="/vsts/git/pull-requests">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -282,7 +282,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/tfvc/overview">
+                                <a href="/vsts/git/branch-policies">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -301,7 +301,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/tfvc/overview">
+                                <a href="/vsts/tfvc">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
