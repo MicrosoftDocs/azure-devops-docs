@@ -95,6 +95,10 @@
     href: set-up-credential-managers.md
   - name: Import a repo from TFVC
     href: import-from-TFVC.md
+  - name: Create a pull request status server
+    href: how-to/create-pr-status-server.md
+  - name: Configure branch policy for an external service
+    href: how-to/pr-status-policy.md
   - name: Manage repos
     items:
     - name: Delete a repo
