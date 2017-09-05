@@ -94,7 +94,7 @@ All charts listed in the following table are available from VSTS and TFS 2017.1.
 
 Each time a build is run, it logs information about the build, including the run time, errors and warnings, and whether it successfully completed or failed.   
 
-1. Select your [team context](#switch-team-context) and then open the Build hub to add a build history chart to a team dashboard.   
+1. Select your [team context](../work/how-to/switch-team-context-work.md) and then open the Build hub to add a build history chart to a team dashboard.   
 
 	![Add a build summary chart to a dashboard](_img/add-chart-build-summary.png)  
 
@@ -115,7 +115,7 @@ Each time a build is run, it logs information about the build, including the run
 
 Each time a [release is deployed](../build-release/actions/view-manage-releases.md#add-widget), it logs information about the release to each of its environments. You can add a release tile to your team dashboard to monitor release progress and gain quick access to each release. 
 
-1. Select your [team context](#switch-team-context) and then open the Release hub to add a release definition chart to a team dashboard.   
+1. Select your [team context](../work/how-to/switch-team-context-work.md) and then open the Release hub to add a release definition chart to a team dashboard.   
 
 	![Add a Release definition chart to a dashboard](_img/add-cd-release-definition.png)  
 
@@ -134,7 +134,7 @@ Each time a [release is deployed](../build-release/actions/view-manage-releases.
 
 As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../manual-test/getting-started/track-test-status.md).  
 
-1. Select your [team context](#switch-team-context), make sure you're a [team admin](../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](../work/how-to/switch-team-context-work.md), make sure you're a [team admin](../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open the Test hub charts page and select the dashboard to add the test chart to.  
 
@@ -149,7 +149,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 
 You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../build-release/test/getting-started-with-continuous-testing.md).  
 
-1. Select your [team context](#switch-team-context), make sure you're a [team admin](../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](../work/how-to/switch-team-context-work.md), make sure you're a [team admin](../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open a build summary for a build definition to which you've added tests, open the Tests page, and click the bar chart for either Test failures or Test duration.    
 
@@ -171,7 +171,7 @@ You can add trends to the dashboard of the failures and duration of those [tests
 
 You add work item queries and charts to a dashboard from the Queries page. Queries and charts must be associated with queries under the Shared queries folder.  
 
-1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](#switch-team-context) as needed.  
+1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../work/how-to/switch-team-context-work.md) as needed.  
 
 2. If you aren't a team administrator, [get added as one](../work/scale/add-team-administrator.md). Only team and project admins can add and customize team dashboards.  
 
