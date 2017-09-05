@@ -43,9 +43,15 @@ Learn how to [associate your Azure subscription to your Office 365 Azure AD](htt
 
 [!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
 
-<a name="find-owner"></a>
+[!INCLUDE [choose-msa-azuread-account2](../_shared/qa-choose-msa-azuread-account2.md)]
+
 
 [!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
+
+[!INCLUDE [why-no-owned-accounts](../_shared/qa-why-no-owned-accounts.md)]
+
+
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 
 
 <a name="faq-users"></a>
@@ -130,7 +136,7 @@ and connect your Azure AD to your VSTS account. Learn
 A:	This might happen because: 
 
 *	You don't have 
-[VSTS account owner permissions](#find-owner) to manage directory connections.
+[VSTS account owner permissions](faq-change-app-access.md#find-owner) to manage directory connections.
 
 *	You don't have an active and valid 
 ["full" Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/), 

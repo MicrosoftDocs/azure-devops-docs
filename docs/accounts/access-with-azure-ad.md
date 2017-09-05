@@ -56,7 +56,7 @@ And all users must sign in with Microsoft accounts.
 
 You'll need:
 
-*	[Ownership of the VSTS account](#find-owner) that you want to connect to Azure AD. 
+*	[Ownership of the VSTS account](faq-add-delete-users.md#find-owner) that you want to connect to Azure AD. 
 
 *	A ["full" Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/), 
 such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/en-us/offers/ms-azr-0003p/), 
@@ -67,7 +67,7 @@ so that you can link your subscription and connect your
 Azure AD to your VSTS account. Learn about 
 [Azure subscription Co-administrator permissions](../billing/add-backup-billing-managers.md).
 
-  [Want to use Office 365 Azure AD with VSTS?](#o365aad)
+  [Want to use Office 365 Azure AD with VSTS?](faq-azure-access.md#o365aad)
 
 *	(Only needed if you need to add users to Azure AD) Global administrator permissions for your directory so 
 you can add current VSTS users to that directory. 
@@ -90,7 +90,7 @@ Your work in VSTS is associated with your sign-in address.
 After your VSTS account is connected to your directory, 
 users will continue working seamlessly if their 
 sign-in addresses appear in the connected directory. 
-If they don't, you'll have to [add those users to your directory](#SetUpCurrentUsers). 
+If they don't, you'll have to [add those users to your directory](add-users-to-aad.md#SetUpCurrentUsers). 
 Your organization might have policies about adding users to the directory, 
 so find out more first. 
 

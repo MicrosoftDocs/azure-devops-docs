@@ -22,7 +22,7 @@ and relink your account to another Azure subscription that's associated with you
 
 ## What do I need to change my Azure subscription?
 
-* VSTS project collection administrator or account owner permissions ([How do I find the project collection administrator or account owner permissions](#find-owner))
+* VSTS project collection administrator or account owner permissions ([How do I find the project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner))
 
 * At least [an **owner** or **contributor** role](#AddAzureAdmin) for both Azure subscriptions
 

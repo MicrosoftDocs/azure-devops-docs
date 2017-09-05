@@ -57,7 +57,7 @@ learn [how to change paid extension users](../billing/change-number-paid-extensi
 
 ## Required Permissions
 
-You'll need [VSTS project collection administrator or account owner permissions](#find-owner). 
+You'll need [VSTS project collection administrator or account owner permissions](faq-add-delete-users.md#find-owner). 
 
 
 ##	Manage users in table view

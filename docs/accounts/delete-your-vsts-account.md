@@ -39,7 +39,7 @@ you must unlink your account before you delete your account.
 
 To delete your VSTS account, 
 you'll need VSTS account owner permissions. 
-[How do I find the account owner?](#find-owner)
+[How do I find the account owner?](faq-delete-restore-vsts-account.md#find-owner)
 
 ##  Before you delete your Visual Studio Team Services account
 
@@ -49,7 +49,7 @@ you must first unlink your account from your Azure subscription before deleting 
 To unlink your account, 
 you'll need VSTS account owner permissions 
 and at least Azure subscription Co-Administrator permissions. 
-[How do I find the account owner?](#find-owner) Or learn more about 
+[How do I find the account owner?](faq-delete-restore-vsts-account.md#find-owner) Or learn more about 
 [Azure subscription administrators](https://azure.microsoft.com/en-us/documentation/articles/billing-add-change-azure-subscription-administrator/).
 
 0.  Sign in to the [Azure classic portal](https://manage.windowsazure.com/) 
@@ -73,7 +73,7 @@ or [Azure portal](https://portal.azure.com).
 
 You'll need at least Basic access and VSTS account owner 
 permissions to delete your VSTS account. 
-[How do I find the account owner?](#find-owner)
+[How do I find the account owner?](faq-delete-restore-vsts-account.md#find-owner)
 
 0.  Sign in to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).
 
@@ -104,7 +104,7 @@ After 90 days, your account and data are permanently deleted.
 
 You'll need VSTS account owner 
 permissions to restore your VSTS account. 
-[How do I find the account owner?](#find-owner)
+[How do I find the account owner?](faq-delete-restore-vsts-account.md#find-owner)
 
 0.	Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 

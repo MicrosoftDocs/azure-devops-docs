@@ -15,7 +15,7 @@ ms.date: 1/13/2017
 **VSTS**
 
 Before you start, you'll need 
-[VSTS project collection administrator or account owner permissions](#find-owner).
+[VSTS project collection administrator or account owner permissions](faq-add-delete-users.md#find-owner).
 
 0.  Sign in to your Visual Studio Team Services account 
 (```https://{youraccount}.visualstudio.com```).

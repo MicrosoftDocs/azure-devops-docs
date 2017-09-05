@@ -36,7 +36,7 @@ See these topics for how to:
 	*	[Add users in the Azure classic portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-create-users).
 	*	[Add users in the Azure portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-create-azure-portal).
 
-	[Why am I asked to choose between a "work or school account" and a "personal account"?](#ChooseOrgAcctMSAcct)
+	[Why am I asked to choose between a "work or school account" and a "personal account"?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
 0.	Add the sign-in addresses for all your VSTS account users to your directory, 
 including yourself as the VSTS account owner, if not in the directory already. 
@@ -57,7 +57,7 @@ including yourself as the VSTS account owner, if not in the directory already.
     
   ![Directory after adding users](_img/manage-work-access/azureaddmembers3.png)
 
-  [More questions about setting up users?](#faq-users)
+  [More questions about setting up users?](faq-azure-access.md#faq-users)
 
 0.  After adding your account users to your directory, 
 connect your VSTS account to your directory. 

@@ -28,7 +28,7 @@ You'll need:
 for all users in your VSTS account, 
 including yourself as VSTS account owner
 
-*	[VSTS account ownership](#find-owner) for your Microsoft account 
+*	[VSTS account ownership](faq-change-app-access.md#find-owner) for your Microsoft account 
 
 *	Global administrator permissions in your Azure AD 
 for your Microsoft account as the VSTS account owner. You'll need both 
