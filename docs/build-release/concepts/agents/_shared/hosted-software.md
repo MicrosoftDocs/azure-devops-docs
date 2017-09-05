@@ -10,7 +10,7 @@
 * Visual Studio SDK 2012 RTM
 * Visual Studio 2010 SP1
 
-* The .NET Framework 
+* The .NET Framework
  - .NET 4.6.2
  - .NET 4.5.2
  - .NET 4.5.1
@@ -36,7 +36,7 @@
  - Android Native Development Kit r13b
  - Android Software Development Kit 25.2.5
  - Android support repository version 30
- - Apache ANT 1.9.7
+ - Apache ANT 1.10.1
  - Apache Maven 3.2.2
  - ASP.NET 3.5
  - ASP.NET MVC 2
@@ -47,28 +47,29 @@
  - Cloud Foundry CLI 6.25.0
  - CMake 3.7.1
  - Cordova 6.1.0
- - Git 2.10.1
+ - Git 2.14.1
  - Git for Windows 2.10.2
- - Git LFS 1.5.2
+ - Git LFS 2.1.1
  - Google Repository version 29
  - GTK# 2.12.30
- - Java Standard Edition Development Kit 1.8
+ - Java Standard Edition Development Kit 1.8.0_131
  - Let's Encrypt root certs for JDK certificate store
+ - Maven 3.5
  - Microsoft Office Developer Tools for Visual Studio 2012
  - Microsoft Office Developer Tools for Visual Studio 2013 (March 2014 Update)
  - Multilingual Application Toolkit 4
- - Node.js 6.9.1
+ - Node.js 6.11.0
  - Node.js Tools 1.0 Beta for Visual Studio 2013
  - Node.js Tools 1.0 for Visual Studio 2015
- - Python 2.7
+ - Python 3.6.1
  - Python Tools for Visual Studio 2012 and Visual Studio 2013
  - Service Fabric 5.4.164.9494
  - Service Fabric SDK 2.4.164
  - SharePoint 2010 and SharePoint 2013
  - SharePoint Online Shell
  - SQL Lite for WinRT 8.0, WinRT 8.1, and Windows Phone 8.0, 8.1
- - SQL Server DAC Framework for x86 and x64 (July 2015)
- - SQL Server Data Tools for Visual Studio 2010, Visual Studio 2012, Visual Studio 2013, and Visual Studio 2015
+ - SQL Server DAC Framework for x86 and x64 17.1
+ - SQL Server Data Tools 17.1
  - SQL Server Data Tools BI for Visual Studio 2012 and Visual Studio 2013
  - TFS Build Extensions
  - TypeScript 1.4 for Visual Studio 2013
@@ -88,34 +89,20 @@
 
 ### Hosted VS2017
 
-* Visual Studio 2017 (15.1 Update)
-
-* .NET Core SDK 
- - '1.0.0-preview2-1-003177'
- - '1.0.0-preview2-003121'
- - '1.0.0-preview3-004056'
- - '1.0.0-preview4-004233'
- - '1.0.0-rc3-004530'
- - '1.0.0-rc4-004771'
- - '1.0.0-rc4-004834'
- - '1.0.0-rc4-004802'
- - '1.0.0-rc4-004847'
- - '1.0.0'
-
+* Visual Studio 2017 (15.3 Update)
+* .NET Core 2.0.0
 * Android SDK, including support for repositories
 * ANT 1.9.7 w/ Cobertura
 * Azure CLI 2.02 (Python)
-* Azure PowerShell 2.1.0
-* AzureRM PowerShell 2.1.0
-* Azure PowerShell 3.6.0
-* AzureRM PowerShell 3.6.0
-* Azure PowerShell 4.1.0
-* AzureRM PowerShell 4.1.0
+* Azure PowerShell 3.8.0 (Installed)
+* AzureRM PowerShell 3.8.0 (Installed)
+* Azure PowerShell 4.2.1 (Saved)
+* AzureRM PowerShell 4.2.1 (Saved)
 * Bower
 * CMake 3.8
 * Docker 17.03.2-ee-5
 * Docker Compose 1.14.0
-* Git for Windows 2.12
+* Git 2.14.1
 * GIT LFS 2.0.2
 * Grunt
 * Gulp

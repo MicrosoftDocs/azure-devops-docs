@@ -3,7 +3,7 @@ title: CI build Node.js app
 description: Set up a continuous integration (CI) build for your Node.js app in Visual Studio Team Services or Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.assetid: 
+ms.assetid:
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Define a continuous integration build for your Node.js app
 
-**[VSTS](quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../../release/previous-version/release-management-overview.md)**
+**[VSTS](quick-to-azure.md) | TFS 2017 RTM**
 
 [!INCLUDE [temp](../../../_shared/ci-cd-newbies.md)]
 
@@ -37,7 +37,7 @@ Here we'll show you how to define a continuous integration (CI) build process fo
 
 <ol>
 [!INCLUDE [include](../../../_shared/begin-create-build-definition.md)]
- 
+
 <li>Click Empty to start with an empty definition.</li>
 </ol>
 
@@ -47,7 +47,7 @@ On the **Tasks** or **Build** tab, add these steps.
 
 <table>
    <tr>
-        
+
       <td>![Package: npm install](../../../tasks/package/_img/npm.png)<br/>**Package: npm install**</td>
       <td>
 <p>Install your npm package dependencies.</p>
@@ -56,7 +56,7 @@ On the **Tasks** or **Build** tab, add these steps.
 </ul>
       </td>
 </tr>
-   
+
         <tr>
             <td>![Build: Gulp](../../../tasks/build/_img/gulp.png)<br/>**Build: Gulp**</td>
             <td>
@@ -115,7 +115,7 @@ After you've run the CI build, you're ready to create a continuous deployment (C
 
 * [![Build Machine Image](../../../tasks/deploy/_img/build-machine-image.png) An Azure Scale Set](../../../apps/cd/azure/deploy-azure-scaleset.md)
 
-## Q&A 
+## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
 <h3 id="code">What code is in the sample app?</h3>

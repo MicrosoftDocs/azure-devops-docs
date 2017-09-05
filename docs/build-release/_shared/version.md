@@ -1,1 +1,1 @@
-**VSTS | TFS 2017 | TFS 2015 | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../release/previous-version/release-management-overview.md)**
+**VSTS | TFS 2017 | TFS 2015**

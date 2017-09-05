@@ -13,7 +13,7 @@ ms.date: 11/28/2016
 
 **VSTS**
 
-If you use Visual Studio Team Services, to build or deploy your app, then it's more convenient to use our hosted agents, but some limitations apply. 
+If you use Visual Studio Team Services, to build or deploy your app, then it's more convenient to use our hosted agents, but some limitations apply.
 
 > [!TIP]
 >
@@ -23,11 +23,11 @@ If you use Visual Studio Team Services, to build or deploy your app, then it's m
 
 To use a hosted agent, while [editing your build definition](../../actions/ci-cd-part-1.md), on the **Options** or **General** tab, for the **Default agent queue**, and then select either:
 
-* **Hosted** 
+* **Hosted** if your team uses Visual Studio 2013 or Visual Studio 2015
 
 * **Hosted VS2017** if your team uses Visual Studio 2017
 
-> If your team uses Linux, select **Hosted Linux Preview**. During the preview, we provide only one of these agents at a time.
+* **Hosted Linux** if your team uses development tools on Ubuntu
 
 ## Capabilities and limitations
 

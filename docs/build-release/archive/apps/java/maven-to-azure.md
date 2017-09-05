@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Build and Deploy your Java app to an Azure web app
 
-**[VSTS](quick-to-azure.md) | TFS 2017 RTM | Previous versions: [XAML Build](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx), [Release](../../../../release/previous-version/release-management-overview.md)**
+**[VSTS](quick-to-azure.md) | TFS 2017 RTM**
 
 In just a few steps you can build and deploy your Java app to Azure. This works from both the Visual Studio Team Services service and your on-premises Team Foundation Server.
 
@@ -25,7 +25,7 @@ Upload your code to Visual Studio Team Services or your on-premises Team Foundat
 
 0. Sign in to the [Azure portal](https://portal.azure.com/).
 
-0. Edit or [create a Java web app](https://azure.microsoft.com/en-us/documentation/articles/web-sites-java-apps/get-started/) and enable Apache Tomcat. 
+0. Edit or [create a Java web app](https://azure.microsoft.com/en-us/documentation/articles/web-sites-java-apps/get-started/) and enable Apache Tomcat.
 
 0. Click the deployment credentials part (outlined in red below). Create a user name and password. Click Save. If you previously enabled publishing for a web app, you don't need to do this step.
 
@@ -35,7 +35,7 @@ Upload your code to Visual Studio Team Services or your on-premises Team Foundat
 
 <ol>
 [!INCLUDE [include](../../../_shared/begin-create-build-definition.md)]
- 
+
 <li>Click Empty to start with an empty definition.</li>
 </ol>
 
@@ -43,7 +43,7 @@ Upload your code to Visual Studio Team Services or your on-premises Team Foundat
 
 On the Variables tab, store the data needed to copy files to Azure via FTP. Copy this data from the [Azure portal](https://portal.azure.com/). There is nothing special about the variable names we suggest below, so you can make them whatever you prefer.
 
-| Name | Notes | 
+| Name | Notes |
 |---|---|---|
 | azure.ftp.userName | Take this value from your Azure web app essentials. For example if the name of your Azure web app is FabrikamJava, then the value would be : ```FabrikamJava\YourUserName``` |
 | azure.ftp.password | Take this value from your Azure subscription deployment settings. In your build definition variables, make sure to click secret to avoid exposing this password value. [I don't want to use my Azure subscription FTP credentials. Can I use credentials scoped to my Azure web app?](#azure_site_ftp) |
@@ -56,7 +56,7 @@ On the Build tab, add these steps:
 
 <table>
    <tr>
-        
+
       <td>![Build: Maven](../../../tasks/build/_img/maven.png) **Build: Maven**</td>
       <td>
 <p>Build the app.</p>
@@ -65,7 +65,7 @@ On the Build tab, add these steps:
 </ul>
       </td>
 </tr>
-   
+
         <tr>
             <td>![Utility: cURL Upload Files](../../../tasks/utility/_img/curl-upload-files.png) **Utility: cURL Upload Files**</td>
             <td>
@@ -93,11 +93,11 @@ On the Build tab, add these steps:
         </tr>
 </table>
 
-[!INCLUDE [temp](../_shared/definition-finish-and-test.md)] 
+[!INCLUDE [temp](../_shared/definition-finish-and-test.md)]
 
 After a successful build, check your site: ```http://{web_app_name}.azurewebsites.net/{war_file_name}```
 
-## Q&A 
+## Q&A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
@@ -107,7 +107,7 @@ After a successful build, check your site: ```http://{web_app_name}.azurewebsite
 <a name="azure_site_ftp"></a>
 ### I don't want to use my Azure subscription FTP credentials. Can I use credentials scoped to my Azure web app?
 
-A: Yes. 
+A: Yes.
 
 0. Sign in to the [Azure portal](https://portal.azure.com/).
 
@@ -115,7 +115,7 @@ A: Yes.
 
 0. Open your .PublishSettings file and copy some of the data from the ```publishMethod="FTP"``` section into your build variables.
 
-| Name | Value from .PublishSettings file attribute| Notes | 
+| Name | Value from .PublishSettings file attribute| Notes |
 |---|---|---|
 | azure.ftp.userName | userName   |  For example, ```YourAppName\$YourAppName```  |
 | azure.ftp.password | userPWD| In your build definition variables, make sure to click secret to avoid exposing this password value. |

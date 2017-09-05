@@ -12,6 +12,9 @@ ms.date: 10/20/2016
 
 **[TFS 2017](concurrent-pipelines-tfs.md) | VSTS**
 
+> [!NOTE]
+> August 2017 update: We’re temporarily providing unlimited private pipelines while we work on fixing an issue. We estimate that we'll fix the issue and return to providing only the private pipelines you have sometime in September 2017.
+
 A VSTS _concurrent pipeline_ gives you the ability to run a single build or a single release at a time in your account. There are two types of concurrent pipelines in Visual Studio Team Services.
 
 ## Private pipelines
@@ -78,43 +81,7 @@ In the following scenarios you might need multiple concurrent pipelines:
 
 0. Select **Pipelines queue...** to display all the builds and releases that are actively consuming an available pipeline or that are queued waiting for a pipeline to be available.
 
-<h2 id="pipeline-issues">Known issues and planned improvements</h2>
-
-### Blocked pipelines under certain conditions
-
-Builds and releases from all projects are queued and allocated to pipelines in the order they are created. Because of this, it may so happen that a build or a release may wait for a pipeline because of earlier builds waiting for agents. For example:
-
-0. You purchase three pipelines in your account. You have configured two agent pools: A and B, and each contain two agents.
-
-0. You queue three builds targeted for pool A. Two of these builds will start running immediately since you have two agents in pool A. The third has an available pipeline, however it does not have an agent available.
-
-0. You then queue a fourth build targeted for pool B. Since builds are assigned pipelines in the order in which they are created, this build waits for the three builds above to complete, even though there are agents available in pool B.
-
-We're working to improve this model. For now, the workaround is to add more agents to your pool. For example, you could add an agent to pool A mentioned above.
-
-### Sharing of concurrent pipelines among private and hosted agents
-
-If you have sufficient private agents, you can use the concurrent pipelines - both private and hosted - to run builds and releases on private agents. For example:
-
-0. You purchase a single private pipeline and a single hosted pipeline.
-
-0. You deploy two private agents in a pool.
-
-0. One build and one release are running in your private agent pool.
-
-0. A build is queued in the hosted pool. That build will not start until one of the builds in your private pool is completed.
-
-The same is not true with hosted pipelines and hosted agents. For example:
-
-0. You purchase a single private pipeline and a single hosted pipeline.
-
-0. You see a single hosted agent in Hosted pool and a single hosted agent in Hosted VS2017 pool.
-
-0. You can only run one build or release at a time across all of the hosted pools.
-
-We're working on using only private pipelines for jobs that run on private agents.
-
-### Sharing of pipelines across projects in a collection
+## Sharing of pipelines across projects in a collection
 
 Pipelines are purchased at the account level, and they are shared amongst all projects in an account. We don't yet offer a way to partition or dedicate certain pipelines to a specific project or agent pool. For example:
 

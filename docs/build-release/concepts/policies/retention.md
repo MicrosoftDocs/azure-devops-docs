@@ -190,7 +190,7 @@ When you delete a release definition, delete a release, or when the
 retention policy deletes a release automatically, the retention policy
 for the associated build will determine when that build is deleted.
 
-> In TFS, interaction between build and release retention is available starting from TFS 2017. 
+> In TFS, interaction between build and release retention is available starting from TFS 2017.
 
 ## Q&A
 
