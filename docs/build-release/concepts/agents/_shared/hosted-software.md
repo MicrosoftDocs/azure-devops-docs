@@ -92,6 +92,7 @@
 * Visual Studio 2017 (15.3 Update)
 * .NET Core 2.0.0
 * Android SDK, including support for repositories
+* Android SDK Build Tools - 19.0.1 to 25.0.2
 * ANT 1.9.7 w/ Cobertura
 * Azure CLI 2.02 (Python)
 * Azure PowerShell 3.8.0 (Installed)
@@ -111,8 +112,6 @@
 * JDK 1.8.0_102
 * Let's Encrypt certificates for JDK 1.8.0_102
 * Maven 3.2.2
-* Microsoft.DataTools.AnalysisServices
-* Microsoft.DataTools.ReportingServices
 * Multilingual App Toolkit 4.0
 * Node 6.10.0
 * NPM Packages
