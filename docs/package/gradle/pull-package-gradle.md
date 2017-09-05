@@ -41,9 +41,6 @@ First, you need a **gradle.properties** file that contains a VSTS credential tok
 Navigate to `https://{yourAccount}.visualstudio.com/_details/security/tokens`, where `{yourAccount}` is the name of your VSTS account or project.
 
 Click **Add**.
-![Add a personal access token](_img/add-pat.png)
-
-![Add a personal access token](_img/add-pat.png)
 
 ![Add a personal access token](_img/add-pat.png)
 
