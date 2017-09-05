@@ -50,7 +50,7 @@ ms.date: 07/26/2017
                 </a>
             </li>
             <li>
-                <a href="/vsts/release-notes/index">
+                <a href="https://www.visualstudio.com/team-services/updates/">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -120,13 +120,13 @@ ms.date: 07/26/2017
                                         <a class="barLink" href="/vsts/marketplace/overview"><img src="_img/index/team-services-marketplace.svg" alt="" />Marketplace</a>
                                     </li>
                                     <li>
-                                        <a class="barLink" href="https://www.visualstudio.com/learn-git/"><img src="_img/index/team-services-git.svg" alt="" />Learn about Git</a>
+                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-git/"><img src="_img/index/team-services-git.svg" alt="" />Learn about Git</a>
                                     </li>
                                     <li>
-                                        <a class="barLink" href="https://www.visualstudio.com/devops/"><img src="_img/index/team-services-devops.svg" alt="" />Learn about DevOps</a>
+                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-devops/"><img src="_img/index/team-services-devops.svg" alt="" />Learn about DevOps</a>
                                     </li>
                                     <li>
-                                        <a class="barLink" href="https://www.visualstudio.com/agile/"><img src="_img/index/team-services-agile.svg" alt="" />Learn about Agile</a>
+                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-agile/"><img src="_img/index/team-services-agile.svg" alt="" />Learn about Agile</a>
                                     </li>
                                 </ul>
 
