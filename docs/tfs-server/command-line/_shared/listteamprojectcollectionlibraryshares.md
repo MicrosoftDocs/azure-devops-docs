@@ -6,7 +6,7 @@ Center Virtual Machine Manager (SCVMM). and are assigned to a team
 project collection by using the [TFSConfig Lab /LibraryShare Commands](#lab-libraryshare). 
 Team project collection library shares can be added to a team project by
 using the **CreateTeamProjectLibraryShare** command. For more
-information, see [TFSLabConfig CreateTeamProjectLibraryShare Command](#createteamprojectlibraryshare).
+information, see [TFSLabConfig CreateTeamProjectLibraryShare Command](createteamprojectlibraryshare.md).
 
 **Required Permissions:**
 
