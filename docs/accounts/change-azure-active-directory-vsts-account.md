@@ -26,7 +26,7 @@ You'll need:
 
 *	VSTS account owner permissions. Only account 
 owners can manage directory connections. 
-[How do I find the account owner?](#find-owner)
+[How do I find the account owner?](faq-change-app-access.md#find-owner)
 
 *	At least Basic access, not Stakeholder
 
@@ -206,44 +206,3 @@ Learn [how to change VSTS account owners](change-account-ownership-vs.md).
 
 0.	Remove the Microsoft account that you used for the migration
 from your source and target Azure subscriptions and directories.
-
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-####Q:	Why don't I see the directory that I want to connect? What do I do?
-
-A:	This might happen because:
-
-*	You don't have [administrator permissions](#permissions) 
-to manage directory connections.
-
-*	You don't have a 
-[valid "full" Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/), 
-like a "Pay-As-You-Go" subscription, associated with the directory 
-that you want to use. This typically happens with Office 365 Azure AD.
-
-*	Your VSTS account isn't linked to the Azure subscription 
-associated with your directory.
-
-Learn [how to resolve why you can't see your directory](faq-azure-access.md#why-not-my-directory).
-
-<a name="find-owner"></a>
-
-[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
-
-[!INCLUDE [why-no-owned-accounts](../_shared/qa-why-no-owned-accounts.md)]
-
-<a name="ChooseOrgAcctMSAcct"></a>
-
-[!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
-
-[!INCLUDE [choose-msa-azuread-account2](../_shared/qa-choose-msa-azuread-account2.md)]
-
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
-
-<a name="get-support"></a>
-
-[!INCLUDE [get-team-services-support](../_shared/qa-get-vsts-support.md)]
-
-<!-- ENDSECTION --> 

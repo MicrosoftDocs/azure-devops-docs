@@ -39,7 +39,7 @@ you want to buy VSTS extensions from the
 Microsoft Azure handles billing for your VSTS account, 
 so you'll need:
 
-* [VSTS project collection administrator or account owner permissions](#find-owner)
+* [VSTS project collection administrator or account owner permissions](faq-billing-setup.md#find-owner)
 
 <a name="EligibleAzureSubscription"></a>
 

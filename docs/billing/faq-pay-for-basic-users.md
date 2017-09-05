@@ -88,7 +88,7 @@ of VSTS users that you're paying to get Basic access.
 <div id="azure-portal-0" class="tab-pane fade in active">
 <p>**Azure portal**
 <p>
-<p>Before you start, you'll need [VSTS project collection administrator or account owner permissions](#find-owner). 
+<p>Before you start, you'll need [VSTS project collection administrator or account owner permissions](faq-billing-setup.md#find-owner). 
 You'll also need at least [Co-administrator permissions](add-backup-billing-managers.md) 
 for the Azure subscription that's linked to your VSTS account.
 <p>

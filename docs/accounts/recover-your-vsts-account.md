@@ -21,7 +21,7 @@ After 90 days, your account and data are permanently deleted.
 
 You'll need VSTS account owner 
 permissions to restore your VSTS account. 
-[How do I find the account owner?](#find-owner)
+[How do I find the account owner?](faq-delete-restore-vsts-account.md#find-owner)
 
 0.	Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 

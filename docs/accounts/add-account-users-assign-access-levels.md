@@ -56,7 +56,7 @@ Make sure to sign in with the ID that you used to purchase your subscriptions.
 
 Access levels control which features are available to users, 
 while permissions control their access to account resources. 
-[Can't access some features?](#feature-access) 
+[Can't access some features?](faq-add-delete-users.md#feature-access) 
 For TFS, learn [how to change access levels](../security/change-access-levels.md) 
 or [buy more access to TFS or the Test hub](../billing/buy-access-tfs-test-hub.md). 
 
@@ -70,7 +70,7 @@ learn [how to change paid extension users](../billing/change-number-paid-extensi
 
 ## Required permissions
 
-You'll need [VSTS project collection administrator or account owner permissions](#find-owner). 
+You'll need [VSTS project collection administrator or account owner permissions](faq-add-delete-users.md#find-owner). 
 
 ##	Add users to your Visual Studio Team Services account
 
@@ -81,7 +81,7 @@ You'll need [VSTS project collection administrator or account owner permissions]
 
 0.  Go to **Users** where you can view and assign access levels for all account users.
 
-	Why can't I access the Users hub?  You must have [VSTS project collection administrator permissions or account owner permissions](#find-owner) to access the Users hub.
+	Why can't I access the Users hub?  You must have [VSTS project collection administrator permissions or account owner permissions](faq-add-delete-users.md#find-owner) to access the Users hub.
 
  > [!NOTE]
  > If have an Azure Active Directory (Azure AD) backed VSTS account, and you need to add users who are 
@@ -105,7 +105,7 @@ Select their access level, based on the features they need.
 	unless your VSTS account 
 	authenticates users and control account access through 
 	[Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
-	[Learn if your VSTS account uses your organization's directory](#ConnectedDirectory). 
+	[Learn if your VSTS account uses your organization's directory](faq-add-delete-users.md#ConnectedDirectory). 
 	If your users don't have Microsoft accounts, 
 	have them [sign up](https://signup.live.com/).
 
@@ -151,7 +151,7 @@ Select their access level, based on the features they need.
 	   
 	![VSTS validates Visual Studio subscribers when they sign in](_img/assign-licenses/vso-usershub-licensevalidated.png)
 
-	[Why won't my subscription validate when I sign in?](#ValidateMSDNSubscription)
+	[Why won't my subscription validate when I sign in?](faq-add-delete-users.md#ValidateMSDNSubscription)
 
 	And here's what a team might look like after 
 	adding Visual Studio subscribers, some free users who get Basic features, 
@@ -175,7 +175,7 @@ click **Send Invitation**.
 0.	After adding users to your account, 
 you can [add them to team projects](add-team-members-vs.md).
 
-    [Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](#users-delay)
+    [Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](faq-add-delete-users.md#users-delay)
 
 
 ##	Next
@@ -201,8 +201,4 @@ or [customize your process](../work/process/customize-process.md)
 
 *	[Grow and scale your teams](../work/scale/multiple-teams.md)
 
-
-## Troubleshooting
-
-[Troubleshooting](faq-add-delete-users.md)
 

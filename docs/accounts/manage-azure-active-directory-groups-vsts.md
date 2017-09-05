@@ -87,8 +87,6 @@ the contact card icon to the right of the name.
 
 ##	Q&A
 
-<!-- BEGINSECTION class="md-qanda" -->
-
 <a name="ChangeMSA"></a>
 ####Q: My account uses Microsoft accounts only. Can I switch to Azure AD?
 
@@ -236,5 +234,3 @@ A: We'd love to hear from you. For help from the Microsoft Developer Community,
 visit the [Visual Studio Team Services forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=TFService).
 For suggestions, visit
 [Visual Studio UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services).
-
-<!-- ENDSECTION -->

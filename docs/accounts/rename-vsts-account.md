@@ -23,7 +23,7 @@ So before you start, find out
 
 To change your VSTS account URL, 
 you'll need at least Basic access and account owner permissions. 
-[How do I find the account owner?](#find-owner)
+[How do I find the account owner?](faq-delete-restore-vsts-account.md#find-owner)
 
 0.  Sign in to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).
 
@@ -43,27 +43,3 @@ Give your account a new name. Save your changes.
     ![Confirm renaming your account, provide new account name](_img/rename-vso-account/vsoconfirmaccountrename.png)
 
 	[Need help?](#get-support)
-
-##  Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<a name="find-owner"></a>
-
-[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
-
-[!INCLUDE [why-no-owned-accounts](../_shared/qa-why-no-owned-accounts.md)]
-
-<a name="ChooseOrgAcctMSAcct"></a>
-
-[!INCLUDE [choose-msa-azuread-account](../_shared/qa-choose-msa-azuread-account.md)]
-
-[!INCLUDE [choose-msa-azuread-account2](../_shared/qa-choose-msa-azuread-account2.md)]
-
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
-
-<a name="get-support"></a>
-
-[!INCLUDE [get-team-services-support](../_shared/qa-get-vsts-support.md)]
-
-<!-- ENDSECTION -->
