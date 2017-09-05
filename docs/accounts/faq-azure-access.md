@@ -220,7 +220,7 @@ account owner created the account or sometime after that.
 When you create a VSTS account with a work or school account, 
 your VSTS account is automatically connected to the directory 
 that manages that work or school account. 
-You can [disconnect your VSTS account](#DisconnectDirectory) from this directory 
+You can [disconnect your VSTS account](disconnect-account-from-aad.md) from this directory 
 and reconnect to another directory, but you might have to migrate some users.
 
 <a name="AlternateCredentials"></a>

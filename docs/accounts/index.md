@@ -23,7 +23,7 @@ Use this index to setup and manage your account and configure key settings to su
 
 ## 5-Minute Quickstarts  
 
-* [Create your account with a person Microsoft account](create-account-with-work-school.md)
+* [Create your account with a personal Microsoft account](create-account-with-work-school.md)
 
 * [Create your account with a work or school account](create-account-with-work-school.md)
 
@@ -52,7 +52,7 @@ Use this index to setup and manage your account and configure key settings to su
 
 * [Pay for more users](../billing/buy-basic-access-add-users.md)
 
-* [Permissions and access](../security/permissions-access.md). 
+* [Permissions and access](../security/permissions-access.md)
 
 * [Manage users and access](add-account-users-assign-access-levels.md)
 

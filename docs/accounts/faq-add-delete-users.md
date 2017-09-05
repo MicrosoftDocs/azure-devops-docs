@@ -212,7 +212,7 @@ you can [pay for these users](../billing/buy-basic-access-add-users.md).
 Otherwise, on the 1st day of the calendar month, users who haven't 
 signed into your account the longest will lose access first. 
 If your account has users who don't need access anymore, 
-[remove them from your account](#delete-user).
+[remove them from your account](delete-account-users.md).
 
 *	You no longer have access to 
 [features that are available only as extensions](https://www.visualstudio.com/team-services/compare-features/). 
