@@ -16,21 +16,6 @@
     href: get-started-maven.md
 - name: How-to
   items:
-<<<<<<< HEAD
-  - name: Build
-    items:
-    - name: Build with NuGet
-      href: build/team-build-nuget.md
-    - name: Build with npm
-      href: build/team-build-npm.md
-    - name: Build with Jenkins
-      href: build/jenkins.md
-    - name: Build with Maven
-      href: maven/maven-team-build.md
-    - name: Build with Gradle
-      href: /vsts/package/gradle/pull-package-gradle.md
-  - name: Feeds
-=======
   - name: Use Package Management in Team Build
     items:
     - name: NuGet
@@ -50,7 +35,6 @@
       - name: Use Package Management Maven packages
         href: /vsts/build-release/packages/maven?toc=/vsts/package/toc.json
   - name: Use feeds
->>>>>>> 444e08611ed4b82c6195dbb315c450fff7ecf6f5
     items:
     - name: Create a feed
       href: feeds/create-feed.md
