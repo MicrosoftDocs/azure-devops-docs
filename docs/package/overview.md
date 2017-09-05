@@ -7,7 +7,7 @@ ms.technology: vs-devops-package
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
-ms.date: 08/10/2016
+ms.date: 09/01/2017
 ---
 
 # Package Management in Team Services and TFS
@@ -15,9 +15,8 @@ ms.date: 08/10/2016
 <img alt="Welcome to package management" src="_shared/_img/bo-package-push.png" height="300px">
 
 > [!NOTE]
-> Package Management is an **[extension](http://go.microsoft.com/fwlink/?LinkId=723595)** that makes it easy to discover, install, and publish packages.
->It's deeply integrated with other Team Services and TFS hubs like Build so that package management can become a seamless part of your existing workflows.
->The extension must be installed from the Marketplace to create or consume packages.
+> Package Management is an **[extension](http://go.microsoft.com/fwlink/?LinkId=723595)** that hosts NuGet and npm packages alongside all your other VSTS assets: source code, builds, releases, etc.
+> The extension must be installed from the Marketplace to create or consume packages.
 
 ## Package Management Overview
 

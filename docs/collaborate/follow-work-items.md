@@ -7,6 +7,7 @@ ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/21/2017  
+ms.topic: get-started-article
 ---
 
 # Follow a work item or pull request  
@@ -82,7 +83,7 @@ You can also view and manage work that you're following from the Account home pa
 
 ## Related notes  
 
-- [Manage personal notifications](manage-personal-notifications.md)  
+- [Manage personal notifications](../notifications/manage-personal-notifications.md)  
 - [Set team notifications](manage-team-notifications.md)  
 - [Set personal or team alerts](../work/track/alerts-and-notifications.md)  
 - [View and update work items via the mobile work item form](mobile-work.md)  

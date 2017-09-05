@@ -3,7 +3,6 @@ title: Workflow states and state categories | VSTS & TFS
 description: Understand how workflow states map to state categories   
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
 ms.author: kaelli
 ms.manager: douge

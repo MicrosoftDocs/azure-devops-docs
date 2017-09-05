@@ -3,7 +3,6 @@ title: Import, export, and manage work item types | VSTS & TFS
 description: Understand how to use the witadmin commands and to manage work item types for a team project - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 97d7ea1c-df1f-4999-adc9-b38dd2a6cca6
 ms.manager: douge
 ms.author: kaelli

@@ -2,7 +2,6 @@
 title: Use TFVC and Git repos in the same team project | VSTS & TFS
 description: Using Version Control in Your Team Services team project
 ms.assetid: F1DE1F34-50BD-49A6-BF67-D27F884944F4
-ms.topic: code reference (API)
 toc: show
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 

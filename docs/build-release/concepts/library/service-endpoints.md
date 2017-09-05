@@ -4,7 +4,6 @@ description: Understand Service endpoints in Visual Studio Team Services (VSTS) 
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

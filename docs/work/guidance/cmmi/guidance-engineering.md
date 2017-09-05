@@ -3,7 +3,6 @@ title: Engineering | VSTS & TFS
 description: Reads the Engineering section of the MSF for CMMI Process Improvement guidance covers the value-added activities for discovering the information that is required to design and build software products - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: cmmi
 ms.assetid: 53c52c0e-da53-4f9c-afc4-6c6260d32ccc
 ms.manager: douge
 ms.author: kaelli

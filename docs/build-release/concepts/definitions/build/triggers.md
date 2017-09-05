@@ -13,15 +13,6 @@ ms.date: 08/04/2016
 
 **VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190718%28v=vs.120%29.aspx)**
 
-<!--
-<div style="padding:5px;border-bottom:1px solid #ccc;font-family:Segoe UI;font-size:13px;margin-bottom:15px">
-
-![Definition edit panel header](_img/_shared/definition-edit-panel-header.png)<br/>
-
-[Build](build.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Options](options.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Repository](repository.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Variables](variables.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **[Triggers](#)**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [General](general.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Retention](retention.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [History](history.md)
-</div>
--->
-
 On the **Triggers** tab you specify the events that will trigger the build. You can use the same build definition for both CI and scheduled builds.
 
 <a name="ci"></a>

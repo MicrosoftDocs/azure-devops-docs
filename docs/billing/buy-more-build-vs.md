@@ -1,7 +1,6 @@
 ---
 title: How to buy build hosted and private pipelines | VSTS
 description: Buy more capacity for builds and releases by purchasing more private or hosted pipelines in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
-ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-billing
 ms.service: vsts-admin

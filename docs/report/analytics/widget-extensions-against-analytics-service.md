@@ -44,7 +44,7 @@ At the end of this walk-through you will have a working dashboard widget which a
 5. Add an empty file called **analytics.js** to the **AnalyticsWidgetExtensionSample\scripts** folder - this is where the code
 for the widget will go
 6. Add another folder called **images** to the AnalyticsWidgetExtensionSample folder and copy an image you would like to use
-as your extension image (see this [topic](https://www.visualstudio.com/extend/develop/add-dashboard-widget#image) for details on the image)
+as your extension image (see this [topic](/vsts/extend/develop/add-dashboard-widget#image) for details on the image)
 7. Copy the c3.min.css file into the **AnalyticsWidgetExtensionSample\content** folder
 8. Add a file called **widget.css** into the content folder
 8. In the AnalyticsWidgetExtensionSample folder create a new web page called **Analytics.html**
@@ -127,7 +127,7 @@ VSS.require(["TFS/Dashboards/WidgetHelpers", "VSS/Authentication/Services"], fun
 //Reusable function to call the analytics service and build the chart
 ```
 
-The [register](https://www.visualstudio.com/extend/reference/client/core-sdk#method_register) method takes the name of the widget, 
+The [register](/vsts/integrate/extensions/reference/client/core-sdk#method_register) method takes the name of the widget, 
 as defined in the manifest which hasn't been created yet, and a function to execute.
 
 **Retrieve data and build the chart**

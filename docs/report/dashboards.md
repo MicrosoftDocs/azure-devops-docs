@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article 
+ms.topic: get-started-article
 ms.date: 06/02/2017
 ---
 
@@ -133,7 +133,7 @@ See these additional resources to help you support your team:
 
 ### Extensibility 
 
-Using the REST API service, you can [add a dashboard](/vsts/integrate/api/dashboard/dashboards) or [create a dashboard widget ](https://www.visualstudio.com/en-us/integrate/extensions/develop/add-dashboard-widget). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](/vsts/integrate/api/dashboard/overview).  
+Using the REST API service, you can [create a dashboard widget](/vsts/extend/develop/add-dashboard-widget). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/vsts/dashboard/dashboards).  
 
 
 <!---  

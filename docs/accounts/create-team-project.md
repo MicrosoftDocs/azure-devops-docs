@@ -8,6 +8,7 @@ ms.service: vsts-admin
 ms.manager: douge
 ms.author: douge
 ms.date: 04/13/2017
+ms.topic: get-started-article
 ---
 
 # Create a team project

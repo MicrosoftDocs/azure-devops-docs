@@ -199,7 +199,7 @@ Reports will not work as expected until the jobs have run.
 	You can also clear some TFS specific cache using the tfs redirect url
 	and providing a "clearcache" parameter. For example
 
-		```http://<SharePointServer>/sites/<TeamProjectCollectionName>/<TeamProjectName>/_layouts/TfsRedirect.aspx?tf:type=Report&tf:clearcache=1```
+	```http://<SharePointServer>/sites/<TeamProjectCollectionName>/<TeamProjectName>/_layouts/TfsRedirect.aspx?tf:type=Report&tf:clearcache=1```
 
 ## Q&A
 

@@ -8,7 +8,6 @@ ms.assetid: 77b385a2-069a-4704-9a17-ad9f79a36f17
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/29/2016
-ms.topic: get-started-article
 ---
 
 # Package, publish, unpublish, and install Team Services extensions

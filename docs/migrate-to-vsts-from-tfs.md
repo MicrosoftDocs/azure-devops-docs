@@ -42,7 +42,7 @@ build definitions, test plans, and so forth – are harder to manually migrate.
 ### Option 2: High fidelity database migration.
 
 The TFS/Team Services product team recently released a preview of a high fidelity TFS Database Import Service. More
-information on this service can be found at [High Fidelity Migration](https://www.visualstudio.com/en-us/articles/migration-overview). A downloadable migration
+information on this service can be found at [High Fidelity Migration](tfs-server/migration/migration-overview.md). A downloadable migration
 guide is available at [https://aka.ms/TFSImportData](https://aka.ms/TFSImportData). 
 
 <a href="https://aka.ms/TFSImportData">

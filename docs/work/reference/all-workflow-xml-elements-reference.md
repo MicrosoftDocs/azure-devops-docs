@@ -3,7 +3,6 @@ title: All WORKFLOW XML elements reference | VSTS & TFS
 description: Use the information in this topic as a quick reference to all the elemetns and main attributes - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 59689226-f7f1-4046-866e-3030aad806ae
 ms.author: kaelli
 ms.manager: douge

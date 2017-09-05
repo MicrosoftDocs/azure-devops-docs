@@ -101,7 +101,7 @@ Now add a grid control to display some data in ```hello-world.html```.
 
 Call a REST API and display the results in the grid control.
 
-1. Get the [client service](../reference/client/rest-clients.md). In this case, we're getting the work item tracking client.
+1. Get the `client service`. In this case, we're getting the work item tracking client.
 
 	Change this:
 	```javascript

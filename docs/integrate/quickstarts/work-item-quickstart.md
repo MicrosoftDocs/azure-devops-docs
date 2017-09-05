@@ -8,6 +8,7 @@ ms.service: vsts-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 06/27/2017
+ms.topic: get-started-article
 ---
 
 # Fetch work items with queries programatically in Visual Studio Team Services

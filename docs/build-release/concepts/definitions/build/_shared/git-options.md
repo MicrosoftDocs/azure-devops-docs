@@ -20,4 +20,6 @@ In these cases this option can help you conserve network and storage resources. 
 
 * **TFS 2017 and TFS 2015 (OSX and Linux only):** On the **Variables** tab, set _Agent.Source.Git.ShallowFetchDepth_ to the number of commits in history you want to download. Specify 0 to set no limit.
 
-> **Tip:** If you're using VSTS, the above variables also work and override the check box controls. So for example, you can override the setting when you queue the build.
+> [!TIP]
+>
+> If you're using VSTS, the above variables also work and override the check box controls. So for example, you can override the setting when you queue the build.

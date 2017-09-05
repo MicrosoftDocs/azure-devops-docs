@@ -7,7 +7,6 @@ ms.assetid: c0f08f71-39cd-48ac-aff0-0618c57229c7
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
-ms.topic: get-started-article
 ---
 
 # UserVoice

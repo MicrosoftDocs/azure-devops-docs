@@ -6,7 +6,6 @@ ms.prod: vs-devops-alm
 ms.assetid: 2C0977AB-91A4-477C-870E-FA5540E76F4B
 ms.manager: douge
 ms.author: kaelli
-ms.topic: get-started-article     
 ms.date: 06/01/2017
 ---
 <a id="switch-team-context">  </a>

@@ -1,6 +1,6 @@
 ---
-title: How to set up TFS on a single server
-description: How to set up Team Foundation Server (or TFS Express) on a single using the basic configuration wizard
+title: Install TFS on a single server
+description: Set up Team Foundation Server (or TFS Express) on a single server using the basic configuration wizard
 ms.prod: vs-devops-alm
 ms.technology: tfs-on-prem
 ms.assetid: 36d82fcb-e849-41e1-a33f-68974c15fbd4
@@ -8,9 +8,10 @@ toc: show
 ms.manager: douge
 ms.author: aaronha
 ms.date: 08/04/2016
+ms.topic: get-started-article
 ---
 
-# How to set up TFS on a single server
+# Install TFS on a single server
 
 **TFS 2017** | **TFS 2015**
 

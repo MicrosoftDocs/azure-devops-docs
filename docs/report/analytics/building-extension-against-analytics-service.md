@@ -88,7 +88,7 @@ VSS.notifyLoadSucceeded();
 
 ### Handle authentication 
 
-For a more comprehensive discussion of security, see [Auth and security](https://www.visualstudio.com/extend/develop/auth).
+For a more comprehensive discussion of authentication, see [Choosing the right authentication mechanism](/vsts/integrate/get-started/authentication/authentication-guidance).
 To get an authorization token, replace the **Get authentication token** comment from the code above with the following:
 
 ```
@@ -180,7 +180,7 @@ var chart = c3.generate({
 
 ### Create the manifest   
 
-Full documentation on extension manifests can be found in the [Extension manifest reference](https://www.visualstudio.com/extend/develop/manifest) documentation.
+Full documentation on extension manifests can be found in the [Extension manifest reference](/vsts/extend/develop/manifest) documentation.
 For the purposes of this sample, use the following manifest and copy it into a file called vss-extension.json in the root folder.
 
 ```

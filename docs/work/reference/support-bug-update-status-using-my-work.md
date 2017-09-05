@@ -3,7 +3,6 @@ title: Support bug update status using My Work | VSTS & TFS
 description: Update the ProcessConfiguration bug category states to support code review requests working from Visual Studio   
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 355d8fb4-d8fa-49ad-b1a2-7baaec3556cc
 ms.manager: douge
 ms.author: kaelli

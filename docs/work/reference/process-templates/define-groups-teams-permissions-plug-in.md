@@ -3,7 +3,6 @@ title: Define groups, teams, and permissions using the Groups and Permissions Pl
 description: Customizes Groups and Permission plug-in to have access to groups, teams, add groups and users as members to groups, and grant permissions to the groups - Team Foundation Server (TFS) 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 322a80cc-0396-43d7-8be3-63d5cce058d3
 ms.manager: douge
 ms.author: kaelli

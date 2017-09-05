@@ -3,7 +3,6 @@ title: Control access to functional areas | VSTS & TFS
 description: Configure the initial security settings for the following functional areas for a team project - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 6c967b40-4842-41db-9350-bb3320f3e57c
 ms.author: kaelli
 ms.manager: douge

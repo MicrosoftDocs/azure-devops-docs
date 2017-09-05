@@ -3,7 +3,6 @@ title: Update a team project manually to support test management | VSTS & TFS
 description: Update a team project manually to support test management.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: edbe689d-7863-4273-916f-b7e93b7f00b3
 ms.manager: douge
 ms.author: kaelli

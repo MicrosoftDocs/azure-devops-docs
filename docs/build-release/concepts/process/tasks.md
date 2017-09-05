@@ -4,7 +4,6 @@ description: Understand Build and Release tasks in Visual Studio Team Services (
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: alewis
 ms.date: 4/19/2017

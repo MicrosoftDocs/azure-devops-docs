@@ -3,7 +3,6 @@ title: LabelText and Text XML elements reference | VSTS & TFS
 description: Adds a standalone label or informational text to a work item form by using the LabelText element - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 6ff20e50-cef6-4278-96c4-9fd69f7e2d3a
 ms.manager: douge
 ms.author: kaelli

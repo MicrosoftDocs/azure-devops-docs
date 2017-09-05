@@ -2,7 +2,7 @@
 
 Your CD release process picks up the artifacts published by your CI build and then deploys them to your Azure web site.
 
-1. Do one of the following:
+1. Do one of the following to start creating a release definition:
 
    * If you've just completed a CI build (see above), choose the link (for example, _Build 20170815.1_)
      to open the build summary. Then choose **Release** to start a new release definition that's automatically linked to the build definition.
@@ -14,7 +14,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
      ![Creating a new release definition in the Releases page](_img/release-from-release-page.png)
 
-1. If you are deploying a Node app, select the **Deploy Node.js App to Azure App Service** template. 
+1. The easiest way to create a release definition is to use a template. If you are deploying a Node app, select the **Deploy Node.js App to Azure App Service** template. 
    Otherwise, select the **Azure App Service Deployment** template. Then choose **Apply**.
 
    > The only difference between these templates is that Node template configures the task to generate a **web.config** file containing a parameter that starts the **iisnode** service.

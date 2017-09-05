@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/20/2017
+ms.date: 09/01/2017
 ---
 
 # Process configuration XML element reference
@@ -71,25 +71,28 @@ You can customize the following elements for the product backlog, sprint backlog
 
 You configure backlogs within the XML sections that appear in the following sample:
 
-    <PortfolioBacklogs>
-       <PortfolioBacklog category="Microsoft.EpicCategory" pluralName="Epics" singularName="Epic" workItemCountLimit="1000">
-    . . . 
-       </PortfolioBacklog>
+> [!div class="tabbedCodeSnippets"]
+```XML
+<PortfolioBacklogs>
+   <PortfolioBacklog category="Microsoft.EpicCategory" pluralName="Epics" singularName="Epic" workItemCountLimit="1000">
+. . . 
+   </PortfolioBacklog>
+   <PortfolioBacklog category="Microsoft.FeatureCategory" pluralName="Features" singularName="Feature" parent="Microsoft.EpicCategory" workItemCountLimit="1000">
+. . . 
+   </PortfolioBacklog>
+</PortfolioBacklogs>
+<RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="User Story" workItemCountLimit="1000">
+. . . 
+</RequirementBacklog>
+<TaskBacklog category="Microsoft.TaskCategory" pluralName="Tasks" singularName="Task" workItemCountLimit="1000">
+. . . 
+</TaskBacklog>
+```
 
-         <PortfolioBacklog category="Microsoft.FeatureCategory" pluralName="Features" singularName="Feature" parent="Microsoft.EpicCategory" workItemCountLimit="1000">
-    . . . 
-       </PortfolioBacklog>
-    </PortfolioBacklogs>
-    <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="User Story" workItemCountLimit="1000">
-    . . . 
-    </RequirementBacklog>
-    <TaskBacklog category="Microsoft.TaskCategory" pluralName="Tasks" singularName="Task" workItemCountLimit="1000">
-    . . . 
-    </TaskBacklog>
 
+> [!NOTE]   
+> Depending on the process associated with your ProcessConfiguration file&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md)&mdash;the `pluralName` for the `RequirementCategory` will correspond to `Stories` (Agile), `Backlog Items` (Scrum), or `Requirements` (CMMI). All three are similar: they describe the customer value to delivered and the work to be performed.  
 
->[!NOTE]   
->Depending on the process associated with your ProcessConfiguration file&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md)&mdash;the `pluralName` for the `RequirementCategory` will correspond to `Stories` (Agile), `Backlog Items` (Scrum), or `Requirements` (CMMI). All three are similar: they describe the customer value to delivered and the work to be performed.  
 
 #### Syntax for PortfolioBacklogs elements
 
@@ -168,15 +171,18 @@ State categories, on the other hand, determine how the Agile planning tools trea
 
 By associating each workflow state to a state category, the background operations performed to display the backlog and task boards know how to correctly interpret the status of each work item. For example, the following mappings are defined for the Scrum product backlog.
 
-    <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Backlog items" singularName="Backlog item">
-       <States>
-          <State value="New" type="Proposed" />
-          <State value="Approved" type="Proposed" />
-          <State value="Committed" type="InProgress" />
-          <State value="Done" type="Complete" />
-       </States>
-     . . .
-    </RequirementBacklog >
+> [!div class="tabbedCodeSnippets"]
+```XML
+<RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Backlog items" singularName="Backlog item">
+   <States>
+      <State value="New" type="Proposed" />
+      <State value="Approved" type="Proposed" />
+      <State value="Committed" type="InProgress" />
+      <State value="Done" type="Complete" />
+   </States>
+ . . .
+</RequirementBacklog>
+```
 
 There are three groups of state categories: Agile, Bug, and Feedback. The following table describes the mapping attributes and values.
 
@@ -242,13 +248,17 @@ Specify which fields you want displayed on each backlog within the **Columns** s
 
 Here's the default configuration defined by the Scrum process template for the product backlog.
 
-    <Columns>
-       <Column refname="Microsoft.VSTS.Common.Priority" width="400" />
-       <Column refname="System.Title" width="400" />
-       <Column refname="System.State" width="100" />
-       <Column refname="Microsoft.VSTS.Scheduling.Effort" width="50" />
-       <Column refname="System.IterationPath" width="200" />
-    </Columns>
+> [!div class="tabbedCodeSnippets"]
+```XML
+<Columns>
+   <Column refname="Microsoft.VSTS.Common.Priority" width="400" />
+   <Column refname="System.Title" width="400" />
+   <Column refname="System.State" width="100" />
+   <Column refname="Microsoft.VSTS.Scheduling.Effort" width="50" />
+   <Column refname="System.IterationPath" width="200" />
+</Columns>
+```
+
 
 #### Syntax for Columns elements
 <table>
@@ -288,11 +298,15 @@ The panel only displays fields that are included in the **FIELDS** section of th
 
 The following code corresponds to the default assignments defined in the Visual Studio Scrum and MSF for Agile process templates.
 
-    <AddPanel>
-       <Fields>
-          <Field refname="System.Title" />
-       </Fields>
-    </AddPanel>
+> [!div class="tabbedCodeSnippets"]
+```XML
+<AddPanel>
+   <Fields>
+      <Field refname="System.Title" />
+   </Fields>
+</AddPanel>
+```
+
 
 #### Syntax for AddPanel elements
 <table>
@@ -329,9 +343,12 @@ For performance reasons, the task board is restricted to display a maximum of 10
 
 For example, you can decrease the limit by specifying `workItemCountLimit="800"`:
 
-    <TaskBacklog category="Microsoft.TaskCategory" pluralName="Tasks" singularName="Task" workItemCountLimit="800" >
-    . . .
-    </TaskBacklog>
+> [!div class="tabbedCodeSnippets"]
+```XML
+<TaskBacklog category="Microsoft.TaskCategory" pluralName="Tasks" singularName="Task" workItemCountLimit="800" >
+. . .
+</TaskBacklog>
+```
 
 <a id="tool_wits">  </a>
 
@@ -339,18 +356,22 @@ For example, you can decrease the limit by specifying `workItemCountLimit="800"`
 
 State category mappings are defined for additional WIT categories. For the Scrum process template, this includes mappings for the feedback request and response categories. For the MSF Agile and CMMI process templates, it also includes mappings for the bug category. (Scrum includes bugs in the Requirement Category and therefore defines the state category mappings within the **RequirementBacklog** section.)
 
-    <FeedbackRequestWorkItems category="Microsoft.FeedbackRequestCategory" pluralName="Feedback Requests" singularName="Feedback Request">
-       <States>
-          <State value="Active" type="InProgress" />
-          <State value="Closed" type="Complete" />
-       </States>
-    </FeedbackRequestWorkItems>
-    <FeedbackResponseWorkItems category="Microsoft.FeedbackResponseCategory" pluralName="Feedback Responses" singularName="Feedback Response">
-       <States>
-       <State value="Active" type="InProgress" />
-       <State value="Closed" type="Complete" />
-       </States>
-    </FeedbackResponseWorkItems>
+> [!div class="tabbedCodeSnippets"]
+```XML
+<FeedbackRequestWorkItems category="Microsoft.FeedbackRequestCategory" pluralName="Feedback Requests" singularName="Feedback Request">
+   <States>
+      <State value="Active" type="InProgress" />
+      <State value="Closed" type="Complete" />
+   </States>
+</FeedbackRequestWorkItems>
+<FeedbackResponseWorkItems category="Microsoft.FeedbackResponseCategory" pluralName="Feedback Responses" singularName="Feedback Response">
+   <States>
+   <State value="Active" type="InProgress" />
+   <State value="Closed" type="Complete" />
+   </States>
+</FeedbackResponseWorkItems>
+```
+
 
 The following table describes the additional elements used to define the state category mappings for tool-specific work item types. See [Map state categories for a category of work item types](#map) for information about assigning the actual state values and types. The *CategoryName* must correspond to a category defined for the team project.
 
@@ -446,23 +467,25 @@ You can change the work item fields that are used in calculating capacity, burnd
 
 For example, if you change the `refname` assigned to `type="Activity"` then you should include the same field in the WIT definition assigned to the Task Category which captures the activity information.
 
-    <TypeFields>
-        <TypeField refname="System.AreaPath" type="Team" />
-        <TypeField refname="Microsoft.VSTS.Scheduling.RemainingWork" type="RemainingWork" format="format h" />
-        <TypeField refname=" Microsoft.VSTS.Common.BacklogPriority" type="Order" />
-        <TypeField refname="Microsoft.VSTS.Scheduling.Effort" type="Effort" />
-        <TypeField refname="Microsoft.VSTS.Common.Activity" type="Activity" />
-        <TypeField refname="Microsoft.VSTS.Feedback.ApplicationStartInformation" type="ApplicationStartInformation" />
-        <TypeField refname="Microsoft.VSTS.Feedback.ApplicationLaunchInstructions" type="ApplicationLaunchInstructions" />
-        <TypeField refname="Microsoft.VSTS.Feedback.ApplicationType" type="ApplicationType">
-            <TypeFieldValues>
-                <TypeFieldValue value="Web application" type="WebApp" />
-                <TypeFieldValue value="Remote machine" type="RemoteMachine" />
-                <TypeFieldValue value="Client application" type="ClientApp" />
-            </TypeFieldValues>
-        </TypeField>
-    </TypeFields>
-
+> [!div class="tabbedCodeSnippets"]
+```XML
+<TypeFields>
+    <TypeField refname="System.AreaPath" type="Team" />
+    <TypeField refname="Microsoft.VSTS.Scheduling.RemainingWork" type="RemainingWork" format="format h" />
+    <TypeField refname=" Microsoft.VSTS.Common.BacklogPriority" type="Order" />
+    <TypeField refname="Microsoft.VSTS.Scheduling.Effort" type="Effort" />
+    <TypeField refname="Microsoft.VSTS.Common.Activity" type="Activity" />
+    <TypeField refname="Microsoft.VSTS.Feedback.ApplicationStartInformation" type="ApplicationStartInformation" />
+    <TypeField refname="Microsoft.VSTS.Feedback.ApplicationLaunchInstructions" type="ApplicationLaunchInstructions" />
+    <TypeField refname="Microsoft.VSTS.Feedback.ApplicationType" type="ApplicationType">
+        <TypeFieldValues>
+            <TypeFieldValue value="Web application" type="WebApp" />
+            <TypeFieldValue value="Remote machine" type="RemoteMachine" />
+            <TypeFieldValue value="Client application" type="ClientApp" />
+        </TypeFieldValues>
+    </TypeField>
+</TypeFields>
+```
 
 #### Syntax for TypeFields elements
 <table>
@@ -548,11 +571,13 @@ You should not have to change the default assignments made for the following <st
 
 Non-working days are removed from calculations made by the [capacity planning tool](../scale/capacity-planning.md) and [burndown charts](../scrum/sprint-burndown.md). Default processes&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md)&mdash;specify Saturday and Sunday as non-working days. After you create a team project, [each team can set their specific non-working days](../customize/set-working-days.md).
 
-    <Weekends>
-       <DayOfWeek>Saturday</DayOfWeek>
-       <DayOfWeek>Sunday</DayOfWeek>
-    </Weekends>
-
+> [!div class="tabbedCodeSnippets"]
+```XML
+<Weekends>
+   <DayOfWeek>Saturday</DayOfWeek>
+   <DayOfWeek>Sunday</DayOfWeek>
+</Weekends>
+```
 
 #### Syntax for Weekends elements
 <table>
@@ -591,23 +616,27 @@ At a glance, you can differentiate WITs when viewing a query result or backlog b
 
 The Scrum process template defines the following color assignments. Similar ones are made for the Agile and CMMI templates.
 
-    <WorkItemColors>
-       <WorkItemColor primary="FF009CCC" secondary="FFD6ECF2" name="ProductBacklogItem" />
-       <WorkItemColor primary="FF773B93" secondary="FFEEE2F2" name="Feature" />
-       <WorkItemColor primary="FFFF7B00" secondary="FFFFD7B5" name="Epic" />
-       <WorkItemColor primary="FFF2CB1D" secondary="FFF6F5D2" name="Task" />
-       <WorkItemColor primary="FFCC293D" secondary="FFFAEAE5" name="Bug" />
-       <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Code Review Request" />
-       <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Code Review Response" />
-       <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Feedback Request" />
-       <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Feedback Response" />
-       <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Impediment" />
-       <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Shared Step" />
-       <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Test Case" />
-       <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Test Plan" />
-       <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Test Suite" />
-       <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Shared Parameter" />
-    </WorkItemColors>
+> [!div class="tabbedCodeSnippets"]
+```XML
+<WorkItemColors>
+   <WorkItemColor primary="FF009CCC" secondary="FFD6ECF2" name="ProductBacklogItem" />
+   <WorkItemColor primary="FF773B93" secondary="FFEEE2F2" name="Feature" />
+   <WorkItemColor primary="FFFF7B00" secondary="FFFFD7B5" name="Epic" />
+   <WorkItemColor primary="FFF2CB1D" secondary="FFF6F5D2" name="Task" />
+   <WorkItemColor primary="FFCC293D" secondary="FFFAEAE5" name="Bug" />
+   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Code Review Request" />
+   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Code Review Response" />
+   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Feedback Request" />
+   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Feedback Response" />
+   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Impediment" />
+   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Shared Step" />
+   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Test Case" />
+   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Test Plan" />
+   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Test Suite" />
+   <WorkItemColor primary="FFFF9D00" secondary="FFFCEECF" name="Shared Parameter" />
+</WorkItemColors>
+```
+
 
 #### Syntax for WorkItemColors elements
 <table>
@@ -644,7 +673,8 @@ The first two properties that you can set, `BugsBehavior` and `HiddenBacklogs` s
 
 Example `Properties` configuration:  
 
-```
+> [!div class="tabbedCodeSnippets"]
+```XML
  <Properties>  
       <Property name="BugsBehavior" value="AsTasks" />  
       <Property name="HiddenBacklogs" value="Microsoft.EpicCategory" />  
@@ -655,6 +685,7 @@ Example `Properties` configuration:
 		Shared Parameter=icon_test_parameter" />  
   </Properties>  
 ```
+
 The `BugsBehavior` property determines how bugs, and other WITs defined in the Bug Category, show up on backlogs and boards. Basically, you can configure whether bugs are treated as requirements, as tasks, or not appear on backlogs and boards. For details, see [Show bugs on backlogs and board](../customize/show-bugs-on-backlog.md).
 
 The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appear by default. The default is to show just the product backlog and one level of portfolio backlog, the Features backlog. Teams can determine if they want to activate the Epics backlog, or make other changes. For details, see [Organize your backlog, Activate backlog levels for your team](../customize/select-backlog-navigation-levels.md).
@@ -690,9 +721,10 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
 <li><p><strong>StateColors</strong> sets the color values for workflow states. (Requires TFS 2017 or later version) </p>
 <a id="state-colors">  </a>
 <p>The value for the property is a comma-separated list of state names and hex colors. Prefix the six-digit Hex color code with FF which denotes that the color should be fully visible.</p>
-<pre><code><Property name="StateColors" value="stateName1=color1,  
+```
+<Property name="StateColors" value="stateName1=color1,  
 stateName2=color2,..." />
-</code></pre>
+```
 <blockquote>**NOTE:**<br/>
 <b>Feature availability: </b>You can specify workflow state colors if you use Hosted XML or, for On-premises XML, you have upgraded to TFS 2015.2 or later version.   
 </blockquote> 
@@ -773,17 +805,13 @@ and, here the icon is shown within the work item form.
 <img src="_img/process-config-bug-form-header-bug-icon.png" alt="Bug work item form header, Work item type icon shown" style="border: 2px solid #C3C3C3;" />  
 
 
-
 ## Related notes
 
 Learn more about the web work item form and how to customize it from these additional topics: 
 
-- [Add or modify a work item type](../customize/add-modify-wit.md)  
-- [New work item experience](../process/new-work-item-experience.md)  
-- [Add work items](../backlogs/add-work-items.md)  
+- [Add or modify a work item type](../customize/add-modify-wit.md)    
 - [Customize the new form](../customize/customize-wit-form.md)  
 - [WebLayout and Control elements](../backlogs/add-work-items.md)  
-- [LinksControlOptions elements](linkscontroloptions-xml-elements.md)  
-- [Customize the work tracking experience](../customize/customize-work.md)   
+- [On-premises XML process model](../customize/on-premises-xml-process-model.md)   
 
 If you've added a custom WIT and want to add that to either the backlog or task board, you can. You just can't have them appear in both places. Learn how by reading [Add work item types to backlogs and boards](../customize/add-wits-to-backlogs-and-boards.md).

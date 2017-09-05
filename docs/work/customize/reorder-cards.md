@@ -1,7 +1,6 @@
 ---
 title: Set Kanban board card reordering | VSTS & TFS
 description: Use the Kanban board, process, and tools to plan and track work in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.topic: get-started-article  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4

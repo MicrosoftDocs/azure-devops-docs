@@ -8,7 +8,6 @@ ms.assetid: 7b117bbf-f188-41ce-8ff6-3723ebccea81
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/22/2016
-ms.topic: get-started-article
 ---
 
 # Add a menu action

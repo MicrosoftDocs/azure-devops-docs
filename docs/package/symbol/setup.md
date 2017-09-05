@@ -4,6 +4,7 @@ description: Use the Symbol Server feature in Visual Studio Team Services to mak
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.topic: get-started-article
+ms.assetid: d14e9bc0-e333-4a46-a5dc-e081e7594316
 ms.manager: douge
 ms.author: dandanhe
 ms.date: 07/04/2017

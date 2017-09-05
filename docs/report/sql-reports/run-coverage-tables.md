@@ -3,7 +3,6 @@ title: Run Coverage tables | VSTS & TFS
 description: Uses FactRunCoverage to query for data.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 4868da2c-9402-444e-a4a4-6b99e71a27ac
 ms.manager: douge
 ms.author: kaelli

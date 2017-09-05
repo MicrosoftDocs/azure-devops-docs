@@ -4,7 +4,7 @@ description: Manage your queries by using favorites and folders
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-agile-wit
 ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC  
-ms.topic: get-started-article 
+ms.topic: get-started-article
 ms.manager: douge
 ms.author: kaelli
 ms.date: 05/31/2017  

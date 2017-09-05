@@ -3,7 +3,6 @@ title: FIELD (Definition) element reference | VSTS & TFS
 description: Syntax and usage of the FIELD element used to specify data fields within a work item type 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 67560004-04d6-411c-97fb-07f66303ef11
 ms.manager: douge
 ms.author: kaelli

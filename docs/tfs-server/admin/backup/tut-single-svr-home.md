@@ -7,6 +7,7 @@ ms.author: elbatk
 ms.date: 09/01/2016
 ms.prod: vs-devops-alm
 ms.technology: tfs-on-prem
+ms.topic: get-started-article
 ---
 
 # Restore a TFS deployment to new hardware
@@ -21,7 +22,7 @@ You must install and configure the software on the same operating system as the 
 >This tutorial contains fictitious users, servers, and companies as part of the examples that help illustrate the procedures. The example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious. No association with any real company, organization, product, domain name, email address, logo, person, places, or events is intended or should be inferred.
 
 
-## Tutorial contents
+## Tutorial procedures
 
 |Title|Description|
 |---|---|
@@ -29,3 +30,8 @@ You must install and configure the software on the same operating system as the 
 | [Restore the databases](tut-single-svr-restore-dbs.md) |Learn how to restore the databases from backups, and to restore the SharePoint farm. As part of this process, you must restore the configuration, collection, and reporting databases, and restore the SharePoint farm from backup.|
 | [Install and configure Team Foundation Server](tut-single-svr-install-config-tfs.md) |Learn how to use the Application-Tier Only wizard to install the web services and applications for TFS. As part of this process, you must install Team Foundation Server and the extensions for SharePoint Products, and configure URLs, service accounts, reporting, and analysis resources to complete the data restoration part of the recovery.|
 | [Reconnect services and users](tut-single-svr-reconn-svcs-users.md) |Learn how to complete configuration of TFS after its databases have been restored. As part of this process, you will start team project collections, add groups of users to the new server, and clear the data caches to help prevent data errors. Learn how to clear the work item cache on the new server, and learn how users can clear their version control caches on their own computers so that they don't experience data caching problems when connecting to the new server.|
+
+## Try this next
+
+> [!div class="nextstepaction"]
+> * [Prepare the new hardware](tut-single-svr-prep-new-hw.md)

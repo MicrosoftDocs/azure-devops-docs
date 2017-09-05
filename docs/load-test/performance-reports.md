@@ -8,6 +8,7 @@ ms.assetid: 1A1A725F-4A6A-4652-AFD1-FC7C9A248A7B
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/12/2016
+ms.topic: get-started-article
 ---
 
 # View and compare your load test runs

@@ -1,7 +1,6 @@
 ---
 title: Approve extension requests for your Team Services account
 description: Approve extension requests for your Team Services account
-ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-marketplace
 ms.service: vsts-marketplace

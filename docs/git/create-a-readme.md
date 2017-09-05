@@ -6,7 +6,6 @@ toc: show
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
 ms.service: vsts-code
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: routlaw
 ms.date: 10/18/2016

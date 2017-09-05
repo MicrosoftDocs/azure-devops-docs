@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Web context
 
-The [core SDK](core-sdk.md) provides an API for getting context information, for example the current project's ID (if your extension is operating at a project or team level).
+The `core SDK` provides an API for getting context information, for example the current project's ID (if your extension is operating at a project or team level).
 
 
 

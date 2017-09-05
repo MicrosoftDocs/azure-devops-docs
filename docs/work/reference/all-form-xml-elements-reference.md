@@ -3,7 +3,6 @@ title: All FORM XML elements reference | VSTS & TFS
 description: Use the information in this topic as quick reference to all the elements and main attributes - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 07E12386-621F-4749-BF75-F753B710393B
 ms.author: kaelli
 ms.manager: douge

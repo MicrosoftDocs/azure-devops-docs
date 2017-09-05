@@ -3,7 +3,6 @@ title: Manage work item fields using witadmin | VSTS & TFS
 description: 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
 ms.manager: douge
 ms.author: kaelli

@@ -4,10 +4,9 @@ description: Secure feeds using permissions in Package Management in Visual Stud
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
-ms.date: 02/13/2017
+ms.date: 09/01/2017
 ---
 
 # Secure feeds using permissions

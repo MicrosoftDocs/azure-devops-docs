@@ -3,7 +3,6 @@ title: Add the Attachments control | VSTS & TFS
 description: Lets you enable users to see and manage the file attachments of a work item - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: ff6ce2b2-1062-4b53-93ac-c226366281af
 ms.author: kaelli
 ms.manager: douge

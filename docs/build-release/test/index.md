@@ -11,6 +11,11 @@ ms.date: 08/12/2016
 
 # Continuous Testing
 
+**VSTS | TFS 2017 | TFS 2015 | [Previous version](https://msdn.microsoft.com/library/ee702477%28v=vs.120%29.aspx)**
+
+Whether your app is on-premises or in the cloud, you can automate build-deploy-test workflows and 
+choose the technologies and frameworks, then test your changes continuously in a fast, scalable, and efficient manner. 
+
 ## 5-Minute Quickstarts
 
 | | | |

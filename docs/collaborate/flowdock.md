@@ -6,7 +6,6 @@ description: Use Flowdock with your Visual Studio Team Services account
 ms.assetid: e7dbe2dd-2e40-4c2a-976f-9e4253b28e3e
 ms.manager: douge
 ms.author: elbatk
-ms.topic: get-started-article
 ms.date: 08/24/2017 
 ---
 

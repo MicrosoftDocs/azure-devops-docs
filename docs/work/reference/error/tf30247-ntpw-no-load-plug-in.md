@@ -3,7 +3,6 @@ title: TF30247-The New Team Project Wizard could not load the plug-in | TFS
 description: Occurs an error when a required plug-in is missing from the process template being used by the New Team Project Wizard to create a team project.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: 900b529d-989b-455e-960a-2553829b953f
 ms.manager: douge
 ms.author: kaelli

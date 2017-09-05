@@ -5,7 +5,6 @@ ms.assetid: d4d85217-1967-412d-b253-b6c6289dc459
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
 ms.service: vsts-code
-ms.topic: get-started-article
 toc: show
 ms.manager: douge
 ms.author: sdanie

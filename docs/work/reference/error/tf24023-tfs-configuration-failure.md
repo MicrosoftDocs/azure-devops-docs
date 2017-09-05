@@ -3,7 +3,6 @@ title: TF24023-Team Foundation Server configuration failure | TFS
 description: Occurs when the New Team Project Wizard is unable to connect to the Team Foundation Server (TFS) while creating a team project 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: 83546f98-1ca6-4b07-afe5-134df7f291bf
 ms.manager: douge
 ms.author: kaelli

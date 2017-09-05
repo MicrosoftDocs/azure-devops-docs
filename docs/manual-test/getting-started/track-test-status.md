@@ -12,7 +12,7 @@ ms.date: 08/12/2016
 
 # Track test status
 
-**Visual Studio 2017 | Visual Studio 2015 | TFS 2017 | TFS 2015 | [Previous version](https://msdn.microsoft.com/library/dn282443%28v=vs.120%29.aspx)**
+[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
 Quickly view the status of your testing using lightweight charts. 
 For example, find out how many test cases are ready to run,
@@ -185,12 +185,11 @@ Use the chart's context menu.
 
 ![Open the chart](_img/track-test-status/EditDeletePinChart.png)
 
-You can configure the dashboard widget to show a range of chart types.
-
-![Configure chart widget](_img/track-test-status/configure-dashboard-widget.png)
-
+You can [configure the dashboard widget](../../report/widget-catalog.md)
+to show a range of chart types.
 You must be a team administrator to do this, but team members with 
 Stakeholder access can view the charts on the dashboard. 
+
 Learn more about
 [dashboards](../../report/dashboards.md). 
 Or learn more about

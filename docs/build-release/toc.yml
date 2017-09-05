@@ -172,30 +172,24 @@
       href: apps/cd/scvmm/manage-vms-using-scvmm.md
     - name: Troubleshoot Azure connections
       href: actions/azure-rm-endpoint.md
-  - name: Use Package Management
+  - name: Use private packages
     items:
     - name: NuGet
       items:
-      - name: Use NuGet with VSTS
-        href: /vsts/package/nuget/nuget-exe?toc=/vsts/build-release/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
-      - name: Use dotnet with VSTS
-        href: /vsts/package/nuget/dotnet-exe?toc=/vsts/build-release/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
-      - name: Set up a multi-developer environment
-        href: /vsts/package/nuget/bootstrap-nuget?toc=/vsts/build-release/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
+      - name: Restore from Package Management
+        href: packages/nuget-restore.md
+      - name: Publish to Package Management
+        href: packages/nuget-pack-publish.md
       - name: Set up Jenkins + NuGet
-        href: /vsts/package/build/jenkins?toc=/vsts/build-release/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
+        href: packages/jenkins.md
     - name: npm
       items:
-      - name: Install an npm package
-        href: /vsts/package/npm/install?toc=/vsts/build-release/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
+      - name: Use Package Management
+        href: packages/npm.md
     - name: Maven
       items:
-      - name: Install a Maven project
-        href: /vsts/package/maven/install?toc=/vsts/build-release/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
-    - name: Gradle
-      items:
-      - name: Pull a Gradle package and build
-        href: /vsts/package/gradle/pull-package-gradle?toc=/vsts/build-release/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
+      - name: Use Package Management
+        href: packages/maven.md
   - name: Use Release Management
     items:
     - name: Releases and deployments
@@ -215,6 +209,8 @@
   items:
   - name: Build tasks
     items:
+    - name: .NET Core
+      href: tasks/build/dotnet-core.md
     - name: Android build
       href: tasks/build/android-build.md
     - name: Android signing
@@ -310,13 +306,9 @@
     - name: CocoaPods
       href: tasks/package/cocoapods.md
     - name: npm
-      href: tasks/package/npm-install.md
-    - name: NuGet Installer
-      href: tasks/package/nuget-installer.md
-    - name: NuGet Packager
-      href: tasks/package/nuget-packager.md
-    - name: NuGet Publisher
-      href: tasks/package/nuget-publisher.md
+      href: tasks/package/npm.md
+    - name: NuGet
+      href: tasks/package/nuget.md
     - name: Xamarin Component Restore
       href: tasks/package/xamarin-component-restore.md
   - name: Deploy tasks

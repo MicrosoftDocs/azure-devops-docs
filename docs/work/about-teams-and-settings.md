@@ -7,6 +7,7 @@ ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.manager: douge
 ms.author: kaelli
 ms.date: 07/21/2017
+ms.topic: get-started-article
 ---
 
 # About teams and Agile tools

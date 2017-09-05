@@ -12,8 +12,10 @@ ms.date: 07/03/2017
 
 # Get started with continuous testing
 
+[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
+
 Make sure that your app still works after every 
-check-in and build using Visual Studio Team Services (VSTS). 
+check-in and build using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). 
 Find problems earlier by running tests 
 automatically with each build. When your build is 
 done, review your test results to start resolving 

@@ -3,7 +3,6 @@ title: Define the initial configuration of Lab Management | VSTS & TFS
 description: Customizes the team project's initial security configuration for activities that are performed by using Visual Studio Lab Management - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: cd34554f-1ab8-450d-b997-942e7a2352cf
 ms.manager: douge
 ms.author: kaelli

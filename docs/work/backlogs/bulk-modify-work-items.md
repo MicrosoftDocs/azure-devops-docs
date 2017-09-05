@@ -7,7 +7,8 @@ ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2
 ms.manager: douge
 ms.author: kaelli
 ms.date: 07/14/2017
---- 
+ms.topic: get-started-article
+---
 
 # Bulk modify work items  
 

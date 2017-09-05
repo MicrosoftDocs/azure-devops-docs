@@ -3,7 +3,6 @@ title: TF30082-Team Explorer encountered the following error while launching a d
 description: Occurs when Team Explorer tries to open a document for editing with another application.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: 99ee70ef-3389-4f78-a600-3772b70c0022
 ms.manager: douge
 ms.author: kaelli

@@ -7,6 +7,7 @@ ms.technology: vs-devops-release
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/02/2017
+ms.topic: get-started-article
 ---
 
 # Deploy to IIS web server on Windows

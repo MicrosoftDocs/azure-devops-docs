@@ -46,8 +46,6 @@
   items:
   - name: REST API reference
     href: https://review.docs.microsoft.com/en-us/rest/api/vsts/?branch=master
-  - name: .NET client libraries reference
-    href: https://review.docs.microsoft.com/en-us/vsts-dotnet/api/microsoft.teamfoundation.framework.common?branch=master
 - name: How to get help
   href: ../extend/support/help.md?toc=/vsts/integrate/toc.json
 - name: Visual Studio extensions

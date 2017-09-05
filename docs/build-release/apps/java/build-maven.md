@@ -40,7 +40,7 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
 
 1. In the right panel, search for `java`, select **Maven**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
 
 1. For the **Default agent queue**:
 

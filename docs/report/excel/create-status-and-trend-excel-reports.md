@@ -7,6 +7,7 @@ ms.technology: vs-devops-reporting
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/03/2017
+ms.topic: get-started-article
 ---
 
 # Create Excel reports from a work item query  

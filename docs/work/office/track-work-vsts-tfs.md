@@ -3,7 +3,6 @@ title: Work in Excel or Project | VSTS & TFS
 description: Use Office Excel or Project to track work and plan projects in conjuction with work item tracking in VSTS & TFS 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: office
 ms.assetid: fbd7b5e1-e4c4-4976-9596-236e980fdb3b
 ms.manager: douge
 ms.author: kaelli

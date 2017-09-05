@@ -1,7 +1,6 @@
 ---
 title: Delete users using the user hub for Visual Studio Team Services
 description: Delete users using the user hub for Visual Studio Team Services
-ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
 ms.service: vsts-admin

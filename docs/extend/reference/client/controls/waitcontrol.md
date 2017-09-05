@@ -33,10 +33,3 @@ See [Use wait control](../../../develop/ui-controls/waitcontrolo.md) for basic u
   });
 ```
 
-## Options
-
-[!INCLUDE [x](../api/VSS/Controls/_shared/StatusIndicator/IWaitControlOptions.md)]
-
-## Methods
-
-[!INCLUDE [x](../api/VSS/Controls/_shared/StatusIndicator/WaitControlO.md)]

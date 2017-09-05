@@ -7,6 +7,7 @@ ms.assetid: 574CD62B-38DA-4015-9E15-36673C489D36
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/12/2016
+ms.topic: get-started-article
 ---
 
 # Continuous testing scenarios and capabilities

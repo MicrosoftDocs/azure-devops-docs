@@ -41,7 +41,3 @@ For definitions of each repository permission, see [Git repository permissions](
 >[!NOTE]  
 >Users with [Stakeholder access](../quickstart/get-started-stakeholder.md) have read-only permissions to wiki pages. These permissions can't be changed. 
 
-
-Related notes
-
-- [

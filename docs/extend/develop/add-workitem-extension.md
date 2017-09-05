@@ -8,7 +8,6 @@ ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/22/2016
-ms.topic: get-started-article
 ---
 
 # Extend the work item form
@@ -23,8 +22,6 @@ You can now customize how the work item form is presented to users via contribut
 * [Configure contributions in work item form](#showcontributions)
 
 If you are just getting started and haven't created an extension, refer to the [Create your first extension with Visual Studio](../get-started/visual-studio.md). 
-
-See [Work Item Form Service](../reference/client/api/TFS/WorkItemTracking/Services/WorkItemFormService.md) for the complete details about the service apis used in below samples.
 
 See the **UI** example in the [Team Services Extension Samples](https://github.com/Microsoft/vso-extension-samples/tree/master/ui) on GitHub for the full source.
 

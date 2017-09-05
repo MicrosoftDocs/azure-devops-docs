@@ -3,7 +3,6 @@ title: Apply pattern matching to a string field | VSTS & TFS
 description: Syntax and usage for the MATCH element to force values in a field of String type to follow specified pattern - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 1134a153-0133-4404-8690-d25e934a45f7
 ms.author: kaelli
 ms.manager: douge

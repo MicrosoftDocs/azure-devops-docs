@@ -7,6 +7,7 @@ ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/15/2017
+ms.topic: get-started-article
 ---
 
 # Add teams and team members  

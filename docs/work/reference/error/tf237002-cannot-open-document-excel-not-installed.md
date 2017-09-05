@@ -3,7 +3,6 @@ title: TF237002-Cannot open the document because Microsoft Excel 2007 or later, 
 description: Appears when a Team Foundation add-in has been disabled in an Office client.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: e10dc22d-2d09-40d8-8a90-37f6f54412ee
 ms.manager: douge
 ms.author: kaelli

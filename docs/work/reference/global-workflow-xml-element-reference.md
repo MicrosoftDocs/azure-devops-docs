@@ -3,7 +3,6 @@ title: Global Workflow XML element reference | VSTS & TFS
 description: Syntax and usage of the global workflow elements to define data fields and global lists to be shared across several team projects  
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 9e96bf19-6ba8-4686-91e3-b4aa2a57f6ac
 ms.manager: douge
 ms.author: kaelli

@@ -10,7 +10,7 @@ ms.technology: tfs-on-prem
 ---
 
 
-# Team Foundation Server concepts
+# Components, terms, and key concepts
 
 **TFS 2017** | **TFS 2015** | **TFS 2013**
 

@@ -9,13 +9,12 @@ ms.manager: douge
 ms.author: elbatk
 ms.date: 06/27/2017
 ms.custom: get-started-article
+ms.topic: get-started-article
 ---
 
 # Create a bug in Visual Studio Team Services using .NET client libraries
 
 Creating a new bug (or any work item) is pretty straight forward. You just need to set the field values and send a JSON-Patch object to the REST endpoint.
-
-You can view the sample REST endpoint (Create Work Item) [here](https://review.docs.microsoft.com/en-us/rest/api/vsts/workitemtracking/createworkitem?branch=master).
 
 ## Prerequisites
 To work on this Quickstart, you'll need the following prerequisites:
@@ -143,8 +142,6 @@ public class CreateBug
     }
 }
 ```
-
-Contracts used: [WorkItem](../../extend/reference/client/api/TFS/WorkItemTracking/Contracts/WorkItem.md), [JSONPatchDocument](../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchdocument.md), [JSONPatchOperation](../../extend/reference/client/api/vss/webapi/Contracts/jsonpatchoperation.md)
 
 ## Next Steps
 

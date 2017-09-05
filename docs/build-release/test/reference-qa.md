@@ -11,6 +11,8 @@ ms.date: 08/12/2016
 
 # FAQs for continuous testing
 
+[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
+
 <a name="gentopics"></a>
 ## General topics
 

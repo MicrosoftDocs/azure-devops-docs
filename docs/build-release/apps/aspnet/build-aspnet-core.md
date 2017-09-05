@@ -7,6 +7,7 @@ ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.manager: douge
 ms.author: alewis
 ms.date: 05/23/2017
+ms.topic: get-started-article
 ---
 
 # Build your ASP.NET Core app
@@ -45,7 +46,7 @@ ms.date: 05/23/2017
 
  ![Screenshot showing dotnet core template](_shared/_img/apply-aspnet-core-build-template.png)
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
 
 1. For the **Default agent queue**:
 

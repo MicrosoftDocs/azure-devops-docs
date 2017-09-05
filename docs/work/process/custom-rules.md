@@ -6,12 +6,16 @@ ms.prod: vs-devops-alm
 ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/12/2017
+ms.date: 09/01/2017
 ---
 
 # Add a rule to a work item type (Inheritance process model)  
 
-[!INCLUDE [temp](../_shared/process-feature-availability.md)]
+>[!IMPORTANT]  
+>This topic applies to process customization for the Inheritance process model, which supports customization of team project(s) through a shared process model.
+>
+>For the Hosted XML process model, you customize your team projects by importing a custom process template; and for the On-premises XML process model, you customize a team project by importing modified XML definition files. For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md#process-models).    
+
 
 Custom rules provide support for a number of business use cases, allowing you to go beyond setting a default value for a field or make it required. Rules allow you to clear the value of a field, copy a value into a field, and apply values based on dependencies between different fields' values. 
 

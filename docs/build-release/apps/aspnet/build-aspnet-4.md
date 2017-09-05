@@ -7,6 +7,7 @@ ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.manager: douge
 ms.author: alewis
 ms.date: 02/10/2017
+ms.topic: get-started-article
 ---
 
 # Build your ASP.NET 4 app
@@ -39,7 +40,7 @@ ASP.NET is a mature web platform that provides all the services that you require
 
 1. In the right panel, click **ASP.NET**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
 
 1. For the **Default agent queue**:
 

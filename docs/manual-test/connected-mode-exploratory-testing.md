@@ -8,10 +8,13 @@ ms.assetid: 0F52826C-218D-437A-B6FF-EB8E8292CE3C
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/12/2016
+ms.topic: get-started-article
 ---
 
 # Exploratory testing with the Test &amp; Feedback extension in Connected mode
- 
+
+[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
+
 To use the Test &amp; Feedback extension in **Connected** mode you must connect 
 to your VSTS account or TFS 2015 and later.
 This automatically configures the extension based on your access level: 

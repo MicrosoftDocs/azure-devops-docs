@@ -3,7 +3,6 @@ title: DevOps overview for Team Services and TFS
 description: Guide to getting started using DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview  
-ms.topic: get-started-article  
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
 ms.manager: douge
 ms.author: kaelli
@@ -77,7 +76,6 @@ Software development teams often rely on re-using libraries or providing librari
 <ul style="padding-left:30px">
 <li style="margin-bottom:2px">[Package Management overview](package/overview.md)</li>
 <li style="margin-bottom:2px">[What is Package Management?](package/index.md)</li>
-<li style="margin-bottom:2px">[Integrate packages into builds and releases](package/build/overview.md)</li>
 
 </ul>
 </div>
@@ -265,11 +263,9 @@ Other topics of interest:
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)   
 
-- [What's new for Team Foundation Server](whats-new.md)   
 
 ### TFS updates
 
-- [What's new](whats-new.md)  
 - [Migrate data from TFS to Team Services](migrate-to-vsts-from-tfs.md)
 
 ### Pricing, costs, and licenses</span>
@@ -388,7 +384,7 @@ Monitor your web and device apps to gain actionable insight to improve performan
  <li style="margin-bottom:2px">[Set up Visual Studio](accounts/set-up-vs.md)</li>
  <li style="margin-bottom:2px">[Connect to Team Services](connect/connect-team-projects.md)</li>
  <li style="margin-bottom:2px">[Add team members](connect/connect-team-projects.md)</li>
- <li style="margin-bottom:2px">[Migrate from Team Foundation Server to Visual Studio Team Services](https://www.visualstudio.com/en-us/articles/adopting-vsts)</li>
+ <li style="margin-bottom:2px">[Migrate from Team Foundation Server to Visual Studio Team Services](/adopting-vsts)</li>
 </ul>
 </div>
 

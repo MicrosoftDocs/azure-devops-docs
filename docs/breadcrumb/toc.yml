@@ -2,7 +2,7 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items:
-  - name: Get started user guide
+  - name: New User Guide
     tocHref: /vsts/user-guide/
     topicHref: /vsts/user-guide/index
   - name: Code
@@ -93,8 +93,8 @@
       tocHref: /vsts/search/
       topicHref: /vsts/search/index
     - name: Feedback
-      tocHref: /vsts/collaborate/feedback/
-      topicHref: /vsts/collaborate/feedback/index
+      tocHref: /vsts/feedback/
+      topicHref: /vsts/feedback/index
   - name: Admin
     tocHref: /vsts/accounts/
     topicHref: /vsts/index#pivot=services&panel=admin
@@ -124,9 +124,6 @@
     - name: Service Hooks
       tocHref: /vsts/service-hooks/
       topicHref: /vsts/service-hooks/index
-    - name: Extend overview
-      tocHref: /vsts/extend/
-      topicHref: /vsts/extend/index
     - name: Visual Studio Extensions
       tocHref: /vsts/integrate/ide/extensions/
       topicHref: /vsts/integrate/ide/extensions/overview
@@ -145,3 +142,10 @@
     - name: "Data Warehouse & SQL Reports"
       tocHref: /vsts/report/sql-reports/
       topicHref: /vsts/report/sql-reports/index
+  - name: Extend
+    tocHref: /vsts/extend/
+    topicHref: /vsts/index#pivot=services&panel=integration
+    items:
+    - name: Build extensions
+      tocHref: /vsts/extend/
+      topicHref: /vsts/extend/index

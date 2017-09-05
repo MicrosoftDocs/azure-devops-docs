@@ -3,7 +3,6 @@ title: Define a work item query to add to a process template | VSTS & TFS
 description: Use Team Explorer to create awork item query, save as a .wiq file, and add to a process template
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 2e035f4a-c542-487f-96f9-d730e4700af2
 ms.manager: douge
 ms.author: kaelli

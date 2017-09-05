@@ -3,7 +3,6 @@ title: TF30004-The New Team Project Wizard encountered an unexpected error while
 description: The Wizard was not able to initialize the plug-in after an attempt to create the team project.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: 40cfd0f7-87fb-451e-a49d-7ffea4011e24
 ms.manager: douge
 ms.author: kaelli

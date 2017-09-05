@@ -15,10 +15,13 @@ ms.date: 07/05/2017
 
 ![](_img/nuget.png) Install and update NuGet package dependencies, or package and publish NuGet packages. 
 
-If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../../tasks/build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
+If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
 
 > [!TIP]
-> Looking for help to get started? See [Use Team Build to restore and publish NuGet packages](../../../package/build/team-build-nuget.md).
+> Looking for help to get started? See the how-to's for [restoring](/vsts/build-release/package/nuget-restore.md) and [publishing](/vsts/build-release/package/nuget-pack-publish.md) packages.
+
+> [!NOTE]
+> Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
 
 ## Restore NuGet packages
 
@@ -393,10 +396,6 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Why should I check in a NuGet.Config?
-
-Checking a NuGet.Config into source control ensures that a key piece of information needed to build your project—the location of its packages—is available to every developer that checks out your code.
-
-However, for situations where a team of developers works on a large range of projects, it's also possible to add a VSTS feed to the global NuGet.Config on each developer's machine. In these situations, using the "Feeds I select here" option in the NuGet task replicates this configuration.
 
 [!INCLUDE [temp](../_shared/nuget-step-qa.md)]
 

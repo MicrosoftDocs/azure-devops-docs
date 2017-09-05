@@ -8,7 +8,6 @@ ms.assetid: 61550050-c6d7-40e1-9ea7-030b48b04e3b
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/29/2016
-ms.topic: get-started-article
 ---
 
 # Package and Publish an integration to the Marketplace

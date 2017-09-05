@@ -3,7 +3,6 @@ title: Project activities | VSTS & TFS
 description: Helps you reduce the risks to your project that stem from shifting requirements and implementation costs.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: cmmi
 ms.assetid: 078d2b8e-e0a7-4c17-8f00-e830c78d338c
 ms.manager: douge
 ms.author: kaelli

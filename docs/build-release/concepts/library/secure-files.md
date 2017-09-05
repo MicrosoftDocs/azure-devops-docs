@@ -4,7 +4,6 @@ description: Understand secure files for Visual Studio Team Services (VSTS) and 
 ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build-release
-ms.topic: get-started-article
 ms.manager: dastahel
 ms.author: madhurig
 ms.date: 04/26/2017

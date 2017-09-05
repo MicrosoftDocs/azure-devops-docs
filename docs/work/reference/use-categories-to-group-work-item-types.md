@@ -3,7 +3,6 @@ title: Use categories to group work item types | VSTS & TFS
 description: Generate flexible reports, and support increased integration across team projects using categories 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: referenece
 ms.assetid: 2fc6c411-89a9-4af5-8dd3-b2d4c2ecf540
 ms.manager: douge
 ms.author: kaelli

@@ -3,7 +3,6 @@ title: All FIELD XML elements reference | VSTS & TFS
 description: Syntax for FIELD definition and it's child elements - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 552c2ada-2186-4b89-848c-34f54dfe0823
 ms.author: kaelli
 ms.manager: douge

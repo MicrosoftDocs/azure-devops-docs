@@ -7,6 +7,7 @@ ms.author: elbatk
 ms.date: 09/01/2016
 ms.prod: vs-devops-alm
 ms.technology: tfs-on-prem
+ms.topic: get-started-article
 ---
 
 # Change the service account or password for Team Foundation Server

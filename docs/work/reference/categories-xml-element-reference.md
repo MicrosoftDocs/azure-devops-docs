@@ -3,7 +3,6 @@ title: Categories XML element reference | VSTS & TFS
 description: Shows a description of each of the default categories used by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).  
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: d4b02c7c-a7ac-4c7a-b4c5-cbf9af74d489
 ms.author: kaelli
 ms.manager: douge

@@ -217,8 +217,4 @@ ms.date: 08/04/2016
       </div>
     </div>
   </div>
-  <div class="articles">
-    <img src="_img/articles-icon.png">
-    <a href="https://www.visualstudio.com/articles/overview">Explore the technical articles</a>
-  </div>
 </div>

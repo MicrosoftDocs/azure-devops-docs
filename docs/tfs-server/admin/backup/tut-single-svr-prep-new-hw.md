@@ -7,6 +7,7 @@ ms.author: elbatk
 ms.date: 08/18/2016
 ms.prod: vs-devops-alm
 ms.technology: tfs-on-prem
+ms.topic: get-started-article
 ---
 
 # Prepare the new hardware
@@ -15,29 +16,32 @@ ms.technology: tfs-on-prem
 
 This topic, the first part of the Restore a Single-Server tutorial, teaches you how to install and configure the prerequisites, how to restore the databases and the SharePoint farm, and how to install but not configure Team Foundation Server (TFS) so that you can restore the databases on the new hardware.
 
-**In this topic**  
-1.  [Choosing hardware and naming the server](#choosing-hardware)  
-2.  [Installing SQL Server on the new server](#installing-sql-svr-new-svr)  
-3.  [Installing SharePoint Foundation on the new server](#installing-sharept-new-svr)  
-4.  [Install Team Foundation Server](#install-tfs)
+
+Use this topic to:
+
+> [!div class="checklist"]   
+> * Choose hardware and name the server 
+> * Install SQL Server on the new server 
+> * Install SharePoint Foundation on the new server  
+> * Install Team Foundation Server
 
 **Required permissions**  
 To perform the procedures in this topic, you must be a member of the **Administrators** security group on the server where you want to install the software.
 
 <a name="choosing-hardware"></a>
-## Choosing hardware and naming the server
+## Choose hardware and name the server
 
 Restoring a deployment that has unexpectedly gone offline due to a hardware failure is always stressful, and usually involves acquiring hardware as quickly as possible. You might be tempted to grab an unused machine and try to use it as the new server. However, for the long-term health of your deployment and to help ensure a successful restoration of your deployment, you should not use any server that has less RAM than the previous machine, and you should make sure that the new server is running the same operating system as the old server. You also must match the service pack level of the previous server as closely as possible.
 
 In addition, this can be an opportune time to expand the hard drive space or processing power for your deployment, particularly if your previous server was not performing as quickly as you wanted, or if you were running low on hard drive space. Upgrading the numbers or speed of the processors, adding more RAM, or adding more hard drive space should not adversely affect your restoration, and you and your users can benefit from a faster, more powerful server.
 
-## Naming the server
+## Name the server
 
 Your users will experience the least amount of confusion and inconvenience if you give the new server the exact same name as the old one. You will also find it much easier to restore the deployment if the new server has the same name as the old server. Unless you have compelling reasons not to reuse the name, such as underscores in the old server name that interfered with navigation in Team Web Access, use the same name for the new server as the old server.
 
 
 <a name="installing-sql-svr-new-svr"></a>
-## Installing SQL Server on the new server
+## Install SQL Server on the new server
 
 After you acquire a server that meets the requirements mentioned above and give it the same name, you must install the same version and edition of SQL Server on that new hardware. You must also make sure to choose the same collation settings as your previous deployment, or you will not be able to restore the databases you backed up for the old deployment.
 
@@ -109,7 +113,7 @@ After you acquire a server that meets the requirements mentioned above and give 
 
 Unlike a new installation of Team Foundation Server, you cannot use the installation wizard for TFS to install SharePoint Foundation for you. If you want to be able to restore the team project portals and other information used in the SharePoint Foundation portion of your deployment, you must first install SharePoint Foundation manually, and then restore the farm.
 
-## Using SharePoint Tools to install SharePoint Foundation
+## Use SharePoint Tools to install SharePoint Foundation
 
 You can use the tools and features provided with SharePoint Foundation to install it on the new server. You should choose the same deployment configuration as your previous deployment. For example, if you installed SharePoint Foundation automatically during the installation process for Team Foundation Server in your original deployment, you should choose to install SharePoint Foundation on a single server, but using the installation of SQL Server you have already installed on the new server. You should also run the Microsoft SharePoint Products Preparation Tool prior to installing SharePoint Foundation.
 
@@ -129,7 +133,7 @@ You can use the tools and features provided with SharePoint Foundation to instal
 
 6.  When setup completes, choose **Close**. Do not configure the initial farm.
 
-## Using Windows PowerShell to install SharePoint Foundation
+## Use Windows PowerShell to install SharePoint Foundation
 
 While there are a number of ways to install SharePoint Foundation, including the tools provided with SharePoint Foundation, restoring the farm requires Windows PowerShell. You can also use Windows PowerShell to install SharePoint Foundation. For convenience, consider using Windows PowerShell for both installing and restoring SharePoint Foundation on the new server. For more information about Windows PowerShell, see [Getting Started: Windows Server Administration with Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=236005).
 
@@ -162,14 +166,7 @@ To install Team Foundation Server binaries and tools:
 
     The administration console opens automatically in an unconfigured state. This is expected.
 
-Tutorial Roadmap:
+## Try this next
 
-* [Home](tut-single-svr-home.md) 
-
-* YOU ARE HERE: [Prepare the new hardware](tut-single-svr-prep-new-hw.md)
-
-* [Restore the databases](tut-single-svr-restore-dbs.md) 
-
-* [Install and configure Team Foundation Server](tut-single-svr-install-config-tfs.md) 
-
-* [Reconnect services and users](tut-single-svr-reconn-svcs-users.md)
+> [!div class="nextstepaction"]
+> * [Restore the databases](tut-single-svr-restore-dbs.md)

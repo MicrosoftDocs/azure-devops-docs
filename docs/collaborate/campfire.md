@@ -6,7 +6,6 @@ description: Use Campfire with your Visual Studio Team Services account
 ms.assetid: e8eacf20-c396-4b46-8673-a9f139643968
 ms.manager: douge
 ms.author: elbatk
-ms.topic: get-started-article
 ms.date: 08/24/2017 
 ---
 

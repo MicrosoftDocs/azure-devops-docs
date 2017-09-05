@@ -7,6 +7,7 @@ ms.assetid: 933A828E-CBB7-44C2-BAC0-1E1E9D78BFA0
 ms.manager: douge
 ms.author: alewis
 ms.date: 08/04/2016
+ms.topic: get-started-article
 ---
 
 # Build your Xamarin app

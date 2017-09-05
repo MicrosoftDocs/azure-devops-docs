@@ -3,7 +3,6 @@ title: TF31002-Unable to connect to VSTS or TFS | VSTS & TFS
 description: Receive the error when you try to connect to Visual Studio Team Services to Team services or an on-premises Team Foundation Server.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: b5566a0b-55f8-4c76-aea2-6d1581a2c90d
 ms.manager: douge
 ms.author: kaelli

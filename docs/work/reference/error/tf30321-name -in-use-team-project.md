@@ -3,7 +3,6 @@ title: TF30321-The name you typed is already used for another team project | VST
 description: Display an error when you type a name for the new team project that duplicates the name already being used by another team project on the same server.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: 9cd0bc58-3c58-4129-8099-d8849cece6fc
 ms.manager: douge
 ms.author: kaelli

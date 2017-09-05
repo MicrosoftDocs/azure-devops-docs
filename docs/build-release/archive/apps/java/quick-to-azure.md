@@ -3,7 +3,6 @@ title: Quick Start - Build and Deploy a Java app | VSTS
 description: Set up a continuous integration (CI) build for your Java app, and then a continuous deployment (CD) release to Azure using Visual Studio Team Services
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
-ms.topic: get-started-article
 ms.assetid: E67B2B25-5928-4784-A6CD-E998F4FDE620
 ms.manager: douge
 ms.author: alewis

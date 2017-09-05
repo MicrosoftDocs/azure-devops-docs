@@ -3,7 +3,6 @@ title: Troubleshoot connection | Team Services & TFS
 description: Steps to resolve connection issues with Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
-ms.topic: get-started-article  
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli

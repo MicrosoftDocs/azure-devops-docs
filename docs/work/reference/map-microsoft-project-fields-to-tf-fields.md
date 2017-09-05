@@ -3,7 +3,6 @@ title: Map Project fields to TFS fields | TFS
 description: Customize how work item fields map to Project fields for Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 8c6550d9-9239-4dac-832b-5634924ec77b
 ms.manager: douge
 ms.author: kaelli

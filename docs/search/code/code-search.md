@@ -13,6 +13,8 @@ ms.date: 08/04/2016
 
 # Search your code
 
+[!INCLUDE [version-header-shared-vsts-tfs](../_shared/version-header-shared-vsts-tfs.md)]
+
 Use Code Search to search across all of your projects, find specific types of code,
 and easily drill down or widen your search
 

@@ -25,7 +25,7 @@ Locked and inherited fields correspond to fields inherited from a system process
 > [!div class="mx-tdBreakAll"]  
 > |![Inherited field](_img/inherited-icon.png) Inherited fields |Custom fields |&nbsp;&nbsp;&nbsp;| 
 > |-------------|----------|---------| 
-> |- [Change the field label](#rename-field)<br/>- [Show/Hide field on form](#show-hide-field) |- [Add a custom field](#add-field)<br/>- [Add pick list (drop-down menu)](#pick-list)<br/>- [Add person-name/Identity](#identity)<br/>- [Add a rich-text (HTML) field](#html) <br/>- [Add a checkbox (Boolean) field](#boolean-field)<br/>- [Add a custom control](custom-controls-process.md) | - [Change the field label](#rename-field)<br/>- [Set Required/Default options](#options)<br/>- [Move the field within the layout](customize-process-form.md#move-field)<br/>- [Remove field from form](#remove-field)<br/>- [Delete field](#delete-field) | 
+> |- [Change the field label](#rename-field)<br/>- [Show/Hide field on form](#show-hide-field) |- [Add a custom field](#add-field)<br/>- [Add pick list (drop-down menu)](#pick-list)<br/>- [Add person-name/Identity](#identity)<br/>- [Add a rich-text (HTML) field](#html) <br/>- [Add a checkbox (Boolean) field](#boolean-field)<br/>- [Add a custom control](custom-controls-process.md) | - [Add custom rules to a field](custom-rules.md)<br/>- [Change the field label](#rename-field)<br/>- [Set Required/Default options](#options)<br/>- [Move the field within the layout](customize-process-form.md#move-field)<br/>- [Remove field from form](#remove-field)<br/>- [Delete field](#delete-field) | 
 
 When adding custom fields, note the following limits:  
 *   A maximum of 64 fields can be defined for each WIT  

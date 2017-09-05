@@ -3,7 +3,6 @@ title: TF30172-You do not have permission to create a new team project. | VSTS &
 description: Display the error when you run the New Team Project Wizard.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: 86cab4b8-7988-4cb7-b553-2cbb3ac70b29
 ms.manager: douge
 ms.author: kaelli

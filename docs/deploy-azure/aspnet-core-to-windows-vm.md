@@ -10,7 +10,7 @@ editor: ''
 ms.assetid: E13DEB83-A128-4704-A051-8465AD39B5AE
 ms.service: vsts
 ms.devlang: dotnetcore
-ms.topic: hero-article
+ms.topic: get-started-article
 ms.tgt_pltfrm: vm-windows
 ms.workload: ''
 ms.date: 08/04/2016
@@ -64,7 +64,7 @@ Your code changes automatically appear on your site:
 
  ![Screenshot showing dotnet core template](../build-release/apps/aspnet/_shared/_img/apply-aspnet-core-build-template.png)
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
 
 1. For the **Default agent queue**, select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
 

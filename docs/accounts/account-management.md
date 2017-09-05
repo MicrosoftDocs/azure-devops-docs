@@ -5,7 +5,7 @@ ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
 ms.service: vsts-admin
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
-ms.topic: Get started
+ms.topic: get-started-article
 toc: show
 ms.manager: douge
 ms.author: elbatk

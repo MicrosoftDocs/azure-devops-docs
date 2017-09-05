@@ -4,9 +4,10 @@ description: Track team velocity across several sprints using the velocity chart
 ms.technology: vs-devops-reporting  
 ms.prod: vs-devops-alm
 ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB
+ms.topic: get-started-article
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/12/2017
+ms.date: 09/01/2017
 ---
 
 
@@ -86,7 +87,12 @@ In order to add a Velocity widget to a dashboard, you must have the following in
 	**Highlight work completed late**
 	Work items marked complete after the iteration end date are considered to be completed late and will show as light green. 
 	This is useful for spotting a trend where work items are marked complete after the iteration is complete.
-	
+
+	> [!NOTE]  
+	> A work item is considered late when the work item's Completed Date is later than End Date of the Iteration the work item is _currently_ assigned to.
+	> 
+	> It will take into account the value you enter for <i>Days past end date of iteration after which work is late<i>.
+		
 	<b><i>Days past end date of iteration after which work is late:</i></b>  Specify a number of days past which a work item is considered late if it's status is still new or in progress. 
 	For example, entering 3 days will give the team 3 days after the end of an iteration to mark work items complete or done, before they are considered late.
 
@@ -120,7 +126,7 @@ Velocity will vary depending on team capacity, sprint over sprint. However, over
 	<img src="_img/team-velocity-chart-web-7-iterations.png" alt="Web portal, Velocity chart showing seven sprints of in progress and completed work" style="border: 2px solid #C3C3C3;" />
 
 	>[!NOTE]  
-	>Work items based on the [Scrum process](/vsts/work/guidance/scrum-process) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](/vsts/work/work/guidance/agile-process) and [CMMI](/vsts/work/work/guidance/cmmi-process) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/concepts/workflow-and-state-categories.md).
+	>Work items based on the [Scrum process](/vsts/work/guidance/scrum-process) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](/vsts/work/guidance/agile-process) and [CMMI](/vsts/work/guidance/cmmi-process) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/concepts/workflow-and-state-categories.md).
 	
 ## Required and recommended activities   
 

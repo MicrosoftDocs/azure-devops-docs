@@ -7,7 +7,6 @@ ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/16/2016
-ms.topic: get-started-article
 ---
 
 # Web Hooks

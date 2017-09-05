@@ -8,7 +8,6 @@ ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/23/2016
-ms.topic: get-started-article
 ---
 
 # Add a hub

@@ -3,7 +3,6 @@ title: TF30320-The New Team Project Wizard could not retrieve the list of team p
 description: Display an error when the New Team Project Wizard could not retrieve the list of team projects on the Team Foundation Server.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: 252752a7-ec21-465e-878c-1d303ee60284
 ms.manager: douge
 ms.author: kaelli

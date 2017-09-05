@@ -4,7 +4,6 @@ description: Docs for DevOps and Agile tools provided by Visual Studio Team Serv
 layout: HubPage 
 ms.prod: vs-devops-alm 
 ms.technology: vs-devops-overview 
-ms.topic: get-started-article 
 ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
 ms.manager: douge 
 ms.author: kaelli 
@@ -192,7 +191,7 @@ ms.date: 07/26/2017
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/collaborate/index">READMEs &amp; Wikis</a></li>
                                         <li><a class="barLink" href="/vsts/search/index">Search</a></li>
-                                        <li><a class="barLink" href="/vsts/collaborate/feedback/index">Feedback</a></li>
+                                        <li><a class="barLink" href="/vsts/feedback/index">Feedback</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -772,7 +771,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/collaborate/feedback/index">
+                                <a href="/vsts/feedback/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

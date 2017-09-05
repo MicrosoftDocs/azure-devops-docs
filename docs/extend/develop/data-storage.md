@@ -16,8 +16,6 @@ Visual Studio Team Services extensions have the ability to store user preference
 
 There are two ways to interact with the data storage service: REST APIs or a Microsoft-provided client service available as part of the VSS SDK. It is highly recommended that extension developers use the provided client service APIs, which provide a convenient wrapper over the REST APIs. 
 
-See the [extension data service reference](..\reference\client\api\VSS\SDK\Services\ExtensionData\ExtensionDataService.md) for full details on the client service APIs. 
-
 ### What you can store
 
 The service is designed to let you store and manage two different types of data:

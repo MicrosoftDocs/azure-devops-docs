@@ -58,7 +58,7 @@ Default Excel reports require that your team project is configured with SharePoi
     <li>[Issue Trends](issue-trends-excel-report.md)</li>
     <li>[Task Progress](task-progress-excel-report.md)</li>
     <li>[User Story Progress (Agile)](user-story-progress-excel-report-agile.md)</li>
-    <li>[Requirements Progress (CMMI)](/requirements-progress-excel-report-cmmi.md)</li>
+    <li>[Requirements Progress (CMMI)](requirements-progress-excel-report-cmmi.md)</li>
 </ul>
 
 </td>

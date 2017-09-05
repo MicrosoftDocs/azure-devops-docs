@@ -8,7 +8,6 @@ ms.assetid: 294ae93b-7522-40ef-95ab-d5002f8c3ca8
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/22/2016
-ms.topic: get-started-article
 ---
 
 # Service hooks in Team Services

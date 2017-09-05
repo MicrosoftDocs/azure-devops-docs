@@ -3,7 +3,6 @@ title: TF30249-The New Team Project Wizard could not retrieve the process templa
 description: Occurs an error when the New Team Project Wizard cannot download the process template header information.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: 3bdffbfa-9b0d-4222-8630-5e76330a511e
 ms.manager: douge
 ms.author: kaelli

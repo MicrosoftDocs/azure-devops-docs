@@ -1,6 +1,6 @@
 ---
-title: Build definition repository
-description: Specify the repository that contains the code you want to build on Visual Studio Team Services and Team Foundation Server (TFS)
+title: Build definition sources
+description: Specify the sources and repository that contains the code you want to build on Visual Studio Team Services and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 6DFCFEB4-05EC-4A73-9382-A20D161A53D4
@@ -9,29 +9,23 @@ ms.author: alewis
 ms.date: 08/04/2016
 ---
 
-# Build definition repository
+# Build definition sources
 
 **VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
 
-<!--
-<div style="padding:5px;border-bottom:1px solid #ccc;font-family:Segoe UI;font-size:13px;margin-bottom:15px">
-
-![Definition edit panel header](_img/_shared/definition-edit-panel-header.png)<br/>
-
-[Build](build.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Options](options.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **[Repository](#)**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Variables](variables.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Triggers](triggers.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [General](general.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Retention](retention.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [History](history.md)
-</div>
--->
-
 At the beginning of the build process, the build agent downloads the files from your remote repository into a local sources directory. After you select the repository, you can specify options for how the files are downloaded.
 
-
 ## Git
+
+> * **VSTS, TFS 2017 Update 2, and newer:** Click the **Tasks** tab, click **Get sources**, click **This project**, and then select the name of the Git repo.
+> 
+> * **TFS 2017 RTM and older:** Click the **Repository** tab, and then for **Repository type** select **Git**.
 
 **Repository:**  Select a repository in your team project.
 
 **Branch** (default): Select the branch that you want to be the default when you manually queue this build.
 
-> If you're using the [New Build Editor](../../../archive/news/2017.md#january-25), then click **Advanced settings** to see the following options.
+> **VSTS, TFS 2017 Update 2 or newer:** Click **Advanced settings** to see the following options.
 
 [!INCLUDE [temp](_shared/git-clean-option.md)]
 
@@ -46,11 +40,15 @@ Note: Some build variables might yield a value that is not a valid label. For ex
 <a name="tfvc"></a>
 ## Team Foundation Version Control
 
+> * **VSTS, TFS 2017 Update 2, and newer:** Click the **Tasks** tab, click **Get sources**, click **This project**, and then select the TFVC repo (for example, `$TeamProject`).
+> 
+> * **TFS 2017 RTM and older:** Click the **Repository** tab, and then for **Repository type** the TFVC repo (for example, `$TeamProject`).
+
 **Repository**  Ignore this option.
 
 **Mappings** (workspace): Include with a type value of **Map** only the folders that your build process requires. If a subfolder of a mapped folder contains files that the build process does not require, map it with a type value of **Cloak**. [When would I need to change TFVC mappings. How should I do it?](#tfvc_mappings)
 
-> If you're using the [New Build Editor](../../../archive/news/2017.md#january-25), then click **Advanced settings** to see the following options.
+> **VSTS, TFS 2017 Update 2 or newer:** Click **Advanced settings** to see the following options.
 
 [!INCLUDE [include](_shared/label-sources.md)]
 
@@ -68,13 +66,17 @@ The build process labels your sources with a [TFVC label](../../../../tfvc/use-l
 
 * Set this to false if you want to define an incremental build to improve performance.
 
- Tip: In this case, if you are building Visual Studio projects, on the Build tab, you can also uncheck the Clean check box of the Visual Studio Build or MSBuild step.
+ > [!TIP]
+ > 
+ > In this case, if you are building Visual Studio projects, on the Build tab, you can also uncheck the Clean check box of the Visual Studio Build or MSBuild step.
 
 * This setting has no effect if you are using a [hosted agent](../../../concepts/agents/hosted.md).
 
 ## GitHub
 
-If you're using Visual Studio Team Services (VSTS), you can build code in a GitHub repo.
+> * **VSTS, TFS 2017 Update 2, and newer:** Click the **Tasks** tab, click **Get sources**, and then click **GitHub**.
+> 
+> * **TFS 2017 RTM and older:** This option is not available, but you can instead use the [External git](#external-git) option.
 
 ### Connect using your GitHub user account
 
@@ -123,12 +125,13 @@ This is the easier way to authorize your account. This approach grants your VSTS
 
 **Default branch:**  Select the branch that you want to be the default when you manually queue this build.
 
-> If you're using the [New Build Editor](../../../archive/news/2017.md#january-25), then click **Advanced settings** to see the following options.
+> **VSTS, TFS 2017 Update 2 or newer:** Click **Advanced settings** to see the following options.
 
 [!INCLUDE [temp](_shared/git-clean-option.md)]
 
 [!INCLUDE [temp](_shared/git-options.md)]
 
+<a name="external-git"></a>
 ## External Git (remote repository)
 
 0. Sign in to the external Git service (for example, BitBucket) and make sure you have permission to read the repository.
@@ -147,7 +150,7 @@ This is the easier way to authorize your account. This approach grants your VSTS
 
 **Branch** (default):  Select the branch that you want to be the default when you manually queue this build.
 
-> If you're using the [New Build Editor](../../../archive/news/2017.md#january-25), then click **Advanced settings** to see the following options.
+> **VSTS, TFS 2017 Update 2 or newer:** Click **Advanced settings** to see the following options.
 
 [!INCLUDE [temp](_shared/git-clean-option.md)]
 
@@ -208,7 +211,11 @@ For more information on how to optimize a TFVC workspace, see [Optimize your wor
 
 ### Is it possible to disable downloading files?
 
-If you want to disable downloading sources, define `Build.SyncSources` on the [variables tab](variables.md) and set it to false.
+If you want to disable downloading sources:
+
+* **VSTS, TFS 2017 Update 2, and newer:** Click **Advanced settings**, and then select **Don't sync sources**.
+ 
+* **TFS 2017 RTM and older:** Define `Build.SyncSources` on the [variables tab](variables.md) and set it to false.
 
 [!INCLUDE [temp](../../../_shared/qa-agents.md)]
 

@@ -1,7 +1,6 @@
 ---
 title: Rate and review extensions | Visual Studio Marketplace
 description: Rate and review extensions in the Visual Studio Marketplace
-ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-marketplace
 ms.service: vsts-marketplace

@@ -102,7 +102,7 @@ Select if you want to show the latest outcome of this build on external web site
 
 0. Save the definition.
 
-0. When he **Show url** link appears, click it and copy the URL to your clipboard.
+0. When the **Show url** link appears, click it and copy the URL to your clipboard.
 
 0. Use the URL as the source of an image in the HTML of the page of the external web site. For example: ```<img src="{URL you copied from the link}/>```
 
@@ -217,7 +217,7 @@ Register each build agent that has the capability.
 
 ## Multi-configuration
 
-Select this option to build multiple configurations. For example, you could build a C++ app for both debug and release configurations on both x86 and x64 platforms. For details about this example, see [Visual Studio Build](../../../tasks/build/visual-studio-build.md).
+Select this option to build multiple configurations. For example, you could build a C++ app for both debug and release configurations on both x86 and x64 platforms. To learn about this example, see [Build your C++ app for Windows](../../../apps/windows/cpp.md).
 
 ## Q&A
 

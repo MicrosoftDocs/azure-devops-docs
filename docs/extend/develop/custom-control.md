@@ -5,7 +5,6 @@ ms.prod: vs-devops-alm
 ms.contentid: 0956ACA7-B1C4-443F-A79A-A62EDD02FC15
 ms.technology: vsts-sub-extend
 ms.service: vsts-extend
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: elbatk
 ---
@@ -50,7 +49,7 @@ The work item form adds an iframe to host the custom control.
 | ```uri```          | URI to a page that hosts the html that is loaded by the iframe.
 | ```height```       | (Optional) Defines the height of the iframe. When omitted, it is 50 pixels.
 
-If you want to dynamically resize the iframe, you can use the [resize method](../reference/client/core-sdk.md) available in the client SDK. 
+If you want to dynamically resize the iframe, you can use the `resize method` available in the client SDK. 
 
 A custom control on the work item form is another type of [contribution](./contributions-overview.md) like [group & page contribution](./add-workitem-extension.md). The main difference between a control contribution and group and page contribution is that a control contribution can take a set of user inputs while group and page contributions can not. 
 

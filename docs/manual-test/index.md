@@ -4,7 +4,6 @@ description: Manual and exploratory testing index
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
 ms.service: vsts-testing
-ms.topic: get-started-article
 ms.assetid: EC51D26A-F000-4C37-8498-99C96AC7B751
 ms.manager: douge
 ms.author: ahomer
@@ -12,6 +11,8 @@ ms.date: 08/09/2016
 ---
 
 # Exploratory Testing
+ 
+[!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
 
 Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide rich and powerful
 tools everyone in the team can use to drive quality and collaboration throughout the development process.
@@ -59,7 +60,7 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 
 | | | |
 | --- | --- | --- |
-| [Get Stakeholder feedback](../collaborate/feedback/index.md) | [Blog posts for testing](https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/) | [Test & Feedback posts](https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4) |
+| [Get Stakeholder feedback](../feedback/index.md) | [Blog posts for testing](https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/) | [Test & Feedback posts](https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4) |
 | [Using Microsoft Test Manager](https://msdn.microsoft.com/en-us/library/jj635157.aspx) | [Blog posts for test management](https://blogs.msdn.microsoft.com/devops/?s=test+management) | |
 | [Load and performance testing](../load-test/index.md) | [Continuous testing](../build-release/test/index.md) | [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios) |
 | | | |

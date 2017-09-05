@@ -3,7 +3,6 @@ title: TF31003-Your user account does not have permission to connect to TFS | VS
 description: Receive the error when you try to connect to Team Services or Team Foundation Server (TFS).
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: bfec0879-44e7-4cf1-825b-c9e6520f4d56
 ms.manager: douge
 ms.author: kaelli

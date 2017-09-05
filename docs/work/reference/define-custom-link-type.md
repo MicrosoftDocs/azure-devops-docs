@@ -3,7 +3,6 @@ title: Define a custom link type | VSTS & TFS
 description: Add a custom link type to meet your project tracking requirements - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 0d0d51f7-b8d0-4e5d-82b9-766ee12690ba
 ms.author: kaelli
 ms.manager: douge

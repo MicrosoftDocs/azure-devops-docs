@@ -7,6 +7,7 @@ ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49
 ms.manager: douge
 ms.author: alewis
 ms.date: 12/15/2016
+ms.topic: get-started-article
 ---
 
 # Build your C++ app for Windows
@@ -59,7 +60,7 @@ https://github.com/adventworks/cpp-sample
 
 1. In the right panel, select **.NET Desktop**, and then click **Apply**. This template is useful in building most of the Visual Studio solutions including those that contain classic C++ projects.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time check in code.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
 
 1. For the **Default agent queue**:
 

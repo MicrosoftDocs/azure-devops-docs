@@ -3,7 +3,6 @@ title: TF31001-Team Foundation cannot retrieve the list of team projects | TFS
 description: Occurs when Team Explorer can't display the list of team projects defined on a Team Foundation Server. 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: a8f6ad82-e1e0-4659-8e97-c88ece4c23f5
 ms.manager: douge
 ms.author: kaelli

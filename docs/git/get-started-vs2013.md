@@ -3,7 +3,6 @@ title: Get started with Git and Visual Studio 2013 | VSTS & TFS
 description: Get started using Git in Visual Studio
 toc: show
 ms.assetid: BFDE8FAF-63B8-4BC9-9A24-32EE2CA73C13
-ms.topic: code reference (API)
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
 ms.service: vsts-code

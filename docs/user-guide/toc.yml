@@ -33,7 +33,7 @@
 - name: Concepts
   items:
   - name: Key concepts 
-    href: /vsts//conceptstoc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
+    href: /vsts/concepts?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Source control 
     href: source-control.md
   - name: "Kanban & Agile tools"
@@ -57,7 +57,7 @@
   - name: Go mobile
     href: /vsts/collaborate/mobile-work?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Manage your notifications
-    href: /vsts/collaborate/manage-personal-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+    href: /vsts/notifications/manage-personal-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Set your preferences
     href: /vsts/accounts/account-preferences?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Connect to a team project

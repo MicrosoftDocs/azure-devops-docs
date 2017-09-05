@@ -1,0 +1,43 @@
+---
+title: FAQ notifications
+description: General q and a about notifications set in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+ms.prod: vs-devops-alm
+ms.technology: collaborate
+ms.assetid: 
+toc: show
+ms.manager: douge
+ms.author: kaelli
+ms.date: 08/31/2017
+---
+
+
+# FAQs on notifications
+
+**VSTS | TFS 2017**
+
+## Can I receive emails in plain text? 
+No. This was supported in earlier versions of VSTS and TFS, but all emails are now HTML formatted.
+
+## How can I avoid receiving any notifications for activity in an account? 
+Because of custom subscriptions created by other users and admins, there is no way to completely avoid receiving any notifications, but you can do these two actions to minimize the number you receive: 
+- Unsubscribe from all default and admin-created team and group subscriptions
+- Disable or remove all custom subscriptions.
+
+## Why do some emails have multiple recipients on the To line? 
+
+A default or team/group subscription can have multiple recipients depending on how it is configured. Assuming each of these recipients has permission to the resource the event is related to, the recipients are grouped together in one email. 
+
+Previously each recipient would receive their own individually-addressed email, which could result in the same user getting multiple emails because of their membership in multiple groups. 
+
+
+## Related notes
+
+- [About notifications](about-notifications.md)
+- [Manage personal notifications](/vsts/collaborate/manage-team-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
+- [Unsubscribe from a notification](unsubscribe-default-notification.md) 
+
+
+
+
+
+

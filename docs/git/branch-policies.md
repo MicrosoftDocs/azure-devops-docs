@@ -2,7 +2,6 @@
 title: Protect your Git branches with policies | VSTS & TFS
 description: Branch policies provide teams with the means to protect their important branches.
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
-ms.topic: code reference (API)
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
 ms.service: vsts-code

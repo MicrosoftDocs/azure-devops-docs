@@ -5,7 +5,6 @@ ms.prod: vs-devops-alm
 ms.technology: vsts-sub-extend
 ms.service: vsts-extend
 ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
@@ -129,23 +128,23 @@ In our case, below is the code that would print "Hello World" in the widget. Add
 
 <a name="vss-methods"></a>
 
-`VSS.init` initializes the handshake between the iframe hosting the widget and the host frame. The full documentation for this method can be found [here](../reference/client/core-sdk.md#method_init).
+`VSS.init` initializes the handshake between the iframe hosting the widget and the host frame..
 We pass `explicitNotifyLoaded: true` so that the widget can explicitly notify the host when we are done loading. This control allows us to notify load completion after ensuring that the dependent modules are loaded.
 We pass `usePlatformStyles: true` so that the VSTS core styles for html elements (such as body, div etc) can be used by the Widget. If the widget prefers to not use these styles, they can pass in `usePlatformStyles: false`.
 
 `VSS.require` is used to load the required VSS script libraries. A call to this method automatically loads general libraries like [JQuery](https://jquery.com/)  and [JQueryUI](https://jqueryui.com/). 
 In our case we depend on the WidgetHelpers library which is used to communicate widget status to the widget framework.
-Therefore, we pass the corresponding module name `TFS/Dashboards/WidgetHelpers` and a callback to [VSS.require](../reference/client/core-sdk.md#method_require).
+Therefore, we pass the corresponding module name `TFS/Dashboards/WidgetHelpers` and a callback to `VSS.require`.
 The callback is called once the module is loaded.
-This callback will have the rest of the JavaScript code needed for the widget. At the end of the callback we call [VSS.notifyLoadSucceeded](../reference/client/core-sdk.md#method_notifyLoadSucceeded) to notify load completion.
+This callback will have the rest of the JavaScript code needed for the widget. At the end of the callback we call `VSS.notifyLoadSucceeded` to notify load completion.
 
 `WidgetHelpers.IncludeWidgetStyles` will include a stylesheet with some [basic css](./styles-from-widget-sdk.md) to get you started. Make sure to wrap your content inside a HTML element with class `widget` to make use of these styles.
 
-`VSS.register` is used to map a function in javascript which uniquely identifies the widget among the different contributions in your extension. The name should match the `id` that identifies your contribution as described in [Step 5](#widget-extension-manifest). For widgets, the function that is passed to [VSS.register](../reference/client/core-sdk.md#method_register) should return an object that satisfies the [IWidget](../reference/client/api/TFS/Dashboards/Contracts/IWidget.md) contract,
+`VSS.register` is used to map a function in javascript which uniquely identifies the widget among the different contributions in your extension. The name should match the `id` that identifies your contribution as described in [Step 5](#widget-extension-manifest). For widgets, the function that is passed to `VSS.register` should return an object that satisfies the `IWidget` contract,
 i.e. the returned object should have a load property whose value is another function that will have the core logic to render the widget. 
 In our case, it is simply to update the text of the `h2` element to "Hello World".
 It is this function that is called when the widget framework instantiates your widget.
-We use the [WidgetStatusHelper](../reference/client/api/TFS/Dashboards/Contracts/WidgetStatusHelper.md) from WidgetHelpers to return the [WidgetStatus](../reference/client/api/TFS/Dashboards/Contracts/WidgetStatus.md) as success.
+We use the `WidgetStatusHelper` from WidgetHelpers to return the `WidgetStatus` as success.
 
 <div class="alert alert-warning">
     <b>Warning</b>: If this name used to register the widget doesn't match the ID for the contribution in the manifest, then the widget will behave unexpectedly.  
@@ -246,7 +245,7 @@ Each contribution entry defines [certain properties](./manifest.md#contributions
 | catalogIconUrl     | Relative path of the catalog icon that you added in [Step 4](#image) to display in the widget catalog. The image should be 98px x 98px. If you have used a different folder structure or a different file name, then this is the place to specify the appropriate relative path. |
 | previewImageUrl    | Relative path of the preview image that you added in [Step 4](#image) to display in the widget catalog for TFS 2015 Update 3 only. The image should be 330px x 160px. If you have used a different folder structure or a different file name, then this is the place to specify the appropriate relative path. |
 | uri                | Relative path of the HTML file that you added in [Step 1](#step-1-files). If you have used a different folder structure or a different file name, then this is the place to specify the appropriate relative path. |
-| supportedSizes | Array of sizes supported by your widget. When a widget supports multiple sizes, the first size in the array is the default size of the widget. The [widget size](../reference/client/api/TFS/Dashboards/Contracts/WidgetSize.md) is specified in terms of the rows and columns occupied by the widget in the dashboard grid. One row/column corresponds to 160px. Any dimension above 1x1 will get an additional 10px that represent the gutter between widgets. For example, a 3x2 widget will be `160*3+10*2` wide and `160*2+10*1` tall. The maximum supported size is `4x4`.  |
+| supportedSizes | Array of sizes supported by your widget. When a widget supports multiple sizes, the first size in the array is the default size of the widget. The `widget size` is specified in terms of the rows and columns occupied by the widget in the dashboard grid. One row/column corresponds to 160px. Any dimension above 1x1 will get an additional 10px that represent the gutter between widgets. For example, a 3x2 widget will be `160*3+10*2` wide and `160*2+10*1` tall. The maximum supported size is `4x4`.  |
 | supportedScopes | At the moment we support only team dashboards. Therefore, the value here has to be `project_team`. In the future when we support other dashboard scopes, there will be more options to choose from here. |
 
 
@@ -412,17 +411,17 @@ Add the below at the end of your extension manifest.
 ### Step 3: Make the REST API Call 
 
 There are many client-side libraries that can be accessed via the SDK to make REST API calls in VSTS. 
-These are called [REST clients ](../reference/client/rest-clients.md) and are JavaScript wrappers around Ajax calls for all available server side endpoints.
+These are called REST clients and are JavaScript wrappers around Ajax calls for all available server side endpoints.
 You can use methods provided by these clients instead of writing Ajax calls yourself. These methods map the API responses to objects that can be consumed by your code.
 
-In this step, we will update the `VSS.require` call to load [TFS/WorkItemTracking/RestClient](../reference/client/api/TFS/WorkItemTracking/RestClient/WorkItemTrackingHttpClient2_2.md) which will provide the WorkItemTracking REST client.
+In this step, we will update the `VSS.require` call to load `TFS/WorkItemTracking/RestClient` which will provide the WorkItemTracking REST client.
 We can use this REST client to get information about a query called `Feedback` under the folder `Shared Queries`.
 
 Inside the function that we pass to `VSS.register`, we will create a variable to hold the current project ID. We need this to fetch the query. 
 We will also create a new method `getQueryInfo` to use the REST client. This method that is then called from the load method.
 
 The method `getClient` will give an instance of the REST client we need. 
-The method [getQuery](../reference/client/api/TFS/WorkItemTracking/RestClient/WorkItemTrackingHttpClient2_2.md#method_getQuery) returns the query wrapped in a promise.
+The method `getQuery` returns the query wrapped in a promise.
 The updated `VSS.require` will look as follows:
 
 ```JavaScript
@@ -457,7 +456,7 @@ VSS.require(["TFS/Dashboards/WidgetHelpers", "TFS/WorkItemTracking/RestClient"],
         VSS.notifyLoadSucceeded();
     });
 ```
-Notice the use of the Failure method from [WidgetStatusHelper](../reference/client/api/TFS/Dashboards/Contracts/WidgetStatusHelper.md). 
+Notice the use of the Failure method from `WidgetStatusHelper`. 
 It allows you to indicate to the widget framework that an error has occurred and take advantage to the standard error experience provided to all widgets.
 
 > If you do not have the `Feedback` query under the `Shared Queries` folder, then replace `Shared Queries\Feedback` in the code with the path of a query that exists in your project.
@@ -465,7 +464,7 @@ It allows you to indicate to the widget framework that an error has occurred and
 ### Step 4: Display the Response
 
 The last step is to render the query information inside the widget. 
-The [getQuery](../reference/client/api/TFS/WorkItemTracking/RestClient/WorkItemTrackingHttpClient2_2.md#method_getQuery) function returns an object of type [Contracts.QueryHierarchyItem](../reference/client/api/TFS/WorkItemTracking/Contracts/QueryHierarchyItem.md) inside a promise.
+The `getQuery` function returns an object of type `Contracts.QueryHierarchyItem` inside a promise.
 In this example, we will display the query ID, the query name, and the name of the query creator under the "Hello World" text.
 Replace the `// Do something with the query` comment with the below:
 
@@ -716,20 +715,20 @@ Open the file `configuration.html` and the below `<script>` element to the `<hea
 ```
 
 `VSS.init`, `VSS.require` and `VSS.register` play the same role as they played for the widget as described in [Part 1](#vss-methods).
-The only difference is that for widget configurations, the function that is passed to [VSS.register](../reference/client/core-sdk.md#method_register) should return an object that satisfies the [IWidgetConfiguration](../reference/client/api/TFS/Dashboards/Contracts/IWidgetConfiguration.md) contract.
+The only difference is that for widget configurations, the function that is passed to `VSS.register` should return an object that satisfies the `IWidgetConfiguration` contract.
 
-The `load` property of the [IWidgetConfiguration](../reference/client/api/TFS/Dashboards/Contracts/IWidgetConfiguration.md) contract should have a function as its value.
+The `load` property of the `IWidgetConfiguration` contract should have a function as its value.
 This function will have the set of steps to render the widget configuration. 
 In our case it is simply to update the selected value of the dropdown element with existing settings if any.
-It is this function that is called when the framework instantiates your [widget configuration](../reference/client/api/TFS/Dashboards/Contracts/IWidgetConfiguration.md).
+It is this function that is called when the framework instantiates your `widget configuration`
 
-The `onSave` property of the [IWidgetConfiguration](../reference/client/api/TFS/Dashboards/Contracts/IWidgetConfiguration.md) contract should have a function as its value.
+The `onSave` property of the `IWidgetConfiguration` contract should have a function as its value.
 This is the function that is called by the framework when user clicks the "Save" button in the configuration pane.
-If the user input is ready to save, then serialize it to a string, form the [custom settings](../reference/client/api/TFS/Dashboards/Contracts/CustomSettings.md) object
-and use `WidgetConfigurationSave.Valid()` to save the user input. Read more about `onSave` [here](../reference/client/api/TFS/Dashboards/Contracts/IWidgetConfiguration.md).
+If the user input is ready to save, then serialize it to a string, form the `custom settings` object
+and use `WidgetConfigurationSave.Valid()` to save the user input..
 
 In this guide we use JSON to serialize the user input into a string. You can choose any other way to serialize the user input to string. 
-It will be accessible to the widget via the customSettings property of the [WidgetSettings](../reference/client/api/TFS/Dashboards/Contracts/WidgetSettings.md) object.
+It will be accessible to the widget via the customSettings property of the `WidgetSettings` object.
 The widget will then have to deserialize this which is covered in [Step 4](#reload-widget).
 
 <a name="previewUpdate"/>
@@ -738,7 +737,7 @@ The widget will then have to deserialize this which is covered in [Step 4](#relo
 
 To enable live preview update when the user selects a query from the dropdown, we attach a change event handler to the button. This handler will notify the framework that the configuration has changed.
 It will also pass the `customSettings` to be used for updating the preview. To notify the framework, the `notify` method on the `widgetConfigurationContext` needs to be called. It takes two parameters, the name of the 
-event, which in this case is [WidgetHelpers.WidgetEvent.ConfigurationChange](../reference/client/api/TFS/Dashboards/Contracts/WidgetEvent.md), and an [EventArgs](../reference/client/api/TFS/Dashboards/Contracts/EventArgs.md)  object for the event, created from the `customSettings` with the help of [WidgetEvent.Args](../reference/client/api/TFS/Dashboards/Contracts/WidgetEvent.md) helper method. 
+event, which in this case is `WidgetHelpers.WidgetEvent.ConfigurationChange`, and an `EventArgs` object for the event, created from the `customSettings` with the help of `WidgetEvent.Args` helper method. 
 
 Add the below in the function assigned to the `load` property.
 
@@ -826,8 +825,8 @@ We now have to update the code in the widget to use this stored configuration in
 Open the file `hello-world3.html` and update the name of the widget from `HelloWorldWidget2` to `HelloWorldWidget3` in the line where you call `VSS.register`.
 This will allow the framework to uniquely identify the widget within the extension.
 
-The function mapped to `HelloWorldWidget3` via `VSS.register` currently returns an object that satisfies the [IWidget](../reference/client/api/TFS/Dashboards/Contracts/IWidget.md) contract.
-Since our widget now needs configuration, this function needs to be updated to return an object that satisfies the [IConfigurableWidget](../reference/client/api/TFS/Dashboards/Contracts/IConfigurableWidget.md) contract.
+The function mapped to `HelloWorldWidget3` via `VSS.register` currently returns an object that satisfies the `IWidget` contract.
+Since our widget now needs configuration, this function needs to be updated to return an object that satisfies the `IConfigurableWidget` contract.
 To do this, update the return statement to include a property called reload as below. The value for this property will be a function that calls the `getQueryInfo` method one more time.
 This reload method gets called by the framework everytime the user input changes to show the live preview. This is also called when the configuration is saved.
 

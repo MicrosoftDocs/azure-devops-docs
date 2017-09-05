@@ -7,7 +7,6 @@ ms.assetid: bffe0cee-2c1c-4e7a-adbe-f6dc6a94f735
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/16/2016
-ms.topic: get-started-article
 ---
 
 # Microsoft Azure service bus with Visual Studio Team Services

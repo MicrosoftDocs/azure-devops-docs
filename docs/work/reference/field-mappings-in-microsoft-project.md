@@ -4,7 +4,6 @@ description: Understand how data is mapped between Project and Team Foundation S
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 0da29778-11c2-42e1-8876-e51abbc799f6
-ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 ms.date: 02/22/2017  

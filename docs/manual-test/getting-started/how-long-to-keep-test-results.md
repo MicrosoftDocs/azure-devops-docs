@@ -12,7 +12,7 @@ ms.date: 08/12/2016
 
 # Control how long to keep test results in VSTS
 
-**Visual Studio 2017 | Visual Studio 2015 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
 Running tests, especially automated ones, generates lots of data. 
 To keep your test system responsive and performing well,

@@ -8,7 +8,6 @@ ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/22/2016
-ms.topic: get-started-article
 ---
 
 # Add a build task
@@ -230,7 +229,7 @@ Share it with your account so that you can install and test it.
 
 Now that your extension is in the marketplace and shared, anyone who wants to use it will have to install it.
 
-<a name="installandtext" />
+<a name="installandtest" />
 ## Optional: Install and test your extension
 Installing an extension that is shared with you is simple and can be done in a few steps:
 

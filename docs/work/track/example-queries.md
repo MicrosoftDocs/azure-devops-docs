@@ -4,7 +4,7 @@ description: Track work by creating queries to list items using Visual Studio Te
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-agile-wit
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
-ms.topic: get-started-article 
+ms.topic: get-started-article
 ms.manager: douge
 ms.author: kaelli
 ms.date: 04/06/2017  

@@ -1,7 +1,6 @@
 ---
 title: Account hub pages | Team Service & TFS 
 description: Quickly link to work items, pull requests, team projects, and more using your account home page of the web portal for Visual Studio Team Services and Team Foundation Server (TFS) 
-ms.topic: get-started-article  
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F

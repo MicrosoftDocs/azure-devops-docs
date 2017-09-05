@@ -4,7 +4,6 @@ description: Continuous testing with Java in a continuous integration pipeline w
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-continuous
 ms.assetid: 3A1A725F-4E7B-4652-BFD1-FC7C9A248B7B
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/12/2016
@@ -12,9 +11,9 @@ ms.date: 08/12/2016
 
 # Testing Java applications with VSTS
 
-[!INCLUDE [version-header-vs-tfs](_shared/version-header-vs-tfs.md)]
+[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
-Visual Studio Team Services (VSTS) includes build tasks to
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) include build tasks to
 make it easy to integrate your build and testing 
 efforts into your release pipelines with rich 
 reporting highlighting build-on-build changes, 

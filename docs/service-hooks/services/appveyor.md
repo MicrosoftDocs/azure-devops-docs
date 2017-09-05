@@ -7,7 +7,6 @@ ms.technology: vs-devops-marketplace
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
-ms.topic: get-started-article
 ---
 
 # AppVeyor with Visual Studio Team Services

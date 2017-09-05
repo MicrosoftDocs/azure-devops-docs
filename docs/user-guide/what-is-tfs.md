@@ -3,7 +3,7 @@ title: Services | Team Services & TFS
 description: Understand the services that support the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
-ms.topic: get-started-article  
+ms.topic: get-started-article
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
@@ -49,7 +49,6 @@ Choose an on-premises TFS when you need your data to stay within your network or
 > [!div class="nextstepaction"]
 > [Install TFS](../tfs-server/install/single-server.md)
 
-
 To learn more, see these topics: 
 - [A tour of services](../services.md)
 - [Key concepts](../concepts.md)  
@@ -58,7 +57,4 @@ To learn more, see these topics:
 - [Pricing - TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
 
 
-### Case studies 
-
-- [Build and Deployment Automation Case Study for World Wide Time Keeping: Higher Quality and Faster Delivery in an Increasingly Agile World](https://www.visualstudio.com/en-us/articles/build-deployment-best-practices)  
 

@@ -8,6 +8,7 @@ ms.assetid: 65E96414-756B-4BD9-92C3-4DDB4C7A6B57
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/12/2016
+ms.topic: get-started-article
 ---
 
 # Run URL-based load tests with VSTS

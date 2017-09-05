@@ -4,16 +4,14 @@ description: Use npm scopes for private packages in Visual Studio Team Services
 ms.assetid: c88868bd-8101-48f3-b76d-17c858181fda
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
-ms.date: 10/10/2016
+ms.date: 09/01/2017
 ---
 
 # Use npm scopes
 
-**Availability**<br>
-npm Package Management is available with **Visual Studio Team Services** and **TFS 2017 Update 1 and newer**.
+[!INCLUDE [](../_shared/availability-npm.md)]
 
 [Scopes](https://docs.npmjs.com/misc/scope) are built into npm and are a way of grouping packages together.
 In Team Services and in npmjs.com, you can publish and use both scoped and unscoped packages. 

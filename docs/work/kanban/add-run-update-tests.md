@@ -7,6 +7,7 @@ ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318
 ms.manager: douge
 ms.author: kaelli
 ms.date: 07/14/2017
+ms.topic: get-started-article
 ---
 
 #Add, run, and update inline tests

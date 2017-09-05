@@ -3,7 +3,6 @@ title: Configure initial groups, teams, members, and permissions | VSTS & TFS
 description: Configure the initial security settings for a team project using the plug-in file for Groups and Permissions - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 518b3c00-0587-45fe-8cbb-43f6a2760ea0
 ms.author: kaelli
 ms.manager: douge

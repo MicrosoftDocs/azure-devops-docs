@@ -7,7 +7,6 @@ ms.assetid: 43ef12ac-4541-436c-b6df-343e6e321cf9
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
-ms.topic: get-started-article
 ---
 
 # HipChat with Visual Studio Team Services

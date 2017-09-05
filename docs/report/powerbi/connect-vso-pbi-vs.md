@@ -3,7 +3,6 @@ title: Connect Power BI  | VSTS
 description: Get started using Power BI to analyze data collected for team projects hosted on Visual Studio Team Services (VSTS) 
 ms.technology: vs-devops-reporting
 ms.prod: vs-devops-alm
-ms.topic: get-started-article  
 ms.assetid: 2915605A-E3F1-4FE0-ACA5-7A4D734DB679
 ms.manager: douge
 ms.author: kaelli

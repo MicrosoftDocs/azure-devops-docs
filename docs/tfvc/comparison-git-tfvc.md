@@ -2,7 +2,6 @@
 title: Git and TFVC version control 
 description: Choosing which version control to use in Visual Studio Team Services
 ms.assetid: A4D7295A-22AB-4990-BE68-EF81A1C31F01
-ms.topic: code reference (API)
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
 ms.service: vsts-code

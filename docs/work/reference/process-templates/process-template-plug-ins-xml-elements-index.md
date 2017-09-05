@@ -3,7 +3,6 @@ title: Process template plug-ins index | VSTS & TFS
 description: Uses to look up the syntax structure and find examples of how to use each element.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit 
-ms.topic: reference
 ms.assetid: ea3c836a-438b-4d28-9fa4-e29281a96db6
 ms.manager: douge
 ms.author: kaelli

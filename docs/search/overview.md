@@ -13,6 +13,8 @@ ms.date: 12/04/2016
 
 # Search across all your code and work items
 
+[!INCLUDE [version-header-shared-vsts-tfs](_shared/version-header-shared-vsts-tfs.md)]
+
 Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) store a tremendous amount of information; 
 work items for planning and tracking your work, version control to track code file changes, 
 and build and release services to help you ship effortlessly. 

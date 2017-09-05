@@ -4,7 +4,6 @@ description: Work with queries to support your and team usage
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-agile-wit
 ms.assetid:  
-ms.topic: get-started-article 
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/11/2017  

@@ -3,7 +3,6 @@ title: Resolve data conflicts (publish and refresh) | VSTS & TFS
 description: Resolves data conflicts from publishing a work item.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: office
 ms.assetid: d43d6f68-bcef-42af-857c-50c2ff6ea79b
 ms.manager: douge
 ms.author: kaelli

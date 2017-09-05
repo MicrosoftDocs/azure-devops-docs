@@ -3,7 +3,6 @@ title: TF30016-No permissions to create a SQL Server Reporting Services site | T
 description: Occurs when the permissions granted to the user account are not sufficient to enable to create the reporting site.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: edb242fd-5839-440d-9ee1-f24e0b279137
 ms.manager: douge
 ms.author: kaelli

@@ -3,7 +3,6 @@ title: TF30031-Team Explorer can't open a document because the WebClient service
 description: Occurs when Team Explorer tries to open a document stored in the document library for a team project.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: 80812479-89ac-41e8-8f6f-21bd4254f863
 ms.manager: douge
 ms.author: kaelli

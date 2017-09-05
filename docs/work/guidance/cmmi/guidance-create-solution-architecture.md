@@ -3,7 +3,6 @@ title: Create a solution architecture | VSTS & TFS
 description: Investigate alternative architectural strategies to creat good architecture - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: cmmi
 ms.assetid: 77707311-8835-4bc8-9b28-17534d7a7d9c
 ms.author: kaelli
 ms.manager: douge

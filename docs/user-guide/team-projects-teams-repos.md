@@ -3,7 +3,6 @@ title: Team projects, teams, and repositories | Team Services & TFS
 description: Understand the key concepts that support the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
-ms.topic: get-started-article  
 ms.assetid: 29B4E51E-F2C6-4159-89EC-61FFCB9A478F
 ms.manager: douge
 ms.author: kaelli

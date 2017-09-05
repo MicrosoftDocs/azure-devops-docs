@@ -1,7 +1,6 @@
 ---
 title: Change the Azure subscription your VSTS account uses for billing
 description: Change the Azure subscription your VSTS account uses for billing
-ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-billing
 ms.service: vsts-admin

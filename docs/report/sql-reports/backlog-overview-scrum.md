@@ -4,7 +4,6 @@ description: Reports the lists of all product backlog items (PBIs) - Team Founda
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting
 ms.assetid: b3e2c54e-99de-47d1-9fa5-08539ff31c87
-ms.topic: reference
 ms.author: kaelli
 ms.manager: douge
 ms.date: 02/22/2017

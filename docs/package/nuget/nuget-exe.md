@@ -4,23 +4,22 @@ description: Authenticating to feeds with NuGet in Visual Studio Team Services
 ms.assetid: 10665DBC-846E-4192-8CAB-D5A4C6E40C65
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
-ms.date: 3/29/2017
+ms.date: 09/01/2017
 ---
 
 # Use NuGet with Team Services feeds
 
-**Availability**<br>
-NuGet Package Management is available with **Visual Studio Team Services** and [**TFS 2017 and newer**TFS 2017](tfs.md).
+[!INCLUDE [](../_shared/availability-nuget.md)]
+
+> [!NOTE]
+> This page covers interactive scenarios. In Team Build, use the NuGet step to [restore](/vsts/build-release/packages/nuget-restore.md) and [publish](/vsts/build-release/packages/nuget-pack-publish.md) packages. 
 
 [!INCLUDE [nuget-3x](../_shared/nuget-3x.md)]
-  
-Note: this page covers interactive scenarios. For help using NuGet.exe in builds, see the [builds section](../build/overview.md). 
 
-## Add a feed to NuGet 3
-NuGet 3 supports the Credential Provider, which automatically acquires feed credentials when needed.
+## Add a feed to NuGet 3 or later
+NuGet 3 and later supports the Credential Provider, which automatically acquires feed credentials when needed.
 
 [!INCLUDE [](../_shared/nuget-publish-endpoint.md)]
 

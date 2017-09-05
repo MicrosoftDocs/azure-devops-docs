@@ -1,31 +1,47 @@
 - name: Notifications
   href: index.md
+- name: Overview
+  items:
+  - name: About notifications
+    href: about-notifications.md
+- name: Quickstarts
+  items:
+  - name: Unsubscribe from a notification
+    href: unsubscribe-default-notification.md
+  - name: Change your preferred email address 
+    href: change-email-address.md
 - name: Tutorials
   items:
   - name: "Follow work & pull requests"
     href: /vsts/collaborate/follow-work-items?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Set your personal notifications
-    href: /vsts/collaborate/manage-personal-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json 
+    href: manage-personal-notifications.md
 - name: How-to Guides
   items:
   - name: "Use @mentions to further discussion"
     href: at-mentions.md
   - name: "Use #ID to link to work items"
     href: add-links-to-work-items.md
-  - name: Go mobile
-    href: /vsts/collaborate/mobile-work?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Manage team notifications
     href: /vsts/collaborate/manage-team-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Campfire
+  - name: Get notified with Campfire
     href: /vsts/collaborate/campfire?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Flowdock
+  - name: Get notified with Flowdock
     href: /vsts/collaborate/flowdock?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Hipchat
+  - name: Get notified with Hipchat
     href: /vsts/collaborate/hipchat?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
-  - name: Slack
+  - name: Get notified with Slack
     href: /vsts/collaborate/slack?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Set alerts (TFS) 
+    href: /vsts/work/track/alerts-and-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Collaborate in a team room
     href: /vsts/collaborate/collaborate-in-a-team-room?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+- name: Reference
+  items:
+  - name: Default notifications
+    href: oob-built-in-notifications.md 
+  - name: FAQs 
+    href: faq-notifications.md 
 - name: Resources    
   items:
   - name: Git
@@ -34,5 +50,8 @@
     href: ../work/work-items/index.md
   - name: Microsoft Teams Integration
     href: https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams
-  - name: Integrate with service hooks
+  - name: Service Hooks
     href: ../service-hooks/index.md
+  - name: REST API
+    href: /rest/api/vsts/notification/subscriptions
+

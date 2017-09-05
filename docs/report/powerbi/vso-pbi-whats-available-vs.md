@@ -3,7 +3,6 @@ title: Data available in Power BI | VSTS
 description: Learn about what data is available in the Power BI connector for Visual Studio Team Services (VSTS)  
 ms.technology: vs-devops-reporting
 ms.prod: vs-devops-alm
-ms.topic: get-started-article  
 ms.assetid: 94233019-F353-434C-9D90-6FD736CC818E  
 ms.manager: douge
 ms.author: kaelli

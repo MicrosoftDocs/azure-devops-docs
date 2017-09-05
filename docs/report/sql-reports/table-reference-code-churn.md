@@ -3,7 +3,6 @@ title: Code Churn tables | TFS
 description: Query for data about the changes in the code that is under version control  
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: c158a791-7f9d-4440-aa47-87a9497da9e2
 ms.manager: douge
 ms.author: kaelli

@@ -3,7 +3,6 @@ title: Define objects for tracking work items using the work Item tracking plug-
 description: Use the plug-in for tracking work items and defining a team project's initial objects for tracking work - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: reference
 ms.assetid: 6d6103d6-2558-460c-b022-9eda2ffe4023
 ms.manager: douge
 ms.author: kaelli

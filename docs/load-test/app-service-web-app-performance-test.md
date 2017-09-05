@@ -8,6 +8,7 @@ ms.assetid: D39BF037-ADF1-41D7-BA6D-84AADA2A16DE
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/12/2016
+ms.topic: get-started-article
 ---
 
 # Load test with the Azure portal

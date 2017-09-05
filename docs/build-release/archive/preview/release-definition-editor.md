@@ -4,7 +4,6 @@ description: Use the release definition editor in Release Management for Visual 
 ms.assetid: 00624D7C-1FF0-49B8-9117-A1F6276D777F
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer
 ms.date: 05/05/2017

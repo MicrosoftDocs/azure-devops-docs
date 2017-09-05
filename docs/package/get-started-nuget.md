@@ -7,18 +7,17 @@ ms.topic: get-started-article
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.manager: douge
 ms.author: amullans
-ms.date: 10/05/2016
+ms.date: 09/01/2017
 ---
 
 # Get started with NuGet Package Management in Team Services and TFS
 
 ## Before you start
 This guide assumes you've already set up Package Management. You can check out how to install and license the extension in the 
-[Install and license Package Management guide](install.md), or go directly to the [Extensions Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed) 
+[Install and license Package Management guide](install.md), or go directly to the [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed) 
 listing to install.
 
-**Availability**<br>
-NuGet Package Management is available with **Visual Studio Team Services** and **TFS 2017 and newer**.
+[!INCLUDE [](_shared/availability-nuget.md)]
 
 <a name="create-a-feed"></a>
 ## Create a feed
@@ -41,7 +40,7 @@ NuGet Package Management is available with **Visual Studio Team Services** and *
 ## Automate the process with continuous integration
 
 You can use continuous integration systems like Team Build to automate the packing and publishing of your packages. 
-To get started with continuous integration, see the [Continuous delivery overview](build/overview.md) 
+To get started with continuous integration, see the [NuGet in Team Build guidance](/vsts/build-release/packages/nuget.md).
 
 ## What's next?
 

@@ -1,0 +1,40 @@
+- name: Feedback 
+  href: index.md
+- name: Overview
+  items:
+  - name: About feedback
+    href: about-feedback.md  
+- name: How-to Guides
+  items:
+  - name: Request feedback (Test & Feedback extension) 
+    href: /vsts/manual-test/stakeholder/request-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json  
+  - name: Request feedback (Work tracking)
+    href: /vsts/work/connect/get-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json  
+  - name: Provide feedback (Test & Feedback extension)
+    href: /vsts/manual-test/stakeholder/provide-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json
+  - name: Provide feedback (Feedback client)
+    href: /vsts/work/connect/give-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json  
+  - name: Track feedback (Test & Feedback extension)
+    href: /vsts/manual-test/stakeholder/track-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json
+  - name: Voluntarily provide stakeholder feedback (Test & Feedback extension)
+    href: /vsts/manual-test/stakeholder/voluntary-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json
+  - name: Set feedback permissions
+    href: /vsts/work/connect/give-permissions-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json
+  - name: Enable remote audio capture
+    href: /vsts/work/reference/enable-remote-audio-capture?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json
+  - name: Change the audio device or annotation tool
+    href: /vsts/work/reference/change-audio-device-annotation-tool?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json
+- name: Reference
+  items:
+  - name: Give us feedback, get support
+    href: /vsts/provide-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json 
+- name: Resources 
+  items:
+  - name: Agile
+    href: /vsts/index#pivot=services&panel=agile
+  - name: Testing
+    href: /vsts/index#pivot=services&panel=testing
+  - name: Uservoice Integration (Marketplace extension)
+    href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice
+  - name: UserVoice UI (Marketplace extension)
+    href: https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-uservoice-ui

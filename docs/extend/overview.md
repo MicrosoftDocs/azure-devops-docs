@@ -8,9 +8,10 @@ ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/23/2016
+ms.topic: get-started-article
 ---
 
-# Creating custom extensions for Visual Studio Team Services (VSTS)
+# Create a custom extension
 
 >[!NOTE]
 > This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, visit the [Marketplace documentation](../marketplace/index.md). For information on 

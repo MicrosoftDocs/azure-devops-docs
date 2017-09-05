@@ -3,7 +3,7 @@ title: A tour of VSTS & TFS services | Team Services & TFS
 description: Understand the services that support the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
-ms.topic: get-started-article  
+ms.topic: get-started-article
 ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: douge
 ms.author: kaelli
@@ -166,10 +166,6 @@ There are a number of features and tasks associated with administrating a collab
 - [Client-server tools](tools.md) 
 - [Software development roles](roles.md)  
 - [Pricing](https://www.visualstudio.com/team-services/pricing/)
-
-### Case studies 
-
-- [Build and Deployment Automation Case Study for World Wide Time Keeping: Higher Quality and Faster Delivery in an Increasingly Agile World](https://www.visualstudio.com/en-us/articles/build-deployment-best-practices)  
 
 
 <!---

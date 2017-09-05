@@ -3,7 +3,6 @@ title: TF30323-The New Team Project Wizard could not retrieve the wizard page fr
 description: Display an error when the New Team Project Wizard could not retrieve the wizard page from the plug-in.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
-ms.topic: error
 ms.assetid: 7dd4174c-171a-4e3f-8470-e1a8089b93af
 ms.manager: douge
 ms.author: kaelli

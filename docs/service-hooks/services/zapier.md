@@ -7,7 +7,6 @@ ms.assetid: 93b2aed5-2f28-41a3-b1b7-2d88b4feec09
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
-ms.topic: get-started-article
 ---
 
 # Zapier with Visual Studio Team Services

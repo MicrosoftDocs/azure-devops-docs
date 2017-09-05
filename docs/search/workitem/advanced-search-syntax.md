@@ -12,7 +12,7 @@ ms.date: 12/04/2016
 
 # How To: Use Work Item Search
 
-[!INCLUDE [version-header-shared-tsonly](../_shared/version-header-shared-tsonly.md)]
+[!INCLUDE [version-header-shared-vsts-tfs](../_shared/version-header-shared-vsts-tfs.md)]
 
 Work Item Search is available as a built-in extension in Visual Studio Team Services (VSTS).
 Users can use Work Item Search by default without any installation.

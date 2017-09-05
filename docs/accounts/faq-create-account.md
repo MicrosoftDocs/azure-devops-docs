@@ -1,7 +1,6 @@
 ---
 title: Troubleshoot creating a VSTS account
 description: Troubleshoot creating a VSTS account
-ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
 ms.service: vsts-admin

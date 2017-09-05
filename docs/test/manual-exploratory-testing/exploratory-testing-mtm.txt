@@ -1,0 +1,3 @@
+---
+redirect_url: /vsts/test/manual-exploratory-testing/mtm/exploratory-testing-using-microsoft-test-manager
+---

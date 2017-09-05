@@ -4,10 +4,9 @@ description: Immutable packages lead to predictable builds in Visual Studio Team
 ms.assetid: d8a522c4-cc96-4e41-9fdd-5e55a7ea8345
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
-ms.topic: get-started-article
 ms.manager: douge
 ms.author: amullans
-ms.date: 08/10/2016
+ms.date: 09/01/2017
 ---
 
 # Understand immutability of packages

@@ -3,7 +3,6 @@ title: Roles | Team Services & TFS
 description: Understand how our tools and services support the various roles supported in software development when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
-ms.topic: get-started-article  
 ms.assetid: 4600B0D9-3799-4902-814B-F6EC9098C4CE
 ms.manager: douge
 ms.author: kaelli
@@ -65,9 +64,6 @@ One of the main advantages to working with Team Services or TFS is the suite of 
 
 To get started, see the overviews provided here: [Build &amp; Release](build-release/overview.md) and [Test](manual-test/index.md). 
 
-- *Case study*: [Build and Deployment Automation Case Study for World Wide Time Keeping: Higher Quality and Faster Delivery in an Increasingly Agile World](https://www.visualstudio.com/en-us/articles/build-deployment-best-practices)  
-- *Video resource*: [A DevOps walkthrough using Visual Studio 2015 (Channel 9 video)](https://channel9.msdn.com/Blogs/MVPANZ/A-DevOps-walkthrough-using-Visual-Studio-2015).
-
 ### Stakeholders 
 With stakeholder access, anyone within your organization can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to plans by adding and modifying work items. They can't, however, contribute to the code base or exercise test tools. 
 
@@ -126,6 +122,4 @@ To get started, see [Set up Team Services or Team Foundation Server](accounts/ac
 ## Related notes 
 - [Key concepts](concepts.md)
 - [Essential services](services.md)
-
-- [Technical articles](http://visualstudio.com/articles/overview)
  

@@ -6,7 +6,6 @@ description: Use HipChat with your Visual Studio Team Services account
 ms.assetid: c2d8bdb4-9b30-4d39-b8ad-2a1afc704738
 ms.manager: douge
 ms.author: elbatk
-ms.topic: get-started-article
 ms.date: 08/24/2017 
 ---
 
@@ -62,7 +61,7 @@ Now the messages are setup. Go to HipChat and see the messages appear.
 
 ####Q: Can I programmatically create subscriptions?
 
-A: Yes, see details [here](/vsts/integrate/get-started/service-hooks/create-subscription).
+A: Yes, see details [here](../service-hooks/create-subscription.md).
 
 ####Q: Where can I get more information about HipChat?
 

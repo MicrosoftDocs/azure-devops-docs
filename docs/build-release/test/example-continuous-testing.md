@@ -7,9 +7,12 @@ ms.assetid: 447F1F56-993A-4AB0-B521-ED72514BDEE3
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/12/2016
+ms.topic: get-started-article
 ---
 
 # Continuous integration, test, and deployment tutorial
+
+[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
 This tutorial demonstrates how you can use the continuous integration and
 continuous deployment features of Visual Studio Team Services (VSTS) and
