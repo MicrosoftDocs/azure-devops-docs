@@ -12,175 +12,120 @@ ms.topic: get-started-article
 
 # Build your Xamarin app
 
-[!INCLUDE [include](../../_shared/version.md)]
+**VSTS | TFS 2017 Update 2**
 
-Xamarin enables you to develop a single solution and deploy it to Android, iOS, and Windows devices. After you define three CI builds, you can build the app whenever your team checks in code.
-
-> You no longer need a Xamarin license to build your Xamarin app. We're deprecating the [Utility: Xamarin license](../../tasks/utility/xamarin-license.md) task. We recommend that you remove this task from your build to avoid disruption when we remove the task from the product.
+Xamarin enables you to develop a single solution and deploy it to Android, iOS, and Windows devices. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your Xamarin app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process.
 
 ## Prerequisites
 
-> * [Install Xamarin](https://www.xamarin.com/download) The Xamarin version on your dev machine and build agent machines must be at least 4.0.3 on your PC and 5.10.3. on your Mac.
+[!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-## Upload your code
+* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account.
 
-Upload your Xamarin solution to [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs) or your [on-premises Team Foundation Server](../../../tfs-server/install/get-started.md). Either push your code to Git or check in your code to TFVC.
+* You will build the sample app on Android and iOS using two build definitions in this quickstart. If you use VSTS, you can use hosted agent for Xamarin.Android, but if you use TFS or to build Xamarin.iOS, you also need a private agent. Set up a private agent and [Install Xamarin](https://www.xamarin.com/download) on the agent machine. The Xamarin version on your dev machine and build agent machine must be at least 4.0.3 for Windows and 5.10.3 for Mac.
 
-[I don't have a Xamarin solution yet but I'd like to try this out.](#new_solution)
+ |Build | [Hosted agents](../../concepts/agents/hosted.md) | [On-premises Windows agent](../../actions/agents/v2-windows.md) | On-premises [OSX](../../actions/agents/v2-osx.md) or [Linux](../../actions/agents/v2-linux.md) agent |
+ |:---:|:---:|:---:|:---:|
+ | Xamarin.Android | Yes | Yes (with Xamarin installed) | Yes (with Xamarin installed) |
+ | Xamarin.iOS | No | No | Yes (with Xamarin installed) |
+ | UWP | Yes | Yes (Windows 10) | No |
 
+## Get the sample code
 
-<a name="agents"></a>
-## Deploy your build agents
+[!INCLUDE [include](../_shared/get-sample-code-intro.md)]
 
-You'll need some agents to run your builds.
+```
+https://github.com/adventworks/xamarin-sample
+```
 
-|Build | [Hosted agents](../../concepts/agents/hosted.md) | [On-premises Windows agent](../../actions/agents/v2-windows.md) | On-premises [OSX](../../actions/agents/v2-osx.md) or [Linux](../../actions/agents/v2-linux.md) agent |
-|:---:|:---:|:---:|:---:|
-| Xamarin.Android | Yes | Yes (with Xamarin installed) | Yes (with Xamarin installed) |
-| Xamarin.iOS | No | No | Yes (with Xamarin installed) |
-| UWP | Yes | Yes (Windows 10) | No |
+# [VSTS or TFS repo](#tab/vsts)
 
+[!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
 
-## Define your Xamarin.Android build
+# [GitHub repo](#tab/github)
 
-<ol>
-<li><p><a data-toggle="collapse" href="#expando-begin-create-build-xamarin-android-definition-open-team-project">Open your team project in your web browser &#x25BC;</a></p>
-<div class="collapse" id="expando-begin-create-build-xamarin-android-definition-open-team-project">
-![Browse to team project](../../_shared/_img/browse-to-team-project.png)
-<ul>
-<li>On-premises ```http://{your_server}:8080/tfs/DefaultCollection/{your_team_project}``` </li>
-<li>Visual Studio Team Services ```https://{your_account}.visualstudio.com/DefaultCollection/{your_team_project}```</li>
-</ul>
-</div>
-</li>
+[!INCLUDE [include](../_shared/get-sample-code-github.md)]
+ 
+---
 
-<li><p><a data-toggle="collapse" href="#expando-begin-create-xamarin-android-build-definition-create">Create a build definition &#x25BC;</a></p>
-<div class="collapse" id="expando-begin-create-xamarin-android-build-definition-create">
-![Build tab](../../_shared/_img/create-new-build-definition.png)
-</div>
-</li>
+## Set up continuous integration
 
-<li>On the Create new build definition dialog box, select **Xamarin.Android** and click Next.</li>
+[!INCLUDE [include](../../_shared/ci-quickstart-intro.md)]
 
-<li>Select the repo, branch, and **continuous integration**.</li>
+[//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-<li>Select a default queue that includes a [build agent that can build Xamarin.Android apps](#agents).</li>
+You need to create two build definitions - one for Xamarin.Android and one for Xamarin.iOS.
 
-</ol>
+### Define your Xamarin.Android build
 
-### Variables
+1. Create a new build definition.
 
-On the [Variables tab](../../concepts/definitions/build/variables.md):
+ # [VSTS or TFS repo](#tab/vsts) 
 
-<table>
-    <thead>
-        <tr>
-            <td>Name</td>
-            <td>Value</td>
-        </tr>
-    </thead>
-    <tr>
-        <td><code>BuildConfiguration</code></td>
-        <td><code>Release</code></td>
-    </tr>
-</table>
+ Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
+ ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
-### Build steps
+ You are taken to the **Build & Release** hub and asked to **Select a template** for the new build definition.
 
-On the [build tab](../../tasks/index.md):
+ # [GitHub repo](#tab/github)
 
-<table>
-<tr>
-<td>![Xamarin component restore](../../tasks/package/_img/xamarin-component-restore.png)<br/>[Package: Xamarin component restore](../../tasks/package/xamarin-component-restore.md)</td>
-<td>
-<p>Restore Xamarin components for the specified solution.</p>
-<ul>
-<li>Path to Solution: `**/*.sln`
-<blockquote>
-<strong>Note: </strong>Check the **Enabled** check box if your project uses Xamarin components.
-</blockquote>
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>![Package: NuGet Installer](../../tasks/package/_img/nuget-installer.png)<br/>[Package: NuGet Installer](../../tasks/package/nuget-installer.md)</td>
-<td>
-<p>Install your NuGet package dependencies.</p>
-<ul>
-<li>Path to Solution: `**/*.sln`</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>![icon](../../tasks/build/_img/xamarin-android.png)<br/>[Build: Xamarin.Android](../../tasks/build/xamarin-android.md)</td>
-<td>
-<p>Build your Android project.</p>
-<ul>
-<li>Project: `**/*Droid*.csproj`
-<blockquote>
-<strong>Note: </strong> In this example the name of the Android project ends with `Droid.csproj`. You can either follow a convention like this, or if you prefer, select the specific Android project you want to build.
-</blockquote>
-</li>
-<li>Output directory: `$(build.binariesdirectory)/$(BuildConfiguration)`</li>
-<li>Configuration: `$(BuildConfiguration)`</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>![icon](../../tasks/build/_img/msbuild.png)<br/>[Build: MSBuild](../../tasks/build/msbuild.md)</td>
-<td>
-<p>Build your tests.</p>
-<blockquote><strong>Note: </strong>If you don't have tests yet, then clear the **Enabled** check box.</blockquote>
-<ul>
-<li>Project: `**/*test*.csproj`</li>
-<li>Configuration: `$(BuildConfiguration)`</li>
-<li>MSBuild Arguments: `/p:OutputPath="$(build.binariesdirectory)\$(BuildConfiguration)\test-assembly\\"`</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>![icon](../../tasks/test/_img/xamarin-test-cloud-icon.png)<br/>[Test: Xamarin Test Cloud](../../tasks/test/xamarin-test-cloud.md)</td>
-<td>
-<p>Publish your test results to the Xamarin Test Cloud.</p>
-<blockquote><strong>Note: </strong>If you have Xamarin UI tests to run in your Xamarin test cloud account, then check the **Enabled** check box.</blockquote>
-<ul>
-<li>App File: `$(build.binariesdirectory)/$(BuildConfiguration)/*.apk`</li>
-<li>Test Assembly Directory: `$(build.binariesdirectory)/$(BuildConfiguration)/test-assembly`</li>
-<li>For the other arguments, see [Test: Xamarin Test Cloud](../../tasks/test/xamarin-test-cloud.md).</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>![icon](../../tasks/build/_img/android-signing.png)<br/>[Android Signing](../../tasks/build/android-signing.md)</td>
-<td>
-<p>Sign and align your APK files.</p>
-<ul>
-<li>APK Files: `$(build.binariesdirectory)/$(BuildConfiguration)/*.apk`</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>![icon](../../tasks/utility/_img/publish-build-artifacts.png)<br/>[Utility: Publish Build Artifacts](../../tasks/utility/publish-build-artifacts.md)</td>
-<td>
-<p>Publish your build artifacts.</p>
-<ul>
-<li>Path to publish: `$(build.binariesdirectory)/$(BuildConfiguration)`</li>
-<li>Artifact name: `drop`</li>
-<li>Artifact type: Server</li>
-</ul>
-</td>
-</tr>
-</table>
+ Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
 
+ ---
 
-## Define your Xamarin.iOS build
+1. In the right panel, click **Xamarin.Android**, and then click **Apply**.
 
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
 
-### Configure the solution for iOS Release
+1. For the **Default agent queue**:
 
-The Xamarin.iOS build requires a solution configuration that builds only the Xamarin.iOS project and its dependencies.
+ * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
+
+ * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+
+1. Click **Get sources** and then:
+
+ # [VSTS or TFS repo](#tab/vsts) 
+
+ Observe that the new build definition is automatically linked to your repository.
+
+ # [GitHub repo](#tab/github)
+
+ Select your version control repository. You'll need to authorize access to your repo. 
+
+ > [!TIP]
+ > To learn more about GitHub CI builds, see [Define CI build process for your Git repo](../../actions/ci-build-git.md).
+
+ ---
+
+1. Select **Xamarin Component Restore** task. Check the **Enabled** check box if your project uses Xamarin components.
+
+1. Selectt **Xamarin Test Cloud** task. If you have Xamarin UI tests to run in your Xamarin test cloud account, then check the **Enabled** check box.
+
+1. Click the **Variables** tab and modify these variables:
+
+ * `BuildConfiguration` = `Release`
+
+1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
+
+1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
+
+### Define your Xamarin.iOS build
+
+Repeat the same steps as above to create another build definition, but this time select the **Xamarin.iOS** template.
+
+1. Click the **Variables** tab and modify these variables:
+
+ * `BuildConfiguration` = `iOS Release`
+
+## View the build summary
+
+[!INCLUDE [include](../_shared/view-build-summary.md)]
+
+## Next steps
+
+To be able to configure your own app for iOS release, you need to make the following changes in the solution in your development environment, since the Xamarin.iOS build requires a solution configuration that builds only the Xamarin.iOS project and its dependencies.
 
 0. In Visual Studio, open **Solution Explorer** (Keyboard: Ctrl + Alt + L).
 
@@ -206,10 +151,7 @@ The Xamarin.iOS build requires a solution configuration that builds only the Xam
 
 0. Check in your changes.
 
-
-### Fix portable class library (PCL) references in your solution
-
-There's a known issue that might cause a problem with building your Xamarin.iOS project. For example, in the build log for a Xamarin.iOS build step you might see an errors such as *error : Project reference '../App1/App1.csproj' has invalid or missing guid for metadata 'Project'*.
+There's also a known issue that might cause a problem with building your Xamarin.iOS project. For example, in the build log for a Xamarin.iOS build step you might see an errors such as *error : Project reference '../App1/App1.csproj' has invalid or missing guid for metadata 'Project'*.
 
 To fix this issue:
 
@@ -228,290 +170,3 @@ To fix this issue:
 0. File -> Save All (Keyboard: Ctrl + Shift + S).
 
 0. Check in your changes.
-
-
-### Create the definition
-
-<ol>
-<li><p><a data-toggle="collapse" href="#expando-begin-create-build-xamarin-ios-definition-open-team-project">Open your team project in your web browser &#x25BC;</a></p>
-<div class="collapse" id="expando-begin-create-build-xamarin-ios-definition-open-team-project">
-![Browse to team project](../../_shared/_img/browse-to-team-project.png)
-<ul>
-<li>On-premises ```http://{your_server}:8080/tfs/DefaultCollection/{your_team_project}``` </li>
-<li>Visual Studio Team Services ```https://{your_account}.visualstudio.com/DefaultCollection/{your_team_project}```</li>
-</ul>
-</div>
-</li>
-
-<li><p><a data-toggle="collapse" href="#expando-begin-create-xamarin-ios-build-definition-create">Create a build definition &#x25BC;</a></p>
-<div class="collapse" id="expando-begin-create-xamarin-ios-build-definition-create">
-![Build tab](../../_shared/_img/create-new-build-definition.png)
-</div>
-</li>
-
-<li>On the Create new build definition dialog box, select **Xamarin.iOS** and click Next.</li>
-
-<li>Select the repo, branch, and **continuous integration**.</li>
-
-<li>Select a default queue that includes [build agent that can build Xamarin.iOS apps](#agents).</li>
-
-</ol>
-
-
-### Variables
-
-On the [Variables tab](../../concepts/definitions/build/variables.md):
-
-<table>
-    <thead>
-        <tr>
-            <td>Name</td>
-            <td>Value</td>
-        </tr>
-    </thead>
-    <tr>
-        <td><code>BuildConfiguration</code></td>
-        <td><code>iOS Release</code></td>
-    </tr>
-</table>
-
-### Build steps
-
-On the [build tab](../../tasks/index.md):
-
-<table>
-<tr>
-<td>![Xamarin component restore](../../tasks/package/_img/xamarin-component-restore.png)<br/>[Package: Xamarin component restore](../../tasks/package/xamarin-component-restore.md)</td>
-<td>
-<p>Restore Xamarin components for the specified solution.</p>
-<ul>
-<li>Path to Solution: `**/*.sln`
-<blockquote>
-<strong>Note: </strong>Check the **Enabled** check box if your project uses Xamarin components.
-</blockquote>
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>![icon](../../tasks/build/_img/xamarin-ios.png)<br/>[Build: Xamarin.iOS](../../tasks/build/xamarin-ios.md)</td>
-<td>
-<p>Build your Xamarin.iOS project.</p>
-<ul>
-<li>
-Solution: Click the <strong>...</strong> button and select your solution.
-</li>
-<li>Configuration: `$(BuildConfiguration)`</li>
-<li>Select either **Create app package** or **Build for iOS simulator**.</li>
-</ul>
-<p>If you want to sign and provision, specify the arguments. See [Build: Xamarin.iOS](../../tasks/build/xamarin-ios.md).</p>
-</td>
-</tr>
-<tr>
-<td>![icon](../../tasks/test/_img/xamarin-test-cloud-icon.png)<br/>[Test: Xamarin Test Cloud](../../tasks/test/xamarin-test-cloud.md)</td>
-<td>
-<p>Publish your test results to the Xamarin Test Cloud.</p>
-<blockquote><strong>Note: </strong>If you have Xamarin UI tests to run in your Xamarin test cloud account, then check the **Enabled** check box.</blockquote>
-<ul>
-<li>App File: `**/*.ipa`</li>
-<li>Test Assembly Directory: `your-solution-folder/your-xamarin-ui-test-folder/bin/$(BuildConfiguration)`</li>
-<li>For the other arguments, see [Test: Xamarin Test Cloud](../../tasks/test/xamarin-test-cloud.md).</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>![](../../tasks/utility/_img/copy-files.png)<br/>[Copy Files](../../tasks/utility/copy-files.md)</td>
-<td>
-<ul>
-<li>Contents: `**/*.ipa`</li>
-<li>Target folder: `$(Build.ArtifactStagingDirectory)`</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>![icon](../../tasks/utility/_img/publish-build-artifacts.png)<br/>[Utility: Publish Build Artifacts](../../tasks/utility/publish-build-artifacts.md)</td>
-<td>
-<p>Publish your build artifacts.</p>
-<ul>
-<li>Path to publish: `$(Build.ArtifactStagingDirectory)`</li>
-<li>Artifact name: `drop`</li>
-<li>Artifact type: Server</li>
-</ul>
-</td>
-</tr>
-</table>
-
-
-## Define your UWP build
-
-[Create a new UWP build definition](../windows/universal.md).
-
-
-### Variables
-
-On the [variables tab](../../concepts/definitions/build/variables.md):
-
-<table>
-    <thead>
-        <tr>
-            <td>Name</td>
-            <td>Value</td>
-        </tr>
-    </thead>
-    <tr>
-        <td><code>BuildConfiguration</code></td>
-        <td><code>Release</code></td>
-    </tr>
-    <tr>
-        <td><code>BuildPlatform</code></td>
-        <td><code>x86&#124;x64&#124;ARM</code></td>
-    </tr>
-</table>
-
-
-### Build steps
-
-On the [build tab](../../tasks/index.md):
-
-
-<table>
-<tr>
-<td>![Package: NuGet Installer](../../tasks/package/_img/nuget-installer.png)<br/>[Package: NuGet Installer](../../tasks/package/nuget-installer.md)</td>
-<td>
-<p>Install your NuGet package dependencies.</p>
-<ul>
-<li>Path to Solution: ```**\*.sln```</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>![icon](../../tasks/build/_img/visual-studio-build.png)<br/>
-[Visual Studio Build](../../tasks/build/visual-studio-build.md)</td>
-      <td>
-<p>Build your app.</p>
-<ul>
-<li>Solution: `your-solution-folder/your-project-folder/your-project.csproj`</li>
-[!INCLUDE [include](../_shared/uwp-ci-vsbuild-arguments.md)]
-<li>Platform: Leave it blank.</li>
-<li>Configuration: `$(BuildConfiguration)`</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>![icon](../../tasks/build/_img/msbuild.png)<br/>[Build: MSBuild](../../tasks/build/msbuild.md)</td>
-<td>
-<p>(Optional) Build your tests.</p>
-</td>
-</tr>
-<tr>
-<td>![icon](../../tasks/test/_img/visual-studio-test-icon.png)<br/>[Test: Visual Studio Test](../../tasks/test/visual-studio-test.md)</td>
-<td>
-<p>(Optional) Run your tests.</p>
-</td>
-</tr>
-</table>
-
-## Q&A
-<!-- BEGINSECTION class="md-qanda" -->
-
-<a name="new_solution"></a>
-### How do I create a Xamarin solution?
-
-0. In Visual Studio, File -> New Project -> Visual C# -> Cross-Platform -> Blank App (Xamarin.Forms Portable).
-
-0. Upload your code to [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs) or your [on-premises Team Foundation Server](../../../tfs-server/install/get-started.md). Either push your code to Git or check in your code to TFVC.
-
-[Where can I learn more to get started with Xamarin?](https://developer.xamarin.com/guides/cross-platform/getting_started/)
-
-### How do I discretely build my UWP app at the solution level?
-
-If you want to build your UWP app at the solution level, you should first configure your solution so that you can restrict your CI process to building only the UWP project and its dependencies.
-
-#### Configure the solution for UWP release
-
-0. In Visual Studio, right-click your solution and then click **Configuration Manager**.
-
-0. On the configuration manager dialog box open the active solution configuration drop-down menu and click **New**.
-
-0. On the new solution configuration dialog box:
-
- * For Name, enter `UWP Release`
-
- * Open **Copy settings from** drop-down menu and select **Release**.
-
- * Clear the **Create new project configurations** dialog box.
-
-0. Open the **Active solution platform** drop-down menu:
-
- 0. Select **ARM** and clear the check boxes on all rows except your UWP project and any portable class library (PCL) projects it depends on.
-
- 0. Repeat this step for **x64** and **x86**.
-
-0. Check in your changes.
-
-
-#### Create the build definition
-
-[Create a new UWP build definition](../windows/universal.md).
-
-
-#### Add UWP Release to the variables
-
-On the [variables tab](../../concepts/definitions/build/variables.md):
-
-<table>
-    <thead>
-        <tr>
-            <td>Name</td>
-            <td>Value</td>
-        </tr>
-    </thead>
-    <tr>
-        <td><code>BuildConfiguration</code></td>
-        <td><code>UWP Release</code></td>
-    </tr>
-    <tr>
-        <td><code>BuildPlatform</code></td>
-        <td><code>x86&#124;x64&#124;ARM</code></td>
-    </tr>
-</table>
-
-
-#### Modify the steps to build the solution
-
-On the [build tab](../../tasks/index.md):
-
-<table>
-<tr>
-<td>![Package: NuGet Installer](../../tasks/package/_img/nuget-installer.png)<br/>[Package: NuGet Installer](../../tasks/package/nuget-installer.md)</td>
-<td>
-<p>Install your NuGet package dependencies.</p>
-<ul>
-<li>Path to Solution: ```**\*.sln```</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>![icon](../../tasks/build/_img/visual-studio-build.png)<br/>
-[Visual Studio Build](../../tasks/build/visual-studio-build.md)</td>
-      <td>
-<p>Build your app.</p>
-<ul>
-<li>Solution: `**\*.sln`</li>
-[!INCLUDE [include](../_shared/uwp-ci-vsbuild-arguments.md)]
-</ul>
-</td>
-</tr>
-<tr>
-<td>![icon](../../tasks/test/_img/visual-studio-test-icon.png)<br/>[Test: Visual Studio Test](../../tasks/test/visual-studio-test.md)</td>
-<td>
-<p>(Optional) Run your tests.</p>
-</td>
-</tr>
-</table>
-
-[!INCLUDE [temp](../../_shared/qa-definition-common-all-platforms.md)]
-
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
-
-<!-- ENDSECTION -->

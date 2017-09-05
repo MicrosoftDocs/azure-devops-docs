@@ -50,7 +50,6 @@ Learn how to deploy your app.
 * [CI builds for Git in VSTS](actions/ci-build-git.md)
 * [CI builds for GitHub](actions/ci-build-github.md)
 * [Set up multi-stage release](actions/define-multistage-release-process.md)
-* [Extend CI/CD](actions/extend-release-management.md)
 
 ## Videos
 

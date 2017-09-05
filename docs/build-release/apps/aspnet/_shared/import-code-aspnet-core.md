@@ -1,27 +1,25 @@
-VSTS and TFS are full-featured Git servers for hosting your team's source code. You'll import code for a sample ASP.NET Core app into VSTS/TFS Git repository. This is the app that you'll configure CI/CD for.
+To configure a CI build process for your app, the source code needs to be in a version control system. VSTS and TFS integrate with various version control systems such as Git in VSTS or TFS, Team Foundation Version Control (TFVC), GitHub, and Subversion.
 
-[//]: # (> [!NOTE])
-[//]: # (> If you already have an ASP.NET Core application checked into your Git repository, you can use that for this quickstart, so long as your app does not depend on a database.)
+For a simple way to follow this quickstart, get the following sample app code and put it into your own version control repository:
 
-1. Open your team project in your web browser:
+```
+https://github.com/adventworks/dotnetcore-sample
+```
 
- * **VSTS:** `https://{your-account}.visualstudio.com/DefaultCollection/{your-team-project}`
+You've got a few version control options. Some common ones are:
 
- * **TFS:** `http://{your-server}:8080/tfs/DefaultCollection/{your-team-project}`
+* To import the sample app into a Git repo in VSTS or TFS:
 
- [The TFS URL doesn't work for me. How can I get the correct URL?](../../../../security/websitesettings.md)
+ 1. On the **Code** hub for your team project in VSTS/TFS, select the option to **Import repository**.
 
-1. On the **Code** hub for your team project, select the option to **Import repository**.
+ 1. In the **Import a Git repository** dialog box, paste the above URL into the **Clone URL** text box.
 
- ![import repository menu item](../../_shared/_img/import-repository-menu-item.png)
+ 1. Click **Import** to copy the sample code into your Git repo.
 
-1. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** text box.
+* To fork the sample app into your own GitHub repository:
 
-  ```
-  https://github.com/adventworks/dotnetcore-sample
-  ```
+ 1. Navigate to the above GitHub repository URL in your browser.
 
-1. Click **Import** to copy the sample code into your Git repo.
+ 1. Select **Fork** to create your own copy of the repository.
 
-The sample app in this repository is a Visual Studio solution that has two projects - an ASP.NET Core Web Application project and a Unit Test project both targeting .Net Core 1.1 framework.
-The instructions in this quickstart work for applications targeting .Net Core 2.0 framework as well.
+This quickstart works for apps targeting the .Net Core 1.1 or 2.0 frameworks. The sample app is a Visual Studio solution that has two projects: an ASP.NET Core Web Application project and a Unit Test project (both targeting .Net Core 1.1 framework).
