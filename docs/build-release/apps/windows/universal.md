@@ -22,29 +22,23 @@ Universal Windows Platform (UWP) is a common app platform available on every dev
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-tfs.md)]
 
-## Import sample app code
+## Get sample app code
 
-VSTS and TFS are full-featured Git servers for hosting your team's source code. You'll import code for a sample UWP app into VSTS/TFS Git repository. This is the app that you'll configure CI/CD for.
+[!INCLUDE [include](../_shared/get-sample-code-intro.md)]
 
-1. Open your team project in your web browser:
-
- * **VSTS:** `https://{your-account}.visualstudio.com/DefaultCollection/{your-team-project}`
-
- * **TFS:** `http://{your-server}:8080/tfs/DefaultCollection/{your-team-project}`
-
- [The TFS URL doesn't work for me. How can I get the correct URL?](../../../security/websitesettings.md)
-
-1. On the **Code** hub for your team project, select the option to **Import repository**.
-
- ![import repository menu item](../_shared/_img/import-repository-menu-item.png)
-
-1. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** text box.
-
- ```bash
+```
 https://github.com/Microsoft/UWPQuickStart
 ```
 
-1. Click **Import** to copy the sample code into your Git repo.
+# [VSTS or TFS repo](#tab/vsts)
+
+[!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
+
+# [GitHub repo](#tab/github)
+
+[!INCLUDE [include](../_shared/get-sample-code-github.md)]
+ 
+---
 
 ## Set up continuous integration
 
@@ -52,11 +46,21 @@ https://github.com/Microsoft/UWPQuickStart
 
 [//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-1. On the **Files** tab of the **Code** hub, click **Set up build**.
+1. Create a new build definition.
+
+ # [VSTS or TFS repo](#tab/vsts) 
+
+ Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build & Release** hub in VSTS and asked to **Choose a template**.
+ You are taken to the **Build & Release** hub and asked to **Select a template** for the new build definition.
+
+ # [GitHub repo](#tab/github)
+
+ Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
+
+ ---
 
 1. In the right panel, click **Universal Windows Platform**, and then click **Apply**.
 
@@ -67,6 +71,21 @@ https://github.com/Microsoft/UWPQuickStart
  * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+
+1. Click **Get sources** and then:
+
+ # [VSTS or TFS repo](#tab/vsts) 
+
+ Observe that the new build definition is automatically linked to your repository.
+
+ # [GitHub repo](#tab/github)
+
+ Select your version control repository. You'll need to authorize access to your repo. 
+
+ > [!TIP]
+ > To learn more about GitHub CI builds, see [Define CI build process for your Git repo](../../actions/ci-build-git.md).
+
+ ---
 
 1. Select the **Visual Studio Build** task from the tasks. On the right side, you see the parameters for the task. _Append_ the following additional parameter to the MSBuild Arguments:<br/>
 

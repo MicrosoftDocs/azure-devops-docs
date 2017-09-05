@@ -1,6 +1,6 @@
 ---
-title: Build and Test Xcode Projects
-description: Build and Test Xcode Projects with Visual Studio Team Services or Team Foundation Server 2015
+title: Build your Xcode app
+description: Build and test Xcode projects with Visual Studio Team Services or Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: e1b5bda1-9cab-4083-a593-36ae52e82b4a
@@ -10,22 +10,120 @@ ms.date: 08/04/2016
 ms.topic: get-started-article
 ---
 
-# Build and Test Xcode Projects
+# Build your Xcode app
 
-[!INCLUDE [temp](../../_shared/version.md)]
+**VSTS | TFS 2017 Update 2**
 
-> **Notice**: Apple's WWDR certificate expired on Feb 14th and as a result you may experience signing failures if you have not updated the cert and **removed the old one**. Follow the steps outlined by Apple under [What should I do if Xcode doesn’t recognize my distribution certificate?](https://developer.apple.com/support/certificates/expiration/) to resolve the problem. Note that this also affects development certs despite the title.
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your Xcode app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process.
 
-The prerequisites in this case are simple: Your Mac needs to have Node.js, Xcode, and [xcpretty](https://github.com/supermarin/xcpretty) (for testing) installed. Simply open the OSX Terminal app and follow these [setup instructions](../../actions/agents/v2-osx.md). On startup the agent will automatically register itself with VSTS / TFS when you start up the agent for the first time.
+## Prerequisites
 
-The Xcode Build task used here supports features to simplify configuration of code signing. See **[Simple, Secure CI App Signing](secure-certs.md)** for details.
+[!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-> **Troubleshooting Tip**: You should either setup the cross-platform agent as a launch agent (./svc.sh install agent) or run it as an interactive process (node agent/vsoagent.js) when building an Xcode project that involves code signing like iOS.
+* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account.
 
-## Project Setup
-For the purposes of this tutorial we will assume you are trying to build an iOS app but the concepts described here essentially translate to other Xcode builds.
+* You need a build agent configured on a Mac machine. Simply open the OSX Terminal app on your Mac and follow these [setup instructions](../../actions/agents/v2-osx.md). The agent will automatically register itself with VSTS / TFS when you start up the agent for the first time.
 
-There is really only one step required for configuring an Xcode project for a CI environment that is not done by default when you create an Xcode project. Xcode has the concept of schemes and you'll need to set one of these as "Shared" and add it to source control so it can be used during your CI builds.  Follow these steps:
+* Your Mac also needs to have Node.js, Xcode, and [xcpretty](https://github.com/supermarin/xcpretty) (for testing) installed.
+
+## Get the sample code
+
+[!INCLUDE [include](../_shared/get-sample-code-intro.md)]
+
+```
+https://github.com/adventworks/xcode-sample
+```
+
+# [VSTS or TFS repo](#tab/vsts)
+
+[!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
+
+# [GitHub repo](#tab/github)
+
+[!INCLUDE [include](../_shared/get-sample-code-github.md)]
+ 
+---
+
+The sample provided here is an iOS app, but the concepts described here essentially translate to other Xcode builds. Results from running tests are published to VSTS using **[xcpretty](https://github.com/supermarin/xcpretty)**. That is why you will need to have xcpretty installed on the OSX machine as this is not part of Xcode itself.
+
+## Set up continuous integration
+
+[!INCLUDE [include](../../_shared/ci-quickstart-intro.md)]
+
+1. Create a new build definition.
+
+ # [VSTS or TFS repo](#tab/vsts) 
+
+ Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
+
+ ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
+
+ You are taken to the **Build & Release** hub and asked to **Select a template** for the new build definition.
+
+ # [GitHub repo](#tab/github)
+
+ Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
+
+ ---
+
+1. In the right panel, click **Xcode**, and then click **Apply**.
+
+ You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
+
+1. For the **Default agent queue**, select a queue that includes the Mac agent you set up.
+
+1. Click **Get sources** and then:
+
+ # [VSTS or TFS repo](#tab/vsts) 
+
+ Observe that the new build definition is automatically linked to your repository.
+
+ # [GitHub repo](#tab/github)
+
+ Select your version control repository. You'll need to authorize access to your repo. 
+
+ > [!TIP]
+ > To learn more about GitHub CI builds, see [Define CI build process for your Git repo](../../actions/ci-build-git.md).
+
+ ---
+
+1. Set the following parameters for the **Xcode test** task:
+
+  * **Scheme**: Name of the scheme shared.
+  * **Advanced &gt; Create App Package**: Unchecked.
+  * **Advanced &gt; Use xcpretty**: Checked.
+  * **Advanced &gt; Xcode Developer Path**: allows you to specify the path of a different version of Xcode than is installed by default. Ex: /Applications/Xcode6.4.app/Contents/Developer.
+
+  > **Troubleshooting Tip**: The "Release" configuration is not testable by default. You'll either need to use "Debug" or enable testability in for the configuration in Xcode. Also, be sure to pay attention to capitalization as "Debug" will work but "debug" may not.
+
+1. Set the following parameters for the **Xcode build** task:
+
+ * Scheme: Name of the scheme shared.
+
+1. On the **Variables** tab in the build definition, add the following variables:
+
+ * **Configuration**: Debug or Release
+ * **SDK**: iphoneos
+ * **TestSDK**: iphonesimulator
+
+1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+
+1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
+
+1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
+
+ > **Troubleshooting Tip**: If you encounter a "User interaction not allowed" error when running the agent as a launch agent, you will either need check the "Unlock default keychain" option or switch to referencing signing certificates using a file. See **[Simple, Secure CI App Signing](secure-certs.md)** for details.
+
+ > **Troubleshooting Tip**: If you run into issues with your tests hanging and/or not being able to start the iOS Simulator at times you can opt to add a Command Line task for the "killall" tool with "iOS\ Simulator" as an argument (killall iOS\ Simulator). This will force shut down the simulator in the event it is hung. Exercise care when running the command if you have multiple agents running for the same user and that you do not accidently kill other processes.   
+
+
+## View the build summary
+
+[!INCLUDE [include](../_shared/view-build-summary.md)]
+
+## Next steps
+
+If you plan to use your own Xcode project for this quickstart, there is really only one additional step required for configuring the project for a CI environment that is not done by default when you create the Xcode project. Xcode has the concept of schemes and you'll need to set one of these as "Shared" and add it to source control so it can be used during your CI builds.  Follow these steps:
 
 1. In Xcode, open your project and go to **Product Scheme Manage Schemes...**
 
@@ -33,115 +131,6 @@ There is really only one step required for configuring an Xcode project for a CI
 
 3. Now add the new files and folders in your .xcodeproj folder (specifically the xcsharedata folder to source control).
 
-![Shared Scheme](_img/xcode-ios/xcode-1.png)
+ ![Shared Scheme](_img/xcode-ios/xcode-1.png)
 
-## Create the definition
-
-0. Open your team project in your web browser.
-
- * On-premises ```http://{your_server}:8080/tfs/DefaultCollection/{your_team_project}```
- * Visual Studio Team Services  ```https://{your_account}.visualstudio.com/DefaultCollection/{your_team_project}```
-
-0. Create a build definition.
-
- ![New build definition](../../_shared/_img/create-new-build-definition.png)
-
-0. Click Empty to start with an empty definition.
-
-## Set Build Variables
-
-Next, click on the **Variables** tab and add in the Configuration and SDK variables.
-* **Configuration**: Debug or Release
-* **SDK**: iphoneos
-
-	![Xcode Variables](_img/xcode-ios/xcode-3.png)
-
-## Add Steps
-
-On the Build tab, add some steps.
-
-<table>
-   <tr>
-      <td>![Build: Xcode Build](../../tasks/build/_img/xcode-build.png) <strong>Build: Xcode</strong></td>
-      <td>
-	  	<p>Settings:</p>
-	  	<ul>
-		  <li><strong>Actions</strong>: build</li>
-		  <li><strong>Configuration</strong>: Xcode can have any number of configurations but "Debug" and "Release" are there by default. We'll use $(Configuration) which gets this value from a **Variable**.</li>
-		  <li><strong>SDK</strong>: Run xcodebuild -showsdks to see the valid list of SDKs. Ex: "iphoneos", "iphonesimulator".  We'll use $(SDK) so it is set as a variable.</li>
-		  <li><strong>Workspace Path</strong>: This can be left to the default value unless you want to explicitly override it.</li>
-		  <li><strong>Scheme</strong>: Set this to the name of the Scheme you shared in your project</li>
-		  <li><strong>Create App Pacakge</strong>: Checked. This will automatically generate an app package (ipa) for your project once the build has completed.</li>
-		</ul>
-		<p>There are a few other options worth noting:</p>
-		<ul>
-		  <li>The <strong>Signing & Provisioning</strong> category provides a number of options for making signing less complicated. See **[Simple, Secure CI App Signing](secure-certs.md)** for details.</li>
-	      <li><strong>Advanced / Use xcpretty</strong> will format xcodebuild output with xcpretty [xcpretty](https://github.com/supermarin/xcpretty). We'll cover this more when we add in a test.</li>
-		  <li><strong>Advanced / Xcode Developer Path</strong> allows you to specify the path of a different version of Xcode than is installed by default.  Ex: */Applications/Xcode6.4.app/Contents/Developer*</li>
-		</ul>
-      </td>
-   </tr>
-   <tr>
-      <td>![Build: Publish Build Artifacts](../../tasks/utility/_img/publish-build-artifacts.png) <strong>Build: Publish Build Artifacts</strong></td>
-	  <td>
-	  	<p>Settings:</p>
-	  	<ul>  	   
-		<li> <strong>Copy Root</strong>: The default location is <strong>output/$(SDK)/$(Configuration)/$(Configuration)-$(SDK)/build.dsym</strong></li>
-		<li> <strong>Contents:</strong> *.ipa</li>
-		<li> <strong>Artifact Name:</strong> ipa</li>
-		<li> <strong>Artifact Type:</strong> Server</li>
-		</ul>
-	</td>
-   </tr>
-</table>
-
-Save and click "Queue Build..." to test it out!
-
-![Xcode Task](_img/xcode-ios/xcode-2.png)
-
-> **Troubleshooting Tip**: If you encounter a "User interaction not allowed" error when running the agent as a launch agent, you will either need check the "Unlock default keychain" option or switch to referencing signing certificates using a file. See **[Simple, Secure CI App Signing](secure-certs.md)** for details.
-
-## Add In Tests
-If you've created unit or UI tests in your Xcode project, you can run these and publish the results to VSTS using **[xcpretty](https://github.com/supermarin/xcpretty)**. Note you will need to have xcpretty installed on the OSX machine the cross-platform build agent is on as this is not part of Xcode itself.
-
-On the Build tab, add some steps.
-
-<table>
-   <tr>
-      <td>![Build: Xcode Build](../../tasks/build/_img/xcode-build.png)  <strong>Build: Xcode</strong></td>
-	  <td>
-		<p>Move this to the top of your build definition (before build) and use the following settings:</p>
-		<ul>
-		<li><strong>Actions</strong> test</li>
-		<li><strong>Configuration</strong> $(Configuration)</li>
-		<li><strong>SDK</strong>: $(Test_SDK)</li>
-		<li><strong>Workspace Path</strong>: The same value as your build.</li>
-		<li><strong>Scheme</strong>: The same value as your build.</li>
-		<li><strong>Create App Pacakge</strong>: Unchecked.</li>
-		<li><strong>Advanced &gt; Use xcpretty</strong>: Checked.</li>
-		<li><strong>Advanced &gt; Xcode Developer Path</strong>: The same value as your build.</li>
-		</ul>
-      </td>
-   </tr>
-</table>
-
-> **Troubleshooting Tip**: The "Release" configuration is not testable by default. You'll either need to use "Debug" or enable testability in for the configuration in Xcode. Also, be sure to pay attention to capitalization as "Debug" will work but "debug" may not.
-
-Next, click on the **Variables** tab and add **Test_SDK** as a variable set to **iphonesimulator**
-
-Save and click "Queue Build..." to test it out!
-
-> **Troubleshooting Tip**: If you run into issues with your tests hanging and/or not being able to start the iOS Simulator at times you can opt to add a Command Line task for the "killall" tool with "iOS\ Simulator" as an argument (killall iOS\ Simulator). This will force shut down the simulator in the event it is hung. Exercise care when running the command if you have multiple agents running for the same user and that you do not accidently kill other processes.   
-
-
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-[!INCLUDE [temp](../../_shared/qa-definition-common-all-platforms.md)]
-
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
-
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
-
-<!-- ENDSECTION -->
+To sign your application with a certificate as part of CI, see [How to: Secure Xcode App](secure-certs.md).

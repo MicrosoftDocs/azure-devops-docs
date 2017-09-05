@@ -167,9 +167,6 @@ tf.exe git view /collection:http://SERVER:8080/tfs/DefaultCollection /teamprojec
 
 [Source Indexing and Symbol Servers: A Guide to Easier Debugging](http://www.codeproject.com/Articles/115125/Source-Indexing-and-Symbol-Servers-A-Guide-to-Easi)
 
-[Source Server and Symbol Server Support in TFS 2010](http://www.edsquared.com/2011/02/12/Source+Server+And+Symbol+Server+Support+In+TFS+2010.aspx)
-
-
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 [!INCLUDE [temp](../../_shared/qa-versions.md)]

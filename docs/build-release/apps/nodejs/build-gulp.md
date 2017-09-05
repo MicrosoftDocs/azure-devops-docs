@@ -22,9 +22,25 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-tfs.md)]
 
-## Import sample app code
+## Get sample app code
 
-[!INCLUDE [include](_shared/import-code.md)]
+[!INCLUDE [include](../_shared/get-sample-code-intro.md)]
+
+```
+https://github.com/adventworks/nodejs-sample
+```
+
+# [VSTS or TFS repo](#tab/vsts)
+
+[!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
+
+# [GitHub repo](#tab/github)
+
+[!INCLUDE [include](../_shared/get-sample-code-github.md)]
+ 
+---
+
+The sample app in this repository is a simple server that echoes "Hello world". Tests for the applications are written using mocha framework. A gulp file is used to run the tests and to convert the published results into junit format as that is a supported rendering format by VSTS and TFS.
 
 ## Set up continuous integration
 
@@ -32,11 +48,21 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
 
 [//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-1. On the **Files** tab of the **Code** hub, click **Set up build**.
+1. Create a new build definition.
+
+ # [VSTS or TFS repo](#tab/vsts) 
+
+ Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build & Release** hub and asked to **Choose a template**.
+ You are taken to the **Build & Release** hub and asked to **Select a template** for the new build definition.
+
+ # [GitHub repo](#tab/github)
+
+ Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
+
+ ---
 
 1. In the right panel, search for `node`, select **NodeJS with Gulp**, and then click **Apply**.
 
@@ -49,6 +75,21 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
  * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
+
+1. Click **Get sources** and then:
+
+ # [VSTS or TFS repo](#tab/vsts) 
+
+ Observe that the new build definition is automatically linked to your repository.
+
+ # [GitHub repo](#tab/github)
+
+ Select your version control repository. You'll need to authorize access to your repo. 
+
+ > [!TIP]
+ > To learn more about GitHub CI builds, see [Define CI build process for your Git repo](../../actions/ci-build-git.md).
+
+ ---
 
 1. Select the **Run gulp** task from the tasks. On the right side, you see the parameters for the task. Under the section JUnit Test Results, select the option to Publish to TFS/Team Services.
 

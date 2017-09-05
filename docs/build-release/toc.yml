@@ -40,8 +40,6 @@
     href: actions/ci-build-github.md
   - name: Set up multi-stage release
     href: actions/define-multistage-release-process.md
-  - name: Extend CI/CD
-    href: actions/extend-release-management.md
 - name: Concepts
   items:
   - name: Agents

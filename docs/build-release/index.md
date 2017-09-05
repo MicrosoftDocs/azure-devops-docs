@@ -50,11 +50,6 @@ Learn how to deploy your app.
 * [CI builds for Git in VSTS](actions/ci-build-git.md)
 * [CI builds for GitHub](actions/ci-build-github.md)
 * [Set up multi-stage release](actions/define-multistage-release-process.md)
-* [Extend CI/CD](actions/extend-release-management.md)
-
-## Videos
-
-[![Build pipeline via Visual Studio](_img/index/build-ci-cd-pipeline-vs-video.png)](https://channel9.msdn.com/Events/build-release/2017/P4105/player)   [![Azure Stack CI/CD](_img/index/azure-stack-video.png)](#)   [![Azure Container Service video](_img/index/ci-cd-azure-container-service-video.png)](https://channel9.msdn.com/Events/Connect/2016/204/player)
 
 ## Concepts  
 
@@ -62,6 +57,10 @@ Learn how to deploy your app.
 - [Build and release agents](concepts/agents/agents.md)
 - [Build and release tasks](concepts/process/tasks.md)  
 - [Licensing and build and release pipelines](concepts/licensing/concurrent-pipelines-ts.md)
+
+## Videos
+
+[![Zero to DevOps](../build-release/_img/index/zero-to-devops-video.png)](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/190)
 
 ## Resources
 

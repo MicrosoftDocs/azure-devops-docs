@@ -35,7 +35,7 @@ Learn how to build your app and deploy it to your choice of Azure service.
 
 ## Videos
 
-[![Build pipeline via Visual Studio](../build-release/_img/index/build-ci-cd-pipeline-vs-video.png)](https://channel9.msdn.com/Events/build-release/2017/P4105/player)
+[![Zero to DevOps](../build-release/_img/index/zero-to-devops-video.png)](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/190)
 
 ## Resources
 
