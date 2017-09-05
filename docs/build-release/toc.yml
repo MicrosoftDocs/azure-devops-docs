@@ -92,6 +92,16 @@
       href: concepts/process/phases.md
     - name: Conditions
       href: concepts/process/conditions.md
+  - name: Releases
+    items:
+    - name: Releases and deployments
+      href: concepts/releases/index.md
+    - name: Work with release definitions
+      href: actions/work-with-release-definitions.md
+    - name: Create and deploy releases
+      href: actions/create-deploy-releases.md
+    - name: View and manage releases
+      href: actions/view-manage-releases.md
   - name: Licensing
     items:
     - name: Pipelines in TFS
@@ -116,14 +126,36 @@
       href: concepts/policies/permissions.md
 - name: How to
   items:
-  - name: Build your app
+  - name: Deploy an agent
+    items:
+    - name: Windows
+      href: actions/agents/v2-windows.md
+    - name: Windows (TFS 2015)
+      href: actions/agents/v1-windows.md
+    - name: OSX
+      href: actions/agents/v2-osx.md
+    - name: Linux
+      href: actions/agents/v2-linux.md
+    - name: Configure TFS authentication
+      href: actions/agents/configure-tfs-authentication.md
+  - name: Build more app types
     items:
     - name: Azure Cloud Service
       href: apps/aspnet/build-aspnet-cloudservice.md
     - name: SQL Server Database
       href: apps/aspnet/build-aspnet-dacpac.md
-  - name: Deploy your app
+    - name: Run a PowerShell script
+      href: actions/scripts/powershell.md
+    - name: Run Git commands
+      href: actions/scripts/git-commands.md
+    - name: Sign your Xcode app
+      href: apps/mobile/secure-certs.md
+  - name: Deploy to more targets
     items:
+    - name: Extend App Services deployments
+      href: apps/cd/howto-webdeploy-webapps.md
+    - name: Extend IIS Server deployments
+      href: apps/cd/howto-webdeploy-iis-deploygroups.md
     - name: Azure cloud service
       href: apps/cd/deploy-cloudservice-cloudservice.md
     - name: Azure Government Cloud
@@ -138,41 +170,11 @@
       href: apps/cd/deploy-database-sqlscripts.md
     - name: SCVMM
       href: apps/cd/scvmm/configure-scvmm.md
-    - name: VMware
-      href: apps/cd/provision-vm-in-vmware.md
-  - name: Deploy an agent
-    items:
-    - name: Windows
-      href: actions/agents/v2-windows.md
-    - name: Windows (TFS 2015)
-      href: actions/agents/v1-windows.md
-    - name: OSX
-      href: actions/agents/v2-osx.md
-    - name: Linux
-      href: actions/agents/v2-linux.md
-    - name: Configure TFS authentication
-      href: actions/agents/configure-tfs-authentication.md
-  - name: Configure/manage CI
-    items:
-    - name: Run a PowerShell script
-      href: actions/scripts/powershell.md
-    - name: Run Git commands
-      href: actions/scripts/git-commands.md
-    - name: Troubleshooting build
-      href: actions/troubleshooting.md
-  - name: Configure/manage CD
-    items:
-    - name: Extend App Services deployments
-      href: apps/cd/howto-webdeploy-webapps.md
-    - name: Extend IIS Server deployments
-      href: apps/cd/howto-webdeploy-iis-deploygroups.md
-    - name: Debug deployment issues
-      href: actions/debug-deployment-issues.md
     - name: Run SCVMM scripts for managing VMs
       href: apps/cd/scvmm/manage-vms-using-scvmm.md
-    - name: Troubleshoot Azure connections
-      href: actions/azure-rm-endpoint.md
-  - name: Use private packages
+    - name: VMware
+      href: apps/cd/provision-vm-in-vmware.md
+  - name: Use packages in CI/CD
     items:
     - name: NuGet
       items:
@@ -190,16 +192,14 @@
       items:
       - name: Use Package Management
         href: packages/maven.md
-  - name: Use Release Management
+  - name: Troubleshoot issues
     items:
-    - name: Releases and deployments
-      href: concepts/releases/index.md
-    - name: Work with release definitions
-      href: actions/work-with-release-definitions.md
-    - name: Create and deploy releases
-      href: actions/create-deploy-releases.md
-    - name: View and manage releases
-      href: actions/view-manage-releases.md
+    - name: Troubleshooting build
+      href: actions/troubleshooting.md
+    - name: Debug deployment issues
+      href: actions/debug-deployment-issues.md
+    - name: Troubleshoot Azure connections
+      href: actions/azure-rm-endpoint.md
   - name: Migrate
     items:
     - name: Migrate from XAML builds

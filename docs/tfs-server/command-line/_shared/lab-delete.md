@@ -15,7 +15,7 @@ You can add the **/External** option to the command line to remove the objects f
 Use the **/Delete** command to remove the lab assets from a project collection when you want to detach the lab configuration of a project collection. This is useful when moving a project collection from one Team Foundation Server (TFS) instance to another, and where the new Team Foundation Server instance uses a different SCVMM server than the original one. In this case, you will have to delete all the lab assets and reconfigure lab for the project collection.
 
 >**Note:**  
->The **/Delete** option works on all lab assets in a team project collection only when the **/LibraryShare** and **/GroupHost** options are not specified on the command line. For more information, see [TFSConfig Lab /LibraryShare Commands](#lab-libraryshare) and [TFSConfig Lab /HostGroup Commands](#lab-hostgroup).
+>The **/Delete** option works on all lab assets in a team project collection only when the **/LibraryShare** and **/GroupHost** options are not specified on the command line. For more information, see [TFSConfig Lab /LibraryShare Commands](#lab-libraryshare)(../tfsconfig-cmd.md#lab-libraryshare) and [TFSConfig Lab /HostGroup Commands](../tfsconfig-cmd.md#lab-libraryshare).
 
 ### Example
 

@@ -10,7 +10,7 @@ assign multiple library shares to a team project.
 
 > **Note:**
 > You can automatically assign a library share to all projects in a team
-> project collection by using the [TFSConfig Lab /LibraryShare Commands](#lab-libraryshare)
+> project collection by using the [TFSConfig Lab /LibraryShare Commands](../tfsconfig-cmd.md#lab-libraryshare)
 > and [How to: Change the Library Share for Your Team Project
 > Collections](https://msdn.microsoft.com/en-us/library/dd386363(v=vs.120).aspx).
 

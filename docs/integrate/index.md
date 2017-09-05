@@ -12,7 +12,7 @@ ms.date: 08/23/2016
 
 # Integrating with Visual Studio Team Services and Team Foundation Server
 
-You can build custom applications or services that integrate with your Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) accounts by using the [REST APIs](#rest-apis) to make direct HTTP calls, or utilize our [.NET Client Libraries](#.net-client-libraries).
+You can build custom applications or services that integrate with your Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) accounts by using the **REST APIs** to make direct HTTP calls, or utilize our **.NET Client Libraries**.
 
 Along with interacting with VSTS or TFS in your application, you can also integrate with popular third-party services such as Slack or Jenkins.
 

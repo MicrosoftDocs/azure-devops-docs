@@ -17,12 +17,12 @@ ms.date: 1/10/2017
 
 To scale with your team's needs, increase or decrease your total number of paid extension users.
 You'll need VSTS 
-[project collection administrator or account owner permissions](#find-owner). 
+[project collection administrator or account owner permissions](../marketplace/faq-extensions.md#find-owner). 
 
 > [!IMPORTANT]
 > To cancel access completely for a paid extension, 
 > reduce all your paid users to zero (0). 
-> [How do you bill changes in users?](#bill-period)
+> [How do you bill changes in users?](../marketplace/faq-extensions.md#bill-period)
 
 0.	Sign in to your Visual Studio Team Services account 
 (```https://{youraccount}.visualstudio.com```).

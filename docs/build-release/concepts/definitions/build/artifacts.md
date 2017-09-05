@@ -11,7 +11,7 @@ ms.date: 3/13/2017
 
 # Artifacts in Team Build
 
-**VSTS | TFS 2015 Update 3 and newer | TFS 2015 RTM ([see Q&A](#tfs-2015)) | [Previous versions (XAML builds)](http://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx)**
+**VSTS | TFS 2015 Update 3 and newer | TFS 2015 RTM ([see Q&A](#tfs-2015))**
 
 Artifacts are the files that you want your build to produce. Artifacts can be nearly anything your team needs to test or deploy your app. For example, you've got a .DLL and .EXE executable files and .PDB symbols file of a C# or C++ .NET Windows app.
 
@@ -127,7 +127,7 @@ drop
 
 * Use forward slashes in file path arguments so that they work for all agents. Backslashes don't work for macOS and Linux agents.
 
-* On VSTS and some versions of TFS there are two different [variables](variables.md) that point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable. 
+* On VSTS and some versions of TFS there are two different [variables](variables.md) that point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable.
 
 * The directory referenced by `Build.ArtifactStagingDirectory` is cleaned up after each build.
 
@@ -135,7 +135,7 @@ drop
 
 <h2 id="unc-file-share">Publish from TFS to UNC file share</h2>
 
-If you're using a private Windows agent, you can set the **artifact type** option to publish your files to a UNC **file share**. 
+If you're using a private Windows agent, you can set the **artifact type** option to publish your files to a UNC **file share**.
 
 > [!NOTE]
 >
@@ -163,7 +163,7 @@ When the build is done, if you watched it run, click the name of the completed b
 
 ![Artifacts tab of a build with one artifact](_img/artifacts/build-artifact-tab.png)
 
-From here you can explore or download the artifacts. 
+From here you can explore or download the artifacts.
 
 You can also use Release Management to deploy your app using the artifacts that you've published. See [Artifacts in Release Management](../release/artifacts.md).
 

@@ -18,7 +18,7 @@ At the beginning of the build process, the build agent downloads the files from 
 ## Git
 
 > * **VSTS, TFS 2017 Update 2, and newer:** Click the **Tasks** tab, click **Get sources**, click **This project**, and then select the name of the Git repo.
-> 
+>
 > * **TFS 2017 RTM and older:** Click the **Repository** tab, and then for **Repository type** select **Git**.
 
 **Repository:**  Select a repository in your team project.
@@ -41,7 +41,7 @@ Note: Some build variables might yield a value that is not a valid label. For ex
 ## Team Foundation Version Control
 
 > * **VSTS, TFS 2017 Update 2, and newer:** Click the **Tasks** tab, click **Get sources**, click **This project**, and then select the TFVC repo (for example, `$TeamProject`).
-> 
+>
 > * **TFS 2017 RTM and older:** Click the **Repository** tab, and then for **Repository type** the TFVC repo (for example, `$TeamProject`).
 
 **Repository**  Ignore this option.
@@ -67,7 +67,7 @@ The build process labels your sources with a [TFVC label](../../../../tfvc/use-l
 * Set this to false if you want to define an incremental build to improve performance.
 
  > [!TIP]
- > 
+ >
  > In this case, if you are building Visual Studio projects, on the Build tab, you can also uncheck the Clean check box of the Visual Studio Build or MSBuild step.
 
 * This setting has no effect if you are using a [hosted agent](../../../concepts/agents/hosted.md).
@@ -75,7 +75,7 @@ The build process labels your sources with a [TFVC label](../../../../tfvc/use-l
 ## GitHub
 
 > * **VSTS, TFS 2017 Update 2, and newer:** Click the **Tasks** tab, click **Get sources**, and then click **GitHub**.
-> 
+>
 > * **TFS 2017 RTM and older:** This option is not available, but you can instead use the [External git](#external-git) option.
 
 ### Connect using your GitHub user account
@@ -192,7 +192,7 @@ You can build repositories you are authorized to push to.
 
 ### What protocols can the build agent use with Git?
 
-We support HTTPS. 
+We support HTTPS.
 
 We do not yet support SSH. See [User Voice: Allow build to use ssh authentication while checking out git sub modules](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/15109674-allow-build-to-use-ssh-authentication-while-checki)
 
@@ -214,7 +214,7 @@ For more information on how to optimize a TFVC workspace, see [Optimize your wor
 If you want to disable downloading sources:
 
 * **VSTS, TFS 2017 Update 2, and newer:** Click **Advanced settings**, and then select **Don't sync sources**.
- 
+
 * **TFS 2017 RTM and older:** Define `Build.SyncSources` on the [variables tab](variables.md) and set it to false.
 
 [!INCLUDE [temp](../../../_shared/qa-agents.md)]

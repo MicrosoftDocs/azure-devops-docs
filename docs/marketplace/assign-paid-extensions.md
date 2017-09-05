@@ -16,7 +16,7 @@ After you install a paid extension,
 you must assign that extension to users who need access, 
 so they can start using that extension's capabilities. 
 To assign extensions, you'll need Team Services 
-[project collection administrator or account owner permissions](#find-owner).
+[project collection administrator or account owner permissions](./faq-extensions.md#find-owner).
 
 > [!TIP]
 > You only have to assign extensions to users who need access. 

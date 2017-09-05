@@ -18,12 +18,11 @@ ms.date: 1/10/2017
 
 When you don't need an extension anymore, you can uninstall or disable this extension. 
 You'll need Team Services 
-[project collection administrator or account owner permissions](#find-owner).
+[project collection administrator or account owner permissions](./faq-extensions.md#find-owner).
 
 > [!IMPORTANT]
-> To cancel access completely to a paid extension, you must 
-> [reduce all extension users to zero (0)](#change-extension-quantity). 
-> [How do you bill changes in users?](#bill-period)
+> To cancel access completely to a paid extension, you must reduce all extension users to zero (0). 
+> [How do you bill changes in users?](./faq-extensions.md#bill-period)
 
 0.	Sign in to your Team Services account 
 (```https://{youaccount}.visualstudio.com```).

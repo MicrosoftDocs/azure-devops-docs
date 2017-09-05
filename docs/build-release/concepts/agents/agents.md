@@ -10,7 +10,7 @@ ms.date: 08/26/2016
 ---
 # Build and Release Agents
 
-**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dd793166%28v=vs.120%29.aspx)**
+**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/bb399135%28v=vs.120%29.aspx)**
 
 To build your code or deploy your software you need at least one agent. As you add more code and people, you'll eventually need more.
 
@@ -74,7 +74,7 @@ You can view the system capabilities of an agent, and manage its user capabiliti
 [!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
 
 > [!TIP]
-> 
+>
 > After you install new software on a agent, you must restart the agent for the new capability to show up.
 
 <h2 id="communication">Communication</h2>
@@ -95,7 +95,7 @@ Here is a common communication pattern between the agent and VSTS or TFS.
 
 3. Once the job is completed, agent discards the job-specific OAuth token and goes back to checking if there is a new job request using the listener OAuth token.
 
-The communication between the agent and TFS/VSTS is secured using asymmetric encryption over and above HTTPS. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. Server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key. This is how secrets stored in build definitions, release definitions, or variable groups are secured as they are exchanged with the agent.
+The payload of the messages exchanged between the agent and TFS/VSTS are secured using asymmetric encryption. Each agent has a public-private key pair, and the public key is exchanged with the server during registration. Server uses the public key to encrypt the payload of the job before sending it to the agent. The agent decrypts the job content using its private key. This is how secrets stored in build definitions, release definitions, or variable groups are secured as they are exchanged with the agent.
 
 #### TFS 2015
 
@@ -149,7 +149,7 @@ After you've configured the agent, we recommend you first try it
 in interactive mode to make sure it works. Then, for production use,
 we recommend you run the agent in one of the following modes so
 that it reliably remains in a running state. These modes also
-ensure that the agent starts automatically if the machine is restarted. 
+ensure that the agent starts automatically if the machine is restarted.
 
 1. **As a service**. You can leverage the service manager of the
    operating system to manage the lifecycle of the agent. In addition, the
@@ -163,7 +163,7 @@ ensure that the agent starts automatically if the machine is restarted.
    prevent you from enabling auto-logon or disabling the screen saver. In
    such cases, you may need to seek an exemption from the domain policy,
    or run the agent on a workgroup computer where the domain policies
-   do not apply. 
+   do not apply.
 
    **Note:** There are security risks when you enable automatic logon
    or disable the screen saver because you enable other users to walk
@@ -203,7 +203,7 @@ In many cases, yes. Specifically:
 
 Yes. This approach can work well for agents that run jobs that don't consume a lot of shared resources. For example, you could try it for agents that run releases that mostly orchestrate deployments and don't do a lot of work on the agent itself.
 
-You might find that in other cases you don't gain much efficiency by running multiple agents on the same machine. For example, it might not be worthwhile for agents that run builds that consume a lot of disk and I/O resources. 
+You might find that in other cases you don't gain much efficiency by running multiple agents on the same machine. For example, it might not be worthwhile for agents that run builds that consume a lot of disk and I/O resources.
 
 You might also run into problems if concurrent build processes are using the same singleton tool deployment, such as NPM packages. For example, one build might update a dependency while another build is in the middle of using it, which could cause unreliable results and errors.
 

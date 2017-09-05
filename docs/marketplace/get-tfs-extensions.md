@@ -150,28 +150,14 @@ can install extensions. If you don't have permissions, you can [request extensio
 0.	Browse for your downloaded TFS extensions 
 (```https://{server}:8080/tfs/_gallery```).
 
-	<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-
-	<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-		<li style="float:left;" data-toggle="collapse" data-target="#browse-extensions"></li>
-		<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs2017-0">TFS 2017</a></li>
-		<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs2015-0">TFS 2015 Update 3</a></li>
-	</ul>
-
-	<div id="browse-extensions" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-	<div id="tfs2015-0" class="tab-pane fade in active">
-
 	**TFS 2015 Update 3**
 
 	<img alt="Browse TFS extensions" src="./_img/get-tfs-extensions/standalone/browse-for-extensions.png" style="border: 1px solid #CCCCCC" />
-
-	</div><div class="tab-pane fade" id="tfs2017-0" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
 
 	**TFS 2017**
 
 	<img alt="Browse TFS extensions" src="./_img/get-tfs-extensions/standalone/browse-tfs-extensions-new.png" style="border: 1px solid #CCCCCC" />
 
-	</div></div></div>
 
 0.	Manage your extensions.
 

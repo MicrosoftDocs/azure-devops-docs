@@ -33,7 +33,7 @@ When you approve the request, Team Services automatically installs the extension
 Team Services automatically installs those extensions. 
 
 0.	If you installed paid extensions, 
-go to the next section to [assign those extensions](#assign-extension), 
+go to the next section to [assign those extensions](./assign-paid-extensions.md), 
 to users who need access so they can start using those extensions.
 
 

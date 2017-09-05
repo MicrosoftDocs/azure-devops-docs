@@ -42,16 +42,16 @@ We provide the following agent pools by default:
 
 * **Default** pool: Use it to register [private agents](agents.md) that you've set up.
 
-* **Hosted** pool (VSTS only): Contains at least one free hosted agent, and also any [hosted agents you've purchased](../licensing/concurrent-pipelines-tfs.md). The **Hosted** pool is the built-in pool that is a collection of hosted agents.
+* **Hosted** pool (VSTS only): Contains at least one free hosted agent, and also any [hosted agents you've purchased](../licensing/concurrent-pipelines-tfs.md). The **Hosted** pool is the built-in pool that is a collection of hosted agents. Machines in this pool have Visual Studio 2010, Visual Studio 2012, Visual Studio 2013, and Visual Studio 2015 installed on Windows Server 2012 R2 operating system. For a complete list of software installed on hosted agents, see [Hosted agents](hosted.md).
 
- We provide the Hosted pool to each team project through a **Hosted** queue. By default, all contributors in a team project are members of the **User** role on a each hosted queue. This allows every contributor in a team project to author and run build and release definitions using the hosted queue.
-
- [Learn more about hosted agents](agents.md).
+* **Hosted VS2017** pool (VSTS only): The **Hosted VS2017** pool is another built-in pool in VSTS. Machines in this pool have Visual Studio 2017 installed on Windows Server 2016 operating system. For a complete list of software installed on these machines, see [Hosted agents](hosted.md).
 
 * **Hosted Linux** pool (VSTS only): Enables you to build and release on
   Linux machines without having to configure a private agent. The agents
   in this pool run on an Ubuntu Linux host inside the
   [**vsts-agent-docker** container](https://github.com/Microsoft/vsts-agent-docker).
+
+Each of the three hosted pools is exposed to each team project through a corresponding hosted queue. By default, all contributors in a team project are members of the **User** role on each hosted queue. This allows every contributor in a team project to author and run build and release definitions using hosted queues.
 
 If you've got a lot of agents intended for different teams or purposes, you might want to create additional pools as explained below.
 

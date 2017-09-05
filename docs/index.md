@@ -200,14 +200,14 @@ ms.date: 07/26/2017
                                     <h3>Admin</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
-                                        <li><a class="barLink" href="/vsts/setup-admin/tfs/index">Server Administration (TFS)</a></li>
+                                        <li><a class="barLink" href="/vsts/tfs-server/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
                                         <li><a class="barLink" href="/vsts/work/marketplace/index">Manage Extensions</a></li>
                                     </ul>
                                     <h3>Extend</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/extend/overview">Build Extensions</a></li>
+                                        <li><a class="barLink" href="/vsts/extend/index">Build Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/integrate/index">Build Apps</a></li>
                                         <li><a class="barLink" href="/rest/api/vsts/">REST APIs</a></li>
                                         <li><a class="barLink" href="">TypeScript APIs</a></li>
@@ -898,7 +898,7 @@ ms.date: 07/26/2017
                         <a href="#integration">Extend</a>
                         <ul id="integration" class="cardsA">
                             <li>
-                                <a href="/vsts/extend/overview">
+                                <a href="/vsts/extend/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
