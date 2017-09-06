@@ -57,7 +57,7 @@ Assign **VS Enterprise** to those users for whom you've purchased Visual Studio 
 For TFS 2017 and earlier versions, you should assign the **Advanced** level to those users for whom you've purchased the full Test feature set. Here are the purchasing options:  
 - Higher-level Visual Studio subscriptions: Visual Studio Test Professional, Visual Studio Enterprise, or MSDN platform subscriptions.
 These include a TFS CAL plus the rights to access the full set of Test features.  
-- A paid VSTS user (which includes a TFS CAL) plus the [Test Manager extension](#test-manager). 
+- A paid VSTS user (which includes a TFS CAL) plus the [Test Manager extension](change-access-levels.md#test-manager). 
 
 For TFS 2017.2, Assign **Advanced** access to those users for whom you've purchased MSDN Platform or Visual Studio Test Professional subscriptions. These include a TFS CAL plus the rights to access Test Manager. To learn more, see [Get extensions for TFS, Assign paid extension access to users](../marketplace/get-tfs-extensions.md#assign-extension).
 	

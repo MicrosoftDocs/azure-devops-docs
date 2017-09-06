@@ -16,7 +16,7 @@ Whether your software project is large or small, using version control as soon a
 Version control systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. 
 The version control system saves that snapshot permanently so you can recall it later if you need it.
 
-Visual Studio Team Services and TFS provide two models of version control: [Git](../git/overview.md), which is distributed version control, and [Team Foundation Version Control (TFVC)](#team-foundation-version-control), which is centralized version control. This article provides an overview and a starting point for using Team Foundation Version Control. If you're deciding which type of Team Services/TFS version control to use, see [Choosing the right version control for your project](comparison-git-tfvc.md). 
+Visual Studio Team Services and TFS provide two models of version control: [Git](../git/overview.md), which is distributed version control, and [Team Foundation Version Control (TFVC)](use-team-foundation-version-control-commands.md), which is centralized version control. This article provides an overview and a starting point for using Team Foundation Version Control. If you're deciding which type of Team Services/TFS version control to use, see [Choosing the right version control for your project](comparison-git-tfvc.md). 
 
 ## 5-Minute Quickstarts 
 
