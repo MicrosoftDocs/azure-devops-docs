@@ -50,8 +50,8 @@ The following table contains a detailed comparison of both options.
     </tr>
     <tr>
         <td>Data Source</td>
-        <td><a href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">VSTS REST API</a></td>
-        <td><a href="https://www.visualstudio.com/en-us/docs/report/analytics/overview-analytics-service">Analytics Service</a><sup> 1</sup></td>
+        <td>[VSTS REST API](/rest/api/vsts/index)</td>
+        <td>[Analytics Service](../analytics/overview-analytics-service.md)<sup> 1</sup></td>
     </tr>
     <tr>
         <td>Power BI Service</td>

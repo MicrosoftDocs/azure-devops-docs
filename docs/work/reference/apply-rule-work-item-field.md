@@ -297,7 +297,7 @@ Person-name fields can accept values that reference both users and groups. Field
     -   Windows group added to a team project: `[Project]\Triage Committee`
 
     >[!TIP]  
-    >You can view a list of valid groups by [opening the Security page](../../connect/work-web-portal.md#admin-context) in the web portal administration context.
+    >You can view a list of valid groups by [opening the Security page](../../security/set-project-collection-level-permissions.md) in the web portal administration context.
 
 -   **Scope to a project collection – [GLOBAL]:**
 

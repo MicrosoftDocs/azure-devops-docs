@@ -166,7 +166,7 @@ For more information, see [Permission reference](../../security/permissions.md).
   
      For *DirectoryPath*, specify the directory location of the TypeDefinitions folder for the process template that you downloaded. The directory path should follow this structure: *Drive*:*MSFTemplateFolder* WorkItem TrackingTypeDefinitions.  
   
--   (Optional) Verify the work item types are accessible by opening Team Explorer or the web portal. You might have to [refresh the cache](../../connect/work-web-portal.md#refresh-web-portal) to see the changes.  
+-   (Optional) Verify the work item types are accessible by opening Team Explorer or the web portal. You might have to [refresh the cache](../../connect/work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json#refresh-web-portal) to see the changes.  
   
 <a name="import_category"></a> 
 ##7. Import the categories file  

@@ -9,7 +9,7 @@ ms.author: elbatk
 ms.date: 08/04/2016
 ---
 
-# Campfire with Visual Studio Team Services
+# Notifications and Campfire
 
 Post messages to a room in Campfire in response to events from Visual Studio Team Services.
 For example, you can post a message when a work item is created or changed, or a build occurs.
@@ -45,7 +45,7 @@ For example, you can post a message when a work item is created or changed, or a
     <img alt="Results" src="./_img/campfire/results.png" style="border: 1px solid #CCCCCC" />
 
 ## Pricing
-Visual Studio Team Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
+VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A

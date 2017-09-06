@@ -61,7 +61,7 @@ It's important to note that some data isn't brought along during the migration. 
 * **Project Server Integrations** - Project Server integration does not exist for VSTS.
 
 ## Process Customization
-There are two types of process customization that are supported in VSTS. [Inherited](https://www.visualstudio.com/en-us/docs/work/process/customize-process) and [Hosted XML](https://www.visualstudio.com/en-us/docs/work/import-process/import-process). If you have customized any of your projects in TFS on-premises, you will automatically be placed on Hosted XML. **There is currently no path to move your Hosted XML projects to Inherited**. This is on our roadmap to get resolved.
+There are two types of process customization that are supported in VSTS. [Inherited](../../work/customize/inheritance-process-model.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) and [Hosted XML](../../work/customize/hosted-xml-process-model.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json). If you have customized any of your projects in TFS on-premises, you will automatically be placed on Hosted XML. **There is currently no path to move your Hosted XML projects to Inherited**. This is on our roadmap to get resolved.
 
 Here are some key process customization points to consider when coming into VSTS with data import.
 
@@ -76,16 +76,16 @@ Here are some key process customization points to consider when coming into VSTS
 > These restrictions are items we plan to address and are on our backlog to fix. Be sure to check back here for updates on when these items are resolved.
 
 ## Work item form
-Work items in VSTS have been given a [facelift](https://www.visualstudio.com/en-us/docs/work/process/new-work-item-experience).  This is the same modern experience that appears in TFS "15" for our on-premises customers.  The new user experience provides the building blocks for: 
+Work items in VSTS have been given a [facelift](../../work/process/new-work-item-experience.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json).  This is the same modern experience that appears in TFS "15" for our on-premises customers.  The new user experience provides the building blocks for: 
 * Improved readability and usability 
 * Richer, interactive experiences within the work item including discussion, code viewing, and more 
 * Extensibility support 
 
-When a collection is imported, the form definitions for all work item types (WITs) defined in your project collection undergo an automated transformation to the new layout.  This is a [best-effort transformation](https://www.visualstudio.com/en-us/docs/work/customize/manage-new-form-rollout#best-effort-transformation) meant to maintain the field groupings and layout of your customized WIT definitions.  You can [manually opt-in](https://www.visualstudio.com/en-us/docs/work/customize/new-form-layout#switch-to-the-new-experience) to the new experience on-premises before migrating to the cloud.
+When a collection is imported, the form definitions for all work item types (WITs) defined in your project collection undergo an automated transformation to the new layout.  This is a [best-effort transformation](../../work/customize/manage-new-form-rollout.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json#best-effort-transformation) meant to maintain the field groupings and layout of your customized WIT definitions.  You can [manually opt-in](../../work/process/new-work-item-experience.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json#switch-to-the-new-experience) to the new experience on-premises before migrating to the cloud.
 Reviewing and optimizing the transformed web layout will allow you to adjust this new layout to your own needs. Even though these changes can also be done once the import is completed we recommend you to do them beforehand to prepare your customers for the change.
 
 ## Projects
-TFS Data Import Services supports collections that contain up to 300 projects. If your collection has more than 300 projects you can [split the collection](https://www.visualstudio.com/en-us/docs/setup-admin/tfs/admin/split-team-project-collection) into two or more collections. Each collection can then be imported seperately into their own account. If splitting the collection is not an option for you, please contact us at [vstsdataimport@microsoft.com](mailto:vstsdataimport@microsoft.com).
+TFS Data Import Services supports collections that contain up to 300 projects. If your collection has more than 300 projects you can [split the collection](../admin/split-team-project-collection.md) into two or more collections. Each collection can then be imported seperately into their own account. If splitting the collection is not an option for you, please contact us at [vstsdataimport@microsoft.com](mailto:vstsdataimport@microsoft.com).
 
 ## Supported TFS Versions for Import
 Support for the TFS Database Import Service is limited to the two most recent releases of TFS. Releases include all major and regular updates. Currently the following versions of TFS are supported for import: 
@@ -121,16 +121,16 @@ A: This is the same experience with TFS on-premises. If we make a change to a sy
 
 #### Q: Is there a difference between a team project that was created manually versus one that was created from data import?
 
-A. The features available to each team project are the same. The differences occur in how you modify the processes in your account. When you create an account, you will use the [Inheritance process model](https://www.visualstudio.com/docs/work/process/manage-process) to customize the work tracking experience. Team projects migrated via data import, however, will use the [Hosted XML process model](https://www.visualstudio.com/docs/work/import-process/import-process) to customize the work tracking experience.
+A. The features available to each team project are the same. The differences occur in how you modify the processes in your account. When you create an account, you will use the [Inheritance process model](../../work/process/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) to customize the work tracking experience. Team projects migrated via data import, however, will use the [Hosted XML process model](../../work/import-process/import-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) to customize the work tracking experience.
 
 #### Q: If my account is using Hosted XML, can I create new projects to use the Inheritance process model?
 
-Yes. For data import accounts, VSTS supports team projects that use  Inheritance as well as  Hosted XML process models. To learn more about the Inheritance process, see [Manage processes](https://www.visualstudio.com/docs/work/process/manage-process).  
+Yes. For data import accounts, VSTS supports team projects that use  Inheritance as well as  Hosted XML process models. To learn more about the Inheritance process, see [Manage processes](../../work/process/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json).  
 
 #### Q: Where can I find more information on Hosted XML and the Inheritance process model?
 
 * [VSTS Process Customization Roadmap (2017)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/26/team-services-process-customization-roadmap-jan-2017/)
-* [Inheritance Process Model](https://www.visualstudio.com/docs/work/process/manage-process)
-* [Hosted XML](https://www.visualstudio.com/ocs/work/import-process/import-process)
+* [Inheritance Process Model](../../work/process/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
+* [Hosted XML](../../work/import-process/import-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
 
 <!-- ENDSECTION --> 

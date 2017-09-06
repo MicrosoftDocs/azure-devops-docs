@@ -298,10 +298,10 @@ The method used to customize a team project depends on the process model you use
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Service hooks </p>
 <ul style="padding-left:20px">
  <li style="margin-bottom:2px">[Integrate with service hooks](../service-hooks/index.md)</li>
- <li style="margin-bottom:2px">[Campfire](../collaborate/campfire.md) (VSTS)</li>
- <li style="margin-bottom:2px">[Flowdock](../collaborate/flowdock.md) (VSTS)</li>
- <li style="margin-bottom:2px">[HipChat](../collaborate/flowdock.md) (VSTS)</li>
- <li style="margin-bottom:2px">[Slack](../collaborate/slack.md) (VSTS)</li>
+ <li style="margin-bottom:2px">[Campfire](../service-hooks/services/campfire.md) (VSTS)</li>
+ <li style="margin-bottom:2px">[Flowdock](../service-hooks/services/flowdock.md) (VSTS)</li>
+ <li style="margin-bottom:2px">[HipChat](../service-hooks/services/hipchat.md) (VSTS)</li>
+ <li style="margin-bottom:2px">[Slack](../service-hooks/services/slack.md) (VSTS)</li>
 </ul>
 </div>
 

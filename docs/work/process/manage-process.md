@@ -167,7 +167,7 @@ To rename a process, open the &hellip; context menu for the process and choose *
 
 <a id="process-rest-api">  </a>
 ### Programmatically query for processes 
-You can determine the processes defined for an account using the REST API: [Processes](https://www.visualstudio.com/docs/integrate/api/tfs/processes).
+You can determine the processes defined for an account using the REST API: [Processes](/rest/api/vsts/processes/processes/get).
 
 
 [!INCLUDE [temp](../_shared/help-support-shared.md)]

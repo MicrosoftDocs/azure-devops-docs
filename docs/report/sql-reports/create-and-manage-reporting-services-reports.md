@@ -6,14 +6,14 @@ ms.technology: vs-devops-reporting
 ms.assetid: f45075c5-1f3e-4550-a40e-9171f59841fe
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 09/05/2017
 ---
 
 # Create and manage Reporting Services reports
 
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 
-If you added SQL Server Reporting Services at installation, then your on-premises Team Foundation Server (TFS) deployment is configured with a data warehouse, SQL Server Analysis Services cube, and Reporting Services Reports. If you didn't add these services previously and want to add them now, see [Add a report server to your deployment](http://msdn.microsoft.com/en-us/8f5c584f-50ac-44d2-a078-ac88f891a635).  
+If you added SQL Server Reporting Services at installation, then your on-premises Team Foundation Server (TFS) deployment is configured with a data warehouse, SQL Server Analysis Services cube, and Reporting Services Reports. If you didn't add these services previously and want to add them now, see [Add a report server to your deployment](../admin/add-a-report-server.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json ).  
   
  You can create or customize your own Reporting Services reports which support the following scenarios:  
   
@@ -37,15 +37,15 @@ If you added SQL Server Reporting Services at installation, then your on-premise
   
      (There are only minor schema changes introduced for the TFS 2015 cube since TFS 2010).  
   
--   [Table reference for the relational warehouse database](https://msdn.microsoft.com/en-us/library/ms244691.aspx). The warehouse contains data about builds, source code, test results and code coverage, and work items such as tasks and bugs. Data in the warehouse is collected from the operational stores and organized in a set of tables, views, and table-valued functions from which you can design reports. You can explore relationships between the integrated data sets by directly querying and creating reports from data that is stored in the relational warehouse database.  
+-   [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md). The warehouse contains data about builds, source code, test results and code coverage, and work items such as tasks and bugs. Data in the warehouse is collected from the operational stores and organized in a set of tables, views, and table-valued functions from which you can design reports. You can explore relationships between the integrated data sets by directly querying and creating reports from data that is stored in the relational warehouse database.  
   
      ![Team Foundation Warehouse](_img/teamproj_warehouse.png "TeamProj_Warehouse")  
   
--   [Perspectives and measure groups provided in the Analysis Services cube](https://msdn.microsoft.com/en-us/library/ms244710.aspx). The Team System cube  provides all metrics that are defined for all measure groups. By using the Analysis Services cube for TFS, you can generate reports of aggregated information about the data that is stored in team project collections. You can easily use this data to create PivotTable and PivotChart reports in Microsoft Excel.  
+-   [Perspectives and measure groups provided in the Analysis Services cube](perspective-measure-groups-cube.md). The Team System cube  provides all metrics that are defined for all measure groups. By using the Analysis Services cube for TFS, you can generate reports of aggregated information about the data that is stored in team project collections. You can easily use this data to create PivotTable and PivotChart reports in Microsoft Excel.  
   
      ![Analysis Services Data Cube Measure Groups](_img/rpt_measuregroups.png "RPT_MeasureGroups")  
   
--   [Reportable fields reference](../../work/reference/reportable-fields-reference.md). All data captured for work items is written to the WIT data store, but only select data is written to the Analysis Services data warehouse. The reportable attribute assigned to each work item field determines whether data is written to only the relational warehouse database or to both the relational warehouse and the OLAP cube. Reportable fields have their reportable attribute set to detail, dimension, or measure.  
+-   [Reportable fields reference](../../work/reference/reportable-fields-reference.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json). All data captured for work items is written to the WIT data store, but only select data is written to the Analysis Services data warehouse. The reportable attribute assigned to each work item field determines whether data is written to only the relational warehouse database or to both the relational warehouse and the OLAP cube. Reportable fields have their reportable attribute set to detail, dimension, or measure.  
   
 ## Tools for creating reports  
  You can access both the relational data warehouse and the Analysis Services cube to create highly customized reports by using these authoring tools.  
@@ -61,11 +61,8 @@ If you added SQL Server Reporting Services at installation, then your on-premise
  To learn more about how to work with authoring tool, see these articles:  
   
 -   [Designing and Implementing Reports (Reporting Services)](http://go.microsoft.com/fwlink/?LinkId=181950)  
-  
--   [Reporting Services in Business Intelligence Development Studio](http://go.microsoft.com/fwlink/?LinkId=181951)  
-  
--   [Comparing Report Authoring Environments](http://go.microsoft.com/fwlink/?LinkId=181952)  
-  
+-   [Reporting Services in Business Intelligence Development Studio](http://go.microsoft.com/fwlink/?LinkId=181951)   
+-   [Comparing Report Authoring Environments](http://go.microsoft.com/fwlink/?LinkId=181952)   
 -   [Designing and Implementing Reports Using Report Builder 2.0](http://go.microsoft.com/fwlink/?LinkId=181953)  
   
 ##  <a name="AdditionalResources"></a> Q & A  
@@ -74,7 +71,7 @@ If you added SQL Server Reporting Services at installation, then your on-premise
  **A:** Open reports from Team Explorer, Team Web Access, or Report Manager. See [Reporting Services Reports](reporting-services-reports.md).  
   
 ### Q: How do I upload a report?  
- **A:** See [Upload reports](http://msdn.microsoft.com/en-us/b1159ed8-69a2-4aa5-bec1-c3017419cbc7).  
+ **A:** See [Upload reports](../admin/upload-reports.md).  
   
 ### Q: How do I manage report properties?  
- **A:** After you create and publish reports, you can use Report Manager to view, organize, and configure those reports. By using Report Manager, you can group related reports in folders, adjust parameters and data sources, and schedule automated reports. See [View, organize, and configure reports using Report Manager](https://opsstaging.www.visualstudio.com/en-us/docs/report/admin/view-upload-organize-reporting-services-reports?branch=projects%2Freport-migration).
+ **A:** After you create and publish reports, you can use Report Manager to view, organize, and configure those reports. By using Report Manager, you can group related reports in folders, adjust parameters and data sources, and schedule automated reports. See [View, organize, and configure reports using Report Manager](../admin/view-upload-organize-reporting-services-reports.md).

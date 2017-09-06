@@ -1,6 +1,7 @@
 ---
-title: Work in Team Explorer | Team Service & TFS 
-description: Understand how to navigate when working in Team Explorer for Visual Studio Team Services and Team Foundation Server (TFS) 
+title: Work in Team Explorer 
+description: Download TFS clients, navigate in Team Explorer for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+keywords: Download TFS clients 
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
@@ -33,10 +34,6 @@ Team Explorer connects Visual Studio to team projects. You can manage source cod
 >[!TIP]  
 >If you open Visual Studio and the Team Explorer pane doesn't appear, click the **View/Team Explorer** menu option. 
 
-<div style="float:left;width:320px;margin:3px;font-size:100%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Home page with Git</p>
-<p style="text-align:center;"><img src="_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" /></p>
-
 
 > [!div class="mx-tdBreakAll"]  
 > |Home page with Git  |Home page with TFVC  |
@@ -44,9 +41,8 @@ Team Explorer connects Visual Studio to team projects. You can manage source cod
 > |<img src="_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" />|<img src="_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" />|
 
 
-
 >[!NOTE]  
->Some pages, such as **Reports** and **Documents**, only appear when TFS is configured with the required resources, such as SQL Server Reporting Services and SharePoint.
+>Some pages, such as **Reports** and **Documents**, only appear when an on-premises TFS is configured with the required resources, such as SQL Server Reporting Services and SharePoint.
 
 If you don't need Visual Studio, but do want to connect to VSTS or TFS or get one or more Team Foundation add-ins, you can install the free [Visual Studio Community](https://www.visualstudio.com/downloads/download-visual-studio-vs).
 
@@ -79,7 +75,7 @@ From the **Connect** page, you can select the team projects you want to connect 
 > [!div class="mx-tdBreakAll"]  
 > |Git: Local Git repo |TFVC: Map workspace |
 > |-------------|----------|
-> |If you connect to a Git repo, you also can [create, add, or clone repositories](..//git/tutorial/creatingrepo.md).<br/>![Team Explorer, Connect, local Git repo options](_img/te-connect-local-git-repos.png) |If you connect to a TFVC repo, you'll be prompted to [Configure your workspace (TFVC)](../build-release/concepts/definitions/build/options.md) on first connect.<br/>![Team Explorer, Connect, configure TFVC workspace](_img/te-tfvc-configure-workspace.png)|
+> |If you connect to a Git repo, you also can [create, add, or clone repositories](../git/tutorial/creatingrepo.md).<br/>![Team Explorer, Connect, local Git repo options](_img/te-connect-local-git-repos.png) |If you connect to a TFVC repo, you'll be prompted to [Configure your workspace (TFVC)](../build-release/concepts/definitions/build/options.md) on first connect.<br/>![Team Explorer, Connect, configure TFVC workspace](_img/te-tfvc-configure-workspace.png)|
 
 
 
@@ -107,7 +103,7 @@ The Git and TFVC repos support different pages and functions. You'll see one or 
 > [!div class="mx-tdBreakAll"]  
 > |Git | TFVC  |
 > |-------------|----------|
-> |-**Changes**: [Save work with commits](../git/tutorial/commits.md)<br/>-**Branches**: [Create work in branches](../git/tutorial/branches.md)<br/>-**Pull Requests**: [Review code with pull requests](../git/tutorial/pullrequest.md)<br/>-**Sync**: [Update code with fetch and pull](../git/tutorial/pulling.md)) | **My Work**: [Suspend/resume work](../tfvc/suspend-your-work-manage-your-shelvesets.md)  &#124; [Code review](../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)<br/>-**Pending Changes**: [Manage pending changes](../tfvc/develop-code-manage-pending-changes.md) &#124; [Find shelvesets](../tfvc/suspend-your-work-manage-your-shelvesets.md) &#124; [Resolve conflicts](../tfvc/resolve-team-foundation-version-control-conflicts.md)<br/>-**Source Control Explorer**: [Add/view files and folders](../tfvc/add-files-server.md) |
+> |- **Changes**: [Save work with commits](../git/tutorial/commits.md)<br/>- **Branches**: [Create work in branches](../git/tutorial/branches.md)<br/>- **Pull Requests**: [Review code with pull requests](../git/tutorial/pullrequest.md)<br/>- **Sync**: [Update code with fetch and pull](../git/tutorial/pulling.md)) |- **My Work**: [Suspend/resume work](../tfvc/suspend-your-work-manage-your-shelvesets.md)  &#124; [Code review](../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)<br/>- **Pending Changes**: [Manage pending changes](../tfvc/develop-code-manage-pending-changes.md) &#124; [Find shelvesets](../tfvc/suspend-your-work-manage-your-shelvesets.md) &#124; [Resolve conflicts](../tfvc/resolve-team-foundation-version-control-conflicts.md)<br/>- **Source Control Explorer**: [Add/view files and folders](../tfvc/add-files-server.md) |
 
 ### Report and Document pages (TFS only)  
 
@@ -127,7 +123,7 @@ Most of the links open to a web portal administration page. Not all settings are
 > [!div class="mx-tdBreakAll"]  
 > |Team project settings | Collection settings (TFS)  |
 > |-------------|----------|
-> |Required membership: [Project Administrators](../accounts/add-administrator-team-project.md)<br/>-[Security (manage project-level permissions)](../security/permissions.md#team-project-level-permissions)<br/>-[Group membership: manage group permissions](../security/permissions.md)<br/>-Source Control: Configure the [check-in and check-out policies](../tfvc/add-check-policies.md) (TFVC only)<br/>-[Work Item Areas (project-wide)](../work/customize/set-area-paths.md)<br/>-[Work Item Areas (project-wide)](../work/customize/set-iteration-paths-sprints.md)<br/>-[Portal Settings (Enable portal or process guidance)](../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)<br/>-[Project Alerts](../work/track/alerts-and-notifications.md) |Required membership: [Project Collection Administrators](../accounts/add-administrator-project-collection.md)<br/>-[Security (manage project-level permissions)](../security/permissions.md#collection-level)<br/>-[Group membership: manage group permissions](../security/permissions.md)<br/>-Source Control: Configure the [default workspace type for the collection](../tfvc/decide-between-using-local-server-workspace.md#manage-team-project-collection-workspace-settings-for-your-team) (TFVC only)<br/>-[Process Template Manager: download, upload, delete, or set a default process template](../work/guidance/manage-process-templates.md) |
+> |Required membership: [Project Administrators](../security/set-project-collection-level-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)<br/><br/>- [Security (manage project-level permissions)](../security/set-project-collection-level-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)<br/>- [Group membership: manage group permissions](../security/set-project-collection-level-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)<br/>- Source Control: Configure the [check-in and check-out policies](../tfvc/add-check-policies.md) (TFVC)<br/>- [Work Item Areas (project-wide)](../work/customize/set-area-paths.md)<br/>- [Work Item Areas (project-wide)](../work/customize/set-iteration-paths-sprints.md)<br/>- [Portal Settings (Enable portal or process guidance)](../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)<br/>-[Project Alerts](../work/track/alerts-and-notifications.md) |Required membership: [Project Collection Administrators](../accounts/add-administrator-project-collection.md)<br/><br/>- [Security (manage project-level permissions)](../security/permissions.md#collection-level)<br/>- [Group membership: manage group permissions](../security/permissions.md)<br/>- Source Control: Configure the [default workspace type for the collection](../tfvc/decide-between-using-local-server-workspace.md#manage-team-project-collection-workspace-settings-for-your-team) (TFVC)<br/>- [Process Template Manager: download or upload a process template](../work/guidance/manage-process-templates.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) |
 
 To learn more about administration features, see [Work in the web portal, administration context](work-web-portal.md#admin-context).
 
@@ -135,22 +131,22 @@ To learn more about administration features, see [Work in the web portal, admini
 ## Related notes 
 You've now got a basic understanding of how to work in the Team Explorer add-in for Visual Studio and Eclipse.
 
-- [Troubleshoot connection](troubleshoot-connection.md)  
+- [Troubleshoot connection](troubleshoot-connection.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
 
 <a id="clients">  </a>
 ### Clients that connect to VSTS or TFS
 
 In addition to connecting through Team Explorer, you can connect to a team project from these clients: 
 
-- [Web portal](work-web-portal.md) 
-- [Visual Studio Code](https://code.visualstudio.com/Docs)
+- [Web portal](work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) 
+- [Visual Studio Code](https://code.visualstudio.com/docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx) 
-- [Eclipse: Team Explorer Everywhere](http://java.visualstudio.com/Docs/tools/eclipse) 
-- [Office Excel](../work/office/bulk-add-modify-work-items-excel.md)
-- [Office Project](../work/office/create-your-backlog-tasks-using-project.md)
-- [PowerPoint Storyboarding](../work/office/storyboard-your-ideas-using-powerpoint.md) 
+- [Eclipse: Team Explorer Everywhere](http://java.visualstudio.com/docs/tools/eclipse) 
+- [Office Excel](../work/office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+- [Office Project](../work/office/create-your-backlog-tasks-using-project.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+- [PowerPoint Storyboarding](../work/office/storyboard-your-ideas-using-powerpoint.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json) 
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
-- [Microsoft Feedback Client](../work/connect/give-feedback.md)   
+- [Microsoft Feedback Client](../work/connect/give-feedback.md?toc=/vsts/collaborate/feedback/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)   
 
 
 ### Refresh Team Explorer 
@@ -183,6 +179,6 @@ By installing [TFS Power Tools](https://marketplace.visualstudio.com/items?itemN
 Additional requirements may apply.
 
 > [!NOTE]  
-> For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](/docs/work/process/new-work-item-experience).  
+> For TFS 2017 and later versions, you can [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../work/process/new-work-item-experience.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json ).  
 
 

@@ -6,6 +6,6 @@
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=integration
     items:
-    - name: SharePoint Integration
+    - name: SQL Server Reports Integration
       tocHref: /vsts/
-      topicHref: /vsts/ecosystem/sharepoint/index
+      topicHref: /vsts/report/sql-reports/index

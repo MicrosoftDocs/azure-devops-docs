@@ -24,7 +24,7 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
  
 
 ## Step-by-Step Tutorials  
-- [Follow work & pull requests](/vsts/collaborate/follow-work-items?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
+- [Follow work & pull requests](../collaborate/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
 - [Set your personal notifications](manage-personal-notifications.md)
 
 
@@ -37,11 +37,11 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
 ## How-to Guides  
 - [Use @mentions to further discussion](at-mentions.md)
 - [Use #ID to link to work items](add-links-to-work-items.md) 
-- [Set team notifications](/vsts/collaborate/manage-team-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
-- [Get notified with Campfire](/vsts/collaborate/campfire?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
-- [Get notified with Flowdock](/vsts/collaborate/flowdock?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
-- [Get notified with Hipchat](/vsts/collaborate/hipchat?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
-- [Get notified with Slack](/vsts/collaborate/slack?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
+- [Set team notifications](../collaborate/manage-team-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
+- [Get notified with Campfire](../service-hooks/services/campfire.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
+- [Get notified with Flowdock](../service-hooks/services/flowdock.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
+- [Get notified with Hipchat](../service-hooks/services/hipchat.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
+- [Get notified with Slack](../service-hooks/services//slack.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
   
 ## Reference
 
