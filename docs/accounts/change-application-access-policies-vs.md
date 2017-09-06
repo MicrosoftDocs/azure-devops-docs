@@ -64,7 +64,7 @@ To continue, you'll need at least Basic access and VSTS account owner permission
 
 0.  Sign in as the account owner to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).
 
-	[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
+	[Why am I asked to choose between my work or school account and my personal account?](faq-change-app-access.md#ChooseOrgAcctMSAcct)
 
 0.	From your account toolbar, go to **Settings**.
 
@@ -75,4 +75,4 @@ Change these settings, based on your security policies.
 
     ![Under Application Connections, change each setting as necessary, save your changes](_img/change-account-access-policies/connections.png)
 
-	[Need help?](#get-support)
+	[Need help?](faq-change-app-access.md#get-support)

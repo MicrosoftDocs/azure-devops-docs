@@ -35,7 +35,7 @@ For example, you can search for all work items assigned to you by specifying the
 </table>
 
 
-For more general information about queries, see [Use the query editor to list and manage queries](using-queries.md). For information about how to navigate within the query editor or query view using keyboard shortcuts, see [Keyboard shortcuts](../../reference/keyboard-shortcuts.md).
+For more general information about queries, see [Use the query editor to list and manage queries](using-queries.md). For information about how to navigate within the query editor or query view using keyboard shortcuts, see [Keyboard shortcuts](../../reference/keyboard-shortcuts.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json).
 
 **Checklist for how to define a query clause:**  
 
@@ -215,14 +215,14 @@ You can use query operators in the following table to specify how each value in 
 	<td><p> <strong>String</strong>  that matches the name of a user group or category group in Team Foundation Server.</p>
 <blockquote><strong>Note:</strong>  You can use the <strong>In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. The operator cannot be used to query Azure Active Directory groups.
 </blockquote>
-<p>For information about category groups, see [Use categories to group work item types](../reference/use-categories-to-group-work-item-types.md). For more information about Azure Active Directory and VSTS, see [Access with Azure Active Directory groups](https://www.visualstudio.com/docs/setup-admin/vsts/manage-azure-active-directory-groups-visual-studio-team-services).</p></td></tr>
+<p>For information about category groups, see [Use categories to group work item types](../reference/use-categories-to-group-work-item-types.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json). For more information about Azure Active Directory and VSTS, see [Access with Azure Active Directory groups](../../accounts/manage-azure-active-directory-groups-vsts.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).</p></td></tr>
 <tr>
 	<td><p><strong>Not in Group</strong></p></td>
 	<td><p>Does not match a value that is a member of the group in the clause.</p></td>
 	<td><p> <strong>String</strong>  that matches the name of a user group in Team Foundation Server or a category group defined for a team project.</p>
 <blockquote><strong>Note:</strong>  You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field. The operator cannot be used to query Azure Active Directory groups.
 </blockquote>
-<p>For more information about Azure Active Directory and VSTS, see [Access with Azure Active Directory groups](../../accounts/manage-azure-active-directory-groups-vsts.md).</p></td>
+<p>For more information about Azure Active Directory and VSTS, see [Access with Azure Active Directory groups](../../accounts/manage-azure-active-directory-groups-vsts.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).</p></td>
 </tr>
 <tr>
 	<td><p><strong>Was Ever</strong></p></td>
@@ -331,5 +331,5 @@ In addition to the full-text search index, a query index is created. It is based
 
 By default, the following fields are indexed: **Assigned To**, **Created Date**, **Changed By**, **State**, **Reason**, **Area ID**, **Iteration ID**, and **Work Item Type**. If there are other fields that your team frequently uses in their queries, you can add them to the query index.
 
-You use the **witadmin indexfield** command to enable or disable indexing for a field. See [Manage work item fields](../reference/witadmin/manage-work-item-fields.md).
+You use the **witadmin indexfield** command to enable or disable indexing for a field. See [Manage work item fields](../reference/witadmin/manage-work-item-fields.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json).
 

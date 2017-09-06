@@ -32,7 +32,7 @@ Here are examples of two of the Excel reports.
 
 ![Bug trends example report](_img/ALM_PG_Excel_BugTrends.png)   ![Build status example report](_img/ALM_PG_Excel_BuildStatus.png)
 
-Default Excel reports require that your team project is configured with SharePoint Products and SQL Server Analysis Services. If these reports aren't available to you, you can [create ad-hoc reports in Excel from a work item query](#excel-adhoc-query-report) or by connecting to the Analysis Services cube. 
+Default Excel reports require that your team project is configured with SharePoint Products and SQL Server Analysis Services. If these reports aren't available to you, you can [create ad-hoc reports in Excel from a work item query](create-status-and-trend-excel-reports.md) or by connecting to the Analysis Services cube. 
 
 <table>
 <tbody valign="top">

@@ -33,7 +33,7 @@
 
 <div id="new-nav" class="tab-pane fade in active"> 
 
-<blockquote>**Tip**:  To enable or disable the new navigation experience, open your user account menu. For more information, see [Work in the web portal, Admin context](../../connect/work-web-portal.md#admin-context).  </blockquote>
+<blockquote>**Tip**:  To enable or disable the new navigation experience, open your user account menu. For more information, see [Work in the web portal, Admin context](../../connect/work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json#admin-context).  </blockquote>
 
 <p>Choose the Account settings option from the project/team menu.</p>
 

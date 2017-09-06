@@ -20,7 +20,7 @@ Before you start, you'll need
 0.  Sign in to your Visual Studio Team Services account 
 (```https://{youraccount}.visualstudio.com```).
 
-	[Why am I asked to choose between my "work or school account" and my "personal account"?](#ChooseOrgAcctMSAcct)
+	[Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)
 
 0.  Go to **Users**. 
 Select the user, 
@@ -33,7 +33,7 @@ then choose **Delete**.
 0.	To make sure that you've removed the user completely, 
 check your [security groups and permissions](add-users.md). 
 
-	[Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](#users-delay)
+	[Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](faq-add-delete-users.md#users-delay)
 
 0.  If you deleted paid users who had Basic features, 
 and you don't want to pay for these users, you must also 
@@ -45,5 +45,3 @@ so you're not charged in your next Azure billing cycle.
 	> Your bill won't show these change until the next 
 	> month because paid users are monthly purchases. 
 
-
-[Troubleshooting](faq-add-delete-users.md)

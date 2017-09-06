@@ -1,4 +1,4 @@
-﻿---
+---
 title: Migration import from TFS to Visual Studio Team Services (VSTS) | VSTS & TFS
 description: Walks through the steps from prepping a collection to getting it uploaded for import
 ms.prod: vs-devops-alm
@@ -218,7 +218,7 @@ In cases where the Azure AD Connect hasn't been configured and run previously, y
 
 > Running an import with all no matches has consequences which need to be considered carefully. It should only be considered by teams with a small number of users were the cost of setting up an Azure AD Connect is deemed too high. 
 
-To import with all no matches, simply follow the steps outlined in later sections. When queuing an import, the identity that is used to queue the import will be bootstrapped into the account as the account owner. All other users will be imported historically. The account owner will then be able to [add users](https://www.visualstudio.com/docs/setup-admin/team-services/add-account-users-assign-access-levels-team-services) back in using their AAD identity. Users added will be treated as new users. They will **NOT** own any of their history and there is no way to re-parent this history to the AAD identity. However, users can still lookup their pre-import history by searching for {domain}\{AD username}.
+To import with all no matches, simply follow the steps outlined in later sections. When queuing an import, the identity that is used to queue the import will be bootstrapped into the account as the account owner. All other users will be imported historically. The account owner will then be able to [add users](../../accounts/add-account-users-assign-access-levels.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json ) back in using their AAD identity. Users added will be treated as new users. They will **NOT** own any of their history and there is no way to re-parent this history to the AAD identity. However, users can still lookup their pre-import history by searching for {domain}\{AD username}.
 
 TfsMigrator will warn if it detects the complete no match scenario. If you decide to go down this migration path you will need to consent in the tool to the limitations. 
 
@@ -238,15 +238,15 @@ By this point you will have everything ready to execute on your import. You will
 5.	Fill out the last fields in the import specification. 
 
 ### Detaching your Collection
-Detaching the collection is a crucial step in the import processes. Identity data for the collection resides in the TFS server’s configuration database while the collection is attached and online. When a collection is detached from the TFS server it will take a copy of that identity data and package it up with the collection for transport. Without this data the identity portion of the import **CANNOT** be executed. Resources are available online to walk through [detaching a collection](https://msdn.microsoft.com/en-us/library/dd936138). It's recommended that the collection stay detached until the import has been completed, as there isn't a way to import the changes which occurred during the import.
+Detaching the collection is a crucial step in the import processes. Identity data for the collection resides in the TFS server’s configuration database while the collection is attached and online. When a collection is detached from the TFS server it will take a copy of that identity data and package it up with the collection for transport. Without this data the identity portion of the import **CANNOT** be executed. Resources are available online to walk through [detaching a collection](../../tfs-server/admin/move-project-collection.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json). It's recommended that the collection stay detached until the import has been completed, as there isn't a way to import the changes which occurred during the import.
 
-If you're running a dry run (test) import, it's recommended to reattach your collection after backing it up for import since you won't be concerned about having the latest data for this type of import. You could also choose to employ an [offline detach](https://www.visualstudio.com/en-us/docs/setup-admin/tfs/command-line/tfsconfig-cmd#offlinedetach) for dry runs to avoid offline time all together. It's important to weigh the cost involved with going the zero downtime route for a dry run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the long run.
+If you're running a dry run (test) import, it's recommended to reattach your collection after backing it up for import since you won't be concerned about having the latest data for this type of import. You could also choose to employ an [offline detach](../../tfs-server/command-line/tfsconfig-cmd.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json#offlinedetach) for dry runs to avoid offline time all together. It's important to weigh the cost involved with going the zero downtime route for a dry run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the long run.
 
 ### Generating a DACPAC
 
-> **Important**: Before proceeding, ensure that your collection was [detached](.\migration-import.md#detaching-your-collection) prior to generating a DACPAC. If you didn't complete this step the import will fail.
+> **Important**: Before proceeding, ensure that your collection was [detached](migration-import.md#detaching-your-collection) prior to generating a DACPAC. If you didn't complete this step the import will fail.
 
-Data-tier Application Component Packages ([DACPAC](https://msdn.microsoft.com/en-us/library/ee210546.aspx)) is a feature in SQL server that allows database changes to be packaged into a single file and deployed to other instances of SQL. It can also be restored directly to VSTS and is therefore utilized as the packaging method for getting your collection's data in the cloud. You're going to use the SqlPackage.exe tool to generate the DACPAC. This tool is included as part of the [SQL Server Data Tools](https://msdn.microsoft.com/en-us/library/mt204009.aspx). 
+Data-tier Application Component Packages ([DACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/data-tier-applications)) is a feature in SQL server that allows database changes to be packaged into a single file and deployed to other instances of SQL. It can also be restored directly to VSTS and is therefore utilized as the packaging method for getting your collection's data in the cloud. You're going to use the SqlPackage.exe tool to generate the DACPAC. This tool is included as part of the [SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt). 
 
 When generating a DACPAC there are two considerations that you'll want to keep in mind, the disk that the DACPAC will be saved on and the space on disk for the machine performing the DACPAC generation. Before generating a DACPAC you’ll want to ensure that you have enough space on disk to complete the operation. While creating the package, SqlPackage.exe temporarily stores data from your collection in the temp directory on the C: drive of the machine you initiate the packaging request from. Some users might find that their C: drive is too small to support creating a DACPAC. Estimating the amount of space you'll need can be found by looking for the largest table in your collection database. As DACPACs are created one table at a time. The maximum space requirement to run the generation will be roughly equivalent to the size of the largest table in the collection's database. Running the below query will display the size of the largest table in your collection's database in MBs. Compare that size with the free space on the C: drive for the machine you plan to run the generation on. 
 
@@ -292,7 +292,7 @@ If you run into trouble generating the DACPAC or if your total collection data s
 
 DACPACs offer a fast and relatively simplistic method for moving collections into VSTS. However, once a collection database crosses the 150GB size threshold the benefits of using a DACPAC start to diminish. For databases over this size threshold, a different data packaging approach is required to migrate to VSTS. 
 
-Before going any further, it’s always recommended to see if [old data can be cleaned up](https://www.visualstudio.com/en-us/docs/setup-admin/clean-up-data). Overtime collections can build up very large volumes of data. This is a natural part of the devops process. However, some of this data might no longer be relevant and doesn’t need to be kept around. Some common examples are older workspaces and build results. Cleaning older, no longer relevant artifacts, might remove a lot more space than one would expect. It could be the difference between using the DACPAC import method or having to use a SQL Azure VM. It's important to note that once you deleted older data that it **CANNOT** be recovered without restoring an older backup of the collection.
+Before going any further, it’s always recommended to see if [old data can be cleaned up](../../accounts/clean-up-data.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json). Overtime collections can build up very large volumes of data. This is a natural part of the devops process. However, some of this data might no longer be relevant and doesn’t need to be kept around. Some common examples are older workspaces and build results. Cleaning older, no longer relevant artifacts, might remove a lot more space than one would expect. It could be the difference between using the DACPAC import method or having to use a SQL Azure VM. It's important to note that once you deleted older data that it **CANNOT** be recovered without restoring an older backup of the collection.
 
 If you’re still unable to get the database under the DACPAC threshold then you will need to setup a SQL Azure VM to import to VSTS. There several steps involved in setting up a SQL Azure VM for migrating data to VSTS. We’ll walk through how to accomplish this end-to-end. Steps covered include:
 
@@ -302,13 +302,13 @@ If you’re still unable to get the database under the DACPAC threshold then you
 4. Configuring your import specification file to use a SQL connection string
 5. Optionally, we recommend restricting access to just VSTS IPs
 
-Setting up a SQL Azure VM can be done from the Azure portal with just a few clicks. Azure has a [tutorial](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-portal-sql-server-provision/) on how to setup and configure a SQL Azure VM. Follow that tutorial to ensure that your VM is configured correctly and SQL can be accessed remotely.  Note, it’s important that you put your VM in the same Azure region that your future VSTS account will be residing. This will increase the import speed as all transfers will be within a data center. 
+Setting up a SQL Azure VM can be done from the Azure portal with just a few clicks. Azure has a [tutorial](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision) on how to setup and configure a SQL Azure VM. Follow that tutorial to ensure that your VM is configured correctly and SQL can be accessed remotely.  Note, it’s important that you put your VM in the same Azure region that your future VSTS account will be residing. This will increase the import speed as all transfers will be within a data center. 
 
 Below are some recommended configurations for your SQL Azure VM.
 
 1. It's recommended that D Series VMs be used as they're optimized for database operations.
-2. [Configure](https://docs.microsoft.com/en-us/sql/relational-databases/databases/move-system-databases#a-nameexamplesa-examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [larget table](.\migration-import.md#generating-a-dacpac).
-3. If your source database is still over 1TB after [reducing the size](https://www.visualstudio.com/en-us/docs/setup-admin/clean-up-data) then you will need to [attach](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
+2. [Configure](https://docs.microsoft.com/sql/relational-databases/databases/move-system-databases#a-nameexamplesa-examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [large table](migration-import.md#generating-a-dacpac).
+3. If your source database is still over 1TB after [reducing the size](../../accounts/clean-up-data.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json) then you will need to [attach](https://docs.microsoft.com/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
 4. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
 
 
@@ -329,7 +329,7 @@ While VSTS is available in multiple regions in the United States, only the Centr
 > DACPAC customers should consult the region table in the [uploading DACPAC and import files section](#uploading-the-dacpac-and-import-files). The above guidelines are for SQL Azure VMs only. 
 
 
-After setting up and configuring an Azure VM, you will need to take your detached backup from your TFS server to your Azure VM. Azure has several methods [documented](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-migrate-sql/) for how to accomplish this task. The collection database needs to be restored on SQL and doesn’t require TFS to be installed on the VM. 
+After setting up and configuring an Azure VM, you will need to take your detached backup from your TFS server to your Azure VM. Azure has several methods [documented](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql) for how to accomplish this task. The collection database needs to be restored on SQL and doesn’t require TFS to be installed on the VM. 
 
 Once your collection database has been restored onto your Azure VM, you will need to configure a SQL login to allow VSTS to connect to the database to import the data. This login will only allow **read** access to a single database. Start by opening SQL Server Management Studio on the VM and open a new query window against the database that will be imported. 
 
@@ -456,15 +456,15 @@ While VSTS is available in multiple regions in the United States, only the Centr
 
 > Customers outside of the United States and Europe will need to place their data in Central United States. This is temporary as we work to put instances of the TFS Database Import Service in those countries. Your data will still be imported into your desired import region.
 
-[Creating a container](https://msdn.microsoft.com/en-us/library/dn466439.aspx) can be done from the Azure portal. Once the container has been created you will need to upload the following files:
+[Creating a container](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account) can be done from the Azure portal. Once the container has been created you will need to upload the following files:
 
 * Identity Map CSV 
 * Collection DACPAC 
 
-This can be accomplished using tools like [AzCopy](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/) or any other Azure storage [explorer tool](http://storageexplorer.com/). 
+This can be accomplished using tools like [AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) or any other Azure storage [explorer tool](http://storageexplorer.com/). 
 
 ### Generating SAS Key
-A shared access signature ([SAS](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-shared-access-signature-part-1/)) key provides delegated access to resources in a storage account. This allows you to give Microsoft the lowest level of privilege required to access your data for executing the import. At a minimum we require both read and list permission to the container hosting the files you uploaded in the previous step. The SAS key can even be time limited to cut off access after a desired time period has passed. It's strongly recommended that you time limit the key last for a minimum of seven days. 
+A shared access signature ([SAS](https://docs.microsoft.com/azure/storage/common/storage-dotnet-shared-access-signature-part-1)) key provides delegated access to resources in a storage account. This allows you to give Microsoft the lowest level of privilege required to access your data for executing the import. At a minimum we require both read and list permission to the container hosting the files you uploaded in the previous step. The SAS key can even be time limited to cut off access after a desired time period has passed. It's strongly recommended that you time limit the key last for a minimum of seven days. 
 
 There are several ways to generate a SAS key. The recommended way is to use the [Microsoft Azure Storage Explorer](http://storageexplorer.com/). After installing the tool you can complete the following steps to generate a SAS Key:
 
@@ -511,7 +511,7 @@ Each import code is valid until an import has been successfully completed. The s
 
 ### Queueing an Import
 
-> **Important**: Before proceeding, ensure that your collection was [detached](.\migration-import.md#detaching-your-collection) prior to generating a DACPAC or uploading the collection database to a SQL Azure VM. If you didn't complete this step the import will fail. 
+> **Important**: Before proceeding, ensure that your collection was [detached](migration-import.md#detaching-your-collection) prior to generating a DACPAC or uploading the collection database to a SQL Azure VM. If you didn't complete this step the import will fail. 
 
 Starting an import is done by using TfsMigrator's import command. The import command takes an import specification file as input. It will parse through the file to ensure the values which have been provided are valid, and if successful, it will queue an import to VSTS. 
 
@@ -540,5 +540,5 @@ After the import starts the user that queued the import will receive an email. S
 ### Dry Run Accounts
 Dry run imports help teams to test the migration of their collections. It’s not expected that these accounts will remain around forever, but rather to exist for a small timeframe. In fact, before a production migration can be run a complimenting dry run account will need to be deleted. All dry run accounts have a **limited existence and will be automatically deleted after a set period of time**. When the account will be deleted is included in the success email received after the import completes. Be sure to take note of this date and plan accordingly. Once that time period passes the dry run account will be deleted. If your team is ready to perform a production migration before then you will need to manually delete the account.
 
-Be sure to check out the [post import](.\migration-post-import.md) documentation for additional details on post import activities. Should your import encounter and problems, be sure to review the [import troubleshooting](.\migration-troubleshooting.md#dealing-with-import-errors) steps.   
+Be sure to check out the [post import](migration-post-import.md) documentation for additional details on post import activities. Should your import encounter and problems, be sure to review the [import troubleshooting](migration-troubleshooting.md#dealing-with-import-errors) steps.   
 

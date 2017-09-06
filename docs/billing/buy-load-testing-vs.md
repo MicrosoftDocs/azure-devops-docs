@@ -33,12 +33,12 @@ You can then [buy more Cloud-based Load Testing](#buy-load-testing) in the
 Before you start:
 
 *  You'll need VSTS
-[project collection administrator or account owner permissions](#FindOwnerPCA)
+[project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA)
 to purchase for your VSTS account.
 
 *  You must first
 [set up billing for your VSTS account](set-up-billing-for-your-account-vs.md),
-if you haven't already. You'll need an [Azure subscription](#AzureMSDNSubscription)
+if you haven't already. You'll need an [Azure subscription](faq-pay-for-basic-users.md#AzureMSDNSubscription)
 that you can link to your VSTS account for billing.
 
 *  If you're going through the Azure portal, you'll also need at least
@@ -68,7 +68,7 @@ Select your VSTS account.
 <p>
 <p>![Browse, VSTS accounts, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
 <p>
-<p>[Why don't I see my VSTS account?](#WhyNoVSOAccount)
+<p>[Why don't I see my VSTS account?](faq-pay-for-basic-users.md#WhyNoVSOAccount)
 <p>
 <li>Select **Cloud-based load testing**.
 <p>
@@ -98,7 +98,7 @@ make sure that you use a [supported browser](https://azure.microsoft.com/en-us/d
 <p>
 <p>![Select your VSTS account](_img/_shared/azurechooselinkedaccount.png)
 <p>
-<p>[Why don't I see my VSTS account?](#WhyNoVSOAccount)
+<p>[Why don't I see my VSTS account?](faq-pay-for-basic-users.md#WhyNoVSOAccount)
 <p>
 <li>Go to **Scale**.
 <p>
@@ -133,22 +133,17 @@ you can come back to the Azure classic portal.
 - [How to buy more pipeline capacity for builds and releases in VSTS](buy-more-build-vs.md)  
 - [Marketplace support](../marketplace/marketplace-billing-qa.md)  
 
-## Q&A
-<!-- BEGINSECTION class="md-qanda" -->
 
-#### Q: Are there any limits on load testing?
+## Limits on load testing
 
-A: Yes, there's a limit on the duration for each test run.
-
-For Cloud-based Load Testing, the limit depends on where you're running your test.
-For details, see [this Q&A](../load-test/reference-qa.md#test-limits).
+There's a limit on the duration for each test run.  For Cloud-based Load Testing, the limit depends on where you're 
+running your test.  For details, see [this Q&A](../load-test/reference-qa.md#test-limits).
 
 
-### Q:  When do I get billed?
+## Billing and free monthly limits
 
-A:  You're charged only for services used above the free monthly limits.
-Your charges are prorated during the 1st month. After that,
-you're billed automatically on the 1st day of the calendar month.
+You're charged only for services used above the free monthly limits.  Your charges are prorated during the first 
+month. After that, you're billed automatically on the 1st day of the calendar month.
 
 *  Free minutes reset on the 1st of the month.
 
@@ -160,36 +155,3 @@ are calculated based on your Azure subscription billing cycle.
 
 Learn more about [pricing here](https://www.visualstudio.com/team-services/pricing).
 
-### Q: Are there other ways to get features for my account?
-
-A: Yes, you can add other features to your VSTS account when you
-[download and install extensions from the Visual Studio Marketplace](https://www.visualstudio.com/get-started/marketplace/get-vsts-extensions).
-
-### Q: How do I get help or support for VSTS?
-
-A:	Try the [VSTS forum](https://social.msdn.microsoft.com/Forums/en-us/home?forum=TFService) 
-or [VSTS Support](https://www.visualstudio.com/team-services/support). 
-
-
-<!-- ENDSECTION -->
-
-
-<!---
-
-
-<a name="no-accounts"></a>
-
-[!INCLUDE [no-accounts](_shared/qa-no-accounts.md)]
-
-<a name="WhyNoVSOAccount"></a>
-
-[!INCLUDE [azure-why-no-team-services-account](../_shared/qa-azure-why-no-vsts-account)]
-
-<a name="FindOwnerPCA"></a>
-
-[!INCLUDE [find-project-collection-administrator](../_shared/qa-find-project-collection-administrator.md)]
-
-[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
-
-
--->

@@ -31,7 +31,7 @@ you want to buy VSTS extensions from the
 > follow the steps in this topic to go through the Azure portal.
 >
 > To change the Azure subscription that's linked to your VSTS account, 
-> [unlink your VSTS account](#change-azure-subscription), 
+> [unlink your VSTS account](change-azure-subscription.md), 
 > then [relink your account to another Azure subscription](#Link).
 
 ## What do I need to set up billing?
@@ -43,13 +43,13 @@ so you'll need:
 
 <a name="EligibleAzureSubscription"></a>
 
-* An [Azure subscription](#AzureMSDNSubscription) to bill your purchases. 
-You must have at least [an **owner** or **contributor** role](#AddAzureAdmin) 
+* An [Azure subscription](faq-pay-for-basic-users.md#AzureMSDNSubscription) to bill your purchases. 
+You must have at least [an **owner** or **contributor** role](add-backup-billing-managers.md) 
 to link this subscription to your VSTS account.
 
     [Sign up for an Azure subscription](https://account.windowsazure.com/subscriptions/), 
     if you don't have one. Or have an Azure administrator 
-    [add you as an **owner** or **contributor** role](#AddAzureAdmin) 
+    [add you as an **owner** or **contributor** role](add-backup-billing-managers.md) 
     to an Azure subscription that you can use to bill purchases. 
     Make sure to use the same email address 
     that you sign in to VSTS with for this activity.
@@ -58,7 +58,7 @@ to link this subscription to your VSTS account.
     account in the [Azure portal](https://portal.azure.com).  Your 
     Azure subscription has all the necessary billing information, 
     so you won't set this up separately for your VSTS account.
-    [How does Azure billing work?](#azure-billing)
+    [How does Azure billing work?](faq-billing-setup.md#azure-billing)
 
     If you've lost access to your Azure subscription, 
     contact [Azure Support](http://azure.microsoft.com/en-us/support/options/).

@@ -41,4 +41,3 @@ Change the number of extension users that you're paying for.
 	<img alt="Update total paid extension users" src="_img/assign-extensions/update-paid-users.png" style="border: 1px solid #CCCCCC" />
 
 
-[Troubleshooting](../marketplace/faq-extensions.md)

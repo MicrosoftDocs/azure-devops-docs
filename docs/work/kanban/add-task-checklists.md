@@ -87,7 +87,6 @@ You can drag a task within a work item to reorder it. Or, you can drag the task 
 
 To reassign a task to a different sprint, you must open the sprint backlog where it's currently defined and then drag it to the new sprint.  
 
-[!INCLUDE [temp](../_shared/kanban-board-controls.md)]   
 
 ## Related notes  
 Use your task checklist for lightweight tracking of to-do lists. If you find that you don't use this feature, you can disable it from the [common configurations dialog](../customize/customize-cards.md#annotations). 
@@ -98,7 +97,7 @@ In addition, you can:
 
 - [Add, run, update manual tests](add-run-update-tests.md)
 - [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md)
-
+- [Kanban board controls](kanban-board-controls.md)
 
 ### Customize the Kanban board 
 To customize or change the layout of the board, see one of these topics. 

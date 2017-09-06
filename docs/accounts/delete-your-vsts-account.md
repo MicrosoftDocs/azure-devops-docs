@@ -67,7 +67,7 @@ or [Azure portal](https://portal.azure.com).
 
 	![Unlink your account from an Azure subscription](_img/delete-account/app_unlinkvsoaccount2.png)
 
-	[Need help?](#get-support)
+	[Need help?](faq-delete-restore-vsts-account.md#get-support)
 
 ##  Delete your Visual Studio Team Services account
 
@@ -93,7 +93,7 @@ where you'll see your deleted account.
     
 	![Your account will appear deleted on your account list](_img/delete-account/deleted-account.png)
 
-	[Need help?](#get-support)
+	[Need help?](faq-delete-restore-vsts-account.md#get-support)
 
 <a name="undelete"></a>
 ##  Restore your Visual Studio Team Services account
@@ -108,7 +108,7 @@ permissions to restore your VSTS account.
 
 0.	Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
-	[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
+	[Why am I asked to choose between my work or school account and my personal account?](faq-delete-restore-vsts-account.md#ChooseOrgAcctMSAcct)
 
 0.  Restore your account.
 
@@ -129,7 +129,7 @@ permissions to restore your VSTS account.
 
 	*   If your account was connected to Azure AD for authenticating user access, you won't have to reconnect it again.
 
-	[Need help?](#get-support)
+	[Need help?](faq-delete-restore-vsts-account.md#get-support)
 
 
 ## Troubleshooting

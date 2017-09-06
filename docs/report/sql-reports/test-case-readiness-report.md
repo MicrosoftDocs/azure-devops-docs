@@ -109,5 +109,5 @@ After the team starts to define test cases, you can use the Test Case Readiness 
 2.  Click **View Report**.  
   
 ## Related notes
- [Reporting Services Reports](reporting-services-reports.md)
-- 
+- [Reporting Services Reports](reporting-services-reports.md)
+

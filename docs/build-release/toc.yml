@@ -107,6 +107,7 @@
     - name: Pipelines in VSTS
       href: concepts/licensing/concurrent-pipelines-ts.md
   - name: Library
+    href: concepts/library/index.md
     items:
     - name: Variable groups
       href: concepts/library/variable-groups.md

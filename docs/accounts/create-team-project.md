@@ -22,7 +22,7 @@ ms.topic: get-started-article
 
 You create a team project to establish a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. Team projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). 
 
-If you have a team project already, and want to start coding an application project, then see one of the following topics:  [Set up Git on your dev machine](../git/get-started.md) or [Develop your app in Team Foundation version control](../git/gitquickstart.md).
+If you have a team project already, and want to start coding an application project, then see one of the following topics:  [Set up Git on your dev machine](../git/gitquickstart.md) or [Develop your app in Team Foundation version control](../git/gitquickstart.md).
 
 
 >[!IMPORTANT]  

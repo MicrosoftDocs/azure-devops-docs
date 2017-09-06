@@ -9,7 +9,7 @@ ms.author: elbatk
 ms.date: 08/04/2016
 ---
 
-# Flowdock with Visual Studio Team Services
+# Notifications and Flowdock
 
 Visual Studio Team Services can post messages to your flow in Flowdock
 so everyone will know when code has been pushed or checked in, 
@@ -68,7 +68,7 @@ Now messages will be posted to your flow in Flowdock.
 <img alt="Messages appear in flow" src="./_img/flowdock/chat-messages.png" style="border: 1px solid #CCCCCC" />
 
 ## Pricing
-Visual Studio Team Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
+VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A

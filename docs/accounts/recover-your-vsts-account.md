@@ -25,7 +25,7 @@ permissions to restore your VSTS account.
 
 0.	Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
-	[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
+	[Why am I asked to choose between my work or school account and my personal account?](faq-delete-restore-vsts-account.md#ChooseOrgAcctMSAcct)
 
 0.  Restore your account.
 
@@ -46,9 +46,6 @@ permissions to restore your VSTS account.
 
 	*   If your account was connected to Azure AD for authenticating user access, you won't have to reconnect it again.
 
-	[Need help?](#get-support)
+	[Need help?](faq-delete-restore-vsts-account.md#get-support)
 
-
-
-[Troubleshooting](faq-delete-restore-vsts-account.md)
 

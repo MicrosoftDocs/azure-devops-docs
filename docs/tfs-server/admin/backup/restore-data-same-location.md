@@ -272,7 +272,7 @@ After you restore the data, you must restart the services to return the server t
 
 ## See Also
 
- [Pernission reference for Team Foundation Server](../../../security/permissions.md) 
+ [Permission reference for Team Foundation Server](../../../security/permissions.md) 
 
  [Team Foundation Server architecture](../../architecture/architecture.md) 
 

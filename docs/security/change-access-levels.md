@@ -106,7 +106,7 @@ You can learn more about each of the features you have access to from the follow
 > [!div class="mx-tdBreakAll"]  
 > | Stakeholder access<sup> 1</sup> | Basic access<sup> 5</sup> | Advanced access (TFS 2017, TFS 2015, TFS 2013) |  
 > |-------------|----------| ----------| 
-> | - View My [Work items](../work/backlogs/add-work-items.md)<br/>- Standard features: [Dashboards](../report/dashboards.md) & [Queries](../work/track/using-queries.md)<sup> 2</sup><br/>- Agile boards: [Backlogs](../work/backlogs/create-your-backlog.md), [Kanban](../work/kanban/kanban-basics.md) & [Task](../work/scrum/task-board.md) <sup> 3</sup><br/>- [View releases and manage approvals](../build-release/actions/view-manage-releases.md)<sup> 4</sup> |- [Basic & Advanced backlog and sprint planning tools](../work/scrum/sprint-planning.md)<br/>- [Request and manage feedback](../work/connect/get-feedback.md)<sup> 6</sup><br/>- [Chart viewing & Chart authoring](../report/charts.md)<br/>- Code: [Git](../git/overview.md) and [TFVC](../tfvc/overview.md)<br/>- [Build](../build-release/overview.md)<br/>- [Administer account](#administer-account)<sup> 7</sup><br/>- [Advanced home page](../work/backlogs/organize-backlog.md)<sup> 8</sup><br/>- [Web-based test execution](../manual-test/getting-started/run-manual-tests.md)<br/>- [Create and manage releases](../build-release/actions/create-deploy-releases.md)<sup> 4</sup><br/>- [Author release definitions](../build-release/concepts/definitions/release/index.md)<sup> 4</sup><br/>- >[Advanced portfolio management](../work/backlogs/define-features-epics.md)<br/>- [Team rooms](../collaborate/collaborate-in-a-team-room.md)<br/>- [Analyze test results and manage machine groups](https://msdn.microsoft.com/library/dd286743.aspx) |- [Web-based test case management](../manual-test/getting-started/create-a-test-plan.md)<sup> 9</sup> Advanced access will be deprecated in future versions of TFS.VS Enterprise (TFS 2017)<br/>- Microsoft published TFS Extensions<sup> 10</sup> |
+> | - View My [Work items](../work/backlogs/add-work-items.md)<br/>- Standard features: [Dashboards](../report/dashboards.md) & [Queries](../work/track/using-queries.md)<sup> 2</sup><br/>- Agile boards: [Backlogs](../work/backlogs/create-your-backlog.md), [Kanban](../work/kanban/kanban-basics.md) & [Task](../work/scrum/task-board.md) <sup> 3</sup><br/>- [View releases and manage approvals](../build-release/actions/view-manage-releases.md)<sup> 4</sup> |- [Basic & Advanced backlog and sprint planning tools](../work/scrum/sprint-planning.md)<br/>- [Request and manage feedback](../work/connect/get-feedback.md)<sup> 6</sup><br/>- [Chart viewing & Chart authoring](../report/charts.md)<br/>- Code: [Git](../git/overview.md) and [TFVC](../tfvc/overview.md)<br/>- [Build](../build-release/overview.md)<br/>- [Administer account](#administer-account)<sup> 7</sup><br/>- [Advanced home page](../work/backlogs/organize-backlog.md)<sup> 8</sup><br/>- [Web-based test execution](../manual-test/getting-started/run-manual-tests.md)<br/>- [Create and manage releases](../build-release/actions/create-deploy-releases.md)<sup> 4</sup><br/>- [Author release definitions](../build-release/concepts/definitions/release/index.md)<sup> 4</sup><br/>- [Advanced portfolio management](../work/backlogs/define-features-epics.md)<br/>- [Team rooms](../collaborate/collaborate-in-a-team-room.md)<br/>- [Analyze test results and manage machine groups](https://msdn.microsoft.com/library/dd286743.aspx) |- [Web-based test case management](../manual-test/getting-started/create-a-test-plan.md)<sup> 9</sup><br/><br/>Advanced access will be deprecated in future versions of TFS.<br/><br/>**VS Enterprise (TFS 2017)**<br/><br/>- Microsoft published TFS Extensions<sup> 10</sup> |
 
 #### Notes:
 1.	With Stakeholder access, users can create and modify all work items, and can create and save queries on all work items under their My Queries folder. (This is a change from Limited access in which users could create and modify only those work items that they created and query and view work items they created.)
@@ -127,27 +127,10 @@ Within the admin context, there are several hubs which support administrating fe
 
 - [Security, permissions](permissions.md)   
 - [Overview, teams](../work/scale/multiple-teams.md)   
-- 
 
-## Related notes
+## Related notes  
 
-To get started, manage permissions, or learn more about features made available through access to TFS, see these topics:    
-
-- [Work in the web portal](../connect/work-web-portal.md)   
+- [About access levels](access-levels.md)
 - [Permissions & access](permissions-access.md)  
-- [Add team members](../work/scale/multiple-teams.md#add-team-members)  
+- [Work in the web portal](../connect/work-web-portal.md)  
 
-<a id="test-manager"  >  </a>
-### Access to the Test hub and Marketplace extensions
-
-Full access to the Test hub requires Advanced (TFS 2015) or VS Enterprise (TFS 2017) access . Visual Studio Test Professional plus the Test hub features in the TFS web portal are managed through Visual Studio VSTS, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
-
-To learn how to grant access to an extensions, see [Get extensions for TFS](../marketplace/get-tfs-extensions.md).  
-
-### What features are accessible to users who belong to two different groups?
-If a user belongs to a group that has Basic access and another group that has Advanced access, the user has access to all features available through Advanced, which is a superset of Basic.
-
-### Service account access  
-[TFS service accounts](../tfs-server/admin/service-accounts-dependencies-tfs.md) are added to the default access level. If you make Stakeholder the default access level, you must set the TFS service accounts to Basic or Advanced/VS Enterprise access.  
-
-Service accounts don't require a TFS CAL or other purchase.  

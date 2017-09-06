@@ -23,7 +23,7 @@ The classifications that you define appear on the **Areas** and **Iterations** p
 
 <img src="../../customize/_img/mareas-work-areas-admin-page.png" alt="Areas, defaults defined for team project" style="border: 2px solid #C3C3C3;" /> 
 
-For an overview of using the web portal, see [Work in the web portal](../../../connect/work-web-portal.md).  
+For an overview of using the web portal, see [Work in the web portal](../../../connect/work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).  
   
  After a team project has been created, you [modify the areas and iterations](../../customize/set-area-paths.md) from the web portal. You can also define permissions to control access to a project area or iteration.  
   

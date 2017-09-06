@@ -24,7 +24,7 @@ and relink your account to another Azure subscription that's associated with you
 
 * VSTS project collection administrator or account owner permissions ([How do I find the project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner))
 
-* At least [an **owner** or **contributor** role](#AddAzureAdmin) for both Azure subscriptions
+* At least [an **owner** or **contributor** role](add-backup-billing-managers.md) for both Azure subscriptions
 
 > When you unlink your account, any paid users or pipelines that you've 
 > committed for the month will stay unaffected until the 1st of next month, 
@@ -85,12 +85,10 @@ Finish relinking your account.
  After you finish relinking, 
  your account reappears in the Azure portal with 
  your selected Azure subscription.  For more details, see 
- [how to link your VSTS account to an Azure subscription](#AzurePortal).
+ [how to link your VSTS account to an Azure subscription](set-up-billing-for-your-account-vs.md#AzurePortal).
 
 0. Follow these steps to restore any 
 [paid users](buy-basic-access-add-users.md) or 
 [agents](buy-more-build-vs.md) 
 that you had in Azure.
 
-
-[Troubleshooting](faq-billing-setup.md)

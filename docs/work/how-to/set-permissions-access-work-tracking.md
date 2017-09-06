@@ -74,7 +74,7 @@ For additional ways to restrict modifications to work items, see [Restrict who c
 
 By default, Project Administrators and Contributors can change the work item type and delete work items by moving them to the Recycle bin. Only Project Administrators can permanently delete work items and test artifacts. Project admins can grant permissions to other team members as needed. 
 
-For example, as a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the team project and choose the user or group you want to grant permissions. (To learn how to access the admin pages, see [Work in the web portal](../../connect/work-web-portal.md).)
+For example, as a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the team project and choose the user or group you want to grant permissions. (To learn how to access the admin pages, see [Work in the web portal](../../connect/work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).)
 
 In this example, we grant the Team Admins group permissions to move work items to another team project and to permanently delete work items.     
 
