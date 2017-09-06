@@ -99,7 +99,7 @@ if your VSTS account isn't linked already.
 
   If you don't have an Azure subscription,
   you can create a subscription when you start your purchase.
-  Or [create your Azure subscription here before you start](https://account.windowsazure.com/subscriptions/).
+  Or [create your Azure subscription here before you start](https://portal.azure.com).
   You'll get the necessary administrator permissions
   with your new subscription.
 

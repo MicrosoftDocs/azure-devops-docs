@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 08/11/2017
 ---
 
-#Manually process the TFS data warehouse and analysis services cube
+# Manually process the TFS data warehouse and analysis services cube
 
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)] 
 
@@ -25,11 +25,11 @@ You use the Warehouse Control Web Service to process the warehouse or cube or pe
 > Do not use SQL Server Management Studio (SSMS) to manually process the cube. Processing the cube using that tool is not supported. 
 
  
-##Process the warehouse or cube
+## Process the warehouse or cube
 
 Processing the warehouse or cube depends on how much data is involved; it can take minutes or hours. Before you process either database, determine the processing status for the synchronization job or jobs that you want to run. Make sure that the status returns **Idle** 
 
-###To access the web services
+### To access the web services
 
 1. If you aren't a member of the **Administrators** security group on the application-tier server for TFS, [get added now](../../tfs-server/add-administrator-tfs.md).  
 
@@ -45,9 +45,7 @@ Processing the warehouse or cube depends on how much data is involved; it can ta
 
 	If the page doesn't open, verify that the Microsoft Team Foundation Server Application Pool is running.
  
-<a id="check-status"></a>
-
-###To check the process status
+### To check the process status
 
 Choose  **GetProcessingStatus**.
 
@@ -69,17 +67,17 @@ And, the status for the following jobs for each team project collection are prov
 
 A value of **Idle** indicates that the synchronization job is currently not running. You should process the data warehouse or the cube only when the processing status for these jobs is **Idle**. If a different value is returned, repeat this step until **Idle** is returned for the job that you want to process.
 
-###To process the data warehouse
+### To process the data warehouse
 
 1. Choose **ProcessWarehouse**, and optionally specify the team project collection to process. If you leave **collectionName** blank, all collections are processed. 
 
 	The service returns **True** when it successfully starts the processing of the warehouse and **False** if it is not successful. A value of **False** indicates that the warehouse is currently being processed.
 
-2. To determine the processing status of the warehouse choose **GetProcessingStatus** as described earlier in to [check the process status](#check_status).
+2. To determine the processing status of the warehouse choose **GetProcessingStatus** as described earlier in to [check the process status](#to-check-the-process-status).
 
 	Warehouse processing is completed when the **GetProcessingStatus** service returns a value of **Idle**, and a value of **Succeeded** for **Common Structures Warehouse Sync** and for each warehouse for each team project collection.
 
-###To process the Analysis Services cube
+### To process the Analysis Services cube
 
 1. Choose **ProcessAnalysisDatabase**.
 
@@ -91,7 +89,7 @@ A value of **Idle** indicates that the synchronization job is currently not runn
 
 	The service returns **True** when it successfully starts the processing of the cube and **False** if it is not successful. A value of **False** indicates that the cube is currently being processed.
 
-3. To determine the processing status of the warehouse choose **GetProcessingStatus** as described earlier in [to check the process status](#check_status).
+3. To determine the processing status of the warehouse choose **GetProcessingStatus** as described earlier in [to check the process status](#to-check-the-process-status).
 
 	Cube processing is completed when the **GetProcessingStatus** service returns a value of **Idle**, and a value of **Succeeded** for the following jobs.  
 
@@ -125,7 +123,7 @@ This service changes the StringStoresCompatibilityLevel to 1100 for the **Versio
 
 	Wait until the cube processing has succeeded.
 
-##Related notes  
+## Related notes  
 You should process a database manually for one of the following reasons:
 
 * Incrementally process the cube when reports don't show the latest data and you need them up-to-date for an upcoming meeting.  

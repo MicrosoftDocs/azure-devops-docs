@@ -3,7 +3,7 @@
 A:	When you buy from the Visual Studio Marketplace, 
 you select an Azure subscription to use for billing. 
 If you don't have an Azure subscription, 
-you can [sign up](https://account.windowsazure.com/Subscriptions) 
+you can [sign up](https://portal.azure.com) 
 either before or during your first purchase. 
 You can set up payment with a credit card, 
 or by invoice in some cases. Charges for your 

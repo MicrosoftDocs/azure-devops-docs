@@ -22,9 +22,9 @@ Managed queries help you find work items that you want to review, triage, update
 To quickly find a work item by ID, simply enter the ID in the [work item search box](search-box-queries.md). Or, you can enter a keyword to list items containing the keyword in its title, description, or history.   
 
 Otherwise, you can use the Query Editor to craft simple or more complex queries based on the filter clauses you specify. Start by choosing from these three query types:
-*	[Flat list of work items](#flat-list-query)
-*	[Hierarchical list using a tree query](#tree-query)
-*	[List showing dependencies using a direct links query](#directs-link-query) 
+*	[Flat list of work items](using-queries.md#flat-list-query)
+*	[Hierarchical list using a tree query](using-queries.md#tree-query)
+*	[List showing dependencies using a direct links query](using-queries.md#directs-link-query) 
 
 
 Managed queries are useful for monitoring progress. All team projects created with a default process come with a defined set of managed queries. Here are a few of the ways that you can use managed queries...

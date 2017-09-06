@@ -145,8 +145,6 @@ For the following clients, execute a get or check-in and the workspace mapping w
 
 - Visual Studio 2015 (RC or newer)
 
-- Visual Studio 2013 with [Update 5](http://go.microsoft.com/fwlink/?LinkId=519378) (RC or newer)
-
 - Visual Studio 2012 with [Update 5](http://go.microsoft.com/fwlink/?LinkId=615776) (RC or newer)
 
 - Team Foundation Server plugin [Team Explorer Everywhere 2015](http://go.microsoft.com/fwlink/?LinkID=617042)

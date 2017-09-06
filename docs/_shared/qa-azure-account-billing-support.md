@@ -2,7 +2,7 @@
 ###Q:  Where can I check my bill or update billing details on my Azure subscription?
 
 A:  If you're the Azure Account Administrator, 
-[view your subscription at the Azure account portal](https://account.windowsazure.com/Subscriptions).
+[view your subscription at the Azure account portal](https://portal.azure.com).
 
 ###Q: What if I have other questions about Azure subscriptions and billing?
 

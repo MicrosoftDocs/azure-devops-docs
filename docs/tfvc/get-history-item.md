@@ -38,8 +38,8 @@ To display the History window:
 
 -   In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), select an item, open its shortcut menu, and then choose **View History**.
 
-	>**Tip:**  
-	>You can customize the position of the window by right-clicking the title and then choosing one of these options: **Float**, **Dock**, or **Dock as Tabbed Document**.
+	> [!TIP]
+	> You can customize the position of the window by right-clicking the title and then choosing one of these options: **Float**, **Dock**, or **Dock as Tabbed Document**.
 
 -   Use the [History Command](history-command.md).
 
@@ -63,7 +63,8 @@ The **Changesets** tab displays detailed data about every change that has been m
 
 -   **Comment**   The comment entered by the user who checked in the changeset.
 
-**Note**   If you open this window by using the **History** command and you are displaying data about a team project, branch, or folder, then the history of children items (for example, the files contained by a folder) is shown only if you use the **/recursive** option.
+> [!NOTE]
+> If you open this window by using the **History** command and you are displaying data about a team project, branch, or folder, then the history of children items (for example, the files contained by a folder) is shown only if you use the **/recursive** option.
 
 If the item is a file, then additional data is displayed in the following columns:
 
@@ -71,8 +72,8 @@ If the item is a file, then additional data is displayed in the following column
 
 -   **Path**  The path to the file.
 
->**Tip:**
-Sometimes you need to share this kind of data with someone else. You can select one or more rows from the table in the **Labels** tab, right-click them, click **Copy** to copy the data to the clipboard, and then paste the data into an e-mail message, document, or spreadsheet.
+> [!TIP]
+> Sometimes you need to share this kind of data with someone else. You can select one or more rows from the table in the **Labels** tab, right-click them, click **Copy** to copy the data to the clipboard, and then paste the data into an e-mail message, document, or spreadsheet.
 
 ### Common Tasks
 
@@ -131,13 +132,13 @@ All labels that have been applied to the item are listed in a table that include
 
 -   **Comment**   The comment made by the user who applied the label.
 
->**Note:**  
->When you display historical data about a team project, branch, or folder, the data about labels applied to children items (for example, the files contained by a folder) is not shown.
+> [!NOTE]
+> When you display historical data about a team project, branch, or folder, the data about labels applied to children items (for example, the files contained by a folder) is not shown.
 
 &nbsp;
 
->**Tip:**
-Sometimes you need to share this kind of data with someone else. You can select one or more rows from the table in the **Labels** tab, right-click them, click **Copy** to copy the data to the clipboard, and then paste the data into an e-mail message, document, or spreadsheet.
+> [!TIP]
+> Sometimes you need to share this kind of data with someone else. You can select one or more rows from the table in the **Labels** tab, right-click them, click **Copy** to copy the data to the clipboard, and then paste the data into an e-mail message, document, or spreadsheet.
 
 ## Common Tasks
 

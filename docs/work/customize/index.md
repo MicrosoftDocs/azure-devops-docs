@@ -59,9 +59,10 @@ Use the guidance provided in the following topics based on the process model or 
 
  
 ## Reference   
-- [Work items](/vsts/work/work-items/index)
-- [Scale & configure teams](/vsts/teams/index)
-- [Account Management (VSTS)](/vsts/accounts/index)
-- [TFS Server Administration](/vsts/tfs-server/index)
-- [Marketplace extensions](/vsts/marketplace/install-vsts-extension)
-- [Extensibility and REST APIs](/vsts/extend/overview) 
+
+- [Work items](../../work/work-items/index.md)
+- [Scale & configure teams](../../teams/index.md)
+- [Account Management (VSTS)](../../accounts/index.md)
+- [TFS Server Administration](../../tfs-server/index.md)
+- [Marketplace extensions](../../marketplace/install-vsts-extension.md)
+- [Extensibility and REST APIs](../../extend/overview.md) 
