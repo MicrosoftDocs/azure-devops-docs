@@ -17,15 +17,15 @@ ms.date: 01/17/2017
 
 Steps are provided to support generating the following example reports: 
 
-- [Number of Work Items](#1-number-of-work-items)  
-- [Number of Bugs by Area Path and Priority](#2-number-of-bugs-by-area-path-and-priority)  
+- [Number of Work Items](#number-of-work-items)  
+- [Number of Bugs by Area Path and Priority](#number-of-bugs-by-area-path-and-priority)  
 
 Prior to generating these reports, you must first [connect to the Analytics Services for VSTS using the Power BI data connector](data-connector-connect.md). 
 
 > [!TIP]  
 > Use the search box if you are working with tables that contain many columns.
 
-
+<a id="number-of-work-items" />
 ## Number of Work Items
 
 1. Load `Work Items - Today` table with columns: `Work Item Count`.  
@@ -38,7 +38,7 @@ Prior to generating these reports, you must first [connect to the Analytics Serv
 
 	![](./_img/data-connector-recipes-count-2.png)  
 
-
+<a id="number-of-bugs-by-area-path-and-priority" />
 ## Number of Bugs by Area Path and Priority
 
 1. Load `Work Items - Today` table with columns: `Area Path`, `Priority`, `Work Item Count`, `Work Item Type`.  

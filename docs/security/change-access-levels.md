@@ -128,25 +128,9 @@ Within the admin context, there are several hubs which support administrating fe
 - [Security, permissions](permissions.md)   
 - [Overview, teams](../work/scale/multiple-teams.md)   
 
-## Related notes
+## Related notes  
 
-To get started, manage permissions, or learn more about features made available through access to TFS, see these topics:    
-
-- [Work in the web portal](../connect/work-web-portal.md)   
+- [About access levels](access-levels.md)
 - [Permissions & access](permissions-access.md)  
-- [Add team members](../work/scale/multiple-teams.md#add-team-members)  
+- [Work in the web portal](../connect/work-web-portal.md)  
 
-<a id="test-manager"  >  </a>
-### Access to the Test hub and Marketplace extensions
-
-Full access to the Test hub requires Advanced (TFS 2015) or VS Enterprise (TFS 2017) access . Visual Studio Test Professional plus the Test hub features in the TFS web portal are managed through Visual Studio VSTS, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
-
-To learn how to grant access to an extensions, see [Get extensions for TFS](../marketplace/get-tfs-extensions.md).  
-
-### What features are accessible to users who belong to two different groups?
-If a user belongs to a group that has Basic access and another group that has Advanced access, the user has access to all features available through Advanced, which is a superset of Basic.
-
-### Service account access  
-[TFS service accounts](../tfs-server/admin/service-accounts-dependencies-tfs.md) are added to the default access level. If you make Stakeholder the default access level, you must set the TFS service accounts to Basic or Advanced/VS Enterprise access.  
-
-Service accounts don't require a TFS CAL or other purchase.  

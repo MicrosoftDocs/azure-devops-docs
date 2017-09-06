@@ -5,7 +5,7 @@
   - name: About Kanban and Agile project management
     href: kanban-overview.md
   - name: "Backlogs, boards, & plans"
-    href: /vsts/work/backlogs-boards-plans?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
+    href: ../backlogs-boards-plans.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
 - name: Quickstarts
   items:
   - name: Kanban
@@ -24,10 +24,12 @@
   items:
   - name: Kanban best practices
     href: best-practices-kanban.md
+  - name: Kanban board controls
+    href: kanban-board-controls.md
   - name: "Workflow states & state categories"
     href: /vsts/work/concepts/workflow-and-state-categories?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: About teams and Agile tools
-    href: /vsts/work/about-teams-and-settings?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
+    href: ../about-teams-and-settings.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
 - name: How-to guides
   items:
   - name: Filter your Kanban board
@@ -35,7 +37,7 @@
   - name: Add or edit columns
     href: add-columns.md
   - name: Customize cards
-    href: /vsts/work/customize/customize-cards?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
+    href: ../customize/customize-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
   - name: WIP limits
     href: wip-limits.md
   - name: Expedite work
@@ -45,13 +47,13 @@
   - name: Definition of done
     href: definition-of-done.md
   - name: Reorder cards
-    href: /vsts/work/customize/reorder-cards?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
+    href: ../customize/reorder-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
   - name: "Manage permissions & access"
-    href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
+    href: ../how-to/set-permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: "Permissions & access for work tracking"
-    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
+    href: ../permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
 - name: Resources
   items:
   - name: Backlogs
