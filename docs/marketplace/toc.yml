@@ -16,6 +16,10 @@
   items:
   - name: Rate and review extensions
     href: rating-and-review.md
+- name: Concepts
+  items:
+  - name: Extension reporting
+    href: extension-report.md
 - name: Troubleshooting
   items:
   - name: Getting and paying for extensions
