@@ -38,6 +38,6 @@ but the monthly credits won't apply, so your credit card will be billed for char
 	remove the spending limit by visiting the 
 	[Azure Account Center](https://account.windowsazure.com):
 	
-	0.	Sign in to [Azure Account Center (**Account** > **subscriptions**)](https://account.windowsazure.com/subscriptions). 
+	0.	Sign in to [Azure Account Center (**Account** > **subscriptions**)](https://portal.azure.com). 
 	0.	Select your Azure subscription. 
 	0.	Remove your spending limit **indefinitely**.

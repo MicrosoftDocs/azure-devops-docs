@@ -191,7 +191,7 @@ subscription that's associated with your directory. Learn
 	If you're the subscription [Account Administrator](https://azure.microsoft.com/en-us/documentation/articles/billing-add-change-azure-subscription-administrator), 
 	visit the Azure Account Center to remove the spending limit:
 
-	0.	Sign in to [Azure Account Center (**Account** > **subscriptions**)](https://account.windowsazure.com/subscriptions). 
+	0.	Sign in to [Azure Account Center (**Account** > **subscriptions**)](https://portal.azure.com). 
 	0.	Select your Azure subscription. 
 	0.	Remove your spending limit **indefinitely**.
 

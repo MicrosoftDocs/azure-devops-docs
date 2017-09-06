@@ -47,7 +47,7 @@ so you'll need:
 You must have at least [an **owner** or **contributor** role](add-backup-billing-managers.md) 
 to link this subscription to your VSTS account.
 
-    [Sign up for an Azure subscription](https://account.windowsazure.com/subscriptions/), 
+    [Sign up for an Azure subscription](https://portal.azure.com), 
     if you don't have one. Or have an Azure administrator 
     [add you as an **owner** or **contributor** role](add-backup-billing-managers.md) 
     to an Azure subscription that you can use to bill purchases. 

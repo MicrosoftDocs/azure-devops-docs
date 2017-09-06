@@ -66,7 +66,7 @@ to use for billing purchases from the Visual Studio Marketplace
 	your Visual Studio Team Services account, if your account is already 
 	[set up for billing](set-up-billing-for-your-account-vs.md). 
 	If you don't have an Azure subscription, you can 
-	[sign up for Azure](https://account.windowsazure.com/Subscriptions) 
+	[sign up for Azure](https://portal.azure.com) 
 	before or during your first Marketplace purchase. Learn more about 
 	[using Azure subscriptions to bill Marketplace purchases](#azure-billing).
 
@@ -218,7 +218,7 @@ to use for billing your purchase. Just think of this subscription
 like a billing account.
 
 If you don't have an Azure subscription, just 
-[sign up](https://account.windowsazure.com/Subscriptions) 
+[sign up](https://portal.azure.com) 
 before or during your first Marketplace purchase. You can also 
 use your Azure subscription to buy other Azure services, 
 like Cloud Services, compute instances, Visual Studio Team Services, 

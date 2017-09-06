@@ -148,7 +148,7 @@ which is possible only if you bought before November 2015,
 and want to upgrade, do this:
 	
 0. Before the last day of the calendar month, 
-sign in to the [Azure portal](https://manage.windowsazure.com), 
+sign in to the [Azure portal](https://portal.azure.com), 
 and reduce the number of paid Visual Studio Online Professional 
 users to 0. 
 
@@ -198,7 +198,7 @@ After they sign in, VSTS will restore their access automatically.
 *	The Azure subscription used for billing is no longer active. 
 This affects all purchases made with this subscription, 
 including Visual Studio subscriptions. 
-To fix this problem, visit the [Azure account portal](https://account.windowsazure.com/subscriptions).
+To fix this problem, visit the [Azure account portal](https://portal.azure.com).
 
 *	The Azure subscription used for billing was 
 unlinked from your VSTS account. 

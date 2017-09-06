@@ -31,7 +31,7 @@ that gets charged when you buy something.
 
 	You may already have an Azure subscription if you use Azure, or you pay for Visual Studio Team Services or other 
 	services through Visual Studio Marketplace.  If you don't have an Azure subscription, you can 
-	[sign up for Azure](https://account.windowsazure.com/Subscriptions) 
+	[sign up for Azure](https://portal.azure.com) 
 	before or during your first Marketplace purchase. Learn more about 
 	[using Azure subscriptions to bill Marketplace purchases](#azure-billing).
 
@@ -51,7 +51,7 @@ with your Microsoft account, or with your work or school account:
 
  ![Buy Xamarin University](_img/xamarin/02-xamarin-univ.png)
 
-0. Choose the Azure subscription that you want to use for billing.  The name of the subscription defaults to the type of account it is, but you can change the name within the [Azure Account portal](https://account.windowsazure.com/Subscriptions).  You can also create a new Azure subscription to use instead.
+0. Choose the Azure subscription that you want to use for billing.  The name of the subscription defaults to the type of account it is, but you can change the name within the [Azure Account portal](https://portal.azure.com).  You can also create a new Azure subscription to use instead.
 
  ![Choose your Azure subscription or create a new one](_img/xamarin/03-xamarin-id.png)
 
