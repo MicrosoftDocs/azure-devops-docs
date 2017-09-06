@@ -35,7 +35,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 2. Open the Definition of Done for the column that applies to the criteria you'll enter. You can specify the Definition of Done for each intermediate column on your team's Kanban board. 
 
 	**VSTS and TFS 2015.1 and later versions**  
-	Click a column tab and enter the Definition of Done for that column. Enter text that defines your [team's Definition of Done](#your-team-working-software-and-the-definition-of-done). 
+	Click a column tab and enter the Definition of Done for that column. Enter text that defines your [team's Definition of Done](#definition-of-done). 
 
 	<img src="_img/vso-kanban-board-definition-of-done-no-tags.png" alt="Kanban board, Coding column tab, Definition of done]" style="border: 2px solid #C3C3C3;" />  
 
@@ -43,7 +43,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 	![Edit Definition](_img/ALM_DD_EditDefinition.png)
 	
-	Enter text that defines your [team's Definition of Done](#your-team-working-software-and-the-definition-of-done).
+	Enter text that defines your [team's Definition of Done](#definition-of-done).
 
 	![Definition Text](_img/ALM_DD_DefinitionText.png)
 

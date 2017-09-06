@@ -26,10 +26,10 @@ ms.date: 08/04/2016
 <p>You can use Visual Studio and Git to collaborate with your team using Team Foundation Server (on-premises or on [Visual Studio VSTS](http://tfs.visualstudio.com/)), on [CodePlex](http://www.codeplex.com/), or on a third-party service such as GitHub or Bitbucket.</p>
 
 <ul>
-<li>[Get started using Git](get-started.md)</li>
+<li>[Get started using Git](gitquickstart.md)</li>
 <li>[Conduct a Git pull request](pull-requests.md)</li>
 <li>[Improve code quality with branch policies](branch-policies.md)</li>
-<li>[Rebase a topic branch in Visual Studio](rebase.md)</li>
+<li>[Rebase a topic branch in Visual Studio](tutorial/rebase.md)</li>
 <li>[Work from the Git command prompt](command-prompt.md)</li>
 <li>[Rename a Git repository](repo-rename.md)</li>
 <li>[Learn about Git permissions](http://msdn.microsoft.com/en-us/library/ms252587.aspx#git)</li>
