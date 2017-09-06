@@ -27,7 +27,7 @@ you'll need at least Basic access and account owner permissions.
 
 0.  Sign in to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).
 
-	[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
+	[Why am I asked to choose between my work or school account and my personal account?](faq-create-account.md#ChooseOrgAcctMSAcct)
 
 0.  Go to your VSTS account settings.
 
@@ -42,4 +42,4 @@ Give your account a new name. Save your changes.
 
     ![Confirm renaming your account, provide new account name](_img/rename-vso-account/vsoconfirmaccountrename.png)
 
-	[Need help?](#get-support)
+	[Need help?](faq-create-account.md#get-support)

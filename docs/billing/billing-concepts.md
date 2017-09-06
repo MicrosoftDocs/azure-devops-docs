@@ -31,7 +31,7 @@ you want to buy VSTS extensions from the
 > follow the steps in this topic to go through the Azure portal.
 >
 > To change the Azure subscription that's linked to your VSTS account, 
-> [unlink your VSTS account](#change-azure-subscription), 
+> [unlink your VSTS account](change-azure-subscription.md), 
 > then [relink your account to another Azure subscription](set-up-billing-for-your-account-vs.md#Link).
 
 ## What do I need to set up billing?
@@ -43,7 +43,7 @@ so you'll need:
 
 <a name="EligibleAzureSubscription"></a>
 
-* An [Azure subscription](#AzureMSDNSubscription) to bill your purchases. 
+* An [Azure subscription](faq-billing-setup.md#AzureMSDNSubscription) to bill your purchases. 
 You must have at least [an **owner** or **contributor** role](add-backup-billing-managers.md) 
 to link this subscription to your VSTS account.
 

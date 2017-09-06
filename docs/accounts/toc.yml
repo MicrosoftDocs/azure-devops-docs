@@ -138,6 +138,8 @@
     href: faq-azure-access.md
   - name: Add administrators
     href: faq-add-administrators.md
+  - name: Rename team project
+    href: faq-rename-team-project.md
 - name: Resources
   items:
   - name: "Billing and extensions"

@@ -37,7 +37,7 @@ with your personal Microsoft account as the VSTS account owner.
 	> You can connect your VSTS account 
 	> and your directory only through the Azure classic portal.
 
-	[Why am I asked to choose between a "work or school account" and a "personal account"?](#ChooseOrgAcctMSAcct)
+	[Why am I asked to choose between a "work or school account" and a "personal account"?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
 0.  If you haven't already, 
 [link your VSTS account](../billing/set-up-billing-for-your-account-vs.md) 
@@ -49,12 +49,12 @@ to the Azure subscription associated with your directory.
 
   ![No connected directory](_img/_shared/no-directory.png)
 
-  [What if my account is already linked to an Azure subscription?](#subscription-linked-already)
+  [What if my account is already linked to an Azure subscription?](faq-azure-access.md#subscription-linked-already)
 
   **Important** Want to use your Azure subscription to bill VSTS purchases?  You can use your linked Azure 
   subscription to bill purchases for your VSTS account, but if your subscription has a 
 	[spending limit](https://azure.microsoft.com/en-us/pricing/spending-limits/), you must first remove this 
-	spending limit **indefinitely**. Learn [how and why you must remove this spending limit](#remove-spending-limit).
+	spending limit **indefinitely**. Learn [how and why you must remove this spending limit](faq-azure-access.md#remove-spending-limit).
 
 0.	Go to **Visual Studio Team Services**. 
 Select your VSTS account.
@@ -74,8 +74,8 @@ Save your changes when you're done.
 
 	![Select your directory](_img/manage-work-access/azureconnectdirectory2.png)
 
-	*	[Why don't I see the directory that I want?](#why-not-my-directory)
-	*	[My account's already connected to a directory. What do I do?](#AlreadyConnected)
+	*	[Why don't I see the directory that I want?](faq-azure-access.md#why-not-my-directory)
+	*	[My account's already connected to a directory. What do I do?](faq-azure-access.md#AlreadyConnected)
 
 	![Account is now connected to your directory](_img/manage-work-access/azureconnectdirectory3.png)
 
@@ -97,13 +97,11 @@ you can add a work or school account that's
 managed by Azure Active Directory to your subscription. 
 Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](../billing/link-msdn-subscription-to-organizational-account-vs.md).
 
-	[More questions about connecting?](#faq-connect)
+	[More questions about connecting?](faq-azure-access.md#faq-connect)
 
 **Next:**
 
 *   [Manage users and access](add-account-users-assign-access-levels.md)
 *   [Manage access with Azure AD groups](manage-azure-active-directory-groups-vsts.md)
 
-
-[Troubleshooting Q&A](faq-azure-access.md)
 
