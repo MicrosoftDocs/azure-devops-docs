@@ -29,7 +29,7 @@ such as working with your backlog, work items, and queries
 who also get Basic features, and in some cases, additional features with specific extensions, such as 
 [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) 
 
-[Need more users with Basic features or Visual Studio subscriptions?](#add-more-basic-users)
+[Need more users with Basic features or Visual Studio subscriptions?](../billing/buy-basic-access-add-users.md)
 
 
 > You can add people to team projects, 
@@ -39,13 +39,13 @@ who also get Basic features, and in some cases, additional features with specifi
 > or [Stakeholder features](https://www.visualstudio.com/team-services/compare-features/), 
 > if not. Learn [how to add members to team projects](add-team-members-vs.md).
 >
-> When people don't need access to your VSTS account anymore, [delete them](#delete-user) from your account. 
+> When people don't need access to your VSTS account anymore, [delete them](delete-account-users.md) from your account. 
 
 
 ## How does *access* differ from *permissions*?
 
 Access levels control which features are available to users, while permissions control their access to account resources. 
-[Can't access some features?](#feature-access) 
+[Can't access some features?](faq-add-delete-users.md#feature-access) 
 For TFS, learn [how to change access levels](../security/change-access-levels.md) 
 or [buy more access to TFS or the Test hub](../billing/buy-access-tfs-test-hub.md). 
 

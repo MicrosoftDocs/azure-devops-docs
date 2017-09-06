@@ -71,19 +71,25 @@ running agent software from Microsoft.
   > By making this switch, you can run longer builds (unlimited minutes within reason).
 
 
+> [!NOTE]
+> When you pay for pipelines, you can run more than one build or release at the same time 
+> in your VSTS account. Learn [about pipeline pricing](https://www.visualstudio.com/team-services/pricing) 
+or [how pipelines work](../build-release/concepts/licensing/concurrent-pipelines-ts.md).
+
+
 <a name="buy-build-release"></a>
 ##  Pre-requisites
 
 Before you start:
 
 *  You'll need VSTS
-[project collection administrator or account owner permissions](#FindOwnerPCA)
+[project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA)
 to purchase for your VSTS account.
 
 *  You'll need an Azure subscription that you can
 link to your VSTS account for billing,
 if your VSTS account isn't linked already.
-[Which Azure subscriptions can I use?](#AzureMSDNSubscription)
+[Which Azure subscriptions can I use?](faq-pay-for-basic-users.md#AzureMSDNSubscription)
 
   To use an existing Azure subscription for billing,
   you'll need at least Co-administrator permissions for that subscription.
@@ -100,7 +106,7 @@ if your VSTS account isn't linked already.
   Your VSTS account will reuse this Azure subscription
   when you make future purchases for your VSTS account
   from the [Visual Studio Marketplace](https://marketplace.visualstudio.com)
-  or from Azure. [More about Azure subscriptions for billing](#billing).
+  or from Azure. [More about Azure subscriptions for billing](faq-pay-for-basic-users.md#billing).
 
 ## Buy pipelines
 
@@ -129,7 +135,7 @@ if you have multiple accounts.
   <p><a data-toggle="collapse" href="#expando-why-no-ts-account">Don't see your VSTS accounts? &#x25BC;</a></p>
   <div class="collapse" id="expando-why-no-ts-account">
   <p>To select your VSTS account here, you must have have VSTS
-  [project collection administrator or account owner permissions](#FindOwnerPCA).
+  [project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).
   </div>
 
 0.  Confirm the Azure subscription that you'll use for billing.
@@ -138,7 +144,7 @@ if you have multiple accounts.
   select the Azure subscription that you want to use.
   Or if you don't have an Azure subscription,
   create a new subscription now to use for billing.
-  [More about Azure subscriptions for billing](#billing)
+  [More about Azure subscriptions for billing](faq-pay-for-basic-users.md#billing)
 
   ![Confirm or select your Azure subscription](_img/get-more-build-load-testing/select-azure-subscription.png)
 
@@ -199,30 +205,21 @@ then update your number of paid pipelines.
 - [Marketplace support](../marketplace/marketplace-billing-qa.md)  
 
 
-## Q & A
-<!-- BEGINSECTION class="md-qanda" -->
 
-### Q:  Why pay for pipelines?
 
-A:  When you pay for pipelines, you can run more than one build or release at the same time
-in your VSTS account. Learn
-[about pipeline pricing](https://www.visualstudio.com/team-services/pricing)
-or [how pipelines work](../build-release/concepts/licensing/concurrent-pipelines-ts.md).
 
-### Q: Are there any limits on builds and releases?
 
-A: Yes, there's a limit on the duration for each build or deployment.
+## Limits on builds and releases
 
-For Build & Release, your free hosted pipeline includes 4 hours per month
+Your free hosted pipeline includes 4 hours per month
 for builds and releases with a maximum duration of 30 minutes per build or deployment.
 A paid hosted pipeline increases your maximum duration to 6 hours per build or deployment.
 
 
-### Q:  When do I get billed?
+## Billing and free monthly limits
 
-A:  You're charged only for services used above the free monthly limits.
-Your charges are prorated during the 1st month. After that,
-you're billed automatically on the 1st day of the calendar month.
+You're charged only for services used above the free monthly limits.  Your charges are prorated during the first 
+month. After that, you're billed automatically on the 1st day of the calendar month.
 
 *  Free minutes reset on the 1st of the month.
 
@@ -240,48 +237,9 @@ are calculated based on your Azure subscription billing cycle.
 
 Learn more about [pricing here](https://www.visualstudio.com/team-services/pricing).
 
-### Q: Are there other ways to get features for my account?
 
-A: Yes, you can add other features to your VSTS account when you
-[download and install extensions from the Visual Studio Marketplace](https://www.visualstudio.com/get-started/marketplace/get-vsts-extensions).
+## Support
 
-### Q: How do I get help or support for VSTS?
-
-A:	Try the [VSTS forum](https://social.msdn.microsoft.com/Forums/en-us/home?forum=TFService)
+Try the [VSTS forum](https://social.msdn.microsoft.com/Forums/en-us/home?forum=TFService)
 or [VSTS Support](https://www.visualstudio.com/team-services/support).
 
-
-<!-- ENDSECTION -->
-
-
-<!--
-
-<a name="no-accounts"></a>
-
-[!INCLUDE [no-accounts](_shared/qa-no-accounts.md)]
-
-<a name="WhyNoVSOAccount"></a>
-
-[!INCLUDE [azure-why-no-team-services-account](../_shared/qa-azure-why-no-vsts-account)]
-
-<a name="FindOwnerPCA"></a>
-
-[!INCLUDE [find-project-collection-administrator](../_shared/qa-find-project-collection-administrator.md)]
-
-[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
-
-<a name="get-support"></a>
-
-[!INCLUDE [azure-account-billing-support](../_shared/qa-azure-account-billing-support.md)]
-
-[!INCLUDE [get-team-services-support](../_shared/qa-get-vsts-support.md)]
-
-<a name="AzureMSDNSubscription"></a>
-
-[!INCLUDE [azure-subscriptions-for-billing](../_shared/qa-azure-subscriptions-for-billing.md)]
-
-<a name="billing"></a>
-
-[!INCLUDE [azure-billing](../marketplace/_shared/qa-azure-billing.md)]
-
--->

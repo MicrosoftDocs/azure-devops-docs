@@ -67,7 +67,7 @@ A:	You can still use the Azure portal or Azure classic portal
 to pay for users who need Basic access or to manage the number 
 of VSTS users that you're paying to get Basic access.
 
-> Try [buying or managing paid Basic access through Visual Studio Marketplace](#buy-access-vs-marketplace). 
+> Try [buying or managing paid Basic access through Visual Studio Marketplace](buy-basic-access-add-users.md#buy-access-vs-marketplace). 
 > Otherwise, if you're buying Basic access for the first time, 
 > and you haven't set up billing for your VSTS account yet, 
 > you must [link your VSTS account to an Azure subscription for billing](set-up-billing-for-your-account-vs.md). 
