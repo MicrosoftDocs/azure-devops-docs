@@ -13,8 +13,6 @@ ms.date: 08/22/2016
 
 [!INCLUDE [temp](../_shared/version.md)]
 
-[!INCLUDE [temp](../_shared/ci-cd-newbies.md)]
-
 This is a selection of the growing range of examples we are creating
 to demonstrate the many ways you can build and deploy
 a range of application types, code languages, development

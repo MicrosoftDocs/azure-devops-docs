@@ -9,66 +9,63 @@ To define or modify a variable from a script, use the `task.setvariable` logging
 > * [Windows agent](../../../actions/agents/v2-windows.md) using either a [Batch script task](../../../tasks/utility/batch-script.md) or [PowerShell script task](../../../tasks/utility/powershell.md).
 > * [macOS](../../../actions/agents/v2-osx.md) or [Linux](../../../actions/agents/v2-linux.md) agent using a [Shell script task](../../../tasks/utility/shell-script.md).
 
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;margin: 0px 0px 0px 8px;min-width:90px;border: solid 2px #AEAEAE;border-radius: 0;padding: 3px;font-size:14px;font-weight:400" data-toggle="pill" href="#shell-script-set-variable">![icon](../../../tasks/utility/_img/shell-script.png) Shell</a></li>
-<li class="active" style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;margin: 0px 0px 0px 0px;min-width:90px;border: solid 2px #AEAEAE;border-radius: 0;padding: 3px;font-size:14px;font-weight:400" data-toggle="pill" href="#ps-script-set-variable">![icon](../../../tasks/utility/_img/powershell.png) PowerShell</a></li>
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;margin: 0px 0px 0px 0px;min-width:90px;border: solid 2px #AEAEAE;border-radius: 0;padding: 3px;font-size:14px;font-weight:400" data-toggle="pill" href="#batch-script-set-variable">![icon](../../../tasks/utility/_img/batch-script.png) Batch</a></li>
-</ul>
 
-<div class="tab-content in fade" id="changeexample" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
 
-<div class="tab-pane fade" id="batch-script-set-variable">
-<h6>Batch script</h6>
+# [Batch](#tab/batch)
 
-<p>![Batch icon](../../../tasks/utility/_img/batch-script.png) Set the `sauce` and `secretSauce` variables</p>
-<pre>
-<code class="language-bat">@echo ##vso[task.setvariable variable=sauce]crushed tomatoes
+**Batch script**
+
+![icon](../../../tasks/utility/_img/batch-script.png) Set the `sauce` and `secretSauce` variables
+
+```bat
+@echo ##vso[task.setvariable variable=sauce]crushed tomatoes
 @echo ##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic
-</code></pre><br/>
+```
 
-<p>![Batch icon](../../../tasks/utility/_img/batch-script.png) Read the variables</p>
-<ul>
-<li>Arguments
-<pre>
-<code>"$(sauce)" "$(secretSauce)"
-</code></pre>
-</li>
-<li>Script
-<pre>
-<code class="language-bat">@echo off
+![icon](../../../tasks/utility/_img/batch-script.png) Read the variables
+
+Arguments
+
+```
+"$(sauce)" "$(secretSauce)"
+```
+
+Script
+
+ ```bat
+@echo off
 set sauceArgument=%~1
 set secretSauceArgument=%~2
 @echo No problem reading %sauceArgument% or %SAUCE%
 @echo But I cannot read %SECRETSAUCE%
 @echo But I can read %secretSauceArgument% (but the log is redacted so I do not spoil
       the secret)
-</code></pre>
-</li>
-</ul>
-</div>
+```
 
+# [PowerShell](#tab/powershell)
 
-<div class="tab-pane fade in active" id="ps-script-set-variable">
-<h6>PowerShell script</h6>
+**PowerShell script**
 
-<p>![PowerShell icon](../../../tasks/utility/_img/powershell.png) Set the `sauce` and `secretSauce` variables</p>
-<pre>
-<code class="language-ps">Write-Host "##vso[task.setvariable variable=sauce]crushed tomatoes"
+![icon](../../../tasks/utility/_img/powershell.png) Set the `sauce` and `secretSauce` variables
+
+```powershell
+Write-Host "##vso[task.setvariable variable=sauce]crushed tomatoes"
 Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with
             garlic"
-</code></pre><br/>
+```
 
-<p>![PowerShell icon](../../../tasks/utility/_img/powershell.png) Read the variables</p>
-<ul>
-<li>Arguments
-<pre>
-<code>-sauceArgument "$(sauce)" -secretSauceArgument "$(secretSauce)"
-</code></pre>
-</li>
-<li>Script
-<pre>
-<code class="language-ps">Param(
+![icon](../../../tasks/utility/_img/powershell.png) Read the variables
+
+Arguments
+
+```
+-sauceArgument "$(sauce)" -secretSauceArgument "$(secretSauce)"
+```
+
+Script
+
+```powershell
+Param(
    [string]$sauceArgument,
    [string]$secretSauceArgument
 )
@@ -76,41 +73,36 @@ Write-Host No problem reading $env:sauce or $sauceArgument
 Write-Host But I cannot read $env:secretSauce
 Write-Host But I can read $secretSauceArgument "(but the log is redacted so I do not
            spoil the secret)"
-</code></pre>
-</li>
-</ul>
+```
 
-</div>
+# [Shell](#tab/shell)
 
-<div class="tab-pane fade" id="shell-script-set-variable">
-<h6>Shell script</h6>
+![icon](../../../tasks/utility/_img/shell-script.png) Set the `sauce` and `secretSauce` variables
 
-<p>![icon](../../../tasks/utility/_img/shell-script.png) Set the `sauce` and `secretSauce` variables</p>
-<pre>
-<code class="language-bash">#!/bin/bash
+```bash
+#!/bin/bash
 echo "##vso[task.setvariable variable=sauce]crushed tomatoes"
 echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
-</code></pre><br/>
+```
 
-<p>![icon](../../../tasks/utility/_img/shell-script.png) Read the variables</p>
-<ul>
-<li>Arguments
-<pre>
-<code>"$(sauce)" "$(secretSauce)"
-</code></pre>
-</li>
-<li>Script
-<pre>
-<code class="language-bash">#!/bin/bash
+![icon](../../../tasks/utility/_img/shell-script.png) Read the variables
+
+Arguments
+
+```
+"$(sauce)" "$(secretSauce)"
+```
+
+Script
+
+```bash
+#!/bin/bash
 echo "No problem reading $1 or $SAUCE"
 echo "But I cannot read $SECRETSAUCE"
 echo "But I can read $2 (but the log is redacted so I do not spoil the secret)"
-</code></pre>
-</li>
-</ul>
-</div>
+```
 
-</div></div><br/>
+---
 
 Console output from reading the variables:
 

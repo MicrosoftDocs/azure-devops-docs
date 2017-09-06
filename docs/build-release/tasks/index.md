@@ -13,22 +13,6 @@ ms.date: 08/18/2016
 
 **VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms400688%28v=vs.120%29.aspx)**
 
-[!INCLUDE [temp](../_shared/ci-cd-newbies.md)]
-
-<!--
-<div style="padding:5px;border-bottom:1px solid #ccc;font-family:Segoe UI;font-size:13px;margin-bottom:15px">
-
-![Definition edit panel header](../concepts/definitions/build/_img/_shared/definition-edit-panel-header.png)<br/>
-
-**[Build](#)**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Options](options.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Repository](repository.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Variables](variables.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Triggers](triggers.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [General](general.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Retention](retention.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [History](history.md)
-</div>
-
-![add build step button](../_shared/_img/add-build-step-button.png)
-
-Add steps to specify what you want to build, the tests to run, and all the other steps needed to complete the process. 
-
--->
-
 ## Build
 
 | Task | Versions |

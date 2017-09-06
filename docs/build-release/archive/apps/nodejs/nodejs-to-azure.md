@@ -13,8 +13,6 @@ ms.date: 08/04/2016
 
 **[VSTS](quick-to-azure.md) | TFS 2017 RTM**
 
-[!INCLUDE [temp](../../../_shared/ci-cd-newbies.md)]
-
 Here we'll show you how to define a continuous integration (CI) build process for your Node.js app. If you want to also continuously deploy (CD) your app to Azure, you'll be set up to make that happen after you're done creating this CI build process.
 
 ## Upload your code
