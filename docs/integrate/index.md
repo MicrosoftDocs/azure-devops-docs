@@ -20,7 +20,6 @@ Along with interacting with VSTS or TFS in your application, you can also integr
 Check out the quick starts to get you started:
 * [Create a bug](./quickstarts/create-bug-quickstart.md)
 * [Get work items using queries](./quickstarts/work-item-quickstart.md)
-* [Integrate with Jenkins](./quickstarts/jenkins-integrate-quickstart.md)
 
 
 ## Concepts

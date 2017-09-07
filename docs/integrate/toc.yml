@@ -6,8 +6,6 @@
     href: quickstarts/create-bug-quickstart.md
   - name: Query work items
     href: quickstarts/work-item-quickstart.md
-  - name: Integrate with Jenkins (TODO)
-    href: quickstarts/jenkins-integrate-quickstart.md
 - name: Samples
   items:
   - name: Samples
@@ -31,13 +29,13 @@
   - name: Authenticate with OAuth 2.0
     href: get-started/authentication/oauth.md
   - name: Create service hooks subscriptions programmatically
-    href: ../service-hooks/create-subscription.md?toc=/vsts/integrate/toc.json
+    href: ../service-hooks/create-subscription.md?toc=/vsts/integrate/toc.json&bc=/vsts/integrate/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Service hooks consumers and actions
-    href: ../service-hooks/consumers.md?toc=/vsts/integrate/toc.json
+    href: ../service-hooks/consumers.md?toc=/vsts/integrate/toc.json&bc=/vsts/integrate/breadcrumb/toc.json
   - name: Service hooks events
-    href: ../service-hooks/events.md?toc=/vsts/integrate/toc.json
+    href: ../service-hooks/events.md?toc=/vsts/integrate/toc.json&bc=/vsts/integrate/breadcrumb/toc.json
 - name: Troubleshooting
   items:
   - name: IIS Basic Authentication and PATs
@@ -45,8 +43,8 @@
 - name: Resources
   items:
   - name: REST API reference
-    href: https://review.docs.microsoft.com/en-us/rest/api/vsts/?branch=master
+    href: https://www.visualstudio.com/en-us/docs/integrate/api/overview
 - name: How to get help
-  href: ../extend/support/help.md?toc=/vsts/integrate/toc.json
+  href: ../extend/support/help.md?toc=/vsts/integrate/toc.json&bc=/vsts/integrate/breadcrumb/toc.json
 - name: Visual Studio extensions
   href: ide/extensions/overview.md
