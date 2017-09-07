@@ -35,7 +35,7 @@ so you can buy monthly TFS access for your team. To calculate pricing,
 [go to the Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=visual-studio-team-services), 
 or learn about [VSTS user pricing for Basic access](https://www.visualstudio.com/team-services/pricing/). 
 If you previously paid for Basic access through the Azure portal, 
-you can still [find those steps here](#update-paid-users-azure).
+you can still [find those steps here](faq-pay-for-basic-users.md#update-paid-users-azure).
 
 > <p><a data-toggle="collapse" href="#expando-need-more-vs-subs">Need more Visual Studio subscriptions? &#x25BC;</a></p>
 > <div class="collapse" id="expando-need-more-vs-subs">
@@ -68,12 +68,12 @@ you can still [find those steps here](#update-paid-users-azure).
 ## Before you start
 
 *	To manage users, you'll need VSTS 
-[project collection administrator or account owner permissions](#FindOwnerPCA).
+[project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).
 
 *	You'll need an Azure subscription 
 that you can link to your VSTS account for billing, 
 if your VSTS account isn't linked already. 
-[Which Azure subscriptions can I use?](#AzureMSDNSubscription)
+[Which Azure subscriptions can I use?](faq-pay-for-basic-users.md#AzureMSDNSubscription)
 
 	To use an existing Azure subscription for billing, 
 	you'll need at least Co-administrator permissions for that subscription. 
@@ -83,14 +83,14 @@ if your VSTS account isn't linked already.
 
 	If you don't have an Azure subscription, 
 	you can create a subscription when you start your purchase. 
-	Or [create your Azure subscription here before you start](https://account.windowsazure.com/subscriptions/). 
+	Or [create your Azure subscription here before you start](https://portal.azure.com). 
 	You'll get the necessary administrator permissions 
 	with your new subscription. 
 
 	Your VSTS account will reuse this Azure subscription 
 	when you make future purchases for your VSTS account 
 	from the [Visual Studio Marketplace](https://marketplace.visualstudio.com) 
-	or from Azure. [More about Azure subscriptions for billing](#billing)
+	or from Azure. [More about Azure subscriptions for billing](faq-pay-for-basic-users.md#billing)
 
 
 
@@ -111,7 +111,7 @@ if you have multiple accounts.
 	<p><a data-toggle="collapse" href="#expando-why-no-ts-account">Don't see your VSTS accounts? &#x25BC;</a></p>
 	<div class="collapse" id="expando-why-no-ts-account">
 	<p>To select your VSTS account here, you must have have VSTS 
-	[project collection administrator or account owner permissions](#FindOwnerPCA).	
+	[project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).	
 	</div>
 
 0.	Confirm the Azure subscription that you'll use for billing. 
@@ -120,7 +120,7 @@ if you have multiple accounts.
 	select the Azure subscription that you want to use.
 	Or if you don't have an Azure subscription, 
 	create a new subscription now to use for billing. 
-	[More about Azure subscriptions for billing](#billing)
+	[More about Azure subscriptions for billing](faq-pay-for-basic-users.md#billing)
 
 	![Confirm or select your Azure subscription](_img/buy-more-basic-access/confirm-azure-subscription-vs-marketplace.png)
 
@@ -162,7 +162,7 @@ Basic access from your VSTS account,
 you must reduce them too in the Visual Studio Marketplace. That way, 
 you're not charged for them when your next Azure billing cycle starts. 
 If you previously managed paid Basic access through the Azure portal, 
-you can still [find those steps here](#update-paid-users-azure).
+you can still [find those steps here](faq-pay-for-basic-users.md#update-paid-users-azure).
 
 > To reduce or cancel users who have paid Basic access for the next month, 
 > you must make your changes before the last day of the month. 
@@ -171,7 +171,7 @@ you can still [find those steps here](#update-paid-users-azure).
 ### Before you start
 
 *	You'll need VSTS 
-[project collection administrator or account owner permissions](#FindOwnerPCA).
+[project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).
 
 *	You'll need at least Co-administrator permissions for the Azure subscription 
 that's linked to your VSTS account for billing. If you don't have permissions, 
@@ -194,7 +194,7 @@ if you have multiple accounts.
 	<p><a data-toggle="collapse" href="#expando-why-no-ts-account">Don't see your VSTS accounts? &#x25BC;</a></p>
 	<div class="collapse" id="expando-why-no-ts-account">
 	<p>To select your VSTS account here, you must have have VSTS 
-	[project collection administrator or account owner permissions](#FindOwnerPCA).	
+	[project collection administrator or account owner permissions](faq-pay-for-basic-users.md#FindOwnerPCA).	
 	</div>
 
 0.	Update your total users who have paid Basic access. 
@@ -228,7 +228,3 @@ reduce this number to zero (0).
 
 	![Reassign user access levels, if necesary](_img/buy-more-basic-access/confirm-updated-basic-access-purchase-vs-marketplace.png)
 
-
-## Troubleshooting
-
-[Troubleshooting](faq-pay-for-basic-users.md)

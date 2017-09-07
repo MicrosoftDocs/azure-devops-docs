@@ -74,7 +74,7 @@ so you can perform the migration.
 [See steps here](https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator).
 
 
-[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
+[Why am I asked to choose between my work or school account and my personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
 
 ###	Set up your Microsoft account as global administrator in your source directory
@@ -86,7 +86,7 @@ so you can perform the migration.
 
 0.	Sign in to your VSTS account (```http://{youraccount}.visualstudio.com```) as the account owner. 
 
-	[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
+	[Why am I asked to choose between my work or school account and my personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
 0.	View your VSTS account users.
 
@@ -121,7 +121,7 @@ so they can get VSTS account access as directory members.
 
 [See steps here](https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator).
 
-[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
+[Why am I asked to choose between my work or school account and my personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
 
 ###	Set up your Microsoft account as a user administrator in the target directory

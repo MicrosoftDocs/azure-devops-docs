@@ -128,8 +128,8 @@ A: When you link your VSTS account to an Azure subscription,
 you select an eligible [Azure subscription](#AzureMSDNSubscription) 
 where you have Co-administrator permissions or greater. 
 If you don't have an Azure subscription, you can either 
-[sign up](https://account.windowsazure.com/Subscriptions) for a new one, 
-or have an Azure administrator [add you as Co-Administrator](#AddAzureAdmin) 
+[sign up](https://portal.azure.com) for a new one, 
+or have an Azure administrator [add you as Co-Administrator](add-backup-billing-managers.md) 
 to an Azure subscription that you can use to bill purchases. 
 
 Payment is set up with a credit card, or by invoice in some cases. 

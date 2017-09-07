@@ -100,8 +100,8 @@ Here are a few things you can do. See at a glance the estimated size of work for
 
 ![Kanban board, move an item](_img/ALM_CC_MoveCard.png)
 
->[!NOTE]  
-><b>Feature availability: </b> You can [reorder items within a column](#reorder-cards) from VSTS and the web portal for TFS 2015.1 and later versions.   
+> [!NOTE]  
+> ** Feature availability:** You can [reorder items within a column](../customize/reorder-cards.md#reorder-cards) from VSTS and the web portal for TFS 2015.1 and later versions.   
 
 Also, you can quickly update a field or reassign ownership directly from the board.
 

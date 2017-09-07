@@ -11,25 +11,25 @@ ms.date: 04/04/2017
 
 # Update a team project based on a MSF v4.2 process template 
 
-<b>TFS 2017 | TFS 2015 | TFS 2013</b> 
+**TFS 2017 | TFS 2015 | TFS 2013** 
 
->[!IMPORTANT]  
->This topic applies to team project that was created using a Microsoft Solutions Framework (MSF) version 4.2 process template and is defined on an on-premises Team Foundation Server (TFS). You only have to follow the procedures in this topic if you are upgrading a team project that you created with a process template provided with Visual Studio Team System 2008 Team Foundation Server, or one that does not contain the work item types Test Cases and Shared Steps.   
+> [!IMPORTANT]  
+> This topic applies to team project that was created using a Microsoft Solutions Framework (MSF) version 4.2 process template and is defined on an on-premises Team Foundation Server (TFS). You only have to follow the procedures in this topic if you are upgrading a team project that you created with a process template provided with Visual Studio Team System 2008 Team Foundation Server, or one that does not contain the work item types Test Cases and Shared Steps.   
 
 If you have upgraded from Visual Studio Team System 2008 Team Foundation Server to TFS 2013, you can update your team project manually. If your team project was based on a MSF version 4.2 process template, follow the procedures in this topic. After you apply these updates, you'll be able to access the new features described in [Configure features after an upgrade](../customize/configure-features-after-upgrade.md) as well as interface with Microsoft Test Manager.  
   
 These procedures will only support access to new features available with TFS 2012 and later versions. Additional work is required to add new queries or the latest reports, update customized reports, or access dashboards. For more information, see [Additional information about changes made when upgrading TFS](#additional_info).  
   
 **Update tasks required to access new features**:    
-1.  [Rename system fields](#rename_system)    
-2.  [(Agile only) Rename Scenario to User Story](#rename_scenario)    
-3.  [Download the latest version of MSF process template](#download)    
-4.  [Import link types](#import_link)    
-5.  [(Optional) Apply as needed customizations](#apply_customizations)    
-6.  [Import work item types](#import_wit)    
-7.  [Import the category file](#iimport_category)    
-8.  [Import the process configuration files](#import_configure)  
-9. [Verify access to new features](#verify)  
+1.  [Rename system fields](#1-rename-system-fields)    
+2.  [(Agile only) Rename Scenario to User Story](#2-agile-only-rename-the-scenario-work-item-type)    
+3.  [Download the latest version of MSF process template](#3-download-the-latest-version-of-msf-process-template)    
+4.  [Import link types](#4-import-link-types)    
+5.  [(Optional) Apply as needed customizations](#5-optional-apply-customizations-to-the-latest-versions-of-work-item-types)    
+6.  [Import work item types](#6-import-work-item-types)    
+7.  [Import the category file](#7-import-the-categories-file)    
+8.  [Import the process configuration files](#8-import-configure)  
+9. [Verify access to new features](#9-verify-access-to-new-features)  
   
 **Additional tasks required to interface with Microsoft Test Manager**:   
 1.  [Specify the bug type to be created in Microsoft Test Manager](#map_bug_type)    
@@ -46,8 +46,7 @@ These procedures will only support access to new features available with TFS 201
   
 For more information, see [Permission reference](../../security/permissions.md).  
   
-<a name="rename_system"></a> 
-##1. Rename system fields  
+## 1. Rename system fields  
  Because the friendly names of several system fields were renamed in Visual Studio Team Foundation Server 2010, you need to manually rename these fields in your team project collection. System fields that were renamed include System.AreaID, System.IterationID, System.HyperLinkCount, System.ExternalLinkCount, and System.AttachedFileCount.  
   
  Perform this task for each team project collection defined on the application-tier server you've upgraded.  
@@ -73,7 +72,7 @@ For more information, see [Permission reference](../../security/permissions.md).
      Use this format for *CollectionURL*: **http://ServerName:Port/VirtualDirectoryName/CollectionName**, for example: **http://srvalm:8080/tfs/DefaultCollection**.  
   
   
-##  <a name="rename_scenario"></a> 2. (Agile only) Rename the Scenario work item type  
+## 2. (Agile only) Rename the Scenario work item type  
  To minimize the amount of customizations you need to make, and to comply with future updates to the Agile process template, you should rename the Scenario work item type to User Story.  
   
 > [!NOTE]   
@@ -92,8 +91,7 @@ For more information, see [Permission reference](../../security/permissions.md).
   
  [Back to top](#top)  
   
-<a name="download"></a> 
-##3. Download the latest version of MSF process template  
+## 3. Download the latest version of MSF process template  
 
 - See [Download the latest process template](../guidance/manage-process-templates.md).  
   
@@ -102,8 +100,7 @@ For more information, see [Permission reference](../../security/permissions.md).
 >   
 > You can obtain the upgrade for TFS 2012 from the Microsoft download site: [Quarterly Update for Microsoft Visual Studio Team Foundation Server 2012](http://go.microsoft.com/fwlink/?LinkId=272181).   
   
-<a name="import_link"></a> 
-##4. Import link types  
+## 4. Import link types  
  Import the link types, SharedSteps and TestedBy, located in the LinkTypes folder in the process template that you downloaded in task 3.  
   
  Perform this task for each team project collection defined on your upgraded application-tier server.  
@@ -117,8 +114,7 @@ For more information, see [Permission reference](../../security/permissions.md).
   
      For *DirectoryPath*, specify the location of the LinkTypes folder for the process template that you downloaded. The directory path should follow this structure: *Drive*:\\*MSFTemplateFolder*\WorkItem Tracking\LinkTypes.  
   
-<a name="apply_customizations"></a> 
-##5. (Optional) Apply customizations to the latest versions of work item types  
+## 5. (Optional) Apply customizations to the latest versions of work item types  
  If you have customized any of the following work item types, you should update the latest version of these types with your customizations. The following tables summarize the fields removed and added in the latest versions of each process template.  
   
 ### Agile work item types  
@@ -144,8 +140,7 @@ For more information, see [Permission reference](../../security/permissions.md).
  To learn more about working with the artifacts that these process templates provide, see [Agile process](../guidance/agile-process.md) or [CMMI process](../guidance/cmmi-process.md).   
   
   
-<a name="import_wit"></a> 
-##6. Import work item types  
+## 6. Import work item types  
  Import the following work item types based on the process template you are working with.  
   
 -   **Agile**: Bug, Task, User Story, Test Case, Shared Steps, Code Review Request, Code Review Response, Feedback Request, Feedback Response  
@@ -166,10 +161,9 @@ For more information, see [Permission reference](../../security/permissions.md).
   
      For *DirectoryPath*, specify the directory location of the TypeDefinitions folder for the process template that you downloaded. The directory path should follow this structure: *Drive*:*MSFTemplateFolder* WorkItem TrackingTypeDefinitions.  
   
--   (Optional) Verify the work item types are accessible by opening Team Explorer or the web portal. You might have to [refresh the cache](../../connect/work-web-portal.md#refresh-web-portal) to see the changes.  
+-   (Optional) Verify the work item types are accessible by opening Team Explorer or the web portal. You might have to [refresh the cache](../../connect/work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json#refresh-web-portal) to see the changes.  
   
-<a name="import_category"></a> 
-##7. Import the categories file  
+## 7. Import the categories file  
  Import the category file located in the WorkItem Tracking folder of the process template that you downloaded. Categories support intelligent grouping of work item types. To learn more, see [Use categories to group work item types](use-categories-to-group-work-item-types.md).  
   
 -   In the Command Prompt window, type the following command, substituting your data for the arguments that are shown, and then choose the **ENTER** key.  
@@ -181,8 +175,7 @@ For more information, see [Permission reference](../../security/permissions.md).
      For *DirectoryPath*, specify the path to the WorkItem Tracking folder for the process template that you downloaded. The directory path should follow this structure: *Drive*:\\*MSFTemplateFolder*\WorkItem Tracking.  
   
   
-<a name="import_config"></a> 
-##8. Import the process configuration file  
+## 8. Import the process configuration file  
  The process configuration file determines the layout and features available through the backlog and board pages of the web portal. To use these pages, you must import the process configuration file.  
   
 -   Import the definition file for process configuration.  
@@ -194,7 +187,6 @@ For more information, see [Permission reference](../../security/permissions.md).
   
      For *DirectoryPath*, specify the path to the Process folder for the process template that you downloaded. The directory path should follow this structure: *Drive*:\\*TemplateFolder*\WorkItem Tracking\Process.  
   
-<a name="verify"></a> 
 ## 9. Verify access to new features  
 Open a web portal and [determine if all features are available to you](../customize/new-features-added.md).  
   
@@ -204,7 +196,6 @@ Open a web portal and [determine if all features are available to you](../custom
 ## Additional tasks to interface with Microsoft Test Manager  
  Perform the following tasks to complete the updates required to interface with Test Manager.  
   
-<a name="map_bug_type"></a> 
 ### 1. Specify the bug type to be created in Microsoft Test Manager  
  To support the automatic creation of a work item to track code defects or bugs that are found when a test team member uses Test Manager, you must specify the bug type to be used for your existing team project. The **tcm bugfieldmapping** command supports the import and export of a mapping file to the team project. The mapping file defines the type of work item to create and the three data fields to be filled by Test Manager. The three fields are reproducible steps, system information, and the build in which the defect was found. When a tester runs a test and finds a defect, they can create a bug in which the three fields are automatically filled.  
   
@@ -236,7 +227,6 @@ Open a web portal and [determine if all features are available to you](../custom
   
  
   
-<a name="grant_permissions"></a>
 ###  2. Grant permissions to test team members  
  You must grant permissions to team members who will manage test environments and test configurations, create and view test runs, and perform other tasks.  
   
@@ -260,14 +250,12 @@ Open a web portal and [determine if all features are available to you](../custom
   
 -   You can set project collection permissions from Team Explorer by choosing **Team, Team Project Collection Settings, Security**, by opening and using the administration console for Team Foundation, or by using the **TFSSecurity** and **tf** command-line tools. For more information, see [Add an administrator](../../security/set-project-collection-level-permissions.md).  
   
-<a name="launch_mtm"></a> 
-##3. Launch Microsoft Test Manager  
+## 3. Launch Microsoft Test Manager  
 After you have completed the upgrade tasks that are described earlier in this topic, you can start Microsoft Test Manager, connect to your project, and start to plan your test efforts. 
 
 >[!NOTE]  
 >Microsoft Test Manager is in the process of being deprecated. The web portal Test hub for TFS 2017 and later versions is a fully featured Test management solution which works across all platforms and with all browsers, we recommend you use the Test hub over Microsoft Test Manager for all your test management requirements. You can use Microsoft Test Manager to test your desktop applications by launching the Microsoft Test Runner (client) from the Test hub. To learn more, see [Guidance on Microsoft Test Manager usage](../../manual-test/mtm/guidance-mtm-usage.md). 
  
- <a name="additional_info"></a>  
 ##  Additional information about changes made when upgrading TFS  
 
  When you upgrade from Visual Studio Team System 2008 Team Foundation Server to TFS 2012, you receive updates made to both TFS 2010 and TFS 2012. There were a number of architectural changes made with the release of TFS 2010. To learn more about the changes made by upgrading to the latest version of TFS from Visual Studio Team System 2008 Team Foundation Server, see the following resources:  

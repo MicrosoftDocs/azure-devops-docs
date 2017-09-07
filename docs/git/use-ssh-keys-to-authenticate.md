@@ -60,12 +60,13 @@ for your private key when prompted&mdash;this provides another layer of security
 If you give a passphrase be sure to [configure the SSH agent](use-ssh-keys-to-authenticate.md#rememberpassphrase) to cache your passphrase so you don't have to enter it every time you connect.
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt;  ssh-keygen -C <font color="#F9FE64">"frank@fabrikam.com"</font><br/><font color="#63E463">Generating public/private rsa key pair.
-Enter file in which to save the key (/home/frank/.ssh/id_rsa): <font color="#F9FE64"> /home/frank/.ssh/id_rsa</font>
-Enter passphrase (empty for no passphrase): <font color="#F9FE64"> passphrase</font>
-Enter same passphrase again: <font color="#F9FE64"> passphrase</font>
+&gt;  ssh-keygen -C "frank@fabrikam.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/frank/.ssh/id_rsa): /home/frank/.ssh/id_rsa</font>
+Enter passphrase (empty for no passphrase): passphrase</font>
+Enter same passphrase again: passphrase
 Your identification has been saved in /home/frank/.ssh/id_rsa.
-Your public key has been saved in /home/frank/.ssh/id_rsa.pub.</font>
+Your public key has been saved in /home/frank/.ssh/id_rsa.pub.
 </pre>
 
 This produces the two keys needed for SSH authentication: your private key ( _id_rsa_ ) and the public key ( _id_rsa.pub_ ). It is important to never share the contents of your private key. If the private key is
@@ -102,21 +103,19 @@ user interface. Select **My security** in the menu that appears.
    
 0. Run `git clone` from the command prompt. 
 
-   <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-   &#062; git clone <font color="#F9FE64">ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_git/fabrikamtools</font>
-   </pre>
+   ```
+   git clone ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_git/fabrikamtools
+   ```
 
 SSH will ask you to verify that the SSH fingerprint for the server you are connecting to. You should verify that the shown fingerprint matches the fingerprint on the **SSH public keys**  page.
 SSH displays this fingerprint when it connects to an unknown host to protect you from [man-in-the-middle attacks](https://technet.microsoft.com/en-us/library/cc959354.aspx).
 Once you accept the host's fingerprint, SSH will not prompt you again unless the fingerprint changes. 
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&#062;  git clone <font color="#F9FE64">ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_git/fabrikamtools</font><br/><font color="#63E463">The authenticity of host 'fabrikops2.visualstudio.com (xxx.xxx.xxx.xxx)' can't be established.   
-RSA key fingerprint is SHA256:TqZxCdl9u3K2c52nhr4I+YwLTGxxVThi8GyF9Oi0BNxw.
-Are you sure you want to continue connecting (yes/no)? <font color="#F9FE64">yes</font> </font>
-</pre>
+```
+git clone ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_git/fabrikamtools
+```
 
-Git will clone the repo and set up the `origin` remote to connect with SSH for future Git commands. 
+When you are asked if you want to continue connecting, type `yes`. Git will clone the repo and set up the `origin` remote to connect with SSH for future Git commands. 
 
 > Avoid trouble: Windows users will need to [run a command](use-ssh-keys-to-authenticate.md#rememberpassphrase) to have Git reuse their SSH key passphrase. 
 
@@ -128,14 +127,15 @@ Git will clone the repo and set up the `origin` remote to connect with SSH for f
 Run the following command included in Git for Windows to start up the `ssh-agent` process in Powershell or the Windows Command Prompt. `ssh-agent` will cache
 your passphrase so you don't have to provide it every time you connect to your repo.
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; start-ssh-agent.cmd</pre>
+```
+start-ssh-agent.cmd
+```
 
 If you are using the Bash shell (including Git Bash), start ssh-agent with:
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; eval `ssh-agent`</pre>
-
+```
+eval `ssh-agent`
+```
 
 ### I use [PuTTY](http://www.putty.org/) as my SSH client and generated my keys with PuTTYgen. Can I use these keys with VSTS?
 
@@ -148,11 +148,10 @@ Copy you public key directly from the PuTTYgen window and paste into the **Key D
   You can verify the fingerprint of the public key uploaded with the one displayed in your profile through the following `ssh-keygen` command run against your public key using
   the `bash` command line. You will need to change the path and the public key filename if you are not using the defaults.
   
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&#062; ssh-keygen -l -E md5 -f <font color="#F9FE64">~/.ssh/id_rsa.pub</font>
-<font color="#63E463"> 2048 MD5:c8:d3:7b:f1:49:9d:c9:a9:38:e6:12:5e:ba:4f:c9:9a frank@fabrikam.com (RSA)</font>
-</pre>
-  
+```
+ssh-keygen -l -E md5 -f ~/.ssh/id_rsa.pub
+```
+
 You can then compare the MD5 signature to the one in your  profile. This is useful if you have connection problems or have concerns about incorrectly
 pasting in the public key into the **Key Data** field when adding the key to VSTS.
 
@@ -162,9 +161,9 @@ pasting in the public key into the **Key Data** field when adding the key to VST
  
 You'll need to update the `origin` remote in Git to change over from a HTTPS to SSH URL. Once you have the SSH clone URL, run the following command:
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; git remote set-url origin <font color="#F9FE64">ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_git/fabrikamtools</font>
-</pre>
+```
+git remote set-url origin ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_git/fabrikamtools
+```
 
 You can now run any Git command that connects to `origin`.
 
@@ -181,18 +180,21 @@ To use keys created with `ssh-keygen` in a different place than the default, you
 0. The keys must be in a folder that only you can read or edit. If the folder has wider permissions, SSH will not use the keys.
 0. You must let SSH know the location of the keys. You make SSH aware of keys through the `ssh-add` command, providing the full path to the private key. 
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; ssh-add <font color="#F9FE64">/home/frank/.ssh/id_frank.rsa</font></pre> 
+```
+ssh-add /home/frank/.ssh/id_frank.rsa 
+```
 
 On Windows, before running `ssh-add`, you will need to run the following command from included in Git for Windows:
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; start-ssh-agent.cmd</pre>
+```
+start-ssh-agent.cmd
+```
 
 This command runs in both Powershell and the Command Prompt. If you are using Git Bash, the command you need to use is:
 
-<pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-&gt; eval `ssh-agent`</pre>
+```
+eval `ssh-agent`
+```
 
 You can find `ssh-add` as part of the Git for Windows distribution and also run it in any shell environment on Windows. 
 

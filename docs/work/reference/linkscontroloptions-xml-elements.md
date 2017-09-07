@@ -144,7 +144,8 @@ The following code sample specifies the syntax used to code the Development link
 >[!NOTE]  
 >The link types, `Found in build` and `Integrated in build` are valid for VSTS.  
 
-```
+> [!div class="tabbedCodeSnippets"]
+```XML
 <Control Type="LinksControl" Label="Development">
    <LinksControlOptions ViewMode="Dynamic" ZeroDataExperience="Development" ShowCallToAction="true">
 	  <ListViewOptions GroupLinks="false">
@@ -169,7 +170,8 @@ The Related Work links control displays links to other work items in a set order
 
 The following code sample specifies the syntax used to support the Related Work links control. 
 
-```
+> [!div class="tabbedCodeSnippets"]
+```XML
 <Control Type="LinksControl" Name="Related Work">
    <LinksControlOptions>
       <LinkFilters>
@@ -199,7 +201,8 @@ You can include work and external links together in a single control, while also
 For example, the syntax below would create a control specifically designed to display test results and testing work items. 
 
 
-```
+> [!div class="tabbedCodeSnippets"]
+```XML
 <Control  Name="Test" Type=""LinksControl"">
    <LinksControlOptions>
 	  <ListViewOptions GroupLinks="true">
@@ -232,8 +235,7 @@ To import and export your changes, see [Customize the work item tracking web for
 
 The following table describes the **LinksControlOptions** element and its child elements. The syntax for the **LinksControlOptions** element is:  
 
-<pre><code>
-&lt;LinksControlOptions ViewMode="Static | Dynamic" ZeroDataExperience="Development" ShowCallToAction="true | false"   WorkItemFiltersScope="Project" &gt;
+<pre><code>&lt;LinksControlOptions ViewMode="Static | Dynamic" ZeroDataExperience="Development" ShowCallToAction="true | false"   WorkItemFiltersScope="Project" &gt;
    &lt;ListViewOptions GroupLinks="true | false" /&gt;
    &lt;LinkFilters&gt;     
       &lt;ExternalLinkFilter Type="ExternalLinkName" /&gt;
@@ -246,8 +248,7 @@ The following table describes the **LinksControlOptions** element and its child 
       &lt;Column RefName="FieldReferenceName"/&gt;
    &lt;/Columns&gt;
 &lt;/LinksControlOptions&gt;
-</code>
-</pre>
+</code></pre>
 
  
   
@@ -286,7 +287,7 @@ The following table describes the **LinksControlOptions** element and its child 
 <p>Examples of external link types you can specify include: ```Fixed in Changeset```, ```Fixed in Commit```, ```Source Code File```, ```Pull Request```, and ```Hyperlink```. See [External link types](link-type-element-reference.md#external-link-types) for a complete list. </p>
 
 <p>Specify ```System.IncludeAllExternalLinks``` to include all external link types.</p>
-<blockquote style="font-size: 13px"><b>Note: </b>When you specify  ```System.IncludeAllExternalLinks```, the system displays all links in alphabetical order by external link type. 
+<blockquote><b>Note: </b>When you specify  ```System.IncludeAllExternalLinks```, the system displays all links in alphabetical order by external link type. 
 </blockquote>
 
 </td>
@@ -355,14 +356,12 @@ The following table describes the **LinksControlOptions** element and its child 
 &lt;/LinksControlOptions&gt;</code></pre>
 <p>All attributes are optional. Supported attributes include: </p>
 <ul>
-<li><p> <strong>ViewMode</strong>: Can be set to ```Dynamic``` (changing with size), `Grid`, or `List`.  Default is ```Dynamic```. These view modes correspond to those described earlier in this topic in [Responsive design and dynamic resizing](#dynamic-sizing).    </p></li>
-<li><p> <strong>ZeroDataExperience</strong>: Currently, only option is ```Development```. This option causes the call-to-action links to appear for development, such as *Create branch, Create a pull request,* and more. To learn more, see [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md).  </p></li>
+<li><p> <strong>ViewMode</strong>: Can be set to ```Dynamic``` (changing with size), `Grid`, or `List`.  Default is ```Dynamic```. These view modes correspond to those described earlier in this topic in [Responsive design and dynamic resizing](#dynamic-sizing).</p></li>
+<li><p><strong>ZeroDataExperience</strong>: Currently, only option is ```Development```. This option causes the call-to-action links to appear for development, such as *Create branch, Create a pull request,* and more. To learn more, see [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md).</p></li>
 <li><p> <strong>ShowCallToAction</strong>: Can be set to ```true```, normally is ```false```. Determines whether call-to-actions appear below linked artifacts. </p>
-
-<blockquote style="font-size: 13px"><b>Note: </b>Currently, the only supported call-to-action experience occurs when ```ZeroDataExperience="Development"```.
-</blockquote> 
-</li>
-<li><p> <strong>WorkItemFiltersScope</strong>: Can be set to ```Project```. When set to ```Project```, users can only link to work items within the current team project scope.  </p></li>
+<blockquote><b>Note: </b>Currently, the only supported call-to-action experience occurs when ```ZeroDataExperience="Development"```.
+</blockquote></li>
+<li><p> <strong>WorkItemFiltersScope</strong>: Can be set to ```Project```. When set to ```Project```, users can only link to work items within the current team project scope. </p></li>
 </ul>
 </td>
 </tr>

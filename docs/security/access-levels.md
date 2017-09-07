@@ -57,7 +57,7 @@ Assign **VS Enterprise** to those users for whom you've purchased Visual Studio 
 For TFS 2017 and earlier versions, you should assign the **Advanced** level to those users for whom you've purchased the full Test feature set. Here are the purchasing options:  
 - Higher-level Visual Studio subscriptions: Visual Studio Test Professional, Visual Studio Enterprise, or MSDN platform subscriptions.
 These include a TFS CAL plus the rights to access the full set of Test features.  
-- A paid VSTS user (which includes a TFS CAL) plus the [Test Manager extension](#test-manager). 
+- A paid VSTS user (which includes a TFS CAL) plus the [Test Manager extension](change-access-levels.md#test-manager). 
 
 For TFS 2017.2, Assign **Advanced** access to those users for whom you've purchased MSDN Platform or Visual Studio Test Professional subscriptions. These include a TFS CAL plus the rights to access Test Manager. To learn more, see [Get extensions for TFS, Assign paid extension access to users](../marketplace/get-tfs-extensions.md#assign-extension).
 	
@@ -74,4 +74,23 @@ For TFS 2017.2, Assign **Advanced** access to those users for whom you've purcha
 > The **Advanced** access level is deprecated for TFS 2017 and later versions of TFS. Use the **VS Enterprise** access level only for active Visual Studio Enterprise subscribers. For MSDN Platforms and Visual Studio Test Professional with MSDN subscribers needing access to the Test hub, assign them to the Advanced access level and the Test Manager extension.  
  
  
+<a id="test-manager"  >  </a>
+## Access to the Test hub and Marketplace extensions
 
+Full access to the Test hub requires Advanced (TFS 2015) or VS Enterprise (TFS 2017) access . Visual Studio Test Professional plus the Test hub features in the TFS web portal are managed through Visual Studio VSTS, Azure billing services, and purchase of Test Manager extensions from the Marketplace.  
+
+To learn how to grant access to an extensions, see [Get extensions for TFS](../marketplace/get-tfs-extensions.md).  
+
+## What features are accessible to users who belong to two different groups?
+If a user belongs to a group that has Basic access and another group that has Advanced access, the user has access to all features available through Advanced, which is a superset of Basic.
+
+## Service account access  
+[TFS service accounts](../tfs-server/admin/service-accounts-dependencies-tfs.md) are added to the default access level. If you make Stakeholder the default access level, you must set the TFS service accounts to Basic or Advanced/VS Enterprise access.  
+
+Service accounts don't require a TFS CAL or other purchase.  
+
+## Related notes  
+
+- [Change access levels](change-access-levels.md)
+- [Permissions & access](permissions-access.md)  
+- [Work in the web portal](../connect/work-web-portal.md)  

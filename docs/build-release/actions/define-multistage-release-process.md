@@ -33,66 +33,77 @@ In this tutorial, you learn about:
 > * Adding approvals to your release pipeline
 > * Creating a release and monitoring the deployment to each environment
 
-<!--
-
 [What's the difference between a release definition and a release?](../concepts/releases/index.md)
+
+## Prerequisites
 
 [!INCLUDE [include](_shared/build-prerequisites.md)]
 
-This tutorial requires you to have completed the tutorial 
-[Define your continuous integration (CI) build process](define-ci-build-process.md)
-first. This tutorial extends that one by using the same set of build artifacts
-from the build definition. You also need four separate Azure App Services websites
-where you will deploy each stage of the app pipeline.
+You'll need a CI build that publishes your Web Deploy package. To set up CI for your specific type of app, see:
 
-Start by configuring three more Azure App Services web apps so that you have four in all.
-Give the new ones names such as **SampleApp-Test**, **SampleApp-QA**, and **SampleApp-Prod**.
-You will need to adapt the names so that they are unique in App Services - perhaps
-by adding your initials and a number to each one.
-Use the following steps to create each one.
+* [Build your ASP.NET 4 app](../apps/aspnet/build-aspnet-4.md)
 
-[!INCLUDE [create-azure-web-app-portal](../../deploy-azure/_shared/create-azure-web-app-portal.md)]
+* [Build your ASP.NET Core app](../apps/aspnet/build-aspnet-core.md)
 
-## Add test, QA, and production environments to the release definition
+* [Build your Node app with Gulp](../apps/nodejs/build-gulp.md)
 
-[TBD]
+In addition, you need two Azure web app instances where you will deploy the app.
+You will have to choose names that are unique, but it's a good idea to include
+"QA" in the name of one, and "Production" in the name of the other, so that you
+can easily identify them. If you need help, follow the steps in
+[this example](../../deploy-azure/aspnet-core-to-azure-webapp.md#create-webapp-portal).
 
-[Where can I learn more about adding new environments?](../actions/work-with-release-definitions.md#add-envir)
+## Import a release definition
 
-## Configure a fork and join release pipeline
+To simplify the setup for this tutorial, you will import an existing release definition.
 
-[TBD]
+1. Download the sample release definition from the following URL and save it on your disk:
 
-[Where can I learn more about release triggers?](../concepts/definitions/release/triggers.md)
+   ```URL
+   insert GitHub URL for release definition
+   ```
 
-## Add an approval requirement for release to production
+1. In the **Build &amp; Release** hub, open the **Releases** tab. Open the **+** drop-down list and choose **Import release definition**.
 
-[TBD]
+   ![Importing a release definition](_img/define-multistage-release-process/import-release-def.png)
+   
+1. Select the release definition you downloaded and choose **Import**.
+   
+1. Choose the artifact item in the **Artifacts** section of the release definition. If your
+   existing build artifact is not shown, use the settings in the **Artifacts** panel to select it.
 
-[Where can I learn more about approvals?](../concepts/definitions/release/environments.md#approvals)
+   ![Selecting an artifact to deploy](_img/define-multistage-release-process/check-build-artifacts.png)
+   
+1. Open the **Tasks** tab and select the **Run on agent** item. In the properties panel, set the **Agent queue** to **Hosted VS2017**.
 
-## Update your code to create a new release
+   ![Selecting the agent queue](_img/define-multistage-release-process/select-queue.png)
 
-[!INCLUDE [change-aspnet-core-code](../apps/_shared/change-aspnet-core-code.md)]
+1. Select the **Deploy Azure App Service** item. In the properteis panel, select your Azure subscription
+   and app service (the web app you created for the Production website). 
 
-## Monitor the deployment
+   ![Configuring the Deploy Azure App Service task](_img/define-multistage-release-process/configure-appservice-task.png)
 
-Open the **Releases** page from the **Build &amp; Release** hub.
+1. Save the release definition.
 
-Wait a few minutes for the build to complete and the release to start.
+   ![Save the release definition](../../deploy-azure/_shared/_img/customize-cd-process/save-definition.png)
 
-Refresh the page and, when it appears, select the new release
+1. Open the **+ Release** drop-down list and choose **Create release**.
 
-Open the release summary from the shortcut menu.
+   ![Creating a new release](../../deploy-azure/_shared/_img/customize-cd-process/create-release.png)
 
-Open **Logs** tab and watch deployment of the release. You will see the app deployed to the "dev" environment, and then to the "test" and "qa" environments in parallel
+1. Enter a description for the release, and check that the correct artifact is selected. Then choose **Queue**.
 
-When the release to the "QA" environment has completed, you will see a pop-up indicating that an approval is pending
+   ![Queuing the new release](../../deploy-azure/_shared/_img/customize-cd-process/queue-release.png)
 
-Notice that the deployment to "prod" has not yet occurred. Approve the release and you see it deployed to the "prod" environment
+1. After a few moments, a banner appears indicating that the new release was created.
+   Choose the link (the name of the release).
 
-Open **Summary** tab, view results
+   ![The link to the newly created release](../../deploy-azure/_shared/_img/customize-cd-process/release-link.png)
 
-Choose environment name, drill down each environment.
+1. Check that the release was successfully deployed to the Production web app.
 
--->
+   ![The release summary](_img/define-multistage-release-process/release-summary.png)
+
+[!INCLUDE [customize-process-sections](../../deploy-azure/_shared/customize-process-sections.md)]
+
+

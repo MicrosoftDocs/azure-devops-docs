@@ -34,7 +34,8 @@ The `LinksControlOptions` element is a child element of the `CONTROL` element.
 
 ## Syntax  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <LinksControlOptions>  
    <WorkItemLinkFilters FilterType="include | exclude | includeAll | excludeAll">  
        <Filter LinkType="linkTypeRefName" FilterOn="reversename | forwardname" />  
@@ -85,20 +86,17 @@ The `LinksControlOptions` element is a child element of the `CONTROL` element.
 |[Control](control-xml-element-reference.md)|Required. Defines a field, text, hyperlink, or other control element to appear on the work item form.|  
   
 ## Remarks  
- `LinksControlOptions` is an optional child element of `Control` element where `ControlType="LinksControl"`. You can use the `LinksControlOptions` element to support the following actions:  
-  
+`LinksControlOptions` is an optional child element of `Control` element where `ControlType="LinksControl"`. You can use the `LinksControlOptions` element to support the following actions:   
 -   Specify the restrictions that govern the creation of relationships to other work items based on the link type and, optionally, the forward and reverse names of the link types.  
-  
--   Specify the restrictions that govern the creation of relationships to objects other than work items, such as changeset, hyperlink, and so on, based on external link types.  
-  
--   Specify the restrictions that govern the creation of relationships to other work items based on work item type and, optionally, the team project where those work items are defined.  
-  
+-   Specify the restrictions that govern the creation of relationships to objects other than work items, such as changeset, hyperlink, and so on, based on external link types.   
+-   Specify the restrictions that govern the creation of relationships to other work items based on work item type and, optionally, the team project where those work items are defined.    
 -   Specify the default column fields that you want to display information for the link list.  
   
 ## Example  
  The following example specifies how to enable the creation of links whose type is `Microsoft.VSTS.Common.TestedBy` and show the `Forward Name` for this link type. The filter options disallow creation of links to all external link types. In addition, displayed default column fields for the listed links correspond to the following friendly names: ID, Work Item Type, Title, Assigned To, State, and the Comment field defined for the link. For more examples, see [Define link controls to restrict link relationships](define-link-controls.md).  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <Control Type="LinksControl" Name="TestedBy" Label="&Work items testing this bug:" LabelPosition="Top">  
    <LinksControlOptions>  
       <WorkItemLinkFilters FilterType="include">  
@@ -119,23 +117,22 @@ The `LinksControlOptions` element is a child element of the `CONTROL` element.
    </LinksControlOptions>  
 </Control>  
 ```  
+
+<a name="Toolbar"></a>   
+##  LinksControl toolbar buttons  
+Each `Control` element of Type=LinksControl provides a toolbar, which contains the buttons shown in the next illustration:  
   
-##  <a name="Toolbar"></a> LinksControl toolbar buttons  
- Each `Control` element of Type=LinksControl provides a toolbar, which contains the buttons shown in the next illustration:  
+![Work item form link toolbar controls](_img/procguid_linktoolbar.png "ProcGuid_LinkToolbar")  
   
- ![Work item form link toolbar controls](_img/procguid_linktoolbar.png "ProcGuid_LinkToolbar")  
+These buttons become available only after you perform a specific action:  
   
- These buttons become available only after you perform a specific action:  
-  
--   The button to create a work item that is linked to the open work item (![Add New Linked Work Item icon](_img/icon_addnewlinkedworkitem.png "Icon_addNewLinkedWorkItem")) becomes available only after you save the open work item.  
-  
--   The buttons to open the list of work items in a query (![Open in Query](_img/icon_openinquery.png "Icon_openInQuery")) and in a Microsoft Office client (![Open in Office](_img/wit_iconoffice.png "WIT_IconOffice")) become available only when at least one work item is listed in the links control tab.  
-  
+-   The button to create a work item that is linked to the open work item (![Add New Linked Work Item icon](_img/icon_addnewlinkedworkitem.png "Icon_addNewLinkedWorkItem")) becomes available only after you save the open work item.    
+-   The buttons to open the list of work items in a query (![Open in Query](_img/icon_openinquery.png "Icon_openInQuery")) and in a Microsoft Office client (![Open in Office](_img/wit_iconoffice.png "WIT_IconOffice")) become available only when at least one work item is listed in the links control tab.   
 -   The buttons to open a work item (![Open Work Item](_img/icon_openworkitem.png "Icon_openWorkItem")), edit a link (![Edit link](_img/icon_witlinkedit.png "Icon_WITLinkEdit")), and delete a link (![Delete link](_img/icon_witlinkdelete.png "Icon_WITLinkDelete")) become available only after you click one or more work items listed in the links control tab.  
   
- The links control that is displayed is the same for both the web portal and Team Explorer, except when it is configured to only render `Storyboard` links. In that case, the toolbar only contains those controls to add a new link, open the linked item, and delete the link. Also, the the web portal version displays the **Start Storyboarding** link within the control menu.  
+The links control that is displayed is the same for both the web portal and Team Explorer, except when it is configured to only render `Storyboard` links. In that case, the toolbar only contains those controls to add a new link, open the linked item, and delete the link. Also, the the web portal version displays the **Start Storyboarding** link within the control menu.  
   
- ![Storyboard links control](_img/alm_twa_storyboard_linkscontrol.png "ALM_TWA_Storyboard_LinksControl")  
+![Storyboard links control](_img/alm_twa_storyboard_linkscontrol.png "ALM_TWA_Storyboard_LinksControl")  
   
 
   
@@ -144,184 +141,3 @@ The `LinksControlOptions` element is a child element of the `CONTROL` element.
 -  [Define link controls to restrict link relationships](define-link-controls.md)
 -  [Specify work item form controls](specify-work-item-form-controls.md)  
  
-<!---
-## Schema Definitions  
-  
--   [LinksControlOptionsType](#LinksControlOptionsType)  
-  
--   [WorkItemLinkFiltersType](#WorkItemLinkFiltersType)  
-  
--   [WorkItemLinkFilterElementType](#WorkItemLinkFilterElementType)  
-  
--   [ExternalLinkFiltersType](#ExternalLinkFiltersType)  
-  
--   [ExternalLinkFilterElementType](#ExternalLinkFilterElementType)  
-  
--   [LinksControlFilterKind](#LinksControlFilterOnKind)  
-  
--   [LinksControlFilterOnKind](#LinksControlFilterOnKind)  
-  
--   [ExternalLinkTypeName](#ExternalLinkTypeName)  
-  
--   [LinksControlWorkItemTypeFiltersElementType](#LinksControlWorkItemTypeFiltersElementType)  
-  
--   [LinksControlWorkItemTypeFilterElementType](#LinksControlWorkItemTypeFilterElementType)  
-  
--   [LinksControlWorkItemTypeFilterScopeKind](#LinksControlWorkItemTypeFilterScopeKind)  
-  
--   [LinksControlWorkItemTypeFilterKind](#LinksControlWorkItemTypeFilterKind)  
-  
--   [LinkColumnsType](#LinkColumnsType)  
-  
--   [LinkColumnType](#LinkColumnsType)  
-  
-###  <a name="LinksControlOptionsType"></a> LinksControlOptionsType  
-  
-```  
-<xs:complexType name="LinksControlOptionsType">  
-   <xs:all>  
-      <xs:element name="LinkColumns" type="LinkColumnsType" minOccurs="0" maxOccurs="1" />  
-      <xs:element name="WorkItemLinkFilters" type="WorkItemLinkFiltersType" minOccurs="0" maxOccurs="1"/>  
-      <xs:element name="ExternalLinkFilters" type="ExternalLinkFiltersType" minOccurs="0" maxOccurs="1" />  
-      <xs:element name="WorkItemTypeFilters" type="LinksControlWorkItemTypeFiltersElementType" minOccurs="0" maxOccurs="1" />  
-   </xs:all>  
-</xs:complexType>  
-```  
-  
-###  <a name="WorkItemLinkFiltersType"></a> WorkItemLinkFiltersType  
-  
-```  
-<xs:complexType name="WorkItemLinkFiltersType" >  
-   <xs:sequence>  
-      <xs:element name="Filter" type="WorkItemLinkFilterElementType" minOccurs="0" maxOccurs="unbounded"/>  
-   </xs:sequence>  
-      <xs:attribute name="FilterType" type="LinksControlFilterKind" use="required" />  
-</xs:complexType>  
-```  
-  
-###  <a name="WorkItemLinkFilterElementType"></a> WorkItemLinkFilterElementType  
-  
-```  
-<xs:complexType name="WorkItemLinkFilterElementType" >  
-   <xs:attribute name="LinkType" type="typelib:ReferenceFieldName" use="required" />  
-   <xs:attribute name="FilterOn" type="LinksControlFilterOnKind" use="optional" />  
-</xs:complexType>  
-```  
-  
-###  <a name="ExternalLinkFiltersType"></a> ExternalLinkFiltersType  
-  
-```  
-<xs:complexType name="ExternalLinkFiltersType" >  
-   <xs:sequence>  
-      <xs:element name="Filter" type="ExternalLinkFilterElementType" minOccurs="0" maxOccurs="unbounded"/>  
-   </xs:sequence>  
-      <xs:attribute name="FilterType" type="LinksControlFilterKind" use="required" />  
-</xs:complexType>  
-```  
-  
-###  <a name="ExternalLinkFilterElementType"></a> ExternalLinkFilterElementType  
-  
-```  
-<xs:complexType name="ExternalLinkFilterElementType" >  
-   <xs:attribute name="LinkType" type="ExternalLinkTypeName" use="required" />  
-</xs:complexType>  
-```  
-  
-###  <a name="LinksControlFilterKind"></a> LinksControlFilterKind  
-  
-```  
-<xs:simpleType name="LinksControlFilterKind">  
-   <xs:restriction base="xs:string">  
-      <xs:enumeration value="include" />  
-      <xs:enumeration value="exclude" />  
-      <xs:enumeration value="includeAll" />  
-      <xs:enumeration value="excludeAll" />  
-   </xs:restriction>  
-</xs:simpleType>  
-```  
-  
-###  <a name="LinksControlFilterOnKind"></a> LinksControlFilterOnKind  
-  
-```  
-<xs:simpleType name="LinksControlFilterOnKind">  
-   <xs:restriction base="xs:string">  
-      <xs:enumeration value="forwardname" />  
-      <xs:enumeration value="reversename" />  
-   </xs:restriction>  
-</xs:simpleType>  
-```  
-  
-###  <a name="ExternalLinkTypeName"></a> ExternalLinkTypeName  
-  
-```  
-<xs:simpleType name="ExternalLinkTypeName">  
-   <xs:restriction base="xs:string">  
-      <xs:minLength value="1"/>  
-      <xs:maxLength value="128"/>  
-   </xs:restriction>  
-</xs:simpleType>  
-```  
-  
-###  <a name="LinksControlWorkItemTypeFiltersElementType"></a> LinksControlWorkItemTypeFiltersElementType  
-  
-```  
-<xs:complexType name="LinksControlWorkItemTypeFiltersElementType" >  
-   <xs:sequence>  
-      <xs:element name="Filter" type="LinksControlWorkItemTypeFilterElementType" minOccurs="0" maxOccurs="unbounded"/>  
-   </xs:sequence>  
-      <xs:attribute name="Scope" type="LinksControlWorkItemTypeFilterScopeKind" use="optional" />  
-      <xs:attribute name="FilterType" type="LinksControlWorkItemTypeFilterKind" use="required" />  
-</xs:complexType>  
-```  
-  
-###  <a name="LinksControlWorkItemTypeFilterElementType"></a> LinksControlWorkItemTypeFilterElementType  
-  
-```  
-<xs:complexType name="LinksControlWorkItemTypeFilterElementType" >  
-   <xs:attribute name="WorkItemType" type="typelib:NonEmptyPlainConstant" use="required" />  
-</xs:complexType>  
-```  
-  
-###  <a name="LinksControlWorkItemTypeFilterScopeKind"></a> LinksControlWorkItemTypeFilterScopeKind  
-  
-```  
-<xs:simpleType name="LinksControlWorkItemTypeFilterScopeKind">  
-   <xs:restriction base="xs:string">  
-   <xs:enumeration value="project" />  
-   <xs:enumeration value="all" />  
-</xs:restriction>  
-</xs:simpleType>  
-```  
-  
-###  <a name="LinksControlWorkItemTypeFilterKind"></a> LinksControlWorkItemTypeFilterKind  
-  
-```  
-<xs:simpleType name="LinksControlWorkItemTypeFilterKind">  
-   <xs:restriction base="xs:string">  
-      <xs:enumeration value="include" />  
-      <xs:enumeration value="exclude" />  
-      <xs:enumeration value="includeAll" />  
-   </xs:restriction>  
-</xs:simpleType>  
-```  
-  
-###  <a name="LinkColumnsType"></a> LinkColumnsType  
-  
-```  
-<xs:complexType name="LinkColumnsType" >  
-   <xs:sequence>  
-      <xs:element name="LinkColumn" type="LinkColumnType" minOccurs="1" maxOccurs="unbounded"/>  
-   </xs:sequence>  
-</xs:complexType>  
-```  
-  
-###  <a name="LinkColumnType"></a> LinkColumnType  
-  
-```  
-<xs:complexType name="LinkColumnType" >  
-   <!-- Must be one or the other, but not both -->  
-      <xs:attribute name="LinkAttribute" type="typelib:ReferenceFieldName" use="optional" />  
-      <xs:attribute name="RefName" type="typelib:ReferenceFieldName" use="optional" />  
-</xs:complexType>  
-```  
--->

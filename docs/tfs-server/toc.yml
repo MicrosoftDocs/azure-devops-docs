@@ -205,8 +205,6 @@
         href: ./migration/migration-post-import.md
       - name: Advanced migration topics
         href: ./migration/migration-advanced-topics.md
-      - name: Troubleshooting migration 
-        href: ./migration/migration-troubleshooting.md
   - name: Configure Lab Management for SCVMM environments
     href: ./admin/config-lab-scvmm-envs.md
   - name: Set up secure sockets layer
@@ -219,6 +217,10 @@
     href: ./install/install-proxy-setup-remote.md
   - name: Change site and certificate settings
     href: ../security/websitesettings.md?toc=/vsts/tfs-server/toc.json
+- name: Troubleshooting  
+  items:
+  - name: Troubleshooting migration 
+    href: ./migration/migration-troubleshooting.md
 - name: Reference
   items:
   - name: Requirements

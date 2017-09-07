@@ -49,27 +49,26 @@ The following topics describe fields that are used in common by several WITs, or
 > |-[Titles, IDs, and descriptive fields](../track/titles-ids-descriptions.md)<br/>- [History and revision changes](../track/history-and-auditing.md)<br/>- [Areas and iterations](../customize/set-area-paths.md)<br/> - [Assignments and account-specific fields](../track/query-by-workflow-changes.md)<br/> - [Planning, ranking, and priorities](../track/planning-ranking-priorities.md)<br/>- [Work estimates, activity, and other numeric fields](../track/query-numeric.md)<br/>- [Build and test integration fields](../track/build-test-integration.md)<br/>- [Links and attachment related fields](../track/linking-attachments.md) |- [Code Review Request](guidance-code-review-feedback-field-reference.md)<br/>- [Code Review Response](guidance-code-review-feedback-field-reference.md)<br/>- [Feedback Request](guidance-code-review-feedback-field-reference.md)<br/>- [Feedback Response](guidance-code-review-feedback-field-reference.md)<br/>- [Shared Steps](../track/build-test-integration.md)<br/>- [Test Case](../track/build-test-integration.md)|- [Requirements](cmmi/guidance-requirements-field-reference-cmmi.md)<br/>- [Bugs](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)<br/>- [Change Requests](cmmi/guidance-change-request-field-reference-cmmi.md)<br/>- [Issues](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md)<br/>- [Review Meetings](cmmi/guidance-review-meeting-field-reference-cmmi.md)<br/>- [Risks](cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md) |
 
 
-##Related notes
 
-- [Working with queries](../track/using-queries.md) 
-- [Create managed queries](../track/example-queries.md)
-- [Choose a process](choose-process.md)  
-- [Reportable fields reference](../reference/reportable-fields-reference.md) (on-premises TFS only)    
+<a id="field-reference">  </a>  
+## What is a field? How are field names used?  
 
-You can list the attributes of fields using the [**witadmin listfields** command](../reference/witadmin/manage-work-item-fields.md). 
+A work item field name uniquely identifies each work item field. Make sure your field names fall within these guidelines:  
 
-### VSTSand the Inheritance process model  
-To add fields to a process, modify select field attributes, and review fields added to a process, see [Customize a process](../process/customize-process.md).  
+- Field names must be unique within the account/project collection  
+- Field names must be 128 or fewer Unicode characters  
+- Field names can't contain any leading or trailing spaces, nor two or more consecutive spaces  
+- Field names must contain at least one alphabetic character  
+- Field names can't contain the following characters: ```.,;'`:~\/\*|?"&%$!+=()[]{}<>```.   
 
-Also, you can [view the list of fields defined for a process](../process/customize-process.md) and the WITs which reference them. 
+Because custom fields are defined for the account collection, you can't add a custom field to a process with the same field name that you add to another inherited process.  
 
-
-### TFS   
-You can change the field name, the index, and the report attributes for any field except system fields by using the **witadmin** command-line tool. For more information, see [Manage work item fields-witadmin](../reference/witadmin/manage-work-item-fields.md).  
-
+When adding custom fields, note the following limits:  
+*   A maximum of 256 fields can be defined for each WIT  
+*   A maximum of 512 fields can be defined per process   
 
 <a id="wi-explorer">  </a>
-### Hidden field attributes and the Work Item Field Explorer 
+## Hidden field attributes and the Work Item Field Explorer 
 
 There are several non-changeable and virtually hidden attributes for each field. You can look up the assignments of these fields using the Work Item Field Explorer tool.  
 
@@ -80,4 +79,24 @@ For a description of each attribute, see this post: [Work Item Field Attributes 
 To access the Work Item Field Explorer, you must install the Process Editor (requires that you have installed a version of Visual Studio):
  - For TFS 2017 and later versions, [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../process/new-work-item-experience.md). 
  - For TFS 2015 and earlier versions, install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
+
+
+
+## Related notes
+
+- [Create managed queries](../track/example-queries.md)
+- [Define a query](../track/using-queries.md) 
+- [Choose a process](choose-process.md)  
+- [Reportable fields reference](../reference/reportable-fields-reference.md) (on-premises TFS only)    
+
+You can list the attributes of fields using the [**witadmin listfields** command](../reference/witadmin/manage-work-item-fields.md). 
+
+### VSTS and the Inheritance process model  
+To add fields to a process, modify select field attributes, and review fields added to a process, see [Customize a process](../process/customize-process.md).  
+
+Also, you can [view the list of fields defined for a process](../process/customize-process.md) and the WITs which reference them. 
+
+
+### TFS   
+You can change the field name, the index, and the report attributes for any field except system fields by using the **witadmin** command-line tool. For more information, see [Manage work item fields-witadmin](../reference/witadmin/manage-work-item-fields.md).  
 

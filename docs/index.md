@@ -191,7 +191,7 @@ ms.date: 07/26/2017
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/collaborate/index">READMEs &amp; Wikis</a></li>
                                         <li><a class="barLink" href="/vsts/search/index">Search</a></li>
-                                        <li><a class="barLink" href="/vsts/feedback/index">Feedback</a></li>
+                                        <li><a class="barLink" href="/vsts/collaborate/feedback/index">Feedback</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -771,7 +771,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/feedback/index">
+                                <a href="/vsts/collaborate/feedback/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

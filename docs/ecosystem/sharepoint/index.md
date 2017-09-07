@@ -1,12 +1,12 @@
 ---
-title: SharePoint integration documentation | TFS
+title: SharePoint Integration | TFS
 description: Index to topics for integrating or removing integration with SharePoint and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/02/2017
+ms.date: 09/05/2017
 ---
 
 # SharePoint Integration  
@@ -14,15 +14,18 @@ ms.date: 08/02/2017
 
 
 ## 5-Minute Quickstarts  
-- [Share information using the SharePoint portal](../../report/sharepoint-dashboards/share-information-using-the-project-portal.md)
-
+- [Share information using the SharePoint portal](../../report/sharepoint-dashboards/share-information-using-the-project-portal.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json)
+- [Manage documents and document libraries](../../report/sharepoint-dashboards/manage-documents-and-document-libraries.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json)  
 
 ## Step-by-Step Tutorials
 
-- [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)    
-- [Manage documents and document libraries](../../report/sharepoint-dashboards/manage-documents-and-document-libraries.md)  
-- [Configure or redirect process guidance](../../report/sharepoint-dashboards/configure-or-redirect-process-guidance.md)
+- [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json)    
+
+- [Configure or redirect process guidance](../../report/sharepoint-dashboards/configure-or-redirect-process-guidance.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json)
 
 
 
-   
+
+## Reference
+- [Project portal dashboards](../../report/sharepoint-dashboards/project-portal-dashboards.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json)
+- [Excel reports](../../report/excel/excel-reports.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json) 

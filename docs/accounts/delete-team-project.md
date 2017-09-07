@@ -12,7 +12,7 @@ ms.date: 08/11/2016
 
 # Delete a team project
 
-**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013** | **[Previous Versions](https://msdn.microsoft.com//library/ff357756(v=vs.110).aspx)**
+**VSTS** | **[Previous Versions](https://msdn.microsoft.com//library/ff357756(v=vs.110).aspx)**
 
 If you find that you have a team project you no longer use, you can delete it. Deleting a team project helps simplify the navigation to team projects that are in use.
 
@@ -30,7 +30,7 @@ You can delete a team project from Visual Studio Team Services or from an on-pre
 
 	<img src="_img/delete-team-project-select-actions-menu.png" alt="Open the actions menu for a team project" style="border: 1px solid #CCCCCC;" />  
 
-    If you don’t see the actions icon ![actions icon image](../work/_img/icons/actions-icon.png), either you’re not accessing VSTS or you’re not a member of the Project Collection Administrators group. For on-premises team projects, [go to the next section](#tfs). Otherwise, go [here](add-administrator-project-collection.md) to learn how to get added to the Project Collection Administrators group.
+    If you don’t see the actions icon ![actions icon image](../work/_img/icons/actions-icon.png), either you’re not accessing VSTS or you’re not a member of the Project Collection Administrators group.  Learn about [joining the Project Collection Administrators group](add-administrator-project-collection.md).
 
 3.  You must type the name of the team project in order to initiate the delete operation. 
 

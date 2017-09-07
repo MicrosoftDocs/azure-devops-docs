@@ -78,9 +78,8 @@ The rich text formatting toolbar appears above each text box that can be formatt
 
 The specific set of formatting features differs depending on the client you use. In all clients, you can bold, italicize, and underline text. You can also add and remove hyperlinks, format text as ordered or unordered lists, and add images. 
 
-### VSTS, TFS 2017 
-
-**Rich text formatting toolbar - VSTS &  TFS 2017 web portal** 
+# [Browser](#tab/browser)
+#### VSTS &  TFS 2017, Rich text formatting toolbar
 
 <img src="_img/rich-text-ui-team-services.png" alt="Rich text tool bar - VSTS" style="border: 2px solid #C3C3C3;" />
 
@@ -89,19 +88,15 @@ In VSTS, you can use the ![Remove format](../_img/icons/remove-formatting-icon.p
 > [!NOTE]  
 > The History field is no longer a rich-text field. To annotate the work item history, add to the Description or Discussion fields. 
 
-### TFS 2015, TFS 2013, TEE
-
 <a id="tfs-portal-rich-text" />
-
-**Rich text formatting toolbar - TFS web portal and Team Explorer Everywhere** 
+#### TFS 2015, TFS 2013, Team Explorer Everywhere, Rich text formatting toolbar 
 
 <img src="_img/rich-text-ui-web-portal.png" alt="Rich text tool bar - web portal" style="border: 2px solid #C3C3C3;" />
 
+# [Visual Studio](#tab/visual-studio) 
 
-### Visual Studio, Team Explorer 
 <a id="team-explorer-rich-text" />
-
-**Rich text formatting toolbar - Visual Studio** 
+#### Visual Studio, Rich text formatting toolbar
 
 <img src="_img/rich-text-ui-te.png" alt="Rich text tool bar - Team Explorer" style="border: 2px solid #C3C3C3;" />
 
@@ -116,7 +111,7 @@ You can also use the following shortcut keys to format your text:
 
 You can copy and paste HTML text or an image from another application directly into the text box using Ctrl+C and Ctrl+V shortcuts.
 
-
+---
 
 
 <a id="link-items"></a>
@@ -139,8 +134,8 @@ To help track a work item, use the ![Attachment tab icon](../backlogs/_img/icon-
 For example, you can attach a screen image that illustrates a problem, a line of code in a text file, a log, an e-mail thread, or a product feature's specification.
 
 <a id="team-services" />
-
-### Attachment control toolbar, VSTS &  TFS 2017 web portal 
+# [Browser](#tab/browser)
+#### VSTS &  TFS 2017, Attachment control toolbar 
 
 <img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal VSTS" style="border: 2px solid #C3C3C3;" />  
 
@@ -156,17 +151,17 @@ You can edit, open, save, or delete an attachment by clicking an attachment and 
 
 
 <a id="tfs-portal" />
-### Attachment control toolbar, TFS 2015 web portal and Team Explorer Everywhere
+#### TFS 2015, TFS 2013, & Team Explorer Everywhere, Attachment control toolbar 
 
 <img src="_img/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises TFS), and Eclipse" style="border: 2px solid #C3C3C3;" />  
 
 Click the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment. Click an item and then click ![open icon](../_img/icons/open-icon.png) to open the attachment or ![download icon](../_img/icons/download-icon.png) to save a copy.  
 
 
-
 <a id="team-explorer" />
+# [Visual Studio](#tab/visual-studio) 
 
-**Attachment control toolbar - Visual Studio Team Explorer** 
+#### Visual Studio Team Explorer, Attachment control toolbar
 
 <img src="_img/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises TFS), Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" />
 
@@ -181,6 +176,7 @@ Click one or more items and then right-click to open the menu options to downloa
 
 By default, the size of work item attachments is limited to 4 MB. For on-premises deployments, you can use the TFS web service to [increase the size of files you attach up to 2GB](https://msdn.microsoft.com/library/ms400780.aspx).
 
+---
 
 <a id="storyboard"></a>
 ## Storyboard 
@@ -193,8 +189,9 @@ By linking your storyboard to a work item, you provide your team access to the s
 
 
 <a id="team-services-storyboard" />
+# [Browser](#tab/browser)
 
-**Start storyboarding - VSTS & TFS 2017 web portal**
+#### VSTS & TFS 2017, Start storyboarding 
 
 You can open Storyboarding with PowerPoint from the ![actions icon](../_img/icons/actions-icon.png) actions menu within a work item form. 
 
@@ -205,7 +202,7 @@ To link to an existing storyboard, click the ![Links page icon](../_img/icons/ic
 
 <a id="tfs-portal-storyboard" />
 
-**Storyboards tab control - TFS 2015 web portal and Team Explorer Everywhere** 
+**TFS 2015, TFS 2013, & Team Explorer Everywhere, Storyboards tab control** 
 
 From the **Storyboards** tab, click Start Storyboarding to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
 
@@ -213,18 +210,21 @@ From the **Storyboards** tab, click Start Storyboarding to open Storyboarding wi
 
 
 <a id="team-explorer-storyboard" />
-
-**Storyboards tab control - Visual Studio Team Explorer** 
+# [Visual Studio](#tab/visual-studio) 
+#### Visual Studio, Storyboards tab control  
 
 <img src="_img/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
 
 To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoint](../office/storyboard-your-ideas-using-powerpoint.md).  
 
+---
 
 ## Related notes  
 
 As you can see, there are many ways to share information using work items alone. See these additional tools and features to support planning, tracking, and sharing information with your team.   
 
+- [Dashboards](../../report/dashboards.md)
+- [Add and edit a wiki](../../collaborate/add-edit-wiki.md)
 
 ### SharePoint project portal (on-premises TFS)  
 

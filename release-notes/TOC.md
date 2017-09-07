@@ -1,5 +1,7 @@
 # [Features timeline](index.md)
 # 2017
+## [August 28](2017/aug-28-team-services.md)
+## [August 4](2017/aug-04-team-services.md)
 ## [July 14](2017/jul-14-team-services.md)
 ## [June 22](2017/jun-22-team-services.md)
 ## [June 1](2017/jun-01-team-services.md)

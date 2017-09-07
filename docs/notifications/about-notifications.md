@@ -38,10 +38,10 @@ Notifications are sent by default to the preferred email address for your accoun
 
 If your team uses an external service to collaborate&mdash;such as Campfire, Flowdock, or Slack&mdash;you can configure notifications to be sent to these services. These services are supported out of the box:
 
-- [Campfire](/vsts/collaborate/campfire?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
-- [Flowdock](/vsts/collaborate/flowdock?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
-- [Hipchat](/vsts/collaborate/hipchat?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
-- [Slack](/vsts/collaborate/slack?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)  
+- [Campfire](../service-hooks/services/campfire.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
+- [Flowdock](../service-hooks/services/flowdock.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
+- [Hipchat](../service-hooks/services/hipchat.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
+- [Slack](../service-hooks/services/slack.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)  
 - [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams)
 
 You can also use a third-party service like Zapier to send notifications to hundreds of other services. Learn more about [Zapier and Team Services integration](../service-hooks/services/zapier.md).

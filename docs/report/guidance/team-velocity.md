@@ -126,7 +126,7 @@ Velocity will vary depending on team capacity, sprint over sprint. However, over
 	<img src="_img/team-velocity-chart-web-7-iterations.png" alt="Web portal, Velocity chart showing seven sprints of in progress and completed work" style="border: 2px solid #C3C3C3;" />
 
 	>[!NOTE]  
-	>Work items based on the [Scrum process](/vsts/work/guidance/scrum-process) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](/vsts/work/guidance/agile-process) and [CMMI](/vsts/work/guidance/cmmi-process) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/concepts/workflow-and-state-categories.md).
+	>Work items based on the [Scrum process](../../work/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../work/guidance/agile-process.md) and [CMMI](../../work/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/concepts/workflow-and-state-categories.md).
 	
 ## Required and recommended activities   
 
@@ -139,7 +139,7 @@ For your team to gain the greatest utility from the velocity chart or velocity w
 *	Update the status of backlog items once work starts and when completed. Only backlog items whose State maps to a metastate of In Progress or Done will show up on the velocity chart or velocity widget. 
 
 **Recommended:**  
-*	Define and size backlog items to [minimize variability](#minimize-variability).  
+*	Define and size backlog items to [minimize variability](velocity-guidance.md).  
 *	Determine how your team wants to [treat bugs](../../work/customize/show-bugs-on-backlog.md). If your team chooses to treat bugs like requirements, bugs will show up on the backlog and be counted within the Velocity chart and forecasting. 
 *	[Set your team's area path](../../work/customize/set-area-paths.md). The forecast tool will forecast those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.     
 *	Don't  create a hierarchy of backlog items and bugs. The Kanban board, sprint backlog, and task board only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. <br/>Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list─only creating parent-child links one level deep between items. Use [Features to group requirements or user stories](../../work/backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.  

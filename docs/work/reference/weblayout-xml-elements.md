@@ -41,7 +41,8 @@ In the new web form layout, the system manages the header elements shown below. 
 
 When you export a WIT definition, you'll see a **SystemControls** section at the beginning of the **WebLayout** section, similar to the following:
 
-```
+> [!div class="tabbedCodeSnippets"]
+```XML
 <WebLayout>
     <SystemControls>
       <Control Type="FieldControl" FieldName="System.Title" EmptyText="Enter title" />
@@ -76,7 +77,8 @@ You group elements to appear within a **Page** by using the **Section** and **Gr
 
 The following example specifies the syntax for the Details page shown previously in this topic. 
 
-```
+> [!div class="tabbedCodeSnippets"]
+```XML
 <FORM>
 . . .
   <WebLayout>
@@ -187,8 +189,7 @@ You nest the following elements:
 <tr>
 	<td><p>**Control**</p></td>
 	<td><p>Optional child element for a **Group** within **WebLayout**. Defines a field, text, hyperlink, or other control element to appear on the work item form.</p>
-<pre><code>
-&lt;Control FieldName=&quot;FieldName&quot; Type=&quot;DateTimeControl | ExtensionsControl | FieldControl | HtmlFieldControl | LabelControl | WebpageControl&quot; Label=&quot;LabelText&quot; EmptyText=&quot;TextString&quot; ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
+<pre><code>&lt;Control FieldName=&quot;FieldName&quot; Type=&quot;DateTimeControl | ExtensionsControl | FieldControl |<br/> HtmlFieldControl | LabelControl | WebpageControl&quot; Label=&quot;LabelText&quot; EmptyText=&quot;TextString&quot;<br/>  ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 </code></pre>
 
 <p>See [Control element attributes](#control-attributes) and [control type](#control-types) for information about each attribute.</p></td>
@@ -198,8 +199,7 @@ You nest the following elements:
 <tr>
 	<td><p>**ControlContribution**</p></td>
 	<td><p>Optional child element of **Group** within **WebLayout** used to secify a field-level work item extension to appear on the form.   </p>
-<pre><code>
-&lt;ControlContribution Id="ContributionId" Label="Name"  &gt;
+<pre><code>&lt;ControlContribution Id="ContributionId" Label="Name"  &gt;
    &lt;Inputs&gt;
       &lt;Input Id="FieldName" Value="Value" /&gt;
    &lt;/Inputs&gt;
@@ -212,8 +212,7 @@ You nest the following elements:
 <tr>
 	<td><p>**Extension**</p></td>
 	<td><p>Required child element for **Extensions**. Use to specify an extension ID of a work item control extension to display in the work item form. You must specify each extension that is used in the layout for a **ControlContribution**, **GroupContribution**, or **PageContribution** element. </p>
-<pre><code>
-&lt;Extension Id="ExtensionId" /&gt;
+<pre><code>&lt;Extension Id="ExtensionId" /&gt;
 </code></pre>
 
 <p>The *ExtensionId* you specify must be installed on the account or team project collection. The WIT definition files that you export contain a [list of installed extensions](#extensions).</p>
@@ -225,8 +224,7 @@ You nest the following elements:
 <tr>
 	<td><p>**Extensions**</p></td>
 	<td><p>Optional container child element of **WebLayout** used to support specifying one or more **Extension** elements. If extensions are used in the form, specify them prior to a **Page** element. </p>
-<pre><code>
-&lt;WebLayout &gt;
+<pre><code>&lt;WebLayout &gt;
    &lt;Extensions &gt;
        &lt;Extension Id="ExtensionId" /&gt;
       . . . 
@@ -259,8 +257,7 @@ You nest the following elements:
 <tr>
 	<td><p>**GroupContribution**</p></td>
 	<td><p>Optional child element of **Section** within  **WebLayout** used to specify a group-level work item extension to appear on the form. The extension will appear as a group within the form.   </p>
-<pre><code>
-&lt;GroupContribution Id="ContributionId" Label="Name" /&gt;
+<pre><code>&lt;GroupContribution Id="ContributionId" Label="Name" /&gt;
 </code></pre>
 <p>The *ContributionId* you specify must be installed on the account or team project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).</p>
 </td>
@@ -269,8 +266,7 @@ You nest the following elements:
 <tr>
 	<td><p>**Input**</p></td>
 	<td><p>Required child element for **Inputs** that specifies input data for an extension.  </p>
-<pre><code>
-&lt;Input Id="FieldName" Value="Value" /&gt;
+<pre><code>&lt;Input Id="FieldName" Value="Value" /&gt;
 </code></pre>
 </td>
 </tr>
@@ -279,10 +275,9 @@ You nest the following elements:
 <tr>
 	<td><p>**Inputs**</p></td>
 	<td><p>Optional container child element for **ControlContribution** used to support specification of input data for an extension.   </p>
-<pre><code>
-   &lt;Inputs&gt;
-      &lt;Input Id="FieldName" Value="Value" /&gt;
-   &lt;/Inputs&gt;
+<pre><code>&lt;Inputs&gt;
+   &lt;Input Id="FieldName" Value="Value" /&gt;
+&lt;/Inputs&gt;
 </code></pre>
 </td>
 </tr>
@@ -305,14 +300,11 @@ You nest the following elements:
 <tr>
 	<td><p>**PageContribution**</p></td>
 	<td><p>Optional child element of **WebLayout** used to specify a page-level work item extension to appear on the form. The extension will appear as a page within the form. </p>
-<pre><code>
-&lt;PageContribution Id="ContributionId" Label="Name"  /&gt;
+<pre><code>&lt;PageContribution Id="ContributionId" Label="Name"  /&gt;
 </code></pre>
 <p>The *ContributionId* you specify must be installed on the account or team project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).</p>
 </td>
 </tr>
-
-
 
 <tr>
 	<td><p>**Section**</p></td>
@@ -343,11 +335,9 @@ You nest the following elements:
 	&lt;Control Label="Links" Type="LinksControl" Name="Links" /&gt;
 	&lt;Control Label="Attachments" Type="AttachmentsControl" Name="Attachments" /&gt;
 &lt;/SystemControls&gt;</code></pre>
- 
 
 </td>
 </tr>
-
 <tr>
 	<td><p>**WebLayout**</p></td>
 	<td><p>Required child element of **FORM**. Defines the layout of the work item form displayed in the web portal. Includes one or more **Page** elements.</p>
@@ -372,8 +362,7 @@ You nest the following elements:
 
 You use the **Control** element to define a work item field, text, hyperlink, or other form type to display in a work item form. The **Control** element you specify within the **WebLayout** section should conform to the following syntax:
 
-<pre><code>
-&lt;Control FieldName=&quot;FieldName&quot; Type=&quot;DateTimeControl |  FieldControl | HtmlFieldControl | LabelControl | WebpageControl&quot; Label=&quot;LabelText&quot; LabelPosition=&quot;Top | Bottom | Left | Right&quot; EmptyText=&quot;TextString&quot; ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
+<pre><code>&lt;Control FieldName=&quot;FieldName&quot; Type=&quot;DateTimeControl |  FieldControl | HtmlFieldControl | LabelControl | WebpageControl&quot; Label=&quot;LabelText&quot; LabelPosition=&quot;Top | Bottom | Left | Right&quot; EmptyText=&quot;TextString&quot; ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 </code></pre>
 
 
@@ -396,14 +385,13 @@ You use the **Control** element to define a work item field, text, hyperlink, or
 <td><p> <strong>Type</strong> </p></td>
 <td><p>Required. Specifies the data type of the control. Specify a string from one of these built-in types: </p>
 <ul>
-<li><p> <strong>DateTimeControl</strong>: Use to display formatted date fields with a field type of <strong>DateTime</strong>.</p></li>
-<li><p><strong>FieldControl</strong>: Use to display Boolean, plain text, numeric fields, person-name fields, and pick lists. Supports fields with a data type of <strong>Boolean</strong>, <strong>Double</strong>, <strong>Identity</strong>, <strong>Integer</strong>,<strong>PlainText</strong>m and <strong>String</strong>.</p>
-<blockquote style="font-size: 13px"><b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017 and later versions.    
-</blockquote>
-</li>
-<li><p> <strong>HtmlFieldControl</strong>: Use to display multi-line, rich-text format of fields with a field type of <strong>HTML</strong>.</p></li>
-<li><p> <strong>LabelControl</strong>: Use to display text that is not associated with a field. The text can be plain or hyperlinked. You can specify additional controls using the <strong>LabelText</strong>, <strong>Link</strong> and <strong>Text</strong> elements.</p></li>
-<li><p> <strong>WebpageControl</strong>: Use to display HTML-based content defined by a URI or embedded within a CDATA tag. This control does not have an associated field or field type. You specify the content and links to display using the <strong>WebpageControlOptions</strong> element. </p></li>
+<li><strong>DateTimeControl</strong>: Use to display formatted date fields with a field type of <strong>DateTime</strong>.</li>
+<li><strong>FieldControl</strong>: Use to display Boolean, plain text, numeric fields, person-name fields, and pick lists. Supports fields with a data type of <strong>Boolean</strong>, <strong>Double</strong>, <strong>Identity</strong>, <strong>Integer</strong>,<strong>PlainText</strong>m and <strong>String</strong>.
+<blockquote><b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017 and later versions.    
+</blockquote></li>
+<li><strong>HtmlFieldControl</strong>: Use to display multi-line, rich-text format of fields with a field type of <strong>HTML</strong>.</li>
+<li><strong>LabelControl</strong>: Use to display text that is not associated with a field. The text can be plain or hyperlinked. You can specify additional controls using the <strong>LabelText</strong>, <strong>Link</strong> and <strong>Text</strong> elements.</li>
+<li><strong>WebpageControl</strong>: Use to display HTML-based content defined by a URI or embedded within a CDATA tag. This control does not have an associated field or field type. You specify the content and links to display using the <strong>WebpageControlOptions</strong> element.</li>
 </ul>
 </td>
 </tr>
@@ -414,25 +402,25 @@ You use the **Control** element to define a work item field, text, hyperlink, or
 <p>Optional. Specifies a text string between 1 and 255 characters in length that appears when a field is empty.</p></td>
 </tr>
 <tr>
-<td><p> <strong>Label</strong> </p></td>
-<td><p>Optional. Specifies the visible text on the form that identifies the control. Specify a string of no more than 80 characters. If unspecified, the friendly name of the ```FieldName``` is used.  </p></td>
+<td><strong>Label</strong></td>
+<td>Optional. Specifies the visible text on the form that identifies the control. Specify a string of no more than 80 characters. If unspecified, the friendly name of the ```FieldName``` is used. </td>
 </tr>
 <tr>
 </tr>
 
 <tr>
-<td><p> <strong>ReadOnly</strong> </p></td>
-<td><p>Optional. Specifies that the field is read-only:</p>
+<td><strong>ReadOnly</strong></td>
+<td>Optional. Specifies that the field is read-only:
 <ul>
-<li><p><strong>True</strong>: Control field is read-only.</p></li>
-<li><p><strong>False</strong>: Control field isn't read-only.</p></li>
+<li><strong>True</strong>: Control field is read-only.</li>
+<li><strong>False</strong>: Control field isn't read-only.</li>
 </ul>
 </td>
 </tr>
 <tr>
 <td><p><strong>Name</strong> </p></td>
 <td><p>Optional. Identifies a control uniquely. The <strong>Name</strong> is important if more than one control on the form is associated with the same work item field.  </p>
-<blockquote style="font-size: 13px"><b>Note:</b> You use the <strong>Name</strong> attribute when you want to have the same field displayed on more than one **Page** on the form. You specify a unique value for the <strong>Name</strong> attribute for both control entries so that the system identifies each control uniquely.   
+<blockquote><b>Note:</b> You use the <strong>Name</strong> attribute when you want to have the same field displayed on more than one **Page** on the form. You specify a unique value for the <strong>Name</strong> attribute for both control entries so that the system identifies each control uniquely.   
 </blockquote>  
 </td>
 </tr>
@@ -613,7 +601,8 @@ Extension:
 
 Given the above example, you can add the following code snippet to your work item type definition to turn on the user voice group ```vsts-uservoice-ui``` extension by specifying the extension Id:
 
-```
+> [!div class="tabbedCodeSnippets"]
+```XML
 <WebLayout>
 ... 
  <Extensions>

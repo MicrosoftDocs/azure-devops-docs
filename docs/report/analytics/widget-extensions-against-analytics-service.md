@@ -127,7 +127,7 @@ VSS.require(["TFS/Dashboards/WidgetHelpers", "VSS/Authentication/Services"], fun
 //Reusable function to call the analytics service and build the chart
 ```
 
-The [register](/vsts/integrate/extensions/reference/client/core-sdk#method_register) method takes the name of the widget, 
+The [register](https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk#method_register) method takes the name of the widget, 
 as defined in the manifest which hasn't been created yet, and a function to execute.
 
 **Retrieve data and build the chart**

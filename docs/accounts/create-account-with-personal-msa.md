@@ -28,7 +28,7 @@ so your team can build often, test early, and ship faster.
 > or learn [how to install and set up Team Foundation Server](../tfs-server/install/get-started.md). 
 
 
-[What users can join for free?  What do they get in Visual Studio Team Services?](#free-users)
+[What users can join for free?  What do they get in Visual Studio Team Services?](faq-create-account.md#free-users)
 
 
 <a name="how-sign-up"></a>
@@ -65,7 +65,7 @@ Enter your email address for your Microsoft account.
 
 	![Enter your email address](_img/_shared/sign-in.png)
 
-	Got [browser problems?](#browser-problems)
+	Got [browser problems?](faq-create-account.md#browser-problems)
 
 0.	On the Microsoft account sign-in page, 
 enter your email address for your Microsoft account. 
@@ -76,7 +76,7 @@ Then enter your password, and finish signing in.
 	If you don't have a Microsoft account, 
 	you can create a Microsoft account at this time. 
 
-	[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
+	[Why am I asked to choose between my work or school account and my personal account?](faq-create-account.md#ChooseOrgAcctMSAcct)
 
 0.	Name your Visual Studio Team Services account. 
 To manage your code, choose Git or Team Foundation Version Control.
@@ -94,12 +94,12 @@ To manage your code, choose Git or Team Foundation Version Control.
 	VSTS will create your first team project as "MyFirstProject" 
 	and will use Agile as your default work item process to organize your work. 
 	Choose **Change details** to 
-	[rename your team project, change the account location, or select another process, like Scrum](#account-location).
+	[rename your team project, change the account location, or select another process, like Scrum](faq-create-account.md#account-location).
 
 	> [!IMPORTANT]
 	> After you create your account, only members of the directory shown here can get access to your VSTS
 	> account. If you belong to multiple directories, check that you want to connect this directory to your VSTS account.
-	> Otherwise, change the directory now. This is easier than [changing the directory later](#ChangeDirectory).
+	> Otherwise, change the directory now. This is easier than [changing the directory later](faq-create-account.md#ChangeDirectory).
 
 0.	After Visual Studio Team Services creates your account and team project, 
 add your code, work items, or more users.

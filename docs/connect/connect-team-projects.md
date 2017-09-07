@@ -90,16 +90,8 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 
 <div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
 
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#connect-dialog">Connect to a team project</li> 
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:50px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#vs-2017-connect-dialog">Visual Studio 2017</a></li>
-<li class="active" style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 8px;min-width:50px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#vs-2015-connect-dialog">Visual Studio 2013/2015</a></li>
-
-</ul>
-
-<div id="connect-dialog" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-<div id="vs-2015-connect-dialog" class="tab-pane fade in active" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;"> 
+<a id="connect-dialog" /> 
+<a id="vs-2015-connect-dialog" / 
 
 ### Visual Studio 2015 
 From the Connect page, choose the **Connect to Team Project** link to select a different account, TFS, or team project to connect to.
@@ -116,7 +108,6 @@ If it's your first time connecting, add TFS to the list of recognized servers.
 
 If you selected just one team project, you'll see the Home page for that project. The pages that appear differ based on the resources enabled and the source control system selected for your team project.
 	
-</div>
    
 <a id="vs-2017-connect-dialog" />
 
@@ -148,19 +139,10 @@ To learn more about each page and the tasks you can perform, see [Work in Team E
    
 Your client remembers the set of connections you've configured. You can quickly switch from one team project to another from the Connect page.   
 
-### To change accounts when connecting to Team Services
-
-<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-
-<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-<li style="float:left;" data-toggle="collapse" data-target="#connect-account-dialog">Connect to a project using a different account</li> 
-
-<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:50px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#vs-2017-connect-account-dialog">Visual Studio 2017</a></li>
-<li class="active" style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 8px;min-width:50px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#vs-2015-connect-account-dialog">Visual Studio 2013/2015</a></li>
-
-</ul>
-<div id="connect-account-dialog" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left:5px;margin-right:5px;padding: 5px 5px 5px 5px;">
-<div id="vs-2015-connect-account-dialog" class="tab-pane fade in active" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;"> 
+### To change accounts when connecting to VSTS
+ 
+<a id="connect-account-dialog" /> 
+<a id="vs-2015-connect-account-dialog" /> 
  
 
 ### Visual Studio 2015 
@@ -298,11 +280,11 @@ To start planning and tracking work, see [Get started with Agile tools to plan a
 
 ### User accounts and licensing  
 
-To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (Team Services)](../accounts/add-account-users-assign-access-levels.md) or a [project administrator (TFS)](../accounts/add-users.md). 
+To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (Team Services)](../accounts/add-account-users-assign-access-levels.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
 
 VSTS provides access to the first 5 account users free. After that, you need to [pay for more users (Team Services)](../billing/buy-basic-access-add-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
 
-In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../quickstart/get-started-stakeholder.md).
+In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../quickstart/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 
 <a name="proxy"></a>
 ## Configure Visual Studio to connect to TFS Proxy

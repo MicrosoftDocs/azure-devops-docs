@@ -116,6 +116,6 @@ Test integration with the Kanban board makes it easy for teams to get started wi
 
 
 ### REST API resources
-To programmatically create test cases, see the [Test management (REST API reference)](https://www.visualstudio.com/integrate/api/test/overview).
+To programmatically create test cases, see the [Test management (REST API reference)](https://www.visualstudio.com/docs/integrate/extensions/overview).
 
 

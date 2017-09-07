@@ -15,32 +15,32 @@ Now that your extension is available in the [Visual Studio Marketplace](https://
 To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension or click **Reports** link on the extension details page.
 
 ## Acquisition 
-You can view acquisition related data in this tab for the selected period. 
+You can view all acquisition related data in this tab for the selected period. Based on the extension type, acqusition includes all events for install, buy, trial, download and get started clicks. 
+* Aggregated acquisition in the selected period with respect to acquisition till date
 * Aggregated acquisition in the selected period with respect to overall acquisition
 * Aggregated acquisition split by extension downloads, Team Services and TFS connected install for free extension
 * Aggregated acquisition split by trials, Team Services and TFS connected buy for paid extension
-* Daily trend of extension page views with acquisition for Team Services and TFS connected server
+* Aggregated acquisition split by extension download from marketplace and VS IDE for VS extension 
+* Daily trend of extension page views with acquisition 
 * Conversion percentage from page views to acquisition
 
 For paid extension, all transactional details for buy and trials is available with date, account name, trial end date, and quantity. You can use the **Contact** action to reach out to your users for transactional communication. Refer [here](https://www.visualstudio.com/en-us/docs/extend/extension-report#contact) for more details. 
 
 ![acqusition](_img/acq.png)
 
-## Uninstall
+## Uninstall (VSTS only)
 You can view how many Team Services accounts have uninstalled your extension, daily trend of uninstall, detailed feedback shared during uninstall, and top uninstall reasons.
 You can use search for text and dates to analyze and draw more insights from the detailed feedback. 
 
-For paid extensions, you can use the **Contact** action to reach out to your users for transactional communication. Refer [here](https://www.visualstudio.com/en-us/docs/extend/extension-report#contact) for more details. 
+For VSTS paid extension, all transactional details for buy and trials is available with date, account name, trial end date, and quantity. You can use the **Contact** action to reach out to your users for transactional communication. Refer [here](https://www.visualstudio.com/en-us/docs/integrate/extensions/extension-report#contact) for more details. 
 
 ![uninstall](_img/uninstall.png)
 
 ## Sales transaction
-This tab is only available for paid extensions and gives the details of sales w.r.t. quantity and accounts to help understand how the extension is performing. 
-Selection of the users button gives the aggregated details of sales and churn i.e. number of new, upgrade, downgrade and cancelled user licenses respectively with the trend. 
-Selection of the accounts button gives similar aggregated details of sales and churn with respect to account and its trend. 
+This tab is only available for VSTS paid extensions and gives the details of sales with respect to quantity and accounts to help understand how the extension is performing. Selection of the users button gives the aggregated details of sales and churn events, i.e. number of new, upgrade, downgrade and cancelled user licenses respectively with the trend. Selection of the accounts button gives similar aggregated details of sales and churn events with respect to account and its trend. 
 
 All transactional details for trials, new purchase, upgrade, downgrade and cancellations is available in details section. You can use search for text and dates to analyze and draw more insights. 
-This data can also be pivoted by account to understand the lifecycle of an account or sorted to understand the top account w.r.t. user licensees / resources purchased. **Contact** feature is also available. 
+This data can also be pivoted by account to understand the lifecycle of an account or sorted to understand the top account with respect to user licensees / resources purchased. **Contact** feature is also available. 
 
 ![sales](_img/sales.png)
 
@@ -74,10 +74,15 @@ Refer the [Marketplace Publisher Agreement](http://aka.ms/vsmarketplace-agreemen
 
 # Terminology
 
-* **Acquisition** is the total count of installs / buy and downloads
+* **Acquisition** is the total count of all applicable acquisition events for the extension; install, buy, trial, get started clicks and downloads
 * **Page views** is the total number of extension detail page views. Repeated views by users are counted.
-* **VSTS install** is the total number of VSTS accounts the extension is installed. Repeated installs on the same account are counted. 
-* **TFS install** is the total number of TFS connected accounts the extension is installed. Repeated installs on the same account are counted. TFS disconnected server data isn't available.  
+* **VSTS Install** is the total number of VSTS accounts the extension is installed. Repeated installs on the same account are counted. 
+* **TFS Install** is the total number of TFS connected accounts the extension is installed. Repeated installs on the same account are counted. TFS disconnected server data isn't available.  
+* **VSTS Trial** is the total number of VSTS accounts that started trial. In the same period if the VSTS account makes a purchase, that would be counted too. 
+* **VSTS Buy** is the total number of buy events for VSTS accounts. Repeated buy on the same account are counted. 
+* **TFS Buy** is the total number of buy events for TFS connected accounts. Repeated buy on the same account are counted. TFS disconnected server data isn't available.  
+* **Download from IDE** is the total number of VS extension downloads from Visual Studio IDE to help understand extension uptake directly in VS IDE
+* **Download from Marketplace** is the total number of VS extension downloads from the Marketplace
 * **Conversion funnel** is the conversion ration from page views to acquisition from Marketplace. It excludes extension acquisition directly from the products. 
 * **Top reasons for uninstall** is uninstall reasons categorized by reason code shared by users during the process of uninstall. Note: Reason code and reason are optional fields. 
 * **Last contacted** is the most recent date the account admin was contacted. 

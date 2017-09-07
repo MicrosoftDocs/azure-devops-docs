@@ -33,7 +33,7 @@ Otherwise, you can
 instead. Learn about other 
 [VSTS extensions](https://marketplace.visualstudio.com/vsts).
 
-[Can't access existing features?](#feature-access)
+[Can't access existing features?](faq-extension-trials.md#feature-access)
 
 ##  Start an extension trial
 
@@ -41,7 +41,7 @@ instead. Learn about other
 
 	![Find extension trial](_img/get-vsts-extensions/marketplace.png)
 
-	[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
+	[Why am I asked to choose between my work or school account and my personal account?](faq-extension-trials.md#ChooseOrgAcctMSAcct)
 
 0.	Find and select a paid extension that you want to try.
 
@@ -51,8 +51,8 @@ instead. Learn about other
 
 	![Select VSTS account for extension trial](_img/try-additional-features/select-account.png)
 
-	*	[Why don't I see any VSTS accounts?](#no-accounts) 
-	*	[Why can't I start an extension trial for the selected account?](#no-permissions) 
+	*	[Why don't I see any VSTS accounts?](faq-extension-trials.md#no-accounts) 
+	*	[Why can't I start an extension trial for the selected account?](faq-extension-trials.md#no-permissions) 
 
 0.	After your extension finishes installing, 
 	go to your VSTS account to use your extension. 
@@ -60,7 +60,7 @@ instead. Learn about other
 
 	![Marketplace installs your extension](_img/try-additional-features/extension-installed.png)
 
-	[Need help?](#get-support)
+	[Need help?](faq-extension-trials.md#get-support)
 
 <a name="after-trial"></a>
 ##		Keep using your extension after the trial ends

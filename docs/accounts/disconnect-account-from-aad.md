@@ -49,7 +49,7 @@ with your Microsoft account as the VSTS account owner.
 	> You can disconnect your VSTS account 
 	> from your directory only through the Azure classic portal.
 
-	[Why am I asked to choose between a work or school account and a personal account?](#ChooseOrgAcctMSAcct)
+	[Why am I asked to choose between a work or school account and a personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
 0.  Go to **Visual Studio Team Services**. 
 Select your VSTS account.
@@ -76,7 +76,7 @@ Select your VSTS account.
 	you can't sign in to your VSTS account unless your work or school 
 	account has the same email address as your Microsoft account.
 
-	[More questions about disconnecting?](#faq-disconnect)
+	[More questions about disconnecting?](faq-azure-access.md#faq-disconnect)
 
 
 [Troubleshooting Q&A](faq-azure-access.md)

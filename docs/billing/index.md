@@ -45,9 +45,9 @@ with Microsoft services such as Office 365 and Microsoft Azure.
 If your organization uses a directory (tenant) managed by Azure AD, 
 your VSTS account can also:
 
-* [use your directory to authenticate access](../accounts/access-with-azure-ad.md)
+* [Use your directory to authenticate access](../accounts/access-with-azure-ad.md)
 
-* [change your Azure AD](../accounts/change-azure-active-directory-vsts-account.md)
+* [Change your Azure AD](../accounts/change-azure-active-directory-vsts-account.md)
 
 
 ## Resources 

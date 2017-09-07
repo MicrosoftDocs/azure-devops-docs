@@ -77,7 +77,7 @@ You'll need [VSTS project collection administrator or account owner permissions]
 0.	Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```). 
 
-	[Why am I asked to choose between my "work or school account" and my "personal account"?](#ChooseOrgAcctMSAcct)
+	[Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)
 
 0.  Go to **Users** where you can view and assign access levels for all account users.
 

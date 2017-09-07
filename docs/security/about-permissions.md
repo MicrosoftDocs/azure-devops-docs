@@ -84,7 +84,7 @@ Use this option to disable inheritance for folders, shared queries, and other ob
  
 **Do:**  
 - Use Windows groups when managing lots of users.  
-- Consider granting the [work item quyery folders **Contribute**](#workitemqueryfolders-contiribute-permission) permission to users or groups that require the ability to create and share work item queries for the team project.  
+- Consider granting the [work item query folders **Contribute**](../work/track/set-query-permissions.md) permission to users or groups that require the ability to create and share work item queries for the team project.  
 - When adding many teams, consider creating a **Team Administrators** group to TFS where you allocate a subset of the permissions available to **Project Administrators**.  
 - When adding teams, consider what permissions you want to assign to team leads, scrum masters, and other team members who may need to create and modify area paths, iteration paths, and queries.  
 

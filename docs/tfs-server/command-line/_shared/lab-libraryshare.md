@@ -48,6 +48,6 @@ You can use the **/AutoProvision** option with the **/Add** and **/Edit** comman
 
 -   Set the **/AutoProvision** option to **False** to disable the automatic assignment of the library share to team projects.
 To assign or remove a library share in an individual team project,
-use the **TfsLabConfig** [TFSLabConfig CreateTeamProjectLibraryShare Command](#createteamprojectlibraryshare).
+use the **TfsLabConfig** [TFSLabConfig CreateTeamProjectLibraryShare Command](createteamprojectlibraryshare.md).
 
 -   Set the **/AutoProvision** option to **True** to enable the automatic assignments.

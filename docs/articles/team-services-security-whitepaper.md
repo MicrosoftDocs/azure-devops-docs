@@ -9,7 +9,9 @@ ms.author: mlearned
 author: jeffbe
 ---
 
-# Visual Studio Team Services Data Protection Overview
+# Data Protection Overview
+
+**VSTS**
 
 Microsoft Visual Studio Team Services (Team Services) is a cloud-hosted application for
 your development projects, from planning through deployment. Based on
@@ -534,7 +536,7 @@ authentication. However, we have taken steps to help people make secure
 choices. For example, all communication is sent over HTTPS and there
 are password complexity requirements. Nevertheless, your organization
 should evaluate if additional policies are required to meet your
-projects security requirements. You can [learn more](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/change-application-access-policies-vs) about disabling alternate 
+projects security requirements. You can [learn more](../accounts/change-application-access-policies-vs.md) about disabling alternate 
 authentication credentials altogether for your account if it doesn't meet your
 security requirements.
 
@@ -544,7 +546,7 @@ Azure Active Directory (Azure AD) provides the capability for administrators to
 control access to Azure resources and applications such as Team Services.  With 
 conditional access control in place, Azure AD checks for the specific conditions 
 you set for a user to access an application. After access requirements are met, 
-the user is authenticated and can access the application.  Visit the [Microsoft Azure documentation site](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access) 
+the user is authenticated and can access the application.  Visit the [Microsoft Azure documentation site](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access) 
 to learn more about conditional access policy (CAP).  One limitation of Azure AD conditional access policy is that it is enforced at the time a user signs in, and therefore access can continue 
 to be granted even if conditions change which would otherwise conflict with policy. 
 For example, you may choose to have location conditions applied to limit access to 
@@ -558,18 +560,12 @@ OAuth and SSH keys are not constrained or checked by conditional access policy.
 In addition to this white paper, there are other resources available for
 your review and education. These include:
 
--   [Visual Studio Team Services home page](https://www.visualstudio.com/)
-
--   [Team Services status](https://blogs.msdn.com/b/vsoservice/)
-
+-   [VSTS home page](https://www.visualstudio.com/)
+-   [VSTS status](https://blogs.msdn.com/b/vsoservice/)
 -   [Developer Services privacy statement](http://www.visualstudio.com/support/privacy-policy-vs)
-
 -   [Developer Services Agreement](http://www.visualstudio.com/support/terms-of-service-vs)
-
 -   [Brian Harry's blog](http://blogs.msdn.com/b/bharry/)
-
 -   [Azure trust center](http://azure.microsoft.com/support/trust-center/)
-
 -   [Microsoft Security Development Lifecycle](http://www.microsoft.com/security/sdl/)
     
 *(c) 2016 Microsoft Corporation. All rights reserved. This document is

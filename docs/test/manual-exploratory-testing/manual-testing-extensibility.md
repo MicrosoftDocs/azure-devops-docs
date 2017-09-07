@@ -1,3 +1,3 @@
 ---
-redirect_url: /vsts/manual-test/manual-testing
+redirect_url: /vsts/manual-test/
 ---

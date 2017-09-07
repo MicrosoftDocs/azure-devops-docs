@@ -36,7 +36,9 @@
     href: buy-more-build-vs.md
   - name: How to buy load testing services
     href: buy-load-testing-vs.md
-  - name: Mange extensions
+  - name: Buy basic access to TFS Test hub
+    href: buy-access-tfs-test-hub.md
+  - name: Manage extensions
     items:
     - name: Change number of paid extension users
       href: ../billing/change-number-paid-extension-users.md

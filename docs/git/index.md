@@ -7,7 +7,7 @@ ms.service: vsts-code
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/20/20-7
+ms.date: 09/07/2017
 layout: LandingPage
 ---
 
@@ -23,12 +23,12 @@ Get started by creating a repo, uploading your code, and inviting developers to 
 
 <table>
 <tr valign="middle" align="center">
-<td>![Placeholder](_img/index/placeholder-img.png)<br/>[Web](create-new-repo.md)</td>
-<td>![VS](_img/index/vs-ide-placeholder.png)<br/>[Visual Studio](share-your-code-in-git-vs.md)</td>
-<td>![CLI](_img/index/cli-placeholder.png)<br/>
+<td>![Web](_img/index/web.png)<br/>[Web](create-new-repo.md)</td>
+<td>![VS](_img/index/vs-ide.png)<br/>[Visual Studio](share-your-code-in-git-vs.md)</td>
+<td>![CLI](_img/index/cli.png)<br/>
 [Command line](share-your-code-in-git-cmdline.md)</td>
-<td>![Placeholder](_img/index/placeholder-img.png)<br/>[Xcode](share-your-code-in-git-xcode.md)</td>
-<td>![Placeholder](_img/index/placeholder-img.png)<br/>[Eclipse](share-your-code-in-git-eclipse.md)
+<td>![Xcode](_img/index/xcode.png)<br/>[Xcode](share-your-code-in-git-xcode.md)</td>
+<td>![Eclipse](_img/index/eclipse.png)<br/>[Eclipse](share-your-code-in-git-eclipse.md)
 </td>
 </tr>
 </table>    

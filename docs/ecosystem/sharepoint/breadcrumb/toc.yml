@@ -2,7 +2,7 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Integration
+  - name: Integrate
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=integration
     items:

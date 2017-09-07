@@ -191,7 +191,7 @@ subscription that's associated with your directory. Learn
 	If you're the subscription [Account Administrator](https://azure.microsoft.com/en-us/documentation/articles/billing-add-change-azure-subscription-administrator), 
 	visit the Azure Account Center to remove the spending limit:
 
-	0.	Sign in to [Azure Account Center (**Account** > **subscriptions**)](https://account.windowsazure.com/subscriptions). 
+	0.	Sign in to [Azure Account Center (**Account** > **subscriptions**)](https://portal.azure.com). 
 	0.	Select your Azure subscription. 
 	0.	Remove your spending limit **indefinitely**.
 
@@ -220,7 +220,7 @@ account owner created the account or sometime after that.
 When you create a VSTS account with a work or school account, 
 your VSTS account is automatically connected to the directory 
 that manages that work or school account. 
-You can [disconnect your VSTS account](#DisconnectDirectory) from this directory 
+You can [disconnect your VSTS account](disconnect-account-from-aad.md) from this directory 
 and reconnect to another directory, but you might have to migrate some users.
 
 <a name="AlternateCredentials"></a>
