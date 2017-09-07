@@ -1,3 +1,3 @@
 ---
-redirect_url: /vsts/build-release/apps/index.md
+redirect_url: /vsts/build-release/apps/
 ---
