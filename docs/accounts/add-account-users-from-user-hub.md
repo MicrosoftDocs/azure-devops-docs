@@ -77,7 +77,7 @@ link to the account page.
 
 ![Click the Add Users button](_img/user-hub/add-users-button.png)
 
-![Add users by inviting them to the account](_img/user-hub/add-users.jpg)
+![Add users by inviting them to the account](_img/user-hub/add-users.png)
 
 
 [Manage users in table view](manage-users-table-view.md)

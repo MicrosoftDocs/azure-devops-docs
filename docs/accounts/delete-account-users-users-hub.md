@@ -45,7 +45,7 @@ You'll need [VSTS project collection administrator or account owner permissions]
 
 0. Go to the users hub. Select the user, choose **...** in the name column, then choose **Remove**.
 
- ![Account level table of users with key information per user](_img/user-hub/acct-level-users.jpg)
+ ![Account level table of users with key information per user](_img/user-hub/acct-level-users.png)
 
 0. To make sure that you've removed the user completely, make sure they are not in any of your [security groups](add-users.md). 
 
