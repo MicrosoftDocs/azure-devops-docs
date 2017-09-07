@@ -6,7 +6,7 @@ ms.technology: vs-devops-git
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/29/2017
+ms.date: 09/07/2017
 layout: LandingPage
 ---
 
@@ -26,9 +26,9 @@ Get started by creating a team project, configuring your workspace, and reviewin
 
 <table>
 <tr valign="middle" align="center">
-<td>![VS](_img/index/vs-ide-placeholder.png)<br/>[Visual Studio](share-your-code-in-tfvc-vs.md)</td>
-<td>![Placeholder](_img/index/placeholder-img.png)<br/>[Xcode](share-your-code-in-tfvc-xcode.md)</td>
-<td>![Placeholder](_img/index/placeholder-img.png)<br/>[Eclipse](share-your-code-in-tfvc-eclipse.md)
+<td>![VS](_img/index/vs-ide.png)<br/>[Visual Studio](share-your-code-in-tfvc-vs.md)</td>
+<td>![Xcode](_img/index/xcode.png)<br/>[Xcode](share-your-code-in-tfvc-xcode.md)</td>
+<td>![Eclipse](_img/index/eclipse.png)<br/>[Eclipse](share-your-code-in-tfvc-eclipse.md)
 </td>
 </tr>
 </table>    
