@@ -1,0 +1,171 @@
+---
+title: Validation of process templates for migration import from TFS to Visual Studio Team Services (VSTS) | VSTS & TFS
+description: Guidance for fixing common TfsMigrator process template issues.
+ms.prod: 
+ms.technology: 
+ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
+---
+
+> [!NOTE]
+> The TFS Database Import Service for Visual Studio Team Services (VSTS) is currently in preview.
+
+# Process Templates
+
+TfsMigrator could flag errors which need to be corrected prior to performing a migration. Below are the most common process related errors that are encountered when prepping for a migration. After correcting each error you will need to run TfsMigrator's validate command again to ensure the error(s) is/are actually gone.
+
+<a id="process-validation-types"></a>
+## Process Validation Types
+
+There are two types of process validation done by the tfsMigrator. First, it checks to see if your projects have been customized and can be imported using the xml process customization model. Second, it checks to see if any of your projects can be converted into the new inherited process customization model. Two log files are generated. TfsMigrator.log and TryMatchOobProcesses.log. 
+
+<table class="table table-striped">
+<tbody>
+    <tr>
+        <td ="col-md-8">
+            <b>TfsMigrator.log</b>
+        </td>
+        <td ="col-md-8">TfsMigrator.log contains the logs that prevent your collection from being imported becuase of process errors. By default your projects will land under the xml process customization model.  This is the most flexible as it allows for most customizations such as custom fields, work item types, and workflows. You must fix all the errors in this file in order to proceed with the data import.</td>
+    </tr>
+	<tr>
+        <td ="col-md-8">
+            <b>TryMatchOobProcesses.log</b>
+        </td>
+        <td ="col-md-8">TryMatchOobProcesses.log file will be generated and contains the list of errors that the validator found for your projects land in the inherited model. TfsMigrator will look at your projects and determine if that project is using an OOB process such as Agile, Scrum, or CMMI. If it is, and does not contain and customizations, will we bring that project into the inherited model. Errors in this file will not prevent you from doing the data import.</td>
+    </tr>
+</tbody>
+</table>
+
+Most customers have a mix of projects that have been customized (i.e. custom fields) and projects that are using an OOB process template. TfsMigrator checks each project and validates it accordingly. It is very possible you will have some projects that will be mapped to an OOB process and some projects will use the xml for process customization.
+
+We recommend that for any project that has not been customized, that you review the TryMatchOobProcesses.log to determine if there are any errors. If so, make the adjustments accordingly so that the project can be mapped to an OOB process upon data import.
+
+## Update to a System Process
+
+If you started with an older version of TFS, odds are your projects are still using an older process template. If those projects have not been updated using the [Configure Features Wizard](https://www.visualstudio.com/docs/work/customize/configure-features-after-upgrade) then the tfsMigrator will find process errors. In some rare cases, if your process is so old, even the Configure Features Wizard will not reslove the errors.
+
+Here are some examples of error messages you will probably recieve:
+
+```no-highlight
+Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: TF402571: Required element PortfolioBacklog is missing from Process Configuration.
+Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: TF402571: Required element BugWorkItems is missing from Process Configuration.
+Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: TF402571: Required element FeedbackRequestWorkItems is missing from Process Configuration.
+Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: TF402571: Required element FeedbackResponseWorkItems is missing from Process Configuration.
+Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: TF402574: ProcessConfiguration doesn't specify required TypeField Team.
+Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: TF402574: ProcessConfiguration doesn't specify required TypeField RemainingWork.
+Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: TF402574: ProcessConfiguration doesn't specify required TypeField Order.
+Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: TF402574: ProcessConfiguration doesn't specify required TypeField Effort.
+Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: TF402574: ProcessConfiguration doesn't specify required TypeField Activity.
+Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: TF402574: ProcessConfiguration doesn't specify required TypeField ApplicationStartInformation.
+Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: TF402574: ProcessConfiguration doesn't specify required TypeField ApplicationLaunchInstructions.
+Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: TF402574: ProcessConfiguration doesn't specify required TypeField ApplicationType.
+Invalid process template: WorkItem Tracking\Process\ProcessConfiguration.xml:: TF400572: The Project Process Settings must be configured for this feature to be used.
+```
+<br/>
+If you have never customized your project (added fields, work item types, etc.), then fixing these is actually pretty simple.
+
+> If you customized your process, then this approach will not work. You will need to manually change the process templates so that your customizations do not get overwritten.
+
+First, make sure you know what process your project started as. Is it Scrum, Agile or CMMI? In this example, let us assume Agile. Now go to https://github.com/Microsoft/process-customization-scripts and download the repo. In this instance, we are going to focus on contents in the "Import" folder.
+
+Use the "ConformProject.ps1" script to conform a project of your choosing to the Agile system process. This will update the entire project to be Agile.
+
+```
+.\ConformProjects.ps1 "<collection url>" "<project name>" "c:\process-customization-scripts\import\agile" 
+```
+<br/>
+Make sure you do this for each and every project. 
+
+## Dealing with Process Errors
+
+Are your process templates customized? Are you using an older outdated process template? If so, you will most likely have process validation errors. TfsMigrator does an exhaustive check against your process templates. It checks to make sure that it is valid for VSTS. Odds are you will need to make some adjustments and apply them to your TFS collection.
+
+> If you are using an OOB Agile, Scrum, or CMMI process you probably won't see any errors in the tfsMigrator.log. Instead, check the TryMatchOobProcesses.log for errors. If you are error free then your project will map to an OOB process.
+
+There are variety of customizations that will not work in VSTS. Make sure you review the [list of customizations](https://msdn.microsoft.com/en-us/Library/vs/alm/Work/import-process/differences) that are supported. 
+
+If you have projects that are using an older process template, the TfsMigrator will find several errors. This is because your process templates have not been updated to match the most recent process templates. To start, try running the [Configure Features Wizard](https://www.visualstudio.com/docs/work/customize/configure-features-after-upgrade) for each project. This will attempt to update your process templates with the most recent features. Doing so should drastically reduce the error count. 
+
+Finally, make sure you have [witadmin](https://msdn.microsoft.com/en-us/library/dd236914.aspx) on the machine that you intend to use to fix the process errors. This can be your local desktop. Witadmin is used in the automated scripts and is required whenever making changes to the process templates.
+
+### Step 1 – Review Errors
+TfsMigrator.log file will be generated and contains the list of errors that the validation process found. To view the logs, open the TfsMigrator.log file. Search for the string "Validation - Starting validation of project 1". Each project is validated so you will need to scan through all the projects. Examine any lines that have a prefix of "[Error …".
+
+![Process logging file generated by TfsMigrator](_img/migration-troubleshooting/witLogFile.png)
+
+We have documented the majority of the [validation errors](https://www.visualstudio.com/docs/work/import-process/resolve-errors). For each validation error we have provided the error number, description, and the method to resolve. 
+
+### Step 2 – Fix Errors
+Now you know what projects have errors, the details of those errors, and how to fix them. Fixing the errors requires that you to change the xml and apply the changes back into the project. 
+
+> We do not suggest using the TFS Power Tools. It is highly recommended that you modify the XML manually.
+
+To get the process template from the project add the /SaveProcesses parameter when running the tfsMigrator command.
+
+```cmdline
+TfsMigrator validate /collection:{collection URL} /SaveProcesses
+```
+
+This command will extract the xml from the project and place it into the same folder as the logs. Extract the zip files to your local machine so that you can edit the files.
+
+Now you need to fix the xml. Use the logs from the ```TfsMigrator.log``` file to determine the errors for each project.
+
+![Process logging file generated by TfsMigrator](_img/migration-troubleshooting/witLogFile.png)
+
+Some errors will require you to do use a [witamdin changefield](https://msdn.microsoft.com/en-us/library/dd236909.aspx) command. Changing a field name is the most common example. To save yourself some time, we recommend you run the ```witadmin changfield ...``` command and then re-run the tfsMigrator tool. Doing this will re-export the xml with the corrected names. Otherwise you will need manually fix the fields in the xml as well.
+
+Once you make a fix then you need to conform. Conform is defined as taking the XML you just changed and applying it back into TFS. To do this, depending on the changes you made, you will need to run one or more [witadmin](https://msdn.microsoft.com/en-us/library/dd312129.aspx) commands. To make this easier for you, we created a PowerShell script to automate the process. The script contains all of the witadmin commands needed to conform the entire process.
+
+You can get the scripts at https://github.com/Microsoft/process-customization-scripts. Use the import/ConformProject.ps1 script.
+
+```cmdline
+.\conformproject.ps1 “<collection url>” “<project name>” “<process template folder>”
+```
+![Conform project processes script running](_img/migration-troubleshooting/conformProjectProcessesPowerShell.png)
+
+When the script has completed you need to re-run the TfsMigrator to validate the collection. Follow steps 1 - 3 until the TfsMigrator generates no more validation errors.
+
+> If you are new to xml and witadmin, we suggest you make one fix at a time and then conform. Continue this loop until all errors are resolved. 
+
+### Common Validation Errors
+
+#### VS402841: Field X in work item type Bug has syncnamechanges=false but has rules making it an identity field. Identity fields must have syncnamechanges=true. Please update your process template to include this change.
+
+In VSTS we added a rule so that every identity field must have the syncnamechanges=true attribute. In TFS that rule does not apply. Therefore, the TfsMigrator will identify this as an issue. Don't worry, making this change on TFS on-prem will not cause any harm.
+
+To fix this you will need to run the witadmin changefield command. Syntax for the command will look something like this:
+
+```cmdline
+witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:fieldname /syncnamechanges:true
+```
+
+For more information on the changfield command see https://msdn.microsoft.com/en-us/library/dd236909.aspx
+
+#### TF402556: For field System.IterationId to be well defined, you must name it Iteration ID and set its type to Integer.
+
+This error is typical for old process templates that have not been updated in some time. Try running the [configure features wizard](https://www.visualstudio.com/en-us/docs/work/customize/configure-features-after-upgrade) on each project. Alternatively you can run the follow witadmin command: 
+
+```cmdline
+witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:fieldname /name:newname
+```
+#### TF402571: Required element BugWorkItems is missing from Process Configuration.
+
+This error is typically when a process has not been updated in a while. Try running the [configure features wizard](https://www.visualstudio.com/en-us/docs/work/customize/configure-features-after-upgrade) on each project to resolve.
+
+#### TF402564: You've defined XX global lists. Only 64 are allowed.
+
+By default, VSTS will support 64 global lists. You will typically run across this error if you have a large amount of build definitions. The global list named Builds – **TeamProjectName** gets created for each new build definition. You will need remove the outdated global lists.
+
+### Additional Resources
+
+* [witadmin](https://msdn.microsoft.com/en-us/library/dd236914.aspx)
+* [Differences between VSTS and TFS process template customizations](https://www.visualstudio.com/docs/work/import-process/differences)
+* [Configure features after TFS upgrade](https://www.visualstudio.com/docs/work/customize/configure-features-after-upgrade)
+* [Resolve validation errors](https://www.visualstudio.com/docs/work/import-process/resolve-errors)
+* [Defining global lists in TFS](https://msdn.microsoft.com/en-us/library/ms194977.aspx)
+* [Process customization PowerShell scripts](https://github.com/Microsoft/process-customization-scripts)
+
+
+
+
+
+
