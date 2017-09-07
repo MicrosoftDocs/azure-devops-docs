@@ -15,7 +15,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 <table>
       <thead>
         <tr><th>Planned Date</th>
-		<th>Feature</th> 
+		<th>Feature</th>
 		<th>Server</th>
         <th>Area</th>
         </tr>
@@ -37,7 +37,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
         <tr><td>2017 Q3</td><td>Release Management better traceability – Integration with Jenkins, Code, Work, and Package hubs</td><td>TBD</td><td>Release</td></tr>
         <tr><td>2017 Q3/Q4</td><td>Azure Portal Continuous Delivery support – Azure App Services (AppTypes/Repos), VMs, and ACS Containers</td><td>TBD</td><td>Release</td></tr>
         <tr><td>2017 Q3</td><td>Azure Deployments first class support and task improvements – Kubernetes, VMScaleSet, Azure Functions, and Service Fabric Clusters</td><td>TBD</td><td>Release</td></tr>
-        <tr><td>2017 Q3</td><td>Ansible Extension for Deployments</td><td>TBD</td><td>Release</td></tr>
         <tr><td>2017 Q3</td><td>Package Management – Upstreams sources for public registries (NuGet.org, Maven Central, etc.) and VSTS feeds across the organization and/or account</td><td>TBD</td><td>Package</td></tr>
         <tr><td>2017 Q3</td><td>Package Management – Maven general availability</td><td>TFS vNext</td><td>Package</td></tr>
         <tr><td>2017 Q3</td><td>Automated Testing – Ability to configure a batch size for better distribution across agents and frequent results publishing</td><td>TFS vNext</td><td>Test</td></tr>
@@ -48,13 +47,10 @@ This feature list is a peek into our roadmap. It identifies some of the signific
         <tr><td>2017 Q3</td><td>Manual and Exploratory Testing (XT) – Show requirements based suites (RBS) on Kanban and enable Basic XT users to provide feedback</td><td>TBD</td><td>Test</td></tr>
         <tr><td>2017 Q3</td><td>Manual and XT – XT support for Edge</td><td>TBD</td><td>Test</td></tr>
         <tr><td>2017 Q3</td><td>Reporting – Burndown and Burnup widget</td><td>TBD</td><td>Insights</td></tr>
-        <tr><td>2017 Q3</td><td>[Improved user management and invitation experience](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/13/streamlined-user-management/)</td><td>TBD</td><td>Shared</td></tr>
         <tr><td>2017 Q3</td><td>[Improved user management – bulk editing](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/)</td><td>TBD</td><td>Shared</td></tr>
         <tr><td>2017 Q3</td><td>[Licensing users and extensions using AAD groups](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/)</td><td>TBD</td><td>Shared</td></tr>
-        <tr><td>2017 Q3</td><td>[Inviting directory guests to AAD-backed VSTS accounts](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/11/inviting-directory-guests-to-aad-backed-vsts-accounts/)</td><td>TBD</td><td>Shared</td></tr>
         <tr><td>2017 Q3</td><td>[Support for Cloud Solution Providers in managing VSTS accounts and purchases](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/09/cloud-solution-provider-purchase-from-visual-studio-marketplace-roadmap/)</td><td>TBD</td><td>Shared</td></tr>
         <tr><td>2017 Q3</td><td>[Multiple accounts per “organization”](http://blogs.msdn.com/b/visualstudioalm/archive/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account.aspx)</td><td>--</td><td>Shared</td></tr>
-        <tr><td>2017 Q3</td><td>Social – Profile Cards</td><td>TBD</td><td>Shared</td></tr>
         <tr><td>2017 Q3</td><td>[Administration – Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)</td><td>TBD</td><td>Shared</td></tr>
         <tr><td>2017 Q3</td><td>Notifications – CC/BCC (carbon copy) recipient support for email notifications</td><td>TBD</td><td>Shared</td></tr>
         <tr><td>2017 Q3</td><td>Simplified experience to more easily acquire VSTS extensions and Visual Studio subscriptions</td><td>--</td><td>Marketplace</td></tr>
@@ -76,9 +72,11 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </tbody>
 </table>
 
-###Current features
+### Current features
 
-The features timeline lists significant features delivered to Visual Studio Team Services and the corresponding version of Team Foundation Server. Versions in the server column are linked to the appropriate download location. You can also [view the build numbers for each version](https://www.visualstudio.com/en-us/news/release-archive-vso.aspx#build_numbers).
+The features timeline lists significant features delivered to Visual Studio Team Services and the corresponding version of Team Foundation Server.
+Versions in the server column are linked to the appropriate download location. You can also 
+[view the build numbers for each version](#build_numbers).
 
 <table>
     <thead>
@@ -89,6 +87,244 @@ The features timeline lists significant features delivered to Visual Studio Team
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="29">[28 Aug 2017](/articles/news/2017/aug-28-team-services)</td>
+            <td>Work Items hub</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Customizable work item rules</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Mentioned support for the My work items page</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Custom Fields and Tags in Notifications</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Inline add on Delivery Plans</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Forks</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>File minimap</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Bracket matching</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Toggle white space</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Updated email templates for push notification</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Complete Work Items settings</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Find lost commits due to a Force Push</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Update default repo permissions for admins</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>CI builds for Bitbucket repositories</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Pause build definitions</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Task input validations support</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>New Release Definition Editor general availability</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Enhancements in new Release Definition editor</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Release Template Extensibility</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Conditional release tasks and phases</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Approve multiple environments</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Requests history for service endpoints</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Upload attachments to test runs and test results</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Test batching</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>JMeter 3.2 for load testing</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Streamlined user management general availability</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Adding User to Projects and Teams</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Graph REST APIs in Public Preview</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Profile Card</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td rowspan="30">[4 Aug 2017](/articles/news/2017/aug-04-team-services)</td>
+            <td>Copy work item processes</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Updated order of the last column in the Kanban board</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>See the projects using a process</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Filtering on Kanban board</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Wiki in Public Preview</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Improvements in Wiki edit experience</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Revert a Wiki revision</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Create a Wiki page from a broken link</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Setting to turn off web editing for TFVC repos</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Identify stale branches</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Search for a deleted branch and re-create it</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Branch updates page is now Pushes</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Retain filename when moving from Files to Commits</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Pull Request Status Extensibility in Public Preview</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Let contributed build sections control section visibility</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Variable group support</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>dotnet task supports authenticated feeds, web projects</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Ansible Extension on Marketplace</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Variable groups, Retention, and Options tab now available in the new Release Definition Editor</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Release status badge in Code hub</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Enhancements to Build definition menu when adding artifacts</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Revert your release definition to older version</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>		
+		<tr>
+            <td>Exploratory testing traceability improvements for work item links, iterations, and area paths</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Screenshot and annotation support for desktop apps with Chrome browser for manual tests</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Filters for Test Case work items in Test Plans and Suites in Test Hub</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Test trend charts for Release Environments and Test Runs</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Markdown formatting support for Test Run and Test Result comments</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Add link to existing bug for a failing test</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Re-order favorite groups</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+		<tr>
+            <td>Enable Visual Studio Code direct install option in Marketplace</td>
+            <td style="background:rgb(232, 232, 232);">--</td>
+        </tr>
 	    <tr>
             <td rowspan="20">[14 Jul 2017](/articles/news/2017/jul-14-team-services)</td>
             <td>Migrate team projects between two inherited processes with the same parent</td>
