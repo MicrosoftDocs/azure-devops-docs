@@ -1,4 +1,4 @@
-- name: Account management
+- name: Account Management
   href: index.md
 - name: Overview
   items:
@@ -12,17 +12,19 @@
     href: create-account-with-personal-msa.md
   - name: Create your account with a work or school account
     href: create-account-with-work-school.md
-  - name: "User hub: add users to your account"
-    href: add-account-users-from-user-hub.md
   - name: Try extensions for free
-    href: ../billing/try-additional-features-vs.md
-  - name: "User hub: add basic or VS subscription users to your account"
-    href: add-basic-or-vs-subscription-users.md
+    href: /vsts/billing/try-additional-features-vs?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Tutorials
   items:
   - name: Change Azure AD tenant
     href: change-azure-active-directory-vsts-account.md
-- name: How-to
+- name: Concepts
+  items:
+  - name: Permissions and access
+    href: /vsts/security/permissions-access?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
+  - name: Adding Basic or VS subscription users to your account
+    href: add-basic-or-vs-subscription-users.md
+- name: How-to Guides
   items:
   - name: Manage accounts
     items:
@@ -48,8 +50,8 @@
       href: delete-team-project.md
     - name: Save team project data
       href: save-team-project-data.md
-    - name: Connect to team projects in various ways
-      href: /vsts/connect/connect-team-projects?toc=/vsts/accounts/toc.json
+    - name: Connect to team projects
+      href: /vsts/connect/connect-team-projects?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
   - name: Manage account access
     items:
     - name: "User hub: add users to your account"
@@ -67,7 +69,7 @@
     - name: Delete users from your account
       href: delete-account-users.md
     - name: Link work accounts to Visual Studio with MSDN subscriptions
-      href: ../billing/link-msdn-subscription-to-organizational-account-vs.md
+      href: /vsts/billing/link-msdn-subscription-to-organizational-account-vs?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
     - name: Authenticate with personal access tokens
       href: use-personal-access-tokens-to-authenticate.md
     - name: Change app access policies
@@ -87,7 +89,7 @@
   - name: Permissions and access
     items:
     - name: Permissions and access
-      href: ../security/permissions-access.md?toc=/vsts/accounts/toc.json
+      href: /vsts/security/permissions-access?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
     - name: Add users to projects
       href: add-users.md
     - name: Add administrators to project collection
@@ -97,35 +99,23 @@
     - name: Restrict access to resources
       href: restrict-access-tfs.md
     - name: Change access levels
-      href: ../security/change-access-levels.md
+      href: /vsts/security/change-access-levels?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
     - name: Stakeholder access
-      href: ../quickstart/get-started-stakeholder.md
+      href: /vsts/quickstart/get-started-stakeholder?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
     - name: Permissions and groups reference
-      href: ../security/permissions.md
+      href: /vsts/security/permissions?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
   - name: Get more features (extensions)
     items:
     - name: Install an extension for VSTS
-      href: ../marketplace/install-vsts-extension.md
+      href: /vsts/marketplace/install-vsts-extension?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
     - name: Approve requests for VSTS extensions
-      href: ../marketplace/approve-vsts-extensions.md
+      href: /vsts/marketplace/approve-vsts-extensions?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
     - name: Request permission for an extension
-      href: ../marketplace/request-vsts-extension.md
+      href: /vsts/marketplace/request-vsts-extension?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
     - name: Assign paid extensions access
-      href: ../marketplace/assign-paid-extensions.md
+      href: /vsts/marketplace/assign-paid-extensions?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
     - name: Uninstall or disable extensions
-      href: ../marketplace/uninstall-disable-vsts-extensions.md
-- name: Concepts
-  items:
-  - name: Permissions and access
-    href: ../security/permissions-access.md
-  - name: Buying build pipelines
-    href: ../billing/buy-more-build-vs.md
-- name: Reference
-  items:
-  - name: Permissions and groups reference
-    href: ../security/permissions.md
-  - name: Extensibility overview
-    href: ../extend/index.md
+      href: /vsts/marketplace/uninstall-disable-vsts-extensions?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Troubleshooting
   items:
   - name: Create account
@@ -140,26 +130,15 @@
     href: faq-add-administrators.md
   - name: Rename team project
     href: faq-rename-team-project.md
+- name: Reference
+  items:
+  - name: Permissions and groups reference
+    href: /vsts/security/permissions?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Resources
   items:
   - name: "Billing and extensions"
     href: ../billing/index.md
-    items:
-    - name: Link Azure subscription to VSTS Account
-      href: ../billing/set-up-billing-for-your-account-vs.md
-    - name: Add backup billing managers
-      href: ../billing/add-backup-billing-managers.md
-    - name: Change Azure subscription for billing
-      href: ../billing/change-azure-subscription.md
-    - name: Pay for VSTS users
-      href: ../billing/buy-basic-access-add-users.md
-    - name: Change number of paid extension users
-      href: ../billing/change-number-paid-extension-users.md
-    - name: How to buy build pipelines
-      href: ../billing/buy-more-build-vs.md
   - name: Migrate from TFS to VSTS Tutorial
     href: https://www.visualstudio.com/articles/migration-overview
-  - name: Integrate with other services
+  - name: Service hooks
     href: ../service-hooks/index.md
-  - name: Technical articles
-    href: http://visualstudio.com/articles/overview

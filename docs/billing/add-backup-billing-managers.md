@@ -22,7 +22,11 @@ add **owner** or **contributor** roles to users in the Azure subscription that's
 For for information on billing, see [billing concepts](billing-concepts.md)
 
 
-[Sign in to the Azure portal](https://portal.azure.com/) as the Azure subscription administrator, and navigate to access control to add owners or contributors:
+[Sign in to the Azure portal](https://portal.azure.com/) as the Azure subscription administrator.
+
+Choose the Subscriptions blade, and if there are more than one, choose the subscription to modify.
+
+Then in the IAM screen (shown below) follow the numbered steps:
 
 ![access control adding owners and contributors](_img/set-up-billing/ap-add-owncontrib.png)
 

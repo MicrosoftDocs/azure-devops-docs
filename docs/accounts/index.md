@@ -24,13 +24,8 @@ Use this index to setup and manage your account and configure key settings to su
 ## 5-Minute Quickstarts  
 
 * [Create your account with a personal Microsoft account](create-account-with-work-school.md)
-
 * [Create your account with a work or school account](create-account-with-work-school.md)
-
-* [Connect to your account](../connect/connect-team-projects.md)
-
 * [Add users to your account](add-account-users-from-user-hub.md)
-
 * [Try extensions for free](../billing/try-additional-features-vs.md)
 
 
@@ -42,25 +37,17 @@ Use this index to setup and manage your account and configure key settings to su
 ## Concepts 
 
 * [Access with Azure AD](access-with-azure-ad.md)
-
 * [Access with Azure AD groups](manage-azure-active-directory-groups-vsts.md)
  
  
 ## Resources 
 
 * [Set up billing](../billing/set-up-billing-for-your-account-vs.md)
-
 * [Pay for more users](../billing/buy-basic-access-add-users.md)
-
 * [Permissions and access](../security/permissions-access.md)
-
 * [Manage users and access](add-account-users-assign-access-levels.md)
-
 * [Add users to team projects](add-team-members-vs.md)
-
 * [Manage access levels](../security/change-access-levels.md)
-
 * [Add Stakeholder users](../security/change-access-levels.md)
-
 * [Add users to an administrator role](add-administrator-project-collection.md)
 
