@@ -5,12 +5,13 @@
   - name: VSTS Data Protection
     href: team-services-security-whitepaper.md
 - name: High-Fidelity Migration
-  href: overview.md
   items:
+  - name: Overview
+    href: migration-overview.md
   - name: Import
     href: migration-import.md
   - name: Process Templates
-    href: migration-process-templates.md
+    href: migration-processtemplates.md
   - name: Post-Import
     href: migration-post-import.md
   - name: Advanced Topics

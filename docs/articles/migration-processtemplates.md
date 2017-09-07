@@ -6,6 +6,7 @@ ms.technology:
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
 ---
 
+> [!NOTE]
 > The TFS Database Import Service for Visual Studio Team Services (VSTS) is currently in preview.
 
 # Process Templates
