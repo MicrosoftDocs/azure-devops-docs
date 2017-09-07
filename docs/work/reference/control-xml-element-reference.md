@@ -23,7 +23,8 @@ You use the `Control` element to define a work item field, text, hyperlink, or o
   
 ## Syntax   
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <Control FieldName="FieldName" Type="AttachmentsControl | DateTimeControl | FieldControl |   
 HtmlFieldControl | LabelControl | LinksControl | WebpageControl | WorkItemClassificationControl |   
 WorkItemLogControl" ControlFontSize="FontSize" EmptyText="TextString"  
@@ -89,7 +90,8 @@ For an example of each control type, see [Specify work item form controls](speci
   
 ## Example  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <Control Type=" WorkItemClassificationControl " FieldName="System.AreaPath"  
   Label="Area" LabelPosition="Left" Padding="(2,0,2,0)" Margin="(2,2,2,2)" />  
 ```  

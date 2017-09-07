@@ -24,11 +24,13 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
   
  The following code is a simple example of the **WHEN** clause:  
   
- `<FIELD  . . .  >`  
-  
- `<WHEN field="referenceName" value="yyy">`  
-  
- `</FIELD>`  
+
+> [!div class="tabbedCodeSnippets"]
+```XML
+<FIELD  . . .  > 
+<WHEN field="referenceName" value="yyy">  
+</FIELD>
+```  
   
  This clause means that anything within this FIELD element is applicable as long as the field `refname` has the value "yyy". The field must be a valid field reference name. For more information, see [Naming conventions for work item tracking objects](../../reference/naming-restrictions.md#ProjectNames).  
   
@@ -47,18 +49,7 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 <th scope="col" width="10%"><p>Element</p></th><th scope="col" width="40%"><p>Syntax</p></th><th scope="col"><p>Description</p></th></tr>
 <tbody valign="top">
 <tr><td data-th="Element"><p><strong>WHEN</strong></p></td><td data-th="Syntax">
-<div id="code-snippet-1" class="codeSnippetContainer" xmlns="">
-    <div class="codeSnippetContainerTabs">
-        
-    </div>
-    <div class="codeSnippetContainerCodeContainer">
-        <div class="codeSnippetToolBar">
-            <div class="codeSnippetToolBarText">
-                <a name="CodeSnippetCopyLink" style="display: none;" title="Copy to clipboard." href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_6809868f-0d23-4bc1-9a63-174557f0ba8f');" ms.cmptyp="CodeSnippet">Copy</a>
-            </div>
-        </div>
-        <div id="CodeSnippetContainerCode_6809868f-0d23-4bc1-9a63-174557f0ba8f" class="codeSnippetContainerCode" dir="ltr">
-            <div style="color:Black;"><pre>
+<pre><code>
 &lt;WHEN field="fieldReferenceName" value="value"&gt;
     &lt;ALLOWEDVALUES&gt; . . . &lt;/ALLOWEDVALUES&gt;
     &lt;ALLOWEXISTINGVALUE&gt; . . . &lt;ALLOWEXISTINGVALUE&gt;
@@ -76,25 +67,9 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
     &lt;SUGGESTEDVALUES&gt; . . . &lt;/SUGGESTEDVALUES&gt;
     &lt;VALIDUSER&gt; . . . &lt;/VALIDUSER&gt;
 &lt;/WHEN&gt;
-
-</pre></div>
-            
-        </div>
-    </div>
-</div>
+</code></pre>
 </td><td data-th="Description"><p>Specifies one or more rules to apply to the current field when another field has a specific value. The parent element defines the current field.</p><p>When the specified field has the specified value, the rules in this element are applied to the current field.</p></td></tr><tr><td data-th="Element"><p><strong>WHENNOT</strong></p></td><td data-th="Syntax">
-<div id="code-snippet-2" class="codeSnippetContainer" xmlns="">
-    <div class="codeSnippetContainerTabs">
-        
-    </div>
-    <div class="codeSnippetContainerCodeContainer">
-        <div class="codeSnippetToolBar">
-            <div class="codeSnippetToolBarText">
-                <a name="CodeSnippetCopyLink" style="display: none;" title="Copy to clipboard." href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_7d0809fe-8ddb-42fb-ab35-b3c36f84db84');" ms.cmptyp="CodeSnippet">Copy</a>
-            </div>
-        </div>
-        <div id="CodeSnippetContainerCode_7d0809fe-8ddb-42fb-ab35-b3c36f84db84" class="codeSnippetContainerCode" dir="ltr">
-            <div style="color:Black;"><pre>
+<pre><code>
 &lt;WHENNOT field="fieldReferenceName" value="value"&gt;
     &lt;ALLOWEDVALUES&gt; . . . &lt;/ALLOWEDVALUES&gt;
     &lt;ALLOWEXISTINGVALUE&gt; . . . &lt;ALLOWEXISTINGVALUE&gt;
@@ -113,24 +88,9 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
     &lt;VALIDUSER&gt; . . . &lt;/VALIDUSER&gt;
 &lt;/WHENNOT&gt;
 
-</pre></div>
-            
-        </div>
-    </div>
-</div>
+</code></pre>
 </td><td data-th="Description"><p>Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field changes. The parent element defines the current field.</p><p>When the specified field does not contain the specified value, the rules in this element are applied to the current field.</p></td></tr><tr><td data-th="Element"><p><strong>WHENCHANGED</strong></p></td><td data-th="Syntax">
-<div id="code-snippet-3" class="codeSnippetContainer" xmlns="">
-    <div class="codeSnippetContainerTabs">
-        
-    </div>
-    <div class="codeSnippetContainerCodeContainer">
-        <div class="codeSnippetToolBar">
-            <div class="codeSnippetToolBarText">
-                <a name="CodeSnippetCopyLink" style="display: none;" title="Copy to clipboard." href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_8fc330c9-83de-41c0-8f1b-71040957e882');" ms.cmptyp="CodeSnippet">Copy</a>
-            </div>
-        </div>
-        <div id="CodeSnippetContainerCode_8fc330c9-83de-41c0-8f1b-71040957e882" class="codeSnippetContainerCode" dir="ltr">
-            <div style="color:Black;"><pre>
+<pre><code>
 &lt;WHENCHANGED field="fieldReferenceName" &gt;
     &lt;ALLOWEDVALUES&gt; . . . &lt;/ALLOWEDVALUES&gt;
     &lt;ALLOWEXISTINGVALUE&gt; . . . &lt;ALLOWEXISTINGVALUE&gt;
@@ -148,25 +108,9 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
     &lt;SUGGESTEDVALUES&gt; . . . &lt;/SUGGESTEDVALUES&gt;
     &lt;VALIDUSER&gt; . . . &lt;/VALIDUSER&gt;      
 &lt;/WHENCHANGED&gt;
-
-</pre></div>
-            
-        </div>
-    </div>
-</div>
+</code></pre>
 </td><td data-th="Description"><p>Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field is changed in a revision to a work item. The parent element defines the current field.</p></td></tr><tr><td data-th="Element"><p><strong>WHENNOTCHANGED</strong></p></td><td data-th="Syntax">
-<div id="code-snippet-4" class="codeSnippetContainer" xmlns="">
-    <div class="codeSnippetContainerTabs">
-        
-    </div>
-    <div class="codeSnippetContainerCodeContainer">
-        <div class="codeSnippetToolBar">
-            <div class="codeSnippetToolBarText">
-                <a name="CodeSnippetCopyLink" style="display: none;" title="Copy to clipboard." href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_c8adb99e-1a6c-4031-8a56-9d1ce21d1f1d');" ms.cmptyp="CodeSnippet">Copy</a>
-            </div>
-        </div>
-        <div id="CodeSnippetContainerCode_c8adb99e-1a6c-4031-8a56-9d1ce21d1f1d" class="codeSnippetContainerCode" dir="ltr">
-            <div style="color:Black;"><pre>
+<pre><code>
 &lt;WHENNOTCHANGED field="fieldReferenceName"&gt;
     &lt;ALLOWEDVALUES&gt; . . . &lt;/ALLOWEDVALUES&gt;
     &lt;ALLOWEXISTINGVALUE&gt; . . . &lt;ALLOWEXISTINGVALUE&gt;
@@ -185,14 +129,8 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
     &lt;VALIDUSER&gt; . . . &lt;/VALIDUSER&gt;
 &lt;/WHENNOTCHANGED&gt;
 
-</pre></div>
-            
-        </div>
-    </div>
-</div>
+</code></pre>
 </td><td data-th="Description"><p>Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field is not changed in a revision to a work item. The parent element defines the current field.</p></td></tr></table>
-
-
 
   
  The following table describes how each optional, conditional-based rule is applied to the parent field when the conditional clause that you specify by using a **WHEN**, **WHENNOT**, **WHENCHANGED**, or **WHENNOTCHANGED** element is true. For more information, see [Apply a field rule](apply-rule-work-item-field.md).  
@@ -220,7 +158,8 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 ##  Define a dependent required field  
  You can specify that a field is required only when another field contains a specific value. In the following example, when a customer reports a bug, a customer severity must be specified. If the bug was not reported by a customer, a customer severity is not required.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <FIELD refname="MyCorp.Severity" name="Customer Severity" type="String">  
     <ALLOWEDVALUES>  
         <LISTITEM value="Blocking" />  
@@ -237,7 +176,8 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 ##  Define a conditional pick list  
  The following example demonstrates a conditional pick list in which the allowed values for the Problem Type field are limited, based on whether the value of the ProblemCharacteristic field is set to Documentation.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <FIELD refname="MyCorp.ProblemType" name="Problem Type" type="String">  
     <WHEN field="MyCorp.ProblemCharacteristic" value="Documentation">  
         <ALLOWEDVALUES>  
@@ -252,19 +192,20 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 <a name="WhenChanged"></a>  
 ##  Define a field when the user changes another field (WHENCHANGED)  
  In the following example, when a user changes the value of the MyCorp.State field, the MyCorp.StateDate field is set to the current date and time, as the server clock shows.  
-  
-```  
+
+> [!div class="tabbedCodeSnippets"]
+```XML
 <FIELD refname="MyCorp.StateDate" name="Date Of Last State Change" type="DateTime">  
     <WHENCHANGED field="MyCorp.State">  
         <COPY from="clock" />  
     </WHENCHANGED>  
-</FIELD>  
-  
+</FIELD>   
 ```  
   
  In the following example, when a user changes the value of the MyCorp.State field, the value of the MyCorp.Status field is cleared.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <!-- Clear the status field whenever someone changes the state -->  
 <FIELD refname="MyCorp.Status" name="Status" type="String">  
     <WHENCHANGED field="MyCorp.State">  
@@ -276,7 +217,8 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 ##   Define a field value based on a user not modifying a field (WHENNOTCHANGED)  
  In the following example, when a user does not change the value of the MyCorp.State field, the MyCorp.StateDate field becomes read-only.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <FIELD refname="MyCorp.StateDate" name="Date Of Last State Change" type="DateTime">  
 <!-- Make the StateDate field read-only when the State field is not changed -->  
     <WHENNOTCHANGED field="MyCorp.State">  

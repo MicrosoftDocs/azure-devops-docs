@@ -22,9 +22,9 @@ Use this topic to learn how to:
 
 > [!div class="checklist"]   
 > * Copy or clone a work item, essentially making a duplicate of a work item     
-> * Change the work item typ, for example from a bug to a user story 
+> * Change the work item type, for example from a bug to a user story 
 > * Copy a list of work items to email or share with others  
-> * Copy the URL of a work item 
+> * Copy the URL of a work item  
 
 [!INCLUDE [temp](../_shared/image-differences.md)] 
 

@@ -15,8 +15,7 @@ ms.date: 02/22/2017
 
 A data validation error occurs when a change in the work item list or project plan violates a rule of the work item type. The following examples show common data validation errors:  
   
--   Someone assigns a work item to a team member whose name is not included in the list of allowed values.  
-  
+-   Someone assigns a work item to a team member whose name is not included in the list of allowed values  
 -   Someone creates a work item but forgets to complete a required field, such as the work item type.  
   
  If a data validation error occurs when you try to publish changes, the **Work Item Publishing Errors** dialog box appears, and in the **Unpublished work items** list the **Issue** column shows **Validation error** or another phrase that contains **Invalid**.  

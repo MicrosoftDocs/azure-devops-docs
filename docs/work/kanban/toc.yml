@@ -27,7 +27,7 @@
   - name: Kanban board controls
     href: kanban-board-controls.md
   - name: "Workflow states & state categories"
-    href: /vsts/work/concepts/workflow-and-state-categories?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
+    href: ../concepts/workflow-and-state-categories.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: About teams and Agile tools
     href: ../about-teams-and-settings.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
 - name: How-to guides

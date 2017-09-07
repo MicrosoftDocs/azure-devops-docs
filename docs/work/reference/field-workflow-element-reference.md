@@ -25,7 +25,8 @@ You use the **FIELD** (Workflow) element to specify the rules and conditions tha
   
 ## Syntax  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <FIELD refname="fieldReferenceName">  
    <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
    <ALLOWEXISTINGVALUE />  

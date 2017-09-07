@@ -118,15 +118,15 @@ Also, stakeholders can create and modify work items using Team Foundation client
 6.	Request and manage feedback is now available within the Basic access level when you [upgrade your application server to TFS 2015 Update 1 or later version](https://www.visualstudio.com/downloads/download-visual-studio-vs).
 7.	You can open the Admin context and view and modify settings provided you are a team, project, or project collection administrator. See [Administer account features](#administer-account).
 8.	Advanced home page allows you to configure and view the Welcome page in addition to team dashboards.  
-9.	You can [purchase Test Manager extensions and assign to user accounts](#test-manager) to gain full access to web-based Test case management tools.
+9.	You can [purchase Test Manager extensions and assign to user accounts](access-levels.md#test-manager) to gain full access to web-based Test case management tools.
 10.	With VS Enterprise access, users have access to any fee-based, Marketplace extension published by Microsoft Marketplace extension published by Microsoft that is included for active Visual Studio Enterprise subscribers. Examples include [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) (which is also free for 5 users who are not Visual Studio Enterprise subscribers) and [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).    
 
 <a id="administer-account" >  </a>
 
 Within the admin context, there are several hubs which support administrating features at the team, project, or project collection level. You can learn more from these resources:
 
-- [Security, permissions](permissions.md)   
-- [Overview, teams](../work/scale/multiple-teams.md)   
+- [Permissions and group reference](permissions.md)   
+- [About teams and team tools](../work/about-teams-and-settings.md)   
 
 ## Related notes  
 
