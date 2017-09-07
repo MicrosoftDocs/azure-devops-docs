@@ -27,12 +27,12 @@ Learn how to build your app.
 <tr valign="middle" align="center">
 <td>[<img src="_img/index/logo_nodejs.svg" alt="" width="36px" height="36px"><br/>Node.js](apps/nodejs/build-gulp.md)</td>
 <td>[<img src="_img/index/logo_java.svg" alt="" width="36px" height="36px"><br/>Java](apps/java/build-maven.md)</td>
-<td>[<img src="_img/index/logo_cpp.png" alt="" width="36px" height="36px"><br/>C++](apps/windows/cpp.md)</td>
+<td>[<img src="_img/index/logo_cpp.svg" alt="" width="36px" height="36px"><br/>C++](apps/windows/cpp.md)</td>
 </tr>
 <tr valign="middle" align="center">
-<td>[<img src="_img/index/logo_ios.png" alt="" width="36px" height="36px"><br/>Xcode](apps/mobile/xcode-ios.md)</td>
-<td>[<img src="_img/index/logo_xamarin.png" alt="" width="36px" height="36px"><br/>Xamarin](apps/mobile/xamarin.md)</td>
-<td>[<img src="_img/index/logo_uwp.png" alt="" width="36px" height="36px"><br/>UWP](apps/windows/universal.md)</td>
+<td>[<img src="_img/index/logo_xcode.png" alt="" width="36px" height="36px"><br/>Xcode](apps/mobile/xcode-ios.md)</td>
+<td>[<img src="_img/index/logo_xamarin.svg" alt="" width="36px" height="36px"><br/>Xamarin](apps/mobile/xamarin.md)</td>
+<td>[<img src="_img/index/logo_uwp.svg" alt="" width="36px" height="36px"><br/>UWP](apps/windows/universal.md)</td>
 </tr>
 </table>
 
