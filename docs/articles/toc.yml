@@ -1,0 +1,25 @@
+- name: VSTS Public Articles
+  href: index.md
+- name: Security
+  items:
+  - name: VSTS Data Protection
+    href: team-services-security-whitepaper.md
+- name: High-Fidelity Migration
+  href: overview.md
+  items:
+  - name: Import
+    href: migration-import.md
+  - name: Process Templates
+    href: migration-process-templates.md
+  - name: Post-Import
+    href: migration-post-import.md
+  - name: Advanced Topics
+    href: migration-advanced-topics.md
+  - name: Troubleshooting
+    href: migration-troubleshooting.md
+- name: DevOps
+  items:
+    - name: CI/CD Best Practices Case Study
+      href: build-deployment-best-practices.md
+    - name: Ring-based Phased Feature Rollouts
+      href: phase-rollout-with-rings.md
