@@ -108,7 +108,9 @@ If you use an older version of Visual Studio or work with Git from the command p
 
 2. Go to the local repository and update the remote to the URL you [copied from the remote repo](#copy_remote_repo_url).
 
-    ```git remote set-url origin {URL_you_copied_from_the_remote_repo}```
+    ```
+	git remote set-url origin {URL_you_copied_from_the_remote_repo}
+	```
 
 #### Refresh Team Explorer
 
@@ -197,5 +199,7 @@ Reports will not work as expected until the jobs have run.
 	You can also clear some TFS specific cache using the tfs redirect url
 	and providing a "clearcache" parameter. For example
 
-	```http://<SharePointServer>/sites/<TeamProjectCollectionName>/<TeamProjectName>/_layouts/TfsRedirect.aspx?tf:type=Report&tf:clearcache=1```
+	```
+	http://<SharePointServer>/sites/<TeamProjectCollectionName>/<TeamProjectName>/_layouts/TfsRedirect.aspx?tf:type=Report&tf:clearcache=1
+	```
 
