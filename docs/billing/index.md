@@ -17,18 +17,14 @@ ms.date: 07/12/2017
 VSTS billing covers:
 
 * Purchasing extensions for Visual Studio, Visual Studio Team Services, Team Foundation Server (TFS), and Visual Studio Code
-
 * Purchasing for pay-for-usage extensions, such as Test Manager and Package Management (these extensions are assigned to specific users). 
-
 * Purchasing subscriptions for Visual Studio, HockeyApp, and Xamarin University
 
 
 ## 5-Minute Quickstarts  
 
  * [Set up billing](set-up-billing-for-your-account-vs.md)
-
  * [Try extensions for free](try-additional-features-vs.md)
-
  * [Pay for more users](buy-basic-access-add-users.md)
 
 
@@ -46,14 +42,11 @@ If your organization uses a directory (tenant) managed by Azure AD,
 your VSTS account can also:
 
 * [Use your directory to authenticate access](../accounts/access-with-azure-ad.md)
-
 * [Change your Azure AD](../accounts/change-azure-active-directory-vsts-account.md)
 
 
 ## Resources 
 
 * [Key concepts](../concepts.md)
-
 * [Software development roles](../roles.md)
-
 * [Pricing](https://www.visualstudio.com/team-services/pricing/)
