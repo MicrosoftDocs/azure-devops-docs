@@ -7,17 +7,21 @@ ms.technology: vsts-sub-git
 ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
-ms.author: routlaw
-ms.date: 08/29/2017
+ms.author: sdanie
+ms.date: 09/08/2017
 ---
 
 # Get started with Git from the command line
 
 #### VSTS | TFS 2015 & TFS 2017  
 
-This guide show you how to share your code in a VSTS Git repo using the command line.  If you don’t have a VSTS account, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+This guide show you how to share your code in a VSTS Git repo using the command line.
 
 The instructions below use the default bash shell used on Linux and Mac OS X, but the Git commands will work in any shell, including Git Bash from Git for Windows.
+
+## Prerequisites
+
+* A VSTS account. If you don’t have one, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 ## Download and install Git
 
@@ -50,31 +54,26 @@ Refer to the [list of install commands](https://git-scm.com/download/linux) for 
 
 ## Create your local repo
 
-Create a local Git repo for your code. 
-
-> If your code is already in a local Git repo, you can skip this step.
+Create a local Git repo for your code. If your code is already in a local Git repo, you can skip this step.
 
 0. Navigate to the folder where your code is on the command line:
 
-```
-cd /home/fabrikam/fiber
-```
+    ```
+    cd /home/fabrikam/fiber
+    ```
 
 0. Create a Git repo on your machine to store your code. You will connect this repo to VSTS in the next step.
 
-```
-git init .
-```
+    ```
+    git init .
+    ```
 
 0. Commit your code into the local Git repo.
 
-```
-git add --all
-```
-
-```
-git commit -m "first commit of my code"
-```
+    ```
+    git add --all
+    git commit -m "first commit of my code"
+    ```
 
 ## Create your VSTS repo
 
@@ -84,14 +83,14 @@ git commit -m "first commit of my code"
 
 0. Connect your local repo to the VSTS repo using the copied clone URL in the `git remote` command:
 
-```
-git remote add origin https://fabrikops2.visualstudio.com/DefaultCollection/Fabrikam/_git/FabrikamApp
-```
+    ```
+    git remote add origin https://fabrikops2.visualstudio.com/DefaultCollection/Fabrikam/_git/FabrikamApp
+    ```
 
 
 ## Push your code 
 
-> Set up authentication with [credential managers](set-up-credential-managers.md) or [SSH](use-ssh-keys-to-authenticate.md) before continuing.
+Before pushing your code, set up authentication with [credential managers](set-up-credential-managers.md) or [SSH](use-ssh-keys-to-authenticate.md) before continuing.
 
 ```
 git push origin master
@@ -100,4 +99,7 @@ git push origin master
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Learn more about using Git in the [Git tutorial](tutorial/gitworkflow.md) and [create a build](../build-release/overview.md) for your project code.
+> [New to Git repos? Learn more](https://www.visualstudio.com/learn/set-up-a-git-repository/)
+
+> [!div class="nextstepaction"]
+> [Learn more about using Git in the Git tutorial](tutorial/gitworkflow.md)

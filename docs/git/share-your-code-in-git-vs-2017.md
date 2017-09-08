@@ -9,7 +9,7 @@ ms.topic: get-started-article
 toc: show
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/29/2017
+ms.date: 09/07/2017
 ---
 
 # Share your code with Visual Studio 2017 and Team Services Git
@@ -23,9 +23,13 @@ ms.date: 08/29/2017
 
 Share your Visual Studio solution in a new Team Services or Team Foundation Server Git repo.
 
-This article walks you through the steps to get a Visual Studio solution on your PC into a Git repo you can share with others, even if you don't have a Team Services account. If you don’t have a VSTS account, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+This article walks you through the steps to get a Visual Studio solution on your PC into a Git repo you can share with others, even if you don't have a Team Services account. 
 
 If you want to work with a Visual Studio solution hosted in an existing repo, see the [Git tutorial](gitquickstart.md).
+
+## Prerequisites
+
+* A VSTS account. If you don’t have one, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 ##  Create a local Git repo for your project
 
@@ -56,23 +60,22 @@ Once you have a local repo, select items in the status bar to quickly navigate b
 
  ![Publish your VS project to a new Team Services Git repo](_img/share-your-code-in-git-vs/vsts_publish_repo.png)
 
- > This creates a new Team Project in your account with the same name as the repository. To create the repo in an existing Team Project, click **Advanced** 
-next to **Repository name** and select a team project.
+   This creates a new Team Project in your account with the same name as the repository. To create the repo in an existing Team Project, click **Advanced** next to **Repository name** and select a team project.
 
 Your code is now in a Team Services repo. You can view your code on the web by selecting **See it on the web** .
   
-  ![View your VSTS Git repo on the Web](_img/share-your-code-in-git-vs/vsts_view_on_web.png)
+![View your VSTS Git repo on the Web](_img/share-your-code-in-git-vs/vsts_view_on_web.png)
   
 ## Commit and push updates
 
 0. As you write your code, your changes are automatically tracked by Visual Studio. 
-You can [commit](tutorial/commits.md) changes to your local Git repository by selecting the pending changes icon ( ![Visual Studio Pending Changes Status Bar icon](_img/share-your-code-in-git-vs/vs_pending_changes.png) ) from the status bar.
+You can [commit](tutorial/commits.md) changes to your local Git repository by selecting the pending changes icon ![Visual Studio Pending Changes Status Bar icon](_img/share-your-code-in-git-vs/vs_pending_changes.png) from the status bar.
 
 0. On the **Changes** view in Team Explorer, add a message describing your update and commit your changes.
 
  ![Add a comment and choose Commit](_img/share-your-code-in-git-vs/vs_commit_te.png)
 
-0. Select the unpublished changes status bar icon ( ![Visual Studio Unpublished Changes Status Bar icon](_img/share-your-code-in-git-vs/vs_unpublished_changes.png) ) or the **Sync** view in Team Explorer. Select **Push** to 
+0. Select the unpublished changes status bar icon ![Visual Studio Unpublished Changes Status Bar icon](_img/share-your-code-in-git-vs/vs_unpublished_changes.png) or the **Sync** view in Team Explorer. Select **Push** to 
 update your code in VSTS/TFS.
 
  ![Push your changes](_img/share-your-code-in-git-vs/vspush.png)
@@ -94,11 +97,6 @@ Double-click a commit to view its file changes.
 
  ![The changes are now in your local repo](_img/share-your-code-in-git-vs/vs_pull_complete.png)
  
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Set up a build](../build-release/overview.md) for your code and learn more about using Git in the [Team Services Git tutorial](tutorial/gitworkflow.md).
-
 ## Frequently asked questions
 
 * [I don't see the **Add to Source Control** button in the status bar.](#i-dont-see-the-add-to-source-control-button-in-the-status-bar)
@@ -109,7 +107,7 @@ Double-click a commit to view its file changes.
 
 ### I don't see the **Add to Source Control** button in the status bar.
 
-The **Add to Source Control** button in the status bar ( ![Add to Source Control](_img/share-your-code-in-git-vs/add_src_control_status_bar.png) )  was added in Visual Studio 2017 (it was **Publish** in Visual Studio 2015 Update 2 and later) and will only appear when you have Git as your source control provider. If your code is already in a Git repo, you won't see the **Add to Source Control** button in the status bar, but the status of the current branch in your local repo instead.
+The **Add to Source Control** button in the status bar ![Add to Source Control](_img/share-your-code-in-git-vs/add_src_control_status_bar.png)  was added in Visual Studio 2017 (it was **Publish** in Visual Studio 2015 Update 2 and later) and will only appear when you have Git as your source control provider. If your code is already in a Git repo, you won't see the **Add to Source Control** button in the status bar, but the status of the current branch in your local repo instead.
 
 If you are in a previous version of Visual Studio, create a local Git repo for your project by selecting the **Create new Git repository** option in the **New Project** window when you create a new project. 
 
@@ -134,8 +132,19 @@ to the commit. The work item is linked when the commit is pushed to VSTS.
 
 ### Can I use the Git command prompt with Visual Studio?
 
-A: Visual Studio's Team Explorer and the Git command line work great together. Changes to your repos made in either tool will be reflected in the other. 
+Visual Studio's Team Explorer and the Git command line work great together. Changes to your repos made in either tool will be reflected in the other. 
 Make sure to install the latest release of [Git for Windows](https://git-scm.com/download/win), which has tools to help you connect to your VSTS/TFS repos.
 
 See [the Team Services Git tutorial](tutorial/gitworkflow.md) and the [command reference](command-prompt.md) for additional help using Git from the command line.
+
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [New to Git repos? Learn more](https://www.visualstudio.com/learn/set-up-a-git-repository/)
+
+> [!div class="nextstepaction"]
+> [Checkout more steps in the Git workflow](gitquickstart.md)
+
+
 

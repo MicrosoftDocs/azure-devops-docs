@@ -6,14 +6,14 @@ ms.technology: vsts-sub-git
 ms.service: vsts-code  
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
 ms.manager: douge
-ms.author: kaelli
-ms.date: 09/07/2017
+ms.author: sdanie
+ms.date: 09/08/2017
 layout: LandingPage
 ---
 
 # Git
 
-Use Git repos to host and collaborate on your code using Team Services or Team Foundation Server.  
+Use Git repos to host and collaborate on your code using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).  
 
 ## 5-Minute Quickstarts 
 

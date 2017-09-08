@@ -35,8 +35,6 @@ Share the .gitignore in the default branch in your repo, so you and your team ca
 
 # [Visual Studio](#tab/visual-studio)
 
-Visual Studio 2015 & 2017
-
 Visual Studio automatically creates a .gitignore file in your repo when you [create new repo for your project](creatingrepo.md).
 
 # [Command Line](#tab/command-line)
@@ -66,8 +64,6 @@ Modify your .gitignore to include files types, paths, and file patterns in your 
 commit the changes if others on your team need the same set of ignored files.
 
 # [Visual Studio](#tab/visual-studio)
-
-Visual Studio 2015 & 2017
 
 You can edit your .gitignore file for your repo by going to the **Settings** view in Team Explorer, then selecting **Repository Settings**. Select the **Edit** link under next to your .gitignore.
 

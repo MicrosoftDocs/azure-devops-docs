@@ -7,20 +7,19 @@ ms.technology: vsts-sub-git
 ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
-ms.author: routlaw
-ms.date: 08/29/2016
+ms.author: sdanie
+ms.date: 09/08/2017
 ---
 
 #  Learn about version control and Git
 
-###### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
 
-Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features.  
-Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
+Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
 
 ## Version control workflow
 
-Version control has a general workflow that most developers will use when writing code and sharing it with the team.
+Version control has a general workflow that most developers use when writing code and sharing it with the team.
 
 These steps are:
 
@@ -48,9 +47,12 @@ These terms might sound familiar if you've used a version control system like Te
 
 ---
 
-Use this workflow if you're new to Git. As your team gets more experienced and confident with Git,  extend it to suit your team's needs.
+Use this workflow if you're new to Git. As your team gets more experienced and confident with Git, extend it to suit your team's needs.
 
-## What's next
+## Next steps
 
-[Create a new Git repository](creatingrepo.md)
-[Clone an existing Git repository](clone.md)
+> [!div class="nextstepaction"]
+> [Create a new Git repository](creatingrepo.md)
+
+> [!div class="nextstepaction"]
+> [Clone an existing Git repository](clone.md)

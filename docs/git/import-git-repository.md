@@ -74,4 +74,7 @@ git clone https://<<username>>:<<password>>@<<remaining clone Url>>
 ## Next steps
 
 > [!div class="nextstepaction"]
-> Learn more about using Git in the [Git tutorial](tutorial/gitworkflow.md) and [create a build](../build-release/overview.md) for your project code. 
+> [New to Git repos? Learn more](https://www.visualstudio.com/learn/set-up-a-git-repository/)
+
+> [!div class="nextstepaction"]
+> [Learn more about using Git in the Git tutorial](tutorial/gitworkflow.md)

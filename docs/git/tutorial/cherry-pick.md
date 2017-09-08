@@ -8,12 +8,12 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/29/2017
+ms.date: 09/08/2017
 ---
 
 # Copy changes with cherry-pick
 
-#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 (Update 2) & 2017
 
 Copy commits from one branch to another using cherry-pick. Unlike a merge or rebase, cherry-pick only brings the changes from the commits you select, instead of all the changes in a branch.
 
@@ -31,8 +31,6 @@ In this tutorial you learn how to:
 ## Cherry-pick a commit
 
 # [Visual Studio](#tab/visual-studio)
-
-Visual Studio 2015 Update 2 & Visual Studio 2107
 
 0. Open up Team Explorer and checkout to the branch you want to cherry-pick changes into using the **Branches** view.
 0. Right-click the branch containing the changes you want and select **View History...**. 
@@ -84,4 +82,4 @@ If you need to cherry-pick a range of commits, you can use two commit IDs separa
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [resolve merge conflicts](merging.md)
+> [Resolve merge conflicts](merging.md)

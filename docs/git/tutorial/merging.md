@@ -13,7 +13,7 @@ ms.date: 08/30/2017
 
 #  Resolve merge conflicts
 
-#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2013, 2015 and 2017
+#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2013, 2015 & 2017
 
 When you [merge](pulling.md) one branch into another, file changes from commits in one branch can conflict with the changes the other.
 Git attempts to resolve these changes by using the [history](history.md) in your repo to determine what the merged files should look like.
@@ -54,8 +54,6 @@ Rebased branches will merge into your main branch without conflicts.
 ## Resolve merge conflicts 
 
 # [Visual Studio](#tab/visual-studio)
-
-Visual Studio 2013, 2015 &amp; 2017
 
 0. You'll be informed of the merge conflict(s) when you pull changes or attempt to merge two branches.   
 0. The conflict notification appears. Click the **Conflicts** link to start resolve file conflicts.   

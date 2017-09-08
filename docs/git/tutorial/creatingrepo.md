@@ -8,12 +8,12 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/29/2017
+ms.date: 09/08/2017
 ---
 
 #  Create a new Git repo
 
-#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 & 2017
+#### VSTS | TFS 2015 & TFS 2017 | Visual Studio 2015 (Update 2) & 2017
 
 A Git repository, or repo, is a folder that you’ve told Git to help you track file changes in. 
 You can have any number of repos on your computer, each stored in their own folder. 
@@ -45,16 +45,10 @@ Later you can connect this Git repo to a remote Git repo to share your work with
 
 ### Create a repo 
 
-* [Prerequisites](#prerequisites)
 * [Create a repo from a new solution](#from-a-new-solution)
 * [Create a repo from an existing solution](#from-an-existing-solution)
 * [Create a repo in an empty folder](#in-an-empty-folder)
 * [Connect a local repo to a remote](#connect-a-local-repo-to-a-remote)
-
-### Prerequisites
-
-* VSTS or TFS 2015 & 2017
-* Visual Studio 2015 (Update 2) or Visual Studio 2017
 
 ### From a new solution
 
