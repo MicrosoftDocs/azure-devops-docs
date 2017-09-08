@@ -58,7 +58,7 @@ The properties command displays several pieces of information about a version-co
 	<td><p>Indicates the local path of the workspace folder for the specified item.</p></td></tr>
 <tr>
 	<td><p>Changeset</p></td>
-	<td><p>Indicates the version number of the file or folder that was last retrieved to the current workspace using the <a href="/docs/tfvc/get-command">Get Command</a>.</p></td></tr>
+	<td><p>Indicates the version number of the file or folder that was last retrieved to the current workspace using the <a href="get-command.md">Get Command</a>.</p></td></tr>
 <tr>
 	<td><p>Change</p></td>
 	<td><p>Indicates where a change is pending.</p></td></tr>
@@ -76,7 +76,7 @@ The properties command displays several pieces of information about a version-co
 	<td><p>If the item is deleted, the deletion identification; otherwise 0.</p></td></tr>
 <tr>
 	<td><p>Lock</p></td>
-	<td><p>Indicates the type of lock.</p><ul><li><p><strong>Checkin</strong>   Check in is not permitted for the file.</p></li><li><p><strong>Checkout</strong>   Check out in not permitted for the file.</p></li><li><p><strong>None</strong>   A lock is not set. For more information, see <a href="/docs/tfvc/lock-command">Lock Command</a>.</p></li></ul></td></tr>
+	<td><p>Indicates the type of lock.</p><ul><li><p><strong>Checkin</strong>   Check in is not permitted for the file.</p></li><li><p><strong>Checkout</strong>   Check out in not permitted for the file.</p></li><li><p><strong>None</strong>   A lock is not set. For more information, see <a href="lock-command.md">Lock Command</a>.</p></li></ul></td></tr>
 <tr>
 	<td><p>Lock Owner</p></td>
 	<td><p>Indicates the person who set a check-in lock.</p></td></tr>
