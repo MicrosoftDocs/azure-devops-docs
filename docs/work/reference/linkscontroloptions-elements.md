@@ -11,12 +11,12 @@ ms.date: 02/14/2017
 
 # LinksControlOptions elements (Client and web, TFS 2015) 
 
-
-<p><b>TFS 2015 | TFS 2013 </b></p>
+**TFS 2015 | TFS 2013**
 
 >[!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model for TFS 2015 and earlier versions. For the Hosted XML process model and TFS 2017 and later versions, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md).  <br/><br/>
->Customizing link control options is not a supported feature This the Hosted XML process model. For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
+>This topic applies to team project customization for the On-premises XML process model for TFS 2015 and earlier versions. For the Hosted XML process model and TFS 2017 and later versions, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md).  
+>
+>Customizing link control options is not a supported feature for the Hosted XML process model. For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
 
 
 You use the `LinksControlOptions` element to define the options for controlling what links can be added to a work item and the default columns that you want to appear for the list of links in a work item. When you add a links control to a work item form, you can specify filters that restrict the types of links that users can be view and create and the types of work items to which users can create links. Specifically, you use the following elements as indicated:  

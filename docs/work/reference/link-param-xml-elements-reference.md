@@ -11,7 +11,7 @@ ms.date: 04/05/2017
 
 # Link and Param XML elements reference
 
-[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
+[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)] 
 
 You can add a hyperlink to a field or a standalone label on a work item form by using the `Link` element. You use the `Link` element in the following instances to:  
   

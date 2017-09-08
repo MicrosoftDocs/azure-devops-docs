@@ -12,10 +12,7 @@ ms.date: 01/20/2017
 
 <b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b> 
 
->[!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize a process](../process/customize-process.md). 
->
->For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md). 
+[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You use the **TRANSITION** element to specify a valid progression or regression from one state to another for a type of work item. The **TRANSITION** element is a required child element of the **TRANSITIONS** element.  
   

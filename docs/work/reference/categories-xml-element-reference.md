@@ -17,7 +17,8 @@ You use the `CATEGORIES` element to group work item types (WITs). [Use categorie
   
 ## Syntax  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <CATEGORIES>  
    <CATEGORY name="category display name" refname="category reference name">  
       <DEFAULTWORKITEMTYPE name="work item type reference name" />  
@@ -48,14 +49,10 @@ You use the `CATEGORIES` element to group work item types (WITs). [Use categorie
   
  Each category has a friendly name and a reference name that must be unique within the team project. Each category friendly name must meet the following requirements:  
   
--   Names can have up to 254 Unicode characters.  
-  
--   Names must not be empty.  
-  
--   Names cannot have leading or trailing white spaces.  
-  
--   Names cannot contain backslash (\\) characters.  
-  
+-   Names can have up to 254 Unicode characters.    
+-   Names must not be empty.    
+-   Names cannot have leading or trailing white spaces.    
+-   Names cannot contain backslash (\\) characters.   
 -   Names cannot contain two consecutive white spaces.  
   
  Category friendly names are not localized and cannot be made into a token, whereas the names for work item types are localized and can be made into a token.  
@@ -65,18 +62,16 @@ You use the `CATEGORIES` element to group work item types (WITs). [Use categorie
   
 -   To use the [backlog](http://msdn.microsoft.com/en-us/70a01e94-2dc9-4090-823c-71ee8e156e74) and [task](http://msdn.microsoft.com/en-us/f13e32ae-fe77-421a-b524-43b6bcd1a0f3) boards, you must assign at least one WIT to the Requirements Category and one WIT to the Task Category.  
   
--   You cannot assign the same WIT to both the Requirements Category and to the Task Category.  
-  
--   If you include more than one WIT in the Requirements Category or the Task Category, the type assigned to the `DEFAULTWORKITEMTYPE` element appears as the default type on the Agile backlog and board pages.  
-  
--   WITs that belong to a category which defines a backlog in the ProcessConfiguration file must have start, closing, and at least one intermediate  workflow state napped to a valid metastate as described in [Process Configuration XML element reference](process-configuration-xml-element.md).  
-  
+-   You cannot assign the same WIT to both the Requirements Category and to the Task Category.   
+-   If you include more than one WIT in the Requirements Category or the Task Category, the type assigned to the `DEFAULTWORKITEMTYPE` element appears as the default type on the Agile backlog and board pages.   
+-   WITs that belong to a category which defines a backlog in the ProcessConfiguration file must have start, closing, and at least one intermediate  workflow state napped to a valid metastate as described in [Process Configuration XML element reference](process-configuration-xml-element.md).   
 -   WITs that you assign to the Bug Category can be configured to [show up on backlogs and boards for each team](http://msdn.microsoft.com/en-us/49b374e0-1700-4650-bacf-759e7eee4580). You set the default behavior by [defining the property for BugsBehavior in the ProcessConfiguration file](process-configuration-xml-element.md).  
   
 ## Example  
  The following example lists the default categories XML file for the Scrum process template.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <?xml version="1.0" encoding="utf-8"?>  
 <cat:CATEGORIES xmlns:cat="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/categories">  
   <!-- Usage: for resilience in Test system. Even if WITs have different name, they can be referred to by the category -->  

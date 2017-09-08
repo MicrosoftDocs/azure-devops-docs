@@ -11,9 +11,7 @@ ms.date: 04/05/2017
 
 # Add or modify a field  
 
-[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
-
-[!INCLUDE [temp](../_shared/customization-phase-0-and-1.md)]
+[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 Your team project contains 100 or more data fields, based on the process&#151;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md)&#151;used to create the team project. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. 
 

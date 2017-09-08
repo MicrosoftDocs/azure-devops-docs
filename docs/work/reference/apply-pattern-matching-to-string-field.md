@@ -10,15 +10,12 @@ ms.date: 02/10/2017
 ---
 # Apply pattern matching to a string field
 
-<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015</b>
-
->[!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize/customize-work.md).  
+[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)] 
 
 You can use the **MATCH** element to force values in a field of String type to follow a pattern that you specify. If you define multiple **MATCH** elements, the value will be valid if it matches any of the patterns that you specify for the field. If at least one element succeeds, the field has a valid value.  
   
 > [!NOTE]
->  To add a rule to a `FIELD` definition, use the **witadmin** command-line tool to import and export the definition for the work item type. See [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).  
+> To add a rule to a `FIELD` definition, use the **witadmin** command-line tool to import and export the definition for the work item type. See [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).  
   
 ## MATCH Element Syntax Structure  
  You use the **MATCH** element to enforce basic pattern matching by defining a pattern that values in String type fields must match.  
