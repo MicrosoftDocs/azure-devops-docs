@@ -28,10 +28,8 @@ instead.
 
 Before you start, you'll need:
 
-* **A Visual Studio Team Services account**. If you don't have one, 
-  **[sign up now](https://www.visualstudio.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services)**.
-* **A team project**. If you haven't created it, 
-  **[find out how](https://www.visualstudio.com/docs/setup-admin/team-services/connect-to-visual-studio-team-services)**.
+* **A Visual Studio Team Services account**.
+* **A team project**. 
 * **Azure VMs**. If you need to create them, 
   **[here's how](http://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial/)**.
 * **An Azure storage account.** Create one 

@@ -399,13 +399,13 @@ when you set up the test, and it will be applied when the load test runs.
 
 ### Q:  Can I use mstest to run load tests with VSTS?
 
-**A**: Yes, you can in Team Foundation Server (TFS) 2015 and in VSTS.
+**A**: Yes, you can in VSTS, and in TFS 2015 and later.
 For more information, see
 [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2015/08/24/cloud-load-test-support-in-mstest-exe-command-line-and-xaml-builds/).
 
 ### Q:  Can I debug a load test while it's running in the cloud?
 
-**A**: Yes, you can do this when you use Visual Studio Enterprise 2015. 
+**A**: Yes, you can do this when you use Visual Studio Enterprise 2015 or later. 
 [Learn more](https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/06/using-advanced-diagnostics-to-debug-issues-in-cloud-load-test.aspx).
 
 ### Q: How can I check the status of the Cloud-based Load Testing service?
@@ -525,7 +525,7 @@ for your app there. If you see data collected there, report your issue to
   in again to refresh the token.
 
 * Azure Active Directory is not enabled for your VSTS account.
-  See [Enable Azure Active Directory](https://www.visualstudio.com/docs/setup-admin/team-services/manage-organization-access-for-your-account-vs).
+  See [Access VSTS with Azure Active Directory](../accounts/access-with-azure-ad.md).
 
 If none of the above works, contact us at [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com).
 
@@ -565,8 +565,8 @@ connection will keep trying to connect indefinitely.
 
 ### Q: Why can't I use more than 250 virtual users or plug-ins when I have Visual Studio Ultimate or Visual Studio Enterprise?
 
-**A**: If this happens, you must take the Visual Studio Ultimate 2013 or Visual Studio 
-Enterprise 2015 Product Key from your MSDN subscription and use the "Change my Product License" 
+**A**: If this happens, you must take the Visual Studio 
+product key from your MSDN subscription and use the "Change my Product License" 
 option on the Product Information page. You must do this on every machine where you want 
 to run load tests using VSTS. To get the product key, 
 [visit this site](https://msdn.microsoft.com/subscriptions/keys/).
