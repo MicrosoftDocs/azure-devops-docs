@@ -52,6 +52,11 @@ when a release is created by a continuous deployment trigger, based on:
 
   ![The scheduled trigger conditions settings](_img/trigger-02.png)
 
+* **Filters based on the artifacts**. You can add one or more filters for each artifact linked to the release definition.
+  Deployment will be triggered to this environment only if all the artifact conditions are successfully met.
+
+  ![The artifact filter trigger conditions settings](_img/trigger-02b.png)
+
 * **The result of deploying to a previous environment in the pipeline**.
   Use this setting if you want the release to be first deployed and validated in
   another environment(s) before it is deployed to this environment.
