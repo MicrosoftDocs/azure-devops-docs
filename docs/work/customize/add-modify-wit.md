@@ -11,7 +11,7 @@ ms.date: 06/12/2017
 
 # Add or modify a work item type 
 
-<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
+[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
 
 [!INCLUDE [temp](../_shared/customization-phase-0-and-1.md)]
 

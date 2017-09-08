@@ -85,7 +85,7 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
 </code>
 
 <p>*globalListName*: A string of text that contains between 1 and 255 characters.</p>
-<p>**GLOBALLIST** is a required child element of the **GLOBALLISTS** element and an optional child element of the `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES` elements. For more information, see [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](https://msdn.microsoft.com/en-us/library/ms194947.aspx).</p>
+<p>**GLOBALLIST** is a required child element of the **GLOBALLISTS** element and an optional child element of the `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES` elements. For more information, see [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](define-pick-lists.md).</p>
 
 </td>
 </tr>
@@ -109,7 +109,8 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
 
  By adding the following syntax, you can define a global list within an XML definition file for a type of work item or a global workflow:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <GLOBALLISTS>  
     <GLOBALLIST name="name of global list">  
         <LISTITEM value="List item 1" />  
@@ -124,7 +125,8 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
   
  By using the following syntax, you can reference a global list within an XML definition file for a type of work item:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <GLOBALLISTS>  
    <GLOBALLIST name=" name of global list 1" />  
    <GLOBALLIST name=" name of global list 2" />  
@@ -133,14 +135,15 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
 </GLOBALLISTS>  
 ```  
 
-For information about the structure and location of definition files for types of work items or global workflow, see [All WITD elements](all-witd-xml-elements-reference.md) or [GLOBALWORKFLOW](https://msdn.microsoft.com/en-us/library/gg534716.aspx), respectively.  
+For information about the structure and location of definition files for types of work items or global workflow, see [All WITD elements](all-witd-xml-elements-reference.md) or [GLOBALWORKFLOW](global-workflow-xml-element-reference.md), respectively.  
 
 <a name="project-collection"></a>   
 ## Sample global list maintained for a project collection  
 
 To add a global list to a project collection, you can import the following syntax by using the **witadmin importgloballist** command:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/globallists">  
     <GLOBALLIST name="NameOfGlobalList">  
         <LISTITEM value="ListItem1" />  
@@ -163,6 +166,6 @@ To add a global list to a project collection, you can import the following synta
 ### Are any global lists auto-populated with data?  
 Yes for on-premises TFS. The global list named **Builds**–*TeamProjectName* gets appended each time a build is run. Over time, the list can become very long. Best practice is to routinely remove unused items from the list.  
   
-To learn more about using this list, see [Fields that support integration with test, build, and version control](https://msdn.microsoft.com/library/ms194965.aspx).  
+To learn more about using this list, see [Query based on build and test integration fields](../track/build-test-integration.md).  
   
 

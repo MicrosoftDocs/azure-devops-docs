@@ -15,7 +15,7 @@ Supports the following FWLINK: Additional configuration options are available - 
 
 #Additional configuration options post update
 
-<b>TFS 2017 | TFS 2015 | TFS 2013</b>
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 >[!IMPORTANT]  
 >This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on Visual Studio Team Services [update automatically with each service upgrade](/vsts/release-notes/index). 

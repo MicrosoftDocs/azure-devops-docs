@@ -103,7 +103,6 @@ For more information about service accounts for SQL Server, see the following pa
 
 **A:** See the following topics:
 
--  [Change the service account or password for SQL Server Reporting Services](change-service-account-or-password-sql-reporting.md) 
+* [Change the service account or password for SQL Server Reporting Services](change-service-account-or-password-sql-reporting.md) 
 
--  [Change the service account or password for Team Foundation Server](change-service-account-password.md)
-- 
+* [Change the service account or password for Team Foundation Server](change-service-account-password.md)

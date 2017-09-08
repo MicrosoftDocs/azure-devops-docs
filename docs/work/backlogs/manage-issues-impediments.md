@@ -12,8 +12,7 @@ ms.date: 08/15/2017
 
 # Manage issues or impediments 
 
-
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <a name="manage-impediments"></a>
 

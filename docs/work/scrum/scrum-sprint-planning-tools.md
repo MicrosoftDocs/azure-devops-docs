@@ -12,7 +12,7 @@ ms.date: 08/19/2017
 
 # Scrum and sprint planning tools
  
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
 <!--- ADD WIDGET INFO AS WELL --> 
 

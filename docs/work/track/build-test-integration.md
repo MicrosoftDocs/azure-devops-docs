@@ -1,5 +1,5 @@
 ---
-title: Build and test integration queries | VSTS & TFS
+title: Build and test integration queries 
 description: Track work by creating queries based on build and test integration fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 04/14/2017
 
 # Query based on build and test integration fields
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Build and test integration work item fields support the following actions:  
 -   Associate bugs with the builds where they were found or fixed  

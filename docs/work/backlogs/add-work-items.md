@@ -12,7 +12,7 @@ ms.date: 08/07/2017
 
 # Track work and issues, add and update a work item 
 
-<b>VSTS | TFS 2017</b> 
+<b>VSTS | TFS 2018 | TFS 2017</b> 
 
 
 >[!IMPORTANT]   

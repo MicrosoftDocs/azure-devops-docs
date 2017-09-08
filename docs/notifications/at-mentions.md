@@ -12,7 +12,7 @@ ms.date: 08/24/2017
 
 
 # Use &#64;mentions to further discussion
-**VSTS | TFS 2017 | TFS 2015.2**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015.2**
 
 The **@mention** control allows you to quickly pull someone into a discussion.  You can use this control within the Discussion section of a work item form, or a pull request. 
 

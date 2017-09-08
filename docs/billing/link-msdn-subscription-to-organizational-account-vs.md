@@ -14,7 +14,7 @@ ms.date: 11/29/2016
 
 **VSTS**
 
-To set up the linking between your Microsoft account to your work or school account, sign in to the Visual Studio subscriptions portal (```https://my.visualstudio.com```) with your Microsoft account, and follow the steps below:
+To set up the linking between your Microsoft account to your work or school account ([learn more](link-msdn-subscription-concept.md)), sign in to the Visual Studio subscriptions portal (```https://my.visualstudio.com```) with your Microsoft account, and follow the steps below:
 
 
 <a name="my-visualstudio-com"></a>

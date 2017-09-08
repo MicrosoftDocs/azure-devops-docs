@@ -12,7 +12,7 @@ ms.date: 07/22/2017
 
 # Implement Scaled Agile Framework® to support epics, release trains, and multiple backlogs  
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 As enterprises are benefiting from individual agile teams, the question now is how do we scale these practices across teams and gain a portfolio view of the progress of agile teams throughout the enterprise? To address these needs, many businesses are using the Scaled Agile Framework® (SAFe®).  
 

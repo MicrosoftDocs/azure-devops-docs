@@ -1,5 +1,5 @@
 ---
-title: Manage notifications for a team | VSTS & TFS
+title: Manage notifications for a team 
 description: Get notified when changes occur to source code, git, work items, and builds when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.technology: collaborate
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 02/14/2017
 
 # Manage notifications for a team
 
-<b>VSTS | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
+<b>VSTS | TFS 2018 | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
 
 >[!NOTE]  
 >This topic applies to VSTS and to TFS 2017.1 and later versions. If you work from an on-premises TFS 2017 or ealier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) in order for team members to see the Notifications option from their account menu and to  receive notifications. 

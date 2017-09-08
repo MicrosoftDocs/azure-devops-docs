@@ -12,7 +12,7 @@ ms.date: 08/18/2017
 
 # View and add work items using the Work Items page  
 
-**Team Services**  
+**VSTS**  
 
 >[!NOTE]   
 ><b>Feature availability: </b>The **Work Items** page is in preview and currently available from Team Services only. 

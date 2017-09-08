@@ -13,7 +13,7 @@ ms.date: 08/31/2017
 
 # FAQs on notifications
 
-**VSTS | TFS 2017**
+**VSTS | TFS 2018 | TFS 2017**
 
 ## Can I receive emails in plain text? 
 No. This was supported in earlier versions of VSTS and TFS, but all emails are now HTML formatted.

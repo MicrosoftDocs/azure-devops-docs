@@ -11,7 +11,7 @@ ms.date: 07/14/2017
 
 
 # Reorder cards  
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
 
 > [!NOTE]  
 > **Feature availability:** This feature is supported from VSTS or an on-premises TFS 2015.1 or later version.   

@@ -12,7 +12,7 @@ ms.date: 06/22/2017
 
 
 # Triage work items  
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 !!! WORK IN PROGRESS !!! 
 

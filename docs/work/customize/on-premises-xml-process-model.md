@@ -14,7 +14,7 @@ ms.date: 08/02/2017
 <a id="on-prem-xml-process-model"></a>
 # On-premises XML process model 
 
-**TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 
 You can perform the following tasks when you work with the On-prem XML process model. 

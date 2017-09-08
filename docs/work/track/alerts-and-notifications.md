@@ -1,5 +1,5 @@
 ---
-title: Set alerts, get notified when changes occur | TFS
+title: Set alerts, get notified when changes occur 
 description: Set alerts to get email notifications when changes occur to source code, git, work items, and builds when using Team Foundation Server (TFS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

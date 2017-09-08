@@ -12,7 +12,7 @@ ms.date: 07/12/2017
  
 # Velocity metrics and usage guidance 
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)]
  
 Velocity provides a useful metric for these activities:  
 - Support sprint planning  

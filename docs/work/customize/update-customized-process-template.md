@@ -11,7 +11,7 @@ ms.date: 03/02/2017
 
 # Update a customized process template to access new features
 
-<b>TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 >[!IMPORTANT]  
 >This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). Team projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). To update a team project that uses the Hosted XML process, see [Import process](../import-process/import-process.md).

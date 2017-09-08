@@ -1,5 +1,5 @@
 ---
-title: Workbooks | TFS
+title: Workbooks  
 description: Use the workbook to rank and assign bugs to be worked on for an iteration, also referred to as a sprint.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting

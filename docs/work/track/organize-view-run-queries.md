@@ -13,7 +13,7 @@ ms.date: 05/31/2017
 
 # Organize, view, and run queries    
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 !!! WORK IN PROGRESS !!!
 

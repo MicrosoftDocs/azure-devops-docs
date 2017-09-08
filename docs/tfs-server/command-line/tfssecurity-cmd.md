@@ -26,7 +26,9 @@ This server-level tool is located in Drive:\\%programfiles%\\Microsoft Team Foun
 ### /a+: Add permissions
 Use **/a+** to add permissions for a user or a group in a server-level, collection-level, or project-level group. To add users to groups from the user interface, see [Manage users or groups](https://msdn.microsoft.com/library/30493f4c-d3e6-42f0-bca2-2ad749246944).
 
-	tfssecurity /a+ Namespace Token Action Identity (ALLOW | DENY) [/collection:CollectionURL] [/server:ServerURL]
+```
+tfssecurity /a+ Namespace Token Action Identity (ALLOW | DENY)[/collection:CollectionURL] [/server:ServerURL]
+```
 
 #### Required Permissions
 
@@ -56,10 +58,13 @@ The following example displays what namespaces are available at the server level
 > [!NOTE]
 > The examples are for illustration only and are fictitious. No real association is intended or inferred.
 
-     tfssecurity /a /server:ServerURL 
+```
+tfssecurity /a /server:ServerURL 
+```
 
 Sample output:
 
+```
     TFSSecurity - Team Foundation Server Security Tool
     Copyright (c) Microsoft Corporation.  All rights reserved.
 
@@ -78,10 +83,13 @@ Sample output:
          Lab
 
     Done.
+```
 
 The following example displays what actions are available for the Server namespace at the collection level.
 
-     tfssecurity /a Server /collection:CollectionURL 
+```
+tfssecurity /a Server /collection:CollectionURL 
+```
 
 Sample output:
 

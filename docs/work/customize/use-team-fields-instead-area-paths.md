@@ -11,7 +11,7 @@ ms.date: 04/14/2017
 
 # Use team fields instead of area paths to support teams
 
-<b>TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 >[!IMPORTANT]  
 >**Feature availability:**&#160;&#160;Team fields are only supported for on-premises TFS. Team fields are not supported in VSTS. 

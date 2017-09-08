@@ -11,9 +11,7 @@
   - name: Try extensions for free
     href: try-additional-features-vs.md
   - name: Install an extension
-    href: ../marketplace/install-vsts-extension.md?toc=/vsts/accounts/toc.json
-  - name: Request permission for an extension
-    href: ../marketplace/request-vsts-extension.md?toc=/vsts/accounts/toc.json
+    href: /vsts/marketplace/install-vsts-extension?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
 - name: Tutorials
   items:
   - name: Change Azure AD tenant
@@ -47,15 +45,15 @@
   - name: Manage extensions
     items:
     - name: Change number of paid extension users
-      href: ../billing/change-number-paid-extension-users.md
+      href: change-number-paid-extension-users.md
     - name: Request permission for an extension
-      href: ../marketplace/request-vsts-extension.md?toc=/vsts/accounts/toc.json
+      href: /vsts/marketplace/request-vsts-extension?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
     - name: Approve requests for VSTS extensions
-      href: ../marketplace/approve-vsts-extensions.md?toc=/vsts/accounts/toc.json
+      href: /vsts/marketplace/approve-vsts-extensions?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
     - name: Assign paid extensions access
-      href: ../marketplace/assign-paid-extensions.md?toc=/vsts/accounts/toc.json
+      href: /vsts/marketplace/assign-paid-extensions?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
     - name: Uninstall or disable extensions
-      href: ../marketplace/uninstall-disable-vsts-extensions.md?toc=/vsts/accounts/toc.json
+      href: /vsts/marketplace/uninstall-disable-vsts-extensions?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
   - name: How to buy HockeyApp
     href: get-hockeyapp.md
   - name: How to buy Xamarin University

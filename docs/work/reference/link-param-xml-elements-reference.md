@@ -11,7 +11,7 @@ ms.date: 04/05/2017
 
 # Link and Param XML elements reference
 
-[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]  
+[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
 
 You can add a hyperlink to a field or a standalone label on a work item form by using the `Link` element. You use the `Link` element in the following instances to:  
   
@@ -26,7 +26,8 @@ The `Link` element is either a child element of the `Control` element, or a chil
  
 ## Syntax  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <Link URLRoot="URLRoot" URLPath ="URLPathWithParameters">  
    <Param Index="IndexValue " Value="ParamValue " Type ="Original | Current"/>  
 </Link>  
@@ -40,7 +41,7 @@ The `Link` element is either a child element of the `Control` element, or a chil
 |Element|Attribute|Description|  
 |-------------|---------------|-----------------|  
 |`Link`|  |Optional `Control` element when `type="FieldControl"`.<br /> Optional `LabelText` element.<br />Optional `Text` element.<br /> Optional `WebpageControlOptions` element.<br />Container element for defining a hyperlink or URL. |  
-|  |`UrlRoot`|Required `Link` attribute.<br /> Specifies the protocol and the server name of the URL to which the label links. Supported protocols are HTTP, HTTPS and MAILTO.<br /> You can either hardcode the specified server name , or you can use one of the following macros and optionally append additional address information to a macro: **Note:**  Each macro links to the URL that is defined and enabled for the team project of the work item form for which the `Link` element is defined. If any of the resources are not provisioned or enabled for the team project, a "page not found" error will appear. <br />-   `@PortalPage`: The URL of the SharePoint site for the current team project (for example, http://*serverName*/sites/*collectionName/TeamProjectName*).<br />-   `@ProcessGuidance`: The URL of the SharePoint site for the process guidance for a team project.<br />-   `@ReportManagerUrl`: The URL of the server that hosts Report Manager for the current team project. This provides a link to the folder view for the reports (for example, http://serverName/Reports/Pages/Folder.aspx?ItemPath=/*collectionName/teamProjectName*).<br />-   `@ReportServiceSiteUrl`: The URL of the server that hosts SQL Server Reporting Services for the current team project plus the base path for the team project (for example, http://*serverName*/Reports/Pages/reportservice.asmx?ItemPath=/*collectionName/teamProjectName*).<br /> To determine the hardcoded value for the first two macros, you can open the project portal settings for a team project. For more information, see [Configure or redirect process guidance](https://msdn.microsoft.com/en-us/library/ms242876.aspx). |  
+|  |`UrlRoot`|Required `Link` attribute.<br /> Specifies the protocol and the server name of the URL to which the label links. Supported protocols are HTTP, HTTPS and MAILTO.<br /> You can either hardcode the specified server name , or you can use one of the following macros and optionally append additional address information to a macro: **Note:**  Each macro links to the URL that is defined and enabled for the team project of the work item form for which the `Link` element is defined. If any of the resources are not provisioned or enabled for the team project, a "page not found" error will appear. <br />-   `@PortalPage`: The URL of the SharePoint site for the current team project (for example, http://*serverName*/sites/*collectionName/TeamProjectName*).<br />-   `@ProcessGuidance`: The URL of the SharePoint site for the process guidance for a team project.<br />-   `@ReportManagerUrl`: The URL of the server that hosts Report Manager for the current team project. This provides a link to the folder view for the reports (for example, `http://serverName/Reports/Pages/Folder.aspx?ItemPath=/*collectionName/teamProjectName*`).<br />-   `@ReportServiceSiteUrl`: The URL of the server that hosts SQL Server Reporting Services for the current team project plus the base path for the team project (for example, http://*serverName*/Reports/Pages/reportservice.asmx?ItemPath=/*collectionName/teamProjectName*).<br /> To determine the hardcoded value for the first two macros, you can open the project portal settings for a team project. For more information, see [Configure or redirect process guidance](../../report/sharepoint-dashboards/configure-or-redirect-process-guidance.md). |  
 |  |`UrlPath`|Optional `Link` attribute.<br /> Specifies a URL path for the hyperlink. You use this attribute to specify variable parameters that are determined at run time.  |  
 |`Param`|  |Optional `Link` element. Required when `UrlPath` is specified.<br /> Specifies a value to be used to determine the URL of the hyperlink when `UrlPath` is specified.<br />  |  
 |  |`Index`|Required `Param` attribute.<br /> Specifies the index of the parameter where the value must be formatted into the URL string. It is not required to order the Index values sequentially; however, they must match the number of the index in the `URLPath` string. The first index number should be 0.|  
@@ -67,13 +68,15 @@ The `LabelText` element is only recognized by clients that are running the lates
   
 The following example shows how you can define a hyperlink that links to the process guidance for the Iteration topic.  
  
-```
+> [!div class="tabbedCodeSnippets"]
+```XML
 http://ServerName/sites/CollectionName/ProjectName/render.aspx?wit=bug&amp;topic=Iteration
 ```  
 
 The name of the project is derived from the value assigned to the System.Project field.  
   
-```
+> [!div class="tabbedCodeSnippets"]
+```XML
 <Link UrlRoot="http://serverName" UrlPath="sites/{0}/render.aspx?wit=bug&amp;topic=Iteration">
    <Param Index="0" Value="System.Project" />
 </Link>
@@ -82,7 +85,8 @@ The name of the project is derived from the value assigned to the System.Project
 ### Example: Add a hyperlink to a standalone label  
 The following example shows how you can assign a hyperlink to the text "work item guidance" on a work item form.  
   
-```
+> [!div class="tabbedCodeSnippets"]
+```XML
 <Control type="LabelControl">
    <LabelText> 
       <Text>
@@ -96,7 +100,8 @@ The following example shows how you can assign a hyperlink to the text "work ite
  
 The following example shows how you can add a hyperlink to the label for a field on a work item form.  
   
-```
+> [!div class="tabbedCodeSnippets"]
+```XML
 <Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="This text comes from the Label attribute:">
    <LabelText>
       <Text>

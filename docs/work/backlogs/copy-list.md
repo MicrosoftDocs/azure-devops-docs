@@ -1,5 +1,5 @@
 ---
-title: Copy list of work items | VSTS & TFS
+title: Copy list of work items 
 description: Copy a list of backlog items or a query Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 08/24/2017
 
 # Copy a list of work items  
 
-**VSTS | TFS 2017 | TFS 2015 | TFS 2013** 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="html"></a>
 

@@ -11,7 +11,7 @@ ms.date: 02/22/2017
 
 # Schedule projects using Microsoft Project  
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
 >[!IMPORTANT]  

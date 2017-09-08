@@ -13,7 +13,7 @@ ms.topic: get-started-article
 
 # Add and edit pages in your team project wiki 
 
-**VSTS**
+**VSTS | TFS 2018**
 
 >[!NOTE]  
 ><b>Feature availability: </b>The built-in wiki is in Preview and available for VSTS at this time. You enable this feature for a team project from the [Preview features option from your profile menu](preview-features.md#account-level).   
@@ -146,7 +146,7 @@ To find a page, enter a title or keyword into the **Filter pages** box.
 ## Related notes
 
 - [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../reference/markdown-guidance.md)  
-- [Get Started with Git and Team Services](../git/gitquickstart.md)
+- [Get Started with Git](../git/gitquickstart.md)
 - [Git repository permissions](../security/permissions.md#git-repository)
 
 

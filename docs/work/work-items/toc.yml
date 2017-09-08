@@ -38,67 +38,55 @@
     href: /vsts/work/process/new-work-item-experience?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: Permissions and access for work tracking
     href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
-  - name: Process guidance
+  - name: Agile process guidance
+    href: /vsts/work/guidance/agile-process?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
     items:
-    - name: Agile process
-      href: /vsts/work/guidance/agile-process?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
     - name: "Agile work item types & workflow"
       href: /vsts/work/guidance/agile-process-workflow?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
-    - name: Scrum process
-      href: /vsts/work/guidance/scrum-process?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
+  - name: Scrum process guidance
+    href: /vsts/work/guidance/scrum-process?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
+    items:
     - name: "Scrum work item types & workflow"
       href: /vsts/work/guidance/scrum-process-workflow?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
-    - name: CMMI process guidance
+  - name: CMMI process guidance
+    href: /vsts/work/guidance/cmmi-process?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    items:
+    - name: "CMMI work item types & workflow"
+      href: /vsts/work/guidance/cmmi-process-workflow?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    - name: CMMI background
+      href: /vsts/work/guidance/cmmi/guidance-background-to-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    - name: Project management
+      href: /vsts/work/guidance/cmmi/guidance-project-management?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
       items:
-      - name: CMMI process
-        href: /vsts/work/guidance/cmmi-process?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-      - name: "CMMI work item types & workflow"
-        href: /vsts/work/guidance/cmmi-process-workflow?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-        items:
-        - name: "Code review & feedback field reference"
-          href: /vsts/work/guidance/guidance-code-review-feedback-field-reference?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-        - name: "Bugs, issues, & risks  field reference"
-          href: /vsts/work/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-        - name: Change request field reference
-          href: /vsts/work/guidance/cmmi/guidance-change-request-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-        - name: Requirements field reference
-          href: /vsts/work/guidance/cmmi/guidance-requirements-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-        - name: Review meeting field reference
-          href: /vsts/work/guidance/cmmi/guidance-review-meeting-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-      - name: CMMI background
-        href: /vsts/work/guidance/cmmi/guidance-background-to-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-      - name: Project management
-        href: /vsts/work/guidance/cmmi/guidance-project-management?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
-        items:
-        - name: Project activities
-          href: /vsts/work/guidance/cmmi/guidance-project-activities?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
-        - name: Project inception
-          href: /vsts/work/guidance/cmmi/guidance-project-inception?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
-        - name: Plan a project
-          href: /vsts/work/guidance/cmmi/guidance-plan-a-project-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-        - name: Manage change
-          href: /vsts/work/guidance/cmmi/guidance-manage-change?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-        - name: Manage risk
-          href: /vsts/work/guidance/cmmi/guidance-manage-risks?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-        - name: Iteration activities
-          href: /vsts/work/guidance/cmmi/guidance-iteration-activities?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-        - name: Plan an iteration
-          href: /vsts/work/guidance/cmmi/guidance-plan-an-iteration-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-        - name: Manage issues
-          href: /vsts/work/guidance/cmmi/guidance-manage-issues-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-      - name: Engineering
-        href: /vsts/work/guidance/cmmi/guidance-engineering?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-        items:
-        - name: Develop requirements
-          href: /vsts/work/guidance/cmmi/guidance-develop-requirements?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-        - name: Arrange requirements into a product plan
-          href: /vsts/work/guidance/cmmi/arrange-requirements-into-a-product-plan?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-        - name: Create a solution architecture
-          href: /vsts/work/guidance/cmmi/guidance-create-solution-architecture?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-        - name: Implement development tasks
-          href: /vsts/work/guidance/cmmi/guidance-implement-development-tasks?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
-        - name: Build a product
-          href: /vsts/work/guidance/cmmi/guidance-build-product?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+      - name: Project activities
+        href: /vsts/work/guidance/cmmi/guidance-project-activities?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
+      - name: Project inception
+        href: /vsts/work/guidance/cmmi/guidance-project-inception?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
+      - name: Plan a project
+        href: /vsts/work/guidance/cmmi/guidance-plan-a-project-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+      - name: Manage change
+        href: /vsts/work/guidance/cmmi/guidance-manage-change?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+      - name: Manage risk
+        href: /vsts/work/guidance/cmmi/guidance-manage-risks?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+      - name: Iteration activities
+        href: /vsts/work/guidance/cmmi/guidance-iteration-activities?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+      - name: Plan an iteration
+        href: /vsts/work/guidance/cmmi/guidance-plan-an-iteration-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+      - name: Manage issues
+        href: /vsts/work/guidance/cmmi/guidance-manage-issues-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    - name: Engineering
+      href: /vsts/work/guidance/cmmi/guidance-engineering?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+      items:
+      - name: Develop requirements
+        href: /vsts/work/guidance/cmmi/guidance-develop-requirements?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+      - name: Arrange requirements into a product plan
+        href: /vsts/work/guidance/cmmi/arrange-requirements-into-a-product-plan?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+      - name: Create a solution architecture
+        href: /vsts/work/guidance/cmmi/guidance-create-solution-architecture?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+      - name: Implement development tasks
+        href: /vsts/work/guidance/cmmi/guidance-implement-development-tasks?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+      - name: Build a product
+        href: /vsts/work/guidance/cmmi/guidance-build-product?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
       - name: Track bugs
         href: /vsts/work/guidance/cmmi/track-bugs?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
 - name: How-to Guides
@@ -131,6 +119,17 @@
   items:
   - name: Work item field index
     href: /vsts/work/guidance/work-item-field?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    items:
+    - name: "Code review & feedback field reference"
+      href: /vsts/work/guidance/guidance-code-review-feedback-field-reference?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    - name: "Bugs, issues, & risks  field reference"
+      href: /vsts/work/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    - name: Change request field reference
+      href: /vsts/work/guidance/cmmi/guidance-change-request-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    - name: Requirements field reference
+      href: /vsts/work/guidance/cmmi/guidance-requirements-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    - name: Review meeting field reference
+      href: /vsts/work/guidance/cmmi/guidance-review-meeting-field-reference-cmmi?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Clients that support work tracking
     href: /vsts/tools?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
 - name: Resources
@@ -141,9 +140,7 @@
     href: ../scrum/index.md
   - name: Backlogs
     href: ../backlogs/index.md
-  - name: Work item queries
+  - name: Queries
     href: ../track/index.md
-  - name: Adhoc work item search
-    href: ../../search/workitem/work-item-search.md
   - name: Customization
     href: ../customize/index.md

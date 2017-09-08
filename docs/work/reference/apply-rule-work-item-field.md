@@ -47,9 +47,12 @@ You can customize the help text or tooltip text that appears when a user points 
 
 The following example shows the assignment of Help text to a custom Business Justification field:
 
-    <FIELD name="Business Justification" refname="Fabrikam.BusinessJustification" type="String">
-    <HELPTEXT>Only required when you set the Urgencyfield to Need Immediately. </HELPTEXT>
-    </FIELD>
+> [!div class="tabbedCodeSnippets"]
+```XML
+<FIELD name="Business Justification" refname="Fabrikam.BusinessJustification" type="String">
+   <HELPTEXT>Only required when you set the Urgencyfield to Need Immediately. </HELPTEXT>
+</FIELD>
+```
 
 To provide users guidance that exceeds the 255 characters limit, see [Provide help text, hyperlinks, or web content on a work item form](provide-help-text-hyperlinks-web-content-form.md).
 
@@ -94,7 +97,7 @@ Pick list rules define the values that a user can or can't choose for a String f
 </tbody>
 </table>
 
-For examples of using pick lists, see [Define pick lists](https://msdn.microsoft.com/library/ms194947.aspx).
+For examples of using pick lists, see [Define pick lists](define-pick-lists.md).
 
 
 <a id="value-rules" /> 
@@ -126,11 +129,11 @@ These rules support setting defaults, copying values from one field to another, 
 <tr>
 <td><p><strong>EMPTY</strong></p></td>
 <td><p>Clears the field of any value that it contains and then makes the field read-only when a user saves the work item. You shouldn't use <strong>EMPTY</strong> with <strong>READONLY</strong>.</p>
-<p><strong>EMPTY</strong> is primarily used [during state transition](https://msdn.microsoft.com/library/aa337653.aspx) to clear fields that apply to the state to which the item is transitioning.</p></td>
+<p><strong>EMPTY</strong> is primarily used [during state transition](transition-xml-element.md) to clear fields that apply to the state to which the item is transitioning.</p></td>
 </tr>
 <tr>
 <td><p><strong>MATCH</strong></p></td>
-<td><p>Forces entries made to a String field to conform to a [specified pattern of characters or numbers](https://msdn.microsoft.com/library/ms404842.aspx).</p></td>
+<td><p>Forces entries made to a String field to conform to a [specified pattern of characters or numbers](apply-pattern-matching-to-string-field.md).</p></td>
 </tr>
 <tr>
 <td><p><strong>SERVERDEFAULT</strong></p></td>
@@ -240,7 +243,7 @@ Conditional rules let you specify when a set of rules will be applied to a paren
 </tbody>
 </table>
 
-You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. For the syntax structure and examples, see [Assign conditional-based values and rules](https://msdn.microsoft.com/library/ms194966.aspx).
+You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. For the syntax structure and examples, see [Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md).
 
 <a id="apply-ignore" /> 
 ## Apply or ignore rules based on user or group  
@@ -349,16 +352,19 @@ System fields have System.*Name* reference names, for example System.Title and S
 
 To avoid validation errors that would otherwise occur when members leave the team and are no longer registered as project contributors, include the **ALLOWEXISTINGVALUE** element for the Assigned To field.
 
-    <FIELD name="Assigned To" refname="System.AssignedTo" type="String" syncnamechanges="true" reportable="dimension">
-       <HELPTEXT>The user who is working on this work item</HELPTEXT>
-       <ALLOWEXISTINGVALUE />
-       <VALIDUSER />
-       <ALLOWEDVALUES expanditems="true" filteritems="excludegroups">
-          <LISTITEM value="Active" />
-          <LISTITEM value="[project]\Contributors" />
-       </ALLOWEDVALUES>
-       <DEFAULT from="field" field="System.CreatedBy" />
-    </FIELD>
+> [!div class="tabbedCodeSnippets"]
+```XML
+<FIELD name="Assigned To" refname="System.AssignedTo" type="String" syncnamechanges="true" reportable="dimension">
+   <HELPTEXT>The user who is working on this work item</HELPTEXT>
+   <ALLOWEXISTINGVALUE />
+   <VALIDUSER />
+   <ALLOWEDVALUES expanditems="true" filteritems="excludegroups">
+      <LISTITEM value="Active" />
+      <LISTITEM value="[project]\Contributors" />
+   </ALLOWEDVALUES>
+   <DEFAULT from="field" field="System.CreatedBy" />
+</FIELD>
+```
 
 ### Apply rules to State and Reason fields
 
@@ -399,14 +405,16 @@ Field rules are additive. That is, you can specify four sets of rules for the sa
 
 The following example restricts modification of the customer severity field when the work item is in the Active state.
 
-    <STATE name="Active">
-       <FIELDS>
-          <FIELD refname="MyCorp.Severity" >
-             <READONLY />
-          </FIELD>
-       </FIELDS>
-    </STATE>
-
+> [!div class="tabbedCodeSnippets"]
+```XML
+<STATE name="Active">
+   <FIELDS>
+      <FIELD refname="MyCorp.Severity" >
+         <READONLY />
+      </FIELD>
+   </FIELDS>
+</STATE>
+```
 
 
 ### Order in which rules are evaluated 
@@ -453,17 +461,19 @@ The system sets a new value for a field every time a user enters a keystroke wit
 
 In the following XML example, SubStatus will be emptied as you type "Approved Again" into the Status field because the **WHEN** rule occurs as soon as the user types the letter "e" in Approved, even if the intended final value is not "Approve". For this reason, think carefully when you are using conditional rules.
 
-    <FIELD refname="MyCorp.SubStatus" />
-    <WHEN field="MyCorp.Status" value="Approve" >
-    <EMPTY />
-    </WHEN>
-    </FIELD>
-
+> [!div class="tabbedCodeSnippets"]
+```XML
+<FIELD refname="MyCorp.SubStatus" />
+   <WHEN field="MyCorp.Status" value="Approve" >
+      <EMPTY />
+   </WHEN>
+</FIELD>
+```
 
 <!--- 
 #### Q: When would I define field rules using global workflow?
 
-**A:** Use global workflow only when you are tasked with maintaining many fields with the same definitions and rules across multiple team projects. Similar to global lists, using global workflow can minimize the work required when you have to update field definitions. For more information, see [Customize global workflow](https://msdn.microsoft.com/library/gg534720.aspx).
+**A:** Use global workflow only when you are tasked with maintaining many fields with the same definitions and rules across multiple team projects. Similar to global lists, using global workflow can minimize the work required when you have to update field definitions. For more information, see [Customize global workflow](global-workflow-xml-element-reference.md).
 
 
 -->

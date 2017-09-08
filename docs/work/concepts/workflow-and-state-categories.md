@@ -1,5 +1,5 @@
 ---
-title: Workflow states and state categories | VSTS & TFS
+title: Workflow states and state categories 
 description: Understand how workflow states map to state categories   
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
@@ -11,7 +11,7 @@ ms.date: 03/31/2017
 
 # Workflow states and state categories
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 All workflows consist of states, transitions, and reasons. A transition supports forward and backward movement among two states. When you add a custom state, the system automatically adds transitions from the custom state to all other inherited states (except for Removed).  
 

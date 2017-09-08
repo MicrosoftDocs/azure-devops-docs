@@ -13,7 +13,7 @@ ms.date: 09/02/2017
 
 # Syntax guidance for Markdown files, widgets, wikis, and pull request comments  
 
-<b>VSTS | TFS 2017 | TFS 2015</b> 
+<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b> 
 
 Having the right guidance at the right time is critical to success. To support your team or contributors to your project, use [markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your project pages, readme files, dashboards, and pull request comments.   
 

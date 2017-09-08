@@ -12,7 +12,7 @@ ms.date: 08/11/2017
 
 # Individual versus shared queries    
 
-**VSTS | TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 !!! WORK IN PROGRESS !!! 
 

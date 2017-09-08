@@ -1,5 +1,6 @@
 ---
-title: Integration Best Practices | Visual Studio Team Services
+title: Integration best practices
+titleSuffix: VSTS 
 description: Best practices when integrating with the Visual Studio Team Services REST API's
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
@@ -13,19 +14,19 @@ ms.date: 01/25/2017
 
 #Best Practices
 
-**Team Services**
+**VSTS**
 
-Team Services, like many Software-as-a-Service solutions, uses multi-tenancy to reduce costs and to enhance scalability and performance. This leaves users vulnerable to performance issues and even outages when other users of their shared resources have spikes in their consumption. To combat these problems, Team Services enforces [Rate Limits](./rate-limits.md) to limit the resources individuals can consume and the number of requests they can make to certain commands. When these limits are exceeded, subsequent requests may be either delayed or blocked. 
+Visual Studio Team Services (VSTS), like many Software-as-a-Service solutions, uses multi-tenancy to reduce costs and to enhance scalability and performance. This leaves users vulnerable to performance issues and even outages when other users of their shared resources have spikes in their consumption. To combat these problems, VSTS enforces [Rate Limits](./rate-limits.md) to limit the resources individuals can consume and the number of requests they can make to certain commands. When these limits are exceeded, subsequent requests may be either delayed or blocked. 
 
-For many teams, Team Services is one of several tools that are used to effectively run an organization. Therefore tools and integrations between services are built to improve efficiencies. For example, you may have application that automatically creates a bug in Team Services when an error is logged. If you are not careful, automated tools can get out of control executing a high rate of requests. This will quickly cause Team Services to enforce rate limits to your account. To help reduce your risk of hitting the rate limits, follow these best practices when using the REST API's to integrate with Team Services.
+For many teams, VSTS is one of several tools that are used to effectively run an organization. Therefore tools and integrations between services are built to improve efficiencies. For example, you may have application that automatically creates a bug in VSTS when an error is logged. If you are not careful, automated tools can get out of control executing a high rate of requests. This will quickly cause VSTS to enforce rate limits to your account. To help reduce your risk of hitting the rate limits, follow these best practices when using the REST API's to integrate with VSTS
 
 ##Push only actionable work items
-Only push items into Team Services when it is an actionable work item that your team actually going to engage on or address in the future. Keep work items out of Team Services until absolutely necessary. 
+Only push items into VSTS when it is an actionable work item that your team actually going to engage on or address in the future. Keep work items out of VSTS until absolutely necessary. 
 
 For example, don't attempt to store telemetry data in Team Sevices.
 
 ##Maintain your own data store
-Don't add work items into Team Services for the sake of having them all in one place. Team Services is not designed as a data storage service. You should maintain your own data store.
+Don't add work items into VSTS for the sake of having them all in one place. VSTS is not designed as a data storage service. You should maintain your own data store.
 
 ##Batch your changes
 Doing single operations is slow and expensive. This the leading cause for performance issues and rate limiting. Batch your changes into a single call. See our [batch documentation](https://visualstudio.com/integrate/api/wit/batch.md) and [sample code](https://visualstudio.com/integrate/api/wit/samples.md#create-a-user-story-and-a-child-task) for guidance.
@@ -72,7 +73,7 @@ Limit the number of links per work item as much as possible. We recommend that y
 
 > We will be enforcing work item revision and link limits in the near future. These limits will be determined by performance monitoring and customer feedback.
 
-##Queries for Reporting
-Using queries and individual get work item calls is the number one way to get rate limits enforced on your account. Don't execute queries to return large lists of work items. Use the reporting [work item links](https://visualstudio.com/integrate/api/wit/reporting-work-item-links.md) and [work item revisions](https://visualstudio.com/integrate/api/wit/reporting-work-item-revisions.md) REST API's instead.
+## Queries for Reporting
+Using queries and individual get work item calls is the number one way to get rate limits enforced on your account. Don't execute queries to return large lists of work items. Use the reporting [work item links](https://www.visualstudio.com/docs/integrate/api/wit/reporting-work-item-links) and [work item revisions](https://www.visualstudio.com/en-us/integrate/api/wit/reporting-work-item-revisions) REST API's instead.
 
 You can see our [C# Sample on Github](https://github.com/sferg-msft/vsts-wit-reporting-example)

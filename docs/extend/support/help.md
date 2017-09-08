@@ -2,8 +2,8 @@
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-extend
 ms.service: vsts-extend
-title: Get Help | Extensions for Visual Studio Team Services
-description: Get help with your extension for Visual Studio Team Services.
+title: Get Help | Developing for Visual Studio Team Services
+description: Get help with your extension or custom application for Visual Studio Team Services.
 ms.assetid: fdfc7d19-e17a-420a-881a-b88092624d58
 ms.manager: douge
 ms.author: elbatk
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Get help
 
-Our goal is to help you be successful building extensions for Visual Studio Team Services. For any of the following:
+Our goal is to help you be successful developing for **Visual Studio Team Services**. For any of the following:
 
 * Technical / how-to questions
 * Bugs (or potential bugs)

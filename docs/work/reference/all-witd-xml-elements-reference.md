@@ -13,7 +13,7 @@ ms.date: 02/14/2017
 
 [!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)] 
 
-You can customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements. A WIT defines the fields, rules, and workflow states and transitions for an item of work that will be tracked for a team project, such as a bug, requirement, or risk. You create a team project either in [VSTS](http://www.visualstudio.com/get-started/setup/connect-to-visual-studio-online-vs) or on an [on-premises Team Foundation Server (TFS)](https://msdn.microsoft.com/Library/vs/alm/Overview/create-team-project).  
+You can customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements. A WIT defines the fields, rules, and workflow states and transitions for an item of work that will be tracked for a team project, such as a bug, requirement, or risk. You create a team project either in [VSTS](../../accounts/create-account-with-personal-msa.md) or on an [on-premises Team Foundation Server (TFS)](../../accounts/create-team-project.md).  
   
  The root element in each definition of a WIT is the `WITD` element, which must have only one `WORKITEMTYPE` element defined. The name of each WIT must be unique in a team project, and each type name must be no more than 128 Unicode characters long.  
   
@@ -86,7 +86,7 @@ xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/type
 &nbsp;&nbsp;&nbsp;&lt;LISTITEM&gt; . . . &lt;/LISTITEM&gt;  
 &lt;/GLOBALLIST&gt;  
 </code>
-<p /></td></tr><tr><td data-th="Element"><p>**FIELDS**</p></td><td data-th="Description"><p>Defines the fields used to track data for the WITWithin the <strong>FIELDS</strong> element, you <a href="https://msdn.microsoft.com/en-us/library/ms194980.aspx">define all the fields</a> that you want to use to track data. This includes fields that you will use to run queries and generate reports. </p>
+<p /></td></tr><tr><td data-th="Element"><p>**FIELDS**</p></td><td data-th="Description"><p>Defines the fields used to track data for the WITWithin the <strong>FIELDS</strong> element, you [define all the fields](define-modify-work-item-fields.md) that you want to use to track data. This includes fields that you will use to run queries and generate reports. </p>
 <code>
 &lt;FIELDS&gt;  
 &nbsp;&nbsp;&nbsp;&lt;FIELD&gt; . . . &lt;/FIELD&gt;  
@@ -94,7 +94,7 @@ xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/type
 </code>
 </td></tr>
 <tr>
-<td data-th="Element"><p>**FORM**</p></td><td data-th="Description"><p>Specifies the [design of the work item form](../reference/design-work-item-form.md) by defining the fields and controls that appear on the form and in what order.</p>
+<td data-th="Element"><p>**FORM**</p></td><td data-th="Description"><p>Specifies the [design of the work item form](design-work-item-form.md) by defining the fields and controls that appear on the form and in what order.</p>
 
 <p>**For TFS 2015 and earlier versions**, the **FORM** element contains <strong>Layout</strong>, <strong>Control</strong>, <strong>Group</strong>, <strong>TAB</strong>, <strong>TabGroup</strong>, <strong>Splitter</strong>, and other elements. </p>
 <code>

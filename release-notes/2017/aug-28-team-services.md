@@ -174,7 +174,7 @@ For new repositories and new projects, administrators will no longer be granted 
 
 ### CI builds for Bitbucket repositories
 
-It's now possible to run CI builds from connected Bitbucket repositories. To get started, set up a [service endpoint to connect to Bitbucket](add here). Then in your build definition, on the Tasks tab select the Bitbucket source.
+It's now possible to run CI builds from connected Bitbucket repositories. To get started, set up a [service endpoint to connect to Bitbucket](/vsts/build-release/concepts/library/service-endpoints). Then in your build definition, on the Tasks tab select the Bitbucket source.
 
 <img src="_img/08_28_25.png"; alt="get sources bitbucket repo" style="border:2px solid Silver; display: block; margin: auto;" />
 

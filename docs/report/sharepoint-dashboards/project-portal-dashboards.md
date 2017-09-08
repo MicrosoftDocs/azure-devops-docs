@@ -6,7 +6,7 @@ ms.technology: vs-devops-reporting
 ms.assetid: d1576274-544b-4100-844a-2895e7acf2e4
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/30/2016
+ms.date: 09/07/2017
 ---
 
 # Project portal dashboards
@@ -22,14 +22,10 @@ Teams can quickly find important information about their team projects by using 
   
  **Requirements**  
   
--   To view dashboards, your team project must have a [project portal enabled and be associated with a SharePoint site](configure-or-add-a-project-portal.md). To view the project portal, you must also be a member of the **Visitors** or **Members** group for the portal.  
-  
--   PivotChart reports and Excel Web Access Web Parts that appear in dashboards require that your team project is provisioned with SQL Server Analysis Services.  
-  
--   To update or refresh [Excel reports](../excel/excel-reports.md) that appear in the dashboard, you must belong to a group that is granted access to the Single Sign-on enterprise application definition, or you must belong to the **TfsWarehouseDataReaders** security role in  SQL Server Analysis Services.  
-  
--   To view the dashboard, you must be assigned or belong to a group that has been assigned **Read** permissions in SharePoint Products for the team project.  
-  
+-   To view dashboards, your team project must have a [project portal enabled and be associated with a SharePoint site](configure-or-add-a-project-portal.md). To view the project portal, you must also be a member of the **Visitors** or **Members** group for the portal.   
+-   PivotChart reports and Excel Web Access Web Parts that appear in dashboards require that your team project is provisioned with SQL Server Analysis Services.    
+-   To update or refresh [Excel reports](../excel/excel-reports.md) that appear in the dashboard, you must belong to a group that is granted access to the Single Sign-on enterprise application definition, or you must belong to the **TfsWarehouseDataReaders** security role in  SQL Server Analysis Services.    
+-   To view the dashboard, you must be assigned or belong to a group that has been assigned **Read** permissions in SharePoint Products for the team project.    
 -   To create or modify work items from the dashboard, you must be a member of the **Contributors** group or your **Edit work items in this node** permissions must be set to **Allow**. See [Add users to team projects](../../accounts/add-users.md).  
   
 ##  <a name="Available"></a> Dashboards available to you  
@@ -49,19 +45,12 @@ Teams can quickly find important information about their team projects by using 
  Dashboards use SharePoint Products to display web parts. You can add many types of web parts to a dashboard.  TFS web parts show lists of work items, work item counts, and other project data that is derived from TFS databases. These are the web parts that TFS provides:  
   
 -   Completed Builds Web Part  
-  
--   Go to Work Item Web Part  
-  
--   New Work Item Shortcuts Web Part  
-  
--   Project Portal Links Web Part  
-  
--   Query Results Web Part  
-  
--   Recent Check-ins Web Part  
-  
--   Team Project Portal Shortcut Web Part  
-  
+-   Go to Work Item Web Part    
+-   New Work Item Shortcuts Web Part    
+-   Project Portal Links Web Part    
+-   Query Results Web Part    
+-   Recent Check-ins Web Part   
+-   Team Project Portal Shortcut Web Part   
 -   Work Item Summary Web Part  
   
  The following illustration and table show and describe a sample dashboard, Bugs dashboard. For more information, see [Bugs](bugs-dashboard-agile-cmmi.md).  
@@ -90,41 +79,26 @@ Teams can quickly find important information about their team projects by using 
   
  ![Toolbar for Query Results Web Part](_img/procguid_dashboardworkbook_toolbar.png "ProcGuid_DashboardWorkbook_Toolbar")  
   
--   Create a task, bug, test case, or other work item.  
-  
--   Refresh the items in the list from the query that it references.  
-  
--   Add or remove columns, and change the sort order of the items in the list.  
-  
--   Run the query behind the work item list.  
-  
--   Copy work items to the Clipboard.  
-  
--   Send work items to Office Outlook.  
-  
+-   Create a task, bug, test case, or other work item.    
+-   Refresh the items in the list from the query that it references.    
+-   Add or remove columns, and change the sort order of the items in the list.    
+-   Run the query behind the work item list.    
+-   Copy work items to the Clipboard.    
+-   Send work items to Office Outlook.    
 -   Create a linked work item.  
   
 ##  <a name="Customizing"></a> Customize a dashboard  
- Here's how you can customize a SharePoint dashboard:  
-  
--   Add columns, or sort columns in an existing work item list.  
-  
--   Change the query that is referenced by one of the existing work item lists.  
-  
--   Add a custom query Web part that displays the list of work items that the query finds. For example, you can add a query that lists all active requirements, issues, or other types of work items that are assigned to you.  
-  
--   Add other SharePoint site supported Web parts that integrate with Office Outlook or search functions of SharePoint Products.  
-  
--   Change the filters of each report in Office Excel to focus on specific product areas or iterations.  
-  
+Here's how you can customize a SharePoint dashboard:    
+-   Add columns, or sort columns in an existing work item list.    
+-   Change the query that is referenced by one of the existing work item lists.    
+-   Add a custom query Web part that displays the list of work items that the query finds. For example, you can add a query that lists all active requirements, issues, or other types of work items that are assigned to you.    
+-   Add other SharePoint site supported Web parts that integrate with Office Outlook or search functions of SharePoint Products.    
+-   Change the filters of each report in Office Excel to focus on specific product areas or iterations.    
 -   Add existing or adhoc Excel reports.  
   
  For more information about how to work with and customize reports in Office Excel, see these articles:  
   
--   [Ways to customize PivotTable reports](http://go.microsoft.com/fwlink/?LinkId=165722)  
-  
--   [Edit or remove a workbook from Excel Services](http://go.microsoft.com/fwlink/?LinkId=165723)  
-  
--   [Publish a workbook to Excel Services](http://go.microsoft.com/fwlink/?LinkId=165724)  
-  
+-   [Ways to customize PivotTable reports](http://go.microsoft.com/fwlink/?LinkId=165722)    
+-   [Edit or remove a workbook from Excel Services](http://go.microsoft.com/fwlink/?LinkId=165723)   
+-   [Publish a workbook to Excel Services](http://go.microsoft.com/fwlink/?LinkId=165724)    
 -   [Save a file to a SharePoint library or another Web location](http://go.microsoft.com/fwlink/?LinkId=165725)

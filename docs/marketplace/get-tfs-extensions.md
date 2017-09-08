@@ -72,8 +72,7 @@ go to the Visual Studio Marketplace.
 
    TFS is connected to the Marketplace, so the Marketplace automatically filters and shows on-premises extensions only.
 
-0.	Based on the extension that you select, 
-install or buy the extension.
+0.	Based on the extension that you select, install or buy the extension.
 
 	*	For free or preview extensions, click **Install**.
 	*	For extensions that you haven't paid for access yet, click **Buy**.
@@ -147,8 +146,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 0.	Go to your TFS home page (```https://{server}:8080/tfs/```). 
 
-0.	Browse for your downloaded TFS extensions 
-(```https://{server}:8080/tfs/_gallery```).
+0.	Browse for your downloaded TFS extensions (```https://{server}:8080/tfs/_gallery```).
 
 	**TFS 2015 Update 3**
 
@@ -179,8 +177,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 	<img alt="Select team project collection, click Continue" src="./_img/get-tfs-extensions/standalone/choose-collection.png" style="border: 1px solid #CCCCCC" />
 
-0. Review the permissions that the extension will get when it's installed. 
-Finish installing your extension.
+0. Review the permissions that the extension will get when it's installed. Finish installing your extension.
 
 	<img alt="Review the permissions granted to this extension" src="./_img/get-tfs-extensions/standalone/confirm.png" style="border: 1px solid #CCCCCC" />
 
@@ -226,42 +223,32 @@ so updating and deleting an extension will affect all the team project collectio
 Don't have permissions to install extensions? 
 You can request extensions instead.
 
-0. While you're [disconnected](#disconnected-tfs) 
-or [connected](#connected-tfs) to TFS, 
-try to install the extension.
+0. While you're [disconnected](#disconnected-tfs) or [connected](#connected-tfs) to TFS, try to install the extension.
 
    <img alt="Extension details" src="./_img/get-tfs-extensions/connected/buy-test-manager-extension.png" style="border: 1px solid #CCCCCC" />
 
-0. Select the team project collection where you want to install the extension. 
-If you don't have permissions to install the extension, 
-you can request it now.
+0. Select the team project collection where you want to install the extension. If you don't have permissions to install the extension, you can request it now.
 
 	<img alt="Request extension" src="./_img/get-tfs-extensions/connected/request-install-tfs.png" style="border: 1px solid #CCCCCC" />
 
-   You can review your requests after the 
-   Visual Studio Marketplace sends the request 
-   to the project collection administrator.	
+	You can review your requests after the Visual Studio Marketplace sends the request to the project collection administrator.	
 
 	<img alt="Go to requests" src="./_img/get-tfs-extensions/connected/view-request-tfs.png" style="border: 1px solid #CCCCCC" />
 
-   Your requests appear on your manage extensions page.
+	Your requests appear on your manage extensions page.
 
 	<img alt="View requested extensions" src="./_img/get-tfs-extensions/connected/my-request-tfs.png" style="border: 1px solid #CCCCCC" />
 
-   Your project collection administrator 
-   can review your request after they get it.
+	Your project collection administrator can review your request after they get it.
 
 ## Approve extensions for a team project collection
 
-As a project collection administrator, 
-you'll get email when another team project member requests an extension. 
-When you approve the request, TFS automatically installs the extension.
+As a project collection administrator, you'll get email when another team project member requests an extension. When you approve the request, TFS automatically installs the extension.
 
 To approve extensions, you must also have 
 [**Edit collection-level information** permissions](../security/permissions.md#collection).
 
-0.	Go to your TFS home page, 
-then go to your team project (```https://{server}:8080/tfs/{team-project-collection}/{team-project}```).
+0.	Go to your TFS home page, then go to your team project (```https://{server}:8080/tfs/{team-project-collection}/{team-project}```).
 
 0.	Manage your extensions.
 
@@ -294,18 +281,14 @@ then go to your team project (```https://{server}:8080/tfs/{team-project-collect
 
    After you approve extension requests, TFS automatically installs those extensions. 
 
-0. If you installed paid extensions, 
-go to the next section to [assign those extensions](#assign-extension), 
-to users who need access so they can start using those extensions. 
+0. If you installed paid extensions, go to the next section to [assign those extensions](#assign-extension), to users who need access so they can start using those extensions. 
 
-0. Remember tell your team about installed extensions, 
-   so they can start using their capabilities.
+0. Remember tell your team about installed extensions, so they can start using their capabilities.
 
 <a name="assign-extension"></a>
 ## Assign paid extension access to users
 
-After you install a paid extension, 
-you must assign that extension to users who need access, 
+After you install a paid extension, you must assign that extension to users who need access, 
 so they can start using that extension's capabilities.
 
 > You only have to assign extensions to users who need access. 
@@ -413,31 +396,16 @@ go to the team project collection where you want to uninstall or disable the ext
 
 0.	Manage your extensions.
 
-	<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
+	**TFS 2015 Update 3**
 
-	<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-		<li style="float:left;" data-toggle="collapse" data-target="#manage-extensions-02"></li>
-		<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs2015-03">TFS 2015 Update 3</a></li>
-		<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs2017-03">TFS 2017</a></li>
-	</ul>
-
-	<div id="manage-extensions-02" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-	<div id="tfs2017-03" class="tab-pane fade in active">
+	<img alt="Manage extensions" src="./_shared/_img/manage-extensions.png" style="border: 1px solid #CCCCCC" />
+	
 
 	**TFS 2017**
 
 	<img alt="Manage extensions" src="./_shared/_img/manage-extensions2-new.png" style="border: 1px solid #CCCCCC" />
 
-	</div><div class="tab-pane fade" id="tfs2015-03" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-
-	**TFS 2015 Update 3**
-
-	<img alt="Manage extensions" src="./_shared/_img/manage-extensions.png" style="border: 1px solid #CCCCCC" />
-
-	</div></div></div>
-
-0. On the extensions tab, 
-select the extension, then uninstall or disable it.
+0. On the extensions tab, select the extension, then uninstall or disable it.
 
 	<img alt="Uninstall or disable an extension" src="_shared/_img/uninstall-disable.png" style="border: 1px solid #CCCCCC" />
 

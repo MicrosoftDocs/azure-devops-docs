@@ -13,7 +13,7 @@ ms.topic: get-started-article
 
 # About READMEs and Wiki
 
-**VSTS | TFS 2017**
+**VSTS | TFS 2018 | TFS 2017**
 
 
 ## READMEs

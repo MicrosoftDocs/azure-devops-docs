@@ -13,7 +13,7 @@ ms.date: 08/19/2017
 
 # Schedule sprints  
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 With Scrum, teams plan and track work at regular time intervals, referred to as a sprint cadence. 
 You define sprints to correspond to the cadence your team uses. 

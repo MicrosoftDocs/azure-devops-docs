@@ -19,10 +19,8 @@ You customize the process configuration to modify the display of the web portal 
 > [!NOTE]  
 > If you receive error message TF400917, an invalid configuration has occurred. Re-import the process configuration file to your team project using **witadmin importprocessconfig**. You'll get the messages you need to resolve the error.  
   
-To manage the process configuration for a team project, use the **witadmin** command line tool to export and import the process configuration XML definition file. To learn about process configuration, see [ProcessConfiguration](../process-configuration-xml-element.md).  
-  
--   **exportprocessconfig**:  Exports the process configuration definition to an XML file or the Command Prompt window. (can run against Team Services)  
-  
+To manage the process configuration for a team project, use the **witadmin** command line tool to export and import the process configuration XML definition file. To learn about process configuration, see [ProcessConfiguration](../process-configuration-xml-element.md).   
+-   **exportprocessconfig**:  Exports the process configuration definition to an XML file or the Command Prompt window. (can run against Team Services)    
 -   **importprocessconfig**:  Imports the process configuration definition XML file.  
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]
@@ -39,8 +37,7 @@ For more information, see [Add an administrator](../../../security/set-project-c
 ## Syntax  
   
 ```  
-witadmin exportprocessconfig /collection:CollectionURL /p:ProjectName [/f:FileName] [/e:encoding]   
- 
+witadmin exportprocessconfig /collection:CollectionURL /p:ProjectName [/f:FileName] [/e:encoding]    
 witadmin importprocessconfig /collection:CollectionURL [/p:ProjectName] /f:FileName [/e:encoding] [/v]  
 ```  
   
@@ -129,7 +126,9 @@ The panel only displays fields that are included in the `FIELDS` section of the 
 
 
 **Workflow**
-```
+
+> [!div class="tabbedCodeSnippets"]
+```XML
 <WORKFLOW>
       <STATES>
         <STATE value="Design" />

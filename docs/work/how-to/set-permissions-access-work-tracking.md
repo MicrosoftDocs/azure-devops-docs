@@ -11,7 +11,7 @@ ms.date: 08/02/2017
 
 # Set permissions and access for work tracking   
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You can grant or restrict access to various work tracking features. You do this by granting users or groups specific permissions for the team project or at the object-level. 
 

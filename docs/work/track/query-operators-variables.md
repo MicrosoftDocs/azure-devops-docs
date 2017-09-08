@@ -12,7 +12,7 @@ ms.date: 04/04/2017
 
 # Query fields, operators, and macros
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 You find and create lists of work items by creating work item queries. By defining one or more clauses, you filter from all work items within a team project or team project collection to return the set of work items that interest you. For each clause, you specify a field, an operator, and a value or variable.  
 

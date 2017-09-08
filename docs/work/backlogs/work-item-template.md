@@ -13,7 +13,7 @@ ms.date: 08/24/2017
 
 <!--- Supports FWLINK http://go.microsoft.com/fwlink/?LinkId=824070 -->
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Visual Studio 2013 </b>  
+<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Visual Studio 2013 </b>  
 
 With work item templates you can quickly create work items which have pre-populated values for your team's commonly used fields. For example, you can create a task template that will set the area path, iteration path, and discipline or activity whenever you use it to create a task.  
 

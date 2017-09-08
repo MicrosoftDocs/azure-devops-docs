@@ -90,7 +90,7 @@ Such snapshots can show your team:
 
 Because bottlenecks signal waste in your workflow process, you'll want to identify the source of the waste. Kanban defines waste as anything not strictly needed to produce desired outcomes.
 
-Common wastes in software development, as described by [David Starr in the Lean of Scrum](https://MSDN.microsoft.com/library/jj161049), include:
+Common wastes in software development include:
 
 * Unused code or features
 * Defects that lead to re-work
@@ -98,7 +98,6 @@ Common wastes in software development, as described by [David Starr in the Lean 
 * Handoffs from one person, team, or business process to another
 * Insufficient requirements
 * Slow or poor communication
-
 
 Eliminating waste calls for team discussions to identify causes and solutions acceptable to the team. In addition to addressing the [challenges and solutions posed by WIP limits](best-practices-kanban.md#practices), the team may decide to adjust their workflow process or WIP limits. 
 

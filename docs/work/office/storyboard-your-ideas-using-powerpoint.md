@@ -11,7 +11,7 @@ ms.date: 05/10/2017
 
 # Storyboard your ideas using PowerPoint
 
-**VSTS | TFS 2017 | TFS 2015 | TFS 2013**  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 With storyboarding, you turn your ideas and goals into something visual. Your ideas are easier for other people to understand, so they can give you constructive feedback, sooner. You can bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides.
 

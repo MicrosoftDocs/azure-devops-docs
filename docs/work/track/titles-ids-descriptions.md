@@ -10,8 +10,7 @@ ms.date: 04/14/2017
 ---
 
 # Query by titles, IDs, and rich-text fields
-
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 When you want to find work items based on a keyword or phrase, you can do so by entering the [keyword or phrase within the search box](search-box-queries.md#keywords). This initiates a new query which you can modify as needed to further refine your filter criteria, as described in this topic. 
 

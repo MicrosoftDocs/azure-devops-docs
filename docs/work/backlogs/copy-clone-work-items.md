@@ -1,5 +1,5 @@
 ---
-title: Copy work items | VSTS & TFS
+title: Copy work items 
 description: Copy or clone work items, copy the URL link, or copy a list of work items to the clipboard-Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)   
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.topic: get-started-article
 
 # Copy or clone work items  
 
-**VSTS | TFS 2017 | TFS 2015**    
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**    
 
 There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. In addition, you can choose to change the team project or work item type when copying/cloning a work item. 
 

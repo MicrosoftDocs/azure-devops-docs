@@ -12,7 +12,7 @@ ms.date: 04/05/2017
 # CMMI process work item types and workflow
 
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Teams use the work item types (WITs) provided with the MSF for CMMI Process Improvement 2015 (CMMI) process to plan and track progress of software projects. Teams define requirements to manage the backlog of work and then, using the Kanban board, track progress by updating the status of requirements.
  
@@ -25,7 +25,7 @@ Using Microsoft Test Manager and the web portal, testers create and run test cas
 To support additional CMMI processes, teams can track change requests, risks, issues, and notes captured in review meetings.
 
 > [!NOTE]  
-> **Feature availability:**  Work item tracking forms and features available to you differ depending on whether you connect to the cloud or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. Forms and guidance provided in this topic reflect those available with the [new form experience](../process/new-work-item-experience.md) (Team Services and the web portal for TFS 2017 and later versions). 
+> **Feature availability:**  Work item tracking forms and features available to you differ depending on whether you connect to the cloud or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. Forms and guidance provided in this topic reflect those available with the [new form experience](../process/new-work-item-experience.md) (VSTS and the web portal for TFS 2017 and later versions). 
 >
 > If you connect to TFS 2015 or earlier versions, or open the form from Visual Studio Team Explorer, see [Add work items (TFS)](../backlogs/add-work-items-tfs.md).    
 

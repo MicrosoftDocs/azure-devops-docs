@@ -7,12 +7,12 @@ ms.prod: vs-devops-alm
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/11/2017
+ms.date: 09/07/2017
 ---
 
 # Work in Team Explorer
 
-**VSTS | TFS 2017 |  TFS 2015 | TFS 2013** 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You use Team Explorer to manage work that is assigned to you, your team, or your team projects, and to coordinate your efforts with other team members to develop a project. Team Explorer is a plug-in that installs with Visual Studio or Eclipse. Working from different platforms, developers and stakeholders can effectively collaborate using Team Explorer connected to team projects hosted on Visual Studio Online or on-premises Team Foundation Server (TFS). 
 
@@ -20,8 +20,8 @@ You use Team Explorer to manage work that is assigned to you, your team, or you
 >[!TIP]  
 >You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). Additional options for connecting to VSTS or TFS include: 
 > - [Team Explorer Everywhere](http://java.visualstudio.com/Docs/tools/eclipse)
-> - [Visual Studio Team Services Plugin for Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio)  
-> - [Visual Studio Team Services Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intellij) 
+> - [VSTS Plugin for Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio)  
+> - [VSTS Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intellij) 
 > - [Visual Studio Code](http://java.visualstudio.com/Docs/tools/vscode)    
 >For information about compatibility among client and server versions, see [Requirements and compatibility](../accounts/requirements.md).
 

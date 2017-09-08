@@ -28,7 +28,7 @@ The **Layout** element is a required child element of the **FORM** element. For 
 ## Syntax  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
+```XML 
 <Layout Target="ClientName" MinimumSize="(width,height)" Padding="(left, top, right, bottom)"   
 Margin="(left, top, right, bottom)" ControlSpacing="distance" LabelSpacing="distance" HideControlBorders="True | False"HideReadOnlyEmptyFields="True | False">  
     <Group> . . . </Group>  
@@ -75,7 +75,7 @@ Margin="(left, top, right, bottom)" ControlSpacing="distance" LabelSpacing="dist
 ## Example  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
+```XML
 <FORM>  
    <Layout>  
       <Group>  

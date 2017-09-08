@@ -1,5 +1,5 @@
 ---
-title: Keyboard shortcuts | Team Services & TFS  
+title: Keyboard shortcuts  
 description: Keyboard shortcuts for Visual Studio Team Services, TFS web portal, and Team Explorer  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview
@@ -11,20 +11,20 @@ ms.date: 04/05/2017
 
 # Keyboard shortcuts 
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>   
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]    
 
-You can use the keyboard shortcuts listed in this topic when you work within Visual Studio Team Services, the web portal for Team Foundation Server (TFS), or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx) from the **Tools/Options/Environment/Keyboard** page.
+You can use the keyboard shortcuts listed in this topic when you work within Visual Studio Team Services (VSTS), the web portal for Team Foundation Server (TFS), or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx) from the **Tools/Options/Environment/Keyboard** page.
 
 >[!NOTE]  
 ><b>Feature availability: </b>Some keyboard shortcuts are only available from the cloud service or from an on-premises deployment. These are annotated as follows:
-- **Team Services** - Visual Studio Team Services (cloud service)  
+- **VSTS** - Visual Studio Team Services (cloud service)  
 - **TFS** - Team Foundation Server (on-premises)  
 
 
 ## Global and hub-specific  
 
 >[!NOTE]  
-><b>Feature availability: </b>The following shortcuts are available from the web portal for Team Services and TFS 2015.2 and later versions.   
+><b>Feature availability: </b>The following shortcuts are available from the web portal for VSTS and TFS 2015.2 and later versions.   
 
 Type **?** to access the Global and hub-specific shortcuts. Hub-specific shortcuts only work when in the specific hub.  
 
@@ -191,7 +191,7 @@ For example, type **g c** to open the Code hub, and then type **c p** to create 
  
 ##Web portal
 
-You can use these keyboard shortcuts when working in the web portal whether connected to Team Services or TFS.  
+You can use these keyboard shortcuts when working in the web portal whether connected to VSTS or TFS.  
 
 <table>
 <tbody valign="top" width="100%" style="font-size:90%">
@@ -237,7 +237,7 @@ You can use the following shortcuts to format text, cut, copy, and paste text wi
 <li style="margin-bottom:2px"><span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+b&nbsp;&nbsp;</span>Bold text</li>
 <li style="margin-bottom:2px"><span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+i&nbsp;&nbsp;</span>Italicize text  </li>
 <li style="margin-bottom:2px"><span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+u&nbsp;&nbsp;</span>Underscore text  </li>
-<li style="margin-bottom:2px"><br/>Team Services </li>
+<li style="margin-bottom:2px"><br/>VSTS </li>
 <li style="margin-bottom:2px"><span style="color:purple; font-family:Courier new; font-size:1.1em; font-weight:bold">Ctrl+Spacebar&nbsp;</span>Clear formatting</li>
 </ul>
 </div>

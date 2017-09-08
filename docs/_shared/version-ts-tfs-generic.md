@@ -1,1 +1,1 @@
-**Team Services** | **TFS**
+**VSTS** | **TFS**

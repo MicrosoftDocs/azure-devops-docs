@@ -1,5 +1,5 @@
 ---
-title: Share your project vision | Team Service  
+title: Share your project vision 
 description: View or update your project home page to share project vision, objectives, and activity for Visual Studio Team Services (VSTS)  
 ms.topic: get-started-article
 ms.technology: collaborate
@@ -12,7 +12,7 @@ ms.date: 08/29/2017
 
 # Share your project vision, view project activity   
 
-**VSTS | TFS 2017 | TFS 2015**  
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**  
 
 > [!NOTE]  
 > **Feature availability**: The project page described in this topic is available for VSTS and TFS 2017.1 and later versions. It replaces the [Welcome page](#welcome-pages) used in TFS 2017 and earlier versions. 

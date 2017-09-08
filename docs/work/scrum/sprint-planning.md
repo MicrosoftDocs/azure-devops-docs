@@ -13,7 +13,7 @@ ms.date: 07/21/2017
 
 # Sprint planning
  
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
 Your team builds the sprint backlog during the sprint planning meeting, typically held on the first day of the sprint. 
 Each sprint corresponds to a time-boxed interval which supports your team's ability to work using Agile processes and tools. 

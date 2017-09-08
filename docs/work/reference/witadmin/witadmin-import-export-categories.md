@@ -14,10 +14,8 @@ ms.date: 04/03/2017
 
 [!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]  
 
-You can import and export categories defined for a team project by using the following **witadmin** commands:  
-  
--   **exportcategories**:  Exports the XML definition of categories defined on a server that runs Team Foundation Server. (can run against Visual Studio Team Services (VSTS))  
-  
+You can import and export categories defined for a team project by using the following **witadmin** commands:   
+-   **exportcategories**:  Exports the XML definition of categories defined on a server that runs Team Foundation Server. (can run against Visual Studio Team Services (VSTS))    
 -   **importcategories**:  Imports a work item type XML definition file into a team project on a server that runs TFS.  If a category with the same name already exists, this command overwrites the existing definition. If the work item type does not already exist, this command creates a new category.  
   
 To learn about the default categories and how they are used, see [Use categories to group work item types](../use-categories-to-group-work-item-types.md).  
@@ -28,10 +26,8 @@ To learn about the default categories and how they are used, see [Use categories
   
  **Requirements**  
   
- For the team project for which the categories are defined, you must have the following permissions set:  
-  
--   To export categories of work item types, you must have your **View project-level information** permission set to **Allow**.  
-  
+For the team project for which the categories are defined, you must have the following permissions set:   
+-   To export categories of work item types, you must have your **View project-level information** permission set to **Allow**.   
 -   To import categories of work item types, you must be a member of the **Project Administrators** security group or have the **Edit project-level information** permission set to **Allow**.  
   
 For more information, see [Add an administrator](../../../security/set-project-collection-level-permissions.md). 
@@ -88,7 +84,8 @@ witadmin exportcategories /collection:http://AdventureWorksServer:8080/tfs/Defau
   
 2.  Open the Categories file in your preferred text editor, and locate the `CATEGORY` element for the `"Hidden Types Category"`.  
   
-    ```  
+    > [!div class="tabbedCodeSnippets"]
+	```XML  
     <CATEGORY name="Hidden Types Category" refname="Microsoft.HiddenCategory">  
        <DEFAULTWORKITEMTYPE name="Code Review Request" />  
        <WORKITEMTYPE name="Code Review Response" />  
@@ -101,8 +98,9 @@ witadmin exportcategories /collection:http://AdventureWorksServer:8080/tfs/Defau
 3.  Add a `WORKITEMTYPE` element that specifies the friendly name of the work item type that you want to add.  
   
      For example, the following syntax adds the custom work item type of "Integration Build" to the Hidden Types Category.  
-  
-    ```  
+ 
+    > [!div class="tabbedCodeSnippets"]
+	```XML
     <CATEGORY name="Hidden Types Category" refname="Microsoft.HiddenCategory">  
        <DEFAULTWORKITEMTYPE name="Code Review Request" />  
        <WORKITEMTYPE name="Code Review Response" />  
@@ -121,5 +119,5 @@ witadmin exportcategories /collection:http://AdventureWorksServer:8080/tfs/Defau
   
 ## Related notes
 - [ProcessConfiguration XML elements](../process-configuration-xml-element.md)  
--  [Customize your work tracking experience](../../customize/customize-work.md)     
--  [Use categories to group work item types](../use-categories-to-group-work-item-types.md)   
+- [Customize your work tracking experience](../../customize/customize-work.md)     
+- [Use categories to group work item types](../use-categories-to-group-work-item-types.md)   

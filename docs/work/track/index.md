@@ -17,8 +17,13 @@ List bugs, user stories, or other work items based on field criteria you specify
 ## Overview  
   * name: Individual versus shared queries
     href: my-shared-queries.md
-
-* [Adhoc vs managed queries](adhoc-vs-managed-queries.md)  
+  * name: View and run a query (IN PROGRESS) 
+    href: view-run-query.md
+* [Adhoc vs managed queries](adhoc-vs-managed-queries.md) 
+*   name: Organize and run managed queries (IN PROGRESS) 
+    href: organize-view-run-queries.md
+   name: Triage work items (IN PROGRESS) 
+    href: triage-work-items.md 
 -->
  
 ## 5-Minute Quickstarts  

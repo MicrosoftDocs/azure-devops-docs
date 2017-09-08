@@ -11,6 +11,8 @@ ms.date: 08/28/2017
 
 # Agile at Scale  
 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
 Manage portfolios and gain visibility across teams. 
 
 ## Step-by-Step Tutorials

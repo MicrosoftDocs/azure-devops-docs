@@ -1,5 +1,5 @@
 ---
-title: Naming restrictions | Team Services & TFS
+title: Naming restrictions 
 description: Guidelines for object labels you define for an account, group, server, or other objects which include length, special characters, and uniqueness. 
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
@@ -11,9 +11,9 @@ ms.date: 07/05/2017
 
 # Naming restrictions and conventions 
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b>   
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
-Most components in Visual Studio Team Services and Visual Studio Team Foundation Server (TFS) must comply with naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
+Most components in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) must comply with naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
 
 Common restrictions include not exceeding the character length for a name, not containing special characters, and maintaining uniqueness of names within an object set.
 
@@ -41,11 +41,11 @@ Both the operating system and Active Directory impose certain restrictions on co
 
 <a id="AccountNames">   </a>
 ###Account name
-User accounts identify users in Visual Studio Team Services or TFS. These accounts might correspond to an Active Directory, Azure Active Directory, Windows or other user account types.  
+User accounts identify users in VSTS or TFS. These accounts might correspond to an Active Directory, Azure Active Directory, Windows or other user account types.  
 
 You add existing user accounts. You can't create a user account. To add user accounts to a team project, see:  
 
-*	Visual Studio Team Services: [Add team members](../accounts/add-team-members-vs.md)  
+*	VSTS: [Add team members](../accounts/add-team-members-vs.md)  
 *	On-premises TFS: [Add users to team projects](../accounts/add-users.md)   
 
 User accounts that you add must conform to the following restrictions.  
@@ -341,10 +341,12 @@ Learn more about reserved names: [File Names, Paths, and Namespaces](https://msd
 
 ###Process and process templates 
 
-A process defines the building blocks of the work item tracking system as well as other sub-systems you access through Visual Studio Team Services or the web portal for an on-premises TFS. 
+A process defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or the web portal for an on-premises TFS. 
 
-<blockquote style="font-size: 13px"><b>Terminology note:  </b>Both "process" and "process template" refer to an interdependent set of files used to create a team project. However, the features, rules, and behaviors associated with each differ slightly depending on whether you connect to Visual Studio Team Services or an on-premises TFS. <br/>   
-[Choose a process](../Work/guidance/choose-process.md) describes the differences among the three default processes available to you.   </blockquote> 
+> [!NOTE]   
+> <b>Terminology note: </b>Both "process" and "process template" refer to an interdependent set of files used to create a team project. However, the features, rules, and behaviors associated with each differ slightly depending on whether you connect to VSTS or an on-premises TFS.
+>    
+[Choose a process](../Work/guidance/choose-process.md) describes the differences among the three default processes available to you.   
 
 Processes you define or customize must conform to the following restrictions.  
 
@@ -445,7 +447,7 @@ Must not contain any Unicode control characters or surrogate characters
 <a id="TeamNames">   </a>
 
 ###Teams 
-Team names identify a group of individuals or groups that collectively work together as a team in a team project. Team members use this name to connect to the team when working in Visual Studio Team Services or the web portal for TFS. 
+Team names identify a group of individuals or groups that collectively work together as a team in a team project. Team members use this name to connect to the team when working in VSTS or the web portal for TFS. 
 
 As such, team names must conform to conventions that allow it to be rendered as part of a valid URL. In addition, each team name must be unique within a single project. However, there aren't any restrictions on using the same team name in different team projects within a team project collection. [Add another team or a hierarchy of teams](../Work/scale/multiple-teams.md) provides more information about working with teams.  
 
@@ -1300,6 +1302,6 @@ Names you assign to a wiki page title must conform to the following restrictions
 
 
 ## Related notes 
-*	[Customize work tracking objects to support your team's processes](../Work/customize/customize-work.md)
-*	[Customize a process for import into Visual Studio Team Services](../Work/import-process/customize-process.md)
-*	[Customize a process template (on-premises TFS)](https://msdn.microsoft.com/en-us/library/ms243782%28v=vs.140%29.aspx)
+*	[Customize work tracking objects to support your team's processes](../work/customize/customize-work.md)
+*	[Customize a process for import into VSTS](../Work/import-process/customize-process.md)
+*	[Customize a process template (on-premises TFS)](../work/reference/process-templates/customize-process.md)

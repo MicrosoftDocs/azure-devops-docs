@@ -11,7 +11,7 @@ ms.date: 04/14/2017
 
 # LinksControlOptions XML elements (Web form) 
 
-<b>VSTS (Hosted XML) | TFS 2017 | [Previous versions](linkscontroloptions-elements.md)</b>
+<b>VSTS (Hosted XML) | TFS 2018 | TFS 2017 | [Previous versions](linkscontroloptions-elements.md)</b>
 
 
 >[!IMPORTANT]  
@@ -235,22 +235,22 @@ To import and export your changes, see [Customize the work item tracking web for
 
 The following table describes the **LinksControlOptions** element and its child elements. The syntax for the **LinksControlOptions** element is:  
 
-<pre><code>&lt;LinksControlOptions ViewMode="Static | Dynamic" ZeroDataExperience="Development" ShowCallToAction="true | false"   WorkItemFiltersScope="Project" &gt;
-   &lt;ListViewOptions GroupLinks="true | false" /&gt;
-   &lt;LinkFilters&gt;     
-      &lt;ExternalLinkFilter Type="ExternalLinkName" /&gt;
-      &lt;WorkItemLinkFilter Type="WorkItemLinkName" /&gt;
-   &lt;/LinkFilters&gt;
-   &lt;WorkItemTypeFilters&gt;
-      &lt;Filter WorkItemType="WorkItemTypeName" /&gt;
-   &lt;/WorkItemTypeFilters&gt;
-   &lt;Columns&gt;
-      &lt;Column RefName="FieldReferenceName"/&gt;
-   &lt;/Columns&gt;
-&lt;/LinksControlOptions&gt;
-</code></pre>
-
- 
+> [!div class="tabbedCodeSnippets"]
+```XML
+<LinksControlOptions ViewMode="Static | Dynamic" ZeroDataExperience="Development" ShowCallToAction="true | false"   WorkItemFiltersScope="Project" >
+   <ListViewOptions GroupLinks="true | false" />
+   <LinkFilters>    
+      <ExternalLinkFilter Type="ExternalLinkName" />
+      <WorkItemLinkFilter Type="WorkItemLinkName" />
+   </LinkFilters>
+   <WorkItemTypeFilters>
+      <Filter WorkItemType="WorkItemTypeName" />
+   </WorkItemTypeFilters>
+   <Columns>
+      <Column RefName="FieldReferenceName"/>
+   </Columns>
+</LinksControlOptions>
+```
   
 <table width="100%" >
 <thead>
@@ -351,17 +351,19 @@ The following table describes the **LinksControlOptions** element and its child 
 <p><strong>LinksControlOptions</strong> </p></td>
 <td><p>Required container child element of <strong>Control</strong> element when <strong>type=&quot;LinksControl&quot;</strong> and when used within the **WebLayout** element.</p>
 <p>Use to scope the link types and work item types that users can add to a work item and the columns to appear for the list of link relationships in the work item form.</p>
-<pre><code>&lt;LinksControlOptions ViewMode="Dynamic | Grid | List" ZeroDataExperience="Development" ShowCallToAction="true | false"   WorkItemFiltersScope="Project" &gt;
+<pre><code>&lt;LinksControlOptions ViewMode="Dynamic | Grid | List" 
+ZeroDataExperience="Development" ShowCallToAction="true | false"  
+WorkItemFiltersScope="Project" &gt;
   . . . 
 &lt;/LinksControlOptions&gt;</code></pre>
 <p>All attributes are optional. Supported attributes include: </p>
 <ul>
-<li><p> <strong>ViewMode</strong>: Can be set to ```Dynamic``` (changing with size), `Grid`, or `List`.  Default is ```Dynamic```. These view modes correspond to those described earlier in this topic in [Responsive design and dynamic resizing](#dynamic-sizing).</p></li>
-<li><p><strong>ZeroDataExperience</strong>: Currently, only option is ```Development```. This option causes the call-to-action links to appear for development, such as *Create branch, Create a pull request,* and more. To learn more, see [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md).</p></li>
-<li><p> <strong>ShowCallToAction</strong>: Can be set to ```true```, normally is ```false```. Determines whether call-to-actions appear below linked artifacts. </p>
+<li><strong>ViewMode</strong>: Can be set to ```Dynamic``` (changing with size), `Grid`, or `List`.  Default is ```Dynamic```. These view modes correspond to those described earlier in this topic in [Responsive design and dynamic resizing](#dynamic-sizing).</li>
+<li><strong>ZeroDataExperience</strong>: Currently, only option is ```Development```. This option causes the call-to-action links to appear for development, such as *Create branch, Create a pull request,* and more. To learn more, see [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md).</li>
+<li><strong>ShowCallToAction</strong>: Can be set to ```true```, normally is ```false```. Determines whether call-to-actions appear below linked artifacts. 
 <blockquote><b>Note: </b>Currently, the only supported call-to-action experience occurs when ```ZeroDataExperience="Development"```.
 </blockquote></li>
-<li><p> <strong>WorkItemFiltersScope</strong>: Can be set to ```Project```. When set to ```Project```, users can only link to work items within the current team project scope. </p></li>
+<li><strong>WorkItemFiltersScope</strong>: Can be set to ```Project```. When set to ```Project```, users can only link to work items within the current team project scope. </li>
 </ul>
 </td>
 </tr>
@@ -394,7 +396,7 @@ The following table describes the **LinksControlOptions** element and its child 
 <p>Examples of work item link types you can specify include: ```System.LinkTypes.Dependency```, ```System.LinkTypes.Hierarchy-Forward```, ```System.LinkTypes.Hierarchy-Reverse```, and ```System.LinkTypes.Related```. </p>
 <p>For a complete list, see [work item link type](#work-link-types). In addition, you can specify the reference name for a custom link type. </p>
 <p>Specify ```System.IncludeAllWorkItemLinks``` to include all work link types.</p>
-<blockquote style="font-size: 13px"><b>Note: </b>When you specify  ```System.IncludeAllWorkItemLinks```, the system displays all links in alphabetical order by link type. 
+<blockquote><b>Note: </b>When you specify  ```System.IncludeAllWorkItemLinks```, the system displays all links in alphabetical order by link type. 
 </blockquote>
 </td>
 </tr>
@@ -404,13 +406,11 @@ The following table describes the **LinksControlOptions** element and its child 
 <td><p> <strong>WorkItemTypeFilters</strong> </p></td>
 <td><p>Optional container child element of the <strong>LinkFilters</strong> element. Use this element to specify the set of work item types to include in the links control. This element restricts the work item types that users can create links to and those that will appear in the linked list. Specification of this element depends on specifying at least one **WorkItemLinkFilter** element.    
 </p>
-<pre><code>
-&lt;WorkItemTypeFilters &gt;
+<pre><code>&lt;WorkItemTypeFilters &gt;
    &lt;Filter WorkItemType=&quot;WorkItemTypeName&quot; /&gt;
 &lt;/WorkItemTypeFilters  &gt;
 </code>
 </pre>
-
 
 </td>
 </tr>

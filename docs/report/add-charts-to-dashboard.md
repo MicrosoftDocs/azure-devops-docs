@@ -1,5 +1,5 @@
 ---
-title: Add charts to a dashboard | VSTS & TFS  
+title: Add charts to a dashboard  
 description: Add system-generated charts or query-based charts to a team dashboard  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -11,7 +11,7 @@ ms.date: 08/10/2017
 
 # Add charts to a dashboard
 
-<b>VSTS | TFS 2017 | TFS 2015.1-2015.3  </b>  
+<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015.1-2015.3  </b>  
 
 <a id="add-charts"></a>
 

@@ -11,7 +11,7 @@ ms.date: 04/13/2017
 
 #Upload or download a process template
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
 >[!NOTE]  

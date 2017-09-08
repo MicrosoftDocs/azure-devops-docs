@@ -1,5 +1,5 @@
 ---
-title: Work in the web portal | Team Service & TFS 
+title: Work in the web portal 
 description: Guide to navigating within the web portal for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 08/11/2017
 
 # Navigating in the web portal
 
-**VSTS | TFS 2017 | TFS 2015 | TFS 2013**  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 The web portal provides support for teams to collaborate through the planning, development, and release cycles. You use the web portal to perform both software development and administrative tasks.  
 
@@ -168,9 +168,6 @@ The next sections liste what you can do, based on the hub and page you select.
 
 The **Home** hub supports a configurable Welcome page and dashboards. From the **Work** hub, you gain access to a highly configurable suite of Agile tools to plan and track your work.   
 
-
->[!NOTE]  
->**Feature availability**: The [Account hub or New Account Landing Page feature](account-home-pages.md) is in preview mode for Team Services and turned on for all users of the web portal for TFS 2017.1 and later versions. To enable or disable the feature, see [Enable preview features](../collaborate/preview-features.md). 
 
 > [!div class="mx-tdBreakAll"]  
 > |[Home](../report/overview.md) |[Work](../work/work-items/index.md)|

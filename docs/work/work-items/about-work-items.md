@@ -12,7 +12,7 @@ ms.date: 08/03/2017
 
 # About work items 
 
-**VSTS | TFS 2017 | TFS 2015 | TFS 2013**  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You can use work items to track anything you need to track. 
 

@@ -1,5 +1,5 @@
 ---
-title: Dashboards and reports | VSTS & TFS  
+title: Dashboards and reports  
 description: Review of the OOB charts, widgets, dashboards, and reports available to monitor status and trends in VSTS and and Team Foundation Server (TFS)  
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
 ms.prod: vs-devops-alm

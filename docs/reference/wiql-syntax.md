@@ -1,6 +1,6 @@
 ---
-title: WIQL syntax | Team Services & TFS 
-description:  Reference syntax for the Work Item Query Language (WIQL) to support queries in Visual Studio Team Services (VSTS) and Team Foundation Server 
+title: WIQL syntax   
+description: Reference syntax for the Work Item Query Language (WIQL) to support queries in Visual Studio Team Services (VSTS) and Team Foundation Server 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
@@ -12,9 +12,9 @@ ms.date: 05/10/2017
 
 # Syntax for the Work Item Query Language (WIQL) 
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
 
-You can use the WIQL syntax to [construct a query that you submit from a web browser](../work/track/using-queries.md#define-query-hyperlink) or using the [Work Item Query Language (REST API)](https://visualstudio.com/integrate/api/wit/wiql.md).  
+You can use the WIQL syntax to [construct a query that you submit from a web browser](../work/track/using-queries.md#define-query-hyperlink) or using the [Work Item Query Language (REST API)](https://www.visualstudio.com/docs/integrate/api/wit/wiql).  
 
 A query defined using the Work Item Query Language (WIQL) consists of a `SELECT` statement that lists the fields to be returned as columns in the result set. You can further qualify the result set by using a logical expression. You can specify a sort order. Use an `ASOF` clause to state that a query is evaluated as of a previous time.
 
@@ -448,5 +448,5 @@ https://msdn.microsoft.com/library/bb130306.aspx
 
 ### Limits on WIQL length  
 
-For queries made against Team Services, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
+For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
  

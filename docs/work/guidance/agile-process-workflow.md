@@ -11,7 +11,7 @@ ms.date: 04/05/2017
 
 # Agile process work item types and workflow  
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Teams use the work item types (WITs) provided with the Agile process to plan and track progress of software projects. Teams define user stories to manage the backlog of work and then, using the Kanban board, track progress by updating the status of those stories.
 
@@ -22,7 +22,7 @@ To gain insight into a portfolio of features, scenarios, or user experiences, pr
 Using the web portal or Microsoft Test Manager, testers can create and run test cases. Bugs and issues are used to track code defects and blocking issues.  
 
 >[!NOTE]  
-><b>Feature availability: </b> Work item tracking forms and features available to you differ depending on whether you connect to the cloud or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. Forms and guidance provided in this topic reflect those available with the [new form experience](../process/new-work-item-experience.md) (Team Services and the web portal for TFS 2017 and later versions). 
+><b>Feature availability: </b> Work item tracking forms and features available to you differ depending on whether you connect to the cloud or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. Forms and guidance provided in this topic reflect those available with the [new form experience](../process/new-work-item-experience.md) (VSTS and the web portal for TFS 2017 and later versions). 
 >
 >If you connect to TFS 2015 or earlier versions, or open the form from Visual Studio Team Explorer, see [Add work items (TFS)](../backlogs/add-work-items-tfs.md).  
 

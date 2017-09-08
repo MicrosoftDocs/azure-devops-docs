@@ -11,7 +11,7 @@ ms.date: 07/14/2017
 
 # Scrum
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 With Scrum, you can schedule and plan sprints, update your task board, and monitor your sprint burndown. 
 

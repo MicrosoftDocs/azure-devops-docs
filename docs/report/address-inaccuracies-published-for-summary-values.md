@@ -1,5 +1,6 @@
 ---
-title: Address inaccuracies published for summary values | TFS
+title: Address inaccuracies published for summary values 
+titleSuffix: TFS
 description: Corrects the reports with hours that are counted twice with this procedure - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting

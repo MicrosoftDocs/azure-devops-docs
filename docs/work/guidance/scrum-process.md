@@ -12,7 +12,7 @@ ms.date: 08/11/2017
 
 # Scrum process   
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 The Scrum process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as product backlog items, tasks, bugs, and more. These artifacts are created when you create a team project using the Scrum process. They are based on [Scrum principles and values](https://www.scrum.org/). 
 

@@ -1,5 +1,5 @@
 ---
-title: Widget catalog | VSTS & TFS  
+title: Widget catalog  
 description: Determine which widgets you want to add to your dashboards when working in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -11,7 +11,7 @@ ms.date: 08/10/2017
 
 # Widget catalog 
 
-**VSTS | TFS 2017 | TFS 2015.1-2015.3**  
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015.1-2015.3**  
 
 > [!NOTE]  
 > **Feature availability**: You can access the widget catalog from VSTS or the web portal for TFS 2015.1 or later version. All widgets listed below are available from the web portal for VSTS. Some widgets listed below are only available when you connect to TFS 2015 Update 2 or later version.  

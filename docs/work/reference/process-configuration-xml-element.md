@@ -11,7 +11,7 @@ ms.date: 09/01/2017
 
 # Process configuration XML element reference
 
-<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
+[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
 
 >[!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize a process](../process/customize-process.md). 
@@ -158,7 +158,7 @@ You configure backlogs within the XML sections that appear in the following samp
 
 #### Implementation notes
 -   By default, each backlog is restricted to a total of 1000 work items. You can change this limit by specifying a value for the `workItemCountLimit` attribute.  
--   The values assigned to *CategoryName* must correspond to a category group defined for the team project. You [specify category groups in the definition file for Categories](https://msdn.microsoft.com/library/dd469527.aspx).  
+-   The values assigned to *CategoryName* must correspond to a category group defined for the team project. You [specify category groups in the definition file for Categories](categories-xml-element-reference.md).  
 -   You use [portfolio backlogs](../backlogs/organize-backlog.md) to organize your backlog, view the rollup of backlog items at lower levels, and to view progress across several teams. New and upgraded team projects contain two portfolio backlog levels: Features and Epics. You can add up to three additional levels. Only the top level portfolio backlog doesn't specify a parent category.  
 -   Your [product backlog](../backlogs/create-your-backlog.md) corresponds to your project plan, the roadmap for what your team plans to deliver. It lists work items whose WITs belong to the Requirements Category. In order to manage different WITs than those provided by your default team project, you can add WITs to the Requirements Category and map the workflow states to state categories.  
 -   Your [sprint or iteration backlogs](https://msdn.microsoft.com/library/ee191595) display both the set of requirements that you and your team have committed to in a specific sprint cycle and the tasks that you have linked to those requirements. You link tasks to requirements using the parent-child link type. Because the WITs that appear on these backlogs correspond to the same types that appear on the product backlog, much of the customization work that you do for the product backlog will define the functionality of the sprint backlog.  
@@ -209,7 +209,7 @@ There are three groups of state categories: Agile, Bug, and Feedback. The follow
 <ul>
 <li><p><strong>Proposed</strong>: Indicates work items that are new, not yet committed, or not yet being worked on.</p></li>
 <li><p><strong>InProgress</strong>: Indicates work items that have been committed or are actively being worked on.</p></li>
-<li><p><strong>Complete</strong>: Indicates work items that have been implemented. For the <a href="https://msdn.microsoft.com/library/jj838789">Kanban board</a> to be valid, at least one workflow state must be mapped to the <strong>Complete</strong> state category.</p>
+<li><p><strong>Complete</strong>: Indicates work items that have been implemented. For the [Kanban board](../kanban/kanban-basics.md) to be valid, at least one workflow state must be mapped to the <strong>Complete</strong> state category.</p>
 <p>Once a workflow state transitions to a state that is associated with the <strong>Complete</strong> metastate, the associated work item will fall off the product backlog. However, it will continue to be listed on the Kanban board.</p></li>
 </ul>
 <p>Work items in a workflow state that aren't mapped to one of the state categories don't appear on the backlog or board.</p></li>
@@ -527,7 +527,7 @@ You can move items by dragging them up or down the list on a backlog or board. A
 <p>`format="{0} hours"`</p>
 <p>`format="hours {0}"`</p>
 <p>`format="time {0}"`</p></li>
-<li><p><strong>Team</strong>: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in [Use team fields instead of area paths to support teams](https://msdn.microsoft.com/library/dn144940.aspx).</p></li>
+<li><p><strong>Team</strong>: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in [Use team fields instead of area paths to support teams](../customize/use-team-fields-instead-area-paths.md).</p></li>
 </ul>
 <p><strong>For the feedback request form:</strong></p>
 
