@@ -6,6 +6,7 @@ ms.technology: vs-devops-overview
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
 ---
 
+> [!NOTE]
 > The TFS Database Import Service for Visual Studio Team Services (VSTS) is currently in preview.
 
 # Troubleshooting
@@ -163,7 +164,11 @@ Verification failures happen when the import fails to start. Issues falling into
 
     VS403252: The specified import code {0} is not valid, expired, or is already in use.
 
+<<<<<<< HEAD
+This error means that something is wrong with your import code. Either it has already been successfully used for another import, it expired, or it isn't valid. Double check the code that you've placed in the import specification file against the codes that you were given as part of the preview.  
+=======
 This error means that something is wrong with your import code. Either it has already been successfully used for another import, it expired, or it isn't valid. Double check the code that you've placed in the import specification file against the codes that you were given as part of the preview. If you believe that there is a problem please reach out [vstsdataimport@microsoft.com](mailto:vstsdataimport@microsoft.com). 
+>>>>>>> c8a10194526d69faa7a3111063296fe708f8d054
 
     VS403253: Queuing an import requires an import code.
 
