@@ -19,7 +19,7 @@ to integrate with its services and resources in your VSTS account.
 To access your account without asking for user credentials multiple times, 
 apps can use these authentication methods:
 
-*	[OAuth](../integrate/get-started/Authentication/oauth.md) 
+*	[OAuth](../integrate/get-started/authentication/oauth.md) 
 to generate tokens for accessing [REST APIs for VSTS and Team Foundation Server](../integrate/get-started/rest/basics.md). 
 The [Accounts](../integrate/api/shared/accounts.md) 
 and [Profiles](../integrate/api/shared/profiles.md) 

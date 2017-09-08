@@ -19,7 +19,7 @@ From your profile page, you can change your picture or other account preferences
 > [!div class="mx-tdBreakAll"]  
 > |Profile | Security  | Other |  
 > |-------------|----------|---------|
-> |- Your picture<br/>- Your display name<br/>- Your preferred email<br/>- Locale settings |- [Personal access tokens](use-personal-access-tokens-to-authenticate.md)<br/>- [Alternate authentication credentials](../git/auth-overview.md#alternate-credentials)<br/>- [OAuth authorizations](../integrate/get-started/Authentication/oauth.md)<br/>- [SSH public keys](../git/use-ssh-keys-to-authenticate.md) |- [Manage personal notifications](../notifications/manage-personal-notifications.md)<br/>- [Enable preview features](../connect/work-web-portal.md#admin-context) | 
+> |- Your picture<br/>- Your display name<br/>- Your preferred email<br/>- Locale settings |- [Personal access tokens](use-personal-access-tokens-to-authenticate.md)<br/>- [Alternate authentication credentials](../git/auth-overview.md#alternate-credentials)<br/>- [OAuth authorizations](../integrate/get-started/authentication/oauth.md)<br/>- [SSH public keys](../git/use-ssh-keys-to-authenticate.md) |- [Manage personal notifications](../notifications/manage-personal-notifications.md)<br/>- [Enable preview features](../connect/work-web-portal.md#admin-context) | 
 
 Locale settings include language, date and time pattern, time zone, and user interface theme. 
 

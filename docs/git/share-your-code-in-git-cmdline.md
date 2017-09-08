@@ -15,7 +15,7 @@ ms.date: 08/29/2017
 
 #### VSTS | TFS 2015 & TFS 2017  
 
-This guide show you how to share your code in a VSTS Git repo using the command line.  If you don’t have a VSTS account, you can [sign up](../accounts/create-account-with-work-school.md) for one for free. Each account includes free, unlimited private Git repositories.
+This guide show you how to share your code in a VSTS Git repo using the command line.  If you don’t have a VSTS account, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 The instructions below use the default bash shell used on Linux and Mac OS X, but the Git commands will work in any shell, including Git Bash from Git for Windows.
 

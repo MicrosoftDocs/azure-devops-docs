@@ -36,7 +36,7 @@ Wanna try it?
 
 1. [Create a new account in VSTS](http://go.microsoft.com/fwlink/?LinkId=307137).
 
-1. If you're prompted, then sign in using your personal Microsoft account or your work or school account. (Need help signing up? See [Sign up for Visual Studio Team Services](../../accounts/create-account-with-work-school.md).)
+1. If you're prompted, then sign in using your personal Microsoft account or your work or school account. (Need help signing up? See [Sign up for Visual Studio Team Services](../../accounts/create-account-msa-or-work-student.md).)
 
 1. Create a Visual Studio Team Service account. Keep the option to use **Git** selected.
 
