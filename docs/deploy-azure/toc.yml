@@ -4,11 +4,11 @@
 - name: Quickstarts
   items:
   - name: "CI/CD to Azure Web App"
-    href: aspnet-core-to-azure-webapp.md
+    href: /vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: "CI/CD to Windows VM"
-    href: aspnet-core-to-windows-vm.md
+    href: /vsts/build-release/apps/cd/azure/aspnet-core-to-windows-vm?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: "CI/CD to Azure Container Service"
-    href: aspnet-core-to-acr.md
+    href: /vsts/build-release/apps/cd/azure/aspnet-core-to-acr?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
 - name: How to
   items:
   - name: Use deployment groups

@@ -29,13 +29,13 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 
 ## Prerequisites
 
-[!INCLUDE [include](../build-release/_shared/ci-cd-prerequisites-vsts.md)]
+[!INCLUDE [include](../../../_shared/ci-cd-prerequisites-vsts.md)]
 * [Visual Studio 2017](https://www.visualstudio.com/downloads/)    
 * [Continuous Delivery Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio)
 
-[!INCLUDE [create-azure-container-registry](../build-release/apps/_shared/create-azure-container-registry.md)]
+[!INCLUDE [create-azure-container-registry](../../../apps/_shared/create-azure-container-registry.md)]
 
-[!INCLUDE [import-code-aspnet-core](../build-release/apps/_shared/import-code-aspnet-core-docker.md)]
+[!INCLUDE [import-code-aspnet-core](../../../apps/_shared/import-code-aspnet-core-docker.md)]
 
 ##  Clone the solution
 Use the following steps to clone the sample solution and open it in Visual Studio 2017.  This allows you to work with the solution in a local development environment.  In upcoming steps, you use Visual Studio 2017 to configure continuous integration and continuous delivery for the web app.
@@ -80,4 +80,4 @@ You're now ready to collaborate with a team on an ASP.NET Core app with a CI/CD 
 ## Next Steps    
 You've just put your own CI/CD processes in place. You can modify these build and release definitions to meet the needs of your team. To learn more see this tutorial:
 
-* [Customize CD process](customize-cd-process.md)
+* [Customize CD process](../../../actions/define-multistage-release-process.md)

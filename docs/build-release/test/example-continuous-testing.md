@@ -36,7 +36,7 @@ It will take around 45 minutes to complete all of the steps.
 [Build and deploy your app](../../build-release/apps/index.md).
 
 <a name="create-service"></a>
-[!INCLUDE [create-azure-web-app-portal](../../deploy-azure/_shared/create-azure-web-app-portal.md)]
+[!INCLUDE [create-azure-web-app-portal](../apps/cd/azure/_shared/create-azure-web-app-portal.md)]
 
 <a name="create-app"></a>
 ## Create the sample web app

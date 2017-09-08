@@ -31,12 +31,12 @@ With your CI/CD processes in place, you'll push a change into your team's Git re
 
 ## Prerequisites
 
-[!INCLUDE [include](../build-release/_shared/ci-cd-prerequisites-vsts.md)]
+[!INCLUDE [include](../../../_shared/ci-cd-prerequisites-vsts.md)]
 * An Azure subscription. If you don't have an Azure subscription, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
 ## Import code for sample app into VSTS
 
-[!INCLUDE [include](../build-release/apps/aspnet/_shared/import-code-aspnet-core-vsts.md)]
+[!INCLUDE [include](../../../apps/aspnet/_shared/import-code-aspnet-core-vsts.md)]
 
 <a name="create-webapp-portal"></a>
 
@@ -79,8 +79,6 @@ You're now ready to collaborate with a team on an ASP.NET Core app with a CI/CD 
 
 When you configured your CI/CD process in this quickstart, a build and release definition were automatically created in your VSTS project. You can modify these build and release definitions to meet the needs of your team. To learn more see one of these tutorials:
 
-* [Customize CD process](customize-cd-process.md)
-
-* [Manage infrastructure as code](infrastructure-as-code.md)
+* [Customize CD process](../../../actions/define-multistage-release-process.md)
 
 [//]: # (TODO MAYBE [!INCLUDE [include](_shared/quickstart-next-steps.md)

@@ -31,38 +31,38 @@ Your code changes automatically appear on your site:
 
 ## Prerequisites
 
-[!INCLUDE [include](../build-release/_shared/ci-cd-prerequisites-vsts.md)]
+[!INCLUDE [include](../../../_shared/ci-cd-prerequisites-vsts.md)]
 * Have a Windows virtual machine that has a default web site running in IIS. See [Create a Windows virtual machine with the Azure CLI](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-cli) for instructions to create a virtual machine in Azure, to install IIS, and to obtain its `publicIpAddress`.
 
 ## Prepare the Windows VM
 
-[!INCLUDE [prepare-aspnetcore-windows-vm](../build-release/apps/_shared/prepare-aspnetcore-windows-vm.md)]
+[!INCLUDE [prepare-aspnetcore-windows-vm](../../../apps/_shared/prepare-aspnetcore-windows-vm.md)]
 
-[!INCLUDE [create-deployment-group](../build-release/apps/_shared/create-deployment-group.md)]
+[!INCLUDE [create-deployment-group](../../../apps/_shared/create-deployment-group.md)]
 
 ## Import code for sample app into VSTS
 
-[!INCLUDE [import-code-aspnet-core-vsts](../build-release/apps/aspnet/_shared/import-code-aspnet-core-vsts.md)]
+[!INCLUDE [import-code-aspnet-core-vsts](../../../apps/aspnet/_shared/import-code-aspnet-core-vsts.md)]
 
 [//]: # (TODO: we want factoring of include like above so we can reuse stock fragments that appear in many many places)
 
 ## Set up continuous integration
 
-[!INCLUDE [ci-quickstart-intro](../build-release/_shared/ci-quickstart-intro.md)]
+[!INCLUDE [ci-quickstart-intro](../../../_shared/ci-quickstart-intro.md)]
 
 [//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-[//]: # (TODO: [!INCLUDE [create-aspnet-core-build-team-services](../build-release/apps/_shared/create-aspnet-core-build-team-services.md])
+[//]: # (TODO: [!INCLUDE [create-aspnet-core-build-team-services](../../../apps/_shared/create-aspnet-core-build-team-services.md])
 
 1. On the **Files** tab of the **Code** hub, click **Set up build**.
 
- ![Screenshot showing button to set up build for a repository](../build-release/apps/_shared/_img/set-up-first-build-from-code-hub.png)
+ ![Screenshot showing button to set up build for a repository](../../../apps/_shared/_img/set-up-first-build-from-code-hub.png)
 
  You are taken to the **Build & Release** hub in VSTS and asked to **Choose a template**.
 
 1. In the right panel, click **ASP.NET Core**, and then click **Apply**.
 
- ![Screenshot showing dotnet core template](../build-release/apps/aspnet/_shared/_img/apply-aspnet-core-build-template.png)
+ ![Screenshot showing dotnet core template](../../../apps/aspnet/_shared/_img/apply-aspnet-core-build-template.png)
 
  You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
 
@@ -89,11 +89,11 @@ Continuous deployment (CD) is a lean practice that your team can use to keep pro
 
 1. In the **Create release definition** wizard, select **IIS Website Deployment** template, and then click **Apply**.
 
- ![Screenshot showing IIS website deployment template](../build-release/apps/_shared/_img/aspnet-core-to-windows-vm/select-iis-website-deployment-release-template.png)
+ ![Screenshot showing IIS website deployment template](../../../apps/_shared/_img/aspnet-core-to-windows-vm/select-iis-website-deployment-release-template.png)
 
 1. Click the **Tasks** tab, and then click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*.
 
- ![iis deployment group in release definition](../build-release/apps/_shared/_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
+ ![iis deployment group in release definition](../../../apps/_shared/_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
 
 1. Click **Save**. On the Save dialog box, click **OK**.
 
@@ -122,10 +122,6 @@ You're ready to collaborate with a team on an ASP.NET Core app with a CI/CD proc
 
 You've just put your own CI/CD processes in place. You can modify these build and release definitions to meet the needs of your team. To learn more see one of these tutorials:
 
-* [Customize CD process](customize-cd-process.md)
-
-* [Deploy to multiple VMs](deploy-to-vms.md)
-
-* [Manage infrastructure as code](infrastructure-as-code.md)
+* [Customize CD process](../../../actions/define-multistage-release-process.md)
 
 [//]: # (TODO MAYBE [!INCLUDE [include](_shared/quickstart-next-steps.md)
