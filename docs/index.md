@@ -86,7 +86,7 @@ ms.date: 07/26/2017
                             <li>
                                 <h3>Add your code</h3>
                                 <ul class="noBullet">
-                                    <li><a class="barLink" href="vsts/git/index">Git Repositories</a></li>
+                                    <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -225,7 +225,7 @@ ms.date: 07/26/2017
                         <a href="#code">Code</a>
                         <ul id="code" class="cardsA">
                             <li>
-                                <a href="/vsts/git">
+                                <a href="/vsts/git/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
