@@ -1,5 +1,5 @@
 ---
-title: About notifications | VSTS & TFS
+title: About notifications 
 description: Understand how notifications or alerts are managed in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: collaborate
@@ -44,7 +44,7 @@ If your team uses an external service to collaborate&mdash;such as Campfire, Flo
 - [Slack](../service-hooks/services/slack.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)  
 - [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams)
 
-You can also use a third-party service like Zapier to send notifications to hundreds of other services. Learn more about [Zapier and Team Services integration](../service-hooks/services/zapier.md).
+You can also use a third-party service like Zapier to send notifications to hundreds of other services. Learn more about [Zapier and VSTS integration](../service-hooks/services/zapier.md).
 
 
 ## On-premises SMTP server (TFS)

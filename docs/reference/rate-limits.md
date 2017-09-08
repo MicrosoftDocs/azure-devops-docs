@@ -1,21 +1,22 @@
 ---
-title: Rate limits | Visual Studio Team Services  
+title: Rate limits 
+titleSuffix: VSTS  
 description: Limits on the resources individual users can consume in Visual Studio Team Services, and the number of work item tracking requests they can make 
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/19/2016
+ms.date: 09/07/2017
 ---
 
 <!--- Supports FWLINK:  http://go.microsoft.com/fwlink/?LinkId=692096   --> 
 
 #Rate limits  
 
-**Team Services**
+**VSTS**
 
-Team Services, like many Software-as-a-Service solutions, uses multi-tenancy to reduce costs and to enhance scalability and performance. This leaves users vulnerable to performance issues and even outages when other users of their shared resources have spikes in their consumption. To combat these problems, Team Services limits the resources individuals can consume and the number of 
+Visual Studio Team Services (VSTS), like many Software-as-a-Service solutions, uses multi-tenancy to reduce costs and to enhance scalability and performance. This leaves users vulnerable to performance issues and even outages when other users of their shared resources have spikes in their consumption. To combat these problems, VSTS limits the resources individuals can consume and the number of 
 requests they can make to certain commands. When these limits are exceeded, subsequent requests may be either delayed or blocked.
 
 When an individual user's requests are delayed by a significant amount, an email is sent to that user and a warning banner appears in the Web UI. If the user does not have an email address – 
@@ -27,7 +28,7 @@ When an individual user's requests are blocked, responses with HTTP code 429 (to
 ```TF400733: The request has been canceled: Request was blocked due to exceeding usage of resource <resource name> in namespace <namespace ID>.```
 
 ##Current rate limits
-Team Services currently has a global consumption limit, which delays requests from individual users beyond a consumption threshold when shared resources are in danger of being overwhelmed.
+VSTS currently has a global consumption limit, which delays requests from individual users beyond a consumption threshold when shared resources are in danger of being overwhelmed.
 
 ###Global consumption limit
 Because this limit is focused exclusively on avoiding outages when shared resources are close to being overwhelmed, individual users will typically only have their requests delayed when:
@@ -37,16 +38,16 @@ Because this limit is focused exclusively on avoiding outages when shared resour
 
 The amount of the delay will depend on the user's sustained level of consumption – it may be as little as a few milliseconds per request or as much as thirty seconds. If their consumption goes to zero, or if their shared resources are no longer in danger of being overwhelmed, the delays will stop after a period of not more than five minutes. If their consumption remains high and their shared resources remain in danger of being overwhelmed, the delays may continue indefinitely.
 
-####Team Services Throughput Units (TSTUs)  
-Team Services users consume many shared resources, and consumption depends on many factors. For example:
+#### VSTS Throughput Units (TSTUs)  
+VSTS users consume many shared resources, and consumption depends on many factors. For example:
 
 - Uploading a large number of files to Team Foundation version control or Git typically creates a large amount of load on both an Azure SQL Database and an Azure Storage account.
-- Running a complex work item tracking query will create load on an Azure SQL Database, with the amount of load depending on the number of work items in the Team Services account. 
+- Running a complex work item tracking query will create load on an Azure SQL Database, with the amount of load depending on the number of work items in the VSTS account. 
 - Running a build on a private agent will create load on an Azure SQL Database and on one or more Azure Storage accounts, with the amount of load depending on the amount of version 
 control content downloaded, the amount of data logged by the build, and so forth.
-- All operations consume CPU and memory on one or more Team Services application tiers or job agents.
+- All operations consume CPU and memory on one or more VSTS application tiers or job agents.
 
-To accommodate all of this, Team Services resource consumption is expressed in abstract units called Team Services Throughput Units, or TSTUs.  
+To accommodate all of this, VSTS resource consumption is expressed in abstract units called VSTS Throughput Units, or TSTUs.  
 
 TSTUs will eventually incorporate a blend of:
 
@@ -56,7 +57,7 @@ TSTUs will eventually incorporate a blend of:
 
 For now, TSTUs are primarily focused on Azure SQL Database DTUs, since Azure SQL Databases are the shared resources most commonly overwhelmed by excessive consumption. 
 
-A single TSTU per five minutes is the average load we expect a single normal user of Team Services to generate. Normal users will also generate spikes in load. These will typically
+A single TSTU per five minutes is the average load we expect a single normal user of VSTS to generate. Normal users will also generate spikes in load. These will typically
 be 10 or fewer TSTUs per five minutes, but will less frequently go as high as 100 TSTUs. The global consumption limit is 200 TSTUs within a sliding five-minute window.
 
 <!---

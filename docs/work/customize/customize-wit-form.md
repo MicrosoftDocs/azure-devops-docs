@@ -12,7 +12,7 @@ ms.date: 12/05/2016
 #Customize the work tracking web form  
 
 
-<b>VSTS | TFS 2017</b>  
+<b>VSTS | TFS 2018 | TFS 2017</b>  
 
 >[!IMPORTANT]  
 ><b>Feature availability: </b>This topic applies to customizations you can make when you use the Hosted XML process model, or you've update your application-tier server to Team Foundation Server 2017 (which uses the On-premises XML process model). For the Inheritance process model, see [Customize a process](../process/customize-process.md). 

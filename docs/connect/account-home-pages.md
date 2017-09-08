@@ -11,7 +11,7 @@ ms.date: 08/11/2017
 
 # Work effectively from your account hub
 
-**VSTS | TFS 2017.1**  
+**VSTS | TFS 2018 | TFS 2017.1**  
 
 > [!NOTE]  
 > **Feature availability**: The features described in this topic are available from Visual Studio Team Services (VSTS) and TFS 2017.1 and later versions. To upgrade to TFS 2017.1, go to the [Visual Studio downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs).  

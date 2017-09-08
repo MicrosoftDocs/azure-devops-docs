@@ -15,7 +15,7 @@ ms.date: 09/01/2017
 
 # Configure and view Velocity charts 
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)]
 
 Teams track their velocity to help them determine how much work they can perform sprint-over-sprint. Velocity provides an indication of how much work a team can complete during a sprint based either on a count of work items completed or the sum of estimates made to Effort (PBIs), Story Points (user stories), or Size (requirements). Velocity calculations rely on the team's ability to estimate backlog items. 
 

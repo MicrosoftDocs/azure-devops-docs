@@ -31,7 +31,7 @@ Here you'll find more resources to support your development efforts with Visual 
 
 ## DevOps at Microsoft
 
-*   [Articles](devopsmsft/overview.md) about how we use DevOps at Microsoft, best practices research, lessons learned, etc.
+*   [Articles](https://www.visualstudio.com/learn/what-is-devops/) about how we use DevOps at Microsoft, best practices research, lessons learned, etc.
 
 ## Journey content
 

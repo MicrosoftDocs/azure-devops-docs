@@ -12,7 +12,7 @@ ms.date: 08/11/2017
 
 
 # Link work items using the #ID control
-**VSTS | TFS 2017 | TFS 2015.1**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
 
 <a id="mention-wit-id">  </a>
 

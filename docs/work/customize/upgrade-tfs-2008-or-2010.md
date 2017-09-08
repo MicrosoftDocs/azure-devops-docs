@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # When upgrading from TFS 2008 or TFS 2010  
 
-<b>TFS 2015 </b> 
+<b>TFS 2015</b> 
 
 <blockquote style="font-size: 13px"><b>Feature availability: </b>This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on Visual Studio Team Services [update automatically with each service upgrade](/vsts/release-notes/index).
 </blockquote>  

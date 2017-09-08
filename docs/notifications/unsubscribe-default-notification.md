@@ -14,7 +14,7 @@ ms.date: 08/31/2017
 
 # Unsubscribe from a notification  
 
-**VSTS**
+**VSTS | TFS 2018 | TFS 2017.1**
 
 If you want to stop receiving select email notifications, you can do so by unsubscribing from them. For a description of each default subscription, see [Default notifications](oob-built-in-notifications.md)  
 

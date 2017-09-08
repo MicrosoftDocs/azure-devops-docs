@@ -11,7 +11,7 @@ ms.date: 03/20/2017
 
 # Select backlog navigation levels for your team
 
-**VSTS | TFS 2017 | TFS 2015**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 >[!NOTE]  
 >**Feature availability**: The team setting for choosing which backlog levels are available is available from VSTS and TFS 2015 and later versions. For TFS 2013, the Feature portfolio backlog level is enabled for all teams.  

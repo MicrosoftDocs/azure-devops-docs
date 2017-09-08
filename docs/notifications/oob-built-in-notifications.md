@@ -13,6 +13,8 @@ ms.date: 08/31/2017
 
 # Default and supported notifications
 
+**VSTS | TFS 2018 | TFS 2017.1**
+
 Default subscriptions are configured to send notifications to certain roles or user groups with specific associations to an event. For example, "reviewer" is a role on a pull request event. "Assignee (current)" is a role that reflects the current Assigned To user of a changed work item. 
 
 The roles that receive a notification for a particular default subscription are reflected in the description of the subscription, for example, *"Notifies you when a build you queued or that was queued for you completes"*. Role-based subscriptions contain a Roles field which you can view by opening the subscription. Only users or groups that belong to the role listed within the subscription will receive a notification for an event matched by the subscription.

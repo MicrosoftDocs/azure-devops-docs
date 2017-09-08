@@ -14,7 +14,7 @@ ms.date: 08/31/2017
 
 # Change your preferred email address 
 
-**VSTS | TFS 2017.1**
+**VSTS | TFS 2018 | TFS 2017.1**
 
 Notifications are sent by default to the preferred email address for your account profile. This is typically the email address you signed into Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) with. You can change this address from your account preferences profile page. 
 

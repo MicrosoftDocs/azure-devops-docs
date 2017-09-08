@@ -11,11 +11,11 @@ ms.date: 03/02/2017
 
 # All FORM XML elements reference (TFS 2015)
 
-
-<p><b>TFS 2015 | TFS 2013</b></p>
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 >[!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).<br/><br/>
+>This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
+>
 >For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
 
 You can use the information in this topic as a quick reference to all the elements and main attributes that control the form for a type of work item. You specify these elements in the `FORM` element container, the third and final major section of the definition of a type of work item. Many elements are nested within others to form groups, sections, or tabs in a work item form. For more information about how to group these elements, see [Design the work item form](design-work-item-form.md).  
@@ -27,7 +27,8 @@ The following example shows the overall structure of the **FORM** element. You s
   
 You group elements to appear within columns by using the **Group** and **Column** elements. You use a **Control** element to define each field that you want to appear on the form. You use the **Tab** element to support different functional areas of field groups.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <FORM>  
       <Layout>  
         <Group>  
@@ -58,7 +59,6 @@ You group elements to appear within columns by using the **Group** and **Column*
             </Group>  
           </Column>  
         </Group>  
-  
 . . .  
 </Layout>  
 </FORM>  
@@ -70,8 +70,7 @@ You can specify how information and work item fields are grouped and appear in a
   
 > [!NOTE]  
 >  For best results, you should nest `Control` elements in a `Group`, and you should nest `Group` elements in a `Column`, even if the column spans the full width of the form. Also, you should nest every `Column` section in a `Group`, even if the group has no visible label or boundary.  
-  
-
+ 
 
 <table Responsive="true" summary="table">
 <tr Responsive="true"><th scope="col"><p>Element</p></th><th scope="col"><p>Description</p></th><th scope="col"><p>Required?</p></th>
@@ -99,7 +98,7 @@ You can specify how information and work item fields are grouped and appear in a
 &#160;ReadOnly="True | False" MinimumSize="(Width,Height)"   
 &#160;Name="InstanceName" /&gt;
 </code>
-<p>For more information, see <a href="https://msdn.microsoft.com/en-us/library/aa337625.aspx">Control XML element reference</a>.</p></td><td data-th="Required?"><p>Required</p></td>
+<p>For more information, see [Control XML element reference](control-xml-element-reference.md).</p></td><td data-th="Required?"><p>Required</p></td>
 </tr>
 <tr><td data-th="Element"><p><strong>FORM</strong></p></td><td data-th="Description"><p>Defines the top-level form element.</p>
 <code>
@@ -182,7 +181,8 @@ You can control the spacing and size of many elements on a work item form by spe
 ##Elements that specify stand-alone Labels, Hyperlinks, Web Pages, or HTML Content  
  The `WebpageControlOptions` element and its child elements have the following syntax structure:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" >  
    <Link UrlRoot="UrlRoot" UrlPath ="UrlPathWithParameters">  
       <Param index="IndexValue" value="ParamValue" type ="Original | Current"/>  
@@ -207,7 +207,8 @@ You can control the spacing and size of many elements on a work item form by spe
 ##  <a name="LinkElements"></a> Elements that filter and display link relationships  
  You use the `LinksControlOptions` element to define the options for controlling what links can be added to a work item and the default columns that you want to appear for the list of links in a work item. When you add link control to a work item form, you can specify filters that restrict the types of links that users can create and the types of work items between which users can create links. The `LinksControlOptions` element and its child elements have the following structure:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <LinksControlOptions>  
    <WorkItemLinkFilters FilterType="include | exclude | includeAll | excludeAll">  
        <Filter LinkType="linkTypeRefName" FilterOn="reverseName | forwardName" />  

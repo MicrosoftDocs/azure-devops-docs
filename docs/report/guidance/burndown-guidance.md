@@ -12,7 +12,7 @@ ms.date: 08/02/2017
 
 # Burndown guidance
  
-<b>VSTS | TFS 2017 | TFS 2015 | 2013</b>  
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
 Review your sprint burndown chart throughout your sprint cycle to check for these indicators:  
 

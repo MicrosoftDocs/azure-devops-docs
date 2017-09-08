@@ -15,23 +15,16 @@ ms.date: 03/30/2017
 
 You can manage the fields defined for work item types (WITs) that are defined for a team project collection (On-premises XML) by using the following **witadmin** commands. If you want to add a global field (valid for On-premises XML) you can do so by [modifying the global workflow file](../global-workflow-xml-element-reference.md) and [importing it to the collection](witadmin-import-export-global-workflow.md).  
   
--   **changefield**: Changes one or more attributes of a field. When you change one of the following attributes, you change it for all work item types and team projects within the team project collection:  
-  
-    -   **Data type** for `PlainText` or `HTML` fields.  
-  
+-   **changefield**: Changes one or more attributes of a field. When you change one of the following attributes, you change it for all work item types and team projects within the team project collection:   
+    -   **Data type** for `PlainText` or `HTML` fields.    
         > [!IMPORTANT]  
         >  When you upgrade Team Foundation Server from an earlier version to the current version, the type assignment for the **Description** (System.Description) field is automatically converted from `PlainText` to `HTML`. With the `changefield` command, you can restore the content of this field to display plain text.  
   
-    -   **Friendly name** that displays in the work item query. This name may differ from that displayed on the work item form.  
-  
+    -   **Friendly name** that displays in the work item query. This name may differ from that displayed on the work item form.    
     -   **Reporting attributes** which includes the name of the field as it appears in a report, the reference report name, and the reporting type.  
-  
-    -   **Synchronization** with Active Directory - you can enable/disable synchronization of person name fields.  
-  
--   **deletefield**: Deletes the specified field.  
-  
--   **indexfield**: Turns indexing on or off for the specified field. When you enable indexing for a field, you may increase the performance of finding work items whose queries specify that field. If you add a custom field that you use in many of your work item queries, you may want to enable indexing for that field.  
-  
+    -   **Synchronization** with Active Directory - you can enable/disable synchronization of person name fields.   
+-   **deletefield**: Deletes the specified field.    
+-   **indexfield**: Turns indexing on or off for the specified field. When you enable indexing for a field, you may increase the performance of finding work items whose queries specify that field. If you add a custom field that you use in many of your work item queries, you may want to enable indexing for that field.    
 -   **listfields**: Lists the attributes for all fields or a specified field. (can run against Visual Studio Team Services)  
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool.md)] 
@@ -43,8 +36,7 @@ For an overview of the fields defined within a default process template, see [Wo
   
  **Requirements**  
   
--   To list fields, you must have your **View project-level information** permission for the team project in the collection set to **Allow**.  
-  
+-   To list fields, you must have your **View project-level information** permission for the team project in the collection set to **Allow**.    
 -   To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
   
 For more information, see [Add an administrator](../../../security/set-project-collection-level-permissions.md).  
@@ -75,9 +67,9 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 |**/syncnamechanges**|Specifies to use the work item field to store names and to update as changes are made in Active Directory or a workgroup. This option is valid only when a field with the data type of String is specified for the `typename`.<br /><br /> Specify `true` to enable synchronization for the data field, specify `false` to disable synchronization for the data field.|  
 |**/reportingname**:`ReportingName`|Specifies the name of the field in the data warehouse to be used for reporting.|  
 |**/reportingrefname**:`ReportingRefName`|Specifies the reference name of the field in the data warehouse to be used for reporting.|  
-|**/reportingtype:** `Type`|Specifies how the field is used in the warehouse for reporting. The following values are valid:<br /><br /> -   **dimension:** Used for the Integer, String, or DateTime fields.<br />-   **detail:** Used for the Integer, Double, String, or DateTime fields.<br />-   **measure:** Used for the Integer and Double fields. The default aggregation type is sum. You can specify another aggregation type by using the **formula** parameter.<br />-   **none:** Used to disable reportability on the field.<br /><br /> For more information, see [Define and modify work item fields](/vsts/work/reference/define-modify-work-item-fields).|  
+|**/reportingtype:** `Type`|Specifies how the field is used in the warehouse for reporting. The following values are valid:<br /><br /> -   **dimension:** Used for the Integer, String, or DateTime fields.<br />-   **detail:** Used for the Integer, Double, String, or DateTime fields.<br />-   **measure:** Used for the Integer and Double fields. The default aggregation type is sum. You can specify another aggregation type by using the **formula** parameter.<br />-   **none:** Used to disable reportability on the field.<br /><br /> For more information, see [Define and modify work item fields](../define-modify-work-item-fields.md).|  
 |**/reportingformula:** `Formula`|Specifies the aggregation formula to be used when the field is reported as a `measure`. The only supported formula is `sum`.|  
-|**/type:** `HTML` &#124; `PlainText`|Specifies to convert the contents of the field from `PlainText` to `HTML` or from `HTML` to `PlainText`. You can specify this option only for fields whose type assignment is `PlainText` or `HTML`. See [FIELD (Definition) element reference](https://msdn.microsoft.com/en-us/library/aa337627).|  
+|**/type:** `HTML` &#124; `PlainText`|Specifies to convert the contents of the field from `PlainText` to `HTML` or from `HTML` to `PlainText`. You can specify this option only for fields whose type assignment is `PlainText` or `HTML`. See [FIELD (Definition) element reference](../field-definition-element-reference.md).|  
 |**/unused**|Lists all fields that are not used by any team project defined in the team project collection.|  
 |**/noprompt**|Disables prompt for confirmation.|  
 |**/? or help**|Displays help about the command in the Command Prompt window.|  
@@ -97,10 +89,8 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
   
  When you assign the `syncnamechanges` attribute to a String field, the field always accepts valid user names. However, the field does not allow group names that are stored in Team Foundation Server or in Active Directory if any one of the following conditions is `true`:  
   
--   The `VALIDUSER` rule is specified across all work item types  
-  
--   The `VALIDUSER` rule is specified for a work item type  
-  
+-   The `VALIDUSER` rule is specified across all work item types    
+-   The `VALIDUSER` rule is specified for a work item type    
 -   The `ALLOWEDVALUES` rule is specified for a work item type, and that rule has a filter criteria that excludes groups  
   
  For more information, see [All FIELD elements](../field-definition-element-reference.md).  
@@ -108,19 +98,15 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 ### Attributes that you can change for each work item type  
  You change the following attributes or values defined for a field by changing the work item type definition in which the field appears:  
   
--   **Name** that displays on the work item form. See [Control](https://msdn.microsoft.com/en-us/library/aa337625).  
-  
--   **Help text**. See [Apply a field rule](/vsts/work/reference/apply-rule-work-item-field).  
-  
--   **Allowed values** or items within a pick list or drop-down menu. See [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](https://msdn.microsoft.com/en-us/library/ms194947).  
+-   **Name** that displays on the work item form. See [Control](../control-xml-element-reference.md)   
+-   **Help text**. See [Apply a field rule](/vsts/work/reference/apply-rule-work-item-field).    
+-   **Allowed values** or items within a pick list or drop-down menu. See [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](../define-pick-lists.md).  
   
 ## Examples  
  Unless otherwise specified, the following values apply in each example:  
   
--   URI for the team project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection  
-  
--   Work item field name: AdventureWorks.Field  
-  
+-   URI for the team project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
+-   Work item field name: AdventureWorks.Field    
 -   Default encoding: UTF-8  
   
 ### List fields  
@@ -159,7 +145,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
   
 ### List fields that are not being used  
   
--   Enter the following command to list the fields that are no longer being used in the team project collection by any work item type.  
+- Enter the following command to list the fields that are no longer being used in the team project collection by any work item type.  
   
     ```  
     witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /unused  
@@ -323,7 +309,7 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
     Indexed: False  
     ```  
   
-     Before you can delete this field, you must remove it from each of the work item types listed for each team project for which it is defined. To remove the field, you modify the definition for the work item type by deleting the `FIELD` and `Control` elements that contain the field reference name. See [Import, export, and manage work item types](witadmin-import-export-manage-wits.md), [FIELD (Definition) element reference](https://msdn.microsoft.com/en-us/library/aa337627), and [Control](https://msdn.microsoft.com/en-us/library/aa337625).  
+     Before you can delete this field, you must remove it from each of the work item types listed for each team project for which it is defined. To remove the field, you modify the definition for the work item type by deleting the `FIELD` and `Control` elements that contain the field reference name. See [Import, export, and manage work item types](witadmin-import-export-manage-wits.md), [FIELD (Definition) element reference](../field-definition-element-reference.md), and [Control](../control-xml-element-reference.md).  
   
 #### Delete a field from a team project collection  
   
@@ -339,7 +325,7 @@ Enter **y** at the confirmation prompt to complete this step.
 ### Q: What customizations can I make and still use the Configure Features Wizard to update my team project after a TFS upgrade?  
  **A:** You can add custom fields, customize a pick list, and add rules to a field. The [Configure Features Wizard](../../customize/configure-features-after-upgrade.md) will update your team projects and you'll get access to the latest features.  
   
- Changing field attributes is not recommended. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../../customize/on-premises-xml-process-model.md#before-you-customize).  
+ Changing field attributes is not recommended. To learn about which customizations you can safely make and which you should avoid, see [On-premises XML process model, Maintenance and upgrade implications](../../customize/on-premises-xml-process-model.md#before-you-customize).  
   
 ## Related notes 
  

@@ -12,7 +12,7 @@ ms.date: 06/01/2017
 
 # Enable preview features 
 
-<b> VSTS | TFS 2017.1</b>
+<b> VSTS | TFS 2018 | TFS 2017.1</b>
 
 >[!NOTE]    
 ><b>Feature availability: </b>The preview features you can enable or disable will differ depending on whether you work from Team Services or an on-premises TFS. Preview features become available first on VSTS and then subsequently are made available with an update to TFS. 
@@ -80,7 +80,7 @@ When you enable a feature at the account level, you essentially turn it on for a
 ### Out of the box notifications 
 
 >[!NOTE]  
->**Feature availability**: You can enable/disable Out of the box notifications from Team Services accounts and for TFS 2017.1 and later versions. 
+>**Feature availability**: You can enable/disable Out of the box notifications from | TFS 2017 accounts and for TFS 2017.1 and later versions. 
 
 With out-of-the-box notifications, users automatically receive notifications for events such as:
 

@@ -11,7 +11,7 @@ ms.date: 06/19/2017
 
 # Email or print work items 
 
-**VSTS | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Team Explorer Everywhere** 
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Team Explorer Everywhere** 
 
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  

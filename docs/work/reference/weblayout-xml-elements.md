@@ -11,10 +11,10 @@ ms.date: 03/02/2017
 
 # WebLayout and Control elements  
 
-<b>VSTS (Hosted XML) | TFS 2017 </b>
+[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
 
 > [!IMPORTANT]  
-> This topic applies to team project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [Layout XML element reference](layout-xml-element-reference.md). 
+> This topic applies to team project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015 and earlier versions, see [Layout XML element reference](layout-xml-element-reference.md). 
 >
 >For the Inheritance process model, see [Customize a process](../process/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
 
@@ -37,7 +37,7 @@ The **WebLayout** and updated **Control** elements introduce several new element
 
 In the new web form layout, the system manages the header elements shown below. These include the display of the work item ID, Title, State, Assigned To, Area and Iteration fields, tags, as well as the pages to display ![History page icon](../_img/icons/icon-history-tab-wi.png) History, ![Links page icon](../_img/icons/icon-links-tab-wi.png) Links, and ![Attachments page icon](../_img/icons/icon-attachments-tab-wi.png) Attachments.  
 
-![Header element within web form](_img/weblayout-system-controls-details-page.png)
+<img src="_img/weblayout-system-controls-details-page.png" alt="Header element within web form" style="border: 2px solid #C3C3C3;" /> 
 
 When you export a WIT definition, you'll see a **SystemControls** section at the beginning of the **WebLayout** section, similar to the following:
 
@@ -57,6 +57,7 @@ When you export a WIT definition, you'll see a **SystemControls** section at the
     </SystemControls>
 ...
 ```
+
 You can modify select elements within the **SystemControls** section, such as changing the *EmptyText* attribute value for the System.Title field. In general, we recommend you don't customize this section much more than that. 
 
 The other layout elements that you can customize are those associated with a page, such as the Details page, or  other custom pages that you add. 
@@ -189,7 +190,9 @@ You nest the following elements:
 <tr>
 	<td><p>**Control**</p></td>
 	<td><p>Optional child element for a **Group** within **WebLayout**. Defines a field, text, hyperlink, or other control element to appear on the work item form.</p>
-<pre><code>&lt;Control FieldName=&quot;FieldName&quot; Type=&quot;DateTimeControl | ExtensionsControl | FieldControl |<br/> HtmlFieldControl | LabelControl | WebpageControl&quot; Label=&quot;LabelText&quot; EmptyText=&quot;TextString&quot;<br/>  ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
+<pre><code>&lt;Control FieldName=&quot;FieldName&quot; Type=&quot;DateTimeControl | ExtensionsControl | 
+FieldControl | HtmlFieldControl | LabelControl | WebpageControl&quot; Label=&quot;LabelText&quot; EmptyText=&quot;TextString&quot;
+ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 </code></pre>
 
 <p>See [Control element attributes](#control-attributes) and [control type](#control-types) for information about each attribute.</p></td>
@@ -362,7 +365,9 @@ You nest the following elements:
 
 You use the **Control** element to define a work item field, text, hyperlink, or other form type to display in a work item form. The **Control** element you specify within the **WebLayout** section should conform to the following syntax:
 
-<pre><code>&lt;Control FieldName=&quot;FieldName&quot; Type=&quot;DateTimeControl |  FieldControl | HtmlFieldControl | LabelControl | WebpageControl&quot; Label=&quot;LabelText&quot; LabelPosition=&quot;Top | Bottom | Left | Right&quot; EmptyText=&quot;TextString&quot; ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
+<pre><code>&lt;Control FieldName=&quot;FieldName&quot; Type=&quot;DateTimeControl |  FieldControl | 
+HtmlFieldControl | LabelControl | WebpageControl&quot; Label=&quot;LabelText&quot; LabelPosition=&quot;Top | Bottom | Left | Right&quot; 
+EmptyText=&quot;TextString&quot; ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 </code></pre>
 
 
@@ -440,10 +445,13 @@ You use the **Control** element to define a work item field, text, hyperlink, or
 <td>Use to display formatted date fields with a data type of DateTime. 
 
 <p>Use ```FieldControl``` to provide a text field for the input or display of a DateTime data type field.</p>
-<pre><code>&lt;Control FieldName=&quot; MyCompany.Group1.StartDate &quot; Type=&quot;FieldControl&quot; Label=&quot;Start Date&quot; LabelPosition=&quot;Left&quot; /&gt;</code></pre>
+<pre><code>&lt;Control FieldName=&quot; MyCompany.Group1.StartDate &quot; Type=&quot;FieldControl&quot; 
+Label=&quot;Start Date&quot; LabelPosition=&quot;Left&quot; /&gt;
+</code></pre>
 <p>Use ```DateTimeControl``` to provide a calendar picker to select a date for a field, as shown in the following illustration.</p>
 ![Date-Time control, Calendar field](_img/date-time-control.png)   
-<pre><code>&lt;Control Type=&quot;DateTimeControl&quot; FieldName=&quot;FabrikamFiber.Schedule.SubmittedDate&quot; Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;Short&quot; /&gt;</code></pre>
+<pre><code>&lt;Control Type=&quot;DateTimeControl&quot; FieldName=&quot;FabrikamFiber.Schedule.SubmittedDate&quot; 
+Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;Short&quot; /&gt;</code></pre>
 </td></tr>
 
 <tr>
@@ -452,7 +460,8 @@ You use the **Control** element to define a work item field, text, hyperlink, or
 
 For example:  
 <pre><code>
-&lt;Control Type=&quot;FieldControl&quot; FieldName=&quot;FabrikamFiber.Milestone&quot; Label=&quot;Milestone&quot; Name=&quot;Milestone&quot; LabelPosition=&quot;Left&quot; /&gt;
+&lt;Control Type=&quot;FieldControl&quot; FieldName=&quot;FabrikamFiber.Milestone&quot; 
+Label=&quot;Milestone&quot; Name=&quot;Milestone&quot; LabelPosition=&quot;Left&quot; /&gt;
 </code></pre>
 
 >[!NOTE]  
@@ -473,10 +482,9 @@ For example:
 ![HTML field shown on work item form](_img/html-field-control.png)  
 
 For example:  
-<pre><code>&lt;Control Type=&quot;HtmlFieldControl&quot; FieldName=&quot;FabrikamFiber.ReleaseNotes&quot; Label=&quot;Release Notes&quot; Dock=&quot;Fill&quot; /&gt;</code></pre>
-
-
-
+<pre><code>&lt;Control Type=&quot;HtmlFieldControl&quot; FieldName=&quot;FabrikamFiber.ReleaseNotes&quot; 
+Label=&quot;Release Notes&quot; Dock=&quot;Fill&quot; /&gt;
+</code></pre>
 
 </td></tr>
 
@@ -533,7 +541,8 @@ Once the extensions have been installed, you add the <b>Contribution</b> element
 
 When you export the XML definition, it will contain a comment section that lists the installed extensions, their IDs, and any required inputs. For example: 
 
-<pre><code>
+> [!div class="tabbedCodeSnippets"]
+```XML
 &lt;!--**********************Work Item Extensions**********************
 
 Extension:
@@ -597,7 +606,7 @@ Extension:
 		Id: ms-devlabs.vsts-uservoice-ui.vsts-uservoice-ui-wi-group
 		Description: Shows User Voice details on the work item form
 --&gt; 
-</code></pre>
+```
 
 Given the above example, you can add the following code snippet to your work item type definition to turn on the user voice group ```vsts-uservoice-ui``` extension by specifying the extension Id:
 

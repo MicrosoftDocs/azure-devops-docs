@@ -1,5 +1,5 @@
 ---
-title: Get feedback | VSTS & TFS  
+title: Get feedback 
 description: Ask reviewers to provide videos, screenshots, type-written comments, and ratings on your application   developed using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 08/15/2017
 
 # Get feedback
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 >**Feature availability**: For Visual Studio Team Services (VSTS) and TFS 2015.1 or later versions, you can request feedback with a [Basic license](https://www.visualstudio.com/pricing/visual-studio-online-feature-matrix-vs) or [Basic access level](../../security/change-access-levels.md). For Team Foundation Server (TFS) 2015 or earlier versions, you need to belong to the [Advanced access level](../../security/change-access-levels.md) to request feedback. 
 >

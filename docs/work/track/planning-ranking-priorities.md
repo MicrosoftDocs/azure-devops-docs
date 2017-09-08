@@ -11,7 +11,7 @@ ms.date: 04/14/2017
 
 # Query by pick list value
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You use planning, ranking, and priority fields to specify which work the team should complete first. By ranking and prioritizing work items, all team members gain an understanding of the relative importance of the work that they must accomplish.  
 

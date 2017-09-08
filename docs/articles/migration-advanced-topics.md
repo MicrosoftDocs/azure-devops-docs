@@ -6,7 +6,6 @@ ms.technology: vs-devops-overview
 ms.contentid: f069d4ab-c824-4eb4-94ea-8e24942d5dcd
 ---
 
-> [!NOTE]
 > The TFS Database Import Service for Visual Studio Team Services (VSTS) is currently in preview.
 
 # Advanced Topics

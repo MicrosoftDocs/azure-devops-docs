@@ -1,5 +1,5 @@
 ---
-title: Create managed queries | VSTS & TFS
+title: Create managed queries 
 description: Track work by creating queries to list items using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-agile-wit
@@ -13,9 +13,9 @@ ms.date: 04/06/2017
 
 # Create managed queries to list, update, or chart work items    
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-A query lists a filtered set of work items. You can initiate a query using the [work item search box](search-box-queries.md) or through the [query editor](using-queries.md). By default, you query within a single team project. However, using the query editor, you can [query across team projects](using-queries.md#across-projects). 
+A query lists a filtered set of work items. You can initiate a query using the the [query editor](using-queries.md). Optionally, you can perform an adhoc search using the [search box](search-box-queries.md). 
 
 With queries, you can perform these functions: 
 
@@ -37,15 +37,12 @@ If you are looking for a specific work item, use the adhoc search box. If you wa
 - [Search box queries](search-box-queries.md)  
 - [Query editor](using-queries.md)    
 - [Query operators & macros](query-operators-variables.md)       
-- [Work item field index](../guidance/work-item-field.md)   
-- [Query permissions](set-query-permissions.md)  
-
 
 
 <a id="examples"/>
 ## Example queries 
 
-####*You can list work items based on the following criteria...*  
+*You can list work items based on the following criteria...*  
 
 > [!div class="mx-tdBreakAll"]  
 > |Assignment and<br/>other account-specific fields |<br/>Keywords or phrases |Work item counts<br/>and numeric fields  |  
@@ -64,6 +61,9 @@ If you are looking for a specific work item, use the adhoc search box. If you wa
 
 ## Related notes
 
+- [Work item field index](../guidance/work-item-field.md)   
+- [Query permissions](set-query-permissions.md)  
+
 To add a custom field to support your query needs, see [Customize your work tracking experience](../customize/customize-work.md). 
 
 To learn about query charts and widgets, see these topics:  
@@ -72,6 +72,9 @@ To learn about query charts and widgets, see these topics:
 - [Query results widget](../../report/widget-catalog.md#query-results-widget)   
 - [Query tile widget](../../report/widget-catalog.md#query-tile-widget) 
  
+
+### Query within or across team projects
+By default, you query within a single team project. However, using the query editor, you can [query across team projects](using-queries.md#across-projects). 
 
 ### Visualize related work and other objects 
 

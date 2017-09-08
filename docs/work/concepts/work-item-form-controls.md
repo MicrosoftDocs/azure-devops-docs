@@ -1,5 +1,5 @@
 ---
-title: Use work item form controls | VSTS & TFS  
+title: Use work item form controls  
 description: Use the controls provided in the work item form to update status, link work items, and more in Visual Studio Team Services (VSTS) and Team Foundation Server  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 08/11/2017
 
 # Use work item form controls
 
-<b>VSTS | TFS 2017</b> 
+<b>VSTS | TFS 2018 | TFS 2017</b> 
 
 Different types of work items track different data. Each work item form contains some standard fields&mdash;such as title, assigned to, and area and iteration path&mdash;as well as fields specific to the type. You can link work items to one another, as well as to changesets and source code files. 
 

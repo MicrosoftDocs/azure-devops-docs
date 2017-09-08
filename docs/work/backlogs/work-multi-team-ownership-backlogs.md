@@ -11,7 +11,7 @@ ms.date: 05/10/2017
 
 # Work with multi-team ownership of backlog items  
 
-<b>VSTS | TFS 2017 | TFS 2015</b> 
+[!INCLUDE [temp](../_shared/dev15-version-header.md)]
 
 <a id="multi-team">  </a>
 

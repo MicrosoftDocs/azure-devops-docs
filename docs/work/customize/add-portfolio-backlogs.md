@@ -1,5 +1,5 @@
 ---
-title: Add portfolio backlogs | VSTS & TFS
+title: Add portfolio backlogs 
 description: Add up to two additional work item types and portfolio backlogs to Visual Studio Team Services (VSTS) or Team Foundation Server 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 05/16/2017
 
 # Add a portfolio backlog level
 
-<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
 
 >[!IMPORTANT]  
 >This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../process/customize-process.md). 

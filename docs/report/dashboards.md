@@ -7,12 +7,12 @@ ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 06/02/2017
+ms.date: 09/07/2017
 ---
 
 # Dashboards
 
-<b>VSTS | TFS 2017 | TFS 2015.1-2015.3</b>
+<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015.1-2015.3</b>
 
 > [!NOTE]   
 > **Feature availability:** Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from Visual Studio Team Services (VSTS) and from the web portal for TFS 2015.1 or later version. 

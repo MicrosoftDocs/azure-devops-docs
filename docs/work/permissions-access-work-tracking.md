@@ -1,5 +1,5 @@
 ---
-title: Set permissions and access for tracking  | VSTS & TFS
+title: Set permissions and access for tracking 
 description: How to guide for setting permissions and access levels to support work tracking tasks (Visual Studio Team Services and Team Foundation Server)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 07/13/2017
 
 # Permissions and access for work tracking   
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](_shared/version-vsts-tfs-all-versions.md)]
 
 You can use the majority of work tracking functions and features that Team Services or TFS provides if you are added as a team member, which adds you to the Contributors group. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for tracking work as listed below.
 

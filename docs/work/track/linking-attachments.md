@@ -11,7 +11,7 @@ ms.date: 05/10/2017
 
 # Link and attachment queries  
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on their link type, link count, or attachment file count.
 

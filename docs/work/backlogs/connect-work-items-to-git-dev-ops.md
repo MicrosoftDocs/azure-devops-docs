@@ -13,7 +13,7 @@ ms.topic: get-started-article
 # Drive Git development from a work item   
 
 
-<b>VSTS | TFS 2017</b> 
+<b>VSTS | TFS 2018 | TFS 2017</b> 
 
 
 >[!NOTE]  

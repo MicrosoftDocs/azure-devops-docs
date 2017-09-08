@@ -1,17 +1,17 @@
 ---
-title: Query by account, user name, workflow or board changes | VSTS & TFS 
-description: Find or list work items based on changes made to their assignment, state or Kanban board column or swimlane when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
+title: Query by account, user name, workflow or board changes 
+description: Find or list work items based on changes made to their assignment, state or Kanban board column or swimlane 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6  
 ms.manager: douge
 ms.author: kaelli
-ms.date:08/18/2017
+ms.date: 08/18/2017
 ---
 
 # Query by assignment, workflow or Kanban board changes
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. Kanban query fields support tracking the status of work as it moves from one column or swimlane to another on the Kanban board. 
 

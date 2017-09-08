@@ -1,5 +1,5 @@
 ---
-title: Choose the source of data and authoring tool | TFS
+title: Choose the source of data and authoring tool
 description: Guide to data sources and tools for creating and customizing reports - Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting

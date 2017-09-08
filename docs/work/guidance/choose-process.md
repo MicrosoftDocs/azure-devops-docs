@@ -11,7 +11,7 @@ ms.date: 03/02/2017
 
 # Choose a process 
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Anytime you create a team project, you must choose a process or process template based on the process model you use. 
 - A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for VSTS. This model supports customization of team projects through a WYSIWYG user interface. 

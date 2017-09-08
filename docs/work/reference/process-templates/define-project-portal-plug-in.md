@@ -70,7 +70,8 @@ For an example of a task that specifies a simple project portal, see the WssTask
   
 The following example shows how to reference the English version of the Agile process template, which supports dashboards.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <tasks>  
   <task id="SharePointPortal" name="Create Sharepoint Portal" plugin="Microsoft.ProjectCreationWizard.Portal" completionMessage="Project portal site created.">  
     <dependencies />  
@@ -79,7 +80,6 @@ The following example shows how to reference the English version of the Agile pr
            <site template="Team Foundation Server Project Portal" language="1033" />    
        . . .   
         </Portal>  
-  
 ```  
   
 > [!NOTE]   
@@ -100,11 +100,11 @@ The following example shows how to reference the English version of the Agile pr
 ##  Create document libraries  
  After the project portal is created, you can specify that additional document libraries be created. Use the **documentLibrary** element to specify a document library.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <documentLibraries>  
    <documentLibrary name="" description="" isProcessGuidance="true | false" />  
-</documentLibraries>  
-  
+</documentLibraries>    
 ```  
   
 > [!NOTE]  
@@ -120,7 +120,8 @@ The following example shows how to reference the English version of the Agile pr
   
  The following example shows how to create a document library named Development that the development team can use to store documents.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <documentLibraries>  
 . . .  
    <documentLibrary name="Process Guidance" description="How to make best use of the Team Foundation Server tools and process" isProcessGuidance="true" />  
@@ -134,7 +135,8 @@ The following example shows how to reference the English version of the Agile pr
   
  Use the **folder** element to create a new folder.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <folders>  
    <folder documentLibrary="" name=""/>  
 </folders>  
@@ -149,7 +151,8 @@ The following example shows how to reference the English version of the Agile pr
   
  The following example shows how to create a folder named Trip Reports in the Development document library where developers can store trip reports from conferences or customer visits.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <folders>  
    <folder documentLibrary="Development"  
            name="Trip Reports"/>  
@@ -160,7 +163,8 @@ The following example shows how to reference the English version of the Agile pr
 ##  Specify files to upload to document libraries  
  You must also copy files into document libraries and folders. The source files are located under the Windows SharePoint Services folder. You must specify a target on the project portal.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <files>  
    <file source="" documentLibrary="" target="" queryId="" />   
 </files>  
@@ -177,7 +181,8 @@ The following example shows how to reference the English version of the Agile pr
   
  The following example shows how to copy a template file named Project Checklist into the Project Management folder. This example also specifies that when the file is first open, it should be populated with the results of the Project Checklist work item query.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <files>  
    <file source="Windows SharePoint Services\Templates\Project Checklist.xls"   
       documentLibrary="Project Management"   
@@ -196,7 +201,8 @@ Process guidance is content that documents the processes to be followed by team 
   
 To support access to process guidance from the work item forms in Team Explorer, a set of .htm files are uploaded to the Process Guidance folder within the Documents SharePoint library. These files specify URLs to the visualstudio.com content that is opened when a team member chooses the process guidance ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") icon within a work item form. These files are uploaded based on the `file` tasks defined within the portal plug-in. For example, the Agile process template defines the following `file` tasks:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <!-- Process Guidance -->  
           <file source="Windows SharePoint Services\Process Guidance\ProcessGuidance.html" documentLibrary="Process Guidance" target="ProcessGuidance.html" />  
           <file source="Windows SharePoint Services\Process Guidance\ProcessGuidance.html" documentLibrary="Process Guidance" target="ProcessGuidance.aspx" />  
@@ -228,8 +234,9 @@ You use the **activateFeatures** element to cause the creation of the dashboards
   
 **To activate dashboard features that are designed for use with the process template for Scrum**:  
   
-```  
-      <Portal>  
+> [!div class="tabbedCodeSnippets"]
+```XML
+<Portal>  
     . . .   
 <activateFeatures>  
          <!-- TfsDashboardScrumWss -->  
@@ -238,13 +245,14 @@ You use the **activateFeatures** element to cause the creation of the dashboards
           <feature featureId="1D363A6D-D9BA-4498-AD1A-9874ACA5F827" />  
         </activateFeatures>  
     . . .   
-      </Portal>  
+</Portal>  
 ```  
   
 **To activate dashboard features that are designed for use with the process template for Agile**:  
   
-```  
-  <Portal>  
+> [!div class="tabbedCodeSnippets"]
+```XML  
+<Portal>  
 . . .   
     <activateFeatures>  
       <!-- TfsDashboardAgileMoss -->  
@@ -253,13 +261,14 @@ You use the **activateFeatures** element to cause the creation of the dashboards
       <feature featureId="1D363A6D-D9BA-4498-AD1A-9874ACA5F827" />  
     </activateFeatures>  
 . . .   
-  </Portal>  
+</Portal>  
 ```  
   
 **To activate dashboard features that are designed for use with the process template for CMMI**:  
   
-```  
-      <Portal>  
+> [!div class="tabbedCodeSnippets"]
+```XML
+<Portal>  
     . . .   
 <activateFeatures>  
           <!-- TfsDashboardCmmiMoss -->  
@@ -268,7 +277,7 @@ You use the **activateFeatures** element to cause the creation of the dashboards
           <feature featureId="8610B95B-063F-4FB5-837C-BCF2FE9423C6" />  
         </activateFeatures>  
     . . .   
-      </Portal>  
+</Portal>  
 ```  
   
 ## Related notes  

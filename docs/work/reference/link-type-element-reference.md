@@ -11,7 +11,7 @@ ms.date: 02/10/2017
 
 # LinkTypes elements reference 
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013 </b>
+[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
 
 >[!IMPORTANT]  
 >This topic provides a reference of link types defined for VSTS and TFS. For the On-premises XML process model, you can add custom link types. Custom link types are not supported for Hosted XML or Inheritance process models. 
@@ -41,7 +41,8 @@ You can define additional link types by adding them to the link types that are d
 
 You can define valid link types for use in your process based on the structure that the link type definition schema provides. A link type is defined by the following XML syntax in the link types XML file.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <LinkTypes>  
    <LinkType ReferenceName="LinkTypeName" ForwardName="ForwardName" ReverseName="ReverseName" Topology="TopologyType" />  
 </LinkTypes>  
@@ -240,7 +241,7 @@ The following table describes the external link types you can specify to scope a
 
 <tr>
 <td>Model Link</td>
-<td>(Not supported within the web portal) Used to link a work item to a diagram&mdash;such as an Activity, Component, Layer, Use Case, or other diagram&mdash;stored within the system. You can link diagrams to work items only from the Visual Studio client. For details, see [Link model element to work items](https://msdn.microsoft.com/library/dd465152.aspx). </td>
+<td>(Not supported within the web portal) Used to link a work item to a diagram&mdash;such as an Activity, Component, Layer, Use Case, or other diagram&mdash;stored within the system. You can link diagrams to work items only from the Visual Studio client. </td>
 </tr>
 
 <tr>
@@ -320,7 +321,8 @@ To create a custom link type, define the link type XML definition file according
 
 For example, the following syntax defines the Microsoft.VSTS.Common.TestedBy link type provided via the TestedBy.xml file:
 
-```
+> [!div class="tabbedCodeSnippets"]
+```XML
 <?xml version="1.0" encoding="utf-8"?>
 <LinkTypes>
    <LinkType ReferenceName="Microsoft.VSTS.Common.TestedBy" ForwardName="Tested By" ReverseName="Tests" Topology="Dependency" />

@@ -11,7 +11,7 @@ ms.date: 08/11/2017
 
 # CMMI process 
 <meta name="keywords" content="CMMI tools" />
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as product backlog items, tasks, bugs and more. These artifacts are created when you create a team project using the CMMI process. They are based on the [Capability Maturity Model Integration (CMMI)](https://msdn.microsoft.com/library/ee461556.aspx) process.
 

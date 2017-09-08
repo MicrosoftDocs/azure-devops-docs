@@ -1,5 +1,5 @@
 ---
-title: Add a widget to a dashboard | VSTS & TFS  
+title: Add a widget to a dashboard 
 description: Choose and configure widgets that you add to a team dashboard  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -12,7 +12,7 @@ ms.date: 08/22/2017
 
 # Add widgets to a dashboard
 
-<b>VSTS | TFS 2017</b>  
+<b>VSTS | TFS 2018 | TFS 2017</b>  
 
 
 Widgets smartly format data to provide access to easily consumable data. You add widgets to your team dashboards to gain visibility into the status and trends occurring as you develop your software project. 

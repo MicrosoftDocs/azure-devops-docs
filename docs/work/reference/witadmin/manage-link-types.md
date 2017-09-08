@@ -15,18 +15,12 @@ ms.date: 01/20/2017
 
 Similar to work item types, you can define and modify custom link types. However, you can't make any changes to system-defined link types. Before you add a new link type to your team project collection, review the link types available for your use. See [Manage dependencies, link work items](../../track/link-work-items-support-traceability.md).  
   
- You manage the link types defined for a team project collection by using the following **witadmin** commands:  
-  
--   **deactivatelinktype**:  Deactivates the specified link type. Users will no longer be able to create links of this type. Existing links of this type will continue to function correctly.  
-  
--   **deletelinktype**:  Permanently removes the specified link type from the database. All links defined with this link type are also removed.  
-  
--   **exportlinktype**:  Exports the definitions of link types. You can export the definition of a single link type or all link types defined for the server. (can run against Visual Studio Team Services (VSTS))  
-  
--   **importlinktype**:  Imports the definitions of link types from an XML file. If a link type with the same reference name already exists, it will be updated to match the imported link type. If the link type does not already exist, a new link type will be created.  
-  
--   **listlinktypes**:  Lists the available set of link types on a server. (can run against VSTS)  
-  
+You manage the link types defined for a team project collection by using the following **witadmin** commands:  
+-   **deactivatelinktype**:  Deactivates the specified link type. Users will no longer be able to create links of this type. Existing links of this type will continue to function correctly.    
+-   **deletelinktype**:  Permanently removes the specified link type from the database. All links defined with this link type are also removed.    
+-   **exportlinktype**:  Exports the definitions of link types. You can export the definition of a single link type or all link types defined for the server. (can run against Visual Studio Team Services (VSTS))    
+-   **importlinktype**:  Imports the definitions of link types from an XML file. If a link type with the same reference name already exists, it will be updated to match the imported link type. If the link type does not already exist, a new link type will be created.   
+-   **listlinktypes**:  Lists the available set of link types on a server. (can run against VSTS)   
 -   **reactivatelinktype**: Reactivates the specified link type, and optionally assigns it a new name.  
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]  
@@ -35,8 +29,7 @@ Similar to work item types, you can define and modify custom link types. However
   
  For the team project collection where the link types are defined, you must have the following permissions set:  
   
--   To list or export link types, you must have your **View project-level information** permission for a team project in the collection set to **Allow**.  
-  
+-   To list or export link types, you must have your **View project-level information** permission for a team project in the collection set to **Allow**.    
 -   To delete, import, or reactive link types, you must be a member of the **Project Collection Administrators** security group or have your **Manage work item link types** permission set to **Allow**.  
   
 For more information, see [Add an administrator](../../../security/set-project-collection-level-permissions.md).  
@@ -48,15 +41,10 @@ For more information, see [Add an administrator](../../../security/set-project-c
   
 ```  
 witadmin deactivatelinktype /collection:CollectionURL /n:LinkName  
-
-witadmin deletelinktype /collection:CollectionURL /n:LinkName [/noprompt]  
- 
+witadmin deletelinktype /collection:CollectionURL /n:LinkName [/noprompt]   
 witadmin exportlinktype /collection:CollectionURL [/n:LinkName] [/f:FileName] [/e:Encoding]   
-
 witadmin importlinktype /collection:CollectionURL /f:FileName [/e:Encoding] [/v]  
-
 witadmin listlinktypes /collection:CollectionURL  
- 
 witadmin reactivatelinktype /collection:CollectionURL /n:LinkName  
 ```  
   

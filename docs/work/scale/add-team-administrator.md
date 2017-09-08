@@ -12,7 +12,7 @@ ms.topic: get-started-article
 
 # Add a team administrator 
 
-<b>VSTS | TFS 2017</b> <!---| TFS 2015 | TFS 2013 -->
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
 <a id="add-team-admin">  </a>  

@@ -12,7 +12,7 @@ ms.date: 06/01/2017
 
 # Switch team project or team focus   
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Several features depend on the team project or team that you have selected. For example, dashboards, backlogs, and board views will change depending on the context selected. 
 

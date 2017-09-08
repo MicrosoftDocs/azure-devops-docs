@@ -12,7 +12,7 @@ ms.date: 08/11/2017
 
 # Use the query editor to create managed queries  
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
 You can create queries in VSTS, the  web portal for Team Foundation Server (TFS), and Team Explorer. Also, you can open a query in [Excel](../office/bulk-add-modify-work-items-excel.md) or [Project](../office/create-your-backlog-tasks-using-project.md) to perform bulk additions and modifications.  

@@ -11,7 +11,7 @@ ms.date: 02/21/2017
 
 #Changes made to process templates  
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 >[!NOTE]  
 >This topic describes changes made to the core system processes&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md) with updates made to the on-premises Team Foundation Server (TFS). These processes are available from both VSTS and TFS. 

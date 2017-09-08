@@ -13,7 +13,7 @@ ms.date: 08/28/2017
 
 # Filter product and portfolio backlogs 
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 <!--- NEEDS UPDATING BASED ON FEATURES UNDER RELEASE  --> 
  

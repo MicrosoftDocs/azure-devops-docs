@@ -1,5 +1,5 @@
 ---
-title: Status and trend work item, query-based charts | VSTS & TFS  
+title: Status and trend work item, query-based charts 
 description: Create status, progress, and trend charts from flat-based queries   in VSTS and Team Foundation Server  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting

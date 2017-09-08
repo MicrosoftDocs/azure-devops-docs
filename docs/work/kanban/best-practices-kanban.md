@@ -60,7 +60,7 @@ After a team has worked with WIP limits for several weeks, discuss the challenge
 
 One of the [12 principles of Agile software development](http://agilemanifesto.org/principles.html) is to “deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.”
 
-> *All agile teams must establish what they mean when they say "working software," which is frequently known as the definition of done. At a high level, a piece of functionality is complete only when its features pass all tests and can be operated by an end user. At a minimum, teams must go beyond the unit test level and test at the system level. The best teams also include integration testing, performance testing, and customer acceptance testing in their definition of what it means to be done with a piece of functionality.* ─ [Agile Principles and Values](https://msdn.microsoft.com/library/dd997578.aspx), by Jeff Sutherland
+> *All agile teams must establish what they mean when they say "working software," which is frequently known as the definition of done. At a high level, a piece of functionality is complete only when its features pass all tests and can be operated by an end user. At a minimum, teams must go beyond the unit test level and test at the system level. The best teams also include integration testing, performance testing, and customer acceptance testing in their definition of what it means to be done with a piece of functionality.* ─ Jeff Sutherland
 
 One of the major causes of teams failing to implement Agile is they lack good definitions of done. 
 
@@ -127,21 +127,23 @@ As a starting point, consider some of the following criteria as you work with yo
 
 As your team makes progress, revisit your Definition of Done criteria. 
 
-> *A development team's Definition of Done is meant to expand over time. A newly formed team will invariably have a less stringent and smaller Definition of Done than a more mature team with a shared history of improving. Expanding a team's Definition of Done lies at the very core of Kaizen, a Japanese term meaning a mindful and constant focus on improvement. While a team may initially require only that code build before being checked in, over time they should evolve more exacting standards like the need for unit tests to accompany new code*. ─ David Starr, [Effective Sprint Retrospectives](https://msdn.microsoft.com/library/jj620912.aspx)
+> *A development team's Definition of Done is meant to expand over time. A newly formed team will invariably have a less stringent and smaller Definition of Done than a more mature team with a shared history of improving. Expanding a team's Definition of Done lies at the very core of Kaizen, a Japanese term meaning a mindful and constant focus on improvement. While a team may initially require only that code build before being checked in, over time they should evolve more exacting standards like the need for unit tests to accompany new code*. ─ David Starr
 
 ### Acceptance Criteria versus Definition of Done
 Acceptance criteria corresponds to what a customer should expect when a user story, feature, or requirement has been implemented. Conversations between the team and customers to determine the acceptance criteria helps ensure a common understanding within the team to meet customers' expectations. The acceptance criteria can be used as the basis for acceptance tests so that the team can more effectively evaluate whether an item has been satisfactorily completed. 
 
 Acceptance criteria defines when a feature is shippable. Capture the criteria for each backlog item in the Acceptance Criteria field (for Scrum product backlog items) or the Description field (for Agile user stories and CMMI requirements).
 
-<img src="_img/vso-product-backlog-work-item-form-acceptance-criteria.png" alt="Acceptance criteria field on work item form]" style="border: 2px solid #C3C3C3;" />  
+<img src="_img/vso-product-backlog-work-item-form-acceptance-criteria.png" alt="Acceptance criteria field on work item form]" style="border: 1px solid #C3C3C3;" />  
 
 The Definition of Done, on the other hand, is about delivering an incremental piece of a feature as it moves from not started to complete. Agile teams meet with greater success when each handoff made is in a ready state for the recipient to begin their work. 
 
-> *Agility requires delivering done, ready-to-use increments of working software each Sprint. Yet most Scrum and agile teams generate partially done, incomplete Increments. When a Scrum Team is asked why Product Backlog requirements were not completely done in a Sprint, team members often reply, "We didn't have time."* ─ Ken Schwaber and David Starr, [Done and Undone](https://msdn.microsoft.com/library/hh765983.aspx)
+> *Agility requires delivering done, ready-to-use increments of working software each Sprint. Yet most Scrum and agile teams generate partially done, incomplete Increments. When a Scrum Team is asked why Product Backlog requirements were not completely done in a Sprint, team members often reply, "We didn't have time."* ─ Ken Schwaber and David Starr
 
 
 ## Additional resources
+- [DoD Goes Agile](https://www.scruminc.com/dod-goes-agile/) 
+- [Walking Through a Definition of Done](https://www.scrum.org/resources/blog/walking-through-definition-done)
 - [Agile Culture](https://www.visualstudio.com/learn/agile-culture/)
 - [What is Kanban?](http://kanbanblog.com/explained/) 
 - [Kanban: Successful Evolutionary Change for Your Technology Business by David J. Anderson](http://www.amazon.com/Kanban-Successful-Evolutionary-Technology-Business/dp/0984521402/)

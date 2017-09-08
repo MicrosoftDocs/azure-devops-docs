@@ -11,7 +11,7 @@ ms.date: 8/22/2017
 
 # Cumulative flow, lead time, and cycle time guidance 
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)]
 
 You use cumulative flow diagrams (CFD) to monitor the flow of work through a system.  The two primary metrics to track, cycle time and lead time, can be extracted from the chart. Or, you can add the [Lead time and cycle time control charts](cycle-time-and-lead-time.md) to your dashboards (VSTS only at this time). 
 

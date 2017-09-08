@@ -11,7 +11,7 @@ ms.date: 08/02/2017
 
 #Scaling Agile - Practices that scale  
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Enterprise organizations adopt Agile practices for a number of reasons. Prime among these include:  
 

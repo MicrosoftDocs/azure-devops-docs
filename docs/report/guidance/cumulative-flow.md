@@ -12,7 +12,7 @@ ms.topic: get-started-article
 
 # Configure a cumulative flow chart
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)]
 
 You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. There are two CFD charts, the one viewed from the Kanban board and the one you access by adding the CFD widget to your dashboard. 
 

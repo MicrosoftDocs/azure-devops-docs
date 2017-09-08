@@ -13,7 +13,7 @@ ms.date: 06/01/2017
 <a id="column-options">  </a>
 # Change column options 
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 From each backlog page or query, you can add or remove columns. Or, you can drag a column to a new position. 
 

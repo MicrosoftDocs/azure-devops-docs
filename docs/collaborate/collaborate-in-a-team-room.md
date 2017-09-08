@@ -1,5 +1,6 @@
 ---
-title: Chat using team rooms  | VSTS & TFS   
+title: Chat using team rooms
+titleSuffix: TFS  
 description: Increase team productivity and collaboration, discuss progress, share status, and clarify issues in the team room for Visual Studio Team Services (VSTS) and TFS
 ms.technology: collaborate
 ms.prod: vs-devops-alm
@@ -11,8 +12,7 @@ ms.date: 07/21/2017
 
 # Collaborate in a team room  
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
-
+<b>TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 > [!NOTE]  
 > **Feature availability:** The Team Room feature is in the process of being deprecated. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](../service-hooks/services/slack.md). As a result, the Team Room feature will be deprecated from both Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).

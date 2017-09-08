@@ -11,7 +11,7 @@ ms.date: 04/04/2017
 
 # Use categories to group work item types
 
-[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
 
 
 By using categories, you can generate flexible reports, and support increased integration across team projects. You can more easily manage multiple work item types (WITs) as a group as well as WITs that are named differently. Also, you can use the **In Group** query operator to filter a list of work items based on the category to which they belong.  
@@ -95,7 +95,7 @@ To modify the categories defined for a team project and the On-premises XML proc
 The system overwrites the categories file upon import.  
   
 ### Add a WIT to only one category 
-WITs that you add to the Requirement Category or the Task Category must belong to one or the other, but not both. To learn more, see [Add bugs to the task board or backlog](https://msdn.microsoft.com/Library/vs/alm/work/customize/add-wits-to-backlogs-and-boards).  
+WITs that you add to the Requirement Category or the Task Category must belong to one or the other, but not both. To learn more, see [Add bugs to the task board or backlog](../customize/add-wits-to-backlogs-and-boards.md).  
   
 For WITs that you add to the Bug Category, you can add it to the Bug Category as well as others.  
 

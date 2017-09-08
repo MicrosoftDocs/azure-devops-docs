@@ -12,7 +12,7 @@ ms.date: 07/13/2017
 <a id="set-permissions">  </a>
 # Set dashboard permissions    
 
-**VSTS | TFS 2017.1**
+**VSTS | TFS 2018 | TFS 2017.1**
 
 >[!NOTE]  
 >**Feature availability:**  For VSTS and TFS 2017.1 and later versions, you can set dashboard permissions. 

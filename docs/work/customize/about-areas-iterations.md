@@ -21,6 +21,7 @@ You define area and iteration paths for a team project. Teams can then choose wh
 The areas and iterations you see depend on the process you used to create your team project. Here we show the defaults defined for the Scrum process. No dates are set. You set dates to correspond to your sprint or release schedules.
 
 > [!div class="mx-tdBreakAll"]  
+> |Areas|Iterations| 
 > |-------------|----------|  
 > |<img src="_img/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 2px solid #C3C3C3;" /> | <img src="_img/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 2px solid #C3C3C3;" /> |
   
@@ -82,6 +83,8 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../referen
 ## Related notes 
 As you can see, areas and iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
  
+*	[Set project-level area paths](set-area-paths.md)  
+*	[Set project-level iteration paths](set-iteration-paths-sprints.md)  
 *	[Set team defaults](../scale/set-team-defaults.md)  
 *	[Agile tools and sprint definitions ](../scrum/define-sprints.md)  
 *	[Query by date or current iteration](../track/query-by-date-or-current-iteration.md)  

@@ -1,5 +1,5 @@
 ---
-title: New queries experience | Team Services  
+title: New queries experience
 description: Highlights the features made available with the changes to the new Queries hub layout
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-agile 
@@ -8,22 +8,22 @@ ms.assetid: 9E69373B-8902-43C9-9F29-4BE0948077DC
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 3/22/2017
+ms.date: 09/07/2017
 ---
 
 # New Queries experience
 
-**Team Services**   
+**VSTS**   
 
 >[!NOTE]    
-><b>Feature availability: </b>The New queries experience is in preview for Team Services and available when you enable it from the web portal.     
+><b>Feature availability: </b>The New queries experience is in preview for VSTS and available when you enable it from the web portal.     
 
-We have launched a preview version of a modernized Queries Hub in your Team Services account. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.
+We have launched a preview version of a modernized Queries Hub in your VSTS account. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.
 
 ## What's new in the Queries hub
 
 ### User Focused Navigation
-When you enable the preview of the Queries Hub, you’ll notice that the left pane is gone. To navigate quickly between your favorite queries, use the dropdown in the query title.
+When you enable the preview of the **Work>Queries** hub, you’ll notice that the left pane is gone. To navigate quickly between your favorite queries, use the dropdown in the query title.
 
 <img src="_img/queries-favorite-picker.png" alt="List of favorite queries to run" style="border: 1px solid #cccccc;"/>
 

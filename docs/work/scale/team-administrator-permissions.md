@@ -11,7 +11,7 @@ ms.date: 08/15/2017
 
 # Permissions granted to the team administrator role
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b>
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 While most permissions are governed by belonging to a security group or defined at the object level, team settings are managed by the team administrator role.
 

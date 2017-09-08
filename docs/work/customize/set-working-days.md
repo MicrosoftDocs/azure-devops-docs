@@ -11,7 +11,7 @@ ms.date: 05/22/2017
 
 # Set working days  
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013 </b>
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked in your team's Settings, Working days page. 
 

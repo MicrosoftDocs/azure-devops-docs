@@ -12,8 +12,7 @@ ms.date: 06/01/2016
 
 # Query by area or iteration path 
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]
-
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Add examples of usage for areas and iteration paths. 
 Mention node names. 

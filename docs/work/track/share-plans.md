@@ -11,7 +11,7 @@ ms.date: 08/10/2017
 
 # Share work plans and progress 
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015 | Team Explorer Everywhere </b>  
+<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2017 | Visual Studio 2015 | Team Explorer Everywhere </b>  
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 

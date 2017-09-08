@@ -14,15 +14,10 @@ ms.date: 04/03/2017
 [!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]
 
 You can manage work item types for a team project by using the following **witadmin** commands:  
-  
--   **destroywitd**:  Destroys a work item type, and destroys every work item of that type permanently without recovery.  
-  
--   **exportwitd**:  Exports the definition of a work item type to an XML file, or to the Command Prompt window.  
-  
--   **importwitd**:  Imports work item types from an XML definition file into a team project on a server that runs Team Foundation Server. If a work item type with the same name already exists, the new work item type definition overwrites the existing one. If the work item type does not already exist, this command creates a new work item type. To validate the XML that defines a work item type, but not import the file, you use the **/v** option.  
-  
--   **listwitd**:  Displays the names of the work item types in the specified project in the Command Prompt window.  (can run against Visual Studio Team Services)  
-  
+-   **destroywitd**:  Destroys a work item type, and destroys every work item of that type permanently without recovery.    
+-   **exportwitd**:  Exports the definition of a work item type to an XML file, or to the Command Prompt window.    
+-   **importwitd**:  Imports work item types from an XML definition file into a team project on a server that runs Team Foundation Server. If a work item type with the same name already exists, the new work item type definition overwrites the existing one. If the work item type does not already exist, this command creates a new work item type. To validate the XML that defines a work item type, but not import the file, you use the **/v** option.   
+-   **listwitd**:  Displays the names of the work item types in the specified project in the Command Prompt window.  (can run against Visual Studio Team Services)   
 -   **renamewitd**:  Changes the display name of a work item type within a specific project. After you run this command, work items of this type show the new name.  
   
 
@@ -33,10 +28,8 @@ You can manage work item types for a team project by using the following **witad
 
 **Requirements**  
   
-For the team project where the work item types are defined, you must have the following permissions set:  
-  
--   To export or list work item types, you must be a member of the **Project Administrators** group or have your **View project-level information** permission set to **Allow**.  
-  
+For the team project where the work item types are defined, you must have the following permissions set:   
+-   To export or list work item types, you must be a member of the **Project Administrators** group or have your **View project-level information** permission set to **Allow**.    
 -   To destroy, import, or rename work item types, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group.  
   
 For more information, see [Add an administrator](../../../security/set-project-collection-level-permissions.md).  
@@ -47,14 +40,10 @@ For more information, see [Add an administrator](../../../security/set-project-c
 ## Syntax  
   
 ```  
-witadmin destroywitd /collection:CollectionURL /p:Project /n:TypeName [/noprompt]  
- 
+witadmin destroywitd /collection:CollectionURL /p:Project /n:TypeName [/noprompt]   
 witadmin exportwitd /collection:CollectionURL /p:Project /n:TypeName [/f:FileName] [/e:Encoding] [/exportgloballists]  
-
 witadmin importwitd /collection:CollectionURL [/p:Project] /f:FileName [/e:Encoding] [/v] 
-   
 witadmin listwitd /collection:CollectionURL /p:Project    
-
 witadmin renamewitd /collection:CollectionURL /p:Project /n:TypeName /new:NewName [/noprompt]   
 ```  
 
@@ -77,25 +66,18 @@ witadmin renamewitd /collection:CollectionURL /p:Project /n:TypeName /new:NewNam
 ## Remarks  
  When you use the **destroywitd** command, it destroys all the following objects:  
   
--   The work item type  
-  
--   All work items of that type  
-  
--   Corresponding entries in the work item tables, the long text tables, and the link tables  
-  
+-   The work item type   
+-   All work items of that type    
+-   Corresponding entries in the work item tables, the long text tables, and the link tables   
 -   Objects in the work item type metadata cache  
   
 ## Examples  
  Unless otherwise specified, the following values apply in each example:  
   
--   URI for the team project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection  
-  
--   Project name: AdventureWorks  
-  
+-   URI for the team project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
+-   Project name: AdventureWorks    
 -   Input or output file name: myworkitems.xml  
-  
--   Work item type name: myworkitem  
-  
+-   Work item type name: myworkitem   
 -   Default encoding: UTF-8  
   
 ### Export the definition of a WIT  
@@ -155,7 +137,8 @@ witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
 ### Q: How do I deactivate or disable a WIT? How do I restrict users from creating work items of a certain type?  
 **A:** If you have a WIT that you want to retire, but maintain the work items that have been created based on that type, you can add a rule that disables all valid users from saving the work item type.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 	<TRANSITION from=" " to="New">  
 	   <FIELDS>  
 	     <FIELD refname="System.CreatedBy">  
@@ -170,16 +153,18 @@ If you want to restrict creation of a specific WIT to a group of users, there ar
 -  [Add the WIT to the Hidden Categories group](../use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../../backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.  
 -  Add [a field rule to the workflow](../apply-rule-work-item-field.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.  
   
-    ```  
-    <TRANSITION from=" " to="New">  
-       <FIELDS>  
-         <FIELD refname="System.CreatedBy">  
-             <VALIDUSER for="Allowed Group" not="Disallowed Group" />  
-         </FIELD>  
-       </FIELDS>  
-    </TRANSITION>  
-  
-    ```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
+<TRANSITION from=" " to="New">  
+   <FIELDS>  
+     <FIELD refname="System.CreatedBy">  
+         <VALIDUSER for="Allowed Group" not="Disallowed Group" />  
+     </FIELD>  
+   </FIELDS>  
+</TRANSITION>  
+```  
+
+
 <a name="delete"></a>  
 ###   Q: How do I delete a WIT?  
  **A:** To prevent team members from using a specific WIT to create a work item, you can remove it from the team project. When you use `witadmin destroywitd`, you permanently remove all work items that were created using that WIT as well as the WIT itself. For example, if your team doesn't use Impediment you can delete the WIT labeled Impediment from the Fabrikam Web Site project.  
@@ -188,9 +173,9 @@ If you want to restrict creation of a specific WIT to a group of users, there ar
 witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"Impediment"   
 ```  
   
- When you delete a WIT that belongs to a category, you must update the categories definition for the team project to reflect the new name. In particular, the [Agile planning tools](../../overview.md) will not work until you update the categories definition.  
+When you delete a WIT that belongs to a category, you must update the categories definition for the team project to reflect the new name. In particular, the [Agile planning tools](../../overview.md) will not work until you update the categories definition.  
   
- For more information, see [Import and export categories](witadmin-import-export-categories.md).  
+For more information, see [Import and export categories](witadmin-import-export-categories.md).  
   
 ## Related notes  
 -  [Customize your work tracking experience](../../customize/customize-work.md)   

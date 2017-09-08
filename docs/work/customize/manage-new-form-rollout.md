@@ -12,7 +12,7 @@ ms.date: 03/16/2017
 # Manage roll out of the new web form
 
 
-**VSTS | TFS 2017**  
+**VSTS | TFS 2018 | TFS 2017**  
 
 >[!IMPORTANT]  
 >**Feature availability:**&#160;&#160;The new form and its corresponding features are available from VSTS and the web portal for TFS 2017 and later versions.<br/> 

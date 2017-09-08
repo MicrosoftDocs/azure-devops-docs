@@ -15,8 +15,7 @@ ms.date: 01/20/2017
 
 By using global workflow, you can minimize the work required to define and update work item fields and global lists that multiple team projects and types of work items share. With global workflow, you can define and update fields and global lists. You can manage the global workflow for a team project collection or a team project by using the following commands in the **witadmin** command-line tool:  
   
--   **exportglobalworkflow**:  Exports the global workflow to an XML file or the Command Prompt window.  
-  
+-   **exportglobalworkflow**:  Exports the global workflow to an XML file or the Command Prompt window.   
 -   **importglobalworkflow**:  Imports global workflow from an XML file.  
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]  
@@ -24,10 +23,8 @@ By using global workflow, you can minimize the work required to define and updat
   
  **Requirements**  
   
--   To export a global workflow, you must be a valid user of the team project or team project collection.  
-  
--   To import a global workflow to a team project, you must be a member of the following security groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators**.  
-  
+-   To export a global workflow, you must be a valid user of the team project or team project collection.    
+-   To import a global workflow to a team project, you must be a member of the following security groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators**.    
 -   To import a global workflow to a team project collection, you must be a member of either the **Team Foundation Administrators** or **Project Collection Administrators**.  
   
 See [Permission reference](../../../security/permissions.md).  
@@ -61,10 +58,8 @@ witadmin importglobalworkflow /collection:CollectionURL [/p:ProjectName] /f:File
 ## Examples  
  Unless otherwise specified, the following values apply in each example:  
   
--   URI for the collection: http://AdventureWorksServer:8080/tfs/DefaultCollection  
-  
--   Team project: Contoso  
-  
+-   URI for the collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
+-   Team project: Contoso    
 -   Port number for the server website: 8080  
   
 ### Export the definition of a global workflow for a team project  

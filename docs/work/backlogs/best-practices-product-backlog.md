@@ -11,7 +11,7 @@ ms.date: 08/07/2017
 
 # Groom your backlog  
 
-**VSTS | TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
  
 A great backlog conveys customer needs and value. Over the course of the project, your team will add detailed 
 information to each backlog item, break them down into smaller items, prioritize and estimate them, and finally, 

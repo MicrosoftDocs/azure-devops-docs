@@ -11,7 +11,7 @@ ms.date: 04/03/2017
 
 # Link work items to support traceability and manage dependencies  
 
-**VSTS | TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 By linking work items and other objects, you can track related work, dependencies, and changes made over time. All links are defined with a specific link type. For example, you can use Parent/Child links to link work items to support a hierarchical tree structure. Whereas, the Commit and Branch link types support links between work items and commits and branches, respectively.    
 

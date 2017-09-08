@@ -1,30 +1,30 @@
 ---
-title: Connect to team projects | Team Service & TFS 
+title: Connect to team projects 
 description: Connect a client to the cloud service VSTS or on-premises Team Foundation Server (TFS) 
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.manager: douge
 ms.author: kaelli
-ms.date: 12/05/2016 
+ms.date: 09/07/2017 
 ---
 
 # Connect to team projects 
 
-**VSTS | TFS 2017 | TFS 2015 | TFS 2013** 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 To share code, build apps, track work, and collaborate with team members, you connect to a team project from one of the following clients:  
 - [Web portal](#web-portal)  
 - [Visual Studio or Team Explorer](#visual-studio)  
 - [Eclipse/Team Explorer Everywhere](../git/share-your-code-in-git-eclipse.md)
-- [Android Studio with the Visual Studio Team Services Plugin for Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio)  
-- [IntelliJ with the Visual Studio Team Services Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intellij) 
+- [Android Studio with the VSTS Plugin for Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio)  
+- [IntelliJ with the VSTS Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intellij) 
 - [Visual Studio Code](http://java.visualstudio.com/Docs/tools/vscode)    
 
 >[!NOTE]
 >A team project defines a process and data storage in which you manage your software projects from planning to deployment. You or a team member create a team project either on VSTS or an on-premises TFS. When you connect to a team project, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system. 
 
-If you don't have a team project yet, create one in [Visual Studio Team Services](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md). If you need to add a team, see [Multiple teams](../work/scale/multiple-teams.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members). 
+If you don't have a team project yet, create one in [VSTS](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md). If you need to add a team, see [Multiple teams](../work/scale/multiple-teams.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members). 
 
 From each of these clients, you can quickly switch context to a different team project and connect under a different account name. If you work remotely, you can configure your client to [connect to a TFS Proxy server](#proxy).
 
@@ -79,10 +79,6 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 <a id="visual-studio">  </a>
 ## Connect from Visual Studio or Team Explorer
 
-
->[!TIP]  
->If you're connecting to VSTS, see also [Connect to Visual Studio Team Services from Eclipse, Xcode, Visual Studio, and more](../connect/connect-team-projects.md). 
-
 1.  If you haven't already, [download and install a version of Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs).
 
 2.  If you're not a member of a TFS security group, [get added as one](../accounts/add-users.md).
@@ -117,7 +113,7 @@ Select the connect icon in Team Explorer to open up the **Connect** page. Choose
 
 ![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
 
-The **Connect to a Project** dialog will appear and show the Team Services projects you can connect to, along with the repos in those projects.
+The **Connect to a Project** dialog will appear and show the team projects you can connect to, along with the repos in those projects.
 
 ![Connect to a Project dialog box](_img/connect-team-projects-tfs/vs2017_connect_dialog.png)
 
@@ -152,11 +148,11 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 	![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
 
-	The **Switch User** link appears only when you are actively connected to a team project hosted on Team Services.  
+	The **Switch User** link appears only when you are actively connected to a team project hosted on VSTS.  
 
 	![Connect to Team Foundation Server dialog box](_img/connect-team-projects-tfs/IC719958.png) 
 
-2. Sign on using a valid Microsoft account—an account that is associated with a Visual Studio Team Services team project. 
+2. Sign on using a valid Microsoft account—an account that is associated with a VSTS team project. 
 
 
 ### Visual Studio 2017 
@@ -167,9 +163,9 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 	Select a different user from the drop-down or select **Add an account...** to access a team project using a different account.
 
-	![Connect with VS 2017 TFS or Team Services using a different account](_img/connect-team-projects-tfs/choose-different-user-vs2017.png) 
+	![Connect with VS 2017 TFS or VSTS using a different account](_img/connect-team-projects-tfs/choose-different-user-vs2017.png) 
 
-2. Sign on using a valid Microsoft account—an account that is associated with a Visual Studio Team Services team project. 
+2. Sign on using a valid Microsoft account—an account that is associated with a VSTS team project. 
 
 ### To change accounts 
 
@@ -281,9 +277,9 @@ To start planning and tracking work, see [Get started with Agile tools to plan a
 
 ### User accounts and licensing  
 
-To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (Team Services)](../accounts/add-account-users-assign-access-levels.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
+To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (VSTS)](../accounts/add-account-users-assign-access-levels.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
 
-VSTS provides access to the first 5 account users free. After that, you need to [pay for more users (Team Services)](../billing/buy-basic-access-add-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
+VSTS provides access to the first 5 account users free. After that, you need to [pay for more users (VSTS)](../billing/buy-basic-access-add-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
 
 In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../quickstart/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 

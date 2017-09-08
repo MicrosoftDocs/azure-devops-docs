@@ -1,6 +1,6 @@
 ---
-title: Add and edit wiki pages | VSTS  
-description: Share informationwith your team  and increase collaboration using a built-in team project wiki - Visual Studio Team Services (VSTS)  
+title: Add and edit wiki pages
+description: Share informationwith your team  and increase collaboration using a built-in team project wiki  
 ms.technology: collaborate
 ms.prod: vs-devops-alm
 ms.assetid: 
@@ -13,6 +13,8 @@ ms.date: 08/04/2017
 
 
 # Manage README and Wiki permissions 
+
+**VSTS | TFS 2018 | TFS 2017**
 
 By default, all members of the Contributors group can edit READMEs and Wiki pages. 
 

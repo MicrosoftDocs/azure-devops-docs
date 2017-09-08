@@ -11,7 +11,7 @@ ms.date: 07/21/2017
 
 # Create your backlog and tasks using Project 
 
-**VSTS | TFS 2017 | TFS 2015 | TFS 2013**  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 If Office Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in Team Services or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
 

@@ -11,7 +11,7 @@ ms.date: 07/14/2017
 
 # Bulk add or modify work items with Excel 
 
-<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 When you have a lot of work items to add or modify, using Excel can save you time. [Use a flat list](../track/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../track/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
 

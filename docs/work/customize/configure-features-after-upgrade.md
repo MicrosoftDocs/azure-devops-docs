@@ -1,5 +1,5 @@
 ---
-title: Configure features after an upgrade | TFS 
+title: Configure features after an upgrade 
 description: Configure features after an upgrade to  the application-tier server of Team Foundation Server (TFS)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
@@ -9,9 +9,9 @@ ms.author: kaelli
 ms.date: 03/16/2017
 ---
 
-#Configure features after an upgrade
+# Configure features after an upgrade
 
-<b>TFS 2017 | TFS 2015 | TFS 2013</b> 
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 >[!IMPORTANT] 
 >**Feature availability**: This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on Visual Studio Team Services [update automatically with each service upgrade](/vsts/release-notes/index).  

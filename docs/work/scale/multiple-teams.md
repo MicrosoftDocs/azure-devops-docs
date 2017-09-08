@@ -12,7 +12,7 @@ ms.topic: get-started-article
 
 # Add teams and team members  
 
-<b>VSTS | TFS 2017</b><!--- | TFS 2015 | TFS 2013--> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 As your organization grows, you'll want to make sure that you configure your Agile tools to support that growth. To enable each feature team the autonomy it needs to manage their backlog and plan their sprints, they need their own set of team tools. 
 

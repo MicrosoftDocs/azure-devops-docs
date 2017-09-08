@@ -22,7 +22,8 @@ The `LabelText` element is a child element of the `Control` element.
  
 ## Syntax  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <LabelText>  
    <Text>  
       <Link OpenInNewWindow="true | false" UrlPath="URLLinkWithParameters">  
@@ -59,7 +60,8 @@ The `LabelText` element is only recognized by clients that are running the lates
   
 The following example adds the plain text "Enter details about how to reproduce the bug in the space below:" to a work item form.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <Control Type="LabelControl" Label=" Enter details about how to reproduce the bug in the space below:">  
    <LabelText>  
       <Text>Enter details about how to reproduce the bug in the space below:  
@@ -72,7 +74,8 @@ The following example adds the plain text "Enter details about how to reproduce 
 
 The following example adds a hyperlink which is labeled "How do I use this work item?" to a work item form.   
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <Control Type="LabelControl" Label="How do I use this work item?">  
    <LabelText>  
       <Text>  
@@ -87,7 +90,8 @@ The following example adds a hyperlink which is labeled "How do I use this work 
   
 The following example adds a two-part label to a work item form. The first part, "Iteration Path", is associated with a hyperlink. The second part, "(must be 3 levels deep)" appears on the work item form as plain text.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <Control Type="FieldControl" FieldName="System.IterationPath" LabelPosition="Left">  
    <LabelText>  
       <Text>  
