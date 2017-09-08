@@ -6,17 +6,7 @@ ms.technology: vs-devops-overview
 ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
 ---
 
-<<<<<<< HEAD
 > [!NOTE]
-> The TFS Database Import Service for Visual Studio Team Services (VSTS) is currently in preview.
-
-## TFS Database Import Service 
-
-The TFS Database Import Service, also known shorthand as the Import Service, provides a high fidelity way to migrate collection databases from Team Foundation Server (TFS) to Visual Studio Team Services (VSTS). It's recommended that you download the [migration guide](https://aka.ms/TFSDataImport) if you're looking to use this service to import your collection(s). The guide serves as a walk through of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to VSTS. 
-
-## Supported TFS Versions for Import
-The TFS Database Import Service supports the two latest releases of TFS at a given time. Releases include updates and major releases. Currently the following versions of TFS are supported for import:
-=======
 > The TFS Database Import Service for Visual Studio Team Services (VSTS) is currently in preview.
 
 # Overview
@@ -100,37 +90,15 @@ TFS Data Import Services supports collections that contain up to 300 projects. I
 
 ## Supported TFS Versions for Import
 Support for the TFS Database Import Service is limited to the two most recent releases of TFS. Releases include all major and regular updates. Currently the following versions of TFS are supported for import: 
->>>>>>> c8a10194526d69faa7a3111063296fe708f8d054
 
 * TFS 2017 Update 1
 * TFS 2017 Update 2
 
-<<<<<<< HEAD
-> The Import Service doesn’t support imports from release candidate (RC) releases of TFS. If you’re planning on importing your collection database to VSTS using this service, it’s important that you don’t upgrade your production database to this RC release. If you do upgrade, then you will need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous TFS version to import. 
-
-Normal release cadence for new TFS versions is once every three-to-four months. Meaning that support for a given version of TFS for migration to VSTS should last for anywhere between six-to-eight months. It’s important to ensure that your planning accounts for this support window to avoid having to suddenly upgrade to migrate. 
-
-## TFS Database Import Service Resources
-In generally you should use the [migration guide](https://aka.ms/TFSDataImport) when going through an import. When it's required the guide links back to the below documentation. These articles offer deeper technical knowledge on various import topics. 
-
-### Importing Process 
-* [Validating a collection for import](.\migration-import.md#validating-a-collection)
-* [Preparing a collection for import](.\migration-import.md#generating-import-files)
-* [Before import steps](.\migration-import.md#getting-ready-to-import)
-* [Running an Import](.\migration-import.md#running-an-import)
-* [Post import steps](.\migration-post-import.md)
-
-### Troubleshooting 
-* [Troubleshooting validation errors](.\migration-troubleshooting.md)
-* [Troubleshooting process errors](.\migration-processtemplates#dealing-with-process-errors)
-* [Troubleshooting import errors](.\migration-troubleshooting.md#dealing-with-import-errors)
-=======
 It's strongly recommended that you upgrade to the latest supported version of TFS before importing to VSTS.  
 
 > Release Candidate (RC) and preview versions of TFS are NOT supported by the Import Service. You will need to be on an RTW version for one of the above supported TFS versions to import.
 
 Normal release cadence for new TFS versions is once every three-to-four months. Meaning that support for a given version of TFS for migration to VSTS should stay in support for anywhere between six-to-eight months. It’s important to ensure that your planning accounts for this support window to avoid having to suddenly upgrade to migrate. 
->>>>>>> c8a10194526d69faa7a3111063296fe708f8d054
 
 ## FAQ
 
@@ -154,33 +122,16 @@ A: This is the same experience with TFS on-premises. If we make a change to a sy
 
 #### Q: Is there a difference between a team project that was created manually versus one that was created from data import?
 
-<<<<<<< HEAD
-A. The features available to each team project are the same. The differences occur in how you modify the processes in your account. When you create an account, you will use the [Inheritance process model](https://www.visualstudio.com/docs/work/process/manage-process) to customize the work tracking experience. Team projects migrated via data import, however, will use the [Hosted XML process model](https://www.visualstudio.com/docs/work/import-process/import-process) to customize the work tracking experience.
-
-#### Q: If my account is using Hosted XML, can I create new projects to use the Inheritance process model?
-
-A: Yes. For data import accounts, VSTS supports team projects that use  Inheritance as well as  Hosted XML process models. To learn more about the Inheritance process, see [Manage processes](https://www.visualstudio.com/docs/work/process/manage-process).  
-=======
 A. The features available to each team project are the same. The differences occur in how you modify the processes in your account. When you create an account, you will use the [Inheritance process model](../work/process/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) to customize the work tracking experience. Team projects migrated via data import, however, will use the [Hosted XML process model](../work/import-process/import-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) to customize the work tracking experience.
 
 #### Q: If my account is using Hosted XML, can I create new projects to use the Inheritance process model?
 
 Yes. For data import accounts, VSTS supports team projects that use  Inheritance as well as  Hosted XML process models. To learn more about the Inheritance process, see [Manage processes](../work/process/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json).  
->>>>>>> c8a10194526d69faa7a3111063296fe708f8d054
 
 #### Q: Where can I find more information on Hosted XML and the Inheritance process model?
 
 * [VSTS Process Customization Roadmap (2017)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/26/team-services-process-customization-roadmap-jan-2017/)
-<<<<<<< HEAD
-* [Inheritance Process Model](https://www.visualstudio.com/docs/work/process/manage-process)
-* [Hosted XML](https://www.visualstudio.com/ocs/work/import-process/import-process)
-
-#### Q: If I have feedback or additional questions is there somewhere I can reach out?
-
-A: Yes, you can contact [vstsdataimport@microsoft.com](mailto:vstsdataimport@microsoft.com). Please note that this alias is for general questions. If you need assistance with a failed import please contact VSTS\TFS [customer support](https://aka.ms/vstscustomersupport). 
-=======
 * [Inheritance Process Model](../work/process/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
 * [Hosted XML](../work/import-process/import-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
->>>>>>> c8a10194526d69faa7a3111063296fe708f8d054
 
 <!-- ENDSECTION --> 
