@@ -18,11 +18,11 @@ Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops
 - Is there an effective strategy for DevOps?
 - How do I support applications with single or multiple versions?
 
-This topic aims to answer those questions, and give you branching strategy in TFVC. (For guidance on TFVC branch strategies overall, read [Branching Strategies with TFVC](./branching-strategies-with-tfvc.md).) 
+This topic aims to answer those questions, and give you branching strategy in TFVC. (For guidance on TFVC branch strategies overall, read [Branching Strategies with TFVC](/vsts/tfvc/branching-strategies-with-tfvc.md).) 
 
 > [!NOTE]
 > 
-> This topic covers TFVC. For Git, refer to [adopt a Git branching strategy](./git-branching-guidance.md).  
+> This topic covers TFVC. For Git, refer to [adopt a Git branching strategy](/vsts/git/git-branching-guidance.md).  
 
 [![Channel9](_img/effective-tfvc-branching-strategies-for-devops/channel9.png)](https://channel9.msdn.com/Blogs/DevOps-Interviews/Interview-with-Abel-Wang-and-Steven-St-Jean) *(Based on an interview with Abel Wang and Steve St Jean)*
 
