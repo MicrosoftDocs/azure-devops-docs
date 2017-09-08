@@ -8,10 +8,8 @@
     href: access-with-azure-ad.md
 - name: Quickstarts
   items:
-  - name: Create your account with a personal Microsoft account
-    href: create-account-with-personal-msa.md
-  - name: Create your account with a work or school account
-    href: create-account-with-work-school.md
+  - name: Create your VSTS account
+    href: create-account-msa-or-work-student.md
   - name: Try extensions for free
     href: /vsts/billing/try-additional-features-vs?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Tutorials

@@ -23,8 +23,7 @@ Use this index to setup and manage your account and configure key settings to su
 
 ## 5-Minute Quickstarts  
 
-* [Create your account with a personal Microsoft account](create-account-with-work-school.md)
-* [Create your account with a work or school account](create-account-with-work-school.md)
+* [Create your account with VSTS](create-account-msa-or-work-student.md)
 * [Add users to your account](add-account-users-from-user-hub.md)
 * [Try extensions for free](../billing/try-additional-features-vs.md)
 

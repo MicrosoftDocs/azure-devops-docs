@@ -31,7 +31,7 @@ You can quickly get started with a team project from the project page. You can s
 
 
 ## Open the project home page
-From your web browser, open the team project drop down menu and select the home page. If you don't have a team project yet, create one in [VSTS](../accounts/set-up-vs.md)<!---or set one up in an [on-premises TFS](../../accounts/create-team-project.md)-->.   
+From your web browser, open the team project drop down menu and select the home page. If you don't have a team project yet, create one in [VSTS](../accounts/set-up-vs.md)<!---or set one up in an [on-premises TFS](../accounts/create-team-project.md)-->.   
 
 <img src="_img/project-vision-status-project-home-page.png" alt="Open the Project Home Page" style="border: 2px solid #C3C3C3;" /> 
 

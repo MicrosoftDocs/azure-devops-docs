@@ -42,7 +42,7 @@ GET https://app.vssps.visualstudio.com/_apis/Accounts?[memberId={GUID}][&ownerId
 
 #### Q: Can I use basic auth with the profiles API?
 
-A: No, you must use [OAuth](../../get-started/Authentication/oauth.md).
+A: No, you must use [OAuth](../../get-started/authentication/oauth.md).
 
 <!-- ENDSECTION --> 
 

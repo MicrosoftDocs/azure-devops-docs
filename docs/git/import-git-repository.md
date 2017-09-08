@@ -18,7 +18,7 @@ This guide shows you how to import an existing Git repo from GitHub, Bitbucket, 
 
 ## Prerequisites
 
-* A VSTS account. If you don’t have one, you can [sign up](../accounts/create-account-with-work-school.md) for one for free. Each account includes free, unlimited private Git repositories.
+* A VSTS account. If you don’t have one, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
   * If you are using TFS, you must have TFS 2017 Update 1 or higher.
 
 ## Import into a new repo

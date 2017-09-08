@@ -33,7 +33,7 @@ Whether you work in the cloud, on-premises, or a hybrid of each, you have a comp
 Choose Team Services when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to cloud load testing, cloud build servers, and application insights. [Small teams can start for free!](https://www.visualstudio.com/products/visual-studio-team-services-vs.aspx)  
 
 
-[![Sign up for Team Services](_img/overview/vsts-setup-1.png)](accounts/create-account-with-work-school.md)[![Add team members](_img/overview/vsts-setup-3.png)](accounts/add-team-members-vs.md)[![Add code to repository](_img/overview/vsts-setup-4.png)](#add-code)   
+[![Sign up for Team Services](_img/overview/vsts-setup-1.png)](accounts/create-account-msa-or-work-student.md)[![Add team members](_img/overview/vsts-setup-3.png)](accounts/add-team-members-vs.md)[![Add code to repository](_img/overview/vsts-setup-4.png)](#add-code)   
 
 ### Work on-premises
 Choose on-premises TFS when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  

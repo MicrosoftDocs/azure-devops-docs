@@ -186,7 +186,7 @@ Or contact [Visual Studio Support](https://www.visualstudio.com/support/support-
 <a name="WhatIsVSO"></a>
 ####Q: How can I create a Visual Studio Team Services account later?
 
-A:	Learn how to [sign up for Visual Studio Team Services](create-account-with-work-school.md).
+A:	Learn how to [sign up for Visual Studio Team Services](create-account-msa-or-work-student.md).
 
 <a name="browser-problems"></a>
 

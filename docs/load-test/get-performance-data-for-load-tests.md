@@ -22,13 +22,13 @@ Then, by doing a quick root cause analysis, you can figure out which code
 is causing performance problems.
 
 1. Download and install 
-   [Visual Studio Enterprise 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs), 
+   [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs), 
    if you haven't already done so.
 
-1. [Enable Azure Active Directory](https://www.visualstudio.com/docs/setup-admin/team-services/manage-organization-access-for-your-account-vs)
+1. [Enable Azure Active Directory](../accounts/access-with-azure-ad.md)
    for your VSTS account, if you haven't already done so.
 
-1. [Link your VSTS account with your Azure subscription](https://www.visualstudio.com/docs/setup-admin/team-services/manage-organization-access-for-your-account-vs#connect-your-team-services-account-to-your-directory),
+1. [Link your VSTS account with your Azure subscription](../accounts/connect-account-to-aad.md),
    if you haven't already done so.
 
 1. Sign in to your VSTS account from your web browser to refresh the Azure Resources Manager access token. 

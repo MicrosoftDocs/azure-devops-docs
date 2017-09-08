@@ -56,7 +56,7 @@ Manage the steps in the process with approvals for each step.
 You have the following options for managing your releases:
 
 * **Using Release Management as a service on Visual Studio Team Services**: 
-  You need a **[Visual Studio Team Services account](https://www.visualstudio.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services)**. 
+  You need a Visual Studio Team Services account. 
   You cannot use Chef and you can deploy only to vNext environments based on Azure IaaS services
 * **Using an on-premises server**: You need to install Release Management Server; 
   do that **[here](install-release-management/install-server-and-client.md#installserver)**.

@@ -23,7 +23,7 @@ and [release logs](debug-deployment-issues.md).
 From the Release Management UI you can also
 [restore deleted releases](#restore-release),
 respond to [approval requests](#approve-release),
-[redeploy](#redeploy-release) a release,
+[redeploy](#redeploy-release) a release, get [release notifications](#notifications),
 send [email notifications](#send-email),
 and view [release history](#release-history).
 You might also want to add a [releases widget](#add-widget)
@@ -382,6 +382,16 @@ Release Management does not handle this.
 
 If you need to change the release definition before you redeploy, you must
 [create a new release](create-deploy-releases.md) from the updated release definition.
+
+<h2 id="notifications">Release notifications</h2>
+
+Release Management automatically defines a set of built-in notifications that
+are integrated with the VSTS and TFS notifications system. You can view, opt out,
+disable, and manage these notifications in the **Notifications** tab of the **Services** hub.
+
+![Managing release notificatoins](_img/view-manage-releases/notifications-settings.png)
+
+For more information about notifications, see [Manage notifications for a team](../../collaborate/manage-team-notifications.md).
 
 <h2 id="send-email">Send email notifications</h2>
 

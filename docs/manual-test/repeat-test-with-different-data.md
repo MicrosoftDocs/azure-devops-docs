@@ -23,7 +23,7 @@ to check that a quantity of 200 works just as well as a quantity of 1.
 To do this, you insert parameters in your test steps. Along with 
 the test steps, you provide a table of parameter values. You can 
 also share parameters and their data between test cases when you 
-use the web portal with TFS 2015 and higher or 
+use the web portal with TFS 2015 and later or 
 VSTS. That way you can run multiple test cases with the 
 same data.
 
