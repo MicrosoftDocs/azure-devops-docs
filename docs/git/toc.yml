@@ -23,31 +23,31 @@
 - name: Tutorials
   href: gitquickstart.md
   items:
-  - name: 1 - Create a new repo
+  - name: Create a new repo
     href: tutorial/creatingrepo.md
-  - name: 2 - Clone an existing repo
+  - name: Clone an existing repo
     href: tutorial/clone.md
-  - name: 3 - Save work with commits
+  - name: Save work with commits
     href: tutorial/commits.md
-  - name: 4 - Create work in branches
+  - name: Create work in branches
     href: tutorial/branches.md
-  - name: 5 - Share code with push
+  - name: Share code with push
     href: tutorial/pushing.md
-  - name: 6 - Update code with fetch and pull
+  - name: Update code with fetch and pull
     href: tutorial/pulling.md
-  - name: 7 - Review code with pull requests
+  - name: Review code with pull requests
     href: tutorial/pullrequest.md
-  - name: 8 - Apply changes with rebase
+  - name: Apply changes with rebase
     href: tutorial/rebase.md
-  - name: 9 - Copy changes with cherry-pick
+  - name: Copy changes with cherry-pick
     href: tutorial/cherry-pick.md
-  - name: 10 - Resolve merge conflicts
+  - name: Resolve merge conflicts
     href: tutorial/merging.md
-  - name: 11 - Undo changes
+  - name: Undo changes
     href: tutorial/undo.md
-  - name: 12 - Ignore files
+  - name: Ignore files
     href: tutorial/ignore-files.md
-  - name: 13 - Review history
+  - name: Review history
     href: tutorial/history.md
 - name: Samples
   items:
@@ -87,6 +87,8 @@
       href: https://visualstudio.com/git-at-scale
     - name: Manage large files
       href: manage-large-files.md
+  - name: Map TFVC actions to Git
+    href: concepts/mapping-my-tfvc-actions-to-git.md
 - name: How-to Guides
   items:
   - name: Authenticate with SSH
