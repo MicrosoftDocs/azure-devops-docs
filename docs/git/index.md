@@ -20,19 +20,8 @@ Use Git repos to host and collaborate on your code using Team Services or Team F
 Get started by creating a repo, uploading your code, and inviting developers to work in the repo. You can use any one of these clients or IDEs: 
 
 <!--- All images are Placeholder --> 
-
-<table>
-<tr valign="middle" align="center">
-<td>![Web](_img/index/web.png)<br/>[Web](create-new-repo.md)</td>
-<td>![VS](_img/index/vs-ide.png)<br/>[Visual Studio](share-your-code-in-git-vs.md)</td>
-<td>![CLI](_img/index/cli.png)<br/>
-[Command line](share-your-code-in-git-cmdline.md)</td>
-<td>![Xcode](_img/index/xcode.png)<br/>[Xcode](share-your-code-in-git-xcode.md)</td>
-<td>![Eclipse](_img/index/eclipse.png)<br/>[Eclipse](share-your-code-in-git-eclipse.md)
-</td>
-</tr>
-</table>    
-
+<!-- Converting to icon48 format, this gets cleaner in YAML -->
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="create-new-repo.md"><img width="48" height="48" alt="" src="_img/index/web.png"><span>Web</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-vs.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-cmdline.md"><img width="48" height="48" alt="" src="_img/index/cli.png"><span>Command-line</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-xcode.md"><img width="48" height="48" alt="" src="_img/index/xcode.png"><span>Xcode</span></a></div><div class="ico48Link"><a href="share-your-code-in-git-eclipse.md"><img width="48" height="48" alt="" src="_img/index/eclipse.png"><span>XCode</span></a></div></div>
 
 Or, you can [import an existing repo](import-git-repository.md) from GitHub, BitBucket, GitLab, or other location to a new, empty repo. 
 

@@ -23,15 +23,9 @@ Visual Studio Team Services and TFS provide two models of version control: [Git]
 Get started by creating a team project, configuring your workspace, and reviewing and sharing your code. You can use any one of these clients or IDEs: 
 
 <!--- All images are Placeholder --> 
+<!-- Converting to icon48 format, this gets cleaner in YAML -->
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="share-your-code-in-tfvc-vs.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="share-your-code-in-tfvc-xcode.md"><img width="48" height="48" alt="" src="_img/index/xcode.png"><span>Xcode</span></a></div><div class="ico48Link"><a href="share-your-code-in-tfvc-eclipse.md"><img width="48" height="48" alt="" src="_img/index/eclipse.png"><span>XCode</span></a></div></div>
 
-<table>
-<tr valign="middle" align="center">
-<td>![VS](_img/index/vs-ide.png)<br/>[Visual Studio](share-your-code-in-tfvc-vs.md)</td>
-<td>![Xcode](_img/index/xcode.png)<br/>[Xcode](share-your-code-in-tfvc-xcode.md)</td>
-<td>![Eclipse](_img/index/eclipse.png)<br/>[Eclipse](share-your-code-in-tfvc-eclipse.md)
-</td>
-</tr>
-</table>    
 
 ## Step-by-Step Tutorials  
 
