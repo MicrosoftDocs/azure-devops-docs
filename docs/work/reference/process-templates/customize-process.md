@@ -6,17 +6,14 @@ ms.technology: vs-devops-wit
 ms.assetid: 3122f0e7-2ad9-46a1-a65f-32af37c0f444
 ms.author: kaelli
 ms.manager: douge
-ms.date: 04/13/2017
+ms.date: 09/08/2017
 ---
-
 
 
 # Customize a process template
 
-
-[!INCLUDE [temp](../../_shared/dev15-version-header-process-template.md)]
-
-
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+****
 Process templates define the objects and processes available to you when you create a team project. By customizing a process template, you customize one of more objects. Common types of customizations you can make include:  
   
 - Add a new field to an existing work item type (WIT)  
@@ -103,46 +100,35 @@ The Build, Portal, and Reporting plug-ins require the following resources have b
 To customize a process template, you customize one or more files associated with a functional area. While customizing any one object is fairly simple, you'll want to make sure that you don't break any interdependencies when you customize.  The [ProcessTemplate.xml plug-in file](define-root-tasks-process-template-plug-in.md) defines which plug-ins to include in the template. This file contains all the task groups that you want to run to create a team project. Each task group references a subordinate XML plug-in file where the specific tasks for that plug-in are defined.     
   
 
-<div style="float:left;width:180px;margin:3px">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Teams, groups, permissions, & area and iteration paths</p>
+#### Teams, groups, permissions, & area and iteration paths 
 <ul style="padding-left:20px;font-size:90%">
  <li style="margin-bottom:2px">[Area and iteration paths](define-classification-plug-in.md)</li>
  <li style="margin-bottom:2px">[Groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)</li>
  <li style="margin-bottom:2px">[Microsoft Project mapping file](../map-microsoft-project-fields-to-tf-fields.md)</li>
 </ul>
-</div>
- 
-<div style="float:left;width:180px;margin:3px">
-<ul style="padding-left:20px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;"><br/><br/>Work item tracking</p>
+
+#### Work item tracking  
  <li style="margin-bottom:2px">[WIT definitions](add-wit-definitions-process-template.md)</li>
  <li style="margin-bottom:2px">[Categories](add-type-wit-category-definitions-process-template.md)</li>
  <li style="margin-bottom:2px">[Process configuration](../process-configuration-xml-element.md)</li>
  <li style="margin-bottom:2px">[Link types](add-link-type-definitions-to-a-process-template.md)</li>
  <li style="margin-bottom:2px">[Work items](add-work-item-instance-process-template.md) or [work item queries](add-work-item-queries-process-template.md)</li> 
 </ul>
-</div>
 
-<div style="float:left;width:180px;margin:3px">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;"><br/>Version control, build, lab and test management</p>
+
+#### Version control, build, lab and test management 
 <ul style="padding-left:20px;font-size:90%">
 <li style="margin-bottom:2px">[Group permissions](control-access-to-functional-areas.md)</li>
 <li style="margin-bottom:2px">[Check-in policies](define-initial-configuration-version-control.md)</li>
 <li style="margin-bottom:2px">[Test environments, configurations, resolution states, and settings](define-initial-configuration-test-manager.md)</li>
 </ul>
-</div>
 
-<div style="float:left;width:180px;margin:3px">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;"><br/>Reports and<br/>project portal</p>
+#### Reports and project portal 
 <ul style="padding-left:20px;font-size:90%">
 <li style="margin-bottom:2px">[Upload reports](add-reports-to-the-process-template.md)</li>
 <li style="margin-bottom:2px">[Upload documents to the project portal](define-project-portal-plug-in.md)</li> 
 </ul>
-</div>
 
-
-<div style="clear:left;font-size:100%">
-</div>
 
 Because the process template touches on many components of a team's process, you may want to plan, coordinate, and track the changes that you will make. In particular, you may want to check with project leads, test leads, development leads, and release managers before you change the default configuration of any one area.  
   

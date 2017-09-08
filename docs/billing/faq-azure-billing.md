@@ -10,7 +10,7 @@ ms.author: elbatk
 ms.date: 04/28/2017
 ---
 
-#	Troubleshooting Azure billing
+#Troubleshooting Azure billing
 
 **VSTS**
 
@@ -64,7 +64,7 @@ A:	You can use these prepaid funds to pay for:
 
 *	[Team Services users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) 
 *	[Microsoft-published extensions for Team Services and Team Foundation Server](https://marketplace.visualstudio.com/vsts)
-*	[Virtual user minutes for Cloud-based Load Testing](https://www.visualstudio.com/docs/setup-admin/team-services/buy-more-build-vs )
+*	[Virtual user minutes for Cloud-based Load Testing](/vsts/billing/buy-more-build-vs)
 *	[HockeyApp plans](https://marketplace.visualstudio.com/subscriptions)
 
 You can't use these funds to pay for Visual Studio cloud 
@@ -83,11 +83,11 @@ which you can do before or during your purchase.
 
 A:	No, you can't use the monthly Azure credits from 
 [Visual Studio subscriptions](https://www.visualstudio.com/products/subscriber-benefits-vs) 
-and [Visual Studio Dev Essentials](https://www.visualstudio.com/en-us/products/visual-studio-dev-essentials-vs.aspx) 
+and [Visual Studio Dev Essentials](https://www.visualstudio.com/products/visual-studio-dev-essentials-vs.aspx) 
 to pay for Visual Studio Marketplace purchases. 
 However, you can use the included Azure subscriptions to bill your purchases. 
 Before you make purchases though, you must 
-[remove your spending limit](https://azure.microsoft.com/en-us/pricing/spending-limits/) 
+[remove your spending limit](https://azure.microsoft.com/pricing/spending-limits/) 
 from these subscriptions.
 
 <img alt="Spending limit" src="_shared/_img/spending-limit.png" style="border: 1px solid #CCCCCC" />

@@ -6,12 +6,12 @@ ms.technology: vs-devops-wit
 ms.assetid: ac935b0b-09b3-4aed-9f3a-08190feb92e2
 ms.manager: douge
 ms.author: kaelli
-ms.date: 04/13/2017
+ms.date: 09/08/2017
 ---
 
 # Define the root tasks using the process template plug-in file File
 
-[!INCLUDE [temp](../../_shared/dev15-version-header-process-template.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 <a name="top"></a> By customizing ProcessTemplate.xml, you can add, remove, or change the sequence in which process template plug-in files are processed. The ProcessTemplate.xml is the root file that defines the entire process template and all subordinate XML files. This file contains all of the task groups that must run to successfully create a team project. Each task group references a subordinate XML file (often in a subfolder) where the specific tasks are defined. In general, you specify one task group for each plug-in.  
   
@@ -22,7 +22,8 @@ To learn more about the default process templates, see [Choose a process](../../
 ##Structure of the ProcessTemplate.xml file  
  In each ProcessTemplate.xml file, you define metadata and task groups. The metadata describes the template and specifies the plug-ins to be processed, as the following example shows  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <metadata>  
     <name>MSF for Agile Software Development 2013</name>  
     <description>This template is flexible and will work great for most teams using Agile planning methods, including those practicing Scrum.</description>  
@@ -37,7 +38,8 @@ To learn more about the default process templates, see [Choose a process](../../
   
  The task groups specify the dependencies and tasks to be performed for each plug-in, as the following example shows:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <groups>  
     <group id="Classification" description="Structure definition for the project." completionMessage="Project Structure uploaded.">  
       <dependencies></dependencies>  
@@ -61,7 +63,8 @@ To learn more about the default process templates, see [Choose a process](../../
   
 1.  **name**. You use this element to assign a label to the process template. In the New Team Project Wizard, you specify the process template based on its name, as the following example shows:  
   
-    ```  
+    > [!div class="tabbedCodeSnippets"]
+	```XML 
     <name>Simplified Process</name>  
     ```  
   
@@ -69,7 +72,8 @@ To learn more about the default process templates, see [Choose a process](../../
   
 2.  **description**. You use this element to define the text that describes the process template in the New Team Project Wizard, as the following example shows:  
   
-    ```  
+    > [!div class="tabbedCodeSnippets"]
+	```XML  
     <description>Choose the simple process for projects that require little or no overhead and have very low cost.</description>  
     ```  
   
@@ -84,7 +88,8 @@ To learn more about the default process templates, see [Choose a process](../../
   
      The following XML shows the correct values to use for each of the nine plug-ins that Visual Studio Application Lifecycle Management (ALM) includes.  
   
-    ```  
+    > [!div class="tabbedCodeSnippets"]
+	```XML
     <plugins>
 	   <plugin name="Microsoft.ProjectCreationWizard.Classification"   wizardPage="false"/>
 	   <plugin name="Microsoft.ProjectCreationWizard.Reporting"   wizardPage="false"/>
@@ -102,7 +107,8 @@ To learn more about the default process templates, see [Choose a process](../../
   
      The following example shows how a task group creates the default groups and permissions. The specific tasks are defined in the referenced file (GroupsandPermissions.xml). This task group has a dependency that the tasks in the Classification group successfully complete.  
   
-    ```  
+    > [!div class="tabbedCodeSnippets"]
+	```XML 
     <group id="Groups" description="Create groups and assign permissions." completionMessage="Groups created and permissions assigned.">
 	   <dependencies>
 	      <dependency groupId="Classification" />
@@ -129,7 +135,8 @@ To learn more about the default process templates, see [Choose a process](../../
 ## Example ProcessTemplate file  
  The following syntax lists the contents of the Scrum ProcessTemplate.xml file.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <?xml version="1.0" encoding="utf-8"?>  
 <ProcessTemplate>  
   <metadata>  
@@ -215,8 +222,7 @@ To learn more about the default process templates, see [Choose a process](../../
       <taskList filename="Windows SharePoint Services\WssTasks.xml" />  
     </group>  
   </groups>  
-</ProcessTemplate>  
-  
+</ProcessTemplate>    
 ```  
   
 ## Related notes  

@@ -10,4 +10,4 @@ Check if your account controls access with Azure AD.
 
 If your account is connected to your organization's directory, 
 this means that only users from your organization's directory can join your account.
-Learn about [controlling account access with Azure AD](https://www.visualstudio.com/docs/setup-admin/team-services/manage-organization-access-for-your-account-vs). 
+Learn about [controlling account access with Azure AD](/vsts/accounts/add-users-to-aad). 

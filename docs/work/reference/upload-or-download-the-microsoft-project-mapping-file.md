@@ -6,12 +6,13 @@ ms.technology: vs-devops-wit
 ms.assetid: 43474098-a23a-49c2-bfa8-2f4beb0e5399
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/22/2017  
+ms.date: 09/08/2017
 ---
+
+
 # Upload or download the Microsoft Project Mapping file
 
-**TFS 2017 | TFS 2015 | TFS 2013** 
-
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 >[!IMPORTANT]  
 >This topic applies to team project customization for the On-premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize/customize-work.md).  
@@ -86,25 +87,24 @@ TFSFieldMapping upload | download /collection:CollectionURL /teamproject:Project
   
 4.  Add new mappings or edit existing mappings in the following format:  
   
-    ```  
-  
+    > [!div class="tabbedCodeSnippets"]
+	```XML   
     <Mapping WorkItemTrackingFieldReferenceName="System.Id"   
        ProjectField=""  
        ProjectName=""  
        ProjectUnits=""  
        PublishOnly=""  
-       IfSummaryRefreshOnly=""/>  
-  
+       IfSummaryRefreshOnly=""/>    
     ```  
   
      For example, to add additional scheduling fields to a team project created using the Scrum process template, add the following mappings:  
   
-    ```  
+    > [!div class="tabbedCodeSnippets"]
+	```XML   
     <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StartDate" ProjectField="pjTaskStart" PublishOnly="true" />  
     <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.FinishDate" ProjectField="pjTaskFinish" PublishOnly="true" />  
     <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.OriginalEstimate" ProjectField="pjTaskBaselineWork" ProjectUnits="pjHour" IfSummaryRefreshOnly="true" />  
-    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.CompletedWork" ProjectField="pjTaskActualWork" ProjectUnits="pjHour" IfSummaryRefreshOnly="true" />  
-  
+    <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.CompletedWork" ProjectField="pjTaskActualWork" ProjectUnits="pjHour" IfSummaryRefreshOnly="true" />    
     ```  
   
      The default Scrum template only maps the Remaining Work field to Project.  
@@ -118,7 +118,8 @@ TFSFieldMapping upload | download /collection:CollectionURL /teamproject:Project
   
 7.  Save and upload the file:  
   
-    ```  
+    > [!div class="tabbedCodeSnippets"]
+	```XML  
     TFSFieldMapping upload /collection:CollectionURL /teamproject:ProjectName /mappingfile:MappingFile  
     ```  
   

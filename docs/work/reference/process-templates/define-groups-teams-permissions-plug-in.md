@@ -6,14 +6,12 @@ ms.technology: vs-devops-wit
 ms.assetid: 322a80cc-0396-43d7-8be3-63d5cce058d3
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/24/2017
+ms.date: 09/08/2017
 ---
 
 # Define groups, teams, and permissions using the Groups and Permissions Plug-in
 
-
-[!INCLUDE [temp](../../_shared/dev15-version-header-process-template.md)]
-
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You can define security groups to control access to functional areas within a team project. In addition to the [default security groups](../../../security/permissions.md), you can configure a team project's initial groups, group members, and security permissions by customizing the Groups and Permissions plug-in. With this plug-in, you can define groups, teams, add groups and users as members to groups, and grant permissions to the groups.  
   
@@ -38,13 +36,15 @@ The file, folder, and plug-in names are:
 ##Define groups  
  You use the **group** element to specify a new security group in Team Foundation Server.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <group name="GroupName" description="GroupDescription"></group>  
 ```  
   
 The following example shows how to create a group that is named Reader:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <task id="GroupCreation1"   
       name="Create Groups and Permissions"   
       plugin="Microsoft.ProjectCreationWizard.Groups"   
@@ -66,7 +66,8 @@ The following example shows how to create a group that is named Reader:
 ##Define members  
  You use the **member** element to assign a group as a member of a security group in Team Foundation Server.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <member name="MemberName" ></member>  
 ```  
   
@@ -75,7 +76,8 @@ The following example shows how to create a group that is named Reader:
   
  The following example shows how to add TestGroup1 as a member of TestGroup2.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <task id="GroupCreation1"   
     <taskXml>  
       <groups>  
@@ -105,7 +107,8 @@ The following example shows how to create a group that is named Reader:
 > [!IMPORTANT]
 >  You must assign iteration paths that correspond to paths defined in the Classification plug-in file. See [Define initial areas, iterations, and Project mapping file](define-classification-plug-in.md).  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <group name="@defaultTeam">  
    <permissions>  
       <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
@@ -125,7 +128,8 @@ The following example shows how to create a group that is named Reader:
   
  You can also define additional teams within a team project. You do this by defining a group and assigning the `isTeam` attribute to `true`. The following example shows how to define a team and its permissions, members, and initial sprint assignments. Specify the default team settings for a team project.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <group name="Dream Team" isTeam="true" description="Next generation work">  
    <permissions>  
       <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
@@ -140,21 +144,22 @@ The following example shows how to create a group that is named Reader:
          <iterationPath path="Iteration 3" />  
       </iterationPaths>  
    </teamSettings>  
-</group>  
-  
+</group>   
 ```  
   
 <a name="permissions"></a> 
 ##Define permissions  
 You must specify permissions for each group that you create. You use the **permission** element for this purpose.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <permission name="PermissionName" class="ClassName" allow="true | false"/>  
 ```  
   
  The following example shows how to grant permissions to the Reader security group so that members can view information about a team project, but they cannot modify that information.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <group name="Readers" description="A group for users who have read access across the project">  
    <permissions>  
      <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
@@ -179,7 +184,7 @@ You must specify permissions for each group that you create. You use the **permi
 |**groups**|Required child element of **taskXml** for the Groups and Permissions plug-in. Contains the group and permission definitions.<br />`<groups>`<br />&nbsp;&nbsp;&nbsp;`<group> . . . </group>`<br />`</groups>`|  
 |**iterationPath**|Required child element of **iterationPaths**. Specifies a team milestone.<br /> `<iterationPath path="IterationName" />`|  
 |**iterationPaths**|Optional child element of **teamsettings**. Specifies team milestones.<br />`<iterationPaths backlogPath="BacklogPathName">`<br />&nbsp;&nbsp;&nbsp;`. . .`<br />`</iterationPaths>`|  
-|**member**|Required child element of **members**. Specifies the name of a group that you are adding as a member of another group. You can create groups and automatically populate them with TFS default groups, previously defined project groups, and groups and users in Active Directory.<br />`<member name="MemberName" >`<br />`</member>`<br />For information about how to specify default groups, see [Group macros and default groups](configure-initial-groups-teams-members-permissions.md#GroupMacros).|  
+|**member**|Required child element of **members**. Specifies the name of a group that you are adding as a member of another group. You can create groups and automatically populate them with TFS default groups, previously defined project groups, and groups and users in Active Directory.<br />`<member name="MemberName" >`<br />`</member>`<br />For information about how to specify default groups, see [Group macros and default groups](configure-initial-groups-teams-members-permissions.md#group-macros).|  
 |**members**|Optional child element of **group** and specifies the collection of members to add to the group. The **members** container element must follow the **permissions** container element.<br />`<members>`<br />&nbsp;&nbsp;&nbsp;`<member> . . . </member>`<br />`</members>`|  
 |**permission**|Required child element of **permissions**. Specifies the permission to apply to the group.<br />`<permission name="PermissionName" class="ClassName" allow="true &#124; false" />`<br /> Where the following definitions apply for each attribute:<br />- `name`: Required. Specifies the name of the permission. For more information, see the table in [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md) that describes each class and name combination you can specify as a permission.<br />- `class`: Required. Identifies the class, or area, where the group permission is granted. The following values are valid: `NAMESPACE` (collection-level), `PROJECT` (project-level), `CSS_NODE` (area node) and `ITERATION_NODE` (iteration node).<br />- `allow`: Optional. Specifies a true or false value that indicates whether you are allowing the permission.|  
 |**permissions**|Required child element of **group** and specifies the collection of permissions to apply to the group. The **permissions** container element must precede the **members** container element.<br />`<permissions>`<br />&nbsp;&nbsp;&nbsp;`    <permission> . . . </permissions>`<br />`</permissions >`|  

@@ -6,19 +6,19 @@ ms.technology: vs-devops-wit
 ms.assetid: 6d6103d6-2558-460c-b022-9eda2ffe4023
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/24/2017
+ms.date: 09/08/2017
 ---
 
 # Define objects for tracking work items using the work Item tracking plug-in
 
-[!INCLUDE [temp](../../_shared/dev15-version-header-process-template.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-<a name="top"></a> By using the plug-in for tracking work items, you define a team project's initial objects for tracking work. These objects include types of work items, work item queries, categories, link types, and instances of work items. After you create a team project, you can modify these objects by using the **witadmin** command-line tool.  
+By using the plug-in for tracking work items, you define a team project's initial objects for tracking work. These objects include types of work items, work item queries, categories, link types, and instances of work items. After you create a team project, you can modify these objects by using the **witadmin** command-line tool.  
   
  In the plug-in file, you specify one or more tasks and their dependencies. In general, you specify one task for each major upload activity, such as link types, work item types, queries, and categories.  
   
 > [!IMPORTANT]
->  You must specify the tasks to upload files and define queries in a specific sequence: link types first, then work item types, and then queries. Each definition file for these objects depends on the definitions that are specified in the tasks that precede them. In general, you should maintain the task sequence that is defined in the process template that you are customizing. For more information, see [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md).  
+> You must specify the tasks to upload files and define queries in a specific sequence: link types first, then work item types, and then queries. Each definition file for these objects depends on the definitions that are specified in the tasks that precede them. In general, you should maintain the task sequence that is defined in the process template that you are customizing. For more information, see [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md).  
   
 <a name="plugin"></a> 
 ##Plug-in name and location  
@@ -49,7 +49,8 @@ The names of the file, the folder, and the plug-in for the default process templ
   
  For a description of each element, see [Element reference](#elements) later in this topic.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <?xml version="1.0" encoding="utf-8"?>  
 <tasks>  
   <task id="LinkTypes" name="LinkType definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item link types created">  

@@ -6,12 +6,13 @@ ms.technology: vs-devops-wit
 ms.assetid: a7dff64f-4bb7-4083-bcf5-12d70e4915ea
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/24/2017
+ms.date: 09/08/2017
 ---
+
 
 # Define the initial configuration of Team Foundation version control
 
-[!INCLUDE [temp](../../_shared/dev15-version-header-process-template.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 By using the plug-in for version control, you can configure a team project's initial security permissions, check-out policies, and check-in notes.  
   
@@ -28,8 +29,10 @@ The names of the file, the folder, and the plug-in for the default process templ
   
 ##  <a name="Exclusive"></a> Exclusive Check Out  
  You can control whether multiple people can check out a file at the same time by specifying the **exclusive_checkout** element.  
-  
-```  
+
+
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <exclusive_checkout required=""/>  
 ```  
   
@@ -37,14 +40,16 @@ The names of the file, the folder, and the plug-in for the default process templ
   
  The following example shows how to require exclusive check-out:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <exclusive_checkout required="true"/>  
 ```  
   
 ##  <a name="Latest"></a> Get Latest on Check Out  
  You use the **get_latest_on_checkout** element to configure the default behavior when a user checks out a file for a team project.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <get_latest_on_checkout required=""/>  
 ```  
   
@@ -54,7 +59,8 @@ The names of the file, the folder, and the plug-in for the default process templ
   
  The following example shows how to specify that the default check-out behavior is to get the most recent version of an item when a user checks it out.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <get_latest_on_checkout required="true"/>  
 ```  
   
@@ -63,7 +69,8 @@ The names of the file, the folder, and the plug-in for the default process templ
   
  You use the following syntax for a checkin_note element  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <checkin_note label="" required="" order=""/>  
 ```  
   
@@ -77,7 +84,8 @@ The names of the file, the folder, and the plug-in for the default process templ
   
 The following example shows how to create an additional check-in note labeled "Documentation Impact" which isn't required to have a value.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <taskXml>  
    <checkin_note label="Code Reviewer" required="false" order="1"/>  
    <checkin_note label="Security Reviewer" required="false" order="2"/>  

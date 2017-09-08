@@ -31,4 +31,4 @@ make sure that you assigned this extension to users.
 	If not, assign the extension to the user.
 
 Learn more about 
-[assigning paid extensions to users](https://www.visualstudio.com/docs/marketplace/get-vsts-extensions#assign-extension).
+[assigning paid extensions to users](/vsts/marketplace/get-vsts-extensions#assign-extension).

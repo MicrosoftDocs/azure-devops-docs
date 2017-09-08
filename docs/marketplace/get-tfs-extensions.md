@@ -13,7 +13,7 @@ ms.date: 01/10/2017
 
 # Get extensions for Team Foundation Server (TFS)
 
-**TFS 2017** | **TFS 2015 Update 3**
+**TFS 2018 | TFS 2017 | TFS 2015.3**
 
 To add new features and capabilities to your TFS, 
 install extensions from the 
@@ -299,7 +299,7 @@ so they can start using that extension's capabilities.
 > If you installed these extensions, you don't have to assign 
 > them to Visual Studio Enterprise subscribers in your team project. Visual Studio Test Professional subscribers 
 > get access to the Test Manager extension included with their subscription. To grant them access just assign Test Manager.
-> To learn more, see [change access levels](https://www.visualstudio.com/docs/work/connect/change-access-levels).
+> To learn more, see [change access levels](/vsts/security/change-access-levels).
 > To find the access that your extension requires, see the extension's description 
 > in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 

@@ -6,12 +6,12 @@ ms.technology: vs-devops-wit
 ms.assetid: 8c6550d9-9239-4dac-832b-5634924ec77b
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/22/2017 
+ms.date: 09/08/2017
 ---
 
 # Map Project fields to TFS fields
 
-**TFS 2017 | TFS 2015 | TFS 2013** 
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 >[!IMPORTANT]  
 >This topic applies to team project customization for the On-premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize/customize-work.md).  
@@ -35,7 +35,8 @@ For more information, see [Define initial areas, iterations, and Project mapping
 ##  Specify how fields are mapped  
  You specify mapped fields by using the **Mapping** element and the following syntax structure:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <Mappings>  
    <Mapping WorkItemTrackingFieldReferenceName="System.Id"   
             ProjectField=""  
@@ -65,7 +66,8 @@ For more information, see [Define initial areas, iterations, and Project mapping
   
  You use the following XML syntax to specify which column maps to the synchronization field. You set the ProjectField attribute to a valid column in Microsoft Project.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <SyncField ProjectField="" />  
 ```  
   
@@ -73,7 +75,8 @@ For more information, see [Define initial areas, iterations, and Project mapping
   
  You use the following XML syntax to specify which column maps to the links and attachments field. You set the ProjectField attribute to a valid column in Microsoft Project.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <LinksField ProjectField="" />  
 ```  
   
@@ -81,7 +84,8 @@ For more information, see [Define initial areas, iterations, and Project mapping
 ##Default field mappings  
  The following example shows how the MSF for Agile Software Development process template maps fields in work items to columns in Microsoft Project.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <?xml version="1.0" encoding="utf-8"?>  
 <MSProject>  
   <Mappings>  

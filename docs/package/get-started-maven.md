@@ -24,7 +24,7 @@ listing to install.
 1. Apache Maven installed. It can be downloaded from the [Apache Maven Site](https://maven.apache.org/download.cgi).
 2. Have [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your Team Services account.
 3. [Public-opt in only] - To enable Maven support for your account, ask your account admin to go to the "Preview Features" section, choose "for this account", and enable "Maven for Package Management". 
-([Preview Features docs](https://www.visualstudio.com/en-us/docs/collaborate/preview-features))
+([Preview Features docs](../collaborate/preview-features.md))
 
 <a name="create-a-feed"></a>
 

@@ -18,7 +18,7 @@ Here you'll find more resources to support your development efforts with Visual 
    
 ##	Migration and integration
 
-*   [High fidelity migration from TFS to Team Services](migration-overview.md)  
+*   [High fidelity migration from TFS to VSTS](migration-overview.md)  
 
 ##	Security
 

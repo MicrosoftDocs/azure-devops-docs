@@ -32,7 +32,7 @@ A:	Yes.  You can use these prepaid funds to pay for:
 
 *	[VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) 
 *	[Microsoft-published extensions for VSTS and Team Foundation Server](https://marketplace.visualstudio.com/vsts)
-*	[Virtual user minutes for Cloud-based Load Testing](https://www.visualstudio.com/docs/setup-admin/team-services/buy-more-build-vs )
+*	[Virtual user minutes for Cloud-based Load Testing](/vsts/billing/buy-more-build-vs)
 *	[HockeyApp user plans](https://marketplace.visualstudio.com/subscriptions)
 * [Xamarin University](https://www.xamarin.com/university)
 
@@ -42,7 +42,7 @@ subscriptions and non-Microsoft extensions for VSTS and Team Foundation Server.
 ####Q:	Can I use the Azure Free Trial to buy from the Visual Studio Marketplace?
 
 A:	No, you can't use the 
-[Azure Free Trial](https://azure.microsoft.com/en-us/pricing/free-trial/) 
+[Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/) 
 to pay for Visual Studio Marketplace purchases, 
 which applies to Visual Studio Team Services, HockeyApp plans, Xamarin University, and so on. 
 Instead, set up a separate Pay-As-You-Go Azure subscription,
@@ -52,11 +52,11 @@ which you can do before or during your purchase.
 
 A:	No, you can't use the monthly Azure credits from 
 [Visual Studio subscriptions](https://www.visualstudio.com/products/subscriber-benefits-vs) 
-and [Visual Studio Dev Essentials](https://www.visualstudio.com/en-us/products/visual-studio-dev-essentials-vs.aspx) 
+and [Visual Studio Dev Essentials](https://www.visualstudio.com/products/visual-studio-dev-essentials-vs.aspx) 
 to pay for Visual Studio Marketplace purchases. 
 However, you can use the included Azure subscriptions to bill your purchases. 
 Before you make purchases, you must 
-[remove your spending limit](https://azure.microsoft.com/en-us/pricing/spending-limits/) 
+[remove your spending limit](https://azure.microsoft.com/pricing/spending-limits/) 
 from these subscriptions.
 
 <img alt="Spending limit" src="_img/spending-limit.png" style="border: 1px solid #CCCCCC" />
