@@ -654,7 +654,7 @@ Must not contain characters prohibited by the local file system. For more inform
 
 <a id="WorkItemFields">   </a>
 
-###WIT field names#
+###WIT field names
 
 Each WIT definition contains one or more work item fields. These fields define the information stored for work items based on the WIT. A work item field name uniquely identifies each work item field.  
 

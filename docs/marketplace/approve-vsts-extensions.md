@@ -7,7 +7,7 @@ ms.service: vsts-marketplace
 ms.assetid: 376c55bd-f4e2-47d5-a7a3-400e2cd5d84e 
 ms.manager: douge
 ms.author: elbatk
-ms.date: 1/10/2017
+ms.date: 01/10/2017
 ---
 
 # Approve extension requests for your Team Services account

@@ -79,7 +79,7 @@ You can also use **TfsConfig Lab /HostGroup** commands to set properties that ar
 -   AutoProvision specifies whether the host group is assigned to each team project in the team project collection.
 By default, AutoProvision is on.
 To assign a host group in a project collection to an individual team project,
-use the [TFSLabConfig CreateTeamProjectHostGroup Command](#createteamprojecthostgroup).
+use the [TFSLabConfig CreateTeamProjectHostGroup Command](../tfslabconfig-cmd.md#createteamprojecthostgroup).
 
     -   **True** (Default). The host group is assigned to each team project in the team project collection.
 

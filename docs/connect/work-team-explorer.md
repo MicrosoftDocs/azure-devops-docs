@@ -146,7 +146,7 @@ In addition to connecting through Team Explorer, you can connect to a team proje
 - [Office Project](../work/office/create-your-backlog-tasks-using-project.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 - [PowerPoint Storyboarding](../work/office/storyboard-your-ideas-using-powerpoint.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json) 
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
-- [Microsoft Feedback Client](../work/connect/give-feedback.md?toc=/vsts/collaborate/feedback/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)   
+- [Microsoft Feedback Client](../work/connect/give-feedback.md?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json)   
 
 
 ### Refresh Team Explorer 

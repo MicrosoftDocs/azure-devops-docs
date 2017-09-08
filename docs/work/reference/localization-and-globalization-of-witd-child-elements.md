@@ -12,9 +12,7 @@ ms.date: 01/20/2017
 
 # Localization and globalization of WITD child elements
 
-
 [!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)] 
-
 
 You can change some parts of the work item type definition so that they appear in your native language.  
   

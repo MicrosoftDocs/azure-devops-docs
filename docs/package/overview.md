@@ -27,7 +27,7 @@ Get up and running with NuGet or npm in Team Services and TFS in just a few minu
 
 If you haven't used packages before, see the [conceptual introduction](index.md). When you're ready to get started, [install and license Package Management](install.md).
 
-## Versions and compatability
+## Versions and compatibility
 Some package management services are only compatible with specific versions of TFS. Check out the table below to see compatibility.
 
 | Product       | Team Services | TFS                         |

@@ -7,7 +7,7 @@ ms.service: vsts-marketplace
 ms.assetid: b46e7ae6-0974-4ecf-8369-687ee8f89ee5 
 ms.manager: douge
 ms.author: elbatk
-ms.date: 1/10/2017
+ms.date: 01/10/2017
 ---
 
 # Uninstall or disable extensions in your Team Services account

@@ -11,12 +11,8 @@ ms.date: 06/16/2017
 
 # FIELD (Definition) element reference
 
-<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b> 
 
->[!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize a process](../process/customize-process.md).
->
->For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md). 
+[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You use the **FIELD** (Definition) element to define a work item field and specify the rules and conditions that apply to it. The attributes that you assign to a field determines its data type and whether it is available for inclusion in reports.  
   

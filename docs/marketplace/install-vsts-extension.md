@@ -8,7 +8,7 @@ ms.service: vsts-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.manager: douge
 ms.author: elbatk
-ms.date: 1/10/2017
+ms.date: 01/10/2017
 ---
 
 # Install extensions for Visual Studio Team Services

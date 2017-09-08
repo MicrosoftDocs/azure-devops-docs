@@ -11,11 +11,8 @@ ms.date: 04/05/2017
 
 # Define a default value or copy a value to a field
 
-<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 | TFS 2013</b>
 
-
->[!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize/customize-work.md).  
+[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 
 You can specify a default value for a field, or you can copy the value from another field or system-defined value.  Field defaults are rules that control how field values are automatically assigned. You can assign a field default by using one of the following elements: `COPY`, `DEFAULT`, and `SERVERDEFAULT`. You can specify these elements as child elements of the `FIELD` (Definition) element or the `FIELD` (Workflow) element.  

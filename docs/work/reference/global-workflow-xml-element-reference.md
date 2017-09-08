@@ -11,7 +11,7 @@ ms.date: 02/10/2017
 
 # Global workflow XML element reference
 
-<b> TFS 2017 | TFS 2015 </b> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 >[!IMPORTANT]  
 >This topic applies to team project customization for On-premises XML process models.  

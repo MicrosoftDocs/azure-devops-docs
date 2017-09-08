@@ -130,7 +130,7 @@
     href: /vsts/work/guidance/changes-to-process-templates?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Work tracking object limits
     href: object-limits.md
-  - name: Naming conventions
+  - name: Naming restrictions
     href: /vsts/reference/naming-restrictions?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Work tracking XML element reference
     items:

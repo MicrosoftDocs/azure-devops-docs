@@ -88,12 +88,6 @@
       href: ./maven/publish.md
     - name: Install a Maven project
       href: ./maven/install.md
-  - name: Use Gradle with Maven packages
-    items:
-    - name: Pull a Gradle package and build
-      href: ./gradle/pull-package-gradle.md
-    - name: Publish a Gradle package
-      href: ./gradle/publish-package-gradle.md
 - name: Reference
   items:
   - name: Collaborate with packages

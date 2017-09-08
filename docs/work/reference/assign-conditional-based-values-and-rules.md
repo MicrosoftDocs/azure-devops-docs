@@ -11,12 +11,7 @@ ms.date: 01/20/2017
 
 # Assign conditional-based values and rules
 
-<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b>
-
->[!IMPORTANT]    
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize a process](../process/customize-process.md). 
->
->For an overview of process models and customization options, see [Customize your work tracking experience](../customize/customize-work.md). 
+[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You can define rules that are run conditionally by using the **WHEN**, **WHENNOT**, **WHENCHANGED**, and **WHENNOTCHANGED** elements. You use these rules to define which elements are run when the defined clause is `True`. You can define conditions that are based on what value is assigned to a specific field or whether a user modifies a specific field. For example, you can create a dependent pick list to provide detailed security or custom behavior.  
   
