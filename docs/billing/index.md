@@ -12,7 +12,7 @@ ms.date: 07/12/2017
 
 # Billing
 
-**VSTS** | **TFS** | **HockeyApp** | **Xamarin University** | **VS SUbscriptions**
+**VSTS** | **TFS** | **HockeyApp** | **Xamarin University** | **VS Subscriptions**
 
 VSTS billing covers:
 
