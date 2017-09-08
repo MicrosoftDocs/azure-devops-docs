@@ -5,26 +5,14 @@ or your Team Foundation Server web portal (```https://{server}:8080/tfs/```).
 
 0.  From your home page, open your profile. Go to your security details.
 
-	<div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
-
-	<ul class="nav nav-pills" style="padding-right:15px;padding-left:15px;padding-bottom:5px;vertical-align:top;font-size:18px;">
-		<li style="float:left;" data-toggle="collapse" data-target="#my-security"></li>
-		<li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#tfs15">TFS 2017</a></li>
-		<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:14px;font-weight:400" data-toggle="pill" href="#ts">Team Services</a></li>
-	</ul>
-
-	<div id="my-security" class="tab-content collapse in fade" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
-	<div id="ts" class="tab-pane fade in active">
+	**TFS 2017**
 
 	<img alt="Go to Team Services account home, open your profile, go to Security" src="./_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
 
-	</div>
-
-	<div class="tab-pane fade" id="tfs15" style="background-color: #ffffff;margin-left: 15px;margin-right:15px;padding: 5px 5px 5px 5px;">
+	**Team Services**
 
 	<img alt="TFS home page, open your profile, go to Security" src="./_img/my-profile-tfs.png" style="border: 1px solid #CCCCCC" />
 
-	</div></div></div>
 
 0. Create a personal access token.
 
@@ -67,13 +55,13 @@ When you don't need your token anymore, just revoke it to remove access.
 
 0. From your home page, open your profile. Go to your security details.
 
-**Team Services**
+	**Team Services**
 
-<img alt="Go to Team Services account home page, open your profile, go to Security" src="./_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Go to Team Services account home page, open your profile, go to Security" src="./_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
 
-**TFS 2017**
+	**TFS 2017**
 
-<img alt="Go to TFS home page, open your profile, go to Security" src="./_img/my-profile-tfs.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Go to TFS home page, open your profile, go to Security" src="./_img/my-profile-tfs.png" style="border: 1px solid #CCCCCC" />
 
 
 0.	Revoke access.
