@@ -12,17 +12,11 @@ author: sergio romero
 
 # Effective TFVC branching strategies for DevOps
 
-Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](https://msdn.microsoft.com/en-us/library/ms181237.aspx))? You probably have a few questions, such as:
+Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](/vsts/tfvc/index))? You probably have a few questions, such as:
 
 - How do I decide on the right branching strategy? 
 - Is there an effective strategy for DevOps?
 - How do I support applications with single or multiple versions?
-
-This topic aims to answer those questions, and give you branching strategy in TFVC. (For guidance on TFVC branch strategies overall, read [Branching Strategies with TFVC](/vsts/tfvc/branching-strategies-with-tfvc.md).) 
-
-> [!NOTE]
-> 
-> This topic covers TFVC. For Git, refer to [adopt a Git branching strategy](/vsts/git/git-branching-guidance.md).  
 
 [![Channel9](_img/effective-tfvc-branching-strategies-for-devops/channel9.png)](https://channel9.msdn.com/Blogs/DevOps-Interviews/Interview-with-Abel-Wang-and-Steven-St-Jean) *(Based on an interview with Abel Wang and Steve St Jean)*
 
@@ -47,7 +41,7 @@ To embrace DevOps, it's important to keep your branch strategy simple and strive
 - Frequently reverse integrate (RI) and merge into your main branch
 - Encourage consistent code reviews - garbage in, garbage out
 - Implement a CI/CD pipeline, using:
-	- [Gated](https://www.visualstudio.com/en-us/docs/tfvc/check-folder-controlled-by-gated-check-build-process) checkins
+	- [Gated](/vsts/tfvc/check-folder-controlled-by-gated-check-build-process) checkins
 	- Automated testing
 
 ## Start with a simple branching strategy
