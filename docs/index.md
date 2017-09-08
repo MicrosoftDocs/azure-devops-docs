@@ -86,7 +86,7 @@ ms.date: 07/26/2017
                             <li>
                                 <h3>Add your code</h3>
                                 <ul class="noBullet">
-                                    <li><a class="barLink" href="/vsts/git/share-your-code-in-git-vs">Git Repositories</a></li>
+                                    <li><a class="barLink" href="/vsts/git/">Git Repositories</a></li>
                                 </ul>
                             </li>
                             <li>
