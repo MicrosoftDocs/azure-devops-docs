@@ -11,12 +11,12 @@ ms.date: 06/16/2017
 
 # Control XML element reference
 
-<b>TFS 2017 (Hosted XML) | TFS 2015 | TFS 2013 </b>
+**TFS 2015 | TFS 2013**
 
 >[!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
+>This topic applies to team project customization for the On-premises XML process model and the old work item form. For the Hosted XML process model and TFS 2017 and later versions that use the new work item form, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
 >
->For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
+>For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md). 
 
 You use the `Control` element to define a work item field, text, hyperlink, or other control element to display in a work item form. For examples of how to use this element, see [Specify work item form controls](specify-work-item-form-controls.md) and [Design the work item form](design-work-item-form.md).  
 

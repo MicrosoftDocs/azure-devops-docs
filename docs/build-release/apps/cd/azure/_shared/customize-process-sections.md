@@ -2,7 +2,7 @@
 
 In this section, you will add a new environment to the release definition. This environment will deploy your app to the new 
 Azure App Services website. This is a typical scenario where you deploy initially to a test or staging server, and then to a
-live or production server. Each [environment](../../build-release/concepts/definitions/release/environments.md?toc=/vsts/deploy-azure/toc.json)
+live or production server. Each [environment](../../../../../build-release/concepts/definitions/release/environments.md)
 represents one deployment target, though that target could be a physical or virtual server,
 a groups of servers, or any other legitimate physical or virtual deployment target.
 
@@ -38,7 +38,7 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
    Notice that you can specify deployment to start when a deployment to the previous environment is _partially_ successful.
    Usually, this means the deployment tasks were set to continue the deployment even if a specific non-critical task failed
    (the default is that all tasks must succeed). You're most likely to set this option if you create a pipeline containing
-   [fork and join deployments](../../build-release/concepts/definitions/release/triggers.md?toc=/vsts/deploy-azure/toc.json)
+   [fork and join deployments](../../../../../build-release/concepts/definitions/release/triggers.md)
    that deploy to different environments in parallel.  
 
 1. Open the **Tasks** drop-down list and choose the **QA** environment.
@@ -72,7 +72,7 @@ you deploy to production. In this section, you will add an approval step to the 
 
    You can add as many approvers as you need, both individual accounts and account groups.
    It's also possible to set up post-deployment approvals by choosing the icon at the right side of the environment item in the pipeline diagram. 
-   For more information, see [Environments in Release Management](../../build-release/concepts/definitions/release/environments.md?toc=/vsts/deploy-azure/toc.json).
+   For more information, see [Environments in Release Management](../../../../../build-release/concepts/definitions/release/environments.md).
 
 1. Save the modified release definition.
 
@@ -157,4 +157,4 @@ from the release you created in the previous section.
 
 If you are having problems with a deployment, you can get more information from the log files by
 running the release in debug mode. For more information, see
-[How To: Monitor releases and debug deployment issues](../../build-release/actions/debug-deployment-issues.md?toc=/vsts/deploy-azure/toc.json). 
+[How To: Monitor releases and debug deployment issues](../../../../../build-release/actions/debug-deployment-issues.md). 

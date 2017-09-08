@@ -11,9 +11,7 @@ ms.date: 06/12/2017
 
 # Add or modify a work item type 
 
-[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
-
-[!INCLUDE [temp](../_shared/customization-phase-0-and-1.md)]
+[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 Your team project contains 14 or more work item types (WITs), based on the process&mdash;[Agile](../guidance/agile-process.md), [Scrum](../guidance/scrum-process.md), or [CMMI](../guidance/cmmi-process.md)&mdash;used to create the team project. A WIT is the object you use to [track different types of work](../backlogs/add-work-items.md).  
 

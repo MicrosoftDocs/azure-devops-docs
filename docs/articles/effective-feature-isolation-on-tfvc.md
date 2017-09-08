@@ -12,17 +12,17 @@ author: willys
 
 #Effective feature isolation on TFVC
 
-Are you planning to implement Team Foundation Version Control‘s feature isolation strategy ([TFVC](https://msdn.microsoft.com/en-us/library/ms181237.aspx))? You probably have a few questions, such as:
+Are you planning to implement Team Foundation Version Control‘s feature isolation strategy ([TFVC](../tfvc/overview.md)? You probably have a few questions, such as:
 
 - Is it practical with large development teams?
 - Does it align well with your agile process(es)?
 - What’s the proper lifetime of isolated feature branches? 
 
-This topic aims to answer those questions, and give you a clear perspective on feature isolation in TFVC. (For guidance on TFVC branch strategies overall, read [Branching Strategies with TFVC](./branching-strategies-with-tfvc.md).) 
+This topic aims to answer those questions, and give you a clear perspective on feature isolation in TFVC. (For guidance on TFVC branch strategies overall, read [Branching Strategies with TFVC](./effective-tfvc-branching-strategies-for-devops.md).) 
 
 > [!NOTE]
 > 
-> This topic covers TFVC. For Git, refer to [adopt a Git branching strategy](./git-branching-guidance.md). 
+> This topic covers TFVC. For Git, refer to [adopt a Git branching strategy](../git/concepts/git-branching-guidance.md). 
 
 #What's feature isolation?
 
@@ -36,7 +36,7 @@ It’s typical to create one feature branch per feature or bug, but in this stra
 
 ![Basic feature isolation](./_img/effective-feature-isolation-on-tfvc/feature-isolation-basic.png)
 
-Unlike Git branches, which are repository-scoped, TFVC branches are path-scoped and therefore not as lightweight. To workaround this, limit the number of and the lifetime of your TFVC feature branches, and [optimize your workspace](https://www.visualstudio.com/en-us/docs/tfvc/optimize-your-workspace) using explicit, implicit, cloaked, and non-recursive folder mappings, to improve performance, and to reduce required disk space on your machine.
+Unlike Git branches, which are repository-scoped, TFVC branches are path-scoped and therefore not as lightweight. To workaround this, limit the number of and the lifetime of your TFVC feature branches, and [optimize your workspace](../tfvc/optimize-your-workspace.md) using explicit, implicit, cloaked, and non-recursive folder mappings, to improve performance, and to reduce required disk space on your machine.
 
 > [!TIP]
 > 
@@ -80,7 +80,7 @@ Similarly, the **Source Control Explorer** view becomes noisy and impractical as
 
 #Impact of deleting a feature branch
 
-By [deleting](https://www.visualstudio.com/en-us/docs/tfvc/delete-restore-files-folders#delete-an-item) feature branches you minimise noise and focus on active feature development. 
+By [deleting](../tfvc/delete-restore-files-folders.md#delete-an-item) feature branches you minimise noise and focus on active feature development. 
 
 ![Delete feature branches](./_img/effective-feature-isolation-on-tfvc/feature-isolation-delete-branches.png)
 
@@ -89,26 +89,26 @@ Remember it's a soft delete and your history is not lost. You can show deleted b
 - Select **Tools > Options > Visual Studio Team Foundation Server**.
 - From the submenu, select **Show deleted items in the Source Control Explorer** to view the deleted branch(es). 
 
-If needed, you can also [restore](https://www.visualstudio.com/en-us/docs/tfvc/delete-restore-files-folders#restore-items-deleted-from-visual-studio) deleted branches and associated items. 
+If needed, you can also [restore](../tfvc/delete-restore-files-folders.md#restore-items-deleted-from-visual-studio) deleted branches and associated items. 
 
 ![Show deleted feature branches](./_img/effective-feature-isolation-on-tfvc/feature-isolation-delete-branches-show.png)
 
-If no one in your team has destroyed a branch using the [destroy](https://www.visualstudio.com/en-us/docs/tfvc/destroy-command-team-foundation-version-control) command, you'll have the complete history needed for auditing and migration tools that rely on replaying history.
+If no one in your team has destroyed a branch using the [destroy](../tfvc/destroy-command-team-foundation-version-control.md) command, you'll have the complete history needed for auditing and migration tools that rely on replaying history.
 
 > [!NOTE]
 >
-> Use the [destroy](https://www.visualstudio.com/en-us/docs/tfvc/destroy-command-team-foundation-version-control) command with caution. It's a **permanent** delete!
+> Use the [destroy](../tfvc/destroy-command-team-foundation-version-control.md) command with caution. It's a **permanent** delete!
 
 So, by keeping your branches **short-lived** and adopting a **consistent naming convention**, the feature isolation strategy is effective for small and large teams. 
 
 Now that you're using feature isolation, you should explore continuous integration, feature toggles, and other complementary strategies.
 
-##Reference information
-- [Branching Strategies with TFVC (new guidance)](./branching-strategies-with-tfvc.md)
+## Reference information
+- [Branching Strategies with TFVC (new guidance)](./effective-tfvc-branching-strategies-for-devops.md)
 - [Branching and Merging Guidance (latest copy of classic guidance)](https://vsardata.blob.core.windows.net/projects/TFS%20Version%20Control%20Part%201%20-%20Branching%20Strategies.pdf)
 - [Continuous Integration](https://www.visualstudio.com/learn/what-is-continuous-integration/)
-- [Feature Toggles](https://msdn.microsoft.com/en-ca/magazine/dn683796.aspx)
-- [Team Foundation Version Control (TFVC)](https://www.visualstudio.com/en-us/docs/tfvc/overview)
+- [Feature Toggles](https://msdn.microsoft.com/magazine/dn683796.aspx)
+- [Team Foundation Version Control (TFVC)](../tfvc/overview.md)
 
 > Author: Willy Schaub | Find the origin of this article and connect with the ALM Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
  

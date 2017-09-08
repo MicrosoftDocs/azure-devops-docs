@@ -365,10 +365,12 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 
 You use the **Control** element to define a work item field, text, hyperlink, or other form type to display in a work item form. The **Control** element you specify within the **WebLayout** section should conform to the following syntax:
 
-<pre><code>&lt;Control FieldName=&quot;FieldName&quot; Type=&quot;DateTimeControl |  FieldControl | 
-HtmlFieldControl | LabelControl | WebpageControl&quot; Label=&quot;LabelText&quot; LabelPosition=&quot;Top | Bottom | Left | Right&quot; 
-EmptyText=&quot;TextString&quot; ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
-</code></pre>
+> [!div class="tabbedCodeSnippets"]
+```XML
+<Control FieldName="FieldName" Type="DateTimeControl | FieldControl | HtmlFieldControl |  
+LabelControl | WebpageControl&quot; Label="LabelText" LabelPosition="Top | Bottom | Left | Right"
+EmptyText="TextString" ReadOnly="True | False" Name="InstanceName" />
+```
 
 
 <a id="control-attributes">  </a>
@@ -456,22 +458,17 @@ Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;S
 
 <tr>
 <td>**FieldControl**</td>
-<td> Use to display fields with a data type of Boolean, String, Identity, Integer, Double, and PlainText.  
+<td>Use to display fields with a data type of Boolean, String, Identity, Integer, Double, and PlainText.  
 
 For example:  
-<pre><code>
-&lt;Control Type=&quot;FieldControl&quot; FieldName=&quot;FabrikamFiber.Milestone&quot; 
+<pre><code>&lt;Control Type=&quot;FieldControl&quot; FieldName=&quot;FabrikamFiber.Milestone&quot; 
 Label=&quot;Milestone&quot; Name=&quot;Milestone&quot; LabelPosition=&quot;Left&quot; /&gt;
 </code></pre>
-
->[!NOTE]  
-><b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017 and later versions.    
-  
-
+<blockquote>
+<b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017 and later versions. Within a client work item form, such as Visual Studio or Eclipse, a value of True or False will display.</blockquote>    
 <p>A Boolean field displays as a checkbox within the web work item form.</p>
-
 ![Boolean field display in web work item form](_img/weblayout-ref-checkbox-control-boolean-field.png)
-<p>Within a client work item form, such as Visual Studio or Eclipse, a value of True or False will display.</p>  
+ 
 </td>
 </tr>
 
@@ -543,12 +540,10 @@ When you export the XML definition, it will contain a comment section that lists
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
-&lt;!--**********************Work Item Extensions**********************
-
+<!--**********************Work Item Extensions**********************
 Extension:
 	Name: color-control-dev
 	Id: mariamclaughlin.color-control-dev
-
 	Control contribution:
 		Id: mariamclaughlin.color-control-dev.color-control-contribution
 		Description: 
@@ -566,20 +561,18 @@ Extension:
 			Id: Colors
 			Description: The field associated with the control.
 			Type: String
-			IsRequired: false
-
+			IsRequired: false  
 Extension:
 	Name: vsts-workitem-recentlyviewed
 	Id: mmanela.vsts-workitem-recentlyviewed
-
+   
 	Group contribution:
 		Id: mmanela.vsts-workitem-recentlyviewed.recently-viewed-form-group
-		Description: Recently viewed work item form group
-
+		Description: Recently viewed work item form group  
 Extension:
 	Name: vsts-extensions-multi-values-control
 	Id: ms-devlabs.vsts-extensions-multi-values-control
-
+   
 	Control contribution:
 		Id: ms-devlabs.vsts-extensions-multi-values-control.multi-values-form-control
 		Description: Multi Values Selection Control.
@@ -593,20 +586,19 @@ Extension:
 			Description: The list of values to select from.
 			Type: String
 			IsRequired: false
-
 Extension:
 	Name: vsts-extension-workitem-activities
-	Id: ms-devlabs.vsts-extension-workitem-activities
-
+	Id: ms-devlabs.vsts-extension-workitem-activities   
 Extension:
 	Name: vsts-uservoice-ui
 	Id: ms-devlabs.vsts-uservoice-ui
-
+   
 	Group contribution:
 		Id: ms-devlabs.vsts-uservoice-ui.vsts-uservoice-ui-wi-group
 		Description: Shows User Voice details on the work item form
---&gt; 
+--> 
 ```
+
 
 Given the above example, you can add the following code snippet to your work item type definition to turn on the user voice group ```vsts-uservoice-ui``` extension by specifying the extension Id:
 
@@ -616,8 +608,7 @@ Given the above example, you can add the following code snippet to your work ite
 ... 
  <Extensions>
      <Extension Id="ms-devlabs.vsts-uservoice-ui" /> 
- </Extensions>
-
+ </Extensions> 
 ...
 </WebLayout> 
 ```

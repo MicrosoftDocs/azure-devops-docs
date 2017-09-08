@@ -12,7 +12,7 @@ ms.topic: get-started-article
 
 # Build and Release in VSTS and TFS
 
-VSTS is a collection of hosted DevOps services for application developers. TFS is the on-premises version of VSTS that you can install and manage on your own servers. Build and Release are two of the DevOps services in VSTS and TFS that help you manage continuous integration and delivery of your applications.
+Visual Studio Team Services (VSTS) is a collection of hosted DevOps services for application developers. Team Foundation Services (TFS) is the on-premises version of VSTS that you can install and manage on your own servers. Build and Release are two of the DevOps services in VSTS and TFS that help you manage continuous integration and delivery of your applications.
 
 Continuous Integration (CI) is the practice used by development teams to automate the merging and testing of code.  Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix.  Automated tests execute as part of the CI process to ensure quality.  Artifacts are produced from CI systems and fed to release pipelines to drive frequent deployments. The Build service in VSTS and TFS helps you set up and manage CI for your applications.
 

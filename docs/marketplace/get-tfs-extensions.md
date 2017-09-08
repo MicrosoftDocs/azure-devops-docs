@@ -8,7 +8,7 @@ ms.service: vsts-marketplace
 ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8 
 ms.manager: douge
 ms.author: elbatk
-ms.date: 1/10/2017
+ms.date: 01/10/2017
 ---
 
 # Get extensions for Team Foundation Server (TFS)

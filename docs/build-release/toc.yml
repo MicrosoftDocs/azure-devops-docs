@@ -4,34 +4,38 @@
   items:
   - name: About Build and Release
     href: overview.md
+  - name: About Deploying to Azure
+    href: overview-azure.md
 - name: Quickstarts
   items:
-  - name: Build your app
-    items:
-    - name: ASP.NET Core
-      href: apps/aspnet/build-aspnet-core.md
-    - name: ASP.NET
-      href: apps/aspnet/build-aspnet-4.md
-    - name: .NET for Windows
-      href: apps/windows/dot-net.md
-    - name: Node.js
-      href: apps/nodejs/build-gulp.md
-    - name: Java
-      href: apps/java/build-maven.md
-    - name: C++
-      href: apps/windows/cpp.md
-    - name: Xcode
-      href: apps/mobile/xcode-ios.md
-    - name: Xamarin
-      href: apps/mobile/xamarin.md
-    - name: Universal Windows Platform
-      href: apps/windows/universal.md
-  - name: Deploy your app
-    items:
-    - name: Azure web app
-      href: apps/cd/deploy-webdeploy-webapps.md
-    - name: IIS web server
-      href: apps/cd/deploy-webdeploy-iis-deploygroups.md
+    - name: Build your app
+      items:
+      - name: ASP.NET Core
+        href: apps/aspnet/build-aspnet-core.md
+      - name: ASP.NET
+        href: apps/aspnet/build-aspnet-4.md
+      - name: .NET for Windows
+        href: apps/windows/dot-net.md
+      - name: Node.js
+        href: apps/nodejs/build-gulp.md
+      - name: Java
+        href: apps/java/build-maven.md
+      - name: C++
+        href: apps/windows/cpp.md
+      - name: Xcode
+        href: apps/mobile/xcode-ios.md
+      - name: Xamarin
+        href: apps/mobile/xamarin.md
+      - name: Universal Windows Platform
+        href: apps/windows/universal.md
+    - name: Deploy your app
+      items:
+      - name: Azure Web App
+        href: apps/cd/azure/aspnet-core-to-azure-webapp.md
+      - name: Windows VM
+        href: apps/cd/deploy-webdeploy-iis-deploygroups.md
+      - name: "Azure Container Service"
+        href: apps/cd/azure/aspnet-core-to-acr.md
 - name: Tutorials
   items:
   - name: CI builds for Git in VSTS
@@ -151,6 +155,8 @@
       href: apps/mobile/secure-certs.md
   - name: Deploy to more targets
     items:
+    - name: Azure web app
+      href: apps/cd/deploy-webdeploy-webapps.md
     - name: Extend App Services deployments
       href: apps/cd/howto-webdeploy-webapps.md
     - name: Extend IIS Server deployments

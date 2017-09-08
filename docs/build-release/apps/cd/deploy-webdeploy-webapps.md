@@ -30,7 +30,7 @@ Before you begin, you'll need a CI build that publishes your Web Deploy package.
 
 You'll also need an Azure web app where you will deploy the app.
 If you don't have one already, create one now. If you need help, follow the
-steps in [this example](../../../deploy-azure/aspnet-core-to-azure-webapp.md#create-webapp-portal).
+steps in [this example](../../apps/cd/azure/aspnet-core-to-azure-webapp.md#create-webapp-portal).
 
 [!INCLUDE [create-release](../_shared/create-release.md)]
 

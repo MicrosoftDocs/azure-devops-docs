@@ -32,7 +32,9 @@
       href: use-branches-isolate-risk-team-foundation-version-control.md
     - name: Branch folders and files
       href: branch-folders-files.md
-    - name: Branch strategies
+    - name: Branching strategies
+      href: branching-strategies-with-tfvc.md
+    - name: More branch strategies
       href: branch-strategically.md
     - name: Merge folders and files
       href: merge-folders-files.md

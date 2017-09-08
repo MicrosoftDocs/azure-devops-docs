@@ -18,32 +18,12 @@ Visual Studio Team Services and Team Foundation Server help you implement a high
 
 Learn how to build your app.
 
-<table>
-<tr valign="middle" align="center">
-<td>[<img src="_img/index/logo_net.svg" alt="" width="36px" height="36px"><br/>ASP.NET Core](apps/aspnet/build-aspnet-core.md)</td>
-<td>[<img src="_img/index/logo_net.svg" alt="" width="36px" height="36px"><br/>ASP.NET](apps/aspnet/build-aspnet-4.md)</td>
-<td>[<img src="_img/index/logo_net.svg" alt="" width="36px" height="36px"><br/>.NET Desktop](apps/windows/dot-net.md)</td>
-</tr>
-<tr valign="middle" align="center">
-<td>[<img src="_img/index/logo_nodejs.svg" alt="" width="36px" height="36px"><br/>Node.js](apps/nodejs/build-gulp.md)</td>
-<td>[<img src="_img/index/logo_java.svg" alt="" width="36px" height="36px"><br/>Java](apps/java/build-maven.md)</td>
-<td>[<img src="_img/index/logo_cpp.svg" alt="" width="36px" height="36px"><br/>C++](apps/windows/cpp.md)</td>
-</tr>
-<tr valign="middle" align="center">
-<td>[<img src="_img/index/logo_xcode.png" alt="" width="36px" height="36px"><br/>Xcode](apps/mobile/xcode-ios.md)</td>
-<td>[<img src="_img/index/logo_xamarin.svg" alt="" width="36px" height="36px"><br/>Xamarin](apps/mobile/xamarin.md)</td>
-<td>[<img src="_img/index/logo_uwp.svg" alt="" width="36px" height="36px"><br/>UWP](apps/windows/universal.md)</td>
-</tr>
-</table>
+<!-- Converting to icon48 format, this gets cleaner in YAML -->
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="apps/aspnet/build-aspnet-core.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>ASP.NET Core</span></a></div><div class="ico48Link"><a href="apps/aspnet/build-aspnet-4.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>ASP.NET</span></a></div><div class="ico48Link"><a href="apps/windows/dot-net.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>.NET Desktop</span></a></div><div class="ico48Link"><a href="apps/nodejs/build-gulp.md"><img width="48" height="48" alt="" src="_img/index/logo_nodejs.svg"><span>Node.js</span></a></div><div class="ico48Link"><a href="apps/java/build-maven.md"><img width="48" height="48" alt="" src="_img/index/logo_java.svg"><span>Java</span></a></div><div class="ico48Link"><a href="apps/windows/cpp.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C++</span></a></div><div class="ico48Link"><a href="apps/mobile/xcode-ios.md"><img width="48" height="48" alt="" src="_img/index/logo_java.svg"><span>Xcode</span></a></div><div class="ico48Link"><a href="apps/mobile/xamarin.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg"><span>Xamarin</span></a></div><div class="ico48Link"><a href="apps/windows/universal.md"><img width="48" height="48" alt="" src="_img/index/logo_uwp.svg"><span>UWP</span></a></div></div>
 
 Learn how to deploy your app.
-
-<table>
-<tr valign="middle" align="center">
-<td>[<img src="_img/index/app-service-web.png" alt="" width="36px" height="36px"><br/>Azure web app](apps/cd/deploy-webdeploy-webapps.md)</td>
-<td>[<img src="_img/index/virtualmachine.png" alt="" width="36px" height="36px"><br/>IIS web server](apps/cd/deploy-webdeploy-iis-deploygroups.md)</td>
-</tr>
-</table>    
+<!-- Converting to icon48 format, this gets cleaner in YAML -->
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="apps/cd/deploy-webdeploy-webapps.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure web app</span></a></div><div class="ico48Link"><a href="apps/cd/deploy-webdeploy-iis-deploygroups.md"><img width="48" height="48" alt="" src="_img/index/virtualmachine.png"><span>IIS web server</span></a></div></div>
 
 ## Step-by-Step Tutorials  
 

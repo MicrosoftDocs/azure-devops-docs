@@ -4,7 +4,7 @@ System Center Virtual Machine Manager (SCVMM) *host groups* that are assigned to
 collection and that you have read access to. These collection host
 groups can be added to a team project by using the
 **CreateTeamProjectHostGroup** command. For more information, see
-[TFSLabConfig CreateTeamProjectHostGroup Command](#createteamprojecthostgroup).
+[TFSLabConfig CreateTeamProjectHostGroup Command](../tfslabconfig-cmd.md#createteamprojecthostgroup).
 
 **Required Permissions:**
 

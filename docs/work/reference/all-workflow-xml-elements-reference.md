@@ -11,12 +11,7 @@ ms.date: 02/10/2017
 
 # All WORKFLOW XML elements reference
 
-<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b> 
-
->[!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For customizing the workflow for the Inheritance process model, see [Customize a process](../process/customize-process-workflow.md). 
->
->For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize/customize-work.md). 
+[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 
 You can use the information in this topic as a quick reference to all the elements and main attributes that control the workflow for a type of work item. You specify these elements in the `WORKFLOW` element container, which is the second major section of the definition of a work item type. You use the **STATES** and **TRANSITIONS** child elements to define the different states that a user can specify for a type of work item and which transitions are allowed between states. For more information about how to define these elements, see [Change the workflow](change-workflow-wit.md)  
@@ -28,7 +23,8 @@ The following example shows the overall structure of the **WORKFLOW** element. Y
   
 For each transition, you specify a set of reasons for changing the state of the work item, including a default reason. You can assign values for each state, transition, or reason, and you can place conditions on the values of one or more fields by using the **FIELD** (Workflow) element. In addition, you can trigger an action to occur during a transition by specifying the **ACTION** element.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <WORKFLOW>  
 <STATES>  
   <STATE value="Active">  

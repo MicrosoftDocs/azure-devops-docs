@@ -41,7 +41,7 @@ You'll need:
   you can create it by working through any of the following quickstarts and tutorials:
   
   - [Deploy to Azure web app](../apps/cd/deploy-webdeploy-webapps.md)
-  - [Deploy your ASP.NET Core app to an Azure web app](../../deploy-azure/aspnet-core-to-azure-webapp.md)
+  - [Deploy your ASP.NET Core app to an Azure web app](../apps/cd/azure/aspnet-core-to-azure-webapp.md)
   - [Deploy to IIS web server on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
   or see [How to: Work with release definitions](work-with-release-definitions.md).
@@ -50,7 +50,7 @@ You'll need:
   You will have to choose names that are unique, but it's a good idea to include
   "QA" in the name of one, and "Production" in the name of the other, so that you
   can easily identify them. If you need help, follow the steps in
-  [this example](../../deploy-azure/aspnet-core-to-azure-webapp.md#create-webapp-portal).
+  [this example](../apps/cd/azure/aspnet-core-to-azure-webapp.md#create-webapp-portal).
 
 ## Extend a release definition by adding environments
 

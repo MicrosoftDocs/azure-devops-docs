@@ -11,7 +11,7 @@ ms.date: 03/02/2017
 
 # All FORM XML elements reference (TFS 2015)
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+<p><b>TFS 2017 | TFS 2015 | TFS 2013</b></p>
 
 >[!IMPORTANT]  
 >This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).

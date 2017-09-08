@@ -20,18 +20,17 @@ Learn how to build your app and deploy it to your choice of Azure service.
 
 <table>
 <tr valign="middle" align="center">
-<td>![Web apps](../build-release/_img/index/app-service-web.png)<br/>[Web Apps](aspnet-core-to-azure-webapp.md)</td>
-<td>![Windows VMs](../build-release/_img/index/virtualmachine.png)<br/>[Windows VMs](aspnet-core-to-windows-vm.md)</td>
-<td>![Containers](../build-release/_img/index/appservice.png)<br/>[Containers](aspnet-core-to-acr.md)</td>
+<td>![Web apps](../build-release/_img/index/app-service-web.png)<br/>[Web Apps](../build-release/apps/cd/azure/aspnet-core-to-azure-webapp.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)</td>
+<td>![Windows VMs](../build-release/_img/index/virtualmachine.png)<br/>[Windows VMs](../build-release/apps/cd/azure/aspnet-core-to-windows-vm.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)</td>
+<td>![Containers](../build-release/_img/index/appservice.png)<br/>[Containers](../build-release/apps/cd/azure/aspnet-core-to-acr.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)</td>
 </td>
 </tr>
 </table>    
 
 ## Step-by-Step Tutorials  
 
-* [Customize CD process](customize-cd-process.md)
-* [Deploy to multiple VMs](deploy-to-vms.md)
-* [Manage infrastructure as code](infrastructure-as-code.md)
+* [CI builds for Git in VSTS](../build-release/actions/ci-build-git.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
+* [Set up multi-stage release](../build-release/actions/define-multistage-release-process.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
 
 ## Videos
 

@@ -11,12 +11,7 @@ ms.date: 09/01/2017
 
 # Process configuration XML element reference
 
-[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
-
->[!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize a process](../process/customize-process.md). 
->
->For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
+[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)] 
 
 Process configuration defines the default configuration and functional capabilities that your teams can access using the web portal Agile tools. These tools, include the product backlog, sprint backlogs, Kanban board, and task board and are customizable for each team you add to team project.
 
@@ -147,7 +142,8 @@ You configure backlogs within the XML sections that appear in the following samp
 <td><p><strong>TaskBacklog</strong></p></td>
 <td><p>Required. One instance only.</p>
 <p>Container element used to customize the layout of sprint backlogs.</p>
-<pre><code>&lt;TaskBacklog category=&quot;Microsoft.TaskCategory&quot; pluralName=&quot;Tasks&quot; singularName=&quot;Task workItemCountLimit=&quot;MaximumLimit&quot;&gt;
+<pre><code>&lt;TaskBacklog category=&quot;Microsoft.TaskCategory&quot; pluralName=&quot;Tasks&quot; 
+singularName=&quot;Task workItemCountLimit=&quot;MaximumLimit&quot;&gt;
 . . . 
 &lt;/TaskBacklog &gt; 
 </code></pre>
@@ -226,16 +222,16 @@ You can only assign the <strong>Resolved</strong> state category to a workflow s
 <td><p>Specifies a collection of <strong>State</strong> elements that associate WIT workflow states with state categories.</p>
 <p>Required element for the following parent elements:</p>
 <ul>
-<li><p><strong>BugWorkItems</strong></p></li>
-<li><p><strong>PortfolioBacklog</strong></p></li>
-<li><p><strong>RequirementBacklog</strong></p></li>
-<li><p><strong>TaskBacklog</strong></p></li>
-<li><p><strong>TestPlanWorkItems</strong></p></li>
-<li><p><strong>TestSuiteWorkItems</strong></p></li>
-<li><p><strong>FeedbackRequestWorkItems</strong></p></li>
-<li><p><strong>FeedbackResponseWorkItems</strong></p></li>
+<li><strong>BugWorkItems</strong></li>
+<li><strong>PortfolioBacklog</strong></li>
+<li><strong>RequirementBacklog</strong></li>
+<li><strong>TaskBacklog</strong></li>
+<li><strong>TestPlanWorkItems</strong></li>
+<li><strong>TestSuiteWorkItems</strong></li>
+<li><strong>FeedbackRequestWorkItems</strong></li>
+<li><strong>FeedbackResponseWorkItems</strong></li>
 </ul>
-<p></p></td>
+</td>
 </tr>
 </tbody>
 </table>

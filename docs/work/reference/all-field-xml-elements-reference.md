@@ -11,7 +11,7 @@ ms.date: 06/16/2017
 
 # All FIELD XML elements reference
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 Use this topic to look up the syntax of the `FIELD` element or one of its child elements.  
   

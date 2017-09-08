@@ -30,7 +30,8 @@ You may want to automatically transition work items from one state to another st
 ##  Syntax for the ACTION element  
  The following syntax is used for the **ACTION** element. The value attribute specifies the name of the action and is required. You should follow the same naming conventions for actions as for field reference names. For example, Team Foundation version control uses Microsoft.VSTS.Actions.CheckIn to identify the transition that is appropriate for work items that are associated with the check-in. For more information, see [Naming conventions for work item tracking objects](../../reference/naming-restrictions.md).  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <ACTION value="NameOfAction" />  
 ```  
   
@@ -57,7 +58,8 @@ You may want to automatically transition work items from one state to another st
   
  The author can automatically transition the work item from the "Working" state to the "Ready To Build" state during a check-in operation by declaring the following:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <TRANSITION from="Working" to="Ready To Build">  
    <REASONS>
       ...
@@ -83,7 +85,8 @@ You may want to automatically transition work items from one state to another st
   
 -   However, multiple actions on the same transition are supported to allow for multiple auto-transition integrations as shown in the following example:  
   
-    ```  
+    > [!div class="tabbedCodeSnippets"]
+	```XML 
     <TRANSITION from="Working" to="Ready To Build">  
        <REASONS>
           <DEFAULTREASON value="Fixed" />

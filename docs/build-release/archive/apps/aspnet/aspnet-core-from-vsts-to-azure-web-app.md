@@ -25,7 +25,7 @@ an ASP.NET Core app
 to an Azure web app. 
 You create the web app using the Azure CLI, then set up CI/CD in VSTS.
 
-![Screenshot showing ASP.NET Core web app](../../../../deploy-azure/_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
+![Screenshot showing ASP.NET Core web app](../../../apps/cd/azure/_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
 [!INCLUDE [temp](../_shared/vsts-and-azure-setup.md)]
 
@@ -51,7 +51,7 @@ In the right panel, select **ASP.NET Core**, and then click **Apply**.
 
 [!INCLUDE [temp](../_shared/set-up-cd-1.md)]
 
-![Screenshot showing release action on build summary](../../../../deploy-azure/_shared/_img/cicd-get-started-dotnetcore-release.png)
+![Screenshot showing release action on build summary](../../../apps/cd/azure/_shared/_img/cicd-get-started-dotnetcore-release.png)
 
 [!INCLUDE [temp](../_shared/set-up-cd-2.md)]
 
@@ -61,7 +61,7 @@ In the right panel, select **ASP.NET Core**, and then click **Apply**.
 
 Navigate to the **Code** hub in the VSTS portal. Navigate to **Views/Home/Index.cshtml** file. Make the following simple change to that file by selecting the edit action.
 
-![Screenshot showing update to code](../../../../deploy-azure/_shared/_img/aspnet-core-code-change.png)
+![Screenshot showing update to code](../../../apps/cd/azure/_shared/_img/aspnet-core-code-change.png)
 
 Add the following line of text above the carousel display in the page:
 ```
