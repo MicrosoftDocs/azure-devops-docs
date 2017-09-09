@@ -31,12 +31,14 @@ The names of the file, the folder, and the plug-in for the default process templ
 > [!NOTE]  
 >  You can change the name of the XML file and the folder name but not the name of the plug-in. The system doesn't include a mechanism for the deployment of client-side plug-ins, policies, or other modifications. If you want to deploy plug-ins, policies, or other modifications to Team Explorer, you must use your own distribution and installation program.    
   
-##  <a name="Tasks"></a> Test Management tasks and dependencies  
+<a name="Tasks"></a> 
+##  Test Management tasks and dependencies  
  In the testmanagement.xml file, you specify one or more tasks and their dependencies. The plug-in file specifies four tasks, and each task uploads a test management file. The testconfiguration.xml file depends on the information that is specified in the testvariable.xml file. For more information about the **task**, **taskXml**, and **dependency** elements, see [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md) and [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md).  
   
  The following syntax represents the default testmanagement.xml file that is defined for the default process templates:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <?xml version="1.0" encoding="utf-8"?>  
 <tasks>  
   <task id="TestVariable" name="Default test variables" plugin="Microsoft.ProjectCreationWizard.TestManagement" completionMessage="Default test variables created">  
@@ -69,25 +71,21 @@ The names of the file, the folder, and the plug-in for the default process templ
 ##  Define test configuration variables  
  You use the **TestVariable** and **AllowedValue** elements to define test configuration variables. You can define any number of test configuration variables and their valid values. The following values are defined in the testvariable.xml file in the default process templates:  
   
--   Operating systems:  
-  
-    -   Windows Vista  
-  
+-   Operating systems:   
+    -   Windows Vista   
     -   Windows XP  
   
--   Default browsers:  
-  
-    -   Internet Explorer 7.0  
-  
-    -   Internet Explorer 8.0  
-  
+-   Default browsers:    
+    -   Internet Explorer 7.0   
+    -   Internet Explorer 8.0   
     -   Firefox 3.0  
   
  After the project is created, you can modify these variables and create other variables. For more information, see [Test configurations: specifying test platforms](../../../manual-test/test-different-configurations.md).  
   
  The **TestVariable** element must be encapsulated within its corresponding container element: **TestVariables**. You use the following syntax structure for these elements:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <TestVariables>  
    <TestVariable name="VariableName" name="Operating System" description="Description of VariableName">  
         <AllowedValue value ="Name of Allowed Value"/>  
@@ -97,7 +95,8 @@ The names of the file, the folder, and the plug-in for the default process templ
   
  You use the following syntax for the test variables that are defined in the default process templates:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <?xml version="1.0" encoding="utf-8" ?>  
 <TestVariables>  
   <TestVariable  
@@ -124,7 +123,8 @@ The names of the file, the folder, and the plug-in for the default process templ
   
  You must enscapsulate the **TestConfiguration** element within its corresponding container element: **TestConfigurations**. You use the following syntax structure for these elements:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <TestConfigurations>  
     <TestConfiguration name="Test Configuration Name" description=" Test Configuration Description " state="active" isdefault="true | false">  
         <TestVariable name="VariableName" value="Variable Value" />  
@@ -142,7 +142,8 @@ The names of the file, the folder, and the plug-in for the default process templ
   
  You use the following syntax for the test configurations that are defined in the default process templates.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <?xml version="1.0" encoding="utf-8" ?>  
 <TestConfigurations>  
     <TestConfiguration name="Windows 8"   
@@ -165,15 +166,17 @@ You must encapsulate the **TestResolutionState** element within its correspondin
   
 You use the following syntax structure for these elements:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <TestResolutionStates>  
     <TestResolutionState name="ResolutionName" />  
 </TestResolutionStates>  
 ```  
   
 You use the following syntax for the resolution states that are defined in the default process templates.  
-  
-```  
+
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <?xml version="1.0" encoding="utf-8" ?>  
 <TestResolutionStates>  
     <TestResolutionState name="Needs investigation" />  
@@ -190,7 +193,8 @@ You use the **TestSetting** element to specify the name of the file to use when 
   
 You must encapsulate the **TestSetting** element within its corresponding container element: **TestSettings**. You use the following syntax structure for these elements:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <TestSettings>  
     <TestSetting name="Name of Test Setting " filename="FileName" />  
 </TestSettings>  
@@ -198,7 +202,8 @@ You must encapsulate the **TestSetting** element within its corresponding contai
   
  You use the following syntax for the testsettings.xml file that is defined in the default process templates.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <?xml version="1.0" encoding="utf-8" ?>  
 <TestSettings>  
     <TestSetting name="Local Test Run" filename="localrun.testsettings" />  
