@@ -23,7 +23,7 @@ Learn how to build your app.
 
 Learn how to deploy your app.
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
-<div class="ico48Case halfStack"><div class="ico48Link"><a href="apps/cd/deploy-webdeploy-webapps.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure web app</span></a></div><div class="ico48Link"><a href="apps/cd/deploy-webdeploy-iis-deploygroups.md"><img width="48" height="48" alt="" src="_img/index/virtualmachine.png"><span>IIS web server</span></a></div></div>
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="apps/cd/azure/aspnet-core-to-azure-webapp.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure web app</span></a></div><div class="ico48Link"><a href="apps/cd/deploy-webdeploy-iis-deploygroups.md"><img width="48" height="48" alt="" src="_img/index/virtualmachine.png"><span>Windows VM</span></a></div><div class="ico48Link"><a href="apps/cd/deploy-docker-webapp.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Web app for containers</span></a></div></div>
 
 ## Step-by-Step Tutorials  
 

@@ -9,17 +9,15 @@ ms.author: alewis
 ms.date: 05/23/2017
 ---
 
-# Build your Docker-enabled ASP.NET Core app
+# Build your ASP.NET Core Container app
 
-**VSTS | TFS 2017 Update 2**
+**VSTS**
 
-[ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your ASP.NET Core app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process.
+In this quickstart you learn how to define CI process for your Docker-enabled ASP.NET Core application using VSTS.
 
 ## Prerequisites
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
-
-[!INCLUDE [include](../../_shared/ci-cd-prerequisites-tfs.md)]
 
 * An Azure subscription. If you don't have one, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
@@ -36,21 +34,17 @@ To make it easy for you to follow the steps in this quickstart, import the code 
 https://github.com/adventworks/dotnetcore-docker-sample
 ```
 
-* To import the sample app into VSTS/TFS Git repository:
+# [VSTS or TFS repo](#tab/vsts)
 
-  * On the Code hub for your team project in VSTS/TFS, select the option to Import repository.
+[!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
 
-  * In the Import a Git repository dialog box, paste the above URL into the Clone URL text box.
+# [GitHub repo](#tab/github)
 
-  * Click Import to copy the sample code into your Git repo.
+[!INCLUDE [include](../_shared/get-sample-code-github.md)]
 
-* To fork the sample app into your own GitHub repository:
+---
 
-  * Navigate to the above GitHub repository URL in your browser.
-
-  * Select Fork to create your own copy of the repository.
-
-The sample app in this repository is a Visual Studio solution that has two projects - an ASP.NET Core Web Application project and a Unit Test project both targeting .Net Core 1.1 framework. The instructions in this quickstart work for applications targeting .Net Core 2.0 framework as well.
+The sample app in this repository is a simple ASP.NET Core application with a multi-stage Dockerfile. The first stage defines how to build the application in a container, and the second stage packages the application as a container image that can be published to a container registry. ASP.NET Core 2.0 is used for this application, although these instructions work for ASP.NET Core 1.1 as well.
 
 ## Set up continuous integration
 
@@ -76,11 +70,7 @@ The sample app in this repository is a Visual Studio solution that has two proje
 
 1. In the right panel, click **Start with an Empty Process**.
 
-1. For the **Default agent queue**:
-
-   * **VSTS:** Select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
-
-   * **TFS:** Select a queue that includes a [build agent](../../actions/agents/v2-windows.md) with Docker.
+1. For the **Default agent queue**, select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
 1. Click **Get sources** and then:
 
@@ -102,7 +92,7 @@ The sample app in this repository is a Visual Studio solution that has two proje
    * **Azure subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. If you are using VSTS and if you see an **Authorize** button next to the input, click on it to authorize VSTS to connect to your Azure subscription. If you are using TFS or if you do not see
      the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm) to manually set up the connection.
 
-   ![Authorizing an Azure subscription](../_shared/_img/authorize-azure-subscription-cropped.png)
+     ![Authorizing an Azure subscription](../_shared/_img/authorize-azure-subscription-cropped.png)
 
    * **Azure Container Registry:** Select the Azure container registry that you created above.
 
@@ -130,4 +120,4 @@ The sample app in this repository is a Visual Studio solution that has two proje
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Deploy your Docker-enabled ASP.NET Core app to Azure web app](../cd/deploy-docker-webapp.md)
+> [Deploy to Azure web app for containers](../cd/deploy-docker-webapp.md)

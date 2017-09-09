@@ -36,7 +36,7 @@
 
    - **Tag**: `$(Build.BuildId)`. Select the build tag that was created automatically by the build process.
 
-   ![Configuring the App Service Deployment task](_img/configure-docker-app-service-deploy-task.png)
+     ![Configuring the App Service Deployment task](_img/configure-docker-app-service-deploy-task.png)
 
 1. Save the release definition.
 
