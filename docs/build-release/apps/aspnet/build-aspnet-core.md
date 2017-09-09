@@ -14,7 +14,7 @@ ms.topic: get-started-article
 
 **VSTS | TFS 2017 Update 2**
 
-[ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your ASP.NET Core app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process.
+In this quickstart, you learn how to define a CI process for your ASP.NET Core application. The CI process will publish a new container image to Azure Container Registry every time a change is pushed to the application code.
 
 ## Prerequisites
 

@@ -22,7 +22,7 @@ Learn how to build your app and deploy it to your choice of Azure service.
 <tr valign="middle" align="center">
 <td>![Web apps](../build-release/_img/index/app-service-web.png)<br/>[Web Apps](../build-release/apps/cd/azure/aspnet-core-to-azure-webapp.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)</td>
 <td>![Windows VMs](../build-release/_img/index/virtualmachine.png)<br/>[Windows VMs](../build-release/apps/cd/azure/aspnet-core-to-windows-vm.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)</td>
-<td>![Containers](../build-release/_img/index/appservice.png)<br/>[Containers](../build-release/apps/cd/azure/aspnet-core-to-acr.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)</td>
+<td>![Containers](../build-release/_img/index/appservice.png)<br/>[Containers](../build-release/apps/cd/deploy-docker-webapp.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)</td>
 </td>
 </tr>
 </table>    

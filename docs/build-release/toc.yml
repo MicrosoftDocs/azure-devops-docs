@@ -12,6 +12,8 @@
       items:
       - name: ASP.NET Core
         href: apps/aspnet/build-aspnet-core.md
+      - name: ASP.NET Core Container
+        href: apps/aspnet/build-aspnet-core-docker.md
       - name: ASP.NET
         href: apps/aspnet/build-aspnet-4.md
       - name: .NET for Windows
@@ -34,8 +36,8 @@
         href: apps/cd/azure/aspnet-core-to-azure-webapp.md
       - name: Windows VM
         href: apps/cd/deploy-webdeploy-iis-deploygroups.md
-      - name: "Azure Container Service"
-        href: apps/cd/azure/aspnet-core-to-acr.md
+      - name: Azure Web App for Containers
+        href: apps/cd/deploy-docker-webapp.md
 - name: Tutorials
   items:
   - name: CI builds for Git in VSTS

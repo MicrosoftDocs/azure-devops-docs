@@ -37,10 +37,10 @@ https://github.com/adventworks/aspnet4-sample
 # [GitHub repo](#tab/github)
 
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
- 
+
 ---
 
-This quickstart works for apps targeting the .NET Framework 4 or newer. The sample app is a Visual Studio solution that has two projects: An ASP.NET Web Application project that targets .NET Framework 4.5, and a Unit Test project. 
+This quickstart works for apps targeting the .NET Framework 4 or newer. The sample app is a Visual Studio solution that has two projects: An ASP.NET Web Application project that targets .NET Framework 4.5, and a Unit Test project.
 
 ## Set up continuous integration
 
@@ -50,7 +50,7 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
 1. Create a new build definition.
 
- # [VSTS or TFS repo](#tab/vsts) 
+ # [VSTS or TFS repo](#tab/vsts)
 
  Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
@@ -70,19 +70,19 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
 1. For the **Default agent queue**:
 
- * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
+ * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 
 1. Click **Get sources** and then:
 
- # [VSTS or TFS repo](#tab/vsts) 
+ # [VSTS or TFS repo](#tab/vsts)
 
  Observe that the new build definition is automatically linked to your repository.
 
  # [GitHub repo](#tab/github)
 
- Select your version control repository. You'll need to authorize access to your repo. 
+ Select your version control repository. You'll need to authorize access to your repo.
 
  > [!TIP]
  > To learn more about GitHub CI builds, see [Define CI build process for your Git repo](../../actions/ci-build-git.md).
