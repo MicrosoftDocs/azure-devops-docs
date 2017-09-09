@@ -10,10 +10,9 @@ ms.author: estfan
 ms.date: 03/29/2017
 ---
 
-# Add administrators to VSTS project collections
+# Add administrators to project collections
 
 **VSTS**
-
 
 In TFS and VSTS, each team project collection is its own grouping
 of projects that can share reports, work items, and other items, all stored in a single database.

@@ -6,6 +6,6 @@
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=admin
     items:
-    - name: "Security & Identity"
+    - name: Billing
       tocHref: /vsts/
-      topicHref: /vsts/security/index
+      topicHref: /vsts/billing/index

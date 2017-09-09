@@ -96,56 +96,59 @@
       tocHref: /vsts/feedback/
       topicHref: /vsts/feedback/index
   - name: Admin
-    tocHref: /vsts/accounts/
+    tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=admin
     items:
-    - name: VSTS Account Management
+    - name: Account Management
       tocHref: /vsts/accounts/
       topicHref: /vsts/accounts/index
-    - name: TFS Server Administration
+    - name: "Server Administration (TFS)"
       tocHref: /vsts/tfs-server/
       topicHref: /vsts/tfs-server/index
     - name: "Security & Identity"
       tocHref: /vsts/security/
       topicHref: /vsts/security/index
-    - name: Billing
-      tocHref: /vsts/billing/
-      topicHref: /vsts/billing/index
     - name: "Scale & Configure Teams"
       tocHref: /vsts/teams/
       topicHref: /vsts/teams/index
+    - name: Billing
+      tocHref: /vsts/billing/
+      topicHref: /vsts/billing/index
     - name: Manage Extensions
       tocHref: /vsts/marketplace/
       topicHref: /vsts/marketplace/index
-  - name: Integration
-    tocHref: /vsts/integrate/
+  - name: Extend
+    tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=integration
     items:
-    - name: Service Hooks
-      tocHref: /vsts/service-hooks/
-      topicHref: /vsts/service-hooks/index
+    - name: Build extensions
+      tocHref: /vsts/extend/
+      topicHref: /vsts/extend/index
     - name: Visual Studio Extensions
       tocHref: /vsts/integrate/ide/extensions/
       topicHref: /vsts/integrate/ide/extensions/overview
     - name: Integrate
       tocHref: /vsts/integrate/
       topicHref: /vsts/integrate/index
-    - name: Visual Studio subscriptions
-      tocHref: /vsts/marketplace/vs-subscriptions/
-      topicHref: /vsts/marketplace/vs-subscriptions/buy-vs-subscriptions
     - name: TFS SharePoint integration
       tocHref: /vsts/ecosystem/sharepoint/
       topicHref: /vsts/ecosystem/sharepoint/index
     - name: TFS-Project Server integration
       tocHref: /vsts/work/tfs-ps-sync/
-      topicHref: /vsts/work/tfs-ps-sync/synchronize-tfs-project-server
+      topicHref: /vsts/work/tfs-ps-sync/index
     - name: "Data Warehouse & SQL Reports"
       tocHref: /vsts/report/sql-reports/
       topicHref: /vsts/report/sql-reports/index
-  - name: Extend
+  - name: Marketplace
     tocHref: /vsts/extend/
     topicHref: /vsts/index#pivot=services&panel=integration
     items:
-    - name: Build extensions
-      tocHref: /vsts/extend/
-      topicHref: /vsts/extend/index
+    - name: Discover Extensions
+      tocHref: /vsts/marketplace/
+      topicHref: https://marketplace.visualstudio.com/
+    - name: Service Hooks
+      tocHref: /vsts/service-hooks/
+      topicHref: /vsts/service-hooks/index
+    - name: Visual Studio subscriptions
+      tocHref: /vsts/marketplace/vs-subscriptions/
+      topicHref: /vsts/marketplace/vs-subscriptions/buy-vs-subscriptions

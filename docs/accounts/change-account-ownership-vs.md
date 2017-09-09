@@ -28,11 +28,9 @@ If no one has these permissions, contact
 Make sure that the new owner: 
 
 *	Has been added and invited to your VSTS account 
-(```https://{youraccount}.visualstudio.com```).
-
+(```https://{youraccount}.visualstudio.com```).  
 *	Also has at least Basic access, not Stakeholder. 
-Learn [how to manage users and access](add-account-users-assign-access-levels.md). 
-
+Learn [how to manage users and access](add-account-users-assign-access-levels.md).  
 *	Has signed in to your VSTS account, 
 created a Visual Studio profile, 
 and agreed to the Terms of Service. 
@@ -87,15 +85,12 @@ A: This might happen because:
 
 *	They're not in your VSTS account, 
 or they don't have account access. 
-Learn how to [add them to your account](add-account-users-assign-access-levels.md).
-
+Learn how to [add them to your account](add-account-users-assign-access-levels.md).  
 *	They haven't created a Visual Studio profile 
-and agreed to the Terms of Service.
-
+and agreed to the Terms of Service.  
 *	If you recently added this person to your account, 
 you might experience a delay before this person appears 
-in the possible account owners list. 
-
+in the possible account owners list.   
 *	If your account uses Azure Active Directory to control access, 
 directory members won't appear in the possible account owners 
 list until they meet the requirements above.

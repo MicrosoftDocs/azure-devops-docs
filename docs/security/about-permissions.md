@@ -13,7 +13,7 @@ ms.date: 08/15/2017
 # About permissions and groups 
 
 
-**VSTS | TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 To access the resources you manage in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)&mdash;like your code, builds, and work&mdash;you need to have permissions to those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md).
 

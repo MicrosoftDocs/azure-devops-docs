@@ -6,6 +6,6 @@
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=admin
     items:
-    - name: "Security & Identity"
+    - name: Manage Extensions
       tocHref: /vsts/
-      topicHref: /vsts/security/index
+      topicHref: /vsts/marketplace/index

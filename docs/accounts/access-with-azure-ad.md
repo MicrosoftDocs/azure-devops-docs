@@ -15,7 +15,6 @@ ms.date: 08/01/2017
 
 **VSTS**
 
-
 Want to authenticate users and control access to 
 your VSTS account the same way that you 
 can with Microsoft services like Office 365 and Azure? 
@@ -107,11 +106,8 @@ to [set up your credentials](http://support.microsoft.com/kb/2991274/en-us) agai
 
 ## Manage organization access with Azure AD
 
-[Add VSTS users to your Azure AD](add-users-to-aad.md)  
-
-[Connect VSTS account to Azure AD](connect-account-to-aad.md) 
-
-[Disconnect VSTS account from Azure AD](disconnect-account-from-aad.md)  
-
-[Delete users from VSTS connected to Azure AD](delete-users-from-services-aad.md) 
-
+- [Add VSTS users to your Azure AD](add-users-to-aad.md)  
+- [Connect VSTS account to Azure AD](connect-account-to-aad.md) 
+- [Disconnect VSTS account from Azure AD](disconnect-account-from-aad.md)  
+- [Delete users from VSTS connected to Azure AD](delete-users-from-services-aad.md) 
+- 
