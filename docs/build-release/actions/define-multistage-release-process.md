@@ -39,9 +39,9 @@ You'll need:
 
 * A release definition that contains at least one environment. If you don't already have one,
   you can create it by working through any of the following quickstarts and tutorials:
-  
-  - [Deploy to Azure web app](../apps/cd/deploy-webdeploy-webapps.md)
-  - [Deploy your ASP.NET Core app to an Azure web app](../apps/cd/azure/aspnet-core-to-azure-webapp.md)
+
+  - [Deploy to an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
+  - [Build and Deploy to an Azure Web App](../apps/cd/azure/aspnet-core-to-azure-webapp.md)
   - [Deploy to IIS web server on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
   or see [How to: Work with release definitions](work-with-release-definitions.md).
@@ -54,7 +54,7 @@ You'll need:
 
 ## Extend a release definition by adding environments
 
-In this section, you will add a new environment to the release definition. This environment will deploy your app to the new 
+In this section, you will add a new environment to the release definition. This environment will deploy your app to the new
 Azure App Services website. This is a typical scenario where you deploy initially to a test or staging server, and then to a
 live or production server. Each [environment](../../build-release/concepts/definitions/release/environments.md?toc=/vsts/deploy-azure/toc.json)
 represents one deployment target, though that target could be a physical or virtual server,
@@ -75,13 +75,13 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
    targets (the websites where each copy of the app will be deployed).
 
 1. The clone of the environment appears after the existing environment in the pipeline, and has the name **Copy of Production**.
-   Select this environment and, in the **Environment** panel, change the name to **QA**. 
+   Select this environment and, in the **Environment** panel, change the name to **QA**.
 
    ![Renaming the clone environment](_img/define-multistage-release-process/rename-copy-environment.png)
 
 1. To reorganize the environments in the pipeline, choose the **Pre-deployment conditions** icon for the **QA** environment and
    set the trigger to **After release**. The pipeline diagram changes to show that the deployment to the two environments will
-   now execute in parallel. 
+   now execute in parallel.
 
    ![Changing the QA environment trigger](_img/define-multistage-release-process/change-trigger-qa.png)
 
@@ -89,9 +89,9 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
    set the trigger to **After environment**, then select **QA** in the **Environments** drop-down list.
    The pipeline diagram changes to show that the deployment to the two environments will
    now execute in the required order.
-     
+
    ![Changing the Production environment trigger](_img/define-multistage-release-process/change-trigger-prod.png)
- 
+
    Notice that you can specify deployment to start when a deployment to the previous environment is _partially_ successful.
    Usually, this means the deployment tasks were set to continue the deployment even if a specific non-critical task failed
    (the default is that all tasks must succeed). You're most likely to set this option if you create a pipeline containing
@@ -110,11 +110,11 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
 
    If you are using a different type of task to deploy your app, the way you change the target for the deployment
    may differ. For example, if you are using deployment groups, you may be able to select a different deployment group,
-   or a different set of tags within the same deployment group. 
+   or a different set of tags within the same deployment group.
 
 ## Add approvals within a release definition
 
-The release definition you have modified deploys to test and then to production. If the deployment to test fails, the trigger 
+The release definition you have modified deploys to test and then to production. If the deployment to test fails, the trigger
 on the production environment does not fire, and so it is not deployed to production. However, it is typically the case that
 you want the deployment to pause after _successful_ deployment to the test website so that you can verify the app is working correctly before
 you deploy to production. In this section, you will add an approval step to the release definition to achieve this.
@@ -132,7 +132,7 @@ you deploy to production. In this section, you will add an approval step to the 
    ![Selecting the pre-deployment approvers](_img/define-multistage-release-process/select-approvers.png)
 
    You can add as many approvers as you need, both individual accounts and account groups.
-   It's also possible to set up post-deployment approvals by choosing the icon at the right side of the environment item in the pipeline diagram. 
+   It's also possible to set up post-deployment approvals by choosing the icon at the right side of the environment item in the pipeline diagram.
    For more information, see [Environments in Release Management](../../build-release/concepts/definitions/release/environments.md?toc=/vsts/deploy-azure/toc.json).
 
 1. Save the modified release definition.
@@ -174,7 +174,7 @@ the source code will start a new build and, from that, a new release. However, i
    ![Release list showing link for approval](_img/define-multistage-release-process/list-approval-waiting.png)
 
 1. Choose the **Approve or Reject** link to open the approval dialog. Enter a brief note about the
-   approval, and choose **Approve**. 
+   approval, and choose **Approve**.
 
    ![Approving the release](_img/define-multistage-release-process/approve-dialog.png)
 
@@ -184,7 +184,7 @@ the source code will start a new build and, from that, a new release. However, i
 
 ## Monitor and track deployments
 
-In this section, you will see how you can monitor and track the deployment to the two Azure App Services websites 
+In this section, you will see how you can monitor and track the deployment to the two Azure App Services websites
 from the release you created in the previous section.
 
 1. In the release summary page, choose the **Logs** link. While the deployment is taking place,
@@ -218,6 +218,4 @@ from the release you created in the previous section.
 
 If you are having problems with a deployment, you can get more information from the log files by
 running the release in debug mode. For more information, see
-[How To: Monitor releases and debug deployment issues](../../build-release/actions/debug-deployment-issues.md?toc=/vsts/deploy-azure/toc.json). 
-
-
+[How To: Monitor releases and debug deployment issues](../../build-release/actions/debug-deployment-issues.md?toc=/vsts/deploy-azure/toc.json).

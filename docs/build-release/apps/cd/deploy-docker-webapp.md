@@ -9,7 +9,7 @@ ms.author: ahomer
 ms.date: 01/02/2017
 ---
 
-# Deploy to an Azure web app for containers
+# Deploy to an Azure Web App for Containers
 
 **VSTS**
 
@@ -20,7 +20,7 @@ in order to use the steps in this quickstart.
 
 ## Prerequisites
 
-Before you begin, you'll need a CI build that publishes your Docker-enabled package.
+Before you begin, you'll need a CI build that publishes a Docker image.
 To set up CI for your specific type of app, see:
 
 * [Build your ASP.NET Core Container app](../aspnet/build-aspnet-core-docker.md)
@@ -33,4 +33,4 @@ You'll need an Azure subscription. If you don't have one, you can [create one fo
 
 ## Next steps
 
-* [Set up multi-stage release(actions/define-multistage-release-process)
+* [Set up multi-stage release](../../actions/define-multistage-release-process.md)

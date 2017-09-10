@@ -13,7 +13,7 @@ ms.date: 05/23/2017
 
 **VSTS**
 
-In this quickstart you learn how to define CI process for your Docker-enabled ASP.NET Core application using VSTS.
+In this quickstart you learn how to define CI process for your Docker-enabled ASP.NET Core application using VSTS. The CI process will publish a new container image to Azure Container Registry every time a change is pushed to the application code.
 
 ## Prerequisites
 
@@ -25,10 +25,7 @@ In this quickstart you learn how to define CI process for your Docker-enabled AS
 
 ## Get the sample app code
 
-You'll the code for your ASP.NET Core app in a version control system in order to configure CI.
-VSTS and TFS integrate with various version control systems such as Git in VSTS and TFS, Team Foundation Version Control, GitHub, and Subversion.
-
-To make it easy for you to follow the steps in this quickstart, import the code for the sample ASP.NET Core app into your own version control repository from the following URL:
+[!INCLUDE [include](../_shared/get-sample-code-intro.md)]
 
 ```URL
 https://github.com/adventworks/dotnetcore-docker-sample
@@ -44,7 +41,7 @@ https://github.com/adventworks/dotnetcore-docker-sample
 
 ---
 
-The sample app in this repository is a simple ASP.NET Core application with a multi-stage Dockerfile. The first stage defines how to build the application in a container, and the second stage packages the application as a container image that can be published to a container registry. ASP.NET Core 2.0 is used for this application, although these instructions work for ASP.NET Core 1.1 as well.
+The sample app in this repository is a simple ASP.NET Core application with a Dockerfile that defines a [multi-stage build](https://docs.docker.com/engine/userguide/eng-image/multistage-build/). The first stage defines how to build the application and the second stage packages the application as a container image that can be published to a container registry. ASP.NET Core 2.0 is used for this application, although these instructions work for ASP.NET Core 1.1 as well.
 
 ## Set up continuous integration
 
@@ -120,4 +117,4 @@ The sample app in this repository is a simple ASP.NET Core application with a mu
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Deploy to Azure web app for containers](../cd/deploy-docker-webapp.md)
+> [Deploy to Azure Web App for Containers](../cd/deploy-docker-webapp.md)

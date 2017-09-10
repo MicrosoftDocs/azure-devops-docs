@@ -1,5 +1,5 @@
 ---
-title: Deploy your ASP.NET Core app to an Azure web app | VSTS Quickstart
+title: Deploy your app to an Azure web app | VSTS Quickstart
 description: Set up a continuous integration (CI) build for your ASP.NET Core application, and then a continuous deployment (CD) release to Azure web app using Visual Studio Team Services
 services: vsts
 documentationcenter: ''
@@ -18,25 +18,42 @@ ms.author: alewis
 ms.custom: mvc
 ---
 
-# Deploy your ASP.NET Core app to an Azure web app
+# Build and deploy to an Azure Web App
 
-Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline to automatically deploy your ASP.NET Core web app to Azure App Services.
-In this quickstart you will use the Azure portal to configure a basic CI/CD pipeline, and then see it build and deploy your app.
+Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline to automatically deploy your ASP.NET Core web app to Azure App Services. In this quickstart you will use the Azure portal to configure an entire CI/CD pipeline, and then see it build and deploy your app.
 
 ![A typical release pipeline for web applications](_shared/_img/vscode-git-ci-cd-to-azure.png)
 
 With your CI/CD processes in place, you'll push a change into your team's Git repo and the results will automatically show up on your site.
 
+<!--
 ![Screenshot showing ASP.NET Core web app](_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
+-->
 
 ## Prerequisites
 
 [!INCLUDE [include](../../../_shared/ci-cd-prerequisites-vsts.md)]
 * An Azure subscription. If you don't have an Azure subscription, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
-## Import code for sample app into VSTS
+## Get the sample code
 
-[!INCLUDE [include](../../../apps/aspnet/_shared/import-code-aspnet-core-vsts.md)]
+To configure a CI build process for your app, the source code needs to be in a version control system. You can use VSTS as your version control system, since VSTS provides a full-featured Git server. Alternatively, you can use GitHub.
+
+For a simple way to follow this quickstart, get the following sample app code and put it into your own version control repository:
+
+```
+https://github.com/adventworks/dotnetcore-sample
+```
+
+# [VSTS or TFS repo](#tab/vsts)
+
+[!INCLUDE [include](../../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
+
+# [GitHub repo](#tab/github)
+
+[!INCLUDE [include](../../_shared/get-sample-code-github.md)]
+
+---
 
 <a name="create-webapp-portal"></a>
 

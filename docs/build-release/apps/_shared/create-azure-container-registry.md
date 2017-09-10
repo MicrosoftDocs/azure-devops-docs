@@ -1,6 +1,6 @@
 ##  Create an Azure Container Registry    
 
-You use [Azure Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/) to host the Docker image that is published by the CI process.  Follow the steps below to create and configure the registry to store and manage the Docker container.  In later steps, you use VSTS to deploy the Docker container to Linux App Service in Azure.
+You use [Azure Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/) to host the Docker image that is published by the CI process.  Follow the steps below to create and configure a registry.  In later steps, you use VSTS to deploy the image to an Azure Web App for Containers.
 
 1. Sign into your Azure Account at [https://portal.azure.com](https://portal.azure.com).
 

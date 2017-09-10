@@ -111,7 +111,11 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
 ### Define your Xamarin.iOS build
 
-Repeat the same steps as above to create another build definition, but this time select the **Xamarin.iOS** template. Disable **Xamarin Test Cloud** task as indicated above.
+Repeat the same steps as above to create another build definition, but this time select the **Xamarin.iOS** template.
+
+1. For the **Default agent queue**, select the queue that includes your MAC agent.
+
+1. Remove **Xamanrin Test Cloud** task.
 
 1. Click the **Variables** tab and modify these variables:
 

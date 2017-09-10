@@ -14,7 +14,7 @@ ms.topic: get-started-article
 
 **VSTS | TFS 2017 Update 2**
 
-In this quickstart, you learn how to define a CI process for your ASP.NET Core application. The CI process will publish a new container image to Azure Container Registry every time a change is pushed to the application code.
+[ASP.NET Core](http://www.asp.net/core) is a lean and composable framework for building web and cloud applications. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your ASP.NET Core app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process.
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ https://github.com/adventworks/dotnetcore-sample
 
 ---
 
-This quickstart works for apps targeting the .Net Core 1.1 or 2.0 frameworks. The sample app is a Visual Studio solution that has two projects: An ASP.NET Core Web Application project and a Unit Test project (both targeting .Net Core 1.1 framework).
+The sample app is a Visual Studio solution that has two projects: An ASP.NET Core Web Application project and a Unit Test project (both targeting .Net Core 1.1 framework). This quickstart works for any apps targeting the .Net Core 1.1 or 2.0 frameworks. 
 
 ## Set up continuous integration
 
