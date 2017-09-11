@@ -94,7 +94,7 @@ using (ProjectHttpClient projectHttpClient = new ProjectHttpClient(uri, credenti
 
 ## Work item tracking
 
-You can find the following samples and more in C# and .NET at the [work item tracking samples page](https://visualstudio.com/api/wit/samples.md).
+You can find the following samples and more in C# and .NET at the [work item tracking samples page](../../api/wit/samples.md).
 
 - [Create a bug](https://visualstudio.com/api/wit/samples.md#create-bug)
 - [Migrating work items](https://visualstudio.com/api/wit/samples.md#migrating-work-items)

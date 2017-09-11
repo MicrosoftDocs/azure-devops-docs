@@ -145,11 +145,11 @@ You should get a response like this.
 The response is [JSON](http://json.org/).
 That's generally what you'll get back from the REST APIs,
 although there are a few exceptions,
-like [Git blobs](https://visualstudio.com/api/git/blobs.md).
+like [Git blobs](../../api/git/blobs.md).
 
 Now you should be able to look around the specific
-[API areas](https://visualstudio.com/api/overview.md) like [work item tracking](https://visualstudio.com/api/wit/overview.md)
-or [Git](https://visualstudio.com/api/git/overview.md) and get to the resources that you need.
+[API areas](../../api/overview.md) like [work item tracking](../../api/wit/overview.md)
+or [Git](../../api/git/overview.md) and get to the resources that you need.
 Keep reading to learn more about the general patterns that are used in these APIs.
 
 ## HTTP verbs
@@ -186,7 +186,8 @@ Content-Type: application/json
 
 Some web proxies may only support the HTTP verbs GET and POST, but not more modern HTTP verbs like PATCH and DELETE.
 If your calls may pass through one of these proxies, you can send the actual verb using a POST method, with a header to override the method.
-For example, you may want to [update a work item](https://visualstudio.com/api/wit/work-items.md#updateworkitems) (`PATCH _apis/wit/workitems/3`), but you may have to go through a proxy that only allows GET or POST.
+For example, you may want to [update a work item](or [Git](../../api/git/overview.md) and get to the resources that you need.
+/api/wit/work-items.md#updateworkitems) (`PATCH _apis/wit/workitems/3`), but you may have to go through a proxy that only allows GET or POST.
 You can pass the proper verb (PATCH in this case) as an HTTP request header parameter and use POST as the actual HTTP method.
 
 
@@ -288,7 +289,8 @@ A: Yes, see the [overview of client libraries](../client-libraries/dotnet.md).
 
 #### Q: Where can I learn about the specific .Net client libraries contracts?
 
-A: Review the [contracts index](https://visualstudio.com/api/contracts-page.md) to learn about the specific .Net client library contracts.
+A: Review the [contracts index](or [Git](../../api/git/overview.md) and get to the resources that you need.
+/api/contracts-page.md) to learn about the specific .Net client library contracts.
 
 <!-- ENDSECTION --> 
 

@@ -39,7 +39,7 @@ take for the subscription.
 
 To create a subscription, the following data will be required:
 
-- team project ID (use the [Team Project REST API](https://visualstudio.com/api/tfs/projects.md) to get the project ID)
+- team project ID (use the [Team Project REST API](../integrate/api/tfs/projects.md) to get the project ID)
 - event ID and settings (see the [event reference](./events.md))
 - consumer and action IDs and settings (see the [consumer reference](./consumers.md))
 
