@@ -1,5 +1,5 @@
 ---
-title: CI/CD with VS 2017, Linux App Service, Docker, and Azure Container Registry (ACR) | VSTS Quickstart
+title: CI/CD to Linux, Docker, and Azure Container Registry (ACR) 
 description: Leverage Visual Studio 2017 to set up a continuous integration (CI) build for your ASP.NET Core app, and then a continuous deployment (CD) release to an Azure Linux App Service using Visual Studio Team Services (VSTS)
 services: vsts
 documentationcenter: ''
