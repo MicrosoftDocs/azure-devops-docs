@@ -57,7 +57,7 @@ listing to install.
 ## Automate the process with continuous integration
 
 You can use continuous integration systems like Team Build to automate the packing and publishing of your packages. 
-To get started with continuous integration, see the [Maven in Team Build guidance](/vsts/build-release/packages/maven.md).
+To get started with continuous integration, see the [Maven in Team Build guidance](/vsts/build-release/packages/maven).
 
 ## What's next?
 

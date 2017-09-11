@@ -1,5 +1,5 @@
 ---
-title: Rate limits 
+title: Resource limits & constraints for VSTS 
 titleSuffix: VSTS  
 description: Limits on the resources individual users can consume in Visual Studio Team Services, and the number of work item tracking requests they can make 
 ms.technology: vs-devops-overview

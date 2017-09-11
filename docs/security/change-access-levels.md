@@ -1,5 +1,5 @@
 ---
-title: Change access levels | TFS 
+title: How to change access levels for a user or group in TFS 
 description: Provide access to web portal users based on their license for stakeholder, basic, advanced, or VS Enterprise via Team Foundation Server
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

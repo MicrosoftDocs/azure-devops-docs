@@ -1,6 +1,6 @@
 ---
-title: Android build
-description: Android build
+title: Android build build and release task
+description: Android Build build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 21C3DC47-7D67-4427-8386-ACE3A6279995

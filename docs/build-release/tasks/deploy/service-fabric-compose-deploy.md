@@ -1,6 +1,6 @@
 ---
 description: Service Fabric Compose Deploy Deployment task
-title: Service Fabric Compose Deploy build task
+title: Service Fabric Compose Deploy build and release task for Microsoft Visual Studio Team Services and Microsoft Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
 ms.assetid: 891A8845-6EC1-4A70-B187-BBF9416AB41F

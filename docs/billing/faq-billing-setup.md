@@ -1,6 +1,6 @@
 ---
-title: Billing troubleshooting
-description: Billing troubleshooting
+title: Troubleshoot VSTS billing  
+description: Solutions for resolving VSTS billing issues  
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-billing
 ms.service: vsts-admin

@@ -1,6 +1,6 @@
 ---
 title: Create your first build and release | VSTS
-description: Are you a CI/CD novice? In just minutes you can create an automated build and release pipeline in Visual Studio Team Services and Microsoft Team Foundation Server.
+description: CI/CD novice? Create an automated build and release pipeline in VSTS and TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.topic: get-started-article

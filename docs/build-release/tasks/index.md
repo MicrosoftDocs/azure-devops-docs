@@ -1,5 +1,5 @@
 ---
-title: Tasks | VSTS & TFS 
+title: Catalog of the built-in tasks for build-release and VSTS & TFS 
 description: Catalog of the built-in tasks on Visual Studio VSTS and Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview

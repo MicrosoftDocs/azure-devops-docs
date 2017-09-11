@@ -1,6 +1,6 @@
 ---
 title: Copy Files
-description: How to copy files between folders with match patterns when building code in Visual Studio Team Services
+description: How to copy files between folders with match patterns when building code in Visual Studio Team Services VSTS and Team Foundation Server TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: BB8401FB-652A-406B-8920-4BD8977BFE68

@@ -1,7 +1,7 @@
 ---
 ms.assetid: 6DD68CF7-072E-42F4-99FF-06C93D997947
 title: Automatically generate a CI/CD pipeline to deploy an ASP.NET app
-description: Use Azure to automatically generate a CI/CD pipeline to deploy an ASP.NET app from Visual Studio Team Services or Microsoft Team Foundation Server (TFS)
+description: Automatically generate a CI/CD pipeline to deploy an ASP.NET app from VSTS or TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
 ms.manager: douge

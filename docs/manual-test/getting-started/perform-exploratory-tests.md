@@ -1,6 +1,6 @@
 ---
 title: Exploratory test your web app
-description: Exploratory test your web app, find and file bugs in Visual Studio Team Services (VSTS) from your browser with the Test &amp; Feedback extension - for any platform, no test cases or test steps
+description: Exploratory test your web app in VSTS from your browser with the Test &amp; Feedback extension
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
 ms.service: vsts-testing

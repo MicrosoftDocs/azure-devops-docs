@@ -1,5 +1,5 @@
 ---
-title: Search
+title: Search index of topics for VSTS and TFS
 description: Search with VSTS and TFS
 ms.assetid: A8EB4B0C-5656-4070-9A0F-488AB8288BBE
 ms.prod: vs-devops-alm

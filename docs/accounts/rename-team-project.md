@@ -1,5 +1,5 @@
 ---
-title: Rename your Team Project | VSTS and TFS
+title: Rename a team project in VSTS or TFS
 description: You can rename your team project in VSTS or TFS, and then there are some things you need to do to work with the renamed team project.
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts

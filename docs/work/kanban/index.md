@@ -1,5 +1,5 @@
 ---
-title: Kanban guidance | VSTS & TFS
+title: Kanban board for VSTS & TFS content
 description: Index to topics for working with Kanban in VSTS and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

@@ -1,5 +1,5 @@
 ---
-title: Connect to team projects 
+title: Connect to team projects in VSTS or TFS
 description: Connect a client to the cloud service VSTS or on-premises Team Foundation Server (TFS) 
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm

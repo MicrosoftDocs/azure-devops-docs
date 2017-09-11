@@ -1,6 +1,6 @@
 ---
 title: VSTS and TFS Build and Deploy - IIS Web App Deploy task
-description: Team Services and Team Foundation Server build task step to  
+description: Team Services and Team Foundation Server build and release task for Microsoft Visual Studio Team Services and Microsoft Team Foundation Server  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
 ms.assetid: 69A09C16-9113-45AC-A058-BC5E12412C62

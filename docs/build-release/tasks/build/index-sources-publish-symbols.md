@@ -1,6 +1,6 @@
 ---
-title: Index Sources & Publish Symbols
-description: Index Sources & Publish Symbols
+title: Index Sources & Publish Symbols build and release task
+description: Index Sources & Publish Symbols build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B

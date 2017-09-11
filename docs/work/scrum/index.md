@@ -1,5 +1,5 @@
 ---
-title: Scrum  | VSTS & TFS
+title: Scrum index of topics for VSTS & TFS
 description: Index to topics for working in Scrum using VSTS or Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

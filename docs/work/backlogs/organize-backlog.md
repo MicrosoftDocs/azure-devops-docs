@@ -1,5 +1,5 @@
 ---
-title: Organize your backlog | VSTS & TFS  
+title: Organize your backlog using Agile tools provided by VSTS & TFS  
 description:  Organize your backlog by mapping backlog items to features, and features to epics in Visual Studio Team Services or the web portal for Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

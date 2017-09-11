@@ -1,5 +1,5 @@
 ---
-title: Preview features | VSTS & TFS  
+title: Turn preview features on or off in VSTS & TFS  
 description: Enable/disable or activate/deactivate features in preview at the user, team project, or account level  
 ms.technology: collaborate
 ms.prod: vs-devops-alm

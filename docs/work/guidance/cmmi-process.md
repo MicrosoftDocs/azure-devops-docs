@@ -1,5 +1,5 @@
 ---
-title: CMMI process | VSTS & TFS  
+title: CMMI process template for VSTS & TFS  
 description: CMMI process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services (VSTS) or Team Foundation Server     
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

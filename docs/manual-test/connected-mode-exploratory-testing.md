@@ -1,6 +1,6 @@
 ---
 title: Exploratory testing with the Test &amp; Feedback extension in Connected mode
-description: Manual and exploratory testing - exploratory testing with the Test &amp; Feedback extension in Connected mode for a full integrated experience with team systems and environments such as Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Exploratory testing with the Test &amp; Feedback extension in Connected mode
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
 ms.service: vsts-testing

@@ -1,5 +1,5 @@
 ---
-title: Permissions lookup guide| VSTS & TFS  
+title: Permissions lookup guide for VSTS & TFS  
 description: Index to permissions defined for Visual Studio Team Services (VSTS) and Team Foundation Server   
 ms.technology: vs-devops-tfs
 ms.prod: vs-devops-alm

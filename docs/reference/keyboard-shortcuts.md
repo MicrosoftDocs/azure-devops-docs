@@ -1,5 +1,5 @@
 ---
-title: Keyboard shortcuts  
+title: Keyboard shortcuts used in the web portal for VSTS, TFS, and Team Explorer
 description: Keyboard shortcuts for Visual Studio Team Services, TFS web portal, and Team Explorer  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview

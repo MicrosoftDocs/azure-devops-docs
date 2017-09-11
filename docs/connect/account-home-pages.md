@@ -1,5 +1,5 @@
 ---
-title: Account hub pages | Team Service & TFS 
+title: Navigate using the account hub pages in VSTS & TFS 
 description: Quickly link to work items, pull requests, team projects, and more using your account home page of the web portal for Visual Studio Team Services and Team Foundation Server (TFS) 
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 08/11/2017
 ---
 
-# Work effectively from your account hub
+# Work effectively from your account hub 
 
 **VSTS | TFS 2018 | TFS 2017.1**  
 

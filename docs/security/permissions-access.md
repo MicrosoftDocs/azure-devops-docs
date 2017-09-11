@@ -1,5 +1,5 @@
 ---
-title: Permissions and access quick reference | VSTS & TFS 
+title: Permissions and access quick reference for VSTS & TFS 
 description: Simplified views of required permissions and access levels for common user tasks when working in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs

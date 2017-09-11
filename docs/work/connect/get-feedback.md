@@ -1,5 +1,5 @@
 ---
-title: Get feedback 
+title: Request feedback using the work tracking feedback tool
 description: Ask reviewers to provide videos, screenshots, type-written comments, and ratings on your application   developed using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

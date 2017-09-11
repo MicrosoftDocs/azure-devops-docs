@@ -1,5 +1,5 @@
 ---
-title: Use work item form controls  
+title: Use work item form controls to track your work
 description: Use the controls provided in the work item form to update status, link work items, and more in Visual Studio Team Services (VSTS) and Team Foundation Server  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

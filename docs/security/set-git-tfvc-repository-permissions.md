@@ -1,5 +1,5 @@
 ---
-title: Set Git/TFVC repository permissions | VSTS & TFS 
+title: Set Git or TFVC repository permissions for VSTS & TFS 
 description: Grant or restrict access to a Git or TFVC repository feature or function
 ms.assetid:  
 ms.prod: vs-devops-alm

@@ -1,6 +1,6 @@
 ---
 title: Batch script
-description: How execute .bat or .cmd scripts when building code in Visual Studio Team Services
+description: How execute .bat or .cmd scripts when building code in Visual Studio Team Services VSTS and Team Foundation Server TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: E60FC8AE-EDA7-4C1D-BDA5-CDC741FAD3E4

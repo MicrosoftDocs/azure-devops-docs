@@ -1,5 +1,5 @@
 ---
-title: Feedback index | VSTS & TFS
+title: Feedback index to content for VSTS & TFS
 description: Index to topics for requesting and providing feedback in VSTS or TFS    
 ms.technology: collaborate
 ms.prod: vs-devops-alm

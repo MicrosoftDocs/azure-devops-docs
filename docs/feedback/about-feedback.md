@@ -1,5 +1,5 @@
 ---
-title: About | VSTS & TFS  
+title: Request feedback on working apps in VSTS & TFS  
 description: Overview of ways in which to request and provide feedback on your working apps    
 ms.technology: collaborate
 ms.prod: vs-devops-alm

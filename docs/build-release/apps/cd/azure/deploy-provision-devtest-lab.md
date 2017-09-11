@@ -1,7 +1,7 @@
 ---
 ms.assetid: 4FC75F92-EC04-4458-8069-53EEBF855D2F
 title: Manage a virtual machine in Azure DevTest Labs
-description: Create, manage, and delete virtual machines in Azure DevTest Labs service using Microsoft Release Management in Visual Team Services (VSTS) and Team Foundation Server (TFS)
+description: Create, manage, and delete VMs in Azure DevTest Labs using Microsoft Release Management in VSTS and TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
 ms.manager: douge

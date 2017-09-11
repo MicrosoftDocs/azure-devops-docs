@@ -1,5 +1,5 @@
 ---
-title: About VSTS and TFS  
+title: Understand differences between VSTS and TFS  
 description: Understand the fundamental differences between Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.prod: vs-devops-alm  
 ms.technology: vs-devops-articles

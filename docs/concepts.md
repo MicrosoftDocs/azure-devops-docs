@@ -1,5 +1,5 @@
 ---
-title: Key concepts | Team Services & TFS
+title: Key concepts for working with both VSTS & TFS
 description: Understand the key concepts that support the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
@@ -9,11 +9,11 @@ ms.author: kaelli
 ms.date: 08/04/2017
 ---
 
-# Key concepts for working with Team Services and TFS 
+# Key concepts for working with VSTS and TFS 
 
-**Team Services | TFS 2017 | TFS 2015** 
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015** 
 
-The set of platforms, services, and tools you have access to through Visual Studio Team Services can be overwhelming. Before you start using our products, you'll want to become familiar with how they fit together. You'll gain that understanding here as well as pointers to additional topics and tutorials to gain confidence in using our products to develop your software.   
+The set of platforms, services, and tools you have access to through Visual Studio Team Services (VSTS) can be overwhelming. Before you start using our products, you'll want to become familiar with how they fit together. You'll gain that understanding here as well as pointers to additional topics and tutorials to gain confidence in using our products to develop your software.   
 
 <!---
 ###Video overview
@@ -22,7 +22,7 @@ The set of platforms, services, and tools you have access to through Visual Stud
 
 ##Collaborative, integrated software development 
 
-Team Services, our hosted cloud offering, and Team Foundation Server (TFS), our on-premises platform, provide small teams as well as enterprises the services and tools to support developing and continuously deploying software. Even sole developers can use our platforms to manage their software and deploy their apps. 
+VSTS, our hosted cloud offering, and Team Foundation Server (TFS), our on-premises platform, provide small teams as well as enterprises the services and tools to support developing and continuously deploying software. Even sole developers can use our platforms to manage their software and deploy their apps. 
 
 The three main areas that support software development include:
 
@@ -41,7 +41,7 @@ With Git, each developer has a copy on their dev machine of the source repositor
 Developers can commit each set of changes and perform version control operations such as history and compare without a network connection. Branches are lightweight. When devs need to switch contexts, they create a private local branch. Devs can quickly switch from one branch to another to pivot among different variations of the codebase. Later, they can merge, publish, or dispose of the branch.
 
 >[!NOTE]
->Git in Visual Studio, Team Services and TFS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with TFS.
+>Git in VSTS and TFS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with TFS.
 
 With TFVC, devs have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server. 
 
@@ -73,7 +73,7 @@ Rapid and reliable release of software comes from automating as many processes a
 
 ## Scaling  
 
-Both Team Services and TFS are enterprise-ready, supporting teams of any size, from tens to thousands. Team Services provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24×7 operations team, and available in local data centers around the world.
+Both VSTS and TFS are enterprise-ready, supporting teams of any size, from tens to thousands. VSTS provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24×7 operations team, and available in local data centers around the world.
 
 You can scale the system in the following ways: 
 - Within a team project, you can add teams 
@@ -85,7 +85,7 @@ You can scale the system in the following ways:
 
 To build and deploy a software application, you begin by defining a software project. Software projects differ from team projects. 
 
-A team project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to Team Services or an on-premises TFS, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system. 
+A team project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to VSTS or an on-premises TFS, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system. 
 
 When you create your team project, a team of the same name is automatically created. For small teams, this is sufficient. However, for enterprise-level organizations, it may be necessary to scale up, to create additional teams and/or team projects. These can be created within the single account or collection. 
 
@@ -126,8 +126,8 @@ You can configure and customize most elements to support your business needs or 
 In addition to all the pre-built functionality available to you, you can add to it in the following  ways: 
 
 - [Visual Studio Marketplace](https://marketplace.visualstudio.com) : Provides extensions that you can install either on your account, server, or Visual Studio client 
-- [Service hooks](./service-hooks/index.md): Enable you to perform tasks on other services when events happen within your team project hosted on Team Services or TFS 
-- [REST APIs](https://visualstudio.com/integrate/api/overview.md): Provide the ability to create custom extensions that plug into Team Services or TFS
+- [Service hooks](./service-hooks/index.md): Enable you to perform tasks on other services when events happen within your team project hosted on VSTS or TFS 
+- [REST APIs](https://visualstudio.com/integrate/api/overview.md): Provide the ability to create custom extensions that plug into VSTS or TFS
 - [Visual Studio SDK](https://msdn.microsoft.com/library/bb166441.aspx): Helps you extend Visual Studio features or integrate new features into Visual Studio. You can distribute your extensions to other users, as well as to the Visual Studio Marketplace. 
 
 
@@ -135,7 +135,6 @@ In addition to all the pre-built functionality available to you, you can add to 
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-
 - [Pricing](https://www.visualstudio.com/team-services/pricing/)
 
  

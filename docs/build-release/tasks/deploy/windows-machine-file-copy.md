@@ -1,6 +1,6 @@
 ---
 description: Windows Machine File Copy build task
-title: Windows Machine File Copy task
+title: Windows Machine File Copy build and release task for Microsoft Visual Studio Team Services and Microsoft Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
 ms.assetid: 1451866C-180E-4D8A-88ED-3B76BC30C09F

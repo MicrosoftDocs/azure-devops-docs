@@ -26,6 +26,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 [!INCLUDE [permissions](_shared/v2/prepare-permissions.md)]
 
+<a name="download-configure"></a>
 ## Download and configure the agent
 
 ### VSTS and TFS 2017
@@ -86,7 +87,7 @@ To run the agent interactively:
 We provide the `./svc.sh` script for you to run and manage your agent as a launchd LaunchAgent service. The service has access to the UI to run your UI tests.
 
 > [!NOTE]
-> If you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service-files).
+> If you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service_files).
 
 ### Tokens
 
@@ -234,7 +235,7 @@ You can also run your own instructions and commands to run when the service star
 
 ```
 
-<h3 id="service_files">Service Files</h3>
+<h3 id="service-files">Service Files</h3>
 
 When you install the service, some service files are put in place.
 

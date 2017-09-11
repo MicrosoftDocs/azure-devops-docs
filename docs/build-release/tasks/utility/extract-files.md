@@ -1,6 +1,6 @@
 ---
 title: Extract Files
-description: Extract files from archives to a target folder using minimatch patterns.
+description: Extract files from archives to a target folder using minimatch patterns on Visual Studio Team Services VSTS and Team Foundation Server TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: fe025768-2cb4-4939-b22f-8f69155bf310

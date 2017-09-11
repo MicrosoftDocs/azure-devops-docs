@@ -1,5 +1,5 @@
 ---
-title: VSTS - Change Azure AD | Visual Studio Team Services
+title: Change your VSTS account Azure Active Directory tenant
 description: VSTS - Change directory (tenant) in Azure Active Directory (Azure AD, AAD) for Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 ms.topic: get-started-article
 ---
 
-#	VSTS: Change Azure Active Directory (Azure AD) tenant
+#	Change Azure Active Directory (Azure AD) tenant
 
 **VSTS**
 

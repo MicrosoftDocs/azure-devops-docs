@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 title: Build and release permissions
-description: Build and release permissions in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Build and release permissions in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.technology: vs-devops-build
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
 ms.manager: douge

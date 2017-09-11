@@ -1,5 +1,5 @@
 ---
-title: Velocity | VSTS & TFS
+title: Configure and view Velocity charts in VSTS & TFS
 description: Track team velocity across several sprints using the velocity chart or widget       
 ms.technology: vs-devops-reporting  
 ms.prod: vs-devops-alm

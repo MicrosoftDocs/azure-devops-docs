@@ -1,6 +1,6 @@
 ---
 title: Artifacts in Release Management
-description: Understand artifacts in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Understand build artifacts in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
