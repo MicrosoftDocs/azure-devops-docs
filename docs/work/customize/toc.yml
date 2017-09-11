@@ -164,31 +164,30 @@
         href: /vsts/work/reference/automate-field-assignments-state-transition-reason?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: TRANSITION
         href: /vsts/work/reference/transition-xml-element?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: All FORM elements
-      href: /vsts/work/reference/all-form-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: New web form layout
       items:
-      - name: New web form layout
-        items:
-        - name: WebLayout and Control elements
-          href: /vsts/work/reference/weblayout-xml-elements?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-        - name: LinksControlOptions (web)
-          href: /vsts/work/reference/linkscontroloptions-xml-elements?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-      - name: Old (web and client) form layout
-        items:
-        - name: Layout
-          href: /vsts/work/reference/layout-xml-element-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-        - name: Control
-          href: /vsts/work/reference/control-xml-element-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-        - name: Tab
-          href: /vsts/work/reference/tab-xml-element-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-        - name: LinksControlOptions (web/client)
-          href: /vsts/work/reference/linkscontroloptions-elements?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-      - name: LabelText and Text
-        href: /vsts/work/reference/labeltext-and-text-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-      - name: Link and Param
-        href: /vsts/work/reference/link-param-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-      - name: WebpageControlOptions
-        href: /vsts/work/reference/webpagecontroloptions-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      - name: WebLayout and Control elements
+        href: /vsts/work/reference/weblayout-xml-elements?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      - name: LinksControlOptions (web)
+        href: /vsts/work/reference/linkscontroloptions-xml-elements?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Old (web and client) form layout
+      items:
+      - name: All FORM elements
+        href: /vsts/work/reference/all-form-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      - name: Layout
+        href: /vsts/work/reference/layout-xml-element-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      - name: Control
+        href: /vsts/work/reference/control-xml-element-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      - name: Tab
+        href: /vsts/work/reference/tab-xml-element-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      - name: LinksControlOptions (web/client)
+        href: /vsts/work/reference/linkscontroloptions-elements?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: LabelText and Text
+      href: /vsts/work/reference/labeltext-and-text-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Link and Param
+      href: /vsts/work/reference/link-param-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: WebpageControlOptions
+      href: /vsts/work/reference/webpagecontroloptions-xml-elements-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: LinkTypes elements reference 
       href: /vsts/work/reference/link-type-element-reference?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: CATEGORIES XML reference
@@ -303,7 +302,7 @@
     href: /vsts/teams/index
   - name: Account Management (VSTS)
     href: /vsts/accounts/index
-  - name: TFS Server Administration
+  - name: Server Administration (TFS)
     href: /vsts/tfs-server/index
   - name: Marketplace extensions
     href: /vsts/marketplace/get-vsts-extensions

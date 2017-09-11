@@ -1,5 +1,5 @@
 ---
-title: Security & Identity | VSTS 
+title: Security & Identity content index for VSTS & TFS 
 description: Index to topics for working with authentication, permissions, groups, and access levels in VSTS and and Team Foundation Server (TFS)  
 ms.assetid:  
 ms.prod: vs-devops-alm

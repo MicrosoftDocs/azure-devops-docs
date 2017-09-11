@@ -1,6 +1,6 @@
 ---
 title: Delete or recover VSTS account
-description: How to delete your VSTS account
+description: How to delete, quit, stop using, restore, or recover your VSTS account
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
 ms.service: vsts-admin

@@ -1,5 +1,5 @@
 ---
-title: Migrate wiki extension pages | VSTS  
+title: Migrate wiki extension pages in VSTS  
 description: Migrate wiki pages created using the Marketplace extension to the Visual Studio Team Services (VSTS) wiki 
 ms.technology: collaborate
 ms.prod: vs-devops-alm

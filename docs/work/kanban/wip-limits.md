@@ -1,5 +1,5 @@
 ---
-title: WIP limits | VSTS & TFS
+title: Configure WIP limits for Kanban board in VSTS & TFS
 description: Set Work In Progress Limits on the Kanban board and use to improve your Kanban process - Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

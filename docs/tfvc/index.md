@@ -1,5 +1,5 @@
 ---
-title: TFVC index to content | VSTS & TFS    
+title: Team Foundation Version Control (TFVC) index to content   
 description: Guide to getting started with TFVC documentation  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git  

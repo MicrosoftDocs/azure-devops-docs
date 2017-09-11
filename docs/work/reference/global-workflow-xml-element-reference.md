@@ -28,7 +28,8 @@ By using global workflow, you can minimize the work that is required to define a
   
  **Specify FIELDS**:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <?xml version="1.0" encoding="utf-8"?>  
 <GLOBALWORKFLOW>  
    <FIELDS>   
@@ -39,7 +40,8 @@ By using global workflow, you can minimize the work that is required to define a
   
  **Specify GLOBALLISTS**:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <?xml version="1.0" encoding="utf-8"?>  
 <GLOBALWORKFLOW>  
    <GLOBALLISTS>   
@@ -55,7 +57,8 @@ By using global workflow, you can minimize the work that is required to define a
 > [!NOTE]
 >  You cannot specify the **HELPTEXT** element for a field that you define in a global workflow.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <FIELD name="fieldDisplayName" refname="fieldReferenceName" type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID "  
 syncnamechanges="true | false" reportingname="reportingDisplayName" reportingrefname="reportingReferenceName"  
 reportable="Dimension | Detail | Measure" formula="avg" >  

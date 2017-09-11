@@ -1,5 +1,5 @@
 ---
-title: Backlogs | VSTS & TFS
+title: Backlogs index to content for VSTS & TFS
 description: Index to topics for planning and tracking work in VSTS and and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

@@ -1,5 +1,5 @@
 ---
-title: Set favorites | VSTS  
+title: Set personal or team favorites in VSTS or TFS 
 description: Quickly access objects by favoriting them either for your use or the team's use    
 ms.technology: collaborate
 ms.prod: vs-devops-alm

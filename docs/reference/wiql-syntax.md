@@ -1,5 +1,5 @@
 ---
-title: WIQL syntax   
+title: Reference syntax for WIQL support in VSTS & TFS   
 description: Reference syntax for the Work Item Query Language (WIQL) to support queries in Visual Studio Team Services (VSTS) and Team Foundation Server 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

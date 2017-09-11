@@ -22,19 +22,7 @@ You can customize three of the features that are supported in Microsoft Test Man
   
 The **tcm** command-line tool only works when run against an on-premises Team Foundation Server. 
 
-To run the tool, open a Command Prompt window where Visual Studio is installed. The command installs with any version of Visual Studio. You can access this tool by installing the free version of [Visual Studio Community](https://www.visualstudio.com/downloads/download-visual-studio-vs).   
-
-**For TFS 2017 or Team Services**: 
-```  
-cd %programfiles(x86)%\Microsoft Visual Studio 15.0\Common7\IDE  
-```  
- 
-**For TFS 2015**: 
-```  
-cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE  
-```  
-
-On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles%**.  
+[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)][!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]
 
 
 Also, you can use `tcm` command options to [copy and clone test suites and test cases](../../../manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md).  

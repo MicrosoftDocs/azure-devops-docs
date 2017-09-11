@@ -1,6 +1,6 @@
 ---
-title: VSTS billing concepts
-description: Use an Azure subscription to pay for more users, build & release pipelines, extensions, and cloud-based load testing for Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
+title: Understand how to buy VSTS services
+description: Understand what you need to setup to pay for VSTS users, build & release pipelines, extensions, and cload testing for VSTS
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-billing
 ms.service: vsts-admin

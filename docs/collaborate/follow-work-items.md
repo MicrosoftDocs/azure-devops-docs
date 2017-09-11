@@ -1,5 +1,5 @@
 ---
-title: Follow work or pull requests| VSTS  
+title: Follow work or pull requests in VSTS or TFS
 description: Quickly track the progress made to a work item by following it when using Visual Studio Team Services (VSTS)  
 ms.technology: collaborate
 ms.prod: vs-devops-alm

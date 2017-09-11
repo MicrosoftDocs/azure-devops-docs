@@ -1,5 +1,5 @@
 ---
-title: Manage bugs | VSTS & TFS
+title: Manage bugs using Agile tools provided by VSTS & TFS
 description: Manage technical debt and triage bugs using Agile tools and Scrum methods when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

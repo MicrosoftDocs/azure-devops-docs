@@ -1,5 +1,5 @@
 ---
-title: Change app access policies | Visual Studio Team Services
+title: Change your account's app access policies in VSTS 
 description: Change app access policies for Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts

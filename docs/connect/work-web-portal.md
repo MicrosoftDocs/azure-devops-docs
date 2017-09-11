@@ -1,5 +1,5 @@
 ---
-title: Work in the web portal 
+title: Navigate in the VSTS or TFS web portal 
 description: Guide to navigating within the web portal for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm

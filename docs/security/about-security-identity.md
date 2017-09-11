@@ -1,5 +1,5 @@
 ---
-title: About security and identity | VSTS & TFS
+title: Understand the components of security and identity in VSTS & TFS
 description: Understand how VSTS and TFS manage security and accounts 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs

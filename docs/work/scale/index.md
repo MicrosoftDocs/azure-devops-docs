@@ -1,6 +1,6 @@
 ---
-title: Agile at Scale | VSTS & TFS
-description: Index to topics for scaling Agile tools in VSTS and Team Foundation Server (TFS)  
+title: Agile at Scale index to content for VSTS & TFS
+description: Index to topics for how to scale Agile tools in VSTS and Team Foundation Server (TFS)  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: 

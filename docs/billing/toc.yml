@@ -16,7 +16,7 @@
     href: ../accounts/change-azure-active-directory-vsts-account.md
 - name: Concepts
   items:
-  - name: Set up billing
+  - name: Billing and Microsoft Azure
     href: billing-concepts.md
   - name: Use MSDN subscription with organizational account
     href: link-msdn-subscription-concept.md
@@ -38,18 +38,6 @@
     href: buy-load-testing-vs.md
   - name: Buy basic access to TFS Test hub
     href: buy-access-tfs-test-hub.md
-  - name: Manage extensions
-    items:
-    - name: Change number of paid extension users
-      href: change-number-paid-extension-users.md
-    - name: Request permission for an extension
-      href: /vsts/marketplace/request-vsts-extension?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
-    - name: Approve requests for VSTS extensions
-      href: /vsts/marketplace/approve-vsts-extensions?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
-    - name: Assign paid extensions access
-      href: /vsts/marketplace/assign-paid-extensions?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
-    - name: Uninstall or disable extensions
-      href: /vsts/marketplace/uninstall-disable-vsts-extensions?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
   - name: Buy HockeyApp
     href: get-hockeyapp.md
   - name: Buy Xamarin University

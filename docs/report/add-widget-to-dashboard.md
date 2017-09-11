@@ -1,5 +1,5 @@
 ---
-title: Add a widget to a dashboard 
+title: Add a widget to a team dashboard in VSTS or TFS
 description: Choose and configure widgets that you add to a team dashboard  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting

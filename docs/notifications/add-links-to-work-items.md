@@ -1,5 +1,5 @@
 ---
-title: Link to work items | VSTS & TFS
+title: Quickly link to work items in discussions & pull request in VSTS & TFS
 description: Link to work items in discussions and pull requests 
 ms.prod: vs-devops-alm
 ms.technology: collaborate
@@ -12,6 +12,7 @@ ms.date: 08/11/2017
 
 
 # Link work items using the #ID control
+
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
 
 <a id="mention-wit-id">  </a>

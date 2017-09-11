@@ -1,5 +1,5 @@
 ---
-title: Add markdown to a dashboard   
+title: Add markdown content to a team dashboard in VSTS or TFS  
 description: Add and configure the Markdown widget you add to a team dashboard  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting

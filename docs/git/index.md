@@ -1,5 +1,5 @@
 ---
-title: Git index to content | VSTS & TFS    
+title: Git index to content for VSTS & TFS    
 description: Guide to getting started with Git documentation  
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 

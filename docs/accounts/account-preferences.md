@@ -1,5 +1,5 @@
 ---
-title: Account preferences | VSTS & TFS
+title: View and change account preferences in VSTS & TFS
 description: Change picture, set preferred email, or other account preferences from your account profile in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) 
 ms.technology: vsts-sub-accounts
 ms.service: vsts-admin

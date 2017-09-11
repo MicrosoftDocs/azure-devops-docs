@@ -1,5 +1,5 @@
 ---
-title: Split columns | VSTS & TFS
+title: Split columns on your Kanban board for VSTS & TFS
 description: Implement Kanban pull model by dividing each column into Doing and Done when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

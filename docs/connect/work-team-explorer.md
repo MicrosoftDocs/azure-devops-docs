@@ -1,5 +1,5 @@
 ---
-title: Work in Team Explorer 
+title: Navigate within the Visual Studio Team Explorer pane
 description: Download TFS clients, navigate in Team Explorer for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 keywords: Download TFS clients 
 ms.technology: vs-devops-overview
@@ -10,7 +10,7 @@ ms.author: kaelli
 ms.date: 09/07/2017
 ---
 
-# Work in Team Explorer
+# Navigate in Team Explorer
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

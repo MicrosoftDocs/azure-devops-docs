@@ -1,5 +1,5 @@
 ---
-title: Access levels | TFS 
+title: Understand what access levels are supported in VSTS & TFS 
 description: Understand how access levels are used to support stakeholder, basic, advanced, or VS Enterprise  
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

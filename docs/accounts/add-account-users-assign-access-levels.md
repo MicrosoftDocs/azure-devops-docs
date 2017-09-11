@@ -1,5 +1,5 @@
 ---
-title: Manage users and access | Visual Studio Team Services
+title: Add user accounts and assign access level in VSTS
 description: Add users and assign access levels in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts

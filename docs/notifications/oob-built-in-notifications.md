@@ -1,5 +1,5 @@
 ---
-title: Default notifications
+title: Default and supported notifications in VSTS & TFS
 description: Reference of out of the box or default notifications set in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: collaborate

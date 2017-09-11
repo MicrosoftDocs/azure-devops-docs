@@ -1,6 +1,6 @@
 ---
 title: Restrict access in VSTS and TFS
-description: Restrict access in VSTS and TFS
+description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions VSTS and TFS
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts

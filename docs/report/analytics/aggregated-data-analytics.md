@@ -1,5 +1,5 @@
 ---
-title: Aggregate data | VSTS  
+title: How to aggregate data using the OData Analytics Service for VSTS  
 description: How to aggregate data with the Analytics Service
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting

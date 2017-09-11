@@ -55,16 +55,17 @@ reportable="Dimension | Detail | Measure" formula="avg" >
   
 <a name="CHILDElements"></a>   
 ##  FIELD child elements  
- Use child elements to set various restrictions on what data can be entered into a field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. The following table provides the syntax structure for each child element.  
+Use child elements to set various restrictions on what data can be entered into a field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. The following table provides the syntax structure for each child element.  
   
- To learn how to use these elements, see [Apply a field rule](apply-rule-work-item-field.md).  Restrictions exist on applying most rules to system fields. All child elements are optional.  
+To learn how to use these elements, see [Apply a field rule](apply-rule-work-item-field.md).  Restrictions exist on applying most rules to system fields. All child elements are optional.  
   
 <table Responsive="true" summary="table">
-<tr Responsive="true"><th scope="col"><p>Element</p></th><th scope="col"><p>Description and syntax</p></th></tr>
+<tr Responsive="true"><th scope="col"><p>Element</p></th><th scope="col"><p>Description and syntax</p></th>
+</tr>
 <tbody valign="top">
 <tr>
-<td><p><strong>ALLOWEDVALUES</strong></p></td><td"><p>Defines a list of values that users can specify in a field list on work item forms and in the query editor. Users must specify one of the values that you list.</p>
-
+<td><p><strong>ALLOWEDVALUES</strong></p></td>
+<td><p>Defines a list of values that users can specify in a field list on work item forms and in the query editor. Users must specify one of the values that you list.</p>
 <pre><code>&lt;ALLOWEDVALUES for="userGroupName" not="userGroupName" 
 expanditems="true | false" filteritems="excludegroups"&gt;
    &lt;GLOBALLIST name="globalListName"&gt;
@@ -73,8 +74,10 @@ expanditems="true | false" filteritems="excludegroups"&gt;
    &lt;/GLOBALLIST&gt;
 &lt;/ALLOWEDVALUES&gt;
 </code></pre>
-
-<p>For more information, see [Define pick lists](define-pick-lists.md) .</p></td></tr><tr><td data-th="Element"><p><strong>ALLOWEXISTINGVALUE</strong></p></td><td data-th="Description and syntax"><p>Specifies that a field can retain an existing value, even if it is no longer in a pick list. All new field values must be in the list.</p>
+<p>For more information, see [Define pick lists](define-pick-lists.md) .</p>
+</td>
+</tr>
+<tr><td data-th="Element"><p><strong>ALLOWEXISTINGVALUE</strong></p></td><td data-th="Description and syntax"><p>Specifies that a field can retain an existing value, even if it is no longer in a pick list. All new field values must be in the list.</p>
 
 <pre><code>&lt;ALLOWEXISTINGVALUE /&gt;</code></pre>
 

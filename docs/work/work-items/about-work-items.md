@@ -1,6 +1,6 @@
 ---
-title: About work items | VSTS & TFS
-description: Use the web portal to plan and track work  
+title: How work items are used to plan and track work in VSTS & TFS
+description: Use work items to plan, track, and collaborate with others when developing software apps 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid:  

@@ -23,23 +23,17 @@ Use **TFSFieldMapping** to upload and download the Microsoft Project mapping fil
  You can specify which work tracking fields map to Project fields. You can also control publishing behavior through the **PublishOnly** attribute, and designate special fields such as the context field. For the complete XML syntax of the mapping file, see [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md). This file is the same file that was defined in the process template that was used to create the team project. See [Map Microsoft Project fields](map-microsoft-project-fields-to-tf-fields.md)  
   
 The **TFSFieldMapping** command-line tool only works when run against an on-premises TFS. To run the tool, open a Command Prompt window where Visual Studio is installed. The **TFSFieldMapping** command installs with any version of Visual Studio. You can access this tool by installing the free version of [Visual Studio Community](https://www.visualstudio.com/downloads/download-visual-studio-vs). 
-
-On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles%**.   
-  
-**For TFS 2017**: 
-```  
-cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\15.0 
-```  
  
-**For TFS 2015**: 
-```  
-cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\14.0  
-```  
+|Version | Change directory |
+|--------|-----------|
+|TFS 2018|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\16.0 ` |
+|TFS 2017|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\15.0 `  |
+|TFS 2015|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\14.0 ` |
+|TFS 2013|`cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\12.0 `  |
+  
 
-**For TFS 2013**: 
-```  
-cd %programfiles(x86)%\Common Files\microsoft shared\Team Foundation Server\12.0  
-```  
+On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programfiles%**.  
+
   
 > [!NOTE]  
 >  Even if you are logged on with administrative permissions, you must open an elevated Command Prompt to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt, choose **Start**, open the context menu for **Command Prompt**, and then choose **Run as Administrator**. For more information, see the [User Account Control](http://technet.microsoft.com/library/cc772207.aspx).  

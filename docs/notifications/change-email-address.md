@@ -1,5 +1,5 @@
 ---
-title: Change email address
+title: Change your email address for notifications in VSTS or TFS
 description: Change the email address used to receive alerts or email  notifications managed in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: collaborate
@@ -14,7 +14,7 @@ ms.date: 08/31/2017
 
 # Change your preferred email address 
 
-**VSTS | TFS 2018 | TFS 2017.1**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 Notifications are sent by default to the preferred email address for your account profile. This is typically the email address you signed into Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) with. You can change this address from your account preferences profile page. 
 
