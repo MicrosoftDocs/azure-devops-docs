@@ -14,7 +14,7 @@ ms.date: 09/01/2017
 [!INCLUDE [](../_shared/availability-nuget.md)]
 
 > [!NOTE]
-> This page covers interactive scenarios. In Team Build, use the NuGet step to [restore](/vsts/build-release/packages/nuget-restore.md) and [publish](/vsts/build-release/packages/nuget-pack-publish.md) packages. 
+> This page covers interactive scenarios. In Team Build, use the NuGet step to [restore](/vsts/build-release/packages/nuget-restore) and [publish](/vsts/build-release/packages/nuget-pack-publish) packages. 
 
 [!INCLUDE [nuget-3x](../_shared/nuget-3x.md)]
 

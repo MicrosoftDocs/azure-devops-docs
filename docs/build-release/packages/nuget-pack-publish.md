@@ -17,7 +17,7 @@ ms.date: 09/01/2017
 This walkthrough will cover packing and publishing .NET Framework NuGet packages from Package Management feeds. It assumes that you've already:
 
 - [Created a build](/vsts/build-release/) for a .NET Framework solution that produces a set of DLLs and/or other content you wish to package and publish
-- [Added the correct build service identity](/vsts/package/feeds/common-identities.md) to your feed
+- [Added the correct build service identity](/vsts/package/feeds/common-identities) to your feed
 
 ## Creating a NuGet package
 
@@ -51,7 +51,7 @@ outlined in the [NuGet docs](http://docs.nuget.org/Create/Creating-and-Publishin
 
 If you choose to use the build number to version your package, you'll need to increment 
 the package version for continuous integration builds. This is because specific versions 
-of packages in feeds are [immutable](/vsts/package/feeds/immutability.md) and so cannot be updated or replaced.
+of packages in feeds are [immutable](/vsts/package/feeds/immutability) and so cannot be updated or replaced.
 
 To use the build number, check the **Use build number to version package** box and follow the line's instructions (hover over the blue `i` icon) to set the build version format string. You must set the build version format string to have at least three parts separated by periods to avoid an error in NuGet packaging. The default build version format string is `$(date:yyyyMMdd)$(rev:.r)`, so a simple change is to add a zero at the end and a period between the date and build counter: `$(date:yyyyMMdd).$(rev:.r).0`.
 
