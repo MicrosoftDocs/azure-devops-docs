@@ -2,7 +2,7 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Administration
+  - name: Admin
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=admin
     items:

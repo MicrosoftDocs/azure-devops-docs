@@ -12,8 +12,7 @@ ms.date: 04/12/2017
 
 # Define the project portal plug-in for a process template
 
-[!INCLUDE [temp](../../_shared/dev15-version-header-process-template.md)]
-
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 When you create a team project, the project portal plug-in creates a SharePoint site and uploads several files contained within the process template. These files will appear under the specifies the folder structure and set of reports that will appear under the **Documents** node in Team Explorer. 
 

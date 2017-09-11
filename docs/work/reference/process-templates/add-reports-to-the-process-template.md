@@ -6,13 +6,13 @@ ms.technology: vs-devops-wit
 ms.assetid: f7efa9a7-5de0-4bf2-9a9d-c53234b0513b
 ms.author: kaelli
 ms.manager: douge
-ms.date: 04/12/2017
+ms.date: 09/08/2017
 ---
 
 
 # Add reports to the process template
 
-[!INCLUDE [temp](../../_shared/dev15-version-header-process-template.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 
 When you create a team project, the Reporting plug-in creates a Report site and specifies the folder structure and set of reports that will appear under the ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports** node in Team Explorer. 
@@ -186,7 +186,7 @@ The following table describes the elements that you use to specify a report to u
  
 <tr>
 <td >**folder**</td>
-<td>Required child element of **folders**. Defines the name of a folder to create under the **Reports** node for a team project.<br />`< />`
+<td>Required child element of **folders**. Defines the name of a folder to create under the **Reports** node for a team project.<br/>
 <pre><code>&lt;folder path="FolderName" /&gt;
 </code></pre>
 </td>

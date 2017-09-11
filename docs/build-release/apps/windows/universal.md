@@ -14,13 +14,13 @@ ms.topic: get-started-article
 
 **VSTS | TFS 2017 Update 2**
 
-Universal Windows Platform (UWP) is a common app platform available on every device that runs Windows 10. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your UWP app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process.
+Universal Windows Platform (UWP) is a common app platform available on every device that runs Windows 10. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your UWP app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
 
 ## Prerequisites
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-[!INCLUDE [include](../../_shared/ci-cd-prerequisites-tfs.md)]
+* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../actions/agents/v2-windows.md) for your team project, and that you have a version of Visual Studio matching your development machine installed on the agent machine.
 
 ## Get sample app code
 
@@ -37,7 +37,7 @@ https://github.com/Microsoft/UWPQuickStart
 # [GitHub repo](#tab/github)
 
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
- 
+
 ---
 
 ## Set up continuous integration
@@ -48,7 +48,7 @@ https://github.com/Microsoft/UWPQuickStart
 
 1. Create a new build definition.
 
- # [VSTS or TFS repo](#tab/vsts) 
+ # [VSTS or TFS repo](#tab/vsts)
 
  Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
@@ -68,35 +68,24 @@ https://github.com/Microsoft/UWPQuickStart
 
 1. For the **Default agent queue**:
 
- * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
+ * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 
 1. Click **Get sources** and then:
 
- # [VSTS or TFS repo](#tab/vsts) 
+ # [VSTS or TFS repo](#tab/vsts)
 
  Observe that the new build definition is automatically linked to your repository.
 
  # [GitHub repo](#tab/github)
 
- Select your version control repository. You'll need to authorize access to your repo. 
+ Select your version control repository. You'll need to authorize access to your repo.
 
  > [!TIP]
  > To learn more about GitHub CI builds, see [Define CI build process for your Git repo](../../actions/ci-build-git.md).
 
  ---
-
-1. Select the **Visual Studio Build** task from the tasks. On the right side, you see the parameters for the task. _Append_ the following additional parameter to the MSBuild Arguments:<br/>
-
- `/p:AppxPackageSigningEnabled=false`
-
- > Why do I need these arguments to MSBuild?<br/>
- > * /p:AppxBundlePlatforms="$(BuildPlatform)": The template is setup with BuildPlatform="x86|x64|ARM" so the bundle will include all three platforms. All three platform should be included when creating an appxupload file.
- > * /p:AppxPackageDir="$(Build.BinariesDirectory)\AppxPackages\\": Location where the bundle directories are created.
- > * /p:AppxBundle=Always: Always produce a bundle.
- > * /p:UapAppxPackageBuildMode=StoreUpload: Produces an appxupload file.
- > * /p:AppxPackageSigningEnabled=false: Do not sign the packages. In a real production set up, you need to perform additional steps to sign the packages.
 
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 

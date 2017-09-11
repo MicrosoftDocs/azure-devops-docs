@@ -10,5 +10,4 @@
 
  You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you check in code.
 
-1. For the **Default agent queue**, select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
-
+1. For the **Default agent queue**, select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.

@@ -8,7 +8,7 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/29/2017
+ms.date: 09/08/2017
 ---
 
 #  Apply changes with rebase
@@ -55,8 +55,6 @@ A suggested approach is to allow rebasing local changes that you have made but h
 with others. This avoids trouble with rewriting history while still letting you easily catch up with changes as you develop your code locally.
 
 # [Visual Studio](#tab/visual-studio)
-
-Visual Studio 2015 & 2017
 
 In Team Explorer, go to the **Branches** view. Click  **Rebase**. You'll see a prompt to rebase the changes from your current branch, and then a drop-down to specify which branch
 the changes in the current branch should be replayed on top of. If there is a conflict, resolve it just like you resolve [merge conflicts](merging.md) in Visual Studio.

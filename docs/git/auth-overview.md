@@ -18,7 +18,7 @@ Choose a method to securely login and access the code in your Team Services Git 
 Use these credentials with Git on the command line or from any Git client that supports HTTPS or SSH authentication.
 Limit the scope of access and revoke these credentials from the web when they are no longer needed.
 
-> Using Visual Studio? Team Explorer handles authentication with Team Services repos for you. 
+> Using Visual Studio? Team Explorer handles authentication with VSTS repos for you. 
 
 ## Authentication comparison
 

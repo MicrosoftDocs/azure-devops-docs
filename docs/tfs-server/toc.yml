@@ -196,15 +196,15 @@
       - name: Migrate data from TFS to VSTS
         href: ../migrate-to-vsts-from-tfs.md
       - name: Migration overview
-        href: ./migration/migration-overview.md
+        href: ../articles/migration-overview.md
       - name: Migration import
-        href: ./migration/migration-import.md
+        href: ../articles/migration-import.md
       - name: Process templates
-        href: ./migration/migration-processtemplates.md
+        href: ../articles/migration-processtemplates.md
       - name: Post import
-        href: ./migration/migration-post-import.md
+        href: ../articles/migration-post-import.md
       - name: Advanced migration topics
-        href: ./migration/migration-advanced-topics.md
+        href: ../articles/migration-advanced-topics.md
   - name: Configure Lab Management for SCVMM environments
     href: ./admin/config-lab-scvmm-envs.md
   - name: Set up secure sockets layer
@@ -220,7 +220,7 @@
 - name: Troubleshooting  
   items:
   - name: Troubleshooting migration 
-    href: ./migration/migration-troubleshooting.md
+    href: ../articles/migration-troubleshooting.md
 - name: Reference
   items:
   - name: Requirements

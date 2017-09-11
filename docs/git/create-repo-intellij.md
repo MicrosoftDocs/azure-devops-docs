@@ -8,7 +8,7 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/30/2017
+ms.date: 09/08/2017
 ---
 
 # Visual Studio Team Services Plugin for IntelliJ IDEA and Android Studio
@@ -21,7 +21,7 @@ You can also use this plugin to import projects into VSTS or create pull request
 
 In this guide, we show you how to create a VSTS Git repo using the VSTS web portal, add some sample code, and then clone the repo and create pull requests all from within IntelliJ IDEA.
 
-### Prerequisites
+## Prerequisites
 To complete the steps in this guide you need:
 
 * A VSTS account. If you don’t have a VSTS account, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.

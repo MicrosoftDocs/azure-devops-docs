@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-  - name: Billing
+  - name: Billing overview
     href: overview.md
 - name: Quickstarts
   items:
@@ -10,8 +10,6 @@
     href: buy-basic-access-add-users.md
   - name: Try extensions for free
     href: try-additional-features-vs.md
-  - name: Install an extension
-    href: /vsts/marketplace/install-vsts-extension?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
 - name: Tutorials
   items:
   - name: Change Azure AD tenant
@@ -22,8 +20,6 @@
     href: billing-concepts.md
   - name: Use MSDN subscription with organizational account
     href: link-msdn-subscription-concept.md
-  - name: Buy build pipelines
-    href: buy-more-build-vs.md
 - name: How-to Guides
   items:
   - name: Set up billing
@@ -54,9 +50,9 @@
       href: /vsts/marketplace/assign-paid-extensions?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
     - name: Uninstall or disable extensions
       href: /vsts/marketplace/uninstall-disable-vsts-extensions?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
-  - name: How to buy HockeyApp
+  - name: Buy HockeyApp
     href: get-hockeyapp.md
-  - name: How to buy Xamarin University
+  - name: Buy Xamarin University
     href: xamarin-univ.md
   - name: Manage Visual Studio subscriptions
     items:
@@ -84,9 +80,13 @@
   items:
   - name: Permissions and access for VSTS
     href: ../security/permissions.md
-  - name: Extensibility overview
-    href: ../extend/index.md
 - name: Resources
   items:
-  - name: Integrate with other services
+  - name: Account Management
+    href: ../accounts/index.md
+  - name: "Security & Identity"
+    href: ../security/index.md
+  - name: Manage Extensions
+    href: ../marketplace/index.md
+  - name: Service hooks
     href: ../service-hooks/index.md

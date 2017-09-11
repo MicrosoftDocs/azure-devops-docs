@@ -60,7 +60,7 @@
     href: /vsts/notifications/manage-personal-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Set your preferences
     href: /vsts/accounts/account-preferences?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: Connect to a team project
+  - name: Sign-in to the web or a client
     href:  /vsts/connect/connect-team-projects?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
 - name: Troubleshooting 
   items:

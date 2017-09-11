@@ -13,7 +13,7 @@ ms.date: 08/24/2017
 
 # Permissions and groups in VSTS and TFS
 
-**VSTS** | **TFS 2017** | **TFS 2015** | **TFS 2013**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 This topic provides descriptions for each built-in group and permission. To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 

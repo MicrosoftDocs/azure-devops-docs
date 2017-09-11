@@ -6,12 +6,13 @@ ms.technology: vs-devops-wit
 ms.assetid: 93d86d59-dd49-43de-9bab-f4a9e17071a1
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/24/2017
+ms.date: 09/08/2017
 ---
+
 
 # Define the initial configuration of Team Foundation Build
 
-[!INCLUDE [temp](../../_shared/dev15-version-header-process-template.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You can customize a team project's initial build permissions that are used by Team Foundation Build. The build.xml plug-in file specifies the security permissions for build activities of all team projects that are created with the same process template. The following template files are uploaded to the team project database:  
   
@@ -33,7 +34,8 @@ The names of the file, the folder, and the plug-in for the default process templ
   
  The following code represents the default build.xml file that is defined for the TFS process templates:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <?xml version="1.0" encoding="utf-8"?>  
 <tasks>  
   <task id="BuildTask" name="Add Build Permissions" plugin="Microsoft.ProjectCreationWizard.Build" completionMessage="Build tasks completed.">  
@@ -43,8 +45,7 @@ The names of the file, the folder, and the plug-in for the default process templ
       <Permission allow="ViewBuilds, ViewBuildDefinition" identity="[$$PROJECTNAME$$]\Readers" />  
       <Permission allow="EditBuildQuality, ViewBuilds, QueueBuilds, ViewBuildDefinition" identity="[$$PROJECTNAME$$]\Contributors" />  
       <Permission allow="DeleteBuilds, DestroyBuilds, EditBuildQuality, ManageBuildQualities, RetainIndefinitely, ViewBuilds, ManageBuildQueue, QueueBuilds, StopBuilds, DeleteBuildDefinition, EditBuildDefinition, ViewBuildDefinition, AdministerBuildPermissions" identity="[$$PROJECTNAME$$]\Build Administrators" />  
-      <Permission allow="DeleteBuilds, DestroyBuilds, EditBuildQuality, ManageBuildQualities, RetainIndefinitely, ViewBuilds, ManageBuildQueue, QueueBuilds, StopBuilds, DeleteBuildDefinition, EditBuildDefinition, ViewBuildDefinition, AdministerBuildPermissions" identity="[$$PROJECTNAME$$]\$$PROJECTADMINGROUP$$" />  
-  
+      <Permission allow="DeleteBuilds, DestroyBuilds, EditBuildQuality, ManageBuildQualities, RetainIndefinitely, ViewBuilds, ManageBuildQueue, QueueBuilds, StopBuilds, DeleteBuildDefinition, EditBuildDefinition, ViewBuildDefinition, AdministerBuildPermissions" identity="[$$PROJECTNAME$$]\$$PROJECTADMINGROUP$$" />   
       <!-- Collection-level groups -->  
       <Permission allow="EditBuildQuality, ManageBuildQueue, OverrideBuildCheckInValidation, QueueBuilds, UpdateBuildInformation, ViewBuildDefinition, ViewBuilds" identity="$$PROJECTCOLLECTIONBUILDSERVICESGROUP$$" />  
       <Permission allow="ViewBuildDefinition, EditBuildDefinition, DeleteBuildDefinition, QueueBuilds, ManageBuildQueue, StopBuilds, ViewBuilds, EditBuildQuality, RetainIndefinitely, DeleteBuilds, ManageBuildQualities, DestroyBuilds, AdministerBuildPermissions" identity="$$PROJECTCOLLECTIONBUILDADMINSGROUP$$" />  

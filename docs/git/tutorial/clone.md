@@ -56,15 +56,9 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 
 # [Visual Studio](#tab/visual-studio)
 
-* [Prerequisites](#prerequisites)
 * [Clone from Visual Studio Team Services / Team Foundation Server](#clone-from-visual-studio-team-services--team-foundation-server)
 * [Clone from another Git provider](#clone-from-another-git-provider)
 * [Open a solution in Visual Studio from a cloned repo](#open-a-solution-in-visual-studio-from-a-cloned-repo)
-
-### Prerequisites
-
-* VSTS or TFS 2015 & 2017
-* Visual Studio 2015 or Visual Studio 2017
 
 ### Clone from Visual Studio Team Services / Team Foundation Server
 

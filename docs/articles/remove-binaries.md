@@ -33,9 +33,9 @@ Imagine that you commit a large file, such as a video, to your git server. In a 
 > [!IMPORTANT]
 > The following steps will remove the video from your branch history,
 > but the file remains in your repo history when you clone your repo from Team Services. Removing the files from your branch history prevents the files from being updated, which will
-> create another version of the large file in your repo. Learn more about [managing large files in Git](https://www.visualstudio.com/en-us/docs/git/manage-large-files) and 
-> see this [blog post](https://blogs.msdn.microsoft.com/congyiw/2015/12/14/why-does-cloning-from-vsts-return-old-unreferenced-objects/) for a detailed explination and workaround for this behavior 
-> when using Team Services Git repos.
+> create another version of the large file in your repo. Learn more about [managing large files in Git](../git/manage-large-files.md) and 
+> see this [blog post](https://blogs.msdn.microsoft.com/congyiw/2015/12/14/why-does-cloning-from-vsts-return-old-unreferenced-objects/) for a detailed explanation and workaround for this behavior 
+> when using VSTS Git repos.
 
 To fix this, you have to start at the source, which, in this case, is the server repository. Ask the team to stop pushing to the repository, but be aware that if additional pushes happen during this process, you will have to account for them, too, so as not to lose any data.
 
@@ -44,7 +44,7 @@ If no one else on the team has made any changes to the repository - usually thro
 
 __Please note: You may need to clone or fix your local repo before beginning this work.  This could result in lost work or changes, so proceed with caution.__
 
-By default, you likely only have the ability to change their local project files and repository and to push your changes to the server, so you do not have the ability to make other changes, such as deletions or rebasing, at the server level. Therefore, you will need to either acquire project Force push (preferred) or admin permissions from your administrator or find someone who has them and is willing to help.  For more information on git permissions, go [here](https://msdn.microsoft.com/en-us/library/ms252587.aspx#Git).
+By default, you likely only have the ability to change their local project files and repository and to push your changes to the server, so you do not have the ability to make other changes, such as deletions or rebasing, at the server level. Therefore, you will need to either acquire project Force push (preferred) or admin permissions from your administrator or find someone who has them and is willing to help.  For more information on git permissions, go [here](../security/set-git-tfvc-repository-permissions.md).
 
 > ![](./_img/remove-binaries/RemoveBinaries-force-push-permissions.png)
 

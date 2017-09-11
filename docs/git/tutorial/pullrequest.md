@@ -32,22 +32,22 @@ In this tutorial you learn how to:
 
 ## Create a pull request
 
-To create a pull request in Team Services:
+To create a pull request in VSTS:
 
 0. [Push](pushing.md) your local branch.
 0. Create a pull request for the branch in VSTS.   
-![Creating a pull request in VSTS](_img/createpullrequest.gif)   
 
-0. You can also create a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Team Project](../../connect/connect-team-projects.md) and select **New Pull Request** to open a pull request for your
-current branch:   
-![Add a Pull Request from Visual Studio](_img/vs_pull_requests.png)   
+  ![Creating a pull request in VSTS](_img/createpullrequest.gif)   
 
-0. Create the pull request. You should give a clear title for the pull request that describes the changes in the branch. In the description field give a clear explanation of 
-how the changes are implemented along with any resources that might help reviewers understand the changes. 
-You can include Team Services work items and hyperlinks to allow others to have as much context as possible when reviewing your changes.
+0. You can also create a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Team Project](../../connect/connect-team-projects.md) and select **New Pull Request** to open a pull request for your current branch:   
+
+  ![Add a Pull Request from Visual Studio](_img/vs_pull_requests.png)   
+
+0. Create the pull request. You should give a clear title for the pull request that describes the changes in the branch. In the description field give a clear explanation of how the changes are implemented along with any resources that might help reviewers understand the changes. You can include Team Services work items and hyperlinks to allow others to have as much context as possible when reviewing your changes.
+
 0. Add any team member who you would like to review the changes. 
 
-![Adding detail to a pull request](_img/pull-request-detail.png)
+  ![Adding detail to a pull request](_img/pull-request-detail.png)
 
 ### Who reviews the pull request?
 

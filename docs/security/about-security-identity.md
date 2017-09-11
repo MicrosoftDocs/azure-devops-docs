@@ -13,25 +13,12 @@ ms.topic: get-started-article
 
 # About security and identity  
 
-**VSTS | TFS 2017 | TFS 2015 | TFS 2013**
-
-<!--- TO BE COMPLETED  
-
-Answers these questions:  
-- What elements are in place to maintain security  
-- How are user accounts managed  
-- How does authentication work? 
-- How are permissions managed? Permission levels - collection, project, group, server   
-- What are access levels? How are they managed? 
-- Built-in/default groups 
-- Other - ssh  
-- Active Directory usage  
- --> 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Visual Studio Team Services (VSTS), our cloud-hosted application, is based on the capabilities of Team Foundation Server, with additional cloud services. Both support development projects, from planning through deployment. 
 VSTS uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. 
 
-This topic introduces the main security concepts employed by VSTS and TFS. To learn more about the steps Microsoft takes to keep your VSTS projects safe, available, secure, and private, see this white paper, [Visual Studio Team Services (VSTS) Data Protection Overview](team-services-security-whitepaper.md).    
+This topic introduces the main security concepts employed by VSTS and TFS. To learn more about the steps Microsoft takes to keep your VSTS projects safe, available, secure, and private, see this white paper, [Visual Studio Team Services (VSTS) Data Protection Overview](../articles/team-services-security-whitepaper.md).    
 
 The main security concepts to understand are
 

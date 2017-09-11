@@ -121,6 +121,8 @@
       href: create-branch.md
     - name: Delete a branch
       href: delete-branch.md
+    - name: Restore a deleted branch
+      href: restore-deleted-branch.md
     - name: Lock a branch
       href: lock-branches.md
     - name: Branch policies

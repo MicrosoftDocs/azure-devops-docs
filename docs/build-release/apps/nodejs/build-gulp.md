@@ -14,13 +14,13 @@ ms.date: 08/28/2017
 
 **VSTS | TFS 2017 Update 2**
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your Node.js web app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process.
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your Node.js web app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
 
 ## Prerequisites
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-[!INCLUDE [include](../../_shared/ci-cd-prerequisites-tfs.md)]
+* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account. Make sure that you have [configured a build agent](../../actions/agents/v2-windows.md) for your team project with npm, node, gulp, and other necessary software installed.
 
 ## Get sample app code
 
@@ -37,7 +37,7 @@ https://github.com/adventworks/nodejs-sample
 # [GitHub repo](#tab/github)
 
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
- 
+
 ---
 
 The sample app in this repository is a simple server that echoes "Hello world". Tests for the applications are written using mocha framework. A gulp file is used to run the tests and to convert the published results into junit format as that is a supported rendering format by VSTS and TFS.
@@ -50,7 +50,7 @@ The sample app in this repository is a simple server that echoes "Hello world". 
 
 1. Create a new build definition.
 
- # [VSTS or TFS repo](#tab/vsts) 
+ # [VSTS or TFS repo](#tab/vsts)
 
  Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
@@ -72,19 +72,19 @@ The sample app in this repository is a simple server that echoes "Hello world". 
 
 1. For the **Default agent queue**:
 
- * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
+ * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 
 1. Click **Get sources** and then:
 
- # [VSTS or TFS repo](#tab/vsts) 
+ # [VSTS or TFS repo](#tab/vsts)
 
  Observe that the new build definition is automatically linked to your repository.
 
  # [GitHub repo](#tab/github)
 
- Select your version control repository. You'll need to authorize access to your repo. 
+ Select your version control repository. You'll need to authorize access to your repo.
 
  > [!TIP]
  > To learn more about GitHub CI builds, see [Define CI build process for your Git repo](../../actions/ci-build-git.md).

@@ -49,7 +49,7 @@ A:	Check the extension pane in your Users hub.
 ####Q:   How do I cancel my trial?
 
 A: To stop your trial, just 
-[uninstall the extension](https://www.visualstudio.com/docs/marketplace/get-vsts-extensions#uninstall-disable-extension) 
+[uninstall the extension](/vsts/marketplace/get-vsts-extensions#uninstall-disable-extension) 
 from your VSTS account.
 
 <a name="feature-access"></a>

@@ -12,7 +12,7 @@ ms.date: 02/24/2017
 
 # Add type definitions for work items to a process template
 
-[!INCLUDE [temp](../../_shared/dev15-version-header-process-template.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 Work item types (WITs) provide the foundation for all tracking, monitoring, and reporting on the development of a product and its features. A WIT defines the data fields, the workflow, and the work item form for an item of work that you will track. Types of work items include bugs, user stories, and tasks. 
 
@@ -36,7 +36,8 @@ Each WIT definition must be specified in its own file in the **WITD** container 
 
 The following example shows the high-level syntax structure that defines a work item type.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <WITD application="work item type editor" version="1.0">  
     <WORKITEMTYPE name="Bug">  
         <DESCRIPTION>Bug work items are used to track defects in the code.</DESCRIPTION>  
@@ -54,13 +55,15 @@ The following example shows the high-level syntax structure that defines a work 
 ##  Specify WIT definition files to upload  
  To upload a WIT definition, you specify the **WORKITEMTYPE** element. The filename attribute is a relative path of the type definition file. For example, the following syntax specifies that the Bug.xml file will be uploaded.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\filename.xml"/>  
 ```  
   
 The following example shows how to specify a task that creates the following WITS: bug, issue, shared steps, task, test case, and user story. Because the definitions for several WITs contain filters for the **TestedBy** link type, the **LinkTypes** task must be completed before the **WITs** task can be completed.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <task id="WITs" name="WorkItemType definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item types created">  
    <dependencies>  
       <dependency taskId="LinkTypes" />  
@@ -90,10 +93,10 @@ The following example shows how to specify a task that creates the following WIT
 > [!NOTE]
 >  By using the **WORKITEMTYPE** (WorkItemTracking) element, you specify a type definition file to upload. By using the **WORKITEMTYPE** (WITD) element, you specify the name of a type to define. For more information, see [All WITD elements](../all-witd-xml-elements-reference.md).  
   
-|Element|Syntax|Description and syntax|  
-|-------------|------------|-----------------|  
+|Element| Description and syntax|  
+|-------------|------------|
 |**WORKITEMTYPE**|Required child element of **WORKITEMTYPES**. Specifies the path and name of the file that contains a type definition to upload.<br /> `<WORKITEMTYPE fileName="WITFilePathName" />`|  
-|**WORKITEMTYPES**|Required child element of the WorkItemTracking plug-in. Contains a collection of **WORKITEMTYPE** elements that each specify a definition file to upload. <br />`<WORKITEMTYPES>`<br />&nbsp;&nbsp;&nbsp;`<WORKITEMTYPE />  . . . `<br />`</WORKITEMTYPES>`  |  
+|**WORKITEMTYPES**|Required child element of the WorkItemTracking plug-in. Contains a collection of **WORKITEMTYPE** elements that each specify a definition file to upload. <br/><code>&lt;WORKITEMTYPES&gt; <br/>&nbsp;&nbsp;&nbsp;&lt;WORKITEMTYPE /&gt;   . . . <br/>&lt;/WORKITEMTYPES&gt; </code>  |  
   
 ## Related notes
 -  [All WITD elements](../all-witd-xml-elements-reference.md)   
@@ -101,3 +104,5 @@ The following example shows how to specify a task that creates the following WIT
 -  [Add or modify a work item type ](../../customize/add-modify-wit.md)   
 -  [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md)   
 -  [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)
+
+

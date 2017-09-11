@@ -23,12 +23,15 @@ Learn how to build your app.
 
 Learn how to deploy your app.
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
-<div class="ico48Case halfStack"><div class="ico48Link"><a href="apps/cd/deploy-webdeploy-webapps.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure web app</span></a></div><div class="ico48Link"><a href="apps/cd/deploy-webdeploy-iis-deploygroups.md"><img width="48" height="48" alt="" src="_img/index/virtualmachine.png"><span>IIS web server</span></a></div></div>
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="apps/cd/azure/aspnet-core-to-azure-webapp.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure Web App</span></a></div><div class="ico48Link"><a href="apps/cd/deploy-webdeploy-iis-deploygroups.md"><img width="48" height="48" alt="" src="_img/index/virtualmachine.png"><span>Windows VM</span></a></div><div class="ico48Link"><a href="apps/cd/deploy-docker-webapp.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Web App for Containers</span></a></div></div>
+
+Learn how to test your app.
+<!-- Converting to icon48 format, this gets cleaner in YAML -->
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="test/getting-started-with-continuous-testing.md?toc=/vsts/build-release/toc.json"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>VS Test</span></a></div></div>
 
 ## Step-by-Step Tutorials  
 
 * [CI builds for Git in VSTS](actions/ci-build-git.md)
-* [CI builds for GitHub](actions/ci-build-github.md)
 * [Set up multi-stage release](actions/define-multistage-release-process.md)
 
 ## Concepts  

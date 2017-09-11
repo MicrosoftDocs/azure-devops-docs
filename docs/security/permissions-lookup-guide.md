@@ -11,7 +11,7 @@ ms.date: 08/14/2017
 
 # Permissions lookup guide
 
-**VSTS | TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Use this index to find how to manage a specific permission. 
   

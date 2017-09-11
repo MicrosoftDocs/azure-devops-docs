@@ -14,17 +14,11 @@ ms.date: 07/12/2017
 
 **VSTS**
 
-Work on apps anytime, anywhere. Use integrated, powerful, cross-platform, enterprise-level Agile tools for DevOps 
-so your team can share code, build often, test early, and ship faster.  You can connect your dev tools to VSTS cloud 
-DevOps and start working. 
-
-Use this index to setup and manage your account and configure key settings to support your teams. 
-
+You can be up and running with a free account within 5 minutes. 
 
 ## 5-Minute Quickstarts  
 
-* [Create your account with VSTS](create-account-msa-or-work-student.md)
-* [Add users to your account](add-account-users-from-user-hub.md)
+* [Create your VSTS account](create-account-msa-or-work-student.md)
 * [Try extensions for free](../billing/try-additional-features-vs.md)
 
 
@@ -32,21 +26,16 @@ Use this index to setup and manage your account and configure key settings to su
 
 * [Change Azure AD tenant](change-azure-active-directory-vsts-account.md)
 
-
-## Concepts 
-
-* [Access with Azure AD](access-with-azure-ad.md)
-* [Access with Azure AD groups](manage-azure-active-directory-groups-vsts.md)
  
- 
+## Reference 
+
+* [Permissions and access](/vsts/security/permissions-access?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)
+
+
 ## Resources 
 
-* [Set up billing](../billing/set-up-billing-for-your-account-vs.md)
-* [Pay for more users](../billing/buy-basic-access-add-users.md)
-* [Permissions and access](../security/permissions-access.md)
-* [Manage users and access](add-account-users-assign-access-levels.md)
-* [Add users to team projects](add-team-members-vs.md)
-* [Manage access levels](../security/change-access-levels.md)
-* [Add Stakeholder users](../security/change-access-levels.md)
-* [Add users to an administrator role](add-administrator-project-collection.md)
-
+* [New User Guide](../user-guide/index.md)  
+* [Billing](../billing/index.md)
+* [Security & Identity](../security/index.md)
+* [Manage Extensions](../marketplace/index.md)
+* [Service Hooks](../service-hooks/index.md)

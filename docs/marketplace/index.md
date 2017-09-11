@@ -10,7 +10,7 @@ ms.author: elbatk
 ms.date: 08/23/2016
 ---
 
-# Visual Studio Marketplace
+# Manage Extensions
 
 Extensions for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) can be installed through the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 

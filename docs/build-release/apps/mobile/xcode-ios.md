@@ -14,7 +14,7 @@ ms.topic: get-started-article
 
 **VSTS | TFS 2017 Update 2**
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your Xcode app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process.
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your Xcode app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ https://github.com/adventworks/xcode-sample
 # [GitHub repo](#tab/github)
 
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
- 
+
 ---
 
 The sample provided here is an iOS app, but the concepts described here essentially translate to other Xcode builds. Results from running tests are published to VSTS using **[xcpretty](https://github.com/supermarin/xcpretty)**. That is why you will need to have xcpretty installed on the OSX machine as this is not part of Xcode itself.
@@ -52,7 +52,7 @@ The sample provided here is an iOS app, but the concepts described here essentia
 
 1. Create a new build definition.
 
- # [VSTS or TFS repo](#tab/vsts) 
+ # [VSTS or TFS repo](#tab/vsts)
 
  Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
@@ -74,13 +74,13 @@ The sample provided here is an iOS app, but the concepts described here essentia
 
 1. Click **Get sources** and then:
 
- # [VSTS or TFS repo](#tab/vsts) 
+ # [VSTS or TFS repo](#tab/vsts)
 
  Observe that the new build definition is automatically linked to your repository.
 
  # [GitHub repo](#tab/github)
 
- Select your version control repository. You'll need to authorize access to your repo. 
+ Select your version control repository. You'll need to authorize access to your repo.
 
  > [!TIP]
  > To learn more about GitHub CI builds, see [Define CI build process for your Git repo](../../actions/ci-build-git.md).

@@ -43,8 +43,6 @@ and new branches that others have pushed but you don't have and downloads them i
 
 # [Visual Studio](#tab/visual-studio)
 
-Visual Studio 2015 &amp; 2017
-
 Visual Studio uses the **Sync** view in Team Explorer to `fetch` changes. 
 Changes downloaded by `fetch` are not applied until you **Pull** or **Sync** the changes.
 
@@ -80,8 +78,6 @@ Git is generally very smart about resolving merge conflicts automatically, but s
 
 # [Visual Studio](#tab/visual-studio)
 
-Visual Studio 2015 &amp; 2017
-
 Team Explorer merges when you do a **Pull** or a **Sync** from the **Changes** view. **Sync** is a combined operation of pulling remote changes and then pushing local ones,
 synchronizing the commits on the local and remote branch.
 
@@ -113,8 +109,6 @@ the merge with a commit.
 Use `pull` to quickly bring your branch up to date with the remote when you aren't worried about reviewing the changes before merging them into your own branch.
 
 # [Visual Studio](#tab/visual-studio)
-
-Visual Studio 2015 &amp; 2017
 
 Open the Team Explorer and open the Sync view. Then click the **Pull** link under **Incoming Commits** to `pull` remote changes and merge them into your local branch. Pulling
 updates files in your open project, so make sure to [commit your changes](commits.md) before pulling.

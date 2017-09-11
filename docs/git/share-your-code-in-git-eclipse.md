@@ -81,8 +81,6 @@ Your project code is now your Team Services Git repo.
 
 ## Troubleshooting
 
-* [What if the Git views for commit and push don't show up?](#what-if-the-git-views-for-commit-and-push-dont-show-up)
-
 ### What if the Git views for commit and push don't show up?
 
 You can [download EGit](http://www.eclipse.org/egit/) to use Git with Eclipse.

@@ -11,7 +11,8 @@ ms.date: 08/23/2017
 ---
 
 #  Improve code quality with branch policies
-#### VSTS | TFS 2015 & TFS 2017
+
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 Branch policies help teams protect their important [branches](tutorial/branches.md) of development. 
 Policies enforce your team's code quality and change management standards.
@@ -102,7 +103,7 @@ updates when the protected branch is updated if the most recent build is no long
 ## Require linked work items
 
 Require associations between pull requests and a work item to ensure that changes to your branch have [work item management tracking](../work/backlogs/connect-work-items-to-git-dev-ops.md).
-Linking work items provides additional context for your changes and ensures that updates go through your [work item tracking process]../docs/work/process/customize-process.md).
+Linking work items provides additional context for your changes and ensures that updates go through your work item tracking process.
 
 ![Require linked work items in your pull requests](_img/branch-policies/work_item_linking.png)
 

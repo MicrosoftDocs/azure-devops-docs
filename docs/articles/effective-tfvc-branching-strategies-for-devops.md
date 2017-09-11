@@ -116,7 +116,7 @@ So, by using a **simple** branching strategy and adopting a **consistent naming 
 #Reference information
 - [Continuous Integration](https://www.visualstudio.com/learn/what-is-continuous-integration/)
 - [Interview with Abel Wang and Steve St Jean](https://channel9.msdn.com/Blogs/DevOps-Interviews/Interview-with-Abel-Wang-and-Steven-St-Jean)
-- [Team Foundation Version Control (TFVC)](https://www.visualstudio.com/en-us/docs/tfvc/overview)
+- [Team Foundation Version Control (TFVC)](../tfvc/overview.md)
 - [What is DevOps - Definition](http://donovanbrown.com/post/what-is-devops)
 - [What is DevOps - Sticker](https://www.stickermule.com/marketplace/9107-devops-donovan-brown)
 

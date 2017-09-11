@@ -1,19 +1,18 @@
 ---
-title: Define the classification plug-in | VSTS & TFS
+title: Define the classification plug-in 
 description: Define areas to organize work items into logical, physical, or functional categories-Team Foundation Server
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: 7c1284c6-9c03-41e9-94c1-923db90957be
 ms.author: kaelli
 ms.manager: douge
-ms.date: 03/16/2017
+ms.date: 09/08/2017
 ---
 
 
 # Define the classification plug-in
 
-
-[!INCLUDE [temp](../../_shared/dev15-version-header-process-template.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 Classifications facilitate tracking, grouping, and reporting on work based on useful categories, such as related product features and project milestones. You define areas to organize work items into logical, physical, or functional categories. You define iterations to group work items into milestones or time cycle categories. For example, a team could organize the product work into a client area, a server area, and an extensibility area. Iterations that you define determine how many times the team will repeat a particular set of major activities, such as plan, develop, and test.  
   
@@ -195,7 +194,7 @@ Required child element of **properties**. Defines project-related data such as t
 </code></pre>
 <p>Where the following definitions apply for each attribute:</p>
 <ul><li>`name`: Required. Defines the name of the property. The only valid names are `MSPROJ` and `Process Template`.</li>
-<li>`value`: Required. For `MSPROJ`, defines the relative path to the field mapping file. For `Process Template`, contains the name of the process that's associated with the process template. This property is added to the classification file when you [import a process to Team Services](../../import-process/import-process.md).</li>
+<li>`value`: Required. For `MSPROJ`, defines the relative path to the field mapping file. For `Process Template`, contains the name of the process that's associated with the process template. This property is added to the classification file when you [import a process to VSTS](../../import-process/import-process.md).</li>
 <li>`isFile`: Optional. Specifies whether the property is defined in a file. If the value is true, the file must exist, or process template validation fails.</li>
 </ul>
 </td>

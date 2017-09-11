@@ -4,56 +4,56 @@ description: Learn how Microsoft protects your Visual Studio Team Services (VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
-ms.date: 2/6/2017
 ms.author: mlearned
-author: jeffbe
+ms.date: 09/08/2017
 ---
+
 
 # Data Protection Overview
 
 **VSTS**
 
-Microsoft Visual Studio Team Services (Team Services) is a cloud-hosted application for
+Microsoft Visual Studio Team Services (VSTS) is a cloud-hosted application for
 your development projects, from planning through deployment. Based on
 the capabilities of Team Foundation Server, with additional cloud
-services, Team Services manages your source code, work items, builds, tests, and
-much more. Team Services uses Microsoft Azure's Platform as a Service
+services, VSTS manages your source code, work items, builds, tests, and
+much more. VSTS uses Microsoft Azure's Platform as a Service
 infrastructure and many of Azure's services, including Azure SQL
 databases, to deliver a reliable, globally available service for your
 development projects. Because important data is at stake, this white
-paper discusses the steps that Microsoft takes to keep your Team Services projects
+paper discusses the steps that Microsoft takes to keep your VSTS projects
 safe, available, secure, and private. In addition, it describes the role
-you play in keeping your Team Services projects safe and secure.
+you play in keeping your VSTS projects safe and secure.
 
 This white paper is part of our effort to illuminate how we manage and
 protect your data and is intended for account administrators and IT
 professionals who manage their project assets on a daily basis. It will
-be most useful to individuals who are already familiar with Team Services and want
+be most useful to individuals who are already familiar with VSTS and want
 to know more about how Microsoft protects the assets that are stored in
-Team Services.
+VSTS.
 
 ## Our commitment
 
-Microsoft is committed to ensuring that your Team Services projects remain safe
-and secure, without exception. When stored in Team Services, your projects benefit
+Microsoft is committed to ensuring that your VSTS projects remain safe
+and secure, without exception. When stored in VSTS, your projects benefit
 from multiple layers of security and governance technologies,
 operational practices, and compliance policies. We enforce data privacy
 and integrity both at rest and in transit.
 
-As we look at the broader landscape of threats facing Team Services customers,
+As we look at the broader landscape of threats facing VSTS customers,
 they boil down to four basic categories: data availability, service
 availability, service security, and data privacy. We will investigate
 each of these categories to explore specific threats and explain what
-Team Services does to address them through both the technology that we use and the
+VSTS does to address them through both the technology that we use and the
 way we put it into practice. However, we will first describe how data is
-stored and how Team Services manages access to your data.
+stored and how VSTS manages access to your data.
 
 Because proper data protection also requires active engagement of
 customer administrators and users, we also discuss steps you should take
 to protect your project assets from unauthorized disclosure and
 tampering. Much of this has to do with being explicit about granting
 permissions to user access points in order to have confidence that only
-the right people are accessing data within your Team Services.
+the right people are accessing data within your VSTS.
 
 Regardless of your approach, you should consider all data potentially
 "at risk" no matter where it is or how it is being used; this is true
@@ -65,28 +65,28 @@ security management policy.
 
 ## Built on Microsoft Azure
 
-![Visual Studio Team Services high-level architecture diagram ](./_img/team-services-security-whitepaper/Figure1_VSOArchitecture.png)
+![VSTS high-level architecture diagram ](./_img/team-services-security-whitepaper/Figure1_VSOArchitecture.png)
 
-Team Services is hosted entirely in Microsoft Azure datacenters and uses many of the 
+VSTS is hosted entirely in Microsoft Azure datacenters and uses many of the 
 core Azure services including Compute, Storage, Networking, SQL Database, 
 Identity and Access Management Services, and Service Bus. This lets us 
-focus on the unique aspects of running Team Services while taking advantage
+focus on the unique aspects of running VSTS while taking advantage
 of the state of the art capabilities, protection, and industry certifications 
 available from the Azure platform.
 
-Team Services uses Azure Storage as the primary repository for service metadata
+VSTS uses Azure Storage as the primary repository for service metadata
 and customer data. Depending on the type of data and the storage and
 retrieval needs, we use Azure Blob (binary large objects) storage and
 Azure SQL data storage. To provide a seamless experience, we work hard
 to abstract these details from the end user. However, to discuss the
-details surrounding Team Services approach to data protection, some background
+details surrounding VSTS approach to data protection, some background
 in these elements is important.
 
 **Azure Blob storage** is generally used to store large chunks of
-unstructured data. All Team Services projects use the Azure Blob storage service.
+unstructured data. All VSTS projects use the Azure Blob storage service.
 This data includes potentially sensitive or private information such as
 the contents of source files and the attachments on work items. For most
-Team Services projects, the majority of storage in use is this type of
+VSTS projects, the majority of storage in use is this type of
 unstructured blob storage. For more information, see documentation on
 [Azure Blob Storage](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-blobs/).
 
@@ -99,15 +99,15 @@ attachments. For more information, see documentation on
 [Azure SQL Database](https://azure.microsoft.com/en-us/documentation/services/sql-database/).
 
 Administrators can manage access to resources by granting or restricting
-permissions on user identities or groups. Team Services uses federated
+permissions on user identities or groups. VSTS uses federated
 authentication of user identities via Azure Active Directory (AAD) and
 Microsoft Account (MSA, formerly LiveID). During authentication, the
 user is routed to the authentication provider (AAD or MSA) where they
 provide their credentials. Once the authentication provider has verified
-the user's credentials, Team Services issues an authentication cookie to the user,
-which allows them to remain authenticated against Team Services. In this way, the
-user's credential information is never shared directly with Team Services. For
-each Team Services resource the user attempts to access, permissions are validated
+the user's credentials, VSTS issues an authentication cookie to the user,
+which allows them to remain authenticated against VSTS. In this way, the
+user's credential information is never shared directly with VSTS. For
+each VSTS resource the user attempts to access, permissions are validated
 based on the user's explicit permissions as well as permissions
 inherited through group membership. Administrators can leverage access
 controls to protect access to account, team project collection, team
@@ -116,9 +116,9 @@ specific assets like version control folders and work item area paths.
 
 ## Data availability
 
-Visual Studio Team Services leverages many of the Microsoft Azure storage
+VSTS leverages many of the Microsoft Azure storage
 features to ensure data availability in the case of hardware failure,
-service disruption, or data center disasters. Additionally, the Team Services team
+service disruption, or data center disasters. Additionally, the VSTS team
 has procedures to protect data from accidental or malicious deletion.
 
 ### Data redundancy
@@ -172,7 +172,7 @@ to ensure our systems and associated process are up to the challenge.
 
 ## Service availability
 
-Ensuring that Team Services is available for you to access your account and
+Ensuring that VSTS is available for you to access your account and
 associated assets is of utmost importance to us.
 
 ### DDoS protections
@@ -183,7 +183,7 @@ helps prevent attacks against our service. It uses standard detection
 and mitigation techniques such as SYN cookies, rate limiting and
 connection limits. The system is designed not only to withstand attacks
 from the outside but also from within Azure. For application-specific
-attacks that are able to penetrate the Azure defense systems, Team Services
+attacks that are able to penetrate the Azure defense systems, VSTS
 establishes application and account level quotas and throttling to
 prevent any overuse of key service resources during an attack or
 accidental misuse of resources.
@@ -202,16 +202,16 @@ incident" process continues as we identify the root cause of the issue
 and track the necessary changes to ensure we prevent similar issues in
 the future.
 
-Team Services live-site management processes are crafted to ensure a deep focus
+VSTS live-site management processes are crafted to ensure a deep focus
 on service health and customer experience. Our processes minimize our
 time to detect, respond to, and mitigate impacting issues. Ownership for
 Live-site is shared across all engineering disciplines, so there are
 continual improvements that evolve out of direct experience. This means
 that monitoring, diagnostics, resiliency, and quality assurance process
-are improved over time. Live-site management in Team Services is broken into three
+are improved over time. Live-site management in VSTS is broken into three
 distinct tracks as shown here:
 
-![Visual Studio Team Services live-site management process](./_img/team-services-security-whitepaper/Figure2_VSOSiteManagementProcess.png)
+![VSTS live-site management process](./_img/team-services-security-whitepaper/Figure2_VSOSiteManagementProcess.png)
 
 The operations team also monitors the availability metrics for
 individual accounts. These metrics provide insights into specific
@@ -226,10 +226,10 @@ your team's success. Because of this, we publish a service level
 agreement (SLA) and provide a financial guarantee to ensure we meet this
 agreement each month. For more specifics on our SLA and financial
 guarantees, please see 
-[Visual Studio Team Services SLAs](https://azure.microsoft.com/en-us/support/legal/sla/visual-studio-team-services/v1_2/).
+[VSTS SLAs](https://azure.microsoft.com/support/legal/sla/visual-studio-team-services/v1_2/).
 
 Of course, sometimes our partner teams or dependencies have incidents
-that affect Team Services. All our partner teams follow similar approaches to
+that affect VSTS. All our partner teams follow similar approaches to
 identifying, resolving and learning from these service outages.
 
 ## Service security
@@ -249,7 +249,7 @@ Microsoft's Security Development Lifecycle (SDL) is at the core of our
 development process and Microsoft's Operational Security Assurance (OSA)
 program guides our cloud operation procedures. The SDL and OSA
 methodologies address security threats throughout the development
-process and operation of Team Services. They specify requirements that
+process and operation of VSTS. They specify requirements that
 include threat modeling during service design, following design and code
 best practices, verifying security with standard tooling and testing,
 limiting access to operational and customer data, and gating rollout of
@@ -258,12 +258,12 @@ new features through a rigid approval process.
 Because the security landscape is continually changing, it is important
 for our team to keep current with the latest in best practices. Towards
 that end, we have annual training requirements for all engineers and
-operations personnel working on Team Services. In addition, we sponsor informal
+operations personnel working on VSTS. In addition, we sponsor informal
 "brownbag" meetings. These meetings are hosted by our own engineers.
 After they've solved an issue, they share what they've learned with the
 rest of the team.
 
-A cloud service is only as secure as the host platform. Team Services uses Azure's
+A cloud service is only as secure as the host platform. VSTS uses Azure's
 Platform as a Service (PaaS) offering for much of our infrastructure.
 PaaS automatically provides regular updates for known security
 vulnerabilities. When we host virtual machines in Azure using their
@@ -273,10 +273,10 @@ patches available from Windows Update. The same update rigor applies for
 our on-premises machines, including those used for deployment,
 monitoring, and reporting.
 
-Our team conducts regular security-focused penetration testing of Team Services.
+Our team conducts regular security-focused penetration testing of VSTS.
 Using the same techniques and mechanisms as real malicious attackers,
 penetration testing tries to exploit the live production services and
-infrastructure of Team Services. The goal is to identify real-world vulnerabilities,
+infrastructure of VSTS. The goal is to identify real-world vulnerabilities,
 configurations errors or other security gaps in a controlled process.
 The team reviews the results to identify other areas of improvement and
 to increase the quality of the preventative systems and training.
@@ -309,7 +309,7 @@ logged and recorded in a secure manner. All secrets are rotated on a
 regular cadence and can be rotated on-demand in the case of a security
 event.
 
-The Team Services operations team uses hardened administrator workstations to
+The VSTS operations team uses hardened administrator workstations to
 manage the service. These machines run a minimal number of applications
 and operate in a logically segmented environment. Operations team
 members must provide specific credentials with two-factor authentication
@@ -321,9 +321,9 @@ other types of attacks, are not permitted in this environment.
 ### Intrusion protection & response
 
 To ensure data is not intercepted or modified while in transit between
-you and Team Services, we encrypt via HTTPS / SSL. In addition, 
+you and VSTS, we encrypt via HTTPS / SSL. In addition, 
 Azure encrypts all connections to Azure Storage and SQL databases to protect
-the integrity of the data. Team Services also enables Transparent Data Encryption 
+the integrity of the data. VSTS also enables Transparent Data Encryption 
 (TDE) on SQL Databases to protect against the threat of malicious activity 
 by performing real-time encryption of the database, 
 associated backups, and transaction log files at rest.
@@ -342,7 +342,7 @@ priority security vulnerability has been identified, we have a clear
 security incident response plan. This plan outlines responsible parties,
 steps required to secure customer data, and how to engage with security
 experts in Microsoft Security Response Center (MSRC), Global Foundation
-Services (GFS), Azure and members of the Team Services leadership team. We will
+Services (GFS), Azure and members of the VSTS leadership team. We will
 also notify any account owners if we believe their data was disclosed or
 corrupted so that they can take appropriate steps to remedy the
 situation.
@@ -366,7 +366,7 @@ legitimate reasons.
 ### Law enforcement access
 
 In some cases, third parties such as law enforcement entities may
-approach us to obtain access to customer data stored within Team Services. 
+approach us to obtain access to customer data stored within VSTS. 
 By policy, we will attempt to redirect the requests to the account owner
 for resolution. When we are compelled by court order to disclose
 customer data to a third party, we will make a reasonable effort to
@@ -375,7 +375,7 @@ from doing so.
 
 Some customers require that their data be stored in a particular
 geographic location to ensure a specific legal jurisdiction for any law
-enforcement activities. At this time, Team Services can host accounts in data
+enforcement activities. At this time, VSTS can host accounts in data
 centers in either the United States or the European Union regions. All
 customer data such as source code, work items, and test results as well
 as the geo-redundant mirrors and offsite backups are maintained within
@@ -384,7 +384,7 @@ the selected region.
 ### Microsoft access
 
 From time to time, Microsoft employees need to obtain access to customer
-data stored within Team Services. As a precaution, all employees who have or may
+data stored within VSTS. As a precaution, all employees who have or may
 ever have access to customer data must pass a background check, which
 verifies previous employment and criminal convictions. In addition, we
 permit access to the production systems only when there's a live site
@@ -393,7 +393,7 @@ monitored.
 
 Since not all data within our system is treated the same, data is
 classified to distinguish between customer data (what you upload to
-Team Services), account data (information used when signing up for or
+VSTS), account data (information used when signing up for or
 administering your account) and Microsoft data (information required for
 or collected through the operation of the service). Based on the
 classification we control usage scenarios, geolocation requirements,
@@ -407,23 +407,23 @@ all customers want to be contacted about these offers, we allow you to
 opt-in and opt-out of marketing email communications. We never use
 customer data to target specific offers for specific users or accounts.
 Instead, we leverage account data and aggregate usage statistics at the
-Team Services account level to determine groups of accounts that should receive
+VSTS account level to determine groups of accounts that should receive
 specific offers.
 
 ## Building confidence
 
 In addition to these protections, we have also taken steps outside of
-the service itself to help you decide to move forward with Team Services. 
+the service itself to help you decide to move forward with VSTS. 
 These include Microsoft's own internal adoption policies, the level of
 transparency that we provide into the state of our service, and our
 progress towards receiving certification of our information security
 management systems. All of these efforts are designed to build your
-confidence in Team Services.
+confidence in VSTS.
 
 ## Internal adoption
 
-Teams across Microsoft have begun adopting Team Services internally. 
-The Team Services team moved into a Team Services account in 2014 and
+Teams across Microsoft have begun adopting VSTS internally. 
+The VSTS team moved into a VSTS account in 2014 and
 uses it extensively. More broadly,
 we have established guidelines to enable the adoption plans for other
 teams. Obviously large teams move more gradually than smaller ones,
@@ -431,7 +431,7 @@ given their investments in existing devops
 systems. For teams able to move quickly, we have established a
 project classification approach. It assesses our risk tolerance, based
 on project characteristics, to determine if the project is appropriate
-for Team Services. For larger teams, the adoption typically occurs 
+for VSTS. For larger teams, the adoption typically occurs 
 in phases with more planning. Additional requirements for internal
 projects include associating the account with the Microsoft.com Azure
 Active Directory to ensure proper user identity lifecycle and password
@@ -447,7 +447,7 @@ your data. In addition, we maintain a
 [blog](https://blogs.msdn.com/b/vsoservice/) that provides real time
 updates whenever a service disruption, planned or unplanned, takes place
 so you can adjust your activities as needed. Furthermore, Brian Harry,
-the corporate vice-president in charge of Team Services, maintains a very active
+the corporate vice-president in charge of VSTS, maintains a very active
 [blog](https://blogs.msdn.com/b/bharry/) addressing, among other things,
 lessons learned by operating the service.
 
@@ -457,7 +457,7 @@ Finally, for some customers, it is important to understand third-party
 evaluation of our data security procedures. Towards that end, we have
 achieved ISO 27001:2013, HIPAA (Health Insurance Portability and Accountability Act)
  BAA (Business Associate Agreeement), EU Model Clauses, SOC 1 Type 2 and SOC 2 Type 2 certifications. 
-The SOC audit for Team Services covers controls for data security, availability, 
+The SOC audit for VSTS covers controls for data security, availability, 
 processing integrity, and confidentiality. In general, the availability of SOC 1,
 SOC 2 reports and other audit material is restricted to customers who have signed 
 non-disclosure agreements with Microsoft. The audit materials are available upon request.
@@ -466,7 +466,7 @@ non-disclosure agreements with Microsoft. The audit materials are available upon
 ## Steps you can take
 
 Proper data protection requires active engagement of customer
-administrators and users. Your project data stored within Team Services is only as
+administrators and users. Your project data stored within VSTS is only as
 secure as the end user access points. So it is important to match the
 level of permission strictness and granularity for those accounts with
 the level of sensitivity of your project.
@@ -476,7 +476,7 @@ the level of sensitivity of your project.
 The first step is to classify your data based on its sensitivity / risk
 horizon, and the damage it could do if it is compromised. Many
 enterprises have existing classification methods that can be reused when
-projects move to Team Services. Refer to these
+projects move to VSTS. Refer to these
 [materials](https://download.microsoft.com/download/0/A/3/0A3BE969-85C5-4DD2-83B6-366AA71D1FE3/Data-Classification-for-Cloud-Readiness.pdf)
 for more information on how to classify your data.
 
@@ -484,32 +484,32 @@ for more information on how to classify your data.
 
 Another action you can take to improve the security of your end users'
 credentials is to use Azure Active Directory (AAD) instead of Microsoft
-Accounts (MSA) to manage your organization's access to Team Services. 
+Accounts (MSA) to manage your organization's access to VSTS. 
 This allows your IT department to manage its end user access policy including
 password complexity, password refreshes and expiration if the user
 leaves your organization. Through Active Directory federation, you can
 directly link Azure Active Directory to your organization's central
 directory so you have only one location to manage these details for your
 enterprise. Here is a brief comparison between MSA and AAD
-characteristics relative to Team Services access:
+characteristics relative to VSTS access:
 
 | Properties                            | MSA                        | AAD  |
 | :-------------------------------------|:---------------------------|:-----|
 | Identity creator      | User | Organization |
 | Single user name / password for all work assets      | No      |   Yes |
 | Password lifetime & complexity control | User      |    Organization|
-| Team Services account membership limits | Any MAS | Organization's directory
+| VSTS account membership limits | Any MAS | Organization's directory
 | Traceable identity | No | Yes
 | Account & IP ownership | Unclear | Organization
 | 2-factor authentication enrollment | User | Organization
 | Device-based conditional access | No | Organization
 
 You can learn more about how to 
-[configure this support for your Team Services account](https://www.visualstudio.com/docs/setup-admin/team-services/manage-organization-access-for-your-account-vs).
+[configure this support for your VSTS account](../accounts/access-with-azure-ad.md).
 
 ### Require two-factor authentication
 
-In some cases, you might want to restrict access to your Team Services account 
+In some cases, you might want to restrict access to your VSTS account 
 by requiring more than one factor to sign in. AAD lets you require multiple factors, 
 such as phone authentication in addition to a username and password, for all 
 authentication requests. You can [learn more](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/) about turning on multifactor authentication for AAD.
@@ -522,7 +522,7 @@ on which Windows and your data reside, keeping everything safe. Once
 BitLocker is enabled, it will automatically encrypt any file you save on
 that drive. If your laptop or desktop machine were to fall into the
 wrong hands, BitLocker prevents unauthorized access of local copies of
-data from your Team Services projects.
+data from your VSTS projects.
 
 ### Limit use of Alternate Authentication Credentials
 
@@ -543,7 +543,7 @@ security requirements.
 ### Secure access to your account
 
 Azure Active Directory (Azure AD) provides the capability for administrators to 
-control access to Azure resources and applications such as Team Services.  With 
+control access to Azure resources and applications such as VSTS.  With 
 conditional access control in place, Azure AD checks for the specific conditions 
 you set for a user to access an application. After access requirements are met, 
 the user is authenticated and can access the application.  Visit the [Microsoft Azure documentation site](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access) 

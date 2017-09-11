@@ -14,10 +14,10 @@ ms.date: 08/08/2016
 
 **VSTS** | **TFS 2017**
 
-Visual Studio Team Services and Team Foundation Server use enterprise-grade authentication, 
+Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) use enterprise-grade authentication, 
 backed by Microsoft account or Azure Active Directory (Azure AD), to protect and secure your data.  Clients 
-like [Visual Studio](https://www.visualstudio.com/docs/setup-admin/team-services/connect-to-visual-studio-team-services#vs) and 
-[Eclipse (with the Team Explorer Everywhere plug-in)](https://www.visualstudio.com/setup-admin/team-services/connect-to-visual-studio-team-services#eclipse) 
+like Visual Studio and 
+Eclipse (with the Team Explorer Everywhere plug-in)
 natively support Microsoft account and Azure AD authentication, so you can directly use those authentication methods 
 to sign in. 
 

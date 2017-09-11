@@ -18,19 +18,13 @@ Visual Studio Team Services (VSTS) is Microsoft's DevOps solution for Azure. Whe
 
 Learn how to build your app and deploy it to your choice of Azure service.
 
-<table>
-<tr valign="middle" align="center">
-<td>![Web apps](../build-release/_img/index/app-service-web.png)<br/>[Web Apps](../build-release/apps/cd/azure/aspnet-core-to-azure-webapp.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)</td>
-<td>![Windows VMs](../build-release/_img/index/virtualmachine.png)<br/>[Windows VMs](../build-release/apps/cd/azure/aspnet-core-to-windows-vm.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)</td>
-<td>![Containers](../build-release/_img/index/appservice.png)<br/>[Containers](../build-release/apps/cd/azure/aspnet-core-to-acr.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)</td>
-</td>
-</tr>
-</table>    
+<!-- Converting to icon48 format, this gets cleaner in YAML -->
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="../build-release/apps/cd/azure/aspnet-core-to-azure-webapp.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../build-release/_img/index/app-service-web.png"><span>Azure Web App</span></a></div><div class="ico48Link"><a href="../build-release/apps/cd/deploy-webdeploy-iis-deploygroups.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../build-release/_img/index/virtualmachine.png"><span>Windows VM</span></a></div><div class="ico48Link"><a href="../build-release/apps/cd/deploy-docker-webapp.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../build-release/_img/index/app-service-web.png"><span>Web App for Containers</span></a></div></div>
 
 ## Step-by-Step Tutorials  
 
-* [CI builds for Git in VSTS](../build-release/actions/ci-build-git.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
 * [Set up multi-stage release](../build-release/actions/define-multistage-release-process.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
+* [CI builds for Git in VSTS](../build-release/actions/ci-build-git.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
 
 ## Videos
 

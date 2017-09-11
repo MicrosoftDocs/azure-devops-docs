@@ -22,8 +22,6 @@
     href: /vsts/security/access-levels?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: Active Directory groups (TFS) 
     href: /vsts/tfs-server/admin/setup-ad-groups?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
-  - name: VSTS data protection overview
-    href: team-services-security-whitepaper.md
 - name: How-to Guides
   items:
   - name: Set Git branch permissions
@@ -64,3 +62,7 @@
     href: ../tfs-server/index.md
   - name: Authentication guidance for REST APIs
     href: /vsts/integrate/get-started/authentication/authentication-guidance
+  - name: VSTS data protection overview
+    href: ../articles/team-services-security-whitepaper.md
+  - name: Technical Articles
+    href: ../articles/index.md

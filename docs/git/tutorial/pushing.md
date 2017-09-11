@@ -36,9 +36,7 @@ In this tutorial you learn how to:
 
 # [Visual Studio](#tab/visual-studio)
 
-VSTS | TFS 2015 &amp; 2017 | Visual Studio 2015 &amp; 2017
- 
-In Team Explorer, open the **Sync** view. The view lists outgoing commits and will present you with one of two links to push them to your remote repo:
+In **Team Explorer**, open the **Sync** view. The view lists outgoing commits and will present you with one of two links to push them to your remote repo:
 
 - **Publish** when there is not a branch on the remote repo associated with the current local branch. This will create a branch with the same name on the remote repo
 and push the commits to it. Later you will **Push**, not publish changes when using this branch since the relationship between the branch on the local branch and the remote repo exists. 

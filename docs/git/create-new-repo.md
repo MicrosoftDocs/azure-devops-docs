@@ -8,7 +8,7 @@ ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/29/2017
+ms.date: 09/08/2017
 ---
 
 # Create a new Git repo in your project
@@ -104,4 +104,4 @@ In this step, we'll make a change to the files on your computer, commit the chan
 > [New to Git repos? Learn more](https://www.visualstudio.com/learn/set-up-a-git-repository/)
 
 > [!div class="nextstepaction"]
-> [Checkout more steps in the Git workflow](gitquickstart.md)
+> [Learn more about using Git in the Git tutorial](tutorial/gitworkflow.md)

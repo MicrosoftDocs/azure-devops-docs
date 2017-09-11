@@ -78,8 +78,6 @@ in a `revert`, making it safe to use when working with others.
 
 # [Visual Studio](#tab/visual-studio)
 
-Visual Studio 2015 & 2017
-
 Open up the **Changes** view in Team Explorer. Select **Actions** and choose **View History** from the drop-down. In the history window that appears, right-click the commit to undo and
 select **Revert** from the context menu.
 
@@ -106,8 +104,6 @@ to simply discard all changed files since the last commit and return the files t
 > Don't use `reset` on branches shared with others. Use [revert](undo.md#revert) instead.
 
 # [Visual Studio](#tab/visual-studio)
-
-Visual Studio 2015 & 2017
 
 0. Open up the **Changes** view in Team Explorer. 
 0. Select **Actions** and choose **View History** from the drop-down. 

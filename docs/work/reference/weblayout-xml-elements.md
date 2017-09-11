@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 67ed8539-61b8-42c7-9d0f-95b124cf5ed8
 ms.manager: douge
 ms.author: kaelli
-ms.date: 03/02/2017
+ms.date: 09/08/2017
 ---
 
 # WebLayout and Control elements  
@@ -552,27 +552,23 @@ Extension:
 			Description: The field associated with the control.
 			Type: Field
 			IsRequired: true
-
 			Id: Labels
 			Description: The list of values to select from.
 			Type: String
 			IsRequired: false
-
 			Id: Colors
 			Description: The field associated with the control.
 			Type: String
 			IsRequired: false  
 Extension:
 	Name: vsts-workitem-recentlyviewed
-	Id: mmanela.vsts-workitem-recentlyviewed
-   
+	Id: mmanela.vsts-workitem-recentlyviewed  
 	Group contribution:
 		Id: mmanela.vsts-workitem-recentlyviewed.recently-viewed-form-group
 		Description: Recently viewed work item form group  
 Extension:
 	Name: vsts-extensions-multi-values-control
-	Id: ms-devlabs.vsts-extensions-multi-values-control
-   
+	Id: ms-devlabs.vsts-extensions-multi-values-control   
 	Control contribution:
 		Id: ms-devlabs.vsts-extensions-multi-values-control.multi-values-form-control
 		Description: Multi Values Selection Control.
@@ -581,7 +577,6 @@ Extension:
 			Description: The field associated with the control.
 			Type: Field
 			IsRequired: true
-
 			Id: Values
 			Description: The list of values to select from.
 			Type: String
@@ -591,8 +586,7 @@ Extension:
 	Id: ms-devlabs.vsts-extension-workitem-activities   
 Extension:
 	Name: vsts-uservoice-ui
-	Id: ms-devlabs.vsts-uservoice-ui
-   
+	Id: ms-devlabs.vsts-uservoice-ui   
 	Group contribution:
 		Id: ms-devlabs.vsts-uservoice-ui.vsts-uservoice-ui-wi-group
 		Description: Shows User Voice details on the work item form

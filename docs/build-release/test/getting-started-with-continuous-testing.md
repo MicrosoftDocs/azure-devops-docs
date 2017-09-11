@@ -1,6 +1,6 @@
 ---
-title: Get started with continuous testing
-description: Get started with continuous testing. Run tests with your builds for continuous integration 
+title: Continuous testing with VS Test
+description: Get started with continuous testing. Run tests with your builds for continuous integration. 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-continuous
 ms.assetid: a4a33a7d-fb75-46e0-b74d-91623ae5187e
@@ -10,7 +10,7 @@ ms.author: ahomer
 ms.date: 07/03/2017
 ---
 
-# Get started with continuous testing
+# Run tests with your builds
 
 [!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
@@ -24,8 +24,8 @@ the problems that you find.
 <a name="beforestart"></a>
 ## Before you start
 
-This overview shows how to get started by running 
-unit tests with your build. 
+This overview shows how to run unit tests with your build
+for .NET and ASP.NET apps. It uses the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md) task. 
 
 1. [Check in your solution](../../tfvc/overview.md) 
    to VSTS. Include your test projects.
@@ -41,9 +41,6 @@ create environments from physical or virtual
 machines that you've already set up. Then set up 
 your build to run your app and tests in the 
 environments that you created.
-
->You can create and use a test lab instead of using VSTS or TFS. For more information, see
-[Use a lab environment for your devops](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle)
 
 <a name="createbuild"></a>
 ## Create a build definition

@@ -6,16 +6,16 @@ ms.technology: vs-devops-wit
 ms.assetid: 9e96bf19-6ba8-4686-91e3-b4aa2a57f6ac
 ms.manager: douge
 ms.author: kaelli
-ms.date: 02/10/2017
+ms.date: 09/10/2017
 ---
 
 # Global workflow XML element reference
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 >[!IMPORTANT]  
->This topic applies to team project customization for On-premises XML process models.  
-For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md). 
+>This topic applies to team project customization for On-premises XML process models. The Inheritance and Hosted XML process models don't support global workflow. For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md). 
+
 
 By using global workflow, you can minimize the work that is required to define and update work item fields and global lists that many types of work items and team projects share. With global workflow, you can define and update fields and global lists that apply to all types of work items in a team project or a team project collection.  
   

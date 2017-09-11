@@ -12,11 +12,11 @@ ms.topic: get-started-article
 
 # Build and Release in VSTS and TFS
 
-Visual Studio Team Services (VSTS) is a collection of hosted DevOps services for application developers. Team Foundation Services (TFS) is the on-premises version of VSTS that you can install and manage on your own servers. Build and Release are two of the DevOps services in VSTS and TFS that help you manage continuous integration and delivery of your applications.
+Visual Studio Team Services (VSTS) is a collection of hosted DevOps services for application developers. Team Foundation Server (TFS) is the on-premises version of VSTS that you can install and manage on your own servers. Build and Release are two of the DevOps services in VSTS and TFS that help you manage continuous integration and delivery of your applications.
 
 Continuous Integration (CI) is the practice used by development teams to automate the merging and testing of code.  Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix.  Automated tests execute as part of the CI process to ensure quality.  Artifacts are produced from CI systems and fed to release pipelines to drive frequent deployments. The Build service in VSTS and TFS helps you set up and manage CI for your applications.
 
-Continuous Delivery (CD) is a process by which code is built, tested, and eventually deployed to a production environment.  Multiple testing or so-called staging environments drive quality.  CI systems produce the deployable artifacts including infrastructure and apps.  Automated release pipelines consume these artifacts to release new versions and fixes to existing systems.  Monitoring and alerting systems run continually to drive visibility into the entire CD process. The Release service in VSTS and TFS helps you set up and manage CD for your applications.
+Continuous Delivery (CD) is a process by which code is built, tested, and deployed to one or more test and production environments.  Deploying and testing in multiple environments drives quality.  CI systems produce the deployable artifacts including infrastructure and apps.  Automated release pipelines consume these artifacts to release new versions and fixes to existing systems.  Monitoring and alerting systems run continually to drive visibility into the entire CD process. The Release service in VSTS and TFS helps you set up and manage CD for your applications.
 
 ## Version control systems
 
@@ -28,7 +28,7 @@ To configure CI, you create a build definition. A build definition is a represen
 
 ## Deployment targets
 
-Once you have continuous integration in place, the next step is to create a release definition to automate the deployment of your application to one or more environments. This automation process is again defined as a collection of tasks. VSTS and TFS support deployments to virtual machines and containers, on-premises and cloud platforms, PaaS services, or just publish your application to a store.
+Once you have continuous integration in place, the next step is to create a release definition to automate the deployment of your application to one or more environments. This automation process is again defined as a collection of tasks. VSTS and TFS support deploying your application to virtual machines, containers, on-premises and cloud platforms, or PaaS services. You can also publish your mobile application to a store.
 
 ## Package formats
 

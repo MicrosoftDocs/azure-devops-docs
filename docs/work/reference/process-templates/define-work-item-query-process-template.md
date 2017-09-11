@@ -11,7 +11,7 @@ ms.date: 02/24/2017
 
 # Define a work item query to add to a process template
 
-[!INCLUDE [temp](../../_shared/dev15-version-header-process-template.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 <a name="top"></a> You can create a work item query (.wiq) file most easily in Team Explorer. In an existing team project, you can use Team Explorer to create all work item queries that you want to add to your process template and then follow the steps in this topic to save each query as a .wiq file. For more information about how to create work item queries, see [Use the query editor to list and manage queries](../../track/using-queries.md).  
   
@@ -24,19 +24,15 @@ ms.date: 02/24/2017
 <a name="create"></a> 
 ##  Save a work item query as a .wiq file  
   
-1.  In Team Explorer, open the query that you want to save.  
-  
-2.  On the **File** menu, choose **Save \<name of query> [Query] As**.  
-  
-3.  In the **Save Query As** dialog box, choose **File**, and specify a location and file name for the .wiq file. As an alternative, choose **Browse**, specify a file name, browse to the location to save the file, and then choose **Save**.  
-  
-4.  Copy the file to the **\WorkItem Tracking\Queries** folder, which is in the folder to which you downloaded your process template.  
-  
-5.  Open the .wiq file in a text editor.  
-  
+1.  In Team Explorer, open the query that you want to save.   
+2.  On the **File** menu, choose **Save \<name of query> [Query] As**.    
+3.  In the **Save Query As** dialog box, choose **File**, and specify a location and file name for the .wiq file. As an alternative, choose **Browse**, specify a file name, browse to the location to save the file, and then choose **Save**.    
+4.  Copy the file to the **\WorkItem Tracking\Queries** folder, which is in the folder to which you downloaded your process template.    
+5.  Open the .wiq file in a text editor.    
 6.  Remove the `<TeamFoundationServer>` and `<TeamProject>` elements that associate the query with a specific server that is running Visual Studio Team Foundation Server and a specific team project, as the following example shows:  
   
-    ```  
+    > [!div class="tabbedCodeSnippets"]
+	```XML 
     <TeamFoundationServer>CollectionURL</TeamFoundationServer>  
     <TeamProject>ProjectName</TeamProject>  
     ```  
@@ -51,7 +47,8 @@ ms.date: 02/24/2017
 ##  Create a work item query that references an iteration path  
  You can define a query that references a specific iteration path by including the macro for the team project, $$PROJECTNAME$$, and the name of an iteration path that is defined in the Classification plug-in file. For example, the following syntax specifies a query that includes only those work items whose iteration path is under Iteration 1.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 AND  [Source].[System.IterationPath] UNDER '$$PROJECTNAME$$\Iteration 1'  
 ```  
   
@@ -65,7 +62,8 @@ AND  [Source].[System.IterationPath] UNDER '$$PROJECTNAME$$\Iteration 1'
 ###  Example of an iteration-specific work item query  
  The following example shows the Iteration1Backlog work item query, which supports the Iteration Backlog workbook. For details on WIQL, see [Work Item Query Language](../../../reference/wiql-syntax.md).
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <?xml version="1.0" encoding="utf-8"?>  
 <WorkItemQuery Version="1">  
   <Wiql>  
@@ -103,7 +101,8 @@ AND  [Source].[System.IterationPath] UNDER '$$PROJECTNAME$$\Iteration 1'
 ## WorkItemQuery element reference  
  The following syntax shows the structure of the **WorkItemQuery** element and its child elements.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <WorkItemQuery Version="1">  
    <TeamFoundationServer>collectionURL </TeamFoundatonServer>  
    <TeamProject>TeamProjectName </TeamProject>  

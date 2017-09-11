@@ -6,13 +6,14 @@ ms.technology: vs-devops-wit
 ms.assetid: b10f8b41-b790-4793-bfe7-a64f935b20fc
 ms.author: kaelli
 ms.manager: douge
-ms.date: 02/22/2017 
+ms.date: 09/08/2017
 ---
+
 
 # Customize the Microsoft Project field mapping file
 
 
-**TFS 2017 | TFS 2015 | TFS 2013** 
+[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 
 >[!IMPORTANT]  
@@ -30,7 +31,8 @@ You can customize how work item fields that are defined in Team Foundation map t
   
  You use the following XML syntax to specify a mapping between a work item type field and an Microsoft Project field. The `Mapping` element is then used to specify a field mapping.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <Mapping WorkItemTrackingFieldReferenceName=""   
          ProjectField=""  
          ProjectName=""  
@@ -53,14 +55,18 @@ You can customize how work item fields that are defined in Team Foundation map t
   
  The following example shows how to map the work item type field that contains the title to the task name Microsoft Project field:  
   
-```  
+
+> [!div class="tabbedCodeSnippets"]
+```XML
 <Mapping WorkItemTrackingFieldReferenceName="System.Title"   
          ProjectField="pjTaskName"/>  
 ```  
   
  The following XML syntax shows a more complex example of how to map the work item type field that has the start date to the start date Microsoft Project field. Because the field is calculated, it is specified to publish and not refresh in order to prevent errors from being introduced by Team Explorer updates.  
   
-```  
+
+> [!div class="tabbedCodeSnippets"]
+```XML
 <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StartDate" ProjectField="pjTaskStart" PublishOnly="true"/>  
 ```  
   
@@ -79,13 +85,15 @@ You can customize how work item fields that are defined in Team Foundation map t
   
  You must specify a synchronization field in the Microsoft Project field mapping file. Use the following XML syntax to specify which field is the synchronization field. To specify a synchronization field, use the `SyncField` element. The `ProjectField` attribute must be set to a valid Office Project field.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <SyncField ProjectField="" />  
 ```  
   
  The following example shows how to specify **pjTaskText25** as the synchronization field:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <SyncField ProjectField="pjTaskText25" />  
 ```  
   
@@ -104,13 +112,15 @@ For more information about how to use the synchronization field in Project, see 
   
  If you want to specify a different character than those listed in the above table, then you can define the `ResourceNameSeparator` by using the following syntax:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <ResourceNameSeparator WorkItemTrackingCharacter="" ProjectCharacter=""/>  
 ```  
   
  The following example shows how to specify the character "**\***" as the separator to use in Office Project when the Team Foundation character is "**-**":  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <ResourceNameSeparator WorkItemTrackingCharacter="-" ProjectCharacter="*"/>  
 ```  
 <a name="Hierarchy"></a>   
@@ -125,19 +135,16 @@ For more information about how to use the synchronization field in Project, see 
 ##Mapping attributes that affect publishing and refreshing  
  The following mapping fields and Microsoft Project field values determine whether a value for a work item is published or refreshed:  
   
--   The value of the **Publish and Refresh** value for each work item.  
-  
--   The value of the **PublishOnly** attribute for a specific mapping field.  
-  
--   The value of the **IfSummaryRefreshOnly** for a specific mapping field.  
-  
+-   The value of the **Publish and Refresh** value for each work item.    
+-   The value of the **PublishOnly** attribute for a specific mapping field.    
+-   The value of the **IfSummaryRefreshOnly** for a specific mapping field.    
 -   The classification of the task as a summary or parent task.  
   
      A parent task is a task that has at least one child task that is published to Team Foundation Server.  
   
- **For work items that are not summary tasks**  
+**For work items that are not summary tasks**  
   
- The following table indicates whether a work item that is not a summary or parent task is published or refreshed based on the mapping field attributes and the assignment that is made to the **Publish and Refresh** value of the item.  
+The following table indicates whether a work item that is not a summary or parent task is published or refreshed based on the mapping field attributes and the assignment that is made to the **Publish and Refresh** value of the item.  
   
 |Publish and Refresh<br />(task level)|PublishOnly attribute|Field is Published?|Field is Refreshed?|  
 |--------------------------------------------|---------------------------|-------------------------|-------------------------|  

@@ -6,13 +6,12 @@ ms.technology: vs-devops-wit
 ms.assetid: 518b3c00-0587-45fe-8cbb-43f6a2760ea0
 ms.author: kaelli
 ms.manager: douge
-ms.date: 02/24/2017
+ms.date: 09/08/2017
 ---
 
 # Configure initial groups, teams, members, and permissions
 
-[!INCLUDE [temp](../../_shared/dev15-version-header-process-template.md)]
-
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 By using the plug-in file for Groups and Permissions, you can configure the initial security settings for a team project. You accomplish this by defining tasks that create security groups, nest groups, define groups as teams, configure initial team settings, assign members to groups, and allow or deny specific permissions to each group. In addition to performing these tasks, you can specify the initial security settings for collection-level, project-level, and project-classification areas.  
   
@@ -24,30 +23,31 @@ By using the plug-in file for Groups and Permissions, you can configure the init
   
  For more information about how to administer users and groups and control access for Visual Studio Application Lifecycle Management (ALM), see [Set up groups for use in TFS deployments](../../../tfs-server/admin/setup-ad-groups.md).  
   
-##  <a name="ElementsGroups"></a> Define and assign permissions to groups  
+<a name="ElementsGroups"></a> 
+##  Define and assign permissions to groups  
  You can use the **group** and **member** elements to specify a new security group in Team Foundation Server and add members to that group. You can use the group **permission** element to assign permissions to a group and to members of that group. You must encapsulate each of these elements within their corresponding container elements: **groups**, **permissions**, and **members**. You use the following the syntax structure for each of these elements:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <group name="Group Name" description="Description of Group"></group>  
 <permission name="PermissionName" class="ClassName" allow="True | False"/>  
 <member name="MemberName"></member>  
-  
 ```  
   
- The following table describes the attributes for the **group**, **member**, and group **permission** elements. You use these elements only in the Groups and Permissions plug-in file.  
+The following table describes the attributes for the **group**, **member**, and group **permission** elements. You use these elements only in the Groups and Permissions plug-in file.  
   
 |**Element**|**Attribute**|**Description**|  
 |-----------------|-------------------|---------------------|  
 |**group**|**name**|Specifies the name of the group that you are creating.|  
 ||**isTeam**|Indicates if the group is a team (**true**) or not (`false`).|  
 ||**description**|Describes the purpose of the group to other users.|  
-|**member**|**name**|Specifies the name of a group that you are adding as a member of another group. You can create groups and pre-populate them with any of the following types of members:<br /><br /> <ul><li>Default groups that are defined in Team Foundation Server</li><li>Project groups that have been previously created in the groupsandpermissions.xml file (for example, [$$PROJECTNAME$$]\Contributors)</li><li>Groups and users who are defined in Active Directory, which you specify by using the following format:<br /><br /> <ul><li>DOMAIN\USERNAME</li><li>DOMAIN\GROUPNAME</li></ul></li></ul><br /> For information about the format to use when you specify default groups, see [Group macros and default groups](#GroupMacros) later in this topic.<br /><br /> The **permissions** container element must precede the **members** container element.|  
+|**member**|**name**|Specifies the name of a group that you are adding as a member of another group. You can create groups and pre-populate them with any of the following types of members:<br /><br /> <ul><li>Default groups that are defined in Team Foundation Server</li><li>Project groups that have been previously created in the groupsandpermissions.xml file (for example, [$$PROJECTNAME$$]\Contributors)</li><li>Groups and users who are defined in Active Directory, which you specify by using the following format:<br /><br /> <ul><li>DOMAIN\USERNAME</li><li>DOMAIN\GROUPNAME</li></ul></li></ul><br /> For information about the format to use when you specify default groups, see [Group macros and default groups](#group-macros) later in this topic.<br /><br /> The **permissions** container element must precede the **members** container element.|  
 |**permission**|**name**|Identifies which permission is being applied. For a list of the supported permissions, see the following sections later in this topic:<br /><br /> -   [Assign collection-level permissions](#CollectionLevel)<br />-   [Assign project-level permissions](#Project)<br />-   [Assign permissions to control area paths](#AreaPaths)<br />-   [Assign permissions to control iteration paths](#IterationPaths)<br /><br /> The **permissions** container element must precede the **members** container element.|  
 ||**class**|Identifies the class, or area, where the group permission is granted. The following values are valid:<br /><br /> -   **NAMESPACE**: Specifies collection-level permissions.<br />-   **PROJECT**: Specifies project-level permissions.<br />-   **CSS_NODE**: Specifies permissions for viewing and managing area paths for a team project.<br />-   **ITERATION_NODE**: Specifies permissions for viewing and managing iteration paths for a team project.<br />-|  
 ||**allow**|Uses a **true** or **false** value to indicate whether the permission is allowed or denied.|  
 ||**path**|Identifies the node of the area path or iteration path where the permission is being applied. This attribute is valid only when **class** is set to CSS_NODE or ITERATION_NODE.|  
   
-<a name="GroupMacros"></a> 
+<a name="group-macros"></a> 
 ##Group macros and default groups  
  The following table lists the macros that you can use to specify a default group that is defined in Team Foundation Server.  
   
@@ -68,7 +68,8 @@ By using the plug-in file for Groups and Permissions, you can configure the init
 ###Example: Nest groups and assign members to groups  
  The following example shows how to configure groups that are named TestGroup1, TestGroup2, and TestGroup3. In this example, you add TestGroup1 as a member of TestGroup2. For this code to be valid, you must define TestGroup1 before you define TestGroup2.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <task id="GroupCreation1">   
     <taskXml>  
       <groups>  
@@ -108,7 +109,8 @@ By using the plug-in file for Groups and Permissions, you can configure the init
   
  The following example shows how to configure a group as a team. In this example, you specify the group, Dream Team, as a team and add the team project creator as a member of the team. Whatever iteration paths that you specify for the team must be defined in the Classifications plug-in file. See [Define initial areas, iterations, and Project mapping file](define-classification-plug-in.md).  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <group name="Dream Team" isTeam="true" description="Next generation work">  
    <permissions>  
       <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
@@ -131,17 +133,18 @@ By using the plug-in file for Groups and Permissions, you can configure the init
   
 <a name="CollectionLevel"></a> 
 ##  Assign collection-level permissions  
- You can assign collection-level permissions by using the group **permission** element and the NAMESPACE class. These permissions control access to resources that are available across team projects. You can set collection-level permissions for only the following categories of users:  
+You can assign collection-level permissions by using the group **permission** element and the NAMESPACE class. These permissions control access to resources that are available across team projects. You can set collection-level permissions for only the following categories of users:  
   
 -   Collection-level users and groups, such as Project Collection Administrators    
 -   Project-level groups that have been added to the collection level on your server that is running Team Foundation    
 -   Custom groups that you create and add to the collection level  
   
-For the format to use when you specify groups, see [Group macros and default groups](#GroupMacros) earlier in this topic.  
+For the format to use when you specify groups, see [Group macros and default groups](#group-macros) earlier in this topic.  
 
 The following example shows how to grant collection-level permissions to the project administrators for a team project.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <group name="PROJECTADMINGROUP" description="Members of this group can add, modify, and delete items within the team project.">  
    <permissions>  
        <permission name="GENERIC_READ" class="NAMESPACE" allow="true" />  
@@ -152,7 +155,7 @@ The following example shows how to grant collection-level permissions to the pro
 </group>  
 ```  
   
- The following table describes the collection-level permissions that you can assign.  
+The following table describes the collection-level permissions that you can assign.  
   
 > [!NOTE]
 >  By default, no collection-level permissions are assigned in the default process templates.  
@@ -168,11 +171,12 @@ The following example shows how to grant collection-level permissions to the pro
   
 <a name="Project"></a> 
 ##Assign project-level permissions  
- You can assign project-level permissions in the Groups and Permissions plug-in file. You assign these permissions by using the group **permission** element and the PROJECT class. These permissions control access to a single project's resources. You can grant access to users and groups in Windows, groups in Team Foundation, and groups that you have previously defined in the Groups and Permissions plug-in file. For the format to use when you specify groups, see [Group macros and default groups](#GroupMacros) earlier in this topic.  
+ You can assign project-level permissions in the Groups and Permissions plug-in file. You assign these permissions by using the group **permission** element and the PROJECT class. These permissions control access to a single project's resources. You can grant access to users and groups in Windows, groups in Team Foundation, and groups that you have previously defined in the Groups and Permissions plug-in file. For the format to use when you specify groups, see [Group macros and default groups](#group-macros) earlier in this topic.  
   
  The following example shows how to grant several permissions to the Contributors group for a team project.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <group name="Contributors" description="Members of this group can add, modify, and delete items within the team project.">  
    <permissions>  
       <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
@@ -185,7 +189,7 @@ The following example shows how to grant collection-level permissions to the pro
 </group>  
 ```  
   
- The following table describes the project-level permissions that you can assign and indicates the default assignments that are made in the default process templates.  
+The following table describes the project-level permissions that you can assign and indicates the default assignments that are made in the default process templates.  
   
 |**Permission**|**Description**|Readers|Contributors|Build Administrators|  
 |--------------------|---------------------|-------------|------------------|--------------------------|  
@@ -200,11 +204,12 @@ The following example shows how to grant collection-level permissions to the pro
   
 <a name="AreaPaths"></a> 
 ##Assign permissions to control area paths  
- You can assign permissions that control access to area definitions by using the group **permission** element and the CSS_NODE class. These permissions control access to a single project's classification structure. You can grant access to users and groups in Windows, groups in Team Foundation, and groups that you have previously defined in the Groups and Permissions plug-in file. For information about the format to use when you specify groups, see [Group macros and default groups](#GroupMacros) earlier in this topic.  
+ You can assign permissions that control access to area definitions by using the group **permission** element and the CSS_NODE class. These permissions control access to a single project's classification structure. You can grant access to users and groups in Windows, groups in Team Foundation, and groups that you have previously defined in the Groups and Permissions plug-in file. For information about the format to use when you specify groups, see [Group macros and default groups](#group-macros) earlier in this topic.  
   
  The following example shows how to grant several permissions to the Contributors group for a team project.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <group name="Contributors" description="Members of this group can add, modify, and delete items within the team project.">  
    <permissions>  
       <permission name="GENERIC_READ" class="CSS_NODE" allow="true" />  
@@ -233,11 +238,12 @@ The following example shows how to grant collection-level permissions to the pro
 <a name="IterationPaths"></a> 
 ##Assign permissions to control iteration paths  
 
-You assign permissions that control access to iteration paths by using the group **permission** element and the **ITERATION_NODE** class. These permissions control access to the milestone releases or iterations for a single project. You can grant access to users and groups in Windows, default TFS groups, and groups that you have previously defined in the Groups and Permissions plug-in file. For information about the format to use when you specify groups, see [Group macros and default groups](#GroupMacros) earlier in this topic.  
+You assign permissions that control access to iteration paths by using the group **permission** element and the **ITERATION_NODE** class. These permissions control access to the milestone releases or iterations for a single project. You can grant access to users and groups in Windows, default TFS groups, and groups that you have previously defined in the Groups and Permissions plug-in file. For information about the format to use when you specify groups, see [Group macros and default groups](#group-macros) earlier in this topic.  
   
  The following example shows how to grant several permissions to the Contributors group for a team project:  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <group name="Contributors" description="Members of this group can add, modify, and delete items within the team project.">  
    <permissions>  
       <permission name="GENERIC_READ" class="ITERATION_NODE" allow="true" />  

@@ -6,12 +6,14 @@ ms.technology: vs-devops-wit
 ms.assetid: a4820ed4-9213-4cfc-99e6-f974382036f8
 ms.author: kaelli
 ms.manager: douge
-ms.date: 03/02/2017
+ms.date: 09/08/2017
 ---
+
 
 # Customize and manage the test experience
 
-<p><b>TFS 2017 | TFS 2015 | TFS 2013</b></p>
+[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
+
 
 >[!IMPORTANT]  
 >**Feature availability**: You can only exercise the tcm commands against an on-premises TFS.  

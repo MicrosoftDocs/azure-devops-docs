@@ -12,9 +12,7 @@ ms.date: 04/13/2017
 
 # Process template and plug-in files
 
-
-[!INCLUDE [temp](../../_shared/dev15-version-header-process-template.md)]
-
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You customize the initial configuration of team projects by customizing one or more process template files. You can customize several types of template files, which include the root XML file, plug-in files, and XML definition files. By customizing these files, you can define the initial configuration of all team projects that are created from the process template.  
   
@@ -79,7 +77,7 @@ All plug-ins are supported (![supported](../../_img/icons/checkmark.png)) when y
 &nbsp;&nbsp;&nbsp;[Build.xml](define-initial-configuration-build.md)</td>
 <td>![supported](../../_img/icons/checkmark.png)</td>
 <td>![supported](../../_img/icons/checkmark.png)</td>
-<td>Defines the initial security permissions used by Team Foundation Build and  uploads build template files. (Need to check with NC about whether these files are of use with Team Services or latest non-XAML build defintions). </td>
+<td>Defines the initial security permissions used by Team Foundation Build and uploads build template files. </td>
 </tr>
 
 

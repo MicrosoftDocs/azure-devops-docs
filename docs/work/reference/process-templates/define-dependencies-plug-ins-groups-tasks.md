@@ -12,8 +12,7 @@ ms.date: 02/24/2017
 
 # Define dependencies for task groups and tasks in plug-in files
 
-
-[!INCLUDE [temp](../../_shared/dev15-version-header-process-template.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 
 When you add a task group or a task to a plug-in file, you must add them in the correct sequence and declare any dependencies that the group or task has on the successful completion of other task groups or tasks. A task can depend on other tasks, requiring other tasks to complete before primary task can run. For example, the task to create work item queries cannot run until all the tasks to create work item types have successfully completed. Therefore, the task to upload work item queries depends on the task to upload the types of work items.  
@@ -48,7 +47,8 @@ The following table identifies which plug-ins depend on other plug-ins. Only the
 ## Define task group dependencies  
  Use the dependency element in tasks and groups to indicate when a dependency exists. The following example shows how to use the dependency element to specify that the WorkItemTracking task group depends on the Classification and Groups task groups.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <group id="WorkItemTracking" description="Workitem definitions uploading." completionMessage="Workitem definitions uploaded.">  
    <dependencies>
       <dependency groupId="Classification"/>
@@ -68,10 +68,12 @@ The following table describes the elements that you use to define task group dep
 |**dependencies**|Required child element of **group**. Specifies the other groups on which a group depends.<br />`<dependencies>`<br />&nbsp;&nbsp;&nbsp;`<dependency>. . . </dependency>`<br />`</dependencies>`|  
 |**dependency**|Optional child element of **dependencies**. Specifies the ID of another task group on which this group depends. The other group must complete its tasks before this task group can start.<br /> `<dependency groupId="groupId" />`| 
   
-##  <a name="task"></a> Defining task dependencies  
+<a name="task"></a> 
+##  Defining task dependencies  
  The following example shows how to use the **dependency** element to specify that the WorkItems task depends on the task with an ID of "WITs."  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <task id="WIs" name="WorkItems" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work items uploaded"  completionDescription="Processing the actual work items used by work item tracking">  
    <dependencies>
       <dependency taskId="WITs" />

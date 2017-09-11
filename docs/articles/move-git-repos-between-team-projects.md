@@ -33,7 +33,7 @@ You have 2 options as outlined below. Import functionality is easier, but is onl
 
 ### Use Import Git repository functionality
 Using Import Repository, you can import a Git repository to your team project from TFS/Team Services or any other Git source code provider like Github. 
-Review the [import repository documentation](https://www.visualstudio.com/docs/git/import-git-repository) for more details.
+Review the [import repository documentation](../git/import-git-repository.md) for more details.
 
 ### Manually migrate the Git repo in 5 easy steps:
 

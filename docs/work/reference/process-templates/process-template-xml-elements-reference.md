@@ -11,7 +11,7 @@ ms.date: 02/24/2017
 
 # Process template XML elements reference
 
-[!INCLUDE [temp](../../_shared/dev15-version-header-process-template.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 You can customize the root file for a process template to add or remove plug-in files. The root file defines all the plug-ins and tasks used to create a team project in Visual Studio Team Services (VSTS) or an on-premises Team Foundation Server (TFS). The root file, named ProcessTemplate, is located in the container folder for the process template files. For more information, see [Overview of process template files](overview-process-template-files.md).  
   
@@ -22,25 +22,26 @@ You can customize the root file for a process template to add or remove plug-in 
 >   
 >  For On-premises XML process model: If you upload a process template with the same name as an existing template, the existing template will be overwritten.    
   
-  
-##  <a name="template"></a> ProcessTemplate syntax structure  
+<a name="template"></a>   
+##  ProcessTemplate syntax structure  
  The root plug-in for process templates must be specified in its own file in the **ProcessTemplate** container element and conform to the schema for process templates.  
   
  The following example shows the structure of the root **ProcessTemplate** element. For a more extensive example, see [Define the root tasks](define-root-tasks-process-template-plug-in.md).  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML  
 <?xml version="1.0" encoding="utf-8"?>  
 <ProcessTemplate>  
    <metadata> . . . </metadata>  
    <groups> . . .</groups>  
 </ProcessTemplate>  
-  
 ```  
   
 ##  <a name="metadata"></a> Metadata element reference  
  The following syntax shows the structure of the **metadata** element and its child elements.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <metadata>  
     <name>ProcessTemplateName</name>  
     <description>ProcessTemplateDescription </description>  
@@ -64,7 +65,8 @@ You can customize the root file for a process template to add or remove plug-in 
 ##  <a name="groups"></a> Groups element reference  
  The following syntax shows the structure of the **groups** element and its child elements.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <groups>  
    <group id="groupId" description="GroupDescription" completionMessage="SuccessMessage">  
       <dependencies>   

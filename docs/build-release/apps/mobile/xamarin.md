@@ -14,7 +14,7 @@ ms.topic: get-started-article
 
 **VSTS | TFS 2017 Update 2**
 
-Xamarin enables you to develop a single solution and deploy it to Android, iOS, and Windows devices. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your Xamarin app whenever your team pushes or checks in code. In this tutorial you learn how to define your CI process.
+Xamarin enables you to develop a single solution and deploy it to Android, iOS, and Windows devices. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your Xamarin app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
 
 ## Prerequisites
 
@@ -45,7 +45,7 @@ https://github.com/adventworks/xamarin-sample
 # [GitHub repo](#tab/github)
 
 [!INCLUDE [include](../_shared/get-sample-code-github.md)]
- 
+
 ---
 
 ## Set up continuous integration
@@ -60,7 +60,7 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
 1. Create a new build definition.
 
- # [VSTS or TFS repo](#tab/vsts) 
+ # [VSTS or TFS repo](#tab/vsts)
 
  Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
@@ -80,32 +80,30 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
 1. For the **Default agent queue**:
 
- * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build a .NET Core app.
+ * **VSTS:** Select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
 
  * **TFS:** Select a queue that includes a [Windows build agent](../../actions/agents/v2-windows.md).
 
 1. Click **Get sources** and then:
 
- # [VSTS or TFS repo](#tab/vsts) 
+ # [VSTS or TFS repo](#tab/vsts)
 
  Observe that the new build definition is automatically linked to your repository.
 
  # [GitHub repo](#tab/github)
 
- Select your version control repository. You'll need to authorize access to your repo. 
+ Select your version control repository. You'll need to authorize access to your repo.
 
  > [!TIP]
  > To learn more about GitHub CI builds, see [Define CI build process for your Git repo](../../actions/ci-build-git.md).
 
  ---
 
-1. Select **Xamarin Component Restore** task. Check the **Enabled** check box if your project uses Xamarin components.
+1. Select **Build Xamarin.Android Project** task. In the properties for this task, select `JDK 8` as the **JDK Version**, and `x64` as the **JDK Architecture**.
 
-1. Selectt **Xamarin Test Cloud** task. If you have Xamarin UI tests to run in your Xamarin test cloud account, then check the **Enabled** check box.
+1. Select **Build solution **/test*.csproj** task. In the properties for this task, uncheck **Enabled** under **Control Options**. There are no tests in the sample repository.
 
-1. Click the **Variables** tab and modify these variables:
-
- * `BuildConfiguration` = `Release`
+1. Select **Xamarin Test Cloud** task. Remove this task from the definition.
 
 1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
 
@@ -114,6 +112,10 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 ### Define your Xamarin.iOS build
 
 Repeat the same steps as above to create another build definition, but this time select the **Xamarin.iOS** template.
+
+1. For the **Default agent queue**, select the queue that includes your MAC agent.
+
+1. Remove **Xamanrin Test Cloud** task.
 
 1. Click the **Variables** tab and modify these variables:
 

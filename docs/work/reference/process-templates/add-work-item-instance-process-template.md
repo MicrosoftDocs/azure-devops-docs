@@ -12,7 +12,7 @@ ms.date: 04/13/2017
 
 # Add a work item instance to a process template
 
-[!INCLUDE [temp](../../_shared/dev15-version-header-process-template.md)]
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 By adding work items to your process template, you define a set of tasks or other items that act as reminders for each project manager to perform after the team project is created. For example, you can create one task each to assign permissions to team members, define product areas and milestones, set up build definitions, and determine the branch strategy for version control.  
   
@@ -27,7 +27,8 @@ The type attribute for the **WI** element specifies which work item type is bein
   
 The following example specifies a work item task that reminds project administrators to assign team members to one or more security groups. Values are assigned to all required fields. Because work item instances depend on the type definitions for work items, you must specify the task for creating work item instances after the task for creating work item types.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <task id="WIT_Instances" name="Work Item tasks definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item instances created">   
    <dependencies>  
       <dependency taskId="WITs" />  
@@ -51,7 +52,8 @@ The following example specifies a work item task that reminds project administra
 ###WORKITEMS elements
  The following syntax shows the structure of the **WORKITEMS** element and its child elements. You specify these elements within a **taskXml** element in the WorkItemTracking plug-in file.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML
 <WORKITEMS>  
    <WI type="TypeA">  
       <FIELD refname="Field1" value="Value1" />  
@@ -67,10 +69,10 @@ The following example specifies a work item task that reminds project administra
 |-------------|-----------------|  
 |**FIELD**|Required child element of **WI**. Specifies the reference name of a field and the value to assign to that field.<br />`<FIELD refname="FieldReferenceName" value="Value" />`|  
 |**HYPERLINK**|Optional child element of **WI**. Defines a hyperlink for the work item instance. You can specify **true** or **false** for the relative path.<br />`<HYPERLINK URL="URL" relativePath="false" />`|  
-|**WI**|Required child element of **WORKITEMS**. Defines the type of work item to create and the values to assign to specific fields.<br />`<WI type="WorkItemType">`<br />&nbsp;&nbsp;&nbsp;`<FIELD> . . .</FIELD>`<br />&nbsp;&nbsp;&nbsp;`<HYPERLINK> . . .</HYPERLINK>`<br />`</WI>`| 
-|**WORKITEMS**|Optional child element of the **taskXml** element for the WorkItemTracking plug-in.Contains a collection of **WI** elements that each define a work item instance.<br /> `<WORKITEMS>`<br />&nbsp;&nbsp;&nbsp;`<WI>`<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;` . . .`<br />&nbsp;&nbsp;&nbsp;`</WI>`<br />`</WORKITEMS >`|
+|**WI**|Required child element of **WORKITEMS**. Defines the type of work item to create and the values to assign to specific fields.<br/><code>&lt;WI type="WorkItemType"&gt; <br/>&nbsp;&nbsp;&nbsp;&lt;FIELD /&gt;   . . . &lt;/FIELD&gt;<br/>&nbsp;&nbsp;&nbsp;&lt;HYPERLINK /&gt;  . . . &lt;/HYPERLINK&gt;<br/>&lt;/WI&gt; </code> | 
+|**WORKITEMS**|Optional child element of the **taskXml** element for the WorkItemTracking plug-in.Contains a collection of **WI** elements that each define a work item instance.<br/><code>&lt;WORKITEMS"&gt; <br/>&nbsp;&nbsp;&nbsp;&lt;WI&gt;  . . . &lt;/WI&gt;<br/>&lt;/WORKITEMS&gt; </code> |
   
-  
+
 ## Related notes 
 -  [Customize a process](customize-process.md)   
 -  [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)

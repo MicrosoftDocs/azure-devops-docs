@@ -203,7 +203,7 @@ ms.date: 07/26/2017
                                         <li><a class="barLink" href="/vsts/tfs-server/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
-                                        <li><a class="barLink" href="/vsts/work/marketplace/index">Manage Extensions</a></li>
+                                        <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
                                     </ul>
                                     <h3>Extend</h3>
                                     <ul>
@@ -874,7 +874,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/marketplace/index">
+                                <a href="/vsts/marketplace/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
