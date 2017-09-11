@@ -1,6 +1,6 @@
 ---
 title: How to troubleshoot Azure Resource Manager service endpoints in VSTS and TFS
-description: How to troubleshoot Azure Resource Manager service endpoints for Microsoft Release Management in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Troubleshoot Azure Resource Manager service endpoints in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release

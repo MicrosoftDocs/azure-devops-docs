@@ -1,6 +1,6 @@
 ---
 title: Deploy your ASP.NET Core app to a Windows VM | VSTS Quickstart
-description: Set up a continuous integration (CI) build for your ASP.NET Core app, and then a continuous deployment (CD) release an to Azure Windows VM using Visual Studio Team Services
+description: Set up a CI build for your ASP.NET Core app, and then a CD release an to Azure Windows VM
 services: vsts
 documentationcenter: ''
 author: alewis

@@ -1,6 +1,6 @@
 ---
 title: Provide feedback using the Test &amp; Feedback extension
-description: Manual and exploratory testing - provide feedback in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) using the Exploratory Testing browser extension
+description: Provide feedback in VSTS or TFS using the Exploratory Testing browser extension
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
 ms.service: vsts-testing

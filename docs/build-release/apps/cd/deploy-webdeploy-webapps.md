@@ -1,7 +1,7 @@
 ---
 ms.assetid: 449254BF-EAC1-466E-B10C-85C2DE086F30
 title: Deploy to Azure web app
-description: Set up continuous deployment (CD) of an ASP.NET or Node.js web deploy package to a Microsoft Azure App Services website from Release Management in Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS)
+description: Set up CD of an ASP.NET or Node.js web deploy package to Azure App Services from Release Management
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
 ms.manager: douge

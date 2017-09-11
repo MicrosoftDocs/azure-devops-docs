@@ -1,7 +1,7 @@
 ---
 ms.assetid: A14C4E98-EF76-400C-A728-292E1D75ECFD
 title: Provision and manage virtual machines in SCVMM
-description: Example of provisioning and managing virtual machines in System Center Virtual Machine Manager (SCVMM) from Release Management in Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS)
+description: Provision and manage VMs in System Center Virtual Machine Manager (SCVMM)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
 ms.manager: douge

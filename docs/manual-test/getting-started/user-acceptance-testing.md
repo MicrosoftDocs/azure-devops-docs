@@ -1,6 +1,6 @@
 ---
 title: User acceptance testing
-description: Create and run user acceptance tests in Visual Studio Team Services and Team Foundation Server to easily verify value and business requirements, and deliver high quality software 
+description: Create and run user acceptance tests in VSTS and TFS
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
 ms.service: vsts-testing

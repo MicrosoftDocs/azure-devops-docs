@@ -1,7 +1,7 @@
 ---
 ms.assetid: 9FC7A7FC-0386-478A-BE1D-0A0B8104ED42
 title: How To Next Steps to an IIS Deployment Group
-description: Next steps for deploying an app to IIS servers using Deployment Groups in Release Management in Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS)
+description: Next steps for deploying an app to IIS servers using Deployment Groups
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
 ms.manager: douge
