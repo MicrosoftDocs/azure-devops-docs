@@ -16,9 +16,9 @@ ms.date: 09/01/2017
 
 This walkthrough will cover setting up an existing build to restore NuGet packages from Package Management feeds. It assumes that you've already:
 
-- [Set up your solution](/vsts/package/nuget/consume.md) to consume packages from a Package Management feed
+- [Set up your solution](/vsts/package/nuget/consume) to consume packages from a Package Management feed
 - [Created a build](/vsts/build-release/) for that solution
-- [Added the correct build service identity](/vsts/package/feeds/common-identities.md) to your feed
+- [Added the correct build service identity](/vsts/package/feeds/common-identities) to your feed
 
 To build a solution that relies on NuGet packages from Package Management feeds, add the **NuGet** task (if one is not already present). 
 

@@ -141,4 +141,4 @@ This is especially helpful for users of Visual Studio 2013 (or earlier) or NuGet
 <a name="integrate-with-your-builds"></a>
 #### Integrate with your builds
 
-Update your builds to ensure they have the right credentials to consume and publish packages in feeds. See the how-to's for [restoring](/vsts/build-release/packages/nuget-restore.md) and [publishing](/vsts/build-release/packages/nuget-pack-publish.md) packages in Team Build.
+Update your builds to ensure they have the right credentials to consume and publish packages in feeds. See the how-to's for [restoring](/vsts/build-release/packages/nuget-restore) and [publishing](/vsts/build-release/packages/nuget-pack-publish) packages in Team Build.
