@@ -8,6 +8,7 @@ ms.service: vsts-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
+robots: NOINDEX, NOFOLLOW
 ---
 
 # Visual Studio Team Services REST API Reference
@@ -38,8 +39,10 @@ A REST API request/response pair can be separated into five components:
         * `api-version=1.0`
         * `api-version=1.2-preview`
         * `api-version=2.0-preview.1`
+
 > [!NOTE]
-> *area** and *team-project* are optional, depending on the API request. 
+    > *area** and *team-project* are optional, depending on the API request. 
+    
 2. HTTP **request message header** fields:
     * A required [HTTP method](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) (also known as an operation or verb), which tells the service what type of operation you are requesting. Azure REST APIs support GET, HEAD, PUT, POST, and PATCH methods.
     * Optional additional header fields, as required by the specified URI and HTTP method. For example, an Authorization header that provides a bearer token containing client authorization information for the request.

@@ -79,4 +79,5 @@ Learn more about [using IIS Basic Authentication with TFS on-premises](iis-basic
 
 #### Q: Can I use basic auth with all of the Visual Studio Team Services REST APIs?
 
-A: No. You can use basic auth with most of them, but [accounts](https://visualstudio.com/api/shared/accounts.md) and [profiles](https://visualstudio.com/api/shared/profiles.md) only support [OAuth](./oauth.md).
+A: No. You can use basic auth with most of them, but [accounts and profiles](https://www.visualstudio.com/en-us/docs/integrate/api/shared/overview) only support [OAuth](./oauth.md).
+

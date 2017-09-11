@@ -17,7 +17,7 @@ Extensions for Visual Studio Team Services (VSTS) and Team Foundation Server (TF
 ## 5-minute Quickstarts 
 * [Install VSTS extensions](install-vsts-extension.md)
 * [Get extensions for TFS](./get-tfs-extensions.md)
-* [How to buy TFS extensions](get-tfs-extensions.md)
+* [Assign paid extensions to users](./assign-paid-extensions.md)
 
 ## How-to Guides
 * [Rate and review extensions](./rating-and-review.md)
