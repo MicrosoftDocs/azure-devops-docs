@@ -31,7 +31,7 @@ For example, you can find all work items that were closed but then reactivated. 
 You can also use the Activated By and Activated Date fields, or other workflow fields.
 
 >[!TIP]  
->Not all fields are valid for all WITs. Jump to [Workflow and Kanban query fields](#workflow_fields) for the set of fields you can include in queries and which WITs they apply to.  
+>Not all fields are valid for all WITs. Jump to [Workflow and Kanban query fields](#Workflow and Kanban board fields) for the set of fields you can include in queries and which WITs they apply to.  
 
 If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md).  
 

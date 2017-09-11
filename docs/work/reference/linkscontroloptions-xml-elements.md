@@ -394,7 +394,7 @@ WorkItemFiltersScope="Project" &gt;
 <pre><code>&lt;WorkItemLinkFilter Type=&quot;WorkLinkTypeName&quot; /&gt;
 </code></pre>
 <p>Examples of work item link types you can specify include: ```System.LinkTypes.Dependency```, ```System.LinkTypes.Hierarchy-Forward```, ```System.LinkTypes.Hierarchy-Reverse```, and ```System.LinkTypes.Related```. </p>
-<p>For a complete list, see [work item link type](#work-link-types). In addition, you can specify the reference name for a custom link type. </p>
+<p>For a complete list, see [work item link type](link-type-element-reference.md#work-link-types). In addition, you can specify the reference name for a custom link type. </p>
 <p>Specify ```System.IncludeAllWorkItemLinks``` to include all work link types.</p>
 <blockquote><b>Note: </b>When you specify  ```System.IncludeAllWorkItemLinks```, the system displays all links in alphabetical order by link type. 
 </blockquote>

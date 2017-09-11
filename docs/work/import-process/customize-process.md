@@ -131,7 +131,7 @@ You can import up to 32 processes to VSTS. Your custom process must conform to a
       * [Rule restrictions](#rule-restrictions)
       * [Consistent names and attributes](#consistent-names-attributes) 
       * [Identity fields](#identity-fields)
-      * [Workflow](#wit-workflow-definitions) 
+      * [Workflow](resolve-errors.md#wit-workflow-definitions) 
       * [Global lists](#wit-global-list-definitions) 
     * [Workflow](#work-item-workflow) 
     * [Form layout](#work-item-form-layout)
