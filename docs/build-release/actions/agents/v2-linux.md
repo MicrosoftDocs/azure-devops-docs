@@ -30,6 +30,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 [!INCLUDE [include](_shared/v2/prepare-permissions.md)]
 
+<a name="download-configure"></a>
 ## Download and configure the agent
 
 ### VSTS and TFS 2017

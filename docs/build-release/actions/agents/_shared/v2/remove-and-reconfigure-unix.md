@@ -10,4 +10,4 @@ To remove the agent:
  ```
 0. Enter your credentials.
 
-After you've removed the agent, you can [configure it again](#download_configure).
+After you've removed the agent, you can [configure it again](#download-configure).

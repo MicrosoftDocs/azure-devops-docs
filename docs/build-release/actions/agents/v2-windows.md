@@ -32,6 +32,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 [!INCLUDE [permissions](_shared/v2/prepare-permissions.md)]
 
+<a name="download-configure"></a>
 ## Download and configure the agent
 
 <ol>
@@ -106,7 +107,7 @@ To remove the agent:
 .\config remove
 ```
 
-After you've removed the agent, you can [configure it again](_shared/v2/configure-help-unix.md).
+After you've removed the agent, you can [configure it again](#download-configure).
 
 ## Help on other options
 
