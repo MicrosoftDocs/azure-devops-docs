@@ -26,7 +26,7 @@ To define or modify a variable from a script, use the `task.setvariable` logging
 
 Arguments
 
-```
+```arguments
 "$(sauce)" "$(secretSauce)"
 ```
 
@@ -106,7 +106,7 @@ echo "But I can read $2 (but the log is redacted so I do not spoil the secret)"
 
 Console output from reading the variables:
 
-```
+```output
 No problem reading crushed tomatoes or crushed tomatoes
 But I cannot read 
 But I can read ******** (but the log is redacted so I do not spoil the secret)
