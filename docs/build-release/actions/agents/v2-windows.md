@@ -106,7 +106,7 @@ To remove the agent:
 .\config remove
 ```
 
-After you've removed the agent, you can [configure it again](#configuration).
+After you've removed the agent, you can [configure it again](_shared/v2/configure-help-unix.md).
 
 ## Help on other options
 

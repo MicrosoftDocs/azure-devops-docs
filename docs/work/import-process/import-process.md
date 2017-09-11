@@ -47,7 +47,7 @@ Your first step in migrating team projects that contain custom work tracking obj
 In Team Foundation Server, each project has its own copy of process so careful consideration needs to be made as to which processes should exist for your organization.
 Migration to VSTSis a great time to think about process alignment across your organization and reducing the number of variants of that centralized process.  
  
-1.  Run the [process export script](#process-export) to generate a process for a given team project.   
+1.  Run the [process export script](customize-process.md#open-process-wit) to generate a process for a given team project.   
 
 2.  (Optional) Edit the ProcessTemplate.xml file name and description. Ensure it conforms to the rules and constraints outlined in [Customize a process](customize-process.md).
 

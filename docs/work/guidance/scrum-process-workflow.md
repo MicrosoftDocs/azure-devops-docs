@@ -180,7 +180,7 @@ You can add an impediment from the [New work item widget](../../Report/widget-ca
 
 ![Add work item from a New work item widget](_img/scrum-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team context](#team-context).  
+Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team context](../how-to/switch-team-context-work.md).  
 
 
 ### Backlog list order

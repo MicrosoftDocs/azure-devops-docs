@@ -435,7 +435,7 @@ You can add an issue from the  [New work item widget](../../Report/widget-catalo
 
 ![Add work item from a New work item widget](_img/cmmi-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team context](#team-context).  
+Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team context](#../how-to/switch-team-context-work.md).  
 
 
 [!INCLUDE [temp](../_shared/common-work-item-fields.md)]   

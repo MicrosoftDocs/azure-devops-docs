@@ -127,7 +127,7 @@ You activate sprints for each team from the admin pages for each team context. T
 
 	<img src="../scrum/_img/dsprints-selected-active-sprints.png" alt="Work, Iterations page for team, activates sprint list, VSTS platform" style="border: 2px solid #C3C3C3;" />  
 
-	If you don't see the sprints you need, or the dates aren't set, then [return to the team project admin context and define them there](#define-sprints-team-services).  
+	If you don't see the sprints you need, or the dates aren't set, then [return to the team project admin context and define them there](../customize/set-iteration-paths-sprints.md#define-sprints-team-services).  
 
 3.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../backlogs/create-your-backlog.md).  
 
