@@ -1,4 +1,4 @@
 ---
-redirect_url: /vsts/build-release/apps/
+redirect_url: /vsts/build-release/
 ---
 
