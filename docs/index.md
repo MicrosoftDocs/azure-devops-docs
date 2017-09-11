@@ -154,6 +154,7 @@ ms.date: 07/26/2017
                                     <h3>Continuous Integration &amp; Delivery</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/build-release/index">Build &amp; Release</a></li>
+                                        <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
                                         <li><a class="barLink" href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
                                         <li><a class="barLink" href="/vsts/package/index">Package Management</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/concepts/library/index">Library Assets</a></li>
@@ -162,7 +163,6 @@ ms.date: 07/26/2017
                                     </ul>
                                     <h3>Testing</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
                                         <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit Testing</a></li>
                                         <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
                                         <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
@@ -210,7 +210,6 @@ ms.date: 07/26/2017
                                         <li><a class="barLink" href="/vsts/extend/index">Build Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/integrate/index">Build Apps</a></li>
                                         <li><a class="barLink" href="/rest/api/vsts/">REST APIs</a></li>
-                                        <li><a class="barLink" href="">TypeScript APIs</a></li>
                                     </ul>
                                     <h3>Marketplace</h3>
                                     <ul>
@@ -344,6 +343,26 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
+                                <a href="/vsts/build-release/test/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_continuous-testing.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Continuous Testing</h3>
+                                                    <p>Automate build-deploy-test workflows to test your changes in a fast,
+                                                        scalable, and efficient manner.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/vsts/deploy-azure/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -444,26 +463,6 @@ ms.date: 07/26/2017
                     <li>
                         <a href="#testing">Testing</a>
                         <ul id="testing" class="cardsA">
-                            <li>
-                                <a href="/vsts/build-release/test/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_continuous-testing.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Continuous Testing</h3>
-                                                    <p>Automate build-deploy-test workflows to test your changes in a fast,
-                                                        scalable, and efficient manner.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
                             <li>
                                 <a href="/visualstudio/test/unit-test-your-code">
                                     <div class="cardSize">
@@ -816,7 +815,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/setup-admin/tfs/index">
+                                <a href="/vsts/setup-admin/tfs-server/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -948,25 +947,6 @@ ms.date: 07/26/2017
                                                 <div class="cardText">
                                                     <h3>REST APIs</h3>
                                                     <p>Interact with VSTS through standard REST APIs.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="/media/logos/logo_TS.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TypeScript APIs</h3>
-                                                    <p>Interact with VSTS through TypeScript APIs.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1119,17 +1099,6 @@ ms.date: 07/26/2017
                                     </li>
                                     <li>
                                         <a class="barLink" href="/rest/api/vsts/">API reference</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <h3>TypeScript libraries</h3>
-                                <ul class="noBullet">
-                                    <li>
-                                        <a class="barLink" href="">Get Started</a>
-                                    </li>
-                                    <li>
-                                        <a class="barLink" href="">API reference</a>
                                     </li>
                                 </ul>
                             </li>
