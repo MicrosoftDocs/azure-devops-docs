@@ -1,6 +1,6 @@
 ---
 title: Node Tool Installer
-description: Node Tool Installer
+description: Node Tool Installer for Microsoft Visual Studio Team Services VSTS and Microsoft Team Foundation Server TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 740DA69C-E173-46AD-BA6F-0F138285AC39

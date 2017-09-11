@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 title: Agents, pools, and queues
-description: Agent pools and queues for build and release management.
+description: Agent pools and queues for build and release management in Visual Studio Team Services and Team Foundation Server
 ms.technology: vs-devops-build
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: douge

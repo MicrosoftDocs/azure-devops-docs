@@ -1,6 +1,6 @@
 ---
-title: Xamarin.Android
-description: Xamarin.Android
+title: Xamarin.Android build and release task
+description: Xamarin.Android build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: F9D118B6-BA56-406C-8223-6934F6BCBEA1

@@ -1,6 +1,6 @@
 ---
-title: Xcode Package iOS
-description: Xcode Package iOS
+title: Xcode Package iOS build and release task
+description: Xcode Package iOS build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: FF3E5771-481B-4D72-B3D5-ED9B3379E298

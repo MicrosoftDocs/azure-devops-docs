@@ -1,6 +1,6 @@
 ---
 title: Associate automated test results with requirements
-description: Manual and exploratory testing Associate automated test results with requirements using Microsoft Test Manager
+description: Manual and exploratory testing Associate automated test results with requirements using  Microsoft Test Manager (MTM)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-continuous
 ms.assetid: 30F9B666-02D7-4A94-9EA1-EC8B8E5F1D8F

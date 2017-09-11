@@ -1,6 +1,6 @@
 ---
-title: Xamarin.iOS
-description: Xamarin.iOS
+title: Xamarin.iOS build and release task
+description: Xamarin.iOS build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 00000000-0000-0000-0000-000000000000

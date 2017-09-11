@@ -1,6 +1,6 @@
 ---
 title: Overview of Build and Release | VSTS & TFS
-description: Build and deploy your app using Visual Studio Team Services and Team Foundation Server
+description: Build and deploy your app using Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: B1233296-C583-4F2E-981C-82D6A39CFEE4

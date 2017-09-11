@@ -1,6 +1,6 @@
 ---
 title: Install Apple Certificate
-description: Install an Apple certificate required to build on a macOS agent
+description: Install an Apple certificate required to build on a macOS agent on Visual Studio Team Services VSTS and Team Foundation Server TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: d2eff759-736d-4b7b-8554-7ba0960d49d6

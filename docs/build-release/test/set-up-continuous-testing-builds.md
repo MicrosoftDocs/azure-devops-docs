@@ -1,6 +1,6 @@
 ---
 title: Set up continuous testing for your builds
-description: Set up continuous testing for your builds in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+description: Set up continuous testing for your builds in Microsoft Visual Studio Team Services VSTS and Microsoft Team Foundation Server TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-continuous
 ms.assetid: 7849EF41-BE1A-4342-B1DA-583DB6DD1831

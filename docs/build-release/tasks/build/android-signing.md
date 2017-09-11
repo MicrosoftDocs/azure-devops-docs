@@ -1,6 +1,6 @@
 ---
-title: Android signing
-description: Android signing
+title: Android signing build and release task
+description: Android signing build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 16CF200D-EC24-4485-BCF5-C9195FE278F1

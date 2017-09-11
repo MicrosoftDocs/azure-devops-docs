@@ -1,6 +1,6 @@
 ---
-title: Ant
-description: Build with Apache Ant
+title: Ant build and release task
+description: Build with Apache Ant for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: EDC23F42-D73B-479C-9626-4C9D6E09B57B

@@ -1,6 +1,6 @@
 ---
 title: Service endpoints in Visual Studio Team Services and Team Foundation Server
-description: Understand Service endpoints in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Understand Service endpoints in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release

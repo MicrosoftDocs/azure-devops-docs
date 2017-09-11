@@ -1,6 +1,6 @@
 ---
 title: Command line
-description: How to execute tools from a command prompt when building code in Visual Studio Team Services
+description: How to execute tools from a command prompt when building code in Visual Studio Team Services VSTS and Team Foundation Server TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 72C7D4F4-E626-42FF-BCA8-24D58D9A960F

@@ -1,6 +1,6 @@
 ---
 title: PowerShell
-description: How to execute powershell scripts when building code in Visual Studio Team Services
+description: How to execute powershell scripts when building code in Visual Studio Team Services VSTS and Team Foundation Server TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 0D682DFA-9BC7-47A7-B0D3-C59DE1D431B5

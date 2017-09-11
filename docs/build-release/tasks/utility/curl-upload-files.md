@@ -1,6 +1,6 @@
 ---
 title: cURL Upload Files
-description: cURL Upload Files
+description: cURL Upload Files in Microsoft Visual Studio Team Services VSTS and Microsoft Team Foundation Server TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: E231D775-2BCE-4DFA-8C20-C17F83ECD700
