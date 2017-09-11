@@ -27,9 +27,10 @@ Host your NuGet, npm, and Maven packages in **Visual Studio Team Services (VSTS)
 - [Publish a NuGet package](nuget/publish.md)
 - [Publish an npm package](npm/publish.md)
 - [Publish a Maven package](maven/publish.md)
+- [Publish a Gradle package](gradle/publish-package-gradle.md)
 
 ## Resources
 
-- [Build and Release with VSTS](../build-release/index.md)
+- [Build and Release with VSTS](/vsts/build-release/index)
 
 
