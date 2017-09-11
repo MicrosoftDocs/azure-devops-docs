@@ -38,6 +38,10 @@
         href: apps/cd/deploy-webdeploy-iis-deploygroups.md
       - name: Web App for Containers
         href: apps/cd/deploy-docker-webapp.md
+    - name: Test your app
+      items:
+      - name: VS Test
+        href: test/getting-started-with-continuous-testing.md?toc=/vsts/build-release/toc.json
 - name: Tutorials
   items:
   - name: CI builds for Git in VSTS
@@ -179,6 +183,10 @@
       href: apps/cd/scvmm/manage-vms-using-scvmm.md
     - name: VMware
       href: apps/cd/provision-vm-in-vmware.md
+  - name: Test your apps
+    items:
+    - name: Test as you build
+      href: test/index.md
   - name: Use packages in CI/CD
     items:
     - name: NuGet

@@ -27,9 +27,9 @@ requiring approvals at specific stages.
 In this tutorial, you learn about:
 
 > [!div class="checklist"]
+> * Configuring triggers within the release pipeline
 > * Extending a release definition by adding environments
 > * Configuring the environments as a multi-stage release pipeline
-> * Configuring triggers within the release pipeline
 > * Adding approvals to your release pipeline
 > * Creating a release and monitoring the deployment to each environment
 
@@ -46,30 +46,61 @@ You'll need:
 
   or see [How to: Work with release definitions](work-with-release-definitions.md).
 
-* Two Azure web app instances where you will deploy the app.
-  You will have to choose names that are unique, but it's a good idea to include
-  "QA" in the name of one, and "Production" in the name of the other, so that you
+* Two separate targets where you will deploy the app. These could be virtual machines,
+  web servers, on-premises physical deployment groups, or other types of deployment target.
+  In this example, we are using Azure App Services website instances.
+  If you decide to do the same, you will have to choose names that are unique, but it's a good idea to include
+  "QA" in the name of one, and "Production" in the name of the other so that you
   can easily identify them. If you need help, follow the steps in
   [this example](../apps/cd/azure/aspnet-core-to-azure-webapp.md#create-webapp-portal).
 
+## Configure the triggers in your release definition
+
+In this section, you will check that the triggers you need for continuous deployment are configured in your release definition.
+
+1. In the **Build &amp; Release** hub, open the **Releases** tab. Select your release definition and, in
+   the right pane, choose **Edit**.
+
+   ![Opening the release definition for editing](_img/define-multistage-release-process/open-for-edit.png)
+
+1. Choose the **Continuous deployment trigger** icon in the **Artifacts** section to open the trigger panel.
+   Make sure this is enabled so that a new release is created after every new successful build is completed.
+
+   ![Viewing the continuous integration trigger setting](_img/define-multistage-release-process/ci-trigger.png)
+
+   For more information, see [Release triggers](../concepts/definitions/release/triggers.md?toc=/vsts/deploy-azure/toc.json)
+   in the Release Management documentation.
+
+1. Choose the **Pre-deployment conditions** icon in the **Environments** section to open the conditions panel.
+   Make sure that the trigger for deployment to this environment is set to **Release**.
+   This means that a deployment will be initiated automatically when a new release is created from this release definition.   
+
+   ![Viewing the environment trigger setting](_img/define-multistage-release-process/environment-trigger.png)
+
+   Notice that you can also define artifact filters that determine a condition for the release to proceed,
+   and set up a schedule for deployments. You can use can features to, for example, specify a branch from
+   which the build artifacts must have been created, or a specific time of day when you know the app will not be heavily used.
+   For more information, see [Environment triggers](../concepts/definitions/release/triggers.md?toc=/vsts/deploy-azure/toc.json)
+   in the Release Management documentation.
+
 ## Extend a release definition by adding environments
 
-In this section, you will add a new environment to the release definition. This environment will deploy your app to the new
-Azure App Services website. This is a typical scenario where you deploy initially to a test or staging server, and then to a
-live or production server. Each [environment](../../build-release/concepts/definitions/release/environments.md?toc=/vsts/deploy-azure/toc.json)
+In this section, you will add a new environment to the release definition. The two environments will deploy your app to the
+"QA" and the "Production" targets (in our example, two Azure App Services websites). This is a typical scenario where you deploy initially to a test or staging server, and then to a
+live or production server. Each [environment](../concepts/definitions/release/environments.md?toc=/vsts/deploy-azure/toc.json)
 represents one deployment target, though that target could be a physical or virtual server,
 a groups of servers, or any other legitimate physical or virtual deployment target.
 
-1. In the **Build &amp; Release** hub, open the **Releases** tab.
+1. In the **Pipeline** tab of your release definition, select the existing environment and rename it to **Production**.
 
-1. Open the **Pipeline** tab of the release definition and select the existing environment. Rename it to **Production**.
+   ![Renaming the existing environment](_img/define-multistage-release-process/rename-environment-prod.png)
 
 1. Open the **+ Add** drop-down list and choose **Clone environment** (the clone option is available only
    when an existing environment is selected).
 
    ![Cloning the existing environment](_img/define-multistage-release-process/clone-environment.png)
 
-   Typically, you want to use exactly the same deployment methods with a test and a production environment
+   Typically, you want to use the same deployment methods with a test and a production environment
    so that you can be sure the deployed apps will behave in exactly the same way. Therefore, cloning an existing
    environment is a good way to ensure you have the same settings for both. Then you just need to change the deployment
    targets (the websites where each copy of the app will be deployed).
@@ -103,8 +134,10 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
    ![Open the tasks pane for the QA environment](_img/define-multistage-release-process/open-qa-tasks.png)
 
 1. Recall that this environment is a clone of the original **Production** environment in the release definition.
-   Therefore, currently, it will deploy the app to the same website. To change this,
-   select the **Deploy Azure App Service** task and then select the new "QA" website you created at the start of this tutorial.
+   Therefore, currently, it will deploy the app to the same target as the **Production** environment. Depending on the
+   tasks that you are using, change the settings so that this environment deploys to your "QA" target. In our example,
+   using Azure App Services websites, we just need to select the **Deploy Azure App Service** task and select the "QA"
+   website instead of the "Production" website.
 
    ![Change the deployment target the QA environment](_img/define-multistage-release-process/change-target-environment.png)
 
@@ -143,14 +176,14 @@ you deploy to production. In this section, you will add an approval step to the 
 
 Now that you have completed the modifications to the release definition, it's time to start the deployment. To do this, you
 create a release from the release definition. A release may be created automatically; for example, the continuous deployment
-trigger was set in the release definition when it was originally generated. This means that modifying
+trigger is set in the release definition. This means that modifying
 the source code will start a new build and, from that, a new release. However, in this section you will create a new release manually.
 
 1. Open the **Release** drop-down list and choose **Create release**.
 
    ![Creating a new release](_img/define-multistage-release-process/create-release.png)
 
-1. Enter a description for the release, and check that the artifact named **Drop** is selected. Then choose **Queue**.
+1. Enter a description for the release, check that the correct artifacts are selected, and then choose **Queue**.
 
    ![Queuing the new release](_img/define-multistage-release-process/queue-release.png)
 
@@ -159,8 +192,8 @@ the source code will start a new build and, from that, a new release. However, i
 
    ![The link to the newly created release](_img/define-multistage-release-process/release-link.png)
 
-1. The release summary page opens showing details of the release. In the **Environments** section
-   you will see the deployment status for the **QA** environment change from "IN PROGRESS" to "SUCCEEDED" and, at that point,
+1. The release summary page opens showing details of the release. In the **Environments** section,
+   you will see the deployment status for the "QA" environment change from "IN PROGRESS" to "SUCCEEDED" and, at that point,
    a banner appears indicating that the release is now waiting for approval.
    When a deployment to an environment is pending or has failed, a blue (i) information icon is shown.
    Point to this to see a pop-up containing the reason.
@@ -184,7 +217,7 @@ the source code will start a new build and, from that, a new release. However, i
 
 ## Monitor and track deployments
 
-In this section, you will see how you can monitor and track the deployment to the two Azure App Services websites
+In this section, you will see how you can monitor and track deployments - in this example to two Azure App Services websites -
 from the release you created in the previous section.
 
 1. In the release summary page, choose the **Logs** link. While the deployment is taking place,
@@ -212,10 +245,15 @@ from the release you created in the previous section.
 
    ![Viewing details from one environment](_img/define-multistage-release-process/environment-result-details.png)
 
-1. Open the deployed production app in your browser from the URL `http://[your-app-name].azurewebsites.net`
+1. Open the deployed production app in your browse. For example, for an Azure App Services website, from the URL `http://[your-app-name].azurewebsites.net`
 
    ![Viewing the deployed app in the production environment](_img/define-multistage-release-process/finished-app.png)
 
 If you are having problems with a deployment, you can get more information from the log files by
 running the release in debug mode. For more information, see
 [How To: Monitor releases and debug deployment issues](../../build-release/actions/debug-deployment-issues.md?toc=/vsts/deploy-azure/toc.json).
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Deploy to IIS web servers on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)

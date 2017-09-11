@@ -8,7 +8,7 @@
     href: ../overview.md
 - name: Quickstarts
   items:
-  - name: Continuous testing
+  - name: Test with builds
     href: getting-started-with-continuous-testing.md
   - name: Selenium testing
     href: continuous-test-selenium.md
