@@ -1,6 +1,6 @@
 ---
-title: Gulp
-description: Gulp
+title: Gulp build and release task
+description: Gulp build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: EC168F1F-4B27-4688-87CE-E4D12E885CC5

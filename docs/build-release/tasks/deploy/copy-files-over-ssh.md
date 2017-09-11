@@ -1,6 +1,6 @@
 ---
 title: Copy Files Over SSH task
-description: Team Services and Team Foundation Server Build and Deploy - Copy Files Over SSH
+description: Copy Files Over SSH build and release task for Microsoft Visual Studio Team Services and Microsoft Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release 
 ms.assetid: 7ff495cf-2d1f-4baa-a052-d176bd507ef4

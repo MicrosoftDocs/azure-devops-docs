@@ -1,6 +1,6 @@
 ---
 title: Hosted agents for Visual Studio Team Services
-description: Use the hosted agents in Visual Studio Team Services
+description: Use the hosted agents in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD

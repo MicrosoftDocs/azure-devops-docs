@@ -1,6 +1,6 @@
 ---
-title: Maven
-description: Maven
+title: Maven build and release task
+description: Maven build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: A5B82F26-1053-47E4-B264-6E01B37C215F

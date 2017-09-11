@@ -1,6 +1,6 @@
 ---
-title: Jenkins Queue Job
-description: Queue a job on a Jenkins server
+title: Jenkins Queue Job build and release task
+description: Queue a job on a Jenkins server build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: B0C3028E-B5DF-436D-B888-A4A8FA2627A0

@@ -1,6 +1,6 @@
 ---
-title: Gradle
-description: Gradle
+title: Gradle build and release task
+description: Gradle build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: B34A3A3D-C239-4036-AB3C-663FDDCD63C4

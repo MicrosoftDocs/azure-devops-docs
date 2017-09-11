@@ -1,6 +1,6 @@
 ---
-title: Visual Studio Build
-description: Visual Studio Build
+title: Visual Studio Build build and release task
+description: Visual Studio Build build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 11E76804-BA67-4086-9CF1-8CB2887169BA

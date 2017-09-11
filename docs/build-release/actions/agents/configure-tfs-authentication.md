@@ -1,6 +1,6 @@
 ---
 title: Configure TFS authentication for private agents
-description: Configure authentication for your private build and release agents to connect to your Team Foundation Server (TFS)
+description: Configure authentication for all your private build and release agents to connect to your Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 66E3A184-6F3F-41D3-B522-55671DD5B98D

@@ -1,5 +1,5 @@
 ---
-title: Run automated tests from test plans in the Test hub | Visual Studio Team Services and Team Foundation Server
+title: Run automated tests from test plans in the Test hub Microsoft Visual Studio Team Services VSTS and Microsoft Team Foundation Server TFS
 description: Run automated tests on-demand against Team Foundation builds from test plans in the Test hub
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-continuous

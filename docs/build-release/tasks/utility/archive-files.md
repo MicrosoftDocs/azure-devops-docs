@@ -1,6 +1,6 @@
 ---
 title: Archive Files
-description: Create an archive file from a source folder.  
+description: Create an archive file from a source folder in Visual Studio Team Services VSTS and Team Foundation Server TFS  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 9D2AE683-E116-4CEA-B673-CD7BEFB8F415

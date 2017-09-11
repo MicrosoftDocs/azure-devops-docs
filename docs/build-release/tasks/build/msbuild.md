@@ -1,6 +1,6 @@
 ---
-title: MSBuild
-description: MSBuild
+title: MSBuild build and release task
+description: MSBuild build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: A104BE40-2BFD-4E80-828B-F50944C12107

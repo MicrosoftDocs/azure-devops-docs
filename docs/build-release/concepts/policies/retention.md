@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 title: Build and release retention policies
-description: Build and release retention policies in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Build and release retention policies in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.technology: vs-devops-build
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.manager: douge

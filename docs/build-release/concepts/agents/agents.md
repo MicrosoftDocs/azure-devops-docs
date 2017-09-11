@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 title: Build and Release Agents
-description: Build and Release Agents
+description: Build and Release Agents in Visual Studio Team Services and Team Foundation Server
 ms.technology: vs-devops-build
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: douge

@@ -1,6 +1,6 @@
 ---
 title: Deployment groups in Release Management
-description: Deployment Groups for Release Management on Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Deployment Groups for Microsoft Release Management on Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 21416B0A-F60F-436F-AB46-D6C2A54D5707
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release

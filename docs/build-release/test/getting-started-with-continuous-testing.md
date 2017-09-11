@@ -1,6 +1,6 @@
 ---
 title: Continuous testing with VS Test
-description: Get started with continuous testing. Run tests with your builds for continuous integration. 
+description: Get started with continuous testing. Run tests with your builds for continuous integration in Visual Studio Team Services VSTS and Team Foundation Server TFS 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-continuous
 ms.assetid: a4a33a7d-fb75-46e0-b74d-91623ae5187e

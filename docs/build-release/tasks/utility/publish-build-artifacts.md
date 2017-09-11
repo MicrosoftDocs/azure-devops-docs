@@ -1,6 +1,6 @@
 ---
 title: Publish Build Artifacts
-description: How to publish build artifacts to a server or file share when building code in Visual Studio Team Services
+description: How to publish build artifacts to a server or file share when building code in Visual Studio Team Services VSTS and Team Foundation Server TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
