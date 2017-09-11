@@ -145,11 +145,11 @@ You should get a response like this.
 The response is [JSON](http://json.org/).
 That's generally what you'll get back from the REST APIs,
 although there are a few exceptions,
-like [Git blobs](../../api/git/blobs.md).
+like [Git blobs](https://www.visualstudio.com/docs/integrate/api/git/blobs).
 
 Now you should be able to look around the specific
-[API areas](../../api/overview.md) like [work item tracking](../../api/wit/overview.md)
-or [Git](../../api/git/overview.md) and get to the resources that you need.
+[API areas](https://www.visualstudio.com/docs/integrate/api/overview) like [work item tracking](https://www.visualstudio.com/docs/integrate/api/wit/overview)
+or [Git](https://www.visualstudio.com/docs/integrate/api/git/overview) and get to the resources that you need.
 Keep reading to learn more about the general patterns that are used in these APIs.
 
 ## HTTP verbs
