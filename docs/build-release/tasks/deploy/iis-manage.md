@@ -1,6 +1,6 @@
 ---
 title: Build and Deploy - IIS Web App Manage task
-description: Team Services and Team Foundation Server build task step to create or update, start or stop IIS Web Sites, IIS Web Applications, Virtual Directories, and IIS Application Pools 
+description: VSTS and TFS build task step to create or update, start or stop IIS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
 ms.assetid: 96E96D35-71D9-4A15-AA34-B9355D05AD98

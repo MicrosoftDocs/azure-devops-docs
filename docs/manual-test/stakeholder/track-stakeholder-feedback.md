@@ -1,6 +1,6 @@
 ---
 title: Track stakeholder feedback using the Test &amp; Feedback extension
-description: Manual and exploratory testing - track stakeholder feedback in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) using the Exploratory Testing browser extension
+description: Track stakeholder feedback in VSTS or TFS using the Exploratory Testing browser extension
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
 ms.service: vsts-testing

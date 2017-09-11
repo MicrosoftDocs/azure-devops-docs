@@ -1,6 +1,6 @@
 ---
 title: Deploy an ASP.NET Core app with Docker to Azure
-description: Use Visual Studio to automatically generate a CI/CD pipeline to deploy an ASP.NET Core web app with Docker to Azure from Visual Studio Team Services or Microsoft Team Foundation Server (TFS)
+description: Automatically generate a CI/CD pipeline to deploy an ASP.NET Core web app with Docker using Visual Studio
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 88920723-19B7-4A49-96E1-9618C384F730

@@ -1,6 +1,6 @@
 ---
 title: Build and Deploy - Azure Key Vault task
-description: Team Services and Team Foundation Server build task step to download secrets such as authentication keys, storage account keys, data encryption keys, .PFX files, and passwords from an Azure key vault
+description: VSTS ands TFS build task step to download secrets from an Azure key vault
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
 ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
