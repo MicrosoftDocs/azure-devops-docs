@@ -7,7 +7,7 @@ A: You can use:
 * Visual Studio 2013
 * Visual Studio 2012
 * Visual Studio 2010, 
-requires [Service Pack 1](https://www.microsoft.com/download/details.aspx?id=23691) 
+requires [Service Pack 1](https://www.microsoft.com/download/details.aspx?id=29082) 
 and [KB2662296](http://support.microsoft.com/kb/2662296)
 * Visual Studio 2008 SP1, requires [GDR update](http://support.microsoft.com/kb/2673642)
 
