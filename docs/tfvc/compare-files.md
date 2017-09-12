@@ -3,8 +3,7 @@ title: Compare files
 description: Compare files
 ms.assetid: d16677af-ab40-4e8c-99d3-ae54675dcfb6
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
+ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: sdanie
 ms.date: 05/12/2017

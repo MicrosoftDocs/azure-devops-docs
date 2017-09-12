@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 title: Write your first extension for Visual Studio Team Services
 description: Tutorial for creating your first extension, a hub page, for Visual Studio Team Services
 ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566

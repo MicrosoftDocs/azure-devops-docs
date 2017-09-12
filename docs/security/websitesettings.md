@@ -2,7 +2,7 @@
 title: Web Site Settings and Security, TFS Setup, Upgrade, and Administration
 description: Discusses security concerns related to web site settings for TFS, including SSL/TLS, certificates, and so forth.
 ms.prod: visual-studio-tfs-dev15
-ms.technology: vs-devops-tfsonprem
+ms.technology: vs-devops-search
 ms.assetid: ca9cd507-37fc-438f-bc8e-562b72dfedb2
 toc: show
 ms.manager: douge

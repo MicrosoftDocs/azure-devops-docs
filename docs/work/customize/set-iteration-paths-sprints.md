@@ -1,7 +1,7 @@
 ---
 title: Customize iteration paths, sprint schedules | VSTS & TFS
 description: Define the iterations or sprints to use when assigning work items in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
 ms.manager: douge

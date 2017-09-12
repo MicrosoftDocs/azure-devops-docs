@@ -1,7 +1,7 @@
 ---
 title: Add work items | VSTS & TFS  
 description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a team project in Visual Studio Team Services (VSTS).   
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
 ms.manager: douge

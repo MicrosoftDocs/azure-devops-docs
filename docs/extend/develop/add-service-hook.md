@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 title: Create a consumer service for service hooks | Extensions for Visual Studio Team Services
 description: Tutorial for creating a custom consumer service for service hooks in Visual Studio Team Services.
 ms.assetid: 294ae93b-7522-40ef-95ab-d5002f8c3ca8

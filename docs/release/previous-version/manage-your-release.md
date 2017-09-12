@@ -3,8 +3,7 @@ title: Manage your release with RM for VS and TFS
 description: Manage your release with Microsoft Release Management server and client for Visual Studio 2015 and TFS 2015
 ms.assetid: FF4993B5-4961-4735-B678-54110C36FA48
 ms.prod: vs-devops-alm
-ms.technology: vs-sub-release
-ms:service: vs-rm
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/04/2016

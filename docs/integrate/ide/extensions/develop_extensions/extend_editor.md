@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
+ms.technology: vs-devops-integrate
 title: I want to extend the editor
 description: A walkthrough to show you how to extend the Editor.
 ms.assetid: 29B13A4F-19ED-4D80-848C-D94B7B24D2F4

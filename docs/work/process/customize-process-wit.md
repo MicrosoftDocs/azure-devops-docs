@@ -1,7 +1,7 @@
 ---
 title: Add custom work item type | VSTS    
 description: Customize a process by adding or modifying a work item type for Visual Studio Team Services (VSTS)   
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
 ms.manager: douge

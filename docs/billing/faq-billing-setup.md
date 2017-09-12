@@ -2,8 +2,7 @@
 title: Troubleshoot VSTS billing  
 description: Solutions for resolving VSTS billing issues  
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-billing
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: b59c53fb-aaa5-408c-8c7d-ab72974ee922
 ms.manager: douge
 ms.author: estfan

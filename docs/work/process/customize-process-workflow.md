@@ -1,7 +1,7 @@
 ---
 title: Customize the workflow | VSTS    
 description: Add workflow states to a work item type for an inherited process for Visual Studio Team Services (VSTS)   
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4  
 ms.manager: douge

@@ -1,7 +1,7 @@
 ---
 title: TFS-Project Server Integration index | VSTS & TFS
 description: Index to topics for working with TFS-Project Server synchronization   
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
 ms.manager: douge

@@ -1,7 +1,7 @@
 ---
 title: Bulk modify using Excel | VSTS & TFS  
 description: Use Excel to save you time to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
 ms.manager: douge

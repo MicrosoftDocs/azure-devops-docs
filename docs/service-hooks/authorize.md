@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: Authorize Other Services | Visual Studio Team Services
 description: Authorize other services to work with Visual Studio Team Services
 ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0

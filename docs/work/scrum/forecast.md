@@ -1,7 +1,7 @@
 ---
 title: Velocity and forecasting | VSTS & TFS
 description: Use the velocity chart and forecast tool to determine how much work your team can deliver across several sprints    
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
 ms.manager: douge

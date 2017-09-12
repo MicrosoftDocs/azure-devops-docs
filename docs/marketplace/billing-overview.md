@@ -2,8 +2,7 @@
 title: Billing overview | Team Services & TFS 
 description: Understand how to buy and subscribe to services using the Visual Studio Marketplace 
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-marketplace
-ms.service: vsts-marketplace
+ms.technology: vs-devops-marketplace
 ms.assetid: F5A6D30F-E291-444D-956E-90A9D48A69FE
 ms.manager: douge
 ms.author: kaelli

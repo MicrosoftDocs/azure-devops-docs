@@ -3,8 +3,7 @@ title: Create a new Git branch from the web | VSTS & TFS
 description: Use the branches page to create a new Git branch in VSTS or TFS
 ms.assetid: 13783230-7762-4fd0-b392-5187c7f9fe1e
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git 
-ms.service: vsts-code
+ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/23/2016

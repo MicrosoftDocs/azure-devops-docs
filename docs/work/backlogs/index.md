@@ -1,7 +1,7 @@
 ---
 title: Backlogs index to content for VSTS & TFS
 description: Index to topics for planning and tracking work in VSTS and and Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
 ms.manager: douge

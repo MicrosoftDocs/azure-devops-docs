@@ -3,7 +3,7 @@ title: AppVeyor with Visual Studio Team Services
 description: Use AppVeyor with your VSTS account
 ms.assetid: 49541e06-2f8c-40ca-a161-f6ddff6ec83a
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

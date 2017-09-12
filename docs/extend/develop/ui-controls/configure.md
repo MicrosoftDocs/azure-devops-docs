@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 title: Configure UI Controls | Extensions for Visual Studio Team Services
 description: How to configure UI controls in your extension for Visual Studio Team Services.
 ms.assetid: D013BBD0-CC9E-538F-39BD-9433AFCC7A6D

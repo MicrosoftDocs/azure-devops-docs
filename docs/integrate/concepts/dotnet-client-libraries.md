@@ -3,8 +3,7 @@ title: .NET Client Libraries for Visual Studio Team Services (and TFS)
 description: Easily integrate with VSTS and Team Foundation Server from apps and services on Windows.
 ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
+ms.technology: vs-devops-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 title: Add an Action | Extensions for Visual Studio Team Services
 description: Add an action for your extension that extends Visual Studio Team Services.
 ms.assetid: 7b117bbf-f188-41ce-8ff6-3723ebccea81

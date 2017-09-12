@@ -2,7 +2,7 @@
 title: Analyze and report on code churn and code coverage | TFS
 description: View measures, dimensions, and attributes that are associated with the changes in lines of codes 
 ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.technology: vs-devops-reporting
 ms.assetid: 7a6c9101-c38d-4d6d-be8d-d64a3931487b
 ms.manager: douge
 ms.author: kaelli

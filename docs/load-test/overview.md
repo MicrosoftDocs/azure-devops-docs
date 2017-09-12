@@ -2,8 +2,7 @@
 title: Load Testing with Visual Studio and Visual Studio Team Services
 description: About Load Testing, overview of capabilities and features
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-load-test
-ms.service: vsts-testing
+ms.technology: vs-devops-test-performance
 ms.assetid: EE700B72-6DE1-4561-BE43-50AB0842FD1F
 ms.manager: douge
 ms.author: ahomer

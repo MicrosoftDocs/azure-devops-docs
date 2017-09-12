@@ -3,8 +3,7 @@ title: Use the Combo Control | Extensions for Visual Studio Team Services
 description: Use the combo control to have an editable control with the drop down support like list, tree, date-time and multi-value.
 ms.assetid: 03575E92-8FA7-7DC6-5699-2E5811A332CA
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

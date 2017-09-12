@@ -1,7 +1,7 @@
 ---
 title: Query by area or iteration path | VSTS & TFS
 description: Find or list work items based on their area or iteration path in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 65066197-F5BE-45F3-898E-1BA3C7BFDCA3
 ms.manager: douge

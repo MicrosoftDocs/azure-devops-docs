@@ -1,7 +1,7 @@
 ---
 title: View and add work items | Team Services  
 description: View and add work items using the work items page      
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ms.manager: douge

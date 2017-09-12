@@ -4,7 +4,7 @@ description: Use service hooks to set up actions to take when specific events oc
 toc: Hide
 ms.assetid: 0614F217-4F4E-45DC-A50C-B9FF81F8A5BD
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.technology: vs-devops-extensions-api
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

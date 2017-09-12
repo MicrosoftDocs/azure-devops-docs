@@ -2,7 +2,7 @@
 title: Individual versus shared queries | VSTS & TFS
 description: Work with queries to support your and team usage   
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli

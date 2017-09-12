@@ -3,8 +3,7 @@ title: Try paid VSTS extensions free | Visual Studio Team Services
 description: Trial the paid feature extensions in Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-billing
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.manager: douge
 ms.author: estfan

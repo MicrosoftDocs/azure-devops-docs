@@ -3,8 +3,7 @@ title: Exploratory testing using Microsoft Test Manager
 description: Manual and exploratory testing - Exploratory testing using Microsoft Test Manager
 ms.assetid: bf3fc3b0-7e43-407c-b2bc-dcf773ae889f
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-manual-test
-ms.service: vsts-testing
+ms.technology: vs-devops-test-manual
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

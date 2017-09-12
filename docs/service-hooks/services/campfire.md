@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: Campfire with Visual Studio Team Services
 description: Use Campfire with your VSTS account
 ms.assetid: 38a3f329-96c5-49a2-a88d-523356c496f0

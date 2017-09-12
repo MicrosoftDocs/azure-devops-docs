@@ -3,8 +3,7 @@ title: Add account users from the user hub for Visual Studio Team Services
 description: Add users and assign access levels in user hub Visual Studio Team Services
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: douge
 ms.author: estfan

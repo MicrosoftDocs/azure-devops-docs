@@ -3,8 +3,7 @@ title: Create a team project in VSTS or TFS
 description: Add a team project to an on-premises Team Foundation Server (TFS)
 ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.manager: douge
 ms.author: douge
 ms.date: 04/13/2017

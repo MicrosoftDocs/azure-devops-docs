@@ -1,7 +1,7 @@
 ---
 title: Agile process template for VSTS & TFS  
 description: Agile process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services (VSTS) or Team Foundation Server  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 28e9cb42-f049-45eb-a2d8-f7a3b93471b8
 ms.manager: douge

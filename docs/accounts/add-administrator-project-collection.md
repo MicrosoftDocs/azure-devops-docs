@@ -3,8 +3,7 @@ title: Add administrators to VSTS project collections
 description: Add administrators to VSTS project collections 
 ms.assetid: d8b3e709-b868-409b-98d7-03ea6d1cb77b
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.manager: douge  
 ms.author: estfan  
 ms.date: 03/29/2017

@@ -2,8 +2,7 @@
 title: Set up Visual Studio with VSTS
 description: Share code with Git and manage work with Agile tools in Visual Studio Team Services (VSTS) for continuous integration and continuous delivery
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: abf70640-8fb2-4def-9237-21276a39b5ad
 ms.manager: douge
 ms.author: estfan

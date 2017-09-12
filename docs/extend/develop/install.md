@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 title: How to Install Your Extension | Extensions for Visual Studio Team Services
 description: How to install your extension for Visual Studio Team Services.
 ms.assetid: ab9c2c1f-a78d-4f97-9b7e-ae8eaef0a3ee

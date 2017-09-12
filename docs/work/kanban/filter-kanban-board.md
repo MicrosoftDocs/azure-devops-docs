@@ -1,7 +1,7 @@
 ---
 title: Filter Kanban board | VSTS & TFS 
 description: Filter your Kanban board based on work item type, assigned to, iteration or sprint, tags, or parent work items  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge

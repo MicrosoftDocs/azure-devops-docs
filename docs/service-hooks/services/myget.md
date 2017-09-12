@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: MyGet with Visual Studio Team Services
 description: Use MyGet with your VSTS account
 ms.assetid: 2fcfead5-4f59-4b49-b55d-3199919e21c3

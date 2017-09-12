@@ -2,7 +2,7 @@
 title: View and manage releases with Release Management
 description: View and manage releases with Release Management in Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.assetid: 5C348EA7-3DC3-42E4-A66D-9A602441CDF3
 ms.manager: douge
 ms.author: ahomer

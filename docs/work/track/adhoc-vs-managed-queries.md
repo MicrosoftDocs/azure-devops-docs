@@ -1,7 +1,7 @@
 ---
 title: Adhoc vs managed queries
 description: Use adhoc or built-in search/managed queries to find work items using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 5A96317D-5A10-44CB-B2F9-F166BBAE916B
 ms.manager: douge

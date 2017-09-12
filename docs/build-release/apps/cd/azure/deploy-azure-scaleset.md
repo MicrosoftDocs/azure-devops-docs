@@ -3,7 +3,7 @@ ms.assetid: C08EC3FB-6787-4956-86D3-B4085B69FCBA
 title: Implement deployment of your app to Azure Virtual Machine Scale Set
 description: Implement deployment of your app to an Azure Virtual Machine Scale Set
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

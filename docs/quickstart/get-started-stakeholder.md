@@ -1,7 +1,7 @@
 ---
 title: Get started with Stakeholder access in VSTS or TFS  
 description: Quickstart guide to working with Stakeholder access to Team Services (VSTS) or Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
 ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
 ms.manager: douge

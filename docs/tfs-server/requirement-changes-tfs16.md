@@ -3,7 +3,7 @@ title: Changes to required for TFS 2018
 titleSuffix: |TFS 2018
 description: Describes changes to requirements between TFS 2017 and TFS 2018 RC1 that impact Setup, Upgrade, and Administration
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfs
+ms.technology: tfs-on-prem
 ms.assetid: 67751d35-7c53-454c-8b6d-12e95ffd853d
 toc: show
 ms.manager: douge

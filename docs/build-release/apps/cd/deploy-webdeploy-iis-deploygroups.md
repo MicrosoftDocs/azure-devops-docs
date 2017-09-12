@@ -3,7 +3,7 @@ ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
 title: Deploy to an IIS web server on Windows
 description: Deploy an ASP.NET or Node Web Deploy package to IIS servers using Deployment Groups
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/02/2017

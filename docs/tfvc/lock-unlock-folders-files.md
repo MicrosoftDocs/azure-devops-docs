@@ -3,8 +3,7 @@ title: Lock and unlock folders or files | TFVC
 description: Lock and unlock folders or files using Team Foundation Version Control 
 ms.assetid: 3fe6cce2-b152-4733-8aa1-4f74072e8767
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
+ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

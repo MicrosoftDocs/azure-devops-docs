@@ -3,8 +3,7 @@ title: System requirements for Microsoft Release Management
 description: System requirements for Release Management server and client for VS 2015 and TFS 2015
 ms.assetid: 5B39B13E-166B-48DF-B8CB-45725355F644
 ms.prod: vs-devops-alm
-ms.technology: vs-sub-release
-ms:service: vs-rm
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/04/2016

@@ -1,7 +1,7 @@
 ---
 title: Share work plans | VSTS & TFS
 description: Email links, Copy URL, and share information about work items, queries, and more when connected to Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) 
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
 ms.manager: douge

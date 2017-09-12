@@ -1,7 +1,7 @@
 ---
 title: Add a custom control to a WIT | VSTS  
 description: Customize a process by adding or modifying a custom control for work item type when working in Visual Studio Team Services (VSTS) 
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 7FC3CF0F-1E2B-4AAE-876C-5E358E7B2B72
 ms.manager: douge

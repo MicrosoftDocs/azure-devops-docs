@@ -3,8 +3,7 @@ title: Clone an existing Git repo | VSTS & TFS
 description: Create a local copy of an existing repo using Visual Studio or command line clone 
 ms.assetid: b6240e2f-2d3d-4874-9953-7e554d5e3b97
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git 
-ms.service: vsts-code
+ms.technology: vs-devops-git 
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie

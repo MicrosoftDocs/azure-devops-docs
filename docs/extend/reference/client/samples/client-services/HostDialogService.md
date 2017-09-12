@@ -1,7 +1,11 @@
 ---
 ms.prod: vs-devops-alm
+<<<<<<< HEAD
 ms.technology: vsts-sub-api
 ms.service: vsts-extend
+=======
+ms.technology: vs-devops-extensions-api
+>>>>>>> f2e5f55028a5ad0ed1b107d1057662af7c497aad
 title: VSTS Host Dialog Service Example
 description: A sample that shows how to use a host dialog service with a VSTS extension
 ms.assetid: 6efd62af-d344-4af2-aecf-663e23aca5d3

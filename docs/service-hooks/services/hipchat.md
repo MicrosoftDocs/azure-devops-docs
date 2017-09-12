@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: HipChat with Visual Studio Team Services
 description: Use HipChat with your VSTS account
 ms.assetid: 43ef12ac-4541-436c-b6df-343e6e321cf9

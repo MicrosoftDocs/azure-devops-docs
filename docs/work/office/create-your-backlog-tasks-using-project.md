@@ -1,7 +1,11 @@
 ---
 title: Create your backlog and tasks using Project | VSTS & TFS
 description: Add items, plan, order, and estimate your backlog of deliverables - VSTS and Team Foundation Server (TFS)  
+<<<<<<< HEAD
 ms.technology: vs-devops-agile-wit
+=======
+ms.technology: vs-devops-wit
+>>>>>>> f2e5f55028a5ad0ed1b107d1057662af7c497aad
 ms.prod: vs-devops-alm
 ms.assetid: be5cef4f-755f-4ffe-8dd7-876d1e02c330
 ms.manager: douge  

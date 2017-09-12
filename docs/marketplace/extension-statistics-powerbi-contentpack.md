@@ -4,8 +4,7 @@ description: Get started using Power BI to analyze data collected for your exten
 ms.author: divais
 ms.date: 06/12/2017
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-marketplace
-ms.service: vsts-marketplace
+ms.technology: vs-devops-marketplace
 ms.assetid: 435be0b3-ec45-41dd-a804-03b9342fa7cc
 ---
 

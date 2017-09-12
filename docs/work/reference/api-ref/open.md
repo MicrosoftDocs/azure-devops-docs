@@ -1,7 +1,7 @@
 ---
 title: WorkItem.Open method | VSTS & TFS 
 description: Syntax and usage for the Open method to open a work item for modification when working with Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 38195423-A9B7-4C5B-8FA2-F9DA5C97DB1F
 ms.manager: douge

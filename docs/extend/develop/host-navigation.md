@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 title: Host Page Navigation | Extensions for Visual Studio Team Services
 description: Use host navigation to modify host url hash or reload page
 ms.assetid: 9B188838-55FD-98A6-9062-2652C06BF381

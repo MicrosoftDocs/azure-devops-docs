@@ -2,8 +2,7 @@
 title: Troubleshooting access with Azure Active Directory (Azure AD)
 description: Troubleshooting access with Azure Active Directory (Azure AD)
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
 ms.manager: douge
 ms.author: estfan

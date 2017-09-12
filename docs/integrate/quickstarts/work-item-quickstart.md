@@ -3,8 +3,7 @@ title: Get work items programmatically from Visual Studio Team Services
 description: Use REST APIs to get work items from VSTS with queries in your own custom apps.
 ms.assetid: e48d9d34-24dd-4e3e-abe8-8f5498e08083
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
+ms.technology: vs-devops-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 06/27/2017

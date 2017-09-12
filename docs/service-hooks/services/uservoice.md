@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: UserVoice with Visual Studio Team Services
 description: Use UserVoice with your VSTS account
 ms.assetid: c0f08f71-39cd-48ac-aff0-0618c57229c7

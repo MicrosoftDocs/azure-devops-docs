@@ -2,8 +2,7 @@
 title: Buy to Xamarin University
 description: Get training on Xamarin forms for device app development
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-billing
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: 0b264fc8-f2b9-4636-9caf-ef3a85b45835
 ms.manager: douge
 ms.author: esther

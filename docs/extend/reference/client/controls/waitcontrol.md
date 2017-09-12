@@ -3,8 +3,7 @@ title: Wait Control | Extensions for Visual Studio Team Services
 description: Use the wait control to display progress message for long running operations in your app for Visual Studio Team Services.
 ms.assetid: 418275E5-F2BA-42DF-B5E6-A88324B25123
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-api
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

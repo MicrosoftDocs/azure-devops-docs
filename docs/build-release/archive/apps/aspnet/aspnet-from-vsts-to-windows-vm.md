@@ -8,7 +8,6 @@ manager: douge
 editor: ''
 
 ms.assetid: 6728CA49-5D44-4603-96E1-3BC3CF8D9793
-ms.service: vsts
 ms.workload: web
 ms.tgt_pltfrm: na
 ms.devlang: aspnet

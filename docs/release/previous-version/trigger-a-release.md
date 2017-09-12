@@ -3,8 +3,7 @@ title: Trigger a release in Release Management
 description: Trigger a release from a build in Release Management server/client for Visual Studio 2015 and TFS 2015
 ms.assetid: A6079FE1-80FC-4C98-8F4A-832AB99CC5D3
 ms.prod: vs-devops-alm
-ms.technology: vs-sub-release
-ms:service: vs-rm
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/04/2016

@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 title: Create your first Extension with Visual Studio | Extensions for Visual Studio Team Services
 description: Use Visual Studio with ASP.NET to create your first extension for Visual Studio Team Services.
 ms.assetid: 387f13db-bb06-4f8e-baf8-3f0ea05903e5

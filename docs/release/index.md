@@ -2,8 +2,7 @@
 title: Version selector for Microsoft Release Management
 description: Version selector for Microsoft Release Management for Visual Studio, Visual Studio Team Services, and Team Foundation Server
 ms.prod: vs-devops-alm
-ms.technology: vs-sub-release
-ms:service: vs-rm
+ms.technology: vs-devops-build
 ms.assetid: 8E6798F6-F900-461F-950F-5AC8FC457FC7
 ms.manager: douge
 ms.author: ahomer

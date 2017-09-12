@@ -1,7 +1,7 @@
 ---
 title: TFS-Office integration issues | VSTS & TFS  
 description: Resolve common integration issues that occur with TFS Office integration, resolve TF86001 
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 819EA180-2BAC-46DB-A17E-A5179E6BEADC
 ms.manager: douge

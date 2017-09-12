@@ -1,7 +1,7 @@
 ---
 title: SharePoint Integration | TFS
 description: Index to topics for integrating or removing integration with SharePoint and Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-reporting
 ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge

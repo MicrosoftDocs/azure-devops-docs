@@ -1,7 +1,7 @@
 ---
 title: Query by numeric field | VSTS & TFS
 description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.manager: douge

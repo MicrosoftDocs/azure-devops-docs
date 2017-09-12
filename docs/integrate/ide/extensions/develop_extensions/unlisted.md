@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
+ms.technology: vs-devops-integrate
 title: My "how-to" is not listed
 description: If there is no "how-to" listed for what you want to do, here is where you will find pointers to more or make a request for one to be written.
 ms.assetid: 4C4A7916-E7DB-410E-963D-DCFA4DB041BA

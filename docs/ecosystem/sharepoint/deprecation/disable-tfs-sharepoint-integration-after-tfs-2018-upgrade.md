@@ -2,7 +2,7 @@
 title: Disable SharePoint integration after TFS 2018 upgrade
 description: TFS SharePoint integration - Disable SharePoint integration after TFS 2018 upgrade
 ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+ms.technology: vs-devops-integrate
 ms.manager: abjork
 ms.author: greggboe
 ms.date: 09/07/07

@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: Zapier with Visual Studio Team Services
 description: Use Zapier with your VSTS account
 ms.assetid: 93b2aed5-2f28-41a3-b1b7-2d88b4feec09

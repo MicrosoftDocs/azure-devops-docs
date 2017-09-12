@@ -3,7 +3,7 @@ title: How to use deployment groups in Release Management
 description: Using deployment groups with Release Management on Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 6A1A1429-47B7-4039-AAB6-1F325ADD4696
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 05/12/2017

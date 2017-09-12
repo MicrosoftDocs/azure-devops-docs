@@ -3,7 +3,7 @@ title: How to provision agents for deployment groups
 description: How to provision agents for deployment groups using Release Management in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: DF79C2A3-DE70-4184-B7A3-F01A8E86C87C
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 05/12/2017

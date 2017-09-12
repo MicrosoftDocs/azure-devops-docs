@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: Hubot with Visual Studio Team Services
 description: Use Hubot with your VSTS account
 ms.assetid: FA7D521A-4B4A-43A8-8443-F86687B46339

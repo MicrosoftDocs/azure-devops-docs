@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 title: Extension Manifest Reference| Extensions for Visual Studio Team Services
 description: How to create a manifest for your extension to Visual Studio Team Services.
 ms.assetid: e3150221-3cdf-47e1-b7e9-24211498cc29

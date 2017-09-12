@@ -2,8 +2,7 @@
 title: Account management for VSTS  
 description: Index to topics for managing the account for Visual Studio Team Services (VSTS)
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
 ms.manager: douge
 ms.author: estfan
