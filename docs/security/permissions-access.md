@@ -2,7 +2,7 @@
 title: Permissions and access quick reference for VSTS & TFS 
 description: Simplified views of required permissions and access levels for common user tasks when working in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) 
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfs
+ms.technology: vs-devops-search
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
 ms.manager: douge

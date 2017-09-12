@@ -3,7 +3,7 @@ title: Set Git or TFVC repository permissions for VSTS & TFS
 description: Grant or restrict access to a Git or TFVC repository feature or function
 ms.assetid:  
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfs
+ms.technology: vs-devops-search
 ms.manager: douge
 ms.author: douge
 ms.date: 08/04/2017
