@@ -1,6 +1,6 @@
 ---
 title: Create test plans in Visual Studio Team Services
-description: Create test plans in Visual Studio Team Services to track manual tests during sprints or milestones
+description: Create test plans in VSTS to track manual tests during sprints or milestones
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
 ms.service: vsts-testing

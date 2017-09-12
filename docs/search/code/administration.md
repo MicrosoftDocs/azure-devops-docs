@@ -53,8 +53,8 @@ See [Uninstall or disable an extension](../../marketplace/uninstall-disable-vsts
 <a name="config-tfs"></a>
 ## Configure Code Search/Work Item Search in Team Foundation Server
 
-Code Search is available in Microsoft Team Foundation Server 2017 and later.
-Work Item Search is available in Microsoft Team Foundation Server 2017 Update 2 and later.
+Code Search is available in TFS 2017 and later.
+Work Item Search is available in TFS 2017 Update 2 and later.
 Configure the Search service using the dedicated pages in the TFS Configuration Wizard
 as you install TFS. You can also [configure and unconfigure Search](#uninstall-tfs)
 afterwards by running the TFS Configuration Wizard again or lauching the Search Configuration Wizard.
@@ -539,9 +539,9 @@ install. This requires multiple steps, depending on whether Code Search is confi
    1. Open **Command Prompt** as an administrator
    1. Change directory: 
 
-      For TFS 2017 RTM, `cd "C:\Program Files\Microsoft Team Foundation Server 15.0\Search\ES\elasticsearch-1.7.1-SNAPSHOT\bin"`
+      For TFS 2017 RTM, `cd "C:\Program Files\TFS 15.0\Search\ES\elasticsearch-1.7.1-SNAPSHOT\bin"`
 
-      For TFS 2017 Update1 and above, `cd "C:\Program Files\Microsoft Team Foundation Server 15.0\Search\ES\elasticsearch-2.4.1\bin"`
+      For TFS 2017 Update1 and above, `cd "C:\Program Files\TFS 15.0\Search\ES\elasticsearch-2.4.1\bin"`
       
    1. Remove the service: `"service.bat remove"`<p />
     

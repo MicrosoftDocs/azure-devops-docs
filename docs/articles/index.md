@@ -14,7 +14,7 @@ author: mlearned
 Here you'll find more resources to support your development efforts with Visual Studio Team Services, Team Foundation Server, and Visual Studio. These topics include materials for public preview, use cases, and whitepapers. 
 
 > [!NOTE]
-> For the full VSTS documentation, go to [Visual Studio Team Services Documentation](/vsts).
+> For the full VSTS documentation, go to [VSTS Documentation](/vsts).
    
 ##	Migration and integration
 
@@ -22,7 +22,7 @@ Here you'll find more resources to support your development efforts with Visual 
 
 ##	Security
 
-*   [Visual Studio Team Services Data Protection](team-services-security-whitepaper.md)
+*   [VSTS Data Protection](team-services-security-whitepaper.md)
 
 ## Version Control
 

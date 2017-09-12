@@ -99,7 +99,7 @@ Add them one at a time or all at the same time.
 
 	After you add members to your team project, 
 	each member gets an invitation email that 
-	links to your Visual Studio Team Services account. 
+	links to your VSTS account. 
 	They can use this link to sign in to your account 
 	and find your team project.
 	First-time members might be asked for extra details 

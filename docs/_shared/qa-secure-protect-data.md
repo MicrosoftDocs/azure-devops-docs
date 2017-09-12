@@ -1,9 +1,9 @@
 ####Q:		How do you store, secure, and protect my data?
 
-A:	VSTS uses many Microsoft Azure 
+A:	VSTS re 
 storage features to make sure your data is available in case 
 of hardware failure, service disruption, or data center disasters. 
-Also, the VSTS team has procedures 
+Also, the VSTS 
 to protect data from accidental or malicious deletion. 
 
 We follow industry best practices, and have enterprise-grade 

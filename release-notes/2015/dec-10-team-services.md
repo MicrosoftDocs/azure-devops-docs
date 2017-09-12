@@ -1,6 +1,6 @@
 ---
 title: Custom work item fields and more – Dec 10
-description: Visual Studio Team Services release notes for December 10 2015
+description: VSTS release notes for December 10 2015
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
@@ -66,7 +66,7 @@ Continuing on with the global shortcut keys announced last time, we have now ena
 
 ##On-Premises support for Exploratory Testing extension:
 
-You can now use the browser-based exploratory testing extension to connect to your on-premises Team Foundation Servers (TFS 2015 RTM and TFS 2015 Update1), in addition to your Visual Studio Team Services accounts. Support for TFS 2013 and TFS 2012 will be coming later.
+You can now use the browser-based exploratory testing extension to connect to your on-premises Team Foundation Servers (TFS 2015 RTM and TFS 2015 Update1), in addition to your VSTS accounts. Support for TFS 2013 and TFS 2012 will be coming later.
 
 ![Connecting to your TFS server](_img/12_10_06.png)
 

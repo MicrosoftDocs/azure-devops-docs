@@ -1,7 +1,7 @@
 ---
 title: VSTS and TFS Build and Test - Cloud-based Load Test step
 ms.assetid: 4D10E9D5-2269-4A95-8670-2901DFE4CBB1
-description: Runs the load test in cloud with Visual Studio Team Services to integrate cloud-based load tests into your build and release pipelines
+description: Runs the load test in cloud with VSTS to integrate cloud-based load tests into your build and release pipelines
 ms.prod: vs-devops-test-continuous
 ms.technology: vs-devops-build
 ms.manager: douge
@@ -19,7 +19,7 @@ Runs a load test in the cloud with Visual Studio Team Services.
 Use this task to understand, test, and validate your app's 
 performance. The task can be used in a build or release 
 definition to trigger a load test by using the 
-Visual Studio Team Services Cloud-based Load Test Service.
+VSTS Cloud-based Load Test Service.
 The Cloud-based Load Test Service is based in
 Microsoft Azure and can be used to test your app's 
 performance by generating load on it. 

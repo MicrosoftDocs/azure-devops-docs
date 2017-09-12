@@ -116,7 +116,7 @@ To back up your databases:
 
       The TFSBackup.exe tool is in the Tools folder where you installed
       Team Foundation Server. The default location is C:\\Program
-      Files\\Microsoft Team Foundation Server 12.0\\Tools.
+      Files\\TFS 12.0\\Tools.
 
   2.  In **Source SQL Server Instance**, enter the
       name of the SQL Server instance that hosts the TFS databases you
@@ -152,7 +152,7 @@ To restore your TFS data:
 
       The TFSRestore.exe tool is in the Tools folder where you installed
       Team Foundation Server. The default location is C:\\Program
-      Files\\Microsoft Team Foundation Server 12.0\\Tools.
+      Files\\TFS 12.0\\Tools.
 
   2.  In **Target SQL Server Instance**, enter the
       SQL Server instance you will use as the data tier and choose 

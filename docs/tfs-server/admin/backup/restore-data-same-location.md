@@ -83,7 +83,7 @@ For more information, see the following page on the Microsoft website: [User Acc
 
 Stopping the services helps protect against data loss or corruption during the restoration process, particularly if you rename databases.
 
-1.  On the server that is running the application-tier services for Team Foundation, open a Command Prompt window, and change directories to Drive:\\%programfiles%\\Microsoft Team Foundation Server 12.0\\Tools.
+1.  On the server that is running the application-tier services for Team Foundation, open a Command Prompt window, and change directories to Drive:\\%programfiles%\\TFS 12.0\\Tools.
 
 2.  Type the following command:
 
@@ -150,7 +150,7 @@ You must update the service account for Team Foundation Server (TFSService) and 
 
     -   SQL Server Reporting Services (*TFSINSTANCE*)
 
-2.  On the application-tier server, open a Command Prompt window, and change directories to *Drive*:\\%programfiles%\\ Microsoft Team Foundation Server 12.0\\Tools.
+2.  On the application-tier server, open a Command Prompt window, and change directories to *Drive*:\\%programfiles%\\ TFS 12.0\\Tools.
 
 3.  At the command prompt, enter the following command to add the service account for Team Foundation, where *DatabaseName* is the name of the configuration database (by default, TFS\_Configuration):
 
@@ -170,7 +170,7 @@ You can rebuild the data warehouse instead of restoring the **TFS\_Warehouse** a
 
 ### To rebuild the warehouse
 
-1.  On the server that is running the application-tier services for Team Foundation, open a Command Prompt window, and change directories to *Drive*:\\%programfiles%\\Microsoft Team Foundation Server 12.0\\Tools.
+1.  On the server that is running the application-tier services for Team Foundation, open a Command Prompt window, and change directories to *Drive*:\\%programfiles%\\TFS 12.0\\Tools.
 
 2.  Enter the following command:
 
@@ -216,7 +216,7 @@ Each application-tier server in your deployment of Team Foundation uses a file c
 
 ### To clear the data cache
 
-1.  On a server that is running the application-tier services for Team Foundation or that is configured with Team Foundation Server Proxy, open a Command Prompt window and change directories to *Drive*:\\%programfiles%\\Microsoft Team Foundation Server 12.0\\Application Tier\\Web Services\\\_tfs\_data.
+1.  On a server that is running the application-tier services for Team Foundation or that is configured with Team Foundation Server Proxy, open a Command Prompt window and change directories to *Drive*:\\%programfiles%\\TFS 12.0\\Application Tier\\Web Services\\\_tfs\_data.
 
 2.  Delete everything in the \_tfs\_data directory.
 
@@ -229,7 +229,7 @@ After you restore the data, you must restart the services to return the server t
 
 ### To restart services that Team Foundation Server uses
 
-1.  On the server that is running the application-tier services for Team Foundation, open a Command Prompt window, and change directories to *Drive*:\\%programfiles%\\Microsoft Team Foundation Server 12.0\\Tools.
+1.  On the server that is running the application-tier services for Team Foundation, open a Command Prompt window, and change directories to *Drive*:\\%programfiles%\\TFS 12.0\\Tools.
 
 2.  Enter the following command:
 

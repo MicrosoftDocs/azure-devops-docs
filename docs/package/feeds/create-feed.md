@@ -1,6 +1,6 @@
 ---
 title: Create a feed
-description: Create a feed in Visual Studio Team Services or Team Foundation Server
+description: Create a feed in VSTS or Team Foundation Server
 ms.assetid: e0e7e942-7c9e-4e93-8726-f2175c78e55f
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package

@@ -95,7 +95,7 @@ Release Management client can connect to the following versions of TFS:
 
 > [!NOTE]
 > _TFS is not a mandatory requirement. Release Management Client 
-> can connect to Visual Studio Team Services to deploy applications._
+> can connect to VSTS to deploy applications._
 
 These are the hardware requirements for the Release Management client.
 

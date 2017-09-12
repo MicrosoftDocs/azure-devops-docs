@@ -14,8 +14,6 @@ ms.date: 4/17/2017
 
 **VSTS**
 
-
-
 ## Permissions 
 
 #### Q: Why can't I manage users?

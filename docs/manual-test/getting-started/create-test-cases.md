@@ -1,6 +1,6 @@
 ---
-title: Create manual tests - Visual Studio Team Services and Team Foundation Server
-description: Create manual tests in Visual Studio Team Services and TFS to make sure your deliverables meet users' needs
+title: Create manual tests - VSTS and Team Foundation Server
+description: Create manual tests in VSTS and TFS to make sure your deliverables meet users' needs
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
 ms.service: vsts-testing

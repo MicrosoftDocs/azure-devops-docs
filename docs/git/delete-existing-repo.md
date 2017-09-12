@@ -1,6 +1,6 @@
 ---
 title: Delete a Git repo from your team project | VSTS & TFS
-description: Remove an existing Git repo in Visual Studio Team Services or Team Foundation Server team project
+description: Remove an existing Git repo in VSTS or Team Foundation Server team project
 ms.assetid: 271f8473-e77d-4a95-80d9-0bd347de7533
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 

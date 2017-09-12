@@ -215,7 +215,7 @@ To stop services that Team Foundation Server uses:
 
 1.  On the server that is running the application-tier services for Team
     Foundation, open a Command Prompt window, and change directories to
-    *Drive*:\\%programfiles%\\Microsoft Team Foundation Server 2010\\Tools.
+    *Drive*:\\%programfiles%\\TFS 2010\\Tools.
 
 2.  Type the following command: ```TFSServiceControl quiesce```
 
@@ -501,7 +501,7 @@ To prepare SQL Server to host databases for Team Foundation Server:
 
 1.  Log on to the server that hosts the application tier for Team
     Foundation, open a Command Prompt window, and change directories to
-    *Drive*:\\%programfiles%\\Microsoft Team Foundation Server 2010\\Tools.
+    *Drive*:\\%programfiles%\\TFS 2010\\Tools.
 
 2.  Type the following command, where *ServerName* is the name of the instance of
     SQL Server that hosts a database for Team Foundation Server, in
@@ -528,7 +528,7 @@ the **sysadmin** group in SQL Server.
 To change the ownership of the restored databases to the current user: 
 
 1.  Log on to the application-tier server for Team Foundation, open a
-    Command Prompt window, and change directories to *Drive*:\\%programfiles%\\Microsoft Team Foundation Server 2010\\Tools.
+    Command Prompt window, and change directories to *Drive*:\\%programfiles%\\TFS 2010\\Tools.
 
 2.  Type the following command, where *ServerName* (in either
     *ServerName* or *ServerName*\*InstanceName* format) is the name of the
@@ -561,7 +561,7 @@ To redirect Team Foundation Server to remote databases:
 
 1.  Log on to the application-tier server for Team Foundation, open a
     Command Prompt window, and change directories to
-    *Drive*:\\%programfiles%\\Microsoft Team Foundation Server 2010\\Tools.
+    *Drive*:\\%programfiles%\\TFS 2010\\Tools.
 
 2.  Type the following command, where
     *ServerName* is the name of the instance of
@@ -610,7 +610,7 @@ To update service accounts:
 
 2.  On the application-tier server, open a Command Prompt window, and
     change directories to
-    *Drive*:\\%programfiles%\\ Microsoft Team Foundation Server 2010\\Tools.
+    *Drive*:\\%programfiles%\\ TFS 2010\\Tools.
 
 3.  At the command prompt, type the following command to add the service
     account for Team Foundation, where
@@ -646,7 +646,7 @@ To register the location of the databases:
 
 1.  On the application-tier server, open a Command Prompt window, and
     change directories to
-    *Drive*:\\%programfiles%\\ Microsoft Team Foundation Server 2010\\Tools.
+    *Drive*:\\%programfiles%\\ TFS 2010\\Tools.
 
 2.  At the command prompt, type the following command, where
     *DatabaseName* is the name of the configuration database (by default, TFS\_Configuration):
@@ -733,7 +733,7 @@ To reconfigure reporting and Analysis Services:
     Jobs** to restart reporting.
 
 19. Open a Command Prompt window, and change directories to
-    %ProgramFiles%\\Microsoft Team Foundation Server 2010\\Tools.
+    %ProgramFiles%\\TFS 2010\\Tools.
 
 20. Type the following command to rebuild the database for Analysis
     Services:
@@ -755,7 +755,7 @@ To reconfigure reporting and Analysis Services:
     The **WarehouseControlWebService**  page opens.
 
     > **Note:**
-    > The Microsoft Team Foundation Server Application Pool must be running
+    > The TFS Application Pool must be running
     > for the Warehouse Control Web service to be available.
 
 23. Click **GetProcessingStatus**, and then click **Invoke**.
@@ -830,7 +830,7 @@ To restart services that Team Foundation Server uses:
 
 1.  On the server that is running the application-tier services for Team
     Foundation, open a Command Prompt window, and change directories to
-    *Drive*:\\%programfiles%\\Microsoft Team Foundation Server 2010\\Tools.
+    *Drive*:\\%programfiles%\\TFS 2010\\Tools.
 
 2.  Type the following command:
 

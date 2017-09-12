@@ -1,6 +1,6 @@
 ---
 title: Team Foundation Service updates - Nov 8
-description: Visual Studio Team Services release notes for November 08 2013
+description: VSTS release notes for November 08 2013
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

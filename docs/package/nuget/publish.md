@@ -1,6 +1,6 @@
 ---
 title: Publish a NuGet package from the command line
-description: Publish NuGet packages to Visual Studio Team Services or Team Foundation Server from the command line
+description: Publish NuGet packages to VSTS or Team Foundation Server from the command line
 ms.assetid: C7D75946-1F00-4BD7-87C8-225BBAE9982B
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package

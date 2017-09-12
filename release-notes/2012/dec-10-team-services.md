@@ -1,6 +1,6 @@
 ---
 title: Team Foundation Service updates - Dec 10
-description: Visual Studio Team Services release notes for December 10 2012
+description: VSTS release notes for December 10 2012
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

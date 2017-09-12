@@ -12,7 +12,7 @@ ms.date: 08/29/2016
 
 # Package and Publish an integration to the Marketplace
 
-Do you have a tool, service, or product that integrates with Visual Studio Team Services or Team Foundation Server?
+Do you have a tool, service, or product that integrates with VSTS or Team Foundation Server?
 If so, help users find it by publishing it on the Visual Studio Marketplace.
 The Visual Studio Marketplace is a one-stop-shop for individuals and teams to find tools that extend and enhance the experience. 
 
@@ -115,13 +115,13 @@ tfx extension create --manifest-globs vss-extension.json
 [!INCLUDE [Publish_extension](../_shared/procedures/publish.md)]
 
 ### Share your integration
-Before an integration can be installed into a Visual Studio Team Services account, it must be shared with that account. Sharing is a requirement during development and testing of an integration, as it is the only way to run an integration.
+Before an integration can be installed into a VSTS account, it must be shared with that account. Sharing is a requirement during development and testing of an integration, as it is the only way to run an integration.
 
 To share an integration so it can be installed:
 
 1. Click an integration from the list of displayed items 
 2. Click the **Share** button
-3. Specify the name of the Visual Studio Team Services account to make this integration visible to.
+3. Specify the name of the VSTS account to make this integration visible to.
   - For example, to make an integration visible to the fabrikam-fiber-inc.visualstudio.com account, specify `fabrikam-fiber-inc`.
 
 #### Update an item

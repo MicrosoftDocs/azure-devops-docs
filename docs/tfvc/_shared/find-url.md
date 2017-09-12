@@ -2,7 +2,7 @@
 
 A: You'll find it in the code hub in your team project.
 
-1. Sign in to your Visual Studio Team Services account and browse to your team project or type the team project URL directly in your browser. 
+1. Sign in to your VSTS account and browse to your team project or type the team project URL directly in your browser. 
 
 * The URL will look like ```https://{your_account}.visualstudio.com/DefaultCollection/{your_team_project}```
 

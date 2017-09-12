@@ -221,7 +221,7 @@ In addition, the client computers in your deployment will need to be enrolled in
 
     -   Team Foundation Server
 
-    -   Microsoft Team Foundation Server Proxy (if your deployment uses it)
+    -   TFS Proxy (if your deployment uses it)
 
     -   SharePoint Central Administration (if your deployment uses SharePoint)
 
@@ -240,7 +240,7 @@ In addition, the client computers in your deployment will need to be enrolled in
     In **Port**, type a different port number.
 
     > [!IMPORTANT]
-    > The default port number for SSL connections is 443, but you must assign a unique port number for each of the following sites: Default Website, Team Foundation Server, Microsoft Team Foundation Server Proxy (if your deployment uses it), and SharePoint Central Administration (if your deployment uses SharePoint).</p>
+    > The default port number for SSL connections is 443, but you must assign a unique port number for each of the following sites: Default Website, Team Foundation Server, TFS Proxy (if your deployment uses it), and SharePoint Central Administration (if your deployment uses SharePoint).</p>
     <p>You should record the SSL port number for each website that you configure. You will need to specify these numbers in the administration console for Team Foundation.
 
     In **SSL Certificate**, choose the certificate that you imported, and then choose **OK** and close the Bindings page.

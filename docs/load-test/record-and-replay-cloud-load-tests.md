@@ -29,7 +29,7 @@ Before you start:
   [set up billing](../billing/set-up-billing-for-your-account-vs.md)
   for your VSTS account.
 
-* [Create your Visual Studio Team Services account](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
+* [Create your VSTS account](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
   if you don't have one already. 
 
 ## About HTTP Archive testing

@@ -1,6 +1,6 @@
 ---
-title: Delete users from your Visual Studio Team Services account
-description: Delete users from your Visual Studio Team Services account
+title: Delete users from your VSTS account
+description: Delete users from your VSTS account
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
 ms.service: vsts-admin
@@ -17,7 +17,7 @@ ms.date: 1/13/2017
 Before you start, you'll need 
 [VSTS project collection administrator or account owner permissions](faq-add-delete-users.md#find-owner).
 
-0.  Sign in to your Visual Studio Team Services account 
+0.  Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```).
 
 	[Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)

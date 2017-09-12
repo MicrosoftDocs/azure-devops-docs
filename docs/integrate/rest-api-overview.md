@@ -1,6 +1,6 @@
 ---
-title: Get started with the REST APIs for Visual Studio Team Services and Team Foundation Server
-description: Learn the basic patterns for using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+title: Get started with the REST APIs for VSTS and Team Foundation Server
+description: Learn the basic patterns for using the REST APIs for VSTS and Team Foundation Server.
 ms.assetid: bdddaf58-6849-4134-a295-2887dafeeea3
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-integrate
@@ -11,9 +11,9 @@ ms.date: 08/04/2016
 robots: NOINDEX, NOFOLLOW
 ---
 
-# Visual Studio Team Services REST API Reference
+# VSTS REST API Reference
 
-Welcome to the Visual Studio Team Services REST API Reference. 
+Welcome to the VSTS REST API Reference. 
 
 Representational State Transfer (REST) APIs are service endpoints that support sets of HTTP operations (methods), which provide create, retrieve, update, or delete access to the service's resources. This article walks you through:
 
@@ -68,7 +68,7 @@ There are many ways to authenticate your application or service with Team Servic
 | Non-interactive client-side | Headless text only client side application | Console app displaying all bugs assigned to a user | [Device Profile](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-deviceprofile/?v=17.23h) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
 | Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](./get-started/authentication/oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
 | TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](./get-started/client-libraries/dotnet.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| [VSTS Extension](../extend/get-started/node.md#files) | Visual Studio Team Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../extend/develop/add-dashboard-widget.md) |
+| [VSTS Extension](../extend/get-started/node.md#files) | VSTS extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../extend/develop/add-dashboard-widget.md) |
 
 > [!NOTE]
 > You can find more information on authentication on our [authentication guidance page](./get-started/authentication/authentication-guidance.md)
@@ -83,7 +83,7 @@ For Team Services, *instance* is `{account}.visualstudio.com` and *collection* i
 VERB https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?api-version={version}
 ```
 
-For example, here's how to get a list of team projects in a Visual Studio Team Services account.
+For example, here's how to get a list of team projects in a VSTS account.
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://{account}.VisualStudio.com/DefaultCollection/_apis/projects?api-version=2.0

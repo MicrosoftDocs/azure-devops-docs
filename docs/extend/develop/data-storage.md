@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Data storage
 
-Visual Studio Team Services extensions have the ability to store user preferences and complex data structures directly on Microsoft-provided infrastructure. This ensures your user's data is secure and backed up just like other account and project data. It also means for simple data storage needs, you (as the extension provider) are not required to setup or manage (or pay for) third-party data storage services.
+VSTS extensions have the ability to store user preferences and complex data structures directly on Microsoft-provided infrastructure. This ensures your user's data is secure and backed up just like other account and project data. It also means for simple data storage needs, you (as the extension provider) are not required to setup or manage (or pay for) third-party data storage services.
 
 There are two ways to interact with the data storage service: REST APIs or a Microsoft-provided client service available as part of the VSS SDK. It is highly recommended that extension developers use the provided client service APIs, which provide a convenient wrapper over the REST APIs. 
 

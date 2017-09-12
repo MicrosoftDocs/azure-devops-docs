@@ -1,6 +1,6 @@
 ## Create personal access tokens to authenticate access
 
-0.  Sign in to either your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```)
+0.  Sign in to either your VSTS account (```https://{youraccount}.visualstudio.com```)
 or your Team Foundation Server web portal (```https://{server}:8080/tfs/```).
 
 0.  From your home page, open your profile. Go to your security details.

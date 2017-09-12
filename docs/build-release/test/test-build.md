@@ -1,5 +1,5 @@
 ---
-title: Run tests with your builds | Visual Studio Team Services and Team Foundation Server
+title: Run tests with your builds | VSTS and Team Foundation Server
 description: Run tests with your builds for continuous integration 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-continuous

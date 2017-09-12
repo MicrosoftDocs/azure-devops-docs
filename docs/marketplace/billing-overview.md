@@ -10,7 +10,7 @@ ms.author: kaelli
 ms.date: 04/28/2017
 ---
 
-# Billing overview for Visual Studio Team Services and TFS 
+# Billing overview for VSTS and TFS 
 
 <b>Team Services | TFS 2017 | TFS 2015</b> 
 
@@ -243,7 +243,7 @@ If you work in the cloud and use both Team Services and Azure services, your pri
 Service usage by minutes (such as cloud testing)  
 Service usage by artifact, for example a build & release pipeline 
 
-Visual Studio subscriptions and Visual Studio Team Services extensions are purchased through the [Visual Studio Marketplace](http://marketplace.visualstudio.com/).
+Visual Studio subscriptions and VSTS extensions are purchased through the [Visual Studio Marketplace](http://marketplace.visualstudio.com/).
 
 TBD
 [these features and more](https://www.visualstudio.com/team-services/features/)

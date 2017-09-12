@@ -1,6 +1,6 @@
 ---
 title: Get work items programmatically from Visual Studio Team Services
-description: Use REST APIs to get work items from Visual Studio Team Services with queries in your own custom apps.
+description: Use REST APIs to get work items from VSTS with queries in your own custom apps.
 ms.assetid: e48d9d34-24dd-4e3e-abe8-8f5498e08083
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-integrate
@@ -13,12 +13,12 @@ ms.topic: get-started-article
 
 # Fetch work items with queries programatically in Visual Studio Team Services
 
-A common scenario in Visual Studio Team Services is to fetch work items using queries. This guide details how to implement that scenario programatically using our REST APIs or .NET client libraries. 
+A common scenario in VSTS is to fetch work items using queries. This guide details how to implement that scenario programatically using our REST APIs or .NET client libraries. 
 
 ## Prerequisites
 To work on this Quickstart, you'll need the following prerequisites:
 
-* A Visual Studio Team Services account
+* A VSTS account
 * A Personal Access Token, [find out how to create one](../get-started/authentication/PATs.md)
 * A C# development environment, you can use [Visual Studio](https://www.visualstudio.com/vs/)
 

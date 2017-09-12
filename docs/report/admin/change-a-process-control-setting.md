@@ -27,7 +27,7 @@ You can determine the current settings and change a setting by using the Warehou
 
   * You must be a member of the **Team Foundation Administrators** security group, or you must have the server-level **Administer warehouse** permission set to **Allow**. See [Set administrator permissions for Team Foundation Server](../../tfs-server/add-administrator-tfs.md).  
 
-  * The Microsoft Team Foundation Server Application Pool must be running for the Warehouse Control Web service to be available.
+  * The TFS Application Pool must be running for the Warehouse Control Web service to be available.
 
 ##Access the Warehouse Control Web Service
 1. Log on to the application-tier server.

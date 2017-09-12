@@ -2,7 +2,7 @@
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-marketplace
 title: MyGet with Visual Studio Team Services
-description: Use MyGet with your Visual Studio Team Services account
+description: Use MyGet with your VSTS account
 ms.assetid: 2fcfead5-4f59-4b49-b55d-3199919e21c3
 ms.manager: douge
 ms.author: elbatk
@@ -30,15 +30,15 @@ Use a MyGet feed for the following integration scenarios with Visual Studio Team
 
 ## Build and deploy a package when code is pushed
 
-2. Add Visual Studio Team Services to your feed as a build source.
+2. Add VSTS to your feed as a build source.
 
-   <img alt="Add Visual Studio Team Services Git" src="./_img/myget/add-build-source.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Add VSTS Git" src="./_img/myget/add-build-source.png" style="border: 1px solid #CCCCCC" />
 
-3. Use your Visual Studio Team Services account.
+3. Use your VSTS account.
 
-   <img alt="Enter the name of your Visual Studio Team Services account" src="./_img/myget/vso-account.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Enter the name of your VSTS account" src="./_img/myget/vso-account.png" style="border: 1px solid #CCCCCC" />
 
-4. Authorize MyGet to access you Visual Studio Team Services account.
+4. Authorize MyGet to access you VSTS account.
 
    <img alt="Accept the permission request" src="./_img/myget/authorize.png" style="border: 1px solid #CCCCCC" />
 
@@ -52,15 +52,15 @@ Use a MyGet feed for the following integration scenarios with Visual Studio Team
 
 ## Deploy a package built on Visual Studio Team Services
  
-2. Add the Visual Studio Team Services build definition as a package source for your feed.
+2. Add the VSTS build definition as a package source for your feed.
 
-   <img alt="Choose Visual Studio Team Services build definition" src="./_img/myget/add-package-source.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Choose VSTS build definition" src="./_img/myget/add-package-source.png" style="border: 1px solid #CCCCCC" />
 
-3. Use your Visual Studio Team Services account.
+3. Use your VSTS account.
 
-   <img alt="Enter your Visual Studio Team Services account name" src="./_img/myget/vso-account.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Enter your VSTS account name" src="./_img/myget/vso-account.png" style="border: 1px solid #CCCCCC" />
 
-4. Authorize MyGet to access your Visual Studio Team Services account.
+4. Authorize MyGet to access your VSTS account.
 
    <img alt="Accept the permission request" src="./_img/myget/authorize.png" style="border: 1px solid #CCCCCC" />
 
@@ -73,7 +73,7 @@ Use a MyGet feed for the following integration scenarios with Visual Studio Team
     <img alt="The name and source appear in the new feed" src="./_img/myget/completed-feed.png" style="border: 1px solid #CCCCCC" />
 
 ## Pricing
-Visual Studio Team Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
+VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A

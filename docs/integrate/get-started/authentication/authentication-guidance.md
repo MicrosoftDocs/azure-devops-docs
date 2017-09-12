@@ -1,5 +1,5 @@
 ---
-title: Guidance for authentication | Visual Studio Team Services REST APIs
+title: Guidance for authentication | VSTS REST APIs
 description: Guidance for authentication with with Visual Studio Team Services.
 ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
 ms.prod: vs-devops-alm
@@ -25,7 +25,7 @@ When writing an application which interfaces with VSTS, you will have to authent
 | Interactive client-side app targeting VSTS and TFS | Client application, that allows user interaction, authenticates VSTS and TFS users | Console application allowing VSTS and TFS users to see assigned bugs |  [Client Library (Interactive and Windows authentication)](/vsts/integrate/get-started/client-libraries/samples#authenticating-team-foundation-server) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DualSupportClientSample) |
 | Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](./oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
 | TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| [VSTS Extension](../../../extend/get-started/node.md#files) | Visual Studio Team Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../../../extend/develop/add-dashboard-widget.md) |
+| [VSTS Extension](../../../extend/get-started/node.md#files) | VSTS extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../../../extend/develop/add-dashboard-widget.md) |
 
 
 

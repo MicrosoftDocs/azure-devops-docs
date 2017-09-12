@@ -60,7 +60,7 @@ learn [how to change paid extension users](../billing/change-number-paid-extensi
 
 You'll need [VSTS project collection administrator or account owner permissions](faq-add-delete-users.md#find-owner). 
 
-##	Add users to your Visual Studio Team Services account
+##	Add users to your VSTS account
 
 Administrators can now add users to an account, grant access to appropriate tooling extensions and service access level, 
 and add users to groups all in one view. You can add up to 50 users at once.  You can add more than 50 users by repeatedly 

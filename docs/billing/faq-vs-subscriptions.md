@@ -70,7 +70,7 @@ in your dev and test environments. You also get
 like a monthly Azure credit, technical support, special offers, and more. 
 
 For both subscriptions, you get Basic access 
-to any Visual Studio Team Services account.
+to any VSTS account.
 
 ###Q:	What's the difference between annual cloud subscriptions and standard subscriptions?
 

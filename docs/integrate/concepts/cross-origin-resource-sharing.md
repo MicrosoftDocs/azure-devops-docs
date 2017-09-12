@@ -1,6 +1,6 @@
 ---
-title: Cross-origin resource sharing (CORS) with Visual Studio Team Services REST APIs
-description: Learn about using CORS with Visual Studio Team Services and TFS REST APIs
+title: Cross-origin resource sharing (CORS) with VSTS REST APIs
+description: Learn about using CORS with VSTS and TFS REST APIs
 ms.assetid: d7e3c119-5678-40e6-9c11-55a57c171278
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-integrate
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Cross-origin resource sharing (CORS)
 
-Visual Studio Team Services supports CORS. This enables JavaScript code served from a domain other than *.visualstudio.com to make Ajax requests to Visual Studio Team Services REST APIs. For this to work, each request must provide credentials (personal access tokens and OAuth access tokens are both supported options). Example:
+VSTS supports CORS. This enables JavaScript code served from a domain other than *.visualstudio.com to make Ajax requests to VSTS REST APIs. For this to work, each request must provide credentials (personal access tokens and OAuth access tokens are both supported options). Example:
 
 ```js
     $( document ).ready(function() {

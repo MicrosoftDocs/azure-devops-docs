@@ -83,9 +83,9 @@ To focus the rollup chart to count only active or in progress tasks from, add th
 The sprint burndown chart based on Story Points provides you with a daily update of your sprint progress when you don't break your stories down into tasks. You can update the chart further by adding Work Item Type as an additional filter to differentiate the story point count for bugs versus user stories.  
 
 
-### Get started using Power BI and the Visual Studio Team Services connector 
+### Get started using Power BI and the VSTS connector 
 - [Create dashboards and reports](report-on-vso-with-power-bi-vs.md)
-- [What's available in the Power BI Visual Studio Team Services connector](vso-pbi-whats-available-vs.md)
+- [What's available in the Power BI VSTS connector](vso-pbi-whats-available-vs.md)
 - [Add a page to a Power BI report](https://support.powerbi.com/knowledgebase/articles/474804-add-a-page-to-a-power-bi-report)  
 - [Pin a tile to a Power BI dashboard from a report](https://support.powerbi.com/knowledgebase/articles/430323-pin-a-tile-to-a-power-bi-dashboard-from-a-report)  
 - [Save a report in Power BI](https://support.powerbi.com/knowledgebase/articles/444112-save-a-report-in-power-bi)  

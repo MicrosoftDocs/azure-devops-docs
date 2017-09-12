@@ -26,7 +26,7 @@ Visual Studio, IntelliJ, or Android Studio to work on apps anytime, anywhere.
 Enter your email address for your Microsoft account. 
 
 	If you're a Visual Studio subscriber 
-	and get Visual Studio Team Services as a benefit, 
+	and get VSTS as a benefit, 
 	use the Microsoft account associated with your subscription. 
 
 	<img src="../accounts/_img/_shared/sign-in.png" alt="Enter your email address" style="border: 2px solid #C3C3C3;" /> 
@@ -43,7 +43,7 @@ Then enter your password, and finish signing in.
 0.	Name your  account. 
 To manage your code, choose Git or Team Foundation Version Control.
 
-	<img src="../accounts/_img/sign-up-visual-studio-team-services/create-team-services-account.png" alt="Name your Visual Studio Team Services account, choose your version control" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../accounts/_img/sign-up-visual-studio-team-services/create-team-services-account.png" alt="Name your VSTS account, choose your version control" style="border: 2px solid #C3C3C3;" /> 
 
 	Learn which version control ([Git](../git/overview.md) 
 	or [Team Foundation Version Control](../tfvc/overview.md)) 

@@ -2,7 +2,7 @@
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-marketplace
 title: Flowdock with Visual Studio Team Services
-description: Use Flowdock with your Visual Studio Team Services account
+description: Use Flowdock with your VSTS account
 ms.assetid: 191c21d1-17d7-4d33-9a5f-231bc70edd0f
 ms.manager: douge
 ms.author: elbatk
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Notifications and Flowdock
 
-Visual Studio Team Services can post messages to your flow in Flowdock
+VSTS can post messages to your flow in Flowdock
 so everyone will know when code has been pushed or checked in, 
 a build has finished, or a work item has been created or updated.
 
@@ -51,7 +51,7 @@ a build has finished, or a work item has been created or updated.
 
    <img alt="Flowdock selected in the service dialog box" src="./_img/flowdock/flowdock-service.png" style="border: 1px solid #CCCCCC" />
 
-1. Configure the Visual Studio Team Services event that will push a message to Flowdock. 
+1. Configure the VSTS event that will push a message to Flowdock. 
 
    <img alt="Configure event" src="./_img/flowdock/configure-event.png" style="border: 1px solid #CCCCCC" />
 

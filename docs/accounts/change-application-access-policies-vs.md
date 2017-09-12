@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 
 **VSTS**
 
-Visual Studio Team Services offers the capability for other apps 
+VSTS offers the capability for other apps 
 to integrate with its services and resources in your VSTS account. 
 To access your account without asking for user credentials multiple times, 
 apps can use these authentication methods:
@@ -62,7 +62,7 @@ authentication error and can't access your account.
 To continue, you'll need at least Basic access and VSTS account owner permissions. 
 [How do I find the account owner?](faq-change-app-access.md#find-owner)
 
-0.  Sign in as the account owner to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).
+0.  Sign in as the account owner to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-change-app-access.md#ChooseOrgAcctMSAcct)
 

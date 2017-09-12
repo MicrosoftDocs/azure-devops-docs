@@ -1,6 +1,6 @@
 ---
 title: Learn about release views for package CI/CD
-description: Release views enable continuous integration and delivery of NuGet and npm packages in Package Management for Visual Studio Team Services and Team Foundation Server
+description: Release views enable continuous integration and delivery of NuGet and npm packages in Package Management for VSTS and Team Foundation Server
 ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package

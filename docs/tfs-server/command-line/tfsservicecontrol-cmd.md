@@ -37,7 +37,7 @@ You can use the **TFSServiceControl** command to stop or start all of the servic
 
 ## Remarks
 
-You use the **TFSServiceControl** command as part of specific maintenance tasks. After you specify the **quiesce** option, the server will not operate until you specify the **unquiesce** option. By default, the **TFSServiceControl** command is located in the %programfiles%\\Microsoft Team Foundation Server 12.0\\Tools directory.
+You use the **TFSServiceControl** command as part of specific maintenance tasks. After you specify the **quiesce** option, the server will not operate until you specify the **unquiesce** option. By default, the **TFSServiceControl** command is located in the %programfiles%\\TFS 12.0\\Tools directory.
 
 ## Example
 

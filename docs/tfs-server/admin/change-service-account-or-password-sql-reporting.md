@@ -111,7 +111,7 @@ To change the password using the TFSConfig utility:
     contains the **TFSConfig** utility.
 
     By default, the utility is located in 
-    *Drive*:\\Program Files\\Microsoft Team Foundation Server 12.0\\Tools.
+    *Drive*:\\Program Files\\TFS 12.0\\Tools.
 
 2.  At the command line, type **TFSConfig Accounts /UpdatePassword
     /accountType:ReportingDatasource /account:**

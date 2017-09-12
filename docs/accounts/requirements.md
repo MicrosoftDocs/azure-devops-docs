@@ -1,6 +1,6 @@
 ---
 title: Requirements and compatibility | Team Foundation Server Setup, Upgrade and Administration
-description: Describes hardware, operating systems, SQL Server, compatibility, and other requirements for TFS. Also describes compatibility between TFS client versions and server versions. Plus supported browsers for Visual Studio Team Services and web client access to TFS.
+description: Describes hardware, operating systems, SQL Server, compatibility, and other requirements for TFS. Also describes compatibility between TFS client versions and server versions. Plus supported browsers for VSTS and web client access to TFS.
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
 ms.service: vsts-admin
@@ -585,7 +585,7 @@ Team Explorer Everywhere 2010     | Eclipse 3.0-3.5 | ![Check](../_img/check.png
 <a name="supported-browsers"></a>
 ### Browsers
 
-You can use these browsers with Visual Studio Team Services 
+You can use these browsers with VSTS 
 and to access TFS with the web client.
 
 Version        | Edge        | Internet Explorer | Safari (Mac)   | Firefox     | Chrome

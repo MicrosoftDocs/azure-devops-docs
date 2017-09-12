@@ -12,7 +12,7 @@ ms.date: 08/22/2016
 
 # Add a build task
 
-Custom build tasks can be contributed by extensions that can be discovered and installed by users into a Visual Studio Team Services account. 
+Custom build tasks can be contributed by extensions that can be discovered and installed by users into a VSTS account. 
 These tasks will appear next to Microsoft-provided tasks in the Add Step wizard:
 <img alt="Integrations link on the account home page" src="_img/build-task-ext-choose-task.png" style="width:80%; display:block;margin-right:auto;margin-left:auto;margin-top:10px">
 
@@ -21,7 +21,7 @@ To learn more about the new cross-platform build system, see [Team Foundation Bu
 ## Preparation and required setup for this tutorial
 In order to create extensions for Team Services, there are some prerequisite software and tools you'll need:
 
-- A **Visual Studio Team Services account**, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
+- A **VSTS account**, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
 <a name="cli" />

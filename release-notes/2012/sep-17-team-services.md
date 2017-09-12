@@ -1,6 +1,6 @@
 ---
 title: Team Foundation Service updates - Sep 17
-description: Visual Studio Team Services release notes for September 27 2012
+description: VSTS release notes for September 27 2012
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

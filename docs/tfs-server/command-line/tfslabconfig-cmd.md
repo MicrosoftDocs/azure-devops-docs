@@ -15,11 +15,11 @@ ms.date: 08/04/2016
 
 Team Foundation Server includes a command-line tool to help you configure and manage the lab service provide by Visual Studio Lab Management.
 
-The **TFSLabConfig** command-line tool is located in Drive:\Program Files\Microsoft Team Foundation Server <version>\Tools on Team Foundation Server application tier -- by default, this will be:
-- TFS 2015: `%programfiles%\Microsoft Team Foundation Server 14.0\Tools`
-- TFS 2013: `%programfiles%\Microsoft Team Foundation Server 12.0\Tools`
-- TFS 2012: `%programfiles%\Microsoft Team Foundation Server 11.0\Tools`
-- TFS 2010: `%programfiles%\Microsoft Team Foundation Server 2010\Tools`
+The **TFSLabConfig** command-line tool is located in Drive:\Program Files\TFS <version>\Tools on Team Foundation Server application tier -- by default, this will be:
+- TFS 2015: `%programfiles%\TFS 14.0\Tools`
+- TFS 2013: `%programfiles%\TFS 12.0\Tools`
+- TFS 2012: `%programfiles%\TFS 11.0\Tools`
+- TFS 2010: `%programfiles%\TFS 2010\Tools`
 
 It is also located in Drive:\Program Files\Microsoft Visual Studio &lt;version&gt;\Common7\IDE on the client machine where Microsoft Test Manager is installed.
 

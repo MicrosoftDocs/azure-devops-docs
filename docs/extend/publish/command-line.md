@@ -3,7 +3,7 @@ ms.prod: vs-devops-alm
 ms.technology: vsts-sub-extend
 ms.service: vsts-extend
 title: Publishing and Packaging an Extension from the Command Line | Extensions for Visual Studio Team Services
-description: How to package and publish your Visual Studio Team Services Extension from the command line.
+description: How to package and publish your VSTS Extension from the command line.
 ms.assetid: 7adcb1a2-1894-4751-8bed-7c04d084b5cf
 ms.manager: douge
 ms.author: elbatk

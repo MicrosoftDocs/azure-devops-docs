@@ -1,6 +1,6 @@
 ---
 title: Kanban Updates, new Branch Policies, and more... – Sep 18
-description: Visual Studio Team Services release notes for September 18 2015
+description: VSTS release notes for September 18 2015
 ms.assetid: 9232867d-6a5f-4716-8d60-c3e5debc311d
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles

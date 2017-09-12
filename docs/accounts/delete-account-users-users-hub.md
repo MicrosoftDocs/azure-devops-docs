@@ -37,9 +37,9 @@ learn [how to change paid extension users](../billing/change-number-paid-extensi
 You'll need [VSTS project collection administrator or account owner permissions](faq-add-delete-users.md#find-owner). 
 
 
-##  Delete users from your Visual Studio Team Services account
+##  Delete users from your VSTS account
 
-0. Sign in to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).
+0. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
  [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)
 

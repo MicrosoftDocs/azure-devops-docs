@@ -15,7 +15,7 @@ ms.date: 1/10/2017
 
 **VSTS**
 
-You can add these users to your Visual Studio Team Services account for free:
+You can add these users to your VSTS account for free:
 
 *	5 users who get [Basic](https://www.visualstudio.com/team-services/compare-features/) 
 features like version control, tools for Agile, Java, build, release management, and more

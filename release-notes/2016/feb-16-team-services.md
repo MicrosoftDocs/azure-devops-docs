@@ -1,6 +1,6 @@
 ---
 title: Search extensions on Marketplace, Flexible build policy for Git, SCVMM Support and more – Feb 16
-description: Visual Studio Team Services release notes for February 16 2016
+description: VSTS release notes for February 16 2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
@@ -20,7 +20,7 @@ You can download the Package management extension from the [Visual Studio Market
 
 ##Search on Visual Studio Marketplace
 
-Search has been a highly requested feature for Visual Studio Marketplace. With this release we are bringing in basic search support for Visual Studio Marketplace in Visual Studio Team Services and Visual Studio Code extensions. Integrated search is currently not supported for the Visual Studio extensions; searching for the same will currently redirect you to a new tab with results shown from the Visual Studio Gallery.
+Search has been a highly requested feature for Visual Studio Marketplace. With this release we are bringing in basic search support for Visual Studio Marketplace in VSTS and Visual Studio Code extensions. Integrated search is currently not supported for the Visual Studio extensions; searching for the same will currently redirect you to a new tab with results shown from the Visual Studio Gallery.
 
 ##Work item query charts in the dashboard catalog
 

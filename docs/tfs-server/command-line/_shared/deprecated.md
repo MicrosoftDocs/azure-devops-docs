@@ -125,7 +125,7 @@ To learn more about the migration and when to use this command, see [Manual upda
 
 The TCM command is applied to individual team projects. If you need to upgrade test plans in more than one team project, you will have to run it against each team project individually.
 
-You must run the **TCM** command from the tools directory for TFS. By default, that location is: `drive:\%programfiles%\Microsoft Team Foundation Server 12.0\Tools`.
+You must run the **TCM** command from the tools directory for TFS. By default, that location is: `drive:\%programfiles%\TFS 12.0\Tools`.
 
 You use the **TCM** command only in the event that automatic migration of existing test data fails.
 To learn more about the migration and when to use this command, [Manual updates to support test management](https://msdn.microsoft.com/library/edbe689d-7863-4273-916f-b7e93b7f00b3).

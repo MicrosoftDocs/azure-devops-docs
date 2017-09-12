@@ -1,6 +1,6 @@
 ---
 title: Client authentication options | VSTS  
-description: Client authentication options to use when connecting to the Analytics service for Visual Studio Team Services using Power BI or Excel
+description: Client authentication options to use when connecting to the Analytics service for VSTS using Power BI or Excel
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 91C6424B-3C3D-4773-B252-C627A5CE7C6D 

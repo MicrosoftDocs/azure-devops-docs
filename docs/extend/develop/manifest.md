@@ -371,7 +371,7 @@ Demands are specified in the extension manifest. For example:
 }
 ```
 
-In this example, the extension demands version 3.0 of the APIs, which means it can only be installed to Visual Studio Team Services or Team Foundation Server 2017 RTM and later. It also requires the `ms.vss-dashboards-web` extension (and its `widget-catalog` contribution) to be installed (and enabled) in the collection before your extension can be installed.    
+In this example, the extension demands version 3.0 of the APIs, which means it can only be installed to VSTS or Team Foundation Server 2017 RTM and later. It also requires the `ms.vss-dashboards-web` extension (and its `widget-catalog` contribution) to be installed (and enabled) in the collection before your extension can be installed.    
 
 ### Supported demands
 

@@ -1,6 +1,6 @@
 ---
 title: File matching patterns
-description: File matching patterns for Microsoft Visual Studio Team Services VSTS and Microsoft Team Foundation Server TFS
+description: File matching patterns for VSTS and TFS 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 8A92C09C-3EE2-48EF-A2C0-3B2005AACFD7

@@ -1,6 +1,6 @@
 ---
 title: SSH connections to Git repos, Docker integration, and more – June 1
-description: Visual Studio Team Services release notes for June 1 2016
+description: VSTS release notes for June 1 2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

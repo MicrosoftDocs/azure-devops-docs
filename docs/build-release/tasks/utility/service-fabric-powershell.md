@@ -1,6 +1,6 @@
 ---
 description: Service Fabric PowerShell Utility task
-title: Service Fabric PowerShell build task Microsoft Visual Studio Team Services VSTS and Microsoft Team Foundation Server TFS
+title: Service Fabric PowerShell build task VSTS and TFS 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-release
 ms.assetid: EE9455CD-5E1A-42C8-AC6D-8CF44878F090

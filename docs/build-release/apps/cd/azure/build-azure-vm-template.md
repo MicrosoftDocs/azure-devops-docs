@@ -52,7 +52,7 @@ Follow these steps to create and check-in a new Resource Manager template.
 
 1. Save the entire solution (not just the project) and 
    commit the changes into a Team Foundation Server or 
-   Visual Studio Team Services Git repository.
+   VSTS Git repository.
 
 ### Create the build definition
 

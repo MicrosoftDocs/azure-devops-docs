@@ -1,6 +1,6 @@
 ---
 title: Quick code editing, backlog filtering, and more – Dec 17
-description: Visual Studio Team Services release notes for Decemeber 17 2014
+description: VSTS release notes for Decemeber 17 2014
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

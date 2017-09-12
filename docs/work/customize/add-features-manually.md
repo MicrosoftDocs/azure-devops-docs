@@ -603,7 +603,7 @@ Add the ```Properties``` section.  For example: <br/>
 Migrate existing test plans and suites to work item based test plans and suites.  
 
 1.	Open a Command Prompt window on the TFS application-tier server:  
-	```cd %programfiles%\Microsoft Team Foundation Server 14.0\Tools```
+	```cd %programfiles%\TFS 14.0\Tools```
 
 2.	Run the ```TfsConfig TCM``` command.
 	```TFSConfig TCM /upgradeTestPlans /CollectionName:CollectionName /TeamProject:TeamProjectName```

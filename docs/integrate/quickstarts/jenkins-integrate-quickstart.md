@@ -1,6 +1,6 @@
 ---
 title: Integrate Jenkins with Visual Studio Team Services
-description: Combine your Jenkins build functionality with your Visual Studio Team Services platform.
+description: Combine your Jenkins build functionality with your VSTS platform.
 ms.assetid: d5206591-1b81-4ecc-a008-7658a84b6f12
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-integrate

@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Accounts and profiles
 
-Each person using Visual Studio Team Services has a [profile](./profiles.md) and access to one or more [accounts](accounts.md).
+Each person using VSTS has a [profile](./profiles.md) and access to one or more [accounts](accounts.md).
 
 * [Accounts](accounts.md)
 * [Profiles](./profiles.md)

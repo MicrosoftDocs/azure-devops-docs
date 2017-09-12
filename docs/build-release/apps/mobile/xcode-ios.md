@@ -1,6 +1,6 @@
 ---
 title: Build your Xcode app
-description: Build and test Xcode projects with Visual Studio Team Services or Team Foundation Server
+description: Build and test Xcode projects with VSTS or Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: e1b5bda1-9cab-4083-a593-36ae52e82b4a

@@ -20,7 +20,7 @@ ms.date: 05/23/2017
 >
 >To learn more about process models, see [Customize work tracking](../customize/customize-work.md). 
 
-Visual Studio Team Services supports adding and updating processes through a web based [import process](import-process.md) administrative experience. 
+VSTS supports adding and updating processes through a web based [import process](import-process.md) administrative experience. 
 Once you add a process, you can create one or more team projects from it. 
 You can update the process at any time by importing the process again and confirming that you want to update it.
 The changes made to the process template are then applied to all team projects using that process.  

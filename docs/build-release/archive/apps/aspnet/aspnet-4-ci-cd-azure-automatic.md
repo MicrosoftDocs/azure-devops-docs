@@ -220,7 +220,7 @@ may encounter the following known issues:
   Services account information within the [Azure classic portal](https://manage.windowsazure.com/),
   but not in the [Azure dashboard](https://portal.azure.com/). You may see a
   "No accounts found" message in this situation. To resolve this, you can
-  configure your Visual Studio Team Services account to be backed by an
+  configure your VSTS account to be backed by an
   Azure Active Directory (AAD) instance. For information on how to do this, see
   [VSTS - Access with Azure Active Directory](../../../../accounts/access-with-azure-ad.md).
 

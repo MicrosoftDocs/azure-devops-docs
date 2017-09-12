@@ -1,6 +1,6 @@
 ---
 title: Custom work item types and stakeholder support for exploratory testing – Sept 2
-description: Visual Studio Team Services release notes for September 02 2016
+description: VSTS release notes for September 02 2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

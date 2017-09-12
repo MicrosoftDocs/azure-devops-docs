@@ -37,7 +37,7 @@ When you set up Git for the first time on a new machine, you may create a commit
 Git will prompt you to set an explicit name and email address, and the new settings will be used for subsequent commits.
 This is a frequent source of one author having multiple names.
 
-## Where does Visual Studio Team Services get your name and email?
+## Where does VSTS get your name and email?
 
 Your details in VSTS come from your [profile](https://app.vssps.visualstudio.com/profile/view).
 Your profile was originally populated from details in your Microsoft Account or Azure Active Directory account, but you may change these details yourself.

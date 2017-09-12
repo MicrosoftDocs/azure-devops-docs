@@ -26,7 +26,7 @@ To assign extensions, you'll need Team Services
 > If you installed these extensions, you don't have to assign 
 > them to Visual Studio subscribers in your account. 
 
-0.	Sign in to your Visual Studio Team Services account 
+0.	Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```).
 
 0.	Go to **Users**.

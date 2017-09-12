@@ -15,7 +15,7 @@ ms.topic: get-started-article
 
 **VSTS**
 
-To move your Visual Studio Team Services account 
+To move your VSTS account 
 between directories (tenants) in Azure AD, 
 disconnect your account from its current directory, 
 then reconnect your account to the directory that you want.

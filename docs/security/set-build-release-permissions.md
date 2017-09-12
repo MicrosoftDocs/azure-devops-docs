@@ -1,6 +1,6 @@
 ---
 title: Set build and release permissions in VSTS and TFS
-description: Grant or restrict access to build-release functions supported in Visual Studio Team Services and TFS
+description: Grant or restrict access to build-release functions supported in VSTS and TFS
 ms.assetid:  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfs

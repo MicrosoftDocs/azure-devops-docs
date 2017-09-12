@@ -97,7 +97,7 @@ To configure Team Foundation Server Proxy by using Team Foundation Server Config
 
 8.  In **Cache Root Directory**, accept the default value, or type the path of a different location in which to store cache files.
 
-    The default value is *Drive*:\\Program Files\\Microsoft Team Foundation Server 12.0\\Version Control Proxy\\ \_tfs\_data
+    The default value is *Drive*:\\Program Files\\TFS 12.0\\Version Control Proxy\\ \_tfs\_data
 
     *Drive* is the letter of the drive on which you want to store cache files. You can specify a mapped network drive.
 

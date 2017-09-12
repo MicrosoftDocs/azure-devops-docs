@@ -1,6 +1,6 @@
 ---
 title: Build your ASP.NET 4 app
-description: Define a continuous integration (CI) build for your ASP.NET 4 app in Visual Studio Team Services or Microsoft Team Foundation Server (TFS)
+description: Define a continuous integration (CI) build for your ASP.NET 4 app in VSTS or Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98

@@ -110,7 +110,7 @@ The following steps provide support for the test experience available with TFS 2
     1.  Open a Command Prompt window on the TFS application-tier server:  
   
         ```  
-        cd %programfiles%\Microsoft Team Foundation Server 12.0\Tools  
+        cd %programfiles%\TFS 12.0\Tools  
         ```  
   
     2.  Run the **TfsConfig TCM** command.  

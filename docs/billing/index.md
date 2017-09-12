@@ -1,5 +1,5 @@
 ---
-title: Billing for Visual STudio Team Services  
+title: Billing for VSTS  
 description: Index to topics for account billing for Visual Studio Team Services (VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-billing

@@ -1,6 +1,6 @@
 ---
 title: Work item follow, move & change type - April 13
-description: Visual Studio Team Services release notes for April 13 2016
+description: VSTS release notes for April 13 2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

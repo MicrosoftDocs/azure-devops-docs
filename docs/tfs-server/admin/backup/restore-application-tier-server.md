@@ -26,7 +26,7 @@ You can also add more than one application-tier server to a deployment of Team F
 
     For more information, see [TFSServiceControl Command](../../command-line/tfsservicecontrol-cmd.md).
 
-2.  If you are using Network Service as the service account for Team Foundation (TFSService), on the application-tier server, open a Command Prompt window, and change directories to *Drive:%Program Files%*\\ Microsoft Team Foundation Server 12.0\\Tools. At the command prompt, enter the following command:
+2.  If you are using Network Service as the service account for Team Foundation (TFSService), on the application-tier server, open a Command Prompt window, and change directories to *Drive:%Program Files%*\\ TFS 12.0\\Tools. At the command prompt, enter the following command:
 
     **TfsConfig Accounts /add /account:"NT Authority\\Network Service" /accountType:ApplicationTier /SQLInstance:** *ServerName* **/DatabaseName:** *DatabaseName*
 

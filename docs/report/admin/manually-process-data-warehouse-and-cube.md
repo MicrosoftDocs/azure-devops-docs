@@ -43,7 +43,7 @@ Processing the warehouse or cube depends on how much data is involved; it can ta
 
 3. The **WarehouseControlWebService** page opens.
 
-	If the page doesn't open, verify that the Microsoft Team Foundation Server Application Pool is running.
+	If the page doesn't open, verify that the TFS Application Pool is running.
  
 ### To check the process status
 

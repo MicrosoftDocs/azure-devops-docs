@@ -1,6 +1,6 @@
 ---
 title: Set permissions and access for tracking 
-description: How to guide for setting permissions and access levels to support work tracking tasks (Visual Studio Team Services and Team Foundation Server)
+description: How to guide for setting permissions and access levels to support work tracking tasks (VSTS and Team Foundation Server)
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F

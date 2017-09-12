@@ -1,6 +1,6 @@
 ---
 title: Shell script
-description: How to execute a bash script when building code in Visual Studio Team Services VSTS and Team Foundation Server TFS
+description: How to execute a bash script when building code in VSTS and Team Foundation Server TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 8D152C13-0934-4665-8D08-30E2A7841351

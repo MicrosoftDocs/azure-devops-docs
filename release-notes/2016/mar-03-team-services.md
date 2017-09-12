@@ -1,6 +1,6 @@
 ---
 title: Better exploratory testing, test results for release environments, squash merge, and more – Mar 3
-description: Visual Studio Team Services release notes for March 3 2016
+description: VSTS release notes for March 3 2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

@@ -12,7 +12,7 @@ ms.topic: get-started-article
 
 # What is Visual Studio Team Services? 
 
-Visual Studio Team Services is a cloud service for collaborating on code development. It provides an integrated set of features that you access through your web browser or IDE client, including: 
+VSTS is a cloud service for collaborating on code development. It provides an integrated set of features that you access through your web browser or IDE client, including: 
 
 - Git repositories for source control of your code   
 - Build and release management to support continuous integration and delivery of your apps 

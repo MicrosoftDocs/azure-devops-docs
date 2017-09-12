@@ -15,7 +15,7 @@ ms.date: 10/20/2016
 
 This example shows how you can integrate **System 
 Center Virtual Machine Manager** (SCVMM) with Release Management in 
-Visual Studio Team Services or Team Foundation Server.
+VSTS or Team Foundation Server.
 
 ## Prepare
 

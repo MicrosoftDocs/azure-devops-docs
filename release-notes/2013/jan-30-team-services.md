@@ -1,6 +1,6 @@
 ---
 title: Team Foundation Service updates - Jan 30
-description: Visual Studio Team Services release notes for January 30 2013
+description: VSTS release notes for January 30 2013
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

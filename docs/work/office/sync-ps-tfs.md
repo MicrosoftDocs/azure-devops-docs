@@ -29,9 +29,9 @@ If you are on TFS 2017 and want to integrate with Microsoft Project Server, you 
 
 <h3 style="color:white">[![Tivitie](_img/tivitie-Blue2.png)](http://www.tivitie.com/projectconnect) Project Connect from Tivitie</h3>
 
-Keep your agile teams working in VSTS and TFS, the tool they are accustomed to, while providing portfolio and program leaders a broad view of the project portfolio with Project Connect. A unified PPM solution bridges gaps that are impacting productivity and the bottom line. Connecting Project Online with Visual Studio Team Services drives enhanced visibility & alignment - making sure the projects that the teams are working so hard on - are the right projects and deliver value to the organization.
+Keep your agile teams working in VSTS and TFS, the tool they are accustomed to, while providing portfolio and program leaders a broad view of the project portfolio with Project Connect. A unified PPM solution bridges gaps that are impacting productivity and the bottom line. Connecting Project Online with VSTS drives enhanced visibility & alignment - making sure the projects that the teams are working so hard on - are the right projects and deliver value to the organization.
 
-[Project Connect](http://www.tivitie.com/projectconnect) for Visual Studio Team Services offers a seamless approach to exchange critical information between development teams and project teams using Project Online and VSTS. 
+[Project Connect](http://www.tivitie.com/projectconnect) for VSTS offers a seamless approach to exchange critical information between development teams and project teams using Project Online and VSTS. 
 
 **Marketplace extension**: [Project Connect](https://marketplace.visualstudio.com/items?itemName=TVT.TVT-PjO). 
 

@@ -18,7 +18,7 @@ You can purchase additional minutes to support [load testing your apps](../load-
 
 Load tests are measured and billed in virtual user minutes (VUM) as described in  this Q&A: [What are virtual user minutes (VUMs)? How many minutes will my load test use?](../load-test/reference-qa.md#VUM). 
 
-Your Visual Studio Team Services account includes **free**
+Your VSTS account includes **free**
 20,000 virtual user minutes per month for cloud-based load testing.
 If you need more than this amount, you must first
 [set up billing for your VSTS account](set-up-billing-for-your-account-vs.md).

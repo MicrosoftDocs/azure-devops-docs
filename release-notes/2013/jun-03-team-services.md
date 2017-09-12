@@ -1,6 +1,6 @@
 ---
 title: Team Foundation Service Updates for TechEd 2013
-description: Visual Studio Team Services release notes for June 3 2013
+description: VSTS release notes for June 3 2013
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

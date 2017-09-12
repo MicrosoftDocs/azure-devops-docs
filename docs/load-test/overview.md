@@ -74,7 +74,7 @@ Load test your app with hundreds of thousands of users using
 * You get a generous allocation of virtual user minutes free each month.
 
 * See the section **Performance &amp; Load Testing** at the bottom of the
-  [Visual Studio Team Services Pricing](https://www.visualstudio.com/team-services/pricing/) page.
+  [VSTS Pricing](https://www.visualstudio.com/team-services/pricing/) page.
   
 ## More information
 

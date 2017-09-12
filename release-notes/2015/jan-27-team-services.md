@@ -1,6 +1,6 @@
 ---
 title: VS Online Basic license expanded – Jan 27
-description: Visual Studio Team Services release notes for January 27 2015
+description: VSTS release notes for January 27 2015
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

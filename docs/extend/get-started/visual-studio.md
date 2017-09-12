@@ -59,7 +59,7 @@ We'll display it when someone installs your extension.
 <a id="manifest"></a>
 ### Create the extension manifest
 
-The extension manifest tells Visual Studio Team Services about your extension.
+The extension manifest tells VSTS about your extension.
 
 [!INCLUDE [Extension_manifest](../_shared/procedures/create-base-manifest.md)]
 
@@ -83,7 +83,7 @@ The extension manifest tells Visual Studio Team Services about your extension.
 
 	![Properties dialog with SSL enabled](../_shared/procedures/_img/create-hub-app-asp4/enable-ssl.png)
 
-1. Start your app in Visual Studio so that Visual Studio Team Services can access it.
+1. Start your app in Visual Studio so that VSTS can access it.
 
 1. Go to your hub in the **Work** hub group.
 
@@ -186,7 +186,7 @@ with a callback that loads the grid control with the results.
 <a id="action"></a>
 ## Add an action
 
-You can add actions to the Visual Studio Team Services user interface that call your extension. 
+You can add actions to the VSTS user interface that call your extension. 
 In this case, you'll add an action to the context menu for queries and folders in the work hub
 that launches the Hello hub and send it a query to run.
 

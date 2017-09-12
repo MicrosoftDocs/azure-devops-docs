@@ -23,7 +23,7 @@ In order to create extensions for Team Services, there are some prerequisite sof
 **Knowledge:**
 Some knowledge of JavaScript, HTML, CSS is required for widget development.
 
-- A **Visual Studio Team Services account** for installing and testing your widget, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
+- A **VSTS account** for installing and testing your widget, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
 - **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
@@ -324,7 +324,7 @@ Choose your widget and click the 'Add' button to add it to your dashboard.
 <a name="part-2"/>
 
 ## Part 2: Hello World with VSTS REST API
-Widgets can call any of the [REST APIs](https://visualstudio.com/integrate/api/overview.md) in VSTS to interact with Visual Studio Team Services resources.
+Widgets can call any of the [REST APIs](https://visualstudio.com/integrate/api/overview.md) in VSTS to interact with VSTS resources.
 In this example, we use the REST API for WorkItemTracking to fetch information about an existing query and display some query info in the widget right 
 below the "Hello World" text. 
 

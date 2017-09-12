@@ -75,7 +75,7 @@ Now check the list of identities in the current TFS environment and look for any
 
 Stopping the services helps ensure that users cannot make changes to work items or check in source code to the original deployment during or after the move process.
 
-1.  On the TFS application-tier computer, open a Command Prompt window, and change directories to *Drive*:\\%programfiles%\\Microsoft Team Foundation Server 12.0\\Tools.
+1.  On the TFS application-tier computer, open a Command Prompt window, and change directories to *Drive*:\\%programfiles%\\TFS 12.0\\Tools.
 
 2.  Type the following [TFSServiceControl](../command-line/tfsservicecontrol-cmd.md) command:
 
@@ -203,7 +203,7 @@ If the network share name or storage device changed with the domain name change,
 
 Now that you've updated TFS with all the information for the new environment, restart the services.
 
-1.  On the TFS application-tier computer, open a Command Prompt window with administrative permissions and change directories to *Drive*:\\%programfiles%\\Microsoft Team Foundation Server 12.0\\Tools.
+1.  On the TFS application-tier computer, open a Command Prompt window with administrative permissions and change directories to *Drive*:\\%programfiles%\\TFS 12.0\\Tools.
 
 2.  Type the following [TFSServiceControl](../command-line/tfsservicecontrol-cmd.md) command:
 

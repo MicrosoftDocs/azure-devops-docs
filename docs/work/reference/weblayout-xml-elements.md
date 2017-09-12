@@ -527,7 +527,7 @@ To learn more about process models and what's supported with each, see [Customiz
 <a id="marketplace-extensions">  </a>
 ### Marketplace extensions  
 
-Visit the [Visual Studio Team Services Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads) to find extensions you can start using.  
+Visit the [VSTS Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads) to find extensions you can start using.  
 
 <a id="extensions">  </a>
 ### Form extensions 

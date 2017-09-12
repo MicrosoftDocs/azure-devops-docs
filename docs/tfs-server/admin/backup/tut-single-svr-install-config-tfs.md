@@ -180,7 +180,7 @@ To reconfigure reporting and Analysis Services:
 8.  In the administration console, choose **Start Jobs** to restart reporting.
 
 9.  Open a Command Prompt window, and then change directories to
-    `%ProgramFiles%\\Microsoft Team Foundation Server 12.0\\Tools`.
+    `%ProgramFiles%\\TFS 12.0\\Tools`.
 
 10. Enter the following command to rebuild the database for Analysis
     Services:

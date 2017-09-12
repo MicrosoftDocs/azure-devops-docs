@@ -20,7 +20,7 @@ For feedback requests and alerts to work, you must configure an SMTP server for 
 
 1.  If you aren't an administrator of TFS, [get those permissions](../add-administrator-tfs.md).
 
-2.  Open the Team Foundation Administration Console from the **Start** menu. Or, at a command prompt, type **TFSMgmt.exe** (located in *Drive*:\\%programfiles%\\Microsoft Team Foundation Server 12.0\\Tools).
+2.  Open the Team Foundation Administration Console from the **Start** menu. Or, at a command prompt, type **TFSMgmt.exe** (located in *Drive*:\\%programfiles%\\TFS 12.0\\Tools).
 
 3.  Open email alert settings.
 
@@ -52,7 +52,7 @@ You can customize the format of email notifications, or alerts, that [team membe
 
 Alert format transform files are stored in the following folder on the application-tier server:
 
-*Drive*:\\%programfiles%\\Microsoft Team Foundation Server 12.0\\Application Tier\\TFSJobAgent\\Transforms\\1033
+*Drive*:\\%programfiles%\\TFS 12.0\\Application Tier\\TFSJobAgent\\Transforms\\1033
 
 You can use an XML editor, such as Visual Studio, to change any of the transform files. The following table lists the two transform files used when email notifications are sent for work item change events:
 
@@ -74,7 +74,7 @@ To perform these procedures, you must be a member of the **Administrators** secu
 
 1.  On your application-tier server, open this folder:
 
-    *Drive*:\\%programfiles%\\Microsoft Team Foundation Server 12.0\\Application Tier\\TFSJobAgent\\Transforms\\1033
+    *Drive*:\\%programfiles%\\TFS 12.0\\Application Tier\\TFSJobAgent\\Transforms\\1033
 
 2.  Open WorkItemChangedEvent.xsl in Notepad or some other text editor.
 

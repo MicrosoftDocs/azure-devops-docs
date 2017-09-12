@@ -16,7 +16,7 @@ ms.date: 1/13/2017
 **VSTS**
 
 Extensions offer features and capabilities that you 
-can install in your Visual Studio Team Services account. 
+can install in your VSTS account. 
 Some paid extensions offer a trial so that you can try 
 their features free for a limited time. 
 For example, the [Test Manager](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web) 

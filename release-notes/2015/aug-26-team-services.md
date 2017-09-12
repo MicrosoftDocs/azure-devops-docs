@@ -1,6 +1,6 @@
 ---
 title: Sprint planning improvements and SonarQube analysis build tasks – Aug 26
-description: Visual Studio Team Services release notes for August 26 2015
+description: VSTS release notes for August 26 2015
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

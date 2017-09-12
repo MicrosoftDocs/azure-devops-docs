@@ -72,7 +72,7 @@ learn [how to change paid extension users](../billing/change-number-paid-extensi
 
 You'll need [VSTS project collection administrator or account owner permissions](faq-add-delete-users.md#find-owner). 
 
-##	Add users to your Visual Studio Team Services account
+##	Add users to your VSTS account
 
 0.	Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```). 

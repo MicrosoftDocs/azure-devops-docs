@@ -1,6 +1,6 @@
 ---
 title: Card configuration options – Apr 10
-description: Visual Studio Team Services release notes for April 10 2015
+description: VSTS release notes for April 10 2015
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

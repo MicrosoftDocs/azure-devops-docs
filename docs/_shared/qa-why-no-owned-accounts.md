@@ -30,5 +30,5 @@ out completely from VSTS:
 	**Tip** If the sign-out page takes more than a minute, 
 	close the browser, and continue.
 
-0.	Sign in to VSTS again. 
+0.	Sign in to VSTS 
 Select your other identity.

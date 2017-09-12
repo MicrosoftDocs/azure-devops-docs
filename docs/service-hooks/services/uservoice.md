@@ -2,7 +2,7 @@
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-marketplace
 title: UserVoice with Visual Studio Team Services
-description: Use UserVoice with your Visual Studio Team Services account
+description: Use UserVoice with your VSTS account
 ms.assetid: c0f08f71-39cd-48ac-aff0-0618c57229c7
 ms.manager: douge
 ms.author: elbatk
@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 Use User Voice to get feedback from your customers and push that feedback directly into your backlog in Visual Studio Team Services.
 When your team updates the item in the backlog, the User Voice item is updated, too. 
 
-Link your Visual Studio Team Services account to your UserVoice account.
+Link your VSTS account to your UserVoice account.
 
 1. If you don't have a UserVoice account, get one [here](https://www.uservoice.com/for/visual-studio-online/).
 
@@ -28,20 +28,20 @@ Link your Visual Studio Team Services account to your UserVoice account.
 
 4. Sync to Visual Studio Team Services.
 
-	<img alt="Uservoice settings dialog box, integrations tab, Visual Studio Team Services link" src="./_img/uservoice/sync-visual-studio-online.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Uservoice settings dialog box, integrations tab, VSTS link" src="./_img/uservoice/sync-visual-studio-online.png" style="border: 1px solid #CCCCCC" />
 
-5. Link your Visual Studio Team Services account to your UserVoice account. 
+5. Link your VSTS account to your UserVoice account. 
 
 	<img alt="Uservoice settings dialog box, integrations tab, link account link" src="./_img/uservoice/uservoice-link-account.png" style="border: 1px solid #CCCCCC" />
 
 	
-6. Authorize UserVoice to access your Visual Studio Team Services account. 
+6. Authorize UserVoice to access your VSTS account. 
 
-	<img alt="Visual Studio Team Services authorization dialog box" src="./_img/uservoice/authorize.png" style="border: 1px solid #CCCCCC" />
+	<img alt="VSTS authorization dialog box" src="./_img/uservoice/authorize.png" style="border: 1px solid #CCCCCC" />
 
 ## Add an item to your backlog from a UserVoice idea
 
-You can create a work item in Visual Studio Team Services form an idea in UserVoice.
+You can create a work item in VSTS form an idea in UserVoice.
 In this case, we're creating a product backlog item. You might want to create a bug in some cases.
 Or, if your team uses user stories instead of product backlog items, you can create those.
 
@@ -54,7 +54,7 @@ The description you type here will be the description of the item in Visual Stud
 
 	<img alt="Create work item dialog box in Uservoice" src="./_img/uservoice/uservoice-create-work-item.png" style="border: 1px solid #CCCCCC" />
 
-3. Submit the idea. A link to the item in Visual Studio Team Services shows up on the UserVoice idea.
+3. Submit the idea. A link to the item in VSTS shows up on the UserVoice idea.
 
 	<img alt="Uservoice idea with work item" src="./_img/uservoice/idea-with-work-item.png" style="border: 1px solid #CCCCCC" />
 
@@ -80,9 +80,9 @@ Your customers can see that you're doing this work.
 
 	<img alt="Updated work item in Uservoice idea" src="./_img/uservoice/updated-work-item.png" style="border: 1px solid #CCCCCC" />
 
-## Add comments to items in Visual Studio Team Services from UserVoice
+## Add comments to items in VSTS from UserVoice
 
-1. In UserVoice, add a note to the linked Visual Studio Team Services item.
+1. In UserVoice, add a note to the linked VSTS item.
 
 	<img alt="Uservoice add note dialog box" src="./_img/uservoice/add-note.png" style="border: 1px solid #CCCCCC" />
 
@@ -91,7 +91,7 @@ Your customers can see that you're doing this work.
 	<img alt="Work item discussion tab with note added" src="./_img/uservoice/work-item-discussion.png" style="border: 1px solid #CCCCCC" />
 
 ## Pricing
-Visual Studio Team Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
+VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A

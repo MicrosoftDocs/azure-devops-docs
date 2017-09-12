@@ -1,6 +1,6 @@
 ---
 title: Service hooks event reference | Visual Studio Team Services
-description: Events supported by Visual Studio Team Services and Team Foundation Server
+description: Events supported by VSTS and Team Foundation Server
 ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-integrate

@@ -19,7 +19,7 @@ ms.custom: mvc
 
 # Implement a CI/CD process to build and deploy your ASP.NET app to Azure
 
-Visual Studio Team Services provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your
+VSTS provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your
 ASP.NET apps.
 This quickstart shows how to set up CI and CD to deploy
 an ASP.NET app

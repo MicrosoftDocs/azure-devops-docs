@@ -34,7 +34,7 @@ To open the administration console at a command prompt:
 
 1. On a server that is running one or more components of Team Foundation, open a Command Prompt window and change directories to the tools directory for Team Foundation Server.
 
-By default, the tools directory is located in `Drive:\Program Files\Microsoft Team Foundation Server <version>\Tools`.
+By default, the tools directory is located in `Drive:\Program Files\TFS <version>\Tools`.
 
 2. Type TFSMgmt.exe and press ENTER.
 
