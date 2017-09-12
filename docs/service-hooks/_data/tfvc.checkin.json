@@ -1,0 +1,32 @@
+{
+    "id": "85828cda-94fa-428f-99dd-53a4492d6b3b",
+    "eventType": "tfvc.checkin",
+    "publisherId": "tfs",
+    "message": {
+        "text": "Service Hooks Test 12/20/2013 6:47:31 AM",
+        "html": "Service Hooks Test 12/20/2013 6:47:31 AM (<b>HTML</b>)",
+        "markdown": "Service Hooks Test 12/20/2013 6:47:31 AM (**markdown**)"
+    },
+    "detailedMessage": {
+        "text": "Service Hooks test for publisher \"Team Foundation Server\", event type \"tfvcCheckin\". Initiated: Friday, December 20, 2013 6:47:31 AM",
+        "html": "Service Hooks Test 12/20/2013 6:47:31 AM (<b>HTML</b>)",
+        "markdown": "Service Hooks Test 12/20/2013 6:47:31 AM (**markdown**)"
+    },
+    "resource": {
+        "changesetId": 12345,
+        "url": "http://me.visualstudio.com/DefaultCollection/_apis/tfvc/changesets/12345",
+        "author": {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "displayName": "Firstname Surname",
+            "uniqueName": "DOMAIN\\username"
+        },
+        "checkedInBy": {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "displayName": "Firstname Surname",
+            "uniqueName": "DOMAIN\\username"
+        },
+        "createdDate": "2013-12-20T06:47:31.9011658Z",
+        "comment": "comment"
+    },
+    "createdDate": "2013-12-20T06:47:30.542Z"
+}

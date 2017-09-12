@@ -1,0 +1,24 @@
+﻿{
+    "scopes": [
+        "vso.work",
+        "vso.code_write",
+        "vso.build_execute"
+    ],
+    "demands": [
+        "api-version/3.0"
+    ],
+    "contributions": [
+        {
+            "id": "showCommits",
+            "type": "ms.vss-web.action",
+            "description": "Adds a menu action from builds grid to show associated items.",
+            "targets": [
+                "ms.vss-build-web.completed-build-menu"
+            ],
+            "properties": {
+                "title": "View associated items",
+                "uri": "launch.html"
+            }
+        }
+    ]
+}

@@ -1,0 +1,372 @@
+- name: Build and Release
+  href: index.md
+- name: Overview
+  items:
+  - name: About Build and Release
+    href: overview.md
+  - name: About Deploying to Azure
+    href: overview-azure.md
+- name: Quickstarts
+  items:
+    - name: Build your app
+      items:
+      - name: ASP.NET Core
+        href: apps/aspnet/build-aspnet-core.md
+      - name: ASP.NET Core Container
+        href: apps/aspnet/build-aspnet-core-docker.md
+      - name: ASP.NET
+        href: apps/aspnet/build-aspnet-4.md
+      - name: .NET for Windows
+        href: apps/windows/dot-net.md
+      - name: Node.js
+        href: apps/nodejs/build-gulp.md
+      - name: Java
+        href: apps/java/build-maven.md
+      - name: C++
+        href: apps/windows/cpp.md
+      - name: Xcode
+        href: apps/mobile/xcode-ios.md
+      - name: Xamarin
+        href: apps/mobile/xamarin.md
+      - name: Universal Windows Platform
+        href: apps/windows/universal.md
+    - name: Deploy your app
+      items:
+      - name: Azure Web App
+        href: apps/cd/azure/aspnet-core-to-azure-webapp.md
+      - name: Windows VM
+        href: apps/cd/deploy-webdeploy-iis-deploygroups.md
+      - name: Web App for Containers
+        href: apps/cd/deploy-docker-webapp.md
+    - name: Test your app
+      items:
+      - name: VS Test
+        href: test/getting-started-with-continuous-testing.md?toc=/vsts/build-release/toc.json
+- name: Tutorials
+  items:
+  - name: CI builds for Git in VSTS
+    href: actions/ci-build-git.md
+  - name: Set up multi-stage release
+    href: actions/define-multistage-release-process.md
+- name: Concepts
+  items:
+  - name: Agents
+    items:
+    - name: Build and release agents
+      href: concepts/agents/agents.md
+    - name: Agent pools and queues
+      href: concepts/agents/pools-queues.md
+    - name: Hosted agents
+      href: concepts/agents/hosted.md
+    - name: Deployment groups
+      href: concepts/definitions/release/deployment-groups/index.md
+  - name: Definitions
+    items:
+    - name: Build
+      items:
+      - name: Artifacts
+        href: concepts/definitions/build/artifacts.md
+      - name: History
+        href: concepts/definitions/build/history.md
+      - name: Options
+        href: concepts/definitions/build/options.md
+      - name: Repository
+        href: concepts/definitions/build/repository.md
+      - name: Triggers
+        href: concepts/definitions/build/triggers.md
+      - name: Variables
+        href: concepts/definitions/build/variables.md
+    - name: Release
+      items:
+      - name: Release definitions
+        href: concepts/definitions/release/index.md
+      - name: Environments
+        href: concepts/definitions/release/environments.md
+      - name: Artifacts
+        href: concepts/definitions/release/artifacts.md
+      - name: Triggers
+        href: concepts/definitions/release/triggers.md
+      - name: Variables
+        href: concepts/definitions/release/variables.md
+      - name: Templates
+        href: concepts/definitions/release/env-templates.md
+  - name: Process
+    items:
+    - name: Tasks
+      href: concepts/process/tasks.md
+    - name: Phases
+      href: concepts/process/phases.md
+    - name: Conditions
+      href: concepts/process/conditions.md
+  - name: Releases
+    items:
+    - name: Releases and deployments
+      href: concepts/releases/index.md
+    - name: Work with release definitions
+      href: actions/work-with-release-definitions.md
+    - name: Create and deploy releases
+      href: actions/create-deploy-releases.md
+    - name: View and manage releases
+      href: actions/view-manage-releases.md
+  - name: Licensing
+    items:
+    - name: Pipelines in TFS
+      href: concepts/licensing/concurrent-pipelines-tfs.md
+    - name: Pipelines in VSTS
+      href: concepts/licensing/concurrent-pipelines-ts.md
+  - name: Library
+    href: concepts/library/index.md
+    items:
+    - name: Variable groups
+      href: concepts/library/variable-groups.md
+    - name: Task groups
+      href: concepts/library/task-groups.md
+    - name: Service endpoints
+      href: concepts/library/service-endpoints.md
+    - name: Secure files
+      href: concepts/library/secure-files.md
+  - name: Policies
+    items:
+    - name: Retention policies
+      href: concepts/policies/retention.md
+    - name: Permissions
+      href: concepts/policies/permissions.md
+- name: How to
+  items:
+  - name: Deploy an agent
+    items:
+    - name: Windows
+      href: actions/agents/v2-windows.md
+    - name: Windows (TFS 2015)
+      href: actions/agents/v1-windows.md
+    - name: OSX
+      href: actions/agents/v2-osx.md
+    - name: Linux
+      href: actions/agents/v2-linux.md
+    - name: Configure TFS authentication
+      href: actions/agents/configure-tfs-authentication.md
+  - name: Build more app types
+    items:
+    - name: Azure Cloud Service
+      href: apps/aspnet/build-aspnet-cloudservice.md
+    - name: SQL Server Database
+      href: apps/aspnet/build-aspnet-dacpac.md
+    - name: Run a PowerShell script
+      href: actions/scripts/powershell.md
+    - name: Run Git commands
+      href: actions/scripts/git-commands.md
+    - name: Sign your Xcode app
+      href: apps/mobile/secure-certs.md
+  - name: Deploy to more targets
+    items:
+    - name: Azure web app
+      href: apps/cd/deploy-webdeploy-webapps.md
+    - name: Extend App Services deployments
+      href: apps/cd/howto-webdeploy-webapps.md
+    - name: Extend IIS Server deployments
+      href: apps/cd/howto-webdeploy-iis-deploygroups.md
+    - name: Azure cloud service
+      href: apps/cd/deploy-cloudservice-cloudservice.md
+    - name: Azure Government Cloud
+      href: concepts/library/government-cloud.md
+    - name: Azure Container Service (Kubernetes)
+      href: apps/cd/azure/deploy-container-kubernetes.md
+    - name: IIS servers (WinRM)
+      href: apps/cd/deploy-webdeploy-iis-winrm.md
+    - name: Azure SQL database (DACPAC)
+      href: apps/cd/deploy-dacpac-sqlpackage.md
+    - name: Azure SQL database (SQL scripts)
+      href: apps/cd/deploy-database-sqlscripts.md
+    - name: SCVMM
+      href: apps/cd/scvmm/configure-scvmm.md
+    - name: Run SCVMM scripts for managing VMs
+      href: apps/cd/scvmm/manage-vms-using-scvmm.md
+    - name: VMware
+      href: apps/cd/provision-vm-in-vmware.md
+  - name: Test your apps
+    items:
+    - name: Test as you build
+      href: test/index.md
+  - name: Use packages in CI/CD
+    items:
+    - name: NuGet
+      items:
+      - name: Restore from Package Management
+        href: packages/nuget-restore.md
+      - name: Publish to Package Management
+        href: packages/nuget-pack-publish.md
+      - name: Set up Jenkins + NuGet
+        href: packages/jenkins.md
+    - name: npm
+      items:
+      - name: Use Package Management
+        href: packages/npm.md
+    - name: Maven
+      items:
+      - name: Use Package Management
+        href: packages/maven.md
+  - name: Troubleshoot issues
+    items:
+    - name: Troubleshooting build
+      href: actions/troubleshooting.md
+    - name: Debug deployment issues
+      href: actions/debug-deployment-issues.md
+    - name: Troubleshoot Azure connections
+      href: actions/azure-rm-endpoint.md
+  - name: Migrate
+    items:
+    - name: Migrate from XAML builds
+      href: actions/migrate-from-xaml-builds.md
+- name: Reference
+  href: tasks/index.md
+  items:
+  - name: Build tasks
+    items:
+    - name: .NET Core
+      href: tasks/build/dotnet-core.md
+    - name: Android build
+      href: tasks/build/android-build.md
+    - name: Android signing
+      href: tasks/build/android-signing.md
+    - name: Ant
+      href: tasks/build/ant.md
+    - name: CMake
+      href: tasks/build/cmake.md
+    - name: Gradle
+      href: tasks/build/gradle.md
+    - name: Grunt
+      href: tasks/build/grunt.md
+    - name: Gulp
+      href: tasks/build/gulp.md
+    - name: Index Sources & Publish Symbols
+      href: tasks/build/index-sources-publish-symbols.md
+    - name: Jenkins Queue Job
+      href: tasks/build/jenkins-queue-job.md
+    - name: Maven
+      href: tasks/build/maven.md
+    - name: MSBuild
+      href: tasks/build/msbuild.md
+    - name: Visual Studio Build
+      href: tasks/build/visual-studio-build.md
+    - name: Xamarin.Android
+      href: tasks/build/xamarin-android.md
+    - name: Xamarin.iOS
+      href: tasks/build/xamarin-ios.md
+    - name: Xcode Build
+      href: tasks/build/xcode-build.md
+    - name: Xcode Package iOS
+      href: tasks/build/xcode-package-ios.md
+  - name: Utility tasks
+    items:
+    - name: Archive files
+      href: tasks/utility/archive-files.md
+    - name: Batch script
+      href: tasks/utility/batch-script.md
+    - name: Command line
+      href: tasks/utility/command-line.md
+    - name: Copy and Publish Build Artifacts
+      href: tasks/utility/copy-and-publish-build-artifacts.md
+    - name: Copy Files
+      href: tasks/utility/copy-files.md
+    - name: cURL Upload Files
+      href: tasks/utility/curl-upload-files.md
+    - name: Delete Files
+      href: tasks/utility/delete-files.md
+    - name: Extract Files
+      href: tasks/utility/extract-files.md
+    - name: FTP Upload
+      href: tasks/utility/ftp-upload.md
+    - name: Install Apple Certificate
+      href: tasks/utility/install-apple-certificate.md
+    - name: Install Apple Provisioning Profile
+      href: tasks/utility/install-apple-provisioning-profile.md
+    - name: PowerShell
+      href: tasks/utility/powershell.md
+    - name: Publish Build Artifacts
+      href: tasks/utility/publish-build-artifacts.md
+    - name: Service Fabric PowerShell
+      href: tasks/utility/service-fabric-powershell.md
+    - name: Shell script
+      href: tasks/utility/shell-script.md
+    - name: Update Service Fabric App Versions
+      href: tasks/utility/service-fabric-versioning.md
+    - name: Xamarin license
+      href: tasks/utility/xamarin-license.md
+  - name: Test tasks
+    items:
+    - name: Cloud-based Apache JMeter Load Test
+      href: tasks/test/cloud-based-apache-jmeter-load-test.md
+    - name: Cloud-based Load Test
+      href: tasks/test/cloud-based-load-test.md
+    - name: Cloud-based Web Performance Test
+      href: tasks/test/cloud-based-web-performance-test.md
+    - name: Mobile Center Test
+      href: tasks/test/mobile-center-test.md
+    - name: Publish Code Coverage Results
+      href: tasks/test/publish-code-coverage-results.md
+    - name: Publish Test Results
+      href: tasks/test/publish-test-results.md
+    - name: Run Functional Tests
+      href: tasks/test/run-functional-tests.md
+    - name: Visual Studio Test
+      href: tasks/test/visual-studio-test.md
+    - name: Visual Studio Test Agent Deployment
+      href: tasks/test/visual-studio-test-agent-deployment.md
+    - name: Xamarin Test Cloud
+      href: tasks/test/xamarin-test-cloud.md
+  - name: Package tasks
+    items:
+    - name: CocoaPods
+      href: tasks/package/cocoapods.md
+    - name: npm
+      href: tasks/package/npm.md
+    - name: NuGet
+      href: tasks/package/nuget.md
+    - name: Xamarin Component Restore
+      href: tasks/package/xamarin-component-restore.md
+  - name: Deploy tasks
+    items:
+    - name: Azure App Service Deploy
+      href: tasks/deploy/azure-app-service-deploy.md
+    - name: Azure App Service Manage
+      href: tasks/deploy/azure-app-service-manage.md
+    - name: Azure CLI
+      href: tasks/deploy/azure-cli.md
+    - name: Azure Cloud Service Deployment
+      href: tasks/deploy/azure-cloud-service-deployment.md
+    - name: Azure File Copy
+      href: tasks/deploy/azure-file-copy.md
+    - name: Azure Key Vault
+      href: tasks/deploy/azure-key-vault.md
+    - name: Azure PowerShell
+      href: tasks/deploy/azure-powershell.md
+    - name: Azure Resource Group Deployment
+      href: tasks/deploy/azure-resource-group-deployment.md
+    - name: Azure SQL Database Deployment
+      href: tasks/deploy/azure-sql-database-deployment.md
+    - name: Copy Files Over SSH
+      href: tasks/deploy/copy-files-over-ssh.md
+    - name: IIS Web App Deploy
+      href: tasks/deploy/iis-deploy.md
+    - name: IIS Web App Manage
+      href: tasks/deploy/iis-manage.md
+    - name: Mobile Center Upload
+      href: tasks/deploy/mobile-center-upload.md
+    - name: PowerShell on Target Machines
+      href: tasks/deploy/powershell-on-target-machines.md
+    - name: Service Fabric App Deployment
+      href: tasks/deploy/service-fabric-deploy.md
+    - name: Service Fabric Compose Deploy
+      href: tasks/deploy/service-fabric-compose-deploy.md
+    - name: SSH
+      href: tasks/deploy/ssh.md
+    - name: Windows Machine File Copy
+      href: tasks/deploy/windows-machine-file-copy.md
+  - name: Tool tasks
+    items:
+    - name: Node Tool Installer
+      href: tasks/tool/node-js.md
+  - name: File matching patterns
+    href: tasks/file-matching-patterns.md
+  - name: File and variable transform
+    href: tasks/transforms-variable-substitution.md

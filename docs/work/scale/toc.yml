@@ -1,0 +1,64 @@
+- name: Agile at Scale 
+  href: index.md
+- name: Overview
+  items:
+  - name: "About teams & Agile tools"
+    href: /vsts/work/about-teams-and-settings?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+- name: Tutorials
+  items:
+  - name: Manage portfolios
+    href: portfolio-management.md
+  - name: Review team delivery plans
+    href: /vsts/work/scale/review-team-plans?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+  - name: Set team favorites
+    href: /vsts/collaborate/set-favorites?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+- name: Concepts
+  items:
+  - name: Visibility across teams
+    href: visibility-across-teams.md
+  - name: Agile culture
+    href: agile-culture.md
+  - name: Practices that scale
+    href: practices-that-scale.md
+  - name: Team administrator role and permissions
+    href: team-administrator-permissions.md	
+- name: How-to Guides
+  items:
+  - name: Scaled Agile Framework
+    href: scaled-agile-framework.md
+  - name: Configure team settings
+    href: manage-team-assets.md 
+    items:
+    - name: Set team defaults
+      href: set-team-defaults.md  
+    - name: Select backlog levels
+      href: /vsts/work/customize/select-backlog-navigation-levels?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+    - name: "Show bugs on backlogs & boards"
+      href: /vsts/work/customize/show-bugs-on-backlog?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+    - name: Set working days
+      href: /vsts/work/customize/set-working-days?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+    - name: Set team favorites 
+      href: /vsts/collaborate/set-favorites?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+    - name: Manage team notifications
+      href: /vsts/collaborate/manage-team-notifications?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+  - name: Switch project or team focus
+    href: /vsts/work/how-to/switch-team-context-work?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+  - name: "Manage permissions & access"
+    href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+- name: Reference
+  items:
+  - name: "Permissions & access for work tracking"
+    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+- name: Resources
+  items:
+  - name: "Scale & Configure Teams"
+    href: ../../teams/index.md
+  - name: Customization
+    href: ../customize/index.md
+  - name: Agile culture
+    href: https://www.visualstudio.com/learn/agile-culture/
+  - name: Scale Agile to large teams
+    href: https://www.visualstudio.com/learn/scale-agile-large-teams/
+  - name: Creating productive teams
+    href: https://www.visualstudio.com/learn/productive-teams/
+

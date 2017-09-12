@@ -1,0 +1,69 @@
+- name: Queries
+  href: index.md
+- name: Overview
+  items:
+  - name: Create managed queries to list, update, or chart work items
+    href: example-queries.md
+  - name: Adhoc vs managed queries
+    href: /vsts/work/track/adhoc-vs-managed-queries?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+- name: Quickstarts
+  items:
+  - name: Search box query 
+    href: search-box-queries.md
+- name: Tutorials
+  items:
+  - name: Edit a query
+    href: using-queries.md
+  - name: Bulk modify (web)
+    href: ../backlogs/bulk-modify-work-items.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+- name: Samples
+  items:
+  - name: Query by title, ID, or description
+    href: titles-ids-descriptions.md 
+  - name: Query by assignment or workflow changes
+    href: query-by-workflow-changes.md 
+  - name: Query by area or iteration path
+    href: query-by-area-iteration-path.md   
+  - name: Query by date or current iteration
+    href: query-by-date-or-current-iteration.md  
+  - name: Query history
+    href: history-and-auditing.md  
+  - name: Query a numeric field
+    href: query-numeric.md  
+  - name: Query by pick list value
+    href: planning-ranking-priorities.md  
+  - name: Query by build & test integration fields
+    href: build-test-integration.md  
+  - name: Query by links or attachments
+    href: linking-attachments.md 
+- name: How-to Guides
+  items:
+  - name: "Filter backlogs & queries"
+    href: /vsts/work/backlogs/filter-backlogs?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+  - name: Copy list of work items 
+    href: /vsts/work/backlogs/copy-list?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+  - name: Change column options
+    href: /vsts/work/how-to/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+- name: Reference
+  items:
+  - name: "Query fields, operators & macros"
+    href: query-operators-variables.md
+  - name: Work item field index
+    href: /vsts/work/guidance/work-item-field?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
+  - name: WIQL syntax
+    href: /vsts/reference/wiql-syntax?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
+  - name: Keyboard shortcuts
+    href: ../../reference/keyboard-shortcuts.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+- name: Resources
+  items:
+  - name: Work Items
+    href: ../work-items/index.md
+  - name: Backlogs
+    href: ../backlogs/index.md
+  - name: Customization
+    href: ../customize/index.md
+  - name: Wiql Editor (Marketplace extension)
+    href: https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor
+  - name: Enhanced Export (Marketplace extension)
+    href: https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export
+

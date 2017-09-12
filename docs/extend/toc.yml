@@ -1,0 +1,144 @@
+- name: "Build Extensions"
+  href: index.md
+- name: Overview
+  items:
+    - name: Create a custom extension
+      href: ./overview.md
+- name: Quickstarts
+  items:
+  - name: Write your first extension
+    href: get-started/node.md
+- name: Samples
+  items:
+  - name: Sample extensions
+    href: develop/samples-overview.md
+- name: Concepts
+  items:
+  - name: Extension points
+    href: reference/targets/overview.md
+  - name: Contribution model
+    href: develop/contributions-overview.md
+- name: How-to Guides
+  items:
+  - name: Add a build task
+    href: develop/add-build-task.md
+  - name: Add a dashboard widget
+    href: develop/add-dashboard-widget.md
+  - name: Add a new service endpoint
+    href: develop/service-endpoints.md
+  - name: Add a service hook
+    href: develop/add-service-hook.md
+  - name: Add a chart
+    href: develop/add-chart.md
+  - name: Store data and settings
+    href: develop/data-storage.md
+  - name: Add Work hub extensions
+    items:
+    - name: Add a hub
+      href: develop/add-hub.md
+    - name: Add a menu action
+      href: develop/add-action.md
+    - name: Add backlog tabs
+      href: develop/add-backlog-tabs.md
+    - name: Add backlog panels
+      href: develop/add-backlog-panel.md
+    - name: Extend the work item form
+      href: develop/add-workitem-extension.md
+    - name: Add a custom control to the work item form
+      href: develop/custom-control.md
+    - name: Configure work item form extensions in TFS
+      href: develop/configure-workitemform-extensions.md
+  - name: Call a REST API
+    href: develop/call-rest-api.md
+  - name: Use a platform UI control
+    items:
+    - name: Configure
+      href: develop/ui-controls/configure.md
+    - name: Use grid
+      href: develop/ui-controls/grido.md
+    - name: Use menubar
+      href: develop/ui-controls/menubaro.md
+    - name: Use treeview
+      href: develop/ui-controls/treeviewo.md
+    - name: Use combo
+      href: develop/ui-controls/comboo.md
+    - name: Use modal dialog
+      href: develop/ui-controls/modaldialogo.md
+    - name: Use splitter
+      href: develop/ui-controls/splittero.md
+    - name: Use wait control
+      href: develop/ui-controls/waitcontrolo.md
+    - name: Use pivot filter
+      href: develop/ui-controls/pivotfiltero.md
+  - name: Package and publish
+    items:
+    - name: Package and publish extensions
+      href: publish/overview.md
+    - name: Package and publish integrations
+      href: publish/integration.md
+    - name: Make your listing public
+      href: publish/publicize.md
+    - name: Publish via command line
+      href: publish/command-line.md
+  - name: Test and debug
+    items:
+    - name: Debug a web extension
+      href: test/debug-in-browser.md
+    - name: Menu group IDs
+      href: test/discover-menu-group-ids.md
+  - name: Reporting
+    items:
+    - name: Extension reporting
+      href: extension-report.md
+    - name: Extension statistics PowerBI content pack
+      href: extension-statistics-powerbi-contentpack.md
+- name: Reference
+  items:
+  - name: Development
+    items:
+    - name: Manifest reference
+      href: develop/manifest.md
+    - name: Build task reference
+      href: develop/build-task-schema.md
+    - name: Endpoint authentication schemes
+      href: develop/auth-schemes.md
+    - name: Content hosting
+      href: develop/static-content.md
+    - name: Modal dialog
+      href: develop/using-host-dialog.md
+    - name: Host page navigation
+      href: develop/host-navigation.md
+    - name: Basic styles for widgets
+      href: develop/styles-from-widget-sdk.md
+    - name: Auth and security
+      href: develop/auth.md
+    - name: Deploy web content to Azure
+      href: publish/publish-azure.md
+    - name: UI controls
+      items:
+      - name: Combo
+        href: reference/client/controls/combo.md
+      - name: Grid
+        href: reference/client/controls/grid.md
+      - name: TreeView
+        href: reference/client/controls/tree.md
+      - name: MenuBar
+        href: reference/client/controls/menubar.md
+      - name: Modal Dialog
+        href: reference/client/controls/modaldialog.md
+      - name: Splitter
+        href: reference/client/controls/splitter.md
+      - name: WaitControl
+        href: reference/client/controls/waitcontrol.md
+      - name: How to get help
+        href: support/help.md
+- name: Resources
+  items:
+  - name: Visual Studio Marketplace
+    href: https://marketplace.visualstudio.com/
+  - name: Manage Extensions
+    href: ../marketplace/index.md
+  - name: Build Visual Studio extensions
+    href: https://visualstudio/extend/ide/overview.md
+
+

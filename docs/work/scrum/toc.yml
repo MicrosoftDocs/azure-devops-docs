@@ -1,0 +1,70 @@
+- name: Scrum
+  href: index.md
+- name: Overview
+  items:
+  - name: About Scrum
+    href: scrum-overview.md
+  - name: "Backlogs, boards, & plans"
+    href: /vsts/work/backlogs-boards-plans?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+- name: Quickstarts
+  items:
+  - name: Schedule sprints
+    href: define-sprints.md   
+- name: Tutorials
+  items:
+  - name: Plan a sprint
+    href: sprint-planning.md
+  - name: "Add & update tasks (Task board)"
+    href: task-board.md
+  - name: Plan capacity
+    href: /vsts/work/scale/capacity-planning?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+  - name: Sprint burndown
+    href: sprint-burndown.md
+  - name: Forecast
+    href: forecast.md
+  - name: Velocity
+    href: /vsts/report/guidance/team-velocity?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+- name: Concepts
+  items:
+  - name: Scrum best practices
+    href: best-practices-scrum.md
+  - name: Scrum and sprint planning tools
+    href: scrum-sprint-planning-tools.md
+  - name: "Workflow states & state categories"
+    href: /vsts/work/concepts/workflow-and-state-categories?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+  - name: About teams and Agile tools
+    href: /vsts/work/about-teams-and-settings?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+- name: How-to Guides
+  items:
+  - name: "Filter backlogs & queries"
+    href: /vsts/work/backlogs/filter-backlogs?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+  - name: Copy list
+    href: /vsts/work/backlogs/copy-list?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+  - name: Bulk add or modify (Web)
+    href: /vsts/work/backlogs/bulk-modify-work-items?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+  - name: Change column options
+    href: /vsts/work/how-to/set-column-options?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+  - name: "Manage permissions & access"
+    href: /vsts/work/how-to/set-permissions-access-work-tracking?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+  - name: Switch project or team focus
+    href: /vsts/work/how-to/switch-team-context-work?toc
+- name: Reference
+  items:
+  - name: "Permissions & access for work tracking"
+    href: /vsts/work/permissions-access-work-tracking?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+  - name: Work item field index
+    href: /vsts/work/guidance/work-item-field?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+- name: Resources
+  items:
+  - name: Backlogs
+    href: ../backlogs/index.md
+  - name: Queries
+    href: ../track/index.md
+  - name: Customization
+    href: ../customize/index.md
+  - name: What is Scrum?
+    href: https://www.visualstudio.com/learn/what-is-scrum/
+  - name: What is Agile development?
+    href: https://www.visualstudio.com/learn/what-is-agile-development/
+
+

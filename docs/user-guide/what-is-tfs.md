@@ -1,0 +1,60 @@
+---
+title: Services | Team Services & TFS
+description: Understand the services that support the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
+ms.technology: vs-devops-overview 
+ms.prod: vs-devops-alm
+ms.topic: get-started-article
+ms.assetid:  
+ms.manager: douge
+ms.author: kaelli
+ms.date: 12/07/2016
+---
+
+# What is Team Foundation Server? 
+**TFS 2017 | TFS 2015 | TFS 2013**
+
+Team Foundation Server (TFS) is the on-premises version of our cloud service, [Visual Studio Team Services](what-is-vsts.md) (VSTS).  
+
+Just like VSTS, TFS provides an integrated set of features that you access through your web browser or a supported IDE, including: 
+
+- Git repositories for source control of your code   
+- Build and release management to support continuous integration and delivery of your apps 
+- Agile tools to support planning and tracking your work, code defects, and issues using Kanban and Scrum methods 
+- A variety of tools to test your apps, including manual/exploratory testing, load testing, and continuous testing 
+- Highly customizable dashboards for sharing progress and trends 
+
+In addition, the TFS ecosystem provides support for adding extensions, integrating with other popular services, such as: Campfire, Slack, Trello, UserVoice, and more, and developing your own custom extensions.  
+
+When you deploy TFS, you can also configure the following servers or integration points: 
+
+- **Build server**: supports on-premise builds, you can use a combination of on-premises builds and cloud-hosted builds   
+- **SQL Server and SQL Analysis Server**: supports SQL Server Reports and the ability to create Excel pivot charts based on the cube 
+
+
+
+## Where do I start?
+- Download TFS Express for free   
+- Then, either upload your code to share or source control 
+- Or, begin tracking your work using Scrum, Kanban, or a combination of methods 
+
+
+Choose an on-premises TFS when you need your data to stay within your network or you want access to SQL Server reporting services that integrate with TFS data and tools. You can start for free by downloading TFS Express. 
+
+
+[![Install TFS](_img/what-is-tfs-install-tfs-step-1.png)](../tfs-server/install/single-server.md)[![Create a team project](_img/what-is-tfs-create-team-project-step-2.png)](../accounts/create-team-project.md)[![Add team members](_img/what-is-tfs-add-code-step-3.png)](/vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json ) 
+ 
+
+## Try this next  
+
+> [!div class="nextstepaction"]
+> [Install TFS](../tfs-server/install/single-server.md)
+
+To learn more, see these topics: 
+- [A tour of services](../services.md)
+- [Key concepts](../concepts.md)  
+- [Client-server tools](../tools.md)
+- [Software development roles](../roles.md)
+- [Pricing - TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
+
+
+

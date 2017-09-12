@@ -1,0 +1,23 @@
+<svg id="Logos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff8c00;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>logo_odata</title>
+  <rect class="cls-1" x="1" y="1" width="62" height="62"/>
+  <rect class="cls-2" x="6" y="5" width="24" height="7"/>
+  <rect class="cls-2" x="34" y="5" width="24" height="7"/>
+  <rect class="cls-2" x="6" y="17" width="24" height="7"/>
+  <rect class="cls-2" x="34" y="17" width="24" height="7"/>
+  <rect class="cls-2" x="34" y="29" width="24" height="7"/>
+  <rect class="cls-2" x="34" y="41" width="24" height="7"/>
+  <rect class="cls-2" x="6" y="29" width="24" height="7"/>
+  <circle class="cls-2" cx="17.5" cy="49.5" r="9.5"/>
+</svg>

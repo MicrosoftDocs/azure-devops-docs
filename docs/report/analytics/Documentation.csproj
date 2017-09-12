@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BE47807-5714-4DBD-8F71-D8AC4F7D622E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Documentation</RootNamespace>
+    <AssemblyName>Documentation</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="access-analytics-excel.md" />
+    <Content Include="access-analytics-power-bi.md" />
+    <Content Include="aggregated-data-analytics.md" />
+    <Content Include="analytics-recipes.md" />
+    <Content Include="analytics-security.md" />
+    <Content Include="building-extension-against-analytics-service.md" />
+    <Content Include="data-model-analytics-service.md" />
+    <Content Include="overview-analytics-service.md" />
+    <Content Include="widget-extension-against-analytics-service-configuration.md" />
+    <Content Include="widget-extensions-against-analytics-service.md" />
+    <Content Include="wit-analytics.md" />
+    <Content Include="_img\access-analytics-pbi-bug-data.png" />
+    <Content Include="_img\access-analytics-pbi-get-data.bmp" />
+    <Content Include="_img\access-analytics-pbi-get-data.png" />
+    <Content Include="_img\aggregated-1.png" />
+    <Content Include="_img\aggregated-2.png" />
+    <Content Include="_img\aggregated-3.png" />
+    <Content Include="_img\aggregated-4.png" />
+    <Content Include="_img\aggregated-5.png" />
+    <Content Include="_img\aggregated-6.png" />
+    <Content Include="_img\aggregated-7.png" />
+    <Content Include="_img\aggregated-8.png" />
+    <Content Include="_img\aggregated-9.png" />
+    <Content Include="_img\analytics_permission.png" />
+    <Content Include="_img\authentication-1.png" />
+    <Content Include="_img\authentication-10.png" />
+    <Content Include="_img\authentication-2.png" />
+    <Content Include="_img\authentication-3.png" />
+    <Content Include="_img\authentication-4.png" />
+    <Content Include="_img\authentication-5.png" />
+    <Content Include="_img\authentication-6.png" />
+    <Content Include="_img\authentication-7.png" />
+    <Content Include="_img\authentication-8.png" />
+    <Content Include="_img\authentication-9.png" />
+    <Content Include="_img\custom-queries-1.png" />
+    <Content Include="_img\custom-queries-2.png" />
+    <Content Include="_img\custom-queries-3.png" />
+    <Content Include="_img\custom-queries-4.png" />
+    <Content Include="_img\custom-queries-5.png" />
+    <Content Include="_img\datamodel.png" />
+    <Content Include="_img\excel1.png" />
+    <Content Include="_img\excel2.png" />
+    <Content Include="_img\excel3.png" />
+    <Content Include="_img\excel4.png" />
+    <Content Include="_img\excel5.png" />
+    <Content Include="_img\pbi-relationships-2.png" />
+    <Content Include="_img\pbi-relationships-3.png" />
+    <Content Include="_img\pbi-relationships.png" />
+    <Content Include="_img\pbi1.png" />
+    <Content Include="_img\pbi10.png" />
+    <Content Include="_img\pbi11.png" />
+    <Content Include="_img\pbi12.png" />
+    <Content Include="_img\pbi13.png" />
+    <Content Include="_img\pbi2.png" />
+    <Content Include="_img\pbi3.png" />
+    <Content Include="_img\pbi4.png" />
+    <Content Include="_img\pbi5.png" />
+    <Content Include="_img\pbi6.png" />
+    <Content Include="_img\pbi7.png" />
+    <Content Include="_img\pbi8.png" />
+    <Content Include="_img\pbi9.png" />
+    <Content Include="_img\publish-1.png" />
+    <Content Include="_img\publish-2.png" />
+    <Content Include="_img\publish-3.png" />
+    <Content Include="_img\publish-4.png" />
+    <Content Include="_img\publish-5.png" />
+    <Content Include="_img\widget-extension-1.png" />
+    <Content Include="_img\widget-extension-2.png" />
+    <Content Include="_img\widget-extension-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lead-time-metrics.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="work-item-links.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="client-authentication-options.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="publishing-power-bi-desktop-to-power-bi.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="using-odata-aggregations-with-power-bi-desktop.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="custom-calculations.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="querying-for-trend-data.md" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1129</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1129/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

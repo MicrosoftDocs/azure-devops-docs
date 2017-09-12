@@ -1,0 +1,48 @@
+- name: "Integrate"
+  href: ./index.md
+- name: Quickstarts
+  items:
+  - name: Create a bug
+    href: quickstarts/create-bug-quickstart.md
+  - name: Query work items
+    href: quickstarts/work-item-quickstart.md
+- name: Samples
+  items:
+  - name: Samples
+    href: get-started/client-libraries/samples.md
+- name: Concepts
+  items:
+  - name: .NET client libraries
+    href: ./concepts/dotnet-client-libraries.md
+  - name: Authentication
+    href: ./get-started/authentication/authentication-guidance.md
+  - name: Service hooks
+    href: ./concepts/service-hooks.md
+  - name: REST API versioning
+    href: ./concepts/rest-api-versioning.md
+  - name: Cross-origin resource sharing
+    href: ./concepts/cross-origin-resource-sharing.md
+- name: How-to Guides
+  items:
+  - name: Authenticate with PATs
+    href: get-started/authentication/pats.md
+  - name: Authenticate with OAuth 2.0
+    href: get-started/authentication/oauth.md
+  - name: Create service hooks subscriptions programmatically
+    href: ../service-hooks/create-subscription.md?toc=/vsts/integrate/toc.json&bc=/vsts/integrate/breadcrumb/toc.json
+- name: Reference
+  items:
+  - name: Service hooks consumers and actions
+    href: ../service-hooks/consumers.md?toc=/vsts/integrate/toc.json&bc=/vsts/integrate/breadcrumb/toc.json
+  - name: Service hooks events
+    href: ../service-hooks/events.md?toc=/vsts/integrate/toc.json&bc=/vsts/integrate/breadcrumb/toc.json
+- name: Troubleshooting
+  items:
+  - name: IIS Basic Authentication and PATs
+    href: get-started/authentication/iis-basic-auth.md
+- name: REST API Reference
+  href: https://www.visualstudio.com/en-us/docs/integrate/api/overview
+- name: How to get help
+  href: ../extend/support/help.md?toc=/vsts/integrate/toc.json&bc=/vsts/integrate/breadcrumb/toc.json
+- name: Visual Studio extensions
+  href: ide/extensions/overview.md

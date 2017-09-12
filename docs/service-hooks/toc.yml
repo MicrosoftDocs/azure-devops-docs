@@ -1,0 +1,54 @@
+- name: Integrate with other services
+  href: index.md
+- name: Overview
+  href: overview.md
+- name: Quickstarts
+  items:
+  - name: Integrate with Slack
+    href: services/slack.md
+  - name: Integrate with Jenkins
+    href: services/jenkins.md
+  - name: Integrate with Trello
+    href: services/trello.md
+- name: How-to Guides
+  items:
+  - name: Integrate with AppVeyor
+    href: services/appveyor.md
+  - name: Integrate with Azure Service Bus
+    href: services/azure-service-bus.md
+  - name: Integrate with Azure Storage
+    href: services/azure-storage.md
+  - name: Integrate with Bamboo
+    href: services/bamboo.md
+  - name: Integrate with Campfire
+    href: services/campfire.md
+  - name: Integrate with Flowdock
+    href: services/flowdock.md
+  - name: Integrate with HipChat
+    href: services/hipchat.md
+  - name: Integrate with Hubot
+    href: services/hubot.md
+  - name: Integrate with MyGet
+    href: services/myget.md
+  - name: Integrate with Microsoft Teams
+    href: services/teams.md
+  - name: Integrate with UserVoice
+    href: services/uservoice.md
+  - name: Integrate with WebHooks
+    href: services/webhooks.md
+  - name: Integrate with Zapier
+    href: services/zapier.md
+  - name: Integrate with Zendesk
+    href: services/zendesk.md
+  - name: Authorize other services
+    href: authorize.md
+- name: Troubleshoot
+  items:
+  - name: Troubleshoot and FAQs
+    href: troubleshoot.md
+- name: Resources
+  items:
+  - name: Visual Studio Marketplace
+    href: https://marketplace.visualstudio.com/
+  - name: Billing information
+    href: ../billing/index.md

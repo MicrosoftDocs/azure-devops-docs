@@ -1,0 +1,30 @@
+---
+title: Change the synchronization retry or resubmit interval | TFS
+description: Understand how a conflict or failed synchronization occurs while in the synchronization process - Team Foundation Server (TFS)
+ms.prod: visual-studio-tfs-dev14
+ms.technology: vs-devops-wit 
+ms.assetid: ce1d4951-e460-43d3-8852-a0f170012142
+ms.manager: douge
+ms.author: kaelli
+ms.date: 01/12/2017
+---
+# Change the synchronization retry or resubmit interval
+
+[!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
+
+When a conflict or failed submission occurs during the synchronization process, the most recent submit status for a work item is set to **Failed**. The synchronization engine automatically tries to resubmit the work item in case the issue has been resolved. By default, the retry or resubmit interval is one hour, and you can set it in the Team Foundation Server registry.  
+  
+ You can change the resubmit interval for a team project collection by modifying the value in the collection hive using Powershell as described in the following page on the Microsoft website: [Updating the TF Registry using Powershell](http://go.microsoft.com/fwlink/?LinkId=207285). You use the following path to specify the configuration setting:  
+  
+```  
+$collectionHive.SetValue("/Configuration/ProjectServer/StatusingResubmitInterval", "IntervalValue")  
+```  
+  
+ You replace *IntervalValue* with the resubmit interval expressed in seconds. For example, you specify 600 to define a resubmit interval of 10 minutes.  
+  
+> [!NOTE]
+>  If you specify a resubmit interval value of 0, you disable resubmissions.  
+  
+## Related notes  
+ [Synchronization process overview](synchronization-process-overview.md)   
+ [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)

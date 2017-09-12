@@ -1,0 +1,40 @@
+- name: VSTS Public Articles
+  href: index.md
+- name: Security
+  items:
+  - name: VSTS Data Protection
+    href: team-services-security-whitepaper.md
+- name: High-Fidelity Migration
+  items:
+  - name: Overview
+    href: migration-overview.md
+  - name: Import
+    href: migration-import.md
+  - name: Process Templates
+    href: migration-processtemplates.md
+  - name: Post-Import
+    href: migration-post-import.md
+  - name: Advanced Topics
+    href: migration-advanced-topics.md
+  - name: Troubleshooting
+    href: migration-troubleshooting.md
+- name: Version Control
+  items:
+    - name: Effective feature isolation on TFVC
+      href: effective-feature-isolation-on-tfvc.md
+    - name: Effective TFVC branching strategies for DevOps
+      href: effective-tfvc-branching-strategies-for-devops.md
+    - name: Git lost my changes?
+      href: git-log-history-simplification.md
+    - name: How dates work in Git
+      href: git-dates.md
+    - name: Move Git repos between team projects
+      href: move-git-repos-between-team-projects.md
+    - name: Remove large binaries from Git
+      href: remove-binaries.md
+- name: DevOps
+  items:
+    - name: CI/CD Best Practices Case Study
+      href: build-deployment-best-practices.md
+    - name: Ring-based Phased Feature Rollouts
+      href: phase-rollout-with-rings.md

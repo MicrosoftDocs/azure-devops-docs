@@ -1,0 +1,11 @@
+- name: VSTS and TFS
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items: 
+  - name: Admin
+    tocHref: /vsts/
+    topicHref: /vsts/index#pivot=services&panel=admin
+    items:
+    - name: "Server Administration (TFS)"
+      tocHref: /vsts/
+      topicHref: /vsts/tfs-server/index

@@ -1,0 +1,34 @@
+- name: "READMEs & Wikis" 
+  href: index.md
+- name: Overview
+  items:
+  - name: "About READMEs & Wikis"
+    href: about-readme-wiki.md
+- name: Quickstarts
+  items:
+  - name: Share your project vision
+    href: project-vision-status.md
+- name: Tutorials
+  items:
+  - name: "Add & edit a wiki"
+    href: add-edit-wiki.md
+- name: Concepts
+  items:
+  - name: Create a readme for your repo
+    href: /vsts/git/create-a-readme?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json 
+  - name: Share work plans
+    href: /vsts/work/track/share-plans?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json 
+- name: How-to guides
+  items:
+  - name: "Manage README & Wiki permissions"
+    href: manage-readme-wiki-permissions.md
+- name: Reference
+  items:
+  - name: Markdown guidance
+    href: /vsts/reference/markdown-guidance?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json  
+  - name: Navigate in the web portal
+    href: /vsts/connect/work-web-portal?toc=/vsts/collaborate/toc.json&bc=/vsts/collaborate/breadcrumb/toc.json 
+- name: Resources 
+  items:
+  - name: Dashboards
+    href: /vsts/report/dashboards?toc=/vsts/report/toc.json

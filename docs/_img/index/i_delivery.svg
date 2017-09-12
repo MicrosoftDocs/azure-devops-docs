@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2bc7f4;
+      }
+
+      .cls-2 {
+        fill: #55d2f6;
+      }
+
+      .cls-3, .cls-8 {
+        fill: none;
+      }
+
+      .cls-3, .cls-6 {
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-4, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #e5e5e5;
+      }
+
+      .cls-7 {
+        fill: #556a8a;
+      }
+    </style>
+  </defs>
+  <title>i_delivery</title>
+  <g id="ICONS-64x">
+    <g>
+      <rect class="cls-1" x="1" y="12" width="42" height="35"/>
+      <polygon class="cls-2" points="43 12 43 35 20 12 43 12"/>
+      <rect class="cls-3" x="1" y="12" width="42" height="35"/>
+      <polygon class="cls-4" points="63 31.88 63 47 43 47 43 17 54.32 17 63 31.88"/>
+      <polygon class="cls-5" points="63 31.88 63 32 43 32 43 17 54.32 17 63 31.88"/>
+      <polygon class="cls-3" points="43 17 54.32 17 63 31.88 63 46.91 43 46.91 43 17"/>
+      <circle class="cls-6" cx="14.56" cy="46.64" r="7.44"/>
+      <circle class="cls-6" cx="42.56" cy="46.64" r="7.44"/>
+      <circle class="cls-7" cx="14.56" cy="46.64" r="2.48"/>
+      <circle class="cls-7" cx="42.56" cy="46.64" r="2.48"/>
+    </g>
+    <rect class="cls-8" width="64" height="64"/>
+    <rect class="cls-8" width="64" height="64"/>
+  </g>
+</svg>

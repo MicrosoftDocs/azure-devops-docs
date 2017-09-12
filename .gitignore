@@ -1,3 +1,4 @@
+.vs/
 log/
 obj/
 _site/
@@ -5,3 +6,4 @@ _site/
 _themes*/
 
 .openpublishing.buildcore.ps1
+*.bmp

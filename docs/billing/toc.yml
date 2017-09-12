@@ -1,0 +1,80 @@
+- name: Billing
+  href: index.md
+- name: Overview
+  items:
+  - name: Billing overview
+    href: overview.md
+- name: Quickstarts
+  items:
+  - name: Pay for VSTS users
+    href: buy-basic-access-add-users.md
+  - name: Try extensions for free
+    href: try-additional-features-vs.md
+- name: Tutorials
+  items:
+  - name: Change Azure AD tenant
+    href: ../accounts/change-azure-active-directory-vsts-account.md
+- name: Concepts
+  items:
+  - name: Billing and Microsoft Azure
+    href: billing-concepts.md
+  - name: Use MSDN subscription with organizational account
+    href: link-msdn-subscription-concept.md
+- name: How-to Guides
+  items:
+  - name: Set up billing
+    items:
+    - name: Link Azure subscription to VSTS Account
+      href: set-up-billing-for-your-account-vs.md
+    - name: Add backup billing managers
+      href: add-backup-billing-managers.md
+    - name: Change Azure subscription for billing
+      href: change-azure-subscription.md
+  - name: Link work accounts to Visual Studio with MSDN subscriptions
+    href: link-msdn-subscription-to-organizational-account-vs.md
+  - name: How to buy build pipelines
+    href: buy-more-build-vs.md
+  - name: How to buy load testing services
+    href: buy-load-testing-vs.md
+  - name: Buy basic access to TFS Test hub
+    href: buy-access-tfs-test-hub.md
+  - name: Buy HockeyApp
+    href: get-hockeyapp.md
+  - name: Buy Xamarin University
+    href: xamarin-univ.md
+  - name: Manage Visual Studio subscriptions
+    items:
+    - name: Buy Visual Studio subscriptions
+      href: vs-subscriptions/buy-vs-subscriptions.md
+    - name: Manage Visual Studio subscriptions
+      href: vs-subscriptions/manage-vs-subscriptions.md
+    - name: View Visual Studio subscriptions
+      href: vs-subscriptions/view-vs-subscriptions.md
+- name: Troubleshooting
+  items:
+  - name: Billing signup
+    href: faq-billing-setup.md
+  - name: Pay for more Basic users
+    href: faq-pay-for-basic-users.md
+  - name: Try extensions
+    href: faq-extension-trials.md
+  - name: Visual Studio subscriptions
+    href: faq-vs-subscriptions.md
+  - name: Azure billing
+    href: faq-azure-billing.md
+  - name: Link work or school account to MSDN subscription
+    href: faq-link-msdn-subscription-org-account.md
+- name: Reference
+  items:
+  - name: Permissions and access for VSTS
+    href: ../security/permissions.md
+- name: Resources
+  items:
+  - name: Account Management
+    href: ../accounts/index.md
+  - name: "Security & Identity"
+    href: ../security/index.md
+  - name: Manage Extensions
+    href: ../marketplace/index.md
+  - name: Service hooks
+    href: ../service-hooks/index.md

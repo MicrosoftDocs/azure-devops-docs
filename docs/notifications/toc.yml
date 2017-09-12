@@ -1,0 +1,57 @@
+- name: Notifications
+  href: index.md
+- name: Overview
+  items:
+  - name: About notifications
+    href: about-notifications.md
+- name: Quickstarts
+  items:
+  - name: Unsubscribe from a notification
+    href: unsubscribe-default-notification.md
+  - name: Change your preferred email address 
+    href: change-email-address.md
+- name: Tutorials
+  items:
+  - name: "Follow work & pull requests"
+    href: /vsts/collaborate/follow-work-items?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Set your personal notifications
+    href: manage-personal-notifications.md
+- name: How-to Guides
+  items:
+  - name: "Use @mentions to further discussion"
+    href: at-mentions.md
+  - name: "Use #ID to link to work items"
+    href: add-links-to-work-items.md
+  - name: Manage team notifications
+    href: /vsts/collaborate/manage-team-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Get notified with Campfire
+    href: ../service-hooks/services/campfire.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Get notified with Flowdock
+    href: ../service-hooks/services/flowdock.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Get notified with Hipchat
+    href: ../service-hooks/services/hipchat.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Get notified with Slack
+    href: ../service-hooks/services/slack.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Set alerts (TFS) 
+    href: ../work/track/alerts-and-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+  - name: Collaborate in a team room
+    href: ../collaborate/collaborate-in-a-team-room.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+- name: Reference
+  items:
+  - name: Default notifications
+    href: oob-built-in-notifications.md 
+  - name: FAQs 
+    href: faq-notifications.md 
+- name: Resources    
+  items:
+  - name: Git
+    href: ../git/index.md
+  - name: Work items
+    href: ../work/work-items/index.md
+  - name: Microsoft Teams Integration
+    href: https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams
+  - name: Service Hooks
+    href: ../service-hooks/index.md
+  - name: REST API
+    href: https://www.visualstudio.com/en-us/docs/integrate/api/notification/subscriptions
+

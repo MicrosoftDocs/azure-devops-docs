@@ -1,0 +1,74 @@
+- name: Overview
+  href: ../build-release/overview.md
+- name: Release notes
+  href: ../build-release/archive/news/rm-archived.md
+- name: Setup and configuration
+  items:
+  - name: Configure agents
+    href: ../build-release/concepts/agents/agents.md
+  - name: Concurrent pipelines in TFS
+    href: ../build-release/concepts/licensing/concurrent-pipelines-tfs.md
+  - name: Pipelines in Team Services
+    href: ../build-release/concepts/licensing/concurrent-pipelines-ts.md
+  - name: Azure RM endpoints
+    href: ../build-release/actions/azure-rm-endpoint.md
+- name: Author definitions
+  items:
+  - name: Release definitions
+    href: ../build-release/concepts/definitions/release/index.md
+  - name: What to deploy? Artifacts
+    href: ../build-release/concepts/definitions/release/artifacts.md
+  - name: Where to deploy? Environments
+    href: ../build-release/concepts/definitions/release/environments.md
+  - name: How to deploy? Tasks
+    href: ../build-release/concepts/process/tasks.md
+- name: Manage releases
+  items:
+  - name: Create a release
+    href: ../build-release/actions/create-deploy-releases.md
+  - name: Track a release
+    href: ../build-release/actions/view-manage-releases.md
+- name: Deploy apps
+  items:
+  - name: Examples index
+    href: ../build-release/apps/index.md
+- name: Previous versions
+  items:
+  - name: Visual Studio 2015
+    items:
+    - name: Overview
+      href: previous-version/release-management-overview.md
+    - name: Help contents
+      href: overview-rm2015.md
+    - name: Install Release Management
+      href: previous-version/install-release-management.md
+    - name: System requirements
+      href: previous-version/install-release-management/system-requirements.md
+    - name: Install server and client
+      href: previous-version/install-release-management/install-server-and-client.md
+    - name: Install deployment agent
+      href: previous-version/install-release-management/install-deployment-agent.md
+    - name: Connect to TFS
+      href: previous-version/install-release-management/connect-to-tfs.md
+    - name: Add users and groups
+      href: previous-version/add-users-and-groups.md
+    - name: Manage your release
+      href: previous-version/manage-your-release.md
+    - name: Release without agents
+      href: previous-version/release-without-agents.md
+    - name: Release with agents
+      href: previous-version/release-with-agents.md
+    - name: Trigger a release
+      href: previous-version/trigger-a-release.md
+    - name: Deploy continuously to Azure
+      href: previous-version/deploy-continuously-to-azure.md
+    - name: Release actions
+      href: previous-version/release-actions.md
+    - name: Release action tools
+      href: previous-version/release-actions/release-action-tools.md
+    - name: Configuration and system variables
+      href: previous-version/config-and-system-variables.md
+  - name: Visual Studio 2013
+    items:
+    - name: Overview
+      href: overview-rm2013.md

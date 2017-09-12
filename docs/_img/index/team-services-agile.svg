@@ -1,0 +1,40 @@
+<svg id="Screenshots" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #e5e5e5;
+      }
+
+      .cls-3 {
+        fill: #556a8a;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        fill: #2bc7f4;
+      }
+    </style>
+  </defs>
+  <title>team-services-agile</title>
+  <path class="cls-1" d="M32,63.5A31.5,31.5,0,1,1,63.5,32,31.54,31.54,0,0,1,32,63.5Z"/>
+  <path class="cls-2" d="M32,63A30.94,30.94,0,0,1,8.24,51.91a30.57,30.57,0,0,1-2.51-3.45,28.68,28.68,0,0,1-1.61-2.88L4,45.42c-.13-.27-.25-.54-.37-.82L3.4,44A28.86,28.86,0,0,1,2,40a30.21,30.21,0,0,1-1-6H62.94A31,31,0,0,1,32,63Z"/>
+  <path class="cls-3" d="M32,2A30,30,0,1,1,2,32,30,30,0,0,1,32,2m0-2A32,32,0,1,0,64,32,32,32,0,0,0,32,0Z"/>
+  <g>
+    <g>
+      <path class="cls-4" d="M17,45H38c4.4,0,8-2.92,8-6.5S42.4,32,38,32H26c-4.4,0-8-2.92-8-6.5S21.6,19,26,19H42"/>
+      <polygon class="cls-3" points="35.2 27.18 33.84 25.71 41.06 19 33.84 12.29 35.2 10.82 44 19 35.2 27.18"/>
+    </g>
+    <circle class="cls-5" cx="38.5" cy="38.5" r="2.5"/>
+    <circle class="cls-5" cx="24.5" cy="25.5" r="2.5"/>
+  </g>
+</svg>

@@ -1,0 +1,161 @@
+- name: Git
+  href: index.md
+- name: Overview
+  items:
+  - name: Learn about Git
+    href: tutorial/gitworkflow.md
+- name: Quickstarts
+  items:
+  - name: Create repo - Web
+    href: create-new-repo.md
+  - name: Create repo - CLI
+    href: share-your-code-in-git-cmdline.md
+  - name: Create repo - Visual Studio
+    href: share-your-code-in-git-vs-2017.md
+  - name: Create repo - IntelliJ
+    href: create-repo-intellij.md
+  - name: Create repo - Xcode
+    href: share-your-code-in-git-xcode.md
+  - name: Create repo - Eclipse
+    href: share-your-code-in-git-eclipse.md
+  - name: Import repo - Web
+    href: import-git-repository.md
+- name: Tutorials
+  href: gitquickstart.md
+  items:
+  - name: Create a new repo
+    href: tutorial/creatingrepo.md
+  - name: Clone an existing repo
+    href: tutorial/clone.md
+  - name: Save work with commits
+    href: tutorial/commits.md
+  - name: Create work in branches
+    href: tutorial/branches.md
+  - name: Share code with push
+    href: tutorial/pushing.md
+  - name: Update code with fetch and pull
+    href: tutorial/pulling.md
+  - name: Review code with pull requests
+    href: tutorial/pullrequest.md
+  - name: Apply changes with rebase
+    href: tutorial/rebase.md
+  - name: Copy changes with cherry-pick
+    href: tutorial/cherry-pick.md
+  - name: Resolve merge conflicts
+    href: tutorial/merging.md
+  - name: Undo changes
+    href: tutorial/undo.md
+  - name: Ignore files
+    href: tutorial/ignore-files.md
+  - name: Review history
+    href: tutorial/history.md
+- name: Samples
+  items:
+  - name: VSTS Samples for .NET
+    href: https://github.com/Microsoft/vsts-dotnet-samples
+- name: Concepts
+  items:
+  - name: History in Git
+    href: concepts/history.md
+  - name: History simplification
+    href: concepts/history-simplification.md
+  - name: Branch organization
+    href: concepts/git-branching-guidance.md
+  - name: Pull requests
+    href: concepts/pull-requests.md
+    name: Forks
+    href: concepts/forks.md
+  - name: Authentication
+    href: auth-overview.md
+  - name: Understand dates in Git
+    href: concepts/git-dates.md
+  - name: Understand names in Git
+    href: concepts/git-names.md
+  - name: IDE integration and extension
+    items:
+    - name: Visual Studio
+      href: ../accounts/set-up-vs.md
+    - name: Visual Studio Code
+      href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.team
+    - name: Eclipse
+      href: http://java.visualstudio.com/Docs/tools/eclipse
+    - name: IntelliJ IDEA
+      href: https://java.visualstudio.com/Docs/tools/intelliJ
+  - name: Scale
+    items:
+    - name: Large teams
+      href: https://visualstudio.com/git-at-scale
+    - name: Manage large files
+      href: manage-large-files.md
+  - name: Map TFVC actions to Git
+    href: concepts/mapping-my-tfvc-actions-to-git.md
+- name: How-to Guides
+  items:
+  - name: Authenticate with SSH
+    href: use-ssh-keys-to-authenticate.md
+  - name: Authenticate with the Git Credential Manager
+    href: set-up-credential-managers.md
+  - name: Import a repo from TFVC
+    href: import-from-TFVC.md
+  - name: Create a pull request status server
+    href: how-to/create-pr-status-server.md
+  - name: Configure branch policy for an external service
+    href: how-to/pr-status-policy.md
+  - name: Manage repos
+    items:
+    - name: Delete a repo
+      href: delete-existing-repo.md
+    - name: Rename a repo
+      href: repo-rename.md
+    - name: Find a file
+      href: find-a-file.md
+    - name: Create a readme
+      href: create-a-readme.md
+    - name: Git and TFVC repos
+      href: team-projects.md
+  - name: Manage branches
+    items:
+    - name: Manage your branches
+      href: manage-your-branches.md
+    - name: Create a new branch
+      href: create-branch.md
+    - name: Delete a branch
+      href: delete-branch.md
+    - name: Restore a deleted branch
+      href: restore-deleted-branch.md
+    - name: Lock a branch
+      href: lock-branches.md
+    - name: Branch policies
+      href: branch-policies.md
+    - name: Branch permissions
+      href: branch-permissions.md
+  - name: Set up continuous integration
+    href: ../build-release/concepts/definitions/build/triggers.md
+- name: Reference
+  items:
+  - name: Command reference
+    href: command-prompt.md
+  - name: Frequently asked questions
+    href: tutorial/howto.md
+  - name: History
+    items:
+    - name: Commit history
+      href: commit-history.md
+    - name: Commit details
+      href: commit-details.md
+  - name: Pull requests
+    items:
+    - name: Review code with pull requests
+      href: pull-requests.md
+    - name: Format comments with markdown
+      href: ../reference/markdown-guidance.md
+    - name: Squash merge pull requests
+      href: merging-with-squash.md
+  - name: Git REST APIs
+    href: https://visualstudio.com/docs/integrate/api/git/overview
+- name: Resources
+  items:
+  - name: Pro Git
+    href: https://www.git-scm.com/book/en/v2
+    name: Learn Git
+    href: https://www.visualstudio.com/learn-git/

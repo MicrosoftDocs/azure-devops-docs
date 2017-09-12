@@ -1,0 +1,17 @@
+<svg id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #117dc1;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>logo_trello</title>
+  <rect class="cls-1" width="64" height="64" rx="8" ry="8"/>
+  <path class="cls-2" d="M40.74,8A3.78,3.78,0,0,0,37,11.82V32.18A3.78,3.78,0,0,0,40.74,36H52.26A3.78,3.78,0,0,0,56,32.18V11.82A3.78,3.78,0,0,0,52.26,8Z"/>
+  <path class="cls-2" d="M12.74,8A3.78,3.78,0,0,0,9,11.83V48.17A3.78,3.78,0,0,0,12.74,52H24.26A3.78,3.78,0,0,0,28,48.17V11.83A3.78,3.78,0,0,0,24.26,8Z"/>
+</svg>

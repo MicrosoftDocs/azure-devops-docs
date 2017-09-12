@@ -1,0 +1,173 @@
+---
+title: A tour of VSTS & TFS services 
+description: Understand the services that support the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
+ms.technology: vs-devops-overview 
+ms.prod: vs-devops-alm
+ms.topic: get-started-article
+ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
+ms.manager: douge
+ms.author: kaelli
+ms.date: 08/15/2017
+---
+
+# A tour of services Team Services and TFS provides 
+<b>Team Services | TFS 2017 | TFS 2015  </b> 
+
+With Team Services and TFS, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web-based interface that you can access from all major browsers. 
+
+Web services are access through the following main hubs as shown in the following image.
+
+![Team Services, main hubs](_img/services-hubs.png)  
+
+Many of our services are either free for small teams or available through a subscription model or per use model. Where needed, you can exercise a hybrid approach where you use an on-premises TFS to manage your code and work, and purchase cloud build or testing services on an as needed basis.  
+
+For information about client tools, see [Tools](tools.md).
+
+<!---
+###Video overview
+ (Video ala Robert's 1.5 min Commit)
+-->
+
+## Core services 
+When you sign up for Team Services or install an on-premises TFS, you get access to the following services. All of these services you manage through a web browser. Some services, such as source control and build definitions, can also be managed through a client.    
+
+
+
+## Dashboards  
+From the **Dashboards** hub you gain access to user-configurable dashboards.   
+
+<img src="./report/_img/dashboard-view-with-widgets.png" alt="Dashboard hub, Overview" style="border: 2px solid #C3C3C3;" /> 
+
+Tasks you can perform in this hub include: 
+- Add, configure, and manage dashboards   
+- Configure widgets that you add to dashboards 	
+- Quickly navigate to different areas of your team project 
+ 
+
+To learn more, see [Dashboards](report/dashboards.md). 
+
+
+## Code 
+
+From the **Code** hub you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.   
+
+<img src="_img/services/code-git-hub.png" alt="Code hub, Git, files page" style="border: 2px solid #C3C3C3;" /> 
+
+From the Code hub for Git you can perform these tasks:  
+- Review, download, and edit files and review the change history for a file  
+- Review and manage commits that have been pushed       
+- Review, create, approve, comment, and complete pull requests  
+- Add and manage Git tags   
+
+To learn more, see the overviews for [Git](git/overview.md) or [TFVC](tfvc/overview.md). 
+
+## Plan and track work 		
+From the **Work** hub you gain access to Agile tools to support planning and tracking work. 
+
+<img src="_img/services/work-hub-backlogs.png" alt="Work hub, Backlogs page" style="border: 2px solid #C3C3C3;" /> 
+
+Specifically, from the **Work** you can perform these tasks:   			
+- Add and update work items 
+- Define work item queries and create status and trend charts based on those queries 			
+- Manage your product backlog   					
+- Plan sprints using sprint backlogs 
+- Review sprint tasks and update tasks through the task boards				
+- Visualize the work flow and update status using Kanban boards	 				
+- Manage portfolios by grouping stories under features and features under epics   
+
+See [Backlogs, boards, and plans](work/backlogs-boards-plans.md) for an overview of each.   
+ 
+## Build & Release 
+The **Build & Release** hub provides an integrated set of features to support building and deploying your applications. 
+
+
+<img src="_img/services/build-release-hub.png" alt="Build-Release hub, Build definitions page" style="border: 2px solid #C3C3C3;" /> 
+
+You use this hub to implement continuous integration and continuous delivery. 
+- **Build automation**: Define the steps to take during build and the triggers that will initiate a build. 
+- **Release management**: Supports a rapid release cadence and management of simultaneous releases. You can configure release definitions that represent your environments from development to production. Run automations to deploy your app to each environment. Add approvers to sign off that the app has been successfully deployed in an environment. Create your release manually or automatically from a build. Then track your releases as they are deployed to various environments.
+
+
+To learn more, see [Continuous integration on any platform](build-release/overview.md). 
+
+
+## Test 
+Test features support manual and exploratory testing, load or performace testing, and continuous testing.  Here we show the **Test** hub that support creating and managing manual tests.  
+
+<img src="_img/services/test-hub.png" alt="Test hub" style="border: 2px solid #C3C3C3;" /> 
+
+Test **Test** hub provides support for the following:  
+- Customization of workflows with test plan, test suite and test case work items  
+- End-to-end traceability from requirements to test cases and bugs with requirement-based test suites  
+- Criteria-based test selection with query-based test suites    
+- Excel-like interface with the grid for easy test case creation  
+- Reusable test steps and test data with shared steps and shared parameters   
+- Sharable test plans, test suites and test cases for reviewing with stakeholders  
+- Browser-based test execution on any platform  
+- Real-time charts for tracking test activity.  
+
+To learn more, see [Testing overview](manual-test/index.md). 			
+
+
+## Collaboration services 
+
+In addition to the above "hub" services, the following services work across hubs to support: 
+- Linking of work items, commits, pull requests and other artifacts to support traceability
+- Alerts and change notifications managed per user or for teams  
+- Request and manage feedback   
+- Team (chat) rooms 	 
+- Reporting    						
+
+>[!NOTE]  
+>Team rooms are deprecated for TFS 2017.2. Instead, we recommend you use service hooks to integrate with Slack. The Slack extension is pre-installed with Team Services and TFS 2015 and later versions.
+
+
+## Service hooks
+
+Service hooks enable you to perform tasks on other services when events happen within your team project hosted on Team Services or TFS. For example, you can send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services as a more efficient way to drive activities when events happen in your projects.
+
+The following services are available as the target of service hooks. To learn about others apps and services that integrate with our Team Services or TFS, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com)
+
+For the latest set of supported services, see [Integrate with service hooks](service-hooks/index.md)
+
+## Cloud-hosted services based on usage   
+
+The following services support your DevOps operations.   
+- Cloud-based build and deployment hosted agents  
+- On-premises private agents to support build and deployment  
+- Cloud-based performance/load testing lets you load test your code by simulating high traffic  
+
+To learn more, see [Pricing](https://www.visualstudio.com/team-services/pricing/).
+
+
+## Azure services 
+Azure provides a number of cloud-hosted services to support application development and deployment. You can make use of these services solely or in combination with Team Services or TFS. 
+
+To browse Azure's directory of integrated services, features, and bundled suites, see [Azure products](https://azure.microsoft.com/services/).  
+
+For continuous delivery to Azure from Team Services, see [Automatically build and deploy to Azure web apps or cloud services](https://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso/). 
+
+
+## Administrative services  
+
+There are a number of features and tasks associated with administrating a collaborate software development environment. You perform most of these tasks through the web portal.   
+
+
+<img src="user-guide/_img/tour-admin-project-level.png" alt="Product backlog" style="border: 2px solid #C3C3C3;" /> 
+
+> [!div class="mx-tdBreakAll"]  
+> |Account Management (Team Services)  | Administration (TFS)  | 
+> |-------------|----------| 
+> |- Manage users, access, and billing<br/>- Add and manage team projects and teams<br/>- Customize work tracking processes<br/>- Manage build retention policies<br/>- Add and manage build agent pools<br/>- Add and manage extensions|-Manage users, access, and permissions<br/>- Add and manage teams, team projects, and collections<br/>- Customize work tracking processes<br/>- Manage build retention policies<br/>- Add and manage build agent pools<br/>- Add and manage extensions<br/>- Configure an SMTP server (supports feedback requests and notification features)<br/>- Configure a backup schedule and manage database backups<br/>- Manage upgrades |
+
+ 
+## Related notes 
+- [Key concepts](concepts.md)  
+- [Client-server tools](tools.md) 
+- [Software development roles](roles.md)  
+- [Pricing](https://www.visualstudio.com/team-services/pricing/)
+
+
+<!---
+**System Center integration**: Enables a release definition to connect to a System Center Virtual Machine Manager (SCVMM) server to easily provision virtual machines and perform actions on them such as managing checkpoints, starting and **VMware Resource Deployment**: Connect to a VMware vCenter Server from Team Services or TFS to provision, start, stop, or snapshot VMware virtual machines. 
+-->

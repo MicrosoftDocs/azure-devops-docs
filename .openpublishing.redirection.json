@@ -1,0 +1,353 @@
+{
+    "redirections": [{
+            "source_path": "docs/test-redirect.md",
+            "redirect_url": "/vsts/work/scrum/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/test/test-redirect-2.md",
+            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-4",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "release-notes/features-timeline.md",
+            "redirect_url": "/vsts/release-notes/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/apps/aspnet/cd/deploy-cloudservice-cloudservice.md",
+            "redirect_url": "/vsts/build-release/apps/cd/deploy-cloudservice-cloudservice",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/apps/aspnet/ci/build-aspnet-4.md",
+            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-4",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/apps/aspnet/ci/build-aspnet-cloudservice.md",
+            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-cloudservice",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/apps/aspnet/ci/build-aspnet-core.md",
+            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-core",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/apps/aspnet/ci/build-aspnet-dacpac.md",
+            "redirect_url": "/vsts/build-release/apps/aspnet/build-aspnet-dacpac",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/apps/node/nodejs-to-azure.md",
+            "redirect_url": "/vsts/build-release/apps/nodejs/nodejs-to-azure",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/define/history.md",
+            "redirect_url": "/vsts/build-release/concepts/definitions/build/history",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/define/options.md",
+            "redirect_url": "/vsts/build-release/concepts/definitions/build/options",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/define/repository.md",
+            "redirect_url": "/vsts/build-release/concepts/definitions/build/repository",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/define/triggers.md",
+            "redirect_url": "/vsts/build-release/concepts/definitions/build/triggers",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/define/variables.md",
+            "redirect_url": "/vsts/build-release/concepts/definitions/build/variables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/get-started/aspnet-4-ci-cd-azure-automatic.md",
+            "redirect_url": "/vsts/build-release/apps/aspnet/aspnet-4-ci-cd-azure-automatic",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/get-started/aspnet-4-ci-cd-vs-automatic.md",
+            "redirect_url": "/vsts/build-release/apps/aspnet/aspnet-4-ci-cd-vs-automatic",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/get-started/dot-net.md",
+            "redirect_url": "/vsts/build-release/apps/windows/dot-net",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/get-started/java-maven.md",
+            "redirect_url": "/vsts/build-release/apps/java/java-maven",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/steps/file-matching-patterns.md",
+            "redirect_url": "/vsts/build-release/tasks/file-matching-patterns",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/steps/transforms-variable-substitution.md",
+            "redirect_url": "/vsts/build-release/tasks/transforms-variable-substitution",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/collaborate/manage-personal-notifications.md",
+            "redirect_url": "/vsts/notifications/manage-personal-notifications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/git/howto/create-pr-status-server.md",
+            "redirect_url": "/vsts/git/how-to/create-pr-status-server",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/git/howto/pr-status-policy.md",
+            "redirect_url": "/vsts/git/how-to/pr-status-policy",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/marketplace/get-hockeyapp.md",
+            "redirect_url": "/vsts/billing/get-hockeyapp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/marketplace/xamarin-univ.md",
+            "redirect_url": "/vsts/billing/xamarin-univ",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/account-preferences.md",
+            "redirect_url": "/vsts/accounts/account-preferences",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/add-administrator-tfs.md",
+            "redirect_url": "/vsts/accounts/add-administrator-project-collection",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/add-users.md",
+            "redirect_url": "/vsts/accounts/add-users",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/buy-access-tfs-test-hub.md",
+            "redirect_url": "/vsts/billing/buy-access-tfs-test-hub",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/clean-up-data.md",
+            "redirect_url": "/vsts/accounts/clean-up-data",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/create-team-project.md",
+            "redirect_url": "/vsts/accounts/create-team-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/delete-team-project.md",
+            "redirect_url": "/vsts/accounts/delete-team-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/get-started.md",
+            "redirect_url": "/vsts/accounts/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/git-permissions-before-2017.md",
+            "redirect_url": "/vsts/security/git-permissions-before-2017",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/permissions.md",
+            "redirect_url": "/vsts/security/permissions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/permissions-access.md",
+            "redirect_url": "/vsts/security/permissions-access",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/rename-team-project.md",
+            "redirect_url": "/vsts/accounts/rename-team-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/requirements.md",
+            "redirect_url": "/vsts/accounts/requirements",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/restrict-access-tfs.md",
+            "redirect_url": "/vsts/accounts/restrict-access-tfs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/add-account-users-assign-access-levels-team-services.md",
+            "redirect_url": "/vsts/accounts/add-account-users-assign-access-levels",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/add-team-members-vs.md",
+            "redirect_url": "/vsts/accounts/add-team-members-vs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/buy-basic-access-add-team-services-users.md",
+            "redirect_url": "/vsts/billing/buy-basic-access-add-users",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/buy-load-testing-vs.md",
+            "redirect_url": "/vsts/billing/buy-load-testing-vs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/buy-more-build-vs.md",
+            "redirect_url": "/vsts/billing/buy-more-build-vs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/change-account-ownership-vs.md",
+            "redirect_url": "/vsts/accounts/change-account-ownership-vs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/change-application-access-policies-vs.md",
+            "redirect_url": "/vsts/accounts/change-application-access-policies-vs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/change-azure-active-directory-team-services-account.md",
+            "redirect_url": "/vsts/accounts/change-azure-active-directory-vsts-account",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/connect-to-visual-studio-team-services.md",
+            "redirect_url": "/vsts/connect/connect-team-projects",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/delete-or-recover-your-account-vs.md",
+            "redirect_url": "/vsts/accounts/recover-your-vsts-account",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/link-msdn-subscription-to-organizational-account-vs.md",
+            "redirect_url": "/vsts/billing/link-msdn-subscription-to-organizational-account-vs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/manage-azure-active-directory-groups-visual-studio-team-services.md",
+            "redirect_url": "/vsts/accounts/manage-azure-active-directory-groups-vsts",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/manage-conditional-access.md",
+            "redirect_url": "/vsts/accounts/manage-conditional-access",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/manage-organization-access-for-your-account-vs.md",
+            "redirect_url": "/vsts/accounts/access-with-azure-ad",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/manage-users-and-access-user-hub-team-services.md",
+            "redirect_url": "/vsts/accounts/add-account-users-from-user-hub",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/rename-visual-studio-team-services-account.md",
+            "redirect_url": "/vsts/accounts/rename-vsts-account",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/set-up-billing-for-your-account-vs.md",
+            "redirect_url": "/vsts/billing/set-up-billing-for-your-account-vs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/set-up-vs.md",
+            "redirect_url": "/vsts/accounts/set-up-vs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/sign-up-for-visual-studio-team-services.md",
+            "redirect_url": "/vsts/accounts/create-account-with-work-school",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/try-additional-features-vs.md",
+            "redirect_url": "/vsts/billing/try-additional-features-vs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate.md",
+            "redirect_url": "/vsts/accounts/use-personal-access-tokens-to-authenticate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/setup-admin/websitesettings.md",
+            "redirect_url": "/vsts/security/websitesettings",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/whats-new.md",
+            "redirect_url": "/vsts/whats-new",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/work/agile-project-management.md",
+            "redirect_url": "/vsts/work/overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/work/connect/change-access-levels.md",
+            "redirect_url": "/vsts/security/change-access-levels",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/work/connect/work-as-a-stakeholder.md",
+            "redirect_url": "/vsts/quickstart/get-started-stakeholder",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "integrate/extensions/reference/client/client-services.md",
+            "redirect_url": "/vsts/extend/reference/client/client-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "integrate/extensions/reference/client/context.md",
+            "redirect_url": "/vsts/extend/reference/client/context",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "integrate/extensions/reference/client/core-sdk.md",
+            "redirect_url": "/vsts/extend/reference/client/core-sdk",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "integrate/extensions/reference/client/rest-clients.md",
+            "redirect_url": "/vsts/extend/reference/client/rest-clients",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "integrate/extensions/reference/client/ui-controls.md",
+            "redirect_url": "/vsts/extend/reference/client/ui-controls",
+            "redirect_document_id": false
+        }
+    ]
+}
