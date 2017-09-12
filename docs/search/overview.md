@@ -3,7 +3,7 @@ title: Search across all your code and work items
 description: Quickly Search with VSTS and TFS
 ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-cod
+ms.technology: vs-devops-search
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer

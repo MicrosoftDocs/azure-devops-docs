@@ -3,7 +3,7 @@ title: Code and Work Item Search set up
 description: Setup notes and administration links for Microsoft Code Search & Work Item Search in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-cod
+ms.technology: vs-devops-search
 ms.manager: douge
 ms.author: douge
 ms.date: 08/04/2016
