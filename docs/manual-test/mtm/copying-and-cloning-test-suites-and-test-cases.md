@@ -3,7 +3,7 @@ title: Copying and cloning test suites and test cases
 description: Manual and exploratory testing - Copying and cloning test suites and test cases
 ms.assetid: 3bdbaf71-2530-4681-9bb3-cc98c75664f4
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-manual-test
+ms.technology: vs-devops-test-manual
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

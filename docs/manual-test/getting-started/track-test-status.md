@@ -2,7 +2,7 @@
 title: Track test status in Visual Studio Team Services
 description: Track test status with charts and graphs using Visual Studio Team Services
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-manual-test
+ms.technology: vs-devops-test-manual
 ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
 ms.manager: douge
 ms.author: ahomer

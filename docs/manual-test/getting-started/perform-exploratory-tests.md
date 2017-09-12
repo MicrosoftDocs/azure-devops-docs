@@ -2,7 +2,7 @@
 title: Exploratory test your web app
 description: Exploratory test your web app in VSTS from your browser with the Test &amp; Feedback extension
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-manual-test
+ms.technology: vs-devops-test-manual
 ms.assetid: 1426e139-c7d4-4270-8db7-af7d6da80574
 ms.manager: douge
 ms.author: ahomer
