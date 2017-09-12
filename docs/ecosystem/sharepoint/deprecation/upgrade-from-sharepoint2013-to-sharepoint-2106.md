@@ -2,7 +2,7 @@
 title: Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016
 description: TFS SharePoint integration - Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016
 ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+ms.technology: vs-devops-integrate
 ms.manager: abjork
 ms.author: greggboe
 ms.date: 09/07/07

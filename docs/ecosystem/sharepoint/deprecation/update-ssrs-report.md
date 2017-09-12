@@ -2,7 +2,7 @@
 title: Update SSRS Report
 description: TFS SharePoint integration - Update an SSRS Report on a SharePoint site
 ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+ms.technology: vs-devops-integrate
 ms.manager: abjork
 ms.author: greggboe
 ms.date: 09/07/07

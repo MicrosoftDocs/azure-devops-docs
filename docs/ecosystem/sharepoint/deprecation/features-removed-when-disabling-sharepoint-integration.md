@@ -2,7 +2,7 @@
 title: Features removed when disabling SharePoint integration
 description: TFS SharePoint integration - Features removed when disabling SharePoint integration
 ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-reporting
+ms.technology: vs-devops-integrate
 ms.manager: abjork
 ms.author: greggboe
 ms.date: 09/07/07
