@@ -44,7 +44,7 @@ The build agent must have the following capabilities:
 
 ## Examples
 
-* [Load test your app in the cloud](https://www.visualstudio.com/en-us/apps/get-started/test/load-test-your-app-vs)
+* [Load test your app in the cloud](../../../load-test/index.md)
 * [Scheduling Load Test Execution](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/23/scheduling-load-test-execution.aspx)
 
 ## More Information
