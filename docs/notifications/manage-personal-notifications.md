@@ -7,8 +7,9 @@ ms.assetid: 644687b3-e30e-46b0-8d3e-3d4a4e34d13a
 ms.manager: douge
 ms.author: wismythe
 ms.topic: get-started-article
-ms.date: 02/14/2017 
+ms.date: 09/01/2017
 ---
+
 
 # Manage your notifications
 
