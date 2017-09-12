@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: Azure Storage with Visual Studio Team Services
-description: Use Azure Storage with your Visual Studio Team Services account
+description: Use Azure Storage with your VSTS account
 ms.assetid: ca016666-8e07-42a6-a6c5-09fceba179da
 ms.manager: douge
 ms.author: elbatk
@@ -67,7 +67,7 @@ This can be done when you create a service hook subscription.
 
    <img alt="Add a service hook" src="./_img/azure-storage/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 
-3. Pick the Visual Studio Team Services event to use as a trigger to insert a message in a storage queue.
+3. Pick the VSTS event to use as a trigger to insert a message in a storage queue.
 
    <img alt="Configure the event" src="./_img/azure-storage/configure-event.png" style="border: 1px solid #CCCCCC" />
 
@@ -114,7 +114,7 @@ Example:
 ```
 
 ## Pricing
-Visual Studio Team Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
+VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A

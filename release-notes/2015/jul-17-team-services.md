@@ -1,6 +1,6 @@
 ---
 title: Multiple activities per team member – Jul 17
-description: Visual Studio Team Services release notes for July 17 2015
+description: VSTS release notes for July 17 2015
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

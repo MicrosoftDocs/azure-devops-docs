@@ -1,7 +1,7 @@
 ---
-title: Work Items | VSTS & TFS
-description: Index to topics for planning and tracking work in VSTS and and Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+title: Index to topics for work item tracking in VSTS & TFS
+description: Index to topics for planning and tracking work in VSTS and Team Foundation Server (TFS)  
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge

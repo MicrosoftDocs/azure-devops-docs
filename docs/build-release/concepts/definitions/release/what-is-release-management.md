@@ -3,7 +3,7 @@ title: What is Microsoft Release Management
 description: What is Microsoft Release Management in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 126C3E1C-9DB3-4E46-918D-FF5600BF8FC9
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

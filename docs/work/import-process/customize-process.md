@@ -1,7 +1,7 @@
 ---
 title: Customize a process to import using Hosted XML | VSTS
 description: Customize a Hosted XML process to support custom fields, work item types, global lists, and process configuration  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: AA5B592D-8F76-4974-9918-B8B523A6F23F
 ms.manager: douge
@@ -20,7 +20,7 @@ ms.date: 05/23/2017
 >
 >To learn more about process models, see [Customize work tracking](../customize/customize-work.md). 
 
-Visual Studio Team Services supports adding and updating processes through a web based [import process](import-process.md) administrative experience. 
+VSTS supports adding and updating processes through a web based [import process](import-process.md) administrative experience. 
 Once you add a process, you can create one or more team projects from it. 
 You can update the process at any time by importing the process again and confirming that you want to update it.
 The changes made to the process template are then applied to all team projects using that process.  

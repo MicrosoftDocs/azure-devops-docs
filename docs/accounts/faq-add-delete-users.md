@@ -2,8 +2,7 @@
 title: Manage users and access user hub Visual Studio Team Services
 description: Add users and assign access levels in user hub Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
 ms.manager: douge
 ms.author: estfan
@@ -13,8 +12,6 @@ ms.date: 4/17/2017
 #	Troubleshoot adding and deleting users in the VSTS user hub
 
 **VSTS**
-
-
 
 ## Permissions 
 

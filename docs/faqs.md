@@ -1,5 +1,5 @@
 ---
-title: FAQs | Team Services & TFS
+title: Questions and answers to support getting started VSTS & TFS
 description: Questions and answers to support getting started using the hosted cloud offering of Visual Studio Team Services (VSTS) or on-premises Team Foundation Server (TFS)  
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
@@ -11,13 +11,13 @@ ms.date: 03/02/2016
 
 #FAQs
 
-**Team Services | TFS 2017 | TFS 2015**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
  
 ### Q: How do I get started?  
 **A: To get started in the cloud or on-premises:** 
-- To get started with Team Services, begin by [creating a user account](https://www.visualstudio.com/team-services/). Step-by-step instructions are provided in [Sign up for Visual Studio Team Services](accounts/create-account-msa-or-work-student.md).  
+- To get started with Visual Studio Team Services (VSTS) begin by [creating a user account](https://www.visualstudio.com/team-services/). Step-by-step instructions are provided in [Sign up for VSTS](accounts/create-account-msa-or-work-student.md).  
 - To get started with an on-premises TFS, download and install the [latest version of TFS](https://www.visualstudio.com/downloads/). See [Install and configure TFS](./tfs-server/install/get-started.md) for details.  
-- If you need to create a team project, create one in [Visual Studio Team Services](accounts/set-up-vs.md) or set one up in an [on-premises TFS](accounts/create-team-project.md).   
+- If you need to create a team project, create one in [VSTSs](accounts/set-up-vs.md) or set one up in an [on-premises TFS](accounts/create-team-project.md).   
 - If you don't have access to the team project, [get invited to the team](work/scale/multiple-teams.md#add-team-members).  
 - If it's your first time connecting to a team project, see [Connect to a team project](connect/connect-team-projects.md).  
 
@@ -25,8 +25,8 @@ ms.date: 03/02/2016
 Go to one of these pages to download a version of Visual Studio or client tool plug-in that will support connecting to a team project: 
 - [Visual Studio](https://www.visualstudio.com/downloads/) 
 - [Eclipse/Team Explorer Everywhere](http://java.visualstudio.com/Docs/tools/eclipse)  
-- [Android Studio with the Visual Studio Team Services Plugin for Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio)
-- [IntelliJ with the Visual Studio Team Services Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intellij) 
+- [Android Studio with the VSTS Plugin for Android Studio](http://java.visualstudio.com/Docs/tools/androidstudio)
+- [IntelliJ with the VSTS Plugin for IntelliJ](http://java.visualstudio.com/Docs/tools/intellij) 
 - [Visual Studio Code](http://java.visualstudio.com/Docs/tools/vscode)
 
 **A: To get started with sharing code, work item tracking, builds, or other tasks:** 
@@ -45,7 +45,7 @@ See [Software development roles](roles.md).
 -   **Provide feedback**: To allow your stakeholders to provide feedback, you must [grant them specific permissions](work/connect/give-permissions-feedback.md).  
   
 
-### Q: Are there other clients that connect to Team Services or TFS? Are there other tools I can use?  
+### Q: Are there other clients that connect to VSTS or TFS? Are there other tools I can use?  
 **A:** Yes. You can connect to a team project from one of these clients:  
 - [Excel](work/office/bulk-add-modify-work-items-excel.md) (Requires the Team Foundation add-in is installed)  
 - [Project](work/office/create-your-backlog-tasks-using-project.md)  (Requires the Team Foundation add-in is installed)  

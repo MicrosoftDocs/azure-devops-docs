@@ -1,17 +1,19 @@
 ---
-title: At mentions | VSTS & TFS
-description: Alert team members using the at mention control in discussions and pull requests 
+title: "Use @mentions to further discussion in VSTS & TFS"
+description: "Alert team members using the @mention control in discussions and pull requests" 
 ms.prod: vs-devops-alm
 ms.technology: collaborate
 ms.assetid: 
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/24/2017
+ms.topic: get-started-article
+ms.date: 09/01/2017
 ---
 
 
 # Use &#64;mentions to further discussion
+
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015.2**
 
 The **@mention** control allows you to quickly pull someone into a discussion.  You can use this control within the Discussion section of a work item form, or a pull request. 

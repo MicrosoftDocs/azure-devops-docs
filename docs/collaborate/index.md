@@ -1,5 +1,5 @@
 ---
-title: READMes and Wiki index | VSTS & TFS
+title: READMes and Wiki index to content for VSTS & TFS
 description: Index to topics for sharing information via a README or the Wiki in VSTS or TFS    
 ms.technology: collaborate
 ms.prod: vs-devops-alm

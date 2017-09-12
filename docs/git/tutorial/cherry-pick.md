@@ -3,8 +3,7 @@ title: Copy changes to a branch with cherry-pick | VSTS & TFS
 description: Copy and port changes from one branch to another in Git with cherry-pick,
 ms.assetid: 5bf5a8d2-9ff2-4d89-b59f-484a3c14021a
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git 
-ms.service: vsts-code
+ms.technology: vs-devops-git 
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie

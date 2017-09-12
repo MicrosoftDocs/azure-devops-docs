@@ -1,6 +1,6 @@
 ---
 title: Extensions, Previews, and more – Nov 18
-description: Visual Studio Team Services release notes for November 18 2015
+description: VSTS release notes for November 18 2015
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
@@ -20,7 +20,7 @@ Let’s start the news with our new name! Visual Studio Online has been renamed 
 
 ##Extensions and the new Marketplace
 
-Today we are introducing a new extensions model for Visual Studio Team Services and a marketplace to find and install them. Extensions enable first-class, integrated experiences that extend and enhance the Team Services web experience, either by adding new capabilities or integrating with existing services. Extensions can contribute—hubs, custom controls, context menus, dashboard widgets, build and release tasks, and more.
+Today we are introducing a new extensions model for VSTS and a marketplace to find and install them. Extensions enable first-class, integrated experiences that extend and enhance the Team Services web experience, either by adding new capabilities or integrating with existing services. Extensions can contribute—hubs, custom controls, context menus, dashboard widgets, build and release tasks, and more.
 
 Users can discover extensions via the new Visual Studio Marketplace. The Marketplace provides a single place for developers to find extensions for Visual Studio, Visual Studio Team Services, and Visual Studio Code. The marketplace will support both community and commercial extensions. Start browsing the Marketplace today: [https://marketplace.visualstudio.com](https://marketplace.visualstudio.com/).
 
@@ -54,7 +54,7 @@ This new package management service allows you to create and host Nuget feeds fo
 
 ##Code Search public preview
 
-Today, we are announcing the public preview of Code Search in Visual Studio Team Services. With this release you can search for code across all of your TFVC and Git projects in your Visual Studio Team Services account. Not only can you perform full text matching, but for C#, C and C++, you can search for specific contexts, like class definitions, comments, properties, etc. You can enable this preview feature on your Visual Studio Team Services account by installing the Code Search extension. [Learn more about Code Search extension](https://marketplace.visualstudio.com/items/ms.vss-code-search).
+Today, we are announcing the public preview of Code Search in Visual Studio Team Services. With this release you can search for code across all of your TFVC and Git projects in your VSTS account. Not only can you perform full text matching, but for C#, C and C++, you can search for specific contexts, like class definitions, comments, properties, etc. You can enable this preview feature on your VSTS account by installing the Code Search extension. [Learn more about Code Search extension](https://marketplace.visualstudio.com/items/ms.vss-code-search).
 
 ![Code search](_img/11_18_04.png)
 

@@ -3,8 +3,7 @@ title: VSTS billing overview
 description: VSTS billing overview
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-billing
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.manager: douge
 ms.author: estfan
@@ -24,7 +23,7 @@ VSTS billing covers:
 
 An extension is an installable unit that contributes new capabilities into Visual Studio, Visual Studio Team Services, Team Foundation Server, or Visual Studio Code. You can find extensions from within these product or from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/). 
 
-Extending Visual Studio Team Services is the easiest way for users to get the most out of their 
+Extending VSTS is the easiest way for users to get the most out of their 
 devops environment. The [Visual Studio Marketplace](https://marketplace.visualstudio.com) is home to hundreds of extensions
 that can be installed to help with:
 - Planning and tracking of work items, sprints, scrums, etc. 
@@ -42,7 +41,7 @@ You can install them with a few clicks. You must have administrative permissions
 
 | Product | Topics |
 |-----------------------------|--------------------------------------------------------------------------------------------------|
-| Visual Studio Team Services | [Get extensions for VSTS](../marketplace/install-vsts-extension.md) <br/> [Develop extensions for VSTS](https://aka.ms/vsoextensions) |
+| VSTS | [Get extensions for VSTS](../marketplace/install-vsts-extension.md) <br/> [Develop extensions for VSTS](https://aka.ms/vsoextensions) |
 | Visual Studio | [Get extensions for Visual Studio](https://marketplace.visualstudio.com/vs) <br/> [Develop extensions for Visual Studio](http://aka.ms/extendvs) |
 | Visual Studio Code | [Get extensions for Visual Studio Code](https://marketplace.visualstudio.com/vscode) <br/> [Develop extensions for Visual Studio Code](http://go.microsoft.com/fwlink/?LinkID=703825) |
 
@@ -99,5 +98,5 @@ will be billed on the 1st day of the calendar month after the anniversary date o
 [Visual Studio subscriptions troubleshooting](faq-vs-subscriptions.md), or 
 [Azure billing troubleshooting](faq-azure-billing.md). 
 
-For the billing frequency of extensions, see [Get extensions for VSTS](/vsts/marketplace/get-vsts-extensions#bill-period).
+For the billing frequency of extensions, see [Get extensions for VSTS](/vsts/marketplace/install-vsts-extensions#bill-period).
 

@@ -3,8 +3,7 @@ title: Deploy continuously to Azure with Release Management
 description: Release your app continuously to Microsoft Azure environments with Release Management server/client for Visual Studio 2015 and TFS 2015
 ms.assetid: 40DF8A8C-2D94-4127-BE79-C0B8386960C6
 ms.prod: vs-devops-alm
-ms.technology: vs-sub-release
-ms:service: vs-rm
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/04/2016
@@ -14,7 +13,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
 
-With Visual Studio 2015 and Visual Studio Team Services you can easily 
+With Visual Studio 2015 and VSTS you can easily 
 set up continuous deployment to Azure VMs.
 
 To automate your deployments, deploy the same way to multiple environments, 
@@ -28,7 +27,7 @@ instead.
 
 Before you start, you'll need:
 
-* **A Visual Studio Team Services account**.
+* **A VSTS account**.
 * **A team project**. 
 * **Azure VMs**. If you need to create them, 
   **[here's how](http://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial/)**.
@@ -105,11 +104,11 @@ Learn more **[here](release-without-agents.md)**.
 
 ![Release Template Designer](_img/deploy-continuously-09.png)
 
-###Q: How can I use a different Visual Studio Team Services account for my releases?
+###Q: How can I use a different VSTS account for my releases?
 
 **A**: In the Release Management client, go to **Administration**, **Settings**, and edit the URL.
 
-![Set Visual Studio Team Services URL](_img/deploy-continuously-10.png)
+![Set VSTS URL](_img/deploy-continuously-10.png)
 
 ## Related topics
 

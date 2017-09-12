@@ -1,7 +1,7 @@
 ---
 title: Query by date or current iteration | VSTS & TFS
 description: Find or list work items based on a date or a team's current iteration using Agile tools and Scrum methods when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
 ms.manager: douge

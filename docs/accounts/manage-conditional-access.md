@@ -2,8 +2,7 @@
 title: Manage conditional access to Visual Studio Team Services
 description: Manage conditional access to VSTS to restrict access based on multi-factor authentication
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: 2e3b01ab-b5f5-4e4d-9509-7095246f6fe7
 ms.manager: douge
 ms.author: estfan

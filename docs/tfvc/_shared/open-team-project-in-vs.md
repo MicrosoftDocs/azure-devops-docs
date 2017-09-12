@@ -11,4 +11,4 @@ and then open Visual Studio to connect to your team project.
 
 	![On your team project overview page, click Open in Visual Studio](../../_shared/_img/GoHomeOpenInVisualStudio.png)
 
-0. Sign in to Visual Studio Team Services from Visual Studio. 
+0. Sign in to VSTS from Visual Studio. 

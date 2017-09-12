@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 title: Discover menu group identifiers | Extensions for Visual Studio Team Services
 description: Discover the group IDs for existing menus in Visual Studio Team Services.
 ms.assetid: ca1b49b5-d36c-4742-a85b-fe9ad83a7a9a

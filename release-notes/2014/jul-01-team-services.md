@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Online Updates - Jul 1
-description: Visual Studio Team Services release notes for July 1 2014
+description: VSTS release notes for July 1 2014
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

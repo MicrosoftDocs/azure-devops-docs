@@ -3,8 +3,7 @@ title: Manage your release with RM for VS and TFS
 description: Manage your release with Microsoft Release Management server and client for Visual Studio 2015 and TFS 2015
 ms.assetid: FF4993B5-4961-4735-B678-54110C36FA48
 ms.prod: vs-devops-alm
-ms.technology: vs-sub-release
-ms:service: vs-rm
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/04/2016
@@ -44,7 +43,7 @@ Manage the steps in the process with approvals for each step.
 * **Do you want to use an on-premises server or the cloud to manage your releases?** 
   You can maintain your own Release Management server on-premises, 
   or you can skip buying and maintaining a server and use Release Management as a service 
-  on Visual Studio Team Services instead.
+  on VSTS instead.
 
 ## Set up and start a release
 
@@ -56,7 +55,7 @@ Manage the steps in the process with approvals for each step.
 You have the following options for managing your releases:
 
 * **Using Release Management as a service on Visual Studio Team Services**: 
-  You need a Visual Studio Team Services account. 
+  You need a VSTS account. 
   You cannot use Chef and you can deploy only to vNext environments based on Azure IaaS services
 * **Using an on-premises server**: You need to install Release Management Server; 
   do that **[here](install-release-management/install-server-and-client.md#installserver)**.
@@ -79,7 +78,7 @@ If you are an MSDN subscriber, you can download a non-trial version from the
 ### Connect to Release Management
 
 Start the Release Management Client and connect to your Release Management URL, either a 
-Visual Studio Team Services URL or an on-premises server URL. 
+VSTS URL or an on-premises server URL. 
 If you are not prompted automatically, go to **Administration**, **Settings**.
 
 ![Configure service URL](_img/manage-release-02.png) 

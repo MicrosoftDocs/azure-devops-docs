@@ -1,7 +1,7 @@
 ---
 title: Import a process | VSTS   
 description: Add or update a process by importing a process to support customization of tracking work in Visual Studio Team Services (VSTS).
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: AF7ABA0F-D3E8-48CA-9164-ABC966BAAA77
 ms.manager: douge
@@ -59,7 +59,7 @@ Migration to VSTSis a great time to think about process alignment across your or
 
 6.  Using the imported process(es), create team projects on VSTS for each you want to migrate. 
 
-    With the project created, you can now migrate the project data to VSTS using the [TFS Database Import Service](/vsts/tfs-server/migration/migration-overview).
+    With the project created, you can now migrate the project data to VSTS using the [TFS Database Import Service](/vsts/articles/migration-overview).
 
 
 

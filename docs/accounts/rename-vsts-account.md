@@ -2,19 +2,18 @@
 title: Rename VSTS account | Visual Studio Team Services
 description: Change account name in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: a69f3789-19e9-40c5-ade3-4e11435d452d
 ms.manager: douge
 ms.author: estfan
 ms.date: 10/31/2016
 ---
 
-# Rename your Visual Studio Team Services account
+# Rename your VSTS account
 
 **VSTS**
 
-You can change your Visual Studio Team Services account name (URL) at any time.
+You can change your VSTS account name (URL) at any time.
 
 **Caution**: This affects your account's connections 
 and those currently working with your account. 
@@ -25,7 +24,7 @@ To change your VSTS account URL,
 you'll need at least Basic access and account owner permissions. 
 [How do I find the account owner?](faq-delete-restore-vsts-account.md#find-owner)
 
-0.  Sign in to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).
+0.  Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-create-account.md#ChooseOrgAcctMSAcct)
 

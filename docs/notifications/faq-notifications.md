@@ -1,5 +1,5 @@
 ---
-title: FAQ notifications
+title: Questions and answers for working with notifications in VSTS & TFS
 description: General q and a about notifications set in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: collaborate
@@ -7,13 +7,14 @@ ms.assetid:
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/31/2017
+ms.date: 09/01/2017
 ---
+
 
 
 # FAQs on notifications
 
-**VSTS | TFS 2018 | TFS 2017**
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 ## Can I receive emails in plain text? 
 No. This was supported in earlier versions of VSTS and TFS, but all emails are now HTML formatted.

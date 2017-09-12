@@ -2,7 +2,7 @@
 title: Monitor releases and debug deployment issues
 description: Monitor releases and debug deployment issues with Release Management in Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.assetid: 37894F28-12AA-44DE-9371-AB1F0CDDDC71
 ms.manager: douge
 ms.author: ahomer

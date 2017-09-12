@@ -3,8 +3,7 @@ title: Try paid VSTS extensions free | Visual Studio Team Services
 description: Trial the paid feature extensions in Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-billing
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.manager: douge
 ms.author: estfan
@@ -16,7 +15,7 @@ ms.date: 1/13/2017
 **VSTS**
 
 Extensions offer features and capabilities that you 
-can install in your Visual Studio Team Services account. 
+can install in your VSTS account. 
 Some paid extensions offer a trial so that you can try 
 their features free for a limited time. 
 For example, the [Test Manager](https://marketplace.visualstudio.com/items/ms.vss-testmanager-web) 
@@ -29,7 +28,7 @@ comprehensive manual and exploratory testing features.
 As the VSTS [account owner or project collection administrator](faq-billing-setup.md#find-owner), 
 you can start extension trials for your VSTS account. 
 Otherwise, you can 
-[request extensions](/vsts/marketplace/get-vsts-extensions#request) 
+[request extensions](/vsts/marketplace/install-vsts-extensions#request) 
 instead. Learn about other 
 [VSTS extensions](https://marketplace.visualstudio.com/vsts).
 

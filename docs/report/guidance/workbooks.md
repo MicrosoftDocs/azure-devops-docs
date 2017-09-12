@@ -1,5 +1,5 @@
 ---
-title: Workbooks  
+title: Excel workbooks supported with the Agile and CMMI process templates for TFS   
 description: Use the workbook to rank and assign bugs to be worked on for an iteration, also referred to as a sprint.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting
@@ -10,7 +10,7 @@ ms.date: 12/30/2016
 ---
 # Workbooks 
 
-**TFS 2015 | TFS 2013**
+**TFS 2017 | TFS 2015 | TFS 2013**
   
  You can open the workbook from the Documents page in Team Explorer.  
   

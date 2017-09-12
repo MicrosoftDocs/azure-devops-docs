@@ -4,7 +4,7 @@ Decide which user account you're going to use to register the agent.
 
 #### Authenticate with a personal access token (PAT) to Team Services or TFS 2017
 
-1. Sign in with the user account you plan to use in either your Visual Studio Team Services account (```https://{your-account}.visualstudio.com```)
+1. Sign in with the user account you plan to use in either your VSTS account (```https://{your-account}.visualstudio.com```)
 or your Team Foundation Server web portal (```https://{your-server}:8080/tfs/```).
 
 1.  From your home page, open your profile. Go to your security details.

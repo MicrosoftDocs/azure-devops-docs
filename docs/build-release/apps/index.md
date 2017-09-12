@@ -1,6 +1,6 @@
 ---
 title: Build and deploy your app - examples | VSTS & TFS 
-description: Build and deploy your app examples with Visual Studio Team Services and Team Foundation Server
+description: Build and deploy your app examples with VSTS and Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 955133FD-76B4-4D63-AB46-9043D96F8A9D

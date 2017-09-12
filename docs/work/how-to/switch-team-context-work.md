@@ -1,7 +1,7 @@
 ---
 title: Switch team project or team context | VSTS & TFS
 description: Change the focus of your view to another team project or team Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 2C0977AB-91A4-477C-870E-FA5540E76F4B
 ms.manager: douge

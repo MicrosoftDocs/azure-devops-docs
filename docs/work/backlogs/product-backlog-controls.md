@@ -1,7 +1,7 @@
 ---
 title: Product backlog controls | VSTS & TFS
 description: Switch views and switch controls on or off from your product backlog - Visual Studio Team Services (VSTS) and Team Foundation Server 
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge

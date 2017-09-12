@@ -2,8 +2,7 @@
 title: Delete users using the user hub for Visual Studio Team Services
 description: Delete users using the user hub for Visual Studio Team Services
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.manager: douge
 ms.author: estfan
@@ -37,9 +36,9 @@ learn [how to change paid extension users](../billing/change-number-paid-extensi
 You'll need [VSTS project collection administrator or account owner permissions](faq-add-delete-users.md#find-owner). 
 
 
-##  Delete users from your Visual Studio Team Services account
+##  Delete users from your VSTS account
 
-0. Sign in to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).
+0. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
  [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)
 

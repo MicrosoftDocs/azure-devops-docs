@@ -3,8 +3,7 @@ title: Visual Studio Marketplace & billing overview | Team Services & TFS
 description: Overview of extensions, subscriptions, and billing for the Visual Studio Marketplace
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-marketplace
-ms.service: vsts-marketplace
+ms.technology: vs-devops-marketplace
 ms.assetid: 50c06553-9fba-40da-8c04-357497cc1db7
 ms.manager: douge
 ms.author: elbatk
@@ -27,7 +26,7 @@ The Visual Studio Marketplace provides support for the following:
 
 An extension is an installable unit that contributes new capabilities into Visual Studio, Visual Studio Team Services, Team Foundation Server, or Visual Studio Code. You can find extensions from within these product or from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/). 
 
-Extending Visual Studio Team Services is the easiest way for users to get the most out of their 
+Extending VSTS is the easiest way for users to get the most out of their 
 devops environment. The [Visual Studio Marketplace](https://marketplace.visualstudio.com) is home to hundreds of extensions
 that can be installed to help with:
 - Planning and tracking of work items, sprints, scrums, etc. 
@@ -45,7 +44,7 @@ You can install them with a few clicks. You must have administrative permissions
 
 | Product | Topics |
 |-----------------------------|--------------------------------------------------------------------------------------------------|
-| Visual Studio Team Services | [Get extensions for Team Services](install-vsts-extension.md) <br/> [Develop extensions for Team Services](https://aka.ms/vsoextensions) |
+| VSTS | [Get extensions for Team Services](install-vsts-extension.md) <br/> [Develop extensions for Team Services](https://aka.ms/vsoextensions) |
 | Team Foundation Server | [Get extensions for TFS](get-tfs-extensions.md) <br/> [Develop extensions for Team Foundation Server](https://aka.ms/vsoextensions) |
 | Visual Studio | [Get extensions for Visual Studio](https://marketplace.visualstudio.com/vs) <br/> [Develop extensions for Visual Studio](http://aka.ms/extendvs) |
 | Visual Studio Code | [Get extensions for Visual Studio Code](https://marketplace.visualstudio.com/vscode) <br/> [Develop extensions for Visual Studio Code](http://go.microsoft.com/fwlink/?LinkID=703825) |

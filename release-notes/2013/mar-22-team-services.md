@@ -1,6 +1,6 @@
 ---
 title: Team Foundation Service updates - Mar 22
-description: Visual Studio Team Services release notes for March 22 2013
+description: VSTS release notes for March 22 2013
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

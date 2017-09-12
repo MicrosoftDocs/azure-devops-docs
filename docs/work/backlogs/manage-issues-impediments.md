@@ -1,7 +1,7 @@
 ---
 title: Manage issues or impediments | VSTS & TFS
 description: Add work items to track problems, risks, or other issues that may impeded your plans or schedule - Visual Studio Team Services (VSTS) and Team Foundation 
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
 ms.manager: douge

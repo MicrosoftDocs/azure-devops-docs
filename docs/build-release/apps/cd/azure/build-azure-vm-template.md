@@ -3,7 +3,7 @@ ms.assetid: 10C708EC-0D2A-4EF8-9381-4CF8B1EBA755
 title: Build an Azure Virtual Machine using Azure RM templates
 description: Build an Azure Virtual Machine using ARM templates in Release Management in VSTS and TFS
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016
@@ -52,7 +52,7 @@ Follow these steps to create and check-in a new Resource Manager template.
 
 1. Save the entire solution (not just the project) and 
    commit the changes into a Team Foundation Server or 
-   Visual Studio Team Services Git repository.
+   VSTS Git repository.
 
 ### Create the build definition
 

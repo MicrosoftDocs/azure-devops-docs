@@ -3,8 +3,7 @@ title: Workspace Command
 description: Workspace Command
 ms.assetid: a7b374f5-02c2-4318-9130-31533bf0732c
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
+ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

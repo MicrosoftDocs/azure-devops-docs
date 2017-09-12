@@ -4,8 +4,7 @@ description: Get started using Power BI to analyze data collected for your exten
 ms.author: divais
 ms.date: 06/12/2017
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-marketplace
-ms.service: vsts-marketplace
+ms.technology: vs-devops-marketplace
 ms.assetid: 435be0b3-ec45-41dd-a804-03b9342fa7cc
 ---
 
@@ -59,7 +58,7 @@ The content pack contains a complete analytic data model (tables, relationships 
 
 ##Available data and reports 
 
-After getting connected you will see an initial dashboard with details on all of your extensions. All data available in the Marketplace extension hub is available in the content pack. Details on the extension hub are available [here](https://www.visualstudio.com/en-us/docs/extend/extension-report). 
+After getting connected you will see an initial dashboard with details on all of your extensions. All data available in the Marketplace extension hub is available in the content pack. Details on the extension hub are available [here](/vsts/extend/extension-report). 
 
 The power BI content pack gives data for all extensions and you can use the filters to view data for an extension or use the extension report to compare data between extensions. 
 

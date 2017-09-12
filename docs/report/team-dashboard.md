@@ -1,5 +1,5 @@
 ---
-title: Team dashboard | TFS  
+title: TFS team home page or dashboard  
 description: View progress and gain quick access to code, builds, and work items from the team home page in Visual Studio Team Services (VSTS)  and Team Foundation Server (TFS)  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting

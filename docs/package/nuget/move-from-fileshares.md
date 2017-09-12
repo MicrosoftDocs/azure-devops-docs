@@ -1,6 +1,6 @@
 ---
 title: Move your packages to the cloud
-description: Leave your file shares behind and bring your packages to Visual Studio Team Services or Team Foundation Server
+description: Leave your file shares behind and bring your packages to VSTS or Team Foundation Server
 ms.assetid: E45D2856-222F-444B-9E0C-A04B6FE93494
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
@@ -13,7 +13,7 @@ ms.date: 09/01/2017
 
 [!INCLUDE [](../_shared/availability-nuget.md)]
 
-Visual Studio Team Services provides hosted NuGet feeds as a service. 
+VSTS provides hosted NuGet feeds as a service. 
 If you're using NuGet packages as a part of your continuous delivery flow, 
 Team Services Package Management can eliminate your dependencies on on-premises file shares and hosted instances of NuGet.Server.
 Team Services Package Management works with any CI system that supports authenticated NuGet feeds. 

@@ -3,8 +3,7 @@ title: Save your changes with Git commits | VSTS & TFS
 description: Use Git commit to save your work into Git version control with Visual Studio or the command line.
 ms.assetid: 223c0064-06ec-433e-8ec2-d73a5435cf23
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git 
-ms.service: vsts-code
+ms.technology: vs-devops-git 
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie

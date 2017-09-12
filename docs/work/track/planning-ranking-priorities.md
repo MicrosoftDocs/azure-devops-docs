@@ -1,7 +1,7 @@
 ---
 title: Pick list queries | VSTS & TFS
 description: Creating queries based on planning, ranking, and priority, integer and pick list fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
 ms.manager: douge

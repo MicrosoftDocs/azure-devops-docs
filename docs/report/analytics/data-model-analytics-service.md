@@ -1,5 +1,5 @@
 ---
-title: Data model | VSTS  
+title: Data model for the Analytics Service for VSTS  
 description: Describes the data sets, counts and calculated measures provided with the Analytics service for Visual Studio Team Services (VSTS) 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting

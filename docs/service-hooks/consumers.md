@@ -4,7 +4,7 @@ description: Service hooks consumer documentation for Visual Studio Team Service
 toc: Hide
 ms.assetid: CDACB8A1-4BAB-499F-B9ED-BD1680743B26
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-integrate
+ms.technology: vs-devops-extensions-api
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

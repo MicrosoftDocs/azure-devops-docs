@@ -1,6 +1,6 @@
 ---
 title: Build definition options
-description: Build options on Visual Studio Team Services and Team Foundation Server
+description: Build options on VSTS and Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E

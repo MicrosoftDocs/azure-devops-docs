@@ -40,7 +40,7 @@ Refer to [Get started with Power BI](https://powerbi.microsoft.com/documentation
 Reports are at the heart of Power BI and provide the basis for dashboards. Dashboards are the shareable component of Power BI. See the Power BI documentation on [Reports](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-reports/) for more information.
 
 ###Understand the default report
-The Visual Studio Team Services content pack generates a single report with several pages. 
+The VSTS content pack generates a single report with several pages. 
 
 <table width="100%">
 <tr>

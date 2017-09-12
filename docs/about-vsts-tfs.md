@@ -1,17 +1,17 @@
 ---
-title: About VSTS and TFS  
+title: Understand differences between VSTS and TFS  
 description: Understand the fundamental differences between Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.prod: vs-devops-alm  
-ms.technology: vs-devops-articles
+ms.technology: vs-devops-overview
 ms.assetid: 458FAFD1-98B0-4B74-B8E7-F2C73D4EED6B
 ms.manager: douge
 ms.author: kaelli
 ms.date: 06/22/2017
 ---
 
-# About Visual Studio Team Services and Team Foundation Server 
+# About VSTS and Team Foundation Server 
 
-Visual Studio Team Services and Team Foundation Server (TFS) both provide an integrated, collaborative environment that supports Git, continuous integration, and Agile tools for planning and tracking work.  
+VSTS and Team Foundation Server (TFS) both provide an integrated, collaborative environment that supports Git, continuous integration, and Agile tools for planning and tracking work.  
 
 Team Services is the cloud offering that provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24—7 operations team, and available in local data centers around the world. 
 

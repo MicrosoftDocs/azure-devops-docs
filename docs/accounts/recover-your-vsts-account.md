@@ -1,16 +1,15 @@
 ---
-title: Restore your Visual Studio Team Services account
-description: Restore your Visual Studio Team Services account
+title: Restore your VSTS account
+description: Restore your VSTS account
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.manager: douge
 ms.author: estfan
 ms.date: 08/04/2016
 ---
 
-# Restore your Visual Studio Team Services account
+# Restore your VSTS account
 
 **VSTS**
 

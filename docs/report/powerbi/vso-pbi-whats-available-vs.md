@@ -13,7 +13,7 @@ ms.date: 03/02/2017
 
 <b>VSTS</b>
 
-Power BI Content Pack for Visual Studio Team Services gathers data from different feature areas and combines them into a single coherent analytical model.
+Power BI Content Pack for VSTS gathers data from different feature areas and combines them into a single coherent analytical model.
 
 ##Currently available data  
 <table>
@@ -52,7 +52,7 @@ These tables are described here along with their basic measures.
     </tr>
     <tr width="75%">
         <td>Dataset&#160;details</td>
-        <td>Contains information on when the data in Power BI was last updated and the version of the Visual Studio Team Services connector data model being used.</td>
+        <td>Contains information on when the data in Power BI was last updated and the version of the VSTS connector data model being used.</td>
     </tr>
     <tr>
         <td>Dates</td>

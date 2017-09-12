@@ -1,10 +1,9 @@
 ---
-title: Search your code in Visual Studio Team Services and Team Foundation Server
+title: Search your code in VSTS and Team Foundation Server
 description: Get started with Code Search in VSTS and TFS
 ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-cod
-ms.service: vsts-collaboration
+ms.technology: vs-devops-search
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: douge
@@ -54,7 +53,7 @@ For more details, see [Install an extension](../../marketplace/install-vsts-exte
    drop-down list. Select the filter function or code type you want to include in your search string from the
    list, and type the criteria value.
 
-   ![Search from Visual Studio Team Services title bar](_img/get-started/title-bar-search-functionlist.png)    
+   ![Search from VSTS title bar](_img/get-started/title-bar-search-functionlist.png)    
 
    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`. 
 

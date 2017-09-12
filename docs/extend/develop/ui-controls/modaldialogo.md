@@ -3,8 +3,7 @@ title: Use the Dialog Control | Extensions for Visual Studio Team Services
 description: Use the modal dialog control to collect user input or display message in your app for Visual Studio Team Services.
 ms.assetid: 84F3452D-9EB6-4908-AB52-07903644EDA8
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

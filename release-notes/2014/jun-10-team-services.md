@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Online Updates - Jun 10
-description: Visual Studio Team Services release notes for June 10 2014
+description: VSTS release notes for June 10 2014
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

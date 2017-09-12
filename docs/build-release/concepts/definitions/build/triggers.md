@@ -1,6 +1,6 @@
 ---
 title: Build definition triggers
-description: Specify CI, scheduled, gated, and other triggers for your build on Visual Studio Team Services and Team Foundation Server (TFS)
+description: Specify CI, scheduled, gated, and other triggers for your build on VSTS and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 250D4E5B-B2E5-4370-A801-E601C4871EE1
@@ -32,7 +32,7 @@ If you are using batched changes, you can also specify a maximum number of concu
 
 If your repository is Git then you can specify the branches where you want to trigger builds. You can use wildcard characters.
 
-#### Path filters in Visual Studio Team Services and Team Foundation Services (TFS)
+#### Path filters in VSTS and Team Foundation Services (TFS)
 
 If your Git repo is in VSTS or TFS, you can also specify path filters to reduce the set of files that you want to trigger a build.
 
@@ -132,7 +132,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 
 ### How do I protect my Git codebase from build breaks?
 
-If your code is in a Git repo on Visual Studio Team Services or Team Foundation Server, you can create a branch policy that runs your build. See [Improve code quality with branch policies](../../../../git/branch-policies.md). This option is not available for GitHub repos.
+If your code is in a Git repo on VSTS or Team Foundation Server, you can create a branch policy that runs your build. See [Improve code quality with branch policies](../../../../git/branch-policies.md). This option is not available for GitHub repos.
 
 ### My build didn't run. What happened?
 

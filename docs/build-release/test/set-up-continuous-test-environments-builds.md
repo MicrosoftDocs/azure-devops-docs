@@ -1,8 +1,8 @@
 ---
 title: Set up environments to run continuous tests with your builds
-description: Set up environments to run continuous test tasks with your build tasks Microsoft Visual Studio Team Services VSTS and Microsoft Team Foundation Server TFS
+description: Set up environments to run continuous test tasks with your build tasks VSTS and TFS 
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-continuous
+ms.technology: vs-devops-build
 ms.assetid: FFD51F1E-C3B7-4FAC-B25D-95ADD6C1A1A0
 ms.manager: douge
 ms.author: ahomer

@@ -3,8 +3,7 @@ title: Share your code in TFVC using Eclipse | Visual Studio Team Services
 description: Share code in TFVC using Eclipse
 ms.assetid: 181CB50F-44D3-4BA4-8E89-ADB9CB87DEB6
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
+ms.technology: vs-devops-tfvc
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: routlaw
@@ -15,16 +14,16 @@ ms.date: 08/10/2016
 
 **VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
-Share your code with your team with Visual Studio Team Services and Eclipse.
+Share your code with your team with VSTS and Eclipse.
 
 [!INCLUDE [include](_shared/connect-eclipse-to-vso.md)]
 
-If your team project uses TFVC in your Visual Studio Team Services account, read on. However, if your team project uses Git in your Visual Studio Team Services account,then read [Share your code in Git using Eclipse](../git/share-your-code-in-git-eclipse.md)
+If your team project uses TFVC in your VSTS account, read on. However, if your team project uses Git in your VSTS account,then read [Share your code in Git using Eclipse](../git/share-your-code-in-git-eclipse.md)
 
 <a name="tfvc"></a>
 ## Share using TFVC
 
-1. If you haven't yet, [Connect to Visual Studio Team Services using Eclipse](../connect/connect-team-projects.md).
+1. If you haven't yet, [Connect to VSTS using Eclipse](../connect/connect-team-projects.md).
 
 2. In Package Explorer, right-click the project and choose Team, Share Project.
 

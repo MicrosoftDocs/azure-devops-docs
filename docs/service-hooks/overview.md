@@ -1,9 +1,9 @@
 ---
 title: Integrate with service hooks | Visual Studio Team Services
-description: Perform tasks with other services when events happen in Visual Studio Team Services projects
+description: Perform tasks with other services when events happen in VSTS projects
 ms.assetid: c0617128-b67c-4ec4-b1c9-e65e1b3ab82c
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

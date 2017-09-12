@@ -1,10 +1,9 @@
 ---
-title: REST API samples for Visual Studio Team Services and Team Foundation Server
-description: REST API samples for Visual Studio Team Services and Team Foundation Server.
+title: REST API samples for VSTS and Team Foundation Server
+description: REST API samples for VSTS and Team Foundation Server.
 ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
+ms.technology: vs-devops-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/25/2016
@@ -69,7 +68,7 @@ using (var client = new HttpClient())
 
 In this example we are using two of the .Net Client Libraries. Make sure these are referenced within your .net project.
 
-[Microsoft Team Foundation Server Client](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/)
+[TFS Client](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/)
 
 [Microsoft Visual Studio Services Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)
 
@@ -94,7 +93,7 @@ using (ProjectHttpClient projectHttpClient = new ProjectHttpClient(uri, credenti
 
 ## Work item tracking
 
-You can find the following samples and more in C# and .NET at the [work item tracking samples page](https://visualstudio.com/api/wit/samples.md).
+You can find the following samples and more in C# and .NET at the [work item tracking samples page](https://www.visualstudio.com/docs/integrate/api/wit/overview).
 
 - [Create a bug](https://visualstudio.com/api/wit/samples.md#create-bug)
 - [Migrating work items](https://visualstudio.com/api/wit/samples.md#migrating-work-items)

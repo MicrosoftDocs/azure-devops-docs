@@ -3,8 +3,7 @@ title: Delete a team project from VSTS and TFS
 description: Delete or remove a team project from Visual Studio Team Services (VSTS) or from Team Foundation Server (TFS)
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.manager: douge
 ms.author: estfan
 ms.date: 08/11/2016
@@ -18,7 +17,7 @@ If you find that you have a team project you no longer use, you can delete it. D
 
 >**Caution:**  Deleting a team project permanently removes data associated with that project from the database. You cannot recover it later. Therefore, you should [save team project data](save-team-project-data.md) that you might want to access later.
 
-You can delete a team project from Visual Studio Team Services or from an on-premises deployment of Team Foundation Server (TFS).
+You can delete a team project from VSTS or from an on-premises deployment of Team Foundation Server (TFS).
 
 ## Delete a team project from Visual Studio Team Services
 

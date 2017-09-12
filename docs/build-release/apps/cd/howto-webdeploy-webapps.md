@@ -3,7 +3,7 @@ ms.assetid: CB3939AB-87D4-4BDB-8531-06096FF230C6
 title: How To Next Steps to Azure App Services
 description: Next steps for deploying an app to a Azure App Services from Release Management in VSTS or TFS
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/02/2017

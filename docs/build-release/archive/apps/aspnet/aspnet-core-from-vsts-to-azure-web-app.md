@@ -8,7 +8,6 @@ manager: douge
 editor: ''
 
 ms.assetid: 4162F547-3E73-4B1E-970F-A26DFCA206E1
-ms.service: vsts
 ms.workload: web
 ms.tgt_pltfrm: na
 ms.devlang: dotnetcore
@@ -18,7 +17,7 @@ ms.custom: mvc
 ---
 # Implement a CI/CD process to build and deploy your ASP.NET Core app to Azure
 
-Visual Studio Team Services provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
+VSTS provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
 ASP.NET Core apps. 
 This quickstart shows how to set up CI and CD to deploy
 an ASP.NET Core app

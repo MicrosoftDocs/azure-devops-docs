@@ -41,7 +41,7 @@ Prior to performing either Scenario #1 or #2, make sure you have [permissions re
 
 	![get-data-final.png](_img/get-data-final.png)
 
-5. Select the Visual Studio Team Services connector and click **Connect**.
+5. Select the VSTS connector and click **Connect**.
 
 	![VSTS connector](_img/connect-to-vs-team-services-choose.png)
 
@@ -83,9 +83,9 @@ If your cached credentials work, you won't get prompted. If you don't have cache
 ![VSTS Login page](_img/Screen7.png)
 
 >[!IMPORTANT]  
->There is a situation that can occur where Power BI will still try to use your cached credentials even though they are different than the credentials you used when logging onto Power BI. In this case, the Visual Studio Team Services Authorize dialog will still be displayed however, you'll be logged on as the wrong user. To correct this situation, do the following: <br/>  
+>There is a situation that can occur where Power BI will still try to use your cached credentials even though they are different than the credentials you used when logging onto Power BI. In this case, the VSTS Authorize dialog will still be displayed however, you'll be logged on as the wrong user. To correct this situation, do the following: <br/>  
 > - Click **Sign out** in the Authorize application page  
-> - Close the page and click **Sign In** again on the Power BI Configure Visual Studio Team Services dialog  
+> - Close the page and click **Sign In** again on the Power BI Configure VSTS dialog  
 > - You will then be prompted to enter your VSTS credentials and everything will work as normal.  
 
 
@@ -93,7 +93,7 @@ If your cached credentials work, you won't get prompted. If you don't have cache
 
 To get started using Power BI and the Analytics service, make sure you have [permissions required to access the Analytics service](../analytics/analytics-security.md) and then review the [knowledge base of articles](https://support.powerbi.com/).
 
-Always check into updates of [What's available in the Power BI Visual Studio Team Services Connector](vso-pbi-whats-available-vs.md) to learn about the latest data and changes made to the VSTS Connector.  
+Always check into updates of [What's available in the Power BI VSTS Connector](vso-pbi-whats-available-vs.md) to learn about the latest data and changes made to the VSTS Connector.  
 
 To understand the default reports available, see [Create reports with data from using Power BI for VSTS](report-on-vso-with-power-bi-vs.md).
 

@@ -4,8 +4,7 @@ description: Get started using Git in Visual Studio
 toc: show
 ms.assetid: BFDE8FAF-63B8-4BC9-9A24-32EE2CA73C13
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git 
-ms.service: vsts-code
+ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
 ms.date: 08/28/2017
@@ -49,7 +48,7 @@ To get started, you'll first need to clone your repo to your local machine.  Onc
 
 	![Click Home, then Open in Visual Studio](_img/get-started/GoHomeOpenInVisualStudio.png)
 
-0. Sign in to Visual Studio Team Services from Visual Studio.
+0. Sign in to VSTS from Visual Studio.
 
 0. Clone the repository to your computer.
 

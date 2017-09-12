@@ -3,8 +3,7 @@ title: Proxy Command
 description: Proxy Command
 ms.assetid: c36b124d-f1cf-4e6f-a053-3b7d501a234c
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
+ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

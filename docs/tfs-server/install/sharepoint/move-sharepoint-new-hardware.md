@@ -2,20 +2,18 @@
 title: Move SharePoint to new hardware for TFS
 description: Move SharePoint to new hardware for TFS
 ms.assetid: b5cdc973-6538-4a54-812f-e58bb001a398
-ms.manager: douge
-ms.author: elbatk
-ms.date: 09/01/2016
 ms.prod: vs-devops-alm
 ms.technology: tfs-on-prem
+ms.manager: douge
+ms.author: elbatk
+ms.date: 09/09/2017
 ---
 
 # Move SharePoint to new hardware for TFS
 
-**TFS 2017** | **TFS 2015** | **TFS 2013**
+[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
 
-![](../../upgrade/_img/ic666063.png)
-
-## How to set up a new SharePoint site 
+## Set up a new SharePoint site 
 
 You can install SharePoint Foundation using the TFS extensions for SharePoint wizard. The TFS wizard will install a fresh copy of SharePoint using the installation of SQL Server you just set up, and then configure the TFS extensions for the new installation of TFS. After you install SharePoint, you’ll detach its content database to prepare for the migration of the data from your previous SharePoint installation in step 4, Back up and Restore Data.
 
@@ -39,6 +37,8 @@ Run the TFS installation program from the product DVD and then use the **Configu
 ### To install SharePoint
 
 1.  In the Team Foundation Server Configuration tool, choose **Configure Extensions for SharePoint Products** and then choose **Start Wizard**.
+
+	![](../../upgrade/_img/ic666063.png)
 
     The Team Foundation Server SharePoint Extensions Configuration wizard appears.
 

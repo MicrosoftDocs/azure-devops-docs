@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 title: Samples Overview | Extensions for Visual Studio Team Services
 description: Overview of the available extension samples, including a description, the link to the repo and the contributions they touch
 ms.assetid: 2639a776-d2f7-4866-b54f-1da3883b1b91
@@ -41,4 +40,4 @@ To get you started as quickly as possible, there is a [seed project](https://git
 that contains the files required to build an extension using TypeScript. To automate building, packaging and publishing the extension a grunt script is 
 added.
 
-If you are interested in a sample project that contains the majority of the contributions, see the [Visual Studio Team Services Sample Extensions](https://github.com/Microsoft/vsts-extension-samples) repository on GitHub.
+If you are interested in a sample project that contains the majority of the contributions, see the [VSTS Sample Extensions](https://github.com/Microsoft/vsts-extension-samples) repository on GitHub.

@@ -1,6 +1,6 @@
 ---
 title: Release, test and Git/TFVC history view improvements – Jul 29
-description: Visual Studio Team Services release notes for July 29 2016
+description: VSTS release notes for July 29 2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

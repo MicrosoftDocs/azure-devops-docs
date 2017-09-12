@@ -3,8 +3,7 @@ title: Merge Command
 description: Merge Command
 ms.assetid: 4075b4a8-1d11-49d5-8dbe-4fd00cdb0fca
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
+ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

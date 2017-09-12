@@ -22,7 +22,7 @@ You can change the following settings:
 You can perform these tasks by editing the web.config file for version control, which is located in the installation directory on the application-tier server.
 
 > [!NOTE]
-> By default, the installation directory for the application tier is *%programfiles%\*Microsoft Team Foundation Server 12.0\Application Tier\Web Services.
+> By default, the installation directory for the application tier is *%programfiles%\*TFS 12.0\Application Tier\Web Services.
 
 **Required Permissions**  
 To perform these procedures, you must be a member of the **Administrators** security group on the application-tier server for Team Foundation.
@@ -57,7 +57,7 @@ For more information, see the [Microsoft website](http://go.microsoft.com/fwlink
 
 6.  Select the **Modify** check box, clear all other check boxes, and then choose **OK**.
 
-7.  In Windows Explorer (or File Explorer), browse to *%programfiles%\\*Microsoft Team Foundation Server 2013\\Application Tier\\Web Services.
+7.  In Windows Explorer (or File Explorer), browse to *%programfiles%\\*TFS 2013\\Application Tier\\Web Services.
 
 8.  Open the web.config file in a text or XML editor, and then locate the `\<appSettings\>` section.
 
@@ -79,7 +79,7 @@ For more information, see the [Microsoft website](http://go.microsoft.com/fwlink
 12. Delete the old cache root folder.
 
     > [!NOTE]
-	> By default, the cache root folder is located at *%programfiles%*\Microsoft Team Foundation Server 12.0\Version Control Proxy\Web Services\VersionControlProxy\Data.
+	> By default, the cache root folder is located at *%programfiles%*\TFS 12.0\Version Control Proxy\Web Services\VersionControlProxy\Data.
 
 
 ## Changing limits for removing files from the cache
@@ -89,7 +89,7 @@ You can change the maximum limit on the amount of storage space that the applica
 <a name="change-limit-old-files"></a>
 ### To change the limit at which old files are removed from the cache
 
-1.  On the application-tier server, open Windows Explorer (or File Explorer), and browse to *\\%programfiles%\\*Microsoft Team Foundation Server 12.0\\Application Tier\\Web Services.
+1.  On the application-tier server, open Windows Explorer (or File Explorer), and browse to *\\%programfiles%\\*TFS 12.0\\Application Tier\\Web Services.
 
 2.  Open the web.config file in a text or XML editor, and then locate the `\<appSettings\>` element.
 
@@ -116,7 +116,7 @@ You can change the maximum limit on the amount of storage space that the applica
 
 ### To change the amount of cache to free when removing old files
 
-1.  On the application-tier server, open Windows Explorer (or File Explorer), and browse to *%programfiles%\\*Microsoft Team Foundation Server 12.0\\Application Tier\\Web Services\\.
+1.  On the application-tier server, open Windows Explorer (or File Explorer), and browse to *%programfiles%\\*TFS 12.0\\Application Tier\\Web Services\\.
 
 2.  Open the web.config file in a text or XML editor, locate the `\<appSettings\>` element, and then add the `CacheDeletionPercent` element.
 

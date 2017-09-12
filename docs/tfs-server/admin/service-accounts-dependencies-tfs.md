@@ -57,7 +57,7 @@ The following table shows all the service accounts that you might use in a deplo
 | Service account for Team Foundation Server Proxy | *TFSProxy*, which can be a local account, a domain account, Local Service in a workgroup, or Network Service in a domain | **Log on as a service** | This service account is used for all of the proxy services. If you use a domain account for this account, it must be a member of a domain that all computers throughout the deployment fully trust. |
 | Service account for Test Agent and Test Agent Controller | *TFSTest*, which can be a local account, a domain account, or Network Service in a domain. | **Log on as a service** | This service account is used when information about tests is communicated between the test agent controller and the test agent. | 
 | Service accounts for SharePoint Web applications | *WebAppService* | **Allow log on locally** | You must add at least one service account for each SharePoint Web application that you configure for use with Team Foundation Server. This service account is used to create team project portals and to enable dashboard functionality. |
-| Service account for Visual Studio Team Services | Account Service (*CollectionName*) | None. This account is only used if you are using a hosted deployment of TFS. It is automatically created for you, and can be viewed through the administration page of Team Web Access. | This service account is created automatically when you create a collection in Visual Studio Team Services, and is used when clients communicate with the hosted service. |
+| Service account for VSTS | Account Service (*CollectionName*) | None. This account is only used if you are using a hosted deployment of TFS. It is automatically created for you, and can be viewed through the administration page of Team Web Access. | This service account is created automatically when you create a collection in Visual Studio Team Services, and is used when clients communicate with the hosted service. |
 
 1 You can integrate your deployment with SharePoint Products without this permission, but you must perform additional steps if the service account is not a member of the Farm Administrators group. For more information, see [Integrate Team Foundation Server with SharePoint Products Without Administrative Permissions](https://msdn.microsoft.com/library/ee462864).
 
@@ -81,7 +81,7 @@ The following services run under service accounts in a deployment of Team Founda
 |SQL Server Browser|Local Service or a domain account|data tier|
 |SQL Server (**MSSQLSERVER** or *InstanceName* if using a named instance)|Local System, Network Service, or a domain account|data tier|
 |SQL Server Agent (**MSSQLSERVER** or *InstanceName* if using a named instance)|Local System, Network Service, or a domain account|data tier|
-|Account Service (*CollectionName*)|Automatic|web tier (Visual Studio Team Services only)|
+|Account Service (*CollectionName*)|Automatic|web tier (VSTS only)|
 
 For more information about service accounts for SQL Server, see the following page on the Microsoft Web site: [SQL Server Books Online](http://go.microsoft.com/fwlink/?LinkID=62398). For the most recent information about service accounts in Team Foundation, see [Team Foundation Server install guide](../install/get-started.md).
 

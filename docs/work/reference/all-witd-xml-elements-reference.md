@@ -23,7 +23,8 @@ You can customize an existing work item type (WIT) or create a WIT to meet your 
 ##  WITD syntax structure  
  The following example shows the high-level structure of a WIT definition.  
   
-```  
+> [!div class="tabbedCodeSnippets"]
+```XML 
 <witd:WITD application="Work item type editor" version="1.0" xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/typedef">  
     <WORKITEMTYPE name="bug" refname="Microsoft.VSTS.WorkItemTypes.Bug">  
         <DESCRIPTION> Describes a divergence between required and actual behavior, and tracks the work done to correct the defect and verify the correction.</DESCRIPTION>  
@@ -144,12 +145,12 @@ Upon installing or upgrading an instance of an on-premises TFS, the [default pro
 
 **For TFS 2017**: 
 ```  
-%programfiles%/Microsoft Team Foundation Server 15.0/Tools/Deploy/ProcessTemplateManagerFiles/1033
+%programfiles%/TFS 15.0/Tools/Deploy/ProcessTemplateManagerFiles/1033
 ```  
  
 **For TFS 2015**: 
 ```  
-%programfiles%/Microsoft Team Foundation Server 14.0/Tools/Deploy/ProcessTemplateManagerFiles/1033
+%programfiles%/TFS 14.0/Tools/Deploy/ProcessTemplateManagerFiles/1033
 ```  
   
 WIT definition files are stored in the WorkItem Tracking\TypeDefinitions folder.  

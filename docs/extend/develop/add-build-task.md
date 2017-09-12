@@ -3,8 +3,7 @@ title: Add a Build Task | Extensions for Visual Studio Team Services
 description: Add a custom build task.
 ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/22/2016
@@ -12,7 +11,7 @@ ms.date: 08/22/2016
 
 # Add a build task
 
-Custom build tasks can be contributed by extensions that can be discovered and installed by users into a Visual Studio Team Services account. 
+Custom build tasks can be contributed by extensions that can be discovered and installed by users into a VSTS account. 
 These tasks will appear next to Microsoft-provided tasks in the Add Step wizard:
 <img alt="Integrations link on the account home page" src="_img/build-task-ext-choose-task.png" style="width:80%; display:block;margin-right:auto;margin-left:auto;margin-top:10px">
 
@@ -21,7 +20,7 @@ To learn more about the new cross-platform build system, see [Team Foundation Bu
 ## Preparation and required setup for this tutorial
 In order to create extensions for Team Services, there are some prerequisite software and tools you'll need:
 
-- A **Visual Studio Team Services account**, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
+- A **VSTS account**, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
 <a name="cli" />
@@ -242,31 +241,9 @@ If you can't see the Extensions tab, make sure you're in the control panel (the 
 If you're on the control panel, and you don't see the <b>Extensions</b> tab, extensions may not be enabled for your account. You can get early access to the extensions feature by joining the Visual Studio Partner Program.
 
 ## Helpful links
-<div name="row">
-    <div style="vertical-align:top;display:inline-block;float:left;width:35%">
-        <div style="vertical-align:top;display:block;margin-left:auto;margin-right:auto;width:98%">
-            <ul>
-                <li><b>[Extension Manifest Reference](./manifest.md)</b></li>
-            </ul>
-        </div>  
-    </div>
-    <div style="vertical-align:top;display:inline-block;float:left;width:32%">
-        <div style="vertical-align:top;display:block;margin-left:auto;margin-right:auto;width:98%">
-            <ul>
-                <li><b>[Build Task JSON Schema](./build-task-schema.md)</b></li>
-            </ul>
-        </div>  
-    </div>
-    <div style="vertical-align:top;display:inline-block;float:left;width:32%">
-        <div style="vertical-align:top;display:block;margin-left:auto;margin-right:auto;width:98%">
-            <ul>
-                <li><b>[Build Task Examples](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)</b></li>
-            </ul>
-        </div>  
-    </div>
-</div>
-
-<br>
+* [Extension Manifest Reference](./manifest.md)
+* [Build Task JSON Schema](./build-task-schema.md)
+* [Build Task Examples](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)
 
 >[!NOTE]
 >Check out our **[Node task sample in GitHub](https://github.com/Microsoft/vsts-task-lib/blob/master/node/docs/stepbystep.md)** for a tutorial that shows

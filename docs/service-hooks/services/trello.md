@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: Trello with Visual Studio Team Services
-description: Use Trello with your Visual Studio Team Services account
+description: Use Trello with your VSTS account
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 ms.manager: douge
 ms.author: elbatk
@@ -19,9 +19,9 @@ For example, when code is pushed, or a build occurs.
 
 1. If you don't have a Trello account, get one [here](https://trello.com/signup).
 
-2. Go to the [Authorize Visual Studio Team Services for Trello page](https://trello.com/1/authorize?key=7d6630fd03ac2b6fc9fde2f2ef0c4096&name=Visual%20Studio%20Online&expiration=never&response_type=token&scope=read%2cwrite), and sign in with your Trello credentials.
+2. Go to the [Authorize VSTS for Trello page](https://trello.com/1/authorize?key=7d6630fd03ac2b6fc9fde2f2ef0c4096&name=Visual%20Studio%20Online&expiration=never&response_type=token&scope=read%2cwrite), and sign in with your Trello credentials.
 
-3. Allow Visual Studio Team Services to use your Trello account.
+3. Allow VSTS to use your Trello account.
 
    <img alt="Allow Visual Studio Team Services" src="./_img/trello/allow.png" style="border: 1px solid #CCCCCC" />
 
@@ -29,7 +29,7 @@ For example, when code is pushed, or a build occurs.
 
    <img alt="Trello athorization token" src="./_img/trello/authorization-token.png" style="border: 1px solid #CCCCCC" />
 
-Create a Trello card or list from a Visual Studio Team Services event
+Create a Trello card or list from a VSTS event
 
 1. From your team project's home page, go to the administration page.
 
@@ -141,7 +141,7 @@ Handlerbars paths          | ...<br/>this<br/>For example, ```{{../comment/id}}`
 Template comments          | ```{{!-- this is a handlebar comment --}}``` 
 
 ## Pricing
-Visual Studio Team Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
+VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A

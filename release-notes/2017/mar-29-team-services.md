@@ -1,6 +1,6 @@
 ---
 title: PR filtering by people and improved Azure resource group template parameter experience – Mar 29
-description: Visual Studio Team Services release notes for Mar 29 2017
+description: VSTS release notes for Mar 29 2017
 ms.ContentId: 524ad78c-8313-4e3b-aa2e-3bd2981f3f61
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -114,7 +114,7 @@ Currently in Azure resource group deployment tasks, users select the template.js
 ![Azure RD parameters](_img/03_29_10.png)
 
 ##Continuous Delivery in the Azure portal supports any Git repo
-You can now configure a continuous delivery (CD) workflow for the __Azure App Service__ no matter which Git repository you use to manage your code. Until now, you could select an App Service in the Azure Portal and setup continuous delivery for that service in just a few clicks, but only if you managed your code either in a Visual Studio Team Services Git repository or in GitHub. You can now get the same simple experience for any public or private Git repository, provided that repository is accessible from the Internet. With a few clicks in the Azure portal, you can set up a build and release definition in Team Services that will periodically check your Git repository for any changes, sync those changes, run an automated build and test, followed by a deployment to Azure App Service. As your needs evolve, you can customize these definitions to support multiple environments, more complex testing, or deployment upon manual approval.
+You can now configure a continuous delivery (CD) workflow for the __Azure App Service__ no matter which Git repository you use to manage your code. Until now, you could select an App Service in the Azure Portal and setup continuous delivery for that service in just a few clicks, but only if you managed your code either in a VSTS Git repository or in GitHub. You can now get the same simple experience for any public or private Git repository, provided that repository is accessible from the Internet. With a few clicks in the Azure portal, you can set up a build and release definition in Team Services that will periodically check your Git repository for any changes, sync those changes, run an automated build and test, followed by a deployment to Azure App Service. As your needs evolve, you can customize these definitions to support multiple environments, more complex testing, or deployment upon manual approval.
 
 ##Separation of duties for deployment requester and approvers
 Previously, environment owners could restrict release creators from approving deployments of the release to an environment. Users could, however, manually start deployment of a release created by another user, and approve it themselves.

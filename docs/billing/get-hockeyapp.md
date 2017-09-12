@@ -2,8 +2,7 @@
 title: Get HockeyApp - Bring DevOps to mobile app development | Visual Studio Marketplace
 description: Distribute mobile apps for testing, collect user feedback, metrics, and live crash reports for apps on Android, iOS, Mac OS X, and Windows. Add DevOps to your Agile, continuous integration, and continuous delivery workflows in Visual Studio Team Services, GitHub, Jira, Bamboo, Team Foundation Server, and more.
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-billing
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: b572fa78-70ba-4060-bcc3-1f8c342d98f8
 ms.manager: douge
 ms.author: elbatk
@@ -63,7 +62,7 @@ or a work or school account, like @fabrikam.com
 to use for billing purchases from the Visual Studio Marketplace 
 
 	For example, you can use the Azure subscription that's linked to 
-	your Visual Studio Team Services account, if your account is already 
+	your VSTS account, if your account is already 
 	[set up for billing](set-up-billing-for-your-account-vs.md). 
 	If you don't have an Azure subscription, you can 
 	[sign up for Azure](https://portal.azure.com) 
@@ -140,7 +139,7 @@ which feed back into work items for your next cycle.
 Learn more about [HockeyApp and Visual Studio Team Services](http://hockeyapp.net/blog/2015/11/18/introducing-mobile-devops.html).
 
 0.	Sign in to 
-[Visual Studio Marketplace > Visual Studio Team Services > Build and release > HockeyApp](https://marketplace.visualstudio.com/items?itemName=ms.hockeyapp) 
+[Visual Studio Marketplace > VSTS > Build and release > HockeyApp](https://marketplace.visualstudio.com/items?itemName=ms.hockeyapp) 
 as the VSTS account owner.
 
 	If you're not the VSTS account owner,
@@ -156,7 +155,7 @@ in your VSTS account. Learn more at
 [HockeyApp extension page](https://marketplace.visualstudio.com/items?itemName=ms.hockeyapp).
 
 For more details, visit 
-[How to use HockeyApp with Visual Studio Team Services or Team Foundation Server](http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-visual-studio-team-services-vsts-or-team-foundation-server-tfs).
+[How to use HockeyApp with VSTS or Team Foundation Server](http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-visual-studio-team-services-vsts-or-team-foundation-server-tfs).
 
 ## Q & A
 

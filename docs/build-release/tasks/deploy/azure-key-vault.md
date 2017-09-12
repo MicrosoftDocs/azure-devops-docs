@@ -2,7 +2,7 @@
 title: Build and Deploy - Azure Key Vault task
 description: VSTS ands TFS build task step to download secrets from an Azure key vault
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
 ms.manager: douge
 ms.author: ahomer
@@ -22,7 +22,7 @@ The task is Node-based, and works with Xplat agents (Windows, Linux, or OSX).
 
 The task has the following pre-requisites:
 
-* An Azure subscription linked to Team Foundation Server or Visual Studio Team Services using the [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm).
+* An Azure subscription linked to Team Foundation Server or VSTS using the [Azure Resource Manager service endpoint](../../concepts/library/service-endpoints.md#sep-azure-rm).
 
 * An [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) containing the secrets.
 

@@ -1,5 +1,5 @@
 ---
-title: Roles | Team Services & TFS
+title: Sofware development roles supported by VSTS & TFS
 description: Understand how our tools and services support the various roles supported in software development when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
@@ -9,9 +9,9 @@ ms.author: kaelli
 ms.date: 12/07/2016
 ---
 
-#Software development roles supported by Team Services and TFS 
+#Software development roles supported by VSTS and TFS 
 
-<b>Team Services | TFS 2017 | TFS 2015</b>  
+<b>VSTS | TFS 2017 | TFS 2015</b>  
 
 If you are a sole developer, or work on a small team, chances are that you participate in many activites&mdash;performing tasks associated with issue tracking, feature planning, coding, testing, build, and deployment.  
 
@@ -24,14 +24,14 @@ This topic provides a roadmap to support you in quickly coming up to speed on th
 Team members are contributors who have access to the code base, work item tracking, Agile tools, build definitions, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through the [permission management](security/permissions.md).   
 
 ### Software developers 
-Developers use Visual Studio or other [tools](tools.md) to develop their applications. They then check in their changes to a Git or TFVC repository hosted in Team Services or TFS. From the web portal or supported IDE, they can view repositories, check history, and more. 
+Developers use Visual Studio or other [tools](tools.md) to develop their applications. They then check in their changes to a Git or TFVC repository hosted in VSTS or TFS. From the web portal or supported IDE, they can view repositories, check history, and more. 
 
 - To get started using Git, see one of these resources: 
 	- [Share your code with Git and Visual Studio](git/share-your-code-in-git-vs.md).
 	- [Share your code in Git using Eclipses](git/share-your-code-in-git-eclipse.md).
 	- [Share your code in Git using Xcode](git/share-your-code-in-git-xcode.md).
 	- [Share your code in Git using IntelliJ](http://java.visualstudio.com/docs/tools/intellij).
-	- [Get Started with Git and Team Services](git/gitquickstart.md).
+	- [Get Started with Git and VSTS](git/gitquickstart.md).
 - To get started using TFVC, see one of the following resources: 
 	- [Develop and share your code in TFVC using Visual Studio](tfvc/share-your-code-in-tfvc-vs.md)
 	- [Share your code in TFVC using Eclipse](tfvc/share-your-code-in-tfvc-eclipse.md)
@@ -49,11 +49,11 @@ The role of project manager typically encompasses planning the feature set to de
   
 To get started, see [Get started with Agile tools to plan and track work](work/overview.md).  
 
-If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with Team Services and TFS. See [Bulk modify using Excel](work/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](work/office/create-your-backlog-tasks-using-project.md). 
+If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with VSTS and TFS. See [Bulk modify using Excel](work/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](work/office/create-your-backlog-tasks-using-project.md). 
 
 ### DevOps: builders, testers, and release managers  
 
-One of the main advantages to working with Team Services or TFS is the suite of tools and integrated functionality that supports build, testing, and deploying software applications. Here are the main DevOps associated tasks supported by Team Services and TFS: 
+One of the main advantages to working with VSTS or TFS is the suite of tools and integrated functionality that supports build, testing, and deploying software applications. Here are the main DevOps associated tasks supported by VSTS and TFS: 
 - Define builds
 - Unit test your code 
 - Run tests with your builds 
@@ -71,7 +71,7 @@ Stakeholder access essentially provides free access to a limited set of feature 
 
 <a id="admin-roles">  </a>
 ## Administrator roles  
-A distinct advantage to working in Team Services is the reduced overhead of server maintenance. That said, there are still several administrative tasks required to support a collaborative, integrated software development environment
+A distinct advantage to working in VSTS is the reduced overhead of server maintenance. That said, there are still several administrative tasks required to support a collaborative, integrated software development environment
 
 The main tasks are grouped here by membership within a security group or role: 
 
@@ -97,13 +97,13 @@ Responsible for project level settings, including:
 
 ### Project collection administrators
 Responsible for account or collection-level settings. These include: 
-- Manage billing (Team Services only) 
+- Manage billing  
 - Add and manage team projects    
 - Manage collection-level settings and permissions 
-- Customize work tracking processes (Team Services only) 
+- Customize work tracking processes  
 - Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
 
-To get started, see [Set up Team Services or Team Foundation Server](accounts/account-management.md). 
+To get started, see [Account Management](accounts/account-management.md). 
 
  
 ###TFS administrators
@@ -115,8 +115,7 @@ Responsible for installing, upgrading, and maintaining an on-premises TFS deploy
 - Build retention policies
 - Add and manage team project collections     
   
-To get started, see [Set up Team Services or Team Foundation Server](accounts/account-management.md). 
-
+To get started, see [Server Administration (TFS)](tfs-server/index.md). 
 
 
 ## Related notes 

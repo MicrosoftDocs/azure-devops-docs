@@ -2,8 +2,7 @@
 title: Voluntarily provide stakeholder feedback
 description: Voluntarily provide stakeholder feedback in VSTS or TFS using the Exploratory Testing browser extension
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-manual-test
-ms.service: vsts-testing
+ms.technology: vs-devops-test-manual
 ms.assetid: 4E467527-62C6-4321-BA56-FF82F0FFFD69
 ms.manager: douge
 ms.author: ahomer

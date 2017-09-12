@@ -1,6 +1,6 @@
 ---
 title: Team Foundation Service updates - Apr 25
-description: Visual Studio Team Services release notes for April 25 2013
+description: VSTS release notes for April 25 2013
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

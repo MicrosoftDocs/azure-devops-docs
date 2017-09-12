@@ -1,6 +1,6 @@
 ---
 title: Conditional task expressions
-description: Write custom conditions for running your task in Visual Studio Team Services or Microsoft Team Foundation Server (TFS)
+description: Write custom conditions for running your task in VSTS or Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89

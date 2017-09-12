@@ -1,10 +1,9 @@
 ---
 title: Get started with Git and Visual Studio 2017 | VSTS & TFS
-description: Quick Start with Git and Visual Studio Team Services and Visual Studio 2017
+description: Quick Start with Git and VSTS and Visual Studio 2017
 ms.assetid: d7dcb364-056f-421b-8896-0304cddf12fe
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git 
-ms.service: vsts-code
+ms.technology: vs-devops-git 
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
@@ -38,14 +37,14 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
 0. In Team Explorer, open up the Connect page by choosing **Projects and My Teams** then **Manage Connections**    
 
-  ![Cloning Visual Studio Team Services Git repositories in Visual Studio](_shared/_img/manageConnections.png) 
+  ![Cloning VSTS Git repositories in Visual Studio](_shared/_img/manageConnections.png) 
   
 0. Select **Manage Connections**, then select **Connect to Project**.
 
 0. The **Connect to a Project** dialog appears. Select the repo you want to clone from the list and select **Clone**. If you don't see your repo listed, you can filter the list 
 to find it or add a Team Foundation Server where the repo is hosted by selecting the **Add Server** link.   
    
-   ![Cloning a Git Repository from a Connected Visual Studio Team Services Account](_shared/_img/vs2017_connect_dialog.png)   
+   ![Cloning a Git Repository from a Connected VSTS Account](_shared/_img/vs2017_connect_dialog.png)   
 
 0. Verify the location of the cloned repo on your PC and select **Clone**.
 
@@ -135,7 +134,7 @@ branch of the code.
 
   ![Create a Pull Request in Visual Studio](_shared/_img/newVsPullRequest.png)
 
-0. You can review comments made in your [pull request](tutorial/pullrequest.md) in a web browser on the Visual Studio Team Services project page. Once all changes are approved by the
+0. You can review comments made in your [pull request](tutorial/pullrequest.md) in a web browser on the VSTS project page. Once all changes are approved by the
 team, you complete the pull request through the web browser.
 
 # [Command Line](#tab/command-line)

@@ -6,7 +6,7 @@ ms.manager: douge
 ms.author: billchi
 ms.date: 09/01/2016
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfs
+ms.technology: tfs-on-prem
 ---
 
 # SQL Server requirements for Team Foundation Server

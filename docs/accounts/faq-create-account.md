@@ -2,8 +2,7 @@
 title: Troubleshoot creating a VSTS account
 description: Troubleshoot creating a VSTS account
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: 5288549e-30cb-4ac0-81dd-8ba4890e8448
 ms.manager: douge
 ms.author: estfan
@@ -18,7 +17,7 @@ ms.date: 03/30/2017
 <a name="free-users"></a>
 #### Q: What users can join for free?  What do they get in Visual Studio Team Services?
 
-A: Visual Studio Team Services is free for these users to join:
+A: VSTS is free for these users to join:
 
 * 5 users who get [Basic features](https://www.visualstudio.com/team-services/compare-features/) 
 like version control, tools for Agile, Java, build, release management, and more 
@@ -52,9 +51,9 @@ You only have to do this step once.
 
 	![Confirm profile details](_img/sign-up-visual-studio-team-services/create-profile-msa.png)
 
-0.	Continue creating your Visual Studio Team Services account.
+0.	Continue creating your VSTS account.
 
-	![Create your Visual Studio Team Services account](_img/sign-up-visual-studio-team-services/my-info-new-account.png)
+	![Create your VSTS account](_img/sign-up-visual-studio-team-services/my-info-new-account.png)
 
 <a name="account-location"></a>
 
@@ -69,25 +68,25 @@ For example, [web-based test case management](https://marketplace.visualstudio.c
 requires that you install the Test Manager extension, 
 but you can [try paid extensions for free](../billing/try-additional-features-vs.md), 
 if you haven't started the extension trials already. 
-Otherwise, you can [pay for user access](https://www.visualstudio.com/get-started/marketplace/get-vsts-extensions) 
+Otherwise, you can [pay for user access](https://www.visualstudio.com/get-started/marketplace/install-vsts-extensions) 
 to these features.
 
-####Q:	How many Visual Studio Team Services accounts can I create?
+####Q:	How many VSTS accounts can I create?
 
-A:	You can [create multiple Visual Studio Team Services accounts](#create-another-account). 
+A:	You can [create multiple VSTS accounts](#create-another-account). 
 But rather than create another account, you might consider 
 [creating another team project](#another-team-project). 
 Your account can have unlimited private team projects using Git or TFVC. 
 
-There's no limit on how many Visual Studio Team Services accounts where you can be a member.  
+There's no limit on how many VSTS accounts where you can be a member.  
 
 <a name="create-another-account"></a>
 
-####Q:	How do I create another Visual Studio Team Services account?
+####Q:	How do I create another VSTS account?
 
 A:	Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
-![Create your Visual Studio Team Services account](_img/sign-up-visual-studio-team-services/my-info-account-list.png)
+![Create your VSTS account](_img/sign-up-visual-studio-team-services/my-info-account-list.png)
 
 <a name="another-team-project"></a>
 
@@ -107,20 +106,20 @@ A:	Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.c
 ####Q:	What's the difference between using a Microsoft account and a work account or school account to sign up?
 
 A:	Your choice affects how you control access and 
-authenticate users for your Visual Studio Team Services account.
+authenticate users for your VSTS account.
 
 When you sign up with a Microsoft account:
 
 *	You're solely responsible for managing access 
-to your Visual Studio Team Services account.
+to your VSTS account.
 *	All users must sign in with Microsoft accounts.
 
 When you sign up with a work or school account:
 
-*	Your Visual Studio Team Services account is 
+*	Your VSTS account is 
 automatically connected to your directory in Azure AD.
 *	All users must members in the connected directory 
-to get access to your Visual Studio Team Services account.
+to get access to your VSTS account.
 *	The directory administrator has control over who can join the directory.
 *	You sign in with work or school accounts, 
 or with Microsoft accounts if your company allows that.

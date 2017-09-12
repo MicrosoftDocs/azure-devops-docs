@@ -1,7 +1,7 @@
 ---
 title: Bulk modify using Excel | VSTS & TFS  
 description: Use Excel to save you time to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
 ms.manager: douge
@@ -48,7 +48,7 @@ In this topic you'll learn:
     >[!TIP]  
     >If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/ms268871.aspx). 
 
-4.  Connect to your team project hosted in Visual Studio Team Services or an on-premises TFS where you want to add work items. If you can't connect, [get added as a team member](../scale/multiple-teams.md#add-team-members).  
+4.  Connect to your team project hosted in VSTS or an on-premises TFS where you want to add work items. If you can't connect, [get added as a team member](../scale/multiple-teams.md#add-team-members).  
 
     ![ALM\_EXL\_Connect](_img/IC680074.png)
 
@@ -245,7 +245,7 @@ If you're working with a non-query input list, you can add work items by choosin
 
 ## Related notes
 
-While the examples shown here represent connecting to an on-premises TFS, you can connect to Visual Studio Team Services and bulk add and modify work items. Once you've connected to the cloud server, you use the same procedures to work in Excel. 
+While the examples shown here represent connecting to an on-premises TFS, you can connect to VSTS and bulk add and modify work items. Once you've connected to the cloud server, you use the same procedures to work in Excel. 
 
 If you're just getting started, review these topics for more information about work item tracking and using Excel: 
 

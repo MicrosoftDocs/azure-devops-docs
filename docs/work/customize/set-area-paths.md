@@ -1,7 +1,7 @@
 ---
 title: Customize area paths | VSTS & TFS
-description: Group work items based on team, product, or feature area by defining area paths (Visual Studio Team Services and Team Foundation Server)
-ms.technology: vs-devops-agile-wit
+description: Group work items based on team, product, or feature area by defining area paths (VSTS and Team Foundation Server)
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
 ms.manager: douge

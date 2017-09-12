@@ -1,16 +1,15 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
-title: Integrating custom apps and third party services with Visual Studio Team Services and Team Foundation Server
-description: Overview of integrating with Visual Studio Team Services and Team Foundation Server
+ms.technology: vs-devops-integrate
+title: Integrating custom apps and third party services with VSTS and Team Foundation Server
+description: Overview of integrating with VSTS and Team Foundation Server
 ms.assetid: c9b97ad7-ffd8-4657-8322-74f764eec5c9
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/23/2016
 ---
 
-# Integrating with Visual Studio Team Services and Team Foundation Server
+# Integrating with VSTS and Team Foundation Server
 
 You can build custom applications or services that integrate with your Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) accounts by using the **REST APIs** to make direct HTTP calls, or utilize our **.NET Client Libraries**.
 
@@ -38,9 +37,9 @@ Check out the quick starts to get you started:
 * [Create service hooks subscriptions programmatically](../service-hooks/create-subscription.md?toc=/vsts/integrate/toc.json)
 
 ## Reference
-* [REST API reference](https://review.docs.microsoft.com/en-us/rest/api/vsts/?branch=master)
 * [Service hooks consumers and action reference](../service-hooks/consumers.md?toc=/vsts/integrate/toc.json)
 * [Service hooks events reference](../service-hooks/events.md?toc=/vsts/integrate/toc.json)
 
-
+## Resources
+* [REST API reference](https://www.visualstudio.com/en-us/docs/integrate/api/overview)
 

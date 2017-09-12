@@ -1,16 +1,15 @@
 ---
 title: Delete or recover VSTS account
-description: How to delete your VSTS account
+description: How to delete, quit, stop using, restore, or recover your VSTS account
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5
 ms.manager: douge
 ms.author: estfan
 ms.date: 08/01/2017
 ---
 
-# Delete your Visual Studio Team Services account
+# Delete your VSTS account
 
 **VSTS**
 
@@ -21,7 +20,7 @@ you can [recover your account](recover-your-vsts-account.md).
 After 90 days, your account 
 and data are permanently deleted.
 
-When you delete your Visual Studio Team Services account:
+When you delete your VSTS account:
 
 *   All users lose access to account services and resources immediately.
 
@@ -41,7 +40,7 @@ To delete your VSTS account,
 you'll need VSTS account owner permissions. 
 [How do I find the account owner?](faq-delete-restore-vsts-account.md#find-owner)
 
-##  Before you delete your Visual Studio Team Services account
+##  Before you delete your VSTS account
 
 If your VSTS account uses an Azure subscription to bill purchases, 
 you must first unlink your account from your Azure subscription before deleting your account. 
@@ -69,13 +68,13 @@ or [Azure portal](https://portal.azure.com).
 
 	[Need help?](faq-delete-restore-vsts-account.md#get-support)
 
-##  Delete your Visual Studio Team Services account
+##  Delete your VSTS account
 
 You'll need at least Basic access and VSTS account owner 
 permissions to delete your VSTS account. 
 [How do I find the account owner?](faq-delete-restore-vsts-account.md#find-owner)
 
-0.  Sign in to your Visual Studio Team Services account (```https://{youraccount}.visualstudio.com```).
+0.  Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
 0.  Go to your VSTS account settings.
 
@@ -96,7 +95,7 @@ where you'll see your deleted account.
 	[Need help?](faq-delete-restore-vsts-account.md#get-support)
 
 <a name="undelete"></a>
-##  Restore your Visual Studio Team Services account
+##  Restore your VSTS account
 
 Your account will be disabled but available for 90 days after you delete it. 
 If you change your mind during this time, you can recover your account. 

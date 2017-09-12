@@ -2,8 +2,7 @@
 title: Change number of paid extension users for Visual Studio Team Services
 description: Change number of paid extension users for Visual Studio Team Services
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-billing
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f 
 ms.manager: douge
 ms.author: elbatk
@@ -24,7 +23,7 @@ You'll need VSTS
 > reduce all your paid users to zero (0). 
 > [How do you bill changes in users?](../marketplace/faq-extensions.md#bill-period)
 
-0.	Sign in to your Visual Studio Team Services account 
+0.	Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```).
 
 0. Go to **Users**.

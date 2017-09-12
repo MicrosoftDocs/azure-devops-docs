@@ -2,16 +2,16 @@
 title: Add SharePoint products to your Team Foundation Service deployment
 description: Add SharePoint products to your Team Foundation Service deployment
 ms.assetid: 3b5bb2e2-4142-4b9d-848e-b52ffafe9aa3
-ms.manager: douge
-ms.author: elbatk
-ms.date: 08/31/2016
 ms.prod: vs-devops-alm
 ms.technology: tfs-on-prem
+ms.manager: douge
+ms.author: elbatk
+ms.date: 09/09/2017
 ---
 
 # Add SharePoint products to your Team Foundation Service deployment
 
-**TFS 2017** | **TFS 2015** | **TFS 2013**
+[!INCLUDE [temp](../_shared/about-sharepoint-deprecation.md)]
 
 To integrate team projects with SharePoint sites, you must add one or
 more SharePoint Web applications to standard and advanced installations

@@ -3,7 +3,7 @@ ms.assetid: 6DD68CF7-072E-42F4-99FF-06C93D997947
 title: Automatically generate a CI/CD pipeline to deploy an ASP.NET app
 description: Automatically generate a CI/CD pipeline to deploy an ASP.NET app from VSTS or TFS
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/02/2017
@@ -220,7 +220,7 @@ may encounter the following known issues:
   Services account information within the [Azure classic portal](https://manage.windowsazure.com/),
   but not in the [Azure dashboard](https://portal.azure.com/). You may see a
   "No accounts found" message in this situation. To resolve this, you can
-  configure your Visual Studio Team Services account to be backed by an
+  configure your VSTS account to be backed by an
   Azure Active Directory (AAD) instance. For information on how to do this, see
   [VSTS - Access with Azure Active Directory](../../../../accounts/access-with-azure-ad.md).
 

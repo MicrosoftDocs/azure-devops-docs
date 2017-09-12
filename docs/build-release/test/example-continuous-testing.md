@@ -1,8 +1,8 @@
 ---
 title: Continuous integration, test, and deployment tutorial
-description: Continuous integration, test, and deployment example in Microsoft Visual Studio Team Services VSTS and Microsoft Team Foundation Server TFS
+description: Continuous integration, test, and deployment example in VSTS and TFS 
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-continuous
+ms.technology: vs-devops-build
 ms.assetid: 447F1F56-993A-4AB0-B521-ED72514BDEE3
 ms.manager: douge
 ms.author: ahomer

@@ -1,5 +1,5 @@
 ---
-title: Track bugs | VSTS & TFS
+title: Track bugs using CMMI process in VSTS & TFS
 description: Use the bug work item to describe and track progress for each bug that you find.
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit

@@ -3,8 +3,7 @@ title: Properties Command
 description: Properties Command
 ms.assetid: f306bc7a-db55-47d8-aa22-e2399260e838
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
+ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016
@@ -31,10 +30,10 @@ To use the **properties** command, you must have the **Read** permission set to 
 	<td><p>The URL of the team project collection that contains the items for which you want to display properties (for example, http://myserver:8080/tfs/DefaultCollection).</p></td></tr>
 <tr>
 	<td><p><em>Itemspec</em></p></td>
-	<td><p>Identifies the files and folders that are specified for property retrieval.</p><p>For more information about how Visual Studio Team Foundation Server parses <em>itemspecs</em> to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/4y2ash30)">Command-Line Options</a>.</p><p><strong>Note:</strong> You can specify more than one <em>Itemspec</em> argument.</p></td></tr>
+	<td><p>Identifies the files and folders that are specified for property retrieval.</p><p>For more information about how Visual Studio Team Foundation Server parses <em>itemspecs</em> to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/4y2ash30">Command-Line Options</a>.</p><p><strong>Note:</strong> You can specify more than one <em>Itemspec</em> argument.</p></td></tr>
 <tr>
 	<td><p><em>Versionspec</em></p></td>
-	<td><p>Provides a value such as C3 for the <strong>/version</strong> option. For more information about how Team Foundation Server parses a version specification to determine which items are within its scope, see <a href="https://msdn.microsoft.com/library/56f7w6be)">Command-Line Syntax (Version Control)</a>.</p></td></tr>
+	<td><p>Provides a value such as C3 for the <strong>/version</strong> option. For more information about how Team Foundation Server parses a version specification to determine which items are within its scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p></td></tr>
 <tr>
 	<td><p><em>username</em></p></td>
 	<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>Domain</em>\<em>UserName</em> or <em>UserName</em>.</p></td></tr></tbody>

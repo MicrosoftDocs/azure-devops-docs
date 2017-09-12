@@ -7,11 +7,11 @@ Although both identities have the same sign-in address,
 they're still separate identities with different profiles, 
 security settings, and permissions.
 
-Please try signing out completely from Team Services by following the steps below 
-because just closing your browser might not sign you out completely from Team Services. 
-Then sign in again to Team Services, and select your other identity:
+Please try signing out completely from VSTS by following the steps below 
+because just closing your browser might not sign you out completely from VSTS. 
+Then sign in again to VSTS, and select your other identity:
 
-0.	Close all browsers, including those that aren't running Team Services.
+0.	Close all browsers, including those that aren't running VSTS.
 
 0.	Open a private or incognito browsing session. 
 
@@ -24,5 +24,5 @@ Then sign in again to Team Services, and select your other identity:
 	**Tip** If the sign-out page takes more than a minute, 
 	close the browser, and continue.
 
-0.	Sign in to Team Services again. 
+0.	Sign in to VSTS again. 
 Select your other identity.

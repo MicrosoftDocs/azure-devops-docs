@@ -1,7 +1,7 @@
 ---
 title: Customize a process | VSTS  
 description: Your guide to configuring and customizing work tracking processes when connecting to Visual Studio Team Services (VSTS)   
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3   
 ms.manager: douge

@@ -19,7 +19,7 @@ You can deploy TFS in several ways: on one server; on many servers; or in one do
 
 To understand the architecture of TFS and how it affects your deployment, you should consider the following:
 
-* The logical application, data, and client tiers of Team Foundation, and whether you want to use one or more servers for the application and data tiers, or whether you want the application and data tiers hosted in the cloud for you by using Visual Studio Team Services 
+* The logical application, data, and client tiers of Team Foundation, and whether you want to use one or more servers for the application and data tiers, or whether you want the application and data tiers hosted in the cloud for you by using VSTS 
 
 * The location of the physical or virtual servers that host those tiers
 
@@ -182,7 +182,7 @@ Identity Management Services (IMS) synchronizes with Active Directory, and chang
  
 In a local deployment, Team Foundation Server has its own set of default groups and permissions that you can set at the project, collection, or server level. You can create custom groups and customize permissions at group and individual levels. However, users or groups that you add to Team Foundation Server are not automatically added to two components on which local deployments of Team Foundation Server can depend: SharePoint Products and Reporting Services. If your deployment uses these programs, you must add users and groups to them and grant the appropriate permissions before those users or groups will function correctly across all operations in Team Foundation Server. For more information, see [Manage users or groups in TFS](../../security/permissions.md).
 
-For hosted deployments, access is controlled through a combination of Microsoft accounts and team membership. For more information, see the [Visual Studio Team Services overview](../../overview.md). 
+For hosted deployments, access is controlled through a combination of Microsoft accounts and team membership. For more information, see the [VSTS overview](../../overview.md). 
 
 
 <a name="network-ports-protocols"></a>

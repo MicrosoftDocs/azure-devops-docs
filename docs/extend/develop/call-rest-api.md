@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 title: How to Call a REST API | Extensions for Visual Studio Team Services
 description: How to call a REST API in your extension for Visual Studio Team Services.
 ms.assetid: 99794e1e-0127-4e65-83fb-93a71f496d93
@@ -12,7 +11,7 @@ ms.date: 08/04/2016
 
 # Call a REST API
 
-To call a [REST API](https://visualstudio.com/integrate/api/overview.md) from your extension, get the client service first, and then use that to call the API.
+To call a REST API from your extension, get the client service first, and then use that to call the API.
 
 [!INCLUDE [REST](../_shared/procedures/call-rest-api-js.md)]
 

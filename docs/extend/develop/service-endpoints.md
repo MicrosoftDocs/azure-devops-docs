@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 title: Service Endpoints | Extensions for Visual Studio Team Services
 description: Browse through the places where your extension can extend Visual Studio Online.
 ms.assetid: ad0ea9de-620e-4605-8fcd-3c1443b26d8c
@@ -59,7 +58,7 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory o
   "id": "service-endpoint-tutorial",
   "version": "0.1.1",
   "name": "Sample extension that leverages a service endpoint",
-  "description": "A sample Visual Studio Team Services extension which shows how to create a custom endpoint and dynamic build task parameters taking value from a REST API.",
+  "description": "A sample VSTS extension which shows how to create a custom endpoint and dynamic build task parameters taking value from a REST API.",
   "publisher": "francistotten",
   "targets": [
     {

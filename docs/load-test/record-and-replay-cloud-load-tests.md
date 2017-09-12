@@ -2,8 +2,7 @@
 title: Record and replay cloud-based load tests with Visual Studio Team Services
 description: Get app performance data by recording and replaying cloud-based load tests when use Visual Studio Team Services
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-load-test
-ms.service: vsts-testing
+ms.technology: vs-devops-test-performance
 ms.assetid: 4D07F0F0-01FE-4BC7-A338-599D54E81134
 ms.manager: douge
 ms.author: ahomer
@@ -29,7 +28,7 @@ Before you start:
   [set up billing](../billing/set-up-billing-for-your-account-vs.md)
   for your VSTS account.
 
-* [Create your Visual Studio Team Services account](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
+* [Create your VSTS account](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
   if you don't have one already. 
 
 ## About HTTP Archive testing

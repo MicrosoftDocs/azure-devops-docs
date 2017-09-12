@@ -1,7 +1,7 @@
 ---
-title: Get started as a Stakeholder | Team Services & TFS  
+title: Get started with Stakeholder access in VSTS or TFS  
 description: Quickstart guide to working with Stakeholder access to Team Services (VSTS) or Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
 ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
 ms.manager: douge
@@ -12,9 +12,8 @@ ms.date: 08/15/2017
 
 # Get started as a Stakeholder  
 
-<!---
 <b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
--->
+
 
 With Stakeholder access, you can add and modify work items, approve releases, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 

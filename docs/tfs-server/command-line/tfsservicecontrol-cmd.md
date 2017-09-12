@@ -1,5 +1,5 @@
 ---
-title: TFSServiceControl Command
+title: Use TFSServiceControl command to stop or start TFS services or application pools
 description: Start or stop TFS services from the command line using TFSServiceControl
 ms.assetid: 7a385e9d-b1b7-4a4a-8f7d-1ece14144432
 ms.prod: vs-devops-alm
@@ -16,9 +16,9 @@ ms.date: 08/04/2016
 You can use the **TFSServiceControl** command to stop or start all of the services and application pools Team Foundation Server (TFS) uses. For example, you use this command when backing up or restoring databases, or when you are moving your deployment from one machine to another.
 
 > [!NOTE]
-> You must use the <strong>TFSServiceControl</strong> command to ensure that all necessary operations, services, and application pools are stopped for maintenance tasks such as backup and restore. You cannot manually perform all of the tasks carried out by the <strong>TFSServiceControl</strong> command.
+> You must use the **TFSServiceControl** command to ensure that all necessary operations, services, and application pools are stopped for maintenance tasks such as backup and restore. You cannot manually perform all of the tasks carried out by the **TFSServiceControl** command.
 
-Requirements
+**Requirements**
 
 -   You must be a member of the Team Foundation Administrators security group, a member of the Administrators group on the application-tier server, and a member of the sysadmin security group for any SQL Server databases that TFS uses. See [Set administrator permissions for Team Foundation Server](https://msdn.microsoft.com/library/ed578715-f4d2-4042-b797-5f97abde9973).
 
@@ -37,7 +37,7 @@ Requirements
 
 ## Remarks
 
-You use the **TFSServiceControl** command as part of specific maintenance tasks. After you specify the **quiesce** option, the server will not operate until you specify the **unquiesce** option. By default, the **TFSServiceControl** command is located in the %programfiles%\\Microsoft Team Foundation Server 12.0\\Tools directory.
+You use the **TFSServiceControl** command as part of specific maintenance tasks. After you specify the **quiesce** option, the server will not operate until you specify the **unquiesce** option. By default, the **TFSServiceControl** command is located in the %programfiles%\\TFS 12.0\\Tools directory.
 
 ## Example
 

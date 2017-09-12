@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: HipChat with Visual Studio Team Services
-description: Use HipChat with your Visual Studio Team Services account
+description: Use HipChat with your VSTS account
 ms.assetid: 43ef12ac-4541-436c-b6df-343e6e321cf9
 ms.manager: douge
 ms.author: elbatk
@@ -38,7 +38,7 @@ Get a HipChat authorization token
 
    <img alt="Select service dialog, HipChat selected" src="./_img/hipchat/hipchat-service.png" style="border: 1px solid #CCCCCC" />
 
-3. Configure the Visual Studio Team Services event that you want to post a message in HipChat.
+3. Configure the VSTS event that you want to post a message in HipChat.
 
    <img alt="Configure the event" src="./_img/hipchat/configure-event.png" style="border: 1px solid #CCCCCC" />
 
@@ -55,7 +55,7 @@ Now the messages are setup. Go to HipChat and see the messages appear.
 <img alt="HipChat room" src="./_img/hipchat/hipchat-room.png" style="border: 1px solid #CCCCCC" />
 
 ## Pricing
-Visual Studio Team Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
+VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A

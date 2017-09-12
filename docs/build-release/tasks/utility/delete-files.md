@@ -1,6 +1,6 @@
 ---
 title: Delete files
-description: How to delete files from a build agent working directory when building code in Visual Studio Team Services VSTS and Team Foundation Server TFS
+description: How to delete files from a build agent working directory when building code in VSTS and Team Foundation Server TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: C71CD55E-3028-4526-A9C3-779ECE31CCD1

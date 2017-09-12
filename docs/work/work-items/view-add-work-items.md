@@ -1,7 +1,7 @@
 ---
 title: View and add work items | Team Services  
 description: View and add work items using the work items page      
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ms.manager: douge
@@ -17,7 +17,7 @@ ms.date: 08/18/2017
 >[!NOTE]   
 ><b>Feature availability: </b>The **Work Items** page is in preview and currently available from Team Services only. 
 
-We have launched the preview of the new **Work Items** page under the **Work** hub in your Visual Studio Team Services account. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile. 
+We have launched the preview of the new **Work Items** page under the **Work** hub in your VSTS account. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile. 
 
 The set of features available to you through this page and its personalized pivots and filter functions will help streamline your ability to find work items important to you defined across teams within a team project. 
 

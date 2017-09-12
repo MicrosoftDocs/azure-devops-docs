@@ -3,7 +3,7 @@ title: Azure Government Cloud deployment
 description: Understand Azure Government Cloud deployment in Microsoft Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 857AB27D-FA16-44DB-B1C4-CBE946A0A1AD
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

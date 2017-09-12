@@ -3,7 +3,7 @@ title: Changes to required for TFS 2018
 titleSuffix: |TFS 2018
 description: Describes changes to requirements between TFS 2017 and TFS 2018 RC1 that impact Setup, Upgrade, and Administration
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfs
+ms.technology: tfs-on-prem
 ms.assetid: 67751d35-7c53-454c-8b6d-12e95ffd853d
 toc: show
 ms.manager: douge
@@ -27,7 +27,7 @@ to TFS 2018.
 TFS 2018 will not support Windows Server 2008 R2, Windows 7, Windows 8.1, or 
 Windows 10 Home edition. We have never recommended installing TFS on client 
 OSes except for evaluation purposes or personal use. Even for these use cases,
-we now recommend creating a free Visual Studio Team Services account. We will
+we now recommend creating a free VSTS account. We will
 continue to support Windows 10 Professional and Enterprise editions.
 
 ## SQL Server

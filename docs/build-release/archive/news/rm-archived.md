@@ -3,7 +3,7 @@ title: Archived release notes for Microsoft Release Management
 description: Archived release for VSTS and TFS
 ms.assetid: 1872D1B0-0514-4FD2-9BFB-DF9538BF93DF
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

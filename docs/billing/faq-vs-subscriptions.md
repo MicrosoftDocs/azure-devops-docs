@@ -1,8 +1,7 @@
 ---
 title: Troubleshooting Visual Studio Subscriptions 
 description: Troubleshooting Visual Studio Subscriptions
-ms.technology: vsts-sub-billing
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: d32c0b7a-a9f8-4629-9b54-f115c2adc4e2
 ms.manager: douge
 ms.author: elbatk
@@ -70,7 +69,7 @@ in your dev and test environments. You also get
 like a monthly Azure credit, technical support, special offers, and more. 
 
 For both subscriptions, you get Basic access 
-to any Visual Studio Team Services account.
+to any VSTS account.
 
 ###Q:	What's the difference between annual cloud subscriptions and standard subscriptions?
 

@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: Azure Service Bus with Visual Studio Team Services
-description: Use Azure Service Bus with your Visual Studio Team Services account
+description: Use Azure Service Bus with your VSTS account
 ms.assetid: bffe0cee-2c1c-4e7a-adbe-f6dc6a94f735
 ms.manager: douge
 ms.author: elbatk
@@ -12,7 +12,7 @@ ms.date: 08/16/2016
 # Microsoft Azure service bus with Visual Studio Team Services
 
 The Microsoft Azure service bus provides messaging between services and applications.
-You can choose the type of service bus you want to send Visual Studio Team Services messages to:
+You can choose the type of service bus you want to send VSTS messages to:
 
 - **Queue:** The Service Bus queue is a simple process.
 A sender sends a message to a queue, and a receiver
@@ -66,7 +66,7 @@ messages using a Azure Service Bus queue. For details, go [here](http://azure.mi
 
    <img alt="Add a service hook" src="./_img/azure-service-bus/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 
-5. Pick and configure the Visual Studio Team Services event.
+5. Pick and configure the VSTS event.
 
    <img alt="Configure the event" src="./_img/azure-service-bus/configure-event.png" style="border: 1px solid #CCCCCC" />
 
@@ -91,7 +91,7 @@ You can verify this in your application or service.
    <img alt="Azure Service Bus Topic" src="./_img/azure-service-bus/topics.png" style="border: 1px solid #CCCCCC" />
 
 2. Create or modify your app's code to recieve
-Visual Studio Team Services messages using a Azure Service Bus topic.
+VSTS messages using a Azure Service Bus topic.
 For details, go [here](http://azure.microsoft.com/en-us/documentation/articles/service-bus-dotnet-how-to-use-topics-subscriptions/).
 
 3. Open the admin page for the team project in Visual Studio Team Services.
@@ -102,7 +102,7 @@ For details, go [here](http://azure.microsoft.com/en-us/documentation/articles/s
 
    <img alt="Add a service hook" src="./_img/azure-service-bus/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 
-5. Pick and configure the Visual Studio Team Services event.
+5. Pick and configure the VSTS event.
 
    <img alt="Configure the event" src="./_img/azure-service-bus/configure-topic-event.png" style="border: 1px solid #CCCCCC" />
 
@@ -125,14 +125,14 @@ You can also observe activity in the Windows Azure dashboard.
 
 ## Send messages to the notification hub
 
-Push Visual Studio Team Services messages to your application using a notification hub.
+Push VSTS messages to your application using a notification hub.
 For more information about notification hubs go [here](https://msdn.microsoft.com/en-us/library/azure/jj891130.aspx/).
 
 1. In the Azure portal, verify the notification hub you want to use, or create one.
 
    <img alt="Azure Service Bus notifications" src="./_img/azure-service-bus/notification-hubs.png" style="border: 1px solid #CCCCCC" />
 
-2. Create or modify an app to receive messages from Visual Studio Team Services through the notification hub. 
+2. Create or modify an app to receive messages from VSTS through the notification hub. 
 The steps and code required to set up your app depend on the target platform (Windows Store, Windows Phone 8, IOS, or Android).
 For details, go [here](http://azure.microsoft.com/en-us/documentation/services/notification-hubs/).
 
@@ -144,7 +144,7 @@ For details, go [here](http://azure.microsoft.com/en-us/documentation/services/n
 
    <img alt="Add a sevice hook" src="./_img/azure-service-bus/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 
-5. Pick and configure the Visual Studio Team Services event.
+5. Pick and configure the VSTS event.
 
    <img alt="Configure the event" src="./_img/azure-service-bus/configure-notification-event.png" style="border: 1px solid #CCCCCC" />
 
@@ -163,14 +163,14 @@ Now the messages are set up.
 You can verify this in your application or service.
 
 ## Pricing
-Visual Studio Team Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
+VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A
 
 <!-- BEGINSECTION class="m-qanda" -->
 
-#### Q: When using Visual Studio Team Services service hooks connected to a Azure notification hub, how do I pass parameters in a push notification template?
+#### Q: When using VSTS service hooks connected to a Azure notification hub, how do I pass parameters in a push notification template?
 
 A: Use the following taking care to concatenate the variable and value in the param node:
 

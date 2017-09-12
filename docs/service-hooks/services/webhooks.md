@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: WebHooks with Visual Studio Team Services
-description: Use WebHooks with your Visual Studio Team Services account
+description: Use WebHooks with your VSTS account
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77
 ms.manager: douge
 ms.author: elbatk
@@ -26,7 +26,7 @@ For more information about the JSON payloads posted by this consumer, see [event
 
    <img alt="Team project administraton page, service hooks tab, add icon" src="./_img/webhooks/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 
-3. Pick and configure the Visual Studio Team Services event.
+3. Pick and configure the VSTS event.
 
    <img alt="Configure the event dialog box" src="./_img/webhooks/configure-event.png" style="border: 1px solid #CCCCCC" />
 
@@ -46,7 +46,7 @@ Now the Web hook is set up. Go to the target service to view the JSON representa
 <img alt="View the JSON representation" src="./_img/webhooks/request-bin.png" style="border: 1px solid #CCCCCC" />
 
 ## Pricing
-Visual Studio Team Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
+VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A
@@ -63,7 +63,7 @@ The default is **All**, but you can also choose to send **Minimal** (only sends 
 **None** and **Minimal** are useful in scenarios where the caller doesn't actually need much,
 if anything, about the resource because it is relying on the message or detailed message.
 **None** and **Minimal** are also useful for security reasons, for example,
-the caller needs to call back into Visual Studio Team Services and go through normal security/permission checks 
+the caller needs to call back into VSTS and go through normal security/permission checks 
 in order to get more details about the resource.
 
 Sample JSON:

@@ -1,8 +1,8 @@
 ---
 title: Git permissions prior to TFS 2017 Update 1
-description: The previous list of Git permissions
+description: Git permissions in usage for TFS 2017 update 1 and earlier versions 
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfs
+ms.technology: vs-devops-search
 ms.assetid: EF010374-22A9-4179-B49F-9B601ACBB5A0
 toc: hide
 ms.manager: douge

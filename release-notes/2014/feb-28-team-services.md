@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Online updates - Feb 28
-description: Visual Studio Team Services release notes for February 28 2014
+description: VSTS release notes for February 28 2014
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

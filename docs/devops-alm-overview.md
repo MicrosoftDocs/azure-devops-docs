@@ -17,13 +17,13 @@ Use our integrated tool set to speed the development and delivery of your softwa
  
 ![Continuous planning and delivery](_img/alm-devops-continuous-planning-delivery-code-test-analytics.png)  
 
-Visual Studio Team Services and Azure cloud services help remove barriers between teams, encourage collaboration, and improve the flow of value to your customers. Or, use our on-premises server, Team Foundation Server (TFS), when you want to maintain your data within your network. 
+VSTS and Azure cloud services help remove barriers between teams, encourage collaboration, and improve the flow of value to your customers. Or, use our on-premises server, Team Foundation Server (TFS), when you want to maintain your data within your network. 
 
 Both options are enterprise-ready, supporting teams of any size, from tens to thousands. Team Services provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24—7 operations team, and available in local data centers around the world.
 
 Also, you can quickly expand the power of these tools through integration with other services and tools using service hooks and extensions.  
 
-For the key differences between TFS and Team Services, see [About Visual Studio Team Services and Team Foundation Server](about-vsts-tfs.md). 
+For the key differences between TFS and Team Services, see [About VSTS and Team Foundation Server](about-vsts-tfs.md). 
 
 ## Get started in the cloud or on-premises  
 Whether you work in the cloud, on-premises, or a hybrid of each, you have a comprehensive set of DevOps and Agile tools to support team collaboration throughout the cycles of planning, development and test, and continuous delivery.
@@ -258,7 +258,7 @@ Once you've signed up for Team Services or installed TFS, you'll want to get fam
 
 Other topics of interest:  
  
-- [About Visual Studio Team Services and Team Foundation Server](about-vsts-tfs.md) - [Key concepts](concepts.md) 
+- [About VSTS and Team Foundation Server](about-vsts-tfs.md) - [Key concepts](concepts.md) 
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)   

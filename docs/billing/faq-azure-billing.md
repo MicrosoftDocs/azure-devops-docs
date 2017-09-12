@@ -2,8 +2,7 @@
 title: Troubleshooting Azure billing for VSTS and Visual Studio Subscriptions 
 description: Troubleshooting Azure billing for VSTS and Visual Studio Subscriptions 
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-billing
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
 ms.manager: douge
 ms.author: elbatk

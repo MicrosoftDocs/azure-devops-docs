@@ -1,9 +1,8 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-api
-ms.service: vsts-extend
-title: Visual Studio Team Services Extension Host Navigation Service Example
-description: A sample that shows how to use a host navigation service with a Visual Studio Team Services extension
+ms.technology: vs-devops-extensions-api
+title: VSTS Extension Host Navigation Service Example
+description: A sample that shows how to use a host navigation service with a VSTS extension
 ms.assetid: d23bf2e9-f5c6-4108-8af5-fab62c848ca9
 ms.manager: douge
 ms.author: elbatk

@@ -1,7 +1,7 @@
 ---
 title: Before you upgrade from TFS 2008 or TFS 2010 | TFS 
 description: Follow these steps to when you upgrade from TFS 2008 or TFS 2010 to TFS 2015 so that you can configure the new features.
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: F52E3DB7-4A62-4BD2-8C6F-CC44CC09464D
 ms.manager: douge
@@ -13,7 +13,7 @@ ms.date: 08/04/2016
 
 <b>TFS 2015</b> 
 
-<blockquote style="font-size: 13px"><b>Feature availability: </b>This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on Visual Studio Team Services [update automatically with each service upgrade](/vsts/release-notes/index).
+<blockquote style="font-size: 13px"><b>Feature availability: </b>This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on VSTS [update automatically with each service upgrade](/vsts/release-notes/index).
 </blockquote>  
 
 Each version of Team Foundation Server (TFS) typically introduces one or more changes to work tracking. To gain access to the new features that rely on these changes, your existing team projects must be updated. 

@@ -1,6 +1,6 @@
 ---
 title: Package Management in Team Services and TFS
-description: Use package management to host and share NuGet packages and npm modules with Visual Studio Team Services or Team Foundation Server
+description: Use package management to host and share NuGet packages and npm modules with VSTS or Team Foundation Server
 ms.assetid: 7F863543-2AFF-4726-A86A-4CF81DE98DCE
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package

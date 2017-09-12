@@ -1,8 +1,8 @@
 ---
-title: Build and release tasks 
+title: Catalog of the built-in tasks for build-release and VSTS & TFS 
 description: Catalog of the built-in tasks on Visual Studio VSTS and Team Foundation Server
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview
+ms.technology: vs-devops-build
 ms.assetid: D2DE8A26-AF89-4B08-9FCD-30CD58635B0A
 ms.manager: douge
 ms.author: alewis

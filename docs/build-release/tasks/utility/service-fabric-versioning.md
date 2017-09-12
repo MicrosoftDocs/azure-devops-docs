@@ -1,6 +1,6 @@
 ---
 description: Update Service Fabric App Versions task
-title: Update Service Fabric App Versions build task Microsoft Visual Studio Team Services VSTS and Microsoft Team Foundation Server TFS
+title: Update Service Fabric App Versions build task VSTS and TFS 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 3034CEF8-215C-408E-AD0F-C41D3D9C2F72

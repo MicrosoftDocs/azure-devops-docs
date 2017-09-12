@@ -1,6 +1,6 @@
 ---
 title: Analytics service overview | VSTS  
-description: Overview of the Analytics service for Visual Studio Team Services 
+description: Overview of the Analytics service for VSTS 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 0A9D0E48-64B4-4D90-933B-E0EBFC3FA3D4  

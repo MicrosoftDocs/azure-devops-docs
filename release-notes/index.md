@@ -1,12 +1,12 @@
 ---
 title: Team Services Feature Updates
-description: Visual Studio Team Services feature updates and release notes
+description: VSTS feature updates and release notes
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.contentid: 96c3bb9f-b3c8-4093-9d2a-a18c6e97c859
 ---
 
-# Visual Studio Team Services Features Timeline
+# VSTS Features Timeline
 
 ### Features under development
 
@@ -74,7 +74,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 
 ### Current features
 
-The features timeline lists significant features delivered to Visual Studio Team Services and the corresponding version of Team Foundation Server.
+The features timeline lists significant features delivered to VSTS and the corresponding version of Team Foundation Server.
 Versions in the server column are linked to the appropriate download location. You can also 
 [view the build numbers for each version](#build_numbers).
 
@@ -2318,7 +2318,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(217, 247, 219);">[2015.1](http://go.microsoft.com/fwlink/?LinkId=533008)</td>
         </tr>
         <tr>
-            <td>Libraries for integrating with Visual Studio Team Services now available at nuget.org</td>
+            <td>Libraries for integrating with VSTS now available at nuget.org</td>
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
@@ -2352,7 +2352,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
-            <td>New Visual Studio Team Services integrations</td>
+            <td>New VSTS integrations</td>
             <td style="background:rgb(232, 232, 232);">--</td>
         </tr>
         <tr>
@@ -2635,7 +2635,7 @@ Versions in the server column are linked to the appropriate download location. Y
         </tr>
         <tr>
             <td>[12 Nov 2014](/articles/news/2014/dec-02-team-services#nov12)</td>
-            <td>Release Management Preview as Visual Studio Team Services service</td>
+            <td>Release Management Preview as VSTS service</td>
             <td>--</td>
         </tr>
         <tr>
@@ -2673,7 +2673,7 @@ Versions in the server column are linked to the appropriate download location. Y
             <td>--</td>
         </tr>
         <tr>
-            <td>Visual Studio Team Services REST API version 1.0 is here</td>
+            <td>VSTS REST API version 1.0 is here</td>
             <td>--</td>
         </tr>
         <tr>

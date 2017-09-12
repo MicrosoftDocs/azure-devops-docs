@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: Bamboo with Visual Studio Team Services
-description: Use Atlassian Bamboo with your Visual Studio Team Services account
+description: Use Atlassian Bamboo with your VSTS account
 ms.assetid: a5cb1028-9b46-4106-9fdd-5b8059b4dedd
 ms.manager: douge
 ms.author: elbatk
@@ -15,7 +15,7 @@ If you use Bamboo to build your apps, you can store your code in Visual Studio T
 and continue to use Bamboo for your continuous integration builds.
 You can trigger a Bamboo build when you push code to your team project's
 Git repository,  when you check code in to Team Foundation version control,
-or when a Visual Studio Team Services build finishes.
+or when a VSTS build finishes.
 
 ## Configure Bamboo
 
@@ -25,10 +25,10 @@ or when a Visual Studio Team Services build finishes.
 
 3. If your team project uses Team Foundation version control and not Git, install the [TFS respository add-on](https://marketplace.atlassian.com/search?q=tfs) for Bamboo.
 
-## Enable Visual Studio Team Services basic authentication
-1. If you haven't already, enable [alternate credentials](https://www.visualstudio.com/en-us/integrate/get-started/auth/overview/) in your Visual Studio Team Services profile.
+## Enable VSTS basic authentication
+1. If you haven't already, enable [alternate credentials](https://www.visualstudio.com/en-us/integrate/get-started/auth/overview/) in your VSTS profile.
 Be sure to set a secondary user name because you won't be able to use your email address
-to connect Visual Studio Team Services to Bamboo.
+to connect VSTS to Bamboo.
 
    <img alt="Profile, credentials tab, alternative credentials enabled wiht a secondary user name" src="./_img/bamboo/alternate-credentials.png" style="border: 1px solid #CCCCCC" />
 
@@ -39,11 +39,11 @@ to connect Visual Studio Team Services to Bamboo.
 2. Under **Link repository to new build plan**, choose **Other** > **Git** and set the URL for your Git repository in Visual Studio Team Services.
 The URL is in the form ```https://{Team Services account}.visualstudio.com/DefaultCollection/_git/{team project name}```.
 
-3. Next to **Authentication Type**, choose **Username/password** and enter the [alternate credentials](https://www.visualstudio.com/en-us/integrate/get-started/auth/overview/) of a Visual Studio Team Services account with read access to the repository. 
+3. Next to **Authentication Type**, choose **Username/password** and enter the [alternate credentials](https://www.visualstudio.com/en-us/integrate/get-started/auth/overview/) of a VSTS account with read access to the repository. 
 
    <img alt="Repository settings with Git selected" src="./_img/bamboo/repository-management-settings.png" style="border: 1px solid #CCCCCC" />
 
-## Trigger Bamboo from Visual Studio Team Services 
+## Trigger Bamboo from VSTS 
 
 1. Go to your team project's administration page.
 
@@ -57,7 +57,7 @@ The URL is in the form ```https://{Team Services account}.visualstudio.com/Defau
 
    <img alt="Select target service dialog box, Bamboo selected" src="./_img/bamboo/target-service.png" style="border: 1px solid #CCCCCC" />
 
-4. Pick the event from Visual Studio Team Services that you want to trigger a build in Bamboo.
+4. Pick the event from VSTS that you want to trigger a build in Bamboo.
 
    <img alt="Configure event dialog box" src="./_img/bamboo/configure-event.png" style="border: 1px solid #CCCCCC" />
 
@@ -68,16 +68,16 @@ The URL is in the form ```https://{Team Services account}.visualstudio.com/Defau
 Now, when that event occurs in Visual Studio Team Services, your Bamboo build will be triggered.
 
 ## Pricing
-Visual Studio Team Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
+VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A
 
 <!-- BEGINSECTION class="m-qanda" -->
 
-#### Q: Can I build part of my app in Visual Studio Team Services and part in Bamboo?
+#### Q: Can I build part of my app in VSTS and part in Bamboo?
 
-A: Yes. You can trigger a Bamboo build when your Visual Studio Team Services build is completed so that you use both systems to build your app.
+A: Yes. You can trigger a Bamboo build when your VSTS build is completed so that you use both systems to build your app.
 
 #### Q: Can I programmatically create subscriptions?
 

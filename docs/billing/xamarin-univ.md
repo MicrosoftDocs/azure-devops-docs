@@ -2,8 +2,7 @@
 title: Buy to Xamarin University
 description: Get training on Xamarin forms for device app development
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-billing
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: 0b264fc8-f2b9-4636-9caf-ef3a85b45835
 ms.manager: douge
 ms.author: esther
@@ -29,7 +28,7 @@ or a work or school account, such as someone@fabrikam.com.
 to use for billing.  There is no cost to create an Azure subscription, which essentially is a billing account
 that gets charged when you buy something.
 
-	You may already have an Azure subscription if you use Azure, or you pay for Visual Studio Team Services or other 
+	You may already have an Azure subscription if you use Azure, or you pay for VSTS or other 
 	services through Visual Studio Marketplace.  If you don't have an Azure subscription, you can 
 	[sign up for Azure](https://portal.azure.com) 
 	before or during your first Marketplace purchase. Learn more about 

@@ -3,8 +3,7 @@ title: Create a bug using .NET client libraries in Visual Studio Team Services
 description: Use .NET client libraries to create a bug in Visual Studio Team Services.
 ms.assetid: ea2e5303-46b5-41d0-b6f5-b3d8ce515a64
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
+ms.technology: vs-devops-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 06/27/2017
@@ -12,14 +11,14 @@ ms.custom: get-started-article
 ms.topic: get-started-article
 ---
 
-# Create a bug in Visual Studio Team Services using .NET client libraries
+# Create a bug in VSTS using .NET client libraries
 
 Creating a new bug (or any work item) is pretty straight forward. You just need to set the field values and send a JSON-Patch object to the REST endpoint.
 
 ## Prerequisites
 To work on this Quickstart, you'll need the following prerequisites:
 
-* A Visual Studio Team Services account
+* A VSTS account
 * A Personal Access Token, [find out how to create one](../get-started/authentication/PATs.md)
 * A C# development environment, you can use [Visual Studio](https://www.visualstudio.com/vs/)
 
@@ -146,4 +145,4 @@ public class CreateBug
 ## Next Steps
 
 * Check out another Quickstart: [Get a list of work items using queries](./work-item-quickstart.md)
-* Explore the [integrate samples](../get-started/client-libraries/samples.md) samples
+* Explore the [integrate samples](../get-started/client-libraries/samples.md)

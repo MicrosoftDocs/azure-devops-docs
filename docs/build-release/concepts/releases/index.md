@@ -1,8 +1,8 @@
 ---
-title: Releases in Visual Studio Team Services and Team Foundation Server
+title: Releases in VSTS and Team Foundation Server
 description: Understand releases in Release Management for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.assetid: 2FF35C3B-FBF9-407F-8467-2D336973E63C
 ms.manager: douge
 ms.author: ahomer

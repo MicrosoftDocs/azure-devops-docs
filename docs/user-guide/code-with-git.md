@@ -3,7 +3,7 @@ title: Code with Git | VSTS & TFS
 description: Share code in a Git repo and new team project 
 ms.assetid: 
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-git
+ms.technology: vs-devops-overview
 ms.manager: douge
 ms.author: kaelli
 ms.date: 08/24/2017

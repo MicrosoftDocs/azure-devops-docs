@@ -1,7 +1,7 @@
 ---
 title: New work item web form | TFS  
 description: The new web form and work item tracking experience supports  more integrated and collaborative experiences
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E  
 ms.manager: douge
@@ -112,8 +112,8 @@ For guidance in using the new form, see:
 - [Drive Git development for a work item](../backlogs/connect-work-items-to-git-dev-ops.md) 
 
 For news of upcoming features, or extending the work tracking experience, see these resources:  
-- [Visual Studio Team Services Features Timeline](/vsts/release-notes/index)  
-- [Visual Studio Team Services REST API Reference](https://visualstudio.com/integrate/api/overview)  
+- [VSTS Features Timeline](/vsts/release-notes/index)  
+- [VSTS REST API Reference](https://visualstudio.com/integrate/api/overview)  
 
 
 ### Will the new work item experience become permanent?  

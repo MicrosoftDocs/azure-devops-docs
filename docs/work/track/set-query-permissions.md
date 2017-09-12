@@ -1,7 +1,7 @@
 ---
 title: Set query permissions | VSTS & TFS  
 description: How to guide for setting permissions on work item queries when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) item types  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb  
 ms.manager: douge

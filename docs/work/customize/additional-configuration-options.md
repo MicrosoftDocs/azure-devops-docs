@@ -1,7 +1,7 @@
 ---
 title: Additional configuration options | TFS  
 description: Options to configure or customize after you upgrade an on-premises Team Foundation Server to get full access to specific features  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: F89F5890-31E6-47EF-810F-AB75E1AE7E00
 ms.manager: douge
@@ -18,7 +18,7 @@ Supports the following FWLINK: Additional configuration options are available - 
 [!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 >[!IMPORTANT]  
->This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on Visual Studio Team Services [update automatically with each service upgrade](/vsts/release-notes/index). 
+>This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). 
 
 
 After you update your team project with the Configure Features wizard, you have access to the latest features. However, you may need to make some additional configurations or customizations to support your work tracking needs. Also, you have access to some features based on the source control setting selected when your team project was created.  

@@ -3,8 +3,7 @@ title: Install RM server/client for Visual Studio
 description: Install Release Management server/client for Visual Studio 2015 and TFS 2015 
 ms.assetid: AEED8FFC-D902-4789-8FBA-A6DAD4F6D34B
 ms.prod: vs-devops-alm
-ms.technology: vs-sub-release
-ms:service: vs-rm
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/04/2016

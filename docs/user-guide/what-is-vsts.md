@@ -2,7 +2,7 @@
 title: What is Visual Studio Team Services? | VSTS 
 description: Understand the fundamental differences between Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.prod: vs-devops-alm  
-ms.technology: vs-devops-articles
+ms.technology: vs-devops-overview
 ms.assetid: 4 
 ms.manager: douge
 ms.author: kaelli
@@ -12,7 +12,7 @@ ms.topic: get-started-article
 
 # What is Visual Studio Team Services? 
 
-Visual Studio Team Services is a cloud service for collaborating on code development. It provides an integrated set of features that you access through your web browser or IDE client, including: 
+VSTS is a cloud service for collaborating on code development. It provides an integrated set of features that you access through your web browser or IDE client, including: 
 
 - Git repositories for source control of your code   
 - Build and release management to support continuous integration and delivery of your apps 

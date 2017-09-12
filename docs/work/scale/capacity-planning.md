@@ -1,7 +1,7 @@
 ---
 title: Capacity planning | VSTS & TFS
 description: Set or copy team member capacity to plan your Scrum sprints when when working from Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: F9DC4D34-36D6-42D6-AA8F-E7FE1CC60676
 ms.manager: douge

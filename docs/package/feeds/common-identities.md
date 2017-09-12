@@ -1,6 +1,6 @@
 ---
 title: Give teams and builds access to feeds
-description:  Give teams and builds access to Package Management feeds in Visual Studio Team Services or Team Foundation Server
+description:  Give teams and builds access to Package Management feeds in VSTS or Team Foundation Server
 ms.assetid: 6b806512-b99d-45ab-85dc-cdbc1985f0f8
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package

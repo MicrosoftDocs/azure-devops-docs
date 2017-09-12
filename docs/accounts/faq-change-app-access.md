@@ -2,8 +2,7 @@
 title: Change app access policies | Visual Studio Team Services
 description: Change app access policies for Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: 25b0a617-6d77-44d7-80a5-bf38a541817e
 ms.manager: douge
 ms.author: estfan
@@ -20,14 +19,14 @@ ms.date: 08/04/2016
 A:  Personal access tokens are a more convenient and 
 secure replacement for alternate authentication credentials. 
 You can limit a token's use to a specific lifetime, 
-a Visual Studio Team Services account, 
+a VSTS account, 
 and to [scopes](https://www.visualstudio.com/integrate/get-started/Authentication/oauth#scopes) 
 of activities that the token authorizes. Learn more about 
 [personal access tokens here](use-personal-access-tokens-to-authenticate.md).
 
-####Q:  If I deny access to one authentication method in one Visual Studio Team Services account, does that affect all the accounts I own?
+####Q:  If I deny access to one authentication method in one VSTS account, does that affect all the accounts I own?
 
-A:  No, you can still use that method in all the other Visual Studio Team Services accounts that you own. 
+A:  No, you can still use that method in all the other VSTS accounts that you own. 
 [Personal access tokens](use-personal-access-tokens-to-authenticate.md) apply to specific accounts 
 or to all accounts, based on your selection when you created the token.
 
@@ -37,7 +36,7 @@ A:  Yes, those apps will continue working.
 
 ####Q:  What apps integrate with Visual Studio Team Services?
 
-A:  Find the [apps that integrate with Visual Studio Team Services here](https://marketplace.visualstudio.com/VSTS).
+A:  Find the [apps that integrate with VSTS here](https://marketplace.visualstudio.com/VSTS).
 
 <a name="find-owner"></a>
 

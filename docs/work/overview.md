@@ -1,7 +1,7 @@
 ---
 title: Agile tools - Scrum, Kanban, and more | VSTS & TFS
 description: Use the web portal to implement your Scrum or Kanban process, plan and track work, and monitor progress and trends  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 28C02AE8-CF8D-4B6E-8301-F46A5622E6C4
 ms.manager: douge

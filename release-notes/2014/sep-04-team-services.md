@@ -1,6 +1,6 @@
 ---
 title: Query usability, Hubot, new charts, and more - Sep 4
-description: Visual Studio Team Services release notes for September 04 2014
+description: VSTS release notes for September 04 2014
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

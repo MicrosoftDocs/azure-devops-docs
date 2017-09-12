@@ -1,5 +1,5 @@
 ---
-title: Excel reports | TFS
+title: Excel reports provided with the Agile process template for TFS
 description: Summary of Agile process template Excel reports for Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting

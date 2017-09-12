@@ -1,7 +1,7 @@
 ---
 title: Customize cards | VSTS & TFS
 description: Customize cards on the Kanban and Sprint/Scrum/Task boards for Agile planning tools in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ms.manager: douge
@@ -165,7 +165,7 @@ As a first step, you'll see that you can change the card display for each work i
 
 	Here we choose User Story. Your choices will vary based on the following:   
 	<ul>
-	<li>You connect to Visual Studio Team Services or an on-premises TFS</li>
+	<li>You connect to VSTS or an on-premises TFS</li>
 	<li>[Process](../guidance/choose-process.md) used to create your team project</li>
 	<li>Whether your team has chosen to [treat bugs like requirements or like tasks](show-bugs-on-backlog.md) </li>
 

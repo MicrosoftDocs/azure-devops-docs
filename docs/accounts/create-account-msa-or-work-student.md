@@ -3,8 +3,7 @@ title: Create your VSTS account with a Microsoft account or a work/school/organi
 description: Create your VSTS account with a personal Microsoft account or a work/school/organization account
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.manager: douge
 ms.author: estfan
@@ -20,7 +19,7 @@ account to upload and share code in free unlimited private
 Git repositories or Team Foundation Version Control. 
 Then connect your favorite development tool like Eclipse, Xcode, 
 Visual Studio, IntelliJ, or Android Studio to work on apps anytime, anywhere. 
-Visual Studio Team Services offers integrated, enterprise Agile tools for DevOps, 
+VSTS offers integrated, enterprise Agile tools for DevOps, 
 so your team can build often, test early, and ship faster.
 
 > Want to set up an on-premises server? 
@@ -32,7 +31,7 @@ so your team can build often, test early, and ship faster.
 
 
 <a name="how-sign-up"></a>
-##	What do I need to sign up for a Visual Studio Team Services account?
+##	What do I need to sign up for a VSTS account?
 
 *	To use only Microsoft accounts 
 	with your VSTS account, follow the steps below and ignore the Azure Active Directory (Azure AD) call outs. 
@@ -126,12 +125,12 @@ that you're connecting to your VSTS account.
 	to connect this directory to your VSTS account.  Changing the directory now is easier than [changing the
 	directory later](faq-create-account.md#ChangeDirectory).
 
-0.	After Visual Studio Team Services creates your account and team project, 
+0.	After VSTS creates your account and team project, 
 add code, work items, or more users. 
 
 	![Add code or work items](_img/_shared/team-project-created.png)
 
-	Congratulations, you're now a Visual Studio Team Services account owner! 
+	Congratulations, you're now a VSTS account owner! 
 
 	To sign in to your VSTS account at any time, go to ```https://{youraccount}.visualstudio.com```.
 

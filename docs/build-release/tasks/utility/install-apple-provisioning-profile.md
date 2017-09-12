@@ -1,6 +1,6 @@
 ---
 title: Install Apple Provisioning Profile
-description: Install an Apple provisioning profile required to build on a macOS agent in Visual Studio Team Services VSTS and Team Foundation Server TFS
+description: Install an Apple provisioning profile required to build on a macOS agent in VSTS and Team Foundation Server TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 0f9f66ca-250e-40fd-9678-309bcd439d5e

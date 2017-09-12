@@ -1,6 +1,6 @@
 ---
 title: Unlist or delete a NuGet package
-description: Unlist or delete a NuGet package from Visual Studio Team Services or Team Foundation Server to discourage or prevent its usage 
+description: Unlist or delete a NuGet package from VSTS or Team Foundation Server to discourage or prevent its usage 
 ms.assetid: 173070F7-CF0B-41DE-AD8B-1881E04E1457
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package

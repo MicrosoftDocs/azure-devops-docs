@@ -3,8 +3,7 @@ title: Use Team Foundation version control commands
 description: Use Team Foundation version control commands
 ms.assetid: efeff6e0-c4ab-4686-bc63-20a6136be39a
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
+ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016
@@ -363,7 +362,7 @@ Use the following syntax to specify a *versionspec*.
 </div>
 
 <p>Updates the workspace to match the codebase as it existed on 3/22/2004 at 09:00 (9 AM).</p>
-<p>For more information about .NET Framework-supported date and time formats see <a href="https://msdn.microsoft.com/library/system.datetime) and [Standard Date and Time Format Strings](https://msdn.microsoft.com/library/az4se3k1">DateTime<a/>.</p></td>
+<p>For more information about .NET Framework-supported date and time formats see [DateTime](https://msdn.microsoft.com/library/system.datetime) and [Standard Date and Time Format Strings](https://msdn.microsoft.com/library/az4se3k1).</p></td>
 </tr>
 <tr>
 <td><p>Workspace (current)</p></td>

@@ -1,7 +1,7 @@
 ---
 title: Team administrator permissions | VSTS & TFS 
 description: Understand what permissions are granted to team administrators  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge

@@ -1,6 +1,6 @@
 ---
 title: Delivery plans and simple VM deployment – May 11
-description: Visual Studio Team Services release notes for May 11 2017
+description: VSTS release notes for May 11 2017
 ms.ContentId: bf9d6890-7a2f-4105-9687-61e406b1cdec
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles

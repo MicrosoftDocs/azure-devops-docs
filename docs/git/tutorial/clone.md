@@ -3,8 +3,7 @@ title: Clone an existing Git repo | VSTS & TFS
 description: Create a local copy of an existing repo using Visual Studio or command line clone 
 ms.assetid: b6240e2f-2d3d-4874-9953-7e554d5e3b97
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git 
-ms.service: vsts-code
+ms.technology: vs-devops-git 
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
@@ -56,11 +55,11 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 
 # [Visual Studio](#tab/visual-studio)
 
-* [Clone from Visual Studio Team Services / Team Foundation Server](#clone-from-visual-studio-team-services--team-foundation-server)
+* [Clone from VSTS / Team Foundation Server](#clone-from-visual-studio-team-services--team-foundation-server)
 * [Clone from another Git provider](#clone-from-another-git-provider)
 * [Open a solution in Visual Studio from a cloned repo](#open-a-solution-in-visual-studio-from-a-cloned-repo)
 
-### Clone from Visual Studio Team Services / Team Foundation Server
+### Clone from VSTS / Team Foundation Server
 
 0. Open Team Explorer (go to **View** and select **Team Explorer** or use the Ctrl+\, Ctrl+M hotkey sequence) and open the **Connect** view. Go to **Projects**, then **Manage Connections** if you don't see the Connect view.
 0. Select **Connect...** under **Hosted Service Providers**.
@@ -73,7 +72,7 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 0. Enter the folder where Git will store the local repository in the **Local Git Repositories** section.
 0. Select **Clone** to clone your repo. 
 
-  ![Cloning a Visual Studio Team Services Repository in Visual Studio](../_shared/_img/cloneVsRepo.png)
+  ![Cloning a VSTS Repository in Visual Studio](../_shared/_img/cloneVsRepo.png)
 
 ### Clone from another Git provider
 

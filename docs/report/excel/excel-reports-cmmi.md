@@ -1,5 +1,5 @@
 ---
-title: Excel reports (CMMI) | TFS
+title: Excel reports provided with the CMMI process template for TFS
 description: Summary of Excel reports made available with the CMMI process template for Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting

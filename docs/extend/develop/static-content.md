@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 title: Static Content Hosting for Extension Content | Extensions for Visual Studio Team Services
 description: Options for hosting static content required by your extension.
 ms.assetid: 0bf474c9-1511-4889-9d91-fc954abdcd6a
@@ -12,13 +11,13 @@ ms.date: 08/04/2016
 
 # Static content hosting
 
-You have the option of hosting static content for your extension (like HTML, CSS, and JavaScript files) on your own service, a third-party hosting service (like Azure or Heroku), or on Visual Studio Team Services directly.
+You have the option of hosting static content for your extension (like HTML, CSS, and JavaScript files) on your own service, a third-party hosting service (like Azure or Heroku), or on VSTS directly.
 
 ## Host on Visual Studio Team Services
 
 In this model, static content is packaged with your extension's .vsix file and is served from a public endpoint at `https://publisher.gallery.vsassets.io`. 
 
-Having Visual Studio Team Services host your extension's static content is useful when you are simply enhancing or decorating data from Visual Studio Team Services. It does not require you (the extension publisher) to setup, manage, or pay for hosting services for your extension
+Having VSTS host your extension's static content is useful when you are simply enhancing or decorating data from Visual Studio Team Services. It does not require you (the extension publisher) to setup, manage, or pay for hosting services for your extension
 
 ### Steps
 
@@ -76,6 +75,6 @@ In this model, static content is served from your own service and not included i
 	]
 ```
 
-Visual Studio Team Services will load the contents of this hub when it is rendered at `https://myservice.net/extension/hello-world.html`.
+VSTS will load the contents of this hub when it is rendered at `https://myservice.net/extension/hello-world.html`.
 
 

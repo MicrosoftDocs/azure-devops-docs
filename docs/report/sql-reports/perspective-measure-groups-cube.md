@@ -2,7 +2,7 @@
 title: Perspectives and measure groups | TFS
 description: Generate reports of aggregated information about the data stored in team project collections
 ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.technology: vs-devops-reporting
 ms.assetid: 9ab451df-ce11-4fc9-9aac-bedd154ba0d4
 ms.manager: douge
 ms.author: kaelli

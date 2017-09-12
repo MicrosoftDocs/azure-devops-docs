@@ -1,6 +1,6 @@
 ---
 title: Deprecate or unpublish an npm package
-description: Deprecate or unpublish an npm package from Visual Studio Team Services or Team Foundation Server to discourage or prevent its usage 
+description: Deprecate or unpublish an npm package from VSTS or Team Foundation Server to discourage or prevent its usage 
 ms.assetid: 1d74f23f-bafc-4fed-9aad-4b2ee7633ff8
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package

@@ -3,8 +3,7 @@ title: Test configurations, specifying test platforms
 description: Manual and exploratory testing - Test configurations, specifying test platforms
 ms.assetid: 40d4a0f6-5978-404d-9627-fa81e950d718
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-manual-test
-ms.service: vsts-testing
+ms.technology: vs-devops-test-manual
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

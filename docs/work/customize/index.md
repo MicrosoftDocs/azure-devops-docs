@@ -1,7 +1,7 @@
 ---
-title: Index to work item and tracking customization topics | VSTS & TFS
+title: Index to work item tracking customization topics in VSTS & TFS
 description: Index to topics for customizing your work tracking experience in VSTS and and Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: F6973385-2CEF-403A-B3AA-45DB7C436AF1
 ms.manager: douge

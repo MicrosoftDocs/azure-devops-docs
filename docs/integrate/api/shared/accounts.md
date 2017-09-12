@@ -1,9 +1,8 @@
 ---
-ms.prod: vs-devops-alm
-ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
-title: Accounts | REST API Reference for Visual Studio Team Services
+title: Accounts REST API Reference for VSTS
 description: Work with accounts programmatically using the REST APIs for Visual Studio Team Services.
+ms.prod: vs-devops-alm
+ms.technology: vs-devops-integrate
 ms.assetid: C9470271-C11E-4BD2-82C8-D5272AADF82C
 ms.manager: jivkok
 ms.author: gozhang
@@ -25,8 +24,8 @@ GET https://app.vssps.visualstudio.com/_apis/Accounts?[memberId={GUID}][&ownerId
 |:----------|:-------|:--------------------------
 | Query
 | api-version | string | [Version](../../get-started/rest/basics.md#versions) of the API to use.
-| memberId    | GUID | ID of the user (use [Profile](https://review.docs.microsoft.com/en-us/rest/api/vsts/profile/?branch=master) or [Teams](https://review.docs.microsoft.com/en-us/rest/api/vsts/team/?branch=master) for ID)
-| ownerId     | GUID | ID of the user (use [Profile](https://review.docs.microsoft.com/en-us/rest/api/vsts/profile/?branch=master) or [Teams](https://review.docs.microsoft.com/en-us/rest/api/vsts/team/?branch=master) for ID)
+| memberId    | GUID | ID of the user (use [Profiles](https://www.visualstudio.com/en-us/docs/integrate/api/shared/profiles) for ID)
+| ownerId     | GUID | ID of the user (use [Profiles](https://www.visualstudio.com/en-us/docs/integrate/api/shared/profiles) for ID)
 
 ### By member ID
 

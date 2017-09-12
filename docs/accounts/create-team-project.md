@@ -1,10 +1,9 @@
 ---
-title: Create a team project | TFS 
+title: Create a team project in VSTS or TFS 
 description: Add a team project to an on-premises Team Foundation Server (TFS)
 ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.manager: douge
 ms.author: douge
 ms.date: 04/13/2017
@@ -18,7 +17,7 @@ ms.topic: get-started-article
 
 >[!NOTE]  
 >If you don’t want to manage an on-premises server, you can 
-[Sign up for Visual Studio Team Services and create a team project](create-account-msa-or-work-student.md). This topic applies to creating a team project when you have an on-premises Team Foundation Server (TFS) deployed.
+[Sign up for VSTS and create a team project](create-account-msa-or-work-student.md). This topic applies to creating a team project when you have an on-premises Team Foundation Server (TFS) deployed.
 
 You create a team project to establish a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. Team projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). 
 

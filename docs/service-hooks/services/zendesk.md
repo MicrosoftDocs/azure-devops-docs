@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: Zendesk with Visual Studio Team Services
-description: Use Zendesk with your Visual Studio Team Services account
+description: Use Zendesk with your VSTS account
 ms.assetid: 7dd649d2-152f-4894-955d-dd42ac56d81a
 ms.manager: douge
 ms.author: elbatk
@@ -12,12 +12,12 @@ ms.date: 02/08/2017
 # Zendesk with Visual Studio Team Services
    
 If you use Zendesk to support your customers, 
-you can create work items in Visual Studio Team Services directly from your Zendesk tickets.
-Then you can configure Visual Studio Team Services to update the Zendesk ticket when the work item is updated.
+you can create work items in VSTS directly from your Zendesk tickets.
+Then you can configure VSTS to update the Zendesk ticket when the work item is updated.
 
 ## Install the Team Services app for Zendesk
 
-1. Download the .zip file that contains the Visual Studio Team Services for Zendesk app from [GitHub](https://github.com/Microsoft/vsts-zendesk-app).
+1. Download the .zip file that contains the VSTS for Zendesk app from [GitHub](https://github.com/Microsoft/vsts-zendesk-app).
 
 2. If you don't have a Zendesk account, [get one](http://zendesk.com/).
 
@@ -25,13 +25,13 @@ Then you can configure Visual Studio Team Services to update the Zendesk ticket 
 
    <img alt="Zendesk administer page, manage button" src="./_img/zendesk/zendesk-manage-apps.png" style="border: 1px solid #CCCCCC" />
 
-4. Upload the Visual Studio Team Services for Zendesk app .zip file
+4. Upload the VSTS for Zendesk app .zip file
 
    <img alt="Upload app button on Zendesk manage apps page" src="./_img/zendesk/zendesk-upload-app.png" style="border: 1px solid #CCCCCC" />
 
 5. Install and configure the app
 
-   <img alt="Visual Studio Team Services for Zendesk installation page with the work item tag" src="./_img/zendesk/install.png" style="border: 1px solid #CCCCCC" />
+   <img alt="VSTS for Zendesk installation page with the work item tag" src="./_img/zendesk/install.png" style="border: 1px solid #CCCCCC" />
 
    If you use a work item tag, work items you create from Zendesk will have that tag. Later, you can use it to find items that were created from Zendesk.
 
@@ -63,29 +63,29 @@ Each user of the app must provide credentials so that the Team Services app can 
 
 ## Create a work item from Zendesk
 
-1. Go to a ticket in Zendesk and log in to the Visual Studio Team Services for Zendesk app.
+1. Go to a ticket in Zendesk and log in to the VSTS for Zendesk app.
 
    <img alt="Zendesk ticket page, Apps button, login" src="./_img/zendesk/visual-studio-online-app-login.png" style="border: 1px solid #CCCCCC" />
 
-2. Add a work item to Visual Studio Team Services based on this ticket.
+2. Add a work item to VSTS based on this ticket.
 
-   <img alt="Visual Studio Team Services for Zendesk, new work item" src="./_img/zendesk/new-work-item.png" style="border: 1px solid #CCCCCC" />
+   <img alt="VSTS for Zendesk, new work item" src="./_img/zendesk/new-work-item.png" style="border: 1px solid #CCCCCC" />
 
 3. Create the work item.
 
    <img alt="Create work item dialog box" src="./_img/zendesk/create-work-item.jpg">
 
-4. Open the work item in Visual Studio Team Services directly from Zendesk.
+4. Open the work item in VSTS directly from Zendesk.
 
    <img alt="Zendesk ticket with work item" src="./_img/zendesk/ticket-with-work-item.png" style="border: 1px solid #CCCCCC" />
 
    In Visual Studio Team Services, the work item is tagged with the tag you set up , and it's linked back to the ticket in Zendesk.
 
-   <img alt="Work item in Visual Studio Team Services with tag and link to Zendesk ticket" src="./_img/zendesk/work-item.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Work item in VSTS with tag and link to Zendesk ticket" src="./_img/zendesk/work-item.png" style="border: 1px solid #CCCCCC" />
 
-## Configure Visual Studio Team Services to update Zendesk tickets
+## Configure VSTS to update Zendesk tickets
 
-Close the loop by configuring Visual Studio Team Services to update the Zendesk tickets whenever there's a change in the work items that were created from Zendesk.
+Close the loop by configuring VSTS to update the Zendesk tickets whenever there's a change in the work items that were created from Zendesk.
 
 1. Go to the your Zendesk API administration page.
 
@@ -95,7 +95,7 @@ Close the loop by configuring Visual Studio Team Services to update the Zendesk 
 
    <img alt="Channels/tokens with token access enabled" src="./_img/zendesk/token-access.png" style="border: 1px solid #CCCCCC" />
 
-3. Go to a team project in your Visual Studio Team Services account and open the project adminstration page.
+3. Go to a team project in your VSTS account and open the project adminstration page.
 
    <img alt="Administration icon on the team project home page" src="./_img/admin.png" style="border: 1px solid #CCCCCC" />
 
@@ -121,7 +121,7 @@ and only those comments will be reflected back to Zendesk.
 Now when you update the work item, a private comment will be added to the Zendesk ticket.
 
 ## Pricing
-Visual Studio Team Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
+VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A

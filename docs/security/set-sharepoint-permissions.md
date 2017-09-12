@@ -1,8 +1,8 @@
 ---
-title: Set SharePoint permissions | TFS
+title: Set SharePoint permissions for TFS
 description: How-to guide to set add users to SharePoint integrated with Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfs
+ms.technology: vs-devops-search
 ms.assetid: 
 toc: show
 ms.manager: douge

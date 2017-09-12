@@ -8,7 +8,6 @@ manager: douge
 editor: ''
 
 ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
-ms.service: vsts
 ms.devlang: dotnetcore
 ms.topic: get-started-article
 ms.tgt_pltfrm: ''

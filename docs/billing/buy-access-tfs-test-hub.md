@@ -2,8 +2,7 @@
 title: Buy access to TFS or Test hub | Team Foundation Server (TFS)
 description: Get more access to Team Foundation Server (TFS) or the Test hub
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-billing
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
 ms.manager: douge
 ms.author: estfan
@@ -134,7 +133,7 @@ A: See [Change access levels](../security/change-access-levels.md).
 
 ####Q:	Where can I find more VSTS extensions and more info about the Visual Studio Marketplace?
 
-A:	See [Visual Studio Team Services extensions](https://marketplace.visualstudio.com/vsts) 
+A:	See [VSTS extensions](https://marketplace.visualstudio.com/vsts) 
 and [Visual Studio Marketplace Overview](/vsts/marketplace/overview).
 
 <!-- ENDSECTION --> 

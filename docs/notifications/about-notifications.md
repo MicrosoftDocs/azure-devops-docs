@@ -1,5 +1,5 @@
 ---
-title: About notifications 
+title: Understand the basics of how notifications work in VSTS and TFS
 description: Understand how notifications or alerts are managed in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: collaborate
@@ -7,11 +7,14 @@ ms.assetid:
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/31/2017
 ms.topic: get-started-article
+ms.date: 09/01/2017
 ---
 
+
 # About notifications   
+
+**VSTS | TFS 2018 | TFS 2017**
 
 Notifications help you and your team stay informed about activity occuring within your Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) team projects. With notifications, you are notified when changes occur to work items, code reviews, pull requests, source control files, and builds, you can be notified via email. For example, you can get notified whenever a bug that you opened is resolved or a work item is assigned to you. 
 

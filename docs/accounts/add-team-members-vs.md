@@ -2,8 +2,7 @@
 title: VSTS - Add team project members | Visual Studio Team Services
 description: Add members to team projects in Visual Studio Team Services (Visual Studio Online, VSTS, VSO)
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: 1cd6673e-f83a-403b-884b-b69b8e3f5c46
 ms.manager: douge
 ms.author: estfan
@@ -99,7 +98,7 @@ Add them one at a time or all at the same time.
 
 	After you add members to your team project, 
 	each member gets an invitation email that 
-	links to your Visual Studio Team Services account. 
+	links to your VSTS account. 
 	They can use this link to sign in to your account 
 	and find your team project.
 	First-time members might be asked for extra details 

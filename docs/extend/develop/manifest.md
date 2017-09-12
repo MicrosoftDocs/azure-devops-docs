@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 title: Extension Manifest Reference| Extensions for Visual Studio Team Services
 description: How to create a manifest for your extension to Visual Studio Team Services.
 ms.assetid: e3150221-3cdf-47e1-b7e9-24211498cc29
@@ -371,7 +370,7 @@ Demands are specified in the extension manifest. For example:
 }
 ```
 
-In this example, the extension demands version 3.0 of the APIs, which means it can only be installed to Visual Studio Team Services or Team Foundation Server 2017 RTM and later. It also requires the `ms.vss-dashboards-web` extension (and its `widget-catalog` contribution) to be installed (and enabled) in the collection before your extension can be installed.    
+In this example, the extension demands version 3.0 of the APIs, which means it can only be installed to VSTS or Team Foundation Server 2017 RTM and later. It also requires the `ms.vss-dashboards-web` extension (and its `widget-catalog` contribution) to be installed (and enabled) in the collection before your extension can be installed.    
 
 ### Supported demands
 

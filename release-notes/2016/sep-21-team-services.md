@@ -1,6 +1,6 @@
 ---
 title: Import Git repos and view work item attachments – Sept 21
-description: Visual Studio Team Services release notes for September 21 2016
+description: VSTS release notes for September 21 2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

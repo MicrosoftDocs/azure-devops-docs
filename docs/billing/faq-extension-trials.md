@@ -3,8 +3,7 @@ title: Troubleshooting paid extensions trials for Visual Studio Team Services
 description: Troubleshooting paid extensions trials for Visual Studio Team Services
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-billing
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: 4a6f0af1-aee7-404a-a566-da7922127c69
 ms.manager: douge
 ms.author: estfan
@@ -49,7 +48,7 @@ A:	Check the extension pane in your Users hub.
 ####Q:   How do I cancel my trial?
 
 A: To stop your trial, just 
-[uninstall the extension](/vsts/marketplace/get-vsts-extensions#uninstall-disable-extension) 
+[uninstall the extension](/vsts/marketplace/install-vsts-extensions#uninstall-disable-extension) 
 from your VSTS account.
 
 <a name="feature-access"></a>

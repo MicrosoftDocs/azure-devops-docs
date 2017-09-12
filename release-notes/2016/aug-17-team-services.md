@@ -1,6 +1,6 @@
 ---
 title: Pull Requests refresh and much, much more – Aug 17
-description: Visual Studio Team Services release notes for August 17 2016
+description: VSTS release notes for August 17 2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
@@ -122,7 +122,7 @@ The “FTP Upload” task allows uploading files via FTP or FTPS as part of Team
 
 ###Google Play Extension improvements
 
-The Visual Studio Team Services Extension for Google Play contains deployment tasks for automating the release, promotion, and roll- out of app updates to the Google Play store from Team Services builds or releases. It has had numerous improvements, including support for apps with multiple APKs. For more information, see [https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).
+The VSTS Extension for Google Play contains deployment tasks for automating the release, promotion, and roll- out of app updates to the Google Play store from Team Services builds or releases. It has had numerous improvements, including support for apps with multiple APKs. For more information, see [https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).
 
 ###Maven and Gradle tasks produce a build summary when running a SonarQube analysis
 

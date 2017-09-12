@@ -164,11 +164,7 @@ Verification failures happen when the import fails to start. Issues falling into
 
     VS403252: The specified import code {0} is not valid, expired, or is already in use.
 
-<<<<<<< HEAD
 This error means that something is wrong with your import code. Either it has already been successfully used for another import, it expired, or it isn't valid. Double check the code that you've placed in the import specification file against the codes that you were given as part of the preview.  
-=======
-This error means that something is wrong with your import code. Either it has already been successfully used for another import, it expired, or it isn't valid. Double check the code that you've placed in the import specification file against the codes that you were given as part of the preview. If you believe that there is a problem please reach out [vstsdataimport@microsoft.com](mailto:vstsdataimport@microsoft.com). 
->>>>>>> c8a10194526d69faa7a3111063296fe708f8d054
 
     VS403253: Queuing an import requires an import code.
 

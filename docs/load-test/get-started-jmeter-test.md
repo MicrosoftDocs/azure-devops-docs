@@ -2,8 +2,7 @@
 title: Apache JMeter cloud-based load testing with Visual Studio Team Services
 description: Using JMeter to performance test your application in the cloud with Visual Studio Team Services
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-load-test
-ms.service: vsts-testing
+ms.technology: vs-devops-test-performance
 ms.assetid: 3B2A725F-4E7B-4652-BFD1-FC7C9A248B7B
 ms.manager: douge
 ms.author: ahomer

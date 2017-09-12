@@ -1,7 +1,7 @@
 ---
 title: Add work items | TFS  
 description: Add work items to plan and manage a software project when connected to a team project in Team Foundation Server  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 982891A4-A875-478D-AD37-5A0915D11E00  
 ms.manager: douge
@@ -14,7 +14,7 @@ ms.date: 03/16/2017
 **TFS 2015 | TFS 2013**  
 
 >[!IMPORTANT]   
-><b>Feature availability: </b>The new web form provides many additional features. If you connect to Visual Studio Team Services or the web portal for TFS 2017 or later versions, see [Add work items to plan and track your project](add-work-items.md). 
+><b>Feature availability: </b>The new web form provides many additional features. If you connect to VSTS or the web portal for TFS 2017 or later versions, see [Add work items to plan and track your project](add-work-items.md). 
 
 You add work items to plan and manage your project. You use different types of  work items to track different types of work - such as tasks, features or user stories, test cases and bugs, risks or issues, and more. You can describe the work to be done, assign work, track status, and coordinate efforts within your team.  
 

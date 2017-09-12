@@ -1,7 +1,7 @@
 ---
-title: Add columns | VSTS & TFS 
+title: Add columns on your Kanban board for VSTS & TFS 
 description: Map your Kanban board to follow the flow of how your team works by adding columns that map to a stage in your process - Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
 ms.manager: douge

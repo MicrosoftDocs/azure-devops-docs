@@ -1,7 +1,7 @@
 ---
 title: Customize your work tracking experience | VSTS & TFS
 description: Guide to configuring and customizing work tracking features in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
 ms.manager: douge
@@ -114,6 +114,13 @@ The following table summarizes the differences between the three supported proce
 <td align="left">Advanced customizations supported (custom link types, global lists, global workflow, team fields)</td>
 <td> </td>
 <td>(see note 2)</td>
+<td>![checkmark](../_img/icons/checkmark.png)</td>
+</tr>
+
+<tr>
+<td align="left">Update Microsoft field mappings using the [**TFSFieldMapping**](../reference/upload-or-download-the-microsoft-project-mapping-file.md) command-line tool</td>
+<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 </tr>
 

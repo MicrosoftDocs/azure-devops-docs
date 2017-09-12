@@ -1,8 +1,8 @@
 ---
 description: Service Fabric Application Deployment task
-title: Service Fabric Application Deployment build and release task for Microsoft Visual Studio Team Services and Microsoft Team Foundation Server
+title: Service Fabric Application Deployment build and release task for Microsoft VSTS and Microsoft Team Foundation Server
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.assetid: 82493BC9-241C-491F-9B42-075FD0E33b52
 ms.manager: douge
 ms.author: ahomer

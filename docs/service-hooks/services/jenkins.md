@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: Jenkins with Visual Studio Team Services
-description: Use Jenkins with your Visual Studio Team Services account
+description: Use Jenkins with your VSTS account
 ms.assetid: 3e9cf797-092f-48da-a515-e4d0cc93c4a1
 ms.manager: douge
 ms.author: elbatk
@@ -38,11 +38,11 @@ The URL is in the form ```https://{Team Services account}.visualstudio.com/Defau
 
    <img alt="Source code management settings with Git selected" src="./_img/jenkins/source-code-management-settings.png" style="border: 1px solid #CCCCCC" />
 
-## Trigger Jenkins from Visual Studio Team Services 
+## Trigger Jenkins from VSTS 
 
-1. If you haven't already, enable alternate credentials in your Visual Studio Team Services profile.
+1. If you haven't already, enable alternate credentials in your VSTS profile.
 Be sure to set a secondary user name because you won't be able to use your email account
-to connect Visual Studio Team Services to Jenkins.
+to connect VSTS to Jenkins.
 
    <img alt="Profile, credentials tab, alternative credentials enabled with a secondary user name" src="./_img/jenkins/alternate-credentials.png" style="border: 1px solid #CCCCCC" />
 
@@ -58,7 +58,7 @@ to connect Visual Studio Team Services to Jenkins.
 
    <img alt="Select target service dialog box, Jenkins selected" src="./_img/jenkins/target-service.png" style="border: 1px solid #CCCCCC" />
 
-5. Pick the event from Visual Studio Team Services that you want to trigger a Jenkins build.
+5. Pick the event from VSTS that you want to trigger a Jenkins build.
 
    <img alt="Configure event dialog box" src="./_img/jenkins/configure-event.png" style="border: 1px solid #CCCCCC" />
 
@@ -69,16 +69,16 @@ to connect Visual Studio Team Services to Jenkins.
 Now, when that event occurs in Visual Studio Team Services, your Jenkins build will be triggered.
 
 ## Pricing
-Visual Studio Team Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
+VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A
 
 <!-- BEGINSECTION class="m-qanda" -->
 
-#### Q: Can I build part of my app in Visual Studio Team Services and part in Jenkins?
+#### Q: Can I build part of my app in VSTS and part in Jenkins?
 
-A: Yes. You can trigger a Jenkins build when your Visual Studio Team Services build is completed so that you use both systems to build your app.
+A: Yes. You can trigger a Jenkins build when your VSTS build is completed so that you use both systems to build your app.
 
 #### Q: Can I programmatically create subscriptions?
 

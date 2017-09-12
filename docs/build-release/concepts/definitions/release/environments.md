@@ -3,7 +3,7 @@ title: Environments in Release Management
 description: Understand environments in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: F3AB8DE0-CBB6-4B52-B483-435E0000E594
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

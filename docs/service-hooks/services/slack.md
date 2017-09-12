@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: Slack with Visual Studio Team Services
-description: Use Slack with your Visual Studio Team Services account
+description: Use Slack with your VSTS account
 ms.assetid: ea948249-1053-4971-99b9-ffa820c03803
 ms.manager: douge
 ms.author: elbatk
@@ -12,7 +12,7 @@ ms.topic: get-started-article
 
 # Slack with Visual Studio Team Services
 
-Post messages to [Slack](https://slack.com/) in response to events in your Visual Studio Team Services account,
+Post messages to [Slack](https://slack.com/) in response to events in your VSTS account,
 like completed builds, code changes, and new and updated work items.
 
 ## Create the Slack integration
@@ -21,17 +21,17 @@ like completed builds, code changes, and new and updated work items.
 to open up the menu, and find **Apps and integrations**:
 <img alt="Integrations link on the account home page" src="./_img/slack/slack-integrations.png" style="border: 1px solid #CCCCCC; width:35%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
-1. Search for and click the Visual Studio Team Services integration:
-<img alt="Visual Studio Team Services link" src="./_img/slack/vso.png" style="border: 1px solid #CCCCCC; width:65%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+1. Search for and click the VSTS integration:
+<img alt="VSTS link" src="./_img/slack/vso.png" style="border: 1px solid #CCCCCC; width:65%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
-1. On the Visual Studio Team Services integration page, click **Install**.
+1. On the VSTS integration page, click **Install**.
 1. Choose a channel to have notifications posted to from the dropdown and click **Add Visual Studio Integration**. 
-1. Scroll down the page and copy the web hook URL to use when you create the service hook subscription in your Visual Studio Team Services account.
+1. Scroll down the page and copy the web hook URL to use when you create the service hook subscription in your VSTS account.
 <img alt="Web hook URL in the integration settings section" src="./_img/slack/webhook-url.png" style="border: 1px solid #CCCCCC; width:70%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
-## Create a service hook subscription in your Visual Studio Team Services account
+## Create a service hook subscription in your VSTS account
 
-1. From your Visual Studio Team Services account's team project page (```https://[account].visualstudio.com/[project]```), navigate to **Service Hooks** in the settings:
+1. From your VSTS account's team project page (```https://[account].visualstudio.com/[project]```), navigate to **Service Hooks** in the settings:
 <img alt="Team Services Service Hook Settings" src="./_img/slack/vsts-service-hooks.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 1. Click **Create subscription** and select the Slack service.
@@ -47,7 +47,7 @@ to open up the menu, and find **Apps and integrations**:
 <img alt="General channel with a real pull request notification" src="./_img/slack/completed-build-in-slack.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 ## Pricing
-Visual Studio Team Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
+VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A

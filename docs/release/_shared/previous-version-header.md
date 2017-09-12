@@ -13,7 +13,7 @@ The newer web-based version is the recommended alternative
 to the server and client version described in this topic.
 If you do not already have Release Management installed, 
 we encourage you to use the web-based version in TFS 2015 
-Update 2 and above or Visual Studio Team Services instead 
+Update 2 and above or VSTS instead 
 of the version described here.
 If you are already using an earlier server and client 
 version, you should be aware that no new features will

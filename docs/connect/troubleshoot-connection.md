@@ -1,7 +1,7 @@
 ---
-title: Troubleshoot connection 
+title: Troubleshoot connecting to a team project in VSTS or TFS 
 description: Steps to resolve connection issues with Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-overview 
+ms.technology: vs-devops-wit 
 ms.prod: vs-devops-alm
 ms.assetid: 
 ms.manager: douge
@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 07/14/2017
 ---
 
-# Troubleshoot connection 
+# Troubleshoot connecting to a team project in VSTS or TFS 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Here's a list of the most frequently encountered connection problems and what to do about them. Start at the top and follow it in the order indicated.

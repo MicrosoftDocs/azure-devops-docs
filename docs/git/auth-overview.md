@@ -3,8 +3,7 @@ title: Authenticate with your Git repos | VSTS & TFS
 description: Choose between HTTPS, SSH, personal access tokens, and alternate credentials to securely login to your VSTS/TFS Git repos.
 ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git
-ms.service: vsts-code
+ms.technology: vs-devops-git
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/26/2016

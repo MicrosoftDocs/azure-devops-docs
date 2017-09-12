@@ -1,7 +1,7 @@
 ---
 title: WebLayout XML elements reference | VSTS & TFS
 description: Syntax and usage of all elements used in the new web form layout for Visual Studio Team Services (VSTS) and Team Foundation Server
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 67ed8539-61b8-42c7-9d0f-95b124cf5ed8
 ms.manager: douge
@@ -527,7 +527,7 @@ To learn more about process models and what's supported with each, see [Customiz
 <a id="marketplace-extensions">  </a>
 ### Marketplace extensions  
 
-Visit the [Visual Studio Team Services Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads) to find extensions you can start using.  
+Visit the [VSTS Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads) to find extensions you can start using.  
 
 <a id="extensions">  </a>
 ### Form extensions 

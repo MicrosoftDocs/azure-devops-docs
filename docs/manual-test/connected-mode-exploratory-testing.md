@@ -2,8 +2,7 @@
 title: Exploratory testing with the Test &amp; Feedback extension in Connected mode
 description: Exploratory testing with the Test &amp; Feedback extension in Connected mode
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-manual-test
-ms.service: vsts-testing
+ms.technology: vs-devops-test-manual
 ms.assetid: 0F52826C-218D-437A-B6FF-EB8E8292CE3C
 ms.manager: douge
 ms.author: ahomer

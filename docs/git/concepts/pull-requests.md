@@ -3,8 +3,7 @@ title: Pull requests | VSTS & TFS
 description: Pull requests
 ms.assetid: 6ba68828-c05d-4afa-b29f-9ca39be5a0ce
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git 
-ms.service: vsts-code
+ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
 ms.date: 06/16/2017
@@ -16,7 +15,7 @@ Pull requests combine the review and merge of your code into a single collaborat
 Once you're done fixing a bug or new feature in a branch, create a new pull request.
 Add the members of the team to the pull request so they can review and vote on your changes.
 
-Visual Studio Team Services has a [rich pull request experience](../pull-requests.md) that's easy to use and scales to your needs.
+VSTS has a [rich pull request experience](../pull-requests.md) that's easy to use and scales to your needs.
 Use pull requests to review works in progress and get early feedback on changes.
 There's no commitment to merge the changes as the owner can abandon the pull request at any time.
 

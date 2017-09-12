@@ -1,7 +1,7 @@
 ---
 title: Hosted XML process model | TFS
 description: Guide to configuring and customizing work tracking features for the Hosted XML process model 
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 
 ms.manager: douge

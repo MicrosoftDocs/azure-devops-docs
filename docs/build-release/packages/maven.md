@@ -1,8 +1,8 @@
 ---
 title: Use Team Build with Maven Package Mangement feeds | Visual Studio Team Services
-description: Use Maven packages with Team Build in Visual Studio Team Services or Team Foundation Server
+description: Use Maven packages with Team Build in VSTS or Team Foundation Server
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.technology: vs-devops-build
 ms.assetid: fc81d7ee-fa9a-4c04-ac8c-6269d91987d3
 ms.manager: douge
 ms.author: elbatk

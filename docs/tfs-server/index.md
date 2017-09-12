@@ -1,7 +1,7 @@
 ---
-title: TFS administration
-description: Index to topics for planning and tracking work in VSTS and and Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+title: Server administration index to content for TFS
+description: Guide to topics for installing TFS, and managing team projects, project collections for Team Foundation Server (TFS)  
+ms.technology: tfs-on-prem
 ms.prod: vs-devops-alm
 ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
 ms.manager: douge

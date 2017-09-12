@@ -1,5 +1,5 @@
 ---
-title: Widget catalog  
+title: Catalog of widgets supported for team dashboards in VSTS or TFS 
 description: Determine which widgets you want to add to your dashboards when working in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting

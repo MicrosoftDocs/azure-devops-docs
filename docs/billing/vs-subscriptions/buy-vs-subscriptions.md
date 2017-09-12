@@ -2,8 +2,7 @@
 title: Buy Visual Studio subscriptions | Visual Studio Marketplace
 description: Subscriptions that include integrated developer tools and services for Windows, Java, Android, iOS, Linux, and modern app development
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-billing
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: f5fab296-1942-47c9-b4c8-61bf347b3d87
 ms.manager: douge
 ms.author: elbatk

@@ -3,8 +3,7 @@ title: Get started with Git and Visual Studio | VSTS & TFS
 description: Quick Start with Git and Visual Studio Team Services
 ms.assetid: aa9c2f22-6912-4834-8ed3-ed16771760c2
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git 
-ms.service: vsts-code
+ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: sdanie
 ms.date: 04/03/2017
@@ -37,14 +36,14 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
  0. In Team Explorer, open up the Connect page by choosing **Projects and My Teams** then **Manage Connections**    
 
-  ![Cloning Visual Studio Team Services Git repositories in Visual Studio](_shared/_img/manageConnections.png) 
+  ![Cloning VSTS Git repositories in Visual Studio](_shared/_img/manageConnections.png) 
   
 0. Choose **Connect**, select your Team Services account, choose the projects you want to work on, then
 click **Connect**.   
 
 0. Right click on the project and click **Clone...**. Then enter a local folder on your drive to store the downloaded code.      
    
-   ![Cloning a Git Repository from a Connected Visual Studio Team Services Account](_shared/_img/cloneVsRepo.png)
+   ![Cloning a Git Repository from a Connected VSTS Account](_shared/_img/cloneVsRepo.png)
 
 # [Command Line](#tab/command-line)
 
@@ -128,7 +127,7 @@ branch of the code.
 
   ![Create a Pull Request in Visual Studio](_shared/_img/newVsPullRequest.png)
 
-0. You can review comments made in your [pull request](tutorial/pullrequest.md) in a web browser on the Visual Studio Team Services project page. Once all changes are approved by the
+0. You can review comments made in your [pull request](tutorial/pullrequest.md) in a web browser on the VSTS project page. Once all changes are approved by the
 team, you complete the pull request through the web browser.
 
 # [Command Line](#tab/command-line)

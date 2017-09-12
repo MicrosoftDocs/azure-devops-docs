@@ -2,8 +2,7 @@
 title: VSTS - Add team project members | Visual Studio Team Services
 description: Add members to team projects in Visual Studio Team Services (Visual Studio Online, VSTS, VSO)
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: d3945cd4-d024-4d6f-b949-9feaa62e9948
 ms.manager: douge
 ms.author: estfan
@@ -40,7 +39,7 @@ from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscr
 
 A:	This might happen because users must 
 sign in with Microsoft accounts 
-unless your Visual Studio Team Services account 
+unless your VSTS account 
 controls access with Azure Active Directory (Azure AD). 
 If your account is connected to Azure AD, 
 users must be directory members to get access. 
@@ -65,10 +64,10 @@ A:	This might happen for [different reasons](faq-add-delete-users.md#stopped-fea
 
 <a name="RemovePeople"></a>
 
-####Q:	How do I remove users from my Visual Studio Team Services account?
+####Q:	How do I remove users from my VSTS account?
 
 A:	Learn [how to delete users](delete-account-users.md) 
-across all team projects in your Visual Studio Team Services account. 
+across all team projects in your VSTS account. 
 If you paid for more users, but don't need their account access
 anymore, you must reduce your paid users to avoid charges.
 

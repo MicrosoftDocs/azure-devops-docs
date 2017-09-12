@@ -3,8 +3,7 @@ title: Save team project data for Visual Studio Team Services
 description: Save team project data for Visual Studio Team Services
 ms.assetid: b944f980-81c0-4100-b0d8-2fc575c65693
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.manager: douge
 ms.author: estfan
 ms.date: 08/11/2016

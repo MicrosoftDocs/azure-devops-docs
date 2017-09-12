@@ -1,6 +1,6 @@
 ---
 title: Resize charts, PR comment tracking, RM updates and more – Jul 7
-description: Visual Studio Team Services release notes for July 7 2016
+description: VSTS release notes for July 7 2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

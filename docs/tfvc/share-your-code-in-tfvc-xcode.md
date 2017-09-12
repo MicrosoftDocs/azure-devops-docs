@@ -3,8 +3,7 @@ title: Share your code in TFVC using Xcode | Visual Studio Team Services
 description: Share code in TFVC using Xcode
 ms.assetid: 582BE341-2026-4C83-8F2B-552A37561DBB
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
+ms.technology: vs-devops-tfvc
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: routlaw
@@ -15,7 +14,7 @@ ms.date: 08/10/2016
 
 **VSTS | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**
 
-Share your Xcode projects in Visual Studio Team Services using a TFVC repository by using the Git-tf command line tool to push your changes from the local Git repotory to TFVC.
+Share your Xcode projects in VSTS using a TFVC repository by using the Git-tf command line tool to push your changes from the local Git repotory to TFVC.
 
 ## Download and configure Git-tf
 

@@ -1,7 +1,7 @@
 ---
 title: Field data types and field attributes | VSTS & TFS  
 description: Data types supported by work item fields to support queries, reports, and workflow for Visual Studio Team Services (VSTS) and TFS  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: c735a582-954a-418e-8b12-1b5c0b9857b9  
 ms.manager: douge

@@ -1,5 +1,5 @@
 ---
-title: Upgrade TFS
+title: Upgrade your TFS deployment 
 description: Upgrade your instance of Team Foundation Server to the latest version
 ms.prod: vs-devops-alm
 ms.technology: tfs-on-prem

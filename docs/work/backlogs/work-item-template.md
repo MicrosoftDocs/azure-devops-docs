@@ -1,7 +1,7 @@
 ---
 title: Work item templates | VSTS & TFS
 description: Increase productivity, add, manage, administrate work item templates to pre-populate fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
 ms.manager: douge

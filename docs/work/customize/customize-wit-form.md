@@ -1,7 +1,7 @@
 ---
 title: Customize the layout | VSTS 
 description: Customize the web version of the work item form when connecting to a team project hosted on Visual Studio Team Services (VSTS)    
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 4DE53686-3349-41B8-A361-814B2519E60F
 ms.manager: douge

@@ -1,9 +1,8 @@
 ---
-title: Manage users and access | Visual Studio Team Services
+title: Add user accounts and assign access level in VSTS
 description: Add users and assign access levels in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
+ms.technology: vs-devops-setup
 ms.assetid: 90f45ebb-88e2-46bf-b4cf-083281923c77
 ms.manager: douge
 ms.author: estfan
@@ -72,7 +71,7 @@ learn [how to change paid extension users](../billing/change-number-paid-extensi
 
 You'll need [VSTS project collection administrator or account owner permissions](faq-add-delete-users.md#find-owner). 
 
-##	Add users to your Visual Studio Team Services account
+##	Add users to your VSTS account
 
 0.	Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```). 

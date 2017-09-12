@@ -1,6 +1,6 @@
 ---
 title: Team Foundation Service updates - Oct 8
-description: Visual Studio Team Services release notes for October 8 2012
+description: VSTS release notes for October 8 2012
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

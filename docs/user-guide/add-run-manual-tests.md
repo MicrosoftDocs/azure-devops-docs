@@ -1,7 +1,7 @@
 ---
 title: Add, run, and update inline tests | VSTS  
 description: Add, run, and update manual test cases when working in Visual Studio Team Services (VSTS)    
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
 ms.assetid: 
 ms.manager: douge

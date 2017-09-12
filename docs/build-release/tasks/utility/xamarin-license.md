@@ -1,6 +1,6 @@
 ---
 title: Xamarin license
-description: How to activate or deactivate a Xamarin license when building code in Visual Studio Team Services VSTS and Team Foundation Server TFS
+description: How to activate or deactivate a Xamarin license when building code in VSTS and Team Foundation Server TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 07F571D7-DB66-4B8E-8CB1-F37B6D56EBD7

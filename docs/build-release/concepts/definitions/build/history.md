@@ -1,6 +1,6 @@
 ---
 title: Build definition history
-description: You can learn what changed, when it happened, and who did it on Visual Studio Team Services and Team Foundation Server (TFS)
+description: You can learn what changed, when it happened, and who did it on VSTS and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: AB81E23E-DD84-4BDB-ACD9-AE03D783A303

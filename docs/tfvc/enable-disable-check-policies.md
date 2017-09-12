@@ -3,8 +3,7 @@ title: Enable and Disable Check-In Policies
 description: Enable and Disable Check-In Policies
 ms.assetid: 629bf67c-22c5-4047-92b8-aa8f7c201cc9
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
+ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

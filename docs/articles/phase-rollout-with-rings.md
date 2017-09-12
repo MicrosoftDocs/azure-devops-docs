@@ -58,7 +58,7 @@ At the application level, the composition of our extensions is innocuous, easy t
 
 ![Application Layer Roll-out](./_img/phase-rollout-with-rings/phase-rollout-with-rings-app-layer.png)
 
-At the infrastructure level, the extensions are published to the [Visual Studio marketplace](https://marketplace.visualstudio.com). Once installed in VSTS accounts, they are hosted by the VSTS web application, with state persisted to Azure storage and/or the extension [data storage](https://www.visualstudio.com/en-us/docs/integrate/extensions/develop/data-storage).
+At the infrastructure level, the extensions are published to the [Visual Studio marketplace](https://marketplace.visualstudio.com). Once installed in VSTS accounts, they are hosted by the VSTS web application, with state persisted to Azure storage and/or the extension [data storage](/vsts/extend/develop/data-storage).
 
 ![Infrastructure Layer Roll-out](./_img/phase-rollout-with-rings/phase-rollout-with-rings-inf-layer.png)
 
@@ -139,7 +139,7 @@ No, rings and feature flags are symbiotic. Feature flags give you fine-grained c
 
 ![Feature flags](./_img/phase-rollout-with-rings/phase-rollout-with-rings-feature-flags.png)
 
-[LaunchDarkly](https://launchdarkly.com/microsoft/) provides an extension for Visual Studio Team Services & Team Foundation Server. It integrates with VSTS RM and gives you "run-time" control of features deployed with your ring deployment process.
+[LaunchDarkly](https://launchdarkly.com/microsoft/) provides an extension for VSTS & Team Foundation Server. It integrates with VSTS RM and gives you "run-time" control of features deployed with your ring deployment process.
 
 ## Conclusion
 

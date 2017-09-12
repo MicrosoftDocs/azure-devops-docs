@@ -1,7 +1,7 @@
 ---
 title: Copy work items 
 description: Copy or clone work items, copy the URL link, or copy a list of work items to the clipboard-Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)   
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  
 ms.manager: douge

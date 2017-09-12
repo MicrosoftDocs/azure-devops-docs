@@ -1,10 +1,9 @@
 ---
-title: Install extensions for Visual Studio Team Services | Visual Studio Team Services (Visual Studio Online)
+title: Install extensions for VSTS | Visual Studio Team Services (Visual Studio Online)
 description: Find and install extensions for Team Services from the Visual Studio Marketplace
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-marketplace
-ms.service: vsts-marketplace
+ms.technology: vs-devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.manager: douge
 ms.author: elbatk
@@ -15,7 +14,7 @@ ms.date: 01/10/2017
 
 **Team Services**
 
-To add new features and capabilities to your Visual Studio Team Services account, 
+To add new features and capabilities to your VSTS account, 
 install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). 
 You can install [free, preview, or paid](./faq-extensions.md#difference) extensions, 
 and you can [start extension trials](https://www.visualstudio.com/docs/setup-admin/team-services/try-additional-features-vs), 

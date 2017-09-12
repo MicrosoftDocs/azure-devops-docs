@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 title: Tutorials catalog for developing extensions in Visual Studio Team Services
 description: Follow tutorials to create an extension in Visual Studio Team Services
 ms.assetid: 75df3138-f16d-4127-89f7-5462ce6874bd
@@ -239,7 +238,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <div style="vertical-align:top;display:inline-block;float:left;width:65%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center;display:table-cell;vertical-align:middle"> 
-    Widgets can be implemented into your Visual Studio Team Services dashboard via contribution extensions. This tutorial is split into three parts: 
+    Widgets can be implemented into your VSTS dashboard via contribution extensions. This tutorial is split into three parts: 
     Creating a "Hello World" widget, Adding a call to a Team Services REST API, Adding configuration to your widget. 
     </div>
 </div>

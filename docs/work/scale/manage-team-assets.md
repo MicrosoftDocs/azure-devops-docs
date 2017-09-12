@@ -1,7 +1,7 @@
 ---
 title: Configure team settings | VSTS  & TFS 
 description: Manage team-specific tools such as sprint settings, backlogs, Kanban boards, and more as well as add team administrators 
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 6BF2B72D-9160-4140-B8DE-B2C7C42AC338  
 ms.manager: douge

@@ -2,8 +2,7 @@
 title: Add a dashboard widget | Extensions for Visual Studio Team Services
 description: Tutorial for creating a widget that you can then add to a dashboard  
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
 ms.manager: douge
 ms.author: elbatk
@@ -23,7 +22,7 @@ In order to create extensions for Team Services, there are some prerequisite sof
 **Knowledge:**
 Some knowledge of JavaScript, HTML, CSS is required for widget development.
 
-- A **Visual Studio Team Services account** for installing and testing your widget, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
+- A **VSTS account** for installing and testing your widget, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
 - **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
@@ -324,7 +323,7 @@ Choose your widget and click the 'Add' button to add it to your dashboard.
 <a name="part-2"/>
 
 ## Part 2: Hello World with VSTS REST API
-Widgets can call any of the [REST APIs](https://visualstudio.com/integrate/api/overview.md) in VSTS to interact with Visual Studio Team Services resources.
+Widgets can call any of the [REST APIs](https://visualstudio.com/integrate/api/overview.md) in VSTS to interact with VSTS resources.
 In this example, we use the REST API for WorkItemTracking to fetch information about an existing query and display some query info in the widget right 
 below the "Hello World" text. 
 

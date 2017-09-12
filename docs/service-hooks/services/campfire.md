@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: Campfire with Visual Studio Team Services
-description: Use Campfire with your Visual Studio Team Services account
+description: Use Campfire with your VSTS account
 ms.assetid: 38a3f329-96c5-49a2-a88d-523356c496f0
 ms.manager: douge
 ms.author: elbatk
@@ -28,7 +28,7 @@ For example, you can post a message when a work item is created or changed, or a
 
    <img alt="Add service hook" src="./_img/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 
-3. Configure the Visual Studio Team Services event that will post a message in a Campfire room.
+3. Configure the VSTS event that will post a message in a Campfire room.
 
    <img alt="Configure event" src="./_img/campfire/configure-event.png" style="border: 1px solid #CCCCCC" />
 

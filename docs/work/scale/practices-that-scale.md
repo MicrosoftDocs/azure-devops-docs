@@ -1,7 +1,7 @@
 ---
 title: Practices that scale  | VSTS & TFS
 description: Scaling Agile recommended practices for working in Visual Studio Team Services (VSTS) or Team Foundation Server     
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  
 ms.manager: douge

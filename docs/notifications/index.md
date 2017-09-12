@@ -1,15 +1,18 @@
 ---
-title: Notifications index | VSTS & TFS
+title: Notifications index to content for VSTS & TFS
 description: Index to topics for getting notifications or alerts from VSTS or TFS  
-ms.technology: vs-devops-agile-wit
+ms.technology: collaborate
 ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/03/2017
+ms.date: 09/01/2017
 ---
 
+
 # Notifications  
+
+**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
  
 Stay up-to-date with changes as they occur by subscribing to events such as code changes, build completions, or work item assignments.  
 

@@ -1,9 +1,8 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
-ms.service: vsts-extend
+ms.technology: vs-devops-extensions-api
 title: Auth and Security | Extensions for Visual Studio Team Services
-description: Auth and secuirty for Visual Studio Team Services Extensions
+description: Auth and secuirty for VSTS Extensions
 ms.assetid: c1704b14-66d2-4950-8633-a63fc8f88508
 ms.manager: douge
 ms.author: elbatk
@@ -14,7 +13,7 @@ ms.date: 08/29/2016
 
 ## Calling REST APIs from your extension
 
-Most extensions have a need to call Visual Studio Team Services REST APIs on behalf of the current user. 
+Most extensions have a need to call VSTS REST APIs on behalf of the current user. 
 * If you are using the provided `JavaScript REST clients`, authentication is automatically handled for you. These clients automatically request an access token from the core SDK and set it in the Authorization header of the request.
 * If you are not using the provided clients, you need to request a token from the `Core SDK` and set it in the Authorization header of your request:
 
@@ -32,7 +31,7 @@ Most extensions have a need to call Visual Studio Team Services REST APIs on beh
 
 ## Authenticating requests to your service
 
-A common scenario is to make calls to a back-end service from an extension. To verify these calls are coming from your extension running in Visual Studio Team Services and to verify the authenticity of the current user (and other context information), a special type of token is made available to your extension. This token contains information about who is making the call and also a signature that you can validate to know that the request came from your extension. 
+A common scenario is to make calls to a back-end service from an extension. To verify these calls are coming from your extension running in VSTS and to verify the authenticity of the current user (and other context information), a special type of token is made available to your extension. This token contains information about who is making the call and also a signature that you can validate to know that the request came from your extension. 
 
 ### Get your extension's key
 

@@ -2,16 +2,16 @@
 title: How to set up remote SharePoint Products for Team Foundation Server
 description: How to set up remote SharePoint Products for Team Foundation Server
 ms.assetid: daf507f9-ca46-439f-a3c9-c9ef3f917085
-ms.manager: douge
-ms.author: elbatk
-ms.date: 09/01/2016
 ms.prod: vs-devops-alm
 ms.technology: tfs-on-prem
+ms.manager: douge
+ms.author: elbatk
+ms.date: 09/09/2017
 ---
 
-# How to: Set up remote SharePoint Products for Team Foundation Server
+# Set up remote SharePoint Products for Team Foundation Server
 
-**TFS 2017** | **TFS 2015** | **TFS 2013**
+[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
 
 If you have SQL Server and TFS running on the same server, your best alternative might be to install SharePoint on a different server to minimize competition for resources. The remote SharePoint scenario addresses such an installation.
 

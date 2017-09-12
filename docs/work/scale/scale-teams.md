@@ -1,7 +1,7 @@
 ---
 title: Scale and manage work across the enterprise | VSTS & TFS
 description: Scale your team project by adding teams  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 
 ms.manager: douge

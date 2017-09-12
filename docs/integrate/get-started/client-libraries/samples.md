@@ -1,10 +1,9 @@
 ---
 title: .NET Client Library Samples for Visual Studio Team Services
-description: C# samples showing how to integrate with Visual Studio Team Services and Team Foundation Server from apps and services on Windows.
+description: C# samples showing how to integrate with VSTS and Team Foundation Server from apps and services on Windows.
 ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
+ms.technology: vs-devops-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016
@@ -12,7 +11,8 @@ ms.date: 08/04/2016
 
 # C# client libary samples 
 
-Samples showing how to extend and integrate with Team Foundation Server and Visual Studio Team Services using the [.NET client libraries](./dotnet.md).
+Samples showing how to extend and integrate with Team Foundation Server and VSTS using the [.NET client libraries](../../concepts/dotnet-client-libraries.md).
+
 
 ## Samples in GitHub
 There are many samples with instructions on how to run them on our [.NET Sample GitHub Page](https://github.com/Microsoft/vsts-dotnet-samples). 
@@ -29,7 +29,6 @@ SOAP examples on this page require the following NuGet packages:
 * [Microsoft.VisualStudio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)
 * [Microsoft.VisualStudio.Services.InteractiveClient](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.InteractiveClient/)
 
-Review the [contracts index](https://visualstudio.com/api/contracts-page.md) to learn about the specific .Net client library contracts.
 
 #### Example 1: Using a REST-based HTTP client
 
@@ -262,7 +261,7 @@ public static void OAuthSample()
 ```cs
 public static void AADSoapSample()
 {
-	// Authenticate using Azure Active Directory credential (requires a AAD-backed Visual Studio Team Services Account)
+	// Authenticate using Azure Active Directory credential (requires a AAD-backed VSTS Account)
 	using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new AadCredential()))
 	{
 		tpc.Authenticate();

@@ -2,9 +2,9 @@
 
 A: If you have at least Basic access, 
 you can find your [project collection administrator](../accounts/add-administrator-project-collection.md) 
-in your Team Services account's security settings.
+in your VSTS account's security settings.
 
-0.	Go to your Team Services account's security settings. 
+0.	Go to your VSTS account's security settings. 
 
 	<img alt="Click gear button, Security" src="./_img/account-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
 

@@ -1,7 +1,7 @@
 ---
 title: Customize the web form | VSTS    
 description: Customize the web form for a work item type and Inheritance process model for Visual Studio Team Services (VSTS)      
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: E0AACC40-9A9E-4A48-A1D7-1CE70D53EEA8  
 ms.manager: douge

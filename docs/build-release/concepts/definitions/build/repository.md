@@ -1,6 +1,6 @@
 ---
 title: Build definition sources
-description: Specify the sources and repository that contains the code you want to build on Visual Studio Team Services and Team Foundation Server (TFS)
+description: Specify the sources and repository that contains the code you want to build on VSTS and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 6DFCFEB4-05EC-4A73-9382-A20D161A53D4
@@ -91,7 +91,7 @@ This is the easier way to authorize your account. This approach grants your VSTS
 
  0. In the **Add New GitHub Service Connection** dialog box, select **Grant authorization**, and then click **Authorize**.
 
- 0. In the new browser window, sign in to GitHub and follow the instructions to authorize Visual Studio Team Services to access your GitHub account.
+ 0. In the new browser window, sign in to GitHub and follow the instructions to authorize VSTS to access your GitHub account.
 
 0. On the **Repository** tab, select the **Connection** you created.
 
@@ -136,7 +136,7 @@ This is the easier way to authorize your account. This approach grants your VSTS
 
 0. Sign in to the external Git service (for example, BitBucket) and make sure you have permission to read the repository.
 
-0. Sign on to the Visual Studio Team Services or Team Foundation Server web portal and create a build definition.
+0. Sign on to the VSTS or Team Foundation Server web portal and create a build definition.
 
 0. On the **Repository** tab, next to the Connection drop-down, click the **Manage** link. The **Services** tab opens as a new tab in your browser.
 

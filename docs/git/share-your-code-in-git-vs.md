@@ -3,8 +3,7 @@ title: Share your code with Git using Visual Studio 2015 | VSTS & TFS
 description: Share code in Git using Visual Studio
 ms.assetid: 0c1dc48e-6f52-499d-a03e-6361c9a838dd
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git 
-ms.service: vsts-code
+ms.technology: vs-devops-git 
 toc: show
 ms.manager: douge
 ms.author: sdanie
