@@ -12,6 +12,8 @@
     href: add-widget-to-dashboard.md
 - name: Tutorials
   items:
+  - name: Configure burndown or burnup widgets
+    href: guidance/configure-burndown-burnup-widgets.md
   - name: Configure a cumulative flow chart
     href: guidance/cumulative-flow.md
   - name: Configure a lead/cycle time widget

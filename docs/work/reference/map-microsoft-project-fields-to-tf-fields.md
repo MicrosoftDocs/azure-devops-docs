@@ -11,10 +11,7 @@ ms.date: 09/08/2017
 
 # Map Project fields to TFS fields
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
-
->[!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize/customize-work.md).  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
 You can customize the way in which work item fields that are stored in Team Foundation are mapped to fields that are defined for Office Project. You can change the way specific fields are published and designate the default link type to use when you create hierarchical or tree links and dependency links.  
   

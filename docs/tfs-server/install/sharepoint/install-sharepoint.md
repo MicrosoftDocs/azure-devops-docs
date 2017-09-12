@@ -2,16 +2,16 @@
 title: Manually Install SharePoint products for Team Foundation Server
 description: Manually Install SharePoint products for Team Foundation Server
 ms.assetid: 38b11ed7-6556-4aa0-bfa5-16661c74cb10
-ms.manager: douge
-ms.author: elbatk
-ms.date: 09/01/2016
 ms.prod: vs-devops-alm
 ms.technology: tfs-on-prem
+ms.manager: douge
+ms.author: elbatk
+ms.date: 09/09/2017
 ---
 
 # Manually Install SharePoint products for Team Foundation Server
 
-**TFS 2017** | **TFS 2015** | **TFS 2013**
+[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
 
 This procedure is for installing and configuring SharePoint Server 2013 on the same server as TFS and SQL Server.
 

@@ -12,12 +12,7 @@ ms.date: 09/08/2017
 
 # Customize the Microsoft Project field mapping file
 
-
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
-
-
->[!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize/customize-work.md).  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 You can customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project, and you can change how specific fields are published. Microsoft Project includes predefined fields, such as Task Name, and custom fields. When you publish or refresh work item data in Microsoft Project, the field map determines which fields in the work item database match the fields in Microsoft Project.  
   

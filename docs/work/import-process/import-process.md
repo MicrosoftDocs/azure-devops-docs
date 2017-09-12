@@ -59,7 +59,7 @@ Migration to VSTSis a great time to think about process alignment across your or
 
 6.  Using the imported process(es), create team projects on VSTS for each you want to migrate. 
 
-    With the project created, you can now migrate the project data to VSTS using the [TFS Database Import Service](/vsts/tfs-server/migration/migration-overview).
+    With the project created, you can now migrate the project data to VSTS using the [TFS Database Import Service](/vsts/articles/migration-overview).
 
 
 

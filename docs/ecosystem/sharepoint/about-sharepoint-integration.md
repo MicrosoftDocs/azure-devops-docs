@@ -1,75 +1,65 @@
 ---
-title: SharePoint integration | TFS
-description: Use the SharePoint project portal to share information with your team 
+title: About SharePoint Integration 
+description: TFS/SharePoint integration - About SharePoint Integration 
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-reporting
 ms.assetid:  
-ms.manager: douge
-ms.author: kaelli
-ms.date: 08/04/17
+ms.manager: abjork
+ms.author: greggboe
+ms.date: 09/08/07
 ms.topic: get-started-article
 ---
 
-# About SharePoint Integration  
+# About SharePoint integration  
 
-**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**  
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-> [!IMPORTANT]  
-> TFS 2017 and later versions no longer support native integration with Office Project Server. If you're working with an on-premises TFS 2015 or TFS 2013, see [Synchronize TFS with Project Server](/vsts/work/tfs-ps-sync/synchronize-tfs-project-server?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json).
+SharePoint products are a valuable resource to users of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS). With a SharePoint site, teams can easily store and share Office documents. SharePoint sites can be configured to show all kinds of information. We expect and encourage VSTS and TFS teams to use SharePoint and will continue to look for ways to make the integration of VSTS and TFS and SharePoint Server and SharePoint online, be better together.
 
+## TFS 2017 and earlier versions
 
-## Built-in features replacing the TFS-SharePoint integration 
+Since its inception in 2005, TFS has integrated with SharePoint. That integration included SharePoint site templates and automatic site provisioning as well as support for browsing document libraries from inside Visual Studio Team Explorer. This integration works for SharePoint Server 2010 and 2013. It does not integrate with SharePoint Online nor support integration with VSTS. 
 
-One of the main reasons to work with a SharePoint portal is to share informtion with your teams. You can still use a SharePoint portal to share information with your team, it's just that some TFS-SharePoint integration features will no longer work. This is described in XXX. 
+With TFS 2013, TFS-SharePoint integration required you to install the TFS Extension for SharePoint on the SharePoint server and configure both servers to recognize each other. This integration provided the following features:
+* Automatically create a SharePoint site when creating a team project
+* Provision dashboard pages on that SharePoint site
+* Install SharePoint web parts that display TFS information such as work item query results and latest build results.
+* Support for browsing your SharePoint document libraries directly from Visual Studio Team Explorer.
 
-When you [upgrade to TFS 2018](https://go.microsoft.com/fwlink/?LinkId=856344), you can access the following features which removes the reliance on some of the integration features: 
+However, you should consider the following before moving forward with this integration:
+* You can create your SharePoint site using SharePoint itself. Microsoft Teams also creates a team SharePoint site for sharing information
+* TFS 2017 Update 2 and later versions support [Dashboards](../../report/dashboards.md).  Dashboards provide a very practical replacement for the TFS-SharePoint dashboards.  
+* TFS dashboards offer an extensive [catalog of widgets](../../report/widget-catalog.md) which replace all of the SharePoint web parts offered by this integration. Additionally, you can find widgets developed by our partners from the [Visual Studio Team Services Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&category=All%20categories&sortBy=Relevance).
+* Starting with TFS 2018, we are deprecating the tightly-coupled TFS-SharePoint integration in favor of integration using public APIs and extensibility frameworks.
 
-- [Multiple, configurable team dashboards](../../report/dashboards.md) 
-- [Team project wiki](../../collaborate/add-edit-wiki.md)  
+You may want to ask yourself whether the integration benefits outweigh the costs of configuration. 
 
+If you are running TFS 2017 or earlier and want to configure your integration with SharePoint 2010 or 2013, read [Configure SharePoint Integration - TFS 2017 and Earlier](./configure-sharepoint-tfs-2017-earlier.md)
 
-<!---
-## TFS Disconnector for SharePoint and TFS/SharePoint deprecation 
-
--->
-
-
-
-## TFS Extension for SharePoint products   
-
-For TFS 2015 and TFS 2013, to work with a SharePoint portal and SharePoint artifacts, you must install the TFS Extension for SharePoint on a SharePoint 2010 or 2013 server. The extension installs the following artifacts used by TFS SharePoint sites:
-* TFS site templates
-* TFS features
-* TFS web parts
-
-The extension provides an integration between TFS and SharePoint to support the following:
-* SharePoint dashboards
-* Excel reports (typically hosted in the SharePoint portal)
-* Document library 
-* SharePoint wiki
-
-<!---
-Used to host process guidance (a long time ago) -->
-
-## Ways teams share information using the SharePoint portal  
- Your team can use the SharePoint portal to share information in the following ways:  
-  
--   **Share data contained in reports or dashboards**   
-     The reports and dashboards that you'll have access to depend on the process template created with your team project.   
-  
--   **Share team progress using predefined or customized dashboards**   
-     Dashboards provide information necessary to quickly understand the status of a team project. Because the project portal is composed of Web parts, you can create a customized version of it. Besides the standard information displayed on the project portal, you can add Web parts that connect to other data sources inside and outside the project. For more information about customizing the page layout or adding Web parts, choose  **Help** on the project portal menu bar.  
-  
--   **Share documents, files, images**    
-     Teams can [upload and organize documents into folders and subfolders](../../report/sharepoint-dashboards/manage-documents-and-document-libraries.md).  
-  
--   **Share team knowledge and processes using the SharePoint wiki**   
-     See [Manage a wiki](https://support.office.com/en-US/article/Manage-a-wiki-D200A755-3AD5-4EF6-8CDC-B149770E237F).  
-  
--   **Reference process guidance for select team project artifacts**   
-     Process guidance provides information about how to coordinate work on a team project and how to use a type of work item in the overall project life cycle. 
+**If you are running TFS 2017, configured to integrate with SharePoint 2013, and want to upgrade to SharePoint 2016**, you will need to disable SharePoint integration during the upgrade, or your upgrade will fail. For more information, read [Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016](./deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md).
 
 
- 
+## TFS 2018 and later versions
+Starting with TFS 2018, we will no longer offer the TFS Extension for SharePoint. Additionally, we won't support TFS 2017 integration with SharePoint 2016 (the TFS Extension for SharePoint only supports Sharepoint 2013 and earlier versions). TFS 2017 and earlier versions will continue to work with their supported versions of SharePoint. For more information, read [Discontinue TFS 2017 (and earlier versions) SharePoint integration](./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md).
 
- 
+**If you are upgrading to TFS 2018 from a previous version configured to integrate with SharePoint**, you will need to disable the SharePoint integration after upgrade, or your TFS SharePoint sites will fail to load. For more information, read [Disable SharePoint integration after TFS 2018 upgrade](./deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md).
+
+## Future plans for TFS and VSTS SharePoint integration
+
+Currently, our TFS and VSTS dashboards will meet most of your reporting requirements, replacing the previous dependency on TFS-SharePoint dashboards.  
+
+In the future, we plan to provide a way to embed a TFS or VSTS dashboard on a SharePoint site. From SharePoint, you will simply select a TFS or VSTS Dashboard to display, and it will be embedded on the SharePoint site.
+This will occur without laborious configurations. It will just work. It will also support both TFS and VSTS and SharePoint Server and SharePoint online.
+
+If you need more than the built-in dashboards can offer, Power BI reports and Excel charts can be embedded on a SharePoint site. This functionality is available today.
+
+We will update this topic as we provide additional SharePoint integrations. 
+
+## Referenced topics
+
+- [Add and manage dashboards](../../report/dashboards.md) 
+- [Widget catalog](../../report/widget-catalog.md) 
+- [Configure SharePoint Integration: TFS 2017 and earlier versions](./configure-sharepoint-tfs-2017-earlier.md)
+- [Discontinue SharePoint integration: TFS 2017 and earlier versions](./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md)
+- [Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016](./deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md)
+- [Visual Studio Team Services Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&category=All%20categories&sortBy=Relevance)

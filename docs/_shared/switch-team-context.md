@@ -11,7 +11,7 @@ Also, several hubs enable you to set team favorites. The favorites you set and s
 You navigate to your team context from the top navigation bar. The method changes slightly depending on the platform/version you work from.     
 
 >[!NOTE]  
->**Feature availability**: The Account Landing Page feature is in preview mode for Team Services and enabled for all users from web portal for TFS 2017.1 and later versions. To learn more about this feature, see [Work effectively from your account hub](../connect/account-home-pages.md). To enable or disable the feature, see [Enable preview features](../collaborate/preview-features.md).  
+>**Feature availability**: The Account Landing Page feature is in preview mode for VSTS and enabled for all users from web portal for TFS 2017.1 and later versions. To learn more about this feature, see [Work effectively from your account hub](../connect/account-home-pages.md). To enable or disable the feature, see [Enable preview features](../collaborate/preview-features.md).  
 
 
 <div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">
@@ -25,7 +25,7 @@ You navigate to your team context from the top navigation bar. The method change
 
 <li style="float: right;"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#AEAEAE;margin: 0px 0px 0px 8px;min-width:90px;color: #fff;border: solid 2px #AEAEAE;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#switch-context-tfs-2017-1">TFS 2017.1</a></li>
 
-<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#switch-context-team-services">Team Services</a></li>
+<li class="active" style="float: right"><a style="max-width: 374px;min-width: 120px;vertical-align: top;background-color:#007acc;margin: 0px 0px 0px 0px;min-width:90px;color: #fff;border: solid 2px #007acc;border-radius: 0;padding: 2px 6px 0px 6px;outline-style:none;height:32px;font-size:12px;font-weight:400" data-toggle="pill" href="#switch-context-team-services">VSTS</a></li>
 
 </ul>
  
@@ -34,7 +34,7 @@ You navigate to your team context from the top navigation bar. The method change
 <div id="switch-context-team-services" class="tab-pane fade in active"> 
 <p>You can switch your team focus to a team project or team you've recently viewed from the team project/team drop-down menu. If you don't see the team or team project you want, click **Browse&hellip;** to [browse all team projects and teams](../connect/account-home-pages.md). Your selection will open the [Dashboard hub](../report/dashboards.md) for the team project/team.</p> 
 
-<p>To access your [account hub](../connect/account-home-pages.md), click the ![Team Services icon](../_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page. </p>
+<p>To access your [account hub](../connect/account-home-pages.md), click the ![VSTS icon](../_shared/_img/switch-team-focus-account-project-page-icon.png) VSTS icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page. </p>
 
 <p>To go directly to the [project vision and status page](../collaborate/project-vision-status.md), choose the project home icon from the drop-down menu, for example, ![project home icon](../_shared/_img/work-web-portal-home-page-icon.png).</p> 
 
@@ -44,9 +44,9 @@ You navigate to your team context from the top navigation bar. The method change
 
 <div id="switch-context-tfs-2017-1" class="tab-pane fade"> 
 
-<p>To switch your team focus to a team project or team you've recently viewed, hover over the ![Team Services icon](../_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon and choose from the drop-down menu of options. If you don't see the team or team project you want, choose **Browse&hellip;** to [browse all team projects and teams](../connect/account-home-pages.md). Your selection will open the [project vision and status page](../collaborate/project-vision-status.md) for the team project. </p>
+<p>To switch your team focus to a team project or team you've recently viewed, hover over the ![VSTS icon](../_shared/_img/switch-team-focus-account-project-page-icon.png) VSTS icon and choose from the drop-down menu of options. If you don't see the team or team project you want, choose **Browse&hellip;** to [browse all team projects and teams](../connect/account-home-pages.md). Your selection will open the [project vision and status page](../collaborate/project-vision-status.md) for the team project. </p>
 
-<p>To access your [account hub](../connect/account-home-pages.md), click the ![Team Services icon](../_shared/_img/switch-team-focus-account-project-page-icon.png) Team Services icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page.  </p>
+<p>To access your [account hub](../connect/account-home-pages.md), click the ![VSTS icon](../_shared/_img/switch-team-focus-account-project-page-icon.png) VSTS icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page.  </p>
 
 <img src="../_shared/_img/work-web-portal-tfs-2017-1-switch-team-focus.png" alt="Choose another team from the team project menu" style="border: 1px solid #CCCCCC;" /> 
 </div>

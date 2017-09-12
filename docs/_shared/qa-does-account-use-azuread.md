@@ -1,8 +1,8 @@
-####Q:  How do I find out if my Team Services account controls access with Azure Active Directory (Azure AD)?
+####Q:  How do I find out if my VSTS account controls access with Azure Active Directory (Azure AD)?
 
 A:	If you have at least Basic access, here's how:
 
-Go your Team Services account settings by choosing the gear cog and then **Settings**:
+Go your VSTS account settings by choosing the gear cog and then **Settings**:
 
 Check if your account controls access with Azure AD.
 

@@ -12,7 +12,6 @@ ms.date: 03/09/2017
 
 [!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
 
-
 After you create a report in Excel that shows data for your team project, you can share that report with other team members. You can add the report to a shared folder or send it in e-mail, or you can upload the report to your team's *project portal*. To keep the report accurate, you might also want to run the report again on a particular schedule, such as every week or at each project milestone.  
   
 ## Upload reports to a project portal  

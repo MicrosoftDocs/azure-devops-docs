@@ -2,16 +2,16 @@
 title: Verify SharePoint products for Team Foundation Server
 description: Verify SharePoint products for Team Foundation Server
 ms.assetid: 104566ef-2578-4b76-a73d-c5e6c10eee06
-ms.manager: douge
-ms.author: elbatk
-ms.date: 09/01/2016
 ms.prod: vs-devops-alm
 ms.technology: tfs-on-prem
+ms.manager: douge
+ms.author: elbatk
+ms.date: 09/09/2017
 ---
 
 # Verify SharePoint products for Team Foundation Server
 
-**TFS 2017** | **TFS 2015** | **TFS 2013**
+[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
 
 If you choose to use an installation of SharePoint Products other than the one that was installed during Team Foundation Server installation, you should verify that your installation of SharePoint Products meets the following guidelines:
 
