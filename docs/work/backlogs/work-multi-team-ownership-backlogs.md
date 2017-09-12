@@ -1,11 +1,7 @@
 ---
 title: Organize your backlog | VSTS & TFS  
 description:  Organize your backlog by mapping backlog items to features, and features to epics in VSTS or Team Foundation Server (TFS)  
-<<<<<<< HEAD
-ms.technology: vs-devops-agile-wit
-=======
 ms.technology: vs-devops-wit
->>>>>>> f2e5f55028a5ad0ed1b107d1057662af7c497aad
 ms.prod: vs-devops-alm
 ms.assetid: DD78C7B9-A6B5-4596-9ADB-281578E615E2  
 ms.manager: douge

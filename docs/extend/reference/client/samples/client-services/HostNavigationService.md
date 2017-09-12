@@ -1,11 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-<<<<<<< HEAD
-ms.technology: vsts-sub-api
-ms.service: vsts-extend
-=======
 ms.technology: vs-devops-extensions-api
->>>>>>> f2e5f55028a5ad0ed1b107d1057662af7c497aad
 title: VSTS Extension Host Navigation Service Example
 description: A sample that shows how to use a host navigation service with a VSTS extension
 ms.assetid: d23bf2e9-f5c6-4108-8af5-fab62c848ca9

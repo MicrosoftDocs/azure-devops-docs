@@ -1,10 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-<<<<<<< HEAD
 ms.technology: vs-devops-marketplace
-=======
-ms.technology: vs-devops-extensions-api
->>>>>>> f2e5f55028a5ad0ed1b107d1057662af7c497aad
 title: Microsoft Teams with VSTS and Team Foundation Server
 description: Use Microsoft Teams with your VSTS account
 ---
