@@ -86,8 +86,8 @@ The sample app in this repository is a simple server that echoes "Hello world". 
 
  Select your version control repository. You'll need to authorize access to your repo.
 
- > [!TIP]
- > To learn more about GitHub CI builds, see [Define CI build process for your Git repo](../../actions/ci-build-git.md).
+ [//]: # (TODO:> [!TIP])
+ [//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
 
  ---
 

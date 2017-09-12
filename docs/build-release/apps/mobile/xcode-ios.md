@@ -82,8 +82,8 @@ The sample provided here is an iOS app, but the concepts described here essentia
 
  Select your version control repository. You'll need to authorize access to your repo.
 
- > [!TIP]
- > To learn more about GitHub CI builds, see [Define CI build process for your Git repo](../../actions/ci-build-git.md).
+ [//]: # (TODO:> [!TIP])
+ [//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
 
  ---
 
