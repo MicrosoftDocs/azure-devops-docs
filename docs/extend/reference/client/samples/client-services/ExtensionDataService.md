@@ -1,6 +1,11 @@
 ---
 ms.prod: vs-devops-alm
+<<<<<<< HEAD
+ms.technology: vsts-sub-api
+ms.service: vsts-extend
+=======
 ms.technology: vs-devops-extensions-api
+>>>>>>> f2e5f55028a5ad0ed1b107d1057662af7c497aad
 title: VSTS Extension Data Service Example
 description: A sample that shows how to use a extension data service with a VSTS extension
 ms.assetid: 4e66185f-a91d-4e2b-82b8-fd43f3db9fb6
