@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: Jenkins with Visual Studio Team Services
 description: Use Jenkins with your VSTS account
 ms.assetid: 3e9cf797-092f-48da-a515-e4d0cc93c4a1

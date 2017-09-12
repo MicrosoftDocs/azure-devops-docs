@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
+ms.technology: vs-devops-extensions-api
 title: How to Call a REST API | Extensions for Visual Studio Team Services
 description: How to call a REST API in your extension for Visual Studio Team Services.
 ms.assetid: 99794e1e-0127-4e65-83fb-93a71f496d93

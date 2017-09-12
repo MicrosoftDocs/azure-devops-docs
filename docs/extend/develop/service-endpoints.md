@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
+ms.technology: vs-devops-extensions-api
 title: Service Endpoints | Extensions for Visual Studio Team Services
 description: Browse through the places where your extension can extend Visual Studio Online.
 ms.assetid: ad0ea9de-620e-4605-8fcd-3c1443b26d8c

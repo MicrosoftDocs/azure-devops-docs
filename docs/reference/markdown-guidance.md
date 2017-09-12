@@ -3,7 +3,7 @@ title: Syntax usage for Markdown files and widgets
 titleSuffix: | VSTS & TFS 
 description: Use markdown syntax within pull requests, project pages, readme files, dashboards, and markdown widgets to share information within and across teams  
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-overview
+ms.technology: vs-devops-extensions-api
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
 ms.manager: douge
 ms.author: kaelli

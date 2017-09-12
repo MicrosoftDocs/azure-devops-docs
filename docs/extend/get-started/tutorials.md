@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
+ms.technology: vs-devops-extensions-api
 title: Tutorials catalog for developing extensions in Visual Studio Team Services
 description: Follow tutorials to create an extension in Visual Studio Team Services
 ms.assetid: 75df3138-f16d-4127-89f7-5462ce6874bd

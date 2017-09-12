@@ -2,7 +2,7 @@
 title: Resource limits & constraints for VSTS 
 titleSuffix: VSTS  
 description: Limits on the resources individual users can consume in Visual Studio Team Services, and the number of work item tracking requests they can make 
-ms.technology: vs-devops-overview
+ms.technology: vs-devops-extensions-api
 ms.prod: vs-devops-alm
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.manager: douge

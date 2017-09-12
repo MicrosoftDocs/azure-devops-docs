@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
+ms.technology: vs-devops-extensions-api
 title: Make Your Extension or Integration Public | Extensions for Visual Studio Team Services
 description: Guideline for making an integration or extension publicly visible on the Visual Studio Marketplace
 ms.assetid: d4dab00f-5089-4754-85f0-19bff1cb364a

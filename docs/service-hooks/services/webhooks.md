@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: WebHooks with Visual Studio Team Services
 description: Use WebHooks with your VSTS account
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77

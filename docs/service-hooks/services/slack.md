@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: Slack with Visual Studio Team Services
 description: Use Slack with your VSTS account
 ms.assetid: ea948249-1053-4971-99b9-ffa820c03803

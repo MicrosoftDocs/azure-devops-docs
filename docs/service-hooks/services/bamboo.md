@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: Bamboo with Visual Studio Team Services
 description: Use Atlassian Bamboo with your VSTS account
 ms.assetid: a5cb1028-9b46-4106-9fdd-5b8059b4dedd

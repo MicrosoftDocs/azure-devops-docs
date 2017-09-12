@@ -3,7 +3,7 @@ title: Add panels on backlog pages | Extensions for Visual Studio Team Services
 description: Extend VSTS with panels on backlogs.
 ms.assetid: 34f01da42-5a98-4bc5-981e-3f8d1ffdf163
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-extend
+ms.technology: vs-devops-extensions-api
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/22/2016

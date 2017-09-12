@@ -3,7 +3,7 @@ title: Add a custom control to the work item form | Extensions for Visual Studio
 description: Describes how to extend the work item form by adding a custom control.
 ms.prod: vs-devops-alm
 ms.contentid: 0956ACA7-B1C4-443F-A79A-A62EDD02FC15
-ms.technology: vsts-sub-extend
+ms.technology: vs-devops-extensions-api
 ms.manager: douge
 ms.author: elbatk
 ---

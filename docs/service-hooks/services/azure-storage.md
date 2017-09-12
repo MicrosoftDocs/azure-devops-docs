@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.technology: vs-devops-extensions-api
 title: Azure Storage with Visual Studio Team Services
 description: Use Azure Storage with your VSTS account
 ms.assetid: ca016666-8e07-42a6-a6c5-09fceba179da
