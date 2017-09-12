@@ -954,26 +954,26 @@ ms.date: 07/26/2017
                                     </div>
                                 </a>
                             </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="https://www.visualstudio.com/en-us/docs/integrate/extensions/reference/client/core-sdk">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage">
-                                                <img src="/media/logos/logo_TS.svg" alt="" />
+                            <li>
+                                <a href="https://www.visualstudio.com/en-us/docs/integrate/extensions/reference/client/core-sdk">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/media/logos/logo_TS.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>TypeScript APIs</h3>
+                                                    <p>Interact with VSTS through TypeScript APIs.</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="cardText">
-                                            <h3>TypeScript APIs</h3>
-                                            <p>Interact with VSTS through TypeScript APIs.</p>
-                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </a>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#marketplace">Marketplace</a>
