@@ -1,0 +1,11 @@
+- name: VSTS and TFS
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items: 
+  - name: Continuous Integration & Delivery
+    tocHref: /vsts/
+    topicHref: /vsts/index#pivot=services&panel=delivery
+    items:
+    - name: Deploy to Azure
+      tocHref: /vsts/
+      topicHref: /vsts/deploy-azure/index
