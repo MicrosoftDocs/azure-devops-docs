@@ -2,7 +2,7 @@
 title: Git history simplification | VSTS & TFS
 description: How git log history simplification works, and why it can lead to confusion.
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git
+ms.technology: vs-devops-git
 ms.assetid: 962a1ba7-6fa3-44ae-a9c9-d61804b76ebc
 ms.manager: douge
 ms.date: 06/01/2016

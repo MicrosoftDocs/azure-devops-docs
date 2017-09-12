@@ -3,7 +3,7 @@ title: Connect to your Git repos using credential managers | VSTS & TFS
 description: Authenticate to Visual Studio VSTS and TFS Git repos using credential managers
 ms.assetid: 7779af87-460c-4078-bc2b-ceb4b758c24e
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git 
+ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: routlaw
 ms.date: 01/09/2017
