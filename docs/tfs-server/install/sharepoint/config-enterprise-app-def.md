@@ -3,7 +3,7 @@ title: Configure the enterprise application definition for Team Foundation Serve
 description: Configure the enterprise application definition for Team Foundation Server
 ms.assetid: 0d1eb936-a6fa-455c-8fdb-19b1c36f8c6e
 ms.prod: vs-devops-alm
-ms.technology: tfs-on-prem
+ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: elbatk
 ms.date: 09/09/2017

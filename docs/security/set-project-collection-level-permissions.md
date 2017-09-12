@@ -2,7 +2,7 @@
 title: Set project-level or collection-level permissions for VSTS & TFS
 description: How-to guide to set project-level permissions in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-search
+ms.technology: vs-devops-admin
 ms.assetid: 
 toc: show
 ms.manager: douge

@@ -6,7 +6,7 @@ ms.manager: douge
 ms.author: elbatk
 ms.date: 08/31/2016
 ms.prod: vs-devops-alm
-ms.technology: tfs-on-prem
+ms.technology: vs-devops-admin
 ---
 
 # Setting up HTTPS with Secure Sockets Layer (SSL) for Team Foundation Server

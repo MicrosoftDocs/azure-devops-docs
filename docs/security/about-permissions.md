@@ -2,7 +2,7 @@
 title: Understand how permissions and groups are defined in VSTS & TFS
 description: Understand how permissions are managed in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-search
+ms.technology: vs-devops-admin
 ms.assetid: 
 toc: show
 ms.manager: douge

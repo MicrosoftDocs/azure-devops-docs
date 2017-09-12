@@ -2,7 +2,7 @@
 title: Requirements Changes for TFS 2017, Team Foundation Server Setup, Upgrade, and Administration
 description: Describes changes to requirements between TFS 2015 and TFS 2017.
 ms.prod: vs-devops-alm
-ms.technology: tfs-on-prem
+ms.technology: vs-devops-admin
 ms.assetid: 54e497b6-ac9b-42ae-bc35-8b270f8f88ad
 toc: show
 ms.manager: douge

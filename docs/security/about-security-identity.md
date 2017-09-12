@@ -2,7 +2,7 @@
 title: Understand the components of security and identity in VSTS & TFS
 description: Understand how VSTS and TFS manage security and accounts 
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-search
+ms.technology: vs-devops-admin
 ms.assetid: 
 toc: show
 ms.manager: douge

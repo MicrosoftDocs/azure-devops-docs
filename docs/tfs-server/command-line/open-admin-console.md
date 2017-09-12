@@ -2,7 +2,7 @@
 title: Open Team Foundation Server administration console
 description: Open Team Foundation Server administration console
 ms.prod: vs-devops-alm
-ms.technology: tfs-on-prem
+ms.technology: vs-devops-admin
 ms.assetid: 8278b2af-1733-4b6a-a548-ad2cae4b0cab
 ms.manager: douge
 ms.author: douge

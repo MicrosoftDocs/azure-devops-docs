@@ -6,7 +6,7 @@ ms.manager: douge
 ms.author: elbatk
 ms.date: 08/18/2016
 ms.prod: vs-devops-alm
-ms.technology: tfs-on-prem
+ms.technology: vs-devops-admin
 ---
 
 # Configure Lab Management for SCVMM environments and Team Foundation Server
