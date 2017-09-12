@@ -134,7 +134,7 @@ A: See [Change access levels](../security/change-access-levels.md).
 
 ####Q:	Where can I find more VSTS extensions and more info about the Visual Studio Marketplace?
 
-A:	See [Visual Studio Team Services extensions](https://marketplace.visualstudio.com/vsts) 
+A:	See [VSTS extensions](https://marketplace.visualstudio.com/vsts) 
 and [Visual Studio Marketplace Overview](/vsts/marketplace/overview).
 
 <!-- ENDSECTION --> 

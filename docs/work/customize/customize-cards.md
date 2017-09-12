@@ -165,7 +165,7 @@ As a first step, you'll see that you can change the card display for each work i
 
 	Here we choose User Story. Your choices will vary based on the following:   
 	<ul>
-	<li>You connect to Visual Studio Team Services or an on-premises TFS</li>
+	<li>You connect to VSTS or an on-premises TFS</li>
 	<li>[Process](../guidance/choose-process.md) used to create your team project</li>
 	<li>Whether your team has chosen to [treat bugs like requirements or like tasks](show-bugs-on-backlog.md) </li>
 

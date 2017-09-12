@@ -1,7 +1,7 @@
 ---
 ms.assetid: EEA8E5DA-50B6-427B-B67E-32E926DC4A02
 title: Build your Azure cloud service
-description: Define a continuous integration (CI) build for your Azure cloud service in Visual Studio Team Services or Microsoft Team Foundation Server (TFS)
+description: Define a continuous integration (CI) build for your Azure cloud service in VSTS or Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge

@@ -1,6 +1,6 @@
 ---
 title: Use Symbol Server in Team Services
-description: Use the Symbol Server feature in Visual Studio Team Services to make debugging easier
+description: Use the Symbol Server feature in VSTS to make debugging easier
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.topic: get-started-article
@@ -41,7 +41,7 @@ To publish symbols for NuGet packages, include the above task in the build defin
 ## Consume symbols
 
 Visual Studio 2017 version 15.3 Preview 5 and later supports consuming symbols from a Team Services Symbol Server. 
-You can select and add Visual Studio Team Services symbol paths to your Visual Studio environment using the Tools->Options->Debugger->Symbols page.
+You can select and add VSTS symbol paths to your Visual Studio environment using the Tools->Options->Debugger->Symbols page.
 
 ![Add VSTS Symbol Server in VS Debugger](_img/vsdebugger1.jpg)
 

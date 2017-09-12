@@ -115,7 +115,7 @@ Additional topics of interest:
 - [Customize the web form](customize-process-form.md)
 - [Customize a process](customize-process.md)    
 - [WebLayout XML elements](../reference/weblayout-xml-elements.md)  
-- [Visual Studio Team Services Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads)
+- [VSTS Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads)
 
 ### Required permissions  
 

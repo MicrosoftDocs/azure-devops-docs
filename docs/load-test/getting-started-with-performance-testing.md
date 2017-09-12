@@ -81,7 +81,7 @@ connect Visual Studio to your VSTS account.
    - If you haven't connected to your VSTS 
      account before, add your account to the server list.
 
-     ![Click Servers to add your Visual Studio Team Services account](_img/getting-started-with-performance-testing/LoadTestConnect3.png)
+     ![Click Servers to add your VSTS account](_img/getting-started-with-performance-testing/LoadTestConnect3.png)
 
    - Enter your VSTS account name 
      (```{youraccount}.visualstudio.com```).

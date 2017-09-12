@@ -13,11 +13,11 @@ ms.date: 08/04/2016
 
 **[VSTS](quick-to-azure.md) | TFS 2017 RTM**
 
-In just a few steps you can build and deploy your Java app to Azure. This works from both the Visual Studio Team Services service and your on-premises Team Foundation Server.
+In just a few steps you can build and deploy your Java app to Azure. This works from both the VSTS service and your on-premises Team Foundation Server.
 
 ## Upload your code
 
-Upload your code to Visual Studio Team Services or your on-premises Team Foundation Server. Either push your code to Git or check in your code to TFVC.
+Upload your code to VSTS or your on-premises Team Foundation Server. Either push your code to Git or check in your code to TFVC.
 
 [!INCLUDE [temp](_shared/java-web-app-sample-link.md)]
 

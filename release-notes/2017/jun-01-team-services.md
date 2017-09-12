@@ -1,6 +1,6 @@
 ---
 title: New Visual Studio Enterprise pipeline benefit, mobile work item form GA, and source based release triggers – June 1
-description: Visual Studio Team Services release notes for June 1 2017
+description: VSTS release notes for June 1 2017
 ms.ContentId: d07ea7a5-92ec-4d13-b1ac-49180b237a97
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -18,7 +18,7 @@ This week we have something for just about everyone, with a broad set of changes
 * We also continue on our journey to make notifications great and customizable across the entire product.
 
 ##Mobile work item form general availability
-The mobile experience for work items in Visual Studio Team Services is now out of preview! We have a full end-to-end experience that includes an optimized look and feel for work items and provides an easy way to interact with items that are assigned to you, that you’re following, or that you have visited or edited recently from your phone.
+The mobile experience for work items in VSTS is now out of preview! We have a full end-to-end experience that includes an optimized look and feel for work items and provides an easy way to interact with items that are assigned to you, that you’re following, or that you have visited or edited recently from your phone.
 
 ![mobile wit](_img/06_01_01.png)
 

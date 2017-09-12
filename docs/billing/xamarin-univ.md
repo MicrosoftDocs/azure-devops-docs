@@ -29,7 +29,7 @@ or a work or school account, such as someone@fabrikam.com.
 to use for billing.  There is no cost to create an Azure subscription, which essentially is a billing account
 that gets charged when you buy something.
 
-	You may already have an Azure subscription if you use Azure, or you pay for Visual Studio Team Services or other 
+	You may already have an Azure subscription if you use Azure, or you pay for VSTS or other 
 	services through Visual Studio Marketplace.  If you don't have an Azure subscription, you can 
 	[sign up for Azure](https://portal.azure.com) 
 	before or during your first Marketplace purchase. Learn more about 

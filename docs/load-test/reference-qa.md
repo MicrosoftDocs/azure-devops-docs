@@ -411,7 +411,7 @@ For more information, see
 ### Q: How can I check the status of the Cloud-based Load Testing service?
 
 **A**: You can view the service status at the top of the 
-[Visual Studio Team Services support page](https://www.visualstudio.com/support-overview-vs) 
+[VSTS support page](https://www.visualstudio.com/support-overview-vs) 
 and on our [service blog](http://blogs.msdn.com/b/vsoservice/). 
 You can also subscribe to alerts for service status by following 
 [this post in our support forum](https://social.msdn.microsoft.com/Forums/vstudio/74fdaf92-e293-4d71-bd63-cfcc8a9dcd60/subscribe-to-alerts-about-team-foundation-service-and-elastic-load-service-status).
@@ -654,7 +654,7 @@ See [Load Test Run Settings Properties](https://msdn.microsoft.com/library/ff406
 * VS1550082
 * VS1550083
 
-[Contact Visual Studio Team Services Support](https://www.visualstudio.com/team-services/support). 
+[Contact VSTS Support](https://www.visualstudio.com/team-services/support). 
 You will have to give them your test run id.
 
 ### Q: My run was aborted because the .loadtest xml file could not be parsed. What do I do?

@@ -12,14 +12,14 @@ ms.custom: get-started-article
 ms.topic: get-started-article
 ---
 
-# Create a bug in Visual Studio Team Services using .NET client libraries
+# Create a bug in VSTS using .NET client libraries
 
 Creating a new bug (or any work item) is pretty straight forward. You just need to set the field values and send a JSON-Patch object to the REST endpoint.
 
 ## Prerequisites
 To work on this Quickstart, you'll need the following prerequisites:
 
-* A Visual Studio Team Services account
+* A VSTS account
 * A Personal Access Token, [find out how to create one](../get-started/authentication/PATs.md)
 * A C# development environment, you can use [Visual Studio](https://www.visualstudio.com/vs/)
 

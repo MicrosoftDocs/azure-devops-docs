@@ -57,7 +57,7 @@ or [Azure portal](https://portal.azure.com).
 
 ##	Add an Azure AD group to a VSTS group
 
-0.	Sign in to your Visual Studio Team Services account 
+0.	Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```).
 
 	[Why am I asked to choose between my work or school account and my personal account?](#ChooseOrgAcctMSAcct)
@@ -231,6 +231,6 @@ Find the Azure AD group, then delete that group from your VSTS account.
 ####Q:	 Where can I ask more questions or send suggestions?
 
 A: We'd love to hear from you. For help from the Microsoft Developer Community,
-visit the [Visual Studio Team Services forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=TFService).
+visit the [VSTS forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=TFService).
 For suggestions, visit
 [Visual Studio UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services).

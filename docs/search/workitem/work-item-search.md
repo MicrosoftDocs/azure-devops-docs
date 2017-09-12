@@ -1,5 +1,5 @@
 ---
-title: Search for work items in a Visual Studio Team Services account
+title: Search for work items in a VSTS account
 description: Use Work Item Search to search across all work item fields over all projects of your VSTS and TFS projects
 ms.assetid: 133EF8B9-B4F9-4057-9CB3-E745A7E0B8F5
 ms.prod: vs-devops-alm

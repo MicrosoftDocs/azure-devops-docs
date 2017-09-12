@@ -1,5 +1,5 @@
 ---
-title: Use Jenkins with Visual Studio Team Services to publish packages of binary components
+title: Use Jenkins with VSTS to publish packages of binary components
 description: Working with feeds in Jenkins-CI
 ms.assetid: FC3EC349-1F9B-42A7-B523-495F21BC73F6
 ms.prod: vs-devops-alm
@@ -14,7 +14,7 @@ ms.date: 08/10/2016
 **Team Services | TFS 2017**
 
 Visual Studio Team Services's package management works with the continuous integration tools your team already uses.
-In this [Jenkins](http://jenkins-ci.org/) walkthrough, you'll create a NuGet package and publish it to a Visual Studio Team Services feed.
+In this [Jenkins](http://jenkins-ci.org/) walkthrough, you'll create a NuGet package and publish it to a VSTS feed.
 If you need help on Jenkins setup, you can learn more on [the Jenkins wiki](https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins).
 
 <a name="setup"></a>
@@ -67,7 +67,7 @@ The easiest way to use the Team Services NuGet service is by adding the [Microso
   * Commit this change to your repo.
 
 ![Add your feed URL to nuget.config](_img/nugetconfig.png)
-* [Generate a PAT (personal access token)](https://www.visualstudio.com/en-us/news/2015/2015-jul-7-vso) for your user account. This PAT will allow the Jenkins build process to authenticate to Visual Studio Team Services as you, so be sure to protect your PAT like a password.
+* [Generate a PAT (personal access token)](https://www.visualstudio.com/en-us/news/2015/2015-jul-7-vso) for your user account. This PAT will allow the Jenkins build process to authenticate to VSTS as you, so be sure to protect your PAT like a password.
 * Save your feed URL and PAT to a text file for use later in the walkthrough.
 
 

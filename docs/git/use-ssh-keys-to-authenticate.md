@@ -1,6 +1,6 @@
 ---
 title: Connect to your Git repos with SSH | VSTS & TFS
-description: Authenticate to Visual Studio Team Services Git Repositories with SSH Keys
+description: Authenticate to VSTS Git Repositories with SSH Keys
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 

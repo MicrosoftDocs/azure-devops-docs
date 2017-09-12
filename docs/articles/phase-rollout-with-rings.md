@@ -139,7 +139,7 @@ No, rings and feature flags are symbiotic. Feature flags give you fine-grained c
 
 ![Feature flags](./_img/phase-rollout-with-rings/phase-rollout-with-rings-feature-flags.png)
 
-[LaunchDarkly](https://launchdarkly.com/microsoft/) provides an extension for Visual Studio Team Services & Team Foundation Server. It integrates with VSTS RM and gives you "run-time" control of features deployed with your ring deployment process.
+[LaunchDarkly](https://launchdarkly.com/microsoft/) provides an extension for VSTS & Team Foundation Server. It integrates with VSTS RM and gives you "run-time" control of features deployed with your ring deployment process.
 
 ## Conclusion
 

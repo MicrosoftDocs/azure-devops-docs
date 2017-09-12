@@ -1,6 +1,6 @@
 ---
-title: REST API samples for Visual Studio Team Services and Team Foundation Server
-description: REST API samples for Visual Studio Team Services and Team Foundation Server.
+title: REST API samples for VSTS and Team Foundation Server
+description: REST API samples for VSTS and Team Foundation Server.
 ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-integrate
@@ -69,7 +69,7 @@ using (var client = new HttpClient())
 
 In this example we are using two of the .Net Client Libraries. Make sure these are referenced within your .net project.
 
-[Microsoft Team Foundation Server Client](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/)
+[TFS Client](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.Client/)
 
 [Microsoft Visual Studio Services Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)
 

@@ -1,6 +1,6 @@
 ---
 title: Definition of Done | VSTS & TFS
-description: Support teams shared understanding by providing a definition for what "done" means for each column of the Kanban board when working in Visual Studio Team Services or Team Foundation Server
+description: Support teams shared understanding by providing a definition for what "done" means for each column of the Kanban board when working in VSTS or Team Foundation Server
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm
 ms.assetid: f5b9223e-5be2-4df7-a735-02f0cb59a46b

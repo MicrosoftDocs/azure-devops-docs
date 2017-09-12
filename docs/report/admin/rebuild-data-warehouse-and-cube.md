@@ -81,7 +81,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 	</tr>
 	<tr>
 	<td>Application tier</td>
-	<td>- Microsoft Team Foundation Server Application Pool</td>
+	<td>- TFS Application Pool</td>
 	</tr>
 	</table>
 

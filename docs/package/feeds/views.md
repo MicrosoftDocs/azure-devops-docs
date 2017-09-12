@@ -1,6 +1,6 @@
 ---
 title: Communicate package quality with release views
-description: Use release views to communicate the quality of a package to your consumers in Visual Studio Team Services or Team Foundation Server
+description: Use release views to communicate the quality of a package to your consumers in VSTS or Team Foundation Server
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package

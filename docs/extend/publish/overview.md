@@ -12,7 +12,7 @@ ms.date: 08/29/2016
 
 # Package, publish, unpublish, and install Team Services extensions
 
-After writing a Visual Studio Team Services extension, the next step is to package it.
+After writing a VSTS extension, the next step is to package it.
 After packaging, extensions are published, or uploaded, to the [Visual Studio Marketplace](https://marketplace.visualstudio.com), where they can be installed
 by users that the extensions are shared with. The Marketplace is a centralized, global repository for private and public extensions, integrations, and other offers from Microsoft.
 
@@ -61,13 +61,13 @@ tfx extension create --manifest-globs vss-extension.json
 ## Share
 <a name="shareextension" />
 
-Before an extension can be installed into a Visual Studio Team Services account, it must be shared with that account. Sharing is a requirement during development and testing of an extension, as it is the only way to run an extension.
+Before an extension can be installed into a VSTS account, it must be shared with that account. Sharing is a requirement during development and testing of an extension, as it is the only way to run an extension.
 
 To share an extension so it can be installed:
 
 1. Click an extension from the list of displayed items 
 2. Click the **Share** button
-3. Specify the name of the Visual Studio Team Services account to make this extension visible to.
+3. Specify the name of the VSTS account to make this extension visible to.
   - For example, to make an extension visible to the fabrikam-fiber-inc.visualstudio.com account, specify `fabrikam-fiber-inc`.
 
 ## Install 

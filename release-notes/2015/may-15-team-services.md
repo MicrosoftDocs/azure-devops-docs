@@ -1,6 +1,6 @@
 ---
 title: Build preview, updated backlog navigation, branch policies, and more... – May 15
-description: Visual Studio Team Services release notes for May 15 2015
+description: VSTS release notes for May 15 2015
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

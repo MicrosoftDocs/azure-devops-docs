@@ -59,7 +59,7 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory o
   "id": "service-endpoint-tutorial",
   "version": "0.1.1",
   "name": "Sample extension that leverages a service endpoint",
-  "description": "A sample Visual Studio Team Services extension which shows how to create a custom endpoint and dynamic build task parameters taking value from a REST API.",
+  "description": "A sample VSTS extension which shows how to create a custom endpoint and dynamic build task parameters taking value from a REST API.",
   "publisher": "francistotten",
   "targets": [
     {

@@ -27,7 +27,7 @@ address that was used to access your subscription on the legacy MSDN portal, or 
 to you by your company's Visual Studio subscriptions administrator after October 2016. This email address can be either 
 your personal Microsoft account or a "work or school account" managed by your organization with Azure Active Directory.
 
-If your Visual Studio subscription is accessed using your Microsoft account, and you're accessing other services (Visual Studio Team Services or Microsoft Azure) using your work or school account, you can link your personal account to your work or school account in order for the services to recognize you as a Visual Studio subscriber.
+If your Visual Studio subscription is accessed using your Microsoft account, and you're accessing other services (VSTS or Microsoft Azure) using your work or school account, you can link your personal account to your work or school account in order for the services to recognize you as a Visual Studio subscriber.
 
 [Link between your Microsoft account and your work or school account](link-msdn-subscription-to-organizational-account-vs.md).
 

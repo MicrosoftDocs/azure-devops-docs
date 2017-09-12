@@ -1,6 +1,6 @@
 ---
 title: Build extensions content index for VSTS and TFS  
-description: Index of building extensions for Visual Studio Team Services and Team Foundation Server
+description: Index of building extensions for VSTS and Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-extend
 ms.service: vsts-extend

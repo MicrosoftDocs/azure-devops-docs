@@ -31,7 +31,7 @@ test early, and ship faster.
 > To host your own server, 
 > learn how to [install and set up Team Foundation Server](../tfs-server/install/get-started.md).
 
-Visual Studio Team Services is free for 
+VSTS is free for 
 [up to 5 users with access to Basic features](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) 
 and for unlimited [Visual Studio subscribers](https://www.visualstudio.com/products/how-to-buy-vs) and 
 [Stakeholders who can access limited features](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs).
@@ -184,7 +184,7 @@ Or contact [Visual Studio Support](https://www.visualstudio.com/support/support-
 <!-- BEGINSECTION class="md-qanda" -->
 
 <a name="WhatIsVSO"></a>
-####Q: How can I create a Visual Studio Team Services account later?
+####Q: How can I create a VSTS account later?
 
 A:	Learn how to [sign up for Visual Studio Team Services](create-account-msa-or-work-student.md).
 
@@ -197,7 +197,7 @@ A:	Learn how to [sign up for Visual Studio Team Services](create-account-msa-or-
 [!INCLUDE [recover-password](../_shared/qa-recover-password.md)]
 
 <a name="change-location"></a>
-####Q: Can I change my Visual Studio Team Services account location?
+####Q: Can I change my VSTS account location?
 
 A:	Yes, for a better experience, 
 you can change your account's location during signup 
@@ -207,7 +207,7 @@ so that your account is closest to most users.
 
 Your account's default location is selected based on the closest 
 [Microsoft Azure region](https://azure.microsoft.com/en-us/regions) 
-where Visual Studio Team Services is available. 
+where VSTS is available. 
 
 [!INCLUDE [secure-protect-data](../_shared/qa-secure-protect-data.md)]
 

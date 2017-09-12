@@ -47,7 +47,7 @@ You use the **TFSConfig addProjectReports** command line tool to upload reports.
 2. Open a Command Prompt in administrative mode and change to the following directory:   
 
 	```
-	%programfiles%\Microsoft Team Foundation Server 15.0\Tools
+	%programfiles%\TFS 15.0\Tools
 	```
  	On a 64-bit edition of Windows, replace **%programfiles%** with **%programfiles(x86)%**.
 
@@ -89,7 +89,7 @@ You use the **tfpt** command line tool that TFS Power Tools provides.
 3. Open a Command Prompt in administrative mode and change to the directory where you installed the power tools.  
 
 	```
-	cd %programfiles%\Microsoft Team Foundation Server 2015 Power Tools
+	cd %programfiles%\TFS 2015 Power Tools
 	```
 
 On a 64-bit edition of Windows, replace **%programfiles%** with **%programfiles(x86)%**.

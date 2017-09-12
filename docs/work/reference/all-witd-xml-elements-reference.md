@@ -145,12 +145,12 @@ Upon installing or upgrading an instance of an on-premises TFS, the [default pro
 
 **For TFS 2017**: 
 ```  
-%programfiles%/Microsoft Team Foundation Server 15.0/Tools/Deploy/ProcessTemplateManagerFiles/1033
+%programfiles%/TFS 15.0/Tools/Deploy/ProcessTemplateManagerFiles/1033
 ```  
  
 **For TFS 2015**: 
 ```  
-%programfiles%/Microsoft Team Foundation Server 14.0/Tools/Deploy/ProcessTemplateManagerFiles/1033
+%programfiles%/TFS 14.0/Tools/Deploy/ProcessTemplateManagerFiles/1033
 ```  
   
 WIT definition files are stored in the WorkItem Tracking\TypeDefinitions folder.  

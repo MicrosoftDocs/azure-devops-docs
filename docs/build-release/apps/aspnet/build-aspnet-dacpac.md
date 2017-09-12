@@ -1,7 +1,7 @@
 ---
 ms.assetid: 7F0B861F-D88B-45A8-8510-19041543C49E
 title: Build your SQL server database
-description: Define a continuous integration (CI) build for your SQL server database in Visual Studio Team Services or Microsoft Team Foundation Server (TFS)
+description: Define a continuous integration (CI) build for your SQL server database in VSTS or Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge

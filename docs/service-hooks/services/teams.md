@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-marketplace
-title: Microsoft Teams with Visual Studio Team Services and Team Foundation Server
-description: Use Microsoft Teams with your Visual Studio Team Services account
+title: Microsoft Teams with VSTS and Team Foundation Server
+description: Use Microsoft Teams with your VSTS account
 ---
 
 # Microsoft Teams with Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)

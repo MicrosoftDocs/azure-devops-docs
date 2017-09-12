@@ -1,6 +1,6 @@
 ---
 title: Continuous Testing
-description: Continuous testing in Microsoft Visual Studio Team Services VSTS and Microsoft Team Foundation Server TFS
+description: Continuous testing in VSTS and TFS 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-continuous
 ms.assetid: 55B050E3-64A2-4EEA-A1DD-43700B8EC2A8

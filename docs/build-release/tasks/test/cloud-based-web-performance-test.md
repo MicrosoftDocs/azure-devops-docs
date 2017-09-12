@@ -1,7 +1,7 @@
 ---
 title: VSTS and TFS Build and Test - Cloud-based Web Performance Test
 ms.assetid: 8030BD4C-F119-4A0F-9ED5-B021C4E760CD
-description: Runs the Quick Web Performance Test with Visual Studio Team Services to easily verify your web application exists and is responsive
+description: Runs the Quick Web Performance Test with VSTS to easily verify your web application exists and is responsive
 ms.prod: vs-devops-test-continuous
 ms.technology: vs-devops-build
 ms.manager: douge
@@ -18,7 +18,7 @@ Runs the Quick Web Performance Test with Visual Studio Team Services.
 
 The task can be used in a build or release 
 definition to generate load against an application URL
-using the Visual Studio Team Services Cloud-based Load Test Service.
+using the VSTS Cloud-based Load Test Service.
 The Cloud-based Load Test Service is based in
 Microsoft Azure and can be used to test your app's 
 performance by generating load on it, and verify it

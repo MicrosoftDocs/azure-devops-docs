@@ -1,6 +1,6 @@
 ---
 title: European Datacenter & REST 1.0 - Oct 28
-description: Visual Studio Team Services release notes for October 28 2014
+description: VSTS release notes for October 28 2014
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

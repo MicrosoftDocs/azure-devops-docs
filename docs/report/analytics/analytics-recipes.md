@@ -1,6 +1,6 @@
 ---
 title: Analytics recipes | VSTS  
-description: Provides general queries for use with the Analytics service for Visual Studio Team Services 
+description: Provides general queries for use with the Analytics service for VSTS 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
 ms.assetid: 1320852A-5C62-4954-9E9D-508D670777A4

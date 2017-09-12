@@ -5,7 +5,7 @@ Team Foundation Server Proxy provides support for distributed teams to use versi
 By configuring Team Foundation Server Proxy, you can significantly reduce the bandwidth needed across wide area connections.
 In addition, you do not have to manage downloading and caching of version files; management of the files is transparent to the developer who is using the files.
 Meanwhile, any metadata exchanges and file uploads continue to appear in Team Foundation Server (TFS).
-If you use the Visual Studio Team Services to host your development project in the cloud,
+If you use the VSTS to host your development project in the cloud,
 you can use the Proxy command to not only manage the cache for projects in the hosted collection, but also to manage some of the settings used by that service.
 
 For more information about installing Team Foundation Server Proxy and initial configuration of the proxy,
@@ -46,8 +46,8 @@ see <span sdata="link"> How to: Install Team Foundation Proxy and set up a remot
 			<td><strong>/account</strong></td>
 			<td>
 				Specifies the account used as the service account for the proxy in Visual Studio Team Services.
-				This option is only used for Visual Studio Team Services in conjunction with the /change option.<br/><br/>
-				The default service account used for Visual Studio Team Services is &quot;Account Service.&quot;
+				This option is only used for VSTS in conjunction with the /change option.<br/><br/>
+				The default service account used for VSTS is &quot;Account Service.&quot;
 			</td>
 		</tr>
 		<tr>
@@ -87,11 +87,11 @@ The following example shows how to add a TFS deployment named FABRIKAM to the pr
 
     TFSConfig Proxy /add /Server:http://www.fabrikam.com:8080/tfs 
 
-The following example shows how to add a team project collection hosted on Visual Studio Team Services to the proxy list. The collection is named PhoneSaver and the account name used for Visual Studio Team Services is HelenaPetersen.fabrikam.com. Because the /account option is not specified, the default service account will be used.
+The following example shows how to add a team project collection hosted on VSTS to the proxy list. The collection is named PhoneSaver and the account name used for VSTS is HelenaPetersen.fabrikam.com. Because the /account option is not specified, the default service account will be used.
 
     TFSConfig Proxy /add /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver 
 
-The following example shows how to change the service account used by the proxy for the team project collection hosted on Visual Studio Team Services. The collection is named PhoneSaver, the account name used for Visual Studio Team Services is HelenaPetersen.fabrikam.com, and the service account used by the proxy is being changed to "My Proxy Service Account". Because the account name contains spaces, quotation marks are used to enclose the name.
+The following example shows how to change the service account used by the proxy for the team project collection hosted on Visual Studio Team Services. The collection is named PhoneSaver, the account name used for VSTS is HelenaPetersen.fabrikam.com, and the service account used by the proxy is being changed to "My Proxy Service Account". Because the account name contains spaces, quotation marks are used to enclose the name.
 
     TFSConfig Proxy /change /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver
 		/account:"My Proxy Service Account"

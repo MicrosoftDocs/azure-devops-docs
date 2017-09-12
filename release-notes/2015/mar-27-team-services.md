@@ -1,6 +1,6 @@
 ---
 title: Application Insights - save search page, pause export and alerts on export fail - Mar 27
-description: Visual Studio Team Services release notes for March 27 2015
+description: VSTS release notes for March 27 2015
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

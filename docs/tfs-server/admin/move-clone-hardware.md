@@ -176,7 +176,7 @@ If your deployment uses SharePoint Products, you've already installed the same v
 
 Perform the next set of steps on the new application-tier server if you intend to continue using the original TFS instance. These steps are necessary to avoid the risk of corruption of one or both deployments. If both servers are live, you could end up with corruption, particularly if they are pointing to the same SharePoint or reporting resources.
 
-1. Open a Command Prompt window as an administrator and change directories to Drive:\%programfiles%\Microsoft Team Foundation Server 12.0\Tools. Open a Command Prompt window and enter:
+1. Open a Command Prompt window as an administrator and change directories to Drive:\%programfiles%\TFS 12.0\Tools. Open a Command Prompt window and enter:
 
 2. Run the [TFSConfig PrepareClone](../command-line/tfsconfig-cmd.md#prepareclone) command to remove information about scheduled backups, SharePoint, and reporting resources. 
 
@@ -223,7 +223,7 @@ Perform the next set of steps on the new application-tier server if you intend t
 
 You must update the service account for Team Foundation Server (TFSService) and the data sources account (TFSReports). Even if these accounts have not changed, you must update the information to help ensure that the identity and the format of the accounts are appropriate for the new server.
 
-1.  Open a Command Prompt window as an administrator and change directories to *Drive*:\\%programfiles%\\Microsoft Team Foundation Server 12.0\\Tools.
+1.  Open a Command Prompt window as an administrator and change directories to *Drive*:\\%programfiles%\\TFS 12.0\\Tools.
 
 2.  At the command prompt, type the following command to add the service account for Team Foundation, where *DatabaseName* is the name of the configuration database (by default, TFS\_Configuration):
 

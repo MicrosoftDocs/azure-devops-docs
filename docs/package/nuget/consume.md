@@ -1,6 +1,6 @@
 ---
 title: Consume NuGet packages in Visual Studio
-description: Consume NuGet packages from Visual Studio Team Services or Team Foundation Server by adding a feed to Visual Studio
+description: Consume NuGet packages from VSTS or Team Foundation Server by adding a feed to Visual Studio
 ms.assetid: BF919E28-65C2-40E3-8A49-5BF0DA3DE598
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package

@@ -40,7 +40,7 @@ from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscr
 
 A:	This might happen because users must 
 sign in with Microsoft accounts 
-unless your Visual Studio Team Services account 
+unless your VSTS account 
 controls access with Azure Active Directory (Azure AD). 
 If your account is connected to Azure AD, 
 users must be directory members to get access. 
@@ -65,10 +65,10 @@ A:	This might happen for [different reasons](faq-add-delete-users.md#stopped-fea
 
 <a name="RemovePeople"></a>
 
-####Q:	How do I remove users from my Visual Studio Team Services account?
+####Q:	How do I remove users from my VSTS account?
 
 A:	Learn [how to delete users](delete-account-users.md) 
-across all team projects in your Visual Studio Team Services account. 
+across all team projects in your VSTS account. 
 If you paid for more users, but don't need their account access
 anymore, you must reduce your paid users to avoid charges.
 

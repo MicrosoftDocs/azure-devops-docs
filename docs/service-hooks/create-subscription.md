@@ -1,5 +1,5 @@
 ---
-title: Subscribe to Visual Studio Team Services events from another service | Visual Studio Team Services REST APIs
+title: Subscribe to VSTS events from another service | VSTS REST APIs
 description: Use service hooks to set up actions to take when specific events occur in Visual Studio Team Services.
 toc: Hide
 ms.assetid: 0614F217-4F4E-45DC-A50C-B9FF81F8A5BD
@@ -31,7 +31,7 @@ For a complete set of supported consumer services and actions, see the [consumer
 ## Create a subscription for a team project
 
 To create a subscription for an event, choose which consumer to use and the action you want to take. You will create an HTTP POST 
-request to the subscriptions URL for the Visual Studio Team Services account with the event, consumer and action to 
+request to the subscriptions URL for the VSTS account with the event, consumer and action to 
 take for the subscription.
 
 ### Before you begin

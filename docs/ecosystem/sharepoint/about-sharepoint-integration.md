@@ -29,7 +29,7 @@ With TFS 2013, TFS-SharePoint integration required you to install the TFS Extens
 However, you should consider the following before moving forward with this integration:
 * You can create your SharePoint site using SharePoint itself. Microsoft Teams also creates a team SharePoint site for sharing information
 * TFS 2017 Update 2 and later versions support [Dashboards](../../report/dashboards.md).  Dashboards provide a very practical replacement for the TFS-SharePoint dashboards.  
-* TFS dashboards offer an extensive [catalog of widgets](../../report/widget-catalog.md) which replace all of the SharePoint web parts offered by this integration. Additionally, you can find widgets developed by our partners from the [Visual Studio Team Services Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&category=All%20categories&sortBy=Relevance).
+* TFS dashboards offer an extensive [catalog of widgets](../../report/widget-catalog.md) which replace all of the SharePoint web parts offered by this integration. Additionally, you can find widgets developed by our partners from the [VSTS Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&category=All%20categories&sortBy=Relevance).
 * Starting with TFS 2018, we are deprecating the tightly-coupled TFS-SharePoint integration in favor of integration using public APIs and extensibility frameworks.
 
 You may want to ask yourself whether the integration benefits outweigh the costs of configuration. 
@@ -62,4 +62,4 @@ We will update this topic as we provide additional SharePoint integrations.
 - [Configure SharePoint Integration: TFS 2017 and earlier versions](./configure-sharepoint-tfs-2017-earlier.md)
 - [Discontinue SharePoint integration: TFS 2017 and earlier versions](./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md)
 - [Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016](./deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md)
-- [Visual Studio Team Services Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&category=All%20categories&sortBy=Relevance)
+- [VSTS Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&category=All%20categories&sortBy=Relevance)

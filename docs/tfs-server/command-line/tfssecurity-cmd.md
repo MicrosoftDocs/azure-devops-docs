@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 
 You can use the **TFSSecurity** command-line tool to create, modify, and delete groups and users in Visual Studio Team Foundation Server (TFS), in addition to modifying permissions for groups and users. For information about how to perform these tasks in the user interface, see <span sdata="link"> Manage users or groups </span>.
 
-This server-level tool is located in Drive:\\%programfiles%\\Microsoft Team Foundation Server 12.0\\Tools on the TFS application-tier server.
+This server-level tool is located in Drive:\\%programfiles%\\TFS 12.0\\Tools on the TFS application-tier server.
 
 > Even if you are logged on with administrative credentials,
 > you must open an elevated Command Prompt to perform this function.

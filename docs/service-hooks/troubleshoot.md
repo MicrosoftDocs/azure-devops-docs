@@ -2,7 +2,7 @@
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-marketplace
 title: Troubleshoot your service hooks integrations | Visual Studio Team Services
-description: Troubleshoot problems with the services you have integrated with your Visual Studio Team Services account
+description: Troubleshoot problems with the services you have integrated with your VSTS account
 ms.assetid: dcf00653-24c5-4ab6-b9e8-19ec098bbb66
 ms.manager: douge
 ms.author: elbatk

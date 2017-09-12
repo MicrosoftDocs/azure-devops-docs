@@ -20,7 +20,7 @@ This page guides you through creating your first extension for Visual Studio Tea
 and give you the knowledge needed to get started on your own unqiue extension.
 
 In this tutorial we'll create a custom hub that displays the results of a query. A <b>hub</b> is, simply put, a type of contribution that displays
-a web page. You can have multiple hubs in Visual Studio Team Services and they live in <b>hub groups</b>. 
+a web page. You can have multiple hubs in VSTS and they live in <b>hub groups</b>. 
 
 We'll create a new hub that displays in the Work hub group, after the Backlogs and Queries hubs.
 
@@ -31,7 +31,7 @@ We'll create a new hub that displays in the Work hub group, after the Backlogs a
 ## Preparation and required setup for this tutorial
 In order to create extensions for Team Services, there are some prerequisite software and tools you'll need:
 
-- A **Visual Studio Team Services account**, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
+- A **VSTS account**, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
 - **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.

@@ -72,7 +72,7 @@ By default, all project contributors in an account have access to the hosted que
 
 ### I need more agents. What can I do?
 
-A: The hosted pool provides all Visual Studio Team Services accounts with a single agent and a limited number of free minutes each month. If you need more minutes, or need to run more than one build or release concurrently, then you can buy [concurrent pipelines](../../concepts/licensing/concurrent-pipelines-ts.md).
+A: The hosted pool provides all VSTS accounts with a single agent and a limited number of free minutes each month. If you need more minutes, or need to run more than one build or release concurrently, then you can buy [concurrent pipelines](../../concepts/licensing/concurrent-pipelines-ts.md).
 
 ### I'm looking for the hosted XAML build controller. Where did it go?
 

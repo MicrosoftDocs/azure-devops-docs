@@ -1,6 +1,6 @@
 ---
 title: Git & TFVC updates plus improved test traceability … – June 20
-description: Visual Studio Team Services release notes for June 17 2016
+description: VSTS release notes for June 17 2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
@@ -108,7 +108,7 @@ You can now trigger a SonarQube analysis in the Gradle build task by checking **
 
 ##Release – Passing oauth tokens to scripts
 
-You might often need to run custom PS scripts in Release Management, which invoke REST APIs to create work items or query for more information about a build. You can now check an option in the environment to make a Visual Studio team Services OAuth token available to such scripts.
+You might often need to run custom PS scripts in Release Management, which invoke REST APIs to create work items or query for more information about a build. You can now check an option in the environment to make a VSTS OAuth token available to such scripts.
 
 ![OAuth token option](_img/6_17_12.png)
 

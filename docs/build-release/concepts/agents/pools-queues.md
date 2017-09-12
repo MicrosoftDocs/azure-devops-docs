@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 title: Agents, pools, and queues
-description: Agent pools and queues for build and release management in Visual Studio Team Services and Team Foundation Server
+description: Agent pools and queues for build and release management in VSTS and Team Foundation Server
 ms.technology: vs-devops-build
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: douge
@@ -113,7 +113,7 @@ Ask the owner of your VSTS account to grant you permission to use the queue. See
 
 ### I need more hosted build resources. What can I do?
 
-A: The hosted pool provides all Visual Studio Team Services accounts with a single hosted build agent and a limited number of free build minutes each month. If you need more hosted build resources, or need to run more than one build concurrently, then you can either:
+A: The hosted pool provides all VSTS accounts with a single hosted build agent and a limited number of free build minutes each month. If you need more hosted build resources, or need to run more than one build concurrently, then you can either:
 
 * [Deploy your own on-premises build agents](agents.md).
 * [Buy additional hosted pipelines](../../../billing/buy-more-build-vs.md#buy-build-release).

@@ -1,6 +1,6 @@
 ---
 title: Card colors and personal access tokens – Jul 7
-description: Visual Studio Team Services release notes for July 7 2015
+description: VSTS release notes for July 7 2015
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

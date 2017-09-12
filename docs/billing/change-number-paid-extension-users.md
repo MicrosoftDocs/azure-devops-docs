@@ -24,7 +24,7 @@ You'll need VSTS
 > reduce all your paid users to zero (0). 
 > [How do you bill changes in users?](../marketplace/faq-extensions.md#bill-period)
 
-0.	Sign in to your Visual Studio Team Services account 
+0.	Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```).
 
 0. Go to **Users**.

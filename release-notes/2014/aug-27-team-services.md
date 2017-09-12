@@ -1,6 +1,6 @@
 ---
 title: Stakeholder licensing – Aug 27
-description: Visual Studio Team Services release notes for August 27 2014
+description: VSTS release notes for August 27 2014
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

@@ -47,7 +47,7 @@ VSTS and TFS offer [built-in dashboards](../../../report/dashboards.md). Each VS
 
 ![TFS/VSTS Dashboards](./_img/tfsdashboard.jpg)
 
-We will continue to invest in our built-in dashboards solution. We continue to develop widgets to provide instant insights into your data. Additionally, you can find widgets developed by our partners in the [Visual Studio Team Services Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&category=All%20categories&sortBy=Relevance). 
+We will continue to invest in our built-in dashboards solution. We continue to develop widgets to provide instant insights into your data. Additionally, you can find widgets developed by our partners in the [VSTS Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&category=All%20categories&sortBy=Relevance). 
 
 In the future, we will provide ways of displaying our built-in dashboards on SharePoint pages.
 

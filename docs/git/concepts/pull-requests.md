@@ -16,7 +16,7 @@ Pull requests combine the review and merge of your code into a single collaborat
 Once you're done fixing a bug or new feature in a branch, create a new pull request.
 Add the members of the team to the pull request so they can review and vote on your changes.
 
-Visual Studio Team Services has a [rich pull request experience](../pull-requests.md) that's easy to use and scales to your needs.
+VSTS has a [rich pull request experience](../pull-requests.md) that's easy to use and scales to your needs.
 Use pull requests to review works in progress and get early feedback on changes.
 There's no commitment to merge the changes as the owner can abandon the pull request at any time.
 

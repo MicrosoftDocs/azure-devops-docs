@@ -1,5 +1,5 @@
 ---
-title: Variable groups for Visual Studio Team Services and Team Foundation Server
+title: Variable groups for VSTS and Team Foundation Server
 description: Understand variable groups in Microsoft Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
 ms.prod: vs-devops-alm

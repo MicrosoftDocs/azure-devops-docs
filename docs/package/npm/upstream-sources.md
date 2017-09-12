@@ -1,6 +1,6 @@
 ---
 title: Use packages from npmjs.com
-description: Use packages from npmjs.com in Visual Studio Team Services via upstream sources or scopes
+description: Use packages from npmjs.com in VSTS via upstream sources or scopes
 ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package

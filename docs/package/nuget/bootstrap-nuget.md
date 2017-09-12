@@ -1,6 +1,6 @@
 ---
 title: Set up a multi-developer NuGet environment
-description: Set up the NuGet developer environment for Package Management in Visual Studio Team Services or Team Foundation Server
+description: Set up the NuGet developer environment for Package Management in VSTS or Team Foundation Server
 ms.assetid: EA79E902-C679-4AA7-BE33-E865F593EB06
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package

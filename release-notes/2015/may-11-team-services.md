@@ -1,6 +1,6 @@
 ---
 title: Application Insights: Public Preview; iOS and Android; performance counters and unhandled exceptions for Java apps; and time range selection
-description: Visual Studio Team Services release notes for May 11 2015
+description: VSTS release notes for May 11 2015
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

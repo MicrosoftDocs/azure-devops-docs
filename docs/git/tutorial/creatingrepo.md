@@ -59,7 +59,7 @@ Create a new Git repo for your new Visual Studio solution by selecting **Create 
 ### From an existing solution
 
 To create a repo from an existing solution not in version control, select the **Publish** button in the bottom-right of the lower status bar ![Visual Studio publish button](../_img/share-your-code-in-git-vs/publish_status_bar.png).
-This creates a new Git repo in the same directory as your solution and opens up the **Publish** view in Team Explorer so you can [push](pushing.md) your code to Visual Studio Team Services or 
+This creates a new Git repo in the same directory as your solution and opens up the **Publish** view in Team Explorer so you can [push](pushing.md) your code to VSTS or 
 another remote Git repository.
 
 ![Publishing a solution to a new remote Git repository in Visual Studio Team Explorer](_img/vspublish.gif)

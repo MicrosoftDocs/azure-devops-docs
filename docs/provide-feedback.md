@@ -35,7 +35,7 @@ Here are the quick-access links to use:
 
 
 <!---
-<blockquote style="font-size: 13px"><b>Note: </b>This topic primarily supports users of Visual Studio Team Services and Team Foundation Server. For similar content for using Visual Studio, see [Talk to us](https://msdn.microsoft.com/en-us/library/b8akas30.aspx)   
+<blockquote style="font-size: 13px"><b>Note: </b>This topic primarily supports users of VSTS and Team Foundation Server. For similar content for using Visual Studio, see [Talk to us](https://msdn.microsoft.com/en-us/library/b8akas30.aspx)   
 </blockquote>  
 -->
  

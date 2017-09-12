@@ -1,6 +1,6 @@
 ---
 title: View and compare your Visual Studio load test runs 
-description: Get started with web performance tests - view and compare your Visual Studio Team Services load test runs
+description: Get started with web performance tests - view and compare your VSTS load test runs
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-load-test
 ms.service: vsts-testing

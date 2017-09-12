@@ -174,7 +174,7 @@ In the example below the most important part of the error message is:
 
 You encountered an error while trying to connect.   
 
-> **The Analytics Service is in preview and only available to select customers of Visual Studio Team Services at this time.** If your account has been enabled please contact the Microsoft employee who set up the service for assistance.
+> **The Analytics Service is in preview and only available to select customers of VSTS at this time.** If your account has been enabled please contact the Microsoft employee who set up the service for assistance.
 
 **A:** Data Connector is built on top of the Analytics Service, which is currently in the preview stage.
 

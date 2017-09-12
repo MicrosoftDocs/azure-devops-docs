@@ -1,6 +1,6 @@
 ---
 title: Team Foundation Service updates - Nov 19
-description: Visual Studio Team Services release notes for November 19 2012
+description: VSTS release notes for November 19 2012
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

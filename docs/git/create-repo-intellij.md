@@ -1,5 +1,5 @@
 ﻿---
-title: Visual Studio Team Services Plugin for IntelliJ IDEA and Android Studio | VSTS & TFS
+title: VSTS Plugin for IntelliJ IDEA and Android Studio | VSTS & TFS
 description: Intro to the IntelliJ plugin available for Visual Studio Team Services.
 ms.assetid:
 ms.prod: vs-devops-alm
@@ -11,12 +11,12 @@ ms.author: sdanie
 ms.date: 09/08/2017
 ---
 
-# Visual Studio Team Services Plugin for IntelliJ IDEA and Android Studio
+# VSTS Plugin for IntelliJ IDEA and Android Studio
 
 #### VSTS | TFS 2015 & TFS 2017  
 
 IntelliJ IDEA is an IDE produced by JetBrains. You can find out more about it at [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/).
-The Visual Studio Team Services Plugin for IntelliJ allows you to connect to your Git repositories on VSTS and Team Foundation Server (TFS) in a seamless and intuitive way.
+The VSTS Plugin for IntelliJ allows you to connect to your Git repositories on VSTS and Team Foundation Server (TFS) in a seamless and intuitive way.
 You can also use this plugin to import projects into VSTS or create pull requests in your VSTS/TFS Git repository.
 
 In this guide, we show you how to create a VSTS Git repo using the VSTS web portal, add some sample code, and then clone the repo and create pull requests all from within IntelliJ IDEA.

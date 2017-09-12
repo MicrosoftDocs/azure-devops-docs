@@ -93,7 +93,7 @@ The project portal is a site associated with a team project for the purposes of 
 3.  Open a Command Prompt in administrative mode and change to the directory where you installed the power tools.  
   
     ```  
-    cd %programfiles%\Microsoft Team Foundation Server 2013 Power Tools  
+    cd %programfiles%\TFS 2013 Power Tools  
     ```  
   
      On a 64-bit edition of Windows, replace `%programfiles%` with %`programfiles(x86)%`.  

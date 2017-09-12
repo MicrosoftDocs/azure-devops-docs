@@ -84,7 +84,7 @@ importing single TFS collections as single Team Services accounts. If you need t
 based migrations.
 
 ##Related notes 
-- [About Visual Studio Team Services and Team Foundation Server](about-vsts-tfs.md)  
+- [About VSTS and Team Foundation Server](about-vsts-tfs.md)  
 - [Pricing, Team Services](https://www.visualstudio.com/team-services/pricing/)
 - [Pricing, TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
 

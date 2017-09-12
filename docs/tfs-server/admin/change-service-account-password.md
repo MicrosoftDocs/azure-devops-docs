@@ -64,7 +64,7 @@ To change the password of *TFSService*, you must log on to the application-tier 
 
 1.  On the application-tier server, open a Command Prompt window and change directories to the directory that contains the **TFSConfig** utility.
 
-    By default, this utility is located in *Drive*:\\Program Files\\Microsoft Team Foundation Server 12.0\\Tools.
+    By default, this utility is located in *Drive*:\\Program Files\\TFS 12.0\\Tools.
 
 2.  At the command line, type **TFSConfig Accounts /UpdatePassword /accountType:ApplicationTier /account:***AccountName* **/password:***NewPassword*, and then choose ENTER.
 
@@ -114,7 +114,7 @@ To configure TFS to use a different account as the service account for Team Foun
 
 1.  On the application-tier server, open a Command Prompt window and change directories to the directory that contains the **TFSConfig** utility.
 
-    By default, this utility is located in *Drive*:\\Program Files\\Microsoft Team Foundation Server 12.0\\Tools.
+    By default, this utility is located in *Drive*:\\Program Files\\TFS 12.0\\Tools.
 
 2.  At the command line, type **TFSConfig Accounts /change /accountType:ApplicationTier /account:***AccountName* **/password:***NewPassword*, and then choose ENTER.
 

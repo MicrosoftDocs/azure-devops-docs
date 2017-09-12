@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Team Services - A Build and Deployment Automation Case Study for World Wide Time Keeping
+title: VSTS - A Build and Deployment Automation Case Study for World Wide Time Keeping
 description: Automate builds and releases with Visual Studio Team Services (VSTS), a case study for World Wide Time Keeping
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles

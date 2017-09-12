@@ -1,7 +1,7 @@
 ---
 title: Team Services & TFS documentation
 layout: HubPage
-description: Get started page for Visual Studio Team Services and Team Foundation Server (TFS) Documentation
+description: Get started page for VSTS and Team Foundation Server (TFS) Documentation
 ms.assetid: F15A468A-E869-4DB6-AED5-5EB2E39D6E3A
 breadcrumb_path: "/docs/abc/toc.json"
 ms.prod: vs-devops-alm
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 ---
 
 <div class="hubpage">
-  <h1>Visual Studio Team Services and TFS</h1>
+  <h1>VSTS and TFS</h1>
     <div class="row">
     <div class="col-sm-12 col-md-12 col-md-offset-2 title">
       Continuous Integration and Delivery

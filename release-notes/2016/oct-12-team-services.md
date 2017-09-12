@@ -1,6 +1,6 @@
 ---
 title: New navigation, Test & Feedback extension GA, and cherry-pick – Oct 12
-description: Visual Studio Team Services release notes for October 12 2016
+description: VSTS release notes for October 12 2016
 ms.ContentId: 6f6e8dae-afd4-485f-acb2-63b71913dfaa
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -163,7 +163,7 @@ We have added a new contribution point (“ms.vss-test-web.test-plan-pivot-tabs�
 ![contribution point](_img/10_12_11.png)
 
 ###Visual Studio subscribers automatically use their free license
-Visual Studio Team Services will now automatically recognize Visual Studio subscribers as they log into their Team Services account. This will override the Stakeholder access level as well as free up a Basic access level for the account.
+VSTS will now automatically recognize Visual Studio subscribers as they log into their Team Services account. This will override the Stakeholder access level as well as free up a Basic access level for the account.
 
 For this reason, there is no longer a need to assign users the Eligible Visual Studio/MSDN subscriber from the drop down menu.
 

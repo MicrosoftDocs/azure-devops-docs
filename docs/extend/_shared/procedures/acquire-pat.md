@@ -1,4 +1,4 @@
-0. Sign in to your Visual Studio Team Services account 
+0. Sign in to your VSTS account 
 (```https://{youraccount}.visualstudio.com```).
 
 0.	From your home page, open your profile. 

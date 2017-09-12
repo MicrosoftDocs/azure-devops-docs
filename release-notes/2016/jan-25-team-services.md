@@ -1,6 +1,6 @@
 ---
 title: Dashboard widget SDK, create branch from work item, test visualizations and so much more – Jan 25
-description: Visual Studio Team Services release notes for January 25 2016
+description: VSTS release notes for January 25 2016
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge

@@ -49,7 +49,7 @@ To get started, you'll first need to clone your repo to your local machine.  Onc
 
 	![Click Home, then Open in Visual Studio](_img/get-started/GoHomeOpenInVisualStudio.png)
 
-0. Sign in to Visual Studio Team Services from Visual Studio.
+0. Sign in to VSTS from Visual Studio.
 
 0. Clone the repository to your computer.
 

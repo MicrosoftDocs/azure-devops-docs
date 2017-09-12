@@ -1,5 +1,5 @@
 ---
-title: Version Control - Move Git repositories between Visual Studio Team Services Team Projects
+title: Version Control - Move Git repositories between VSTS Team Projects
 description: Moving Git Repositories from one Team Services Team Project to another
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -71,7 +71,7 @@ The `--mirror` option is used with both the clone and push command, and ensures 
 
 #### Validate the new repository
 
- Switch to the Visual Studio Team Services web portal and validate the new repository and the history in the **CODE** hub.
+ Switch to the VSTS web portal and validate the new repository and the history in the **CODE** hub.
 
 ![Repo Validation in CODE Explorer](./_img/move-git-repos-between-team-projects/MoveRepo-Validate.png)
 

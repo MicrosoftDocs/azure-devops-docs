@@ -14,7 +14,7 @@ ms.date: 04/28/2017
 
 **VSTS**
 
-Visual Studio Team Services offers these
+VSTS offers these
 [additional team services](https://www.visualstudio.com/team-services/pricing):
 
 Create, queue, and monitor cross-platform builds and releases with these [Build & Release task-based services](../build-release/concepts/licensing/concurrent-pipelines-ts.md).

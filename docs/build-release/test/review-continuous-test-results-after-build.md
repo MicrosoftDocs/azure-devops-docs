@@ -1,5 +1,5 @@
 ---
-title: Review continuous test results after a build Microsoft Visual Studio Team Services VSTS and Microsoft Team Foundation Server TFS
+title: Review continuous test results after a build VSTS and TFS 
 description: Review continuous test results after a build
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-continuous

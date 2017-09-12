@@ -12,7 +12,7 @@ ms.date: 08/22/2016
 
 # Service hooks in Team Services
 
-Service hooks enable you to perform tasks on other services when events happen in your Visual Studio Team Services projects. For example, create a card in Trello 
+Service hooks enable you to perform tasks on other services when events happen in your VSTS projects. For example, create a card in Trello 
 when a work item is created or send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services 
 as a more efficient way to drive activities when events happen in your projects.
 

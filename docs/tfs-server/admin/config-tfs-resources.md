@@ -80,7 +80,7 @@ you want to manage.
 
     -   From the command line, open a Command Prompt window running as
         an administrator, and change directories to the TFS tools
-        directory (by default, *Drive*:\%programfiles%\Microsoft Team Foundation Server 12.0\Tools), and enter ```TfsMgmt.exe```.
+        directory (by default, *Drive*:\%programfiles%\TFS 12.0\Tools), and enter ```TfsMgmt.exe```.
 
 **Q: When I open the administration console, why do some of the fields say "Loading"?**
 
@@ -108,7 +108,7 @@ If the administration console provides isn't available, for example
 during a TFS upgrade, you can view the file version number of the **Microsoft.TeamFoundation.Admin.dll** file.
 
 1.  Open Windows Explorer (or File Explorer), and browse to \\Program
-    Files\\Microsoft Team Foundation Server 12.0\\Tools.
+    Files\\TFS 12.0\\Tools.
 
 2.  Expand the sub-menu for **Microsoft.TeamFoundation.Admin.dll**, and then
     choose **Properties**.

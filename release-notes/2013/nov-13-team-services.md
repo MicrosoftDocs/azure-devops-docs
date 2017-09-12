@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Online updates - Nov 13
-description: Visual Studio Team Services release notes for November 13 2013
+description: VSTS release notes for November 13 2013
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.manager: douge
