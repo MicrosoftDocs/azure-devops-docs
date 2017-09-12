@@ -66,7 +66,7 @@ Then, select the number of users and select **Continue.**
 
 Finally, select **Confirm** and then **Assign to users.**
 
-For further help on the purchasing process, check out the documentation [here](/vsts/marketplace/install-vsts-extensions).
+For further help on the purchasing process, check out the documentation [here](/vsts/marketplace/install-vsts-extension).
 
 ## Assign Package Management in Team Services
 

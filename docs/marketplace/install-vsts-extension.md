@@ -17,7 +17,7 @@ ms.date: 01/10/2017
 To add new features and capabilities to your VSTS account, 
 install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). 
 You can install [free, preview, or paid](./faq-extensions.md#difference) extensions, 
-and you can [start extension trials](https://www.visualstudio.com/docs/setup-admin/team-services/try-additional-features-vs), 
+and you can [start extension trials](/vsts/billing/try-additional-features-vs), 
 if they're offered. 
 
 > [!TIP]
@@ -68,7 +68,7 @@ install or buy the extension.
 	expand **Buy**, and select **Install for paid users**. 
 
 	**Start Trial** appears only if the extension offers a trial. 
-	Learn [how to try extensions](https://www.visualstudio.com/docs/setup-admin/team-services/try-additional-features-vs).
+	Learn [how to try extensions](/vsts/billing/try-additional-features-vs).
 
 	<img alt="Install or buy the extension" src="_img/get-vsts-extensions/test-manager-extension.png" style="border: 1px solid #CCCCCC" />
 

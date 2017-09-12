@@ -20,6 +20,6 @@ To create test plans in the Test hub, you'll need to install the
 [Test Manager extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web). 
 Some [Visual Studio subscribers](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) 
 can use this extension for free, but users with Basic access will need paid extension access before they can use Test Manager. 
-Learn [how to get extensions for VSTS](/vsts/marketplace/install-vsts-extensions) or 
+Learn [how to get extensions for VSTS](/vsts/marketplace/install-vsts-extension) or 
 [how to get extensions for TFS](/vsts/marketplace/get-tfs-extensions). Also, learn 
 [how to buy access to the TFS Test hub](/vsts/billing/buy-access-tfs-test-hub).

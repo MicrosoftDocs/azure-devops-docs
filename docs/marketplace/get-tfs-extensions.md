@@ -510,8 +510,8 @@ is available only for Team Services (targets = Microsoft.Visualstudio.Services.C
 #### Q: Why can't I upload extensions to TFS?
 
 A: You must be a member of the 
-[Team Foundation Administrators group](https://www.visualstudio.com/docs/setup-admin/add-administrator-tfs#server) 
-with [**Edit instance-level information** permissions](https://www.visualstudio.com/docs/setup-admin/permissions#server) 
+[Team Foundation Administrators group](../tfs-server/add-administrator-tfs.md#server) 
+with [**Edit instance-level information** permissions](../security/permissions.md#server) 
 for the Team Foundation Server where you want to upload extensions.
 
 <a name="extension-access"></a>

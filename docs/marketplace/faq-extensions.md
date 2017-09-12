@@ -125,7 +125,7 @@ then change the Azure subscription that's linked to your Team Services account.
 
 **Set up billing with a new Azure subscription**
 0.	Use a credit card to create a new [Pay-As-You-Go Azure subscription](https://azure.microsoft.com/en-us/offers/ms-azr-0003p/).
-0.	Follow these steps to [change your Azure subscription](https://www.visualstudio.com/docs/setup-admin/team-services/set-up-billing-for-your-account-vs#change-azure-subscription) 
+0.	Follow these steps to [change your Azure subscription](/vsts/billing/set-up-billing-for-your-account-vs#change-azure-subscription) 
 for your Team Services account.
 
 [!INCLUDE [azure-bill-larger](../_shared/qa-azure-bill-larger.md)]

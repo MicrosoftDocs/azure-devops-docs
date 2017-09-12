@@ -78,7 +78,7 @@ public static async void GetProjects()
 ```
 <br />
 If you don't have a VSTS account,
-you can [set one up for free](https://www.visualstudio.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services). 
+you can [set one up for free](/vsts/accounts/create-account-msa-or-work-student). 
 
 Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
 
