@@ -3,7 +3,7 @@ title: Install Microsoft Release Management deployment agent for VS 2015 and TFS
 description: Install deployment agent and set up machines for an environment for VS 2015 and TFS 2015
 ms.assetid: 0C70DBD0-A1A4-4E20-AFA2-F4EC7BF7FA2A
 ms.prod: vs-devops-alm
-ms.technology: vs-sub-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/04/2016

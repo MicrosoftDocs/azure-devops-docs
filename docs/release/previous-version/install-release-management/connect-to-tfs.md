@@ -3,7 +3,7 @@ title: Connect Microsoft Release Management server/client to TFS
 description: Connect Release Management to TFS using server and client for VS 2015 and TFS 2015
 ms.assetid: CEB0875B-F42A-45F3-B743-D6C522F7E5A6
 ms.prod: vs-devops-alm
-ms.technology: vs-sub-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/04/2016
