@@ -2,7 +2,7 @@
 title: Disconnect your VSTS account from your Azure AD
 description: Azure Active Directory (Azure AD) - Control access to Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
+ms.technology: vs-devops-setup
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.manager: douge
 ms.author: estfan

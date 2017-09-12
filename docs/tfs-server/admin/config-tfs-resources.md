@@ -6,7 +6,7 @@ ms.manager: douge
 ms.author: billchi
 ms.date: 08/31/2016
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-tfs
+ms.technology: tfs-on-prem
 ms.topic: get-started-article
 ---
 

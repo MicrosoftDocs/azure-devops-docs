@@ -2,7 +2,7 @@
 title: Why add work or school accounts to Visual Studio with MSDN subscriptions
 description: Why add work or school accounts to Visual Studio with MSDN subscriptions
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-billing
+ms.technology: vs-devops-setup
 ms.assetid: 01e4ac42-3d2b-419b-ad17-1d0bb5d96f85
 ms.manager: douge
 ms.author: estfan

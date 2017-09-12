@@ -2,7 +2,7 @@
 title: Add user accounts and assign access level in VSTS
 description: Add users and assign access levels in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
+ms.technology: vs-devops-setup
 ms.assetid: 90f45ebb-88e2-46bf-b4cf-083281923c77
 ms.manager: douge
 ms.author: estfan

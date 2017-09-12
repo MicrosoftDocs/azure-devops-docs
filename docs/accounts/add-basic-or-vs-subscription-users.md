@@ -3,7 +3,7 @@ title: Add more VSTS users with Basic features or Visual Studio subscriptions
 description: Add more VSTS users with Basic features or Visual Studio subscriptions
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
+ms.technology: vs-devops-setup
 ms.assetid: f36c2fbd-7683-4620-9636-97144c7779f2
 ms.manager: douge
 ms.author: estfan

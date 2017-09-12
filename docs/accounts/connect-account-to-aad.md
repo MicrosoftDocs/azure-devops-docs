@@ -2,7 +2,7 @@
 title: Connect VSTS account to Azure Active Directory (Azure AD)
 description: Connect VSTS account to Azure Active Directory (Azure AD)
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
+ms.technology: vs-devops-setup
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.manager: douge
 ms.author: estfan

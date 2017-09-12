@@ -2,7 +2,7 @@
 title: VSTS - Access with Azure AD groups | Visual Studio Team Services
 description: VSTS - Access with Azure Active Directory (Azure AD, AAD) groups in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
+ms.technology: vs-devops-setup
 ms.assetid: 882E6E07-F407-478A-9DCC-9324493CBE11
 ms.manager: douge
 ms.author: estfan

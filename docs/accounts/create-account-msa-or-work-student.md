@@ -3,7 +3,7 @@ title: Create your VSTS account with a Microsoft account or a work/school/organi
 description: Create your VSTS account with a personal Microsoft account or a work/school/organization account
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
+ms.technology: vs-devops-setup
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.manager: douge
 ms.author: estfan

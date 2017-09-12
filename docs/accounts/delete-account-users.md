@@ -2,7 +2,7 @@
 title: Delete users from your VSTS account
 description: Delete users from your VSTS account
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
+ms.technology: vs-devops-setup
 ms.assetid: 6be2e639-2d40-4406-8f34-2a08018b4383
 ms.manager: douge
 ms.author: estfan

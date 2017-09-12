@@ -3,7 +3,7 @@ title: Add users to a team project and groups
 description: Add users to a team project and groups
 ms.assetid: 3cfefdd2-b161-4e04-8dc0-e2deeac50262
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-accounts
+ms.technology: vs-devops-setup
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2017
