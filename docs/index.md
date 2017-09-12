@@ -210,6 +210,7 @@ ms.date: 07/26/2017
                                         <li><a class="barLink" href="/vsts/extend/index">Build Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/integrate/index">Build Apps</a></li>
                                         <li><a class="barLink" href="/rest/api/vsts/">REST APIs</a></li>
+                                        <li><a class="barLink" href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a</li>
                                     </ul>
                                     <h3>Marketplace</h3>
                                     <ul>
@@ -956,6 +957,25 @@ ms.date: 07/26/2017
                         </ul>
                     </li>
                     <li>
+                        <a href="https://www.visualstudio.com/en-us/docs/integrate/extensions/reference/client/core-sdk">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="/media/logos/logo_TS.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>TypeScript APIs</h3>
+                                            <p>Interact with VSTS through TypeScript APIs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
                         <a href="#marketplace">Marketplace</a>
                         <ul id="marketplace" class="cardsA">
                             <li>
@@ -1099,6 +1119,17 @@ ms.date: 07/26/2017
                                     </li>
                                     <li>
                                         <a class="barLink" href="/rest/api/vsts/">API reference</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>TypeScript libraries</h3>
+                                <ul class="noBullet">
+                                    <li>
+                                        <a class="barLink" href="https://github.com/Microsoft/vss-web-extension-sdk">Get Started</a>
+                                    </li>
+                                    <li>
+                                        <a class="barLink" href="https://www.visualstudio.com/en-us/docs/integrate/extensions/reference/client/core-sdk">API reference</a>
                                     </li>
                                 </ul>
                             </li>
