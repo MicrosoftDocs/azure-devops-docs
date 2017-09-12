@@ -13,6 +13,10 @@ ms.date: 09/05/2017
   
 
 
+## Overview 
+- [About SharePoint integration](about-sharepoint-integration.md)
+- [Discontinue SharePoint integration: TFS 2017 and earlier versions](deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md)
+
 ## 5-Minute Quickstarts  
 - [Share information using the SharePoint portal](../../report/sharepoint-dashboards/share-information-using-the-project-portal.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json)
 - [Manage documents and document libraries](../../report/sharepoint-dashboards/manage-documents-and-document-libraries.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json)  
@@ -20,9 +24,11 @@ ms.date: 09/05/2017
 ## Step-by-Step Tutorials
 
 - [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json)    
-
 - [Configure or redirect process guidance](../../report/sharepoint-dashboards/configure-or-redirect-process-guidance.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json)
 
+
+## Concepts
+- [Features removed when disabling SharePoint integration](./deprecation/features-removed-when-disabling-sharepoint-integration.md)
 
 
 

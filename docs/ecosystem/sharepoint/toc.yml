@@ -4,7 +4,8 @@
   items:
   - name: About SharePoint integration
     href: about-sharepoint-integration.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
-  - name: Deprecation overview for SharePoint integration (InProgress) 
+  - name: Discontinue the TFS 2017 (and earlier) SharePoint integration
+    href: ./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md 
 - name: Quickstarts
   items:
   - name: Share information using the SharePoint portal
@@ -19,35 +20,43 @@
     href: ../../report/sharepoint-dashboards/configure-or-redirect-process-guidance.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
 - name: Concepts
   items:
-  - name: Excel reports
-    href: ../../report/excel/excel-reports.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
-  - name: Project portal dashboards (TFS)
+  - name: Features removed when disabling SharePoint integration
+    href: ./deprecation/features-removed-when-disabling-sharepoint-integration.md
   - name: Upload and refresh Excel reports
     href: ../../report/sharepoint-dashboards/upload-refresh-excel-reports.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
-    href: ../../report/sharepoint-dashboards/project-portal-dashboards.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
-  - name: Features removed from Team Explorer (disabled TFS/SharePoint integration) (InProgress) 
-  - name: Features removed from SharePoint portal (disabled TFS/SharePoint integration) (InProgress) 
 - name: How-to guides
   items:
-  - name: Configure SharePoint integration
+  - name: "TFS 2018 & later versions"
     items:
-    - name: Configure enterprise app definition
-      href: ../../tfs-server/install/sharepoint/config-enterprise-app-def.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
-    - name: Install on same server
-      href: ../../tfs-server/install/sharepoint/install-sharepoint.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
-    - name: Install on different server
-      href: ../../tfs-server/install/sharepoint/setup-remote-sharepoint.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
-    - name: Verify SharePoint
-      href: ../../tfs-server/install/sharepoint/verify-sharepoint.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
-    - name: Move SharePoint to new hardware
-      href: ../../tfs-server/install/sharepoint/move-sharepoint-new-hardware.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
-  - name: Migrate from SharePoint 2013 with TFS integration to SharePoint 2016 (InProgress) 
-  - name: Disable SharePoint integration
+    - name: Disable SharePoint integration after TFS 2018 upgrade
+      href: ./deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md 
+    - name: Update an Excel worksheet on a SharePoint site
+      href: ./deprecation/update-excel-chart.md
+  - name: "TFS 2017 & earlier versions"
     items:
-    - name: Disable SharePoint integration after TFS 2018 upgrade (InProgress)  
-    - name: Install and run the TFS Disconnector for SharePoint (InProgress)  
-    - name: Upgrade TFS/SharePoint Integration for SharePoint 2013 to SharePoint 2016 (InProgress)  
-    - name: Update an Excel worksheet (InProgress)  
+    - name: Configure SharePoint integration
+      href: ./configure-sharepoint-tfs-2017-earlier.md
+      items:
+      - name: Install on same server
+        href: ../../tfs-server/install/sharepoint/install-sharepoint.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
+      - name: Install on different server
+        href: ../../tfs-server/install/sharepoint/setup-remote-sharepoint.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
+      - name: Configure enterprise app definition
+        href: ../../tfs-server/install/sharepoint/config-enterprise-app-def.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
+      - name: Verify SharePoint
+        href: ../../tfs-server/install/sharepoint/verify-sharepoint.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
+      - name: Move SharePoint to new hardware
+        href: ../../tfs-server/install/sharepoint/move-sharepoint-new-hardware.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
+    - name: Manage SharePoint integration
+      items:
+      - name: Add SharePoint products to TFS
+        href: /vsts/tfs-server/admin/add-sharepoint-to-tfs?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
+      - name: Modify or remove access between SharePoint web app and TFS
+        href: /vsts/tfs-server/admin/modify-remove-access-shareport-tfs?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
+      - name: Configure SharePoint Server 2010 or 2007 for dashboards
+        href: /vsts/tfs-server/admin/config-ent-sharepoint0710-dashboards?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
+    - name: Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016
+      href: ./deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md 
 - name: Troubleshooting
   items:
   - name: "Resolve conflicts & errors"
@@ -74,7 +83,7 @@
       href: ../../report/sharepoint-dashboards/test-dashboard-agile-cmmi.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
     - name: Release (Scrum)
       href: ../../report/sharepoint-dashboards/release-scrum.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
-  - name: Excel reports 
+  - name: Excel reports displayed on SharePoint dashboards 
     items:
     - name: Excel reports
       href: ../../report/excel/excel-reports.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
@@ -131,3 +140,9 @@
       href: ../../report/excel/testing-gaps-excel-report-cmmi.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json 
     - name: Excel reports (CMMI)
       href: ../../report/excel/excel-reports-cmmi.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json  
+- name: Resources
+  items:
+  - name: Microsoft Teams
+    href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams
+  - name: OneDrive for Business sync client
+    href: https://support.office.com/en-us/article/Get-started-with-the-new-OneDrive-sync-client-in-Windows-615391c4-2bd3-4aae-a42a-858262e42a49
