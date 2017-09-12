@@ -10,10 +10,6 @@ ms.date: 09/07/07
 ms.topic: 
 ---
 
-<!---
-NOTE: I add this topic as a starting page for configuring the old SharePoint integration. Much like this [this overview topic](https://msdn.microsoft.com/en-us/library/ms253053(v=vs.100).aspx). Have we ported this topic to the new docs site? Or do we need to include links to the old msdn documentation? 
--->
-
 # Configure TFS-SharePoint integration
 
 [!INCLUDE [temp](./_shared/about-sharepoint-deprecation.md)]
@@ -31,7 +27,7 @@ The TFS/SharePoint integration for TFS 2017 and earlier versions requires you to
 * From the TFS Management Console on TFS, [configure your TFS server to grant access to the SharePoint server](../../tfs-server/install/sharepoint/config-enterprise-app-def.md?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json).
 * From the TFS Management Console on SharePoint, [configure your SharePoint server to grant access to your TFS Server](/vsts/tfs-server/admin/config-ent-sharepoint0710-dashboards?toc=/vsts/ecosystem/sharepoint/toc.json&bc=/vsts/ecosystem/sharepoint/breadcrumb/toc.json).
 * If you plan to take advantage of Excel Charts on your SharePoint sites:
-  * On SharePoint 2010, you need to [configure Office SharePoint Server](https://msdn.microsoft.com/en-us/library/ee462863(v=vs.100).aspx).
+  * On SharePoint 2010, you need to [configure Office SharePoint Server](https://msdn.microsoft.com/library/ee462863%28v=vs.100%29.aspx).
   * On SharePoint 2013, you need to [configure Excel Services](../../tfs-server/install/sharepoint/install-sharepoint.md).
 
 
@@ -43,8 +39,8 @@ The following topics should be sufficient to help you through the general proces
 - [Managing SharePoint Sites](https://msdn.microsoft.com/library/ms252503.aspx): Describes various administrative tasks for SharePoint Products, including how to create a SharePoint Web application and site collection for use with Team Foundation Server.
 - [Extensions for SharePoint Products](https://msdn.microsoft.com/library/bb552177.aspx): Describes the templates that must be installed for SharePoint Products if it is not installed on the same server that is running the application-tier services for Team Foundation.
 - [Upgrading SharePoint Products for Team Foundation Server](https://msdn.microsoft.com/library/bb909691.aspx)Describes the options for upgrading the version of SharePoint Products that supports your deployment of Team Foundation Server.
-- [Add Integration with SharePoint Products to a Deployment of Team Foundation Server](https://msdn.microsoft.com/en-us/library/ee462861.aspx): Describes how to add SharePoint Products to a deployment of Team Foundation Server in an environment with full trust and little to no restrictions on permissions granted between the two programs.
-- [Integrate Team Foundation Server with SharePoint Products Without Administrative Permissions](https://msdn.microsoft.com/en-us/library/ee462864.aspx): Describes how to add SharePoint Products to a deployment of Team Foundation Server in an environment that has restricted access or other security requirements and restrictions on what permissions can be granted between the two programs.
+- [Add Integration with SharePoint Products to a Deployment of Team Foundation Server](https://msdn.microsoft.com/library/ee462861.aspx): Describes how to add SharePoint Products to a deployment of Team Foundation Server in an environment with full trust and little to no restrictions on permissions granted between the two programs.
+- [Integrate Team Foundation Server with SharePoint Products Without Administrative Permissions](https://msdn.microsoft.com/library/ee462864.aspx): Describes how to add SharePoint Products to a deployment of Team Foundation Server in an environment that has restricted access or other security requirements and restrictions on what permissions can be granted between the two programs.
 - [Configure Settings for Dashboard Compatibility](https://msdn.microsoft.com/library/ee462863.aspx): Describes how to configure a deployment of Microsoft Office SharePoint Server 2007 to support reports and dashboards in Team Foundation Server.
 
 

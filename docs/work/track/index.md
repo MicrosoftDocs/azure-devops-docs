@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 07/26/2017
+ms.date: 09/12/2017
 ---
 
 # Queries
@@ -28,14 +28,13 @@ List bugs, user stories, or other work items based on field criteria you specify
  
 ## 5-Minute Quickstarts  
 
-- [View and run a query (In Progress)](view-run-query.md)
 - [Perform an adhoc search](search-box-queries.md)
 
 ## Step-by-Step Tutorials
 
-- [Organize queries (In Progress)](organize-view-run-queries.md)
-- [Triage work items (In Progress)](triage-work-items.md)
 - [Edit a query](using-queries.md)
+- [Bulk modify (web)](../backlogs/bulk-modify-work-items.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
+
 
 ## Samples
 - [Example search box queries](search-box-queries.md)
@@ -51,16 +50,16 @@ List bugs, user stories, or other work items based on field criteria you specify
 
 
 ## How-to Guides
-- [Change column options](/vsts/work/how-to/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json)  
-- [Email/print work items](/vsts/work/how-to/email-work-items?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json) 
-- [Filter backlogs, boards, & queries](/vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json)  
+- [Change column options](/vsts/work/how-to/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)  
+- [Email/print work items](/vsts/work/how-to/email-work-items?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json) 
+- [Filter backlogs, boards, & queries](/vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)  
 
 
 ## Reference 
 - [Query fields, operators & macros](query-operators-variables.md)      
-- [Work item field index](/vsts/work/guidance/work-item-field?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json) 
-- [WIQL syntax](/vsts/reference/wiql-syntax?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json)
-- [Permissions and access for work tracking](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/track/toc.json&bc=/vsts/work/breadcrumb/toc.json)
+- [Work item field index](/vsts/work/guidance/work-item-field?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json) 
+- [WIQL syntax](/vsts/reference/wiql-syntax?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
+- [Permissions and access for work tracking](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
  
 ## Resources
 - [Backlogs](../backlogs/index.md)

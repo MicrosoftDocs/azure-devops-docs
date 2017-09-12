@@ -23,7 +23,7 @@ This topic provides instructions on how to disable integration on a SharePoint 2
 ## Installation and configuration
 During installation, if SharePoint and TFS are on the same server, the installer will display the following warning message:
 
-> TFS 2018 and later versions no longer support integration with SharePoint. If you have configured TFS integration with SharePoint, then you will need to disconnect to the TFS Integration on each SharePoint server, or your TFS SharePoint sites will not work. For more information, carefully review the information at: https://go.microsoft.com/fwlink?LinkId=852977 before continuing.
+> TFS 2018 and later versions no longer support integration with SharePoint. If you have configured TFS integration with SharePoint, then you will need to disconnect to the TFS Integration on each SharePoint server, or your TFS SharePoint sites will not work. For more information, carefully review the information provided in [Discontinue SharePoint integration: TFS 2017 and earlier versions](discontinue-pre-tfs-2017-sharepoint-integration.md) before continuing.
 
 The installer only displays this message if it detects SharePoint is installed on the same machine as TFS. It checks for SharePoint 2010 and 2013. If an earlier version exists, the installer will not display the above warning. 
 
