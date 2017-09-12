@@ -3,7 +3,7 @@ ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
 title: Deploy a Java app to a Linux VM
 description: Set up continuous deployment (CD) of a Java app to a Linux Virtual Machine from Release Management in Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 01/02/2017

@@ -3,7 +3,7 @@ ms.assetid: 1A6903E4-B0B3-426E-9E07-67492ADB1F42
 title: Provision and manage virtual machines in VMware vCenter Server
 description: Provision and manage VMs in VMware vCenter Server from Release Management in VSTS or TFS
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

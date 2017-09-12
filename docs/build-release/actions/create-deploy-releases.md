@@ -2,7 +2,7 @@
 title: Create and deploy a release with Release Management
 description: Create and deploy a release with Release Management in Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.assetid: DCAD8C16-242E-4672-A5C6-5894C25CAF11
 ms.manager: douge
 ms.author: ahomer

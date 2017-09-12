@@ -3,7 +3,7 @@ title: Release Definition Preview Editor
 description: Use the release definition editor in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 00624D7C-1FF0-49B8-9117-A1F6276D777F
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 05/05/2017

@@ -2,7 +2,7 @@
 title: NuGet restore, pack, and publish
 description: How to use NuGet packages when building code in Visual Studio Team Services
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.technology: vs-devops-build
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
 ms.manager: douge
 ms.author: elbatk

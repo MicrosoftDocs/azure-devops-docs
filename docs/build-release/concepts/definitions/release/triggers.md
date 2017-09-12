@@ -3,7 +3,7 @@ title: Triggers in Release Management
 description: Understand triggers in Microsoft Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

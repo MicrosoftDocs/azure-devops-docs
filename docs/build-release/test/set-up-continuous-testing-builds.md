@@ -2,7 +2,7 @@
 title: Set up continuous testing for your builds
 description: Set up continuous testing for your builds in VSTS and TFS 
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-test-continuous
+ms.technology: vs-devops-build
 ms.assetid: 7849EF41-BE1A-4342-B1DA-583DB6DD1831
 ms.manager: douge
 ms.author: ahomer

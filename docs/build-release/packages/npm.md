@@ -3,7 +3,7 @@ title: Use Team Build to install and publish npm packages
 description: Working with npm packages and feeds in Team Build
 ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: amullans
 ms.date: 11/07/2016

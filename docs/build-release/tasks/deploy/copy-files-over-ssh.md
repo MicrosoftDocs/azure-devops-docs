@@ -2,7 +2,7 @@
 title: Copy Files Over SSH task
 description: Copy Files Over SSH build and release task for Microsoft VSTS and Microsoft Team Foundation Server
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-release 
+ms.technology: vs-devops-build 
 ms.assetid: 7ff495cf-2d1f-4baa-a052-d176bd507ef4
 ms.manager: douge
 ms.author: ahomer
