@@ -3,7 +3,7 @@ title: Use the Dir Command to display contents of TFVC directory
 description: Displays all or some of the contents of the server for Team Foundation version control using the Dir command
 ms.assetid: 1e226700-a685-4c42-970b-fa6fd764726f
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
+ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

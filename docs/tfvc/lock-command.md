@@ -3,7 +3,7 @@ title: Use the Lock Command to lock or unlock a TFVC file or folder
 description: Lock or unlock files or folder under TFVC version control using the Lock Command
 ms.assetid: 5b62627b-fdb3-4832-a387-811dcc2808e3
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
+ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

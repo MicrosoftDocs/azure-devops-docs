@@ -3,7 +3,7 @@ title: Retrieve a file using the TFVC View Command
 description: Retrieve a file using the TFVC View Command for VSTS or TFS
 ms.assetid: d67fcb55-6f54-434f-ba05-4564f976b8d9
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
+ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

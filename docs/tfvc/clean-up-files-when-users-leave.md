@@ -3,7 +3,7 @@ title: Clean Up Files When Users Leave
 description: Clean Up Files When Users Leave
 ms.assetid: 7e8249cc-2933-4caa-8bee-ea93a3aff01a
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
+ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

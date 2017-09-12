@@ -3,7 +3,7 @@ title: Edit Check-In Policies
 description: Edit Check-In Policies
 ms.assetid: 3bc445f1-d354-4991-9381-f10739b5d0fe
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
+ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/18/2016

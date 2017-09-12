@@ -3,7 +3,7 @@ title: Control Access to Team Foundation Version Control
 description: Control Access to Team Foundation Version Control
 ms.assetid: cccf50be-5503-4155-974b-c75b57888603
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
+ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016
