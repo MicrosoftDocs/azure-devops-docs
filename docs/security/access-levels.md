@@ -1,7 +1,7 @@
 ---
 title: Understand what access levels are supported in VSTS & TFS 
 description: Understand how access levels are used to support stakeholder, basic, advanced, or VS Enterprise  
-ms.technology: vs-devops-search
+ms.technology: vs-devops-admin
 ms.prod: vs-devops-alm
 ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
 ms.manager: douge

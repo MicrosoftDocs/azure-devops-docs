@@ -2,7 +2,7 @@
 title: Permissions and groups reference for VSTS & TFS
 description: Manage groups, security, and permissions in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-search
+ms.technology: vs-devops-admin
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
 ms.manager: douge

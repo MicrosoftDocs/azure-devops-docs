@@ -2,7 +2,7 @@
 title: Upgrade Walkthrough On-premises
 description: Walkthrough of a standard upgrade scenario
 ms.prod: vs-devops-alm
-ms.technology: tfs-on-prem
+ms.technology: vs-devops-admin
 ms.assetid: aa4c0088-6a0e-4bdd-801c-a7a4eaa15bf2
 ms.manager: douge
 ms.author: elbatk

@@ -3,7 +3,7 @@ title: View permissions
 description: View permissions for yourself or a team member 
 ms.assetid:  
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-search
+ms.technology: vs-devops-admin
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2017

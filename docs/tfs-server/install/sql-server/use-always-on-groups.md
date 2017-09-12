@@ -6,7 +6,7 @@ ms.manager: douge
 ms.author: elbatk
 ms.date: 09/01/2016
 ms.prod: vs-devops-alm
-ms.technology: tfs-on-prem
+ms.technology: vs-devops-admin
 ---
 
 # Use SQL Server Always-on Availability Groups with Team Foundation Server
