@@ -4,7 +4,6 @@ description: Undo command
 ms.assetid: e10ca7c5-98d5-4c51-99fa-74b4eb7ceb49
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

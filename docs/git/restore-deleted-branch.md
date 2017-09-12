@@ -4,7 +4,6 @@ description: Use the branches page to restore a deleted Git branch in Team Servi
 ms.assetid:
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.manager: jepling
 ms.author: kangan
 ms.date: 08/11/2017

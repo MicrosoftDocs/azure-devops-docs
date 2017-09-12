@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
 title: Visual Studio Marketplace
 description: Describes the new Visual Studio Marketplace
 ms.assetid: 87B662CC-6003-4B4A-9617-05ECBB6AC055

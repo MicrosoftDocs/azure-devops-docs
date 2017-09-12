@@ -4,7 +4,6 @@ description: Manual and exploratory testing - Share steps between test cases
 ms.assetid: 5b7b1bfa-d958-442d-ab90-a0339b8baf0a
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
-ms.service: vsts-testing
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

@@ -4,7 +4,6 @@ description: Use the branches page to lock a branch in VSTS or TFS, preventing p
 ms.assetid: 9eecbacc-e3f2-44cb-887e-6c886001d2b6
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/23/2016

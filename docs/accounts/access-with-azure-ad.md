@@ -4,7 +4,6 @@ description: Azure Active Directory (Azure AD) - Control access to Visual Studio
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
 ms.assetid: c9aecaaf-9dfb-4877-84b4-60da253e3dc2
 ms.manager: douge
 ms.author: estfan

@@ -4,7 +4,6 @@ description: Check out and edit files
 ms.assetid: eb404d63-c448-4994-9416-3e6d50ec554a
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

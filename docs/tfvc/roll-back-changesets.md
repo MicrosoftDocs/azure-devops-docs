@@ -4,7 +4,6 @@ description: Roll back changesets
 ms.assetid: 11864092-7a1d-4810-ae01-148afbaa7852
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

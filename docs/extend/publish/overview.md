@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-extend
-ms.service: vsts-extend
 title: Package, publish, & unpublish extensions | Visual Studio Team Services
 description: An overview of packaging, publishing, unpublishing, and sharing an extension for Visual Studio Team Services.
 ms.assetid: 77b385a2-069a-4704-9a17-ad9f79a36f17

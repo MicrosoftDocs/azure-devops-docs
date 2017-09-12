@@ -4,7 +4,6 @@ description: Manual and exploratory testing - Guidance on Microsoft Test Manager
 ms.assetid: 3ED737AC-6310-472D-8C54-4FF4FEFE66C9
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
-ms.service: vsts-testing
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

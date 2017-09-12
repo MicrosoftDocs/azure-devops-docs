@@ -4,7 +4,6 @@ description: Create new Git repos using Visual Studio or command line init
 ms.assetid: 83c20dac-85c6-4fa0-93b5-912d5477246a
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie

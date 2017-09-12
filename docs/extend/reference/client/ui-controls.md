@@ -4,7 +4,6 @@ description: Use these controls in your extension for Visual Studio Team Service
 ms.assetid: ccb6413e-ca29-4f3d-8f1d-caf896706b10
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-api
-ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

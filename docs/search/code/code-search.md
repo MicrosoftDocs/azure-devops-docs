@@ -4,7 +4,6 @@ description: Get started with Code Search in VSTS and TFS
 ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-cod
-ms.service: vsts-collaboration
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: douge

@@ -4,7 +4,6 @@ description: Learn how versioning works for REST APIs for VSTS and TFS
 ms.assetid: 5fc6efd4-9947-40f2-b4f6-9695a24de87c
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

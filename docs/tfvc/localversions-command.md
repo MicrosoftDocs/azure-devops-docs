@@ -4,7 +4,6 @@ description: LocalVersions Command
 ms.assetid: 5531edc7-0333-43eb-bea0-59db9bc35c33
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

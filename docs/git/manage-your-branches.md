@@ -4,7 +4,6 @@ description: Find your work and search for branches using the branches page in V
 ms.assetid: 17722c33-e156-49f1-acad-5fcf4bc3c4fc
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/23/2016

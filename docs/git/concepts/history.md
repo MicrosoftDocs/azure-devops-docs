@@ -4,7 +4,6 @@ description: Overview of Git history
 ms.assetid: 0094b6c0-d841-48e6-bb5d-82596198ef08
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.manager: douge
 ms.author: sdanie
 ms.date: 06/16/2017

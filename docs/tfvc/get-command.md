@@ -4,7 +4,6 @@ description: Get files or folders under TFVC version control using the Get comma
 ms.assetid: f374dfcb-9c1b-4cab-9a20-3c81d29593a3
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

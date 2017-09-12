@@ -3,7 +3,6 @@ title: Troubleshooting deleting or restoring VSTS acounts
 description: Troubleshooting deleting or restoring VSTS acounts
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
 ms.assetid: 12cffcaf-295a-4931-9844-81a12c512158
 ms.manager: douge
 ms.author: estfan

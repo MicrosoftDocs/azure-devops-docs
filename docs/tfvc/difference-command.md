@@ -4,7 +4,6 @@ description: Difference Command
 ms.assetid: d7bf3b53-b0b8-4b57-a9ce-5a475b715e1d
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

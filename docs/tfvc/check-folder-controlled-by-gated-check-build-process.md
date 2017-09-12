@@ -4,7 +4,6 @@ description: Check in to a folder that is controlled by a gated check-in build p
 ms.assetid: 28fabf92-d3e0-43bb-96b5-7e5c10baa336
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

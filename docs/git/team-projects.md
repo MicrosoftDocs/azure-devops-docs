@@ -5,7 +5,6 @@ ms.assetid: F1DE1F34-50BD-49A6-BF67-D27F884944F4
 toc: show
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/04/2016

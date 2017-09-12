@@ -2,7 +2,6 @@
 title: Troubleshooting Visual Studio Subscriptions 
 description: Troubleshooting Visual Studio Subscriptions
 ms.technology: vsts-sub-billing
-ms.service: vsts-admin
 ms.assetid: d32c0b7a-a9f8-4629-9b54-f115c2adc4e2
 ms.manager: douge
 ms.author: elbatk

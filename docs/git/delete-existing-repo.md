@@ -4,7 +4,6 @@ description: Remove an existing Git repo in VSTS or Team Foundation Server team 
 ms.assetid: 271f8473-e77d-4a95-80d9-0bd347de7533
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 12/15/2016

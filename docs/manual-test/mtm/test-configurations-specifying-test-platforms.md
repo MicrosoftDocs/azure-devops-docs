@@ -4,7 +4,6 @@ description: Manual and exploratory testing - Test configurations, specifying te
 ms.assetid: 40d4a0f6-5978-404d-9627-fa81e950d718
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
-ms.service: vsts-testing
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

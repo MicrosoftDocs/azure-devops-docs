@@ -4,7 +4,6 @@ description: Release your app to Microsoft Azure or on-premises without using de
 ms.assetid: 3C4A0EA1-C4ED-4674-8E9F-AE54D6DA05C0
 ms.prod: vs-devops-alm
 ms.technology: vs-sub-release
-ms:service: vs-rm
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/04/2016

@@ -4,7 +4,6 @@ description: Add a custom build task.
 ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-extend
-ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/22/2016

@@ -4,7 +4,6 @@ description: Manual and exploratory testing - Plan manual tests with Microsoft T
 ms.assetid: 809F112E-062F-466A-A8AB-84A87431533D
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
-ms.service: vsts-testing
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

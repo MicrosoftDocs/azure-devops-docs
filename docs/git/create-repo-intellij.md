@@ -4,7 +4,6 @@ description: Intro to the IntelliJ plugin available for Visual Studio Team Servi
 ms.assetid:
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie

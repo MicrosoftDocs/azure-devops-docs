@@ -4,7 +4,6 @@ description: Use Git commit to save your work into Git version control with Visu
 ms.assetid: 223c0064-06ec-433e-8ec2-d73a5435cf23
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie

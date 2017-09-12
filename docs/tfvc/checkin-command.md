@@ -4,7 +4,6 @@ description: Checkin command
 ms.assetid: 90b18c7c-b0ae-4f46-829f-3a4471614086
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

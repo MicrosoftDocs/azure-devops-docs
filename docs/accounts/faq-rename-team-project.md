@@ -3,7 +3,6 @@ title: Troubleshooting renaming a team project
 description: Troubleshooting renaming a team project
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
 ms.assetid: befe4a1c-90da-425d-a377-436fe73c21c6
 toc: show
 ms.manager: douge

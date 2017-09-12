@@ -4,7 +4,6 @@ description: Troubleshooting paid extensions trials for Visual Studio Team Servi
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-billing
-ms.service: vsts-admin
 ms.assetid: 4a6f0af1-aee7-404a-a566-da7922127c69
 ms.manager: douge
 ms.author: estfan

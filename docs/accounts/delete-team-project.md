@@ -4,7 +4,6 @@ description: Delete or remove a team project from Visual Studio Team Services (V
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
 ms.manager: douge
 ms.author: estfan
 ms.date: 08/11/2016

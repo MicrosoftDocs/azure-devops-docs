@@ -4,7 +4,6 @@ description: Use personal access tokens to get started with the REST APIs for Vi
 ms.assetid: 255E1E2B-9CB2-4FC3-8495-12DB4149A449
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

@@ -4,7 +4,6 @@ description: View the branch hierarchy of a team project
 ms.assetid: 7ecab78e-f9f5-43d1-982f-b300ee1c4c16
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

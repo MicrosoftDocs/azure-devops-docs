@@ -4,7 +4,6 @@ description: Share code in TFVC using Eclipse
 ms.assetid: 181CB50F-44D3-4BA4-8E89-ADB9CB87DEB6
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: routlaw

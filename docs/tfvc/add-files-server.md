@@ -4,7 +4,6 @@ description: Add files to the server
 ms.assetid: 9b457eb0-9cdf-438d-935d-ceac7ce2201a
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

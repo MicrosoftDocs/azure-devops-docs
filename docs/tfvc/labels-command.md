@@ -4,7 +4,6 @@ description: Labels Command
 ms.assetid: 7772bc3d-7c43-47d8-ba5c-eee89aeed3ce
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

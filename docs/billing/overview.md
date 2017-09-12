@@ -4,7 +4,6 @@ description: VSTS billing overview
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-billing
-ms.service: vsts-admin
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.manager: douge
 ms.author: estfan

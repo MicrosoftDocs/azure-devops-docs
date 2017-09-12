@@ -4,7 +4,6 @@ description: Advanced options for Code Search in VSTS and Team Foundation Server
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-cod
-ms.service: vsts-collaboration
 ms.manager: douge
 ms.author: douge
 ms.date: 08/04/2016

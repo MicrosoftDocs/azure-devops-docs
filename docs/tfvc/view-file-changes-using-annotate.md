@@ -4,7 +4,6 @@ description: View file changes using annotate
 ms.assetid: 34e29de4-0972-4e32-9d3d-26dc09f00713
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

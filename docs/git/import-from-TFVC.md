@@ -4,7 +4,6 @@ description: Search your Git repo in VSTS or TFS for a specific file or folderIm
 ms.assetid: cf1a4dc8-7143-4b0e-8a43-1680533fb3cb
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.manager: douge
 ms.author: atinb
 ms.date: 04/04/2017

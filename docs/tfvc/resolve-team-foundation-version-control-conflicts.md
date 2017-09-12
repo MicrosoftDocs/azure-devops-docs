@@ -4,7 +4,6 @@ description: Resolve Team Foundation Version Control conflicts
 ms.assetid: 61cae295-0864-4ae9-8327-9bd1dd14cae9
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

@@ -4,7 +4,6 @@ description: Share code in TFVC using Xcode
 ms.assetid: 582BE341-2026-4C83-8F2B-552A37561DBB
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: routlaw

@@ -4,7 +4,6 @@ description: Describes how to extend work item tracking, including adding an act
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-extend
-ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/22/2016

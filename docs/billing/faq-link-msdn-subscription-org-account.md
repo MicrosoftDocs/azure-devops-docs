@@ -3,7 +3,6 @@ title: Troubleshooting linking work or school accounts to MSDN subscriptions
 description: Troubleshooting linking work or school accounts to MSDN subscriptions
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-billing
-ms.service: vsts-admin
 ms.assetid: e018c9fc-dfda-488c-a43e-33af6a78932b
 ms.manager: douge
 ms.author: estfan

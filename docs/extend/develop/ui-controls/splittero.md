@@ -4,7 +4,6 @@ description: Use the splitter control to have splitted and resizable containers 
 ms.assetid: 1EE1DD70-0C64-4B65-8F7F-175A9385041A
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-extend
-ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

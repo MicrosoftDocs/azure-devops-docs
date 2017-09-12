@@ -4,7 +4,6 @@ description: Rename or move files and folders using Team Foundation Version Cont
 ms.assetid: 90839209-cb51-4c00-ae19-08e7343093ea
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

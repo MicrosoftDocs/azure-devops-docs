@@ -4,7 +4,6 @@ description: Branch Command
 ms.assetid: 2e075024-9830-4373-a3d4-ac6a194d133f
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

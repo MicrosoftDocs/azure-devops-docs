@@ -4,7 +4,6 @@ description: Merges Command
 ms.assetid: dfa1c139-028d-4329-aa03-0f9845337f82
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

@@ -4,7 +4,6 @@ description: How dates work in Git
 ms.assetid: c5e233e2-cc84-4ca6-8ca3-8eb6d686533a
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.manager: douge
 ms.author: robrodbe
 ms.date: 06/16/2017

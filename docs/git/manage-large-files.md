@@ -4,7 +4,6 @@ description: Recommendations on how to manage large binary files in Git, Visual 
 ms.assetid: 57ad13a3-9178-4f31-b776-79f32b1afa58
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/04/2016

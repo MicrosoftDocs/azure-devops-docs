@@ -4,7 +4,6 @@ description: Explore branching strategies and explain how to decide amongst them
 ms.assetid: C9659CD5-CC5D-4522-9DB7-B887F361819F
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc 
-ms.service: vsts-code
 ms.manager: willys
 ms.date: 09/09/2017
 ms.author: willys

@@ -4,7 +4,6 @@ description: How to set permissions to grant or restrict access to select build,
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
 ms.manager: douge
 ms.author: douge
 ms.date: 08/04/2017

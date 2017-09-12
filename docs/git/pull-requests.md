@@ -4,7 +4,6 @@ description:  Conduct a code review in a Git with Visual Studio VSTS or TFS, cre
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/17/2016

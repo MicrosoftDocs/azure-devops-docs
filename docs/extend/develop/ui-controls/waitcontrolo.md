@@ -4,7 +4,6 @@ description: Use the wait control to display progress message for long running o
 ms.assetid: 175EDE3B-6989-4485-8FEC-014F6380D44F
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-extend
-ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

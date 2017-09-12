@@ -4,7 +4,6 @@ description: Release your app continuously to Microsoft Azure environments with 
 ms.assetid: 40DF8A8C-2D94-4127-BE79-C0B8386960C6
 ms.prod: vs-devops-alm
 ms.technology: vs-sub-release
-ms:service: vs-rm
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/04/2016

@@ -8,7 +8,6 @@ manager: douge
 editor: ''
 
 ms.assetid:
-ms.service: vsts
 ms.workload: web
 ms.tgt_pltfrm: na
 ms.devlang: na

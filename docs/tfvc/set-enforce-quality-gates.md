@@ -4,7 +4,6 @@ description: Set and Enforce Quality Gates
 ms.assetid: bdc5666e-6cf0-45b2-a0a1-133c3f61e852
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
 title: Publish your extension
 description: Walks you through the steps to publish an extension.
 ms.assetid: CAE083A4-E719-4BE1-A4B4-813199C6C1A6

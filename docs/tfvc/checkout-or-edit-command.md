@@ -4,7 +4,6 @@ description: Checkout (or Edit) command
 ms.assetid: 377fec8a-bdc5-4e3c-ac8c-79ee85eef4ce
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

@@ -4,7 +4,6 @@ description: Learn to isolate code using forks in VSTS & TFS
 ms.assetid: d212c1ec-19b9-4d5a-bb7f-2a909f151180
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.manager: douge
 ms.author: macoope
 ms.date: 08/23/2017

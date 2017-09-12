@@ -4,7 +4,6 @@ description: Request permission for an extension for Visual Studio Team Services
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-marketplace
-ms.service: vsts-marketplace
 ms.assetid: 92a68d80-cd18-4194-8a30-f12424045efc 
 ms.manager: douge
 ms.author: elbatk

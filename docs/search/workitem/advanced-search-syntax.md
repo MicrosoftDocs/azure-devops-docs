@@ -4,7 +4,6 @@ description: Advanced options for Work Item Search in Visual Studio Team Service
 ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-cod
-ms.service: vsts-collaboration
 ms.manager: douge
 ms.author: ahomer
 ms.date: 12/04/2016

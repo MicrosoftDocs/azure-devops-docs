@@ -4,7 +4,6 @@ description: Using Git Pull, fetch, and  to get code from others.
 ms.assetid: b06b9f18-b76f-418c-93d0-f12d1f48f3c0
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie

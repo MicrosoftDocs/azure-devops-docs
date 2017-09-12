@@ -4,7 +4,6 @@ description: Create, use, and delete Git Branches in Visual Studio and from the 
 ms.assetid: 4b18a164-d1cb-4f87-89cb-8dc227e64af1
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie

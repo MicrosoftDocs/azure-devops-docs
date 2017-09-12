@@ -4,7 +4,6 @@ description: Use the modal dialog control to collect user input or display messa
 ms.assetid: 1ABD1859-0BF4-4546-A750-1786B0227E0A
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-api
-ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

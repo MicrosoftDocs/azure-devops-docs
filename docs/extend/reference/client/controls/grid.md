@@ -4,7 +4,6 @@ description: Use the grid control to show rows and columns items that can be sor
 ms.assetid: d0b0cded-3e7f-4972-95bb-8b634fb13f94
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-api
-ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

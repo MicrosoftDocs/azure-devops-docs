@@ -3,7 +3,6 @@ title: Exploratory testing with the Test &amp; Feedback extension in Standalone 
 description: Manual and exploratory testing - exploratory testing with the Test &amp; Feedback extension  in Standalone mode
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
-ms.service: vsts-testing
 ms.assetid: 762A75FB-0B6D-47C3-9232-371348D8D529
 ms.manager: douge
 ms.author: ahomer

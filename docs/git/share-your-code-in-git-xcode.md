@@ -4,7 +4,6 @@ description: "Share code in Git using Xcode"
 ms.assetid: "f1fedd72-d9b9-45cf-99aa-2e624c899c45"
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie

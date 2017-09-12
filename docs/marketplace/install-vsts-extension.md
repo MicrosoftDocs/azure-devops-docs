@@ -4,7 +4,6 @@ description: Find and install extensions for Team Services from the Visual Studi
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-marketplace
-ms.service: vsts-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.manager: douge
 ms.author: elbatk

@@ -4,7 +4,6 @@ description: Add more VSTS users with Basic features or Visual Studio subscripti
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
 ms.assetid: f36c2fbd-7683-4620-9636-97144c7779f2
 ms.manager: douge
 ms.author: estfan

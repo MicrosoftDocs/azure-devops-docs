@@ -4,7 +4,6 @@ description: Create a local copy of an existing repo using Visual Studio or comm
 ms.assetid: b6240e2f-2d3d-4874-9953-7e554d5e3b97
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie

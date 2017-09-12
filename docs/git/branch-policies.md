@@ -4,7 +4,6 @@ description: Branch policies provide teams with the means to protect their impor
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.manager: douge
 ms.author: sdanie
 ms.date: 08/23/2017

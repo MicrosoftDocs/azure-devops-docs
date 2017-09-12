@@ -4,7 +4,6 @@ description: Troubleshooting adding administrators to VSTS project collections a
 ms.assetid: 7ad07299-c9c5-4748-bf31-6518356ee0d0
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-accounts
-ms.service: vsts-admin
 ms.manager: douge  
 ms.author: estfan  
 ms.date: 03/29/2017

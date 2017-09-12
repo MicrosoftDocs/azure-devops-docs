@@ -4,7 +4,6 @@ description: Work with version control locks
 ms.assetid: 097adb8d-9509-48bb-804e-37456ff80ee8
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

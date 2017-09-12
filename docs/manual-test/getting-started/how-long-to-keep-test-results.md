@@ -3,7 +3,6 @@ title: Manage how long to keep test results in Visual Studio Team Services
 description: Manage how long VSTS keeps you test results
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
-ms.service: vsts-testing
 ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
 ms.manager: douge
 ms.author: ahomer

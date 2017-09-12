@@ -4,7 +4,6 @@ description: Use REST APIs to get work items from VSTS with queries in your own 
 ms.assetid: e48d9d34-24dd-4e3e-abe8-8f5498e08083
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 06/27/2017

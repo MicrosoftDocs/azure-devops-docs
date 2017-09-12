@@ -4,7 +4,6 @@ description: Enabling IIS Basic Authentication invalidates using Personal Access
 ms.assetid: 173198c4-9b65-4c4a-a8f1-931b6b6c295a
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

@@ -3,7 +3,6 @@ title: Explore work items when using exploratory testing
 description: Manual and exploratory testing - explore work items from the Kanban board or the Test &amp; Feedback extension
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
-ms.service: vsts-testing
 ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
 ms.manager: douge
 ms.author: ahomer

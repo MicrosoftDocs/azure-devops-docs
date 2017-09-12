@@ -3,7 +3,6 @@ title: View Visual Studio subscriptions assigned to you
 description: View Visual Studio subscriptions assigned to you
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-billing
-ms.service: vsts-admin
 ms.assetid: a133e7f0-690f-4c68-8e4f-ed40ef241d35
 ms.manager: douge
 ms.author: elbatk

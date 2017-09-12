@@ -4,7 +4,6 @@ description: Overview of Git version control in VSTS and Team Foundation Server
 ms.assetid: 9e1079da-49a2-4035-addb-238a8023c9b1
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.manager: douge
 ms.author: sdanie
 ms.date: 04/17/2017

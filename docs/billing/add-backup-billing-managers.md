@@ -3,7 +3,6 @@ title: Add backup billing managers for your VSTS account
 description: Add backup billing managers for your VSTS account
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-billing
-ms.service: vsts-admin
 ms.assetid: bd87ec5c-84f2-4efa-bc37-a6999cb9532e
 ms.manager: douge
 ms.author: estfan

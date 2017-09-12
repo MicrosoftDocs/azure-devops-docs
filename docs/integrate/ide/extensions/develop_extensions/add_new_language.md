@@ -1,7 +1,6 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
 title: I want to add a new language to Visual Studio
 description: Information about adding language support to Visual Studio, with links to Java and Python repositories.
 ms.assetid: 116E0CE9-F387-4614-B1C7-AB26E7060DF6

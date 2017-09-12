@@ -4,7 +4,6 @@ description: Squash merge your pull requests to keep a linear Git history
 ms.assetid: 2ec21de7-92fc-4d60-a5e1-7e179627b2bb
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.manager: douge
 ms.author: sdanie
 ms.date: 04/17/2017

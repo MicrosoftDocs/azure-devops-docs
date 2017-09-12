@@ -3,7 +3,6 @@ title: Repeat a test with different data
 description: Manual and exploratory testing - repeat a test with different data in Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
-ms.service: vsts-testing
 ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
 ms.manager: douge
 ms.author: ahomer

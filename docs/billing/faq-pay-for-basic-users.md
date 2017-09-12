@@ -3,7 +3,6 @@ title: Buy Basic access to add VSTS users | Visual Studio Team Services
 description: Buy Basic access to add more users in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-billing
-ms.service: vsts-admin
 ms.assetid: c229c564-bda3-4d5d-92a9-4dbe45223367
 ms.manager: douge
 ms.author: estfan

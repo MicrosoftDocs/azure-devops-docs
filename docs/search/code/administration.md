@@ -4,7 +4,6 @@ description: Setup notes and administration links for Microsoft Code Search & Wo
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-cod
-ms.service: vsts-collaboration
 ms.manager: douge
 ms.author: douge
 ms.date: 08/04/2016

@@ -4,7 +4,6 @@ description: Use Work Item Search to search across all work item fields over all
 ms.assetid: 133EF8B9-B4F9-4057-9CB3-E745A7E0B8F5
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-cod
-ms.service: vsts-collaboration
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: ahomer

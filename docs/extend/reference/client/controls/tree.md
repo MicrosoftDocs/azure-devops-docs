@@ -4,7 +4,6 @@ description: Use the treeview to display hierarchical data in your app for Visua
 ms.assetid: 20DE4AA3-3B76-CAAF-0683-81F85BDE4F39
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-api
-ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/04/2016

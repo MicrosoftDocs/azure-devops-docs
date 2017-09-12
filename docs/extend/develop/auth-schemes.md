@@ -4,7 +4,6 @@ description: Find the different ways to authenticate with external services usin
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-extend
-ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 03/02/2016

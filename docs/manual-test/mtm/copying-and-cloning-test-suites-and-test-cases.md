@@ -4,7 +4,6 @@ description: Manual and exploratory testing - Copying and cloning test suites an
 ms.assetid: 3bdbaf71-2530-4681-9bb3-cc98c75664f4
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-manual-test
-ms.service: vsts-testing
 ms.manager: douge
 ms.author: ahomer
 ms.date: 10/20/2016

@@ -4,7 +4,6 @@ description: Extend VSTS with your own hub.
 ms.assetid: 0d06c2d8-402f-4373-a2d3-2513ae278443
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-extend
-ms.service: vsts-extend
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/23/2016

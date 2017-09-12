@@ -4,7 +4,6 @@ description: Use .NET client libraries to create a bug in Visual Studio Team Ser
 ms.assetid: ea2e5303-46b5-41d0-b6f5-b3d8ce515a64
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
 ms.manager: douge
 ms.author: elbatk
 ms.date: 06/27/2017

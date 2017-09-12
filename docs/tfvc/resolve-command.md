@@ -4,7 +4,6 @@ description: Resolve Command
 ms.assetid: de5698a0-4e04-45b9-9dbe-3f78706919b3
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-tfvc
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

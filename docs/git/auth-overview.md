@@ -4,7 +4,6 @@ description: Choose between HTTPS, SSH, personal access tokens, and alternate cr
 ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git
-ms.service: vsts-code
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/26/2016

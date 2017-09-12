@@ -4,7 +4,6 @@ description: Using .gitignore, git update-index, and repo management to ignore a
 ms.assetid: 60982d10-67f1-416f-94ec-eba8d655f601
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-git 
-ms.service: vsts-code
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie

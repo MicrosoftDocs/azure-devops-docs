@@ -4,7 +4,6 @@ description: Guidance for authentication with with Visual Studio Team Services.
 ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
 ms.prod: vs-devops-alm
 ms.technology: vsts-sub-integrate
-ms.service: vsts-integrate
 ms.manager: douge
 ms.author: peakyy
 ms.date: 06/30/2017

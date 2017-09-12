@@ -4,7 +4,6 @@ description: Configuration variables and system variables for Release Management
 ms.assetid: 50D20F24-19E6-4660-B3EC-25148BDFE2A3
 ms.prod: vs-devops-alm
 ms.technology: vs-sub-release
-ms:service: vs-rm
 ms.manager: douge
 ms.author: ahomer
 ms.date: 08/04/2016
