@@ -58,8 +58,7 @@ The more insight you and your teams have into the goal, vision, and progress of 
 - **Consolidated views**: Use your online tracking tools to aggregate work to gain knowledge across teams. Build dashboards to show progress and trends. 
 -**Experience reviews**: These meetings, held before development begins on a feature, are used to educate leadership on scenarios and priorities, collect feedback, set expectations, and surface any cross-team issues about the feature. 
 
-##Productive workforce 
->*Agile at scale requires trust at scale, no fear, no politics - [Spotify Training & Development](https://technology1unplugged.wordpress.com/2015/01/25/agile-engineering-and-collaboration-culture-at-spotify/)*     
+## Productive workforce 
 
 Some specific Agile practices that scale well and lead to happier, engaged, and productive employees include:  
 

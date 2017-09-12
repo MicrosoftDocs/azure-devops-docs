@@ -20,7 +20,7 @@ ms.date: 08/04/2016
 <td>
 <p>You can begin using [Git](http://www.git-scm.com/) distributed version control before you write your first line of code with virtually no cost or risk. You get many benefits, including being able to revert to a known good state whenever you get in trouble. When you need to switch contexts, you can quickly create a private local branch. Later, you can either publish the branch or dispose of it.</p>
 
-<p>All this is done on your local dev machine, with no server required. When you�re ready, you can quickly share your code and begin collaborating in TFS or on a third-party Git service.</p>
+<p>All this is done on your local dev machine, with no server required. When you're ready, you can quickly share your code and begin collaborating in TFS or on a third-party Git service.</p>
 
 <p>You can use Visual Studio and Git to collaborate with your team using Team Foundation Server (on-premises or on [Visual Studio VSTS](http://tfs.visualstudio.com/)), on [CodePlex](http://www.codeplex.com/), or on a third-party service such as GitHub or Bitbucket.</p>
 
@@ -33,9 +33,6 @@ ms.date: 08/04/2016
 <li>[Rename a Git repository](repo-rename.md)</li>
 <li>[Learn about Git permissions](http://msdn.microsoft.com/en-us/library/ms252587.aspx#git)</li>
 </ul>
-<p>
-[More Git](http://go.microsoft.com/fwlink/?LinkId=392931)
-</p>
 </td>
 </tr>
 </table>

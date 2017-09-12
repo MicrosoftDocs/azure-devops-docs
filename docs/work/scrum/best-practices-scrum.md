@@ -190,6 +190,4 @@ In some cases, your team may need to do some work to implement an improvement. F
 
 For additional guidance, see:
 *	[What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)
-*   [Agile Principles and Values by Jeff Sutherland](https://msdn.microsoft.com/library/dd997578.aspx)
-*	[Putting the Fun Back In Your Retrospectives](http://www.agilealliance.org/files/session_pdfs/Putting%20the%20Fun%20Back%20In%20Your%20Retrospectives.pdf)  
 *	[Agile Retrospectives: Making Good Teams Great](http://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649/)	

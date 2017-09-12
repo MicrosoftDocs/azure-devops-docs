@@ -98,11 +98,11 @@ You can make changes to work items in Excel, Project, the web portal, or Visual 
 ## Select user accounts 
 
 >[!NOTE]  
-><b>Feature availability: </b>  To access the [Select User](#select-user) feature, you need to install [Visual Studio 2015 Update 1](http://go.microsoft.com/fwlink/?LinkId=626599) or [Team Foundation Server Office Integration 2015 Update 2](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1). Get this feature to avoid data validation errors by mispelling user names and when you must assign user names from a large group of user accounts.  
+><b>Feature availability: </b>  To access the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://www.visualstudio.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://go.microsoft.com/fwlink/?LinkId=832491). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by mispelling user names and when you must assign user names from a large group of user accounts.  
 
 You can use the Select User feature to find user accounts and assign values to person named fields. Also, this feature provides access to the most recently used (MRU) values. If your team contains several hundreds or thousands of user accounts, you'll want to use this feature.  
 
-1. If you haven't installed or updated to [Visual Studio 2015 Update 1](http://www.microsoft.com/download/details.aspx?id=49189), do that now. You need the latest update in order to access the Select User feature.  
+1. If you haven't installed or updated to the latest version of [Visual Studio (at least VS 2015.1 or later version](https://www.visualstudio.com/downloads/), do that now. You need the latest update in order to access the Select User feature.  
 
 2. Click a person-named field to activate the Select User feature in the team ribbon.  
 

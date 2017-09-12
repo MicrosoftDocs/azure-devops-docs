@@ -53,7 +53,7 @@ TFS 2017
 Code Review
 </td>
 <td>
-Adds the Code Review Request and Code Review Response WITs and categories to the team project. These items support [code review requests and responses from the My Work page in Team Explorer](https://www.visualstudio.com/get-started/code/get-code-reviewed-vs). My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed.<br /> 
+Adds the Code Review Request and Code Review Response WITs and categories to the team project. These items support [code review requests and responses from the My Work page in Team Explorer](../../tfvc/get-code-reviewed-vs.md). My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed.<br /> 
 To manually add them to a team project, see [Add features manually](add-features-manually.md).   
 </td>
 <td>

@@ -132,7 +132,7 @@ to use Microsoft Accounts for sign-in, you will have to assign access levels to 
 Many organizations want to know more about data protection when they consider moving to the cloud. Microsoft is committed to ensuring 
 that Team Services projects stay safe and secure. We have technical features and business processes in place 
 to deliver on that commitment. You can also take steps to secure your data. Learn more in our
-[Data Protection Overview whitepaper](/vsts/security/team-services-security-whitepaper).
+[Data Protection Overview whitepaper](/vsts/articles/team-services-security-whitepaper).
 
 ## Key feature differences between Team Services and TFS 
 

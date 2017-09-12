@@ -122,8 +122,6 @@ When the code you've written on your dev machine is ready, you can push your cha
 
 [!INCLUDE [temp](_shared/qa-vs-launch-fail.md)]
 
-[!INCLUDE [temp](_shared/qa-vs-legacy-connect.md)]
-
 
 #### Q: How can I see what I've changed?
 

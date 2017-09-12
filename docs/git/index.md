@@ -43,13 +43,6 @@ Learn the basics of working in Git with these tutorials which show tasks perform
 - [Review history](tutorial/history.md)  
 
 
-## Videos 
- 
-[![Git at scale video](_img/index/git-at-scale-video-img.png)](https://channel9.msdn.com/Events/Build/20-7/P4-0-/player)  
-
-[![Creating a repo video](_img/index/create-a-git-repo-video-img.png)](https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Create-a-Git-repo-in-Visual-Studio-20-5/player)
-
-
 
 ## Resources 
 

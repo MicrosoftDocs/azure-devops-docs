@@ -35,7 +35,7 @@ After you update your team project with the Configure Features wizard, you have 
 Code Review
 </td>
 <td>
-Adds the Code Review Request and Code Review Response work item types (WITs). With them, you can [request a code review and track code review responses](https://www.visualstudio.com/get-started/code/get-code-reviewed-vs).  
+Adds the Code Review Request and Code Review Response work item types (WITs). With them, you can [request a code review and track code review responses](../../tfvc/get-code-reviewed-vs.md).  
 </td>
 <td>
 **Required:** [Configure an SMTP server for TFS](../../tfs-server/admin/setup-customize-alerts.md). <br/>
