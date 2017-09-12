@@ -2,7 +2,7 @@
 title: Load test your app before release
 description: Run load tests on your app before release with Visual Studio Team Services (VSTS), Cloud-based Load Testing, and Visual Studio
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-load-test
+ms.technology: vs-devops-test-performance
 ms.topic: get-started-article
 ms.assetid: 2C83E7E1-93BE-44F9-A041-AC23963404D3
 ms.manager: douge
