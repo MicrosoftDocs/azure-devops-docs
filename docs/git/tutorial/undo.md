@@ -3,7 +3,7 @@ title: Undo changes in your Git repo | VSTS & TFS
 description: Undoing Changes with Git in VSTS using reset and revert.
 ms.assetid: 02cdccb4-373d-4bd0-8053-6432f859e495
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git 
+ms.technology: vs-devops-git 
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie

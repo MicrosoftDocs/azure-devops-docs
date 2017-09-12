@@ -4,7 +4,7 @@ description: Tips, advice, and suggestions on how to create a great readne file 
 ms.assetid: fcd84ee1-909c-4837-9c39-bf036afe6232
 toc: show
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git 
+ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: routlaw
 ms.date: 10/18/2016

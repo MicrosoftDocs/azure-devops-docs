@@ -3,7 +3,7 @@ title: Administering Team Foundation Version Control
 description: Administering Team Foundation Version Control
 ms.assetid: 0d96b6d2-f00a-4d28-98b9-83fe75cde284
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-tfvc
+ms.technology: vs-devops-tfvc
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/10/2016

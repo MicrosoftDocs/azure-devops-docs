@@ -3,7 +3,7 @@ title: Connect to your Git repos with SSH | VSTS & TFS
 description: Authenticate to VSTS Git Repositories with SSH Keys
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git 
+ms.technology: vs-devops-git 
 ms.manager: douge
 ms.author: routlaw
 ms.date: 08/04/2016

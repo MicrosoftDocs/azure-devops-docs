@@ -3,7 +3,7 @@ title: Get started with Git and Visual Studio 2017 | VSTS & TFS
 description: Quick Start with Git and VSTS and Visual Studio 2017
 ms.assetid: d7dcb364-056f-421b-8896-0304cddf12fe
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-git 
+ms.technology: vs-devops-git 
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
