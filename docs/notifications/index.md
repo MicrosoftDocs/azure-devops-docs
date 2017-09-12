@@ -1,7 +1,7 @@
 ---
 title: Notifications index to content for VSTS & TFS
 description: Index to topics for getting notifications or alerts from VSTS or TFS  
-ms.technology: vs-devops-agile-wit
+ms.technology: collaborate
 ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge

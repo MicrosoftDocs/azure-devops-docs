@@ -1,7 +1,7 @@
 ---
 title: Connect to team projects in VSTS or TFS
 description: Connect a client to the cloud service VSTS or on-premises Team Foundation Server (TFS) 
-ms.technology: vs-devops-overview
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.manager: douge
