@@ -2,7 +2,7 @@
 title: Build Changeset tables | TFS
 description: Uses FactBuildChangeset to query for data about the changesets.
 ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.technology: vs-devops-reporting
 ms.assetid: 66ab6ac3-ff81-4ed7-9535-dd7ce9ebbb37
 ms.manager: douge
 ms.author: kaelli

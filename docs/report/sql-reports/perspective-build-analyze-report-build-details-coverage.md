@@ -2,7 +2,7 @@
 title: Analyze and report on build details and build coverage | TFS
 description: View the measures, dimensions, and attributes in the SQL Server Analysis Services cube for Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-wit
+ms.technology: vs-devops-reporting
 ms.assetid: 36b4e35a-d81d-4851-bd49-8b23d177fb53
 ms.manager: douge
 ms.author: kaelli
