@@ -69,7 +69,7 @@ For example, [web-based test case management](https://marketplace.visualstudio.c
 requires that you install the Test Manager extension, 
 but you can [try paid extensions for free](../billing/try-additional-features-vs.md), 
 if you haven't started the extension trials already. 
-Otherwise, you can [pay for user access](https://www.visualstudio.com/get-started/marketplace/get-vsts-extensions) 
+Otherwise, you can [pay for user access](https://www.visualstudio.com/get-started/marketplace/install-vsts-extensions) 
 to these features.
 
 ####Q:	How many Visual Studio Team Services accounts can I create?

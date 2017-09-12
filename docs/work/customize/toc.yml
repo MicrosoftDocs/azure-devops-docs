@@ -266,6 +266,18 @@
       href: /vsts/work/reference/witadmin/rebuild-client-cache?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Remove work items permanently
       href: /vsts/work/reference/witadmin/remove-work-items-permanently?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+  - name: Project-to-TFS field mapping
+    items:
+    - name: Change how fields map
+      href: /vsts/work/reference/add-or-change-how-project-fields-map-to-tfs-fields?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Customize the Project field mapping
+      href: /vsts/work/reference/customize-project-field-mapping-file?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Map Project fields
+      href: /vsts/work/reference/map-microsoft-project-fields-to-tf-fields?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Project field mappings
+      href: /vsts/work/reference/field-mappings-in-microsoft-project?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Upload/download the Project mapping file
+      href: /vsts/work/reference/upload-or-download-the-microsoft-project-mapping-file?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: On-premises TFS Only
     items:
     - name: Support rollup (TFS)
@@ -274,18 +286,6 @@
       href: /vsts/work/reference/define-modify-work-item-fields?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize and manage the test experience
       href: /vsts/work/reference/witadmin/tcm-customize-manage-test-experience?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: Project-to-TFS field mapping
-      items:
-      - name: Change how fields map
-        href: /vsts/work/reference/add-or-change-how-project-fields-map-to-tfs-fields?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-      - name: Customize the Project field mapping
-        href: /vsts/work/reference/customize-project-field-mapping-file?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-      - name: Map Project fields
-        href: /vsts/work/reference/map-microsoft-project-fields-to-tf-fields?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-      - name: Project field mappings
-        href: /vsts/work/reference/field-mappings-in-microsoft-project?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-      - name: Upload/download the Project mapping file
-        href: /vsts/work/reference/upload-or-download-the-microsoft-project-mapping-file?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: API SDK reference
     items:
     - name: IProcessTemplates.AddUpdateTemplate

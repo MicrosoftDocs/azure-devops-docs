@@ -1,5 +1,5 @@
-####Q:	 Can users with paid Basic access join other Team Services accounts?
+####Q:	 Can users with paid Basic access join other VSTS accounts?
 
-A:	No, users can only join the Team Services account where you've paid for Basic access. 
-But those users can join any Team Services account where free users with Basic access are still available 
+A:	No, users can only join the VSTS account where you've paid for Basic access. 
+But those users can join any VSTS account where free users with Basic access are still available 
 or as users with Stakeholder access for free.

@@ -66,7 +66,7 @@ Then, select the number of users and select **Continue.**
 
 Finally, select **Confirm** and then **Assign to users.**
 
-For further help on the purchasing process, check out the documentation [here](https://www.visualstudio.com/en-us/docs/marketplace/get-vsts-extensions).
+For further help on the purchasing process, check out the documentation [here](/vsts/marketplace/install-vsts-extensions).
 
 ## Assign Package Management in Team Services
 

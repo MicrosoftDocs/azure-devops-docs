@@ -24,7 +24,7 @@ the number of users that you've committed for the current month.
 
 *	If you uninstall or disable a paid extension, 
 charges will continue unless you cancel the extension 
-by [reducing all your users to zero (0)](/vsts/marketplace/get-vsts-extensions#change-extension-quantity). 
+by [reducing all your users to zero (0)](/vsts/marketplace/install-vsts-extensions#change-extension-quantity). 
 
 For non-Microsoft extensions:
 
@@ -35,4 +35,4 @@ and renew on the same day each month until you cancel.
 
 *	If you uninstall or disable a paid extension, 
 charges will continue unless you cancel the extension 
-by [reducing all your users to zero (0)](/vsts/marketplace/get-vsts-extensions#change-extension-quantity). 
+by [reducing all your users to zero (0)](/vsts/marketplace/install-vsts-extensions#change-extension-quantity). 

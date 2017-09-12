@@ -11,12 +11,7 @@ ms.date: 02/22/2017
 
 # Field mappings in Microsoft Project
 
-
-**TFS 2017 | TFS 2015 | TFS 2013** 
-
-
->[!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize/customize-work.md).  
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
 You can customize how data is mapped between Microsoft Project and Team Foundation Server (TFS) by modifying the Microsoft Project Field Mapping File. The mapping file associates the reference name of a work item tracking field  with a Project field. Before you change the Microsoft Project field mappings, you should review the information provided later in this topic to understand how TFS copies data from Project to the work item tracking database.  
   

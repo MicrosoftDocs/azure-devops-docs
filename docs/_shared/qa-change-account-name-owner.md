@@ -1,4 +1,4 @@
-####Q:	Can I change my Team Services account name (URL) or owner?
+####Q:	Can I change my VSTS account name (URL) or owner?
  
 A:	Yes, if you have at least Basic access, 
 you can do this in your account settings. Learn how to:

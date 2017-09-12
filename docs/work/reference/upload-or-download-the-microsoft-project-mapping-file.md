@@ -12,12 +12,8 @@ ms.date: 09/08/2017
 
 # Upload or download the Microsoft Project Mapping file
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
-
->[!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize/customize-work.md).  
-
-
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+  
 Use **TFSFieldMapping** to upload and download the Microsoft Project mapping file. This file controls how Microsoft Project publishes tasks to a team project that connects to an on-premises Team Foundation Server (TFS). For example, you can modify the file to support fields you added to work item types or modify the way in which existing fields are published and refreshed.  
   
  You can specify which work tracking fields map to Project fields. You can also control publishing behavior through the **PublishOnly** attribute, and designate special fields such as the context field. For the complete XML syntax of the mapping file, see [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md). This file is the same file that was defined in the process template that was used to create the team project. See [Map Microsoft Project fields](map-microsoft-project-fields-to-tf-fields.md)  

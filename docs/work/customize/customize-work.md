@@ -118,6 +118,13 @@ The following table summarizes the differences between the three supported proce
 </tr>
 
 <tr>
+<td align="left">Update Microsoft field mappings using the [**TFSFieldMapping**](../reference/upload-or-download-the-microsoft-project-mapping-file.md) command-line tool</td>
+<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td>![checkmark](../_img/icons/checkmark.png)</td>
+</tr>
+
+<tr>
 <td align="left">Use the [**witadmin** command-line tools](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to edit team projects</td>
 <td> </td>
 <td> </td>
