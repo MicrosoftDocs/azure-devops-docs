@@ -1,7 +1,7 @@
 ---
 title: Manually add features after an upgrade | TFS 
 description: Manually update an existing team project to access new features after upgrading an on-premises Team Foundation Server  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 21AB0EE7-FB48-43E6-89EA-EC438C5D4F21
 ms.manager: douge

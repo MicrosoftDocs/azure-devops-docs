@@ -1,7 +1,7 @@
 ---
 title: Bulk modify work items | VSTS & TFS
 description: Bulk edit/modify several/multiple work items (mass update), backlog items, tasks, or bugs or linked parent-child items-Visual Studio Team Services (VSTS)| Team Foundation Server    
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
 ms.manager: douge

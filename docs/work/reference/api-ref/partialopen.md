@@ -1,7 +1,7 @@
 ---
 title: WorkItem.PartialOpen method  | VSTS & TFS 
 description: Syntax and usage for the PartialOpen method to open a work item for modification when working with Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 82920422-FCC2-4FF6-BDFB-E8E992736A5A
 ms.manager: douge

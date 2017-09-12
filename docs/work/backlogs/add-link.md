@@ -1,7 +1,7 @@
 ---
 title: Add links to several work items | VSTS & TFS
 description: Link several work items to other work items or to a new git branch in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)   
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
 ms.manager: douge

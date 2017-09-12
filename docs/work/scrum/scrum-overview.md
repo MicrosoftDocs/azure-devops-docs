@@ -1,7 +1,7 @@
 ---
 title: Scrum overview | VSTS & TFS
 description: Use the web portal to implement your Scrum process, plan and track work, and monitor progress and trends  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge

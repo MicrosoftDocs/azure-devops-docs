@@ -1,7 +1,7 @@
 ---
 title: Query fields, operators, and macros/variables | VSTS & TFS
 description: Descriptions for field data types, operators, and macros/variables used by the Query Editor in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
 ms.manager: douge

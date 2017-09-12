@@ -1,7 +1,7 @@
 ---
 title: Queries index | VSTS & TFS
 description: Use queries to find and list work items, create flat-based query charts in VSTS and and Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 
 ms.manager: douge

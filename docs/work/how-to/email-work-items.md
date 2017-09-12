@@ -1,7 +1,7 @@
 ---
 title: Email or print work items | VSTS & TFS
 description: Email links, Copy URL, and share information about work items, queries, and more - Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) 
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
 ms.manager: douge

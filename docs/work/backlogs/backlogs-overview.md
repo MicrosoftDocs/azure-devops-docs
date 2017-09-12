@@ -1,7 +1,7 @@
 ---
 title: Backlogs and work items | VSTS & TFS
 description: Use the web portal to plan and track work  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 28C02AE8-CF8D-4B6E-8301-F46A5622E6C4
 ms.manager: douge

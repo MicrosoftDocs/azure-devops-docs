@@ -1,7 +1,7 @@
 ---
 title: Agile tools and terms defined for VSTS & TFS  
 description: Key definitions for objects and items used to track work - Visual Studio Team Services (VSTS) and Team Foundation 
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge

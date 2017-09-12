@@ -1,7 +1,7 @@
 ---
 title: Add or modify a work item type (WIT) | VSTS & TFS 
 description: Modify or add a work item type (WIT) to support queries, reports, and workflow for Visual Studio Team Services (VSTS) and TFS  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
 ms.manager: douge

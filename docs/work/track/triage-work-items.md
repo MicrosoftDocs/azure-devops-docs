@@ -2,7 +2,7 @@
 title: Organize and view queries | VSTS & TFS
 description: Manage your queries by using favorites and folders 
 ms.prod: vs-devops-alm
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.assetid: 486A876F-A04F-4DC7-829C-94E88BB9B7E1 
 ms.topic: get-started-article
 ms.manager: douge

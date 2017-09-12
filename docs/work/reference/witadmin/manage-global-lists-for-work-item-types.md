@@ -1,7 +1,7 @@
 --- 
 title: Import and export global lists | TFS  
 description: Customize or update a global list by export/import using witadmin - Team Foundation Server (TFS) 
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 64725cfe-72f8-4ac5-8946-95e808e035f9
 ms.author: kaelli

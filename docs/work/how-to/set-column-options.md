@@ -1,7 +1,7 @@
 ---
 title: Set column options | VSTS & TFS
 description: Show fields in a column for a backlog or query in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 823CC1FD-74A9-4123-92E1-506A505DEC8D
 ms.manager: douge

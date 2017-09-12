@@ -1,7 +1,7 @@
 ---
 title: Update a process template | TFS 
 description: To use the Configure Features Wizard to update existing team projects, you may need to update your custom process template when connecting to Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 09A88E62-F887-4139-923E-FACE6D759F92  
 ms.manager: douge

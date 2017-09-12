@@ -1,7 +1,7 @@
 ---
 title: Kanban features & epics | VSTS 
 description: Quickly define and view the status of child features, user stories, or product backlog items when working in the Kanban features or epic boards in Visual Studio Team Services (VSTS)   
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
 ms.manager: douge

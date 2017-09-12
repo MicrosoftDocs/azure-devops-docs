@@ -1,7 +1,7 @@
 ---
 title: New work item web form | TFS  
 description: The new web form and work item tracking experience supports  more integrated and collaborative experiences
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E  
 ms.manager: douge

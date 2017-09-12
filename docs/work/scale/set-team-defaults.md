@@ -1,7 +1,7 @@
 ---
 title: Set team defaults | VSTS & TFS 
 description: Configure the default area and iteration paths/sprints for a team when working in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 3CEBA118-34EB-4277-B810-418FEC56C860  
 ms.manager: douge

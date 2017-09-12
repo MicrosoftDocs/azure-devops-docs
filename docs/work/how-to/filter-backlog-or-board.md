@@ -1,7 +1,7 @@
 ---
 title: Filter backlogs and boards | VSTS & TFS 
 description: Filter your backlog or board based on work item type, assigned to, iteration or sprint, tags, or parent work items  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 07115349-C78A-4BF4-9037-38EB54A38036  
 ms.manager: douge

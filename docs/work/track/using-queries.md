@@ -1,7 +1,7 @@
 ---
 title: Create managed queries with the Query Editor | VSTS & TFS
 description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 ms.manager: douge

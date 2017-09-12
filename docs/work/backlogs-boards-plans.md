@@ -1,7 +1,7 @@
 ---
 title: Backlogs, boards, plans | VSTS & TFS
 description: Understand the tasks supported among backlogs, Kanban boards, and task boards  when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
 ms.manager: douge

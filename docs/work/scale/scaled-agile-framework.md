@@ -1,7 +1,7 @@
 ---
 title: Scaled Agile Framework | VSTS & TFS 
 description: How to implement the Scaled Agile Framework to support epics, release trains, and multiple backlogs when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
-ms.technology: vs-devops-agile-wit
+ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
 ms.assetid: C8E9CFD2-F08A-4FB8-AC53-B9B6B49A22A3
 ms.manager: douge
