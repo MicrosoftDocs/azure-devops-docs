@@ -16,7 +16,7 @@ Customers that have TFS 2017 with integration configured for SharePoint 2013 nee
 
 If you are upgrading from TFS 2017, or prior version, to TFS 2018, please see [Disable SharePoint integration after TFS 2018 upgrade](./disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md)
 
-**Please refer to the SharePoint topic: [Upgrade to SharePoint Server 2016](https://technet.microsoft.com/en-us/library/cc303420(v=office.16).aspx), for full instructions on upgrading your SharePoint server.** This topic provides additional guidance to ensure the TFS SharePoint sites are functional after upgrading to SharePoint 2016.
+**Please refer to the SharePoint topic: [Upgrade to SharePoint Server 2016](https://technet.microsoft.com/en-us/library/cc303420(v=office.16).aspx), for full instructions on upgrading your SharePoint server.** The instructions below provide additional guidance to ensure the TFS SharePoint sites are functional after upgrading to SharePoint 2016.
 
 ## Overview of problem
 To configure TFS 2017 with SharePoint integration, you must have installed the TFS Extension for SharePoint on the SharePoint 2013 server. You may or may not have had Excel Services configured. Excel Services enabled Excel Charts to be displayed on a SharePoint site. On your SharePoint 2013 server, you may have several TFS SharePoint sites which use web parts, display Excel charts, and refer to TFS site templates.
