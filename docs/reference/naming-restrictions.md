@@ -1,7 +1,7 @@
 ---
 title: Naming restrictions and conventions used by VSTS & TFS
 description: Guidelines for object labels you define for an account, group, server, or other objects which include length, special characters, and uniqueness. 
-ms.technology: vs-devops-extensions-api
+ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
 ms.manager: douge
