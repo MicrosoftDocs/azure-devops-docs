@@ -1,11 +1,7 @@
 ---
 title: Add a team administrator | VSTS & TFS 
 description: Add a user account to the team administrator role-VSTS and Team Foundation Server   
-<<<<<<< HEAD
-ms.technology: vs-devops-agile-wit
-=======
 ms.technology: vs-devops-wit
->>>>>>> f2e5f55028a5ad0ed1b107d1057662af7c497aad
 ms.prod: vs-devops-alm
 ms.assetid: 843D5E56-D24E-4DEA-9915-19B1F76E9A56
 ms.manager: douge
