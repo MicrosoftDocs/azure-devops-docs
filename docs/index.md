@@ -209,7 +209,7 @@ ms.date: 07/26/2017
                                     <ul>
                                         <li><a class="barLink" href="/vsts/extend/index">Build Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/integrate/index">Build Apps</a></li>
-                                        <li><a class="barLink" href="/rest/api/vsts/">REST APIs</a></li>
+                                        <li><a class="barLink" href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">REST APIs</a></li>
                                         <li><a class="barLink" href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a</li>
                                     </ul>
                                     <h3>Marketplace</h3>
@@ -936,7 +936,7 @@ ms.date: 07/26/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="/rest/api/vsts/">
+                                <a href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
