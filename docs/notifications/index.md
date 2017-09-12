@@ -55,4 +55,4 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
 ## Resources 
 - [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams) 
 - [Service Hooks](../service-hooks/index.md)  
-- [REST API](/rest/api/vsts/notification/subscriptions)  
+- [REST API](https://www.visualstudio.com/en-us/docs/integrate/api/notification/subscriptions)  

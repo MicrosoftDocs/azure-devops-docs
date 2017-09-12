@@ -50,7 +50,7 @@ The following table contains a detailed comparison of both options.
     </tr>
     <tr>
         <td>Data Source</td>
-        <td>[VSTS REST API](/rest/api/vsts/index)</td>
+        <td>[VSTS REST API](https://www.visualstudio.com/en-us/docs/integrate/api/overview)</td>
         <td>[Analytics Service](../analytics/overview-analytics-service.md)<sup> 1</sup></td>
     </tr>
     <tr>
