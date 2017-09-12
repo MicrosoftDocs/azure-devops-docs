@@ -295,18 +295,7 @@ Go to your hub in the **Work** hub group. You should see your simple `.html` pag
 
 ## See our library of examples
 
-To get started with building your own extension, take a look at some of the sample extensions or dive into another tutorial from our Tutorial Catalog. 
+To get started with building your own extension, take a look at some of the sample extensions.
 
-<div name="row" style="padding-top:10px">
-    <div style="vertical-align:top;display:inline-block;float:left;width:50%">
-        <div class="index-button" align="right" style="padding-right:10px">
-        <a href="../develop/samples-overview.md"><button style="background-color:#4CAF50;border:none;color:white;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Look at Sample Extensions</button></a>
-        </div>
-    </div>
-    <div style="vertical-align:top;display:inline-block;float:left;width:50%">
-        <div class="index-button" align="left" style="padding-left:10px">
-        <a href="./tutorials.md"><button style="background-color:#4CAF50;border:none;color:white;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Check out the Tutorial Catalog</button></a>
-        </div>
-    </div>
-</div>
+* [Look at sample extensions](../develop/samples-overview.md)
  

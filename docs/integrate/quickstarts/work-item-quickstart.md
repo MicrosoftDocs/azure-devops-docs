@@ -140,4 +140,4 @@ public class ExecuteQuery
 ## Next Steps
 
 * Check out another Quickstart: [Create a bug](./create-bug-quickstart.md)
-* Explore the [integrate samples](../get-started/client-libraries/samples.md) samples
+* Explore the [integrate samples](../get-started/client-libraries/samples.md)

@@ -7,9 +7,10 @@ ms.assetid:
 toc: show
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/31/2017
 ms.topic: get-started-article
+ms.date: 09/01/2017
 ---
+
 
 # About notifications   
 

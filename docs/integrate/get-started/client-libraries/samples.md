@@ -12,7 +12,8 @@ ms.date: 08/04/2016
 
 # C# client libary samples 
 
-Samples showing how to extend and integrate with Team Foundation Server and Visual Studio Team Services using the [.NET client libraries](./dotnet.md).
+Samples showing how to extend and integrate with Team Foundation Server and Visual Studio Team Services using the [.NET client libraries](../../concepts/dotnet-client-libraries.md).
+
 
 ## Samples in GitHub
 There are many samples with instructions on how to run them on our [.NET Sample GitHub Page](https://github.com/Microsoft/vsts-dotnet-samples). 
@@ -29,7 +30,6 @@ SOAP examples on this page require the following NuGet packages:
 * [Microsoft.VisualStudio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)
 * [Microsoft.VisualStudio.Services.InteractiveClient](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.InteractiveClient/)
 
-Review the [contracts index](https://visualstudio.com/api/contracts-page.md) to learn about the specific .Net client library contracts.
 
 #### Example 1: Using a REST-based HTTP client
 

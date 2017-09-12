@@ -18,7 +18,8 @@ For .NET developers building Windows apps and services that integrate with Visua
 ### Features
 * Downloadable from nuget.org and easily importable into your Visual Studio projects
 * Libraries are licensed for redistribution in your apps and services ([view the license](http://go.microsoft.com/fwlink/?LinkId=329770))
-* Access both traditional client object model APIs and [new REST APIs](../rest-api-overview.md)
+* Access both traditional client object model APIs and [new REST APIs](https://www.visualstudio.com/en-us/docs/integrate/api/overview)
+
 
 >Note: REST-based clients only work with Visual Studio Team Services and TFS 2015 (not previous versions of TFS) 
 >To learn more about extending and integrating with  Visual Studio Team Services and Team Foundation Server using the client libraries, 

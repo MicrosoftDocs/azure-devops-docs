@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/03/2017
+ms.date: 09/01/2017
 ---
+
 
 # Notifications  
 

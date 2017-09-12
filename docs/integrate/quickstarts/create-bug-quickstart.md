@@ -146,4 +146,4 @@ public class CreateBug
 ## Next Steps
 
 * Check out another Quickstart: [Get a list of work items using queries](./work-item-quickstart.md)
-* Explore the [integrate samples](../get-started/client-libraries/samples.md) samples
+* Explore the [integrate samples](../get-started/client-libraries/samples.md)

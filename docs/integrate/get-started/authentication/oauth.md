@@ -24,7 +24,7 @@ Access tokens expire, so you'll also need to refresh the access token if it's ex
 
 ![Process to get authorization](./_img/oauth-overview.png)
 
-For a C# example of the overall flow, see [vsts-auth-samples](https://github.com/Microsoft/vsts-auth-samples/tree/master/dotnet/aspnet)
+For a C# example of the overall flow, see [vsts-auth-samples](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample)
 
 ## Register your app
 
@@ -235,7 +235,7 @@ you'll pass the same scopes that you registered.
 
 ## Samples
 
-You can find a C# sample that implements OAuth to call Visual Studio Team Services REST APIs in our [C# OAuth GitHub Sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/dotnet/aspnet).
+You can find a C# sample that implements OAuth to call Visual Studio Team Services REST APIs in our [C# OAuth GitHub Sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample).
 
 ## Q&A
 

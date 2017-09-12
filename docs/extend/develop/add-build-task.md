@@ -242,31 +242,9 @@ If you can't see the Extensions tab, make sure you're in the control panel (the 
 If you're on the control panel, and you don't see the <b>Extensions</b> tab, extensions may not be enabled for your account. You can get early access to the extensions feature by joining the Visual Studio Partner Program.
 
 ## Helpful links
-<div name="row">
-    <div style="vertical-align:top;display:inline-block;float:left;width:35%">
-        <div style="vertical-align:top;display:block;margin-left:auto;margin-right:auto;width:98%">
-            <ul>
-                <li><b>[Extension Manifest Reference](./manifest.md)</b></li>
-            </ul>
-        </div>  
-    </div>
-    <div style="vertical-align:top;display:inline-block;float:left;width:32%">
-        <div style="vertical-align:top;display:block;margin-left:auto;margin-right:auto;width:98%">
-            <ul>
-                <li><b>[Build Task JSON Schema](./build-task-schema.md)</b></li>
-            </ul>
-        </div>  
-    </div>
-    <div style="vertical-align:top;display:inline-block;float:left;width:32%">
-        <div style="vertical-align:top;display:block;margin-left:auto;margin-right:auto;width:98%">
-            <ul>
-                <li><b>[Build Task Examples](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)</b></li>
-            </ul>
-        </div>  
-    </div>
-</div>
-
-<br>
+* [Extension Manifest Reference](./manifest.md)
+* [Build Task JSON Schema](./build-task-schema.md)
+* [Build Task Examples](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)
 
 >[!NOTE]
 >Check out our **[Node task sample in GitHub](https://github.com/Microsoft/vsts-task-lib/blob/master/node/docs/stepbystep.md)** for a tutorial that shows

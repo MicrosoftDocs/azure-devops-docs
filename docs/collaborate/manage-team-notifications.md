@@ -6,8 +6,9 @@ ms.prod: vs-devops-alm
 ms.assetid: 6edc44d0-2729-46f5-8108-c8a5160a6a7a
 ms.manager: douge
 ms.author: wismythe
-ms.date: 02/14/2017 
+ms.date: 09/01/2017  
 ---
+
 
 # Manage notifications for a team
 

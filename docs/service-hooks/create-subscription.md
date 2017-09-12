@@ -12,8 +12,7 @@ ms.date: 08/04/2016
 
 # Create a service hooks subscription programmatically
 
-Using the [Subscriptions](https://visualstudio.com/api/hooks/subscriptions.md) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event 
-occurs in a team project. For example, you can create a subscription to notify your service when a build fails.
+Using the [Subscriptions](https://www.visualstudio.com/en-us/docs/integrate/api/hooks/subscriptions) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a team project. For example, you can create a subscription to notify your service when a build fails.
 
 Supported events:
 
@@ -39,7 +38,7 @@ take for the subscription.
 
 To create a subscription, the following data will be required:
 
-- team project ID (use the [Team Project REST API](https://visualstudio.com/integrate/api/tfs/projects) to get the project ID)
+- team project ID (use the [Team Project REST API](https://www.visualstudio.com/en-us/docs/integrate/api/tfs/overview) to get the project ID)
 - event ID and settings (see the [event reference](./events.md))
 - consumer and action IDs and settings (see the [consumer reference](./consumers.md))
 
@@ -113,7 +112,8 @@ Resource versioning is applicable when an API is in preview. For most scenarios,
 
 The event payload sent to certain consumers (like Web hooks, Azure Service Bus, Azure Storage) includes a JSON representation of subject resource (for example, a build or work item). The representation of this resource can have different forms (or versions). 
 You can specify the version of the resource that you want to have sent to the consumer service via the `resourceVersion` field on the subscription.
-The resource version is the same as the [API version](../integrate/get-started/rest/basics.md). Not specifying a resource version means "latest released". You should always specify a resource version - this ensures a consistent event payload over time.
+The resource version is the same as the [API version](../integrate/concepts/rest-api-versioning.md). Not specifying a resource version means "latest released". You should always specify a resource version - this ensures a consistent event payload over time.
+
 
 ## Q&A
 
