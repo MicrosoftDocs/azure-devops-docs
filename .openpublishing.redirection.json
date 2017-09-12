@@ -15,11 +15,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/about-vsts-tfs.md",
-            "redirect_url": "/vsts/about-vsts-tfs",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "docs/build/apps/aspnet/cd/deploy-cloudservice-cloudservice.md",
             "redirect_url": "/vsts/build-release/apps/cd/deploy-cloudservice-cloudservice",
             "redirect_document_id": false
@@ -110,21 +105,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/concepts.md",
-            "redirect_url": "/vsts/concepts",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/devops-alm-overview.md",
-            "redirect_url": "/vsts/devops-alm-overview",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/faqs.md",
-            "redirect_url": "/vsts/faqs",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "docs/git/howto/create-pr-status-server.md",
             "redirect_url": "/vsts/git/how-to/create-pr-status-server",
             "redirect_document_id": false
@@ -135,11 +115,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/marketplace/billing-overview.md",
-            "redirect_url": "/vsts/billing/overview",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "docs/marketplace/get-hockeyapp.md",
             "redirect_url": "/vsts/billing/get-hockeyapp",
             "redirect_document_id": false
@@ -147,31 +122,6 @@
         {
             "source_path": "docs/marketplace/xamarin-univ.md",
             "redirect_url": "/vsts/billing/xamarin-univ",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/migrate-to-vsts-from-tfs.md",
-            "redirect_url": "/vsts/migrate-to-vsts-from-tfs",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/overview.md",
-            "redirect_url": "/vsts/overview",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/provide-feedback.md",
-            "redirect_url": "/vsts/provide-feedback",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/roles.md",
-            "redirect_url": "/vsts/roles",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/services.md",
-            "redirect_url": "/vsts/services",
             "redirect_document_id": false
         },
         {
@@ -352,11 +302,6 @@
         {
             "source_path": "docs/setup-admin/websitesettings.md",
             "redirect_url": "/vsts/security/websitesettings",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/tools.md",
-            "redirect_url": "/vsts/tools",
             "redirect_document_id": false
         },
         {
