@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-integrate
+ms.technology: vs-devops-integrate
 title: Account and Profile Overview | REST API Reference for Visual Studio Team Services
 description: Work with accounts and profiles programmatically using the REST APIs for Visual Studio Team Services.
 ms.assetid: 2CC3AFF0-D665-407A-AC69-C68C61FB3267

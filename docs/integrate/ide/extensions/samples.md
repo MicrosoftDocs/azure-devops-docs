@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-integrate
+ms.technology: vs-devops-integrate
 title: Extensibility samples on GitHub
 description: Find sample code in our Git repository or other locations.
 ms.assetid: B3B400BD-006C-481A-A156-6847CAB00D4B

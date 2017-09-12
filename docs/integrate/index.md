@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-integrate
+ms.technology: vs-devops-integrate
 title: Integrating custom apps and third party services with VSTS and Team Foundation Server
 description: Overview of integrating with VSTS and Team Foundation Server
 ms.assetid: c9b97ad7-ffd8-4657-8322-74f764eec5c9

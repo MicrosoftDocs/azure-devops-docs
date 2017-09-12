@@ -2,7 +2,7 @@
 title: Accounts REST API Reference for VSTS
 description: Work with accounts programmatically using the REST APIs for Visual Studio Team Services.
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-integrate
+ms.technology: vs-devops-integrate
 ms.assetid: C9470271-C11E-4BD2-82C8-D5272AADF82C
 ms.manager: jivkok
 ms.author: gozhang

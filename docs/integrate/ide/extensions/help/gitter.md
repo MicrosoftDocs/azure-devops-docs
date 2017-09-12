@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-integrate
+ms.technology: vs-devops-integrate
 title: Ask another developer
 description: Use Gitter to ask your questions to other developers.
 ms.assetid: 116A9B84-9DD8-4DE8-8E80-0A2B30856D42

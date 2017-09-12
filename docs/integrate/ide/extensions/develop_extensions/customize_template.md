@@ -1,6 +1,6 @@
 ---
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-integrate
+ms.technology: vs-devops-integrate
 title: I want to customize a project template
 description: A walkthrough to show you how to customize a project template.
 ms.assetid: DAE23D07-A529-452A-9EDC-26DEEE23108C
