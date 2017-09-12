@@ -2,7 +2,7 @@
 title: Uninstall or disable extensions in your Team Services account
 description: Uninstall or disable extensions in your Team Services account
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-marketplace
+ms.technology: vs-devops-marketplace
 ms.assetid: b46e7ae6-0974-4ecf-8369-687ee8f89ee5 
 ms.manager: douge
 ms.author: elbatk

@@ -3,7 +3,7 @@ title: Visual Studio Marketplace & billing overview | Team Services & TFS
 description: Overview of extensions, subscriptions, and billing for the Visual Studio Marketplace
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-marketplace
+ms.technology: vs-devops-marketplace
 ms.assetid: 50c06553-9fba-40da-8c04-357497cc1db7
 ms.manager: douge
 ms.author: elbatk

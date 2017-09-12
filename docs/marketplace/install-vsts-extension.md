@@ -3,7 +3,7 @@ title: Install extensions for VSTS | Visual Studio Team Services (Visual Studio 
 description: Find and install extensions for Team Services from the Visual Studio Marketplace
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-marketplace
+ms.technology: vs-devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.manager: douge
 ms.author: elbatk

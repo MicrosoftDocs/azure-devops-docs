@@ -2,7 +2,7 @@
 title: Troubleshooting getting extensions for Visual Studio Team Services
 description: Troubleshooting getting and paying for extensions for Visual Studio Team Services
 ms.prod: vs-devops-alm
-ms.technology: vsts-sub-marketplace
+ms.technology: vs-devops-marketplace
 ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7 
 ms.manager: douge
 ms.author: elbatk
