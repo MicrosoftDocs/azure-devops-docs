@@ -2,7 +2,7 @@
 title: About SharePoint Integration 
 description: TFS/SharePoint integration - About SharePoint Integration 
 ms.prod: visual-studio-tfs-dev14
-ms.technology: vs-devops-integrate
+ms.technology: vs-devops-reporting
 ms.assetid:  
 ms.manager: abjork
 ms.author: greggboe
