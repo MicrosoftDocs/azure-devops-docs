@@ -23,7 +23,7 @@ Share your Eclipse project with your team in a VSTS/TFS Git repo. If you don’t
 
 ## Use Team Explorer Everywhere
 
-[Team Explorer Everywhere](https://www.visualstudio.com/en-us/products/team-explorer-everywhere-vs.aspx) is an [open-source](https://github.com/Microsoft/team-explorer-everywhere) Eclipse plug-in to connect Eclipse to Team Services or Team Foundation Server. If you're working with VSTS/TFS and Eclipse, use this plugin to connect to your repos, builds, and work items. 
+[Team Explorer Everywhere](https://www.visualstudio.com/en-us/products/team-explorer-everywhere-vs.aspx) is an [open-source](https://github.com/Microsoft/team-explorer-everywhere) Eclipse plug-in to connect Eclipse to VSTS or Team Foundation Server. If you're working with VSTS/TFS and Eclipse, use this plugin to connect to your repos, builds, and work items. 
 
 0. [Install the Team Explorer Everywhere plug-in](http://java.visualstudio.com/docs/tools/eclipse#_install-the-tee-plugin-for-eclipse).
 
@@ -33,12 +33,12 @@ Share your Eclipse project with your team in a VSTS/TFS Git repo. If you don’t
 
 ## Connect to VSTS
 
-0. In the Team Explorer Everywhere view, select **Connect to Team Services or a Team Foundation Server** . 
+0. In the Team Explorer Everywhere view, select **Connect to VSTS or a Team Foundation Server** . 
 
-   ![Select Connect to Team Foundation Server to connect your TFS or Team Services account](_img/share-your-code-in-git-eclipse/connect_to_vsts_from_tee.png)
+   ![Select Connect to Team Foundation Server to connect your TFS or VSTS account](_img/share-your-code-in-git-eclipse/connect_to_vsts_from_tee.png)
    
 
-0. If you know your VSTS or Team Foundation Server account URL, select the **Servers...** button under **Connect to a Team Foundation Server or Team Services account** to add your TFS server or account to the drop-down list. 
+0. If you know your VSTS or Team Foundation Server account URL, select the **Servers...** button under **Connect to a Team Foundation Server or VSTS account** to add your TFS server or account to the drop-down list. 
 If you don't know your account information for VSTS, select **Browse Visual Studio Services** and select **Next**.
 
    ![Add Existing Team Project Dialog](_img/share-your-code-in-git-eclipse/tee_existing_team_project.png)
@@ -72,11 +72,11 @@ Before you can push your project to VSTS, you need to add it to a local Git repo
     
 0. In Package Explorer, right-click your project and Select **Team, Push Branch ...** . Paste the clone URL from the clipboard into the **URI** field and select **Next**. Make sure **Configure upstream for push and pull** is selected in the next window and select **Next**.
 
-    ![Push your code to Team Services using the Clone URL from the web](_img/share-your-code-in-git-eclipse/push_commits_to_team_services.png)
+    ![Push your code to VSTS using the Clone URL from the web](_img/share-your-code-in-git-eclipse/push_commits_to_team_services.png)
     
 0. Review the changes and select **Finish** in the **Push Branch** window.
 
-Your project code is now your Team Services Git repo.
+Your project code is now your VSTS Git repo.
 
 ## Troubleshooting
 

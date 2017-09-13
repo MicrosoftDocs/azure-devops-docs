@@ -1,6 +1,6 @@
 ---
 title: Git and TFVC version control 
-description: Choosing which version control to use in Visual Studio Team Services
+description: Choosing which version control to use in VSTS
 ms.assetid: A4D7295A-22AB-4990-BE68-EF81A1C31F01
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-tfvc
@@ -14,7 +14,7 @@ ms.date: 05/12/2017
 
 **VSTS | TFS 2017 | TFS 2015 | Visual Studio 2017, 2015, and 2013**
 
-Whether your software project is large or small, using version control as soon as possible is a good idea. Team Services supports two types of version control: [Git](../git/gitquickstart.md)
+Whether your software project is large or small, using version control as soon as possible is a good idea. VSTS supports two types of version control: [Git](../git/gitquickstart.md)
 and [Team Foundation Version Control](./overview.md) (TFVC).
  
 <a name="tfvc_or_git_summary"></a>
@@ -29,9 +29,9 @@ You can use TFVC repos with Git in the same Team Project so it's easy to add TFV
 Git is a distributed version control system. Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection. Branches are lightweight. When you need to switch contexts, you can create a private local branch. You can quickly switch from one branch to another to pivot among different variations of your codebase. Later, you can merge, publish, or dispose of the branch. 
 
 >[!NOTE]
->Git in Visual Studio, Team Services, and TFS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with TFS.
+>Git in Visual Studio, VSTS, and TFS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with TFS.
  
-To learn more, see [Git and Team Services](../git/overview.md).
+To learn more, see [Git and VSTS](../git/overview.md).
 
 ### TFVC (centralized)
  
@@ -147,7 +147,7 @@ Need more help to make a choice? These charts might help.
 <tr>
 <td>Server</td>
 <td>TFS</td>
-<td>Team Services, TFS and Git third-party services</td>
+<td>VSTS, TFS and Git third-party services</td>
 </tr>
 <tr>
 <td>Alerts</td>

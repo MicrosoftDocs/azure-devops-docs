@@ -13,7 +13,7 @@ ms.date: 08/23/2016
 
 ###### VSTS | TFS 2017
 
-Manage the work in your team's Team Services Git repo from the **Branches** view on the web. 
+Manage the work in your team's VSTS Git repo from the **Branches** view on the web. 
 Customize the view to track the branches you care most about so you can stay on top of changes made by your team.
 
 Access the view by selecting **Branches** while viewing your repo on the web.    

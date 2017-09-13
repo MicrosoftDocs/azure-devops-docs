@@ -9,18 +9,18 @@ ms.author: sdanie
 ms.date: 04/17/2017
 ---
 
-#  Git and Team Services
+#  Git and VSTS
 #### VSTS | TFS 2015 & 2017  | Visual Studio 2015 & 2017 | [Previous version](overview-2013.md)
 
-Host and manage your code in Git version control with Team Services and Team Foundation Server. 
+Host and manage your code in Git version control with VSTS and Team Foundation Server. 
 
-New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git and Team Services can help your team ship great code.
+New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git and VSTS can help your team ship great code.
 
 <div class="row">
     <div class="col-sm-3 col-md-4">
         <strong style="text-align:center;">Get started</strong>
         <ul>
-            <li>[Team Services Git quick start](gitquickstart.md)</li>
+            <li>[VSTS Git quick start](gitquickstart.md)</li>
             <li>[Visual Studio](share-your-code-in-git-vs.md)</li>
             <li>[Command line](share-your-code-in-git-cmdline.md)</li>
             <li>[Xcode](share-your-code-in-git-xcode.md)</li>
@@ -86,16 +86,16 @@ New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git a
 
 <div class="row">
 <div class="col-sm-6 col-md-6">
-![Use your favorite IDE with Team Services and Git](_img/overview/get-started-favorite-ide.png)
+![Use your favorite IDE with VSTS and Git](_img/overview/get-started-favorite-ide.png)
 </div>
 <div class="col-sm-6 col-md-6">
 
 <p>Connect your favorite development environment to VSTS to access your repos and manage your work.
-Team Services IDE integrations are available for [Visual Studio](../accounts/set-up-vs.md), 
+VSTS IDE integrations are available for [Visual Studio](../accounts/set-up-vs.md), 
 [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team), [Eclipse](http://java.visualstudio.com/Docs/tools/eclipse), 
 and [IntelliJ](https://java.visualstudio.com/Docs/tools/intelliJ).</p>
 
-<p>New to Git? Learn how to share code with Git and Team Services with getting started guides for [Visual Studio](share-your-code-in-git-vs.md) , 
+<p>New to Git? Learn how to share code with Git and VSTS with getting started guides for [Visual Studio](share-your-code-in-git-vs.md) , 
 [Eclipse](share-your-code-in-git-eclipse.md) , [Xcode](share-your-code-in-git-xcode.md), and the [command line](share-your-code-in-git-cmdline.md).</p>
 </div>
 </div>
@@ -104,9 +104,9 @@ and [IntelliJ](https://java.visualstudio.com/Docs/tools/intelliJ).</p>
 
 <div class="row">
 <div class="col-sm-6 col-md-6">
-<p>Get up and running with Git and Team Services in just a few minutes with the [Team Services Git quick start](gitquickstart.md).</p>
+<p>Get up and running with Git and VSTS in just a few minutes with the [VSTS Git quick start](gitquickstart.md).</p>
 
-<p>The [Team Services Git tutorial](tutorial/gitworkflow.md) walks you through Git tasks like [creating repos](tutorial/creatingrepo.md), [working in branches](tutorial/branches.md), [saving your work](tutorial/commits.md) , and [sharing your changes](tutorial/pushing.md). 
+<p>The [VSTS Git tutorial](tutorial/gitworkflow.md) walks you through Git tasks like [creating repos](tutorial/creatingrepo.md), [working in branches](tutorial/branches.md), [saving your work](tutorial/commits.md) , and [sharing your changes](tutorial/pushing.md). 
 Every task is presented step-by-step in Visual Studio or from the command line.</p>
 </div>
 <div class="col-sm-6 col-md-6">
@@ -120,15 +120,15 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 <div class="row">
 <div class="col-sm-6 col-md-6">
 
-![Connect to Team Services from anywhere](_img/overview/IC839946.png)   
+![Connect to VSTS from anywhere](_img/overview/IC839946.png)   
 
 </div>
 
 <div class="col-sm-6 col-md-6"> 
 
-<p>You can authenticate with your Team Services Git repo from any platform using [cross-platform credential managers](set-up-credential-managers.md) or [SSH public key authentication](use-ssh-keys-to-authenticate.md).</p>
+<p>You can authenticate with your VSTS Git repo from any platform using [cross-platform credential managers](set-up-credential-managers.md) or [SSH public key authentication](use-ssh-keys-to-authenticate.md).</p>
 
-<p>If you have code ready to share in VSTS, our getting started guides take you through the steps to connect your development environment to a Team Services Git repo and share your code with your team.</p>
+<p>If you have code ready to share in VSTS, our getting started guides take you through the steps to connect your development environment to a VSTS Git repo and share your code with your team.</p>
 
 <ul>
 <li>[Get Started with Visual Studio](share-your-code-in-git-vs.md)</li>

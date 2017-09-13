@@ -46,7 +46,7 @@ Create a new Git repo in VSTS for your Xcode project.
 
 If you have already created a repo for your Xcode project in VSTS, you can skip ahead to [Push your project](#push-your-project).
 
-0. Browse to your Team Project in your Team Services account and select the drop-down ![Team Services drop-down picker](_img/share-your-code-in-git-xcode/vsts_drop_down_arrow.png) next to the name of the current Git repo. Select **New Repository..**  
+0. Browse to your Team Project in your VSTS account and select the drop-down ![VSTS drop-down picker](_img/share-your-code-in-git-xcode/vsts_drop_down_arrow.png) next to the name of the current Git repo. Select **New Repository..**  
   ![Create a new Git repo in VSTS](_img/share-your-code-in-git-xcode/newrepo.png)
 
 0. Enter a name for your new Git repo and select **Create**. Your browser will navigate to your new empty Git repo for your Xcode project. Copy the clone URL to the clipboard so that you can use it in Xcode to connect to VSTS.  

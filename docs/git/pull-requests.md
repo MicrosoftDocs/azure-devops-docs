@@ -33,7 +33,7 @@ Create a new pull request from:
 
 ### After pushing a branch
 
-When you publish or update a feature branch in your Team Services Git repo, you will get a prompt asking if would like to create a pull request in the **Code** view on the web.
+When you publish or update a feature branch in your VSTS Git repo, you will get a prompt asking if would like to create a pull request in the **Code** view on the web.
 
 ![Creating Pull Request through pushed branch in VSTS](_img/pull-requests/create_pr_from_push.png)
 
@@ -122,7 +122,7 @@ Edit the pull request title description by selecting the **Edit** link that appe
 Update the title of a pull request by clicking the current title and updating the text.
 Keep these fields up to date so reviewers know what the changes in the pull request are trying to accomplish.   
 
-![Editing details in an existing Team Services pull request](_img/pull-requests/edit_pr_information.png)
+![Editing details in an existing VSTS pull request](_img/pull-requests/edit_pr_information.png)
 
 <a name="manage"></a>
 
@@ -159,7 +159,7 @@ Comment inline in the **Files** tab in your pull request by selecting the commen
 Leave feedback not tied to a specific code change by commenting in the **Overview** tab. 
 Reply directly to the author or other reviewers by using @_username_ and reference work items using #_workitem_ in your comments.
 
-![Reviewing comments in Team Services pull requests](./_img/pull-requests/pr_comments_summary.png)
+![Reviewing comments in VSTS pull requests](./_img/pull-requests/pr_comments_summary.png)
 
 Update comment status to let reviewers know what you are doing to address the concerns brought up in their review. New comments start in **Active** status and can be updated using the 
 drop-down in the comment to:
@@ -189,13 +189,13 @@ Vote on the changes in a pull request by choosing an option from the button on t
 The number of required approvals in a pull request is set from the [branch policy](branch-policies.md) for the branch. Pull requests can be completed if the number of required approvals is met, even if other reviewers have rejected the changes.
 Votes in a pull request do not reset when new code is pushed to the branch-make sure you have [notifications](#notifications) enabled if you want to review your vote as the code changes.
 
-![List of Pull Request voters in Team Services ](./_img/pull-requests/Approval.png)
+![List of Pull Request voters in VSTS ](./_img/pull-requests/Approval.png)
 
 > Best practice: At least two reviewers should review and approve the changes in a significant pull request.  
 
 ## Update code in response to feedback
 
-Update your code in response to comments by creating a new [commit](tutorial/commits.md) with the changes and [pushing](tutorial/pushing.md) the updates to the branch in your Team Services repo. 
+Update your code in response to comments by creating a new [commit](tutorial/commits.md) with the changes and [pushing](tutorial/pushing.md) the updates to the branch in your VSTS repo. 
 You can make quick updates to your branch from the **Files** tab in the **Code** view on the web.
 
 ![Updating code directly during a pull request in VSTS](./_img/pull-requests/pr_editing_changes.png)

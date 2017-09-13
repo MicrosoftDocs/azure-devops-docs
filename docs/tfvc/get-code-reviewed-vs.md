@@ -1,5 +1,5 @@
 ---
-title: Get your code reviewed with Visual Studio | Visual Studio Team Services
+title: Get your code reviewed with Visual Studio | VSTS
 description: Get a code review from your team using Visual Studio
 ms.assetid: 115cc8ee-e3b3-4bb4-a50f-604a75d52a8e
 toc: show
