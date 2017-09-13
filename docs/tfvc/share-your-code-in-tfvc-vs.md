@@ -1,5 +1,5 @@
 ---
-title: Develop and share your code in TFVC using Visual Studio | Visual Studio Team Services
+title: Develop and share your code in TFVC using Visual Studio | VSTS
 description: Share code in Team Foundation Version Control using Visual Studio
 ms.assetid: 108544c0-c29e-4b3b-9a39-4573cf4a71dc
 toc: show
@@ -21,7 +21,7 @@ as early as possible.
 Here, we'll show you how to get started with 
 Team Foundation Version Control (TFVC), a centralized system.
 If you want to work in a distributed system, 
-you can instead use [Git with Visual Studio Team Services](../git/share-your-code-in-git-vs.md).
+you can instead use [Git with VSTS](../git/share-your-code-in-git-vs.md).
 
 Is your code in another place? [Learn how to migrate it here](#migrate).
 
@@ -74,13 +74,13 @@ Now that you've added your app, you can skip down to
  ![Open your solution in Visual Studio](_img/share-your-code-in-tfvc-vs/open-solution-from-team-explorer-home.png)
 
 
-### Add the solution to Visual Studio Team Services
+### Add the solution to VSTS
 
 0. Open the solution explorer (Keyboard: Ctrl + Alt + L).
 
 0. Add your solution to version control.
 
- ![Add the solution to Visual Studio Team Services](_img/share-your-code-in-tfvc-vs/IC682953.png)
+ ![Add the solution to VSTS](_img/share-your-code-in-tfvc-vs/IC682953.png)
 
 0. Check in the solution.
 
@@ -143,7 +143,7 @@ Your whole team can work on the code now. All your changes are tracked in versio
 
 ## Troubleshooting
 
-* [My code is somewhere else. Can I migrate it to my TFVC project on Visual Studio Team Services?](#my-code-is-somewhere-else-can-i-migrate-it-to-my-tfvc-project-on-visual-studio-team-services)
+* [My code is somewhere else. Can I migrate it to my TFVC project on VSTS?](#my-code-is-somewhere-else-can-i-migrate-it-to-my-tfvc-project-on-visual-studio-team-services)
 * [I don't see the Configure Workspace link shown in the steps above. What do I do next?](#i-dont-see-the-configure-workspace-link-shown-in-the-steps-above-what-do-i-do-next)
 
 <a name="migrate"></a>
@@ -153,7 +153,7 @@ Yes:
 
  * [Upgrade From Visual SourceSafe](http://msdn.microsoft.com/library/ms253060).
 
- * [Migrate from Team Foundation Server into Visual Studio Team Services](../migrate-to-vsts-from-tfs.md).
+ * [Migrate from Team Foundation Server into VSTS](../migrate-to-vsts-from-tfs.md).
 
 <a name="workspace_exists"></a>
 ### I don't see the Configure Workspace link shown in the steps above. What do I do next?

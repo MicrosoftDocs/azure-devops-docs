@@ -87,7 +87,7 @@ Committing large binaries without the Git LFS client installed will push the bin
 If two people are working on the same file at the same time, they must work together to reconcile their changes to avoid overwriting the other's work.
 Git LFS provides [file locking](https://github.com/git-lfs/git-lfs/wiki/File-Locking) to help.
 Users must still take care to always pull the latest copy of a binary asset before beginning work.
-0. Team Services currently does not support using SSH in repos with Git LFS tracked files.   
+0. VSTS currently does not support using SSH in repos with Git LFS tracked files.   
    
 ### File format
 

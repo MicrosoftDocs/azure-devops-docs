@@ -10,7 +10,7 @@ ms.author: sdanie
 ms.date: 08/29/2017
 ---
 
-# Share your code with Visual Studio 2013 and Team Services Git
+# Share your code with Visual Studio 2013 and VSTS Git
 
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](share-your-code-in-git-vs-2017.md)

@@ -11,7 +11,7 @@ ms.date: 08/23/2016
 
 # Set branch permissions
 
-###### Team Services 
+###### VSTS 
 
 ## Overview
 

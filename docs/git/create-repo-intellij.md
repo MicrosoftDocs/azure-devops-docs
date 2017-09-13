@@ -1,6 +1,6 @@
 ﻿---
 title: VSTS Plugin for IntelliJ IDEA and Android Studio | VSTS & TFS
-description: Intro to the IntelliJ plugin available for Visual Studio Team Services.
+description: Intro to the IntelliJ plugin available for Visual Studio VSTS.
 ms.assetid:
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
@@ -95,7 +95,7 @@ To complete the steps in this guide you need:
 Now that we've got a VSTS repo with some sample code, let's take a look at how we can work with the code from IntelliJ IDEA. To clone your VSTS repo in IntelliJ is extremely simple. You don't even need to know the URL for the repo.
 
 
-0. Open IntelliJ IDEA and select **Check out from Version Control** and then choose **Team Services Git**.
+0. Open IntelliJ IDEA and select **Check out from Version Control** and then choose **VSTS Git**.
 
   ![Clone repo](_img/create-repo-intellij/clone-context-menu.png)
 

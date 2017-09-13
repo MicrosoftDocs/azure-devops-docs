@@ -1,6 +1,6 @@
 ---
 title: Get started with Git and Visual Studio | VSTS & TFS
-description: Quick Start with Git and Visual Studio Team Services
+description: Quick Start with Git and Visual Studio VSTS
 ms.assetid: aa9c2f22-6912-4834-8ed3-ed16771760c2
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-git 
@@ -38,7 +38,7 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
   ![Cloning VSTS Git repositories in Visual Studio](_shared/_img/manageConnections.png) 
   
-0. Choose **Connect**, select your Team Services account, choose the projects you want to work on, then
+0. Choose **Connect**, select your VSTS account, choose the projects you want to work on, then
 click **Connect**.   
 
 0. Right click on the project and click **Clone...**. Then enter a local folder on your drive to store the downloaded code.      
@@ -48,10 +48,10 @@ click **Connect**.
 # [Command Line](#tab/command-line)
 
 0. [Download and install Git](http://git-scm.com/download) and the [Git Credential Manager](set-up-credential-managers.md) for your platform.   
-0. Open the Team Services web portal in your browser and find your Git repository. 
+0. Open the VSTS web portal in your browser and find your Git repository. 
 Copy the command line instructions from the **Clone** pop-up.   
 
-  ![Finding the Clone URL for your Git Repository in Visual Studio Team Services](_shared/_img/cloneURL.png)
+  ![Finding the Clone URL for your Git Repository in Visual Studio VSTS](_shared/_img/cloneURL.png)
 
 0. Navigate to the folder where you want the code stored on your local computer using the command line.
 0. From the command line, paste the command you copied from the command line instructions. It will look like this
@@ -137,13 +137,13 @@ team, you complete the pull request through the web browser.
     <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
     &gt; git push -u origin <font color="#b5bd68">dev</font></pre>
 
-0. Open up the Team Services project in the web portal and browse to your repository under the "Code" tab. Click the **Create Pull Request** button to create a pull request for the branch that you pushed.   
+0. Open up the VSTS project in the web portal and browse to your repository under the "Code" tab. Click the **Create Pull Request** button to create a pull request for the branch that you pushed.   
 
-   ![Creating a new Pull Request in Visual Studio Team Services](_shared/_img/vstsCreatePullReq.png)   
+   ![Creating a new Pull Request in Visual Studio VSTS](_shared/_img/vstsCreatePullReq.png)   
 
 0. Create the pull request, adding in team members to review and approve the code changes.
 
-0. Once the changes are approved, complete the pull request in Visual Studio Team Services. 
+0. Once the changes are approved, complete the pull request in Visual Studio VSTS. 
 This will pull your changes from the branch into the master branch of the code.
 
 ---

@@ -10,7 +10,7 @@ ms.date: 08/23/2016
 ---
 
 # Lock a branch
-###### Team Services
+###### VSTS
 
 Prevent updates to a Git [branch](tutorial/branches.md) by locking the branch. 
 Locking a branch prevents other users from changing the existing commit history. 
