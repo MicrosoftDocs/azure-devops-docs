@@ -1,4 +1,4 @@
 ---
-redirect_url: https://docs.microsoft.com/en-us/azure/cloud-services/cloud-services-nodejs-develop-deploy-app
+redirect_url: /vsts/build-release/index?toc=/vsts/build-release/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
 ---
 
