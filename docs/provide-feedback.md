@@ -1,6 +1,6 @@
 ---
-title: Provide product and content feedback | Team Services & TFS
-description: Guide to providing product and content feedback as well as accessing other resources when using Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
+title: Provide product and content feedback | VSTS & TFS
+description: Guide to providing product and content feedback as well as accessing other resources when using Visual Studio VSTS (VSTS) and Team Foundation Server (TFS) 
 ms.technology: vs-devops-overview
 ms.prod: vs-devops-alm
 ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E  
@@ -22,7 +22,7 @@ Here are the quick-access links to use:
 > [!div class="mx-tdBreakAll"]  
 > |Content feedback  |Product feedback  |Service & support |  Community forums  | 
 > |-------------|----------|---------|---------|  
-> |- [Rate a topic](#content-feedback)<br/>-[Provide feedback](#content-feedback) |- [Team Services](http://visualstudio.uservoice.com/forums/330519-team-services)<br/>-[TFS](http://visualstudio.uservoice.com/forums/330519-team-services)<br/>-[Visual Studio](https://visualstudio.uservoice.com/forums/121579-visual-studio)<br/>-[Visual Studio Code](http://visualstudio.uservoice.com/forums/293070-visual-studio-code)<br/>-[Visual Studio Feedback Center](http://developercommunity.visualstudio.com/) |- [Service issue](https://support.microsoft.com/en-us/getsupport?tenant=ClassicCommercial&locale=en-us&supportregion=en-us&pesid=15339&oaspworkflow=start_1.0.0.0&ccsid=636036154608504739)<br/>-[Subscriber support](https://www.visualstudio.com/en-us/support/subscription-support-vs)<br/>-[Billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)<br/>-[Product downloads](https://www.visualstudio.com/downloads/download-visual-studio-vs)<br/>-[Team Services status](https://blogs.msdn.microsoft.com/vsoservice/)<br/>-[Azure status](https://azure.microsoft.com/en-us/status/)<br/>-[Licensing white paper](https://www.microsoft.com/EN-US/privacystatement/OnlineServices/Default.aspx)<br/>-[Privacy policy](https://www.microsoft.com/EN-US/privacystatement/OnlineServices/Default.aspx) | - [Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home)<br/>-[Team Services & TFS](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=TFService)<br/>-[General](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsgeneral)<br/>-[Source code & version control](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsversioncontrol)<br/>-[Project management & work items](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)<br/>-[Process templates](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsprocess)<br/>-[Reporting](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsreporting)<br/>-[Build & release management](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsbuild)<br/>-[Eclipse & cross platform](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tee)<br/>-[Setup & administration](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsadmin)<br/>-[Stack Overflow, Team Services](http://stackoverflow.com/questions/tagged/vs-team-services)<br/>-[Stack Overflow, TFS](http://stackoverflow.com/questions/tagged/tfs) | 
+> |- [Rate a topic](#content-feedback)<br/>-[Provide feedback](#content-feedback) |- [VSTS](http://visualstudio.uservoice.com/forums/330519-team-services)<br/>-[TFS](http://visualstudio.uservoice.com/forums/330519-team-services)<br/>-[Visual Studio](https://visualstudio.uservoice.com/forums/121579-visual-studio)<br/>-[Visual Studio Code](http://visualstudio.uservoice.com/forums/293070-visual-studio-code)<br/>-[Visual Studio Feedback Center](http://developercommunity.visualstudio.com/) |- [Service issue](https://support.microsoft.com/en-us/getsupport?tenant=ClassicCommercial&locale=en-us&supportregion=en-us&pesid=15339&oaspworkflow=start_1.0.0.0&ccsid=636036154608504739)<br/>-[Subscriber support](https://www.visualstudio.com/en-us/support/subscription-support-vs)<br/>-[Billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)<br/>-[Product downloads](https://www.visualstudio.com/downloads/download-visual-studio-vs)<br/>-[VSTS status](https://blogs.msdn.microsoft.com/vsoservice/)<br/>-[Azure status](https://azure.microsoft.com/en-us/status/)<br/>-[Licensing white paper](https://www.microsoft.com/EN-US/privacystatement/OnlineServices/Default.aspx)<br/>-[Privacy policy](https://www.microsoft.com/EN-US/privacystatement/OnlineServices/Default.aspx) | - [Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home)<br/>-[VSTS & TFS](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=TFService)<br/>-[General](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsgeneral)<br/>-[Source code & version control](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsversioncontrol)<br/>-[Project management & work items](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)<br/>-[Process templates](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsprocess)<br/>-[Reporting](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsreporting)<br/>-[Build & release management](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsbuild)<br/>-[Eclipse & cross platform](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tee)<br/>-[Setup & administration](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsadmin)<br/>-[Stack Overflow, VSTS](http://stackoverflow.com/questions/tagged/vs-team-services)<br/>-[Stack Overflow, TFS](http://stackoverflow.com/questions/tagged/tfs) | 
 
 
 **Blogs & videos**
@@ -70,14 +70,14 @@ To learn more about reporting a problem, see [Report a problem with Visual Studi
  
 ## Learn about the latest updates 
 
-Every three weeks or so we update Team Services and provide a summary of new and updated features through our [Product features timeline](https://www.visualstudio.com/news/release-archive-vso). 
+Every three weeks or so we update VSTS and provide a summary of new and updated features through our [Product features timeline](https://www.visualstudio.com/news/release-archive-vso). 
 
 <a id="platform-version">  </a>
 ## Platforms and version support 
 
-We add new features all the time, especially to our Team Services cloud offering. Later, most of these features make there way into our on-premises TFS product. To learn about whats new and coming, check out the [Features timeline pages](https://www.visualstudio.com/en-us/news/release-archive-vso). 
+We add new features all the time, especially to our VSTS cloud offering. Later, most of these features make there way into our on-premises TFS product. To learn about whats new and coming, check out the [Features timeline pages](https://www.visualstudio.com/en-us/news/release-archive-vso). 
 
-Our content supports both platforms&mdash;Team Services and TFS&mdash; and multiple versions of TFS. At the top of each topic, you'll see a platform/version heading to alert you as to which platforms and versions are supported. For example: 
+Our content supports both platforms&mdash;VSTS and TFS&mdash; and multiple versions of TFS. At the top of each topic, you'll see a platform/version heading to alert you as to which platforms and versions are supported. For example: 
 
 <img src="_img/provide-feedback-platform-version-header.png" alt="Topic platform-version header" style="border: 1px solid #CCCCCC;" />  
 
@@ -87,10 +87,10 @@ If the platform-version heading is missing, and you're unsure of whether it's su
   
 ### What platform/version am I using? 
 
-You can tell what platform you use from the URL you use to connect to Team Services or TFS. 
+You can tell what platform you use from the URL you use to connect to VSTS or TFS. 
 
-**Team Services**
-A Team Services URL consists of an account name and visual studio.com, for example: ```https://{youraccount}.visualstudio.com```.  
+**VSTS**
+A VSTS URL consists of an account name and visual studio.com, for example: ```https://{youraccount}.visualstudio.com```.  
 
 To learn the version number, enter the following address in a web browser:     
 ```
@@ -98,7 +98,7 @@ https://AccountName.visualstudio.com/_home/About
 ```  
 A page similar to the one shown will open showing the version number.  
 
-<img src="_img/version-team-services.png" alt="Team Services About page, version number" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/version-team-services.png" alt="VSTS About page, version number" style="border: 1px solid #CCCCCC;" />  
 
 
 **TFS**  
