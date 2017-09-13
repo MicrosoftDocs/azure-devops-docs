@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Basic styles for widgets | Extensions for Visual Studio Team Services
-description: Styles from Widget SDK to be used in widgets on dashboards in Visual Studio Team Services.
+title: Basic styles for widgets | Extensions for VSTS
+description: Styles from Widget SDK to be used in widgets on dashboards in VSTS.
 ms.assetid: E5CB346F-E3EA-4A47-B10C-FFC300766585
 ms.manager: douge
 ms.author: elbatk

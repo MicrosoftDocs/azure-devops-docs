@@ -22,7 +22,7 @@ Depending on the size of your team and the number of stories in progress, your K
 <table width="70%">
 <tr>
 <th width="40%">Filter options </th>
-<th width="20%">Team Services</th>
+<th width="20%">VSTS</th>
 <th width="20%">TFS 2015 </th>
 <th width="20%">TFS 2017 </th>
 </tr>

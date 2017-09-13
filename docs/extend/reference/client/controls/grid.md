@@ -1,6 +1,6 @@
 ---
-title: Grid Control | Extensions for Visual Studio Team Services
-description: Use the grid control to show rows and columns items that can be sorted, resized and moved in your app for Visual Studio Team Services.
+title: Grid Control | Extensions for VSTS
+description: Use the grid control to show rows and columns items that can be sorted, resized and moved in your app for VSTS.
 ms.assetid: d0b0cded-3e7f-4972-95bb-8b634fb13f94
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api

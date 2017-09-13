@@ -13,7 +13,7 @@ ms.date: 02/14/2017
 
 [!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)] 
 
-You use the `CATEGORIES` element to group work item types (WITs). [Use categories to group work item types](use-categories-to-group-work-item-types.md) provides a description of each of the default categories used by Team Services and Team Foundation Server (TFS).  
+You use the `CATEGORIES` element to group work item types (WITs). [Use categories to group work item types](use-categories-to-group-work-item-types.md) provides a description of each of the default categories used by VSTS and Team Foundation Server (TFS).  
   
 ## Syntax  
   

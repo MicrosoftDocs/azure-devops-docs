@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: WebHooks with Visual Studio Team Services
+title: WebHooks with VSTS
 description: Use WebHooks with your VSTS account
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77
 ms.manager: douge
@@ -18,7 +18,7 @@ For more information about the JSON payloads posted by this consumer, see [event
 
 ## Send JSON representation to a service
 
-1. Open the admin page for the team project in Visual Studio Team Services.
+1. Open the admin page for the team project in VSTS.
 
 2. On the Service Hooks tab, run the subscription wizard.
 

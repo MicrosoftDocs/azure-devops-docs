@@ -20,7 +20,7 @@ in this early stage, a few things have to be done manually at this point - and t
 with the returned data. This documentation will show you how to do both.
 
 The following topics describe how to build an extension and a widet extension:  
-- [Overview of extensions for Visual Studio Team Services](../../extend/get-started/node.md)  
+- [Overview of extensions for VSTS](../../extend/get-started/node.md)  
 - [Add a dashboard widget](../../extend/develop/add-dashboard-widget.md)  
  
 For the purposes of this example we'll use the open source C3 charting library which sits on top of the D3 graphics library.

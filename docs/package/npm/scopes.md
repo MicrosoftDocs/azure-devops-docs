@@ -1,6 +1,6 @@
 ---
 title: Use npm scopes for private packages
-description: Use npm scopes for private packages in Visual Studio Team Services
+description: Use npm scopes for private packages in VSTS
 ms.assetid: c88868bd-8101-48f3-b76d-17c858181fda
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
@@ -14,7 +14,7 @@ ms.date: 09/01/2017
 [!INCLUDE [](../_shared/availability-npm.md)]
 
 [Scopes](https://docs.npmjs.com/misc/scope) are built into npm and are a way of grouping packages together.
-In Team Services and in npmjs.com, you can publish and use both scoped and unscoped packages. 
+In VSTS and in npmjs.com, you can publish and use both scoped and unscoped packages. 
 
 Scopes are also the npm client's only native affordance to use multiple registries/feeds.
 They allow you to separate your private packages from npmjs.com packages by prefixing your packages with a `@scope`:

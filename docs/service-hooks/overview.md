@@ -1,5 +1,5 @@
 ---
-title: Integrate with service hooks | Visual Studio Team Services
+title: Integrate with service hooks | VSTS
 description: Perform tasks with other services when events happen in VSTS projects
 ms.assetid: c0617128-b67c-4ec4-b1c9-e65e1b3ab82c
 ms.prod: vs-devops-alm
@@ -20,7 +20,7 @@ when events happen in your projects.
 
 ## Available services
 
-> These services are available as the target of service hooks. To learn about others apps and services that integrate with Visual Studio Team Services, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/#VSTS)
+> These services are available as the target of service hooks. To learn about others apps and services that integrate with VSTS, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/#VSTS)
 
 Build and release                  |  Collaborate 	                    | Customer support	                    | Plan and track 	             | Integrate
 -------------------		           |  -------------	                    | ----------------		                | ---------		                 | -------
@@ -32,7 +32,7 @@ Build and release                  |  Collaborate 	                    | Custome
 
 ## Create a subscription
 
-When you integrate one of these services with Visual Studio Team Services, 
+When you integrate one of these services with VSTS, 
 you have to create a new subscription, something like this. In many cases, 
 you have to do some work in the other service, too. For specific details, 
 look at the information on the service that you're interested in.

@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting getting extensions for Visual Studio Team Services
-description: Troubleshooting getting and paying for extensions for Visual Studio Team Services
+title: Troubleshooting getting extensions for VSTS
+description: Troubleshooting getting and paying for extensions for VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-marketplace
 ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7 
@@ -9,9 +9,9 @@ ms.author: elbatk
 ms.date: 08/01/2017
 ---
 
-# Troubleshooting getting and paying for extensions for Visual Studio Team Services
+# Troubleshooting getting and paying for extensions for VSTS
 
-**Team Services**
+**VSTS**
 
 
 ## General
@@ -25,9 +25,9 @@ ms.date: 08/01/2017
 
 ## Install, request, assign, and access extensions
 
-#### Q: Who can install extensions for Visual Studio Team Services?
+#### Q: Who can install extensions for VSTS?
 
-A: The Team Services account owner and 
+A: The VSTS account owner and 
 project collection administrator can install extensions. 
 If you don't have permissions, but you're an account member, 
 you can request extensions instead. 
@@ -42,12 +42,12 @@ you can request extensions instead.
 
 [!INCLUDE [no-accounts](../billing/_shared/qa-no-accounts.md)]
 
-#### Q: Why can't I install extensions for Team Services?
+#### Q: Why can't I install extensions for VSTS?
 
 A:	This might happen for these reasons:
 
 <a name="no-permissions"></a>
-*	You must have Team Services 
+*	You must have VSTS 
 [project collection administrator or account owner permissions](#find-owner). 
 If you don't have permissions, but you're an account member, 
 you can request extensions instead.
@@ -80,7 +80,7 @@ for users who need access.
 
 A:	This might happen for several reasons.
 
-*	You don't have at Team Services 
+*	You don't have at VSTS 
 [project collection administrator or account owner permissions](#find-owner).
 
 *	Your users don't have the correct access levels. 
@@ -115,18 +115,18 @@ For example, the Test Manager extension requires at least Basic access.
 <a name="cant-use-linked-azure-subscription"></a>
 #### Q:	What if I already set up billing with a subscription that I can't use?
 
-A:	If your Team Services account is linked to an Azure subscription 
+A:	If your VSTS account is linked to an Azure subscription 
 that wasn't created from an Enterprise Agreement or with a credit card on file, 
 you'll get this message: "Your account is linked to an Azure subscription 
 that doesn't have a credit card on file. Learn how to change your subscription."
 
 Follow these steps to create a new Azure subscription with a credit card, 
-then change the Azure subscription that's linked to your Team Services account.
+then change the Azure subscription that's linked to your VSTS account.
 
 **Set up billing with a new Azure subscription**
 0.	Use a credit card to create a new [Pay-As-You-Go Azure subscription](https://azure.microsoft.com/en-us/offers/ms-azr-0003p/).
 0.	Follow these steps to [change your Azure subscription](/vsts/billing/set-up-billing-for-your-account-vs#change-azure-subscription) 
-for your Team Services account.
+for your VSTS account.
 
 [!INCLUDE [azure-bill-larger](../_shared/qa-azure-bill-larger.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Manage conditional access to Visual Studio Team Services
+title: Manage conditional access to VSTS
 description: Manage conditional access to VSTS to restrict access based on multi-factor authentication
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -35,7 +35,7 @@ or block access.
 See [more information and resources](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access).
 
 
-## Enable conditional access for Visual Studio Team Services
+## Enable conditional access for VSTS
 
 You need to use the azure portal to enable conditional access.
 

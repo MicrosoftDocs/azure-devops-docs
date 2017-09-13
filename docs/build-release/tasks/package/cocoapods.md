@@ -1,6 +1,6 @@
 ---
 title: CocoaPods
-description: How to use CocoaPods packages when building code in Visual Studio Team Services
+description: How to use CocoaPods packages when building code in VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: D690542B-9A13-4836-8C1E-D715AE6CB7D6

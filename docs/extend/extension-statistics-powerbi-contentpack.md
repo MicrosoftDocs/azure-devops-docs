@@ -41,7 +41,7 @@ The content pack contains a complete analytic data model (tables, relationships 
 
 7. The next step specifies the authentication method. Only oAuth2 is supported. Click **Sign In** to continue.
 
-    ![Login to VS Team Services with oAuth2](_img/connect-to-vs-team-services-auth.png)  
+    ![Login to VS VSTS with oAuth2](_img/connect-to-vs-team-services-auth.png)  
 
 	**Important**: You won't be able to connect if your account administrator disabled third party application access via OAuth. When enabled, it appears as follows on the Administration > Control panel > Settings page:  
 
@@ -51,7 +51,7 @@ The content pack contains a complete analytic data model (tables, relationships 
 
 8. Successful authorization displays the following authorization dialog which allows Power BI to retrieve data from your account. Scroll down to the bottom and click **Accept**.
 
-	![VS Team Services Authorization page](_img/Screen6.png)  
+	![VS VSTS Authorization page](_img/Screen6.png)  
 
 9. Once Power BI is authorized, data will begin to load and you'll be presented with a loading screen until the data is complete. Depending on how much data there is, it may take a few minutes to complete the data load. All extension data associated with this publisher will be downloaded. 
 

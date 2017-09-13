@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Package and Publish an Integration | Extensions for Visual Studio Team Services
+title: Package and Publish an Integration | Extensions for VSTS
 description: How to package and publish your integration to the Visual Studio Marketplace
 ms.assetid: 61550050-c6d7-40e1-9ea7-030b48b04e3b
 ms.manager: douge
@@ -36,7 +36,7 @@ Publishing to the Marketplace is an iterative process that starts with creating 
 
 ![example](./_img/integration-example.png)
 
-[Jenkins for Visual Studio Team Services](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins)
+[Jenkins for VSTS](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins)
 
 Note: you will see the term `extension` used in documentations referenced below. Extensions are another type of Marketplace item and share many similarities from a discovery standpoint as integrations.
 

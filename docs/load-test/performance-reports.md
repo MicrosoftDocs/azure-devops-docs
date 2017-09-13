@@ -39,7 +39,7 @@ information.
   can see the list of all the test runs in Visual Studio Team
   Services **Load test** list. 
 
-  ![List of load test runs in Visual Studio Team Services](_img/performance-reports/LoadTestViewListTS.png)
+  ![List of load test runs in VSTS](_img/performance-reports/LoadTestViewListTS.png)
 
 <a name="filterselect"></a>
 ## Filter and select a load test

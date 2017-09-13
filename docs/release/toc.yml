@@ -8,7 +8,7 @@
     href: ../build-release/concepts/agents/agents.md
   - name: Concurrent pipelines in TFS
     href: ../build-release/concepts/licensing/concurrent-pipelines-tfs.md
-  - name: Pipelines in Team Services
+  - name: Pipelines in VSTS
     href: ../build-release/concepts/licensing/concurrent-pipelines-ts.md
   - name: Azure RM endpoints
     href: ../build-release/actions/azure-rm-endpoint.md

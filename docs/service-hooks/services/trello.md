@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Trello with Visual Studio Team Services
+title: Trello with VSTS
 description: Use Trello with your VSTS account
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 ms.manager: douge
@@ -10,9 +10,9 @@ ms.date: 08/04/2016
 ms.topic: get-started-article
 ---
 
-# Trello with Visual Studio Team Services
+# Trello with VSTS
 
-Create cards and lists in Trello in response to events from Visual Studio Team Services.
+Create cards and lists in Trello in response to events from VSTS.
 For example, when code is pushed, or a build occurs.
 
 ## Get a Trello authorization token
@@ -23,7 +23,7 @@ For example, when code is pushed, or a build occurs.
 
 3. Allow VSTS to use your Trello account.
 
-   <img alt="Allow Visual Studio Team Services" src="./_img/trello/allow.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Allow VSTS" src="./_img/trello/allow.png" style="border: 1px solid #CCCCCC" />
 
 4. Copy the authorization token.
 

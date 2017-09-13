@@ -13,7 +13,7 @@ ms.date: 01/02/2017
 
 This tutorial shows how to configure a continuous delivery (CD) workflow for
 [Azure App Service](https://azure.microsoft.com/en-us/documentation/articles/app-service-changes-existing-services/)
-by using Visual Studio Team Services. CD is a great option for projects that require multiple and frequent
+by using VSTS. CD is a great option for projects that require multiple and frequent
 contributions to be integrated.
 
 CD in VSTS simplifies setting up a robust
@@ -60,7 +60,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
    ![Opening Azure Continuous Delivery configuration](_img/continuous-app-service/01.png)
 
 1. Select **Choose repository** and select the type of repository where you stored your app's source code.
-   You have a choice of **Visual Studio Team Services**, **GitHub** or **External Git**
+   You have a choice of **VSTS**, **GitHub** or **External Git**
    (a Git type repository not hosted in VSTS or GitHub).
 
    ![Specifying the type of source code repository](_img/continuous-app-service/02.png)
@@ -207,7 +207,7 @@ may encounter the following known issues:
 * If you do not have relevant permission to create build and release definitions 
   in the VSTS account, the Continuous Delivery configuration will fail
   with an appropriate error message. See 
-  [Manage users and access in Visual Studio Team Services](../../../../accounts/add-account-users-assign-access-levels.md).
+  [Manage users and access in VSTS](../../../../accounts/add-account-users-assign-access-levels.md).
   
 * Continuous Delivery supports only applications developed by using
   [ASP.NET](https://www.asp.net/) and [ASP.NET Core](https://www.microsoft.com/net/core#windows).

@@ -27,15 +27,15 @@ see <span sdata="link"> How to: Install Team Foundation Proxy and set up a remot
 			<td>
 				Adds the specified server or collection to the proxy list in the Proxy.config file.
 				You can run /add multiple times to include more collections or servers.
-				When using /add with a collection hosted on Visual Studio Team Services,
-				you will be prompted for your credentials on Visual Studio Team Services.
+				When using /add with a collection hosted on VSTS,
+				you will be prompted for your credentials on VSTS.
 			</td>
 		</tr>
 		<tr>
 			<td><strong>/change</strong></td>
 			<td>
-				Changes the credentials stored as the service account for Visual Studio Team Services.
-				The /change option is only used for Visual Studio Team Services; it should not be used for local deployments of TFS.
+				Changes the credentials stored as the service account for VSTS.
+				The /change option is only used for VSTS; it should not be used for local deployments of TFS.
 			</td>
 		</tr>
 		<tr>
@@ -45,7 +45,7 @@ see <span sdata="link"> How to: Install Team Foundation Proxy and set up a remot
 		<tr>
 			<td><strong>/account</strong></td>
 			<td>
-				Specifies the account used as the service account for the proxy in Visual Studio Team Services.
+				Specifies the account used as the service account for the proxy in VSTS.
 				This option is only used for VSTS in conjunction with the /change option.<br/><br/>
 				The default service account used for VSTS is &quot;Account Service.&quot;
 			</td>
@@ -56,12 +56,12 @@ see <span sdata="link"> How to: Install Team Foundation Proxy and set up a remot
 		</tr>
 		<tr>
 			<td><strong>/Collection</strong>:TeamProjectCollectionURL</td>
-			<td>Specifies the URL of the team project collection that is hosted on Visual Studio Team Services, in `AccountName.DomainName/CollectionName` format.</td>
+			<td>Specifies the URL of the team project collection that is hosted on VSTS, in `AccountName.DomainName/CollectionName` format.</td>
 		</tr>
 		<tr>
 			<td><strong>/account</strong>:AccountName</td>
 			<td>
-				Specifies the name of the account that is used as the service account for Visual Studio Team Services.
+				Specifies the name of the account that is used as the service account for VSTS.
 				If the account name has spaces, the name must be enclosed within quotation marks (&quot;&quot;).
 				All special characters in account names must be specified in accordance with command-line syntax.
 			</td>
@@ -91,7 +91,7 @@ The following example shows how to add a team project collection hosted on VSTS 
 
     TFSConfig Proxy /add /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver 
 
-The following example shows how to change the service account used by the proxy for the team project collection hosted on Visual Studio Team Services. The collection is named PhoneSaver, the account name used for VSTS is HelenaPetersen.fabrikam.com, and the service account used by the proxy is being changed to "My Proxy Service Account". Because the account name contains spaces, quotation marks are used to enclose the name.
+The following example shows how to change the service account used by the proxy for the team project collection hosted on VSTS. The collection is named PhoneSaver, the account name used for VSTS is HelenaPetersen.fabrikam.com, and the service account used by the proxy is being changed to "My Proxy Service Account". Because the account name contains spaces, quotation marks are used to enclose the name.
 
     TFSConfig Proxy /change /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver
 		/account:"My Proxy Service Account"

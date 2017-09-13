@@ -40,4 +40,4 @@ Then, run
 nuget.exe delete {your_package_id} {version} -Source {feed URL} -ApiKey key
 ```
 
-Currently, NuGet.exe can only **unlist** packages; Team Services and TFS interpret `nuget.exe delete` as an unlist operation to be consistent with NuGet.org. To **delete** a package, you must use either the REST APIs or the web interface. 
+Currently, NuGet.exe can only **unlist** packages; VSTS and TFS interpret `nuget.exe delete` as an unlist operation to be consistent with NuGet.org. To **delete** a package, you must use either the REST APIs or the web interface. 

@@ -1,6 +1,6 @@
 ---
-title: Use NuGet with Team Services feeds
-description: Authenticating to feeds with NuGet in Visual Studio Team Services
+title: Use NuGet with VSTS feeds
+description: Authenticating to feeds with NuGet in VSTS
 ms.assetid: 10665DBC-846E-4192-8CAB-D5A4C6E40C65
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
@@ -9,7 +9,7 @@ ms.author: amullans
 ms.date: 09/01/2017
 ---
 
-# Use NuGet with Team Services feeds
+# Use NuGet with VSTS feeds
 
 [!INCLUDE [](../_shared/availability-nuget.md)]
 
@@ -56,7 +56,7 @@ For advanced scenarios, you can choose where to install the provider:
 
   - **Projects with a developer command prompt or enlistment:** Use the provider from an 
   [environment variable](http://docs.nuget.org/Consume/Credential-Providers#using-a-credential-provider-from-an-environment-variable) by copying `CredentialProvider.Vss.exe` to any folder, then run this command in PowerShell: `$env:NUGET_CREDENTIALPROVIDERS_PATH = {your folder}`
-  - **Projects using a non-Team Services CI server:** Use the provider from an 
+  - **Projects using a non-VSTS CI server:** Use the provider from an 
   [environment variable](http://docs.nuget.org/Consume/Credential-Providers#using-a-credential-provider-from-an-environment-variable)
   - **Work on an individual machine:** Install the provider 
   [globally](http://docs.nuget.org/Consume/Credential-Providers#installing-a-credential-provider-globally) by copying `CredentialProvider.Vss.exe` to `$env:LOCALAPPDATA\NuGet\CredentialProviders`

@@ -41,7 +41,7 @@ The following table contains a detailed comparison of both options.
     <tr>
         <td>First release date</td>
         <td><a href="https://powerbi.microsoft.com/en-us/documentation/powerbi-content-pack-visual-studio">May 27, 2015</a></td>
-        <td><a href="https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-january-feature-summary/#visualStudioTeamServices">January 9, 2017</a></td>
+        <td><a href="https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-january-feature-summary/#visualStudioTeam Services">January 9, 2017</a></td>
     </tr>
     <tr>
         <td>Last update date</td>

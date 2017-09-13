@@ -1,5 +1,5 @@
 ---
-title: Selenium testing in Visual Studio Team Services
+title: Selenium testing in VSTS
 description: UI Testing with Selenium in a continuous integration pipeline in Visual Studio Team Services (VSTS) and Team Foundation Server TFS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build

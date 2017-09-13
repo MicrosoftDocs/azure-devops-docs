@@ -11,7 +11,7 @@ author: mlearned
 
 # Articles about DevOps and VSTS
 
-Here you'll find more resources to support your development efforts with Visual Studio Team Services, Team Foundation Server, and Visual Studio. These topics include materials for public preview, use cases, and whitepapers. 
+Here you'll find more resources to support your development efforts with VSTS, Team Foundation Server, and Visual Studio. These topics include materials for public preview, use cases, and whitepapers. 
 
 > [!NOTE]
 > For the full VSTS documentation, go to [VSTS Documentation](/vsts).

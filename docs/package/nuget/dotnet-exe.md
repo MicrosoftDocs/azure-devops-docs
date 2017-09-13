@@ -1,6 +1,6 @@
 ---
-title: Use dotnet with Team Services feeds
-description: Authenticating to feeds with NuGet in Visual Studio Team Services
+title: Use dotnet with VSTS feeds
+description: Authenticating to feeds with NuGet in VSTS
 ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
@@ -9,7 +9,7 @@ ms.author: amullans
 ms.date: 09/01/2017
 ---
 
-# Use dotnet with Team Services feeds
+# Use dotnet with VSTS feeds
 
 [!INCLUDE [](../_shared/availability-nuget.md)]
 

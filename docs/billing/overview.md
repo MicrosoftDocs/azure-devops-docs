@@ -14,14 +14,14 @@ ms.date: 04/28/2017
 
 VSTS billing covers:
 
-* Purchasing extensions for Visual Studio, Visual Studio Team Services, Team Foundation Server (TFS), and Visual Studio Code
+* Purchasing extensions for Visual Studio, VSTS, Team Foundation Server (TFS), and Visual Studio Code
 
 * Purchase pay-for-usage extensions, such as Test Manager and Package Management (these extensions are assigned to specific users). 
 
 
 ## What are extensions
 
-An extension is an installable unit that contributes new capabilities into Visual Studio, Visual Studio Team Services, Team Foundation Server, or Visual Studio Code. You can find extensions from within these product or from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/). 
+An extension is an installable unit that contributes new capabilities into Visual Studio, VSTS, Team Foundation Server, or Visual Studio Code. You can find extensions from within these product or from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/). 
 
 Extending VSTS is the easiest way for users to get the most out of their 
 devops environment. The [Visual Studio Marketplace](https://marketplace.visualstudio.com) is home to hundreds of extensions
@@ -81,7 +81,7 @@ Visual Studio subscriptions that are paid in full for the year.
 
 >[!NOTE] 
 >You can't use the [Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/) to pay for Visual Studio Marketplace purchases, 
->which applies to Visual Studio Team Services, HockeyApp user plans, and so on.
+>which applies to VSTS, HockeyApp user plans, and so on.
 
 <a name="bill-period"></a>
 ### Billing frequency

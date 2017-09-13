@@ -95,7 +95,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 # [Browser](#tab/browser)
 
-### Team Services
+### VSTS
 <a id="team-services-email" />  
 **From the web portal**, open the ![Actions icon](../_img/icons/actions-icon.png) Actions menu and choose the email option. 
    
@@ -140,7 +140,7 @@ Depending on the option and client you choose, summary lists may or may not incl
  
 # [Browser](#tab/browser)
 
-### Team Services, TFS 2017 
+### VSTS, TFS 2017 
 
 <a id="team-services-email-list" /> 
 <a id="email-list-web-portal" >  </a> 
@@ -216,7 +216,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 > All URLs you copy, regardless of the client you use to copy them, opens the work item in the web portal. 
 
 # [Browser](#tab/browser)
-### Team Services, TFS 2017 
+### VSTS, TFS 2017 
 <a id="team-services-copy-url" />
 
 **From the web portal**, simply copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](../backlogs/_img/icon-copy-to-clipboard.png) copy-to-clipboard icon.

@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Extension Manifest Reference| Extensions for Visual Studio Team Services
-description: How to create a manifest for your extension to Visual Studio Team Services.
+title: Extension Manifest Reference| Extensions for VSTS
+description: How to create a manifest for your extension to VSTS.
 ms.assetid: e3150221-3cdf-47e1-b7e9-24211498cc29
 ms.manager: douge
 ms.author: elbatk
@@ -144,25 +144,25 @@ This extension contributions an action to the completed builds context menu and 
 
 ## Installation targets
 
-As the name implies, installation targets define the products and services your extension can be installed into. `Microsoft.VisualStudio.Services` is the most common installation target and indicates that the extension can be installed into Team Services and Team Foundation Server 2015 Update 2 and later (the version when extension were introduced in Team Foundation Server).
+As the name implies, installation targets define the products and services your extension can be installed into. `Microsoft.VisualStudio.Services` is the most common installation target and indicates that the extension can be installed into VSTS and Team Foundation Server 2015 Update 2 and later (the version when extension were introduced in Team Foundation Server).
 
 The installation targets for an extension or integration are specified via the `targets` field in the manifest. 
 
 Supported identifiers for **extensions**:
 
-* `Microsoft.VisualStudio.Services.Cloud`: installs into Team Services
+* `Microsoft.VisualStudio.Services.Cloud`: installs into VSTS
 * `Microsoft.TeamFoundation.Server`: installs into Team Foundation Server
 * `Microsoft.VisualStudio.Services`: installs into both. Shortcut for `Microsoft.VisualStudio.Services.Cloud` and `Microsoft.TeamFoundation.Server` version `[14.2,)`
 
-Supported identifiers for **integrations** (tools or services that integrate with Team Services or Team Foundation Server):
+Supported identifiers for **integrations** (tools or services that integrate with VSTS or Team Foundation Server):
 
-* `Microsoft.VisualStudio.Services.Cloud.Integration`: integrates with Team Services
+* `Microsoft.VisualStudio.Services.Cloud.Integration`: integrates with VSTS
 * `Microsoft.TeamFoundation.Server.Integration`: integrates with Team Foundation Server
 * `Microsoft.VisualStudio.Services.Integration`: integrates with boht. Shortcut for `Microsoft.VisualStudio.Services.Cloud.Integration` and `Microsoft.TeamFoundation.Server.Integration`
 
 ### Examples
 
-#### Example 1: Extension that works with Team Services and Team Foundation Server
+#### Example 1: Extension that works with VSTS and Team Foundation Server
 
 ```
 {
@@ -174,7 +174,7 @@ Supported identifiers for **integrations** (tools or services that integrate wit
 }
 ```
 
-#### Example 2: Extension that works only with Team Services
+#### Example 2: Extension that works only with VSTS
 
 ```
 {
@@ -186,9 +186,9 @@ Supported identifiers for **integrations** (tools or services that integrate wit
 }
 ```
 
-Installation targets can also be used in the manifest of integrations (i.e. products, apps, or tools that work with, but do not install into, Team Services or Team Foundation Server. For example:
+Installation targets can also be used in the manifest of integrations (i.e. products, apps, or tools that work with, but do not install into, VSTS or Team Foundation Server. For example:
 
-#### Example 3: Integration that works with Team Services and Team Foundation Server
+#### Example 3: Integration that works with VSTS and Team Foundation Server
 
 ```
 {
@@ -237,7 +237,7 @@ Version numbers for Team Foundation Server:
 
 ### Examples showing versions
 
-#### Example 5: Extension that works with Team Services and Team Foundation Server 2017 and later
+#### Example 5: Extension that works with VSTS and Team Foundation Server 2017 and later
 
 ```
 {
@@ -281,7 +281,7 @@ Version numbers for Team Foundation Server:
 
 ### Shortcuts
 
-`Microsoft.VisualStudio.Services` is a shortcut for Team Services and Team Foundation Server 2015 Update 2 and later. So this:
+`Microsoft.VisualStudio.Services` is a shortcut for VSTS and Team Foundation Server 2015 Update 2 and later. So this:
 
 ```
 {
@@ -311,7 +311,7 @@ is equivalent to:
 
 ### Using installation targets and demands
 
-Installation targets and demands are used together to present users with an accurate view of the products/services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-verison/3.0` means the extension works with Team Services and Team Foundation Server 2017 RTM and later:
+Installation targets and demands are used together to present users with an accurate view of the products/services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-verison/3.0` means the extension works with VSTS and Team Foundation Server 2017 RTM and later:
 
 #### Example 8: Extension that uses version 3.0 APIs
 

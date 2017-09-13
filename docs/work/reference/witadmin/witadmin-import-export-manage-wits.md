@@ -17,7 +17,7 @@ You can manage work item types for a team project by using the following **witad
 -   **destroywitd**:  Destroys a work item type, and destroys every work item of that type permanently without recovery.    
 -   **exportwitd**:  Exports the definition of a work item type to an XML file, or to the Command Prompt window.    
 -   **importwitd**:  Imports work item types from an XML definition file into a team project on a server that runs Team Foundation Server. If a work item type with the same name already exists, the new work item type definition overwrites the existing one. If the work item type does not already exist, this command creates a new work item type. To validate the XML that defines a work item type, but not import the file, you use the **/v** option.   
--   **listwitd**:  Displays the names of the work item types in the specified project in the Command Prompt window.  (can run against Visual Studio Team Services)   
+-   **listwitd**:  Displays the names of the work item types in the specified project in the Command Prompt window.  (can run against VSTS)   
 -   **renamewitd**:  Changes the display name of a work item type within a specific project. After you run this command, work items of this type show the new name.  
   
 

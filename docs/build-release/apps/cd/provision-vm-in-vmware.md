@@ -66,7 +66,7 @@ the agent machine:
 1. Install the VMware extension 
    from Visual Studio Marketplace into your server or account.
 
-   * If you are using **Visual Studio Team Services**, 
+   * If you are using **VSTS**, 
      install the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp)
      in Visual Studio Marketplace. 
    * If you are using **Team Foundation Server**, download 

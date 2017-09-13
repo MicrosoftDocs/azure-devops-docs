@@ -12,7 +12,7 @@ ms.date: 08/15/2017
 
 # Get started as a Stakeholder  
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 
 With Stakeholder access, you can add and modify work items, approve releases, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
@@ -29,11 +29,11 @@ Use this topic to learn:
 
 ## First time signing in 
 
-1. If you're connecting to Team Services, click the link provided in the email invitation you should have received. 
+1. If you're connecting to VSTS, click the link provided in the email invitation you should have received. 
 
   Or, open a browser window and enter the URL for the web portal.
 
-  **Team Services:**  ```http://AccountName.visualstudio.com/DefaultCollection/ProjectName```
+  **VSTS:**  ```http://AccountName.visualstudio.com/DefaultCollection/ProjectName```
  
   **On-premises TFS:**  ```http://ServerName:8080/tfs/DefaultCollection/ProjectName```
 
@@ -51,7 +51,7 @@ You might see different work item types in your view based on the process select
 >[!NOTE]  
 >A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.    
     
-#### Team Services, TFS 2017
+#### VSTS, TFS 2017
 
 From the Work hub, choose a work item, for example User Story, from the New Work Item list of options. Click the ![pin icon](../work/_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu.   
 
@@ -130,16 +130,16 @@ For a comparison chart of Stakeholder vs Basic access, see this [feature matrix]
 ### Stakeholder feature access
 
 >[!NOTE]  
->**Feature availability**: The following features are available from Team Services or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. To determine your platform or TFS version, see [Platform and version support](../provide-feedback.md#platform-version).   
+>**Feature availability**: The following features are available from VSTS or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. To determine your platform or TFS version, see [Platform and version support](../provide-feedback.md#platform-version).   
 
 > [!div class="mx-tdBreakAll"]  
 > |Work  |Account, Dashboards, and Notifications|
 > |-------------|----------|  
-> |- [View, create, and modify work items](#create-work-item) <sup>4</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>5</sup><br/>- [View, and modify items on sprint backlogs](../work/scrum/sprint-planning.md) <sup>5</sup><br/>- [View, and modify items on the task board](../work/scrum/task-board.md) <sup>5, 6</sup><br/>- [View, and modify items (Kanban)](../work/kanban/kanban-basics.md)  <sup>5, 6</sup><br/>- [Add tasks to the checklist (Kanban)](../work/kanban/add-task-checklists.md) <sup>5, 6</sup> (TFS 2015.1)<br/>- >[Follow changes made to work items](../collaborate/follow-work-items.md) (TFS 2017)<br/>- [View the cumulative flow diagram](../report/guidance/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>7</sup> <br/>- [Submit, view, and change feedback responses](../work/connect/give-feedback.md)<br/>- [Change work item type](../work/backlogs/remove-delete-work-items.md) (Team Services<br/>**Build & Release**<br/>- [View releases](../build-release/actions/view-manage-releases.md) <sup>3</sup> (TFS 2015.2)<br/>- [Approve a release](../build-release/concepts/definitions/release/environments.md#approvals) (TFS 2015.2) | [Navigate to teams, team projects, and more](../connect/account-home-pages.md) (Team Services)<br/>- [View project welcome pages](../collaborate/project-vision-status.md) (Team Services)<br/>- [View team dashboards](../report/dashboards.md) <sup>1</sup><br/>- [Manage personal notifications](../notifications/manage-personal-notifications.md) (Team Services, TFS 2017) <br/>- [Set personal alerts for changes to work items](../work/track/alerts-and-notifications.md) (TFS) <br/>- [Invite users and assign licenses](../accounts/add-account-users-assign-access-levels.md) <sup>2</sup>  (Team Services)  |
+> |- [View, create, and modify work items](#create-work-item) <sup>4</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>5</sup><br/>- [View, and modify items on sprint backlogs](../work/scrum/sprint-planning.md) <sup>5</sup><br/>- [View, and modify items on the task board](../work/scrum/task-board.md) <sup>5, 6</sup><br/>- [View, and modify items (Kanban)](../work/kanban/kanban-basics.md)  <sup>5, 6</sup><br/>- [Add tasks to the checklist (Kanban)](../work/kanban/add-task-checklists.md) <sup>5, 6</sup> (TFS 2015.1)<br/>- >[Follow changes made to work items](../collaborate/follow-work-items.md) (TFS 2017)<br/>- [View the cumulative flow diagram](../report/guidance/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>7</sup> <br/>- [Submit, view, and change feedback responses](../work/connect/give-feedback.md)<br/>- [Change work item type](../work/backlogs/remove-delete-work-items.md) (VSTS<br/>**Build & Release**<br/>- [View releases](../build-release/actions/view-manage-releases.md) <sup>3</sup> (TFS 2015.2)<br/>- [Approve a release](../build-release/concepts/definitions/release/environments.md#approvals) (TFS 2015.2) | [Navigate to teams, team projects, and more](../connect/account-home-pages.md) (VSTS)<br/>- [View project welcome pages](../collaborate/project-vision-status.md) (VSTS)<br/>- [View team dashboards](../report/dashboards.md) <sup>1</sup><br/>- [Manage personal notifications](../notifications/manage-personal-notifications.md) (VSTS, TFS 2017) <br/>- [Set personal alerts for changes to work items](../work/track/alerts-and-notifications.md) (TFS) <br/>- [Invite users and assign licenses](../accounts/add-account-users-assign-access-levels.md) <sup>2</sup>  (VSTS)  |
 
 **Notes:**   
 1. Stakeholders cannot view markdown README files defined for repositories.  
-2. In order to add users and assign licenses for Team Services, stakeholders must be added to the [Project Collection Administrators](../tfs-server/add-administrator-tfs.md) group. Also, they must use the current Users page (not the Streamlined User Management page under preview) in order to manage users. To learn more, see [Manage users and access](../accounts/add-account-users-assign-access-levels.md).    
+2. In order to add users and assign licenses for VSTS, stakeholders must be added to the [Project Collection Administrators](../tfs-server/add-administrator-tfs.md) group. Also, they must use the current Users page (not the Streamlined User Management page under preview) in order to manage users. To learn more, see [Manage users and access](../accounts/add-account-users-assign-access-levels.md).    
 3. Stakeholders can only view and approve releases.  
 4. Stakeholders can assign existing tags to work items, but not create new tags.  
 5. Stakeholders cannot change the backlog priority order (all items are added at the end of the backlog), assign items to an iteration using drag and drop, use the mapping pane or forecasting.

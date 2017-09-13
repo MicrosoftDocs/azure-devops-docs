@@ -20,7 +20,7 @@ The Analytics service implements a subset of the security found in the VSTS oper
 >[!NOTE]  
 >The Analytics service does not support security at the area path level. Therefore, if a user has access to a team project and can report on that project but they don't have access to work items in specific areas of that project, they can view data through the Analytics service. Therefore, to protect your data, the best practice is to not allow reporting against the Analytics service for any user who does not have access to all data within a team project.  
 
-Security is granted by giving a user the **View analytics** permission in Visual Studio Team Services. 
+Security is granted by giving a user the **View analytics** permission in VSTS. 
 
 <img src="_img/analytics_permission.png" alt="Analytics Permission dialog" style="border: 2px solid #C3C3C3;" />
 

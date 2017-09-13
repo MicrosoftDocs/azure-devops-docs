@@ -44,8 +44,8 @@ ms.date: 08/10/2016
 <th style="text-align: center" colspan="2">JUnit Test Results</th>
 </tr>
 <tr>
-<td>Publish to Visual Studio Team Services/TFS </td>
-<td>Select this option to publish JUnit Test results produced by the Gradle build to Visual Studio Team Services/TFS.</td>
+<td>Publish to VSTS/TFS </td>
+<td>Select this option to publish JUnit Test results produced by the Gradle build to VSTS/TFS.</td>
 </tr>
 <tr>
 <td>Test Results Files</td>

@@ -55,7 +55,7 @@ to the Azure subscription associated with your directory.
 	[spending limit](https://azure.microsoft.com/en-us/pricing/spending-limits/), you must first remove this 
 	spending limit **indefinitely**. Learn [how and why you must remove this spending limit](faq-azure-access.md#remove-spending-limit).
 
-0.	Go to **Visual Studio Team Services**. 
+0.	Go to **VSTS**. 
 Select your VSTS account.
 
     ![Azure portal, VSTS, select your account](_img/manage-work-access/azurevso_unconnected.png)

@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Custom build task reference | Extensions for Visual Studio Team Services
-description: Reference for creating a custom build task with an extension in Visual Studio Team Services.
+title: Custom build task reference | Extensions for VSTS
+description: Reference for creating a custom build task with an extension in VSTS.
 ms.assetid: 00806e48-3839-40eb-880f-12ec53bfdf73
 ms.manager: douge
 ms.author: elbatk

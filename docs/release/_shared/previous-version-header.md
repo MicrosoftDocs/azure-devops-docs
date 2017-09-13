@@ -1,4 +1,4 @@
-**Visual Studio 2015 | Team Services | TFS 2015 | [Previous version](../overview-rm2013.md)**  
+**Visual Studio 2015 | VSTS | TFS 2015 | [Previous version](../overview-rm2013.md)**  
 
 ![horizontal-line](../_img/horizontal-line.png)
 
@@ -6,7 +6,7 @@
 **A newer version of Release Management is available**
 
 Release Management features have been integrated into the **Build &amp; Release** hub in
-Team Foundation Server (TFS) and Visual Studio Team Services.
+Team Foundation Server (TFS) and VSTS.
 For more information, see [Continuous integration on any platform](../../build-release/overview.md). 
 
 The newer web-based version is the recommended alternative 

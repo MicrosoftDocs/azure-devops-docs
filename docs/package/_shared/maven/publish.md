@@ -11,7 +11,7 @@ mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -Dgro
 <br>
 2. Navigate to the directory containing your Maven package's `pom.xml`.  If you've just created an artifact, the `pom.xml` will be in the *myFirstApp* folder.
 <br>
-3. From the **connect to feed** dialog in Team Services, copy the `<repository>` information. Paste it into your `pom.xml` twice: (See example above)
+3. From the **connect to feed** dialog in VSTS, copy the `<repository>` information. Paste it into your `pom.xml` twice: (See example above)
     * Between the `<repositories>` tags.
     * Between the `<distributionManagement>` tags. 
 <br>

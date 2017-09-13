@@ -1,7 +1,7 @@
 ---
 title: Build your .NET desktop app for Windows
 shorttitle: Visual Studio solution
-description: Define a CI process that builds your .NET app on Team Foundation Server and Visual Studio Team Services.
+description: Define a CI process that builds your .NET app on Team Foundation Server and VSTS.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.topic: get-started-article

@@ -1,5 +1,5 @@
 ---
-title: Create test plans in Visual Studio Team Services
+title: Create test plans in VSTS
 description: Create test plans in VSTS to track manual tests during sprints or milestones
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual
@@ -29,7 +29,7 @@ test cases for separate testing scenarios within a single test plan.
 ## Create a test plan
 
 1. If you haven't already, 
-   [sign up for Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
+   [sign up for VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
    [create your team project](../../accounts/account-management.md), 
    and [create your backlog](../../work/backlogs/create-your-backlog.md). 
 

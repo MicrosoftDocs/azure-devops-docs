@@ -1,6 +1,6 @@
 ---
 title: NuGet restore, pack, and publish
-description: How to use NuGet packages when building code in Visual Studio Team Services
+description: How to use NuGet packages when building code in VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
@@ -239,7 +239,7 @@ None
         <td>
             <ul>
                 <li>**This account/collection** publishes to a Package Management feed in the same account/collection as the build. After you select this option, select the target feed from the dropdown.
-                    <ul><li>"Allow duplicates to be skipped" allows you to continually publish a set of packages and only change the version number of the subset of packages that changed. It allows the task to report success even if some of your packages are rejected with 409 Conflict errors. <br />This option is currently only available on Visual Studio Team Services.
+                    <ul><li>"Allow duplicates to be skipped" allows you to continually publish a set of packages and only change the version number of the subset of packages that changed. It allows the task to report success even if some of your packages are rejected with 409 Conflict errors. <br />This option is currently only available on VSTS.
                     </li></ul>
                 </li>
                 <li>**External NuGet server (including other accounts/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or a Package Management feed in another VSTS account or TFS collection. After you select this option, you create and select a [NuGet service endpoint](../../concepts/library/service-endpoints.md#sep-nuget).
@@ -315,7 +315,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 | Build number format | ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```|
 
 
-### Option 1: publish to Visual Studio Team Services
+### Option 1: publish to VSTS
 1. Make sure you've prepared the build as described [above](#prepare).
 2. If you haven't already, [create a feed](../../../package/feeds/create-feed.md).
 3. Add the following build steps:

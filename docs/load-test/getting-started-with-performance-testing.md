@@ -1,6 +1,6 @@
 ---
 title: Load test in the cloud with VSTS
-description: Performance test your app with cloud-based load tests using Visual Studio and Visual Studio Team Services
+description: Performance test your app with cloud-based load tests using Visual Studio and VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
 ms.assetid: 50d0dafd-ae7c-4028-9e4a-687f062e0179

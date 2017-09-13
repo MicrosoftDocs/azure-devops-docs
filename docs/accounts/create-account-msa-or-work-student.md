@@ -14,7 +14,7 @@ ms.date: 03/30/2017
 
 **VSTS**
 
-Sign up for a [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs) 
+Sign up for a [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) 
 account to upload and share code in free unlimited private 
 Git repositories or Team Foundation Version Control. 
 Then connect your favorite development tool like Eclipse, Xcode, 
@@ -27,7 +27,7 @@ so your team can build often, test early, and ship faster.
 > or learn [how to install and set up Team Foundation Server](../tfs-server/install/get-started.md). 
 
 
-[What users can join for free?  What do they get in Visual Studio Team Services?](faq-create-account.md#free-users)
+[What users can join for free?  What do they get in VSTS?](faq-create-account.md#free-users)
 
 
 <a name="how-sign-up"></a>
@@ -37,7 +37,7 @@ so your team can build often, test early, and ship faster.
 	with your VSTS account, follow the steps below and ignore the Azure Active Directory (Azure AD) call outs. 
 
 	Don't have a Microsoft account?  You can create a Microsoft account 
-	when you sign up for Visual Studio Team Services.
+	when you sign up for VSTS.
 
 	Use your Microsoft account if you don't need to authenticate users 
 	for an organization with [Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
@@ -59,7 +59,7 @@ so your team can build often, test early, and ship faster.
 	[use Azure AD Connect for integrating on-premises directories with Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/).
 
 
-## How does Azure AD control access to Visual Studio Team Services?
+## How does Azure AD control access to VSTS?
 
 VSTS authenticates users through your organization's directory 
 so that only users who are members in that directory can get access to your VSTS account. 

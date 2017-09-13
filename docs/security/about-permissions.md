@@ -113,7 +113,7 @@ Setting the access level for  users or groups doesn't provide them access to a t
 
 If you need to set permissions for large numbers of users,
 create a group in Windows, Active Directory, or Azure Active Directory,
-add these groups to TFS groups or Team Services groups,
+add these groups to TFS groups or VSTS groups,
 and add the same groups to grant access to additional resources.
 
 <img src="_img/permissions/grant-permissions.png" style="border: 1px solid #CCCCCC" />

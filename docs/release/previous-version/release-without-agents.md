@@ -35,7 +35,7 @@ for instructions.
   (In this version, Chef is supported if you manage your release with 
   an on-premises Release Management server, 
   but it is not supported if you manage your release with Visual 
-  Studio Team Services.)
+  Studio VSTS.)
 
 <a name="SetupEnv"></a>
 ## Set up your environment

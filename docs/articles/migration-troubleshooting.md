@@ -36,7 +36,7 @@ Unlike the previous warnings, this is an error that **WILL** block you from movi
 ## Dealing with Collation Warnings
 Collation in this case refers to the collection database’s collation. Collations control the way string values are sorted and compared. Collections that aren't using either SQL_Latin1_General_CP1_CI_AS or Latin1_General_CI_AS will receive a **warning** similar to the one below.  
 
-    The collection database collation 'Finnish_CI_AS' is not supported by Visual Studio Team Services. See more details at https://aka.ms/vstsimportcollations
+    The collection database collation 'Finnish_CI_AS' is not supported by VSTS. See more details at https://aka.ms/vstsimportcollations
 
 Receiving this warning **does not** mean that you can't import your collection to VSTS. Rather, it means that you will need to think through some additional considerations before performing an import. When a non-supported collation is imported into VSTS it is effectively transformed to the supported VSTS collation. While this generally works without issue, unexpected results could be observed post import or the import could fail if a unique collation translation issue is encountered. For instance, customers will notice different ordering for strings containing non-English characters. Non-English characters like 'é' become equivalent to the English 'e' after the import has completed. It's important that you complete and vet out a dry run import when importing a collection with a non-supported collation.
 

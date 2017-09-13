@@ -1,6 +1,6 @@
 ---
 title: Quick Start - Build and Deploy a Node.js app | VSTS
-description: Set up a continuous integration (CI) build for your Node.js app, and then a continuous deployment (CD) release to Azure using Visual Studio Team Services
+description: Set up a continuous integration (CI) build for your Node.js app, and then a continuous deployment (CD) release to Azure using VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 37846FD6-85D3-4CB1-97CD-11F30ADD0AFA

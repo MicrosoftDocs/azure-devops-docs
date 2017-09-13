@@ -11,7 +11,7 @@ ms.date: 10/27/2016
 
 # Communicate package quality with release views
 
-**Team Services**
+**VSTS**
 
 Views filter the feed to a subset of packages that meet criteria defined by the view.
 

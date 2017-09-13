@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: MyGet with Visual Studio Team Services
+title: MyGet with VSTS
 description: Use MyGet with your VSTS account
 ms.assetid: 2fcfead5-4f59-4b49-b55d-3199919e21c3
 ms.manager: douge
@@ -9,12 +9,12 @@ ms.author: elbatk
 ms.date: 08/04/2016
 ---
 
-# MyGet with Visual Studio Team Services
+# MyGet with VSTS
 
-Use a MyGet feed for the following integration scenarios with Visual Studio Team Services:
+Use a MyGet feed for the following integration scenarios with VSTS:
 
-- When code is pushed to a Git repository in Visual Studio Team Services, MyGet pulls the code, builds it, and adds any resulting NuGet packages to a feed. 
-- When a NuGet package is built in Visual Studio Team Services, MyGet downloads the package and adds it to a feed.
+- When code is pushed to a Git repository in VSTS, MyGet pulls the code, builds it, and adds any resulting NuGet packages to a feed. 
+- When a NuGet package is built in VSTS, MyGet downloads the package and adds it to a feed.
 
 ## Create and configure a MyGet feed
 
@@ -50,7 +50,7 @@ Use a MyGet feed for the following integration scenarios with Visual Studio Team
 
     <img alt="Triggered build" src="./_img/myget/triggered-build.png" style="border: 1px solid #CCCCCC" />
 
-## Deploy a package built on Visual Studio Team Services
+## Deploy a package built on VSTS
  
 2. Add the VSTS build definition as a package source for your feed.
 

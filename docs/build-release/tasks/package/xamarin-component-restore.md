@@ -1,6 +1,6 @@
 ---
-title: Xamarin component restore in Team Services
-description: How to restore Xamarin components for a Team Services solution
+title: Xamarin component restore in VSTS
+description: How to restore Xamarin components for a VSTS solution
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: D50172C9-5AEE-4055-9795-342D5B2ABEF4

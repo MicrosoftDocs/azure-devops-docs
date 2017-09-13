@@ -1,6 +1,6 @@
 ---
-title: Get Started with npm Package Management in Team Services
-description: Quickly start hosting npm packages in Visual Studio Team Services
+title: Get Started with npm Package Management in VSTS
+description: Quickly start hosting npm packages in VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
 ms.topic: get-started-article
@@ -10,7 +10,7 @@ ms.author: amullans
 ms.date: 09/01/2017
 ---
 
-# Get started with npm Package Management in Team Services
+# Get started with npm Package Management in VSTS
 
 ## Before you start
 This guide assumes you've already set up Package Management. You can check out how to install and license the extension in the 

@@ -1,5 +1,5 @@
 ---
-title: AppVeyor with Visual Studio Team Services
+title: AppVeyor with VSTS
 description: Use AppVeyor with your VSTS account
 ms.assetid: 49541e06-2f8c-40ca-a161-f6ddff6ec83a
 ms.prod: vs-devops-alm
@@ -9,11 +9,11 @@ ms.author: elbatk
 ms.date: 08/04/2016
 ---
 
-# AppVeyor with Visual Studio Team Services
+# AppVeyor with VSTS
 
 Set up continuous integration builds in AppVeyor for the code in your VSTS Git repositories.
 
-## Integrate AppVeyor with Team Services
+## Integrate AppVeyor with VSTS
 
 1. If you don't have an AppVeyor account, [sign up](http://ci.appveyor.com/signup) with your VSTS account.
 
@@ -27,7 +27,7 @@ Set up continuous integration builds in AppVeyor for the code in your VSTS Git r
 
    <img alt="Add VSTS Git project" src="./_img/appveyor/appveyor-add-repository.png" style="border: 1px solid #CCCCCC" />
 
-   Now an AppVeyor CI build will start whenever you push code to your repository in Visual Studio Team Services.
+   Now an AppVeyor CI build will start whenever you push code to your repository in VSTS.
    
    <img alt="Build results" src="./_img/appveyor/build-output.png" style="border: 1px solid #CCCCCC" />
 
@@ -42,7 +42,7 @@ for pricing related to their services.
 ####Q: Do I need to sign into AppVeyor using my VSTS ID in order to setup this integration?
 
 A: No. If you use an account that's not already assocaited with your Visual Studio ID,
-you'll authorize access to your VSTS account when you add Git repositories from Visual Studio Team Services. 
+you'll authorize access to your VSTS account when you add Git repositories from VSTS. 
 
 ####Q: Does AppVeyor change anything in my VSTS account?
 
@@ -52,7 +52,7 @@ A: Yes. It adds a service hook subscription to your team project.
 
 ####Q: What happens if I remove the AppVeryor project?
 
-A: The AppVeyor service hook subscription is removed from Visual Studio Team Services.
+A: The AppVeyor service hook subscription is removed from VSTS.
 
 ####Q: Can I get notification of AppVeyor builds in my VSTS team room?
 
@@ -60,7 +60,7 @@ A: Yes, you can set that up in the AppVeyor Notifications page.
 
 <img alt="Configure team room notifications" src="./_img/appveyor/team-room-notification.png" style="border: 1px solid #CCCCCC" />
 
-####Q: If I reconfigure AppVeyor from Visual Studio Team Services, where do I get the webhook ID used by AppVeyor?
+####Q: If I reconfigure AppVeyor from VSTS, where do I get the webhook ID used by AppVeyor?
 
 A: From the projects settings: 
 

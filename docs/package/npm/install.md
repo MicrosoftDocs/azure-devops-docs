@@ -1,6 +1,6 @@
 ---
 title: Install npm modules
-description: Install npm modules from Visual Studio Team Services
+description: Install npm modules from VSTS
 ms.assetid: C586AF1C-A9D0-461F-95F9-8FEB61988C48
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package

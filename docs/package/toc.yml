@@ -56,9 +56,9 @@
       href: nuget/consume.md
     - name: Unlist or delete a NuGet package
       href: nuget/unlist-delete.md
-    - name: Use NuGet with Team Services
+    - name: Use NuGet with VSTS
       href: nuget/nuget-exe.md
-    - name: Use dotnet with Team Services
+    - name: Use dotnet with VSTS
       href: nuget/dotnet-exe.md
     - name: Use NuGet or dotnet with TFS
       href: nuget/tfs.md

@@ -1,8 +1,8 @@
 The first step is verification of your publisher. Only **verified** publishers can have public items on the Marketplace.
 
-> **Developing for Visual Studio Code?** If so, you do not need to request verification. Verification is only required for Team Services integrations or extensions.
+> **Developing for Visual Studio Code?** If so, you do not need to request verification. Verification is only required for VSTS integrations or extensions.
 
-Once you are ready to publish a public Team Services listing to the Marketplace, follow these steps:
+Once you are ready to publish a public VSTS listing to the Marketplace, follow these steps:
 
 1. Send an email to [vsmarketplace@microsoft.com](http://aka.ms/vsmarketplace-contact).
    * Use the subject `Publisher verification request`.

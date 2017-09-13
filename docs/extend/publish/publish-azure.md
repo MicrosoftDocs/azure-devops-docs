@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: How to Deploy Web Content to Azure | Extensions for Visual Studio Team Services
+title: How to Deploy Web Content to Azure | Extensions for VSTS
 description: How to publish your extension for VSTS to a Microsoft Azure web site.
 ms.assetid: 86c9d7d9-51ea-4169-bf2e-f95138679a00
 ms.manager: douge
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 # Deploy web content to Azure
 
 <div class="alert alert-info">
-	If your extension does not require any back-end logic, consider hosting your static content direcly on Visual Studio Team Services. See [content hosting](../develop/static-content.md).
+	If your extension does not require any back-end logic, consider hosting your static content direcly on VSTS. See [content hosting](../develop/static-content.md).
 </div>
 
 After you've [created an extension](../get-started/node.md), you can publish it to Azure so that it's available in the cloud.

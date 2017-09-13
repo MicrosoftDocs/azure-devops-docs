@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: HipChat with Visual Studio Team Services
+title: HipChat with VSTS
 description: Use HipChat with your VSTS account
 ms.assetid: 43ef12ac-4541-436c-b6df-343e6e321cf9
 ms.manager: douge
@@ -9,9 +9,9 @@ ms.author: elbatk
 ms.date: 08/04/2016
 ---
 
-# HipChat with Visual Studio Team Services
+# HipChat with VSTS
 
-Post messages to a room in HipChat in response to events from Visual Studio Team Services.
+Post messages to a room in HipChat in response to events from VSTS.
 For example, when code is pushed, or a build occurs.
 
 Get a HipChat authorization token
@@ -28,7 +28,7 @@ Get a HipChat authorization token
 
 ## Post a message to a room
 
-1. Open the admin page for the team project in Visual Studio Team Services.
+1. Open the admin page for the team project in VSTS.
 
 2. On the Service Hooks tab, create a subscription.
 

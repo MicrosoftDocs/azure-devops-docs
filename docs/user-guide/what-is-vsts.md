@@ -1,5 +1,5 @@
 ---
-title: What is Visual Studio Team Services? | VSTS 
+title: What is VSTS? | VSTS 
 description: Understand the fundamental differences between Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 ms.prod: vs-devops-alm  
 ms.technology: vs-devops-overview
@@ -10,7 +10,7 @@ ms.date: 06/22/2017
 ms.topic: get-started-article
 ---
 
-# What is Visual Studio Team Services? 
+# What is VSTS? 
 
 VSTS is a cloud service for collaborating on code development. It provides an integrated set of features that you access through your web browser or IDE client, including: 
 
@@ -32,7 +32,7 @@ We've made it easy for you to start for free and try out our service.
 
 Sign up for free by creating an account and then, either upload your code to share or source control, or begin tracking your work using Scrum, Kanban, or a combination of methods. 
 
-[![Sign up for Team Services](_img/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](_img/what-is-vsts-add-code-ide-step-2.png)](/vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json ) 
+[![Sign up for VSTS](_img/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](_img/what-is-vsts-add-code-ide-step-2.png)](/vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json ) 
 
 
 ## Try this next  
@@ -45,7 +45,7 @@ To learn more, see these topics:
 - [Key concepts](../concepts.md)  
 - [Client-server tools](../tools.md)
 - [Software development roles](../roles.md)
-- [Pricing - Team Services](https://www.visualstudio.com/team-services/pricing/)
+- [Pricing - VSTS](https://www.visualstudio.com/team-services/pricing/)
 
 
 <!---

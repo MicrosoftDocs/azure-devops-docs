@@ -37,7 +37,7 @@ To view a list of teams defined for a team project, open the admin context for t
  
 
 
-### Team Services
+### VSTS
 <a id="switch-context-team-services" />
  
 You can switch your team focus to a team project or team you've recently viewed from the team project/team drop-down menu. If you don't see the team or team project you want, click **Browse&hellip;** to [browse all team projects and teams](/vsts/connect/account-home-pages). To access your [account hub](/vsts/connect/account-home-pages), click the ![VSTS icon](../../_shared/_img/switch-team-focus-account-project-page-icon.png) VSTS icon. If you haven't yet enabled the Account Landing Page, you'll be taken to the account home page. 

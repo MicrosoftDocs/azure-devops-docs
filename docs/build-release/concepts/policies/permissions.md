@@ -16,7 +16,7 @@ ms.date: 08/26/2016
 Team Build and Release Management offer several features to help you
 enforce the security requirements of your team and your
 organization. This security is based on the standard model in Team
-Foundation Server and Visual Studio Team Services.
+Foundation Server and VSTS.
 
 **Permissions** define the authorizations that can be granted or
 denied to users and groups. These permissions can usually be granted or

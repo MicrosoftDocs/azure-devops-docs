@@ -1,6 +1,6 @@
 ---
 title: Authenticating with personal access tokens | VSTS REST APIs
-description: Use personal access tokens to get started with the REST APIs for Visual Studio Team Services.
+description: Use personal access tokens to get started with the REST APIs for VSTS.
 ms.assetid: 255E1E2B-9CB2-4FC3-8495-12DB4149A449
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-integrate

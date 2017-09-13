@@ -51,8 +51,8 @@ who made the commit.
 215d1108 (Francis Totten 2015-11-21 09:54:23 -0800 22) line 22 of the code</font>
 </pre>
 
-`Blame` does the searching through the commit history for you. You can also go back through the a file's history in Team Services as well for a different approach to determining
-who made a change and when. Go into the Code Explorer for your repository and branch in VSTS, then click on the file of interest. Team Services will show a complete
+`Blame` does the searching through the commit history for you. You can also go back through the a file's history in VSTS as well for a different approach to determining
+who made a change and when. Go into the Code Explorer for your repository and branch in VSTS, then click on the file of interest. VSTS will show a complete
 commit history for that file on the current branch.
 
 ### I've made changes to some files and now I can't checkout to a different branch or rebase my work.
@@ -115,7 +115,7 @@ To keep the text columns in the commit messages to the preferred 72 and line wra
 
 ### How can I change the username and email displayed in my commits?
 
-Git puts a user name and email address information inside each commit, and Team Services uses this information when viewing commits and when working with pull requests.
+Git puts a user name and email address information inside each commit, and VSTS uses this information when viewing commits and when working with pull requests.
 If you are working on the command line, you can update the name and email information displayed using the `git config` command:
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;">

@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Bamboo with Visual Studio Team Services
+title: Bamboo with VSTS
 description: Use Atlassian Bamboo with your VSTS account
 ms.assetid: a5cb1028-9b46-4106-9fdd-5b8059b4dedd
 ms.manager: douge
@@ -9,9 +9,9 @@ ms.author: elbatk
 ms.date: 08/04/2016
 ---
 
-# Bamboo with Visual Studio Team Services
+# Bamboo with VSTS
 
-If you use Bamboo to build your apps, you can store your code in Visual Studio Team Services
+If you use Bamboo to build your apps, you can store your code in VSTS
 and continue to use Bamboo for your continuous integration builds.
 You can trigger a Bamboo build when you push code to your team project's
 Git repository,  when you check code in to Team Foundation version control,
@@ -36,8 +36,8 @@ to connect VSTS to Bamboo.
 
 1. In Bamboo, create a new plan by choosing **Create** > **Create a new plan** from the menu bar.
 
-2. Under **Link repository to new build plan**, choose **Other** > **Git** and set the URL for your Git repository in Visual Studio Team Services.
-The URL is in the form ```https://{Team Services account}.visualstudio.com/DefaultCollection/_git/{team project name}```.
+2. Under **Link repository to new build plan**, choose **Other** > **Git** and set the URL for your Git repository in VSTS.
+The URL is in the form ```https://{VSTS account}.visualstudio.com/DefaultCollection/_git/{team project name}```.
 
 3. Next to **Authentication Type**, choose **Username/password** and enter the [alternate credentials](https://www.visualstudio.com/en-us/integrate/get-started/auth/overview/) of a VSTS account with read access to the repository. 
 
@@ -65,7 +65,7 @@ The URL is in the form ```https://{Team Services account}.visualstudio.com/Defau
 
    <img alt="New service hook subscription dialog box" src="./_img/bamboo/subscription.png" style="border: 1px solid #CCCCCC" />
 
-Now, when that event occurs in Visual Studio Team Services, your Bamboo build will be triggered.
+Now, when that event occurs in VSTS, your Bamboo build will be triggered.
 
 ## Pricing
 VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site

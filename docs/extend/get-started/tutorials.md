@@ -1,15 +1,15 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Tutorials catalog for developing extensions in Visual Studio Team Services
-description: Follow tutorials to create an extension in Visual Studio Team Services
+title: Tutorials catalog for developing extensions in VSTS
+description: Follow tutorials to create an extension in VSTS
 ms.assetid: 75df3138-f16d-4127-89f7-5462ce6874bd
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/19/2016
 ---
 
-# Catalog of Tutorials for developing Team Services Extensions
+# Catalog of Tutorials for developing VSTS Extensions
 
 Because of the diverse nature of extensions, we wanted to provide the right tutorial for you. 
 Below you'll find tutorials that cover different types of extensions so that you can learn the basics with a tutorial that's relevant to your goals as a developer. 
@@ -29,7 +29,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <div style="vertical-align:top;display:inline-block;float:left;width:65%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center;display:table-cell;vertical-align:middle"> 
-    This tutorial walks you through the entire extension creation process while you create a hub within Team Services. 
+    This tutorial walks you through the entire extension creation process while you create a hub within VSTS. 
     From start to finish, you'll learn everything that you need to know about writing an extension and publishing it 
     to the Marketplace.
     </div>
@@ -56,7 +56,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <div style="vertical-align:top;display:inline-block;float:left;width:65%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center;display:table-cell;vertical-align:middle"> 
-    Learn the basics of how to create a hub that can host a web page within a hub group within Visual Studio Team Services. 
+    Learn the basics of how to create a hub that can host a web page within a hub group within VSTS. 
     </div>
 </div>
 </div>
@@ -185,7 +185,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <div style="vertical-align:top;display:inline-block;float:left;width:65%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center;display:table-cell;vertical-align:middle"> 
-    Service endpoints are a way for Team Services to connect to external systems or services. Extensions can acquire stored details from the service endpoint 
+    Service endpoints are a way for VSTS to connect to external systems or services. Extensions can acquire stored details from the service endpoint 
     to perform operations on that service. This tutorial walks through creating a custom service endpoint with data sources, and a build task that calls it. 
     </div>
 </div>
@@ -239,7 +239,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center;display:table-cell;vertical-align:middle"> 
     Widgets can be implemented into your VSTS dashboard via contribution extensions. This tutorial is split into three parts: 
-    Creating a "Hello World" widget, Adding a call to a Team Services REST API, Adding configuration to your widget. 
+    Creating a "Hello World" widget, Adding a call to a VSTS REST API, Adding configuration to your widget. 
     </div>
 </div>
 </div>

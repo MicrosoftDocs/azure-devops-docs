@@ -1,5 +1,5 @@
 ---
-title: Extension Report | Visual Studio Team Services
+title: Extension Report | VSTS
 description: An overview of reports available for an extension. 
 ms.assetid: baf829df-0975-46d8-8dea-7a5c9f6968ef
 ms.prod: vs-devops-alm
@@ -16,15 +16,15 @@ To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmar
 ## Acquisition 
 You can view acquisition related data in this tab for the selected period. 
 * Aggregated acquisition in the selected period with respect to overall acquisition
-* Aggregated acquisition split by extension downloads, Team Services and TFS connected install for free extension
-* Aggregated acquisition split by trials, Team Services and TFS connected buy for paid extension
-* Daily trend of extension page views with acquisition for Team Services and TFS connected server
+* Aggregated acquisition split by extension downloads, VSTS and TFS connected install for free extension
+* Aggregated acquisition split by trials, VSTS and TFS connected buy for paid extension
+* Daily trend of extension page views with acquisition for VSTS and TFS connected server
 * Conversion percentage from page views to acquisition
 
 For paid extension, all transactional details for buy and trials is available with date, account name, trial end date, and quantity. You can use the **Contact** action to reach out to your users for transactional communication. See the [Contact](#contact) section provided later in this topic for more details. 
 
 ## Uninstall
-You can view how many Team Services accounts have uninstalled your extension, daily trend of uninstall, detailed feedback shared during uninstall, and top uninstall reasons.
+You can view how many VSTS accounts have uninstalled your extension, daily trend of uninstall, detailed feedback shared during uninstall, and top uninstall reasons.
 You can use search for text and dates to analyze and draw more insights from the detailed feedback. 
 
 For paid extensions, you can use the **Contact** action to reach out to your users for transactional communication. [Contact](#contact) section provided later in this topic for more details.

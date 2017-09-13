@@ -1,6 +1,6 @@
 ---
 title: Automate field assignments | VSTS & TFS
-description: Transition work items from one state to another state based on an event that occurs elsewhere when working in Team Services or Team Foundation Server (TFS)
+description: Transition work items from one state to another state based on an event that occurs elsewhere when working in VSTS or Team Foundation Server (TFS)
 ms.prod: visual-studio-tfs-dev14
 ms.technology: vs-devops-wit
 ms.assetid: f4c6c550-ed55-4bff-a5a7-0e25e87249a5

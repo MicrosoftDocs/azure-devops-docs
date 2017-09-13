@@ -16,7 +16,7 @@ ms.date: 10/21/2016
 > **Required:** TFS 2015.2 or later to buy monthly access
 
 For [TFS](https://www.visualstudio.com/tfs/) 
-and [Visual Studio Team Services](https://www.visualstudio.com/team-services/), 
+and [VSTS](https://www.visualstudio.com/team-services/), 
 you usually pay per user so they can access your TFS or your VSTS account. 
 Some users are free, like [Visual Studio subscribers](https://www.visualstudio.com/vs/pricing/), 
 [stakeholders who can access limited features](../quickstart/get-started-stakeholder.md), 

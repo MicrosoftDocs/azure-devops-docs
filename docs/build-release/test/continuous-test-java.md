@@ -1,5 +1,5 @@
 ---
-title: Continuous testing Java applications - Visual Studio Team Services
+title: Continuous testing Java applications - VSTS
 description: Continuous testing with Java in a continuous integration pipeline with Visual Studio Team Services (VSTS) and TFS 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build

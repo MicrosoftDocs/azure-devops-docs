@@ -1,6 +1,6 @@
 ---
-title: Try paid VSTS extensions free | Visual Studio Team Services
-description: Trial the paid feature extensions in Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
+title: Try paid VSTS extensions free | VSTS
+description: Trial the paid feature extensions in VSTS (VSTS, Visual Studio Online, VSO)
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -10,7 +10,7 @@ ms.author: estfan
 ms.date: 1/13/2017
 ---
 
-#   Try paid extensions for free in Visual Studio Team Services
+#   Try paid extensions for free in VSTS
 
 **VSTS**
 
@@ -36,7 +36,7 @@ instead. Learn about other
 
 ##  Start an extension trial
 
-0.  Sign in to [Visual Studio Marketplace > Visual Studio Team Services](https://marketplace.visualstudio.com/vsts).
+0.  Sign in to [Visual Studio Marketplace > VSTS](https://marketplace.visualstudio.com/vsts).
 
 	![Find extension trial](_img/get-vsts-extensions/marketplace.png)
 

@@ -61,20 +61,20 @@ Another approach is to attempt to visit the [Azure Enterprise Portal](http://ea.
 
 A:	You can use these prepaid funds to pay for: 
 
-*	[Team Services users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) 
-*	[Microsoft-published extensions for Team Services and Team Foundation Server](https://marketplace.visualstudio.com/vsts)
+*	[VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) 
+*	[Microsoft-published extensions for VSTS and Team Foundation Server](https://marketplace.visualstudio.com/vsts)
 *	[Virtual user minutes for Cloud-based Load Testing](/vsts/billing/buy-more-build-vs)
 *	[HockeyApp plans](https://marketplace.visualstudio.com/subscriptions)
 
 You can't use these funds to pay for Visual Studio cloud 
-subscriptions and non-Microsoft extensions for Team Services and Team Foundation Server.
+subscriptions and non-Microsoft extensions for VSTS and Team Foundation Server.
 
 ###Q:	Can I use the Azure Free Trial to buy from the Visual Studio Marketplace?
 
 A:	No, you can't use the 
 [Azure Free Trial](https://azure.microsoft.com/en-us/pricing/free-trial/) 
 to pay for Visual Studio Marketplace purchases, 
-which applies to Visual Studio Team Services, HockeyApp user plans, and so on. 
+which applies to VSTS, HockeyApp user plans, and so on. 
 Instead, set up a separate Pay-As-You-Go Azure subscription,
 which you can do before or during your purchase.  
 

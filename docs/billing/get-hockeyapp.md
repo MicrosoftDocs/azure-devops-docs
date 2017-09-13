@@ -1,6 +1,6 @@
 ---
 title: Get HockeyApp - Bring DevOps to mobile app development | Visual Studio Marketplace
-description: Distribute mobile apps for testing, collect user feedback, metrics, and live crash reports for apps on Android, iOS, Mac OS X, and Windows. Add DevOps to your Agile, continuous integration, and continuous delivery workflows in Visual Studio Team Services, GitHub, Jira, Bamboo, Team Foundation Server, and more.
+description: Distribute mobile apps for testing, collect user feedback, metrics, and live crash reports for apps on Android, iOS, Mac OS X, and Windows. Add DevOps to your Agile, continuous integration, and continuous delivery workflows in VSTS, GitHub, Jira, Bamboo, Team Foundation Server, and more.
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: b572fa78-70ba-4060-bcc3-1f8c342d98f8
@@ -26,7 +26,7 @@ the latest user feedback and crash reports.
 
 HockeyApp works with tools that support team-based development 
 and collaboration, work item and project management, continuous 
-integration and delivery, such as Visual Studio Team Services, 
+integration and delivery, such as VSTS, 
 Team Foundation Server, GitHub, Bamboo, Jira, and more. 
 
 Learn more about:
@@ -131,12 +131,12 @@ and collaboration, project management, continuous integration,
 and continuous delivery. Learn how to integrate these tools with 
 HockeyApp at the [HockeyApp Knowledge Base](http://support.hockeyapp.net/kb).
 
-For example, when you use HockeyApp with Visual Studio Team Services, 
+For example, when you use HockeyApp with VSTS, 
 every code commit can trigger a build, upload your app to HockeyApp, 
 and make your app available to testers. While your app runs, 
 you'll collect user feedback and crash reports, 
 which feed back into work items for your next cycle. 
-Learn more about [HockeyApp and Visual Studio Team Services](http://hockeyapp.net/blog/2015/11/18/introducing-mobile-devops.html).
+Learn more about [HockeyApp and VSTS](http://hockeyapp.net/blog/2015/11/18/introducing-mobile-devops.html).
 
 0.	Sign in to 
 [Visual Studio Marketplace > VSTS > Build and release > HockeyApp](https://marketplace.visualstudio.com/items?itemName=ms.hockeyapp) 
@@ -220,7 +220,7 @@ If you don't have an Azure subscription, just
 [sign up](https://portal.azure.com) 
 before or during your first Marketplace purchase. You can also 
 use your Azure subscription to buy other Azure services, 
-like Cloud Services, compute instances, Visual Studio Team Services, 
+like Cloud Services, compute instances, VSTS, 
 and more. You get everything all in one convenient monthly bill 
 that's charged to your credit card or invoiced to your organization.
 

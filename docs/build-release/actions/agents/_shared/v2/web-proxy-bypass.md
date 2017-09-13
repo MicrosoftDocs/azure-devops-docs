@@ -1,6 +1,6 @@
-### How do I configure the agent to bypass a web proxy and connect to Team Services?
+### How do I configure the agent to bypass a web proxy and connect to VSTS?
 
-If you want the agent to bypass your proxy and connect to Team Services directly, then you should configure your web proxy to enable the agent to access the following URLs:
+If you want the agent to bypass your proxy and connect to VSTS directly, then you should configure your web proxy to enable the agent to access the following URLs:
 
 * `https://management.core.windows.net`
 

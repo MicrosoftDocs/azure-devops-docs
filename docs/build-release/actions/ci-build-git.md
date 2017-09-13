@@ -1,6 +1,6 @@
 ---
 title: Define a CI build process for your Git repo | VSTS Tutorial
-description: Define a continuous integration (CI) build for your Git repo using Visual Studio Team Services
+description: Define a continuous integration (CI) build for your Git repo using VSTS
 services: vsts
 documentationcenter: ''
 author: mlearned

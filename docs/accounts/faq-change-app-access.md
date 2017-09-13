@@ -1,6 +1,6 @@
 ---
-title: Change app access policies | Visual Studio Team Services
-description: Change app access policies for Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
+title: Change app access policies | VSTS
+description: Change app access policies for VSTS (VSTS, Visual Studio Online, VSO)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 25b0a617-6d77-44d7-80a5-bf38a541817e
@@ -34,7 +34,7 @@ or to all accounts, based on your selection when you created the token.
 
 A:  Yes, those apps will continue working.
 
-####Q:  What apps integrate with Visual Studio Team Services?
+####Q:  What apps integrate with VSTS?
 
 A:  Find the [apps that integrate with VSTS here](https://marketplace.visualstudio.com/VSTS).
 

@@ -21,7 +21,7 @@ In this topic you'll learn:
 
 > [!div class="checklist"] 
 > * Connect to a team project from Excel 
-> * Add or edit work items and publish your changes to TFS or Team Services
+> * Add or edit work items and publish your changes to TFS or VSTS
 > * Refresh your Excel worksheet with the latest changes made to the work tracking data store   
 > * Select user accounts  
 > * Add hierachically linked backlog items and tasks   

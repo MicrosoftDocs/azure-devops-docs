@@ -15,23 +15,23 @@ ms.date: 09/01/2017
 
 VSTS provides hosted NuGet feeds as a service. 
 If you're using NuGet packages as a part of your continuous delivery flow, 
-Team Services Package Management can eliminate your dependencies on on-premises file shares and hosted instances of NuGet.Server.
-Team Services Package Management works with any CI system that supports authenticated NuGet feeds. 
-This walkthrough assumes that you're using Team Services Team Build (not XAML Build).
+VSTS Package Management can eliminate your dependencies on on-premises file shares and hosted instances of NuGet.Server.
+VSTS Package Management works with any CI system that supports authenticated NuGet feeds. 
+This walkthrough assumes that you're using VSTS Team Build (not XAML Build).
 
 ## Before you start
 
-Team Services NuGet service provides a number of benefits compared to file shares. However, some of these benefits may require changes to your existing workflows.
+VSTS NuGet service provides a number of benefits compared to file shares. However, some of these benefits may require changes to your existing workflows.
 
-- **Indexing:** Team Services maintains an index of all the packages in each feed, which enables fast `nuget list` operations. 
+- **Indexing:** VSTS maintains an index of all the packages in each feed, which enables fast `nuget list` operations. 
 List operations on your file shares require the client to open every `nupkg` and examine the `nuspec` for metadata unless your 
 file share has been configured to provide an index that the NuGet client understands.
 - **Immutability:** A package version (e.g. `MyPackage.1.0.0.0.nupkg`) can only be pushed to a feed once. 
 This ensures that any dependencies on that version are guaranteed to remain valid. 
-However, if you have workflows that publish packages with newer binaries without changing the version number, those workflows will break when moved to Team Services NuGet feeds. Learn more about [Immutability in Team Services](../feeds/immutability.md).
-- **Well-formedness:** Team Services validates all pushed packages to ensure they're well-formed.
+However, if you have workflows that publish packages with newer binaries without changing the version number, those workflows will break when moved to VSTS NuGet feeds. Learn more about [Immutability in VSTS](../feeds/immutability.md).
+- **Well-formedness:** VSTS validates all pushed packages to ensure they're well-formed.
 This prevents invalid packages from entering your development and build environments.
-However, any workflow that publishes malformed packages will break when moving to Team Services NuGet feeds.
+However, any workflow that publishes malformed packages will break when moving to VSTS NuGet feeds.
 
 ### NuGet 3.x is recommended
 
@@ -40,13 +40,13 @@ However, any workflow that publishes malformed packages will break when moving t
 ### Authentication and authorization
 
 If you're using Active Directory-backed file shares, you and your on-prem build agents are likely authenticating automatically using Windows NTLM.
-Moving your packages to Team Services will require a few changes:
+Moving your packages to VSTS will require a few changes:
 
 - **Authentication:** You need to provide the NuGet client with credentials in order to restore and push packages.
   - **Visual Studio 2015 users**: Credential acquisition happens automatically, as long as you've updated the 
   [NuGet Package Manager](../nuget/consume.md) extension to version 3.3 or higher by going to the Tools menu and using the Extensions and Updates window.
   - **nuget.exe 3.x users**: Credential acquisition happens automatically after you install the 
-[Team Services Credential Provider](../nuget/nuget-exe.md).
+[VSTS Credential Provider](../nuget/nuget-exe.md).
 - **Authorization:** Ensure that any principal (user, service account, group, etc.) that needs access to your packages has the appropriate permissions. See the [permissions](#make-a-plan-for-permissions) section for details.
 
 ## Move your packages
@@ -74,7 +74,7 @@ Look for any lines with a UNC path (like `<add key="SMBNuGetServer" value="\\ser
 
 When setting up your new feeds, you can either:
   - Set up your feed permissions to match your existing file share permissions
-  - Align your feed permissions with existing Team Services teams and groups
+  - Align your feed permissions with existing VSTS teams and groups
  
 If you want to match your existing file share permissions, note the permissions on each share that contains packages. 
 Specifically, note the principals with:
@@ -119,7 +119,7 @@ For each feed, click the **Connect to feed** button and copy the **Source URL** 
 
 Once you've set up your feeds, you can do a bulk push from each SMB share to its corresponding feed. To do so: 
 
-1. If you haven't already, open a PowerShell window in the repo where you installed the Team Services NuGet tools and run `init.ps1`. 
+1. If you haven't already, open a PowerShell window in the repo where you installed the VSTS NuGet tools and run `init.ps1`. 
 This sets up your environment to allow you to work with nuget.exe and Team Service's NuGet feeds.
 1. For each share, push all packages in the share to the new feed: 
 `nuget push {your package path}\*.nupkg -Source {your NuGet package source URL} -ApiKey VSTS`
@@ -133,10 +133,10 @@ Now, return to each of the nuget.config files you found in the [inventory](#inve
 each share, find the corresponding `<add key="SMBNuGetServer" value="\\server\share\NuGet" />` and replace the `value` with the new feed's source URL. 
 
 <a name="add-the-vsts-nuget-tools-to-your-repo"></a>
-#### Add the Team Services NuGet tools to your repo
+#### Add the VSTS NuGet tools to your repo
 
-The Team Services NuGet [bootstrap package](bootstrap-nuget.md) can automate the process of acquiring the right NuGet tools and credentials to use feeds.
-This is especially helpful for users of Visual Studio 2013 (or earlier) or NuGet 2.x, which don't have built-in support for Team Services auth.
+The VSTS NuGet [bootstrap package](bootstrap-nuget.md) can automate the process of acquiring the right NuGet tools and credentials to use feeds.
+This is especially helpful for users of Visual Studio 2013 (or earlier) or NuGet 2.x, which don't have built-in support for VSTS auth.
 
 <a name="integrate-with-your-builds"></a>
 #### Integrate with your builds

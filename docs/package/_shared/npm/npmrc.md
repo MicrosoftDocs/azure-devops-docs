@@ -5,7 +5,7 @@
 
 ![Connect to feed button in the upper-right of the page](../_img/connect-to-feed.png)
 
-### Team Services
+### VSTS
 ![npm configuration in the Connect to feed dialog](../_img/connect-to-feed-npm.png)
 
 ### Team Foundation Server

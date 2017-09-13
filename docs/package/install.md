@@ -1,5 +1,5 @@
 ---
-title: Install and license Package Management for Team Services and TFS
+title: Install and license Package Management for VSTS and TFS
 description: Quickly start hosting NuGet packages in VSTS or Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
@@ -12,11 +12,11 @@ ms.date: 01/03/2017
 
 # Install and license Package Management
 
-**Team Services | TFS 2017**
+**VSTS | TFS 2017**
 
-Package Management is an *extension* to Team Services and TFS.  This means you'll need the Package Management extension installed in your account and have Package Management assigned to you in order to view, upload, and download packages.  
+Package Management is an *extension* to VSTS and TFS.  This means you'll need the Package Management extension installed in your account and have Package Management assigned to you in order to view, upload, and download packages.  
 
-## Install Package Management in Team Services
+## Install Package Management in VSTS
 
 First, go to the [Marketplace page for Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed). 
 
@@ -42,9 +42,9 @@ Package Management is installed by default for TFS 2017 customers.  You must upg
 
 ## Buying Package Management
 
-Once your 30-day trial of Package Management is over, you'll either need Package Management assigned to you or have a VS Enterprise subscription to view, upload, and download packages. In Team Services, you can assign 5 users Package Management for free.  In TFS, all Package Mangement licenses must be purchased in the Marketplace.  
+Once your 30-day trial of Package Management is over, you'll either need Package Management assigned to you or have a VS Enterprise subscription to view, upload, and download packages. In VSTS, you can assign 5 users Package Management for free.  In TFS, all Package Mangement licenses must be purchased in the Marketplace.  
 
-To buy additional licenses of Package Management in Team Services, start by navigating to the [Package Management page in the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+To buy additional licenses of Package Management in VSTS, start by navigating to the [Package Management page in the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 To buy licenses of Package Management in TFS, navigate to the marketplace using the **Browse Marketplace** link in the top right-hand corner of any page in your account:
 
@@ -68,7 +68,7 @@ Finally, select **Confirm** and then **Assign to users.**
 
 For further help on the purchasing process, check out the documentation [here](/vsts/marketplace/install-vsts-extension).
 
-## Assign Package Management in Team Services
+## Assign Package Management in VSTS
 
 To assign your 5 free licenses of Package Management and any additional licenses that you've purchased, go to your account, select the **Users** hub, and select **Package Management**.
 

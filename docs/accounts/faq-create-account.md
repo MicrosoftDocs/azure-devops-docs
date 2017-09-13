@@ -15,7 +15,7 @@ ms.date: 03/30/2017
 
 
 <a name="free-users"></a>
-#### Q: What users can join for free?  What do they get in Visual Studio Team Services?
+#### Q: What users can join for free?  What do they get in VSTS?
 
 A: VSTS is free for these users to join:
 
@@ -29,7 +29,7 @@ like working with your backlog, work items, and queries
 who also get Basic features, and in some cases, additional features with specific extensions, like 
 [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 
- Learn what else you get with [Visual Studio Team Services](https://www.visualstudio.com/team-services/pricing/).
+ Learn what else you get with [VSTS](https://www.visualstudio.com/team-services/pricing/).
 
 
 
@@ -37,10 +37,10 @@ who also get Basic features, and in some cases, additional features with specifi
 
 [!INCLUDE [browser-problems](../_shared/qa-browser-problems.md)]
 
-####Q:  Which Visual Studio subscriptions can I use with Visual Studio Team Services?
+####Q:  Which Visual Studio subscriptions can I use with VSTS?
 
 A:	Go here to find 
-[Visual Studio subscriptions that include Visual Studio Team Services](https://azure.microsoft.com/pricing/details/visual-studio-team-services/).
+[Visual Studio subscriptions that include VSTS](https://azure.microsoft.com/pricing/details/visual-studio-team-services/).
 
 ####Q:	Why am I asked to provide profile details?
 

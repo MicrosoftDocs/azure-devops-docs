@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 **VSTS**
 
 When you first launch [Visual Studio 2015](https://www.visualstudio.com/products/vs-2015-product-editions), 
-you can sign in and connect to [Visual Studio Team Services](https://www.visualstudio.com/products/visual-studio-team-services-vs).
+you can sign in and connect to [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs).
 
 If you have already gone through Visual Studio sign in, or you are using Visual Studio 2017, then [learn how](../git/gitquickstart.md) to connect to 
 your VSTS from the Team Explorer window.
@@ -45,7 +45,7 @@ If you want, you can also use VSTS with any IDE or code editor, like:
 
 0.  [Download and install Visual Studio](https://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409), 
 if you don't have the version you want already. 
-[Which versions can I use with Visual Studio Team Services?](#vs-versions)
+[Which versions can I use with VSTS?](#vs-versions)
 
 	If you have a Visual Studio subscription that 
 	includes the Visual Studio IDE, get the version 
@@ -178,14 +178,14 @@ Or contact [Visual Studio Support](https://www.visualstudio.com/support/support-
 
 <!-- ENDSECTION -->
 
-### Visual Studio Team Services
+### VSTS
 
 <!-- BEGINSECTION class="md-qanda" -->
 
 <a name="WhatIsVSO"></a>
 ####Q: How can I create a VSTS account later?
 
-A:	Learn how to [sign up for Visual Studio Team Services](create-account-msa-or-work-student.md).
+A:	Learn how to [sign up for VSTS](create-account-msa-or-work-student.md).
 
 <a name="browser-problems"></a>
 

@@ -11,7 +11,7 @@ ms.date: 07/14/2017
 ---
 
 # Sign up for a free VSTS account and invite others to join your team  
-**Team Services**
+**VSTS**
  
 Sign up for a [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) 
 account to upload and share code in a free unlimited private 
@@ -22,7 +22,7 @@ Visual Studio, IntelliJ, or Android Studio to work on apps anytime, anywhere.
 <a name="MicrosoftAccount"></a>
 ##	Sign up with a personal Microsoft account
 
-0.	Go to [Visual Studio Team Services](https://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409). 
+0.	Go to [VSTS](https://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409). 
 Enter your email address for your Microsoft account. 
 
 	If you're a Visual Studio subscriber 

@@ -1,6 +1,6 @@
 ---
-title: Install extensions for VSTS | Visual Studio Team Services (Visual Studio Online)
-description: Find and install extensions for Team Services from the Visual Studio Marketplace
+title: Install extensions for VSTS | VSTS (Visual Studio Online)
+description: Find and install extensions for VSTS from the Visual Studio Marketplace
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-marketplace
@@ -10,9 +10,9 @@ ms.author: elbatk
 ms.date: 01/10/2017
 ---
 
-# Install extensions for Visual Studio Team Services
+# Install extensions for VSTS
 
-**Team Services**
+**VSTS**
 
 To add new features and capabilities to your VSTS account, 
 install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts). 
@@ -21,18 +21,18 @@ and you can [start extension trials](/vsts/billing/try-additional-features-vs),
 if they're offered. 
 
 > [!TIP]
-> To learn about building your own Team Services extensions, 
+> To learn about building your own VSTS extensions, 
 > see [developing](http://aka.ms/vsoextensions) and 
 > [publishing](http://aka.ms/vsmarketplace-publish) extensions.
 
 <a name="install-extension"></a>
-## Install an extension for your Team Services account
+## Install an extension for your VSTS account
 
 ### What do I need to install extensions?
-Team Services [project collection administrators or account owners](faq-extensions.md#find-owner) can install extensions. If you don't have permissions, 
+VSTS [project collection administrators or account owners](faq-extensions.md#find-owner) can install extensions. If you don't have permissions, 
 you can [request extensions](request-vsts-extension.md) instead. 
 
-Private extensions must be shared with your Team Services account to be installed. Check out the
+Private extensions must be shared with your VSTS account to be installed. Check out the
 [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
 
 For paid extensions, you'll need an [Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) 
@@ -47,13 +47,13 @@ to bill your purchase. If you don't have an Azure subscription, you can create a
 > to the Azure subscription that you want to use for billing. 
 > Co-administrator permissions are available only in the classic Azure portal.
 
-Your Team Services account will reuse your Azure subscription 
+Your VSTS account will reuse your Azure subscription 
 for future Visual Studio Marketplace purchases 
-or for team services purchased through Azure, 
+or for VSTS purchased through Azure, 
 like Cloud-based Load Testing.
 [Where can I find more info about Azure billing?](./faq-extensions.md#billing)
 
-0.  Sign in to the [Visual Studio Marketplace > Visual Studio Team Services](https://marketplace.visualstudio.com/vsts).
+0.  Sign in to the [Visual Studio Marketplace > VSTS](https://marketplace.visualstudio.com/vsts).
 	
 	<img alt="Visual Studio Marketplace" src="_img/get-vsts-extensions/marketplace.png" style="border: 1px solid #CCCCCC" />
 
@@ -72,11 +72,11 @@ install or buy the extension.
 
 	<img alt="Install or buy the extension" src="_img/get-vsts-extensions/test-manager-extension.png" style="border: 1px solid #CCCCCC" />
 
-0.  Select your Team Services account to install this extension. 
+0.  Select your VSTS account to install this extension. 
 
-	<img alt="Select Team Services account for this extension" src="_img/get-vsts-extensions/account.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Select VSTS account for this extension" src="_img/get-vsts-extensions/account.png" style="border: 1px solid #CCCCCC" />
 
-	*	[Why don't I see any Team Services accounts?](./faq-extensions.md#no-accounts) 
+	*	[Why don't I see any VSTS accounts?](./faq-extensions.md#no-accounts) 
 
 	*	[Why can't I install this extension?](./faq-extensions.md#no-permissions) 
 
@@ -94,7 +94,7 @@ that you'll use to pay for extension access.
 
 0.	If you installed a paid extension like Test Manager, 
 make sure that you [assign the extension to users who need access](assign-paid-extensions.md).
-Otherwise, you can now go to your Team Services account to use your extension. 
+Otherwise, you can now go to your VSTS account to use your extension. 
 Also, tell your team about this extension, so they can start using its capabilities too.
 
 	<img alt="Extension installed" src="_img/get-vsts-extensions/go-to-account.png" style="border: 1px solid #CCCCCC" />

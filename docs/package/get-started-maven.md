@@ -1,5 +1,5 @@
 ---
-title: Get Started with Maven Package Management in Team Services and TFS
+title: Get Started with Maven Package Management in VSTS and TFS
 description: Quickly start hosting Maven packages in VSTS or Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
@@ -10,7 +10,7 @@ ms.author: rossav
 ms.date: 09/01/2017
 ---
 
-# Get started with Maven Package Management in Team Services and TFS
+# Get started with Maven Package Management in VSTS and TFS
 
 ## Before you start
 This guide assumes you've already set up Package Management. You can check out how to install and license the extension in the 
@@ -22,7 +22,7 @@ listing to install.
 ### Prerequisites
 
 1. Apache Maven installed. It can be downloaded from the [Apache Maven Site](https://maven.apache.org/download.cgi).
-2. Have [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your Team Services account.
+2. Have [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your VSTS account.
 3. [Public-opt in only] - To enable Maven support for your account, ask your account admin to go to the "Preview Features" section, choose "for this account", and enable "Maven for Package Management". 
 ([Preview Features docs](../collaborate/preview-features.md))
 

@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Create your first Extension with Visual Studio | Extensions for Visual Studio Team Services
-description: Use Visual Studio with ASP.NET to create your first extension for Visual Studio Team Services.
+title: Create your first Extension with Visual Studio | Extensions for VSTS
+description: Use Visual Studio with ASP.NET to create your first extension for VSTS.
 ms.assetid: 387f13db-bb06-4f8e-baf8-3f0ea05903e5
 ms.manager: douge
 ms.author: elbatk
@@ -13,7 +13,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [preview](../_data/private-preview.md)]
 
-Extensions enable you to create first-class integration experiences within Visual Studio Team Services.
+Extensions enable you to create first-class integration experiences within VSTS.
 An extension can be a simple context menu or toolbar action
 or it can be a complex and powerful custom UI experience that light up within the account, collection, or project hubs.
 
@@ -36,10 +36,10 @@ and an action on the queries context menu to launch your hub.
 <a id="hub"></a>
 ## Create a hub
 
-Use a hub to surface your web app in an iframe in Visual Studio Team Services.
+Use a hub to surface your web app in an iframe in VSTS.
 The one we're creating here will show up in the team project's **Work** hub group.
 
-![Location of a new hub in Visual Studio Team Services](../_shared/procedures/_img/hub-location.png)
+![Location of a new hub in VSTS](../_shared/procedures/_img/hub-location.png)
 
 <a id="app"></a>
 ### Create the web app

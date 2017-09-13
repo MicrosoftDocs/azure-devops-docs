@@ -41,7 +41,7 @@ When you update the status of a task as Completed, the system automatically zero
 
 You can obtain rollup of additional data fields in VSTS or TFS data by using one of the following methods:  
  
-|Method|Team Services|On-premises TFS|  
+|Method|VSTS|On-premises TFS|  
 |------------|----------|----------------------|  
 |Microsoft Project|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 |Microsoft Excel|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  

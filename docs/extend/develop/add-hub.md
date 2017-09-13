@@ -1,5 +1,5 @@
 ---
-title: Add a Hub | Extensions for Visual Studio Team Services
+title: Add a Hub | Extensions for VSTS
 description: Extend VSTS with your own hub.
 ms.assetid: 0d06c2d8-402f-4373-a2d3-2513ae278443
 ms.prod: vs-devops-alm
@@ -13,7 +13,7 @@ ms.date: 08/23/2016
 
 We'll create a new hub that displays in the Work hub group, after the Backlogs and Queries hubs.
 
-![Location of a new hub in Visual Studio Team Services](../_shared/procedures/_img/hub-location.png)
+![Location of a new hub in VSTS](../_shared/procedures/_img/hub-location.png)
 
 ## Structure of an extension
 ```no-highlight
@@ -29,7 +29,7 @@ We'll create a new hub that displays in the Work hub group, after the Backlogs a
 └── vss-extension.json				// extension's manifest
 ```
 ## Get the client SDK: `VSS.SDK.js`
-The core SDK script, VSS.SDK.js, enables web extensions to communicate to the host Team Services frame and to perform operations like 
+The core SDK script, VSS.SDK.js, enables web extensions to communicate to the host VSTS frame and to perform operations like 
 initializing, notifying extension is loaded or getting context about the current page. Get the Client SDK `VSS.SDK.js` file and add it to your web app. 
 Place it in the `home/sdk/scripts` folder.
 

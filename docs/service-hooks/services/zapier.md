@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Zapier with Visual Studio Team Services
+title: Zapier with VSTS
 description: Use Zapier with your VSTS account
 ms.assetid: 93b2aed5-2f28-41a3-b1b7-2d88b4feec09
 ms.manager: douge
@@ -9,7 +9,7 @@ ms.author: elbatk
 ms.date: 08/04/2016
 ---
 
-# Zapier with Visual Studio Team Services
+# Zapier with VSTS
 
 Use Zapier to connect VSTS to other apps for development,
 operations, customer connection, sales, marketing and more.
@@ -61,7 +61,7 @@ to a Git repository in our VSTS account to show how that works.
 
    <img alt="Name the zap and turn it on" src="./_img/zapier/turn-zap-on.png" style="border: 1px solid #CCCCCC" />
 
-   Now the zap is set up, you'll get new notes in OneNote each time code is pushed in Visual Studio Team Services.
+   Now the zap is set up, you'll get new notes in OneNote each time code is pushed in VSTS.
 
    <img alt="Now the zap is set up" src="./_img/zapier/code-pushed-zap.png" style="border: 1px solid #CCCCCC" />
 
@@ -75,7 +75,7 @@ for pricing related to their services.
 
 #### Q: Can VSTS take actions based on events from other apps, too.
 
-A: Yes, you can create a zap to post a message to a team room, queue a build, or add a link to a work item in Visual Studio Team Services. Just choose VSTS as the app that's taking the action instead of raising the event. 
+A: Yes, you can create a zap to post a message to a team room, queue a build, or add a link to a work item in VSTS. Just choose VSTS as the app that's taking the action instead of raising the event. 
 
 <img alt="Choose VSTS as the action app" src="./_img/zapier/to-vso.png" style="border: 1px solid #CCCCCC" />
 
@@ -96,6 +96,6 @@ A: Yes, see details [here](../create-subscription.md).
 
 #### Q: Where can I get more information about Zapier?
 
-A: At [Zapier for Visual Studio Team Services](https://zapier.com/zapbook/visual-studio-online/).
+A: At [Zapier for VSTS](https://zapier.com/zapbook/visual-studio-online/).
 
 <!-- ENDSECTION -->

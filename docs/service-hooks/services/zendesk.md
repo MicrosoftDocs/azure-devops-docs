@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Zendesk with Visual Studio Team Services
+title: Zendesk with VSTS
 description: Use Zendesk with your VSTS account
 ms.assetid: 7dd649d2-152f-4894-955d-dd42ac56d81a
 ms.manager: douge
@@ -9,13 +9,13 @@ ms.author: elbatk
 ms.date: 02/08/2017
 ---
 
-# Zendesk with Visual Studio Team Services
+# Zendesk with VSTS
    
 If you use Zendesk to support your customers, 
 you can create work items in VSTS directly from your Zendesk tickets.
 Then you can configure VSTS to update the Zendesk ticket when the work item is updated.
 
-## Install the Team Services app for Zendesk
+## Install the VSTS app for Zendesk
 
 1. Download the .zip file that contains the VSTS for Zendesk app from [GitHub](https://github.com/Microsoft/vsts-zendesk-app).
 
@@ -37,9 +37,9 @@ Then you can configure VSTS to update the Zendesk ticket when the work item is u
 
 ## Authenticating
 
-Each user of the app must provide credentials so that the Team Services app can create and query work items as that user. Creating a personal access token is recommended.
+Each user of the app must provide credentials so that the VSTS app can create and query work items as that user. Creating a personal access token is recommended.
 
-1. Navigate to the Team Services account you associated with your Zendesk account (from step 5 above)
+1. Navigate to the VSTS account you associated with your Zendesk account (from step 5 above)
 
 2. Open the profile menu and select Security
 
@@ -55,7 +55,7 @@ Each user of the app must provide credentials so that the Team Services app can 
    * Scope the token to the account associated with Zendesk
    * Limit to at least **Work item (read and write)**
 
-4. Copy the token and paste it into the **Password** field of the Team Services app in Zendesk
+4. Copy the token and paste it into the **Password** field of the VSTS app in Zendesk
 
    <img alt="Profile menu" src="./_img/zendesk/login.png" style="border: 1px solid #CCCCCC" />
 
@@ -79,7 +79,7 @@ Each user of the app must provide credentials so that the Team Services app can 
 
    <img alt="Zendesk ticket with work item" src="./_img/zendesk/ticket-with-work-item.png" style="border: 1px solid #CCCCCC" />
 
-   In Visual Studio Team Services, the work item is tagged with the tag you set up , and it's linked back to the ticket in Zendesk.
+   In VSTS, the work item is tagged with the tag you set up , and it's linked back to the ticket in Zendesk.
 
    <img alt="Work item in VSTS with tag and link to Zendesk ticket" src="./_img/zendesk/work-item.png" style="border: 1px solid #CCCCCC" />
 
@@ -130,7 +130,7 @@ for pricing related to their services.
 
 #### Q:  Why do I keep getting prompted for a user name and password?
 
-A: If you supplied a Personal Access Token (recommended) in the login panel of the app, make sure the token is scoped either to "all accessible accounts" or to the specific Team Services account configured in the app's settings. To open the app settings from Zendesk go to Settings > Apps > Manage.
+A: If you supplied a Personal Access Token (recommended) in the login panel of the app, make sure the token is scoped either to "all accessible accounts" or to the specific VSTS account configured in the app's settings. To open the app settings from Zendesk go to Settings > Apps > Manage.
 
 Also make sure the token has not expired and that it has the **Work items (read and write)** scope.
 

@@ -1,6 +1,6 @@
 ---
-title: Buy Basic access to add VSTS users | Visual Studio Team Services
-description: Buy Basic access to add more users in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
+title: Buy Basic access to add VSTS users | VSTS
+description: Buy Basic access to add more users in VSTS (Visual Studio Online, VSO, VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: c229c564-bda3-4d5d-92a9-4dbe45223367
@@ -120,10 +120,10 @@ for the Azure subscription that's linked to your VSTS account.
 <p>
 <ol>
 <li>Sign in to the [Azure classic portal](https://manage.windowsazure.com/).
-<li>Go to **Visual Studio Team Services**. 
+<li>Go to **VSTS**. 
 Select your VSTS account.
 <p>
-<p>![Visual Studio Team Services, select your VSTS account](_img/_shared/azurechooselinkedaccount.png)
+<p>![VSTS, select your VSTS account](_img/_shared/azurechooselinkedaccount.png)
 <p>
 <p>[Why don't I see my VSTS account?](#WhyNoVSOAccount)
 <p>

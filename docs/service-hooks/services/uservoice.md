@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: UserVoice with Visual Studio Team Services
+title: UserVoice with VSTS
 description: Use UserVoice with your VSTS account
 ms.assetid: c0f08f71-39cd-48ac-aff0-0618c57229c7
 ms.manager: douge
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # UserVoice
 
-Use User Voice to get feedback from your customers and push that feedback directly into your backlog in Visual Studio Team Services.
+Use User Voice to get feedback from your customers and push that feedback directly into your backlog in VSTS.
 When your team updates the item in the backlog, the User Voice item is updated, too. 
 
 Link your VSTS account to your UserVoice account.
@@ -26,7 +26,7 @@ Link your VSTS account to your UserVoice account.
 
 	<img alt="Uservoice settings dialog box, integrations tab, sync services link" src="./_img/uservoice/uservoice-sync-services.png" style="border: 1px solid #CCCCCC" />
 
-4. Sync to Visual Studio Team Services.
+4. Sync to VSTS.
 
 	<img alt="Uservoice settings dialog box, integrations tab, VSTS link" src="./_img/uservoice/sync-visual-studio-online.png" style="border: 1px solid #CCCCCC" />
 
@@ -49,8 +49,8 @@ Or, if your team uses user stories instead of product backlog items, you can cre
 
 	<img alt="Uservoice idea, settings menu, create work item" src="./_img/uservoice/uservoice-idea.png" style="border: 1px solid #CCCCCC" />
 
-2. Create the backlog item in Visual Studio Team Services.
-The description you type here will be the description of the item in Visual Studio Team Services.
+2. Create the backlog item in VSTS.
+The description you type here will be the description of the item in VSTS.
 
 	<img alt="Create work item dialog box in Uservoice" src="./_img/uservoice/uservoice-create-work-item.png" style="border: 1px solid #CCCCCC" />
 
@@ -58,17 +58,17 @@ The description you type here will be the description of the item in Visual Stud
 
 	<img alt="Uservoice idea with work item" src="./_img/uservoice/idea-with-work-item.png" style="border: 1px solid #CCCCCC" />
 
-4. Follow that link to open the backlog item in Visual Studio Team Services.
+4. Follow that link to open the backlog item in VSTS.
 
-	<img alt="Work item in Visual Studio Team Services" src="./_img/uservoice/work-item.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Work item in VSTS" src="./_img/uservoice/work-item.png" style="border: 1px solid #CCCCCC" />
 
 ## Update a your backlog
 
-When you update your backlog in Visual Studio Team Services, the UserVoice idea is updated, too.
+When you update your backlog in VSTS, the UserVoice idea is updated, too.
 
 1. Approve the backlog item.
 
-	<img alt="Approved backlog item in Visual Studio Team Services" src="./_img/uservoice/approved-backlog-item.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Approved backlog item in VSTS" src="./_img/uservoice/approved-backlog-item.png" style="border: 1px solid #CCCCCC" />
 
 2. Add a comment in the history control.
 
@@ -86,7 +86,7 @@ Your customers can see that you're doing this work.
 
 	<img alt="Uservoice add note dialog box" src="./_img/uservoice/add-note.png" style="border: 1px solid #CCCCCC" />
 
-2. In Visual Studio Team Services, refresh the work item to see the note in the discussion tab.
+2. In VSTS, refresh the work item to see the note in the discussion tab.
 
 	<img alt="Work item discussion tab with note added" src="./_img/uservoice/work-item-discussion.png" style="border: 1px solid #CCCCCC" />
 
@@ -104,6 +104,6 @@ A: Yes, see details [here](../create-subscription.md).
 
 #### Q: Where can I get more information about UserVoice?
 
-A: At UserVoice for [Visual Studio Team Services](https://www.uservoice.com/for/visual-studio-online/).
+A: At UserVoice for [VSTS](https://www.uservoice.com/for/visual-studio-online/).
 
 <!-- ENDSECTION -->

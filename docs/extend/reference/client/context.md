@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Web Context | Extensions for Visual Studio Team Services
+title: Web Context | Extensions for VSTS
 description: Context data avaialble in your web extensions 
 ms.assetid: b926a050-1e70-4907-8963-e4f2ee9939e5
 ms.manager: douge

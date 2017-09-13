@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Flowdock with Visual Studio Team Services
+title: Flowdock with VSTS
 description: Use Flowdock with your VSTS account
 ms.assetid: 191c21d1-17d7-4d33-9a5f-231bc70edd0f
 ms.manager: douge
@@ -41,7 +41,7 @@ a build has finished, or a work item has been created or updated.
 
 ## Use a service hook to push messages
 
-1. In Visual Studio Team Services, open your team project's administration page.
+1. In VSTS, open your team project's administration page.
 
 1. Add a service hook.
 

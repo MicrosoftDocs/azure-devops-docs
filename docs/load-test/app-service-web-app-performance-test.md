@@ -29,7 +29,7 @@ confident that your app can handle the traffic during peak use or at your next m
   account to keep your performance test history. A suitable account will be created 
   automatically when you set up your performance test. Or you can create a new account 
   or use an existing account if you're the account owner. 
-  [What else can I do with a VSTS account?](reference-qa.md#TeamServicesAccount)
+  [What else can I do with a VSTS account?](reference-qa.md#Team ServicesAccount)
 
 * Deploy your app for testing in a non-production environment. 
   Have your app use an App Service plan other than the plan used in production. 
@@ -50,7 +50,7 @@ confident that your app can handle the traffic during peak use or at your next m
 
    ![Go to Tools, Performance Test](_img/app-service-web-app-performance-test/azure-np-web-app-details-tools-expanded.png)
  
-1. Now you'll link a [Visual Studio Team Services](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
+1. Now you'll link a [VSTS](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
    account to keep your performance test history.
 
    If you have a VSTS account to use, select that account. If you don't, create a new account.

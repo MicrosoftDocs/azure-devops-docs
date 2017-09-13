@@ -9,7 +9,7 @@ ms.author: estfan
 ms.date: 1/13/2017
 ---
 
-#	Manage users and access in Visual Studio Team Services
+#	Manage users and access in VSTS
 
 **VSTS**
 

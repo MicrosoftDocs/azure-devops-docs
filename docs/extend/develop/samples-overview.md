@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Samples Overview | Extensions for Visual Studio Team Services
+title: Samples Overview | Extensions for VSTS
 description: Overview of the available extension samples, including a description, the link to the repo and the contributions they touch
 ms.assetid: 2639a776-d2f7-4866-b54f-1da3883b1b91
 ms.manager: douge
@@ -9,7 +9,7 @@ ms.author: elbatk
 ms.date: 08/04/2016
 ---
 
-# Team Services extension samples
+# VSTS extension samples
 
 You can get started developing your extension by working from an sample. 
 The Microsoft samples listed below show the capabilities of the extension framework and how to 

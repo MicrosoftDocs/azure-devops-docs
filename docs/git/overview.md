@@ -110,7 +110,7 @@ and [IntelliJ](https://java.visualstudio.com/Docs/tools/intelliJ).</p>
 Every task is presented step-by-step in Visual Studio or from the command line.</p>
 </div>
 <div class="col-sm-6 col-md-6">
-![Team services Git tutorial workflow](tutorial/_img/gitworkflow.png)
+![VSTS Git tutorial workflow](tutorial/_img/gitworkflow.png)
 
 </div>
 </div>   

@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Auth and Security | Extensions for Visual Studio Team Services
+title: Auth and Security | Extensions for VSTS
 description: Auth and secuirty for VSTS Extensions
 ms.assetid: c1704b14-66d2-4950-8633-a63fc8f88508
 ms.manager: douge

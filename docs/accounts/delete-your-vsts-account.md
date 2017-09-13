@@ -33,7 +33,7 @@ But it might take up to 1 hour before your account URL becomes available again.
 you must unlink your account before you delete your account. 
 
 	You're still charged for any paid users and
-	team services that your account uses during this billing cycle. 
+	VSTS that your account uses during this billing cycle. 
 	Billing will stop after the current cycle ends.
 
 To delete your VSTS account, 

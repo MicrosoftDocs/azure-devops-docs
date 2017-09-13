@@ -74,7 +74,7 @@ The extension topology is perfectly suited for the ring deployment model and we 
 
 Let's observe how a change triggers and moves through our ring based deployment process we're using for all our extension projects, using the [VSTS Developer Tools Build Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks) extension.
 
-> **VSTS Developer Tools Build Tasks** extension is our secret sauce, used to package and publish Team Services extensions to the Visual Studio Marketplace.
+> **VSTS Developer Tools Build Tasks** extension is our secret sauce, used to package and publish VSTS extensions to the Visual Studio Marketplace.
  
 ![Extension rings](./_img/phase-rollout-with-rings/phase-rollout-with-rings-pipeline.png)
 
