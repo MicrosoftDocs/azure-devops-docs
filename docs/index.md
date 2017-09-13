@@ -207,15 +207,15 @@ ms.date: 07/26/2017
                                     </ul>
                                     <h3>Extend</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/extend/index">Build Extensions</a></li>
+                                        <li><a class="barLink" href="/vsts/extend/index">Develop Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/integrate/index">Build Apps</a></li>
+                                        <li><a class="barLink" href="/vsts/service-hooks/index">Service Hooks</a></li>
                                         <li><a class="barLink" href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">REST APIs</a></li>
                                         <li><a class="barLink" href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a</li>
                                     </ul>
                                     <h3>Marketplace</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/marketplace/overview">Discover Extensions</a></li>
-                                        <li><a class="barLink" href="/vsts/service-hooks/index">Service Hooks</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -908,8 +908,8 @@ ms.date: 07/26/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Build Extensions</h3>
-                                                    <p>Develop custom extensions to interface with VSTS or TFS.</p>
+                                                    <h3>Develop Extensions</h3>
+                                                    <p>Extend VSTS and TFS with custom web experiences, CI/CD tasks, and more.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -928,7 +928,27 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Build Apps</h3>
-                                                    <p>Integrate with VSTS directly in a custom app or service.</p>
+                                                    <p>Programmatically integrate with VSTS and TFS from custom apps and services.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/service-hooks/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_service-hooks.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Service Hooks</h3>
+                                                    <p>Create subscriptions and configure the integration of VSTS or TFS with
+                                                        third-party apps.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -990,28 +1010,7 @@ ms.date: 07/26/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Discover Extensions</h3>
-                                                    <p>Explore the growing set of extensions available from the Visual Studio
-                                                        Marketplace.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/service-hooks/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_service-hooks.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Service Hooks</h3>
-                                                    <p>Create subscriptions and configure the integration of VSTS or TFS with
-                                                        third-party apps.</p>
+                                                    <p>Browse the Visual Studio Marketplace and discover extensions for VSTS and TFS.</p>
                                                 </div>
                                             </div>
                                         </div>
