@@ -10,14 +10,14 @@ ms.author: kaelli
 ms.date: 08/15/2017
 ---
 
-# A tour of services Team Services and TFS provides 
-<b>Team Services | TFS 2017 | TFS 2015  </b> 
+# A tour of services VSTS and TFS provides 
+**VSTS| TFS 2017 | TFS 2015**
 
-With Team Services and TFS, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web-based interface that you can access from all major browsers. 
+With VSTS and TFS, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web-based interface that you can access from all major browsers. 
 
 Web services are access through the following main hubs as shown in the following image.
 
-![Team Services, main hubs](_img/services-hubs.png)  
+![VSTS, main hubs](_img/services-hubs.png)  
 
 Many of our services are either free for small teams or available through a subscription model or per use model. Where needed, you can exercise a hybrid approach where you use an on-premises TFS to manage your code and work, and purchase cloud build or testing services on an as needed basis.  
 
@@ -29,7 +29,7 @@ For information about client tools, see [Tools](tools.md).
 -->
 
 ## Core services 
-When you sign up for Team Services or install an on-premises TFS, you get access to the following services. All of these services you manage through a web browser. Some services, such as source control and build definitions, can also be managed through a client.    
+When you sign up for VSTS or install an on-premises TFS, you get access to the following services. All of these services you manage through a web browser. Some services, such as source control and build definitions, can also be managed through a client.    
 
 
 
@@ -119,14 +119,14 @@ In addition to the above "hub" services, the following services work across hubs
 - Reporting    						
 
 >[!NOTE]  
->Team rooms are deprecated for TFS 2017.2. Instead, we recommend you use service hooks to integrate with Slack. The Slack extension is pre-installed with Team Services and TFS 2015 and later versions.
+>Team rooms are deprecated for TFS 2017.2. Instead, we recommend you use service hooks to integrate with Slack. The Slack extension is pre-installed with VSTS and TFS 2015 and later versions.
 
 
 ## Service hooks
 
-Service hooks enable you to perform tasks on other services when events happen within your team project hosted on Team Services or TFS. For example, you can send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services as a more efficient way to drive activities when events happen in your projects.
+Service hooks enable you to perform tasks on other services when events happen within your team project hosted on VSTS or TFS. For example, you can send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services as a more efficient way to drive activities when events happen in your projects.
 
-The following services are available as the target of service hooks. To learn about others apps and services that integrate with our Team Services or TFS, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com)
+The following services are available as the target of service hooks. To learn about others apps and services that integrate with our VSTS or TFS, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com)
 
 For the latest set of supported services, see [Integrate with service hooks](service-hooks/index.md)
 
@@ -141,11 +141,11 @@ To learn more, see [Pricing](https://www.visualstudio.com/team-services/pricing/
 
 
 ## Azure services 
-Azure provides a number of cloud-hosted services to support application development and deployment. You can make use of these services solely or in combination with Team Services or TFS. 
+Azure provides a number of cloud-hosted services to support application development and deployment. You can make use of these services solely or in combination with VSTS or TFS. 
 
 To browse Azure's directory of integrated services, features, and bundled suites, see [Azure products](https://azure.microsoft.com/services/).  
 
-For continuous delivery to Azure from Team Services, see [Automatically build and deploy to Azure web apps or cloud services](https://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso/). 
+For continuous delivery to Azure from VSTS, see [Automatically build and deploy to Azure web apps or cloud services](https://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso/). 
 
 
 ## Administrative services  
@@ -156,7 +156,7 @@ There are a number of features and tasks associated with administrating a collab
 <img src="user-guide/_img/tour-admin-project-level.png" alt="Product backlog" style="border: 2px solid #C3C3C3;" /> 
 
 > [!div class="mx-tdBreakAll"]  
-> |Account Management (Team Services)  | Administration (TFS)  | 
+> |Account Management (VSTS)  | Administration (TFS)  | 
 > |-------------|----------| 
 > |- Manage users, access, and billing<br/>- Add and manage team projects and teams<br/>- Customize work tracking processes<br/>- Manage build retention policies<br/>- Add and manage build agent pools<br/>- Add and manage extensions|-Manage users, access, and permissions<br/>- Add and manage teams, team projects, and collections<br/>- Customize work tracking processes<br/>- Manage build retention policies<br/>- Add and manage build agent pools<br/>- Add and manage extensions<br/>- Configure an SMTP server (supports feedback requests and notification features)<br/>- Configure a backup schedule and manage database backups<br/>- Manage upgrades |
 
@@ -169,5 +169,5 @@ There are a number of features and tasks associated with administrating a collab
 
 
 <!---
-**System Center integration**: Enables a release definition to connect to a System Center Virtual Machine Manager (SCVMM) server to easily provision virtual machines and perform actions on them such as managing checkpoints, starting and **VMware Resource Deployment**: Connect to a VMware vCenter Server from Team Services or TFS to provision, start, stop, or snapshot VMware virtual machines. 
+**System Center integration**: Enables a release definition to connect to a System Center Virtual Machine Manager (SCVMM) server to easily provision virtual machines and perform actions on them such as managing checkpoints, starting and **VMware Resource Deployment**: Connect to a VMware vCenter Server from VSTS or TFS to provision, start, stop, or snapshot VMware virtual machines. 
 -->

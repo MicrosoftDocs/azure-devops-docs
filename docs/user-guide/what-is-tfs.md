@@ -1,5 +1,5 @@
 ---
-title: Services | Team Services & TFS
+title: Services | VSTS & TFS
 description: Understand the services that support the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm

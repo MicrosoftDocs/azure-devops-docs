@@ -50,7 +50,7 @@ To learn more, see these topics:
 
 <!---
 [Small teams can start for free!](https://www.visualstudio.com/products/visual-studio-team-services-vs.aspx)  
-[Devops overview for Team Services and TFS](index.md)
+[Devops overview for VSTS and TFS](index.md)
 *(c) 2016 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without

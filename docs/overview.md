@@ -1,5 +1,5 @@
 ---
-title: Team Services & TFS documentation
+title: VSTS & TFS documentation
 layout: HubPage
 description: Get started page for VSTS and Team Foundation Server (TFS) Documentation
 ms.assetid: F15A468A-E869-4DB6-AED5-5EB2E39D6E3A
@@ -202,9 +202,9 @@ ms.date: 08/04/2016
   <div class="row">
     <div class="col-sm-6 col-md-3 col-md-offset-2 item">
       <div class="title">
-        <a href="accounts/account-management.md">Team Services</a>
+        <a href="accounts/account-management.md">VSTS</a>
         <div class="desc">
-          Set up your Team Services account in the cloud. Manage account access, billing, and purchases.
+          Set up your VSTS account in the cloud. Manage account access, billing, and purchases.
         </div>
       </div>
     </div>
