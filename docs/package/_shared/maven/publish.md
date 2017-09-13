@@ -38,6 +38,7 @@ mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -Dgro
       </dependency>
    </dependencies>
    <repositories>
+    <!-- Copy this section from the Maven section of the “Connect to Feed” dialog” -->
       <repository>
          <id>mseng-visualstudio.com-zcalvinmaven</id>
          <url>https://mseng.pkgs.visualstudio.com/_packaging/zCalvinMaven2/maven/v1</url>
@@ -50,6 +51,7 @@ mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -Dgro
       </repository>
    </repositories>
    <distributionManagement>
+    <!-- Copy this section from the Maven section of the “Connect to Feed” dialog” -->
       <repository>
          <id>mseng-visualstudio.com-zcalvinmaven</id>
          <url>https://mseng.pkgs.visualstudio.com/_packaging/zCalvinMaven2/maven/v1</url>
