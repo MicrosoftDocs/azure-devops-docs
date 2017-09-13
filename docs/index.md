@@ -70,6 +70,7 @@ ms.date: 07/26/2017
         </ul>
     </div>
     <div class="container">
+        <h1>Visual Studio Team Services Documentation</h1>
         <ul class="pivots">
             <li>
                 <a href="#start">Get Started</a>
