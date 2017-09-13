@@ -16,16 +16,16 @@ VSTS and Team Foundation Server help you implement a highly customizable continu
 
 ## 5-Minute Quickstarts
 
-Learn how to build your app.
+### Learn how to build your app.
 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack"><div class="ico48Link"><a href="apps/aspnet/build-aspnet-core.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>ASP.NET Core</span></a></div><div class="ico48Link"><a href="apps/aspnet/build-aspnet-4.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>ASP.NET</span></a></div><div class="ico48Link"><a href="apps/windows/dot-net.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>.NET Desktop</span></a></div><div class="ico48Link"><a href="apps/nodejs/build-gulp.md"><img width="48" height="48" alt="" src="_img/index/logo_nodejs.svg"><span>Node.js</span></a></div><div class="ico48Link"><a href="apps/java/build-maven.md"><img width="48" height="48" alt="" src="_img/index/logo_java.svg"><span>Java</span></a></div><div class="ico48Link"><a href="apps/windows/cpp.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C++</span></a></div><div class="ico48Link"><a href="apps/mobile/xcode-ios.md"><img width="48" height="48" alt="" src="_img/index/logo_xcode.png"><span>Xcode</span></a></div><div class="ico48Link"><a href="apps/mobile/xamarin.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg"><span>Xamarin</span></a></div><div class="ico48Link"><a href="apps/windows/universal.md"><img width="48" height="48" alt="" src="_img/index/logo_uwp.svg"><span>UWP</span></a></div></div>
 
-Learn how to deploy your app.
+### Learn how to deploy your app.
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack"><div class="ico48Link"><a href="apps/cd/azure/aspnet-core-to-azure-webapp.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure Web App</span></a></div><div class="ico48Link"><a href="apps/cd/deploy-webdeploy-iis-deploygroups.md"><img width="48" height="48" alt="" src="_img/index/virtualmachine.png"><span>Windows VM</span></a></div><div class="ico48Link"><a href="apps/cd/deploy-docker-webapp.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Web App for Containers</span></a></div></div>
 
-Learn how to test your app.
+### Learn how to test your app.
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack"><div class="ico48Link"><a href="test/getting-started-with-continuous-testing.md?toc=/vsts/build-release/toc.json"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>VS Test</span></a></div></div>
 
