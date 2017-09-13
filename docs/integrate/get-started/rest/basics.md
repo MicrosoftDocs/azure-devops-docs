@@ -147,8 +147,7 @@ although there are a few exceptions,
 like [Git blobs](https://www.visualstudio.com/docs/integrate/api/git/blobs).
 
 Now you should be able to look around the specific
-[API areas](https://www.visualstudio.com/docs/integrate/api/overview) like [work item tracking](https://www.visualstudio.com/docs/integrate/api/wit/overview)
-or [Git](https://www.visualstudio.com/docs/integrate/api/git/overview) and get to the resources that you need.
+[API areas](https://www.visualstudio.com/docs/integrate/api/overview) and get to the resources that you need.
 Keep reading to learn more about the general patterns that are used in these APIs.
 
 ## HTTP verbs
