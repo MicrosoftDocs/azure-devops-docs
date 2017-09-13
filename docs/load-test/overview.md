@@ -1,5 +1,5 @@
 ---
-title: Load Testing with Visual Studio and Visual Studio Team Services
+title: Load Testing with Visual Studio and VSTS
 description: About Load Testing, overview of capabilities and features
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
@@ -25,7 +25,7 @@ Load test your app with hundreds of thousands of users using
 
 *  Author tests using [Visual Studio](run-performance-tests-app-before-release.md), 
     [Azure](app-service-web-app-performance-test.md), and
-    [Visual Studio Team Services](get-started-simple-cloud-load-test.md).
+    [VSTS](get-started-simple-cloud-load-test.md).
 
 *  Quickly create load tests by specifying a [website](get-started-simple-cloud-load-test.md), referencing a 
     [JMeter test](get-started-jmeter-test.md) file, or

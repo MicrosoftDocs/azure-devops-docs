@@ -42,7 +42,7 @@ To create a pull request in VSTS:
 
   ![Add a Pull Request from Visual Studio](_img/vs_pull_requests.png)   
 
-0. Create the pull request. You should give a clear title for the pull request that describes the changes in the branch. In the description field give a clear explanation of how the changes are implemented along with any resources that might help reviewers understand the changes. You can include Team Services work items and hyperlinks to allow others to have as much context as possible when reviewing your changes.
+0. Create the pull request. You should give a clear title for the pull request that describes the changes in the branch. In the description field give a clear explanation of how the changes are implemented along with any resources that might help reviewers understand the changes. You can include VSTS work items and hyperlinks to allow others to have as much context as possible when reviewing your changes.
 
 0. Add any team member who you would like to review the changes. 
 
@@ -59,7 +59,7 @@ Pull request reviewers will see the proposed updates to the branch in the form o
 include notifications for other team members to answer a question or give other feedback. You can make changes and push commits to resolve issues brought up in the feedback and these 
 changes are immediately reflected in the pull request.
 
-![Adding comments to a Team Services Pull request](_img/pull_request_comment.png)
+![Adding comments to a VSTS Pull request](_img/pull_request_comment.png)
 
 If the changes need much more development to complete, you can abandon the pull request. You can later open up a new pull request to
 revisit the changes and link to the conversations that took place in the abandoned pull request. 

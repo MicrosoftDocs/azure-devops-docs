@@ -16,9 +16,9 @@ Connect to your Git repos through SSH when you can't use the recommended [Git Cr
 [Personal Access Tokens](../accounts/use-personal-access-tokens-to-authenticate.md) to securely connect using HTTPS authentication.
 
 >[!IMPORTANT]
-> SSH URLs are on September 12, 2017. Old SSH URLs will continue to work through November 17, 2017. If you have already set up SSH, you will need to update your remote URLs:
+> SSH URLs are on September 13, 2017. Old SSH URLs will continue to work through November 17, 2017. If you have already set up SSH, you will need to update your remote URLs:
 > - Visit your repository on the web and select the **Clone** button in the upper right.
-> - Select **SSH** and copy the new SSH URL.
+> - Select **SSH** and [copy the new SSH URL](use-ssh-keys-to-authenticate.md#copy-url).
 > - In your Git client, run: ```git remote set-url <remote name, e.g. origin> <new SSH URL>```. Alternatively, in Visual Studio, go to **Repository Settings**, and edit your remotes.
 
 >[!NOTE]
@@ -80,18 +80,20 @@ Associate the public key generated in the previous step with your user ID.
 0.  Open your security settings by browsing to the web interface and selecting your name in the upper right of the
 user interface. Select **My security** in the menu that appears.
 
-    ![Accessing User Profile in Visual Studio VSTS](_img/use-ssh-authentication/ssh_profile_access.png)
+    ![Accessing User Profile in VSTS](_img/use-ssh-authentication/ssh_profile_access.png)
 
 0. Select **SSH Public Keys** , then select **Add**.
 
-    ![Accessing Security Configuration in Visual Studio VSTS](_img/use-ssh-authentication/ssh_accessing_security_key.png)
+    ![Accessing Security Configuration in VSTS](_img/use-ssh-authentication/ssh_accessing_security_key.png)
 
 0. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Key Data** field. Avoid adding whitespace or new lines into the **Key Data** field-they can cause VSTS to use an invalid public key. 
 
-    ![Configuring Public Key in Visual Studio VSTS](_img/use-ssh-authentication/ssh_key_input.png)
+    ![Configuring Public Key in VSTS](_img/use-ssh-authentication/ssh_key_input.png)
 
 0. Give the key a useful description (this will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key. Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile.
   
+<a name="copy-url"></a>
+
 ### Step 3: Clone the Git repository with SSH
 
 > To connect with SSH from an existing cloned repo, see [updating your remotes to SSH](use-ssh-keys-to-authenticate.md#migrate).
@@ -103,7 +105,7 @@ user interface. Select **My security** in the menu that appears.
 0. Run `git clone` from the command prompt. 
 
    ```
-   git clone ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_git/fabrikamtools
+   git clone ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_ssh/fabrikamtools
    ```
 
 SSH will ask you to verify that the SSH fingerprint for the server you are connecting to. You should verify that the shown fingerprint matches the fingerprint on the **SSH public keys**  page.
@@ -111,7 +113,7 @@ SSH displays this fingerprint when it connects to an unknown host to protect you
 Once you accept the host's fingerprint, SSH will not prompt you again unless the fingerprint changes. 
 
 ```
-git clone ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_git/fabrikamtools
+git clone ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_ssh/fabrikamtools
 ```
 
 When you are asked if you want to continue connecting, type `yes`. Git will clone the repo and set up the `origin` remote to connect with SSH for future Git commands. 
@@ -161,7 +163,7 @@ pasting in the public key into the **Key Data** field when adding the key to VST
 You'll need to update the `origin` remote in Git to change over from a HTTPS to SSH URL. Once you have the SSH clone URL, run the following command:
 
 ```
-git remote set-url origin ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_git/fabrikamtools
+git remote set-url origin ssh://fabrikops2@vs-ssh.visualstudio.com:22/DefaultCollection/_ssh/fabrikamtools
 ```
 
 You can now run any Git command that connects to `origin`.

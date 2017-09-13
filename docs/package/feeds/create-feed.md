@@ -11,6 +11,6 @@ ms.date: 09/01/2017
 
 # Create a feed
 
-**Team Services | TFS 2017**
+**VSTS | TFS 2017**
 
 [!INCLUDE [](../_shared/create-feed.md)]

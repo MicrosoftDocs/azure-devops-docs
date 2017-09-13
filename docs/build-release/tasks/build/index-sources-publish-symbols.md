@@ -20,7 +20,7 @@ Indexing enables you to use your .pdb symbol files to debug an app on a machine 
 > [!NOTE]
 > This build step works only:
 > 
-> * For code in Git or TFVC stored in Team Foundation Server (TFS) or Visual Studio Team Services. It does not work for any other type of repository.
+> * For code in Git or TFVC stored in Team Foundation Server (TFS) or VSTS. It does not work for any other type of repository.
 > 
 > * Using a [private agent](../../concepts/agents/agents.md#install). It does not work on a hosted agent.
 

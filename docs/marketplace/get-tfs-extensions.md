@@ -127,7 +127,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 ### Download from Visual Studio Marketplace
 
-0.  Sign in to [Visual Studio Marketplace > Visual Studio Team Services](https://marketplace.visualstudio.com/vsts).
+0.  Sign in to [Visual Studio Marketplace > VSTS](https://marketplace.visualstudio.com/vsts).
 
 0.	Find the extension that you want to install.
 
@@ -499,11 +499,11 @@ where you want to install the extension.
 <a name="no-download"></a>
 #### Q: Why doesn't the extension I want show a download button?
 
-A: Some extensions work only with Visual Studio Team Services, not TFS, for one of these reasons:
+A: Some extensions work only with VSTS, not TFS, for one of these reasons:
 
-- The extension uses Team Services features that aren't released yet for TFS.
+- The extension uses VSTS features that aren't released yet for TFS.
 - The [extension manifest](../extend/develop/manifest.md) indicates that the extension 
-is available only for Team Services (targets = Microsoft.Visualstudio.Services.Cloud).
+is available only for VSTS (targets = Microsoft.Visualstudio.Services.Cloud).
 - The extension manifest indicates that the extension is an integration (targets = Microsoft.Visualstudio.Services.Integration).
 
 <a name="no-upload"></a>

@@ -1,6 +1,6 @@
 ---
 title: How to buy cloud-based load testing | VSTS
-description: Buy cloud-based load testing in Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
+description: Buy cloud-based load testing in VSTS (Visual Studio Online, VSO, VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: A93C7909-4F5B-4758-B6CE-8DE127A91FB9
@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 04/28/2017
 ---
 
-#  How to buy cloud-based load testing in Visual Studio Team Services
+#  How to buy cloud-based load testing in VSTS
 
 **VSTS**
 

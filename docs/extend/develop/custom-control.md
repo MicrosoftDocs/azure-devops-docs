@@ -1,5 +1,5 @@
 ---
-title: Add a custom control to the work item form | Extensions for Visual Studio Team Services
+title: Add a custom control to the work item form | Extensions for VSTS
 description: Describes how to extend the work item form by adding a custom control.
 ms.prod: vs-devops-alm
 ms.contentid: 0956ACA7-B1C4-443F-A79A-A62EDD02FC15

@@ -35,7 +35,7 @@ Then you can:
 * [Run tests with each of the configurations](#run-configs)
 * [Track your test results for each configuration](#track-configs)
 
-> This feature is available only in Visual Studio Team Services.
+> This feature is available only in VSTS.
 
 <a name="create-configs"></a>
 ## Create configurations and variables

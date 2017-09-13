@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Write your first extension for Visual Studio Team Services
-description: Tutorial for creating your first extension, a hub page, for Visual Studio Team Services
+title: Write your first extension for VSTS
+description: Tutorial for creating your first extension, a hub page, for VSTS
 ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
 ms.manager: douge
 ms.author: elbatk
@@ -10,12 +10,12 @@ ms.date: 08/26/2016
 ms.topic: get-started-article
 ---
 
-# Write your first extension for Visual Studio Team Services
+# Write your first extension for VSTS
 
 [!INCLUDE [preview](../_data/private-preview.md)]
 
 ## Your first extension
-This page guides you through creating your first extension for Visual Studio Team Services. It will introduce the basic extensibility concepts 
+This page guides you through creating your first extension for VSTS. It will introduce the basic extensibility concepts 
 and give you the knowledge needed to get started on your own unqiue extension.
 
 In this tutorial we'll create a custom hub that displays the results of a query. A <b>hub</b> is, simply put, a type of contribution that displays
@@ -28,7 +28,7 @@ We'll create a new hub that displays in the Work hub group, after the Backlogs a
 </div>
 
 ## Preparation and required setup for this tutorial
-In order to create extensions for Team Services, there are some prerequisite software and tools you'll need:
+In order to create extensions for VSTS, there are some prerequisite software and tools you'll need:
 
 - A **VSTS account**, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
@@ -56,7 +56,7 @@ If you haven't, you'll want to create a `home` directory that contains the follo
 <a name='client-sdk'/>
 
 ## Get the client SDK: `VSS.SDK.js`
-The core SDK script, **VSS.SDK.js**, enables web extensions to communicate to the host Team Services frame and to perform operations like 
+The core SDK script, **VSS.SDK.js**, enables web extensions to communicate to the host VSTS frame and to perform operations like 
 initializing, notifying that an extension is loaded, or getting context about the current page. Get the Client SDK **VSS.SDK.js** file and add it to your web app. Place it in the `home/sdk/scripts` folder.
 
 Use the *npm install* command via the command line (requires [Node](https://nodejs.org/en/download/)) to retrieve the SDK:

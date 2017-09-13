@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Authorize Other Services | Visual Studio Team Services
-description: Authorize other services to work with Visual Studio Team Services
+title: Authorize Other Services | VSTS
+description: Authorize other services to work with VSTS
 ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
 ms.manager: douge
 ms.author: elbatk
@@ -11,10 +11,10 @@ ms.date: 08/04/2016
 
 #  Authorize other services to access your VSTS account
 
-When you use a service that's integrated with Visual Studio Team Services,
+When you use a service that's integrated with VSTS,
 we use the industry-standard OAuth 2.0 authorization framework to provide safe,
 secure access to your resources by those other services.
-With OAuth, you grant a service the authorization to access your Visual Studio Team Services
+With OAuth, you grant a service the authorization to access your VSTS
 resources such as work items, source code, build results.
 
 - Authorizations are bound to your credentials,
@@ -33,7 +33,7 @@ in any VSTS account that you have access to.
 A typical authorization flow might go like this:
 
 1. You're using a service that uses VSTS resources,
-so the service requests authorization from Visual Studio Team Services.
+so the service requests authorization from VSTS.
 
 2. If you're not already signed in, VSTS will prompt you for your credentials.
 

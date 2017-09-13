@@ -1,8 +1,8 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Add a chart | Extensions for Visual Studio Team Services
-description: Add a chart to your extension in Visual Studio Team Services.
+title: Add a chart | Extensions for VSTS
+description: Add a chart to your extension in VSTS.
 ms.assetid: ff6b9bbf-fb57-469b-8191-922660393a21
 ms.manager: douge
 ms.author: rbansal
@@ -12,7 +12,7 @@ ms.date: 10/10/2016
 # Add a chart
 
 This page demonstrates how you can add charts to your extensions. 
-Charts can be added to any VSTS extension. Currently, adding charts via extensions is only available for Visual Studio Team Services. 
+Charts can be added to any VSTS extension. Currently, adding charts via extensions is only available for VSTS. 
 
 These charts are easy to create, resizable, intertactive and consistent with the VSTS look and feel. 
 The following chart types are supported: 

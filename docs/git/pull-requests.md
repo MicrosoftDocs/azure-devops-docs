@@ -266,7 +266,7 @@ This is useful when you want to use a branch other than `master` for new changes
 
 0. Select the settings icon while you have your team project open to bring up the project administration page.
 
-   ![open up the administrative area of the team services web portal for your team project](_img/pull-requests/gear_icon_settings.png)
+   ![open up the administrative area of the VSTS web portal for your team project](_img/pull-requests/gear_icon_settings.png)
    
 0. Select **Version Control**.
 

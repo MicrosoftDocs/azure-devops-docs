@@ -100,7 +100,7 @@ For a Windows VM, create an ARM template and add a resources element under the
 ```ARMTemplate
 {
    "publisher": "Microsoft.VisualStudio.Services",
-   "type": "TeamServicesAgent",
+   "type": "Team ServicesAgent",
    "typeHandlerVersion": "1.0",
    "autoUpgradeMinorVersion": true,
    "settings": {
@@ -116,7 +116,7 @@ For a Windows VM, create an ARM template and add a resources element under the
 }
 ```
 
->**Note**: If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `TeamServicesAgentLinux`.
+>**Note**: If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `Team ServicesAgentLinux`.
 
 To use the template:
 

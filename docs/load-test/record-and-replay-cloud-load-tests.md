@@ -1,6 +1,6 @@
 ---
-title: Record and replay cloud-based load tests with Visual Studio Team Services
-description: Get app performance data by recording and replaying cloud-based load tests when use Visual Studio Team Services
+title: Record and replay cloud-based load tests with VSTS
+description: Get app performance data by recording and replaying cloud-based load tests when use VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
 ms.assetid: 4D07F0F0-01FE-4BC7-A338-599D54E81134

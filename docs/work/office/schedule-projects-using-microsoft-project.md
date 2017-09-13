@@ -15,12 +15,12 @@ ms.date: 02/22/2017
 
 
 >[!IMPORTANT]  
->You can use [Project to plan and schedule work items](create-your-backlog-tasks-using-project.md) that you define in Team Services or Team Foundation Server (TFS). Some features may require customizing the Microsoft Project Mapping file which is only supported for the On-Premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize/customize-work.md).  
+>You can use [Project to plan and schedule work items](create-your-backlog-tasks-using-project.md) that you define in VSTS or Team Foundation Server (TFS). Some features may require customizing the Microsoft Project Mapping file which is only supported for the On-Premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize/customize-work.md).  
 
 You can use Project 2010 or later versions to plan team projects, schedule tasks, assign resources, and track changes to data that is stored in VSTS and TFS. By using Project, you can access many tools and functions through the simplified graphical menus and Office Ribbon. The Team tab menu, as shown in the following illustration, displays the same functions that are available from the Team tab in Excel.
 
 >[!NOTE]  
->For version compatibility between Team Services/TFS and Office clients, see [Requirements and compatibility, Office](../../accounts/requirements.md#office).  
+>For version compatibility between VSTS/TFS and Office clients, see [Requirements and compatibility, Office](../../accounts/requirements.md#office).  
  
 **Project team tab ribbon** 
 

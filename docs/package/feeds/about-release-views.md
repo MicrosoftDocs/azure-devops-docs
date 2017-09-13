@@ -12,7 +12,7 @@ ms.date: 09/01/2017
 
 # Learn about release views for package CI/CD
 
-**Team Services**
+**VSTS**
 
 *If you're familiar with the principles behind release views, you can jump to the [docs page](views.md) to quickly start using them.*
 

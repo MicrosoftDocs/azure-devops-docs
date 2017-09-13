@@ -26,13 +26,13 @@ Remove unused Git repos from your team project when they are no longer needed.
 
 0. Select the settings icon in the web to bring up the team project administration page.
 
-   ![open up the administrative area of the team services web portal for your team project](_img/pull-requests/gear_icon_settings.png)
+   ![open up the administrative area of the VSTS web portal for your team project](_img/pull-requests/gear_icon_settings.png)
    
 0. Select **Version Control**.
 
 0. Select the Git repository to remove from the list shown and select the **...** next to the name. Choose **Delete Repository**
 
-   ![remove the team services repo using the ellipses link next to the repo name](_img/repo-mgmt/remove-repo.png)
+   ![remove the VSTS repo using the ellipses link next to the repo name](_img/repo-mgmt/remove-repo.png)
    
 0. Confirm the deletion of the repository by typing the repo's name and selecting **Delete**.
 

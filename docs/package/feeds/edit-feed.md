@@ -11,7 +11,7 @@ ms.date: 09/01/2017
 
 # Edit a feed
 
-**Team Services | TFS 2017**
+**VSTS | TFS 2017**
 
 Feeds have some basic settings: name, description, and permissions.
 

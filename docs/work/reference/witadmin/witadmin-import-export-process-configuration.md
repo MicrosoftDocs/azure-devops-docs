@@ -20,7 +20,7 @@ You customize the process configuration to modify the display of the web portal 
 > If you receive error message TF400917, an invalid configuration has occurred. Re-import the process configuration file to your team project using **witadmin importprocessconfig**. You'll get the messages you need to resolve the error.  
   
 To manage the process configuration for a team project, use the **witadmin** command line tool to export and import the process configuration XML definition file. To learn about process configuration, see [ProcessConfiguration](../process-configuration-xml-element.md).   
--   **exportprocessconfig**:  Exports the process configuration definition to an XML file or the Command Prompt window. (can run against Team Services)    
+-   **exportprocessconfig**:  Exports the process configuration definition to an XML file or the Command Prompt window. (can run against VSTS)    
 -   **importprocessconfig**:  Imports the process configuration definition XML file.  
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]

@@ -14,13 +14,13 @@ ms.date: 05/23/2017
 <b>VSTS (Hosted XML)</b>   
  
 >[!IMPORTANT]  
->**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for accounts that have been migrated to VSTSusing the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Team Services process customization. 
+>**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for accounts that have been migrated to VSTSusing the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about VSTS process customization. 
 >
 >If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an Inheritance process](../process/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
 >
 >To learn more about process models, see [Customize work tracking](../customize/customize-work.md).  
 
-Team Services uses a different model than Team Foundation Server (TFS) for relating projects and process.  
+VSTS uses a different model than Team Foundation Server (TFS) for relating projects and process.  
 * In TFS, process templates are used as starting points for projects and once a project is created, the project is the scope you customize.
 * In VSTS, process is shared across multiple projects and is the scope you customize.  
  

@@ -9,7 +9,7 @@ ms.author: estfan
 ms.date: 1/13/2017
 ---
 
-#	Delete users from your account in Visual Studio Team Services
+#	Delete users from your account in VSTS
 
 **VSTS**
 

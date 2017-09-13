@@ -1,6 +1,6 @@
 ---
 title: Version selector for Microsoft Release Management
-description: Version selector for Microsoft Release Management for Visual Studio, Visual Studio Team Services, and Team Foundation Server
+description: Version selector for Microsoft Release Management for Visual Studio, VSTS, and Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 8E6798F6-F900-461F-950F-5AC8FC457FC7
@@ -9,9 +9,9 @@ ms.author: ahomer
 ms.date: 08/19/2016
 ---
 
-# Release Management for Visual Studio, Visual Studio Team Services, and Team Foundation Server
+# Release Management for Visual Studio, VSTS, and Team Foundation Server
 
-**Team Services | TFS 2017 | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**  
+**VSTS | TFS 2017 | TFS 2015 | Visual Studio 2015 | Visual Studio 2013**  
 
 **Release Management** helps you support a rapid release cadence and manage simultaneous releases.
 You can:
@@ -25,7 +25,7 @@ You can:
 ... and much more.
 
 The **[current version](../build-release/overview.md)** of Release Management is integrated into the **Build &amp; Release** hub in
-Team Foundation Server (TFS) and Visual Studio Team Services.
+Team Foundation Server (TFS) and VSTS.
 For more information, see **[Continuous integration on any platform](../build-release/overview.md)**. 
 
 The **previous versions** of Release Management are deprecated. No new features will be added to these versions:

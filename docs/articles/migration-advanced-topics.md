@@ -1,6 +1,6 @@
 ---
 title: Migration from TFS to Visual Studio Team Services (VSTS), advanced topics | VSTS & TFS
-description: Advanced Team Foundation Server to Team Services topics. 
+description: Advanced Team Foundation Server to VSTS topics. 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview
 ms.contentid: f069d4ab-c824-4eb4-94ea-8e24942d5dcd

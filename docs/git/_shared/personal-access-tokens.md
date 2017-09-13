@@ -7,9 +7,9 @@ or your Team Foundation Server web portal (```https://{server}:8080/tfs/```).
 
 	**TFS 2017**
 
-	<img alt="Go to Team Services account home, open your profile, go to Security" src="./_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Go to VSTS account home, open your profile, go to Security" src="./_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
 
-	**Team Services**
+	**VSTS**
 
 	<img alt="TFS home page, open your profile, go to Security" src="./_img/my-profile-tfs.png" style="border: 1px solid #CCCCCC" />
 
@@ -21,7 +21,7 @@ or your Team Foundation Server web portal (```https://{server}:8080/tfs/```).
 0.  Name your token. Select a lifespan for your token.
 
 	If you're using VSTS, and you have more than one account,
-	you can also select the Team Services account where you want to use the token.
+	you can also select the VSTS account where you want to use the token.
 
    <img alt="Name your token, select a lifespan. If using VSTS, select an account for your token" src="./_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
@@ -55,9 +55,9 @@ When you don't need your token anymore, just revoke it to remove access.
 
 0. From your home page, open your profile. Go to your security details.
 
-	**Team Services**
+	**VSTS**
 
-	<img alt="Go to Team Services account home page, open your profile, go to Security" src="./_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Go to VSTS account home page, open your profile, go to Security" src="./_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
 
 	**TFS 2017**
 

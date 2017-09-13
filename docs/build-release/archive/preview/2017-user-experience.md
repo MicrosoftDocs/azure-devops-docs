@@ -1,6 +1,6 @@
 ---
 title: New Build Editor
-description: A preview of a new user experience for Team Foundation Build (TFBuild) on Visual Studio Team Services
+description: A preview of a new user experience for Team Foundation Build (TFBuild) on VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 27AD0094-FDF1-4B36-A82E-B845980984AF

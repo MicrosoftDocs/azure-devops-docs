@@ -14,7 +14,7 @@ ms.date: 01/17/2017
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ![icon](_img/cloud-based-load-test-icon.png)
-Runs a load test in the cloud with Visual Studio Team Services.
+Runs a load test in the cloud with VSTS.
 
 Use this task to understand, test, and validate your app's 
 performance. The task can be used in a build or release 

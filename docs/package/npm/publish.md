@@ -1,6 +1,6 @@
 ---
 title: Publish an npm package
-description: Publish npm packages to Visual Studio Team Services
+description: Publish npm packages to VSTS
 ms.assetid: 85773969-1491-4242-A060-BD5D193961A0
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package

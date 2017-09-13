@@ -50,7 +50,7 @@ The build agent must have the following capability:
 <th style="text-align: center" colspan="2">JUnit Test Results</th>
 </tr>
 <tr>
-<td>Publish to Visual Studio Team Services/TFS </td>
+<td>Publish to VSTS/TFS </td>
 <td>Select this option to publish JUnit test results produced by the Ant build to VSTS or your on-premises Team Foundation Server. Each test result file that matches Test Results Files is published as a test run.</td>
 </tr>
 <tr>

@@ -5,7 +5,7 @@
 <p>(If you don't see your team project listed on the home page, select **Browse**.)</p>
 <ul>
 <li>On-premises TFS: ```http://{your_server}:8080/tfs/DefaultCollection/{your_team_project}``` </li>
-<li>Visual Studio Team Services: ```https://{your_account}.visualstudio.com/DefaultCollection/{your_team_project}```</li>
+<li>VSTS: ```https://{your_account}.visualstudio.com/DefaultCollection/{your_team_project}```</li>
 </ul>
 <p>[The TFS URL doesn't work for me. How can I get the correct URL?](../../security/websitesettings.md)</p>
 </div>

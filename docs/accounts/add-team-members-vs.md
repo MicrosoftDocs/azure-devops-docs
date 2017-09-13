@@ -1,6 +1,6 @@
 ---
-title: VSTS - Add team project members | Visual Studio Team Services
-description: Add members to team projects in Visual Studio Team Services (Visual Studio Online, VSTS, VSO)
+title: VSTS - Add team project members | VSTS
+description: Add members to team projects in VSTS (Visual Studio Online, VSTS, VSO)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 1cd6673e-f83a-403b-884b-b69b8e3f5c46
@@ -9,11 +9,11 @@ ms.author: estfan
 ms.date: 1/11/2017
 ---
 
-#	Add team project members in Visual Studio Team Services
+#	Add team project members in VSTS
 
 **VSTS**
 
-Add members to your team project in Visual Studio Team Services, 
+Add members to your team project in VSTS, 
 so you can share code and work with your team, track their status, 
 coordinate dev, build, test, and release activities, and more. 
 For Team Foundation Server, learn [how to add team project members here](add-users.md).

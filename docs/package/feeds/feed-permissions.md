@@ -11,7 +11,7 @@ ms.date: 09/01/2017
 
 # Secure feeds using permissions
 
-**Team Services | TFS 2017**
+**VSTS | TFS 2017**
 
 ## Feed permissions overview
 Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level.

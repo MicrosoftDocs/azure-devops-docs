@@ -1,6 +1,6 @@
 ---
-title: Assign paid extension access to users for Visual Studio Team Services
-description: Assign paid extension access to users for Visual Studio Team Services
+title: Assign paid extension access to users for VSTS
+description: Assign paid extension access to users for VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-marketplace
 ms.assetid: 13c4b901-70d6-488f-9ee5-00eb3121b977 
@@ -9,12 +9,12 @@ ms.author: elbatk
 ms.date: 08/01/2017
 ---
 
-# Assign paid extension access to users for Visual Studio Team Services
+# Assign paid extension access to users for VSTS
 
 After you install a paid extension, 
 you must assign that extension to users who need access, 
 so they can start using that extension's capabilities. 
-To assign extensions, you'll need Team Services 
+To assign extensions, you'll need VSTS 
 [project collection administrator or account owner permissions](./faq-extensions.md#find-owner).
 
 > [!TIP]

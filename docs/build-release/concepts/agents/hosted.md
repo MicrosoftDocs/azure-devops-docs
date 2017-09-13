@@ -1,5 +1,5 @@
 ---
-title: Hosted agents for Visual Studio Team Services
+title: Hosted agents for VSTS
 description: Use the hosted agents in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
@@ -13,7 +13,7 @@ ms.date: 11/28/2016
 
 **VSTS**
 
-If you use Visual Studio Team Services, to build or deploy your app, then it's more convenient to use our hosted agents, but some limitations apply.
+If you use VSTS, to build or deploy your app, then it's more convenient to use our hosted agents, but some limitations apply.
 
 > [!TIP]
 >

@@ -11,7 +11,7 @@ ms.date: 09/01/2017
 
 # Understand immutability of packages
 
-**Team Services | TFS 2017**
+**VSTS | TFS 2017**
 
 Once you publish a particular version of a package to a feed, that version number is permanently reserved. 
 You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.

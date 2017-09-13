@@ -1,15 +1,15 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Create a consumer service for service hooks | Extensions for Visual Studio Team Services
-description: Tutorial for creating a custom consumer service for service hooks in Visual Studio Team Services.
+title: Create a consumer service for service hooks | Extensions for VSTS
+description: Tutorial for creating a custom consumer service for service hooks in VSTS.
 ms.assetid: 294ae93b-7522-40ef-95ab-d5002f8c3ca8
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/22/2016
 ---
 
-# Service hooks in Team Services
+# Service hooks in VSTS
 
 Service hooks enable you to perform tasks on other services when events happen in your VSTS projects. For example, create a card in Trello 
 when a work item is created or send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services 

@@ -15,24 +15,24 @@ ms.date: 08/10/2016
 
 Using a package mangement system helps increase your team's velocity and decreases the amount of code duplication across your organization.
 Multiple developers on a team need to coordinate where and how they access packages.
-For example, developers will need a compatible NuGet client and credentials to authenticate to any Team Services hosted feeds before they can restore or push packages.
+For example, developers will need a compatible NuGet client and credentials to authenticate to any VSTS hosted feeds before they can restore or push packages.
 
 Team leaders or architects can make it very simple for developers to get everything they need without having to do multiple downloads and find passwords and authentication tokens on team shares.
-We've developed a set of tools and conventions for integrating Team Services NuGet into your workflow.
+We've developed a set of tools and conventions for integrating VSTS NuGet into your workflow.
 The tools are shipped as a NuGet package called `Microsoft.VisualStudio.Services.NuGet.Bootstrap`, available on the public [NuGet Gallery](https://www.nuget.org/packages?q=Microsoft.VisualStudio.Services.NuGet.Bootstrap).
 We also have an [example repository](https://github.com/Microsoft/vsts-nuget-sample) which demonstrates these tools.
 
 ## The bootstrapper package
 
 The bootstrapper package takes care of several things for you:
-* Ensures that each developer has a compatible version of nuget.exe and the Team Services authentication extension in their environment
+* Ensures that each developer has a compatible version of nuget.exe and the VSTS authentication extension in their environment
 * Separates feed configuration from credential management so you don't have to share passwords among developers
 * Allows build and continuous integration systems to seamlessly use the same configuration as individual developers
 
 The bootstrapping tools work regardless of your version control system.
 Both Git and TFVC are supported.
 
-You aren't required to use this bootstrapping package in order to use Team Services authenticated feeds.
+You aren't required to use this bootstrapping package in order to use VSTS authenticated feeds.
 It's intended to help you get going without having to write a lot of code or invest in an extensive engineering system.
 Customers with unique needs can copy [the package](https://www.nuget.org/packages?q=Microsoft.VisualStudio.Services.NuGet.Bootstrap) and [example repo](https://github.com/Microsoft/vsts-nuget-sample), and modify them to fit in their engineering system.
 

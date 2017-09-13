@@ -49,7 +49,7 @@ You'll make your changes to your process definition files, and then import that 
 - If you aren't the account owner or a member of the Project Collection Administrator's group, [get added](../../security/set-project-collection-level-permissions.md). 
 - [Export the process you want to update](../import-process/import-process.md) 
 -  If you're new to customizing a process, familiarize yourself with the following resources:
-	- [Customize a process for import to Team Services](../import-process/customize-process.md)
+	- [Customize a process for import to VSTS](../import-process/customize-process.md)
 
 
 

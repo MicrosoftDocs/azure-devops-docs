@@ -276,12 +276,12 @@ these. We hope to add support for these features in future updates.
 We'd be pleased to hear from you if you need support for other file formats. 
 Email us at [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com).
 
-<a name="TeamServicesAccount"></a>
+<a name="Team ServicesAccount"></a>
 ### Q: What else can I do with a VSTS account?
 
 **A**: To find your new account, go to ```https://{accountname}.visualstudio.com```. 
 Share your code, build, test, track work, and ship software - all in the cloud 
-using any tool or language. Learn more about how [Visual Studio Team Services](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
+using any tool or language. Learn more about how [VSTS](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
 features and services help your team collaborate more easily and deploy continuously.
 
 ### Q: Can I get more detailed profiler information?

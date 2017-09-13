@@ -1,6 +1,6 @@
 ---
-title: Use the Wait Control | Extensions for Visual Studio Team Services
-description: Use the wait control to display progress message for long running operations in your app for Visual Studio Team Services.
+title: Use the Wait Control | Extensions for VSTS
+description: Use the wait control to display progress message for long running operations in your app for VSTS.
 ms.assetid: 175EDE3B-6989-4485-8FEC-014F6380D44F
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api

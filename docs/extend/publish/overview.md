@@ -1,15 +1,15 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Package, publish, & unpublish extensions | Visual Studio Team Services
-description: An overview of packaging, publishing, unpublishing, and sharing an extension for Visual Studio Team Services.
+title: Package, publish, & unpublish extensions | VSTS
+description: An overview of packaging, publishing, unpublishing, and sharing an extension for VSTS.
 ms.assetid: 77b385a2-069a-4704-9a17-ad9f79a36f17
 ms.manager: douge
 ms.author: elbatk
 ms.date: 08/29/2016
 ---
 
-# Package, publish, unpublish, and install Team Services extensions
+# Package, publish, unpublish, and install VSTS extensions
 
 After writing a VSTS extension, the next step is to package it.
 After packaging, extensions are published, or uploaded, to the [Visual Studio Marketplace](https://marketplace.visualstudio.com), where they can be installed
@@ -73,7 +73,7 @@ To share an extension so it can be installed:
 
 To install an extension that has been shared:
 
-1. From your Team Services account home page, select the Marketplace icon in the top right corner and choose "Manage Extensions":
+1. From your VSTS account home page, select the Marketplace icon in the top right corner and choose "Manage Extensions":
 <center>![Manage Extensions](_img/manage-extensions.png)</center>
 2. Find the extension under the **Shared with this account** category:
 <center>![Shared with me](./_img/extensions-tab-shared.png)</center>

@@ -15,7 +15,7 @@ ms.date: 06/01/2017
 <b> VSTS | TFS 2018 | TFS 2017.1</b>
 
 >[!NOTE]    
-><b>Feature availability: </b>The preview features you can enable or disable will differ depending on whether you work from Team Services or an on-premises TFS. Preview features become available first on VSTS and then subsequently are made available with an update to TFS. 
+><b>Feature availability: </b>The preview features you can enable or disable will differ depending on whether you work from VSTS or an on-premises TFS. Preview features become available first on VSTS and then subsequently are made available with an update to TFS. 
 
 As new features are introduced, we're providing support for you to turn some of them on or off. That way, you can try them out, provide feedback, and work with those features that meet your requirements.  
 
@@ -28,7 +28,7 @@ Some features provide a new user interface and functionality, which can be manag
 > [!div class="mx-tdBreakAll"]  
 > |[Preview features per user](#user-level) |[Preview features per account](#account-level) | 
 > |-------------|----------|
-> |- [New Account Landing page](../connect/account-home-pages.md)<br/>- [New Release Definition Editor](../build-release/archive/preview/release-definition-editor.md) (Team Services)<br/>- [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) (VSTS)|- [Combine email recipients](manage-team-notifications.md) (TFS 2017.1)<br/>- [Preview features per account](#account-level)<br/>- [New Account Landing page](../connect/account-home-pages.md)<br/>- [Preview features per account](#account-level)<br/>- [New Release Definition Editor](../build-release/archive/preview/release-definition-editor.md) (VSTS)<br/>- [Preview features per account](#account-level)[Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) (VSTS)<br/>- [Preview features per account](#account-level)<br/>- [Team expansion for notifications](#team-expansion-notifications) (TFS 2017.1)<br/>- [Preview features per account](#account-level)[Wiki](#wiki) (VSTS) |
+> |- [New Account Landing page](../connect/account-home-pages.md)<br/>- [New Release Definition Editor](../build-release/archive/preview/release-definition-editor.md) (VSTS)<br/>- [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) (VSTS)|- [Combine email recipients](manage-team-notifications.md) (TFS 2017.1)<br/>- [Preview features per account](#account-level)<br/>- [New Account Landing page](../connect/account-home-pages.md)<br/>- [Preview features per account](#account-level)<br/>- [New Release Definition Editor](../build-release/archive/preview/release-definition-editor.md) (VSTS)<br/>- [Preview features per account](#account-level)[Streamlined User Management](../accounts/add-account-users-assign-access-levels.md) (VSTS)<br/>- [Preview features per account](#account-level)<br/>- [Team expansion for notifications](#team-expansion-notifications) (TFS 2017.1)<br/>- [Preview features per account](#account-level)[Wiki](#wiki) (VSTS) |
 
 <a id="user-level">  </a>
 ## Enable features for my use  

@@ -12,7 +12,7 @@ ms.date: 09/01/2017
 
 # Restore Package Management NuGet packages in Team Build
 
-**Team Services | TFS 2017**
+**VSTS | TFS 2017**
 
 This walkthrough will cover setting up an existing build to restore NuGet packages from Package Management feeds. It assumes that you've already:
 
@@ -49,7 +49,7 @@ The example below demonstrates how that might look.
   <packageSources>
     <!-- remove any machine-wide sources with <clear/> -->
     <clear />
-    <!-- add a Team Services feed -->
+    <!-- add a VSTS feed -->
     <add key="MyGreatFeed" value="https://fabrikam.pkgs.visualstudio.com/DefaultCollection/_packaging/MyGreatFeed/nuget/v3/index.json" />
     <!-- also get packages from the NuGet Gallery -->
     <add key="nuget.org" value="https://www.nuget.org/api/v2/" />

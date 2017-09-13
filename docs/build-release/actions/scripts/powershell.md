@@ -1,6 +1,6 @@
 ---
 title: Use a PowerShell script to customize your build process
-description: Use a script to customize your build process in Visual Studio Team Services
+description: Use a script to customize your build process in VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823

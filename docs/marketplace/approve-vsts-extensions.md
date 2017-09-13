@@ -1,6 +1,6 @@
 ---
-title: Approve extension requests for your Team Services account
-description: Approve extension requests for your Team Services account
+title: Approve extension requests for your VSTS account
+description: Approve extension requests for your VSTS account
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-marketplace
 ms.assetid: 376c55bd-f4e2-47d5-a7a3-400e2cd5d84e 
@@ -9,15 +9,15 @@ ms.author: elbatk
 ms.date: 01/10/2017
 ---
 
-# Approve extension requests for your Team Services account
+# Approve extension requests for your VSTS account
 
-**Team Services**
+**VSTS**
 
-If you're the Team Services project collection administrator or account owner, 
-you'll get email when another Team Services account user requests an extension. 
-When you approve the request, Team Services automatically installs the extension.
+If you're the VSTS project collection administrator or account owner, 
+you'll get email when another VSTS account user requests an extension. 
+When you approve the request, VSTS automatically installs the extension.
 
-0.	Sign in to your Team Services account 
+0.	Sign in to your VSTS account 
 (```https://{youaccount}.visualstudio.com```).
 
 0.	From your account toolbar, go to **Extensions**.
@@ -29,7 +29,7 @@ When you approve the request, Team Services automatically installs the extension
 	<img alt="Extensions tab, requested extensions" src="_img/get-vsts-extensions/approve-request-updated-ui.png" style="border: 1px solid #CCCCCC" />
 
 0.	After you approve extension requests, 
-Team Services automatically installs those extensions. 
+VSTS automatically installs those extensions. 
 
 0.	If you installed paid extensions, 
 go to the next section to [assign those extensions](./assign-paid-extensions.md), 

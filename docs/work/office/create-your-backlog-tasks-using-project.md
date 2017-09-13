@@ -13,7 +13,7 @@ ms.date: 07/21/2017
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-If Office Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in Team Services or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
+If Office Project is your preferred tool for tacking projects, you can use it to create your backlog, schedule tasks, assign resources, and track work that is also tracked in VSTS or Team Foundation Server (TFS). You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
 
 Working in Project is similar to publishing and refreshing work items using [Office Excel](bulk-add-modify-work-items-excel.md), with a few differences as described [later in this topic](#Differences working in Project versus Excel).
 
@@ -105,19 +105,19 @@ When you link two tasks and publish your plan, TFS creates predecessor-successor
 
 Although the work tracking system tracks predecessor-successor dependencies as work item links, it does not track dependency types, lead and lag time, or other constraints that Project does.
 
-## Specify data for other Team Services/TFS fields 
+## Specify data for other VSTS/TFS fields 
 
-To enter data into other Team Services/TFS fields, switch to the Team Foundation Task Sheet.
+To enter data into other VSTS/TFS fields, switch to the Team Foundation Task Sheet.
 
 ![Open Team Foundation Task View in Project](_img/create-your-backlog-tasks-using-project/IC660422.png)  
 
-This view displays all the Team Services/TFS fields that have been mapped to Project.
+This view displays all the VSTS/TFS fields that have been mapped to Project.
 
 ![Team Foundation Task Sheet view](_img/create-your-backlog-tasks-using-project/IC697756.png)  
   
 Optionally, you can add a mapped TFS field as a column to the Team Foundation Gantt view. To see which TFS fields are mapped, open **Column Mappings**.
 
-![View which Team Services/TFS  fields are mapped to project fields](_img/create-your-backlog-tasks-using-project/IC658915.png)  
+![View which VSTS/TFS  fields are mapped to project fields](_img/create-your-backlog-tasks-using-project/IC658915.png)  
 
 To add more TFS  fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](https://msdn.microsoft.com/en-us/library/ms404686.aspx). This feature is available for on-premises TFS only. 
 

@@ -1,6 +1,6 @@
 ---
 title: Keyboard shortcuts used in the web portal for VSTS, TFS, and Team Explorer
-description: Keyboard shortcuts for Visual Studio Team Services, TFS web portal, and Team Explorer  
+description: Keyboard shortcuts for VSTS, TFS web portal, and Team Explorer  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview
 ms.assetid: 35ea128b-7565-4ee3-8266-b9f0d32aecf4   
@@ -17,7 +17,7 @@ You can use the keyboard shortcuts listed in this topic when you work within Vis
 
 >[!NOTE]  
 ><b>Feature availability: </b>Some keyboard shortcuts are only available from the cloud service or from an on-premises deployment. These are annotated as follows:
-- **VSTS** - Visual Studio Team Services (cloud service)  
+- **VSTS** - VSTS (cloud service)  
 - **TFS** - Team Foundation Server (on-premises)  
 
 

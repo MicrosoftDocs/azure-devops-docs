@@ -150,7 +150,7 @@ those users will lose access on the 1st of next month.
 ####Q: When do I get billed?
 
 A: You're charged only after you've paid for users 
-or used team services above the free limits. 
+or used VSTS above the free limits. 
 Your charges are prorated during the 1st month. 
 After that, you're billed automatically on the 
 1st day of the calendar month. 
@@ -164,14 +164,14 @@ A: Sign in to the [Azure classic portal](https://manage.windowsazure.com/)
 or the [Azure portal](https://portal.azure.com/) 
 as the VSTS account owner or at least Azure subscription Co-administrator. 
 Select your VSTS account, reduce any paid users to zero, and turn off any 
-paid team services. Your VSTS account and bill won't show any changes 
-in paid users or team services until next month when these changes take effect. 
-You're still charged for team services that you've already used.
+paid VSTS. Your VSTS account and bill won't show any changes 
+in paid users or VSTS until next month when these changes take effect. 
+You're still charged for VSTS that you've already used.
 
 ####Q: What happens if I cancel my Azure subscription?
 
 A: Your VSTS account goes back to the free monthly limits, 
-but you'll keep any paid users or team services until next month. 
+but you'll keep any paid users or VSTS until next month. 
 Your account stays linked to your Azure subscription until you unlink your account, 
 or until your account unlinks automatically when your Azure subscription is disabled.
 
@@ -179,7 +179,7 @@ or until your account unlinks automatically when your Azure subscription is disa
 ####Q: What happens if my credit card expires?
 
 A: Your VSTS account goes back to the free monthly limits, 
-but you'll keep any paid users or team services until next month. 
+but you'll keep any paid users or VSTS until next month. 
 Your Azure subscription will eventually become disabled, but 
 fixing this issue reactivates your subscription and restores your account's paid settings.
 

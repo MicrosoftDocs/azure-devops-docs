@@ -99,7 +99,7 @@ The web server is going to receive `POST` requests from VSTS, so you need to han
     ```
 
 ## Configure a service hook for PR events
-Service hooks are a Team Services feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, so the status server can be notified.
+Service hooks are a VSTS feature that can alert external services when certain events occur. For this sample, you'll want to set up a service hook for PR events, so the status server can be notified.
 
 In order to receive the service hook notifications, you'll need to expose a port to the public internet. The [ngrok](https://ngrok.com/) utility is very useful for doing this in a development environment.
 

@@ -1,5 +1,5 @@
 ---
-title: Add a Build Task | Extensions for Visual Studio Team Services
+title: Add a Build Task | Extensions for VSTS
 description: Add a custom build task.
 ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
 ms.prod: vs-devops-alm
@@ -18,7 +18,7 @@ These tasks will appear next to Microsoft-provided tasks in the Add Step wizard:
 To learn more about the new cross-platform build system, see [Team Foundation Build](../..//build-release/overview.md). 
 
 ## Preparation and required setup for this tutorial
-In order to create extensions for Team Services, there are some prerequisite software and tools you'll need:
+In order to create extensions for VSTS, there are some prerequisite software and tools you'll need:
 
 - A **VSTS account**, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)

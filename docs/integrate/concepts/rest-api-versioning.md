@@ -1,5 +1,5 @@
 ---
-title: REST API versioning for Visual Studio Team Services (and TFS)
+title: REST API versioning for VSTS (and TFS)
 description: Learn how versioning works for REST APIs for VSTS and TFS
 ms.assetid: 5fc6efd4-9947-40f2-b4f6-9695a24de87c
 ms.prod: vs-devops-alm

@@ -1,6 +1,6 @@
 ---
 title: Functions available in Power BI Data Connector | VSTS  
-description: Description of functions available from the Power BI Data Connector and the Analytics Service for Visual Studio Team Services
+description: Description of functions available from the Power BI Data Connector and the Analytics Service for VSTS
 ms.assetid: EC735BA2-24C9-4BA3-B35E-2CE9D2F1D7F1
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-reporting
@@ -25,7 +25,7 @@ The Data Connector for VSTS contributes functions which can be used by query aut
     </tr>
 	<tr>
         <td><a href="#vstsfeed"><code>VSTS.Feed</code></a></td>
-        <td>Allows for users to easily execute OData queries against Analytics in Visual Studio Team Services.</td>
+        <td>Allows for users to easily execute OData queries against Analytics in VSTS.</td>
     </tr>
     <tr>
         <td><a href="#vstscontents"><code>VSTS.Contents</code></a></td>
@@ -35,7 +35,7 @@ The Data Connector for VSTS contributes functions which can be used by query aut
 </table>
 
 ## VSTS.Feed
-Allows for users to easily execute OData queries against Analytics in Visual Studio Team Services.
+Allows for users to easily execute OData queries against Analytics in VSTS.
 
 The `VSTS.Feed` function is similar to the standard `OData.Feed` function in terms of the arguments it accepts and the format of the returned value. For more information, see  [Power Query (M) Formula Reference - OData.Feed](https://msdn.microsoft.com/library/mt260868.aspx).
 

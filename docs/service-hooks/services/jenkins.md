@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Jenkins with Visual Studio Team Services
+title: Jenkins with VSTS
 description: Use Jenkins with your VSTS account
 ms.assetid: 3e9cf797-092f-48da-a515-e4d0cc93c4a1
 ms.manager: douge
@@ -10,9 +10,9 @@ ms.date: 08/04/2016
 ms.topic: get-started-article
 ---
 
-# Jenkins with Visual Studio Team Services
+# Jenkins with VSTS
 
-If you use Jenkins to build your apps, you can store your code in Visual Studio Team Services
+If you use Jenkins to build your apps, you can store your code in VSTS
 and continue to use Jenkins for your continuous integration builds.
 You can trigger a Jenkins build when you push code to your team project's
 Git repository or when you check code in to Team Foundation version control.
@@ -33,8 +33,8 @@ Git repository or when you check code in to Team Foundation version control.
 
    <img alt="Build name and type in Jenkins" src="./_img/jenkins/my-build.png" style="border: 1px solid #CCCCCC" />
 
-3. Set the URL for your Git repository in Visual Studio Team Services.
-The URL is in the form ```https://{Team Services account}.visualstudio.com/DefaultCollection/_git/{team project}```.
+3. Set the URL for your Git repository in VSTS.
+The URL is in the form ```https://{VSTS account}.visualstudio.com/DefaultCollection/_git/{team project}```.
 
    <img alt="Source code management settings with Git selected" src="./_img/jenkins/source-code-management-settings.png" style="border: 1px solid #CCCCCC" />
 
@@ -66,7 +66,7 @@ to connect VSTS to Jenkins.
 
    <img alt="New service hook subscription dialog box" src="./_img/jenkins/subscription.png" style="border: 1px solid #CCCCCC" />
 
-Now, when that event occurs in Visual Studio Team Services, your Jenkins build will be triggered.
+Now, when that event occurs in VSTS, your Jenkins build will be triggered.
 
 ## Pricing
 VSTS doesn't charge for the framework for integrating with external services. Check out the specific service's site

@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Service Endpoints | Extensions for Visual Studio Team Services
+title: Service Endpoints | Extensions for VSTS
 description: Browse through the places where your extension can extend Visual Studio Online.
 ms.assetid: ad0ea9de-620e-4605-8fcd-3c1443b26d8c
 ms.manager: douge
@@ -9,9 +9,9 @@ ms.author: elbatk
 ms.date: 08/22/2016
 ---
 
-# Service Endpoints in Team Services
+# Service Endpoints in VSTS
 
-Service endpoints are a way for Team Services to connect to external systems or services. They are a bundle of properties securely stored by Team Services which includes but is not limited to:
+Service endpoints are a way for VSTS to connect to external systems or services. They are a bundle of properties securely stored by VSTS which includes but is not limited to:
 
 - Service Name
 - Description
@@ -24,7 +24,7 @@ Follow this guide to create a new Service Point contribution and leverage it in 
 
 ## Tutorial Overview
 
-This tutorial walks through developing a service endpoint by creating an example extension for Team Services that includes:
+This tutorial walks through developing a service endpoint by creating an example extension for VSTS that includes:
 -	A custom service endpoint with data sources. This enables a build task or dashboard widget to call a REST endpoint on the service/server defined by the endpoint.
 -	A build task which defines 2 properties: The service endpoint & a picklist which has values populated from the REST endpoint data source.
 
@@ -144,7 +144,7 @@ Add the following `contributions` array underneath the `targets` array of the ba
   ],
 ```
 
-If you have successfully added the service contribution correctly, you will see the Fabrikam endpoint when trying to add a new Service Endpoint to your Team Services account.
+If you have successfully added the service contribution correctly, you will see the Fabrikam endpoint when trying to add a new Service Endpoint to your VSTS account.
 <img src="./_img/service-endpoint-endpoint-picker.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
 
 Go ahead and create a service endpoint using the Fabrikam endpoint.

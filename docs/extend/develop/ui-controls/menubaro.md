@@ -1,6 +1,6 @@
 ---
-title: Use the Menubar Control | Extensions for Visual Studio Team Services
-description: Used to display a menubar in your app for Visual Studio Team Services.
+title: Use the Menubar Control | Extensions for VSTS
+description: Used to display a menubar in your app for VSTS.
 ms.assetid: 13A6E34D-BE7D-463E-570C-C27B4ACC2129
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api

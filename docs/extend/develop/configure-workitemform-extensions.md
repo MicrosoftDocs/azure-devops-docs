@@ -1,5 +1,5 @@
 ---
-title: Configure work item form extensions in TFS | Extensions for Visual Studio Team Services
+title: Configure work item form extensions in TFS | Extensions for VSTS
 description: Describes how to add and configure work item form extensions in TFS.
 ms.prod: vs-devops-alm
 ms.contentid: DEC28077-2F52-490D-B87C-48D4785CD597

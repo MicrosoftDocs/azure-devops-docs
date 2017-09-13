@@ -1,6 +1,6 @@
 ---
-title: Save team project data for Visual Studio Team Services
-description: Save team project data for Visual Studio Team Services
+title: Save team project data for VSTS
+description: Save team project data for VSTS
 ms.assetid: b944f980-81c0-4100-b0d8-2fc575c65693
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -9,7 +9,7 @@ ms.author: estfan
 ms.date: 08/11/2016
 ---
 
-# Save team project data for Visual Studio Team Services
+# Save team project data for VSTS
 
 **VSTS**
 

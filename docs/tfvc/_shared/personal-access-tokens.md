@@ -11,10 +11,10 @@
 
 0.  Name your token. Select a lifespan for your token.
 
-	If you're using Team Services, and you have more than one account, 
-	you can also select the Team Services account where you want to use the token.
+	If you're using VSTS, and you have more than one account, 
+	you can also select the VSTS account where you want to use the token.
 
-   <img alt="Name your token, select a lifespan. If using Team Services, select an account for your token" src="./_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Name your token, select a lifespan. If using VSTS, select an account for your token" src="./_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
 0.  Select the [scopes](/vsts/integrate/get-started/authentication/oauth#scopes) 
 that this token will authorize for **your specific tasks**.

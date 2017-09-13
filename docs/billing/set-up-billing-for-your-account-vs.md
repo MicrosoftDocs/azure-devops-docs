@@ -1,6 +1,6 @@
 ---
 title: Set up billing for VSTS to pay for more services 
-description: Use an Azure subscription to pay for more users, build & release pipelines, extensions, and cloud-based load testing for Visual Studio Team Services (Visual Studio Online, VSO, VSTS)
+description: Use an Azure subscription to pay for more users, build & release pipelines, extensions, and cloud-based load testing for VSTS (Visual Studio Online, VSO, VSTS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
@@ -9,7 +9,7 @@ ms.author: estfan
 ms.date: 04/28/2017
 ---
 
-#  Set up billing to pay for users, pipelines, and cloud-based load testing in Visual Studio Team Services
+#  Set up billing to pay for users, pipelines, and cloud-based load testing in VSTS
 
 **VSTS**
 

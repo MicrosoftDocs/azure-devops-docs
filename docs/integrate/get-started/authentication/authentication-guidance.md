@@ -1,6 +1,6 @@
 ---
 title: Guidance for authentication | VSTS REST APIs
-description: Guidance for authentication with with Visual Studio Team Services.
+description: Guidance for authentication with with VSTS.
 ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-integrate
@@ -49,7 +49,7 @@ A: Yes, you can use ADAL to create client side applications for an MSA backed ac
 
 A: This guidence is mainly for VSTS users. [Client Libraries](./../client-libraries/dotnet.md) are a series of packages built specifically for extending TFS functionality. For on-prem users, we recommend using the [Client Libraries](./../client-libraries/dotnet.md), Windows Auth, or [Personal Access Tokens (PATs)](./PATs.md) to authenticate on behalf of a user.
 
-#### Q: What if I want my application to authenticate with both TFS and Team Services?
+#### Q: What if I want my application to authenticate with both TFS and VSTS?
 
-A: The best practice is to have different authentication paths for TFS and Visual Studio Team Services. You can use the requestContext to find out which you’re hitting and then use the best mechanism for each. Alternatively, if you want a unified solution, [PATs](./PATs.md) will work for both.
+A: The best practice is to have different authentication paths for TFS and VSTS. You can use the requestContext to find out which you’re hitting and then use the best mechanism for each. Alternatively, if you want a unified solution, [PATs](./PATs.md) will work for both.
 

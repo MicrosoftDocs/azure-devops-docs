@@ -1,6 +1,6 @@
 ---
 title: Disconnect your VSTS account from your Azure AD
-description: Azure Active Directory (Azure AD) - Control access to Visual Studio Team Services (VSTS, Visual Studio Online, VSO)
+description: Azure Active Directory (Azure AD) - Control access to VSTS (VSTS, Visual Studio Online, VSO)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
@@ -50,7 +50,7 @@ with your Microsoft account as the VSTS account owner.
 
 	[Why am I asked to choose between a work or school account and a personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
-0.  Go to **Visual Studio Team Services**. 
+0.  Go to **VSTS**. 
 Select your VSTS account.
 
 	![Select your account](_img/manage-work-access/azureselectconnectedvso.png)

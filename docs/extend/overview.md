@@ -18,11 +18,11 @@ ms.topic: get-started-article
 
 ## What are extensions?
 
-Extensions are simple add-ons that can be used to customize and extend your DevOps experience with Team Services. 
+Extensions are simple add-ons that can be used to customize and extend your DevOps experience with VSTS. 
 They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.
-They utilize our [RESTful API Library](https://visualstudio.com/integrate/api/overview.md) in order to easily interact with Team Services and applications/services.
+They utilize our [RESTful API Library](https://visualstudio.com/integrate/api/overview.md) in order to easily interact with VSTS and applications/services.
 The [Visual Studio Marketplace](https://marketplace.visualstudio.com/VSTS) is where extensions are published, 
-where they can be kept privately for you and your team or shared with the millions of developers currently using Team Services. 
+where they can be kept privately for you and your team or shared with the millions of developers currently using VSTS. 
 
 ## What makes up an extension?
 <div align="center" style="padding-top:15px">
@@ -34,15 +34,15 @@ where they can be kept privately for you and your team or shared with the millio
 - Static files that contain the logic of your extension, including HTML, JS, and CSS files. Static files are only applicable to contribution-based extensions.
 
 All of these are bundled up to make a Team Extensions Service Package (.vsix file) that is published to the marketplace. From the marketplace,
-extensions can be installed directly by Team Services users.
+extensions can be installed directly by VSTS users.
 
 
 ## What can you do with extensions?
 
-There are dozens of places where you can add to the Team Services user interface, and we're adding more every sprint. Learn about all of the places where you can add a hub in the [contributions reference](./reference/targets/overview.md).
+There are dozens of places where you can add to the VSTS user interface, and we're adding more every sprint. Learn about all of the places where you can add a hub in the [contributions reference](./reference/targets/overview.md).
 
 - [Provide new build and release tasks](./develop/add-build-task.md) that teams can use in their builds.
-- Use [dashboard widgets](./develop/add-dashboard-widget.md) to get custom views within Team Services. 
+- Use [dashboard widgets](./develop/add-dashboard-widget.md) to get custom views within VSTS. 
 - Extend the [work item form](./develop/add-workitem-extension.md) with new tabs, sections, and actions.
 - Create [your own hub](./develop/add-hub.md) to embed new capabilities within our Agile, code, build, and test experiences. 
 - Develop [actions](./develop/add-action.md) that can be run on hubs, whether they're ours or ones you've created. 

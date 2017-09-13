@@ -44,7 +44,7 @@ subscriptions and non-Microsoft extensions for VSTS and Team Foundation Server.
 A:	No, you can't use the 
 [Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/) 
 to pay for Visual Studio Marketplace purchases, 
-which applies to Visual Studio Team Services, HockeyApp plans, Xamarin University, and so on. 
+which applies to VSTS, HockeyApp plans, Xamarin University, and so on. 
 Instead, set up a separate Pay-As-You-Go Azure subscription,
 which you can do before or during your purchase. 
 

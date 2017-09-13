@@ -126,7 +126,7 @@ You can't remove or delete the default server level groups.
 			</blockquote>
 		</td>
 		<td>
-			Contains all users known to exist in the Team Services account or TFS instance.
+			Contains all users known to exist in the VSTS account or TFS instance.
 			You can't modify the membership of this group.
 		</td>
 	</tr>
@@ -170,7 +170,7 @@ You can't remove or delete the default server level groups.
 
 ### Collection-level groups
 
-When you create a Team Services account or TFS collection, the system creates collection-level groups that have [permissions in that collection](#collection-level). You can neither remove nor delete the built-in collection-level groups.
+When you create a VSTS account or TFS collection, the system creates collection-level groups that have [permissions in that collection](#collection-level). You can neither remove nor delete the built-in collection-level groups.
 
 <!---
 Project Collection Administrators
@@ -291,7 +291,7 @@ Readers
 Project Administrators
 Project Valid Users
 Readers
-Release Administrators (TFS 2017, Team Services)
+Release Administrators (TFS 2017, VSTS)
 [team name]
 -->
 
@@ -567,7 +567,7 @@ You manage collection-level permissions through the [web portal admin context](.
 		<td>
 			Can modify permissions for processes.
 			<blockquote>
-				Applies to Team Services only, not TFS.
+				Applies to VSTS only, not TFS.
 			</blockquote>
 		</td>
 	</tr>
@@ -620,7 +620,7 @@ You manage collection-level permissions through the [web portal admin context](.
 		<td>
 			Can [create an inherited process](../work/process/manage-process.md).
 			<blockquote>
-				Applies to Team Services only, not TFS.
+				Applies to VSTS only, not TFS.
 			</blockquote>
 		</td>
 	</tr>
@@ -629,7 +629,7 @@ You manage collection-level permissions through the [web portal admin context](.
 		<td>
 			Can [delete an inherited process](../work/process/manage-process.md).
 			<blockquote>
-				Applies to Team Services only, not TFS.
+				Applies to VSTS only, not TFS.
 			</blockquote>
 		</td>
 	</tr>
@@ -682,7 +682,7 @@ You manage collection-level permissions through the [web portal admin context](.
 		<td>
 			Can edit a [custom inherited process](../work/process/customize-process.md).
 			<blockquote>
-				Applies to Team Services only, not TFS.
+				Applies to VSTS only, not TFS.
 			</blockquote>
 		</td>
 	</tr>
@@ -701,7 +701,7 @@ You manage collection-level permissions through the [web portal admin context](.
 		<td id="manage-process-template-permission">Manage process template</td>
 		<td>
 			Can download, create, edit, and upload process templates.
-			<blockquote>Applies to TFS only, not Team Services.</blockquote>
+			<blockquote>Applies to TFS only, not VSTS.</blockquote>
 		</td>
 	</tr>
 	<tr>
@@ -815,7 +815,7 @@ You manage project-level permissions from the [web portal admin context](../conn
 		<td id="move-work-items-out-of-this-project-permission">Move work items out of this project</td>
 		<td>Can [move a work item from one team project to another team project](../work/backlogs/remove-delete-work-items.md) within the collection.
 			<blockquote>
-				Applies to Team Services only, not TFS.
+				Applies to VSTS only, not TFS.
 			</blockquote>
 		</td>
 	</tr>
@@ -1577,7 +1577,7 @@ Consider granting the Contribute permissions to users or groups that require the
 You manage plan permissions through the [web portal](../work/scale/review-team-plans.md#plan-permissions). You manage permissions for each plan through it's Security dialog. Project Administors are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
 
 > [!NOTE]  
-> **Feature availability**: Plans is in preview and available only on Team Services. You access plans by installing the Plans Marketplace [extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
+> **Feature availability**: Plans is in preview and available only on VSTS. You access plans by installing the Plans Marketplace [extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
 
 
 <table valign="top" width="100%">

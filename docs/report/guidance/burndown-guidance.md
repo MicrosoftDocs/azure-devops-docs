@@ -1,5 +1,5 @@
 ---
-title: Burndown guidance| Team Services & TFS  
+title: Burndown guidance| VSTS & TFS  
 description: Review Scrum progress during and at the end of a sprint when working in Visual Studio Team Services (VSTS) and Team Foundation Server 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

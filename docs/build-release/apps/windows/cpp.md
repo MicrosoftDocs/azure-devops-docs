@@ -1,6 +1,6 @@
 ---
 title: Build your C++ app
-description: Build your C++ app in Team Foundation Server and Visual Team Services
+description: Build your C++ app in Team Foundation Server and Visual VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49

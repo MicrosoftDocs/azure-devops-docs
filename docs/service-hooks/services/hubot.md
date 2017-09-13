@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Hubot with Visual Studio Team Services
+title: Hubot with VSTS
 description: Use Hubot with your VSTS account
 ms.assetid: FA7D521A-4B4A-43A8-8443-F86687B46339
 ms.manager: douge
@@ -9,7 +9,7 @@ ms.author: elbatk
 ms.date: 08/04/2016
 ---
 
-# Hubot with Visual Studio Team Services
+# Hubot with VSTS
 
 Using Hubot, you can type a command in your VSTS team room
 to create a work item, queue a build, recall what you last worked on, and more.
@@ -22,7 +22,7 @@ And you can add scripts to extend what your Hubot service can do.
 ## Set up Hubot
 
 Set up a Hubot instance and configure the VSTS adapter
-to accept messages from a team room in Visual Studio Team Services.
+to accept messages from a team room in VSTS.
 
 1. If you don't already have your own Hubot instance, set one up.
 A good way to do that is to deploy Hubot to an Azure web site.
@@ -46,7 +46,7 @@ that sends messages from a team room to your Hubot instance.
 Here are more [detailed instructions](https://github.com/scrumdod/hubot-VSOnline)
 for deploying a Hubot instance to an Azure web site.
 
-## Subscribe Hubot to team room messages in Visual Studio Team Services
+## Subscribe Hubot to team room messages in VSTS
 
 Now that you've set up Hubot, create a service hook subscription
 that will forward messages in a VSTS team room

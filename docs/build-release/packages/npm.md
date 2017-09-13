@@ -11,7 +11,7 @@ ms.date: 11/07/2016
 
 # Use Team Build to restore and publish npm packages
 
-**Team Services**
+**VSTS**
 
 This guide covers the basics of using Team Build to work with npm packages in Package Management feeds.
 

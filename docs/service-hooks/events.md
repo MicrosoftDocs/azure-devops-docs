@@ -1,5 +1,5 @@
 ---
-title: Service hooks event reference | Visual Studio Team Services
+title: Service hooks event reference | VSTS
 description: Events supported by VSTS and Team Foundation Server
 ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
 ms.prod: vs-devops-alm
@@ -9,7 +9,7 @@ ms.author: elbatk
 ms.date: 08/04/2016
 ---
 
-# Team Services service hooks events
+# VSTS service hooks events
 
 Available event types:
 
@@ -2103,5 +2103,5 @@ The event payload contains a `resourceContainers` dictionary that includes the I
 
 * **Team Foundation Server 2015**: includes project, collection, and server. Does not include `baseUrl`.
 * **Team Foundation Server 2017**: includes project, collection, and server. Includes `baseUrl` for each.
-* **Team Services**: includes project and collection (account). Includes `baseUrl` for each.
+* **VSTS**: includes project and collection (account). Includes `baseUrl` for each.
 

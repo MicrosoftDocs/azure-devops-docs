@@ -11,9 +11,9 @@ ms.date: 08/10/2016
 
 # Use Jenkins to restore and publish packages
 
-**Team Services | TFS 2017**
+**VSTS | TFS 2017**
 
-Visual Studio Team Services's package management works with the continuous integration tools your team already uses.
+VSTS's package management works with the continuous integration tools your team already uses.
 In this [Jenkins](http://jenkins-ci.org/) walkthrough, you'll create a NuGet package and publish it to a VSTS feed.
 If you need help on Jenkins setup, you can learn more on [the Jenkins wiki](https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins).
 
@@ -44,13 +44,13 @@ The sample project is a simple shared library written in C#.
 * Check the new solution into a Git repo where your Jenkins server can access it later.
 
 
-## Add the Team Services NuGet tools to your repo
+## Add the VSTS NuGet tools to your repo
 
-The easiest way to use the Team Services NuGet service is by adding the [Microsoft.VisualStudio.Services.NuGet.Bootstrap package](/vsts/package/nuget/bootstrap-nuget) to your project.
+The easiest way to use the VSTS NuGet service is by adding the [Microsoft.VisualStudio.Services.NuGet.Bootstrap package](/vsts/package/nuget/bootstrap-nuget) to your project.
 
 ## Create a package from your project
 
-*Whenever you work from a command line, run `init.cmd` first. This sets up your environment to allow you to work with nuget.exe and the Team Services NuGet service.*
+*Whenever you work from a command line, run `init.cmd` first. This sets up your environment to allow you to work with nuget.exe and the VSTS NuGet service.*
 
 * Change into the directory containing FabrikamLibrary.csproj.
 * Run the command `nuget spec` to create the file FabrikamLibrary.nuspec, which defines how your NuGet package builds.
@@ -59,8 +59,8 @@ The easiest way to use the Team Services NuGet service is by adding the [Microso
 * A file called FabrikamLibrary.1.0.0.0.nupkg will be produced.
 
 
-## Set up a feed in Team Services and add it to your project
-* [Create a feed](/vsts/package/feeds/create-feed) in your Team Services account called *MyGreatFeed*. Since you're the owner of the feed, you will automatically be able to push packages to it.
+## Set up a feed in VSTS and add it to your project
+* [Create a feed](/vsts/package/feeds/create-feed) in your VSTS account called *MyGreatFeed*. Since you're the owner of the feed, you will automatically be able to push packages to it.
 * Add the URL for the feed you just generated to the nuget.config in the root of your repo.
   * Find the `<packageSources>` section of nuget.config.
   * Just before `</packageSources>`, add a line using this template: `<add key="MyGreatFeed" value="{feed_url}" />`. Change `{feed_url}` to the URL of your feed.
@@ -107,4 +107,4 @@ These are the last walkthrough steps to publish the package to a feed:
   * The second line pushes your package using the credentials saved above: `.tools\VSS.NuGet\nuget push *.nupkg -Name "MyGreatFeed" -ApiKey VSS`
 
 ![Push package](_img/jenkins_push.png)
-* Queue another build. This time, the build machine will authenticate to Team Services and push the package to the feed you selected.
+* Queue another build. This time, the build machine will authenticate to VSTS and push the package to the feed you selected.

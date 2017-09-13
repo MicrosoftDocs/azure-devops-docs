@@ -1,6 +1,6 @@
 ---
-title: URL-based load testing with Visual Studio Team Services
-description: Get app performance data when you load test with Visual Studio Team Services
+title: URL-based load testing with VSTS
+description: Get app performance data when you load test with VSTS
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-performance
 ms.assetid: 65E96414-756B-4BD9-92C3-4DDB4C7A6B57

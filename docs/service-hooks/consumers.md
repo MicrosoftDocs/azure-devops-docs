@@ -1,6 +1,6 @@
 ---
-title: Service hooks consumers for Visual Studio Team Services
-description: Service hooks consumer documentation for Visual Studio Team Services
+title: Service hooks consumers for VSTS
+description: Service hooks consumer documentation for VSTS
 toc: Hide
 ms.assetid: CDACB8A1-4BAB-499F-B9ED-BD1680743B26
 ms.prod: vs-devops-alm

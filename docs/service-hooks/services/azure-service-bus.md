@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Azure Service Bus with Visual Studio Team Services
+title: Azure Service Bus with VSTS
 description: Use Azure Service Bus with your VSTS account
 ms.assetid: bffe0cee-2c1c-4e7a-adbe-f6dc6a94f735
 ms.manager: douge
@@ -9,7 +9,7 @@ ms.author: elbatk
 ms.date: 08/16/2016
 ---
 
-# Microsoft Azure service bus with Visual Studio Team Services
+# Microsoft Azure service bus with VSTS
 
 The Microsoft Azure service bus provides messaging between services and applications.
 You can choose the type of service bus you want to send VSTS messages to:
@@ -55,10 +55,10 @@ when you create a Service Hook subscription.
 
    <img alt="Azure Service Bus Queue" src="./_img/azure-service-bus/queues.png" style="border: 1px solid #CCCCCC" />
 
-2. Create or modify your app's code to receive Visual Studio Team Services
+2. Create or modify your app's code to receive VSTS
 messages using a Azure Service Bus queue. For details, go [here](http://azure.microsoft.com/en-us/documentation/articles/service-bus-dotnet-how-to-use-queues/).
 
-3. Open the admin page for the team project in Visual Studio Team Services.
+3. Open the admin page for the team project in VSTS.
 
 4. On the **Service Hooks** tab, run the subscription wizard.
 
@@ -94,7 +94,7 @@ You can verify this in your application or service.
 VSTS messages using a Azure Service Bus topic.
 For details, go [here](http://azure.microsoft.com/en-us/documentation/articles/service-bus-dotnet-how-to-use-topics-subscriptions/).
 
-3. Open the admin page for the team project in Visual Studio Team Services.
+3. Open the admin page for the team project in VSTS.
 
 4. On the **Service Hooks** tab, run the subscription wizard.
 
@@ -136,7 +136,7 @@ For more information about notification hubs go [here](https://msdn.microsoft.co
 The steps and code required to set up your app depend on the target platform (Windows Store, Windows Phone 8, IOS, or Android).
 For details, go [here](http://azure.microsoft.com/en-us/documentation/services/notification-hubs/).
 
-3. Open the admin page for the team project in Visual Studio Team Services.
+3. Open the admin page for the team project in VSTS.
 
 4. On the **Service Hooks** tab, run the subscription wizard.
  

@@ -34,7 +34,7 @@ You need SCVMM.
 1. Install the **System Center Virtual Machine Manager (SCVMM)** extension
    from Visual Studio Marketplace into your server or account:
 
-   * If you are using **Visual Studio Team Services**,
+   * If you are using **VSTS**,
      install the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.scvmmapp)
      in Visual Studio Marketplace.
    * If you are using **Team Foundation Server**, download

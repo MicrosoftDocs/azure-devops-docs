@@ -49,7 +49,7 @@ Your best bet is to show fields on cards based on what your team frequently refe
 <table width="80%">
 <tr>
 <th width="20%">Option </th>
-<th width="20%">Team Services</th>
+<th width="20%">VSTS</th>
 <th width="20%">TFS 2015 </th>
 <th width="20%">TFS 2015.1,2 </th>
 <th width="20%">TFS 2017 </th>

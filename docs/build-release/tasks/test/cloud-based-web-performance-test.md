@@ -14,7 +14,7 @@ ms.date: 01/17/2017
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ![icon](_img/web-based-perf-icon.png)
-Runs the Quick Web Performance Test with Visual Studio Team Services.
+Runs the Quick Web Performance Test with VSTS.
 
 The task can be used in a build or release 
 definition to generate load against an application URL

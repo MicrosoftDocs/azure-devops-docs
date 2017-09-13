@@ -1,6 +1,6 @@
 ---
 title: Quick Start - Build and Deploy a ASP.NET Core app | VSTS
-description: Set up a continuous integration (CI) build for your ASP.NET Core app, and then a continuous deployment (CD) release to Azure using Visual Studio Team Services
+description: Set up a continuous integration (CI) build for your ASP.NET Core app, and then a continuous deployment (CD) release to Azure using VSTS
 services: vsts
 documentationcenter: ''
 author: alewis

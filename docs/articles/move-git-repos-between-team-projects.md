@@ -1,6 +1,6 @@
 ---
 title: Version Control - Move Git repositories between VSTS Team Projects
-description: Moving Git Repositories from one Team Services Team Project to another
+description: Moving Git Repositories from one VSTS Team Project to another
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
 ms.assetid: 5CB114EA-EC65-4FF8-BC71-1B7E4B15D921
@@ -29,10 +29,10 @@ As shown, we need to move the MigrationDemo repo, from the FabrikamOld to the ne
 
 ## How do I move?
 
-You have 2 options as outlined below. Import functionality is easier, but is only available in Team Services and TFS 2017 Update 1 and above.  
+You have 2 options as outlined below. Import functionality is easier, but is only available in VSTS and TFS 2017 Update 1 and above.  
 
 ### Use Import Git repository functionality
-Using Import Repository, you can import a Git repository to your team project from TFS/Team Services or any other Git source code provider like Github. 
+Using Import Repository, you can import a Git repository to your team project from TFS/VSTS or any other Git source code provider like Github. 
 Review the [import repository documentation](../git/import-git-repository.md) for more details.
 
 ### Manually migrate the Git repo in 5 easy steps:
@@ -47,7 +47,7 @@ Once the repo is created, you are presented with step-by-step instructions to qu
 
 ![New Repo Information](./_img/move-git-repos-between-team-projects/MoveRepo-NewRepoInfo.png)
 
-> Important - Clear the **Automatically create links for work items mentioned in a commit comment** if you are importing from a different project collection or a foreign git repository. Team Services will otherwise associate the commits to existing work items of unrelated team projects in the team project collection.
+> Important - Clear the **Automatically create links for work items mentioned in a commit comment** if you are importing from a different project collection or a foreign git repository. VSTS will otherwise associate the commits to existing work items of unrelated team projects in the team project collection.
 
 ![New Repo Options and Links Warning](./_img/move-git-repos-between-team-projects/MoveRepo-Warning.png)
 

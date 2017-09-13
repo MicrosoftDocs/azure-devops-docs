@@ -20,15 +20,15 @@ We will not delve deep into the [Git commands](http://git-scm.com/book/commands)
 
 Each Team project can host [TFVC and Git repositories in the same team project](http://blogs.msdn.com/b/visualstudioalm/archive/2015/12/03/tfvc-and-git-repositories-in-the-same-team-project.aspx), creating one TFVC, and one or more Git repositories.
 
-![Create a new Team Services Git Repository](./_img/mapping-my-tfvc-actions-to-git/ActionMap-NewRepo.png)
+![Create a new VSTS Git Repository](./_img/mapping-my-tfvc-actions-to-git/ActionMap-NewRepo.png)
 
 Once the repo is created, you are presented with step-by-step instructions to quickly get started. 
 
-![Get Started with a new Team Services Git Repository](./_img/mapping-my-tfvc-actions-to-git/actionmap-newrepoinfo.png)
+![Get Started with a new VSTS Git Repository](./_img/mapping-my-tfvc-actions-to-git/actionmap-newrepoinfo.png)
 
 Click on the `Create a ReadMe file' at the end of the instruction page, to give the repo context and to create some history.
 
-![Create a README to initialize a new Team Services Git repo](./_img/mapping-my-tfvc-actions-to-git/actionmap-readme.png)
+![Create a README to initialize a new VSTS Git repo](./_img/mapping-my-tfvc-actions-to-git/actionmap-readme.png)
 
 ## Create a workspace and get latest
 
@@ -44,7 +44,7 @@ git clone https://demo-fabrikam.visualstudio.com/DefaultCollection/Fabrikam/_git
 
 # [Visual Studio](#tab/visual-studio)
 
-![Connect to a Team Services Git repo in Visual Studio](./_img/mapping-my-tfvc-actions-to-git/actionmap-clone.png)
+![Connect to a VSTS Git repo in Visual Studio](./_img/mapping-my-tfvc-actions-to-git/actionmap-clone.png)
 
 ---
 

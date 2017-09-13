@@ -33,7 +33,7 @@ You import data from the Analytics Service for VSTS into Power BI using a data c
 	
 	![](./_img/data-connector-get-data-1a.png)
 
-4. Select the Visual Studio Team Services (Beta) entry listed under the Online Services category, and click **Connect**.
+4. Select the VSTS (Beta) entry listed under the Online Services category, and click **Connect**.
 
 	![](./_img/data-connector-get-data-2.png)
 
@@ -160,7 +160,7 @@ You import data from the Analytics Service for VSTS into Power BI using a data c
 ### Q: How should I read error messages coming from the connector?
 **A:** Reading error messages coming from the connector can be challenging because they typically contain additional contextual information.
 If the load operation fails, then the message will start with *Failed to save modifications to the server...*.
-When you see it, then search for **&#91;DataSource.Error&#93; Visual Studio Team Services:**.
+When you see it, then search for **&#91;DataSource.Error&#93; VSTS:**.
 The following text is the real error message returned from the connector.
 
 In the example below the most important part of the error message is:
@@ -186,7 +186,7 @@ You encountered an error while trying to connect.
 
 **A:** You will get the following error if the number or records exceeds 200k.  
 > Failed to save modifications to the server. Error returned: 'OLE DB or ODBC error: 
-> &#91;DataSource.Error&#93; Visual Studio Team Services: Request failed: The remote server returned an error: (400) Bad Request. 
+> &#91;DataSource.Error&#93; VSTS: Request failed: The remote server returned an error: (400) Bad Request. 
 > (**Query result exceeds maximum size. Please reduce the number of records by applying additional filters**).'.
 
 

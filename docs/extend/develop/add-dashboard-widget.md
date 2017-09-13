@@ -1,5 +1,5 @@
 ---
-title: Add a dashboard widget | Extensions for Visual Studio Team Services
+title: Add a dashboard widget | Extensions for VSTS
 description: Tutorial for creating a widget that you can then add to a dashboard  
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
@@ -17,7 +17,7 @@ A single extension can have multiple contributions. In this guide we will show y
 This guide is divided into three parts, each building on the previous ones. The goal is to start with a simple widget and end with a comprehensive one.
 
 ## Preparation and required setup for this tutorial
-In order to create extensions for Team Services, there are some prerequisite software and tools you'll need:
+In order to create extensions for VSTS, there are some prerequisite software and tools you'll need:
 
 **Knowledge:**
 Some knowledge of JavaScript, HTML, CSS is required for widget development.
@@ -61,7 +61,7 @@ This part presents a widget that prints "Hello World" using JavaScript.
 <a name="step-1-files" />
 
 ### Step 1: Get the client SDK - `VSS.SDK.min.js`
-The core SDK script, `VSS.SDK.min.js`, enables web extensions to communicate to the host Team Services frame and to perform operations like initializing, notifying extension is loaded or getting context about the current page. 
+The core SDK script, `VSS.SDK.min.js`, enables web extensions to communicate to the host VSTS frame and to perform operations like initializing, notifying extension is loaded or getting context about the current page. 
 Get the Client SDK `VSS.SDK.min.js` file and add it to your web app. Place it in the `home/sdk/scripts` folder.
 
 Use the 'npm install' command to retrieve the SDK:
@@ -387,8 +387,8 @@ This will allow the framework to uniquely identify the widget within the extensi
 </html>
 ```
 
-### Step 2: Access Team Services Resources
-To enable access to Team Services resources, [scopes](./manifest.md#scopes) need to be specified in the extension manifest. We will add the `vso.work` scope to our manifest.  
+### Step 2: Access VSTS Resources
+To enable access to VSTS resources, [scopes](./manifest.md#scopes) need to be specified in the extension manifest. We will add the `vso.work` scope to our manifest.  
 This scope indicates the widget needs read-only access to queries and workitems. See all available scopes [here](./manifest.md#scopes).
 Add the below at the end of your extension manifest.
 

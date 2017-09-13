@@ -15,11 +15,11 @@ ms.date: 09/01/2017
 
 There are two options available to remove a version of an npm package from a feed.
 
-1. **Deprecate:** deprecating a version of a package adds a deprecation message that most npm clients, and Team Services, will show whenever the package is viewed or installed. 
+1. **Deprecate:** deprecating a version of a package adds a deprecation message that most npm clients, and VSTS, will show whenever the package is viewed or installed. 
 Deprecating a version can help you discourage new usage of it by presenting a warning message when the package is installed.
 2. **Unpublish:** Unpublishing a version of a package makes it permanently unavailable for install or restore.
 
-## Use Team Services
+## Use VSTS
 
 You must be a **contributor** to deprecate and an **owner** to unpublish.
 To deprecate or unpublish a version of a package, choose the package from the **Packages** menu, and select the appropriate option from the menu under the ellipses. 

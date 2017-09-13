@@ -1,5 +1,5 @@
 ---
-title: DevOps overview for Team Services and TFS    
+title: DevOps overview for VSTS and TFS    
 description: Guide to getting started using DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview  
@@ -9,9 +9,9 @@ ms.author: kaelli
 ms.date: 06/22/2017
 ---
 
-# DevOps overview for Team Services and TFS
+# DevOps overview for VSTS and TFS
 
-<b>Team Services | TFS 2017 | TFS 2015 | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 Use our integrated tool set to speed the development and delivery of your software applications. Build better apps for any platform, including iOS, Android, Java, Linux or Windows.  
  
@@ -19,21 +19,21 @@ Use our integrated tool set to speed the development and delivery of your softwa
 
 VSTS and Azure cloud services help remove barriers between teams, encourage collaboration, and improve the flow of value to your customers. Or, use our on-premises server, Team Foundation Server (TFS), when you want to maintain your data within your network. 
 
-Both options are enterprise-ready, supporting teams of any size, from tens to thousands. Team Services provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24—7 operations team, and available in local data centers around the world.
+Both options are enterprise-ready, supporting teams of any size, from tens to thousands. VSTS provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24—7 operations team, and available in local data centers around the world.
 
 Also, you can quickly expand the power of these tools through integration with other services and tools using service hooks and extensions.  
 
-For the key differences between TFS and Team Services, see [About VSTS and Team Foundation Server](about-vsts-tfs.md). 
+For the key differences between TFS and VSTS, see [About VSTS and Team Foundation Server](about-vsts-tfs.md). 
 
 ## Get started in the cloud or on-premises  
 Whether you work in the cloud, on-premises, or a hybrid of each, you have a comprehensive set of DevOps and Agile tools to support team collaboration throughout the cycles of planning, development and test, and continuous delivery.
 
 
 ### Work in the cloud
-Choose Team Services when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to cloud load testing, cloud build servers, and application insights. [Small teams can start for free!](https://www.visualstudio.com/products/visual-studio-team-services-vs.aspx)  
+Choose VSTS when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to cloud load testing, cloud build servers, and application insights. [Small teams can start for free!](https://www.visualstudio.com/products/visual-studio-team-services-vs.aspx)  
 
 
-[![Sign up for Team Services](_img/overview/vsts-setup-1.png)](accounts/create-account-msa-or-work-student.md)[![Add team members](_img/overview/vsts-setup-3.png)](accounts/add-team-members-vs.md)[![Add code to repository](_img/overview/vsts-setup-4.png)](#add-code)   
+[![Sign up for VSTS](_img/overview/vsts-setup-1.png)](accounts/create-account-msa-or-work-student.md)[![Add team members](_img/overview/vsts-setup-3.png)](accounts/add-team-members-vs.md)[![Add code to repository](_img/overview/vsts-setup-4.png)](#add-code)   
 
 ### Work on-premises
 Choose on-premises TFS when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  
@@ -43,7 +43,7 @@ Choose on-premises TFS when you need your data to stay within your network or yo
 <a id="add-code">  </a>
 ## Develop code using your IDE of choice 
 
-Team Services supports two types of version control Git and Team Foundation Version Control (TFVC). Use Git, Team Foundation version control (TFVC) or both to store code for your app and give you access to different versions of your code. 
+VSTS supports two types of version control Git and Team Foundation Version Control (TFVC). Use Git, Team Foundation version control (TFVC) or both to store code for your app and give you access to different versions of your code. 
 
 Depending on whether you use Git or TFVC as a repo, you can develop your code in Android Studio, Eclipse, IntelliJ, Visual Studio, Visual Studio Code, or Xcode.  
 
@@ -143,7 +143,7 @@ Prioritization of investments should be based on real-world usage patterns. Use 
 <li style="margin-bottom:2px">[Agile tools](work/overview.md)</li>
 <li style="margin-bottom:2px">[Portfolio management](work/scale/portfolio-management.md)</li>
 <li style="margin-bottom:2px">[Customize](work/customize/customize-work.md)</li>
-<li style="margin-bottom:2px">[Power BI Dashboards and reports (Team Services)](report/powerbi/report-on-vso-with-power-bi-vs.md)</li>
+<li style="margin-bottom:2px">[Power BI Dashboards and reports (VSTS)](report/powerbi/report-on-vso-with-power-bi-vs.md)</li>
 </ul>
 </div>
 
@@ -254,7 +254,7 @@ As your team grows, your tools will grow with you. You can easily add teams whic
  
 ## Related notes
 
-Once you've signed up for Team Services or installed TFS, you'll want to get familiar with the [web portal and working in the user and admin contexts](connect/work-web-portal.md).    
+Once you've signed up for VSTS or installed TFS, you'll want to get familiar with the [web portal and working in the user and admin contexts](connect/work-web-portal.md).    
 
 Other topics of interest:  
  
@@ -266,17 +266,17 @@ Other topics of interest:
 
 ### TFS updates
 
-- [Migrate data from TFS to Team Services](migrate-to-vsts-from-tfs.md)
+- [Migrate data from TFS to VSTS](migrate-to-vsts-from-tfs.md)
 
 ### Pricing, costs, and licenses</span>
-[Team Services Pricing](https://www.visualstudio.com/team-services/pricing/) provides per user costs. Small teams (5 users or fewer) can start for free. Unlimited Visual Studio subscribers are free.   
+[VSTS Pricing](https://www.visualstudio.com/team-services/pricing/) provides per user costs. Small teams (5 users or fewer) can start for free. Unlimited Visual Studio subscribers are free.   
 
 On-premises TFS provides three access levels: [Stakeholder, Basic, and Advanced](security/change-access-levels.md). You don't need to buy additional licenses for Visual Studio subscribers. Use the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing) to plan your licensing requirements. 
 
 
 ### Extensibility: Create first-class integration experiences 
 
-Our extensibility framework enables you to build integrations directly within Team Services or TFS to create first-class, seamless connections between different tools and services.  
+Our extensibility framework enables you to build integrations directly within VSTS or TFS to create first-class, seamless connections between different tools and services.  
 
 With Marketplace extensions (currently in private preview), you can create first-class integration experiences, such as a simple context menu or toolbar action. Or, you can create a complex, powerful full UI experience that seamlessly lights up within the VSTS web portal.  
 
@@ -379,12 +379,12 @@ Monitor your web and device apps to gain actionable insight to improve performan
 ##Setup
 
 <div style="float:left;width:180px;margin:6px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Team Services</p>
+<p style="font-weight:bold;padding-bottom:0px;text-align:center;">VSTS</p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:2px">[Set up Visual Studio](accounts/set-up-vs.md)</li>
- <li style="margin-bottom:2px">[Connect to Team Services](connect/connect-team-projects.md)</li>
+ <li style="margin-bottom:2px">[Connect to VSTS](connect/connect-team-projects.md)</li>
  <li style="margin-bottom:2px">[Add team members](connect/connect-team-projects.md)</li>
- <li style="margin-bottom:2px">[Migrate from Team Foundation Server to Visual Studio Team Services](/adopting-vsts)</li>
+ <li style="margin-bottom:2px">[Migrate from Team Foundation Server to VSTS](/adopting-vsts)</li>
 </ul>
 </div>
 
@@ -447,11 +447,11 @@ Monitor your web and device apps to gain actionable insight to improve performan
 
 
 ### Visual Studio, Team Foundation clients, and cross-platform support
-Visual Studio and Team Foundation clients support program managers and other stakeholders to connect to TFS and Visual Studio Team Services. You can get started using the free Visual Studio Community edition. Compare Visual Studio versions to learn which editions provide access to premium features.  
+Visual Studio and Team Foundation clients support program managers and other stakeholders to connect to TFS and VSTS. You can get started using the free Visual Studio Community edition. Compare Visual Studio versions to learn which editions provide access to premium features.  
 
 Team Explorer is installed with each version of Visual Studio. You can download it for free by [installing Visual Studio Community](https://www.visualstudio.com/downloads/download-visual-studio-vs). Team Explorer supports connecting to team projects hosted on either an on-premises TFS or VSTS.  
 
-Use [Team Explorer Everywhere](https://www.visualstudio.com/explore/team-explorer-everywhere-and-eclipse-vs), the Team Foundation Server plug-in for Eclipse, to connect to TFS and Team Services from Eclipse. The TFS plug-in supports version control, build, and work item tracking.  
+Use [Team Explorer Everywhere](https://www.visualstudio.com/explore/team-explorer-everywhere-and-eclipse-vs), the Team Foundation Server plug-in for Eclipse, to connect to TFS and VSTS from Eclipse. The TFS plug-in supports version control, build, and work item tracking.  
 
 
 ### Client-server support 
@@ -475,7 +475,7 @@ Use [Team Explorer Everywhere](https://www.visualstudio.com/explore/team-explore
 <div style="float:left;width:235px;margin:3px;font-size:90%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Servers</p>
 <ul style="padding-left:20px">
- <li style="margin-bottom:2px"><b>[Visual Studio Team Services](https://www.visualstudio.com/visual-studio-team-services-vs/)</b><p>Services for teams to share code, track work, and ship software €“ for any language, all in a single package. It's the perfect complement to your IDE.</p></li>
+ <li style="margin-bottom:2px"><b>[VSTS](https://www.visualstudio.com/visual-studio-team-services-vs/)</b><p>Services for teams to share code, track work, and ship software €“ for any language, all in a single package. It's the perfect complement to your IDE.</p></li>
  <li style="margin-bottom:2px"><b>[Team Foundation Server](https://www.visualstudio.com/en-us/products/tfs-overview-vs.aspx)</b><p>An enterprise-grade server for teams to share code, track work, and ship software &mdash; for any language, all in a single package. It's the perfect complement to your IDE.</p></li>    
  
 </ul>

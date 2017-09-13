@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Azure Storage with Visual Studio Team Services
+title: Azure Storage with VSTS
 description: Use Azure Storage with your VSTS account
 ms.assetid: ca016666-8e07-42a6-a6c5-09fceba179da
 ms.manager: douge
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 # Azure Storage Queue
 
 Insert a JSON string message in a storage queue in response to
-[events](../events.md) from Visual Studio Team Services.
+[events](../events.md) from VSTS.
 For example, you can insert a queue message when a work item is created or changed, or a build occurs.
 
 The storage queue provides reliable, persistent messaging within and between services.
@@ -59,7 +59,7 @@ This can be done when you create a service hook subscription.
 
 ## Create a service hook subscription
 
-1. Open the admin page for the team project in Visual Studio Team Services.
+1. Open the admin page for the team project in VSTS.
 
 2. On the **Service Hooks** tab, run the subscription wizard.
 

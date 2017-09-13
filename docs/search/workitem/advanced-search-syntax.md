@@ -1,6 +1,6 @@
 ---
-title: Advanced search options in Microsoft Work Item Search in VS Team Services
-description: Advanced options for Work Item Search in Visual Studio Team Services
+title: Advanced search options in Microsoft Work Item Search in VS VSTS
+description: Advanced options for Work Item Search in VSTS
 ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-search

@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting paid extensions trials for Visual Studio Team Services
-description: Troubleshooting paid extensions trials for Visual Studio Team Services
+title: Troubleshooting paid extensions trials for VSTS
+description: Troubleshooting paid extensions trials for VSTS
 ms.topic: get-started-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -10,7 +10,7 @@ ms.author: estfan
 ms.date: 1/13/2017
 ---
 
-# Troubleshooting paid extensions trials for Visual Studio Team Services
+# Troubleshooting paid extensions trials for VSTS
 
 **VSTS**
 

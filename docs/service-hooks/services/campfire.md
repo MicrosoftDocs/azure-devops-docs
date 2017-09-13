@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Campfire with Visual Studio Team Services
+title: Campfire with VSTS
 description: Use Campfire with your VSTS account
 ms.assetid: 38a3f329-96c5-49a2-a88d-523356c496f0
 ms.manager: douge
@@ -11,7 +11,7 @@ ms.date: 08/04/2016
 
 # Notifications and Campfire
 
-Post messages to a room in Campfire in response to events from Visual Studio Team Services.
+Post messages to a room in Campfire in response to events from VSTS.
 For example, you can post a message when a work item is created or changed, or a build occurs.
 
 ## Get a Campfire authorization token

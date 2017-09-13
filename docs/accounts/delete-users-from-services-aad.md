@@ -27,7 +27,7 @@ as the directory administrator in Azure.
 	> You can find the connected Azure AD 
 	> only through the Azure classic portal.
 
-0.  Go to **Visual Studio Team Services**. 
+0.  Go to **VSTS**. 
 Find the Azure AD that's connected to your 
 VSTS account.
 

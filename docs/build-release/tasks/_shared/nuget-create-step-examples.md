@@ -40,7 +40,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 | Build number format | ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```|
 
 
-### Publish to Visual Studio Team Services
+### Publish to VSTS
 
 Make sure you've prepared the build as described [above](#prepare).
 

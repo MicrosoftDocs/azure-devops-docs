@@ -1,6 +1,6 @@
 ---
-title: Use the Pivot Filter Control | Extensions for Visual Studio Team Services
-description: Use the pivot filter control to apply filtering on your list in your app for Visual Studio Team Services.
+title: Use the Pivot Filter Control | Extensions for VSTS
+description: Use the pivot filter control to apply filtering on your list in your app for VSTS.
 ms.assetid: 36F80097-4DB7-4C63-8E0E-8C031CF07FCE
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api

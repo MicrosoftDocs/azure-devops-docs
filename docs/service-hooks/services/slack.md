@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Slack with Visual Studio Team Services
+title: Slack with VSTS
 description: Use Slack with your VSTS account
 ms.assetid: ea948249-1053-4971-99b9-ffa820c03803
 ms.manager: douge
@@ -10,7 +10,7 @@ ms.date: 08/04/2016
 ms.topic: get-started-article
 ---
 
-# Slack with Visual Studio Team Services
+# Slack with VSTS
 
 Post messages to [Slack](https://slack.com/) in response to events in your VSTS account,
 like completed builds, code changes, and new and updated work items.
@@ -32,7 +32,7 @@ to open up the menu, and find **Apps and integrations**:
 ## Create a service hook subscription in your VSTS account
 
 1. From your VSTS account's team project page (```https://[account].visualstudio.com/[project]```), navigate to **Service Hooks** in the settings:
-<img alt="Team Services Service Hook Settings" src="./_img/slack/vsts-service-hooks.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+<img alt="VSTS Service Hook Settings" src="./_img/slack/vsts-service-hooks.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 1. Click **Create subscription** and select the Slack service.
 1. Choose the types of events you want to appear in your Slack channel.

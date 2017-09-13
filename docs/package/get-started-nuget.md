@@ -1,5 +1,5 @@
 ---
-title: Get Started with NuGet Package Management in Team Services and TFS
+title: Get Started with NuGet Package Management in VSTS and TFS
 description: Quickly start hosting NuGet packages in VSTS or Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-package
@@ -10,7 +10,7 @@ ms.author: amullans
 ms.date: 09/01/2017
 ---
 
-# Get started with NuGet Package Management in Team Services and TFS
+# Get started with NuGet Package Management in VSTS and TFS
 
 ## Before you start
 This guide assumes you've already set up Package Management. You can check out how to install and license the extension in the 

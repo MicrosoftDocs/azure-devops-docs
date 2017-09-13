@@ -37,6 +37,6 @@ You can perform the following tasks with the Hosted XML process model.
 
 <a id="hosted-xml-sequence"></a>
  
-Use the following sequences when you manage your Team Services through the Hosted XML process model. This sequence requires you to update your team project by updating the process template that it uses. We recommend that you maintain your process templates in a repository for version control.  
+Use the following sequences when you manage your VSTS through the Hosted XML process model. This sequence requires you to update your team project by updating the process template that it uses. We recommend that you maintain your process templates in a repository for version control.  
 
 [![Export process](_img/cust-wit-form-export-process.png)](../import-process/import-process.md#export-process)[![Edit XML definition file(s)](_img/cust-wit-form-edit-def-file.png)](../reference/weblayout-xml-elements.md)[![Import process](_img/cust-wit-form-import-process.png)](../import-process/import-process.md)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  

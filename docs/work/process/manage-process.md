@@ -21,7 +21,7 @@ In VSTS, you customize your team project through a process. (You configure your 
 VSTS supports two types of processes. 
 
 - ![locked icon](_img/locked-icon.png) System processes &mdash;[Scrum, Agile, and CMMI](../guidance/choose-process.md)&mdash;which are locked from being changed except by VSTS.   
-- ![inherited process icon](_img/inherited-process-icon.png) Inherited processes, which you can customize, are so named as they inherit from the system process from which they were created. Any updates Team Services makes to the parent system process will automatically update your custom inherited process.  
+- ![inherited process icon](_img/inherited-process-icon.png) Inherited processes, which you can customize, are so named as they inherit from the system process from which they were created. Any updates VSTS makes to the parent system process will automatically update your custom inherited process.  
 
 In addition, all processes are shared. That is, one or more team projects can use a single process. Instead of customizing a single team project, you customize a process. Changes made to the process automatically update all team projects that use that process. 
 

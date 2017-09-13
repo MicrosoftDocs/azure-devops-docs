@@ -19,7 +19,7 @@ Make sure to set each user's access level based on what you've purchased for tha
 
 To add user accounts or groups to specific access levels, see the following topics: 
 
-- For VSTS: [Manage users and access in Visual Studio Team Services](../accounts/add-account-users-assign-access-levels.md)
+- For VSTS: [Manage users and access in VSTS](../accounts/add-account-users-assign-access-levels.md)
 - For on-premises TFS: [Change access levels](change-access-levels.md). 
 
 When you add a user or group to a team or team project, they're automatically granted access to those features supported by the default access level, which is Basic. This provides most users all the features they need. For a simplified overview of the permissions assigned to the most common groups&#151;Readers, Contributors, and Project Administrators&#151;as well as the Stakeholder access group, see [Permissions and access](permissions-access.md).  

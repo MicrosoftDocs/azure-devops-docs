@@ -2,7 +2,7 @@
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-integrate
 title: Authorization using OAuth 2.0 | VSTS REST APIs
-description: Use OAuth 2.0 authentication to get started with the REST APIs for Visual Studio Team Services.
+description: Use OAuth 2.0 authentication to get started with the REST APIs for VSTS.
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
 ms.manager: douge
 ms.author: elbatk
@@ -15,7 +15,7 @@ Authenticate your web app's users to access the REST APIs so that your app doesn
 VSTS uses the [OAuth 2.0 protocol](http://oauth.net/2/) to authorize your app for a user and generate an access token.
 Use this token when you call the REST APIs from your app.
 
-First, you'll register your web app and get an app ID from Visual Studio Team Services.
+First, you'll register your web app and get an app ID from VSTS.
 Using that app ID, you'll send your users to VSTS to authorize your app to access their accounts there.
 Once they've done that, you'll use that authorization to get an access token for that user.
 When you call VSTS APIs on behalf of that user, you'll use that user's access token.
@@ -102,7 +102,7 @@ https://fabrikam.azurewebsites.net/myapp/oauth-callback
 
 ## Get an access and refresh token for the user
 
-Now use the authorization code to request an access token (and refresh token) for the user. This requires your service making a service-to-service HTTP request to Visual Studio Team Services.
+Now use the authorization code to request an access token (and refresh token) for the user. This requires your service making a service-to-service HTTP request to VSTS.
 
 ### URL
 ```no-highlight

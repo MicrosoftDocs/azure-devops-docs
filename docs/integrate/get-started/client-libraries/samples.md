@@ -1,5 +1,5 @@
 ---
-title: .NET Client Library Samples for Visual Studio Team Services
+title: .NET Client Library Samples for VSTS
 description: C# samples showing how to integrate with VSTS and Team Foundation Server from apps and services on Windows.
 ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
 ms.prod: vs-devops-alm
@@ -202,7 +202,7 @@ public static void MixedSample()
 }
 ```
 
-## Authenticating (Visual Studio Team Services)
+## Authenticating (VSTS)
 
 ### Creating a VssConnection instance to get HttpClients for REST services
 

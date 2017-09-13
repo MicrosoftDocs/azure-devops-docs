@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Contributions Model Fundamentals | Extensions for Visual Studio Team Services
+title: Contributions Model Fundamentals | Extensions for VSTS
 description: Overview of the contribution model, including an overview of contributions, types, and targeting other contributions
 ms.assetid: 96509f47-bac2-4319-9085-2621ff8f814a
 ms.manager: douge

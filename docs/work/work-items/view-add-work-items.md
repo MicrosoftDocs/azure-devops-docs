@@ -1,5 +1,5 @@
 ---
-title: View and add work items | Team Services  
+title: View and add work items | VSTS  
 description: View and add work items using the work items page      
 ms.technology: vs-devops-wit
 ms.prod: vs-devops-alm
@@ -15,7 +15,7 @@ ms.date: 08/18/2017
 **VSTS**  
 
 >[!NOTE]   
-><b>Feature availability: </b>The **Work Items** page is in preview and currently available from Team Services only. 
+><b>Feature availability: </b>The **Work Items** page is in preview and currently available from VSTS only. 
 
 We have launched the preview of the new **Work Items** page under the **Work** hub in your VSTS account. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile. 
 

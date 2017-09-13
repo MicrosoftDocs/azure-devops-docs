@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-  - name: "What is Visual Studio Team Services?"
+  - name: "What is VSTS?"
     href: what-is-vsts.md
   - name: "What is Team Foundation Server?"
     href: what-is-tfs.md
@@ -88,7 +88,7 @@
     href: https://code.visualstudio.com/docs
   - name: Visual Studio for Mac
     href: https://docs.microsoft.com/visualstudio/mac
-  - name: Account Management (Team Services)
+  - name: Account Management (VSTS)
     href: ../accounts/index.md
   - name: "Security & Identity"
     href: ../security/index.md

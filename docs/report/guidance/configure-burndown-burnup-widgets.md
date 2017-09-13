@@ -1,5 +1,5 @@
 ---
-title: Configure Bundown/Burnup widgets | Team Services & TFS  
+title: Configure Bundown/Burnup widgets | VSTS & TFS  
 description: Configure a Burndown or Burnup widget that you add to a dashboard to track progress across one or more teams 
 ms.technology: vs-devops-agile-wit
 ms.prod: vs-devops-alm

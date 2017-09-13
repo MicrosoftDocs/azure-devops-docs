@@ -1,5 +1,5 @@
 ---
-title: Manage users and access user hub Visual Studio Team Services
+title: Manage users and access user hub VSTS
 description: Add users and assign access levels in user hub VSTS 
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-setup
@@ -9,7 +9,7 @@ ms.author: estfan
 ms.date: 4/17/2017
 ---
 
-#	Manage users in user hub table view for Visual Studio Team Services
+#	Manage users in user hub table view for VSTS
 
 **VSTS Streamlined User Management Preview**
 

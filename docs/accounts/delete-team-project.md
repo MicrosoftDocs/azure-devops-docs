@@ -19,7 +19,7 @@ If you find that you have a team project you no longer use, you can delete it. D
 
 You can delete a team project from VSTS or from an on-premises deployment of Team Foundation Server (TFS).
 
-## Delete a team project from Visual Studio Team Services
+## Delete a team project from VSTS
 
 1.  Open the administration context for the team project collection by choosing the ![gear icon image](_img/delete-team-project/ic623347.png) gear icon.  
 

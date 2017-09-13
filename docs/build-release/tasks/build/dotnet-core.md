@@ -192,7 +192,7 @@ None
         <td>
             <ul>
                 <li>**This account/collection** publishes to a Package Management feed in the same account/collection as the build. After you select this option, select the target feed from the dropdown.
-                    <ul><li>"Allow duplicates to be skipped" allows you to continually publish a set of packages and only change the version number of the subset of packages that changed. It allows the task to report success even if some of your packages are rejected with 409 Conflict errors. <br />This option is currently only available on Visual Studio Team Services.
+                    <ul><li>"Allow duplicates to be skipped" allows you to continually publish a set of packages and only change the version number of the subset of packages that changed. It allows the task to report success even if some of your packages are rejected with 409 Conflict errors. <br />This option is currently only available on VSTS.
                     </li></ul>
                 </li>
                 <li>**External NuGet server (including other accounts/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or a Package Management feed in another VSTS account or TFS collection. After you select this option, you create and select a [NuGet service endpoint](../../concepts/library/service-endpoints.md#sep-nuget).

@@ -114,7 +114,7 @@ When a group is specified as an approver, only one of
 the users in that group needs to approve in order for the release
 to move forward.
 
-* If you are using **Visual Studio Team Services** (VSTS), you
+* If you are using **VSTS** (VSTS), you
   can use local groups managed in VSTS or
   Azure Active Directory (AAD) groups if they have been
   added into VSTS.

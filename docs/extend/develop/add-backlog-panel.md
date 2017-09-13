@@ -1,5 +1,5 @@
 ---
-title: Add panels on backlog pages | Extensions for Visual Studio Team Services
+title: Add panels on backlog pages | Extensions for VSTS
 description: Extend VSTS with panels on backlogs.
 ms.assetid: 34f01da42-5a98-4bc5-981e-3f8d1ffdf163
 ms.prod: vs-devops-alm
@@ -32,7 +32,7 @@ There are three types of backlogs that can be targets for panel extensions: Port
 
 ![backlog panel contribution point breakdown](_img/add-panel-show-three-types.png)
 
-See the [Team Services Extension Samples](https://github.com/Microsoft/vsts-extension-samples/tree/master/backlogs-panel) on GitHub for the full source of an example extension.
+See the [VSTS Extension Samples](https://github.com/Microsoft/vsts-extension-samples/tree/master/backlogs-panel) on GitHub for the full source of an example extension.
 
 ## Update your extension manifest
 

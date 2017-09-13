@@ -1,5 +1,5 @@
 ---
-title: Extend the work item form | Extensions for Visual Studio Team Services
+title: Extend the work item form | Extensions for VSTS
 description: Describes how to extend work item tracking, including adding an action, an observer, a group or a page to the work item form.
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
 ms.prod: vs-devops-alm
@@ -22,7 +22,7 @@ You can now customize how the work item form is presented to users via contribut
 
 If you are just getting started and haven't created an extension, refer to the [Create your first extension with Visual Studio](../get-started/visual-studio.md). 
 
-See the **UI** example in the [Team Services Extension Samples](https://github.com/Microsoft/vso-extension-samples/tree/master/ui) on GitHub for the full source.
+See the **UI** example in the [VSTS Extension Samples](https://github.com/Microsoft/vso-extension-samples/tree/master/ui) on GitHub for the full source.
 
 <a name="addagroup"></a>
 ## Add a group

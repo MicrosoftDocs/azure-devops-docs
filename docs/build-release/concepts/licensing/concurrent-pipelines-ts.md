@@ -1,5 +1,5 @@
 ---
-title: Concurrent pipelines in Visual Studio Team Services
+title: Concurrent pipelines in VSTS
 description: Build and Release Management concurrent pipelines pricing and availability in Visual Studio Team Services (VSTS)
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.prod: vs-devops-alm
@@ -8,14 +8,14 @@ ms.manager: douge
 ms.author: alewis
 ms.date: 10/20/2016
 ---
-# Concurrent build and release pipelines in Visual Studio Team Services
+# Concurrent build and release pipelines in VSTS
 
 **[TFS 2017](concurrent-pipelines-tfs.md) | VSTS**
 
 > [!NOTE]
-> August 2017 update: We’re temporarily providing unlimited private pipelines while we work on fixing an issue. We estimate that we'll fix the issue and return to providing only the private pipelines you have sometime in September 2017.
+> August 2017 update: Weï¿½re temporarily providing unlimited private pipelines while we work on fixing an issue. We estimate that we'll fix the issue and return to providing only the private pipelines you have sometime in September 2017.
 
-A VSTS _concurrent pipeline_ gives you the ability to run a single build or a single release at a time in your account. There are two types of concurrent pipelines in Visual Studio Team Services.
+A VSTS _concurrent pipeline_ gives you the ability to run a single build or a single release at a time in your account. There are two types of concurrent pipelines in VSTS.
 
 ## Private pipelines
 

@@ -21,7 +21,7 @@ VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}
 
 > Tip: To avoid having your app or service broken as APIs evolve, specify an [API version](#versions) on every request.
 
-## Visual Studio Team Services
+## VSTS
 
 For VSTS, `instance` is `{account}.visualstudio.com` and `collection` is `DefaultCollection`,
 so the pattern looks like this:

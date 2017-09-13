@@ -32,7 +32,7 @@ Imagine that you commit a large file, such as a video, to your git server. In a 
 
 > [!IMPORTANT]
 > The following steps will remove the video from your branch history,
-> but the file remains in your repo history when you clone your repo from Team Services. Removing the files from your branch history prevents the files from being updated, which will
+> but the file remains in your repo history when you clone your repo from VSTS. Removing the files from your branch history prevents the files from being updated, which will
 > create another version of the large file in your repo. Learn more about [managing large files in Git](../git/manage-large-files.md) and 
 > see this [blog post](https://blogs.msdn.microsoft.com/congyiw/2015/12/14/why-does-cloning-from-vsts-return-old-unreferenced-objects/) for a detailed explanation and workaround for this behavior 
 > when using VSTS Git repos.
@@ -113,7 +113,7 @@ __Use with caution, as you can easily lose data on the server!!__
 
 *Notice that you must authenticate to the server for this to work*
 
-If you are using Visual Studio Team Services, you may need to set up an alternate credential that doesn't use special characters (such as the "@" in an email address). To do this, follow the instructions [here](https://www.visualstudio.com/get-started/code/share-your-code-in-git-eclipse#pat).
+If you are using VSTS, you may need to set up an alternate credential that doesn't use special characters (such as the "@" in an email address). To do this, follow the instructions [here](https://www.visualstudio.com/get-started/code/share-your-code-in-git-eclipse#pat).
 
 Now, the branch will be permanently gone from the server, and subsequent clones and syncs by project team members will not download the large files we were trying to remove.  Users will need to pull down from the server in order to make sure that they are in sync with the new server repo state.
 

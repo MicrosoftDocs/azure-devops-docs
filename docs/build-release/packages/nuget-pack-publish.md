@@ -12,7 +12,7 @@ ms.date: 09/01/2017
 
 # Publish NuGet packages from Team Build to Package Management
 
-**Team Services | TFS 2017**
+**VSTS | TFS 2017**
 
 This walkthrough will cover packing and publishing .NET Framework NuGet packages from Package Management feeds. It assumes that you've already:
 

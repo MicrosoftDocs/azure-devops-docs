@@ -1,6 +1,6 @@
 ---
-title: TreeView Control | Extensions for Visual Studio Team Services
-description: Use the treeview to display hierarchical data in your app for Visual Studio Team Services.
+title: TreeView Control | Extensions for VSTS
+description: Use the treeview to display hierarchical data in your app for VSTS.
 ms.assetid: 20DE4AA3-3B76-CAAF-0683-81F85BDE4F39
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api

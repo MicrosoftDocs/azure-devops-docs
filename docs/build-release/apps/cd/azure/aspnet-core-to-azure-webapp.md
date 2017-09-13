@@ -64,7 +64,7 @@ https://github.com/adventworks/dotnetcore-sample
 
    ![Starting Continuous Delivery configuration](_img/aspnet-core-to-azure-webapp/continuous-delivery-intro.png)
 
-1. Select **Choose repository** and select **Visual Studio Team Services** for the code repository. Select the project, repository, and branch into which your imported the sample code. When you're done, choose **OK**.
+1. Select **Choose repository** and select **VSTS** for the code repository. Select the project, repository, and branch into which your imported the sample code. When you're done, choose **OK**.
 
    ![Configuring the source code repository](_img/aspnet-core-to-azure-webapp/continuous-delivery-repository.png)
 

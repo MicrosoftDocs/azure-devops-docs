@@ -29,10 +29,10 @@ Representational State Transfer (REST) APIs are service endpoints that support s
 A REST API request/response pair can be separated into five components:
 
 1. The **request URI**, in the following form: `VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}`
-    * *instance*: The Team Services account or TFS server you're sending the request to. They are structured as follows,
-        * Team Services: `{account}.visualstudio.com`
+    * *instance*: The VSTS account or TFS server you're sending the request to. They are structured as follows,
+        * VSTS: `{account}.visualstudio.com`
         * TFS: `server:port` (the default port is 8080)
-    * *collection*: The value for collection should be `DefaultCollection` for both TFS and Team Services.
+    * *collection*: The value for collection should be `DefaultCollection` for both TFS and VSTS.
     * *resource path*: The collection should be followed by `_apis/{area}/{resource}`. For example `_apis/wit/workitems`.
     * *api-version*: Every API request should include an api-version to avoid having your app or service break as APIs evolve. api-versions are in the following format: `{major}.{minor}[-{stage}[.{resource-version}]], for example:
         * `api-version=1.0`
@@ -58,7 +58,7 @@ A REST API request/response pair can be separated into five components:
 
 ### Authenticate 
 
-There are many ways to authenticate your application or service with Team Services or TFS. The following table is an excellent way to decide which method is the best for you:
+There are many ways to authenticate your application or service with VSTS or TFS. The following table is an excellent way to decide which method is the best for you:
 
 | Type of application | Description | example |Authentication mechanism | Code samples |
 |---------------------|-------------|---------|-------------------------|--------|
@@ -74,9 +74,9 @@ There are many ways to authenticate your application or service with Team Servic
 
 ### Assemble the request
 
-**Team Services**
+**VSTS**
 
-For Team Services, *instance* is `{account}.visualstudio.com` and *collection* is `DefaultCollection`, so the pattern looks like this:
+For VSTS, *instance* is `{account}.visualstudio.com` and *collection* is `DefaultCollection`, so the pattern looks like this:
 
 ```
 VERB https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?api-version={version}

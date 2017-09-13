@@ -1,5 +1,5 @@
 ---
-title: Manage how long to keep test results in Visual Studio Team Services
+title: Manage how long to keep test results in VSTS
 description: Manage how long VSTS keeps you test results
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-test-manual

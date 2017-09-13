@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Static Content Hosting for Extension Content | Extensions for Visual Studio Team Services
+title: Static Content Hosting for Extension Content | Extensions for VSTS
 description: Options for hosting static content required by your extension.
 ms.assetid: 0bf474c9-1511-4889-9d91-fc954abdcd6a
 ms.manager: douge
@@ -13,11 +13,11 @@ ms.date: 08/04/2016
 
 You have the option of hosting static content for your extension (like HTML, CSS, and JavaScript files) on your own service, a third-party hosting service (like Azure or Heroku), or on VSTS directly.
 
-## Host on Visual Studio Team Services
+## Host on VSTS
 
 In this model, static content is packaged with your extension's .vsix file and is served from a public endpoint at `https://publisher.gallery.vsassets.io`. 
 
-Having VSTS host your extension's static content is useful when you are simply enhancing or decorating data from Visual Studio Team Services. It does not require you (the extension publisher) to setup, manage, or pay for hosting services for your extension
+Having VSTS host your extension's static content is useful when you are simply enhancing or decorating data from VSTS. It does not require you (the extension publisher) to setup, manage, or pay for hosting services for your extension
 
 ### Steps
 
@@ -48,7 +48,7 @@ Keep in mind:
 * The `addressable` attribute is important and is what tells Visual Studio Online to make the file(s) URL addressable.
 * All `addressable` asset requests are case sensitive. If the request for an asset has a different case than the actual uploaded asset, it will 
 result in a HTTP 404 (Not found) error.
-* Not specifying a baseUri (or setting an empty value) tells Visual Studio Online at runtime to calculate the base URI as if your static content is hosted by Visual Studio Team Services.
+* Not specifying a baseUri (or setting an empty value) tells Visual Studio Online at runtime to calculate the base URI as if your static content is hosted by VSTS.
 
 ## Host on your own service (or a third-party service)
 

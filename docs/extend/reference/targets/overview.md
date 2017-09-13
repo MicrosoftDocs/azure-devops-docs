@@ -1,7 +1,7 @@
 ---
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
-title: Extension Points | Extensions for Visual Studio Team Services
+title: Extension Points | Extensions for VSTS
 description: Browse through the places where your extension can extend Visual Studio Online.
 ms.assetid: 007954b7-9424-4ea6-916b-8cb2f215f5c4
 ms.manager: douge
@@ -11,7 +11,7 @@ ms.date: 08/26/2016
 
 # Extension points
 
-This reference is designed to show where extensions can contribute new capabilities into Visual Studio Team Services.
+This reference is designed to show where extensions can contribute new capabilities into VSTS.
 An understanding of two key concepts: contributions and contribution types, is recommended.
 See [contribution model](../../develop/contributions-overview.md) for an overview.
 

@@ -12,9 +12,9 @@ ms.topic: get-started-article
 
 # Collaborate more and build faster with packages
 
-**Team Services | TFS 2017**
+**VSTS | TFS 2017**
 
-*If you're familiar with componentization and composition, you can learn more about [Package Management in Team Services and TFS](overview.md).*
+*If you're familiar with componentization and composition, you can learn more about [Package Management in VSTS and TFS](overview.md).*
 
 Your product is successful, your organization is growing, and it’s time to scale up your codebase to match. As you scale out past 2-3 teams working in a single codebase on a single product, you may find yourself asking questions like:
 - How do my teams effectively share reusable components?

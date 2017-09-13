@@ -18,7 +18,7 @@ You add work items to plan and manage your project. You use different types of w
 
 <a id="define-new-work">  </a>
 ## Add a work item 
-You can start adding work items once you connect to a team project. If you don't have an account or  team project yet, create one in [Visual Studio Team Services](sign-up-invite-teammates.md).
+You can start adding work items once you connect to a team project. If you don't have an account or  team project yet, create one in [VSTS](sign-up-invite-teammates.md).
 
 Here we show how to add work items from the web portal. 
 
@@ -30,7 +30,7 @@ Here we show how to add work items from the web portal.
 
 2.	From the **Work** hub, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
-	<img src="../work/backlogs/_img/add-work-items-choose-user-story.png" alt="Team Services, TFS 2017, Work hub, Add a work item" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../work/backlogs/_img/add-work-items-choose-user-story.png" alt="VSTS, TFS 2017, Work hub, Add a work item" style="border: 2px solid #C3C3C3;" /> 
 
 3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 

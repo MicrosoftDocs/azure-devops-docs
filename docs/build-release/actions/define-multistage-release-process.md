@@ -1,6 +1,6 @@
 ---
 title: Define a multi-stage CD release process | VSTS Tutorial
-description: Define a multi-stage continuous deployment (CD) process for your ASP.NET Core app using Visual Studio Team Services
+description: Define a multi-stage continuous deployment (CD) process for your ASP.NET Core app using VSTS
 services: vsts
 documentationcenter: ''
 author: ahomer

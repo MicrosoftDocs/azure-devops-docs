@@ -73,7 +73,7 @@ If you want to restrict access, then you'll want to follow these steps:
 
    The **Manage Groups** tab is available only when you are connected to 
    Release Management Server. You cannot add groups when you are connected
-   to Visual Studio Team Services.
+   to VSTS.
 
 1. On the **Security** tab, select the permissions that you want to enable 
    for this group. 

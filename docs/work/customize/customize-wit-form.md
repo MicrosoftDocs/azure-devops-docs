@@ -35,7 +35,7 @@ Use this sequence when you use the On-premises XML process model, i.e., you mana
 [![Export WIT definition file](_img/cust-wit-form-export-def-file.png)](#witadmin)[![Edit XML definition file](_img/cust-wit-form-edit-def-file.png)](../reference/weblayout-xml-elements.md)[![Import WIT definition file](_img/cust-wit-form-import-def-file.png)](#witadmin)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
 
 ### Import/export process zip files 
-Use this sequence when you use the Hosted XML process model, i.e., you manage your Team Services work tracking customization by importing a process or process template. 
+Use this sequence when you use the Hosted XML process model, i.e., you manage your VSTS work tracking customization by importing a process or process template. 
 
 [![Export process](_img/cust-wit-form-export-process.png)](../import-process/import-process.md#export-process)[![Edit XML definition file(s)](_img/cust-wit-form-edit-def-file.png)](../reference/weblayout-xml-elements.md)[![Import process](_img/cust-wit-form-import-process.png)](../import-process/import-process.md)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
 
