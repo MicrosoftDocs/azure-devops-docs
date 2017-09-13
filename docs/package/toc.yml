@@ -82,7 +82,7 @@
       href: npm/scopes.md
   - name: Use Maven packages
     items:
-    - name: Set up your client's pom and settings .XML
+    - name: Set up authentication
       href: ./maven/pom-and-settings.md
     - name: Publish a Maven project
       href: ./maven/publish.md

@@ -1,6 +1,6 @@
 ---
-title: Build extensions content index for VSTS and TFS  
-description: Index of building extensions for VSTS and Team Foundation Server
+title: Develop extensions content index for VSTS and TFS  
+description: Index of developing extensions for VSTS and Team Foundation Server
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-extensions-api
 ms.assetid: 153aa519-6233-4292-8eac-44de15f2d3dd
@@ -9,7 +9,7 @@ ms.author: elbatk
 ms.date: 08/23/2016
 ---
 
-# Build Extensions
+# Develop Extensions
 
 Extensions are simple add-ons that can be used to customize and extend your DevOps experience with Visual Studio Team Services (VSTS). They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.
 

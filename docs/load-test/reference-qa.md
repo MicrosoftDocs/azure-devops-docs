@@ -125,6 +125,16 @@ To check how many virtual user minutes that your VSTS account
 has used or has remaining, go to your VSTS account home page 
 (```https://{youraccount}.visualstudio.com```).
 
+<a name="iterations"></a>
+### Q: I'm running load tests using test iterations. How is load test duration determined?
+
+**A**: When load tests are configured to run using test iterations, the test duration cannot be
+determined when the test run starts. In such cases, the load test run assumes the maximum duration
+of 48 hours. If the test iterations complete in this time, the duration used for calculating the
+virtual user minutes consumed by your load test is the actual duration for which the test ran.
+If the test iterations do not complete in 48 hours, the load test will be stopped after 48 hours
+and virtual user minutes will be charged accordingly.
+
 <a name="test-limits"></a>
 ### Q: Are there any limits when running the cloud-based load tests?
 
