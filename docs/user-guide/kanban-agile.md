@@ -1,5 +1,5 @@
 ---
-title: Kanban and Agile tools | Team Services & TFS
+title: Kanban and Agile tools | VSTS & TFS
 description: Understand the Agile tools supported in VSTS and TFS 
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
@@ -11,7 +11,7 @@ ms.date: 07/19/2017
 
 # Kanban and Agile tools 
 
-<b>Team Services | TFS 2017 | TFS 2015  | TFS 2013</b> 
+<b>VSTS | TFS 2017 | TFS 2015  | TFS 2013</b> 
 
 **NEW - To Be Completed**
 

@@ -1,5 +1,5 @@
 ---
-title: Sign up and invite teammates | Team Services  
+title: Sign up and invite teammates | VSTS  
 description: Quickstart guide to signing up and inviting others to join a team project in VSTS 
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
@@ -53,7 +53,7 @@ To manage your code, choose Git or Team Foundation Version Control.
 
 	<img src="../accounts/_img/sign-up-visual-studio-team-services/check-account-location-standard.png" alt="Rename team project, change account location, or select another process" style="border: 2px solid #C3C3C3;" /> 
 	
-	Team Services will create your first team project as "MyFirstProject" 
+	VSTS will create your first team project as "MyFirstProject" 
 	and will use Agile as your default work item process to organize your work. 
 	Choose **Change details** to 
 	rename your team project, change the account location, or select another process, like Scrum.

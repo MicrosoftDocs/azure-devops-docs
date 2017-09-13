@@ -26,7 +26,7 @@ Here we show how to add work items from the web portal.
 
 	The URL follows this pattern: ```https://{account name}.visualstudio.com/{project name}/_backlogs```  
 
-	If you don't see the team or team project you want, click the ![Team Services icon](../work/_img/icons/project-icon.png) Team Services icon to [browse all team projects and teams](../connect/account-home-pages.md).  
+	If you don't see the team or team project you want, click the ![VSTS icon](../work/_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../connect/account-home-pages.md).  
 
 2.	From the **Work** hub, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
