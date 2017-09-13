@@ -85,9 +85,6 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
  Select your version control repository. You'll need to authorize access to your repo.
 
- [//]: # (TODO:> [!TIP])
- [//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
-
  ---
 
 1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
@@ -95,6 +92,9 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 1. Click **Save and queue** to kick off your first build. On the **Queue build** dialog box, click **Queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
+
+ [//]: # (TODO:> [!TIP])
+ [//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
 
 ## View the build summary
 
