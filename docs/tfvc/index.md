@@ -24,7 +24,7 @@ Get started by creating a team project, configuring your workspace, and reviewin
 
 <!--- All images are Placeholder --> 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
-<div class="ico48Case halfStack"><div class="ico48Link"><a href="share-your-code-in-tfvc-vs.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="share-your-code-in-tfvc-xcode.md"><img width="48" height="48" alt="" src="_img/index/xcode.png"><span>Xcode</span></a></div><div class="ico48Link"><a href="share-your-code-in-tfvc-eclipse.md"><img width="48" height="48" alt="" src="_img/index/eclipse.png"><span>XCode</span></a></div></div>
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="share-your-code-in-tfvc-vs.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="share-your-code-in-tfvc-xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div><div class="ico48Link"><a href="share-your-code-in-tfvc-eclipse.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div></div>
 
 
 ## Step-by-Step Tutorials  
