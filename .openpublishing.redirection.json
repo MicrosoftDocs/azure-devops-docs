@@ -1,6 +1,7 @@
 {
-    "redirections": [
-	    {
+    "redirections": 
+	[
+        {
             "source_path": "docs/test-redirect.md",
             "redirect_url": "/vsts/work/scrum/index",
             "redirect_document_id": false
@@ -2214,11 +2215,13 @@
             "source_path": "docs/service-hooks/integrate.md",
             "redirect_url": "/vsts/service-hooks/overview",
             "redirect_document_id": false
-        },        {
+        },
+        {
             "source_path": "docs/tfvc/team-projects.md",
             "redirect_url": "/vsts/git/team-projects",
             "redirect_document_id": false
-        },        {
+        },
+        {
             "source_path": "docs/whats-new.md",
             "redirect_url": "/vsts/release-notes/index",
             "redirect_document_id": false
