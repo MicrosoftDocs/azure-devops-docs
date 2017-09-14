@@ -21,14 +21,6 @@ easy-to-create actionable bugs for regressions and
 the ability to create and display code coverage 
 with a simple checkbox. 
 
-In this topic:
-
-* [Build integration](#build-integration)
-* [Build-on-build summary results](#summary-results)
-* [Test details view](#test-details)
-* [Easily create actionable bugs](#actionable)
-* [Code coverage results](#code-coverage)
-
 [See this topic on Channel9 video](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/Testing-Java-Applications-with-Visual-Studio-Team-Services)
 
 <a name="build-integration"></a>

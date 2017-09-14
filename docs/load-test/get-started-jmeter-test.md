@@ -20,7 +20,7 @@ Before you start:
 
 **To run a JMeter load test:**
 
-1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
+1. Sign in to your VSTS account (**https://**your-account-name**.visualstudio.com**).
 
 1. Go to the **Load Test** hub, open the **+ New**
    menu and choose **Apache JMeter test**.

@@ -7,7 +7,7 @@ ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/29/2017
+ms.date: 09/14/2017
 ---
 
 #   Update code with fetch and pull
@@ -60,7 +60,7 @@ After running `git fetch you'll see results similar to the following example:
 ```
 remote: Found 3 objects to send. (9 ms)
 Unpacking objects: 100% (3/3), done.
-   e2ccee6..55b26a5  feature1   -&gt; origin/feature1
+   e2ccee6..55b26a5  feature1   -> origin/feature1
 ```
 
 ---
