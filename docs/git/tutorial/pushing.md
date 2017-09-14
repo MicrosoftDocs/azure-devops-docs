@@ -7,7 +7,7 @@ ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/29/2017
+ms.date: 09/14/2017
 ---
 
 #  Share code with push
@@ -68,7 +68,7 @@ remote: Storing index... done (53 ms)
 If the remote branch doesn't exist, run the following to create a remote branch on `origin`.
 
 ```
-git push -u origin <font color="#b5bd68">users/frank/bugfix
+git push -u origin users/frank/bugfix
 ```
 
 Your commits on your local branch are added to the branch on `origin`, and a upstream tracking relationship will be set up in

@@ -7,7 +7,7 @@ ms.technology: vs-devops-git
 ms.topic: get-started-article
 ms.manager: douge
 ms.author: sdanie
-ms.date: 08/29/2017
+ms.date: 09/14/2017
 ---
 
 #  Create work in branches  
@@ -73,7 +73,7 @@ Use the `branch` command to create the branch and `checkout` to swap to that bra
  
 ```
 git branch feature1
-git feature1
+git checkout feature1
 ```
 
 ---
