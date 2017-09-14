@@ -384,8 +384,8 @@ You can pass environment variables of the build machine into build steps. For ex
                     <li style="font-size:80%">`IndividualCI`: **Continuous integration (CI)** triggered by a Git push or a TFVC check-in.</li>
                     <li style="font-size:80%">`BatchedCI`: **Continuous integration (CI)** triggered by a Git push or a TFVC check-in, and the **Batch changes** was selected.</li>
                     <li style="font-size:80%">`Schedule`: **Scheduled** trigger.</li>
-                    <li style="font-size:80%">`ValidateShelveset`: **Gated check-in** trigger.</li>
-                    <li style="font-size:80%">`CheckInShelveset`: A user manually queued the build of a specific TFVC shelveset.</li>
+                    <li style="font-size:80%">`ValidateShelveset`: A user manually queued the build of a specific TFVC shelveset.</li>
+                    <li style="font-size:80%">`CheckInShelveset`: **Gated check-in** trigger.</li>
                     <li style="font-size:80%">`PullRequest`: The build was triggered by a Git branch policy that requires a build.</li>
                 </ul>
                 <p style="font-size:80%">See [Build definition triggers](triggers.md), [Improve code quality with branch policies](../../../../git/branch-policies.md).</p>
