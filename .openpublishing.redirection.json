@@ -1067,7 +1067,7 @@
         },
         {
             "source_path": "docs/package/get-started/nuget/auth.md",
-            "redirect_url": "/vsts/package/nuget/auth",
+            "redirect_url": "/vsts/package/nuget/nuget-exe",
             "redirect_document_id": false
         },
         {
@@ -1097,7 +1097,7 @@
         },
         {
             "source_path": "docs/package/get-started/nuget/remove.md",
-            "redirect_url": "/vsts/package/nuget/remove",
+            "redirect_url": "/vsts/package/nuget/unlist-delete",
             "redirect_document_id": false
         },
         {
@@ -2214,6 +2214,15 @@
             "source_path": "docs/service-hooks/integrate.md",
             "redirect_url": "/vsts/service-hooks/overview",
             "redirect_document_id": false
-        }		
+        },        {
+            "source_path": "docs/tfvc/team-projects.md",
+            "redirect_url": "/vsts/git/team-projects",
+            "redirect_document_id": false
+        },        {
+            "source_path": "docs/whats-new.md",
+            "redirect_url": "/vsts/release-notes/index",
+            "redirect_document_id": false
+        }
+		
     ]
 }
