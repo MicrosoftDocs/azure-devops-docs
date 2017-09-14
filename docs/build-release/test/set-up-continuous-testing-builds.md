@@ -15,13 +15,13 @@ ms.date: 06/15/2017
 
 Find problems early after changes are checked in and built by running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).
 
-Before you start:
+## Before you start
 
 * [Create a build definition](../../build-release/overview.md) that builds your solution after each check-in, using continuous integration.
 
 * [Set up environments](set-up-continuous-test-environments-builds.md) to run your app and tests remotely in a distributed environment after each build.
 
-## Step 1: Set up app deployment for your build
+## Set up app deployment for your build
 
 1. In VSTS or TFS, go to your team project.
 
@@ -67,7 +67,7 @@ Before you start:
 
    ![Build definition: save](_img/set-up-continuous-testing-builds/save-build-definition.png)
 
-## Step 2: Set up test deployment for your build
+## Set up test deployment for your build
 
 1. In your build definition, add a step with these details to deploy your tests:
 
@@ -95,7 +95,7 @@ Before you start:
 
    ![Build definition: save](_img/set-up-continuous-testing-builds/save-build-definition.png)
 
-## Step 3: Set up your tests to run with your build
+## Set up your tests to run with your build
 
 1. In your build definition, add a step with these details to run your tests with the test agent:
 

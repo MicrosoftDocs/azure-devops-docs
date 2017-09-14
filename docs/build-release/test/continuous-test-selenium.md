@@ -16,7 +16,7 @@ ms.date: 06/15/2017
 
 Performing user interface testing as part of the
 build process is a great way of detecting
-unexpected changes and need not be difficult. This
+unexpected changes, and need not be difficult. This
 topic describes using Selenium to test your website
 in a continuous integration build.
 
@@ -59,7 +59,9 @@ from Visual Studio Test Explorer.
 1. The Unit Test project creates a default class
    named **UnitTest1.cs**. To author a Selenium Test,
    replace the contents of the file with the following
-   code.
+   code. You'll need to insert your own website URL in
+   the **baseURL** variable, and change the **driver**
+   assignment if you are not using the Firefox browser.
 
    ```csharp
    namespace Partsunlimited.UITests
@@ -133,7 +135,7 @@ the source code must be in version control.
 
 1. In the new build definition, select the **Default** agent queue in which you have installed an agent.
    If you have not installed an agent in the **Default** queue, choose the
-   **manage queues** link and do that now. For information, see
+   **Manage** link and do that now. For more information, see
    [Deploy a Windows build agent](../actions/agents/v2-windows.md).
    You might decide to [create an Azure VM](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal)
    to install your agent, or use a [deployment group](../concepts/definitions/release/deployment-groups/index.md)

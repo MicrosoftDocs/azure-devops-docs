@@ -194,7 +194,7 @@ a simple load test to validate the deployment.
 
 1. Open the **Load test** tab of the **Test** hub. This shows a summary of all 
    the load test runs you have executed. Open the **LoadTest.loadtest** run that
-   was just completed, 
+   was just completed.
 
    ![Viewing all the load test runs](_img/example-continuous-testing/example-continuous-testing-53.png)
 

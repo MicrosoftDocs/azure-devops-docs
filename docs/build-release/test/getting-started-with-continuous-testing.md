@@ -21,26 +21,15 @@ automatically with each build. When your build is
 done, review your test results to start resolving 
 the problems that you find.
 
+This quickstart shows how to run unit tests with your build
+for .NET and ASP.NET apps. It uses the
+[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md) task. 
+
 <a name="beforestart"></a>
 ## Before you start
 
-This overview shows how to run unit tests with your build
-for .NET and ASP.NET apps. It uses the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md) task. 
-
-1. [Check in your solution](../../tfvc/overview.md) 
-   to VSTS. Include your test projects.
-
-1. [Create a build definition](../overview.md) 
-   that builds your solution after each check-in, 
-   using continuous integration.
-
-When you're ready to 
-[run other continuous tests](#runothertests), such as 
-system tests, under more realistic conditions, 
-create environments from physical or virtual 
-machines that you've already set up. Then set up 
-your build to run your app and tests in the 
-environments that you created.
+* [Check in your solution](../../git/overview.md) 
+  to VSTS. Include your test projects.
 
 <a name="createbuild"></a>
 ## Create a build definition
