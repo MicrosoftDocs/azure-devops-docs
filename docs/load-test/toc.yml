@@ -42,6 +42,8 @@
     href: https://msdn.microsoft.com/library/ff460245%28v=vs.140%29.aspx
   - name: "Create custom code & plug-ins"
     href: https://msdn.microsoft.com/library/ee923683%28v=vs.140%29.aspx
+  - name: Web Performance Test API
+    href: https://msdn.microsoft.com/library/ms182558.aspx
   - name: Posts on the ALM blog
     href: https://social.msdn.microsoft.com/Search/en-US?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
   - name: Manual and exploratory testing
