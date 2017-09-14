@@ -14,9 +14,6 @@ ms.date: 08/07/2017
 
 <b>VSTS | TFS 2018 | TFS 2017</b> 
 
-
->[!IMPORTANT]   
-><b>Feature availability: </b>The new work item  experience is currently available from VSTS and the web portal for TFS 2017. This topic describes how to track work using the new form. If you don't see the new form, [your admin may need to enable it](../customize/manage-new-form-rollout.md), or if it's enabled, [you may need to switch to use it](../process/new-work-item-experience.md#switch-new) 
 <!---
 >If you connect to TFS 2015 or earlier versions, see [Add work items to plan and track your project (TFS)](add-work-items-tfs.md).  
 -->
@@ -29,15 +26,10 @@ You can start adding work items once you connect to a team project. If you don't
 
 Here we show how to add work items from the web portal. 
 
-1.  Open a browser window and click the **Work** hub. If you haven't been added as a team member, [get added now](../scale/multiple-teams.md#add-team-members).
+>[!IMPORTANT]   
+><b>Feature availability: </b>The new work item  form is available from VSTS and TFS 2017 and later versions. This topic describes how to track work using the new form. If you don't see the new form, [your admin may need to enable it](../customize/manage-new-form-rollout.md), or if it's enabled, [you may need to switch to use it](../process/new-work-item-experience.md#switch-new). 
 
-	The URL follows this pattern: 
-	- VSTS: ```https://{account name}.visualstudio.com/{project name}/_backlogs```  
-	- Team Foundation Server (on-premises): ```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```  
-
-	If you don't see the team or team project you want, click the ![VSTS icon](../_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](../../connect/account-home-pages.md).  
-
-2.	From the Work hub, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
+1.  From the **Work** hub, choose the work item type from the New Work Item list of options. Here, we choose to create a User Story. 
 
 	<img src="_img/add-work-items-choose-user-story.png" alt="VSTS, TFS 2017, Work hub, Add a work item" style="border: 2px solid #C3C3C3;" /> 
 
@@ -59,7 +51,7 @@ Here we show how to add work items from the web portal.
 
 	You can [add tags to any work item to filter backlogs and queries](../track/add-tags-to-work-items.md).
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../how-to/switch-team-context-work.md).
+	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../how-to/switch-team-context-work.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).
 
 That's it! 
 
@@ -73,7 +65,7 @@ When you want to track the progress of a single work item, click the ![Follow ic
 
 You'll only receive notifications when other members of your team modifies the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
-Notifications are sent to your preferred email address, which you can change from your [account preferences](../../accounts/account-preferences.md).  
+Notifications are sent to your preferred email address, which you can change from your [account preferences](../../accounts/account-preferences.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json ).  
 
 To stop following changes, click the ![Following icon](../../work/_img/icons/following-icon.png)  icon.
  
@@ -90,10 +82,10 @@ To quickly add backlog items, such as user stories or requirements, see these to
 > [Kanban quickstart](../kanban/kanban-quickstart.md) 
 
 
-For additional clients that you can use to add work items, see [Clients that support tracking work items](../../tools.md).
+For additional clients that you can use to add work items, see [Clients that support tracking work items](../../tools.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ).
 
 Once you've added several work items, you can use additional features to get notified of changes, create queries, define status and trend charts, plus more.  
 
-For descriptions of each field and work item form control, see [Work item field index](../guidance/work-item-field.md) and [Work item form controls](../concepts/work-item-form-controls.md).  
+For descriptions of each field and work item form control, see [Work item field index](../guidance/work-item-field.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ) and [Work item form controls](../concepts/work-item-form-controls.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ).  
 
 

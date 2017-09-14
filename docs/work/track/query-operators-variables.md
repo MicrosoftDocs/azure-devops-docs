@@ -262,7 +262,7 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
 	<td>**@CurrentIteration**</td>
-	<td>Use in conjuction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../how-to/switch-team-context-work.md). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+	<td>Use in conjuction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../how-to/switch-team-context-work.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
 <blockquote><strong>Feature availability:</strong> The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The macro only works when run from the web portal. 
 </blockquote>
 </td>

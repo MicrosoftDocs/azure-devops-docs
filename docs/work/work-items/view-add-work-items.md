@@ -7,19 +7,25 @@ ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article 
-ms.date: 08/18/2017
+ms.date: 09/13/2017
 ---
 
 # View and add work items using the Work Items page  
 
 **VSTS**  
 
->[!NOTE]   
-><b>Feature availability: </b>The **Work Items** page is in preview and currently available from VSTS only. 
+We have launched the preview of the new **Work Items** page under the **Work** hub in your VSTS account. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.
 
-We have launched the preview of the new **Work Items** page under the **Work** hub in your VSTS account. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile. 
+>[!NOTE]   
+><b>Feature availability: </b>The **Work Items** page is in preview and currently available from VSTS only.  
 
 The set of features available to you through this page and its personalized pivots and filter functions will help streamline your ability to find work items important to you defined across teams within a team project. 
+
+## Open the Work Items page
+
+You can start viewing and adding work items once you connect to a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md).
+
+Open a browser window, click the **Work** hub, and then the **Work Items** page. If you don't see the **Work Items** option, you must enable it from the [preview features menu](../../collaborate/preview-features.md).
 
 <img src="_img/work-items-hub.png" alt="Work hub, Work Items page, Add a work item" style="border: 2px solid #C3C3C3;" />
 

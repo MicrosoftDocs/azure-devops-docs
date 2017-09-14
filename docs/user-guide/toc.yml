@@ -48,16 +48,16 @@
   items:
   - name: Enable preview features
     href: /vsts/collaborate/preview-features?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
-  - name: Use @mentions to further discussion"
+  - name: "Use @mentions to further discussion"
     href: /vsts/notifications/at-mentions?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
-  - name: Use #ID to link to work items
+  - name: "Use #ID to link to work items"
     href: /vsts/notifications/add-links-to-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: View permissions
     href: /vsts/security/view-permissions?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Go mobile
     href: /vsts/collaborate/mobile-work?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Manage your notifications
-    href: /vsts/notifications/manage-personal-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+    href: /vsts/notifications/manage-personal-notifications?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Set your preferences
     href: /vsts/accounts/account-preferences?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Sign-in to the web or a client

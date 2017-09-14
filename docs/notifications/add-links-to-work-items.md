@@ -8,19 +8,19 @@ toc: show
 ms.manager: douge
 ms.author: kaelli
 ms.topic: get-started-article
-ms.date: 09/01/2017
+ms.date: 09/13/2017
 ---
 
 
 
-# Link work items using the #ID control
+# Use #ID to link to work items  
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
 
 <a id="mention-wit-id">  </a>
 
 >[!NOTE]  
-><b>Feature availability: </b>The **#ID** special control is currently supported from VSTS and TFS 2015.1 and later versions.    
+><b>Feature availability: </b>The **#ID** special control is supported from VSTS and TFS 2015.1 and later versions.    
 
 
 ## Link a pull request to a work item 
