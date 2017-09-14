@@ -6,6 +6,8 @@
     href: about-work-items.md
 - name: Quickstarts
   items:
+  - name: View and add work items
+    href: /vsts/work/backlogs/view-add-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Add a work item
     href: /vsts/work/backlogs/add-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Drive Git development

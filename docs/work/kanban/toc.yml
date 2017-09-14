@@ -24,8 +24,6 @@
   items:
   - name: Kanban best practices
     href: best-practices-kanban.md
-  - name: Kanban board controls
-    href: kanban-board-controls.md
   - name: "Workflow states & state categories"
     href: ../concepts/workflow-and-state-categories.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: About teams and Agile tools
@@ -47,11 +45,15 @@
   - name: Definition of done
     href: definition-of-done.md
   - name: Reorder cards
-    href: ../customize/reorder-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
+    href: ../customize/reorder-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json
   - name: "Manage permissions & access"
     href: ../how-to/set-permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
 - name: Reference
   items:
+  - name: Kanban board controls
+    href: kanban-board-controls.md
+  - name: Keyboard shortcuts
+    href: ../../reference/keyboard-shortcuts.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: "Permissions & access for work tracking"
     href: ../permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
 - name: Resources

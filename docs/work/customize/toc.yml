@@ -26,6 +26,21 @@
     href: /vsts/work/concepts/agile-glossary?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
 - name: How-to Guides
   items:
+  - name: Configure team settings
+    href: ../scale/manage-team-assets.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json   
+    items:
+    - name: Set team defaults
+      href: ../scale/set-team-defaults.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json  
+    - name: Customize cards on boards
+      href: customize-cards.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json  
+    - name: Reorder cards
+      href: reorder-cards.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json   
+    - name: Select backlog levels
+      href: select-backlog-navigation-levels.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
+    - name: "Show bugs on backlogs & boards"
+      href: show-bugs-on-backlog.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
+    - name: Set working days
+      href: set-working-days.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
   - name: Inheritance process model
     items:
     - name: Manage processes

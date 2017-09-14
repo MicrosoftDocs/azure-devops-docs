@@ -72,7 +72,7 @@ Enter a title and then save the work item. Before you can change the State from 
 
 You can [add existing tags to any work item to support filter backlogs and queries](../work/track/add-tags-to-work-items.md).
 
-Work items you add are automatically scoped to your [team's area and iteration paths](../work/scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../work//how-to/switch-team-context-work.md).
+Work items you add are automatically scoped to your [team's area and iteration paths](../work/scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../work//how-to/switch-team-context-work.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 	
 >[!NOTE]  
 >Depending on the process chosen when the team project was created&mdash;[Scrum](../work/guidance/scrum-process.md), 

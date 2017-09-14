@@ -35,9 +35,9 @@ In this topic you'll learn how to:
 > * Share your sprint plan      
 
 >[!NOTE]
->Your sprint backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs-boards-plans.md). 
+>Your sprint backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs-boards-plans.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json). 
 >
->For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../overview.md).  
+>For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../overview.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json).  
 
 Here's an example of a sprint plan that consists of backlog items and the tasks required to complete each item. 
 By setting team capacity and estimating tasks, the team can see when the team or a team member is at, under, or over capacity.
@@ -47,7 +47,7 @@ By setting team capacity and estimating tasks, the team can see when the team or
 
 
 >[!NOTE]  
->Sprint planning doesn't need to be challenging. It can be fun and a time for the entire Scrum team to build camaraderie by working together to answer the question of "What can we commit to?" For examples and strategies to keep your sprint planning focused and effective, check out the [Sprint Planning white paper](https://msdn.microsoft.com/library/hh765982.aspx).
+>Sprint planning doesn't need to be challenging. It can be fun and a time for the entire Scrum team to build camaraderie by working together to answer the question of "What can we commit to?" For examples and strategies to keep your sprint planning focused and effective, check out the [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/).
 >  
 >When you've completed your sprint plant, your sprint backlog should contain all the information your team needs to successfully complete work within the time allotted without having to rush at the end. 
 
@@ -74,7 +74,7 @@ To plan sprints, you should be a member of the team and belong to the Contributo
 	
 	<img src="_img/sp-check-total-effort-level.png" alt="Sprint backlog page, determine total level of effort" style="border: 2px solid #C3C3C3;" />   
 	
-	If you don't see the Effort, Story Points, or Size fields, you can add them by clicking [Column Options](../how-to/set-column-options.md). For a description of how these fields are used, see [Create your backlog, Add details and estimates](../backlogs/create-your-backlog.md#estimates). 
+	If you don't see the Effort, Story Points, or Size fields, you can add them by clicking [Column Options](../how-to/set-column-options.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json). For a description of how these fields are used, see [Create your backlog, Add details and estimates](../backlogs/create-your-backlog.md#estimates). 
 
 	Your initial plan should identify the subset of requirements that's within your team's capacity based on estimated effort and team velocity. Velocity corresponds to the total Effort or Story Points a team can complete within the sprint time period.  
 
@@ -86,7 +86,7 @@ As a next step, you'll want to determine your team's actual capacity. Whereas ve
 
 Because days off and time available for each team member can vary from sprint to sprint, you set capacity for each sprint. The capacity tool helps you make sure your team isn't over or under committed for the sprint. Also, as you work day-to-day, you'll be able to see if your team is on track.
 
-From the Capacity page, enter the capacity and days off for each member of your team.  For details on setting capacity, see [Capacity planning](../scale/capacity-planning.md).  
+From the Capacity page, enter the capacity and days off for each member of your team.  For details on setting capacity, see [Capacity planning](../scale/capacity-planning.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json).  
 
 Most teams specify capacity in terms of hours, however, you can also specify it in days. For example, .5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit you will use to estimate the time a task will take to complete. You only have to indicate planned days off. You [manage weekend days or other recurring days off](../customize/set-working-days.md) under team settings.
 
@@ -96,7 +96,7 @@ Most teams specify capacity in terms of hours, however, you can also specify it 
 
 The capacity tool tells you how much work your team can commit to. However, to compare capacity with actually planned work, you need to define and estimate tasks for each backlog item.
 
-Add as many tasks as needed to capture the work required to complete each item. Tasks can represent different work to be performed - such as design, code, test, content, signoff. Usually, each team member adds their own tasks and sets estimates for the work. However, a development lead could define the initial tasks for a requirement.
+Add as many tasks as needed to capture the work required to complete each item. Tasks can represent different work to be performed - such as design, code, test, content, sign off. Usually, each team member adds their own tasks and sets estimates for the work. However, a development lead could define the initial tasks for a requirement.
 
 1. In the sprint backlog, add a task.  
 
@@ -137,7 +137,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 	>[!TIP]  
 	>Define tasks that take a day or less to complete. This helps mitigate the risks that come from poor estimates.
 	>
-	>Also, don't divide tasks into subtasks as the [task board will only show leaf node tasks](../troubleshoot/resolve-backlog-reorder-issues.md#bugs-as-tasks). If you do divide a task into subtasks, specify Remaining Work only for the subtasks, as the system rolls up summary values to the parent task. 
+	>Also, don't divide tasks into subtasks as the [task board will only show leaf node tasks](../troubleshoot/resolve-backlog-reorder-issues.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json#bugs-as-tasks). If you do divide a task into subtasks, specify Remaining Work only for the subtasks, as the system rolls up summary values to the parent task. 
 
 
 <a id="adjust-work">  </a>
@@ -178,17 +178,11 @@ Now that you've defined your sprint plan, your team's ready to begin work on the
 
 Also, you can [monitor your burndown chart](sprint-burndown.md) to make sure your team remains on track throughout the sprint. 
 
-You can use [hotkeys and keyboard shortcuts](../../reference/keyboard-shortcuts.md) to navigate within the backlog list. 
+You can use [hotkeys and keyboard shortcuts](../../reference/keyboard-shortcuts.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json) to navigate within the backlog list. 
 
 ## Related notes
 
-If you need to add or rename the sprints your team uses, you must first define them at the project level and then select them for your team. See [Define and 
-
-To copy, clone, or delete work items, or to quickly create work items using a template, see these topics:
-
-- [Copy or clone a work item](../backlogs/copy-clone-work-items.md#copy-clone)  
-- [Remove, delete, or recycle a work item](../backlogs/remove-delete-work-items.md)  
-- [Create a work item template](../backlogs/work-item-template.md)  
+If you need to add or rename the sprints your team uses, you must first [define them at the project level](../customize/set-iteration-paths-sprints.md) and then [select them for your team](../scale/set-team-defaults.md). 
 
 
 <a id="share" >  </a>
@@ -208,7 +202,7 @@ Then, open the query and click the email icon.
 
 In the form that appears, enter the name(s) of valid users (ones who have access to the team project). 
 
-Or, you can select all the items in the list, choose **Copy as HTML**, and paste the formatted list into an email form or Word document. See [Email or print work items](../how-to/email-work-items.md) for more ways to share work with your team. 
+Or, you can select all the items in the list, choose **Copy as HTML**, and paste the formatted list into an email form or Word document. See [Copy a list of work items](../backlogs/copy-list.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json). 
 
 
 <a id="order"> </a>
@@ -219,7 +213,7 @@ When you need to change the order of an item, simply drag the item to its new lo
 
 Ordering and re-parenting backlog items requires that you don't nest items of the same type within each other. That is, you don't create product backlog items that are children of other product backlog items, or tasks that are children of tasks. You can only re-parent tasks under backlog items, backlog items under features, and features under epics. 
 
-If you receive the following message, [you can fix it by removing nested child items](../troubleshoot/resolve-backlog-reorder-issues.md).
+If you receive the following message, [you can fix it by removing nested child items](../troubleshoot/resolve-backlog-reorder-issues.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json).
 
 ![Can't reorder with nested backlog items message](_img/nested_info.png)  
 

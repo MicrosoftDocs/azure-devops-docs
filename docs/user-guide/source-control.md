@@ -33,9 +33,7 @@ With TFVC, devs have only one version of each file on their dev machines. Histor
  
 ## Try this next  
 
-Start sharing your code or getting your code under source control by [creating an account on VSTS for free](../accounts/create-account-msa-or-work-student.md).  
+Start sharing your code or getting your code under source control.  
 
 > [!div class="nextstepaction"]
-> [Add your code using Git](/vsts/git/gitquickstart?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json)
-> or
-> [Compare Git and TFVC](/vsts/tfvc/comparison-git-tfvc?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json)
+> [Code with Git](code-with-git.md)

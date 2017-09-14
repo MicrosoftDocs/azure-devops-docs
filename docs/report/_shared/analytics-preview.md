@@ -6,7 +6,7 @@
 > [Velocity](../guidance/team-velocity.md), and [Lead and Cycle Time](../guidance/cycle-time-and-lead-time.md). 
 > The Analytics OData endpoint, which provides a concise model over the 
 > VSTS suite for Work Item Tracking, Test, Version Control, and  
-> Build, is in private preview and only available to select VSTS customers 
+> Build, is in a closed preview and only available to select VSTS customers 
 > at this time. 
 > 
 > If you are looking for information about the Azure Analysis Services, see 

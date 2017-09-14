@@ -47,7 +47,7 @@
   - name: Fix "Ordering backlog items is disabled"
     href: /vsts/work/troubleshoot/resolve-backlog-reorder-issues?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: Schedule projects using Project
-    href: /vsts/work/office/schedule-projects-using-microsoft-project.md
+    href: /vsts/work/office/schedule-projects-using-microsoft-project?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: "Rollup estimated & actual work using Project"
     href: /vsts/work/office/rollup-estimated-and-actual-work-using-project?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: Resolve Excel data conflicts

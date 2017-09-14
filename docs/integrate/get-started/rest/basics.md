@@ -19,30 +19,31 @@ These APIs follow a common pattern:
 VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}
 ```
 
-> Tip: To avoid having your app or service broken as APIs evolve, specify an [API version](#versions) on every request.
+> [!TIP]    
+> To avoid having your app or service broken as APIs evolve, specify an [API version](#versions) on every request.
 
-## VS VSTS
+## VSTS
 
-For VS VSTS, `instance` is `{account}.visualstudio.com` and `collection` is `DefaultCollection`,
+For VSTS, `instance` is `{account}.visualstudio.com` and `collection` is `DefaultCollection`,
 so the pattern looks like this:
 
 ```no-highlight
 VERB https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?api-version={version}
 ```
-<br />
+
 For example, here's how to get a list of team projects in a VSTS account.
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://{account}.VisualStudio.com/DefaultCollection/_apis/projects?api-version=2.0
 ```
-<br />
+
 If you wish to provide the personal access token through an HTTP header, you must first convert it to a Base64 string (the following example shows how to convert to Base64 using C#).  The resulting string can then be provided as an HTTP header in the format:
 
 ```
 Authorization: Basic BASE64PATSTRING
 ``` 
-<br />
-Here it is in C# using the [HttpClient class](https://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx).
+
+Here it is in C# using the [HttpClient class](https://msdn.microsoft.com/library/system.net.http.httpclient.aspx).
 
 ```cs
 public static async void GetProjects()
@@ -93,7 +94,7 @@ Here's how to get a list of team projects from TFS using the default port and co
 curl -u {username}[:{personalaccesstoken}] http://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
 ```
 
-The examples above use personal access tokens, which requires that you [create a personal access token](../Authentication/PATs.md).
+The examples above use personal access tokens, which requires that you [create a personal access token](../authentication/PATs.md).
 
 
 ## Responses
@@ -184,8 +185,8 @@ Content-Type: application/json
 
 Some web proxies may only support the HTTP verbs GET and POST, but not more modern HTTP verbs like PATCH and DELETE.
 If your calls may pass through one of these proxies, you can send the actual verb using a POST method, with a header to override the method.
-For example, you may want to [update a work item](or [Git](../../api/git/overview.md) and get to the resources that you need.
-/api/wit/work-items.md#updateworkitems) (`PATCH _apis/wit/workitems/3`), but you may have to go through a proxy that only allows GET or POST.
+For example, you may want to [update a work item](https://www.visualstudio.com/docs/integrate/api/wit/work-items#updateworkitems) 
+(`PATCH _apis/wit/workitems/3`), but you may have to go through a proxy that only allows GET or POST. 
 You can pass the proper verb (PATCH in this case) as an HTTP request header parameter and use POST as the actual HTTP method.
 
 
@@ -275,7 +276,7 @@ A small number of undocumented version 1.0 APIs existed in Team Foundation Serve
 
 ## Help and feedback
 
-Get your technical questions answered, request a feature, or report a bug by sending an e-mail to: **[vsointegration@microsoft.com](http://go.microsoft.com/fwlink/?LinkId=615292)**
+Get your technical questions answered, request a feature, or report a bug from our  **[Developer Community](http://go.microsoft.com/fwlink/?LinkId=615292)**.
 
 ## Q&A
 
@@ -287,8 +288,8 @@ A: Yes, see the [overview of client libraries](../client-libraries/dotnet.md).
 
 #### Q: Where can I learn about the specific .Net client libraries contracts?
 
-A: Review the [contracts index](or [Git](../../api/git/overview.md) and get to the resources that you need.
-/api/contracts-page.md) to learn about the specific .Net client library contracts.
+A: To learn about the specific .Net client library contracts, review the [contracts index](https://www.visualstudio.com/docs/integrate/api/contracts-page).
+
 
 <!-- ENDSECTION --> 
 
