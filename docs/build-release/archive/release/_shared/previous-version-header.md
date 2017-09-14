@@ -7,7 +7,7 @@
 
 Release Management features have been integrated into the **Build &amp; Release** hub in
 Team Foundation Server (TFS) and VSTS.
-For more information, see [Build and Release in VSTS and TFS](../../build-release/overview.md). 
+For more information, see [Build and Release in VSTS and TFS](../../../overview.md). 
 
 The newer web-based version is the recommended alternative 
 to the server and client version described in this topic.

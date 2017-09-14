@@ -24,9 +24,9 @@ You can:
 
 ... and much more.
 
-The **[current version](../build-release/overview.md)** of Release Management is integrated into the **Build &amp; Release** hub in
+The **[current version](../../overview.md)** of Release Management is integrated into the **Build &amp; Release** hub in
 Team Foundation Server (TFS) and VSTS.
-For more information, see **[Build and Release in VSTS and TFS](../build-release/overview.md)**. 
+For more information, see **[Build and Release in VSTS and TFS](../../overview.md)**. 
 
 The **previous versions** of Release Management are deprecated. No new features will be added to these versions:
 

@@ -277,14 +277,14 @@ Release Management Server and the Microsoft Deployment agent.
 | Component | Sample user logon name (1) | Requirements |
 | --- | --- | --- |
 | Release Management Server | **RMSERVER** | This is the identity used in Internet Information Service (IIS) for the application pool and the **Release Management Monitor** Windows service. </br> Default: Network Service |
-| Microsoft Deployment Agent | **DEPLOY** | This identity is used to configure the machines in your environment for release. Make sure the identity you use here has enough permission to do whatever tasks are required. For example, if you need to install your application on this machine as part of your release, add this identity to the local Windows Administrators security group. If this identity will need to access builds on the network, make sure it has access to the network drop location. For step-by-step procedure, see [Install deployment agent and set up machines for an environment](../release/previous-version/install-release-management/install-deployment-agent.md). </br> Default: you are prompted for an account. |
+| Microsoft Deployment Agent | **DEPLOY** | This identity is used to configure the machines in your environment for release. Make sure the identity you use here has enough permission to do whatever tasks are required. For example, if you need to install your application on this machine as part of your release, add this identity to the local Windows Administrators security group. If this identity will need to access builds on the network, make sure it has access to the network drop location. For step-by-step procedure, see [Install deployment agent and set up machines for an environment](../build-release/archive/release/previous-version/install-release-management/install-deployment-agent.md). </br> Default: you are prompted for an account. |
 
 
 #### Connect Release Management to TFS account
 
 If you connect Release Management to TFS, you need an account in TFS to
 act as an intermediary account. For a step-by-step procedure, go here:
-[Connect Release Management to TFS](../release/previous-version/install-release-management/connect-to-tfs.md)
+[Connect Release Management to TFS](../build-release/archive/release/previous-version/install-release-management/connect-to-tfs.md)
 
 
 | Component | Sample user logon name (1) | Requirements |

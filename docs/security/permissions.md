@@ -1714,7 +1714,7 @@ Project Administrators and Release Administrators are granted all release manage
 In addition, you can assign approvers to specific steps within a release definition to ensure that the applications being deployed meet quality standards.
 
 >[!NOTE]  
->If you are working with the Release Management client and server supported for TFS 2015, see [Automate deployments with Release Management](../release/previous-version/release-management-overview.md).
+>If you are working with the Release Management client and server supported for TFS 2015, see [Automate deployments with Release Management](../build-release/archive/release/previous-version/release-management-overview.md).
 
 
 The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the team project, release definition, or environment level.
