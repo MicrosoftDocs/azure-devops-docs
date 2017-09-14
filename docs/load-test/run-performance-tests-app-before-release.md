@@ -53,14 +53,11 @@ actions in your app at the same time.
 
    ![Create web performance test](_img/run-performance-tests-app-before-release/create-web-perf-test.png)
 
-   Your web browser opens.
-
-1. Enter the URL for the website that you want to test.
+1. Your web browser opens. Enter the URL for the website that you want to test.
 
    ![Enter url - web test recorder automatically starts](_img/run-performance-tests-app-before-release/provide-site-url-for-testing.png)
 
 1. Use your application like you expect your customers to use it. For example, search for items and add them to the shopping cart.
-
    The recorder will capture the HTTP requests and responses.
 
 1. When you're done, stop recording.
@@ -68,14 +65,13 @@ actions in your app at the same time.
    ![Use your application as user would, stop recording](_img/run-performance-tests-app-before-release/use-app-stop-recording.png)
 
    Now, Visual Studio looks for dynamic parameters for the HTTP responses to each of your HTTP requests. A progress bar appears while this happens.
-
    If dynamic parameters are found, a table appears. You can assign constant values to each dynamic parameter.
 
 1. Rename your test. For example, ShoppingCart.webtest.
 
    ![Rename web performance test](_img/run-performance-tests-app-before-release/rename-web-perf-test.png)
 
-1. Edit test properties to specify performance goals. For example, you can set a page response time goal to 1 second.
+1. Edit test properties to specify performance goals. For example, you can set a page response time goal of one second.
 
    ![Edit page response time goal property to 1 second](_img/run-performance-tests-app-before-release/edit-page-response-time-goal.png)
 
@@ -109,13 +105,12 @@ actions in your app at the same time.
 
    ![Select which tests to include in the test mix](_img/run-performance-tests-app-before-release/select-tests-for-test-mix.png)
 
-   When you run cloud-based load tests using your VSTS account, you can run those tests and generate load in an Azure datacenter that's closer to your users. That way, you reduce latency and simulate local conditions.
-
-1. Select the location where you want to run your load test.
+1. When you run cloud-based load tests using your VSTS account, you can run those tests and generate load in an Azure datacenter that's closer to your users. That way, you reduce latency and simulate local conditions.
+   Select the location where you want to run your load test.
 
    ![Select load test location](_img/run-performance-tests-app-before-release/select-load-test-location.png)
 
-1. When you finish the wizard, the web performance test is added to the load test and appears in the load test editor.
+1. After you finish the wizard, the web performance test is added to the load test and appears in the load test editor.
 
    ![Load test editor](_img/run-performance-tests-app-before-release/web-perf-test-in-load-test-editor.png)
 

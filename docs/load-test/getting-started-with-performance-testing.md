@@ -21,10 +21,8 @@ Find problems before your customers do. Start running
 in almost no time with Visual Studio and Visual Studio Team Services (VSTS).
 
 > This example shows how to execute a load test using Visual 
-Studio. You can also run cloud-based load tests directly using your 
+Studio. You can also run cloud-based load tests directly using the 
 [VSTS portal](get-started-simple-cloud-load-test.md).
-If you prefer to run your tests in a local environment rather
-than in the cloud, see [Use a lab environment for your devops](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 
 <a name="LoadTestVSIDE"></a>
 ## Prepare your environment
@@ -32,17 +30,16 @@ than in the cloud, see [Use a lab environment for your devops](https://docs.micr
 * [Download and install Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs), 
   if you don't already have it.
 
-* [Create your VSTS account](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
+* [Create a VSTS account](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
   if you don't have one already. You can have any access 
-  level assigned do you in VSTS 
+  level assigned to you in VSTS 
   when you use Visual Studio Enterprise to run load tests.
 
 * If you don't have a load test project, 
   use our sample load test project with your web site or app. 
   Just provide the address for the web site that you want to test. 
   Or, if you have a load test project, jump ahead to 
-  [set up your load test project](#article14) to run load tests 
-  in VSTS.
+  [connecting to VSTS](#ConnectVSOnline) to run the load tests.
 
 <a name="article10"></a>
 ## Get the sample load test project
@@ -65,10 +62,6 @@ than in the cloud, see [Use a lab environment for your devops](https://docs.micr
 Before you can run load tests in the cloud, 
 connect Visual Studio to your VSTS account.
 
-1. If you haven't already, [sign up for a VSTS account](https://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409). 
-   Learn more about 
-   [signing up for VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs).
-
 1. In Team Explorer, connect to your VSTS account.
 
    ![Connect to your VSTS account](_img/getting-started-with-performance-testing/LoadTestConnect1.png)
@@ -83,11 +76,11 @@ connect Visual Studio to your VSTS account.
      ![Click Servers to add your VSTS account](_img/getting-started-with-performance-testing/LoadTestConnect3.png)
 
    - Enter your VSTS account name 
-     (```{youraccount}.visualstudio.com```).
+     (your-account-name**.visualstudio.com**).
 
      ![Enter your account name](_img/getting-started-with-performance-testing/LoadTestConnect4.png)
 
-   - If you're prompted to sign in to VSTS, do that.
+   - If you're prompted to sign in to VSTS, do that now.
 
 1. Select your VSTS account from the list, 
    then choose your team project. Now you can connect.

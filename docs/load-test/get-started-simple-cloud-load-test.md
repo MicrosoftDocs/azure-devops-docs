@@ -29,7 +29,7 @@ using Visual Studio Team Services (VSTS).
 <a name="runtests"></a>
 ## Run a URL-based load test
 
-1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
+1. Sign in to your VSTS account (**https://**your-account-name**.visualstudio.com**).
 
 1. Go to the **Load test** hub, open the **+ New** 
    menu and choose **URL based test**.
