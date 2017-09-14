@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cb3837;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>logo_test-feedback copy</title>
+  <g id="FileNames">
+    <polygon class="cls-1" points="63 19 2 19 2 41 20 41 20 45 32 45 32 41 63 41 63 19"/>
+    <path class="cls-2" d="M23,23V41h6V37h7V23ZM34,34H30V27h4Z"/>
+    <polygon class="cls-2" points="46 23 44.15 23 39 23 39 37 46 37 46 27 49 27 49 37 53 37 53 27 56 27 56 37 60 37 60 23 46 23"/>
+    <polygon class="cls-2" points="5 23 5 37 12 37 12 26 16 26 16 37 20 37 20 23 5 23"/>
+  </g>
+</svg>

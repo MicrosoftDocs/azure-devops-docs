@@ -6,6 +6,7 @@ ms.technology: vs-devops-package
 ms.manager: douge
 ms.author: amullans
 ms.date: 08/10/2016
+layout: LandingPage
 ---
 
 # Package Management
@@ -14,9 +15,9 @@ Host your NuGet, npm, and Maven packages in **Visual Studio Team Services (VSTS)
 
 ## 5-Minute Quickstarts 
 
-- [Get started with NuGet](get-started-nuget.md)  
-- [Get started with npm](get-started-npm.md)   
-- [Get started with Maven](get-started-maven.md)  
+### Learn how to host your packages.
+
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="get-started-nuget.md"><img width="48" height="48" alt="" src="_img/index/logo_nuget.svg"><span>NuGet</span></a></div><div class="ico48Link"><a href="get-started-npm.md"><img width="48" height="48" alt="" src="_img/index/logo_npm.svg"><span>npm</span></a></div><div class="ico48Link"><a href="get-started-maven.md"><img width="48" height="48" alt="" src="_img/index/logo_maven.svg"><span>Maven</span></a></div></div>
 
 ## Videos
 
