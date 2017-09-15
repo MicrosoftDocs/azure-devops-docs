@@ -7,6 +7,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/overview.md",
+            "redirect_url": "/vsts/index",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "articles/news/features-timeline.md",
             "redirect_url": "/vsts/release-notes/index",
             "redirect_document_id": false
@@ -2214,6 +2219,11 @@
         {
             "source_path": "docs/tfvc/team-projects.md",
             "redirect_url": "/vsts/git/team-projects",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/whats-new.md",
+            "redirect_url": "/vsts/release-notes/index",
             "redirect_document_id": false
         },
         {
