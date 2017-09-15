@@ -43,8 +43,8 @@ a web-based app, install the app on a test server,
 and run Microsoft Test Manager on the machine where 
 you'll run your web browser.
 
-To get Microsoft Test Manager, install Visual Studio Test Professional 
-or Visual Studio Enterprise.
+To get Microsoft Test Manager, install [Visual Studio Test Professional ](https://www.visualstudio.com/vs/test-professional/)
+or [Visual Studio Enterprise](https://www.visualstudio.com/downloads/)
 
 ### Run a test case
 

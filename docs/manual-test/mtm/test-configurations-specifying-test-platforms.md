@@ -23,7 +23,7 @@ Use Microsoft Test Manager to specify test configurations. But you can still run
 
 **Requirements**
 
-* Visual Studio Enterprise, Ultimate, Premium, or Test Professional
+* [Visual Studio Enterprise](https://www.visualstudio.com/downloads/) or [Visual Studio Test Professional ](https://www.visualstudio.com/vs/test-professional/)
 
 ## Planning tests with configurations  
  

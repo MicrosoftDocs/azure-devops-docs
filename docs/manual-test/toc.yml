@@ -76,6 +76,8 @@
       href: mtm/copying-and-cloning-test-suites-and-test-cases.md
     - name: Test different configurations
       href: mtm/test-configurations-specifying-test-platforms.md
+    - name: Collect more diagnostic data
+      href: mtm/collect-more-diagnostic-data-in-manual-tests.md
     - name: Test Windows Store apps
       href: mtm/testing-windows-store-apps.md
 - name: Reference

@@ -551,7 +551,7 @@ in any particular test plan or suite.
   
 **A:** Yes, the recording is linked to the test case, 
 so you can play it back from any instance of that test case, even in different 
-[test configurations](test-different-configurations.md), 
+[test configurations](mtm/test-configurations-specifying-test-platforms.md), 
 test suites, or test plans.
 
 ### Q: Some or all of my actions aren't recorded, or the playback doesn't work properly. Why?
