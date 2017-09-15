@@ -29,7 +29,8 @@ from the **Test** hub instead of using Microsoft Test Manager.
   
    - [Create some test cases.](plan-manual-tests-with-microsoft-test-manager.md) Typically you create them at the start of a sprint, and aim to have them all pass by the end of the sprint. You can create them either with the web portal or Microsoft Test Manager.  
   
-   - Install Microsoft Test Manager (MTM) on the machine where you want to run your tests. To get MTM, install Visual Studio Test Professional or Visual Studio Enterprise.  
+   - Install Microsoft Test Manager (MTM) on the machine where you want to run your tests.
+     To get MTM, install [Visual Studio Enterprise](https://www.visualstudio.com/downloads/) or [Visual Studio Test Professional ](https://www.visualstudio.com/vs/test-professional/).
   
    - [Connect MTM to your test plan](connect-microsoft-test-manager-to-your-team-project-and-test-plan.md)  
   
@@ -71,7 +72,6 @@ from the **Test** hub instead of using Microsoft Test Manager.
 ## Replay previous tests
   
 If you ran a test before, you can repeat it quickly by replaying the same actions.  
-  
 (This works with most applications, though not all).  
   
 1. Start the test. Don't overwrite the recording.  
@@ -85,7 +85,6 @@ If you ran a test before, you can repeat it quickly by replaying the same action
 ## Track the progress of your tests  
 
 Monitor the progress of your project by seeing how many tests have passed.  
-  
 Tests begin in the Active state, meaning that they are ready to run. When a bug has been fixed, you can set the state of a failed test back to Active.  
   
 ![View test results and reset a test ready to re&#45;run](_img/run-manual-tests-with-microsoft-test-manager/almp_t_run13.png)  

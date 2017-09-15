@@ -30,7 +30,7 @@ to the next to make sure that everything still works correctly.
 You can record and play back tests in a wide range of desktop apps, 
 and also web apps that you access through a supported browser. 
 For a detailed list, see 
-[Supported configurations and platforms for coded UI tests and action recordings](https://msdn.microsoft.com/library/dd380742).
+[Supported configurations and platforms for coded UI tests and action recordings](https://docs.microsoft.com/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
 
 ## Run Microsoft Test Manager on your client machine
 
@@ -43,8 +43,8 @@ a web-based app, install the app on a test server,
 and run Microsoft Test Manager on the machine where 
 you'll run your web browser.
 
-To get Microsoft Test Manager, install Visual Studio Test Professional 
-or Visual Studio Enterprise.
+To get Microsoft Test Manager, install [Visual Studio Test Professional ](https://www.visualstudio.com/vs/test-professional/)
+or [Visual Studio Enterprise](https://www.visualstudio.com/downloads/)
 
 ### Run a test case
 

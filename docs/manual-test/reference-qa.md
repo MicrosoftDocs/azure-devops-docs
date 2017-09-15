@@ -235,7 +235,7 @@ parameters to shared parameters.
 
 After you create a shared parameter set, open another test case, 
 and add the shared parameter set to that test case. Find out more about 
-[sharing parameters](https://msdn.microsoft.com/library/dd997832.aspx#SharedParameters).
+[sharing parameters](repeat-test-with-different-data.md#share-parameters-between-test-cases).
 
 Add, edit, and rename your shared parameter sets on the Parameters tab. 
 In the test cases pane, view the test cases that use those parameters.
@@ -551,21 +551,21 @@ in any particular test plan or suite.
   
 **A:** Yes, the recording is linked to the test case, 
 so you can play it back from any instance of that test case, even in different 
-[test configurations](test-different-configurations.md), 
+[test configurations](mtm/test-configurations-specifying-test-platforms.md), 
 test suites, or test plans.
 
-### Q: Some or all of my actions aren't recorded, or the playback doesn’t work properly. Why?
+### Q: Some or all of my actions aren't recorded, or the playback doesn't work properly. Why?
   
 **A:** Action recording works best for apps in which each user 
 interface field has a unique ID, and for basic actions such as keystrokes, 
 clicks, and menu selections. It doesn't work for some apps and web browsers.
-See [Supported configurations and platforms for coded UI tests and action recordings](https://msdn.microsoft.com/library/dd380742).
+See [Supported configurations and platforms for coded UI tests and action recordings](https://docs.microsoft.com/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
 To learn how to develop your app so that it's easier to record tests, 
-see [Enable coded UI testing of your controls](https://msdn.microsoft.com/library/hh552522).
+see [Enable coded UI testing of your controls](https://docs.microsoft.com/visualstudio/test/enable-coded-ui-testing-of-your-controls).
 
 ### Q: Record and playback is great. But can I completely automate a test, including verifying the results?
 
-**A:** Yes, see [Automate system tests](https://msdn.microsoft.com/library/ff472576%28v=vs.140%29.aspx).
+**A:** Yes, see [Automate system tests](../build-release/test/index.md).
 
 *****
 

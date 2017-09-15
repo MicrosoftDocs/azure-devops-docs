@@ -15,5 +15,5 @@ can provide feedback using the flow described in
 >**NOTE**: This lightweight end-to-end flow is applicable only for web apps
 and by using VSTS or TFS 2017. To get feedback for desktop apps, or for 
 earlier versions of TFS, use the feedback flow described in
-**[this topic](../../work/connect/get-feedback.md)**
+[this topic](../../work/connect/get-feedback.md)
 about the Microsoft Feedback Client.

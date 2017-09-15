@@ -119,10 +119,10 @@ You can also run tests using Microsoft Test Manager (MTM) and a
 **A**: These are the limitations for each type of test:
 
 * Coded UI test, Selenium tests, and unit tests written using
-  the MSTest framework **can** be associated with a test case.
+  Version 1 of the MSTest framework **can** be associated with a test case.
 * Unit tests that use the.NET Core framework **cannot** be
   associated with a test case.
-* Tests that use other test frameworks such as xUnit, nUnit,
+* Tests that use other test frameworks such as Version 2 of the MSTest framework, xUnit, nUnit,
   Chutzpah, and others **cannot** be associated with a test case.
 * Associating ordered tests and generic tests **may** work, but running these tests is not supported.
 
