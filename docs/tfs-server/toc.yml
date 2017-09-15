@@ -2,6 +2,8 @@
   href: index.md
 - name: Overview
   items:
+  - name: What's new
+    href: ../whats-new.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
   - name: Installation overview
     href: ./install/get-started.md
   - name: Configure and manage TFS resources
@@ -11,7 +13,7 @@
   - name: Single server install
     href: ./install/single-server.md
   - name: Create a team project
-    href: ../accounts/create-team-project.md?toc=/vsts/tfs-server/toc.json
+    href: ../accounts/create-team-project.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
   - name: Add users to projects
     href: ../accounts/add-users.md?toc=/vsts/tfs-server/toc.json
   - name: Configure a backup schedule
@@ -261,5 +263,7 @@
     href: ../security/index.md
   - name: Billing
     href: ../billing/index.md
+  - name: SharePoint Integration
+    href: ../ecosystem/sharepoint/index.md
 
 

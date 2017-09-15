@@ -68,15 +68,15 @@ You can specify two explicit authorization states for permissions: **Deny** and 
 
 
 <a id="move-delete-permissions"></a>
-## Set permissions to delete work items   
+## Set permissions for team administrators to move or delete work items 
 
 By default, Project Administrators and Contributors can change the work item type and delete work items by moving them to the Recycle bin. Only Project Administrators can permanently delete work items and test artifacts. Project admins can grant permissions to other team members as needed. 
 
-For example, as a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the team project and choose the user or group you want to grant permissions. (To learn how to access the admin pages, see [Work in the web portal](../../connect/work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).)
+For example, as a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the team project and choose the user or group you want to grant permissions. (To learn how to access the Project level Security page, see [Set permissions at the project-level or project collection-level](../../security/set-project-collection-level-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json).)
 
-In this example, we grant the Team Admins group permissions to move work items to another team project and to permanently delete work items.     
+In this example, we grant members assigned to the team administrator role, who belong to the Team Admin groups, permissions to move work items to another team project and to permanently delete work items.     
 
-<img src="../backlogs/_img/delete-test-project-permissions.png" alt="Set Team Admin permissions" style="border: 2px solid #C3C3C3;" />
+<img src="_img/set-permissions-project-level-dialog.png" alt="Set Team Admin permissions" style="border: 2px solid #C3C3C3;" />
 
 <a id="restrict-delete-permissions"></a>
 ## Restrict users from deleting work items 

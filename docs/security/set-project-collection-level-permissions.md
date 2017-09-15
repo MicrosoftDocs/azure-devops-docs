@@ -14,18 +14,26 @@ ms.date: 08/24/2017
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Several permissions are set for the team project or at the account/team project collection level. You can grant these permissions by adding a user or group to one of the default security groups listed here. Or, you can create a VSTS/TFS security group within a level and add members to that group. You can then change the default permission settings.    
+Several permissions are set at the team project or at the account/team project collection level. You can grant these permissions by adding a user or group to one of the default security groups listed here. Or, you can create a VSTS/TFS security group within a level and add members to that group. You can then change the default permission settings.    
+
+
 
 > [!div class="mx-tdBreakAll"]  
 > | Project level | Account/Collection level| 
 > |-------------|----------| 
 > |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- Team Admins |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Administrators<br/>- Project Collection Valid Users<br/>- Readers group<br/>- Security Service Group | 
 
-For a description of each group, see [Permissions and groups reference, Groups](permissions.md#groups).
-
-
 > [!Note]  
 > The above list indicates the latest groups defined for VSTS and TFS 2017. For earlier versions of TFS, the list may differ. Only add service accounts to [TFS service account groups](../tfs-server/admin/service-accounts-dependencies-tfs.md). To understand valid user groups, see [About permissions and groups, Valid user groups](about-permissions.md#validusers). 
+
+
+For a description of each group and each permission, see [Permissions and groups reference, Groups](permissions.md#groups).
+
+
+> [!TIP] 
+> For users who will manage features provided at the project-level admin context &mdash;such as, teams, area and iteration paths, repositories, service hooks, and service end points&mdashadd them to the Project Administrators group. 
+> For users who will manage features provided at the collection-level admin context &mdash;such as, team projects, processes, retention policies and resource limits, agent pools, and extensions&mdashadd them to the Project Administrators group.  
+
 
 ## Add a user or group to a security group
 
@@ -65,7 +73,6 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> You can't change the permission settings for the Project Administrators group. This is by design.  
 
 0. Click **Save changes**.   
-
 
 
 ## Add a group and change its permissions at the account or collection-level group 

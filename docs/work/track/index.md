@@ -36,6 +36,11 @@ List bugs, user stories, or other work items based on field criteria you specify
 - [Bulk modify (web)](../backlogs/bulk-modify-work-items.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
 
 
+## Concepts
+
+- [New queries experience](queries-preview.md)
+
+
 ## Samples
 - [Example search box queries](search-box-queries.md)
 - [Query by title, ID, or description](titles-ids-descriptions.md)
