@@ -7,12 +7,12 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "articles/news/features-timeline.md",
-            "redirect_url": "/vsts/release-notes/index",
+            "source_path": "docs/overview.md",
+            "redirect_url": "/vsts/index",
             "redirect_document_id": false
         },
         {
-            "source_path": "news/features-timeline.md",
+            "source_path": "articles/news/features-timeline.md",
             "redirect_url": "/vsts/release-notes/index",
             "redirect_document_id": false
         },
