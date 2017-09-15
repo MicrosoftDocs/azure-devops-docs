@@ -30,10 +30,7 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {
-        "ROBOTS": "NOINDEX,NOFOLLOW"
-
-    },
+    "globalMetadata": {},
     "fileMetadata": {},
     "template": [],
     "dest": "release-notes"
