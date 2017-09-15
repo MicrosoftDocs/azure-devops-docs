@@ -802,6 +802,12 @@ You manage project-level permissions from the [web portal admin context](../conn
 		</td>
 	</tr>
 	<tr>
+		<td id="manage-team-project-property-permission">Manage project properties</td>
+		<td>
+			Can provide or edit metadata for a team project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the [Set project properties REST API](https://www.visualstudio.com/docs/integrate/api/tfs/projects#set-project-properties). 
+		</td>
+	</tr>
+	<tr>
 		<td id="manage-test-configurations-permission">Manage test configurations</td>
 		<td>Can create and delete test configurations.</td>
 	</tr>
@@ -809,8 +815,6 @@ You manage project-level permissions from the [web portal admin context](../conn
 		<td id="manage-test-environments-permission">Manage test environments</td>
 		<td>Users who have this permission can create and delete test environments.</td>
 	</tr>
-
-
 	<tr>
 		<td id="move-work-items-out-of-this-project-permission">Move work items out of this project</td>
 		<td>Can [move a work item from one team project to another team project](../work/backlogs/remove-delete-work-items.md) within the collection.
@@ -1714,7 +1718,7 @@ Project Administrators and Release Administrators are granted all release manage
 In addition, you can assign approvers to specific steps within a release definition to ensure that the applications being deployed meet quality standards.
 
 >[!NOTE]  
->If you are working with the Release Management client and server supported for TFS 2015, see [Automate deployments with Release Management](../build-release/archive/release/previous-version/release-management-overview.md).
+>If you are working with the Release Management client and server supported for TFS 2015, see [Automate deployments with Release Management](../release/previous-version/release-management-overview.md).
 
 
 The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the team project, release definition, or environment level.
