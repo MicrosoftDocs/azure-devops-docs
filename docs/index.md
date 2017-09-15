@@ -1079,7 +1079,7 @@ ms.date: 07/26/2017
                                         <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web"><img src="_img/index/logo_test-feedback.svg" alt="" />Test &amp; Feedback</a>
                                     </li>
                                     <li>
-                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-zendesk"><img src="_img/index/logo_zendesk.svg" alt="" />ZenDesk</a>
+                                        <a class="barLink" href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-zendesk"><img src="_img/index/logo_zendesk.svg" alt="" />Zendesk</a>
                                     </li>
                                 </ul>
                             </li>
