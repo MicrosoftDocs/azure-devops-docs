@@ -17,7 +17,7 @@ Use Microsoft Test Manager (MTM) to help you test the application you built. MTM
   
 ### Connect Microsoft Test Manager to your Team Project and Test Plan  
   
-1. If you don't have MTM, download and install [Microsoft Visual Studio Test Professional](https://www.visualstudio.com/downloads/).  
+1. If you don't have MTM, download and install [Microsoft Visual Studio Enterprise](https://www.visualstudio.com/downloads/).  
   
    Don't have a team project? [Set up a team project](../../accounts/create-team-project.md)  
   
