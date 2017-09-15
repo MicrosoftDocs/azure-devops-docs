@@ -138,7 +138,7 @@ Additionally, you can apply various functions such as ```contains```, ```startsw
 Querying work items is helpful, but you will eventually want to be able to filter by other data such as the Iteration Path
 or Area Path or Team Project. To do this, you need to understand the navigation properties of the entity model.  
 
-Here is a partial view of the Work Items entity metadata:
+Here is a partial view of the metadata for the Work Items entity:
 
 
 ```
@@ -162,9 +162,11 @@ Here is a partial view of the Work Items entity metadata:
 </EntityType>
 ```
 
+
+
 The navigation properties appear towards the bottom of the metadata, which includes ```Revisions```,  ```BoardLocations``` (Kanban metadata), ```Project```, ```Area```, and ```Iteration```. 
 
-How do you use this information to filter results?  
+How do you use navigation properties to filter results? 
 
 This query returns all of the work items in a specific iteration:
 
@@ -172,21 +174,25 @@ This query returns all of the work items in a specific iteration:
 
 In this example, ```Iteration``` is the navigation property name and ```IterationPath``` is the full path for the iteration. To use another entity as a filter, put the navigation property followed by a slash followed by the name of the field to filter on.  
 
->[!NOTE]
->You can't use the navigation property in a ```select``` statement. Instead, you can use ```expand```.
-
-
 ##Return data from related entities
 
-In the previous query, the filter was on the iteration path but the iteration path is not returned in the results because it is contained in a related entity.  
+How do you use navigation properties to select related fields?
 
-To return data in a related entity, add an ```expand``` statement:
+The username for Custom fields based on an Identity is not directly accessible using a ```select``` statement. The following query uses a ```expand``` statement to retrieve the Username:
+
+    /WorkItems?$expand=MyIdentityField($select=UserName)
+
+>[!NOTE]
+>You can't use the navigation property directly in a ```select``` statement. Instead, you will need to use ```expand```.
+
+The filtering example above was on the iteration path but the iteration path is not returned in the results because it is contained in a related entity.  To return data in a related entity, add an ```expand``` statement:
 
     /WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=WorkItemId eq 10000&$expand=Iteration
 
 This returns the following:  
 
-```
+> [!div class="tabbedCodeSnippets"]
+```JSON
 {
   "@odata.context":"https://[account].analytics.visualstudio.com/DefaultCollection/_odata/$metadata#WorkItems(WorkItemId,WorkItemType,Title,State,Iteration)","value":[
     {

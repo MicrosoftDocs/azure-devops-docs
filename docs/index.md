@@ -77,7 +77,7 @@ ms.date: 07/26/2017
                 <ul id="start">
                     <li>
                         <a href="#start-all"></a>
-                        <ul id="start-all" class="cardText">
+                        <ul id="start-all" class="cardsL">
                             <li class="fullSpan">
                                 <div class="intro">
                                     <h1>Get Started with VSTS and TFS</h1>
@@ -85,52 +85,91 @@ ms.date: 07/26/2017
                                 </div>
                             </li>
                             <li>
-                                <h3>Add your code</h3>
-                                <ul class="noBullet">
-                                    <li><a class="barLink" href="/vsts/git/">Git Repositories</a></li>
-                                </ul>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Add your code</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="/en-us/vsts/git/">Git Repositories</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li>
-                                <h3>Continuous integration &amp; delivery</h3>
-                                <ul class="noBullet">
-                                    <li><a class="barLink" href="/vsts/deploy-azure/">Deploy to Azure</a></li>
-                                    <li><a class="barLink" href="/vsts/build-release/">Build and release</a></li>
-                                    <li><a class="barLink" href="/vsts/package/">Package management</a></li>
-                                </ul>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Continuous integration &amp; delivery</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="/vsts/deploy-azure/">Deploy to Azure</a></li>
+                                                    <li><a class="barLink" href="/vsts/build-release/">Build and release</a></li>
+                                                    <li><a class="barLink" href="/vsts/package/">Package management</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li>
-                                <h3>Agile</h3>
-                                <ul class="noBullet">
-                                    <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
-                                    <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
-                                    <li><a class="barLink" href="/vsts/report/index">Dashboards</a></li>
-                                </ul>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Agile</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
+                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
+                                                    <li><a class="barLink" href="/vsts/report/index">Dashboards</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li>
-                                <h3>Test your code</h3>
-                                <ul class="noBullet">
-                                    <li><a class="barLink" href="/vsts/build-release/test/index">Continuous testing</a></li>
-                                    <li><a class="barLink" href="/vsts/manual-test/index">Exploratory testing</a></li>
-                                    <li><a class="barLink" href="/vsts/load-test/index">Load testing</a></li>
-                                </ul>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Test your code</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="/vsts/build-release/test/index">Continuous testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/manual-test/index">Exploratory testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/load-test/index">Load testing</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li>
-                                <h3>Resources</h3>
-                                <ul class="noBullet">
-                                    <li>
-                                        <a class="barLink" href="/vsts/marketplace/overview"><img src="_img/index/team-services-marketplace.svg" alt="" />Marketplace</a>
-                                    </li>
-                                    <li>
-                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-git/"><img src="_img/index/team-services-git.svg" alt="" />Learn about Git</a>
-                                    </li>
-                                    <li>
-                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-devops/"><img src="_img/index/team-services-devops.svg" alt="" />Learn about DevOps</a>
-                                    </li>
-                                    <li>
-                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-agile/"><img src="_img/index/team-services-agile.svg" alt="" />Learn about Agile</a>
-                                    </li>
-                                </ul>
-
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Resources</h3>
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/vsts/marketplace/overview"><img src="_img/index/team-services-marketplace.svg" alt="" />Marketplace</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-git/"><img src="_img/index/team-services-git.svg" alt="" />Learn about Git</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-devops/"><img src="_img/index/team-services-devops.svg" alt="" />Learn about DevOps</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-agile/"><img src="_img/index/team-services-agile.svg" alt="" />Learn about Agile</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </li>
