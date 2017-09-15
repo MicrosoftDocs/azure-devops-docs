@@ -32,7 +32,7 @@ ms.date: 07/26/2017
                 </a>
             </li>
             <li>
-                <a href="https://www.visualstudio.com/en-us/articles/devopsmsft/overview">
+                <a href="https://www.visualstudio.com/learn/devopsmsft-overview/">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
