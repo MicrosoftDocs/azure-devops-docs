@@ -12,6 +12,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "news/features-timeline.md",
+            "redirect_url": "/vsts/release-notes/index",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/build/apps/aspnet/cd/deploy-cloudservice-cloudservice.md",
             "redirect_url": "/vsts/build-release/apps/cd/deploy-cloudservice-cloudservice",
             "redirect_document_id": false
