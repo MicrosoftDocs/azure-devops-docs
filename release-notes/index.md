@@ -1,14 +1,18 @@
 ---
-title: Team Services Feature Updates
-description: VSTS feature updates and release notes
+title: VSTS Features Timeline
+author: alexcnichols
+ms.author: alexn
+ms.date: 09/09/2017
+ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
-ms.contentid: 96c3bb9f-b3c8-4093-9d2a-a18c6e97c859
+ms.manager: douge
+description: VSTS feature updates and release notes
 ---
 
 # VSTS Features Timeline
 
-### Features under development
+## Features under development
 
 This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Most features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The “Planned Date” reflects when the feature will be available on VSTS, the “Server” column reflects when it will be available in TFS on-premises, if applicable, and the “Area” column reflects the area of the product the feature aligns with most.
 
@@ -21,7 +25,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
         </tr>
     </thead>
 	    <tbody>
-        <tr><td>2017 Q3</td><td>[VSTS Work Item Process – Rules](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/26/team-services-process-customization-roadmap-jan-2017/)</td><td>--</td><td>Work</td></tr>
         <tr><td>2017 Q3</td><td>Work Items – Query page refresh</td><td>TBD</td><td>Work</td></tr>
         <tr><td>2017 Q3</td><td>Work Items – Favoriting Backlogs, Boards, and Sprints</td><td>TBD</td><td>Work</td></tr>
         <tr><td>2017 Q3</td><td>Work Items – New project work items hub</td><td>TBD</td><td>Work</td></tr>
@@ -30,7 +33,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
         <tr><td>2017 Q3</td><td>Git – Project and repo policies for file size and casing</td><td>TBD</td><td>Code</td></tr>
         <tr><td>2017 Q3</td><td>Git – Improved Branch Updates design and searching for deleted branches</td><td>TFS vNext</td><td>Code</td></tr>
         <tr><td>2017 Q3</td><td>[CI/CD – Concurrent pipelines](https://www.visualstudio.com/docs/build/concepts/licensing/concurrent-pipelines-ts#pipeline-issues) – design improvement to not consume a pipeline until an agent is assigned</td><td>TFS vNext</td><td>Build</td></tr>
-        <tr><td>2017 Q3</td><td>CI – Multi-phase builds, shared variable groups, and pause processing of a build definition</td><td>TFS vNext</td><td>Build</td></tr>
         <tr><td>2017 Q3</td><td>[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – UX improvements, Sharing of VMs</td><td>TFS vNext</td><td>Release</td></tr>
         <tr><td>2017 Q3</td><td>[Release Management – New RM editor and templates](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/26/new-release-definition-editor-in-team-services/)</td><td>TFS vNext</td><td>Release</td></tr>
         <tr><td>2017 Q3</td><td>Release Management improved orchestration – Better notifications on Releases, Branch triggers with include/exclude filters, and ag based triggers and Selective Artifacts</td><td>TBD</td><td>Release</td></tr>
@@ -41,12 +43,11 @@ This feature list is a peek into our roadmap. It identifies some of the signific
         <tr><td>2017 Q3</td><td>Package Management – Maven general availability</td><td>TFS vNext</td><td>Package</td></tr>
         <tr><td>2017 Q3</td><td>Automated Testing – Ability to configure a batch size for better distribution across agents and frequent results publishing</td><td>TFS vNext</td><td>Test</td></tr>
         <tr><td>2017 Q3</td><td>Automated Testing – Parallel testing on multiple agents in a pool in build</td><td>TFS vNext</td><td>Test</td></tr>
-        <tr><td>2017 Q3</td><td>Automated Testing – Support for running ordered tests and webtests in build/release pipelines</td><td>TFS vNext</td><td>Test</td></tr>
+        <tr><td>2017 Q3</td><td>Automated Testing – Support for running ordered tests in build/release pipelines</td><td>TFS vNext</td><td>Test</td></tr>
         <tr><td>2017 Q3</td><td>Automated Testing – Re-run failed tests in Build and RM</td><td>TFS vNext</td><td>Test</td></tr>
         <tr><td>2017 Q3</td><td>Automated Testing – Automation agents do not need Visual Studio to run tests (test platform acquisition through alternate means)</td><td>TFS vNext</td><td>Test</td></tr>
         <tr><td>2017 Q3</td><td>Manual and Exploratory Testing (XT) – Show requirements based suites (RBS) on Kanban and enable Basic XT users to provide feedback</td><td>TBD</td><td>Test</td></tr>
         <tr><td>2017 Q3</td><td>Manual and XT – XT support for Edge</td><td>TBD</td><td>Test</td></tr>
-        <tr><td>2017 Q3</td><td>Reporting – Burndown and Burnup widget</td><td>TBD</td><td>Insights</td></tr>
         <tr><td>2017 Q3</td><td>[Improved user management – bulk editing](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/)</td><td>TBD</td><td>Shared</td></tr>
         <tr><td>2017 Q3</td><td>[Licensing users and extensions using AAD groups](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/04/team-services-large-account-user-management-roadmap-april-2017/)</td><td>TBD</td><td>Shared</td></tr>
         <tr><td>2017 Q3</td><td>[Support for Cloud Solution Providers in managing VSTS accounts and purchases](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/09/cloud-solution-provider-purchase-from-visual-studio-marketplace-roadmap/)</td><td>TBD</td><td>Shared</td></tr>
@@ -72,11 +73,10 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </tbody>
 </table>
 
-### Current features
+## Current features
 
 The features timeline lists significant features delivered to VSTS and the corresponding version of Team Foundation Server.
-Versions in the server column are linked to the appropriate download location. You can also 
-[view the build numbers for each version](#build_numbers).
+Versions in the server column are linked to the appropriate download location. You can also [view the build numbers for each version](#build_numbers).
 
 <table>
     <thead>
@@ -87,6 +87,107 @@ Versions in the server column are linked to the appropriate download location. Y
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="25">[15 Sep 2017](/vsts/release-notes/2017/sep-15-team-services)</td>
+            <td>New Queries experience</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Keyboard shortcuts in the work item form</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Contextual actions in the Work Items hub</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>HTML tags stripped in work item grids</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Filtering to the Process and Fields pages in the Process admin</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Create a folder in a repository using web</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Get a permanent link to code</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Filter text highlighting</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Wiki page deep linking</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Move page in Wiki using keyboard</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Preview content as you edit Wiki pages</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Paste rich content as HTML</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Multi-phase builds</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Personalized notifications for releases</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Manage variables using the List and Grid views in the new release definition editor</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Branch filters in environment triggers</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Improved Deployment Groups UI</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Run webtests using the VSTest task</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Chart widget for test plans and test suites</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Preview improvements and support for different log types generated by Visual Studio Test task</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Gulp, Yarn, and more authenticated feed support</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Package feed default permissions now include Project Administrators</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Burndown and Burnup widgets</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Refreshed error page and seamless tenant switching hint</td>
+            <td style="background:rgb(232, 232, 232);">Future</td>
+        </tr>
+        <tr>
+            <td>Marketplace moves to new markdown-it parser</td>
+            <td style="background:rgb(232, 232, 232);">--</td>
+        </tr>
         <tr>
             <td rowspan="29">[28 Aug 2017](/articles/news/2017/aug-28-team-services)</td>
             <td>Work Items hub</td>
