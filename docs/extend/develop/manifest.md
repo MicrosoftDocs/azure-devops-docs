@@ -97,7 +97,7 @@ Only extensions marked as `paid preview` can be converted to `paid`.
 
 Note: If you do want to target TFS but do not wish to surface a Download option for your extension then add __DoNotDownload tag (starts with two underscores) to the extension manifest.
 
-### Example of discovery properties
+### Example of additional properties
 
 [!code-json[](../_data/extension-discovery.json)]
 
@@ -112,6 +112,67 @@ Note: If you do want to target TFS but do not wish to surface a Download option 
 * 7 - branding
 
 ![card](./_img/extension-details-page.png)
+
+<a name="CustomerQnASupport"></a>
+
+### Marketplace Q&A - CustomerQnASupport property
+
+All extensions on the Visual Studio Marketplace have a Q&A section to allow one-on-one public conversations between extension users and publishers. Publishers can choose between Marketplace Q&A, GitHub issues, or custom Q&A URL for the Q&A section or disable Q&A in Marketplace using the CustomerQnASupport property in the manifest. 
+
+**Default experience** (No changes to manifest are required)
+- For extension with GitHub repository, Marketplace will redirect users in the Q&A section to the associated GitHub issues. 
+- For extension without GitHub repository, Marketplace Q&A is enabled. 
+
+For a different experience than one of the default options use the **CustomerQnASupport** property in the manifest.  
+
+
+```json
+{
+    "CustomerQnASupport": {
+        "enableqna":"true",
+        "url": "http://uservoice.visualstudio.com"
+    } 
+}
+```
+
+### Properties
+
+Properties for the CustomerQnASupport section:
+
+- **enableqna** - boolean field, set to true for marketplace or custom Q&A; false for disabling Q&A
+- **url** - string, URL for custom Q&A
+
+
+### Examples showing usage of Q&A support
+
+#### Example 10: Extension using custom Q&A
+
+```
+{
+     "CustomerQnASupport": {
+        "enableqna":"true",
+        "url": "http://uservoice.visualstudio.com"
+    } 
+}
+```
+#### Example 11: Extension with GitHub repository but using Marketplace Q&A instead of GitHub issues
+
+```
+{
+     "CustomerQnASupport": {
+        "enableqna":"true"
+    } 
+}
+```
+#### Example 12: Extension disabling Q&A section
+
+```
+{
+     "CustomerQnASupport": {
+        "enableqna":"false"
+    } 
+}
+```
 
 ## Scopes
 
@@ -463,65 +524,7 @@ Menus can be targeted by contributions of different types: action, hyperlink-act
 item entries. An action-provider can provide multiple dynamic menu items. For a given menu, items are aggregated across all contributions (of any of these
 types) that target that specific menu contribution.  
 
-<a name="CustomerQnASupport"></a>
-## Marketplace Q&A - CustomerQnASupport property
 
-All extensions on the Visual Studio Marketplace have a Q&A section to allow one-on-one public conversations between extension users and publishers. Publishers can choose between Marketplace Q&A, GitHub issues, or custom Q&A URL for the Q&A section or disable Q&A in Marketplace using the CustomerQnASupport property in the manifest. 
-
-**Default experience** (No changes to manifest are required)
-- For extension with GitHub repository, Marketplace will redirect users in the Q&A section to the associated GitHub issues. 
-- For extension without GitHub repository, Marketplace Q&A is enabled. 
-
-For a different experience than one of the default options use the **CustomerQnASupport** property in the manifest.  
-
-
-```json
-{
-    "CustomerQnASupport": {
-        "enableqna":"true",
-        "url": "http://uservoice.visualstudio.com"
-    } 
-}
-```
-
-### Properties
-
-Properties for the CustomerQnASupport section:
-
-- **enableqna** - boolean field, set to true for marketplace or custom Q&A; false for disabling Q&A
-- **url** - string, URL for custom Q&A
-
-
-### Examples showing usage of Q&A support
-
-#### Example 10: Extension using custom Q&A
-
-```
-{
-     "CustomerQnASupport": {
-        "enableqna":"true",
-        "url": "http://uservoice.visualstudio.com"
-    } 
-}
-```
-#### Example 11: Extension with GitHub repository but using Marketplace Q&A instead of GitHub issues
-
-```
-{
-     "CustomerQnASupport": {
-        "enableqna":"true"
-    } 
-}
-```
-#### Example 12: Extension disabling Q&A section
-
-```
-{
-     "CustomerQnASupport": {
-        "enableqna":"false"
-    } 
-}
-```
 <a name="approvedbadges"></a>
 
 ## Supported badge services
