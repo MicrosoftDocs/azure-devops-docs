@@ -35,7 +35,9 @@
   - name: "Link types & link relationships"
     href: /vsts/work/track/link-work-items-support-traceability?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json toc.json  
   - name: Share work plans
-    href: /vsts/work/track/share-plans?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    href: /vsts/work/track/share-plans?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+  - name: "Workflow states & state categories"
+    href: ../concepts/workflow-and-state-categories.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
   - name: New work item experience
     href: /vsts/work/process/new-work-item-experience?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
   - name: Permissions and access for work tracking

@@ -13,7 +13,7 @@ ms.date: 03/31/2017
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-All workflows consist of states, transitions, and reasons. A transition supports forward and backward movement among two states. When you add a custom state, the system automatically adds transitions from the custom state to all other inherited states (except for Removed).  
+All workflows consist of states, transitions, and reasons. Workflows are defined for a work item type (WIT). A transition supports forward and backward movement among two states. When you add a custom state, the system automatically adds transitions from the custom state to all other inherited states (except for Removed).  
 
 Each state belongs to a state category (previously referred to as a metastate). State categories support the Agile tool backlog and board views. 
 
@@ -87,6 +87,8 @@ Here's how the default, inherited states map to the state categories for all thr
 </tr>
 </table>  
 
+
+<a id="add-state-vs-kanban-column" />
 ## When to add a State versus a Kanban column
 
 Both States and Kanban columns are used to track the status of work. Workflow states are shared across a team project while Kanban columns are shared within a team. Only project collection admins can add custom states, while team admins can add Kanban columns.  
@@ -95,7 +97,24 @@ Add custom states when you want all teams to track the status according to the b
 
 Also, by adding custom states to support those workflow states that several teams want to track, you avoid the confusion that can arise when team's create a query based on a Kanban column. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path. Another work around is to formalize the columns by adding custom states which can be shared across teams. 
 
-##Related notes
+<a id="auto-complete-work-items-with-pr" />
+## Auto completion of work items with pull requests 
+
+When you link a work item to a pull request (PR), you have the option to automatically complete those work items when you successfully complete the PR.  As shown in the following image, all you have to do is check the box to **Complete linked work items after merging**. The system defaults to your selection for future PRs. 
+
+![Complete pull request dialog, Autocomplete work items with completion of PR option](_img/workflow-states-complete-pr.png)
+
+> [!NOTE]   
+> **Feature availability**: The **Complete linked work items after merging** option is available from VSTS only at this time. It will become available with the release of TFS 2018 RTW (sometime in January 2018).   
+
+In the following circumstances the system won't automatically update the work item state to Done, Closed, or the state that belongs to the Closed category for the WIT: 
+- The work item, whose WIT is managed with the Inheritance process model, is already in a State that belongs to the Resolved category. In this instance the system won't update the State. For example, if a bug derived from the Agile process is in a Resolved state, the system won't transition it to Closed.   
+- The work item is already in a State that belongs to the Completed category. No further transition is required. 
+- The WIT associated with the work item contains one or more workflow field rules that prevent the work item being saved to a next state. For example, a rule requires that another field must be defined as part of closing the work item. This occurrence is only valid for WITs managed by the Hosted or On-premises XML process models. 
+
+To learn more about process models, see [Customize your work tracking experience](../customize/customize-work.md).  
+
+## Related notes
 
 - [Lead Time and Cycle Time control charts (widgets)](../../report/guidance/cycle-time-and-lead-time.md)
 - [Customize a workflow for a process (Inheritance process model)](../process/customize-process-workflow.md)
