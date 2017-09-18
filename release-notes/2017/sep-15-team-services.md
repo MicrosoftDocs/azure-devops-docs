@@ -2,7 +2,7 @@
 title: Multi-phase builds – VSTS Sprint 123 Update
 author: alexcnichols
 ms.author: alexn
-ms.date: 09/09/2017
+ms.date: 09/15/2017
 ms.topic: article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -153,21 +153,17 @@ You can now paste rich text in the markdown editor of **Wiki** from any browser-
 
 ### Multi-phase builds
 
-Modern multi-tier apps often must be built with different sets of tasks, on different sets of agents with varying capabilities, sometimes even on different platforms. Until now, in VSTS you had to create a separate build for each aspect of these kinds of apps. Today we’re announcing the availability of multi-phase builds.
+Modern multi-tier apps often must be built with different sets of tasks, on different sets of agents with varying capabilities, sometimes even on different platforms. Until now, in VSTS you had to create a separate build for each aspect of these kinds of apps. Today we’re announcing the first set of features to enable multi-phase builds.
 
 <img src="_img/09_15_17.png"; alt="Multi-phase builds" style="border:1px solid Silver; display: block; margin: auto;" />
 
-You can configure each phase with the tasks you need, and specify a different agent queue for each phase. Each phase can run multiple jobs in parallel using multipliers. You can publish artifacts in one phase, and then download those artifacts to use them in a subsequent phase.
-
-Some scenarios that are now possible include:
-
-1. Compile your app on a build agent pool in the first phase, and then run tests on a test agent pool in the second phase.
-1. Compile an ASP.NET Core back-end in the first phase on a Windows agent, and then compile the mobile front-end for your app on a macOS agent in the second phase.
+You can configure each phase with the tasks you need, and specify different demands for each phase. Each phase can run multiple jobs in parallel using multipliers. You can publish artifacts in one phase, and then download those artifacts to use them in a subsequent phase.
 
 When this feature reaches your account, you’ll notice that all your current build definitions have been upgraded to have a single phase. Some of the configuration options such as demands and multi-configuration will be moved to each phase. You can continue to select a default queue for all the phases in a build definition, and then optionally override that choice in each phase.
 
 We’re still working on a few features, including:
 
+* Ability to select a different queue in each phase.
 * Ability to consume output variables from one phase in a subsequent phase.
 * Ability to run phases in parallel. (For now, all the phases you define run sequentially).
 
