@@ -26,6 +26,8 @@
     href: work-multi-team-ownership-backlogs.md
   - name: Backlog priority or stack rank order
     href: stack-rank-backlog-position.md
+  - name: "Workflow states & state categories"
+    href: ../concepts/workflow-and-state-categories.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
 - name: How-to Guides
   items:
   - name: Filter product and portfolio backlogs
