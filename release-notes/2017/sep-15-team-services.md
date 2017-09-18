@@ -159,7 +159,7 @@ Modern multi-tier apps often must be built with different sets of tasks, on diff
 
 You can configure each phase with the tasks you need, and specify different demands for each phase. Each phase can run multiple jobs in parallel using multipliers. You can publish artifacts in one phase, and then download those artifacts to use them in a subsequent phase.
 
-When this feature reaches your account, you’ll notice that all your current build definitions have been upgraded to have a single phase. Some of the configuration options such as demands and multi-configuration will be moved to each phase. You can continue to select a default queue for all the phases in a build definition, and then optionally override that choice in each phase.
+When this feature reaches your account, you’ll notice that all your current build definitions have been upgraded to have a single phase. Some of the configuration options such as demands and multi-configuration will be moved to each phase.
 
 We’re still working on a few features, including:
 
