@@ -33,17 +33,17 @@
 - name: Resources
   items:
   - name: Edit load tests
-    href: https://msdn.microsoft.com/library/ff406975%28v=vs.140%29.aspx
+    href: https://msdn.microsoft.com/library/ff406975%28v=vs.120%29.aspx
   - name: Distribute load tests
-    href: https://msdn.microsoft.com/library/dd728093%28v=vs.140%29.aspx
+    href: https://msdn.microsoft.com/library/dd728093%28v=vs.120%29.aspx
   - name: Analyze load test results
-    href: https://msdn.microsoft.com/library/ee923686%28v=vs.140%29.aspx
+    href: https://msdn.microsoft.com/library/ee923686%28v=vs.120%29.aspx
   - name: Fix undetectable parameters
-    href: https://msdn.microsoft.com/library/ff460245%28v=vs.140%29.aspx
+    href: https://msdn.microsoft.com/library/ff460245%28v=vs.120%29.aspx
   - name: "Create custom code & plug-ins"
-    href: https://msdn.microsoft.com/library/ee923683%28v=vs.140%29.aspx
+    href: https://msdn.microsoft.com/library/ee923683%28v=vs.120%29.aspx
   - name: Web Performance Test API
-    href: https://msdn.microsoft.com/library/ms182558.aspx
+    href: https://msdn.microsoft.com/library/ms182558%28v=vs.120%29.aspx
   - name: Posts on the ALM blog
     href: https://social.msdn.microsoft.com/Search/en-US?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
   - name: Manual and exploratory testing

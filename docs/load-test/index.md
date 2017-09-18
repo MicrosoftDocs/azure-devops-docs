@@ -58,7 +58,7 @@ Learn how to run performance and load tests against your app.
 
 | | | |
 | --- | --- | --- |
-| [Fix undetectable parameters](https://msdn.microsoft.com/library/ff460245%28v=vs.140%29.aspx) | [Edit load tests](https://msdn.microsoft.com/library/ff406975%28v=vs.140%29.aspx) | [Distribute load tests](https://msdn.microsoft.com/library/dd728093%28v=vs.140%29.aspx) |
-| [Create custom code &amp; plug-ins](https://msdn.microsoft.com/library/ee923683%28v=vs.140%29.aspx) |  [Analyze load test results](https://msdn.microsoft.com/library/ee923686%28v=vs.140%29.aspx) | [Web Performance Test API](https://msdn.microsoft.com/library/ms182558.aspx) |
+| [Fix undetectable parameters](https://msdn.microsoft.com/library/ff460245%28v=vs.120%29.aspx) | [Edit load tests](https://msdn.microsoft.com/library/ff406975%28v=vs.120%29.aspx) | [Distribute load tests](https://msdn.microsoft.com/library/dd728093%28v=vs.120%29.aspx) |
+| [Create custom code &amp; plug-ins](https://msdn.microsoft.com/library/ee923683%28v=vs.120%29.aspx) |  [Analyze load test results](https://msdn.microsoft.com/library/ee923686%28v=vs.120%29.aspx) | [Web Performance Test API](https://msdn.microsoft.com/library/ms182558%28v=vs.120%29.aspx) |
 | [Manual and exploratory testing](../manual-test/index.md) | [Continuous testing](../build-release/test/index.md) | [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios) |
 | | | |

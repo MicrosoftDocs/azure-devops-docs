@@ -21,18 +21,16 @@ You have two options if you want to test Windows Store apps on a phone, tablet, 
   
 - Couple the device to your computer, and run the tests using Microsoft Test Manager. This option allows you to capture screenshots and [collect diagnostic data](collect-more-diagnostic-data-in-manual-tests.md) from the device.  
   
-  You can perform manual tests of Windows Store apps on any type of Windows 8 remote device.  
+### Prepare the Windows device for testing  
   
-### Prepare the Windows 8 device for testing  
-  
-1. If possible, use the same user credentials or the same Microsoft Live ID on the Windows 8 device and on the computer that is running Microsoft Test Manager. If the user is different, the machine that you are running Microsoft Test Manager from will display a credentials dialog box when you try to connect.  
+1. If possible, use the same user credentials or the same Microsoft Live ID on the Windows device and on the computer that is running Microsoft Test Manager. If the user is different, the machine that you are running Microsoft Test Manager from will display a credentials dialog box when you try to connect.  
   
 1. Install the Remote Debugger on the device that you want to test. See [Installing the Remote Debugger](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine#BKMK_download).
-   (This is only supported for Windows 8 client operating systems. Windows Server 2012 is not supported.)  
+   (This is only supported for Windows client operating systems. Windows Server 2012 is not supported.)  
   
    The Microsoft Test Tools Adapter Configuration Tool will appear on the device as a new tile.  
   
-1. Choose the Microsoft Test Tools Adapter Configuration Tool tile in Windows 8.  
+1. Choose the Microsoft Test Tools Adapter Configuration Tool tile in Windows.  
   
 1. Choose **Start Service** in the configuration dialog box for Microsoft Test Tools Adapter to configure the Microsoft Test Tools Adapter.  
   
@@ -42,7 +40,7 @@ You have two options if you want to test Windows Store apps on a phone, tablet, 
   
    [Create some test cases](plan-manual-tests-with-microsoft-test-manager.md) if you haven't already done so.  
   
-1. On the **Run Tests** page, choose the **Modify** link next to **Perform tests using:** to specify the remote Windows 8 device.  
+1. On the **Run Tests** page, choose the **Modify** link next to **Perform tests using:** to specify the remote Windows device.  
   
    ![Select where to run your manual test](_img/testing-windows-store-apps/mtr_win8_whererun.png)  
   
@@ -76,7 +74,7 @@ You have two options if you want to test Windows Store apps on a phone, tablet, 
   
    As you complete each step of the test, [mark it passed or failed on the host computer](run-manual-tests-with-microsoft-test-manager.md).  
   
-   The following features are supported while you test on a Windows 8 Remote device:  
+   The following features are supported while you test on a Windows Remote device:  
   
    |Feature|Support|  
    |-------------|-------------|  
