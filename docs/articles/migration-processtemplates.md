@@ -75,6 +75,7 @@ Use the "ConformProject.ps1" script to conform a project of your choosing to the
 <br/>
 Make sure you do this for each and every project. 
 
+<a id="dealing-with-process-errors"></a>
 ## Dealing with Process Errors
 
 Are your process templates customized? Are you using an older outdated process template? If so, you will most likely have process validation errors. TfsMigrator does an exhaustive check against your process templates. It checks to make sure that it is valid for VSTS. Odds are you will need to make some adjustments and apply them to your TFS collection.

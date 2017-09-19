@@ -1,6 +1,6 @@
 ---
 title: Migration import from TFS to Visual Studio Team Services (VSTS) | VSTS & TFS
-description: Walks through the steps from prepping a collection to getting it uploaded for import
+description: Walks through the steps from preparing a collection to getting it uploaded for import
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-overview
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
@@ -11,14 +11,17 @@ ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
 
 # Import
 
-This page walks through how to perform all of the necessary preparation work required to get an import to Visual Studio Team Services (VSTS) ready to run.  If you encounter errors during the process be sure to review the [troubleshooting](.\migration-troubleshooting.md) and [advanced topics](.\migration-advanced-topics.md) documentation. 
+This page walks through how to perform all of the necessary preparation work required to get an import to Visual Studio Team Services (VSTS) ready to run.  If you encounter errors during the process be sure to review the [troubleshooting](.\migration-troubleshooting.md).
+
+> [!NOTE]   
+> Be sure that you're on a [supported version](migration-overview.md#supported-tfs-versions-for-import) of TFS before continuing the other import tasks.
 
 ## Validating a Collection
 Now that you’ve confirmed you’re on the latest version of TFS the next step is to validate each collection you wish to migrate to VSTS. 
 Validate will examine a variety of aspects in your collection, including, but not limited to: size, collation, identity, and processes. 
 Running a validation is done through TfsMigrator. To start, take a copy of [TfsMigrator](https://aka.ms/TFSDataImport) and copy it onto one of your 
-TFS server’s Application Tiers (AT). Once there you can unzip it. The tool can also be run from the TFS AT as long as this PC can 
-connect to the TFS instance's configuration database – example below.
+TFS server’s Application Tiers (AT). Once there you can unzip it. The tool can also be run from the a different machine without TFS installed as long as the PC can connect to the TFS instance's configuration database – example below.
+
 
 To get started, open a command prompt on the server and CD to the path where you have TfsMigrator placed. Once there it’s recommended that you take a second to review the help text provided with the tool. Run the following command to see the top level help and guidance:
 
@@ -38,29 +41,25 @@ Since this is our first time validating a collection we’ll keep it simple. You
 TfsMigrator validate /collection:{collection URL}
 ```
 
-For example, if one was to run this command against their default collection the command would look like:
+For example, to run against the default collection the command would look like:
 
 ```cmdline
 TfsMigrator validate /collection:http://localhost:8080/tfs/DefaultCollection
 ```
 
-Running it from a machine other than the TFS server requires the /connectionString parameter. The connection string parameter is a pointer to your TFS server's configuration database. As an example, if the prepare command was being run by the Fabrikam corporation the command would look like:
+Running it from a machine other than the TFS server requires the /connectionString parameter. The connection string parameter is a pointer to your TFS server's configuration database. As an example, if the validate command was being run by the Fabrikam corporation the command would look like:
 
 ```cmdline
 TfsMigrator validate /collection:http://fabrikam:8080/tfs/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /connectionString:"Data Source=fabrikamtfs;Initial Catalog=Tfs_Configuration;Integrated Security=True"
 ```
 
-Executing the validate command will have TfsMigrator go through the entire collection and check for potential migration issues. 
-It’s important to note that TfsMigrator **DOES NOT** edit any data or structures in the collection. It also **DOES NOT**
-try to send any data back to Microsoft. It only reads the collection to identify issues. 
+It's important to note that TfsMigrator **DOES NOT** edit any data or structures in the collection. It only reads the collection to identify issues. 
 
 Once the validation is complete you’ll be left with a set of log files and a set of results printed to the command prompt screen. 
 
 ![TfsMigrator validate output](_img/migration-import/tfsmigratorConsole.png)
 
-If all validations passed, then the collection is ready to import and you can safely move on to generating the required import files. 
-Validating import file output can be safely ignored for now – it’s covered later on. If TfsMigrator flagged any errors, 
-they will need to be corrected before moving on. See [troubleshooting](.\migration-troubleshooting.md) for guidance on correcting validation errors. 
+If all of the validations pass, you are ready to move onto the next step of the import process. If TfsMigrator flagged any errors, they will need to be corrected before moving on. See [troubleshooting](.\migration-troubleshooting.md) for guidance on correcting validation errors. 
 
 When you open up the log directory you will notice that there are several logging files. 
 
@@ -69,17 +68,13 @@ When you open up the log directory you will notice that there are several loggin
 The log titled ```TfsMigrator.log``` is going to be the main log which contains details on everything that was run. To make it easier to narrow down on specific areas, 
 a log is generated for each major validation operation. For example, if TfsMigrator had reported an error in the “Validating Project Processes” step, then one can 
 simply open the ```ProjectProcessMap.log``` file to see everything that was run for that step instead of having to scroll through the overall log. 
-The ```TryMatchOOProcessMatch.log``` should be ignored if you have applied any customizations to your projects' processes. It's meant to confirm if your 
-collection is eligible to start using the inherited process management model after migration. 
-
-If you do hit a failure we would like to ask that you zip up your logs from the run and send them to 
-[vstsdataimport@microsoft.com](mailto:vstsdataimport@microsoft.com). This helps us identify areas of future investment for our migration pipeline.
+The ```TryMatchOobProcesses.log``` should only be reviewed if you’re trying to import your project processes to use the [inherited model](.\migration-processtemplates.md). If you don't want to use the new inherited model then the errors in this file will not prevent you from doing an import to VSTS and can be ignored. 
 
 ## Generating Import Files
-By this point you will have run TfsMigrator *validate* against the collection that you plan to migrate and It should be returning "All collection validation passed". This is a great message! It means that your collection is ready to import to VSTS. But, before you start taking the collection offline and notifying your co-workers about the upcoming migration, there is one more bit of preparation that needs to be completed – generating the import files. These two files specify your identity map between Active Directory (AD) and Azure Active Directory (AAD), and the import specification that will be used to kick off your migration. 
+By this point you will have run TfsMigrator *validate* against the collection and it is returning "All collection validations passed".  Before you start taking the collection offline to migrate, there is some more preparation that needs to be completed – generating the import files. These two files specify your identity map between Active Directory (AD) and Azure Active Directory (AAD), and the import specification that will be used to kick off your migration. 
 
 ### Prepare Command
-The prepare command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map and then tries to connect to AAD to find each identity’s match. If your company has employed the Azure Active Directory Connect tool (formerly known as the Directory Synchronization tool, Directory Sync tool, or the DirSync.exe tool), then TfsMigrator should be able to auto-populate the mapping file. The Import specification file is simply a near empty file which you'll need to fill out prior to import. 
+The prepare command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map and then tries to connect to AAD to find each identity’s match. If your company has employed the Azure Active Directory Connect tool (formerly known as the Directory Synchronization tool, Directory Sync tool, or the DirSync.exe tool), then TfsMigrator should find the matching identities and mark them as OK. If it doesn't find a match you will need to investigate why the user wasn't included in your directory sync. The Import specification file should be filled out prior to importing. 
 
 Unlike the validate command, prepare **DOES** require an internet connection as it needs to reach out to AAD in order to populate the identity mapping file. If your TFS server doesn't have internet access, you'll need to run the tool from a different PC that does. As long as you can find a PC that has an intranet connection to your TFS server and an internet connection then you can run this command. Run the following command to see the guidance for the prepare command:
 
@@ -89,26 +84,28 @@ TfsMigrator prepare /help
 
 Included in the help documentation are instructions and examples for running TfsMigrator from the TFS server itself and a remote PC. If you're running the command from one of the TFS server's Application Tiers (ATs) then your command should have the following structure:
 
+
 ```cmdline
-TfsMigrator prepare /collection:{collection URL} /tenantDomainName:{name}
+TfsMigrator prepare /collection:{collection URL} /tenantDomainName:{name} /accountRegion:{region}
 ```
 
-If you're not running it from the TFS server, then the command will have the following structure:
-
 ```cmdline
-TfsMigrator prepare  /collection:{collection URL} /tenantDomainName:{name} /connectionString:"Data Source={sqlserver};Initial Catalog=Tfs_Configuration;Integrated Security=True"
+TfsMigrator prepare  /collection:{collection URL} /tenantDomainName:{name} /accountRegion:{region} /connectionString:"Data Source={sqlserver};Initial Catalog=Tfs_Configuration;Integrated Security=True"
 ```
 
 The connection string parameter is a pointer to your TFS server's configuration database. As an example, if the prepare command was being run by the Fabrikam corporation the command would look like:
 
 ```cmdline
-TfsMigrator prepare /collection:http://fabrikam:8080/tfs/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /connectionString:"Data Source=fabrikamtfs;Initial Catalog=Tfs_Configuration;Integrated Security=True"
+TfsMigrator prepare /collection:http://fabrikam:8080/tfs/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /accountRegion:{region} /connectionString:"Data Source=fabrikamtfs;Initial Catalog=Tfs_Configuration;Integrated Security=True"
 ```
 
 Upon executing this command, TfsMigrator will run a complete validate to ensure that nothing has changed with your collection since the last full validate. 
-If any new issues are detected, then the import files will not be generated. Shortly after the command has started running an AAD login window will appear. 
+If any new issues are detected, then the import files will not be generated. Shortly after the command has started running, an AAD login window will appear. 
 You will need to sign in with an identity that belongs to the tenant domain specified in the command. It's important to make sure that the AAD tenant specified 
 is the one you want your future VSTS account to be backed with. For our Fabrikam example the user would enter something similar to what's shown in the below image.
+
+> [!IMPORTANT] 
+> Do NOT use a test AAD tenant for a test import and your production AAD tenant for the production run. Using a test AAD tenant can result in identity import issues when you begin your production run with your organization's production AAD tenant.
 
 ![AAD login prompt](_img/migration-import/aadLogin.png)
 
@@ -122,7 +119,7 @@ It's recommended that you take time to fill out the import specification file an
 
 ### Import Specification File
 
-The import specification is a JSON file that serves as the master import file and provides information such as the desired account name, subscription, account region, storage account information, and location of the identity mapping file. Most of fields are auto-populated, some fields require user input prior to attempting an import.
+The import specification is a JSON file that serves as the file to provide import settings. It includes information such as the desired account name, storage account information, and location of the identity mapping file. Most of fields are auto-populated, some fields require user input prior to attempting an import.
 
 ![Newly generated import specification file](_img/migration-import/importSpecNotFilledOut.png)
 
@@ -131,18 +128,19 @@ Here is the breakdown of the fields and what action needs to be taken:
 |    Field              |    Explanation                                                                                             |    Action                                                                                                                                                                                                                                 |
 |--------------------------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
 |    Source             |    Information detailing location and names of source data files used for import.                          |    None - Review information for subfield actions below.  |
-|    Target             |    Information detailing desired region and name for the new VSTS account.                        |    None - Review information for subfield actions below.  |
-|    ValidationData     |    Contains data related to database size,   collation, and usage.                                         |    None – It contains data that is captured during import.                                                                                                                                                                                      |
+|    ValidationData     |    Contains information needed to help drive your import experience                                        |    The 'ValidationData' section can be ignored as it's generated by TfsMigrator. It contains information needed to help drive your import experience, so it's important that you don't edit the values inside of this section or your import could fail to start.   |
 |    Files              |    Name of the files containing import data.                                                               |    None - Review information for subfield actions below. |
 |    Target             |    Properties describing the new VSTS account to import into.                                     |    None - Review information for subfield actions below. | 
-|    AccountName        |    Desired name for the account that will be created   during the import.                                  |    Select a name. This name can be quickly changed   later after the import has completed. Note – do **NOT** create the account before   running the import. The account will be created as part of the import   process.                 |
-|    Region      |    Region that your account will be hosted in.                                                             |    Review the list of regions in the generated files   text. Replace the entry for this value with the short name of the region you   desire the account to reside in.                                                                    |
-|    Location    |    SAS key to the Azure storage account hosting the   DACPAC and identity mapping file.                    |    None – This will be covered in a later step.                                                                                                                                                                                           |
-|    Dacpac         |    A file that packages up your collection database   that is used to bring the data in during import.     |    None - In a later step you'll generate this file   using your collection and will upload it to an Azure storage account. It will   need to be updated based on the name you use when generating the DACPAC later   in this process.    |
-|    IdentityMapping   |    Name of the identity mapping file to use.                                                               |    None - In a later step you'll upload this file   along with the DACPAC to an Azure storage account. If you change the name of   the file be sure to update it here as well.                                                            |
+|    AccountName        |    Desired name for the account that will be created during the import.                                  |    Select a name. This name can be quickly changed later after the import has completed. Note – do **NOT** create the account before   running the import. The account will be created as part of the import   process.                 |
+|    Location    |    SAS Key to the Azure storage account hosting the DACPAC and identity mapping file.                    |    None – This will be covered in a later step.                                                                                                                                                                                           |
+|    Dacpac         |    A file that packages up your collection database that is used to bring the data in during import.     |    None - In a later step you'll generate this file using your collection and will upload it to an Azure storage account. It will need to be updated based on the name you use when generating the DACPAC later in this process.    |
+|    IdentityMapping   |    Name of the identity mapping file to use.                                                               |    None - In a later step you'll upload this file along with the DACPAC to an Azure storage account. If you change the name of the file be sure to update it here as well.                                                            |
 |    ImportCode        |    Code given out during the preview to allow an import to be queued.      |    None - In a later step you'll add this to the import specification. 
+|    ImportType        |    The type of import that you want to run.      |    None - In a later step you will select the type of import to run. 
+ 
 
-> It's important to note that if you have selected to import your collection into a region outside of the United States or Europe, then your data will be held in a secured location in the United States for up to 7 days as a staging point for the data import process. After that period has ended your staged data will be deleted.
+> [!IMPORTANT] 
+> If you have selected to import your collection into a region outside of the United States or Europe, then your data will be held in a secured location in the United States for up to 7 days as a staging point for the data import process. After that period has ended your staged data will be deleted.
 
 After following the above instructions, you should have a file that looks somewhat like the below. 
 
@@ -150,8 +148,14 @@ After following the above instructions, you should have a file that looks somewh
 
 In this case, the user planning the Fabrikam import added the account name "Fabrikam-Import" and selected the Central US region in the Target object. Other values were left as is to be modified just before taking the collection offline for the migration. 
 
-#### Supported Azure Regions for Import
-VSTS is available in a multitude of Azure [regions](https://azure.microsoft.com/en-us/regions/services/). However, not all Azure regions that VSTS is present in are supported for import. The below table details the Azure regions that can be selected for import. Also included is the value which needs to be placed in the import specification file to target that region for import.  
+> [!NOTE]   
+> Dry run imports will have a '-dryrun' automatically appended to the end of the account's name. This can be changed post import.
+
+
+<a id="supported-azure-regions-for-import"></a>
+### Supported Azure Regions for Import
+VSTS is available in several Azure [regions](https://azure.microsoft.com/en-us/regions/services/). However, not all Azure regions that VSTS is present in are supported for import. The below table details the Azure regions that can be selected for import. Also included is the value which needs to be placed in the import specification file to target that region for import.  
+ 
 
 |    Geographic Region            |    Azure Region                |  Import Specification Value |
 |---------------------------------|--------------------------------|-----------------------------|
@@ -160,6 +164,7 @@ VSTS is available in a multitude of Azure [regions](https://azure.microsoft.com/
 |    Australia                    |    Australia East              |      EAU                    |
 |    South America                |    Brazil South                |      SBR                    |
 |    Asia Pacific                 |    South India                 |      MA                     |
+|    Canada                       |    Central Canada              |      CCA                    |
 
 ### Identity Map
 Arguably the identity map is of equal importance to the actual data that you will be migrating to VSTS. Before opening the file it's important to understand how identity import operates and what the potential results could entail. When importing an identity, they could either end up becoming active or historical. The difference between active and historical identities is that active identities can log into VSTS whereas historical identities cannot. It's important to note that once imported as a historical identity, there is no way to move that identity to become active.
@@ -182,6 +187,13 @@ It's recommended that the identity mapping file be opened up in Excel. This will
 
 The table below explains what each column is used for. 
 
+
+> [!NOTE]   
+> Only the license assignment override field is editable. Other edits will not be respected and could cause a user to not be imported as active.
+> 
+> The UserPrincipalName[Target] column **CANNOT** be manually updated. Users marked as "NO MATCH" will need to be investigated with your AAD admin to see why they aren't part of your Azure AD Connect sync. 
+
+
 |    Column                           |    Explanation                                                                                                                                                                                                                                               |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    User                             |    Friendly display name used by the identity in   TFS. Makes it easier to identify which user the line in the map is   referencing.                                                                                                                         |
@@ -203,7 +215,8 @@ Next, review the identities that are labeled as 'NO MATCH'. This implies that a 
 3. The identity simply doesn't exist in your AAD.
 4. The user that owned that identity no longer works at the company.
 
-In the first two cases the desired on-premises AD identity will need to be setup for sync with Azure AD. Check the [documentation](http://aks.ms/azureADconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises AD and Azure AD. It's required that Azure AD Connect be setup and run for identities to be imported as active in VSTS. 
+In the first two cases the desired on-premises AD identity will need to be set up for sync with Azure AD. Check the [documentation](https://aka.ms/azureadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises AD and Azure AD. It's required that Azure AD Connect be setup and run for identities to be imported as active in VSTS. 
+
 
 For the second and third case, the row can be left or removed from the file. The end result will be the same case - a historical identity. It's recommended that you reduce the mapping file down to just the set of identities that you wish be active after import, for simplicity and readability. 
 
@@ -224,10 +237,9 @@ To import with all no matches, simply follow the steps outlined in later section
 TfsMigrator will warn if it detects the complete no match scenario. If you decide to go down this migration path you will need to consent in the tool to the limitations. 
 
 ### Visual Studio Subscriptions
-TfsMigrator will not be able to automatically detect Visual Studio subscriptions when generating the identity mapping file. There are two ways to ensure that your users have their Visual Studio subscription benefits applied in VSTS post import:
+TfsMigrator is unable to detect Visual Studio subscriptions (formerly known as MSDN benefits) when generating the identity mapping file. Instead, it's recommended that you leverage the auto license upgrade feature post import. As long as a user's work account is [linked](https://aka.ms/LinkVSSubscriptionToAADAccount) correctly, VSTS will automatically apply their Visual Studio subscription benefits on their first login post import. You're never charged for licenses assigned during import, so this can be safely handled post import. 
 
-* **Override License Assignments** - Follow the instructions on [overriding licensing](migration-advanced-topics.md) values to specify Visual Studio subscriptions for the correct set of users. 
-* **Auto Upgrade Post Import** - As long as a user's work account is [linked](https://aka.ms/LinkVSSubscriptionToAADAccount) correctly, VSTS will automatically apply their Visual Studio subscription benefits on their first login post import. You're never charged for other types of licenses assigned during import.
+You don't need to repeat a dry run import if users don't automatically get upgraded to use their Visual Studio Subscription in VSTS. Visual Studio Subscription linking is something that happens outside of the scope of an import. As long as the work account gets linked correctly before or after the import then the user will automatically have their license upgraded on the next sign in. Once they've been upgraded successfully, next time you import the user will be upgraded automatically on the first sign in to the account.  
 
 ## Getting Ready to Import
 By this point you will have everything ready to execute on your import. You will need to schedule downtime with your team to the take the collection offline for the migration. Once you have an agreed upon a time to run the import you need to get all of the required assets you have generated and a copy of the database uploaded to Azure. This process has five steps:
@@ -238,18 +250,28 @@ By this point you will have everything ready to execute on your import. You will
 4.	Generate a SAS Key to that storage account.
 5.	Fill out the last fields in the import specification. 
 
+
+> [!NOTE]   
+> We **strongly** recommend that your organization complete a dry run import before performing a production import. Dry runs allow you to validate that the import process works for your collection and that there are no unique data shapes present which might cause a production import failure. 
+
+
 ### Detaching your Collection
-Detaching the collection is a crucial step in the import processes. Identity data for the collection resides in the TFS server’s configuration database while the collection is attached and online. When a collection is detached from the TFS server it will take a copy of that identity data and package it up with the collection for transport. Without this data the identity portion of the import **CANNOT** be executed. Resources are available online to walk through [detaching a collection](../tfs-server/admin/move-project-collection.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json). It's recommended that the collection stay detached until the import has been completed, as there isn't a way to import the changes which occurred during the import.
+[Detaching the collection](/vsts/tfs-server/admin/move-project-collection) is a crucial step in the import processes. Identity data for the collection resides in the TFS server’s configuration database while the collection is attached and online. When a collection is detached from the TFS server it will take a copy of that identity data and package it up with the collection for transport. Without this data the identity portion of the import **CANNOT** be executed. It's recommended that the collection stay detached until the import has been completed, as there isn't a way to import the changes which occurred during the import.
 
-If you're running a dry run (test) import, it's recommended to reattach your collection after backing it up for import since you won't be concerned about having the latest data for this type of import. You could also choose to employ an [offline detach](../tfs-server/command-line/tfsconfig-cmd.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json#offlinedetach) for dry runs to avoid offline time all together. It's important to weigh the cost involved with going the zero downtime route for a dry run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the long run.
+If you're running a dry run (test) import, it's recommended to reattach your collection after backing it up for import since you won't be concerned about having the latest data for this type of import. You could also choose to employ an [offline detach](/vsts/tfs-server/command-line/tfsconfig-cmd#offlinedetach) for dry runs to avoid offline time all together. It's important to weigh the cost involved with going the zero downtime route for a dry run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the long run.
 
+
+<a id="generating-a-dacpac" />
 ### Generating a DACPAC
 
-> **Important**: Before proceeding, ensure that your collection was [detached](migration-import.md#detaching-your-collection) prior to generating a DACPAC. If you didn't complete this step the import will fail.
+> [!IMPORTANT]  
+> Before proceeding, ensure that your collection was [detached](.\migration-import.md#detaching-your-collection) prior to generating a DACPAC.
 
 Data-tier Application Component Packages ([DACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/data-tier-applications)) is a feature in SQL server that allows database changes to be packaged into a single file and deployed to other instances of SQL. It can also be restored directly to VSTS and is therefore utilized as the packaging method for getting your collection's data in the cloud. You're going to use the SqlPackage.exe tool to generate the DACPAC. This tool is included as part of the [SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt). 
 
-When generating a DACPAC there are two considerations that you'll want to keep in mind, the disk that the DACPAC will be saved on and the space on disk for the machine performing the DACPAC generation. Before generating a DACPAC you’ll want to ensure that you have enough space on disk to complete the operation. While creating the package, SqlPackage.exe temporarily stores data from your collection in the temp directory on the C: drive of the machine you initiate the packaging request from. Some users might find that their C: drive is too small to support creating a DACPAC. Estimating the amount of space you'll need can be found by looking for the largest table in your collection database. As DACPACs are created one table at a time. The maximum space requirement to run the generation will be roughly equivalent to the size of the largest table in the collection's database. Running the below query will display the size of the largest table in your collection's database in MBs. Compare that size with the free space on the C: drive for the machine you plan to run the generation on. 
+When generating a DACPAC there are two considerations that you'll want to keep in mind, the disk that the DACPAC will be saved on and the space on disk for the machine performing the DACPAC generation. Before generating a DACPAC you’ll want to ensure that you have enough space on disk to complete the operation. While creating the package, SqlPackage.exe temporarily stores data from your collection in the temp directory on the C: drive of the machine you initiate the packaging request from. Some users might find that their C: drive is too small to support creating a DACPAC. Estimating the amount of space you'll need can be found by looking for the largest table in your collection database. As DACPACs are created one table at a time. The maximum space requirement to run the generation will be roughly equivalent to the size of the largest table in the collection's database. You will also need to take into account the size of the collection database as reported in TfsMigrator.log file from a validation run, if you choose to save the generated DACPAC on the C: drive.
+
+Running the below query will display the size of the largest table in your collection's database in MBs. Compare that size with the free space on the C: drive for the machine you plan to run the generation on. 
 
 ```SQL 
 SELECT TOP 1 OBJECT_NAME(object_id), sum(reserved_page_count) * 8/1024.0 as SizeInMb
@@ -285,37 +307,29 @@ SqlPackage.exe /sourceconnectionstring:"Data Source=localhost;Initial Catalog=Tf
 
 The output of the command will be a DACPAC that is generated from the collection database Tfs_Foo called Tfs_Foo.dacpac. 
 
-If you run into trouble generating the DACPAC or if your total collection data size is greater than 500GBs, please reach out to [vstsdataimport@microsoft.com](mailto:vstsdataimport@microsoft.com). We'll work with you to get your collection imported into VSTS. 
-
 ### Importing Large Collections
 
+> [!NOTE]   
 > Importing using a SQL Azure VM must only be used if your collection database is above the recommended size below. Otherwise, use the DACPAC method outlined above.
 
-DACPACs offer a fast and relatively simplistic method for moving collections into VSTS. However, once a collection database crosses the 150GB size threshold the benefits of using a DACPAC start to diminish. For databases over this size threshold, a different data packaging approach is required to migrate to VSTS. 
+DACPACs offer a fast and relatively simplistic method for moving collections into VSTS. However, once a collection database crosses the 150GB size threshold the benefits of using a DACPAC start to diminish. For databases over this size threshold, a different data packaging approach is required to migrate to VSTS. If you're unsure if your collection is over the size threshold then you should run a TfsMigrator validate on the collection. The validation will let you know if you need to use the SQL Azure VM method for import or not. 
 
-Before going any further, it’s always recommended to see if [old data can be cleaned up](../accounts/clean-up-data.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json). Overtime collections can build up very large volumes of data. This is a natural part of the devops process. However, some of this data might no longer be relevant and doesn’t need to be kept around. Some common examples are older workspaces and build results. Cleaning older, no longer relevant artifacts, might remove a lot more space than one would expect. It could be the difference between using the DACPAC import method or having to use a SQL Azure VM. It's important to note that once you deleted older data that it **CANNOT** be recovered without restoring an older backup of the collection.
+Before going any further, it’s always recommended to see if [old data can be cleaned up](https://www.visualstudio.com/en-us/docs/setup-admin/clean-up-data). Over time collections can build up very large volumes of data. This is a natural part of the DevOps process. However, some of this data might no longer be relevant and doesn’t need to be kept around. Some common examples are older workspaces and build results. Cleaning older, no longer relevant artifacts might remove a lot more space than one would expect. It could be the difference between using the DACPAC import method or having to use a SQL Azure VM. It's important to note that once you deleted older data that it **CANNOT** be recovered without restoring an older backup of the collection.
 
-If you’re still unable to get the database under the DACPAC threshold then you will need to setup a SQL Azure VM to import to VSTS. There several steps involved in setting up a SQL Azure VM for migrating data to VSTS. We’ll walk through how to accomplish this end-to-end. Steps covered include:
+If you are under the DACPAC threshold, follow the instructions to [generate a DACPAC](#generating-a-dacpac) for import. If you’re still unable to get the database under the DACPAC threshold then you will need to setup a SQL Azure VM to import to VSTS. We’ll walk through how to accomplish this end-to-end. At a high-level the steps covered include:
 
 1. Setting up a SQL Azure VM
-2. Restoring your database on the VM
-3. Creating an identity to connect to the collection database
-4. Configuring your import specification file to use a SQL connection string
-5. Optionally, we recommend restricting access to just VSTS IPs
+2. Optionally, we recommend restricting access to just VSTS IPs
+3. Restoring your database on the VM
+4. Creating an identity to connect to the collection database
+5. Configuring your import specification file to use a SQL connection string 
 
-Setting up a SQL Azure VM can be done from the Azure portal with just a few clicks. Azure has a [tutorial](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision) on how to setup and configure a SQL Azure VM. Follow that tutorial to ensure that your VM is configured correctly and SQL can be accessed remotely.  Note, it’s important that you put your VM in the same Azure region that your future VSTS account will be residing. This will increase the import speed as all transfers will be within a data center. 
+#### Creating the SQL Azure VM
+Setting up a SQL Azure VM can be done from the Azure portal with just a few clicks. Azure has a [tutorial](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-portal-sql-server-provision/) on how to setup and configure a SQL Azure VM. Follow that tutorial to ensure that your VM is configured correctly and SQL can be accessed remotely.  
 
-Below are some recommended configurations for your SQL Azure VM.
+VSTS is available in several Azure [regions](https://azure.microsoft.com/en-us/regions/services/) across the globe. When importing to these regions it's critical that you place your data in the correct region to ensure that the import can start correctly. Setting up your SQL Azure VM in a location other than the ones recommended below will result in the import failing to start.
 
-1. It's recommended that D Series VMs be used as they're optimized for database operations.
-2. [Configure](https://docs.microsoft.com/sql/relational-databases/databases/move-system-databases#a-nameexamplesa-examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [large table](migration-import.md#generating-a-dacpac).
-3. If your source database is still over 1TB after [reducing the size](../accounts/clean-up-data.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json) then you will need to [attach](https://docs.microsoft.com/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
-4. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
-
-
-VSTS is available in a multitude of [regions](https://azure.microsoft.com/en-us/regions/services/) across the globe. When importing to these regions it's critical that you place your data in the correct region to ensure that the import can start correctly. Setting up your SQL Azure VM in a location other than the ones recommended below will result in the import either failing to start or taking much longer than expected to complete. 
-
-Use the table below to decide where you should create you SQL Azure VM if you're using this method to import.
+Use the table below  to decide where you should create you SQL Azure VM if you're using this method to import.
 
 |    Desired Import Region        |    SQL Azure VM Region         |
 |---------------------------------|--------------------------------|
@@ -324,13 +338,79 @@ Use the table below to decide where you should create you SQL Azure VM if you're
 |    Australia East               |    Australia East              |
 |    Brazil South                 |    Brazil South                |
 |    South India                  |    South India                 |
+|    Central Canada               |    Central Canada              |
 
-While VSTS is available in multiple regions in the United States, only the Central United States region is accepting new VSTS accounts. Customers will not be able to import their data into other United States Azure regions at this time. 
+> While VSTS is available in multiple regions in the United States, only the Central United States region is accepting new VSTS accounts. Customers will not be able to import their data into other United States Azure regions at this time. 
 
+> [!NOTE]   
 > DACPAC customers should consult the region table in the [uploading DACPAC and import files section](#uploading-the-dacpac-and-import-files). The above guidelines are for SQL Azure VMs only. 
 
+Below are some additional recommended configurations for your SQL Azure VM.
 
-After setting up and configuring an Azure VM, you will need to take your detached backup from your TFS server to your Azure VM. Azure has several methods [documented](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql) for how to accomplish this task. The collection database needs to be restored on SQL and doesn’t require TFS to be installed on the VM. 
+1. It's recommended that D Series VMs be used as they're optimized for database operations.
+2. [Configure](https://docs.microsoft.com/en-us/sql/relational-databases/databases/move-system-databases#a-nameexamplesa-examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](.\migration-import.md#generating-a-dacpac).
+3. If your source database is still over 1TB after [reducing the size](https://www.visualstudio.com/en-us/docs/setup-admin/clean-up-data) then you will need to [attach](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
+4. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
+
+#### Configuring IP Firewall Rules for VSTS
+
+It's highly recommended that you restrict access to your VM to only IPs from VSTS. This can be accomplished by allowing connections only from the set of VSTS IPs that are involved in the collection database import process. The IPs that need to be granted access to your collection database will depend on what region you're importing into. The tables below will help you identify the correct IPs. The only port that is required to be opened to connections is the standard SQL connection port 1433.
+
+First, no matter what VSTS region you import into the following IP must be granted access to your collection database. 
+
+
+|    Service                                |    IP               |
+|-------------------------------------------|---------------------|
+|    VSTS Identity Service                  |    168.62.105.45    |
+
+Next you will need to grant access to the TFS Database Import Service itself. Customers in Europe and the United States should select the service which is in their own region from the below table. Customers importing to locations outside of the United States and Europe must add an exception for the United States instance.   
+
+|    Service                                               |    IP               |
+|----------------------------------------------------------|---------------------|
+|    Database Import Service - West Europe                 |    40.115.43.138    |
+|    Database Import Service - Central United States       |    52.173.74.9      |
+|    Database Import Service - South Central United States |    40.124.13.10     |
+  
+Then you will need to grant access to the VSTS instances in the region that you're importing into. 
+
+If you're importing into Western Europe you will need grant access for the following IP:
+
+|    Service                                |    IP               |
+|-------------------------------------------|---------------------|
+|    VSTS - Western Europe                  |    40.68.34.220     |
+
+If you're importing into Central United States you will need to grant access for the following IP:
+
+|    Service                                 |    IP               |
+|--------------------------------------------|---------------------|
+|    VSTS - Central United States            |    13.89.236.72     |
+
+If you're importing into India South you will need to grant access for the following IP:
+
+|    Service                                |    IP               |
+|-------------------------------------------|---------------------|
+|    VSTS - India South                     |    104.211.227.29   |
+
+If you're importing into Australia East you will need to grant access for the following IP:
+
+|    Service                                |    IP               |
+|-------------------------------------------|---------------------|
+|    VSTS - Australia East                  |    191.239.82.211   |
+
+If you're importing into South Brazil you will need to grant access for the following IPs:
+
+|    Service                                |    IP               |
+|-------------------------------------------|---------------------|
+|    VSTS - South Brazil 1                  |    191.232.37.247   |
+|    VSTS - South Brazil 2                  |    13.75.145.145    |
+
+Your SQL Azure VM should now be set up to allow your data to be imported to VSTS. Follow the rest of the steps below to queue your import. 
+
+#### Restoring your Database on the VM
+
+After setting up and configuring an Azure VM, you will need to take your detached backup from your TFS server to your Azure VM. Azure has several methods [documented](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-migrate-sql/) for how to accomplish this task. The collection database needs to be restored on SQL and doesn’t require TFS to be installed on the VM. 
+
+#### Configuring your Collection for Import
 
 Once your collection database has been restored onto your Azure VM, you will need to configure a SQL login to allow VSTS to connect to the database to import the data. This login will only allow **read** access to a single database. Start by opening SQL Server Management Studio on the VM and open a new query window against the database that will be imported. 
 
@@ -360,7 +440,9 @@ CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo]
 EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
 ```
 
-Finally, the import specification file will need to be updated to include information on how to connect to the SQL instance. Open your import specification file and make the following updates:
+
+#### Configure the Import Specification File to Target the VM
+The import specification file will need to be updated to include information on how to connect to the SQL instance. Open your import specification file and make the following updates:
 
 Remove the DACPAC parameter from the source files object.
 
@@ -387,63 +469,17 @@ Following the Fabrikam example, the import specification would look like the fol
 
 Your import specification is now configured to use a SQL Azure VM for import! Proceed with the rest of preparation steps to import to VSTS. Once the import has completed be sure to delete the SQL login or rotate the password. Microsoft does not hold onto the login information once the import has completed. 
 
-Optionally, but recommended is to further restrict access to their SQL Azure VM. This can be accomplished by allowing connections only from the set of VSTS IPs that are involved in the collection database import process. The IPs that need to be granted access to your collection database will depend on what region you're importing into. The tables below will help you identify the correct IPs. The only port that is required to be opened to connections is the standard SQL connection port 1433.
-
-First, no matter what VSTS region you're import into the following IP must be granted access to your collection database. 
 
 
-|    Service                                |    IP               |
-|-------------------------------------------|---------------------|
-|    VSTS Identity Service                  |    168.62.105.45    |
-
-Next you will need to grant access to the TFS Database Import Service itself. Customers in Europe and the United States should select the service which is in their own region from the below table. Customers importing to locations outside of the United States and Europe must add an exception for the United States instance.   
-
-|    Service                                               |    IP               |
-|----------------------------------------------------------|---------------------|
-|    Database Import Service - West Europe                 |    40.115.43.138    |
-|    Database Import Service - Central United States       |    52.173.74.9      |
-|    Database Import Service - South Central United States |    40.124.13.10     |
-  
-Then you will need to grant access to the VSTS instances in the region that you're importing into. 
-
-If you're importing into Western Europe you will need grant access for the following IP:
-
-|    Service                                |    IP               |
-|-------------------------------------------|---------------------|
-|    VSTS - Western Europe 2                |    40.68.34.220     |
-
-If you're importing into Central United States you will need to grant access for the following IP:
-
-|    Service                                 |    IP               |
-|--------------------------------------------|---------------------|
-|    VSTS - Central United States 2          |    13.89.236.72     |
-
-If you're importing into India South you will need to grant access for the following IP:
-
-|    Service                                |    IP               |
-|-------------------------------------------|---------------------|
-|    VSTS - India South                     |    104.211.227.29   |
-
-If you're importing into Australia East you will need to grant access for the following IP:
-
-|    Service                                |    IP               |
-|-------------------------------------------|---------------------|
-|    VSTS - Australia East                  |    191.239.82.211   |
-
-If you're importing into South Brazil you will need to grant access for the following IPs:
-
-|    Service                                |    IP               |
-|-------------------------------------------|---------------------|
-|    VSTS - South Brazil 1                  |    191.232.37.247   |
-|    VSTS - South Brazil 2                  |    13.75.145.145    |
-
-Finally, if you're queuing the import from a machine other than your SQL Azure VM, you will need to grant an exception for that Machine's IP as well. It's recommended that you run the import command with the '/validateOnly' flag prior to queuing it. That allow you to quickly ensure if the firewall rules are working. 
-
-<a id="uploading-the-dacpac-and-import-files"></a>
 ### Uploading the DACPAC and Import Files
-All of the files required to run the import need to be placed in an Azure storage container. This can be an existing container or one created specifically created for your migration effort. It's always recommend to create a new container as the Azure region that this container exists in matters when queuing an import. 
 
-VSTS is available in a multitude of [regions](https://azure.microsoft.com/en-us/regions/services/) across the globe. When importing to these regions it's critical that you place your data in the correct region to ensure that the import can start correctly. Place your data in a location other than the ones recommended below will result in the the import either failing to start or taking much longer than expected to complete. 
+> [!NOTE]   
+> If you're using the SQL Azure VM method then you only need to upload the identity mapping file.  
+
+All of the files required to run the import need to be placed in an Azure storage container. This can be an existing container or one created specifically for your migration effort. It is important to ensure your container is created in the right region.
+
+VSTS is available in multiple [regions](https://azure.microsoft.com/en-us/regions/services/). When importing to these regions it's critical that you place your data in the correct region to ensure that the import can start correctly. Place your data in a location other than the ones recommended below will result in the the import failing to start. 
+ 
 
 |    Desired Import Region        |    Storage Account Region      |
 |---------------------------------|--------------------------------|
@@ -462,36 +498,71 @@ While VSTS is available in multiple regions in the United States, only the Centr
 * Identity Map CSV 
 * Collection DACPAC 
 
-This can be accomplished using tools like [AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) or any other Azure storage [explorer tool](http://storageexplorer.com/). 
+
+This can be accomplished using tools like [AzCopy](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/) or any other Azure storage [explorer tool](https://storageexplorer.com/). 
+
+> [!NOTE]   
+> If your DACPAC is larger then 10GB then it's recommended that you use AzCopy. AzCopy has multi-threaded upload support for faster uploads.
+
 
 ### Generating SAS Key
-A shared access signature ([SAS](https://docs.microsoft.com/azure/storage/common/storage-dotnet-shared-access-signature-part-1)) key provides delegated access to resources in a storage account. This allows you to give Microsoft the lowest level of privilege required to access your data for executing the import. At a minimum we require both read and list permission to the container hosting the files you uploaded in the previous step. The SAS key can even be time limited to cut off access after a desired time period has passed. It's strongly recommended that you time limit the key last for a minimum of seven days. 
+A Shared Access Signature ([SAS](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-shared-access-signature-part-1/)) Key provides delegated access to resources in a storage account. This allows you to give Microsoft the lowest level of privilege required to access your data for executing the import. 
 
-There are several ways to generate a SAS key. The recommended way is to use the [Microsoft Azure Storage Explorer](http://storageexplorer.com/). After installing the tool you can complete the following steps to generate a SAS Key:
+The recommended way to generate a SAS Key is the [Microsoft Azure Storage Explorer](https://storageexplorer.com/). Storage Explorer allows you to easily create container level SAS Keys. This is essential as the Import Service does NOT support account level SAS Keys. 
 
-1. Connect your storage account to the tool by using one of the two account keys
-2. Once the storage account has been connected you can expand out the list of blob containers in the account
-3. Right click on the blob container that contains your import files and select "Get Shared Access Signature..."
-4. Ensure that read and list permissions are selected and extend the expiration time for the key. It's recommended that your SAS Key be valid for at least 7 days
+>**NOTE**: Do NOT generate a SAS Key from the Azure portal. Azure portal generated SAS Keys are account scoped an will not work with the Import Service. 
 
-![Microsoft Azure Storage Explorer](_img/migration-import/ImportSpecFillOutNoCode.png)git 
+After installing Storage Explorer you can complete the following steps to generate a SAS Key:
 
-5. Click create and copy the URL link provided
+* Open the Microsoft Azure Storage Explorer after installation
+* Add an account
+* Choose "Use a storage account name and key"
 
-You will input the newly generated SAS Key into your import specification file as the "PackageLocation" parameter. 
+![Connect a new storage account](_img/migration-import/StorageExplorerAddAccount.png)
+
+* Enter your storage account name, provide one of your two [primary access keys](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account#manage-your-storage-account-keys), and connect
+
+![Enter information about the storage account to connect](_img/migration-import/StorageExplorerConnectAccount.png)
+
+* Expand out the blob containers, select the container with your import files, and choose to generate a "Shared Access Signature"
+
+![Selecting the container to create an SAS Key](_img/migration-import/StorageExplorerGetSAS.png)
+
+* Ensure that your SAS Key has read and list permissions. Write and delete permissions are NOT required 
+* Set the expiration for 7 days into the future
+
+![Set the required properties and create the SAS Key](_img/migration-import/StorageExplorerCreateSAS.png)
+
+Copy and hold onto this SAS Key as you will need to place it in your import specification file during the next step. 
+
+> Ensure that you treat this SAS Key as a secret. It provides access to your files in the storage container. 
 
 ### Completing the Import Specification
 Earlier in the process you partially filled out the import specification file generally known as ```import.json```. At this point you have enough information to fill out all of the remaining fields expect for the import code. The import code will be covered in the import section below.  Open your import specification file and fill out the following fields.
 
-* **PackageLocation** - Place the SAS key generated from the script in the last step here.
-* **DacpacFile** - Ensure the name in field is the same as the DACPAC file you uploaded to the storage account. Including the ".dacpac" extension. 
-* **IdentityMapFile** - Ensure the name in the field is the same as the identity mapping file you uploaded to the Azure storage container. Including the ".csv" extension. 
+* **Location** - Place the SAS Key generated from the script in the last step here.
+* **Dacpac** - Ensure the name in field is the same as the DACPAC file you uploaded to the storage account. Including the ".dacpac" extension. 
+* **IdentityMapping** - Ensure the name in the field is the same as the identity mapping file you uploaded to the Azure storage container. Including the ".csv" extension. 
 
 Using the Fabrikam example, the final import specification file should look like the following:
 
-![Completed import specification file](_img/migration-import/importSpecCompleted.png)
+![Completed import specification file](_img/migration-import/ImportSpecFillOutNoCode.png)
 
-Now you're ready to actually queue an import to VSTS!
+### Determining the Type of Import 
+Imports can either be queued as a dry or production run. Dry runs are for testing and production runs are when your team intends to use the account full time in VSTS once the import completes. Determining which type of import to be run is based off the code that you provide in the import specification file and the value you provide for the import type parameter. 
+
+> It's always recommended that you complete a dry run import first. 
+
+You will have two import codes; one for a dry run and the other for a production run. Select the code that matches the type of run you wish to queue and place it in the import specification file in the 'ImportCode' parameter. For 'ImportType', enter either 'DryRun' for a dry run import or 'ProductionRun' for a production import.  
+
+![Completed import specification file with import code](_img/migration-import/importSpecCompleted.png)
+
+Each import code is valid until an import has been successfully completed. The same code may be used if the import failed and you need to queue it again. 
+
+### Dry Run Accounts
+Dry run imports help teams to test the migration of their collections. It’s not expected that these accounts will remain around forever, but rather to exist for a small time frame. In fact, before a production migration can be run a complementing dry run account will need to be deleted. All dry run accounts have a **limited existence and will be automatically deleted after a set period of time**. When the account will be deleted is included in the success email received after the import completes. Be sure to take note of this date and plan accordingly. Once that time period passes the dry run account will be deleted. If your team is ready to perform a production migration before then you will need to manually delete the account. 
+
+Be sure to check out the [post import](.\migration-post-import.md) documentation for additional details on post import activities. Should your import encounter any problems, be sure to review the [import troubleshooting](.\migration-troubleshooting.md#dealing-with-import-errors) steps. 
 
 ## Running an Import
 The great news is that your team is now ready to begin the process of running an import. It's recommended that your team start with a dry run import and then finally a production run import. Dry run imports allow your team to see how the end results of an import will look, identify potential issues, and gain experience before heading into your production run. To queue imports you will need to use one of the import codes that was given to your team as part of the preview. 
@@ -499,22 +570,15 @@ The great news is that your team is now ready to begin the process of running an
 > Before proceeding, ensure that you’ve received your import codes for the TFS Database Import Service preview. Be sure to download the [migration guide](https://aka.ms/TFSDataImport) as requesting invitation codes is covered in Phase 1 within the guide.
 
 ### Considerations for Roll Back Planning
-A common concern that teams have for the final production run is to think through what the rollback plan will be if there is anything goes wrong with import. This is also why we highly recommend doing a dry run to make sure you are able to test the import settings and identity map that you provide to the TFS Database Import Service.
+A common concern that teams have for the final production run is to think through what the rollback plan will be if anything goes wrong with import. This is also why we highly recommend doing a dry run to make sure you are able to test the import settings and identity map that you provide to the TFS Database Import Service.
 
 Rollback for the final production run is fairly simple. Before you queue the import, you will be detaching the team project collection from Team Foundation Server which will make it unavailable to your team members. If for any reason, you need to roll back the production run and have Team Foundation Server come back online for your team members, you can simply attach the team project collection on-premises again and inform your team that they will continue to work as normal while your team regroups to understand any potential failures.
-
-### Determining the Type of Import 
-Imports can either be queued as a dry or production run. Dry runs are for testing and production runs are when your team intends to use the account full time in VSTS once the import completes. Determining which type of import to be run is based off the code that you provide in the import specification file. You will have two import codes; one for a dry run and the other for a production run. Select the code that matches the type of run you wish to queue and place it in the import specification file in the “ImportCode” parameter. 
-
-![Completed import specification file with import code](_img/migration-import/importSpecCompleted.png)
-
-Each import code is valid until an import has been successfully completed. The same code may be used if the import failed and you need to queue it again. 
 
 ### Queueing an Import
 
 > **Important**: Before proceeding, ensure that your collection was [detached](migration-import.md#detaching-your-collection) prior to generating a DACPAC or uploading the collection database to a SQL Azure VM. If you didn't complete this step the import will fail. 
 
-Starting an import is done by using TfsMigrator's import command. The import command takes an import specification file as input. It will parse through the file to ensure the values which have been provided are valid, and if successful, it will queue an import to VSTS. 
+Starting an import is done by using TfsMigrator's import command. The import command takes an import specification file as input. It will parse through the file to ensure the values which have been provided are valid, and if successful, it will queue an import to VSTS. The import command requires an internet connection, but does **NOT** require a connection to your TFS server. 
 
 To get started, open a command prompt and CD to path where you have TfsMigrator placed. Once there it’s recommended that you take a second to review the help text provided with the tool. Run the following command to see the guidance and help for the import command:
 
@@ -536,10 +600,4 @@ TfsMigrator import /importFile:C:\TFSDataImportFiles\import.json
 
 Once the validation passes you will be asked to sign into to AAD. It’s important that you sign in with an identity that is a member of the same AAD as the identity mapping file was built against. The user that signs in will become the owner of the imported account. 
 
-After the import starts the user that queued the import will receive an email. Shortly after that the team will be able to navigate to the import account to check on the status. For now, it will show a 503 offline for data import message. Once the import completes your team will be directed to sign in. The owner of the account will also receive an email when the import finishes. 
-
-### Dry Run Accounts
-Dry run imports help teams to test the migration of their collections. It’s not expected that these accounts will remain around forever, but rather to exist for a small timeframe. In fact, before a production migration can be run a complimenting dry run account will need to be deleted. All dry run accounts have a **limited existence and will be automatically deleted after a set period of time**. When the account will be deleted is included in the success email received after the import completes. Be sure to take note of this date and plan accordingly. Once that time period passes the dry run account will be deleted. If your team is ready to perform a production migration before then you will need to manually delete the account.
-
-Be sure to check out the [post import](migration-post-import.md) documentation for additional details on post import activities. Should your import encounter and problems, be sure to review the [import troubleshooting](migration-troubleshooting.md#dealing-with-import-errors) steps.   
-
+After the import starts the user that queued the import will receive an email. Shortly after that the team will be able to navigate to the import account to check on the status. Once the import completes your team will be directed to sign in. The owner of the account will also receive an email when the import finishes. 

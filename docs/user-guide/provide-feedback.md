@@ -11,7 +11,7 @@ ms.date: 08/02/2017
 
 # Provide product and content feedback  
 
-[!INCLUDE [temp](./work/_shared/dev15-version-header.md)] 
+[!INCLUDE [temp](../work/_shared/dev15-version-header.md)] 
 
 We welcome your feedback. Tell us your ideas for improving our content or products. 
 
@@ -22,22 +22,14 @@ Here are the quick-access links to use:
 > [!div class="mx-tdBreakAll"]  
 > |Content feedback  |Product feedback  |Service & support |  Community forums  | 
 > |-------------|----------|---------|---------|  
-> |- [Rate a topic](#content-feedback)<br/>-[Provide feedback](#content-feedback) |- [VSTS](http://visualstudio.uservoice.com/forums/330519-team-services)<br/>-[TFS](http://visualstudio.uservoice.com/forums/330519-team-services)<br/>-[Visual Studio](https://visualstudio.uservoice.com/forums/121579-visual-studio)<br/>-[Visual Studio Code](http://visualstudio.uservoice.com/forums/293070-visual-studio-code)<br/>-[Visual Studio Feedback Center](http://developercommunity.visualstudio.com/) |- [Service issue](https://support.microsoft.com/en-us/getsupport?tenant=ClassicCommercial&locale=en-us&supportregion=en-us&pesid=15339&oaspworkflow=start_1.0.0.0&ccsid=636036154608504739)<br/>-[Subscriber support](https://www.visualstudio.com/en-us/support/subscription-support-vs)<br/>-[Billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)<br/>-[Product downloads](https://www.visualstudio.com/downloads/download-visual-studio-vs)<br/>-[VSTS status](https://blogs.msdn.microsoft.com/vsoservice/)<br/>-[Azure status](https://azure.microsoft.com/en-us/status/)<br/>-[Licensing white paper](https://www.microsoft.com/EN-US/privacystatement/OnlineServices/Default.aspx)<br/>-[Privacy policy](https://www.microsoft.com/EN-US/privacystatement/OnlineServices/Default.aspx) | - [Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home)<br/>-[VSTS & TFS](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=TFService)<br/>-[General](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsgeneral)<br/>-[Source code & version control](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsversioncontrol)<br/>-[Project management & work items](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)<br/>-[Process templates](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsprocess)<br/>-[Reporting](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsreporting)<br/>-[Build & release management](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsbuild)<br/>-[Eclipse & cross platform](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tee)<br/>-[Setup & administration](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsadmin)<br/>-[Stack Overflow, VSTS](http://stackoverflow.com/questions/tagged/vs-team-services)<br/>-[Stack Overflow, TFS](http://stackoverflow.com/questions/tagged/tfs) | 
-
-
-**Blogs & videos**
-- [Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)  
-- [devops](https://blogs.msdn.microsoft.com/visualstudioalm/)  
-- [Brian Harry's](https://blogs.msdn.microsoft.com/bharry/)  
-- [TFS support](https://blogs.msdn.microsoft.com/tfssetup/)  
-- [DevOps videos](https://channel9.msdn.com/DevOps) 
+> |- [Rate a topic](#content-feedback)<br/>-[Provide feedback](#content-feedback)<br/><br/>**Blogs & videos**<br/>- [Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)<br/>- [devops](https://blogs.msdn.microsoft.com/visualstudioalm/)<br/>- [Brian Harry's](https://blogs.msdn.microsoft.com/bharry/)<br/>- [TFS support](https://blogs.msdn.microsoft.com/tfssetup/)<br/>- [DevOps videos](https://channel9.msdn.com/DevOps) |- [VSTS](http://visualstudio.uservoice.com/forums/330519-team-services)<br/>- [TFS](http://visualstudio.uservoice.com/forums/330519-team-services)<br/>- [Visual Studio](https://visualstudio.uservoice.com/forums/121579-visual-studio)<br/>- [Visual Studio Code](http://visualstudio.uservoice.com/forums/293070-visual-studio-code)<br/>- [Visual Studio Feedback Center](http://developercommunity.visualstudio.com/) |- [Service issue](https://support.microsoft.com/en-us/getsupport?tenant=ClassicCommercial&locale=en-us&supportregion=en-us&pesid=15339&oaspworkflow=start_1.0.0.0&ccsid=636036154608504739)<br/>- [Subscriber support](https://www.visualstudio.com/en-us/support/subscription-support-vs)<br/>- [Billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)<br/>- [Product downloads](https://www.visualstudio.com/downloads/download-visual-studio-vs)<br/>- [VSTS status](https://blogs.msdn.microsoft.com/vsoservice/)<br/>- [Azure status](https://azure.microsoft.com/en-us/status/)<br/>-[Licensing white paper](https://www.microsoft.com/EN-US/privacystatement/OnlineServices/Default.aspx)<br/>- [Privacy policy](https://www.microsoft.com/EN-US/privacystatement/OnlineServices/Default.aspx) |- [Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home)<br/>- [VSTS & TFS](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=TFService)<br/>- [General](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsgeneral)<br/>- [Source code & version control](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsversioncontrol)<br/>- [Project management & work items](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)<br/>- [Process templates](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsprocess)<br/>- [Reporting](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsreporting)<br/>- [Build & release management](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsbuild)<br/>- [Eclipse & cross platform](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tee)<br/>-[Setup & administration](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsadmin)<br/>- [Stack Overflow, VSTS](http://stackoverflow.com/questions/tagged/vs-team-services)<br/>- [Stack Overflow, TFS](http://stackoverflow.com/questions/tagged/tfs) | 
 
 
 
-<!---
-<blockquote style="font-size: 13px"><b>Note: </b>This topic primarily supports users of VSTS and Team Foundation Server. For similar content for using Visual Studio, see [Talk to us](https://msdn.microsoft.com/en-us/library/b8akas30.aspx)   
-</blockquote>  
--->
+> [!NOTE]   
+> This topic primarily supports users of VSTS and Team Foundation Server. For similar content for using Visual Studio, see [Talk to us](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)   
+
+
  
 
 
@@ -51,9 +43,9 @@ Help us improve our content by rating it and giving us feedback.
 
 Use our content feedback channel to let us know (Is this page helpful?) located at the bottom-right of the page. This button appears for all topics under visualstudio.com/docs. If you're looking for an answer and you can't find it, let us know and we'll work to update the topic with an answer. Simply click Yes or /No to rate the topic and fill out the form. 
 
- <img src="_img/provide-feedback-content-feedback.png" alt="Topic feedback form" style="border: 1px solid #CCCCCC;" /> 
+ <img src="../_img/provide-feedback-content-feedback.png" alt="Topic feedback form" style="border: 1px solid #CCCCCC;" /> 
 
-About half of the feedback we get is product related. Customers want to know if a feature is supported, or they suggest a new feature. If that's what you want to do, we suggest you submit a request for a new feature through our [UserVoice channel](http://visualstudio.uservoice.com/forums/330519-team-services), or ask a question in one of our [forums](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=TFService) to learn if a feature is supported. 
+About half of the feedback we get is product related. Customers want to know if a feature is supported, or they suggest a new feature. If that's what you want to do, we suggest you submit a request for a new feature through our [UserVoice channel](http://visualstudio.uservoice.com/forums/330519-team-services), or ask a question in one of our [forums](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=TFService) to learn if a feature is supported. 
 
 ### Print a topic 
 
@@ -63,9 +55,9 @@ You can print most topics using your browser's print function. Most of the lates
 
 You can provide feedback for any Visual Studio product at the [Developer Community](https://developercommunity.visualstudio.com/). Or, from within Visual Studio, you can report a problem and review other trending issues. 
 
-![Visual Studio, Report a problem](_img/provide-feedback-report-problem.png)
+![Visual Studio, Report a problem](../_img/provide-feedback-report-problem.png)
 
-To learn more about reporting a problem, see [Report a problem with Visual Studio](https://msdn.microsoft.com/en-us/library/mt632287.aspx)  
+To learn more about reporting a problem, see [Report a problem with Visual Studio](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)  
  
  
 ## Learn about the latest updates 
@@ -79,7 +71,7 @@ We add new features all the time, especially to our VSTS cloud offering. Later, 
 
 Our content supports both platforms&mdash;VSTS and TFS&mdash; and multiple versions of TFS. At the top of each topic, you'll see a platform/version heading to alert you as to which platforms and versions are supported. For example: 
 
-<img src="_img/provide-feedback-platform-version-header.png" alt="Topic platform-version header" style="border: 1px solid #CCCCCC;" />  
+<img src="../_img/provide-feedback-platform-version-header.png" alt="Topic platform-version header" style="border: 1px solid #CCCCCC;" />  
 
 In general, a feature is supported for all subsequent versions of TFS, unless specifically noted. Some topics include a link to previous versions which describe how the feature worked for an earlier version of TFS. 
 
@@ -98,7 +90,7 @@ https://AccountName.visualstudio.com/_home/About
 ```  
 A page similar to the one shown will open showing the version number.  
 
-<img src="_img/version-team-services.png" alt="VSTS About page, version number" style="border: 1px solid #CCCCCC;" />  
+<img src="../_img/version-team-services.png" alt="VSTS About page, version number" style="border: 1px solid #CCCCCC;" />  
 
 
 **TFS**  
@@ -111,7 +103,7 @@ https://ServerName:8080/tfs/_home/About
 ```
 A page similar to the one shown will open showing the version number.  
 
-<img src="_img/version-tfs.png" alt="TFS About page, version number" style="border: 1px solid #CCCCCC;" />  
+<img src="../_img/version-tfs.png" alt="TFS About page, version number" style="border: 1px solid #CCCCCC;" />  
 
 
 |&#160;&#160;TFS release&#160;&#160;|&#160;&#160;Update&#160;&#160;|&#160;&#160;Version number&#160;&#160;| 
@@ -176,5 +168,4 @@ You can view code from other developers and share your own examples using these 
 
  
 ## Related notes 
-- [Visual studio - talk to us](https://msdn.microsoft.com/en-us/library/b8akas30.aspx) 
-- [Report a problem with Visual Studio](https://msdn.microsoft.com/en-us/library/mt632287.aspx)  
+- [Report a problem with Visual Studio](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)  

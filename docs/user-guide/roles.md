@@ -11,7 +11,7 @@ ms.date: 12/07/2016
 
 #Software development roles supported by VSTS and TFS 
 
-<b>VSTS | TFS 2017 | TFS 2015</b>  
+<b>VSTS | TFS 2018 | TFS 2017 | TFS 2015</b>  
 
 If you are a sole developer, or work on a small team, chances are that you participate in many activites&mdash;performing tasks associated with issue tracking, feature planning, coding, testing, build, and deployment.  
 
@@ -21,21 +21,21 @@ This topic provides a roadmap to support you in quickly coming up to speed on th
 
 ##Contributor roles  
 
-Team members are contributors who have access to the code base, work item tracking, Agile tools, build definitions, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through the [permission management](security/permissions.md).   
+Team members are contributors who have access to the code base, work item tracking, Agile tools, build definitions, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through the [permission management](../security/permissions.md).   
 
 ### Software developers 
 Developers use Visual Studio or other [tools](tools.md) to develop their applications. They then check in their changes to a Git or TFVC repository hosted in VSTS or TFS. From the web portal or supported IDE, they can view repositories, check history, and more. 
 
 - To get started using Git, see one of these resources: 
-	- [Share your code with Git and Visual Studio](git/share-your-code-in-git-vs.md).
-	- [Share your code in Git using Eclipses](git/share-your-code-in-git-eclipse.md).
-	- [Share your code in Git using Xcode](git/share-your-code-in-git-xcode.md).
+	- [Share your code with Git and Visual Studio](../git/share-your-code-in-git-vs.md).
+	- [Share your code in Git using Eclipses](../git/share-your-code-in-git-eclipse.md).
+	- [Share your code in Git using Xcode](../git/share-your-code-in-git-xcode.md).
 	- [Share your code in Git using IntelliJ](http://java.visualstudio.com/docs/tools/intellij).
-	- [Get Started with Git and VSTS](git/gitquickstart.md).
+	- [Get Started with Git and VSTS](../git/gitquickstart.md).
 - To get started using TFVC, see one of the following resources: 
-	- [Develop and share your code in TFVC using Visual Studio](tfvc/share-your-code-in-tfvc-vs.md)
-	- [Share your code in TFVC using Eclipse](tfvc/share-your-code-in-tfvc-eclipse.md)
-	- [Share your code in TFVC using Xcode](tfvc/share-your-code-in-tfvc-xcode.md)
+	- [Develop and share your code in TFVC using Visual Studio](../tfvc/share-your-code-in-tfvc-vs.md)
+	- [Share your code in TFVC using Eclipse](../tfvc/share-your-code-in-tfvc-eclipse.md)
+	- [Share your code in TFVC using Xcode](../tfvc/share-your-code-in-tfvc-xcode.md)
 
 ### Project managers
 
@@ -47,9 +47,9 @@ The role of project manager typically encompasses planning the feature set to de
 - Use queries to list and update work items, create status and trend charts, and post charts to dashboards 
 - Use dashboards to share information, status, and trends with your team or organization
   
-To get started, see [Get started with Agile tools to plan and track work](work/overview.md).  
+To get started, see [Get started with Agile tools to plan and track work](../work/overview.md).  
 
-If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with VSTS and TFS. See [Bulk modify using Excel](work/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](work/office/create-your-backlog-tasks-using-project.md). 
+If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with VSTS and TFS. See [Bulk modify using Excel](../work/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../work/office/create-your-backlog-tasks-using-project.md). 
 
 ### DevOps: builders, testers, and release managers  
 
@@ -62,12 +62,12 @@ One of the main advantages to working with VSTS or TFS is the suite of tools and
 - Define, manage, track, and approve releases 
 - Deploy applications to Azure, a virtual machine, Docker containers, and more  
 
-To get started, see the overviews provided here: [Build &amp; Release](build-release/overview.md) and [Test](manual-test/index.md). 
+To get started, see the overviews provided here: [Build &amp; Release](../build-release/overview.md) and [Test](../manual-test/index.md). 
 
 ### Stakeholders 
 With stakeholder access, anyone within your organization can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to plans by adding and modifying work items. They can't, however, contribute to the code base or exercise test tools. 
 
-Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a Stakeholder](quickstart/get-started-stakeholder.md). 
+Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a Stakeholder](../quickstart/get-started-stakeholder.md). 
 
 <a id="admin-roles">  </a>
 ## Administrator roles  
@@ -84,15 +84,15 @@ Responsible for configuring team settings which include:
 - Team work item templates
 - Team alerts
 
-To get started, see [Manage team assets](work/scale/manage-team-assets.md). 
+To get started, see [Manage team assets](../work/scale/manage-team-assets.md). 
 
 ###Project administrators
 Responsible for project level settings, including: 
-- [Area paths](work/customize/set-area-paths.md) and [Iteration paths](work/customize/set-iteration-paths-sprints.md)
-- [Project permissions and repository security](security/permissions.md)
-- [Customize work tracking objects (TFS only)](work/customize/customize-work.md) 
-- [Build agents, pools, and service endpoints](build-release/overview.md) 
-- [Test](manual-test/getting-started/how-long-to-keep-test-results.md) and [release](build-release/concepts/policies/retention.md) retention policies 
+- [Area paths](../work/customize/set-area-paths.md) and [Iteration paths](../work/customize/set-iteration-paths-sprints.md)
+- [Project permissions and repository security](../security/permissions.md)
+- [Customize work tracking objects (TFS only)](../work/customize/customize-work.md) 
+- [Build agents, pools, and service endpoints](../build-release/overview.md) 
+- [Test](../manual-test/getting-started/how-long-to-keep-test-results.md) and [release](../build-release/concepts/policies/retention.md) retention policies 
  
 
 ### Project collection administrators
@@ -103,7 +103,7 @@ Responsible for account or collection-level settings. These include:
 - Customize work tracking processes  
 - Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
 
-To get started, see [Account Management](accounts/account-management.md). 
+To get started, see [Account Management](../accounts/account-management.md). 
 
  
 ###TFS administrators
@@ -115,7 +115,7 @@ Responsible for installing, upgrading, and maintaining an on-premises TFS deploy
 - Build retention policies
 - Add and manage team project collections     
   
-To get started, see [Server Administration (TFS)](tfs-server/index.md). 
+To get started, see [Server Administration (TFS)](../tfs-server/index.md). 
 
 
 ## Related notes 

@@ -321,7 +321,7 @@ Some tasks or features aren't available when you connect to a later version of T
 
 ### Determine your platform or TFS version 
 
-See [Feedback and support](../provide-feedback.md#platform-version) 
+See [Feedback and support](../user-guide/provide-feedback.md#platform-version) 
 
 
 

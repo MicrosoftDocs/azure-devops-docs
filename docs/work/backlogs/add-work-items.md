@@ -82,7 +82,7 @@ To quickly add backlog items, such as user stories or requirements, see these to
 > [Kanban quickstart](../kanban/kanban-quickstart.md) 
 
 
-For additional clients that you can use to add work items, see [Clients that support tracking work items](../../tools.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ).
+For additional clients that you can use to add work items, see [Clients that support tracking work items](../../user-guide/tools.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ).
 
 Once you've added several work items, you can use additional features to get notified of changes, create queries, define status and trend charts, plus more.  
 

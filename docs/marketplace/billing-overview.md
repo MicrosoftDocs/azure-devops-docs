@@ -55,7 +55,7 @@ With an on-premises TFS, you can start with a free server via TFS Express and fi
 
 ## Marketplace extensions 
 
-In addition to the [essential services provided with VSTS and TFS](../services.md), you can add Marketplace extensions to either Visual Studio, VSTS, or TFS to augment the features available to you. 
+In addition to the [essential services provided with VSTS and TFS](../user-guide/services.md), you can add Marketplace extensions to either Visual Studio, VSTS, or TFS to augment the features available to you. 
 
 - Free extensions 
 - Visual Studio monthly or yearly subscriptions  
@@ -97,7 +97,7 @@ With either option, you receive support for:
 	* Continuous integration and continuous deployment with Build and Release tools 
 	* Manual test features    
 	
-	For an overview of these features, see [Essential services](../services.md). 
+	For an overview of these features, see [Essential services](../user-guide/services.md). 
 	
 *	Unlimited users who have limited access to select Agile tools, such as backlogs, work items, and dashboards. You can get a quick comparison of [Stakeholder versus Basic features](https://www.visualstudio.com/team-services/compare-features/).
 
@@ -207,11 +207,10 @@ account in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/
 Learn [how to get paid extensions for your VSTS account](install-vsts-extension.md).
 
 ## Related notes
-- [Key concepts](../concepts.md)
-- [Essential services](../services.md)
-- [Client-server tools](../tools.md)
-- [Software development roles](../roles.md)
-
+- [Key concepts](../user-guide/concepts.md)
+- [Essential services](../user-guide/services.md)
+- [Client-server tools](../user-guide/tools.md)
+- [Software development roles](../user-guide/roles.md)
 - [Get extensions for VSTS](install-vsts-extension.md)
 - [Get extensions for TFS](get-tfs-extensions.md)
 

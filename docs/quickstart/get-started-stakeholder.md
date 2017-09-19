@@ -130,7 +130,7 @@ For a comparison chart of Stakeholder vs Basic access, see this [feature matrix]
 ### Stakeholder feature access
 
 >[!NOTE]  
->**Feature availability**: The following features are available from VSTS or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. To determine your platform or TFS version, see [Platform and version support](../provide-feedback.md#platform-version).   
+>**Feature availability**: The following features are available from VSTS or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. To determine your platform or TFS version, see [Platform and version support](../user-guide/provide-feedback.md#platform-version).   
 
 > [!div class="mx-tdBreakAll"]  
 > |Work  |Account, Dashboards, and Notifications|

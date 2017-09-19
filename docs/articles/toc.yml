@@ -6,6 +6,8 @@
     href: team-services-security-whitepaper.md
 - name: High-Fidelity Migration
   items:
+  - name: Migration options
+    href: migrate-to-vsts-from-tfs.md
   - name: Overview
     href: migration-overview.md
   - name: Import

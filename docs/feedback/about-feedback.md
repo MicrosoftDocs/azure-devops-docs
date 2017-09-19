@@ -26,6 +26,6 @@ To request feedback, you use these methods:
 
 Both tools generate a Feedback Request work item. Each response provided by a stakeholder generates a Feedback Response work item. You can then track requests and responses easily from the **Work>Queries** page.
 
-To provide feedback about VSTS or TFS, see [Provide product and content feedback](/vsts/provide-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json).
+To provide feedback about VSTS or TFS, see [Provide product and content feedback](/vsts/user-guide/provide-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json).
  
 

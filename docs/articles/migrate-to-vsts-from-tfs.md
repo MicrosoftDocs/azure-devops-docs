@@ -16,7 +16,7 @@ When you decide to make the move from TFS to VSTS, you might start fresh with an
 you will have existing code, work items, and other assets that you want to move. There are many approaches to doing this
 which vary in both the fidelity of the data transfer and the complexity of the process.
 
-Prior to migrating data, review the differences that exist between [TFS and VSTS](about-vsts-tfs.md).
+Prior to migrating data, review the differences that exist between [TFS and VSTS](../user-guide/about-vsts-tfs.md).
 
 ### Option 1: Copy the most important assets manually
 
@@ -42,7 +42,7 @@ build definitions, test plans, and so forth – are harder to manually migrate.
 ### Option 2: High fidelity database migration.
 
 The TFS/VSTS product team recently released a preview of a high fidelity TFS Database Import Service. More
-information on this service can be found at [High Fidelity Migration](./articles/migration-overview.md). A downloadable migration
+information on this service can be found at [High Fidelity Migration](migration-overview.md). A downloadable migration
 guide is available at [https://aka.ms/TFSImportData](https://aka.ms/TFSImportData). 
 
 <a href="https://aka.ms/TFSImportData">
@@ -74,7 +74,7 @@ is the right strategy.
 
 ### Migration scopes
 
-As described in [About VSTS and TFS, Scope and scale data](about-vsts-tfs.md#scope-scale-data), the long term 
+As described in [About VSTS and TFS, Scope and scale data](../user-guide/about-vsts-tfs.md#scope-scale-data), the long term 
 direction for VSTS is to support grouping of accounts within organizations. This would lead to:   
 - VSTS accounts that serve as the equivalent of TFS project collections and 
 - VSTS organizations that serve as the equivalent of TFS deployments.  
@@ -84,7 +84,7 @@ importing single TFS collections as single VSTS accounts. If you need to migrate
 based migrations.
 
 ##Related notes 
-- [About VSTS and Team Foundation Server](about-vsts-tfs.md)  
+- [About VSTS and Team Foundation Server](../user-guide/about-vsts-tfs.md)  
 - [Pricing, VSTS](https://www.visualstudio.com/team-services/pricing/)
 - [Pricing, TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
 

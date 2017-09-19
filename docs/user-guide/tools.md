@@ -50,32 +50,32 @@ To understand what features you get with the Visual Studio versions, see [Compar
 
 **Team Explorer plug-in**
 
-Team Explorer, a plug-in to all Visual Studio versions, provides connects Visual Studio to team projects defined in VSTS or TFS. You can manage source code, work items, and builds. To learn more, see [Work in Team Explorer](connect/work-team-explorer.md).
+Team Explorer, a plug-in to all Visual Studio versions, provides connects Visual Studio to team projects defined in VSTS or TFS. You can manage source code, work items, and builds. To learn more, see [Work in Team Explorer](../connect/work-team-explorer.md).
 
 > [!div class="mx-tdBreakAll"]  
 > |Home page with Git |Home page with TFVC |
 > |-------------|----------|
-> |<img src="connect/_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" /> | <img src="connect/_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" /> |
+> |<img src="../connect/_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" /> | <img src="../connect/_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" /> |
 
 
 ##Office integration tools 
 
 When you install any edition of Visual Studio or [Team Foundation Server Standalone Office Integration 2015 (free)](https://go.microsoft.com/fwlink/?LinkId=691127), the Team Foundation plug-in installed to integrate work item tracking with select Office clients. The Team Foundation plug-in installs to your existing Office client. The plug-in supports Office 2007, Office 2010, or Office 2013 versions.
 
-- **[Excel](work/office/bulk-add-modify-work-items-excel.md)**: Use Excel to add and bulk modify work items.  
-- **[Project](work/office/create-your-backlog-tasks-using-project.md)**: Using Project you can plan projects, schedule tasks, assign resources, and track changes. You have access to features that TFS doesn't support, such as a project calendar, Gantt charts, and resource views.
-- **[Project Professional](work/tfs-ps-sync/synchronize-tfs-project-server.md)**: With Project Professional and the Team Foundation Server Extensions for Project Server you can manage projects that synchronize data that exists in both TFS and Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information. 
-- **[PowerPoint Storyboarding](work/office/storyboard-your-ideas-using-powerpoint.md)**: Lets you illustrate user stories and requirements using PowerPoint. The Team Foundation plug-in installs to your existing PowerPoint client.
+- **[Excel](../work/office/bulk-add-modify-work-items-excel.md)**: Use Excel to add and bulk modify work items.  
+- **[Project](../work/office/create-your-backlog-tasks-using-project.md)**: Using Project you can plan projects, schedule tasks, assign resources, and track changes. You have access to features that TFS doesn't support, such as a project calendar, Gantt charts, and resource views.
+- **[Project Professional](../work/tfs-ps-sync/synchronize-tfs-project-server.md)**: With Project Professional and the Team Foundation Server Extensions for Project Server you can manage projects that synchronize data that exists in both TFS and Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information. 
+- **[PowerPoint Storyboarding](../work/office/storyboard-your-ideas-using-powerpoint.md)**: Lets you illustrate user stories and requirements using PowerPoint. The Team Foundation plug-in installs to your existing PowerPoint client.
 
 >[!IMPORTANT]
->Support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third part. See  [Synchronize TFS with Project Server](work/office/sync-ps-tfs.md) for details. 
+>Support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third part. See  [Synchronize TFS with Project Server](../work/office/sync-ps-tfs.md) for details. 
 
 ###Task-specific clients
 The following clients support specific tasks, such as managing testing efforts, providing feedback, or modifying work items.
 
 - **[Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)**: Allows you to manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts. Test Manager installs with Visual Studio Test Professional and Visual Studio Enterprise. 
-- **[Test & Feedback extension (previously called the Exploratory Testing extension)](manual-test/stakeholder/provide-stakeholder-feedback.md)**: Provides a lightweight, plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features generated in VSTS or TFS. This extension is free to stakeholders. 
-- **[Microsoft Feedback Client](work/connect/give-feedback.md)**: Your stakeholders can use **Microsoft Feedback Client** to record feedback for your application as video, audio, or type-written comments. This client installs with all versions of Visual Studio, or can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=30660). All feedback is stored in the work item data store and requires [stakeholders to have required permissions](https://msdn.microsoft.com/Library/vs/alm/work/connect/give-permissions-feedback).  
+- **[Test & Feedback extension (previously called the Exploratory Testing extension)](../manual-test/stakeholder/provide-stakeholder-feedback.md)**: Provides a lightweight, plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features generated in VSTS or TFS. This extension is free to stakeholders. 
+- **[Microsoft Feedback Client](../work/connect/give-feedback.md)**: Your stakeholders can use **Microsoft Feedback Client** to record feedback for your application as video, audio, or type-written comments. This client installs with all versions of Visual Studio, or can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=30660). All feedback is stored in the work item data store and requires [stakeholders to have required permissions](../work/connect/give-permissions-feedback.md).  
  
 >[!IMPORTANT]
 >Test Manager is deprecated for TFS 2017.  
@@ -96,7 +96,7 @@ TFS 2013       |             | 9 and later       | 5 and later    | most recent 
 
 Edge, Firefox, and Chrome automatically update themselves, so VSTS and TFS support the most recent version. 
 
-To learn more, see [Work in the web portal](connect/work-web-portal.md).
+To learn more, see [Work in the web portal](../connect/work-web-portal.md).
 
 ### Browser-based extensions
 
@@ -137,29 +137,13 @@ To learn more, see [Microsoft Azure - HockeyApp](https://docs.microsoft.com/azur
 
 ##Command-line tools 
 You can perform many code development and administrative tasks using command line tools. 
-
-<div style="float:left;width:180px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Code development</p>
-<ul style="padding-left:30px">
-<ul style="padding-left:5px">
- <li style="margin-bottom:2px">[Git commands](git/command-prompt.md)</li>
- <li style="margin-bottom:2px">[TFVC commands](tfvc/use-team-foundation-version-control-commands.md)</li>
-</ul>
-</ul>
-</div>
-<div style="float:left;width:180px;margin:3px;font-size:90%">
-<p style="font-weight:bold;padding-bottom:0px;text-align:center;">Administrative tools</p>
-<ul style="padding-left:5px">
- <li style="margin-bottom:2px">[TFSConfig](tfs-server/command-line/tfsconfig-cmd.md)</li>
- <li style="margin-bottom:2px">[TFSDeleteProject](tfs-server/command-line/tfsdeleteproject-cmd.md)</li>
- <li style="margin-bottom:2px">[TFSSecurity](tfs-server/command-line/tfssecurity-cmd.md)</li>
- <li style="margin-bottom:2px">[TFSServiceControl](tfs-server/command-line/tfsservicecontrol-cmd.md)</li>
- <li style="margin-bottom:2px">[witadmin (work item tracking)](https://msdn.microsoft.com/library/dd236914.aspx)</li>
-</ul>
-</div>
-
-<div style="clear:left;font-size:100%">
-</div>
+- [Git commands](../git/command-prompt.md)
+- [TFVC commands](../tfvc/use-team-foundation-version-control-commands.md)
+- [TFSConfig](../tfs-server/command-line/tfsconfig-cmd.md)
+- [TFSDeleteProject](../tfs-server/command-line/tfsdeleteproject-cmd.md)
+- [TFSSecurity](../tfs-server/command-line/tfssecurity-cmd.md)
+- [TFSServiceControl](../tfs-server/command-line/tfsservicecontrol-cmd.md)
+- [witadmin (work item tracking)](../work/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) 
 
 
 ##Marketplace extensions
@@ -170,7 +154,7 @@ Extensions are simple add-ons that you can use to customize and extend your DevO
 
 You build extensions using our RESTful API Library. You publish them to the Visual Studio Marketplace, where you can privately maintain them or share with millions of developers that use  Visual Studio, VSTS, and TFS.
 
-To learn more, visit the [Marketplace](https://marketplace.visualstudio.com) and [Overview of extensions](extend/index.md).
+To learn more, visit the [Marketplace](https://marketplace.visualstudio.com) and [Overview of extensions](../extend/index.md).
 
 ##REST APIs  
  

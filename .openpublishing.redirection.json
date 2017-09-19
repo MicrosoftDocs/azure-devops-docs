@@ -2560,6 +2560,56 @@
             "source_path": "docs/release/_shared/wpfver-support-shared.md",
             "redirect_url": "/vsts/build-release/archive/release/_shared/wpfver-support-shared",
             "redirect_document_id": false
+        },
+       {
+            "source_path": "vsts/whats-new.md",
+            "redirect_url": "/vsts/tfs-server/whats-new",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "vsts/about-vsts-tfs.md",
+            "redirect_url": "/vsts/user-guide/about-vsts-tfs",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "vsts/concepts.md",
+            "redirect_url": "/vsts/user-guide/concepts",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "vsts/faqs.md",
+            "redirect_url": "/vsts/user-guide/faqs",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "vsts/devops-alm-overview.md",
+            "redirect_url": "/vsts/user-guide/devops-alm-overview",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "vsts/provide-feedback.md",
+            "redirect_url": "/vsts/user-guide/provide-feedback",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "vsts/roles.md",
+            "redirect_url": "/vsts/user-guide/roles",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "vsts/services.md",
+            "redirect_url": "/vsts/user-guide/services",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "vsts/tools.md",
+            "redirect_url": "/vsts/user-guide/tools",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "vsts/migrate-to-vsts-from-tfs.md",
+            "redirect_url": "/vsts/articles/migrate-to-vsts-from-tfss",
+            "redirect_document_id": false
         }
     ]
 }
