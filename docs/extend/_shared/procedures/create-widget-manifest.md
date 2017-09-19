@@ -12,7 +12,7 @@ please make sure to include the `ms.vss-dashboards-web.widget-sdk-version-2` dem
 
 The [extension manifest](../../develop/manifest.md) is a JSON file that defines basic information about the extension and the contributions in it.  
 First let's add some information about our extension. 
-Open the `vss-extension.json` file that you created in Step 1 and add the [core properties](../../develop/manifest.md#core-properties) which are mandatory for an extension to work.
+Open the `vss-extension.json` file that you created in Step 1 and add the [required attributes](../../develop/manifest.md#required-attributes) which are mandatory for an extension to work.
 
 ```json
 	{

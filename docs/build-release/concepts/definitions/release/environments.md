@@ -206,19 +206,15 @@ defined.
 
 While the most important part of defining an environment is the
 automation tasks, you can also configure several properties and options
-for an environment in a release definition.
+for an environment in a release definition. You can:
 
-* **Environment name:** You can edit the name of the environment here if required.
+* Edit the name of the environment here if required.
 
-* **Environment owner:** You can designate a single user or a single
+* Designate a single user or a single
   group to be the environment owner. Environment owners are
   notified whenever a deployment of a release is completed to that
   environment. Environment owners are not automatically assigned
   any addition permissions.
-
-* **Send email notifications:** The environment owner and the creator of a release can
-  receive email notifications when deployments occur to this environment.
-  This can be for every deployment, or just for failed deployments.
 
 * Prevent the user who created a release or started the deployment from approving
   his or her own release. This is often useful to ensure
