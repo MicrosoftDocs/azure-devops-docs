@@ -18,7 +18,8 @@ Here you'll find more resources to support your development efforts with VSTS, T
    
 ##	Migration and integration
 
-*   [High fidelity migration from TFS to VSTS](migration-overview.md)  
+*   [Migrate data from TFS to VSTS](migration-overview.md)
+*   [High fidelity migration from TFS to VSTS](migrate-to-vsts-from-tfs.md)  
 
 ##	Security
 

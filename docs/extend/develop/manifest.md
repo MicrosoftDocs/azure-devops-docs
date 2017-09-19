@@ -21,6 +21,8 @@ Here is an example of what a typical manifest will look like:
 
 ## Required attributes
 
+<a id="core-properties" />
+
 [!INCLUDE [](../_shared/manifest-core.md)]
 
 [!INCLUDE [](../_shared/manifest-extension-runtime.md)]

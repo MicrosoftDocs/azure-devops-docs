@@ -19,7 +19,7 @@ We'll walk you through the basics of the web interface and some common tasks.
 ## Overview
 [What is VSTS?](what-is-vsts.md)
 [What is TFS?](what-is-tfs.md)
-[Overview of services](../services.md)
+[Overview of services](services.md)
 -->
 
 
@@ -42,12 +42,12 @@ Get started with a free account, share your code using Git, and track your work 
 
 ## Concepts  
 
-- [Key concepts](../concepts.md)    
+- [Key concepts](concepts.md)    
 - [Source control](source-control.md)   
 - [Kanban & Agile tools](../work/overview.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Clients and tools](../tools.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)     
-- [Software development roles](../roles.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)   
-- [What's the difference between VSTS and TFS?](../about-vsts-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
+- [Clients and tools](tools.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)     
+- [Software development roles](roles.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)   
+- [What's the difference between VSTS and TFS?](about-vsts-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
 
 
 ## Reference

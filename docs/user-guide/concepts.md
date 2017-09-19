@@ -69,7 +69,7 @@ Rapid and reliable release of software comes from automating as many processes a
 - Your build definitions can include instructions to run tests after the build runs 
 - Release definitions support managing deployment of your software builds to staging or production environments 
 
-![Multiple platform continuous integration](_img/multi-platform.png) 
+![Multiple platform continuous integration](../_img/multi-platform.png) 
 
 ## Scaling  
 
@@ -94,12 +94,12 @@ When you create your team project, a team of the same name is automatically crea
 <tr>
 <td width="40%">
 **Single team project, team defined within an account/collection**  
-![Single collection-project-team conceptual image](connect/_img/web-portal-account-project-team-concept.png)  
+![Single collection-project-team conceptual image](../connect/_img/web-portal-account-project-team-concept.png)  
 </td>
 	
 <td width="60%">
 **Multiple team projects and teams defined within an account/collection**   
-![Scaled collection-project-team conceptual image](connect/_img/web-portal-account-project-team-scale-concept.png)  
+![Scaled collection-project-team conceptual image](../connect/_img/web-portal-account-project-team-scale-concept.png)  
 </td>
 </tr>
 </tbody>
@@ -126,15 +126,12 @@ You can configure and customize most elements to support your business needs or 
 In addition to all the pre-built functionality available to you, you can add to it in the following  ways: 
 
 - [Visual Studio Marketplace](https://marketplace.visualstudio.com) : Provides extensions that you can install either on your account, server, or Visual Studio client 
-- [Service hooks](./service-hooks/index.md): Enable you to perform tasks on other services when events happen within your team project hosted on VSTS or TFS 
+- [Service hooks](../service-hooks/index.md): Enable you to perform tasks on other services when events happen within your team project hosted on VSTS or TFS 
 - [REST APIs](https://visualstudio.com/integrate/api/overview.md): Provide the ability to create custom extensions that plug into VSTS or TFS
 - [Visual Studio SDK](https://msdn.microsoft.com/library/bb166441.aspx): Helps you extend Visual Studio features or integrate new features into Visual Studio. You can distribute your extensions to other users, as well as to the Visual Studio Marketplace. 
 
 
-##Related notes 
-- [Essential services](services.md)
-- [Client-server tools](tools.md)
-- [Software development roles](roles.md)
+##Resources 
 - [Pricing](https://www.visualstudio.com/team-services/pricing/)
 
  

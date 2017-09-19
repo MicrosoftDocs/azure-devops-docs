@@ -33,6 +33,6 @@ ms.date: 07/12/2017
 
 ## Resources 
 
-* [Key concepts](../concepts.md)
-* [Software development roles](../roles.md)
+* [Key concepts](../user-guide/concepts.md)
+* [Software development roles](../user-guide/roles.md)
 * [Pricing](https://www.visualstudio.com/team-services/pricing/)

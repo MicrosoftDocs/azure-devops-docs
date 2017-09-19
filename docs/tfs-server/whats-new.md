@@ -15,7 +15,7 @@ ms.date: 09/14/2017
 
 <b>TFS 2018 | TFS 2017 | TFS 2015</b>  
 
-You can use Visual Studio Team Foundation Server (TFS) to manage your product lifecycle, reduce risks, and improve team efficiency. Updates are made every few weeks to the cloud-hosted version, Visual Studio Team Services (VSTS). These updates are then rolled up and made available through quarterly updates to the on-premises TFS. To understand the differences between the hosted and on-premises versions, see [A tour of services provided with VSTS and TFS](services.md).   
+You can use Visual Studio Team Foundation Server (TFS) to manage your product lifecycle, reduce risks, and improve team efficiency. Updates are made every few weeks to the cloud-hosted version, Visual Studio Team Services (VSTS). These updates are then rolled up and made available through quarterly updates to the on-premises TFS. To understand the differences between the hosted and on-premises versions, see [A tour of services provided with VSTS and TFS](../user-guide/services.md).   
 
 To learn about  what's new with the cloud service offering, see [VSTS Features update](https://www.visualstudio.com/news/releasenotes/tfs2018-relnotes).   
 
@@ -365,7 +365,7 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 
 #### Deprecated features  
 
-- **Team rooms**: Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](collaborate/slack.md). As a result, we have made a decision to deprecate our Team Room feature from both VSTS and TFS. To learn more about this change and the timeline for deprecation, see this blog post: [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).  
+- **Team rooms**: Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](../collaborate/slack.md). As a result, we have made a decision to deprecate our Team Room feature from both VSTS and TFS. To learn more about this change and the timeline for deprecation, see this blog post: [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).  
 
 
 ## TFS 2017 RTW
@@ -405,10 +405,10 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 #### Deprecated features  
 
 - **Client version of the work item form**: In Visual Studio 2017, work items open in a browser window. To learn more about this change, see this blog post: [Work items now open in the web from Visual Studio '15'](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/22/work-items-now-open-in-the-web-from-visual-studio-15/).  
-- **Lab management**: Going forward, native build and release management tools replace the previous lab management tools. To learn more, see  [Use Build and Release Management instead of Lab Management for automated testing](https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management). 
-- **Microsoft Test Manager**: The web portal Test hub is a fully featured Test management solution which works across all platforms and with all browsers, we recommend you use the Test hub over Microsoft Test Manager for all your test management requirements. You can use Microsoft Test Manager to test your desktop applications by launching the Microsoft Test Runner (client) from the Test hub. To learn more, see [Guidance on Microsoft Test Manager usage](test/manual-exploratory-testing/mtm/guidance-mtm-usage.md).   
-- **Project Server integration**: Team Foundation Server 2017 and later versions no longer support native integration with Microsoft Project Server. However, third-party tools are available to support synchronization. For details, see [Synchronize TFS with Project Server](work/office/sync-ps-tfs.md).  
-- **Release Manager V1 Client/Server**: Release Management features have been integrated into Team Foundation Server (TFS) 2015 Update 2 and later versions, and into the web portal Release hub. The newer web-based version is the recommended alternative to the server and client version. For more information, see [Automate deployments with Release Management](release/previous-version/release-management-overview.md). 
+- **Lab management**: Going forward, native build and release management tools replace the previous lab management tools. To learn more, see  [Use Build and Release Management instead of Lab Management for automated testing](../test/lab-management/use-build-or-rm-instead-of-lab-management.md). 
+- **Microsoft Test Manager**: The web portal Test hub is a fully featured Test management solution which works across all platforms and with all browsers, we recommend you use the Test hub over Microsoft Test Manager for all your test management requirements. You can use Microsoft Test Manager to test your desktop applications by launching the Microsoft Test Runner (client) from the Test hub. To learn more, see [Guidance on Microsoft Test Manager usage](../test/manual-exploratory-testing/mtm/guidance-mtm-usage.md).   
+- **Project Server integration**: Team Foundation Server 2017 and later versions no longer support native integration with Microsoft Project Server. However, third-party tools are available to support synchronization. For details, see [Synchronize TFS with Project Server](../work/office/sync-ps-tfs.md).  
+- **Release Manager V1 Client/Server**: Release Management features have been integrated into Team Foundation Server (TFS) 2015 Update 2 and later versions, and into the web portal Release hub. The newer web-based version is the recommended alternative to the server and client version. For more information, see [Automate deployments with Release Management](../build-release/archive/release/previous-version/release-management-overview.md). 
 - **UML designers**: Have been removed from Visual Studio Enterprise client, Architecture features. To learn more, see [What's new for design in Visual Studio](https://docs.microsoft.com/visualstudio/modeling/what-s-new-for-design-in-visual-studio). 
 
 <!---  

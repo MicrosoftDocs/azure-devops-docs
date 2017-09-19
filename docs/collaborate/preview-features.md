@@ -22,7 +22,7 @@ As new features are introduced, we're providing support for you to turn some of 
 Some features provide a new user interface and functionality, which can be managed per user or team member. Others support a default experience for the account and are managed by an account administrator. 
  
 >[!NOTE]  
->**Feature availability**:  You can turn on or off the following features for VSTS (cloud service), or from the web portal of the listed on-premises TFS version or a later version. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Provide product and content feedback](../provide-feedback.md#platform-version).
+>**Feature availability**:  You can turn on or off the following features for VSTS (cloud service), or from the web portal of the listed on-premises TFS version or a later version. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Provide product and content feedback](../user-guide/provide-feedback.md#platform-version).
 
 
 > [!div class="mx-tdBreakAll"]  

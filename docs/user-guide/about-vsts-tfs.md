@@ -31,7 +31,7 @@ Use this topic to determine which offering&mdash;cloud or on-premises&mdash;meet
 
 For each area, we'll discuss both the current state of the world and the expected impacts from short and medium-term plans. Check back here for updates, because this information may change frequently.
 
-If you're on TFS and considering moving to VSTS, read [Migrate data from TFS to VSTS](migrate-to-vsts-from-tfs.md) to understand your options.
+If you're on TFS and considering moving to VSTS, read [Migrate data from TFS to VSTS](../articles/migrate-to-vsts-from-tfs.md) to understand your options.
 
 ## Fundamental differences between TFS and VSTS
 
@@ -50,7 +50,7 @@ Team project collections serve as containers for security and administration in 
 physical database boundaries. They are also used to group related team projects. Finally, team projects 
 are used to encapsulate the assets of individual software projects, including source code, work items, 
 and so on. Learn more about these concepts at 
-[Manage team project collections](tfs-server/admin/manage-team-project-collections.md). 
+[Manage team project collections](../tfs-server/admin/manage-team-project-collections.md). 
 
 VSTS is slightly different. It currently only has two options for scoping and scaling 
 data&mdash;accounts and team projects. Accounts in VSTS get their own URLs (for example, ```https://contoso.visualstudio.com```) 
@@ -98,9 +98,9 @@ In TFS, you provide users access to deployments by adding Active Directory (AD) 
 As users are added and removed in AD they also gain and lose access to TFS. 
 
 In VSTS, you can use a similar mechanism to 
-[provide access to groups of users](accounts/manage-azure-active-directory-groups-vsts.md) 
+[provide access to groups of users](../accounts/manage-azure-active-directory-groups-vsts.md) 
 by adding Azure AD groups to TFS groups. If you use Microsoft Accounts instead of Azure AD, you will have to
-[add users](accounts/add-account-users-assign-access-levels.md) one at a time. 
+[add users](../accounts/add-account-users-assign-access-levels.md) one at a time. 
 
 ### Manage user access
 
@@ -109,18 +109,18 @@ Stakeholders. Also, unlimited Visual Studio subscribers can have access to all B
 no additional charge. You only need to pay for other users who need access.
 
 In TFS, all use is on the honor system. To set access levels for users based on their licenses, use specify their
-[access levels](./security/change-access-levels.md)
+[access levels](../security/change-access-levels.md)
 administration page. For example, assign unlicensed users Stakeholder access only.
 Users with a TFS Client Access License (CAL) can have Basic access. 
 Visual Studio subscribers can have either Basic or Advanced access, based on their subscriptions.
 Note that TFS does not attempt to verify these licenses or enforce compliance. 
 
 In VSTS, you must 
-[assign an access level](accounts/add-account-users-assign-access-levels.md)
+[assign an access level](../accounts/add-account-users-assign-access-levels.md)
 to each user in your account's Users hub. VSTS validates Visual Studio subscribers as 
 they sign in. You can assign Basic access for free to five users without Visual Studio subscriptions. 
 To give Basic access to more users, you'll need to set up billing for your account and
-[pay for more users](billing/buy-basic-access-add-users.md). 
+[pay for more users](../billing/buy-basic-access-add-users.md). 
 Otherwise, all other users get Stakeholder access.
 
 If you use Azure AD groups to provide access to groups of users, VSTS will assign appropriate 
@@ -132,7 +132,7 @@ to use Microsoft Accounts for sign-in, you will have to assign access levels to 
 Many organizations want to know more about data protection when they consider moving to the cloud. Microsoft is committed to ensuring 
 that VSTS projects stay safe and secure. We have technical features and business processes in place 
 to deliver on that commitment. You can also take steps to secure your data. Learn more in our
-[Data Protection Overview whitepaper](/vsts/articles/team-services-security-whitepaper).
+[Data Protection Overview whitepaper](../articles/team-services-security-whitepaper.md).
 
 ## Key feature differences between VSTS and TFS 
 
@@ -155,7 +155,7 @@ For example, TFS 2013 introduced several new features which depended on new work
 changes. When you upgrade from TFS 2012 to TFS 2013, each team project collection gets new versions of each of the
 "in the box" process templates which include these changes. However, these changes are not automatically incorporated
 in existing team projects. Instead, after you finish upgrading you have to include them in each team project by using
-the [Configure Features](./work/customize/configure-features-after-upgrade.md)
+the [Configure Features](../work/customize/configure-features-after-upgrade.md)
 wizard or a more manual process.
 
 To avoid these issues in VSTS, custom process templates and **witadmin.exe** have always been disabled (only export functions are enabled). This has 
@@ -168,17 +168,17 @@ VSTS Web UI. If you want to customize your processes programmatically, you can a
 through REST endpoints. When you customize team projects in this way, those projects will continue to update
 automatically when we release new versions of their base processes with VSTS updgrades. 
 
-To learn more, see [Customize your work tracking experience](./work/customize/customize-work.md).
+To learn more, see [Customize your work tracking experience](../work/customize/customize-work.md).
 
 Over time we will support more and more types of process customizations with this new approach. If you need
 process customization features which are not yet available and cannot wait for them, a second option for process
 customization in VSTS is available, referred to as **Hosted XML** process model, and in private preview and by request only. 
 
 With this option, you 
-[import customized process templates](./work/import-process/import-process.md).
+[import customized process templates](../work/import-process/import-process.md).
 This option is quite similar to using custom process templates in TFS, except that:
 
-* [Restrictions](./work/import-process/import-process.md) exist in the customizations 
+* [Restrictions](../work/import-process/import-process.md) exist in the customizations 
 that can be imported into VSTS. 
 
 * Process templates are associated with all team projects created from them, and changes made to the process are reflected 
@@ -192,26 +192,24 @@ VSTS upgrades.
 Both TFS and VSTS have a variety of tools to give you insight into the progress as well as the quality of
 your software projects. These include:
 
-* [Dashboards](./report/dashboards.md) and lightweight 
-[charts](./report/charts.md), available in both TFS and VSTS. These are 
+* [Dashboards](../report/dashboards.md) and lightweight 
+[charts](../report/charts.md), available in both TFS and VSTS. These are 
 very easy to set up and use, but are also fairly limited in what they can do.
 
 The following reports and dashboards&mdash;which are more complicated to use, but also more powerful&mdash;are only available in TFS: 
-- [Excel reports](./report/excel/excel-reports.md) 
-- [SQL Server Reporting Services (SSRS) reports](report/sql-reports/reporting-services-reports.md)  
-- [SharePoint dashboards](https://msdn.microsoft.com/Library/vs/alm/Report/overview#sharepoint-dashboards) 
+- [Excel reports](../report/excel/excel-reports.md) 
+- [SQL Server Reporting Services (SSRS) reports](../report/sql-reports/reporting-services-reports.md)  
+- [SharePoint dashboards](../report/sharepoint-dashboards/project-portal-dashboards.md) 
 
 And, available today only in VSTS:
-* A [PowerBI connector](./report/powerbi/overview.md) which provides a nice combination of simplicity and power. We plan to make it available in TFS in a future release.
+* A [PowerBI connector](../report/powerbi/overview.md) which provides a nice combination of simplicity and power. We plan to make it available in TFS in a future release.
 
 
 ## Related notes 
-- [Devops overview for VSTS and TFS](index.md)
 - [Key concepts](concepts.md)  
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-
 - [Pricing - VSTS](https://www.visualstudio.com/team-services/pricing/)
 - [Pricing - TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
 

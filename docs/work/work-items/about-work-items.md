@@ -140,7 +140,7 @@ You can add work items from various clients, such as:
 - From Test Manager or the web portal, you can can [create test cases that automatically link to a user story or product backlog item](../../manual-test/getting-started/create-test-cases.md).
 - You can create bugs from the web portal, Visual Studio, or when [testing with Test Manager](https://msdn.microsoft.com/library/dd286731.aspx).  
 
-For an overview of all clients that connect to your team project, see [Tools and clients that connect to VSTS and TFS](../../tools.md). 
+For an overview of all clients that connect to your team project, see [Tools and clients that connect to VSTS and TFS](../../user-guide/tools.md). 
 
 
 

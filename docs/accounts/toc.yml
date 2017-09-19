@@ -103,7 +103,7 @@
   - name: Permissions and groups reference
     href: /vsts/security/permissions?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
   - name: Migrate from TFS to VSTS
-    href: ../migrate-to-vsts-from-tfs.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
+    href: ../articles/migrate-to-vsts-from-tfs.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Resources
   items:
   - name: New User Guide

@@ -135,7 +135,7 @@ You can also start customizing an inherited process by navigating to the inherit
 
 ### Web versus Visual Studio form layouts 
 
-The customizations you make only impact the work item forms displayed in a web browser. The work item forms displayed in Visual Studio or other [supported clients](../../tools.md) won't reflect any process customizations you make.    
+The customizations you make only impact the work item forms displayed in a web browser. The work item forms displayed in Visual Studio or other [supported clients](../../user-guide/tools.md) won't reflect any process customizations you make.    
 
 
 <a id="return-process-overview">  </a>

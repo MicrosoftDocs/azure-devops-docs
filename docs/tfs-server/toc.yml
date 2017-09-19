@@ -3,7 +3,7 @@
 - name: Overview
   items:
   - name: What's new
-    href: ../whats-new.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json 
+    href: whats-new.md
   - name: Installation overview
     href: ./install/get-started.md
   - name: Configure and manage TFS resources
@@ -196,7 +196,7 @@
   - name: Migrate from TFS to VSTS
     items:
       - name: Migrate data from TFS to VSTS
-        href: ../migrate-to-vsts-from-tfs.md
+        href: ../articles/migrate-to-vsts-from-tfs.md
       - name: Migration overview
         href: ../articles/migration-overview.md
       - name: Migration import

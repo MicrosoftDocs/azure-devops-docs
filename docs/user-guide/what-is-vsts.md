@@ -12,6 +12,8 @@ ms.topic: get-started-article
 
 # What is VSTS? 
 
+**VSTS**
+
 VSTS is a cloud service for collaborating on code development. It provides an integrated set of features that you access through your web browser or IDE client, including: 
 
 - Git repositories for source control of your code   
@@ -32,7 +34,7 @@ We've made it easy for you to start for free and try out our service.
 
 Sign up for free by creating an account and then, either upload your code to share or source control, or begin tracking your work using Scrum, Kanban, or a combination of methods. 
 
-[![Sign up for VSTS](_img/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](_img/what-is-vsts-add-code-ide-step-2.png)](/vsts/git/create-new-repo?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json ) 
+[![Sign up for VSTS](_img/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](_img/what-is-vsts-add-code-ide-step-2.png)](code-with-git.md) 
 
 
 ## Try this next  
@@ -41,10 +43,10 @@ Sign up for free by creating an account and then, either upload your code to sha
 > [Sign up and invite team mates](sign-up-invite-teammates.md)
 
 To learn more, see these topics: 
-- [A tour of services](../services.md)
-- [Key concepts](../concepts.md)  
-- [Client-server tools](../tools.md)
-- [Software development roles](../roles.md)
+- [A tour of services](services.md)
+- [Key concepts](concepts.md)  
+- [Client-server tools](tools.md)
+- [Software development roles](roles.md)
 - [Pricing - VSTS](https://www.visualstudio.com/team-services/pricing/)
 
 

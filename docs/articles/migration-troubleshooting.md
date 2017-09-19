@@ -34,16 +34,24 @@ This warning means that your database is approaching the limit for total metadat
 Unlike the previous warnings, this is an error that **WILL** block you from moving forward with your migration to VSTS. The volume of metadata in your collection is too large and needs to be [reduced](../accounts/clean-up-data.md) below the mentioned limit to proceed with the import.   
 
 ## Dealing with Collation Warnings
-Collation in this case refers to the collection database’s collation. Collations control the way string values are sorted and compared. Collections that aren't using either SQL_Latin1_General_CP1_CI_AS or Latin1_General_CI_AS will receive a **warning** similar to the one below.  
+Collation in this case refers to the collection database’s collation. Collations control the way string values are sorted and compared. Collections that aren't using either SQL_Latin1_General_CP1_CI_AS or Latin1_General_CI_AS will generally receive one of the two below **warning** messages.  
 
-    The collection database collation 'Finnish_CI_AS' is not supported by VSTS. See more details at https://aka.ms/vstsimportcollations
+    The collection database's collation '{collation}' is not natively supported in VSTS. Importing your collection will result in your collation being converted to one of the supported VSTS collations. See more details at https://aka.ms/vstsimportcollations
 
-Receiving this warning **does not** mean that you can't import your collection to VSTS. Rather, it means that you will need to think through some additional considerations before performing an import. When a non-supported collation is imported into VSTS it is effectively transformed to the supported VSTS collation. While this generally works without issue, unexpected results could be observed post import or the import could fail if a unique collation translation issue is encountered. For instance, customers will notice different ordering for strings containing non-English characters. Non-English characters like 'é' become equivalent to the English 'e' after the import has completed. It's important that you complete and vet out a dry run import when importing a collection with a non-supported collation.
+Receiving this warning **does NOT** mean that you can't import your collection to VSTS. Rather, it means that you will need to think through some additional considerations before performing an import. When a non-supported collation is imported into VSTS it is effectively transformed to the supported VSTS collation. While this generally works without issue, unexpected results could be observed post import or the import could fail if a unique collation translation issue is encountered. For instance, customers will notice different ordering for strings containing non-English characters. Non-English characters like 'é' may become equivalent to the English 'e' after the import has completed. It's important that you complete and verify a dry run import when importing a collection with a non-supported collation.
 
-Collation warnings require an acknowledgement from the user running the TfsMigrator command. Accepting the warning will allow TfsMigrator to continue assisting you with preparing for your import.  
+This warning requires an acknowledgement from the user running the TfsMigrator command. Accepting the warning will allow TfsMigrator to continue assisting you with preparing for your import. 
 
-> To reduce the chance of collation issues causing an import to fail, it's recommended that you extract your database as a DACPAC and restore the DACPAC into a database locally that uses the SQL_Latin1_General_CP1_CI_AS collation. 
+    The collections database's collation '{collation}' is not natively supported in VSTS. It could not be validated that the collation can be converted during import to a supported VSTS collation, as there was no internet connection. Please run the command again from a machine with an internet connection. See more details at https://aka.ms/vstsimportcollations
 
+If TfsMigrator is unable to make a connection to the internet then it will be unable to validate that your collation can be converted to one of the supported version at import time. It's only a warning, so you will be able to make forward progress on your migration process. However, when you run the prepare command, an internet connection is required and your collation will be validated at that time.
+
+Generally a non-supported collation can be converted to one of the supported collations at import time. However, in extreme cases there are some collations which can't be converted. If your collection uses one of those collations then you will receive the below **error** message. 
+
+    The collection database's collation '{collation}' is not supported for import to VSTS. It will need to be changed to a supported collation before it can be imported. See more details at https://aka.ms/vstsimportcollations
+
+In order to continue your collection's collation will need to be [changed](https://docs.microsoft.com/en-us/sql/relational-databases/collations/set-or-change-the-database-collation) to one of the supported collations on VSTS.
+    
 ## Dealing with Identity Errors
 Identity errors aren't common when validating a collection, but when they do come up it's important to fix them prior to migration to avoid any undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current TFS version. For example, some users being members of a built-in valid users group was once allowed, but isn't in more recent versions. The most common identity errors and guidance on fixing them can be found below.
 
@@ -138,15 +146,24 @@ This error means that the requests to AAD to find the matching AAD identities fo
 
 In the event that the error continues there are few troubleshooting steps which should be undertaken. First, you will want to test your connection to AAD from the machine running the prepare command. Follow the below steps and see if you can retrieve information on a user in your AAD. 
 
-1.	Open PowerShell in elevated mode
-2.	In PowerShell, execute the below commands
-3.	Install-Module AzureAD // select Yes to All
-4.	Install-Module MSOnline // select Yes to All
-5.	Connect-MsolService // Use your AAD credentials (someone@somecompany.com) to login when the pop-up appears
-6.	Get-MsolUser -UserPrincipalName someone@somecompany.com
+Open PowerShell in elevated mode and add replace 'someone@somecompany.com' below with a user you expect to be present in your company's AAD.
+
+```PowerShell
+//Install the AzureAD PowerShell module - ensuring to select Yes to All
+Install-Module AzureAD 
+
+// Install the MSOnline PowerShell module -  ensuring to select Yes to All
+Install-Module MSOnline
+
+// Connect to AAD and use your AAD credentials (someone@somecompany.com) to login when the pop-up appears
+Connect-MsolService 
+
+// Try to retrieve information on a user from your AAD
+Get-MsolUser -UserPrincipalName someone@somecompany.com
+```
 
 If any of the above steps fail or you're unable to look up a users identity, that's a strong indication that there is a connection issue between the machine running the prepare command and AAD. You should run a network trace while executing the prepare command to ensure that nothing within your own network is stopping the calls from reaching AAD. If you've confirmed that the problem is not with your network then you will need reach out to Azure support for assistance with troubleshooting. 
-
+ 
 If you are able to get information back on a user, open your log file from the prepare attempt and look for a line like the following. 
 
     Number of active users is {Number of Users}.
@@ -172,7 +189,7 @@ An import code was not provided in the import specification file. Open your impo
 
     VS403254: Region {0} may not be used for the Import, it is not a supported region.
 
-The region that you entered for your VSTS import isn't supported. Open your import specification file and update the region that you've provided with the correct short name for the region you want to import into. These could be, but aren't limited to: CUS, WEU, MA, EAU, SBR. These correspond to Central US, West Europe, India South, East Australia, and South Brazil respectively.
+The region that you entered for your VSTS import isn't supported. Open your import specification file and update the region that you've provided with the correct short name for the [region](.\migration-import.md#supported-azure-regions-for-import) you want to import into. 
 
     VS403249: The account {0} already exists. Please select a different name and try the import again.
 
@@ -194,7 +211,7 @@ The database is not detached. It will need to be [detached](migration-import.md#
 
     VS403261: The SQL connection string must use encryption.
     
-The connection string must be excrypted otherwise the password will be sent in the clear. Please add "Encrypt=true" to your SQL connection string.
+The connection string must be encrypted otherwise the password will be sent in the clear. Please add "Encrypt=true" to your SQL connection string.
 
     VS403262: The SQL connection string must use SQL Authentication, Integrated Authentication is not supported.
 

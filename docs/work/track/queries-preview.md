@@ -54,7 +54,7 @@ We plan to continue to invest in the Queries Hub beyond the new features in this
 * Expanded query filtering capabilities to filter by folders
 
 ## Send us your feedback
-Let us know what you think in the comment box that appears when you toggle the new hub on or off. Additionally, feel free to reach out to us via Developer Community with suggestions or issues. See also our [comprehensive feedback and support page](../../provide-feedback.md).  
+Let us know what you think in the comment box that appears when you toggle the new hub on or off. Additionally, feel free to reach out to us via Developer Community with suggestions or issues. See also our [comprehensive feedback and support page](../../user-guide/provide-feedback.md).  
 
 ## Related notes
 

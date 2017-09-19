@@ -11,7 +11,7 @@ ms.date: 12/07/2016
 ---
 
 # What is Team Foundation Server? 
-**TFS 2017 | TFS 2015 | TFS 2013**
+**TFS 2017 | TFS 2018 | TFS 2015 | TFS 2013**
 
 Team Foundation Server (TFS) is the on-premises version of our cloud service, [VSTS](what-is-vsts.md) (VSTS).  
 
@@ -50,10 +50,10 @@ Choose an on-premises TFS when you need your data to stay within your network or
 > [Install TFS](../tfs-server/install/single-server.md)
 
 To learn more, see these topics: 
-- [A tour of services](../services.md)
-- [Key concepts](../concepts.md)  
-- [Client-server tools](../tools.md)
-- [Software development roles](../roles.md)
+- [A tour of services](services.md)
+- [Key concepts](concepts.md)  
+- [Client-server tools](tools.md)
+- [Software development roles](roles.md)
 - [Pricing - TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
 
 

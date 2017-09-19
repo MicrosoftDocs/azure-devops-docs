@@ -1,3 +1,4 @@
+<a id="core" />
 These properties are required:
 
 | Property | Description | Notes |

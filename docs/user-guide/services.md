@@ -11,13 +11,13 @@ ms.date: 08/15/2017
 ---
 
 # A tour of services VSTS and TFS provides 
-**VSTS| TFS 2017 | TFS 2015**
+**VSTS| TFS 2018 | TFS 2017 | TFS 2015**
 
 With VSTS and TFS, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web-based interface that you can access from all major browsers. 
 
 Web services are access through the following main hubs as shown in the following image.
 
-![VSTS, main hubs](_img/services-hubs.png)  
+![VSTS, main hubs](../_img/services-hubs.png)  
 
 Many of our services are either free for small teams or available through a subscription model or per use model. Where needed, you can exercise a hybrid approach where you use an on-premises TFS to manage your code and work, and purchase cloud build or testing services on an as needed basis.  
 
@@ -36,7 +36,7 @@ When you sign up for VSTS or install an on-premises TFS, you get access to the f
 ## Dashboards  
 From the **Dashboards** hub you gain access to user-configurable dashboards.   
 
-<img src="./report/_img/dashboard-view-with-widgets.png" alt="Dashboard hub, Overview" style="border: 2px solid #C3C3C3;" /> 
+<img src="../report/_img/dashboard-view-with-widgets.png" alt="Dashboard hub, Overview" style="border: 2px solid #C3C3C3;" /> 
 
 Tasks you can perform in this hub include: 
 - Add, configure, and manage dashboards   
@@ -44,7 +44,7 @@ Tasks you can perform in this hub include:
 - Quickly navigate to different areas of your team project 
  
 
-To learn more, see [Dashboards](report/dashboards.md). 
+To learn more, see [Dashboards](../report/dashboards.md). 
 
 
 ## Code 
@@ -59,7 +59,7 @@ From the Code hub for Git you can perform these tasks:
 - Review, create, approve, comment, and complete pull requests  
 - Add and manage Git tags   
 
-To learn more, see the overviews for [Git](git/overview.md) or [TFVC](tfvc/overview.md). 
+To learn more, see the overviews for [Git](../git/overview.md) or [TFVC](../tfvc/overview.md). 
 
 ## Plan and track work 		
 From the **Work** hub you gain access to Agile tools to support planning and tracking work. 
@@ -75,7 +75,7 @@ Specifically, from the **Work** you can perform these tasks:
 - Visualize the work flow and update status using Kanban boards	 				
 - Manage portfolios by grouping stories under features and features under epics   
 
-See [Backlogs, boards, and plans](work/backlogs-boards-plans.md) for an overview of each.   
+See [Backlogs, boards, and plans](../work/backlogs-boards-plans.md) for an overview of each.   
  
 ## Build & Release 
 The **Build & Release** hub provides an integrated set of features to support building and deploying your applications. 
@@ -88,7 +88,7 @@ You use this hub to implement continuous integration and continuous delivery.
 - **Release management**: Supports a rapid release cadence and management of simultaneous releases. You can configure release definitions that represent your environments from development to production. Run automations to deploy your app to each environment. Add approvers to sign off that the app has been successfully deployed in an environment. Create your release manually or automatically from a build. Then track your releases as they are deployed to various environments.
 
 
-To learn more, see [Continuous integration on any platform](build-release/overview.md). 
+To learn more, see [Continuous integration on any platform](../build-release/overview.md). 
 
 
 ## Test 
@@ -106,7 +106,7 @@ Test **Test** hub provides support for the following:
 - Browser-based test execution on any platform  
 - Real-time charts for tracking test activity.  
 
-To learn more, see [Testing overview](manual-test/index.md). 			
+To learn more, see [Testing overview](../manual-test/index.md). 			
 
 
 ## Collaboration services 
@@ -128,7 +128,7 @@ Service hooks enable you to perform tasks on other services when events happen w
 
 The following services are available as the target of service hooks. To learn about others apps and services that integrate with our VSTS or TFS, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com)
 
-For the latest set of supported services, see [Integrate with service hooks](service-hooks/index.md)
+For the latest set of supported services, see [Integrate with service hooks](../service-hooks/index.md)
 
 ## Cloud-hosted services based on usage   
 
@@ -153,7 +153,7 @@ For continuous delivery to Azure from VSTS, see [Automatically build and deploy 
 There are a number of features and tasks associated with administrating a collaborate software development environment. You perform most of these tasks through the web portal.   
 
 
-<img src="user-guide/_img/tour-admin-project-level.png" alt="Product backlog" style="border: 2px solid #C3C3C3;" /> 
+<img src="_img/tour-admin-project-level.png" alt="Product backlog" style="border: 2px solid #C3C3C3;" /> 
 
 > [!div class="mx-tdBreakAll"]  
 > |Account Management (VSTS)  | Administration (TFS)  | 
