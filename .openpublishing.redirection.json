@@ -2617,32 +2617,32 @@
             "redirect_document_id": false
        },
        {
-            "source_path": "articles/git-branching-guidance.md",
+            "source_path": "docs/articles/git-branching-guidance.md",
             "redirect_url": "/vsts/git/concepts/git-branching-guidance",
             "redirect_document_id": false
        },
        {
-            "source_path": "articles/mapping-my-tfvc-actions-to-git.md",
+            "source_path": "docs/articles/mapping-my-tfvc-actions-to-git.md",
             "redirect_url": "/vsts/git/concepts/mapping-my-tfvc-actions-to-git",
             "redirect_document_id": false
        },
        {
-            "source_path": "articles/branching-strategies-with-tfvc.md",
+            "source_path": "docs/articles/branching-strategies-with-tfvc.md",
             "redirect_url": "/vsts/tfvc/branching-strategies-with-tfvc",
             "redirect_document_id": false
        },
        {
-            "source_path": "articles/adopting-vsts.md",
+            "source_path": "docs/articles/adopting-vsts.md",
             "redirect_url": "/vsts/user-guide/about-vsts-tfs",
             "redirect_document_id": false
        },
        {
-            "source_path": "articles/overview.md",
+            "source_path": "docs/articles/overview.md",
             "redirect_url": "/vsts/articles/index",
             "redirect_document_id": false
        },
        {
-            "source_path": "articles/vso-security-whitepaper.md",
+            "source_path": "docs/articles/vso-security-whitepaper.md",
             "redirect_url": "/vsts/articles/team-services-security-whitepaper",
             "redirect_document_id": false
        }
