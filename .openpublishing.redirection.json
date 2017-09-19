@@ -2562,7 +2562,12 @@
             "redirect_document_id": false
         },
        {
-            "source_path": "vsts/whats-new.md",
+            "source_path": "docs/overview.md",
+            "redirect_url": "/vsts/index",
+            "redirect_document_id": false
+       },
+       {
+            "source_path": "docs/whats-new.md",
             "redirect_url": "/vsts/tfs-server/whats-new",
             "redirect_document_id": false
        },
