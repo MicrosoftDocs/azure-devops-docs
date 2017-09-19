@@ -162,7 +162,7 @@ You can specify how information and work item fields are grouped and appear in a
 
 
 >[!NOTE]  
->For **WebLayout**, you no longer add controls for attachments, links, and history. The system automatically addes these controls (```AttachmentControl```, ```LinksControl```, ```WorkItemClassificationControl``` and ```WorkItemLogControl```) are automatically added to the web form of each WIT.  
+>For **WebLayout**, you no longer add controls for attachments, links, and history. The system automatically adds these controls (```AttachmentControl```, ```LinksControl```, ```WorkItemClassificationControl``` and ```WorkItemLogControl```) to the web form of each WIT.  
 
 
 
@@ -445,15 +445,16 @@ EmptyText="TextString" ReadOnly="True | False" Name="InstanceName" />
 <tr>
 <td>**DateTimeControl**</td>
 <td>Use to display formatted date fields with a data type of DateTime. 
-
-<p>Use ```FieldControl``` to provide a text field for the input or display of a DateTime data type field.</p>
+<p>Use ```FieldControl``` to provide a text field for the input or display of a DateTime field.</p>
 <pre><code>&lt;Control FieldName=&quot; MyCompany.Group1.StartDate &quot; Type=&quot;FieldControl&quot; 
 Label=&quot;Start Date&quot; LabelPosition=&quot;Left&quot; /&gt;
 </code></pre>
 <p>Use ```DateTimeControl``` to provide a calendar picker to select a date for a field, as shown in the following illustration.</p>
-![Date-Time control, Calendar field](_img/date-time-control.png)   
+![Date-Time control, Calendar field](_img/weblayout-date-time-control.png)   
 <pre><code>&lt;Control Type=&quot;DateTimeControl&quot; FieldName=&quot;FabrikamFiber.Schedule.SubmittedDate&quot; 
 Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;Short&quot; /&gt;</code></pre>
+<blockquote>**Note:**The date-time format displayed matches the [user profile account preferences](/vsts/accounts/account-preferences). The WebLayout section doesn't not accept the **Layout** element `CustomFormat` property.  
+</blockquote>
 </td></tr>
 
 <tr>
