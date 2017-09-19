@@ -13,25 +13,25 @@ ms.date: 08/26/2016
 
 Every extension has a JSON manifest file which defines basic info about the extension and how it wants to extend and enhance the experience.
 
-Start by creating a file named `vss-extension.json` at the root of your extension folder. This file contains core properties, like the extension's ID and its installation targets (where it can run). It also defines the contributions being made by your extension.
+Start by creating a file named `vss-extension.json` at the root of your extension folder. This file contains required attributes, like the extension's ID and its installation targets (where it can run). It also defines the contributions being made by your extension.
 
 Here is an example of what a typical manifest will look like:
 
 [!code-json[](../_data/extension-typical.json)]
 
-## Core properties 
+## Required attributes
 
 [!INCLUDE [](../_shared/manifest-core.md)]
 
 [!INCLUDE [](../_shared/manifest-extension-runtime.md)]
 
-### Examples of core properties
+### Examples of required attributes
 
 [!code-json[](../_data/extension-core.json)]
 [!code-json[](../_data/extension-runtime.json)]
 
 <a name="discoveryprops"></a>
-## Marketplace discovery properties
+## Additional attributes
 
 [!INCLUDE [](../_shared/manifest-discovery.md)]
 
@@ -97,7 +97,7 @@ Only extensions marked as `paid preview` can be converted to `paid`.
 
 Note: If you do want to target TFS but do not wish to surface a Download option for your extension then add __DoNotDownload tag (starts with two underscores) to the extension manifest.
 
-### Example of discovery properties
+### Example of additional properties
 
 [!code-json[](../_data/extension-discovery.json)]
 
@@ -112,6 +112,67 @@ Note: If you do want to target TFS but do not wish to surface a Download option 
 * 7 - branding
 
 ![card](./_img/extension-details-page.png)
+
+<a name="CustomerQnASupport"></a>
+
+### Marketplace Q&A - CustomerQnASupport property
+
+All extensions on the Visual Studio Marketplace have a Q&A section to allow one-on-one public conversations between extension users and publishers. Publishers can choose between Marketplace Q&A, GitHub issues, or custom Q&A URL for the Q&A section or disable Q&A in Marketplace using the CustomerQnASupport property in the manifest. 
+
+**Default experience** (No changes to manifest are required)
+- For extension with GitHub repository, Marketplace will redirect users in the Q&A section to the associated GitHub issues. 
+- For extension without GitHub repository, Marketplace Q&A is enabled. 
+
+For a different experience than one of the default options use the **CustomerQnASupport** property in the manifest.  
+
+
+```json
+{
+    "CustomerQnASupport": {
+        "enableqna":"true",
+        "url": "http://uservoice.visualstudio.com"
+    } 
+}
+```
+
+### Properties
+
+Properties for the CustomerQnASupport section:
+
+- **enableqna** - boolean field, set to true for marketplace or custom Q&A; false for disabling Q&A
+- **url** - string, URL for custom Q&A
+
+
+### Examples showing usage of Q&A support
+
+#### Example 10: Extension using custom Q&A
+
+```
+{
+     "CustomerQnASupport": {
+        "enableqna":"true",
+        "url": "http://uservoice.visualstudio.com"
+    } 
+}
+```
+#### Example 11: Extension with GitHub repository but using Marketplace Q&A instead of GitHub issues
+
+```
+{
+     "CustomerQnASupport": {
+        "enableqna":"true"
+    } 
+}
+```
+#### Example 12: Extension disabling Q&A section
+
+```
+{
+     "CustomerQnASupport": {
+        "enableqna":"false"
+    } 
+}
+```
 
 ## Scopes
 
@@ -134,13 +195,6 @@ The **Action Required** section of the Extension settings hub shows a user which
 An administrator can then review and authorize the new set of scopes:
 
 ![scope-change-dialog](./_img/auth-new-scopes-dialog.png)
-
-<a name="example"></a>
-## Example manifest
-
-This extension contributions an action to the completed builds context menu and a hub to the Build hub group:
-
-[!code-json[](../_data/extension.json)]
 
 ## Installation targets
 
@@ -429,7 +483,7 @@ Each contribution entry has the following properties:
 See the [contribution model overview](contributions-overview.md) topic for an overview about contributions.
 
 <a name="contributionTypes"></a>
-## Contribution types
+### Contribution types
 
 Each contribution entry has the following properties:
 
@@ -447,7 +501,7 @@ Property descriptions have the following properties:
 See the [contribution model overview](contributions-overview.md) topic for an overview about contributions.
 
 <a name="contributionIds"></a>
-## Referencing contributions and types
+### Referencing contributions and types
 
 Contributions and contribution types are referenced by their identifiers. Contributions reference types through the `type` property, and reference other
 contributions through the `targets` property.
@@ -461,101 +515,48 @@ type within that same extension. In this case, the publisher and extension ident
 by the contribution identifier. For example, ".hub" may be used within the "vss-web" extension mentioned above as a shortcut for "ms.vss-web.hub".
 
 <a name="contributionTargets"></a>
-## Targeting contributions
+### Targeting contributions
 
 Some contributions act as containers that can be targeted by other contributions. A Hub Group and a Menu are examples of this. Hub contributions
-can target Hub Groups. When a page is rendered, the web UI will show all Hub contributions that target the selected hub group. Hub groups themselves target a 
-hub group collection which defines a set of hub groups that show up in a given navigational area (e.g. project-level admin pages).
+can target Hub Groups. When a page is rendered, the web UI will show all Hub contributions that target the selected hub group. Hub groups themselves target a hub group collection which defines a set of hub groups that show up in a given navigational area (e.g. project-level admin pages).
 
 Menus can be targeted by contributions of different types: action, hyperlink-action, and action-provider. Actions and hyperlink-actions provide single menu
 item entries. An action-provider can provide multiple dynamic menu items. For a given menu, items are aggregated across all contributions (of any of these
 types) that target that specific menu contribution.  
 
-<a name="CustomerQnASupport"></a>
-## Marketplace Q&A - CustomerQnASupport property
 
-All extensions on the Visual Studio Marketplace have a Q&A section to allow one-on-one public conversations between extension users and publishers. Publishers can choose between Marketplace Q&A, GitHub issues, or custom Q&A URL for the Q&A section or disable Q&A in Marketplace using the CustomerQnASupport property in the manifest. 
-
-**Default experience** (No changes to manifest are required)
-- For extension with GitHub repository, Marketplace will redirect users in the Q&A section to the associated GitHub issues. 
-- For extension without GitHub repository, Marketplace Q&A is enabled. 
-
-For a different experience than one of the default options use the **CustomerQnASupport** property in the manifest.  
-
-
-```json
-{
-    "CustomerQnASupport": {
-        "enableqna":"true",
-        "url": "http://uservoice.visualstudio.com"
-    } 
-}
-```
-
-### Properties
-
-Properties for the CustomerQnASupport section:
-
-- **enableqna** - boolean field, set to true for marketplace or custom Q&A; false for disabling Q&A
-- **url** - string, URL for custom Q&A
-
-
-### Examples showing usage of Q&A support
-
-#### Example 10: Extension using custom Q&A
-
-```
-{
-     "CustomerQnASupport": {
-        "enableqna":"true",
-        "url": "http://uservoice.visualstudio.com"
-    } 
-}
-```
-#### Example 11: Extension with GitHub repository but using Marketplace Q&A instead of GitHub issues
-
-```
-{
-     "CustomerQnASupport": {
-        "enableqna":"true"
-    } 
-}
-```
-#### Example 12: Extension disabling Q&A section
-
-```
-{
-     "CustomerQnASupport": {
-        "enableqna":"false"
-    } 
-}
-```
 <a name="approvedbadges"></a>
-## Approved Badges
-Due to security concerns, we only allow badges from trusted services.
 
-We allow badges from the following URL prefixes:
+## Supported badge services
 
-* https://api.travis-ci.org/
-* https://badge.fury.io/
-* https://badges.frapsoft.com/
-* https://badges.gitter.im/
-* https://badges.greenkeeper.io/
-* https://cdn.travis-ci.org/
-* https://ci.appveyor.com/
-* https://codeclimate.com/
-* https://codecov.io/  
-* https://coveralls.io/
-* https://david-dm.org/
-* https://gemnasium.com/
-* https://img.shields.io/ 
-* https://isitmaintained.com/
-* https://marketplace.visualstudio.com/
-* https://snyk.io/
-* https://travis-ci.com/
-* https://travis-ci.org/
-* https://vsmarketplacebadge.apphb.com/
-* https://www.bithound.io/
+The Marketplace only supports badges from the following trusted services:
 
+* api.travis-ci.org/
+* badge.fury.io/
+* badges.frapsoft.com/
+* badges.gitter.im/
+* badges.greenkeeper.io/
+* cdn.travis-ci.org/
+* ci.appveyor.com/
+* codeclimate.com/
+* codecov.io/  
+* coveralls.io/
+* david-dm.org/
+* gemnasium.com/
+* img.shields.io/ 
+* isitmaintained.com/
+* marketplace.visualstudio.com/
+* snyk.io/
+* travis-ci.com/
+* travis-ci.org/
+* vsmarketplacebadge.apphb.com/
+* bithound.io/
 
-If you have other badges you would like to use, please send us the details at vsmarketplace@microsoft.com and we're happy to take a look.
+If you want to show a badge from another service, please contact vsmarketplace@microsoft.com.
+
+<a name="example"></a>
+## Example manifest
+
+This extension contributions an action to the completed builds context menu and a hub to the Build hub group:
+
+[!code-json[](../_data/extension.json)]
