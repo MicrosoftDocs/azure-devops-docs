@@ -15,15 +15,18 @@ ms.date: 01/02/2017
 
 We'll show you how to set up continuous deployment of your Docker-enabled app to an Azure web app using
 Visual Studio Team Services (VSTS).
-Your build or continuous integration process must publish a Docker container image
-in order to use the steps in this quickstart.
+
+For example, you can continuously deliver your app to a Windows VM hosted in Azure.
+
+![A typical release pipeline for web applications](azure/_shared/_img/vscode-git-ci-cd-to-azure.png)
+
+After you commit and push a code change, it is automatically built and then deployed. The results will automatically show up on your site.
+
+## Define your CI build process
+
+You'll need a continuous integration (CI) build process that publishes a Docker container image. To set up a CI build process, see [Build your ASP.NET Core Container app](../aspnet/build-aspnet-core-docker.md).
 
 ## Prerequisites
-
-Before you begin, you'll need a CI build that publishes a Docker image.
-To set up CI for your specific type of app, see:
-
-* [Build your ASP.NET Core Container app](../aspnet/build-aspnet-core-docker.md)
 
 You'll need an Azure subscription. If you don't have one, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 

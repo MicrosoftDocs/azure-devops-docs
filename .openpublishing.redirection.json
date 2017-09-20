@@ -7,8 +7,18 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/articles/devopsmsft/overview.md",
+            "redirect_url": "https://www.visualstudio.com/learn/devopsmsft-overview/",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "articles/news/features-timeline.md",
             "redirect_url": "/vsts/release-notes/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/overview.md",
+            "redirect_url": "/vsts/build-release/index",
             "redirect_document_id": false
         },
         {

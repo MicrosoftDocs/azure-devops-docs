@@ -626,7 +626,7 @@ systems as far back as Windows XP and Windows Server 2003.
 
 TFS Version | Supported Build versions
 ------------|--------------------------
-TFS 2018    | TFS 2018 Build Agent<br/>TFS 2017 Build Agent<br/>TFS 2015 Build Agent
+TFS 2018    | TFS 2018 Build Agent<br/>TFS 2017 Build Agent
 TFS 2017    | TFS 2017 Build Agent<br/>TFS 2015 Build Agent<br/>TFS 2015 Xaml Controller<br/>TFS 2013 Xaml Controller<br/>TFS 2010 Xaml Controller
 TFS 2015    | TFS 2015 Build Agent<br/>TFS 2015 Xaml Controller<br/>TFS 2013 Xaml Controller<br/>TFS 2010 Xaml Controller
 TFS 2013    | TFS 2013 Xaml Controller<br/>TFS 2012 Xaml Controller<br/>TFS 2010 Xaml Controller
