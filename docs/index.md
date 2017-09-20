@@ -20,7 +20,7 @@ ms.date: 07/26/2017
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="/media/common/i_get-started.svg" alt="" />
+                                        <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -38,7 +38,7 @@ ms.date: 07/26/2017
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="/media/common/i_deploy.svg" alt="" />
+                                        <img src="https://docs.microsoft.com/media/common/i_deploy.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -56,7 +56,7 @@ ms.date: 07/26/2017
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="/media/common/i_road-map.svg" alt="" />
+                                        <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -243,6 +243,7 @@ ms.date: 07/26/2017
                                         <li><a class="barLink" href="/vsts/tfs-server/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
+                                        <li><a class="barLink" href="/vsts/teams/index">Scale and Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
                                     </ul>
                                     <h3>Extend</h3>
@@ -371,7 +372,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/i_download-install.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_download-install.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -410,7 +411,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/i_deploy.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_deploy.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -429,7 +430,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/i_management.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -574,7 +575,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/i_tasks.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_tasks.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -759,7 +760,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/i_alert.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -778,7 +779,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/i_reference.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -817,7 +818,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/i_feedback.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -862,7 +863,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/i_tools.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -881,7 +882,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/i_protect.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_protect.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -907,6 +908,25 @@ ms.date: 07/26/2017
                                                 <div class="cardText">
                                                     <h3>Billing</h3>
                                                     <p>Manage subscriptions, extension purchases, and Azure Active Directory.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/teams/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_configure-teams.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Scale and Configure Teams</h3>
+                                                    <p>Add teams and team administrators; configure team settings.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1021,7 +1041,7 @@ ms.date: 07/26/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/logos/logo_TS.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/logos/logo_TS.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
