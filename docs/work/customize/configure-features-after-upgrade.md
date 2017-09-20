@@ -28,7 +28,7 @@ If you have several team projects to update, you can [apply updates programmatic
 
 1. From the web portal home page, open the administration context.  
 
-	![Open the administration page](../connect/_img/ALM_CAL_OpenAdminPage.png)  
+	![Open the administration page](../../feedback/_img/ALM_CAL_OpenAdminPage.png)  
 
 	If you're not a team project administrator, [get added as one](../../accounts/add-users.md). Only project administrators or TFS administrators can run the wizard.
 

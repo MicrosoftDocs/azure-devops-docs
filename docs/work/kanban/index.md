@@ -48,7 +48,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Definition of done](definition-of-done.md)  
 - [Customize cards](/vsts/work/customize/customize-cards?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)    
 - [Card reordering](/vsts/work/customize/reorder-cards?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
-- [Use work item form controls](/vsts/work/concepts/work-item-form-controls?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)    
+- [Use work item form controls](/vsts/work/work-items/work-item-form-controls?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)    
 
 ## Reference   
 - [Permissions and access for work tracking](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  

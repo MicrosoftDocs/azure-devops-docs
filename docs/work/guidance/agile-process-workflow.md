@@ -97,7 +97,7 @@ Use the following guidance and that provided for [fields used in common across w
 
 
 >[!TIP]    
->Use the [Discussion section](../concepts/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from VSTS.   
+>Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed. This feature is only available from VSTS.   
 
 ## Track progress
 
@@ -186,7 +186,7 @@ When teams estimate work using hours or days, they define tasks and the **Remain
 </table>  
 
 
-If you use [Microsoft Project](../office/create-your-backlog-tasks-using-project.md) to assign resources and track a schedule, you can update these fields using Project.
+If you use [Microsoft Project](../backlogs/office/create-your-backlog-tasks-using-project.md) to assign resources and track a schedule, you can update these fields using Project.
 
 ## Track test progress 
 

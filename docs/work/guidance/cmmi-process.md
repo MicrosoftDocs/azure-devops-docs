@@ -56,7 +56,7 @@ You can open a query from the work items page and then use the [query editor to 
 >Queries listed under the Current Iteration folder do not automatically update when a new iteration becomes current. The current iteration is based on the dates that you [assign to your sprint schedules](../scrum/define-sprints.md). You must manually update the iteration path of each query to have it point to the iteration path that corresponds to the current iteration. Or, you can edit the shared query to [use the **@CurrentIteration** macro](../track/query-by-date-or-current-iteration.md).  
 
 
-From Team Explorer, you can open any [work item query in Excel](../office/bulk-add-modify-work-items-excel.md) to  perform bulk edits.  
+From Team Explorer, you can open any [work item query in Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to  perform bulk edits.  
 
 [!INCLUDE [temp](../_shared/quick-tips-shared-query.md)] 
 

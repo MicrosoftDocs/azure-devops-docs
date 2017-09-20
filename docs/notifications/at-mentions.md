@@ -43,9 +43,9 @@ When viewing their own mentioned names in conversations, users will notice that 
 
 <img src="_img/at-mention-link-view-of-own-name.png" alt="Web portal, At mention of ones own name appears in orange text]" style="border: 1px solid #CCCCCC;" /> 
 
-You can use the **@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments. You can also use the **@mention** control in the [Discussion section of work item forms](../work/concepts/work-item-form-controls.md#discussion). 
+You can use the **@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments. You can also use the **@mention** control in the [Discussion section of work item forms](../work/work-items/work-item-form-controls.md#discussion). 
 
 ## Related notes
 
-- [Work item form controls](../work/concepts/work-item-form-controls.md)  
+- [Work item form controls](../work/work-items/work-item-form-controls.md)  
 - [Pull requests](../git/tutorial/pullrequest.md)

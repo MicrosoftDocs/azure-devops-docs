@@ -160,7 +160,7 @@ Work items that you add using this widget are automatically scoped to the team's
 ![Other links widget](_img/widget-other-links.png)  
 
 Provides links to the following features: 
-- Opens a form to initiate a [request to provide feedback](/vsts/work/connect/get-feedback?toc=/vsts/feedback/toc.json).
+- Opens a form to initiate a [request to provide feedback](/vsts/feedback/get-feedback?toc=/vsts/feedback/toc.json).
 - Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../work/scrum/define-sprints.md).
 - Opens the team's quick dialog to modify your [team's area path](../work/scale/set-team-defaults.md).
 

@@ -12,11 +12,11 @@ ms.date: 02/22/2017
 
 # Change the audio device or annotation tool
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You can change the default settings used by Microsoft Feedback Client for the annotation tool or audio device. The annotation tool that you set automatically opens when you double-click an image within the feedback tool, and the audio device is used when you start a **Screen & Voice** or a **Voice only** recording.  You might want to make a change if you do not have the default tools available on the computer that you use to provide feedback.  
   
- To change a setting, first launch Microsoft Feedback Client. For more information, see [Provide feedback](../connect/give-feedback.md).  
+ To change a setting, first launch Microsoft Feedback Client. For more information, see [Provide feedback](give-feedback.md).  
   
 ### To change the annotation tool or annotation settings  
   
@@ -45,4 +45,4 @@ You can change the default settings used by Microsoft Feedback Client for the an
 4.  Choose the **Save** button.  
   
 ## Related notes 
-- [Provide feedback](../connect/give-feedback.md)
+- [Provide feedback](give-feedback.md)

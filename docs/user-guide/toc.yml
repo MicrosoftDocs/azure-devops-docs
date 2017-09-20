@@ -6,7 +6,7 @@
     href: what-is-vsts.md
   - name: "What is Team Foundation Server?"
     href: what-is-tfs.md
-  - name: A tour of our services
+  - name: Overview of services
     href: /vsts/services?toc=/vsts/user-guide/toc.json&bc=/vsts/breadcrumb/toc.json&bc=/vsts/breadcrumb/toc.json 
 - name: Quickstarts
   items:

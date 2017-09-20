@@ -40,11 +40,11 @@ incrementally.
 
 ## Project Server
 
-TFS 2017 and later versions will no longer support native integration with Microsoft Project Server.  Instead, if you are on TFS 2017 and want to integrate with Microsoft Project Server, you can do so using the [solution that our partner Tivitie provides](../work/office/sync-ps-tfs.md). 
+TFS 2017 and later versions will no longer support native integration with Microsoft Project Server.  Instead, if you are on TFS 2017 and want to integrate with Microsoft Project Server, you can do so using the [solution that our partner Tivitie provides](../work/tfs-ps-sync/sync-ps-tfs.md). 
 
 For more information on why we no longer support this integration, please check out [this blog post](http://go.microsoft.com/fwlink/?LinkID=823693). 
 
-When you upgrade TFS 2015 or earlier version which has the native TFS-Project Server integration configured, remnants of the integration remain. You may choose to ignore them, or you can remove them to avoid receiving error messages. See [Remove integration of TFS with Project Server](../work/office/remove-tfs-ps-integration.md). 
+When you upgrade TFS 2015 or earlier version which has the native TFS-Project Server integration configured, remnants of the integration remain. You may choose to ignore them, or you can remove them to avoid receiving error messages. See [Remove integration of TFS with Project Server](../work/tfs-ps-sync/remove-tfs-ps-integration.md). 
 
 
 

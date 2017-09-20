@@ -55,7 +55,7 @@ Your team project determines the objects available to tracking work and the conf
 >- **Hosted XML**: Supports customization through import/export of process templates, available for VSTS only    
 >- **On-premises XML**: Supports customization through import/export of XML definition files for work tracking objects      
  
-The following table summarizes the differences between the three supported process models. For definitions of the main work tracking objects, see [Agile glossary](../concepts/agile-glossary.md).  
+The following table summarizes the differences between the three supported process models. For definitions of the main work tracking objects, see [Agile glossary](../work-items/agile-glossary.md).  
 
 <table width="90%">
 <tr valign="bottom">

@@ -37,7 +37,7 @@ Here's what you need to know about permission settings:
 
 Two useful tips for understanding the effects of change: The **Member of** tab shows the groups that an individual user or group belongs to. You can also hover over an inherited permission, and a **Why?** icon will appear. If you choose it, a dialog box will open with more information.
 
-<img src="../work/connect/_img/control-panel-contributors-group-permissions.png" alt="Control panel, team project, Security tab, Contributors group, permissions" style="border: 2px solid #C3C3C3;" />  
+<img src="../feedback/_img/control-panel-contributors-group-permissions.png" alt="Control panel, team project, Security tab, Contributors group, permissions" style="border: 2px solid #C3C3C3;" />  
 
 
 <a name="inheritance"></a>

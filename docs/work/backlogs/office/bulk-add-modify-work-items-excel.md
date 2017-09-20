@@ -11,9 +11,9 @@ ms.date: 07/14/2017
 
 # Bulk add or modify work items with Excel 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-When you have a lot of work items to add or modify, using Excel can save you time. [Use a flat list](../track/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../track/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
+When you have a lot of work items to add or modify, using Excel can save you time. [Use a flat list](../../track/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../track/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
 
 You can also bulk add and modify work items using [Microsoft Project](create-your-backlog-tasks-using-project.md).
 
@@ -48,7 +48,7 @@ In this topic you'll learn:
     >[!TIP]  
     >If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/ms268871.aspx). 
 
-4.  Connect to your team project hosted in VSTS or an on-premises TFS where you want to add work items. If you can't connect, [get added as a team member](../scale/multiple-teams.md#add-team-members).  
+4.  Connect to your team project hosted in VSTS or an on-premises TFS where you want to add work items. If you can't connect, [get added as a team member](../../scale/multiple-teams.md#add-team-members).  
 
     ![ALM\_EXL\_Connect](_img/IC680074.png)
 
@@ -240,7 +240,7 @@ On the **Team** ribbon, choose **Configure**, **List**, and then select the quer
 
 ### Add existing work items to a list
 
-If you're working with a non-query input list, you can add work items by choosing ![Get work items icon](_img/bulk-modify-excel-get-work-items-inline.png) from the Team ribbon. If you're working from a query, then you need to [modify your query](../track/using-queries.md) to contain the work items you want. Then refresh your list.
+If you're working with a non-query input list, you can add work items by choosing ![Get work items icon](_img/bulk-modify-excel-get-work-items-inline.png) from the Team ribbon. If you're working from a query, then you need to [modify your query](../../track/using-queries.md) to contain the work items you want. Then refresh your list.
 
 
 ## Related notes
@@ -249,16 +249,16 @@ While the examples shown here represent connecting to an on-premises TFS, you ca
 
 If you're just getting started, review these topics for more information about work item tracking and using Excel: 
 
-- [Bulk modify work items (web portal)](../backlogs/bulk-modify-work-items.md)  
+- [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
 - [Basic Excel tasks](https://support.office.com/Article/Basic-tasks-in-Excel-2013-363600c5-55be-4d6e-82cf-b0a41e294054) 
 
 To bulk edit links, you can use these clients:  
 -   Use Excel to edit parent-child or hierarchical links.  
--   Use [Project](../office/create-your-backlog-tasks-using-project.md) to edit parent-child and predecessor-successor link relationships.  
--   Use the web portal, to [map backlog items to portfolio backlog items](../backlogs/organize-backlog.md) which creates parent-child links.  
--   Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../backlogs/organize-backlog.md#reparent) or within a tree query.
+-   Use [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) to edit parent-child and predecessor-successor link relationships.  
+-   Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
+-   Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
 
-To bulk modify test cases with shared steps, use the [web portal Test grid view](../../manual-test/getting-started/create-test-cases.md).  
+To bulk modify test cases with shared steps, use the [web portal Test grid view](../../../manual-test/getting-started/create-test-cases.md).  
 
 To resolve publishing errors, see one of these topics:   
 
@@ -267,7 +267,7 @@ To resolve publishing errors, see one of these topics:
 - [Invalid links](resolve-excel-invalid-links-tree-list.md)  
 
 ### Delete work items
-You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command line tool. For details, see [Move, change, or delete work items ](../backlogs/remove-delete-work-items.md).
+You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command line tool. For details, see [Move, change, or delete work items ](../../backlogs/remove-delete-work-items.md).
 
 ### Direct link query converts to flat list
 

@@ -1,19 +1,20 @@
 ---
-title: A tour of VSTS & TFS services 
-description: Understand the services that support the hosted cloud offering of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
+title: Overview of VSTS & TFS services 
+description: Understand the services that support the hosted cloud offering of Visual Studio Team Services (VSTS) and on-premises Team Foundation Server (TFS)  
 ms.technology: vs-devops-overview 
 ms.prod: vs-devops-alm
 ms.topic: get-started-article
 ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/15/2017
+ms.date: 09/19/2017
 ---
 
-# A tour of services VSTS and TFS provides 
+# Overview of VSTS and TFS services
+ 
 **VSTS| TFS 2018 | TFS 2017 | TFS 2015**
 
-With VSTS and TFS, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web-based interface that you can access from all major browsers. 
+With VSTS and TFS, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client-server model, many of which are delivered through an easy-to-use web interface that you can access from all major browsers. Some services, such as source control, build definitions, and work tracking can also be managed through a client.  
 
 Web services are access through the following main hubs as shown in the following image.
 
@@ -27,10 +28,6 @@ For information about client tools, see [Tools](tools.md).
 ###Video overview
  (Video ala Robert's 1.5 min Commit)
 -->
-
-## Core services 
-When you sign up for VSTS or install an on-premises TFS, you get access to the following services. All of these services you manage through a web browser. Some services, such as source control and build definitions, can also be managed through a client.    
-
 
 
 ## Dashboards  

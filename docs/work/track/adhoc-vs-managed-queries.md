@@ -38,7 +38,7 @@ You have two ways to perform work item searches: adhoc and managed. You perform 
 - Perform bulk updates on several work items such as change Assign To, Iteration Path, or more 
 - Review parent-child or dependent links among work items 
 - Create a status or trend chart from a flat list query  
-- Create a list of work items that you'll export to [Excel](../office/bulk-add-modify-work-items-excel.md) or [Project](../office/create-your-backlog-tasks-using-project.md) (requires that you have installed the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1) plug-in)   
+- Create a list of work items that you'll export to [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) (requires that you have installed the [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1) plug-in)   
 	
 
 ## Work item search box context 

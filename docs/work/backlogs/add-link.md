@@ -176,7 +176,7 @@ Additional features you can use to quickly link or change links that use the par
 
 -   To indent (![Indent](../track/_img/IC588323.png)), outdent (![Outdent](../track/_img/IC588324.png)), and change the tree hierarchy, use a tree query in Visual Studio.
 
-- To add or delete work items or change the link structure, you can use Excel or Project. See [Bulk add or modify work items with Excel](../office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../office/create-your-backlog-tasks-using-project.md).
+- To add or delete work items or change the link structure, you can use Excel or Project. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
 
 
 ## Related notes
@@ -186,8 +186,8 @@ For additional information, see:
 
 - [Map backlog items to portfolio backlog items](organize-backlog.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
-- [Use Excel to edit parent-child links](../office/bulk-add-modify-work-items-excel.md)
-- [Use Project to edit parent-child and predecessor-successor links](../office/create-your-backlog-tasks-using-project.md)
+- [Use Excel to edit parent-child links](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Use Project to edit parent-child and predecessor-successor links](../backlogs/office/create-your-backlog-tasks-using-project.md)
 - [Link work items to support traceability](../track/link-work-items-support-traceability.md)
 
 

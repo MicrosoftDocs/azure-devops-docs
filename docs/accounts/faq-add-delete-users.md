@@ -47,7 +47,7 @@ subscribers who have VSTS as a benefit.
 
 For example, if you select "Visual Studio/MSDN Subscriber", 
 but you don't have a valid and active Visual Studio subscription, you can only 
-[work as a stakeholder](../quickstart/get-started-stakeholder.md).
+[work as a stakeholder](../security/get-started-stakeholder.md).
 
 <a name="EligibleMSDNSubscriptions"></a>
 
@@ -122,7 +122,7 @@ no matter the current access level that's assigned to them.
 #### Q: What happens if a user's subscription expires?
 
 A: If no other access levels are available, they'll 
-[work as stakeholders](../quickstart/get-started-stakeholder.md). 
+[work as stakeholders](../security/get-started-stakeholder.md). 
 To restore access, they must renew their subscription.
 
 <a name="extension-transition"></a>
@@ -185,10 +185,10 @@ service from a build definition or pushing code to VSTS from a git command line 
 
 A: This might happen for different reasons, 
 but meanwhile, you or your team member can continue 
-[working as a stakeholder](../quickstart/get-started-stakeholder.md):
+[working as a stakeholder](../security/get-started-stakeholder.md):
 
 *	Your or your team member's Visual Studio subscription has expired. 
-Meanwhile, they'll [work as stakeholders](../quickstart/get-started-stakeholder.md), 
+Meanwhile, they'll [work as stakeholders](../security/get-started-stakeholder.md), 
 or you can give them Basic access until they renew their subscriptions.
 After they sign in, VSTS will restore their access automatically.
 

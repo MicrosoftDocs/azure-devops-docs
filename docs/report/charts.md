@@ -146,7 +146,7 @@ Also, from the web portal, you can view the following charts:
 
 
 ### Requirements to view and create charts  
-If you have [Stakeholder access or license](../quickstart/get-started-stakeholder.md), you can only view charts. If you need to create charts, ask your project admin or account owner to grant you elevated access.   
+If you have [Stakeholder access or license](../security/get-started-stakeholder.md), you can only view charts. If you need to create charts, ask your project admin or account owner to grant you elevated access.   
 
 ### Fields that show up in the chart editor
 For fields to appear in the chart editor, you must add the field to either the query filter criteria or a displayed column. 

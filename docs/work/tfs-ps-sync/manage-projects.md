@@ -28,7 +28,7 @@ ms.date: 01/12/2017
 > [!IMPORTANT]
 >  This topic applies to Microsoft Project Professional 2007, Project Professional 2010, or Project Professional 2013 from a client computer that has Visual Studio 2013 installed. Also, the integration of Visual Studio Team Foundation Server 2013 and Project Server [must be configured](system-and-setup-requirements.md).  
 >   
->  You can manage work items in Team Foundation by using Microsoft Project or Project Professional if you use the Team Foundation plug-in as [Create your backlog and tasks using Project](../../work/office/create-your-backlog-tasks-using-project.md) describes. The plug-in connects a project plan to a team project but does not synchronize work items. This plug-in is disabled when an enterprise project plan is mapped to a team project. For more information about how to manage work items by using Project, see [Operational differences in managing projects using TFS and Project](operational-differences.md).  
+>  You can manage work items in Team Foundation by using Microsoft Project or Project Professional if you use the Team Foundation plug-in as [Create your backlog and tasks using Project](../../work/backlogs/office/create-your-backlog-tasks-using-project.md) describes. The plug-in connects a project plan to a team project but does not synchronize work items. This plug-in is disabled when an enterprise project plan is mapped to a team project. For more information about how to manage work items by using Project, see [Operational differences in managing projects using TFS and Project](operational-differences.md).  
   
 ##  <a name="TasksToManage"></a> Tasks for project managers to manage projects and track progress  
   

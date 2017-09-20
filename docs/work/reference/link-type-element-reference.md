@@ -249,7 +249,7 @@ The following table describes the external link types you can specify to scope a
 
 <tr>
 <td>Storyboard</td>
-<td>Used to link a work item to a file on a network. See [Storyboard your ideas using PowerPoint](../office/storyboard-your-ideas-using-powerpoint.md#link-storyboard) for details.  </td>
+<td>Used to link a work item to a file on a network. See [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard) for details.  </td>
 </tr>
 
 <tr>

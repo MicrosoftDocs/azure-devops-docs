@@ -318,7 +318,7 @@ With stakeholder access, anyone on your team can check project status and provid
 
 Stakeholders contribute to team projects through the web portal using any supported browser. Within a team project, stakeholders can perform the following primary tasks by navigating to a hub/page or their account profile. For a comparison chart of stakeholder versus basic access, see the [Feature Matrix](https://www.visualstudio.com/vsts/compare-features/).
 
-To learn more about stakeholder access, see [Work as a stakeholder](../quickstart/get-started-stakeholder.md).  
+To learn more about stakeholder access, see [Work as a stakeholder](../security/get-started-stakeholder.md).  
 
 
 <a id="grant-add-permissions"></a>  
@@ -343,7 +343,7 @@ If your on-premises TFS deployment includes reporting or SharePoint Products, ad
 For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../security/permissions-access.md). For a comprehensive list of all permissions and default groups, see the [Permissions reference for TFS](../security/permissions.md). 
 
 *	[Set permissions and access for work tracking](how-to/set-permissions-access-work-tracking.md) 
-*	[Get started as a Stakeholder](../quickstart/get-started-stakeholder.md)  
+*	[Get started as a Stakeholder](../security/get-started-stakeholder.md)  
 *	[Add another team](scale/multiple-teams.md)  
 *	[Configure team settings](scale/manage-team-assets.md)   
 

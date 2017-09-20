@@ -324,7 +324,7 @@ Team Foundation Server doesn't require Project Server, but if you use Project Se
 
 TFS version | Supported Project Server versions | Supported Project versions
 ------------|---------------------------------- | ---------------------------
-TFS 2017    | Not supported. See [Synchronize TFS with Project Server](../work/office/sync-ps-tfs.md) for details. | Not supported. 
+TFS 2017    | Not supported. See [Synchronize TFS with Project Server](../work/tfs-ps-sync/sync-ps-tfs.md) for details. | Not supported. 
 TFS 2015    | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
 TFS 2013    | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
 TFS 2012    | Project Server 2007 with SP2<br/>Project Server 2007 with SP3<br/>Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
@@ -599,7 +599,7 @@ so VSTS and TFS support the most recent version.
 
 ### Office
 
-Office integration supports the following clients: [Excel](../work/office/bulk-add-modify-work-items-excel.md), [Project](../work/office/create-your-backlog-tasks-using-project.md), and [PowerPoint with Storyboarding](../work/office/storyboard-your-ideas-using-powerpoint.md). 
+Office integration supports the following clients: [Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md), [Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md), and [PowerPoint with Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md). 
 
 
 TFS version | Supported Office versions

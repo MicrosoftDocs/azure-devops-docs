@@ -292,7 +292,7 @@ When you connect to TFS, you can't change the work item type for an existing wor
 
 ![Clone a WIT](_img/IC710198.png)  
 
-Also, if you have several work items with type changes you want to make, you might want to [export them using Excel](../office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type.
+Also, if you have several work items with type changes you want to make, you might want to [export them using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type.
 
 
 ### Workflow changes and earlier versions of the Test Manager client

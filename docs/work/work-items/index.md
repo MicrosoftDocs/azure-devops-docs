@@ -40,19 +40,20 @@ Track the features and requirements you're developing, code defects or bugs, and
 - [Agile process guidance](/vsts/work/guidance/agile-process?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)  
 - [CMMI process guidance](/vsts/work/guidance/cmmi-process?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)  
 - [Scrum process guidance](/vsts/work/guidance/scrum-process?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)         
+- [Agile glossary](agile-glossary.md) 
 
 ## How-to Guides
 - [Use @mentions to further discussion](/vsts/notifications/at-mentions?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 - [Use #ID to link to work items](/vsts/notifications/add-links-to-work-items?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
-- [Use work item form controls](/vsts/work/concepts/work-item-form-controls?toc=/vsts/work/work-items/toc.json)
+- [Use work item form controls](/vsts/work/work-items/work-item-form-controls?toc=/vsts/work/work-items/toc.json)
 - [Add tags to work items](/vsts/work/track/add-tags-to-work-items?toc=/vsts/work/work-items/toc.json)
 - [Use work item templates](/vsts/work/backlogs/work-item-template?toc=/vsts/work/work-items/toc.json)
 - [Go mobile](/vsts/collaborate/mobile-work?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)  
 - [Email/print work items](../how-to/email-work-items.md)      
-- [Bulk add or modify (Excel)](/vsts/work/office/bulk-add-modify-work-items-excel?toc=/vsts/work/work-items/toc.json)
+- [Bulk add or modify (Excel)](/vsts/work/backlogs/office/bulk-add-modify-work-items-excel?toc=/vsts/work/work-items/toc.json)
 
-## Reference   
-- [Permissions and access for work tracking](/vsts/work/permissions-access-work-tracking?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+## Reference
+- [Work item form controls](work-item-form-controls.md)     
 - [Work item field index](/vsts/work/guidance/work-item-field?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)    
   
 

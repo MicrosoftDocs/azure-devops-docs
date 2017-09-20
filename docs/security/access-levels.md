@@ -43,7 +43,7 @@ Assign**Stakeholder** access to those users who need to enter bugs, view backlog
 
 <img src="_img/access-levels-2017-stakeholder.png" alt="Stakeholder access features" style="border: 1px solid #CCCCCC;" />  
 
-See [Stakeholder access](../quickstart/get-started-stakeholder.md) for details of features available to stakeholders.
+See [Stakeholder access](../security/get-started-stakeholder.md) for details of features available to stakeholders.
 
 ## VS Enterprise
 

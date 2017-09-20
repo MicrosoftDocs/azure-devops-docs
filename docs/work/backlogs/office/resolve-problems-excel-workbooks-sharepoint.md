@@ -10,13 +10,13 @@ ms.date: 02/22/2017
 ---
 # Resolve problems working with Excel workbooks and SharePoint server
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Before you use Excel 2010 to publish a workbook to a server that is running Microsoft Office SharePoint Server 2007, you must first install MSOLAP.4 on the server that is running SharePoint Products. To install MSOLAP.4, you add it to the list of approved providers in Excel Services.  
   
 ####Required permissions  
   
-To perform this procedure, you must be a member of the Administrators group on the server that hosts the SharePoint web application. For more information about permissions, see [Permission reference](../../security/permissions.md).  
+To perform this procedure, you must be a member of the Administrators group on the server that hosts the SharePoint web application. For more information about permissions, see [Permission reference](../../../security/permissions.md).  
   
 ### To install MSOLAP.4  
   
@@ -38,4 +38,4 @@ To perform this procedure, you must be a member of the Administrators group on t
   
 ## Related notes
  
-- [Verify SharePoint products for Team Foundation Server](../../tfs-server/install/sharepoint/verify-sharepoint.md)
+- [Verify SharePoint products for Team Foundation Server](../../../tfs-server/install/sharepoint/verify-sharepoint.md)

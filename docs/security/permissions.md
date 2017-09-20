@@ -329,7 +329,7 @@ For each team project that you create, the system creates the followings team pr
 		<td>Readers</td>
 		<td>Has permissions to view the team project but not modify it.</td>
 		<td>
-			Assign to [stakeholders](../quickstart/get-started-stakeholder.md)
+			Assign to [stakeholders](../security/get-started-stakeholder.md)
 			who want to be able to view work in progress.
 		</td>
 	</tr>

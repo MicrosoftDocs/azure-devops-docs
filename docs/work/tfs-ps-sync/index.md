@@ -16,7 +16,7 @@ ms.date: 07/14/2017
 
 
 ## Overview  
-- [Third-party support for synchronization](../office/sync-ps-tfs.md)
+- [Third-party support for synchronization](sync-ps-tfs.md)
 - [Native synchronization support](synchronize-tfs-project-server.md)
 - [Synchronization overview](synchronization-process-overview.md)
 - [Overview of integration features](overview-tfs-project-server-integration.md)

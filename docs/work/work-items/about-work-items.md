@@ -33,7 +33,7 @@ To learn more about processes and process templates, see [Choose a process](../g
 
 Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the History field. 
 
-Each form contains a number of controls as shown below and described in [Work item form controls](../concepts/work-item-form-controls.md). 
+Each form contains a number of controls as shown below and described in [Work item form controls](../work-items/work-item-form-controls.md). 
 
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
 
@@ -50,7 +50,7 @@ You can grant access to a team project by adding security groups that you create
 - [Access with Azure Active Directory (Azure AD)](../../accounts/add-users-to-aad.md) 
 - [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md).
 
-Anyone who has read-write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../../quickstart/get-started-stakeholder.md).  
+Anyone who has read-write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../../security/get-started-stakeholder.md).  
 
 Within the work item form, such as the web form shown, click the Assigned To field to select a team member to assign the work item to. Or, you can begin typing the name of a team member to quickly focus your search to a select few. 
 
@@ -126,7 +126,7 @@ To learn more, see [Use templates to add and update work items](../backlogs/work
 
 As a member added to the Contributors group of a team project, you can use most features provided under the **Work** hub. 
 
-If you've been added with stakeholder access, you are limited to certain features. For details, see [Work as a Stakeholder](../../quickstart/get-started-stakeholder.md). 
+If you've been added with stakeholder access, you are limited to certain features. For details, see [Work as a Stakeholder](../../security/get-started-stakeholder.md). 
 
 To learn more about permissions and access, see [Permissions and access for work tracking](../permissions-access-work-tracking.md). 
 

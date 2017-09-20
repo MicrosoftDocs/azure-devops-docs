@@ -23,7 +23,7 @@ The workflow determines the logical progression and regression of work that team
  
 
 > [!NOTE]  
-> This topic describes how to customize a workflow state. If instead, you want to change the State assigned to a specific work item, see one of the following topics: [Add work items, Update work status](../concepts/work-item-form-controls.md#update-work-status), [Kanban board, Track work in progress](../kanban/kanban-basics.md#track-work), or [Task board, Update task status](../scrum/task-board.md#update-task-status). You can also perform a [bulk update of the State for many work items](../backlogs/bulk-modify-work-items.md).
+> This topic describes how to customize a workflow state. If instead, you want to change the State assigned to a specific work item, see one of the following topics: [Add work items, Update work status](../work-items/work-item-form-controls.md#update-work-status), [Kanban board, Track work in progress](../kanban/kanban-basics.md#track-work), or [Task board, Update task status](../scrum/task-board.md#update-task-status). You can also perform a [bulk update of the State for many work items](../backlogs/bulk-modify-work-items.md).
 > 
 > For information about build definition workflows, see [Get started with CI/CD](../../build-release/actions/ci-cd-part-1.md).
 
@@ -37,7 +37,7 @@ To customize the workflow, follow these two steps:
 
 2.  [Modify the process configuration to map new workflow states to metastates](process-configuration-xml-element.md).  
 
-    This second step is required when you change the workflow for a WIT that appears on an Agile tool page. These WITs belong to either the Requirement or Task categories. To learn more about state categories, see [Workflow states and state categories](../concepts/workflow-and-state-categories.md).  
+    This second step is required when you change the workflow for a WIT that appears on an Agile tool page. These WITs belong to either the Requirement or Task categories. To learn more about state categories, see [Workflow states and state categories](../customize/workflow-and-state-categories.md).  
 
 
 <a name="DesignGuidelines"></a> 
@@ -53,7 +53,7 @@ As you design or modify a workflow, consider the following guidelines:
   
 -  Use the `STATE` element to define a unique state for each team member role that will take a specific action on a work item. The more states you define, the more transitions you must define. Regardless of the sequence in which you define the states, they are listed in alphanumeric order in the drop-down menu for the **State** field.  
   
-     If you add a state to a work item type that appears on the backlog or board pages in the web portal, you must also map the state to a state category. To learn more, review [Workflow states and state categories](../concepts/workflow-and-state-categories.md).  
+     If you add a state to a work item type that appears on the backlog or board pages in the web portal, you must also map the state to a state category. To learn more, review [Workflow states and state categories](../customize/workflow-and-state-categories.md).  
   
 -   Use the `TRANSITION` element to define a transition for each valid progression and regression from one state to another.  
   
@@ -281,7 +281,7 @@ You control the states to and from which team members can change a work item if 
   
 ## Related notes
 
-- [Workflow states and state categories](../concepts/workflow-and-state-categories.md)  
+- [Workflow states and state categories](../customize/workflow-and-state-categories.md)  
 - [Customize your work tracking experience](../customize/customize-work.md)  
 - [Query by assignment, workflow or Kanban board changes](../track/query-by-workflow-changes.md)  
 - [Design the work item form](design-work-item-form.md)    

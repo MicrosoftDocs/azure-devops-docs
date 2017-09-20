@@ -162,7 +162,7 @@ the items in your backlog may be called product backlog items (PBIs), user stori
 - [Filter product and portfolio backlogs ](filter-backlogs.md)
 - [Backlog priority or stack rank order](stack-rank-backlog-position.md)
 
-If you've already defined a long list of items, you don't have to reenter them one at a time. Instead, use [Microsoft Excel](../office/bulk-add-modify-work-items-excel.md) to quickly import them to your backlog.
+If you've already defined a long list of items, you don't have to reenter them one at a time. Instead, use [Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to quickly import them to your backlog.
 
 To contribute to the backlog, you must be a member of the Contributors group. If you don't have access to the team project, ask the account owner or project administrator to add you: [VSTS](../../accounts/add-account-users-assign-access-levels.md) or [TFS](../../accounts/add-users.md).
 

@@ -11,7 +11,7 @@ ms.date: 02/22/2017
 
 # Add and share storyboard shapes
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 
 Adding to your gallery of storyboard shapes can boost your ability to [storyboard your ideas using PowerPoint Storyboarding](storyboard-your-ideas-using-powerpoint.md). You can import storyboard shapes created by other members of your team. To share custom shapes that you've created, you can export them to a storyboard shapes file.  
@@ -21,7 +21,7 @@ Adding to your gallery of storyboard shapes can boost your ability to [storyboar
 
 ## Find storyboard shapes and import them  
   
-0.  If you're interfacing with TFS 2017 or VSTS, you must have [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400). For version compatibility, see [Requirements and compatibility, Office](../../accounts/requirements.md#office). If you're interfacing with TFS 2013 or TFS 2015, you must have Office PowerPoint 2007 or later version installed.  
+0.  If you're interfacing with TFS 2017 or VSTS, you must have [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400). For version compatibility, see [Requirements and compatibility, Office](../../../accounts/requirements.md#office). If you're interfacing with TFS 2013 or TFS 2015, you must have Office PowerPoint 2007 or later version installed.  
   
 0.  If you haven't installed Visual Studio, you'll need to [install Visual Studio Community or other version](https://www.visualstudio.com/downloads/) or  [Team Foundation Server Office® Integration](https://go.microsoft.com/fwlink/?LinkId=832492&clcid=0x409) to install the Storyboarding add-in to PowerPoint.  
   

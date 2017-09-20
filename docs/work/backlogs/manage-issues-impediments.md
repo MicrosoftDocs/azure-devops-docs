@@ -48,7 +48,7 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 
 ## Related notes 
 - [Add work items](add-work-items.md)
-- [Work item form controls](../concepts/work-item-form-controls.md)
+- [Work item form controls](../work-items/work-item-form-controls.md)
 - [Manage bugs or code defects](manage-bugs.md)
 - [Create your backlog](create-your-backlog.md) 
 

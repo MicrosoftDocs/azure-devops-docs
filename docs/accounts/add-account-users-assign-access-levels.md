@@ -132,7 +132,7 @@ Select their access level, based on the features they need.
 	<li>**[Stakeholder](https://www.visualstudio.com/team-services/compare-features/)**: Unlimited users who get Stakeholder features 
 	<p>
 	<p>For users who just need features like working with your backlog, work items, and queries. 
-	Learn about [working as a stakeholder](../quickstart/get-started-stakeholder.md). 
+	Learn about [working as a stakeholder](../security/get-started-stakeholder.md). 
 	<p>
 	<li>**[Visual Studio/MSDN Subscriber](https://www.visualstudio.com/team-services/compare-features/)**: 
 	Unlimited users whose [Visual Studio subscriptions include VSTS as a benefit](https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/). 

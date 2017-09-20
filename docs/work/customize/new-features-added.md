@@ -78,7 +78,7 @@ TFS 2012
 Feedback
 </td>
 <td>
-Adds the Feedback Request and Feedback Response WITs and categories to the team project. These items support [feedback requests and responses](../connect/get-feedback.md). <br/>
+Adds the Feedback Request and Feedback Response WITs and categories to the team project. These items support [feedback requests and responses](../../feedback/get-feedback.md). <br/>
 To manually add them to a team project, see [Add features manually](add-features-manually.md). 
 </td>
 <td>
@@ -107,7 +107,7 @@ TFS 2012
 Storyboarding
 </td>
 <td>
-Adds the Storyboards control and tab to requirement WIT for the team project--such as Product backlog item for Scrum, User Story for Agile, and Requirement for CMMI. The Storyboards control [supports linking storyboards to the work item as well as launching the Storyboarding](../office/storyboard-your-ideas-using-powerpoint.md). <br/>
+Adds the Storyboards control and tab to requirement WIT for the team project--such as Product backlog item for Scrum, User Story for Agile, and Requirement for CMMI. The Storyboards control [supports linking storyboards to the work item as well as launching the Storyboarding](../backlogs/office/storyboard-your-ideas-using-powerpoint.md). <br/>
 To manually add the tab to a WIT, see [Add features manually](add-features-manually.md). 
 </td>
 <td>

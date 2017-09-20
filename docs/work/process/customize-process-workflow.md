@@ -47,7 +47,7 @@ To perform any of these actions, you must be a member of the Project Collection 
 States you add will appear in the pick list for the States field shown in work item forms and the query editor. A transition to and from the State you add is created to every other State, except not to a Removed state. Also, default reasons are defined, such as Moved to state Triaged, Moved out of state Triaged.
 
 >[!NOTE]  
->Before adding a workflow state, review [Workflow states and state categories](../concepts/workflow-and-state-categories.md) to learn how workflow states map to state categories. 
+>Before adding a workflow state, review [Workflow states and state categories](../customize/workflow-and-state-categories.md) to learn how workflow states map to state categories. 
 
 <a id="open-process-wit">  </a>
 ### Open Process>Work Item Types in the admin context

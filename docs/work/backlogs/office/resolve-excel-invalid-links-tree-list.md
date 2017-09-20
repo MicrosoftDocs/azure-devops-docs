@@ -10,7 +10,7 @@ ms.date: 02/22/2017
 ---
 # Resolve invalid links in an Excel tree list 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 If you try to publish a tree list that contains an invalid link, the **Work Item Publishing Errors** dialog box appears and displays an error message that states why the tree is invalid. When you work with work items in a tree in Excel, the tree must be in a valid state before it can be published. In Excel, an invalid link occurs in a tree list of work items if the title of a work item title is missing or occurs in the wrong title column.  
   
@@ -125,7 +125,7 @@ This message indicates that you can publish the changes that you made to the fie
   
  This error appears when you change the link hierarchy that contains locked links. This message indicates that the changes that you made to the fields are published, but all changes that you made to the link hierarchy, whether locked or not locked, are not published and were reverted to their original assignments.  
   
- To modify hierarchical links that are locked, make your changes in the enterprise project plan that is mapped to the team project. For more information, see [Manage project details](../tfs-ps-sync/manage-project-details.md).  
+ To modify hierarchical links that are locked, make your changes in the enterprise project plan that is mapped to the team project. For more information, see [Manage project details](../../tfs-ps-sync/manage-project-details.md).  
   
 #### To publish changes to links that are not locked  
   
@@ -140,4 +140,4 @@ This message indicates that you can publish the changes that you made to the fie
 
 ###Required permissions  
   
-To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Permission reference](../../security/permissions.md). 
+To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Permission reference](../../../security/permissions.md). 

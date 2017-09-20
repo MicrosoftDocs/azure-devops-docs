@@ -44,4 +44,4 @@ ms.date: 12/30/2016
 ## Q & A  
   
 ### Q: How can I create my own workbooks?  
- **A:** See [Bulk add or modify work items with Excel](../../work/office/bulk-add-modify-work-items-excel.md).
+ **A:** See [Bulk add or modify work items with Excel](../../work/backlogs/office/bulk-add-modify-work-items-excel.md).

@@ -17,7 +17,7 @@ ms.topic: get-started-article
 
 <!--- UPDATES REQUIRED FOR MULTI-VERSION  TAGGING -->  
 
-Use bulk modify when you need to quickly make the same change to a number of work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that will contain the same value. Use [Excel](../office/bulk-add-modify-work-items-excel.md) to update multiple fields with different values. 
+Use bulk modify when you need to quickly make the same change to a number of work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that will contain the same value. Use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to update multiple fields with different values. 
 
 With bulk modify, you can edit fields, add or remove tags, reassign work, or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other team projects. The options available to you depend on the platform you work from and the permissions you've been granted.
 
@@ -33,7 +33,7 @@ In this topic you'll learn:
 >[!NOTE]  
 >**Feature availability:**&#160;&#160;The following features are available from VSTS (cloud service) or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Provide product and content feedback](../../user-guide/provide-feedback.md#platform-version).  
 
-All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../quickstart/get-started-stakeholder.md).  
+All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../security/get-started-stakeholder.md).  
 
 
 > [!div class="mx-tdBreakAll"]  
@@ -43,7 +43,7 @@ All of the following actions can be performed by team members that belong to the
 
 
 **Notes:**  
-1. You can't perform certain functions on work items whose WITs belong to the [Hidden Types Category](../concepts/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
+1. You can't perform certain functions on work items whose WITs belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
 2. You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Choose Copy work item when you want to create a copy of a work item and change its work item type. Choose Clone when you want to create another instance of the work item without changes to its work item type. 
 3. For on-premises TFS, you must have an [SMTP server configured for your deployment](../../tfs-server/admin/setup-customize-alerts.md). 
 4. You must be a member of the Project Administrators group or be [granted explicit permissions to move work items](../how-to/set-permissions-access-work-tracking.md#move-delete-permissions).  
@@ -130,7 +130,7 @@ Here, we use the context menu to move several non-sequential items to the curren
 
 
 >[!TIP]  
->Use the backlog <b>Create Query</b> feature to create a query with the backlog items. You can then open the query within the web portal or [Excel](../office/bulk-add-modify-work-items-excel.md) to perform bulk updates.  
+>Use the backlog <b>Create Query</b> feature to create a query with the backlog items. You can then open the query within the web portal or [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk updates.  
 
 
 <a id="edit"> </a>  
@@ -184,7 +184,7 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 ## Bulk modify tags 
  
 >[!NOTE]  
-><b>Feature availability: </b> Bulk update of work items to add or remove tags from the web portal is currently supported only from VSTS and TFS 2015 Update 2 or later version.  To bulk edit work items when connecting to TFS 2015 Update 1 or earlier versions, [use Excel](../office/bulk-add-modify-work-items-excel.md). 
+><b>Feature availability: </b> Bulk update of work items to add or remove tags from the web portal is currently supported only from VSTS and TFS 2015 Update 2 or later version.  To bulk edit work items when connecting to TFS 2015 Update 1 or earlier versions, [use Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 
 From the Edit work items dialog, select Tags (Add) or Tags (Remove).  
 
@@ -203,7 +203,7 @@ To add fields or customize a work item form, see [Customize your work tracking e
 For large scale, organizational moves, use the REST API calls for [Work item batch operations](https://visualstudio.com/integrate/api/wit/batch.md). 
 
 >[!NOTE]  
->At this time, you can't move work items to a different VSTS account or TFS collection. You can only migrate work item information by exporting and then importing them using [Excel](../office/bulk-add-modify-work-items-excel.md). 
+>At this time, you can't move work items to a different VSTS account or TFS collection. You can only migrate work item information by exporting and then importing them using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 
 ### Add multiple values to a field (TFS)   
 If you have implemented a [custom control that supports multiple values](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control), you can use Excel to bulk edit the field, but you can't modify it using the web portal. In the web portal, you can only select a single value for the field.   

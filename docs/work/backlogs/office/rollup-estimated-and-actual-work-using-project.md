@@ -9,7 +9,7 @@ ms.author: kaelli
 ms.date: 02/22/2017  
 ---
 # Rollup estimated and actual work using Project
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../_shared/dev15-version-header.md)]
 
 Because Microsoft Project has a scheduling engine, it automatically will generate a rollup of summary tasks. Rollup provides summed values of select fields for all child work items of a parent.  
   
@@ -19,7 +19,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
  ![Task board displays round&#45;trip rollup from Project](_img/alm_rup_roundtriprollup.png "ALM_RUP_RoundTripRollup")  
   
- To learn about other methods that support rollup, see [Support rollup of work and other fields](../reference/support-rollup-of-work-and-other-fields.md).  
+ To learn about other methods that support rollup, see [Support rollup of work and other fields](../../reference/support-rollup-of-work-and-other-fields.md).  
   
 ## Add fields to work item types  
  The following default fields used to schedule work are only present on the task work item.  
@@ -45,7 +45,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
     </FIELD>  
     ```  
   
-     To learn more about adding fields, see [Modify a field or add a custom field](../customize/add-modify-field.md).  
+     To learn more about adding fields, see [Modify a field or add a custom field](../../customize/add-modify-field.md).  
   
 2.  Determine if you want to make rollup values read-only on the work item form.  
   
@@ -53,7 +53,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 ##  <a name="project"></a> Update the Microsoft Project Mapping file  
   
-1.  Update the Microsoft Project Mapping file to contain the field mappings you need to support rollup. For details, see [Upload or download the Microsoft Project Mapping file](../reference/upload-or-download-the-microsoft-project-mapping-file.md).  
+1.  Update the Microsoft Project Mapping file to contain the field mappings you need to support rollup. For details, see [Upload or download the Microsoft Project Mapping file](../../reference/upload-or-download-the-microsoft-project-mapping-file.md).  
   
      Depending on the process template used to create your team project, some of these mappings may be there already. Here's an example of fields to include:  
   
@@ -144,7 +144,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
 ## Q & A  
   
 ### Q: Where can I learn more about customizing the Microsoft Project Field Mapping file?  
- **A:** See [Customize the Microsoft Project field mapping file](../reference/customize-project-field-mapping-file.md).  
+ **A:** See [Customize the Microsoft Project field mapping file](../../reference/customize-project-field-mapping-file.md).  
   
 ### Q: What's the difference between manual and automated task scheduling?  
  **A:** By using Task Mode, which is accessed through the following Ribbon menu, you have more flexibility in the way you and team members schedule tasks.  

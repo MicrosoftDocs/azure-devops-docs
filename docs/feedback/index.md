@@ -6,7 +6,7 @@ ms.prod: vs-devops-alm
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/28/2017
+ms.date: 09/19/2017
 ---
 
 # Feedback 
@@ -24,10 +24,10 @@ You can request feedback using one of two tools, through the Test & Feedback ext
 
 ## How-to Guides
 - [Request feedback (Test & Feedback extension)](/vsts/manual-test/stakeholder/request-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json )
-- [Get feedback (Work tracking)](/vsts/work/connect/get-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json ) 
+- [Get feedback (Work tracking)](get-feedback.md) 
 - [Provide feedback with the Test & Feedback extension](/vsts/manual-test/stakeholder/provide-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json )  
-- [Provide feedback with the Feedback client](/vsts/work/connect/give-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json )  
-- [Set feedback permissions](/vsts/work/connect/give-permissions-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json )  
+- [Provide feedback with the Feedback client](give-feedback.md )  
+- [Set feedback permissions](give-permissions-feedback.md)  
 
 
 ## Resources 

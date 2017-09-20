@@ -54,7 +54,7 @@ You can manage your workload more effectively by frequently reviewing the status
 
 You can open these queries from the **Work/Queries** page in the web portal or from the **Work Items** page in Team Explorer. You can modify a query using the [query editor to apply different filter criteria](../track/using-queries.md). Also, you can [add queries to team dashboards](../../report/dashboards.md).  
 
-From Team Explorer, you can open any [work item query in Excel](../office/bulk-add-modify-work-items-excel.md) to perform bulk edits.   
+From Team Explorer, you can open any [work item query in Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk edits.   
 
 
 [!INCLUDE [temp](../_shared/quick-tips-shared-query.md)] 

@@ -322,7 +322,7 @@ To connect to the web portal, you need your user account added to the team proje
 
 For VSTS, five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users (VSTS)](../billing/buy-basic-access-add-users.md).
 
-For TFS, limited access is available to an unlimited number of stakeholders for free; most regular contributors must have a TFS client access license (CAL). For details, see [Work as a Stakeholder](../quickstart/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
+For TFS, limited access is available to an unlimited number of stakeholders for free; most regular contributors must have a TFS client access license (CAL). For details, see [Work as a Stakeholder](../security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 
 All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the following pricing pages: 
 - [VSTS pricing](https://www.visualstudio.com/team-services/pricing/)
@@ -346,11 +346,11 @@ In addition to connecting through a web browser, you can connect to a team proje
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
 - [Eclipse: Team Explorer Everywhere](http://java.visualstudio.com/Docs/tools/eclipse)
-- [Office Excel](../work/office/bulk-add-modify-work-items-excel.md)
-- [Office Project](../work/office/create-your-backlog-tasks-using-project.md)
-- [PowerPoint Storyboarding](../work/office/storyboard-your-ideas-using-powerpoint.md)
+- [Office Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Office Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)
+- [PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md)
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
-- [Microsoft Feedback Client](../work/connect/give-feedback.md)
+- [Microsoft Feedback Client](../feedback/give-feedback.md)
 
 ### Differences between the web portal and Visual Studio  
 
@@ -370,7 +370,7 @@ Although you can access source code, work items, and builds from both clients, s
 <li><p>[Kanban board](../work/kanban/kanban-basics.md)</p></li>
 <li><p>[Dashboards](../report/dashboards.md), [Widgets](../report/widget-catalog.md), and [Charts](../report/charts.md)</p></li>
 <li><p>[Team rooms](../collaborate/collaborate-in-a-team-room.md)</p></li>
-<li><p>[Request feedback](../work/connect/get-feedback.md)</p></li>
+<li><p>[Request feedback](../feedback/get-feedback.md)</p></li>
 <li><p>Web-based Test Management</p></li>
 <li><p>Administration pages to administer accounts, team projects, and teams</p></li>
 </ul></td>
@@ -391,7 +391,7 @@ Although you can access source code, work items, and builds from both clients, s
 
 ### Can I open a query in Excel or Project from the web portal?  
 
-To open Excel from the web portal, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](../work/office/bulk-add-modify-work-items-excel.md) or [Project](../work/office/create-your-backlog-tasks-using-project.md) and then open a query that you've created in the web portal. 
+To open Excel from the web portal, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md) and then open a query that you've created in the web portal. 
 
 
 [!INCLUDE [temp](../_shared/help-support-shared.md)] 

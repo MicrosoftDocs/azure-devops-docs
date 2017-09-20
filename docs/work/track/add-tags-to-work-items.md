@@ -19,7 +19,7 @@ item query by categories that you define.
 A tag corresponds to a one or two keyword phrase that you define and that  
 supports your needs to filter a backlog or query, or define a query. 
 
-You can add and modify tags from the web portal, from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../office/bulk-add-modify-work-items-excel.md) to perform bulk modifications of tags.  
+You can add and modify tags from the web portal, from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk modifications of tags.  
 
 
 >[!NOTE]  
@@ -198,7 +198,7 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 </table> 
 
 1. Team Explorer Everywhere is the Eclipse plug-in which supports connection to VSTS and TFS. See [Visual Studio Team Explorer Everywhere (TEE)](https://java.visualstudio.com/Docs/tools/eclipse).
-2. Requires the TFS Office Integration add-in. See [Bulk add or modify work items with Excel](../office/bulk-add-modify-work-items-excel.md) for details.
+2. Requires the TFS Office Integration add-in. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) for details.
 
 
 
@@ -225,11 +225,11 @@ You can bulk update work items to add or remove tags.
 >[!NOTE]  
 ><b>Feature availability: </b>The bulk modify tags feature from the web portal is available from VSTS and TFS 2017 or later versions.   
 
-- When connecting to VSTS and TFS 2017: Bulk modify tags in the same way as you [bulk modify other fields using the web portal](../backlogs/bulk-modify-work-items.md#tags), or use [Excel](../office/bulk-add-modify-work-items-excel.md).  
+- When connecting to VSTS and TFS 2017: Bulk modify tags in the same way as you [bulk modify other fields using the web portal](../backlogs/bulk-modify-work-items.md#tags), or use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
 
 	![Edit work items - Add tags](_img/tags-bulk-add.png)  
 
-- When connecting to TFS 2015 or earlier versions: [Use Excel to bulk modify tags](../office/bulk-add-modify-work-items-excel.md).
+- When connecting to TFS 2015 or earlier versions: [Use Excel to bulk modify tags](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
 Bulk modify of tags from the Visual Studio client isn't supported. 
 
@@ -280,7 +280,7 @@ Tags are a shared resource, they're associated with a team project and not a tea
 - [Use the query editor to list and manage queries](using-queries.md) 
 - [Show tags on cards](../customize/customize-cards.md)
 - [Bulk modify work items from the web portal](../backlogs/bulk-modify-work-items.md)  
-- [Bulk modify work items from Excel](../office/bulk-add-modify-work-items-excel.md)  
+- [Bulk modify work items from Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 
 See also the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=tags&target=VS&category=All%20categories&vsVersion=&sortBy=Relevance) for extensions that support managing tags.
 

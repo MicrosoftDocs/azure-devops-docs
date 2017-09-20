@@ -86,6 +86,6 @@ For additional clients that you can use to add work items, see [Clients that sup
 
 Once you've added several work items, you can use additional features to get notified of changes, create queries, define status and trend charts, plus more.  
 
-For descriptions of each field and work item form control, see [Work item field index](../guidance/work-item-field.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ) and [Work item form controls](../concepts/work-item-form-controls.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ).  
+For descriptions of each field and work item form control, see [Work item field index](../guidance/work-item-field.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ) and [Work item form controls](../work-items/work-item-form-controls.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json ).  
 
 

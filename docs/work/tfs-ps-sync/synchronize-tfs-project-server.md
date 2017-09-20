@@ -16,7 +16,7 @@ ms.topic: get-started-article
 <b>TFS 2015 | TFS 2013</b>
 
 >[!IMPORTANT]  
->TFS 2017 and later versions no longer support native integration with Office Project Server. If you upgrade to TFS 2017 or want to use a third party option, see [Synchronize TFS with Project Server](../office/sync-ps-tfs.md).
+>TFS 2017 and later versions no longer support native integration with Office Project Server. If you upgrade to TFS 2017 or want to use a third party option, see [Synchronize TFS with Project Server](sync-ps-tfs.md).
 
 By installing Team Foundation Server Extensions for Project Server, project managers can use Microsoft Project Server to access up-to-date project status and resource availability across agile and formal software teams who work in Team Foundation.  This integration enables data to flow from work items in Team Foundation Server (TFS) to tasks in enterprise project plans in Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and share information transparently. After the two server products are configured, the synchronization engine maintains scheduling data and resource usage for the configured data in the mapped enterprise project plan and team project.  
   
@@ -117,13 +117,9 @@ When the project manager rejects an update to a work item, you must address the 
 ###  Demonstration videos  
 The following videos, which are available from the Microsoft website, illustrate the flexibility that you have to manage the product lifecycle after you integrate the two server products.  
   
--   [Application Lifecycle Management: Microsoft Project Server 2010 and TFS 2010, Better Together](http://go.microsoft.com/fwlink/?LinkId=222614)  
-  
--   [Top-Down Planning of Business Requirements within an Enterprise Project using Team Foundation Server and Project Server](http://go.microsoft.com/fwlink/?LinkId=222610)  
-  
+-   [Application Lifecycle Management: Microsoft Project Server 2010 and TFS 2010, Better Together](http://go.microsoft.com/fwlink/?LinkId=222614)    
+-   [Top-Down Planning of Business Requirements within an Enterprise Project using Team Foundation Server and Project Server](http://go.microsoft.com/fwlink/?LinkId=222610)   
 -   [Managing Project Details in an Enterprise Project Plan Mapped to a Team Project in Team Foundation Server](http://go.microsoft.com/fwlink/?LinkId=222611)  
-  
--   [Making Agile Team Progress Visible to the Project Management Office](http://go.microsoft.com/fwlink/?LinkId=222612)  
-  
+-   [Making Agile Team Progress Visible to the Project Management Office](http://go.microsoft.com/fwlink/?LinkId=222612)   
 -   [Managing Field Mappings for Integration of Team Foundation Server and Project Server](http://go.microsoft.com/fwlink/?LinkId=222613)  
   
