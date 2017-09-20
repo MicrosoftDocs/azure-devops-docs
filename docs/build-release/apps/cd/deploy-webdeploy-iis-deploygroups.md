@@ -1,31 +1,39 @@
 ---
 ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
-title: Deploy to an IIS web server on Windows
-description: Deploy an ASP.NET or Node Web Deploy package to IIS servers using Deployment Groups
+title: Deploy to an IIS web server on a Windows Virtual Machine
+description: Deploy an ASP.NET or Node web deployment package to an IIS web server on a Windows virtual machine using Deployment Groups
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-build
 ms.manager: douge
 ms.author: ahomer
-ms.date: 01/02/2017
+ms.date: 09/20/2017
 ms.topic: get-started-article
 ---
 
-# Deploy to IIS web server on Windows
+# Deploy to a Windows Virtual Machine
 
 **VSTS**
 
 We'll show you how to set up continuous deployment of your ASP.NET or Node app to an IIS web server running on Windows using
-Visual Studio Team Services (VSTS). You can use the steps in this quickstart as long as your continuous integration process publishes a Web Deploy package.
+Visual Studio Team Services (VSTS). You can use the steps in this quickstart as long as your continuous integration process publishes a web deployment package.
 
-## Prerequisites
+For example, you can continuously deliver your app to a container hosted in Azure.
 
-Before you begin, you'll need a CI build that publishes your Web Deploy package. To set up CI for your specific type of app, see:
+![A typical release pipeline for web applications](azure/_shared/_img/vscode-git-ci-cd-to-azure.png)
+
+After you commit and push a code change, it is automatically built and then deployed. The results will automatically show up on your site.
+
+## Define your CI build process
+
+You'll need a continuous integration (CI) build process that publishes your web deployment package. To set up a CI build process, see:
 
 * [Build your ASP.NET 4 app](../aspnet/build-aspnet-4.md)
 
 * [Build your ASP.NET Core app](../aspnet/build-aspnet-core.md)
 
 * [Build your Node app with Gulp](../nodejs/build-gulp.md)
+
+## Prerequisites
 
 ### IIS configuration
 
@@ -51,7 +59,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
 1. Do one of the following:
 
-   * If you've just completed a CI build (see above) then, in the build's **Summary** tab under **Deployments**,
+   * If you've just completed a CI build then, in the build's **Summary** tab under **Deployments**,
      choose **Create release** followed by **Yes**. This starts a new release definition that's automatically linked to the build definition.
 
     ![Creating a new release definition from the build summary](../_shared/_img/release-from-build-summary.png)
