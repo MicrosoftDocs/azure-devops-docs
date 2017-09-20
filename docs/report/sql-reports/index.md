@@ -1,6 +1,6 @@
 ---
 title: Data Warehouse & SQL Server Reports  
-titleSuffix: | TFS
+titleSuffix:  TFS
 description: Index to topics for managing the data warehouse, adding reports, and viewing SQL Server reports 
 ms.assetid:  
 ms.prod: vs-devops-alm

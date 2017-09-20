@@ -57,7 +57,7 @@ List bugs, user stories, or other work items based on field criteria you specify
 ## How-to Guides
 - [Change column options](/vsts/work/how-to/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)  
 - [Email/print work items](/vsts/work/how-to/email-work-items?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json) 
-- [Filter backlogs, boards, & queries](/vsts/work/how-to/filter-backlog-or-board?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)  
+- [Filter product and portfolio backlogs](/vsts/work/backlogs/filter-backlogs?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)  
 
 
 ## Reference 
